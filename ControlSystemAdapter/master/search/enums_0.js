@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['containerimpl_871',['ContainerImpl',['../class_chimera_t_k_1_1_mapped_struct.html#a6780e998e11b85d12206645882e85859',1,'ChimeraTK::MappedStruct']]]
+  ['decoratortype_866',['DecoratorType',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96',1,'ChimeraTK']]]
 ];

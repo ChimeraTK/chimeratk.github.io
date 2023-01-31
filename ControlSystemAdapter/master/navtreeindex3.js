@@ -1,9 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"test_type_changing_decorator_8cpp.html#a4910a7100015a4ef073f6cf8458d6657":[3,0,3,1,9,16],
-"test_type_changing_decorator_8cpp.html#a5508c2f467404d24528cef39ac8ef00f":[3,0,3,1,9,17],
-"test_type_changing_decorator_8cpp.html#a5e084c016c7c2645634ec140f36bc802":[3,0,3,1,9,11],
-"test_type_changing_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[3,0,3,1,9,4],
 "test_type_changing_decorator_8cpp.html#aa404515e6020c74d68ab9db69ca69339":[3,0,3,1,9,5],
 "test_type_changing_decorator_8cpp.html#aa93ca03cfdc5dc990c95b825e77409e1":[3,0,3,1,9,13],
 "test_type_changing_decorator_8cpp.html#ac97cf216f9545c522c7b49940f654dd1":[3,0,3,1,9,10],

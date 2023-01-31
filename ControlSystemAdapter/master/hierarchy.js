@@ -69,6 +69,7 @@ var hierarchy =
       [ "ProcessArrayFactoryBackend", "struct_process_array_factory_backend.html", null ]
     ] ],
     [ "ChimeraTK::DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", null ],
+    [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "boost::enable_shared_from_this", null, [
       [ "ChimeraTK::PVManager", "class_chimera_t_k_1_1_p_v_manager.html", null ]
     ] ],

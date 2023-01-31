@@ -61,6 +61,7 @@ var annotated_dup =
     [ "BidirA", "struct_bidir_a.html", "struct_bidir_a" ],
     [ "BidirB", "struct_bidir_b.html", "struct_bidir_b" ],
     [ "DecoratorBackend", "class_decorator_backend.html", "class_decorator_backend" ],
+    [ "DummyFixture", "struct_dummy_fixture.html", "struct_dummy_fixture" ],
     [ "Hardware", "class_hardware.html", "class_hardware" ],
     [ "IndependentControlCore", "class_independent_control_core.html", "class_independent_control_core" ],
     [ "MyTestApplication", "class_my_test_application.html", "class_my_test_application" ],

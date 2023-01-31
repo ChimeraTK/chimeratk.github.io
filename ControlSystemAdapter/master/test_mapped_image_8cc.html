@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('test_mapped_image_8cc.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -92,6 +93,8 @@ $(document).ready(function(){initNavTree('test_mapped_image_8cc.html',''); initR
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_mapped_image_8h_source.html">MappedImage.h</a>&quot;</code><br />
+<code>#include &lt;ChimeraTK/Device.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/OneDRegisterAccessor.h&gt;</code><br />
 <code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testMappedImage.cc:</div>
@@ -104,6 +107,11 @@ $(document).ready(function(){initNavTree('test_mapped_image_8cc.html',''); initR
 </div>
 <p><a href="test_mapped_image_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dummy_fixture.html">DummyFixture</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_mapped_image_8cc.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;MappedImageTest</td></tr>
@@ -111,10 +119,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afcfc48b29dfccae376579f79bc4b4be3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_mapped_image_8cc.html#afcfc48b29dfccae376579f79bc4b4be3">BOOST_AUTO_TEST_CASE</a> (testStructMapping)</td></tr>
-<tr class="separator:afcfc48b29dfccae376579f79bc4b4be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06626a49acab61bb2a37428dd7f1381b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_mapped_image_8cc.html#a06626a49acab61bb2a37428dd7f1381b">BOOST_AUTO_TEST_CASE</a> (testMappedImage)</td></tr>
-<tr class="separator:a06626a49acab61bb2a37428dd7f1381b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacdfa848404068f4d525eebd6b0ac6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_mapped_image_8cc.html#acacdfa848404068f4d525eebd6b0ac6d">BOOST_FIXTURE_TEST_CASE</a> (testStructMapping, <a class="el" href="struct_dummy_fixture.html">DummyFixture</a>)</td></tr>
+<tr class="separator:acacdfa848404068f4d525eebd6b0ac6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29009135d346bd46d1bc8dc67cb4469b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_mapped_image_8cc.html#a29009135d346bd46d1bc8dc67cb4469b">BOOST_FIXTURE_TEST_CASE</a> (testMappedImage, <a class="el" href="struct_dummy_fixture.html">DummyFixture</a>)</td></tr>
+<tr class="separator:a29009135d346bd46d1bc8dc67cb4469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6b2a3852db8bb19ab6909bac01859985"></a>
@@ -134,57 +142,77 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a06626a49acab61bb2a37428dd7f1381b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06626a49acab61bb2a37428dd7f1381b">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/2]</span></h2>
+<a id="a29009135d346bd46d1bc8dc67cb4469b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29009135d346bd46d1bc8dc67cb4469b">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
           <td class="paramtype">testMappedImage&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_dummy_fixture.html">DummyFixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_mapped_image_8cc_source.html#l00036">36</a> of file <a class="el" href="test_mapped_image_8cc_source.html">testMappedImage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_mapped_image_8cc_source.html#l00056">56</a> of file <a class="el" href="test_mapped_image_8cc_source.html">testMappedImage.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_mapped_image_8cc_a06626a49acab61bb2a37428dd7f1381b_cgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_mapped_image_8cc_a29009135d346bd46d1bc8dc67cb4469b_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="afcfc48b29dfccae376579f79bc4b4be3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcfc48b29dfccae376579f79bc4b4be3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/2]</span></h2>
+<a id="acacdfa848404068f4d525eebd6b0ac6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacdfa848404068f4d525eebd6b0ac6d">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
           <td class="paramtype">testStructMapping&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_dummy_fixture.html">DummyFixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_mapped_image_8cc_source.html#l00017">17</a> of file <a class="el" href="test_mapped_image_8cc_source.html">testMappedImage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_mapped_image_8cc_source.html#l00032">32</a> of file <a class="el" href="test_mapped_image_8cc_source.html">testMappedImage.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_mapped_image_8cc_afcfc48b29dfccae376579f79bc4b4be3_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_mapped_image_8cc_acacdfa848404068f4d525eebd6b0ac6d_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -196,7 +224,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_mapped_image_8cc.html">testMappedImage.cc</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 04:53:32 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 31 2023 04:57:01 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
