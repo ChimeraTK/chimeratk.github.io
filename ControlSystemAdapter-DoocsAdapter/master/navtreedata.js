@@ -1,3 +1,27 @@
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+
+ The MIT License (MIT)
+
+ Copyright (C) 1997-2020 by Dimitri van Heesch
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "ChimeraTK-ControlSystemAdapter-DoocsAdapter", "index.html", [
@@ -16,11 +40,11 @@ var NAVTREE =
         [ "D_imagec", "index.html#D_imagec", null ]
       ] ],
       [ "Error reporting", "index.html#set_error", null ],
-      [ "Specify `eq_fct_code` in the mapping file", "index.html#specifie_code", null ]
+      [ "Specify <tt>eq_fct_code</tt> in the mapping file", "index.html#specifie_code", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ]
@@ -39,8 +63,8 @@ var NAVTREE =
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
@@ -56,8 +80,8 @@ var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
 "class_chimera_t_k_1_1_variable_mapper.html#aa88a6e2972356689a7b2138390196e3a",
-"server_test_import_all_into_location_8cpp_source.html",
-"test_doocs_process_scalar_8cpp.html#a8dfcd18f6fff89ef742cfcfac7a68e2f"
+"server_test_ifff_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8",
+"test_doocs_p_v_factory_8cpp.html#a9002ab5ea2af66d057265b28e8f7af87"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

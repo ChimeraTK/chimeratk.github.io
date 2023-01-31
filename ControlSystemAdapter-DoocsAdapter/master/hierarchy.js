@@ -20,12 +20,13 @@ var hierarchy =
     [ "D_xy", null, [
       [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ]
     ] ],
+    [ "DeviceFixture", "struct_device_fixture.html", null ],
     [ "DOOCS_T", null, [
       [ "ChimeraTK::DoocsProcessArray< DOOCS_T, DOOCS_PRIMITIVE_T >", "class_chimera_t_k_1_1_doocs_process_array.html", null ],
       [ "ChimeraTK::DoocsProcessScalar< T, DOOCS_T >", "class_chimera_t_k_1_1_doocs_process_scalar.html", null ]
     ] ],
     [ "ChimeraTK::DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", null ],
-    [ "enable_shared_from_this", null, [
+    [ "boost::enable_shared_from_this", null, [
       [ "ChimeraTK::PropertyBase", "class_chimera_t_k_1_1_property_base.html", [
         [ "ChimeraTK::DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", null ],
         [ "ChimeraTK::DoocsImage", "class_chimera_t_k_1_1_doocs_image.html", null ],
@@ -45,12 +46,12 @@ var hierarchy =
     [ "MappedImage", null, [
       [ "ChimeraTK::MappedDoocsImg", "struct_chimera_t_k_1_1_mapped_doocs_img.html", null ]
     ] ],
-    [ "noncopyable", null, [
+    [ "boost::noncopyable", null, [
       [ "ChimeraTK::CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", null ],
       [ "ChimeraTK::DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", null ],
+      [ "ChimeraTK::DoocsPVFactory", "class_chimera_t_k_1_1_doocs_p_v_factory.html", null ],
       [ "ChimeraTK::DoocsProcessArray< DOOCS_T, DOOCS_PRIMITIVE_T >", "class_chimera_t_k_1_1_doocs_process_array.html", null ],
       [ "ChimeraTK::DoocsProcessScalar< T, DOOCS_T >", "class_chimera_t_k_1_1_doocs_process_scalar.html", null ],
-      [ "ChimeraTK::DoocsPVFactory", "class_chimera_t_k_1_1_doocs_p_v_factory.html", null ],
       [ "ChimeraTK::DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", null ],
       [ "ChimeraTK::DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", null ],
       [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ],

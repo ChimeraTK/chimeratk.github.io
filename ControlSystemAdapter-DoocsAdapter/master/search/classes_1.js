@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['businesslogic',['BusinessLogic',['../struct_business_logic.html',1,'']]]
+  ['businesslogic_384',['BusinessLogic',['../struct_business_logic.html',1,'']]]
 ];

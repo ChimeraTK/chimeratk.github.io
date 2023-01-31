@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['globalfixture',['GlobalFixture',['../struct_global_fixture.html',1,'']]]
+  ['globalfixture_398',['GlobalFixture',['../struct_global_fixture.html',1,'']]]
 ];
