@@ -1,13 +1,13 @@
 var hierarchy =
 [
     [ "ChimeraTK::VirtualLab::TimerGroup< timerTypes >::advanceTimer", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1advance_timer.html", null ],
-    [ "DummyBackend", null, [
-      [ "ChimeraTK::VirtualLab::VirtualLabBackend< derived >", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html", [
-        [ "mtca4u::VirtualLab::VirtualLabBackend< derived >", "classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html", null ]
-      ] ],
+    [ "ChimeraTK::DummyBackend", null, [
       [ "ChimeraTK::VirtualLab::VirtualLabBackend< VirtualTestDevice >", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html", [
         [ "VirtualTestDevice", "class_virtual_test_device.html", null ],
         [ "VirtualTestDevice", "class_virtual_test_device.html", null ]
+      ] ],
+      [ "ChimeraTK::VirtualLab::VirtualLabBackend< derived >", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html", [
+        [ "mtca4u::VirtualLab::VirtualLabBackend< derived >", "classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::VirtualLab::TimerGroup< timerTypes >::findRemaining", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining.html", null ],
