@@ -477,89 +477,97 @@ $(document).ready(function(){initNavTree('test_double_buffering_8cpp_source.html
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    buf1-&gt;write();</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    boost::barrier waitForBufferSwap{3};</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    std::thread readerA([&amp;] {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keyword">auto</span> accessorA = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerAReg);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      accessorA.readLatest();</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      BOOST_CHECK_CLOSE(accessorA[0], modulation, 1e-4);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      waitForBufferSwap.wait();</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="comment">// since BOOST.Test is not thread-safe, need to buffer check results in main thread</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordtype">bool</span> readerA_ok1, readerA_ok2, readerB_ok1, readerB_ok2;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    std::thread readerA([&amp;] {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keyword">auto</span> accessorA = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerAReg);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      accessorA.readLatest();</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      BOOST_CHECK_CLOSE(accessorA[0], 2 * modulation, 1e-4);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    });</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    std::thread readerB([&amp;] {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      <span class="keyword">auto</span> accessorB = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerBReg);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      accessorB.read();</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      BOOST_CHECK_CLOSE(accessorB[0], correction, 1e-4);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      waitForBufferSwap.wait();</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      readerA_ok1 = abs(accessorA[0] - modulation) &lt; 1e-4;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      accessorA.readLatest();</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      readerA_ok2 = abs(accessorA[0] - 2 * modulation) &lt; 1e-4;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    });</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    std::thread readerB([&amp;] {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keyword">auto</span> accessorB = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerBReg);</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      accessorB.read();</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      BOOST_CHECK_CLOSE(accessorB[0], 2 * correction, 1e-4);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    });</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    waitForBufferSwap.wait();</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    writingBufferNum-&gt;accessData(0) = 0;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    writingBufferNum-&gt;write();</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    waitForBufferSwap.wait();</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    readerA.join();</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    readerB.join();</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// Check that also reading from a TransferGroup works</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a> tg;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keyword">auto</span> accessorA = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerAReg);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keyword">auto</span> accessorB = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerBReg);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91">addAccessor</a>(accessorA);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91">addAccessor</a>(accessorB);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a>();</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    BOOST_CHECK_CLOSE(accessorA[0], 2 * modulation, 1e-4);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    BOOST_CHECK_CLOSE(accessorB[0], 2 * correction, 1e-4);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="comment">// swap back to first value set</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    writingBufferNum-&gt;accessData(0) = 1;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    writingBufferNum-&gt;write();</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a>();</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    BOOST_CHECK_CLOSE(accessorA[0], modulation, 1e-4);</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    BOOST_CHECK_CLOSE(accessorB[0], correction, 1e-4);</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  }</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;};</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q0.html">  444</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a> : <span class="keyword">public</span> <a class="code" href="struct_device_fixture2_d.html">DeviceFixture2D</a>&lt;DeviceFixture2D_DAQ0&gt; {</div>
-<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">  445</a></span>&#160;  ConfigParams <a class="code" href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">getCf</a>() {</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    ConfigParams c;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    c.enableDoubleBufferingReg = <span class="stringliteral">&quot;DAQ0/WORD_DUB_BUF_ENA&quot;</span>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    c.currentBufferNumberReg = <span class="stringliteral">&quot;DAQ0/WORD_DUB_BUF_CURR/DUMMY_WRITEABLE&quot;</span>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    c.firstBufferReg = <span class="stringliteral">&quot;APP0/DAQ0_BUF0&quot;</span>;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    c.secondBufferReg = <span class="stringliteral">&quot;APP0/DAQ0_BUF1&quot;</span>;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    c.daqNumber = 0;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordflow">return</span> c;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  }</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;};</div>
-<div class="line"><a name="l00455"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q2.html">  455</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a> : <span class="keyword">public</span> <a class="code" href="struct_device_fixture2_d.html">DeviceFixture2D</a>&lt;DeviceFixture2D_DAQ2&gt; {</div>
-<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">  456</a></span>&#160;  ConfigParams <a class="code" href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">getCf</a>() {</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    ConfigParams c;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    c.enableDoubleBufferingReg = <span class="stringliteral">&quot;DAQ2/WORD_DUB_BUF_ENA&quot;</span>;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    c.currentBufferNumberReg = <span class="stringliteral">&quot;DAQ2/WORD_DUB_BUF_CURR/DUMMY_WRITEABLE&quot;</span>;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    c.firstBufferReg = <span class="stringliteral">&quot;APP2/DAQ2_BUF0&quot;</span>;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    c.secondBufferReg = <span class="stringliteral">&quot;APP2/DAQ2_BUF1&quot;</span>;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    c.daqNumber = 2;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">return</span> c;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  }</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;};</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
-<div class="line"><a name="l00467"></a><span class="lineno"><a class="line" href="test_double_buffering_8cpp.html#a3f6c2f53febe485c77b8715b10670629">  467</a></span>&#160;<a class="code" href="test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434">BOOST_FIXTURE_TEST_CASE</a>(testExtractedChannelsA, <a class="code" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a>) {</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="comment">// config variant: double buffering on lowest level</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  simpleCheckExtractedChannels(<span class="stringliteral">&quot;modulationA&quot;</span>);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  checkExtractedChannels(<span class="stringliteral">&quot;modulationA&quot;</span>, <span class="stringliteral">&quot;correctionA&quot;</span>);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;}</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno"><a class="line" href="test_double_buffering_8cpp.html#a462f73aa1a75a1d480ec5aa94383d439">  473</a></span>&#160;<a class="code" href="test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434">BOOST_FIXTURE_TEST_CASE</a>(testExtractedChannelsC, <a class="code" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a>) {</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="comment">// config variant: double buffering applied to logical registers</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  simpleCheckExtractedChannels(<span class="stringliteral">&quot;modulationC&quot;</span>);</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  checkExtractedChannels(<span class="stringliteral">&quot;modulationC&quot;</span>, <span class="stringliteral">&quot;correctionC&quot;</span>);</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;}</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      readerB_ok1 = abs(accessorB[0] - correction) &lt; 1e-4;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      accessorB.read();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      readerB_ok2 = abs(accessorB[0] - 2 * correction) &lt; 1e-4;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    });</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    writingBufferNum-&gt;accessData(0) = 0;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    writingBufferNum-&gt;write();</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    waitForBufferSwap.wait();</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    readerA.join();</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    readerB.join();</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    BOOST_CHECK(readerA_ok1);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    BOOST_CHECK(readerA_ok2);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    BOOST_CHECK(readerB_ok1);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    BOOST_CHECK(readerB_ok2);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="comment">// Check that also reading from a TransferGroup works</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a> tg;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">auto</span> accessorA = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerAReg);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keyword">auto</span> accessorB = d.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">float</span>&gt;(readerBReg);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91">addAccessor</a>(accessorA);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91">addAccessor</a>(accessorB);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a>();</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    BOOST_CHECK_CLOSE(accessorA[0], 2 * modulation, 1e-4);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    BOOST_CHECK_CLOSE(accessorB[0], 2 * correction, 1e-4);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="comment">// swap back to first value set</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    writingBufferNum-&gt;accessData(0) = 1;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    writingBufferNum-&gt;write();</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    tg.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a>();</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    BOOST_CHECK_CLOSE(accessorA[0], modulation, 1e-4);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    BOOST_CHECK_CLOSE(accessorB[0], correction, 1e-4);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  }</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;};</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q0.html">  452</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a> : <span class="keyword">public</span> <a class="code" href="struct_device_fixture2_d.html">DeviceFixture2D</a>&lt;DeviceFixture2D_DAQ0&gt; {</div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">  453</a></span>&#160;  ConfigParams <a class="code" href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">getCf</a>() {</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    ConfigParams c;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    c.enableDoubleBufferingReg = <span class="stringliteral">&quot;DAQ0/WORD_DUB_BUF_ENA&quot;</span>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    c.currentBufferNumberReg = <span class="stringliteral">&quot;DAQ0/WORD_DUB_BUF_CURR/DUMMY_WRITEABLE&quot;</span>;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    c.firstBufferReg = <span class="stringliteral">&quot;APP0/DAQ0_BUF0&quot;</span>;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    c.secondBufferReg = <span class="stringliteral">&quot;APP0/DAQ0_BUF1&quot;</span>;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    c.daqNumber = 0;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">return</span> c;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  }</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;};</div>
+<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q2.html">  463</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a> : <span class="keyword">public</span> <a class="code" href="struct_device_fixture2_d.html">DeviceFixture2D</a>&lt;DeviceFixture2D_DAQ2&gt; {</div>
+<div class="line"><a name="l00464"></a><span class="lineno"><a class="line" href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">  464</a></span>&#160;  ConfigParams <a class="code" href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">getCf</a>() {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    ConfigParams c;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    c.enableDoubleBufferingReg = <span class="stringliteral">&quot;DAQ2/WORD_DUB_BUF_ENA&quot;</span>;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    c.currentBufferNumberReg = <span class="stringliteral">&quot;DAQ2/WORD_DUB_BUF_CURR/DUMMY_WRITEABLE&quot;</span>;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    c.firstBufferReg = <span class="stringliteral">&quot;APP2/DAQ2_BUF0&quot;</span>;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    c.secondBufferReg = <span class="stringliteral">&quot;APP2/DAQ2_BUF1&quot;</span>;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    c.daqNumber = 2;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">return</span> c;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  }</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;};</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
+<div class="line"><a name="l00475"></a><span class="lineno"><a class="line" href="test_double_buffering_8cpp.html#a3f6c2f53febe485c77b8715b10670629">  475</a></span>&#160;<a class="code" href="test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434">BOOST_FIXTURE_TEST_CASE</a>(testExtractedChannelsA, <a class="code" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a>) {</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  <span class="comment">// config variant: double buffering on lowest level</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  simpleCheckExtractedChannels(<span class="stringliteral">&quot;modulationA&quot;</span>);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  checkExtractedChannels(<span class="stringliteral">&quot;modulationA&quot;</span>, <span class="stringliteral">&quot;correctionA&quot;</span>);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a name="l00481"></a><span class="lineno"><a class="line" href="test_double_buffering_8cpp.html#a462f73aa1a75a1d480ec5aa94383d439">  481</a></span>&#160;<a class="code" href="test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434">BOOST_FIXTURE_TEST_CASE</a>(testExtractedChannelsC, <a class="code" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a>) {</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  <span class="comment">// config variant: double buffering applied to logical registers</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  simpleCheckExtractedChannels(<span class="stringliteral">&quot;modulationC&quot;</span>);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  checkExtractedChannels(<span class="stringliteral">&quot;modulationC&quot;</span>, <span class="stringliteral">&quot;correctionC&quot;</span>);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;}</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160; </div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="a_dummy_backend_8h_html"><div class="ttname"><a href="_dummy_backend_8h.html">DummyBackend.h</a></div></div>
 <div class="ttc" id="a_dummy_register_accessor_8h_html"><div class="ttname"><a href="_dummy_register_accessor_8h.html">DummyRegisterAccessor.h</a></div></div>
@@ -600,10 +608,10 @@ $(document).ready(function(){initNavTree('test_double_buffering_8cpp_source.html
 <div class="ttc" id="astruct_device_fixture2_d_1_1_config_params_html_abf9e59c0949fa64b6c650144a6311601"><div class="ttname"><a href="struct_device_fixture2_d_1_1_config_params.html#abf9e59c0949fa64b6c650144a6311601">DeviceFixture2D::ConfigParams::currentBufferNumberReg</a></div><div class="ttdeci">std::string currentBufferNumberReg</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00328">testDoubleBuffering.cpp:328</a></div></div>
 <div class="ttc" id="astruct_device_fixture2_d_1_1_config_params_html_adfa000d0af5851c6286ad127e4676409"><div class="ttname"><a href="struct_device_fixture2_d_1_1_config_params.html#adfa000d0af5851c6286ad127e4676409">DeviceFixture2D::ConfigParams::firstBufferReg</a></div><div class="ttdeci">std::string firstBufferReg</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00328">testDoubleBuffering.cpp:328</a></div></div>
 <div class="ttc" id="astruct_device_fixture2_d_1_1_config_params_html_ae9c890a4b29f467768180597106c5e25"><div class="ttname"><a href="struct_device_fixture2_d_1_1_config_params.html#ae9c890a4b29f467768180597106c5e25">DeviceFixture2D::ConfigParams::enableDoubleBufferingReg</a></div><div class="ttdeci">std::string enableDoubleBufferingReg</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00328">testDoubleBuffering.cpp:328</a></div></div>
-<div class="ttc" id="astruct_device_fixture2_d___d_a_q0_html"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a></div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00444">testDoubleBuffering.cpp:444</a></div></div>
-<div class="ttc" id="astruct_device_fixture2_d___d_a_q0_html_adbca22a96c4fef1220ec351bf519d18d"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">DeviceFixture2D_DAQ0::getCf</a></div><div class="ttdeci">ConfigParams getCf()</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00445">testDoubleBuffering.cpp:445</a></div></div>
-<div class="ttc" id="astruct_device_fixture2_d___d_a_q2_html"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a></div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00455">testDoubleBuffering.cpp:455</a></div></div>
-<div class="ttc" id="astruct_device_fixture2_d___d_a_q2_html_a935b313a0d237252e9a9d54884a34d63"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">DeviceFixture2D_DAQ2::getCf</a></div><div class="ttdeci">ConfigParams getCf()</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00456">testDoubleBuffering.cpp:456</a></div></div>
+<div class="ttc" id="astruct_device_fixture2_d___d_a_q0_html"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a></div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00452">testDoubleBuffering.cpp:452</a></div></div>
+<div class="ttc" id="astruct_device_fixture2_d___d_a_q0_html_adbca22a96c4fef1220ec351bf519d18d"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">DeviceFixture2D_DAQ0::getCf</a></div><div class="ttdeci">ConfigParams getCf()</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00453">testDoubleBuffering.cpp:453</a></div></div>
+<div class="ttc" id="astruct_device_fixture2_d___d_a_q2_html"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a></div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00463">testDoubleBuffering.cpp:463</a></div></div>
+<div class="ttc" id="astruct_device_fixture2_d___d_a_q2_html_a935b313a0d237252e9a9d54884a34d63"><div class="ttname"><a href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">DeviceFixture2D_DAQ2::getCf</a></div><div class="ttdeci">ConfigParams getCf()</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00464">testDoubleBuffering.cpp:464</a></div></div>
 <div class="ttc" id="astruct_device_fixture2_d_html"><div class="ttname"><a href="struct_device_fixture2_d.html">DeviceFixture2D</a></div><div class="ttdoc">DeviceFixture used for the 2D access tests here no overwriting of ExceptionBackend.</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00320">testDoubleBuffering.cpp:320</a></div></div>
 <div class="ttc" id="astruct_device_fixture2_d_html_a19c93b94dfbe4c6567befe6487029501"><div class="ttname"><a href="struct_device_fixture2_d.html#a19c93b94dfbe4c6567befe6487029501">DeviceFixture2D::simpleCheckExtractedChannels</a></div><div class="ttdeci">void simpleCheckExtractedChannels(std::string readerAReg)</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00346">testDoubleBuffering.cpp:346</a></div></div>
 <div class="ttc" id="astruct_device_fixture2_d_html_a3bd42aa6cfbba939254f037e895f7ee2"><div class="ttname"><a href="struct_device_fixture2_d.html#a3bd42aa6cfbba939254f037e895f7ee2">DeviceFixture2D::backdoor</a></div><div class="ttdeci">boost::shared_ptr&lt; DeviceBackend &gt; backdoor</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_8cpp_source.html#l00324">testDoubleBuffering.cpp:324</a></div></div>
@@ -638,7 +646,7 @@ $(document).ready(function(){initNavTree('test_double_buffering_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_double_buffering_8cpp.html">testDoubleBuffering.cpp</a></li>
-    <li class="footer">Generated on Thu Feb 9 2023 04:53:19 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Feb 14 2023 04:56:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
