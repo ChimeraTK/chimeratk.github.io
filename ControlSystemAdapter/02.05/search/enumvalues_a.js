@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sender',['SENDER',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dda430f4111359bd1980bdedff020a21171',1,'ChimeraTK::ProcessArray']]],
-  ['sender_5freceiver',['SENDER_RECEIVER',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dda9ef2c3242765d411075ab916d2c19b32',1,'ChimeraTK::ProcessArray']]]
+  ['unset_891',['Unset',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ac9f88e098f6fe4e4e112eeb05ccb9671',1,'ChimeraTK']]]
 ];

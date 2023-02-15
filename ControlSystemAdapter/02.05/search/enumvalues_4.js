@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fault',['FAULT',['../struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dda893b3aaf1661e3717b18e8335ff93a72',1,'ChimeraTK::StatusAccessorBase']]]
+  ['gray16_879',['Gray16',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62a2a6ec0dac8730c09dba12f860dbbad12',1,'ChimeraTK']]],
+  ['gray8_880',['Gray8',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ac8cfe3d00282445878661f32adca48ef',1,'ChimeraTK']]]
 ];

@@ -4,7 +4,7 @@ var struct_chimera_t_k_1_1_img_header =
     [ "bytesPerPixel", "struct_chimera_t_k_1_1_img_header.html#a7dacc87970d8a6e10adb7de1cfa14dbd", null ],
     [ "channels", "struct_chimera_t_k_1_1_img_header.html#a528fe25c81e0a564f4093da7e4b9a666", null ],
     [ "effBitsPerPixel", "struct_chimera_t_k_1_1_img_header.html#aaf9a47e6519ebbc4be090577b759e401", null ],
-    [ "frame", "struct_chimera_t_k_1_1_img_header.html#a8845d093f5a3b4283e4edf4733e78c8a", null ],
+    [ "frame", "struct_chimera_t_k_1_1_img_header.html#a77b4b1115d4afaf756c7a95ab5f6b301", null ],
     [ "height", "struct_chimera_t_k_1_1_img_header.html#a141afd9b4b3e6ed0e47cf08843d452df", null ],
     [ "image_format", "struct_chimera_t_k_1_1_img_header.html#a1cbb83431e09973a0858263e5fb9bd1c", null ],
     [ "options", "struct_chimera_t_k_1_1_img_header.html#a2680d7c0191f9de28d2abdaceb1b2ef6", null ],
