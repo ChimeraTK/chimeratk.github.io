@@ -8,8 +8,8 @@ var namespace_chimera_t_k =
     [ "DoocsBackendIIIIRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor" ],
     [ "DoocsBackendIntRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor" ],
     [ "DoocsBackendLongRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor" ],
-    [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor" ],
     [ "DoocsBackendRegisterAccessorBase", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base" ],
+    [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor" ],
     [ "DoocsBackendStringRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor" ],
     [ "DoocsBackendTimeStampRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor" ]
 ];
