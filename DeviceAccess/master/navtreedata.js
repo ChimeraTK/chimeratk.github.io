@@ -33,8 +33,12 @@ var NAVTREE =
     [ "Using and creating custom backends", "custom_backends.html", [
       [ "Writing Dummies: Extending the DummyBackend", "custom_backends.html#writing_dummies", null ],
       [ "The Plugin Mechanism", "custom_backends.html#plugin_mechanism", [
-        [ "Loading custom backends", "custom_backends.html#loading_backends", null ],
-        [ "Writing your own backed", "custom_backends.html#writing_backends", null ]
+        [ "Linking custom backends at compile time (recommended)", "custom_backends.html#linking_backends", null ],
+        [ "Loading custom backends at run time", "custom_backends.html#loading_backends", null ],
+        [ "Writing your own backed", "custom_backends.html#writing_backends", null ],
+        [ "Debian packaging scheme for external backends", "custom_backends.html#backend_packaging_scheme", [
+          [ "Usage in the packaging scripts", "custom_backends.html#backend_packaging_usage", null ]
+        ] ]
       ] ]
     ] ],
     [ "Data Consistency Group", "data_consistency_group.html", null ],
@@ -162,25 +166,25 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_access_mode_8cc.html",
-"_numeric_addressed_backend_register_accessor_8h.html#a331e219ebc74268d0ed33fd394f24696",
-"accessor2_d__multiplexed_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951ab45cffe084dd3d20d928bee85e7b0f21",
-"class_chimera_t_k_1_1_exception_dummy.html#a0c701089cee0c06f1f34802fb7b9ec14",
-"class_chimera_t_k_1_1_logical_name_map_parser.html#a3c451c45dac5d42adf0ef99395f64b41",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html",
-"class_chimera_t_k_1_1_scalar_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3",
-"class_chimera_t_k_1_1_transfer_element_test_accessor.html#ab9dc64aee1a964f33d2a4b967662c9cb",
-"class_decorator_test_accessor.html#a4a25ac27e0cd05423fa6ec2760fd4fe3",
-"dir_dea78313235eb47f342de8e8297f8ee6.html",
-"namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb",
-"struct_byte_raw__signed8.html#ab3a504a7f42807ba3ced6f5c25aee094",
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af",
-"struct_integers__signed32___r_o.html#a2334dc325e979ca09c0824bf4f302f07",
-"struct_reg_constant2.html#af9b7bcd21523ffcb3e0e4262e382a88c",
-"struct_static_core.html#a540b46cdf636da7518414030e498b095",
-"test_float_raw_data_8cpp.html#a089f879928780819994168915a144144",
-"test_shared_dummy_backend_unified_8cpp_source.html"
+"",
+"_numeric_addressed_backend_register_accessor_8h.html",
+"accessor2_d__multiplexed_8cpp.html",
+"class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951a84e2c64f38f78ba3ea5c905ab5a2da27",
+"class_chimera_t_k_1_1_exception_dummy.html#a07e0ca117010bf50f9b5788d0b677c16",
+"class_chimera_t_k_1_1_logical_name_map_parser.html#a19eaba0f3fcb9456ac1b67c61b7b1c68",
+"class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#aedfd500f67774c61934fe58864e1a87c",
+"class_chimera_t_k_1_1_scalar_register_accessor.html#a56b15b8fb7295cc1200802a3c93f770b",
+"class_chimera_t_k_1_1_transfer_element_test_accessor.html#ab824c85c63163e76ccda588ef4768f68",
+"class_decorator_test_accessor.html#a453ea91104cb96cef0024d7443a71ccc",
+"dir_d28a4824dc47e487b107a5db32ef43c4.html",
+"namespace_chimera_t_k.html#aaf5ed856dd61a9b26be790c0ce3a68c3",
+"struct_byte_raw__signed8.html#a3c7245e3b9e6d06da95b4c42385f0735",
+"struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945",
+"struct_integers__signed32___dummy_writable.html#a74b1399b6f11b08240216e0f0b7fdfdb",
+"struct_reg_constant2.html#a05a03c64fe37aaffae789be19c4fa7b3",
+"struct_short_raw__unsigned16.html#ae3971f4fcae1e42aa0507969a879543f",
+"test_fixed_point_converter_8cpp.html#afa79a47a36fbc3954dc61b30a16b7e74",
+"test_shared_dummy_backend_unified_8cpp.html#a496123ca3e88764def62cc6749765896"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

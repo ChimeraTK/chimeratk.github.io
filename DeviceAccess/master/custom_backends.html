@@ -89,24 +89,28 @@ $(document).ready(function(){initNavTree('custom_backends.html',''); initResizab
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="writing_dummies"></a>
 Writing Dummies: Extending the DummyBackend</h1>
-<p>Extending the DummyBackend might be usefull for writing simple automated tests. For more complicated tests, in particular those needing to simulate physical behaviour, it is recommended to use the VirtualLab library.</p>
+<p>Extending the DummyBackend might be useful for writing simple automated tests. For more complicated tests, in particular those needing to simulate physical behaviour, it is recommended to use the VirtualLab library.</p>
 <h1><a class="anchor" id="plugin_mechanism"></a>
 The Plugin Mechanism</h1>
-<p>Custom backends are provided as shared libraries. There is a plugin mechanism which allows to load the backend at run time. Like this you can for instance load all kinds of backends in QtHardMon, although it has not been linked against it.</p>
+<p>Custom backends are provided as shared libraries. There is a plugin mechanism which registers the backend with the backend factory when the library is loaded, no matter whether it has been linked at compile time or is dynamically loaded at run time. The latter allows load all kinds of backends in generic applications QtHardMon or the DeviceAccess python bindings, although they have not explicitly been linked against those backends at compile time.</p>
+<h2><a class="anchor" id="linking_backends"></a>
+Linking custom backends at compile time (recommended)</h2>
+<p>As backends have to be compiled against the same DeviceAccess version as the application it is used in, it is recommended to link them in at compile time if it is already known that it will be needed. An application that is designed to read data from a particular DOOCS server for instance should be directly linked with the DOOCS backend.</p>
 <h2><a class="anchor" id="loading_backends"></a>
-Loading custom backends</h2>
-<p>Custom backends should be loaded in the dmap file using the <code>@LOADLIB</code> keyword, followed by the full path to the .so file with the backend.</p>
-<pre class="fragment">@LOAD_LIB /path/to/your/build_directory/lib/libCustomBackend.so
+Loading custom backends at run time</h2>
+<p>Custom backends are loaded via the dmap file using the <code>@LOADLIB</code> keyword, followed by the full path to the .so file with the backend. Use the symlink that ends on <code></code>.so, not the ones with a version number.</p>
+<pre class="fragment">@LOAD_LIB /path/to/your/lib/libCustomBackend.so
 
 MY_CUSTOM_DEVICE (CUSTOM?map=my_device.map)
 </pre><p>Example dmap file from the custom backend registration example (see examples/custom_backend_registration in your build directory).</p>
+<p>To ensure binary compatibility of the loaded backed, the application and the backend must compiled against the same version of DeviceAccess. This cannot be done by the DeviceAccess library as it is only one component. There is a scheme how to create Debian packages in a way that all dynamically used backends are updated if the the using application is updated, and vice versa (see <a class="el" href="custom_backends.html#backend_packaging_scheme">Debian packaging scheme for external backends</a>). It should be applicable to other package managers as well (untested).</p>
 <h2><a class="anchor" id="writing_backends"></a>
 Writing your own backed</h2>
 <p>The backend has to fulfil a few requirements for the plugin mechanism to work.</p>
 <ul>
 <li>The backend has to provide a createInstance() function which can be given to the BackendFactory. Like this the factory can create the backend without knowing the details how to call the specific constructor. </li>
 <li>The backend has to be registered with the factory. This should automatically happen when the library is loaded. </li>
-<li>The library should be loadable at run time, not only at link time. This requires to check that the backend has been compiled with the the correct DeviceAcces version.</li>
+<li>The library should be loadable at run time, not only at link time. This requires to check that the backend has been compiled with the the correct DeviceAccess version.</li>
 </ul>
 <p>The <a class="el" href="class_custom_backend.html">CustomBackend</a> example shows how to implement those three steps of the plugin mechanism. </p><div class="fragment"><div class="line"><span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
 <div class="line"><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
@@ -205,14 +209,34 @@ Writing your own backed</h2>
 <div class="ttc" id="aclass_custom_backend_html_ad91973dd7ec0803f9bc7ed0b552631db"><div class="ttname"><a href="class_custom_backend.html#ad91973dd7ec0803f9bc7ed0b552631db">CustomBackend::createInstance</a></div><div class="ttdeci">static boost::shared_ptr&lt; ChimeraTK::DeviceBackend &gt; createInstance(std::string, std::map&lt; std::string, std::string &gt; parameters)</div><div class="ttdef"><b>Definition:</b> <a href="_custom_backend_8cc_source.html#l00032">CustomBackend.cc:32</a></div></div>
 <div class="ttc" id="astruct_custom_backend_1_1_backend_registerer_html"><div class="ttname"><a href="struct_custom_backend_1_1_backend_registerer.html">CustomBackend::BackendRegisterer</a></div><div class="ttdef"><b>Definition:</b> <a href="_custom_backend_8cc_source.html#l00065">CustomBackend.cc:65</a></div></div>
 <div class="ttc" id="astruct_custom_backend_1_1_backend_registerer_html_a31bb7bc390448fa5fdfc3e589c078b22"><div class="ttname"><a href="struct_custom_backend_1_1_backend_registerer.html#a31bb7bc390448fa5fdfc3e589c078b22">CustomBackend::BackendRegisterer::BackendRegisterer</a></div><div class="ttdeci">BackendRegisterer()</div><div class="ttdef"><b>Definition:</b> <a href="_custom_backend_8cc_source.html#l00066">CustomBackend.cc:66</a></div></div>
-</div><!-- fragment --><p>Next topic: <a class="el" href="dmap.html">Device Mapping</a> </p>
+</div><!-- fragment --><h2><a class="anchor" id="backend_packaging_scheme"></a>
+Debian packaging scheme for external backends</h2>
+<p>In the <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> Debian packaging scheme, the libraries themselves contain the build number as part of the minor version number (e.g. /usr/lib/libChimeraTK-DeviceAccess.so.03.07focal1.01) and the package name itself contains the major and minor version number (e.g. libchimeratk-deviceaccess03-07-focal1). This allows to have several binary incompatible version of the same library to be installed at the same time, and each executable to unambiguously link against the correct version.</p>
+<p>To get a consistent set of libraries at compile time, the -dev packages do not have a version number itself, but depend on the current versions of the dependencies. For instance, the package <code>libchimeratk-device-access-dev</code> in version 03.07focal1.01 depends on <code>libchimeratk-cppext-dev (&gt;= 01.04focal1), libchimeratk-cppext-dev (&lt;&lt; 01.04focal2)</code>. Like this, all -dev packages are consistently upgraded to a new version if one of them is upgraded, while the linker is searching for the .so-file without version number, which is a symlink to the versioned file. The Debian packaging scripts (<a href="https://github.com/ChimeraTK/DebianPackagingScripts">https://github.com/ChimeraTK/DebianPackagingScripts</a>) ensure that all packages are re-build if a dependency changes.</p>
+<p>If the generic applications QtHardMon and DeviceAccess python bindings as well as the loadable backend packages would depend on lib-chimeratk-deviceaccess-dev, this would guarantee that /usr/lib/libMyCustomBackend.so could always be loaded at run time, without having to know the exact version number. The drawback of this solution is to always install the headers and the whole chain of build tools on the target machines, which is not wanted.</p>
+<p>The mechanism to resolve this is based on two extra packages:</p>
+<ul>
+<li>libchimeratk-deviceaccess (without version number in the package name) is an empty meta package which acts as a reference anchor for the generic applications and the backends. </li>
+<li>libchimeratk-deviceaccess-mycustombackend (without version number in the package name)</li>
+</ul>
+<p>The symlink /usr/lib/libMyCustomBackend.so has been moved out of the -dev package into the new package libchimeratk-deviceaccess-mycustombackend, and the -dev package depends on that new package. This custom backend package without version and the generic application depends on the correct version of libchimeratk-deviceaccess. If now either a backend or a generic application is upgraded on the target host, this will upgrade the required version of libchimeratk-deviceaccess as its dependency, which in turn will upgrade all packages that depend on it, i.e. all other generic applications and backends.</p>
+<h3><a class="anchor" id="backend_packaging_usage"></a>
+Usage in the packaging scripts</h3>
+<ul>
+<li>Instead of having a <code>dev</code> and a <code>lib</code> package, loadable backends specify the two packages <code>dev-noheader-dynload</code> and <code>lib</code> in the <code>Has-packages</code> section of the DebiianBuildVersions CONFIG file. <div class="fragment"><div class="line">Has-packages: dev-noheader-dynload lib</div>
+</div><!-- fragment --> </li>
+<li>Generic executables that want to use dynamic backend loading define <code>Use-dynload</code> in the CONFIG file for the particular package (typically for the <code>bin</code> package) <div class="fragment"><div class="line">Has-packages: bin</div>
+<div class="line">Use-dynload: bin</div>
+</div><!-- fragment --></li>
+</ul>
+<p>Next topic: <a class="el" href="dmap.html">Device Mapping</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 17 2023 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 04:56:07 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

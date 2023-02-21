@@ -102,6 +102,7 @@ DUMMY (dummy?map=DFMC_MD22_v3.0.map)
 TIMER (doocs:XFEL.RF/TIMER/LLA6M)
 </pre><p>The alias names can be chosen freely by the developer.</p>
 <p>Please note that for compatibility reasons an old format with three columns is still supported. The third column was specifying the map file in combination with either specifying directly the path to the device node for PCI express or with a "standard device model" URI. Since both approaches do not really fit the structure of the DeviceAccess library any more, they have been superseeded by the <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> device descriptor. If you encounter a dmap file containing the old format, consider updating it to the new format. Support for the old formats will eventually be deprecated and removed.</p>
+<p>The DOOCS backend is not build into the DeviceAccess core library. It needs to be linked at compile time or loaded dynamically (see instructions on <a class="el" href="custom_backends.html#plugin_mechanism">The Plugin Mechanism</a>).</p>
 <h1><a class="anchor" id="The"></a>
 CimeraTK device descriptor</h1>
 <p>The CimeraTK device descriptor (CDD) specifies the type of the device, the address of the device and additional parameters needed. The basic form of a CDD looks like this: </p><pre class="fragment">(backend_type:address?key1=value1&amp;key2=value2)
@@ -137,7 +138,7 @@ CimeraTK device descriptor</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 17 2023 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 04:56:07 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

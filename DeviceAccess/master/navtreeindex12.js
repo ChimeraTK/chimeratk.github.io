@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"struct_byte_raw__signed8.html#a3c7245e3b9e6d06da95b4c42385f0735":[19,0,13,3],
+"struct_byte_raw__signed8.html#a5976fffd9d4587649b7bfee1153f01d5":[19,0,13,2],
+"struct_byte_raw__signed8.html#a6264b194310c549a45c3298b37fb8a0e":[19,0,13,4],
+"struct_byte_raw__signed8.html#ab2bbe78a4edafab861a405666c504390":[19,0,13,0],
 "struct_byte_raw__signed8.html#ab3a504a7f42807ba3ced6f5c25aee094":[19,0,13,6],
 "struct_byte_raw__signed8.html#ad7c3b06580280762c77f9c2497c1ad47":[19,0,13,1],
 "struct_byte_raw__signed8.html#af7b28e1d3d9733ecbabdda8ca9a98790":[19,0,13,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_rebot_protocol0.html#a7bb408ba7f852be32cb75b7a8e8e95c7":[19,0,1,85,5],
 "struct_chimera_t_k_1_1_rebot_protocol0.html#a8851c41555d1ba0cd42b8ddf2db47cad":[19,0,1,85,4],
 "struct_chimera_t_k_1_1_rebot_protocol0.html#a9a43a9108870ac7984db0501e4431c94":[19,0,1,85,9],
-"struct_chimera_t_k_1_1_rebot_protocol0.html#ad108401627f9945f9b77f3de724b1c36":[19,0,1,85,6],
-"struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945":[19,0,1,85,1],
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html":[19,0,1,85,0],
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a5d3a19c9744a93a9167a8f270cc93775":[19,0,1,85,0,0],
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9":[19,0,1,85,0,2]
+"struct_chimera_t_k_1_1_rebot_protocol0.html#ad108401627f9945f9b77f3de724b1c36":[19,0,1,85,6]
 };
