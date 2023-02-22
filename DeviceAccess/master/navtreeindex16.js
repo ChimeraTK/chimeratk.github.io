@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"struct_short_raw__unsigned16.html#a953a219aaa94e9ffe266c2d014fcf020":[19,0,129,5],
+"struct_short_raw__unsigned16.html#aa1eb30b37464a2bebaa2c23e68b24822":[19,0,129,2],
 "struct_short_raw__unsigned16.html#ae3971f4fcae1e42aa0507969a879543f":[19,0,129,3],
 "struct_static_core.html":[19,0,130],
 "struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89":[19,0,130,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "test_fixed_point_converter_8cpp.html#adc1982ab008f1d27098ffc2aa0a089a4":[20,0,7,1,14,29],
 "test_fixed_point_converter_8cpp.html#adc3ac53eaca804f520f6e447f9589ce1":[20,0,7,1,14,57],
 "test_fixed_point_converter_8cpp.html#add8bf0f559895e97e941a375a8073422":[20,0,7,1,14,60],
-"test_fixed_point_converter_8cpp.html#ae03464d1a31c1654f90958d6071ab180":[20,0,7,1,14,45],
-"test_fixed_point_converter_8cpp.html#ae5e68b8ad01abab67a771ccc23e61a94":[20,0,7,1,14,47],
-"test_fixed_point_converter_8cpp.html#af7f1d9e8cf0eb0b78afac20365f2ea06":[20,0,7,1,14,51]
+"test_fixed_point_converter_8cpp.html#ae03464d1a31c1654f90958d6071ab180":[20,0,7,1,14,45]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"struct_reg_constant.html#af77d68b21b12af0ef01923cb79b13051":[19,0,89,2],
+"struct_reg_constant2.html":[19,0,90],
 "struct_reg_constant2.html#a05a03c64fe37aaffae789be19c4fa7b3":[19,0,90,3],
 "struct_reg_constant2.html#a1cbeb95e6ae84dfd73a903ded9623e2a":[19,0,90,2],
 "struct_reg_constant2.html#a47bb7a2dc475eb9164cb4ede5818b403":[19,0,90,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "struct_short_raw__unsigned16.html#a217713b4e4d6b33cb8fea4274feae2c6":[19,0,129,6],
 "struct_short_raw__unsigned16.html#a4218315f893b73ecdd461d31e5d769fd":[19,0,129,0],
 "struct_short_raw__unsigned16.html#a67ae140d4a7ba24bed5f6fda83a7780a":[19,0,129,1],
-"struct_short_raw__unsigned16.html#a794931033ca1cf5d73db484a4d9c8533":[19,0,129,4],
-"struct_short_raw__unsigned16.html#a953a219aaa94e9ffe266c2d014fcf020":[19,0,129,5],
-"struct_short_raw__unsigned16.html#aa1eb30b37464a2bebaa2c23e68b24822":[19,0,129,2]
+"struct_short_raw__unsigned16.html#a794931033ca1cf5d73db484a4d9c8533":[19,0,129,4]
 };

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['test_5fdmap_5ffile_5fpath_4226',['TEST_DMAP_FILE_PATH',['../_backend_factory_8h.html#a133539a4d76d2a1aaef2b0bfebbf18c4',1,'BackendFactory.h']]],
-  ['test_5fmapping_5ffile_4227',['TEST_MAPPING_FILE',['../test_dummy_backend_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde',1,'TEST_MAPPING_FILE():&#160;testDummyBackend.cpp'],['../test_dummy_register_accessor_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde',1,'TEST_MAPPING_FILE():&#160;testDummyRegisterAccessor.cpp']]],
-  ['test_5ftransfer_5fsequence_4228',['TEST_TRANSFER_SEQUENCE',['../test_transfer_element_8cpp.html#a1fbbb5b1f2eaff0f4b0d03f8b949aa49',1,'testTransferElement.cpp']]],
-  ['try_5fregister_5faccess_4229',['TRY_REGISTER_ACCESS',['../_dummy_backend_base_8h.html#ae845db7f933611bff0617577388e4c4f',1,'DummyBackendBase.h']]]
+  ['signed_5fhex_5fto_5fdouble_4226',['SIGNED_HEX_TO_DOUBLE',['../test_fixed_point_converter_8cpp.html#a9f73ef3bea860f19d8173bea35bc7695',1,'testFixedPointConverter.cpp']]],
+  ['signed_5fhex_5fto_5fint64_4227',['SIGNED_HEX_TO_INT64',['../test_fixed_point_converter_8cpp.html#afa79a47a36fbc3954dc61b30a16b7e74',1,'testFixedPointConverter.cpp']]],
+  ['status_5fregister_5fstring_4228',['STATUS_REGISTER_STRING',['../test_dummy_backend_8cpp.html#ab771a5738d0a773e772ceb42fa26410c',1,'testDummyBackend.cpp']]]
 ];
