@@ -1153,23 +1153,23 @@ $(document).ready(function(){initNavTree('test_l_map_backend_8cpp_source.html','
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;  target1.<a class="code" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;PCIE2&quot;</span>);</div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;  target2.<a class="code" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;PCIE3&quot;</span>);</div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;  <span class="keyword">auto</span> t1 = target1.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;BOARD.WORD_USER&quot;</span>);</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  <span class="keyword">auto</span> t2 = target1.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;ADC.AREA_DMAABLE&quot;</span>);</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  <span class="keyword">auto</span> <a class="code" href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a> = target1.<a class="code" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d">getOneDRegisterAccessor</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;ADC.AREA_DMAABLE&quot;</span>);</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;  <span class="keyword">auto</span> t3 = target2.<a class="code" href="class_chimera_t_k_1_1_device.html#a053fa37d233cc991fbfdb3c470d308dd">getTwoDRegisterAccessor</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;TEST/NODMA&quot;</span>);</div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160; </div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;  t1[0] = 120;</div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;  t1.write();</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; t2.getNElements(); i++) {</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    t2[i] = 67890 + 66 * signed(i);</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a>.getNElements(); i++) {</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    <a class="code" href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a>[i] = 67890 + 66 * signed(i);</div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  }</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  t2.write();</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  <a class="code" href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a>.write();</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160; </div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;  <span class="comment">// read it back via the transfer group</span></div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;  group.<a class="code" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a>();</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160; </div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;  BOOST_CHECK(a[0][0] == 120);</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160; </div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;  BOOST_CHECK(t2.getNElements() == a[1].<a class="code" href="class_chimera_t_k_1_1_one_d_register_accessor.html#aa1a214bbd3c6638a8b58146ff83cd88e">getNElements</a>());</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; t2.getNElements(); i++) {</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;  BOOST_CHECK(<a class="code" href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a>.getNElements() == a[1].<a class="code" href="class_chimera_t_k_1_1_one_d_register_accessor.html#aa1a214bbd3c6638a8b58146ff83cd88e">getNElements</a>());</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a>.getNElements(); i++) {</div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    BOOST_CHECK(a[1][i] == 67890 + 66 * <span class="keywordtype">signed</span>(i));</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;  }</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160; </div>
@@ -1208,6 +1208,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_8cpp_source.html','
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160; </div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="ttc" id="a_check_file_offset_bits_8c_html_ace14e6f617c5393784825480d498ae6c"><div class="ttname"><a href="_check_file_offset_bits_8c.html#ace14e6f617c5393784825480d498ae6c">t2</a></div><div class="ttdeci">int t2[(((64 *GB -1) % 671088649)==268434537) &amp;&amp;(((TB -(64 *GB -1)+255) % 1792151290)==305159546)? 1:-1]</div><div class="ttdef"><b>Definition:</b> <a href="_check_file_offset_bits_8c_source.html#l00007">CheckFileOffsetBits.c:8</a></div></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="a_dummy_register_accessor_8h_html"><div class="ttname"><a href="_dummy_register_accessor_8h.html">DummyRegisterAccessor.h</a></div></div>
 <div class="ttc" id="a_exception_dummy_backend_8h_html"><div class="ttname"><a href="_exception_dummy_backend_8h.html">ExceptionDummyBackend.h</a></div></div>
@@ -1250,7 +1251,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_l_map_backend_8cpp.html">testLMapBackend.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 24 2023 04:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Feb 25 2023 04:53:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['test_5fdmap_5ffile_5fpath_4230',['TEST_DMAP_FILE_PATH',['../_backend_factory_8h.html#a133539a4d76d2a1aaef2b0bfebbf18c4',1,'BackendFactory.h']]],
-  ['test_5fmapping_5ffile_4231',['TEST_MAPPING_FILE',['../test_dummy_backend_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde',1,'TEST_MAPPING_FILE():&#160;testDummyBackend.cpp'],['../test_dummy_register_accessor_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde',1,'TEST_MAPPING_FILE():&#160;testDummyRegisterAccessor.cpp']]],
-  ['test_5ftransfer_5fsequence_4232',['TEST_TRANSFER_SEQUENCE',['../test_transfer_element_8cpp.html#a1fbbb5b1f2eaff0f4b0d03f8b949aa49',1,'testTransferElement.cpp']]],
-  ['try_5fregister_5faccess_4233',['TRY_REGISTER_ACCESS',['../_dummy_backend_base_8h.html#ae845db7f933611bff0617577388e4c4f',1,'DummyBackendBase.h']]]
+  ['read_5fonly_5fregister_5fstring_4230',['READ_ONLY_REGISTER_STRING',['../test_dummy_backend_8cpp.html#ad842bdc5e2d6b862135717c66a98995c',1,'testDummyBackend.cpp']]],
+  ['rw_5fd16_4231',['RW_D16',['../pciedev__io_8h.html#abc50dc315c651c129149ea8f543e23ea',1,'pciedev_io.h']]],
+  ['rw_5fd32_4232',['RW_D32',['../pciedev__io_8h.html#a95cac24787550ae06eb2cd33b0d92194',1,'pciedev_io.h']]],
+  ['rw_5fd8_4233',['RW_D8',['../pciedev__io_8h.html#a3494a27985916bbb418d9c6557985c15',1,'pciedev_io.h']]],
+  ['rw_5fdma_4234',['RW_DMA',['../pciedev__io_8h.html#a3afe2693cdc01fee9aa769f889e9f690',1,'pciedev_io.h']]],
+  ['rw_5finfo_4235',['RW_INFO',['../pciedev__io_8h.html#a8ee8c3c02591a6a47113a0e59b88936a',1,'pciedev_io.h']]]
 ];

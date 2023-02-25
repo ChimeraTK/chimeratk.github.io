@@ -27,6 +27,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testLMapMonostableTriggerPlugin.cpp", "test_l_map_monostable_trigger_plugin_8cpp.html", "test_l_map_monostable_trigger_plugin_8cpp" ],
     [ "testLMapTypeHintModifierPlugin.cc", "test_l_map_type_hint_modifier_plugin_8cc.html", "test_l_map_type_hint_modifier_plugin_8cc" ],
     [ "testMapFileParser.cpp", "test_map_file_parser_8cpp.html", "test_map_file_parser_8cpp" ],
+    [ "testMathPluginDataValidity.cpp", "test_math_plugin_data_validity_8cpp.html", "test_math_plugin_data_validity_8cpp" ],
     [ "testMultiplexedDataAccesor.cpp", "test_multiplexed_data_accesor_8cpp.html", "test_multiplexed_data_accesor_8cpp" ],
     [ "testNDRegisterAccessorDecorator.cpp", "test_n_d_register_accessor_decorator_8cpp.html", "test_n_d_register_accessor_decorator_8cpp" ],
     [ "testNumericAddressedBackendRegisterAccessor.cpp", "test_numeric_addressed_backend_register_accessor_8cpp.html", "test_numeric_addressed_backend_register_accessor_8cpp" ],

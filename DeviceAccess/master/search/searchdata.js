@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "adfmt",
   8: "abcdefinorstuvw",
   9: "delmnorst",
-  10: "_abcdefhilnprstuvw",
+  10: "abcdefghiklmnprstuvw",
   11: "2abcdelmqtux"
 };
 
