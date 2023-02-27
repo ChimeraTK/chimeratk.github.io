@@ -75,5 +75,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::DoocsUpdater::ToDoocsUpdateDescriptor", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html", null ],
     [ "ChimeraTK::VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", null ],
-    [ "ZmqData", "struct_zmq_data.html", null ]
+    [ "ZmqData", "struct_zmq_data.html", null ],
+    [ "ZMQFixture< ExpectedValueType >", "struct_z_m_q_fixture.html", null ]
 ];

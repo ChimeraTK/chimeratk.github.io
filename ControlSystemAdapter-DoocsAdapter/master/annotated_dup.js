@@ -32,5 +32,6 @@ var annotated_dup =
     [ "GlobalFixture", "struct_global_fixture.html", "struct_global_fixture" ],
     [ "TestableCSAdapterEqFct", "class_testable_c_s_adapter_eq_fct.html", "class_testable_c_s_adapter_eq_fct" ],
     [ "TestableDoocsSpectrum", "class_testable_doocs_spectrum.html", "class_testable_doocs_spectrum" ],
-    [ "ZmqData", "struct_zmq_data.html", "struct_zmq_data" ]
+    [ "ZmqData", "struct_zmq_data.html", "struct_zmq_data" ],
+    [ "ZMQFixture", "struct_z_m_q_fixture.html", "struct_z_m_q_fixture" ]
 ];

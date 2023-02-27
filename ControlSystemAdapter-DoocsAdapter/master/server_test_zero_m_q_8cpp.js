@@ -1,8 +1,8 @@
 var server_test_zero_m_q_8cpp =
 [
+    [ "ZMQFixture", "struct_z_m_q_fixture.html", "struct_z_m_q_fixture" ],
     [ "BOOST_TEST_MODULE", "server_test_zero_m_q_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "BOOST_AUTO_TEST_CASE", "server_test_zero_m_q_8cpp.html#a90fed34eb162f44f66ea2c4fa766c311", null ],
-    [ "BOOST_AUTO_TEST_CASE", "server_test_zero_m_q_8cpp.html#a5994cd1bd444433196ce7d30166b5f3e", null ],
-    [ "BOOST_AUTO_TEST_CASE", "server_test_zero_m_q_8cpp.html#a1f8893621f4cebe2116c94e600749fa9", null ],
-    [ "object_name", "server_test_zero_m_q_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8", null ]
+    [ "BOOST_FIXTURE_TEST_CASE", "server_test_zero_m_q_8cpp.html#afc6e81fdc5cc39d5f1a85e1e2f79a07d", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "server_test_zero_m_q_8cpp.html#a17f4c62b5d35d335f9c6c0f45f75f45a", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "server_test_zero_m_q_8cpp.html#ae7420649854301b2ebea842eb0ac5bbe", null ]
 ];

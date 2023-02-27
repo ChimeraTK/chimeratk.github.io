@@ -84,20 +84,20 @@ $(document).ready(function(){initNavTree('server_test_zero_m_q_8cpp.html',''); i
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">serverTestZeroMQ.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
-<code>#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>&quot;</code><br />
+<code>#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</code><br />
 <code>#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</code><br />
 <code>#include &lt;eq_client.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -111,6 +111,11 @@ $(document).ready(function(){initNavTree('server_test_zero_m_q_8cpp.html',''); i
 </div>
 <p><a href="server_test_zero_m_q_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_m_q_fixture.html">ZMQFixture&lt; ExpectedValueType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;serverTestZeroMQ</td></tr>
@@ -118,17 +123,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5994cd1bd444433196ce7d30166b5f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#a5994cd1bd444433196ce7d30166b5f3e">BOOST_AUTO_TEST_CASE</a> (testScalar)</td></tr>
-<tr class="separator:a5994cd1bd444433196ce7d30166b5f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fed34eb162f44f66ea2c4fa766c311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#a90fed34eb162f44f66ea2c4fa766c311">BOOST_AUTO_TEST_CASE</a> (testArray)</td></tr>
-<tr class="separator:a90fed34eb162f44f66ea2c4fa766c311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8893621f4cebe2116c94e600749fa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#a1f8893621f4cebe2116c94e600749fa9">BOOST_AUTO_TEST_CASE</a> (testSpectrum)</td></tr>
-<tr class="separator:a1f8893621f4cebe2116c94e600749fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a06c138c2b0b13b0e11be4e16bf242cb8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></td></tr>
-<tr class="separator:a06c138c2b0b13b0e11be4e16bf242cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f4c62b5d35d335f9c6c0f45f75f45a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#a17f4c62b5d35d335f9c6c0f45f75f45a">BOOST_FIXTURE_TEST_CASE</a> (testZMQScalar, <a class="el" href="struct_z_m_q_fixture.html">ZMQFixture</a>&lt; int32_t &gt;)</td></tr>
+<tr class="separator:a17f4c62b5d35d335f9c6c0f45f75f45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6e81fdc5cc39d5f1a85e1e2f79a07d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#afc6e81fdc5cc39d5f1a85e1e2f79a07d">BOOST_FIXTURE_TEST_CASE</a> (testZMQArray, <a class="el" href="struct_z_m_q_fixture.html">ZMQFixture</a>&lt; std::vector&lt; int32_t &gt;&gt;)</td></tr>
+<tr class="separator:afc6e81fdc5cc39d5f1a85e1e2f79a07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7420649854301b2ebea842eb0ac5bbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_zero_m_q_8cpp.html#ae7420649854301b2ebea842eb0ac5bbe">BOOST_FIXTURE_TEST_CASE</a> (testZMQSpectrum, <a class="el" href="struct_z_m_q_fixture.html">ZMQFixture</a>&lt; std::vector&lt; float &gt;&gt;)</td></tr>
+<tr class="separator:ae7420649854301b2ebea842eb0ac5bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6b2a3852db8bb19ab6909bac01859985"></a>
@@ -148,89 +148,93 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a90fed34eb162f44f66ea2c4fa766c311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90fed34eb162f44f66ea2c4fa766c311">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/3]</span></h2>
+<a id="afc6e81fdc5cc39d5f1a85e1e2f79a07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6e81fdc5cc39d5f1a85e1e2f79a07d">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">testArray&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">testZMQArray&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_m_q_fixture.html">ZMQFixture</a>&lt; std::vector&lt; int32_t &gt;&gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_test_zero_m_q_8cpp_source.html#l00161">161</a> of file <a class="el" href="server_test_zero_m_q_8cpp_source.html">serverTestZeroMQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_test_zero_m_q_8cpp_source.html#l00252">252</a> of file <a class="el" href="server_test_zero_m_q_8cpp_source.html">serverTestZeroMQ.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5994cd1bd444433196ce7d30166b5f3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5994cd1bd444433196ce7d30166b5f3e">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/3]</span></h2>
+<a id="a17f4c62b5d35d335f9c6c0f45f75f45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f4c62b5d35d335f9c6c0f45f75f45a">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">testScalar&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">testZMQScalar&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_m_q_fixture.html">ZMQFixture</a>&lt; int32_t &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Note: The data is processed by the ReferenceTestApplication in the order of the types as listed in the HolderMap of the ReferenceTestApplication. INT comes before UINT and FLOAT, so the macro pulse number is first written and then our values.</p>
 
-<p class="definition">Definition at line <a class="el" href="server_test_zero_m_q_8cpp_source.html#l00034">34</a> of file <a class="el" href="server_test_zero_m_q_8cpp_source.html">serverTestZeroMQ.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_test_zero_m_q_8cpp_source.html#l00239">239</a> of file <a class="el" href="server_test_zero_m_q_8cpp_source.html">serverTestZeroMQ.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1f8893621f4cebe2116c94e600749fa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f8893621f4cebe2116c94e600749fa9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/3]</span></h2>
+<a id="ae7420649854301b2ebea842eb0ac5bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7420649854301b2ebea842eb0ac5bbe">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">testSpectrum&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">testZMQSpectrum&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="server_test_zero_m_q_8cpp_source.html#l00283">283</a> of file <a class="el" href="server_test_zero_m_q_8cpp_source.html">serverTestZeroMQ.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a06c138c2b0b13b0e11be4e16bf242cb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c138c2b0b13b0e11be4e16bf242cb8">&#9670;&nbsp;</a></span>object_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">const char* object_name</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_m_q_fixture.html">ZMQFixture</a>&lt; std::vector&lt; float &gt;&gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eq__create_8cc_source.html#l00014">14</a> of file <a class="el" href="eq__create_8cc_source.html">eq_create.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_test_zero_m_q_8cpp_source.html#l00265">265</a> of file <a class="el" href="server_test_zero_m_q_8cpp_source.html">serverTestZeroMQ.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,7 +244,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="server_test_zero_m_q_8cpp.html">serverTestZeroMQ.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 3 2023 04:59:52 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 27 2023 08:54:11 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
