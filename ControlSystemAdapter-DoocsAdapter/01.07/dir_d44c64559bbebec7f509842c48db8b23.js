@@ -2,7 +2,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
 [
     [ "basenameFromAddress.h", "basename_from_address_8h.html", "basename_from_address_8h" ],
     [ "CSAdapterEqFct.h", "_c_s_adapter_eq_fct_8h.html", [
-      [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html", "class_chimera_t_k_1_1_doocs_process_array" ],
       [ "CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", "class_chimera_t_k_1_1_c_s_adapter_eq_fct" ]
     ] ],
     [ "D_textUnifier.h", "_d__text_unifier_8h.html", [
