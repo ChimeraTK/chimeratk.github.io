@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a660e909c3491a70ea0284b34f3272148":[19,0,1,80,0,6],
 "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a9fc01ecbc1490d2ec782bc16cf906fa0":[19,0,1,80,0,1],
 "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#aa0d74073cb7812a0bb6404c9255599cb":[19,0,1,80,0,3],
 "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#ab573301d84f53823a493ce265d71ac9e":[19,0,1,80,0,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "struct_integers__signed32.html#a301a60bcab680fb72b058b951449ab41":[19,0,46,8],
 "struct_integers__signed32.html#a42263392836eb3cec9edc0d2f7110b6a":[19,0,46,10],
 "struct_integers__signed32.html#a5810c49c7fa4af916268dee2b9ae48fd":[19,0,46,0],
-"struct_integers__signed32.html#a5e439a216e75736cb7536e05bb4e5c82":[19,0,46,13],
-"struct_integers__signed32.html#a5faf8e594ed1252c65345d6f6fb37915":[19,0,46,14]
+"struct_integers__signed32.html#a5e439a216e75736cb7536e05bb4e5c82":[19,0,46,13]
 };
