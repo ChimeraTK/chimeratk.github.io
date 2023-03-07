@@ -122,9 +122,9 @@ Classes</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aae6c539d4e6d69744cd2765a7459fb84"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html#aae6c539d4e6d69744cd2765a7459fb84">latestValue</a></td></tr>
 <tr class="separator:aae6c539d4e6d69744cd2765a7459fb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb7faa6bfd67d69a6d9777d387ce3cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html#aacb7faa6bfd67d69a6d9777d387ce3cd">latestValidity</a></td></tr>
+<tr class="memitem:aacb7faa6bfd67d69a6d9777d387ce3cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html#aacb7faa6bfd67d69a6d9777d387ce3cd">latestValidity</a> {<a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a>}</td></tr>
 <tr class="separator:aacb7faa6bfd67d69a6d9777d387ce3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ece2ef3f5a98250ba4a7c0f27bf7680"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html#a8ece2ef3f5a98250ba4a7c0f27bf7680">latestVersion</a></td></tr>
+<tr class="memitem:a8ece2ef3f5a98250ba4a7c0f27bf7680"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html#a8ece2ef3f5a98250ba4a7c0f27bf7680">latestVersion</a> {nullptr}</td></tr>
 <tr class="separator:a8ece2ef3f5a98250ba4a7c0f27bf7680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42dbc8275c406f7595ec52638a54e3c"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>, cppext::future_queue&lt; <a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table_1_1_queued_value.html">QueuedValue</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html#ae42dbc8275c406f7595ec52638a54e3c">subscriptions</a></td></tr>
 <tr class="separator:ae42dbc8275c406f7595ec52638a54e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +136,7 @@ struct ChimeraTK::LNMVariable::ValueTable&lt; T &gt;</h3>
 <p>Hold values of CONSTANT or VARIABLE types in a type-dependent table. </p>
 <p>Only the entry matching the valueType is actually valid. Note: We cannot directly put the std::vector in a <a class="el" href="class_chimera_t_k_1_1_template_user_type_map.html" title="Map of UserType to a class template with the UserType as template argument.">TemplateUserTypeMap</a>, since it has more than one template arguments (with defaults). </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00023">23</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00019">19</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aacb7faa6bfd67d69a6d9777d387ce3cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacb7faa6bfd67d69a6d9777d387ce3cd">&#9670;&nbsp;</a></span>latestValidity</h2>
@@ -147,12 +147,12 @@ struct ChimeraTK::LNMVariable::ValueTable&lt; T &gt;</h3>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> <a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html">ChimeraTK::LNMVariable::ValueTable</a>&lt; T &gt;::latestValidity</td>
+          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> <a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html">ChimeraTK::LNMVariable::ValueTable</a>&lt; T &gt;::latestValidity {<a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00025">25</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00021">21</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
 
 </div>
 </div>
@@ -170,7 +170,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00024">24</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00020">20</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
 
 </div>
 </div>
@@ -183,12 +183,12 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html">ChimeraTK::LNMVariable::ValueTable</a>&lt; T &gt;::latestVersion</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html">ChimeraTK::LNMVariable::ValueTable</a>&lt; T &gt;::latestVersion {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00026">26</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00022">22</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00032">32</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_variable_8h_source.html#l00028">28</a> of file <a class="el" href="_l_n_m_variable_8h_source.html">LNMVariable.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +219,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable.html">LNMVariable</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html">ValueTable</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

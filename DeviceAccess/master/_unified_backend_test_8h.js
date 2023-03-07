@@ -34,6 +34,5 @@ var _unified_backend_test_8h =
     [ "compareHelper< float >", "_unified_backend_test_8h.html#a0696347ee77c11e2986d8d745d5b08fe", null ],
     [ "compareHelper< std::string >", "_unified_backend_test_8h.html#a30d24f6ea4866dacebad82c6c15082d2", null ],
     [ "to_string", "_unified_backend_test_8h.html#a4fbed40f4c6c4285e3e37fcf23aa535b", null ],
-    [ "to_string", "_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a", null ],
-    [ "CHECK_REPEAT_COUNT", "_unified_backend_test_8h.html#a82a79bc2ac6d5f9b12e589bcae767090", null ]
+    [ "to_string", "_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a", null ]
 ];

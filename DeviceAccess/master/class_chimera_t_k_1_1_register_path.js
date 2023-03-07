@@ -24,7 +24,6 @@ var class_chimera_t_k_1_1_register_path =
     [ "operator==", "class_chimera_t_k_1_1_register_path.html#a1d5ac815337901eddc118e3fb41a4104", null ],
     [ "operator==", "class_chimera_t_k_1_1_register_path.html#a58ded576ca777b42c14e8bae53e70e5e", null ],
     [ "removeExtraSeparators", "class_chimera_t_k_1_1_register_path.html#ac4e173e3e279992f779ae2d39873a2bd", null ],
-    [ "removeExtraSeparators", "class_chimera_t_k_1_1_register_path.html#a8d01ee78aec96ee09b66d81e409e177e", null ],
     [ "setAltSeparator", "class_chimera_t_k_1_1_register_path.html#a84c47bf04a7a173d99da19f79f087570", null ],
     [ "startsWith", "class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af", null ],
     [ "operator*", "class_chimera_t_k_1_1_register_path.html#a9ae01e439a4e6bed6fa2360bf63e924e", null ],

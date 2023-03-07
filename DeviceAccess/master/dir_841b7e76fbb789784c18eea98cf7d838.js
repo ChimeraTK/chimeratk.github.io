@@ -20,7 +20,7 @@ var dir_841b7e76fbb789784c18eea98cf7d838 =
     [ "MapFileParser.h", "_map_file_parser_8h.html", [
       [ "MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", "class_chimera_t_k_1_1_map_file_parser" ]
     ] ],
-    [ "NumericAddress.h", "_numeric_address_8h.html", null ],
+    [ "NumericAddress.h", "_numeric_address_8h.html", "_numeric_address_8h" ],
     [ "NumericAddressedBackend.h", "_numeric_addressed_backend_8h.html", [
       [ "NumericAddressedBackend", "class_chimera_t_k_1_1_numeric_addressed_backend.html", "class_chimera_t_k_1_1_numeric_addressed_backend" ]
     ] ],

@@ -1,6 +1,6 @@
 var class_chimera_t_k_1_1_device_backend =
 [
-    [ "~DeviceBackend", "class_chimera_t_k_1_1_device_backend.html#aea141a8f0992e9580c908799c4220680", null ],
+    [ "~DeviceBackend", "class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c", null ],
     [ "activateAsyncRead", "class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8", null ],
     [ "close", "class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE", "class_chimera_t_k_1_1_device_backend.html#a3feea5c1b2cdfbafa6aec22c86dbe6dd", null ],

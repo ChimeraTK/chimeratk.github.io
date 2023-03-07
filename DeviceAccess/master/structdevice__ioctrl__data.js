@@ -1,7 +1,7 @@
 var structdevice__ioctrl__data =
 [
-    [ "cmd", "structdevice__ioctrl__data.html#abce7358be06d7ce7e756fe02c25c187e", null ],
-    [ "data", "structdevice__ioctrl__data.html#a99d6274576188aeea8225493378b04ec", null ],
-    [ "offset", "structdevice__ioctrl__data.html#aa0b658a92f878b772eacf929ffe1e180", null ],
-    [ "reserved", "structdevice__ioctrl__data.html#ad8ffd816b771df6ef50f7c40166a37a6", null ]
+    [ "cmd", "structdevice__ioctrl__data.html#a52de50611d298e669a3a0be9751df37a", null ],
+    [ "data", "structdevice__ioctrl__data.html#a378b71218baaadf1a5938141be87890b", null ],
+    [ "offset", "structdevice__ioctrl__data.html#a4591ed737a751c9edda235df064c1038", null ],
+    [ "reserved", "structdevice__ioctrl__data.html#ab9e14f9d5c317deab20252502c55c496", null ]
 ];

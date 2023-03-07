@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8bd176f8178d4799f9c592d1b5ee4b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b05d42dc22faf02e5a03e4aae2db8f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a6b05d42dc22faf02e5a03e4aae2db8f0">NumericAddressedInterruptDispatcher</a> ()</td></tr>
 <tr class="separator:a6b05d42dc22faf02e5a03e4aae2db8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e5983d3be57b8cedde01a699ff0ddd"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:ab5e5983d3be57b8cedde01a699ff0ddd"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html">AsyncVariable</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#ab5e5983d3be57b8cedde01a699ff0ddd">createAsyncVariable</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; backend, <a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a> const &amp;descriptor, bool isActive)</td></tr>
-<tr class="separator:ab5e5983d3be57b8cedde01a699ff0ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4897bbc891fd32a5f3d92379b94a5c1c"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a4897bbc891fd32a5f3d92379b94a5c1c"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html">AsyncVariable</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a4897bbc891fd32a5f3d92379b94a5c1c">createAsyncVariable</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; &amp;backend, <a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a> const &amp;descriptor, bool isActive)</td></tr>
+<tr class="separator:a4897bbc891fd32a5f3d92379b94a5c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e7501f06cd9c78abee67cbffe165ab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a8e7501f06cd9c78abee67cbffe165ab6">activate</a> () override</td></tr>
 <tr class="memdesc:a8e7501f06cd9c78abee67cbffe165ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate all accessors and send the initial value.  <a href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a8e7501f06cd9c78abee67cbffe165ab6">More...</a><br /></td></tr>
 <tr class="separator:a8e7501f06cd9c78abee67cbffe165ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,9 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1896007e5233e8b957b112f30aea303 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303">unsubscribe</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> id)</td></tr>
 <tr class="memdesc:ac1896007e5233e8b957b112f30aea303 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function must only be called from the destructor of the <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> which is created in the subscribe function!  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303">More...</a><br /></td></tr>
 <tr class="separator:ac1896007e5233e8b957b112f30aea303 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cecaf1bf8d2c9296247bfb5d50601d0 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a1cecaf1bf8d2c9296247bfb5d50601d0">sendException</a> (std::exception_ptr e)</td></tr>
-<tr class="memdesc:a1cecaf1bf8d2c9296247bfb5d50601d0 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an exception to all accessors.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#a1cecaf1bf8d2c9296247bfb5d50601d0">More...</a><br /></td></tr>
-<tr class="separator:a1cecaf1bf8d2c9296247bfb5d50601d0 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63adeabcd93ad5ab5b8ce7cbffdae39a inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a63adeabcd93ad5ab5b8ce7cbffdae39a">sendException</a> (const std::exception_ptr &amp;e)</td></tr>
+<tr class="memdesc:a63adeabcd93ad5ab5b8ce7cbffdae39a inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an exception to all accessors.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#a63adeabcd93ad5ab5b8ce7cbffdae39a">More...</a><br /></td></tr>
+<tr class="separator:a63adeabcd93ad5ab5b8ce7cbffdae39a inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79195db1c3c5d3433fa74c316f4ecc8 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#aa79195db1c3c5d3433fa74c316f4ecc8">deactivate</a> ()</td></tr>
 <tr class="memdesc:aa79195db1c3c5d3433fa74c316f4ecc8 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate all subscribers without throwing an exception.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#aa79195db1c3c5d3433fa74c316f4ecc8">More...</a><br /></td></tr>
 <tr class="separator:aa79195db1c3c5d3433fa74c316f4ecc8 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +175,7 @@ Protected Attributes</h2></td></tr>
 </ul>
 <p>This is done in a single class because the container with the fluctuating number of subscribed variables is not thread safe. This class has implements a lock so dispatching an interrupt is safe against concurrent subscription/unsubscription. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00032">32</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00033">33</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6b05d42dc22faf02e5a03e4aae2db8f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b05d42dc22faf02e5a03e4aae2db8f0">&#9670;&nbsp;</a></span>NumericAddressedInterruptDispatcher()</h2>
@@ -264,12 +264,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8">ChimeraTK::AsyncAccessorManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00049">49</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00050">50</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
-<a id="ab5e5983d3be57b8cedde01a699ff0ddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5e5983d3be57b8cedde01a699ff0ddd">&#9670;&nbsp;</a></span>createAsyncVariable()</h2>
+<a id="a4897bbc891fd32a5f3d92379b94a5c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4897bbc891fd32a5f3d92379b94a5c1c">&#9670;&nbsp;</a></span>createAsyncVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +279,7 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html">AsyncVariable</a> &gt; ChimeraTK::NumericAddressedInterruptDispatcher::createAsyncVariable </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>backend</em>, </td>
         </tr>
         <tr>
@@ -302,13 +302,13 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00087">87</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00088">88</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_ab5e5983d3be57b8cedde01a699ff0ddd_cgraph.svg" width="514" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_a4897bbc891fd32a5f3d92379b94a5c1c_cgraph.svg" width="514" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -316,7 +316,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_ab5e5983d3be57b8cedde01a699ff0ddd_icgraph.svg" width="574" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_a4897bbc891fd32a5f3d92379b94a5c1c_icgraph.svg" width="574" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -365,7 +365,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00058">58</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00059">59</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html">NumericAddressedInterruptDispatcher</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

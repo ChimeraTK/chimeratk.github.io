@@ -1,6 +1,6 @@
 var class_chimera_t_k_1_1_rebot_1_1_connection =
 [
-    [ "Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html#a30ca330e1a4ee3ddc77d2eb516765b10", null ],
+    [ "Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html#a8650785de6643da93f36f6bee344ac85", null ],
     [ "close", "class_chimera_t_k_1_1_rebot_1_1_connection.html#a064a7ed5fd97c4408cd741593459e240", null ],
     [ "isOpen", "class_chimera_t_k_1_1_rebot_1_1_connection.html#a6e6643bd8d5aeb7af6b1e721fef328c6", null ],
     [ "open", "class_chimera_t_k_1_1_rebot_1_1_connection.html#a9492b8de4bcab42ec94419e150768ee9", null ],

@@ -2,7 +2,7 @@ var dir_c872042f09b1bc5ee39723da1e7cec52 =
 [
     [ "DeviceInfoMap.h", "_device_info_map_8h.html", "_device_info_map_8h" ],
     [ "DMapFileParser.h", "_d_map_file_parser_8h.html", [
-      [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", "class_chimera_t_k_1_1_d_map_file_parser" ]
+      [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ]
     ] ],
     [ "parserUtilities.h", "parser_utilities_8h.html", "parser_utilities_8h" ],
     [ "predicates.h", "predicates_8h.html", [

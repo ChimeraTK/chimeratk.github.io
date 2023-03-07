@@ -8,7 +8,6 @@ var dir_a5d8e4da9cc80025df522d391d7137df =
     [ "MetadataCatalogue.cc", "_metadata_catalogue_8cc.html", null ],
     [ "RegisterCatalogue.cc", "_register_catalogue_8cc.html", null ],
     [ "RegisterInfo.cpp", "_register_info_8cpp.html", null ],
-    [ "TransferElement.cc", "_transfer_element_8cc.html", null ],
     [ "TransferElementAbstractor.cc", "_transfer_element_abstractor_8cc.html", null ],
     [ "TransferElementID.cc", "_transfer_element_i_d_8cc.html", "_transfer_element_i_d_8cc" ],
     [ "TransferGroup.cc", "_transfer_group_8cc.html", null ],

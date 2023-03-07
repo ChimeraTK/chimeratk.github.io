@@ -155,7 +155,7 @@ Interface for implementing backends</h2>
 <li>creating one <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> for each trigger domain</li>
 <li>calling <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a1678c28514e2b294a8768e72127a44ae" title="Request a new subscription.">AsyncAccessorManager::subscribe()</a> in getRegisterAccessor(), and handing out the created <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a>. If the accessor is writeable (according to the <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a>), the <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> will call getRegisterAccessor() recursively without the wait_for_new_data flag for the same register, and add this accessor as write accessor to the <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a>. The backend's getRegisterAccessor() implementation must be able to handle this recursive call.<a class="el" href="design__async_n_d_register_accessor__numeric_addressed.html#asyncAccessor_comment_writeable">(*5)</a></li>
 <li>calling <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a82fdaaf8173f79c73dff28fd65e50ab7" title="Activate all accessors and send the initial value.">AsyncAccessorManager::activate()</a> in activateAsyncRead()</li>
-<li>calling <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a1cecaf1bf8d2c9296247bfb5d50601d0" title="Send an exception to all accessors.">AsyncAccessorManager::sendException()</a> in setException()</li>
+<li>calling <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a63adeabcd93ad5ab5b8ce7cbffdae39a" title="Send an exception to all accessors.">AsyncAccessorManager::sendException()</a> in setException()</li>
 <li>calling <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#aa79195db1c3c5d3433fa74c316f4ecc8" title="Deactivate all subscribers without throwing an exception.">AsyncAccessorManager::deactivate()</a> when the backend is closed.</li>
 </ul>
 <p>The code sending the data has to follow a similar sequence as <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a82fdaaf8173f79c73dff28fd65e50ab7" title="Activate all accessors and send the initial value.">AsyncAccessorManager::activate()</a>:</p><ol type="1">
@@ -207,7 +207,7 @@ Interface to implementing backends</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

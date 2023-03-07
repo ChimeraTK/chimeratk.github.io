@@ -148,7 +148,7 @@ var annotated_dup =
       [ "runtime_error", "class_chimera_t_k_1_1runtime__error.html", "class_chimera_t_k_1_1runtime__error" ],
       [ "logic_error", "class_chimera_t_k_1_1logic__error.html", "class_chimera_t_k_1_1logic__error" ],
       [ "DeviceInfoMap", "class_chimera_t_k_1_1_device_info_map.html", "class_chimera_t_k_1_1_device_info_map" ],
-      [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", "class_chimera_t_k_1_1_d_map_file_parser" ],
+      [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
       [ "findDevByName_pred", "class_chimera_t_k_1_1find_dev_by_name__pred.html", "class_chimera_t_k_1_1find_dev_by_name__pred" ],
       [ "copmaredRegisterInfosByName2_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html", "class_chimera_t_k_1_1copmared_register_infos_by_name2__functor" ],
       [ "RegisterPath", "class_chimera_t_k_1_1_register_path.html", "class_chimera_t_k_1_1_register_path" ],

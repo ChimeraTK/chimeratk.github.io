@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['second_5fargument_5ftype_4017',['second_argument_type',['../structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#ad64e96f34504fe39f624833c8d325911',1,'std::less&lt; ChimeraTK::TransferElementID &gt;']]],
-  ['sharedaccessormap_4018',['SharedAccessorMap',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6f59a2385125091a42403906c63f838e',1,'ChimeraTK::LogicalNameMappingBackend']]],
-  ['sharedmemoryvector_4019',['SharedMemoryVector',['../_shared_dummy_backend_8h.html#ae5c130c00eb99bd7fa9e98a5a552ff3d',1,'SharedDummyBackend.h']]],
-  ['sharedptr_4020',['SharedPtr',['../class_chimera_t_k_1_1_transfer_element.html#a5a3283a433fa427031456d9a68878a51',1,'ChimeraTK::TransferElement']]],
-  ['shmemallocator_4021',['ShmemAllocator',['../_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295',1,'SharedDummyBackend.h']]],
-  ['singletypeusertypemap_4022',['SingleTypeUserTypeMap',['../namespace_chimera_t_k.html#ae7a8921ab1ff250afdd79cc5f3c70fea',1,'ChimeraTK']]],
-  ['singletypeusertypemapnovoid_4023',['SingleTypeUserTypeMapNoVoid',['../namespace_chimera_t_k.html#ad2a806d36f9db8ff11fa81fa7d3a31d9',1,'ChimeraTK']]]
+  ['this_5ftype_4012',['THIS_TYPE',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa5cb556fdc69bf76b6fb26b033ed384b',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
+  ['timepoint_4013',['TimePoint',['../testable_rebot_sleep__testing_impl_8h.html#ad3e8c75320f092bc568948ea00fa7771',1,'testableRebotSleep_testingImpl.h']]],
+  ['type_4014',['type',['../struct_numeric_addressed_low_level_transfer_element__start_address.html#ae88b5262632eb727221a29537226002b',1,'NumericAddressedLowLevelTransferElement_startAddress::type()'],['../struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html#aadbf79334adff8ebd202681421e037dd',1,'NumericAddressedLowLevelTransferElement_numberOfBytes::type()']]]
 ];

@@ -118,26 +118,27 @@ $(document).ready(function(){initNavTree('_virtual_function_template_8h_source.h
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">  template&lt;typename T&gt;                                                                                                 \</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">  class functionName##_functionSignature : public boost::function&lt;__VA_ARGS__&gt; {                                       \</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">   public:                                                                                                             \</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    boost::function&lt;__VA_ARGS__&gt;&amp; operator=(const boost::function&lt;__VA_ARGS__&gt;&amp; rhs) {                                 \</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">      return boost::function&lt;__VA_ARGS__&gt;::operator=(rhs);                                                             \</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">  TemplateUserTypeMap&lt;functionName##_functionSignature&gt; functionName##_vtable</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5">   72</a></span>&#160;<span class="preprocessor">#define CALL_VIRTUAL_FUNCTION_TEMPLATE(functionName, templateArgument, ...)                                            \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  boost::fusion::at_key&lt;templateArgument&gt;(functionName##_vtable.table)(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">   78</a></span>&#160;<span class="preprocessor">#define FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE(functionName)                                                            \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">  ChimeraTK::for_each(this-&gt;functionName##_vtable.table, [this](auto&amp; pair) {                                          \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">    typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type VTableFillerUserType;                     \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    pair.second = [this](auto... args) { return this-&gt;functionName&lt;VTableFillerUserType&gt;(args...); };                  \</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">  })</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94">   85</a></span>&#160;<span class="preprocessor">#define FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE(functionName, numberOfArguments)                              \</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">  FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE(functionName)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746">   89</a></span>&#160;<span class="preprocessor">#define DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER(className, functionName, numberOfArguments)                     \</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  class UslessVTableFillerClass##functionName {}</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    functionName##_functionSignature&amp; operator=(const boost::function&lt;__VA_ARGS__&gt;&amp; rhs) {                             \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">      boost::function&lt;__VA_ARGS__&gt;::operator=(rhs);                                                                    \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">      return *this;                                                                                                    \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">  TemplateUserTypeMap&lt;functionName##_functionSignature&gt; functionName##_vtable</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5">   73</a></span>&#160;<span class="preprocessor">#define CALL_VIRTUAL_FUNCTION_TEMPLATE(functionName, templateArgument, ...)                                            \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">  boost::fusion::at_key&lt;templateArgument&gt;(functionName##_vtable.table)(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">   79</a></span>&#160;<span class="preprocessor">#define FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE(functionName)                                                            \</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  ChimeraTK::for_each(this-&gt;functionName##_vtable.table, [this](auto&amp; pair) {                                          \</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type VTableFillerUserType;                     \</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    pair.second = [this](auto... args) { return this-&gt;functionName&lt;VTableFillerUserType&gt;(args...); };                  \</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">  })</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94">   86</a></span>&#160;<span class="preprocessor">#define FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE(functionName, numberOfArguments)                              \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">  FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE(functionName)</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746">   90</a></span>&#160;<span class="preprocessor">#define DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER(className, functionName, numberOfArguments)                     \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">  class UslessVTableFillerClass##functionName {}</span></div>
 <div class="ttc" id="a_supported_user_types_8h_html"><div class="ttname"><a href="_supported_user_types_8h.html">SupportedUserTypes.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -145,7 +146,7 @@ $(document).ready(function(){initNavTree('_virtual_function_template_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><a class="el" href="dir_03a6cfce30b88f6a84e388fa6a89390f.html">include</a></li><li class="navelem"><a class="el" href="_virtual_function_template_8h.html">VirtualFunctionTemplate.h</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

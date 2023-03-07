@@ -143,12 +143,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a10e04a31366079cb5f6a395b68373295"><td class="memItemLeft" align="right" valign="top">typedef boost::interprocess::allocator&lt; int32_t, boost::interprocess::managed_shared_memory::segment_manager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a></td></tr>
-<tr class="separator:a10e04a31366079cb5f6a395b68373295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5c130c00eb99bd7fa9e98a5a552ff3d"><td class="memItemLeft" align="right" valign="top">typedef boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#ae5c130c00eb99bd7fa9e98a5a552ff3d">SharedMemoryVector</a></td></tr>
-<tr class="separator:ae5c130c00eb99bd7fa9e98a5a552ff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ad18a95d5f451480dbf4e0fcdf3b7c"><td class="memItemLeft" align="right" valign="top">typedef boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c">PidSet</a></td></tr>
-<tr class="separator:a60ad18a95d5f451480dbf4e0fcdf3b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1a7e11f082ec6314f054cec91bb2e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#aea1a7e11f082ec6314f054cec91bb2e3">ShmemAllocator</a> = boost::interprocess::allocator&lt; int32_t, boost::interprocess::managed_shared_memory::segment_manager &gt;</td></tr>
+<tr class="separator:aea1a7e11f082ec6314f054cec91bb2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8327693f5a73291f60af05c2c5fa78dc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#a8327693f5a73291f60af05c2c5fa78dc">SharedMemoryVector</a> = boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#aea1a7e11f082ec6314f054cec91bb2e3">ShmemAllocator</a> &gt;</td></tr>
+<tr class="separator:a8327693f5a73291f60af05c2c5fa78dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5634ef0f0086b55ed47db2def72b5845"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#a5634ef0f0086b55ed47db2def72b5845">PidSet</a> = boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#aea1a7e11f082ec6314f054cec91bb2e3">ShmemAllocator</a> &gt;</td></tr>
+<tr class="separator:a5634ef0f0086b55ed47db2def72b5845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -156,14 +156,14 @@ Variables</h2></td></tr>
 <tr class="separator:ad8feb605e95e15ab6e0dee12dfdcbae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a60ad18a95d5f451480dbf4e0fcdf3b7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ad18a95d5f451480dbf4e0fcdf3b7c">&#9670;&nbsp;</a></span>PidSet</h2>
+<a id="a5634ef0f0086b55ed47db2def72b5845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5634ef0f0086b55ed47db2def72b5845">&#9670;&nbsp;</a></span>PidSet</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::interprocess::vector&lt;int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a>&gt; <a class="el" href="_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c">PidSet</a></td>
+          <td class="memname">using <a class="el" href="_shared_dummy_backend_8h.html#a5634ef0f0086b55ed47db2def72b5845">PidSet</a> =  boost::interprocess::vector&lt;int32_t, <a class="el" href="_shared_dummy_backend_8h.html#aea1a7e11f082ec6314f054cec91bb2e3">ShmemAllocator</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,14 +172,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae5c130c00eb99bd7fa9e98a5a552ff3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c130c00eb99bd7fa9e98a5a552ff3d">&#9670;&nbsp;</a></span>SharedMemoryVector</h2>
+<a id="a8327693f5a73291f60af05c2c5fa78dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8327693f5a73291f60af05c2c5fa78dc">&#9670;&nbsp;</a></span>SharedMemoryVector</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::interprocess::vector&lt;int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a>&gt; <a class="el" href="_shared_dummy_backend_8h.html#ae5c130c00eb99bd7fa9e98a5a552ff3d">SharedMemoryVector</a></td>
+          <td class="memname">using <a class="el" href="_shared_dummy_backend_8h.html#a8327693f5a73291f60af05c2c5fa78dc">SharedMemoryVector</a> =  boost::interprocess::vector&lt;int32_t, <a class="el" href="_shared_dummy_backend_8h.html#aea1a7e11f082ec6314f054cec91bb2e3">ShmemAllocator</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -188,19 +188,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a10e04a31366079cb5f6a395b68373295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10e04a31366079cb5f6a395b68373295">&#9670;&nbsp;</a></span>ShmemAllocator</h2>
+<a id="aea1a7e11f082ec6314f054cec91bb2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1a7e11f082ec6314f054cec91bb2e3">&#9670;&nbsp;</a></span>ShmemAllocator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::interprocess::allocator&lt;int32_t, boost::interprocess::managed_shared_memory::segment_manager&gt; <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a></td>
+          <td class="memname">using <a class="el" href="_shared_dummy_backend_8h.html#aea1a7e11f082ec6314f054cec91bb2e3">ShmemAllocator</a> =  boost::interprocess::allocator&lt;int32_t, boost::interprocess::managed_shared_memory::segment_manager&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00029">29</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00028">28</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +210,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_2c90e15a7117effef4353a6eb562e96d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_3c66f29659ecf7488c415b717becb971.html">include</a></li><li class="navelem"><a class="el" href="_shared_dummy_backend_8h.html">SharedDummyBackend.h</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

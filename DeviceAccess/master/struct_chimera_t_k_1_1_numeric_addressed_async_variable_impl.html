@@ -115,9 +115,9 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_numeric_address
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e84939686bd26ba977767168dc5ad35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a0e84939686bd26ba977767168dc5ad35">fillSendBuffer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;version) override</td></tr>
-<tr class="memdesc:a0e84939686bd26ba977767168dc5ad35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the user buffer from the sync accessor, and replace the version number with the given version.  <a href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a0e84939686bd26ba977767168dc5ad35">More...</a><br /></td></tr>
-<tr class="separator:a0e84939686bd26ba977767168dc5ad35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b96ca632010c650655c844939eb884b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a9b96ca632010c650655c844939eb884b">fillSendBuffer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;version) final</td></tr>
+<tr class="memdesc:a9b96ca632010c650655c844939eb884b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the user buffer from the sync accessor, and replace the version number with the given version.  <a href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a9b96ca632010c650655c844939eb884b">More...</a><br /></td></tr>
+<tr class="separator:a9b96ca632010c650655c844939eb884b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add471bca8d8c80fa701e6057b52d169e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#add471bca8d8c80fa701e6057b52d169e">NumericAddressedAsyncVariableImpl</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt;&gt; syncAccessor_)</td></tr>
 <tr class="memdesc:add471bca8d8c80fa701e6057b52d169e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor takes an already created synchronous accessor and a flag whether the variable is active.  <a href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#add471bca8d8c80fa701e6057b52d169e">More...</a><br /></td></tr>
 <tr class="separator:add471bca8d8c80fa701e6057b52d169e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +173,7 @@ struct ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</h3>
 
 <p>Implementation of the <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html" title="Typeless base class.">NumericAddressedAsyncVariable</a> for the concrete UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00064">64</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00065">65</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add471bca8d8c80fa701e6057b52d169e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add471bca8d8c80fa701e6057b52d169e">&#9670;&nbsp;</a></span>NumericAddressedAsyncVariableImpl()</h2>
@@ -182,6 +182,9 @@ struct ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html">ChimeraTK::NumericAddressedAsyncVariableImpl</a>&lt; UserType &gt;::<a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html">NumericAddressedAsyncVariableImpl</a> </td>
@@ -191,12 +194,17 @@ template&lt;typename UserType &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The constructor takes an already created synchronous accessor and a flag whether the variable is active. </p>
 <p>If the variable is active all new subscribers will automatically be activated and immediately get their initial value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00118">118</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00119">119</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -209,8 +217,8 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0e84939686bd26ba977767168dc5ad35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e84939686bd26ba977767168dc5ad35">&#9670;&nbsp;</a></span>fillSendBuffer()</h2>
+<a id="a9b96ca632010c650655c844939eb884b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b96ca632010c650655c844939eb884b">&#9670;&nbsp;</a></span>fillSendBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +238,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -239,13 +247,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a84d9945354a6fe38e434f93c8ca6f204">ChimeraTK::NumericAddressedAsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00110">110</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00111">111</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl_a0e84939686bd26ba977767168dc5ad35_icgraph.svg" width="572" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl_a9b96ca632010c650655c844939eb884b_icgraph.svg" width="572" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -278,7 +286,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1_async_variable.html#a2d24d1b47120921d20c09d69d566f06b">ChimeraTK::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00078">78</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00079">79</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +320,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1_async_variable.html#a1e96b483164569b2d6c30b316a4908cf">ChimeraTK::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00075">75</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00076">76</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +351,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1_async_variable.html#a698fdfc524b4a2e316dbf1da1769a3bb">ChimeraTK::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00076">76</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00077">77</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +382,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1_async_variable.html#a40548824a2858265e87346f62d0ae16f">ChimeraTK::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00077">77</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00078">78</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +413,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1_async_variable.html#a59cd9a2927facae974f48fb6390d02c5">ChimeraTK::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00079">79</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00080">80</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +432,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00073">73</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00074">74</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +445,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html">NumericAddressedAsyncVariableImpl</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

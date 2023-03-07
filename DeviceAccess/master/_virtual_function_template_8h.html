@@ -169,7 +169,7 @@ Macros</h2></td></tr>
 <p>It is recommended to put this macro into a function template with the same name and signature, so the user of the class can call the virtual function template conveniently.</p>
 <p>Implementation note: This function template could automatically be provided via the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro. This is not done, because it wouldn't allow to specify default values for the parameters, and the proper signature would not be visible in Doxygen. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00072">72</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00073">73</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -201,8 +201,9 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;                                                                                                 \</div>
 <div class="line">  class functionName##_functionSignature : <span class="keyword">public</span> boost::function&lt;__VA_ARGS__&gt; {                                       \</div>
 <div class="line">   public:                                                                                                             \</div>
-<div class="line">    boost::function&lt;__VA_ARGS__&gt;&amp; operator=(<span class="keyword">const</span> boost::function&lt;__VA_ARGS__&gt;&amp; rhs) {                                 \</div>
-<div class="line">      return boost::function&lt;__VA_ARGS__&gt;::operator=(rhs);                                                             \</div>
+<div class="line">    functionName##_functionSignature&amp; operator=(<span class="keyword">const</span> boost::function&lt;__VA_ARGS__&gt;&amp; rhs) {                             \</div>
+<div class="line">      boost::function&lt;__VA_ARGS__&gt;::operator=(rhs);                                                                    \</div>
+<div class="line">      return *<span class="keyword">this</span>;                                                                                                    \</div>
 <div class="line">    }                                                                                                                  \</div>
 <div class="line">  };                                                                                                                   \</div>
 <div class="line">  TemplateUserTypeMap&lt;functionName##_functionSignature&gt; functionName##_vtable</div>
@@ -254,7 +255,7 @@ Macros</h2></td></tr>
 
 <p>Compatibility, do not use. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00089">89</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00090">90</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -277,12 +278,12 @@ Macros</h2></td></tr>
 <div class="line">    typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type VTableFillerUserType;                     \</div>
 <div class="line">    pair.second = [this](auto... args) { return this-&gt;functionName&lt;VTableFillerUserType&gt;(args...); };                  \</div>
 <div class="line">  })</div>
-<div class="ttc" id="anamespace_chimera_t_k_html_ae7a87d6ef5da36852a971cab2ac6eddc"><div class="ttname"><a href="namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc">ChimeraTK::for_each</a></div><div class="ttdeci">void for_each(MAPTYPE &amp;map, const LAMBDATYPE &amp;lambda)</div><div class="ttdoc">Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00835">SupportedUserTypes.h:835</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_ae7a87d6ef5da36852a971cab2ac6eddc"><div class="ttname"><a href="namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc">ChimeraTK::for_each</a></div><div class="ttdeci">void for_each(MAPTYPE &amp;map, const LAMBDATYPE &amp;lambda)</div><div class="ttdoc">Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00848">SupportedUserTypes.h:848</a></div></div>
 </div><!-- fragment -->
 <p>Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
 <p>Use this macro inside the constructor of the derived class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00078">78</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00079">79</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +315,7 @@ Macros</h2></td></tr>
 
 <p>Compatibility only, do not use. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00085">85</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00086">86</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +325,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><a class="el" href="dir_03a6cfce30b88f6a84e388fa6a89390f.html">include</a></li><li class="navelem"><a class="el" href="_virtual_function_template_8h.html">VirtualFunctionTemplate.h</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

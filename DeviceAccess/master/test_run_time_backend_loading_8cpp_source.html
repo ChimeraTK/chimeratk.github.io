@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('test_run_time_backend_loading_8cpp_sou
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">// check that we can load backends always known to the factory,</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// but we cannot load the one coming from the plugin to exclude that we</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">// accidentally already linkes the so file we want to load</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  BOOST_CHECK_NO_THROW(BackendFactory::getInstance().createBackend(<span class="stringliteral">&quot;sdm://./dummy=goodMapFile.map&quot;</span>));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  BOOST_CHECK_NO_THROW(BackendFactory::getInstance().createBackend(<span class="stringliteral">&quot;(dummy?map=goodMapFile.map)&quot;</span>));</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  BOOST_CHECK_THROW(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      BackendFactory::getInstance().createBackend(<span class="stringliteral">&quot;sdm://./working=goodMapFile.map&quot;</span>), <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      BackendFactory::getInstance().createBackend(<span class="stringliteral">&quot;(working?map=goodMapFile.map&quot;</span>), <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  BackendFactory::getInstance().setDMapFilePath(<span class="stringliteral">&quot;runtimeLoading/wrongVersionPlugin.dmap&quot;</span>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// although a plugin with a wrong version was in the dmap file, the other</span></div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('test_run_time_backend_loading_8cpp_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_run_time_backend_loading_8cpp.html">testRunTimeBackendLoading.cpp</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

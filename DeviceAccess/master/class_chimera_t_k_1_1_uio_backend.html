@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_uio_backend.html
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a73ff25f5936a419b3950d198068ee468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a73ff25f5936a419b3950d198068ee468">UioBackend</a> (std::string deviceName, std::string mapFileName)</td></tr>
 <tr class="separator:a73ff25f5936a419b3950d198068ee468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0d3c4340f613368becb0ec3f638f0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#adf0d3c4340f613368becb0ec3f638f0b">~UioBackend</a> ()</td></tr>
-<tr class="separator:adf0d3c4340f613368becb0ec3f638f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac643484d884553f1e740ce9d7e8bec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a1ac643484d884553f1e740ce9d7e8bec">~UioBackend</a> () override</td></tr>
+<tr class="separator:a1ac643484d884553f1e740ce9d7e8bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51f1b035462c7a176216cb5819786456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a51f1b035462c7a176216cb5819786456">open</a> () override</td></tr>
 <tr class="memdesc:a51f1b035462c7a176216cb5819786456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the device.  <a href="class_chimera_t_k_1_1_uio_backend.html#a51f1b035462c7a176216cb5819786456">More...</a><br /></td></tr>
 <tr class="separator:a51f1b035462c7a176216cb5819786456"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5bfd99be30276cfbd6f4a31fa2d70e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">All backends derrived from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a> must implement <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10" title="All backends derrived from NumericAddressedBackend must implement closeImpl() instead of close.">closeImpl()</a> instead of close.  <a href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10">More...</a><br /></td></tr>
 <tr class="separator:a5bfd99be30276cfbd6f4a31fa2d70e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c69916f66ea90b93624e8e0fc4f1de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de">isFunctional</a> () const override</td></tr>
-<tr class="memdesc:a62c69916f66ea90b93624e8e0fc4f1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de">More...</a><br /></td></tr>
+<tr class="memdesc:a62c69916f66ea90b93624e8e0fc4f1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de">More...</a><br /></td></tr>
 <tr class="separator:a62c69916f66ea90b93624e8e0fc4f1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0f89efb6526ddafad953740f8ccf2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#abf0f89efb6526ddafad953740f8ccf2e">barIndexValid</a> (uint64_t bar) override</td></tr>
 <tr class="memdesc:abf0f89efb6526ddafad953740f8ccf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be implemented by the backends.  <a href="class_chimera_t_k_1_1_uio_backend.html#abf0f89efb6526ddafad953740f8ccf2e">More...</a><br /></td></tr>
@@ -141,10 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7abb32aca3b3643bba5762298515c04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="class_chimera_t_k_1_1_uio_backend.html#a7abb32aca3b3643bba5762298515c04b">More...</a><br /></td></tr>
 <tr class="separator:a7abb32aca3b3643bba5762298515c04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
-<tr class="memitem:aa450e04dd172ccfe956895bddd88f406 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aa450e04dd172ccfe956895bddd88f406">NumericAddressedBackend</a> (std::string mapFileName=&quot;&quot;, std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt; registerMapPointer=std::make_unique&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt;())</td></tr>
-<tr class="separator:aa450e04dd172ccfe956895bddd88f406 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7833445ecf29d03ef162e5ceb6427678 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a7833445ecf29d03ef162e5ceb6427678">~NumericAddressedBackend</a> () override</td></tr>
-<tr class="separator:a7833445ecf29d03ef162e5ceb6427678 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a7f6cf031d3fe4561cd07ee208d29f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a60a7f6cf031d3fe4561cd07ee208d29f">NumericAddressedBackend</a> (const std::string &amp;mapFileName=&quot;&quot;, std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt; registerMapPointer=std::make_unique&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt;())</td></tr>
+<tr class="separator:a60a7f6cf031d3fe4561cd07ee208d29f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad221efd17f0241b1b4d3b14ee0165c22 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ad221efd17f0241b1b4d3b14ee0165c22">~NumericAddressedBackend</a> () override=default</td></tr>
+<tr class="separator:ad221efd17f0241b1b4d3b14ee0165c22 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50833754257d22fbb5c4d61813ac8e5 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ad50833754257d22fbb5c4d61813ac8e5">read</a> ([[maybe_unused]] uint8_t bar, [[maybe_unused]] uint32_t address, [[maybe_unused]] int32_t *data, [[maybe_unused]] size_t sizeInBytes)</td></tr>
 <tr class="memdesc:ad50833754257d22fbb5c4d61813ac8e5 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated read function using 32bit address for backwards compatibility.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ad50833754257d22fbb5c4d61813ac8e5">More...</a><br /></td></tr>
 <tr class="separator:ad50833754257d22fbb5c4d61813ac8e5 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +183,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated since 2022-03-03.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">More...</a><br /></td></tr>
 <tr class="separator:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_device_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_device_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend.html">ChimeraTK::DeviceBackend</a></td></tr>
-<tr class="memitem:aea141a8f0992e9580c908799c4220680 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#aea141a8f0992e9580c908799c4220680">~DeviceBackend</a> ()</td></tr>
-<tr class="memdesc:aea141a8f0992e9580c908799c4220680 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every virtual class needs a virtual desctructor.  <a href="class_chimera_t_k_1_1_device_backend.html#aea141a8f0992e9580c908799c4220680">More...</a><br /></td></tr>
-<tr class="separator:aea141a8f0992e9580c908799c4220680 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">~DeviceBackend</a> ()=default</td></tr>
+<tr class="memdesc:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every virtual class needs a virtual desctructor.  <a href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">More...</a><br /></td></tr>
+<tr class="separator:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a134106068b02a89cbfa9a4559ccfc inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a85a134106068b02a89cbfa9a4559ccfc inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc">getRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="memdesc:a85a134106068b02a89cbfa9a4559ccfc inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a> object from the register name.  <a href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc">More...</a><br /></td></tr>
@@ -274,11 +274,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adf0d3c4340f613368becb0ec3f638f0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf0d3c4340f613368becb0ec3f638f0b">&#9670;&nbsp;</a></span>~UioBackend()</h2>
+<a id="a1ac643484d884553f1e740ce9d7e8bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac643484d884553f1e740ce9d7e8bec">&#9670;&nbsp;</a></span>~UioBackend()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ChimeraTK::UioBackend::~UioBackend </td>
@@ -287,6 +290,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_uio_backend_8cc_source.html#l00012">12</a> of file <a class="el" href="_uio_backend_8cc_source.html">UioBackend.cc</a>.</p>
@@ -295,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_uio_backend_adf0d3c4340f613368becb0ec3f638f0b_cgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_uio_backend_a1ac643484d884553f1e740ce9d7e8bec_cgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -444,9 +452,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return wether a device is working as intended, usually this means it is opened and does not have any errors. </p>
-<p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends.">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
-<p>Notice: <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
+<p>Return whether a device is working as intended, usually this means it is opened and does not have any errors. </p>
+<p>The default implementation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends.">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
+<p>Notice: <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de" title="Return whether a device is working as intended, usually this means it is opened and does not have any...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a62c69916f66ea90b93624e8e0fc4f1de" title="Return whether a device is working as intended, usually this means it is opened and does not have any...">isFunctional()</a>==false means you surely will get an exception. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
@@ -705,7 +713,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html">UioBackend</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

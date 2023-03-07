@@ -134,7 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a99e23eba88a7a57d80997edac7adda81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the underlying TransferElements with actual hardware access.  <a href="struct_counting_decorator.html#a99e23eba88a7a57d80997edac7adda81">More...</a><br /></td></tr>
 <tr class="separator:a99e23eba88a7a57d80997edac7adda81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1477b27e867834befafef368047f651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651">replaceTransferElement</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; newElement) override</td></tr>
-<tr class="memdesc:ad1477b27e867834befafef368047f651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all underlying TransferElements which are considered identical (see sameRegister()) with the given TransferElement.  <a href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651">More...</a><br /></td></tr>
 <tr class="separator:ad1477b27e867834befafef368047f651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f76288b61e1f6b721e9019bcd00ffc"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc">getInternalElements</a> () override</td></tr>
 <tr class="memdesc:a53f76288b61e1f6b721e9019bcd00ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the full list of TransferElements internally used by this TransferElement.  <a href="struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc">More...</a><br /></td></tr>
@@ -608,9 +607,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Check whether the TransferElement can be used in places where the TransferElement "other" is currently used, e.g. </p>
-<p>to merge the two transfers. This function must be used in <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651" title="Search for all underlying TransferElements which are considered identical (see sameRegister()) with t...">replaceTransferElement()</a> by implementations which use other TransferElements, to determine if a used TransferElement shall be replaced with the TransferElement "other".</p>
-<p>The purpose of this function is not to determine if at any point in the hierarchy an replacement could be done. This function only works on a single level. It is not used by the TransferGroup to determine <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651" title="Search for all underlying TransferElements which are considered identical (see sameRegister()) with t...">replaceTransferElement()</a> whether shall be used (it is always called). Instead this function can be used by decorators etc. inside their implementation of <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651" title="Search for all underlying TransferElements which are considered identical (see sameRegister()) with t...">replaceTransferElement()</a> to determine if they might swap their implementation(s).</p>
-<p>Note for decorators and similar implementations: This function must not be decorated. It should only return true if this should actually be replaced with other in the call to <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651" title="Search for all underlying TransferElements which are considered identical (see sameRegister()) with t...">replaceTransferElement()</a> one level up in the hierarchy. If the replacement should be done further down in the hierarchy, simply return false. It should only return if other is fully identical to this (i.e. behaves identical in all situations but might be another instance). </p>
+<p>to merge the two transfers. This function must be used in <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651">replaceTransferElement()</a> by implementations which use other TransferElements, to determine if a used TransferElement shall be replaced with the TransferElement "other".</p>
+<p>The purpose of this function is not to determine if at any point in the hierarchy an replacement could be done. This function only works on a single level. It is not used by the TransferGroup to determine <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651">replaceTransferElement()</a> whether shall be used (it is always called). Instead this function can be used by decorators etc. inside their implementation of <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651">replaceTransferElement()</a> to determine if they might swap their implementation(s).</p>
+<p>Note for decorators and similar implementations: This function must not be decorated. It should only return true if this should actually be replaced with other in the call to <a class="el" href="struct_counting_decorator.html#ad1477b27e867834befafef368047f651">replaceTransferElement()</a> one level up in the hierarchy. If the replacement should be done further down in the hierarchy, simply return false. It should only return if other is fully identical to this (i.e. behaves identical in all situations but might be another instance). </p>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
@@ -639,15 +638,10 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Search for all underlying TransferElements which are considered identical (see sameRegister()) with the given TransferElement. </p>
-<p>These TransferElements are then replaced with the new element. If no underlying element matches the new element, this function has no effect. </p>
-
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00778">778</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
@@ -854,7 +848,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_counting_decorator.html">CountingDecorator</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 04:56:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 04:56:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
