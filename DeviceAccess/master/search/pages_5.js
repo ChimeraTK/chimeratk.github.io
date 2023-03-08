@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exceptions_20and_20recovery_4252',['Exceptions and recovery',['../exceptions.html',1,'']]]
+  ['exceptions_20and_20recovery_4251',['Exceptions and recovery',['../exceptions.html',1,'']]]
 ];

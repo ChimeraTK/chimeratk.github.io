@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"class_chimera_t_k_1_1_event_file.html#ac07058a724a7619120a02521b2d32dc7":[19,0,1,99,0],
 "class_chimera_t_k_1_1_event_file.html#adc4dbaa36dda86189a8ff8edc68ed92a":[19,0,1,99,4],
 "class_chimera_t_k_1_1_event_thread.html":[19,0,1,98],
 "class_chimera_t_k_1_1_event_thread.html#a15e93964080a3ec0d0ff5bae311ec9a2":[19,0,1,98,2],
@@ -102,9 +101,9 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#a9f3232a5824ae572dcea67b2d9fb53a1":[19,0,1,0,12,8],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#aa95986109f346c6360fb793061f3f0fa":[19,0,1,0,12,7],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#ad27be480039253cd0650a5fb55ab0aa1":[19,0,1,0,12,6],
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#ad8670e7c93982f5574cc471a33f58276":[19,0,1,0,12,9],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#ad9793a7275fc70407a1ec69600a79503":[19,0,1,0,12,2],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#ada4fee42589440368ebfed249143f51e":[19,0,1,0,12,3],
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#aedf78c238c70bb4012d9a3efdf0614d7":[19,0,1,0,12,9],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html":[19,0,1,0,11],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a32a800a50f745f048cf1fa421410d5b8":[19,0,1,0,11,3],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a7849132e24c029b0730b1af86d5ecad2":[19,0,1,0,11,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a6490213090445315ccfba3740257949d":[19,0,1,61,17],
 "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a6536de764136d96e2bb7941b346ac0c8":[19,0,1,61,15],
 "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a6539b6ca4b91c3a1aab9b31547b84b87":[19,0,1,61,14],
-"class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a82f5c5a7f68e6ec23f41f7686358de52":[19,0,1,61,4]
+"class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a82f5c5a7f68e6ec23f41f7686358de52":[19,0,1,61,4],
+"class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a83a843ad968a5413beac277d419de7a2":[19,0,1,61,1]
 };
