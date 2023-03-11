@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"struct_short_raw__fixed_point16__8u.html#aafbac5d0374344ff1c0d1fc0ab1ce669":[19,0,127,6],
 "struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b":[19,0,127,2],
 "struct_short_raw__signed16.html":[19,0,128],
 "struct_short_raw__signed16.html#a04e0df595f39a5feb9fc4222dc0902d4":[19,0,128,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "test_fixed_point_converter_8cpp.html#a8be1a0362c864ef72d164217ee693df7":[20,0,8,1,14,53],
 "test_fixed_point_converter_8cpp.html#a8ce115b3e6ce1189864602474105d8cd":[20,0,8,1,14,36],
 "test_fixed_point_converter_8cpp.html#a8ceca8866bf17ac409f4f813ee081908":[20,0,8,1,14,48],
-"test_fixed_point_converter_8cpp.html#a939197390a7cf2e59457c1e230013cdf":[20,0,8,1,14,59],
-"test_fixed_point_converter_8cpp.html#a9bc9c54b816c8400b914b4ba309341c2":[20,0,8,1,14,37]
+"test_fixed_point_converter_8cpp.html#a939197390a7cf2e59457c1e230013cdf":[20,0,8,1,14,59]
 };

@@ -49,7 +49,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::BackendRegisterCatalogueImplIterator< BackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
-    [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
     [ "DummyForDoubleBuffering::BackendRegisterer", "struct_dummy_for_double_buffering_1_1_backend_registerer.html", null ],

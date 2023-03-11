@@ -18,7 +18,6 @@ var dir_ced00e1711a5de84614ce156ecd6cc66 =
     ] ],
     [ "ExceptionDummyBackend.h", "_exception_dummy_backend_8h.html", [
       [ "ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", "class_chimera_t_k_1_1_exception_dummy" ],
-      [ "BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer" ],
       [ "ExceptionDummyPushDecoratorBase", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_base" ],
       [ "ExceptionDummyPushDecorator", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator" ],
       [ "Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer" ],
