@@ -64,5 +64,5 @@ var _x_s_v_f_player_constants_8h =
     [ "XTAPSTATE_UPDATEIR", "_x_s_v_f_player_constants_8h.html#af19a95a8c52d2b2437ff493914cf19be", null ],
     [ "XTDOMASK", "_x_s_v_f_player_constants_8h.html#ad99ed5478d78e76b77e6139aefa239aa", null ],
     [ "XWAIT", "_x_s_v_f_player_constants_8h.html#a8194b27e9aa272c20f69bbffc6af8c9c", null ],
-    [ "SXsvfInfo", "_x_s_v_f_player_constants_8h.html#a62554bf1a91f6d816ef4e627274750e4", null ]
+    [ "SXsvfInfo", "_x_s_v_f_player_constants_8h.html#af1860f44174deabcc4a3d2580cf7b7a6", null ]
 ];

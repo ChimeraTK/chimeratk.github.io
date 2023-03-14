@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initlenval',['initLenVal',['../lenval_8h.html#a4befee525f05bda14adb19edf8098692',1,'initLenVal(lenVal *x, long value):&#160;lenval.cpp'],['../lenval_8cpp.html#a2fd3cc121f82128c7e9b9a058f6543ba',1,'initLenVal(lenVal *plv, long lValue):&#160;lenval.cpp']]]
+  ['getcommand_266',['getCommand',['../_mtca_programmer_s_p_i_8cpp.html#ac30b84fda1d2d1fe9183657e8eb446ea',1,'MtcaProgrammerSPI.cpp']]],
+  ['gettype_267',['getType',['../class_programming_interface.html#a0afcabd142486afd8065a55dcbdc3e00',1,'ProgrammingInterface']]]
 ];

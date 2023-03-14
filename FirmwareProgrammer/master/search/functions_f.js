@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['_7emtcaprogrammerbase',['~MtcaProgrammerBase',['../class_mtca_programmer_base.html#a9176f127693be3d98274bed1dfb42294',1,'MtcaProgrammerBase']]],
-  ['_7emtcaprogrammerjtag',['~MtcaProgrammerJTAG',['../class_mtca_programmer_j_t_a_g.html#a81ab6127a5d30b89efa543e1ae5ce376',1,'MtcaProgrammerJTAG']]],
-  ['_7emtcaprogrammerspi',['~MtcaProgrammerSPI',['../class_mtca_programmer_s_p_i.html#a3782a7abbf240b9b7781ba48d00f4010',1,'MtcaProgrammerSPI']]],
-  ['_7exsvfplayer',['~XSVFPlayer',['../class_x_s_v_f_player.html#aa49facec115f4156846e286c94358c4d',1,'XSVFPlayer']]],
-  ['_7exsvfplayerinterface',['~XSVFPlayerInterface',['../class_x_s_v_f_player_interface.html#a2d66a8bbc1d083a339a612192a837112',1,'XSVFPlayerInterface']]]
+  ['xsvfplayer_295',['XSVFPlayer',['../class_x_s_v_f_player.html#a1c856695937715d59ad76c0a3f6acd5a',1,'XSVFPlayer::XSVFPlayer(XSVFPlayerInterface &amp;interface)'],['../class_x_s_v_f_player.html#a9594017ef61a67a289557fc1e5e44b4b',1,'XSVFPlayer::XSVFPlayer(const XSVFPlayer &amp;)=delete']]]
 ];

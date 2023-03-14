@@ -5,6 +5,7 @@ var class_mtca_programmer_base =
     [ "MtcaProgrammerBase", "class_mtca_programmer_base.html#a880541b256d9c9a08e5baf23e5aceb5f", null ],
     [ "~MtcaProgrammerBase", "class_mtca_programmer_base.html#a9176f127693be3d98274bed1dfb42294", null ],
     [ "checkFirmwareFile", "class_mtca_programmer_base.html#a587349d208909d88d7fc32d350bacd5d", null ],
+    [ "dump", "class_mtca_programmer_base.html#aad3a5b866373d249e6d2e38751e6b2f4", null ],
     [ "erase", "class_mtca_programmer_base.html#a93753bd27a7489a123dfab96c53784dc", null ],
     [ "program", "class_mtca_programmer_base.html#a76516fe0f5ce2fac937725b903140ae4", null ],
     [ "rebootFPGA", "class_mtca_programmer_base.html#a3da501a63da6346b19524964d01e69b3", null ],
