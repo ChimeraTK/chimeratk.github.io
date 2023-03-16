@@ -113,7 +113,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The <a class="el" href="namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e" title="The numeric_address::BAR() function can be used to directly access registers by numeric addresses,...">numeric_address::BAR()</a> function can be used to directly access registers by numeric addresses, instead of using register names (e.g. </p>
-<p>when no map file exists). The address will form a special <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name.">RegisterPath</a> which can be used in any place where a register path name is expected, if the backend supports it. The syntax is as follows: BAR/&lt;barNumber&gt;/&lt;addressInBytes&gt; -&gt; access 4-byte register in bar &lt;barNumber&gt; at byte offset &lt;addressInBytes&gt; <a class="el" href="namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e" title="The numeric_address::BAR() function can be used to directly access registers by numeric addresses,...">BAR()</a>/&lt;barNumber&gt;/&lt;addressInBytes&gt;*&lt;lengthInBytes&gt; -&gt; access register with arbitrary length of &lt;lengthInBytes&gt; </p>
+<p>when no map file exists). The address will form a special <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name.">RegisterPath</a> which can be used in any place where a register path name is expected, if the backend supports it.</p>
+<p>The syntax is as follows</p>
+<ul>
+<li><code><a class="el" href="namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e" title="The numeric_address::BAR() function can be used to directly access registers by numeric addresses,...">BAR()</a>/&lt;barNumber&gt;/&lt;addressInBytes&gt;</code> -&gt; access 4-byte register in bar <code>&lt;barNumber&gt;</code> at byte offset <code>&lt;addressInBytes&gt;</code></li>
+<li><code><a class="el" href="namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e" title="The numeric_address::BAR() function can be used to directly access registers by numeric addresses,...">BAR()</a>/&lt;barNumber&gt;/&lt;addressInBytes&gt;*&lt;lengthInBytes&gt;</code> -&gt; access register with arbitrary length of <code>&lt;lengthInBytes&gt;</code> </li>
+</ul>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_address_8cc_source.html#l00007">7</a> of file <a class="el" href="_numeric_address_8cc_source.html">NumericAddress.cc</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -133,7 +138,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1numeric__address.html">numeric_address</a></li>
-    <li class="footer">Generated on Sat Mar 11 2023 04:53:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 16 2023 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

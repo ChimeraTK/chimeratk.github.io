@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"struct_bit_register_descriptor_base.html#a98bb55120358f9cab4942c67a345d1b1":[19,0,10,0],
 "struct_bit_register_descriptor_base.html#ad8421faba45bf9bf6e817bc5f2cb718e":[19,0,10,2],
 "struct_byte_raw__fixed_point8__4s.html":[19,0,11],
 "struct_byte_raw__fixed_point8__4s.html#a0f78666a01c3db68e172ecbd7558782b":[19,0,11,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#ad3894b009b45da2e921b8f16111b3443":[19,0,1,78,2],
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#add471bca8d8c80fa701e6057b52d169e":[19,0,1,78,0],
 "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_sp2e9527c1ad98e72a8c438d5dfc5781dc.html":[19,0,1,75,3],
-"struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_sp72f8bbd4ea2560b0168c6c4349da7b2b.html":[19,0,1,75,1]
+"struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_sp72f8bbd4ea2560b0168c6c4349da7b2b.html":[19,0,1,75,1],
+"struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_spe9033bbf1deb4f2449f5a993bab102f6.html":[19,0,1,75,2]
 };
