@@ -14,6 +14,5 @@ var structarguments__t =
     [ "firmware_file_path", "structarguments__t.html#a5a769373fb109fad73f7bd5a92ff2c96", null ],
     [ "flash_size", "structarguments__t.html#aea427e4f88303c9154dba77b61b36b64", null ],
     [ "interface", "structarguments__t.html#a12256abbf25d5dbec2830bd7887f5770", null ],
-    [ "map_area_name", "structarguments__t.html#ad6595aedc6cc526adde37b19098dbdd2", null ],
-    [ "map_file_path", "structarguments__t.html#a9e32248687090e7b2779e75b46490f53", null ]
+    [ "map_area_name", "structarguments__t.html#ad6595aedc6cc526adde37b19098dbdd2", null ]
 ];
