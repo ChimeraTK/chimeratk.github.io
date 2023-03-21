@@ -154,12 +154,7 @@ $(document).ready(function(){initNavTree('example_2demo_app_8cc-example.html',''
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span><a name="_a27"></a><a class="code" href="struct_example_app.html">ExampleApp</a> : <span class="keyword">public</span> <a name="_a28"></a><a class="code" href="class_chimera_t_k_1_1_application.html">ctk::Application</a> {</div>
-<div class="line">  <a name="a29"></a><a class="code" href="struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb">ExampleApp</a>() : <a name="a30"></a><a class="code" href="class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0">Application</a>(<span class="stringliteral">&quot;exampleApp&quot;</span>) {</div>
-<div class="line">    dumpConnections();</div>
-<div class="line">    <span class="comment">// dumpConnectionGraph();</span></div>
-<div class="line">    dumpGraph();</div>
-<div class="line">    dumpModuleGraph(<span class="stringliteral">&quot;module-graph.dot&quot;</span>);</div>
-<div class="line">  }</div>
+<div class="line">  <a name="a29"></a><a class="code" href="struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb">ExampleApp</a>() : <a name="a30"></a><a class="code" href="class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0">Application</a>(<span class="stringliteral">&quot;exampleApp&quot;</span>) {  }</div>
 <div class="line">  <a name="a31"></a><a class="code" href="struct_example_app.html#aecb5f2041899e8eea99688077e998a2b">~ExampleApp</a>() { <a name="a32"></a><a class="code" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>(); }</div>
 <div class="line"> </div>
 <div class="line">  <a name="_a33"></a><a class="code" href="class_chimera_t_k_1_1_set_d_map_file_path.html">ctk::SetDMapFilePath</a> <a name="a34"></a><a class="code" href="struct_example_app.html#ae84f35e8420bd071845ec555d6ab4cbd">dmapPath</a>{<span class="stringliteral">&quot;dummy.dmap&quot;</span>};</div>
@@ -170,33 +165,8 @@ $(document).ready(function(){initNavTree('example_2demo_app_8cc-example.html',''
 <div class="line">  <a name="_a37"></a><a class="code" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> <a name="a38"></a><a class="code" href="struct_example_app.html#a1fd25298a31ef406cccbfb9bc1a63d10">dev</a>{<span class="keyword">this</span>, <span class="stringliteral">&quot;Device&quot;</span>};</div>
 <div class="line">  <span class="comment">// ctk::DeviceModule timer{this, &quot;Timer&quot;};</span></div>
 <div class="line">  <a class="code" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> <a name="a39"></a><a class="code" href="struct_example_app.html#a872f39c39ae79bb08c44b62766910874">timer</a>{<span class="keyword">this</span>, <span class="stringliteral">&quot;Timer&quot;</span>};</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">// ctk::ControlSystemModule cs; // -&gt; not needed anymore as all is connected to cs automatically</span></div>
-<div class="line">  <span class="comment">// void defineConnections();    // -&gt; not needed anymore as all is connected to cs automatically</span></div>
 <div class="line">};</div>
 <div class="line"><a class="code" href="struct_example_app.html">ExampleApp</a> <a name="a40"></a><a class="code" href="demo_app_8cc.html#a7e2de60c48b2000be30339c6c9f1c8ed">theExampleApp</a>;</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// void ExampleApp::defineConnections() {</span></div>
-<div class="line"><span class="comment">//   ChimeraTK::setDMapFilePath(&quot;dummy.dmap&quot;);</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">//  cs(&quot;setpoint&quot;) &gt;&gt; automation.opSP;</span></div>
-<div class="line"><span class="comment">//  automation.curSP &gt;&gt; tableGeneration.tableParameters.setpoint &gt;&gt; cs(&quot;currentSetpoint&quot;);</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">//  auto macropulseNr = timer(&quot;macropulseNr&quot;, typeid(int), 1, ctk::UpdateMode::push);</span></div>
-<div class="line"><span class="comment">//  macropulseNr &gt;&gt; automation.trigger;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">//  cs(&quot;pulseLength&quot;) &gt;&gt; tableGeneration.tableParameters.pulseLength;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">//  tableGeneration.setpointTable &gt;&gt; dev(&quot;setpointTable&quot;);</span></div>
-<div class="line"><span class="comment">//  tableGeneration.feedforwardTable &gt;&gt; dev(&quot;feedforwardTable&quot;);</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">//  dev(&quot;probeSignal&quot;, typeid(int), tableLength)[macropulseNr] &gt;&gt; cs(&quot;probeSignal&quot;);</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">//  dumpConnections();</span></div>
-<div class="line"><span class="comment">//  dumpConnectionGraph();</span></div>
-<div class="line"><span class="comment">//  dumpGraph();</span></div>
-<div class="line"><span class="comment">//  dumpModuleGraph(&quot;module-graph.dot&quot;);</span></div>
-<div class="line"><span class="comment">//}</span></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00043">Application.h:43</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition:</b> <a href="_application_8cc_source.html#l00187">Application.cc:187</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_module_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_module_8h_source.html#l00023">ApplicationModule.h:23</a></div></div>
@@ -210,7 +180,7 @@ $(document).ready(function(){initNavTree('example_2demo_app_8cc-example.html',''
 <div class="ttc" id="aclass_chimera_t_k_1_1_variable_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_variable_group.html">ChimeraTK::VariableGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="_variable_group_8h_source.html#l00022">VariableGroup.h:22</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_variable_group_html_aefa460e39dd2e72346f6a6eb638761d3"><div class="ttname"><a href="class_chimera_t_k_1_1_variable_group.html#aefa460e39dd2e72346f6a6eb638761d3">ChimeraTK::VariableGroup::VariableGroup</a></div><div class="ttdeci">VariableGroup()=default</div><div class="ttdoc">Default constructor: Allows late initialisation of VariableGroups (e.g.</div></div>
 <div class="ttc" id="ademo_app_8cc_html_a1dad450a66409eb5903a9b625fff1b2e"><div class="ttname"><a href="demo_app_8cc.html#a1dad450a66409eb5903a9b625fff1b2e">bitScalingFactor</a></div><div class="ttdeci">constexpr double bitScalingFactor</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00030">demoApp.cc:30</a></div></div>
-<div class="ttc" id="ademo_app_8cc_html_a7e2de60c48b2000be30339c6c9f1c8ed"><div class="ttname"><a href="demo_app_8cc.html#a7e2de60c48b2000be30339c6c9f1c8ed">theExampleApp</a></div><div class="ttdeci">ExampleApp theExampleApp</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00087">demoApp.cc:87</a></div></div>
+<div class="ttc" id="ademo_app_8cc_html_a7e2de60c48b2000be30339c6c9f1c8ed"><div class="ttname"><a href="demo_app_8cc.html#a7e2de60c48b2000be30339c6c9f1c8ed">theExampleApp</a></div><div class="ttdeci">ExampleApp theExampleApp</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00079">demoApp.cc:79</a></div></div>
 <div class="ttc" id="ademo_app_8cc_html_a8aff6cd57074d5d12c0a90e6c1115358"><div class="ttname"><a href="demo_app_8cc.html#a8aff6cd57074d5d12c0a90e6c1115358">samplingFrequency</a></div><div class="ttdeci">constexpr double samplingFrequency</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00029">demoApp.cc:29</a></div></div>
 <div class="ttc" id="ademo_app_8cc_html_afe12b1b2284f1ad295e07b4f7041d11d"><div class="ttname"><a href="demo_app_8cc.html#afe12b1b2284f1ad295e07b4f7041d11d">tableLength</a></div><div class="ttdeci">constexpr size_t tableLength</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00028">demoApp.cc:28</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition:</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
@@ -224,13 +194,13 @@ $(document).ready(function(){initNavTree('example_2demo_app_8cc-example.html',''
 <div class="ttc" id="astruct_chimera_t_k_1_1_scalar_poll_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_poll_input.html">ChimeraTK::ScalarPollInput&lt; double &gt;</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_scalar_push_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_push_input.html">ChimeraTK::ScalarPushInput&lt; int &gt;</a></div></div>
 <div class="ttc" id="astruct_example_app_html"><div class="ttname"><a href="struct_example_app.html">ExampleApp</a></div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00066">demoApp.cc:66</a></div></div>
-<div class="ttc" id="astruct_example_app_html_a1ee7980cd0cbed783956d1ddac0a4f4d"><div class="ttname"><a href="struct_example_app.html#a1ee7980cd0cbed783956d1ddac0a4f4d">ExampleApp::tableGeneration</a></div><div class="ttdeci">TableGeneration tableGeneration</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00078">demoApp.cc:78</a></div></div>
-<div class="ttc" id="astruct_example_app_html_a1fd25298a31ef406cccbfb9bc1a63d10"><div class="ttname"><a href="struct_example_app.html#a1fd25298a31ef406cccbfb9bc1a63d10">ExampleApp::dev</a></div><div class="ttdeci">ctk::DeviceModule dev</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00080">demoApp.cc:80</a></div></div>
+<div class="ttc" id="astruct_example_app_html_a1ee7980cd0cbed783956d1ddac0a4f4d"><div class="ttname"><a href="struct_example_app.html#a1ee7980cd0cbed783956d1ddac0a4f4d">ExampleApp::tableGeneration</a></div><div class="ttdeci">TableGeneration tableGeneration</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00073">demoApp.cc:73</a></div></div>
+<div class="ttc" id="astruct_example_app_html_a1fd25298a31ef406cccbfb9bc1a63d10"><div class="ttname"><a href="struct_example_app.html#a1fd25298a31ef406cccbfb9bc1a63d10">ExampleApp::dev</a></div><div class="ttdeci">ctk::DeviceModule dev</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00075">demoApp.cc:75</a></div></div>
 <div class="ttc" id="astruct_example_app_html_a217e6910d1acf4aab3ccb2e5b050f1bb"><div class="ttname"><a href="struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb">ExampleApp::ExampleApp</a></div><div class="ttdeci">ExampleApp()</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00067">demoApp.cc:67</a></div></div>
-<div class="ttc" id="astruct_example_app_html_a872f39c39ae79bb08c44b62766910874"><div class="ttname"><a href="struct_example_app.html#a872f39c39ae79bb08c44b62766910874">ExampleApp::timer</a></div><div class="ttdeci">ctk::DeviceModule timer</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00082">demoApp.cc:82</a></div></div>
-<div class="ttc" id="astruct_example_app_html_ae1ccc11eafbd0880d0c1e49988ab5b47"><div class="ttname"><a href="struct_example_app.html#ae1ccc11eafbd0880d0c1e49988ab5b47">ExampleApp::automation</a></div><div class="ttdeci">Automation automation</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00077">demoApp.cc:77</a></div></div>
-<div class="ttc" id="astruct_example_app_html_ae84f35e8420bd071845ec555d6ab4cbd"><div class="ttname"><a href="struct_example_app.html#ae84f35e8420bd071845ec555d6ab4cbd">ExampleApp::dmapPath</a></div><div class="ttdeci">ctk::SetDMapFilePath dmapPath</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00075">demoApp.cc:75</a></div></div>
-<div class="ttc" id="astruct_example_app_html_aecb5f2041899e8eea99688077e998a2b"><div class="ttname"><a href="struct_example_app.html#aecb5f2041899e8eea99688077e998a2b">ExampleApp::~ExampleApp</a></div><div class="ttdeci">~ExampleApp()</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00073">demoApp.cc:73</a></div></div>
+<div class="ttc" id="astruct_example_app_html_a872f39c39ae79bb08c44b62766910874"><div class="ttname"><a href="struct_example_app.html#a872f39c39ae79bb08c44b62766910874">ExampleApp::timer</a></div><div class="ttdeci">ctk::DeviceModule timer</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00077">demoApp.cc:77</a></div></div>
+<div class="ttc" id="astruct_example_app_html_ae1ccc11eafbd0880d0c1e49988ab5b47"><div class="ttname"><a href="struct_example_app.html#ae1ccc11eafbd0880d0c1e49988ab5b47">ExampleApp::automation</a></div><div class="ttdeci">Automation automation</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00072">demoApp.cc:72</a></div></div>
+<div class="ttc" id="astruct_example_app_html_ae84f35e8420bd071845ec555d6ab4cbd"><div class="ttname"><a href="struct_example_app.html#ae84f35e8420bd071845ec555d6ab4cbd">ExampleApp::dmapPath</a></div><div class="ttdeci">ctk::SetDMapFilePath dmapPath</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00070">demoApp.cc:70</a></div></div>
+<div class="ttc" id="astruct_example_app_html_aecb5f2041899e8eea99688077e998a2b"><div class="ttname"><a href="struct_example_app.html#aecb5f2041899e8eea99688077e998a2b">ExampleApp::~ExampleApp</a></div><div class="ttdeci">~ExampleApp()</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00068">demoApp.cc:68</a></div></div>
 <div class="ttc" id="astruct_table_generation_1_1_table_parameters_html_a5ee8e2e95476e9f12fa37bd9da3d1cdf"><div class="ttname"><a href="struct_table_generation_1_1_table_parameters.html#a5ee8e2e95476e9f12fa37bd9da3d1cdf">TableGeneration::TableParameters::setpoint</a></div><div class="ttdeci">ctk::ScalarPushInput&lt; double &gt; setpoint</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00037">demoApp.cc:37</a></div></div>
 <div class="ttc" id="astruct_table_generation_1_1_table_parameters_html_a912e531762773e63b2ffac4a7ba96790"><div class="ttname"><a href="struct_table_generation_1_1_table_parameters.html#a912e531762773e63b2ffac4a7ba96790">TableGeneration::TableParameters::pulseLength</a></div><div class="ttdeci">ctk::ScalarPushInput&lt; double &gt; pulseLength</div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00036">demoApp.cc:36</a></div></div>
 <div class="ttc" id="astruct_table_generation_html"><div class="ttname"><a href="struct_table_generation.html">TableGeneration</a></div><div class="ttdef"><b>Definition:</b> <a href="demo_app_8cc_source.html#l00032">demoApp.cc:32</a></div></div>
@@ -243,7 +213,7 @@ $(document).ready(function(){initNavTree('example_2demo_app_8cc-example.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 17 2023 04:55:33 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 21 2023 04:58:15 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

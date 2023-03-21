@@ -99,7 +99,7 @@ var searchData=
   ['copy_305',['copy',['../struct_test_application.html#a7bb2d2ed53be1dc0f75ece843b1e4f04',1,'TestApplication']]],
   ['createarray_306',['createArray',['../struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0',1,'ChimeraTK::ConfigReader']]],
   ['createdevicevariable_307',['createDeviceVariable',['../class_chimera_t_k_1_1_connection_maker.html#ad23d343f9febe07a8af884813de1fc92',1,'ChimeraTK::ConnectionMaker']]],
-  ['createinstance_308',['createInstance',['../class_timer_dummy.html#ac46ae268eb8c9688c411d3b108eb5f95',1,'TimerDummy::createInstance()'],['../class_test_transfer_group_dummy.html#a1adfcab1fe9f1fec118a0e6f671669eb',1,'TestTransferGroupDummy::createInstance()'],['../class_demo_dummy.html#a81a761189bbada41323514360fb3a2e6',1,'DemoDummy::createInstance()']]],
+  ['createinstance_308',['createInstance',['../class_timer_dummy.html#aa035a00084e6250bc746460c54bd98c7',1,'TimerDummy::createInstance()'],['../class_test_transfer_group_dummy.html#a1adfcab1fe9f1fec118a0e6f671669eb',1,'TestTransferGroupDummy::createInstance()'],['../class_demo_dummy.html#ac3533d8bf7d46c1e08e282b1a5b45d53',1,'DemoDummy::createInstance()']]],
   ['createprocessvariable_309',['createProcessVariable',['../class_chimera_t_k_1_1_network_visitor.html#a7054315a2807b6aeb15c97f71d5882eb',1,'ChimeraTK::NetworkVisitor']]],
   ['createvar_310',['createVar',['../struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce',1,'ChimeraTK::ConfigReader']]],
   ['cur_311',['cur',['../struct_controller.html#a6e0cdfc850fa2e1f9a0d82184b886a7e',1,'Controller::cur()'],['../struct_controller.html#a54f77011079233e80bf09ac9867773ce',1,'Controller::cur()']]],
