@@ -156,7 +156,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00028">28</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00027">27</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4e76fa5b5b3b9c5d0dabf009524d6809"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e76fa5b5b3b9c5d0dabf009524d6809">&#9670;&nbsp;</a></span>ProcessVariableMap</h2>
@@ -173,7 +173,7 @@ Friends</h2></td></tr>
 <p>Type alias for the process variable map. </p>
 <p>Useful for getting related types (e.g. an iterator). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>FIXME: This was an unordered_map of strings, but it was changed to register path. The register path does not have a hash, thus we fall back to std::map. Write a std::hash&lt;RegisterPath&gt; if you cant to improve the performance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00066">66</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00065">65</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Friends</h2></td></tr>
 
 <p>Type alias for a pair of shared pointers to <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00056">56</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00055">55</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ template&lt;class T &gt; </div>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process arrays are created: one for the control system and one for the device library. The pair that is returned has a reference to the instance intended for the control system as its first and a reference to the instance intended for the device library as its second member. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00210">210</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00209">209</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ template&lt;class T &gt; </div>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process arrays are created: one for the control system and one for the device library. The pair that is returned has a reference to the instance intended for the control system as its first and a reference to the instance intended for the device library as its second member. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00247">247</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00246">246</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ template&lt;class T &gt; </div>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process arrays are created: one for the control system and one for the device library. The pair that is returned has a reference to the instance intended for the control system as its first and a reference to the instance intended for the device library as its second member. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00229">229</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00228">228</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ template&lt;class T &gt; </div>
 <p>Returns the map containing all process variables, using the names as keys and the respective process variables as values. </p>
 <p>Each value in the map is a pair which has a reference to the process variable instance intended for the control system as its first and a reference to the instance intended for the device library as its second member. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00042">42</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00041">41</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ template&lt;class T &gt; </div>
 <p>Returns a reference to a process array that has been created earlier using one of the <code>createProcessArray...</code> methods. </p>
 <p>Throws a logic_error if there is a process scalar or array with the specified name but its type does not match. A pair of two process arrays is returned: The first member of the pair is a reference to the instance intended for the control system and the second member of the pair is a reference to the instance intended for the device library. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00265">265</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00264">264</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -451,7 +451,7 @@ template&lt;class T &gt; </div>
 <p>Throws ChimeraTK::logic_error if there is no process scalar or array with the specified name.</p>
 <p>A pair of two process variables is returned: The first member of the pair is a reference to the instance intended for the control system and the second member of the pair is a reference to the instance intended for the device library. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00029">29</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00028">28</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -489,7 +489,7 @@ template&lt;class T &gt; </div>
 
 <p>Checks whether a process scalar or array with the specified name exists. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00280">280</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00279">279</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ template&lt;class T &gt; </div>
 <p>The <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab4cc40820493020ce035479360273eff">createPVManager()</a> function is used to instantiate a <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a>. </p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> is only intended for use by the device-library thread and the <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> is only intended for use by the control-system thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00044">44</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00043">43</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a></li>
-    <li class="footer">Generated on Fri Mar 17 2023 04:55:03 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 21 2023 04:57:50 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
