@@ -84,24 +84,23 @@ $(document).ready(function(){initNavTree('progress__bar_8cpp.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">progress_bar.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sys/ioctl.h&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>&quot;</code><br />
+<code>#include &lt;sys/ioctl.h&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;term.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for progress_bar.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="progress__bar_8cpp__incl.svg" width="559" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="progress__bar_8cpp__incl.svg" width="594" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -111,15 +110,6 @@ $(document).ready(function(){initNavTree('progress__bar_8cpp.html',''); initResi
 Functions</h2></td></tr>
 <tr class="memitem:af4dcb249f7c281a6bad0f082b6df2372"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="progress__bar_8cpp.html#af4dcb249f7c281a6bad0f082b6df2372">my_putchar</a> (int c)</td></tr>
 <tr class="separator:af4dcb249f7c281a6bad0f082b6df2372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa0db865ad19605432f2b09fa63bae74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="progress__bar_8cpp.html#aaa0db865ad19605432f2b09fa63bae74">ProgressBar</a> (double TotalToDownload, double NowDownloaded)</td></tr>
-<tr class="separator:aaa0db865ad19605432f2b09fa63bae74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa2f1e7cf9a8c36c26cc334ff9ff7e15c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="progress__bar_8cpp.html#aa2f1e7cf9a8c36c26cc334ff9ff7e15c">last_value</a> = 0</td></tr>
-<tr class="separator:aa2f1e7cf9a8c36c26cc334ff9ff7e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a356fd416f33fc3d129013c9a2b92b667"><td class="memItemLeft" align="right" valign="top">high_resolution_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="progress__bar_8cpp.html#a356fd416f33fc3d129013c9a2b92b667">last_time</a> = high_resolution_clock::now()</td></tr>
-<tr class="separator:a356fd416f33fc3d129013c9a2b92b667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af4dcb249f7c281a6bad0f082b6df2372"></a>
@@ -138,7 +128,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cpp_source.html#l00016">16</a> of file <a class="el" href="progress__bar_8cpp_source.html">progress_bar.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8cpp_source.html#l00015">15</a> of file <a class="el" href="progress__bar_8cpp_source.html">progress_bar.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -150,92 +140,13 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa0db865ad19605432f2b09fa63bae74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa0db865ad19605432f2b09fa63bae74">&#9670;&nbsp;</a></span>ProgressBar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ProgressBar </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>TotalToDownload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>NowDownloaded</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cpp_source.html#l00020">20</a> of file <a class="el" href="progress__bar_8cpp_source.html">progress_bar.cpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="progress__bar_8cpp_aaa0db865ad19605432f2b09fa63bae74_cgraph.svg" width="258" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="progress__bar_8cpp_aaa0db865ad19605432f2b09fa63bae74_icgraph.svg" width="572" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a356fd416f33fc3d129013c9a2b92b667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a356fd416f33fc3d129013c9a2b92b667">&#9670;&nbsp;</a></span>last_time</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">high_resolution_clock::time_point last_time = high_resolution_clock::now()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cpp_source.html#l00014">14</a> of file <a class="el" href="progress__bar_8cpp_source.html">progress_bar.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa2f1e7cf9a8c36c26cc334ff9ff7e15c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2f1e7cf9a8c36c26cc334ff9ff7e15c">&#9670;&nbsp;</a></span>last_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int last_value = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cpp_source.html#l00013">13</a> of file <a class="el" href="progress__bar_8cpp_source.html">progress_bar.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="progress__bar_8cpp.html">progress_bar.cpp</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 04:54:36 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 22 2023 04:58:18 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

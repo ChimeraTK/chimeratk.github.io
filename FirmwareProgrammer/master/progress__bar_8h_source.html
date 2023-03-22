@@ -91,15 +91,27 @@ $(document).ready(function(){initNavTree('progress__bar_8h_source.html',''); ini
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">void</span> <a class="code" href="progress__bar_8h.html#aaa0db865ad19605432f2b09fa63bae74">ProgressBar</a>(<span class="keywordtype">double</span> TotalToDownload, <span class="keywordtype">double</span> NowDownloaded);</div>
-<div class="ttc" id="aprogress__bar_8h_html_aaa0db865ad19605432f2b09fa63bae74"><div class="ttname"><a href="progress__bar_8h.html#aaa0db865ad19605432f2b09fa63bae74">ProgressBar</a></div><div class="ttdeci">void ProgressBar(double TotalToDownload, double NowDownloaded)</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8cpp_source.html#l00020">progress_bar.cpp:20</a></div></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_progress_bar.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_progress_bar.html">ProgressBar</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_progress_bar.html#a82baf37f99231a05286c91e4908dfe0b">update</a>(<span class="keywordtype">double</span> TotalToDownload, <span class="keywordtype">double</span> NowDownloaded);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_progress_bar.html#a57c117aec5165c48bbd1cd40e3219c59">setDoNotShow</a>(<span class="keywordtype">bool</span> doNotShow);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> _doNotShow;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">int</span> last_value = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="ttc" id="aclass_progress_bar_html"><div class="ttname"><a href="class_progress_bar.html">ProgressBar</a></div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8h_source.html#l00005">progress_bar.h:5</a></div></div>
+<div class="ttc" id="aclass_progress_bar_html_a57c117aec5165c48bbd1cd40e3219c59"><div class="ttname"><a href="class_progress_bar.html#a57c117aec5165c48bbd1cd40e3219c59">ProgressBar::setDoNotShow</a></div><div class="ttdeci">static void setDoNotShow(bool doNotShow)</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8cpp_source.html#l00025">progress_bar.cpp:25</a></div></div>
+<div class="ttc" id="aclass_progress_bar_html_a82baf37f99231a05286c91e4908dfe0b"><div class="ttname"><a href="class_progress_bar.html#a82baf37f99231a05286c91e4908dfe0b">ProgressBar::update</a></div><div class="ttdeci">void update(double TotalToDownload, double NowDownloaded)</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8cpp_source.html#l00031">progress_bar.cpp:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="progress__bar_8h.html">progress_bar.h</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 04:54:36 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 22 2023 04:58:18 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

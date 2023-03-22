@@ -11,7 +11,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "MtcaProgrammerJTAG", "class_mtca_programmer_j_t_a_g.html", "class_mtca_programmer_j_t_a_g" ]
     ] ],
     [ "MtcaProgrammerSPI.h", "_mtca_programmer_s_p_i_8h.html", "_mtca_programmer_s_p_i_8h" ],
-    [ "progress_bar.h", "progress__bar_8h.html", "progress__bar_8h" ],
+    [ "progress_bar.h", "progress__bar_8h.html", [
+      [ "ProgressBar", "class_progress_bar.html", "class_progress_bar" ]
+    ] ],
     [ "registers.h", "registers_8h.html", "registers_8h" ],
     [ "XSVFPlayer.h", "_x_s_v_f_player_8h.html", [
       [ "XSVFPlayer", "class_x_s_v_f_player.html", "class_x_s_v_f_player" ]

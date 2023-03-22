@@ -10,6 +10,7 @@ var hierarchy =
     [ "ProgAccessMap", "struct_prog_access_map.html", null ],
     [ "ProgAccessRaw", "struct_prog_access_raw.html", null ],
     [ "ProgrammingInterface", "class_programming_interface.html", null ],
+    [ "ProgressBar", "class_progress_bar.html", null ],
     [ "tagSXsvfInfo", "structtag_s_xsvf_info.html", null ],
     [ "var_len_byte", "structvar__len__byte.html", null ],
     [ "XSVFPlayer", "class_x_s_v_f_player.html", null ],

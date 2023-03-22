@@ -234,17 +234,18 @@ $(document).ready(function(){initNavTree('_mtca_programmer_j_t_a_g_8cpp_source.h
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    microsec /= 100;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">for</span>(i = 1; i &lt;= 100; i++) {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="progress__bar_8h.html#aaa0db865ad19605432f2b09fa63bae74">ProgressBar</a>(100, i);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      usleep(microsec);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    printf(<span class="stringliteral">&quot;\nProgramming...\n&quot;</span>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    microsec = 1;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="class_mtca_programmer_j_t_a_g.html#a4dd3571a56caca878b508de7606f192f">setPort</a>(<a class="code" href="_x_s_v_f_player_interface_8h.html#a32e917f3bb6797fb792a3be510844767a2e06f3cc1308a8d19e6de898fdebc8cc">TCK</a>, 0);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="comment">// dm</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  usleep(microsec);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="class_progress_bar.html">ProgressBar</a> progress;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">for</span>(i = 1; i &lt;= 100; i++) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      progress.<a class="code" href="class_progress_bar.html#a82baf37f99231a05286c91e4908dfe0b">update</a>(100, i);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      usleep(microsec);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    printf(<span class="stringliteral">&quot;\nProgramming...\n&quot;</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    microsec = 1;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="class_mtca_programmer_j_t_a_g.html#a4dd3571a56caca878b508de7606f192f">setPort</a>(<a class="code" href="_x_s_v_f_player_interface_8h.html#a32e917f3bb6797fb792a3be510844767a2e06f3cc1308a8d19e6de898fdebc8cc">TCK</a>, 0);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="comment">// dm</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  usleep(microsec);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
 <div class="ttc" id="a_mtca_programmer_j_t_a_g_8h_html"><div class="ttname"><a href="_mtca_programmer_j_t_a_g_8h.html">MtcaProgrammerJTAG.h</a></div></div>
 <div class="ttc" id="a_x_s_v_f_player_interface_8h_html_a32e917f3bb6797fb792a3be510844767"><div class="ttname"><a href="_x_s_v_f_player_interface_8h.html#a32e917f3bb6797fb792a3be510844767">jtag_port_t</a></div><div class="ttdeci">jtag_port_t</div><div class="ttdef"><b>Definition:</b> <a href="_x_s_v_f_player_interface_8h_source.html#l00006">XSVFPlayerInterface.h:6</a></div></div>
 <div class="ttc" id="a_x_s_v_f_player_interface_8h_html_a32e917f3bb6797fb792a3be510844767a2e06f3cc1308a8d19e6de898fdebc8cc"><div class="ttname"><a href="_x_s_v_f_player_interface_8h.html#a32e917f3bb6797fb792a3be510844767a2e06f3cc1308a8d19e6de898fdebc8cc">TCK</a></div><div class="ttdeci">@ TCK</div><div class="ttdef"><b>Definition:</b> <a href="_x_s_v_f_player_interface_8h_source.html#l00006">XSVFPlayerInterface.h:6</a></div></div>
@@ -270,10 +271,11 @@ $(document).ready(function(){initNavTree('_mtca_programmer_j_t_a_g_8cpp_source.h
 <div class="ttc" id="aclass_mtca_programmer_j_t_a_g_html_abee2e6145dd115e47e96b03442d434a7"><div class="ttname"><a href="class_mtca_programmer_j_t_a_g.html#abee2e6145dd115e47e96b03442d434a7">MtcaProgrammerJTAG::MtcaProgrammerJTAG</a></div><div class="ttdeci">MtcaProgrammerJTAG(const ProgAccessRaw &amp;args)</div><div class="ttdef"><b>Definition:</b> <a href="_mtca_programmer_j_t_a_g_8cpp_source.html#l00015">MtcaProgrammerJTAG.cpp:15</a></div></div>
 <div class="ttc" id="aclass_mtca_programmer_j_t_a_g_html_aedd5b54dede1cafe7d7b39744c28d03f"><div class="ttname"><a href="class_mtca_programmer_j_t_a_g.html#aedd5b54dede1cafe7d7b39744c28d03f">MtcaProgrammerJTAG::dump</a></div><div class="ttdeci">bool dump(std::string firmwareFile, uint32_t imageSize)</div><div class="ttdef"><b>Definition:</b> <a href="_mtca_programmer_j_t_a_g_8cpp_source.html#l00072">MtcaProgrammerJTAG.cpp:72</a></div></div>
 <div class="ttc" id="aclass_mtca_programmer_j_t_a_g_html_aff217999228a4effde4dd4c139fd2734"><div class="ttname"><a href="class_mtca_programmer_j_t_a_g.html#aff217999228a4effde4dd4c139fd2734">MtcaProgrammerJTAG::rebootFPGA</a></div><div class="ttdeci">void rebootFPGA()</div><div class="ttdef"><b>Definition:</b> <a href="_mtca_programmer_j_t_a_g_8cpp_source.html#l00077">MtcaProgrammerJTAG.cpp:77</a></div></div>
+<div class="ttc" id="aclass_progress_bar_html"><div class="ttname"><a href="class_progress_bar.html">ProgressBar</a></div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8h_source.html#l00005">progress_bar.h:5</a></div></div>
+<div class="ttc" id="aclass_progress_bar_html_a82baf37f99231a05286c91e4908dfe0b"><div class="ttname"><a href="class_progress_bar.html#a82baf37f99231a05286c91e4908dfe0b">ProgressBar::update</a></div><div class="ttdeci">void update(double TotalToDownload, double NowDownloaded)</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8cpp_source.html#l00031">progress_bar.cpp:31</a></div></div>
 <div class="ttc" id="aclass_x_s_v_f_player_html"><div class="ttname"><a href="class_x_s_v_f_player.html">XSVFPlayer</a></div><div class="ttdef"><b>Definition:</b> <a href="_x_s_v_f_player_8h_source.html#l00009">XSVFPlayer.h:9</a></div></div>
 <div class="ttc" id="aclass_x_s_v_f_player_html_a5d938bc9489838d9379ca97373e1a06b"><div class="ttname"><a href="class_x_s_v_f_player.html#a5d938bc9489838d9379ca97373e1a06b">XSVFPlayer::run</a></div><div class="ttdeci">void run(std::string file)</div><div class="ttdef"><b>Definition:</b> <a href="_x_s_v_f_player_8cpp_source.html#l00062">XSVFPlayer.cpp:62</a></div></div>
 <div class="ttc" id="aprogress__bar_8h_html"><div class="ttname"><a href="progress__bar_8h.html">progress_bar.h</a></div></div>
-<div class="ttc" id="aprogress__bar_8h_html_aaa0db865ad19605432f2b09fa63bae74"><div class="ttname"><a href="progress__bar_8h.html#aaa0db865ad19605432f2b09fa63bae74">ProgressBar</a></div><div class="ttdeci">void ProgressBar(double TotalToDownload, double NowDownloaded)</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8cpp_source.html#l00020">progress_bar.cpp:20</a></div></div>
 <div class="ttc" id="aregisters_8h_html"><div class="ttname"><a href="registers_8h.html">registers.h</a></div></div>
 <div class="ttc" id="aregisters_8h_html_aeb8495cc4f79472d48e978be81cde4ce"><div class="ttname"><a href="registers_8h.html#aeb8495cc4f79472d48e978be81cde4ce">FPGA_REBOOT_WORD</a></div><div class="ttdeci">#define FPGA_REBOOT_WORD</div><div class="ttdef"><b>Definition:</b> <a href="registers_8h_source.html#l00048">registers.h:48</a></div></div>
 <div class="ttc" id="astruct_prog_access_dmap_html"><div class="ttname"><a href="struct_prog_access_dmap.html">ProgAccessDmap</a></div><div class="ttdef"><b>Definition:</b> <a href="_mtca_programmer_base_8h_source.html#l00026">MtcaProgrammerBase.h:26</a></div></div>
@@ -285,7 +287,7 @@ $(document).ready(function(){initNavTree('_mtca_programmer_j_t_a_g_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_mtca_programmer_j_t_a_g_8cpp.html">MtcaProgrammerJTAG.cpp</a></li>
-    <li class="footer">Generated on Sat Mar 18 2023 04:54:36 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 22 2023 04:58:18 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -55,7 +55,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_mtca_programmer_base_8cpp.html",
-"registers_8h.html#aefbafd44a7b2cf3b53ab2ea890bb677f"
+"registers_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -9,6 +9,7 @@ var annotated_dup =
     [ "ProgAccessMap", "struct_prog_access_map.html", "struct_prog_access_map" ],
     [ "ProgAccessRaw", "struct_prog_access_raw.html", "struct_prog_access_raw" ],
     [ "ProgrammingInterface", "class_programming_interface.html", "class_programming_interface" ],
+    [ "ProgressBar", "class_progress_bar.html", "class_progress_bar" ],
     [ "tagSXsvfInfo", "structtag_s_xsvf_info.html", "structtag_s_xsvf_info" ],
     [ "var_len_byte", "structvar__len__byte.html", "structvar__len__byte" ],
     [ "XSVFPlayer", "class_x_s_v_f_player.html", "class_x_s_v_f_player" ],
