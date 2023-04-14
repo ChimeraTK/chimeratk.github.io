@@ -192,47 +192,42 @@ $(document).ready(function(){initNavTree('_doocs_process_array_8h_source.html','
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="comment">// No cast necessary if types are identical.</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      dataPtr = processVector.data();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(std::is_same&lt;DOOCS_PRIMITIVE_T, int64_t&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        std::is_same&lt;THE_DOOCS_TYPE, long long int&gt;::value) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">// Cast from int64_t to long long int (which are different types!)</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      dataPtr = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(processVector.data());</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(std::is_same&lt;DOOCS_PRIMITIVE_T, ChimeraTK::Boolean&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        std::is_same&lt;THE_DOOCS_TYPE, bool&gt;::value) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="comment">// FIXME: Is it really ok to use reinterpret_cast here?</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      static_assert(<span class="keyword">sizeof</span>(ChimeraTK::Boolean) == <span class="keyword">sizeof</span>(<span class="keywordtype">bool</span>));</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      dataPtr = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">bool</span>*<span class="keyword">&gt;</span>(processVector.data());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      static_assert(std::is_same&lt;THE_DOOCS_TYPE, DOOCS_PRIMITIVE_T&gt;::value, <span class="stringliteral">&quot;Bad type casting.&quot;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span>(_processArray-&gt;dataValidity() != ChimeraTK::DataValidity::ok) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      this-&gt;d_error(stale_data);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      this-&gt;d_error(no_error);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(std::is_same&lt;DOOCS_PRIMITIVE_T, ChimeraTK::Boolean&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        std::is_same&lt;THE_DOOCS_TYPE, bool&gt;::value) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">// FIXME: Is it really ok to use reinterpret_cast here?</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      static_assert(<span class="keyword">sizeof</span>(ChimeraTK::Boolean) == <span class="keyword">sizeof</span>(<span class="keywordtype">bool</span>));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      dataPtr = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">bool</span>*<span class="keyword">&gt;</span>(processVector.data());</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      static_assert(std::is_same&lt;THE_DOOCS_TYPE, DOOCS_PRIMITIVE_T&gt;::value, <span class="stringliteral">&quot;Bad type casting.&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(_processArray-&gt;dataValidity() != ChimeraTK::DataValidity::ok) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      this-&gt;d_error(stale_data);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      this-&gt;d_error(no_error);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    this-&gt;fill_array(dataPtr, processVector.size());</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    modified = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    doocs::Timestamp timestamp = correctDoocsTimestamp();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    this-&gt;fill_array(dataPtr, processVector.size());</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    modified = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    doocs::Timestamp timestamp = correctDoocsTimestamp();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span>(_macroPulseNumberSource) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      this-&gt;set_mpnum(_macroPulseNumberSource-&gt;accessData(0));</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    sendZMQ(timestamp);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DOOCS_T, <span class="keyword">typename</span> DOOCS_PRIMITIVE_T&gt;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33">  151</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33">DoocsProcessArray&lt;DOOCS_T, DOOCS_PRIMITIVE_T&gt;::sendToDevice</a>(<span class="keywordtype">bool</span> getLocks) {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    sendArrayToDevice(<span class="keyword">this</span>, _processArray);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    updateOthers(getLocks);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span>(_macroPulseNumberSource) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      this-&gt;set_mpnum(_macroPulseNumberSource-&gt;accessData(0));</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    sendZMQ(timestamp);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DOOCS_T, <span class="keyword">typename</span> DOOCS_PRIMITIVE_T&gt;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33">  146</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33">DoocsProcessArray&lt;DOOCS_T, DOOCS_PRIMITIVE_T&gt;::sendToDevice</a>(<span class="keywordtype">bool</span> getLocks) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    sendArrayToDevice(<span class="keyword">this</span>, _processArray);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    updateOthers(getLocks);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="a_doocs_adapter_8h_html_a21911bbae22f33d6749e3e59194a4d0d"><div class="ttname"><a href="_doocs_adapter_8h.html#a21911bbae22f33d6749e3e59194a4d0d">doocsAdapter</a></div><div class="ttdeci">ChimeraTK::DoocsAdapter doocsAdapter</div><div class="ttdef"><b>Definition:</b> <a href="eq__create_8cc_source.html#l00017">eq_create.cc:17</a></div></div>
 <div class="ttc" id="a_doocs_updater_8h_html"><div class="ttname"><a href="_doocs_updater_8h.html">DoocsUpdater.h</a></div></div>
@@ -240,7 +235,7 @@ $(document).ready(function(){initNavTree('_doocs_process_array_8h_source.html','
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a></div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00017">DoocsProcessArray.h:17</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a14b984d84addffe256f4bf4cfa29f8a0"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a14b984d84addffe256f4bf4cfa29f8a0">ChimeraTK::DoocsProcessArray::set</a></div><div class="ttdeci">void set(EqAdr *eqAdr, EqData *data1, EqData *data2, EqFct *eqFct) override</div><div class="ttdoc">Overload the set function which is called by DOOCS to inject sending to the device.</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00076">DoocsProcessArray.h:76</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a1a00f722520ce3048f82e37c3d5d1d78"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a1a00f722520ce3048f82e37c3d5d1d78">ChimeraTK::DoocsProcessArray::updateDoocsBuffer</a></div><div class="ttdeci">void updateDoocsBuffer(const TransferElementID &amp;transferElementId) override</div><div class="ttdoc">Update DOOCS buffer from PVs.</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00102">DoocsProcessArray.h:102</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a1cd96f065adc8be77560c9301bc3ae33"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33">ChimeraTK::DoocsProcessArray::sendToDevice</a></div><div class="ttdeci">void sendToDevice(bool getLocks)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00151">DoocsProcessArray.h:151</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a1cd96f065adc8be77560c9301bc3ae33"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33">ChimeraTK::DoocsProcessArray::sendToDevice</a></div><div class="ttdeci">void sendToDevice(bool getLocks)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00146">DoocsProcessArray.h:146</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a4daae8544f6c321267a0d1cfb48ac0e3"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a4daae8544f6c321267a0d1cfb48ac0e3">ChimeraTK::DoocsProcessArray::_processArray</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt; &gt; _processArray</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00045">DoocsProcessArray.h:45</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a5af809e1c4d97ffb2a8301d84f7dbb1b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a5af809e1c4d97ffb2a8301d84f7dbb1b">ChimeraTK::DoocsProcessArray::DoocsProcessArray</a></div><div class="ttdeci">DoocsProcessArray(EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt;&gt; const &amp;processArray, DoocsUpdater &amp;updater)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00056">DoocsProcessArray.h:56</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_a654085dd61dc6115320dde47a5485f4a"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#a654085dd61dc6115320dde47a5485f4a">ChimeraTK::DoocsProcessArray::auto_init</a></div><div class="ttdeci">void auto_init() override</div><div class="ttdoc">Override the Doocs auto_init() method, which is called after initialising the value of the property f...</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_array_8h_source.html#l00087">DoocsProcessArray.h:87</a></div></div>
@@ -257,7 +252,7 @@ $(document).ready(function(){initNavTree('_doocs_process_array_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_doocs_process_array_8h.html">DoocsProcessArray.h</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 05:00:11 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 14 2023 14:16:52 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
