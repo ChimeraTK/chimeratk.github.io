@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['boost_5fno_5fexceptions_335',['BOOST_NO_EXCEPTIONS',['../test_virtual_lab_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e',1,'testVirtualLab.cpp']]]
+  ['connect_5fregister_5fevent_334',['CONNECT_REGISTER_EVENT',['../_virtual_lab_backend_8h.html#a39d6fc80c74c46f1c9e9dda478b2d760',1,'VirtualLabBackend.h']]],
+  ['constructor_335',['CONSTRUCTOR',['../_virtual_lab_backend_8h.html#a14e136f646e92809e78b04d59dee998e',1,'VirtualLabBackend.h']]],
+  ['count_5fargs_336',['COUNT_ARGS',['../_timer_group_8h.html#acba40d6e71ce4513a0dda5c273536fec',1,'TimerGroup.h']]],
+  ['count_5fargs_5fhelper_337',['COUNT_ARGS_HELPER',['../_timer_group_8h.html#ae0e0a1df059e81c02f6c03dc93f4aa91',1,'TimerGroup.h']]]
 ];
