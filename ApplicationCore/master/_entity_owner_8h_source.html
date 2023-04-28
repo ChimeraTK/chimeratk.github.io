@@ -197,12 +197,19 @@ $(document).ready(function(){initNavTree('_entity_owner_8h_source.html',''); ini
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_entity_owner.html#a38e92b9f1be12d637408b06f8020b855">  190</a></span>&#160;  std::string <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a38e92b9f1be12d637408b06f8020b855">EntityOwner::constant</a>(T value) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#ad9f6871d54588b640666d0d747549c24">namePrefixConstant</a> + userTypeToUserType&lt;std::string&gt;(value);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;} <span class="comment">/* namespace ChimeraTK */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Make sure every constant has its unique name to avoid differently typed inputs to be connected to the same</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">// constant. Note that the template type argument T may not match the expected type by the application, since the</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// type of the constant is determined by the input accessor, not by the type of the value argument of this function.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// We hence need to use both the type name and a unique counter as part of the name. The unique counter lives inside</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// this template function and hence counts for each type T separately!</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">static</span> std::atomic&lt;uint64_t&gt; uid(0);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#ad9f6871d54588b640666d0d747549c24">namePrefixConstant</a> + <span class="stringliteral">&quot;/&quot;</span> + DataType(<span class="keyword">typeid</span>(T)).getAsString() + <span class="stringliteral">&quot;/&quot;</span> + std::to_string(uid++) + <span class="stringliteral">&quot;/&quot;</span> +</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        userTypeToUserType&lt;std::string&gt;(value);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;} <span class="comment">/* namespace ChimeraTK */</span></div>
 <div class="ttc" id="a_flags_8h_html"><div class="ttname"><a href="_flags_8h.html">Flags.h</a></div></div>
 <div class="ttc" id="a_variable_network_node_8h_html"><div class="ttname"><a href="_variable_network_node_8h.html">VariableNetworkNode.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_entity_owner_html"><div class="ttname"><a href="class_chimera_t_k_1_1_entity_owner.html">ChimeraTK::EntityOwner</a></div><div class="ttdoc">Base class for owners of other EntityOwners (e.g.</div><div class="ttdef"><b>Definition:</b> <a href="_entity_owner_8h_source.html#l00032">EntityOwner.h:32</a></div></div>
@@ -262,7 +269,7 @@ $(document).ready(function(){initNavTree('_entity_owner_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_entity_owner_8h.html">EntityOwner.h</a></li>
-    <li class="footer">Generated on Fri Apr 21 2023 03:55:45 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 28 2023 03:55:47 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -388,21 +388,25 @@ $(document).ready(function(){initNavTree('test_app_module_connections_8cc_source
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPush = {&amp;app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>, app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.constant(T(66)), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll = {&amp;app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>, app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.constant(T(77)), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> tf{app, <span class="keyword">false</span>};</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  tf.runApplication();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.mainLoopStarted.wait(); <span class="comment">// make sure the module&#39;s mainLoop() is entered</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPush == 66);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll == 77);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="comment">// test a second accessor of a different type but defining the constant with the same type as before</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <a class="code" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput&lt;std::string&gt;</a> myStringConstant{&amp;app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>, app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.constant(T(66)), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> tf{app, <span class="keyword">false</span>};</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  tf.runApplication();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.mainLoopStarted.wait(); <span class="comment">// make sure the module&#39;s mainLoop() is entered</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPush.readNonBlocking() == <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll = 0;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll.read();</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll == 77);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPush == 66);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll == 77);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  BOOST_TEST(boost::starts_with(std::string(myStringConstant), <span class="stringliteral">&quot;66&quot;</span>)); <span class="comment">// might be 66 or 66.000000</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPush.readNonBlocking() == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll = 0;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll.read();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  BOOST_TEST(app.<a class="code" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">testModule</a>.consumingPoll == 77);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;}</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">/*********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_application_8h_html"><div class="ttname"><a href="_application_8h.html">Application.h</a></div></div>
 <div class="ttc" id="a_application_module_8h_html"><div class="ttname"><a href="_application_module_8h.html">ApplicationModule.h</a></div></div>
 <div class="ttc" id="a_array_accessor_8h_html"><div class="ttname"><a href="_array_accessor_8h.html">ArrayAccessor.h</a></div></div>
@@ -445,7 +449,7 @@ $(document).ready(function(){initNavTree('test_app_module_connections_8cc_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_app_module_connections_8cc.html">testAppModuleConnections.cc</a></li>
-    <li class="footer">Generated on Fri Apr 21 2023 03:55:45 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 28 2023 03:55:47 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
