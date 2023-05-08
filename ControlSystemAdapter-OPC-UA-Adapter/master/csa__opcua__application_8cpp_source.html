@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('csa__opcua__application_8cpp_source.ht
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  sigset_t intmask;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  sigemptyset(&amp;intmask);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  sigaddset(&amp;intmask, SIGINT);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  sigprocmask(SIG_BLOCK, &amp;intmask, <a class="code" href="csa__namespaceinit__generated_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  sigprocmask(SIG_BLOCK, &amp;intmask, NULL);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Create the Managers&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::pair&lt;boost::shared_ptr&lt;ControlSystemPVManager&gt;, boost::shared_ptr&lt;DevicePVManager&gt;&gt; pvManagers =</div>
@@ -172,18 +172,17 @@ $(document).ready(function(){initNavTree('csa__opcua__application_8cpp_source.ht
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="csa__opcua__application_8cpp.html#a72b1f6c9fc2a291738ed08fec69bfe89">csaOPCUA</a>-&gt;<a class="code" href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">start</a>();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">/* Unblock SIGINT */</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  sigprocmask(SIG_UNBLOCK, &amp;intmask, <a class="code" href="csa__namespaceinit__generated_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  sigprocmask(SIG_UNBLOCK, &amp;intmask, NULL);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">while</span>(!<a class="code" href="csa__opcua__application_8cpp.html#a4e10915bc877b4286993ac2f4f5c09ed">terminateMain</a>) sleep(3600); <span class="comment">// sleep will be interrupted when signal is received</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>.reset();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Application termianted.&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html"><div class="ttname"><a href="classcsa__opcua__adapter.html">csa_opcua_adapter</a></div><div class="ttdoc">This class provide the two parts of the OPCUA Adapter.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8h_source.html#l00045">csa_opcua_adapter.h:45</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html"><div class="ttname"><a href="classcsa__opcua__adapter.html">csa_opcua_adapter</a></div><div class="ttdoc">This class provide the two parts of the OPCUA Adapter.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8h_source.html#l00044">csa_opcua_adapter.h:44</a></div></div>
 <div class="ttc" id="aclasscsa__opcua__adapter_html_a52e356245d67842fc41813cd4687ef97"><div class="ttname"><a href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">csa_opcua_adapter::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Start all objects in single threads for this case only the opc ua server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00071">csa_opcua_adapter.cpp:71</a></div></div>
 <div class="ttc" id="aclasscsa__opcua__adapter_html_ae134ec0a29d6ea00bc0119954769e8ab"><div class="ttname"><a href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">csa_opcua_adapter::~csa_opcua_adapter</a></div><div class="ttdeci">~csa_opcua_adapter()</div><div class="ttdoc">Destructor to stop the running thread, hence it stops the OPC UA server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00058">csa_opcua_adapter.cpp:58</a></div></div>
 <div class="ttc" id="aclasscsa__opcua__adapter_html_af6f448821b6da351da9727aa06f534e2"><div class="ttname"><a href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">csa_opcua_adapter::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop all objects in single threads for this case only the opc ua server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00077">csa_opcua_adapter.cpp:77</a></div></div>
-<div class="ttc" id="acsa__namespaceinit__generated_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="csa__namespaceinit__generated_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="csa__namespaceinit__generated_8h_source.html#l00029">csa_namespaceinit_generated.h:29</a></div></div>
 <div class="ttc" id="acsa__opcua__adapter_8h_html"><div class="ttname"><a href="csa__opcua__adapter_8h.html">csa_opcua_adapter.h</a></div></div>
 <div class="ttc" id="acsa__opcua__application_8cpp_html_a4533bd6f35aa290a844cfaddce04b5c6"><div class="ttname"><a href="csa__opcua__application_8cpp.html#a4533bd6f35aa290a844cfaddce04b5c6">devManager</a></div><div class="ttdeci">boost::shared_ptr&lt; DevicePVManager &gt; devManager</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__application_8cpp_source.html#l00059">csa_opcua_application.cpp:59</a></div></div>
 <div class="ttc" id="acsa__opcua__application_8cpp_html_a4e10915bc877b4286993ac2f4f5c09ed"><div class="ttname"><a href="csa__opcua__application_8cpp.html#a4e10915bc877b4286993ac2f4f5c09ed">terminateMain</a></div><div class="ttdeci">std::atomic&lt; bool &gt; terminateMain</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__application_8cpp_source.html#l00062">csa_opcua_application.cpp:62</a></div></div>
@@ -196,7 +195,7 @@ $(document).ready(function(){initNavTree('csa__opcua__application_8cpp_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="csa__opcua__application_8cpp.html">csa_opcua_application.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 28 2023 04:00:36 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 8 2023 12:03:41 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

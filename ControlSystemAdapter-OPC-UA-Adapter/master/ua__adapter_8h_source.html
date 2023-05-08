@@ -112,9 +112,9 @@ $(document).ready(function(){initNavTree('ua__adapter_8h_source.html',''); initR
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define MTCA_UAADAPTER_H</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;ChimeraTK/ControlSystemAdapter/ControlSystemPVManager.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__additionalvariable_8h.html">ua_additionalvariable.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__mapped__class_8h.html">ua_mapped_class.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__processvariable_8h.html">ua_processvariable.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="csa__additionalvariable_8h.html">csa_additionalvariable.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="csa__processvariable_8h.html">csa_processvariable.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__mapped__class_8h.html">ua_mapped_class.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xml__file__handler_8h.html">xml_file_handler.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;open62541/config.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;open62541/plugin/accesscontrol.h&gt;</span></div>
@@ -237,13 +237,13 @@ $(document).ready(function(){initNavTree('ua__adapter_8h_source.html',''); initR
 <div class="ttc" id="aclassua__uaadapter_html_ab545ab2829045d6f140dd1a6165200ab"><div class="ttname"><a href="classua__uaadapter.html#ab545ab2829045d6f140dd1a6165200ab">ua_uaadapter::addVariable</a></div><div class="ttdeci">void addVariable(string name, boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager)</div><div class="ttdoc">Check if a folder ath exist in opcua server.</div></div>
 <div class="ttc" id="aclassua__uaadapter_html_ad9f8d4f0b7962231ba87ec3b00832203"><div class="ttname"><a href="classua__uaadapter.html#ad9f8d4f0b7962231ba87ec3b00832203">ua_uaadapter::findMappingIndex</a></div><div class="ttdeci">std::vector&lt; int32_t &gt; findMappingIndex(std::string varName)</div><div class="ttdoc">Search PV by name in PV-List.</div></div>
 <div class="ttc" id="aclassxml__file__handler_html"><div class="ttname"><a href="classxml__file__handler.html">xml_file_handler</a></div><div class="ttdoc">This class support any file interaction with a xml file.</div><div class="ttdef"><b>Definition:</b> <a href="xml__file__handler_8h_source.html#l00044">xml_file_handler.h:44</a></div></div>
+<div class="ttc" id="acsa__additionalvariable_8h_html"><div class="ttname"><a href="csa__additionalvariable_8h.html">csa_additionalvariable.h</a></div></div>
 <div class="ttc" id="acsa__opcua__application_8cpp_html_add976e3e567316f346a38deea3691cb1"><div class="ttname"><a href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__application_8cpp_source.html#l00058">csa_opcua_application.cpp:58</a></div></div>
+<div class="ttc" id="acsa__processvariable_8h_html"><div class="ttname"><a href="csa__processvariable_8h.html">csa_processvariable.h</a></div></div>
 <div class="ttc" id="astruct_folder_info_html"><div class="ttname"><a href="struct_folder_info.html">FolderInfo</a></div><div class="ttdoc">This struct represents a folder in OPCUA with its own node id and with his parent and child node id.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00048">ua_adapter.h:48</a></div></div>
 <div class="ttc" id="astruct_folder_info_html_a4ed9ce09423b195f3160838c0a36375d"><div class="ttname"><a href="struct_folder_info.html#a4ed9ce09423b195f3160838c0a36375d">FolderInfo::folderName</a></div><div class="ttdeci">string folderName</div><div class="ttdoc">Name of the folder.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00052">ua_adapter.h:52</a></div></div>
 <div class="ttc" id="astruct_server_config_html"><div class="ttname"><a href="struct_server_config.html">ServerConfig</a></div><div class="ttdoc">This struct represents a server config.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00069">ua_adapter.h:69</a></div></div>
-<div class="ttc" id="aua__additionalvariable_8h_html"><div class="ttname"><a href="ua__additionalvariable_8h.html">ua_additionalvariable.h</a></div></div>
 <div class="ttc" id="aua__mapped__class_8h_html"><div class="ttname"><a href="ua__mapped__class_8h.html">ua_mapped_class.h</a></div></div>
-<div class="ttc" id="aua__processvariable_8h_html"><div class="ttname"><a href="ua__processvariable_8h.html">ua_processvariable.h</a></div></div>
 <div class="ttc" id="axml__file__handler_8h_html"><div class="ttname"><a href="xml__file__handler_8h.html">xml_file_handler.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('ua__adapter_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ua__adapter_8h.html">ua_adapter.h</a></li>
-    <li class="footer">Generated on Fri Apr 28 2023 04:00:36 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 8 2023 12:03:41 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
