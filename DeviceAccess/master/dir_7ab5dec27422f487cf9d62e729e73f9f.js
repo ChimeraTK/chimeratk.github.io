@@ -24,6 +24,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testLMapFile.cpp", "test_l_map_file_8cpp.html", "test_l_map_file_8cpp" ],
     [ "testLMapForceReadOnlyPlugin.cc", "test_l_map_force_read_only_plugin_8cc.html", "test_l_map_force_read_only_plugin_8cc" ],
     [ "testLMapMathPlugin.cpp", "test_l_map_math_plugin_8cpp.html", "test_l_map_math_plugin_8cpp" ],
+    [ "testLMapMathPluginPushPars.cc", "test_l_map_math_plugin_push_pars_8cc.html", "test_l_map_math_plugin_push_pars_8cc" ],
     [ "testLMapMonostableTriggerPlugin.cpp", "test_l_map_monostable_trigger_plugin_8cpp.html", "test_l_map_monostable_trigger_plugin_8cpp" ],
     [ "testLMapTypeHintModifierPlugin.cc", "test_l_map_type_hint_modifier_plugin_8cc.html", "test_l_map_type_hint_modifier_plugin_8cc" ],
     [ "testMapFileParser.cpp", "test_map_file_parser_8cpp.html", "test_map_file_parser_8cpp" ],

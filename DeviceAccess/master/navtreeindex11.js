@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"namespace_chimera_t_k.html#a6e2237e39c86c1a9585534992ff9c446":[18,0,1,164],
 "namespace_chimera_t_k.html#a6f60549a352728669f936f757ee6fea9":[18,0,1,198],
 "namespace_chimera_t_k.html#a7436572505b7cbb9c68d42fc881db771":[18,0,1,158],
 "namespace_chimera_t_k.html#a7b608503f26011e1e46f845fe3916ccb":[18,0,1,195],
@@ -60,7 +59,7 @@ var NAVTREEINDEX11 =
 "namespace_chimera_t_k.html#aff96b5b96f07b7d89a63107cc11ce264":[18,0,1,156],
 "namespace_chimera_t_k.html#afff8173557eb5f22e54120e7cd2e4697":[18,0,1,159],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[18,0,1,0],
-"namespace_chimera_t_k_1_1_l_n_m_backend.html#a92a9e1128129c84332ebdb679286fd95":[18,0,1,0,28],
+"namespace_chimera_t_k_1_1_l_n_m_backend.html#a92a9e1128129c84332ebdb679286fd95":[18,0,1,0,26],
 "namespace_chimera_t_k_1_1_rebot.html":[18,0,1,4],
 "namespace_chimera_t_k_1_1_rebot.html#ae5e78dbec782e292260cb6f0a83e9792":[18,0,1,4,1],
 "namespace_chimera_t_k_1_1_utilities.html":[18,0,1,6],
@@ -226,8 +225,8 @@ var NAVTREEINDEX11 =
 "struct_area_type.html#ab98ad7fceb56b11c53420b87dc3dbf41":[19,0,6,4],
 "struct_area_type.html#ab98ad7fceb56b11c53420b87dc3dbf41":[19,0,6,5],
 "struct_area_type.html#acf6c5aa1259ce527705680be779e027c":[19,0,6,2],
-"struct_area_type.html#af07f821d2eecf55f0317fbfae9371336":[19,0,6,6],
 "struct_area_type.html#af07f821d2eecf55f0317fbfae9371336":[19,0,6,7],
+"struct_area_type.html#af07f821d2eecf55f0317fbfae9371336":[19,0,6,6],
 "struct_argument.html":[19,0,7],
 "struct_argument.html#a36da86ea8486edfce1577578acf192eb":[19,0,7,2],
 "struct_argument.html#a38d7336f4f6d7a336a2392f2dc981e6d":[19,0,7,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "struct_bit_register_descriptor_base.html#a6a3433b55b2666b5c92c40bd9a5eb816":[19,0,10,3],
 "struct_bit_register_descriptor_base.html#a7f7df65e213f806edf105ce7b69c26b2":[19,0,10,1],
 "struct_bit_register_descriptor_base.html#a903eec55f807ae82a320a62ba32c2fe2":[19,0,10,8],
-"struct_bit_register_descriptor_base.html#a9113058bb3647cb7f6d4411c7d240824":[19,0,10,9]
+"struct_bit_register_descriptor_base.html#a9113058bb3647cb7f6d4411c7d240824":[19,0,10,9],
+"struct_bit_register_descriptor_base.html#a98bb55120358f9cab4942c67a345d1b1":[19,0,10,0]
 };

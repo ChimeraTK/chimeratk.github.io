@@ -51,6 +51,7 @@ var hierarchy =
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
+    [ "DummyForCleanupCheck::BackendRegisterer", "struct_dummy_for_cleanup_check_1_1_backend_registerer.html", null ],
     [ "DummyForDoubleBuffering::BackendRegisterer", "struct_dummy_for_double_buffering_1_1_backend_registerer.html", null ],
     [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", null ],
@@ -139,7 +140,9 @@ var hierarchy =
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
           [ "AsyncTestDummy", "class_async_test_dummy.html", null ],
-          [ "ChimeraTK::LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html", null ],
+          [ "ChimeraTK::LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html", [
+            [ "DummyForCleanupCheck", "struct_dummy_for_cleanup_check.html", null ]
+          ] ],
           [ "ChimeraTK::NumericAddressedBackend", "class_chimera_t_k_1_1_numeric_addressed_backend.html", [
             [ "ChimeraTK::DummyBackendBase", "class_chimera_t_k_1_1_dummy_backend_base.html", [
               [ "ChimeraTK::DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", [
@@ -285,8 +288,6 @@ var hierarchy =
     [ "ChimeraTK::LNMVariable", "struct_chimera_t_k_1_1_l_n_m_variable.html", null ],
     [ "ChimeraTK::LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", null ],
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
-    [ "ChimeraTK::LNMBackend::MathPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html", null ],
-    [ "ChimeraTK::LNMBackend::MathPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
     [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper.html", null ],

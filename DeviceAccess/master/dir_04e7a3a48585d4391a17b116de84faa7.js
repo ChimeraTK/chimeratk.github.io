@@ -15,10 +15,7 @@ var dir_04e7a3a48585d4391a17b116de84faa7 =
       [ "ForceReadOnlyPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ]
     ] ],
     [ "LNMMathPlugin.cc", "_l_n_m_math_plugin_8cc.html", [
-      [ "MathPluginFormulaHelper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper" ],
-      [ "MathPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator" ],
-      [ "MathPlugin_Helper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html", null ],
-      [ "MathPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper_3_01_user_type_00_01double_01_4.html", null ]
+      [ "MathPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator" ]
     ] ],
     [ "LNMMonostableTriggerPlugin.cc", "_l_n_m_monostable_trigger_plugin_8cc.html", [
       [ "MonostableTriggerPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator" ],
