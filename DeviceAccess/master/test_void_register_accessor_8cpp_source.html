@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('test_void_register_accessor_8cpp_sourc
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;future&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="test_void_register_accessor_8cpp.html#aa43356e4aaf441a49cb0d79cf9051339">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test_void_register_accessor_8cpp.html#aa43356e4aaf441a49cb0d79cf9051339">testAsyncRO</a>(<a class="code" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> name, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> interruptController, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> interruptNumber) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="test_void_register_accessor_8cpp.html#ae467cf89861e0c1ed8f28e2c6178ea32">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test_void_register_accessor_8cpp.html#ae467cf89861e0c1ed8f28e2c6178ea32">testAsyncRO</a>(<a class="code" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> name, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> interruptNumber) {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// The typical use case: The underlying register is a read-only interrput</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_device.html">Device</a> d(<span class="stringliteral">&quot;(dummy?map=goodMapFile.map)&quot;</span>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  d.<a class="code" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>();</div>
@@ -123,26 +123,26 @@ $(document).ready(function(){initNavTree('test_void_register_accessor_8cpp_sourc
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">auto</span> dummy = boost::dynamic_pointer_cast&lt;DummyBackend&gt;(d.<a class="code" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a>());</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  dummy-&gt;triggerInterrupt(interruptController, interruptNumber);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  dummy-&gt;triggerInterrupt(interruptNumber);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  BOOST_CHECK(isReadFinished.wait_for(std::chrono::seconds(3)) == std::future_status::ready);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// check that the implementations for readNonBlocking() and readLatest() delegate to the right function (the return</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// value still contains information) Trigger twice, then evaluate</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  dummy-&gt;triggerInterrupt(interruptController, interruptNumber);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  dummy-&gt;triggerInterrupt(interruptController, interruptNumber);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  dummy-&gt;triggerInterrupt(interruptNumber);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  dummy-&gt;triggerInterrupt(interruptNumber);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  BOOST_CHECK(asyncAccessor.<a class="code" href="class_chimera_t_k_1_1_void_register_accessor.html#af2f4130e2dce76e7c9601a2634ce7963">readNonBlocking</a>());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  BOOST_CHECK(asyncAccessor.<a class="code" href="class_chimera_t_k_1_1_void_register_accessor.html#af2f4130e2dce76e7c9601a2634ce7963">readNonBlocking</a>());</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  BOOST_CHECK(!asyncAccessor.<a class="code" href="class_chimera_t_k_1_1_void_register_accessor.html#af2f4130e2dce76e7c9601a2634ce7963">readNonBlocking</a>()); <span class="comment">// third readNonBlocking return false</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  dummy-&gt;triggerInterrupt(interruptController, interruptNumber);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  dummy-&gt;triggerInterrupt(interruptController, interruptNumber);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  dummy-&gt;triggerInterrupt(interruptNumber);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  dummy-&gt;triggerInterrupt(interruptNumber);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  BOOST_CHECK(asyncAccessor.<a class="code" href="class_chimera_t_k_1_1_void_register_accessor.html#a3d05bc745a41cbe2a8c9d5d383c6e6e4">readLatest</a>());</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  BOOST_CHECK(!asyncAccessor.<a class="code" href="class_chimera_t_k_1_1_void_register_accessor.html#a3d05bc745a41cbe2a8c9d5d383c6e6e4">readLatest</a>()); <span class="comment">// second readLatest return false</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="test_void_register_accessor_8cpp.html#a5d9978a48ddd1f8cf5e7fe5c968dcbd8">   54</a></span>&#160;<a class="code" href="test_void_register_accessor_8cpp.html#a5d9978a48ddd1f8cf5e7fe5c968dcbd8">BOOST_AUTO_TEST_CASE</a>(TestAsyncRO) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="test_void_register_accessor_8cpp.html#aa43356e4aaf441a49cb0d79cf9051339">testAsyncRO</a>(<span class="stringliteral">&quot;MODULE0/INTERRUPT_VOID1&quot;</span>, 1, 3);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="test_void_register_accessor_8cpp.html#aa43356e4aaf441a49cb0d79cf9051339">testAsyncRO</a>(<span class="stringliteral">&quot;MODULE0/INTERRUPT_TYPE&quot;</span>, 5, 6);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="test_void_register_accessor_8cpp.html#ae467cf89861e0c1ed8f28e2c6178ea32">testAsyncRO</a>(<span class="stringliteral">&quot;MODULE0/INTERRUPT_VOID1&quot;</span>, 3);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="test_void_register_accessor_8cpp.html#ae467cf89861e0c1ed8f28e2c6178ea32">testAsyncRO</a>(<span class="stringliteral">&quot;MODULE0/INTERRUPT_TYPE&quot;</span>, 6);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="test_void_register_accessor_8cpp.html#aac36ecaf27081b91f4799974c781eea8">   59</a></span>&#160;<a class="code" href="test_void_register_accessor_8cpp.html#a5d9978a48ddd1f8cf5e7fe5c968dcbd8">BOOST_AUTO_TEST_CASE</a>(TestAsyncRW) {</div>
@@ -232,14 +232,14 @@ $(document).ready(function(){initNavTree('test_void_register_accessor_8cpp_sourc
 <div class="ttc" id="aclass_chimera_t_k_1_1logic__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a></div><div class="ttdoc">Exception thrown when a logic error has occured.</div><div class="ttdef"><b>Definition:</b> <a href="_exception_8h_source.html#l00051">Exception.h:51</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
 <div class="ttc" id="atest_void_register_accessor_8cpp_html_a5d9978a48ddd1f8cf5e7fe5c968dcbd8"><div class="ttname"><a href="test_void_register_accessor_8cpp.html#a5d9978a48ddd1f8cf5e7fe5c968dcbd8">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(TestAsyncRO)</div><div class="ttdef"><b>Definition:</b> <a href="test_void_register_accessor_8cpp_source.html#l00054">testVoidRegisterAccessor.cpp:54</a></div></div>
-<div class="ttc" id="atest_void_register_accessor_8cpp_html_aa43356e4aaf441a49cb0d79cf9051339"><div class="ttname"><a href="test_void_register_accessor_8cpp.html#aa43356e4aaf441a49cb0d79cf9051339">testAsyncRO</a></div><div class="ttdeci">void testAsyncRO(RegisterPath name, unsigned int interruptController, unsigned int interruptNumber)</div><div class="ttdef"><b>Definition:</b> <a href="test_void_register_accessor_8cpp_source.html#l00016">testVoidRegisterAccessor.cpp:16</a></div></div>
+<div class="ttc" id="atest_void_register_accessor_8cpp_html_ae467cf89861e0c1ed8f28e2c6178ea32"><div class="ttname"><a href="test_void_register_accessor_8cpp.html#ae467cf89861e0c1ed8f28e2c6178ea32">testAsyncRO</a></div><div class="ttdeci">void testAsyncRO(RegisterPath name, unsigned int interruptNumber)</div><div class="ttdef"><b>Definition:</b> <a href="test_void_register_accessor_8cpp_source.html#l00016">testVoidRegisterAccessor.cpp:16</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_void_register_accessor_8cpp.html">testVoidRegisterAccessor.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

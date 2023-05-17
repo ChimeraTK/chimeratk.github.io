@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_numeric_addresse
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_catalogue__coll__graph.svg" width="100%" height="485"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_catalogue__coll__graph.svg" width="100%" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a239c769476321072af9e353e5365cc61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a239c769476321072af9e353e5365cc61">hasRegister</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName) const override</td></tr>
 <tr class="memdesc:a239c769476321072af9e353e5365cc61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if register with the given path name exists.  <a href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a239c769476321072af9e353e5365cc61">More...</a><br /></td></tr>
 <tr class="separator:a239c769476321072af9e353e5365cc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedfd500f67774c61934fe58864e1a87c"><td class="memItemLeft" align="right" valign="top">const std::map&lt; unsigned int, std::set&lt; unsigned int &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#aedfd500f67774c61934fe58864e1a87c">getListOfInterrupts</a> () const</td></tr>
-<tr class="separator:aedfd500f67774c61934fe58864e1a87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfb25a82c4084ce6a5a79705ed48b2b"><td class="memItemLeft" align="right" valign="top">const std::set&lt; std::vector&lt; uint32_t &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#acbfb25a82c4084ce6a5a79705ed48b2b">getListOfInterrupts</a> () const</td></tr>
+<tr class="separator:acbfb25a82c4084ce6a5a79705ed48b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ddf8c956e3c6036ceb59d530ed9d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a23ddf8c956e3c6036ceb59d530ed9d16">addRegister</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;registerInfo)</td></tr>
 <tr class="separator:a23ddf8c956e3c6036ceb59d530ed9d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8bdc1e4daee7a1fa05bbc73ed5809a2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html">BackendRegisterCatalogueBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#ab8bdc1e4daee7a1fa05bbc73ed5809a2">clone</a> () const override</td></tr>
@@ -187,9 +187,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a255c3345ce7b4b4e9c53d23504ebf759"><td class="memItemLeft" align="right" valign="top">std::map&lt; unsigned int, std::set&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a255c3345ce7b4b4e9c53d23504ebf759">_mapOfInterrupts</a></td></tr>
-<tr class="memdesc:a255c3345ce7b4b4e9c53d23504ebf759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of interrupts.  <a href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a255c3345ce7b4b4e9c53d23504ebf759">More...</a><br /></td></tr>
-<tr class="separator:a255c3345ce7b4b4e9c53d23504ebf759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908cf35575c1495fb7e23aa0a44b504c"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a908cf35575c1495fb7e23aa0a44b504c">_listOfInterrupts</a></td></tr>
+<tr class="memdesc:a908cf35575c1495fb7e23aa0a44b504c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of interrupt ID.  <a href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a908cf35575c1495fb7e23aa0a44b504c">More...</a><br /></td></tr>
+<tr class="separator:a908cf35575c1495fb7e23aa0a44b504c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -200,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00135">135</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00134">134</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a23ddf8c956e3c6036ceb59d530ed9d16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23ddf8c956e3c6036ceb59d530ed9d16">&#9670;&nbsp;</a></span>addRegister()</h2>
@@ -218,7 +218,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00251">251</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00250">250</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -265,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a70de19981c9b5459f95baff09ae98735">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00260">260</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00259">259</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -306,7 +306,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a7cb1215cc24a3ced17d075eec33974e9">ChimeraTK::BackendRegisterCatalogue&lt; NumericAddressedRegisterInfo &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00203">203</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00202">202</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -326,14 +326,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aedfd500f67774c61934fe58864e1a87c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedfd500f67774c61934fe58864e1a87c">&#9670;&nbsp;</a></span>getListOfInterrupts()</h2>
+<a id="acbfb25a82c4084ce6a5a79705ed48b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbfb25a82c4084ce6a5a79705ed48b2b">&#9670;&nbsp;</a></span>getListOfInterrupts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::map&lt; unsigned int, std::set&lt; unsigned int &gt; &gt; &amp; ChimeraTK::NumericAddressedRegisterCatalogue::getListOfInterrupts </td>
+          <td class="memname">const std::set&lt; std::vector&lt; uint32_t &gt; &gt; &amp; ChimeraTK::NumericAddressedRegisterCatalogue::getListOfInterrupts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -341,7 +341,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00245">245</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00244">244</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a6c2ced8239bde7a7bc27f62404bd6937">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00235">235</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00234">234</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -395,8 +395,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a255c3345ce7b4b4e9c53d23504ebf759"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a255c3345ce7b4b4e9c53d23504ebf759">&#9670;&nbsp;</a></span>_mapOfInterrupts</h2>
+<a id="a908cf35575c1495fb7e23aa0a44b504c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908cf35575c1495fb7e23aa0a44b504c">&#9670;&nbsp;</a></span>_listOfInterrupts</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;unsigned int, std::set&lt;unsigned int&gt; &gt; ChimeraTK::NumericAddressedRegisterCatalogue::_mapOfInterrupts</td>
+          <td class="memname">std::set&lt;std::vector&lt;uint32_t&gt; &gt; ChimeraTK::NumericAddressedRegisterCatalogue::_listOfInterrupts</td>
         </tr>
       </table>
   </td>
@@ -415,10 +415,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Map of interrupts. </p>
-<p>Key is an interrupt controller number and value is a set of interrupts numbers assigned to the given interrupt controller. </p>
+<p>set of interrupt ID. </p>
+<p>Each interrupt ID is a vector of (nested) interrupt numbers. (Use a vector because it's the easiest container, and set because it ensures that each entry is there only once). </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00151">151</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00150">150</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -231,8 +231,8 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">return</span> boost::filesystem::canonical(absPathToMapFile).string();</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a056049f8b30b0b806e0e5d830c710f75">  145</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a056049f8b30b0b806e0e5d830c710f75">SharedDummyBackend::triggerInterrupt</a>(<span class="keywordtype">int</span> interruptControllerNumber, <span class="keywordtype">int</span> interruptNumber) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    this-&gt;sharedMemoryManager.intDispatcherIf-&gt;triggerInterrupt(interruptControllerNumber, interruptNumber);</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_shared_dummy_backend.html#abe949df180b5afd5c540f8eb54ad9eba">  145</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_shared_dummy_backend.html#abe949df180b5afd5c540f8eb54ad9eba">SharedDummyBackend::triggerInterrupt</a>(uint32_t interruptNumber) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    this-&gt;sharedMemoryManager.intDispatcherIf-&gt;triggerInterrupt(interruptNumber);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// Since VersionNumber consistency is defined only per process, we generate a new one here</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// and also in the triggered process</span></div>
@@ -276,13 +276,13 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    semBuf-&gt;cleanup(pidSet);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherInterface::triggerInterrupt(<span class="keywordtype">int</span> controllerId, <span class="keywordtype">int</span> intNumber) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherInterface::triggerInterrupt(uint32_t intNumber) {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    std::list&lt;boost::interprocess::interprocess_semaphore*&gt; semList;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      std::lock_guard&lt;boost::interprocess::named_mutex&gt; lock(_shmMutex);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="comment">// find list of processes and their semaphores</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="comment">// update interrupt info</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      semList = _semBuf-&gt;findSems(InterruptInfo(controllerId, intNumber), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="comment">// update interrupt info.</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      semList = _semBuf-&gt;findSems(intNumber, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// trigger the interrupts</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* sem : semList) {</div>
@@ -321,158 +321,158 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      std::lock_guard&lt;boost::interprocess::named_mutex&gt; lock(_dispatcherInterf-&gt;_shmMutex);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : _semShm-&gt;interruptEntries) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span>(!entry.used) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        lastInterruptState[std::make_pair(entry._controllerId, entry._intNumber)] = entry._counter;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="comment">// we register a semaphore only after being ready</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      _sem = _semShm-&gt;addSem(_semId);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      _started = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">// local copy of shm contents, used to reduce lock time</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    InterruptEntry interruptEntries[maxInterruptEntries];</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">while</span>(!_stop) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      _sem-&gt;wait();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        std::lock_guard&lt;boost::interprocess::named_mutex&gt; lock(_dispatcherInterf-&gt;_shmMutex);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        std::memcpy(interruptEntries, _semShm-&gt;interruptEntries, <span class="keyword">sizeof</span>(interruptEntries));</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span>(!entry.used) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment">// find match with controllerId and intNumber</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keyword">auto</span> key = std::make_pair(entry._controllerId, entry._intNumber);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keyword">auto</span> it = lastInterruptState.find(key);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span>(it != lastInterruptState.end()) {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          <span class="keywordflow">while</span>(it-&gt;second != entry._counter) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="comment">// call trigger/dispatch</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;existing interrupt event for x,y = &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; entry._intNumber</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                      &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            handleInterrupt(entry._controllerId, entry._intNumber);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            it-&gt;second++;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          }</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;          <span class="comment">// new interrupt number</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;          <span class="comment">// call trigger/dispatch count times</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;count = &quot;</span> &lt;&lt; entry._counter &lt;&lt; <span class="stringliteral">&quot; interrupt events for x,y = &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                    &lt;&lt; entry._intNumber &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          handleInterrupt(entry._controllerId, entry._intNumber);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;          lastInterruptState[key] = entry._counter;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherThread::stop() noexcept {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    _stop = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// we must wait until the semaphore is registered</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <span class="keywordflow">while</span>(!_started) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        boost::this_thread::sleep_for(boost::chrono::milliseconds{10});</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> boost::thread_interrupted&amp;) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="comment">// Simply suppress the thread_interrupted here. This function is only called</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="comment">// within a destructor, which anyway would have terminated the program when it sees the exception.</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="comment">// There are two possible scenarios what can happen now.</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="comment">// 1. _started is set and the destruction can continue normally.</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="comment">// 2. _started is not set yet an we don&#39;t know if the semaphore is in the correct state.</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="comment">//    Again there are two possibilities:</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="comment">//    2a_ The semaphore was set correctly and the destructor continues normally.</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="comment">//    2b_ sem-&gt;post() throws and terminate() is called (which otherwise would have been called from the escaping</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="comment">//    thread_interrupted</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> boost::system::system_error&amp;) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="comment">// if something went really wrong we terminate here</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      std::terminate();</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      _sem-&gt;post();</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> boost::interprocess::interprocess_exception&amp;) {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      std::terminate();</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherThread::handleInterrupt(</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordtype">int</span> interruptControllerNumber, <span class="keywordtype">int</span> interruptNumber) {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      SharedDummyBackend&amp; backend = _dispatcherInterf-&gt;_backend;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      backend.<a class="code" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a15e819dc9cd674fd351cd0a5ed57d08c">dispatchInterrupt</a>(interruptControllerNumber, interruptNumber);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">catch</span>(std::out_of_range&amp;) {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;InterruptDispatcherThread::triggerInterrupt(): Error: Unknown interrupt &quot;</span> +</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          std::to_string(interruptControllerNumber) + <span class="stringliteral">&quot;, &quot;</span> + std::to_string(interruptNumber));</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  SharedDummyBackend::ShmForSems::Sem* SharedDummyBackend::ShmForSems::addSem(SemId semId) {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// look up whether semaphore for id already exists and return error</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;error: semId already exists - check assumption about identifiers!&quot;</span>);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordflow">if</span>(!entry.used) {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        entry.semId = semId;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        entry.used = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="comment">// It would be nice to also reset semaphores state, but if</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">// interrupt dispatcher thread which last used it terminated property its not necessary</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// (since it calls post in destructor)</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> &amp;entry.s;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">// increasing size not implemented</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;error: semaphore array full - increase maxSems!&quot;</span>);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordtype">bool</span> SharedDummyBackend::ShmForSems::removeSem(SemId semId) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        entry.used = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        found = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">return</span> found;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::cleanup(<a class="code" href="_shared_dummy_backend_8h.html#a5634ef0f0086b55ed47db2def72b5845">PidSet</a>* pidSet) {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">if</span>(std::find(std::begin(*pidSet), std::end(*pidSet), (int32_t)entry.semId) == std::end(*pidSet)) {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;          entry.used = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        }</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      }</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  }</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::addInterrupt(InterruptInfo ii) {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry._controllerId == ii._controllerId &amp;&amp; entry._intNumber == ii._intNumber) {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        entry._counter++;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        found = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">if</span>(!found) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keywordtype">bool</span> added = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">if</span>(!entry.used) {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          entry.used = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          <span class="comment">// entry.semId = semId;</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;          entry._controllerId = ii._controllerId;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;          entry._intNumber = ii._intNumber;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        assert(entry._controllerId == 0);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span>(!entry.used) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        lastInterruptState[std::make_pair(entry._controllerId, entry._intNumber)] = entry._counter;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="comment">// we register a semaphore only after being ready</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      _sem = _semShm-&gt;addSem(_semId);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      _started = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// local copy of shm contents, used to reduce lock time</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    InterruptEntry interruptEntries[maxInterruptEntries];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">while</span>(!_stop) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      _sem-&gt;wait();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        std::lock_guard&lt;boost::interprocess::named_mutex&gt; lock(_dispatcherInterf-&gt;_shmMutex);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        std::memcpy(interruptEntries, _semShm-&gt;interruptEntries, <span class="keyword">sizeof</span>(interruptEntries));</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        assert(entry._controllerId == 0);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span>(!entry.used) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// find match with controllerId and intNumber</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keyword">auto</span> key = std::make_pair(entry._controllerId, entry._intNumber);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keyword">auto</span> it = lastInterruptState.find(key);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">if</span>(it != lastInterruptState.end()) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;          <span class="keywordflow">while</span>(it-&gt;second != entry._counter) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="comment">// call trigger/dispatch</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;existing interrupt event for x,y = &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; entry._intNumber</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                      &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            handleInterrupt(entry._intNumber);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            it-&gt;second++;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;          }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          <span class="comment">// new interrupt number</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          <span class="comment">// call trigger/dispatch count times</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;count = &quot;</span> &lt;&lt; entry._counter &lt;&lt; <span class="stringliteral">&quot; interrupt events for x,y = &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                    &lt;&lt; entry._intNumber &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          handleInterrupt(entry._intNumber);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          lastInterruptState[key] = entry._counter;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherThread::stop() noexcept {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    _stop = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// we must wait until the semaphore is registered</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">while</span>(!_started) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        boost::this_thread::sleep_for(boost::chrono::milliseconds{10});</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> boost::thread_interrupted&amp;) {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="comment">// Simply suppress the thread_interrupted here. This function is only called</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="comment">// within a destructor, which anyway would have terminated the program when it sees the exception.</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="comment">// There are two possible scenarios what can happen now.</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="comment">// 1. _started is set and the destruction can continue normally.</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="comment">// 2. _started is not set yet an we don&#39;t know if the semaphore is in the correct state.</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="comment">//    Again there are two possibilities:</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="comment">//    2a_ The semaphore was set correctly and the destructor continues normally.</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="comment">//    2b_ sem-&gt;post() throws and terminate() is called (which otherwise would have been called from the escaping</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="comment">//    thread_interrupted</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> boost::system::system_error&amp;) {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="comment">// if something went really wrong we terminate here</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      std::terminate();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      _sem-&gt;post();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> boost::interprocess::interprocess_exception&amp;) {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      std::terminate();</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherThread::handleInterrupt(uint32_t interruptNumber) {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      SharedDummyBackend&amp; backend = _dispatcherInterf-&gt;_backend;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      backend.<a class="code" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1eb55fcc4082f2d2407576cf1f63f89f">dispatchInterrupt</a>(interruptNumber);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">catch</span>(std::out_of_range&amp;) {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          <span class="stringliteral">&quot;InterruptDispatcherThread::triggerInterrupt(): Error: Unknown interrupt &quot;</span> + std::to_string(interruptNumber));</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  SharedDummyBackend::ShmForSems::Sem* SharedDummyBackend::ShmForSems::addSem(SemId semId) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// look up whether semaphore for id already exists and return error</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;error: semId already exists - check assumption about identifiers!&quot;</span>);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span>(!entry.used) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        entry.semId = semId;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        entry.used = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">// It would be nice to also reset semaphores state, but if</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// interrupt dispatcher thread which last used it terminated property its not necessary</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// (since it calls post in destructor)</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">return</span> &amp;entry.s;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">// increasing size not implemented</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;error: semaphore array full - increase maxSems!&quot;</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordtype">bool</span> SharedDummyBackend::ShmForSems::removeSem(SemId semId) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        entry.used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">return</span> found;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::cleanup(<a class="code" href="_shared_dummy_backend_8h.html#a5634ef0f0086b55ed47db2def72b5845">PidSet</a>* pidSet) {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span>(std::find(std::begin(*pidSet), std::end(*pidSet), (int32_t)entry.semId) == std::end(*pidSet)) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;          entry.used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  }</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::addInterrupt(uint32_t interruptNumber) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry._controllerId == 0 &amp;&amp; <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(entry._intNumber) == interruptNumber) {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        entry._counter++;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      }</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">if</span>(!found) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <span class="keywordtype">bool</span> added = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">if</span>(!entry.used) {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          entry.used = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;          entry._controllerId = 0;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;          entry._intNumber = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(interruptNumber);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;          entry._counter = 1;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;          added = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;          <span class="keywordflow">break</span>;</div>
@@ -485,7 +485,7 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  }</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  std::list&lt;SharedDummyBackend::ShmForSems::Sem*&gt; SharedDummyBackend::ShmForSems::findSems(</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      InterruptInfo ii, <span class="keywordtype">bool</span> update) {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      uint32_t interruptNumber, <span class="keywordtype">bool</span> update) {</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    std::list&lt;Sem*&gt; ret;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
@@ -493,7 +493,7 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        ret.push_back(&amp;entry.s);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      }</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    }</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">if</span>(update) addInterrupt(ii);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">if</span>(update) addInterrupt(interruptNumber);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  }</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
@@ -530,14 +530,14 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_backend_impl_html_ae9bee80fb557412c35519caa586b3149"><div class="ttname"><a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">ChimeraTK::DeviceBackendImpl::_opened</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _opened</div><div class="ttdoc">flag if device is opened</div><div class="ttdef"><b>Definition:</b> <a href="_device_backend_impl_8h_source.html#l00033">DeviceBackendImpl.h:33</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_dummy_backend_base_html"><div class="ttname"><a href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></div><div class="ttdoc">Base class for DummyBackends, provides common functionality.</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_base_8h_source.html#l00032">DummyBackendBase.h:32</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_numeric_addressed_backend_html_a057624c8b6c049df68744fdadb981f31"><div class="ttname"><a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a057624c8b6c049df68744fdadb981f31">ChimeraTK::NumericAddressedBackend::_hasActiveException</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _hasActiveException</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_addressed_backend_8h_source.html#l00152">NumericAddressedBackend.h:152</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_numeric_addressed_backend_html_a15e819dc9cd674fd351cd0a5ed57d08c"><div class="ttname"><a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a15e819dc9cd674fd351cd0a5ed57d08c">ChimeraTK::NumericAddressedBackend::dispatchInterrupt</a></div><div class="ttdeci">VersionNumber dispatchInterrupt(int interruptControllerNumber, int interruptNumber)</div><div class="ttdoc">Function to be called by implementing backend when an interrupt arrives.</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_addressed_backend_8cc_source.html#l00242">NumericAddressedBackend.cc:242</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_numeric_addressed_backend_html_a1eb55fcc4082f2d2407576cf1f63f89f"><div class="ttname"><a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1eb55fcc4082f2d2407576cf1f63f89f">ChimeraTK::NumericAddressedBackend::dispatchInterrupt</a></div><div class="ttdeci">VersionNumber dispatchInterrupt(uint32_t interruptNumber)</div><div class="ttdoc">Function to be called by implementing backend when an interrupt arrives.</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_addressed_backend_8cc_source.html#l00256">NumericAddressedBackend.cc:256</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html">ChimeraTK::SharedDummyBackend</a></div><div class="ttdoc">The shared dummy device opens a mapping file defining the registers and implements them in shared mem...</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8h_source.html#l00047">SharedDummyBackend.h:47</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a056049f8b30b0b806e0e5d830c710f75"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a056049f8b30b0b806e0e5d830c710f75">ChimeraTK::SharedDummyBackend::triggerInterrupt</a></div><div class="ttdeci">VersionNumber triggerInterrupt(int interruptControllerNumber, int interruptNumber) override</div><div class="ttdoc">Simulate the arrival of an interrupt.</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00145">SharedDummyBackend.cc:145</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a24e4c090c6e02003de078c9ba9c97121"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a24e4c090c6e02003de078c9ba9c97121">ChimeraTK::SharedDummyBackend::write</a></div><div class="ttdeci">void write([[maybe_unused]] uint8_t bar,[[maybe_unused]] uint32_t address,[[maybe_unused]] int32_t const *data,[[maybe_unused]] size_t sizeInBytes) final</div><div class="ttdoc">You cannot override the write version with 32 bit address any more.</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_base_8h_source.html#l00062">DummyBackendBase.h:62</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a3c9ed215934274a01e9e68c4d75ce17c"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a3c9ed215934274a01e9e68c4d75ce17c">ChimeraTK::SharedDummyBackend::SharedDummyBackend</a></div><div class="ttdeci">SharedDummyBackend(const std::string &amp;instanceId, const std::string &amp;mapFileName)</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00023">SharedDummyBackend.cc:23</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a80a15441b3839ae89d0181f2fa3dddec"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a80a15441b3839ae89d0181f2fa3dddec">ChimeraTK::SharedDummyBackend::open</a></div><div class="ttdeci">void open() override</div><div class="ttdoc">Open the device.</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00058">SharedDummyBackend.cc:58</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a9c8176ef109558bdff21ad025242698a"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a9c8176ef109558bdff21ad025242698a">ChimeraTK::SharedDummyBackend::readDeviceInfo</a></div><div class="ttdeci">std::string readDeviceInfo() override</div><div class="ttdoc">Return a device information string containing hardware details like the firmware version number or th...</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00100">SharedDummyBackend.cc:100</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_ab0b70af8a8d1d6af720613779d580c76"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#ab0b70af8a8d1d6af720613779d580c76">ChimeraTK::SharedDummyBackend::closeImpl</a></div><div class="ttdeci">void closeImpl() override</div><div class="ttdoc">All backends derrived from NumericAddressedBackend must implement closeImpl() instead of close.</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00063">SharedDummyBackend.cc:63</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_abe949df180b5afd5c540f8eb54ad9eba"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#abe949df180b5afd5c540f8eb54ad9eba">ChimeraTK::SharedDummyBackend::triggerInterrupt</a></div><div class="ttdeci">VersionNumber triggerInterrupt(uint32_t interruptNumber) override</div><div class="ttdoc">Simulate the arrival of an interrupt.</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00145">SharedDummyBackend.cc:145</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_acdff6fbf19b85b64138253f1a1e3fdf1"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#acdff6fbf19b85b64138253f1a1e3fdf1">ChimeraTK::SharedDummyBackend::read</a></div><div class="ttdeci">void read([[maybe_unused]] uint8_t bar,[[maybe_unused]] uint32_t address,[[maybe_unused]] int32_t *data,[[maybe_unused]] size_t sizeInBytes) final</div><div class="ttdoc">You cannot override the read version with 32 bit address any more.</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_base_8h_source.html#l00054">DummyBackendBase.h:54</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_ae37e5133de2c0fd6c4df082b3530010d"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#ae37e5133de2c0fd6c4df082b3530010d">ChimeraTK::SharedDummyBackend::createInstance</a></div><div class="ttdeci">static boost::shared_ptr&lt; DeviceBackend &gt; createInstance(std::string address, std::map&lt; std::string, std::string &gt; parameters)</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00120">SharedDummyBackend.cc:120</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_ae39750cafdd0b0ca13deeb7eb451180b"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#ae39750cafdd0b0ca13deeb7eb451180b">ChimeraTK::SharedDummyBackend::~SharedDummyBackend</a></div><div class="ttdeci">~SharedDummyBackend() override</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00029">SharedDummyBackend.cc:29</a></div></div>
@@ -557,7 +557,7 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_2c90e15a7117effef4353a6eb562e96d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_c02021404aa43b7226fc426addd80f61.html">src</a></li><li class="navelem"><a class="el" href="_shared_dummy_backend_8cc.html">SharedDummyBackend.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:53:19 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:53:19 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

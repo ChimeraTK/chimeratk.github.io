@@ -5,7 +5,6 @@ var class_chimera_t_k_1_1_async_n_d_register_accessor =
     [ "activate", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#aba17522647706c029b5f8114e9d7e9bd", null ],
     [ "deactivate", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a2f5c698c5e07f7a3a7d9577fe73d6322", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#abe36924b1792cdddb783bfab99eaabcf", null ],
-    [ "doPostWrite", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a7650e1d71d7497a8152033d9cb39bf8b", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a74fbf6f1afeb38bab2cea1c6ab48072b", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#adb133d5adba98a7f649c67c01aa75458", null ],
     [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a18a26ab11e4f210721dfb9615a40e088", null ],
@@ -21,11 +20,9 @@ var class_chimera_t_k_1_1_async_n_d_register_accessor =
     [ "sendDestructively", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a80464e54dfe3c36c858a46dfe3a7fa42", null ],
     [ "sendException", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a10394e7ce072292e0cf9b79931e4f6c8", null ],
     [ "setExceptionBackend", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a698d5120128c852ca457023701dee696", null ],
-    [ "setWriteAccessor", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a607c4f13dae79e5b106f7278a8ab09d4", null ],
     [ "_accessorManager", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#adbb8db83f23525c9783456f6d006f515", null ],
     [ "_backend", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#aca9258eea3cea04f72d2f02337574954", null ],
     [ "_dataTransportQueue", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a13dc86e4e1ca7419135dc27d1e78bf2c", null ],
     [ "_isActive", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a68ca23bf48864f792269102856a331bd", null ],
-    [ "_receiveBuffer", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a6cf6d5c60d9d309988956389cf08b00e", null ],
-    [ "_writeAccessor", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a91bac2457c2d8367946eca7e575f7b94", null ]
+    [ "_receiveBuffer", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a6cf6d5c60d9d309988956389cf08b00e", null ]
 ];

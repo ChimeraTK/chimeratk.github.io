@@ -8,6 +8,6 @@ var class_chimera_t_k_1_1_uio_backend =
     [ "open", "class_chimera_t_k_1_1_uio_backend.html#a51f1b035462c7a176216cb5819786456", null ],
     [ "read", "class_chimera_t_k_1_1_uio_backend.html#a6f81a21f548a14015e260ef960c4703c", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_uio_backend.html#a7abb32aca3b3643bba5762298515c04b", null ],
-    [ "startInterruptHandlingThread", "class_chimera_t_k_1_1_uio_backend.html#a413a5b915747f635406a7a05745f85ee", null ],
+    [ "startInterruptHandlingThread", "class_chimera_t_k_1_1_uio_backend.html#a48e2e7495fd3a101368e5597360187fe", null ],
     [ "write", "class_chimera_t_k_1_1_uio_backend.html#a2050d4b44475c7605fafdf1cdd65b617", null ]
 ];

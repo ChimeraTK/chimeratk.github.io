@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_unified_8cpp_source
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    dummy.throwExceptionWrite = enable;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    dummy.throwExceptionOpen = enable;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(derived-&gt;isPush() &amp;&amp; enable) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      dummy.triggerInterrupt(5, 6);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      dummy.triggerInterrupt(6);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
@@ -182,8 +182,8 @@ $(document).ready(function(){initNavTree('test_l_map_backend_unified_8cpp_source
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      derived-&gt;acc[derived-&gt;channel][k] = v[k];</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span>(derived-&gt;isPush()) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="comment">// At the moment only interrupt 5:6 is used, so we hard code it here. Can be made more flexible if needed.</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1_dummy_backend.html">DummyBackend</a>&amp;<span class="keyword">&gt;</span>(derived-&gt;acc.getBackend()).triggerInterrupt(5, 6);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="comment">// At the moment only interrupt 6 is used, so we hard code it here. Can be made more flexible if needed.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1_dummy_backend.html">DummyBackend</a>&amp;<span class="keyword">&gt;</span>(derived-&gt;acc.getBackend()).triggerInterrupt(6);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_unified_8cpp_source
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    } <span class="comment">// release the buffer lock before triggering another thread</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(derived-&gt;isPush()) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a>&amp;<span class="keyword">&gt;</span>(derived-&gt;acc.getBackend()).triggerInterrupt(5, 6);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a>&amp;<span class="keyword">&gt;</span>(derived-&gt;acc.getBackend()).triggerInterrupt(6);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;};</div>
@@ -389,8 +389,8 @@ $(document).ready(function(){initNavTree('test_l_map_backend_unified_8cpp_source
 <div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="struct_bit_register_descriptor_base.html#a903eec55f807ae82a320a62ba32c2fe2">  306</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="struct_bit_register_descriptor_base.html#a903eec55f807ae82a320a62ba32c2fe2">setRemoteValue</a>() {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    derived-&gt;target.setRemoteValue();</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span>(derived-&gt;isPush()) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="comment">// At the moment only interrupt 5:6 is used, so we hard code it here. Can be made more flexible if needed.</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      exceptionDummyPush-&gt;triggerInterrupt(5, 6);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="comment">// At the moment only interrupt 6 is used, so we hard code it here. Can be made more flexible if needed.</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      exceptionDummyPush-&gt;triggerInterrupt(6);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
@@ -1449,7 +1449,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_unified_8cpp_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_l_map_backend_unified_8cpp.html">testLMapBackendUnified.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -13,8 +13,8 @@ var class_chimera_t_k_1_1_numeric_addressed_register_info =
       [ "IEEE754", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035faac6a6b8a25c5c9332dcd09a9ebd672ac", null ],
       [ "ASCII", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035fad2cd8253361a9c732d21ca1d336599cc", null ]
     ] ],
-    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a5ef157d98d5fae487a1cd08f720778b7", null ],
-    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a0fca1ae1693655d68f326d668bb8b2e1", null ],
+    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#aef991ba6e63d27f9513a7eb4830dd199", null ],
+    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#ad89439089ce6c860f441eeb23759067f", null ],
     [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1cfb528d88b13476a6aee9d1db65b06b", null ],
     [ "clone", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#ab219e756460272c9aaf2c77624d9975e", null ],
     [ "getDataDescriptor", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#aa5032d91d8ce44b53d5ff257624cb1c4", null ],
@@ -32,8 +32,7 @@ var class_chimera_t_k_1_1_numeric_addressed_register_info =
     [ "channels", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a116fb9385221c136bd21a43bea588761", null ],
     [ "dataDescriptor", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a9bd1b996e98bdf30b5ad9ad4f484331c", null ],
     [ "elementPitchBits", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a58855d5b7cbb0af4ecf91a5071ef37da", null ],
-    [ "interruptCtrlNumber", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a61df5bf49f7233ba7ae7bc77aee182d2", null ],
-    [ "interruptNumber", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a24dec687015a812de80d0b161a80f3e2", null ],
+    [ "interruptId", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a09223bb893f9037876616b4c3b023b46", null ],
     [ "nElements", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a0405431f729bb0408cdf58ae0adf948c", null ],
     [ "pathName", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a48b46e04915118afad2e94be3e6241fe", null ],
     [ "registerAccess", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#aa73f25b920881507fb0081850ac5c9eb", null ]

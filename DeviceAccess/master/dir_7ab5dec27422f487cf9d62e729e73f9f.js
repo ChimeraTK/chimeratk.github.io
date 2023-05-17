@@ -2,7 +2,6 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
 [
     [ "testAccessModeFlags.cc", "test_access_mode_flags_8cc.html", "test_access_mode_flags_8cc" ],
     [ "testAccessorPerformance.cpp", "test_accessor_performance_8cpp.html", "test_accessor_performance_8cpp" ],
-    [ "testAsyncNDRegisterAccessor.cpp", "test_async_n_d_register_accessor_8cpp.html", "test_async_n_d_register_accessor_8cpp" ],
     [ "testAsyncRead.cpp", "test_async_read_8cpp.html", "test_async_read_8cpp" ],
     [ "testBackendFactory.cpp", "test_backend_factory_8cpp.html", "test_backend_factory_8cpp" ],
     [ "testDataConsistencyGroup.cpp", "test_data_consistency_group_8cpp.html", "test_data_consistency_group_8cpp" ],
