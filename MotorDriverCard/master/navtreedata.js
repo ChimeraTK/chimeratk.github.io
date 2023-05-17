@@ -39,12 +39,11 @@ var NAVTREE =
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -55,7 +54,6 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -65,7 +63,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -78,28 +76,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_stepper_motor_8cc.html",
-"_stepper_motor_status_8h_source.html",
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a101aa9c83e53c498b008a42b969c4475",
-"class_motor_controler_dummy_test.html#a22f22609dc956990ce3b6866ae8f531c",
-"classmtca4u_1_1_driver_control_data.html#a1b62b8dd729dd5199151d3a703f82fac",
-"classmtca4u_1_1_motor_controler_expert.html#ab7308f8c67f13d70225a03de21d8d0e5",
-"classmtca4u_1_1_motor_reference_switch_data.html",
-"classmtca4u_1_1_t_m_c429_output_word.html#aef0c9a33b4e99a9eaf7b4e06d468d187",
-"classpugi_1_1xml__text.html#ac03c61e9e25322c8bba166c563805e06",
-"globals_d.html",
-"namespacemtca4u_1_1tmc429.html#ab8c639e2e020a1484d40bd57afe374e4",
-"pugixml_8hpp.html#a7b2d97e5b6040fe323d342268b6ffd4b",
-"structtest__fixture__document__save__file__error.html#adcf7b88ec9d2a20f05dc700a79642452",
-"structtest__fixture__dom__node__remove__child__complex.html",
-"structtest__fixture__xpath__paths__abbrev__w3c__12.html#a8886a2d95eeeeef11fda8eb3af54efb3",
-"structtest__fixture__xpath__paths__w3c__8.html#ac446c46fa555daeec651ece0f9e8f0e9",
-"structtest__fixture__xpath__xalan__select__2.html",
-"structtest__runner__helper__dom__node__append__buffer__convert.html",
-"structtest__runner__helper__parse__cdata__skip.html",
-"structtest__runner__helper__xpath__nodeset__id.html",
-"structtest__runner__helper__xpath__rexml__4.html",
-"structtest__runner__helper__xpath__xalan__select__7.html",
-"test_linear_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b"
+"_stepper_motor_status_8cc_source.html",
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6674b002f14713d66efda77fda47ac9d",
+"class_motor_controler_dummy_test.html#a71e2f0132f76667b7483976d056ecf32",
+"classmtca4u_1_1_driver_control_data.html#a5614dd34eb45019bc22afbbd0877a8aa",
+"classmtca4u_1_1_motor_controler_expert.html#acf3d297fcc206f166612f0c05708baa9",
+"classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7",
+"classmtca4u_1_1_t_m_c429_s_p_i.html#a057ffae69cf95f5d1b96a12f01819632",
+"namespacemtca4u.html#a3c4d36688de5843fb368e37372525086",
+"test_motor_controler_8cpp.html#a74dab6957682aa7b67845ec53e7ed0c3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

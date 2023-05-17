@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['use_5fboth_6046',['USE_BOTH',['../class_config_calculator.html#a7ebbf7d419b18c48409e3d110d31c5e0a22f12bd0a30b00131db141ad965ff508',1,'ConfigCalculator']]]
+  ['wrong_5ffirmware_5fversion_2790',['WRONG_FIRMWARE_VERSION',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7c91a8654e30d3a561c93cbf17675d98',1,'mtca4u::MotorDriverException']]],
+  ['wrong_5fmotor_5fid_2791',['WRONG_MOTOR_ID',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7234f101f7a37de4da2c287e0acf912f',1,'mtca4u::MotorDriverException']]]
 ];

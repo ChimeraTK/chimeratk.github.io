@@ -132,16 +132,16 @@ $(document).ready(function(){initNavTree('_logger_8cc_source.html',''); initResi
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Logger::LogLevel::LogLevel(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level) : _level(level) {}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a30a4c4c73d217312db92c8d5ba3bb5c1">   45</a></span>&#160;  std::ostream&amp; <a class="code" href="namespace_chimera_t_k.html#a446d0db9feeca2397fd3f1236491ca7a">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">Logger::LogLevel</a>&amp; level) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> str(level);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string str(level);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    out &lt;&lt; str;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> out;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a5d2accca684b7f42c8515df4dd23249b">   51</a></span>&#160;  Logger::LogLevel::operator <span class="keywordtype">unsigned</span> int()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _level; }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#addc63ace24027c260b25906dad418d56">   53</a></span>&#160;  Logger::LogLevel::operator <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> asString(); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#addc63ace24027c260b25906dad418d56">   53</a></span>&#160;  Logger::LogLevel::operator std::string()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> asString(); }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> Logger::LogLevel::asString()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::string Logger::LogLevel::asString()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::ostringstream stream;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(_level == <a class="code" href="class_chimera_t_k_1_1_logger.html#a56785292075ebc05f324324578d4e573">Logger::NO_LOGGING</a>) {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      stream &lt;&lt; <span class="stringliteral">&quot;NO_LOGGING (&quot;</span>;</div>
@@ -199,14 +199,13 @@ $(document).ready(function(){initNavTree('_logger_8cc_source.html',''); initResi
 <div class="ttc" id="anamespace_chimera_t_k_html_a1920f8277d4d57a0dde881c3bf3f2bd6"><div class="ttname"><a href="namespace_chimera_t_k.html#a1920f8277d4d57a0dde881c3bf3f2bd6">ChimeraTK::_logstdout__</a></div><div class="ttdeci">Logger _logstdout__</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a446d0db9feeca2397fd3f1236491ca7a"><div class="ttname"><a href="namespace_chimera_t_k.html#a446d0db9feeca2397fd3f1236491ca7a">ChimeraTK::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const GeneralStatus &amp;status)</div><div class="ttdef"><b>Definition:</b> <a href="_general_status_8cc_source.html#l00036">GeneralStatus.cc:36</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a53c1a5fc85757568c42a2c9362d043bf"><div class="ttname"><a href="namespace_chimera_t_k.html#a53c1a5fc85757568c42a2c9362d043bf">ChimeraTK::_logstderr__</a></div><div class="ttdeci">Logger _logstderr__</div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><a class="el" href="dir_787b54c01fb56e35ed62199e3ddd64c0.html">src</a></li><li class="navelem"><a class="el" href="_logger_8cc.html">Logger.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

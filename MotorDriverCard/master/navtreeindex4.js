@@ -1,9 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classmtca4u_1_1_driver_control_data.html#a1b62b8dd729dd5199151d3a703f82fac":[7,0,2,8,10],
-"classmtca4u_1_1_driver_control_data.html#a282c09e7da5f2bf601650ff5453c0cb5":[7,0,2,8,2],
-"classmtca4u_1_1_driver_control_data.html#a28ba4a46d1899e4967bdfd67c1795a0e":[7,0,2,8,0],
-"classmtca4u_1_1_driver_control_data.html#a4b18f4fad68a2cd841ce625493468e4c":[7,0,2,8,4],
 "classmtca4u_1_1_driver_control_data.html#a5614dd34eb45019bc22afbbd0877a8aa":[7,0,2,8,8],
 "classmtca4u_1_1_driver_control_data.html#a9aaeb9b6f999ebc040c0a1ed9b4eb2a5":[7,0,2,8,9],
 "classmtca4u_1_1_driver_control_data.html#a9e3b053d73c38ead2d29acc785746cb9":[7,0,2,8,6],
@@ -249,5 +245,9 @@ var NAVTREEINDEX4 =
 "classmtca4u_1_1_motor_controler_expert.html#a9652229e36d9a4a5b5c8b1d7e2cc595e":[7,0,2,21,20],
 "classmtca4u_1_1_motor_controler_expert.html#a96a33f20bfeb1ac039000354e669f3a6":[7,0,2,21,14],
 "classmtca4u_1_1_motor_controler_expert.html#aad02f0f2efe14b625354408a41fc864b":[7,0,2,21,10],
-"classmtca4u_1_1_motor_controler_expert.html#ab6aef485cba9193e01869c42a0c33bc2":[7,0,2,21,7]
+"classmtca4u_1_1_motor_controler_expert.html#ab6aef485cba9193e01869c42a0c33bc2":[7,0,2,21,7],
+"classmtca4u_1_1_motor_controler_expert.html#ab7308f8c67f13d70225a03de21d8d0e5":[7,0,2,21,6],
+"classmtca4u_1_1_motor_controler_expert.html#ab8b6566b1583d26531c401139d84efb9":[7,0,2,21,21],
+"classmtca4u_1_1_motor_controler_expert.html#ac1b086559d62ffe9a77e94ac9ab0325c":[7,0,2,21,4],
+"classmtca4u_1_1_motor_controler_expert.html#acce4183b26dc4537469fcd81c16defd5":[7,0,2,21,13]
 };

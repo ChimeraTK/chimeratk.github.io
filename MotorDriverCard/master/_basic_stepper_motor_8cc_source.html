@@ -450,7 +450,7 @@ $(document).ready(function(){initNavTree('_basic_stepper_motor_8cc_source.html',
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033ead0749aaba8b833466dfcbb0428e4f89c">ExitStatus::SUCCESS</a>;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  }</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a379f15cc15511ba143eeb30ef566b7c9">  364</a></span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a379f15cc15511ba143eeb30ef566b7c9">BasicStepperMotor::getState</a>() {</div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a379f15cc15511ba143eeb30ef566b7c9">  364</a></span>&#160;  std::string <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a379f15cc15511ba143eeb30ef566b7c9">BasicStepperMotor::getState</a>() {</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="_basic_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6">LockGuard</a> guard(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a058498b7d7c64ba77ea7876aa33bf816">_mutex</a>);</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;getCurrentState()-&gt;getName();</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
@@ -459,7 +459,7 @@ $(document).ready(function(){initNavTree('_basic_stepper_motor_8cc_source.html',
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="code" href="_basic_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6">LockGuard</a> guard(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a058498b7d7c64ba77ea7876aa33bf816">_mutex</a>);</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// return !motorActive();</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">// FIXME Return to this</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> state = <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;getCurrentState()-&gt;getName();</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    std::string state = <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;getCurrentState()-&gt;getName();</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">return</span> state == <span class="stringliteral">&quot;idle&quot;</span> || state == <span class="stringliteral">&quot;disabled&quot;</span>;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  }</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
@@ -580,7 +580,7 @@ $(document).ready(function(){initNavTree('_basic_stepper_motor_8cc_source.html',
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  }</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
 <div class="line"><a name="l00493"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#acbc04e980362885c696cbdba6611d6ba">  493</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#acbc04e980362885c696cbdba6611d6ba">BasicStepperMotor::motorActive</a>() {</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> stateName = <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;getCurrentState()-&gt;getName();</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    std::string stateName = <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;getCurrentState()-&gt;getName();</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordflow">if</span>(stateName == <span class="stringliteral">&quot;moving&quot;</span>) {</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    }</div>
@@ -793,7 +793,6 @@ $(document).ready(function(){initNavTree('_basic_stepper_motor_8cc_source.html',
 <div class="ttc" id="anamespace_chimera_t_k_1_1_motor_driver_html_ae876126ee00cc4edba085b4f8f56b444ae5564829e2f85f6a6873a9d5c4f26d09"><div class="ttname"><a href="namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444ae5564829e2f85f6a6873a9d5c4f26d09">ChimeraTK::MotorDriver::CalibrationMode::SIMPLE</a></div><div class="ttdeci">@ SIMPLE</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">File: StepperMotorUtil.h Author: ckampm.</div><div class="ttdef"><b>Definition:</b> <a href="_basic_stepper_motor_8h_source.html#l00031">BasicStepperMotor.h:31</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html">ChimeraTK::MotorDriver::StepperMotorParameters</a></div><div class="ttdoc">Contains parameters for initialization of a StepperMotor object.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00028">StepperMotor.h:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -801,7 +800,7 @@ $(document).ready(function(){initNavTree('_basic_stepper_motor_8cc_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c80554c2587133db87f1fb9893ad232b.html">steppermotor</a></li><li class="navelem"><a class="el" href="dir_8f135189823858db11ff478f3ebf83c5.html">src</a></li><li class="navelem"><a class="el" href="_basic_stepper_motor_8cc.html">BasicStepperMotor.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

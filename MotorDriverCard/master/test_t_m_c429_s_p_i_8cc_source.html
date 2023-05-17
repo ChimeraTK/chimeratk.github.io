@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('test_t_m_c429_s_p_i_8cc_source.html','
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_t_m_c429_s_p_i_test_fixture.html#a16068bf1c71813cf5ebca31154186360">   37</a></span>&#160;<a class="code" href="class_t_m_c429_s_p_i_test_fixture.html#a16068bf1c71813cf5ebca31154186360">TMC429SPITestFixture::TMC429SPITestFixture</a>()</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  : _dummyDevice{},</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    _mappedDevice{<a class="code" href="namespaceboost.html">boost</a>::make_shared&lt;<a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>::Device&gt;()},</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    _mappedDevice{boost::make_shared&lt;<a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>::Device&gt;()},</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    _tmc429Spi{}{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ChimeraTK::setDMapFilePath(<span class="stringliteral">&quot;./dummies.dmap&quot;</span>);</div>
@@ -173,7 +173,6 @@ $(document).ready(function(){initNavTree('test_t_m_c429_s_p_i_8cc_source.html','
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_output_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_output_word.html">mtca4u::TMC429OutputWord</a></div><div class="ttdoc">The readback register contains status information in the higher bits, which contain the SPI address i...</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00052">TMC429Words.h:52</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_output_word_html_a0823b9291d84c90806b8111b24306b0e"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_output_word.html#a0823b9291d84c90806b8111b24306b0e">mtca4u::TMC429OutputWord::getDATA</a></div><div class="ttdeci">unsigned int getDATA() const</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00073">TMC429Words.h:73</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">File: StepperMotorUtil.h Author: ckampm.</div><div class="ttdef"><b>Definition:</b> <a href="_basic_stepper_motor_8h_source.html#l00031">BasicStepperMotor.h:31</a></div></div>
-<div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition:</b> <a href="foreach_8hpp_source.html#l00018">foreach.hpp:18</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1dfmc__md22_html"><div class="ttname"><a href="namespacemtca4u_1_1dfmc__md22.html">mtca4u::dfmc_md22</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_f_m_c___m_d22_constants_8h_source.html#l00008">DFMC_MD22Constants.h:8</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1dfmc__md22_html_a21fff3316efe5552f1cb7a6e409bd3aa"><div class="ttname"><a href="namespacemtca4u_1_1dfmc__md22.html#a21fff3316efe5552f1cb7a6e409bd3aa">mtca4u::dfmc_md22::CONTROLER_SPI_READBACK_ADDRESS_STRING</a></div><div class="ttdeci">std::string const CONTROLER_SPI_READBACK_ADDRESS_STRING</div><div class="ttdef"><b>Definition:</b> <a href="_d_f_m_c___m_d22_constants_8h_source.html#l00023">DFMC_MD22Constants.h:23</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1dfmc__md22_html_a7fe434d86ec063499e5cfec4da4bca8f"><div class="ttname"><a href="namespacemtca4u_1_1dfmc__md22.html#a7fe434d86ec063499e5cfec4da4bca8f">mtca4u::dfmc_md22::CONTROLER_SPI_WRITE_ADDRESS_STRING</a></div><div class="ttdeci">std::string const CONTROLER_SPI_WRITE_ADDRESS_STRING</div><div class="ttdef"><b>Definition:</b> <a href="_d_f_m_c___m_d22_constants_8h_source.html#l00022">DFMC_MD22Constants.h:22</a></div></div>
@@ -194,7 +193,7 @@ $(document).ready(function(){initNavTree('test_t_m_c429_s_p_i_8cc_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_t_m_c429_s_p_i_8cc.html">testTMC429SPI.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

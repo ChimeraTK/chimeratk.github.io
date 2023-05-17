@@ -109,8 +109,8 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// static const unsigned int THE_ID = 17;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> stepperMotorDeviceConfigFile(<span class="stringliteral">&quot;VT21-MotorDriverCardConfig.xml&quot;</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> moduleName(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> std::string stepperMotorDeviceConfigFile(<span class="stringliteral">&quot;VT21-MotorDriverCardConfig.xml&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> std::string moduleName(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">static</span> <a class="code" href="classmtca4u_1_1_t_m_c429_output_word.html">TMC429OutputWord</a> readDFMCDummyMotor0VMaxRegister(boost::shared_ptr&lt;DFMC_MD22Dummy&gt;&amp; dfmc_md22);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <a class="code" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> readDFMCDummyMotor0CurrentScale(boost::shared_ptr&lt;DFMC_MD22Dummy&gt;&amp; dfmc_md2);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
@@ -1221,7 +1221,6 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_a3f5acff8ef84ca33e8cc1bafd0615de4"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4">mtca4u::tmc429::RW_READ</a></div><div class="ttdeci">uint32_t const RW_READ</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00041">TMC429Constants.h:41</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_abcdf1a5630d8fb46026262a3e806b611"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">mtca4u::tmc429::IDX_MAXIMUM_VELOCITY</a></div><div class="ttdeci">uint32_t const IDX_MAXIMUM_VELOCITY</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00026">TMC429Constants.h:26</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html"><div class="ttname"><a href="test_config_constants_8h.html">testConfigConstants.h</a></div></div>
 <div class="ttc" id="atest_stepper_motor_8cpp_html_a49394edadc36ff2739d7f79cca01aa1b"><div class="ttname"><a href="test_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b">init_unit_test_suite</a></div><div class="ttdeci">test_suite * init_unit_test_suite(int, char *[])</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_8cpp_source.html#l00105">testStepperMotor.cpp:105</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -1230,7 +1229,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_stepper_motor_8cpp.html">testStepperMotor.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

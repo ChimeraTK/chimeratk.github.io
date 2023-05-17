@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('test_motor_creation_over_multiple_driv
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> stepperMotorDeviceName(<span class="stringliteral">&quot;DFMC_MD22&quot;</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> dmapFile(<span class="stringliteral">&quot;./dummies.dmap&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> std::string stepperMotorDeviceName(<span class="stringliteral">&quot;DFMC_MD22&quot;</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> std::string dmapFile(<span class="stringliteral">&quot;./dummies.dmap&quot;</span>);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_functional_tests.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_functional_tests.html">FunctionalTests</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">public</span>:</div>
@@ -142,7 +142,6 @@ $(document).ready(function(){initNavTree('test_motor_creation_over_multiple_driv
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html">mtca4u::StepperMotor</a></div><div class="ttdef"><b>Definition:</b> <a href="mtca4u__steppermotor_2include_2_stepper_motor_8h_source.html#l00055">StepperMotor.h:55</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_a26115073bf0a2b1172fe61bb8280b095"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#a26115073bf0a2b1172fe61bb8280b095">mtca4u::StepperMotor::setTargetPosition</a></div><div class="ttdeci">void setTargetPosition(float newPosition)</div><div class="ttdoc">Set new position for the motor (no blocking)</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00161">StepperMotor.cc:161</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_a79de99a39a30a7eb71696dee8273d316"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#a79de99a39a30a7eb71696dee8273d316">mtca4u::StepperMotor::getTargetPosition</a></div><div class="ttdeci">float getTargetPosition()</div><div class="ttdoc">Return target motor position in the arbitrary units.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00175">StepperMotor.cc:175</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html"><div class="ttname"><a href="test_config_constants_8h.html">testConfigConstants.h</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html_a43fca1e0039f5fc3ce23ffcfd2090fcd"><div class="ttname"><a href="test_config_constants_8h.html#a43fca1e0039f5fc3ce23ffcfd2090fcd">MODULE_NAME_1</a></div><div class="ttdeci">const ChimeraTK::RegisterPath MODULE_NAME_1(&quot;MD22_1&quot;)</div></div>
 <div class="ttc" id="atest_config_constants_8h_html_aa9c8c475aa005d6b842858e3e63fccda"><div class="ttname"><a href="test_config_constants_8h.html#aa9c8c475aa005d6b842858e3e63fccda">MODULE_NAME_0</a></div><div class="ttdeci">const ChimeraTK::RegisterPath MODULE_NAME_0(&quot;MD22_0&quot;)</div></div>
@@ -154,7 +153,7 @@ $(document).ready(function(){initNavTree('test_motor_creation_over_multiple_driv
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_motor_creation_over_multiple_drivers_8cc.html">testMotorCreationOverMultipleDrivers.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

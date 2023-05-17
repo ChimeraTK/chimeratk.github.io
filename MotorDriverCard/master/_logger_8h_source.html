@@ -108,13 +108,13 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#aff02b76416d2846736b7ecd798921a0a">   77</a></span>&#160;      <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_chimera_t_k_1_1_logger.html">Logger</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a30a4c4c73d217312db92c8d5ba3bb5c1">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">LogLevel</a>&amp; level);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">operator</span> <span class="keywordtype">unsigned</span> int() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">operator</span> <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">operator</span> std::string() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a7be4467acc9ea824f823f47a14b8d113">operator==</a>(<a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">LogLevel</a> <span class="keyword">const</span>&amp; right) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a5dc28b76dc9cff20e762d94aa7f0bac0">operator!=</a>(<a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">LogLevel</a> <span class="keyword">const</span>&amp; right) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">LogLevel</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> asString() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      std::string asString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _level;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    };</div>
@@ -182,14 +182,13 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="ttc" id="anamespace_chimera_t_k_html_a1920f8277d4d57a0dde881c3bf3f2bd6"><div class="ttname"><a href="namespace_chimera_t_k.html#a1920f8277d4d57a0dde881c3bf3f2bd6">ChimeraTK::_logstdout__</a></div><div class="ttdeci">Logger _logstdout__</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a53c1a5fc85757568c42a2c9362d043bf"><div class="ttname"><a href="namespace_chimera_t_k.html#a53c1a5fc85757568c42a2c9362d043bf">ChimeraTK::_logstderr__</a></div><div class="ttdeci">Logger _logstderr__</div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><a class="el" href="dir_03a6cfce30b88f6a84e388fa6a89390f.html">include</a></li><li class="navelem"><a class="el" href="_logger_8h.html">Logger.h</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

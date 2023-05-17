@@ -131,12 +131,12 @@ $(document).ready(function(){initNavTree('test_hardware_stepper_motor_8cpp_sourc
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> dmapFileName = argv[1];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string dmapFileName = argv[1];</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ChimeraTK::BackendFactory::getInstance().setDMapFilePath(dmapFileName);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> moduleName = argv[2];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string moduleName = argv[2];</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> deviceName;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::string deviceName;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span>(argc &gt;= 4) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    deviceName = argv[3];</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('test_hardware_stepper_motor_8cpp_sourc
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    deviceName = <span class="stringliteral">&quot;DFMC-MD22&quot;</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> configFileNameName;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::string configFileNameName;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span>(argc &gt;= 5) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    configFileNameName = argv[4];</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
@@ -299,7 +299,6 @@ $(document).ready(function(){initNavTree('test_hardware_stepper_motor_8cpp_sourc
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_afcc861fcd709a5448c89b786cd8f7006"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#afcc861fcd709a5448c89b786cd8f7006">mtca4u::StepperMotor::getCalibrationStatus</a></div><div class="ttdeci">StepperMotorCalibrationStatus getCalibrationStatus()</div><div class="ttdoc">Return current calibration status.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00139">StepperMotor.cc:139</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_status_types_html_a39f7af9baec0d1c46a760addcc70e6ec"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_status_types.html#a39f7af9baec0d1c46a760addcc70e6ec">mtca4u::StepperMotorStatusTypes::M_DISABLED</a></div><div class="ttdeci">static const StepperMotorStatus M_DISABLED</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_status_8h_source.html#l00022">StepperMotorStatus.h:22</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_status_types_html_aae1e4856234f1c091f78488305906dde"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_status_types.html#aae1e4856234f1c091f78488305906dde">mtca4u::StepperMotorStatusTypes::M_ERROR</a></div><div class="ttdeci">static const StepperMotorStatus M_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_status_8h_source.html#l00027">StepperMotorStatus.h:27</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="atest_hardware_stepper_motor_8cpp_html_a09c5798d32fe166ec3bd708d432cb937"><div class="ttname"><a href="test_hardware_stepper_motor_8cpp.html#a09c5798d32fe166ec3bd708d432cb937">statusReaderThreadBody</a></div><div class="ttdeci">void * statusReaderThreadBody(void *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="test_hardware_stepper_motor_8cpp_source.html#l00014">testHardwareStepperMotor.cpp:14</a></div></div>
 <div class="ttc" id="atest_hardware_stepper_motor_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="test_hardware_stepper_motor_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="test_hardware_stepper_motor_8cpp_source.html#l00028">testHardwareStepperMotor.cpp:28</a></div></div>
 <div class="ttc" id="atest_hardware_stepper_motor_8cpp_html_a36023c6b271a69513c2adad8887a1459"><div class="ttname"><a href="test_hardware_stepper_motor_8cpp.html#a36023c6b271a69513c2adad8887a1459">statusReaderThreadTab</a></div><div class="ttdeci">pthread_t statusReaderThreadTab[5]</div><div class="ttdef"><b>Definition:</b> <a href="test_hardware_stepper_motor_8cpp_source.html#l00010">testHardwareStepperMotor.cpp:10</a></div></div>
@@ -311,7 +310,7 @@ $(document).ready(function(){initNavTree('test_hardware_stepper_motor_8cpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_cdb1dd61555790d202988752e2287567.html">hardware</a></li><li class="navelem"><a class="el" href="dir_5c27771709ca33a05be116184e8aec75.html">src</a></li><li class="navelem"><a class="el" href="test_hardware_stepper_motor_8cpp.html">testHardwareStepperMotor.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

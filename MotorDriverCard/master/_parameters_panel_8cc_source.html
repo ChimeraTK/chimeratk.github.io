@@ -112,15 +112,15 @@ $(document).ready(function(){initNavTree('_parameters_panel_8cc_source.html','')
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  outerVerticalLayout-&gt;addWidget(asteriskLabel);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_parameters_panel.html#a32fa8ca760591757a2346b1957ea6486">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_parameters_panel.html#a32fa8ca760591757a2346b1957ea6486">ParametersPanel::addParameter</a>(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; parameterName,</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_parameters_panel.html#a32fa8ca760591757a2346b1957ea6486">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_parameters_panel.html#a32fa8ca760591757a2346b1957ea6486">ParametersPanel::addParameter</a>(std::string <span class="keyword">const</span>&amp; parameterName,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    uint32_t defaultValue,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> additionalText) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::string additionalText) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99">parametersMap</a>[parameterName] = <span class="keyword">new</span> <a class="code" href="class_parameter_widget.html">ParameterWidget</a>(<span class="keyword">this</span>, parameterName + <span class="stringliteral">&quot; &quot;</span> + additionalText, defaultValue);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_parameters_panel.html#ae7a67d721fbbbe69fc6be317d2fc5204">verticalLayout</a>-&gt;addWidget(<a class="code" href="class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99">parametersMap</a>[parameterName]);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_parameters_panel.html#ad98c5ded3152e09caa1fdb542cc4a87b">   34</a></span>&#160;uint32_t <a class="code" href="class_parameters_panel.html#ad98c5ded3152e09caa1fdb542cc4a87b">ParametersPanel::operator[]</a>(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; parameterName) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_parameters_panel.html#ad98c5ded3152e09caa1fdb542cc4a87b">   34</a></span>&#160;uint32_t <a class="code" href="class_parameters_panel.html#ad98c5ded3152e09caa1fdb542cc4a87b">ParametersPanel::operator[]</a>(std::string <span class="keyword">const</span>&amp; parameterName) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  std::map&lt;std::string, ParameterWidget*&gt;::const_iterator paramIter = <a class="code" href="class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99">parametersMap</a>.find(parameterName);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span>(paramIter == <a class="code" href="class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99">parametersMap</a>.end()) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> 0xDEADBEEF;</div>
@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('_parameters_panel_8cc_source.html','')
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> paramIter-&gt;second-&gt;getValue();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">ParametersPanel::setParameter</a>(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; parameterName, uint32_t <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">ParametersPanel::setParameter</a>(std::string <span class="keyword">const</span>&amp; parameterName, uint32_t value) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::map&lt;std::string, ParameterWidget*&gt;::const_iterator paramIter = <a class="code" href="class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99">parametersMap</a>.find(parameterName);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span>(paramIter == <a class="code" href="class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99">parametersMap</a>.end()) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  paramIter-&gt;second-&gt;setValue(<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  paramIter-&gt;second-&gt;setValue(value);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="ttc" id="a_parameter_widget_8h_html"><div class="ttname"><a href="_parameter_widget_8h.html">ParameterWidget.h</a></div></div>
 <div class="ttc" id="a_parameters_panel_8h_html"><div class="ttname"><a href="_parameters_panel_8h.html">ParametersPanel.h</a></div></div>
@@ -144,15 +144,13 @@ $(document).ready(function(){initNavTree('_parameters_panel_8cc_source.html','')
 <div class="ttc" id="aclass_parameters_panel_html_ad98c5ded3152e09caa1fdb542cc4a87b"><div class="ttname"><a href="class_parameters_panel.html#ad98c5ded3152e09caa1fdb542cc4a87b">ParametersPanel::operator[]</a></div><div class="ttdeci">uint32_t operator[](std::string const &amp;parameterName)</div><div class="ttdef"><b>Definition:</b> <a href="_parameters_panel_8cc_source.html#l00034">ParametersPanel.cc:34</a></div></div>
 <div class="ttc" id="aclass_parameters_panel_html_ae7a67d721fbbbe69fc6be317d2fc5204"><div class="ttname"><a href="class_parameters_panel.html#ae7a67d721fbbbe69fc6be317d2fc5204">ParametersPanel::verticalLayout</a></div><div class="ttdeci">QVBoxLayout * verticalLayout</div><div class="ttdef"><b>Definition:</b> <a href="_parameters_panel_8h_source.html#l00032">ParametersPanel.h:32</a></div></div>
 <div class="ttc" id="aclass_parameters_panel_html_afa18fd379fd5e3dba0bb08b67bdb0194"><div class="ttname"><a href="class_parameters_panel.html#afa18fd379fd5e3dba0bb08b67bdb0194">ParametersPanel::ParametersPanel</a></div><div class="ttdeci">ParametersPanel(QWidget *parent_)</div><div class="ttdef"><b>Definition:</b> <a href="_parameters_panel_8cc_source.html#l00006">ParametersPanel.cc:6</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_a4a9ae04dd6e0a6cf9c30b5556a13e51f"><div class="ttname"><a href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a></div><div class="ttdeci">bool value</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l06375">pugixml.cpp:6375</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fbe65ea4c0cd45d366f37c2b9690ec6b.html">ConfigCalculator</a></li><li class="navelem"><a class="el" href="dir_08e0a08a75cba5986472921d6ea2d156.html">GUI</a></li><li class="navelem"><a class="el" href="_parameters_panel_8cc.html">ParametersPanel.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:39 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

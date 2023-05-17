@@ -472,7 +472,7 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8cc_source.html
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
 <div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_dummy.html#ab67b23508454c78efb8816799d78a908">  385</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmtca4u_1_1_motor_controler_dummy.html#ab67b23508454c78efb8816799d78a908">MotorControlerDummy::moveTowardsTarget</a>(</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <span class="keywordtype">float</span> fraction, <span class="keywordtype">bool</span> <a class="code" href="pugixml_8cpp.html#a825b750f12f58b0f3d2f9fbf1cbc9618">block</a>, <span class="keywordtype">bool</span> bothEndSwitchesAlwaysOn, <span class="keywordtype">bool</span> zeroPositions) {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <span class="keywordtype">float</span> fraction, <span class="keywordtype">bool</span> block, <span class="keywordtype">bool</span> bothEndSwitchesAlwaysOn, <span class="keywordtype">bool</span> zeroPositions) {</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <a class="code" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_motorControllerDummyMutex);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">if</span>(zeroPositions) {</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      _absolutePosition = 0;</div>
@@ -484,7 +484,7 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8cc_source.html
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    _bothEndSwitchesAlwaysOn = bothEndSwitchesAlwaysOn;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    _blockMotor = <a class="code" href="pugixml_8cpp.html#a825b750f12f58b0f3d2f9fbf1cbc9618">block</a>;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    _blockMotor = block;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">if</span>(_blockMotor) {</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    }</div>
@@ -616,7 +616,6 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8cc_source.html
 <div class="ttc" id="aclassmtca4u_1_1_motor_reference_switch_data_html_ad611ea1f571def3e58eba6e94698600c"><div class="ttname"><a href="classmtca4u_1_1_motor_reference_switch_data.html#ad611ea1f571def3e58eba6e94698600c">mtca4u::MotorReferenceSwitchData::setPositiveSwitchActive</a></div><div class="ttdeci">void setPositiveSwitchActive(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_reference_switch_data_8h_source.html#l00038">MotorReferenceSwitchData.h:38</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_reference_switch_data_html_afce76c3c701b1aa4e469d46810b11153"><div class="ttname"><a href="classmtca4u_1_1_motor_reference_switch_data.html#afce76c3c701b1aa4e469d46810b11153">mtca4u::MotorReferenceSwitchData::setNegativeSwitchActive</a></div><div class="ttdeci">void setNegativeSwitchActive(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_reference_switch_data_8h_source.html#l00044">MotorReferenceSwitchData.h:44</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_a825b750f12f58b0f3d2f9fbf1cbc9618"><div class="ttname"><a href="pugixml_8cpp.html#a825b750f12f58b0f3d2f9fbf1cbc9618">block</a></div><div class="ttdeci">xpath_memory_block block</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l09048">pugixml.cpp:9048</a></div></div>
 <div class="ttc" id="astructmtca4u_1_1_motor_controler_1_1_decoder_readout_mode_html_abc3f67d7c8fa9d2115d9711e40c36d24"><div class="ttname"><a href="structmtca4u_1_1_motor_controler_1_1_decoder_readout_mode.html#abc3f67d7c8fa9d2115d9711e40c36d24">mtca4u::MotorControler::DecoderReadoutMode::HEIDENHAIN</a></div><div class="ttdeci">static const unsigned int HEIDENHAIN</div><div class="ttdef"><b>Definition:</b> <a href="_motor_controler_8h_source.html#l00038">MotorControler.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -624,7 +623,7 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8cc_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_controler_dummy_8cc.html">MotorControlerDummy.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:39 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

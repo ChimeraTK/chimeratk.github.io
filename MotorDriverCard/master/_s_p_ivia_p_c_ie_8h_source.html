@@ -100,16 +100,16 @@ $(document).ready(function(){initNavTree('_s_p_ivia_p_c_ie_8h_source.html',''); 
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">   15</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">const</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a> = 40; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">SPIviaPCIe</a>(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; moduleName,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; writeRegisterName,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; syncRegisterName,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string <span class="keyword">const</span>&amp; moduleName,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::string <span class="keyword">const</span>&amp; writeRegisterName,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::string <span class="keyword">const</span>&amp; syncRegisterName,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spiWaitingTime = <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">SPIviaPCIe</a>(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; moduleName,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; writeRegisterName,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; syncRegisterName,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; readbackRegisterName,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string <span class="keyword">const</span>&amp; moduleName,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string <span class="keyword">const</span>&amp; writeRegisterName,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string <span class="keyword">const</span>&amp; syncRegisterName,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string <span class="keyword">const</span>&amp; readbackRegisterName,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spiWaitingTime = <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    uint32_t <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1">read</a>(int32_t spiCommand); </div>
@@ -129,10 +129,10 @@ $(document).ready(function(){initNavTree('_s_p_ivia_p_c_ie_8h_source.html',''); 
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> sleepMicroSeconds(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> microSeconds);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _spiWaitingTime;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// store module name for debug purposes</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> _moduleName;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::string _moduleName;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// store these two register names for debug output (exception messages)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> _writeRegisterName;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> _syncRegisterName;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string _writeRegisterName;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string _syncRegisterName;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">mutable</span> boost::recursive_mutex _spiMutex;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  };</div>
@@ -148,14 +148,13 @@ $(document).ready(function(){initNavTree('_s_p_ivia_p_c_ie_8h_source.html',''); 
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html_a8dd651d92edcc34ed91cfe5add7b4c28"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a8dd651d92edcc34ed91cfe5add7b4c28">mtca4u::SPIviaPCIe::setSpiWaitingTime</a></div><div class="ttdeci">void setSpiWaitingTime(unsigned int microSeconds)</div><div class="ttdoc">The FPGA needs some time to perform the SPI communication to the connected chip.</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8cc_source.html#l00126">SPIviaPCIe.cc:126</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html_ac3650dc91c467c7c5d954951cbe95c23"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">mtca4u::SPIviaPCIe::SPIviaPCIe</a></div><div class="ttdeci">SPIviaPCIe(boost::shared_ptr&lt; ChimeraTK::Device &gt; const &amp;device, std::string const &amp;moduleName, std::string const &amp;writeRegisterName, std::string const &amp;syncRegisterName, unsigned int spiWaitingTime=SPI_DEFAULT_WAITING_TIME)</div><div class="ttdoc">Constructor for write-only implementations.</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8cc_source.html#l00014">SPIviaPCIe.cc:14</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_afc1e89bdcbaba0f1e323dc5f755439c.html">include</a></li><li class="navelem"><a class="el" href="dir_f3da13494b49b0d2d492d3b81c0764f9.html">impl</a></li><li class="navelem"><a class="el" href="_s_p_ivia_p_c_ie_8h.html">SPIviaPCIe.h</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:39 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

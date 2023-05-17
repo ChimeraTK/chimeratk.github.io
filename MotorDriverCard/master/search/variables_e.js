@@ -1,14 +1,20 @@
 var searchData=
 [
-  ['n_5833',['n',['../pugixml_8cpp.html#acd4e9ba474c2838c8bc6846a344e3af7',1,'pugixml.cpp']]],
-  ['n_5fmotors_5fmax_5834',['N_MOTORS_MAX',['../namespacemtca4u_1_1dfmc__md22.html#a733d397149386097fe3f5b4c7e3fcb59',1,'mtca4u::dfmc_md22']]],
-  ['name_5835',['name',['../structpugi_1_1xml__attribute__struct.html#aa886c4aae23a132e1704717721ee2c19',1,'pugi::xml_attribute_struct::name()'],['../structpugi_1_1xml__node__struct.html#ae2324fdbd1e307fb12007d1d0f957a0b',1,'pugi::xml_node_struct::name()'],['../pugixml_8cpp.html#a580907f8f1f703d75bf9da75b94803ae',1,'name():&#160;pugixml.cpp']]],
-  ['next_5836',['next',['../pugixml_8cpp.html#a7a0cd1681f247d15933163ebd5134da0',1,'pugixml.cpp']]],
-  ['next_5fattribute_5837',['next_attribute',['../structpugi_1_1xml__attribute__struct.html#a9860c0eb7fa72dc9b69ee9b0575f9efc',1,'pugi::xml_attribute_struct']]],
-  ['next_5fsibling_5838',['next_sibling',['../structpugi_1_1xml__node__struct.html#acf0867e3a77871e37132046d97398a6d',1,'pugi::xml_node_struct']]],
-  ['no_5flogging_5839',['NO_LOGGING',['../class_chimera_t_k_1_1_logger.html#a56785292075ebc05f324324578d4e573',1,'ChimeraTK::Logger']]],
-  ['node_5ftypes_5840',['node_types',['../traverse__walker_8cpp.html#a2cb01d5d842f4dfc94484103c8638d9e',1,'traverse_walker.cpp']]],
-  ['nodetest_5841',['nodetest',['../pugixml_8cpp.html#ae48f6c2ba41b9b2664679f333f822501',1,'pugixml.cpp']]],
-  ['nstepsperturn_5842',['nStepsPerTurn',['../class_parameters_calculator_1_1_physical_parameters.html#af006ce6c4a81b1fe719b0883cb5ea203',1,'ParametersCalculator::PhysicalParameters']]],
-  ['number_5843',['number',['../pugixml_8cpp.html#a01b4671c6b7cc8f831c951c000a37735',1,'pugixml.cpp']]]
+  ['parametersmap_2683',['parametersMap',['../class_parameters_panel.html#a244cb087b0d334e95734fbfad5a4ca99',1,'ParametersPanel']]],
+  ['parameterspinbox_2684',['parameterSpinBox',['../class_parameter_widget.html#a48002d1190248600b4899fd04391ca66',1,'ParameterWidget']]],
+  ['pdiv_2685',['pDiv',['../struct_parameters_calculator_1_1_chip_parameters.html#a85dc02cf144834d8c12a89a55618f28d',1,'ParametersCalculator::ChipParameters']]],
+  ['pmul_2686',['pMul',['../struct_parameters_calculator_1_1_chip_parameters.html#af4e50a3476335133f125b67b1a2dcbed',1,'ParametersCalculator::ChipParameters']]],
+  ['positioncompareinterruptdata_2687',['positionCompareInterruptData',['../structmtca4u_1_1_motor_driver_card_config.html#a89b39831ac4fd4264e5afdb449957cab',1,'mtca4u::MotorDriverCardConfig']]],
+  ['positioncompareword_2688',['positionCompareWord',['../structmtca4u_1_1_motor_driver_card_config.html#ad20f0d895fe0be3d536778d9035cdaff',1,'mtca4u::MotorDriverCardConfig']]],
+  ['positiontolerance_2689',['positionTolerance',['../structmtca4u_1_1_motor_controler_config.html#a737a74b967256e82a5b85bb65a7d10d0',1,'mtca4u::MotorControlerConfig']]],
+  ['project_5fid_2690',['PROJECT_ID',['../namespacemtca4u_1_1dfmc__md22.html#a25fba1334c500c0d4b976d60baf887f5',1,'mtca4u::dfmc_md22']]],
+  ['project_5fid_5faddress_5fstring_2691',['PROJECT_ID_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#a3452aa573671762aff53f821904aab89',1,'mtca4u::dfmc_md22']]],
+  ['project_5fmagic_5faddress_5fstring_2692',['PROJECT_MAGIC_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#aa348f0593b7687b20cf0209ba5170d15',1,'mtca4u::dfmc_md22']]],
+  ['project_5fmagic_5fnumber_2693',['PROJECT_MAGIC_NUMBER',['../namespacemtca4u_1_1dfmc__md22.html#ae53da8e60a7653165d4660bf85588f9c',1,'mtca4u::dfmc_md22']]],
+  ['project_5fnext_5faddress_5fstring_2694',['PROJECT_NEXT_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#a765e0f1a7f783fe837c429e8376aac92',1,'mtca4u::dfmc_md22']]],
+  ['project_5freset_5faddress_5fstring_2695',['PROJECT_RESET_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#aac9f15b424a4aa6b0b3f85f8bea926cc',1,'mtca4u::dfmc_md22']]],
+  ['project_5fversion_5faddress_5fstring_2696',['PROJECT_VERSION_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#a06eaf72becf3309d9789a5550745c80e',1,'mtca4u::dfmc_md22']]],
+  ['proportionality_5ffactors_5fdefault_2697',['PROPORTIONALITY_FACTORS_DEFAULT',['../namespacemtca4u.html#ac37ddb110f26455ffb5ff6d3c9d85ae8',1,'mtca4u']]],
+  ['proportionalityfactordata_2698',['proportionalityFactorData',['../structmtca4u_1_1_motor_controler_config.html#aca7e42668250b397a4954d67d9da1270',1,'mtca4u::MotorControlerConfig']]],
+  ['pulsediv_2699',['pulseDiv',['../struct_parameters_calculator_1_1_chip_parameters.html#a553151d952040d3013297a3fb2467844',1,'ParametersCalculator::ChipParameters']]]
 ];

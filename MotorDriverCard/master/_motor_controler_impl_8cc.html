@@ -164,11 +164,10 @@ Typedefs</h2></td></tr>
 <div class="line">    lock_guard guard(_mutex);                                                                                          \</div>
 <div class="line">    return _controlerSPI-&gt;read(_id, IDX).getDATA();                                                                    \</div>
 <div class="line">  }                                                                                                                    \</div>
-<div class="line">  void MotorControlerImpl::set##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>) {                                                             \</div>
+<div class="line">  void MotorControlerImpl::set##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value) {                                                             \</div>
 <div class="line">    lock_guard guard(_mutex);                                                                                          \</div>
-<div class="line">    _controlerSPI-&gt;write(_id, IDX, <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>);                                                                             \</div>
+<div class="line">    _controlerSPI-&gt;write(_id, IDX, value);                                                                             \</div>
 <div class="line">  }</div>
-<div class="ttc" id="apugixml_8cpp_html_a4a9ae04dd6e0a6cf9c30b5556a13e51f"><div class="ttname"><a href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a></div><div class="ttdeci">bool value</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l06375">pugixml.cpp:6375</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00023">23</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
@@ -276,9 +275,9 @@ Typedefs</h2></td></tr>
 <div class="line">    int readValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(_controlerSPI-&gt;read(_id, IDX).getDATA());                                         \</div>
 <div class="line">    return CONVERTER.customToThirtyTwo(readValue);                                                                     \</div>
 <div class="line">  }                                                                                                                    \</div>
-<div class="line">  void MotorControlerImpl::set##NAME(<span class="keywordtype">int</span> <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>) {                                                                      \</div>
+<div class="line">  void MotorControlerImpl::set##NAME(<span class="keywordtype">int</span> value) {                                                                      \</div>
 <div class="line">    lock_guard guard(_mutex);                                                                                          \</div>
-<div class="line">    unsigned <span class="keywordtype">int</span> writeValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(CONVERTER.thirtyTwoToCustom(<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>));                           \</div>
+<div class="line">    unsigned <span class="keywordtype">int</span> writeValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(CONVERTER.thirtyTwoToCustom(value));                           \</div>
 <div class="line">    _controlerSPI-&gt;write(_id, IDX, writeValue);                                                                        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
@@ -358,7 +357,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_controler_impl_8cc.html">MotorControlerImpl.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

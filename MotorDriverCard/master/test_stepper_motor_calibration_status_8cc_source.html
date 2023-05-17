@@ -152,48 +152,48 @@ $(document).ready(function(){initNavTree('test_stepper_motor_calibration_status_
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  testStream &lt;&lt; statusUNKNOWN;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Calibration status UNKNOWN (1)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> statusCALIBRATED(<a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#a2955d50f81fcc2001bbb8190c817358b">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATED</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  testStream &lt;&lt; statusCALIBRATED;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Motor is CALIBRATED (2)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> statusNOT_CALIBTRATED(</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#abe12718a0e1d42be44244432dfe1c1f7">mtca4u::StepperMotorCalibrationStatusType::M_NOT_CALIBRATED</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  testStream &lt;&lt; statusNOT_CALIBTRATED;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Motor is NOT CALIBRATED (4)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> statusCALIBRATION_FAILED(</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#af4a692c0088d6362775078dfc623e99f">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATION_FAILED</a>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  testStream &lt;&lt; statusCALIBRATION_FAILED;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Motor calibration FAILED (8)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> statusCALIBRATION_IN_PROGRESS(</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#a6deae6b069cb8f9fca02ae6bcb437ad5">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATION_IN_PROGRESS</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  testStream &lt;&lt; statusCALIBRATION_IN_PROGRESS;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Motor calibration is IN PROGRESS (16)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> statusCALIBRATION_STOPPED_BY_USER(</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#a993233d56357af04744f0244d7ba943f">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATION_STOPPED_BY_USER</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  testStream &lt;&lt; statusCALIBRATION_STOPPED_BY_USER;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Motor calibration STOPPED BY USER (32)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> statusCALIBRATION_NOT_AVAILABLE(</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#a4dd44867bf07e027b6a1ca83f0ef6782">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATION_NOT_AVAILABLE</a>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  testStream &lt;&lt; statusCALIBRATION_NOT_AVAILABLE;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  BOOST_CHECK(testStream.str().compare(<span class="stringliteral">&quot;Motor calibration NOT AVAILABLE (64)&quot;</span>) == 0);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  testStream.str(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>());</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  testStream.str(std::string());</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  testStream.clear();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a> errorRandom(123456);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  testStream &lt;&lt; errorRandom;</div>
@@ -211,7 +211,6 @@ $(document).ready(function(){initNavTree('test_stepper_motor_calibration_status_
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_calibration_status_type_html_a993233d56357af04744f0244d7ba943f"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#a993233d56357af04744f0244d7ba943f">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATION_STOPPED_BY_USER</a></div><div class="ttdeci">static const StepperMotorCalibrationStatus M_CALIBRATION_STOPPED_BY_USER</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_calibration_status_8h_source.html#l00024">StepperMotorCalibrationStatus.h:24</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_calibration_status_type_html_abe12718a0e1d42be44244432dfe1c1f7"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#abe12718a0e1d42be44244432dfe1c1f7">mtca4u::StepperMotorCalibrationStatusType::M_NOT_CALIBRATED</a></div><div class="ttdeci">static const StepperMotorCalibrationStatus M_NOT_CALIBRATED</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_calibration_status_8h_source.html#l00020">StepperMotorCalibrationStatus.h:20</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_calibration_status_type_html_af4a692c0088d6362775078dfc623e99f"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_calibration_status_type.html#af4a692c0088d6362775078dfc623e99f">mtca4u::StepperMotorCalibrationStatusType::M_CALIBRATION_FAILED</a></div><div class="ttdeci">static const StepperMotorCalibrationStatus M_CALIBRATION_FAILED</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_calibration_status_8h_source.html#l00022">StepperMotorCalibrationStatus.h:22</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="atest_stepper_motor_calibration_status_8cc_html_a1e0df64d112c3782fff705a33fbc2792"><div class="ttname"><a href="test_stepper_motor_calibration_status_8cc.html#a1e0df64d112c3782fff705a33fbc2792">checkOperatorForDefaultConstructedObject</a></div><div class="ttdeci">bool checkOperatorForDefaultConstructedObject(mtca4u::StepperMotorCalibrationStatus &amp;error)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_calibration_status_8cc_source.html#l00008">testStepperMotorCalibrationStatus.cc:8</a></div></div>
 <div class="ttc" id="atest_stepper_motor_calibration_status_8cc_html_aa6b77ae297ffa18d690e8ec67ce8bd04"><div class="ttname"><a href="test_stepper_motor_calibration_status_8cc.html#aa6b77ae297ffa18d690e8ec67ce8bd04">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(StepperMotorCalibrationStastusTestCase)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_calibration_status_8cc_source.html#l00022">testStepperMotorCalibrationStatus.cc:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -220,7 +219,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_calibration_status_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_stepper_motor_calibration_status_8cc.html">testStepperMotorCalibrationStatus.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

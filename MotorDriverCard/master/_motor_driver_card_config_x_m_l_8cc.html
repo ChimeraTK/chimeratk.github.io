@@ -84,15 +84,22 @@ $(document).ready(function(){initNavTree('_motor_driver_card_config_x_m_l_8cc.ht
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">MotorDriverCardConfigXML.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_motor_driver_card_config_x_m_l_8h_source.html">MotorDriverCardConfigXML.h</a>&quot;</code><br />
+<code>#include &quot;ChimeraTK/Exception.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_exception_8h_source.html">MotorDriverException.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="pugixml_8hpp_source.html">pugixml.hpp</a>&gt;</code><br />
+<code>#include &lt;charconv&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;libxml/parser.h&gt;</code><br />
+<code>#include &lt;libxml++/libxml++.h&gt;</code><br />
+<code>#include &quot;schema.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for MotorDriverCardConfigXML.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,8 +111,15 @@ $(document).ready(function(){initNavTree('_motor_driver_card_config_x_m_l_8cc.ht
 </div>
 <p><a href="_motor_driver_card_config_x_m_l_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1_node_filler.html">detail::NodeFiller</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacedetail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemtca4u"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html">mtca4u</a></td></tr>
 <tr class="memdesc:namespacemtca4u"><td class="mdescLeft">&#160;</td><td class="mdescRight">File: StepperMotor.h Author: tkozak. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +134,14 @@ Macros</h2></td></tr>
 <tr class="separator:a0f4e21c4a17553934a5943e470b92be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c780a6fb1a5d98eee33693c9afe8b58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_driver_card_config_x_m_l_8cc.html#a1c780a6fb1a5d98eee33693c9afe8b58">CONTROLER_CONFIG_ADD_REGISTER</a>(VALUE)&#160;&#160;&#160;  controlerConfigFiller.addParameter(#VALUE, motorControlerConfig.VALUE, defaultControlerConfig.VALUE)</td></tr>
 <tr class="separator:a1c780a6fb1a5d98eee33693c9afe8b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:adb7b59afe39d3bfca787b59549fcb218"><td class="memItemLeft" align="right" valign="top">MotorControlerConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#adb7b59afe39d3bfca787b59549fcb218">mtca4u::controllerConfigFromXml</a> (const xmlpp::Node *rootNode, const std::string &amp;controllerId)</td></tr>
+<tr class="separator:adb7b59afe39d3bfca787b59549fcb218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af583623586646ff0e0b50ca6e27bff4b"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:af583623586646ff0e0b50ca6e27bff4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#af583623586646ff0e0b50ca6e27bff4b">mtca4u::getFromXml</a> (const std::string &amp;parameterName, std::string &amp;value, const xmlpp::Node *parent, const std::string &amp;tagName)</td></tr>
+<tr class="separator:af583623586646ff0e0b50ca6e27bff4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9367062f4d773642e1592a2df32d831c"></a>
@@ -138,7 +160,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00009">9</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00208">208</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
 
 </div>
 </div>
@@ -158,7 +180,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00006">6</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00205">205</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
 
 </div>
 </div>
@@ -178,7 +200,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00015">15</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00214">214</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
 
 </div>
 </div>
@@ -198,7 +220,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00012">12</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html#l00211">211</a> of file <a class="el" href="_motor_driver_card_config_x_m_l_8cc_source.html">MotorDriverCardConfigXML.cc</a>.</p>
 
 </div>
 </div>
@@ -208,7 +230,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_driver_card_config_x_m_l_8cc.html">MotorDriverCardConfigXML.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

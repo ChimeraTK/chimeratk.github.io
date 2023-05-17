@@ -109,9 +109,9 @@ $(document).ready(function(){initNavTree('_motor_driver_card_factory_8cc_source.
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> motorDriverCardFactory;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">   23</a></span>&#160;  boost::shared_ptr&lt;MotorDriverCard&gt; MotorDriverCardFactory::createMotorDriverCard(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> alias,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> mapModuleName,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> motorConfigFileName) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">   23</a></span>&#160;  boost::shared_ptr&lt;MotorDriverCard&gt; MotorDriverCardFactory::createMotorDriverCard(std::string alias,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      std::string mapModuleName,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      std::string motorConfigFileName) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    boost::lock_guard&lt;boost::mutex&gt; guard(_factoryMutex);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
@@ -146,11 +146,11 @@ $(document).ready(function(){initNavTree('_motor_driver_card_factory_8cc_source.
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">   58</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardFactory::setDummyMode(<span class="keywordtype">bool</span> dummyMode) { _dummyMode = dummyMode; }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a42f89b228b22a9b857c88e1460c8c74a">   60</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardFactory::setDeviceaccessDMapFilePath(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> dmapFileName) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a42f89b228b22a9b857c88e1460c8c74a">   60</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardFactory::setDeviceaccessDMapFilePath(std::string dmapFileName) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    ChimeraTK::BackendFactory::getInstance().setDMapFilePath(dmapFileName);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">   64</a></span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> MotorDriverCardFactory::getDeviceaccessDMapFilePath() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">   64</a></span>&#160;  std::string MotorDriverCardFactory::getDeviceaccessDMapFilePath() {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> ChimeraTK::BackendFactory::getInstance().getDMapFilePath();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
@@ -163,7 +163,6 @@ $(document).ready(function(){initNavTree('_motor_driver_card_factory_8cc_source.
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html">mtca4u::MotorDriverCardFactory</a></div><div class="ttdoc">The MotorDriverCardFactory is used to create instances of the MotorDriverCard class.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8h_source.html#l00026">MotorDriverCardFactory.h:26</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_impl_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_impl.html">mtca4u::MotorDriverCardImpl</a></div><div class="ttdoc">The implementation of the DFMC-MD22 motor driver card.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_impl_8h_source.html#l00020">MotorDriverCardImpl.h:20</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="astructmtca4u_1_1_motor_driver_card_config_html"><div class="ttname"><a href="structmtca4u_1_1_motor_driver_card_config.html">mtca4u::MotorDriverCardConfig</a></div><div class="ttdoc">This configuration contains start values for all data words that can be written to the MotorDriverImp...</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_config_8h_source.html#l00015">MotorDriverCardConfig.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -171,7 +170,7 @@ $(document).ready(function(){initNavTree('_motor_driver_card_factory_8cc_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_driver_card_factory_8cc.html">MotorDriverCardFactory.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:39 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

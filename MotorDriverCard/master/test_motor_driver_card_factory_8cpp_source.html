@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_factory_8cpp_so
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// corresponding register.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// boost::shared_ptr &lt; Device&lt;BaseDevice&gt; &gt;   mappedMtcadummy =</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// DeviceFactory::getInstance().createDevice(DUMMY_DEV_ALIAS);</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> testFilePath = TEST_DMAP_FILE_PATH;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::string testFilePath = TEST_DMAP_FILE_PATH;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ChimeraTK::BackendFactory::getInstance().setDMapFilePath(testFilePath);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  boost::shared_ptr&lt;mtca4u::MotorDriverCard&gt; motorDriverCard_PCIe1 =</div>
@@ -194,7 +194,6 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_factory_8cpp_so
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_aad51e92b6cd2b366fcd5f7cd0e8a6afb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">mtca4u::MotorDriverCardFactory::instance</a></div><div class="ttdeci">static MotorDriverCardFactory &amp; instance()</div><div class="ttdoc">Access the single instance of the factory.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00018">MotorDriverCardFactory.cc:18</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_ab0ed2b63a7ac8ae08c02bb9d0ac80048"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">mtca4u::MotorDriverCardFactory::getDeviceaccessDMapFilePath</a></div><div class="ttdeci">static std::string getDeviceaccessDMapFilePath()</div><div class="ttdoc">Get the dmap file name that is currently set for mtca4u::deviceaccess.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00064">MotorDriverCardFactory.cc:64</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_ada87532a82ec391a5925e41068eeefb5"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">mtca4u::MotorDriverCardFactory::setDummyMode</a></div><div class="ttdeci">void setDummyMode(bool dummyMode=true)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00058">MotorDriverCardFactory.cc:58</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html"><div class="ttname"><a href="test_config_constants_8h.html">testConfigConstants.h</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html_a373528e713a07fbbf6b7beceefb76ae1"><div class="ttname"><a href="test_config_constants_8h.html#a373528e713a07fbbf6b7beceefb76ae1">DFMC_ALIAS</a></div><div class="ttdeci">const std::string DFMC_ALIAS(&quot;DFMC_MD22&quot;)</div></div>
 <div class="ttc" id="atest_config_constants_8h_html_a5e18326b157fe58ad157027b5e01595d"><div class="ttname"><a href="test_config_constants_8h.html#a5e18326b157fe58ad157027b5e01595d">DFMC_ALIAS2</a></div><div class="ttdeci">const std::string DFMC_ALIAS2(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;)</div></div>
@@ -207,7 +206,7 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_factory_8cpp_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_motor_driver_card_factory_8cpp.html">testMotorDriverCardFactory.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:40 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

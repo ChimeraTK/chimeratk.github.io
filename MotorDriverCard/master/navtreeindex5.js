@@ -1,9 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classmtca4u_1_1_motor_controler_expert.html#ab7308f8c67f13d70225a03de21d8d0e5":[7,0,2,21,6],
-"classmtca4u_1_1_motor_controler_expert.html#ab8b6566b1583d26531c401139d84efb9":[7,0,2,21,21],
-"classmtca4u_1_1_motor_controler_expert.html#ac1b086559d62ffe9a77e94ac9ab0325c":[7,0,2,21,4],
-"classmtca4u_1_1_motor_controler_expert.html#acce4183b26dc4537469fcd81c16defd5":[7,0,2,21,13],
 "classmtca4u_1_1_motor_controler_expert.html#acf3d297fcc206f166612f0c05708baa9":[7,0,2,21,19],
 "classmtca4u_1_1_motor_controler_expert.html#ad191c761fa8b9c739a659efa8d401844":[7,0,2,21,3],
 "classmtca4u_1_1_motor_controler_expert.html#add776cbe19f405bcf03e12083d3b89d1":[7,0,2,21,9],
@@ -249,5 +245,9 @@ var NAVTREEINDEX5 =
 "classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7c93d4aec12f163ee3c572148f522c14":[7,0,2,36,0,1],
 "classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7dcb9f1c8a0e0e18a1438d8ba88c16db":[7,0,2,36,0,5],
 "classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda863157feaf21e56ca66846aac1d0ce24":[7,0,2,36,0,2],
-"classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efdaee8f4030b140f770fa389dfc03093cd2":[7,0,2,36,0,4]
+"classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efdaee8f4030b140f770fa389dfc03093cd2":[7,0,2,36,0,4],
+"classmtca4u_1_1_motor_reference_switch_data.html":[7,0,2,37],
+"classmtca4u_1_1_motor_reference_switch_data.html#a0272b59ae78ab0bd85d617b23ae055cc":[7,0,2,37,11],
+"classmtca4u_1_1_motor_reference_switch_data.html#a217d7e4ca3cf225bd87c9fe9465138b4":[7,0,2,37,6],
+"classmtca4u_1_1_motor_reference_switch_data.html#a2955a2d96552215b150e2c9450f36489":[7,0,2,37,1]
 };

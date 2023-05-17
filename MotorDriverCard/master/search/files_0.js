@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['allocator_2ecpp_3995',['allocator.cpp',['../allocator_8cpp.html',1,'']]],
-  ['allocator_2ehpp_3996',['allocator.hpp',['../allocator_8hpp.html',1,'']]]
+  ['basicsteppermotor_2ecc_1513',['BasicStepperMotor.cc',['../_basic_stepper_motor_8cc.html',1,'']]],
+  ['basicsteppermotor_2ecpp_1514',['basicStepperMotor.cpp',['../basic_stepper_motor_8cpp.html',1,'']]],
+  ['basicsteppermotor_2eh_1515',['BasicStepperMotor.h',['../_basic_stepper_motor_8h.html',1,'']]]
 ];

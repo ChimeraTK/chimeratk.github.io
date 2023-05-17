@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0cf652e6980177759cb2ae847ee6e199">   19</a></span>&#160;  <a class="code" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0cf652e6980177759cb2ae847ee6e199">DFMC_MD22Dummy::DFMC_MD22Dummy</a>(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; mapFileName, <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; tmc429ControllerModuleName)</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0cf652e6980177759cb2ae847ee6e199">   19</a></span>&#160;  <a class="code" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0cf652e6980177759cb2ae847ee6e199">DFMC_MD22Dummy::DFMC_MD22Dummy</a>(std::string <span class="keyword">const</span>&amp; mapFileName, std::string <span class="keyword">const</span>&amp; tmc429ControllerModuleName)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  : DummyBackend(mapFileName), _controlerSpiAddressSpace(tmc429::<a class="code" href="namespacemtca4u_1_1tmc260.html#a03e796d17e0a2c4c7809943128d70ec6">SIZE_OF_SPI_ADDRESS_SPACE</a>, 0),</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _controlerSpiWriteAddress(0), _controlerSpiBar(0), _controlerSpiReadbackAddress(0), _controlerSpiSyncAddress(0),</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    _powerIsUp(true), _driverSPIs(0), _causeSpiTimeouts(false), _nSpiTimeoutsLeft(0), _causeSpiErrors(false),</div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    setConstantPCIeRegister(<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a06eaf72becf3309d9789a5550745c80e">PROJECT_VERSION_ADDRESS_STRING</a>, <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a> | 0xFFFF);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> DFMC_MD22Dummy::setConstantPCIeRegister(<a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> registerName, int32_t content) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> DFMC_MD22Dummy::setConstantPCIeRegister(std::string registerName, int32_t content) {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">auto</span> addressRange = AddressRange(_registerMap.getBackendRegister(_moduleName / registerName));</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">size_t</span> addressIndex = addressRange.offset / <span class="keyword">sizeof</span>(uint32_t);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    _barContents[addressRange.bar][addressIndex] = content;</div>
@@ -260,10 +260,10 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span>(checkSpiTimeoutsCounter()) {</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    int32_t <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a> = <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#abf4d7b5e9b8ef8cc59f1217ae4cee011">SPI_SYNC_ERROR</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    int32_t value = <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#abf4d7b5e9b8ef8cc59f1217ae4cee011">SPI_SYNC_ERROR</a>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// debug functionality: cause errors</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span>(_causeSpiErrors) {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      write(_controlerSpiBar, _controlerSpiSyncAddress, &amp;<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>, 4);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      write(_controlerSpiBar, _controlerSpiSyncAddress, &amp;value, 4);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    read(_controlerSpiBar, _controlerSpiSyncAddress, &amp;controlerSpiSyncWord, 4);</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span>(controlerSpiSyncWord != <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a41c3584b3c2981e1fbda848eaebf5351">SPI_SYNC_REQUESTED</a>) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      write(_controlerSpiBar, _controlerSpiSyncAddress, &amp;<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>, 4);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      write(_controlerSpiBar, _controlerSpiSyncAddress, &amp;value, 4);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
@@ -294,9 +294,9 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    triggerActionsOnControlerSpiWrite(inputWord);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a> = <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1">SPI_SYNC_OK</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    value = <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1">SPI_SYNC_OK</a>;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// SPI action done, write sync ok to finish the handshake</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    write(_controlerSpiBar, _controlerSpiSyncAddress, &amp;<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>, 4);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    write(_controlerSpiBar, _controlerSpiSyncAddress, &amp;value, 4);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">void</span> DFMC_MD22Dummy::handleDriverSpiWrite(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ID) {</div>
@@ -440,9 +440,9 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  }</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">void</span> DFMC_MD22Dummy::writeControlerSpiRegisterToFpga(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ID, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> IDX, <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> suffix) {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">void</span> DFMC_MD22Dummy::writeControlerSpiRegisterToFpga(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ID, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> IDX, std::string suffix) {</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> controlerSpiAddress = <a class="code" href="namespacemtca4u_1_1tmc429.html#a9c43a1d40bd21aff10a7d6ffd17f6ef5">spiAddressFromSmdaIdxJdx</a>(ID, IDX);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> registerName = <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a69286972619a5da45a6e755bbb376d35">createMotorRegisterName</a>(ID, suffix);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    std::string registerName = <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a69286972619a5da45a6e755bbb376d35">createMotorRegisterName</a>(ID, suffix);</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">auto</span> registerInformation = _registerMap.getBackendRegister(_moduleName / registerName);</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    writeRegisterWithoutCallback(</div>
@@ -486,7 +486,7 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  }</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
 <div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a62968a836d71dcc61a88bcda611f1e50">  399</a></span>&#160;  boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt; <a class="code" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a62968a836d71dcc61a88bcda611f1e50">DFMC_MD22Dummy::createInstance</a>(</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> address, std::map&lt;std::string, std::string&gt; parameters) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      std::string address, std::map&lt;std::string, std::string&gt; parameters) {</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;DFMC_MD22Dummy createInstance&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -574,15 +574,13 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_afb918df0b670a8b2258a26ae09e43715"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#afb918df0b670a8b2258a26ae09e43715">mtca4u::tmc429::JDX_POWER_DOWN</a></div><div class="ttdeci">uint32_t const JDX_POWER_DOWN</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00017">TMC429Constants.h:17</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html_a7a75d7fd1a515faff70b27157b6d72c8"><div class="ttname"><a href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">mtca4u::globalDFMC_MD22DummyRegisterer</a></div><div class="ttdeci">DFMC_MD22DummyRegisterer globalDFMC_MD22DummyRegisterer</div><div class="ttdef"><b>Definition:</b> <a href="_d_f_m_c___m_d22_dummy_8cc_source.html#l00412">DFMC_MD22Dummy.cc:412</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_a4a9ae04dd6e0a6cf9c30b5556a13e51f"><div class="ttname"><a href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a></div><div class="ttdeci">bool value</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l06375">pugixml.cpp:6375</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_d_f_m_c___m_d22_dummy_8cc.html">DFMC_MD22Dummy.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:39 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['debug_6119',['DEBUG',['../mtca4u__steppermotor_2src_2_linear_stepper_motor_8cc.html#a3dfa58b1c5c2943dd49d8aa1981d377d',1,'LinearStepperMotor.cc']]],
-  ['declare_5fget_5fset_5ftest_6120',['DECLARE_GET_SET_TEST',['../test_motor_controler_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f',1,'DECLARE_GET_SET_TEST():&#160;testMotorControler.cpp'],['../test_motor_driver_card_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f',1,'DECLARE_GET_SET_TEST():&#160;testMotorDriverCard.cpp']]],
-  ['declare_5fget_5fset_5fthrow_5ftest_6121',['DECLARE_GET_SET_THROW_TEST',['../test_motor_controler_dummy_8cpp.html#a7ec967f6503fd693a69b1e6fd7b35572',1,'testMotorControlerDummy.cpp']]],
-  ['define_5fget_5fset_5fdriver_5fspi_5fdata_6122',['DEFINE_GET_SET_DRIVER_SPI_DATA',['../test_motor_controler_8cpp.html#ae0a0c6214c6000d6537155eabbf79624',1,'testMotorControler.cpp']]],
-  ['define_5fget_5fset_5ftest_6123',['DEFINE_GET_SET_TEST',['../test_motor_controler_8cpp.html#a2e49cd94ee8b8b5790f18a724745a052',1,'testMotorControler.cpp']]],
-  ['define_5fget_5fset_5fvalue_6124',['DEFINE_GET_SET_VALUE',['../_motor_controler_impl_8cc.html#aae24b082899dec422a1b40c469035c60',1,'MotorControlerImpl.cc']]],
-  ['define_5fset_5fget_5ftyped_5fcontroler_5fregister_6125',['DEFINE_SET_GET_TYPED_CONTROLER_REGISTER',['../_motor_controler_impl_8cc.html#aaaa41462f4fffd08fa120f941dd562d6',1,'MotorControlerImpl.cc']]],
-  ['define_5fset_5fget_5ftyped_5fdriver_5fdata_6126',['DEFINE_SET_GET_TYPED_DRIVER_DATA',['../_motor_controler_impl_8cc.html#a70bbb209f862401059d09e2e56e4c6c7',1,'MotorControlerImpl.cc']]],
-  ['define_5fsigned_5fget_5fset_5ftest_6127',['DEFINE_SIGNED_GET_SET_TEST',['../test_motor_controler_8cpp.html#a720a6556a92cfd8a9642293c29904bbb',1,'testMotorControler.cpp']]],
-  ['define_5fsigned_5fget_5fset_5fvalue_6128',['DEFINE_SIGNED_GET_SET_VALUE',['../_motor_controler_impl_8cc.html#a8080d31aad41347cc6741a39bf73dca7',1,'MotorControlerImpl.cc']]],
-  ['define_5ftyped_5fget_5fset_5ftest_6129',['DEFINE_TYPED_GET_SET_TEST',['../test_motor_controler_8cpp.html#a74dab6957682aa7b67845ec53e7ed0c3',1,'testMotorControler.cpp']]]
+  ['err_5flogger_2835',['ERR_LOGGER',['../_logger_macros_8h.html#a3ab66a54aac0319f9a673a8380ee0e3b',1,'LoggerMacros.h']]],
+  ['err_5flogger_5fd_2836',['ERR_LOGGER_D',['../_logger_macros_8h.html#ab9e93d15c7fe09bd2a3833e55eb1a1a6',1,'LoggerMacros.h']]],
+  ['err_5flogger_5ffl_2837',['ERR_LOGGER_FL',['../_logger_macros_8h.html#a74011f4a250df1023b3365f00e251f2f',1,'LoggerMacros.h']]],
+  ['err_5flogger_5ffld_2838',['ERR_LOGGER_FLD',['../_logger_macros_8h.html#a0f000b6ad3dc41ebf6195026b28cdf73',1,'LoggerMacros.h']]],
+  ['err_5flogger_5fget_5flog_5flevel_2839',['ERR_LOGGER_GET_LOG_LEVEL',['../_logger_macros_8h.html#a21c81d2daf31c05d17349e31c6e1a676',1,'LoggerMacros.h']]],
+  ['err_5flogger_5flog_5falways_2840',['ERR_LOGGER_LOG_ALWAYS',['../_logger_macros_8h.html#a8caa1450324568ef830c8f0f639dcccc',1,'LoggerMacros.h']]],
+  ['err_5flogger_5flog_5flevel_2841',['ERR_LOGGER_LOG_LEVEL',['../_logger_macros_8h.html#adef6e8c93b61893551927d479efda431',1,'LoggerMacros.h']]],
+  ['err_5flogger_5fset_5flog_5flevel_2842',['ERR_LOGGER_SET_LOG_LEVEL',['../_logger_macros_8h.html#a5c83413999b796490de227e6bd0f01ef',1,'LoggerMacros.h']]],
+  ['exception_5fmessage_2843',['EXCEPTION_MESSAGE',['../_stepper_motor_exception_8h.html#ae7c206834088f485523d7af4535caaef',1,'StepperMotorException.h']]]
 ];

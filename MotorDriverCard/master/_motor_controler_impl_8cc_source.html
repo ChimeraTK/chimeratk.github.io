@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> {</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#af9ff28a665092e8c601cd5d0c2df69c3">   69</a></span>&#160;  <a class="code" href="classmtca4u_1_1_motor_controler_impl.html#af9ff28a665092e8c601cd5d0c2df69c3">MotorControlerImpl::MotorControlerImpl</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ID, boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> <span class="keyword">const</span>&amp; moduleName, boost::shared_ptr&lt;TMC429SPI&gt; <span class="keyword">const</span>&amp; controlerSPI,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      std::string <span class="keyword">const</span>&amp; moduleName, boost::shared_ptr&lt;TMC429SPI&gt; <span class="keyword">const</span>&amp; controlerSPI,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="structmtca4u_1_1_motor_controler_config.html">MotorControlerConfig</a> <span class="keyword">const</span>&amp; motorControlerConfig)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  : _mutex(), _device(device), _id(ID), _controlerConfig(motorControlerConfig),</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    _conversionFactor(calculateConversionFactor(motorControlerConfig)),</div>
@@ -246,10 +246,10 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(readValue);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e">  160</a></span>&#160;  <span class="keywordtype">void</span> MotorControlerImpl::setActualPosition(<span class="keywordtype">int</span> <a class="code" href="pugixml_8cpp.html#a7a04afe5347934be732ec70a70bd0a28">position</a>) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e">  160</a></span>&#160;  <span class="keywordtype">void</span> MotorControlerImpl::setActualPosition(<span class="keywordtype">int</span> position) {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    _controlerSPI-&gt;write(</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        _id, <a class="code" href="namespacemtca4u_1_1tmc429.html#a9fae9ee20c88208accbbb59ef0075357">IDX_ACTUAL_POSITION</a>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(converter24bits.thirtyTwoToCustom(<a class="code" href="pugixml_8cpp.html#a7a04afe5347934be732ec70a70bd0a28">position</a>)));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        _id, <a class="code" href="namespacemtca4u_1_1tmc429.html#a9fae9ee20c88208accbbb59ef0075357">IDX_ACTUAL_POSITION</a>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(converter24bits.thirtyTwoToCustom(position)));</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#ad8e18aa5cec73c4b8fc52e61d153dbf7">  166</a></span>&#160;  <span class="keywordtype">int</span> MotorControlerImpl::getActualVelocity() {</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> converter24bits.customToThirtyTwo(readValue);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#a79d7ae8f048ea642b8f07f10ee34053c">  255</a></span>&#160;  <span class="keywordtype">void</span> MotorControlerImpl::setTargetPosition(<span class="keywordtype">int</span> <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#a79d7ae8f048ea642b8f07f10ee34053c">  255</a></span>&#160;  <span class="keywordtype">void</span> MotorControlerImpl::setTargetPosition(<span class="keywordtype">int</span> value) {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a> interupts;</div>
@@ -351,12 +351,12 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    writeTypedControlerRegister(interupts);</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span>(_moveOnlyFullStep) {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      roundToNextFullStep(<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      roundToNextFullStep(value);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    _localTargetPosition = <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    _localTargetPosition = value;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(converter24bits.thirtyTwoToCustom(<a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>));</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(converter24bits.thirtyTwoToCustom(value));</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    _controlerSPI-&gt;write(_id, <a class="code" href="namespacemtca4u_1_1tmc429.html#ad416ced4e78008d8c1a644fa2a4a737b">IDX_TARGET_POSITION</a>, writeValue);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  }</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
@@ -385,10 +385,10 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(_id, <a class="code" href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">IDX_MAXIMUM_VELOCITY</a>).getDATA();</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#af887f478bd2a0159d236c940918723d9">  299</a></span>&#160;  <span class="keywordtype">void</span> MotorControlerImpl::setMaximumVelocity(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>) {</div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_controler_impl.html#af887f478bd2a0159d236c940918723d9">  299</a></span>&#160;  <span class="keywordtype">void</span> MotorControlerImpl::setMaximumVelocity(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value) {</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    _currentVmax = <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    _controlerSPI-&gt;write(_id, <a class="code" href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">IDX_MAXIMUM_VELOCITY</a>, <a class="code" href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a>);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    _currentVmax = value;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    _controlerSPI-&gt;write(_id, <a class="code" href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">IDX_MAXIMUM_VELOCITY</a>, value);</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  }</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
@@ -768,9 +768,6 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_ae87ad04e0b96939146f4953b8d292cc2"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#ae87ad04e0b96939146f4953b8d292cc2">mtca4u::tmc429::IDX_ACTUAL_VELOCITY</a></div><div class="ttdeci">uint32_t const IDX_ACTUAL_VELOCITY</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00028">TMC429Constants.h:28</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_afabd0dc3b8ab6c17a6306c67f89eb7cc"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#afabd0dc3b8ab6c17a6306c67f89eb7cc">mtca4u::tmc429::IDX_MINIMUM_VELOCITY</a></div><div class="ttdeci">uint32_t const IDX_MINIMUM_VELOCITY</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00025">TMC429Constants.h:25</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_a4a9ae04dd6e0a6cf9c30b5556a13e51f"><div class="ttname"><a href="pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f">value</a></div><div class="ttdeci">bool value</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l06375">pugixml.cpp:6375</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_a7a04afe5347934be732ec70a70bd0a28"><div class="ttname"><a href="pugixml_8cpp.html#a7a04afe5347934be732ec70a70bd0a28">position</a></div><div class="ttdeci">size_t position</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l06633">pugixml.cpp:6633</a></div></div>
-<div class="ttc" id="apugixml_8cpp_html_ae348b0af1595faf8d2376f1bb787b5bb"><div class="ttname"><a href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">string</a></div><div class="ttdeci">const char_t * string</div><div class="ttdef"><b>Definition:</b> <a href="pugixml_8cpp_source.html#l07067">pugixml.cpp:7067</a></div></div>
 <div class="ttc" id="astructmtca4u_1_1_motor_controler_config_html"><div class="ttname"><a href="structmtca4u_1_1_motor_controler_config.html">mtca4u::MotorControlerConfig</a></div><div class="ttdoc">This configuration contains start values for all data words that can be written to the MotorControler...</div><div class="ttdef"><b>Definition:</b> <a href="_motor_controler_config_8h_source.html#l00013">MotorControlerConfig.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -778,7 +775,7 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_controler_impl_8cc.html">MotorControlerImpl.cc</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:55:39 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

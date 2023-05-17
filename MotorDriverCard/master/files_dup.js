@@ -4,7 +4,6 @@ var files_dup =
     [ "ConfigCalculator", "dir_fbe65ea4c0cd45d366f37c2b9690ec6b.html", "dir_fbe65ea4c0cd45d366f37c2b9690ec6b" ],
     [ "doc", "dir_e68e8157741866f444e17edd764ebbae.html", null ],
     [ "examples", "dir_d28a4824dc47e487b107a5db32ef43c4.html", "dir_d28a4824dc47e487b107a5db32ef43c4" ],
-    [ "extern", "dir_dc9e1e299a0b26f222fe6c0a872463f0.html", "dir_dc9e1e299a0b26f222fe6c0a872463f0" ],
     [ "mtca4u_steppermotor", "dir_49b84d1dd899eb9b8ba594da520d312d.html", "dir_49b84d1dd899eb9b8ba594da520d312d" ],
     [ "steppermotor", "dir_c80554c2587133db87f1fb9893ad232b.html", "dir_c80554c2587133db87f1fb9893ad232b" ],
     [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ],
