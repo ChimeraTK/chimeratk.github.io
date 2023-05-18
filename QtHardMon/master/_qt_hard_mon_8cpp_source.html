@@ -1045,186 +1045,188 @@ $(document).ready(function(){initNavTree('_qt_hard_mon_8cpp_source.html',''); in
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160; </div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  <span class="comment">// Check if DUMMY_WRITEABLE accessors are there to simulate interrupts in numeric addressed backends</span></div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  <span class="comment">// Try to cast to NumericAddressed catalogue. This contains information about the available interrupts.</span></div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keyword">auto</span> numericAddressedCatalogue =</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>* numericAddressedCatalogue =</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;      <span class="keyword">dynamic_cast&lt;</span>ChimeraTK::NumericAddressedRegisterCatalogue const*<span class="keyword">&gt;</span>(&amp;registerCatalogue.getImpl());</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  <span class="keywordflow">if</span>(numericAddressedCatalogue) {</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> interruptBlock : numericAddressedCatalogue-&gt;getListOfInterrupts()) {</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> interrupt : interruptBlock.second) {</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;          std::string dummyInterruptName =</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;              <span class="stringliteral">&quot;DUMMY_INTERRUPT_&quot;</span> + std::to_string(interruptBlock.first) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(interrupt);</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;          <span class="keyword">auto</span> registerInfo = registerCatalogue.getRegister(dummyInterruptName);</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;          <span class="comment">// The previous command is throwing if the registern does not exist.</span></div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;          <span class="comment">// For this register there is no parent node. Directly add to the tree widget.</span></div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;          <span class="keyword">new</span> <a class="code" href="class_device_element_q_tree_item.html">DeviceElementQTreeItem</a>(<a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget, dummyInterruptName.c_str(), registerInfo);</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        }</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        <span class="keywordflow">catch</span>(ChimeraTK::logic_error&amp;) {</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;          <span class="comment">// Nothing to do. Seems it&#39;s not a dummy</span></div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        }</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;      }</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    }</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;  }</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160; </div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;expandAll();</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <span class="comment">// extract a unique list (set) of primary interrupts from the complete list of interruptIDs.</span></div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    std::set&lt;uint32_t&gt; primaryInterrupts;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> interruptId : numericAddressedCatalogue-&gt;getListOfInterrupts()) {</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;      primaryInterrupts.insert(interruptId.front());</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    }</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> interrupt : primaryInterrupts) {</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;      <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;        std::string dummyInterruptName = <span class="stringliteral">&quot;DUMMY_INTERRUPT_&quot;</span> + std::to_string(interrupt);</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;        <span class="keyword">auto</span> registerInfo = registerCatalogue.getRegister(dummyInterruptName);</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        <span class="comment">// The previous command is throwing if the registern does not exist.</span></div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        <span class="comment">// For this register there is no parent node. Directly add to the tree widget.</span></div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        <span class="keyword">new</span> <a class="code" href="class_device_element_q_tree_item.html">DeviceElementQTreeItem</a>(<a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget, dummyInterruptName.c_str(), registerInfo);</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;      }</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;      <span class="keywordflow">catch</span>(ChimeraTK::logic_error&amp;) {</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        <span class="comment">// Nothing to do. Seems it&#39;s not a dummy</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;      }</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    }</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;  }</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160; </div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  <span class="comment">// Do NOT select a register. This is intentional!</span></div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  <span class="comment">// It happens in</span></div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;}</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160; </div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;<span class="keywordtype">void</span> QtHardMon::addCopyActionForRegisterTreeWidget() {</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;  QAction* copy = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Copy&quot;</span>), <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget);</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  copy-&gt;setShortcuts(QKeySequence::Copy);</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  copy-&gt;setShortcutContext(Qt::WidgetWithChildrenShortcut);</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;  connect(copy, SIGNAL(triggered()), <span class="keyword">this</span>, SLOT(copyRegisterTreeItemNameToClipBoard()));</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;addAction(copy);</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;}</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160; </div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="keywordtype">void</span> QtHardMon::copyRegisterTreeItemNameToClipBoard() {</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;  QTreeWidgetItem* currentItem = <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;currentItem();</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;  <span class="keywordflow">if</span>(currentItem) {</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    QClipboard* clipboard = QApplication::clipboard();</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160; </div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    clipboard-&gt;clear(QClipboard::Clipboard);</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    <span class="comment">// clear the &#39;selection clipboard&#39;; basically content that you get on</span></div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    <span class="comment">// center mouse click</span></div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;    clipboard-&gt;clear(QClipboard::Selection);</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160; </div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    ChimeraTK::RegisterPath registerPath = currentItem-&gt;text(0).toStdString();</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="comment">// loop the tree to add the parents</span></div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    QTreeWidgetItem* parent = currentItem-&gt;parent();</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordflow">while</span>(parent) {</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;      registerPath = parent-&gt;text(0).toStdString() + registerPath;</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;      parent = parent-&gt;parent();</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    }</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    <span class="comment">// copy to the standard clipboard and the mouse clipboard</span></div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    clipboard-&gt;setText(std::string(registerPath).c_str());</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    clipboard-&gt;setText(std::string(registerPath).c_str(), QClipboard::Selection);</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;  }</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;}</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160; </div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleCollapseTreeButton() {</div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;collapseAll();</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;}</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleExpandTreeButton() {</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;expandAll();</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;}</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160; </div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;<span class="keywordtype">void</span> QtHardMon::hanldeSearchLineEdit(QString <span class="keyword">const</span>&amp; text) {</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;  <span class="comment">// TODO: search over registers (childs),</span></div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;  <span class="comment">// TODO: add Regexp match</span></div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;  <span class="comment">// TODO: keyboard up/down move over matched list</span></div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;  <span class="comment">// QStringList searchList = text.split(&quot;/&quot;);</span></div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;  QList&lt;QTreeWidgetItem*&gt; moduleList = <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;findItems(text, Qt::MatchContains);</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160; </div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;  <span class="comment">// Iterate the list until we find the right one</span></div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> mod : moduleList) {</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setCurrentItem(mod);</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;  }</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;}</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160; </div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleSearchLineFinished() {</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;  <span class="comment">// set focus on register list when enter pressed</span></div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setFocus();</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;}</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160; </div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleSortCheckboxClick(<span class="keywordtype">int</span> state) {</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;  <span class="keywordflow">if</span>(state == Qt::Checked) {</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;sortByColumn(0, Qt::AscendingOrder);</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setSortingEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;  }</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(state == Qt::Unchecked) {</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setSortingEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;    <span class="comment">// redraw the currently sorted tree to pick up the order from the mapfile.</span></div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;    populateRegisterTree(<a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.deviceListWidget-&gt;currentItem());</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  }</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;}</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160; </div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;<span class="keywordtype">void</span> QtHardMon::showMessageBox(</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    QMessageBox::Icon boxType, QString boxTitle, QString boxText, QString boxInformativeText) {</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;  <a class="code" href="class_preferences_provider.html">PreferencesProvider</a>&amp; preferencesProvider = <a class="code" href="class_singleton_holder.html#aacd163609b54b71682edb1e8f1bcb45c">PreferencesProviderSingleton::Instance</a>();</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160; </div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;  <span class="keywordflow">if</span>(preferencesProvider.<a class="code" href="class_preferences_provider.html#ac151abeeeb758ee63cfea9118d6373f1">getValue</a>&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;noPrompts&quot;</span>)) {</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;    std::cout &lt;&lt; boxText.toStdString() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; boxInformativeText.toStdString() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  }</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    QMessageBox messageBox(boxType, boxTitle, boxText, QMessageBox::Ok, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;    messageBox.setDetailedText(boxInformativeText);</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    messageBox.exec();</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;  }</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;}</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160; </div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleContinuousReadChanged(<span class="keywordtype">int</span> state) {</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;  <span class="keywordflow">if</span>(state == Qt::Checked) {</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.operationsGroupBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.propertiesWidget-&gt;ui.valuesTableView-&gt;setEditTriggers(QTableView::NoEditTriggers);</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    _lastTimeStamps.clear();</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1">currentAccessorModel_</a>-&gt;<a class="code" href="class_register_accessor_model.html#a846b00a77adef4ac4d6ce1d0a29dcf84">hasWaitForNewData</a>()) {</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;      <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;      <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateIntervalLabel-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    }</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.start();</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;  }</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.stop();</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.operationsGroupBox-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateIntervalLabel-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.propertiesWidget-&gt;ui.valuesTableView-&gt;setEditTriggers(<a class="code" href="class_qt_hard_mon.html#a057d6716bcce7d56a24ea7cc3f0ed0da">_defaultTableViewEditTriggers</a>);</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;  }</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;}</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160; </div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleDisplayIntervalChanged() {</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequency1Hz-&gt;isChecked()) {</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.setInterval(1000);</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;  }</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <span class="comment">// 100 Hz is the only other option, so it&#39;s 10 ms</span></div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.setInterval(10);</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  }</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;  _lastTimeStamps.clear();</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;}</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160; </div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;<span class="keywordtype">void</span> QtHardMon::updateAvgReadInterval(QDateTime timeStamp) {</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;  _lastTimeStamps.push_back(timeStamp.toMSecsSinceEpoch());</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160; </div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;  <span class="keywordtype">size_t</span> n = 10;                        <span class="comment">// number of averaging points</span></div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;  <span class="keywordflow">if</span>(_lastTimeStamps.size() == n + 1) { <span class="comment">// we are calculating delta_t , so we need one more value</span></div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    <span class="comment">// evaluate and clear the list</span></div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    <span class="keywordtype">double</span> sumDelta_t = 0;</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    <span class="keywordtype">double</span> sumSquareDelta_t = 0;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = _lastTimeStamps.begin(); it != (--_lastTimeStamps.end()); <span class="comment">/*increment in loop*/</span>) {</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;      <span class="keyword">auto</span> t1 = *it;</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;      <span class="keyword">auto</span> t2 = *(++it);</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;      <span class="keyword">auto</span> delta_t = t2 - t1;</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;      sumDelta_t += delta_t;</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;      sumSquareDelta_t += delta_t * delta_t;</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    }</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) { <span class="comment">// leave the last element in the list for further calculations</span></div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;      _lastTimeStamps.pop_front();</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    }</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    <span class="keywordtype">double</span> variance = sqrt((sumSquareDelta_t - sumDelta_t * sumDelta_t / n) / (n - 1));</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    <span class="keywordtype">double</span> mean = sumDelta_t / n;</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    std::string s = std::to_string(<span class="keywordtype">int</span>(std::round(mean))) + <span class="stringliteral">&quot; +- &quot;</span> + std::to_string(<span class="keywordtype">int</span>(std::round(variance))) + <span class="stringliteral">&quot; ms&quot;</span>;</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setText(s.c_str());</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;  }</div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;}</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160; </div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;<span class="keywordtype">void</span> QtHardMon::setContinuousReadLabels(<span class="keywordtype">bool</span> hasWaitForNewData) {</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;  <span class="keywordflow">if</span>(hasWaitForNewData) {</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.continuousReadGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Continuous Read&quot;</span>);</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Display Freuqency&quot;</span>);</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.lastReadTimeLabel-&gt;setText(<span class="stringliteral">&quot;Last update time&quot;</span>);</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;  }</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.continuousReadGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Continuous Poll&quot;</span>);</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Poll Freuqency&quot;</span>);</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.lastReadTimeLabel-&gt;setText(<span class="stringliteral">&quot;Last poll time&quot;</span>);</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  }</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;}</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;expandAll();</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160; </div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  <span class="comment">// Do NOT select a register. This is intentional!</span></div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  <span class="comment">// It happens in</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;}</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160; </div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;<span class="keywordtype">void</span> QtHardMon::addCopyActionForRegisterTreeWidget() {</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  QAction* copy = <span class="keyword">new</span> QAction(tr(<span class="stringliteral">&quot;&amp;Copy&quot;</span>), <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget);</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;  copy-&gt;setShortcuts(QKeySequence::Copy);</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  copy-&gt;setShortcutContext(Qt::WidgetWithChildrenShortcut);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;  connect(copy, SIGNAL(triggered()), <span class="keyword">this</span>, SLOT(copyRegisterTreeItemNameToClipBoard()));</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;addAction(copy);</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;}</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160; </div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="keywordtype">void</span> QtHardMon::copyRegisterTreeItemNameToClipBoard() {</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;  QTreeWidgetItem* currentItem = <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;currentItem();</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;  <span class="keywordflow">if</span>(currentItem) {</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    QClipboard* clipboard = QApplication::clipboard();</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160; </div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    clipboard-&gt;clear(QClipboard::Clipboard);</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;    <span class="comment">// clear the &#39;selection clipboard&#39;; basically content that you get on</span></div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    <span class="comment">// center mouse click</span></div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    clipboard-&gt;clear(QClipboard::Selection);</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160; </div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    ChimeraTK::RegisterPath registerPath = currentItem-&gt;text(0).toStdString();</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="comment">// loop the tree to add the parents</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    QTreeWidgetItem* parent = currentItem-&gt;parent();</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    <span class="keywordflow">while</span>(parent) {</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;      registerPath = parent-&gt;text(0).toStdString() + registerPath;</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;      parent = parent-&gt;parent();</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    }</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    <span class="comment">// copy to the standard clipboard and the mouse clipboard</span></div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    clipboard-&gt;setText(std::string(registerPath).c_str());</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;    clipboard-&gt;setText(std::string(registerPath).c_str(), QClipboard::Selection);</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;  }</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;}</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160; </div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleCollapseTreeButton() {</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;collapseAll();</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;}</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleExpandTreeButton() {</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;expandAll();</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;}</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160; </div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;<span class="keywordtype">void</span> QtHardMon::hanldeSearchLineEdit(QString <span class="keyword">const</span>&amp; text) {</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;  <span class="comment">// TODO: search over registers (childs),</span></div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;  <span class="comment">// TODO: add Regexp match</span></div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;  <span class="comment">// TODO: keyboard up/down move over matched list</span></div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;  <span class="comment">// QStringList searchList = text.split(&quot;/&quot;);</span></div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;  QList&lt;QTreeWidgetItem*&gt; moduleList = <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;findItems(text, Qt::MatchContains);</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160; </div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  <span class="comment">// Iterate the list until we find the right one</span></div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> mod : moduleList) {</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setCurrentItem(mod);</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;  }</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;}</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160; </div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleSearchLineFinished() {</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;  <span class="comment">// set focus on register list when enter pressed</span></div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;  <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setFocus();</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;}</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160; </div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleSortCheckboxClick(<span class="keywordtype">int</span> state) {</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;  <span class="keywordflow">if</span>(state == Qt::Checked) {</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;sortByColumn(0, Qt::AscendingOrder);</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setSortingEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;  }</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(state == Qt::Unchecked) {</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.registerTreeWidget-&gt;setSortingEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;    <span class="comment">// redraw the currently sorted tree to pick up the order from the mapfile.</span></div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;    populateRegisterTree(<a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.deviceListWidget-&gt;currentItem());</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;  }</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;}</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160; </div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;<span class="keywordtype">void</span> QtHardMon::showMessageBox(</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    QMessageBox::Icon boxType, QString boxTitle, QString boxText, QString boxInformativeText) {</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;  <a class="code" href="class_preferences_provider.html">PreferencesProvider</a>&amp; preferencesProvider = <a class="code" href="class_singleton_holder.html#aacd163609b54b71682edb1e8f1bcb45c">PreferencesProviderSingleton::Instance</a>();</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160; </div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  <span class="keywordflow">if</span>(preferencesProvider.<a class="code" href="class_preferences_provider.html#ac151abeeeb758ee63cfea9118d6373f1">getValue</a>&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;noPrompts&quot;</span>)) {</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;    std::cout &lt;&lt; boxText.toStdString() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; boxInformativeText.toStdString() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;  }</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    QMessageBox messageBox(boxType, boxTitle, boxText, QMessageBox::Ok, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    messageBox.setDetailedText(boxInformativeText);</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    messageBox.exec();</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  }</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;}</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160; </div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleContinuousReadChanged(<span class="keywordtype">int</span> state) {</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;  <span class="keywordflow">if</span>(state == Qt::Checked) {</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.operationsGroupBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.propertiesWidget-&gt;ui.valuesTableView-&gt;setEditTriggers(QTableView::NoEditTriggers);</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    _lastTimeStamps.clear();</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1">currentAccessorModel_</a>-&gt;<a class="code" href="class_register_accessor_model.html#a846b00a77adef4ac4d6ce1d0a29dcf84">hasWaitForNewData</a>()) {</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;      <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;      <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateIntervalLabel-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;    }</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.start();</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;  }</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.stop();</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.operationsGroupBox-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateIntervalLabel-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.propertiesWidget-&gt;ui.valuesTableView-&gt;setEditTriggers(<a class="code" href="class_qt_hard_mon.html#a057d6716bcce7d56a24ea7cc3f0ed0da">_defaultTableViewEditTriggers</a>);</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;  }</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;}</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160; </div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;<span class="keywordtype">void</span> QtHardMon::handleDisplayIntervalChanged() {</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequency1Hz-&gt;isChecked()) {</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.setInterval(1000);</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;  }</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <span class="comment">// 100 Hz is the only other option, so it&#39;s 10 ms</span></div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    <a class="code" href="class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253">_continuousReadTimner</a>.setInterval(10);</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;  }</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  _lastTimeStamps.clear();</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;}</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160; </div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="keywordtype">void</span> QtHardMon::updateAvgReadInterval(QDateTime timeStamp) {</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;  _lastTimeStamps.push_back(timeStamp.toMSecsSinceEpoch());</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160; </div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;  <span class="keywordtype">size_t</span> n = 10;                        <span class="comment">// number of averaging points</span></div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  <span class="keywordflow">if</span>(_lastTimeStamps.size() == n + 1) { <span class="comment">// we are calculating delta_t , so we need one more value</span></div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    <span class="comment">// evaluate and clear the list</span></div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="keywordtype">double</span> sumDelta_t = 0;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;    <span class="keywordtype">double</span> sumSquareDelta_t = 0;</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = _lastTimeStamps.begin(); it != (--_lastTimeStamps.end()); <span class="comment">/*increment in loop*/</span>) {</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;      <span class="keyword">auto</span> t1 = *it;</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;      <span class="keyword">auto</span> t2 = *(++it);</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;      <span class="keyword">auto</span> delta_t = t2 - t1;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;      sumDelta_t += delta_t;</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;      sumSquareDelta_t += delta_t * delta_t;</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    }</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) { <span class="comment">// leave the last element in the list for further calculations</span></div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;      _lastTimeStamps.pop_front();</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    }</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    <span class="keywordtype">double</span> variance = sqrt((sumSquareDelta_t - sumDelta_t * sumDelta_t / n) / (n - 1));</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    <span class="keywordtype">double</span> mean = sumDelta_t / n;</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    std::string s = std::to_string(<span class="keywordtype">int</span>(std::round(mean))) + <span class="stringliteral">&quot; +- &quot;</span> + std::to_string(<span class="keywordtype">int</span>(std::round(variance))) + <span class="stringliteral">&quot; ms&quot;</span>;</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.avgUpdateInterval-&gt;setText(s.c_str());</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;  }</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;}</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160; </div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="keywordtype">void</span> QtHardMon::setContinuousReadLabels(<span class="keywordtype">bool</span> hasWaitForNewData) {</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;  <span class="keywordflow">if</span>(hasWaitForNewData) {</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.continuousReadGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Continuous Read&quot;</span>);</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Display Freuqency&quot;</span>);</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.lastReadTimeLabel-&gt;setText(<span class="stringliteral">&quot;Last update time&quot;</span>);</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  }</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.continuousReadGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Continuous Poll&quot;</span>);</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.displayFrequencyGroupBox-&gt;setTitle(<span class="stringliteral">&quot;Poll Freuqency&quot;</span>);</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;    <a class="code" href="class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e">ui</a>.lastReadTimeLabel-&gt;setText(<span class="stringliteral">&quot;Last poll time&quot;</span>);</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;  }</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;}</div>
 <div class="ttc" id="a_config_file_reader_writer_8h_html"><div class="ttname"><a href="_config_file_reader_writer_8h.html">ConfigFileReaderWriter.h</a></div></div>
 <div class="ttc" id="a_device_element_q_tree_item_8h_html"><div class="ttname"><a href="_device_element_q_tree_item_8h.html">DeviceElementQTreeItem.h</a></div></div>
 <div class="ttc" id="a_exceptions_8h_html"><div class="ttname"><a href="_exceptions_8h.html">Exceptions.h</a></div></div>
@@ -1305,7 +1307,7 @@ $(document).ready(function(){initNavTree('_qt_hard_mon_8cpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_qt_hard_mon_8cpp.html">QtHardMon.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2023 03:54:57 for QtHardMon by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 03:53:40 for QtHardMon by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
