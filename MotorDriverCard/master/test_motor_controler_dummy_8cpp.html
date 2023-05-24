@@ -94,13 +94,13 @@ $(document).ready(function(){initNavTree('test_motor_controler_dummy_8cpp.html',
 <div class="textblock"><code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_motor_driver_exception_8h_source.html">MotorDriverException.h</a>&quot;</code><br />
+<code>#include &lt;ChimeraTK/Exception.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testMotorControlerDummy.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_motor_controler_dummy_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="test_motor_controler_dummy_8cpp__incl.svg" width="663" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -140,12 +140,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> testGetSet##NAME() {                                                                                            \</div>
-<div class="line">    BOOST_CHECK_THROW(_motorControlerDummy.get##NAME(), <a class="code" href="classmtca4u_1_1_motor_driver_exception.html">MotorDriverException</a>);                                         \</div>
-<div class="line">    BOOST_CHECK_THROW(_motorControlerDummy.set##NAME(0), <a class="code" href="classmtca4u_1_1_motor_driver_exception.html">MotorDriverException</a>);                                        \</div>
+<div class="line">    BOOST_CHECK_THROW(_motorControlerDummy.get##NAME(), ChimeraTK::logic_error);                                       \</div>
+<div class="line">    BOOST_CHECK_THROW(_motorControlerDummy.set##NAME(0), ChimeraTK::logic_error);                                      \</div>
 <div class="line">  }</div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_exception_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_exception.html">mtca4u::MotorDriverException</a></div><div class="ttdoc">The type of exception thrown by MotorDriverCard and MotorControler.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_exception_8h_source.html#l00015">MotorDriverException.h:15</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_dummy_8cpp_source.html#l00012">12</a> of file <a class="el" href="test_motor_controler_dummy_8cpp_source.html">testMotorControlerDummy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_dummy_8cpp_source.html#l00014">14</a> of file <a class="el" href="test_motor_controler_dummy_8cpp_source.html">testMotorControlerDummy.cpp</a>.</p>
 
 </div>
 </div>
@@ -176,7 +175,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_dummy_8cpp_source.html#l00078">78</a> of file <a class="el" href="test_motor_controler_dummy_8cpp_source.html">testMotorControlerDummy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_dummy_8cpp_source.html#l00080">80</a> of file <a class="el" href="test_motor_controler_dummy_8cpp_source.html">testMotorControlerDummy.cpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +185,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_motor_controler_dummy_8cpp.html">testMotorControlerDummy.cpp</a></li>
-    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 24 2023 03:54:03 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

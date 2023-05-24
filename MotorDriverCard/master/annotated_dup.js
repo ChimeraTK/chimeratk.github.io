@@ -15,8 +15,7 @@ var annotated_dup =
         [ "StepperMotorParameters", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters" ]
       ] ],
       [ "GeneralStatus", "class_chimera_t_k_1_1_general_status.html", "class_chimera_t_k_1_1_general_status" ],
-      [ "Logger", "class_chimera_t_k_1_1_logger.html", "class_chimera_t_k_1_1_logger" ],
-      [ "StepperMotorException", "class_chimera_t_k_1_1_stepper_motor_exception.html", "class_chimera_t_k_1_1_stepper_motor_exception" ]
+      [ "Logger", "class_chimera_t_k_1_1_logger.html", "class_chimera_t_k_1_1_logger" ]
     ] ],
     [ "detail", "namespacedetail.html", [
       [ "NodeFiller", "classdetail_1_1_node_filler.html", "classdetail_1_1_node_filler" ]
@@ -58,7 +57,6 @@ var annotated_dup =
       [ "MotorDriverCardImpl", "classmtca4u_1_1_motor_driver_card_impl.html", "classmtca4u_1_1_motor_driver_card_impl" ],
       [ "MotorDriverCardTest", "classmtca4u_1_1_motor_driver_card_test.html", "classmtca4u_1_1_motor_driver_card_test" ],
       [ "MotorDriverCardTestSuite", "classmtca4u_1_1_motor_driver_card_test_suite.html", "classmtca4u_1_1_motor_driver_card_test_suite" ],
-      [ "MotorDriverException", "classmtca4u_1_1_motor_driver_exception.html", "classmtca4u_1_1_motor_driver_exception" ],
       [ "MotorReferenceSwitchData", "classmtca4u_1_1_motor_reference_switch_data.html", "classmtca4u_1_1_motor_reference_switch_data" ],
       [ "MultiVariableWord", "classmtca4u_1_1_multi_variable_word.html", "classmtca4u_1_1_multi_variable_word" ],
       [ "PositionCompareInterruptData", "classmtca4u_1_1_position_compare_interrupt_data.html", "classmtca4u_1_1_position_compare_interrupt_data" ],

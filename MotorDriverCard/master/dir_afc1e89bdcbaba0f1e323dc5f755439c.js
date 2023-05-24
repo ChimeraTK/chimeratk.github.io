@@ -33,9 +33,6 @@ var dir_afc1e89bdcbaba0f1e323dc5f755439c =
     [ "MotorDriverCardFactory.h", "_motor_driver_card_factory_8h.html", [
       [ "MotorDriverCardFactory", "classmtca4u_1_1_motor_driver_card_factory.html", "classmtca4u_1_1_motor_driver_card_factory" ]
     ] ],
-    [ "MotorDriverException.h", "_motor_driver_exception_8h.html", [
-      [ "MotorDriverException", "classmtca4u_1_1_motor_driver_exception.html", "classmtca4u_1_1_motor_driver_exception" ]
-    ] ],
     [ "MotorReferenceSwitchData.h", "_motor_reference_switch_data_8h.html", [
       [ "MotorReferenceSwitchData", "classmtca4u_1_1_motor_reference_switch_data.html", "classmtca4u_1_1_motor_reference_switch_data" ]
     ] ],

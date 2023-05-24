@@ -9,10 +9,6 @@ var hierarchy =
     ] ],
     [ "EncoderUnitsConverter", "class_encoder_units_converter.html", null ],
     [ "ChimeraTK::MotorDriver::utility::StateMachine::Event", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html", null ],
-    [ "std::exception", null, [
-      [ "ChimeraTK::StepperMotorException", "class_chimera_t_k_1_1_stepper_motor_exception.html", null ],
-      [ "mtca4u::MotorDriverException", "classmtca4u_1_1_motor_driver_exception.html", null ]
-    ] ],
     [ "FunctionalTests", "class_functional_tests.html", null ],
     [ "ChimeraTK::GeneralStatus", "class_chimera_t_k_1_1_general_status.html", [
       [ "mtca4u::StepperMotorCalibrationStatus", "classmtca4u_1_1_stepper_motor_calibration_status.html", null ],

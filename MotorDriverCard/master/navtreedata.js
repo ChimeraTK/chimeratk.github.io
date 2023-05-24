@@ -53,7 +53,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -76,15 +76,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_stepper_motor_8cc.html",
-"_stepper_motor_status_8cc_source.html",
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6674b002f14713d66efda77fda47ac9d",
-"class_motor_controler_dummy_test.html#a71e2f0132f76667b7483976d056ecf32",
-"classmtca4u_1_1_driver_control_data.html#a5614dd34eb45019bc22afbbd0877a8aa",
-"classmtca4u_1_1_motor_controler_expert.html#acf3d297fcc206f166612f0c05708baa9",
-"classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7",
-"classmtca4u_1_1_t_m_c429_s_p_i.html#a057ffae69cf95f5d1b96a12f01819632",
-"namespacemtca4u.html#a3c4d36688de5843fb368e37372525086",
-"test_motor_controler_8cpp.html#a74dab6957682aa7b67845ec53e7ed0c3"
+"_stepper_motor_util_8h.html#a2331302d0887fc536d9ccd2d73d2c363",
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a7d6a4db96be0b38362140f964f0c161e",
+"class_motor_driver_card_config_x_m_l_test.html#a53b3985d208db685de08ab99084ee480",
+"classmtca4u_1_1_driver_status_data.html#aaa1fd9ed0e3d6ce9b4581785e9e5b019",
+"classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9",
+"classmtca4u_1_1_proportionality_factor_data.html#a8b787d4dd88c93bdc6ea191acaa02359",
+"create_output_mask_using_setter_getter_8h.html",
+"namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1",
+"test_state_machine_8cc.html#a509ce183f3e07fd4813c81722b06ad2c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

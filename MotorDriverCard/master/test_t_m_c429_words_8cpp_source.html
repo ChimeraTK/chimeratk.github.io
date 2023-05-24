@@ -87,11 +87,11 @@ $(document).ready(function(){initNavTree('test_t_m_c429_words_8cpp_source.html',
 <div class="title">testTMC429Words.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="test_t_m_c429_words_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="test_t_m_c429_words_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    1</a></span>&#160;<span class="preprocessor">#define BOOST_TEST_MODULE TMC429WordsTest</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_motor_driver_exception_8h.html">MotorDriverException.h</a>&quot;</span></div>
+<a href="test_t_m_c429_words_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;ChimeraTK/Exception.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="test_t_m_c429_words_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    2</a></span>&#160;<span class="preprocessor">#define BOOST_TEST_MODULE TMC429WordsTest</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_m_c429_words_8h.html">TMC429Words.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="create_output_mask_using_setter_getter_8h.html">createOutputMaskUsingSetterGetter.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a>;</div>
@@ -455,19 +455,17 @@ $(document).ready(function(){initNavTree('test_t_m_c429_words_8cpp_source.html',
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  BOOST_CHECK(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(0x1).getTargetPositionReached(0));</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  BOOST_CHECK(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(0x4).getTargetPositionReached(1));</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  BOOST_CHECK(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(0x10).getTargetPositionReached(2));</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  BOOST_CHECK_THROW(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>().getTargetPositionReached(3), <a class="code" href="classmtca4u_1_1_motor_driver_exception.html">MotorDriverException</a>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  BOOST_CHECK_THROW(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>().getTargetPositionReached(3), ChimeraTK::logic_error);</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  BOOST_CHECK(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(0x2).getReferenceSwitchBit(0) == 0x1);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  BOOST_CHECK(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(0x8).getReferenceSwitchBit(1) == 0x1);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  BOOST_CHECK(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(0x20).getReferenceSwitchBit(2) == 0x1);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  BOOST_CHECK_THROW(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>().getReferenceSwitchBit(3), <a class="code" href="classmtca4u_1_1_motor_driver_exception.html">MotorDriverException</a>);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  BOOST_CHECK_THROW(<a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>().getReferenceSwitchBit(3), ChimeraTK::logic_error);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
-<div class="ttc" id="a_motor_driver_exception_8h_html"><div class="ttname"><a href="_motor_driver_exception_8h.html">MotorDriverException.h</a></div></div>
 <div class="ttc" id="a_t_m_c429_words_8h_html"><div class="ttname"><a href="_t_m_c429_words_8h.html">TMC429Words.h</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_exception_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_exception.html">mtca4u::MotorDriverException</a></div><div class="ttdoc">The type of exception thrown by MotorDriverCard and MotorControler.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_exception_8h_source.html#l00015">MotorDriverException.h:15</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_multi_variable_word_html_a50597aba3dc5fe3c639006e0dfa17de2"><div class="ttname"><a href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">mtca4u::MultiVariableWord::getDataWord</a></div><div class="ttdeci">unsigned int getDataWord() const</div><div class="ttdoc">Get the encoded 32 bit data word.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8cc_source.html#l00012">MultiVariableWord.cc:12</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_multi_variable_word_html_a50597aba3dc5fe3c639006e0dfa17de2"><div class="ttname"><a href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">mtca4u::MultiVariableWord::getDataWord</a></div><div class="ttdeci">unsigned int getDataWord() const</div><div class="ttdoc">Get the encoded 32 bit data word.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8cc_source.html#l00013">MultiVariableWord.cc:13</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html">mtca4u::TMC429InputWord</a></div><div class="ttdoc">Structure of a generic single value register of the TMC429 chip.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00036">TMC429Words.h:36</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a3ed1367fa4c8112a62401af64283d525"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a3ed1367fa4c8112a62401af64283d525">mtca4u::TMC429InputWord::setIDX_JDX</a></div><div class="ttdeci">void setIDX_JDX(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00042">TMC429Words.h:42</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_status_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_status_word.html">mtca4u::TMC429StatusWord</a></div><div class="ttdoc">The status word contains the eight status bits of each output word, now shifted to the least signific...</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00263">TMC429Words.h:263</a></div></div>
@@ -499,7 +497,7 @@ $(document).ready(function(){initNavTree('test_t_m_c429_words_8cpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_t_m_c429_words_8cpp.html">testTMC429Words.cpp</a></li>
-    <li class="footer">Generated on Wed May 17 2023 03:56:25 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 24 2023 03:54:03 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
