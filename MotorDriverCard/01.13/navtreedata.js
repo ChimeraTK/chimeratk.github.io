@@ -1,0 +1,91 @@
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+
+ The MIT License (MIT)
+
+ Copyright (C) 1997-2020 by Dimitri van Heesch
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
+*/
+var NAVTREE =
+[
+  [ "DFMC-MD22 Motor Controller", "index.html", [
+    [ "MotorDriverCard", "index.html", [
+      [ "Getting Started", "index.html#getting_started", null ]
+    ] ],
+    [ "\\c LinearStepperMotor", "linear_stepper_motor.html", null ],
+    [ "Why you need a motor driver card config and how to create it", "motor_driver_card_config_docu.html", [
+      [ "Creating an XML config file", "motor_driver_card_config_docu.html#gui_parameters", null ],
+      [ "Expert Section: Manually editing the config XML file", "motor_driver_card_config_docu.html#expert_parameters", null ]
+    ] ],
+    [ "\\c StepperMotor", "stepper_motor.html", null ],
+    [ "Todo List", "todo.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"_basic_stepper_motor_8cc.html",
+"_stepper_motor_util_8h.html#a2331302d0887fc536d9ccd2d73d2c363",
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a7d6a4db96be0b38362140f964f0c161e",
+"class_motor_driver_card_config_x_m_l_test.html#a53b3985d208db685de08ab99084ee480",
+"classmtca4u_1_1_driver_status_data.html#aaa1fd9ed0e3d6ce9b4581785e9e5b019",
+"classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9",
+"classmtca4u_1_1_proportionality_factor_data.html#a8b787d4dd88c93bdc6ea191acaa02359",
+"create_output_mask_using_setter_getter_8h.html",
+"namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1",
+"test_state_machine_8cc.html#a509ce183f3e07fd4813c81722b06ad2c"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
