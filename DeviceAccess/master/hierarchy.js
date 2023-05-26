@@ -288,7 +288,7 @@ var hierarchy =
     [ "ChimeraTK::LNMVariable", "struct_chimera_t_k_1_1_l_n_m_variable.html", null ],
     [ "ChimeraTK::LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", null ],
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
-    [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
+    [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
     [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, uint32_t >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper_3_01_user_type_00_01uint32__t_01_4.html", null ],
@@ -318,6 +318,7 @@ var hierarchy =
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", null ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >::QueuedValue", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table_1_1_queued_value.html", null ],
+    [ "RawToCookedProvider_BitWithMath", "struct_raw_to_cooked_provider___bit_with_math.html", null ],
     [ "RawToCookedProvider_Var1", "struct_raw_to_cooked_provider___var1.html", null ],
     [ "RawToCookedProvider_Var2", "struct_raw_to_cooked_provider___var2.html", null ],
     [ "RawToCookedProvider_x", "struct_raw_to_cooked_provider__x.html", null ],
@@ -433,6 +434,9 @@ var hierarchy =
           ] ],
           [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var2, RawToCookedProvider_Var2 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
             [ "RegVariableAsPushParameterInMath_var2", "struct_reg_variable_as_push_parameter_in_math__var2.html", null ]
+          ] ],
+          [ "RegVariableAsPushParameterInMathBase< RegRedirectedBitWithMath, RawToCookedProvider_BitWithMath >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegRedirectedBitWithMath", "struct_reg_redirected_bit_with_math.html", null ]
           ] ],
           [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_R_push >", "struct_reg_word_firmware_with_math.html", [
             [ "RegWordFirmwareWithMath_R_push", "struct_reg_word_firmware_with_math___r__push.html", null ]

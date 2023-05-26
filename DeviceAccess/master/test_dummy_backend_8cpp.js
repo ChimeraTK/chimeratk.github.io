@@ -4,6 +4,7 @@ var test_dummy_backend_8cpp =
     [ "BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", "class_testable_dummy_backend_1_1_backend_registerer" ],
     [ "Fixture_t", "class_fixture__t.html", "class_fixture__t" ],
     [ "BOOST_NO_EXCEPTIONS", "test_dummy_backend_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
+    [ "BOOST_TEST_DYN_LINK", "test_dummy_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_dummy_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "CLOCK_MUX_REGISTER_STRING", "test_dummy_backend_8cpp.html#a476d0f9665b137cb4f5530afce2bdb35", null ],
     [ "CLOCK_RESET_REGISTER_STRING", "test_dummy_backend_8cpp.html#afc582965be2b50c7458505aa0fc5f94b", null ],

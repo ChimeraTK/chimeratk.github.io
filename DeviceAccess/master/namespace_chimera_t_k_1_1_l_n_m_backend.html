@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('namespace_chimera_t_k_1_1_l_n_m_backen
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html">MathPluginFormulaHelper</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html">MathPluginFormulaHelper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html">UndecoratedParams</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct to hold extra parameters needed by some plugins, used in decorateAccessor()  <a href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#details">More...</a><br /></td></tr>
@@ -161,13 +161,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a92a9e1128129c84332ebdb679286fd95"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">AccessorPluginBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a92a9e1128129c84332ebdb679286fd95">makePlugin</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> info, const std::string &amp;name, const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
-<tr class="memdesc:a92a9e1128129c84332ebdb679286fd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for accessor plugins.  <a href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a92a9e1128129c84332ebdb679286fd95">More...</a><br /></td></tr>
-<tr class="separator:a92a9e1128129c84332ebdb679286fd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdeb68d7bebaa9232243ffbb49bb0ef4"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">AccessorPluginBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#acdeb68d7bebaa9232243ffbb49bb0ef4">makePlugin</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> info, size_t pluginIndex, const std::string &amp;name, const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
+<tr class="memdesc:acdeb68d7bebaa9232243ffbb49bb0ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for accessor plugins.  <a href="namespace_chimera_t_k_1_1_l_n_m_backend.html#acdeb68d7bebaa9232243ffbb49bb0ef4">More...</a><br /></td></tr>
+<tr class="separator:acdeb68d7bebaa9232243ffbb49bb0ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a92a9e1128129c84332ebdb679286fd95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92a9e1128129c84332ebdb679286fd95">&#9670;&nbsp;</a></span>makePlugin()</h2>
+<a id="acdeb68d7bebaa9232243ffbb49bb0ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdeb68d7bebaa9232243ffbb49bb0ef4">&#9670;&nbsp;</a></span>makePlugin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +177,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a>&#160;</td>
           <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pluginIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -206,7 +212,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_l_n_m_backend_a92a9e1128129c84332ebdb679286fd95_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_l_n_m_backend_acdeb68d7bebaa9232243ffbb49bb0ef4_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -218,7 +224,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li>
-    <li class="footer">Generated on Wed May 17 2023 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023 03:53:22 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

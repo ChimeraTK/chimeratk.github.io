@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::LNMBackend::AccessorPlugin&lt; Derived &gt; Class Template Reference</div>  </div>
@@ -114,9 +115,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aed665107831ef0060001fd7c6633855b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#aed665107831ef0060001fd7c6633855b">AccessorPlugin</a> (const <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &amp;info)</td></tr>
-<tr class="memdesc:aed665107831ef0060001fd7c6633855b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the plugin should also accept a second argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#aed665107831ef0060001fd7c6633855b">More...</a><br /></td></tr>
-<tr class="separator:aed665107831ef0060001fd7c6633855b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a5d76cf4a9ef93f8b4e3d1c5c8db62ca4">AccessorPlugin</a> (const <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &amp;info, size_t pluginIndex)</td></tr>
+<tr class="memdesc:a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the plugin should also accept a 3rd argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a5d76cf4a9ef93f8b4e3d1c5c8db62ca4">More...</a><br /></td></tr>
+<tr class="separator:a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2cec9cda3017970bbcb1fdc3e0d5cf6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6">getTargetDataType</a> (<a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> userType) const</td></tr>
 <tr class="memdesc:ad2cec9cda3017970bbcb1fdc3e0d5cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the data type for which the target accessor shall be obtained.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6">More...</a><br /></td></tr>
 <tr class="separator:ad2cec9cda3017970bbcb1fdc3e0d5cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +156,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a09112f5742836feb83f0d62b4d94e967 inherit pub_methods_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called when an exception is reported to the the backend via setException(), after the backend has been moved into the exception state.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a09112f5742836feb83f0d62b4d94e967">More...</a><br /></td></tr>
 <tr class="separator:a09112f5742836feb83f0d62b4d94e967 inherit pub_methods_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a10bc03eaafa9a9228c0d881950b92c90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a10bc03eaafa9a9228c0d881950b92c90">_pluginIndex</a></td></tr>
+<tr class="memdesc:a10bc03eaafa9a9228c0d881950b92c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the plugin instance within the stack of plugins on a particular register.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a10bc03eaafa9a9228c0d881950b92c90">More...</a><br /></td></tr>
+<tr class="separator:a10bc03eaafa9a9228c0d881950b92c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">ChimeraTK::LNMBackend::AccessorPluginBase</a></td></tr>
@@ -167,13 +174,13 @@ Additional Inherited Members</h2></td></tr>
 class ChimeraTK::LNMBackend::AccessorPlugin&lt; Derived &gt;</h3>
 
 <p>Base class for plugins that modify the behaviour of accessors in the logical name mapping backend. </p>
-<p>Plugins need to implement this class. When adding new plugins, the <a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a92a9e1128129c84332ebdb679286fd95" title="Factory function for accessor plugins.">makePlugin()</a> function needs to be modified to create the plugins when requested. Note that plugins are not user-providable. Plugins can only be added as part of the DeviceAccess library.</p>
+<p>Plugins need to implement this class. When adding new plugins, the <a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#acdeb68d7bebaa9232243ffbb49bb0ef4" title="Factory function for accessor plugins.">makePlugin()</a> function needs to be modified to create the plugins when requested. Note that plugins are not user-providable. Plugins can only be added as part of the DeviceAccess library.</p>
 <p>Note: This class implements a CRTP (curiously recurring template pattern). The template argument must be the derived class implementing the plugin. </p>
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00096">96</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aed665107831ef0060001fd7c6633855b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed665107831ef0060001fd7c6633855b">&#9670;&nbsp;</a></span>AccessorPlugin()</h2>
+<a id="a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d76cf4a9ef93f8b4e3d1c5c8db62ca4">&#9670;&nbsp;</a></span>AccessorPlugin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,8 +194,18 @@ template&lt;typename Derived &gt; </div>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">ChimeraTK::LNMBackend::AccessorPlugin</a>&lt; Derived &gt;::<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">AccessorPlugin</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pluginIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -198,15 +215,15 @@ template&lt;typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The constructor of the plugin should also accept a second argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on. </p>
+<p>The constructor of the plugin should also accept a 3rd argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00224">224</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00236">236</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_aed665107831ef0060001fd7c6633855b_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_a5d76cf4a9ef93f8b4e3d1c5c8db62ca4_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -253,7 +270,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 <p>It allows the plugin to decorate the accessor to change the its behaviour.</p>
 <p>Note: Even if <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6" title="Return the data type for which the target accessor shall be obtained.">getTargetDataType()</a> is overridden, the function will be instantiated for all target types, but if will be only called for those <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6" title="Return the data type for which the target accessor shall be obtained.">getTargetDataType()</a> returns. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00250">250</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00263">263</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +325,7 @@ template&lt;typename UserType &gt; </div>
 <p>This function is called by the backend. </p>
 <p>Do not override in implementations. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00260">260</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00273">273</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -359,7 +376,28 @@ template&lt;typename Derived &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0b4c026d688a81624526cde1ec98a73a">ChimeraTK::LNMBackend::MathPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a3a3225618034fe7e87de60d9e7a87ff5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#adc93890bcfe074182a47d03abcb9770a">ChimeraTK::LNMBackend::MultiplierPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00115">115</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00117">117</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a10bc03eaafa9a9228c0d881950b92c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bc03eaafa9a9228c0d881950b92c90">&#9670;&nbsp;</a></span>_pluginIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">ChimeraTK::LNMBackend::AccessorPlugin</a>&lt; Derived &gt;::_pluginIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index of the plugin instance within the stack of plugins on a particular register. </p>
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00140">140</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +410,7 @@ template&lt;typename Derived &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">AccessorPlugin</a></li>
-    <li class="footer">Generated on Wed May 17 2023 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023 03:53:22 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,6 @@
 var namespace_chimera_t_k_1_1_l_n_m_backend =
 [
-    [ "MathPluginFormulaHelper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper" ],
+    [ "MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper" ],
     [ "UndecoratedParams", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params" ],
     [ "AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base" ],
     [ "AccessorPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin" ],
@@ -26,5 +26,5 @@ var namespace_chimera_t_k_1_1_l_n_m_backend =
     [ "MultiplierPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator" ],
     [ "MultiplierPlugin_Helper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper.html", null ],
     [ "MultiplierPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
-    [ "makePlugin", "namespace_chimera_t_k_1_1_l_n_m_backend.html#a92a9e1128129c84332ebdb679286fd95", null ]
+    [ "makePlugin", "namespace_chimera_t_k_1_1_l_n_m_backend.html#acdeb68d7bebaa9232243ffbb49bb0ef4", null ]
 ];

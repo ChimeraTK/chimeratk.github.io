@@ -50,6 +50,8 @@ var test_l_map_backend_unified_8cpp =
     [ "RegVariableAsPushParameterInMath_x", "struct_reg_variable_as_push_parameter_in_math__x.html", "struct_reg_variable_as_push_parameter_in_math__x" ],
     [ "RegVariableAsPushParameterInMath_x_not_written1", "struct_reg_variable_as_push_parameter_in_math__x__not__written1.html", "struct_reg_variable_as_push_parameter_in_math__x__not__written1" ],
     [ "RegVariableAsPushParameterInMath_x_not_written2", "struct_reg_variable_as_push_parameter_in_math__x__not__written2.html", "struct_reg_variable_as_push_parameter_in_math__x__not__written2" ],
+    [ "RawToCookedProvider_BitWithMath", "struct_raw_to_cooked_provider___bit_with_math.html", null ],
+    [ "RegRedirectedBitWithMath", "struct_reg_redirected_bit_with_math.html", "struct_reg_redirected_bit_with_math" ],
     [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", "struct_reg_monostable_trigger" ],
     [ "BOOST_TEST_DYN_LINK", "test_l_map_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_l_map_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],

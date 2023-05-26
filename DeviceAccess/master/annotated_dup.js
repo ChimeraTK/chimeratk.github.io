@@ -6,7 +6,7 @@ var annotated_dup =
     ] ],
     [ "ChimeraTK", "namespace_chimera_t_k.html", [
       [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", [
-        [ "MathPluginFormulaHelper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper" ],
+        [ "MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper" ],
         [ "UndecoratedParams", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params" ],
         [ "AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base" ],
         [ "AccessorPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin" ],
@@ -242,6 +242,7 @@ var annotated_dup =
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", "class_parser_utils_test_class" ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", "class_pcie_backend_test" ],
     [ "PcieBackendTestSuite", "class_pcie_backend_test_suite.html", "class_pcie_backend_test_suite" ],
+    [ "RawToCookedProvider_BitWithMath", "struct_raw_to_cooked_provider___bit_with_math.html", null ],
     [ "RawToCookedProvider_Var1", "struct_raw_to_cooked_provider___var1.html", null ],
     [ "RawToCookedProvider_Var2", "struct_raw_to_cooked_provider___var2.html", null ],
     [ "RawToCookedProvider_x", "struct_raw_to_cooked_provider__x.html", null ],
@@ -267,6 +268,7 @@ var annotated_dup =
     [ "RegisterPathTestSuite", "class_register_path_test_suite.html", "class_register_path_test_suite" ],
     [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", "struct_reg_monostable_trigger" ],
     [ "RegPartOfArea", "struct_reg_part_of_area.html", "struct_reg_part_of_area" ],
+    [ "RegRedirectedBitWithMath", "struct_reg_redirected_bit_with_math.html", "struct_reg_redirected_bit_with_math" ],
     [ "Regs3Type", "struct_regs3_type.html", "struct_regs3_type" ],
     [ "RegSingleWord", "struct_reg_single_word.html", "struct_reg_single_word" ],
     [ "RegSingleWord_push", "struct_reg_single_word__push.html", "struct_reg_single_word__push" ],
