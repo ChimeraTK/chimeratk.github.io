@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a9b96ca632010c650655c844939eb884b":[19,0,1,78,1],
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#ab2c56f1721795370873addddae5b089a":[19,0,1,78,6],
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#accd805b1c07344c5c14c27b53ea80302":[19,0,1,78,5],
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#acdd82ec1e0d84a593be6c880dd78baa3":[19,0,1,78,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "struct_integers__base.html#a3941b4d6821cae789df5e4bdf0242f4c":[19,0,46,9],
 "struct_integers__base.html#a3ab3b0918da8ce2f054b66add329efd3":[19,0,46,4],
 "struct_integers__base.html#a4f27e58ad22f75d20d29855e6ed62428":[19,0,46,0],
-"struct_integers__base.html#a537495e2b6505c4715bf95cd70b791ca":[19,0,46,8],
-"struct_integers__base.html#a61a7992d50e812705794cbdad320d08b":[19,0,46,10]
+"struct_integers__base.html#a537495e2b6505c4715bf95cd70b791ca":[19,0,46,8]
 };

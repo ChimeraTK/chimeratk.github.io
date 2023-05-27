@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"struct_integers__base.html#a61a7992d50e812705794cbdad320d08b":[19,0,46,10],
 "struct_integers__base.html#a6dc64093397a2b2fe3aef985668512eb":[19,0,46,3],
 "struct_integers__base.html#a9273b623705fe1b710a16c0d817b42ae":[19,0,46,6],
 "struct_integers__base.html#aa50896be4109d200e3f11d692660ed80":[19,0,46,2],
@@ -21,8 +22,8 @@ var NAVTREEINDEX14 =
 "struct_integers__signed32.html#a976bada3e1d06a0e801a27d9efa1fec2":[19,0,47,15],
 "struct_integers__signed32.html#a98141081669e59b9ee52f7a0edd441d9":[19,0,47,1],
 "struct_integers__signed32.html#aca4e105f7f1611da71bcb8ad9d5854f2":[19,0,47,9],
-"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,47,6],
 "struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,47,7],
+"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,47,6],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[19,0,47,11],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[19,0,47,12],
 "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,47,4],
@@ -49,11 +50,11 @@ var NAVTREEINDEX14 =
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,48,13],
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,48,14],
 "struct_integers__signed32__async.html#a681276f1b5ad8dd610a185aa3e0e22b3":[19,0,48,15],
-"struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,48,16],
 "struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,48,17],
+"struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,48,16],
 "struct_integers__signed32__async.html#a7cf5d1e6995834a70315757c00d48339":[19,0,48,10],
-"struct_integers__signed32__async.html#a9a0512be9d188aaeeabcaff1c3c765ce":[19,0,48,9],
 "struct_integers__signed32__async.html#a9a0512be9d188aaeeabcaff1c3c765ce":[19,0,48,8],
+"struct_integers__signed32__async.html#a9a0512be9d188aaeeabcaff1c3c765ce":[19,0,48,9],
 "struct_integers__signed32__async.html#ab8ab3e06978b6d02ff7d18af8e91d953":[19,0,48,0],
 "struct_integers__signed32__async.html#ab91c033ee4406a9a70e1f3480ae58708":[19,0,48,21],
 "struct_integers__signed32__async.html#ad83cc912f7b3036a7fd5c59d4705a5f4":[19,0,48,5],
@@ -161,8 +162,8 @@ var NAVTREEINDEX14 =
 "struct_muxed_nodma_async.html#ad628bed81249c304ef2ee51071c226c3":[19,0,59,2],
 "struct_muxed_nodma_async.html#ae009802f4ac0d26fb7b306ef90739674":[19,0,59,6],
 "struct_my_area1.html":[19,0,60],
-"struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,60,10],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,60,11],
+"struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,60,10],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,60,4],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,60,5],
 "struct_my_area1.html#a467c26d5b4063f0920caab13429b769d":[19,0,60,13],
@@ -173,8 +174,8 @@ var NAVTREEINDEX14 =
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,60,9],
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,60,8],
 "struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[19,0,60,7],
-"struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,60,2],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,60,3],
+"struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,60,2],
 "struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7":[19,0,60,6],
 "struct_my_register1.html":[19,0,61],
 "struct_my_register1.html#a0a3f6ad525cfab066402387bfc6fb16e":[19,0,61,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "struct_reg_channel3.html#a05018d5be8b34dc112ed6aba96b24b9b":[19,0,88,6],
 "struct_reg_channel3.html#a2351955c2631657a03568b5fe191cb11":[19,0,88,1],
 "struct_reg_channel3.html#a2deccd8e20556ae067a9ea66ca16524f":[19,0,88,4],
-"struct_reg_channel3.html#a6ce97e8e2d277cc05cab8e2dc5d4797b":[19,0,88,5],
-"struct_reg_channel3.html#a7976ae4e9430828b560be840e010d102":[19,0,88,2]
+"struct_reg_channel3.html#a6ce97e8e2d277cc05cab8e2dc5d4797b":[19,0,88,5]
 };

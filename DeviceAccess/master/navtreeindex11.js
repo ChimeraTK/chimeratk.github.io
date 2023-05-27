@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"namespace_chimera_t_k.html#a2c70352ca3e000b7378e9fd5a28bacee":[18,0,1,194],
 "namespace_chimera_t_k.html#a30d24f6ea4866dacebad82c6c15082d2":[18,0,1,146],
 "namespace_chimera_t_k.html#a331e219ebc74268d0ed33fd394f24696":[18,0,1,151],
 "namespace_chimera_t_k.html#a33389204e881032753f65b9e16273a9e":[18,0,1,150],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "struct_argument.html":[19,0,7],
 "struct_argument.html#a36da86ea8486edfce1577578acf192eb":[19,0,7,2],
 "struct_argument.html#a38d7336f4f6d7a336a2392f2dc981e6d":[19,0,7,1],
-"struct_argument.html#aa5251ed60ee59544dfddc78043e7d1da":[19,0,7,0],
-"struct_ascii_data.html":[19,0,8]
+"struct_argument.html#aa5251ed60ee59544dfddc78043e7d1da":[19,0,7,0]
 };

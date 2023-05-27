@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"struct_ascii_data.html":[19,0,8],
 "struct_ascii_data.html#a164197f5101b377895257d40f68a786f":[19,0,8,2],
 "struct_ascii_data.html#a1c1f7644d3141bb2a05c84730db88990":[19,0,8,3],
 "struct_ascii_data.html#a595de9e88b78ceb4e58c9b19fb1d9bd5":[19,0,8,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a84d9945354a6fe38e434f93c8ca6f204":[19,0,1,76,1],
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html":[19,0,1,78],
 "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a07e68d77c6401205e9790a811b7570fc":[19,0,1,78,7],
-"struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a103fc09e5e3fced07941ad2c91a4df18":[19,0,1,78,4],
-"struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a9b96ca632010c650655c844939eb884b":[19,0,1,78,1]
+"struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a103fc09e5e3fced07941ad2c91a4df18":[19,0,1,78,4]
 };
