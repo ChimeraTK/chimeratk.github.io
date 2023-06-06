@@ -53,6 +53,11 @@ var test_l_map_backend_unified_8cpp =
     [ "RawToCookedProvider_BitWithMath", "struct_raw_to_cooked_provider___bit_with_math.html", null ],
     [ "RegRedirectedBitWithMath", "struct_reg_redirected_bit_with_math.html", "struct_reg_redirected_bit_with_math" ],
     [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", "struct_reg_monostable_trigger" ],
+    [ "RegBitRangeDescriptor", "struct_reg_bit_range_descriptor.html", "struct_reg_bit_range_descriptor" ],
+    [ "BitRangeAccessorTarget", "struct_bit_range_accessor_target.html", "struct_bit_range_accessor_target" ],
+    [ "RegLowerHalfOfFirmware", "struct_reg_lower_half_of_firmware.html", "struct_reg_lower_half_of_firmware" ],
+    [ "RegUpperHalfOfFirmware", "struct_reg_upper_half_of_firmware.html", "struct_reg_upper_half_of_firmware" ],
+    [ "Reg9BitsInChar", "struct_reg9_bits_in_char.html", "struct_reg9_bits_in_char" ],
     [ "BOOST_TEST_DYN_LINK", "test_l_map_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_l_map_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_unified_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ]

@@ -8,7 +8,6 @@ var _l_n_m_accessor_plugin_8h =
     [ "ForceReadOnlyPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin" ],
     [ "ForcePollingReadPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin" ],
     [ "TypeHintModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin" ],
-    [ "AccessorPlugin_Helper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper.html", null ],
-    [ "AccessorPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
+    [ "BitRangeAccessPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin" ],
     [ "makePlugin", "_l_n_m_accessor_plugin_8h.html#acdeb68d7bebaa9232243ffbb49bb0ef4", null ]
 ];

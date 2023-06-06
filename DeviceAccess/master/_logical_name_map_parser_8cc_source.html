@@ -391,7 +391,7 @@ $(document).ready(function(){initNavTree('_logical_name_map_parser_8cc_source.ht
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      }</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      std::string moduleName = nameAttr-&gt;get_value();</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="comment">// iterate over childs in module</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="comment">// iterate over children in module</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; child : element-&gt;get_children()) {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">// cast into element, ignore if not an element (e.g. comment)</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>* childElement = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>xmlpp::Element*<span class="keyword">&gt;</span>(child);</div>
@@ -482,7 +482,7 @@ $(document).ready(function(){initNavTree('_logical_name_map_parser_8cc_source.ht
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_logical_name_map_parser.html#ab77f9b049edc5f2c4dd465a2b3c6ba62">parsingError</a>(element, <span class="stringliteral">&quot;Wrong logical register type: &quot;</span> + type);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      }</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="comment">// iterate over childs of the register to find plugins</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="comment">// iterate over children of the register to find plugins</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; child : element-&gt;get_children()) {</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="comment">// cast into element, ignore if not an element (e.g. comment)</span></div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>* childElement = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>xmlpp::Element*<span class="keyword">&gt;</span>(child);</div>
@@ -581,7 +581,7 @@ $(document).ready(function(){initNavTree('_logical_name_map_parser_8cc_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ee326fa6789bb6bdc0887158d2381386.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_04e7a3a48585d4391a17b116de84faa7.html">src</a></li><li class="navelem"><a class="el" href="_logical_name_map_parser_8cc.html">LogicalNameMapParser.cc</a></li>
-    <li class="footer">Generated on Sat May 27 2023 03:53:13 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 6 2023 03:56:29 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -151,7 +151,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Base class for AccessorPlugins used by the LogicalNameMapping backend to store backends in lists. </p>
 <p>When writing plugins, the class <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html" title="Base class for plugins that modify the behaviour of accessors in the logical name mapping backend.">AccessorPlugin</a> should be implemented, not this one. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00023">23</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00025">25</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5d3cf388bf65cf7f9a5be587a60c7aae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d3cf388bf65cf7f9a5be587a60c7aae">&#9670;&nbsp;</a></span>AccessorPluginBase()</h2>
@@ -177,7 +177,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00040">40</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00043">43</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab707ce88179ed5aff7b474f5708ff569">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00075">75</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00077">77</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Protected Attributes</h2></td></tr>
 <p>If the plugin needs data that depends on the target and which is only available after opening (e.g. whether the register is writeable), the plugin has to call <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a5aeb3c6e2eaf692b629c1070b2821ead" title="Update the register info inside the catalogue if needed.">updateRegisterInfo()</a> in the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a12281fa9a7bb9411d93fb354a2fb8cbf" title="Hook called when the backend is opened, at the end of the open() function after all backend work has ...">openHook()</a> and can then modify internal variables in the updateRegisterInfo function.</p>
 <p>Note: in principle it is fine to do nothing in this function, if no catalogue change is required. This function intentionally has no empty default implementation, because it might otherwise easy to overlook that the register info must be updated here instead of the constructor. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ae466dbfc08e03802cb536818ed99f9fb">ChimeraTK::LNMBackend::MathPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a0f810eaef616db3734ea6622e8b6b88f">ChimeraTK::LNMBackend::DoubleBufferPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html#a2f7f81f629092f5dbbadb1c92203a30e">ChimeraTK::LNMBackend::TypeHintModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a59ab3d04e094bc17a3da759a19ae8383">ChimeraTK::LNMBackend::ForcePollingReadPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a6c9b2fb59c31000c88851f1433bd4886">ChimeraTK::LNMBackend::ForceReadOnlyPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a6184d0a75bcb3746adb2880a666efda5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#afb269be333882461b011793f6e4627eb">ChimeraTK::LNMBackend::MultiplierPlugin</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ae466dbfc08e03802cb536818ed99f9fb">ChimeraTK::LNMBackend::MathPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a0f810eaef616db3734ea6622e8b6b88f">ChimeraTK::LNMBackend::DoubleBufferPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#adc3f61953ddabefcb65ec094beadf5fd">ChimeraTK::LNMBackend::BitRangeAccessPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html#a2f7f81f629092f5dbbadb1c92203a30e">ChimeraTK::LNMBackend::TypeHintModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a59ab3d04e094bc17a3da759a19ae8383">ChimeraTK::LNMBackend::ForcePollingReadPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a6c9b2fb59c31000c88851f1433bd4886">ChimeraTK::LNMBackend::ForceReadOnlyPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a6184d0a75bcb3746adb2880a666efda5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#afb269be333882461b011793f6e4627eb">ChimeraTK::LNMBackend::MultiplierPlugin</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -334,7 +334,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00081">81</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00083">83</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Called by the backend when obtaining a register accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00030">30</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00032">32</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a3a297e247811fb279e638b4128821477">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00070">70</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00072">72</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ template&lt;typename UserType &gt; </div>
 <p>This function is called by the backend after the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html" title="RegisterInfo structure for the LogicalNameMappingBackend.">LNMBackendRegisterInfo</a> has been filled with all information from the target backend.</p>
 <p>This function implements the common steps and calls doRegisterInfoUpdate. where the actual implementation is happening. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00045">45</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00048">48</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -485,7 +485,7 @@ template&lt;typename UserType &gt; </div>
 
 <p><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> describing the the target register for which this plugin instance should work. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00085">85</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00087">87</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">AccessorPluginBase</a></li>
-    <li class="footer">Generated on Sat May 27 2023 03:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 6 2023 03:56:31 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

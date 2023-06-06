@@ -403,12 +403,12 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="comment">// convert into double and scale by fractional bit coefficient</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordtype">double</span> d_cooked = _inverseFractionalBitsCoefficient * <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(cookedValue);</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// Convert into either signed or uinsigned int32_t, depending on _isSigned,</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// so the conversion handls the sign correctly. Store always in a uint32_t,</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// Convert into either signed or unsigned int32_t, depending on _isSigned,</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// so the conversion handles the sign correctly. Store always in a uint32_t,</span></div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// since this is our raw type. The conversion will properly round, when</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// needed. Negative overflow exceptions need to be cought for some corner</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// needed. Negative overflow exceptions need to be caught for some corner</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">// cases (e.g. number of fractional bits &gt;= number of bits in total).</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// Positive overflow cannot happen due to the rangecheck above (the negative</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// Positive overflow cannot happen due to the range check above (the negative</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// branch has one more possible value).</span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    int32_t <a class="code" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb">raw</a>;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">try</span> {</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_d598e22cf3611ba63bff99f8eabac0af.html">NumericAddressedBackend</a></li><li class="navelem"><a class="el" href="dir_841b7e76fbb789784c18eea98cf7d838.html">include</a></li><li class="navelem"><a class="el" href="_fixed_point_converter_8h.html">FixedPointConverter.h</a></li>
-    <li class="footer">Generated on Sat May 27 2023 03:53:13 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 6 2023 03:56:29 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

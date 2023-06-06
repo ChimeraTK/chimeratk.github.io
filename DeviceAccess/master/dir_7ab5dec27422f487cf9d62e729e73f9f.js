@@ -20,6 +20,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testLargeBar.cpp", "test_large_bar_8cpp.html", "test_large_bar_8cpp" ],
     [ "testLMapBackend.cpp", "test_l_map_backend_8cpp.html", "test_l_map_backend_8cpp" ],
     [ "testLMapBackendUnified.cpp", "test_l_map_backend_unified_8cpp.html", "test_l_map_backend_unified_8cpp" ],
+    [ "testLMapBitRangePlugin.cc", "test_l_map_bit_range_plugin_8cc.html", "test_l_map_bit_range_plugin_8cc" ],
     [ "testLMapFile.cpp", "test_l_map_file_8cpp.html", "test_l_map_file_8cpp" ],
     [ "testLMapForceReadOnlyPlugin.cc", "test_l_map_force_read_only_plugin_8cc.html", "test_l_map_force_read_only_plugin_8cc" ],
     [ "testLMapMathPlugin.cpp", "test_l_map_math_plugin_8cpp.html", "test_l_map_math_plugin_8cpp" ],

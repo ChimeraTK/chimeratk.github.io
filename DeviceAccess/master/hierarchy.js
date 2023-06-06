@@ -3,8 +3,6 @@ var hierarchy =
     [ "_pcieuni_ioctl_bar_sizes", "struct__pcieuni__ioctl__bar__sizes.html", null ],
     [ "ChimeraTK::AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", null ],
     [ "ChimeraTK::AccessorInstanceDescriptor", "struct_chimera_t_k_1_1_accessor_instance_descriptor.html", null ],
-    [ "ChimeraTK::LNMBackend::AccessorPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper.html", null ],
-    [ "ChimeraTK::LNMBackend::AccessorPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", [
       [ "ChimeraTK::LNMBackend::AccessorPlugin< DoubleBufferPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::DoubleBufferPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html", null ]
@@ -23,6 +21,9 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< ForceReadOnlyPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html", null ]
+      ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< BitRangeAccessPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::BitRangeAccessPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html", null ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< MathPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::MathPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html", null ]
@@ -211,6 +212,9 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MathPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::MultiplierPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", null ]
+            ] ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::LNMBackend::BitRangeAccessPluginDecorator< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html", null ]
             ] ]
           ] ],
           [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, UserType >", null, [
@@ -254,10 +258,6 @@ var hierarchy =
     [ "Fixture_t", "class_fixture__t.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::forceAsyncReadInconsistency_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1force_async_read_inconsistency__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::forceAsyncReadInconsistency_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1force_async_read_inconsistency__proxy__helper_3_01_t_00_01false_01_4.html", null ],
-    [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin___helper.html", null ],
-    [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
-    [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html", null ],
-    [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::has_nValuesToTest< T >", "class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html", null ],
     [ "std::hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "HelperProcess", "struct_helper_process.html", null ],
@@ -290,11 +290,7 @@ var hierarchy =
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
     [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
-    [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper.html", null ],
-    [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, uint32_t >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper_3_01_user_type_00_01uint32__t_01_4.html", null ],
     [ "ChimeraTK::MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ],
-    [ "ChimeraTK::LNMBackend::MultiplierPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper.html", null ],
-    [ "ChimeraTK::LNMBackend::MultiplierPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
     [ "MuxedArea1", "struct_muxed_area1.html", null ],
     [ "MuxedArea2", "struct_muxed_area2.html", null ],
     [ "MuxedFloat", "struct_muxed_float.html", null ],
@@ -333,6 +329,7 @@ var hierarchy =
     [ "ChimeraTK::RebotSleepSynchroniser", "struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html", null ],
     [ "ChimeraTK::RebotTestableClock", "class_chimera_t_k_1_1_rebot_testable_clock.html", null ],
     [ "RebotTestClass", "class_rebot_test_class.html", null ],
+    [ "ChimeraTK::LNMBackend::ReferenceCountedUniqueLock", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html", null ],
     [ "Register", null, [
       [ "AreaType< Register >", "struct_area_type.html", null ],
       [ "AreaType< Register >", "struct_area_type.html", null ],
@@ -385,6 +382,15 @@ var hierarchy =
         [ "BitRegisterDescriptorBase< RegBit0OfVar >", "struct_bit_register_descriptor_base.html", [
           [ "RegBit0OfVar", "struct_reg_bit0_of_var.html", null ]
         ] ],
+        [ "RegBitRangeDescriptor< RegLowerHalfOfFirmware >", "struct_reg_bit_range_descriptor.html", [
+          [ "RegLowerHalfOfFirmware", "struct_reg_lower_half_of_firmware.html", null ]
+        ] ],
+        [ "RegBitRangeDescriptor< RegUpperHalfOfFirmware >", "struct_reg_bit_range_descriptor.html", [
+          [ "RegUpperHalfOfFirmware", "struct_reg_upper_half_of_firmware.html", null ]
+        ] ],
+        [ "RegBitRangeDescriptor< Reg9BitsInChar >", "struct_reg_bit_range_descriptor.html", [
+          [ "Reg9BitsInChar", "struct_reg9_bits_in_char.html", null ]
+        ] ],
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_scalar_register_descriptor_base.html", [
           [ "RegWordFirmwareForcedReadOnly", "struct_reg_word_firmware_forced_read_only.html", null ]
         ] ],
@@ -399,6 +405,9 @@ var hierarchy =
         ] ],
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", [
           [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< BitRangeAccessorTarget >", "struct_scalar_register_descriptor_base.html", [
+          [ "BitRangeAccessorTarget", "struct_bit_range_accessor_target.html", null ]
         ] ],
         [ "ScalarRegisterDescriptorBase< RegSingleWord >", "struct_scalar_register_descriptor_base.html", [
           [ "RegSingleWord", "struct_reg_single_word.html", null ]
@@ -416,6 +425,7 @@ var hierarchy =
           [ "RegArrayVariable", "struct_reg_array_variable.html", null ]
         ] ],
         [ "BitRegisterDescriptorBase< Derived >", "struct_bit_register_descriptor_base.html", null ],
+        [ "RegBitRangeDescriptor< Derived >", "struct_reg_bit_range_descriptor.html", null ],
         [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", [
           [ "RegSingleWordScaled< RegSingleWordScaled_R >", "struct_reg_single_word_scaled.html", [
             [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", null ]
