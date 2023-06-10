@@ -451,7 +451,7 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <a class="code" href="classmtca4u_1_1_motor_reference_switch_data.html">MotorReferenceSwitchData</a> MotorControlerImpl::retrieveReferenceSwitchStatus() {</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// the bit pattern for the active flags</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitMask = 0x3 &lt;&lt; 2 * _id;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitMask = 0x3U &lt;&lt; 2 * _id;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> commonReferenceSwitchWord = _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#aa0f36e0cb0bcd7c5a979116505b2c394">JDX_REFERENCE_SWITCH</a>).getDATA();</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dataWord = (commonReferenceSwitchWord &amp; bitMask) &gt;&gt; 2 * _id;</div>
@@ -775,7 +775,7 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_controler_impl_8cc.html">MotorControlerImpl.cc</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:04 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 10 2023 03:53:57 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

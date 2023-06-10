@@ -180,7 +180,7 @@ Static Public Attributes</h2></td></tr>
 <p>The spiWaitingTime is in microseconds. It defaults to 40 microseconds which should be ok for writing 32 bits at 1 MHz.</p>
 <p>An internal copy of the shared pointer of the mapped device is held in this class, so the <a class="el" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html" title="This class implements synchronous SPI operation over PCIexpress, using an SPI command register and a ...">SPIviaPCIe</a> always stays valid, even if the original shared pointer goes out of scope. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00014">14</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00019">19</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Constructor for write and readback. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00029">29</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00023">23</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Read back the waiting time which is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00129">129</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00103">103</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
 
 </div>
 </div>
@@ -280,7 +280,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Write the command and return the readback value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00096">96</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00087">87</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -319,7 +319,7 @@ Static Public Attributes</h2></td></tr>
 <p>The FPGA needs some time to perform the SPI communication to the connected chip. </p>
 <p>This is the waiting time between the checks of the synchronisation register. It should be set to approximately the time needed for the SPI communication (a little bit larger to compensate for time jitter, so only one waiting cycle is needed). Don't set it to 0 because after 10 attempts without valid synchronisation the read/write operation is timed out and an error is reported. </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00124">124</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00098">98</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00044">44</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html#l00035">35</a> of file <a class="el" href="_s_p_ivia_p_c_ie_8cc_source.html">SPIviaPCIe.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -397,7 +397,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html">SPIviaPCIe</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:04 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 10 2023 03:53:57 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
