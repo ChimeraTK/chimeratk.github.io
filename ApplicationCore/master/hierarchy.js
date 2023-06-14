@@ -79,6 +79,7 @@ var hierarchy =
         [ "TestApplication4", "struct_test_application4.html", null ],
         [ "TestApplication4", "struct_test_application4.html", null ],
         [ "TestApplication5< T >", "struct_test_application5.html", null ],
+        [ "TestApplication5< T >", "struct_test_application5.html", null ],
         [ "TestApplication6< T >", "struct_test_application6.html", null ],
         [ "TestApplicationMessage", "struct_test_application_message.html", null ],
         [ "TestApplicationNoConfigs", "struct_test_application_no_configs.html", null ],
@@ -257,6 +258,7 @@ var hierarchy =
             [ "TestModule2", "struct_test_module2.html", null ],
             [ "TestModule2", "struct_test_module2.html", null ],
             [ "TestModule2", "struct_test_module2.html", null ],
+            [ "TestModule3", "struct_test_module3.html", null ],
             [ "TestModuleBase", "struct_test_module_base.html", [
               [ "ModuleA", "struct_module_a.html", null ],
               [ "ModuleC", "struct_module_c.html", null ],

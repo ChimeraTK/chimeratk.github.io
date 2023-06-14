@@ -244,6 +244,7 @@ var annotated_dup =
     [ "TestModule0", "struct_test_module0.html", "struct_test_module0" ],
     [ "TestModule1", "struct_test_module1.html", "struct_test_module1" ],
     [ "TestModule2", "struct_test_module2.html", "struct_test_module2" ],
+    [ "TestModule3", "struct_test_module3.html", "struct_test_module3" ],
     [ "TestModuleBase", "struct_test_module_base.html", "struct_test_module_base" ],
     [ "TestModuleBase2", "struct_test_module_base2.html", "struct_test_module_base2" ],
     [ "TestModuleGroup", "struct_test_module_group.html", "struct_test_module_group" ],
