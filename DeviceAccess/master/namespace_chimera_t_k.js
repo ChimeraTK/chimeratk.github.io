@@ -229,6 +229,7 @@ var namespace_chimera_t_k =
     [ "operator/", "namespace_chimera_t_k.html#a3866f314ddf52c6edb0f62cef066f796", null ],
     [ "operator/", "namespace_chimera_t_k.html#abca4ba8eb69cfaf7f5a77b023ea7a97e", null ],
     [ "operator<<", "namespace_chimera_t_k.html#af18aef2d15d6461cd8122f11666de2e1", null ],
+    [ "operator<<", "namespace_chimera_t_k.html#ac85185057bb167d137c3493e393cfa5e", null ],
     [ "operator<<", "namespace_chimera_t_k.html#afb99f6118424df3932ed1c7d42398661", null ],
     [ "operator<<", "namespace_chimera_t_k.html#af4833d45b9d4140daba657df4faa9bf5", null ],
     [ "operator<<", "namespace_chimera_t_k.html#a0be0d705ffa5fb9186604ec5e8663278", null ],

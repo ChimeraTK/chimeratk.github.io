@@ -511,6 +511,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae84812fa8526e3b467cfb90fc0f586ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7436572505b7cbb9c68d42fc881db771"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a7436572505b7cbb9c68d42fc881db771">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>)</td></tr>
 <tr class="separator:a7436572505b7cbb9c68d42fc881db771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85185057bb167d137c3493e393cfa5e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac85185057bb167d137c3493e393cfa5e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> &amp;validity)</td></tr>
+<tr class="separator:ac85185057bb167d137c3493e393cfa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb299e172762068886537d74481f842c"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:afb299e172762068886537d74481f842c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afb299e172762068886537d74481f842c">compareHelper</a> (UserType a, UserType b)</td></tr>
 <tr class="separator:afb299e172762068886537d74481f842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -672,7 +674,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>FIXME My dynamic init header is a hack.</dd></dl>
 <p>Change the test to use BOOST_AUTO_TEST_CASE!</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>FIXME My dynamic init header is a hack.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>FIXME My dynamic init header is a hack.</dd></dl>
 <p>Change the test to use BOOST_AUTO_TEST_CASE! </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="af6310a045e1d4eb8181410f278fe7913"></a>
@@ -919,7 +921,7 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="aefbbe1fd9e4eefc7aa088b1242274ee7abc219b057095a6e31adf97545d6b6ea6"></a>writeDestructively&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00049">49</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00051">51</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2279,7 +2281,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="af18aef2d15d6461cd8122f11666de2e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af18aef2d15d6461cd8122f11666de2e1">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af18aef2d15d6461cd8122f11666de2e1">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2316,8 +2318,38 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 
 </div>
 </div>
+<a id="ac85185057bb167d137c3493e393cfa5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85185057bb167d137c3493e393cfa5e">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; ChimeraTK::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> &amp;&#160;</td>
+          <td class="paramname"><em>validity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8cc_source.html#l00007">7</a> of file <a class="el" href="_transfer_element_8cc_source.html">TransferElement.cc</a>.</p>
+
+</div>
+</div>
 <a id="afb99f6118424df3932ed1c7d42398661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb99f6118424df3932ed1c7d42398661">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afb99f6118424df3932ed1c7d42398661">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2347,7 +2379,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="af4833d45b9d4140daba657df4faa9bf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4833d45b9d4140daba657df4faa9bf5">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4833d45b9d4140daba657df4faa9bf5">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2377,7 +2409,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="a0be0d705ffa5fb9186604ec5e8663278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0be0d705ffa5fb9186604ec5e8663278">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be0d705ffa5fb9186604ec5e8663278">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2407,7 +2439,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="a7c08bb826b3c55fdb2f4db0915f0f6a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c08bb826b3c55fdb2f4db0915f0f6a6">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c08bb826b3c55fdb2f4db0915f0f6a6">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2437,7 +2469,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="acb6be557a8eab1f39d563f8cf08b13b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb6be557a8eab1f39d563f8cf08b13b4">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6be557a8eab1f39d563f8cf08b13b4">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2467,7 +2499,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="a8131149d6d551e64aad220a635e28e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8131149d6d551e64aad220a635e28e73">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8131149d6d551e64aad220a635e28e73">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2499,7 +2531,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="a460152710582df52b627b5e7e5df7742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a460152710582df52b627b5e7e5df7742">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a460152710582df52b627b5e7e5df7742">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2532,7 +2564,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="a596958c5fb1ce0b5f4d71fbdd590a766"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a596958c5fb1ce0b5f4d71fbdd590a766">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a596958c5fb1ce0b5f4d71fbdd590a766">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2562,7 +2594,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div>
 </div>
 <a id="aaf5ed856dd61a9b26be790c0ce3a68c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf5ed856dd61a9b26be790c0ce3a68c3">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5ed856dd61a9b26be790c0ce3a68c3">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[11/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2737,7 +2769,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_ac081e51ebc9ef4fe64b469290d39b7a2_icgraph.svg" width="464" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_ac081e51ebc9ef4fe64b469290d39b7a2_icgraph.svg" width="464" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2980,7 +3012,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 03:56:30 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jun 14 2023 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

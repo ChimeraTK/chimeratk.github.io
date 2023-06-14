@@ -230,8 +230,6 @@ var annotated_dup =
     [ "NumericAddressedLowLevelTransferElement_numberOfBytes", "struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html", "struct_numeric_addressed_low_level_transfer_element__number_of_bytes" ],
     [ "NumericAddressedLowLevelTransferElement_startAddress", "struct_numeric_addressed_low_level_transfer_element__start_address.html", "struct_numeric_addressed_low_level_transfer_element__start_address" ],
     [ "OneDRegisterDescriptorBase", "struct_one_d_register_descriptor_base.html", "struct_one_d_register_descriptor_base" ],
-    [ "OneDRegisterTest", "class_one_d_register_test.html", "class_one_d_register_test" ],
-    [ "OneDRegisterTestSuite", "class_one_d_register_test_suite.html", "class_one_d_register_test_suite" ],
     [ "ParserUtilitiesTestSuite", "class_parser_utilities_test_suite.html", "class_parser_utilities_test_suite" ],
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", "class_parser_utils_test_class" ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", "class_pcie_backend_test" ],

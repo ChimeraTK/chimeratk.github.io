@@ -13,5 +13,6 @@ var _transfer_element_8h =
       [ "readLatest", "_transfer_element_8h.html#aefbbe1fd9e4eefc7aa088b1242274ee7a168b97c08a29d6cd39c5aeeb3e6cc842", null ],
       [ "write", "_transfer_element_8h.html#aefbbe1fd9e4eefc7aa088b1242274ee7aefb2a684e4afb7d55e6147fbe5a332ee", null ],
       [ "writeDestructively", "_transfer_element_8h.html#aefbbe1fd9e4eefc7aa088b1242274ee7abc219b057095a6e31adf97545d6b6ea6", null ]
-    ] ]
+    ] ],
+    [ "operator<<", "_transfer_element_8h.html#ac85185057bb167d137c3493e393cfa5e", null ]
 ];

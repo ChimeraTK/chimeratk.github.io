@@ -160,9 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1feec69028b6d3937f475947d0ee98f inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#ac1feec69028b6d3937f475947d0ee98f">setAsCooked</a> (COOKED_TYPE value)</td></tr>
 <tr class="memdesc:ac1feec69028b6d3937f475947d0ee98f inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cooked values in case the accessor is a raw accessor (which does not do data conversion).  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#ac1feec69028b6d3937f475947d0ee98f">More...</a><br /></td></tr>
 <tr class="separator:ac1feec69028b6d3937f475947d0ee98f inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82dc0818e9e66242818ba0a4a134a1a6 inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a82dc0818e9e66242818ba0a4a134a1a6">writeIfDifferent</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">ChimeraTK::Boolean</a> newValue, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber=<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{nullptr})</td></tr>
-<tr class="memdesc:a82dc0818e9e66242818ba0a4a134a1a6 inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value if it differes from the current value.  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#a82dc0818e9e66242818ba0a4a134a1a6">More...</a><br /></td></tr>
-<tr class="separator:a82dc0818e9e66242818ba0a4a134a1a6 inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eaa3b14695a7690cde490964e3bceed inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a4eaa3b14695a7690cde490964e3bceed">writeIfDifferent</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">ChimeraTK::Boolean</a> newValue, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber=<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{nullptr}, <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> validity=DataValidity::ok)</td></tr>
+<tr class="memdesc:a4eaa3b14695a7690cde490964e3bceed inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value if it differes from the current value.  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#a4eaa3b14695a7690cde490964e3bceed">More...</a><br /></td></tr>
+<tr class="separator:a4eaa3b14695a7690cde490964e3bceed inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9412dd01aab22c1546653f2efd53a1c inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#ae9412dd01aab22c1546653f2efd53a1c">setAndWrite</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">ChimeraTK::Boolean</a> newValue, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber={})</td></tr>
 <tr class="memdesc:ae9412dd01aab22c1546653f2efd53a1c inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value.  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#ae9412dd01aab22c1546653f2efd53a1c">More...</a><br /></td></tr>
 <tr class="separator:ae9412dd01aab22c1546653f2efd53a1c inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,7 +283,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Template specialisation for <a class="el" href="class_chimera_t_k_1_1_boolean.html" title="Wrapper Class to avoid vector&lt;bool&gt; problems.">ChimeraTK::Boolean</a>. </p>
 <p>Simply add implicit type conversions to references of bool, since C++ does not do this conversion on its own as it involves two steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00151">151</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00153">153</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3ba078a30e74385a626fbbe8fa6afec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3ba078a30e74385a626fbbe8fa6afec">&#9670;&nbsp;</a></span>operator bool &amp;()</h2>
@@ -310,7 +310,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implicit type conversion to bool&amp;. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00167">167</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00169">169</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -347,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implicit type conversion to const bool&amp;. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00161">161</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00163">163</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -368,7 +368,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html">ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &gt;</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 03:56:30 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jun 14 2023 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

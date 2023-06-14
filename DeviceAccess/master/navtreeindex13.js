@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#ae21ac35fba53e5901694da3ec82c0116":[19,0,1,0,13,5],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html":[19,0,1,0,1],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#a4b78697b7455ac0f67e9cab64051b00b":[19,0,1,0,1,0],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#a637e3f26266d5d70aff814a77d04fa18":[19,0,1,0,1,3],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#a6a71991940b205cb9e43f946ff28762f":[19,0,1,0,1,4],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#aebbf5b2b1ceaf6f0ca59cf1e9ce4a84e":[19,0,1,0,1,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX13 =
 "struct_dummy_protocol_implementor.html":[19,0,38],
 "struct_dummy_protocol_implementor.html#a6522b6b15930a5c7b350848df013393c":[19,0,38,2],
 "struct_dummy_protocol_implementor.html#a6764cd943e5a41276aeede2113e89efb":[19,0,38,6],
-"struct_dummy_protocol_implementor.html#a7769942d18f42d702d87ee472eec011e":[19,0,38,1],
-"struct_dummy_protocol_implementor.html#a7a8c27b5c69cb07f92d304515249e7f3":[19,0,38,7],
-"struct_dummy_protocol_implementor.html#a8811cfa644621849fb6d5db4864ea6f4":[19,0,38,4],
-"struct_dummy_protocol_implementor.html#aa8cc5b73e31d4e73b04356e66992d9e6":[19,0,38,0]
+"struct_dummy_protocol_implementor.html#a7769942d18f42d702d87ee472eec011e":[19,0,38,1]
 };
