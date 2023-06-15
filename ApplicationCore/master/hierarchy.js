@@ -280,9 +280,7 @@ var hierarchy =
             [ "WriterModule", "struct_writer_module.html", null ]
           ] ],
           [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", null ],
-          [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", [
-            [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group.html", null ]
-          ] ],
+          [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", null ],
           [ "ChimeraTK::ModifyHierarchy< ACCESSOR >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
           [ "ChimeraTK::ModuleTree", "class_chimera_t_k_1_1_module_tree.html", null ],
           [ "ChimeraTK::ReadBitMask< NBITS >::Output", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html", null ],

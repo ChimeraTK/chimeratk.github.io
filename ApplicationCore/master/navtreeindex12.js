@@ -1,8 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"struct_test_module_1_1_module1.html#a440fa958cc663528b01dc11fb899305d":[17,0,108,2,3],
-"struct_test_module_1_1_module1.html#a62d2168867b61c9dac25596a76367c27":[17,0,108,2,2],
-"struct_test_module_1_1_module1.html#a93b32007047bd450c7693b22107d1278":[17,0,108,2,4],
 "struct_test_module_1_1_module1.html#aa5d24ab03212292260d8341dbc4a8835":[17,0,108,2,6],
 "struct_test_module_1_1_module1.html#ada22c3784e9fa40b7d59544092cb7d2f":[17,0,108,2,1],
 "struct_test_module_1_1_module1.html#adbfe599a8e313f6a2b3d8b3fabb757fc":[17,0,108,2,7],
@@ -249,5 +246,8 @@ var NAVTREEINDEX12 =
 "test_device_exception_flag_propagation_8cc_source.html":[18,0,11,0,8],
 "test_device_initialisation_handler_8cc.html":[18,0,11,0,9],
 "test_device_initialisation_handler_8cc.html#a35805d78f7664d1f5a99bf2f031d446f":[18,0,11,0,9,7],
-"test_device_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,11,0,9,1]
+"test_device_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,11,0,9,1],
+"test_device_initialisation_handler_8cc.html#a7458269eaa70d7eb6afca4870303d2b0":[18,0,11,0,9,5],
+"test_device_initialisation_handler_8cc.html#a991acb8cebbb3c0f25a233c4c72986f8":[18,0,11,0,9,4],
+"test_device_initialisation_handler_8cc.html#aca1033754f9b4558c293d862e4735478":[18,0,11,0,9,3]
 };

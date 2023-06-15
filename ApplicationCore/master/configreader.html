@@ -108,7 +108,7 @@ Example usage</h1>
 <div class="line">};</div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00043">Application.h:43</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition:</b> <a href="_application_8cc_source.html#l00187">Application.cc:187</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html_a23f25bcc02a0e94c2f5a4188496b04d0"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0">ChimeraTK::ModuleGroup::Application</a></div><div class="ttdeci">friend class Application</div><div class="ttdef"><b>Definition:</b> <a href="_module_group_8h_source.html#l00061">ModuleGroup.h:61</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html_a23f25bcc02a0e94c2f5a4188496b04d0"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0">ChimeraTK::ModuleGroup::Application</a></div><div class="ttdeci">friend class Application</div><div class="ttdef"><b>Definition:</b> <a href="_module_group_8h_source.html#l00064">ModuleGroup.h:64</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition:</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_config_reader_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_config_reader.html">ChimeraTK::ConfigReader</a></div><div class="ttdoc">Generic module to read an XML config file and provide the defined values as constant variables.</div><div class="ttdef"><b>Definition:</b> <a href="_config_reader_8h_source.html#l00116">ConfigReader.h:116</a></div></div>
 <div class="ttc" id="astruct_server_html"><div class="ttname"><a href="struct_server.html">Server</a></div><div class="ttdoc">Server - An ApplicationCore template server.</div><div class="ttdef"><b>Definition:</b> <a href="_server_8h_source.html#l00025">Server.h:25</a></div></div>
@@ -122,7 +122,7 @@ Example usage</h1>
 <div class="line"> <span class="keyword">auto</span> config_arr = <a class="code" href="struct_server.html#a11edddb6a72e6e1c5541413fdf733d57">config</a>.<a class="code" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">get</a>&lt;std::vector&lt;int8&gt;&gt;(<span class="stringliteral">&quot;module1/submodule/intArray&quot;</span>);</div>
 <div class="line"> <span class="comment">// ...</span></div>
 <div class="line">}</div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_config_reader_html_ad2b1bb3c5c4a974bce539fc4cd194793"><div class="ttname"><a href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">ChimeraTK::ConfigReader::get</a></div><div class="ttdeci">const T &amp; get(const std::string &amp;variableName) const</div><div class="ttdoc">Get value for given configuration variable.</div><div class="ttdef"><b>Definition:</b> <a href="_config_reader_8h_source.html#l00244">ConfigReader.h:244</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_config_reader_html_ad2b1bb3c5c4a974bce539fc4cd194793"><div class="ttname"><a href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">ChimeraTK::ConfigReader::get</a></div><div class="ttdeci">const T &amp; get(const std::string &amp;variableName) const</div><div class="ttdoc">Get value for given configuration variable.</div><div class="ttdef"><b>Definition:</b> <a href="_config_reader_8h_source.html#l00245">ConfigReader.h:245</a></div></div>
 </div><!-- fragment --></li>
 <li>Configuration may be published as process variables to other application modules, the control system or devices: <div class="fragment"><div class="line"><span class="keywordtype">void</span> Server::defineConnections() {</div>
 <div class="line">  <a class="code" href="struct_server.html#a11edddb6a72e6e1c5541413fdf733d57">config</a>.connectTo(testModule);</div>
@@ -160,7 +160,7 @@ XML file structure</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed Jun 14 2023 03:55:25 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 15 2023 03:55:14 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
