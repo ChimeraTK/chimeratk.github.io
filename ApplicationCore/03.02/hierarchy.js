@@ -79,6 +79,7 @@ var hierarchy =
         [ "TestApplication4", "struct_test_application4.html", null ],
         [ "TestApplication4", "struct_test_application4.html", null ],
         [ "TestApplication5< T >", "struct_test_application5.html", null ],
+        [ "TestApplication5< T >", "struct_test_application5.html", null ],
         [ "TestApplication6< T >", "struct_test_application6.html", null ],
         [ "TestApplicationMessage", "struct_test_application_message.html", null ],
         [ "TestApplicationNoConfigs", "struct_test_application_no_configs.html", null ],
@@ -257,6 +258,7 @@ var hierarchy =
             [ "TestModule2", "struct_test_module2.html", null ],
             [ "TestModule2", "struct_test_module2.html", null ],
             [ "TestModule2", "struct_test_module2.html", null ],
+            [ "TestModule3", "struct_test_module3.html", null ],
             [ "TestModuleBase", "struct_test_module_base.html", [
               [ "ModuleA", "struct_module_a.html", null ],
               [ "ModuleC", "struct_module_c.html", null ],
@@ -278,9 +280,7 @@ var hierarchy =
             [ "WriterModule", "struct_writer_module.html", null ]
           ] ],
           [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", null ],
-          [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", [
-            [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group.html", null ]
-          ] ],
+          [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", null ],
           [ "ChimeraTK::ModifyHierarchy< ACCESSOR >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
           [ "ChimeraTK::ModuleTree", "class_chimera_t_k_1_1_module_tree.html", null ],
           [ "ChimeraTK::ReadBitMask< NBITS >::Output", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html", null ],

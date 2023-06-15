@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">03.02.00</span>
+   &#160;<span id="projectnumber">03.02.01</span>
    </div>
   </td>
  </tr>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('_device_module_8h_source.html',''); in
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_connecting_device_module.html">  103</a></span>&#160;  <span class="keyword">class </span><a class="code" href="class_chimera_t_k_1_1_connecting_device_module.html">ConnectingDeviceModule</a> : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_connecting_device_module.html#a815f99ef733206712881707fe9f002c3">  105</a></span>&#160;    [[deprecated]] <a class="code" href="class_chimera_t_k_1_1_connecting_device_module.html#a815f99ef733206712881707fe9f002c3">ConnectingDeviceModule</a>(<a class="code" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a>* owner, <span class="keyword">const</span> std::string&amp; deviceAliasOrCDD,</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_connecting_device_module.html#a815f99ef733206712881707fe9f002c3">  105</a></span>&#160;    [[deprecated(<span class="stringliteral">&quot;Use DeviceModule instead&quot;</span>)]] <a class="code" href="class_chimera_t_k_1_1_connecting_device_module.html#a815f99ef733206712881707fe9f002c3">ConnectingDeviceModule</a>(<a class="code" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a>* owner, <span class="keyword">const</span> std::string&amp; deviceAliasOrCDD,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">const</span> std::string&amp; triggerPath = {}, std::function&lt;void(ChimeraTK::Device&amp;)&gt; initialisationHandler = <span class="keyword">nullptr</span>,</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">const</span> std::string&amp; pathInDevice = <span class="stringliteral">&quot;/&quot;</span>)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    : <a class="code" href="class_chimera_t_k_1_1_connecting_device_module.html#a2439ba1249e5f2c95ec490f9a677cd72">DeviceModule</a>(owner, deviceAliasOrCDD, triggerPath, std::move(initialisationHandler), pathInDevice) {}</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('_device_module_8h_source.html',''); in
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_module_html_ae65e0934b316fa3f12f9936f8f455248"><div class="ttname"><a href="class_chimera_t_k_1_1_device_module.html#ae65e0934b316fa3f12f9936f8f455248">ChimeraTK::DeviceModule::_model</a></div><div class="ttdeci">Model::DeviceModuleProxy _model</div><div class="ttdef"><b>Definition:</b> <a href="_device_module_8h_source.html#l00080">DeviceModule.h:80</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_model_1_1_device_module_proxy_html"><div class="ttname"><a href="class_chimera_t_k_1_1_model_1_1_device_module_proxy.html">ChimeraTK::Model::DeviceModuleProxy</a></div><div class="ttdef"><b>Definition:</b> <a href="_model_8h_source.html#l00325">Model.h:325</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html">ChimeraTK::ModuleGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="_module_group_8h_source.html#l00016">ModuleGroup.h:16</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html_a4e118063020247afcc64aa45d4ec3f12"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html#a4e118063020247afcc64aa45d4ec3f12">ChimeraTK::ModuleGroup::DeviceModule</a></div><div class="ttdeci">friend class DeviceModule</div><div class="ttdef"><b>Definition:</b> <a href="_module_group_8h_source.html#l00062">ModuleGroup.h:62</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html_a4e118063020247afcc64aa45d4ec3f12"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html#a4e118063020247afcc64aa45d4ec3f12">ChimeraTK::ModuleGroup::DeviceModule</a></div><div class="ttdeci">friend class DeviceModule</div><div class="ttdef"><b>Definition:</b> <a href="_module_group_8h_source.html#l00065">ModuleGroup.h:65</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html_ac6f8414b7c904b85c67cc2b4ddf87a7f"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html#ac6f8414b7c904b85c67cc2b4ddf87a7f">ChimeraTK::ModuleGroup::ModuleGroup</a></div><div class="ttdeci">ModuleGroup()=default</div><div class="ttdoc">Default constructor to allow late initialisation of module groups.</div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_set_d_map_file_path_html"><div class="ttname"><a href="class_chimera_t_k_1_1_set_d_map_file_path.html">ChimeraTK::SetDMapFilePath</a></div><div class="ttdoc">Helper class to set the DMAP file path.</div><div class="ttdef"><b>Definition:</b> <a href="_device_module_8h_source.html#l00093">DeviceModule.h:93</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_set_d_map_file_path_html_af26dc5d3424bb7cd09cca261b50a9c65"><div class="ttname"><a href="class_chimera_t_k_1_1_set_d_map_file_path.html#af26dc5d3424bb7cd09cca261b50a9c65">ChimeraTK::SetDMapFilePath::SetDMapFilePath</a></div><div class="ttdeci">SetDMapFilePath(const std::string &amp;dmapFilePath)</div><div class="ttdef"><b>Definition:</b> <a href="_device_module_8cc_source.html#l00150">DeviceModule.cc:150</a></div></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('_device_module_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_device_module_8h.html">DeviceModule.h</a></li>
-    <li class="footer">Generated on Fri May 26 2023 03:58:01 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 15 2023 03:56:05 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

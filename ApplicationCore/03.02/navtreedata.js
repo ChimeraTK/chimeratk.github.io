@@ -216,14 +216,14 @@ var NAVTREEINDEX =
 "conceptual_overview.html#conceptualOverview_ModuleGroup",
 "namespacedetail.html",
 "struct_chimera_t_k_1_1_config_reader.html#adf60bd6a3e6b11580a7fa5995e5e1f22",
-"struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html#a7215a99c0e1dc7058f8823919e433155",
-"struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html#a82cd6a37dc02fc535e99b2f1def8d9d5",
-"struct_my_module.html#a2960f9add77a310a056f0df88f7f0d6d",
-"struct_test_app.html#a08177de9fc3e32add783669397fa2962",
+"struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html#af3b5c072c9f07ace665139693f32714c",
+"struct_chimera_t_k_1_1_write_split_array_module.html#a11679c3da717d26cf44cd7be1af9eba2",
+"struct_my_module.html#ab638d4f2b024c77e1ed62bf77c77dc76",
+"struct_test_app.html#a9ccacf2a3513981e1240cd89a5b74679",
 "struct_test_application_1_1_name_1_1_name2.html",
-"struct_test_module_1_1_module1_1_1_sub_module.html#a054081ddf73ac2625d5d8166d78fd01d",
-"test_exception_handling_8cc.html#a093fb4ff78352404b40f9304c037db9d",
-"test_variable_group_8cc_source.html"
+"struct_test_module_1_1_module1.html#aa5d24ab03212292260d8341dbc4a8835",
+"test_device_initialisation_handler_8cc.html#acb549f568a7d85ab136349f448166488",
+"test_trigger_8cc_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
