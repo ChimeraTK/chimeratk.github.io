@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"class_chimera_t_k_1_1logic__error.html":[19,0,1,103],
 "class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400":[19,0,1,103,1],
 "class_chimera_t_k_1_1logic__error.html#a7cc99d54b4de93dd27b0cb67417dd43f":[19,0,1,103,0],
 "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html":[19,0,1,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "design__async_n_d_register_accessor__numeric_addressed.html#implementation_async_NumericAddressed":[5,2,1],
 "dir_0128381db4b4f5acbef62e610c8688e8.html":[20,0,1,0],
 "dir_03a6cfce30b88f6a84e388fa6a89390f.html":[20,0,9,0],
-"dir_04e7a3a48585d4391a17b116de84faa7.html":[20,0,2,2,1],
-"dir_130f923491185552e412a924425dcadd.html":[20,0,2,5]
+"dir_04e7a3a48585d4391a17b116de84faa7.html":[20,0,2,2,1]
 };

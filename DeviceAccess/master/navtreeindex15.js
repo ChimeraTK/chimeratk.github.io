@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3":[19,0,78,1],
 "struct_reg9_bits_in_char.html":[19,0,80],
 "struct_reg9_bits_in_char.html#a14b4c9ea5a172344cfc42dea461c1c50":[19,0,80,2],
 "struct_reg9_bits_in_char.html#a29fe4e1207c4237891b28a5554462a42":[19,0,80,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "struct_reg_word_firmware_as_parameter_in_math.html#abf95fa50efb60a70a184f0c299129acb":[19,0,123,0],
 "struct_reg_word_firmware_forced_read_only.html":[19,0,124],
 "struct_reg_word_firmware_forced_read_only.html#a103455314da9874abfb2629fccbe75c5":[19,0,124,4],
-"struct_reg_word_firmware_forced_read_only.html#a78d2e6bba407900b5f6f597c981168e0":[19,0,124,0],
-"struct_reg_word_firmware_forced_read_only.html#a8d2e220203bad4c826218a79cc656001":[19,0,124,5]
+"struct_reg_word_firmware_forced_read_only.html#a78d2e6bba407900b5f6f597c981168e0":[19,0,124,0]
 };

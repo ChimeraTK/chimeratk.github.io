@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('design__async_n_d_register_accessor__n
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="conceptOverview"></a>
 Concept overview</h1>
+<dl class="section warning"><dt>Warning</dt><dd>This concept is outdated. It describes the current state but will change with the introduction of nested interrupts and interrupt controller handlers!</dd></dl>
 <div class="image">
 <img src="NABackendAsyncConcept.png" alt="" width="1000"/>
 <div class="caption">
@@ -180,9 +181,9 @@ Implementation in the NumericAddressedBackend</h1>
 Asynchronous registers in the map file</h2>
 <pre>
 # name            nElements  address  nBytes  bar  width  bitInterpretation signed accessMode
-APP.0.DATA_READY          0        0       0    0      0                  0      0 INTERRUPT1:5
-APP.0.PUSH_DATA           4       12      16    1     32                  8      1 INTERRUPT2:3
-</pre><p>The map file has been extended by the access mode INTERRUPTx:y. Before, only RW and RO were allowed. x and y are the number of the interrupt controller and the interrupt number, respectively. Registers with access mode INTERRUPT will implicitly be treated as read-only.</p>
+APP.0.DATA_READY          0        0       0    0      0                  0      0 INTERRUPT1
+APP.0.PUSH_DATA           4       12      16    1     32                  8      1 INTERRUPT2
+</pre><p>The map file has a special access mode INTERRUPTx, in addition to the synchronous modes RW and RO. x is the numeric identifyer for a device interrupt. Registers with access mode INTERRUPT are treated as read-only. In future, this will be extended to allow nested interrupts (INTERRUPTx:y, INTERRUPTx:y:z, etc.) in combination with interrupt controller handlers.</p>
 <p>For interrupts it is possible to have void-type entries. The width of these "registers" is 0 bits. For consistency all other fields also have to be 0. They don't make sense in this context and have to be 0 to avoid confusion.</p>
 <h2><a class="anchor" id="implementation_async_NumericAddressed"></a>
 Design and implementation details</h2>
@@ -207,7 +208,7 @@ Interface to implementing backends</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 14 2023 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 17 2023 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
