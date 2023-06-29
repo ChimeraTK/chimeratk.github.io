@@ -1,7 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"_stepper_motor_util_8h.html":[8,0,7,0,4],
+"_stepper_motor_util_8h.html#a127e10207b409b6bcb30e9c2fb63dec7":[8,0,7,0,4,5],
 "_stepper_motor_util_8h.html#a2331302d0887fc536d9ccd2d73d2c363":[8,0,7,0,4,7],
 "_stepper_motor_util_8h.html#a34cd5f82c4d0d7da4e59ceb0f15a32c9":[8,0,7,0,4,4],
+"_stepper_motor_util_8h.html#a4be6cdb83687784f77c3712fa7758397":[8,0,7,0,4,14],
 "_stepper_motor_util_8h.html#a4f75c087ee1c9a8b2f4c9c0ce306de29":[8,0,7,0,4,6],
 "_stepper_motor_util_8h.html#a57df7065834493b42dfafee85b479722":[8,0,7,0,4,10],
 "_stepper_motor_util_8h.html#a57df7065834493b42dfafee85b479722a0555ee5459842ef8915fc3fe14c1b7c0":[8,0,7,0,4,10,1],
@@ -10,6 +13,7 @@ var NAVTREEINDEX1 =
 "_stepper_motor_util_8h.html#a57df7065834493b42dfafee85b479722a94a07976a3cdac75d41a565aa5106484":[8,0,7,0,4,10,5],
 "_stepper_motor_util_8h.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a":[8,0,7,0,4,10,2],
 "_stepper_motor_util_8h.html#a57df7065834493b42dfafee85b479722ad306b6fdee05fe87455110ddf6501e6c":[8,0,7,0,4,10,0],
+"_stepper_motor_util_8h.html#a8ce53003e1acb01d3914279667269967":[8,0,7,0,4,13],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033e":[8,0,7,0,4,11],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ea206a02a2cb6a7a91a2964d6b5793630c":[8,0,7,0,4,11,1],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033eac7d8fe9e7b58ac779cd58540c4aebbe6":[8,0,7,0,4,11,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a56fe0c0c2e4c40c34714179b5579e937":[7,0,0,0,2,6],
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a5c43283b18d2cc12412be91cdea1136b":[7,0,0,0,2,5],
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6671e76162537abee350f2fe2bd7a3bf":[7,0,0,0,2,16],
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6674b002f14713d66efda77fda47ac9d":[7,0,0,0,2,19],
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6ad5865a3e0d99f18a8f497d47a32132":[7,0,0,0,2,8],
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a753cb150a3afb5530077141e9a0aac7f":[7,0,0,0,2,20],
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a78615a5e2e9458f4937aa03b2a3b8c29":[7,0,0,0,2,30],
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a78c5c0d1547cc87564496c9f7d5ec04f":[7,0,0,0,2,7]
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6674b002f14713d66efda77fda47ac9d":[7,0,0,0,2,19]
 };

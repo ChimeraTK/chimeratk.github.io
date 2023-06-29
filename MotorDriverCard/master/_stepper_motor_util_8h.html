@@ -87,16 +87,26 @@ $(document).ready(function(){initNavTree('_stepper_motor_util_8h.html',''); init
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">StepperMotorUtil.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for StepperMotorUtil.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_stepper_motor_util_8h__incl.svg" width="198" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_stepper_motor_util_8h__dep__incl.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -152,12 +162,12 @@ Enumerations</h2></td></tr>
 <tr class="separator:ae876126ee00cc4edba085b4f8f56b444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57df7065834493b42dfafee85b479722"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722">ChimeraTK::MotorDriver::Error</a> { <br />
 &#160;&#160;<a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722ad306b6fdee05fe87455110ddf6501e6c">ChimeraTK::MotorDriver::NO_ERROR</a> = 0
-, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a0555ee5459842ef8915fc3fe14c1b7c0">ChimeraTK::MotorDriver::ACTION_ERROR</a> = 1 &lt;&lt; 0
-, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a">ChimeraTK::MotorDriver::CALIBRATION_ERROR</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a5b0b5cb7b389b72d7c6fbbb0af4f0136">ChimeraTK::MotorDriver::BOTH_END_SWITCHES_ON</a> = 1 &lt;&lt; 2
+, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a0555ee5459842ef8915fc3fe14c1b7c0">ChimeraTK::MotorDriver::ACTION_ERROR</a> = 1U &lt;&lt; 0
+, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a">ChimeraTK::MotorDriver::CALIBRATION_ERROR</a> = 1U &lt;&lt; 1
+, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a5b0b5cb7b389b72d7c6fbbb0af4f0136">ChimeraTK::MotorDriver::BOTH_END_SWITCHES_ON</a> = 1U &lt;&lt; 2
 , <br />
-&#160;&#160;<a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a553fcf52ef7f6db961b3f3051c29343d">ChimeraTK::MotorDriver::MOVE_INTERRUPTED</a> = 1 &lt;&lt; 3
-, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a94a07976a3cdac75d41a565aa5106484">ChimeraTK::MotorDriver::EMERGENCY_STOP</a> = 1 &lt;&lt; 4
+&#160;&#160;<a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a553fcf52ef7f6db961b3f3051c29343d">ChimeraTK::MotorDriver::MOVE_INTERRUPTED</a> = 1U &lt;&lt; 3
+, <a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a94a07976a3cdac75d41a565aa5106484">ChimeraTK::MotorDriver::EMERGENCY_STOP</a> = 1U &lt;&lt; 4
 <br />
  }</td></tr>
 <tr class="memdesc:a57df7065834493b42dfafee85b479722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class describing errors.  <a href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722">More...</a><br /></td></tr>
@@ -174,6 +184,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:abe0ddad6b82ab94d6ec8a4a3f4a62c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum type to select the StepperMotor variant when created by the StepperMotorFactory.  <a href="namespace_chimera_t_k_1_1_motor_driver.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85">More...</a><br /></td></tr>
 <tr class="separator:abe0ddad6b82ab94d6ec8a4a3f4a62c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8ce53003e1acb01d3914279667269967"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a8ce53003e1acb01d3914279667269967">ChimeraTK::MotorDriver::toString</a> (Error &amp;error)</td></tr>
+<tr class="separator:a8ce53003e1acb01d3914279667269967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be6cdb83687784f77c3712fa7758397"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html#a4be6cdb83687784f77c3712fa7758397">ChimeraTK::MotorDriver::toString</a> (ExitStatus &amp;status)</td></tr>
+<tr class="separator:a4be6cdb83687784f77c3712fa7758397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -181,7 +198,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><a class="el" href="dir_03a6cfce30b88f6a84e388fa6a89390f.html">include</a></li><li class="navelem"><a class="el" href="_stepper_motor_util_8h.html">StepperMotorUtil.h</a></li>
-    <li class="footer">Generated on Fri Jun 23 2023 03:54:05 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 29 2023 03:54:01 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

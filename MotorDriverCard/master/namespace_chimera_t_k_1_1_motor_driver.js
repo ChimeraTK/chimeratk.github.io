@@ -32,5 +32,7 @@ var namespace_chimera_t_k_1_1_motor_driver =
     [ "StepperMotorType", "namespace_chimera_t_k_1_1_motor_driver.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85", [
       [ "BASIC", "namespace_chimera_t_k_1_1_motor_driver.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85ae4ac03f6c9f00665644e868dd1fb9f1e", null ],
       [ "LINEAR", "namespace_chimera_t_k_1_1_motor_driver.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85aaac544aacc3615aada24897a215f5046", null ]
-    ] ]
+    ] ],
+    [ "toString", "namespace_chimera_t_k_1_1_motor_driver.html#a8ce53003e1acb01d3914279667269967", null ],
+    [ "toString", "namespace_chimera_t_k_1_1_motor_driver.html#a4be6cdb83687784f77c3712fa7758397", null ]
 ];

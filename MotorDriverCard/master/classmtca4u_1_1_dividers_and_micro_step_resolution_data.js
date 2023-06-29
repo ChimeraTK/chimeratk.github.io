@@ -1,6 +1,6 @@
 var classmtca4u_1_1_dividers_and_micro_step_resolution_data =
 [
-    [ "DividersAndMicroStepResolutionData", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#aac2b9e93afef816af1e3feb3ded652f2", null ],
+    [ "DividersAndMicroStepResolutionData", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a75998229b636c71b9d511e7204991635", null ],
     [ "getMicroStepResolution", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#aeaa7cfc97d4d1b65a1d665ed24595c8f", null ],
     [ "getPulseDivider", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a424aeee1c9141aef8503aca8e228f459", null ],
     [ "getRampDivider", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a4668eeb356e1c402d1ab33d5721f5915", null ],

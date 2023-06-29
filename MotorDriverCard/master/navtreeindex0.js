@@ -226,6 +226,8 @@ var NAVTREEINDEX0 =
 "_signed_int_converter_8h_source.html":[8,0,0,0,19],
 "_state_machine_8cc.html":[8,0,7,1,2],
 "_state_machine_8cc.html#a0e208c34da5b146457f4f94675f16ab3":[8,0,7,1,2,0],
+"_state_machine_8cc.html#a4be6cdb83687784f77c3712fa7758397":[8,0,7,1,2,2],
+"_state_machine_8cc.html#a8ce53003e1acb01d3914279667269967":[8,0,7,1,2,1],
 "_state_machine_8cc_source.html":[8,0,7,1,2],
 "_state_machine_8h.html":[8,0,7,0,3],
 "_state_machine_8h.html#a0e208c34da5b146457f4f94675f16ab3":[8,0,7,0,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "_stepper_motor_status_8cc.html":[8,0,4,1,4],
 "_stepper_motor_status_8cc_source.html":[8,0,4,1,4],
 "_stepper_motor_status_8h.html":[8,0,4,0,4],
-"_stepper_motor_status_8h_source.html":[8,0,4,0,4],
-"_stepper_motor_util_8h.html":[8,0,7,0,4],
-"_stepper_motor_util_8h.html#a127e10207b409b6bcb30e9c2fb63dec7":[8,0,7,0,4,5]
+"_stepper_motor_status_8h_source.html":[8,0,4,0,4]
 };

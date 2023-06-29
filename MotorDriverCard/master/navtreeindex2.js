@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6ad5865a3e0d99f18a8f497d47a32132":[7,0,0,0,2,8],
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a753cb150a3afb5530077141e9a0aac7f":[7,0,0,0,2,20],
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a78615a5e2e9458f4937aa03b2a3b8c29":[7,0,0,0,2,30],
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a78c5c0d1547cc87564496c9f7d5ec04f":[7,0,0,0,2,7],
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a7d6a4db96be0b38362140f964f0c161e":[7,0,0,0,2,15],
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a89b32a3cd9ffa2e074318d21c5ba9904":[7,0,0,0,2,29],
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a8d63ab2998e42d99a90febad0312eb53":[7,0,0,0,2,13],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "class_motor_controler_dummy_test.html#ad1dd6a798d68310d7e1eadee6dc54032":[7,0,13,7],
 "class_motor_controler_dummy_test.html#af05b94fdc64cb804e105e2ac9dc42280":[7,0,13,0],
 "class_motor_controler_dummy_test_suite.html":[7,0,14],
-"class_motor_controler_dummy_test_suite.html#a546a385b7a6a27dd26516db401f507da":[7,0,14,0],
-"class_motor_driver_card_config_x_m_l_test.html":[7,0,15],
-"class_motor_driver_card_config_x_m_l_test.html#a1a66d34b02c86e8fb7cbf5c3b43b4ec9":[7,0,15,7],
-"class_motor_driver_card_config_x_m_l_test.html#a28d00b61f4b36c1634c0f0d378fbc3f6":[7,0,15,0],
-"class_motor_driver_card_config_x_m_l_test.html#a4aebf51072b68f3adc763cc26fcf8021":[7,0,15,4]
+"class_motor_controler_dummy_test_suite.html#a546a385b7a6a27dd26516db401f507da":[7,0,14,0]
 };

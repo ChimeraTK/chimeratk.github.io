@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2":[7,0,2,22,37],
+"classmtca4u_1_1_motor_controler_impl.html#a213d5c928190678e61704736e6bc3eae":[7,0,2,22,10],
+"classmtca4u_1_1_motor_controler_impl.html#a22025ce3eeb1ce0747f2d04195cb3f2d":[7,0,2,22,19],
+"classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377":[7,0,2,22,69],
 "classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9":[7,0,2,22,4],
 "classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e":[7,0,2,22,47],
 "classmtca4u_1_1_motor_controler_impl.html#a286b61cd86f9588350dc49f4349ef164":[7,0,2,22,42],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "classmtca4u_1_1_position_compare_interrupt_data.html#a29e9df0edb7d663b1b6074452687300e":[7,0,2,38,3],
 "classmtca4u_1_1_position_compare_interrupt_data.html#a7b96988db0bdb56200cb7944120f1be2":[7,0,2,38,2],
 "classmtca4u_1_1_position_compare_interrupt_data.html#a9eb0e1c98defc194038173b80edc961b":[7,0,2,38,1],
-"classmtca4u_1_1_position_compare_interrupt_data.html#ac8dfedb615225bf21cdfd13c41fd2be8":[7,0,2,38,0],
-"classmtca4u_1_1_power_monitor.html":[7,0,2,39],
-"classmtca4u_1_1_proportionality_factor_data.html":[7,0,2,40],
-"classmtca4u_1_1_proportionality_factor_data.html#a19ad4ede6f77afdf30daec5cb684da06":[7,0,2,40,1],
-"classmtca4u_1_1_proportionality_factor_data.html#a4573a673b54de447110855364d72c728":[7,0,2,40,4]
+"classmtca4u_1_1_position_compare_interrupt_data.html#ac8dfedb615225bf21cdfd13c41fd2be8":[7,0,2,38,0]
 };
