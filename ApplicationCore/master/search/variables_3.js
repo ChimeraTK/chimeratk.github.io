@@ -38,7 +38,7 @@ var searchData=
   ['consumingpusharray_2801',['consumingPushArray',['../struct_test_module.html#aaa3f6951acea15ad4df46691c11009f0',1,'TestModule']]],
   ['controller_2802',['controller',['../struct_example_app.html#a18114dde44283acd78a5e2da28a32711',1,'ExampleApp']]],
   ['copy_2803',['copy',['../struct_test_application.html#a7bb2d2ed53be1dc0f75ece843b1e4f04',1,'TestApplication']]],
-  ['cur_2804',['cur',['../struct_controller.html#a54f77011079233e80bf09ac9867773ce',1,'Controller::cur()'],['../struct_controller.html#a6e0cdfc850fa2e1f9a0d82184b886a7e',1,'Controller::cur()']]],
+  ['cur_2804',['cur',['../struct_controller.html#a7d377096a27de8f41d3eb0a014257ee0',1,'Controller::cur()'],['../struct_controller.html#a6e0cdfc850fa2e1f9a0d82184b886a7e',1,'Controller::cur()']]],
   ['currentversionnumber_2805',['currentVersionNumber',['../class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15',1,'ChimeraTK::ApplicationModule']]],
   ['cursp_2806',['curSP',['../struct_automation.html#a1a86176292eb457cf69d9a764a38a468',1,'Automation']]]
 ];

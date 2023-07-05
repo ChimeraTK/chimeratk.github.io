@@ -101,7 +101,7 @@ var searchData=
   ['createinstance_307',['createInstance',['../class_timer_dummy.html#aa035a00084e6250bc746460c54bd98c7',1,'TimerDummy::createInstance()'],['../class_test_transfer_group_dummy.html#a1adfcab1fe9f1fec118a0e6f671669eb',1,'TestTransferGroupDummy::createInstance()'],['../class_demo_dummy.html#ac3533d8bf7d46c1e08e282b1a5b45d53',1,'DemoDummy::createInstance()']]],
   ['createprocessvariable_308',['createProcessVariable',['../class_chimera_t_k_1_1_network_visitor.html#a7054315a2807b6aeb15c97f71d5882eb',1,'ChimeraTK::NetworkVisitor']]],
   ['createvar_309',['createVar',['../struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce',1,'ChimeraTK::ConfigReader']]],
-  ['cur_310',['cur',['../struct_controller.html#a6e0cdfc850fa2e1f9a0d82184b886a7e',1,'Controller::cur()'],['../struct_controller.html#a54f77011079233e80bf09ac9867773ce',1,'Controller::cur()']]],
+  ['cur_310',['cur',['../struct_controller.html#a6e0cdfc850fa2e1f9a0d82184b886a7e',1,'Controller::cur()'],['../struct_controller.html#a7d377096a27de8f41d3eb0a014257ee0',1,'Controller::cur()']]],
   ['currentversionnumber_311',['currentVersionNumber',['../class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15',1,'ChimeraTK::ApplicationModule']]],
   ['cursp_312',['curSP',['../struct_automation.html#a1a86176292eb457cf69d9a764a38a468',1,'Automation']]],
   ['detail_313',['detail',['../namespace_chimera_t_k_1_1_model_1_1detail.html',1,'ChimeraTK::Model']]],

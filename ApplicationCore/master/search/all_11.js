@@ -105,7 +105,7 @@ var searchData=
   ['somegroup_1131',['someGroup',['../struct_test_module.html#a2370c2310c6742f51ee94779a6269d2d',1,'TestModule']]],
   ['someinput_1132',['someInput',['../struct_blocking_read_test_module.html#a5553754b49aa8ae819cafb1ea780cbd7',1,'BlockingReadTestModule::someInput()'],['../struct_test_module.html#a51b52a53e7c1b1be341103e443f4728c',1,'TestModule::someInput()'],['../struct_vector_module.html#acbc9913ec8048f2ca45c71f59cb8ec6d',1,'VectorModule::someInput()']]],
   ['someoutput_1133',['someOutput',['../struct_blocking_read_test_module.html#a0e903f29e8d029c7886c60ec0fa8d40b',1,'BlockingReadTestModule::someOutput()'],['../struct_test_module.html#a9620a90ac94c25a53ddb529e32e73d3c',1,'TestModule::someOutput()'],['../struct_vector_module.html#aff9dd87f9d198b8fe443d6230eb2f514',1,'VectorModule::someOutput()']]],
-  ['sp_1134',['sp',['../struct_controller.html#a357b85017cb5dacd603c825134f8bfee',1,'Controller::sp()'],['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller::sp()']]],
+  ['sp_1134',['sp',['../struct_controller.html#a357b85017cb5dacd603c825134f8bfee',1,'Controller::sp()'],['../struct_controller.html#a62860748927fcdd12ff3776ee8db8172',1,'Controller::sp()']]],
   ['spec_5fdatavaliditypropagation_2edox_1135',['spec_dataValidityPropagation.dox',['../spec__data_validity_propagation_8dox.html',1,'']]],
   ['spec_5fexceptionhandling_2edox_1136',['spec_exceptionHandling.dox',['../spec__exception_handling_8dox.html',1,'']]],
   ['spec_5finitialvaluepropagation_2edox_1137',['spec_initialValuePropagation.dox',['../spec__initial_value_propagation_8dox.html',1,'']]],
