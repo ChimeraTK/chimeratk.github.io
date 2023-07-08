@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"class_chimera_t_k_1_1_module_group.html":[17,0,0,32],
+"class_chimera_t_k_1_1_module_group.html#a0c7ac59d7dee183e580e9af3701e1746":[17,0,0,32,0],
+"class_chimera_t_k_1_1_module_group.html#a14961fd10bbd6af8abd122396e759faf":[17,0,0,32,10],
 "class_chimera_t_k_1_1_module_group.html#a189ec8c45486857aa0afad98cb58eb0a":[17,0,0,32,7],
 "class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0":[17,0,0,32,11],
 "class_chimera_t_k_1_1_module_group.html#a28de5392d19a594be5d8e7b6df1ef582":[17,0,0,32,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "conceptual_overview.html#conceptualOverview_Application":[0,7],
 "conceptual_overview.html#conceptualOverview_ApplicationModule":[0,1],
 "conceptual_overview.html#conceptualOverview_Connections":[0,8],
-"conceptual_overview.html#conceptualOverview_ControlSystemModule":[0,6],
-"conceptual_overview.html#conceptualOverview_DeviceModule":[0,5],
-"conceptual_overview.html#conceptualOverview_DeviceModule_trigger":[0,5,0],
-"conceptual_overview.html#conceptualOverview_FanOuts":[0,9]
+"conceptual_overview.html#conceptualOverview_ControlSystemModule":[0,6]
 };

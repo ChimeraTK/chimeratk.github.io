@@ -5,7 +5,7 @@ var struct_example_app =
     [ "ExampleApp", "struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb", null ],
     [ "~ExampleApp", "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b", null ],
     [ "ExampleApp", "struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb", null ],
-    [ "~ExampleApp", "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b", null ],
+    [ "~ExampleApp", "struct_example_app.html#a4c24ad2f3fce1a74fff80b858d9b5df0", null ],
     [ "ExampleApp", "struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb", null ],
     [ "~ExampleApp", "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b", null ],
     [ "ExampleApp", "struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb", null ],
