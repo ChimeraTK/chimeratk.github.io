@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classeq__dummy.html#af9077981e641c850ff72eaae22c20053":[6,0,7,17],
+"classeq__dummy.html#af965f5c5875a786f3e062f1a5a6553ee":[6,0,7,1],
 "classeq__dummy.html#af9681a7ba9f87b95bc9b5f68f037b438":[6,0,7,23],
 "classeq__dummy.html#affd168c8b455616dd6cd9f0b51c5cfa9":[6,0,7,20],
 "classes.html":[6,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "test_doocs_backend_8cpp.html#a79a1c66d9029df4f13787742cbef80f7":[7,0,3,1,1,5],
 "test_doocs_backend_8cpp.html#a7b21d19a7332f57ca5556b6fbab0f3ad":[7,0,3,1,1,20],
 "test_doocs_backend_8cpp.html#a812d46eda0e4c06432ddd46bf73e4a40":[7,0,3,1,1,9],
-"test_doocs_backend_8cpp.html#a8bd9202033f6e5ae4dea1695dd320716":[7,0,3,1,1,16],
-"test_doocs_backend_8cpp.html#a960aa07de8f098886f29860e3fd347d5":[7,0,3,1,1,14],
-"test_doocs_backend_8cpp.html#aa2b56760321300ad0fb6c2670b833ebe":[7,0,3,1,1,27]
+"test_doocs_backend_8cpp.html#a8bd9202033f6e5ae4dea1695dd320716":[7,0,3,1,1,16]
 };
