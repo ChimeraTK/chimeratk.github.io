@@ -6,7 +6,12 @@ var hierarchy =
     [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
     [ "ChimeraTK::ApplicationBase", "class_chimera_t_k_1_1_application_base.html", [
       [ "MyTestApplication", "class_my_test_application.html", null ],
-      [ "ReferenceTestApplication", "class_reference_test_application.html", null ]
+      [ "ReferenceTestApplication", "class_reference_test_application.html", [
+        [ "AppWithParams", "class_app_with_params.html", null ]
+      ] ]
+    ] ],
+    [ "ChimeraTK::ApplicationFactoryBase", "class_chimera_t_k_1_1_application_factory_base.html", [
+      [ "ChimeraTK::ApplicationFactory< APPLICATION_TYPE >", "class_chimera_t_k_1_1_application_factory.html", null ]
     ] ],
     [ "AsyncReadTest", "class_async_read_test.html", null ],
     [ "DecoratorBackend::BackendRegisterer", "class_decorator_backend_1_1_backend_registerer.html", null ],

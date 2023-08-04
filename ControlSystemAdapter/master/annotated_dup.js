@@ -5,6 +5,8 @@ var annotated_dup =
         [ "Round", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", "struct_chimera_t_k_1_1csa__helpers_1_1_round" ]
       ] ],
       [ "ApplicationBase", "class_chimera_t_k_1_1_application_base.html", "class_chimera_t_k_1_1_application_base" ],
+      [ "ApplicationFactoryBase", "class_chimera_t_k_1_1_application_factory_base.html", "class_chimera_t_k_1_1_application_factory_base" ],
+      [ "ApplicationFactory", "class_chimera_t_k_1_1_application_factory.html", "class_chimera_t_k_1_1_application_factory" ],
       [ "BidirectionalProcessArray", "class_chimera_t_k_1_1_bidirectional_process_array.html", "class_chimera_t_k_1_1_bidirectional_process_array" ],
       [ "ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", "class_chimera_t_k_1_1_control_system_p_v_manager" ],
       [ "DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", "class_chimera_t_k_1_1_device_p_v_manager" ],
@@ -55,6 +57,7 @@ var annotated_dup =
     [ "Adder< std::string, IMPL_T >", "struct_adder_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
     [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
     [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
+    [ "AppWithParams", "class_app_with_params.html", "class_app_with_params" ],
     [ "AsyncReadTest", "class_async_read_test.html", "class_async_read_test" ],
     [ "AsyncReadTestSuite", "class_async_read_test_suite.html", "class_async_read_test_suite" ],
     [ "Bidir", "struct_bidir.html", "struct_bidir" ],

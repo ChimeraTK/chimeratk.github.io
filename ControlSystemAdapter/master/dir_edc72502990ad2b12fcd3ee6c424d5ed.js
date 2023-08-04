@@ -3,6 +3,10 @@ var dir_edc72502990ad2b12fcd3ee6c424d5ed =
     [ "ApplicationBase.h", "_application_base_8h.html", [
       [ "ApplicationBase", "class_chimera_t_k_1_1_application_base.html", "class_chimera_t_k_1_1_application_base" ]
     ] ],
+    [ "ApplicationFactory.h", "_application_factory_8h.html", [
+      [ "ApplicationFactoryBase", "class_chimera_t_k_1_1_application_factory_base.html", "class_chimera_t_k_1_1_application_factory_base" ],
+      [ "ApplicationFactory", "class_chimera_t_k_1_1_application_factory.html", "class_chimera_t_k_1_1_application_factory" ]
+    ] ],
     [ "BidirectionalProcessArray.h", "_bidirectional_process_array_8h.html", "_bidirectional_process_array_8h" ],
     [ "ControlSystemPVManager.h", "_control_system_p_v_manager_8h.html", [
       [ "ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", "class_chimera_t_k_1_1_control_system_p_v_manager" ]

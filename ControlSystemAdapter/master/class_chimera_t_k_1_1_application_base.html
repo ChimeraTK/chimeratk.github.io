@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_application_base
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_chimera_t_k_1_1_application_base-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::ApplicationBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -103,7 +104,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_application_base
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base__inherit__graph.svg" width="363" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base__inherit__graph.svg" width="363" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -111,7 +112,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_application_base
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base__coll__graph.svg" width="314" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base__coll__graph.svg" width="347" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -174,15 +175,23 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:a687c18c37f236fcb1bf73def3f009cea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_chimera_t_k_1_1_application_base.html">ApplicationBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a687c18c37f236fcb1bf73def3f009cea">instance</a> = nullptr</td></tr>
 <tr class="memdesc:a687c18c37f236fcb1bf73def3f009cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the only instance of the Application.  <a href="class_chimera_t_k_1_1_application_base.html#a687c18c37f236fcb1bf73def3f009cea">More...</a><br /></td></tr>
 <tr class="separator:a687c18c37f236fcb1bf73def3f009cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad484a1722c03b9b270c95a649276177"><td class="memItemLeft" align="right" valign="top">static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#aad484a1722c03b9b270c95a649276177">instance_mutex</a></td></tr>
-<tr class="memdesc:aad484a1722c03b9b270c95a649276177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for thread-safety when setting the instance pointer.  <a href="class_chimera_t_k_1_1_application_base.html#aad484a1722c03b9b270c95a649276177">More...</a><br /></td></tr>
-<tr class="separator:aad484a1722c03b9b270c95a649276177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53403f49294bd86a96e63fdd1c823354"><td class="memItemLeft" align="right" valign="top">static std::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a53403f49294bd86a96e63fdd1c823354">instanceMutex</a></td></tr>
+<tr class="memdesc:a53403f49294bd86a96e63fdd1c823354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for thread-safety when setting the instance pointer.  <a href="class_chimera_t_k_1_1_application_base.html#a53403f49294bd86a96e63fdd1c823354">More...</a><br /></td></tr>
+<tr class="separator:a53403f49294bd86a96e63fdd1c823354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a99e0cad91308160391a13270d1723890"><td class="memTemplParams" colspan="2">template&lt;typename APPLICATION_TYPE &gt; </td></tr>
+<tr class="memitem:a99e0cad91308160391a13270d1723890"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a99e0cad91308160391a13270d1723890">ApplicationFactory</a></td></tr>
+<tr class="separator:a99e0cad91308160391a13270d1723890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411a51e67089ec6277b009669ce4983b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a411a51e67089ec6277b009669ce4983b">ApplicationFactoryBase</a></td></tr>
+<tr class="separator:a411a51e67089ec6277b009669ce4983b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for applications. </p>
 <p>Note: The class intended for use by the application programmers is part of the ApplicationCore library and called ChimeraTK::Application. <a class="el" href="class_chimera_t_k_1_1_application_base.html" title="Base class for applications.">ApplicationBase</a> just contains the part which is necessary to write the middleware-specific code initialising the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00022">22</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00018">18</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab2401064abba81cc0201f34a75512c47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2401064abba81cc0201f34a75512c47">&#9670;&nbsp;</a></span>ApplicationBase()</h2>
@@ -203,7 +212,7 @@ Static Protected Attributes</h2></td></tr>
 <p>Constructor: the first instance will be created explicitly by the control system adapter code. </p>
 <p>Any second instance is not allowed, thus calling the constructor multiple times will throw an exception. Design note: We are not using a true singleton pattern, since Application is an abstract base class. The actual instance is created as a static variable. The application developer should derive his application from this class and implement the <a class="el" href="class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b" title="Initialise the application.">initialise()</a> function only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00019">19</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00017">17</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 
 </div>
 </div>
@@ -233,7 +242,7 @@ Static Protected Attributes</h2></td></tr>
 <p>The implementation of Application must call Application::shutdown() in its destructor. </p>
 <p>This destructor just checks if Application::shutdown() was properly called and throws an exception otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00029">29</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00048">48</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 
 </div>
 </div>
@@ -264,12 +273,20 @@ Static Protected Attributes</h2></td></tr>
 <p>Obtain instance of the application. </p>
 <p>Will throw an exception if called before the instance has been created by the control system adapter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00068">68</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00087">87</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_ac4dc7a539634dc5b5e874e2409f7bfa3_cgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_ac4dc7a539634dc5b5e874e2409f7bfa3_icgraph.svg" width="510" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -301,7 +318,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Return the name of the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00079">79</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00075">75</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -332,12 +349,12 @@ Static Protected Attributes</h2></td></tr>
 <p>Obtain the <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables.">PersistentDataStorage</a> object. </p>
 <p>You can specify the write interval in seconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00082">82</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00078">78</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_a25aebdb26a0fe2520bbb9989194ea69b_icgraph.svg" width="510" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -369,7 +386,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Obtain the process variable manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00072">72</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00068">68</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +449,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_reference_test_application.html#a4c6f251ad5a6c6b55db14339e8a32e4f">ReferenceTestApplication</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00049">49</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00045">45</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -485,12 +502,12 @@ Static Protected Attributes</h2></td></tr>
 <p>Set the process variable manager. </p>
 <p>This will be called by the control system adapter initialisation code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00062">62</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00081">81</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_a408946c453e9c6928c265dac185a87bd_icgraph.svg" width="456" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -523,15 +540,66 @@ Static Protected Attributes</h2></td></tr>
 <p>This will remove the global pointer to the instance and allows creating another instance afterwards. </p>
 <p>This is mostly useful for writing tests, as it allows to run several applications sequentially in the same executable. It is mandatory to call this function inside the descructor of the implemention of this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00052">52</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00071">71</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_a5ec279bbc23164f485c3d63b8c1dd012_icgraph.svg" width="472" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a99e0cad91308160391a13270d1723890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e0cad91308160391a13270d1723890">&#9670;&nbsp;</a></span>ApplicationFactory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename APPLICATION_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_chimera_t_k_1_1_application_factory.html">ApplicationFactory</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00104">104</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+
+</div>
+</div>
+<a id="a411a51e67089ec6277b009669ce4983b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411a51e67089ec6277b009669ce4983b">&#9670;&nbsp;</a></span>ApplicationFactoryBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_chimera_t_k_1_1_application_factory_base.html">ApplicationFactoryBase</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00106">106</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +626,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Pointer to persistent data storage object, if used. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00096">96</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00092">92</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +652,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Pointer to the process variable manager used to create variables exported to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00093">93</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00089">89</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -610,7 +678,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>The name of the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00089">89</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00085">85</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +704,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Flag if <a class="el" href="class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012" title="This will remove the global pointer to the instance and allows creating another instance afterwards.">shutdown()</a> has been called. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00099">99</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00095">95</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -662,12 +730,12 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Pointer to the only instance of the Application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00102">102</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00098">98</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
-<a id="aad484a1722c03b9b270c95a649276177"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad484a1722c03b9b270c95a649276177">&#9670;&nbsp;</a></span>instance_mutex</h2>
+<a id="a53403f49294bd86a96e63fdd1c823354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53403f49294bd86a96e63fdd1c823354">&#9670;&nbsp;</a></span>instanceMutex</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +744,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::mutex ChimeraTK::ApplicationBase::instance_mutex</td>
+          <td class="memname">std::recursive_mutex ChimeraTK::ApplicationBase::instanceMutex</td>
         </tr>
       </table>
   </td>
@@ -688,7 +756,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Mutex for thread-safety when setting the instance pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00105">105</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00101">101</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +770,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application_base.html">ApplicationBase</a></li>
-    <li class="footer">Generated on Fri May 26 2023 03:56:46 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 4 2023 03:53:38 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

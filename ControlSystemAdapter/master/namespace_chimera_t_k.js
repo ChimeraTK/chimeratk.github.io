@@ -2,6 +2,8 @@ var namespace_chimera_t_k =
 [
     [ "csa_helpers", "namespace_chimera_t_k_1_1csa__helpers.html", "namespace_chimera_t_k_1_1csa__helpers" ],
     [ "ApplicationBase", "class_chimera_t_k_1_1_application_base.html", "class_chimera_t_k_1_1_application_base" ],
+    [ "ApplicationFactoryBase", "class_chimera_t_k_1_1_application_factory_base.html", "class_chimera_t_k_1_1_application_factory_base" ],
+    [ "ApplicationFactory", "class_chimera_t_k_1_1_application_factory.html", "class_chimera_t_k_1_1_application_factory" ],
     [ "BidirectionalProcessArray", "class_chimera_t_k_1_1_bidirectional_process_array.html", "class_chimera_t_k_1_1_bidirectional_process_array" ],
     [ "ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", "class_chimera_t_k_1_1_control_system_p_v_manager" ],
     [ "DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", "class_chimera_t_k_1_1_device_p_v_manager" ],

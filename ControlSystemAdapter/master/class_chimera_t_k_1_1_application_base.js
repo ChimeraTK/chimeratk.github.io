@@ -10,6 +10,8 @@ var class_chimera_t_k_1_1_application_base =
     [ "run", "class_chimera_t_k_1_1_application_base.html#a3a32c70d9576ac03963dbcf2f9f4f34d", null ],
     [ "setPVManager", "class_chimera_t_k_1_1_application_base.html#a408946c453e9c6928c265dac185a87bd", null ],
     [ "shutdown", "class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012", null ],
+    [ "ApplicationFactory", "class_chimera_t_k_1_1_application_base.html#a99e0cad91308160391a13270d1723890", null ],
+    [ "ApplicationFactoryBase", "class_chimera_t_k_1_1_application_base.html#a411a51e67089ec6277b009669ce4983b", null ],
     [ "_persistentDataStorage", "class_chimera_t_k_1_1_application_base.html#a63baa1626fd1a7a5debabd66161fe394", null ],
     [ "_processVariableManager", "class_chimera_t_k_1_1_application_base.html#a68a5fcd2b5071771b4092ea61f07503f", null ],
     [ "applicationName", "class_chimera_t_k_1_1_application_base.html#adb56be02730cdd3abc9002700dbb84c4", null ],
