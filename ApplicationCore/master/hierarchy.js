@@ -99,6 +99,7 @@ var hierarchy =
         [ "TestPrioApplication", "struct_test_prio_application.html", null ],
         [ "TestReadAnyApplication", "struct_test_read_any_application.html", null ],
         [ "TestWithTriggerApplication", "struct_test_with_trigger_application.html", null ],
+        [ "TheTestApplication", "struct_the_test_application.html", null ],
         [ "TriggerFanOutD9DummyApplication", "struct_trigger_fan_out_d9_dummy_application.html", null ],
         [ "VectorOfEverythingApp", "struct_vector_of_everything_app.html", null ],
         [ "VectorOfModulesApp", "struct_vector_of_modules_app.html", null ]
@@ -274,6 +275,8 @@ var hierarchy =
               [ "GG", "struct_g_g.html", null ],
               [ "HH", "struct_h_h.html", null ]
             ] ],
+            [ "TheOutputModule", "struct_the_output_module.html", null ],
+            [ "ThePushModule", "struct_the_push_module.html", null ],
             [ "TriggerModule", "struct_trigger_module.html", null ],
             [ "TriggerModule", "struct_trigger_module.html", null ],
             [ "VectorModule", "struct_vector_module.html", null ],

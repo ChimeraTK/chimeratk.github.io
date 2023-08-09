@@ -6,6 +6,8 @@ var class_chimera_t_k_1_1_scalar_accessor =
     [ "operator=", "class_chimera_t_k_1_1_scalar_accessor.html#aeec01fb9cd397710a7671d2a5c76f511", null ],
     [ "operator=", "class_chimera_t_k_1_1_scalar_accessor.html#a0aaf8f6a83137c4ba22ea18740fb3c1e", null ],
     [ "replace", "class_chimera_t_k_1_1_scalar_accessor.html#afd93f7499f2e63442b11acd51edff63b", null ],
+    [ "setAndWrite", "class_chimera_t_k_1_1_scalar_accessor.html#a5aef83b6299c0cacffe702f8956b4fab", null ],
+    [ "setAndWrite", "class_chimera_t_k_1_1_scalar_accessor.html#aa4a256db36e0927b6ac89138e921fc02", null ],
     [ "write", "class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8", null ],
     [ "write", "class_chimera_t_k_1_1_scalar_accessor.html#a02f5ea46e0582dfceb8e9cc06b25c302", null ],
     [ "writeDestructively", "class_chimera_t_k_1_1_scalar_accessor.html#a3a1668d714e7218f0773f54a5de0976e", null ],

@@ -135,12 +135,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a30c397f9c9a396866c2b6c619812ed46 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eeff99021076ad757f3014219964d18 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#a5eeff99021076ad757f3014219964d18">writeIfDifferent</a> (UserType newValue, VersionNumber versionNumber, DataValidity validity)=delete</td></tr>
 <tr class="separator:a5eeff99021076ad757f3014219964d18 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a256db36e0927b6ac89138e921fc02 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#aa4a256db36e0927b6ac89138e921fc02">setAndWrite</a> (UserType newValue, VersionNumber versionNumber)=delete</td></tr>
+<tr class="separator:aa4a256db36e0927b6ac89138e921fc02 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa95b652b95fb7b51327486ce37d77ab8 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8">write</a> ()</td></tr>
 <tr class="separator:aa95b652b95fb7b51327486ce37d77ab8 inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a1668d714e7218f0773f54a5de0976e inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#a3a1668d714e7218f0773f54a5de0976e">writeDestructively</a> ()</td></tr>
 <tr class="separator:a3a1668d714e7218f0773f54a5de0976e inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78be8599aa780f82d53eb4b57270d76b inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#a78be8599aa780f82d53eb4b57270d76b">writeIfDifferent</a> (UserType newValue)</td></tr>
 <tr class="separator:a78be8599aa780f82d53eb4b57270d76b inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aef83b6299c0cacffe702f8956b4fab inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#a5aef83b6299c0cacffe702f8956b4fab">setAndWrite</a> (UserType newValue)</td></tr>
+<tr class="separator:a5aef83b6299c0cacffe702f8956b4fab inherit pub_methods_class_chimera_t_k_1_1_scalar_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_inversion_of_control_accessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_inversion_of_control_accessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_inversion_of_control_accessor.html">ChimeraTK::InversionOfControlAccessor&lt; ScalarAccessor&lt; UserType &gt; &gt;</a></td></tr>
 <tr class="memitem:af60e79a119e1116b0bc00d78d458d549 inherit pub_methods_class_chimera_t_k_1_1_inversion_of_control_accessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_inversion_of_control_accessor.html#af60e79a119e1116b0bc00d78d458d549">~InversionOfControlAccessor</a> ()</td></tr>
 <tr class="memdesc:af60e79a119e1116b0bc00d78d458d549 inherit pub_methods_class_chimera_t_k_1_1_inversion_of_control_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister at its owner when deleting.  <a href="class_chimera_t_k_1_1_inversion_of_control_accessor.html#af60e79a119e1116b0bc00d78d458d549">More...</a><br /></td></tr>
@@ -197,7 +201,7 @@ struct ChimeraTK::ScalarOutputPushRB&lt; UserType &gt;</h3>
 
 <p>Convenience class for output scalar accessors with return channel ("read back") (always <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3ba21a361d96e3e13f5f109748c2a9d2434">UpdateMode::push</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_accessor_8h_source.html#l00109">109</a> of file <a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb6a5ea9cd5d01b9882f7189487e7562"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb6a5ea9cd5d01b9882f7189487e7562">&#9670;&nbsp;</a></span>ScalarOutputPushRB() <span class="overload">[1/2]</span></h2>
@@ -245,7 +249,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scalar_accessor_8h_source.html#l00228">228</a> of file <a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_accessor_8h_source.html#l00238">238</a> of file <a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +278,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scalar_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +291,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_scalar_output_push_r_b.html">ScalarOutputPushRB</a></li>
-    <li class="footer">Generated on Sat Jul 8 2023 03:53:51 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 9 2023 03:53:55 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
