@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mainloop',['mainLoop',['../structLogFileModule.html#a730fe9ac0bbe5a6ec9b4df7f9e66c5cd',1,'LogFileModule::mainLoop()'],['../structProcessInfoModule.html#a66f1ebb4d2179c7ceb5798fd1c81bc27',1,'ProcessInfoModule::mainLoop()'],['../structProcessControlModule.html#ac3024292ea7763b6bc2b15a710f0f5ed',1,'ProcessControlModule::mainLoop()'],['../classSystemInfoModule.html#a876c95c70f1cdf6ffa3f3301f1d1a898',1,'SystemInfoModule::mainLoop()'],['../structFileSystemModule.html#a4199e1dd422368b3e3700d500f53666b',1,'FileSystemModule::mainLoop()'],['../structNetworkModule.html#af06fc227b558a13184bd0c3b168d7102',1,'NetworkModule::mainLoop()']]],
-  ['message',['Message',['../structlogging_1_1Message.html#acad9e2b5141c4745d521858aa30d3d01',1,'logging::Message::Message(const std::string &amp;msg, const LogLevel &amp;level)'],['../structlogging_1_1Message.html#a4c49efe960b9d13452b5827fdad5ea41',1,'logging::Message::Message()'],['../structlogging_1_1Message.html#a26d6e2dfbadbdc245128a20ea69cc4f4',1,'logging::Message::Message(Message &amp;&amp;msg)']]]
+  ['logfilemodule_256',['LogFileModule',['../struct_log_file_module.html#a2420f6e7925056944d97b09e137dcec3',1,'LogFileModule']]]
 ];
