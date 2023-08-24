@@ -18,12 +18,8 @@ var hierarchy =
         [ "ConstantD10DummyApplication", "struct_constant_d10_dummy_application.html", null ],
         [ "ConstantTestApplication< INPUT_TYPE >", "struct_constant_test_application.html", null ],
         [ "DummyApplication", "struct_dummy_application.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ],
+        [ "ExampleApp", "class_example_app.html", null ],
+        [ "ExampleApp", "class_example_app.html", null ],
         [ "InitTestApplication", "struct_init_test_application.html", null ],
         [ "OneModuleApp", "struct_one_module_app.html", null ],
         [ "PollDummyApplication", "struct_poll_dummy_application.html", null ],
@@ -31,7 +27,6 @@ var hierarchy =
         [ "PushD9DummyApplication", "struct_push_d9_dummy_application.html", null ],
         [ "PushDummyApplication", "struct_push_dummy_application.html", null ],
         [ "ReadOnlyTestApplication", "struct_read_only_test_application.html", null ],
-        [ "Server", "struct_server.html", null ],
         [ "Test6_a1_DummyApplication", "struct_test6__a1___dummy_application.html", null ],
         [ "Test6_a2_DummyApplication", "struct_test6__a2___dummy_application.html", null ],
         [ "Test6_a3_DummyApplication", "struct_test6__a3___dummy_application.html", null ],
@@ -112,8 +107,6 @@ var hierarchy =
     [ "B", null, [
       [ "ChimeraTK::Model::CombinedSearchConfig< A, B >", "struct_chimera_t_k_1_1_model_1_1_combined_search_config.html", null ]
     ] ],
-    [ "DemoDummy::BackendRegisterer", "class_demo_dummy_1_1_backend_registerer.html", null ],
-    [ "TimerDummy::BackendRegisterer", "class_timer_dummy_1_1_backend_registerer.html", null ],
     [ "BASE", null, [
       [ "ChimeraTK::Model::detail::VisitorHelper< BASE, VISITOR, FILTER, RETURN_FIRST_HIT >", "struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html", null ]
     ] ],
@@ -121,13 +114,9 @@ var hierarchy =
     [ "ChimeraTK::ConfigParser", "class_chimera_t_k_1_1_config_parser.html", null ],
     [ "ConstantD10InitialValueEceptionDummy", "struct_constant_d10_initial_value_eception_dummy.html", null ],
     [ "D9InitialValueEceptionDummy", "struct_d9_initial_value_eception_dummy.html", null ],
-    [ "ChimeraTK::DeviceBackendImpl", null, [
-      [ "TimerDummy", "class_timer_dummy.html", null ]
-    ] ],
     [ "ChimeraTK::Model::VertexProperties::DeviceModuleProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_device_module_properties.html", null ],
     [ "ChimeraTK::Model::VertexProperties::DirectoryProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_directory_properties.html", null ],
     [ "ChimeraTK::DummyBackend", null, [
-      [ "DemoDummy", "class_demo_dummy.html", null ],
       [ "TestTransferGroupDummy", "class_test_transfer_group_dummy.html", null ]
     ] ],
     [ "ChimeraTK::Model::EdgeProperties", "struct_chimera_t_k_1_1_model_1_1_edge_properties.html", null ],
@@ -171,8 +160,7 @@ var hierarchy =
             [ "InputModule< ChimeraTK::ScalarPollInput< int > >", "struct_input_module.html", null ],
             [ "TestApplication2::Module< ChimeraTK::ScalarOutputPushRB< int > >", "struct_test_application2_1_1_module.html", null ],
             [ "TestApplication2::Module< ChimeraTK::ScalarPushInputWB< int > >", "struct_test_application2_1_1_module.html", null ],
-            [ "Automation", "struct_automation.html", null ],
-            [ "Automation", "struct_automation.html", null ],
+            [ "AverageCurrent", "class_average_current.html", null ],
             [ "BlockingReadTestModule", "struct_blocking_read_test_module.html", null ],
             [ "ChimeraTK::ArrayPipe< Type >", "struct_chimera_t_k_1_1_array_pipe.html", null ],
             [ "ChimeraTK::ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", null ],
@@ -202,9 +190,7 @@ var hierarchy =
             [ "ChimeraTK::WriteBitMask< NBITS >", "struct_chimera_t_k_1_1_write_bit_mask.html", null ],
             [ "ChimeraTK::WriteSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_write_split_array_module.html", null ],
             [ "ConstantModule", "struct_constant_module.html", null ],
-            [ "Controller", "struct_controller.html", null ],
-            [ "Controller", "struct_controller.html", null ],
-            [ "Controller", "struct_controller.html", null ],
+            [ "Controller", "class_controller.html", null ],
             [ "Deeper", "struct_deeper.html", null ],
             [ "Deeper2::Hierarchies", "struct_deeper2_1_1_hierarchies.html", null ],
             [ "InputModule< INPUT_TYPE >", "struct_input_module.html", null ],
@@ -233,10 +219,9 @@ var hierarchy =
             [ "ReadAnyTestModule", "struct_read_any_test_module.html", null ],
             [ "ReadOnlyTestApplication::TestModule", "struct_read_only_test_application_1_1_test_module.html", null ],
             [ "ScalarOutputModule", "struct_scalar_output_module.html", null ],
+            [ "SetpointRamp", "class_setpoint_ramp.html", null ],
             [ "SimulationModule", "struct_simulation_module.html", null ],
             [ "StatusGenerator", "struct_status_generator.html", null ],
-            [ "TableGeneration", "struct_table_generation.html", null ],
-            [ "TemplateModule", "struct_template_module.html", null ],
             [ "TestApplication2::Module< ACCESSOR >", "struct_test_application2_1_1_module.html", null ],
             [ "TestApplication< T >::Module", "struct_test_application_1_1_module.html", null ],
             [ "TestApplication< T >::Name", "struct_test_application_1_1_name.html", null ],
@@ -296,7 +281,6 @@ var hierarchy =
           [ "MyModule::PointlessVariableGroup", "struct_my_module_1_1_pointless_variable_group.html", null ],
           [ "ReadAnyTestModule::Inputs", "struct_read_any_test_module_1_1_inputs.html", null ],
           [ "SomeGroup", "struct_some_group.html", null ],
-          [ "TableGeneration::TableParameters", "struct_table_generation_1_1_table_parameters.html", null ],
           [ "TestApplication< T >::Module::Vars", "struct_test_application_1_1_module_1_1_vars.html", null ],
           [ "TestApplication< T >::Name::Name2", "struct_test_application_1_1_name_1_1_name2.html", null ],
           [ "TestApplication< T >::TestModule::ExtraHierarchy", "struct_test_application_1_1_test_module_1_1_extra_hierarchy.html", null ],
@@ -380,7 +364,6 @@ var hierarchy =
         [ "ChimeraTK::ScalarOutput< uint64_t >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarOutputPushRB< double >", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", null ],
         [ "ChimeraTK::ScalarPollInput< uint32_t >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
-        [ "ChimeraTK::ScalarPollInput< double >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPollInput< float >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPollInput< int >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPollInput< T >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
@@ -431,8 +414,7 @@ var hierarchy =
     [ "ChimeraTK::Model::VertexProperties::ModuleGroupProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_module_group_properties.html", null ],
     [ "ChimeraTK::NDRegisterAccessor", null, [
       [ "ChimeraTK::ConstantAccessor< UserType >", "class_chimera_t_k_1_1_constant_accessor.html", null ],
-      [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],
-      [ "TimerDummyRegisterAccessor< UserType >", "class_timer_dummy_register_accessor.html", null ]
+      [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ]
     ] ],
     [ "ChimeraTK::NDRegisterAccessorDecorator", null, [
       [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
@@ -510,7 +492,6 @@ var hierarchy =
     [ "Test6_b_InitialValueEceptionDummy", "struct_test6__b___initial_value_eception_dummy.html", null ],
     [ "Test6_c_InitialValueEceptionDummy", "struct_test6__c___initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::TestFacility", "class_chimera_t_k_1_1_test_facility.html", null ],
-    [ "TestFixture", "struct_test_fixture.html", null ],
     [ "TestFixtureWithEceptionDummy< APPLICATION_TYPE >", "struct_test_fixture_with_eception_dummy.html", null ],
     [ "TestInitialValueExceptionDummy", "struct_test_initial_value_exception_dummy.html", null ],
     [ "TestApplication< T >::TestModule< T >", "struct_test_application_1_1_test_module.html", null ],

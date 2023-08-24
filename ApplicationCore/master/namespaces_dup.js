@@ -14,26 +14,8 @@ var namespaces_dup =
       [ "root", "namespacedraw_module_connections.html#abfbed52cde3f71396dbf5c6942036fc8", null ],
       [ "tree", "namespacedraw_module_connections.html#af4f2c4644c32444f8c4b8d9f2642bd8c", null ]
     ] ],
-    [ "oven_sim", "namespaceoven__sim.html", [
-      [ "c", "namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c", null ],
-      [ "d", "namespaceoven__sim.html#a2d2b40f36a63aba88f95c5b5c474057d", null ],
-      [ "environment", "namespaceoven__sim.html#a789a3926727c9ac7cc25eb595022cd1f", null ],
-      [ "h", "namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7", null ],
-      [ "I", "namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3", null ],
-      [ "ovenTemp", "namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903", null ],
-      [ "tempChange", "namespaceoven__sim.html#a5429fd646dac622dc00c2343cd058fab", null ]
-    ] ],
-    [ "oven_sim2c", "namespaceoven__sim2c.html", [
-      [ "c", "namespaceoven__sim2c.html#ae7da0a36a43c57777fc3312a7d038d50", null ],
-      [ "d", "namespaceoven__sim2c.html#a96be2907a1a860e8b6d09a219576fc7a", null ],
-      [ "environment", "namespaceoven__sim2c.html#ae24051932b51b651114245d5b11f7025", null ],
-      [ "gains", "namespaceoven__sim2c.html#a777cec4acd8be67aa8508c2be5a832b1", null ],
-      [ "h", "namespaceoven__sim2c.html#ae9ac6d926b1bdc6cded0cab1bb15ea15", null ],
-      [ "I", "namespaceoven__sim2c.html#a97f2fff2d514e1d3ff8a8d5384b0a41d", null ],
-      [ "ovenTemp", "namespaceoven__sim2c.html#a3584176d505713185a0b666d5cf28458", null ],
-      [ "tempChange", "namespaceoven__sim2c.html#acd6ccc2b62d94f87889a5a12a34f4f28", null ],
-      [ "tempRaw", "namespaceoven__sim2c.html#a986dc6283a111ec08f77307226e332ad", null ],
-      [ "voltagesRaw", "namespaceoven__sim2c.html#a08ce07204df6bbe63e87107946ea1e58", null ]
+    [ "ovenInit", "namespaceoven_init.html", [
+      [ "dev", "namespaceoven_init.html#a75a8f87d4a4c293a3517bc5c62b848d7", null ]
     ] ],
     [ "variableHouseoldToWikiTable", "namespacevariable_houseold_to_wiki_table.html", [
       [ "findCommonPrefix", "namespacevariable_houseold_to_wiki_table.html#ae04b03174d5356fce5062180ed016f2d", null ],

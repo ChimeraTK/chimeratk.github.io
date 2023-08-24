@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['example_201_3a_20application_20with_20two_20modules_20and_20two_20hardware_20devices_3357',['Example 1: Application with two modules and two hardware devices',['../example1.html',1,'']]],
-  ['example_202_3a_20small_20but_20complete_20application_20with_20a_20proportional_20controller_3358',['Example 2: Small but complete application with a proportional controller',['../example2.html',1,'']]],
-  ['example_202a_3a_20application_20with_20automation_20module_3359',['Example 2a: Application with automation module',['../example2a.html',1,'']]],
-  ['example_203_3a_20minimal_20device_20server_3360',['Example 3: Minimal device server',['../example3.html',1,'']]],
-  ['exception_20handling_3361',['Exception Handling',['../exception_handling.html',1,'index']]]
+  ['example_3a_20basic_20structure_20of_20an_20application_3215',['Example: Basic structure of an Application',['../example.html',1,'']]],
+  ['exception_20handling_3216',['Exception Handling',['../exception_handling.html',1,'index']]]
 ];

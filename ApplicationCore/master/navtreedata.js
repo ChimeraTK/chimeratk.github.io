@@ -27,23 +27,23 @@ var NAVTREE =
   [ "ChimeraTK-ApplicationCore", "index.html", [
     [ "Conceptual overview", "conceptual_overview.html", [
       [ "Introduction", "conceptual_overview.html#Introduction", null ],
-      [ "Application module", "conceptual_overview.html#conceptualOverview_ApplicationModule", null ],
-      [ "Process variables and accessors", "conceptual_overview.html#conceptualOverview_ProcessVariable", [
-        [ "Introduction", "conceptual_overview.html#conceptualOverview_ProcessVariable_intro", null ],
-        [ "Push and poll transfer modes", "conceptual_overview.html#conceptualOverview_ProcessVariable_accessMode", null ],
-        [ "Name and hierarchies", "conceptual_overview.html#conceptualOverview_ProcessVariable_hierarchy", null ],
-        [ "Variable networks", "conceptual_overview.html#conceptualOverview_ProcessVariable_network", null ],
-        [ "Type and meta information", "conceptual_overview.html#conceptualOverview_ProcessVariable_metainfo", null ]
+      [ "Application module", "conceptual_overview.html#conceptualOverview_ApplicationModule", [
+        [ "Process variables and accessors", "conceptual_overview.html#conceptualOverview_ProcessVariable", null ],
+        [ "Push and poll transfer modes", "conceptual_overview.html#conceptualOverview_ProcessVariable_accessMode", null ]
       ] ],
-      [ "Variable groups", "conceptual_overview.html#conceptualOverview_VariableGroup", null ],
-      [ "Module groups", "conceptual_overview.html#conceptualOverview_ModuleGroup", null ],
-      [ "Device modules", "conceptual_overview.html#conceptualOverview_DeviceModule", [
-        [ "Triggers", "conceptual_overview.html#conceptualOverview_DeviceModule_trigger", null ]
-      ] ],
-      [ "Control system module", "conceptual_overview.html#conceptualOverview_ControlSystemModule", null ],
       [ "The Application", "conceptual_overview.html#conceptualOverview_Application", null ],
-      [ "Process variable connections", "conceptual_overview.html#conceptualOverview_Connections", null ],
-      [ "Fanouts", "conceptual_overview.html#conceptualOverview_FanOuts", null ]
+      [ "Connections between ApplicationModules", "conceptual_overview.html#conceptualOverview_PVConnections", null ],
+      [ "Module groups", "conceptual_overview.html#conceptualOverview_ModuleGroup", null ],
+      [ "Device modules", "conceptual_overview.html#conceptualOverview_DeviceModule", null ],
+      [ "Periodic Triggers", "conceptual_overview.html#conceptualOverview_PeriodicTriggers", null ],
+      [ "Configuration constants", "conceptual_overview.html#conceptualOverview_ConfigReader", null ],
+      [ "Variable groups", "conceptual_overview.html#conceptualOverview_VariableGroup", null ],
+      [ "The Application model", "conceptual_overview.html#conceptualOverview_ApplicationModel", null ],
+      [ "Fanouts", "conceptual_overview.html#conceptualOverview_FanOuts", null ],
+      [ "Initial values", "conceptual_overview.html#conceptualOverview_InitialValues", null ],
+      [ "Device exception handling", "conceptual_overview.html#conceptualOverview_ExceptionHandling", null ],
+      [ "Data validity propagation", "conceptual_overview.html#conceptualOverview_DataValidity", null ],
+      [ "Control system integration", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration", null ]
     ] ],
     [ "Exception Handling", "exception_handling.html", [
       [ "Introduction", "exception_handling.html#exceptionHandling_Introduction", null ],
@@ -155,10 +155,31 @@ var NAVTREE =
         [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md53", null ]
       ] ]
     ] ],
-    [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
-    [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
-    [ "Example 2a: Application with automation module", "example2a.html", null ],
-    [ "Example 3: Minimal device server", "example3.html", null ],
+    [ "Example: Basic structure of an Application", "example.html", [
+      [ "include", "example.html#example_include", [
+        [ "include/SetpointRamp.h", "example.html#example_include_SetpointRamp_h", null ],
+        [ "include/AverageCurrent.h", "example.html#example_include_AverageCurrent_h", null ],
+        [ "include/Controller.h", "example.html#example_include_Controller_h", null ],
+        [ "include/ExampleApp.h", "example.html#example_include_ExampleApp_h", null ]
+      ] ],
+      [ "src", "example.html#example_src", [
+        [ "src/AutomSetpointRampation.cc", "example.html#example_src_SetpointRamp_cc", null ],
+        [ "src/AverageCurrent.cc", "example.html#example_src_AverageCurrent_cc", null ],
+        [ "src/AutomatiControlleron.cc", "example.html#example_src_Controller_cc", null ],
+        [ "src/ExampleApp.cc", "example.html#example_src_ExampleApp_cc", null ]
+      ] ],
+      [ "src_factory", "example.html#example_src_factory", [
+        [ ".cc src_factory/FactoryInstance.cc", "example.html#example_src_factrory_FactoryInstance", null ]
+      ] ],
+      [ "config", "example.html#example_config", [
+        [ ".xml config/demo_example-config.xml", "example.html#example_config_demo_example-config", null ],
+        [ ".xml config/demo_example-DoocsVariableConfig.xml", "example.html#example_config_demo_example-DoocsVariableConfig", null ],
+        [ "config/demo_example.conf", "example.html#example_config_demo_example_conf", null ],
+        [ "config/demo_example.dmap", "example.html#example_config_demo_example_dmap", null ],
+        [ "config/DemoDummy.map", "example.html#example_config_DemoDummy_map", null ],
+        [ "config/oven.xlmap", "example.html#example_config_oven_xlmap", null ]
+      ] ]
+    ] ],
     [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
     [ "What's new in ApplicationCore 2.0", "whats_new__a_c_2_0.html", [
       [ "Initial value propagation", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value", [
@@ -210,20 +231,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"_x_m_l_generator_visitor_8cc.html",
-"class_chimera_t_k_1_1_entity_owner.html#a961e296fa6aa1698a0474803ffe3d44f",
-"class_chimera_t_k_1_1_module.html#af1d24bde2a569960f976d1f6f713d618",
-"conceptual_overview.html#conceptualOverview_Application",
-"namespace_chimera_t_k_1_1_model_1_1detail.html#a95b777dae5b736132d20207630e5a5e2",
-"struct_chimera_t_k_1_1_config_reader.html#a9ff782ad1296834f6def084460308bf4",
-"struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html#a2e0cd0765be602c84c216b1281d8085a",
-"struct_chimera_t_k_1_1_write_bit_mask.html#ad06729c69c8352ad6a778efaac6adcf9",
-"struct_module_d.html#a6a9588a1b1cd0a043330e422d7f48b44",
-"struct_test_app.html#a053ea51131d3752ebb3894b190f973be",
-"struct_test_application_1_1_module_1_1_vars.html#a6d3c9d581bb2ad6f571c68931f82a154",
-"struct_test_module_1_1_mixed_group.html#a8851d287396aa5924cdd86689623d940",
-"test_device_accessors_8cc.html#aab743874cb3fe1d30099b25693b2b027",
-"test_test_facilities_8cc.html#a94c0c278920331b18e0edf93331aa971"
+"_visitor_helper_8h.html",
+"class_chimera_t_k_1_1_entity_owner.html#a6bb75df67693447cec019ba4e0b24fb6",
+"class_chimera_t_k_1_1_module.html#acf4cf5c7d86e570d7d92d257666e2fad",
+"demo_status_monitor_8cc.html",
+"namespacevariable_houseold_to_wiki_table.html#ae04b03174d5356fce5062180ed016f2d",
+"struct_chimera_t_k_1_1_functor_get_type_for_name.html#aa2b78b9eb987e69a23b5cac8028c9720",
+"struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html#abc1dca435ef6381c3662792ae96a16b1",
+"struct_deeper2_1_1_hierarchies.html",
+"struct_read_any_test_module.html#acaca97bd9785eb615686524d6c09345a",
+"struct_test_application1.html#a5f075734362d38a720da912927ebca81",
+"struct_test_module.html#a2bf058a2afbaddc78e105ed2986b7b19",
+"struct_vector_of_everything_app.html#ae0061ce28b13b9bd545676ce21a96a0e",
+"test_model_8cc.html#a3ebef6077ec39801ac51e91b71a1aac7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

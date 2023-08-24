@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc34afde80d0497c9b55e84e38805330"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#afc34afde80d0497c9b55e84e38805330">PeriodicTrigger</a> (<a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> *owner, const std::string &amp;name, const std::string &amp;description, const uint32_t defaultPeriod=1000, const std::unordered_set&lt; std::string &gt; &amp;tags={}, const std::string &amp;periodName=&quot;period&quot;, const std::string &amp;tickName=&quot;tick&quot;)</td></tr>
 <tr class="memdesc:afc34afde80d0497c9b55e84e38805330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create periodic trigger module.  <a href="struct_chimera_t_k_1_1_periodic_trigger.html#afc34afde80d0497c9b55e84e38805330">More...</a><br /></td></tr>
 <tr class="separator:afc34afde80d0497c9b55e84e38805330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c463257c13d6a95247d637347b2ef4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#af2c463257c13d6a95247d637347b2ef4">PeriodicTrigger</a> ()</td></tr>
+<tr class="separator:af2c463257c13d6a95247d637347b2ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930a063c8d4138b85cdfe665f4900988"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#a930a063c8d4138b85cdfe665f4900988">PeriodicTrigger</a> (<a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> *owner, const std::string &amp;name, const std::string &amp;description, const uint32_t defaultPeriod, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier, const std::unordered_set&lt; std::string &gt; &amp;tags={}, const std::string &amp;periodName=&quot;period&quot;, const std::string &amp;tickName=&quot;tick&quot;)</td></tr>
 <tr class="separator:a930a063c8d4138b85cdfe665f4900988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89ea984b22c0b0d144d10b7a864b161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#af89ea984b22c0b0d144d10b7a864b161">prepare</a> () override</td></tr>
@@ -443,13 +445,11 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple periodic trigger that fires a variable once per second. </p>
 <p>After configurable number of seconds it will wrap around </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="example2_2demo_app2_8cc-example.html#_a20">example2/demoApp2.cc</a>, <a class="el" href="example2a_2demo_app2a_8cc-example.html#_a31">example2a/demoApp2a.cc</a>, and <a class="el" href="example3_2demo_app3_8cc-example.html#_a9">example3/demoApp3.cc</a>.</dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00017">17</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afc34afde80d0497c9b55e84e38805330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc34afde80d0497c9b55e84e38805330">&#9670;&nbsp;</a></span>PeriodicTrigger() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc34afde80d0497c9b55e84e38805330">&#9670;&nbsp;</a></span>PeriodicTrigger() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,8 +532,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af2c463257c13d6a95247d637347b2ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c463257c13d6a95247d637347b2ef4">&#9670;&nbsp;</a></span>PeriodicTrigger() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::PeriodicTrigger::PeriodicTrigger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00043">43</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+
+</div>
+</div>
 <a id="a930a063c8d4138b85cdfe665f4900988"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a930a063c8d4138b85cdfe665f4900988">&#9670;&nbsp;</a></span>PeriodicTrigger() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a930a063c8d4138b85cdfe665f4900988">&#9670;&nbsp;</a></span>PeriodicTrigger() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -602,7 +629,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00044">44</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00046">46</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +661,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00065">65</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00067">67</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -674,7 +701,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00054">54</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00056">56</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -709,7 +736,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00059">59</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00061">61</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -742,7 +769,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00051">51</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00053">53</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 
 </div>
 </div>
@@ -758,7 +785,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00052">52</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_periodic_trigger_8h_source.html#l00054">54</a> of file <a class="el" href="_periodic_trigger_8h_source.html">PeriodicTrigger.h</a>.</p>
 
 </div>
 </div>
@@ -771,7 +798,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html">PeriodicTrigger</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 03:55:46 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 24 2023 03:59:09 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
