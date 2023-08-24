@@ -3,9 +3,9 @@ var namespace_chimera_t_k_1_1_motor_driver =
     [ "utility", "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html", "namespace_chimera_t_k_1_1_motor_driver_1_1utility" ],
     [ "BasicStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor" ],
     [ "LinearStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor" ],
+    [ "StepperMotorParameters", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters" ],
     [ "StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor" ],
     [ "StepperMotorFactory", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory" ],
-    [ "StepperMotorParameters", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters" ],
     [ "CalibrationMode", "namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444", [
       [ "NONE", "namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444ab50339a10e1de285ac99d4c3990b8693", null ],
       [ "SIMPLE", "namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444ae5564829e2f85f6a6873a9d5c4f26d09", null ],

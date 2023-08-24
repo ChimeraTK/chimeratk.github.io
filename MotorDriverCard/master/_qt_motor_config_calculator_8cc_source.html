@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: ConfigCalculator/GUI/QtMotorConfigCalculator.cc Source File</title>
+<title>mtca4u-MotorDriverCard: ConfigCalculator/GUI/QtMotorConfigCalculator.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -200,9 +200,9 @@ $(document).ready(function(){initNavTree('_qt_motor_config_calculator_8cc_source
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> QtMotorConfigCalculator::updateCardExpertPanel(<span class="keywordtype">int</span> index)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="structmtca4u_1_1_motor_driver_card_config.html">mtca4u::MotorDriverCardConfig</a> cardConfig = <a class="code" href="get_parameters_8cc.html#afe902f77adadd6556dab1acaba0b604c">getMotorDriverCardParameters</a>(cardExpertWidget);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  cardConfig.<a class="code" href="structmtca4u_1_1_motor_driver_card_config.html#a760e012392b771aff5f440af7460c729">interfaceConfiguration</a>.<a class="code" href="classmtca4u_1_1_interface_configuration.html#afaad1c463f04e4b54c872bf4bbb50bfb">setInv_ref</a>(index);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  cardConfig.<a class="code" href="structmtca4u_1_1_motor_driver_card_config.html#a760e012392b771aff5f440af7460c729">interfaceConfiguration</a>.setInv_ref(index);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  cardExpertWidget-&gt;<a class="code" href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">setParameter</a>(<span class="stringliteral">&quot;interfaceConfiguration&quot;</span>,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                 cardConfig.<a class="code" href="structmtca4u_1_1_motor_driver_card_config.html#a760e012392b771aff5f440af7460c729">interfaceConfiguration</a>.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a8effcba57f53e3f477482f5324553331">getDATA</a>());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                 cardConfig.<a class="code" href="structmtca4u_1_1_motor_driver_card_config.html#a760e012392b771aff5f440af7460c729">interfaceConfiguration</a>.getDATA());</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
 <div class="ttc" id="a_d_f_m_c___m_d22_constants_8h_html"><div class="ttname"><a href="_d_f_m_c___m_d22_constants_8h.html">DFMC_MD22Constants.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_config_x_m_l_8h_html"><div class="ttname"><a href="_motor_driver_card_config_x_m_l_8h.html">MotorDriverCardConfigXML.h</a></div></div>
@@ -211,9 +211,7 @@ $(document).ready(function(){initNavTree('_qt_motor_config_calculator_8cc_source
 <div class="ttc" id="aclass_parameters_panel_html"><div class="ttname"><a href="class_parameters_panel.html">ParametersPanel</a></div><div class="ttdef"><b>Definition:</b> <a href="_parameters_panel_8h_source.html#l00013">ParametersPanel.h:13</a></div></div>
 <div class="ttc" id="aclass_parameters_panel_html_aa584e5ab6d32d19b0ee076c3cc2b9f73"><div class="ttname"><a href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">ParametersPanel::setParameter</a></div><div class="ttdeci">void setParameter(std::string const &amp;parameterName, uint32_t value)</div><div class="ttdef"><b>Definition:</b> <a href="_parameters_panel_8cc_source.html#l00042">ParametersPanel.cc:42</a></div></div>
 <div class="ttc" id="aclass_qt_motor_config_calculator_html_ab6b33fc06ca098025c370873bf9a3b7c"><div class="ttname"><a href="class_qt_motor_config_calculator.html#ab6b33fc06ca098025c370873bf9a3b7c">QtMotorConfigCalculator::QtMotorConfigCalculator</a></div><div class="ttdeci">QtMotorConfigCalculator(QWidget *parent_=NULL)</div><div class="ttdoc">The constructor expects no parameters except for the parent widget.</div><div class="ttdef"><b>Definition:</b> <a href="_qt_motor_config_calculator_8cc_source.html#l00009">QtMotorConfigCalculator.cc:9</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_interface_configuration_html_afaad1c463f04e4b54c872bf4bbb50bfb"><div class="ttname"><a href="classmtca4u_1_1_interface_configuration.html#afaad1c463f04e4b54c872bf4bbb50bfb">mtca4u::InterfaceConfiguration::setInv_ref</a></div><div class="ttdeci">void setInv_ref(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00139">TMC429Words.h:139</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_config_x_m_l_html_abeabde56727fbb90f0eb8bc35573f22c"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_config_x_m_l.html#abeabde56727fbb90f0eb8bc35573f22c">mtca4u::MotorDriverCardConfigXML::writeSparse</a></div><div class="ttdeci">static void writeSparse(std::string fileName, MotorDriverCardConfig const &amp;motorDriverCardConfig)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_config_x_m_l_8cc_source.html#l00289">MotorDriverCardConfigXML.cc:289</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a8effcba57f53e3f477482f5324553331"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a8effcba57f53e3f477482f5324553331">mtca4u::TMC429InputWord::getDATA</a></div><div class="ttdeci">unsigned int getDATA() const</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00045">TMC429Words.h:45</a></div></div>
 <div class="ttc" id="aget_parameters_8cc_html_a2b068c4d20ed2f8c7e69972115d0214e"><div class="ttname"><a href="get_parameters_8cc.html#a2b068c4d20ed2f8c7e69972115d0214e">getMotorParameters</a></div><div class="ttdeci">mtca4u::MotorControlerConfig getMotorParameters(ParametersPanel *parametersPanel)</div><div class="ttdoc">Get the motor parameters from the motor panel.</div><div class="ttdef"><b>Definition:</b> <a href="get_parameters_8cc_source.html#l00010">getParameters.cc:10</a></div></div>
 <div class="ttc" id="aget_parameters_8cc_html_afe902f77adadd6556dab1acaba0b604c"><div class="ttname"><a href="get_parameters_8cc.html#afe902f77adadd6556dab1acaba0b604c">getMotorDriverCardParameters</a></div><div class="ttdeci">mtca4u::MotorDriverCardConfig getMotorDriverCardParameters(ParametersPanel *parametersPanel)</div><div class="ttdoc">Get the motor driver card parameters.</div><div class="ttdef"><b>Definition:</b> <a href="get_parameters_8cc_source.html#l00037">getParameters.cc:37</a></div></div>
 <div class="ttc" id="aget_parameters_8h_html"><div class="ttname"><a href="get_parameters_8h.html">getParameters.h</a></div></div>
@@ -230,7 +228,7 @@ $(document).ready(function(){initNavTree('_qt_motor_config_calculator_8cc_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fbe65ea4c0cd45d366f37c2b9690ec6b.html">ConfigCalculator</a></li><li class="navelem"><a class="el" href="dir_08e0a08a75cba5986472921d6ea2d156.html">GUI</a></li><li class="navelem"><a class="el" href="_qt_motor_config_calculator_8cc.html">QtMotorConfigCalculator.cc</a></li>
-    <li class="footer">Generated on Thu Jun 29 2023 03:54:01 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 24 2023 03:59:50 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

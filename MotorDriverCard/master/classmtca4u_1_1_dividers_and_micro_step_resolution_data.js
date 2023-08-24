@@ -1,10 +1,7 @@
 var classmtca4u_1_1_dividers_and_micro_step_resolution_data =
 [
     [ "DividersAndMicroStepResolutionData", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a75998229b636c71b9d511e7204991635", null ],
-    [ "getMicroStepResolution", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#aeaa7cfc97d4d1b65a1d665ed24595c8f", null ],
-    [ "getPulseDivider", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a424aeee1c9141aef8503aca8e228f459", null ],
-    [ "getRampDivider", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a4668eeb356e1c402d1ab33d5721f5915", null ],
-    [ "setMicroStepResolution", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a067a8b5dd05fa5224a08d7854050052c", null ],
-    [ "setPulseDivider", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a64cdbaf3ec1e93f0d1c9ccd82dc93fc5", null ],
-    [ "setRampDivider", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a51240e63b12d9ca2589a29465c7bc289", null ]
+    [ "ADD_VARIABLE", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#afb938af9b0dc1c7804499e65a0a4e362", null ],
+    [ "ADD_VARIABLE", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a83a8b3f68d9289596cb4a6274d4738e7", null ],
+    [ "ADD_VARIABLE", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html#a735245763f21b30a05e520f2b70e0a3e", null ]
 ];

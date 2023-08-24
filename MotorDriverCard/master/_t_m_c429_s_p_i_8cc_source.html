@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: backend/src/TMC429SPI.cc Source File</title>
+<title>mtca4u-MotorDriverCard: backend/src/TMC429SPI.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -107,19 +107,19 @@ $(document).ready(function(){initNavTree('_t_m_c429_s_p_i_8cc_source.html',''); 
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// the preparation of the TMC429InputWord is different. So we accept a little</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// code duplication here.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html">TMC429InputWord</a> readRequest;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    readRequest.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#abea642deaf0f7812c97d12449edef424">setSMDA</a>(smda);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    readRequest.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a3ed1367fa4c8112a62401af64283d525">setIDX_JDX</a>(idx_jdx);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    readRequest.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a1bd921b7ddb5ac17b8c3620731acbec7">setRW</a>(<a class="code" href="namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4">tmc429::RW_READ</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    readRequest.setSMDA(smda);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    readRequest.setIDX_JDX(idx_jdx);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    readRequest.setRW(<a class="code" href="namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4">tmc429::RW_READ</a>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_t_m_c429_output_word.html">TMC429OutputWord</a>(_spiViaPCIe.<a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1">read</a>(readRequest.<a class="code" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a>()));</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_t_m_c429_s_p_i.html#a16f51d64ae517322e885c65f1014deb7">   28</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classmtca4u_1_1_t_m_c429_s_p_i.html#a16f51d64ae517322e885c65f1014deb7">TMC429SPI::write</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> smda, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx_jdx, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> data) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html">TMC429InputWord</a> writeMe;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    writeMe.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#abea642deaf0f7812c97d12449edef424">setSMDA</a>(smda);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    writeMe.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a3ed1367fa4c8112a62401af64283d525">setIDX_JDX</a>(idx_jdx);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    writeMe.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a1bd921b7ddb5ac17b8c3620731acbec7">setRW</a>(<a class="code" href="namespacemtca4u_1_1tmc429.html#ab1c8ba7d281f82643fa952172b91116e">tmc429::RW_WRITE</a>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    writeMe.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#ab751fe1c08e1bdf91377eb0a2784b3e9">setDATA</a>(data);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    writeMe.setSMDA(smda);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    writeMe.setIDX_JDX(idx_jdx);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    writeMe.setRW(<a class="code" href="namespacemtca4u_1_1tmc429.html#ab1c8ba7d281f82643fa952172b91116e">tmc429::RW_WRITE</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    writeMe.setDATA(data);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classmtca4u_1_1_t_m_c429_s_p_i.html#a16f51d64ae517322e885c65f1014deb7">write</a>(writeMe);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
@@ -133,10 +133,6 @@ $(document).ready(function(){initNavTree('_t_m_c429_s_p_i_8cc_source.html',''); 
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html_a235f3bdd4b7931219c04526273f948a1"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1">mtca4u::SPIviaPCIe::read</a></div><div class="ttdeci">uint32_t read(int32_t spiCommand)</div><div class="ttdoc">Write the command and return the readback value.</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8cc_source.html#l00083">SPIviaPCIe.cc:83</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html_a5b8c8b62747147e0540d26d312b86cce"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a5b8c8b62747147e0540d26d312b86cce">mtca4u::SPIviaPCIe::write</a></div><div class="ttdeci">void write(int32_t spiCommand)</div><div class="ttdoc">Write the spi command.</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8cc_source.html#l00035">SPIviaPCIe.cc:35</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html">mtca4u::TMC429InputWord</a></div><div class="ttdoc">Structure of a generic single value register of the TMC429 chip.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00036">TMC429Words.h:36</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a1bd921b7ddb5ac17b8c3620731acbec7"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a1bd921b7ddb5ac17b8c3620731acbec7">mtca4u::TMC429InputWord::setRW</a></div><div class="ttdeci">void setRW(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00044">TMC429Words.h:44</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a3ed1367fa4c8112a62401af64283d525"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a3ed1367fa4c8112a62401af64283d525">mtca4u::TMC429InputWord::setIDX_JDX</a></div><div class="ttdeci">void setIDX_JDX(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00042">TMC429Words.h:42</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_ab751fe1c08e1bdf91377eb0a2784b3e9"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#ab751fe1c08e1bdf91377eb0a2784b3e9">mtca4u::TMC429InputWord::setDATA</a></div><div class="ttdeci">void setDATA(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00045">TMC429Words.h:45</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_abea642deaf0f7812c97d12449edef424"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#abea642deaf0f7812c97d12449edef424">mtca4u::TMC429InputWord::setSMDA</a></div><div class="ttdeci">void setSMDA(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00041">TMC429Words.h:41</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_output_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_output_word.html">mtca4u::TMC429OutputWord</a></div><div class="ttdoc">The readback register contains status information in the higher bits, which contain the SPI address i...</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00052">TMC429Words.h:52</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_s_p_i_html_a057ffae69cf95f5d1b96a12f01819632"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_s_p_i.html#a057ffae69cf95f5d1b96a12f01819632">mtca4u::TMC429SPI::read</a></div><div class="ttdeci">TMC429OutputWord read(unsigned int smda, unsigned int idx_jdx)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_s_p_i_8cc_source.html#l00016">TMC429SPI.cc:16</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_s_p_i_html_a16f51d64ae517322e885c65f1014deb7"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_s_p_i.html#a16f51d64ae517322e885c65f1014deb7">mtca4u::TMC429SPI::write</a></div><div class="ttdeci">void write(unsigned int smda, unsigned int idx_jdx, unsigned int data)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_s_p_i_8cc_source.html#l00028">TMC429SPI.cc:28</a></div></div>
@@ -150,7 +146,7 @@ $(document).ready(function(){initNavTree('_t_m_c429_s_p_i_8cc_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_t_m_c429_s_p_i_8cc.html">TMC429SPI.cc</a></li>
-    <li class="footer">Generated on Thu Jun 29 2023 03:54:01 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 24 2023 03:59:50 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

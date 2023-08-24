@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: mtca4u::MotorReferenceSwitchData Class Reference</title>
+<title>mtca4u-MotorDriverCard: mtca4u::MotorReferenceSwitchData Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -117,39 +117,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b0887b259d541707a374cba85259ef7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7">MotorReferenceSwitchData</a> (unsigned int dataWord=0)</td></tr>
 <tr class="memdesc:a4b0887b259d541707a374cba85259ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor initialises everyting to 0 (all switches inactive and disabled);.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7">More...</a><br /></td></tr>
 <tr class="separator:a4b0887b259d541707a374cba85259ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2955a2d96552215b150e2c9450f36489"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a2955a2d96552215b150e2c9450f36489">getNegativeSwitchActive</a> () const</td></tr>
-<tr class="memdesc:a2955a2d96552215b150e2c9450f36489"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in negative direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a2955a2d96552215b150e2c9450f36489">More...</a><br /></td></tr>
-<tr class="separator:a2955a2d96552215b150e2c9450f36489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa34b44713bb3a4cfd770bbdbde5a561b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#aa34b44713bb3a4cfd770bbdbde5a561b">getNegativeSwitchEnabled</a> () const</td></tr>
-<tr class="memdesc:aa34b44713bb3a4cfd770bbdbde5a561b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in negative direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#aa34b44713bb3a4cfd770bbdbde5a561b">More...</a><br /></td></tr>
-<tr class="separator:aa34b44713bb3a4cfd770bbdbde5a561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821eb099022740effa5764ec30c1bdb8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a821eb099022740effa5764ec30c1bdb8">getPositiveSwitchActive</a> () const</td></tr>
-<tr class="memdesc:a821eb099022740effa5764ec30c1bdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in positive direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a821eb099022740effa5764ec30c1bdb8">More...</a><br /></td></tr>
-<tr class="separator:a821eb099022740effa5764ec30c1bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6ea94316068bce017283d5483dcdf2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#afd6ea94316068bce017283d5483dcdf2">getPositiveSwitchEnabled</a> () const</td></tr>
-<tr class="memdesc:afd6ea94316068bce017283d5483dcdf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in positive direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#afd6ea94316068bce017283d5483dcdf2">More...</a><br /></td></tr>
-<tr class="separator:afd6ea94316068bce017283d5483dcdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf309a3e874656d03f766f35840fc8e2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#acf309a3e874656d03f766f35840fc8e2">getSwitchesActiveWord</a> () const</td></tr>
-<tr class="memdesc:acf309a3e874656d03f766f35840fc8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A word containing the active flags for all (both) switches.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#acf309a3e874656d03f766f35840fc8e2">More...</a><br /></td></tr>
-<tr class="separator:acf309a3e874656d03f766f35840fc8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217d7e4ca3cf225bd87c9fe9465138b4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a217d7e4ca3cf225bd87c9fe9465138b4">getSwitchesEnabledWord</a> () const</td></tr>
-<tr class="memdesc:a217d7e4ca3cf225bd87c9fe9465138b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A word containing the enabled flags for all (both) switches.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a217d7e4ca3cf225bd87c9fe9465138b4">More...</a><br /></td></tr>
-<tr class="separator:a217d7e4ca3cf225bd87c9fe9465138b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a1aace631c0ff2ca1b54ad614750c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#ab5a1aace631c0ff2ca1b54ad614750c7">ADD_VARIABLE</a> (PositiveSwitchActive, 0, 0)</td></tr>
+<tr class="memdesc:ab5a1aace631c0ff2ca1b54ad614750c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in positive direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#ab5a1aace631c0ff2ca1b54ad614750c7">More...</a><br /></td></tr>
+<tr class="separator:ab5a1aace631c0ff2ca1b54ad614750c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a879942424d66a49c52e4233cadec78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a5a879942424d66a49c52e4233cadec78">ADD_VARIABLE</a> (NegativeSwitchActive, 1, 1)</td></tr>
+<tr class="memdesc:a5a879942424d66a49c52e4233cadec78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in negative direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a5a879942424d66a49c52e4233cadec78">More...</a><br /></td></tr>
+<tr class="separator:a5a879942424d66a49c52e4233cadec78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6625b1a40df98d81055d568f841ef67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#ac6625b1a40df98d81055d568f841ef67">ADD_VARIABLE</a> (SwitchesActiveWord, 0, 1)</td></tr>
+<tr class="memdesc:ac6625b1a40df98d81055d568f841ef67"><td class="mdescLeft">&#160;</td><td class="mdescRight">A word containing the active flags for all (both) switches.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#ac6625b1a40df98d81055d568f841ef67">More...</a><br /></td></tr>
+<tr class="separator:ac6625b1a40df98d81055d568f841ef67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8152ebd36af4b4593227f3afa56d3f8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a8152ebd36af4b4593227f3afa56d3f8b">ADD_VARIABLE</a> (PositiveSwitchEnabled, 16, 16)</td></tr>
+<tr class="memdesc:a8152ebd36af4b4593227f3afa56d3f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in positive direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a8152ebd36af4b4593227f3afa56d3f8b">More...</a><br /></td></tr>
+<tr class="separator:a8152ebd36af4b4593227f3afa56d3f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38a882cb4f469616eb797473d731f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#ac38a882cb4f469616eb797473d731f94">ADD_VARIABLE</a> (NegativeSwitchEnabled, 17, 17)</td></tr>
+<tr class="memdesc:ac38a882cb4f469616eb797473d731f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">The switch which is reached when moving in negative direction.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#ac38a882cb4f469616eb797473d731f94">More...</a><br /></td></tr>
+<tr class="separator:ac38a882cb4f469616eb797473d731f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b22d78f3ebe7e4ef31a31ae3e6b511"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a26b22d78f3ebe7e4ef31a31ae3e6b511">ADD_VARIABLE</a> (SwitchesEnabledWord, 16, 17)</td></tr>
+<tr class="memdesc:a26b22d78f3ebe7e4ef31a31ae3e6b511"><td class="mdescLeft">&#160;</td><td class="mdescRight">A word containing the enabled flags for all (both) switches.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#a26b22d78f3ebe7e4ef31a31ae3e6b511">More...</a><br /></td></tr>
+<tr class="separator:a26b22d78f3ebe7e4ef31a31ae3e6b511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf2d8f3ba877fd3c2e69d0d2e1c7729a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#acf2d8f3ba877fd3c2e69d0d2e1c7729a">operator bool</a> () const</td></tr>
 <tr class="memdesc:acf2d8f3ba877fd3c2e69d0d2e1c7729a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator to allow conversion to bool for convenient checking if any of the switches is active.  <a href="classmtca4u_1_1_motor_reference_switch_data.html#acf2d8f3ba877fd3c2e69d0d2e1c7729a">More...</a><br /></td></tr>
 <tr class="separator:acf2d8f3ba877fd3c2e69d0d2e1c7729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce76c3c701b1aa4e469d46810b11153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#afce76c3c701b1aa4e469d46810b11153">setNegativeSwitchActive</a> (unsigned int word)</td></tr>
-<tr class="separator:afce76c3c701b1aa4e469d46810b11153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa24ee0406f386aedf1498c7ba585a983"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#aa24ee0406f386aedf1498c7ba585a983">setNegativeSwitchEnabled</a> (unsigned int word)</td></tr>
-<tr class="separator:aa24ee0406f386aedf1498c7ba585a983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad611ea1f571def3e58eba6e94698600c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#ad611ea1f571def3e58eba6e94698600c">setPositiveSwitchActive</a> (unsigned int word)</td></tr>
-<tr class="separator:ad611ea1f571def3e58eba6e94698600c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0272b59ae78ab0bd85d617b23ae055cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a0272b59ae78ab0bd85d617b23ae055cc">setPositiveSwitchEnabled</a> (unsigned int word)</td></tr>
-<tr class="separator:a0272b59ae78ab0bd85d617b23ae055cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962f11e4dbea9ec0bd487d005dd8183d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#a962f11e4dbea9ec0bd487d005dd8183d">setSwitchesActiveWord</a> (unsigned int word)</td></tr>
-<tr class="separator:a962f11e4dbea9ec0bd487d005dd8183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac847130d246f041702db19615170217a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#ac847130d246f041702db19615170217a">setSwitchesEnabledWord</a> (unsigned int word)</td></tr>
-<tr class="separator:ac847130d246f041702db19615170217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmtca4u_1_1_multi_variable_word"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmtca4u_1_1_multi_variable_word')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmtca4u_1_1_multi_variable_word.html">mtca4u::MultiVariableWord</a></td></tr>
 <tr class="memitem:ae5c3b0dea9810d6b1b18b1d25f55a790 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#ae5c3b0dea9810d6b1b18b1d25f55a790">MultiVariableWord</a> (unsigned int dataWord=0)</td></tr>
 <tr class="memdesc:ae5c3b0dea9810d6b1b18b1d25f55a790 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor allows to set the data word on construction.  <a href="classmtca4u_1_1_multi_variable_word.html#ae5c3b0dea9810d6b1b18b1d25f55a790">More...</a><br /></td></tr>
@@ -160,13 +148,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50597aba3dc5fe3c639006e0dfa17de2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a> () const</td></tr>
 <tr class="memdesc:a50597aba3dc5fe3c639006e0dfa17de2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encoded 32 bit data word.  <a href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">More...</a><br /></td></tr>
 <tr class="separator:a50597aba3dc5fe3c639006e0dfa17de2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a9ebc56c1dd05af74b6fbb3cfc53cf2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#a6a9ebc56c1dd05af74b6fbb3cfc53cf2">operator!=</a> (<a class="el" href="classmtca4u_1_1_multi_variable_word.html">MultiVariableWord</a> const &amp;right) const</td></tr>
-<tr class="separator:a6a9ebc56c1dd05af74b6fbb3cfc53cf2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7080d1518936b757fc00e543b2897427 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#a7080d1518936b757fc00e543b2897427">operator==</a> (<a class="el" href="classmtca4u_1_1_multi_variable_word.html">MultiVariableWord</a> const &amp;right) const</td></tr>
-<tr class="separator:a7080d1518936b757fc00e543b2897427 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8aa014b3d3e4f3857fd010844ec1286 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#af8aa014b3d3e4f3857fd010844ec1286">setDataWord</a> (unsigned int dataWord)</td></tr>
 <tr class="memdesc:af8aa014b3d3e4f3857fd010844ec1286 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the whole 32 bit data word.  <a href="classmtca4u_1_1_multi_variable_word.html#af8aa014b3d3e4f3857fd010844ec1286">More...</a><br /></td></tr>
 <tr class="separator:af8aa014b3d3e4f3857fd010844ec1286 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7080d1518936b757fc00e543b2897427 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#a7080d1518936b757fc00e543b2897427">operator==</a> (<a class="el" href="classmtca4u_1_1_multi_variable_word.html">MultiVariableWord</a> const &amp;right) const</td></tr>
+<tr class="separator:a7080d1518936b757fc00e543b2897427 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9ebc56c1dd05af74b6fbb3cfc53cf2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_multi_variable_word.html#a6a9ebc56c1dd05af74b6fbb3cfc53cf2">operator!=</a> (<a class="el" href="classmtca4u_1_1_multi_variable_word.html">MultiVariableWord</a> const &amp;right) const</td></tr>
+<tr class="separator:a6a9ebc56c1dd05af74b6fbb3cfc53cf2 inherit pub_methods_classmtca4u_1_1_multi_variable_word"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -213,27 +201,36 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2955a2d96552215b150e2c9450f36489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2955a2d96552215b150e2c9450f36489">&#9670;&nbsp;</a></span>getNegativeSwitchActive()</h2>
+<a id="a5a879942424d66a49c52e4233cadec78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a879942424d66a49c52e4233cadec78">&#9670;&nbsp;</a></span>ADD_VARIABLE() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int mtca4u::MotorReferenceSwitchData::getNegativeSwitchActive </td>
+          <td class="memname">mtca4u::MotorReferenceSwitchData::ADD_VARIABLE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">NegativeSwitchActive&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The switch which is reached when moving in negative direction. </p>
@@ -242,39 +239,38 @@ Additional Inherited Members</h2></td></tr>
 <li>1 = active </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00044">44</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_a2955a2d96552215b150e2c9450f36489_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-
-</div>
-</div>
-<a id="aa34b44713bb3a4cfd770bbdbde5a561b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa34b44713bb3a4cfd770bbdbde5a561b">&#9670;&nbsp;</a></span>getNegativeSwitchEnabled()</h2>
+<a id="ac38a882cb4f469616eb797473d731f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38a882cb4f469616eb797473d731f94">&#9670;&nbsp;</a></span>ADD_VARIABLE() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int mtca4u::MotorReferenceSwitchData::getNegativeSwitchEnabled </td>
+          <td class="memname">mtca4u::MotorReferenceSwitchData::ADD_VARIABLE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">NegativeSwitchEnabled&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">17&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">17&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The switch which is reached when moving in negative direction. </p>
@@ -283,39 +279,38 @@ Additional Inherited Members</h2></td></tr>
 <li>1 = enabled </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00059">59</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_aa34b44713bb3a4cfd770bbdbde5a561b_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-
-</div>
-</div>
-<a id="a821eb099022740effa5764ec30c1bdb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821eb099022740effa5764ec30c1bdb8">&#9670;&nbsp;</a></span>getPositiveSwitchActive()</h2>
+<a id="ab5a1aace631c0ff2ca1b54ad614750c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a1aace631c0ff2ca1b54ad614750c7">&#9670;&nbsp;</a></span>ADD_VARIABLE() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int mtca4u::MotorReferenceSwitchData::getPositiveSwitchActive </td>
+          <td class="memname">mtca4u::MotorReferenceSwitchData::ADD_VARIABLE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">PositiveSwitchActive&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The switch which is reached when moving in positive direction. </p>
@@ -324,39 +319,38 @@ Additional Inherited Members</h2></td></tr>
 <li>1 = active </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00038">38</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_a821eb099022740effa5764ec30c1bdb8_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-
-</div>
-</div>
-<a id="afd6ea94316068bce017283d5483dcdf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd6ea94316068bce017283d5483dcdf2">&#9670;&nbsp;</a></span>getPositiveSwitchEnabled()</h2>
+<a id="a8152ebd36af4b4593227f3afa56d3f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8152ebd36af4b4593227f3afa56d3f8b">&#9670;&nbsp;</a></span>ADD_VARIABLE() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int mtca4u::MotorReferenceSwitchData::getPositiveSwitchEnabled </td>
+          <td class="memname">mtca4u::MotorReferenceSwitchData::ADD_VARIABLE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">PositiveSwitchEnabled&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">16&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">16&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The switch which is reached when moving in positive direction. </p>
@@ -365,73 +359,77 @@ Additional Inherited Members</h2></td></tr>
 <li>1 = enabled </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00053">53</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_afd6ea94316068bce017283d5483dcdf2_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-
-</div>
-</div>
-<a id="acf309a3e874656d03f766f35840fc8e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf309a3e874656d03f766f35840fc8e2">&#9670;&nbsp;</a></span>getSwitchesActiveWord()</h2>
+<a id="ac6625b1a40df98d81055d568f841ef67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6625b1a40df98d81055d568f841ef67">&#9670;&nbsp;</a></span>ADD_VARIABLE() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int mtca4u::MotorReferenceSwitchData::getSwitchesActiveWord </td>
+          <td class="memname">mtca4u::MotorReferenceSwitchData::ADD_VARIABLE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">SwitchesActiveWord&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>A word containing the active flags for all (both) switches. </p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00047">47</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-
 </div>
 </div>
-<a id="a217d7e4ca3cf225bd87c9fe9465138b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a217d7e4ca3cf225bd87c9fe9465138b4">&#9670;&nbsp;</a></span>getSwitchesEnabledWord()</h2>
+<a id="a26b22d78f3ebe7e4ef31a31ae3e6b511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b22d78f3ebe7e4ef31a31ae3e6b511">&#9670;&nbsp;</a></span>ADD_VARIABLE() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int mtca4u::MotorReferenceSwitchData::getSwitchesEnabledWord </td>
+          <td class="memname">mtca4u::MotorReferenceSwitchData::ADD_VARIABLE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">SwitchesEnabledWord&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">16&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">17&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>A word containing the enabled flags for all (both) switches. </p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00062">62</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
 
 </div>
 </div>
@@ -457,206 +455,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="afce76c3c701b1aa4e469d46810b11153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce76c3c701b1aa4e469d46810b11153">&#9670;&nbsp;</a></span>setNegativeSwitchActive()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorReferenceSwitchData::setNegativeSwitchActive </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>word</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00044">44</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_afce76c3c701b1aa4e469d46810b11153_icgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="aa24ee0406f386aedf1498c7ba585a983"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa24ee0406f386aedf1498c7ba585a983">&#9670;&nbsp;</a></span>setNegativeSwitchEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorReferenceSwitchData::setNegativeSwitchEnabled </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>word</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00059">59</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_aa24ee0406f386aedf1498c7ba585a983_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ad611ea1f571def3e58eba6e94698600c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad611ea1f571def3e58eba6e94698600c">&#9670;&nbsp;</a></span>setPositiveSwitchActive()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorReferenceSwitchData::setPositiveSwitchActive </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>word</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00038">38</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_ad611ea1f571def3e58eba6e94698600c_icgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a0272b59ae78ab0bd85d617b23ae055cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0272b59ae78ab0bd85d617b23ae055cc">&#9670;&nbsp;</a></span>setPositiveSwitchEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorReferenceSwitchData::setPositiveSwitchEnabled </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>word</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00053">53</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_reference_switch_data_a0272b59ae78ab0bd85d617b23ae055cc_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a962f11e4dbea9ec0bd487d005dd8183d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a962f11e4dbea9ec0bd487d005dd8183d">&#9670;&nbsp;</a></span>setSwitchesActiveWord()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorReferenceSwitchData::setSwitchesActiveWord </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>word</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00047">47</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-
-</div>
-</div>
-<a id="ac847130d246f041702db19615170217a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac847130d246f041702db19615170217a">&#9670;&nbsp;</a></span>setSwitchesEnabledWord()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorReferenceSwitchData::setSwitchesEnabledWord </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>word</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_reference_switch_data_8h_source.html#l00062">62</a> of file <a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>backend/include/<a class="el" href="_motor_reference_switch_data_8h_source.html">MotorReferenceSwitchData.h</a></li>
 <li>backend/src/<a class="el" href="_motor_reference_switch_data_8cc_source.html">MotorReferenceSwitchData.cc</a></li>
@@ -667,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html">MotorReferenceSwitchData</a></li>
-    <li class="footer">Generated on Thu Jun 29 2023 03:54:01 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 24 2023 03:59:51 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

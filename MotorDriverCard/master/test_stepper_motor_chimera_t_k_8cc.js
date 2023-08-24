@@ -1,7 +1,7 @@
 var test_stepper_motor_chimera_t_k_8cc =
 [
-    [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", "class_stepper_motor_chimera_t_k_fixture" ],
     [ "TestUnitConverter", "class_test_unit_converter.html", "class_test_unit_converter" ],
+    [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", "class_stepper_motor_chimera_t_k_fixture" ],
     [ "BOOST_TEST_DYN_LINK", "test_stepper_motor_chimera_t_k_8cc.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_stepper_motor_chimera_t_k_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_stepper_motor_chimera_t_k_8cc.html#a5dcfdb5908d076167206d4c51e099506", null ],

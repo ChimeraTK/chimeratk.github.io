@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "DFMC-MD22 Motor Controller", "index.html", [
+  [ "mtca4u-MotorDriverCard", "index.html", [
     [ "MotorDriverCard", "index.html", [
       [ "Getting Started", "index.html#getting_started", null ]
     ] ],
@@ -78,13 +78,12 @@ var NAVTREEINDEX =
 "_basic_stepper_motor_8cc.html",
 "_stepper_motor_util_8h.html",
 "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6ad5865a3e0d99f18a8f497d47a32132",
-"class_motor_driver_card_config_x_m_l_test.html",
-"classmtca4u_1_1_driver_status_data.html#a77a41ccda9c1b8ff2ded38d2ebfe9f67",
-"classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2",
-"classmtca4u_1_1_power_monitor.html",
-"classmtca4u_1_1_t_m_c429_status_word.html#af59aad86847b124d468e920c307ef80e",
-"namespacemtca4u_1_1dfmc__md22.html#abf4d7b5e9b8ef8cc59f1217ae4cee011",
-"test_signed_int_converter_8cpp.html#a08eac68c20482e1f083a399ca669f56d"
+"class_motor_driver_card_config_x_m_l_test.html#ad6c3a54f8f3abbedacca784a86764753",
+"classmtca4u_1_1_interrupt_data.html#ad41fb81eb096d16e9ac3c817e7d9d850",
+"classmtca4u_1_1_motor_controler_test.html#af1fd31cb7fab3ed223427a5e8463ba50",
+"classmtca4u_1_1_stepper_motor_status_types.html",
+"namespacemtca4u.html#a18656b605d36709b1d0651f0b044c9d6",
+"test_logger_8cc_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

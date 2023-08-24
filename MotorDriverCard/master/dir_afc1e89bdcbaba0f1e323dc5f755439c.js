@@ -46,29 +46,29 @@ var dir_afc1e89bdcbaba0f1e323dc5f755439c =
     [ "TMC260Constants.h", "_t_m_c260_constants_8h.html", "_t_m_c260_constants_8h" ],
     [ "TMC260DummyConstants.h", "_t_m_c260_dummy_constants_8h.html", "_t_m_c260_dummy_constants_8h" ],
     [ "TMC260Words.h", "_t_m_c260_words_8h.html", [
+      [ "TMC260Word", "classmtca4u_1_1_t_m_c260_word.html", "classmtca4u_1_1_t_m_c260_word" ],
+      [ "DriverControlData", "classmtca4u_1_1_driver_control_data.html", "classmtca4u_1_1_driver_control_data" ],
       [ "ChopperControlData", "classmtca4u_1_1_chopper_control_data.html", "classmtca4u_1_1_chopper_control_data" ],
       [ "CoolStepControlData", "classmtca4u_1_1_cool_step_control_data.html", "classmtca4u_1_1_cool_step_control_data" ],
-      [ "DriverConfigData", "classmtca4u_1_1_driver_config_data.html", "classmtca4u_1_1_driver_config_data" ],
-      [ "DriverControlData", "classmtca4u_1_1_driver_control_data.html", "classmtca4u_1_1_driver_control_data" ],
-      [ "DriverStatusData", "classmtca4u_1_1_driver_status_data.html", "classmtca4u_1_1_driver_status_data" ],
       [ "StallGuardControlData", "classmtca4u_1_1_stall_guard_control_data.html", "classmtca4u_1_1_stall_guard_control_data" ],
-      [ "TMC260Word", "classmtca4u_1_1_t_m_c260_word.html", "classmtca4u_1_1_t_m_c260_word" ]
+      [ "DriverConfigData", "classmtca4u_1_1_driver_config_data.html", "classmtca4u_1_1_driver_config_data" ],
+      [ "DriverStatusData", "classmtca4u_1_1_driver_status_data.html", "classmtca4u_1_1_driver_status_data" ]
     ] ],
     [ "TMC429Constants.h", "_t_m_c429_constants_8h.html", "_t_m_c429_constants_8h" ],
     [ "TMC429DummyConstants.h", "_t_m_c429_dummy_constants_8h.html", "_t_m_c429_dummy_constants_8h" ],
     [ "TMC429Words.h", "_t_m_c429_words_8h.html", [
-      [ "AccelerationThresholdData", "classmtca4u_1_1_acceleration_threshold_data.html", "classmtca4u_1_1_acceleration_threshold_data" ],
-      [ "CoverPositionAndLength", "classmtca4u_1_1_cover_position_and_length.html", "classmtca4u_1_1_cover_position_and_length" ],
-      [ "DividersAndMicroStepResolutionData", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html", "classmtca4u_1_1_dividers_and_micro_step_resolution_data" ],
-      [ "InterfaceConfiguration", "classmtca4u_1_1_interface_configuration.html", "classmtca4u_1_1_interface_configuration" ],
-      [ "InterruptData", "classmtca4u_1_1_interrupt_data.html", "classmtca4u_1_1_interrupt_data" ],
-      [ "PositionCompareInterruptData", "classmtca4u_1_1_position_compare_interrupt_data.html", "classmtca4u_1_1_position_compare_interrupt_data" ],
-      [ "ProportionalityFactorData", "classmtca4u_1_1_proportionality_factor_data.html", "classmtca4u_1_1_proportionality_factor_data" ],
-      [ "ReferenceConfigAndRampModeData", "classmtca4u_1_1_reference_config_and_ramp_mode_data.html", "classmtca4u_1_1_reference_config_and_ramp_mode_data" ],
-      [ "ReferenceSwitchData", "classmtca4u_1_1_reference_switch_data.html", "classmtca4u_1_1_reference_switch_data" ],
-      [ "StepperMotorGlobalParameters", "classmtca4u_1_1_stepper_motor_global_parameters.html", "classmtca4u_1_1_stepper_motor_global_parameters" ],
       [ "TMC429InputWord", "classmtca4u_1_1_t_m_c429_input_word.html", "classmtca4u_1_1_t_m_c429_input_word" ],
       [ "TMC429OutputWord", "classmtca4u_1_1_t_m_c429_output_word.html", "classmtca4u_1_1_t_m_c429_output_word" ],
+      [ "ReferenceSwitchData", "classmtca4u_1_1_reference_switch_data.html", "classmtca4u_1_1_reference_switch_data" ],
+      [ "CoverPositionAndLength", "classmtca4u_1_1_cover_position_and_length.html", "classmtca4u_1_1_cover_position_and_length" ],
+      [ "StepperMotorGlobalParameters", "classmtca4u_1_1_stepper_motor_global_parameters.html", "classmtca4u_1_1_stepper_motor_global_parameters" ],
+      [ "InterfaceConfiguration", "classmtca4u_1_1_interface_configuration.html", "classmtca4u_1_1_interface_configuration" ],
+      [ "PositionCompareInterruptData", "classmtca4u_1_1_position_compare_interrupt_data.html", "classmtca4u_1_1_position_compare_interrupt_data" ],
+      [ "AccelerationThresholdData", "classmtca4u_1_1_acceleration_threshold_data.html", "classmtca4u_1_1_acceleration_threshold_data" ],
+      [ "ProportionalityFactorData", "classmtca4u_1_1_proportionality_factor_data.html", "classmtca4u_1_1_proportionality_factor_data" ],
+      [ "ReferenceConfigAndRampModeData", "classmtca4u_1_1_reference_config_and_ramp_mode_data.html", "classmtca4u_1_1_reference_config_and_ramp_mode_data" ],
+      [ "InterruptData", "classmtca4u_1_1_interrupt_data.html", "classmtca4u_1_1_interrupt_data" ],
+      [ "DividersAndMicroStepResolutionData", "classmtca4u_1_1_dividers_and_micro_step_resolution_data.html", "classmtca4u_1_1_dividers_and_micro_step_resolution_data" ],
       [ "TMC429StatusWord", "classmtca4u_1_1_t_m_c429_status_word.html", "classmtca4u_1_1_t_m_c429_status_word" ]
     ] ]
 ];

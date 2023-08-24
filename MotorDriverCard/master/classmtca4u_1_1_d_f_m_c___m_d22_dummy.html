@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: mtca4u::DFMC_MD22Dummy Class Reference</title>
+<title>mtca4u-MotorDriverCard: mtca4u::DFMC_MD22Dummy Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -132,27 +132,32 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0cf652e6980177759cb2ae847ee6e199"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0cf652e6980177759cb2ae847ee6e199">DFMC_MD22Dummy</a> (std::string const &amp;mapFileName, std::string const &amp;tmc429ControllerModuleName)</td></tr>
 <tr class="separator:a0cf652e6980177759cb2ae847ee6e199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7af9c112cd5e938249c84fbfe0b88587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a7af9c112cd5e938249c84fbfe0b88587">causeSpiErrors</a> (bool causeErrors)</td></tr>
-<tr class="memdesc:a7af9c112cd5e938249c84fbfe0b88587"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dummy always reports an SPI error in the sync registers if this flag is set true.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a7af9c112cd5e938249c84fbfe0b88587">More...</a><br /></td></tr>
-<tr class="separator:a7af9c112cd5e938249c84fbfe0b88587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa099dcd30cacb731c0143a45ab47b7b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aa099dcd30cacb731c0143a45ab47b7b5">causeSpiTimeouts</a> (bool causeTimeouts, unsigned int limitToNTimeouts=0)</td></tr>
-<tr class="memdesc:aa099dcd30cacb731c0143a45ab47b7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dummy does not react on the SPI write registers if this flag is set true.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aa099dcd30cacb731c0143a45ab47b7b5">More...</a><br /></td></tr>
-<tr class="separator:aa099dcd30cacb731c0143a45ab47b7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05bfddc03a4a896140f20713dad808e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#ac05bfddc03a4a896140f20713dad808e">open</a> ()</td></tr>
+<tr class="separator:ac05bfddc03a4a896140f20713dad808e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566184b18337161111b628da88fc0104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a566184b18337161111b628da88fc0104">setRegistersForTesting</a> ()</td></tr>
+<tr class="memdesc:a566184b18337161111b628da88fc0104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the test pattern to all registers.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a566184b18337161111b628da88fc0104">More...</a><br /></td></tr>
+<tr class="separator:a566184b18337161111b628da88fc0104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5884ca722024b25d76b29751e59ed56c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a5884ca722024b25d76b29751e59ed56c">isPowerUp</a> ()</td></tr>
 <tr class="memdesc:a5884ca722024b25d76b29751e59ed56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for debugging.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a5884ca722024b25d76b29751e59ed56c">More...</a><br /></td></tr>
 <tr class="separator:a5884ca722024b25d76b29751e59ed56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac05bfddc03a4a896140f20713dad808e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#ac05bfddc03a4a896140f20713dad808e">open</a> ()</td></tr>
-<tr class="separator:ac05bfddc03a4a896140f20713dad808e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca889ade2a9f18691ec3e0ac325d803b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aca889ade2a9f18691ec3e0ac325d803b">powerUp</a> ()</td></tr>
 <tr class="memdesc:aca889ade2a9f18691ec3e0ac325d803b"><td class="mdescLeft">&#160;</td><td class="mdescRight">As power up is done via a pin on the TMC429 chip we need a function to emulate this in the dummy which is not in the normal device.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aca889ade2a9f18691ec3e0ac325d803b">More...</a><br /></td></tr>
 <tr class="separator:aca889ade2a9f18691ec3e0ac325d803b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6938d6de7d086d27918095c5cd3f589f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6938d6de7d086d27918095c5cd3f589f">readDriverSpiRegister</a> (unsigned int motorID, unsigned int driverSpiAddress)</td></tr>
 <tr class="memdesc:a6938d6de7d086d27918095c5cd3f589f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For debugging the dummy allows to read back the driver spi registers.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6938d6de7d086d27918095c5cd3f589f">More...</a><br /></td></tr>
 <tr class="separator:a6938d6de7d086d27918095c5cd3f589f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a964d11b8999fdafe1225fa4306d9b01d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a964d11b8999fdafe1225fa4306d9b01d">readTMC260Register</a> (uint32_t motorID, <a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0e91c67f01ac653ae21d9856112e7e41">TMC260Register</a> configuredRegister)</td></tr>
-<tr class="separator:a964d11b8999fdafe1225fa4306d9b01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0820d445967a6cb3885d9d261dabf5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aed0820d445967a6cb3885d9d261dabf5">readTMC429Register</a> (uint32_t SPIDatagram)</td></tr>
-<tr class="separator:aed0820d445967a6cb3885d9d261dabf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8f8694537d230184a35a0c04195394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#afa8f8694537d230184a35a0c04195394">setDriverSpiRegistersForTesting</a> ()</td></tr>
+<tr class="memdesc:afa8f8694537d230184a35a0c04195394"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing all driver registers can be set to test values (also those initialised by the config)  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#afa8f8694537d230184a35a0c04195394">More...</a><br /></td></tr>
+<tr class="separator:afa8f8694537d230184a35a0c04195394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa099dcd30cacb731c0143a45ab47b7b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aa099dcd30cacb731c0143a45ab47b7b5">causeSpiTimeouts</a> (bool causeTimeouts, unsigned int limitToNTimeouts=0)</td></tr>
+<tr class="memdesc:aa099dcd30cacb731c0143a45ab47b7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dummy does not react on the SPI write registers if this flag is set true.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aa099dcd30cacb731c0143a45ab47b7b5">More...</a><br /></td></tr>
+<tr class="separator:aa099dcd30cacb731c0143a45ab47b7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af9c112cd5e938249c84fbfe0b88587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a7af9c112cd5e938249c84fbfe0b88587">causeSpiErrors</a> (bool causeErrors)</td></tr>
+<tr class="memdesc:a7af9c112cd5e938249c84fbfe0b88587"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dummy always reports an SPI error in the sync registers if this flag is set true.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a7af9c112cd5e938249c84fbfe0b88587">More...</a><br /></td></tr>
+<tr class="separator:a7af9c112cd5e938249c84fbfe0b88587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc42c1e6fa8d3ba656f598df084a125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6cc42c1e6fa8d3ba656f598df084a125">setFirmwareVersion</a> (uint32_t version)</td></tr>
+<tr class="memdesc:a6cc42c1e6fa8d3ba656f598df084a125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite the firmware version for testing.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6cc42c1e6fa8d3ba656f598df084a125">More...</a><br /></td></tr>
+<tr class="separator:a6cc42c1e6fa8d3ba656f598df084a125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b32c4e2a16e5772b64328cf5c49a91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a5b32c4e2a16e5772b64328cf5c49a91b">resetFirmwareVersion</a> ()</td></tr>
 <tr class="memdesc:a5b32c4e2a16e5772b64328cf5c49a91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the firmware version to 0xMMmmFFFF (dummy default).  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a5b32c4e2a16e5772b64328cf5c49a91b">More...</a><br /></td></tr>
 <tr class="separator:a5b32c4e2a16e5772b64328cf5c49a91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,15 +167,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a246a8f9ac17e96fcdfbeab1d834a9572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a246a8f9ac17e96fcdfbeab1d834a9572">setDriverSpiDelay</a> (unsigned int microseconds)</td></tr>
 <tr class="memdesc:a246a8f9ac17e96fcdfbeab1d834a9572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the simulated SPI delay for the TMC260 driver chip in microseconds.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a246a8f9ac17e96fcdfbeab1d834a9572">More...</a><br /></td></tr>
 <tr class="separator:a246a8f9ac17e96fcdfbeab1d834a9572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa8f8694537d230184a35a0c04195394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#afa8f8694537d230184a35a0c04195394">setDriverSpiRegistersForTesting</a> ()</td></tr>
-<tr class="memdesc:afa8f8694537d230184a35a0c04195394"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing all driver registers can be set to test values (also those initialised by the config)  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#afa8f8694537d230184a35a0c04195394">More...</a><br /></td></tr>
-<tr class="separator:afa8f8694537d230184a35a0c04195394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc42c1e6fa8d3ba656f598df084a125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6cc42c1e6fa8d3ba656f598df084a125">setFirmwareVersion</a> (uint32_t version)</td></tr>
-<tr class="memdesc:a6cc42c1e6fa8d3ba656f598df084a125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite the firmware version for testing.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6cc42c1e6fa8d3ba656f598df084a125">More...</a><br /></td></tr>
-<tr class="separator:a6cc42c1e6fa8d3ba656f598df084a125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566184b18337161111b628da88fc0104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a566184b18337161111b628da88fc0104">setRegistersForTesting</a> ()</td></tr>
-<tr class="memdesc:a566184b18337161111b628da88fc0104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the test pattern to all registers.  <a href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a566184b18337161111b628da88fc0104">More...</a><br /></td></tr>
-<tr class="separator:a566184b18337161111b628da88fc0104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0820d445967a6cb3885d9d261dabf5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aed0820d445967a6cb3885d9d261dabf5">readTMC429Register</a> (uint32_t SPIDatagram)</td></tr>
+<tr class="separator:aed0820d445967a6cb3885d9d261dabf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964d11b8999fdafe1225fa4306d9b01d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a964d11b8999fdafe1225fa4306d9b01d">readTMC260Register</a> (uint32_t motorID, <a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0e91c67f01ac653ae21d9856112e7e41">TMC260Register</a> configuredRegister)</td></tr>
+<tr class="separator:a964d11b8999fdafe1225fa4306d9b01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -676,7 +676,7 @@ The updated values are truncated to 24 bit. The 24 bit are not truncated accordi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html">DFMC_MD22Dummy</a></li>
-    <li class="footer">Generated on Thu Jun 29 2023 03:54:01 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 24 2023 03:59:51 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
