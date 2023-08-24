@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#acc3032c73acf395694e6f5b5a2eb62d7":[19,0,1,0,13,4],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#ae21ac35fba53e5901694da3ec82c0116":[19,0,1,0,13,5],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html":[19,0,1,0,1],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#a4b78697b7455ac0f67e9cab64051b00b":[19,0,1,0,1,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "struct_dummy_for_double_buffering_1_1_backend_registerer.html#a648ec017b32cae2993df0da5a7e8a5b5":[19,0,37,0,0],
 "struct_dummy_protocol_implementor.html":[19,0,38],
 "struct_dummy_protocol_implementor.html#a6522b6b15930a5c7b350848df013393c":[19,0,38,2],
-"struct_dummy_protocol_implementor.html#a6764cd943e5a41276aeede2113e89efb":[19,0,38,6]
+"struct_dummy_protocol_implementor.html#a6764cd943e5a41276aeede2113e89efb":[19,0,38,6],
+"struct_dummy_protocol_implementor.html#a7769942d18f42d702d87ee472eec011e":[19,0,38,1]
 };

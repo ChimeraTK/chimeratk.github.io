@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_numeric_addressed_backend_8cc.html":[20,0,2,3,1,5],
 "_numeric_addressed_backend_8cc_source.html":[20,0,2,3,1,5],
 "_numeric_addressed_backend_8h.html":[20,0,2,3,0,5],
 "_numeric_addressed_backend_8h_source.html":[20,0,2,3,0,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "_void_register_accessor_8h.html":[20,0,1,0,18],
 "_void_register_accessor_8h_source.html":[20,0,1,0,18],
 "_working_backend_8cc.html":[20,0,8,0,3],
-"_working_backend_8cc_source.html":[20,0,8,0,3]
+"_working_backend_8cc_source.html":[20,0,8,0,3],
+"_write_counting_backend_8h.html":[20,0,8,2,6]
 };

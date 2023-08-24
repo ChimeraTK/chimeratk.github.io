@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"struct_dummy_protocol_implementor.html#a7769942d18f42d702d87ee472eec011e":[19,0,38,1],
 "struct_dummy_protocol_implementor.html#a7a8c27b5c69cb07f92d304515249e7f3":[19,0,38,7],
 "struct_dummy_protocol_implementor.html#a8811cfa644621849fb6d5db4864ea6f4":[19,0,38,4],
 "struct_dummy_protocol_implementor.html#aa8cc5b73e31d4e73b04356e66992d9e6":[19,0,38,0],
@@ -67,8 +66,8 @@ var NAVTREEINDEX14 =
 "struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,48,6],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[19,0,48,12],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[19,0,48,11],
-"struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,48,4],
 "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,48,5],
+"struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,48,4],
 "struct_integers__signed32___dummy_writable.html":[19,0,51],
 "struct_integers__signed32___dummy_writable.html#a74b1399b6f11b08240216e0f0b7fdfdb":[19,0,51,0],
 "struct_integers__signed32___dummy_writable.html#aa6d08f67cfbac76dc85ca4cfaf1fbb9c":[19,0,51,1],
@@ -91,8 +90,8 @@ var NAVTREEINDEX14 =
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,49,14],
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,49,13],
 "struct_integers__signed32__async.html#a681276f1b5ad8dd610a185aa3e0e22b3":[19,0,49,15],
-"struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,49,16],
 "struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,49,17],
+"struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,49,16],
 "struct_integers__signed32__async.html#a7cf5d1e6995834a70315757c00d48339":[19,0,49,10],
 "struct_integers__signed32__async.html#a9a0512be9d188aaeeabcaff1c3c765ce":[19,0,49,8],
 "struct_integers__signed32__async.html#a9a0512be9d188aaeeabcaff1c3c765ce":[19,0,49,9],
@@ -101,8 +100,8 @@ var NAVTREEINDEX14 =
 "struct_integers__signed32__async.html#ad83cc912f7b3036a7fd5c59d4705a5f4":[19,0,49,5],
 "struct_integers__signed32__async.html#ae47d041a5c5ddcd3c606c5a189c6846f":[19,0,49,12],
 "struct_integers__signed32__async.html#aedaca3e4443ee467c888a1420ae43da2":[19,0,49,3],
-"struct_integers__signed32__async.html#af682aeb7ddf05ae2553fa2a5fb3a2fe5":[19,0,49,7],
 "struct_integers__signed32__async.html#af682aeb7ddf05ae2553fa2a5fb3a2fe5":[19,0,49,6],
+"struct_integers__signed32__async.html#af682aeb7ddf05ae2553fa2a5fb3a2fe5":[19,0,49,7],
 "struct_integers__signed32__async.html#af7bb921c7cb8d7b25cdf942990655343":[19,0,49,20],
 "struct_integers__signed32__async__rw.html":[19,0,50],
 "struct_integers__signed32__async__rw.html#a1f7e0e5756e653a30460ab2660a66072":[19,0,50,14],
@@ -215,8 +214,8 @@ var NAVTREEINDEX14 =
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,61,9],
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,61,8],
 "struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[19,0,61,7],
-"struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,61,3],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,61,2],
+"struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,61,3],
 "struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7":[19,0,61,6],
 "struct_my_register1.html":[19,0,62],
 "struct_my_register1.html#a0a3f6ad525cfab066402387bfc6fb16e":[19,0,62,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "struct_rebot_server_details.html":[19,0,78],
 "struct_rebot_server_details.html#a2f9f80babd0826bcf5ca87d4d1fc865d":[19,0,78,3],
 "struct_rebot_server_details.html#a54cfa8f2324e1c9531cd6a04de5e5986":[19,0,78,0],
-"struct_rebot_server_details.html#ae88870eca060d36af1584dab13b45c86":[19,0,78,2]
+"struct_rebot_server_details.html#ae88870eca060d36af1584dab13b45c86":[19,0,78,2],
+"struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3":[19,0,78,1]
 };
