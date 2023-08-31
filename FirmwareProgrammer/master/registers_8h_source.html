@@ -96,53 +96,54 @@ $(document).ready(function(){initNavTree('registers_8h_source.html',''); initRes
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="registers_8h.html#a7955819d09961462b0965e63dc68b0ef">    7</a></span>&#160;<span class="preprocessor">#define PROG_DEFAULT_MODULE_NAME &quot;BOARD0.AREA_BOOT&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="registers_8h.html#a226dd2a776eac2a0bfbed67604bdf079">    8</a></span>&#160;<span class="preprocessor">#define PROG_DEFAULT_MODULE_NAME2 &quot;BOARD.0.AREA_BOOT&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="registers_8h.html#a4a694a340fb98403cb86ed85e3cafb2f">    9</a></span>&#160;<span class="preprocessor">#define PROG_DEFAULT_MODULE_NAME3 &quot;BSP.AREA_BOOT&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="registers_8h.html#a3fb94086e0f202317d9eefa7989b810c">   10</a></span>&#160;<span class="preprocessor">#define PROG_DEFAULT_MODULE_NAME4 &quot;BSP.FCM&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="registers_8h.html#ab413cce04ef74d70097cec02312f888e">   12</a></span>&#160;<span class="preprocessor">#define PROG_REG_AREA_SIZE 65536</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* Addresses of programmer registers</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * All addressses are relative to base offset that can be specified</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * as an argument of the application</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * All below values are in words (4 bytes)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="registers_8h.html#ae1c9b7c584ebd30f0a92a304995d7d1c">   20</a></span>&#160;<span class="preprocessor">#define AREA_WRITE 0x000000 </span><span class="comment">// size 0-1023</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="registers_8h.html#a8049fc3e13944003f5f9d7b16f6b3e7a">   21</a></span>&#160;<span class="preprocessor">#define AREA_READ 0x000400  </span><span class="comment">// size 1024-2047</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="registers_8h.html#aefbafd44a7b2cf3b53ab2ea890bb677f">   22</a></span>&#160;<span class="preprocessor">#define REG_SPI_DIVIDER 0x000800</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="registers_8h.html#a4a662ebb27303d6da2a15d591e53bee3">   23</a></span>&#160;<span class="preprocessor">#define REG_BYTES_TO_WRITE 0x000803</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="registers_8h.html#ae289e24a7d2b431a5a35e30765267cde">   24</a></span>&#160;<span class="preprocessor">#define REG_BYTES_TO_READ 0x000804</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="registers_8h.html#a795320fb5aae950b22d29686eb75020a">   25</a></span>&#160;<span class="preprocessor">#define REG_CONTROL 0x000805</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="registers_8h.html#a03ee60a48e419f0d604b22960a0e297a">   26</a></span>&#160;<span class="preprocessor">#define REG_TCK 0x000806</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="registers_8h.html#a3b17ea021f8bc38fffcd552e38175cb3">   27</a></span>&#160;<span class="preprocessor">#define REG_TMS 0x000807</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="registers_8h.html#ab6e9ed4045245b6a4653f685034895e7">   28</a></span>&#160;<span class="preprocessor">#define REG_TDI 0x000808</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="registers_8h.html#a3f96ae13b8848d55ddd6811b72dc7169">   29</a></span>&#160;<span class="preprocessor">#define REG_TDO 0x000809</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="registers_8h.html#af1471509d1b5a8b863b1f32df94548dc">   30</a></span>&#160;<span class="preprocessor">#define REG_REV_SWITCH 0x00080F</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="registers_8h.html#a2f90e9c6210ef9851a40a0ec857cfead">   31</a></span>&#160;<span class="preprocessor">#define REG_REV_SEL 0x000810</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="registers_8h.html#aca80e691957351f6ecb6214f20575bae">   33</a></span>&#160;<span class="preprocessor">#define AREA_WRITE_SIZE 0x400</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="registers_8h.html#a667e51f879915ee72bd1b55a33448d1d">   34</a></span>&#160;<span class="preprocessor">#define AREA_READ_SIZE 0x400</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*********************************************************************/</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* BITS                                                              */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/*********************************************************************/</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Control register (REG_CONTROL)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="registers_8h.html#a349255df80e52393fed4b2b56154e510">   40</a></span>&#160;<span class="preprocessor">#define SPI_START 0x00000001    </span><span class="comment">// start spi operation</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="registers_8h.html#aa1fa404cea3ebb3ce3fc7e785fc5ca4b">   41</a></span>&#160;<span class="preprocessor">#define SPI_R_NW 0x00000002     </span><span class="comment">// SPI read/write (0 - write, 1 - read)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="registers_8h.html#a7df61fa3020e010c8ac3956f1a5eead0">   42</a></span>&#160;<span class="preprocessor">#define DSP_SPI_BOOT 0x00000008 </span><span class="comment">// DSP_boot source (1 - boot from SPI)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="registers_8h.html#a9a7f3f4238f8c4b7eaf7f0e61a232d8b">   43</a></span>&#160;<span class="preprocessor">#define SPI_PROG 0x00000010     </span><span class="comment">// 0 - DSP, 1 - SPI</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="registers_8h.html#aeed17deae8547d63aaf153e384c6210a">   44</a></span>&#160;<span class="preprocessor">#define PCIE_V5 0x00000020      </span><span class="comment">// PCIE mux (0 - RTM, 1 - V5)</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="registers_8h.html#a4cd7b28563be4053aea69a5eba339a58">   45</a></span>&#160;<span class="preprocessor">#define SPIREADER_RESET 0x08000000</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="registers_8h.html#a3ab2b6fb11ba6a9e8f3fcbbf1b929bc3">   46</a></span>&#160;<span class="preprocessor">#define DSP_RESET 0x80000000</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Revision switch register (REG_REV_SWITCH)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="registers_8h.html#aeb8495cc4f79472d48e978be81cde4ce">   49</a></span>&#160;<span class="preprocessor">#define FPGA_REBOOT_WORD 0x2EB00701</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="registers_8h.html#a3fb94086e0f202317d9eefa7989b810c">   10</a></span>&#160;<span class="preprocessor">#define PROG_DEFAULT_MODULE_NAME4 &quot;FCM.WORD_CONTROL&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="registers_8h.html#afdfd78bf25c0a3873c89cf5848af4e48">   11</a></span>&#160;<span class="preprocessor">#define PROG_DEFAULT_MODULE_NAME5 &quot;FCM.CONTROL&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="registers_8h.html#ab413cce04ef74d70097cec02312f888e">   13</a></span>&#160;<span class="preprocessor">#define PROG_REG_AREA_SIZE 65536</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/* Addresses of programmer registers</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * All addressses are relative to base offset that can be specified</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * as an argument of the application</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * All below values are in words (4 bytes)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="registers_8h.html#ae1c9b7c584ebd30f0a92a304995d7d1c">   21</a></span>&#160;<span class="preprocessor">#define AREA_WRITE 0x000000 </span><span class="comment">// size 0-1023</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="registers_8h.html#a8049fc3e13944003f5f9d7b16f6b3e7a">   22</a></span>&#160;<span class="preprocessor">#define AREA_READ 0x000400  </span><span class="comment">// size 1024-2047</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="registers_8h.html#aefbafd44a7b2cf3b53ab2ea890bb677f">   23</a></span>&#160;<span class="preprocessor">#define REG_SPI_DIVIDER 0x000800</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="registers_8h.html#a4a662ebb27303d6da2a15d591e53bee3">   24</a></span>&#160;<span class="preprocessor">#define REG_BYTES_TO_WRITE 0x000803</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="registers_8h.html#ae289e24a7d2b431a5a35e30765267cde">   25</a></span>&#160;<span class="preprocessor">#define REG_BYTES_TO_READ 0x000804</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="registers_8h.html#a795320fb5aae950b22d29686eb75020a">   26</a></span>&#160;<span class="preprocessor">#define REG_CONTROL 0x000805</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="registers_8h.html#a03ee60a48e419f0d604b22960a0e297a">   27</a></span>&#160;<span class="preprocessor">#define REG_TCK 0x000806</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="registers_8h.html#a3b17ea021f8bc38fffcd552e38175cb3">   28</a></span>&#160;<span class="preprocessor">#define REG_TMS 0x000807</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="registers_8h.html#ab6e9ed4045245b6a4653f685034895e7">   29</a></span>&#160;<span class="preprocessor">#define REG_TDI 0x000808</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="registers_8h.html#a3f96ae13b8848d55ddd6811b72dc7169">   30</a></span>&#160;<span class="preprocessor">#define REG_TDO 0x000809</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="registers_8h.html#af1471509d1b5a8b863b1f32df94548dc">   31</a></span>&#160;<span class="preprocessor">#define REG_REV_SWITCH 0x00080F</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="registers_8h.html#a2f90e9c6210ef9851a40a0ec857cfead">   32</a></span>&#160;<span class="preprocessor">#define REG_REV_SEL 0x000810</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="registers_8h.html#aca80e691957351f6ecb6214f20575bae">   34</a></span>&#160;<span class="preprocessor">#define AREA_WRITE_SIZE 0x400</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="registers_8h.html#a667e51f879915ee72bd1b55a33448d1d">   35</a></span>&#160;<span class="preprocessor">#define AREA_READ_SIZE 0x400</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* BITS                                                              */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/*********************************************************************/</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Control register (REG_CONTROL)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="registers_8h.html#a349255df80e52393fed4b2b56154e510">   41</a></span>&#160;<span class="preprocessor">#define SPI_START 0x00000001    </span><span class="comment">// start spi operation</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="registers_8h.html#aa1fa404cea3ebb3ce3fc7e785fc5ca4b">   42</a></span>&#160;<span class="preprocessor">#define SPI_R_NW 0x00000002     </span><span class="comment">// SPI read/write (0 - write, 1 - read)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="registers_8h.html#a7df61fa3020e010c8ac3956f1a5eead0">   43</a></span>&#160;<span class="preprocessor">#define DSP_SPI_BOOT 0x00000008 </span><span class="comment">// DSP_boot source (1 - boot from SPI)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="registers_8h.html#a9a7f3f4238f8c4b7eaf7f0e61a232d8b">   44</a></span>&#160;<span class="preprocessor">#define SPI_PROG 0x00000010     </span><span class="comment">// 0 - DSP, 1 - SPI</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="registers_8h.html#aeed17deae8547d63aaf153e384c6210a">   45</a></span>&#160;<span class="preprocessor">#define PCIE_V5 0x00000020      </span><span class="comment">// PCIE mux (0 - RTM, 1 - V5)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="registers_8h.html#a4cd7b28563be4053aea69a5eba339a58">   46</a></span>&#160;<span class="preprocessor">#define SPIREADER_RESET 0x08000000</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="registers_8h.html#a3ab2b6fb11ba6a9e8f3fcbbf1b929bc3">   47</a></span>&#160;<span class="preprocessor">#define DSP_RESET 0x80000000</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// Revision switch register (REG_REV_SWITCH)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="registers_8h.html#aeb8495cc4f79472d48e978be81cde4ce">   50</a></span>&#160;<span class="preprocessor">#define FPGA_REBOOT_WORD 0x2EB00701</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="registers_8h.html">registers.h</a></li>
-    <li class="footer">Generated on Thu Aug 24 2023 04:01:16 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 31 2023 03:54:52 for ChimeraTK_FirmwareProgrammer by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

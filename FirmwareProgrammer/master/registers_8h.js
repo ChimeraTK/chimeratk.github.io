@@ -14,6 +14,7 @@ var registers_8h =
     [ "PROG_DEFAULT_MODULE_NAME2", "registers_8h.html#a226dd2a776eac2a0bfbed67604bdf079", null ],
     [ "PROG_DEFAULT_MODULE_NAME3", "registers_8h.html#a4a694a340fb98403cb86ed85e3cafb2f", null ],
     [ "PROG_DEFAULT_MODULE_NAME4", "registers_8h.html#a3fb94086e0f202317d9eefa7989b810c", null ],
+    [ "PROG_DEFAULT_MODULE_NAME5", "registers_8h.html#afdfd78bf25c0a3873c89cf5848af4e48", null ],
     [ "PROG_REG_AREA_SIZE", "registers_8h.html#ab413cce04ef74d70097cec02312f888e", null ],
     [ "REG_BYTES_TO_READ", "registers_8h.html#ae289e24a7d2b431a5a35e30765267cde", null ],
     [ "REG_BYTES_TO_WRITE", "registers_8h.html#a4a662ebb27303d6da2a15d591e53bee3", null ],
