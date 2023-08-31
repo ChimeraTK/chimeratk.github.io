@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classmtca4u_1_1_motor_controler_test.html#af158ef1cf97f8fdfd819ad1aa02e9291":[7,0,2,54,7],
 "classmtca4u_1_1_motor_controler_test.html#af1fd31cb7fab3ed223427a5e8463ba50":[7,0,2,54,31],
 "classmtca4u_1_1_motor_controler_test.html#afd057a89011e1b8c922ca2f3feea6a88":[7,0,2,54,24],
 "classmtca4u_1_1_motor_controler_test_suite.html":[7,0,2,55],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classmtca4u_1_1_stepper_motor_status.html#add5de47b83ec62bf0323da2576dd6c02":[7,0,2,51,2],
 "classmtca4u_1_1_stepper_motor_status_and_error.html":[7,0,2,42],
 "classmtca4u_1_1_stepper_motor_status_and_error.html#a0fc5e626108150c92cbe459371f659f4":[7,0,2,42,2],
-"classmtca4u_1_1_stepper_motor_status_and_error.html#a2b0d1fd58d1f0989b738c1a628e2ce1f":[7,0,2,42,0],
-"classmtca4u_1_1_stepper_motor_status_and_error.html#a8723656d410a57c8ab3e0833b8fb5407":[7,0,2,42,1]
+"classmtca4u_1_1_stepper_motor_status_and_error.html#a2b0d1fd58d1f0989b738c1a628e2ce1f":[7,0,2,42,0]
 };

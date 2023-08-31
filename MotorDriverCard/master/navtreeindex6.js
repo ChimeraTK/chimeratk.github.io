@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classmtca4u_1_1_stepper_motor_status_and_error.html#a8723656d410a57c8ab3e0833b8fb5407":[7,0,2,42,1],
 "classmtca4u_1_1_stepper_motor_status_types.html":[7,0,2,50],
 "classmtca4u_1_1_stepper_motor_status_types.html#af89f4a014d7805b56e57e0334fe3001c":[7,0,2,50,0],
 "classmtca4u_1_1_t_m_c260_word.html":[7,0,2,20],
@@ -154,8 +155,8 @@ var NAVTREEINDEX6 =
 "get_parameters_8h.html#a2b068c4d20ed2f8c7e69972115d0214e":[8,0,1,1,1,1],
 "get_parameters_8h.html#afe902f77adadd6556dab1acaba0b604c":[8,0,1,1,1,0],
 "get_parameters_8h_source.html":[8,0,1,1,1],
-"globals.html":[8,1,0,0],
 "globals.html":[8,1,0],
+"globals.html":[8,1,0,0],
 "globals_b.html":[8,1,0,1],
 "globals_c.html":[8,1,0,2],
 "globals_d.html":[8,1,0,3],
@@ -232,13 +233,14 @@ var NAVTREEINDEX6 =
 "namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444aba7de5bc6888294e5884b024a4c894f1":[6,0,0,0,6,2],
 "namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444ae5564829e2f85f6a6873a9d5c4f26d09":[6,0,0,0,6,1],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html":[6,0,0,0,0],
-"namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a0e208c34da5b146457f4f94675f16ab3":[6,0,0,0,0,10],
+"namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a0e208c34da5b146457f4f94675f16ab3":[6,0,0,0,0,11],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a127e10207b409b6bcb30e9c2fb63dec7":[6,0,0,0,0,6],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a2331302d0887fc536d9ccd2d73d2c363":[6,0,0,0,0,8],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a34cd5f82c4d0d7da4e59ceb0f15a32c9":[6,0,0,0,0,5],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a4f75c087ee1c9a8b2f4c9c0ce306de29":[6,0,0,0,0,7],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#abd44a96b4dde48550f09e030f0ec8f44":[6,0,0,0,0,9],
 "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#ad379106caa37d053c109a027f5857e6a":[6,0,0,0,0,4],
+"namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#af4f7dbcf12445ab456e699263e7486a8":[6,0,0,0,0,10],
 "namespacedetail.html":[6,0,1],
 "namespacemembers.html":[6,1,0],
 "namespacemembers_enum.html":[6,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "namespacemembers_vars.html":[6,1,2],
 "namespacemtca4u.html":[6,0,2],
 "namespacemtca4u.html#a032b7d8e6973c8018d9b60d4518ec4a1":[6,0,2,85],
-"namespacemtca4u.html#a0662f0b2565ec8de58ccf5f0208f525a":[6,0,2,77],
-"namespacemtca4u.html#a112da2acbacd45d40c1d5210d258d927":[6,0,2,64],
-"namespacemtca4u.html#a17d54b943ef2096c72ee576a5618a480":[6,0,2,66]
+"namespacemtca4u.html#a0662f0b2565ec8de58ccf5f0208f525a":[6,0,2,77]
 };

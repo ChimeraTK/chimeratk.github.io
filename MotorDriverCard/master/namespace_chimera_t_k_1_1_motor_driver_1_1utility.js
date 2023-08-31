@@ -10,5 +10,6 @@ var namespace_chimera_t_k_1_1_motor_driver_1_1utility =
     [ "MotorStepsConverterTrivia", "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a4f75c087ee1c9a8b2f4c9c0ce306de29", null ],
     [ "ScalingEncoderStepsConverter", "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a2331302d0887fc536d9ccd2d73d2c363", null ],
     [ "ScalingMotorStepsConverter", "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#abd44a96b4dde48550f09e030f0ec8f44", null ],
+    [ "checkIfOverflow", "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#af4f7dbcf12445ab456e699263e7486a8", null ],
     [ "operator<", "namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a0e208c34da5b146457f4f94675f16ab3", null ]
 ];

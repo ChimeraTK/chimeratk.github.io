@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"namespacemtca4u.html#a112da2acbacd45d40c1d5210d258d927":[6,0,2,64],
+"namespacemtca4u.html#a17d54b943ef2096c72ee576a5618a480":[6,0,2,66],
 "namespacemtca4u.html#a18656b605d36709b1d0651f0b044c9d6":[6,0,2,86],
 "namespacemtca4u.html#a296f2bced51a96fc4db565c8011f7388":[6,0,2,71],
 "namespacemtca4u.html#a32256eec90d3da13a2334eab2e2d5374":[6,0,2,63],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "test_logger_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[8,0,6,2,3,0],
 "test_logger_8cc.html#a7389b209bf7ced770cb37ca28150551b":[8,0,6,2,3,5],
 "test_logger_8cc.html#aa3f0af6df7c808d5d1afa863c33898be":[8,0,6,2,3,4],
-"test_logger_8cc.html#abb5f9d54c4ec94ae93ebfef8da1b7cd2":[8,0,6,2,3,1],
-"test_logger_8cc.html#ad6fd0474648a1ccce9929b8494e0d53b":[8,0,6,2,3,6],
-"test_logger_8cc.html#ae968c881db6a4d9810f2a85f254c3b17":[8,0,6,2,3,7]
+"test_logger_8cc.html#abb5f9d54c4ec94ae93ebfef8da1b7cd2":[8,0,6,2,3,1]
 };

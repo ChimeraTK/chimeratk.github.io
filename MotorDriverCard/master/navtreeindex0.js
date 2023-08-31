@@ -2,6 +2,7 @@ var NAVTREEINDEX0 =
 {
 "_basic_stepper_motor_8cc.html":[8,0,5,1,0],
 "_basic_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6":[8,0,5,1,0,0],
+"_basic_stepper_motor_8cc.html#af4f7dbcf12445ab456e699263e7486a8":[8,0,5,1,0,1],
 "_basic_stepper_motor_8cc_source.html":[8,0,5,1,0],
 "_basic_stepper_motor_8h.html":[8,0,5,0,0],
 "_basic_stepper_motor_8h_source.html":[8,0,5,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_stepper_motor_state_machine_8cc_source.html":[8,0,5,1,4],
 "_stepper_motor_status_8cc.html":[8,0,4,1,4],
 "_stepper_motor_status_8cc_source.html":[8,0,4,1,4],
-"_stepper_motor_status_8h.html":[8,0,4,0,4],
-"_stepper_motor_status_8h_source.html":[8,0,4,0,4]
+"_stepper_motor_status_8h.html":[8,0,4,0,4]
 };

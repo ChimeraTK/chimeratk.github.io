@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"test_logger_8cc.html#ad6fd0474648a1ccce9929b8494e0d53b":[8,0,6,2,3,6],
+"test_logger_8cc.html#ae968c881db6a4d9810f2a85f254c3b17":[8,0,6,2,3,7],
 "test_logger_8cc_source.html":[8,0,6,2,3],
 "test_motor_controler_8cpp.html":[8,0,6,2,4],
 "test_motor_controler_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f":[8,0,6,2,4,3],

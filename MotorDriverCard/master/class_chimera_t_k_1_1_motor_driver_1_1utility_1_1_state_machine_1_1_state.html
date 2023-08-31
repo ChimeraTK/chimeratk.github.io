@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a10fb8f31344c99aae14f601f58123754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff5ccbb7215e868e95cb7dfbc2232a8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#a9ff5ccbb7215e868e95cb7dfbc2232a8">~State</a> ()</td></tr>
 <tr class="separator:a9ff5ccbb7215e868e95cb7dfbc2232a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3ac5f1af5e5a2bd2ce7b37e182a1f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#ae3ac5f1af5e5a2bd2ce7b37e182a1f4a">setTransition</a> (<a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html">Event</a> event, <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html">State</a> *target, std::function&lt; void(void)&gt; entryCallback, std::function&lt; void(void)&gt; internalCallback=[] {})</td></tr>
-<tr class="memdesc:ae3ac5f1af5e5a2bd2ce7b37e182a1f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will append a new state the the TransitionTable of this state.  <a href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#ae3ac5f1af5e5a2bd2ce7b37e182a1f4a">More...</a><br /></td></tr>
-<tr class="separator:ae3ac5f1af5e5a2bd2ce7b37e182a1f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5016d3573ce56d92cb217d0618b48ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#a5016d3573ce56d92cb217d0618b48ea1">setTransition</a> (const <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html">Event</a> &amp;event, <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html">State</a> *target, std::function&lt; void(void)&gt; entryCallback, std::function&lt; void(void)&gt; internalCallback=[] {})</td></tr>
+<tr class="memdesc:a5016d3573ce56d92cb217d0618b48ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will append a new state the the TransitionTable of this state.  <a href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#a5016d3573ce56d92cb217d0618b48ea1">More...</a><br /></td></tr>
+<tr class="separator:a5016d3573ce56d92cb217d0618b48ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7afb1c83674efaf220caa9f1890ae1ea"><td class="memItemLeft" align="right" valign="top">const TransitionTable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#a7afb1c83674efaf220caa9f1890ae1ea">getTransitionTable</a> () const</td></tr>
 <tr class="separator:a7afb1c83674efaf220caa9f1890ae1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8395f850feaffa0ed53075b808aef6c4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html#a8395f850feaffa0ed53075b808aef6c4">getName</a> () const</td></tr>
@@ -138,13 +138,16 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Class describing state of the <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html" title="Base class for a state machine.">StateMachine</a>. </p>
 <p>This object holds the state name and a TransitionTable describing transitions from an instance to any target states. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00051">51</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00047">47</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a10fb8f31344c99aae14f601f58123754"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10fb8f31344c99aae14f601f58123754">&#9670;&nbsp;</a></span>State()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ChimeraTK::MotorDriver::utility::StateMachine::State::State </td>
@@ -154,9 +157,14 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00026">26</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00033">33</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
 
 </div>
 </div>
@@ -178,12 +186,10 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00028">28</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
 
 </div>
 </div>
@@ -206,7 +212,7 @@ Friends</h2></td></tr>
 <p>getName </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00040">40</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00055">55</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -233,7 +239,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00036">36</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00049">49</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -245,8 +251,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3ac5f1af5e5a2bd2ce7b37e182a1f4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3ac5f1af5e5a2bd2ce7b37e182a1f4a">&#9670;&nbsp;</a></span>setTransition()</h2>
+<a id="a5016d3573ce56d92cb217d0618b48ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5016d3573ce56d92cb217d0618b48ea1">&#9670;&nbsp;</a></span>setTransition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +260,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::MotorDriver::utility::StateMachine::State::setTransition </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html">Event</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html">Event</a> &amp;&#160;</td>
           <td class="paramname"><em>event</em>, </td>
         </tr>
         <tr>
@@ -289,18 +295,18 @@ Friends</h2></td></tr>
     <tr><td class="paramname">event</td><td>- <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html" title="Class describing events triggering the StateMachine.">Event</a> causing the transition </td></tr>
     <tr><td class="paramname">target</td><td>- Pointer to the target state </td></tr>
     <tr><td class="paramname">entryCallback</td><td>- A callback function that will be executed when entering the target state </td></tr>
-    <tr><td class="paramname">internalCallback</td><td>- An optional internal callback that can be used to implement internal events. To achieve this, the callback function must check the condition for a state transition and might then call <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#a5e14555bb59e0adf340f0c8be02f894a">StateMachine::performTransition</a>. This callback is performed on each call to <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#a0a04566c4e780b14d83dbc5cdebb5c73">StateMachine::getCurrentState</a>. </td></tr>
+    <tr><td class="paramname">internalCallback</td><td>- An optional internal callback that can be used to implement internal events. To achieve this, the callback function must check the condition for a state transition and might then call <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#add8fc02a17647ecb68e0d1a4fb3b01be">StateMachine::performTransition</a>. This callback is performed on each call to <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#a0a04566c4e780b14d83dbc5cdebb5c73">StateMachine::getCurrentState</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00030">30</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cc_source.html#l00041">41</a> of file <a class="el" href="_state_machine_8cc_source.html">StateMachine.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state_ae3ac5f1af5e5a2bd2ce7b37e182a1f4a_icgraph.svg" width="490" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state_a5016d3573ce56d92cb217d0618b48ea1_icgraph.svg" width="490" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -327,7 +333,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00052">52</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00048">48</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +358,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00107">107</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00104">104</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +382,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00108">108</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8h_source.html#l00105">105</a> of file <a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +396,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_motor_driver.html">MotorDriver</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_motor_driver_1_1utility.html">utility</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html">StateMachine</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html">State</a></li>
-    <li class="footer">Generated on Thu Aug 24 2023 03:59:51 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 31 2023 03:54:01 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
