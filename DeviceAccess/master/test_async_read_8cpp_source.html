@@ -815,21 +815,18 @@ $(document).ready(function(){initNavTree('test_async_read_8cpp_source.html','');
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    });</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160; </div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="comment">// put exception to queue</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;      <span class="keywordflow">throw</span> boost::thread_interrupted();</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    }</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordflow">catch</span>(...) {</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;      backend-&gt;notificationQueue[<span class="stringliteral">&quot;/a1&quot;</span>].push_exception(std::current_exception()); <span class="comment">// trigger transfer</span></div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    }</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    thread.join();</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    BOOST_TEST(exceptionFound == <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    BOOST_TEST(a1_casted-&gt;nPostReadCalled == nPostReadCalledReference + 1);</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  }</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    backend-&gt;notificationQueue[<span class="stringliteral">&quot;/a1&quot;</span>].push_exception(</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        std::make_exception_ptr(boost::thread_interrupted())); <span class="comment">// trigger transfer</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    thread.join();</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    BOOST_TEST(exceptionFound == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    BOOST_TEST(a1_casted-&gt;nPostReadCalled == nPostReadCalledReference + 1);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  }</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  <a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;}</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;}</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160; </div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="a_device_backend_impl_8h_html"><div class="ttname"><a href="_device_backend_impl_8h.html">DeviceBackendImpl.h</a></div></div>
 <div class="ttc" id="a_read_any_group_8h_html"><div class="ttname"><a href="_read_any_group_8h.html">ReadAnyGroup.h</a></div></div>
@@ -895,7 +892,7 @@ $(document).ready(function(){initNavTree('test_async_read_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_async_read_8cpp.html">testAsyncRead.cpp</a></li>
-    <li class="footer">Generated on Thu Aug 24 2023 03:56:40 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 9 2023 03:53:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
