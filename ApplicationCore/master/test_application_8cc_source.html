@@ -346,11 +346,31 @@ $(document).ready(function(){initNavTree('test_application_8cc_source.html','');
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  BOOST_CHECK(found_multiplierU16In);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  BOOST_CHECK(found_multiplierU16Out);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="test_application_8cc.html#a6f4c67b49fb0275fed1c42d01720e1f9">  261</a></span>&#160;<a class="code" href="test_application_8cc.html#a532515c0039c717e9effdbfae56a5f30">BOOST_AUTO_TEST_CASE</a>(testDOTGeneration) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;***************************************************************&quot;</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;               <span class="stringliteral">&quot;******************************************************&quot;</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;==&gt; tesDOTGeneration&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="comment">// delete DOT file if already existing</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  boost::filesystem::remove(<span class="stringliteral">&quot;TestAppInstance.dot&quot;</span>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="comment">// create app which exports some properties and generate its XML file</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <a class="code" href="struct_test_app.html">TestApp</a> app(<span class="stringliteral">&quot;TestAppInstance&quot;</span>);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  app.<a class="code" href="class_chimera_t_k_1_1_application.html#aaf3332fb3b771eaf0864f7cf9b4b43b0">generateDOT</a>();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="comment">// check existence</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">bool</span> found_dot{boost::filesystem::exists(<span class="stringliteral">&quot;TestAppInstance.dot&quot;</span>)};</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  BOOST_CHECK(found_dot);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
 <div class="ttc" id="a_application_8h_html"><div class="ttname"><a href="_application_8h.html">Application.h</a></div></div>
 <div class="ttc" id="a_multiplier_8h_html"><div class="ttname"><a href="_multiplier_8h.html">Multiplier.h</a></div></div>
 <div class="ttc" id="a_pipe_8h_html"><div class="ttname"><a href="_pipe_8h.html">Pipe.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00043">Application.h:43</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_a1c9c06d9a92bfb9f42875faf48771e2d"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d">ChimeraTK::Application::generateXML</a></div><div class="ttdeci">void generateXML()</div><div class="ttdoc">Instead of running the application, just initialise it and output the published variables to an XML f...</div><div class="ttdef"><b>Definition:</b> <a href="_application_8cc_source.html#l00224">Application.cc:224</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_aaf3332fb3b771eaf0864f7cf9b4b43b0"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#aaf3332fb3b771eaf0864f7cf9b4b43b0">ChimeraTK::Application::generateDOT</a></div><div class="ttdeci">void generateDOT()</div><div class="ttdoc">Instead of running the application, just initialise it and output the published variables to a DOT fi...</div><div class="ttdef"><b>Definition:</b> <a href="_application_8cc_source.html#l00234">Application.cc:234</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition:</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 <div class="ttc" id="anamespacedraw_module_connections_html_abfbed52cde3f71396dbf5c6942036fc8"><div class="ttname"><a href="namespacedraw_module_connections.html#abfbed52cde3f71396dbf5c6942036fc8">drawModuleConnections.root</a></div><div class="ttdeci">root</div><div class="ttdef"><b>Definition:</b> <a href="draw_module_connections_8py_source.html#l00066">drawModuleConnections.py:66</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_const_multiplier_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_const_multiplier.html">ChimeraTK::ConstMultiplier&lt; double &gt;</a></div></div>
@@ -366,7 +386,7 @@ $(document).ready(function(){initNavTree('test_application_8cc_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_application_8cc.html">testApplication.cc</a></li>
-    <li class="footer">Generated on Thu Sep 7 2023 03:53:53 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 03:53:53 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -7,6 +7,7 @@ var class_chimera_t_k_1_1_application =
     [ "enableDebugDataLoss", "class_chimera_t_k_1_1_application.html#a90d3be39e8df243e6180c5634470c1dc", null ],
     [ "enableTestableMode", "class_chimera_t_k_1_1_application.html#a44bc60895cb325bcd3bd57daef7b235b", null ],
     [ "enableVariableDebugging", "class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07", null ],
+    [ "generateDOT", "class_chimera_t_k_1_1_application.html#aaf3332fb3b771eaf0864f7cf9b4b43b0", null ],
     [ "generateXML", "class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d", null ],
     [ "getCircularNetworkHash", "class_chimera_t_k_1_1_application.html#a1370aa579b99e31fff2a3eb0ca79a3b2", null ],
     [ "getCircularNetworkInvalidityCounter", "class_chimera_t_k_1_1_application.html#a1ad84a641d88118b10cdfe49e7a0a120", null ],

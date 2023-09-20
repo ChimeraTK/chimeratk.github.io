@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"demo_status_monitor_8cc-example.html":[16,0],
 "demo_status_monitor_8cc.html":[15,0,2,0],
 "demo_status_monitor_8cc.html#a7e2de60c48b2000be30339c6c9f1c8ed":[15,0,2,0,2],
 "demo_status_monitor_8cc_source.html":[15,0,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "namespacevariable_houseold_to_wiki_table.html":[13,0,4],
 "namespacevariable_houseold_to_wiki_table.html#a193dd605ddbb0c227b8955204a1a8e7d":[13,0,4,3],
 "namespacevariable_houseold_to_wiki_table.html#a1b6fd4d7a25a8207652a04b430235f28":[13,0,4,2],
-"namespacevariable_houseold_to_wiki_table.html#a1f2633619abe4692efa9b01b523a080f":[13,0,4,1],
-"namespacevariable_houseold_to_wiki_table.html#acd8669582d3feb47a80bc1d08c383992":[13,0,4,4]
+"namespacevariable_houseold_to_wiki_table.html#a1f2633619abe4692efa9b01b523a080f":[13,0,4,1]
 };
