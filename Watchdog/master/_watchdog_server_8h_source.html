@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('_watchdog_server_8h_source.html',''); 
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * WatchdogServer.h</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  Created on: Sep 6, 2017</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *      Author: zenker</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *      Author: Klaus Zenker (HZDR)</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_process_module_8h.html">ProcessModule.h</a>&quot;</span></div>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('_watchdog_server_8h_source.html',''); 
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_watchdog_server.html#a86b02c2f0ac388ddfa4be1adf018d4ce">   71</a></span>&#160;  <a class="code" href="struct_watchdog_module_group.html">WatchdogModuleGroup</a> <a class="code" href="struct_watchdog_server.html#a86b02c2f0ac388ddfa4be1adf018d4ce">watchdog</a>{<span class="keyword">this</span>, <span class="stringliteral">&quot;watchdog&quot;</span>, <span class="stringliteral">&quot;Module monitoring the watchdog process&quot;</span>};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_watchdog_server.html#ac09a12c67cb27017e41acb8b934ef43c">   73</a></span>&#160;  ctk::DataLossCounter&lt;uint64_t&gt; <a class="code" href="struct_watchdog_server.html#ac09a12c67cb27017e41acb8b934ef43c">dataLossCounter</a>{<span class="keyword">this</span>, <span class="stringliteral">&quot;DataLossCounter&quot;</span>,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="stringliteral">&quot;Statistics on lost data within this watchdog server&quot;</span>, <span class="stringliteral">&quot;Trigger/tick&quot;</span>, ctk::HierarchyModifier::none};</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_watchdog_server.html#ac09a12c67cb27017e41acb8b934ef43c">   73</a></span>&#160;  ctk::DataLossCounter&lt;uint64_t&gt; <a class="code" href="struct_watchdog_server.html#ac09a12c67cb27017e41acb8b934ef43c">dataLossCounter</a>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">this</span>, <span class="stringliteral">&quot;DataLossCounter&quot;</span>, <span class="stringliteral">&quot;Statistics on lost data within this watchdog server&quot;</span>, <span class="stringliteral">&quot;Trigger/tick&quot;</span>};</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_watchdog_server.html#ab2f41478a0cee47e266d7cc2d8d2c695">   76</a></span>&#160;  logging::LoggingModule <a class="code" href="struct_watchdog_server.html#ab2f41478a0cee47e266d7cc2d8d2c695">logging</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -158,9 +158,9 @@ $(document).ready(function(){initNavTree('_watchdog_server_8h_source.html',''); 
 <div class="ttc" id="a_process_module_8h_html"><div class="ttname"><a href="_process_module_8h.html">ProcessModule.h</a></div></div>
 <div class="ttc" id="a_system_info_module_8h_html"><div class="ttname"><a href="_system_info_module_8h.html">SystemInfoModule.h</a></div></div>
 <div class="ttc" id="aclass_system_info_module_html"><div class="ttname"><a href="class_system_info_module.html">SystemInfoModule</a></div><div class="ttdoc">This module is used to read system parameter.</div><div class="ttdef"><b>Definition:</b> <a href="_system_info_module_8h_source.html#l00029">SystemInfoModule.h:29</a></div></div>
-<div class="ttc" id="astruct_file_system_group_html"><div class="ttname"><a href="struct_file_system_group.html">FileSystemGroup</a></div><div class="ttdoc">This group includes one FileSystemModule per hard drive.</div><div class="ttdef"><b>Definition:</b> <a href="_system_info_module_8h_source.html#l00218">SystemInfoModule.h:218</a></div></div>
+<div class="ttc" id="astruct_file_system_group_html"><div class="ttname"><a href="struct_file_system_group.html">FileSystemGroup</a></div><div class="ttdoc">This group includes one FileSystemModule per hard drive.</div><div class="ttdef"><b>Definition:</b> <a href="_system_info_module_8h_source.html#l00214">SystemInfoModule.h:214</a></div></div>
 <div class="ttc" id="astruct_log_file_module_html"><div class="ttname"><a href="struct_log_file_module.html">LogFileModule</a></div><div class="ttdoc">Module used to read external log file in order to make messages available to the control system.</div><div class="ttdef"><b>Definition:</b> <a href="_log_file_reader_8h_source.html#l00029">LogFileReader.h:29</a></div></div>
-<div class="ttc" id="astruct_network_group_html"><div class="ttname"><a href="struct_network_group.html">NetworkGroup</a></div><div class="ttdoc">This group includes one NetworkModule per network device.</div><div class="ttdef"><b>Definition:</b> <a href="_system_info_module_8h_source.html#l00311">SystemInfoModule.h:311</a></div></div>
+<div class="ttc" id="astruct_network_group_html"><div class="ttname"><a href="struct_network_group.html">NetworkGroup</a></div><div class="ttdoc">This group includes one NetworkModule per network device.</div><div class="ttdef"><b>Definition:</b> <a href="_system_info_module_8h_source.html#l00307">SystemInfoModule.h:307</a></div></div>
 <div class="ttc" id="astruct_process_group_html"><div class="ttname"><a href="struct_process_group.html">ProcessGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="_process_module_8h_source.html#l00298">ProcessModule.h:298</a></div></div>
 <div class="ttc" id="astruct_process_info_module_html"><div class="ttname"><a href="struct_process_info_module.html">ProcessInfoModule</a></div><div class="ttdoc">ProcessModule.h.</div><div class="ttdef"><b>Definition:</b> <a href="_process_module_8h_source.html#l00031">ProcessModule.h:31</a></div></div>
 <div class="ttc" id="astruct_watchdog_module_group_html"><div class="ttname"><a href="struct_watchdog_module_group.html">WatchdogModuleGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="_watchdog_server_8h_source.html#l00025">WatchdogServer.h:25</a></div></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('_watchdog_server_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_watchdog_server_8h.html">WatchdogServer.h</a></li>
-    <li class="footer">Generated on Thu Aug 24 2023 04:01:30 for watchdog-server by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 03:55:43 for watchdog-server by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
