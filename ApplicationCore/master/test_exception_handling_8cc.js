@@ -2,9 +2,9 @@ var test_exception_handling_8cc =
 [
     [ "BOOST_NO_EXCEPTIONS", "test_exception_handling_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_exception_handling_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "Fixture", "test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795", null ],
-    [ "Fixture_initHandlers", "test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06", null ],
-    [ "Fixture_secondDeviceBroken", "test_exception_handling_8cc.html#af8176165ff35c6ede5e33f268efd9a34", null ],
+    [ "Fixture", "test_exception_handling_8cc.html#a0b9eba24d931c415333f3d1f750e7f4d", null ],
+    [ "Fixture_initHandlers", "test_exception_handling_8cc.html#aafaf7565581438e6663aeab6d13763c8", null ],
+    [ "Fixture_secondDeviceBroken", "test_exception_handling_8cc.html#a93ede526faf7d502d16454aaa423b103", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a70b0c140ef553809e67cc4a5e2a16fe4", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a311ab50fb44dc04ad19c162c175f23fa", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a9e2b5e1cbc2514ba769839cfb1dbf1d4", null ],

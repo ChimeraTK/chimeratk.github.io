@@ -27,5 +27,5 @@ var test_test_facilities_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a94c0c278920331b18e0edf93331aa971", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#ac0bab11760e2aafd6e5e761b618fe67a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a392c8342083dc349368940e170f1ef68", null ],
-    [ "dummySdm", "test_test_facilities_8cc.html#a866078d15d3d912b44e894d363a9b62b", null ]
+    [ "dummySdm", "test_test_facilities_8cc.html#a11ebac2b68cb7b11d2d355cd9e967fa3", null ]
 ];

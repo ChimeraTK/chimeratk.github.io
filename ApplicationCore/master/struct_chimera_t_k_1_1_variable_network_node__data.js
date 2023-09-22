@@ -1,15 +1,15 @@
 var struct_chimera_t_k_1_1_variable_network_node__data =
 [
-    [ "VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html#a491ae491d551c46ff4b2f674831429bf", null ],
-    [ "_constantValue", "struct_chimera_t_k_1_1_variable_network_node__data.html#afc31858f251184a75cf0ccf32d246d92", null ],
-    [ "_model", "struct_chimera_t_k_1_1_variable_network_node__data.html#ad4ef01d8fb1faf10bbe8e050085ea535", null ],
+    [ "VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html#a5daa274e03af477f60b20eb9ff3410c9", null ],
     [ "appNode", "struct_chimera_t_k_1_1_variable_network_node__data.html#a813a974414573c296ffe2f34d81cf0d1", null ],
     [ "circularNetworkHash", "struct_chimera_t_k_1_1_variable_network_node__data.html#a8d8d4cab71c80df623beb08566c48639", null ],
+    [ "constantValue", "struct_chimera_t_k_1_1_variable_network_node__data.html#ac6879ef33720ec05a6c6b5aac424e9ee", null ],
     [ "description", "struct_chimera_t_k_1_1_variable_network_node__data.html#ae415593a9b9a048543f38466e49c540f", null ],
     [ "deviceAlias", "struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34", null ],
     [ "direction", "struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33", null ],
     [ "externalTrigger", "struct_chimera_t_k_1_1_variable_network_node__data.html#aea2ed7a5d1fe7756e73ed112a3560ca2", null ],
     [ "mode", "struct_chimera_t_k_1_1_variable_network_node__data.html#a4481ab32cdb405da3507936b37511c27", null ],
+    [ "model", "struct_chimera_t_k_1_1_variable_network_node__data.html#a09d3233d7ee3dca5d738dc51a348eacd", null ],
     [ "name", "struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1", null ],
     [ "nElements", "struct_chimera_t_k_1_1_variable_network_node__data.html#a45c063050975eec1d6914bc52d210c45", null ],
     [ "nodeToTrigger", "struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777", null ],

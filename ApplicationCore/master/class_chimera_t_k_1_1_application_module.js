@@ -25,9 +25,9 @@ var class_chimera_t_k_1_1_application_module =
     [ "terminate", "class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267", null ],
     [ "unregisterModule", "class_chimera_t_k_1_1_application_module.html#a2586b398b1e6d126521c72ca68aabf80", null ],
     [ "_circularNetworkHash", "class_chimera_t_k_1_1_application_module.html#ac27b74907d1d37e17539d3399eb60b21", null ],
+    [ "_currentVersionNumber", "class_chimera_t_k_1_1_application_module.html#a230cc61c7e77bb94f0e27e8ac953b0ff", null ],
+    [ "_dataFaultCounter", "class_chimera_t_k_1_1_application_module.html#aa99195bdcd85a60f91ef877d9fe805f6", null ],
     [ "_model", "class_chimera_t_k_1_1_application_module.html#a3c53a29d4e791b4f0f9cab9e24384765", null ],
-    [ "_recursionStopper", "class_chimera_t_k_1_1_application_module.html#a4714f0858da3bda2b8179f472840b5cd", null ],
-    [ "currentVersionNumber", "class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15", null ],
-    [ "dataFaultCounter", "class_chimera_t_k_1_1_application_module.html#a9a83283d70b2821ad742f881de38ae18", null ],
-    [ "moduleThread", "class_chimera_t_k_1_1_application_module.html#a6da2ea5bac29df0a1c69c5117a0e57e0", null ]
+    [ "_moduleThread", "class_chimera_t_k_1_1_application_module.html#a00aa82f1b58582bb9366737281d082a7", null ],
+    [ "_recursionStopper", "class_chimera_t_k_1_1_application_module.html#a4714f0858da3bda2b8179f472840b5cd", null ]
 ];

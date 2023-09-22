@@ -14,7 +14,6 @@ var class_chimera_t_k_1_1_entity_owner =
     [ "EntityOwner", "class_chimera_t_k_1_1_entity_owner.html#a54a3ada4abc25a6b2a13265a302fd342", null ],
     [ "EntityOwner", "class_chimera_t_k_1_1_entity_owner.html#a680a0b9df557639de0daf8ba4bc87108", null ],
     [ "addTag", "class_chimera_t_k_1_1_entity_owner.html#aba60e1945471166d25fec22172788b08", null ],
-    [ "applyHierarchyModifierToName", "class_chimera_t_k_1_1_entity_owner.html#a159014168c408ce5f70c94a57f211b58", null ],
     [ "constant", "class_chimera_t_k_1_1_entity_owner.html#a38e92b9f1be12d637408b06f8020b855", null ],
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb", null ],
     [ "dump", "class_chimera_t_k_1_1_entity_owner.html#ac641f46d97a7c0aa862e05e1fcedc6e4", null ],

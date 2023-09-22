@@ -26,7 +26,6 @@ var namespace_chimera_t_k_1_1_model =
     [ "OrSet", "struct_chimera_t_k_1_1_model_1_1_or_set.html", "struct_chimera_t_k_1_1_model_1_1_or_set" ],
     [ "EdgeFilter", "struct_chimera_t_k_1_1_model_1_1_edge_filter.html", "struct_chimera_t_k_1_1_model_1_1_edge_filter" ],
     [ "VertexFilter", "struct_chimera_t_k_1_1_model_1_1_vertex_filter.html", "struct_chimera_t_k_1_1_model_1_1_vertex_filter" ],
-    [ "ObjecttypeFilter", "struct_chimera_t_k_1_1_model_1_1_objecttype_filter.html", "struct_chimera_t_k_1_1_model_1_1_objecttype_filter" ],
     [ "CombinedSearchConfig", "struct_chimera_t_k_1_1_model_1_1_combined_search_config.html", "struct_chimera_t_k_1_1_model_1_1_combined_search_config" ],
     [ "SearchTypeHolder", "struct_chimera_t_k_1_1_model_1_1_search_type_holder.html", "struct_chimera_t_k_1_1_model_1_1_search_type_holder" ],
     [ "Impl", "class_chimera_t_k_1_1_model_1_1_impl.html", "class_chimera_t_k_1_1_model_1_1_impl" ],

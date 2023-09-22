@@ -24,7 +24,7 @@ var class_chimera_t_k_1_1_device_manager =
     [ "detail::CircularDependencyDetector", "class_chimera_t_k_1_1_device_manager.html#af27a883ef1fd8fe1bb4f2be0492d7b4f", null ],
     [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_device_manager.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce", null ],
     [ "_device", "class_chimera_t_k_1_1_device_manager.html#a578f5d0d1502e8653381ae0454c90e8d", null ],
-    [ "_deviceAliasOrURI", "class_chimera_t_k_1_1_device_manager.html#a2a2fb3b7df4206aa0c0973398cbde8a1", null ],
+    [ "_deviceAliasOrCDD", "class_chimera_t_k_1_1_device_manager.html#adfebc8a396e579c58f7eaf759e4198d9", null ],
     [ "_deviceError", "class_chimera_t_k_1_1_device_manager.html#afb30faecaa69577b83fe5e3d831410e9", null ],
     [ "_deviceHasError", "class_chimera_t_k_1_1_device_manager.html#a16fa7f958a6cb4ad0d9880d9b386fa5f", null ],
     [ "_errorMutex", "class_chimera_t_k_1_1_device_manager.html#a8a8869dcb1ff854efa739ddad56c47e1", null ],

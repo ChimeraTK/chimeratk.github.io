@@ -7,8 +7,8 @@ var test_propagate_data_fault_flag_8cc =
     [ "Module1", "struct_module1.html", "struct_module1" ],
     [ "Module2", "struct_module2.html", "struct_module2" ],
     [ "TestApplication3", "struct_test_application3.html", "struct_test_application3" ],
-    [ "Fixture_testFacility", "struct_fixture__test_facility.html", "struct_fixture__test_facility" ],
-    [ "Fixture_noTestableMode", "struct_fixture__no_testable_mode.html", "struct_fixture__no_testable_mode" ],
+    [ "FixtureTestFacility", "struct_fixture_test_facility.html", "struct_fixture_test_facility" ],
+    [ "FixtureNoTestableMode", "struct_fixture_no_testable_mode.html", "struct_fixture_no_testable_mode" ],
     [ "Module3", "struct_module3.html", "struct_module3" ],
     [ "TestApplication4", "struct_test_application4.html", "struct_test_application4" ],
     [ "TestModule3", "struct_test_module3.html", "struct_test_module3" ],
@@ -21,8 +21,8 @@ var test_propagate_data_fault_flag_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a2c6c966633af894c0c6c16fa681d287d", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#aceedc5686e8b140ddacd6321e9fac0e6", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a9c7472be28750be4f6b851c8fa4bd6e0", null ],
-    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#aecc5bad054929626f9e2a4098173c9ae", null ],
-    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a1526b26ba67bb08f42cb2fcabf8b2fcc", null ],
-    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a02638a225cd277062424b25f371564e8", null ],
-    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#abe39075fe839c588ca2dfbe5ec911249", null ]
+    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#ab63c8069285fb2f5635bf66498b081e5", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a30d4b10ccabfeb365ebbbd95190db0b8", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a8daeb5a7774424b1ed75b7d06937f167", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#a6173244d5b2300162fb60083de1adb3a", null ]
 ];

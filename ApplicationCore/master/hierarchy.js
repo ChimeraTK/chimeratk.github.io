@@ -27,12 +27,12 @@ var hierarchy =
         [ "PushD9DummyApplication", "struct_push_d9_dummy_application.html", null ],
         [ "PushDummyApplication", "struct_push_dummy_application.html", null ],
         [ "ReadOnlyTestApplication", "struct_read_only_test_application.html", null ],
-        [ "Test6_a1_DummyApplication", "struct_test6__a1___dummy_application.html", null ],
-        [ "Test6_a2_DummyApplication", "struct_test6__a2___dummy_application.html", null ],
-        [ "Test6_a3_DummyApplication", "struct_test6__a3___dummy_application.html", null ],
-        [ "Test6_a4_DummyApplication", "struct_test6__a4___dummy_application.html", null ],
-        [ "Test6_b_DummyApplication", "struct_test6__b___dummy_application.html", null ],
-        [ "Test6_c_DummyApplication", "struct_test6__c___dummy_application.html", null ],
+        [ "Test6A1DummyApplication", "struct_test6_a1_dummy_application.html", null ],
+        [ "Test6A2DummyApplication", "struct_test6_a2_dummy_application.html", null ],
+        [ "Test6A3DummyApplication", "struct_test6_a3_dummy_application.html", null ],
+        [ "Test6A4DummyApplication", "struct_test6_a4_dummy_application.html", null ],
+        [ "Test6BDummyApplication", "struct_test6_b_dummy_application.html", null ],
+        [ "Test6CDummyApplication", "struct_test6_c_dummy_application.html", null ],
         [ "Test7DummyApplication", "struct_test7_dummy_application.html", null ],
         [ "TestApp", "struct_test_app.html", null ],
         [ "TestApp", "struct_test_app.html", null ],
@@ -76,12 +76,12 @@ var hierarchy =
         [ "TestApplication5< T >", "struct_test_application5.html", null ],
         [ "TestApplication5< T >", "struct_test_application5.html", null ],
         [ "TestApplication6< T >", "struct_test_application6.html", null ],
+        [ "TestApplicationEmpty", "struct_test_application_empty.html", null ],
         [ "TestApplicationMessage", "struct_test_application_message.html", null ],
         [ "TestApplicationNoConfigs", "struct_test_application_no_configs.html", null ],
         [ "TestApplicationTags", "struct_test_application_tags.html", null ],
         [ "TestApplicationTwoConfigs", "struct_test_application_two_configs.html", null ],
         [ "TestApplicationWithDevice", "struct_test_application_with_device.html", null ],
-        [ "TestApplication_empty", "struct_test_application__empty.html", null ],
         [ "TestBlockingReadApplication", "struct_test_blocking_read_application.html", null ],
         [ "TestChaniedModulesApplication", "struct_test_chanied_modules_application.html", null ],
         [ "TestConvenienceReadApplication", "struct_test_convenience_read_application.html", null ],
@@ -212,8 +212,8 @@ var hierarchy =
             [ "PollingReadModule", "struct_polling_read_module.html", null ],
             [ "PollingThroughFanoutsModule", "struct_polling_through_fanouts_module.html", null ],
             [ "PushModule", "struct_push_module.html", null ],
-            [ "PushModuleD9_1", "struct_push_module_d9__1.html", null ],
-            [ "PushModuleD9_2", "struct_push_module_d9__2.html", null ],
+            [ "PushModuleD91", "struct_push_module_d91.html", null ],
+            [ "PushModuleD92", "struct_push_module_d92.html", null ],
             [ "PushModuleForFanOut", "struct_push_module_for_fan_out.html", null ],
             [ "PushModuleForTrigger", "struct_push_module_for_trigger.html", null ],
             [ "ReadAnyTestModule", "struct_read_any_test_module.html", null ],
@@ -226,7 +226,7 @@ var hierarchy =
             [ "TestApplication< T >::Module", "struct_test_application_1_1_module.html", null ],
             [ "TestApplication< T >::Name", "struct_test_application_1_1_name.html", null ],
             [ "TestApplication< T >::TestModule", "struct_test_application_1_1_test_module.html", null ],
-            [ "TestApplication_empty::TestModule", "struct_test_application__empty_1_1_test_module.html", null ],
+            [ "TestApplicationEmpty::TestModule", "struct_test_application_empty_1_1_test_module.html", null ],
             [ "TestModule< T >", "struct_test_module.html", null ],
             [ "TestModule< T >", "struct_test_module.html", null ],
             [ "TestModule< T >", "struct_test_module.html", null ],
@@ -297,6 +297,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "std::exception", null, [
+      [ "ChimeraTK::Model::detail::VisitorHelper< BASE, VISITOR, FILTER, RETURN_FIRST_HIT >::StopException", "class_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper_1_1_stop_exception.html", null ]
+    ] ],
     [ "ChimeraTK::FanOutBase", "class_chimera_t_k_1_1_fan_out_base.html", [
       [ "ChimeraTK::FanOut< UserType >", "class_chimera_t_k_1_1_fan_out.html", [
         [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
@@ -313,9 +316,9 @@ var hierarchy =
       [ "ChimeraTK::Model::OrSet< FILTER_LHS, FILTER_RHS >", "struct_chimera_t_k_1_1_model_1_1_or_set.html", null ]
     ] ],
     [ "Fixture", "struct_fixture.html", null ],
-    [ "Fixture_noTestableMode", "struct_fixture__no_testable_mode.html", null ],
-    [ "Fixture_testFacility", "struct_fixture__test_facility.html", null ],
-    [ "fixture_with_poll_and_push_input< enableTestFacility, addInitHandlers, breakSecondDeviceAtStart >", "structfixture__with__poll__and__push__input.html", null ],
+    [ "FixtureNoTestableMode", "struct_fixture_no_testable_mode.html", null ],
+    [ "FixtureTestFacility", "struct_fixture_test_facility.html", null ],
+    [ "FixtureWithPollAndPushInput< enableTestFacility, addInitHandlers, breakSecondDeviceAtStart >", "struct_fixture_with_poll_and_push_input.html", null ],
     [ "ChimeraTK::FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", null ],
     [ "ChimeraTK::FunctorGetTypeForName", "struct_chimera_t_k_1_1_functor_get_type_for_name.html", null ],
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
@@ -437,9 +440,6 @@ var hierarchy =
       [ "ChimeraTK::Model::EdgeFilter< FILTER >", "struct_chimera_t_k_1_1_model_1_1_edge_filter.html", null ]
     ] ],
     [ "ChimeraTK::Model::PropertyFilterTag< VertexProperties >", "struct_chimera_t_k_1_1_model_1_1_property_filter_tag.html", [
-      [ "ChimeraTK::Model::VertexFilter< decltype(detail::objecttypeFilterFunctor< OBJECTTYPE >)>", "struct_chimera_t_k_1_1_model_1_1_vertex_filter.html", [
-        [ "ChimeraTK::Model::ObjecttypeFilter< OBJECTTYPE, PROXYTYPE >", "struct_chimera_t_k_1_1_model_1_1_objecttype_filter.html", null ]
-      ] ],
       [ "ChimeraTK::Model::VertexFilter< FILTER >", "struct_chimera_t_k_1_1_model_1_1_vertex_filter.html", null ]
     ] ],
     [ "ChimeraTK::Model::Proxy", "class_chimera_t_k_1_1_model_1_1_proxy.html", [
@@ -484,13 +484,12 @@ var hierarchy =
     [ "StatusWithMessageReaderBase", null, [
       [ "ChimeraTK::StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", null ]
     ] ],
-    [ "ChimeraTK::Model::detail::VisitorHelper< BASE, VISITOR, FILTER, RETURN_FIRST_HIT >::StopException", "class_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper_1_1_stop_exception.html", null ],
-    [ "Test6_a1_InitialValueEceptionDummy", "struct_test6__a1___initial_value_eception_dummy.html", null ],
-    [ "Test6_a2_InitialValueEceptionDummy", "struct_test6__a2___initial_value_eception_dummy.html", null ],
-    [ "Test6_a3_InitialValueEceptionDummy", "struct_test6__a3___initial_value_eception_dummy.html", null ],
-    [ "Test6_a4_InitialValueEceptionDummy", "struct_test6__a4___initial_value_eception_dummy.html", null ],
-    [ "Test6_b_InitialValueEceptionDummy", "struct_test6__b___initial_value_eception_dummy.html", null ],
-    [ "Test6_c_InitialValueEceptionDummy", "struct_test6__c___initial_value_eception_dummy.html", null ],
+    [ "Test6A1InitialValueEceptionDummy", "struct_test6_a1_initial_value_eception_dummy.html", null ],
+    [ "Test6A2InitialValueEceptionDummy", "struct_test6_a2_initial_value_eception_dummy.html", null ],
+    [ "Test6A3InitialValueEceptionDummy", "struct_test6_a3_initial_value_eception_dummy.html", null ],
+    [ "Test6A4InitialValueEceptionDummy", "struct_test6_a4_initial_value_eception_dummy.html", null ],
+    [ "Test6BInitialValueEceptionDummy", "struct_test6_b_initial_value_eception_dummy.html", null ],
+    [ "Test6CInitialValueEceptionDummy", "struct_test6_c_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::TestFacility", "class_chimera_t_k_1_1_test_facility.html", null ],
     [ "TestFixtureWithEceptionDummy< APPLICATION_TYPE >", "struct_test_fixture_with_eception_dummy.html", null ],
     [ "TestInitialValueExceptionDummy", "struct_test_initial_value_exception_dummy.html", null ],

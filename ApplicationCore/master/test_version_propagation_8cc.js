@@ -4,7 +4,7 @@ var test_version_propagation_8cc =
     [ "TheOutputModule", "struct_the_output_module.html", "struct_the_output_module" ],
     [ "TheTestApplication", "struct_the_test_application.html", "struct_the_test_application" ],
     [ "BOOST_TEST_MODULE", "test_version_propagation_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "Fixture", "test_version_propagation_8cc.html#a11417d58618157ad0d0dc3f206ed7795", null ],
+    [ "Fixture", "test_version_propagation_8cc.html#a0b9eba24d931c415333f3d1f750e7f4d", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a4ee05a322902e46564ac95de08a9deff", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#ac18a4c2294f549ceb7b2fe571a104c19", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#af653a39528392a7788d5c9727386ec09", null ],

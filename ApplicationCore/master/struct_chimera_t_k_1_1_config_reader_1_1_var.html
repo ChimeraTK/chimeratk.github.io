@@ -107,15 +107,15 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_config_reader_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab34979e34a44e1764cbd474cea98ae2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html#ab34979e34a44e1764cbd474cea98ae2a">Var</a> (<a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> *owner, const std::string &amp;name, const T &amp;value)</td></tr>
-<tr class="separator:ab34979e34a44e1764cbd474cea98ae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9964a05e402394fd5003705d08d4ee4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html#ab9964a05e402394fd5003705d08d4ee4">Var</a> (<a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> *owner, const std::string &amp;name, T theValue)</td></tr>
+<tr class="separator:ab9964a05e402394fd5003705d08d4ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7e0b014d0795182f3e3f8663fadc9372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html#a7e0b014d0795182f3e3f8663fadc9372">_accessor</a></td></tr>
-<tr class="separator:a7e0b014d0795182f3e3f8663fadc9372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed95dec950c3af9ff90c26d903dc304"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html#abed95dec950c3af9ff90c26d903dc304">_value</a></td></tr>
-<tr class="separator:abed95dec950c3af9ff90c26d903dc304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac174ddc573a04dd55a86369c2b945be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html#ac174ddc573a04dd55a86369c2b945be0">accessor</a></td></tr>
+<tr class="separator:ac174ddc573a04dd55a86369c2b945be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6201e4c1bf027c667e8814009e1a5e57"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html#a6201e4c1bf027c667e8814009e1a5e57">value</a></td></tr>
+<tr class="separator:a6201e4c1bf027c667e8814009e1a5e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -123,10 +123,10 @@ struct ChimeraTK::ConfigReader::Var&lt; T &gt;</h3>
 
 <p>Class holding the value and the accessor for one configuration variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00158">158</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00159">159</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab34979e34a44e1764cbd474cea98ae2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab34979e34a44e1764cbd474cea98ae2a">&#9670;&nbsp;</a></span>Var()</h2>
+<a id="ab9964a05e402394fd5003705d08d4ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9964a05e402394fd5003705d08d4ee4">&#9670;&nbsp;</a></span>Var()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,8 +151,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>theValue</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -167,13 +167,13 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00159">159</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00160">160</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7e0b014d0795182f3e3f8663fadc9372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e0b014d0795182f3e3f8663fadc9372">&#9670;&nbsp;</a></span>_accessor</h2>
+<a id="ac174ddc573a04dd55a86369c2b945be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac174ddc573a04dd55a86369c2b945be0">&#9670;&nbsp;</a></span>accessor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,30 +181,30 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt;T&gt; <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">ChimeraTK::ConfigReader::Var</a>&lt; T &gt;::_accessor</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00162">162</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
-
-</div>
-</div>
-<a id="abed95dec950c3af9ff90c26d903dc304"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed95dec950c3af9ff90c26d903dc304">&#9670;&nbsp;</a></span>_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">ChimeraTK::ConfigReader::Var</a>&lt; T &gt;::_value</td>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt;T&gt; <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">ChimeraTK::ConfigReader::Var</a>&lt; T &gt;::accessor</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00163">163</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+
+</div>
+</div>
+<a id="a6201e4c1bf027c667e8814009e1a5e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6201e4c1bf027c667e8814009e1a5e57">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">ChimeraTK::ConfigReader::Var</a>&lt; T &gt;::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00164">164</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html">ConfigReader</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">Var</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 03:53:55 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 03:53:58 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

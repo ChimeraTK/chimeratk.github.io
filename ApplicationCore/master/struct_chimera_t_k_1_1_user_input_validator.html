@@ -284,7 +284,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>Define how to report error messages to the user. </p>
 <p>The first argument of the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function is passed to the given errorFunction when the corresponding validation condition is false. Typically this function will pass this string on to some string output which will display the value to the user/operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00009">9</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00011">11</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>The value of the accessor is then changed back to the last known value (resp. the fallback value if no previous valid value exists). If the accessor has a writeback channel, this reverted value is written back. Finally, the errorFunction provided through <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a16caa942446623c2f97416667be52406" title="Define how to report error messages to the user.">setErrorFunction()</a> is called with the error string matching the first failed validation condition to inform the user/operator.</p>
 <p>If change is a default-constructed ChimeraTK::TransferElementID, all validation conditions are evaluated and all invalid values are corrected. This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#aec1ce9b3f82cf6c093373bed08c57d47" title="Evaluate all validation conditions and correct all invalid values.">validateAll()</a>. This functionality is useful to trigger the validation of initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00015">15</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00017">17</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -431,7 +431,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>Evaluate all validation conditions and correct all invalid values. </p>
 <p>This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> with a default-constructed ChimeraTK::TransferElementID. This function is useful to trigger the validation of initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00033">33</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00039">39</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -558,7 +558,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html">UserInputValidator</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 03:53:55 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 03:53:58 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
