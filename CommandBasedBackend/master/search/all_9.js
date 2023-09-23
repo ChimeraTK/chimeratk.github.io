@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['temperature_24',['temperature',['../classdummy-server_1_1_serial_server.html#a2a98f67692190b83a9c93144d6c8e89a',1,'dummy-server::SerialServer']]],
-  ['testcommandbasedhardwarebackend_2ecpp_25',['testCommandBasedHardwareBackend.cpp',['../test_command_based_hardware_backend_8cpp.html',1,'']]]
+  ['s_24',['s',['../namespacedummy-server.html#a6bafdfa288517e84258468e5fa4918be',1,'dummy-server']]],
+  ['serialport_25',['serialport',['../classdummy-server_1_1_serial_server.html#a9ccff47dee870f72efdaef2b300bfb04',1,'dummy-server::SerialServer']]],
+  ['serialserver_26',['SerialServer',['../classdummy-server_1_1_serial_server.html',1,'dummy-server']]],
+  ['setpoint_27',['setpoint',['../classdummy-server_1_1_serial_server.html#a2260e29737047f49c31d333dfbe7a1e2',1,'dummy-server::SerialServer']]]
 ];
