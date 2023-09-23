@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['in_13',['IN',['../namespacexml__parser.html#a07f49f0aece09c6a894ff776c668b5ecaf2ae282aa38e7e05fb2e8a58b81adc70',1,'xml_parser']]],
-  ['initialise_14',['initialise',['../struct_server_mockup.html#a82b3e4021f48b8bcc04085f2acaa31b8',1,'ServerMockup']]],
-  ['input_15',['INPUT',['../_server_mockup_8h.html#af687e8426c82a510b03f1d41495c6366',1,'ServerMockup.h']]],
-  ['inputarraylist_16',['InputArrayList',['../namespacexml__parser.html#ae03ad572bf1d0e1110ecdcec168b88dc',1,'xml_parser']]],
-  ['inputlist_17',['InputList',['../namespacexml__parser.html#a84fc52fc21c4098105989bea1bfbbe89',1,'xml_parser']]]
+  ['getrootdir_13',['getRootDir',['../namespacexml__parser.html#a06567f4f85279cf918a9ca55d043244e',1,'xml_parser']]],
+  ['groups_14',['groups',['../struct_template_group.html#aa81d423da3e6a864ae691f3d73d69b4c',1,'TemplateGroup::groups()'],['../struct_template_module.html#a0687b2a09063abbef752775041932be5',1,'TemplateModule::groups()']]]
 ];
