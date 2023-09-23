@@ -1,5 +1,11 @@
 var NAVTREEINDEX12 =
 {
+"struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,6,19],
+"struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,6,10],
+"struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,6,11],
+"struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,6,8],
+"struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,6,9],
+"struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[19,0,6,14],
 "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[19,0,6,15],
 "struct_area_type.html#a531204077ecc966900ae1071a1d677c8":[19,0,6,0],
 "struct_area_type.html#a77b2dfcc07725d5413a2fb7eecdca2db":[19,0,6,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a653263866d52cb5c9af37a7ab509d2cc":[19,0,1,0,18,2],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a925f1382ab38e5e963f9ce549b4f11e0":[19,0,1,0,18,5],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#ac623cf004ebd47a0dc43681d95dcbbbf":[19,0,1,0,18,0],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aeba2cfa32b1f52bec29ae38f0540ea85":[19,0,1,0,18,1],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html":[19,0,1,0,13],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a593395d266031484aea3a8cc387209b1":[19,0,1,0,13,0],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a8606f3a10f891827af710a8339792388":[19,0,1,0,13,2],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a93da46ff9c81c77266a11863ea5df76f":[19,0,1,0,13,1],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#aae4e29f1d62d34db1b9199d14894d0fb":[19,0,1,0,13,6],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#abddce14badb02aa93a1d1e9f1503234f":[19,0,1,0,13,3]
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aeba2cfa32b1f52bec29ae38f0540ea85":[19,0,1,0,18,1]
 };

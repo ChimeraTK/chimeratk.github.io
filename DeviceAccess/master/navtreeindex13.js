@@ -1,5 +1,11 @@
 var NAVTREEINDEX13 =
 {
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html":[19,0,1,0,13],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a593395d266031484aea3a8cc387209b1":[19,0,1,0,13,0],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a8606f3a10f891827af710a8339792388":[19,0,1,0,13,2],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a93da46ff9c81c77266a11863ea5df76f":[19,0,1,0,13,1],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#aae4e29f1d62d34db1b9199d14894d0fb":[19,0,1,0,13,6],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#abddce14badb02aa93a1d1e9f1503234f":[19,0,1,0,13,3],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#acc3032c73acf395694e6f5b5a2eb62d7":[19,0,1,0,13,4],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#ae21ac35fba53e5901694da3ec82c0116":[19,0,1,0,13,5],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html":[19,0,1,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX13 =
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[19,0,36,0,0],
 "struct_dummy_for_double_buffering.html":[19,0,37],
 "struct_dummy_for_double_buffering.html#a08de5d5364bdbc98d071e2601470a9e3":[19,0,37,2],
-"struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a":[19,0,37,1],
-"struct_dummy_for_double_buffering.html#a7125eeb3b5fa95706495ac0d05c7d292":[19,0,37,3],
-"struct_dummy_for_double_buffering_1_1_backend_registerer.html":[19,0,37,0],
-"struct_dummy_for_double_buffering_1_1_backend_registerer.html#a648ec017b32cae2993df0da5a7e8a5b5":[19,0,37,0,0],
-"struct_dummy_protocol_implementor.html":[19,0,38],
-"struct_dummy_protocol_implementor.html#a6522b6b15930a5c7b350848df013393c":[19,0,38,2],
-"struct_dummy_protocol_implementor.html#a6764cd943e5a41276aeede2113e89efb":[19,0,38,6]
+"struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a":[19,0,37,1]
 };

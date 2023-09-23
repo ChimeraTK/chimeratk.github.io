@@ -1,5 +1,11 @@
 var NAVTREEINDEX16 =
 {
+"struct_reg_word_firmware_as_parameter_in_math.html#ab042656d041ea382e71293ef9d789979":[19,0,123,1],
+"struct_reg_word_firmware_as_parameter_in_math.html#ab3d66ed4dee56a82c390002912b39147":[19,0,123,4],
+"struct_reg_word_firmware_as_parameter_in_math.html#abf95fa50efb60a70a184f0c299129acb":[19,0,123,0],
+"struct_reg_word_firmware_forced_read_only.html":[19,0,124],
+"struct_reg_word_firmware_forced_read_only.html#a103455314da9874abfb2629fccbe75c5":[19,0,124,4],
+"struct_reg_word_firmware_forced_read_only.html#a78d2e6bba407900b5f6f597c981168e0":[19,0,124,0],
 "struct_reg_word_firmware_forced_read_only.html#a8d2e220203bad4c826218a79cc656001":[19,0,124,5],
 "struct_reg_word_firmware_forced_read_only.html#a90ee97a62f7869b3b19375aa0976cb7c":[19,0,124,2],
 "struct_reg_word_firmware_forced_read_only.html#a92811819e2428a5d5b3a7125889f34c0":[19,0,124,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX16 =
 "test_double_buffering_h_w_8cc_source.html":[20,0,8,5,1],
 "test_dummy_backend_8cpp.html":[20,0,8,1,9],
 "test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297":[20,0,8,1,9,10],
-"test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d":[20,0,8,1,9,17],
-"test_dummy_backend_8cpp.html#a00f8a92fbe12e8fa983751483c06980d":[20,0,8,1,9,24],
-"test_dummy_backend_8cpp.html#a06ef23872fb6ac510c609f042ba577f6":[20,0,8,1,9,9],
-"test_dummy_backend_8cpp.html#a0d3bc3807ba2e542a42539b00864349c":[20,0,8,1,9,28],
-"test_dummy_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,8,1,9,4],
-"test_dummy_backend_8cpp.html#a3666956980c94e99f82e036ef8b34395":[20,0,8,1,9,14],
-"test_dummy_backend_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde":[20,0,8,1,9,13]
+"test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d":[20,0,8,1,9,17]
 };
