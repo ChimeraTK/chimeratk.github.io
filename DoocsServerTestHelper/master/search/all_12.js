@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7ethreadeddoocsserver_86',['~ThreadedDoocsServer',['../class_threaded_doocs_server.html#abc05ce325065d50ea5e7eebdfe22417f',1,'ThreadedDoocsServer']]]
+  ['wait_5ffor_5fupdate_87',['wait_for_update',['../class_doocs_server_test_helper.html#a2dc6bada3604cb132aef93fd8c3b756e',1,'DoocsServerTestHelper']]],
+  ['waitsigusr1_88',['waitSigusr1',['../class_helper_test.html#a925ad46971a81e11eba20d1ae0f67285',1,'HelperTest']]],
+  ['waitupdate_89',['waitUpdate',['../class_helper_test.html#ab35c863a8c112a9c5adad27c1332ad25',1,'HelperTest']]]
 ];

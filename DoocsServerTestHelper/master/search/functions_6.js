@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['post_5finit_5fepilog_118',['post_init_epilog',['../test_doocs_server_test_helper__skeleton_8h.html#a38623e21fbb34913ef41a02871cf1ce5',1,'testDoocsServerTestHelper_skeleton.h']]],
-  ['post_5finit_5fprolog_119',['post_init_prolog',['../test_doocs_server_test_helper__skeleton_8h.html#ae60e62832bff3e8fd4688f871bd66ec7',1,'testDoocsServerTestHelper_skeleton.h']]]
+  ['main_124',['main',['../namespacefix-linter-for-all.html#ab0cc65b5b365ba7a7276a416538b5371',1,'fix-linter-for-all']]],
+  ['make_5fabsolute_125',['make_absolute',['../namespacefix-linter-for-all.html#ac1509b919b6fe45c78b024a9b055c475',1,'fix-linter-for-all']]]
 ];

@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['testdoocsservertesthelper_5fskeleton_2eh_73',['testDoocsServerTestHelper_skeleton.h',['../test_doocs_server_test_helper__skeleton_8h.html',1,'']]],
-  ['testinitialisationupdateonly_2ecc_74',['testInitialisationUpdateOnly.cc',['../test_initialisation_update_only_8cc.html',1,'']]],
-  ['testinitialisationwithsigusr1_2ecc_75',['testInitialisationWithSigusr1.cc',['../test_initialisation_with_sigusr1_8cc.html',1,'']]],
-  ['testroutine_76',['testRoutine',['../class_helper_test.html#a736c2f4eacb731037f8688ec41dfffd7',1,'HelperTest']]],
-  ['testroutinebody_77',['testRoutineBody',['../class_helper_test.html#a3b22a994ff78e5eb8067fed3b5dca026',1,'HelperTest']]],
-  ['threadeddoocsserver_78',['ThreadedDoocsServer',['../class_threaded_doocs_server.html',1,'ThreadedDoocsServer'],['../class_threaded_doocs_server.html#a625e5c5044a44da61e7d78ecc772c2c9',1,'ThreadedDoocsServer::ThreadedDoocsServer()']]],
-  ['threadeddoocsserver_2eh_79',['ThreadedDoocsServer.h',['../_threaded_doocs_server_8h.html',1,'']]]
+  ['server_5feq_68',['server_eq',['../doocs_server_test_helper_8cc.html#a00c3842df56e98215f0359d7d9af6a84',1,'doocsServerTestHelper.cc']]],
+  ['setdonotprocesssignalsindoocs_69',['setDoNotProcessSignalsInDoocs',['../class_doocs_server_test_helper.html#ad9feb98ae2b93ce92e3a11f568561da9',1,'DoocsServerTestHelper']]],
+  ['shutdown_70',['shutdown',['../class_doocs_server_test_helper.html#afc4cadcbb0ac931b7a1092ff7a37bcca',1,'DoocsServerTestHelper']]],
+  ['siginthandler_71',['sigintHandler',['../test_doocs_server_test_helper__skeleton_8h.html#a1992fa6885475be5d1546e3a61f6e495',1,'testDoocsServerTestHelper_skeleton.h']]],
+  ['sigusr1_72',['sigusr1',['../class_helper_test.html#adc58a94f329045123269e0696b6c0730',1,'HelperTest']]],
+  ['sigusr1_5flock_73',['sigusr1_lock',['../class_doocs_server_test_helper.html#aa39bde10238bf3b299d2bd4e5b7b1a25',1,'DoocsServerTestHelper']]],
+  ['sigusr1_5fmutex_74',['sigusr1_mutex',['../class_doocs_server_test_helper.html#a85f8e78715d01a566b48682f135dc16d',1,'DoocsServerTestHelper']]],
+  ['sigwait_75',['sigwait',['../doocs_server_test_helper_8cc.html#acb52e9b9307534ee8e4fb0ffbc297307',1,'doocsServerTestHelper.cc']]],
+  ['start_76',['start',['../class_threaded_doocs_server.html#a852bd6176b199c7f5cd343eddd6b99d5',1,'ThreadedDoocsServer']]]
 ];
