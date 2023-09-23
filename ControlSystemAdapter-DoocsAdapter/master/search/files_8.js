@@ -1,31 +1,4 @@
 var searchData=
 [
-  ['serverbasedtesttools_2eh_468',['serverBasedTestTools.h',['../server_based_test_tools_8h.html',1,'']]],
-  ['servertestarraypersistence_2ecpp_469',['serverTestArrayPersistence.cpp',['../server_test_array_persistence_8cpp.html',1,'']]],
-  ['servertestautocreatelocations_2ecpp_470',['serverTestAutoCreateLocations.cpp',['../server_test_auto_create_locations_8cpp.html',1,'']]],
-  ['servertestcalloptimiseunmappedvariables_2ecpp_471',['serverTestCallOptimiseUnmappedVariables.cpp',['../server_test_call_optimise_unmapped_variables_8cpp.html',1,'']]],
-  ['servertestdatamatching_2ecpp_472',['serverTestDataMatching.cpp',['../server_test_data_matching_8cpp.html',1,'']]],
-  ['servertesterrorflag_2ecpp_473',['serverTestErrorFlag.cpp',['../server_test_error_flag_8cpp.html',1,'']]],
-  ['servertestglobalturnonoffhistory_2ecpp_474',['serverTestGlobalTurnOnOffHistory.cpp',['../server_test_global_turn_on_off_history_8cpp.html',1,'']]],
-  ['servertestglobalturnonoffwriteable_2ecpp_475',['serverTestGlobalTurnOnOffWriteable.cpp',['../server_test_global_turn_on_off_writeable_8cpp.html',1,'']]],
-  ['servertestifff_2ecpp_476',['serverTestIfff.cpp',['../server_test_ifff_8cpp.html',1,'']]],
-  ['servertestimportallintolocation_2ecpp_477',['serverTestImportAllIntoLocation.cpp',['../server_test_import_all_into_location_8cpp.html',1,'']]],
-  ['servertestmultimappedpv_2ecpp_478',['serverTestMultiMappedPV.cpp',['../server_test_multi_mapped_p_v_8cpp.html',1,'']]],
-  ['servertestplainvariablecreation_2ecpp_479',['serverTestPlainVariableCreation.cpp',['../server_test_plain_variable_creation_8cpp.html',1,'']]],
-  ['servertestreadwrite_2ecpp_480',['serverTestReadWrite.cpp',['../server_test_read_write_8cpp.html',1,'']]],
-  ['servertestregression_5fnomatchingmpnumber_2ecc_481',['serverTestRegression_noMatchingMPNumber.cc',['../server_test_regression__no_matching_m_p_number_8cc.html',1,'']]],
-  ['servertestrenameimport_2ecpp_482',['serverTestRenameImport.cpp',['../server_test_rename_import_8cpp.html',1,'']]],
-  ['servertestretypeproperties_2ecpp_483',['serverTestRetypeProperties.cpp',['../server_test_retype_properties_8cpp.html',1,'']]],
-  ['servertestseterror_2ecpp_484',['serverTestSetError.cpp',['../server_test_set_error_8cpp.html',1,'']]],
-  ['servertestspectrumarray_2ecpp_485',['serverTestSpectrumArray.cpp',['../server_test_spectrum_array_8cpp.html',1,'']]],
-  ['servertestspectrumbuffer_2dexception_2ecpp_486',['serverTestSpectrumBuffer-exception.cpp',['../server_test_spectrum_buffer-exception_8cpp.html',1,'']]],
-  ['servertestspectrumbuffer_2ecpp_487',['serverTestSpectrumBuffer.cpp',['../server_test_spectrum_buffer_8cpp.html',1,'']]],
-  ['servertestvariablemapperwithlocationandcode_2ecpp_488',['serverTestVariableMapperWithLocationAndCode.cpp',['../server_test_variable_mapper_with_location_and_code_8cpp.html',1,'']]],
-  ['servertestxy_2ecpp_489',['serverTestXy.cpp',['../server_test_xy_8cpp.html',1,'']]],
-  ['servertestzeromq_2ecpp_490',['serverTestZeroMQ.cpp',['../server_test_zero_m_q_8cpp.html',1,'']]],
-  ['servertestzmq_5fcstoapp_2ecpp_491',['serverTestZMQ_CsToApp.cpp',['../server_test_z_m_q___cs_to_app_8cpp.html',1,'']]],
-  ['set_5fdoocs_5fvalue_2eh_492',['set_doocs_value.h',['../set__doocs__value_8h.html',1,'']]],
-  ['splitstringatfirstslash_2eh_493',['splitStringAtFirstSlash.h',['../split_string_at_first_slash_8h.html',1,'']]],
-  ['statushandler_2ecc_494',['StatusHandler.cc',['../_status_handler_8cc.html',1,'']]],
-  ['statushandler_2eh_495',['StatusHandler.h',['../_status_handler_8h.html',1,'']]]
+  ['referencetestdoocsserver_2ecc_472',['referenceTestDoocsServer.cc',['../reference_test_doocs_server_8cc.html',1,'']]]
 ];
