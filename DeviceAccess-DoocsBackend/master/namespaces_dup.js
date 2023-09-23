@@ -14,5 +14,9 @@ var namespaces_dup =
     [ "detail", "namespacedetail.html", [
       [ "endsWith", "namespacedetail.html#a60b2f77ac78e7f68d810d99055184c75", null ],
       [ "slashes", "namespacedetail.html#adab1d68bf0f127a195efab7d3a74cb62", null ]
+    ] ],
+    [ "fix-linter-for-all", "namespacefix-linter-for-all.html", [
+      [ "main", "namespacefix-linter-for-all.html#ab0cc65b5b365ba7a7276a416538b5371", null ],
+      [ "make_absolute", "namespacefix-linter-for-all.html#ac1509b919b6fe45c78b024a9b055c475", null ]
     ] ]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['testcaching_2ecpp_363',['testCaching.cpp',['../test_caching_8cpp.html',1,'']]],
-  ['testdoocsbackend_2ecpp_364',['testDoocsBackend.cpp',['../test_doocs_backend_8cpp.html',1,'']]],
-  ['testunifiedbackendtest_2ecpp_365',['testUnifiedBackendTest.cpp',['../test_unified_backend_test_8cpp.html',1,'']]],
-  ['testzeromq_2ecpp_366',['testZeroMQ.cpp',['../test_zero_m_q_8cpp.html',1,'']]]
+  ['spec_5fdoocsbackend_2edox_366',['spec_DoocsBackend.dox',['../spec___doocs_backend_8dox.html',1,'']]],
+  ['stringutility_2ecc_367',['StringUtility.cc',['../_string_utility_8cc.html',1,'']]],
+  ['stringutility_2eh_368',['StringUtility.h',['../_string_utility_8h.html',1,'']]]
 ];
