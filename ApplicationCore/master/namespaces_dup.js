@@ -14,6 +14,10 @@ var namespaces_dup =
       [ "root", "namespacedraw_module_connections.html#abfbed52cde3f71396dbf5c6942036fc8", null ],
       [ "tree", "namespacedraw_module_connections.html#af4f2c4644c32444f8c4b8d9f2642bd8c", null ]
     ] ],
+    [ "fix-linter-for-all", "namespacefix-linter-for-all.html", [
+      [ "main", "namespacefix-linter-for-all.html#ab0cc65b5b365ba7a7276a416538b5371", null ],
+      [ "make_absolute", "namespacefix-linter-for-all.html#ac1509b919b6fe45c78b024a9b055c475", null ]
+    ] ],
     [ "ovenInit", "namespaceoven_init.html", [
       [ "dev", "namespaceoven_init.html#a75a8f87d4a4c293a3517bc5c62b848d7", null ]
     ] ],
