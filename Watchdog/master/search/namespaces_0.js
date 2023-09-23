@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logging_216',['logging',['../namespacelogging.html',1,'']]]
+  ['fix_2dlinter_2dfor_2dall_220',['fix-linter-for-all',['../namespacefix-linter-for-all.html',1,'']]]
 ];

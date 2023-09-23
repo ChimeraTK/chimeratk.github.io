@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['test_5fprocessmodule_2ecc_231',['test_processModule.cc',['../test__process_module_8cc.html',1,'']]],
-  ['test_5fprocreader_2ecc_232',['test_procReader.cc',['../test__proc_reader_8cc.html',1,'']]],
-  ['test_5fsys_5fstat_2ecc_233',['test_sys_stat.cc',['../test__sys__stat_8cc.html',1,'']]],
-  ['test_5fwatchdog_2ecc_234',['test_watchdog.cc',['../test__watchdog_8cc.html',1,'']]]
+  ['sys_5fstat_2ecc_233',['sys_stat.cc',['../sys__stat_8cc.html',1,'']]],
+  ['sys_5fstat_2eh_234',['sys_stat.h',['../sys__stat_8h.html',1,'']]],
+  ['systeminfomodule_2ecc_235',['SystemInfoModule.cc',['../_system_info_module_8cc.html',1,'']]],
+  ['systeminfomodule_2eh_236',['SystemInfoModule.h',['../_system_info_module_8h.html',1,'']]]
 ];
