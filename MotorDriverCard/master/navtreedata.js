@@ -82,8 +82,8 @@ var NAVTREEINDEX =
 "classmtca4u_1_1_interrupt_data.html#ad37d0221ce83f19f40ecf7230a025755",
 "classmtca4u_1_1_motor_controler_test.html#af158ef1cf97f8fdfd819ad1aa02e9291",
 "classmtca4u_1_1_stepper_motor_status_and_error.html#a8723656d410a57c8ab3e0833b8fb5407",
-"namespacemtca4u.html#a112da2acbacd45d40c1d5210d258d927",
-"test_logger_8cc.html#ad6fd0474648a1ccce9929b8494e0d53b"
+"namespacemembers.html",
+"test_linear_stepper_motor_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
