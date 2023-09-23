@@ -25,6 +25,13 @@
 var NAVTREE =
 [
   [ "ChimeraTK_FirmwareProgrammer", "index.html", [
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -55,7 +62,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_mtca_programmer_base_8cpp.html",
-"registers_8h.html#af1471509d1b5a8b863b1f32df94548dc"
+"registers_8h.html#a8049fc3e13944003f5f9d7b16f6b3e7a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
