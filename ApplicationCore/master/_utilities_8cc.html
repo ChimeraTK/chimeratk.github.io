@@ -91,13 +91,17 @@ $(document).ready(function(){initNavTree('_utilities_8cc.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_utilities_8h_source.html">Utilities.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>&quot;</code><br />
+<code>#include &lt;boost/format.hpp&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;pthread.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Utilities.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_utilities_8cc__incl.svg" width="206" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_utilities_8cc__incl.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -119,9 +123,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a7794e94545a8b22daead4e95d1231247"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a7794e94545a8b22daead4e95d1231247">ChimeraTK::Utilities::getPathName</a> (const std::string &amp;qualifiedName)</td></tr>
 <tr class="memdesc:a7794e94545a8b22daead4e95d1231247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all but the last components of the given qualified name.  <a href="namespace_chimera_t_k_1_1_utilities.html#a7794e94545a8b22daead4e95d1231247">More...</a><br /></td></tr>
 <tr class="separator:a7794e94545a8b22daead4e95d1231247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c953e32766b0b93cfe92fe7f518eac4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a2c953e32766b0b93cfe92fe7f518eac4">ChimeraTK::Utilities::stripName</a> (const std::string &amp;name, bool allowDotsAndSlashes)</td></tr>
-<tr class="memdesc:a2c953e32766b0b93cfe92fe7f518eac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert all characters which are not allowed in variable or module names into underscores.  <a href="namespace_chimera_t_k_1_1_utilities.html#a2c953e32766b0b93cfe92fe7f518eac4">More...</a><br /></td></tr>
-<tr class="separator:a2c953e32766b0b93cfe92fe7f518eac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df2e58a7e941872744fa8435e544954"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a4df2e58a7e941872744fa8435e544954">ChimeraTK::Utilities::escapeName</a> (const std::string &amp;name, bool allowDotsAndSlashes)</td></tr>
+<tr class="memdesc:a4df2e58a7e941872744fa8435e544954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert all characters which are not allowed in variable or module names into underscores followed by their 3-digit ascii code.  <a href="namespace_chimera_t_k_1_1_utilities.html#a4df2e58a7e941872744fa8435e544954">More...</a><br /></td></tr>
+<tr class="separator:a4df2e58a7e941872744fa8435e544954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab1e2f763b07e39458e22016a79be14"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#afab1e2f763b07e39458e22016a79be14">ChimeraTK::Utilities::unescapeName</a> (const std::string &amp;name_stripped)</td></tr>
+<tr class="memdesc:afab1e2f763b07e39458e22016a79be14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the escaping done by <a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a4df2e58a7e941872744fa8435e544954" title="Convert all characters which are not allowed in variable or module names into underscores followed by...">escapeName()</a>.  <a href="namespace_chimera_t_k_1_1_utilities.html#afab1e2f763b07e39458e22016a79be14">More...</a><br /></td></tr>
+<tr class="separator:afab1e2f763b07e39458e22016a79be14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4af6a2239a8b0ee9eafa26faf00a2e9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a4af6a2239a8b0ee9eafa26faf00a2e9a">ChimeraTK::Utilities::checkName</a> (const std::string &amp;name, bool allowDotsAndSlashes)</td></tr>
 <tr class="memdesc:a4af6a2239a8b0ee9eafa26faf00a2e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check given name for characters which are not allowed in variable or module names.  <a href="namespace_chimera_t_k_1_1_utilities.html#a4af6a2239a8b0ee9eafa26faf00a2e9a">More...</a><br /></td></tr>
 <tr class="separator:a4af6a2239a8b0ee9eafa26faf00a2e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +142,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_utilities_8cc.html">Utilities.cc</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:48 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

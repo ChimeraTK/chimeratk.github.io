@@ -16,6 +16,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "ModuleGroup", "class_chimera_t_k_1_1_device_module.html#afb29a8305857f9e8ebd0baa74e18595d", null ],
     [ "operator=", "class_chimera_t_k_1_1_device_module.html#a02616d1bf1bb4319bedbfa654112ca7b", null ],
     [ "reportException", "class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db", null ],
+    [ "ChimeraTK::Model::Impl", "class_chimera_t_k_1_1_device_module.html#a5f1acd63ab07a0994c9deecd89f17440", null ],
     [ "_dm", "class_chimera_t_k_1_1_device_module.html#a447ba9ae5c610b9ed963bb9564530098", null ],
     [ "_model", "class_chimera_t_k_1_1_device_module.html#ae65e0934b316fa3f12f9936f8f455248", null ],
     [ "_pathInDevice", "class_chimera_t_k_1_1_device_module.html#a875817fa5b5b1ab1b973fd0bc8fd109e", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['propertiestype_3097',['PropertiesType',['../struct_chimera_t_k_1_1_model_1_1_property_filter_tag.html#ace5505987ad439e806ed246170a66903',1,'ChimeraTK::Model::PropertyFilterTag']]]
+  ['outedgelisttype_3122',['OutEdgeListType',['../namespace_chimera_t_k_1_1_model_1_1detail.html#a9c960712c9463ec542e8add37ec1244e',1,'ChimeraTK::Model::detail']]]
 ];

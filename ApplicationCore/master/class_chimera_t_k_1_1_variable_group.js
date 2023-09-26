@@ -13,5 +13,6 @@ var class_chimera_t_k_1_1_variable_group =
     [ "operator=", "class_chimera_t_k_1_1_variable_group.html#a4ea05455acc8a6b224abbfee987c6a3e", null ],
     [ "unregisterModule", "class_chimera_t_k_1_1_variable_group.html#ae94c6d6bae909935384f7fee075cb655", null ],
     [ "ApplicationModule", "class_chimera_t_k_1_1_variable_group.html#acfb4bf09dc26ce696cc077e79995dd42", null ],
+    [ "ChimeraTK::Model::Impl", "class_chimera_t_k_1_1_variable_group.html#a5f1acd63ab07a0994c9deecd89f17440", null ],
     [ "_model", "class_chimera_t_k_1_1_variable_group.html#a16b802b158b8b0a73c7db4516b1c6667", null ]
 ];

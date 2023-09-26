@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('_model_8h.html',''); initResizable(); 
 <code>#include &lt;boost/graph/filtered_graph.hpp&gt;</code><br />
 <code>#include &lt;boost/graph/graphviz.hpp&gt;</code><br />
 <code>#include &lt;boost/graph/transpose_graph.hpp&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -228,11 +229,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad6ecc0a8871e870be8e76f31f4ef4bc2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model.html#ad6ecc0a8871e870be8e76f31f4ef4bc2">ChimeraTK::Model::Vertex</a> = size_t</td></tr>
+<tr class="memitem:a9c960712c9463ec542e8add37ec1244e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#a9c960712c9463ec542e8add37ec1244e">ChimeraTK::Model::detail::OutEdgeListType</a> = boost::multisetS</td></tr>
+<tr class="separator:a9c960712c9463ec542e8add37ec1244e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2af67e28e402ff41e7e667654082863"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#af2af67e28e402ff41e7e667654082863">ChimeraTK::Model::detail::VertexListType</a> = boost::listS</td></tr>
+<tr class="separator:af2af67e28e402ff41e7e667654082863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ecc0a8871e870be8e76f31f4ef4bc2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model.html#ad6ecc0a8871e870be8e76f31f4ef4bc2">ChimeraTK::Model::Vertex</a> = boost::adjacency_list&lt; detail::OutEdgeListType, detail::VertexListType, boost::bidirectionalS &gt;::vertex_descriptor</td></tr>
 <tr class="separator:ad6ecc0a8871e870be8e76f31f4ef4bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e020a91ce7df53ee476efe9db0de139"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model.html#a9e020a91ce7df53ee476efe9db0de139">ChimeraTK::Model::Graph</a> = boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::bidirectionalS, VertexProperties, EdgeProperties &gt;</td></tr>
-<tr class="memdesc:a9e020a91ce7df53ee476efe9db0de139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graph type for the model.  <a href="namespace_chimera_t_k_1_1_model.html#a9e020a91ce7df53ee476efe9db0de139">More...</a><br /></td></tr>
-<tr class="separator:a9e020a91ce7df53ee476efe9db0de139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace818d7d90eaca030ad619121ebd2454"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model.html#ace818d7d90eaca030ad619121ebd2454">ChimeraTK::Model::Graph</a> = boost::adjacency_list&lt; detail::OutEdgeListType, detail::VertexListType, boost::bidirectionalS, VertexProperties, EdgeProperties &gt;</td></tr>
+<tr class="memdesc:ace818d7d90eaca030ad619121ebd2454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graph type for the model.  <a href="namespace_chimera_t_k_1_1_model.html#ace818d7d90eaca030ad619121ebd2454">More...</a><br /></td></tr>
+<tr class="separator:ace818d7d90eaca030ad619121ebd2454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8c7309a690d84de552e9adb84b6c07"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model.html#a5f8c7309a690d84de552e9adb84b6c07">ChimeraTK::Model::Edge</a> = Graph::edge_descriptor</td></tr>
 <tr class="separator:a5f8c7309a690d84de552e9adb84b6c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a497785a058445e803bf151e38d5722e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model.html#a497785a058445e803bf151e38d5722e9">ChimeraTK::Model::EdgeFilteredView</a> = boost::filtered_graph&lt; Graph, std::function&lt; bool(const Edge &amp;)&gt;, boost::keep_all &gt;</td></tr>
@@ -316,7 +321,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_model_8h.html">Model.h</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:48 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

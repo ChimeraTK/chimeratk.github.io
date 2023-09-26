@@ -2,9 +2,10 @@ var class_chimera_t_k_1_1_model_1_1_proxy =
 [
     [ "ProxyData", "struct_chimera_t_k_1_1_model_1_1_proxy_1_1_proxy_data.html", "struct_chimera_t_k_1_1_model_1_1_proxy_1_1_proxy_data" ],
     [ "Proxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#aceee3a01f207e8d866e7a17f60096fc9", null ],
-    [ "Proxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a9c012a10d4afacc0462bad6c557f64a5", null ],
+    [ "Proxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a372c4d6879ba6ad6f675d77bd7bdeeef", null ],
     [ "getFullyQualifiedPath", "class_chimera_t_k_1_1_model_1_1_proxy.html#aecc196169581c54fa88c651e2653f99c", null ],
     [ "isValid", "class_chimera_t_k_1_1_model_1_1_proxy.html#a0909543ef52b5aabbd24339598d7d392", null ],
+    [ "operator==", "class_chimera_t_k_1_1_model_1_1_proxy.html#a7fd2e1831baaa41b447eabdea39647d1", null ],
     [ "visit", "class_chimera_t_k_1_1_model_1_1_proxy.html#a855db53096ed1b927644f8603faa23ed", null ],
     [ "ApplicationModuleProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a0793b92ff0356b9ff47ab1ce4a0e5f01", null ],
     [ "DeviceModuleProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#accbfbb0a2f765538b73da1c671cb615f", null ],

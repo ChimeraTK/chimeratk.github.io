@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('_testable_mode_8cc_source.html',''); i
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// obtain the lock</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">auto</span> lastSeen_lastOwner = _lastMutexOwner;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  repeatTryLock:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">auto</span> success = getLockObject().try_lock_for(std::chrono::seconds(300));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">auto</span> success = getLockObject().try_lock_for(std::chrono::seconds(30));</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span>(!success) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">auto</span> currentLastOwner = _lastMutexOwner;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span>(currentLastOwner != lastSeen_lastOwner) {</div>
@@ -314,14 +314,14 @@ $(document).ready(function(){initNavTree('_testable_mode_8cc_source.html',''); i
 <div class="ttc" id="a_utilities_8h_html"><div class="ttname"><a href="_utilities_8h.html">Utilities.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_aa3c1c63e078d14fb104431a15951a070"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#aa3c1c63e078d14fb104431a15951a070">ChimeraTK::Application::getInstance</a></div><div class="ttdeci">static Application &amp; getInstance()</div><div class="ttdoc">Obtain instance of the application.</div><div class="ttdef"><b>Definition:</b> <a href="_application_8cc_source.html#l00243">Application.cc:243</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_adae3e915ddddc8f428a724352a671792"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#adae3e915ddddc8f428a724352a671792">ChimeraTK::Application::_circularDependencyDetector</a></div><div class="ttdeci">detail::CircularDependencyDetector _circularDependencyDetector</div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00218">Application.h:218</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_1_1_utilities_html_a97ff87abb83d90566bac43c12912ec41"><div class="ttname"><a href="namespace_chimera_t_k_1_1_utilities.html#a97ff87abb83d90566bac43c12912ec41">ChimeraTK::Utilities::setThreadName</a></div><div class="ttdeci">void setThreadName(const std::string &amp;name)</div><div class="ttdoc">Set name of the current thread.</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8cc_source.html#l00063">Utilities.cc:63</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_1_1_utilities_html_a97ff87abb83d90566bac43c12912ec41"><div class="ttname"><a href="namespace_chimera_t_k_1_1_utilities.html#a97ff87abb83d90566bac43c12912ec41">ChimeraTK::Utilities::setThreadName</a></div><div class="ttdeci">void setThreadName(const std::string &amp;name)</div><div class="ttdoc">Set name of the current thread.</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8cc_source.html#l00103">Utilities.cc:103</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_testable_mode_8cc.html">TestableMode.cc</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:48 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -110,7 +110,7 @@ New-style servers (no defineConnections)</h2>
 <li>Signature of device recovery handlers changed (argument is now of the type ChimeraTK::Device&amp;).</li>
 <li>Recommended: Switch from deprecated ConnectingDeviceModule to DeviceModule (type alias for compatibility exists).</li>
 <li>Recommended: Switch from HierarchyModifyingGroup and ModifyHierarchy to plain VaraibleGroup and plain accessors, which now accept qualified paths (compatibility layers exist).</li>
-<li>Path names of device status variables changed in some cases when using a CDD instead of an alias name, since the name is more strictly stripped of special characters. See <a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a2c953e32766b0b93cfe92fe7f518eac4" title="Convert all characters which are not allowed in variable or module names into underscores.">ChimeraTK::Utilities::stripName()</a> for a function to strip the special characters programmatically.</li>
+<li>Path names of device status variables changed in some cases when using a CDD instead of an alias name, since the name is more strictly stripped of special characters. See ChimeraTK::Utilities::stripName() for a function to strip the special characters programmatically.</li>
 <li>/Devices/.../deviceBecameFunctional is now of the type ChimeraTK::Void.</li>
 <li>When specifying a trigger in DeviceModule constructor that is not part of another typed network (i.e. just connected to the control system), its type wil be ChimeraTK::Void</li>
 <li>HierarchyModifyingGroup (now VariableGroup): consecutive slashes are now treated differently, they move to root and are no longer treated just as a single slash. Example: a VariableGroup with the name <code>some/path//with/two/slashes</code> will have the same effect as a VariableGroup <code>/with/two/slashes</code>. </li>
@@ -122,7 +122,7 @@ New-style servers (no defineConnections)</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:48 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

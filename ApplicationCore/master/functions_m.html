@@ -154,7 +154,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="struct_push_module_for_trigger.html#a9c0cd03400bc8e10b9020cae582430a2">PushModuleForTrigger</a>
 , <a class="el" href="struct_read_any_test_module.html#a4166fadf28441b9aedb7a0743f6b5353">ReadAnyTestModule</a>
 , <a class="el" href="struct_read_only_test_application_1_1_test_module.html#ad199078eab98c21df642e334ce50557a">ReadOnlyTestApplication::TestModule</a>
+, <a class="el" href="struct_rogue_module.html#a774e03f7d1f01a3293e2aacf54e68f77">RogueModule</a>
 , <a class="el" href="struct_scalar_output_module.html#aeffffbadf3ebc96fdf80ac06b0261b1f">ScalarOutputModule</a>
+, <a class="el" href="struct_self_unregistering_module.html#a3aeb5917614cf055fed3c76f276bd55f">SelfUnregisteringModule</a>
 , <a class="el" href="struct_simulation_module.html#a939276bda8e1c1c0d8f28c3c45671f0f">SimulationModule</a>
 , <a class="el" href="struct_status_generator.html#a789d3617ccd4de5f209d03fb79fce716">StatusGenerator</a>
 , <a class="el" href="struct_test_application2_1_1_module.html#a4463d6bd09bd7b0703daffbbd001c2e0">TestApplication2::Module&lt; ACCESSOR &gt;</a>
@@ -181,6 +183,12 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>mainLoopWrapper()
 : <a class="el" href="class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f">ChimeraTK::ApplicationModule</a>
+</li>
+<li>makeProxy()
+: <a class="el" href="struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a997c09f537eb678f138b14d6a6fa6064">ChimeraTK::Model::VertexProperties</a>
+</li>
+<li>makeRootProxy()
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#ac757fbccdcc36fae48ebae89e6adb57c">ChimeraTK::Model::RootProxy</a>
 </li>
 <li>MapOfArray
 : <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63">ChimeraTK::ConfigReader</a>
@@ -260,7 +268,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html#acf078291d2494b1039ec5c0002e764a9">ChimeraTK::Model::VertexProperties::VariableGroupProperties</a>
 </li>
 <li>Module()
-: <a class="el" href="class_chimera_t_k_1_1_module.html#a6cd589491d7be678efae917f3f7ad6a9">ChimeraTK::Module</a>
+: <a class="el" href="class_chimera_t_k_1_1_module.html#a32bfa088c634b720ecf36dbc3ed2073e">ChimeraTK::Module</a>
 </li>
 <li>module
 : <a class="el" href="struct_read_only_test_application.html#aee641ec8d1ff4ec07c13ae649a90bf7e">ReadOnlyTestApplication</a>
@@ -275,7 +283,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="struct_test_module.html#a2f70f07e06b1c50340967d0d9adf30ed">TestModule&lt; T &gt;</a>
 </li>
 <li>ModuleGroup()
-: <a class="el" href="class_chimera_t_k_1_1_device_module.html#afb29a8305857f9e8ebd0baa74e18595d">ChimeraTK::DeviceModule</a>
+: <a class="el" href="class_chimera_t_k_1_1_device_module.html#af8ecced5822a6ed8ecac05c87e3dc37b">ChimeraTK::DeviceModule</a>
 , <a class="el" href="class_chimera_t_k_1_1_module_group.html#ac6f8414b7c904b85c67cc2b4ddf87a7f">ChimeraTK::ModuleGroup</a>
 </li>
 <li>ModuleGroupProxy
@@ -315,7 +323,11 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>myModule
 : <a class="el" href="struct_test_app.html#ae7db1d4ed42823cdfe7bdc17560a8896">TestApp</a>
+, <a class="el" href="struct_test_application2.html#a3f1f6fa42ca5320bd7002ef53b9e2f61">TestApplication2</a>
 , <a class="el" href="struct_test_application.html#aed29654b50b0f6375bbdf7f3d92bfd3c">TestApplication&lt; T &gt;</a>
+</li>
+<li>myModule2
+: <a class="el" href="struct_test_application.html#a842d8359f7b2783e86155a1a0c73f1de">TestApplication&lt; T &gt;</a>
 </li>
 <li>myVar
 : <a class="el" href="struct_test_group.html#ab1fbebf6f571205025ba7145957bd921">TestGroup</a>
@@ -326,7 +338,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:50 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:15 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

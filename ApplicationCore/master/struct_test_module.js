@@ -5,7 +5,7 @@ var struct_test_module =
     [ "Module1", "struct_test_module_1_1_module1.html", "struct_test_module_1_1_module1" ],
     [ "Module2", "struct_test_module_1_1_module2.html", "struct_test_module_1_1_module2" ],
     [ "Need", "struct_test_module_1_1_need.html", "struct_test_module_1_1_need" ],
-    [ "TestModule", "struct_test_module.html#a749e3f181fca62c122aefd84260be4b2", null ],
+    [ "TestModule", "struct_test_module.html#a171359cc58c5476dfbb52e83e9b3bf4f", null ],
     [ "TestModule", "struct_test_module.html#a470c94036d635c56a86675f54d28f00b", null ],
     [ "TestModule", "struct_test_module.html#a749e3f181fca62c122aefd84260be4b2", null ],
     [ "TestModule", "struct_test_module.html#a749e3f181fca62c122aefd84260be4b2", null ],

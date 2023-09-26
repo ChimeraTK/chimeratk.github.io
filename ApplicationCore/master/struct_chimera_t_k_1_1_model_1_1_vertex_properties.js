@@ -20,6 +20,7 @@ var struct_chimera_t_k_1_1_model_1_1_vertex_properties =
     ] ],
     [ "VertexProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a5aa2059d0b8b6ad78ca916ccb93c12a6", null ],
     [ "VertexProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a7682e4e7c524d340659d0c40b4a15fa2", null ],
+    [ "makeProxy", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a997c09f537eb678f138b14d6a6fa6064", null ],
     [ "operator=", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a49b692e060b58b1d8736b5627ef605a1", null ],
     [ "visit", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a626f2e69e863d1da4d8d22a3ca0b3c4b", null ],
     [ "visitProxy", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#ad503fb3264409549cf023d607234ad4f", null ],

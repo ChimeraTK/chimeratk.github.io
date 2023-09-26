@@ -104,6 +104,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a9c960712c9463ec542e8add37ec1244e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#a9c960712c9463ec542e8add37ec1244e">OutEdgeListType</a> = boost::multisetS</td></tr>
+<tr class="separator:a9c960712c9463ec542e8add37ec1244e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2af67e28e402ff41e7e667654082863"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#af2af67e28e402ff41e7e667654082863">VertexListType</a> = boost::listS</td></tr>
+<tr class="separator:af2af67e28e402ff41e7e667654082863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b777dae5b736132d20207630e5a5e2"><td class="memTemplParams" colspan="2">template&lt;typename VISITOR , typename VERTEX_FILTER &gt; </td></tr>
 <tr class="memitem:a95b777dae5b736132d20207630e5a5e2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#a95b777dae5b736132d20207630e5a5e2">VisitorReturnType</a> = typename std::invoke_result&lt; VISITOR, typename std::invoke_result&lt; decltype(<a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#a05ec47a1a324c9b86192628858058662">detail::findVertexFilterAcceptedProxyType</a>&lt; VERTEX_FILTER &gt;), VERTEX_FILTER &gt;::type &gt;::type</td></tr>
 <tr class="memdesc:a95b777dae5b736132d20207630e5a5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the return type of a visitor functor, which accepts any proxy type which can pass the given vertex filter.  <a href="namespace_chimera_t_k_1_1_model_1_1detail.html#a95b777dae5b736132d20207630e5a5e2">More...</a><br /></td></tr>
@@ -117,6 +121,38 @@ Functions</h2></td></tr>
 <tr class="separator:a05ec47a1a324c9b86192628858058662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a9c960712c9463ec542e8add37ec1244e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c960712c9463ec542e8add37ec1244e">&#9670;&nbsp;</a></span>OutEdgeListType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#a9c960712c9463ec542e8add37ec1244e">ChimeraTK::Model::detail::OutEdgeListType</a> = typedef boost::multisetS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00050">50</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="af2af67e28e402ff41e7e667654082863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2af67e28e402ff41e7e667654082863">&#9670;&nbsp;</a></span>VertexListType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html#af2af67e28e402ff41e7e667654082863">ChimeraTK::Model::detail::VertexListType</a> = typedef boost::listS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00051">51</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
 <a id="a95b777dae5b736132d20207630e5a5e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95b777dae5b736132d20207630e5a5e2">&#9670;&nbsp;</a></span>VisitorReturnType</h2>
 
@@ -133,7 +169,7 @@ template&lt;typename VISITOR , typename VERTEX_FILTER &gt; </div>
 
 <p>Helper to get the return type of a visitor functor, which accepts any proxy type which can pass the given vertex filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00943">943</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00979">979</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -166,7 +202,7 @@ template&lt;typename VERTEX_FILTER &gt; </div>
 
 <p>Helper function to find one of the <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html" title="Base class for the proxies representing objects in the model.">Proxy</a> types which will be let through by the given vertex filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00914">914</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00950">950</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +212,7 @@ template&lt;typename VERTEX_FILTER &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_model_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:50 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:15 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -252,7 +252,7 @@ Device modules</h1>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_module_html"><div class="ttname"><a href="class_chimera_t_k_1_1_device_module.html">ChimeraTK::DeviceModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_device_module_8h_source.html#l00020">DeviceModule.h:20</a></div></div>
 </div><!-- fragment --><p> This will publish all registers from the catalogue of the specified device "oven" to the control system and to the application modules. Since "oven" is a device alias and not a CDD, we also need to specify the DMAP file by creating an instance of SetDMapFilePath <em>before</em> the DeviceModule instance like this:</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_set_d_map_file_path.html">ctk::SetDMapFilePath</a> dmapPath{getName() + <span class="stringliteral">&quot;.dmap&quot;</span>};</div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_set_d_map_file_path_html"><div class="ttname"><a href="class_chimera_t_k_1_1_set_d_map_file_path.html">ChimeraTK::SetDMapFilePath</a></div><div class="ttdoc">Helper class to set the DMAP file path.</div><div class="ttdef"><b>Definition:</b> <a href="_device_module_8h_source.html#l00093">DeviceModule.h:93</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_set_d_map_file_path_html"><div class="ttname"><a href="class_chimera_t_k_1_1_set_d_map_file_path.html">ChimeraTK::SetDMapFilePath</a></div><div class="ttdoc">Helper class to set the DMAP file path.</div><div class="ttdef"><b>Definition:</b> <a href="_device_module_8h_source.html#l00094">DeviceModule.h:94</a></div></div>
 </div><!-- fragment --><p> The call to getName() returns the name of the Application, which will be provided later to the Application constructor. This allows us to influence the file name for automated tests. The DMAP file in our exmaple speficies two devies:</p>
 <div class="fragment"><div class="line">device    (sharedMemoryDummy:0?map=DemoDummy.map)</div>
 <div class="line">oven      (logicalNameMap?map=oven.xlmap)</div>
@@ -366,7 +366,7 @@ Control system integration</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 03:55:48 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 03:57:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
