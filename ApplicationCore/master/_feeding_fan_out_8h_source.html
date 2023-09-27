@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('_feeding_fan_out_8h_source.html',''); 
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    assert(_hasReturnSlave);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">auto</span> _ = cppext::finally([&amp;] {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">if</span>(!hasNewData) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">if</span>(!hasNewData || TransferElement::_activeException) {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      _returnSlave-&gt;accessChannel(0).swap(ChimeraTK::NDRegisterAccessor&lt;UserType&gt;::buffer_2D[0]);</div>
@@ -441,7 +441,7 @@ $(document).ready(function(){initNavTree('_feeding_fan_out_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_feeding_fan_out_8h.html">FeedingFanOut.h</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 03:57:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 27 2023 03:59:09 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

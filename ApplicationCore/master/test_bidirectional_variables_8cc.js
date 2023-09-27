@@ -8,6 +8,9 @@ var test_bidirectional_variables_8cc =
     [ "InitTestApplication", "struct_init_test_application.html", "struct_init_test_application" ],
     [ "TestApplication2", "struct_test_application2.html", "struct_test_application2" ],
     [ "Module", "struct_test_application2_1_1_module.html", "struct_test_application2_1_1_module" ],
+    [ "ModuleX", "struct_module_x.html", "struct_module_x" ],
+    [ "ModuleY", "struct_module_y.html", "struct_module_y" ],
+    [ "TestApplicationShutdownIssue", "struct_test_application_shutdown_issue.html", "struct_test_application_shutdown_issue" ],
     [ "BOOST_NO_EXCEPTIONS", "test_bidirectional_variables_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_bidirectional_variables_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#ac5202a9b6bdba804a1305c63d70e90ee", null ],
@@ -15,5 +18,6 @@ var test_bidirectional_variables_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#a739d28de15adc585ad1298db99693753", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#a6840c90274b0756f647d366cb6ff8cd5", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#ab92f83b705533f950d1ad7405f189ba0", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#aeafd1d2dfd972b13f69ecf663aa015ea", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#a6c9c8208a9bb806350b7a2229830b5b8", null ]
 ];

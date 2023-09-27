@@ -20,7 +20,9 @@ var searchData=
   ['modulegroupproperties_1654',['ModuleGroupProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_module_group_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
   ['modulegroupproxy_1655',['ModuleGroupProxy',['../class_chimera_t_k_1_1_model_1_1_module_group_proxy.html',1,'ChimeraTK::Model']]],
   ['moduletree_1656',['ModuleTree',['../class_chimera_t_k_1_1_module_tree.html',1,'ChimeraTK']]],
-  ['monitorbase_1657',['MonitorBase',['../struct_chimera_t_k_1_1_monitor_base.html',1,'ChimeraTK']]],
-  ['multiplier_1658',['Multiplier',['../struct_chimera_t_k_1_1_multiplier.html',1,'ChimeraTK']]],
-  ['mymodule_1659',['MyModule',['../struct_my_module.html',1,'']]]
+  ['modulex_1657',['ModuleX',['../struct_module_x.html',1,'']]],
+  ['moduley_1658',['ModuleY',['../struct_module_y.html',1,'']]],
+  ['monitorbase_1659',['MonitorBase',['../struct_chimera_t_k_1_1_monitor_base.html',1,'ChimeraTK']]],
+  ['multiplier_1660',['Multiplier',['../struct_chimera_t_k_1_1_multiplier.html',1,'ChimeraTK']]],
+  ['mymodule_1661',['MyModule',['../struct_my_module.html',1,'']]]
 ];
