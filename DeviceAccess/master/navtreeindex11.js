@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"md_doc_xdma_backend.html#autotoc_md15":[16,1],
 "md_doc_xdma_backend.html#autotoc_md16":[16,1,6],
 "md_doc_xdma_backend.html#autotoc_md17":[16,1,7],
 "md_doc_xdma_backend.html#autotoc_md18":[16,1,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "struct_another_working_backend_1_1_backend_registerer.html":[19,0,5,0],
 "struct_another_working_backend_1_1_backend_registerer.html#aa6a1734aecd0581fc3c8fc2676a9551b":[19,0,5,0,0],
 "struct_area_type.html":[19,0,6],
-"struct_area_type.html#a0074bc23dcb62580c879d8a039e8b7cb":[19,0,6,3],
-"struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,6,18]
+"struct_area_type.html#a0074bc23dcb62580c879d8a039e8b7cb":[19,0,6,3]
 };

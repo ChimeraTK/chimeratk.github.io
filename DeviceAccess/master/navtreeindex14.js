@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a":[19,0,37,1],
 "struct_dummy_for_double_buffering.html#a7125eeb3b5fa95706495ac0d05c7d292":[19,0,37,3],
 "struct_dummy_for_double_buffering_1_1_backend_registerer.html":[19,0,37,0],
 "struct_dummy_for_double_buffering_1_1_backend_registerer.html#a648ec017b32cae2993df0da5a7e8a5b5":[19,0,37,0,0],
@@ -90,8 +91,8 @@ var NAVTREEINDEX14 =
 "struct_integers__signed32__async.html":[19,0,49],
 "struct_integers__signed32__async.html#a01c00e3d20b92ebd1c7e5203b673ce2f":[19,0,49,4],
 "struct_integers__signed32__async.html#a1c698a4458224d7131e4695399f3f5bb":[19,0,49,1],
-"struct_integers__signed32__async.html#a28afd2afb24ff72b9c5c084ecc9e52b3":[19,0,49,18],
 "struct_integers__signed32__async.html#a28afd2afb24ff72b9c5c084ecc9e52b3":[19,0,49,19],
+"struct_integers__signed32__async.html#a28afd2afb24ff72b9c5c084ecc9e52b3":[19,0,49,18],
 "struct_integers__signed32__async.html#a4050d2828430c326977f242929c43b6b":[19,0,49,11],
 "struct_integers__signed32__async.html#a52bb35dfe01da818d268d69bdc60248c":[19,0,49,2],
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,49,13],
@@ -218,8 +219,8 @@ var NAVTREEINDEX14 =
 "struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[19,0,61,1],
 "struct_my_area1.html#a61da69d56c012c4ffa25bec4a39e9498":[19,0,61,14],
 "struct_my_area1.html#a8b30e909ad48c7c47ea47103b559a6ea":[19,0,61,0],
-"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,61,8],
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,61,9],
+"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,61,8],
 "struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[19,0,61,7],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,61,3],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,61,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "struct_one_d_register_descriptor_base.html#a79b32eea5cc4a7bd210d11e846d4de4d":[19,0,68,2],
 "struct_one_d_register_descriptor_base.html#aa26b91ef4494673a3f1536f5e68dae19":[19,0,68,0],
 "struct_one_d_register_descriptor_base.html#ade0e25620e4a3f7d4a1f659410f2d5b4":[19,0,68,5],
-"struct_raw_to_cooked_provider___bit_with_math.html":[19,0,73],
-"struct_raw_to_cooked_provider___var1.html":[19,0,74]
+"struct_raw_to_cooked_provider___bit_with_math.html":[19,0,73]
 };

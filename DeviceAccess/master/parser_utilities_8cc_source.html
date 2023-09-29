@@ -148,14 +148,17 @@ $(document).ready(function(){initNavTree('parser_utilities_8cc_source.html','');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::string appendForwardSlash(<span class="keyword">const</span> std::string&amp; path) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(path.back() == <span class="charliteral">&#39;/&#39;</span>) { <span class="comment">// path ends with &#39;/&#39;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> path;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(path.empty()) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;/&quot;</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// add &#39;/&#39; to path</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> path + <span class="stringliteral">&quot;/&quot;</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace ChimeraTK::parserUtilities</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span>(path.back() == <span class="charliteral">&#39;/&#39;</span>) { <span class="comment">// path ends with &#39;/&#39;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> path;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// add &#39;/&#39; to path</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> path + <span class="stringliteral">&quot;/&quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace ChimeraTK::parserUtilities</span></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1parser_utilities_html"><div class="ttname"><a href="namespace_chimera_t_k_1_1parser_utilities.html">ChimeraTK::parserUtilities</a></div><div class="ttdef"><b>Definition:</b> <a href="parser_utilities_8h_source.html#l00007">parserUtilities.h:7</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1parser_utilities_html_a4b7d71c43b5b99282686080779736272"><div class="ttname"><a href="namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272">ChimeraTK::parserUtilities::extractFileName</a></div><div class="ttdeci">std::string extractFileName(std::string const &amp;path)</div><div class="ttdoc">Extract the string after the last '/' in a path. Returned substring does not include the '/' characte...</div><div class="ttdef"><b>Definition:</b> <a href="parser_utilities_8cc_source.html#l00048">parserUtilities.cc:48</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1parser_utilities_html_a529f65d15e870ea369edaa98ad14ec84"><div class="ttname"><a href="namespace_chimera_t_k_1_1parser_utilities.html#a529f65d15e870ea369edaa98ad14ec84">ChimeraTK::parserUtilities::getCurrentWorkingDirectory</a></div><div class="ttdeci">std::string getCurrentWorkingDirectory()</div><div class="ttdoc">Returns absolute path to current working directory. The returned path ends with a forward slash.</div><div class="ttdef"><b>Definition:</b> <a href="parser_utilities_8cc_source.html#l00019">parserUtilities.cc:19</a></div></div>
@@ -169,7 +172,7 @@ $(document).ready(function(){initNavTree('parser_utilities_8cc_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dea78313235eb47f342de8e8297f8ee6.html">fileparsers</a></li><li class="navelem"><a class="el" href="dir_c53ed45d3ec6d7b879fd33b2d3a5927a.html">src</a></li><li class="navelem"><a class="el" href="parser_utilities_8cc.html">parserUtilities.cc</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 03:56:45 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 29 2023 03:53:22 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
