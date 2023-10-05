@@ -20,6 +20,7 @@ var hierarchy =
         [ "DummyApplication", "struct_dummy_application.html", null ],
         [ "ExampleApp", "class_example_app.html", null ],
         [ "ExampleApp", "class_example_app.html", null ],
+        [ "FunnelApplication", "struct_funnel_application.html", null ],
         [ "InitTestApplication", "struct_init_test_application.html", null ],
         [ "OneModuleApp", "struct_one_module_app.html", null ],
         [ "PollDummyApplication", "struct_poll_dummy_application.html", null ],
@@ -200,10 +201,14 @@ var hierarchy =
             [ "Module1", "struct_module1.html", null ],
             [ "Module2", "struct_module2.html", null ],
             [ "Module3", "struct_module3.html", null ],
+            [ "ModuleA", "struct_module_a.html", [
+              [ "ModuleAwithSecondInput", "struct_module_awith_second_input.html", null ]
+            ] ],
             [ "ModuleA", "struct_module_a.html", null ],
             [ "ModuleB", "struct_module_b.html", null ],
             [ "ModuleC", "struct_module_c.html", null ],
             [ "ModuleD", "struct_module_d.html", null ],
+            [ "ModuleFunnel", "struct_module_funnel.html", null ],
             [ "ModuleX", "struct_module_x.html", null ],
             [ "ModuleY", "struct_module_y.html", null ],
             [ "MyModule", "struct_my_module.html", null ],
@@ -271,6 +276,8 @@ var hierarchy =
             [ "ThePushModule", "struct_the_push_module.html", null ],
             [ "TriggerModule", "struct_trigger_module.html", null ],
             [ "TriggerModule", "struct_trigger_module.html", null ],
+            [ "UpstreamSingleOut", "struct_upstream_single_out.html", null ],
+            [ "UpstreamTwinOut", "struct_upstream_twin_out.html", null ],
             [ "VectorModule", "struct_vector_module.html", null ],
             [ "WriterModule", "struct_writer_module.html", null ]
           ] ],

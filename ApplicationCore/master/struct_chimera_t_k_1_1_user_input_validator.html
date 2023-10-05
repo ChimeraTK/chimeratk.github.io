@@ -153,7 +153,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a5947115f249bb27d3572a62944156582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8878997cf981c4a5a8b509e3f43fba9d"><td class="memItemLeft" align="right" valign="top">std::map&lt; ChimeraTK::TransferElementID, std::vector&lt; <a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a8878997cf981c4a5a8b509e3f43fba9d">_validatorMap</a></td></tr>
 <tr class="separator:a8878997cf981c4a5a8b509e3f43fba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ac5874dd3d35783002b62fdb81c5a1fe4">_errorFunction</a></td></tr>
+<tr class="memitem:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ac5874dd3d35783002b62fdb81c5a1fe4">_errorFunction</a> {[](const std::string&amp; m) { std::cerr &lt;&lt; m &lt;&lt; std::endl; }}</td></tr>
 <tr class="separator:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -172,7 +172,7 @@ Protected Attributes</h2></td></tr>
 <p>... do some computations based on myInput which would fail for myInput &lt;= 0 ...</p>
 <p>change = rag.readAny(); } } </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00063">63</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00065">65</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab949ef18c845814bdacfdb6eaa1e97f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab949ef18c845814bdacfdb6eaa1e97f1">&#9670;&nbsp;</a></span>add()</h2>
@@ -215,13 +215,21 @@ template&lt;typename... ACCESSORTYPES&gt; </div>
 <p>This function can be called an arbitrary number of times. Also the same accessors may be passed multiple times to different calls of this function. That way the expressions written in the isValidFunction can be kept simple and the provided error messages can be more specific. E.g. the two conditions A &gt; 0 and A &lt; B can be defined in two separate calls to the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function despite A being part of both conditions. If A changes, both conditions will be checked, since A is specified in the list of accessors in both calls.</p>
 <p>This function does not yet evaluate anything. It merely stores all information for later use. When <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is called, all isValidFunctions matching the given change are checked. If any of the checked isValidFunctions returns false, the variable passed to <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is reverted to its previous value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00196">196</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00198">198</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_ab949ef18c845814bdacfdb6eaa1e97f1_cgraph.svg" width="536" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_ab949ef18c845814bdacfdb6eaa1e97f1_icgraph.svg" width="510" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -253,13 +261,13 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00244">244</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00246">246</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a29ef9362126a81687383b2a34f5cffae_icgraph.svg" width="536" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a29ef9362126a81687383b2a34f5cffae_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -316,12 +324,12 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00230">230</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00232">232</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a0a660e1d79d4337e11cf8d213da464e6_cgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -360,12 +368,12 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>This value is used if the validation of the initial value fails, since there is no previous value to revert to in that case.</p>
 <p>It is mandatory to call this function for all accessors whose value after construction (usually 0) is outside the range of valid values, as otherwise a failed initial value validation reverts to the (invalid) value after construction and hence the subsequent computations might fail. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00215">215</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00217">217</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_ad362d336c3c9c9e3e83aab5f402168be_cgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -394,20 +402,20 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>If change is a default-constructed ChimeraTK::TransferElementID, all validation conditions are evaluated and all invalid values are corrected. This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#aec1ce9b3f82cf6c093373bed08c57d47" title="Evaluate all validation conditions and correct all invalid values.">validateAll()</a>. This functionality is useful to trigger the validation of initial values. </p>
 
 <p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00017">17</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a151e31bb3edbf713a54e43dbe3333fb9_cgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a151e31bb3edbf713a54e43dbe3333fb9_icgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a151e31bb3edbf713a54e43dbe3333fb9_cgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a151e31bb3edbf713a54e43dbe3333fb9_icgraph.svg" width="504" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -432,20 +440,20 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> with a default-constructed ChimeraTK::TransferElementID. This function is useful to trigger the validation of initial values. </p>
 
 <p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00039">39</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_aec1ce9b3f82cf6c093373bed08c57d47_cgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_aec1ce9b3f82cf6c093373bed08c57d47_icgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_aec1ce9b3f82cf6c093373bed08c57d47_cgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_aec1ce9b3f82cf6c093373bed08c57d47_icgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -462,7 +470,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; ChimeraTK::UserInputValidator::_errorFunction</td>
+          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; ChimeraTK::UserInputValidator::_errorFunction {[](const std::string&amp; m) { std::cerr &lt;&lt; m &lt;&lt; std::endl; }}</td>
         </tr>
       </table>
   </td>
@@ -472,7 +480,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00190">190</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00192">192</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +504,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00187">187</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00189">189</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +528,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00181">181</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00183">183</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +552,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00184">184</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00186">186</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +566,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html">UserInputValidator</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 03:59:11 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 5 2023 03:53:54 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

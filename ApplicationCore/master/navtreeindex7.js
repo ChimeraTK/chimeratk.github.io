@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"struct_chimera_t_k_1_1_periodic_trigger.html#afc34afde80d0497c9b55e84e38805330":[14,0,0,68,0],
 "struct_chimera_t_k_1_1_periodic_trigger.html#aff403354caea1a87f59c0e583cfa195f":[14,0,0,68,1],
 "struct_chimera_t_k_1_1_range_monitor.html":[14,0,0,82],
 "struct_chimera_t_k_1_1_range_monitor.html#a3d662f53a6f199544250176a5227d548":[14,0,0,82,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "struct_constant_test_application.html#ab27271e817c0fc78d441ad06c7aee0f8":[14,0,11,1],
 "struct_constant_test_application.html#acb9a44a782c47543a180f944e43d3371":[14,0,11,2],
 "struct_d9_initial_value_eception_dummy.html":[14,0,13],
-"struct_d9_initial_value_eception_dummy.html#a5f4ef8de3b9d92150e73795986068977":[14,0,13,6]
+"struct_d9_initial_value_eception_dummy.html#a5f4ef8de3b9d92150e73795986068977":[14,0,13,6],
+"struct_d9_initial_value_eception_dummy.html#a88a0e14a0146fa9895a88c47ac23fe25":[14,0,13,7]
 };
