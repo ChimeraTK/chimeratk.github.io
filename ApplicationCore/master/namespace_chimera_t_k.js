@@ -95,6 +95,7 @@ var namespace_chimera_t_k =
     [ "StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", "struct_chimera_t_k_1_1_status_with_message" ],
     [ "StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", "struct_chimera_t_k_1_1_status_with_message_input" ],
     [ "UserInputValidator", "struct_chimera_t_k_1_1_user_input_validator.html", "struct_chimera_t_k_1_1_user_input_validator" ],
+    [ "VersionInfoProvider", "class_chimera_t_k_1_1_version_info_provider.html", "class_chimera_t_k_1_1_version_info_provider" ],
     [ "Variable", "struct_chimera_t_k_1_1_variable.html", "struct_chimera_t_k_1_1_variable" ],
     [ "Array", "struct_chimera_t_k_1_1_array.html", "struct_chimera_t_k_1_1_array" ],
     [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],

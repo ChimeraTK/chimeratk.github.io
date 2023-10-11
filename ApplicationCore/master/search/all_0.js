@@ -108,8 +108,9 @@ var searchData=
   ['_5fvalidators_105',['_validators',['../struct_chimera_t_k_1_1_user_input_validator.html#a23a7ea7deed9ea79522cc98e5e9278b9',1,'ChimeraTK::UserInputValidator']]],
   ['_5fvalue_106',['_value',['../class_chimera_t_k_1_1_constant_accessor.html#a10d41aba1478e100ddaeac89f544766c',1,'ChimeraTK::ConstantAccessor']]],
   ['_5fvariablemap_107',['_variableMap',['../struct_chimera_t_k_1_1_config_reader.html#ad1c9b6148f8c0b654b7f84d73c8bd7a9',1,'ChimeraTK::ConfigReader::_variableMap()'],['../struct_chimera_t_k_1_1_user_input_validator.html#a5947115f249bb27d3572a62944156582',1,'ChimeraTK::UserInputValidator::_variableMap()']]],
-  ['_5fvisitor_108',['_visitor',['../struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html#a34e11809d9467adc461e01756bd1c116',1,'ChimeraTK::Model::detail::VisitorHelper']]],
-  ['_5fwithreturn_109',['_withReturn',['../class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e',1,'ChimeraTK::FeedingFanOut']]],
-  ['_5fwriteordercounter_110',['_writeOrderCounter',['../class_chimera_t_k_1_1_device_manager.html#a34766c4ead3064bc18e02892ac6b597a',1,'ChimeraTK::DeviceManager']]],
-  ['_5fwriteregisterpaths_111',['_writeRegisterPaths',['../class_chimera_t_k_1_1_device_manager.html#a81e2b324248754ecee66e9346e5efdda',1,'ChimeraTK::DeviceManager']]]
+  ['_5fversioninfoprovider_108',['_versionInfoProvider',['../class_chimera_t_k_1_1_application.html#ab90506fa56d8495a5e5c9ce1a6fc7650',1,'ChimeraTK::Application']]],
+  ['_5fvisitor_109',['_visitor',['../struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html#a34e11809d9467adc461e01756bd1c116',1,'ChimeraTK::Model::detail::VisitorHelper']]],
+  ['_5fwithreturn_110',['_withReturn',['../class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e',1,'ChimeraTK::FeedingFanOut']]],
+  ['_5fwriteordercounter_111',['_writeOrderCounter',['../class_chimera_t_k_1_1_device_manager.html#a34766c4ead3064bc18e02892ac6b597a',1,'ChimeraTK::DeviceManager']]],
+  ['_5fwriteregisterpaths_112',['_writeRegisterPaths',['../class_chimera_t_k_1_1_device_manager.html#a81e2b324248754ecee66e9346e5efdda',1,'ChimeraTK::DeviceManager']]]
 ];

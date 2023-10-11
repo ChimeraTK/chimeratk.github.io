@@ -67,5 +67,8 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "VariableBase", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable_base.html", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable_base" ],
       [ "Variable", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable" ],
       [ "Validator", "struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html", "struct_chimera_t_k_1_1_user_input_validator_1_1_validator" ]
+    ] ],
+    [ "VersionInfoProvider.h", "_version_info_provider_8h.html", [
+      [ "VersionInfoProvider", "class_chimera_t_k_1_1_version_info_provider.html", "class_chimera_t_k_1_1_version_info_provider" ]
     ] ]
 ];

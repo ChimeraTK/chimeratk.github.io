@@ -191,6 +191,7 @@ var hierarchy =
             [ "ChimeraTK::ScalarPipe< Type >", "struct_chimera_t_k_1_1_scalar_pipe.html", null ],
             [ "ChimeraTK::ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", null ],
             [ "ChimeraTK::StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html", null ],
+            [ "ChimeraTK::VersionInfoProvider", "class_chimera_t_k_1_1_version_info_provider.html", null ],
             [ "ChimeraTK::WriteBitMask< NBITS >", "struct_chimera_t_k_1_1_write_bit_mask.html", null ],
             [ "ChimeraTK::WriteSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_write_split_array_module.html", null ],
             [ "ConstantModule", "struct_constant_module.html", null ],

@@ -22,11 +22,13 @@ var class_chimera_t_k_1_1_application =
     [ "getQualifiedName", "class_chimera_t_k_1_1_application.html#a614e97c009f31afe1844f2ce99f2de1c", null ],
     [ "getStartVersion", "class_chimera_t_k_1_1_application.html#abc6a7e20331a4e9a936295216e882c1d", null ],
     [ "getTestableMode", "class_chimera_t_k_1_1_application.html#ab67dd3ef1133d99964e2f6e96ca9cef8", null ],
+    [ "getVersionInfoProvider", "class_chimera_t_k_1_1_application.html#a76006e9d49ac9a3e5361551f11698188", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_application.html#a0043e5e1a2c7a89bd114113596281475", null ],
     [ "initialise", "class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773", null ],
     [ "optimiseUnmappedVariables", "class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1", null ],
     [ "run", "class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976", null ],
     [ "setCurrentVersionNumber", "class_chimera_t_k_1_1_application.html#adea9d78e90e883d43758339a3c37c647", null ],
+    [ "setVersionInfoProvider", "class_chimera_t_k_1_1_application.html#aeb8eb3bb825a95be1c72e65de5938668", null ],
     [ "shutdown", "class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a", null ],
     [ "Accessor", "class_chimera_t_k_1_1_application.html#af6ffd104cd1bfe13fd84f63bcd1c2c44", null ],
     [ "ApplicationModule", "class_chimera_t_k_1_1_application.html#acfb4bf09dc26ce696cc077e79995dd42", null ],
@@ -62,5 +64,6 @@ var class_chimera_t_k_1_1_application =
     [ "_runCalled", "class_chimera_t_k_1_1_application.html#a842603d44e679f058df56d297eef5187", null ],
     [ "_startVersion", "class_chimera_t_k_1_1_application.html#a811e44b86e02723eb7716944f241db56", null ],
     [ "_testableMode", "class_chimera_t_k_1_1_application.html#aa0061a27330c6b1a04f6f972f472f48b", null ],
-    [ "_testFacilityRunApplicationCalled", "class_chimera_t_k_1_1_application.html#a52bedbbaa337d193182a604318ab9802", null ]
+    [ "_testFacilityRunApplicationCalled", "class_chimera_t_k_1_1_application.html#a52bedbbaa337d193182a604318ab9802", null ],
+    [ "_versionInfoProvider", "class_chimera_t_k_1_1_application.html#ab90506fa56d8495a5e5c9ce1a6fc7650", null ]
 ];
