@@ -167,26 +167,26 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"_numeric_addressed_backend_8cc.html",
-"_write_counting_backend_8h.html",
-"class_chimera_t_k_1_1_data_consistency_group.html#ad4b36162923b81822428222c0355ec19",
-"class_chimera_t_k_1_1_dummy_register_raw_accessor.html#a88c44a67099f15646c9e50ef5ca7aed6",
-"class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6f97729a8d0508afaa17539481e4a6f8",
-"class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#acb965b35365a29b27d42c41db0578033",
-"class_chimera_t_k_1_1_register_info.html#a646bc7934eb91a4e2b1aeb173390188a",
-"class_chimera_t_k_1_1_transfer_element_i_d.html#a7d334f85bce936e449c91f06f0bc123a",
-"class_chimera_t_k_1_1logic__error.html",
-"dir_130f923491185552e412a924425dcadd.html",
-"md_doc_xdma_backend.html#autotoc_md15",
+"_access_mode_8cc.html",
+"_numeric_addressed_backend_8cc_source.html",
+"_write_counting_backend_8h_source.html",
+"class_chimera_t_k_1_1_data_descriptor.html",
+"class_chimera_t_k_1_1_dummy_register_raw_accessor.html#aa012fe213d165b77324dc3cb9b513e91",
+"class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a77065ed1981822f356f143dcb136bd47",
+"class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ada0a33c1d270c000d15052bd759e78e6",
+"class_chimera_t_k_1_1_register_info.html#a748df43161b035b9a2af7044e3f827ee",
+"class_chimera_t_k_1_1_transfer_element_i_d.html#ac8a72559e4e61799fee4f9b97af8c145",
+"class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400",
+"dir_171063ca2b6d8df6d9147a9ad3041fe6.html",
+"md_doc_xdma_backend.html#autotoc_md16",
 "struct_area_type.html#a042930befb4d68a51839ca8bb4799f15",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aeba2cfa32b1f52bec29ae38f0540ea85",
-"struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a",
-"struct_raw_to_cooked_provider___var1.html",
-"struct_reg_word_firmware_as_parameter_in_math.html#aab163e3ef245cd6be8715bbc4516304d",
-"test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d",
-"test_multiplexed_data_accesor_8cpp.html#abee533adf77d4cbaffd39919e6be8732",
-"test_utilities_8cpp.html#a539836afd4f41791028509e632f8db1a"
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html",
+"struct_dummy_for_double_buffering.html#a7125eeb3b5fa95706495ac0d05c7d292",
+"struct_raw_to_cooked_provider___var2.html",
+"struct_reg_word_firmware_as_parameter_in_math.html#ab042656d041ea382e71293ef9d789979",
+"test_dummy_backend_8cpp.html#a00f8a92fbe12e8fa983751483c06980d",
+"test_multiplexed_data_accesor_8cpp.html#adedf8732ba8a8c4d3314e773a58848e3",
+"test_utilities_8cpp.html#a67235747f3abb600f2ebced738dfa26b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

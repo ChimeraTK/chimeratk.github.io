@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aeba2cfa32b1f52bec29ae38f0540ea85":[19,0,1,0,18,1],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html":[19,0,1,0,13],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a593395d266031484aea3a8cc387209b1":[19,0,1,0,13,0],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a8606f3a10f891827af710a8339792388":[19,0,1,0,13,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html":[19,0,36,0],
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[19,0,36,0,0],
 "struct_dummy_for_double_buffering.html":[19,0,37],
-"struct_dummy_for_double_buffering.html#a08de5d5364bdbc98d071e2601470a9e3":[19,0,37,2]
+"struct_dummy_for_double_buffering.html#a08de5d5364bdbc98d071e2601470a9e3":[19,0,37,2],
+"struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a":[19,0,37,1]
 };

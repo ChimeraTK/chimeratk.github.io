@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"struct_reg_word_firmware_as_parameter_in_math.html#aab163e3ef245cd6be8715bbc4516304d":[19,0,123,5],
 "struct_reg_word_firmware_as_parameter_in_math.html#ab042656d041ea382e71293ef9d789979":[19,0,123,1],
 "struct_reg_word_firmware_as_parameter_in_math.html#ab3d66ed4dee56a82c390002912b39147":[19,0,123,4],
 "struct_reg_word_firmware_as_parameter_in_math.html#abf95fa50efb60a70a184f0c299129acb":[19,0,123,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb":[20,0,8,5,1,3],
 "test_double_buffering_h_w_8cc_source.html":[20,0,8,5,1],
 "test_dummy_backend_8cpp.html":[20,0,8,1,9],
-"test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297":[20,0,8,1,9,10]
+"test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297":[20,0,8,1,9,10],
+"test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d":[20,0,8,1,9,17]
 };
