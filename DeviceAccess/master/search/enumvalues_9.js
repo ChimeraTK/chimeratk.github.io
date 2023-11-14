@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['raw_4132',['raw',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb',1,'ChimeraTK']]],
-  ['read_4133',['read',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aecae13117d6f0584c25a9da6c8f8415e',1,'ChimeraTK']]],
-  ['read_5fonly_4134',['READ_ONLY',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
-  ['read_5fwrite_4135',['READ_WRITE',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0aa7b843fb734e3b3fea8e5f902d3f4144',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
-  ['readlatest_4136',['readLatest',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7a168b97c08a29d6cd39c5aeeb3e6cc842',1,'ChimeraTK']]],
-  ['readnonblocking_4137',['readNonBlocking',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aafcf399c9a4d4e33eda6ff5e3b011540',1,'ChimeraTK']]],
-  ['register_4138',['REGISTER',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787bacd0adc96aa9e60939e2a010d91510f60',1,'ChimeraTK::LNMBackendRegisterInfo']]]
+  ['no_4390',['No',['../class_chimera_t_k_1_1_mapped_struct.html#aee7dbca51572930afaeae37869ff70d2abafd7322c6e97d25b6299b5d6fe8920b',1,'ChimeraTK::MappedStruct']]],
+  ['nodata_4391',['nodata',['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951aba7879f8819d6b74aa4dd9e24b2fe90e',1,'ChimeraTK::DataDescriptor']]],
+  ['none_4392',['none',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087',1,'ChimeraTK::DataType::none()'],['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8',1,'ChimeraTK::DataConsistencyGroup::none()']]],
+  ['nonunique_5fdevice_5fname_4393',['NONUNIQUE_DEVICE_NAME',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a018152873d71d9ba1114d16272191908ab1f3f7d5c592cc90c46b85831fa6b3b7',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
+  ['numeric_4394',['numeric',['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951a49057168d24dc9566533ec48326ced2c',1,'ChimeraTK::DataDescriptor']]]
 ];

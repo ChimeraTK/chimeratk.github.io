@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['wait_5ffor_5fnew_5fdata_4154',['wait_for_new_data',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031',1,'ChimeraTK']]],
-  ['warning_4155',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca5ad6b78774879a01d465f58dba1a9b54',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
-  ['write_4156',['write',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aefb2a684e4afb7d55e6147fbe5a332ee',1,'ChimeraTK']]],
-  ['write_5fonly_4157',['WRITE_ONLY',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0ad8fddf06187e680ab5a6355f76a17357',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
-  ['writedestructively_4158',['writeDestructively',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7abc219b057095a6e31adf97545d6b6ea6',1,'ChimeraTK']]]
+  ['uint16_4411',['uint16',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a80344c5d80e449495bd8290d2d33fdeb',1,'ChimeraTK::DataType']]],
+  ['uint32_4412',['uint32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a192599f4a9310165041b651dc2badf0b',1,'ChimeraTK::DataType']]],
+  ['uint64_4413',['uint64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a96029c8f8221a7daf59052e022975d72',1,'ChimeraTK::DataType']]],
+  ['uint8_4414',['uint8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ace6a08c56e7e5db1ca00d700ddd7191f',1,'ChimeraTK::DataType']]],
+  ['undefined_4415',['undefined',['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951a5e543256c480ac577d30f76f9120eb74',1,'ChimeraTK::DataDescriptor']]],
+  ['unset_4416',['Unset',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404ac9f88e098f6fe4e4e112eeb05ccb9671',1,'ChimeraTK']]],
+  ['unspecified_4417',['unspecified',['../namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985ad415f0e30c471dfdd9bc4f827329ef48',1,'ChimeraTK']]]
 ];

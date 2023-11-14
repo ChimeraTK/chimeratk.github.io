@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['value_4150',['value',['../class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html#abaaf87be16de772e3b57f308209ff4f9a44f74e30fe801efa742457c08c1b24bc',1,'ChimeraTK::UnifiedBackendTest::has_nValuesToTest']]],
-  ['variable_4151',['VARIABLE',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4ec9fd489be4c3384dbafebd980148e7',1,'ChimeraTK::LNMBackendRegisterInfo']]],
-  ['void_4152',['Void',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a51cddcf7e04fca1b6590e993576fc8e2',1,'ChimeraTK::DataType']]],
-  ['void_4153',['VOID',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035fa6d0c9fc747131795e6e5d0c5119f12cb',1,'ChimeraTK::NumericAddressedRegisterInfo']]]
+  ['threeregisters_4408',['threeRegisters',['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caadc4f6303576980fe0402f0c06c5b9fd',1,'ChimeraTK::SubdeviceBackend']]],
+  ['to_4409',['to',['../shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531',1,'sharedDummyHelpers.h']]],
+  ['tworegisters_4410',['twoRegisters',['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caa79cab19160fbdafa655ba29a5716758',1,'ChimeraTK::SubdeviceBackend']]]
 ];

@@ -28,6 +28,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testLMapMonostableTriggerPlugin.cpp", "test_l_map_monostable_trigger_plugin_8cpp.html", "test_l_map_monostable_trigger_plugin_8cpp" ],
     [ "testLMapTypeHintModifierPlugin.cc", "test_l_map_type_hint_modifier_plugin_8cc.html", "test_l_map_type_hint_modifier_plugin_8cc" ],
     [ "testMapFileParser.cpp", "test_map_file_parser_8cpp.html", "test_map_file_parser_8cpp" ],
+    [ "testMappedImage.cc", "test_mapped_image_8cc.html", "test_mapped_image_8cc" ],
     [ "testMathPluginDataValidity.cpp", "test_math_plugin_data_validity_8cpp.html", "test_math_plugin_data_validity_8cpp" ],
     [ "testMultiplexedDataAccesor.cpp", "test_multiplexed_data_accesor_8cpp.html", "test_multiplexed_data_accesor_8cpp" ],
     [ "testNDRegisterAccessorDecorator.cpp", "test_n_d_register_accessor_decorator_8cpp.html", "test_n_d_register_accessor_decorator_8cpp" ],
@@ -49,6 +50,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testSubdeviceBackendUnified.cpp", "test_subdevice_backend_unified_8cpp.html", "test_subdevice_backend_unified_8cpp" ],
     [ "testTransferElement.cpp", "test_transfer_element_8cpp.html", "test_transfer_element_8cpp" ],
     [ "testTransferGroup.cpp", "test_transfer_group_8cpp.html", "test_transfer_group_8cpp" ],
+    [ "testTypeChangingDecorator.cpp", "test_type_changing_decorator_8cpp.html", "test_type_changing_decorator_8cpp" ],
     [ "testUtilities.cpp", "test_utilities_8cpp.html", "test_utilities_8cpp" ],
     [ "testVersionNumber.cpp", "test_version_number_8cpp.html", "test_version_number_8cpp" ],
     [ "testVoidRegisterAccessor.cpp", "test_void_register_accessor_8cpp.html", "test_void_register_accessor_8cpp" ]

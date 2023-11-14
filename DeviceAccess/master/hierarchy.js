@@ -30,6 +30,10 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< Derived >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", null ]
     ] ],
+    [ "Adder< T, IMPL_T >", "struct_adder.html", null ],
+    [ "Adder< std::string, IMPL_T >", "struct_adder_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
+    [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
+    [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
@@ -90,6 +94,59 @@ var hierarchy =
     [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< int8_t, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_sp2e9527c1ad98e72a8c438d5dfc5781dc.html", null ],
     [ "ChimeraTK::DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html", null ],
     [ "ChimeraTK::DataType", "class_chimera_t_k_1_1_data_type.html", null ],
+    [ "ChimeraTK::DecoratorFactory< UserType >", "class_chimera_t_k_1_1_decorator_factory.html", null ],
+    [ "ChimeraTK::DecoratorMapKey", "struct_chimera_t_k_1_1_decorator_map_key.html", null ],
+    [ "ChimeraTK::DecoratorTypeHolder", "class_chimera_t_k_1_1_decorator_type_holder.html", [
+      [ "ChimeraTK::TypeChangingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_t_00_01std_1_1string_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01std_1_1string_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_t_00_01std_1_1string_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< T, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< T, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_t_00_01_chimera_t_k_1_1_void_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< T, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01_chimera_t_k_1_1_void_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< T, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_t_00_01_chimera_t_k_1_1_void_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_chimera_t_k_1_1_void_00_01_chimera_t_k_1_1_void_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01_chimera_t_k_1_1_void_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_chimera_t_k_1_1_void_00_01_chimera_t_k_1_1_void_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01std_1_1string_00_01_chimera_t_k_1_1_void_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01std_1_1string_00_01_chimera_t_k_1_1_void_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01std_1_1string_00_01_chimera_t_k_1_1_void_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< ChimeraTK::Void, std::string >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_chimera_t_k_1_1_void_00_01std_1_1string_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< ChimeraTK::Void, std::string >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01std_1_1string_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< ChimeraTK::Void, std::string >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_chimera_t_k_1_1_void_00_01std_1_1string_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_chimera_t_k_1_1_void_00_01_i_m_p_l___t_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01_i_m_p_l___t_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_chimera_t_k_1_1_void_00_01_i_m_p_l___t_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "ChimeraTK::TypeChangingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator.html", null ]
+        ] ],
+        [ "ChimeraTK::TypeChangingVoidImplDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_void_impl_decorator.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::Device", "class_chimera_t_k_1_1_device.html", [
       [ "TestableDevice", "class_testable_device.html", null ]
     ] ],
@@ -112,6 +169,7 @@ var hierarchy =
     [ "DeviceInfoMapTest", "class_device_info_map_test.html", null ],
     [ "ChimeraTK::DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
     [ "DMapFileParserTest", "class_d_map_file_parser_test.html", null ],
+    [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
@@ -206,6 +264,9 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::FixedPointConvertingRawDecorator< TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html", null ]
             ] ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::TypeChangingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ]
+            ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", null ]
             ] ],
@@ -219,6 +280,13 @@ var hierarchy =
           ] ],
           [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, UserType >", null, [
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::TypeChangingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+              [ "ChimeraTK::TypeChangingDecorator< T, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+              [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+              [ "ChimeraTK::TypeChangingDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+              [ "ChimeraTK::TypeChangingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+              [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+              [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
               [ "ChimeraTK::ExceptionDummyPollDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html", null ],
               [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::DoubleBufferAccessorDecorator< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html", null ],
@@ -262,6 +330,7 @@ var hierarchy =
     [ "std::hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "HelperProcess", "struct_helper_process.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
+    [ "ChimeraTK::ImgView< ValType, OPTIONS >", "class_chimera_t_k_1_1_img_view.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
     [ "Integers_base< Derived >", "struct_integers__base.html", null ],
     [ "Integers_base< Integers_signed32 >", "struct_integers__base.html", [
@@ -288,6 +357,10 @@ var hierarchy =
     [ "ChimeraTK::LNMVariable", "struct_chimera_t_k_1_1_l_n_m_variable.html", null ],
     [ "ChimeraTK::LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", null ],
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
+    [ "ChimeraTK::MappedStruct< StructHeader >", "class_chimera_t_k_1_1_mapped_struct.html", null ],
+    [ "ChimeraTK::MappedStruct< ImgHeader >", "class_chimera_t_k_1_1_mapped_struct.html", [
+      [ "ChimeraTK::MappedImage", "class_chimera_t_k_1_1_mapped_image.html", null ]
+    ] ],
     [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
     [ "ChimeraTK::MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ],
@@ -310,6 +383,9 @@ var hierarchy =
     [ "NumericAddressedLowLevelTransferElement_startAddress", "struct_numeric_addressed_low_level_transfer_element__start_address.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::nValuesToTest_proxy_helper< T, hasFn >", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::nValuesToTest_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html", null ],
+    [ "ChimeraTK::OpaqueStructHeader", "struct_chimera_t_k_1_1_opaque_struct_header.html", [
+      [ "ChimeraTK::ImgHeader", "struct_chimera_t_k_1_1_img_header.html", null ]
+    ] ],
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", null ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >::QueuedValue", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table_1_1_queued_value.html", null ],
@@ -481,6 +557,7 @@ var hierarchy =
     [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
+    [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, Void >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html", null ],
@@ -547,6 +624,7 @@ var hierarchy =
         [ "ChimeraTK::VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", null ]
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
+        [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_scalar_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [
           [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", null ]

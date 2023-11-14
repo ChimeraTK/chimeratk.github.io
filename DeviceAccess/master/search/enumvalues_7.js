@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['nodata_4127',['nodata',['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951aba7879f8819d6b74aa4dd9e24b2fe90e',1,'ChimeraTK::DataDescriptor']]],
-  ['none_4128',['none',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087',1,'ChimeraTK::DataType::none()'],['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8',1,'ChimeraTK::DataConsistencyGroup::none()']]],
-  ['nonunique_5fdevice_5fname_4129',['NONUNIQUE_DEVICE_NAME',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a018152873d71d9ba1114d16272191908ab1f3f7d5c592cc90c46b85831fa6b3b7',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
-  ['numeric_4130',['numeric',['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951a49057168d24dc9566533ec48326ced2c',1,'ChimeraTK::DataDescriptor']]]
+  ['ieee754_4382',['IEEE754',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035faac6a6b8a25c5c9332dcd09a9ebd672ac',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
+  ['int16_4383',['int16',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a2aa8ebe110c066402a8931f36ed2713a',1,'ChimeraTK::DataType']]],
+  ['int32_4384',['int32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96',1,'ChimeraTK::DataType']]],
+  ['int64_4385',['int64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a507102dc046aef8ad3ab6766020987b0',1,'ChimeraTK::DataType']]],
+  ['int8_4386',['int8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ad63bc1d1e58cba5dbadfd284c9a0d253',1,'ChimeraTK::DataType']]],
+  ['interrupt_4387',['INTERRUPT',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a81b7fe15c43052525db74111aa314cc9',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
+  ['invalid_4388',['INVALID',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba464bac7271c91e146fddec802a1076e5',1,'ChimeraTK::LNMBackendRegisterInfo']]]
 ];
