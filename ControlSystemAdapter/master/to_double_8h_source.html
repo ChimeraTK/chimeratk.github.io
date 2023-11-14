@@ -87,31 +87,35 @@ $(document).ready(function(){initNavTree('to_double_8h_source.html',''); initRes
 <div class="title">toDouble.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="to_double_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _CHIMERATK_CONTROL_SYSTEM_ADAPTER_TEST_TO_DOUBLE_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _CHIMERATK_CONTROL_SYSTEM_ADAPTER_TEST_TO_DOUBLE_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// helper function to covert string to double (abstraced by template)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> UserType&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="to_double_8h.html#a0ae21402a5ffb651ae173affd1354918">    8</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="to_double_8h.html#a0ae21402a5ffb651ae173affd1354918">toDouble</a>(UserType input){</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> input;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="to_double_8h.html#ab6804051d2decf2280fcf1c49d3efcd1">   13</a></span>&#160;<span class="keywordtype">double</span> toDouble&lt;std::string&gt;(std::string input){</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> std::stod(input);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _CHIMERATK_CONTROL_SYSTEM_ADAPTER_TEST_TO_DOUBLE_H_</span></div>
-<div class="ttc" id="ato_double_8h_html_a0ae21402a5ffb651ae173affd1354918"><div class="ttname"><a href="to_double_8h.html#a0ae21402a5ffb651ae173affd1354918">toDouble</a></div><div class="ttdeci">double toDouble(UserType input)</div><div class="ttdef"><b>Definition:</b> <a href="to_double_8h_source.html#l00008">toDouble.h:8</a></div></div>
+<a href="to_double_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="comment">// helper function to covert string to double (abstraced by template)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> UserType&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a">   11</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a">toDouble</a>(UserType input) {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span> input;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#a7a26be422586550a071b2cdbbfa5376e">   16</a></span>&#160;  <span class="keywordtype">double</span> toDouble&lt;std::string&gt;(std::string input) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> std::stod(input);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_base_8h_source.html#l00011">ApplicationBase.h:11</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_abb2b8dfa58977b1813fe9757a117cf5a"><div class="ttname"><a href="namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a">ChimeraTK::toDouble</a></div><div class="ttdeci">double toDouble(UserType input)</div><div class="ttdef"><b>Definition:</b> <a href="to_double_8h_source.html#l00011">toDouble.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="to_double_8h.html">toDouble.h</a></li>
-    <li class="footer">Generated on Fri Oct 13 2023 03:55:17 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 14 2023 04:58:31 for ChimeraTK-ControlSystemAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

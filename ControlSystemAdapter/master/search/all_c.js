@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['nchannels_231',['nChannels',['../struct_test_register.html#a44a59bef1e1b78b3b678a8b728621701',1,'TestRegister']]],
-  ['nearbyint_232',['nearbyint',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a2eb7768e02d05b0fb23844e830c974f8',1,'ChimeraTK::csa_helpers::Round']]],
-  ['nelementsperchannel_233',['nElementsPerChannel',['../struct_test_register.html#a63201794d3ebba8a1540c571fb3c7022',1,'TestRegister']]],
-  ['no_234',['No',['../class_chimera_t_k_1_1_mapped_struct.html#aee7dbca51572930afaeae37869ff70d2abafd7322c6e97d25b6299b5d6fe8920b',1,'ChimeraTK::MappedStruct']]],
-  ['nruntimeerrorcases_235',['nRuntimeErrorCases',['../struct_register_descriptor_base.html#a69763ae2bf994bbc97be829123629c9d',1,'RegisterDescriptorBase::nRuntimeErrorCases()'],['../struct_test_register.html#a6183586aed953f3bfb3b3a548d045adc',1,'TestRegister::nRuntimeErrorCases()']]]
+  ['off_175',['OFF',['../struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dda88559a0cfd8250c9d65970cc145c92d4',1,'ChimeraTK::StatusAccessorBase']]],
+  ['ok_176',['OK',['../struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711ddae0aa021e21dddbd6d8cecec71e9cf564',1,'ChimeraTK::StatusAccessorBase']]],
+  ['open_177',['open',['../struct_process_array_factory_backend.html#a1127b3c71fef4f58e4895af0447fe170',1,'ProcessArrayFactoryBackend']]],
+  ['operator_28_29_178',['operator()',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#ae903a5258af0b9638fda06ecbd166188',1,'ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover::operator()()'],['../struct_perform_input_to_output.html#aa442e02c34559db6ba5cc87c9b4e6562',1,'PerformInputToOutput::operator()()'],['../struct_test_device_callable.html#a95e0638b3c9c7f3f48815ced15b52371',1,'TestDeviceCallable::operator()()'],['../struct_test_device_callable2.html#a08edac297c3c6765ccf69f49b5b8d58f',1,'TestDeviceCallable2::operator()()'],['../struct_test_device_callable4.html#a4ddb581df057b416ae29f0ea1ecc5f89',1,'TestDeviceCallable4::operator()()'],['../struct_test_device_callable5.html#abf88c1b84ddb48f2040d00571d30bd4d',1,'TestDeviceCallable5::operator()()']]],
+  ['optimiseunmappedvariables_179',['optimiseUnmappedVariables',['../class_chimera_t_k_1_1_application_base.html#abd3103d056ea320768e422280ee709f3',1,'ChimeraTK::ApplicationBase::optimiseUnmappedVariables()'],['../class_reference_test_application.html#a4c6f251ad5a6c6b55db14339e8a32e4f',1,'ReferenceTestApplication::optimiseUnmappedVariables()']]]
 ];

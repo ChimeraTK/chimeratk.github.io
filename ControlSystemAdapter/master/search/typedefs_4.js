@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['processvariable_894',['ProcessVariable',['../namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e',1,'ChimeraTK']]],
-  ['processvariablemap_895',['ProcessVariableMap',['../class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809',1,'ChimeraTK::PVManager']]],
-  ['processvariablesharedptrpair_896',['ProcessVariableSharedPtrPair',['../class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2',1,'ChimeraTK::PVManager']]]
+  ['rawusertype_640',['rawUserType',['../struct_register_descriptor_base.html#a71c8ed5fb79e195cb05523d89686900f',1,'RegisterDescriptorBase::rawUserType()'],['../struct_test_register.html#a841f7ed1056c2dc425407a9e2fd6e13a',1,'TestRegister::rawUserType()']]]
 ];

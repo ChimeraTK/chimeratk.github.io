@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['effbitsperpixel_857',['effBitsPerPixel',['../struct_chimera_t_k_1_1_img_header.html#aaf9a47e6519ebbc4be090577b759e401',1,'ChimeraTK::ImgHeader']]],
-  ['element_858',['element',['../struct_chimera_t_k_1_1_decorator_map_key.html#a3a0f5571b0b4db08b48bd3623a460766',1,'ChimeraTK::DecoratorMapKey']]]
+  ['failedtransfers_616',['failedTransfers',['../struct_typed_p_v_holder.html#a92ad257a5964989502a8c941d33964a1',1,'TypedPVHolder']]],
+  ['fromdevicearray_617',['fromDeviceArray',['../struct_typed_p_v_holder.html#ad2d36c854e5f8c62815a74273dc64e8c',1,'TypedPVHolder']]],
+  ['fromdevicescalar_618',['fromDeviceScalar',['../struct_typed_p_v_holder.html#a8760b633a9ef0acf05a62079c5c35160',1,'TypedPVHolder']]]
 ];

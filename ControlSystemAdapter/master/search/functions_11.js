@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['t_5ftostring_766',['T_ToString',['../namespace_chimera_t_k_1_1csa__helpers.html#ab4ff7a4fec1a1e0c63c62ae5318205f6',1,'ChimeraTK::csa_helpers']]],
-  ['t_5ftostring_3c_20int8_5ft_20_3e_767',['T_ToString&lt; int8_t &gt;',['../namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1',1,'ChimeraTK::csa_helpers']]],
-  ['t_5ftostring_3c_20uint8_5ft_20_3e_768',['T_ToString&lt; uint8_t &gt;',['../namespace_chimera_t_k_1_1csa__helpers.html#a0195a3924fcf217f99e8b198afd463e8',1,'ChimeraTK::csa_helpers']]],
-  ['test_5fequal_5for_5fclose_769',['test_equal_or_close',['../test_type_changing_decorator_8cpp.html#a2a0f059d4f295cef9e9990ff1a60d8b7',1,'testTypeChangingDecorator.cpp']]],
-  ['test_5fequal_5for_5fclose_3c_20double_20_3e_770',['test_equal_or_close&lt; double &gt;',['../test_type_changing_decorator_8cpp.html#aa93ca03cfdc5dc990c95b825e77409e1',1,'testTypeChangingDecorator.cpp']]],
-  ['test_5fequal_5for_5fclose_3c_20float_20_3e_771',['test_equal_or_close&lt; float &gt;',['../test_type_changing_decorator_8cpp.html#a06d7a6eb5d3df6d87b43eda546e291c7',1,'testTypeChangingDecorator.cpp']]],
-  ['test_5fnot_5fclose_772',['test_not_close',['../test_type_changing_decorator_8cpp.html#a390b1110d3f76ed1c9c84a799cf1716e',1,'testTypeChangingDecorator.cpp']]],
-  ['test_5fnot_5fclose_3c_20std_3a_3astring_20_3e_773',['test_not_close&lt; std::string &gt;',['../test_type_changing_decorator_8cpp.html#a4910a7100015a4ef073f6cf8458d6657',1,'testTypeChangingDecorator.cpp']]],
-  ['testapplicationfixture_774',['TestApplicationFixture',['../struct_test_application_fixture.html#aea4c1d9787accced0de973aa4ae071e0',1,'TestApplicationFixture']]],
-  ['testasyncread_775',['testAsyncRead',['../class_async_read_test.html#aeb471e8ef22f1848277584f619771241',1,'AsyncReadTest']]],
-  ['testdecorator_776',['testDecorator',['../test_type_changing_decorator_8cpp.html#a5508c2f467404d24528cef39ac8ef00f',1,'testTypeChangingDecorator.cpp']]],
-  ['testreadany_777',['testReadAny',['../class_async_read_test.html#ad917a2b2d78b6d0183389a2e764373d1',1,'AsyncReadTest']]],
-  ['threadedpvmanagerholder_778',['ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html#a60a239447be428d84d3a1a41670d62d7',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(ThreadedPvManagerHolder &amp;&amp;)=default'],['../struct_threaded_pv_manager_holder.html#aa5c3d8b7b6b5cd2fc2c20851f0e37d74',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(shared_ptr&lt; DevicePVManager &gt; devPvManager, shared_ptr&lt; ControlSystemPVManager &gt; csPvManager)']]],
-  ['todouble_779',['toDouble',['../to_double_8h.html#a0ae21402a5ffb651ae173affd1354918',1,'toDouble.h']]],
-  ['todouble_3c_20std_3a_3astring_20_3e_780',['toDouble&lt; std::string &gt;',['../to_double_8h.html#ab6804051d2decf2280fcf1c49d3efcd1',1,'toDouble.h']]],
-  ['totype_781',['toType',['../to_type_8h.html#afadd26dbf7e0ddfa1e5574834c86c950',1,'toType.h']]],
-  ['totype_3c_20std_3a_3astring_20_3e_782',['toType&lt; std::string &gt;',['../to_type_8h.html#a2aa309cbe905099232e300d9aa48b334',1,'toType.h']]],
-  ['typechangingdecorator_783',['TypeChangingDecorator',['../class_chimera_t_k_1_1_type_changing_decorator.html#a4dfb50bdaaff8de6b8e372d267fbdc89',1,'ChimeraTK::TypeChangingDecorator']]],
-  ['typedpvholder_784',['TypedPVHolder',['../struct_typed_p_v_holder.html#a3aff2efd16a76cab7114535bc851a12c',1,'TypedPVHolder']]],
-  ['typedreadarraytest_785',['typedReadArrayTest',['../struct_test_application_fixture.html#a85c2665d8b99c8a66922ea652f79988e',1,'TestApplicationFixture']]],
-  ['typedwritearraytest_786',['typedWriteArrayTest',['../struct_test_application_fixture.html#ab31faee6ca0ae368646af11514b75b0f',1,'TestApplicationFixture']]],
-  ['typedwritescalartest_787',['typedWriteScalarTest',['../struct_test_application_fixture.html#a458a098a91ed635640cd262af11d1f67',1,'TestApplicationFixture']]]
+  ['unidirectionalprocessarray_558',['UnidirectionalProcessArray',['../class_chimera_t_k_1_1_unidirectional_process_array.html#a3ad69ac68b662e3d11f24f8c006fe80b',1,'ChimeraTK::UnidirectionalProcessArray::UnidirectionalProcessArray(typename ProcessArray&lt; T &gt;::InstanceType instanceType, const ChimeraTK::RegisterPath &amp;name, const std::string &amp;unit, const std::string &amp;description, const std::vector&lt; T &gt; &amp;initialValue, std::size_t numberOfBuffers, const AccessModeFlags &amp;flags)'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a10df6ab054bc7721c6122f5d2c30cf8d',1,'ChimeraTK::UnidirectionalProcessArray::UnidirectionalProcessArray(typename ProcessArray&lt; T &gt;::InstanceType instanceType, UnidirectionalProcessArray::SharedPtr receiver, const AccessModeFlags &amp;flags)']]],
+  ['update_559',['update',['../class_chimera_t_k_1_1_status_with_message_reader_base.html#a90dd33ca23af7edcdd84ec65b3edf88d',1,'ChimeraTK::StatusWithMessageReaderBase']]],
+  ['updatevalue_560',['updateValue',['../class_chimera_t_k_1_1_persistent_data_storage.html#a612dbafae9899fbead5ca29b867d4642',1,'ChimeraTK::PersistentDataStorage']]]
 ];

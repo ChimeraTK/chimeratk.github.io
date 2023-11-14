@@ -1,4 +1,0 @@
-var class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01std_1_1string_01_4 =
-[
-    [ "getDecoratorType", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01std_1_1string_01_4.html#ae88453390ba133c8b54bde81466480ad", null ]
-];
