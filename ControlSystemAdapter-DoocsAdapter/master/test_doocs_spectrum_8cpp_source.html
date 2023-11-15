@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('test_doocs_spectrum_8cpp_source.html',
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/ControlSystemPVManager.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/DevicePVManager.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/TypeChangingDecorator.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/TypeChangingDecorator.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;boost/mpl/list.hpp&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;boost/test/unit_test.hpp&gt;</span></div>
@@ -142,79 +142,81 @@ $(document).ready(function(){initNavTree('test_doocs_spectrum_8cpp_source.html',
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Write to the doocs spectrum and send it.</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// We use the &#39;testable&#39; version which exposes sendToDevice, which otherwise</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// is protected.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_testable_doocs_spectrum.html">TestableDoocsSpectrum</a> doocsSpectrum(NULL, <span class="stringliteral">&quot;someName&quot;</span>, getDecorator&lt;float&gt;(controlSystemVariable), updater);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// create unique signature for each template parameter</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// negative factor for signed values</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  T sign = (std::numeric_limits&lt;T&gt;::is_signed ? -1 : 1);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// integer size offset for integer, fractional offset for floating type</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  T offset = (std::numeric_limits&lt;T&gt;::is_integer ? <span class="keyword">sizeof</span>(T) : 1. / <span class="keyword">sizeof</span>(T));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    doocsSpectrum.fill_spectrum(i, sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  doocsSpectrum.<a class="code" href="class_chimera_t_k_1_1_doocs_spectrum.html#ae5eb8cc34d17f90b3556de8422f1af6d">sendToDevice</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// receive on the device side and check that the value has arrived</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  deviceVariable-&gt;readNonBlocking();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::vector&lt;T&gt;&amp; deviceVector = deviceVariable-&gt;accessChannel(0);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::stringstream errorMessage;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    errorMessage &lt;&lt; <span class="stringliteral">&quot;i = &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;, deviceVector[i] = &quot;</span> &lt;&lt; deviceVector[i] &lt;&lt; <span class="stringliteral">&quot; expected &quot;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                 &lt;&lt; sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    BOOST_CHECK_MESSAGE(deviceVector[i] == sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset, errorMessage.str());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="test_doocs_spectrum_8cpp.html#ac10cbe248aa1f2d8f98dd1fb47e24250">   81</a></span>&#160;<a class="code" href="test_doocs_spectrum_8cpp.html#a060c323ed86ea3ae35bfa8ddc13d618f">BOOST_AUTO_TEST_CASE_TEMPLATE</a>(fromDeviceTest, T, <a class="code" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a>) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  std::pair&lt;boost::shared_ptr&lt;ControlSystemPVManager&gt;, boost::shared_ptr&lt;DevicePVManager&gt;&gt; pvManagers =</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      createPVManager();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  boost::shared_ptr&lt;ControlSystemPVManager&gt; csManager = pvManagers.first;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  boost::shared_ptr&lt;DevicePVManager&gt; devManager = pvManagers.second;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> arraySize = 8;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">typename</span> boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;T&gt;&gt; deviceVariable = devManager-&gt;createProcessArray&lt;T&gt;(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      SynchronizationDirection::deviceToControlSystem, <span class="stringliteral">&quot;fromDeviceVariable&quot;</span>, arraySize);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">typename</span> boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;T&gt;&gt; controlSystemVariable =</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      csManager-&gt;getProcessArray&lt;T&gt;(<span class="stringliteral">&quot;fromDeviceVariable&quot;</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> updater;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// initialise the doocs spectrum</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_spectrum.html">DoocsSpectrum</a> doocsSpectrum(NULL, <span class="stringliteral">&quot;someName&quot;</span>, getDecorator&lt;float&gt;(controlSystemVariable), updater, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    doocsSpectrum.fill_spectrum(i, 0);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// prepare the device side and send it</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  T sign = (std::numeric_limits&lt;T&gt;::is_signed ? -1 : 1);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  T offset = (std::numeric_limits&lt;T&gt;::is_integer ? <span class="keyword">sizeof</span>(T) : 1. / <span class="keyword">sizeof</span>(T));</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  std::vector&lt;T&gt;&amp; deviceVector = deviceVariable-&gt;accessChannel(0);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    deviceVector[i] = (sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  deviceVariable-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_spectrum.html#a6c5b1ebdd8b4347e9c5cd06104ed79c0">write</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// everything should still be 0 on the CS side</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  std::vector&lt;T&gt;&amp; csVector = controlSystemVariable-&gt;accessChannel(0);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    BOOST_CHECK(csVector[i] == 0);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    BOOST_CHECK(doocsSpectrum.read_spectrum(i) == 0);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  updater.update();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_testable_doocs_spectrum.html">TestableDoocsSpectrum</a> doocsSpectrum(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      NULL, <span class="stringliteral">&quot;someName&quot;</span>, getTypeChangingDecorator&lt;float&gt;(controlSystemVariable), updater);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// create unique signature for each template parameter</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// negative factor for signed values</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  T sign = (std::numeric_limits&lt;T&gt;::is_signed ? -1 : 1);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// integer size offset for integer, fractional offset for floating type</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  T offset = (std::numeric_limits&lt;T&gt;::is_integer ? <span class="keyword">sizeof</span>(T) : 1. / <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    doocsSpectrum.fill_spectrum(i, sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  doocsSpectrum.<a class="code" href="class_chimera_t_k_1_1_doocs_spectrum.html#ae5eb8cc34d17f90b3556de8422f1af6d">sendToDevice</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// receive on the device side and check that the value has arrived</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  deviceVariable-&gt;readNonBlocking();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::vector&lt;T&gt;&amp; deviceVector = deviceVariable-&gt;accessChannel(0);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::stringstream errorMessage;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    errorMessage &lt;&lt; <span class="stringliteral">&quot;i = &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;, deviceVector[i] = &quot;</span> &lt;&lt; deviceVector[i] &lt;&lt; <span class="stringliteral">&quot; expected &quot;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 &lt;&lt; sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    BOOST_CHECK_MESSAGE(deviceVector[i] == sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset, errorMessage.str());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="test_doocs_spectrum_8cpp.html#ac10cbe248aa1f2d8f98dd1fb47e24250">   82</a></span>&#160;<a class="code" href="test_doocs_spectrum_8cpp.html#a060c323ed86ea3ae35bfa8ddc13d618f">BOOST_AUTO_TEST_CASE_TEMPLATE</a>(fromDeviceTest, T, <a class="code" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::pair&lt;boost::shared_ptr&lt;ControlSystemPVManager&gt;, boost::shared_ptr&lt;DevicePVManager&gt;&gt; pvManagers =</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      createPVManager();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  boost::shared_ptr&lt;ControlSystemPVManager&gt; csManager = pvManagers.first;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  boost::shared_ptr&lt;DevicePVManager&gt; devManager = pvManagers.second;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> arraySize = 8;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">typename</span> boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;T&gt;&gt; deviceVariable = devManager-&gt;createProcessArray&lt;T&gt;(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      SynchronizationDirection::deviceToControlSystem, <span class="stringliteral">&quot;fromDeviceVariable&quot;</span>, arraySize);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">typename</span> boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;T&gt;&gt; controlSystemVariable =</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      csManager-&gt;getProcessArray&lt;T&gt;(<span class="stringliteral">&quot;fromDeviceVariable&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> updater;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">// initialise the doocs spectrum</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_spectrum.html">DoocsSpectrum</a> doocsSpectrum(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      NULL, <span class="stringliteral">&quot;someName&quot;</span>, getTypeChangingDecorator&lt;float&gt;(controlSystemVariable), updater, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    doocsSpectrum.fill_spectrum(i, 0);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// prepare the device side and send it</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  T sign = (std::numeric_limits&lt;T&gt;::is_signed ? -1 : 1);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  T offset = (std::numeric_limits&lt;T&gt;::is_integer ? <span class="keyword">sizeof</span>(T) : 1. / <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::vector&lt;T&gt;&amp; deviceVector = deviceVariable-&gt;accessChannel(0);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    deviceVector[i] = (sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  deviceVariable-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_spectrum.html#a6c5b1ebdd8b4347e9c5cd06104ed79c0">write</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// everything should still be 0 on the CS side</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  std::vector&lt;T&gt;&amp; csVector = controlSystemVariable-&gt;accessChannel(0);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    BOOST_CHECK(csVector[i] == 0);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    BOOST_CHECK(doocsSpectrum.read_spectrum(i) == 0);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// The actual vector buffer has changed. We have to get the new reference.</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  csVector = controlSystemVariable-&gt;accessChannel(0);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    BOOST_CHECK(csVector[i] == sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    BOOST_CHECK_EQUAL(doocsSpectrum.read_spectrum(i), sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  updater.update();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// The actual vector buffer has changed. We have to get the new reference.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  csVector = controlSystemVariable-&gt;accessChannel(0);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; arraySize; ++i) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    BOOST_CHECK(csVector[i] == sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    BOOST_CHECK_EQUAL(doocsSpectrum.read_spectrum(i), sign * <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(i * i) + offset);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_doocs_spectrum_8h_html"><div class="ttname"><a href="_doocs_spectrum_8h.html">DoocsSpectrum.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_spectrum_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html">ChimeraTK::DoocsSpectrum</a></div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8h_source.html#l00020">DoocsSpectrum.h:20</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_spectrum_html_a6c5b1ebdd8b4347e9c5cd06104ed79c0"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html#a6c5b1ebdd8b4347e9c5cd06104ed79c0">ChimeraTK::DoocsSpectrum::write</a></div><div class="ttdeci">void write(std::ostream &amp;s) override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8cc_source.html#l00077">DoocsSpectrum.cc:77</a></div></div>
@@ -233,7 +235,7 @@ $(document).ready(function(){initNavTree('test_doocs_spectrum_8cpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_doocs_spectrum_8cpp.html">testDoocsSpectrum.cpp</a></li>
-    <li class="footer">Generated on Tue Nov 14 2023 04:59:35 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 15 2023 04:56:04 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
