@@ -4,6 +4,7 @@ var test_type_changing_decorator_8cpp =
     [ "Adder< std::string, IMPL_T >", "struct_adder_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
     [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
     [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
+    [ "BOOST_TEST_DYN_LINK", "test_type_changing_decorator_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_type_changing_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "CHECK_THROW_PRINT", "test_type_changing_decorator_8cpp.html#aa404515e6020c74d68ab9db69ca69339", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_type_changing_decorator_8cpp.html#a46ab1970bad85d5f5049fd07f3e6dec0", null ],
