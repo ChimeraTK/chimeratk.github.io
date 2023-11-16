@@ -9,6 +9,8 @@ var annotated_dup =
       [ "DoocsBackendFloatRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor" ],
       [ "DoocsBackendIFFFRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor" ],
       [ "DoocsBackendIIIIRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor" ],
+      [ "DoocsBackendImageRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor" ],
+      [ "MappedDoocsImgIn", "struct_chimera_t_k_1_1_mapped_doocs_img_in.html", "struct_chimera_t_k_1_1_mapped_doocs_img_in" ],
       [ "DoocsBackendIntRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor" ],
       [ "DoocsBackendLongRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor" ],
       [ "DoocsBackendRegisterAccessorBase", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base" ],

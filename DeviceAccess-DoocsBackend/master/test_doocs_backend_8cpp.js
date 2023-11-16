@@ -20,6 +20,7 @@ var test_doocs_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#aab4e1f9ad7d5d450d7db35db9826c3f0", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a27de8c603913c0ca2e3dcf11b55073cc", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a6800a30761c9b8b8c55b75b7f08c1409", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a7b21d19a7332f57ca5556b6fbab0f3ad", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#aae014a0ddd9cff03bb0d569105ab9aed", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#ad50f32acee1b054f57cbcba93c9a2b3c", null ],

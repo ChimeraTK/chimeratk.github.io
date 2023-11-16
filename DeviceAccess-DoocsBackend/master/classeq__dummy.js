@@ -14,6 +14,7 @@ var classeq__dummy =
     [ "prop_someFloatArray", "classeq__dummy.html#a1ce21b236a5eb61816d9c7d148fcc189", null ],
     [ "prop_someIFFF", "classeq__dummy.html#a52e2b651152824a9edb05f15c9cf9b6d", null ],
     [ "prop_someIIII", "classeq__dummy.html#a895eeb3b98829a930b5edfb6d40467a5", null ],
+    [ "prop_someImage", "classeq__dummy.html#adf54e7f8660b20f241c73b3dc04c6f76", null ],
     [ "prop_someInt", "classeq__dummy.html#a7715a0d45ab900e497d1de1869181aba", null ],
     [ "prop_someIntArray", "classeq__dummy.html#a8fd47579ae4ae9c9b460df96866f5abe", null ],
     [ "prop_someLongArray", "classeq__dummy.html#a40d659cf2280a8b213fa87ae55e83fb7", null ],
@@ -23,6 +24,6 @@ var classeq__dummy =
     [ "prop_someStatus", "classeq__dummy.html#affd168c8b455616dd6cd9f0b51c5cfa9", null ],
     [ "prop_someString", "classeq__dummy.html#a3c84c3b63f369933595ec6b898c7fd3e", null ],
     [ "prop_someZMQInt", "classeq__dummy.html#ab57f2197e67e442ed93f69343fd8d80a", null ],
-    [ "prop_unsupportedDataType", "classeq__dummy.html#af9681a7ba9f87b95bc9b5f68f037b438", null ],
+    [ "prop_unsupportedDataType", "classeq__dummy.html#a7aa9dd363e70a1136554de680e28fc70", null ],
     [ "startTime", "classeq__dummy.html#ac4d3ffc28c8af68e7b67aceb83b10f45", null ]
 ];

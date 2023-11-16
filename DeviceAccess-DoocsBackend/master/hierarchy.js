@@ -71,6 +71,9 @@ var hierarchy =
       [ "ChimeraTK::DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", null ]
     ] ],
     [ "ChimeraTK::DoocsBackendRegisterAccessorBase", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html", [
+      [ "ChimeraTK::DoocsBackendRegisterAccessor< std::uint8_t >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", [
+        [ "ChimeraTK::DoocsBackendImageRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html", null ]
+      ] ],
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", [
         [ "ChimeraTK::DoocsBackendEventIdRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendFloatRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", null ],
@@ -87,7 +90,11 @@ var hierarchy =
       [ "eq_dummy", "classeq__dummy.html", null ]
     ] ],
     [ "EventIdMapper", "class_event_id_mapper.html", null ],
+    [ "MappedImage", null, [
+      [ "ChimeraTK::MappedDoocsImgIn", "struct_chimera_t_k_1_1_mapped_doocs_img_in.html", null ]
+    ] ],
     [ "NDRegisterAccessor", null, [
+      [ "ChimeraTK::DoocsBackendRegisterAccessor< std::uint8_t >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", null ],
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", null ]
     ] ],
     [ "ThreadedDoocsServer", null, [

@@ -89,24 +89,24 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div class="contents">
 <a href="_doocs_backend_register_accessor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CHIMERATK_DOOCS_BACKEND_REGISTER_ACCESSOR_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CHIMERATK_DOOCS_BACKEND_REGISTER_ACCESSOR_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/AccessMode.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/Exception.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/FixedPointConverter.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/RegisterPath.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/NDRegisterAccessor.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;eq_client.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;eq_fct.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;eq_errors.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_doocs_backend_8h.html">DoocsBackend.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_event_id_mapper_8h.html">EventIdMapper.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_z_m_q_subscription_manager_8h.html">ZMQSubscriptionManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_register_info_8h.html">RegisterInfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_doocs_backend_8h.html">DoocsBackend.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_event_id_mapper_8h.html">EventIdMapper.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_register_info_8h.html">RegisterInfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_z_m_q_subscription_manager_8h.html">ZMQSubscriptionManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;eq_client.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;eq_errors.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;eq_fct.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/AccessMode.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/Exception.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/FixedPointConverter.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/MappedImage.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/NDRegisterAccessor.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/RegisterPath.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">   75</a></span>&#160;  <span class="keyword">class </span><a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">DoocsBackendRegisterAccessor</a> : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html">DoocsBackendRegisterAccessorBase</a>, <span class="keyword">public</span> NDRegisterAccessor&lt;UserType&gt; {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">~DoocsBackendRegisterAccessor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">   77</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">~DoocsBackendRegisterAccessor</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf">shutdown</a>() {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5">useZMQ</a>) {</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa7b9d96704ee9583991689100f7a9e13">shutdownCalled</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">doReadTransferSynchronously</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">   91</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">doReadTransferSynchronously</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a7d5442439cd505bb3d0f5b4d560175b3">   93</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a7d5442439cd505bb3d0f5b4d560175b3">doWriteTransfer</a>(VersionNumber)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">write_internal</a>();</div>
@@ -258,12 +258,12 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5cf33826f9f16817c0c5d962f4508911">  190</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5cf33826f9f16817c0c5d962f4508911">interrupt</a>()<span class="keyword"> override </span>{ this-&gt;interrupt_impl(this-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7">notifications</a>); }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;   <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">DoocsBackendRegisterAccessor</a>(boost::shared_ptr&lt;DoocsBackend&gt; backend, <span class="keyword">const</span> std::string&amp; path,</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">  193</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">DoocsBackendRegisterAccessor</a>(boost::shared_ptr&lt;DoocsBackend&gt; backend, <span class="keyword">const</span> std::string&amp; path,</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keyword">const</span> std::string&amp; registerPathName, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister, AccessModeFlags flags);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">write_internal</a>();</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">  197</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">write_internal</a>();</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb">initialise</a>(<span class="keyword">const</span> <a class="code" href="class_doocs_backend_register_info.html">DoocsBackendRegisterInfo</a>&amp; info);</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb">  205</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb">initialise</a>(<span class="keyword">const</span> <a class="code" href="class_doocs_backend_register_info.html">DoocsBackendRegisterInfo</a>&amp; info);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
 <div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a482c3cbb809d86c42a3cdba03860ee8f">  207</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a482c3cbb809d86c42a3cdba03860ee8f">_isReadable</a>;</div>
 <div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1e5a07459cd76517365d72ab64276bdf">  208</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1e5a07459cd76517365d72ab64276bdf">_isWriteable</a>;</div>
@@ -306,153 +306,164 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span>(actualLength == 0) actualLength = dst.length();</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      }</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      typeId = dst.type();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// strings report number of characters, not number of strings..</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">if</span>(typeId == DATA_TEXT || typeId == DATA_STRING) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      actualLength = 1;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span>(actualLength &gt; 1) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      isArray = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">if</span>(typeId == DATA_IMAGE) {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// RegisterAccessor byte array needs to store header and body</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        actualLength += <span class="keyword">sizeof</span>(ChimeraTK::ImgHeader);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// strings report number of characters, not number of strings..</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span>(typeId == DATA_TEXT || typeId == DATA_STRING) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      actualLength = 1;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      isArray = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">if</span>(nElements == 0) {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      nElements = actualLength;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span>(actualLength &gt; 1) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      isArray = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      isArray = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span>(nElements + elementOffset &gt; actualLength) {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Requested number of words exceeds the length of the DOOCS property!&quot;</span>);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span>(nElements == actualLength &amp;&amp; elementOffset == 0) {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      isPartial = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      isPartial = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="comment">// allocate buffers</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    NDRegisterAccessor&lt;UserType&gt;::buffer_2D.resize(1);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    NDRegisterAccessor&lt;UserType&gt;::buffer_2D[0].resize(nElements);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// set proper type information in the source EqData</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    src.set_type(typeId);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">if</span>(typeId != DATA_IIII) {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      src.length(actualLength);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="comment">// use ZeroMQ with AccessMode::wait_for_new_data</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span>(useZMQ) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <span class="comment">// subscribe via subscription manager</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#ae8d8452b5bf527ab0a52a51f10ddc1b6">DoocsBackendNamespace::ZMQSubscriptionManager::getInstance</a>().<a class="code" href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#afccea9af8b0253c7b05590bee7157828">subscribe</a>(_path, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">  296</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">DoocsBackendRegisterAccessor&lt;UserType&gt;::DoocsBackendRegisterAccessor</a>(boost::shared_ptr&lt;DoocsBackend&gt; backend,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; registerPathName, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      AccessModeFlags flags)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  : NDRegisterAccessor&lt;UserType&gt;(path, flags), _isReadable(true), _isWriteable(true) {</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a04aeeb6951cf75ce19d456766cd7819b">_backend</a> = backend;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aea8709ce14798675c01147e14dc968a2">_path</a> = path;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a36e10fd2604da56e6578c6f1165ed039">elementOffset</a> = wordOffsetInRegister;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6">nElements</a> = numberOfWords;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5">useZMQ</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="comment">// check for unknown access mode flags</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      flags.checkForUnknownFlags({AccessMode::wait_for_new_data});</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="comment">// set address</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a24e1d1dd0543bdf728d47a0fd38ac9b4">ea</a>.adr(path);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="comment">// obtain catalogue entry</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="keyword">auto</span> info = backend-&gt;getBackendRegisterCatalogue().getBackendRegister(registerPathName);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="comment">// use zero mq subscriptiopn?</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="keywordflow">if</span>(flags.has(AccessMode::wait_for_new_data)) {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">if</span>(!info.getSupportedAccessModes().has(AccessMode::wait_for_new_data)) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;invalid access mode for this register&quot;</span>);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5">useZMQ</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="comment">// Create notification queue.</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7">notifications</a> = cppext::future_queue&lt;EqData&gt;(3);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        _readQueue = <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7">notifications</a>.then&lt;<span class="keywordtype">void</span>&gt;([<span class="keyword">this</span>](EqData&amp; data) { this-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#ad15efe6e2899bd765343ef56701df253">dst</a> = data; }, std::launch::deferred);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      }</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb">initialise</a>(info);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">catch</span>(...) {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      this-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf">shutdown</a>();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <span class="keywordflow">throw</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
-<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">  339</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">DoocsBackendRegisterAccessor&lt;UserType&gt;::~DoocsBackendRegisterAccessor</a>() {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    assert(shutdownCalled);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
-<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">  346</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">DoocsBackendRegisterAccessor&lt;UserType&gt;::doReadTransferSynchronously</a>() {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">if</span>(!_backend-&gt;isFunctional()) {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Exception reported by another accessor.&quot;</span>));</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    assert(!useZMQ);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    boost::this_thread::interruption_point();</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// read data</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    EqData tmp;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">int</span> rc = eq.get(&amp;ea, &amp;tmp, &amp;dst);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">// check error</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">if</span>(rc &amp;&amp; <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(dst.error())) {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      _backend-&gt;informRuntimeError(_path);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Cannot read from DOOCS property: &quot;</span>) + dst.get_string());</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    }</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span>(nElements == 0) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      nElements = actualLength;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span>(nElements + elementOffset &gt; actualLength) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="comment">// for image type, we allow having a byte array larger than required</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">if</span>(typeId != DATA_IMAGE) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Requested number of words exceeds the length of the DOOCS property!&quot;</span>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span>(nElements == actualLength &amp;&amp; elementOffset == 0) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      isPartial = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      isPartial = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">// allocate buffers</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    NDRegisterAccessor&lt;UserType&gt;::buffer_2D.resize(1);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    NDRegisterAccessor&lt;UserType&gt;::buffer_2D[0].resize(nElements);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// set proper type information in the source EqData</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    src.set_type(typeId);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">if</span>(typeId == DATA_IMAGE) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="comment">// DOOCS data structure has its own image header format and length() is only used for body length</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      src.length(actualLength - <span class="keyword">sizeof</span>(ChimeraTK::ImgHeader));</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(typeId != DATA_IIII) {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      src.length(actualLength);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="comment">// use ZeroMQ with AccessMode::wait_for_new_data</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span>(useZMQ) {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="comment">// subscribe via subscription manager</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#ae8d8452b5bf527ab0a52a51f10ddc1b6">DoocsBackendNamespace::ZMQSubscriptionManager::getInstance</a>().<a class="code" href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#afccea9af8b0253c7b05590bee7157828">subscribe</a>(_path, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">  307</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">DoocsBackendRegisterAccessor&lt;UserType&gt;::DoocsBackendRegisterAccessor</a>(boost::shared_ptr&lt;DoocsBackend&gt; backend,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; registerPathName, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      AccessModeFlags flags)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  : NDRegisterAccessor&lt;UserType&gt;(path, flags), _isReadable(true), _isWriteable(true) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a04aeeb6951cf75ce19d456766cd7819b">_backend</a> = backend;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aea8709ce14798675c01147e14dc968a2">_path</a> = path;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a36e10fd2604da56e6578c6f1165ed039">elementOffset</a> = wordOffsetInRegister;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6">nElements</a> = numberOfWords;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5">useZMQ</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="comment">// check for unknown access mode flags</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      flags.checkForUnknownFlags({AccessMode::wait_for_new_data});</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="comment">// set address</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a24e1d1dd0543bdf728d47a0fd38ac9b4">ea</a>.adr(path);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="comment">// obtain catalogue entry</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="keyword">auto</span> info = backend-&gt;getBackendRegisterCatalogue().getBackendRegister(registerPathName);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="comment">// use zero mq subscriptiopn?</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <span class="keywordflow">if</span>(flags.has(AccessMode::wait_for_new_data)) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span>(!info.getSupportedAccessModes().has(AccessMode::wait_for_new_data)) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;invalid access mode for this register&quot;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5">useZMQ</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="comment">// Create notification queue.</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7">notifications</a> = cppext::future_queue&lt;EqData&gt;(3);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        _readQueue = <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7">notifications</a>.then&lt;<span class="keywordtype">void</span>&gt;([<span class="keyword">this</span>](EqData&amp; data) { this-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#ad15efe6e2899bd765343ef56701df253">dst</a> = data; }, std::launch::deferred);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb">initialise</a>(info);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">catch</span>(...) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      this-&gt;<a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf">shutdown</a>();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">  350</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">DoocsBackendRegisterAccessor&lt;UserType&gt;::~DoocsBackendRegisterAccessor</a>() {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    assert(shutdownCalled);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">  357</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">DoocsBackendRegisterAccessor&lt;UserType&gt;::doReadTransferSynchronously</a>() {</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">if</span>(!_backend-&gt;isFunctional()) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Exception reported by another accessor.&quot;</span>));</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    assert(!useZMQ);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    boost::this_thread::interruption_point();</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">  369</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">DoocsBackendRegisterAccessor&lt;UserType&gt;::write_internal</a>() {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">if</span>(!_backend-&gt;isFunctional()) {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Exception reported by another accessor.&quot;</span>));</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// write data</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordtype">int</span> rc = eq.set(&amp;ea, &amp;src, &amp;dst);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="comment">// check error</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">if</span>(rc &amp;&amp; (<a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(dst.error()) || (dst.error() == eq_errors::read_only))) {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      _backend-&gt;informRuntimeError(_path);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      <span class="keywordflow">if</span>(dst.error() == eq_errors::read_only) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        this-&gt;_isWriteable = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Cannot write to DOOCS property: &quot;</span>) + dst.get_string());</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// read data</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    EqData tmp;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">int</span> rc = eq.get(&amp;ea, &amp;tmp, &amp;dst);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// check error</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">if</span>(rc &amp;&amp; <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(dst.error())) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      _backend-&gt;informRuntimeError(_path);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Cannot read from DOOCS property: &quot;</span>) + dst.get_string());</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  }</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">  380</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">DoocsBackendRegisterAccessor&lt;UserType&gt;::write_internal</a>() {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span>(!_backend-&gt;isFunctional()) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Exception reported by another accessor.&quot;</span>));</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CHIMERATK_DOOCS_BACKEND_REGISTER_ACCESSOR_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">// write data</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">int</span> rc = eq.set(&amp;ea, &amp;src, &amp;dst);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// check error</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">if</span>(rc &amp;&amp; (<a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(dst.error()) || (dst.error() == eq_errors::read_only))) {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      _backend-&gt;informRuntimeError(_path);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">if</span>(dst.error() == eq_errors::read_only) {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        this-&gt;_isWriteable = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(std::string(<span class="stringliteral">&quot;Cannot write to DOOCS property: &quot;</span>) + dst.get_string());</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CHIMERATK_DOOCS_BACKEND_REGISTER_ACCESSOR_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a_doocs_backend_8h_html"><div class="ttname"><a href="_doocs_backend_8h.html">DoocsBackend.h</a></div></div>
 <div class="ttc" id="a_event_id_mapper_8h_html"><div class="ttname"><a href="_event_id_mapper_8h.html">EventIdMapper.h</a></div></div>
 <div class="ttc" id="a_register_info_8h_html"><div class="ttname"><a href="_register_info_8h.html">RegisterInfo.h</a></div></div>
 <div class="ttc" id="a_z_m_q_subscription_manager_8h_html"><div class="ttname"><a href="_z_m_q_subscription_manager_8h.html">ZMQSubscriptionManager.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a02e160d0a945224f86d7ef21af9629c9"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">ChimeraTK::DoocsBackend::isCommunicationError</a></div><div class="ttdeci">static bool isCommunicationError(int doocs_error)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_8cc_source.html#l00367">DoocsBackend.cc:367</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a02e160d0a945224f86d7ef21af9629c9"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">ChimeraTK::DoocsBackend::isCommunicationError</a></div><div class="ttdeci">static bool isCommunicationError(int doocs_error)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_8cc_source.html#l00388">DoocsBackend.cc:388</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager_html_a1b05e96e439a7650f00c057ce739502c"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a1b05e96e439a7650f00c057ce739502c">ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager::unsubscribe</a></div><div class="ttdeci">void unsubscribe(const std::string &amp;path, DoocsBackendRegisterAccessorBase *accessor)</div><div class="ttdoc">Unregister accessor subscription.</div><div class="ttdef"><b>Definition:</b> <a href="_z_m_q_subscription_manager_8cc_source.html#l00093">ZMQSubscriptionManager.cc:93</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager_html_ae8d8452b5bf527ab0a52a51f10ddc1b6"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#ae8d8452b5bf527ab0a52a51f10ddc1b6">ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager::getInstance</a></div><div class="ttdeci">static ZMQSubscriptionManager &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_z_m_q_subscription_manager_8h_source.html#l00026">ZMQSubscriptionManager.h:26</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager_html_afccea9af8b0253c7b05590bee7157828"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#afccea9af8b0253c7b05590bee7157828">ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager::subscribe</a></div><div class="ttdeci">void subscribe(const std::string &amp;path, DoocsBackendRegisterAccessorBase *accessor)</div><div class="ttdoc">Register accessor subscription.</div><div class="ttdef"><b>Definition:</b> <a href="_z_m_q_subscription_manager_8cc_source.html#l00033">ZMQSubscriptionManager.cc:33</a></div></div>
@@ -484,18 +495,18 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_a558fa5bfd76a4c4f89ea2b0638095aec"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a558fa5bfd76a4c4f89ea2b0638095aec">ChimeraTK::DoocsBackendRegisterAccessor::doPreWrite</a></div><div class="ttdeci">void doPreWrite(TransferType, VersionNumber) override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00103">DoocsBackendRegisterAccessor.h:103</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_a5cf33826f9f16817c0c5d962f4508911"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5cf33826f9f16817c0c5d962f4508911">ChimeraTK::DoocsBackendRegisterAccessor::interrupt</a></div><div class="ttdeci">void interrupt() override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00190">DoocsBackendRegisterAccessor.h:190</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_a7d5442439cd505bb3d0f5b4d560175b3"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a7d5442439cd505bb3d0f5b4d560175b3">ChimeraTK::DoocsBackendRegisterAccessor::doWriteTransfer</a></div><div class="ttdeci">bool doWriteTransfer(VersionNumber) override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00093">DoocsBackendRegisterAccessor.h:93</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_a858e3fa3941ee0adcff3866da1e3544b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">ChimeraTK::DoocsBackendRegisterAccessor::write_internal</a></div><div class="ttdeci">void write_internal()</div><div class="ttdoc">internal write from EqData src</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00369">DoocsBackendRegisterAccessor.h:369</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_aa1e88c093f1951deaf0123e16c08117b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">ChimeraTK::DoocsBackendRegisterAccessor::DoocsBackendRegisterAccessor</a></div><div class="ttdeci">DoocsBackendRegisterAccessor(boost::shared_ptr&lt; DoocsBackend &gt; backend, const std::string &amp;path, const std::string &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00296">DoocsBackendRegisterAccessor.h:296</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_a858e3fa3941ee0adcff3866da1e3544b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">ChimeraTK::DoocsBackendRegisterAccessor::write_internal</a></div><div class="ttdeci">void write_internal()</div><div class="ttdoc">internal write from EqData src</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00380">DoocsBackendRegisterAccessor.h:380</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_aa1e88c093f1951deaf0123e16c08117b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b">ChimeraTK::DoocsBackendRegisterAccessor::DoocsBackendRegisterAccessor</a></div><div class="ttdeci">DoocsBackendRegisterAccessor(boost::shared_ptr&lt; DoocsBackend &gt; backend, const std::string &amp;path, const std::string &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00307">DoocsBackendRegisterAccessor.h:307</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_ab06f770035140bb017209536360d336d"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab06f770035140bb017209536360d336d">ChimeraTK::DoocsBackendRegisterAccessor::isReadable</a></div><div class="ttdeci">bool isReadable() const override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00167">DoocsBackendRegisterAccessor.h:167</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_ab883217e9320e37adbb48d172b119758"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">ChimeraTK::DoocsBackendRegisterAccessor::~DoocsBackendRegisterAccessor</a></div><div class="ttdeci">~DoocsBackendRegisterAccessor() override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00339">DoocsBackendRegisterAccessor.h:339</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_ad6b128ad60fa4be75c79ad6d9dcbff36"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">ChimeraTK::DoocsBackendRegisterAccessor::doReadTransferSynchronously</a></div><div class="ttdeci">void doReadTransferSynchronously() override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00346">DoocsBackendRegisterAccessor.h:346</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_ab883217e9320e37adbb48d172b119758"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758">ChimeraTK::DoocsBackendRegisterAccessor::~DoocsBackendRegisterAccessor</a></div><div class="ttdeci">~DoocsBackendRegisterAccessor() override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00350">DoocsBackendRegisterAccessor.h:350</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_ad6b128ad60fa4be75c79ad6d9dcbff36"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad6b128ad60fa4be75c79ad6d9dcbff36">ChimeraTK::DoocsBackendRegisterAccessor::doReadTransferSynchronously</a></div><div class="ttdeci">void doReadTransferSynchronously() override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00357">DoocsBackendRegisterAccessor.h:357</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_ae6037438b370642c6010741eddace8fb"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb">ChimeraTK::DoocsBackendRegisterAccessor::initialise</a></div><div class="ttdeci">void initialise(const DoocsBackendRegisterInfo &amp;info)</div><div class="ttdoc">Perform initialisation (i.e.</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00218">DoocsBackendRegisterAccessor.h:218</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_af4562f6eab03ae622dc4aba6aca519a5"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#af4562f6eab03ae622dc4aba6aca519a5">ChimeraTK::DoocsBackendRegisterAccessor::doPreRead</a></div><div class="ttdeci">void doPreRead(TransferType) override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00098">DoocsBackendRegisterAccessor.h:98</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_af70113a1e2014bb5aec0d8e14864c26f"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#af70113a1e2014bb5aec0d8e14864c26f">ChimeraTK::DoocsBackendRegisterAccessor::isWriteable</a></div><div class="ttdeci">bool isWriteable() const override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00169">DoocsBackendRegisterAccessor.h:169</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html_afaa016b39be620cbef56b5f350a91ac3"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afaa016b39be620cbef56b5f350a91ac3">ChimeraTK::DoocsBackendRegisterAccessor::getHardwareAccessingElements</a></div><div class="ttdeci">std::vector&lt; boost::shared_ptr&lt; TransferElement &gt; &gt; getHardwareAccessingElements() override</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00182">DoocsBackendRegisterAccessor.h:182</a></div></div>
-<div class="ttc" id="aclass_doocs_backend_register_info_html"><div class="ttname"><a href="class_doocs_backend_register_info.html">DoocsBackendRegisterInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_register_info_8h_source.html#l00021">RegisterInfo.h:21</a></div></div>
-<div class="ttc" id="aclass_doocs_backend_register_info_html_a96d907af25636665d23dbef9e40550db"><div class="ttname"><a href="class_doocs_backend_register_info.html#a96d907af25636665d23dbef9e40550db">DoocsBackendRegisterInfo::doocsTypeId</a></div><div class="ttdeci">int doocsTypeId</div><div class="ttdef"><b>Definition:</b> <a href="_register_info_8h_source.html#l00047">RegisterInfo.h:47</a></div></div>
-<div class="ttc" id="aclass_doocs_backend_register_info_html_ad0b9b9ad0e6505e3e41e2620c05cd216"><div class="ttname"><a href="class_doocs_backend_register_info.html#ad0b9b9ad0e6505e3e41e2620c05cd216">DoocsBackendRegisterInfo::getNumberOfElements</a></div><div class="ttdeci">unsigned int getNumberOfElements() const override</div><div class="ttdef"><b>Definition:</b> <a href="_register_info_8h_source.html#l00029">RegisterInfo.h:29</a></div></div>
+<div class="ttc" id="aclass_doocs_backend_register_info_html"><div class="ttname"><a href="class_doocs_backend_register_info.html">DoocsBackendRegisterInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_register_info_8h_source.html#l00022">RegisterInfo.h:22</a></div></div>
+<div class="ttc" id="aclass_doocs_backend_register_info_html_a96d907af25636665d23dbef9e40550db"><div class="ttname"><a href="class_doocs_backend_register_info.html#a96d907af25636665d23dbef9e40550db">DoocsBackendRegisterInfo::doocsTypeId</a></div><div class="ttdeci">int doocsTypeId</div><div class="ttdef"><b>Definition:</b> <a href="_register_info_8h_source.html#l00048">RegisterInfo.h:48</a></div></div>
+<div class="ttc" id="aclass_doocs_backend_register_info_html_ad0b9b9ad0e6505e3e41e2620c05cd216"><div class="ttname"><a href="class_doocs_backend_register_info.html#ad0b9b9ad0e6505e3e41e2620c05cd216">DoocsBackendRegisterInfo::getNumberOfElements</a></div><div class="ttdeci">unsigned int getNumberOfElements() const override</div><div class="ttdef"><b>Definition:</b> <a href="_register_info_8h_source.html#l00030">RegisterInfo.h:30</a></div></div>
 <div class="ttc" id="aclass_event_id_mapper_html_a54068de28837dd4be46b4b147e5f583a"><div class="ttname"><a href="class_event_id_mapper.html#a54068de28837dd4be46b4b147e5f583a">EventIdMapper::getInstance</a></div><div class="ttdeci">static EventIdMapper &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_event_id_mapper_8h_source.html#l00013">EventIdMapper.h:13</a></div></div>
 <div class="ttc" id="aclass_event_id_mapper_html_adfda73773e7e4e169664a6f288c72c5b"><div class="ttname"><a href="class_event_id_mapper.html#adfda73773e7e4e169664a6f288c72c5b">EventIdMapper::getVersionForEventId</a></div><div class="ttdeci">ChimeraTK::VersionNumber getVersionForEventId(const doocs::EventId &amp;eventId)</div><div class="ttdef"><b>Definition:</b> <a href="_event_id_mapper_8cc_source.html#l00006">EventIdMapper.cc:6</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="spec___doocs_backend_8dox_source.html#l00002">spec_DoocsBackend.dox:2</a></div></div>
@@ -505,7 +516,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_register_accessor_8h_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_doocs_backend_register_accessor_8h.html">DoocsBackendRegisterAccessor.h</a></li>
-    <li class="footer">Generated on Fri Oct 13 2023 03:54:53 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Nov 16 2023 04:53:29 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

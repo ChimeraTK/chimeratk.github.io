@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cataloguefetcher_286',['CatalogueFetcher',['../class_catalogue_fetcher.html',1,'']]]
+  ['cataloguefetcher_295',['CatalogueFetcher',['../class_catalogue_fetcher.html',1,'']]]
 ];

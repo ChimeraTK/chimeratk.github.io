@@ -20,6 +20,10 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsBackendIIIIRegisterAccessor.h", "_doocs_backend_i_i_i_i_register_accessor_8h.html", [
       [ "DoocsBackendIIIIRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor" ]
     ] ],
+    [ "DoocsBackendImageRegisterAccessor.h", "_doocs_backend_image_register_accessor_8h.html", [
+      [ "DoocsBackendImageRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor" ],
+      [ "MappedDoocsImgIn", "struct_chimera_t_k_1_1_mapped_doocs_img_in.html", "struct_chimera_t_k_1_1_mapped_doocs_img_in" ]
+    ] ],
     [ "DoocsBackendIntRegisterAccessor.h", "_doocs_backend_int_register_accessor_8h.html", [
       [ "DoocsBackendIntRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor" ]
     ] ],
