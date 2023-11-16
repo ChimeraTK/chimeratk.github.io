@@ -200,6 +200,7 @@ var annotated_dup =
     [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ],
     [ "SomeGroup", "struct_some_group.html", "struct_some_group" ],
     [ "StatusGenerator", "struct_status_generator.html", "struct_status_generator" ],
+    [ "StatusWithMessageGenerator", "struct_status_with_message_generator.html", "struct_status_with_message_generator" ],
     [ "Test6A1DummyApplication", "struct_test6_a1_dummy_application.html", "struct_test6_a1_dummy_application" ],
     [ "Test6A1InitialValueEceptionDummy", "struct_test6_a1_initial_value_eception_dummy.html", "struct_test6_a1_initial_value_eception_dummy" ],
     [ "Test6A2DummyApplication", "struct_test6_a2_dummy_application.html", "struct_test6_a2_dummy_application" ],

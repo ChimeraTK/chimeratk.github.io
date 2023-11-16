@@ -9,6 +9,7 @@ var struct_chimera_t_k_1_1_status_aggregator =
     [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html#a09dc00d3a4f0ace9aa3d5e39e3612518", null ],
     [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html#a6d9c71ab121362d2780bca10948b9282", null ],
     [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html#a4724bf4cf902f052f972b98553501c36", null ],
+    [ "getDataValidity", "struct_chimera_t_k_1_1_status_aggregator.html#a9e67fdd12bf01f1db36818dc237e8ecd", null ],
     [ "getPriority", "struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128", null ],
     [ "mainLoop", "struct_chimera_t_k_1_1_status_aggregator.html#a49a9371926f9b187b0652438d43f0ef7", null ],
     [ "operator=", "struct_chimera_t_k_1_1_status_aggregator.html#a7ff5258a11dece9c6cf840d2a8353068", null ],

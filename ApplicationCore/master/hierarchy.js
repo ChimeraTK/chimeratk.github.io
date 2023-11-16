@@ -235,6 +235,7 @@ var hierarchy =
             [ "SetpointRamp", "class_setpoint_ramp.html", null ],
             [ "SimulationModule", "struct_simulation_module.html", null ],
             [ "StatusGenerator", "struct_status_generator.html", null ],
+            [ "StatusWithMessageGenerator", "struct_status_with_message_generator.html", null ],
             [ "TestApplication2::Module< ACCESSOR >", "struct_test_application2_1_1_module.html", null ],
             [ "TestApplication< T >::Module", "struct_test_application_1_1_module.html", null ],
             [ "TestApplication< T >::Name", "struct_test_application_1_1_name.html", null ],

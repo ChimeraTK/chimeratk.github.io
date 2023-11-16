@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('test_status_aggregator_8cc.html',''); 
 <div class="textblock"><code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_module_group_8h_source.html">ModuleGroup.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>&quot;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -110,6 +111,8 @@ $(document).ready(function(){initNavTree('test_status_aggregator_8cc.html',''); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_status_generator.html">StatusGenerator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_status_with_message_generator.html">StatusWithMessageGenerator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application.html">TestApplication&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +145,9 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a24c884888833ff767806404b0da45e75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_status_aggregator_8cc.html#a24c884888833ff767806404b0da45e75">BOOST_AUTO_TEST_CASE</a> (testSingleNoTags)</td></tr>
-<tr class="memdesc:a24c884888833ff767806404b0da45e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">&zwj;**********************************************************************************************************************&zwj;/  <a href="test_status_aggregator_8cc.html#a24c884888833ff767806404b0da45e75">More...</a><br /></td></tr>
 <tr class="separator:a24c884888833ff767806404b0da45e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb491cf971baae345688667b56abe5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_status_aggregator_8cc.html#a8eb491cf971baae345688667b56abe5f">BOOST_AUTO_TEST_CASE</a> (testDataValidity)</td></tr>
+<tr class="separator:a8eb491cf971baae345688667b56abe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7cf628398e9afad92738eb3d5fc656"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_status_aggregator_8cc.html#a3f7cf628398e9afad92738eb3d5fc656">BOOST_AUTO_TEST_CASE</a> (testPriorities)</td></tr>
 <tr class="separator:a3f7cf628398e9afad92738eb3d5fc656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa4501a6ef1542d2e69c7f612fb0f3c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_status_aggregator_8cc.html#afa4501a6ef1542d2e69c7f612fb0f3c4">BOOST_AUTO_TEST_CASE</a> (testTwoLevels)</td></tr>
@@ -167,7 +171,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00009">9</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00010">10</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
 
 </div>
 </div>
@@ -183,13 +187,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00010">10</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00011">11</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a8eb491cf971baae345688667b56abe5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb491cf971baae345688667b56abe5f">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testDataValidity&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00129">129</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_a8eb491cf971baae345688667b56abe5f_cgraph.svg" width="472" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a3f7cf628398e9afad92738eb3d5fc656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f7cf628398e9afad92738eb3d5fc656">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7cf628398e9afad92738eb3d5fc656">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,12 +236,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00118">118</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00171">171</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_a3f7cf628398e9afad92738eb3d5fc656_cgraph.svg" width="450" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -217,7 +249,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a24c884888833ff767806404b0da45e75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24c884888833ff767806404b0da45e75">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c884888833ff767806404b0da45e75">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,14 +264,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>&zwj;**********************************************************************************************************************&zwj;/ </p>
-
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00069">69</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00095">95</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_a24c884888833ff767806404b0da45e75_cgraph.svg" width="424" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -247,7 +277,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a18611a4e9871328c843dc1b4d1d2eef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18611a4e9871328c843dc1b4d1d2eef8">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18611a4e9871328c843dc1b4d1d2eef8">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,20 +292,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00379">379</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00432">432</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_a18611a4e9871328c843dc1b4d1d2eef8_cgraph.svg" width="424" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_a18611a4e9871328c843dc1b4d1d2eef8_cgraph.svg" width="448" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <a id="af5e427ae57eeb3d1316ff322cc56680d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e427ae57eeb3d1316ff322cc56680d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e427ae57eeb3d1316ff322cc56680d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,12 +320,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00306">306</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00359">359</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_af5e427ae57eeb3d1316ff322cc56680d_cgraph.svg" width="424" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -303,7 +333,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="afa4501a6ef1542d2e69c7f612fb0f3c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa4501a6ef1542d2e69c7f612fb0f3c4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4501a6ef1542d2e69c7f612fb0f3c4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,12 +350,12 @@ Functions</h2></td></tr>
 
 <p>&zwj;**********************************************************************************************************************&zwj;/ </p>
 
-<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00234">234</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00287">287</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="test_status_aggregator_8cc_afa4501a6ef1542d2e69c7f612fb0f3c4_cgraph.svg" width="450" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -338,7 +368,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_status_aggregator_8cc.html">testStatusAggregator.cc</a></li>
-    <li class="footer">Generated on Fri Oct 13 2023 03:55:50 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Nov 16 2023 04:54:03 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
