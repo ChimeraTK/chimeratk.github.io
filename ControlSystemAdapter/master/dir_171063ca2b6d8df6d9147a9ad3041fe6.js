@@ -12,6 +12,5 @@ var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
     [ "testUnidirectionalProcessArray.cpp", "test_unidirectional_process_array_8cpp.html", "test_unidirectional_process_array_8cpp" ],
     [ "testUnidirectionalProcessArrayNoWaitForNewData.cpp", "test_unidirectional_process_array_no_wait_for_new_data_8cpp.html", "test_unidirectional_process_array_no_wait_for_new_data_8cpp" ],
     [ "testUnified.cpp", "test_unified_8cpp.html", "test_unified_8cpp" ],
-    [ "testUnifiedTypeChangingDecorator.cpp", "test_unified_type_changing_decorator_8cpp.html", "test_unified_type_changing_decorator_8cpp" ],
     [ "toDouble.h", "to_double_8h.html", "to_double_8h" ]
 ];
