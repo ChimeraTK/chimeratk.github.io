@@ -481,7 +481,8 @@ var hierarchy =
       [ "ChimeraTK::Model::ContinueSearchDisjunctTrees", "struct_chimera_t_k_1_1_model_1_1_continue_search_disjunct_trees.html", null ],
       [ "ChimeraTK::Model::ReturnFirstHit", "struct_chimera_t_k_1_1_model_1_1_return_first_hit.html", [
         [ "ChimeraTK::Model::ReturnFirstHitWithValue< T >", "struct_chimera_t_k_1_1_model_1_1_return_first_hit_with_value.html", null ]
-      ] ]
+      ] ],
+      [ "ChimeraTK::Model::VisitOrder", "struct_chimera_t_k_1_1_model_1_1_visit_order.html", null ]
     ] ],
     [ "ChimeraTK::Model::SearchType", "struct_chimera_t_k_1_1_model_1_1_search_type.html", [
       [ "ChimeraTK::Model::AdjacentInSearch", "struct_chimera_t_k_1_1_model_1_1_adjacent_in_search.html", null ],

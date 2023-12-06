@@ -20,6 +20,7 @@ var namespace_chimera_t_k_1_1_model =
     [ "SearchOption", "struct_chimera_t_k_1_1_model_1_1_search_option.html", null ],
     [ "ContinueSearchDisjunctTrees", "struct_chimera_t_k_1_1_model_1_1_continue_search_disjunct_trees.html", null ],
     [ "ReturnFirstHit", "struct_chimera_t_k_1_1_model_1_1_return_first_hit.html", null ],
+    [ "VisitOrder", "struct_chimera_t_k_1_1_model_1_1_visit_order.html", "struct_chimera_t_k_1_1_model_1_1_visit_order" ],
     [ "ReturnFirstHitWithValue", "struct_chimera_t_k_1_1_model_1_1_return_first_hit_with_value.html", "struct_chimera_t_k_1_1_model_1_1_return_first_hit_with_value" ],
     [ "PropertyFilterTag", "struct_chimera_t_k_1_1_model_1_1_property_filter_tag.html", "struct_chimera_t_k_1_1_model_1_1_property_filter_tag" ],
     [ "AndSet", "struct_chimera_t_k_1_1_model_1_1_and_set.html", "struct_chimera_t_k_1_1_model_1_1_and_set" ],
