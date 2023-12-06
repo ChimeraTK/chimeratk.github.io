@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hexspinbox_2ecpp_314',['HexSpinBox.cpp',['../_hex_spin_box_8cpp.html',1,'']]],
-  ['hexspinbox_2eh_315',['HexSpinBox.h',['../_hex_spin_box_8h.html',1,'']]]
+  ['fix_2dlinter_2dfor_2dall_2epy_318',['fix-linter-for-all.py',['../fix-linter-for-all_8py.html',1,'']]]
 ];
