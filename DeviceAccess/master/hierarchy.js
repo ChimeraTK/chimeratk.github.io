@@ -55,6 +55,7 @@ var hierarchy =
     [ "ChimeraTK::BackendRegisterCatalogueImplIterator< BackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
+    [ "DecoratorBackend::BackendRegisterer", "class_decorator_backend_1_1_backend_registerer.html", null ],
     [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
     [ "DummyForCleanupCheck::BackendRegisterer", "struct_dummy_for_cleanup_check_1_1_backend_registerer.html", null ],
     [ "DummyForDoubleBuffering::BackendRegisterer", "struct_dummy_for_double_buffering_1_1_backend_registerer.html", null ],
@@ -183,6 +184,7 @@ var hierarchy =
     [ "ChimeraTK::proxies::DummyRegisterElement< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< rawUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< float >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
@@ -207,6 +209,7 @@ var hierarchy =
               [ "ChimeraTK::DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", [
                 [ "AnotherWorkingBackend", "struct_another_working_backend.html", null ],
                 [ "ChimeraTK::ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", [
+                  [ "DecoratorBackend", "class_decorator_backend.html", null ],
                   [ "DummyForDoubleBuffering", "struct_dummy_for_double_buffering.html", null ]
                 ] ],
                 [ "CustomBackend", "class_custom_backend.html", null ],
@@ -615,6 +618,15 @@ var hierarchy =
     [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue >", "struct_chimera_t_k_1_1_test_capabilities.html", null ],
     [ "TestLocker", "struct_test_locker.html", null ],
     [ "TestParameters", "struct_test_parameters.html", null ],
+    [ "TestRegister< T >", "struct_test_register.html", [
+      [ "TestRegisterCasted< T >", "struct_test_register_casted.html", null ],
+      [ "TestRegisterCastedAsync< T >", "struct_test_register_casted_async.html", [
+        [ "TestRegisterCastedAsyncRo< T >", "struct_test_register_casted_async_ro.html", null ]
+      ] ],
+      [ "TestRegisterRangeChecked< T >", "struct_test_register_range_checked.html", null ],
+      [ "TestRegisterRoCasted< T >", "struct_test_register_ro_casted.html", null ],
+      [ "TestRegisterRoRangeChecked< T >", "struct_test_register_ro_range_checked.html", null ]
+    ] ],
     [ "ChimeraTK::ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", null ],
     [ "ChimeraTK::TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", [
       [ "ChimeraTK::NDRegisterAccessorAbstractor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
