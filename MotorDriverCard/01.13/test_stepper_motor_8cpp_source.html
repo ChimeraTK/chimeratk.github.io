@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: tests/src/testStepperMotor.cpp Source File</title>
+<title>mtca4u-MotorDriverCard: tests/src/testStepperMotor.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">01.13.04</span>
    </div>
   </td>
  </tr>
@@ -757,7 +757,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;      BackendFactory::getInstance().createBackend(<span class="stringliteral">&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;</span>));</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  BOOST_ASSERT(md22_instance != NULL);</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <a class="code" href="classmtca4u_1_1_t_m_c429_output_word.html">TMC429OutputWord</a> vMaxRegister = readDFMCDummyMotor0VMaxRegister(md22_instance);</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  BOOST_CHECK(vMaxRegister.<a class="code" href="classmtca4u_1_1_t_m_c429_output_word.html#a0823b9291d84c90806b8111b24306b0e">getDATA</a>() == 1048);</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  BOOST_CHECK(vMaxRegister.getDATA() == 1048);</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160; </div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  <span class="comment">// teardown</span></div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  MotorDriverCardFactory::instance().setDummyMode(dummyModeStatus);</div>
@@ -813,7 +813,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      BackendFactory::getInstance().createBackend(<span class="stringliteral">&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;</span>));</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  BOOST_ASSERT(md22_instance != NULL);</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  <a class="code" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> stallGuard = readDFMCDummyMotor0CurrentScale(md22_instance);</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;  BOOST_CHECK(stallGuard.<a class="code" href="classmtca4u_1_1_stall_guard_control_data.html#afbca469bf2fb006c17541c042a6524b9">getCurrentScale</a>() == 2);</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;  BOOST_CHECK(stallGuard.getCurrentScale() == 2);</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;  <span class="comment">// teardown</span></div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;  MotorDriverCardFactory::instance().setDummyMode(dummyModeStatus);</div>
@@ -1157,9 +1157,9 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160; </div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;<a class="code" href="classmtca4u_1_1_t_m_c429_output_word.html">TMC429OutputWord</a> readDFMCDummyMotor0VMaxRegister(boost::shared_ptr&lt;DFMC_MD22Dummy&gt;&amp; dfmc_md22) {</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;  <a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html">TMC429InputWord</a> readVmaxRegister;</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;  readVmaxRegister.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#abea642deaf0f7812c97d12449edef424">setSMDA</a>(0);</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  readVmaxRegister.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a3ed1367fa4c8112a62401af64283d525">setIDX_JDX</a>(<a class="code" href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">tmc429::IDX_MAXIMUM_VELOCITY</a>);</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  readVmaxRegister.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a1bd921b7ddb5ac17b8c3620731acbec7">setRW</a>(<a class="code" href="namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4">tmc429::RW_READ</a>);</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;  readVmaxRegister.setSMDA(0);</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  readVmaxRegister.setIDX_JDX(<a class="code" href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">tmc429::IDX_MAXIMUM_VELOCITY</a>);</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  readVmaxRegister.setRW(<a class="code" href="namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4">tmc429::RW_READ</a>);</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_t_m_c429_output_word.html">TMC429OutputWord</a>(dfmc_md22-&gt;readTMC429Register(readVmaxRegister.<a class="code" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a>()));</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;}</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160; </div>
@@ -1199,7 +1199,6 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="ttc" id="aclass_test_unit_conveter_html_aabea81b4c71bcfd3afc3a3a1d161802c"><div class="ttname"><a href="class_test_unit_conveter.html#aabea81b4c71bcfd3afc3a3a1d161802c">TestUnitConveter::unitsToSteps</a></div><div class="ttdeci">virtual int unitsToSteps(float units)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_8cpp_source.html#l00031">testStepperMotor.cpp:31</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_multi_variable_word_html_a50597aba3dc5fe3c639006e0dfa17de2"><div class="ttname"><a href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">mtca4u::MultiVariableWord::getDataWord</a></div><div class="ttdeci">unsigned int getDataWord() const</div><div class="ttdoc">Get the encoded 32 bit data word.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8cc_source.html#l00013">MultiVariableWord.cc:13</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stall_guard_control_data_html"><div class="ttname"><a href="classmtca4u_1_1_stall_guard_control_data.html">mtca4u::StallGuardControlData</a></div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c260_words_8h_source.html#l00058">TMC260Words.h:58</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_stall_guard_control_data_html_afbca469bf2fb006c17541c042a6524b9"><div class="ttname"><a href="classmtca4u_1_1_stall_guard_control_data.html#afbca469bf2fb006c17541c042a6524b9">mtca4u::StallGuardControlData::getCurrentScale</a></div><div class="ttdeci">unsigned int getCurrentScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c260_words_8h_source.html#l00068">TMC260Words.h:68</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html">mtca4u::StepperMotor</a></div><div class="ttdef"><b>Definition:</b> <a href="mtca4u__steppermotor_2include_2_stepper_motor_8h_source.html#l00053">StepperMotor.h:53</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_a05863f084c584d47a9e74577bf39e256"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#a05863f084c584d47a9e74577bf39e256">mtca4u::StepperMotor::setUserCurrentLimit</a></div><div class="ttdeci">double setUserCurrentLimit(double currentInAmps)</div><div class="ttdoc">Sets the current the motor driver ic provies to the motor.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00246">StepperMotor.cc:246</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_a2e82b2e33c8b095cbc52a2c20d7c3935"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#a2e82b2e33c8b095cbc52a2c20d7c3935">mtca4u::StepperMotor::getMaxSpeedCapability</a></div><div class="ttdeci">double getMaxSpeedCapability()</div><div class="ttdoc">Returns the maximum speed the motor is capable of achieving.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00244">StepperMotor.cc:244</a></div></div>
@@ -1208,11 +1207,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_aa83d50ae7c6415a24ac4bb2fd51b0c30"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#aa83d50ae7c6415a24ac4bb2fd51b0c30">mtca4u::StepperMotor::setUserSpeedLimit</a></div><div class="ttdeci">double setUserSpeedLimit(double microStepsPerSec)</div><div class="ttdoc">Sets the maximum speed the motor may operate at.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00195">StepperMotor.cc:195</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_stepper_motor_html_addb61c4041e7b525efbbf74a5ba86a65"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor.html#addb61c4041e7b525efbbf74a5ba86a65">mtca4u::StepperMotor::getSafeCurrentLimit</a></div><div class="ttdeci">double getSafeCurrentLimit()</div><div class="ttdoc">Returns the maximum value of current that this motor can be driven saftely.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_8cc_source.html#l00252">StepperMotor.cc:252</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html">mtca4u::TMC429InputWord</a></div><div class="ttdoc">Structure of a generic single value register of the TMC429 chip.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00036">TMC429Words.h:36</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a1bd921b7ddb5ac17b8c3620731acbec7"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a1bd921b7ddb5ac17b8c3620731acbec7">mtca4u::TMC429InputWord::setRW</a></div><div class="ttdeci">void setRW(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00044">TMC429Words.h:44</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a3ed1367fa4c8112a62401af64283d525"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a3ed1367fa4c8112a62401af64283d525">mtca4u::TMC429InputWord::setIDX_JDX</a></div><div class="ttdeci">void setIDX_JDX(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00042">TMC429Words.h:42</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_abea642deaf0f7812c97d12449edef424"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#abea642deaf0f7812c97d12449edef424">mtca4u::TMC429InputWord::setSMDA</a></div><div class="ttdeci">void setSMDA(unsigned int word)</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00041">TMC429Words.h:41</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_output_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_output_word.html">mtca4u::TMC429OutputWord</a></div><div class="ttdoc">The readback register contains status information in the higher bits, which contain the SPI address i...</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00052">TMC429Words.h:52</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_output_word_html_a0823b9291d84c90806b8111b24306b0e"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_output_word.html#a0823b9291d84c90806b8111b24306b0e">mtca4u::TMC429OutputWord::getDATA</a></div><div class="ttdeci">unsigned int getDATA() const</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00073">TMC429Words.h:73</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_a3f5acff8ef84ca33e8cc1bafd0615de4"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4">mtca4u::tmc429::RW_READ</a></div><div class="ttdeci">uint32_t const RW_READ</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00041">TMC429Constants.h:41</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_abcdf1a5630d8fb46026262a3e806b611"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#abcdf1a5630d8fb46026262a3e806b611">mtca4u::tmc429::IDX_MAXIMUM_VELOCITY</a></div><div class="ttdeci">uint32_t const IDX_MAXIMUM_VELOCITY</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_constants_8h_source.html#l00026">TMC429Constants.h:26</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
@@ -1224,7 +1219,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_stepper_motor_8cpp.html">testStepperMotor.cpp</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:21 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 04:54:14 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

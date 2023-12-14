@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: backend/include/MultiVariableWord.h File Reference</title>
+<title>mtca4u-MotorDriverCard: backend/include/MultiVariableWord.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">01.13.04</span>
    </div>
   </td>
  </tr>
@@ -116,15 +116,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2f115a20a790b67afc39562931013ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multi_variable_word_8h.html#a2f115a20a790b67afc39562931013ca9">ADD_VARIABLE</a>(VAR_NAME,  FIRST_BIT,  LAST_BIT)</td></tr>
-<tr class="memdesc:a2f115a20a790b67afc39562931013ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ADD_VARIABLE macro allows to add a getter and a setter function for a variable with the correct input and output masks.  <a href="_multi_variable_word_8h.html#a2f115a20a790b67afc39562931013ca9">More...</a><br /></td></tr>
-<tr class="separator:a2f115a20a790b67afc39562931013ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea1b6a90d1240fbe79d09447ddb90db9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multi_variable_word_8h.html#aea1b6a90d1240fbe79d09447ddb90db9">INPUT_MASK</a>(FIRST_BIT,  LAST_BIT)&#160;&#160;&#160;static_cast&lt;unsigned int&gt;((1UL &lt;&lt; (LAST_BIT - FIRST_BIT + 1)) - 1)</td></tr>
 <tr class="memdesc:aea1b6a90d1240fbe79d09447ddb90db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an input mask from the position of the first and the last bit of the mask.  <a href="_multi_variable_word_8h.html#aea1b6a90d1240fbe79d09447ddb90db9">More...</a><br /></td></tr>
 <tr class="separator:aea1b6a90d1240fbe79d09447ddb90db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436b0310582c58e527d6622b1f62e9e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multi_variable_word_8h.html#a436b0310582c58e527d6622b1f62e9e1">OUTPUT_MASK</a>(FIRST_BIT,  LAST_BIT)&#160;&#160;&#160;  static_cast&lt;unsigned int&gt;(((1UL &lt;&lt; (LAST_BIT - FIRST_BIT + 1)) - 1) &lt;&lt; FIRST_BIT)</td></tr>
 <tr class="memdesc:a436b0310582c58e527d6622b1f62e9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an outpu mask from the position of the first and the last bit of the mask.  <a href="_multi_variable_word_8h.html#a436b0310582c58e527d6622b1f62e9e1">More...</a><br /></td></tr>
 <tr class="separator:a436b0310582c58e527d6622b1f62e9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f115a20a790b67afc39562931013ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multi_variable_word_8h.html#a2f115a20a790b67afc39562931013ca9">ADD_VARIABLE</a>(VAR_NAME,  FIRST_BIT,  LAST_BIT)</td></tr>
+<tr class="memdesc:a2f115a20a790b67afc39562931013ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ADD_VARIABLE macro allows to add a getter and a setter function for a variable with the correct input and output masks.  <a href="_multi_variable_word_8h.html#a2f115a20a790b67afc39562931013ca9">More...</a><br /></td></tr>
+<tr class="separator:a2f115a20a790b67afc39562931013ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2f115a20a790b67afc39562931013ca9"></a>
@@ -246,7 +246,7 @@ unsigned int getVoltage();</pre><p> including the implementation for a 4 bit wid
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_afc1e89bdcbaba0f1e323dc5f755439c.html">include</a></li><li class="navelem"><a class="el" href="_multi_variable_word_8h.html">MultiVariableWord.h</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:21 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 04:54:14 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

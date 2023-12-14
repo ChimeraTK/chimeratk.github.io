@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: backend/src/MotorDriverCardConfigXML.cc Source File</title>
+<title>mtca4u-MotorDriverCard: backend/src/MotorDriverCardConfigXML.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">01.13.04</span>
    </div>
   </td>
  </tr>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('_motor_driver_card_config_x_m_l_8cc_so
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classdetail_1_1_node_filler.html#a011765f04fe17ddf9cc5bd29c229f83a">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdetail_1_1_node_filler.html#a4471bf163940a36a2537a9f8f3e48bac">detail::NodeFiller::addParameter</a>(</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <span class="keyword">const</span>&amp; registerName, <a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html">mtca4u::TMC429InputWord</a> <span class="keyword">const</span>&amp; value, <a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html">mtca4u::TMC429InputWord</a> <span class="keyword">const</span>&amp; defaultValue) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  addParameter(registerName, value.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a8effcba57f53e3f477482f5324553331">getDATA</a>(), defaultValue.<a class="code" href="classmtca4u_1_1_t_m_c429_input_word.html#a8effcba57f53e3f477482f5324553331">getDATA</a>());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  addParameter(registerName, value.getDATA(), defaultValue.getDATA());</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classdetail_1_1_node_filler.html#a7c07845ae5191dc9f9f69cb1a2c7a00d">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdetail_1_1_node_filler.html#a4471bf163940a36a2537a9f8f3e48bac">detail::NodeFiller::addParameter</a>(</div>
@@ -455,7 +455,6 @@ $(document).ready(function(){initNavTree('_motor_driver_card_config_x_m_l_8cc_so
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c260_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c260_word.html">mtca4u::TMC260Word</a></div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c260_words_8h_source.html#l00009">TMC260Words.h:9</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c260_word_html_aa3129a919006fae30009a7eb86cbfd02"><div class="ttname"><a href="classmtca4u_1_1_t_m_c260_word.html#aa3129a919006fae30009a7eb86cbfd02">mtca4u::TMC260Word::getPayloadData</a></div><div class="ttdeci">virtual unsigned int getPayloadData() const =0</div></div>
 <div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html">mtca4u::TMC429InputWord</a></div><div class="ttdoc">Structure of a generic single value register of the TMC429 chip.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00036">TMC429Words.h:36</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_input_word_html_a8effcba57f53e3f477482f5324553331"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_input_word.html#a8effcba57f53e3f477482f5324553331">mtca4u::TMC429InputWord::getDATA</a></div><div class="ttdeci">unsigned int getDATA() const</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8h_source.html#l00045">TMC429Words.h:45</a></div></div>
 <div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_config_x_m_l_8cc_source.html#l00012">MotorDriverCardConfigXML.cc:12</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html_adb7b59afe39d3bfca787b59549fcb218"><div class="ttname"><a href="namespacemtca4u.html#adb7b59afe39d3bfca787b59549fcb218">mtca4u::controllerConfigFromXml</a></div><div class="ttdeci">MotorControlerConfig controllerConfigFromXml(const xmlpp::Node *rootNode, const std::string &amp;controllerId)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_config_x_m_l_8cc_source.html#l00166">MotorDriverCardConfigXML.cc:166</a></div></div>
@@ -498,7 +497,7 @@ $(document).ready(function(){initNavTree('_motor_driver_card_config_x_m_l_8cc_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_driver_card_config_x_m_l_8cc.html">MotorDriverCardConfigXML.cc</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:20 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 04:54:14 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

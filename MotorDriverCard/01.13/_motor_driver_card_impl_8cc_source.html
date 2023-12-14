@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: backend/src/MotorDriverCardImpl.cc Source File</title>
+<title>mtca4u-MotorDriverCard: backend/src/MotorDriverCardImpl.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">01.13.04</span>
    </div>
   </td>
  </tr>
@@ -88,177 +88,174 @@ $(document).ready(function(){initNavTree('_motor_driver_card_impl_8cc_source.htm
 </div><!--header-->
 <div class="contents">
 <a href="_motor_driver_card_impl_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cerrno&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_motor_controler_impl_8h.html">impl/MotorControlerImpl.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_motor_driver_card_impl_8h.html">impl/MotorDriverCardImpl.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemtca4u_1_1tmc429.html">mtca4u::tmc429</a>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_motor_controler_impl_8h.html">impl/MotorControlerImpl.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_motor_driver_card_impl_8h.html">impl/MotorDriverCardImpl.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemtca4u_1_1tmc429.html">mtca4u::tmc429</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/Device.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/Device.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_f_m_c___m_d22_constants_8h.html">DFMC_MD22Constants.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemtca4u_1_1dfmc__md22.html">mtca4u::dfmc_md22</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  MotorDriverCardImpl::MotorDriverCardImpl(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      std::string <span class="keyword">const</span>&amp; moduleName,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      MotorDriverCardConfig <span class="keyword">const</span>&amp; cardConfiguration)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  : _motorControlers(),               <span class="comment">// done later in the constructor body</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _device(device), _powerMonitor(), <span class="comment">// done later in the constructor body</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    _controlerSPI(),                  <span class="comment">// done later in the constructor body</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    _controlerStatusRegister(device-&gt;getScalarRegisterAccessor&lt;int32_t&gt;(</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        moduleName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a1c8eab0c7bc3c4c0e0b2ac4cf29647b2">CONTROLER_STATUS_BITS_ADDRESS_STRING</a>, 0, {ChimeraTK::AccessMode::raw})),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    _moduleName(moduleName) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    checkFirmwareVersion();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// the shared pointers can only be initialised inside the constructor because</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// execution order of the new operations is not defined in the contructor. As</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// any new can throw, it might be that the other object is allocated, but the</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// corresponding smart pointer is not initialised yet, which would lead to a</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// memory leak.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    _powerMonitor.reset(<span class="keyword">new</span> PowerMonitor);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    _controlerSPI.reset(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">new</span> TMC429SPI(device, moduleName, <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a7fe434d86ec063499e5cfec4da4bca8f">CONTROLER_SPI_WRITE_ADDRESS_STRING</a>, <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#adb16cc33ababc9fa77b0b9784ce701b7">CONTROLER_SPI_SYNC_ADDRESS_STRING</a>,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a21fff3316efe5552f1cb7a6e409bd3aa">CONTROLER_SPI_READBACK_ADDRESS_STRING</a>, cardConfiguration.controlerSpiWaitingTime));</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// initialise common registers</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    setCoverDatagram(cardConfiguration.coverDatagram);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    setCoverPositionAndLength(cardConfiguration.coverPositionAndLength);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    setDatagramHighWord(cardConfiguration.datagramHighWord);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    setDatagramLowWord(cardConfiguration.datagramLowWord);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    setInterfaceConfiguration(cardConfiguration.interfaceConfiguration);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    setPositionCompareInterruptData(cardConfiguration.positionCompareInterruptData);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    setPositionCompareWord(cardConfiguration.positionCompareWord);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    setStepperMotorGlobalParameters(cardConfiguration.stepperMotorGlobalParameters);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// initialise motors</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    _motorControlers.resize(<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a733d397149386097fe3f5b4c7e3fcb59">N_MOTORS_MAX</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; _motorControlers.size(); ++i) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      _motorControlers[i].reset(<span class="keyword">new</span> MotorControlerImpl(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          i, device, moduleName, _controlerSPI, cardConfiguration.motorControlerConfigurations[i]));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a3e636f65b66fc7fe4009b5e16f98410b">   56</a></span>&#160;  boost::shared_ptr&lt;MotorControler&gt; MotorDriverCardImpl::getMotorControler(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> motorControlerID) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> _motorControlers.at(motorControlerID);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">catch</span>(std::out_of_range&amp; e) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::stringstream errorMessage;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      errorMessage &lt;&lt; <span class="stringliteral">&quot;motorControlerID &quot;</span> &lt;&lt; motorControlerID &lt;&lt; <span class="stringliteral">&quot; is too large. &quot;</span> &lt;&lt; e.what();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(errorMessage.str());</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_f_m_c___m_d22_constants_8h.html">DFMC_MD22Constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacemtca4u_1_1dfmc__md22.html">mtca4u::dfmc_md22</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  MotorDriverCardImpl::MotorDriverCardImpl(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      std::string <span class="keyword">const</span>&amp; moduleName,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      MotorDriverCardConfig <span class="keyword">const</span>&amp; cardConfiguration)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  : _motorControlers(),               <span class="comment">// done later in the constructor body</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    _device(device), _powerMonitor(), <span class="comment">// done later in the constructor body</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    _controlerSPI(),                  <span class="comment">// done later in the constructor body</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _controlerStatusRegister(device-&gt;getScalarRegisterAccessor&lt;int32_t&gt;(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        moduleName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a1c8eab0c7bc3c4c0e0b2ac4cf29647b2">CONTROLER_STATUS_BITS_ADDRESS_STRING</a>, 0, {ChimeraTK::AccessMode::raw})),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    _moduleName(moduleName) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    checkFirmwareVersion();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// the shared pointers can only be initialised inside the constructor because</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// execution order of the new operations is not defined in the contructor. As</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// any new can throw, it might be that the other object is allocated, but the</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// corresponding smart pointer is not initialised yet, which would lead to a</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// memory leak.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    _powerMonitor.reset(<span class="keyword">new</span> PowerMonitor);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    _controlerSPI.reset(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">new</span> TMC429SPI(device, moduleName, <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a7fe434d86ec063499e5cfec4da4bca8f">CONTROLER_SPI_WRITE_ADDRESS_STRING</a>, <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#adb16cc33ababc9fa77b0b9784ce701b7">CONTROLER_SPI_SYNC_ADDRESS_STRING</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a21fff3316efe5552f1cb7a6e409bd3aa">CONTROLER_SPI_READBACK_ADDRESS_STRING</a>, cardConfiguration.controlerSpiWaitingTime));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// initialise common registers</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    setCoverDatagram(cardConfiguration.coverDatagram);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    setCoverPositionAndLength(cardConfiguration.coverPositionAndLength);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    setDatagramHighWord(cardConfiguration.datagramHighWord);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    setDatagramLowWord(cardConfiguration.datagramLowWord);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    setInterfaceConfiguration(cardConfiguration.interfaceConfiguration);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    setPositionCompareInterruptData(cardConfiguration.positionCompareInterruptData);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    setPositionCompareWord(cardConfiguration.positionCompareWord);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    setStepperMotorGlobalParameters(cardConfiguration.stepperMotorGlobalParameters);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// initialise motors</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    _motorControlers.resize(<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a733d397149386097fe3f5b4c7e3fcb59">N_MOTORS_MAX</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; _motorControlers.size(); ++i) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      _motorControlers[i].reset(<span class="keyword">new</span> MotorControlerImpl(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          i, device, moduleName, _controlerSPI, cardConfiguration.motorControlerConfigurations[i]));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a3e636f65b66fc7fe4009b5e16f98410b">   54</a></span>&#160;  boost::shared_ptr&lt;MotorControler&gt; MotorDriverCardImpl::getMotorControler(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> motorControlerID) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> _motorControlers.at(motorControlerID);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">catch</span>(std::out_of_range&amp; e) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::stringstream errorMessage;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      errorMessage &lt;&lt; <span class="stringliteral">&quot;motorControlerID &quot;</span> &lt;&lt; motorControlerID &lt;&lt; <span class="stringliteral">&quot; is too large. &quot;</span> &lt;&lt; e.what();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(errorMessage.str());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#abf302d9b18300047cc301b6b560b5f2c">   65</a></span>&#160;  <a class="code" href="classmtca4u_1_1_power_monitor.html">PowerMonitor</a>&amp; MotorDriverCardImpl::getPowerMonitor() { <span class="keywordflow">return</span> *_powerMonitor; }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#abf302d9b18300047cc301b6b560b5f2c">   67</a></span>&#160;  <a class="code" href="classmtca4u_1_1_power_monitor.html">PowerMonitor</a>&amp; MotorDriverCardImpl::getPowerMonitor() { <span class="keywordflow">return</span> *_powerMonitor; }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a60872c563bc90d5d4a49af86769d8d52">   69</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getControlerChipVersion() {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a3b4735303d21aba36858adc71a33f727">JDX_CHIP_VERSION</a>).getDATA();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6cec11354370ec32a851d432d93081da">   73</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setDatagramLowWord(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> datagramLowWord) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a977d66fd9642396987de2bbd58c167cc">JDX_DATAGRAM_LOW_WORD</a>, datagramLowWord);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ad5cc90e6cfdcf5e38af2004b425a43e0">   77</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getDatagramLowWord() {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a977d66fd9642396987de2bbd58c167cc">JDX_DATAGRAM_LOW_WORD</a>).getDATA();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#af1c1d9ee6d7056c955e1ad1a3f0b3d3c">   81</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setDatagramHighWord(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> datagramHighWord) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a2cb167bf676fdc56a6e16512e88e6e8f">JDX_DATAGRAM_HIGH_WORD</a>, datagramHighWord);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ab291eafb489899495171d24f520ed796">   85</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getDatagramHighWord() {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a2cb167bf676fdc56a6e16512e88e6e8f">JDX_DATAGRAM_HIGH_WORD</a>).getDATA();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6b297fa33a4d41fcee48846cee53ab66">   89</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setCoverPositionAndLength(<a class="code" href="classmtca4u_1_1_cover_position_and_length.html">CoverPositionAndLength</a> <span class="keyword">const</span>&amp; coverPositionAndLength) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    _controlerSPI-&gt;write(coverPositionAndLength);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ac7545c6ebd8f9c01c0fea2595fa6060b">   93</a></span>&#160;  <a class="code" href="classmtca4u_1_1_cover_position_and_length.html">CoverPositionAndLength</a> MotorDriverCardImpl::getCoverPositionAndLength() {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_cover_position_and_length.html">CoverPositionAndLength</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a769ff2d8c089eea9bb6675377707d8d9">JDX_COVER_POSITION_AND_LENGTH</a>).getDATA());</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ae0ffbb6aa080cb61f3f83ad6706504f7">   97</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setCoverDatagram(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> coverDatagram) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a30117609018c3407fb9ad48dcd42feb4">JDX_COVER_DATAGRAM</a>, coverDatagram);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ab30bfdfdda04bb5d245377afd6a60d8b">  101</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getCoverDatagram() {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a30117609018c3407fb9ad48dcd42feb4">JDX_COVER_DATAGRAM</a>).getDATA();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6540ca842f29483937474f03b9325310">  105</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setStepperMotorGlobalParameters(</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_global_parameters.html">StepperMotorGlobalParameters</a> <span class="keyword">const</span>&amp; stepperMotorGlobalParameters) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    _controlerSPI-&gt;write(stepperMotorGlobalParameters);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a954fadf8302f34c976419832f27d728c">  110</a></span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_global_parameters.html">StepperMotorGlobalParameters</a> MotorDriverCardImpl::getStepperMotorGlobalParameters() {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_stepper_motor_global_parameters.html">StepperMotorGlobalParameters</a>(</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a85a1a935b8566d1e626db78c1bd5be36">JDX_STEPPER_MOTOR_GLOBAL_PARAMETERS</a>).getDATA());</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a9013d5dac6dd21d457bb789e6140bca7">  115</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setInterfaceConfiguration(<a class="code" href="classmtca4u_1_1_interface_configuration.html">InterfaceConfiguration</a> <span class="keyword">const</span>&amp; interfaceConfiguration) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    _controlerSPI-&gt;write(interfaceConfiguration);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a8e80032903ea61df95b6d2aab68e5abb">  119</a></span>&#160;  <a class="code" href="classmtca4u_1_1_interface_configuration.html">InterfaceConfiguration</a> MotorDriverCardImpl::getInterfaceConfiguration() {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_interface_configuration.html">InterfaceConfiguration</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a510dd541eb7d2ab98d90a3f7e11ed98e">JDX_INTERFACE_CONFIGURATION</a>).getDATA());</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#aaa91364a85e5b41d3f5a81d4f842d2ef">  123</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setPositionCompareWord(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positionCompareWord) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#ad3bac4d1ab8b0adc6a1c2d304869221d">JDX_POSITION_COMPARE</a>, positionCompareWord);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a4c226dba5615a9ede055672c55c2533c">  127</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getPositionCompareWord() {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#ad3bac4d1ab8b0adc6a1c2d304869221d">JDX_POSITION_COMPARE</a>).getDATA();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a23caac7f04a28b8fefd76bb2e903688b">  131</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setPositionCompareInterruptData(</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="classmtca4u_1_1_position_compare_interrupt_data.html">PositionCompareInterruptData</a> <span class="keyword">const</span>&amp; positionCompareInterruptData) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;write(positionCompareInterruptData);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ab49769b662601fe1bbc42f2a76bfdbdd">  136</a></span>&#160;  <a class="code" href="classmtca4u_1_1_position_compare_interrupt_data.html">PositionCompareInterruptData</a> MotorDriverCardImpl::getPositionCompareInterruptData() {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_position_compare_interrupt_data.html">PositionCompareInterruptData</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a9c3613bb1621a450a6ba546b027b277c">JDX_POSITION_COMPARE_INTERRUPT</a>).getDATA());</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a60872c563bc90d5d4a49af86769d8d52">   67</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getControlerChipVersion() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a3b4735303d21aba36858adc71a33f727">JDX_CHIP_VERSION</a>).getDATA();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6cec11354370ec32a851d432d93081da">   71</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setDatagramLowWord(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> datagramLowWord) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a977d66fd9642396987de2bbd58c167cc">JDX_DATAGRAM_LOW_WORD</a>, datagramLowWord);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ad5cc90e6cfdcf5e38af2004b425a43e0">   75</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getDatagramLowWord() {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a977d66fd9642396987de2bbd58c167cc">JDX_DATAGRAM_LOW_WORD</a>).getDATA();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#af1c1d9ee6d7056c955e1ad1a3f0b3d3c">   79</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setDatagramHighWord(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> datagramHighWord) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a2cb167bf676fdc56a6e16512e88e6e8f">JDX_DATAGRAM_HIGH_WORD</a>, datagramHighWord);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ab291eafb489899495171d24f520ed796">   83</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getDatagramHighWord() {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a2cb167bf676fdc56a6e16512e88e6e8f">JDX_DATAGRAM_HIGH_WORD</a>).getDATA();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6b297fa33a4d41fcee48846cee53ab66">   87</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setCoverPositionAndLength(<a class="code" href="classmtca4u_1_1_cover_position_and_length.html">CoverPositionAndLength</a> <span class="keyword">const</span>&amp; coverPositionAndLength) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    _controlerSPI-&gt;write(coverPositionAndLength);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ac7545c6ebd8f9c01c0fea2595fa6060b">   91</a></span>&#160;  <a class="code" href="classmtca4u_1_1_cover_position_and_length.html">CoverPositionAndLength</a> MotorDriverCardImpl::getCoverPositionAndLength() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_cover_position_and_length.html">CoverPositionAndLength</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a769ff2d8c089eea9bb6675377707d8d9">JDX_COVER_POSITION_AND_LENGTH</a>).getDATA());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ae0ffbb6aa080cb61f3f83ad6706504f7">   95</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setCoverDatagram(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> coverDatagram) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a30117609018c3407fb9ad48dcd42feb4">JDX_COVER_DATAGRAM</a>, coverDatagram);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ab30bfdfdda04bb5d245377afd6a60d8b">   99</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getCoverDatagram() {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a30117609018c3407fb9ad48dcd42feb4">JDX_COVER_DATAGRAM</a>).getDATA();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6540ca842f29483937474f03b9325310">  103</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setStepperMotorGlobalParameters(</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classmtca4u_1_1_stepper_motor_global_parameters.html">StepperMotorGlobalParameters</a> <span class="keyword">const</span>&amp; stepperMotorGlobalParameters) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    _controlerSPI-&gt;write(stepperMotorGlobalParameters);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a954fadf8302f34c976419832f27d728c">  108</a></span>&#160;  <a class="code" href="classmtca4u_1_1_stepper_motor_global_parameters.html">StepperMotorGlobalParameters</a> MotorDriverCardImpl::getStepperMotorGlobalParameters() {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_stepper_motor_global_parameters.html">StepperMotorGlobalParameters</a>(</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a85a1a935b8566d1e626db78c1bd5be36">JDX_STEPPER_MOTOR_GLOBAL_PARAMETERS</a>).getDATA());</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a9013d5dac6dd21d457bb789e6140bca7">  113</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setInterfaceConfiguration(<a class="code" href="classmtca4u_1_1_interface_configuration.html">InterfaceConfiguration</a> <span class="keyword">const</span>&amp; interfaceConfiguration) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    _controlerSPI-&gt;write(interfaceConfiguration);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a8e80032903ea61df95b6d2aab68e5abb">  117</a></span>&#160;  <a class="code" href="classmtca4u_1_1_interface_configuration.html">InterfaceConfiguration</a> MotorDriverCardImpl::getInterfaceConfiguration() {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_interface_configuration.html">InterfaceConfiguration</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a510dd541eb7d2ab98d90a3f7e11ed98e">JDX_INTERFACE_CONFIGURATION</a>).getDATA());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#aaa91364a85e5b41d3f5a81d4f842d2ef">  121</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setPositionCompareWord(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positionCompareWord) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#ad3bac4d1ab8b0adc6a1c2d304869221d">JDX_POSITION_COMPARE</a>, positionCompareWord);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a4c226dba5615a9ede055672c55c2533c">  125</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorDriverCardImpl::getPositionCompareWord() {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#ad3bac4d1ab8b0adc6a1c2d304869221d">JDX_POSITION_COMPARE</a>).getDATA();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a23caac7f04a28b8fefd76bb2e903688b">  129</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::setPositionCompareInterruptData(</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="classmtca4u_1_1_position_compare_interrupt_data.html">PositionCompareInterruptData</a> <span class="keyword">const</span>&amp; positionCompareInterruptData) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> _controlerSPI-&gt;write(positionCompareInterruptData);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#ab49769b662601fe1bbc42f2a76bfdbdd">  134</a></span>&#160;  <a class="code" href="classmtca4u_1_1_position_compare_interrupt_data.html">PositionCompareInterruptData</a> MotorDriverCardImpl::getPositionCompareInterruptData() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_position_compare_interrupt_data.html">PositionCompareInterruptData</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#a9c3613bb1621a450a6ba546b027b277c">JDX_POSITION_COMPARE_INTERRUPT</a>).getDATA());</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a5a62065922bd075d6293cf8b100cef89">  138</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::powerDown() { _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#afb918df0b670a8b2258a26ae09e43715">JDX_POWER_DOWN</a>, 1); }</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a5a62065922bd075d6293cf8b100cef89">  140</a></span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::powerDown() { _controlerSPI-&gt;write(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#afb918df0b670a8b2258a26ae09e43715">JDX_POWER_DOWN</a>, 1); }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6df2489ee880f5e701073f987518d96c">  142</a></span>&#160;  <a class="code" href="classmtca4u_1_1_reference_switch_data.html">ReferenceSwitchData</a> MotorDriverCardImpl::getReferenceSwitchData() {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_reference_switch_data.html">ReferenceSwitchData</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#aa0f36e0cb0bcd7c5a979116505b2c394">JDX_REFERENCE_SWITCH</a>).getDATA());</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a636b81e467889b20b23dffefcf3ea1da">  146</a></span>&#160;  <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a> MotorDriverCardImpl::getStatusWord() {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    _controlerStatusRegister.read();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(_controlerStatusRegister);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::checkFirmwareVersion() {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; firmwareVersion =</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        _device-&gt;getScalarRegisterAccessor&lt;int32_t&gt;(_moduleName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a06eaf72becf3309d9789a5550745c80e">PROJECT_VERSION_ADDRESS_STRING</a>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    firmwareVersion.read();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// only allow firmware versions with the same major number</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    uint32_t maxFirmwareVersion = (<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a> &amp; 0xFF000000) | 0x00FFFFFF;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">// check the version</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span>((<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(firmwareVersion) &lt; <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a>)) ||</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(firmwareVersion) &gt; maxFirmwareVersion)) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      std::stringstream errorMessage;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      errorMessage &lt;&lt; <span class="stringliteral">&quot;MotorDriverCardImpl detected wrong firmware version. &quot;</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;Current firmware is 0x&quot;</span> &lt;&lt; std::hex &lt;&lt; firmwareVersion &lt;&lt; <span class="stringliteral">&quot;, minumum required version is 0x&quot;</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                   &lt;&lt; <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a> &lt;&lt; <span class="stringliteral">&quot;, maximum allowed version is 0x&quot;</span> &lt;&lt; maxFirmwareVersion &lt;&lt; std::dec</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      std::cerr &lt;&lt; errorMessage.str() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(errorMessage.str());</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a6df2489ee880f5e701073f987518d96c">  140</a></span>&#160;  <a class="code" href="classmtca4u_1_1_reference_switch_data.html">ReferenceSwitchData</a> MotorDriverCardImpl::getReferenceSwitchData() {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_reference_switch_data.html">ReferenceSwitchData</a>(_controlerSPI-&gt;read(<a class="code" href="namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d">SMDA_COMMON</a>, <a class="code" href="namespacemtca4u_1_1tmc429.html#aa0f36e0cb0bcd7c5a979116505b2c394">JDX_REFERENCE_SWITCH</a>).getDATA());</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_impl.html#a636b81e467889b20b23dffefcf3ea1da">  144</a></span>&#160;  <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a> MotorDriverCardImpl::getStatusWord() {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    _controlerStatusRegister.read();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html">TMC429StatusWord</a>(_controlerStatusRegister);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span> MotorDriverCardImpl::checkFirmwareVersion() {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; firmwareVersion =</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        _device-&gt;getScalarRegisterAccessor&lt;int32_t&gt;(_moduleName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a06eaf72becf3309d9789a5550745c80e">PROJECT_VERSION_ADDRESS_STRING</a>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    firmwareVersion.read();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// only allow firmware versions with the same major number</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    uint32_t maxFirmwareVersion = (<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a> &amp; 0xFF000000) | 0x00FFFFFF;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// check the version</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span>((<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(firmwareVersion) &lt; <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a>)) ||</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(firmwareVersion) &gt; maxFirmwareVersion)) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      std::stringstream errorMessage;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      errorMessage &lt;&lt; <span class="stringliteral">&quot;MotorDriverCardImpl detected wrong firmware version. &quot;</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;Current firmware is 0x&quot;</span> &lt;&lt; std::hex &lt;&lt; firmwareVersion &lt;&lt; <span class="stringliteral">&quot;, minumum required version is 0x&quot;</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                   &lt;&lt; <a class="code" href="namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96">MINIMAL_FIRMWARE_VERSION</a> &lt;&lt; <span class="stringliteral">&quot;, maximum allowed version is 0x&quot;</span> &lt;&lt; maxFirmwareVersion &lt;&lt; std::dec</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::runtime_error(errorMessage.str());</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
 <div class="ttc" id="a_d_f_m_c___m_d22_constants_8h_html"><div class="ttname"><a href="_d_f_m_c___m_d22_constants_8h.html">DFMC_MD22Constants.h</a></div></div>
 <div class="ttc" id="a_motor_controler_impl_8h_html"><div class="ttname"><a href="_motor_controler_impl_8h.html">MotorControlerImpl.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_impl_8h_html"><div class="ttname"><a href="_motor_driver_card_impl_8h.html">MotorDriverCardImpl.h</a></div></div>
@@ -297,7 +294,7 @@ $(document).ready(function(){initNavTree('_motor_driver_card_impl_8cc_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_driver_card_impl_8cc.html">MotorDriverCardImpl.cc</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:20 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 04:54:14 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

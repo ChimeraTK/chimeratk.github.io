@@ -1,8 +1,8 @@
 var _stepper_motor_util_8h =
 [
-    [ "ScalingUnitsConverter", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter.html", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter" ],
     [ "UnitsConverter", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter.html", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter" ],
     [ "UnitsConverterTrivia", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter_trivia.html", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter_trivia" ],
+    [ "ScalingUnitsConverter", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter.html", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter" ],
     [ "EncoderStepsConverter", "_stepper_motor_util_8h.html#ad379106caa37d053c109a027f5857e6a", null ],
     [ "EncoderStepsConverterTrivia", "_stepper_motor_util_8h.html#a34cd5f82c4d0d7da4e59ceb0f15a32c9", null ],
     [ "MotorStepsConverter", "_stepper_motor_util_8h.html#a127e10207b409b6bcb30e9c2fb63dec7", null ],
@@ -31,5 +31,8 @@ var _stepper_motor_util_8h =
     [ "StepperMotorType", "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85", [
       [ "BASIC", "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85ae4ac03f6c9f00665644e868dd1fb9f1e", null ],
       [ "LINEAR", "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85aaac544aacc3615aada24897a215f5046", null ]
-    ] ]
+    ] ],
+    [ "checkIfOverflow", "_stepper_motor_util_8h.html#af4f7dbcf12445ab456e699263e7486a8", null ],
+    [ "toString", "_stepper_motor_util_8h.html#a8ce53003e1acb01d3914279667269967", null ],
+    [ "toString", "_stepper_motor_util_8h.html#a4be6cdb83687784f77c3712fa7758397", null ]
 ];

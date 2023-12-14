@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DFMC-MD22 Motor Controller: mtca4u::MotorControlerImpl Class Reference</title>
+<title>mtca4u-MotorDriverCard: mtca4u::MotorControlerImpl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DFMC-MD22 Motor Controller
-   &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
+   <div id="projectname">mtca4u-MotorDriverCard
+   &#160;<span id="projectnumber">01.13.04</span>
    </div>
   </td>
  </tr>
@@ -111,194 +111,195 @@ $(document).ready(function(){initNavTree('classmtca4u_1_1_motor_controler_impl.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d538f11433877964a039ee15d2d58ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2d538f11433877964a039ee15d2d58ec">MotorControlerImpl</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
-<tr class="memdesc:a2d538f11433877964a039ee15d2d58ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-copyable.  <a href="classmtca4u_1_1_motor_controler_impl.html#a2d538f11433877964a039ee15d2d58ec">More...</a><br /></td></tr>
-<tr class="separator:a2d538f11433877964a039ee15d2d58ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ff28a665092e8c601cd5d0c2df69c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af9ff28a665092e8c601cd5d0c2df69c3">MotorControlerImpl</a> (unsigned int ID, boost::shared_ptr&lt; ChimeraTK::Device &gt; const &amp;device, std::string const &amp;moduleName, boost::shared_ptr&lt; <a class="el" href="classmtca4u_1_1_t_m_c429_s_p_i.html">TMC429SPI</a> &gt; const &amp;controlerSPI, <a class="el" href="structmtca4u_1_1_motor_controler_config.html">MotorControlerConfig</a> const &amp;motorControlerConfig)</td></tr>
 <tr class="memdesc:af9ff28a665092e8c601cd5d0c2df69c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor gets references shared pointers which it copies internally, so the object stays valid even if the original shared pointer goes out of scope.  <a href="classmtca4u_1_1_motor_controler_impl.html#af9ff28a665092e8c601cd5d0c2df69c3">More...</a><br /></td></tr>
 <tr class="separator:af9ff28a665092e8c601cd5d0c2df69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1654b5295f6b57d0f0dc959e717b1fe6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1654b5295f6b57d0f0dc959e717b1fe6">enableFullStepping</a> (bool enable=true)</td></tr>
-<tr class="separator:a1654b5295f6b57d0f0dc959e717b1fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43b2024f352bd05fb923493b2edc4520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a43b2024f352bd05fb923493b2edc4520">getAccelerationThresholdData</a> ()</td></tr>
-<tr class="separator:a43b2024f352bd05fb923493b2edc4520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244f4f9f4efa654708f67a13d57c38b9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9">getActualAcceleration</a> ()</td></tr>
-<tr class="memdesc:a244f4f9f4efa654708f67a13d57c38b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actual acceleration in steps per square FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9">More...</a><br /></td></tr>
-<tr class="separator:a244f4f9f4efa654708f67a13d57c38b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d538f11433877964a039ee15d2d58ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2d538f11433877964a039ee15d2d58ec">MotorControlerImpl</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
+<tr class="memdesc:a2d538f11433877964a039ee15d2d58ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-copyable.  <a href="classmtca4u_1_1_motor_controler_impl.html#a2d538f11433877964a039ee15d2d58ec">More...</a><br /></td></tr>
+<tr class="separator:a2d538f11433877964a039ee15d2d58ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f30275325d1f2e14b12af8a792220a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a51f30275325d1f2e14b12af8a792220a">operator=</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
+<tr class="memdesc:a51f30275325d1f2e14b12af8a792220a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-assignable.  <a href="classmtca4u_1_1_motor_controler_impl.html#a51f30275325d1f2e14b12af8a792220a">More...</a><br /></td></tr>
+<tr class="separator:a51f30275325d1f2e14b12af8a792220a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e3526d99e4b63beefc08e415cf389f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab0e3526d99e4b63beefc08e415cf389f">getID</a> ()</td></tr>
+<tr class="memdesc:ab0e3526d99e4b63beefc08e415cf389f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the motor controler on the FMC board (0 or 1).  <a href="classmtca4u_1_1_motor_controler_impl.html#ab0e3526d99e4b63beefc08e415cf389f">More...</a><br /></td></tr>
+<tr class="separator:ab0e3526d99e4b63beefc08e415cf389f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adacb4e7617913538c4a53a01b868bca7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#adacb4e7617913538c4a53a01b868bca7">getActualPosition</a> ()</td></tr>
 <tr class="memdesc:adacb4e7617913538c4a53a01b868bca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actual position in steps.  <a href="classmtca4u_1_1_motor_controler_impl.html#adacb4e7617913538c4a53a01b868bca7">More...</a><br /></td></tr>
 <tr class="separator:adacb4e7617913538c4a53a01b868bca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8e18aa5cec73c4b8fc52e61d153dbf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad8e18aa5cec73c4b8fc52e61d153dbf7">getActualVelocity</a> ()</td></tr>
 <tr class="memdesc:ad8e18aa5cec73c4b8fc52e61d153dbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actual velocity in steps per FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#ad8e18aa5cec73c4b8fc52e61d153dbf7">More...</a><br /></td></tr>
 <tr class="separator:ad8e18aa5cec73c4b8fc52e61d153dbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cef6d6d198748777f370183ce7de8fb"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5cef6d6d198748777f370183ce7de8fb">getCalibrationTime</a> ()</td></tr>
-<tr class="separator:a5cef6d6d198748777f370183ce7de8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12c5b32854a26f09e930e44ed2e63359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a12c5b32854a26f09e930e44ed2e63359">getChopperControlData</a> () const</td></tr>
-<tr class="separator:a12c5b32854a26f09e930e44ed2e63359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2b99025244a65a2f75ad1190f359ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#afd2b99025244a65a2f75ad1190f359ea">getCoolStepControlData</a> () const</td></tr>
-<tr class="separator:afd2b99025244a65a2f75ad1190f359ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213d5c928190678e61704736e6bc3eae"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a213d5c928190678e61704736e6bc3eae">getCoolStepValue</a> ()</td></tr>
-<tr class="memdesc:a213d5c928190678e61704736e6bc3eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CoolStepValue (in units?, what does it mean? Expert?)  <a href="classmtca4u_1_1_motor_controler_impl.html#a213d5c928190678e61704736e6bc3eae">More...</a><br /></td></tr>
-<tr class="separator:a213d5c928190678e61704736e6bc3eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae321b6000625508c13e2198c2d34f534"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae321b6000625508c13e2198c2d34f534">getDecoderPosition</a> ()</td></tr>
-<tr class="memdesc:ae321b6000625508c13e2198c2d34f534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the decoder position (which units?)  <a href="classmtca4u_1_1_motor_controler_impl.html#ae321b6000625508c13e2198c2d34f534">More...</a><br /></td></tr>
-<tr class="separator:ae321b6000625508c13e2198c2d34f534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accfa75b09957371c76729c2abdafa8e5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#accfa75b09957371c76729c2abdafa8e5">getDecoderReadoutMode</a> ()</td></tr>
-<tr class="memdesc:accfa75b09957371c76729c2abdafa8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the decoder readout mode.  <a href="classmtca4u_1_1_motor_controler_impl.html#accfa75b09957371c76729c2abdafa8e5">More...</a><br /></td></tr>
-<tr class="separator:accfa75b09957371c76729c2abdafa8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53395370dac590ca1b4a735260477c43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a53395370dac590ca1b4a735260477c43">getDividersAndMicroStepResolutionData</a> ()</td></tr>
-<tr class="separator:a53395370dac590ca1b4a735260477c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48b5d23021f7c8a611833a4907fe259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad48b5d23021f7c8a611833a4907fe259">getDriverConfigData</a> () const</td></tr>
-<tr class="separator:ad48b5d23021f7c8a611833a4907fe259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1b84ad7ef78abef5654fe59754dbc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aad1b84ad7ef78abef5654fe59754dbc9">getDriverControlData</a> () const</td></tr>
-<tr class="separator:aad1b84ad7ef78abef5654fe59754dbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e3526d99e4b63beefc08e415cf389f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab0e3526d99e4b63beefc08e415cf389f">getID</a> ()</td></tr>
-<tr class="memdesc:ab0e3526d99e4b63beefc08e415cf389f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the motor controler on the FMC board (0 or 1).  <a href="classmtca4u_1_1_motor_controler_impl.html#ab0e3526d99e4b63beefc08e415cf389f">More...</a><br /></td></tr>
-<tr class="separator:ab0e3526d99e4b63beefc08e415cf389f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49293d9f562e68db2570854ff9d9db81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a49293d9f562e68db2570854ff9d9db81">getInterruptData</a> ()</td></tr>
-<tr class="separator:a49293d9f562e68db2570854ff9d9db81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a567368a21acc304efdc6d8ede5fb1928"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a567368a21acc304efdc6d8ede5fb1928">getMaxCurrentLimit</a> ()</td></tr>
-<tr class="separator:a567368a21acc304efdc6d8ede5fb1928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22025ce3eeb1ce0747f2d04195cb3f2d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a22025ce3eeb1ce0747f2d04195cb3f2d">getMaximumAcceleration</a> ()</td></tr>
-<tr class="memdesc:a22025ce3eeb1ce0747f2d04195cb3f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximim acceleration in FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#a22025ce3eeb1ce0747f2d04195cb3f2d">More...</a><br /></td></tr>
-<tr class="separator:a22025ce3eeb1ce0747f2d04195cb3f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fd9c2e425d17f128895de5b004badf0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5fd9c2e425d17f128895de5b004badf0">getMaximumVelocity</a> ()</td></tr>
-<tr class="memdesc:a5fd9c2e425d17f128895de5b004badf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum velocity in FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#a5fd9c2e425d17f128895de5b004badf0">More...</a><br /></td></tr>
-<tr class="separator:a5fd9c2e425d17f128895de5b004badf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1585ea8c9862b08176bfd3605f27f476"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1585ea8c9862b08176bfd3605f27f476">getMaxSpeedCapability</a> ()</td></tr>
-<tr class="separator:a1585ea8c9862b08176bfd3605f27f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244f4f9f4efa654708f67a13d57c38b9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9">getActualAcceleration</a> ()</td></tr>
+<tr class="memdesc:a244f4f9f4efa654708f67a13d57c38b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actual acceleration in steps per square FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9">More...</a><br /></td></tr>
+<tr class="separator:a244f4f9f4efa654708f67a13d57c38b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab20796e93276ab46ba069e2c075d5248"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab20796e93276ab46ba069e2c075d5248">getMicroStepCount</a> ()</td></tr>
 <tr class="memdesc:ab20796e93276ab46ba069e2c075d5248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the micro step value (which units? what does it mean?)  <a href="classmtca4u_1_1_motor_controler_impl.html#ab20796e93276ab46ba069e2c075d5248">More...</a><br /></td></tr>
 <tr class="separator:ab20796e93276ab46ba069e2c075d5248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0a8f52665dae98f18c7fddebbfe7cb8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa0a8f52665dae98f18c7fddebbfe7cb8">getMinimumVelocity</a> ()</td></tr>
-<tr class="memdesc:aa0a8f52665dae98f18c7fddebbfe7cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum velocity in FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#aa0a8f52665dae98f18c7fddebbfe7cb8">More...</a><br /></td></tr>
-<tr class="separator:aa0a8f52665dae98f18c7fddebbfe7cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace43e13badf5dcc9066049e301f4b0de"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ace43e13badf5dcc9066049e301f4b0de">getNegativeReferenceSwitchCalibration</a> ()</td></tr>
-<tr class="memdesc:ace43e13badf5dcc9066049e301f4b0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a calibrated position for the negative end switch from the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#ace43e13badf5dcc9066049e301f4b0de">More...</a><br /></td></tr>
-<tr class="separator:ace43e13badf5dcc9066049e301f4b0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f511913da7ccb5f95b6a95117c458e8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a0f511913da7ccb5f95b6a95117c458e8">getPositionLatched</a> ()</td></tr>
-<tr class="memdesc:a0f511913da7ccb5f95b6a95117c458e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latched position in steps.  <a href="classmtca4u_1_1_motor_controler_impl.html#a0f511913da7ccb5f95b6a95117c458e8">More...</a><br /></td></tr>
-<tr class="separator:a0f511913da7ccb5f95b6a95117c458e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646959be5ec8d9144caaabd73df8806d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a646959be5ec8d9144caaabd73df8806d">getPositionTolerance</a> ()</td></tr>
-<tr class="memdesc:a646959be5ec8d9144caaabd73df8806d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position tolerance in steps.  <a href="classmtca4u_1_1_motor_controler_impl.html#a646959be5ec8d9144caaabd73df8806d">More...</a><br /></td></tr>
-<tr class="separator:a646959be5ec8d9144caaabd73df8806d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab90b6980456b04569423ce5a27060fe"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aab90b6980456b04569423ce5a27060fe">getPositiveReferenceSwitchCalibration</a> ()</td></tr>
-<tr class="memdesc:aab90b6980456b04569423ce5a27060fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a calibrated position for the positive end switch from the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#aab90b6980456b04569423ce5a27060fe">More...</a><br /></td></tr>
-<tr class="separator:aab90b6980456b04569423ce5a27060fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6278b1b6562bfd9804ac4608cc336abc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a6278b1b6562bfd9804ac4608cc336abc">getProportionalityFactorData</a> ()</td></tr>
-<tr class="separator:a6278b1b6562bfd9804ac4608cc336abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716d5a0b14dd6e3e5684ef3e47377b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a716d5a0b14dd6e3e5684ef3e47377b3e">getReferenceConfigAndRampModeData</a> ()</td></tr>
-<tr class="separator:a716d5a0b14dd6e3e5684ef3e47377b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e873a430de3709779ca6275e1230cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa0e873a430de3709779ca6275e1230cb">getReferenceSwitchBit</a> ()</td></tr>
-<tr class="memdesc:aa0e873a430de3709779ca6275e1230cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ReferenceSwitchBit for this motor as defined in section 10.1 of the TMC429 data sheet.  <a href="classmtca4u_1_1_motor_controler_impl.html#aa0e873a430de3709779ca6275e1230cb">More...</a><br /></td></tr>
-<tr class="separator:aa0e873a430de3709779ca6275e1230cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ade42f52bddecb8aba9784ea41722e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html">MotorReferenceSwitchData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a4ade42f52bddecb8aba9784ea41722e4">getReferenceSwitchData</a> ()</td></tr>
-<tr class="memdesc:a4ade42f52bddecb8aba9784ea41722e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about both reference switches of this Motor.  <a href="classmtca4u_1_1_motor_controler_impl.html#a4ade42f52bddecb8aba9784ea41722e4">More...</a><br /></td></tr>
-<tr class="separator:a4ade42f52bddecb8aba9784ea41722e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b6ca00cb8214c51019b8e71d0b1f906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9b6ca00cb8214c51019b8e71d0b1f906">getStallGuardControlData</a> () const</td></tr>
-<tr class="separator:a9b6ca00cb8214c51019b8e71d0b1f906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6510b2aa1a5c147f39785611df214c84"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a6510b2aa1a5c147f39785611df214c84">getStallGuardValue</a> ()</td></tr>
 <tr class="memdesc:a6510b2aa1a5c147f39785611df214c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stall guard value (which units? what does it mean? Expert?)  <a href="classmtca4u_1_1_motor_controler_impl.html#a6510b2aa1a5c147f39785611df214c84">More...</a><br /></td></tr>
 <tr class="separator:a6510b2aa1a5c147f39785611df214c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213d5c928190678e61704736e6bc3eae"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a213d5c928190678e61704736e6bc3eae">getCoolStepValue</a> ()</td></tr>
+<tr class="memdesc:a213d5c928190678e61704736e6bc3eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CoolStepValue (in units?, what does it mean? Expert?)  <a href="classmtca4u_1_1_motor_controler_impl.html#a213d5c928190678e61704736e6bc3eae">More...</a><br /></td></tr>
+<tr class="separator:a213d5c928190678e61704736e6bc3eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3447a09c2ab259436e3950292a81b90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_driver_status_data.html">DriverStatusData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ac3447a09c2ab259436e3950292a81b90">getStatus</a> ()</td></tr>
 <tr class="memdesc:ac3447a09c2ab259436e3950292a81b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of the motor driver.  <a href="classmtca4u_1_1_motor_controler_impl.html#ac3447a09c2ab259436e3950292a81b90">More...</a><br /></td></tr>
 <tr class="separator:ac3447a09c2ab259436e3950292a81b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e1bc73450be0f1a907183dc31e21f25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a6e1bc73450be0f1a907183dc31e21f25">getTargetPosition</a> ()</td></tr>
-<tr class="memdesc:a6e1bc73450be0f1a907183dc31e21f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target position in steps.  <a href="classmtca4u_1_1_motor_controler_impl.html#a6e1bc73450be0f1a907183dc31e21f25">More...</a><br /></td></tr>
-<tr class="separator:a6e1bc73450be0f1a907183dc31e21f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b7a7fe113ae7ec774659290d209a92a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5b7a7fe113ae7ec774659290d209a92a">getTargetVelocity</a> ()</td></tr>
-<tr class="memdesc:a5b7a7fe113ae7ec774659290d209a92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get target velocity in FIXME.  <a href="classmtca4u_1_1_motor_controler_impl.html#a5b7a7fe113ae7ec774659290d209a92a">More...</a><br /></td></tr>
-<tr class="separator:a5b7a7fe113ae7ec774659290d209a92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f6cedcae59e695014cb031ed63826d2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2">getUserCurrentLimit</a> ()</td></tr>
-<tr class="separator:a1f6cedcae59e695014cb031ed63826d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfa75b09957371c76729c2abdafa8e5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#accfa75b09957371c76729c2abdafa8e5">getDecoderReadoutMode</a> ()</td></tr>
+<tr class="memdesc:accfa75b09957371c76729c2abdafa8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the decoder readout mode.  <a href="classmtca4u_1_1_motor_controler_impl.html#accfa75b09957371c76729c2abdafa8e5">More...</a><br /></td></tr>
+<tr class="separator:accfa75b09957371c76729c2abdafa8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae321b6000625508c13e2198c2d34f534"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae321b6000625508c13e2198c2d34f534">getDecoderPosition</a> ()</td></tr>
+<tr class="memdesc:ae321b6000625508c13e2198c2d34f534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the decoder position (which units?)  <a href="classmtca4u_1_1_motor_controler_impl.html#ae321b6000625508c13e2198c2d34f534">More...</a><br /></td></tr>
+<tr class="separator:ae321b6000625508c13e2198c2d34f534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf0048d074761988c41ec2c237f9c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#adcf0048d074761988c41ec2c237f9c1a">setActualVelocity</a> (int stepsPerFIXME)</td></tr>
+<tr class="separator:adcf0048d074761988c41ec2c237f9c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72052e81d59e8e8b55a96ec16ab8cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae72052e81d59e8e8b55a96ec16ab8cee">setActualAcceleration</a> (unsigned int stepsPerSquareFIXME)</td></tr>
+<tr class="separator:ae72052e81d59e8e8b55a96ec16ab8cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4d2614b5ed09c33121ebf33a8d0239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a8f4d2614b5ed09c33121ebf33a8d0239">setMicroStepCount</a> (unsigned int microStepCount)</td></tr>
+<tr class="separator:a8f4d2614b5ed09c33121ebf33a8d0239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8abe212e61d8a8e07ea245b1eca3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a7c8abe212e61d8a8e07ea245b1eca3a5">setEnabled</a> (bool enable=true)</td></tr>
+<tr class="separator:a7c8abe212e61d8a8e07ea245b1eca3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d54e72618481665749ccbef028740a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5d54e72618481665749ccbef028740a5">setDecoderReadoutMode</a> (unsigned int decoderReadoutMode)</td></tr>
+<tr class="separator:a5d54e72618481665749ccbef028740a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b189e7c6989dc592967e5b1b360267"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a33b189e7c6989dc592967e5b1b360267">setUserSpeedLimit</a> (double microStepsPerSecond)</td></tr>
+<tr class="separator:a33b189e7c6989dc592967e5b1b360267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a1c1ac60f2f73114a892cfb0b091ca8"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2a1c1ac60f2f73114a892cfb0b091ca8">getUserSpeedLimit</a> ()</td></tr>
 <tr class="separator:a2a1c1ac60f2f73114a892cfb0b091ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb1442acb6d2a977eae1502917975aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9fb1442acb6d2a977eae1502917975aa">isEnabled</a> ()</td></tr>
-<tr class="separator:a9fb1442acb6d2a977eae1502917975aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9454aa7fad953a4c83e796522760062"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab9454aa7fad953a4c83e796522760062">isEndSwitchPowerEnabled</a> ()</td></tr>
-<tr class="separator:ab9454aa7fad953a4c83e796522760062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1585ea8c9862b08176bfd3605f27f476"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1585ea8c9862b08176bfd3605f27f476">getMaxSpeedCapability</a> ()</td></tr>
+<tr class="separator:a1585ea8c9862b08176bfd3605f27f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd447c35d9b26b1e0fa2608ce0bff84c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#afd447c35d9b26b1e0fa2608ce0bff84c">setUserCurrentLimit</a> (double currentLimit)</td></tr>
+<tr class="separator:afd447c35d9b26b1e0fa2608ce0bff84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6cedcae59e695014cb031ed63826d2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2">getUserCurrentLimit</a> ()</td></tr>
+<tr class="separator:a1f6cedcae59e695014cb031ed63826d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567368a21acc304efdc6d8ede5fb1928"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a567368a21acc304efdc6d8ede5fb1928">getMaxCurrentLimit</a> ()</td></tr>
+<tr class="separator:a567368a21acc304efdc6d8ede5fb1928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1654b5295f6b57d0f0dc959e717b1fe6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1654b5295f6b57d0f0dc959e717b1fe6">enableFullStepping</a> (bool enable=true)</td></tr>
+<tr class="separator:a1654b5295f6b57d0f0dc959e717b1fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ef5fe978c7a383556e0ee9c146a1385"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2ef5fe978c7a383556e0ee9c146a1385">isFullStepping</a> ()</td></tr>
 <tr class="separator:a2ef5fe978c7a383556e0ee9c146a1385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9390000eb9981fc15f0bb59496f639"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#acc9390000eb9981fc15f0bb59496f639">setCalibrationTime</a> (uint32_t calibrationTime)</td></tr>
+<tr class="separator:acc9390000eb9981fc15f0bb59496f639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cef6d6d198748777f370183ce7de8fb"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5cef6d6d198748777f370183ce7de8fb">getCalibrationTime</a> ()</td></tr>
+<tr class="separator:a5cef6d6d198748777f370183ce7de8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3980683530bb053c62cad9a2ccfa5ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af3980683530bb053c62cad9a2ccfa5ef">setPositiveReferenceSwitchCalibration</a> (int calibratedPosition)</td></tr>
+<tr class="memdesc:af3980683530bb053c62cad9a2ccfa5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a calibrated position for the positive end switch to the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#af3980683530bb053c62cad9a2ccfa5ef">More...</a><br /></td></tr>
+<tr class="separator:af3980683530bb053c62cad9a2ccfa5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab90b6980456b04569423ce5a27060fe"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aab90b6980456b04569423ce5a27060fe">getPositiveReferenceSwitchCalibration</a> ()</td></tr>
+<tr class="memdesc:aab90b6980456b04569423ce5a27060fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a calibrated position for the positive end switch from the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#aab90b6980456b04569423ce5a27060fe">More...</a><br /></td></tr>
+<tr class="separator:aab90b6980456b04569423ce5a27060fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af903386dd25dc8dba6ce686dfa529563"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af903386dd25dc8dba6ce686dfa529563">setNegativeReferenceSwitchCalibration</a> (int calibratedPosition)</td></tr>
+<tr class="memdesc:af903386dd25dc8dba6ce686dfa529563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a calibrated position for the negative end switch to the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#af903386dd25dc8dba6ce686dfa529563">More...</a><br /></td></tr>
+<tr class="separator:af903386dd25dc8dba6ce686dfa529563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace43e13badf5dcc9066049e301f4b0de"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ace43e13badf5dcc9066049e301f4b0de">getNegativeReferenceSwitchCalibration</a> ()</td></tr>
+<tr class="memdesc:ace43e13badf5dcc9066049e301f4b0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a calibrated position for the negative end switch from the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#ace43e13badf5dcc9066049e301f4b0de">More...</a><br /></td></tr>
+<tr class="separator:ace43e13badf5dcc9066049e301f4b0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb1442acb6d2a977eae1502917975aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9fb1442acb6d2a977eae1502917975aa">isEnabled</a> ()</td></tr>
+<tr class="separator:a9fb1442acb6d2a977eae1502917975aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1212f671047657455a20d7663f1a5848"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1212f671047657455a20d7663f1a5848">setMotorCurrentEnabled</a> (bool enable=true)</td></tr>
+<tr class="separator:a1212f671047657455a20d7663f1a5848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286b61cd86f9588350dc49f4349ef164"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a286b61cd86f9588350dc49f4349ef164">isMotorCurrentEnabled</a> ()</td></tr>
 <tr class="separator:a286b61cd86f9588350dc49f4349ef164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84bc3fd38c273ac482c72b028cacc9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa84bc3fd38c273ac482c72b028cacc9e">setEndSwitchPowerEnabled</a> (bool enable=true)</td></tr>
+<tr class="separator:aa84bc3fd38c273ac482c72b028cacc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9454aa7fad953a4c83e796522760062"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab9454aa7fad953a4c83e796522760062">isEndSwitchPowerEnabled</a> ()</td></tr>
+<tr class="separator:ab9454aa7fad953a4c83e796522760062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af54e43e269debc45741787fa63c13828"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af54e43e269debc45741787fa63c13828">isMotorMoving</a> ()</td></tr>
 <tr class="memdesc:af54e43e269debc45741787fa63c13828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns True if the motor is in motion or False if at standstill.  <a href="classmtca4u_1_1_motor_controler_impl.html#af54e43e269debc45741787fa63c13828">More...</a><br /></td></tr>
 <tr class="separator:af54e43e269debc45741787fa63c13828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f30275325d1f2e14b12af8a792220a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a51f30275325d1f2e14b12af8a792220a">operator=</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
-<tr class="memdesc:a51f30275325d1f2e14b12af8a792220a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-assignable.  <a href="classmtca4u_1_1_motor_controler_impl.html#a51f30275325d1f2e14b12af8a792220a">More...</a><br /></td></tr>
-<tr class="separator:a51f30275325d1f2e14b12af8a792220a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179ab2cb2ffcd3ab3c09b07bf7199886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a179ab2cb2ffcd3ab3c09b07bf7199886">setAccelerationThresholdData</a> (<a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a> const &amp;accelerationThresholdData)</td></tr>
-<tr class="separator:a179ab2cb2ffcd3ab3c09b07bf7199886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae72052e81d59e8e8b55a96ec16ab8cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae72052e81d59e8e8b55a96ec16ab8cee">setActualAcceleration</a> (unsigned int stepsPerSquareFIXME)</td></tr>
-<tr class="separator:ae72052e81d59e8e8b55a96ec16ab8cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ade42f52bddecb8aba9784ea41722e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html">MotorReferenceSwitchData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a4ade42f52bddecb8aba9784ea41722e4">getReferenceSwitchData</a> ()</td></tr>
+<tr class="memdesc:a4ade42f52bddecb8aba9784ea41722e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about both reference switches of this Motor.  <a href="classmtca4u_1_1_motor_controler_impl.html#a4ade42f52bddecb8aba9784ea41722e4">More...</a><br /></td></tr>
+<tr class="separator:a4ade42f52bddecb8aba9784ea41722e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e088c1334a7109b8e9c987240d8377"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377">setPositiveReferenceSwitchEnabled</a> (bool enableStatus)</td></tr>
+<tr class="memdesc:a22e088c1334a7109b8e9c987240d8377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the positive reference switch.  <a href="classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377">More...</a><br /></td></tr>
+<tr class="separator:a22e088c1334a7109b8e9c987240d8377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65a8d5449b157a0ce085ec417fcb781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae65a8d5449b157a0ce085ec417fcb781">setNegativeReferenceSwitchEnabled</a> (bool enableStatus)</td></tr>
+<tr class="memdesc:ae65a8d5449b157a0ce085ec417fcb781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the negative reference switch.  <a href="classmtca4u_1_1_motor_controler_impl.html#ae65a8d5449b157a0ce085ec417fcb781">More...</a><br /></td></tr>
+<tr class="separator:ae65a8d5449b157a0ce085ec417fcb781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2702a2299e9c577806d68853c11a046e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e">setActualPosition</a> (int steps)</td></tr>
 <tr class="memdesc:a2702a2299e9c577806d68853c11a046e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the actual position counter for a recalibration of the actual position.  <a href="classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e">More...</a><br /></td></tr>
 <tr class="separator:a2702a2299e9c577806d68853c11a046e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf0048d074761988c41ec2c237f9c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#adcf0048d074761988c41ec2c237f9c1a">setActualVelocity</a> (int stepsPerFIXME)</td></tr>
-<tr class="separator:adcf0048d074761988c41ec2c237f9c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc9390000eb9981fc15f0bb59496f639"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#acc9390000eb9981fc15f0bb59496f639">setCalibrationTime</a> (uint32_t calibrationTime)</td></tr>
-<tr class="separator:acc9390000eb9981fc15f0bb59496f639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63974b41475d39a6b49a5045b0e4d7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a63974b41475d39a6b49a5045b0e4d7dc">MCI_DECLARE_SIGNED_SET_GET_VALUE</a> (TargetPosition, steps)</td></tr>
+<tr class="separator:a63974b41475d39a6b49a5045b0e4d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a8cb70f81ec1b668da846e5665597f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a58a8cb70f81ec1b668da846e5665597f">MCI_DECLARE_SET_GET_VALUE</a> (MinimumVelocity, stepsPerFIXME)</td></tr>
+<tr class="separator:a58a8cb70f81ec1b668da846e5665597f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480aec3fe63b41ef965f4181ebffaf44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a480aec3fe63b41ef965f4181ebffaf44">MCI_DECLARE_SET_GET_VALUE</a> (MaximumVelocity, stepsPerFIXME)</td></tr>
+<tr class="separator:a480aec3fe63b41ef965f4181ebffaf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424aae7374bf1f34fe8daf99bf77e028"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a424aae7374bf1f34fe8daf99bf77e028">MCI_DECLARE_SIGNED_SET_GET_VALUE</a> (TargetVelocity, stepsPerFIXME)</td></tr>
+<tr class="separator:a424aae7374bf1f34fe8daf99bf77e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659d402c4e2d79c4f64b4786dbfbe979"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a659d402c4e2d79c4f64b4786dbfbe979">MCI_DECLARE_SET_GET_VALUE</a> (MaximumAcceleration, stepsPerSquareFIXME)</td></tr>
+<tr class="separator:a659d402c4e2d79c4f64b4786dbfbe979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1143a07af598e470e472e5aa971c723f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1143a07af598e470e472e5aa971c723f">MCI_DECLARE_SET_GET_VALUE</a> (PositionTolerance, steps)</td></tr>
+<tr class="separator:a1143a07af598e470e472e5aa971c723f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90a5a27d2d8e4c5a0f1d082b0400da0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad90a5a27d2d8e4c5a0f1d082b0400da0">MCI_DECLARE_SET_GET_VALUE</a> (PositionLatched, steps)</td></tr>
+<tr class="separator:ad90a5a27d2d8e4c5a0f1d082b0400da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e46f203fcf3c068da7fe3c8367bf92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af9e46f203fcf3c068da7fe3c8367bf92">MCI_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a>, accelerationThresholdData)</td></tr>
+<tr class="separator:af9e46f203fcf3c068da7fe3c8367bf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479aed682979a2e7c68b815d68bae335"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a479aed682979a2e7c68b815d68bae335">MCI_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a>, proportionalityFactorData)</td></tr>
+<tr class="separator:a479aed682979a2e7c68b815d68bae335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57df0471b578c1b12ee7070261cc00f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a57df0471b578c1b12ee7070261cc00f4">MCI_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a>, referenceConfigAndRampModeData)</td></tr>
+<tr class="separator:a57df0471b578c1b12ee7070261cc00f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ba87745d3b16f957c49869a3f39612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a18ba87745d3b16f957c49869a3f39612">MCI_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a>, interruptData)</td></tr>
+<tr class="separator:a18ba87745d3b16f957c49869a3f39612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c3c6239abf12dea75ffc720af52535"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa8c3c6239abf12dea75ffc720af52535">MCI_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a>, dividersAndMicroStepResolutionData)</td></tr>
+<tr class="separator:aa8c3c6239abf12dea75ffc720af52535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dac51aec156c96d9d584a8b0b0b27f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5dac51aec156c96d9d584a8b0b0b27f6">setDriverControlData</a> (<a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a> const &amp;driverControlData)</td></tr>
+<tr class="separator:a5dac51aec156c96d9d584a8b0b0b27f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c882d01b0912bf88f43c101e7f8fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a17c882d01b0912bf88f43c101e7f8fb7">setChopperControlData</a> (<a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a> const &amp;chopperControlData)</td></tr>
 <tr class="separator:a17c882d01b0912bf88f43c101e7f8fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42cff935dc27c258b7e29db324440d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ac42cff935dc27c258b7e29db324440d4">setCoolStepControlData</a> (<a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a> const &amp;coolStepControlData)</td></tr>
 <tr class="separator:ac42cff935dc27c258b7e29db324440d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d54e72618481665749ccbef028740a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5d54e72618481665749ccbef028740a5">setDecoderReadoutMode</a> (unsigned int decoderReadoutMode)</td></tr>
-<tr class="separator:a5d54e72618481665749ccbef028740a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa53b0ce29e7028eef295a192147dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9fa53b0ce29e7028eef295a192147dda">setDividersAndMicroStepResolutionData</a> (<a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a> const &amp;dividersAndMicroStepResolutionData)</td></tr>
-<tr class="separator:a9fa53b0ce29e7028eef295a192147dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f217f058ff015dcffe5ed0b95da9530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9f217f058ff015dcffe5ed0b95da9530">setDriverConfigData</a> (<a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a> const &amp;driverConfigData)</td></tr>
-<tr class="separator:a9f217f058ff015dcffe5ed0b95da9530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dac51aec156c96d9d584a8b0b0b27f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5dac51aec156c96d9d584a8b0b0b27f6">setDriverControlData</a> (<a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a> const &amp;driverControlData)</td></tr>
-<tr class="separator:a5dac51aec156c96d9d584a8b0b0b27f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8abe212e61d8a8e07ea245b1eca3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a7c8abe212e61d8a8e07ea245b1eca3a5">setEnabled</a> (bool enable=true)</td></tr>
-<tr class="separator:a7c8abe212e61d8a8e07ea245b1eca3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84bc3fd38c273ac482c72b028cacc9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa84bc3fd38c273ac482c72b028cacc9e">setEndSwitchPowerEnabled</a> (bool enable=true)</td></tr>
-<tr class="separator:aa84bc3fd38c273ac482c72b028cacc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58113728ab27b385b20f1114674e980b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a58113728ab27b385b20f1114674e980b">setInterruptData</a> (<a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a> const &amp;interruptData)</td></tr>
-<tr class="separator:a58113728ab27b385b20f1114674e980b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa36bd88a80a7e01fcb3b3473b6240cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa36bd88a80a7e01fcb3b3473b6240cae">setMaximumAcceleration</a> (unsigned int stepsPerSquareFIXME)</td></tr>
-<tr class="separator:aa36bd88a80a7e01fcb3b3473b6240cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af887f478bd2a0159d236c940918723d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af887f478bd2a0159d236c940918723d9">setMaximumVelocity</a> (unsigned int stepsPerFIXME)</td></tr>
-<tr class="separator:af887f478bd2a0159d236c940918723d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4d2614b5ed09c33121ebf33a8d0239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a8f4d2614b5ed09c33121ebf33a8d0239">setMicroStepCount</a> (unsigned int microStepCount)</td></tr>
-<tr class="separator:a8f4d2614b5ed09c33121ebf33a8d0239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47cb48c2f1bfd7d1a43e7582de813bb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a47cb48c2f1bfd7d1a43e7582de813bb7">setMinimumVelocity</a> (unsigned int stepsPerFIXME)</td></tr>
-<tr class="separator:a47cb48c2f1bfd7d1a43e7582de813bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1212f671047657455a20d7663f1a5848"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1212f671047657455a20d7663f1a5848">setMotorCurrentEnabled</a> (bool enable=true)</td></tr>
-<tr class="separator:a1212f671047657455a20d7663f1a5848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af903386dd25dc8dba6ce686dfa529563"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af903386dd25dc8dba6ce686dfa529563">setNegativeReferenceSwitchCalibration</a> (int calibratedPosition)</td></tr>
-<tr class="memdesc:af903386dd25dc8dba6ce686dfa529563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a calibrated position for the negative end switch to the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#af903386dd25dc8dba6ce686dfa529563">More...</a><br /></td></tr>
-<tr class="separator:af903386dd25dc8dba6ce686dfa529563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae65a8d5449b157a0ce085ec417fcb781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae65a8d5449b157a0ce085ec417fcb781">setNegativeReferenceSwitchEnabled</a> (bool enableStatus)</td></tr>
-<tr class="memdesc:ae65a8d5449b157a0ce085ec417fcb781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the negative reference switch.  <a href="classmtca4u_1_1_motor_controler_impl.html#ae65a8d5449b157a0ce085ec417fcb781">More...</a><br /></td></tr>
-<tr class="separator:ae65a8d5449b157a0ce085ec417fcb781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad323f37b8b18ca2e43f1d1ff4caedb6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad323f37b8b18ca2e43f1d1ff4caedb6e">setPositionLatched</a> (unsigned int steps)</td></tr>
-<tr class="separator:ad323f37b8b18ca2e43f1d1ff4caedb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eed96495d5db4150c62acee9dcd7f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5eed96495d5db4150c62acee9dcd7f9c">setPositionTolerance</a> (unsigned int steps)</td></tr>
-<tr class="separator:a5eed96495d5db4150c62acee9dcd7f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3980683530bb053c62cad9a2ccfa5ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af3980683530bb053c62cad9a2ccfa5ef">setPositiveReferenceSwitchCalibration</a> (int calibratedPosition)</td></tr>
-<tr class="memdesc:af3980683530bb053c62cad9a2ccfa5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a calibrated position for the positive end switch to the firmware.  <a href="classmtca4u_1_1_motor_controler_impl.html#af3980683530bb053c62cad9a2ccfa5ef">More...</a><br /></td></tr>
-<tr class="separator:af3980683530bb053c62cad9a2ccfa5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e088c1334a7109b8e9c987240d8377"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377">setPositiveReferenceSwitchEnabled</a> (bool enableStatus)</td></tr>
-<tr class="memdesc:a22e088c1334a7109b8e9c987240d8377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the positive reference switch.  <a href="classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377">More...</a><br /></td></tr>
-<tr class="separator:a22e088c1334a7109b8e9c987240d8377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4209f7363004ec3ae96e176bb442678"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae4209f7363004ec3ae96e176bb442678">setProportionalityFactorData</a> (<a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a> const &amp;proportionalityFactorData)</td></tr>
-<tr class="separator:ae4209f7363004ec3ae96e176bb442678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bd14f0731669fa9252451ed9759363"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a35bd14f0731669fa9252451ed9759363">setReferenceConfigAndRampModeData</a> (<a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a> const &amp;referenceConfigAndRampModeData)</td></tr>
-<tr class="separator:a35bd14f0731669fa9252451ed9759363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae55722f5c6effd190b0f4f50bf5b5293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae55722f5c6effd190b0f4f50bf5b5293">setStallGuardControlData</a> (<a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> const &amp;stallGuardControlData)</td></tr>
 <tr class="separator:ae55722f5c6effd190b0f4f50bf5b5293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d7ae8f048ea642b8f07f10ee34053c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a79d7ae8f048ea642b8f07f10ee34053c">setTargetPosition</a> (int steps)</td></tr>
-<tr class="separator:a79d7ae8f048ea642b8f07f10ee34053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa30d915d6eff9f4b4b65757149432bd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa30d915d6eff9f4b4b65757149432bd2">setTargetVelocity</a> (int stepsPerFIXME)</td></tr>
-<tr class="separator:aa30d915d6eff9f4b4b65757149432bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd447c35d9b26b1e0fa2608ce0bff84c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#afd447c35d9b26b1e0fa2608ce0bff84c">setUserCurrentLimit</a> (double currentLimit)</td></tr>
-<tr class="separator:afd447c35d9b26b1e0fa2608ce0bff84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33b189e7c6989dc592967e5b1b360267"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a33b189e7c6989dc592967e5b1b360267">setUserSpeedLimit</a> (double microStepsPerSecond)</td></tr>
-<tr class="separator:a33b189e7c6989dc592967e5b1b360267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f217f058ff015dcffe5ed0b95da9530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9f217f058ff015dcffe5ed0b95da9530">setDriverConfigData</a> (<a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a> const &amp;driverConfigData)</td></tr>
+<tr class="separator:a9f217f058ff015dcffe5ed0b95da9530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5651a750972034a6e92d98b5cbaa310e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5651a750972034a6e92d98b5cbaa310e">getDriverControlData</a> () const</td></tr>
+<tr class="separator:a5651a750972034a6e92d98b5cbaa310e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42b9b43784576b20ca83104b15e7efc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad42b9b43784576b20ca83104b15e7efc">getChopperControlData</a> () const</td></tr>
+<tr class="separator:ad42b9b43784576b20ca83104b15e7efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6c8034ed7f20c0b42469880f3e024c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1b6c8034ed7f20c0b42469880f3e024c">getCoolStepControlData</a> () const</td></tr>
+<tr class="separator:a1b6c8034ed7f20c0b42469880f3e024c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8e8317d7793fec3d7116a8084fbe57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aab8e8317d7793fec3d7116a8084fbe57">getStallGuardControlData</a> () const</td></tr>
+<tr class="separator:aab8e8317d7793fec3d7116a8084fbe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ad86a993070ebb92355c41bf740dd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa5ad86a993070ebb92355c41bf740dd2">getDriverConfigData</a> () const</td></tr>
+<tr class="separator:aa5ad86a993070ebb92355c41bf740dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c37b67435001447829b6551bdc6062"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab4c37b67435001447829b6551bdc6062">targetPositionReached</a> ()</td></tr>
 <tr class="memdesc:ab4c37b67435001447829b6551bdc6062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the correct bit from the controler status word.  <a href="classmtca4u_1_1_motor_controler_impl.html#ab4c37b67435001447829b6551bdc6062">More...</a><br /></td></tr>
 <tr class="separator:ab4c37b67435001447829b6551bdc6062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e873a430de3709779ca6275e1230cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa0e873a430de3709779ca6275e1230cb">getReferenceSwitchBit</a> ()</td></tr>
+<tr class="memdesc:aa0e873a430de3709779ca6275e1230cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ReferenceSwitchBit for this motor as defined in section 10.1 of the TMC429 data sheet.  <a href="classmtca4u_1_1_motor_controler_impl.html#aa0e873a430de3709779ca6275e1230cb">More...</a><br /></td></tr>
+<tr class="separator:aa0e873a430de3709779ca6275e1230cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmtca4u_1_1_motor_controler_expert"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmtca4u_1_1_motor_controler_expert')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmtca4u_1_1_motor_controler_expert.html">mtca4u::MotorControlerExpert</a></td></tr>
+<tr class="memitem:abcbfe122d5f15acef91d0684d64e92c1 inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_expert.html#abcbfe122d5f15acef91d0684d64e92c1">MCX_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a>, accelerationThresholdData)</td></tr>
+<tr class="separator:abcbfe122d5f15acef91d0684d64e92c1 inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a0d2cd4649310e33e040f5fd407e7b inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ab1a0d2cd4649310e33e040f5fd407e7b">MCX_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a>, proportionalityFactorData)</td></tr>
+<tr class="separator:ab1a0d2cd4649310e33e040f5fd407e7b inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dd2cdd290a4d8875d67aeb4a1ac494 inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a82dd2cdd290a4d8875d67aeb4a1ac494">MCX_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a>, referenceConfigAndRampModeData)</td></tr>
+<tr class="separator:a82dd2cdd290a4d8875d67aeb4a1ac494 inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ac5d70f47d2b4441cd288583b6a7ef inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a33ac5d70f47d2b4441cd288583b6a7ef">MCX_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a>, interruptData)</td></tr>
+<tr class="separator:a33ac5d70f47d2b4441cd288583b6a7ef inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e614b025d6c3ac4c9c6ba9c70d05c2 inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ae1e614b025d6c3ac4c9c6ba9c70d05c2">MCX_DECLARE_SET_GET_TYPED_REGISTER</a> (<a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a>, dividersAndMicroStepResolutionData)</td></tr>
+<tr class="separator:ae1e614b025d6c3ac4c9c6ba9c70d05c2 inherit pub_methods_classmtca4u_1_1_motor_controler_expert"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmtca4u_1_1_motor_controler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmtca4u_1_1_motor_controler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmtca4u_1_1_motor_controler.html">mtca4u::MotorControler</a></td></tr>
+<tr class="memitem:ac36e5640cfd39a888c78ca39f18f93ca inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#ac36e5640cfd39a888c78ca39f18f93ca">MC_DECLARE_SIGNED_SET_GET_VALUE</a> (TargetPosition, steps)</td></tr>
+<tr class="memdesc:ac36e5640cfd39a888c78ca39f18f93ca inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target position in steps.  <a href="classmtca4u_1_1_motor_controler.html#ac36e5640cfd39a888c78ca39f18f93ca">More...</a><br /></td></tr>
+<tr class="separator:ac36e5640cfd39a888c78ca39f18f93ca inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ba7ebb3527bf4fa99b0fd581b99ed7 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a52ba7ebb3527bf4fa99b0fd581b99ed7">MC_DECLARE_SET_GET_VALUE</a> (MinimumVelocity, stepsPerFIXME)</td></tr>
+<tr class="memdesc:a52ba7ebb3527bf4fa99b0fd581b99ed7 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum velocity in FIXME.  <a href="classmtca4u_1_1_motor_controler.html#a52ba7ebb3527bf4fa99b0fd581b99ed7">More...</a><br /></td></tr>
+<tr class="separator:a52ba7ebb3527bf4fa99b0fd581b99ed7 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cd98355057737a00870fe52e1981d6 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#ac5cd98355057737a00870fe52e1981d6">MC_DECLARE_SET_GET_VALUE</a> (MaximumVelocity, stepsPerFIXME)</td></tr>
+<tr class="memdesc:ac5cd98355057737a00870fe52e1981d6 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum velocity in FIXME.  <a href="classmtca4u_1_1_motor_controler.html#ac5cd98355057737a00870fe52e1981d6">More...</a><br /></td></tr>
+<tr class="separator:ac5cd98355057737a00870fe52e1981d6 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f0b41adefab0e202d060a00c7156fc inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a41f0b41adefab0e202d060a00c7156fc">MC_DECLARE_SIGNED_SET_GET_VALUE</a> (TargetVelocity, stepsPerFIXME)</td></tr>
+<tr class="memdesc:a41f0b41adefab0e202d060a00c7156fc inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get target velocity in FIXME.  <a href="classmtca4u_1_1_motor_controler.html#a41f0b41adefab0e202d060a00c7156fc">More...</a><br /></td></tr>
+<tr class="separator:a41f0b41adefab0e202d060a00c7156fc inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4896200a42f4cdcb2b4322a4cb5bd82e inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a4896200a42f4cdcb2b4322a4cb5bd82e">MC_DECLARE_SET_GET_VALUE</a> (MaximumAcceleration, stepsPerSquareFIXME)</td></tr>
+<tr class="memdesc:a4896200a42f4cdcb2b4322a4cb5bd82e inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximim acceleration in FIXME.  <a href="classmtca4u_1_1_motor_controler.html#a4896200a42f4cdcb2b4322a4cb5bd82e">More...</a><br /></td></tr>
+<tr class="separator:a4896200a42f4cdcb2b4322a4cb5bd82e inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86bc21853d08ec9aed63de05f3b7dd6 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#ac86bc21853d08ec9aed63de05f3b7dd6">MC_DECLARE_SET_GET_VALUE</a> (PositionTolerance, steps)</td></tr>
+<tr class="memdesc:ac86bc21853d08ec9aed63de05f3b7dd6 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position tolerance in steps.  <a href="classmtca4u_1_1_motor_controler.html#ac86bc21853d08ec9aed63de05f3b7dd6">More...</a><br /></td></tr>
+<tr class="separator:ac86bc21853d08ec9aed63de05f3b7dd6 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee74fd047a6ab6c934e2cee06ecf157 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a2ee74fd047a6ab6c934e2cee06ecf157">MC_DECLARE_SET_GET_VALUE</a> (PositionLatched, steps)</td></tr>
+<tr class="memdesc:a2ee74fd047a6ab6c934e2cee06ecf157 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latched position in steps.  <a href="classmtca4u_1_1_motor_controler.html#a2ee74fd047a6ab6c934e2cee06ecf157">More...</a><br /></td></tr>
+<tr class="separator:a2ee74fd047a6ab6c934e2cee06ecf157 inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75809f9b1c396a8b2623ac99e8f1735a inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a75809f9b1c396a8b2623ac99e8f1735a">~MotorControler</a> ()</td></tr>
 <tr class="separator:a75809f9b1c396a8b2623ac99e8f1735a inherit pub_methods_classmtca4u_1_1_motor_controler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -413,35 +414,6 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aed8e50f3bf425a89a316aac875b16702">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00239">239</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a43b2024f352bd05fb923493b2edc4520"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43b2024f352bd05fb923493b2edc4520">&#9670;&nbsp;</a></span>getAccelerationThresholdData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a> mtca4u::MotorControlerImpl::getAccelerationThresholdData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a4c2e0ef983ca481de936ad9cea0f0e34">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00339">339</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -567,8 +539,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a12c5b32854a26f09e930e44ed2e63359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12c5b32854a26f09e930e44ed2e63359">&#9670;&nbsp;</a></span>getChopperControlData()</h2>
+<a id="ad42b9b43784576b20ca83104b15e7efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42b9b43784576b20ca83104b15e7efc">&#9670;&nbsp;</a></span>getChopperControlData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -577,7 +549,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a> const  &amp; mtca4u::MotorControlerImpl::getChopperControlData </td>
+          <td class="memname"><a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a> const&amp; mtca4u::MotorControlerImpl::getChopperControlData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -592,12 +564,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a27e07afe22a5db79e55f20c3aa5c49b9">mtca4u::MotorControlerExpert</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00346">346</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
 </div>
 </div>
-<a id="afd2b99025244a65a2f75ad1190f359ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd2b99025244a65a2f75ad1190f359ea">&#9670;&nbsp;</a></span>getCoolStepControlData()</h2>
+<a id="a1b6c8034ed7f20c0b42469880f3e024c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6c8034ed7f20c0b42469880f3e024c">&#9670;&nbsp;</a></span>getCoolStepControlData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,7 +576,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a> const  &amp; mtca4u::MotorControlerImpl::getCoolStepControlData </td>
+          <td class="memname"><a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a> const&amp; mtca4u::MotorControlerImpl::getCoolStepControlData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -620,8 +590,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a87136a45e1718c1a1888a81cb5b8229e">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00347">347</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -718,8 +686,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a53395370dac590ca1b4a735260477c43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53395370dac590ca1b4a735260477c43">&#9670;&nbsp;</a></span>getDividersAndMicroStepResolutionData()</h2>
+<a id="aa5ad86a993070ebb92355c41bf740dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ad86a993070ebb92355c41bf740dd2">&#9670;&nbsp;</a></span>getDriverConfigData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -728,36 +696,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a> mtca4u::MotorControlerImpl::getDividersAndMicroStepResolutionData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ac1b086559d62ffe9a77e94ac9ab0325c">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00343">343</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="ad48b5d23021f7c8a611833a4907fe259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad48b5d23021f7c8a611833a4907fe259">&#9670;&nbsp;</a></span>getDriverConfigData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a> const  &amp; mtca4u::MotorControlerImpl::getDriverConfigData </td>
+          <td class="memname"><a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a> const&amp; mtca4u::MotorControlerImpl::getDriverConfigData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -772,12 +711,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a5ac1ceb42cae7030ba5f18c4197e27d2">mtca4u::MotorControlerExpert</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00349">349</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
 </div>
 </div>
-<a id="aad1b84ad7ef78abef5654fe59754dbc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad1b84ad7ef78abef5654fe59754dbc9">&#9670;&nbsp;</a></span>getDriverControlData()</h2>
+<a id="a5651a750972034a6e92d98b5cbaa310e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5651a750972034a6e92d98b5cbaa310e">&#9670;&nbsp;</a></span>getDriverControlData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -786,7 +723,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a> const  &amp; mtca4u::MotorControlerImpl::getDriverControlData </td>
+          <td class="memname"><a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a> const&amp; mtca4u::MotorControlerImpl::getDriverControlData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -800,8 +737,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ab7308f8c67f13d70225a03de21d8d0e5">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00345">345</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -836,35 +771,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a49293d9f562e68db2570854ff9d9db81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49293d9f562e68db2570854ff9d9db81">&#9670;&nbsp;</a></span>getInterruptData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a> mtca4u::MotorControlerImpl::getInterruptData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ab6aef485cba9193e01869c42a0c33bc2">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00342">342</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="a567368a21acc304efdc6d8ede5fb1928"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a567368a21acc304efdc6d8ede5fb1928">&#9670;&nbsp;</a></span>getMaxCurrentLimit()</h2>
 
@@ -891,68 +797,6 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a469672dcb48a0831a6f6d4b40b8c1894">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00481">481</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a22025ce3eeb1ce0747f2d04195cb3f2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22025ce3eeb1ce0747f2d04195cb3f2d">&#9670;&nbsp;</a></span>getMaximumAcceleration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mtca4u::MotorControlerImpl::getMaximumAcceleration </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the maximim acceleration in FIXME. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a4e708e71efea76ad16e3ed00539257d7">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00290">290</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a5fd9c2e425d17f128895de5b004badf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fd9c2e425d17f128895de5b004badf0">&#9670;&nbsp;</a></span>getMaximumVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mtca4u::MotorControlerImpl::getMaximumVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get maximum velocity in FIXME. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a1b0af6136bbdd99074bae5f1ba1460a0">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00294">294</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -1016,37 +860,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0a8f52665dae98f18c7fddebbfe7cb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a8f52665dae98f18c7fddebbfe7cb8">&#9670;&nbsp;</a></span>getMinimumVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mtca4u::MotorControlerImpl::getMinimumVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get minimum velocity in FIXME. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a5174dbd952d6ae2d0fc7757715b4b284">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00288">288</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="ace43e13badf5dcc9066049e301f4b0de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace43e13badf5dcc9066049e301f4b0de">&#9670;&nbsp;</a></span>getNegativeReferenceSwitchCalibration()</h2>
 
@@ -1078,68 +891,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f511913da7ccb5f95b6a95117c458e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f511913da7ccb5f95b6a95117c458e8">&#9670;&nbsp;</a></span>getPositionLatched()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mtca4u::MotorControlerImpl::getPositionLatched </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the latched position in steps. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#adee176ea3c19f82c9f2af5068ad5690b">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00292">292</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a646959be5ec8d9144caaabd73df8806d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a646959be5ec8d9144caaabd73df8806d">&#9670;&nbsp;</a></span>getPositionTolerance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mtca4u::MotorControlerImpl::getPositionTolerance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the position tolerance in steps. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aa97733c4133a908b96c2b0b308866e03">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00291">291</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="aab90b6980456b04569423ce5a27060fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab90b6980456b04569423ce5a27060fe">&#9670;&nbsp;</a></span>getPositiveReferenceSwitchCalibration()</h2>
 
@@ -1168,64 +919,6 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a3685de908b91bd6fecca4478a6f34a5c">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00413">413</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a6278b1b6562bfd9804ac4608cc336abc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6278b1b6562bfd9804ac4608cc336abc">&#9670;&nbsp;</a></span>getProportionalityFactorData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a> mtca4u::MotorControlerImpl::getProportionalityFactorData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a30c5af0e6ee4cd2fc70d28e9d8acef03">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00340">340</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a716d5a0b14dd6e3e5684ef3e47377b3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a716d5a0b14dd6e3e5684ef3e47377b3e">&#9670;&nbsp;</a></span>getReferenceConfigAndRampModeData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a> mtca4u::MotorControlerImpl::getReferenceConfigAndRampModeData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#add776cbe19f405bcf03e12083d3b89d1">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00341">341</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -1300,8 +993,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b6ca00cb8214c51019b8e71d0b1f906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b6ca00cb8214c51019b8e71d0b1f906">&#9670;&nbsp;</a></span>getStallGuardControlData()</h2>
+<a id="aab8e8317d7793fec3d7116a8084fbe57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8e8317d7793fec3d7116a8084fbe57">&#9670;&nbsp;</a></span>getStallGuardControlData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1310,7 +1003,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> const  &amp; mtca4u::MotorControlerImpl::getStallGuardControlData </td>
+          <td class="memname"><a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a> const&amp; mtca4u::MotorControlerImpl::getStallGuardControlData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1324,8 +1017,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#aad02f0f2efe14b625354408a41fc864b">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00348">348</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -1388,68 +1079,6 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a85f8dd665ee9c12b94352572b339a816">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00208">208</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a6e1bc73450be0f1a907183dc31e21f25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e1bc73450be0f1a907183dc31e21f25">&#9670;&nbsp;</a></span>getTargetPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mtca4u::MotorControlerImpl::getTargetPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the target position in steps. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#ae5a257e798f80cf1fa3367098992bef0">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00245">245</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a5b7a7fe113ae7ec774659290d209a92a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b7a7fe113ae7ec774659290d209a92a">&#9670;&nbsp;</a></span>getTargetVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mtca4u::MotorControlerImpl::getTargetVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get target velocity in FIXME. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#af6dd2370b9d288818baa32a8a0aa9b33">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00289">289</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -1659,14 +1288,342 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a7f4ad39ba04599f7093fd849b70db66f">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00525">525</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_af54e43e269debc45741787fa63c13828_cgraph.svg" width="502" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+
 </div>
 </div>
+<a id="af9e46f203fcf3c068da7fe3c8367bf92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e46f203fcf3c068da7fe3c8367bf92">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_TYPED_REGISTER() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_TYPED_REGISTER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">accelerationThresholdData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8c3c6239abf12dea75ffc720af52535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c3c6239abf12dea75ffc720af52535">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_TYPED_REGISTER() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_TYPED_REGISTER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dividersAndMicroStepResolutionData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18ba87745d3b16f957c49869a3f39612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ba87745d3b16f957c49869a3f39612">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_TYPED_REGISTER() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_TYPED_REGISTER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">interruptData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a479aed682979a2e7c68b815d68bae335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479aed682979a2e7c68b815d68bae335">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_TYPED_REGISTER() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_TYPED_REGISTER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">proportionalityFactorData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57df0471b578c1b12ee7070261cc00f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57df0471b578c1b12ee7070261cc00f4">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_TYPED_REGISTER() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_TYPED_REGISTER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">referenceConfigAndRampModeData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a659d402c4e2d79c4f64b4786dbfbe979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659d402c4e2d79c4f64b4786dbfbe979">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_VALUE() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">MaximumAcceleration&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stepsPerSquareFIXME&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480aec3fe63b41ef965f4181ebffaf44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480aec3fe63b41ef965f4181ebffaf44">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_VALUE() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">MaximumVelocity&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stepsPerFIXME&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58a8cb70f81ec1b668da846e5665597f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a8cb70f81ec1b668da846e5665597f">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_VALUE() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">MinimumVelocity&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stepsPerFIXME&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad90a5a27d2d8e4c5a0f1d082b0400da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90a5a27d2d8e4c5a0f1d082b0400da0">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_VALUE() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">PositionLatched&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">steps&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1143a07af598e470e472e5aa971c723f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1143a07af598e470e472e5aa971c723f">&#9670;&nbsp;</a></span>MCI_DECLARE_SET_GET_VALUE() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">PositionTolerance&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">steps&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63974b41475d39a6b49a5045b0e4d7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63974b41475d39a6b49a5045b0e4d7dc">&#9670;&nbsp;</a></span>MCI_DECLARE_SIGNED_SET_GET_VALUE() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SIGNED_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">TargetPosition&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">steps&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a424aae7374bf1f34fe8daf99bf77e028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424aae7374bf1f34fe8daf99bf77e028">&#9670;&nbsp;</a></span>MCI_DECLARE_SIGNED_SET_GET_VALUE() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtca4u::MotorControlerImpl::MCI_DECLARE_SIGNED_SET_GET_VALUE </td>
+          <td>(</td>
+          <td class="paramtype">TargetVelocity&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stepsPerFIXME&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1695,36 +1652,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The class is non-assignable. </p>
-
-</div>
-</div>
-<a id="a179ab2cb2ffcd3ab3c09b07bf7199886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a179ab2cb2ffcd3ab3c09b07bf7199886">&#9670;&nbsp;</a></span>setAccelerationThresholdData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setAccelerationThresholdData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a> const &amp;&#160;</td>
-          <td class="paramname"><em>accelerationThresholdData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a17d4ada093bf1ee0ec0c211c33748f8d">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00339">339</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -1866,8 +1793,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#acce4183b26dc4537469fcd81c16defd5">mtca4u::MotorControlerExpert</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00346">346</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
 </div>
 </div>
 <a id="ac42cff935dc27c258b7e29db324440d4"></a>
@@ -1895,8 +1820,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a96a33f20bfeb1ac039000354e669f3a6">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00347">347</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -1930,36 +1853,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9fa53b0ce29e7028eef295a192147dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fa53b0ce29e7028eef295a192147dda">&#9670;&nbsp;</a></span>setDividersAndMicroStepResolutionData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setDividersAndMicroStepResolutionData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a> const &amp;&#160;</td>
-          <td class="paramname"><em>dividersAndMicroStepResolutionData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a47c2862c689e9ece3cc1be3d4c8d5ee8">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00343">343</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="a9f217f058ff015dcffe5ed0b95da9530"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f217f058ff015dcffe5ed0b95da9530">&#9670;&nbsp;</a></span>setDriverConfigData()</h2>
 
@@ -1985,8 +1878,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a64590bc61eb16ea15fa55dc42b120fa5">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00349">349</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -2015,8 +1906,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a3e2b21049d077fb66f3d5b7de66d03cf">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00345">345</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -2081,96 +1970,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a58113728ab27b385b20f1114674e980b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58113728ab27b385b20f1114674e980b">&#9670;&nbsp;</a></span>setInterruptData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setInterruptData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a> const &amp;&#160;</td>
-          <td class="paramname"><em>interruptData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a6ebac86907bd1a192195d7da2ba32529">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00342">342</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="aa36bd88a80a7e01fcb3b3473b6240cae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa36bd88a80a7e01fcb3b3473b6240cae">&#9670;&nbsp;</a></span>setMaximumAcceleration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setMaximumAcceleration </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>stepsPerSquareFIXME</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a343672b66d558bc3b842470850044b50">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00290">290</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="af887f478bd2a0159d236c940918723d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af887f478bd2a0159d236c940918723d9">&#9670;&nbsp;</a></span>setMaximumVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setMaximumVelocity </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>stepsPerFIXME</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#accbe80afa9d23c6a2028f795351e81c8">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00299">299</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="a8f4d2614b5ed09c33121ebf33a8d0239"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f4d2614b5ed09c33121ebf33a8d0239">&#9670;&nbsp;</a></span>setMicroStepCount()</h2>
 
@@ -2198,36 +1997,6 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a578ae93c38c637177f16996a5e17de89">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00193">193</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a47cb48c2f1bfd7d1a43e7582de813bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47cb48c2f1bfd7d1a43e7582de813bb7">&#9670;&nbsp;</a></span>setMinimumVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setMinimumVelocity </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>stepsPerFIXME</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a5749f18119c9391f80f7f3cf13808227">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00288">288</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -2326,66 +2095,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad323f37b8b18ca2e43f1d1ff4caedb6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad323f37b8b18ca2e43f1d1ff4caedb6e">&#9670;&nbsp;</a></span>setPositionLatched()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setPositionLatched </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>steps</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a6a0fb3302585c595e221c6bb36ebbfd0">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00292">292</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a5eed96495d5db4150c62acee9dcd7f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eed96495d5db4150c62acee9dcd7f9c">&#9670;&nbsp;</a></span>setPositionTolerance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setPositionTolerance </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>steps</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a2b9d982ba8ce5ca493a546f493dbbd79">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00291">291</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="af3980683530bb053c62cad9a2ccfa5ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3980683530bb053c62cad9a2ccfa5ef">&#9670;&nbsp;</a></span>setPositiveReferenceSwitchCalibration()</h2>
 
@@ -2451,66 +2160,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae4209f7363004ec3ae96e176bb442678"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4209f7363004ec3ae96e176bb442678">&#9670;&nbsp;</a></span>setProportionalityFactorData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setProportionalityFactorData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a> const &amp;&#160;</td>
-          <td class="paramname"><em>proportionalityFactorData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#acf3d297fcc206f166612f0c05708baa9">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00340">340</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a35bd14f0731669fa9252451ed9759363"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35bd14f0731669fa9252451ed9759363">&#9670;&nbsp;</a></span>setReferenceConfigAndRampModeData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setReferenceConfigAndRampModeData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a> const &amp;&#160;</td>
-          <td class="paramname"><em>referenceConfigAndRampModeData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a9652229e36d9a4a5b5c8b1d7e2cc595e">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00341">341</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a id="ae55722f5c6effd190b0f4f50bf5b5293"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae55722f5c6effd190b0f4f50bf5b5293">&#9670;&nbsp;</a></span>setStallGuardControlData()</h2>
 
@@ -2536,76 +2185,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ab8b6566b1583d26531c401139d84efb9">mtca4u::MotorControlerExpert</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00348">348</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
-<a id="a79d7ae8f048ea642b8f07f10ee34053c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d7ae8f048ea642b8f07f10ee34053c">&#9670;&nbsp;</a></span>setTargetPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setTargetPosition </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>steps</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a7f891de90c1630fce8c3b35742188fe7">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00255">255</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a79d7ae8f048ea642b8f07f10ee34053c_cgraph.svg" width="432" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="aa30d915d6eff9f4b4b65757149432bd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa30d915d6eff9f4b4b65757149432bd2">&#9670;&nbsp;</a></span>setTargetVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::MotorControlerImpl::setTargetVelocity </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>stepsPerFIXME</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a91b089734ff23c6582aedbbecbf33a2c">mtca4u::MotorControler</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00289">289</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
 </div>
 </div>
@@ -2697,11 +2276,11 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aee36371b3b39fae124c37698082c4b65">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00431">431</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_ab4c37b67435001447829b6551bdc6062_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -2718,7 +2297,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 03:54:21 for DFMC-MD22 Motor Controller by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 04:54:14 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

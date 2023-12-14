@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "DFMC-MD22 Motor Controller", "index.html", [
+  [ "mtca4u-MotorDriverCard", "index.html", [
     [ "MotorDriverCard", "index.html", [
       [ "Getting Started", "index.html#getting_started", null ]
     ] ],
@@ -76,15 +76,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_stepper_motor_8cc.html",
-"_stepper_motor_util_8h.html#a2331302d0887fc536d9ccd2d73d2c363",
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a7d6a4db96be0b38362140f964f0c161e",
-"class_motor_driver_card_config_x_m_l_test.html#a53b3985d208db685de08ab99084ee480",
-"classmtca4u_1_1_driver_status_data.html#aaa1fd9ed0e3d6ce9b4581785e9e5b019",
-"classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9",
-"classmtca4u_1_1_proportionality_factor_data.html#a8b787d4dd88c93bdc6ea191acaa02359",
-"create_output_mask_using_setter_getter_8h.html",
-"namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1",
-"test_state_machine_8cc.html#a509ce183f3e07fd4813c81722b06ad2c"
+"_stepper_motor_status_8h_source.html",
+"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a6674b002f14713d66efda77fda47ac9d",
+"class_motor_driver_card_config_x_m_l_test.html#abf31d3625553fd4b8cca2018d087af92",
+"classmtca4u_1_1_interrupt_data.html#ad37d0221ce83f19f40ecf7230a025755",
+"classmtca4u_1_1_motor_controler_test.html#af158ef1cf97f8fdfd819ad1aa02e9291",
+"classmtca4u_1_1_stepper_motor_status_and_error.html#a8723656d410a57c8ab3e0833b8fb5407",
+"namespacemembers.html",
+"test_linear_stepper_motor_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
