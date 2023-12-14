@@ -325,36 +325,33 @@ $(document).ready(function(){initNavTree('steppermotor_2src_2_linear_stepper_mot
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">bool</span> posActive = <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getReferenceSwitchData().getPositiveSwitchActive() == 1U;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">bool</span> negActive = <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getReferenceSwitchData().getNegativeSwitchActive() == 1U;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;iesa (&quot;</span> &lt;&lt; <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getID() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; (int) sign &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; posActive</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; negActive &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">if</span>(posActive &amp;&amp; negActive) {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff">_errorMode</a>.exchange(<a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a5b0b5cb7b389b72d7c6fbbb0af4f0136">Error::BOTH_END_SWITCHES_ON</a>);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;setAndProcessUserEvent(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a819969a46c75f25521fb7e2779b437bc">StateMachine::errorEvent</a>);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#acc45fc3e3663dd572b80675f8ce18e54">_toleranceCalculated</a>) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordflow">if</span>(posActive) {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">if</span>(std::abs(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getActualPosition() - <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a364cb63522e921e27a92b920fffd7569">_calibPositiveEndSwitchInSteps</a>.load()) &gt;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            3 * <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a4fd795663b9763090cad482d1fd5f811">_tolerancePositiveEndSwitch</a>.load()) {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff">_errorMode</a>.exchange(<a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a">Error::CALIBRATION_ERROR</a>);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(negActive) {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span>(std::abs(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getActualPosition() - <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#ad34b452b9e6e10ba78a878205e6976da">_calibNegativeEndSwitchInSteps</a>.load()) &gt;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            3 * <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a9ece66a89bddda17d9feab3e28c74aca">_toleranceNegativeEndSwitch</a>.load()) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff">_errorMode</a>.exchange(<a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a">Error::CALIBRATION_ERROR</a>);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span>(sign == <a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713aab6c31432785221bae58327ef5f6ea58">Sign::POSITIVE</a>) {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">return</span> posActive;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">return</span> negActive;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  }</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}} <span class="comment">// namespace ChimeraTK::MotorDriver</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span>(posActive &amp;&amp; negActive) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff">_errorMode</a>.exchange(<a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a5b0b5cb7b389b72d7c6fbbb0af4f0136">Error::BOTH_END_SWITCHES_ON</a>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a64156d3e81e57dd8995bb27eed9b4ed2">_stateMachine</a>-&gt;setAndProcessUserEvent(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a819969a46c75f25521fb7e2779b437bc">StateMachine::errorEvent</a>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#acc45fc3e3663dd572b80675f8ce18e54">_toleranceCalculated</a>) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">if</span>(posActive) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span>(std::abs(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getActualPosition() - <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a364cb63522e921e27a92b920fffd7569">_calibPositiveEndSwitchInSteps</a>.load()) &gt;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            3 * <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a4fd795663b9763090cad482d1fd5f811">_tolerancePositiveEndSwitch</a>.load()) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff">_errorMode</a>.exchange(<a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a">Error::CALIBRATION_ERROR</a>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(negActive) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">if</span>(std::abs(<a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97">_motorControler</a>-&gt;getActualPosition() - <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#ad34b452b9e6e10ba78a878205e6976da">_calibNegativeEndSwitchInSteps</a>.load()) &gt;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            3 * <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a9ece66a89bddda17d9feab3e28c74aca">_toleranceNegativeEndSwitch</a>.load()) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;          <a class="code" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff">_errorMode</a>.exchange(<a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722acc1cb0bbb2a9339edb309a8e2314485a">Error::CALIBRATION_ERROR</a>);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">if</span>(sign == <a class="code" href="namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713aab6c31432785221bae58327ef5f6ea58">Sign::POSITIVE</a>) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordflow">return</span> posActive;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">return</span> negActive;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}} <span class="comment">// namespace ChimeraTK::MotorDriver</span></div>
 <div class="ttc" id="a_basic_stepper_motor_8cc_html_a10da7ddf39cf793ff4d0c0a8117ad2b6"><div class="ttname"><a href="_basic_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6">LockGuard</a></div><div class="ttdeci">boost::lock_guard&lt; boost::mutex &gt; LockGuard</div><div class="ttdef"><b>Definition:</b> <a href="_basic_stepper_motor_8cc_source.html#l00016">BasicStepperMotor.cc:16</a></div></div>
 <div class="ttc" id="a_motor_controler_8h_html"><div class="ttname"><a href="_motor_controler_8h.html">MotorControler.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_8h_html"><div class="ttname"><a href="_motor_driver_card_8h.html">MotorDriverCard.h</a></div></div>
@@ -441,7 +438,7 @@ $(document).ready(function(){initNavTree('steppermotor_2src_2_linear_stepper_mot
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c80554c2587133db87f1fb9893ad232b.html">steppermotor</a></li><li class="navelem"><a class="el" href="dir_8f135189823858db11ff478f3ebf83c5.html">src</a></li><li class="navelem"><a class="el" href="steppermotor_2src_2_linear_stepper_motor_8cc.html">LinearStepperMotor.cc</a></li>
-    <li class="footer">Generated on Fri Oct 13 2023 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 04:54:00 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
