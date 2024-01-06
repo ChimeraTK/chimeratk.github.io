@@ -8,9 +8,7 @@ var struct_process_array_factory_backend =
     [ "getMetadataCatalogue", "struct_process_array_factory_backend.html#a0bd651d037fbd925f4c3f340ae8cd024", null ],
     [ "getRegisterAccessor_impl", "struct_process_array_factory_backend.html#a74fd1b917c789bb4dd657d78843753ac", null ],
     [ "getRegisterCatalogue", "struct_process_array_factory_backend.html#ad68a5639d7a070b18e5283c004356c4e", null ],
-    [ "isFunctional", "struct_process_array_factory_backend.html#ac39250a2d8a6436b4619587abacd65db", null ],
     [ "open", "struct_process_array_factory_backend.html#a1127b3c71fef4f58e4895af0447fe170", null ],
     [ "readDeviceInfo", "struct_process_array_factory_backend.html#aa540d33dff5765b01dda6e6a5848324d", null ],
-    [ "setException", "struct_process_array_factory_backend.html#afd110f2bde405a322cd8d321f4341e75", null ],
     [ "_pv", "struct_process_array_factory_backend.html#a0284a4a102c3828c909e4639c8c3acda", null ]
 ];
