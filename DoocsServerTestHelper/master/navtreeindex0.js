@@ -1,8 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "_threaded_doocs_server_8h.html":[2,0,1,1],
-"_threaded_doocs_server_8h.html#a06c138c2b0b13b0e11be4e16bf242cb8":[2,0,1,1,2],
-"_threaded_doocs_server_8h.html#a1d2837d35ebae192da6a291f10b255d0":[2,0,1,1,1],
+"_threaded_doocs_server_8h.html#a06c138c2b0b13b0e11be4e16bf242cb8":[2,0,1,1,1],
 "_threaded_doocs_server_8h_source.html":[2,0,1,1],
 "annotated.html":[1,0],
 "class_doocs_server_test_helper.html":[1,0,0],

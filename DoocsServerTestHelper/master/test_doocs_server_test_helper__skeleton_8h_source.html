@@ -88,15 +88,15 @@ $(document).ready(function(){initNavTree('test_doocs_server_test_helper__skeleto
 </div><!--header-->
 <div class="contents">
 <a href="test_doocs_server_test_helper__skeleton_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;future&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;signal.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="doocs_server_test_helper_8h.html">doocsServerTestHelper.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="doocs_server_test_helper_8h.html">doocsServerTestHelper.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;future&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;signal.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('test_doocs_server_test_helper__skeleto
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    add(BOOST_CLASS_TEST_CASE(&amp;<a class="code" href="class_helper_test.html#a736c2f4eacb731037f8688ec41dfffd7">HelperTest::testRoutine</a>, HelperTestPtr));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="test_doocs_server_test_helper__skeleton_8h.html#a49394edadc36ff2739d7f79cca01aa1b">   67</a></span>&#160;test_suite* <a class="code" href="test_doocs_server_test_helper__skeleton_8h.html#a49394edadc36ff2739d7f79cca01aa1b">init_unit_test_suite</a>(<span class="keywordtype">int</span> <span class="comment">/*argc*/</span>, <span class="keywordtype">char</span>* <span class="comment">/*argv*/</span> []) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="test_doocs_server_test_helper__skeleton_8h.html#a49394edadc36ff2739d7f79cca01aa1b">   67</a></span>&#160;test_suite* <a class="code" href="test_doocs_server_test_helper__skeleton_8h.html#a49394edadc36ff2739d7f79cca01aa1b">init_unit_test_suite</a>(<span class="keywordtype">int</span> <span class="comment">/*argc*/</span>, <span class="keywordtype">char</span>* <span class="comment">/*argv*/</span>[]) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  framework::master_test_suite().p_name.value = <span class="stringliteral">&quot;DoocsServerTestHelper class test suite&quot;</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  framework::master_test_suite().add(<span class="keyword">new</span> <a class="code" href="class_helper_test_suite.html">HelperTestSuite</a>());</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
@@ -405,7 +405,7 @@ $(document).ready(function(){initNavTree('test_doocs_server_test_helper__skeleto
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_doocs_server_test_helper__skeleton_8h.html">testDoocsServerTestHelper_skeleton.h</a></li>
-    <li class="footer">Generated on Fri Oct 13 2023 03:56:49 for doocs-server-test-helper by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:58:08 for doocs-server-test-helper by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
