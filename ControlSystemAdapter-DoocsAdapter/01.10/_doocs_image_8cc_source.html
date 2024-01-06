@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
-   &#160;<span id="projectnumber">01.10.00</span>
+   &#160;<span id="projectnumber">01.10.02</span>
    </div>
   </td>
  </tr>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('_doocs_image_8cc_source.html',''); ini
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;data provided to DoocsImage._processArray was not recognized as image&quot;</span>);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_doocs_image.html#a15a2ba95c7d8aee031e57d88ceb053b9">_processArray</a>-&gt;dataValidity() != ChimeraTK::DataValidity::ok) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_doocs_image.html#a15a2ba95c7d8aee031e57d88ceb053b9">_processArray</a>-&gt;dataValidity() != <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">ChimeraTK::DataValidity::ok</a>) {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      this-&gt;d_error(stale_data);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">else</span> {</div>
@@ -219,6 +219,7 @@ $(document).ready(function(){initNavTree('_doocs_image_8cc_source.html',''); ini
 <div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html_aa910037ad5a10c8047c7aa9a071bec0d"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html#aa910037ad5a10c8047c7aa9a071bec0d">ChimeraTK::PropertyBase::correctDoocsTimestamp</a></div><div class="ttdeci">doocs::Timestamp correctDoocsTimestamp()</div><div class="ttdoc">implements timestamp workarounds for associated DOOCS property</div><div class="ttdef"><b>Definition:</b> <a href="_property_base_8cc_source.html#l00067">PropertyBase.cc:67</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html_adc83cf086f9caac0f5612795eb68a3f9"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html#adc83cf086f9caac0f5612795eb68a3f9">ChimeraTK::PropertyBase::sendZMQ</a></div><div class="ttdeci">void sendZMQ(doocs::Timestamp timestamp)</div><div class="ttdoc">send data via ZeroMQ if enabled and if DOOCS initialisation is complete</div><div class="ttdef"><b>Definition:</b> <a href="_property_base_8cc_source.html#l00084">PropertyBase.cc:84</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
+<div class="ttc" id="anamespacefixme_html_a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046"><div class="ttname"><a href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">fixme::ok</a></div><div class="ttdeci">@ ok</div><div class="ttdef"><b>Definition:</b> <a href="fix_missing_doocs__eq__res_8h_source.html#l00012">fixMissingDoocs_eq_res.h:12</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_mapped_doocs_img_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_mapped_doocs_img.html">ChimeraTK::MappedDoocsImg</a></div><div class="ttdoc">implements DOOCS-specific mapping for MappedImage</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_image_8h_source.html#l00025">DoocsImage.h:25</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_mapped_doocs_img_html_a7a73506728f8229fff31a6c108b7d5ac"><div class="ttname"><a href="struct_chimera_t_k_1_1_mapped_doocs_img.html#a7a73506728f8229fff31a6c108b7d5ac">ChimeraTK::MappedDoocsImg::asDoocsImg</a></div><div class="ttdeci">unsigned char * asDoocsImg(IMH *headerOut)</div><div class="ttdoc">Overwrites headerOut and returns pointer to internal data, without header The DOOCS image format is s...</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_image_8cc_source.html#l00014">DoocsImage.cc:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -227,7 +228,7 @@ $(document).ready(function(){initNavTree('_doocs_image_8cc_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_doocs_image_8cc.html">DoocsImage.cc</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 05:01:23 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:58:54 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

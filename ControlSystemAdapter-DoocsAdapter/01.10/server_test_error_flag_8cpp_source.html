@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
-   &#160;<span id="projectnumber">01.10.00</span>
+   &#160;<span id="projectnumber">01.10.02</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="server_test_error_flag_8cpp.html#a5994cd1bd444433196ce7d30166b5f3e">   34</a></span>&#160;<a class="code" href="server_test_error_flag_8cpp.html#a5994cd1bd444433196ce7d30166b5f3e">BOOST_AUTO_TEST_CASE</a>(testScalar) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">auto</span> check = std::bind(checkErrorFlag&lt;D_int&gt;, <span class="stringliteral">&quot;//INT/FROM_DEVICE_SCALAR&quot;</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 12);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">auto</span> check = std::bind(checkErrorFlag&lt;D_intarray&gt;, <span class="stringliteral">&quot;//INT/FROM_DEVICE_ARRAY&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_ARRAY&quot;</span>, std::initializer_list&lt;int&gt;{12, 12, 12});</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, no_error);</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, stale_data);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// Test clearing the flag again</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_ARRAY&quot;</span>, std::initializer_list&lt;int&gt;{12, 12, 12});</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, no_error);</div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">auto</span> check = std::bind(checkErrorFlag&lt;D_spectrum&gt;, <span class="stringliteral">&quot;//SPECTRUM/TEST&quot;</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FLOAT/TO_DEVICE_ARRAY&quot;</span>, {140, 141, 142, 143, 144, 145, 146, 147, 148, 149});</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, no_error);</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, stale_data);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FLOAT/TO_DEVICE_ARRAY&quot;</span>, {140, 141, 142, 143, 144, 145, 146, 147, 148, 149});</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, no_error);</div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">auto</span> check = std::bind(checkErrorFlag&lt;D_xy&gt;, <span class="stringliteral">&quot;//XY/TEST&quot;</span>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  DoocsServerTestHelper::doocsSet&lt;double&gt;(</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_ARRAY&quot;</span>, {140, 141, 142, 143, 144, 145, 146, 147, 148, 149});</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  checkWithTimeout&lt;eq_errors&gt;(check, stale_data);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.dataValidity = <a class="code" href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">DataValidity::ok</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  DoocsServerTestHelper::doocsSet&lt;double&gt;(</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_ARRAY&quot;</span>, {140, 141, 142, 143, 144, 145, 146, 147, 148, 149});</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
@@ -204,6 +204,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
+<div class="ttc" id="anamespacefixme_html_a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046"><div class="ttname"><a href="namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfaf700bfd936c003bed254cee954f83046">fixme::ok</a></div><div class="ttdeci">@ ok</div><div class="ttdef"><b>Definition:</b> <a href="fix_missing_doocs__eq__res_8h_source.html#l00012">fixMissingDoocs_eq_res.h:12</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html_a9c2852da25e25d4dc4f3f36a4ed8e8df"><div class="ttname"><a href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00060">serverBasedTestTools.h:60</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html_ab72e9bb9f1d314e6e36ca2c81c3bf85c"><div class="ttname"><a href="server_based_test_tools_8h.html#ab72e9bb9f1d314e6e36ca2c81c3bf85c">getLocationFromPropertyAddress</a></div><div class="ttdeci">EqFct * getLocationFromPropertyAddress(std::string const &amp;propertyAddress)</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00087">serverBasedTestTools.h:87</a></div></div>
@@ -216,7 +217,7 @@ $(document).ready(function(){initNavTree('server_test_error_flag_8cpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="server_test_error_flag_8cpp.html">serverTestErrorFlag.cpp</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 05:01:23 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:58:54 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
