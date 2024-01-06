@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['myapp_534',['MyApp',['../struct_my_app.html',1,'']]]
+  ['handlefoldervariables_524',['HandleFolderVariables',['../struct_handle_folder_variables.html',1,'']]]
 ];

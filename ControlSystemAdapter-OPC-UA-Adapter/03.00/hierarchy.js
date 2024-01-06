@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "AdapterFolderHistorySetup", "struct_adapter_folder_history_setup.html", null ],
+    [ "AdapterHistorySetup", "struct_adapter_history_setup.html", null ],
+    [ "AdapterPVHistorySetup", "struct_adapter_p_v_history_setup.html", null ],
     [ "AdditionalVariableTest", "class_additional_variable_test.html", null ],
     [ "ApplicationBase", null, [
       [ "MyApp", "struct_my_app.html", null ]
@@ -7,6 +10,7 @@ var hierarchy =
     [ "csa_opcua_adapter", "classcsa__opcua__adapter.html", null ],
     [ "CSAOPCUATest", "class_c_s_a_o_p_c_u_a_test.html", null ],
     [ "FolderInfo", "struct_folder_info.html", null ],
+    [ "HandleFolderVariables", "struct_handle_folder_variables.html", null ],
     [ "ua_namespace.opcua_namespace", "classua__namespace_1_1opcua__namespace.html", null ],
     [ "ua_node_types.opcua_node_id_t", "classua__node__types_1_1opcua__node__id__t.html", null ],
     [ "ua_node_types.opcua_node_t", "classua__node__types_1_1opcua__node__t.html", [
@@ -72,7 +76,6 @@ var hierarchy =
       [ "ua_uaadapter", "classua__uaadapter.html", null ]
     ] ],
     [ "UA_NodeId_pair_t", "struct_u_a___node_id__pair__t.html", null ],
-    [ "ua_proxies", "classua__proxies.html", null ],
     [ "UAAdapterTest", "class_u_a_adapter_test.html", null ],
     [ "UAMappingTest", "class_u_a_mapping_test.html", null ],
     [ "xml_file_handler", "classxml__file__handler.html", null ],

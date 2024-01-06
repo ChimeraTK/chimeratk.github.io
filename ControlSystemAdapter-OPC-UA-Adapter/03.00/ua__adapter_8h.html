@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">03.00.90</span>
+   &#160;<span id="projectnumber">03.00.91</span>
    </div>
   </td>
  </tr>
@@ -89,17 +89,12 @@ $(document).ready(function(){initNavTree('ua__adapter_8h.html',''); initResizabl
 <div class="title">ua_adapter.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;ChimeraTK/ControlSystemAdapter/ControlSystemPVManager.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ua__additionalvariable_8h_source.html">ua_additionalvariable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ua__mapped__class_8h_source.html">ua_mapped_class.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ua__processvariable_8h_source.html">ua_processvariable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xml__file__handler_8h_source.html">xml_file_handler.h</a>&quot;</code><br />
-<code>#include &lt;open62541/config.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;open62541/config.h&gt;</code><br />
 <code>#include &lt;open62541/plugin/accesscontrol.h&gt;</code><br />
 <code>#include &lt;open62541/plugin/accesscontrol_default.h&gt;</code><br />
 <code>#include &lt;open62541/plugin/historydata/history_data_gathering.h&gt;</code><br />
 <code>#include &lt;open62541/server_config_default.h&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="node__historizing_8h_source.html">node_historizing.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ua_adapter.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,11 +116,11 @@ $(document).ready(function(){initNavTree('ua__adapter_8h.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_folder_info.html">FolderInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents a folder in OPCUA with its own node id and with his parent and child node id.  <a href="struct_folder_info.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html">ServerConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents a server config.  <a href="struct_server_config.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_folder_info.html">FolderInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct represents a folder in OPCUA with its own node id and with his parent and child node id.  <a href="struct_folder_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html">ua_uaadapter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provide the opcua server and manage the variable mapping.  <a href="classua__uaadapter.html#details">More...</a><br /></td></tr>
@@ -137,7 +132,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ua__adapter_8h.html">ua_adapter.h</a></li>
-    <li class="footer">Generated on Tue Jan 24 2023 04:58:58 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:59:08 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

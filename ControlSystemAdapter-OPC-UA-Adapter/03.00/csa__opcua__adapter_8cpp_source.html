@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">03.00.90</span>
+   &#160;<span id="projectnumber">03.00.91</span>
    </div>
   </td>
  </tr>
@@ -105,103 +105,161 @@ $(document).ready(function(){initNavTree('csa__opcua__adapter_8cpp_source.html',
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Copyright (c) 2016 Chris Iatrou &lt;Chris_Paul.Iatrou@tu-dresden.de&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Copyright (c) 2016 Julian Rahm  &lt;Julian.Rahm@tu-dresden.de&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;unistd.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="csa__opcua__adapter_8h.html">csa_opcua_adapter.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__adapter_8h.html">ua_adapter.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__processvariable_8h.html">ua_processvariable.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">   31</a></span>&#160;<a class="code" href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">csa_opcua_adapter::csa_opcua_adapter</a>(boost::shared_ptr&lt;ControlSystemPVManager&gt; <a class="code" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>, <span class="keywordtype">string</span> configFile) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  this-&gt;csManager = <a class="code" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">// Create new server adapter</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  this-&gt;adapter = <span class="keyword">new</span> <a class="code" href="classua__uaadapter.html">ua_uaadapter</a>(configFile);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Prepare history settings</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  adapter-&gt;<a class="code" href="classua__uaadapter.html#ab3dd0ff10fc1c75eaeeeae6fb055e9e2">prepareHistory</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Initialize the process variables</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// This internally starts the managed threads in the mgr...</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  vector&lt;ProcessVariable::SharedPtr&gt; allProcessVariables = this-&gt;csManager-&gt;getAllProcessVariables();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// start implicit var mapping</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">for</span>(ProcessVariable::SharedPtr oneProcessVariable : allProcessVariables) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// adapter-&gt;addVariable(oneProcessVariable-&gt;getName(), this-&gt;csManager);</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    adapter-&gt;<a class="code" href="classua__uaadapter.html#a1cd2d3846c18debb7da8526d0b89e3b0">implicitVarMapping</a>(oneProcessVariable-&gt;getName(), this-&gt;csManager);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  adapter-&gt;<a class="code" href="classua__uaadapter.html#a65bd1ee16f65bb277257c6f69de0beb3">applyMapping</a>(this-&gt;csManager);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  vector&lt;string&gt; allNotMappedVariables = adapter-&gt;<a class="code" href="classua__uaadapter.html#a7a221f466bc35e7a18779d02748dc8ae">getAllNotMappableVariablesNames</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">if</span>(!allNotMappedVariables.empty()) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;The following VariableNodes cant be mapped, because they are not member in PV-Manager:&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">string</span> var : allNotMappedVariables) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      cout &lt;&lt; var &lt;&lt; endl;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">   61</a></span>&#160;<a class="code" href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">csa_opcua_adapter::~csa_opcua_adapter</a>() {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  this-&gt;<a class="code" href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">stop</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  this-&gt;adapter-&gt;<a class="code" href="classua__uaadapter.html#a850d40c9b65e5140e5f72678f0b18e28">~ua_uaadapter</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38">   66</a></span>&#160;boost::shared_ptr&lt;ControlSystemPVManager&gt; <span class="keyword">const</span>&amp; <a class="code" href="classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38">csa_opcua_adapter::getControlSystemManager</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">return</span> this-&gt;csManager;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">   70</a></span>&#160;<a class="code" href="classua__uaadapter.html">ua_uaadapter</a>* <a class="code" href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">csa_opcua_adapter::getUAAdapter</a>() {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> this-&gt;adapter;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">csa_opcua_adapter::start</a>() {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span>(!this-&gt;adapter_thread.joinable()) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    this-&gt;adapter_thread = std::thread(&amp;<a class="code" href="classua__uaadapter.html#aa47b63552c9e6f53aede19be8c69d819">ua_uaadapter::workerThread</a>, this-&gt;adapter);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">csa_opcua_adapter::stop</a>() {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span>(this-&gt;adapter_thread.joinable()) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    this-&gt;adapter-&gt;<a class="code" href="classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393">running</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    this-&gt;adapter_thread.join();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#ae1ac142e1070a2865c732a980cafdec2">   87</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classcsa__opcua__adapter.html#ae1ac142e1070a2865c732a980cafdec2">csa_opcua_adapter::isRunning</a>() {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> this-&gt;adapter_thread.joinable();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_a52e356245d67842fc41813cd4687ef97"><div class="ttname"><a href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">csa_opcua_adapter::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Start all objects in single threads for this case only the opc ua server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00074">csa_opcua_adapter.cpp:74</a></div></div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_a5aa0336125f84e40a40e4e3a975c5890"><div class="ttname"><a href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">csa_opcua_adapter::getUAAdapter</a></div><div class="ttdeci">ua_uaadapter * getUAAdapter()</div><div class="ttdoc">Return the uaadapter, hence the OPC UA server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00070">csa_opcua_adapter.cpp:70</a></div></div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_a8a0a7ec49c048811c7f388a5053456f6"><div class="ttname"><a href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">csa_opcua_adapter::csa_opcua_adapter</a></div><div class="ttdeci">csa_opcua_adapter(boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager, string configFile)</div><div class="ttdoc">Constructor for ControlSystemAdapter-OPC-UA-Adapter.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00031">csa_opcua_adapter.cpp:31</a></div></div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_aadda2301ad68f34068c33602255bba38"><div class="ttname"><a href="classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38">csa_opcua_adapter::getControlSystemManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ControlSystemPVManager &gt; const  &amp; getControlSystemManager() const</div><div class="ttdoc">Return the ControlsystemPVManager of the class.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00066">csa_opcua_adapter.cpp:66</a></div></div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_ae134ec0a29d6ea00bc0119954769e8ab"><div class="ttname"><a href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">csa_opcua_adapter::~csa_opcua_adapter</a></div><div class="ttdeci">~csa_opcua_adapter()</div><div class="ttdoc">Destructor to stop the running thread, hence it stops the OPC UA server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00061">csa_opcua_adapter.cpp:61</a></div></div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_ae1ac142e1070a2865c732a980cafdec2"><div class="ttname"><a href="classcsa__opcua__adapter.html#ae1ac142e1070a2865c732a980cafdec2">csa_opcua_adapter::isRunning</a></div><div class="ttdeci">bool isRunning()</div><div class="ttdoc">Checks if the opcua server is still running and return the suitable bool value.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00087">csa_opcua_adapter.cpp:87</a></div></div>
-<div class="ttc" id="aclasscsa__opcua__adapter_html_af6f448821b6da351da9727aa06f534e2"><div class="ttname"><a href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">csa_opcua_adapter::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop all objects in single threads for this case only the opc ua server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00080">csa_opcua_adapter.cpp:80</a></div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Copyright (c) 2023 Andreas Ebner &lt;Andreas.Ebner@iosb.fraunhofer.de&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;unistd.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="csa__opcua__adapter_8h.html">csa_opcua_adapter.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="csa__processvariable_8h.html">csa_processvariable.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ua__adapter_8h.html">ua_adapter.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">   33</a></span>&#160;<a class="code" href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">csa_opcua_adapter::csa_opcua_adapter</a>(boost::shared_ptr&lt;ControlSystemPVManager&gt; <a class="code" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>, <span class="keywordtype">string</span> configFile) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  this-&gt;csManager = std::move(<a class="code" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Create new server adapter</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  this-&gt;adapter = <span class="keyword">new</span> <a class="code" href="classua__uaadapter.html">ua_uaadapter</a>(std::move(configFile));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Pre-Processing - get list of PV&#39;s to skip excluding</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  vector&lt;string&gt; mappedPvSources = adapter-&gt;<a class="code" href="classua__uaadapter.html#a00c75c9e953a0b7107db1cdd66bb12fa">getAllMappedPvSourceNames</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;List of mapped process variables: &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; f : mappedPvSources) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; f &lt;&lt; endl;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  vector&lt;ProcessVariable::SharedPtr&gt; allProcessVariables = this-&gt;csManager-&gt;getAllProcessVariables();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// start implicit var mapping</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> skip_var = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> ProcessVariable::SharedPtr&amp; oneProcessVariable : allProcessVariables) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//cout &lt;&lt; &quot;Info: &quot; &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> e : this-&gt;adapter-&gt;<a class="code" href="classua__uaadapter.html#a464d76a0e81c38d2982046ed4dd05f2a">exclude</a>){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">string</span> suffix_1 = <span class="stringliteral">&quot;/*&quot;</span>, suffix_2 =<span class="stringliteral">&quot;*&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">if</span>(e.rfind(suffix_1) == e.size() - suffix_1.size()){</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span>(oneProcessVariable-&gt;getName().rfind(e.substr(0, e.size()-1)) == 0){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          <span class="keywordtype">bool</span> pv_used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele: mappedPvSources){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span>(ele == oneProcessVariable-&gt;getName().substr(1, oneProcessVariable-&gt;getName().size()-1)){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              cout &lt;&lt; <span class="stringliteral">&quot;Warning: Skip exclude node - Used in pv-mapping (directory match) PV:&quot;</span> &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;              pv_used = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          <span class="keywordflow">if</span>(!pv_used){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Info: directory var exclude (/*) from mapping &quot;</span> &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            skip_var = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(e.rfind(suffix_2) == e.size() - suffix_2.size()){</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span>(oneProcessVariable-&gt;getName().rfind(e.substr(0, e.size()-1), 0) == 0){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          <span class="keywordtype">bool</span> pv_used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele: mappedPvSources){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span>(ele == oneProcessVariable-&gt;getName().substr(1, oneProcessVariable-&gt;getName().size()-1)){</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              cout &lt;&lt; <span class="stringliteral">&quot;Warning: Skip exclude node - Used in pv-mapping (greedy match) PV:&quot;</span> &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;              pv_used = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          <span class="keywordflow">if</span>(!pv_used){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Info: greedy var exclude (*) from mapping &quot;</span> &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            skip_var = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(oneProcessVariable-&gt;getName() == e){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;           <span class="comment">//check if this node is mapped later</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          <span class="keywordflow">if</span> (std::find(mappedPvSources.begin(), mappedPvSources.end(), e.substr(1, e.size() - 1)) != mappedPvSources.end()){</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Warning: Skip exclude node - Used in pv-mapping (direct match) PV:&quot;</span> &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl; <span class="comment">//Print namen</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Info: direct exclude var (direct match) from mapping&quot;</span> &lt;&lt; oneProcessVariable-&gt;getName() &lt;&lt; endl;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            skip_var = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span>(!skip_var){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        adapter-&gt;<a class="code" href="classua__uaadapter.html#ad1df2cd2cf1a93350eb14cdf1bff159b">implicitVarMapping</a>(oneProcessVariable-&gt;getName(), this-&gt;csManager);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">//variable is skipped and therefore unused</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        this-&gt;unusedVariables.insert(oneProcessVariable-&gt;getName());</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        skip_var = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  adapter-&gt;<a class="code" href="classua__uaadapter.html#a9d7148791c9a11efd551a44c2f978a11">applyMapping</a>(this-&gt;csManager);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  vector&lt;string&gt; allNotMappedVariables = adapter-&gt;<a class="code" href="classua__uaadapter.html#a7a221f466bc35e7a18779d02748dc8ae">getAllNotMappableVariablesNames</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span>(!allNotMappedVariables.empty()) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;The following VariableNodes cant be mapped, because they are not member in PV-Manager:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; var : allNotMappedVariables) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      cout &lt;&lt; var &lt;&lt; endl;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">  114</a></span>&#160;<a class="code" href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">csa_opcua_adapter::~csa_opcua_adapter</a>() {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  this-&gt;<a class="code" href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">stop</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  this-&gt;adapter-&gt;<a class="code" href="classua__uaadapter.html#a850d40c9b65e5140e5f72678f0b18e28">~ua_uaadapter</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38">  119</a></span>&#160;boost::shared_ptr&lt;ControlSystemPVManager&gt; <span class="keyword">const</span>&amp; <a class="code" href="classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38">csa_opcua_adapter::getControlSystemManager</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">return</span> this-&gt;csManager;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">  123</a></span>&#160;<a class="code" href="classua__uaadapter.html">ua_uaadapter</a>* <a class="code" href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">csa_opcua_adapter::getUAAdapter</a>() {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">return</span> this-&gt;adapter;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">  127</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">csa_opcua_adapter::start</a>() {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">if</span>(!this-&gt;adapter_thread.joinable()) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    this-&gt;adapter_thread = std::thread(&amp;<a class="code" href="classua__uaadapter.html#aa47b63552c9e6f53aede19be8c69d819">ua_uaadapter::workerThread</a>, this-&gt;adapter);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">  133</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">csa_opcua_adapter::stop</a>() {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span>(this-&gt;adapter_thread.joinable()) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    this-&gt;adapter-&gt;<a class="code" href="classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    this-&gt;adapter_thread.join();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#ae1ac142e1070a2865c732a980cafdec2">  140</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classcsa__opcua__adapter.html#ae1ac142e1070a2865c732a980cafdec2">csa_opcua_adapter::isRunning</a>() {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">return</span> this-&gt;adapter_thread.joinable();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classcsa__opcua__adapter.html#a8126d03a6aeaecdff2a5fb4a58ce90d9">  143</a></span>&#160;<span class="keyword">const</span> set&lt;string&gt;&amp; <a class="code" href="classcsa__opcua__adapter.html#a8126d03a6aeaecdff2a5fb4a58ce90d9">csa_opcua_adapter::getUnusedVariables</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">return</span> unusedVariables;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_a52e356245d67842fc41813cd4687ef97"><div class="ttname"><a href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">csa_opcua_adapter::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Start all objects in single threads for this case only the opc ua server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00127">csa_opcua_adapter.cpp:127</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_a5aa0336125f84e40a40e4e3a975c5890"><div class="ttname"><a href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">csa_opcua_adapter::getUAAdapter</a></div><div class="ttdeci">ua_uaadapter * getUAAdapter()</div><div class="ttdoc">Return the uaadapter, hence the OPC UA server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00123">csa_opcua_adapter.cpp:123</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_a8126d03a6aeaecdff2a5fb4a58ce90d9"><div class="ttname"><a href="classcsa__opcua__adapter.html#a8126d03a6aeaecdff2a5fb4a58ce90d9">csa_opcua_adapter::getUnusedVariables</a></div><div class="ttdeci">const set&lt; string &gt; &amp; getUnusedVariables() const</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00143">csa_opcua_adapter.cpp:143</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_a8a0a7ec49c048811c7f388a5053456f6"><div class="ttname"><a href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">csa_opcua_adapter::csa_opcua_adapter</a></div><div class="ttdeci">csa_opcua_adapter(boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager, string configFile)</div><div class="ttdoc">Constructor for ControlSystemAdapter-OPC-UA-Adapter.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00033">csa_opcua_adapter.cpp:33</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_aadda2301ad68f34068c33602255bba38"><div class="ttname"><a href="classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38">csa_opcua_adapter::getControlSystemManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ControlSystemPVManager &gt; const  &amp; getControlSystemManager() const</div><div class="ttdoc">Return the ControlsystemPVManager of the class.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00119">csa_opcua_adapter.cpp:119</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_ae134ec0a29d6ea00bc0119954769e8ab"><div class="ttname"><a href="classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab">csa_opcua_adapter::~csa_opcua_adapter</a></div><div class="ttdeci">~csa_opcua_adapter()</div><div class="ttdoc">Destructor to stop the running thread, hence it stops the OPC UA server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00114">csa_opcua_adapter.cpp:114</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_ae1ac142e1070a2865c732a980cafdec2"><div class="ttname"><a href="classcsa__opcua__adapter.html#ae1ac142e1070a2865c732a980cafdec2">csa_opcua_adapter::isRunning</a></div><div class="ttdeci">bool isRunning()</div><div class="ttdoc">Checks if the opcua server is still running and return the suitable bool value.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00140">csa_opcua_adapter.cpp:140</a></div></div>
+<div class="ttc" id="aclasscsa__opcua__adapter_html_af6f448821b6da351da9727aa06f534e2"><div class="ttname"><a href="classcsa__opcua__adapter.html#af6f448821b6da351da9727aa06f534e2">csa_opcua_adapter::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop all objects in single threads for this case only the opc ua server.</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__adapter_8cpp_source.html#l00133">csa_opcua_adapter.cpp:133</a></div></div>
 <div class="ttc" id="aclassua__uaadapter_html"><div class="ttname"><a href="classua__uaadapter.html">ua_uaadapter</a></div><div class="ttdoc">This class provide the opcua server and manage the variable mapping.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00100">ua_adapter.h:100</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_a1cd2d3846c18debb7da8526d0b89e3b0"><div class="ttname"><a href="classua__uaadapter.html#a1cd2d3846c18debb7da8526d0b89e3b0">ua_uaadapter::implicitVarMapping</a></div><div class="ttdeci">void implicitVarMapping(std::string varName, boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager)</div><div class="ttdoc">Start implicit mapping process.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00490">ua_adapter.cpp:490</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_a65bd1ee16f65bb277257c6f69de0beb3"><div class="ttname"><a href="classua__uaadapter.html#a65bd1ee16f65bb277257c6f69de0beb3">ua_uaadapter::applyMapping</a></div><div class="ttdeci">void applyMapping(boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager)</div><div class="ttdoc">Read mapping file and apply the contained folders, additional variables and pv mappings.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00450">ua_adapter.cpp:450</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_a7a221f466bc35e7a18779d02748dc8ae"><div class="ttname"><a href="classua__uaadapter.html#a7a221f466bc35e7a18779d02748dc8ae">ua_uaadapter::getAllNotMappableVariablesNames</a></div><div class="ttdeci">vector&lt; string &gt; getAllNotMappableVariablesNames()</div><div class="ttdoc">Methode to get all names from all potential VarableNodes from XML-Mappingfile which could not allocat...</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l01374">ua_adapter.cpp:1374</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_a850d40c9b65e5140e5f72678f0b18e28"><div class="ttname"><a href="classua__uaadapter.html#a850d40c9b65e5140e5f72678f0b18e28">ua_uaadapter::~ua_uaadapter</a></div><div class="ttdeci">~ua_uaadapter()</div><div class="ttdoc">Destrructor of the class.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00061">ua_adapter.cpp:61</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_aa47b63552c9e6f53aede19be8c69d819"><div class="ttname"><a href="classua__uaadapter.html#aa47b63552c9e6f53aede19be8c69d819">ua_uaadapter::workerThread</a></div><div class="ttdeci">void workerThread()</div><div class="ttdoc">Create and start a thread for the opcua server instance.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00459">ua_adapter.cpp:459</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_ab3dd0ff10fc1c75eaeeeae6fb055e9e2"><div class="ttname"><a href="classua__uaadapter.html#ab3dd0ff10fc1c75eaeeeae6fb055e9e2">ua_uaadapter::prepareHistory</a></div><div class="ttdeci">void prepareHistory()</div><div class="ttdoc">Prepare history by creating a gathering.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l01408">ua_adapter.cpp:1408</a></div></div>
-<div class="ttc" id="aclassua__uaadapter_html_ad9e41e2c6176bf24563bb1fa88c29393"><div class="ttname"><a href="classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393">ua_uaadapter::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00144">ua_adapter.h:144</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_a00c75c9e953a0b7107db1cdd66bb12fa"><div class="ttname"><a href="classua__uaadapter.html#a00c75c9e953a0b7107db1cdd66bb12fa">ua_uaadapter::getAllMappedPvSourceNames</a></div><div class="ttdeci">vector&lt; string &gt; getAllMappedPvSourceNames()</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l01539">ua_adapter.cpp:1539</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_a464d76a0e81c38d2982046ed4dd05f2a"><div class="ttname"><a href="classua__uaadapter.html#a464d76a0e81c38d2982046ed4dd05f2a">ua_uaadapter::exclude</a></div><div class="ttdeci">vector&lt; string &gt; exclude</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00143">ua_adapter.h:143</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_a7a221f466bc35e7a18779d02748dc8ae"><div class="ttname"><a href="classua__uaadapter.html#a7a221f466bc35e7a18779d02748dc8ae">ua_uaadapter::getAllNotMappableVariablesNames</a></div><div class="ttdeci">vector&lt; string &gt; getAllNotMappableVariablesNames()</div><div class="ttdoc">Methode to get all names from all potential VarableNodes from XML-Mappingfile which could not allocat...</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l01553">ua_adapter.cpp:1553</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_a850d40c9b65e5140e5f72678f0b18e28"><div class="ttname"><a href="classua__uaadapter.html#a850d40c9b65e5140e5f72678f0b18e28">ua_uaadapter::~ua_uaadapter</a></div><div class="ttdeci">~ua_uaadapter()</div><div class="ttdoc">Destrructor of the class.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00063">ua_adapter.cpp:63</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_a9d7148791c9a11efd551a44c2f978a11"><div class="ttname"><a href="classua__uaadapter.html#a9d7148791c9a11efd551a44c2f978a11">ua_uaadapter::applyMapping</a></div><div class="ttdeci">void applyMapping(const boost::shared_ptr&lt; ControlSystemPVManager &gt; &amp;csManager)</div><div class="ttdoc">Read mapping file and apply the contained folders, additional variables and pv mappings.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00544">ua_adapter.cpp:544</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_aa47b63552c9e6f53aede19be8c69d819"><div class="ttname"><a href="classua__uaadapter.html#aa47b63552c9e6f53aede19be8c69d819">ua_uaadapter::workerThread</a></div><div class="ttdeci">void workerThread()</div><div class="ttdoc">Create and start a thread for the opcua server instance.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00553">ua_adapter.cpp:553</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_ad1df2cd2cf1a93350eb14cdf1bff159b"><div class="ttname"><a href="classua__uaadapter.html#ad1df2cd2cf1a93350eb14cdf1bff159b">ua_uaadapter::implicitVarMapping</a></div><div class="ttdeci">void implicitVarMapping(const std::string &amp;varName, const boost::shared_ptr&lt; ControlSystemPVManager &gt; &amp;csManager)</div><div class="ttdoc">Start implicit mapping process.</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8cpp_source.html#l00589">ua_adapter.cpp:589</a></div></div>
+<div class="ttc" id="aclassua__uaadapter_html_ad9e41e2c6176bf24563bb1fa88c29393"><div class="ttname"><a href="classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393">ua_uaadapter::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="ua__adapter_8h_source.html#l00141">ua_adapter.h:141</a></div></div>
 <div class="ttc" id="acsa__opcua__adapter_8h_html"><div class="ttname"><a href="csa__opcua__adapter_8h.html">csa_opcua_adapter.h</a></div></div>
 <div class="ttc" id="acsa__opcua__application_8cpp_html_add976e3e567316f346a38deea3691cb1"><div class="ttname"><a href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager</div><div class="ttdef"><b>Definition:</b> <a href="csa__opcua__application_8cpp_source.html#l00058">csa_opcua_application.cpp:58</a></div></div>
+<div class="ttc" id="acsa__processvariable_8h_html"><div class="ttname"><a href="csa__processvariable_8h.html">csa_processvariable.h</a></div></div>
 <div class="ttc" id="aua__adapter_8h_html"><div class="ttname"><a href="ua__adapter_8h.html">ua_adapter.h</a></div></div>
-<div class="ttc" id="aua__processvariable_8h_html"><div class="ttname"><a href="ua__processvariable_8h.html">ua_processvariable.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="csa__opcua__adapter_8cpp.html">csa_opcua_adapter.cpp</a></li>
-    <li class="footer">Generated on Tue Jan 24 2023 04:58:58 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:59:08 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

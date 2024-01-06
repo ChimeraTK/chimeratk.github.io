@@ -19,6 +19,10 @@ var namespaces_dup =
       [ "type", "namespacecreate__self-signed.html#a234c4df08aaf5b013cbd7678b10e2477", null ],
       [ "uri", "namespacecreate__self-signed.html#a5c89d778bae24e275ebfe01080cd70ac", null ]
     ] ],
+    [ "fix-linter-for-all", "namespacefix-linter-for-all.html", [
+      [ "main", "namespacefix-linter-for-all.html#ab0cc65b5b365ba7a7276a416538b5371", null ],
+      [ "make_absolute", "namespacefix-linter-for-all.html#ac1509b919b6fe45c78b024a9b055c475", null ]
+    ] ],
     [ "generate_open62541CCode", "namespacegenerate__open62541_c_code.html", [
       [ "action", "namespacegenerate__open62541_c_code.html#a7a0d28ab1ccec49b66b9f86a7856922a", null ],
       [ "args", "namespacegenerate__open62541_c_code.html#a42c8d3b1f17206710908ca47c4e986b4", null ],

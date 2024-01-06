@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">03.00.90</span>
+   &#160;<span id="projectnumber">03.00.91</span>
    </div>
   </td>
  </tr>
@@ -89,21 +89,23 @@ $(document).ready(function(){initNavTree('ua__adapter_8cpp.html',''); initResiza
 <div class="title">ua_adapter.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="csa__namespaceinit__generated_8h_source.html">csa_namespaceinit_generated.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;open62541/plugin/historydata/history_data_backend_memory.h&gt;</code><br />
+<code>#include &lt;open62541/plugin/historydata/history_data_gathering_default.h&gt;</code><br />
+<code>#include &lt;open62541/plugin/historydata/history_database_default.h&gt;</code><br />
+<code>#include &lt;open62541/plugin/historydatabase.h&gt;</code><br />
+<code>#include &lt;open62541/plugin/log_stdout.h&gt;</code><br />
+<code>#include &lt;open62541/server.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="csa__namespace_8h_source.html">csa_namespace.h</a>&quot;</code><br />
 <code>#include &quot;unistd.h&quot;</code><br />
 <code>#include &lt;dirent.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="csa__config_8h_source.html">csa_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="csa__additionalvariable_8h_source.html">csa_additionalvariable.h</a>&quot;</code><br />
+<code>#include &quot;csa_config.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="csa__processvariable_8h_source.html">csa_processvariable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ua__additionalvariable_8h_source.html">ua_additionalvariable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ua__processvariable_8h_source.html">ua_processvariable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ua__map__types_8h_source.html">ua_map_types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="xml__file__handler_8h_source.html">xml_file_handler.h</a>&quot;</code><br />
-<code>#include &lt;open62541/plugin/historydata/history_data_backend_memory.h&gt;</code><br />
-<code>#include &lt;open62541/plugin/historydata/history_data_gathering_default.h&gt;</code><br />
-<code>#include &lt;open62541/plugin/historydata/history_database_default.h&gt;</code><br />
-<code>#include &lt;open62541/plugin/historydatabase.h&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;regex&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -142,7 +144,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00048">48</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00050">50</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -162,7 +164,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00047">47</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00049">49</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -172,7 +174,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ua__adapter_8cpp.html">ua_adapter.cpp</a></li>
-    <li class="footer">Generated on Tue Jan 24 2023 04:58:58 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:59:08 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

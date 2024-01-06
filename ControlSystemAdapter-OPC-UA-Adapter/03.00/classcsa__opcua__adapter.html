@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">03.00.90</span>
+   &#160;<span id="projectnumber">03.00.91</span>
    </div>
   </td>
  </tr>
@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5aa0336125f84e40a40e4e3a975c5890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classua__uaadapter.html">ua_uaadapter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">getUAAdapter</a> ()</td></tr>
 <tr class="memdesc:a5aa0336125f84e40a40e4e3a975c5890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the uaadapter, hence the OPC UA server.  <a href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">More...</a><br /></td></tr>
 <tr class="separator:a5aa0336125f84e40a40e4e3a975c5890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8126d03a6aeaecdff2a5fb4a58ce90d9"><td class="memItemLeft" align="right" valign="top">const set&lt; string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcsa__opcua__adapter.html#a8126d03a6aeaecdff2a5fb4a58ce90d9">getUnusedVariables</a> () const</td></tr>
+<tr class="separator:a8126d03a6aeaecdff2a5fb4a58ce90d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e356245d67842fc41813cd4687ef97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">start</a> ()</td></tr>
 <tr class="memdesc:a52e356245d67842fc41813cd4687ef97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start all objects in single threads for this case only the opc ua server.  <a href="classcsa__opcua__adapter.html#a52e356245d67842fc41813cd4687ef97">More...</a><br /></td></tr>
 <tr class="separator:a52e356245d67842fc41813cd4687ef97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +130,7 @@ Public Member Functions</h2></td></tr>
 Julian Rahm </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>22.11.2016 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8h_source.html#l00045">45</a> of file <a class="el" href="csa__opcua__adapter_8h_source.html">csa_opcua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8h_source.html#l00044">44</a> of file <a class="el" href="csa__opcua__adapter_8h_source.html">csa_opcua_adapter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a0a7ec49c048811c7f388a5053456f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a0a7ec49c048811c7f388a5053456f6">&#9670;&nbsp;</a></span>csa_opcua_adapter()</h2>
@@ -165,7 +167,7 @@ Julian Rahm </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00031">31</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00033">33</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -194,7 +196,7 @@ Julian Rahm </dd></dl>
 
 <p>Destructor to stop the running thread, hence it stops the OPC UA server. </p>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00061">61</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00114">114</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -233,7 +235,7 @@ Julian Rahm </dd></dl>
 <p>Return the ControlsystemPVManager of the class. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns a ControlSystemPVManager </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00066">66</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00119">119</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -263,7 +265,7 @@ Julian Rahm </dd></dl>
 <p>Return the uaadapter, hence the OPC UA server. </p>
 <dl class="section return"><dt>Returns</dt><dd>Return the <a class="el" href="classua__uaadapter.html" title="This class provide the opcua server and manage the variable mapping.">ua_uaadapter</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00070">70</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00123">123</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -272,6 +274,25 @@ Julian Rahm </dd></dl>
 <div class="center"><iframe scrolling="no" frameborder="0" src="classcsa__opcua__adapter_a5aa0336125f84e40a40e4e3a975c5890_icgraph.svg" width="660" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a8126d03a6aeaecdff2a5fb4a58ce90d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8126d03a6aeaecdff2a5fb4a58ce90d9">&#9670;&nbsp;</a></span>getUnusedVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const set&lt; string &gt; &amp; csa_opcua_adapter::getUnusedVariables </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00143">143</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +314,7 @@ Julian Rahm </dd></dl>
 <p>Checks if the opcua server is still running and return the suitable bool value. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current running state in form of true/false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00087">87</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00140">140</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -322,13 +343,13 @@ Julian Rahm </dd></dl>
 
 <p>Start all objects in single threads for this case only the opc ua server. </p>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00074">74</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00127">127</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcsa__opcua__adapter_a52e356245d67842fc41813cd4687ef97_cgraph.svg" width="422" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcsa__opcua__adapter_a52e356245d67842fc41813cd4687ef97_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -359,7 +380,7 @@ Julian Rahm </dd></dl>
 
 <p>Stop all objects in single threads for this case only the opc ua server. </p>
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00080">80</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__adapter_8cpp_source.html#l00133">133</a> of file <a class="el" href="csa__opcua__adapter_8cpp_source.html">csa_opcua_adapter.cpp</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -381,7 +402,7 @@ Julian Rahm </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classcsa__opcua__adapter.html">csa_opcua_adapter</a></li>
-    <li class="footer">Generated on Tue Jan 24 2023 04:58:58 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:59:08 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
