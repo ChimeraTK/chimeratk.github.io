@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"struct_scalar_defaults.html#ab903f826f48d61584975e0f671dc8663":[6,0,28,2],
 "supported_types.html":[3],
 "supported_types.html#ifff":[3,0],
 "test_caching_8cpp.html":[7,0,4,1,0],
