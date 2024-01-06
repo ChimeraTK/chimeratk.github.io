@@ -529,7 +529,7 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc_source.htm
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  ctk::VersionNumber someVersionBeforeReporting = {};</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  deviceBackend-&gt;throwExceptionOpen = <span class="keyword">true</span>; <span class="comment">// required to make sure device stays down</span></div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  application.group1.device.reportException(<span class="stringliteral">&quot;explicit report by test&quot;</span>);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  deviceBackend-&gt;setException(); <span class="comment">// FIXME: should this be called by reportException()??</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  deviceBackend-&gt;setException(<span class="stringliteral">&quot;explicit report by test&quot;</span>); <span class="comment">// FIXME: should this be called by reportException()??</span></div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  ctk::VersionNumber someVersionAfterReporting = {};</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  <span class="comment">//  Check push variable</span></div>
@@ -711,8 +711,8 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc_source.htm
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  deviceBackend-&gt;throwExceptionOpen = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  <span class="comment">// wait until the write exception has been thrown</span></div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  deviceBackend-&gt;thereHaveBeenExceptions = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;  <a class="code" href="test_control_system_accessors_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(deviceBackend-&gt;thereHaveBeenExceptions, 10000);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  deviceBackend-&gt;throwExceptionCounter = 0;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;  <a class="code" href="test_control_system_accessors_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(deviceBackend-&gt;throwExceptionCounter &gt; 0, 10000);</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;  BOOST_CHECK_NE(exceptionDummyRegister2[0], 803);</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;  BOOST_CHECK_NE(exceptionDummyRegister3[0], 802);</div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
@@ -843,7 +843,7 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_exception_handling_8cc.html">testExceptionHandling.cc</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:59:13 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:57:10 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
