@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['void_819',['Void',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661a81ceb48a978444906d80119200aa358d',1,'ChimeraTK::AutoPropertyDescription']]]
+  ['transaction_5ferror_830',['transaction_error',['../namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfa1e15f3bbeda97efb94a02f6462ad9589',1,'fixme']]],
+  ['transport_5ferror_831',['transport_error',['../namespacefixme.html#a09ee832dbbea9aed1312e72bcfb865cfa184c8487be82fed1b0ccc171d5e3344f',1,'fixme']]]
 ];

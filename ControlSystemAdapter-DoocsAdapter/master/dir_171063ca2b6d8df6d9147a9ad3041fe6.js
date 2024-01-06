@@ -1,5 +1,6 @@
 var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
 [
+    [ "fixMissingDoocs_eq_res.h", "fix_missing_doocs__eq__res_8h.html", "fix_missing_doocs__eq__res_8h" ],
     [ "serverTestArrayPersistence.cpp", "server_test_array_persistence_8cpp.html", "server_test_array_persistence_8cpp" ],
     [ "serverTestAutoCreateLocations.cpp", "server_test_auto_create_locations_8cpp.html", "server_test_auto_create_locations_8cpp" ],
     [ "serverTestCallOptimiseUnmappedVariables.cpp", "server_test_call_optimise_unmapped_variables_8cpp.html", "server_test_call_optimise_unmapped_variables_8cpp" ],
