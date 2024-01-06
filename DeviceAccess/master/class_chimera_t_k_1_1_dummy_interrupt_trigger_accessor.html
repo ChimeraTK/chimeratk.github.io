@@ -350,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_transfer_element"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_transfer_element')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a></td></tr>
 <tr class="memitem:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aee95f5dfccb41075150d0a7d00f5e494">_exceptionBackend</a></td></tr>
-<tr class="memdesc:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">The backend to which the runtime_errors are reported via <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31" title="Set the backend into an exception state.">DeviceBackend::setException()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#aee95f5dfccb41075150d0a7d00f5e494">More...</a><br /></td></tr>
+<tr class="memdesc:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">The backend to which the runtime_errors are reported via <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ab3d996241286ea3b233e3ea59824b670" title="Set the backend into an exception state.">DeviceBackend::setException()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#aee95f5dfccb41075150d0a7d00f5e494">More...</a><br /></td></tr>
 <tr class="separator:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13235d15a13bfc43764e464f1b6fe50d inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d">_name</a></td></tr>
 <tr class="memdesc:a13235d15a13bfc43764e464f1b6fe50d inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier uniquely identifying the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d">More...</a><br /></td></tr>
@@ -390,7 +390,7 @@ class ChimeraTK::DummyInterruptTriggerAccessor&lt; UserType &gt;</h3>
 <p>The <a class="el" href="class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html" title="The DummyInterruptTriggerAccessor class.">DummyInterruptTriggerAccessor</a> class. </p>
 <p>Pseudo-accessor for the hidden DUMMY_INTERRUPT_X_Y register that can be used to trigger the interrupt Y on interrupt controller X. This will do nothing but call <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a49048b0e780643064de64104ecefe497" title="Simulate the arrival of an interrupt.">DummyBackendBase::triggerInterrupt()</a> when written to. For backwards compatibility it can also be read from, but there is only a constant value available. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00020">20</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00022">22</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a606efab4953c8d852a00280b6db981ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a606efab4953c8d852a00280b6db981ed">&#9670;&nbsp;</a></span>DummyInterruptTriggerAccessor()</h2>
@@ -399,9 +399,6 @@ class ChimeraTK::DummyInterruptTriggerAccessor&lt; UserType &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html">ChimeraTK::DummyInterruptTriggerAccessor</a>&lt; UserType &gt;::<a class="el" href="class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html">DummyInterruptTriggerAccessor</a> </td>
@@ -445,14 +442,9 @@ template&lt;typename UserType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00022">22</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html#l00013">13</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html">DummyInterruptTriggerAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -488,7 +480,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -502,7 +494,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00060">60</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html#l00062">62</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html">DummyInterruptTriggerAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -527,7 +519,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -538,7 +530,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00050">50</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html#l00047">47</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html">DummyInterruptTriggerAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -573,7 +565,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -584,7 +576,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00066">66</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html#l00071">71</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html">DummyInterruptTriggerAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -623,7 +615,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00048">48</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00030">30</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -648,7 +640,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -661,7 +653,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00042">42</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html#l00038">38</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html">DummyInterruptTriggerAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -696,7 +688,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00082">82</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00043">43</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +725,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00086">86</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00047">47</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +759,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00078">78</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00039">39</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -801,7 +793,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00077">77</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00038">38</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -835,12 +827,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00079">79</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html#l00040">40</a> of file <a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>device_backends/DummyBackend/include/<a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a></li>
+<li>device_backends/src/<a class="el" href="_dummy_interrupt_trigger_accessor_8cc_source.html">DummyInterruptTriggerAccessor.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -848,7 +841,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html">DummyInterruptTriggerAccessor</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

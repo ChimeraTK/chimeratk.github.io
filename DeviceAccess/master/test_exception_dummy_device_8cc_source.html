@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('test_exception_dummy_device_8cc_source
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// test throwExceptionOpen</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7">exceptionDummy</a>-&gt;throwExceptionOpen = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  BOOST_CHECK(!<a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  BOOST_CHECK(<a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>()); <span class="comment">// has no effect yet, as no exception was thrown so far</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  BOOST_CHECK_THROW(<a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;(ExceptionDummy:1?map=test3.map)&quot;</span>), <a class="code" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  BOOST_CHECK(!<a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7">exceptionDummy</a>-&gt;throwExceptionOpen = <span class="keyword">false</span>;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('test_exception_dummy_device_8cc_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_exception_dummy_device_8cc.html">testExceptionDummyDevice.cc</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

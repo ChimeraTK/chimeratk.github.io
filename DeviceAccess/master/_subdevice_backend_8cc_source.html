@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('_subdevice_backend_8cc_source.html',''
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    obtainTargetBackend();</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// open target backend, unconditionally as it is also used for recovery</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    targetDevice-&gt;open();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    _opened = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    setOpenedAndClearException();</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
@@ -608,9 +608,9 @@ $(document).ready(function(){initNavTree('_subdevice_backend_8cc_source.html',''
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
-<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_subdevice_backend.html#ae31023a5d3bd9e0e129a6738ccd96b4b">  522</a></span>&#160;  <span class="keywordtype">void</span> SubdeviceBackend::setException() {</div>
+<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_subdevice_backend.html#a71bce7df8e7f0bb1df256b53b7f380d3">  522</a></span>&#160;  <span class="keywordtype">void</span> SubdeviceBackend::setExceptionImpl() noexcept {</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    obtainTargetBackend();</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    targetDevice-&gt;setException();</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    targetDevice-&gt;setException(getActiveExceptionMessage());</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  }</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; </div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
@@ -678,7 +678,7 @@ $(document).ready(function(){initNavTree('_subdevice_backend_8cc_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_f7d8e8f898b7b1e9b0579569ae94cf59.html">Subdevice</a></li><li class="navelem"><a class="el" href="dir_29bb4803b5e587fdd9ab5b7df8337e89.html">src</a></li><li class="navelem"><a class="el" href="_subdevice_backend_8cc.html">SubdeviceBackend.cc</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

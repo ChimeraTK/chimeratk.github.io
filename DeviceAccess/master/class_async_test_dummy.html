@@ -136,12 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d3832c36a317468c7d0e5f73e1da4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_async_test_dummy.html#a5d3832c36a317468c7d0e5f73e1da4be">close</a> () override</td></tr>
 <tr class="memdesc:a5d3832c36a317468c7d0e5f73e1da4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the device.  <a href="class_async_test_dummy.html#a5d3832c36a317468c7d0e5f73e1da4be">More...</a><br /></td></tr>
 <tr class="separator:a5d3832c36a317468c7d0e5f73e1da4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfaca7e1b448bc3c2a0d5dd1c3196a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_async_test_dummy.html#adfaca7e1b448bc3c2a0d5dd1c3196a7c">isFunctional</a> () const override</td></tr>
-<tr class="memdesc:adfaca7e1b448bc3c2a0d5dd1c3196a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_async_test_dummy.html#adfaca7e1b448bc3c2a0d5dd1c3196a7c">More...</a><br /></td></tr>
-<tr class="separator:adfaca7e1b448bc3c2a0d5dd1c3196a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a499dd48bdca5ca0262fab7bd824b555f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_async_test_dummy.html#a499dd48bdca5ca0262fab7bd824b555f">setException</a> () override</td></tr>
-<tr class="memdesc:a499dd48bdca5ca0262fab7bd824b555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="class_async_test_dummy.html#a499dd48bdca5ca0262fab7bd824b555f">More...</a><br /></td></tr>
-<tr class="separator:a499dd48bdca5ca0262fab7bd824b555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea294a10115818a143ae6918078ece7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_async_test_dummy.html#a9ea294a10115818a143ae6918078ece7">setExceptionImpl</a> () noexcept override</td></tr>
+<tr class="memdesc:a9ea294a10115818a143ae6918078ece7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be (optionally) implemented by backends if additional actions are needed when switching to the exception state.  <a href="class_async_test_dummy.html#a9ea294a10115818a143ae6918078ece7">More...</a><br /></td></tr>
+<tr class="separator:a9ea294a10115818a143ae6918078ece7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
 <tr class="memitem:ac9f608c0eafd7cb37f66290eb70f084d inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ac9f608c0eafd7cb37f66290eb70f084d">isOpen</a> () override</td></tr>
 <tr class="memdesc:ac9f608c0eafd7cb37f66290eb70f084d inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device has been opened or not.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ac9f608c0eafd7cb37f66290eb70f084d">More...</a><br /></td></tr>
@@ -152,6 +149,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a1e8276598a0d7d47923c7c5f0f7504 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_metadata_catalogue.html">MetadataCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">getMetadataCatalogue</a> () const override</td></tr>
 <tr class="memdesc:a7a1e8276598a0d7d47923c7c5f0f7504 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the device metadata catalogue.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">More...</a><br /></td></tr>
 <tr class="separator:a7a1e8276598a0d7d47923c7c5f0f7504 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45a13e22531ae57af9a4ae5072fc916 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916">checkActiveException</a> () final</td></tr>
+<tr class="memdesc:aa45a13e22531ae57af9a4ae5072fc916 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called by backends when needing to check for an active exception.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916">More...</a><br /></td></tr>
+<tr class="separator:aa45a13e22531ae57af9a4ae5072fc916 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a27c28b9e50f5750aa19c9eba775345 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a9a27c28b9e50f5750aa19c9eba775345">setException</a> (const std::string &amp;message) noexcept final</td></tr>
+<tr class="memdesc:a9a27c28b9e50f5750aa19c9eba775345 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a9a27c28b9e50f5750aa19c9eba775345">More...</a><br /></td></tr>
+<tr class="separator:a9a27c28b9e50f5750aa19c9eba775345 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e659ac1150dde815f3f89d0f6f18d38 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a1e659ac1150dde815f3f89d0f6f18d38">isFunctional</a> () const noexcept final</td></tr>
+<tr class="memdesc:a1e659ac1150dde815f3f89d0f6f18d38 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a1e659ac1150dde815f3f89d0f6f18d38">More...</a><br /></td></tr>
+<tr class="separator:a1e659ac1150dde815f3f89d0f6f18d38 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f748ddc8782147557f26ed5011d7d0 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a37f748ddc8782147557f26ed5011d7d0">getActiveExceptionMessage</a> () noexcept</td></tr>
+<tr class="separator:a37f748ddc8782147557f26ed5011d7d0 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_device_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_device_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend.html">ChimeraTK::DeviceBackend</a></td></tr>
 <tr class="memitem:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">~DeviceBackend</a> ()=default</td></tr>
 <tr class="memdesc:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every virtual class needs a virtual desctructor.  <a href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">More...</a><br /></td></tr>
@@ -182,9 +190,13 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
+<tr class="memitem:a2b51615c34b21184c43de53a327d28f3 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a2b51615c34b21184c43de53a327d28f3">setOpenedAndClearException</a> () noexcept</td></tr>
+<tr class="memdesc:a2b51615c34b21184c43de53a327d28f3 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backends should call this function at the end of a (successful) <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9" title="Open the device.">open()</a> call.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a2b51615c34b21184c43de53a327d28f3">More...</a><br /></td></tr>
+<tr class="separator:a2b51615c34b21184c43de53a327d28f3 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
 <tr class="memitem:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">_opened</a> {false}</td></tr>
-<tr class="memdesc:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if device is opened  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">More...</a><br /></td></tr>
+<tr class="memdesc:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if backend is opened  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">More...</a><br /></td></tr>
 <tr class="separator:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -413,39 +425,6 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="adfaca7e1b448bc3c2a0d5dd1c3196a7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfaca7e1b448bc3c2a0d5dd1c3196a7c">&#9670;&nbsp;</a></span>isFunctional()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AsyncTestDummy::isFunctional </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return whether a device is working as intended, usually this means it is opened and does not have any errors. </p>
-<p>The default implementation in DeviceBackendImpl reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
-<p>Notice: <a class="el" href="class_async_test_dummy.html#adfaca7e1b448bc3c2a0d5dd1c3196a7c" title="Return whether a device is working as intended, usually this means it is opened and does not have any...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_async_test_dummy.html#adfaca7e1b448bc3c2a0d5dd1c3196a7c" title="Return whether a device is working as intended, usually this means it is opened and does not have any...">isFunctional()</a>==false means you surely will get an exception. </p>
-
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00110">110</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a4b8f0b0fc0ecd3808369403b687fca5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b8f0b0fc0ecd3808369403b687fca5f">&#9670;&nbsp;</a></span>open()</h2>
 
@@ -509,8 +488,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a499dd48bdca5ca0262fab7bd824b555f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a499dd48bdca5ca0262fab7bd824b555f">&#9670;&nbsp;</a></span>setException()</h2>
+<a id="a9ea294a10115818a143ae6918078ece7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea294a10115818a143ae6918078ece7">&#9670;&nbsp;</a></span>setExceptionImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,7 +498,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void AsyncTestDummy::setException </td>
+          <td class="memname">void AsyncTestDummy::setExceptionImpl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -527,17 +506,16 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the backend into an exception state. </p>
-<p>All backends must remember this, turn off asyncronous reads and all accessors will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> on read and write operations, saying that there is a "previous, unrecovered fault", until <a class="el" href="class_async_test_dummy.html#a4b8f0b0fc0ecd3808369403b687fca5f" title="Open the device.">open()</a> has been called successfully. </p>
+<p>Function to be (optionally) implemented by backends if additional actions are needed when switching to the exception state. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">ChimeraTK::DeviceBackend</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a68d180274f6f2982ad544e53d36f57ec">ChimeraTK::DeviceBackendImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00115">115</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00113">113</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +532,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00120">120</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00117">117</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 
 </div>
 </div>
@@ -570,7 +548,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00112">112</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00110">110</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +564,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00113">113</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00111">111</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 
 </div>
 </div>
@@ -599,7 +577,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_async_test_dummy.html">AsyncTestDummy</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

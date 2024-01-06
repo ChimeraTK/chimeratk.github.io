@@ -1088,10 +1088,10 @@ $(document).ready(function(){initNavTree('test_l_map_backend_8cpp_source.html','
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;  d.<a class="code" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>();</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;  BOOST_CHECK(d.isFunctional() == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160; </div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;  exceptionDummyBackend-&gt;throwExceptionOpen = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;  d.setException(<span class="stringliteral">&quot;Test Exception&quot;</span>);</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;  BOOST_CHECK(d.isFunctional() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160; </div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;  exceptionDummyBackend-&gt;throwExceptionOpen = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;  d.open();</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;  BOOST_CHECK(d.isFunctional() == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;  d.close();</div>
@@ -1251,7 +1251,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_l_map_backend_8cpp.html">testLMapBackend.cpp</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

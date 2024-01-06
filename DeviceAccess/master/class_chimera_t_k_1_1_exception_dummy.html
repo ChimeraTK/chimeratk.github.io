@@ -127,9 +127,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab096f484f36d332098b265d95f40dcc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ab096f484f36d332098b265d95f40dcc2">write</a> (uint64_t bar, uint64_t address, int32_t const *data, size_t sizeInBytes) override</td></tr>
 <tr class="memdesc:ab096f484f36d332098b265d95f40dcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write function to be implemented by backends.  <a href="class_chimera_t_k_1_1_exception_dummy.html#ab096f484f36d332098b265d95f40dcc2">More...</a><br /></td></tr>
 <tr class="separator:ab096f484f36d332098b265d95f40dcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd03c69319ed34541e791d11a4a9751d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d">isFunctional</a> () const override</td></tr>
-<tr class="memdesc:abd03c69319ed34541e791d11a4a9751d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d">More...</a><br /></td></tr>
-<tr class="separator:abd03c69319ed34541e791d11a4a9751d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9d8307fb2ba845e1ac817952ad70a0"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a3b9d8307fb2ba845e1ac817952ad70a0"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a3b9d8307fb2ba845e1ac817952ad70a0">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="memdesc:a3b9d8307fb2ba845e1ac817952ad70a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific override which allows to create push-type accessors.  <a href="class_chimera_t_k_1_1_exception_dummy.html#a3b9d8307fb2ba845e1ac817952ad70a0">More...</a><br /></td></tr>
@@ -146,9 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4ef5735a32d50e7cb7f699c08e7a349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ae4ef5735a32d50e7cb7f699c08e7a349">activateAsyncRead</a> () noexcept override</td></tr>
 <tr class="memdesc:ae4ef5735a32d50e7cb7f699c08e7a349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a> is set.  <a href="class_chimera_t_k_1_1_exception_dummy.html#ae4ef5735a32d50e7cb7f699c08e7a349">More...</a><br /></td></tr>
 <tr class="separator:ae4ef5735a32d50e7cb7f699c08e7a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c3f67cedde1d1ce738943d48065606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a58c3f67cedde1d1ce738943d48065606">setException</a> () override</td></tr>
-<tr class="memdesc:a58c3f67cedde1d1ce738943d48065606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="class_chimera_t_k_1_1_exception_dummy.html#a58c3f67cedde1d1ce738943d48065606">More...</a><br /></td></tr>
-<tr class="separator:a58c3f67cedde1d1ce738943d48065606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2dec4d94cdacd211caf2bf61db4f53a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ad2dec4d94cdacd211caf2bf61db4f53a">setExceptionImpl</a> () noexcept override</td></tr>
+<tr class="memdesc:ad2dec4d94cdacd211caf2bf61db4f53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be (optionally) implemented by backends if additional actions are needed when switching to the exception state.  <a href="class_chimera_t_k_1_1_exception_dummy.html#ad2dec4d94cdacd211caf2bf61db4f53a">More...</a><br /></td></tr>
+<tr class="separator:ad2dec4d94cdacd211caf2bf61db4f53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdaaa7b439df0b45045828438c29e50b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#afdaaa7b439df0b45045828438c29e50b">asyncReadActivated</a> ()</td></tr>
 <tr class="memdesc:afdaaa7b439df0b45045828438c29e50b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to test whether async read transfers are activated.  <a href="class_chimera_t_k_1_1_exception_dummy.html#afdaaa7b439df0b45045828438c29e50b">More...</a><br /></td></tr>
 <tr class="separator:afdaaa7b439df0b45045828438c29e50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +175,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24e4c090c6e02003de078c9ba9c97121 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a24e4c090c6e02003de078c9ba9c97121">write</a> ([[maybe_unused]] uint8_t bar,[[maybe_unused]] uint32_t address,[[maybe_unused]] int32_t const *data,[[maybe_unused]] size_t sizeInBytes) final</td></tr>
 <tr class="memdesc:a24e4c090c6e02003de078c9ba9c97121 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">You cannot override the write version with 32 bit address any more.  <a href="class_chimera_t_k_1_1_dummy_backend.html#a24e4c090c6e02003de078c9ba9c97121">More...</a><br /></td></tr>
 <tr class="separator:a24e4c090c6e02003de078c9ba9c97121 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_dummy_backend_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></td></tr>
+<tr class="memitem:a905555d8c2a6902277a4365ece876b9f inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a905555d8c2a6902277a4365ece876b9f">DummyBackendBase</a> (std::string const &amp;mapFileName)</td></tr>
+<tr class="separator:a905555d8c2a6902277a4365ece876b9f inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed323b8c565402996b7df7066b74051e inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#aed323b8c565402996b7df7066b74051e">~DummyBackendBase</a> () override=default</td></tr>
+<tr class="separator:aed323b8c565402996b7df7066b74051e inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f551b90d2862e26a337dc422f562a7 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a12f551b90d2862e26a337dc422f562a7">minimumTransferAlignment</a> ([[maybe_unused]] uint64_t bar) const override</td></tr>
+<tr class="memdesc:a12f551b90d2862e26a337dc422f562a7 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a12f551b90d2862e26a337dc422f562a7">More...</a><br /></td></tr>
+<tr class="separator:a12f551b90d2862e26a337dc422f562a7 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84135c9f1e16a20bf8d6312c4e6f5d0 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0">read</a> ([[maybe_unused]] uint8_t bar, [[maybe_unused]] uint32_t address, [[maybe_unused]] int32_t *data, [[maybe_unused]] size_t sizeInBytes) final</td></tr>
+<tr class="memdesc:aa84135c9f1e16a20bf8d6312c4e6f5d0 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">You cannot override the read version with 32 bit address any more.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0">More...</a><br /></td></tr>
+<tr class="separator:aa84135c9f1e16a20bf8d6312c4e6f5d0 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a0c628473b0df48e499c95b3def27b inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a34a0c628473b0df48e499c95b3def27b">write</a> ([[maybe_unused]] uint8_t bar, [[maybe_unused]] uint32_t address, [[maybe_unused]] int32_t const *data, [[maybe_unused]] size_t sizeInBytes) final</td></tr>
+<tr class="memdesc:a34a0c628473b0df48e499c95b3def27b inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">You cannot override the write version with 32 bit address any more.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a34a0c628473b0df48e499c95b3def27b">More...</a><br /></td></tr>
+<tr class="separator:a34a0c628473b0df48e499c95b3def27b inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1955cb88908fae9aec1709c65bc022e inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e">barIndexValid</a> ([[maybe_unused]] uint64_t bar) override</td></tr>
+<tr class="memdesc:ab1955cb88908fae9aec1709c65bc022e inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">All bars are valid in dummies.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e">More...</a><br /></td></tr>
+<tr class="separator:ab1955cb88908fae9aec1709c65bc022e inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac5711731ea8584a1344cfb3f5edb1b inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint64_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a2ac5711731ea8584a1344cfb3f5edb1b">getBarSizesInBytesFromRegisterMapping</a> () const</td></tr>
+<tr class="memdesc:a2ac5711731ea8584a1344cfb3f5edb1b inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the size of each bar because the DummyBackends allocate memory per bar.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a2ac5711731ea8584a1344cfb3f5edb1b">More...</a><br /></td></tr>
+<tr class="separator:a2ac5711731ea8584a1344cfb3f5edb1b inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dffeed356cf306fa049532715135709 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a9dffeed356cf306fa049532715135709 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a9dffeed356cf306fa049532715135709">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
+<tr class="memdesc:a9dffeed356cf306fa049532715135709 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific override which allows to create "DUMMY_INTEERRUPT_X" accessors.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a9dffeed356cf306fa049532715135709">More...</a><br /></td></tr>
+<tr class="separator:a9dffeed356cf306fa049532715135709 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
 <tr class="memitem:a60a7f6cf031d3fe4561cd07ee208d29f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a60a7f6cf031d3fe4561cd07ee208d29f">NumericAddressedBackend</a> (const std::string &amp;mapFileName=&quot;&quot;, std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt; registerMapPointer=std::make_unique&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt;())</td></tr>
 <tr class="separator:a60a7f6cf031d3fe4561cd07ee208d29f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +222,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad91568071e601c3100b79be077f532d inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aad91568071e601c3100b79be077f532d">activateAsyncRead</a> () noexcept override</td></tr>
 <tr class="memdesc:aad91568071e601c3100b79be077f532d inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a> is set.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aad91568071e601c3100b79be077f532d">More...</a><br /></td></tr>
 <tr class="separator:aad91568071e601c3100b79be077f532d inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a424dfc7d5ba776349f48f43a5e57ab17 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a424dfc7d5ba776349f48f43a5e57ab17">setException</a> () override</td></tr>
-<tr class="memdesc:a424dfc7d5ba776349f48f43a5e57ab17 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a424dfc7d5ba776349f48f43a5e57ab17">More...</a><br /></td></tr>
-<tr class="separator:a424dfc7d5ba776349f48f43a5e57ab17 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914f3d006a694ead290a36dc961c3468 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a914f3d006a694ead290a36dc961c3468">setExceptionImpl</a> () noexcept override</td></tr>
+<tr class="memdesc:a914f3d006a694ead290a36dc961c3468 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be (optionally) implemented by backends if additional actions are needed when switching to the exception state.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a914f3d006a694ead290a36dc961c3468">More...</a><br /></td></tr>
+<tr class="separator:a914f3d006a694ead290a36dc961c3468 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96b922f10797d9186f0ce6918bd2da52 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a96b922f10797d9186f0ce6918bd2da52">close</a> () final</td></tr>
 <tr class="memdesc:a96b922f10797d9186f0ce6918bd2da52 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates all asynchronous accessors and calls <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98" title="All backends derrived from NumericAddressedBackend must implement closeImpl() instead of close.">closeImpl()</a>.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a96b922f10797d9186f0ce6918bd2da52">More...</a><br /></td></tr>
 <tr class="separator:a96b922f10797d9186f0ce6918bd2da52 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +238,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">isConnected</a> () final</td></tr>
 <tr class="memdesc:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated since 2022-03-03.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">More...</a><br /></td></tr>
 <tr class="separator:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45a13e22531ae57af9a4ae5072fc916 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916">checkActiveException</a> () final</td></tr>
+<tr class="memdesc:aa45a13e22531ae57af9a4ae5072fc916 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called by backends when needing to check for an active exception.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916">More...</a><br /></td></tr>
+<tr class="separator:aa45a13e22531ae57af9a4ae5072fc916 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a27c28b9e50f5750aa19c9eba775345 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a9a27c28b9e50f5750aa19c9eba775345">setException</a> (const std::string &amp;message) noexcept final</td></tr>
+<tr class="memdesc:a9a27c28b9e50f5750aa19c9eba775345 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a9a27c28b9e50f5750aa19c9eba775345">More...</a><br /></td></tr>
+<tr class="separator:a9a27c28b9e50f5750aa19c9eba775345 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e659ac1150dde815f3f89d0f6f18d38 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a1e659ac1150dde815f3f89d0f6f18d38">isFunctional</a> () const noexcept final</td></tr>
+<tr class="memdesc:a1e659ac1150dde815f3f89d0f6f18d38 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a1e659ac1150dde815f3f89d0f6f18d38">More...</a><br /></td></tr>
+<tr class="separator:a1e659ac1150dde815f3f89d0f6f18d38 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f748ddc8782147557f26ed5011d7d0 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a37f748ddc8782147557f26ed5011d7d0">getActiveExceptionMessage</a> () noexcept</td></tr>
+<tr class="separator:a37f748ddc8782147557f26ed5011d7d0 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_device_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_device_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend.html">ChimeraTK::DeviceBackend</a></td></tr>
 <tr class="memitem:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">~DeviceBackend</a> ()=default</td></tr>
 <tr class="memdesc:a62d0ebfa2becc2f94eee54a5f1ccb49c inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every virtual class needs a virtual desctructor.  <a href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">More...</a><br /></td></tr>
@@ -235,17 +267,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_chimera_t_k_1_1_dummy_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_chimera_t_k_1_1_dummy_backend')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html">ChimeraTK::DummyBackend</a></td></tr>
 <tr class="memitem:a7918c2e8804a139c1e25b0ccaf2dec12 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a7918c2e8804a139c1e25b0ccaf2dec12">createInstance</a> (std::string address, std::map&lt; std::string, std::string &gt; parameters)</td></tr>
 <tr class="separator:a7918c2e8804a139c1e25b0ccaf2dec12 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></td></tr>
+<tr class="memitem:a13e3d7735ff46960b844d56de209fe37 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a13e3d7735ff46960b844d56de209fe37">checkSizeIsMultipleOfWordSize</a> (size_t sizeInBytes)</td></tr>
+<tr class="separator:a13e3d7735ff46960b844d56de209fe37 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eef6da51b1cc388fe3662f84cc08b73 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a9eef6da51b1cc388fe3662f84cc08b73 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a9eef6da51b1cc388fe3662f84cc08b73">returnInstance</a> ([[maybe_unused]] const std::string &amp;instanceId, Args &amp;&amp;... arguments)</td></tr>
+<tr class="memdesc:a9eef6da51b1cc388fe3662f84cc08b73 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backward compatibility: Leftover from the time when the dummy managed it's own map to return the same instance multiple times, and still allow to use the same map file with different instances.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a9eef6da51b1cc388fe3662f84cc08b73">More...</a><br /></td></tr>
+<tr class="separator:a9eef6da51b1cc388fe3662f84cc08b73 inherit pub_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9c7c34627bb1dc67ca27c0cf2c484774"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a9c7c34627bb1dc67ca27c0cf2c484774">throwExceptionOpen</a> {false}</td></tr>
-<tr class="separator:a9c7c34627bb1dc67ca27c0cf2c484774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c701089cee0c06f1f34802fb7b9ec14"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a0c701089cee0c06f1f34802fb7b9ec14">throwExceptionRead</a> {false}</td></tr>
-<tr class="separator:a0c701089cee0c06f1f34802fb7b9ec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af64ee2d7f3128cc71e2f2388e3e5bc2e"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#af64ee2d7f3128cc71e2f2388e3e5bc2e">throwExceptionWrite</a> {false}</td></tr>
-<tr class="separator:af64ee2d7f3128cc71e2f2388e3e5bc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7527540f560181e14d1715067f844a8"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ad7527540f560181e14d1715067f844a8">thereHaveBeenExceptions</a> {false}</td></tr>
-<tr class="separator:ad7527540f560181e14d1715067f844a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace44a9273e1e7d86b61150d9cc8a56b5"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ace44a9273e1e7d86b61150d9cc8a56b5">_pushDecoratorsMutex</a></td></tr>
 <tr class="memdesc:ace44a9273e1e7d86b61150d9cc8a56b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex to protect data structures for push decorators.  <a href="class_chimera_t_k_1_1_exception_dummy.html#ace44a9273e1e7d86b61150d9cc8a56b5">More...</a><br /></td></tr>
 <tr class="separator:ace44a9273e1e7d86b61150d9cc8a56b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,6 +304,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab0383f1287cbfe2b546a300114009213"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::pair&lt; uint64_t, uint64_t &gt;, std::atomic&lt; size_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ab0383f1287cbfe2b546a300114009213">_writeCounterMap</a></td></tr>
 <tr class="memdesc:ab0383f1287cbfe2b546a300114009213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map used allow determining number of writes of a specific register by tests. Map key is pair of bar and address.  <a href="class_chimera_t_k_1_1_exception_dummy.html#ab0383f1287cbfe2b546a300114009213">More...</a><br /></td></tr>
 <tr class="separator:ab0383f1287cbfe2b546a300114009213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_chimera_t_k_1_1_dummy_backend_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></td></tr>
+<tr class="memitem:acce11a882262aa1d6e01dfc2c5459417 inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#acce11a882262aa1d6e01dfc2c5459417">throwExceptionOpen</a> {false}</td></tr>
+<tr class="separator:acce11a882262aa1d6e01dfc2c5459417 inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4489f9ccceb15a786090de23e2d0ad99 inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a4489f9ccceb15a786090de23e2d0ad99">throwExceptionRead</a> {false}</td></tr>
+<tr class="separator:a4489f9ccceb15a786090de23e2d0ad99 inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eb07121bb5cd00f88723c9ee189e0e inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a03eb07121bb5cd00f88723c9ee189e0e">throwExceptionWrite</a> {false}</td></tr>
+<tr class="separator:a03eb07121bb5cd00f88723c9ee189e0e inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b47a66edf2bf30d91fd360fbb514570 inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a6b47a66edf2bf30d91fd360fbb514570">throwExceptionCounter</a> {0}</td></tr>
+<tr class="separator:a6b47a66edf2bf30d91fd360fbb514570 inherit pub_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -297,30 +337,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a98378836f79fa2c2389ed0fc0e50b9e5 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a98378836f79fa2c2389ed0fc0e50b9e5">writeRegisterWithoutCallback</a> (uint64_t bar, uint64_t address, int32_t data)</td></tr>
 <tr class="memdesc:a98378836f79fa2c2389ed0fc0e50b9e5 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not write-protected function for internal use only.  <a href="class_chimera_t_k_1_1_dummy_backend.html#a98378836f79fa2c2389ed0fc0e50b9e5">More...</a><br /></td></tr>
 <tr class="separator:a98378836f79fa2c2389ed0fc0e50b9e5 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_dummy_backend_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></td></tr>
-<tr class="memitem:a905555d8c2a6902277a4365ece876b9f inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a905555d8c2a6902277a4365ece876b9f">DummyBackendBase</a> (std::string const &amp;mapFileName)</td></tr>
-<tr class="separator:a905555d8c2a6902277a4365ece876b9f inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed323b8c565402996b7df7066b74051e inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#aed323b8c565402996b7df7066b74051e">~DummyBackendBase</a> () override=default</td></tr>
-<tr class="separator:aed323b8c565402996b7df7066b74051e inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f551b90d2862e26a337dc422f562a7 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a12f551b90d2862e26a337dc422f562a7">minimumTransferAlignment</a> ([[maybe_unused]] uint64_t bar) const override</td></tr>
-<tr class="memdesc:a12f551b90d2862e26a337dc422f562a7 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a12f551b90d2862e26a337dc422f562a7">More...</a><br /></td></tr>
-<tr class="separator:a12f551b90d2862e26a337dc422f562a7 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84135c9f1e16a20bf8d6312c4e6f5d0 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0">read</a> ([[maybe_unused]] uint8_t bar, [[maybe_unused]] uint32_t address, [[maybe_unused]] int32_t *data, [[maybe_unused]] size_t sizeInBytes) final</td></tr>
-<tr class="memdesc:aa84135c9f1e16a20bf8d6312c4e6f5d0 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">You cannot override the read version with 32 bit address any more.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0">More...</a><br /></td></tr>
-<tr class="separator:aa84135c9f1e16a20bf8d6312c4e6f5d0 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a0c628473b0df48e499c95b3def27b inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a34a0c628473b0df48e499c95b3def27b">write</a> ([[maybe_unused]] uint8_t bar, [[maybe_unused]] uint32_t address, [[maybe_unused]] int32_t const *data, [[maybe_unused]] size_t sizeInBytes) final</td></tr>
-<tr class="memdesc:a34a0c628473b0df48e499c95b3def27b inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">You cannot override the write version with 32 bit address any more.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a34a0c628473b0df48e499c95b3def27b">More...</a><br /></td></tr>
-<tr class="separator:a34a0c628473b0df48e499c95b3def27b inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1955cb88908fae9aec1709c65bc022e inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e">barIndexValid</a> ([[maybe_unused]] uint64_t bar) override</td></tr>
-<tr class="memdesc:ab1955cb88908fae9aec1709c65bc022e inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">All bars are valid in dummies.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e">More...</a><br /></td></tr>
-<tr class="separator:ab1955cb88908fae9aec1709c65bc022e inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac5711731ea8584a1344cfb3f5edb1b inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint64_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a2ac5711731ea8584a1344cfb3f5edb1b">getBarSizesInBytesFromRegisterMapping</a> () const</td></tr>
-<tr class="memdesc:a2ac5711731ea8584a1344cfb3f5edb1b inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the size of each bar because the DummyBackends allocate memory per bar.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a2ac5711731ea8584a1344cfb3f5edb1b">More...</a><br /></td></tr>
-<tr class="separator:a2ac5711731ea8584a1344cfb3f5edb1b inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dffeed356cf306fa049532715135709 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a9dffeed356cf306fa049532715135709 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a9dffeed356cf306fa049532715135709">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
-<tr class="memdesc:a9dffeed356cf306fa049532715135709 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific override which allows to create "DUMMY_INTEERRUPT_X" accessors.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a9dffeed356cf306fa049532715135709">More...</a><br /></td></tr>
-<tr class="separator:a9dffeed356cf306fa049532715135709 inherit pro_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
 <tr class="memitem:a5395e67e4d9c77c09826a0adb572ec01 inherit pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a5395e67e4d9c77c09826a0adb572ec01 inherit pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
@@ -331,16 +347,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a1eb55fcc4082f2d2407576cf1f63f89f inherit pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1eb55fcc4082f2d2407576cf1f63f89f">dispatchInterrupt</a> (uint32_t interruptNumber)</td></tr>
 <tr class="memdesc:a1eb55fcc4082f2d2407576cf1f63f89f inherit pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called by implementing backend when an interrupt arrives.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1eb55fcc4082f2d2407576cf1f63f89f">More...</a><br /></td></tr>
 <tr class="separator:a1eb55fcc4082f2d2407576cf1f63f89f inherit pro_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
+<tr class="memitem:a2b51615c34b21184c43de53a327d28f3 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a2b51615c34b21184c43de53a327d28f3">setOpenedAndClearException</a> () noexcept</td></tr>
+<tr class="memdesc:a2b51615c34b21184c43de53a327d28f3 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backends should call this function at the end of a (successful) <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9" title="Open the device.">open()</a> call.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a2b51615c34b21184c43de53a327d28f3">More...</a><br /></td></tr>
+<tr class="separator:a2b51615c34b21184c43de53a327d28f3 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_class_chimera_t_k_1_1_dummy_backend"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_chimera_t_k_1_1_dummy_backend')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html">ChimeraTK::DummyBackend</a></td></tr>
 <tr class="memitem:a5938b5d8210d8f57fc09913f0db7b98a inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a5938b5d8210d8f57fc09913f0db7b98a">convertPathRelativeToDmapToAbs</a> (std::string const &amp;mapfileName)</td></tr>
 <tr class="separator:a5938b5d8210d8f57fc09913f0db7b98a inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></td></tr>
-<tr class="memitem:a13e3d7735ff46960b844d56de209fe37 inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a13e3d7735ff46960b844d56de209fe37">checkSizeIsMultipleOfWordSize</a> (size_t sizeInBytes)</td></tr>
-<tr class="separator:a13e3d7735ff46960b844d56de209fe37 inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eef6da51b1cc388fe3662f84cc08b73 inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:a9eef6da51b1cc388fe3662f84cc08b73 inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memTemplItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a9eef6da51b1cc388fe3662f84cc08b73">returnInstance</a> ([[maybe_unused]] const std::string &amp;instanceId, Args &amp;&amp;... arguments)</td></tr>
-<tr class="memdesc:a9eef6da51b1cc388fe3662f84cc08b73 inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backward compatibility: Leftover from the time when the dummy managed it's own map to return the same instance multiple times, and still allow to use the same map file with different instances.  <a href="class_chimera_t_k_1_1_dummy_backend_base.html#a9eef6da51b1cc388fe3662f84cc08b73">More...</a><br /></td></tr>
-<tr class="separator:a9eef6da51b1cc388fe3662f84cc08b73 inherit pro_static_methods_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_dummy_backend"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_dummy_backend')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html">ChimeraTK::DummyBackend</a></td></tr>
 <tr class="memitem:a8ff43143f271f34f948afa5861ddb06b inherit pro_attribs_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a8ff43143f271f34f948afa5861ddb06b">_mapFile</a></td></tr>
 <tr class="memdesc:a8ff43143f271f34f948afa5861ddb06b inherit pro_attribs_class_chimera_t_k_1_1_dummy_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the map file  <a href="class_chimera_t_k_1_1_dummy_backend.html#a8ff43143f271f34f948afa5861ddb06b">More...</a><br /></td></tr>
@@ -364,15 +377,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae75bc2509b25827513f35d4dce5f1630 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630">_unalignedAccess</a></td></tr>
 <tr class="memdesc:ae75bc2509b25827513f35d4dce5f1630 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex for protecting unaligned access  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630">More...</a><br /></td></tr>
 <tr class="separator:ae75bc2509b25827513f35d4dce5f1630 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057624c8b6c049df68744fdadb981f31 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a057624c8b6c049df68744fdadb981f31">_hasActiveException</a> {false}</td></tr>
-<tr class="separator:a057624c8b6c049df68744fdadb981f31 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad46371e0b798610cae236a0b4c81ce04 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04">NumericAddressedLowLevelTransferElement</a></td></tr>
 <tr class="separator:ad46371e0b798610cae236a0b4c81ce04 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0f34f0f4b3d521e7050fe4a31705cc inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ace0f34f0f4b3d521e7050fe4a31705cc">NumericAddressedInterruptDispatcher</a></td></tr>
 <tr class="separator:ace0f34f0f4b3d521e7050fe4a31705cc inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
 <tr class="memitem:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">_opened</a> {false}</td></tr>
-<tr class="memdesc:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if device is opened  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">More...</a><br /></td></tr>
+<tr class="memdesc:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if backend is opened  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">More...</a><br /></td></tr>
 <tr class="separator:ae9bee80fb557412c35519caa586b3149 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -512,7 +523,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_abfdb819786ab83322bf791432c21cda3_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_abfdb819786ab83322bf791432c21cda3_cgraph.svg" width="487" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -614,7 +625,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Specific override which allows to create push-type accessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00049">49</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00042">42</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -652,7 +663,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Query map for overwritten data validities. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00144">144</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00139">139</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -726,39 +737,6 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="abd03c69319ed34541e791d11a4a9751d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd03c69319ed34541e791d11a4a9751d">&#9670;&nbsp;</a></span>isFunctional()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::ExceptionDummy::isFunctional </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return whether a device is working as intended, usually this means it is opened and does not have any errors. </p>
-<p>The default implementation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends.">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
-<p>Notice: <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d" title="Return whether a device is working as intended, usually this means it is opened and does not have any...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d" title="Return whether a device is working as intended, usually this means it is opened and does not have any...">isFunctional()</a>==false means you surely will get an exception. </p>
-
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#adb9edefcb11c683496afd130f6fa796a">ChimeraTK::DummyBackend</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8cc_source.html#l00161">161</a> of file <a class="el" href="_exception_dummy_backend_8cc_source.html">ExceptionDummyBackend.cc</a>.</p>
-
-</div>
-</div>
 <a id="a7be932c74d4162f56bdd4f81db19b7eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7be932c74d4162f56bdd4f81db19b7eb">&#9670;&nbsp;</a></span>open()</h2>
 
@@ -792,7 +770,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a7be932c74d4162f56bdd4f81db19b7eb_cgraph.svg" width="487" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a7be932c74d4162f56bdd4f81db19b7eb_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -863,8 +841,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a58c3f67cedde1d1ce738943d48065606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c3f67cedde1d1ce738943d48065606">&#9670;&nbsp;</a></span>setException()</h2>
+<a id="ad2dec4d94cdacd211caf2bf61db4f53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2dec4d94cdacd211caf2bf61db4f53a">&#9670;&nbsp;</a></span>setExceptionImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -873,7 +851,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ChimeraTK::ExceptionDummy::setException </td>
+          <td class="memname">void ChimeraTK::ExceptionDummy::setExceptionImpl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -881,15 +859,14 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the backend into an exception state. </p>
-<p>All backends must remember this, turn off asyncronous reads and all accessors will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> on read and write operations, saying that there is a "previous, unrecovered fault", until <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb" title="Open the device.">open()</a> has been called successfully. </p>
+<p>Function to be (optionally) implemented by backends if additional actions are needed when switching to the exception state. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">ChimeraTK::DeviceBackend</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a68d180274f6f2982ad544e53d36f57ec">ChimeraTK::DeviceBackendImpl</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8cc_source.html#l00046">46</a> of file <a class="el" href="_exception_dummy_backend_8cc_source.html">ExceptionDummyBackend.cc</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -897,15 +874,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a58c3f67cedde1d1ce738943d48065606_cgraph.svg" width="503" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a58c3f67cedde1d1ce738943d48065606_icgraph.svg" width="496" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_ad2dec4d94cdacd211caf2bf61db4f53a_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -948,12 +917,12 @@ template&lt;typename UserType &gt; </div>
 <p>Use decorator to overwrite returned data validity of individual (poll-type) variables. </p>
 <p>Works only in the direction valid-&gt;invalid. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00138">138</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00133">133</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_ab4a4085a0c80283ee8a2dae5ea6af0d7_cgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -989,11 +958,11 @@ template&lt;typename UserType &gt; </div>
 <p>Function to trigger sending values for push-type variables. </p>
 
 <p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8cc_source.html#l00010">10</a> of file <a class="el" href="_exception_dummy_backend_8cc_source.html">ExceptionDummyBackend.cc</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_ad748e54f70a14e4b28003848ab7ea4dd_cgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1052,11 +1021,11 @@ template&lt;typename UserType &gt; </div>
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a057a7212fb61a3e7978362fc2b0e275b">ChimeraTK::DummyBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8cc_source.html#l00132">132</a> of file <a class="el" href="_exception_dummy_backend_8cc_source.html">ExceptionDummyBackend.cc</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_ab096f484f36d332098b265d95f40dcc2_cgraph.svg" width="487" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1079,7 +1048,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag is toggled by activateAsyncRead (true), setException (false) and close (false). </p>
 <p>Protected by _pushDecoratorMutex </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00130">130</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00125">125</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1066,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of active <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator.html">ExceptionDummyPushDecorator</a>. Protected by _pushDecoratorMutex. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00125">125</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00120">120</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1084,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Mutex to protect data structures for push decorators. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00123">123</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00118">118</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1102,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of version numbers to use in push decorators. Protected by _pushDecoratorMutex. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00127">127</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00122">122</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1120,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>This map is used for setting individual (poll-type) variables to DataValidity=faulty. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00135">135</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00130">130</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1138,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>mutex to protect map _registerValidities </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00133">133</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00128">128</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1156,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map used allow determining number of writes of a specific register by tests. Map key is pair of bar and address. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00158">158</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00153">153</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1174,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Global counter for order numbers going into _writeOrderMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00155">155</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00150">150</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1223,71 +1192,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map used allow determining order of writes by tests. Map key is pair of bar and address. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00152">152</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-
-</div>
-</div>
-<a id="ad7527540f560181e14d1715067f844a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7527540f560181e14d1715067f844a8">&#9670;&nbsp;</a></span>thereHaveBeenExceptions</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::ExceptionDummy::thereHaveBeenExceptions {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00032">32</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-
-</div>
-</div>
-<a id="a9c7c34627bb1dc67ca27c0cf2c484774"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c7c34627bb1dc67ca27c0cf2c484774">&#9670;&nbsp;</a></span>throwExceptionOpen</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::ExceptionDummy::throwExceptionOpen {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00029">29</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-
-</div>
-</div>
-<a id="a0c701089cee0c06f1f34802fb7b9ec14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c701089cee0c06f1f34802fb7b9ec14">&#9670;&nbsp;</a></span>throwExceptionRead</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::ExceptionDummy::throwExceptionRead {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00030">30</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-
-</div>
-</div>
-<a id="af64ee2d7f3128cc71e2f2388e3e5bc2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af64ee2d7f3128cc71e2f2388e3e5bc2e">&#9670;&nbsp;</a></span>throwExceptionWrite</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::ExceptionDummy::throwExceptionWrite {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00031">31</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00147">147</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1206,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

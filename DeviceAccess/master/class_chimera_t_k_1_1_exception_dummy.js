@@ -8,10 +8,9 @@ var class_chimera_t_k_1_1_exception_dummy =
     [ "getValidity", "class_chimera_t_k_1_1_exception_dummy.html#a9ee8e43f841982e2e7f57d22ba0d9b66", null ],
     [ "getWriteCount", "class_chimera_t_k_1_1_exception_dummy.html#ac86bf7b958e3125e344876afd28e9861", null ],
     [ "getWriteOrder", "class_chimera_t_k_1_1_exception_dummy.html#a9e9dbeb58711d364acdd49d327bee099", null ],
-    [ "isFunctional", "class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d", null ],
     [ "open", "class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb", null ],
     [ "read", "class_chimera_t_k_1_1_exception_dummy.html#a334e11b3f65149fb8c4049017961dd64", null ],
-    [ "setException", "class_chimera_t_k_1_1_exception_dummy.html#a58c3f67cedde1d1ce738943d48065606", null ],
+    [ "setExceptionImpl", "class_chimera_t_k_1_1_exception_dummy.html#ad2dec4d94cdacd211caf2bf61db4f53a", null ],
     [ "setValidity", "class_chimera_t_k_1_1_exception_dummy.html#ab4a4085a0c80283ee8a2dae5ea6af0d7", null ],
     [ "triggerPush", "class_chimera_t_k_1_1_exception_dummy.html#ad748e54f70a14e4b28003848ab7ea4dd", null ],
     [ "write", "class_chimera_t_k_1_1_exception_dummy.html#ab096f484f36d332098b265d95f40dcc2", null ],
@@ -23,9 +22,5 @@ var class_chimera_t_k_1_1_exception_dummy =
     [ "_registerValiditiesMutex", "class_chimera_t_k_1_1_exception_dummy.html#a9e2f8d3b0eb18e09a029ad11fe3e1f34", null ],
     [ "_writeCounterMap", "class_chimera_t_k_1_1_exception_dummy.html#ab0383f1287cbfe2b546a300114009213", null ],
     [ "_writeOrderCounter", "class_chimera_t_k_1_1_exception_dummy.html#ae4288718a25781cdb05f8b19993baac2", null ],
-    [ "_writeOrderMap", "class_chimera_t_k_1_1_exception_dummy.html#a1fb92854f4c1c5d9007d68b0af723ceb", null ],
-    [ "thereHaveBeenExceptions", "class_chimera_t_k_1_1_exception_dummy.html#ad7527540f560181e14d1715067f844a8", null ],
-    [ "throwExceptionOpen", "class_chimera_t_k_1_1_exception_dummy.html#a9c7c34627bb1dc67ca27c0cf2c484774", null ],
-    [ "throwExceptionRead", "class_chimera_t_k_1_1_exception_dummy.html#a0c701089cee0c06f1f34802fb7b9ec14", null ],
-    [ "throwExceptionWrite", "class_chimera_t_k_1_1_exception_dummy.html#af64ee2d7f3128cc71e2f2388e3e5bc2e", null ]
+    [ "_writeOrderMap", "class_chimera_t_k_1_1_exception_dummy.html#a1fb92854f4c1c5d9007d68b0af723ceb", null ]
 ];

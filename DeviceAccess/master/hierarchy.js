@@ -214,7 +214,6 @@ var hierarchy =
                 ] ],
                 [ "CustomBackend", "class_custom_backend.html", null ],
                 [ "DummyForAreaHandshakeBackend", "struct_dummy_for_area_handshake_backend.html", null ],
-                [ "DysfunctDummy", "struct_dysfunct_dummy.html", null ],
                 [ "InvalidDummyBackend", "class_invalid_dummy_backend.html", null ],
                 [ "NewBackend", "struct_new_backend.html", null ],
                 [ "NotRegisteringPlugin", "struct_not_registering_plugin.html", null ],

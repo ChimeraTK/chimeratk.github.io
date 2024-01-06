@@ -8,5 +8,9 @@ var class_chimera_t_k_1_1_dummy_backend_base =
     [ "minimumTransferAlignment", "class_chimera_t_k_1_1_dummy_backend_base.html#a12f551b90d2862e26a337dc422f562a7", null ],
     [ "read", "class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0", null ],
     [ "triggerInterrupt", "class_chimera_t_k_1_1_dummy_backend_base.html#a49048b0e780643064de64104ecefe497", null ],
-    [ "write", "class_chimera_t_k_1_1_dummy_backend_base.html#a34a0c628473b0df48e499c95b3def27b", null ]
+    [ "write", "class_chimera_t_k_1_1_dummy_backend_base.html#a34a0c628473b0df48e499c95b3def27b", null ],
+    [ "throwExceptionCounter", "class_chimera_t_k_1_1_dummy_backend_base.html#a6b47a66edf2bf30d91fd360fbb514570", null ],
+    [ "throwExceptionOpen", "class_chimera_t_k_1_1_dummy_backend_base.html#acce11a882262aa1d6e01dfc2c5459417", null ],
+    [ "throwExceptionRead", "class_chimera_t_k_1_1_dummy_backend_base.html#a4489f9ccceb15a786090de23e2d0ad99", null ],
+    [ "throwExceptionWrite", "class_chimera_t_k_1_1_dummy_backend_base.html#a03eb07121bb5cd00f88723c9ee189e0e", null ]
 ];

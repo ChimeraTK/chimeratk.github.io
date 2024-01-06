@@ -19,7 +19,7 @@ var class_chimera_t_k_1_1_device =
     [ "read", "class_chimera_t_k_1_1_device.html#abc7f6a974f2dd96cc27634800339e8af", null ],
     [ "read", "class_chimera_t_k_1_1_device.html#ace0348b44dc79cb0bccec4207fb133f2", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_device.html#aa7fe4ce4336cedce3fce015d15f59bda", null ],
-    [ "setException", "class_chimera_t_k_1_1_device.html#a71fc982c84030c0abfd08ca3ce28d224", null ],
+    [ "setException", "class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687", null ],
     [ "write", "class_chimera_t_k_1_1_device.html#a2ad91fd3a782bf1f06dc0f2a92fa6ec2", null ],
     [ "write", "class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619", null ],
     [ "_deviceBackendPointer", "class_chimera_t_k_1_1_device.html#a129c5f11a5e1a0ada19cbcc293d1a429", null ]

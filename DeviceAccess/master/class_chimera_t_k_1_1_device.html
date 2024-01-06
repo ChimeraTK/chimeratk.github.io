@@ -156,9 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7c7d319aa029ecdb9a1e5aae5e667af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af">activateAsyncRead</a> () noexcept</td></tr>
 <tr class="memdesc:ad7c7d319aa029ecdb9a1e5aae5e667af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a> is set.  <a href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af">More...</a><br /></td></tr>
 <tr class="separator:ad7c7d319aa029ecdb9a1e5aae5e667af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71fc982c84030c0abfd08ca3ce28d224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a71fc982c84030c0abfd08ca3ce28d224">setException</a> ()</td></tr>
-<tr class="memdesc:a71fc982c84030c0abfd08ca3ce28d224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device into an exception state.  <a href="class_chimera_t_k_1_1_device.html#a71fc982c84030c0abfd08ca3ce28d224">More...</a><br /></td></tr>
-<tr class="separator:a71fc982c84030c0abfd08ca3ce28d224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fb30e128b2c697296218725143e687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687">setException</a> (const std::string &amp;message)</td></tr>
+<tr class="memdesc:a41fb30e128b2c697296218725143e687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device into an exception state.  <a href="class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687">More...</a><br /></td></tr>
+<tr class="separator:a41fb30e128b2c697296218725143e687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5578d188fe745c943acceeb9152e49d8"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a> ()</td></tr>
 <tr class="memdesc:a5578d188fe745c943acceeb9152e49d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the backend.  <a href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">More...</a><br /></td></tr>
 <tr class="separator:a5578d188fe745c943acceeb9152e49d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -975,8 +975,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a71fc982c84030c0abfd08ca3ce28d224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71fc982c84030c0abfd08ca3ce28d224">&#9670;&nbsp;</a></span>setException()</h2>
+<a id="a41fb30e128b2c697296218725143e687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41fb30e128b2c697296218725143e687">&#9670;&nbsp;</a></span>setException()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -984,7 +984,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void ChimeraTK::Device::setException </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1003,7 +1004,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a71fc982c84030c0abfd08ca3ce28d224_icgraph.svg" width="416" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a41fb30e128b2c697296218725143e687_icgraph.svg" width="416" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1142,7 +1143,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device.html">Device</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 6 2024 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
