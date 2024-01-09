@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"class_example_backend.html#a58db813470c7a500e30de9bdb91c92da":[19,0,47,1],
 "class_example_backend.html#a69a167f471b871edf156bc37052e1948":[19,0,47,5],
 "class_example_backend.html#ab28efb9790bba3ba0d7f5878c53f14e2":[19,0,47,6],
 "class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7":[19,0,47,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "functions_func_n.html":[19,3,1,12],
 "functions_func_o.html":[19,3,1,13],
 "functions_func_p.html":[19,3,1,14],
-"functions_func_r.html":[19,3,1,15],
-"functions_func_s.html":[19,3,1,16]
+"functions_func_r.html":[19,3,1,15]
 };
