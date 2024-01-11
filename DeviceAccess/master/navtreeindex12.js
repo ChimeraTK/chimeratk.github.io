@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"namespace_chimera_t_k.html#ad1f171ec71d1838d79f718ed718bf8e2":[18,0,1,215],
 "namespace_chimera_t_k.html#ad1f8efd0503fa72d47d28fcdb95c64b7":[18,0,1,169],
 "namespace_chimera_t_k.html#ad2a806d36f9db8ff11fa81fa7d3a31d9":[18,0,1,167],
 "namespace_chimera_t_k.html#ad8feb605e95e15ab6e0dee12dfdcbae6":[18,0,1,249],
@@ -190,12 +189,12 @@ var NAVTREEINDEX12 =
 "struct_another_working_backend_1_1_backend_registerer.html#aa6a1734aecd0581fc3c8fc2676a9551b":[19,0,9,0,0],
 "struct_area_type.html":[19,0,10],
 "struct_area_type.html#a0074bc23dcb62580c879d8a039e8b7cb":[19,0,10,3],
-"struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,10,19],
 "struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,10,18],
+"struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,10,19],
 "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,10,10],
 "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,10,11],
-"struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,10,9],
 "struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,10,8],
+"struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,10,9],
 "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[19,0,10,14],
 "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[19,0,10,15],
 "struct_area_type.html#a531204077ecc966900ae1071a1d677c8":[19,0,10,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "struct_byte_raw__fixed_point8__4s.html#ad319251f9f8e2a88b8a059f8c67a8909":[19,0,16,4],
 "struct_byte_raw__fixed_point8__4s.html#afbfb8bd521412fdcc66494f540449da2":[19,0,16,0],
 "struct_byte_raw__fixed_point8__4u.html":[19,0,17],
-"struct_byte_raw__fixed_point8__4u.html#a06022fbe2a2942e757b8d068bd28839d":[19,0,17,0]
+"struct_byte_raw__fixed_point8__4u.html#a06022fbe2a2942e757b8d068bd28839d":[19,0,17,0],
+"struct_byte_raw__fixed_point8__4u.html#a0967f7999179aa31cfc2aa25af973af8":[19,0,17,4]
 };

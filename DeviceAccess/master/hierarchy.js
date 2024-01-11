@@ -614,7 +614,7 @@ var hierarchy =
       [ "RegisterPathTestSuite", "class_register_path_test_suite.html", null ],
       [ "VersionNumberTestSuite", "class_version_number_test_suite.html", null ]
     ] ],
-    [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue >", "struct_chimera_t_k_1_1_test_capabilities.html", null ],
+    [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion >", "struct_chimera_t_k_1_1_test_capabilities.html", null ],
     [ "TestLocker", "struct_test_locker.html", null ],
     [ "TestParameters", "struct_test_parameters.html", null ],
     [ "TestRegister< T >", "struct_test_register.html", [

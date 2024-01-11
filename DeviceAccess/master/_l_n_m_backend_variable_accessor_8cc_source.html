@@ -317,36 +317,40 @@ $(document).ready(function(){initNavTree('_l_n_m_backend_variable_accessor_8cc_s
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        auto&amp; vtEntry = boost::fusion::at_key&lt;decltype(arg)&gt;(lnmVariable.valueTable.table);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        for(size_t i = 0; i &lt; this-&gt;buffer_2D[0].size(); ++i) {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          this-&gt;buffer_2D[0][i] = userTypeToUserType&lt;UserType&gt;(vtEntry.latestValue[i + _wordOffsetInRegister]);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;          this-&gt;_dataValidity = vtEntry.latestValidity;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      });</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      this-&gt;_versionNumber = {};</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="comment">// push-type read transfer: received value is in _queueValue (cf. readQueue continuation in constructor)</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      this-&gt;buffer_2D[0].swap(_queueValue.value);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      this-&gt;_versionNumber = _queueValue.version;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      this-&gt;_dataValidity = _queueValue.validity;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#adfac7967b12ee312556fbb6827f3be72">  247</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor&lt;UserType&gt;::interrupt</a>() {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">auto</span>&amp; lnmVariable = _dev-&gt;_variables[_info.name];</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(lnmVariable.valueTable_mutex);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d">callForType</a>(_info.valueType, [&amp;, <span class="keyword">this</span>](<span class="keyword">auto</span> arg) {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      auto&amp; vtEntry = boost::fusion::at_key&lt;decltype(arg)&gt;(lnmVariable.valueTable.table);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      this-&gt;interrupt_impl(vtEntry.subscriptions[this-&gt;getId()]);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    });</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#a3fb4962cc50199a6b5fd67f082106b82">  259</a></span>&#160;  <a class="code" href="_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(<a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        this-&gt;_dataValidity = vtEntry.latestValidity;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">// Note: passing through the version number also for push-type variables is essential for the MathPlugin (cf.</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">// MathPluginFormulaHelper::checkAllParametersWritten()) and does not violate the spec (spec says we should not</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="comment">// be able to see whether there was an update, which still is impossible since updates can have the same</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">// version number as before).</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        this-&gt;_versionNumber = vtEntry.latestVersion;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      });</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="comment">// push-type read transfer: received value is in _queueValue (cf. readQueue continuation in constructor)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      this-&gt;buffer_2D[0].swap(_queueValue.value);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      this-&gt;_versionNumber = _queueValue.version;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      this-&gt;_dataValidity = _queueValue.validity;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#adfac7967b12ee312556fbb6827f3be72">  251</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor&lt;UserType&gt;::interrupt</a>() {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">auto</span>&amp; lnmVariable = _dev-&gt;_variables[_info.name];</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(lnmVariable.valueTable_mutex);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d">callForType</a>(_info.valueType, [&amp;, <span class="keyword">this</span>](<span class="keyword">auto</span> arg) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      auto&amp; vtEntry = boost::fusion::at_key&lt;decltype(arg)&gt;(lnmVariable.valueTable.table);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      this-&gt;interrupt_impl(vtEntry.subscriptions[this-&gt;getId()]);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    });</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#a3fb4962cc50199a6b5fd67f082106b82">  263</a></span>&#160;  <a class="code" href="_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(<a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_l_n_m_backend_variable_accessor_8h_html"><div class="ttname"><a href="_l_n_m_backend_variable_accessor_8h.html">LNMBackendVariableAccessor.h</a></div></div>
 <div class="ttc" id="a_l_n_m_math_plugin_formula_helper_8h_html"><div class="ttname"><a href="_l_n_m_math_plugin_formula_helper_8h.html">LNMMathPluginFormulaHelper.h</a></div></div>
 <div class="ttc" id="a_supported_user_types_8h_html_abe698a21f62a02296a12b08433b980dc"><div class="ttname"><a href="_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a></div><div class="ttdeci">#define INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES(TemplateClass)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00491">SupportedUserTypes.h:491</a></div></div>
@@ -378,7 +382,7 @@ $(document).ready(function(){initNavTree('_l_n_m_backend_variable_accessor_8cc_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ee326fa6789bb6bdc0887158d2381386.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_04e7a3a48585d4391a17b116de84faa7.html">src</a></li><li class="navelem"><a class="el" href="_l_n_m_backend_variable_accessor_8cc.html">LNMBackendVariableAccessor.cc</a></li>
-    <li class="footer">Generated on Tue Jan 9 2024 04:56:31 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 11 2024 04:53:12 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

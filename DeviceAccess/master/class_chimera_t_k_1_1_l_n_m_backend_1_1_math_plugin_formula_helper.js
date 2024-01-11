@@ -2,7 +2,6 @@ var class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper =
 [
     [ "MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#adf0918468a7cd4685bf7453098e3fa81", null ],
     [ "checkAllParametersWritten", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#ac0a9481ef08578658383ab0171b9cbaa", null ],
-    [ "clearParameterQueues", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a466451e65c5bb2ef868ee6a8a4a3c97b", null ],
     [ "compileFormula", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#ae6fb13686901059891febc76f44236f2", null ],
     [ "computeResult", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aec801c5fef32c1f64d3c00b7584ff667", null ],
     [ "getBackend", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a47c6f11ce688f201fc29ed8f47b0625d", null ],

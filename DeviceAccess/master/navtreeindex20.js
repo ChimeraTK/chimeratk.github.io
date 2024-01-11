@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"test_type_changing_decorator_8cpp.html#a46ab1970bad85d5f5049fd07f3e6dec0":[20,0,8,1,50,7],
 "test_type_changing_decorator_8cpp.html#a5508c2f467404d24528cef39ac8ef00f":[20,0,8,1,50,18],
 "test_type_changing_decorator_8cpp.html#a5e084c016c7c2645634ec140f36bc802":[20,0,8,1,50,12],
 "test_type_changing_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,8,1,50,5],

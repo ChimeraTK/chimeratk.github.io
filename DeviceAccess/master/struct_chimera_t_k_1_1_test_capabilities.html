@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt; Struct Template Reference</title>
+<title>ChimeraTK-DeviceAccess: ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_test_capabiliti
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1_test_capabilities-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt; Struct Template Reference</div>  </div>
+<div class="title">ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -99,105 +99,112 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_test_capabiliti
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3c147ce96e4cc1dccf42a08fda784901"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3c147ce96e4cc1dccf42a08fda784901">TestCapabilities</a> ()=default</td></tr>
-<tr class="separator:a3c147ce96e4cc1dccf42a08fda784901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6ccc0a51c13e6f72eb17455f38abbf"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a7c6ccc0a51c13e6f72eb17455f38abbf">disableSyncRead</a> () const</td></tr>
-<tr class="memdesc:a7c6ccc0a51c13e6f72eb17455f38abbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to prevent the test from executing any synchronous read tests.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a7c6ccc0a51c13e6f72eb17455f38abbf">More...</a><br /></td></tr>
-<tr class="separator:a7c6ccc0a51c13e6f72eb17455f38abbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af859e99b79a8383f1c58daf775c054"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a6af859e99b79a8383f1c58daf775c054">enableForceDataLossWrite</a> () const</td></tr>
-<tr class="memdesc:a6af859e99b79a8383f1c58daf775c054"><td class="mdescLeft">&#160;</td><td class="mdescRight">See setForceDataLossWrite() function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a6af859e99b79a8383f1c58daf775c054">More...</a><br /></td></tr>
-<tr class="separator:a6af859e99b79a8383f1c58daf775c054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb605673fac1f3595587a415e647870"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#aafb605673fac1f3595587a415e647870">disableForceDataLossWrite</a> () const</td></tr>
-<tr class="separator:aafb605673fac1f3595587a415e647870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a571288818abd4f4198489e24a583f0a0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a571288818abd4f4198489e24a583f0a0">enableAsyncReadInconsistency</a> () const</td></tr>
-<tr class="memdesc:a571288818abd4f4198489e24a583f0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">See forceAsyncReadInconsistency() function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a571288818abd4f4198489e24a583f0a0">More...</a><br /></td></tr>
-<tr class="separator:a571288818abd4f4198489e24a583f0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfedd67e39d11bbfc9ae151a1406d9e3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#abfedd67e39d11bbfc9ae151a1406d9e3">disableAsyncReadInconsistency</a> () const</td></tr>
-<tr class="separator:abfedd67e39d11bbfc9ae151a1406d9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a692ada35db55ad303d1d44ebe542d85e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a692ada35db55ad303d1d44ebe542d85e">enableSwitchReadOnly</a> () const</td></tr>
-<tr class="memdesc:a692ada35db55ad303d1d44ebe542d85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#adc78b0d8e8f1fa670e3d8fe7d9362c35">switchReadOnly()</a> function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a692ada35db55ad303d1d44ebe542d85e">More...</a><br /></td></tr>
-<tr class="separator:a692ada35db55ad303d1d44ebe542d85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e1b56781a878d5394d365648e67554d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a0e1b56781a878d5394d365648e67554d">disableSwitchReadOnly</a> () const</td></tr>
-<tr class="separator:a0e1b56781a878d5394d365648e67554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0604720cd0a6503efe1920933e0bd921"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a0604720cd0a6503efe1920933e0bd921">enableSwitchWriteOnly</a> () const</td></tr>
-<tr class="memdesc:a0604720cd0a6503efe1920933e0bd921"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ab0dd2567f9d27b6c80b0d37d814d23e0">switchWriteOnly()</a> function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a0604720cd0a6503efe1920933e0bd921">More...</a><br /></td></tr>
-<tr class="separator:a0604720cd0a6503efe1920933e0bd921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06608ff7c0ecfeb1ff05c602f44efb4a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a06608ff7c0ecfeb1ff05c602f44efb4a">disableSwitchWriteOnly</a> () const</td></tr>
-<tr class="separator:a06608ff7c0ecfeb1ff05c602f44efb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3557e0ac89c024aabe87f5bb8bccf2c8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3557e0ac89c024aabe87f5bb8bccf2c8">enableTestWriteNeverLosesData</a> () const</td></tr>
-<tr class="memdesc:a3557e0ac89c024aabe87f5bb8bccf2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable test whether write transfers never report lost data (part of B.7.2).  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a3557e0ac89c024aabe87f5bb8bccf2c8">More...</a><br /></td></tr>
-<tr class="separator:a3557e0ac89c024aabe87f5bb8bccf2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64cbf641ec2b3d7b3142fc9aef32442c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a64cbf641ec2b3d7b3142fc9aef32442c">disableTestWriteNeverLosesData</a> () const</td></tr>
-<tr class="separator:a64cbf641ec2b3d7b3142fc9aef32442c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3660d4acc62803a55b265c084b58c8be"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3660d4acc62803a55b265c084b58c8be">enableTestWriteOnly</a> () const</td></tr>
-<tr class="memdesc:a3660d4acc62803a55b265c084b58c8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing only write operations, even if the register is readable.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a3660d4acc62803a55b265c084b58c8be">More...</a><br /></td></tr>
-<tr class="separator:a3660d4acc62803a55b265c084b58c8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074d3d73ec2305f349a49226cd15843c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a074d3d73ec2305f349a49226cd15843c">disableTestWriteOnly</a> () const</td></tr>
-<tr class="separator:a074d3d73ec2305f349a49226cd15843c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c32dc6c5775a352204731d9e00a3860"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a5c32dc6c5775a352204731d9e00a3860">enableTestReadOnly</a> () const</td></tr>
-<tr class="memdesc:a5c32dc6c5775a352204731d9e00a3860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing only read operations, even if the register is readable.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a5c32dc6c5775a352204731d9e00a3860">More...</a><br /></td></tr>
-<tr class="separator:a5c32dc6c5775a352204731d9e00a3860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6eb75e5f80acfee38142217c3eb6593"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testRawTransfer, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ac6eb75e5f80acfee38142217c3eb6593">disableTestReadOnly</a> () const</td></tr>
-<tr class="separator:ac6eb75e5f80acfee38142217c3eb6593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f25a56cbc6786b1c2f58b22fa329102"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a2f25a56cbc6786b1c2f58b22fa329102">disableTestRawTransfer</a> () const</td></tr>
-<tr class="memdesc:a2f25a56cbc6786b1c2f58b22fa329102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing the raw accessors.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a2f25a56cbc6786b1c2f58b22fa329102">More...</a><br /></td></tr>
-<tr class="separator:a2f25a56cbc6786b1c2f58b22fa329102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2112dde078d56168a1085a8e077ed6"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ade2112dde078d56168a1085a8e077ed6">enableTestRawTransfer</a> () const</td></tr>
-<tr class="separator:ade2112dde078d56168a1085a8e077ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c1ee15cc717d324645b88e67308b57"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ab5c1ee15cc717d324645b88e67308b57">disableTestCatalogue</a> () const</td></tr>
-<tr class="memdesc:ab5c1ee15cc717d324645b88e67308b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing of catalogue content.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#ab5c1ee15cc717d324645b88e67308b57">More...</a><br /></td></tr>
-<tr class="separator:ab5c1ee15cc717d324645b88e67308b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a3e968898c957bb42fda33a24dc234"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a09a3e968898c957bb42fda33a24dc234">enableTestCatalogue</a> () const</td></tr>
-<tr class="separator:a09a3e968898c957bb42fda33a24dc234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf5377c54ba3a6f249f4586bd588124"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#aaaf5377c54ba3a6f249f4586bd588124">TestCapabilities</a> ()=default</td></tr>
+<tr class="separator:aaaf5377c54ba3a6f249f4586bd588124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde423a46df579bfd2a68d4fb9e441a4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#acde423a46df579bfd2a68d4fb9e441a4">disableSyncRead</a> () const</td></tr>
+<tr class="memdesc:acde423a46df579bfd2a68d4fb9e441a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to prevent the test from executing any synchronous read tests.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#acde423a46df579bfd2a68d4fb9e441a4">More...</a><br /></td></tr>
+<tr class="separator:acde423a46df579bfd2a68d4fb9e441a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5980fb3aaab1fb75a76cce431fd79f97"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97">enableForceDataLossWrite</a> () const</td></tr>
+<tr class="memdesc:a5980fb3aaab1fb75a76cce431fd79f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">See setForceDataLossWrite() function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97">More...</a><br /></td></tr>
+<tr class="separator:a5980fb3aaab1fb75a76cce431fd79f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009e2f1b0d32bd5a384e78540961b604"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a009e2f1b0d32bd5a384e78540961b604">disableForceDataLossWrite</a> () const</td></tr>
+<tr class="separator:a009e2f1b0d32bd5a384e78540961b604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a57ca917b541e7c90ed301dc8c33ef"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a33a57ca917b541e7c90ed301dc8c33ef">enableAsyncReadInconsistency</a> () const</td></tr>
+<tr class="memdesc:a33a57ca917b541e7c90ed301dc8c33ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">See forceAsyncReadInconsistency() function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a33a57ca917b541e7c90ed301dc8c33ef">More...</a><br /></td></tr>
+<tr class="separator:a33a57ca917b541e7c90ed301dc8c33ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5090ae6ac1902fab70e2823bb7911f68"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a5090ae6ac1902fab70e2823bb7911f68">disableAsyncReadInconsistency</a> () const</td></tr>
+<tr class="separator:a5090ae6ac1902fab70e2823bb7911f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6315d056a1d58bfb7b9e48927cf5847e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a6315d056a1d58bfb7b9e48927cf5847e">enableSwitchReadOnly</a> () const</td></tr>
+<tr class="memdesc:a6315d056a1d58bfb7b9e48927cf5847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a160e779d7ad8a4192bde724ff69282e4">switchReadOnly()</a> function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a6315d056a1d58bfb7b9e48927cf5847e">More...</a><br /></td></tr>
+<tr class="separator:a6315d056a1d58bfb7b9e48927cf5847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc53c8eecd832191848ae403424da8d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a1dc53c8eecd832191848ae403424da8d">disableSwitchReadOnly</a> () const</td></tr>
+<tr class="separator:a1dc53c8eecd832191848ae403424da8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e81e5db27d7ff833ddbf1a76c675e4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ab9e81e5db27d7ff833ddbf1a76c675e4">enableSwitchWriteOnly</a> () const</td></tr>
+<tr class="memdesc:ab9e81e5db27d7ff833ddbf1a76c675e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a541f6afc9661cdcb81e9a1b2a6640d4f">switchWriteOnly()</a> function in the register descriptor.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#ab9e81e5db27d7ff833ddbf1a76c675e4">More...</a><br /></td></tr>
+<tr class="separator:ab9e81e5db27d7ff833ddbf1a76c675e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac932233cf52291ef0fb6b1c6a225e2a2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ac932233cf52291ef0fb6b1c6a225e2a2">disableSwitchWriteOnly</a> () const</td></tr>
+<tr class="separator:ac932233cf52291ef0fb6b1c6a225e2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba5ed97c182dc706b5c8ba7dac48b8b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a2ba5ed97c182dc706b5c8ba7dac48b8b">enableTestWriteNeverLosesData</a> () const</td></tr>
+<tr class="memdesc:a2ba5ed97c182dc706b5c8ba7dac48b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable test whether write transfers never report lost data (part of B.7.2).  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a2ba5ed97c182dc706b5c8ba7dac48b8b">More...</a><br /></td></tr>
+<tr class="separator:a2ba5ed97c182dc706b5c8ba7dac48b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e905a1aad2e9109ecfb874b7ec8a5e3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a6e905a1aad2e9109ecfb874b7ec8a5e3">disableTestWriteNeverLosesData</a> () const</td></tr>
+<tr class="separator:a6e905a1aad2e9109ecfb874b7ec8a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3a3c9bb2500894110e3943fc905ab3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a4b3a3c9bb2500894110e3943fc905ab3">enableTestWriteOnly</a> () const</td></tr>
+<tr class="memdesc:a4b3a3c9bb2500894110e3943fc905ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing only write operations, even if the register is readable.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a4b3a3c9bb2500894110e3943fc905ab3">More...</a><br /></td></tr>
+<tr class="separator:a4b3a3c9bb2500894110e3943fc905ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f410c1a096bd9a2a792bf040f1dafe"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a21f410c1a096bd9a2a792bf040f1dafe">disableTestWriteOnly</a> () const</td></tr>
+<tr class="separator:a21f410c1a096bd9a2a792bf040f1dafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2f24fcd42969c3576a2c21f99330e9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a2f2f24fcd42969c3576a2c21f99330e9">enableTestReadOnly</a> () const</td></tr>
+<tr class="memdesc:a2f2f24fcd42969c3576a2c21f99330e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing only read operations, even if the register is readable.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a2f2f24fcd42969c3576a2c21f99330e9">More...</a><br /></td></tr>
+<tr class="separator:a2f2f24fcd42969c3576a2c21f99330e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3b166ec2aa3a1542b78da543670f5a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a8b3b166ec2aa3a1542b78da543670f5a">disableTestReadOnly</a> () const</td></tr>
+<tr class="separator:a8b3b166ec2aa3a1542b78da543670f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3decb141179b5510f85807fe7de03158"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3decb141179b5510f85807fe7de03158">disableTestRawTransfer</a> () const</td></tr>
+<tr class="memdesc:a3decb141179b5510f85807fe7de03158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing the raw accessors.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a3decb141179b5510f85807fe7de03158">More...</a><br /></td></tr>
+<tr class="separator:a3decb141179b5510f85807fe7de03158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7916ba2b5564cb1e9a1ae78bc454db92"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testCatalogue, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a7916ba2b5564cb1e9a1ae78bc454db92">enableTestRawTransfer</a> () const</td></tr>
+<tr class="separator:a7916ba2b5564cb1e9a1ae78bc454db92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4b94e826cf6f2b59f4e501a900a65f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a2f4b94e826cf6f2b59f4e501a900a65f">disableTestCatalogue</a> () const</td></tr>
+<tr class="memdesc:a2f4b94e826cf6f2b59f4e501a900a65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing of catalogue content.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a2f4b94e826cf6f2b59f4e501a900a65f">More...</a><br /></td></tr>
+<tr class="separator:a2f4b94e826cf6f2b59f4e501a900a65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7e96374df88f988e999142eafc5127"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _setRemoteValueIncrementsVersion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a4d7e96374df88f988e999142eafc5127">enableTestCatalogue</a> () const</td></tr>
+<tr class="separator:a4d7e96374df88f988e999142eafc5127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05822caa2e91e4577ba9eb846e3b11f9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a05822caa2e91e4577ba9eb846e3b11f9">disableSetRemoteValueIncrementsVersion</a> () const</td></tr>
+<tr class="memdesc:a05822caa2e91e4577ba9eb846e3b11f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable testing of version number increment in read operations after setRemoteValue.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#a05822caa2e91e4577ba9eb846e3b11f9">More...</a><br /></td></tr>
+<tr class="separator:a05822caa2e91e4577ba9eb846e3b11f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d61ddaa0db218e3fa5ae5ad50353ff"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ab8d61ddaa0db218e3fa5ae5ad50353ff">enableSetRemoteValueIncrementsVersion</a> () const</td></tr>
+<tr class="separator:ab8d61ddaa0db218e3fa5ae5ad50353ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad379993bfb6b0e671eba269c6af4b0fb"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ad379993bfb6b0e671eba269c6af4b0fb">syncRead</a> {_syncRead}</td></tr>
-<tr class="separator:ad379993bfb6b0e671eba269c6af4b0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7553375bf5c8839f378846e660de21d7"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a7553375bf5c8839f378846e660de21d7">forceDataLossWrite</a> {_forceDataLossWrite}</td></tr>
-<tr class="separator:a7553375bf5c8839f378846e660de21d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8b2df3581377aca2245926cde884e0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3f8b2df3581377aca2245926cde884e0">asyncReadInconsistency</a> {_asyncReadInconsistency}</td></tr>
-<tr class="separator:a3f8b2df3581377aca2245926cde884e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc78b0d8e8f1fa670e3d8fe7d9362c35"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#adc78b0d8e8f1fa670e3d8fe7d9362c35">switchReadOnly</a> {_switchReadOnly}</td></tr>
-<tr class="separator:adc78b0d8e8f1fa670e3d8fe7d9362c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0dd2567f9d27b6c80b0d37d814d23e0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ab0dd2567f9d27b6c80b0d37d814d23e0">switchWriteOnly</a> {_switchWriteOnly}</td></tr>
-<tr class="separator:ab0dd2567f9d27b6c80b0d37d814d23e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a000a91e6edd23557a59fc0eafbd33e7b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a000a91e6edd23557a59fc0eafbd33e7b">writeNeverLosesData</a> {_writeNeverLosesData}</td></tr>
-<tr class="separator:a000a91e6edd23557a59fc0eafbd33e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa548de3a818ef89b8bc848fb752b138"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#aaa548de3a818ef89b8bc848fb752b138">testWriteOnly</a> {_testWriteOnly}</td></tr>
-<tr class="separator:aaa548de3a818ef89b8bc848fb752b138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7ed640325ff305b67124c0283690cf"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a2e7ed640325ff305b67124c0283690cf">testReadOnly</a> {_testReadOnly}</td></tr>
-<tr class="separator:a2e7ed640325ff305b67124c0283690cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3939c8b572baad5d0e88db3a6c5e1d63"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3939c8b572baad5d0e88db3a6c5e1d63">testRawTransfer</a> {_testRawTransfer}</td></tr>
-<tr class="separator:a3939c8b572baad5d0e88db3a6c5e1d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fd7010580e75a6048927163b87f0687"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a7fd7010580e75a6048927163b87f0687">testCatalogue</a> {_testCatalogue}</td></tr>
-<tr class="separator:a7fd7010580e75a6048927163b87f0687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a20e092f58875bb759527ca7e04cac"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a46a20e092f58875bb759527ca7e04cac">syncRead</a> {_syncRead}</td></tr>
+<tr class="separator:a46a20e092f58875bb759527ca7e04cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2887917598d5b4668c8927f946e76b4e"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a2887917598d5b4668c8927f946e76b4e">forceDataLossWrite</a> {_forceDataLossWrite}</td></tr>
+<tr class="separator:a2887917598d5b4668c8927f946e76b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31d527bf3022765b0bdfb79b47df34b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ad31d527bf3022765b0bdfb79b47df34b">asyncReadInconsistency</a> {_asyncReadInconsistency}</td></tr>
+<tr class="separator:ad31d527bf3022765b0bdfb79b47df34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160e779d7ad8a4192bde724ff69282e4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a160e779d7ad8a4192bde724ff69282e4">switchReadOnly</a> {_switchReadOnly}</td></tr>
+<tr class="separator:a160e779d7ad8a4192bde724ff69282e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541f6afc9661cdcb81e9a1b2a6640d4f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a541f6afc9661cdcb81e9a1b2a6640d4f">switchWriteOnly</a> {_switchWriteOnly}</td></tr>
+<tr class="separator:a541f6afc9661cdcb81e9a1b2a6640d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957a21f29319d8fc927cc258b1b572ea"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a957a21f29319d8fc927cc258b1b572ea">writeNeverLosesData</a> {_writeNeverLosesData}</td></tr>
+<tr class="separator:a957a21f29319d8fc927cc258b1b572ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae011ca59644652916c0ccb0b211e25"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#aaae011ca59644652916c0ccb0b211e25">testWriteOnly</a> {_testWriteOnly}</td></tr>
+<tr class="separator:aaae011ca59644652916c0ccb0b211e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd827655124e68849687ce7dfad8c0c8"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#acd827655124e68849687ce7dfad8c0c8">testReadOnly</a> {_testReadOnly}</td></tr>
+<tr class="separator:acd827655124e68849687ce7dfad8c0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395bbd752900de37fc8ac311c3fc3716"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a395bbd752900de37fc8ac311c3fc3716">testRawTransfer</a> {_testRawTransfer}</td></tr>
+<tr class="separator:a395bbd752900de37fc8ac311c3fc3716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3094851a71a2830bc73eaceb659ab7"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a4d3094851a71a2830bc73eaceb659ab7">testCatalogue</a> {_testCatalogue}</td></tr>
+<tr class="separator:a4d3094851a71a2830bc73eaceb659ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5a6719ace75515e297f18469acc81b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#adc5a6719ace75515e297f18469acc81b">setRemoteValueIncrementsVersion</a> {_setRemoteValueIncrementsVersion}</td></tr>
+<tr class="separator:adc5a6719ace75515e297f18469acc81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt;<br />
-struct ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;</h3>
+<div class="textblock"><h3>template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt;<br />
+struct ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;</h3>
 
 <p>Descriptor for the test capabilities for each register. </p>
 <p>This allows a schema evolution of the test. New tests which require a new backend-specific function in the test in the register descriptor will be enabled through a corresponding Capability flag.</p>
 <p>Construct object like this:</p>
-<p>static constexpr auto capabilities = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a3c147ce96e4cc1dccf42a08fda784901">TestCapabilities&lt;&gt;()</a>.<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a6af859e99b79a8383f1c58daf775c054" title="See setForceDataLossWrite() function in the register descriptor.">enableForceDataLossWrite()</a>.<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#abfedd67e39d11bbfc9ae151a1406d9e3">disableAsyncReadInconsistency()</a>;</p>
+<p>static constexpr auto capabilities = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#aaaf5377c54ba3a6f249f4586bd588124">TestCapabilities&lt;&gt;()</a>.<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97" title="See setForceDataLossWrite() function in the register descriptor.">enableForceDataLossWrite()</a>.<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a5090ae6ac1902fab70e2823bb7911f68">disableAsyncReadInconsistency()</a>;</p>
 <p>Use any number of enable/disable functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00053">53</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00054">54</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3c147ce96e4cc1dccf42a08fda784901"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c147ce96e4cc1dccf42a08fda784901">&#9670;&nbsp;</a></span>TestCapabilities()</h2>
+<a id="aaaf5377c54ba3a6f249f4586bd588124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf5377c54ba3a6f249f4586bd588124">&#9670;&nbsp;</a></span>TestCapabilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a> </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -213,19 +220,19 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abfedd67e39d11bbfc9ae151a1406d9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfedd67e39d11bbfc9ae151a1406d9e3">&#9670;&nbsp;</a></span>disableAsyncReadInconsistency()</h2>
+<a id="a5090ae6ac1902fab70e2823bb7911f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5090ae6ac1902fab70e2823bb7911f68">&#9670;&nbsp;</a></span>disableAsyncReadInconsistency()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableAsyncReadInconsistency </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableAsyncReadInconsistency </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -238,23 +245,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00089">89</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00095">95</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="aafb605673fac1f3595587a415e647870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb605673fac1f3595587a415e647870">&#9670;&nbsp;</a></span>disableForceDataLossWrite()</h2>
+<a id="a009e2f1b0d32bd5a384e78540961b604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009e2f1b0d32bd5a384e78540961b604">&#9670;&nbsp;</a></span>disableForceDataLossWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableForceDataLossWrite </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableForceDataLossWrite </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -267,23 +274,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00077">77</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00081">81</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a0e1b56781a878d5394d365648e67554d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e1b56781a878d5394d365648e67554d">&#9670;&nbsp;</a></span>disableSwitchReadOnly()</h2>
+<a id="a05822caa2e91e4577ba9eb846e3b11f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05822caa2e91e4577ba9eb846e3b11f9">&#9670;&nbsp;</a></span>disableSetRemoteValueIncrementsVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableSwitchReadOnly </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableSetRemoteValueIncrementsVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -296,23 +303,25 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00101">101</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p>Enable/disable testing of version number increment in read operations after setRemoteValue. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00205">205</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a06608ff7c0ecfeb1ff05c602f44efb4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06608ff7c0ecfeb1ff05c602f44efb4a">&#9670;&nbsp;</a></span>disableSwitchWriteOnly()</h2>
+<a id="a1dc53c8eecd832191848ae403424da8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc53c8eecd832191848ae403424da8d">&#9670;&nbsp;</a></span>disableSwitchReadOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableSwitchWriteOnly </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableSwitchReadOnly </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -325,23 +334,52 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00113">113</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00109">109</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a7c6ccc0a51c13e6f72eb17455f38abbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c6ccc0a51c13e6f72eb17455f38abbf">&#9670;&nbsp;</a></span>disableSyncRead()</h2>
+<a id="ac932233cf52291ef0fb6b1c6a225e2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac932233cf52291ef0fb6b1c6a225e2a2">&#9670;&nbsp;</a></span>disableSwitchWriteOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;<a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableSyncRead </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableSwitchWriteOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00123">123</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="acde423a46df579bfd2a68d4fb9e441a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde423a46df579bfd2a68d4fb9e441a4">&#9670;&nbsp;</a></span>disableSyncRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;<a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableSyncRead </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -357,23 +395,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 <p>Allows to prevent the test from executing any synchronous read tests. </p>
 <p>This should be used only when testing TransferElements which do not support reads without <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a>, like e.g. the ControlSystemAdapter BidirectionalProcessArray. TransferElements handed out by real backends must always support this, to the syncReadTests capability should be enable for all backend tests. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00063">63</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00065">65</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="ab5c1ee15cc717d324645b88e67308b57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5c1ee15cc717d324645b88e67308b57">&#9670;&nbsp;</a></span>disableTestCatalogue()</h2>
+<a id="a2f4b94e826cf6f2b59f4e501a900a65f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4b94e826cf6f2b59f4e501a900a65f">&#9670;&nbsp;</a></span>disableTestCatalogue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableTestCatalogue </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableTestCatalogue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -388,23 +426,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>Enable/disable testing of catalogue content. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00177">177</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00191">191</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a2f25a56cbc6786b1c2f58b22fa329102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f25a56cbc6786b1c2f58b22fa329102">&#9670;&nbsp;</a></span>disableTestRawTransfer()</h2>
+<a id="a3decb141179b5510f85807fe7de03158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3decb141179b5510f85807fe7de03158">&#9670;&nbsp;</a></span>disableTestRawTransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableTestRawTransfer </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableTestRawTransfer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -419,263 +457,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>Enable/disable testing the raw accessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00164">164</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00177">177</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="ac6eb75e5f80acfee38142217c3eb6593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6eb75e5f80acfee38142217c3eb6593">&#9670;&nbsp;</a></span>disableTestReadOnly()</h2>
+<a id="a8b3b166ec2aa3a1542b78da543670f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3b166ec2aa3a1542b78da543670f5a">&#9670;&nbsp;</a></span>disableTestReadOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableTestReadOnly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00157">157</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a64cbf641ec2b3d7b3142fc9aef32442c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64cbf641ec2b3d7b3142fc9aef32442c">&#9670;&nbsp;</a></span>disableTestWriteNeverLosesData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableTestWriteNeverLosesData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00129">129</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a074d3d73ec2305f349a49226cd15843c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a074d3d73ec2305f349a49226cd15843c">&#9670;&nbsp;</a></span>disableTestWriteOnly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::disableTestWriteOnly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00143">143</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a571288818abd4f4198489e24a583f0a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a571288818abd4f4198489e24a583f0a0">&#9670;&nbsp;</a></span>enableAsyncReadInconsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableAsyncReadInconsistency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>See forceAsyncReadInconsistency() function in the register descriptor. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00084">84</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a6af859e99b79a8383f1c58daf775c054"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6af859e99b79a8383f1c58daf775c054">&#9670;&nbsp;</a></span>enableForceDataLossWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableForceDataLossWrite </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>See setForceDataLossWrite() function in the register descriptor. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00070">70</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a692ada35db55ad303d1d44ebe542d85e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a692ada35db55ad303d1d44ebe542d85e">&#9670;&nbsp;</a></span>enableSwitchReadOnly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableSwitchReadOnly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#adc78b0d8e8f1fa670e3d8fe7d9362c35">switchReadOnly()</a> function in the register descriptor. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00096">96</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a0604720cd0a6503efe1920933e0bd921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0604720cd0a6503efe1920933e0bd921">&#9670;&nbsp;</a></span>enableSwitchWriteOnly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableSwitchWriteOnly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ab0dd2567f9d27b6c80b0d37d814d23e0">switchWriteOnly()</a> function in the register descriptor. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00108">108</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a09a3e968898c957bb42fda33a24dc234"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a3e968898c957bb42fda33a24dc234">&#9670;&nbsp;</a></span>enableTestCatalogue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableTestCatalogue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00183">183</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="ade2112dde078d56168a1085a8e077ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade2112dde078d56168a1085a8e077ed6">&#9670;&nbsp;</a></span>enableTestRawTransfer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableTestRawTransfer </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableTestReadOnly </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -692,19 +490,288 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 </div>
 </div>
-<a id="a5c32dc6c5775a352204731d9e00a3860"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c32dc6c5775a352204731d9e00a3860">&#9670;&nbsp;</a></span>enableTestReadOnly()</h2>
+<a id="a6e905a1aad2e9109ecfb874b7ec8a5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e905a1aad2e9109ecfb874b7ec8a5e3">&#9670;&nbsp;</a></span>disableTestWriteNeverLosesData()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableTestReadOnly </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableTestWriteNeverLosesData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00141">141</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a21f410c1a096bd9a2a792bf040f1dafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f410c1a096bd9a2a792bf040f1dafe">&#9670;&nbsp;</a></span>disableTestWriteOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::disableTestWriteOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00155">155</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a33a57ca917b541e7c90ed301dc8c33ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a57ca917b541e7c90ed301dc8c33ef">&#9670;&nbsp;</a></span>enableAsyncReadInconsistency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableAsyncReadInconsistency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See forceAsyncReadInconsistency() function in the register descriptor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00089">89</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a5980fb3aaab1fb75a76cce431fd79f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5980fb3aaab1fb75a76cce431fd79f97">&#9670;&nbsp;</a></span>enableForceDataLossWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableForceDataLossWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See setForceDataLossWrite() function in the register descriptor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00073">73</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8d61ddaa0db218e3fa5ae5ad50353ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d61ddaa0db218e3fa5ae5ad50353ff">&#9670;&nbsp;</a></span>enableSetRemoteValueIncrementsVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableSetRemoteValueIncrementsVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00211">211</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a6315d056a1d58bfb7b9e48927cf5847e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6315d056a1d58bfb7b9e48927cf5847e">&#9670;&nbsp;</a></span>enableSwitchReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableSwitchReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a160e779d7ad8a4192bde724ff69282e4">switchReadOnly()</a> function in the register descriptor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00103">103</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="ab9e81e5db27d7ff833ddbf1a76c675e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e81e5db27d7ff833ddbf1a76c675e4">&#9670;&nbsp;</a></span>enableSwitchWriteOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableSwitchWriteOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a541f6afc9661cdcb81e9a1b2a6640d4f">switchWriteOnly()</a> function in the register descriptor. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00117">117</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d7e96374df88f988e999142eafc5127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7e96374df88f988e999142eafc5127">&#9670;&nbsp;</a></span>enableTestCatalogue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableTestCatalogue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00197">197</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a7916ba2b5564cb1e9a1ae78bc454db92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7916ba2b5564cb1e9a1ae78bc454db92">&#9670;&nbsp;</a></span>enableTestRawTransfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableTestRawTransfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00183">183</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a2f2f24fcd42969c3576a2c21f99330e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2f24fcd42969c3576a2c21f99330e9">&#9670;&nbsp;</a></span>enableTestReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableTestReadOnly </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -719,23 +786,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>Enable/disable testing only read operations, even if the register is readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00151">151</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00163">163</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a3557e0ac89c024aabe87f5bb8bccf2c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3557e0ac89c024aabe87f5bb8bccf2c8">&#9670;&nbsp;</a></span>enableTestWriteNeverLosesData()</h2>
+<a id="a2ba5ed97c182dc706b5c8ba7dac48b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba5ed97c182dc706b5c8ba7dac48b8b">&#9670;&nbsp;</a></span>enableTestWriteNeverLosesData()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableTestWriteNeverLosesData </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableTestWriteNeverLosesData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -749,25 +816,25 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </div><div class="memdoc">
 
 <p>Enable/disable test whether write transfers never report lost data (part of B.7.2). </p>
-<p>A series of writeQueueLength writes is performed and no data loss must be reported. Mutually exclusive with <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a6af859e99b79a8383f1c58daf775c054" title="See setForceDataLossWrite() function in the register descriptor.">enableForceDataLossWrite()</a>. </p>
+<p>A series of writeQueueLength writes is performed and no data loss must be reported. Mutually exclusive with <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97" title="See setForceDataLossWrite() function in the register descriptor.">enableForceDataLossWrite()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00122">122</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00133">133</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a3660d4acc62803a55b265c084b58c8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3660d4acc62803a55b265c084b58c8be">&#9670;&nbsp;</a></span>enableTestWriteOnly()</h2>
+<a id="a4b3a3c9bb2500894110e3943fc905ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3a3c9bb2500894110e3943fc905ab3">&#9670;&nbsp;</a></span>enableTestWriteOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::enableTestWriteOnly </td>
+          <td class="memname">constexpr <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;_syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion&gt; <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::enableTestWriteOnly </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -782,24 +849,24 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>Enable/disable testing only write operations, even if the register is readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00137">137</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00149">149</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3f8b2df3581377aca2245926cde884e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8b2df3581377aca2245926cde884e0">&#9670;&nbsp;</a></span>asyncReadInconsistency</h2>
+<a id="ad31d527bf3022765b0bdfb79b47df34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31d527bf3022765b0bdfb79b47df34b">&#9670;&nbsp;</a></span>asyncReadInconsistency</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::asyncReadInconsistency {_asyncReadInconsistency}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::asyncReadInconsistency {_asyncReadInconsistency}</td>
         </tr>
       </table>
   </td>
@@ -809,23 +876,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00189">189</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00217">217</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a7553375bf5c8839f378846e660de21d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7553375bf5c8839f378846e660de21d7">&#9670;&nbsp;</a></span>forceDataLossWrite</h2>
+<a id="a2887917598d5b4668c8927f946e76b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2887917598d5b4668c8927f946e76b4e">&#9670;&nbsp;</a></span>forceDataLossWrite</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::forceDataLossWrite {_forceDataLossWrite}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::forceDataLossWrite {_forceDataLossWrite}</td>
         </tr>
       </table>
   </td>
@@ -835,23 +902,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00188">188</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00216">216</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="adc78b0d8e8f1fa670e3d8fe7d9362c35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc78b0d8e8f1fa670e3d8fe7d9362c35">&#9670;&nbsp;</a></span>switchReadOnly</h2>
+<a id="adc5a6719ace75515e297f18469acc81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5a6719ace75515e297f18469acc81b">&#9670;&nbsp;</a></span>setRemoteValueIncrementsVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::switchReadOnly {_switchReadOnly}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::setRemoteValueIncrementsVersion {_setRemoteValueIncrementsVersion}</td>
         </tr>
       </table>
   </td>
@@ -861,23 +928,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00225">225</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="ab0dd2567f9d27b6c80b0d37d814d23e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0dd2567f9d27b6c80b0d37d814d23e0">&#9670;&nbsp;</a></span>switchWriteOnly</h2>
+<a id="a160e779d7ad8a4192bde724ff69282e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160e779d7ad8a4192bde724ff69282e4">&#9670;&nbsp;</a></span>switchReadOnly</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::switchWriteOnly {_switchWriteOnly}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::switchReadOnly {_switchReadOnly}</td>
         </tr>
       </table>
   </td>
@@ -887,23 +954,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00191">191</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00218">218</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="ad379993bfb6b0e671eba269c6af4b0fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad379993bfb6b0e671eba269c6af4b0fb">&#9670;&nbsp;</a></span>syncRead</h2>
+<a id="a541f6afc9661cdcb81e9a1b2a6640d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541f6afc9661cdcb81e9a1b2a6640d4f">&#9670;&nbsp;</a></span>switchWriteOnly</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::syncRead {_syncRead}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::switchWriteOnly {_switchWriteOnly}</td>
         </tr>
       </table>
   </td>
@@ -913,23 +980,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00187">187</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00219">219</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a7fd7010580e75a6048927163b87f0687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fd7010580e75a6048927163b87f0687">&#9670;&nbsp;</a></span>testCatalogue</h2>
+<a id="a46a20e092f58875bb759527ca7e04cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a20e092f58875bb759527ca7e04cac">&#9670;&nbsp;</a></span>syncRead</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::testCatalogue {_testCatalogue}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::syncRead {_syncRead}</td>
         </tr>
       </table>
   </td>
@@ -939,23 +1006,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00196">196</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00215">215</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a3939c8b572baad5d0e88db3a6c5e1d63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3939c8b572baad5d0e88db3a6c5e1d63">&#9670;&nbsp;</a></span>testRawTransfer</h2>
+<a id="a4d3094851a71a2830bc73eaceb659ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3094851a71a2830bc73eaceb659ab7">&#9670;&nbsp;</a></span>testCatalogue</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::testRawTransfer {_testRawTransfer}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::testCatalogue {_testCatalogue}</td>
         </tr>
       </table>
   </td>
@@ -965,23 +1032,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00195">195</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00224">224</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a2e7ed640325ff305b67124c0283690cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e7ed640325ff305b67124c0283690cf">&#9670;&nbsp;</a></span>testReadOnly</h2>
+<a id="a395bbd752900de37fc8ac311c3fc3716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395bbd752900de37fc8ac311c3fc3716">&#9670;&nbsp;</a></span>testRawTransfer</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::testReadOnly {_testReadOnly}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::testRawTransfer {_testRawTransfer}</td>
         </tr>
       </table>
   </td>
@@ -991,23 +1058,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00194">194</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00223">223</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="aaa548de3a818ef89b8bc848fb752b138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa548de3a818ef89b8bc848fb752b138">&#9670;&nbsp;</a></span>testWriteOnly</h2>
+<a id="acd827655124e68849687ce7dfad8c0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd827655124e68849687ce7dfad8c0c8">&#9670;&nbsp;</a></span>testReadOnly</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::testWriteOnly {_testWriteOnly}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::testReadOnly {_testReadOnly}</td>
         </tr>
       </table>
   </td>
@@ -1017,23 +1084,23 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00193">193</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00222">222</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a000a91e6edd23557a59fc0eafbd33e7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a000a91e6edd23557a59fc0eafbd33e7b">&#9670;&nbsp;</a></span>writeNeverLosesData</h2>
+<a id="aaae011ca59644652916c0ccb0b211e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae011ca59644652916c0ccb0b211e25">&#9670;&nbsp;</a></span>testWriteOnly</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled&gt; </div>
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue &gt;::writeNeverLosesData {_writeNeverLosesData}</td>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::testWriteOnly {_testWriteOnly}</td>
         </tr>
       </table>
   </td>
@@ -1043,7 +1110,33 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00192">192</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00221">221</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a957a21f29319d8fc927cc258b1b572ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a21f29319d8fc927cc258b1b572ea">&#9670;&nbsp;</a></span>writeNeverLosesData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _forceDataLossWrite = TestCapability::unspecified, TestCapability _asyncReadInconsistency = TestCapability::unspecified, TestCapability _switchReadOnly = TestCapability::unspecified, TestCapability _switchWriteOnly = TestCapability::unspecified, TestCapability _writeNeverLosesData = TestCapability::unspecified, TestCapability _testWriteOnly = TestCapability::disabled, TestCapability _testReadOnly = TestCapability::disabled, TestCapability _testRawTransfer = TestCapability::unspecified, TestCapability _testCatalogue = TestCapability::enabled, TestCapability _setRemoteValueIncrementsVersion = TestCapability::enabled&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">ChimeraTK::TestCapabilities</a>&lt; _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion &gt;::writeNeverLosesData {_writeNeverLosesData}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00220">220</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1149,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a></li>
-    <li class="footer">Generated on Tue Jan 9 2024 04:56:33 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 11 2024 04:53:13 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
