@@ -167,27 +167,27 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"_metadata_catalogue_8h_source.html",
-"_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a",
-"class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html#abf8794f55d96e4185ebbb663ca730e84",
-"class_chimera_t_k_1_1_dummy_backend_base.html#acce11a882262aa1d6e01dfc2c5459417",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a4126849af04acb41fe3642a29177d844",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#a7cf6250f28bb5fd926ae69d19af69aef",
-"class_chimera_t_k_1_1_rebot_backend.html#a5b131273731812b8b3496ecfc8d78562",
-"class_chimera_t_k_1_1_transfer_element.html#a6963608d2450a4cd9bfa95ef39428d49",
-"class_chimera_t_k_1_1_uio_backend.html",
-"class_example_backend.html#a69a167f471b871edf156bc37052e1948",
-"functions_func_t.html",
-"namespace_chimera_t_k.html#ad1f8efd0503fa72d47d28fcdb95c64b7",
-"struct_byte_raw__fixed_point8__4u.html#a3576288bdad1755bc7f800a1b22d747f",
-"struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a3469f9f4eed6373129f56d0d496427a8",
-"struct_helper_process.html#a87c07b45edfd8e512e2aed1391e3242b",
-"struct_reg_bit2_of_word_firmware__push.html",
-"struct_reg_word_firmware_with_math___r__push.html#afc3bbd0e53690ea738d1b1356d3ee615",
-"test_dummy_backend_8cpp.html#a00f8a92fbe12e8fa983751483c06980d",
-"test_multiplexed_data_accesor_8cpp.html#a7110e26b46e2581206d0f7d47b0f0b4f",
-"test_type_changing_decorator_8cpp.html#a46ab1970bad85d5f5049fd07f3e6dec0"
+"_access_mode_8cc.html",
+"_n_d_register_accessor_8cc.html",
+"_unified_backend_test_8h.html#ad026dd4a8d0c54ed5084a0ed3e51d985",
+"class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html#acb5207b65957e396d4d1bc91142d8af8",
+"class_chimera_t_k_1_1_dummy_backend_base.html#aed323b8c565402996b7df7066b74051e",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a4e126b88ba59cbf367c80110d28e8958",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#a8832452e77a6be7f771b9cf8e934aba9",
+"class_chimera_t_k_1_1_rebot_backend.html#a741e38a09bb3d288998451aacc354859",
+"class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059",
+"class_chimera_t_k_1_1_uio_backend.html#a1ac643484d884553f1e740ce9d7e8bec",
+"class_example_backend.html#ab28efb9790bba3ba0d7f5878c53f14e2",
+"functions_func_u.html",
+"namespace_chimera_t_k.html#ad2a806d36f9db8ff11fa81fa7d3a31d9",
+"struct_byte_raw__fixed_point8__4u.html#a52e2f192af973cf29acde12a7a4bbc9e",
+"struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a84d9945354a6fe38e434f93c8ca6f204",
+"struct_helper_process.html#a9becd0574082bed297c926404d038eeb",
+"struct_reg_bit2_of_word_firmware__push.html#a6934c0a62578c617a7bf09a033e96c4c",
+"struct_reg_word_firmware_with_math___w.html",
+"test_dummy_backend_8cpp.html#a06ef23872fb6ac510c609f042ba577f6",
+"test_multiplexed_data_accesor_8cpp.html#a762f56b77aa94ab71c4c08418ff061de",
+"test_type_changing_decorator_8cpp.html#a5508c2f467404d24528cef39ac8ef00f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
