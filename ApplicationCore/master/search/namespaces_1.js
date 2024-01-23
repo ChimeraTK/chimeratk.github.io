@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['detail_1942',['detail',['../namespacedetail.html',1,'']]],
-  ['drawmoduleconnections_1943',['drawModuleConnections',['../namespacedraw_module_connections.html',1,'']]]
+  ['detail_1944',['detail',['../namespacedetail.html',1,'']]],
+  ['drawmoduleconnections_1945',['drawModuleConnections',['../namespacedraw_module_connections.html',1,'']]]
 ];

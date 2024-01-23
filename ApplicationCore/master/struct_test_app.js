@@ -8,6 +8,7 @@ var struct_test_app =
     [ "TestApp", "struct_test_app.html#ad32f853793eefbce05935168f5d4cec0", null ],
     [ "~TestApp", "struct_test_app.html#a08177de9fc3e32add783669397fa2962", null ],
     [ "dev1", "struct_test_app.html#a41d26e260d16b82207f7675cff5c432b", null ],
+    [ "device", "struct_test_app.html#a470f8e1a02a638f484d7324f85d35f84", null ],
     [ "dmap", "struct_test_app.html#adc8a76a23180998c9075096f895aac53", null ],
     [ "initHandler1", "struct_test_app.html#a7718e7b8954304b71aabe083200a16ea", null ],
     [ "initHandler2", "struct_test_app.html#ac15202bc5303f7b771a6ac97d12702a8", null ],
