@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"struct_reg_bit2_of_word_firmware.html#a0481463a400954e6e9891616c57a67d7":[19,0,89,1],
+"struct_reg_bit2_of_word_firmware.html#ad95f976af3a5348e57a154491e5c3360":[19,0,89,2],
+"struct_reg_bit2_of_word_firmware__push.html":[19,0,90],
 "struct_reg_bit2_of_word_firmware__push.html#a6934c0a62578c617a7bf09a033e96c4c":[19,0,90,3],
 "struct_reg_bit2_of_word_firmware__push.html#a818dda84238a7316a4afb83423a25633":[19,0,90,4],
 "struct_reg_bit2_of_word_firmware__push.html#a9f81e1d97e569270af13148c1eda4ece":[19,0,90,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "struct_reg_word_firmware_with_math___r.html#a4fb589ea22eb1afe9d112e53cd0bd8ef":[19,0,132,1],
 "struct_reg_word_firmware_with_math___r__push.html":[19,0,133],
 "struct_reg_word_firmware_with_math___r__push.html#a0756f2904ddbdac76fd0c1f6cbc9a74a":[19,0,133,4],
-"struct_reg_word_firmware_with_math___r__push.html#a4e11d27bd0c7696f873b5cd31538b27f":[19,0,133,1],
-"struct_reg_word_firmware_with_math___r__push.html#ac1fa08b9dfd913464305f7105b709d2e":[19,0,133,3],
-"struct_reg_word_firmware_with_math___r__push.html#ac998424e07e6e6761f50bc478b9339fd":[19,0,133,2],
-"struct_reg_word_firmware_with_math___r__push.html#afc3bbd0e53690ea738d1b1356d3ee615":[19,0,133,0]
+"struct_reg_word_firmware_with_math___r__push.html#a4e11d27bd0c7696f873b5cd31538b27f":[19,0,133,1]
 };

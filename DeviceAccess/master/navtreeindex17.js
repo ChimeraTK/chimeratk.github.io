@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"struct_reg_word_firmware_with_math___r__push.html#ac1fa08b9dfd913464305f7105b709d2e":[19,0,133,3],
+"struct_reg_word_firmware_with_math___r__push.html#ac998424e07e6e6761f50bc478b9339fd":[19,0,133,2],
+"struct_reg_word_firmware_with_math___r__push.html#afc3bbd0e53690ea738d1b1356d3ee615":[19,0,133,0],
 "struct_reg_word_firmware_with_math___w.html":[19,0,134],
 "struct_reg_word_firmware_with_math___w.html#a702effa67ca090eac4d2a410f440bb8f":[19,0,134,1],
 "struct_reg_word_firmware_with_math___w.html#ab8dfec0eefb4f13ac3a6f3157a38294d":[19,0,134,2],
@@ -151,8 +154,8 @@ var NAVTREEINDEX17 =
 "struct_write_counting_backend_1_1_backend_registerer.html#ac9b2a38453841e4993d53772ef024824":[19,0,158,0,0],
 "struct_wrong_version_backend.html":[19,0,159],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[19,0,159,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,159,0,1],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,159,0,0],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,159,0,1],
 "structaccess_private_data_1_1stow__private.html":[19,0,0,1],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[19,0,0,1,0],
 "structaccess_private_data_1_1stowed.html":[19,0,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "test_double_buffering_h_w_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,8,5,1,2],
 "test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb":[20,0,8,5,1,3],
 "test_double_buffering_h_w_8cc_source.html":[20,0,8,5,1],
-"test_dummy_backend_8cpp.html":[20,0,8,1,9],
-"test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297":[20,0,8,1,9,10],
-"test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d":[20,0,8,1,9,17],
-"test_dummy_backend_8cpp.html#a00f8a92fbe12e8fa983751483c06980d":[20,0,8,1,9,24]
+"test_dummy_backend_8cpp.html":[20,0,8,1,9]
 };
