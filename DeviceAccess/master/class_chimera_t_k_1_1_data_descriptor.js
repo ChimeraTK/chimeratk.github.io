@@ -13,6 +13,7 @@ var class_chimera_t_k_1_1_data_descriptor =
     [ "fundamentalType", "class_chimera_t_k_1_1_data_descriptor.html#a40d518a86f5269b6a0b706c85d9fcfc8", null ],
     [ "isIntegral", "class_chimera_t_k_1_1_data_descriptor.html#a45f6a47466d1096d2387bf9aa1886acf", null ],
     [ "isSigned", "class_chimera_t_k_1_1_data_descriptor.html#aaab62545dad995c54e3ca0994df5a6e6", null ],
+    [ "minimumDataType", "class_chimera_t_k_1_1_data_descriptor.html#a72e3241d7189947e906a08756482ad5c", null ],
     [ "nDigits", "class_chimera_t_k_1_1_data_descriptor.html#a9d31f0424da0bdda153f2ee7ed5606fd", null ],
     [ "nFractionalDigits", "class_chimera_t_k_1_1_data_descriptor.html#a041fdd9597f2d434f4fc5f6a85be7c0d", null ],
     [ "operator!=", "class_chimera_t_k_1_1_data_descriptor.html#a961eb30139149f77d91af96f46cf0c98", null ],

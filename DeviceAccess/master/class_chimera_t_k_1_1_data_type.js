@@ -20,6 +20,7 @@ var class_chimera_t_k_1_1_data_type =
     [ "DataType", "class_chimera_t_k_1_1_data_type.html#a40b59072a3ac3f6b49a88d1b63d4983a", null ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html#a4fdfcb7274cb8b763be5a0f4e2343042", null ],
     [ "getAsString", "class_chimera_t_k_1_1_data_type.html#aeb9ee0f4841febd1266f773e7ffa01dd", null ],
+    [ "getAsTypeInfo", "class_chimera_t_k_1_1_data_type.html#a9ef9a0e6811f6e82a6b6bc22bbf8fbee", null ],
     [ "isIntegral", "class_chimera_t_k_1_1_data_type.html#ae258a960f986b3c11232c4b726fbe10e", null ],
     [ "isNumeric", "class_chimera_t_k_1_1_data_type.html#a61c6477b0b17ed6a4df78bfc3e4e9fcc", null ],
     [ "isSigned", "class_chimera_t_k_1_1_data_type.html#aef71601ea1cc74a0824fb275a0c0514f", null ],
