@@ -231,7 +231,7 @@ Automatic mapping of many variables</h2>
 </ul>
 <p>An example with many different automatic mappings is here: </p><div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
-<div class="line">  <span class="comment">àƒ &#x2403;ñ</span></div>
+<div class="line">  <span class="comment">àƒ/§æ</span></div>
 <div class="line"><span class="comment">       exist as directory on the input. --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MY_RENAMED_INTEGER_LOCATION&quot;</span>&gt;</div>
 <div class="line">    <span class="comment">&lt;!-- Test renaming of an array --&gt;</span></div>
@@ -261,9 +261,9 @@ Automatic mapping of many variables</h2>
 <div class="line">    &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">USHORT</span>&lt;/<span class="keywordtype">import</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">location</span>&gt;    </div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">&#x2407;\%‡ºU</span></div>
-<div class="line"><span class="comment">1Íý[&#x2405;</span></div>
-<div class="line"><span class="comment">1Íý[&#x2405;</span></div>
+<div class="line">  <span class="comment">&#x241F;GLÝ±U</span></div>
+<div class="line"><span class="comment">æ_H[&#x2405;</span></div>
+<div class="line"><span class="comment">æ_H[&#x2405;</span></div>
 <div class="line"><span class="comment">       but it&#39;s not seen because it&#39;s always tested together) --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UCHAR&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">is_writeable</span>&gt;<span class="keyword">false</span>&lt;/<span class="keywordtype">is_writeable</span>&gt;</div>
@@ -277,7 +277,7 @@ Automatic mapping of many variables</h2>
 <div class="line">  </div>
 <div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOUBLE&quot;</span>&gt;  </div>
 <div class="line">    <span class="comment">&lt;!-- test renaming a scalar--&gt;</span></div>
-<div class="line">    <span class="comment">1Íý[&#x2405;</span></div>
+<div class="line">    <span class="comment">æ_H[&#x2405;</span></div>
 <div class="line"><span class="comment">         top the ocation name, &#39;/DOUBLE&#39; in this case --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RENAMED_CONSTANT&quot;</span>&gt;</div>
 <div class="line">      <span class="comment">&lt;!-- test turning off the history (no special default set per location, on by default) --&gt;</span></div>
@@ -294,7 +294,7 @@ Automatic mapping of many variables</h2>
 <div class="line">    &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">DOUBLE</span>&lt;/<span class="keywordtype">import</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">location</span>&gt;</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">1Íý[&#x2405;</span></div>
+<div class="line">  <span class="comment">æ_H[&#x2405;</span></div>
 <div class="line"><span class="comment">       Input variables already mentioned explicitly or already imported will not be added. --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">import</span>&gt;/&lt;/<span class="keywordtype">import</span>&gt;</div>
 <div class="line"> </div>
@@ -314,7 +314,7 @@ ZeroMQ publication</h2>
 <p>DOOCS properties can be published via ZeroMQ so that clients can be notified about updates in real time. To enable this one simply has to specifiy the <code>publish_ZMQ</code> tag as shown in the following example:</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
-<div class="line">  <span class="comment">2&#x2403;6‡ºU</span></div>
+<div class="line">  <span class="comment">ûÈ¾Þ±U</span></div>
 <div class="line"><span class="comment">     the test cases cover both cases. --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">data_matching</span>&gt;<span class="keyword">exact</span>&lt;/<span class="keywordtype">data_matching</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">macro_pulse_number_source</span>&gt;/<span class="keyword">UINT</span>/<span class="keyword">FROM_DEVICE_SCALAR</span>&lt;/<span class="keywordtype">macro_pulse_number_source</span>&gt;</div>
@@ -527,7 +527,7 @@ Specify &lt;tt&gt;eq_fct_code&lt;/tt&gt; in the mapping file</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 19 2024 04:57:25 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 31 2024 04:57:49 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
