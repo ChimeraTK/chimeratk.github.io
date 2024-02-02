@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend
-   &#160;<span id="projectnumber">01.08.00</span>
+   &#160;<span id="projectnumber">01.08.01</span>
    </div>
   </td>
  </tr>
@@ -137,12 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad777f3414af4944b2f9c1bafd272a801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0b104650a279c02f853d7a7f6e07f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#aa0b104650a279c02f853d7a7f6e07f48">close</a> () override</td></tr>
 <tr class="separator:aa0b104650a279c02f853d7a7f6e07f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e9a53151458d87b7cec8127a8bf08a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#ab2e9a53151458d87b7cec8127a8bf08a">isFunctional</a> () const override</td></tr>
-<tr class="separator:ab2e9a53151458d87b7cec8127a8bf08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64beee5b734545cd830b337f1891fb3d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d">readDeviceInfo</a> () override</td></tr>
 <tr class="separator:a64beee5b734545cd830b337f1891fb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edfcfc60808a52f47010ec0759ee121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121">setException</a> () override</td></tr>
-<tr class="separator:a7edfcfc60808a52f47010ec0759ee121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9b745a8f3445ddb8af46f361241408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#adf9b745a8f3445ddb8af46f361241408">setExceptionImpl</a> () noexcept override</td></tr>
+<tr class="separator:adf9b745a8f3445ddb8af46f361241408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad275a7a9e412614591512f7aafab19c6"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ad275a7a9e412614591512f7aafab19c6"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6">getRegisterAccessor_impl</a> (const RegisterPath &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags)</td></tr>
 <tr class="separator:ad275a7a9e412614591512f7aafab19c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,13 +287,13 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00247">247</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00237">237</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a60af750f68aad5c342fb159949240077_cgraph.svg" width="539" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a60af750f68aad5c342fb159949240077_cgraph.svg" width="539" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -362,7 +360,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00206">206</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00208">208</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -408,7 +406,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00140">140</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00142">142</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -469,7 +467,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00197">197</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00199">199</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -521,7 +519,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00258">258</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00248">248</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -556,7 +554,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00191">191</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00193">193</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -591,7 +589,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00109">109</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00107">107</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -612,9 +610,9 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Called by accessors to inform about addess causing a runtime_error. </p>
-<p>Does not switch backend into exception state, this is done separately by calling <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121">setException()</a>. </p>
+<p>Does not switch backend into exception state, this is done separately by calling setException(). </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00227">227</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00221">221</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -642,48 +640,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00388">388</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00378">378</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a02e160d0a945224f86d7ef21af9629c9_icgraph.svg" width="100%" height="584"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ab2e9a53151458d87b7cec8127a8bf08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2e9a53151458d87b7cec8127a8bf08a">&#9670;&nbsp;</a></span>isFunctional()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::DoocsBackend::isFunctional </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00220">220</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_ab2e9a53151458d87b7cec8127a8bf08a_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -712,13 +675,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00167">167</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00169">169</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_ad777f3414af4944b2f9c1bafd272a801_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_ad777f3414af4944b2f9c1bafd272a801_cgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -747,12 +710,12 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00073">73</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00071">71</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
-<a id="a7edfcfc60808a52f47010ec0759ee121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7edfcfc60808a52f47010ec0759ee121">&#9670;&nbsp;</a></span>setException()</h2>
+<a id="adf9b745a8f3445ddb8af46f361241408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9b745a8f3445ddb8af46f361241408">&#9670;&nbsp;</a></span>setExceptionImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -761,7 +724,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ChimeraTK::DoocsBackend::setException </td>
+          <td class="memname">void ChimeraTK::DoocsBackend::setExceptionImpl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -769,26 +732,18 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00236">236</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00230">230</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a7edfcfc60808a52f47010ec0759ee121_cgraph.svg" width="539" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a7edfcfc60808a52f47010ec0759ee121_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_adf9b745a8f3445ddb8af46f361241408_cgraph.svg" width="539" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -817,7 +772,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00099">99</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00097">97</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -834,7 +789,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00107">107</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00105">105</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -852,7 +807,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>DOOCS address component for the server (FACILITY/DEVICE) </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00086">86</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00084">84</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +831,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00093">93</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00091">91</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +845,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a></li>
-    <li class="footer">Generated on Wed Dec 6 2023 04:58:18 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Feb 2 2024 04:55:12 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
