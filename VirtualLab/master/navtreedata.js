@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "mtca4u-VirtualLab", "index.html", [
+  [ "ChimeraTK-VirtualLab", "index.html", [
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
