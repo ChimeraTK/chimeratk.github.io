@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8h_source.html','')
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">ChimeraTK::LNMBackend</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="comment">// forward declaration needed for MathPlugin</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">struct </span>MathPluginFormulaHelper;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">class </span>MathPluginFormulaHelper;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html">   17</a></span>&#160;  <span class="keyword">class </span><a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html">MathPlugin</a> : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">AccessorPlugin</a>&lt;MathPlugin&gt; {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">public</span>:</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8h_source.html','')
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab49a8d6b345e1716cd3a82a9b49a84a6">   41</a></span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab49a8d6b345e1716cd3a82a9b49a84a6">_parameters</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a87d67e51361cc9f2fb7ce2cc66c41a7b">   42</a></span>&#160;    std::string <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a87d67e51361cc9f2fb7ce2cc66c41a7b">_formula</a>;              <span class="comment">// extracted from _parameters</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a4bb9a0035fe429d3b5113b2ad75964e5">   43</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a4bb9a0035fe429d3b5113b2ad75964e5">_enablePushParameters</a>{<span class="keyword">false</span>}; <span class="comment">// extracted from _parameters</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72">   44</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72">_hasPushParameter</a>{<span class="keyword">false</span>};     <span class="comment">// only releant if _isWrite</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72">   44</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72">_hasPushParameter</a>{<span class="keyword">false</span>};     <span class="comment">// only relevant if _isWrite</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//  only used if _hasPushParameter == true</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// The _writeMutex has two functions:</span></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ee326fa6789bb6bdc0887158d2381386.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_67c55bddc74dc3d666aacb5608bef154.html">include</a></li><li class="navelem"><a class="el" href="_l_n_m_math_plugin_8h.html">LNMMathPlugin.h</a></li>
-    <li class="footer">Generated on Tue Feb 20 2024 04:56:59 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 21 2024 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

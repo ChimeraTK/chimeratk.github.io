@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966":[19,0,132,0],
+"struct_reg_word_firmware_with_math___r.html#a4c76cc0c1abb4faa5251c5e2594bd5d8":[19,0,132,2],
+"struct_reg_word_firmware_with_math___r.html#a4fb589ea22eb1afe9d112e53cd0bd8ef":[19,0,132,1],
+"struct_reg_word_firmware_with_math___r__push.html":[19,0,133],
 "struct_reg_word_firmware_with_math___r__push.html#a0756f2904ddbdac76fd0c1f6cbc9a74a":[19,0,133,4],
 "struct_reg_word_firmware_with_math___r__push.html#a4e11d27bd0c7696f873b5cd31538b27f":[19,0,133,1],
 "struct_reg_word_firmware_with_math___r__push.html#ac1fa08b9dfd913464305f7105b709d2e":[19,0,133,3],
@@ -156,8 +160,8 @@ var NAVTREEINDEX17 =
 "struct_write_counting_backend_1_1_backend_registerer.html#ac9b2a38453841e4993d53772ef024824":[19,0,158,0,0],
 "struct_wrong_version_backend.html":[19,0,159],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[19,0,159,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,159,0,1],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,159,0,0],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,159,0,1],
 "structaccess_private_data_1_1stow__private.html":[19,0,0,1],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[19,0,0,1,0],
 "structaccess_private_data_1_1stowed.html":[19,0,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "test_double_buffering_8cpp.html#ab4423a7f580c59b7d5935f0e0f4d01fe":[20,0,8,1,8,16],
 "test_double_buffering_8cpp.html#ad1dfc5906ae5cdcfbedf0e90f18a2e01":[20,0,8,1,8,12],
 "test_double_buffering_8cpp_source.html":[20,0,8,1,8],
-"test_double_buffering_h_w_8cc.html":[20,0,8,5,1],
-"test_double_buffering_h_w_8cc.html#a11840c6c2088f4da42c800e74ffd5ed9":[20,0,8,5,1,4],
-"test_double_buffering_h_w_8cc.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,8,5,1,1],
-"test_double_buffering_h_w_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,8,5,1,2],
-"test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb":[20,0,8,5,1,3]
+"test_double_buffering_h_w_8cc.html":[20,0,8,5,1]
 };

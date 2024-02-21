@@ -122,8 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5bfd99be30276cfbd6f4a31fa2d70e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10">closeImpl</a> () override</td></tr>
 <tr class="memdesc:a5bfd99be30276cfbd6f4a31fa2d70e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">All backends derrived from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a> must implement <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10" title="All backends derrived from NumericAddressedBackend must implement closeImpl() instead of close.">closeImpl()</a> instead of close.  <a href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10">More...</a><br /></td></tr>
 <tr class="separator:a5bfd99be30276cfbd6f4a31fa2d70e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066314cd308997c142d115cb09f4d290"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a066314cd308997c142d115cb09f4d290">minimumTransferAlignment</a> ([[maybe_unused]]uint64_t bar) const override</td></tr>
-<tr class="separator:a066314cd308997c142d115cb09f4d290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab733ff6404fad0fe160bc34c5057450f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#ab733ff6404fad0fe160bc34c5057450f">minimumTransferAlignment</a> ([[maybe_unused]] uint64_t bar) const override</td></tr>
+<tr class="memdesc:ab733ff6404fad0fe160bc34c5057450f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="class_chimera_t_k_1_1_uio_backend.html#ab733ff6404fad0fe160bc34c5057450f">More...</a><br /></td></tr>
+<tr class="separator:ab733ff6404fad0fe160bc34c5057450f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0f89efb6526ddafad953740f8ccf2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html#abf0f89efb6526ddafad953740f8ccf2e">barIndexValid</a> (uint64_t bar) override</td></tr>
 <tr class="memdesc:abf0f89efb6526ddafad953740f8ccf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be implemented by the backends.  <a href="class_chimera_t_k_1_1_uio_backend.html#abf0f89efb6526ddafad953740f8ccf2e">More...</a><br /></td></tr>
 <tr class="separator:abf0f89efb6526ddafad953740f8ccf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,9 +154,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c628ba2417dd01ef43508a87324e15f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f">canMergeRequests</a> () const</td></tr>
 <tr class="memdesc:a9c628ba2417dd01ef43508a87324e15f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the backend supports merging of requests (read or write)  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f">More...</a><br /></td></tr>
 <tr class="separator:a9c628ba2417dd01ef43508a87324e15f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addca12b3b7c60694f6e27b69f44e8afa inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#addca12b3b7c60694f6e27b69f44e8afa">minimumTransferAlignment</a> ([[maybe_unused]] uint64_t bar) const</td></tr>
-<tr class="memdesc:addca12b3b7c60694f6e27b69f44e8afa inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#addca12b3b7c60694f6e27b69f44e8afa">More...</a><br /></td></tr>
-<tr class="separator:addca12b3b7c60694f6e27b69f44e8afa inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b50f2e7460810b9cfac12f45c0aaab5 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b50f2e7460810b9cfac12f45c0aaab5">getRegisterCatalogue</a> () const override</td></tr>
 <tr class="memdesc:a1b50f2e7460810b9cfac12f45c0aaab5 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the register catalogue with detailed information on all registers.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b50f2e7460810b9cfac12f45c0aaab5">More...</a><br /></td></tr>
 <tr class="separator:a1b50f2e7460810b9cfac12f45c0aaab5 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,8 +439,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a066314cd308997c142d115cb09f4d290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a066314cd308997c142d115cb09f4d290">&#9670;&nbsp;</a></span>minimumTransferAlignment()</h2>
+<a id="ab733ff6404fad0fe160bc34c5057450f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab733ff6404fad0fe160bc34c5057450f">&#9670;&nbsp;</a></span>minimumTransferAlignment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,17 +451,24 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">size_t ChimeraTK::UioBackend::minimumTransferAlignment </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ]uint64_t&#160;</td>
+          <td class="paramtype">[[maybe_unused] ] uint64_t&#160;</td>
           <td class="paramname"><em>bar</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Determines the supported minimum alignment for any read/write requests. </p>
+<p>If the backend expects a particular alignment for <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a6f81a21f548a14015e260ef960c4703c" title="Read function to be implemented by backends.">read()</a>/write() calls it should return a value bigger than 1. The address and sizeInBytes arguments of the <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a6f81a21f548a14015e260ef960c4703c" title="Read function to be implemented by backends.">read()</a>/write() calls will be always an integer multiple of this number. Any unaligned transfers will be changed to meet these criteria (additional padding data will be thrown away).</p>
+<p>The default implementation returns 1, which means no special alignment is required.</p>
+<dl class="section return"><dt>Returns</dt><dd>Minimum alignment in bytes </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#addca12b3b7c60694f6e27b69f44e8afa">ChimeraTK::NumericAddressedBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_uio_backend_8h_source.html#l00033">33</a> of file <a class="el" href="_uio_backend_8h_source.html">UioBackend.h</a>.</p>
 
@@ -718,7 +723,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_uio_backend.html">UioBackend</a></li>
-    <li class="footer">Generated on Tue Feb 20 2024 04:57:01 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 21 2024 04:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
