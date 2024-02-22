@@ -89,7 +89,9 @@ var NAVTREE =
     [ "Basic Example", "basic_example.html", null ],
     [ "Accessing numeric-addressed registers without a map file", "numeric_addresses.html", null ],
     [ "Questions and Answers", "q_and_a.html", [
-      [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
+      [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", [
+        [ "Details:", "q_and_a.html#q_and_a_details", null ]
+      ] ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
     [ "Technical specification DeviceBackend", "spec__device_backend.html", null ],
@@ -100,29 +102,28 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_xdma_backend.html", [
-      [ "Prerequisites", "md_doc_xdma_backend.html#autotoc_md14", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_xdma_backend.html#autotoc_md15", [
-        [ "Introduction", "spec__transfer_element.html#autotoc_md2", null ],
-        [ "A. Definitions", "spec__transfer_element.html#autotoc_md3", [
+      [ "Prerequisites", "md_doc_xdma_backend.html#autotoc_md13", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_xdma_backend.html#autotoc_md14", [
+        [ "Introduction", "spec__transfer_element.html#autotoc_md1", null ],
+        [ "A. Definitions", "spec__transfer_element.html#autotoc_md2", [
           [ "Side note", "basic_example.html#autotoc_md0", null ],
-          [ "Details:", "q_and_a.html#autotoc_md1", null ],
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md4", null ]
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md3", null ]
         ] ],
-        [ "B. Behavioural specification", "spec__transfer_element.html#autotoc_md5", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md6", null ]
+        [ "B. Behavioural specification", "spec__transfer_element.html#autotoc_md4", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md5", null ]
         ] ],
-        [ "C. Requirements for all implementations (full and decorator-like)", "spec__transfer_element.html#autotoc_md7", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md8", null ]
+        [ "C. Requirements for all implementations (full and decorator-like)", "spec__transfer_element.html#autotoc_md6", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md7", null ]
         ] ],
-        [ "D. Requirements for full implementations (e.g. in backends)", "spec__transfer_element.html#autotoc_md9", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md10", null ]
+        [ "D. Requirements for full implementations (e.g. in backends)", "spec__transfer_element.html#autotoc_md8", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md9", null ]
         ] ],
-        [ "E. Requirements for decorator-like implementations", "spec__transfer_element.html#autotoc_md11", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md12", null ]
+        [ "E. Requirements for decorator-like implementations", "spec__transfer_element.html#autotoc_md10", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md11", null ]
         ] ],
-        [ "AXI-Lite Master interface", "md_doc_xdma_backend.html#autotoc_md16", null ],
-        [ "AXI MM DMA interface", "md_doc_xdma_backend.html#autotoc_md17", null ],
-        [ "Interrupt lines (events)", "md_doc_xdma_backend.html#autotoc_md18", null ]
+        [ "AXI-Lite Master interface", "md_doc_xdma_backend.html#autotoc_md15", null ],
+        [ "AXI MM DMA interface", "md_doc_xdma_backend.html#autotoc_md16", null ],
+        [ "Interrupt lines (events)", "md_doc_xdma_backend.html#autotoc_md17", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],

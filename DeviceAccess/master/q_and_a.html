@@ -101,8 +101,8 @@ Why do RegisterAccessors not have an assignment operator for other RegisterAcces
 <div class="line"> </div>
 <div class="line">a = int(b);   <span class="comment">// replace the value of &#39;a&#39; with the value of &#39;b&#39;</span></div>
 <div class="line">a.replace(b); <span class="comment">// replace the whole accessor, now &#39;a&#39; points to REG_B</span></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md1"></a>
-Details:</h3>
+</div><!-- fragment --><h2><a class="anchor" id="q_and_a_details"></a>
+Details:</h2>
 <p>The original implementation had the default assignment operator which would replace the whole accessor, incl. the register it points to. This is what you need in the constructor of a class to initialise its member accessors: </p><div class="fragment"><div class="line"><span class="comment">// in the header (class definition)</span></div>
 <div class="line">ScalarRegisterAccessor&lt;int&gt; _a,_b;</div>
 <div class="line"> </div>
@@ -141,7 +141,7 @@ Why can I not read SEQUENCE registers?</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 21 2024 04:53:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 22 2024 04:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
