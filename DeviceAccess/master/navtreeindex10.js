@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"class_dummy_register_test_suite.html":[19,0,46],
 "class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c":[19,0,46,0],
 "class_example_backend.html":[19,0,47],
 "class_example_backend.html#a29cb604880ec30b64848139d934018ef":[19,0,47,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "functions_func_g.html":[19,3,1,6],
 "functions_func_h.html":[19,3,1,7],
 "functions_func_i.html":[19,3,1,8],
-"functions_func_k.html":[19,3,1,9],
-"functions_func_l.html":[19,3,1,10]
+"functions_func_k.html":[19,3,1,9]
 };

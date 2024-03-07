@@ -76,9 +76,8 @@ var NAVTREE =
         [ "List of plugins", "lmap.html#plugins_reference", [
           [ "multiply", "lmap.html#plugins_reference_multiply", null ],
           [ "math", "lmap.html#plugins_reference_math", null ],
-          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ]
-        ] ],
-        [ "forcePollingRead", "lmap.html#plugins_reference_force_polling_read", [
+          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
+          [ "forcePollingRead", "lmap.html#plugins_reference_force_polling_read", null ],
           [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
           [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ],
           [ "Double Buffering plugin for the Logical Name Mapper", "lmap.html#double_buffering_plugin", null ],
@@ -168,27 +167,27 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_access_mode_8cc.html",
-"_n_d_register_accessor_8cc.html",
-"_unified_backend_test_8h.html#ad026dd4a8d0c54ed5084a0ed3e51d985",
-"class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html#acb5207b65957e396d4d1bc91142d8af8",
-"class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a3a3225618034fe7e87de60d9e7a87ff5",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#a691a41642834757b25ebf994092960e0",
-"class_chimera_t_k_1_1_rebot_backend.html#a472346bb94b9912dd73105184e097da7",
-"class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127",
-"class_chimera_t_k_1_1_uio_access.html#a8db72bb1298037300458105258d02a19",
-"class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c",
-"functions_func_m.html",
-"namespace_chimera_t_k.html#accdf6e82b0e0f877afe1b7aa82869238",
-"struct_byte_raw__fixed_point8__4s.html#a5f1b5f9dff24ad1218cd2bddc5a3fbcd",
-"struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html#a038fc0b9778840e0c16eb0ac61ce5f64",
-"struct_helper_process.html",
-"struct_reg_bit0_of_var.html",
-"struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966",
-"test_double_buffering_h_w_8cc.html#a11840c6c2088f4da42c800e74ffd5ed9",
-"test_multiplexed_data_accesor_8cpp.html#a083a3ecf56265a3af850687011e83be0",
-"test_type_changing_decorator_8cpp.html"
+"",
+"_metadata_catalogue_8h_source.html",
+"_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a",
+"class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html#abf8794f55d96e4185ebbb663ca730e84",
+"class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#a60a7f6cf031d3fe4561cd07ee208d29f",
+"class_chimera_t_k_1_1_rebot_backend.html#a3f1e2280224ce723e2cf7925ea2b535b",
+"class_chimera_t_k_1_1_transfer_element.html#a5bdf5501b097a054a0be0bd5c8332ef3",
+"class_chimera_t_k_1_1_uio_access.html#a8bb1d8964bc3e6b344afe0d10663afce",
+"class_dummy_register_test_suite.html",
+"functions_func_l.html",
+"namespace_chimera_t_k.html#acb6be557a8eab1f39d563f8cf08b13b4",
+"struct_byte_raw__fixed_point8__4s.html#a4f66a67801d33f51425fd1e03ff007d5",
+"struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html",
+"struct_fixture.html#aff52823ee42337680261409d72b629bf",
+"struct_reg_array_variable.html#ae8bf9ae04568b20e06beb70d2e4590b6",
+"struct_reg_word_firmware_with_math___r.html",
+"test_double_buffering_h_w_8cc.html",
+"test_multiplexed_data_accesor_8cpp.html",
+"test_transfer_group_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

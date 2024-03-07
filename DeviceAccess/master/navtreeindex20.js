@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"test_transfer_group_8cpp_source.html":[20,0,8,1,49],
 "test_type_changing_decorator_8cpp.html":[20,0,8,1,50],
 "test_type_changing_decorator_8cpp.html#a01ea2705c55f2794b8d0b9e7bbae1230":[20,0,8,1,50,10],
 "test_type_changing_decorator_8cpp.html#a05b1e5ae314806b191da9c459e5431b4":[20,0,8,1,50,9],
@@ -88,6 +89,5 @@ var NAVTREEINDEX20 =
 "use_custom_backend_8cpp.html":[20,0,4,0,1],
 "use_custom_backend_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[20,0,4,0,1,0],
 "use_custom_backend_8cpp_source.html":[20,0,4,0,1],
-"wait_for_new_data.html":[15],
-"":[18,0,3]
+"wait_for_new_data.html":[15]
 };

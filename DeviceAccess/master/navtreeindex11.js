@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"functions_func_l.html":[19,3,1,10],
 "functions_func_m.html":[19,3,1,11],
 "functions_func_n.html":[19,3,1,12],
 "functions_func_o.html":[19,3,1,13],
@@ -64,8 +65,8 @@ var NAVTREEINDEX11 =
 "globals_b.html":[20,1,0,1],
 "globals_c.html":[20,1,0,2],
 "globals_d.html":[20,1,0,3],
-"globals_defs.html":[20,1,5],
 "globals_defs.html":[20,1,5,0],
+"globals_defs.html":[20,1,5],
 "globals_defs_b.html":[20,1,5,1],
 "globals_defs_c.html":[20,1,5,2],
 "globals_defs_d.html":[20,1,5,3],
@@ -142,18 +143,18 @@ var NAVTREEINDEX11 =
 "llrfdrv__io__compat_8h_source.html":[20,0,2,4,0,0],
 "lmap.html":[8],
 "lmap.html#cdd":[8,0],
-"lmap.html#double_buffering_plugin":[8,2,1,2],
+"lmap.html#double_buffering_plugin":[8,2,0,6],
 "lmap.html#internal_redirect":[8,1,1],
 "lmap.html#map":[8,1],
 "lmap.html#plugins":[8,2],
 "lmap.html#plugins_reference":[8,2,0],
-"lmap.html#plugins_reference_bit_range":[8,2,1,3],
-"lmap.html#plugins_reference_force_polling_read":[8,2,1],
+"lmap.html#plugins_reference_bit_range":[8,2,0,7],
+"lmap.html#plugins_reference_force_polling_read":[8,2,0,3],
 "lmap.html#plugins_reference_force_read_only":[8,2,0,2],
 "lmap.html#plugins_reference_math":[8,2,0,1],
-"lmap.html#plugins_reference_monostable_trigger":[8,2,1,0],
+"lmap.html#plugins_reference_monostable_trigger":[8,2,0,4],
 "lmap.html#plugins_reference_multiply":[8,2,0,0],
-"lmap.html#plugins_reference_type_hint_modifier":[8,2,1,1],
+"lmap.html#plugins_reference_type_hint_modifier":[8,2,0,5],
 "lmap.html#variables_and_constants":[8,1,0],
 "main_8cpp.html":[20,0,8,3,2],
 "main_8cpp.html#a51a0c03e82a49c8df1aee64a078f33e7":[20,0,8,3,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "namespace_chimera_t_k.html#ac1923ddb648568f20de9dd268fd5ff8d":[18,0,1,187],
 "namespace_chimera_t_k.html#ac85185057bb167d137c3493e393cfa5e":[18,0,1,226],
 "namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484":[18,0,1,250],
-"namespace_chimera_t_k.html#acaf989f0658dc0196b6281f209062f21":[18,0,1,185],
-"namespace_chimera_t_k.html#acb6be557a8eab1f39d563f8cf08b13b4":[18,0,1,231]
+"namespace_chimera_t_k.html#acaf989f0658dc0196b6281f209062f21":[18,0,1,185]
 };
