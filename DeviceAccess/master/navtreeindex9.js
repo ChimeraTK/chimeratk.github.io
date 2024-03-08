@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"class_chimera_t_k_1_1_uio_access.html#a8bb1d8964bc3e6b344afe0d10663afce":[19,0,1,94,7],
-"class_chimera_t_k_1_1_uio_access.html#a8db72bb1298037300458105258d02a19":[19,0,1,94,8],
 "class_chimera_t_k_1_1_uio_access.html#a9e69abe68f7bbb4f6270d8fe4033fa94":[19,0,1,94,0],
 "class_chimera_t_k_1_1_uio_access.html#ab2b261c56812142b08d9589fa98663bb":[19,0,1,94,2],
 "class_chimera_t_k_1_1_uio_access.html#af3fbea006c813694e14c13be8e12caa4":[19,0,1,94,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "class_dummy_register_test.html#a557da1a8b2223f1e4d6b133fbaea55a4":[19,0,45,4],
 "class_dummy_register_test.html#a6a476d9aec16f7a3c1c21ae13efe1b61":[19,0,45,2],
 "class_dummy_register_test.html#a82a19f93c51e91cc35bdb477140ca565":[19,0,45,3],
-"class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579":[19,0,45,0]
+"class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579":[19,0,45,0],
+"class_dummy_register_test_suite.html":[19,0,46],
+"class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c":[19,0,46,0]
 };

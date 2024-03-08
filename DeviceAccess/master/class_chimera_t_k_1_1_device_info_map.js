@@ -15,7 +15,6 @@ var class_chimera_t_k_1_1_device_info_map =
     [ "getPluginLibraries", "class_chimera_t_k_1_1_device_info_map.html#ad1f7f2c18898d4efe2b99c2a801d218f", null ],
     [ "getSize", "class_chimera_t_k_1_1_device_info_map.html#a9a45508078a5eff0018f0c75a547337a", null ],
     [ "insert", "class_chimera_t_k_1_1_device_info_map.html#aaed29229603614223cc9611fc6fd36ab", null ],
-    [ "DMapFilesParser", "class_chimera_t_k_1_1_device_info_map.html#a7131c245eaa0ac572b25d502d3f108e9", null ],
     [ "operator<<", "class_chimera_t_k_1_1_device_info_map.html#a59df710d7aa621c159cb3a25dd5bc0e1", null ],
     [ "_deviceInfoElements", "class_chimera_t_k_1_1_device_info_map.html#a106b9b5ed8787e36a94934d6849ce5d5", null ],
     [ "_dmapFileName", "class_chimera_t_k_1_1_device_info_map.html#ad68768f2b37c0735b8666d98dbe9c433", null ],

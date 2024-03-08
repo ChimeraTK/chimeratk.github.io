@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"functions_func_l.html":[19,3,1,10],
-"functions_func_m.html":[19,3,1,11],
 "functions_func_n.html":[19,3,1,12],
 "functions_func_o.html":[19,3,1,13],
 "functions_func_p.html":[19,3,1,14],
@@ -60,13 +58,13 @@ var NAVTREEINDEX11 =
 "functions_x.html":[19,3,0,24],
 "functions_y.html":[19,3,0,25],
 "functions_~.html":[19,3,0,26],
-"globals.html":[20,1,0],
 "globals.html":[20,1,0,0],
+"globals.html":[20,1,0],
 "globals_b.html":[20,1,0,1],
 "globals_c.html":[20,1,0,2],
 "globals_d.html":[20,1,0,3],
-"globals_defs.html":[20,1,5,0],
 "globals_defs.html":[20,1,5],
+"globals_defs.html":[20,1,5,0],
 "globals_defs_b.html":[20,1,5,1],
 "globals_defs_c.html":[20,1,5,2],
 "globals_defs_d.html":[20,1,5,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "namespace_chimera_t_k.html#ac1923ddb648568f20de9dd268fd5ff8d":[18,0,1,187],
 "namespace_chimera_t_k.html#ac85185057bb167d137c3493e393cfa5e":[18,0,1,226],
 "namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484":[18,0,1,250],
-"namespace_chimera_t_k.html#acaf989f0658dc0196b6281f209062f21":[18,0,1,185]
+"namespace_chimera_t_k.html#acaf989f0658dc0196b6281f209062f21":[18,0,1,185],
+"namespace_chimera_t_k.html#acb6be557a8eab1f39d563f8cf08b13b4":[18,0,1,231],
+"namespace_chimera_t_k.html#accdf6e82b0e0f877afe1b7aa82869238":[18,0,1,208]
 };

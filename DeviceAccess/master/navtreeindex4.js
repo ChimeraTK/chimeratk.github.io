@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"class_chimera_t_k_1_1_dummy_backend_base.html#aa84135c9f1e16a20bf8d6312c4e6f5d0":[19,0,1,31,6],
-"class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e":[19,0,1,31,2],
 "class_chimera_t_k_1_1_dummy_backend_base.html#acce11a882262aa1d6e01dfc2c5459417":[19,0,1,31,10],
 "class_chimera_t_k_1_1_dummy_backend_base.html#aed323b8c565402996b7df7066b74051e":[19,0,1,31,1],
 "class_chimera_t_k_1_1_dummy_backend_register_catalogue.html":[19,0,1,32],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aeaab98d46b9cdaeec4e2961c377c9566":[19,0,1,1,0,13],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aec801c5fef32c1f64d3c00b7584ff667":[19,0,1,1,0,3],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afcc49bbe69af5bc94a84d395230c6d2e":[19,0,1,1,0,6],
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2":[19,0,1,1,0,7]
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2":[19,0,1,1,0,7],
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html":[19,0,1,1,5],
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a3a3225618034fe7e87de60d9e7a87ff5":[19,0,1,1,5,3]
 };

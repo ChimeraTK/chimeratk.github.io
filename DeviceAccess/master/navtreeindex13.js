@@ -1,7 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"struct_byte_raw__fixed_point8__4s.html#a4f66a67801d33f51425fd1e03ff007d5":[19,0,16,3],
-"struct_byte_raw__fixed_point8__4s.html#a5f1b5f9dff24ad1218cd2bddc5a3fbcd":[19,0,16,5],
 "struct_byte_raw__fixed_point8__4s.html#ad319251f9f8e2a88b8a059f8c67a8909":[19,0,16,4],
 "struct_byte_raw__fixed_point8__4s.html#afbfb8bd521412fdcc66494f540449da2":[19,0,16,0],
 "struct_byte_raw__fixed_point8__4u.html":[19,0,17],
@@ -249,5 +247,7 @@ var NAVTREEINDEX13 =
 "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html":[19,0,1,65,0],
 "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#a7f8723ef5356444e61a4e4eb6626089b":[19,0,1,65,0,2],
 "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#aa65bfb2a352ffe3d3730a72b8ffc3f35":[19,0,1,65,0,0],
-"struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#afeb87eec35875c0a700dd72036303ee5":[19,0,1,65,0,1]
+"struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#afeb87eec35875c0a700dd72036303ee5":[19,0,1,65,0,1],
+"struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html":[19,0,1,10,0],
+"struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html#a038fc0b9778840e0c16eb0ac61ce5f64":[19,0,1,10,0,2]
 };
