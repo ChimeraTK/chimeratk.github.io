@@ -29,11 +29,6 @@ var dir_841b7e76fbb789784c18eea98cf7d838 =
     ] ],
     [ "NumericAddressedBackendMuxedRegisterAccessor.h", "_numeric_addressed_backend_muxed_register_accessor_8h.html", "_numeric_addressed_backend_muxed_register_accessor_8h" ],
     [ "NumericAddressedBackendRegisterAccessor.h", "_numeric_addressed_backend_register_accessor_8h.html", "_numeric_addressed_backend_register_accessor_8h" ],
-    [ "NumericAddressedInterruptDispatcher.h", "_numeric_addressed_interrupt_dispatcher_8h.html", [
-      [ "NumericAddressedAsyncVariable", "struct_chimera_t_k_1_1_numeric_addressed_async_variable.html", "struct_chimera_t_k_1_1_numeric_addressed_async_variable" ],
-      [ "NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher" ],
-      [ "NumericAddressedAsyncVariableImpl", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl" ]
-    ] ],
     [ "NumericAddressedLowLevelTransferElement.h", "_numeric_addressed_low_level_transfer_element_8h.html", [
       [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element" ]
     ] ],

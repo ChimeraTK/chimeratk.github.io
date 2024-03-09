@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_accessor_instan
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1_accessor_instance_descriptor-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,11 +104,6 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_accessor_instan
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a31e1d27b430aca21de2ef4f6e75a26ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html#a31e1d27b430aca21de2ef4f6e75a26ad">AccessorInstanceDescriptor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;name_, std::type_index type_, size_t numberOfWords_, size_t wordOffsetInRegister_, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags_)</td></tr>
-<tr class="separator:a31e1d27b430aca21de2ef4f6e75a26ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7bfbeea94fe2b9bf566f7338ad7b022a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html#a7bfbeea94fe2b9bf566f7338ad7b022a">name</a></td></tr>
@@ -125,67 +119,10 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class to have a complete descriton to create an <a class="el" href="class_accessor.html">Accessor</a>. </p>
-<p>It contains all the information given to <a class="el" href="class_chimera_t_k_1_1_device_backend.html" title="The base class for backends providing IO functionality for the Device class.">DeviceBackend</a>:getNDRegisterAccessor, incl. the offset in the register which is not known to the accessor itself. Just just to keep the number of parameters for createAsyncVariable in check. </p>
+<p>It contains all the information given to <a class="el" href="class_chimera_t_k_1_1_device_backend.html" title="The base class for backends providing IO functionality for the Device class.">DeviceBackend</a>:getNDRegisterAccessor, incl. the offset in the register which is not known to the catalogue entry and the accessor itself. Just just to keep the number of parameters for createAsyncVariable in check. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00056">56</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a31e1d27b430aca21de2ef4f6e75a26ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31e1d27b430aca21de2ef4f6e75a26ad">&#9670;&nbsp;</a></span>AccessorInstanceDescriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::AccessorInstanceDescriptor::AccessorInstanceDescriptor </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
-          <td class="paramname"><em>name_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::type_index&#160;</td>
-          <td class="paramname"><em>type_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numberOfWords_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>wordOffsetInRegister_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td>
-          <td class="paramname"><em>flags_</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00062">62</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00047">47</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a5c66ee43197bac6fb2729d16c6bf34a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c66ee43197bac6fb2729d16c6bf34a0">&#9670;&nbsp;</a></span>flags</h2>
 
@@ -198,7 +135,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00061">61</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00052">52</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +151,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00057">57</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00048">48</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +167,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00059">59</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00050">50</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +183,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00058">58</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00049">49</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +199,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00060">60</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00051">51</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +212,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a></li>
-    <li class="footer">Generated on Fri Mar 8 2024 04:53:23 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Mar 9 2024 04:53:27 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

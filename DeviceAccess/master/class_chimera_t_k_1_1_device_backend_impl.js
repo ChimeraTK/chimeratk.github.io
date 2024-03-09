@@ -9,5 +9,6 @@ var class_chimera_t_k_1_1_device_backend_impl =
     [ "setException", "class_chimera_t_k_1_1_device_backend_impl.html#a9a27c28b9e50f5750aa19c9eba775345", null ],
     [ "setExceptionImpl", "class_chimera_t_k_1_1_device_backend_impl.html#a68d180274f6f2982ad544e53d36f57ec", null ],
     [ "setOpenedAndClearException", "class_chimera_t_k_1_1_device_backend_impl.html#a2b51615c34b21184c43de53a327d28f3", null ],
+    [ "_asyncDomainsContainer", "class_chimera_t_k_1_1_device_backend_impl.html#a871e3252eee0a8aa622fb09b3b5946fe", null ],
     [ "_opened", "class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149", null ]
 ];

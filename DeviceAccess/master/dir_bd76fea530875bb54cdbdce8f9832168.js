@@ -8,6 +8,5 @@ var dir_bd76fea530875bb54cdbdce8f9832168 =
     [ "NumericAddressedBackend.cc", "_numeric_addressed_backend_8cc.html", null ],
     [ "NumericAddressedBackendMuxedRegisterAccessor.cc", "_numeric_addressed_backend_muxed_register_accessor_8cc.html", "_numeric_addressed_backend_muxed_register_accessor_8cc" ],
     [ "NumericAddressedBackendRegisterAccessor.cc", "_numeric_addressed_backend_register_accessor_8cc.html", "_numeric_addressed_backend_register_accessor_8cc" ],
-    [ "NumericAddressedInterruptDispatcher.cc", "_numeric_addressed_interrupt_dispatcher_8cc.html", null ],
     [ "NumericAddressedRegisterCatalogue.cc", "_numeric_addressed_register_catalogue_8cc.html", null ]
 ];

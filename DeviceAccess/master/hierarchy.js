@@ -37,9 +37,16 @@ var hierarchy =
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
+    [ "ChimeraTK::AsyncDomainsContainerBase", "class_chimera_t_k_1_1_async_domains_container_base.html", [
+      [ "ChimeraTK::AsyncDomainsContainer< KeyType >", "class_chimera_t_k_1_1_async_domains_container.html", null ]
+    ] ],
     [ "ChimeraTK::AsyncVariable", "struct_chimera_t_k_1_1_async_variable.html", [
       [ "ChimeraTK::AsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1_async_variable_impl.html", [
-        [ "ChimeraTK::NumericAddressedAsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html", null ]
+        [ "ChimeraTK::GenericAsyncVariable< std::nullptr_t, UserType >", "class_chimera_t_k_1_1_generic_async_variable.html", [
+          [ "ChimeraTK::VoidAsyncVariable< UserType >", "class_chimera_t_k_1_1_void_async_variable.html", null ]
+        ] ],
+        [ "ChimeraTK::GenericAsyncVariable< SourceType, UserType >", "class_chimera_t_k_1_1_generic_async_variable.html", null ],
+        [ "ChimeraTK::PolledAsyncVariable< UserType >", "struct_chimera_t_k_1_1_polled_async_variable.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
@@ -69,6 +76,46 @@ var hierarchy =
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html", null ],
       [ "myRegisterInfo", "classmy_register_info.html", null ]
+    ] ],
+    [ "BoolAsVoid< WITHPATH, INTERRUPT >", "struct_bool_as_void.html", null ],
+    [ "BoolAsVoid< canonicalInterrupt4_8_2, 4 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt4_8_2", "structcanonical_interrupt4__8__2.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt4_8_3, 4 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt4_8_3", "structcanonical_interrupt4__8__3.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt4_8a, 4 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt4_8a", "structcanonical_interrupt4__8a.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt4_8b, 4 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt4_8b", "structcanonical_interrupt4__8b.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt4a, 4 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt4a", "structcanonical_interrupt4a.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt4b, 4 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt4b", "structcanonical_interrupt4b.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt5, 5 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt5", "structcanonical_interrupt5.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt5_9, 5 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt5_9", "structcanonical_interrupt5__9.html", null ]
+    ] ],
+    [ "BoolAsVoid< canonicalInterrupt6, 6 >", "struct_bool_as_void.html", [
+      [ "canonicalInterrupt6", "structcanonical_interrupt6.html", null ]
+    ] ],
+    [ "BoolAsVoid< interrupt4_8_2, 4 >", "struct_bool_as_void.html", [
+      [ "interrupt4_8_2", "structinterrupt4__8__2.html", null ]
+    ] ],
+    [ "BoolAsVoid< interrupt4_8_3, 4 >", "struct_bool_as_void.html", [
+      [ "interrupt4_8_3", "structinterrupt4__8__3.html", null ]
+    ] ],
+    [ "BoolAsVoid< interrupt5_9, 5 >", "struct_bool_as_void.html", [
+      [ "interrupt5_9", "structinterrupt5__9.html", null ]
+    ] ],
+    [ "BoolAsVoid< interrupt6, 6 >", "struct_bool_as_void.html", [
+      [ "interrupt6", "structinterrupt6.html", null ]
     ] ],
     [ "ChimeraTK::Boolean", "class_chimera_t_k_1_1_boolean.html", null ],
     [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >::Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", null ],
@@ -196,7 +243,11 @@ var hierarchy =
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
     [ "boost::enable_shared_from_this", null, [
       [ "ChimeraTK::AsyncAccessorManager", "class_chimera_t_k_1_1_async_accessor_manager.html", [
-        [ "ChimeraTK::NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html", null ]
+        [ "ChimeraTK::TriggeredPollDistributor", "class_chimera_t_k_1_1_triggered_poll_distributor.html", null ],
+        [ "ChimeraTK::VariableDistributor< SourceType >", "class_chimera_t_k_1_1_variable_distributor.html", null ]
+      ] ],
+      [ "ChimeraTK::AsyncDomain", "class_chimera_t_k_1_1_async_domain.html", [
+        [ "ChimeraTK::AsyncDomainImpl< DistributorType, BackendDataType >", "class_chimera_t_k_1_1_async_domain_impl.html", null ]
       ] ],
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
@@ -210,6 +261,7 @@ var hierarchy =
                 [ "AnotherWorkingBackend", "struct_another_working_backend.html", null ],
                 [ "ChimeraTK::ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", [
                   [ "DecoratorBackend", "class_decorator_backend.html", null ],
+                  [ "DummyForCleanupCheck", "struct_dummy_for_cleanup_check.html", null ],
                   [ "DummyForDoubleBuffering", "struct_dummy_for_double_buffering.html", null ]
                 ] ],
                 [ "CustomBackend", "class_custom_backend.html", null ],
@@ -236,6 +288,10 @@ var hierarchy =
           [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::ExceptionReportingBackend", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html", null ],
           [ "ExampleBackend", "class_example_backend.html", null ]
         ] ]
+      ] ],
+      [ "ChimeraTK::InterruptControllerHandler", "class_chimera_t_k_1_1_interrupt_controller_handler.html", [
+        [ "ChimeraTK::Axi4_Intc", "class_chimera_t_k_1_1_axi4___intc.html", null ],
+        [ "ChimeraTK::DummyIntc", "class_chimera_t_k_1_1_dummy_intc.html", null ]
       ] ],
       [ "ChimeraTK::TransferElement", "class_chimera_t_k_1_1_transfer_element.html", [
         [ "ChimeraTK::NDRegisterAccessor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
@@ -298,7 +354,8 @@ var hierarchy =
           [ "DecoratorTestAccessor< UserType >", "class_decorator_test_accessor.html", null ]
         ] ],
         [ "ChimeraTK::NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", null ]
-      ] ]
+      ] ],
+      [ "ChimeraTK::TriggerDistributor", "class_chimera_t_k_1_1_trigger_distributor.html", null ]
     ] ],
     [ "std::enable_shared_from_this", null, [
       [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
@@ -308,6 +365,7 @@ var hierarchy =
     [ "ChimeraTK::EventFile", "class_chimera_t_k_1_1_event_file.html", null ],
     [ "ChimeraTK::EventThread", "class_chimera_t_k_1_1_event_thread.html", null ],
     [ "std::exception", null, [
+      [ "ChimeraTK::AsyncDomainsContainer< KeyType >::StopThread", "class_chimera_t_k_1_1_async_domains_container_1_1_stop_thread.html", null ],
       [ "ChimeraTK::logic_error", "class_chimera_t_k_1_1logic__error.html", null ],
       [ "ChimeraTK::runtime_error", "class_chimera_t_k_1_1runtime__error.html", null ]
     ] ],
@@ -352,6 +410,7 @@ var hierarchy =
     ] ],
     [ "Integers_signed32_async_rw", "struct_integers__signed32__async__rw.html", null ],
     [ "Interrupt_dummy", "struct_interrupt__dummy.html", null ],
+    [ "ChimeraTK::InterruptControllerHandlerFactory", "class_chimera_t_k_1_1_interrupt_controller_handler_factory.html", null ],
     [ "std::less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "std::list< T >", null, [
       [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ]
@@ -378,9 +437,6 @@ var hierarchy =
       [ "ChimeraTK::XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", null ]
     ] ],
     [ "ChimeraTK::ReadAnyGroup::Notification", "class_chimera_t_k_1_1_read_any_group_1_1_notification.html", null ],
-    [ "ChimeraTK::NumericAddressedAsyncVariable", "struct_chimera_t_k_1_1_numeric_addressed_async_variable.html", [
-      [ "ChimeraTK::NumericAddressedAsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html", null ]
-    ] ],
     [ "NumericAddressedLowLevelTransferElement_numberOfBytes", "struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html", null ],
     [ "NumericAddressedLowLevelTransferElement_startAddress", "struct_numeric_addressed_low_level_transfer_element__start_address.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::nValuesToTest_proxy_helper< T, hasFn >", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html", null ],
@@ -596,6 +652,7 @@ var hierarchy =
     [ "StaticCore", "struct_static_core.html", null ],
     [ "accessPrivateData::stow_private< Tag, x >", "structaccess_private_data_1_1stow__private.html", null ],
     [ "accessPrivateData::stowed< Tag >", "structaccess_private_data_1_1stowed.html", null ],
+    [ "ChimeraTK::TriggerDistributor::SubscriptionImplementor< UserType >", "class_chimera_t_k_1_1_trigger_distributor_1_1_subscription_implementor.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchWriteOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html", null ],
@@ -647,6 +704,19 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html", null ],
     [ "ChimeraTK::TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", null ],
+    [ "TriggeredInt< WITHPATH, INTERRUPT >", "struct_triggered_int.html", null ],
+    [ "TriggeredInt< datafrom4_8_2, 4 >", "struct_triggered_int.html", [
+      [ "datafrom4_8_2", "structdatafrom4__8__2.html", null ]
+    ] ],
+    [ "TriggeredInt< datafrom4_8_3, 4 >", "struct_triggered_int.html", [
+      [ "datafrom4_8_3", "structdatafrom4__8__3.html", null ]
+    ] ],
+    [ "TriggeredInt< datafrom5_9, 5 >", "struct_triggered_int.html", [
+      [ "datafrom5_9", "structdatafrom5__9.html", null ]
+    ] ],
+    [ "TriggeredInt< datafrom6, 6 >", "struct_triggered_int.html", [
+      [ "datafrom6", "structdatafrom6.html", null ]
+    ] ],
     [ "ChimeraTK::UioAccess", "class_chimera_t_k_1_1_uio_access.html", null ],
     [ "ChimeraTK::LNMBackend::UndecoratedParams", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],

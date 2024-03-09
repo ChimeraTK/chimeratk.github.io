@@ -1,9 +1,7 @@
 var class_chimera_t_k_1_1_async_n_d_register_accessor =
 [
-    [ "AsyncNDRegisterAccessor", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#ace5d87387e61e3ddff07a25a8797320e", null ],
+    [ "AsyncNDRegisterAccessor", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#adc00a5d6f49ca0ab85a37ef638313a66", null ],
     [ "~AsyncNDRegisterAccessor", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a4d4bbd81e7533298fca2cd3e5e3e8fe5", null ],
-    [ "activate", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#aba17522647706c029b5f8114e9d7e9bd", null ],
-    [ "deactivate", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a2f5c698c5e07f7a3a7d9577fe73d6322", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#abe36924b1792cdddb783bfab99eaabcf", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a74fbf6f1afeb38bab2cea1c6ab48072b", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a6231fe1d216e3c83aa459ca889685293", null ],
@@ -21,8 +19,8 @@ var class_chimera_t_k_1_1_async_n_d_register_accessor =
     [ "sendException", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a10394e7ce072292e0cf9b79931e4f6c8", null ],
     [ "setExceptionBackend", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a698d5120128c852ca457023701dee696", null ],
     [ "_accessorManager", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#adbb8db83f23525c9783456f6d006f515", null ],
+    [ "_asyncDomain", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#ada8efd1afd429ecdcf3eebaabe0034e9", null ],
     [ "_backend", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#aca9258eea3cea04f72d2f02337574954", null ],
     [ "_dataTransportQueue", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a13dc86e4e1ca7419135dc27d1e78bf2c", null ],
-    [ "_isActive", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a68ca23bf48864f792269102856a331bd", null ],
     [ "_receiveBuffer", "class_chimera_t_k_1_1_async_n_d_register_accessor.html#a6cf6d5c60d9d309988956389cf08b00e", null ]
 ];

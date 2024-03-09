@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 : <a class="el" href="struct_area_type.html#a41e5849daa0bc467be82cb352c8430ac">AreaType&lt; Register &gt;</a>
 , <a class="el" href="struct_ascii_data.html#ac1fa1458326dfa058b884a2b7155a1aa">AsciiData</a>
 , <a class="el" href="struct_bit_register_descriptor_base.html#a5913663372279021202e1af432c68c70">BitRegisterDescriptorBase&lt; Derived &gt;</a>
+, <a class="el" href="struct_bool_as_void.html#ad81e39225ac1e43aba96b39012b96476">BoolAsVoid&lt; WITHPATH, INTERRUPT &gt;</a>
 , <a class="el" href="struct_channel_register_descriptor_base.html#a379747b6c8142d92c5f79b1480b6c3b0">ChannelRegisterDescriptorBase&lt; Derived &gt;</a>
 , <a class="el" href="struct_constant_register_descriptor_base.html#a6b69d77c6a2ff45ee854898c1d5ea4f0">ConstantRegisterDescriptorBase&lt; Derived &gt;</a>
 , <a class="el" href="struct_integers__base.html#a3a4dbca3c6bb4d43bf8e43286fc975a0">Integers_base&lt; Derived &gt;</a>
@@ -123,6 +124,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="struct_reg_word_firmware_with_math.html#ac779b0e3b6ebf01f3a58f05d1af85fdc">RegWordFirmwareWithMath&lt; Derived &gt;</a>
 , <a class="el" href="struct_short_raw__base.html#adbe72ee766382f74f5c80f2a6389ed6a">ShortRaw_base&lt; Derived, rawUserType &gt;</a>
 , <a class="el" href="struct_test_register.html#a560ccd4950b1f2c622501509b9fc84c7">TestRegister&lt; T &gt;</a>
+, <a class="el" href="struct_triggered_int.html#a0ea2e75a52c5598f867eb641e6f10878">TriggeredInt&lt; WITHPATH, INTERRUPT &gt;</a>
 , <a class="el" href="struct_variable_register_descriptor_base.html#a091d5101c08ab60b2c73b53c23197dba">VariableRegisterDescriptorBase&lt; Derived &gt;</a>
 </li>
 <li>capacity()
@@ -338,8 +340,13 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>crbegin()
 : <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#a8bab630db59235f8b6e54baebeb35748">ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;</a>
 </li>
+<li>create()
+: <a class="el" href="class_chimera_t_k_1_1_axi4___intc.html#a2d51d876d74200a22a83c958d839c326">ChimeraTK::Axi4_Intc</a>
+, <a class="el" href="class_chimera_t_k_1_1_dummy_intc.html#ae676ffec4f641e635c78cb8fad7c074e">ChimeraTK::DummyIntc</a>
+</li>
 <li>createAsyncVariable()
-: <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a4897bbc891fd32a5f3d92379b94a5c1c">ChimeraTK::NumericAddressedInterruptDispatcher</a>
+: <a class="el" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a59e4e3a0d257cb0b6c53c9685ec64633">ChimeraTK::TriggeredPollDistributor</a>
+, <a class="el" href="class_chimera_t_k_1_1_variable_distributor.html#a2aa1dbab52b694b99f7646fd78110cf7">ChimeraTK::VariableDistributor&lt; SourceType &gt;</a>
 </li>
 <li>createBackend()
 : <a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ad2017075822ef3e7c59224d5f17b3f52">ChimeraTK::BackendFactory</a>
@@ -376,6 +383,9 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="struct_write_counting_backend.html#a0f51aba951062d91d19c8354676e41c1">WriteCountingBackend</a>
 , <a class="el" href="struct_wrong_version_backend.html#abb8fd9b5b2065577e995a42e5b5af3c0">WrongVersionBackend</a>
 </li>
+<li>createInterruptControllerHandler()
+: <a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a95b372bbfb577531c01aa6252ef169b6">ChimeraTK::InterruptControllerHandlerFactory</a>
+</li>
 <li>creatorMap
 : <a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ac6f2809b16bc6fac6572e2104e5d99d7">ChimeraTK::BackendFactory</a>
 </li>
@@ -409,7 +419,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 8 2024 04:53:23 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Mar 9 2024 04:53:28 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

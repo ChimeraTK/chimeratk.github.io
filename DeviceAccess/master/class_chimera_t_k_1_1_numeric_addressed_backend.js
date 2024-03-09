@@ -12,11 +12,9 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b50f2e7460810b9cfac12f45c0aaab5", null ],
     [ "getRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a7600cc77c2eab2b3e8d82d4bf6a31e20", null ],
-    [ "getSyncRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a50051306c894331b0f0c7ec3fe6d3c0f", null ],
     [ "minimumTransferAlignment", "class_chimera_t_k_1_1_numeric_addressed_backend.html#addca12b3b7c60694f6e27b69f44e8afa", null ],
     [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad50833754257d22fbb5c4d61813ac8e5", null ],
     [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#afc3c29e05410f66513e88cecab73ac53", null ],
-    [ "setExceptionImpl", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a914f3d006a694ead290a36dc961c3468", null ],
     [ "startInterruptHandlingThread", "class_chimera_t_k_1_1_numeric_addressed_backend.html#abd3e01a95b03d16f5f45e35ccf1c1c7b", null ],
     [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a7cf6250f28bb5fd926ae69d19af69aef", null ],
     [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad1098fd2df0455e1fcfb6625dd22b99a", null ],
@@ -25,6 +23,6 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
     [ "_registerMap", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a691a41642834757b25ebf994092960e0", null ],
     [ "_registerMapPointer", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a39ebc2e0fd1f1547f2f61cb9841b9bc9", null ],
     [ "_unalignedAccess", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630", null ],
-    [ "NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ace0f34f0f4b3d521e7050fe4a31705cc", null ],
-    [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04", null ]
+    [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04", null ],
+    [ "TriggeredPollDistributor", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a40135134a159cb068b23eb25edceae00", null ]
 ];
