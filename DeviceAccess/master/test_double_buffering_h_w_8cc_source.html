@@ -179,39 +179,42 @@ $(document).ready(function(){initNavTree('test_double_buffering_h_w_8cc_source.h
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">   93</a></span>&#160;<a class="code" href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">BOOST_FIXTURE_TEST_CASE</a>(testWithHardware0, <a class="code" href="struct_device_fixture___h_w.html">DeviceFixture_HW</a>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">   * Here we check that we can actually detect corrupted data, if double buffer feature is off</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">   * This is a prerequesite for following test to make sense.</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">   * Note, we would even expect corrup data when double buffering still on, if we read to currently written</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">   * buffer, only less often.</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  enableDoubleBuf(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">unsigned</span> bufferNo = getActiveBufferNo();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// read from the buffer which is currently written to</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">unsigned</span> dataCorruptionCount = checkDataCorruption(bufferNo == 0 ? <span class="stringliteral">&quot;channel10buf0&quot;</span> : <span class="stringliteral">&quot;channel10buf1&quot;</span>, 200);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  printHist();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  BOOST_CHECK(dataCorruptionCount &gt; 0);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="test_double_buffering_h_w_8cc.html#a11840c6c2088f4da42c800e74ffd5ed9">  108</a></span>&#160;<a class="code" href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">BOOST_FIXTURE_TEST_CASE</a>(testWithHardware1, <a class="code" href="struct_device_fixture___h_w.html">DeviceFixture_HW</a>) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">   * Here we look for data corruption when firmware uses double buffering.</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">   * This test is long-running.</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">   * Note, this test will probably fail even with double-buffering enabled.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   * This happens if data loss appears due to congestion in dma controller. This must be solved on the firmware side.</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">   * For discussion see https://redmine.msktools.desy.de/issues/10522</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">unsigned</span> dataCorruptionCount = checkDataCorruption(<span class="stringliteral">&quot;channel10&quot;</span>, 1000);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  printHist();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  BOOST_CHECK(dataCorruptionCount == 0);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">/********************************************************************************************</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">*************************/</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">   95</a></span>&#160;<a class="code" href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">BOOST_FIXTURE_TEST_CASE</a>(testWithHardware0, <a class="code" href="struct_device_fixture___h_w.html">DeviceFixture_HW</a>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">   * Here we check that we can actually detect corrupted data, if double buffer feature is off</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">   * This is a prerequesite for following test to make sense.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">   * Note, we would even expect corrup data when double buffering still on, if we read to currently written</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">   * buffer, only less often.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  enableDoubleBuf(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">unsigned</span> bufferNo = getActiveBufferNo();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// read from the buffer which is currently written to</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">unsigned</span> dataCorruptionCount = checkDataCorruption(bufferNo == 0 ? <span class="stringliteral">&quot;channel10buf0&quot;</span> : <span class="stringliteral">&quot;channel10buf1&quot;</span>, 200);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  printHist();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  BOOST_CHECK(dataCorruptionCount &gt; 0);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="test_double_buffering_h_w_8cc.html#a11840c6c2088f4da42c800e74ffd5ed9">  112</a></span>&#160;<a class="code" href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">BOOST_FIXTURE_TEST_CASE</a>(testWithHardware1, <a class="code" href="struct_device_fixture___h_w.html">DeviceFixture_HW</a>) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   * Here we look for data corruption when firmware uses double buffering.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">   * This test is long-running.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">   * Note, this test will probably fail even with double-buffering enabled.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">   * This happens if data loss appears due to congestion in dma controller. This must be solved on the firmware side.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">   * For discussion see https://redmine.msktools.desy.de/issues/10522</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">unsigned</span> dataCorruptionCount = checkDataCorruption(<span class="stringliteral">&quot;channel10&quot;</span>, 1000);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  printHist();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  BOOST_CHECK(dataCorruptionCount == 0);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_html"><div class="ttname"><a href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a></div><div class="ttdoc">Class allows to read/write registers from device.</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00039">Device.h:39</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_html_a953db6616908b17380fb1ace248c5a77"><div class="ttname"><a href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">ChimeraTK::Device::getScalarRegisterAccessor</a></div><div class="ttdeci">ScalarRegisterAccessor&lt; UserType &gt; getScalarRegisterAccessor(const RegisterPath &amp;registerPathName, size_t wordOffsetInRegister=0, const AccessModeFlags &amp;flags=AccessModeFlags({})) const</div><div class="ttdoc">Get a ScalarRegisterObject object for the given register.</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00263">Device.h:263</a></div></div>
@@ -232,14 +235,14 @@ $(document).ready(function(){initNavTree('test_double_buffering_h_w_8cc_source.h
 <div class="ttc" id="astruct_device_fixture___h_w_html_ab7b581041b907e8fb70cb7988e9789eb"><div class="ttname"><a href="struct_device_fixture___h_w.html#ab7b581041b907e8fb70cb7988e9789eb">DeviceFixture_HW::doubleBufferingEnabled</a></div><div class="ttdeci">ScalarRegisterAccessor&lt; uint32_t &gt; doubleBufferingEnabled</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_h_w_8cc_source.html#l00026">testDoubleBufferingHW.cc:26</a></div></div>
 <div class="ttc" id="astruct_device_fixture___h_w_html_ad06aa1ce99d6e25e29dc40daf5b32889"><div class="ttname"><a href="struct_device_fixture___h_w.html#ad06aa1ce99d6e25e29dc40daf5b32889">DeviceFixture_HW::checkDataCorruption</a></div><div class="ttdeci">unsigned checkDataCorruption(std::string reg, unsigned tries)</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_h_w_8cc_source.html#l00039">testDoubleBufferingHW.cc:39</a></div></div>
 <div class="ttc" id="astruct_device_fixture___h_w_html_ad9ba7afa819e95c3d581aee5aa44398a"><div class="ttname"><a href="struct_device_fixture___h_w.html#ad9ba7afa819e95c3d581aee5aa44398a">DeviceFixture_HW::jumpHist</a></div><div class="ttdeci">std::map&lt; int16_t, unsigned &gt; jumpHist</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_h_w_8cc_source.html#l00027">testDoubleBufferingHW.cc:27</a></div></div>
-<div class="ttc" id="atest_double_buffering_h_w_8cc_html_ac0481e35accdca8b5594ace6933401bb"><div class="ttname"><a href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">BOOST_FIXTURE_TEST_CASE</a></div><div class="ttdeci">BOOST_FIXTURE_TEST_CASE(testWithHardware0, DeviceFixture_HW)</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_h_w_8cc_source.html#l00093">testDoubleBufferingHW.cc:93</a></div></div>
+<div class="ttc" id="atest_double_buffering_h_w_8cc_html_ac0481e35accdca8b5594ace6933401bb"><div class="ttname"><a href="test_double_buffering_h_w_8cc.html#ac0481e35accdca8b5594ace6933401bb">BOOST_FIXTURE_TEST_CASE</a></div><div class="ttdeci">BOOST_FIXTURE_TEST_CASE(testWithHardware0, DeviceFixture_HW)</div><div class="ttdef"><b>Definition:</b> <a href="test_double_buffering_h_w_8cc_source.html#l00095">testDoubleBufferingHW.cc:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_943d3ac165a3c851c6f7362d64684da9.html">unitTestsNotUnderCtest</a></li><li class="navelem"><a class="el" href="test_double_buffering_h_w_8cc.html">testDoubleBufferingHW.cc</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

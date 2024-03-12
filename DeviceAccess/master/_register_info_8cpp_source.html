@@ -94,17 +94,17 @@ $(document).ready(function(){initNavTree('_register_info_8cpp_source.html',''); 
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a521c5396f06c04fff9b1bc81a573eeec">   10</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_register_info.html#a521c5396f06c04fff9b1bc81a573eeec">RegisterInfo::RegisterInfo</a>(std::unique_ptr&lt;BackendRegisterInfoBase&gt;&amp;&amp; impl) : _impl(std::move(impl)) {}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a646bc7934eb91a4e2b1aeb173390188a">   14</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_register_info.html#a521c5396f06c04fff9b1bc81a573eeec">RegisterInfo::RegisterInfo</a>(<span class="keyword">const</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a>&amp; other) {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_register_info.html#a92343f1785ebbe11bac92ee469418005">operator=</a>(other);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a92343f1785ebbe11bac92ee469418005">   20</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a>&amp; <a class="code" href="class_chimera_t_k_1_1_register_info.html#a92343f1785ebbe11bac92ee469418005">RegisterInfo::operator=</a>(<span class="keyword">const</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a>&amp; other) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span>(other.<a class="code" href="class_chimera_t_k_1_1_register_info.html#adff51ba5bd6b966dae36fe56495eafcc">isValid</a>()) {</div>
@@ -116,73 +116,73 @@ $(document).ready(function(){initNavTree('_register_info_8cpp_source.html',''); 
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a00d0b08366995234dbe9f239b00498b9">   32</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a00d0b08366995234dbe9f239b00498b9">RegisterInfo::getRegisterName</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;getRegisterName();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#ae7b72a02bd79a5a97ffe4f2c9a205c72">   38</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#ae7b72a02bd79a5a97ffe4f2c9a205c72">RegisterInfo::getNumberOfElements</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;getNumberOfElements();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a458be3ba7283800091e4102cb496edd4">   44</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a458be3ba7283800091e4102cb496edd4">RegisterInfo::getNumberOfChannels</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;getNumberOfChannels();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a256a7c512d94bc56e1564c4092103126">   50</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a256a7c512d94bc56e1564c4092103126">RegisterInfo::getNumberOfDimensions</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;getNumberOfDimensions();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a5dd54ae0f2a10869c0ca6be167ee7a67">   56</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="class_chimera_t_k_1_1_data_descriptor.html">DataDescriptor</a>&amp; <a class="code" href="class_chimera_t_k_1_1_register_info.html#a5dd54ae0f2a10869c0ca6be167ee7a67">RegisterInfo::getDataDescriptor</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;getDataDescriptor();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#aebe1c7b073d0968d40aed64e4e53b014">   62</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#aebe1c7b073d0968d40aed64e4e53b014">RegisterInfo::isReadable</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;isReadable();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a28f514a946cc889dae837573466c3d30">   68</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a28f514a946cc889dae837573466c3d30">RegisterInfo::isWriteable</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;isWriteable();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a748df43161b035b9a2af7044e3f827ee">   74</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a748df43161b035b9a2af7044e3f827ee">RegisterInfo::getSupportedAccessModes</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>-&gt;getSupportedAccessModes();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#adff51ba5bd6b966dae36fe56495eafcc">   80</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#adff51ba5bd6b966dae36fe56495eafcc">RegisterInfo::isValid</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a> != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a345b911952e5a33c9faee4469bde7020">   86</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a>&amp; <a class="code" href="class_chimera_t_k_1_1_register_info.html#a345b911952e5a33c9faee4469bde7020">RegisterInfo::getImpl</a>() {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_register_info.html#a7c1c00fcd4e479955c749bdf9dcfb9f2">   92</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a>&amp; <a class="code" href="class_chimera_t_k_1_1_register_info.html#a345b911952e5a33c9faee4469bde7020">RegisterInfo::getImpl</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5">_impl</a>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_register_info_8h_html"><div class="ttname"><a href="_register_info_8h.html">RegisterInfo.h</a></div></div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('_register_info_8cpp_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_820b2b9dd608784780e51ab49715a98b.html">device</a></li><li class="navelem"><a class="el" href="dir_a5d8e4da9cc80025df522d391d7137df.html">src</a></li><li class="navelem"><a class="el" href="_register_info_8cpp.html">RegisterInfo.cpp</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:50 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

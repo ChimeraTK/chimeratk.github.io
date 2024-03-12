@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  : _id(std::move(interruptID)), _backend(backend), _interruptControllerHandlerFactory(controllerHandlerFactory),</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    _parent(std::move(parent)), _asyncDomain(std::move(asyncDomain)) {}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType&gt;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_trigger_distributor.html#a7e2f9cbabaf92b17df509c1399e778ef">   22</a></span>&#160;  boost::shared_ptr&lt;DistributorType&gt; <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a7e2f9cbabaf92b17df509c1399e778ef">TriggerDistributor::getDistributorRecursive</a>(</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> controllerHandler-&gt;getDistributorRecursive&lt;DistributorType&gt;({++interruptID.begin(), interruptID.end()});</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// This function is never called. It only exists to instantiate the template code because we had to put the</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// implementation into then .cc-file to avoid circular header inclusion.</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#a2c0f0a627fbb8a794d63f88564c609e7">   68</a></span>&#160;  boost::shared_ptr&lt;TriggeredPollDistributor&gt; <a class="code" href="namespace_chimera_t_k.html#a6bdada911dc5515386217b6b0fd7a217">getPollDistributorRecursive</a>(</div>
@@ -159,14 +159,14 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> distributor.<a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a7e2f9cbabaf92b17df509c1399e778ef">getDistributorRecursive</a>&lt;<a class="code" href="class_chimera_t_k_1_1_triggered_poll_distributor.html">TriggeredPollDistributor</a>&gt;(interruptID);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#a2903beffba174917f0071fcdc68409f3">   75</a></span>&#160;  boost::shared_ptr&lt;VariableDistributor&lt;std::nullptr_t&gt;&gt; <a class="code" href="namespace_chimera_t_k.html#ac703742be3228666f7165a76dc052897">getVariableDistributorRecursive</a>(</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      std::vector&lt;uint32_t&gt; <span class="keyword">const</span>&amp; interruptID, <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a>&amp; distributor) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> distributor.<a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a7e2f9cbabaf92b17df509c1399e778ef">getDistributorRecursive</a>&lt;<a class="code" href="class_chimera_t_k_1_1_variable_distributor.html">VariableDistributor&lt;std::nullptr_t&gt;</a>&gt;(interruptID);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_trigger_distributor.html#a15885918b68b0decb4f25e30c197428c">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a15885918b68b0decb4f25e30c197428c">TriggerDistributor::distribute</a>([[maybe_unused]] std::nullptr_t, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a52ac7ef89438b212f479417c8a93f61f">_asyncDomain</a>-&gt;unsafeGetIsActive()) {</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_trigger_distributor.html#a7cd36b2c3810acf2d2e243011ce045d5">  102</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a7cd36b2c3810acf2d2e243011ce045d5">TriggerDistributor::activate</a>([[maybe_unused]] std::nullptr_t, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version) {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">auto</span> pollDistributor = <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a534599b4b682792c98865f946cdcec8b">_pollDistributor</a>.lock();</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_trigger_distributor.html#a004869206b166627939e0b765d51d9c9">  119</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a004869206b166627939e0b765d51d9c9">TriggerDistributor::sendException</a>(<span class="keyword">const</span> std::exception_ptr&amp; e) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">auto</span> pollDistributor = <a class="code" href="class_chimera_t_k_1_1_trigger_distributor.html#a534599b4b682792c98865f946cdcec8b">_pollDistributor</a>.lock();</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  boost::shared_ptr&lt;AsyncNDRegisterAccessor&lt;UserType&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_trigger_distributor_1_1_subscription_implementor.html">TriggerDistributor::SubscriptionImplementor</a>&lt;</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('_trigger_distributor_8cc_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_3fa1c5292c3942cc834181309cb54b60.html">src</a></li><li class="navelem"><a class="el" href="_trigger_distributor_8cc.html">TriggerDistributor.cc</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

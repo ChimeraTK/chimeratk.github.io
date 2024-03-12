@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_async_accessor_manager_8cc_source.htm
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303">    9</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303">AsyncAccessorManager::unsubscribe</a>(<a class="code" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> <span class="keywordtype">id</span>) {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// The destructor of the AsyncVariable implementation must do all necessary clean-up</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_async_accessor_manager.html#a087e32afba4e369748285ce21fe7f144">_asyncVariables</a>.erase(<span class="keywordtype">id</span>);</div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('_async_accessor_manager_8cc_source.htm
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8">asyncVariableMapChanged</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_accessor_manager.html#a63adeabcd93ad5ab5b8ce7cbffdae39a">   17</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_accessor_manager.html#a63adeabcd93ad5ab5b8ce7cbffdae39a">AsyncAccessorManager::sendException</a>(<span class="keyword">const</span> std::exception_ptr&amp; e) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; var : <a class="code" href="class_chimera_t_k_1_1_async_accessor_manager.html#a087e32afba4e369748285ce21fe7f144">_asyncVariables</a>) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      var.second-&gt;sendException(e);</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('_async_accessor_manager_8cc_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_3fa1c5292c3942cc834181309cb54b60.html">src</a></li><li class="navelem"><a class="el" href="_async_accessor_manager_8cc.html">AsyncAccessorManager.cc</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

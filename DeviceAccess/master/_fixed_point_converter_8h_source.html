@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// NOLINTEND(hicpp-signed-bitwise)</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  };</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">  /**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">// FIXME: replace reinterpret_cast with bit_cast once C++20 is available for us.</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// Until then, turn off the linter warning about reinterpret_cast</span></div>
@@ -368,7 +368,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  }</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">// NOLINTEND(cppcoreguidelines-pro-type-reinterpret-cast)</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">  /**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fixed_point_converter.html#a5016ab22288746437b63d087926fcec2">  336</a></span>&#160;  uint32_t <a class="code" href="class_chimera_t_k_1_1_fixed_point_converter.html#a5016ab22288746437b63d087926fcec2">FixedPointConverter::toRaw</a>(UserType cookedValue)<span class="keyword"> const </span>{</div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb">raw</a> &amp; _usedBitsMask;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  }</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">  /**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType, <span class="keyword">typename</span> std::enable_if&lt;std::is_<span class="keywordtype">signed</span>&lt;UserType&gt;{}, <span class="keywordtype">int</span>&gt;::type&gt;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="keywordtype">bool</span> FixedPointConverter::isNegativeUserType(UserType value)<span class="keyword"> const </span>{</div>
@@ -446,7 +446,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  }</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">  /**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RAW_ITERATOR, <span class="keyword">typename</span> COOKED_ITERATOR&gt;</div>
 <div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html">  414</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html">FixedPointConverter::vectorToCooked_impl</a>&lt;std::string, RAW_ITERATOR, COOKED_ITERATOR&gt; {</div>
@@ -481,7 +481,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  };</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">  /**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  [[nodiscard]] uint32_t FixedPointConverter::toRaw&lt;std::string&gt;(std::string cookedValue) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_d598e22cf3611ba63bff99f8eabac0af.html">NumericAddressedBackend</a></li><li class="navelem"><a class="el" href="dir_841b7e76fbb789784c18eea98cf7d838.html">include</a></li><li class="navelem"><a class="el" href="_fixed_point_converter_8h.html">FixedPointConverter.h</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

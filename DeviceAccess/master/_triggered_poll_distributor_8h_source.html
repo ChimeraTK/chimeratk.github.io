@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('_triggered_poll_distributor_8h_source.
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a00a010a90e894560321db761d9597199">   48</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a00a010a90e894560321db761d9597199">_version</a>{<span class="keyword">nullptr</span>};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  };</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_polled_async_variable.html">   56</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_chimera_t_k_1_1_polled_async_variable.html">PolledAsyncVariable</a> : <span class="keyword">public</span> <a class="code" href="struct_chimera_t_k_1_1_async_variable_impl.html">AsyncVariableImpl</a>&lt;UserType&gt; {</div>
@@ -143,9 +143,9 @@ $(document).ready(function(){initNavTree('_triggered_poll_distributor_8h_source.
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_polled_async_variable.html#a56ad84e2b9fb9e26214e92a3a920106d">   69</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="struct_chimera_t_k_1_1_polled_async_variable.html#a56ad84e2b9fb9e26214e92a3a920106d">getDescription</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <a class="code" href="struct_chimera_t_k_1_1_polled_async_variable.html#a21a4528a26d41292b8cda858ed4d2e00">syncAccessor</a>-&gt;getDescription(); }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  };</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Implementations</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a59e4e3a0d257cb0b6c53c9685ec64633">   77</a></span>&#160;  std::unique_ptr&lt;AsyncVariable&gt; <a class="code" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a59e4e3a0d257cb0b6c53c9685ec64633">TriggeredPollDistributor::createAsyncVariable</a>(</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('_triggered_poll_distributor_8h_source.
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;PolledAsyncVariable&lt;UserType&gt;&gt;(syncAccessor, <a class="code" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a00a010a90e894560321db761d9597199">_version</a>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_polled_async_variable.html#a6b086deffeab47b7c97b5f822077cb19">  100</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="struct_chimera_t_k_1_1_polled_async_variable.html#a6b086deffeab47b7c97b5f822077cb19">PolledAsyncVariable&lt;UserType&gt;::fillSendBuffer</a>() {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    this-&gt;_sendBuffer.versionNumber = _version;</div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('_triggered_poll_distributor_8h_source.
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    this-&gt;_sendBuffer.value.swap(syncAccessor-&gt;accessChannels());</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">//*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_polled_async_variable.html#a9c3dbf6361f72b38f8fe25fbdb65ae99">  108</a></span>&#160;  <a class="code" href="struct_chimera_t_k_1_1_polled_async_variable.html#a9c3dbf6361f72b38f8fe25fbdb65ae99">PolledAsyncVariable&lt;UserType&gt;::PolledAsyncVariable</a>(</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      boost::shared_ptr&lt;<a class="code" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor&lt;UserType&gt;</a>&gt; syncAccessor_, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&amp; v)</div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('_triggered_poll_distributor_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_f6c06f7a01da37196a5f6fe3a6212106.html">include</a></li><li class="navelem"><a class="el" href="_triggered_poll_distributor_8h.html">TriggeredPollDistributor.h</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

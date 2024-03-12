@@ -90,9 +90,9 @@ $(document).ready(function(){initNavTree('test_n_d_register_accessor_decorator_8
 <a href="test_n_d_register_accessor_decorator_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/* Tests for the NDReigsterAccessorDecorator base class                                                             */</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="test_n_d_register_accessor_decorator_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1">    8</a></span>&#160;<span class="preprocessor">#define BOOST_TEST_DYN_LINK</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="test_n_d_register_accessor_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    9</a></span>&#160;<span class="preprocessor">#define BOOST_TEST_MODULE TransferElementTest</span></div>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('test_n_d_register_accessor_decorator_8
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserType&gt;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_decorator_test_accessor.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_decorator_test_accessor.html">DecoratorTestAccessor</a> : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;UserType&gt; {</div>
@@ -349,7 +349,7 @@ $(document).ready(function(){initNavTree('test_n_d_register_accessor_decorator_8
 <div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="class_decorator_test_accessor.html#a77d3891c37c4bb0ec7503f5ff07fe0fc">  277</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_decorator_test_accessor.html#a77d3891c37c4bb0ec7503f5ff07fe0fc">push</a>() { <span class="keywordflow">return</span> this-&gt;_readQueue.push(); }</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;};</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="test_n_d_register_accessor_decorator_8cpp.html#ad64e074a85030c1367320244e9178ea4">  291</a></span>&#160;<a class="code" href="test_n_d_register_accessor_decorator_8cpp.html#ad64e074a85030c1367320244e9178ea4">BOOST_AUTO_TEST_CASE</a>(testExceptionHandling) {</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keyword">auto</span> targetAccessor = boost::make_shared&lt;DecoratorTestAccessor&lt;int32_t&gt;&gt;(<a class="code" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({}));</div>
@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('test_n_d_register_accessor_decorator_8
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  BOOST_CHECK_THROW(accessor.<a class="code" href="class_chimera_t_k_1_1_transfer_element.html#a91e44b68014588b44adea0d17ec45599">writeDestructively</a>(), boost::thread_interrupted);</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_device_backend_impl_8h_html"><div class="ttname"><a href="_device_backend_impl_8h.html">DeviceBackendImpl.h</a></div></div>
 <div class="ttc" id="a_n_d_register_accessor_8h_html"><div class="ttname"><a href="_n_d_register_accessor_8h.html">NDRegisterAccessor.h</a></div></div>
 <div class="ttc" id="a_n_d_register_accessor_decorator_8h_html"><div class="ttname"><a href="_n_d_register_accessor_decorator_8h.html">NDRegisterAccessorDecorator.h</a></div></div>
@@ -471,7 +471,7 @@ $(document).ready(function(){initNavTree('test_n_d_register_accessor_decorator_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_n_d_register_accessor_decorator_8cpp.html">testNDRegisterAccessorDecorator.cpp</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

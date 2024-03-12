@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="test_pcie_backend_8cpp.html#af69c2520925974915f2141865a990cfc">   41</a></span>&#160;<span class="preprocessor">#define PCIE_UNI_DEVICE &quot;PCIE0&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="test_pcie_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297">   42</a></span>&#160;<span class="preprocessor">#define NON_EXISTING_DEVICE &quot;DUMMY9&quot;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// Use a file lock on /var/run/lock/mtcadummy/&lt;devicenode&gt; for all device nodes</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// we are using in this test, to ensure we are not running concurrent tests in</span></div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">static</span> <a class="code" href="struct_test_locker.html">TestLocker</a> testLocker;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">static</span> <a class="code" href="class_chimera_t_k_1_1_backend_factory.html">BackendFactory</a>&amp; factoryInstance = BackendFactory::getInstance();</div>
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html">   97</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pcie_backend_test.html">PcieBackendTest</a> {</div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  std::string checkDmaValues(std::vector&lt;int32_t&gt; <span class="keyword">const</span>&amp; dmaBuffer);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
 <div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="class_pcie_backend_test_suite.html">  150</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pcie_backend_test_suite.html">PcieBackendTestSuite</a> : <span class="keyword">public</span> test_suite {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; <span class="keyword">public</span>:</div>
@@ -273,7 +273,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
 <div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="test_pcie_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94">  210</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="test_pcie_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94">init_unit_test</a>() {</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  framework::master_test_suite().p_name.value = <span class="stringliteral">&quot;PcieBackend test suite&quot;</span>;</div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">// The implementations of the individual tests</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">return</span> errorMessage.str();</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
 <div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#a3f52e9c6be368f588c24956c35afd497">  270</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#a3f52e9c6be368f588c24956c35afd497">PcieBackendTest::testReadDeviceInfo</a>() {</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testReadDeviceInfo&quot;</span> &lt;&lt; std::endl;</div>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  BOOST_CHECK_EQUAL(referenceInfo.str(), deviceInfo);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#a0f0b11cd82ff3497ce3d211bbc0db699">  291</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#a0f0b11cd82ff3497ce3d211bbc0db699">PcieBackendTest::testReadDMA</a>() {</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testReadDMA&quot;</span> &lt;&lt; std::endl;</div>
@@ -384,13 +384,13 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  }</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
 <div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#a9ff9da4dc1a856a96b88b77bd08cca9d">  321</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#a9ff9da4dc1a856a96b88b77bd08cca9d">PcieBackendTest::testWriteDMA</a>() {</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testWriteDMA&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
 <div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#a3ac8298d3a88e08f9f67b5039c56d565">  327</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#a3ac8298d3a88e08f9f67b5039c56d565">PcieBackendTest::testRead</a>() {</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testRead&quot;</span> &lt;&lt; std::endl;</div>
@@ -431,7 +431,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  BOOST_CHECK_MESSAGE(errorMessage.empty(), errorMessage);</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
 <div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#a51a8098100d7243fe22539349f92bf6c">  368</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#a51a8098100d7243fe22539349f92bf6c">PcieBackendTest::testWriteArea</a>() {</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testWriteArea&quot;</span> &lt;&lt; std::endl;</div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  BOOST_CHECK(readbackBuffer == writeBuffer);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;}</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
 <div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#accd42343ea7e73b2ef80398a81565d71">  403</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#accd42343ea7e73b2ef80398a81565d71">PcieBackendTest::testReadRegister</a>() {</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testReadRegister&quot;</span> &lt;&lt; std::endl;</div>
@@ -487,7 +487,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  BOOST_CHECK_THROW(_pcieBackendInstance-&gt;getRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;#6/0x3C&quot;</span>, 4, 0, {}), <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;}</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
 <div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#a2b469d1e64d7ec199b9e9b517e167d10">  426</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#a2b469d1e64d7ec199b9e9b517e167d10">PcieBackendTest::testWriteRegister</a>() {</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testWriteRegister&quot;</span> &lt;&lt; std::endl;</div>
@@ -506,7 +506,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  BOOST_CHECK_EQUAL(originalUserWord + 1, newUserWord);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
 <div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#ab5f5cd25766c1b08ab9cb2819f07855d">  445</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#ab5f5cd25766c1b08ab9cb2819f07855d">PcieBackendTest::testClose</a>() {</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testClose&quot;</span> &lt;&lt; std::endl;</div>
@@ -519,7 +519,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  BOOST_CHECK(_pcieBackendInstance-&gt;isOpen() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;}</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
 <div class="line"><a name="l00458"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#aa6e194013bade461028dbdb540b406a7">  458</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#aa6e194013bade461028dbdb540b406a7">PcieBackendTest::testOpen</a>() {</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testOpen&quot;</span> &lt;&lt; std::endl;</div>
@@ -530,7 +530,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  BOOST_CHECK(_pcieBackendInstance-&gt;isOpen());</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;}</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
 <div class="line"><a name="l00469"></a><span class="lineno"><a class="line" href="class_pcie_backend_test.html#aff8b1840dd414e6ad2687c1f6e02aba7">  469</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pcie_backend_test.html#aff8b1840dd414e6ad2687c1f6e02aba7">PcieBackendTest::testCreateBackend</a>() {</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testCreateBackend&quot;</span> &lt;&lt; std::endl;</div>
@@ -588,7 +588,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  _pcieBackendInstance-&gt;close();</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;}</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">/*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_backend_factory_8h_html"><div class="ttname"><a href="_backend_factory_8h.html">BackendFactory.h</a></div></div>
 <div class="ttc" id="a_backend_factory_8h_html_a133539a4d76d2a1aaef2b0bfebbf18c4"><div class="ttname"><a href="_backend_factory_8h.html#a133539a4d76d2a1aaef2b0bfebbf18c4">TEST_DMAP_FILE_PATH</a></div><div class="ttdeci">#define TEST_DMAP_FILE_PATH</div><div class="ttdef"><b>Definition:</b> <a href="_backend_factory_8h_source.html#l00018">BackendFactory.h:18</a></div></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
@@ -648,7 +648,7 @@ $(document).ready(function(){initNavTree('test_pcie_backend_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_pcie_backend_8cpp.html">testPcieBackend.cpp</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:51 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

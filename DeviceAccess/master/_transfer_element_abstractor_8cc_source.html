@@ -94,13 +94,13 @@ $(document).ready(function(){initNavTree('_transfer_element_abstractor_8cc_sourc
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a82e4e4f86c916307f345e99cf0a7915f">   10</a></span>&#160;  std::vector&lt;boost::shared_ptr&lt;TransferElement&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a82e4e4f86c916307f345e99cf0a7915f">TransferElementAbstractor::getHardwareAccessingElements</a>() {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aea884943cf09b1544983a16d9438ae18">_impl</a>-&gt;getHardwareAccessingElements();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  }</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a274009bf1b3a598699ff725778011768">   16</a></span>&#160;  std::list&lt;boost::shared_ptr&lt;TransferElement&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a274009bf1b3a598699ff725778011768">TransferElementAbstractor::getInternalElements</a>() {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">auto</span> result = <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aea884943cf09b1544983a16d9438ae18">_impl</a>-&gt;getInternalElements();</div>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('_transfer_element_abstractor_8cc_sourc
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa89c3e0968687c7cf798581cd989d20a">   24</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa89c3e0968687c7cf798581cd989d20a">TransferElementAbstractor::replaceTransferElement</a>(<span class="keyword">const</span> boost::shared_ptr&lt;TransferElement&gt;&amp; newElement) {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span>(newElement-&gt;mayReplaceOther(<a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aea884943cf09b1544983a16d9438ae18">_impl</a>)) {</div>
@@ -121,14 +121,14 @@ $(document).ready(function(){initNavTree('_transfer_element_abstractor_8cc_sourc
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376">   37</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376">TransferElementAbstractor::setPersistentDataStorage</a>(</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      boost::shared_ptr&lt;ChimeraTK::PersistentDataStorage&gt; storage) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aea884943cf09b1544983a16d9438ae18">_impl</a>-&gt;setPersistentDataStorage(std::move(storage));</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">  /*******************************************************************************************************************/</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_transfer_element_abstractor_8h_html"><div class="ttname"><a href="_transfer_element_abstractor_8h.html">TransferElementAbstractor.h</a></div></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_transfer_element_abstractor_8cc_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_820b2b9dd608784780e51ab49715a98b.html">device</a></li><li class="navelem"><a class="el" href="dir_a5d8e4da9cc80025df522d391d7137df.html">src</a></li><li class="navelem"><a class="el" href="_transfer_element_abstractor_8cc.html">TransferElementAbstractor.cc</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 04:53:25 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 12 2024 04:56:50 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
