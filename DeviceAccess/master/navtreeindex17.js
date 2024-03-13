@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"struct_reg_lower_half_of_firmware.html#a62f98164938ad6e638d4287aff11141b":[19,0,122,3],
+"struct_reg_lower_half_of_firmware.html#aaa737f7ad75b7a29838e3e5f9271449c":[19,0,122,0],
+"struct_reg_lower_half_of_firmware.html#ae0d43652331fe96c27385683d7b661a7":[19,0,122,1],
+"struct_reg_lower_half_of_firmware.html#af81a5b58c50ede055c74697ebac44c11":[19,0,122,4],
 "struct_reg_monostable_trigger.html":[19,0,123],
 "struct_reg_monostable_trigger.html#a076fc12fa1f0bd36e8d697d86af2e0ff":[19,0,123,3],
 "struct_reg_monostable_trigger.html#a4ac0773d98df7f1005df03c0968643f7":[19,0,123,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "struct_static_core.html#a2eba5dcb8602cda0416c3ea027fc470b":[19,0,159,2],
 "struct_static_core.html#a540b46cdf636da7518414030e498b095":[19,0,159,6],
 "struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238":[19,0,159,3],
-"struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5":[19,0,159,8],
-"struct_static_core.html#a6cefba6ff47a0e308499283995da8ab1":[19,0,159,10],
-"struct_static_core.html#a74beeda65f3093871ac033d7a108afa4":[19,0,159,0],
-"struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377":[19,0,159,11],
-"struct_static_core.html#a9971fa98405aaad70b27228bf2fba7ba":[19,0,159,5]
+"struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5":[19,0,159,8]
 };

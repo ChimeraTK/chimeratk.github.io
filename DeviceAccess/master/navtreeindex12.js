@@ -1,5 +1,8 @@
 var NAVTREEINDEX12 =
 {
+"globals_o.html":[20,1,0,13],
+"globals_p.html":[20,1,0,14],
+"globals_r.html":[20,1,0,15],
 "globals_s.html":[20,1,0,16],
 "globals_t.html":[20,1,0,17],
 "globals_type.html":[20,1,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX12 =
 "pciedev__io__compat_8h.html":[20,0,2,4,0,2],
 "pciedev__io__compat_8h.html#a07aad6c0ab1a1d0386c51904d1d4e481":[20,0,2,4,0,2,20],
 "pciedev__io__compat_8h.html#a0ce58a436c9a78d135964a5b62c0dfd5":[20,0,2,4,0,2,21],
-"pciedev__io__compat_8h.html#a198b5f4fef9dff99b6c27836f972bc19":[20,0,2,4,0,2,37],
-"pciedev__io__compat_8h.html#a1dc1215c881918ae78af0f20713b05a5":[20,0,2,4,0,2,12],
-"pciedev__io__compat_8h.html#a1fce441aaa962f572d643140658a6e4c":[20,0,2,4,0,2,4],
-"pciedev__io__compat_8h.html#a2140cdb4612e1aeb483572affbeb9f20":[20,0,2,4,0,2,17]
+"pciedev__io__compat_8h.html#a198b5f4fef9dff99b6c27836f972bc19":[20,0,2,4,0,2,37]
 };

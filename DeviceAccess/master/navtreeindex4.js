@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a563737aed65226e0717444c4a6c75f37":[19,0,1,116,0,5],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a6490bbf255c0da29018b73113342f83a":[19,0,1,116,0,6],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aab8018e944f04b3dea79982f9ff02f5d":[19,0,1,116,0,4],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#ae97e9a472388c3f3a1238338782af7b1":[19,0,1,116,0,1],
@@ -188,8 +189,8 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_fixed_point_converter.html#a5e5cfd62ab0319d60ef1f90abe41fa57":[19,0,1,81,9],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3":[19,0,1,81,10],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3":[19,0,1,81,11],
-"class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b":[19,0,1,81,13],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b":[19,0,1,81,12],
+"class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b":[19,0,1,81,13],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a841c00be723f5977877526c4fc9598f4":[19,0,1,81,6],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a9be99e1a2f4930e97fee68af1effd4d7":[19,0,1,81,3],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a9cc7507424b4de95d07ca76c0560f27d":[19,0,1,81,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_interrupt_controller_handler.html#a7f7ecc010012fccb9bb997c33e6a34dd":[19,0,1,63,10],
 "class_chimera_t_k_1_1_interrupt_controller_handler.html#a8b585cb8ea5054fd93c281b00fb01112":[19,0,1,63,8],
 "class_chimera_t_k_1_1_interrupt_controller_handler.html#ab3f697780f53e3c7ebf1acfedd713447":[19,0,1,63,5],
-"class_chimera_t_k_1_1_interrupt_controller_handler.html#ac01bb6647769c03c077bb9c2f9beab1d":[19,0,1,63,0],
-"class_chimera_t_k_1_1_interrupt_controller_handler.html#ae3e463a500fa588ef7d01cee74c1597e":[19,0,1,63,2]
+"class_chimera_t_k_1_1_interrupt_controller_handler.html#ac01bb6647769c03c077bb9c2f9beab1d":[19,0,1,63,0]
 };

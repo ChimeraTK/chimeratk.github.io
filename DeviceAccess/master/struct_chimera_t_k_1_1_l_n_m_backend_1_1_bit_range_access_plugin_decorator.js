@@ -1,6 +1,6 @@
 var struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator =
 [
-    [ "BitRangeAccessPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a66af29dc45d1abde84d014401a5c4c6b", null ],
+    [ "BitRangeAccessPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a5872b352f7abc3d3b5d09839abd698cf", null ],
     [ "doPostRead", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a4d498d2a51596adfde956ab442fa9267", null ],
     [ "doPostWrite", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a0fb7a2930710505d2b017b1cf25e00c3", null ],
     [ "doPreRead", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a4269abd2260f33ac8f9896052b199650", null ],
@@ -14,5 +14,6 @@ var struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator =
     [ "_targetTypeMask", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#abcc73797c67c0a115df0886a2d18aadd", null ],
     [ "_temporaryVersion", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a2ac5c032bb7d28e56ab48d7cb014eeef", null ],
     [ "_userTypeMask", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a89e00f1f170ff4404b5eecb37f72bf28", null ],
-    [ "_writeable", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a9e05390f3f7aab227ad5f1fc25808eae", null ]
+    [ "_writeable", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a9e05390f3f7aab227ad5f1fc25808eae", null ],
+    [ "fixedPointConverter", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ad0d3d30aaa8082e9e53520076492dc06", null ]
 ];

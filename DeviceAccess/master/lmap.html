@@ -268,17 +268,23 @@ bitRange</h3>
 <p><code>bitRange</code> enables to split a single variable into one or multiple variables which can be used to manipulate those parts individually without having to deal with bit masks yourself.</p>
 <p>Parameters:</p><ul>
 <li><code>shift</code>: Position of the first bit of the mask</li>
-<li><code>numberOfBits</code>: Length of the mask</li>
+<li><code>numberOfBits</code>: Length of the mask. Cannot be larger than 32.</li>
+<li><code>fractionalBits</code>: Optional, how many of the bits are representing the fractional part of a fixed point value. Defaults to <code>0</code>. See <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">ChimeraTK::FixedPointConverter()</a> for details.</li>
+<li><code>signed</code>: Optional, whether the type represented by numberOfBits is signed. Defaults to <code>false</code></li>
 </ul>
 <p>When used like below on a 32bit register, the redirected register will give access to the upper word of that register. </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;bitRange&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;shift&quot;</span>&gt;16&lt;/<span class="keywordtype">parameter</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;numberOfBits&quot;</span>&gt;16&lt;/<span class="keywordtype">parameter</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">plugin</span>&gt;</div>
+</div><!-- fragment --><p>The snippet below will map the upper word to a signed 16 bit integer </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;bitRange&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;shift&quot;</span>&gt;16&lt;/<span class="keywordtype">parameter</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;numberOfBits&quot;</span>&gt;16&lt;/<span class="keywordtype">parameter</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;signed&quot;</span>&gt;<span class="keyword">true</span>&lt;/<span class="keywordtype">parameter</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">plugin</span>&gt;</div>
 </div><!-- fragment --><p>Notes and CAVEATS:</p><ul>
-<li>Only accessors with integral types can be requested from the LMAP device</li>
 <li>wait_for_new_data is currently not supported</li>
 <li>When overlapping bit ranges are used in a TransferGroup, the TransferGroup will become read-only since write order of overlapping registers cannot be guaranteed</li>
-<li>If the target register is writeable, the plugin does read-modify-write </li>
+<li>If the target register is writeable, the plugin does read-modify-write if the target register is also readable. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -286,7 +292,7 @@ bitRange</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 12 2024 04:56:52 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 13 2024 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
