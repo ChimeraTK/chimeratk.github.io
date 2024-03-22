@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"struct_chimera_t_k_1_1_dummy_protocol0.html#a482f185fcc7f26c3fa1ea1d4a0ebea9a":[19,0,1,124,8],
+"struct_chimera_t_k_1_1_dummy_protocol0.html#a5b1420d7783d3ff12b2e4dbaff6f283c":[19,0,1,124,7],
 "struct_chimera_t_k_1_1_dummy_protocol0.html#a82af2a6ca8dacbf0b4323c9f0983250e":[19,0,1,124,3],
 "struct_chimera_t_k_1_1_dummy_protocol0.html#ab790036ec6c8b4debed7838602651d35":[19,0,1,124,1],
 "struct_chimera_t_k_1_1_dummy_protocol1.html":[19,0,1,125],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "struct_chimera_t_k_1_1_test_capabilities.html#a4b3a3c9bb2500894110e3943fc905ab3":[19,0,1,69,21],
 "struct_chimera_t_k_1_1_test_capabilities.html#a4d7e96374df88f988e999142eafc5127":[19,0,1,69,17],
 "struct_chimera_t_k_1_1_test_capabilities.html#a5090ae6ac1902fab70e2823bb7911f68":[19,0,1,69,1],
-"struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97":[19,0,1,69,13],
-"struct_chimera_t_k_1_1_test_capabilities.html#a6315d056a1d58bfb7b9e48927cf5847e":[19,0,1,69,15],
-"struct_chimera_t_k_1_1_test_capabilities.html#a6e905a1aad2e9109ecfb874b7ec8a5e3":[19,0,1,69,10]
+"struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97":[19,0,1,69,13]
 };

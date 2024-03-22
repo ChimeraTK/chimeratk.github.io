@@ -1,7 +1,6 @@
 var class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor =
 [
     [ "DummyInterruptTriggerAccessor", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a606efab4953c8d852a00280b6db981ed", null ],
-    [ "doPostRead", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a31b37c5faa294549d9b11adceddddbf5", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#aa9f9ae3a688aab49eb351d080fa51289", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#ab4e09d16dfab9fec49a65e8156a11cd4", null ],
     [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a5bab4afeb38278ba8a4dd7a27b308308", null ],

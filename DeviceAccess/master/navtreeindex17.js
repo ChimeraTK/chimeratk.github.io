@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"struct_reg_lower_half_of_firmware.html":[19,0,122],
+"struct_reg_lower_half_of_firmware.html#a19f6e5906205238b7e2bf581d40df724":[19,0,122,2],
 "struct_reg_lower_half_of_firmware.html#a62f98164938ad6e638d4287aff11141b":[19,0,122,3],
 "struct_reg_lower_half_of_firmware.html#aaa737f7ad75b7a29838e3e5f9271449c":[19,0,122,0],
 "struct_reg_lower_half_of_firmware.html#ae0d43652331fe96c27385683d7b661a7":[19,0,122,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "struct_static_core.html":[19,0,159],
 "struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89":[19,0,159,4],
 "struct_static_core.html#a2eba5dcb8602cda0416c3ea027fc470b":[19,0,159,2],
-"struct_static_core.html#a540b46cdf636da7518414030e498b095":[19,0,159,6],
-"struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238":[19,0,159,3],
-"struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5":[19,0,159,8]
+"struct_static_core.html#a540b46cdf636da7518414030e498b095":[19,0,159,6]
 };

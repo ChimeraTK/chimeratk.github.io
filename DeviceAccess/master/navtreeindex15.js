@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"struct_chimera_t_k_1_1_test_capabilities.html#a6315d056a1d58bfb7b9e48927cf5847e":[19,0,1,69,15],
+"struct_chimera_t_k_1_1_test_capabilities.html#a6e905a1aad2e9109ecfb874b7ec8a5e3":[19,0,1,69,10],
 "struct_chimera_t_k_1_1_test_capabilities.html#a7916ba2b5564cb1e9a1ae78bc454db92":[19,0,1,69,18],
 "struct_chimera_t_k_1_1_test_capabilities.html#a8b3b166ec2aa3a1542b78da543670f5a":[19,0,1,69,9],
 "struct_chimera_t_k_1_1_test_capabilities.html#aaaf5377c54ba3a6f249f4586bd588124":[19,0,1,69,0],
@@ -130,11 +132,11 @@ var NAVTREEINDEX15 =
 "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html":[19,0,55,0],
 "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html#a6bd63332fea85a457e1d5b21dd5473d6":[19,0,55,0,0],
 "struct_dummy_for_cleanup_check.html":[19,0,56],
-"struct_dummy_for_cleanup_check.html#a4ab8722bfdc816e50b5a96f0223dc10f":[19,0,56,1],
 "struct_dummy_for_cleanup_check.html#a4ab8722bfdc816e50b5a96f0223dc10f":[19,0,56,2],
+"struct_dummy_for_cleanup_check.html#a4ab8722bfdc816e50b5a96f0223dc10f":[19,0,56,1],
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html":[19,0,56,0],
-"struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[19,0,56,0,0],
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[19,0,56,0,1],
+"struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[19,0,56,0,0],
 "struct_dummy_for_double_buffering.html":[19,0,57],
 "struct_dummy_for_double_buffering.html#a08de5d5364bdbc98d071e2601470a9e3":[19,0,57,2],
 "struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a":[19,0,57,1],
@@ -228,8 +230,8 @@ var NAVTREEINDEX15 =
 "struct_integers__signed32__async.html#a28afd2afb24ff72b9c5c084ecc9e52b3":[19,0,68,18],
 "struct_integers__signed32__async.html#a4050d2828430c326977f242929c43b6b":[19,0,68,11],
 "struct_integers__signed32__async.html#a52bb35dfe01da818d268d69bdc60248c":[19,0,68,2],
-"struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,68,14],
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,68,13],
+"struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,68,14],
 "struct_integers__signed32__async.html#a681276f1b5ad8dd610a185aa3e0e22b3":[19,0,68,15],
 "struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,68,17],
 "struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,68,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "struct_integers__signed32__async__rw.html":[19,0,69],
 "struct_integers__signed32__async__rw.html#a1f7e0e5756e653a30460ab2660a66072":[19,0,69,14],
 "struct_integers__signed32__async__rw.html#a3375c37546a1513e342859876ea86b72":[19,0,69,4],
-"struct_integers__signed32__async__rw.html#a373e23d152b12b8f1003e3298069bb34":[19,0,69,6],
-"struct_integers__signed32__async__rw.html#a5ed4c1e2bbc4e0ffb0563198b5be950f":[19,0,69,3],
-"struct_integers__signed32__async__rw.html#a66c170fc04f1737c6817e7528289d769":[19,0,69,7]
+"struct_integers__signed32__async__rw.html#a373e23d152b12b8f1003e3298069bb34":[19,0,69,6]
 };
