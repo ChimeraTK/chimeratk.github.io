@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"struct_module_x.html":[14,0,40],
 "struct_module_x.html#a4e2a16b91ea6ca152adf54b3811376df":[14,0,40,1],
 "struct_module_x.html#a753083471c3f953279c07531ee414639":[14,0,40,2],
 "struct_module_x.html#a8c87665e061d2ddaa2c0fa096fe9fa1f":[14,0,40,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "struct_test6_c_initial_value_eception_dummy.html#aafafe815feecf08edd79adcfdcce0b41":[14,0,80,5],
 "struct_test6_c_initial_value_eception_dummy.html#acf42dc00e0c6e6bf14ac2a7c6ecff66c":[14,0,80,0],
 "struct_test7_dummy_application.html":[14,0,81],
-"struct_test7_dummy_application.html#a053bee709e34e9aa40f68c812c85bbbf":[14,0,81,0],
-"struct_test7_dummy_application.html#a571be3a118e912e454c247916cdd443a":[14,0,81,3]
+"struct_test7_dummy_application.html#a053bee709e34e9aa40f68c812c85bbbf":[14,0,81,0]
 };

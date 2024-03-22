@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#aefa460e39dd2e72346f6a6eb638761d3":[14,0,0,60,0,0],
 "struct_chimera_t_k_1_1_divider.html":[14,0,0,67],
 "struct_chimera_t_k_1_1_divider.html#a36da7f25d894fb83fb1e10893c7b5ab7":[14,0,0,67,6],
 "struct_chimera_t_k_1_1_divider.html#a512dfa8df1580aed27d9d07cae75502f":[14,0,0,67,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "struct_chimera_t_k_1_1_multiplier.html#af543a7f20028002a7f1e66d27617a90c":[14,0,0,66,5],
 "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html":[14,0,0,12,0],
 "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a05d7024a3b9ebefca71b841143167ea8":[14,0,0,12,0,9],
-"struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a0d9b7c7d37e05f3446a573d90332349c":[14,0,0,12,0,8],
-"struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a1fc55d043e639910b2e21c3021a7613f":[14,0,0,12,0,6]
+"struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a0d9b7c7d37e05f3446a573d90332349c":[14,0,0,12,0,8]
 };

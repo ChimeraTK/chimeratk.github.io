@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_meta_data_propagating_register_decora
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span>(_dataValidity != _lastValidity) {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordflow">if</span>(_dataValidity == DataValidity::faulty) { <span class="comment">// data validity changes to faulty</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        _owner-&gt;incrementDataFaultCounter();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// external inpput in a circular dependency network</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// external input in a circular dependency network</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span>(_owner-&gt;getCircularNetworkHash() &amp;&amp; !_isCircularInput) {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          ++(<a class="code" href="class_chimera_t_k_1_1_application.html#aa3c1c63e078d14fb104431a15951a070">Application::getInstance</a>().<a class="code" href="class_chimera_t_k_1_1_application.html#ac2327e80d033b5d0748f304f47bb467b">_circularNetworkInvalidityCounters</a>[_owner-&gt;getCircularNetworkHash()]);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
@@ -148,36 +148,44 @@ $(document).ready(function(){initNavTree('_meta_data_propagating_register_decora
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(_dataValidity == DataValidity::faulty) { <span class="comment">// the application has manualy set the validity to faulty</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      _target-&gt;setDataValidity(DataValidity::faulty);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">else</span> { <span class="comment">// automatic propagation of the owner validity</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      _target-&gt;setDataValidity(_owner-&gt;getDataValidity());</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; _target-&gt;getNumberOfChannels(); ++i) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      buffer_2D[i].swap(_target-&gt;accessChannel(i));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    _target-&gt;preWrite(type, versionNumber);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="_meta_data_propagating_register_decorator_8cc.html#a3e5ae3d1a5898dc7017586e4baf2bb7f">   74</a></span>&#160;<a class="code" href="_meta_data_propagating_register_decorator_8cc.html#a3e5ae3d1a5898dc7017586e4baf2bb7f">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(<a class="code" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">ChimeraTK::MetaDataPropagatingRegisterDecorator</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span>(_direction.dir == <a class="code" href="struct_chimera_t_k_1_1_variable_direction.html#a0640f33372cd401d80c0a95c2d5dec35add0fabb0f15a1db73adfe3f6d107b71e">VariableDirection::feeding</a>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        _target-&gt;setDataValidity(_owner-&gt;getDataValidity());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// Do not propagate the owner&#39;s validity through the return channel. The user can still override this because</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// of the override above</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        _target-&gt;setDataValidity(DataValidity::ok);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; _target-&gt;getNumberOfChannels(); ++i) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      buffer_2D[i].swap(_target-&gt;accessChannel(i));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    _target-&gt;preWrite(type, versionNumber);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="_meta_data_propagating_register_decorator_8cc.html#a3e5ae3d1a5898dc7017586e4baf2bb7f">   81</a></span>&#160;<a class="code" href="_meta_data_propagating_register_decorator_8cc.html#a3e5ae3d1a5898dc7017586e4baf2bb7f">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(<a class="code" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">ChimeraTK::MetaDataPropagatingRegisterDecorator</a>);</div>
 <div class="ttc" id="a_application_8h_html"><div class="ttname"><a href="_application_8h.html">Application.h</a></div></div>
 <div class="ttc" id="a_entity_owner_8h_html"><div class="ttname"><a href="_entity_owner_8h.html">EntityOwner.h</a></div></div>
 <div class="ttc" id="a_meta_data_propagating_register_decorator_8cc_html_a3e5ae3d1a5898dc7017586e4baf2bb7f"><div class="ttname"><a href="_meta_data_propagating_register_decorator_8cc.html#a3e5ae3d1a5898dc7017586e4baf2bb7f">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a></div><div class="ttdeci">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES(ChimeraTK::MetaDataPropagatingRegisterDecorator)</div></div>
 <div class="ttc" id="a_meta_data_propagating_register_decorator_8h_html"><div class="ttname"><a href="_meta_data_propagating_register_decorator_8h.html">MetaDataPropagatingRegisterDecorator.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_aa3c1c63e078d14fb104431a15951a070"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#aa3c1c63e078d14fb104431a15951a070">ChimeraTK::Application::getInstance</a></div><div class="ttdeci">static Application &amp; getInstance()</div><div class="ttdoc">Obtain instance of the application.</div><div class="ttdef"><b>Definition:</b> <a href="_application_8cc_source.html#l00243">Application.cc:243</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_ac2327e80d033b5d0748f304f47bb467b"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#ac2327e80d033b5d0748f304f47bb467b">ChimeraTK::Application::_circularNetworkInvalidityCounters</a></div><div class="ttdeci">std::map&lt; size_t, std::atomic&lt; uint64_t &gt; &gt; _circularNetworkInvalidityCounters</div><div class="ttdoc">Map of atomic invalidity counters for each circular dependency network.</div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00246">Application.h:246</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_meta_data_propagating_register_decorator_html"><div class="ttname"><a href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">ChimeraTK::MetaDataPropagatingRegisterDecorator</a></div><div class="ttdoc">NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...</div><div class="ttdef"><b>Definition:</b> <a href="_meta_data_propagating_register_decorator_8h_source.html#l00049">MetaDataPropagatingRegisterDecorator.h:50</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_meta_data_propagating_register_decorator_html"><div class="ttname"><a href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">ChimeraTK::MetaDataPropagatingRegisterDecorator</a></div><div class="ttdoc">NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...</div><div class="ttdef"><b>Definition:</b> <a href="_meta_data_propagating_register_decorator_8h_source.html#l00051">MetaDataPropagatingRegisterDecorator.h:52</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_meta_data_propagating_register_decorator_html_a0bff559ae4f9c5f2c588d08b992cb679"><div class="ttname"><a href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a0bff559ae4f9c5f2c588d08b992cb679">ChimeraTK::MetaDataPropagatingRegisterDecorator::doPreWrite</a></div><div class="ttdeci">void doPreWrite(TransferType type, VersionNumber versionNumber) override</div><div class="ttdef"><b>Definition:</b> <a href="_meta_data_propagating_register_decorator_8cc_source.html#l00042">MetaDataPropagatingRegisterDecorator.cc:42</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_meta_data_propagating_register_decorator_html_a2d62a08acf2402410c8b26b1fb45c7ce"><div class="ttname"><a href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a2d62a08acf2402410c8b26b1fb45c7ce">ChimeraTK::MetaDataPropagatingRegisterDecorator::doPostRead</a></div><div class="ttdeci">void doPostRead(TransferType type, bool hasNewData) override</div><div class="ttdef"><b>Definition:</b> <a href="_meta_data_propagating_register_decorator_8cc_source.html#l00013">MetaDataPropagatingRegisterDecorator.cc:13</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition:</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_variable_direction_html_a0640f33372cd401d80c0a95c2d5dec35add0fabb0f15a1db73adfe3f6d107b71e"><div class="ttname"><a href="struct_chimera_t_k_1_1_variable_direction.html#a0640f33372cd401d80c0a95c2d5dec35add0fabb0f15a1db73adfe3f6d107b71e">ChimeraTK::VariableDirection::feeding</a></div><div class="ttdeci">@ feeding</div><div class="ttdef"><b>Definition:</b> <a href="_flags_8h_source.html#l00018">Flags.h:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_meta_data_propagating_register_decorator_8cc.html">MetaDataPropagatingRegisterDecorator.cc</a></li>
-    <li class="footer">Generated on Sat Feb 24 2024 04:54:14 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 22 2024 04:55:37 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

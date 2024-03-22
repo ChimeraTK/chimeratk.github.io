@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  BOOST_CHECK_EQUAL(o2[0], 10);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  BOOST_CHECK_EQUAL(o2[1], 11);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="comment">// the return channel should also receive the flag</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="comment">// the return channel does not receive the flag</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  BOOST_CHECK(i3.readNonBlocking() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  BOOST_CHECK(i3.dataValidity() == ctk::DataValidity::ok);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  i3 = 20;</div>
@@ -250,13 +250,13 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  i3.read();</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  BOOST_CHECK(o1.dataValidity() == ctk::DataValidity::faulty);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  BOOST_CHECK(o2.dataValidity() == ctk::DataValidity::faulty);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  BOOST_CHECK(i3.dataValidity() == ctk::DataValidity::faulty);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  BOOST_CHECK(i3.dataValidity() == ctk::DataValidity::ok);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  BOOST_CHECK_EQUAL(<span class="keywordtype">int</span>(o1), 42);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  BOOST_CHECK_EQUAL(o2[0], 10);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  BOOST_CHECK_EQUAL(o2[1], 11);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  BOOST_CHECK_EQUAL(<span class="keywordtype">int</span>(i3), 10);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// clear the flag on i1, i3 will keep it for now (we have received it there and not yet sent it out!)</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// clear the flag on i1, i3 does not get it</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  i1 = 3;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  i1.setDataValidity(ctk::DataValidity::ok);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  i1.write();</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  BOOST_CHECK_EQUAL(<span class="keywordtype">int</span>(o1), 3);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  BOOST_CHECK_EQUAL(o2[0], 10);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  BOOST_CHECK_EQUAL(o2[1], 11);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  BOOST_CHECK(i3.dataValidity() == ctk::DataValidity::faulty);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  BOOST_CHECK(i3.dataValidity() == ctk::DataValidity::ok);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  BOOST_CHECK_EQUAL(<span class="keywordtype">int</span>(i3), 10);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// send two data fault flags. both need to be cleared before the outputs go back to ok</span></div>
@@ -277,8 +277,8 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  i1.setDataValidity(ctk::DataValidity::faulty);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  i1.write();</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  i3 = 121;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  i3.write();</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  BOOST_CHECK(i3.dataValidity() == ctk::DataValidity::faulty);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  i3.setDataValidity(ctk::DataValidity::faulty);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  i3.write();</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  test.<a class="code" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  o1.readLatest();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  o2.readLatest();</div>
@@ -1363,7 +1363,7 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_propagate_data_fault_flag_8cc.html">testPropagateDataFaultFlag.cc</a></li>
-    <li class="footer">Generated on Sat Feb 24 2024 04:54:14 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 22 2024 04:55:37 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
