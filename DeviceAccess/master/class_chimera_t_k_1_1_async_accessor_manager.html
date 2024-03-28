@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_async_accessor_m
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_async_accessor_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::AsyncAccessorManager Class Reference</div>  </div>
@@ -102,7 +103,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_async_accessor_m
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager__inherit__graph.svg" width="446" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager__inherit__graph.svg" width="100%" height="393"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -110,7 +111,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_async_accessor_m
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager__coll__graph.svg" width="100%" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager__coll__graph.svg" width="100%" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -135,9 +136,12 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afc1f453eebf338d4772dab36cfeaad23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#afc1f453eebf338d4772dab36cfeaad23">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (createAsyncVariable, std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html">AsyncVariable</a> &gt;(<a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a> const &amp;))</td></tr>
 <tr class="separator:afc1f453eebf338d4772dab36cfeaad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd989f47c1bfc3df60fd4326822047c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8">asyncVariableMapChanged</a> ()</td></tr>
-<tr class="memdesc:afd989f47c1bfc3df60fd4326822047c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">this virtual function lets derived classes react on subscribe / unsubscribe  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8">More...</a><br /></td></tr>
-<tr class="separator:afd989f47c1bfc3df60fd4326822047c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24dd667f9fc0f36c06161ea20e30c93b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a24dd667f9fc0f36c06161ea20e30c93b">asyncVariableMapChanged</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>)</td></tr>
+<tr class="memdesc:a24dd667f9fc0f36c06161ea20e30c93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This virtual function lets derived classes react on subscribe / unsubscribe.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#a24dd667f9fc0f36c06161ea20e30c93b">More...</a><br /></td></tr>
+<tr class="separator:a24dd667f9fc0f36c06161ea20e30c93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d3a0962b5a757a074901863c0d9b1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ad7d3a0962b5a757a074901863c0d9b1f">unsubscribeImpl</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> id)</td></tr>
+<tr class="memdesc:ad7d3a0962b5a757a074901863c0d9b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal helper function to avoid code duplication.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#ad7d3a0962b5a757a074901863c0d9b1f">More...</a><br /></td></tr>
+<tr class="separator:ad7d3a0962b5a757a074901863c0d9b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -147,6 +151,15 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a17bf48a5dc5b55cd93dcaa6b5381b124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a966755245dba486f71c338c0a9dabe"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_async_domain.html">AsyncDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a3a966755245dba486f71c338c0a9dabe">_asyncDomain</a></td></tr>
 <tr class="separator:a3a966755245dba486f71c338c0a9dabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4db63fba2e96e19776117195da34848"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#aa4db63fba2e96e19776117195da34848">_delayedUnsubscriptions</a></td></tr>
+<tr class="memdesc:aa4db63fba2e96e19776117195da34848"><td class="mdescLeft">&#160;</td><td class="mdescRight">If an unsubscription request is coming in while iterating the _asyncVariables container, we have to remember it and do it afterwards.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#aa4db63fba2e96e19776117195da34848">More...</a><br /></td></tr>
+<tr class="separator:aa4db63fba2e96e19776117195da34848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ac8673140dcbc8e191347a5c21b5eb4bd"><td class="memItemLeft" align="right" valign="top">static thread_local <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">AsyncAccessorManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac8673140dcbc8e191347a5c21b5eb4bd">_isHoldingDomainLock</a> {nullptr}</td></tr>
+<tr class="memdesc:ac8673140dcbc8e191347a5c21b5eb4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">We have to remember that we are holding the domain lock before we lock a weak pointer to an <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> inside the <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a> to resolve a race conditon: If all other owners go out of scope while we are distributing data or exceptions, releasing the weak pointer will call <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303" title="This function must only be called from the destructor of the AsyncNDRegisterAccessor which is created...">unsubscribe()</a>.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#ac8673140dcbc8e191347a5c21b5eb4bd">More...</a><br /></td></tr>
+<tr class="separator:ac8673140dcbc8e191347a5c21b5eb4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> has three main functionalities: </p>
@@ -224,8 +237,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd989f47c1bfc3df60fd4326822047c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd989f47c1bfc3df60fd4326822047c8">&#9670;&nbsp;</a></span>asyncVariableMapChanged()</h2>
+<a id="a24dd667f9fc0f36c06161ea20e30c93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24dd667f9fc0f36c06161ea20e30c93b">&#9670;&nbsp;</a></span>asyncVariableMapChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,6 +249,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void ChimeraTK::AsyncAccessorManager::asyncVariableMapChanged </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -247,9 +261,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>this virtual function lets derived classes react on subscribe / unsubscribe </p>
-
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#abae40ab43e5356eace7535e9884d2c39">ChimeraTK::TriggeredPollDistributor</a>.</p>
+<p>This virtual function lets derived classes react on subscribe / unsubscribe. </p>
 
 <p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00109">109</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -257,7 +269,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_afd989f47c1bfc3df60fd4326822047c8_icgraph.svg" width="520" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_a24dd667f9fc0f36c06161ea20e30c93b_icgraph.svg" width="100%" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -318,7 +330,15 @@ Protected Attributes</h2></td></tr>
 <p>Send an exception to all accessors. </p>
 <p>This automatically de-activates them. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00017">17</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00028">28</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_a63adeabcd93ad5ab5b8ce7cbffdae39a_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -365,12 +385,12 @@ template&lt;typename UserType &gt; </div>
 <p>Request a new subscription. </p>
 <p>This function internally creates the correct asynchronous accessor and a matching <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a>. A weak pointer to the <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> is registered in the <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a>, and a shared pointer is returned to the calling code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00184">184</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00226">226</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_a64a96ba4e1e67a14b1b7ceaab7b2d131_cgraph.svg" width="520" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -395,13 +415,59 @@ template&lt;typename UserType &gt; </div>
 
 <p>This function must only be called from the destructor of the <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> which is created in the subscribe function! </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00009">9</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00017">17</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_ac1896007e5233e8b957b112f30aea303_cgraph.svg" width="520" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_ac1896007e5233e8b957b112f30aea303_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad7d3a0962b5a757a074901863c0d9b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d3a0962b5a757a074901863c0d9b1f">&#9670;&nbsp;</a></span>unsubscribeImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::AsyncAccessorManager::unsubscribeImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal helper function to avoid code duplication. </p>
+
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00011">11</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_ad7d3a0962b5a757a074901863c0d9b1f_cgraph.svg" width="520" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_accessor_manager_ad7d3a0962b5a757a074901863c0d9b1f_icgraph.svg" width="456" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -480,6 +546,60 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="aa4db63fba2e96e19776117195da34848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4db63fba2e96e19776117195da34848">&#9670;&nbsp;</a></span>_delayedUnsubscriptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&gt; ChimeraTK::AsyncAccessorManager::_delayedUnsubscriptions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If an unsubscription request is coming in while iterating the _asyncVariables container, we have to remember it and do it afterwards. </p>
+
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00128">128</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+
+</div>
+</div>
+<a id="ac8673140dcbc8e191347a5c21b5eb4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8673140dcbc8e191347a5c21b5eb4bd">&#9670;&nbsp;</a></span>_isHoldingDomainLock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">thread_local <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">AsyncAccessorManager</a> * ChimeraTK::AsyncAccessorManager::_isHoldingDomainLock {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>We have to remember that we are holding the domain lock before we lock a weak pointer to an <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> inside the <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a> to resolve a race conditon: If all other owners go out of scope while we are distributing data or exceptions, releasing the weak pointer will call <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303" title="This function must only be called from the destructor of the AsyncNDRegisterAccessor which is created...">unsubscribe()</a>. </p>
+<p>In this case we must not try to get the domain lock again in unsubscribe because we are already holding it in this thread. This implementation was chosen as opposed to using a recursive mutex, because re-acquiring the recursive mutex might cause lock order inversion and possible dead locks if other locks are involved in backends that are not part of the core framework.</p>
+<p>The variable is holding a pointer to the actual instance of the <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> while distributing data or exceptions, and nullptr otherwise. </p>
+
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00123">123</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>device_backends/include/<a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a></li>
 <li>device_backends/src/<a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a></li>
@@ -490,7 +610,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">AsyncAccessorManager</a></li>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

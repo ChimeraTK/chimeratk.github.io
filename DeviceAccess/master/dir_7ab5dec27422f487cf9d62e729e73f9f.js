@@ -52,6 +52,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testTransferElement.cpp", "test_transfer_element_8cpp.html", "test_transfer_element_8cpp" ],
     [ "testTransferGroup.cpp", "test_transfer_group_8cpp.html", "test_transfer_group_8cpp" ],
     [ "testTypeChangingDecorator.cpp", "test_type_changing_decorator_8cpp.html", "test_type_changing_decorator_8cpp" ],
+    [ "testUioBackendUnified.cpp", "test_uio_backend_unified_8cpp.html", "test_uio_backend_unified_8cpp" ],
     [ "testUnifiedTypeChangingDecorator.cpp", "test_unified_type_changing_decorator_8cpp.html", "test_unified_type_changing_decorator_8cpp" ],
     [ "testUtilities.cpp", "test_utilities_8cpp.html", "test_utilities_8cpp" ],
     [ "testVersionNumber.cpp", "test_version_number_8cpp.html", "test_version_number_8cpp" ],

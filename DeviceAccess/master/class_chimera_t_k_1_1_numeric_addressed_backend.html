@@ -160,9 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acaf782d146c52f7e8a7de1193412ef98"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98">closeImpl</a> ()</td></tr>
 <tr class="memdesc:acaf782d146c52f7e8a7de1193412ef98"><td class="mdescLeft">&#160;</td><td class="mdescRight">All backends derrived from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a> must implement <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98" title="All backends derrived from NumericAddressedBackend must implement closeImpl() instead of close.">closeImpl()</a> instead of close.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98">More...</a><br /></td></tr>
 <tr class="separator:acaf782d146c52f7e8a7de1193412ef98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd3e01a95b03d16f5f45e35ccf1c1c7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#abd3e01a95b03d16f5f45e35ccf1c1c7b">startInterruptHandlingThread</a> (uint32_t interruptNumber)</td></tr>
-<tr class="memdesc:abd3e01a95b03d16f5f45e35ccf1c1c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called every time an accessor which is assicated with the particular primary interrupt number is created.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#abd3e01a95b03d16f5f45e35ccf1c1c7b">More...</a><br /></td></tr>
-<tr class="separator:abd3e01a95b03d16f5f45e35ccf1c1c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d8bbbf863fcd16d085009d763be35a"><td class="memItemLeft" align="right" valign="top">virtual std::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae6d8bbbf863fcd16d085009d763be35a">activateSubscription</a> (uint32_t interruptNumber)</td></tr>
+<tr class="memdesc:ae6d8bbbf863fcd16d085009d763be35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate/create the subscription for a given interrupt (for instance by starting the according interrupt handling thread).  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae6d8bbbf863fcd16d085009d763be35a">More...</a><br /></td></tr>
+<tr class="separator:ae6d8bbbf863fcd16d085009d763be35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914f3d006a694ead290a36dc961c3468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a914f3d006a694ead290a36dc961c3468">setExceptionImpl</a> () noexcept override</td></tr>
 <tr class="memdesc:a914f3d006a694ead290a36dc961c3468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the internal variable which remembers that async is active.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a914f3d006a694ead290a36dc961c3468">More...</a><br /></td></tr>
 <tr class="separator:a914f3d006a694ead290a36dc961c3468"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,13 +343,13 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00233">233</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00236">236</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_aad91568071e601c3100b79be077f532d_cgraph.svg" width="514" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_aad91568071e601c3100b79be077f532d_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -358,6 +358,49 @@ Friends</h2></td></tr>
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_aad91568071e601c3100b79be077f532d_icgraph.svg" width="503" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae6d8bbbf863fcd16d085009d763be35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d8bbbf863fcd16d085009d763be35a">&#9670;&nbsp;</a></span>activateSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::future&lt; void &gt; ChimeraTK::NumericAddressedBackend::activateSubscription </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>interruptNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activate/create the subscription for a given interrupt (for instance by starting the according interrupt handling thread). </p>
+<p>A future is returned. It becomes ready when the subscription is actually active (e.g. from inside the an interrupt handling thread after the initialisation sequence with the hardware is done).</p>
+<p>If the subscription already exists and is active, a ready future is returned.</p>
+<p>The function has an empty default implementation which returns a ready future. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a821520d7f23060a229f88ce839f04d51">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#aee7775c85295812ab6986990a7d16cc1">ChimeraTK::UioBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00254">254</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_ae6d8bbbf863fcd16d085009d763be35a_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -454,20 +497,20 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00252">252</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a96b922f10797d9186f0ce6918bd2da52_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00262">262</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a96b922f10797d9186f0ce6918bd2da52_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a96b922f10797d9186f0ce6918bd2da52_icgraph.svg" width="100%" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -503,11 +546,11 @@ Friends</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a97255f0fb2bac735b14d2cad046f0e36">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10">ChimeraTK::UioBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#ab0b70af8a8d1d6af720613779d580c76">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ad73bd103c459d6478b4fcc2c124167c0">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#ac13d557ec3c3a7859117d4454d6d6a22">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abfdb819786ab83322bf791432c21cda3">ChimeraTK::ExceptionDummy</a>, and <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a59585fbf3e12b8369284f26bdca11859">ChimeraTK::DummyBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00119">119</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_acaf782d146c52f7e8a7de1193412ef98_icgraph.svg" width="100%" height="579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -543,12 +586,12 @@ Friends</h2></td></tr>
 <p>Throws std::out_of_range if an invalid interruptNumber is given as parameter.</p>
 <dl class="section return"><dt>Returns</dt><dd>The version number that was send with all data in this interrupt. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00265">265</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00275">275</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a1eb55fcc4082f2d2407576cf1f63f89f_icgraph.svg" width="494" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -582,7 +625,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">ChimeraTK::DeviceBackendImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00285">285</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00294">294</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -635,12 +678,12 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00128">128</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a5395e67e4d9c77c09826a0adb572ec01_cgraph.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a5395e67e4d9c77c09826a0adb572ec01_cgraph.svg" width="100%" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -673,12 +716,12 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a517c358022e282864da357bc1b8dfd5e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00279">279</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00288">288</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a1b50f2e7460810b9cfac12f45c0aaab5_cgraph.svg" width="511" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -713,19 +756,19 @@ template&lt;typename UserType &gt; </div>
 <p>FIXME move into catalogue implementation, then make return type a const reference!</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00057">57</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a7600cc77c2eab2b3e8d82d4bf6a31e20_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a7600cc77c2eab2b3e8d82d4bf6a31e20_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a7600cc77c2eab2b3e8d82d4bf6a31e20_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -905,55 +948,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a68d180274f6f2982ad544e53d36f57ec">ChimeraTK::DeviceBackendImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00291">291</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a914f3d006a694ead290a36dc961c3468_icgraph.svg" width="503" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="abd3e01a95b03d16f5f45e35ccf1c1c7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd3e01a95b03d16f5f45e35ccf1c1c7b">&#9670;&nbsp;</a></span>startInterruptHandlingThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::NumericAddressedBackend::startInterruptHandlingThread </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>interruptNumber</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This function is called every time an accessor which is assicated with the particular primary interrupt number is created. </p>
-<p>The idea is to have a lazy initialisation of the interrupt handling threads, so only those threads are running for which accessors have been created. The function implementation must check whether the according thread is already running and should do nothing when called a second time.</p>
-<p>The function has an empty default implementation. </p>
-
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#ab0e40d5ceaa26350f1d378448c8d1f52">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a48e2e7495fd3a101368e5597360187fe">ChimeraTK::UioBackend</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00248">248</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00300">300</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_abd3e01a95b03d16f5f45e35ccf1c1c7b_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a914f3d006a694ead290a36dc961c3468_icgraph.svg" width="503" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1093,7 +1094,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00156">156</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00157">157</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1121,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 
 <p>metadata catalogue </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00143">143</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00144">144</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1145,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00140">140</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00141">141</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1169,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00139">139</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00140">140</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1195,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 
 <p>mutex for protecting unaligned access </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00146">146</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00147">147</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1219,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00152">152</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00153">153</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1243,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00153">153</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00154">154</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1257,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">NumericAddressedBackend</a></li>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

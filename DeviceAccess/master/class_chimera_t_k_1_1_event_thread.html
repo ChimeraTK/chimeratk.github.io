@@ -97,12 +97,12 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_event_thread.htm
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a259ad7c3236c9f0d120e1dcdca68983b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a259ad7c3236c9f0d120e1dcdca68983b">EventThread</a> ()=delete</td></tr>
 <tr class="separator:a259ad7c3236c9f0d120e1dcdca68983b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1ec22019ec6a0baeb2ec0b21057d29a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#ae1ec22019ec6a0baeb2ec0b21057d29a">EventThread</a> (<a class="el" href="class_chimera_t_k_1_1_event_file.html">EventFile</a> &amp;owner)</td></tr>
-<tr class="separator:ae1ec22019ec6a0baeb2ec0b21057d29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6096ffd287df505f12c05074f400de65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a6096ffd287df505f12c05074f400de65">EventThread</a> (<a class="el" href="class_chimera_t_k_1_1_event_file.html">EventFile</a> &amp;owner, std::promise&lt; void &gt; subscriptionDonePromise)</td></tr>
+<tr class="separator:a6096ffd287df505f12c05074f400de65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e93964080a3ec0d0ff5bae311ec9a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a15e93964080a3ec0d0ff5bae311ec9a2">~EventThread</a> ()</td></tr>
 <tr class="separator:a15e93964080a3ec0d0ff5bae311ec9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49d3bbec8a79020ec4914223a4accbcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a49d3bbec8a79020ec4914223a4accbcd">start</a> ()</td></tr>
-<tr class="separator:a49d3bbec8a79020ec4914223a4accbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643721ea68c1338db9f162f28c06719c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a643721ea68c1338db9f162f28c06719c">start</a> (std::promise&lt; void &gt; subscriptionDonePromise)</td></tr>
+<tr class="separator:a643721ea68c1338db9f162f28c06719c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ce135bf863cf864b59892f6d430215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a81ce135bf863cf864b59892f6d430215">waitForEvent</a> ()</td></tr>
 <tr class="separator:a81ce135bf863cf864b59892f6d430215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06b9703fdb41e167490f1462e6eac3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#aa06b9703fdb41e167490f1462e6eac3c">readEvent</a> (const boost::system::error_code &amp;ec)</td></tr>
@@ -139,8 +139,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1ec22019ec6a0baeb2ec0b21057d29a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1ec22019ec6a0baeb2ec0b21057d29a">&#9670;&nbsp;</a></span>EventThread() <span class="overload">[2/2]</span></h2>
+<a id="a6096ffd287df505f12c05074f400de65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6096ffd287df505f12c05074f400de65">&#9670;&nbsp;</a></span>EventThread() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,8 +149,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">ChimeraTK::EventThread::EventThread </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_event_file.html">EventFile</a> &amp;&#160;</td>
-          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::promise&lt; void &gt;&#160;</td>
+          <td class="paramname"><em>subscriptionDonePromise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -161,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_event_thread_ae1ec22019ec6a0baeb2ec0b21057d29a_cgraph.svg" width="414" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_event_thread_a6096ffd287df505f12c05074f400de65_cgraph.svg" width="414" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -182,7 +192,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00020">20</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00021">21</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -221,7 +231,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00060">60</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00064">64</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -257,7 +267,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00045">45</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00049">49</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -277,8 +287,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a49d3bbec8a79020ec4914223a4accbcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49d3bbec8a79020ec4914223a4accbcd">&#9670;&nbsp;</a></span>start()</h2>
+<a id="a643721ea68c1338db9f162f28c06719c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643721ea68c1338db9f162f28c06719c">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,19 +296,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::EventThread::start </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::promise&lt; void &gt;&#160;</td>
+          <td class="paramname"><em>subscriptionDonePromise</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00028">28</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00029">29</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_event_thread_a49d3bbec8a79020ec4914223a4accbcd_cgraph.svg" width="100%" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_event_thread_a643721ea68c1338db9f162f28c06719c_cgraph.svg" width="100%" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -319,7 +330,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00033">33</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_event_file_8cc_source.html#l00037">37</a> of file <a class="el" href="_event_file_8cc_source.html">EventFile.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -349,7 +360,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">EventThread</a></li>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

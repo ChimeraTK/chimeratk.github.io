@@ -91,10 +91,10 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_event_thread.htm
 <p>This is the complete list of members for <a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a259ad7c3236c9f0d120e1dcdca68983b">EventThread</a>()=delete</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#ae1ec22019ec6a0baeb2ec0b21057d29a">EventThread</a>(EventFile &amp;owner)</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a6096ffd287df505f12c05074f400de65">EventThread</a>(EventFile &amp;owner, std::promise&lt; void &gt; subscriptionDonePromise)</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a593420763262c46ef5b1db75c1f52e32">handleEvent</a>(const boost::system::error_code &amp;ec, std::size_t bytes_transferred)</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#aa06b9703fdb41e167490f1462e6eac3c">readEvent</a>(const boost::system::error_code &amp;ec)</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a49d3bbec8a79020ec4914223a4accbcd">start</a>()</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a643721ea68c1338db9f162f28c06719c">start</a>(std::promise&lt; void &gt; subscriptionDonePromise)</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a81ce135bf863cf864b59892f6d430215">waitForEvent</a>()</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html#a15e93964080a3ec0d0ff5bae311ec9a2">~EventThread</a>()</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_event_thread.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>_activateNewPushAccessors
 : <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a2e771a1661c54006b4c95b4dc9914aff">ChimeraTK::ExceptionDummy</a>
 </li>
+<li>_activationVersion
+: <a class="el" href="class_chimera_t_k_1_1_async_domain_impl.html#ac8c0194632a3e03f7053646f14afcc49">ChimeraTK::AsyncDomainImpl&lt; DistributorType, BackendDataType &gt;</a>
+</li>
 <li>_active
 : <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a4e126b88ba59cbf367c80110d28e8958">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>
 , <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a920dab8b2fdf856fdcf6d35c43f68470">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>
@@ -260,6 +263,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>_delay
 : <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a224f89e1795d805af1d527ab533118d1">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>
 </li>
+<li>_delayedUnsubscriptions
+: <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#aa4db63fba2e96e19776117195da34848">ChimeraTK::AsyncAccessorManager</a>
+</li>
 <li>_description
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a66f52cb447c14f6e01f716c3d040238e">ChimeraTK::TransferElement</a>
 </li>
@@ -397,8 +403,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a1a42fc668a7d9243dd024729737f35a7">ChimeraTK::TransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html#a365f5545a5dd929b773e68136ff118f2">ChimeraTK::TransferElementID</a>
 , <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html#abeaa7fbe02f2d44f736e10a6acd4eddc">ChimeraTK::TriggerDistributor</a>
-, <a class="el" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#ad82c13b1540c8fc37cfed49ebbcf8ed0">ChimeraTK::TriggeredPollDistributor</a>
-, <a class="el" href="class_chimera_t_k_1_1_variable_distributor.html#a10c5fe25c23c10be61b69b31fd31f92c">ChimeraTK::VariableDistributor&lt; SourceType &gt;</a>
 </li>
 <li>_impl
 : <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html#a1f68a525ba7c6e527c2072c449eee088">ChimeraTK::RegisterCatalogue</a>
@@ -433,6 +437,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>_isActive
 : <a class="el" href="class_chimera_t_k_1_1_async_domain.html#aab174b974bf10961a77faecf510a01a8">ChimeraTK::AsyncDomain</a>
 , <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html#aa34db67f140f9d8e4c461b9815e57738">ChimeraTK::ExceptionDummyPushDecoratorBase</a>
+</li>
+<li>_isHoldingDomainLock
+: <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac8673140dcbc8e191347a5c21b5eb4bd">ChimeraTK::AsyncAccessorManager</a>
 </li>
 <li>_isInTransferGroup
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aaa340a8029a130735f2412c1a60290d6">ChimeraTK::TransferElement</a>
@@ -733,7 +740,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#ae84dba57a10c149ff261297912c33bb3">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>
 </li>
 <li>_sourceBuffer
-: <a class="el" href="class_chimera_t_k_1_1_variable_distributor.html#af651cd9e9e0b95dd500a65ebccddf92d">ChimeraTK::VariableDistributor&lt; SourceType &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_source_typed_async_accessor_manager.html#aa7db856793499e7a75cdfbee8166279a">ChimeraTK::SourceTypedAsyncAccessorManager&lt; SourceType &gt;</a>
 </li>
 <li>_startAddress
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae200a521b133d9fe3c3929270a9f2f43">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
@@ -807,7 +814,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_decorator_test_accessor.html#a5f033c3fb73867f59a65736f3d07bb1c">DecoratorTestAccessor&lt; UserType &gt;</a>
 </li>
 <li>_transferGroup
-: <a class="el" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a3bc8d5bb2aa5026b8400a8eb3a6e4da6">ChimeraTK::TriggeredPollDistributor</a>
+: <a class="el" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#acf4730464b465500ff0feecfb246e6e5">ChimeraTK::TriggeredPollDistributor</a>
 </li>
 <li>_transferIndex
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html#a2b1bc949bb717e65a204d542fab174af">ChimeraTK::TransferElementTestAccessor&lt; UserType &gt;</a>
@@ -854,8 +861,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html#a410345297605e0aa109db3f4c213d50b">ChimeraTK::ExceptionDummyPushDecorator&lt; UserType &gt;::Buffer</a>
 , <a class="el" href="class_chimera_t_k_1_1_generic_async_variable.html#af3b6d65ed3a50b6f93992b2744b0deab">ChimeraTK::GenericAsyncVariable&lt; SourceType, UserType &gt;</a>
 , <a class="el" href="struct_chimera_t_k_1_1_polled_async_variable.html#a3ba8d1d9b2926af086da65bc871b7cdf">ChimeraTK::PolledAsyncVariable&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_triggered_poll_distributor.html#a00a010a90e894560321db761d9597199">ChimeraTK::TriggeredPollDistributor</a>
-, <a class="el" href="class_chimera_t_k_1_1_variable_distributor.html#af6f7929029729ed295ab9ac113f17125">ChimeraTK::VariableDistributor&lt; SourceType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_source_typed_async_accessor_manager.html#ac080a3b9a77e6218c82891b2e967699b">ChimeraTK::SourceTypedAsyncAccessorManager&lt; SourceType &gt;</a>
 </li>
 <li>_versionNumber
 : <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html#a9ad34f0c2eaec6be3dc385f1c4acef46">ChimeraTK::ExceptionDummyPollDecorator&lt; UserType &gt;</a>
@@ -910,7 +916,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

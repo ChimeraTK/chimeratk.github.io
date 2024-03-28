@@ -133,9 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62f358a0e1d3502f9a1d1d0c728ab40c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a62f358a0e1d3502f9a1d1d0c728ab40c">write</a> (uint64_t bar, uint64_t address, const int32_t *data, size_t sizeInBytes) override</td></tr>
 <tr class="memdesc:a62f358a0e1d3502f9a1d1d0c728ab40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write function to be implemented by backends.  <a href="class_chimera_t_k_1_1_xdma_backend.html#a62f358a0e1d3502f9a1d1d0c728ab40c">More...</a><br /></td></tr>
 <tr class="separator:a62f358a0e1d3502f9a1d1d0c728ab40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e40d5ceaa26350f1d378448c8d1f52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#ab0e40d5ceaa26350f1d378448c8d1f52">startInterruptHandlingThread</a> (uint32_t interruptNumber) override</td></tr>
-<tr class="memdesc:ab0e40d5ceaa26350f1d378448c8d1f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called every time an accessor which is assicated with the particular primary interrupt number is created.  <a href="class_chimera_t_k_1_1_xdma_backend.html#ab0e40d5ceaa26350f1d378448c8d1f52">More...</a><br /></td></tr>
-<tr class="separator:ab0e40d5ceaa26350f1d378448c8d1f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821520d7f23060a229f88ce839f04d51"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a821520d7f23060a229f88ce839f04d51">activateSubscription</a> (uint32_t interruptNumber) override</td></tr>
+<tr class="memdesc:a821520d7f23060a229f88ce839f04d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate/create the subscription for a given interrupt (for instance by starting the according interrupt handling thread).  <a href="class_chimera_t_k_1_1_xdma_backend.html#a821520d7f23060a229f88ce839f04d51">More...</a><br /></td></tr>
+<tr class="separator:a821520d7f23060a229f88ce839f04d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba237aeb88b4c9cd04c4711998912d08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aba237aeb88b4c9cd04c4711998912d08">readDeviceInfo</a> () override</td></tr>
 <tr class="memdesc:aba237aeb88b4c9cd04c4711998912d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="class_chimera_t_k_1_1_xdma_backend.html#aba237aeb88b4c9cd04c4711998912d08">More...</a><br /></td></tr>
 <tr class="separator:aba237aeb88b4c9cd04c4711998912d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,6 +317,49 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a821520d7f23060a229f88ce839f04d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821520d7f23060a229f88ce839f04d51">&#9670;&nbsp;</a></span>activateSubscription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::future&lt; void &gt; ChimeraTK::XdmaBackend::activateSubscription </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>interruptNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activate/create the subscription for a given interrupt (for instance by starting the according interrupt handling thread). </p>
+<p>A future is returned. It becomes ready when the subscription is actually active (e.g. from inside the an interrupt handling thread after the initialisation sequence with the hardware is done).</p>
+<p>If the subscription already exists and is active, a ready future is returned.</p>
+<p>The function has an empty default implementation which returns a ready future. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae6d8bbbf863fcd16d085009d763be35a">ChimeraTK::NumericAddressedBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00115">115</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a821520d7f23060a229f88ce839f04d51_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a97255f0fb2bac735b14d2cad046f0e36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97255f0fb2bac735b14d2cad046f0e36">&#9670;&nbsp;</a></span>closeImpl()</h2>
 
@@ -346,11 +389,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98">ChimeraTK::NumericAddressedBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00049">49</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a97255f0fb2bac735b14d2cad046f0e36_cgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -391,7 +434,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00144">144</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00150">150</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -412,21 +455,21 @@ Additional Inherited Members</h2></td></tr>
 <p>Throws std::out_of_range if an invalid interruptNumber is given as parameter.</p>
 <dl class="section return"><dt>Returns</dt><dd>The version number that was send with all data in this interrupt. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00166">166</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a1eb55fcc4082f2d2407576cf1f63f89f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00167">167</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a1eb55fcc4082f2d2407576cf1f63f89f_icgraph.svg" width="472" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a1eb55fcc4082f2d2407576cf1f63f89f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a1eb55fcc4082f2d2407576cf1f63f89f_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -457,11 +500,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a01d15c73dbcea086ba5b7eb2846a0528_icgraph.svg" width="448" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -496,12 +539,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ac9f608c0eafd7cb37f66290eb70f084d">ChimeraTK::DeviceBackendImpl</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00055">55</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_af33c71a4c02b4851548a65bb502939f7_icgraph.svg" width="472" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_af33c71a4c02b4851548a65bb502939f7_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -535,11 +578,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00018">18</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_a7e52f16c9e5f6a12aa67fe9575bef7c0_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -598,11 +641,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#afc3c29e05410f66513e88cecab73ac53">ChimeraTK::NumericAddressedBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00093">93</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_aa34dc7c4aedc136318af7515e5302b84_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -637,55 +680,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00131">131</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_aba237aeb88b4c9cd04c4711998912d08_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ab0e40d5ceaa26350f1d378448c8d1f52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0e40d5ceaa26350f1d378448c8d1f52">&#9670;&nbsp;</a></span>startInterruptHandlingThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::XdmaBackend::startInterruptHandlingThread </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>interruptNumber</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This function is called every time an accessor which is assicated with the particular primary interrupt number is created. </p>
-<p>The idea is to have a lazy initialisation of the interrupt handling threads, so only those threads are running for which accessors have been created. The function implementation must check whether the according thread is already running and should do nothing when called a second time.</p>
-<p>The function has an empty default implementation. </p>
-
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#abd3e01a95b03d16f5f45e35ccf1c1c7b">ChimeraTK::NumericAddressedBackend</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00115">115</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_xdma_backend_8cc_source.html#l00137">137</a> of file <a class="el" href="_xdma_backend_8cc_source.html">XdmaBackend.cc</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_ab0e40d5ceaa26350f1d378448c8d1f52_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_xdma_backend_aba237aeb88b4c9cd04c4711998912d08_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -764,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_xdma_backend.html">XdmaBackend</a></li>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

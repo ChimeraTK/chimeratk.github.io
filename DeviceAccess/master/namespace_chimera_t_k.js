@@ -71,6 +71,7 @@ var namespace_chimera_t_k =
     [ "AsyncVariable", "struct_chimera_t_k_1_1_async_variable.html", "struct_chimera_t_k_1_1_async_variable" ],
     [ "AccessorInstanceDescriptor", "struct_chimera_t_k_1_1_accessor_instance_descriptor.html", "struct_chimera_t_k_1_1_accessor_instance_descriptor" ],
     [ "AsyncAccessorManager", "class_chimera_t_k_1_1_async_accessor_manager.html", "class_chimera_t_k_1_1_async_accessor_manager" ],
+    [ "SourceTypedAsyncAccessorManager", "class_chimera_t_k_1_1_source_typed_async_accessor_manager.html", "class_chimera_t_k_1_1_source_typed_async_accessor_manager" ],
     [ "AsyncVariableImpl", "struct_chimera_t_k_1_1_async_variable_impl.html", "struct_chimera_t_k_1_1_async_variable_impl" ],
     [ "AsyncDomain", "class_chimera_t_k_1_1_async_domain.html", "class_chimera_t_k_1_1_async_domain" ],
     [ "AsyncDomainImpl", "class_chimera_t_k_1_1_async_domain_impl.html", "class_chimera_t_k_1_1_async_domain_impl" ],

@@ -106,132 +106,153 @@ $(document).ready(function(){initNavTree('_async_domain_impl_8h_source.html','')
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        std::function&lt;boost::shared_ptr&lt;DistributorType&gt;(boost::shared_ptr&lt;AsyncDomain&gt;)&gt; creatorFunction)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">_creatorFunction</a>(creatorFunction) {}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#ab33192278723b5e0274a2ce1be44d99a">distribute</a>(BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#abcf2b58d91b738d4a3df99b8914447e6">activate</a>(BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">deactivate</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">sendException</a>(<span class="keyword">const</span> std::exception_ptr&amp; e) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserDataType&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    boost::shared_ptr&lt;AsyncNDRegisterAccessor&lt;UserDataType&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">subscribe</a>(</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> name, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister, <a class="code" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Everything in this class is protected by the mutex from the AsyncDomain base class.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a51c5405f3ec497a9c74b7d07b1dd8231">   31</a></span>&#160;    boost::weak_ptr&lt;DistributorType&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a51c5405f3ec497a9c74b7d07b1dd8231">_distributor</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">   33</a></span>&#160;    std::function&lt;boost::shared_ptr&lt;DistributorType&gt;(boost::shared_ptr&lt;AsyncDomain&gt;)&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">_creatorFunction</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Data to resolve a race condition (see distribute and activate)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a09af1b0d5be96b2181a49283a593db29">   36</a></span>&#160;    BackendDataType <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a09af1b0d5be96b2181a49283a593db29">_notDistributedData</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a73a068fede36e6d875bccbf5fe5d47a1">   37</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a73a068fede36e6d875bccbf5fe5d47a1">_notDistributedVersion</a>{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  };</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#ab33192278723b5e0274a2ce1be44d99a">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#ab33192278723b5e0274a2ce1be44d99a">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::distribute</a>(BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::lock_guard l(_mutex);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(!_isActive) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="comment">// Store the data. We might need it later if the data in activate is older due to a race condition</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      _notDistributedData = data;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      _notDistributedVersion = version;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#afc5f80da5e47f03d6769d9b69755aee7">distribute</a>(BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version = <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{<span class="keyword">nullptr</span>});</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    VersionNumber <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#af2eaabddd39b9bae8a488971a9c30441">activate</a>(BackendDataType data, VersionNumber version = VersionNumber{<span class="keyword">nullptr</span>});</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">deactivate</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">sendException</a>(<span class="keyword">const</span> std::exception_ptr&amp; e) noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    distributor-&gt;distribute(data, version);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserDataType&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    boost::shared_ptr&lt;AsyncNDRegisterAccessor&lt;UserDataType&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">subscribe</a>(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        RegisterPath name, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister, AccessModeFlags flags);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Everything in this class is protected by the mutex from the AsyncDomain base class.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a51c5405f3ec497a9c74b7d07b1dd8231">   59</a></span>&#160;    boost::weak_ptr&lt;DistributorType&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a51c5405f3ec497a9c74b7d07b1dd8231">_distributor</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">   61</a></span>&#160;    std::function&lt;boost::shared_ptr&lt;DistributorType&gt;(boost::shared_ptr&lt;AsyncDomain&gt;)&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">_creatorFunction</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#abcf2b58d91b738d4a3df99b8914447e6">   64</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#abcf2b58d91b738d4a3df99b8914447e6">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::activate</a>(BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::lock_guard l(_mutex);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    _isActive = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Data to resolve a race condition (see distribute and activate)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a09af1b0d5be96b2181a49283a593db29">   64</a></span>&#160;    BackendDataType <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a09af1b0d5be96b2181a49283a593db29">_notDistributedData</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a73a068fede36e6d875bccbf5fe5d47a1">   65</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a73a068fede36e6d875bccbf5fe5d47a1">_notDistributedVersion</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#ac8c0194632a3e03f7053646f14afcc49">   66</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#ac8c0194632a3e03f7053646f14afcc49">_activationVersion</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span>(version &gt;= _notDistributedVersion) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      distributor-&gt;activate(data, version);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="comment">// due to a race condition, data has already been tried to</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      distributor-&gt;activate(_notDistributedData, _notDistributedVersion);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">   86</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::deactivate</a>() {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::lock_guard l(_mutex);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    _isActive = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">   95</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::sendException</a>(<span class="keyword">const</span> std::exception_ptr&amp; e) noexcept {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::lock_guard l(_mutex);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(!_isActive) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="comment">// don&#39;t send exceptions if async read is off</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    _isActive = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    distributor-&gt;sendException(e);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserDataType&gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">  116</a></span>&#160;  boost::shared_ptr&lt;AsyncNDRegisterAccessor&lt;UserDataType&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::subscribe</a>(</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> name, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister, <a class="code" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::lock_guard l(_mutex);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      distributor = _creatorFunction(shared_from_this());</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      _distributor = distributor;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> distributor-&gt;template subscribe&lt;UserDataType&gt;(name, numberOfWords, wordOffsetInRegister, flags);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#afc5f80da5e47f03d6769d9b69755aee7">   72</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#afc5f80da5e47f03d6769d9b69755aee7">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::distribute</a>(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::lock_guard l(_mutex);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// everything incl. potential creation of a new version number must happen under the lock</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span>(version == <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>(<span class="keyword">nullptr</span>)) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      version = {};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span>(!_isActive) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="comment">// Store the data. We might need it later if the data in activate is older due to a race condition.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      _notDistributedData = data;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      _notDistributedVersion = version;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span>(version &lt; _activationVersion) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    distributor-&gt;distribute(data, version);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> version;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#af2eaabddd39b9bae8a488971a9c30441">  103</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#af2eaabddd39b9bae8a488971a9c30441">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::activate</a>(</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      BackendDataType data, <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::lock_guard l(_mutex);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// everything incl. potential creation of a new version number must happen under the lock</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span>(version == <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>(<span class="keyword">nullptr</span>)) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      version = {};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    _isActive = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span>(version &gt;= _notDistributedVersion) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      distributor-&gt;activate(data, version);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      _activationVersion = version;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="comment">// Due to a race condition, it has been tried to distribute newer data before activate was called.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      distributor-&gt;activate(_notDistributedData, _notDistributedVersion);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      _activationVersion = _notDistributedVersion;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> _activationVersion;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">  133</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::deactivate</a>() {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    std::lock_guard l(_mutex);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    _isActive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">  142</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::sendException</a>(<span class="keyword">const</span> std::exception_ptr&amp; e) noexcept {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    std::lock_guard l(_mutex);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span>(!_isActive) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="comment">// don&#39;t send exceptions if async read is off</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    _isActive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    distributor-&gt;sendException(e);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> DistributorType, <span class="keyword">typename</span> BackendDataType&gt;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> UserDataType&gt;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">  163</a></span>&#160;  boost::shared_ptr&lt;AsyncNDRegisterAccessor&lt;UserDataType&gt;&gt; <a class="code" href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">AsyncDomainImpl&lt;DistributorType, BackendDataType&gt;::subscribe</a>(</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> name, <span class="keywordtype">size_t</span> numberOfWords, <span class="keywordtype">size_t</span> wordOffsetInRegister, <a class="code" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    std::lock_guard l(_mutex);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">auto</span> distributor = _distributor.lock();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(!distributor) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      distributor = _creatorFunction(shared_from_this());</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      _distributor = distributor;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">return</span> distributor-&gt;template subscribe&lt;UserDataType&gt;(name, numberOfWords, wordOffsetInRegister, flags);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_async_domain_8h_html"><div class="ttname"><a href="_async_domain_8h.html">AsyncDomain.h</a></div></div>
 <div class="ttc" id="a_async_n_d_register_accessor_8h_html"><div class="ttname"><a href="_async_n_d_register_accessor_8h.html">AsyncNDRegisterAccessor.h</a></div></div>
 <div class="ttc" id="a_version_number_8h_html"><div class="ttname"><a href="_version_number_8h.html">VersionNumber.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_access_mode_flags_html"><div class="ttname"><a href="class_chimera_t_k_1_1_access_mode_flags.html">ChimeraTK::AccessModeFlags</a></div><div class="ttdoc">Set of AccessMode flags with additional functionality for an easier handling.</div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00048">AccessMode.h:48</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_html"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain.html">ChimeraTK::AsyncDomain</a></div><div class="ttdoc">The AsyncDomain is the thread-safe entry point for each distribution tree.</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_8h_source.html#l00025">AsyncDomain.h:25</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html">ChimeraTK::AsyncDomainImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00014">AsyncDomainImpl.h:14</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a09af1b0d5be96b2181a49283a593db29"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a09af1b0d5be96b2181a49283a593db29">ChimeraTK::AsyncDomainImpl::_notDistributedData</a></div><div class="ttdeci">BackendDataType _notDistributedData</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00036">AsyncDomainImpl.h:36</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a51c5405f3ec497a9c74b7d07b1dd8231"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a51c5405f3ec497a9c74b7d07b1dd8231">ChimeraTK::AsyncDomainImpl::_distributor</a></div><div class="ttdeci">boost::weak_ptr&lt; DistributorType &gt; _distributor</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00031">AsyncDomainImpl.h:31</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a6dae139e9547bf6c0617064cc1584181"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">ChimeraTK::AsyncDomainImpl::subscribe</a></div><div class="ttdeci">boost::shared_ptr&lt; AsyncNDRegisterAccessor&lt; UserDataType &gt; &gt; subscribe(RegisterPath name, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags)</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00116">AsyncDomainImpl.h:116</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a73a068fede36e6d875bccbf5fe5d47a1"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a73a068fede36e6d875bccbf5fe5d47a1">ChimeraTK::AsyncDomainImpl::_notDistributedVersion</a></div><div class="ttdeci">VersionNumber _notDistributedVersion</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00037">AsyncDomainImpl.h:37</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a7b8e576323b6a3f57af00d167d61b185"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">ChimeraTK::AsyncDomainImpl::sendException</a></div><div class="ttdeci">void sendException(const std::exception_ptr &amp;e) noexcept override</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00095">AsyncDomainImpl.h:95</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a09af1b0d5be96b2181a49283a593db29"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a09af1b0d5be96b2181a49283a593db29">ChimeraTK::AsyncDomainImpl::_notDistributedData</a></div><div class="ttdeci">BackendDataType _notDistributedData</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00064">AsyncDomainImpl.h:64</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a51c5405f3ec497a9c74b7d07b1dd8231"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a51c5405f3ec497a9c74b7d07b1dd8231">ChimeraTK::AsyncDomainImpl::_distributor</a></div><div class="ttdeci">boost::weak_ptr&lt; DistributorType &gt; _distributor</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00059">AsyncDomainImpl.h:59</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a6dae139e9547bf6c0617064cc1584181"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a6dae139e9547bf6c0617064cc1584181">ChimeraTK::AsyncDomainImpl::subscribe</a></div><div class="ttdeci">boost::shared_ptr&lt; AsyncNDRegisterAccessor&lt; UserDataType &gt; &gt; subscribe(RegisterPath name, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags)</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00163">AsyncDomainImpl.h:163</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a73a068fede36e6d875bccbf5fe5d47a1"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a73a068fede36e6d875bccbf5fe5d47a1">ChimeraTK::AsyncDomainImpl::_notDistributedVersion</a></div><div class="ttdeci">VersionNumber _notDistributedVersion</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00065">AsyncDomainImpl.h:65</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a7b8e576323b6a3f57af00d167d61b185"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a7b8e576323b6a3f57af00d167d61b185">ChimeraTK::AsyncDomainImpl::sendException</a></div><div class="ttdeci">void sendException(const std::exception_ptr &amp;e) noexcept override</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00142">AsyncDomainImpl.h:142</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_a9988d9d557cb25c58816ac5d24eade67"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#a9988d9d557cb25c58816ac5d24eade67">ChimeraTK::AsyncDomainImpl::AsyncDomainImpl</a></div><div class="ttdeci">AsyncDomainImpl(std::function&lt; boost::shared_ptr&lt; DistributorType &gt;(boost::shared_ptr&lt; AsyncDomain &gt;)&gt; creatorFunction)</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00016">AsyncDomainImpl.h:16</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_aa149c681438a5e4f7ad091495ea15faa"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">ChimeraTK::AsyncDomainImpl::deactivate</a></div><div class="ttdeci">void deactivate()</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00086">AsyncDomainImpl.h:86</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_aa8e4725c7efbe357a2a1bb6786b9cbc7"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">ChimeraTK::AsyncDomainImpl::_creatorFunction</a></div><div class="ttdeci">std::function&lt; boost::shared_ptr&lt; DistributorType &gt;boost::shared_ptr&lt; AsyncDomain &gt;)&gt; _creatorFunction</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00033">AsyncDomainImpl.h:33</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_ab33192278723b5e0274a2ce1be44d99a"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#ab33192278723b5e0274a2ce1be44d99a">ChimeraTK::AsyncDomainImpl::distribute</a></div><div class="ttdeci">void distribute(BackendDataType data, VersionNumber version)</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00043">AsyncDomainImpl.h:43</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_abcf2b58d91b738d4a3df99b8914447e6"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#abcf2b58d91b738d4a3df99b8914447e6">ChimeraTK::AsyncDomainImpl::activate</a></div><div class="ttdeci">void activate(BackendDataType data, VersionNumber version)</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00064">AsyncDomainImpl.h:64</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_aa149c681438a5e4f7ad091495ea15faa"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#aa149c681438a5e4f7ad091495ea15faa">ChimeraTK::AsyncDomainImpl::deactivate</a></div><div class="ttdeci">void deactivate()</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00133">AsyncDomainImpl.h:133</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_aa8e4725c7efbe357a2a1bb6786b9cbc7"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#aa8e4725c7efbe357a2a1bb6786b9cbc7">ChimeraTK::AsyncDomainImpl::_creatorFunction</a></div><div class="ttdeci">std::function&lt; boost::shared_ptr&lt; DistributorType &gt;boost::shared_ptr&lt; AsyncDomain &gt;)&gt; _creatorFunction</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00061">AsyncDomainImpl.h:61</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_ac8c0194632a3e03f7053646f14afcc49"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#ac8c0194632a3e03f7053646f14afcc49">ChimeraTK::AsyncDomainImpl::_activationVersion</a></div><div class="ttdeci">VersionNumber _activationVersion</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00066">AsyncDomainImpl.h:66</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_af2eaabddd39b9bae8a488971a9c30441"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#af2eaabddd39b9bae8a488971a9c30441">ChimeraTK::AsyncDomainImpl::activate</a></div><div class="ttdeci">VersionNumber activate(BackendDataType data, VersionNumber version=VersionNumber{nullptr})</div><div class="ttdoc">Activate and distribute the initial value.</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00103">AsyncDomainImpl.h:103</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_async_domain_impl_html_afc5f80da5e47f03d6769d9b69755aee7"><div class="ttname"><a href="class_chimera_t_k_1_1_async_domain_impl.html#afc5f80da5e47f03d6769d9b69755aee7">ChimeraTK::AsyncDomainImpl::distribute</a></div><div class="ttdeci">VersionNumber distribute(BackendDataType data, VersionNumber version=VersionNumber{nullptr})</div><div class="ttdoc">Distribute the data via the associated distribution tree.</div><div class="ttdef"><b>Definition:</b> <a href="_async_domain_impl_8h_source.html#l00072">AsyncDomainImpl.h:72</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_register_path_html"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html">ChimeraTK::RegisterPath</a></div><div class="ttdoc">Class to store a register path name.</div><div class="ttdef"><b>Definition:</b> <a href="_register_path_8h_source.html#l00016">RegisterPath.h:16</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_version_number_html"><div class="ttname"><a href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a></div><div class="ttdoc">Class for generating and holding version numbers without exposing a numeric representation.</div><div class="ttdef"><b>Definition:</b> <a href="_version_number_8h_source.html#l00023">VersionNumber.h:23</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
@@ -241,7 +262,7 @@ $(document).ready(function(){initNavTree('_async_domain_impl_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_f6c06f7a01da37196a5f6fe3a6212106.html">include</a></li><li class="navelem"><a class="el" href="_async_domain_impl_8h.html">AsyncDomainImpl.h</a></li>
-    <li class="footer">Generated on Fri Mar 22 2024 04:53:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 28 2024 04:53:19 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

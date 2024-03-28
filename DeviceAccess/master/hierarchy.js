@@ -243,8 +243,12 @@ var hierarchy =
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
     [ "boost::enable_shared_from_this", null, [
       [ "ChimeraTK::AsyncAccessorManager", "class_chimera_t_k_1_1_async_accessor_manager.html", [
-        [ "ChimeraTK::TriggeredPollDistributor", "class_chimera_t_k_1_1_triggered_poll_distributor.html", null ],
-        [ "ChimeraTK::VariableDistributor< SourceType >", "class_chimera_t_k_1_1_variable_distributor.html", null ]
+        [ "ChimeraTK::SourceTypedAsyncAccessorManager< std::nullptr_t >", "class_chimera_t_k_1_1_source_typed_async_accessor_manager.html", [
+          [ "ChimeraTK::TriggeredPollDistributor", "class_chimera_t_k_1_1_triggered_poll_distributor.html", null ]
+        ] ],
+        [ "ChimeraTK::SourceTypedAsyncAccessorManager< SourceType >", "class_chimera_t_k_1_1_source_typed_async_accessor_manager.html", [
+          [ "ChimeraTK::VariableDistributor< SourceType >", "class_chimera_t_k_1_1_variable_distributor.html", null ]
+        ] ]
       ] ],
       [ "ChimeraTK::AsyncDomain", "class_chimera_t_k_1_1_async_domain.html", [
         [ "ChimeraTK::AsyncDomainImpl< DistributorType, BackendDataType >", "class_chimera_t_k_1_1_async_domain_impl.html", null ]
@@ -451,6 +455,7 @@ var hierarchy =
     [ "RawToCookedProvider_Var1", "struct_raw_to_cooked_provider___var1.html", null ],
     [ "RawToCookedProvider_Var2", "struct_raw_to_cooked_provider___var2.html", null ],
     [ "RawToCookedProvider_x", "struct_raw_to_cooked_provider__x.html", null ],
+    [ "RawUioAccess", "class_raw_uio_access.html", null ],
     [ "ChimeraTK::ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html", null ],
     [ "ChimeraTK::RebotDummyServer", "class_chimera_t_k_1_1_rebot_dummy_server.html", null ],
     [ "ChimeraTK::RebotProtocolImplementor", "struct_chimera_t_k_1_1_rebot_protocol_implementor.html", [
@@ -620,6 +625,13 @@ var hierarchy =
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, Void >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< Void, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html", null ],
+    [ "ScalarDescriptor< Derived >", "struct_scalar_descriptor.html", null ],
+    [ "ScalarDescriptor< Scalar32 >", "struct_scalar_descriptor.html", [
+      [ "Scalar32", "struct_scalar32.html", null ]
+    ] ],
+    [ "ScalarDescriptor< Scalar32Async >", "struct_scalar_descriptor.html", [
+      [ "Scalar32Async", "struct_scalar32_async.html", null ]
+    ] ],
     [ "ChimeraTK::Sdm", "struct_chimera_t_k_1_1_sdm.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html", null ],
