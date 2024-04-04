@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['cache_30',['Cache',['../namespace_cache.html',1,'']]],
-  ['cache_5ffile_2emd_31',['cache_file.md',['../cache__file_8md.html',1,'']]],
-  ['cachefile_20mechanism_32',['CacheFile Mechanism',['../cache_file.html',1,'']]],
-  ['cachefile1_33',['cacheFile1',['../class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8',1,'DoocsLauncher']]],
-  ['cachefile2_34',['cacheFile2',['../class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213',1,'DoocsLauncher']]],
-  ['capabilities_35',['capabilities',['../struct_reg_some_int.html#a9c6ca3e1d00c7fe84b0003383ae2ef71',1,'RegSomeInt::capabilities()'],['../struct_reg_some_zmq_int.html#adda5e9005e32155c915a0c7a7ce48211',1,'RegSomeZmqInt::capabilities()'],['../struct_reg_some_ro_int.html#aeb695268f9854c26f587fcfb87a1ffaa',1,'RegSomeRoInt::capabilities()'],['../struct_all_register_defaults.html#a3dbfc8d80a0e95fda5d688d943dda53a',1,'AllRegisterDefaults::capabilities()']]],
+  ['cache_29',['Cache',['../namespace_cache.html',1,'']]],
+  ['cache_5ffile_2emd_30',['cache_file.md',['../cache__file_8md.html',1,'']]],
+  ['cachefile_20mechanism_31',['CacheFile Mechanism',['../cache_file.html',1,'']]],
+  ['cachefile1_32',['cacheFile1',['../class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8',1,'DoocsLauncher']]],
+  ['cachefile2_33',['cacheFile2',['../class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213',1,'DoocsLauncher']]],
+  ['callfordoocstype_34',['callForDoocsType',['../class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html#a2eccf40884d4a6529765d6010844b0fe',1,'ChimeraTK::DoocsBackendNumericRegisterAccessor']]],
+  ['capabilities_35',['capabilities',['../struct_reg_some_ro_int.html#aeb695268f9854c26f587fcfb87a1ffaa',1,'RegSomeRoInt::capabilities()'],['../struct_reg_some_zmq_int.html#adda5e9005e32155c915a0c7a7ce48211',1,'RegSomeZmqInt::capabilities()'],['../struct_reg_some_int.html#a9c6ca3e1d00c7fe84b0003383ae2ef71',1,'RegSomeInt::capabilities()'],['../struct_all_register_defaults.html#a3dbfc8d80a0e95fda5d688d943dda53a',1,'AllRegisterDefaults::capabilities()']]],
   ['cataloguecache_2ecc_36',['CatalogueCache.cc',['../_catalogue_cache_8cc.html',1,'']]],
   ['cataloguecache_2eh_37',['CatalogueCache.h',['../_catalogue_cache_8h.html',1,'']]],
   ['cataloguefetcher_38',['CatalogueFetcher',['../class_catalogue_fetcher.html',1,'CatalogueFetcher'],['../class_catalogue_fetcher.html#afb5786c28daa677ac1b96fad5cc070a3',1,'CatalogueFetcher::CatalogueFetcher()']]],
@@ -17,8 +18,10 @@ var searchData=
   ['chimeratk_5fdeviceaccess_5fcreatebackend_44',['ChimeraTK_DeviceAccess_createBackend',['../_doocs_backend_8cc.html#a1e5283f539ef6b54a7bd9201b0473d3f',1,'DoocsBackend.cc']]],
   ['clone_45',['clone',['../class_doocs_backend_register_info.html#a8ddba2fe18759f38fa4a6bf5befd68e2',1,'DoocsBackendRegisterInfo']]],
   ['close_46',['close',['../class_chimera_t_k_1_1_doocs_backend.html#aa0b104650a279c02f853d7a7f6e07f48',1,'ChimeraTK::DoocsBackend']]],
-  ['counter_47',['counter',['../classeq__dummy.html#a2d1cc1d49a8c5b47120606630e44ae1c',1,'eq_dummy']]],
-  ['createdummyxml_48',['createDummyXml',['../test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11',1,'testDoocsBackend.cpp']]],
-  ['createinstance_49',['createInstance',['../class_chimera_t_k_1_1_doocs_backend.html#a6858ec1a1833cc69444017506e68fb62',1,'ChimeraTK::DoocsBackend']]],
-  ['doocsbackendnamespace_50',['DoocsBackendNamespace',['../namespace_chimera_t_k_1_1_doocs_backend_namespace.html',1,'ChimeraTK']]]
+  ['code_47',['code',['../classeq__dummy.html#a8753732d4e87e87f7a7d998c7d6233e5',1,'eq_dummy']]],
+  ['counter_48',['counter',['../classeq__dummy.html#a2d1cc1d49a8c5b47120606630e44ae1c',1,'eq_dummy']]],
+  ['createdummyxml_49',['createDummyXml',['../test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11',1,'testDoocsBackend.cpp']]],
+  ['createinstance_50',['createInstance',['../class_chimera_t_k_1_1_doocs_backend.html#a6858ec1a1833cc69444017506e68fb62',1,'ChimeraTK::DoocsBackend']]],
+  ['createserver_51',['createServer',['../classeq__dummy.html#a35ca000c3d9182b86d4be0c2a1d26988',1,'eq_dummy']]],
+  ['doocsbackendnamespace_52',['DoocsBackendNamespace',['../namespace_chimera_t_k_1_1_doocs_backend_namespace.html',1,'ChimeraTK']]]
 ];

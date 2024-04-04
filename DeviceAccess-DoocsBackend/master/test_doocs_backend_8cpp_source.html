@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1">   39</a></span>&#160;  <a class="code" href="class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1">DoocsLauncher</a>()</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  : ThreadedDoocsServer(<span class="stringliteral">&quot;testDoocsBackend.conf&quot;</span>, boost::unit_test::framework::master_test_suite().argc,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        boost::unit_test::framework::master_test_suite().argv) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        boost::unit_test::framework::master_test_suite().argv, <a class="code" href="classeq__dummy.html">eq_dummy</a>::createServer()) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    rpc_no = rpcNo();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// use different cache files for each run to avoid conflicts (RPC numbers are protected by lock)</span></div>
@@ -179,39 +179,39 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">   90</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testScalarInt) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  ChimeraTK::Device device;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  BOOST_CHECK(device.isOpened() == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  BOOST_TEST(device.isOpened() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  BOOST_CHECK(device.isOpened() == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  BOOST_TEST(device.isOpened() == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  TwoDRegisterAccessor&lt;int32_t&gt; acc_someInt_as_int(device.getTwoDRegisterAccessor&lt;int32_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  BOOST_CHECK(acc_someInt_as_int.getVersionNumber() == VersionNumber{nullptr});</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  BOOST_TEST(acc_someInt_as_int.getVersionNumber() == VersionNumber{nullptr});</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  BOOST_CHECK(acc_someInt_as_int.getNChannels() == 1);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  BOOST_CHECK(acc_someInt_as_int.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNChannels() == 1);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  acc_someInt_as_int.read();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  BOOST_CHECK(acc_someInt_as_int[0][0] == 42);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  BOOST_TEST(acc_someInt_as_int[0][0] == 42);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 120);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  BOOST_CHECK(acc_someInt_as_int[0][0] == 42);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  BOOST_TEST(acc_someInt_as_int[0][0] == 42);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="comment">// auto oldVersion = acc_someInt_as_int.getVersionNumber();</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  acc_someInt_as_int.read();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  BOOST_CHECK(acc_someInt_as_int[0][0] == 120);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someInt_as_int.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  BOOST_TEST(acc_someInt_as_int[0][0] == 120);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// BOOST_TEST(acc_someInt_as_int.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// properties set through RPC call</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  acc_someInt_as_int[0][0] = 1234;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  acc_someInt_as_int.write(nextVersion);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  BOOST_CHECK(acc_someInt_as_int.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  BOOST_TEST(acc_someInt_as_int.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 42);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  TwoDRegisterAccessor&lt;double&gt; acc_someInt_as_double(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  BOOST_CHECK(acc_someInt_as_double.getNChannels() == 1);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  BOOST_CHECK(acc_someInt_as_double.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  BOOST_TEST(acc_someInt_as_double.getNChannels() == 1);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  BOOST_TEST(acc_someInt_as_double.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  acc_someInt_as_double.read();</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  BOOST_CHECK_CLOSE(acc_someInt_as_double[0][0], 42, 0.001);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
@@ -222,15 +222,15 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  BOOST_CHECK_CLOSE(acc_someInt_as_double[0][0], 120, 0.001);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  acc_someInt_as_double[0][0] = 1234.3;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  acc_someInt_as_double.write();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 42);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  TwoDRegisterAccessor&lt;float&gt; acc_someInt_as_float(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  BOOST_CHECK(acc_someInt_as_float.getNChannels() == 1);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  BOOST_CHECK(acc_someInt_as_float.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  BOOST_TEST(acc_someInt_as_float.getNChannels() == 1);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  BOOST_TEST(acc_someInt_as_float.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  acc_someInt_as_float.read();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  BOOST_CHECK_CLOSE(acc_someInt_as_float[0][0], 42, 0.001);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
@@ -241,32 +241,32 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  BOOST_CHECK_CLOSE(acc_someInt_as_float[0][0], 120, 0.001);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  acc_someInt_as_float[0][0] = 1233.9;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  acc_someInt_as_float.write();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 42);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  TwoDRegisterAccessor&lt;std::string&gt; acc_someInt_as_string(</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      device.getTwoDRegisterAccessor&lt;std::string&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  BOOST_CHECK(acc_someInt_as_string.getNChannels() == 1);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  BOOST_CHECK(acc_someInt_as_string.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  BOOST_TEST(acc_someInt_as_string.getNChannels() == 1);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  BOOST_TEST(acc_someInt_as_string.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  acc_someInt_as_string.read();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  BOOST_CHECK(acc_someInt_as_string[0][0] == <span class="stringliteral">&quot;42&quot;</span>);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  BOOST_TEST(acc_someInt_as_string[0][0] == <span class="stringliteral">&quot;42&quot;</span>);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 120);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  BOOST_CHECK(acc_someInt_as_string[0][0] == <span class="stringliteral">&quot;42&quot;</span>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  BOOST_TEST(acc_someInt_as_string[0][0] == <span class="stringliteral">&quot;42&quot;</span>);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  acc_someInt_as_string.read();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  BOOST_CHECK(acc_someInt_as_string[0][0] == <span class="stringliteral">&quot;120&quot;</span>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  BOOST_TEST(acc_someInt_as_string[0][0] == <span class="stringliteral">&quot;120&quot;</span>);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  acc_someInt_as_string[0][0] = <span class="stringliteral">&quot;1234&quot;</span>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 120);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  acc_someInt_as_string.write();</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 1234);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  device.close();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  BOOST_CHECK(device.isOpened() == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  BOOST_TEST(device.isOpened() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
@@ -276,8 +276,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  TwoDRegisterAccessor&lt;float&gt; acc_someFloat_as_float(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  BOOST_CHECK(acc_someFloat_as_float.getNChannels() == 1);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  BOOST_CHECK(acc_someFloat_as_float.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  BOOST_TEST(acc_someFloat_as_float.getNChannels() == 1);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  BOOST_TEST(acc_someFloat_as_float.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  acc_someFloat_as_float.read();</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  BOOST_CHECK_CLOSE(acc_someFloat_as_float[0][0], 3.1415, 0.00001);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">// auto oldVersion = acc_someFloat_as_float.getVersionNumber();</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  acc_someFloat_as_float.read();</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  BOOST_CHECK_CLOSE(acc_someFloat_as_float[0][0], 123.456, 0.00001);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someFloat_as_float.getVersionNumber() == oldVersion);// DOOCS behaves differently, eventId == 0 for</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">// BOOST_TEST(acc_someFloat_as_float.getVersionNumber() == oldVersion);// DOOCS behaves differently, eventId == 0 for</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">// properties set through RPC call</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  acc_someFloat_as_float[0][0] = 666.333;</div>
@@ -295,13 +295,13 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  acc_someFloat_as_float.write(nextVersion);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  BOOST_CHECK_CLOSE(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>), 666.333, 0.00001);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  BOOST_CHECK(acc_someFloat_as_float.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  BOOST_TEST(acc_someFloat_as_float.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>, 3.1415);</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  TwoDRegisterAccessor&lt;double&gt; acc_someFloat_as_double(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  BOOST_CHECK(acc_someFloat_as_double.getNChannels() == 1);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  BOOST_CHECK(acc_someFloat_as_double.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  BOOST_TEST(acc_someFloat_as_double.getNChannels() == 1);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  BOOST_TEST(acc_someFloat_as_double.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  acc_someFloat_as_double.read();</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  BOOST_CHECK_CLOSE(acc_someFloat_as_double[0][0], 3.1415, 0.00001);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
@@ -319,16 +319,16 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>, 3.1415);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someFloat_as_int(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  BOOST_CHECK(acc_someFloat_as_int.getNChannels() == 1);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  BOOST_CHECK(acc_someFloat_as_int.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  BOOST_TEST(acc_someFloat_as_int.getNChannels() == 1);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  BOOST_TEST(acc_someFloat_as_int.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  acc_someFloat_as_int.read();</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  BOOST_CHECK(acc_someFloat_as_int[0][0] == 3);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  BOOST_TEST(acc_someFloat_as_int[0][0] == 3);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>, 119.9);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  BOOST_CHECK(acc_someFloat_as_int[0][0] == 3);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  BOOST_TEST(acc_someFloat_as_int[0][0] == 3);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  acc_someFloat_as_int.read();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  BOOST_CHECK(acc_someFloat_as_int[0][0] == 120);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  BOOST_TEST(acc_someFloat_as_int[0][0] == 120);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  acc_someFloat_as_int[0][0] = 1234;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  BOOST_CHECK_CLOSE(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>), 119.9, 0.00001);</div>
@@ -339,8 +339,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  TwoDRegisterAccessor&lt;std::string&gt; acc_someFloat_as_string(</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      device.getTwoDRegisterAccessor&lt;std::string&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  BOOST_CHECK(acc_someFloat_as_string.getNChannels() == 1);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  BOOST_CHECK(acc_someFloat_as_string.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  BOOST_TEST(acc_someFloat_as_string.getNChannels() == 1);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  BOOST_TEST(acc_someFloat_as_string.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  acc_someFloat_as_string.read();</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  BOOST_CHECK_CLOSE(std::stod(acc_someFloat_as_string[0][0]), 3.1415, 0.00001);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
@@ -348,7 +348,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  BOOST_CHECK_CLOSE(std::stod(acc_someFloat_as_string[0][0]), 3.1415, 0.00001);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  acc_someFloat_as_string.read();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  BOOST_CHECK(acc_someFloat_as_string[0][0] == <span class="stringliteral">&quot;120&quot;</span>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  BOOST_TEST(acc_someFloat_as_string[0][0] == <span class="stringliteral">&quot;120.000000&quot;</span>);</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  acc_someFloat_as_string[0][0] = <span class="stringliteral">&quot;1234.5678&quot;</span>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  BOOST_CHECK_CLOSE(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>), 120, 0.00001);</div>
@@ -365,8 +365,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  TwoDRegisterAccessor&lt;float&gt; acc_someDouble_as_float(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_DOUBLE&quot;</span>));</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  BOOST_CHECK(acc_someDouble_as_float.getNChannels() == 1);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  BOOST_CHECK(acc_someDouble_as_float.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  BOOST_TEST(acc_someDouble_as_float.getNChannels() == 1);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  BOOST_TEST(acc_someDouble_as_float.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  acc_someDouble_as_float.read();</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  BOOST_CHECK_CLOSE(acc_someDouble_as_float[0][0], 2.8, 0.00001);</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
@@ -376,7 +376,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="comment">// auto oldVersion = acc_someDouble_as_float.getVersionNumber();</span></div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  acc_someDouble_as_float.read();</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  BOOST_CHECK_CLOSE(acc_someDouble_as_float[0][0], 123.456, 0.00001);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someDouble_as_float.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="comment">// BOOST_TEST(acc_someDouble_as_float.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="comment">// for properties set through RPC call</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  acc_someDouble_as_float[0][0] = 666.333;</div>
@@ -384,13 +384,13 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  acc_someDouble_as_float.write(nextVersion);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  BOOST_CHECK_CLOSE(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_DOUBLE&quot;</span>), 666.333, 0.00001);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  BOOST_CHECK(acc_someDouble_as_float.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  BOOST_TEST(acc_someDouble_as_float.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_DOUBLE&quot;</span>, 3.1415);</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  TwoDRegisterAccessor&lt;double&gt; acc_someDouble_as_double(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_DOUBLE&quot;</span>));</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  BOOST_CHECK(acc_someDouble_as_double.getNChannels() == 1);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  BOOST_CHECK(acc_someDouble_as_double.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  BOOST_TEST(acc_someDouble_as_double.getNChannels() == 1);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  BOOST_TEST(acc_someDouble_as_double.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  acc_someDouble_as_double.read();</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  BOOST_CHECK_CLOSE(acc_someDouble_as_double[0][0], 3.1415, 0.00001);</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
@@ -408,16 +408,16 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>, 3.1415);</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someDouble_as_int(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  BOOST_CHECK(acc_someDouble_as_int.getNChannels() == 1);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  BOOST_CHECK(acc_someDouble_as_int.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  BOOST_TEST(acc_someDouble_as_int.getNChannels() == 1);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  BOOST_TEST(acc_someDouble_as_int.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  acc_someDouble_as_int.read();</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  BOOST_CHECK(acc_someDouble_as_int[0][0] == 3);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  BOOST_TEST(acc_someDouble_as_int[0][0] == 3);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>, 119.9);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  BOOST_CHECK(acc_someDouble_as_int[0][0] == 3);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  BOOST_TEST(acc_someDouble_as_int[0][0] == 3);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  acc_someDouble_as_int.read();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  BOOST_CHECK(acc_someDouble_as_int[0][0] == 120);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  BOOST_TEST(acc_someDouble_as_int[0][0] == 120);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  acc_someDouble_as_int[0][0] = 1234;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  BOOST_CHECK_CLOSE(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>), 119.9, 0.00001);</div>
@@ -428,8 +428,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  TwoDRegisterAccessor&lt;std::string&gt; acc_someDouble_as_string(</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      device.getTwoDRegisterAccessor&lt;std::string&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  BOOST_CHECK(acc_someDouble_as_string.getNChannels() == 1);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  BOOST_CHECK(acc_someDouble_as_string.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  BOOST_TEST(acc_someDouble_as_string.getNChannels() == 1);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  BOOST_TEST(acc_someDouble_as_string.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  acc_someDouble_as_string.read();</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  BOOST_CHECK_CLOSE(std::stod(acc_someDouble_as_string[0][0]), 3.1415, 0.00001);</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
@@ -437,7 +437,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  BOOST_CHECK_CLOSE(std::stod(acc_someDouble_as_string[0][0]), 3.1415, 0.00001);</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  acc_someDouble_as_string.read();</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  BOOST_CHECK(acc_someDouble_as_string[0][0] == <span class="stringliteral">&quot;120&quot;</span>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  BOOST_TEST(acc_someDouble_as_string[0][0] == <span class="stringliteral">&quot;120.000000&quot;</span>);</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  acc_someDouble_as_string[0][0] = <span class="stringliteral">&quot;1234.5678&quot;</span>;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  BOOST_CHECK_CLOSE(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT&quot;</span>), 120, 0.00001);</div>
@@ -454,25 +454,25 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  TwoDRegisterAccessor&lt;std::string&gt; acc_someString(device.getTwoDRegisterAccessor&lt;std::string&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_STRING&quot;</span>));</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  BOOST_CHECK(acc_someString.getNChannels() == 1);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  BOOST_CHECK(acc_someString.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  BOOST_TEST(acc_someString.getNChannels() == 1);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  BOOST_TEST(acc_someString.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">auto</span> oldVersion = acc_someString.getVersionNumber();</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  acc_someString.read();</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  BOOST_CHECK(acc_someString[0][0] == <span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span>);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  BOOST_CHECK(acc_someString.getVersionNumber() != oldVersion);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  BOOST_TEST(acc_someString[0][0] == <span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span>);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  BOOST_TEST(acc_someString.getVersionNumber() != oldVersion);</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_STRING&quot;</span>, <span class="stringliteral">&quot;Something else.&quot;</span>);</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  BOOST_CHECK(acc_someString[0][0] == <span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span>);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  BOOST_TEST(acc_someString[0][0] == <span class="stringliteral">&quot;The quick brown fox jumps over the lazy dog.&quot;</span>);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  acc_someString.read();</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  BOOST_CHECK(acc_someString[0][0] == <span class="stringliteral">&quot;Something else.&quot;</span>);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  BOOST_TEST(acc_someString[0][0] == <span class="stringliteral">&quot;Something else.&quot;</span>);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  acc_someString[0][0] = <span class="stringliteral">&quot;Even different!&quot;</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;std::string&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STRING&quot;</span>) == <span class="stringliteral">&quot;Something else.&quot;</span>);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;std::string&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STRING&quot;</span>) == <span class="stringliteral">&quot;Something else.&quot;</span>);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  acc_someString.write(nextVersion);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;std::string&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STRING&quot;</span>) == <span class="stringliteral">&quot;Even different!&quot;</span>);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  BOOST_CHECK(acc_someString.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;std::string&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STRING&quot;</span>) == <span class="stringliteral">&quot;Even different!&quot;</span>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  BOOST_TEST(acc_someString.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  device.close();</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
@@ -484,30 +484,30 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 42);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 42);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_CHECK(acc_someArray[0][i] == 3 * i + 120);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_TEST(acc_someArray[0][i] == 3 * i + 120);</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  std::vector&lt;int&gt; vals(42);</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) vals[i] = -55 * i;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>, vals);</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_CHECK(acc_someArray[0][i] == 3 * i + 120);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_TEST(acc_someArray[0][i] == 3 * i + 120);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="comment">// auto oldVersion = acc_someArray.getVersionNumber();</span></div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_CHECK(acc_someArray[0][i] == -55 * i);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_TEST(acc_someArray[0][i] == -55 * i);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="comment">// BOOST_TEST(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="comment">// properties set through RPC call</span></div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) acc_someArray[0][i] = i - 21;</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_CHECK(vals[i] == -55 * i);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_TEST(vals[i] == -55 * i);</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  acc_someArray.write(nextVersion);</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_CHECK(vals[i] == i - 21);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) BOOST_TEST(vals[i] == i - 21);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="comment">// access via double</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  TwoDRegisterAccessor&lt;double&gt; acc_someArrayAsDouble(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT_ARRAY&quot;</span>));</div>
@@ -526,7 +526,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) acc_someArrayAsString[0][i] = std::to_string(3 * i);</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  acc_someArrayAsString.write();</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(vals[i] == 3 * i);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(vals[i] == 3 * i);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  device.close();</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;}</div>
@@ -538,31 +538,31 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_SHORT_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 5);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 5);</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArray[0][i] == 10 + i);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArray[0][i] == 10 + i);</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  std::vector&lt;short&gt; vals(5);</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) vals[i] = -55 * i;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_SHORT_ARRAY&quot;</span>, vals);</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArray[0][i] == 10 + i);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArray[0][i] == 10 + i);</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="comment">// auto oldVersion = acc_someArray.getVersionNumber();</span></div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArray[0][i] == -55 * i);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArray[0][i] == -55 * i);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <span class="comment">// BOOST_TEST(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="comment">// properties set through RPC call</span></div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  std::vector&lt;int&gt; vals2(5);</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) acc_someArray[0][i] = i - 21;</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  vals2 = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_SHORT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(vals2[i] == -55 * i);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(vals2[i] == -55 * i);</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  acc_someArray.write(nextVersion);</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  vals2 = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_SHORT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(vals2[i] == i - 21);</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(vals2[i] == i - 21);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  device.close();</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
@@ -574,31 +574,31 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_LONG_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 5);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 5);</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArray[0][i] == 10 + i);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArray[0][i] == 10 + i);</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  std::vector&lt;int64_t&gt; vals(5);</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) vals[i] = -55 * i;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_LONG_ARRAY&quot;</span>, vals);</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArray[0][i] == 10 + i);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArray[0][i] == 10 + i);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="comment">// auto oldVersion = acc_someArray.getVersionNumber();</span></div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArray[0][i] == -55 * i);</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArray[0][i] == -55 * i);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">// BOOST_TEST(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="comment">// properties set through RPC call</span></div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  std::vector&lt;int&gt; vals2(5);</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) acc_someArray[0][i] = i - 21;</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  vals2 = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_LONG_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(vals2[i] == -55 * i);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(vals2[i] == -55 * i);</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  acc_someArray.write(nextVersion);</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  vals2 = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_LONG_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(vals2[i] == i - 21);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(vals2[i] == i - 21);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160; </div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  device.close();</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;}</div>
@@ -610,12 +610,12 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  TwoDRegisterAccessor&lt;float&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 5);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 5);</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keyword">auto</span> oldVersion = acc_someArray.getVersionNumber();</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  acc_someArray.read();</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK_CLOSE(acc_someArray[0][i], i / 1000., 0.00001);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() != oldVersion);</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() != oldVersion);</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  std::vector&lt;float&gt; vals(5);</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) vals[i] = -3.14159265 * i;</div>
@@ -632,7 +632,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  acc_someArray.write(nextVersion);</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;float&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_FLOAT_ARRAY&quot;</span>);</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK_CLOSE(vals[i], 2. / (i + 0.01), 0.00001);</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  device.close();</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;}</div>
@@ -644,12 +644,12 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160; </div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  TwoDRegisterAccessor&lt;double&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_DOUBLE_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 5);</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 5);</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  <span class="keyword">auto</span> oldVersion = acc_someArray.getVersionNumber();</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  acc_someArray.read();</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK_CLOSE(acc_someArray[0][i], i / 333., 0.00001);</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() != oldVersion);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() != oldVersion);</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  std::vector&lt;double&gt; vals(5);</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) vals[i] = -3.14159265 * i;</div>
@@ -666,12 +666,12 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  acc_someArray.write(nextVersion);</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;double&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_DOUBLE_ARRAY&quot;</span>);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK_CLOSE(vals[i], 2. / (i + 0.01), 0.00001);</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160; </div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="comment">// access via int</span></div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someArrayAsInt(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_DOUBLE_ARRAY&quot;</span>));</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  acc_someArrayAsInt.read();</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_CHECK(acc_someArrayAsInt[0][i] == round(2. / (i + 0.01)));</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) BOOST_TEST(acc_someArrayAsInt[0][i] == round(2. / (i + 0.01)));</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) acc_someArrayAsInt[0][i] = 2 * i;</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  acc_someArrayAsInt.write();</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;double&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_DOUBLE_ARRAY&quot;</span>);</div>
@@ -697,12 +697,12 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  TwoDRegisterAccessor&lt;float&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_SPECTRUM&quot;</span>));</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 100);</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 100);</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="keyword">auto</span> oldVersion = acc_someArray.getVersionNumber();</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  acc_someArray.read();</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 100; i++) BOOST_CHECK_CLOSE(acc_someArray[0][i], i / 42., 0.00001);</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() != oldVersion);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() != oldVersion);</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;  device.close();</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;}</div>
@@ -714,30 +714,30 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someArray(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_IIII&quot;</span>));</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  BOOST_CHECK(acc_someArray.getNChannels() == 1);</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;  BOOST_CHECK(acc_someArray.getNElementsPerChannel() == 4);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  BOOST_TEST(acc_someArray.getNChannels() == 1);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;  BOOST_TEST(acc_someArray.getNElementsPerChannel() == 4);</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_CHECK(acc_someArray[0][i] == 10 + i);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_TEST(acc_someArray[0][i] == 10 + i);</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160; </div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  std::vector&lt;int&gt; vals(4);</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) vals[i] = -55 * i;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  DoocsServerTestHelper::doocsSetIIII(<span class="stringliteral">&quot;//MYDUMMY/SOME_IIII&quot;</span>, vals);</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_CHECK(acc_someArray[0][i] == 10 + i);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_TEST(acc_someArray[0][i] == 10 + i);</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  <span class="comment">// auto oldVersion = acc_someArray.getVersionNumber();</span></div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  acc_someArray.read();</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_CHECK(acc_someArray[0][i] == -55 * i);</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="comment">// BOOST_CHECK(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_TEST(acc_someArray[0][i] == -55 * i);</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="comment">// BOOST_TEST(acc_someArray.getVersionNumber() == oldVersion); // DOOCS behaves differently, eventId == 0 for</span></div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <span class="comment">// properties set through RPC call</span></div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) acc_someArray[0][i] = i - 21;</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_IIII&quot;</span>);</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_CHECK(vals[i] == -55 * i);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_TEST(vals[i] == -55 * i);</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  acc_someArray.write(nextVersion);</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_IIII&quot;</span>);</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_CHECK(vals[i] == i - 21);</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  BOOST_CHECK(acc_someArray.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_TEST(vals[i] == i - 21);</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  BOOST_TEST(acc_someArray.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  <span class="comment">// access via double</span></div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  TwoDRegisterAccessor&lt;double&gt; acc_someArrayAsDouble(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_IIII&quot;</span>));</div>
@@ -756,7 +756,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) acc_someArrayAsString[0][i] = std::to_string(3 * i);</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  acc_someArrayAsString.write();</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_IIII&quot;</span>);</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_CHECK(vals[i] == 3 * i);</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; i++) BOOST_TEST(vals[i] == 3 * i);</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  device.close();</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;}</div>
@@ -773,15 +773,15 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <span class="keyword">auto</span> regF1 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F1&quot;</span>);</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  <span class="keyword">auto</span> regF2 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F2&quot;</span>);</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  <span class="keyword">auto</span> regF3 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F3&quot;</span>);</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  BOOST_CHECK(regI.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  BOOST_CHECK(regI.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  BOOST_CHECK(regI.getDataDescriptor().nDigits() == 11);</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  BOOST_CHECK(!regF1.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  BOOST_CHECK(regF1.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  BOOST_CHECK(!regF2.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  BOOST_CHECK(regF2.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  BOOST_CHECK(!regF3.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  BOOST_CHECK(regF3.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  BOOST_TEST(regI.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  BOOST_TEST(regI.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  BOOST_TEST(regI.getDataDescriptor().nDigits() == 11);</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  BOOST_TEST(!regF1.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  BOOST_TEST(regF1.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  BOOST_TEST(!regF2.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  BOOST_TEST(regF2.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  BOOST_TEST(!regF3.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  BOOST_TEST(regF3.getDataDescriptor().isSigned());</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160; </div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="comment">// read access via int/float</span></div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  {</div>
@@ -876,7 +876,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  <span class="comment">// obtain accessor with larger than default array length</span></div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  OneDRegisterAccessor&lt;std::uint8_t&gt; acc_someImage_padded(</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;      device.getOneDRegisterAccessor&lt;std::uint8_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_IMAGE&quot;</span>, 200 * 1000));</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  BOOST_CHECK(acc_someImage_padded.getNElements() == 200 * 1000);</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  BOOST_TEST(acc_someImage_padded.getNElements() == 200 * 1000);</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  acc_someImage_padded.read();</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="comment">// verify that image content is same</span></div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0; i &lt; im.header()-&gt;totalLength; i++) {</div>
@@ -904,54 +904,54 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  TwoDRegisterAccessor&lt;int&gt; acc_someStatus(device.getTwoDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_STATUS&quot;</span>));</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  TwoDRegisterAccessor&lt;uint16_t&gt; acc_someStatusU16(device.getTwoDRegisterAccessor&lt;uint16_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_STATUS&quot;</span>));</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160; </div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  BOOST_CHECK(acc_someBit.getNChannels() == 1);</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;  BOOST_CHECK(acc_someStatus.getNChannels() == 1);</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  BOOST_CHECK(acc_someBit.getNElementsPerChannel() == 1);</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  BOOST_CHECK(acc_someStatus.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  BOOST_TEST(acc_someBit.getNChannels() == 1);</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;  BOOST_TEST(acc_someStatus.getNChannels() == 1);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  BOOST_TEST(acc_someBit.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  BOOST_TEST(acc_someStatus.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160; </div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <span class="keyword">auto</span> oldVersion = acc_someBit.getVersionNumber();</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  acc_someBit.read();</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  BOOST_CHECK(acc_someBit[0][0] == 1);</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  BOOST_CHECK(acc_someBit.getVersionNumber() != oldVersion);</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  BOOST_TEST(acc_someBit[0][0] == 1);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  BOOST_TEST(acc_someBit.getVersionNumber() != oldVersion);</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;  oldVersion = acc_someStatus.getVersionNumber();</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;  acc_someStatus.read();</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  BOOST_CHECK(acc_someStatus[0][0] == 3);</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  BOOST_CHECK(acc_someStatus.getVersionNumber() != oldVersion);</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  BOOST_TEST(acc_someStatus[0][0] == 3);</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  BOOST_TEST(acc_someStatus.getVersionNumber() != oldVersion);</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160; </div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_BIT&quot;</span>, 0);</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  BOOST_CHECK(acc_someBit[0][0] == 1);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  BOOST_TEST(acc_someBit[0][0] == 1);</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  acc_someBit.read();</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  BOOST_CHECK(acc_someBit[0][0] == 0);</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  BOOST_CHECK(acc_someStatus[0][0] == 3);</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  BOOST_TEST(acc_someBit[0][0] == 0);</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  BOOST_TEST(acc_someStatus[0][0] == 3);</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  acc_someStatus.read();</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  BOOST_CHECK(acc_someStatus[0][0] == 2);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  BOOST_TEST(acc_someStatus[0][0] == 2);</div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>, 0xFFFF);</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160; </div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  BOOST_CHECK(acc_someBit[0][0] == 0);</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  BOOST_TEST(acc_someBit[0][0] == 0);</div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  acc_someBit.read();</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  BOOST_CHECK(acc_someBit[0][0] == 1);</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  BOOST_CHECK(acc_someStatus[0][0] == 2);</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  BOOST_TEST(acc_someBit[0][0] == 1);</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  BOOST_TEST(acc_someStatus[0][0] == 2);</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  acc_someStatus.read();</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  BOOST_CHECK(acc_someStatus[0][0] == 0xFFFF);</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  BOOST_TEST(acc_someStatus[0][0] == 0xFFFF);</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160; </div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  acc_someStatusU16.read();</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  BOOST_CHECK(acc_someStatusU16[0][0] == 0xFFFF);</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  BOOST_TEST(acc_someStatusU16[0][0] == 0xFFFF);</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160; </div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  acc_someBit[0][0] = 0;</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 0xFFFF);</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 0xFFFF);</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  VersionNumber nextVersion;</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  acc_someBit.write(nextVersion);</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 0xFFFE);</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  BOOST_CHECK(acc_someBit.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 0xFFFE);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  BOOST_TEST(acc_someBit.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160; </div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  acc_someStatus[0][0] = 123;</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 0xFFFE);</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 0xFFFE);</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  nextVersion = {};</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  acc_someStatus.write(nextVersion);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 123);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  BOOST_CHECK(acc_someStatus.getVersionNumber() == nextVersion);</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_STATUS&quot;</span>) == 123);</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  BOOST_TEST(acc_someStatus.getVersionNumber() == nextVersion);</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160; </div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  device.close();</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;}</div>
@@ -964,24 +964,24 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="comment">// int array, 20 elements, offset of 1</span></div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  {</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    OneDRegisterAccessor&lt;int&gt; acc_someArray(device.getOneDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT_ARRAY&quot;</span>, 20, 1));</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    BOOST_CHECK(acc_someArray.getNElements() == 20);</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    BOOST_TEST(acc_someArray.getNElements() == 20);</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160; </div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    std::vector&lt;int&gt; vals(42);</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) vals[i] = -55 * i;</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>, vals);</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160; </div>
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    acc_someArray.read();</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 20; i++) BOOST_CHECK(acc_someArray[i] == -55 * (i + 1));</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 20; i++) BOOST_TEST(acc_someArray[i] == -55 * (i + 1));</div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160; </div>
 <div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 20; i++) acc_someArray[i] = i;</div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    acc_someArray.write();</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>);</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) {</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;      <span class="keywordflow">if</span>(i == 0 || i &gt; 20) {</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        BOOST_CHECK(vals[i] == -55 * i);</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        BOOST_TEST(vals[i] == -55 * i);</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;      }</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        BOOST_CHECK(vals[i] == i - 1);</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        BOOST_TEST(vals[i] == i - 1);</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      }</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    }</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  }</div>
@@ -989,24 +989,24 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;  <span class="comment">// int array, 1 elements, offset of 10</span></div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;  {</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    OneDRegisterAccessor&lt;int&gt; acc_someArray(device.getOneDRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT_ARRAY&quot;</span>, 1, 10));</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    BOOST_CHECK(acc_someArray.getNElements() == 1);</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    BOOST_TEST(acc_someArray.getNElements() == 1);</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160; </div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    std::vector&lt;int&gt; vals(42);</div>
 <div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) vals[i] = 33 * i;</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>, vals);</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160; </div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    acc_someArray.read();</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    BOOST_CHECK(acc_someArray[0] == 33 * 10);</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    BOOST_TEST(acc_someArray[0] == 33 * 10);</div>
 <div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160; </div>
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    acc_someArray[0] = 42;</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    acc_someArray.write();</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    vals = DoocsServerTestHelper::doocsGetArray&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT_ARRAY&quot;</span>);</div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 42; i++) {</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;      <span class="keywordflow">if</span>(i == 10) {</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        BOOST_CHECK(vals[i] == 42);</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        BOOST_TEST(vals[i] == 42);</div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;      }</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        BOOST_CHECK(vals[i] == 33 * i);</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        BOOST_TEST(vals[i] == 33 * i);</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;      }</div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    }</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  }</div>
@@ -1014,7 +1014,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;  <span class="comment">// double array with float user type, 3 elements, offset of 2</span></div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  {</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    OneDRegisterAccessor&lt;float&gt; acc_someArray(device.getOneDRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_DOUBLE_ARRAY&quot;</span>, 3, 2));</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    BOOST_CHECK(acc_someArray.getNElements() == 3);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    BOOST_TEST(acc_someArray.getNElements() == 3);</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160; </div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    std::vector&lt;double&gt; vals(5);</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) vals[i] = 3.14 * i;</div>
@@ -1122,89 +1122,89 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160; </div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; catalogue : catalogueList2) {</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;      <span class="comment">// check number of registers, but not with the exact number, since DOOCS adds some registers!</span></div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;      BOOST_CHECK(catalogue.getNumberOfRegisters() &gt; 13);</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;      BOOST_TEST(catalogue.getNumberOfRegisters() &gt; 13);</div>
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160; </div>
 <div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;      <span class="comment">// check for the presence of known registers</span></div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_FLOAT&quot;</span>));</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_DOUBLE&quot;</span>));</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_STRING&quot;</span>));</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_STATUS&quot;</span>));</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_BIT&quot;</span>));</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>));</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>));</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/I&quot;</span>));</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/F1&quot;</span>));</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/F2&quot;</span>));</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/F3&quot;</span>));</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_INT&quot;</span>));</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_FLOAT&quot;</span>));</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_DOUBLE&quot;</span>));</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_STRING&quot;</span>));</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_STATUS&quot;</span>));</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_BIT&quot;</span>));</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>));</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>));</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>));</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>));</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>));</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>));</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/I&quot;</span>));</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/F1&quot;</span>));</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/F2&quot;</span>));</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;SOME_IFFF/F3&quot;</span>));</div>
 <div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160; </div>
 <div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;      <span class="comment">// check the properties of some registers</span></div>
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;      <span class="keyword">auto</span> r1 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_INT&quot;</span>);</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;      BOOST_CHECK(r1.getRegisterName() == <span class="stringliteral">&quot;SOME_INT&quot;</span>);</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;      BOOST_CHECK(r1.getNumberOfElements() == 1);</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;      BOOST_CHECK(r1.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;      BOOST_CHECK(r1.getNumberOfDimensions() == 0);</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;      BOOST_CHECK(not r1.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;      BOOST_TEST(r1.getRegisterName() == <span class="stringliteral">&quot;SOME_INT&quot;</span>);</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;      BOOST_TEST(r1.getNumberOfElements() == 1);</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;      BOOST_TEST(r1.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;      BOOST_TEST(r1.getNumberOfDimensions() == 0);</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;      BOOST_TEST(not r1.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160; </div>
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;      <span class="keyword">auto</span> r2 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_STRING&quot;</span>);</div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;      BOOST_CHECK(r2.getRegisterName() == <span class="stringliteral">&quot;SOME_STRING&quot;</span>);</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;      BOOST_CHECK(r2.getNumberOfElements() == 1);</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;      BOOST_CHECK(r2.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;      BOOST_CHECK(r2.getNumberOfDimensions() == 0);</div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;      BOOST_CHECK(not r2.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;      BOOST_TEST(r2.getRegisterName() == <span class="stringliteral">&quot;SOME_STRING&quot;</span>);</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;      BOOST_TEST(r2.getNumberOfElements() == 1);</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;      BOOST_TEST(r2.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;      BOOST_TEST(r2.getNumberOfDimensions() == 0);</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;      BOOST_TEST(not r2.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160; </div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;      <span class="keyword">auto</span> r3 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;      BOOST_CHECK(r3.getRegisterName() == <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;      BOOST_CHECK(r3.getNumberOfElements() == 42);</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;      BOOST_CHECK(r3.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;      BOOST_CHECK(r3.getNumberOfDimensions() == 1);</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;      BOOST_CHECK(not r3.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;      BOOST_TEST(r3.getRegisterName() == <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>);</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;      BOOST_TEST(r3.getNumberOfElements() == 42);</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;      BOOST_TEST(r3.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;      BOOST_TEST(r3.getNumberOfDimensions() == 1);</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;      BOOST_TEST(not r3.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160; </div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;      <span class="keyword">auto</span> r4 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;      BOOST_CHECK(r4.getRegisterName() == <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>);</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;      BOOST_CHECK(r4.getNumberOfElements() == 5);</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;      BOOST_CHECK(r4.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;      BOOST_CHECK(r4.getNumberOfDimensions() == 1);</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;      BOOST_CHECK(not r4.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;      BOOST_TEST(r4.getRegisterName() == <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>);</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;      BOOST_TEST(r4.getNumberOfElements() == 5);</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;      BOOST_TEST(r4.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;      BOOST_TEST(r4.getNumberOfDimensions() == 1);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;      BOOST_TEST(not r4.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160; </div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;      <span class="keyword">auto</span> r5 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>);</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;      BOOST_CHECK(r5.getRegisterName() == <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>);</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      BOOST_CHECK(r5.getNumberOfElements() == 100);</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;      BOOST_CHECK(r5.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;      BOOST_CHECK(r5.getNumberOfDimensions() == 1);</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;      BOOST_CHECK(not r5.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;      BOOST_TEST(r5.getRegisterName() == <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>);</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      BOOST_TEST(r5.getNumberOfElements() == 100);</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;      BOOST_TEST(r5.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;      BOOST_TEST(r5.getNumberOfDimensions() == 1);</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;      BOOST_TEST(not r5.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160; </div>
 <div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;      <span class="keyword">auto</span> r6 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_ZMQINT&quot;</span>);</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;      BOOST_CHECK(r6.getRegisterName() == <span class="stringliteral">&quot;SOME_ZMQINT&quot;</span>);</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;      BOOST_CHECK(r6.getNumberOfElements() == 1);</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;      BOOST_CHECK(r6.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;      BOOST_CHECK(r6.getNumberOfDimensions() == 0);</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;      BOOST_CHECK(r6.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;      BOOST_TEST(r6.getRegisterName() == <span class="stringliteral">&quot;SOME_ZMQINT&quot;</span>);</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;      BOOST_TEST(r6.getNumberOfElements() == 1);</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;      BOOST_TEST(r6.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;      BOOST_TEST(r6.getNumberOfDimensions() == 0);</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;      BOOST_TEST(r6.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160; </div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;      <span class="keyword">auto</span> r7 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_IIII&quot;</span>);</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;      BOOST_CHECK(r7.getRegisterName() == <span class="stringliteral">&quot;SOME_IIII&quot;</span>);</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;      BOOST_CHECK(r7.getNumberOfElements() == 4);</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;      BOOST_CHECK(r7.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;      BOOST_CHECK(r7.getNumberOfDimensions() == 1);</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;      BOOST_CHECK(not r7.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;      BOOST_TEST(r7.getRegisterName() == <span class="stringliteral">&quot;SOME_IIII&quot;</span>);</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;      BOOST_TEST(r7.getNumberOfElements() == 4);</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;      BOOST_TEST(r7.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;      BOOST_TEST(r7.getNumberOfDimensions() == 1);</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;      BOOST_TEST(not r7.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160; </div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;      <span class="keyword">auto</span> regI = catalogue.getRegister(<span class="stringliteral">&quot;SOME_IFFF/I&quot;</span>);</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;      <span class="keyword">auto</span> regF1 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_IFFF/F1&quot;</span>);</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;      <span class="keyword">auto</span> regF2 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_IFFF/F2&quot;</span>);</div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;      <span class="keyword">auto</span> regF3 = catalogue.getRegister(<span class="stringliteral">&quot;SOME_IFFF/F3&quot;</span>);</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;      BOOST_CHECK(regI.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;      BOOST_CHECK(regI.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;      BOOST_CHECK(regI.getDataDescriptor().nDigits() == 11);</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;      BOOST_CHECK(!regF1.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;      BOOST_CHECK(regF1.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;      BOOST_CHECK(!regF2.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;      BOOST_CHECK(regF2.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;      BOOST_CHECK(!regF3.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;      BOOST_CHECK(regF3.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;      BOOST_TEST(regI.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;      BOOST_TEST(regI.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;      BOOST_TEST(regI.getDataDescriptor().nDigits() == 11);</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;      BOOST_TEST(!regF1.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;      BOOST_TEST(regF1.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;      BOOST_TEST(!regF2.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;      BOOST_TEST(regF2.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;      BOOST_TEST(!regF3.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;      BOOST_TEST(regF3.getDataDescriptor().isSigned());</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;    }</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    device.close();</div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    device_cached.close();</div>
@@ -1219,52 +1219,52 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160; </div>
 <div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; catalogue : catalogueList1) {</div>
 <div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;      <span class="comment">// check number of registers, but not with the exact number, since DOOCS adds some registers!</span></div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;      BOOST_CHECK(catalogue.getNumberOfRegisters() &gt; 13);</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;      BOOST_TEST(catalogue.getNumberOfRegisters() &gt; 13);</div>
 <div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160; </div>
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;      <span class="comment">// check for the presence of known registers</span></div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT&quot;</span>));</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;DUMMY._SVR/SVR.BPN&quot;</span>));</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/I&quot;</span>));</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F1&quot;</span>));</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F2&quot;</span>));</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;      BOOST_CHECK(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F3&quot;</span>));</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT&quot;</span>));</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;DUMMY._SVR/SVR.BPN&quot;</span>));</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/I&quot;</span>));</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F1&quot;</span>));</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F2&quot;</span>));</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;      BOOST_TEST(catalogue.hasRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F3&quot;</span>));</div>
 <div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160; </div>
 <div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;      <span class="comment">// check the properties of some registers</span></div>
 <div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;      <span class="keyword">auto</span> r8 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>);</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;      BOOST_CHECK(r8.getRegisterName() == <span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>);</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;      BOOST_CHECK(r8.getNumberOfElements() == 1);</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;      BOOST_CHECK(r8.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;      BOOST_CHECK(r8.getNumberOfDimensions() == 0);</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;      BOOST_CHECK(not r8.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;      BOOST_TEST(r8.getRegisterName() == <span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>);</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;      BOOST_TEST(r8.getNumberOfElements() == 1);</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;      BOOST_TEST(r8.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;      BOOST_TEST(r8.getNumberOfDimensions() == 0);</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;      BOOST_TEST(not r8.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160; </div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;      <span class="keyword">auto</span> r9 = catalogue.getRegister(<span class="stringliteral">&quot;DUMMY._SVR/SVR.BPN&quot;</span>);</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;      BOOST_CHECK(r9.getRegisterName() == <span class="stringliteral">&quot;DUMMY._SVR/SVR.BPN&quot;</span>);</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;      BOOST_CHECK(r9.getNumberOfElements() == 1);</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;      BOOST_CHECK(r9.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;      BOOST_CHECK(r9.getNumberOfDimensions() == 0);</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;      BOOST_CHECK(not r9.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;      BOOST_TEST(r9.getRegisterName() == <span class="stringliteral">&quot;DUMMY._SVR/SVR.BPN&quot;</span>);</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;      BOOST_TEST(r9.getNumberOfElements() == 1);</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;      BOOST_TEST(r9.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;      BOOST_TEST(r9.getNumberOfDimensions() == 0);</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;      BOOST_TEST(not r9.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160; </div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;      <span class="keyword">auto</span> r10 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT&quot;</span>);</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;      BOOST_CHECK(r10.getRegisterName() == <span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT&quot;</span>);</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;      BOOST_CHECK(r10.getNumberOfElements() == 1);</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;      BOOST_CHECK(r10.getNumberOfChannels() == 1);</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;      BOOST_CHECK(r10.getNumberOfDimensions() == 0);</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;      BOOST_CHECK(r10.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;      BOOST_TEST(r10.getRegisterName() == <span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT&quot;</span>);</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;      BOOST_TEST(r10.getNumberOfElements() == 1);</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;      BOOST_TEST(r10.getNumberOfChannels() == 1);</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;      BOOST_TEST(r10.getNumberOfDimensions() == 0);</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;      BOOST_TEST(r10.getSupportedAccessModes().has(ChimeraTK::AccessMode::wait_for_new_data));</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160; </div>
 <div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;      <span class="keyword">auto</span> regI = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/I&quot;</span>);</div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;      <span class="keyword">auto</span> regF1 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F1&quot;</span>);</div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;      <span class="keyword">auto</span> regF2 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F2&quot;</span>);</div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;      <span class="keyword">auto</span> regF3 = catalogue.getRegister(<span class="stringliteral">&quot;MYDUMMY/SOME_IFFF/F3&quot;</span>);</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;      BOOST_CHECK(regI.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;      BOOST_CHECK(regI.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;      BOOST_CHECK(regI.getDataDescriptor().nDigits() == 11);</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;      BOOST_CHECK(!regF1.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;      BOOST_CHECK(regF1.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;      BOOST_CHECK(!regF2.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;      BOOST_CHECK(regF2.getDataDescriptor().isSigned());</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;      BOOST_CHECK(!regF3.getDataDescriptor().isIntegral());</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;      BOOST_CHECK(regF3.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;      BOOST_TEST(regI.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;      BOOST_TEST(regI.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;      BOOST_TEST(regI.getDataDescriptor().nDigits() == 11);</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;      BOOST_TEST(!regF1.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;      BOOST_TEST(regF1.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;      BOOST_TEST(!regF2.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;      BOOST_TEST(regF2.getDataDescriptor().isSigned());</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;      BOOST_TEST(!regF3.getDataDescriptor().isIntegral());</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;      BOOST_TEST(regF3.getDataDescriptor().isSigned());</div>
 <div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;    }</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;    device.close();</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    device_cached.close();</div>
@@ -1281,7 +1281,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160; </div>
 <div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;  <span class="comment">// device info string</span></div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;  BOOST_CHECK(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
 <div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160; </div>
 <div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;  <span class="comment">// test in TransferGroup</span></div>
 <div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;  TwoDRegisterAccessor&lt;int32_t&gt; acc1(device.getTwoDRegisterAccessor&lt;int32_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
@@ -1300,7 +1300,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160; </div>
 <div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;  <span class="comment">// compatibility with SDM syntax</span></div>
 <div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;  device.open(<span class="stringliteral">&quot;sdm://./doocs=TEST.DOOCS,NOT_EXISTING,SOME_LOCATION&quot;</span>);</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;  BOOST_CHECK(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: TEST.DOOCS/NOT_EXISTING/SOME_LOCATION&quot;</span>);</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: TEST.DOOCS/NOT_EXISTING/SOME_LOCATION&quot;</span>);</div>
 <div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;  device.close();</div>
 <div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;}</div>
 <div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160; </div>
@@ -1324,8 +1324,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160; </div>
 <div class="line"><a name="l01236"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a131a40ca808351e4d1fd3d976894a9c3"> 1236</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheFileCreation) {</div>
 <div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;  {</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;    BOOST_CHECK(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    BOOST_CHECK(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160; </div>
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <span class="keyword">auto</span> d1 = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
 <div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    <span class="keyword">auto</span> d2 = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>);</div>
@@ -1333,8 +1333,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="keyword">auto</span> discardedCatalogue = d1.getRegisterCatalogue();</div>
 <div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    discardedCatalogue = d2.getRegisterCatalogue();</div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160; </div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    BOOST_CHECK(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    BOOST_CHECK(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;  }</div>
 <div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>);</div>
 <div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
@@ -1391,9 +1391,9 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    }</div>
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    <span class="comment">// cancel timeout task</span></div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    cancelTimeOutTask = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    BOOST_CHECK(modification_time &gt; creation_time); <span class="comment">// given the percondition,</span></div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                                                    <span class="comment">// this should fail if loop</span></div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                                                    <span class="comment">// times out.</span></div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    BOOST_TEST(modification_time &gt; creation_time); <span class="comment">// given the percondition,</span></div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                                                   <span class="comment">// this should fail if loop</span></div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                                                   <span class="comment">// times out.</span></div>
 <div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;  }</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;}</div>
@@ -1408,7 +1408,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;  { <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>); }</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;  server-&gt;unlock();</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;  <span class="keyword">auto</span> modification_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;  BOOST_CHECK(creation_time == modification_time);</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;  BOOST_TEST(creation_time == modification_time);</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;}</div>
 <div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160; </div>
@@ -1420,17 +1420,17 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160; </div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 120);</div>
 <div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;  TwoDRegisterAccessor&lt;int32_t&gt; acc_someInt_as_int(d.getTwoDRegisterAccessor&lt;int32_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;  BOOST_CHECK(acc_someInt_as_int.getNChannels() == 1);</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;  BOOST_CHECK(acc_someInt_as_int.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNChannels() == 1);</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNElementsPerChannel() == 1);</div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160; </div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;  d.open();</div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160; </div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;  acc_someInt_as_int.read();</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;  BOOST_CHECK(acc_someInt_as_int[0][0] == 120);</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;  BOOST_TEST(acc_someInt_as_int[0][0] == 120);</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160; </div>
 <div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;  acc_someInt_as_int[0][0] = 50;</div>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;  acc_someInt_as_int.write();</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;  BOOST_CHECK(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 50);</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 50);</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>);</div>
 <div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;}</div>
 <div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160; </div>
@@ -1460,24 +1460,24 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160; </div>
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;  <span class="comment">// device info string</span></div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;  BOOST_CHECK(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;  <span class="keywordflow">for</span>(std::string param : {<span class="stringliteral">&quot;SOME_INT&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT&quot;</span>, <span class="stringliteral">&quot;SOME_BIT&quot;</span>, <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>,</div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;          <span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>, <span class="stringliteral">&quot;SOME_IIII&quot;</span>, <span class="stringliteral">&quot;SOME_IFFF&quot;</span>}) {</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/&quot;</span> + param + <span class="stringliteral">&quot;/eventId&quot;</span>);</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    BOOST_CHECK(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    BOOST_TEST(catalogue.hasRegister(path));</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160; </div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    <span class="keyword">auto</span> regInfo = catalogue.getRegister(path);</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    BOOST_CHECK(regInfo.isReadable());</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    BOOST_CHECK(!regInfo.isWriteable());</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    BOOST_TEST(regInfo.isReadable());</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    BOOST_TEST(!regInfo.isWriteable());</div>
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfElements(), 1);</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfChannels(), 1);</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfDimensions(), 0);</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    <span class="keyword">auto</span> descriptor = regInfo.getDataDescriptor();</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    BOOST_CHECK(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    BOOST_TEST(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    BOOST_CHECK_EQUAL(descriptor.nDigits(), 20);</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    BOOST_CHECK(descriptor.isSigned());</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    BOOST_CHECK(descriptor.isIntegral());</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    BOOST_TEST(descriptor.isSigned());</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    BOOST_TEST(descriptor.isIntegral());</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160; </div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    acc1.read();</div>
@@ -1502,13 +1502,13 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  <span class="comment">// Check that we get the accessor for some unsupported type as well</span></div>
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  <span class="comment">// Whether or not eventId retuns something usefull here is completely undefined</span></div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/UNSUPPORTED_DATA_TYPE/eventId&quot;</span>);</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;  BOOST_CHECK(acc1.isInitialised());</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;  BOOST_TEST(acc1.isInitialised());</div>
 <div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160; </div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160; </div>
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;  <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT/eventId&quot;</span>);</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;  BOOST_CHECK(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;  BOOST_TEST(catalogue.hasRegister(path));</div>
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
 <div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;  acc2.read();</div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc2), eqfct-&gt;counter - 1);</div>
@@ -1534,24 +1534,24 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
 <div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160; </div>
 <div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;  <span class="comment">// device info string</span></div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;  BOOST_CHECK(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
 <div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160; </div>
 <div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;  <span class="keywordflow">for</span>(std::string param : {<span class="stringliteral">&quot;SOME_INT&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT&quot;</span>, <span class="stringliteral">&quot;SOME_BIT&quot;</span>, <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>,</div>
 <div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;          <span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>, <span class="stringliteral">&quot;SOME_IIII&quot;</span>, <span class="stringliteral">&quot;SOME_IFFF&quot;</span>}) {</div>
 <div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/&quot;</span> + param + <span class="stringliteral">&quot;/timeStamp&quot;</span>);</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    BOOST_CHECK(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    BOOST_TEST(catalogue.hasRegister(path));</div>
 <div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160; </div>
 <div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    <span class="keyword">auto</span> regInfo = catalogue.getRegister(path);</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    BOOST_CHECK(regInfo.isReadable());</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    BOOST_CHECK(!regInfo.isWriteable());</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    BOOST_TEST(regInfo.isReadable());</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    BOOST_TEST(!regInfo.isWriteable());</div>
 <div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfElements(), 1);</div>
 <div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfChannels(), 1);</div>
 <div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfDimensions(), 0);</div>
 <div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    <span class="keyword">auto</span> descriptor = regInfo.getDataDescriptor();</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    BOOST_CHECK(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    BOOST_TEST(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
 <div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    BOOST_CHECK_EQUAL(descriptor.nDigits(), 20);</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    BOOST_CHECK(descriptor.isSigned());</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    BOOST_CHECK(descriptor.isIntegral());</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    BOOST_TEST(descriptor.isSigned());</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    BOOST_TEST(descriptor.isIntegral());</div>
 <div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160; </div>
 <div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;    <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
 <div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    acc1.read();</div>
@@ -1576,13 +1576,13 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;  <span class="comment">// Check that we get the accessor for some unsupported type as well</span></div>
 <div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;  <span class="comment">// Whether or not eventId retuns something usefull here is completely undefined</span></div>
 <div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/UNSUPPORTED_DATA_TYPE/timeStamp&quot;</span>);</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;  BOOST_CHECK(acc1.isInitialised());</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;  BOOST_TEST(acc1.isInitialised());</div>
 <div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160; </div>
 <div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
 <div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
 <div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160; </div>
 <div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;  <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT/timeStamp&quot;</span>);</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;  BOOST_CHECK(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;  BOOST_TEST(catalogue.hasRegister(path));</div>
 <div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
 <div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;  acc2.read();</div>
 <div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc2), eqfct-&gt;startTime - 1);</div>
@@ -1620,12 +1620,12 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;  acc2.read();</div>
 <div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;  acc2_id.read();</div>
 <div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160; </div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;  BOOST_CHECK(acc1.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;  BOOST_CHECK(acc2.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;  BOOST_TEST(acc1.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;  BOOST_TEST(acc2.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
 <div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;  <span class="comment">// notice: The version numbers for acc1 and acc2 are not the same, and also</span></div>
 <div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;  <span class="comment">// those of acc1_id and acc2_id  do not match any of them. Data with eventId 0 cannot be correlated at all.</span></div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;  BOOST_CHECK(acc1_id == 0);</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;  BOOST_CHECK(acc2_id == 0);</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;  BOOST_TEST(acc1_id == 0);</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;  BOOST_TEST(acc2_id == 0);</div>
 <div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160; </div>
 <div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;  eqfct-&gt;counter = id;</div>
 <div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160; </div>
@@ -1740,7 +1740,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;  acc1.read();</div>
 <div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == ver2,</div>
 <div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver2));</div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;  BOOST_CHECK(acc1.dataValidity() == DataValidity::ok);</div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;  BOOST_TEST(acc1.dataValidity() == DataValidity::ok);</div>
 <div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160; </div>
 <div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;  eqfct-&gt;counter = id1;</div>
 <div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
@@ -1748,13 +1748,13 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;  acc2.read();</div>
 <div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == ver1,</div>
 <div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver1));</div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  BOOST_CHECK(acc2.dataValidity() == DataValidity::ok);</div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  BOOST_TEST(acc2.dataValidity() == DataValidity::ok);</div>
 <div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160; </div>
 <div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;  <span class="comment">// backwards going eventId on same accessor does not change VersionNumber. Data validity stays ok</span></div>
 <div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;  acc1.read();</div>
 <div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == ver2,</div>
 <div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver2));</div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;  BOOST_CHECK(acc1.dataValidity() == DataValidity::ok);</div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;  BOOST_TEST(acc1.dataValidity() == DataValidity::ok);</div>
 <div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160; </div>
 <div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;  <span class="comment">//++++++++++++++++++++++++++++++++++++++++++++++</span></div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;  <span class="comment">// Check eventID 0 mixed with regular updates</span></div>
@@ -1782,8 +1782,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;  acc1_id.read();</div>
 <div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;  <span class="keyword">auto</span> acc1VersionForId0 = acc1.getVersionNumber();</div>
 <div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;  <span class="keyword">auto</span> acc1_idVersionForId0 = acc1_id.getVersionNumber();</div>
-<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;  BOOST_CHECK(acc1.getVersionNumber() &gt; lastRegularAcc1Version);</div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;  BOOST_CHECK(acc1_id.getVersionNumber() &gt; lastRegularAcc1Version);</div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;  BOOST_TEST(acc1.getVersionNumber() &gt; lastRegularAcc1Version);</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;  BOOST_TEST(acc1_id.getVersionNumber() &gt; lastRegularAcc1Version);</div>
 <div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, 0);</div>
 <div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160; </div>
 <div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;  <span class="comment">// Now send the same eventID again as we had it before the 0 (a new version has already been tested in the start</span></div>
@@ -1817,7 +1817,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160; </div>
 <div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;  acc1.read();</div>
 <div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;  BOOST_CHECK(acc1.getVersionNumber() &gt; acc1VersionForId0);</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;  BOOST_TEST(acc1.getVersionNumber() &gt; acc1VersionForId0);</div>
 <div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160; </div>
 <div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
 <div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
@@ -1849,7 +1849,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_doocs_backend_8cpp.html">testDoocsBackend.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2024 04:55:06 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 03:53:31 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

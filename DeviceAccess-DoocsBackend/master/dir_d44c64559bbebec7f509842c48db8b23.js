@@ -11,9 +11,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsBackendEventIdAccessor.h", "_doocs_backend_event_id_accessor_8h.html", [
       [ "DoocsBackendEventIdRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor" ]
     ] ],
-    [ "DoocsBackendFloatRegisterAccessor.h", "_doocs_backend_float_register_accessor_8h.html", [
-      [ "DoocsBackendFloatRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor" ]
-    ] ],
     [ "DoocsBackendIFFFRegisterAccessor.h", "_doocs_backend_i_f_f_f_register_accessor_8h.html", [
       [ "DoocsBackendIFFFRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor" ]
     ] ],
@@ -24,11 +21,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "DoocsBackendImageRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_image_register_accessor" ],
       [ "MappedDoocsImgIn", "struct_chimera_t_k_1_1_mapped_doocs_img_in.html", "struct_chimera_t_k_1_1_mapped_doocs_img_in" ]
     ] ],
-    [ "DoocsBackendIntRegisterAccessor.h", "_doocs_backend_int_register_accessor_8h.html", [
-      [ "DoocsBackendIntRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor" ]
-    ] ],
-    [ "DoocsBackendLongRegisterAccessor.h", "_doocs_backend_long_register_accessor_8h.html", [
-      [ "DoocsBackendLongRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor" ]
+    [ "DoocsBackendNumericRegisterAccessor.h", "_doocs_backend_numeric_register_accessor_8h.html", [
+      [ "DoocsBackendNumericRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor" ]
     ] ],
     [ "DoocsBackendRegisterAccessor.h", "_doocs_backend_register_accessor_8h.html", [
       [ "DoocsBackendRegisterAccessorBase", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base" ],

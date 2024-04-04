@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1">   38</a></span>&#160;  <a class="code" href="class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1">DoocsLauncher</a>()</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  : ThreadedDoocsServer(<span class="stringliteral">&quot;testUnifiedBackendTest.conf&quot;</span>, boost::unit_test::framework::master_test_suite().argc,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        boost::unit_test::framework::master_test_suite().argv) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        boost::unit_test::framework::master_test_suite().argv, <a class="code" href="classeq__dummy.html">eq_dummy</a>::createServer()) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// set CDDs for the two doocs addresses used in the test</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    rpc_no = rpcNo();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    DoocsServer = <span class="stringliteral">&quot;doocs:doocs://localhost:&quot;</span> + rpcNo() + <span class="stringliteral">&quot;/F/D&quot;</span>;</div>
@@ -794,7 +794,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_unified_backend_test_8cpp.html">testUnifiedBackendTest.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2024 04:55:06 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 03:53:31 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -76,12 +76,10 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", [
         [ "ChimeraTK::DoocsBackendEventIdRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html", null ],
-        [ "ChimeraTK::DoocsBackendFloatRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendIFFFRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html", null ],
-        [ "ChimeraTK::DoocsBackendIntRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html", [
+        [ "ChimeraTK::DoocsBackendNumericRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html", [
           [ "ChimeraTK::DoocsBackendIIIIRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html", null ]
         ] ],
-        [ "ChimeraTK::DoocsBackendLongRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendStringRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendTimeStampRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html", null ]
       ] ]
