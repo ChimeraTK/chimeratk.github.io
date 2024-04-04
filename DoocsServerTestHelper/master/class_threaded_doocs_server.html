@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('class_threaded_doocs_server.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a625e5c5044a44da61e7d78ecc772c2c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a625e5c5044a44da61e7d78ecc772c2c9">ThreadedDoocsServer</a> (std::string configFile, int argc, char *argv[], bool autoStart=true)</td></tr>
-<tr class="separator:a625e5c5044a44da61e7d78ecc772c2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852bd6176b199c7f5cd343eddd6b99d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a852bd6176b199c7f5cd343eddd6b99d5">start</a> (int argc, char *argv[])</td></tr>
-<tr class="separator:a852bd6176b199c7f5cd343eddd6b99d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc05ce325065d50ea5e7eebdfe22417f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#abc05ce325065d50ea5e7eebdfe22417f">~ThreadedDoocsServer</a> ()</td></tr>
-<tr class="separator:abc05ce325065d50ea5e7eebdfe22417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ddc6e8ba6c0b3c820be20336c31c22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a43ddc6e8ba6c0b3c820be20336c31c22">ThreadedDoocsServer</a> (std::string configFile, int argc, char *argv[], std::unique_ptr&lt; doocs::Server &gt; doocsServer, bool autoStart=true)</td></tr>
+<tr class="separator:a43ddc6e8ba6c0b3c820be20336c31c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58584efb2ffdafb0ec53c633223ed0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a58584efb2ffdafb0ec53c633223ed0b1">start</a> ()</td></tr>
+<tr class="separator:a58584efb2ffdafb0ec53c633223ed0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a379aac3157e0e7f61cbe883fbdcc5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a14a379aac3157e0e7f61cbe883fbdcc5">~ThreadedDoocsServer</a> ()</td></tr>
+<tr class="separator:a14a379aac3157e0e7f61cbe883fbdcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f63eb4cf737be5b016adc66f4bb4e17"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a4f63eb4cf737be5b016adc66f4bb4e17">rpcNo</a> ()</td></tr>
 <tr class="separator:a4f63eb4cf737be5b016adc66f4bb4e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04152e7ed2ee9cefe62d6abc93a42b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a3c04152e7ed2ee9cefe62d6abc93a42b">bpn</a> ()</td></tr>
@@ -117,25 +117,27 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a3e9ba68fbaa69f3f10ec8c07d77abca9"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a3e9ba68fbaa69f3f10ec8c07d77abca9">_mx_serverInfo</a></td></tr>
+<tr class="separator:a3e9ba68fbaa69f3f10ec8c07d77abca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b4c5f3897cba2bd5d84e2629be81fc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aa4b4c5f3897cba2bd5d84e2629be81fc">_serverNameInstanceC</a></td></tr>
 <tr class="separator:aa4b4c5f3897cba2bd5d84e2629be81fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeda181157f2be1ce83b2395a6f02362"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#adeda181157f2be1ce83b2395a6f02362">_argv</a></td></tr>
+<tr class="memitem:adeda181157f2be1ce83b2395a6f02362"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#adeda181157f2be1ce83b2395a6f02362">_argv</a> {}</td></tr>
 <tr class="separator:adeda181157f2be1ce83b2395a6f02362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfc1f91c5dda65ea6df7d4b7294a922d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#adfc1f91c5dda65ea6df7d4b7294a922d">_serverName</a></td></tr>
+<tr class="memitem:adfc1f91c5dda65ea6df7d4b7294a922d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#adfc1f91c5dda65ea6df7d4b7294a922d">_serverName</a> {}</td></tr>
 <tr class="separator:adfc1f91c5dda65ea6df7d4b7294a922d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaec5e7eb0223f21283a28d4d4a355bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aaaec5e7eb0223f21283a28d4d4a355bd">_serverNameInstance</a></td></tr>
+<tr class="memitem:aaaec5e7eb0223f21283a28d4d4a355bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aaaec5e7eb0223f21283a28d4d4a355bd">_serverNameInstance</a> {}</td></tr>
 <tr class="separator:aaaec5e7eb0223f21283a28d4d4a355bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12692b92772ac8413faaa268fe77930"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930">_rpcNo</a></td></tr>
+<tr class="memitem:ac12692b92772ac8413faaa268fe77930"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930">_rpcNo</a> {}</td></tr>
 <tr class="separator:ac12692b92772ac8413faaa268fe77930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4eb8741c0c9b73f22a33acd2a6af716"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aa4eb8741c0c9b73f22a33acd2a6af716">_bpn</a></td></tr>
+<tr class="memitem:aa4eb8741c0c9b73f22a33acd2a6af716"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aa4eb8741c0c9b73f22a33acd2a6af716">_bpn</a> {}</td></tr>
 <tr class="separator:aa4eb8741c0c9b73f22a33acd2a6af716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54993978ae146c2cf40d232528cef8c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a54993978ae146c2cf40d232528cef8c5">_configFile</a></td></tr>
+<tr class="memitem:a54993978ae146c2cf40d232528cef8c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a54993978ae146c2cf40d232528cef8c5">_configFile</a> {}</td></tr>
 <tr class="separator:a54993978ae146c2cf40d232528cef8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b16c4b0e01945c798277e4fcffdd618"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a2b16c4b0e01945c798277e4fcffdd618">_configFileInstance</a></td></tr>
+<tr class="memitem:a2b16c4b0e01945c798277e4fcffdd618"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a2b16c4b0e01945c798277e4fcffdd618">_configFileInstance</a> {}</td></tr>
 <tr class="separator:a2b16c4b0e01945c798277e4fcffdd618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d91f6a59191bfa3fb89df3d211200a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#ab3d91f6a59191bfa3fb89df3d211200a">_rpcNoLockFile</a></td></tr>
+<tr class="memitem:ab3d91f6a59191bfa3fb89df3d211200a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#ab3d91f6a59191bfa3fb89df3d211200a">_rpcNoLockFile</a> {}</td></tr>
 <tr class="separator:ab3d91f6a59191bfa3fb89df3d211200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1cd845a0e04901f8ac24f9ff24a9a3f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aa1cd845a0e04901f8ac24f9ff24a9a3f">_bpnLockFile</a></td></tr>
+<tr class="memitem:aa1cd845a0e04901f8ac24f9ff24a9a3f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#aa1cd845a0e04901f8ac24f9ff24a9a3f">_bpnLockFile</a> {}</td></tr>
 <tr class="separator:aa1cd845a0e04901f8ac24f9ff24a9a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18975b056157429e87cb371c8e2e6086"><td class="memItemLeft" align="right" valign="top">boost::interprocess::file_lock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_threaded_doocs_server.html#a18975b056157429e87cb371c8e2e6086">_configMutex</a></td></tr>
 <tr class="separator:a18975b056157429e87cb371c8e2e6086"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,16 +158,13 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00019">19</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00015">15</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a625e5c5044a44da61e7d78ecc772c2c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a625e5c5044a44da61e7d78ecc772c2c9">&#9670;&nbsp;</a></span>ThreadedDoocsServer()</h2>
+<a id="a43ddc6e8ba6c0b3c820be20336c31c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ddc6e8ba6c0b3c820be20336c31c22">&#9670;&nbsp;</a></span>ThreadedDoocsServer()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ThreadedDoocsServer::ThreadedDoocsServer </td>
@@ -188,6 +187,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::unique_ptr&lt; doocs::Server &gt;&#160;</td>
+          <td class="paramname"><em>doocsServer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>autoStart</em> = <code>true</code>&#160;</td>
         </tr>
@@ -197,27 +202,22 @@ Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00021">21</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8cc_source.html#l00005">5</a> of file <a class="el" href="_threaded_doocs_server_8cc_source.html">ThreadedDoocsServer.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a625e5c5044a44da61e7d78ecc772c2c9_cgraph.svg" width="100%" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a43ddc6e8ba6c0b3c820be20336c31c22_cgraph.svg" width="100%" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="abc05ce325065d50ea5e7eebdfe22417f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc05ce325065d50ea5e7eebdfe22417f">&#9670;&nbsp;</a></span>~ThreadedDoocsServer()</h2>
+<a id="a14a379aac3157e0e7f61cbe883fbdcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a379aac3157e0e7f61cbe883fbdcc5">&#9670;&nbsp;</a></span>~ThreadedDoocsServer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +226,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual ThreadedDoocsServer::~ThreadedDoocsServer </td>
+          <td class="memname">ThreadedDoocsServer::~ThreadedDoocsServer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -234,18 +234,18 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00081">81</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8cc_source.html#l00072">72</a> of file <a class="el" href="_threaded_doocs_server_8cc_source.html">ThreadedDoocsServer.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_abc05ce325065d50ea5e7eebdfe22417f_cgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a14a379aac3157e0e7f61cbe883fbdcc5_cgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -257,9 +257,6 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string ThreadedDoocsServer::bpn </td>
@@ -268,14 +265,9 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00105">105</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8cc_source.html#l00101">101</a> of file <a class="el" href="_threaded_doocs_server_8cc_source.html">ThreadedDoocsServer.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -292,9 +284,6 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string ThreadedDoocsServer::rpcNo </td>
@@ -303,14 +292,9 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00095">95</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8cc_source.html#l00088">88</a> of file <a class="el" href="_threaded_doocs_server_8cc_source.html">ThreadedDoocsServer.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -322,47 +306,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a852bd6176b199c7f5cd343eddd6b99d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a852bd6176b199c7f5cd343eddd6b99d5">&#9670;&nbsp;</a></span>start()</h2>
+<a id="a58584efb2ffdafb0ec53c633223ed0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58584efb2ffdafb0ec53c633223ed0b1">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ThreadedDoocsServer::start </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00071">71</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8cc_source.html#l00061">61</a> of file <a class="el" href="_threaded_doocs_server_8cc_source.html">ThreadedDoocsServer.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a852bd6176b199c7f5cd343eddd6b99d5_cgraph.svg" width="619" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a58584efb2ffdafb0ec53c633223ed0b1_cgraph.svg" width="619" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -370,7 +335,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a852bd6176b199c7f5cd343eddd6b99d5_icgraph.svg" width="398" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_threaded_doocs_server_a58584efb2ffdafb0ec53c633223ed0b1_icgraph.svg" width="398" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -387,7 +352,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;char*&gt; ThreadedDoocsServer::_argv</td>
+          <td class="memname">std::vector&lt;char*&gt; ThreadedDoocsServer::_argv {}</td>
         </tr>
       </table>
   </td>
@@ -397,7 +362,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00120">120</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00031">31</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +376,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_bpn</td>
+          <td class="memname">std::string ThreadedDoocsServer::_bpn {}</td>
         </tr>
       </table>
   </td>
@@ -421,7 +386,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00122">122</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00033">33</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +410,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00131">131</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00042">42</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +424,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_bpnLockFile</td>
+          <td class="memname">std::string ThreadedDoocsServer::_bpnLockFile {}</td>
         </tr>
       </table>
   </td>
@@ -469,7 +434,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00125">125</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00036">36</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +458,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00128">128</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00039">39</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -507,7 +472,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_configFile</td>
+          <td class="memname">std::string ThreadedDoocsServer::_configFile {}</td>
         </tr>
       </table>
   </td>
@@ -517,7 +482,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00123">123</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00034">34</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +496,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_configFileInstance</td>
+          <td class="memname">std::string ThreadedDoocsServer::_configFileInstance {}</td>
         </tr>
       </table>
   </td>
@@ -541,7 +506,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00123">123</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00034">34</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +530,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00129">129</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00040">40</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +554,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00126">126</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00037">37</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +578,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00133">133</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00044">44</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +602,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00132">132</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00043">43</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e9ba68fbaa69f3f10ec8c07d77abca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9ba68fbaa69f3f10ec8c07d77abca9">&#9670;&nbsp;</a></span>_mx_serverInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex ThreadedDoocsServer::_mx_serverInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00029">29</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +640,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_rpcNo</td>
+          <td class="memname">std::string ThreadedDoocsServer::_rpcNo {}</td>
         </tr>
       </table>
   </td>
@@ -661,7 +650,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00122">122</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00033">33</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -685,7 +674,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00130">130</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00041">41</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +688,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_rpcNoLockFile</td>
+          <td class="memname">std::string ThreadedDoocsServer::_rpcNoLockFile {}</td>
         </tr>
       </table>
   </td>
@@ -709,7 +698,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00124">124</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00035">35</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +722,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00127">127</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00038">38</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -747,7 +736,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_serverName</td>
+          <td class="memname">std::string ThreadedDoocsServer::_serverName {}</td>
         </tr>
       </table>
   </td>
@@ -757,7 +746,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00121">121</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00032">32</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -771,7 +760,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ThreadedDoocsServer::_serverNameInstance</td>
+          <td class="memname">std::string ThreadedDoocsServer::_serverNameInstance {}</td>
         </tr>
       </table>
   </td>
@@ -781,7 +770,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00121">121</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00032">32</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
@@ -805,12 +794,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00119">119</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_threaded_doocs_server_8h_source.html#l00030">30</a> of file <a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="_threaded_doocs_server_8h_source.html">ThreadedDoocsServer.h</a></li>
+<li>src/<a class="el" href="_threaded_doocs_server_8cc_source.html">ThreadedDoocsServer.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -818,7 +808,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_threaded_doocs_server.html">ThreadedDoocsServer</a></li>
-    <li class="footer">Generated on Fri Feb 2 2024 04:57:31 for doocs-server-test-helper by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 03:54:12 for doocs-server-test-helper by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

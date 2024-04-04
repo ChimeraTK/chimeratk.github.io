@@ -11,11 +11,12 @@ var searchData=
   ['_5fconfigmutex_8',['_configMutex',['../class_threaded_doocs_server.html#a18975b056157429e87cb371c8e2e6086',1,'ThreadedDoocsServer']]],
   ['_5fdoocsserver_9',['_doocsServer',['../class_threaded_doocs_server.html#a016e86782f97d5b05fc2b0cdd993755b',1,'ThreadedDoocsServer']]],
   ['_5fdoocsserverthread_10',['_doocsServerThread',['../class_threaded_doocs_server.html#a16820a8bea285a0581a8cbcc5e802f7f',1,'ThreadedDoocsServer']]],
-  ['_5frpcno_11',['_rpcNo',['../class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930',1,'ThreadedDoocsServer']]],
-  ['_5frpcnolock_12',['_rpcNoLock',['../class_threaded_doocs_server.html#a7957218f07dc50a2fc0a085cebf4a85c',1,'ThreadedDoocsServer']]],
-  ['_5frpcnolockfile_13',['_rpcNoLockFile',['../class_threaded_doocs_server.html#ab3d91f6a59191bfa3fb89df3d211200a',1,'ThreadedDoocsServer']]],
-  ['_5frpcnomutex_14',['_rpcNoMutex',['../class_threaded_doocs_server.html#aabeaf42683e21414df2dab17a16d105f',1,'ThreadedDoocsServer']]],
-  ['_5fservername_15',['_serverName',['../class_threaded_doocs_server.html#adfc1f91c5dda65ea6df7d4b7294a922d',1,'ThreadedDoocsServer']]],
-  ['_5fservernameinstance_16',['_serverNameInstance',['../class_threaded_doocs_server.html#aaaec5e7eb0223f21283a28d4d4a355bd',1,'ThreadedDoocsServer']]],
-  ['_5fservernameinstancec_17',['_serverNameInstanceC',['../class_threaded_doocs_server.html#aa4b4c5f3897cba2bd5d84e2629be81fc',1,'ThreadedDoocsServer']]]
+  ['_5fmx_5fserverinfo_11',['_mx_serverInfo',['../class_threaded_doocs_server.html#a3e9ba68fbaa69f3f10ec8c07d77abca9',1,'ThreadedDoocsServer']]],
+  ['_5frpcno_12',['_rpcNo',['../class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930',1,'ThreadedDoocsServer']]],
+  ['_5frpcnolock_13',['_rpcNoLock',['../class_threaded_doocs_server.html#a7957218f07dc50a2fc0a085cebf4a85c',1,'ThreadedDoocsServer']]],
+  ['_5frpcnolockfile_14',['_rpcNoLockFile',['../class_threaded_doocs_server.html#ab3d91f6a59191bfa3fb89df3d211200a',1,'ThreadedDoocsServer']]],
+  ['_5frpcnomutex_15',['_rpcNoMutex',['../class_threaded_doocs_server.html#aabeaf42683e21414df2dab17a16d105f',1,'ThreadedDoocsServer']]],
+  ['_5fservername_16',['_serverName',['../class_threaded_doocs_server.html#adfc1f91c5dda65ea6df7d4b7294a922d',1,'ThreadedDoocsServer']]],
+  ['_5fservernameinstance_17',['_serverNameInstance',['../class_threaded_doocs_server.html#aaaec5e7eb0223f21283a28d4d4a355bd',1,'ThreadedDoocsServer']]],
+  ['_5fservernameinstancec_18',['_serverNameInstanceC',['../class_threaded_doocs_server.html#aa4b4c5f3897cba2bd5d84e2629be81fc',1,'ThreadedDoocsServer']]]
 ];

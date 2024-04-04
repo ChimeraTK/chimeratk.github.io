@@ -56,7 +56,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_threaded_doocs_server_8h.html"
+"_threaded_doocs_server_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
