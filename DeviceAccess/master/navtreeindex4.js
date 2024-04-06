@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"class_chimera_t_k_1_1_device_info_map.html#ae8caafc5f465bb0790a71e1c14b0ba3f":[19,0,1,117,7],
 "class_chimera_t_k_1_1_device_info_map.html#aef25605221a880cc2a37c128ffc35a30":[19,0,1,117,6],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html":[19,0,1,117,0],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e":[19,0,1,117,0,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_interrupt_controller_handler.html#a38d1b613971e0c9d3a7abd0ba4ee7c5e":[19,0,1,64,11],
 "class_chimera_t_k_1_1_interrupt_controller_handler.html#a51ba3786639525007b693fe0f937dce4":[19,0,1,64,3],
 "class_chimera_t_k_1_1_interrupt_controller_handler.html#a56f4a0c1b2b36398fd36dfa106f64de0":[19,0,1,64,1],
-"class_chimera_t_k_1_1_interrupt_controller_handler.html#a6b94c26831eca39109bbf396952af9ff":[19,0,1,64,4]
+"class_chimera_t_k_1_1_interrupt_controller_handler.html#a6b94c26831eca39109bbf396952af9ff":[19,0,1,64,4],
+"class_chimera_t_k_1_1_interrupt_controller_handler.html#a7f7ecc010012fccb9bb997c33e6a34dd":[19,0,1,64,10]
 };

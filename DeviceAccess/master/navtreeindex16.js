@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"struct_integers__signed32__async.html#aedaca3e4443ee467c888a1420ae43da2":[19,0,68,3],
 "struct_integers__signed32__async.html#af682aeb7ddf05ae2553fa2a5fb3a2fe5":[19,0,68,7],
 "struct_integers__signed32__async.html#af682aeb7ddf05ae2553fa2a5fb3a2fe5":[19,0,68,6],
 "struct_integers__signed32__async.html#af7bb921c7cb8d7b25cdf942990655343":[19,0,68,20],
@@ -105,18 +104,18 @@ var NAVTREEINDEX16 =
 "struct_my_area1.html":[19,0,84],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,84,10],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,84,11],
-"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,84,4],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,84,5],
+"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,84,4],
 "struct_my_area1.html#a467c26d5b4063f0920caab13429b769d":[19,0,84,13],
 "struct_my_area1.html#a53c17123f20c464a6a962e34d69603db":[19,0,84,12],
 "struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[19,0,84,1],
 "struct_my_area1.html#a61da69d56c012c4ffa25bec4a39e9498":[19,0,84,14],
 "struct_my_area1.html#a8b30e909ad48c7c47ea47103b559a6ea":[19,0,84,0],
-"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,84,8],
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,84,9],
+"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[19,0,84,8],
 "struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[19,0,84,7],
-"struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,84,2],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,84,3],
+"struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[19,0,84,2],
 "struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7":[19,0,84,6],
 "struct_my_register1.html":[19,0,85],
 "struct_my_register1.html#a0a3f6ad525cfab066402387bfc6fb16e":[19,0,85,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "struct_reg_full_area.html#a8d674c50583d279dee8470a92a543265":[19,0,118,2],
 "struct_reg_full_area.html#aebfe9054dea555a325b739fa7e6b1650":[19,0,118,0],
 "struct_reg_full_area_scaled.html":[19,0,119],
-"struct_reg_full_area_scaled.html#a024a787d5aac8131792881984885c9a2":[19,0,119,2]
+"struct_reg_full_area_scaled.html#a024a787d5aac8131792881984885c9a2":[19,0,119,2],
+"struct_reg_full_area_scaled.html#a0e61a0caf17f1546abb91328438d7c2f":[19,0,119,3]
 };
