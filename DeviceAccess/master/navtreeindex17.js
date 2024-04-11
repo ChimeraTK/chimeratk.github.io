@@ -1,13 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"struct_reg_full_area_scaled.html#a0f72f6971f31d5ec0633c2c367150cb9":[19,0,119,0],
-"struct_reg_full_area_scaled.html#a2011ca68f62b1d04facdc6e1999a9df1":[19,0,119,7],
-"struct_reg_full_area_scaled.html#a303d71c20f6accc07676e02df216b9f9":[19,0,119,1],
-"struct_reg_full_area_scaled.html#a89083583f93e80d3c89138582894ad55":[19,0,119,8],
-"struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762":[19,0,119,5],
-"struct_reg_full_area_scaled.html#ad83da311f374a93c94ff42a28c7b75a2":[19,0,119,6],
-"struct_reg_full_area_scaled.html#af68910dde0d9398d343ae911bbfd9e8d":[19,0,119,4],
-"struct_reg_lower_half_of_firmware.html":[19,0,123],
 "struct_reg_lower_half_of_firmware.html#a19f6e5906205238b7e2bf581d40df724":[19,0,123,2],
 "struct_reg_lower_half_of_firmware.html#a62f98164938ad6e638d4287aff11141b":[19,0,123,3],
 "struct_reg_lower_half_of_firmware.html#aaa737f7ad75b7a29838e3e5f9271449c":[19,0,123,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX17 =
 "struct_short_raw__fixed_point16__8s.html#acd2235bd3df5df9409981afa2a6dd5a1":[19,0,159,3],
 "struct_short_raw__fixed_point16__8u.html":[19,0,160],
 "struct_short_raw__fixed_point16__8u.html#a6a5570284a03b02f7c9d67c77827ef47":[19,0,160,0],
-"struct_short_raw__fixed_point16__8u.html#a739aaa8b11f696050c7fd935623b38a0":[19,0,160,3]
+"struct_short_raw__fixed_point16__8u.html#a739aaa8b11f696050c7fd935623b38a0":[19,0,160,3],
+"struct_short_raw__fixed_point16__8u.html#a874764c5ff5d5fe0dcb31d0c92938d3d":[19,0,160,4],
+"struct_short_raw__fixed_point16__8u.html#a9289dd9f6902e43924a8a5c94a73b97f":[19,0,160,5],
+"struct_short_raw__fixed_point16__8u.html#aaace8f250609d61f4428df5abf49a4d3":[19,0,160,1],
+"struct_short_raw__fixed_point16__8u.html#aafbac5d0374344ff1c0d1fc0ab1ce669":[19,0,160,6],
+"struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b":[19,0,160,2],
+"struct_short_raw__signed16.html":[19,0,161],
+"struct_short_raw__signed16.html#a04e0df595f39a5feb9fc4222dc0902d4":[19,0,161,6],
+"struct_short_raw__signed16.html#a190f8ebcb20a8bc1ef1405343d807acb":[19,0,161,4]
 };

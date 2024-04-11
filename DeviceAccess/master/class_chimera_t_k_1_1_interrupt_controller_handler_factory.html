@@ -109,8 +109,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_interrupt_contro
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7188a2969daa92789852c5705d3ef547"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a7188a2969daa92789852c5705d3ef547">InterruptControllerHandlerFactory</a> (<a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> *backend)</td></tr>
 <tr class="separator:a7188a2969daa92789852c5705d3ef547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b372bbfb577531c01aa6252ef169b6"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html">InterruptControllerHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a95b372bbfb577531c01aa6252ef169b6">createInterruptControllerHandler</a> (std::vector&lt; uint32_t &gt; const &amp;controllerID, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a> &gt; parent)</td></tr>
-<tr class="separator:a95b372bbfb577531c01aa6252ef169b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef5459d5305744f9f809fccf55c8292"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html">InterruptControllerHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a0ef5459d5305744f9f809fccf55c8292">createInterruptControllerHandler</a> (std::vector&lt; uint32_t &gt; const &amp;controllerID, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a>&lt; std::nullptr_t &gt;&gt; parent)</td></tr>
+<tr class="separator:a0ef5459d5305744f9f809fccf55c8292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a646eff3a1871e033fe523c3537d6d8eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a646eff3a1871e033fe523c3537d6d8eb">addControllerDescription</a> (std::vector&lt; uint32_t &gt; const &amp;controllerID, std::string const &amp;name, std::string const &amp;description)</td></tr>
 <tr class="separator:a646eff3a1871e033fe523c3537d6d8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8c016982c51de4ea5cf4391ed68dcc"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a2c8c016982c51de4ea5cf4391ed68dcc">getBackend</a> ()</td></tr>
@@ -123,15 +123,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:adf61e329111488a9f95746be6affd1bb"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::vector&lt; uint32_t &gt;, std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#adf61e329111488a9f95746be6affd1bb">_controllerDescriptions</a></td></tr>
 <tr class="memdesc:adf61e329111488a9f95746be6affd1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key of this map is the controllerID.  <a href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#adf61e329111488a9f95746be6affd1bb">More...</a><br /></td></tr>
 <tr class="separator:adf61e329111488a9f95746be6affd1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83070f70561278ad6cab7d2a86efaad4"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html">InterruptControllerHandler</a> &gt;<a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html">InterruptControllerHandlerFactory</a> *, std::vector&lt; uint32_t &gt; const  &amp;, std::string, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a> &gt;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a83070f70561278ad6cab7d2a86efaad4">_creatorFunctions</a></td></tr>
-<tr class="memdesc:a83070f70561278ad6cab7d2a86efaad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each controller type is registered via name and creator function.  <a href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a83070f70561278ad6cab7d2a86efaad4">More...</a><br /></td></tr>
-<tr class="separator:a83070f70561278ad6cab7d2a86efaad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8c6ae2c3474750007966356c91573d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html">InterruptControllerHandler</a> &gt;<a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html">InterruptControllerHandlerFactory</a> *, std::vector&lt; uint32_t &gt; const  &amp;, std::string, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a>&lt; std::nullptr_t &gt; &gt;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a1e8c6ae2c3474750007966356c91573d">_creatorFunctions</a></td></tr>
+<tr class="memdesc:a1e8c6ae2c3474750007966356c91573d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each controller type is registered via name and creator function.  <a href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html#a1e8c6ae2c3474750007966356c91573d">More...</a><br /></td></tr>
+<tr class="separator:a1e8c6ae2c3474750007966356c91573d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Knows which type of <a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html" title="Interface base class for interrupt controller handlers.">InterruptControllerHandler</a> to create for which interrupt. </p>
 <p>It is filled from the meta information from the map file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00029">29</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00030">30</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7188a2969daa92789852c5705d3ef547"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7188a2969daa92789852c5705d3ef547">&#9670;&nbsp;</a></span>InterruptControllerHandlerFactory()</h2>
@@ -163,7 +163,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_interrupt_controller_handler_factory_a7188a2969daa92789852c5705d3ef547_cgraph.svg" width="484" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_interrupt_controller_handler_factory_a7188a2969daa92789852c5705d3ef547_cgraph.svg" width="516" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -206,8 +206,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a95b372bbfb577531c01aa6252ef169b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95b372bbfb577531c01aa6252ef169b6">&#9670;&nbsp;</a></span>createInterruptControllerHandler()</h2>
+<a id="a0ef5459d5305744f9f809fccf55c8292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef5459d5305744f9f809fccf55c8292">&#9670;&nbsp;</a></span>createInterruptControllerHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +221,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a> &gt;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a>&lt; std::nullptr_t &gt;&gt;&#160;</td>
           <td class="paramname"><em>parent</em>&#160;</td>
         </tr>
         <tr>
@@ -238,7 +238,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_interrupt_controller_handler_factory_a95b372bbfb577531c01aa6252ef169b6_icgraph.svg" width="100%" height="449"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_interrupt_controller_handler_factory_a0ef5459d5305744f9f809fccf55c8292_icgraph.svg" width="594" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -284,7 +284,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00041">41</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00042">42</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
 
 </div>
 </div>
@@ -311,12 +311,12 @@ Protected Attributes</h2></td></tr>
 <p>The key of this map is the controllerID. </p>
 <p>The value is a string pair of controller name and the description string from the map file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00046">46</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00047">47</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
 
 </div>
 </div>
-<a id="a83070f70561278ad6cab7d2a86efaad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83070f70561278ad6cab7d2a86efaad4">&#9670;&nbsp;</a></span>_creatorFunctions</h2>
+<a id="a1e8c6ae2c3474750007966356c91573d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8c6ae2c3474750007966356c91573d">&#9670;&nbsp;</a></span>_creatorFunctions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +325,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, std::function&lt;std::unique_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html">InterruptControllerHandler</a>&gt;<a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html">InterruptControllerHandlerFactory</a>*, std::vector&lt;uint32_t&gt; const&amp;, std::string, boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a>&gt;)&gt; &gt; ChimeraTK::InterruptControllerHandlerFactory::_creatorFunctions</td>
+          <td class="memname">std::map&lt;std::string, std::function&lt;std::unique_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler.html">InterruptControllerHandler</a>&gt;<a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html">InterruptControllerHandlerFactory</a>*, std::vector&lt;uint32_t&gt; const&amp;, std::string, boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_trigger_distributor.html">TriggerDistributor</a>&lt;std::nullptr_t&gt; &gt;)&gt; &gt; ChimeraTK::InterruptControllerHandlerFactory::_creatorFunctions</td>
         </tr>
       </table>
   </td>
@@ -337,7 +337,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Each controller type is registered via name and creator function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00053">53</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interrupt_controller_handler_8h_source.html#l00054">54</a> of file <a class="el" href="_interrupt_controller_handler_8h_source.html">InterruptControllerHandler.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_interrupt_controller_handler_factory.html">InterruptControllerHandlerFactory</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 03:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 11 2024 03:53:20 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

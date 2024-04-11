@@ -398,119 +398,123 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  }</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::InterruptDispatcherThread::handleInterrupt(uint32_t interruptNumber) {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      SharedDummyBackend&amp; backend = _dispatcherInterf-&gt;_backend;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      backend.<a class="code" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1eb55fcc4082f2d2407576cf1f63f89f">dispatchInterrupt</a>(interruptNumber);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">catch</span>(std::out_of_range&amp;) {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          <span class="stringliteral">&quot;InterruptDispatcherThread::triggerInterrupt(): Error: Unknown interrupt &quot;</span> + std::to_string(interruptNumber));</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  SharedDummyBackend::ShmForSems::Sem* SharedDummyBackend::ShmForSems::addSem(SemId semId) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// look up whether semaphore for id already exists and return error</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;error: semId already exists - check assumption about identifiers!&quot;</span>);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      }</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keywordflow">if</span>(!entry.used) {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        entry.semId = semId;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        entry.used = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="comment">// It would be nice to also reset semaphores state, but if</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// interrupt dispatcher thread which last used it terminated property its not necessary</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="comment">// (since it calls post in destructor)</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">return</span> &amp;entry.s;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">// increasing size not implemented</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;error: semaphore array full - increase maxSems!&quot;</span>);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  }</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keywordtype">bool</span> SharedDummyBackend::ShmForSems::removeSem(SemId semId) {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        entry.used = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        found = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">return</span> found;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::cleanup(<a class="code" href="_shared_dummy_backend_8h.html#a5634ef0f0086b55ed47db2def72b5845">PidSet</a>* pidSet) {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">if</span>(std::find(std::begin(*pidSet), std::end(*pidSet), (int32_t)entry.semId) == std::end(*pidSet)) {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;          entry.used = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      }</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  }</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::addInterrupt(uint32_t interruptNumber) {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry._controllerId == 0 &amp;&amp; <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(entry._intNumber) == interruptNumber) {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        entry._counter++;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        found = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      }</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">if</span>(!found) {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keywordtype">bool</span> added = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">if</span>(!entry.used) {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;          entry.used = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;          entry._controllerId = 0;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;          entry._intNumber = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(interruptNumber);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;          entry._counter = 1;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          added = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <span class="keywordflow">if</span>(!added) {</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;no place left in interruptEntries!&quot;</span>);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  std::list&lt;SharedDummyBackend::ShmForSems::Sem*&gt; SharedDummyBackend::ShmForSems::findSems(</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      uint32_t interruptNumber, <span class="keywordtype">bool</span> update) {</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    std::list&lt;Sem*&gt; ret;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="comment">// we simply return all semaphores</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        ret.push_back(&amp;entry.s);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      }</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordflow">if</span>(update) addInterrupt(interruptNumber);</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::print() {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;shmem contents: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      <span class="keywordflow">if</span>(entry.used) std::cout &lt;&lt; <span class="stringliteral">&quot;sem : &quot;</span> &lt;&lt; entry.semId &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      i++;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    }</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    i = 0;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;interrupt : &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; entry._intNumber &lt;&lt; <span class="stringliteral">&quot; count = &quot;</span> &lt;&lt; entry._counter</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                  &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      }</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      i++;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;} <span class="comment">// Namespace ChimeraTK</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    SharedDummyBackend&amp; backend = _dispatcherInterf-&gt;_backend;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">auto</span> asyncDomain = boost::dynamic_pointer_cast&lt;AsyncDomainImpl&lt;std::nullptr_t&gt;&gt;(</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        backend._asyncDomainsContainer.getAsyncDomain(interruptNumber));</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">if</span>(!asyncDomain) {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="comment">// If the asyncDomain is not there, the pointer in the _asyncDomainsContainer must be nullptr as well.</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="comment">// Otherwise the dynamic cast failed, which should never happen.</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      assert(!backend._asyncDomainsContainer.getAsyncDomain(interruptNumber));</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    asyncDomain-&gt;distribute(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  SharedDummyBackend::ShmForSems::Sem* SharedDummyBackend::ShmForSems::addSem(SemId semId) {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// look up whether semaphore for id already exists and return error</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;error: semId already exists - check assumption about identifiers!&quot;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">if</span>(!entry.used) {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        entry.semId = semId;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        entry.used = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="comment">// It would be nice to also reset semaphores state, but if</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="comment">// interrupt dispatcher thread which last used it terminated property its not necessary</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">// (since it calls post in destructor)</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">return</span> &amp;entry.s;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// increasing size not implemented</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;error: semaphore array full - increase maxSems!&quot;</span>);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">bool</span> SharedDummyBackend::ShmForSems::removeSem(SemId semId) {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry.semId == semId) {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        entry.used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">return</span> found;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::cleanup(<a class="code" href="_shared_dummy_backend_8h.html#a5634ef0f0086b55ed47db2def72b5845">PidSet</a>* pidSet) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">if</span>(std::find(std::begin(*pidSet), std::end(*pidSet), (int32_t)entry.semId) == std::end(*pidSet)) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;          entry.used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::addInterrupt(uint32_t interruptNumber) {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      <span class="keywordflow">if</span>(entry.used &amp;&amp; entry._controllerId == 0 &amp;&amp; <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(entry._intNumber) == interruptNumber) {</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        entry._counter++;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span>(!found) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      <span class="keywordtype">bool</span> added = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span>(!entry.used) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          entry.used = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          entry._controllerId = 0;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          entry._intNumber = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(interruptNumber);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;          entry._counter = 1;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;          added = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">if</span>(!added) {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;no place left in interruptEntries!&quot;</span>);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  std::list&lt;SharedDummyBackend::ShmForSems::Sem*&gt; SharedDummyBackend::ShmForSems::findSems(</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      uint32_t interruptNumber, <span class="keywordtype">bool</span> update) {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    std::list&lt;Sem*&gt; ret;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="comment">// we simply return all semaphores</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        ret.push_back(&amp;entry.s);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordflow">if</span>(update) addInterrupt(interruptNumber);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::print() {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;shmem contents: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">if</span>(entry.used) std::cout &lt;&lt; <span class="stringliteral">&quot;sem : &quot;</span> &lt;&lt; entry.semId &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      i++;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    i = 0;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;interrupt : &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; entry._intNumber &lt;&lt; <span class="stringliteral">&quot; count = &quot;</span> &lt;&lt; entry._counter</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                  &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      i++;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;} <span class="comment">// Namespace ChimeraTK</span></div>
 <div class="ttc" id="a_backend_factory_8h_html"><div class="ttname"><a href="_backend_factory_8h.html">BackendFactory.h</a></div></div>
 <div class="ttc" id="a_dummy_backend_base_8h_html_ae845db7f933611bff0617577388e4c4f"><div class="ttname"><a href="_dummy_backend_base_8h.html#ae845db7f933611bff0617577388e4c4f">TRY_REGISTER_ACCESS</a></div><div class="ttdeci">#define TRY_REGISTER_ACCESS(COMMAND)</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_base_8h_source.html#l00015">DummyBackendBase.h:15</a></div></div>
 <div class="ttc" id="a_exception_8h_html"><div class="ttname"><a href="_exception_8h.html">Exception.h</a></div></div>
@@ -521,10 +525,9 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="ttc" id="a_shared_dummy_backend_8h_html_a8327693f5a73291f60af05c2c5fa78dc"><div class="ttname"><a href="_shared_dummy_backend_8h.html#a8327693f5a73291f60af05c2c5fa78dc">SharedMemoryVector</a></div><div class="ttdeci">boost::interprocess::vector&lt; int32_t, ShmemAllocator &gt; SharedMemoryVector</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8h_source.html#l00030">SharedDummyBackend.h:30</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_backend_factory_html_a1176b9ab5e2ef7a1b8aa4a4aaaeb924e"><div class="ttname"><a href="class_chimera_t_k_1_1_backend_factory.html#a1176b9ab5e2ef7a1b8aa4a4aaaeb924e">ChimeraTK::BackendFactory::getInstance</a></div><div class="ttdeci">static BackendFactory &amp; getInstance()</div><div class="ttdoc">Static function to get an instance of factory.</div><div class="ttdef"><b>Definition:</b> <a href="_backend_factory_8cc_source.html#l00191">BackendFactory.cc:191</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_backend_impl_html_a2b51615c34b21184c43de53a327d28f3"><div class="ttname"><a href="class_chimera_t_k_1_1_device_backend_impl.html#a2b51615c34b21184c43de53a327d28f3">ChimeraTK::DeviceBackendImpl::setOpenedAndClearException</a></div><div class="ttdeci">void setOpenedAndClearException() noexcept</div><div class="ttdoc">Backends should call this function at the end of a (successful) open() call.</div><div class="ttdef"><b>Definition:</b> <a href="_device_backend_impl_8cc_source.html#l00012">DeviceBackendImpl.cc:12</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_device_backend_impl_html_aa45a13e22531ae57af9a4ae5072fc916"><div class="ttname"><a href="class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916">ChimeraTK::DeviceBackendImpl::checkActiveException</a></div><div class="ttdeci">void checkActiveException() final</div><div class="ttdoc">Function to be called by backends when needing to check for an active exception.</div><div class="ttdef"><b>Definition:</b> <a href="_device_backend_impl_8h_source.html#l00094">DeviceBackendImpl.h:94</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_device_backend_impl_html_ae9bee80fb557412c35519caa586b3149"><div class="ttname"><a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">ChimeraTK::DeviceBackendImpl::_opened</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _opened</div><div class="ttdoc">flag if backend is opened</div><div class="ttdef"><b>Definition:</b> <a href="_device_backend_impl_8h_source.html#l00060">DeviceBackendImpl.h:60</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_device_backend_impl_html_aa45a13e22531ae57af9a4ae5072fc916"><div class="ttname"><a href="class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916">ChimeraTK::DeviceBackendImpl::checkActiveException</a></div><div class="ttdeci">void checkActiveException() final</div><div class="ttdoc">Function to be called by backends when needing to check for an active exception.</div><div class="ttdef"><b>Definition:</b> <a href="_device_backend_impl_8h_source.html#l00099">DeviceBackendImpl.h:99</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_device_backend_impl_html_ae9bee80fb557412c35519caa586b3149"><div class="ttname"><a href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">ChimeraTK::DeviceBackendImpl::_opened</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _opened</div><div class="ttdoc">flag if backend is opened</div><div class="ttdef"><b>Definition:</b> <a href="_device_backend_impl_8h_source.html#l00065">DeviceBackendImpl.h:65</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_dummy_backend_base_html"><div class="ttname"><a href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a></div><div class="ttdoc">Base class for DummyBackends, provides common functionality.</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_base_8h_source.html#l00031">DummyBackendBase.h:31</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_numeric_addressed_backend_html_a1eb55fcc4082f2d2407576cf1f63f89f"><div class="ttname"><a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1eb55fcc4082f2d2407576cf1f63f89f">ChimeraTK::NumericAddressedBackend::dispatchInterrupt</a></div><div class="ttdeci">VersionNumber dispatchInterrupt(uint32_t interruptNumber)</div><div class="ttdoc">Function to be called by implementing backend when an interrupt arrives.</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_addressed_backend_8cc_source.html#l00275">NumericAddressedBackend.cc:275</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html">ChimeraTK::SharedDummyBackend</a></div><div class="ttdoc">The shared dummy device opens a mapping file defining the registers and implements them in shared mem...</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8h_source.html#l00047">SharedDummyBackend.h:47</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a24e4c090c6e02003de078c9ba9c97121"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a24e4c090c6e02003de078c9ba9c97121">ChimeraTK::SharedDummyBackend::write</a></div><div class="ttdeci">void write([[maybe_unused]] uint8_t bar,[[maybe_unused]] uint32_t address,[[maybe_unused]] int32_t const *data,[[maybe_unused]] size_t sizeInBytes) final</div><div class="ttdoc">You cannot override the write version with 32 bit address any more.</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_base_8h_source.html#l00059">DummyBackendBase.h:59</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a3c9ed215934274a01e9e68c4d75ce17c"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a3c9ed215934274a01e9e68c4d75ce17c">ChimeraTK::SharedDummyBackend::SharedDummyBackend</a></div><div class="ttdeci">SharedDummyBackend(const std::string &amp;instanceId, const std::string &amp;mapFileName)</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00022">SharedDummyBackend.cc:22</a></div></div>
@@ -550,7 +553,7 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_2c90e15a7117effef4353a6eb562e96d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_c02021404aa43b7226fc426addd80f61.html">src</a></li><li class="navelem"><a class="el" href="_shared_dummy_backend_8cc.html">SharedDummyBackend.cc</a></li>
-    <li class="footer">Generated on Sat Apr 6 2024 03:53:13 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 11 2024 03:53:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

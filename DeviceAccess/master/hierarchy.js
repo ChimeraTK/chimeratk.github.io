@@ -37,9 +37,7 @@ var hierarchy =
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
-    [ "ChimeraTK::AsyncDomainsContainerBase", "class_chimera_t_k_1_1_async_domains_container_base.html", [
-      [ "ChimeraTK::AsyncDomainsContainer< KeyType >", "class_chimera_t_k_1_1_async_domains_container.html", null ]
-    ] ],
+    [ "ChimeraTK::AsyncDomainsContainer", "class_chimera_t_k_1_1_async_domains_container.html", null ],
     [ "ChimeraTK::AsyncVariable", "struct_chimera_t_k_1_1_async_variable.html", [
       [ "ChimeraTK::AsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1_async_variable_impl.html", [
         [ "ChimeraTK::GenericAsyncVariable< std::nullptr_t, UserType >", "class_chimera_t_k_1_1_generic_async_variable.html", [
@@ -251,7 +249,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "ChimeraTK::AsyncDomain", "class_chimera_t_k_1_1_async_domain.html", [
-        [ "ChimeraTK::AsyncDomainImpl< DistributorType, BackendDataType >", "class_chimera_t_k_1_1_async_domain_impl.html", null ]
+        [ "ChimeraTK::AsyncDomainImpl< BackendDataType >", "class_chimera_t_k_1_1_async_domain_impl.html", null ]
       ] ],
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
@@ -294,8 +292,8 @@ var hierarchy =
         ] ]
       ] ],
       [ "ChimeraTK::InterruptControllerHandler", "class_chimera_t_k_1_1_interrupt_controller_handler.html", [
-        [ "ChimeraTK::Axi4_Intc", "class_chimera_t_k_1_1_axi4___intc.html", null ],
-        [ "ChimeraTK::DummyIntc", "class_chimera_t_k_1_1_dummy_intc.html", null ]
+        [ "ChimeraTK::DummyInterruptControllerHandler", "class_chimera_t_k_1_1_dummy_interrupt_controller_handler.html", null ],
+        [ "ChimeraTK::GenericInterruptControllerHandler", "class_chimera_t_k_1_1_generic_interrupt_controller_handler.html", null ]
       ] ],
       [ "ChimeraTK::TransferElement", "class_chimera_t_k_1_1_transfer_element.html", [
         [ "ChimeraTK::NDRegisterAccessor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
@@ -359,7 +357,7 @@ var hierarchy =
         ] ],
         [ "ChimeraTK::NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", null ]
       ] ],
-      [ "ChimeraTK::TriggerDistributor", "class_chimera_t_k_1_1_trigger_distributor.html", null ]
+      [ "ChimeraTK::TriggerDistributor< BackendSpecificDataType >", "class_chimera_t_k_1_1_trigger_distributor.html", null ]
     ] ],
     [ "std::enable_shared_from_this", null, [
       [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
@@ -369,7 +367,7 @@ var hierarchy =
     [ "ChimeraTK::EventFile", "class_chimera_t_k_1_1_event_file.html", null ],
     [ "ChimeraTK::EventThread", "class_chimera_t_k_1_1_event_thread.html", null ],
     [ "std::exception", null, [
-      [ "ChimeraTK::AsyncDomainsContainer< KeyType >::StopThread", "class_chimera_t_k_1_1_async_domains_container_1_1_stop_thread.html", null ],
+      [ "ChimeraTK::AsyncDomainsContainer::StopThread", "class_chimera_t_k_1_1_async_domains_container_1_1_stop_thread.html", null ],
       [ "ChimeraTK::logic_error", "class_chimera_t_k_1_1logic__error.html", null ],
       [ "ChimeraTK::runtime_error", "class_chimera_t_k_1_1runtime__error.html", null ]
     ] ],
@@ -664,7 +662,6 @@ var hierarchy =
     [ "StaticCore", "struct_static_core.html", null ],
     [ "accessPrivateData::stow_private< Tag, x >", "structaccess_private_data_1_1stow__private.html", null ],
     [ "accessPrivateData::stowed< Tag >", "structaccess_private_data_1_1stowed.html", null ],
-    [ "ChimeraTK::TriggerDistributor::SubscriptionImplementor< UserType >", "class_chimera_t_k_1_1_trigger_distributor_1_1_subscription_implementor.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchWriteOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html", null ],
