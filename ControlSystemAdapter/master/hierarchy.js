@@ -32,9 +32,11 @@ var hierarchy =
     [ "ChimeraTK::PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", null ],
     [ "ChimeraTK::PersistentDataStorage::Queue< DataType >", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", null ],
     [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", [
-      [ "Bidir< BidirA >", "struct_bidir.html", [
-        [ "BidirA", "struct_bidir_a.html", null ],
+      [ "Bidir< BidirB >", "struct_bidir.html", [
         [ "BidirB", "struct_bidir_b.html", null ]
+      ] ],
+      [ "Bidir< BidirA >", "struct_bidir.html", [
+        [ "BidirA", "struct_bidir_a.html", null ]
       ] ],
       [ "Bidir< Derived >", "struct_bidir.html", null ]
     ] ],
