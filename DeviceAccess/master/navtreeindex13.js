@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"pciedev__io__compat_8h.html#a0ce58a436c9a78d135964a5b62c0dfd5":[20,0,2,4,0,2,21],
 "pciedev__io__compat_8h.html#a198b5f4fef9dff99b6c27836f972bc19":[20,0,2,4,0,2,37],
 "pciedev__io__compat_8h.html#a1dc1215c881918ae78af0f20713b05a5":[20,0,2,4,0,2,12],
 "pciedev__io__compat_8h.html#a1fce441aaa962f572d643140658a6e4c":[20,0,2,4,0,2,4],
@@ -96,10 +97,10 @@ var NAVTREEINDEX13 =
 "struct_area_type.html#a0074bc23dcb62580c879d8a039e8b7cb":[19,0,10,3],
 "struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,10,18],
 "struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[19,0,10,19],
-"struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,10,10],
 "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,10,11],
-"struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,10,8],
+"struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[19,0,10,10],
 "struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,10,9],
+"struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[19,0,10,8],
 "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[19,0,10,15],
 "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[19,0,10,14],
 "struct_area_type.html#a531204077ecc966900ae1071a1d677c8":[19,0,10,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "struct_chimera_t_k_1_1_dummy_protocol0.html#a1cf44e97a9270ec69968c6f3c4c61290":[19,0,1,124,6],
 "struct_chimera_t_k_1_1_dummy_protocol0.html#a3304a16c90d7b074fd305f83c278c6d2":[19,0,1,124,0],
 "struct_chimera_t_k_1_1_dummy_protocol0.html#a34e6d1268c2884dc636da8612fcc73a4":[19,0,1,124,4],
-"struct_chimera_t_k_1_1_dummy_protocol0.html#a369540e492a7e9a79bb6a72e88174c59":[19,0,1,124,5],
-"struct_chimera_t_k_1_1_dummy_protocol0.html#a482f185fcc7f26c3fa1ea1d4a0ebea9a":[19,0,1,124,8]
+"struct_chimera_t_k_1_1_dummy_protocol0.html#a369540e492a7e9a79bb6a72e88174c59":[19,0,1,124,5]
 };

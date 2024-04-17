@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"classes.html":[19,1],
 "classmy_register_info.html":[19,0,86],
 "classmy_register_info.html#a0f0e6ca6d97d5dd557cad5d5263b7639":[19,0,86,18],
 "classmy_register_info.html#a180ff4161e9a676db08a1e5310956ce3":[19,0,86,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "globals_func_o.html":[20,1,1,8],
 "globals_func_p.html":[20,1,1,9],
 "globals_func_s.html":[20,1,1,10],
-"globals_func_t.html":[20,1,1,11],
-"globals_g.html":[20,1,0,6]
+"globals_func_t.html":[20,1,1,11]
 };
