@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('test_uio_backend_unified_8cpp_source.h
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_raw_uio_access.html#ac61b3a67721cf4a01672c565cab36735">  130</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_raw_uio_access.html#ac61b3a67721cf4a01672c565cab36735">RawUioAccess::sendInterrupt</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> enable{1};</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="class_raw_uio_access.html#a067c0eea7952bb464bd946845b1c0ff9">::write</a>(_uioProcFd, &amp;enable, <span class="keyword">sizeof</span>(enable));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  std::ignore = <a class="code" href="class_raw_uio_access.html#a067c0eea7952bb464bd946845b1c0ff9">::write</a>(_uioProcFd, &amp;enable, <span class="keyword">sizeof</span>(enable));</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
@@ -417,7 +417,7 @@ $(document).ready(function(){initNavTree('test_uio_backend_unified_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_uio_backend_unified_8cpp.html">testUioBackendUnified.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 17 2024 05:01:44 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

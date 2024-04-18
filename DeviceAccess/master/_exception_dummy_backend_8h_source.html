@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('_exception_dummy_backend_8h_source.htm
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        acc = decorator;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(acc-&gt;isReadable()) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// decorate all poll-type variable so returned validity of the data can be controlled</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">auto</span> decorator = boost::make_shared&lt;ExceptionDummyPollDecorator&lt;UserType&gt;&gt;(</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            acc, boost::dynamic_pointer_cast&lt;ExceptionDummy&gt;(this-&gt;shared_from_this()));</div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('_exception_dummy_backend_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_88f2d6bf3e5c857c71ef9d0d20aedb7b.html">DummyBackend</a></li><li class="navelem"><a class="el" href="dir_ced00e1711a5de84614ce156ecd6cc66.html">include</a></li><li class="navelem"><a class="el" href="_exception_dummy_backend_8h.html">ExceptionDummyBackend.h</a></li>
-    <li class="footer">Generated on Wed Apr 17 2024 05:01:44 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
