@@ -91,29 +91,29 @@ $(document).ready(function(){initNavTree('_virtual_lab_backend_8h.html',''); ini
 <div class="title">VirtualLabBackend.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;mutex&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>&quot;</code><br />
+<code>#include &lt;ChimeraTK/BackendFactory.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/DeviceAccessVersion.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/DummyBackend.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/DummyRegisterAccessor.h&gt;</code><br />
 <code>#include &lt;boost/fusion/algorithm.hpp&gt;</code><br />
 <code>#include &lt;boost/fusion/container/set.hpp&gt;</code><br />
 <code>#include &lt;boost/fusion/include/at_key.hpp&gt;</code><br />
 <code>#include &lt;boost/msm/back/state_machine.hpp&gt;</code><br />
 <code>#include &lt;boost/msm/front/euml/euml.hpp&gt;</code><br />
 <code>#include &lt;boost/msm/front/state_machine_def.hpp&gt;</code><br />
-<code>#include &lt;ChimeraTK/BackendFactory.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/DeviceAccessVersion.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/DummyBackend.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/DummyRegisterAccessor.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>&quot;</code><br />
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for VirtualLabBackend.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_virtual_lab_backend_8h__incl.svg" width="100%" height="451"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_virtual_lab_backend_8h__incl.svg" width="100%" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -261,7 +261,7 @@ Macros</h2></td></tr>
 <p>The first argument eventName is the name of an event previously declared using BOOST_MSM_EUML_EVENT. The second argument is a DummyRegisterAccessor for the register to connect with. Use this macro in the of the WRITE_EVENT_TABLE and READ_EVENT_TABLE macros. Do not separate multiple calls to CONNECT_REGISTER_EVENT inside the same WRITE_EVENT_TABLE/READ_EVENT_TABLE macro by any separator (i.e. no comma or semicolon in between - starting a new line is allowed, though!).</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00128">128</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00126">126</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -291,34 +291,34 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="comment">/* createInstance() function used by the BackendFactory. Creates only one                                            \</span></div>
-<div class="line"><span class="comment">   * instance per instance name! */</span> \</div>
-<div class="line">  static boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt; createInstance(                                                     \</div>
-<div class="line">      std::string address, std::map&lt;std::string, std::string&gt; parameters) {                                              \</div>
-<div class="line">    if(parameters[<span class="stringliteral">&quot;map&quot;</span>].empty()) {                                                                                      \</div>
-<div class="line">      throw ChimeraTK::logic_error(<span class="stringliteral">&quot;No map file name given in the device descriptor.&quot;</span>);                                  \</div>
-<div class="line">    }                                                                                                                    \</div>
-<div class="line">    return returnInstance&lt;name&gt;(address, <a class="code" href="test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31">convertPathRelativeToDmapToAbs</a>(parameters[<span class="stringliteral">&quot;map&quot;</span>]));                             \</div>
-<div class="line">  }                                                                                                                      \</div>
+<div class="line"><span class="comment">   * instance per instance name! */</span>                                                                                    \</div>
+<div class="line">  static boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt; createInstance(                                                   \</div>
+<div class="line">      std::string address, std::map&lt;std::string, std::string&gt; parameters) {                                            \</div>
+<div class="line">    if(parameters[<span class="stringliteral">&quot;map&quot;</span>].empty()) {                                                                                    \</div>
+<div class="line">      throw ChimeraTK::logic_error(<span class="stringliteral">&quot;No map file name given in the device descriptor.&quot;</span>);                                \</div>
+<div class="line">    }                                                                                                                  \</div>
+<div class="line">    return returnInstance&lt;name&gt;(address, <a class="code" href="test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31">convertPathRelativeToDmapToAbs</a>(parameters[<span class="stringliteral">&quot;map&quot;</span>]));                           \</div>
+<div class="line">  }                                                                                                                    \</div>
 <div class="line">  <span class="comment">/* Static and global instance map (plain static members don&#39;t work                                                   \</span></div>
-<div class="line"><span class="comment">   * header-only!) */</span> \</div>
-<div class="line">  static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt;&amp; getInstanceMap() {                          \</div>
-<div class="line">    static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt; instanceMap;                               \</div>
-<div class="line">    return instanceMap;                                                                                                  \</div>
-<div class="line">  }                                                                                                                      \</div>
-<div class="line">  <span class="comment">/* Class to register the backend type with the factory. */</span>                                                             \</div>
-<div class="line">  class BackendRegisterer {                                                                                              \</div>
-<div class="line">   public:                                                                                                               \</div>
-<div class="line">    BackendRegisterer() : dummy(0) {                                                                                     \</div>
-<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;VirtualLabBackend::BackendRegisterer: registering backend type &quot;</span> &lt;&lt; #name &lt;&lt; std::endl;              \</div>
-<div class="line">      ChimeraTK::BackendFactory::getInstance().registerBackendType(#name, &amp;name::createInstance);                        \</div>
-<div class="line">    }                                                                                                                    \</div>
+<div class="line"><span class="comment">   * header-only!) */</span>                                                                                                  \</div>
+<div class="line">  static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt;&amp; getInstanceMap() {                        \</div>
+<div class="line">    static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt; instanceMap;                             \</div>
+<div class="line">    return instanceMap;                                                                                                \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  <span class="comment">/* Class to register the backend type with the factory. */</span>                                                           \</div>
+<div class="line">  class BackendRegisterer {                                                                                            \</div>
+<div class="line">   public:                                                                                                             \</div>
+<div class="line">    BackendRegisterer() : dummy(0) {                                                                                   \</div>
+<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;VirtualLabBackend::BackendRegisterer: registering backend type &quot;</span> &lt;&lt; #name &lt;&lt; std::endl;            \</div>
+<div class="line">      ChimeraTK::BackendFactory::getInstance().registerBackendType(#name, &amp;name::createInstance);                      \</div>
+<div class="line">    }                                                                                                                  \</div>
 <div class="line">    <span class="comment">/* dummy variable we can reference to force linking the object code when                                           \</span></div>
-<div class="line"><span class="comment">     * just using the header */</span> \</div>
-<div class="line">    int dummy;                                                                                                           \</div>
-<div class="line">  };                                                                                                                     \</div>
-<div class="line">  static BackendRegisterer backendRegisterer;                                                                            \</div>
-<div class="line">  <span class="comment">/* Actual constructor of the VirtualLabBackend class. */</span>                                                               \</div>
-<div class="line">  name(std::string mapFileName) : VirtualLabBackend(mapFileName), ##__VA_ARGS__, theStateMachine(this) {</div>
+<div class="line"><span class="comment">     * just using the header */</span>                                                                                        \</div>
+<div class="line">    int dummy;                                                                                                         \</div>
+<div class="line">  };                                                                                                                   \</div>
+<div class="line">  static BackendRegisterer backendRegisterer;                                                                          \</div>
+<div class="line">  <span class="comment">/* Actual constructor of the VirtualLabBackend class. */</span>                                                             \</div>
+<div class="line">  explicit name(std::string mapFileName) : VirtualLabBackend(mapFileName), ##__VA_ARGS__, theStateMachine(this) {</div>
 <div class="ttc" id="atest_virtual_lab_8cpp_html_ae6e687588f105b8c77b93929e5f18d31"><div class="ttname"><a href="test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31">convertPathRelativeToDmapToAbs</a></div><div class="ttdeci">std::string convertPathRelativeToDmapToAbs(const std::string &amp;mapfileName)</div><div class="ttdef"><b>Definition:</b> <a href="test_virtual_lab_8cpp_source.html#l00229">testVirtualLab.cpp:229</a></div></div>
 </div><!-- fragment -->
 <p>Declare the constructor of the VirtualLabBackend. </p>
@@ -327,7 +327,7 @@ Macros</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The backends are not thread-safe. When using a VirtualLabBackend from a frontend Device concurrently in multiple threads, a transparent locking decorator must be used. When using it concurrently from the backend-side (e.g. through the backend register accessors, timers, sinks and sources etc.) you must ensure proper locking yourself.</dd></dl>
 <p>(test coverage hint: these two macros are used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00294">294</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00292">292</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Macros</h2></td></tr>
 <p>The argument actionName is the name of the resulting action class. The code must follow this macro and has to be terminated with END_DECLARE_ACTION.</p>
 <p>(test coverage hint: these two macros are used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00192">192</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00190">190</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ Macros</h2></td></tr>
 <p>Use instead of BOOST_MSM_EUML_EVENT, as we must not create instances for the events as well.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00045">45</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00043">43</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ Macros</h2></td></tr>
 <p>The argument guardName is the name of the resulting guard class. The code must follow this macro, contain a return statement returning a boolean and has to be terminated with END_DECLARE_GUARD.</p>
 <p>(test coverage hint: these two macros are used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00175">175</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00173">173</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ Macros</h2></td></tr>
 <p>Entry and exit of this state will be looged to std::cout.</p>
 <p>(test coverage hint: this macro is used in the test, but output is not actually tested) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00061">61</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00059">59</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +493,7 @@ Macros</h2></td></tr>
 <p>This is just like DECLARE_STATE_MACHINE but with a fixed name "mainStateMachine". Also the state machine will be instantiated under the name "theStateMachine", as expected by other parts of this framework.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00257">257</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00255">255</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Macros</h2></td></tr>
 <p>UserType is the data type the data should be accessed by. The conversion is handled internally using the FixedPointConverter.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00088">88</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00086">86</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ Macros</h2></td></tr>
 <p>UserType is the data type the data should be accessed by. The conversion is handled internally using the FixedPointConverter.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00080">80</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00078">78</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ Macros</h2></td></tr>
 <p>The resulting guard condition can be used on an event defined with the CONNECT_REGISTER_EVENT macro. The first argument guardName is the name of the resulting guard class and the second argument will be parsed as the guard condition (standard C++ syntax). Inside the condition, the variable "value" can be used which contains the value of the register written in the event (type: int32_t, always the first word written).</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00154">154</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00152">152</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ Macros</h2></td></tr>
 <p>Declare a plain state, without any entry or exit functions etc. </p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00052">52</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00050">50</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +679,7 @@ Macros</h2></td></tr>
 <p>Several types will be defined based on this names with one or more trailing underscores. initialState is the name of the initial state. Multiple states can be added by separating them with "&lt;&lt;". transitionTable is the transition table in eUML syntax.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00239">239</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00237">237</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +713,7 @@ Macros</h2></td></tr>
 <p>Will fire the given event.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00207">207</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00205">205</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +743,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">typedef</span> boost::fusion::vector&lt;<a class="code" href="_timer_group_8h.html#af5fc1f8f3478c2e0e28a5176dd821333">DECLARE_TIMER_GROUP_DECLARE_VECTOR</a>(__VA_ARGS__)&gt; name##__;                             \</div>
-<div class="line">  class name##_ : <span class="keyword">public</span> TimerGroup&lt;name##__&gt; {                                                                        \</div>
+<div class="line">  class name##_ : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html">ChimeraTK::VirtualLab::TimerGroup&lt;name##__&gt;</a> {                                                 \</div>
 <div class="line">   public:                                                                                                             \</div>
 <div class="line">    name##_(dummyDeviceType* _dev) : TimerGroup(), dev(_dev) {                                                         \</div>
 <div class="line">      DECLARE_TIMER_GROUP_MAKEMAP(__VA_ARGS__)                                                                         \</div>
@@ -754,14 +754,15 @@ Macros</h2></td></tr>
 <div class="line">    dummyDeviceType* dev;                                                                                              \</div>
 <div class="line">  };                                                                                                                   \</div>
 <div class="line">  name##_ name</div>
-<div class="ttc" id="a_timer_group_8h_html_a2323b9a90b8b24e9b33624f936b3d17c"><div class="ttname"><a href="_timer_group_8h.html#a2323b9a90b8b24e9b33624f936b3d17c">DECLARE_TIMER_GROUP_INIT_VECTOR</a></div><div class="ttdeci">#define DECLARE_TIMER_GROUP_INIT_VECTOR(...)</div><div class="ttdoc">Helper macros: DO NOT DIRECTLY USE.</div><div class="ttdef"><b>Definition:</b> <a href="_timer_group_8h_source.html#l00113">TimerGroup.h:113</a></div></div>
-<div class="ttc" id="a_timer_group_8h_html_af5fc1f8f3478c2e0e28a5176dd821333"><div class="ttname"><a href="_timer_group_8h.html#af5fc1f8f3478c2e0e28a5176dd821333">DECLARE_TIMER_GROUP_DECLARE_VECTOR</a></div><div class="ttdeci">#define DECLARE_TIMER_GROUP_DECLARE_VECTOR(...)</div><div class="ttdoc">Helper macros: DO NOT DIRECTLY USE.</div><div class="ttdef"><b>Definition:</b> <a href="_timer_group_8h_source.html#l00087">TimerGroup.h:87</a></div></div>
+<div class="ttc" id="a_timer_group_8h_html_a2323b9a90b8b24e9b33624f936b3d17c"><div class="ttname"><a href="_timer_group_8h.html#a2323b9a90b8b24e9b33624f936b3d17c">DECLARE_TIMER_GROUP_INIT_VECTOR</a></div><div class="ttdeci">#define DECLARE_TIMER_GROUP_INIT_VECTOR(...)</div><div class="ttdoc">Helper macros: DO NOT DIRECTLY USE.</div><div class="ttdef"><b>Definition:</b> <a href="_timer_group_8h_source.html#l00115">TimerGroup.h:115</a></div></div>
+<div class="ttc" id="a_timer_group_8h_html_af5fc1f8f3478c2e0e28a5176dd821333"><div class="ttname"><a href="_timer_group_8h.html#af5fc1f8f3478c2e0e28a5176dd821333">DECLARE_TIMER_GROUP_DECLARE_VECTOR</a></div><div class="ttdeci">#define DECLARE_TIMER_GROUP_DECLARE_VECTOR(...)</div><div class="ttdoc">Helper macros: DO NOT DIRECTLY USE.</div><div class="ttdef"><b>Definition:</b> <a href="_timer_group_8h_source.html#l00089">TimerGroup.h:89</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_virtual_lab_1_1_timer_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html">ChimeraTK::VirtualLab::TimerGroup</a></div><div class="ttdoc">Timer group base class.</div><div class="ttdef"><b>Definition:</b> <a href="_timer_group_8h_source.html#l00140">TimerGroup.h:140</a></div></div>
 </div><!-- fragment -->
 <p>Declare a timer group with a given name. </p>
 <p>The additional arguments must be the timers part of this group, previously declared using DECLARE_TIMER.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00214">214</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00212">212</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +778,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00321">321</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00319">319</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +794,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00201">201</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00199">199</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +810,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00184">184</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00182">182</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +826,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00116">116</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00114">114</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +842,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00102">102</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00100">100</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +866,7 @@ Macros</h2></td></tr>
 <p>This should be called inside of the constructor.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00328">328</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00326">326</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +889,7 @@ Macros</h2></td></tr>
 <p>Provide a "table" of events and register names using the CONNECT_REGISTER_EVENT macro for read events The table must be terminated with END_READEVENT_TABLE. </p>
 <p>(test coverage hint: these two macros are used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00110">110</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00108">108</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +913,7 @@ Macros</h2></td></tr>
 <p>Must be placed into the C++ source file for any VirtualLabBackend even when not intending to use the backend factory (not into the header file)!</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00336">336</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00334">334</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +937,7 @@ Macros</h2></td></tr>
 <p>The table must be terminated with END_WRITEEVENT_TABLE.</p>
 <p>(test coverage hint: these two macros are used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00096">96</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00094">94</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -946,7 +947,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_virtual_lab_backend_8h.html">VirtualLabBackend.h</a></li>
-    <li class="footer">Generated on Fri Apr 12 2024 08:38:05 for ChimeraTK-VirtualLab by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 19 2024 03:54:06 for ChimeraTK-VirtualLab by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

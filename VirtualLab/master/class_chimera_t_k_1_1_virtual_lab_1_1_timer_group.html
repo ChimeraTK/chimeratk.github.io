@@ -173,7 +173,7 @@ class ChimeraTK::VirtualLab::TimerGroup&lt; timerTypes &gt;</h3>
 <p>The template agument must be a boost::fusion::vector of the timer types. The implementation must initialise the timerTypes vector "timers" with all timers and the map names with the timer names and the corresponding index in the timerTypes vector.</p>
 <p>This implementation is done for VirtualDevices using the DECLARE_TIMER_GROUP macro. </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00138">138</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00140">140</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adf5f4d211c697f631015e93a9b258801"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf5f4d211c697f631015e93a9b258801">&#9670;&nbsp;</a></span>TimerGroup()</h2>
@@ -200,7 +200,7 @@ template&lt;class timerTypes &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00140">140</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00142">142</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ template&lt;class timerTypes &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00141">141</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00143">143</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ template&lt;class timerTypes &gt; </div>
 <p>Advance the timer to the next requested time. </p>
 <p>Returns true if any timer was fired. Otherwise none of the timers was set and thus the current time remains unchanged </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00181">181</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00183">183</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -311,7 +311,7 @@ template&lt;class timerTypes &gt; </div>
 <p>Advance the group to the next requested time of the given sub-timer. </p>
 <p>Returns true if any timer was fired. Note: this call will be relatively expensive due to the string argument. If possible (e.g. inside a VirtualDevice implementation), access the subtimer directly, obtain its remaining time and call <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a0e863e8e3a390ac56c51b60f848572ea" title="Advance the timer&#39;s current time by tval.">advance(VirtualTime)</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00188">188</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00190">190</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -360,7 +360,7 @@ template&lt;class timerTypes &gt; </div>
 <p>Advance the timer's current time by tval. </p>
 <p>Returns true if any timer was fired. If tval &lt; 0, this function does nothing. If tval &gt; <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a516fa326ebb6fa0a97630ca507883655" title="Get remaining time until the next timer fires, or -1 if no timer has been set.">getRemaining()</a>, the timer is advanced in multiple steps to make sure repetitive events are fired. </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00166">166</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00168">168</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -399,7 +399,7 @@ template&lt;class timerTypes &gt; </div>
 
 <p>Get current time. </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00191">191</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00193">193</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ template&lt;class timerTypes &gt; </div>
 
 <p>Get remaining time until the next timer fires, or -1 if no timer has been set. </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00145">145</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00147">147</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -471,7 +471,7 @@ template&lt;class timerTypes &gt; </div>
 <p>Get remaining time until the specified timer fires, or -1 if the timer has not been set. </p>
 <p>Note: this call will be relatively expensive due to the string argument. If possible (e.g. inside a VirtualDevice implementation), access the subtimer directly. </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00156">156</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00158">158</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +500,7 @@ template&lt;class timerTypes &gt; </div>
 
 <p>current time </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00248">248</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00250">250</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +528,7 @@ template&lt;class timerTypes &gt; </div>
 
 <p>functor to find the remaining time of a given timer </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00208">208</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00210">210</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ template&lt;class timerTypes &gt; </div>
 
 <p>std::vector of timer names </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00245">245</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00247">247</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +584,7 @@ template&lt;class timerTypes &gt; </div>
 
 <p>fusion::vector of timer instances </p>
 
-<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00242">242</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_timer_group_8h_source.html#l00244">244</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +597,7 @@ template&lt;class timerTypes &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_virtual_lab.html">VirtualLab</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html">TimerGroup</a></li>
-    <li class="footer">Generated on Fri Apr 12 2024 08:38:05 for ChimeraTK-VirtualLab by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 19 2024 03:54:07 for ChimeraTK-VirtualLab by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

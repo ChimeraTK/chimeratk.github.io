@@ -170,7 +170,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>A <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html" title="A SignalSource provides time-dependent signal values to a SignalSink.">SignalSource</a> provides time-dependent signal values to a <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_sink.html" title="A SignalSink requensts time-dependent signal values from a SignalSource.">SignalSink</a>. </p>
 <p>Objects of this class will normally be members of a <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html" title="Base class for VirtualLab dummy devices.">VirtualLabBackend</a> or a model component. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00029">29</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00031">31</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace04f87788769ffb08923f91960c43c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace04f87788769ffb08923f91960c43c1">&#9670;&nbsp;</a></span>SignalSource()</h2>
@@ -228,7 +228,7 @@ Protected Attributes</h2></td></tr>
 
 <p>[call from backend/model] provide new value for the given time </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00112">112</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00114">114</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -266,7 +266,7 @@ Protected Attributes</h2></td></tr>
 <p>Obtain the time of latest computed value. </p>
 <p>See <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#a69bd12a91223e5169d0e2465187af8a4" title="Obtain the latest computed value.">getLatestValue()</a> for further comments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00141">141</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00147">147</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -305,7 +305,7 @@ Protected Attributes</h2></td></tr>
 <p>This function will usually be called inside the compute function (see <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#a3963abd93e2319e0671b65689060f6a3" title="[call from backend/model] set callback function to be called when a new value needs to be computed.">setCallback()</a>) to have a basis for the computations. Use <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#af0d6a9aa90a750f21354b8b458bd4975" title="Obtain the time of latest computed value.">getLatestTime()</a> to obtain the time of the latest state.</p>
 <p>Guarantee: When this function is called inside the compute function, the returned value will be in the past and not older than the gap configured with <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#af6aca8198c62495aadf8703f6ba7a350" title="[call from backend/model] Set maximum time gap.">setMaximumGap()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00136">136</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00140">140</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -344,7 +344,7 @@ Protected Attributes</h2></td></tr>
 <p>[called from sink] obtain value for the given time. </p>
 <p>time must be &gt;= 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00116">116</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00120">120</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -423,7 +423,7 @@ Protected Attributes</h2></td></tr>
 <p>Enable interpolation. </p>
 <p>No states will be fully computed by the model closer together than the maximum gap time. Instead requests for these times will be interpolated. Note that this usually will lead to requests to other model components being generated into the "future" (from the current request), since values are needed on both sides for an interpolation (in contrast to an extrapolation, which might be invalid). </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00090">90</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00092">92</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -455,7 +455,7 @@ Protected Attributes</h2></td></tr>
 <p>If a state is requested into the far future (more than 2*hugeGap), intermediate steps with a distance of hugeGap (instead of maxGap) will be inserted to fill the gap. Only the last hugeGap interval before the requested state will be filled with intermediate steps in a distance of maxGap.</p>
 <p>The hugeGap must be larger than maxGap. If not set, the feature is disabled and only maxGap is used to fill large steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00027">27</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00031">31</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -500,7 +500,7 @@ Protected Attributes</h2></td></tr>
 <li>the requested time to return the interpolated state for </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00105">105</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00107">107</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -530,7 +530,7 @@ Protected Attributes</h2></td></tr>
 
 <p>[called from sink] set maximum time difference a <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#a2401b56b3b8e13f806dd63aa4ef0b88a" title="[called from sink] obtain value for the given time.">getValue()</a> request may go into the past </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00030">30</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00036">36</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -562,7 +562,7 @@ Protected Attributes</h2></td></tr>
 <p>If a value further into the future of the latest computed value than the maximum gap time is requested, intermediate values will be computed so that no values are further apart than the gap.</p>
 <p>If the gap is not set, intermediate states are never computed. The maximum gap must be larger than the validity period to have an effect. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00024">24</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00026">26</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -592,7 +592,7 @@ Protected Attributes</h2></td></tr>
 
 <p>[call from model/backend] set callback function to be called when <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#a48ea6399fc08fdc003615540b0f208cd" title="[called from sink] set maximum time difference a getValue() request may go into the past">setMaxHistoryLength()</a> is called The callback's argument is the new history length. </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00038">38</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8cpp_source.html#l00044">44</a> of file <a class="el" href="_signal_source_8cpp_source.html">SignalSource.cpp</a>.</p>
 
 </div>
 </div>
@@ -623,7 +623,7 @@ Protected Attributes</h2></td></tr>
 <p>DEPRECATED, alias for <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html#a2439eafc59d2de52e2e9334bb1639097" title="[call from backend/model] set validity period.">setValidityPeriod()</a> </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>remove after release of version 00.02 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00055">55</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00057">57</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -698,7 +698,7 @@ Protected Attributes</h2></td></tr>
 
 <p>store value in a <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html" title="A set of state variables contains a struct of time-dependent variables.">StateVariableSet</a> with just a double as type </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00159">159</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00167">167</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 
 </div>
 </div>
@@ -724,7 +724,7 @@ Protected Attributes</h2></td></tr>
 
 <p>function called when connect() is called </p>
 
-<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00156">156</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_signal_source_8h_source.html#l00164">164</a> of file <a class="el" href="_signal_source_8h_source.html">SignalSource.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_virtual_lab.html">VirtualLab</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_signal_source.html">SignalSource</a></li>
-    <li class="footer">Generated on Fri Apr 12 2024 08:38:05 for ChimeraTK-VirtualLab by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 19 2024 03:54:07 for ChimeraTK-VirtualLab by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
