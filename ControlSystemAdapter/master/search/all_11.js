@@ -31,10 +31,11 @@ var searchData=
   ['todouble_3c_20std_3a_3astring_20_3e_271',['toDouble&lt; std::string &gt;',['../namespace_chimera_t_k.html#a7a26be422586550a071b2cdbbfa5376e',1,'ChimeraTK']]],
   ['totype_272',['toType',['../namespace_chimera_t_k.html#a7a2ffbe236e21d41b8cd3be170b3fe02',1,'ChimeraTK']]],
   ['totype_2eh_273',['toType.h',['../to_type_8h.html',1,'']]],
-  ['totype_3c_20std_3a_3astring_20_3e_274',['toType&lt; std::string &gt;',['../namespace_chimera_t_k.html#af0709cce07849becb0e11825ed3838b0',1,'ChimeraTK']]],
-  ['type_275',['type',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#a57bf262aaabe164e8bf5d35c72046cff',1,'ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover']]],
-  ['typedpvholder_276',['TypedPVHolder',['../struct_typed_p_v_holder.html#a3aff2efd16a76cab7114535bc851a12c',1,'TypedPVHolder::TypedPVHolder()'],['../struct_typed_p_v_holder.html',1,'TypedPVHolder&lt; DataType &gt;']]],
-  ['typedreadarraytest_277',['typedReadArrayTest',['../struct_test_application_fixture.html#a85c2665d8b99c8a66922ea652f79988e',1,'TestApplicationFixture']]],
-  ['typedwritearraytest_278',['typedWriteArrayTest',['../struct_test_application_fixture.html#ab31faee6ca0ae368646af11514b75b0f',1,'TestApplicationFixture']]],
-  ['typedwritescalartest_279',['typedWriteScalarTest',['../struct_test_application_fixture.html#a458a098a91ed635640cd262af11d1f67',1,'TestApplicationFixture']]]
+  ['totype_3c_20chimeratk_3a_3avoid_20_3e_274',['toType&lt; ChimeraTK::Void &gt;',['../namespace_chimera_t_k.html#a9d27f38986685d455925d24f96b100c6',1,'ChimeraTK']]],
+  ['totype_3c_20std_3a_3astring_20_3e_275',['toType&lt; std::string &gt;',['../namespace_chimera_t_k.html#af0709cce07849becb0e11825ed3838b0',1,'ChimeraTK']]],
+  ['type_276',['type',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#a57bf262aaabe164e8bf5d35c72046cff',1,'ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover']]],
+  ['typedpvholder_277',['TypedPVHolder',['../struct_typed_p_v_holder.html#a3aff2efd16a76cab7114535bc851a12c',1,'TypedPVHolder::TypedPVHolder()'],['../struct_typed_p_v_holder.html',1,'TypedPVHolder&lt; DataType &gt;']]],
+  ['typedreadarraytest_278',['typedReadArrayTest',['../struct_test_application_fixture.html#a85c2665d8b99c8a66922ea652f79988e',1,'TestApplicationFixture']]],
+  ['typedwritearraytest_279',['typedWriteArrayTest',['../struct_test_application_fixture.html#ab31faee6ca0ae368646af11514b75b0f',1,'TestApplicationFixture']]],
+  ['typedwritescalartest_280',['typedWriteScalarTest',['../struct_test_application_fixture.html#a458a098a91ed635640cd262af11d1f67',1,'TestApplicationFixture']]]
 ];

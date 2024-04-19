@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"test_persistent_data_storage_8cpp.html":[3,0,4,1,6],
 "test_persistent_data_storage_8cpp.html#a31d5e8d6a1eb8e77fcaee35cded120ba":[3,0,4,1,6,3],
 "test_persistent_data_storage_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[3,0,4,1,6,1],
 "test_persistent_data_storage_8cpp.html#aa50d426623b15cb4352f20ca3ac69ea6":[3,0,4,1,6,5],
@@ -50,7 +51,8 @@ var NAVTREEINDEX2 =
 "to_double_8h_source.html":[3,0,4,1,12],
 "to_type_8h.html":[3,0,4,0,0,0,0,1],
 "to_type_8h.html#a7a2ffbe236e21d41b8cd3be170b3fe02":[3,0,4,0,0,0,0,1,0],
-"to_type_8h.html#af0709cce07849becb0e11825ed3838b0":[3,0,4,0,0,0,0,1,1],
+"to_type_8h.html#a9d27f38986685d455925d24f96b100c6":[3,0,4,0,0,0,0,1,1],
+"to_type_8h.html#af0709cce07849becb0e11825ed3838b0":[3,0,4,0,0,0,0,1,2],
 "to_type_8h_source.html":[3,0,4,0,0,0,0,1],
 "todo.html":[0]
 };

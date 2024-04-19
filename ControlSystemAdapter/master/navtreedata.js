@@ -65,7 +65,7 @@ var NAVTREEINDEX =
 [
 "_application_base_8cc.html",
 "classes.html",
-"test_persistent_data_storage_8cpp.html#a31d5e8d6a1eb8e77fcaee35cded120ba"
+"test_persistent_data_storage_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

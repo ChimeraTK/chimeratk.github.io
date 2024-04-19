@@ -29,5 +29,6 @@ var namespace_chimera_t_k =
     [ "toDouble", "namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a", null ],
     [ "toDouble< std::string >", "namespace_chimera_t_k.html#a7a26be422586550a071b2cdbbfa5376e", null ],
     [ "toType", "namespace_chimera_t_k.html#a7a2ffbe236e21d41b8cd3be170b3fe02", null ],
+    [ "toType< ChimeraTK::Void >", "namespace_chimera_t_k.html#a9d27f38986685d455925d24f96b100c6", null ],
     [ "toType< std::string >", "namespace_chimera_t_k.html#af0709cce07849becb0e11825ed3838b0", null ]
 ];
