@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: device_backends/NumericAddressedBackend/include/NumericAddressedBackendMuxedRegisterAccessor.h Source File</title>
+<title>ChimeraTK-DeviceAccess: include/NumericAddressedBackendMuxedRegisterAccessor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -245,8 +245,8 @@ $(document).ready(function(){initNavTree('_numeric_addressed_backend_muxed_regis
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// check number of words</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span>(numberOfElements + elementsOffset &gt; _registerInfo.nElements) {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Requested number of elements exceeds the size of the register! Requested end: &quot;</span> +</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          std::to_string(numberOfElements + elementsOffset) +</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          <span class="stringliteral">&quot;, register length: &quot;</span> + std::to_string(_registerInfo.nElements));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(numberOfElements + elementsOffset) +</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          <span class="stringliteral">&quot;, register length: &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(_registerInfo.nElements));</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">// update register info</span></div>
@@ -385,9 +385,10 @@ $(document).ready(function(){initNavTree('_numeric_addressed_backend_muxed_regis
 <div class="ttc" id="aclass_chimera_t_k_1_1_version_number_html"><div class="ttname"><a href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a></div><div class="ttdoc">Class for generating and holding version numbers without exposing a numeric representation.</div><div class="ttdef"><b>Definition:</b> <a href="_version_number_8h_source.html#l00023">VersionNumber.h:23</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1logic__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a></div><div class="ttdoc">Exception thrown when a logic error has occured.</div><div class="ttdef"><b>Definition:</b> <a href="_exception_8h_source.html#l00051">Exception.h:51</a></div></div>
 <div class="ttc" id="acreate_data_converter_8h_html"><div class="ttname"><a href="create_data_converter_8h.html">createDataConverter.h</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_8h_source.html#l00016">DummyBackend.h:16</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a07553b57fe8fa42f54929244fc99be26"><div class="ttname"><a href="namespace_chimera_t_k.html#a07553b57fe8fa42f54929244fc99be26">ChimeraTK::operator+</a></div><div class="ttdeci">std::string operator+(const std::string &amp;leftHandSide, const RegisterPath &amp;rightHandSide)</div><div class="ttdoc">non-member + operator for RegisterPath: concatenate with normal strings.</div><div class="ttdef"><b>Definition:</b> <a href="_register_path_8cc_source.html#l00026">RegisterPath.cc:26</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a0c6a8b37004cfe48be8855986e1316c8"><div class="ttname"><a href="namespace_chimera_t_k.html#a0c6a8b37004cfe48be8855986e1316c8">ChimeraTK::callForRawType</a></div><div class="ttdeci">void callForRawType(const DataType &amp;type, LAMBDATYPE lambda)</div><div class="ttdoc">callForRawType() is similar to callForType(), just with a subset of supported data types which can be...</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l01018">SupportedUserTypes.h:1018</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_a20b2775608abae67eee7a9e7b7cf6b3c"><div class="ttname"><a href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">ChimeraTK::to_string</a></div><div class="ttdeci">std::string to_string(Boolean &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00059">SupportedUserTypes.h:59</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a3eb35d143efd5215194f952d74c5b343"><div class="ttname"><a href="namespace_chimera_t_k.html#a3eb35d143efd5215194f952d74c5b343">ChimeraTK::MULTIPLEXED_SEQUENCE_PREFIX</a></div><div class="ttdeci">constexpr auto MULTIPLEXED_SEQUENCE_PREFIX</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00017">NumericAddressedBackendMuxedRegisterAccessor.h:17</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a832f6b113713661de4a7f9f68112461a"><div class="ttname"><a href="namespace_chimera_t_k.html#a832f6b113713661de4a7f9f68112461a">ChimeraTK::SEQUENCE_PREFIX</a></div><div class="ttdeci">constexpr auto SEQUENCE_PREFIX</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00018">NumericAddressedBackendMuxedRegisterAccessor.h:18</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6"><div class="ttname"><a href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">ChimeraTK::DataValidity::ok</a></div><div class="ttdeci">@ ok</div></div>
@@ -400,8 +401,8 @@ $(document).ready(function(){initNavTree('_numeric_addressed_backend_muxed_regis
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_d598e22cf3611ba63bff99f8eabac0af.html">NumericAddressedBackend</a></li><li class="navelem"><a class="el" href="dir_841b7e76fbb789784c18eea98cf7d838.html">include</a></li><li class="navelem"><a class="el" href="_numeric_addressed_backend_muxed_register_accessor_8h.html">NumericAddressedBackendMuxedRegisterAccessor.h</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_numeric_addressed_backend_muxed_register_accessor_8h.html">NumericAddressedBackendMuxedRegisterAccessor.h</a></li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

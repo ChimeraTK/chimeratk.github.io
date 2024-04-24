@@ -136,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b2588c3c6bc6e8d155d3a80d629210d"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a1b2588c3c6bc6e8d155d3a80d629210d">clone</a> () const =0</td></tr>
 <tr class="memdesc:a1b2588c3c6bc6e8d155d3a80d629210d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create copy of the object.  <a href="class_chimera_t_k_1_1_backend_register_info_base.html#a1b2588c3c6bc6e8d155d3a80d629210d">More...</a><br /></td></tr>
 <tr class="separator:a1b2588c3c6bc6e8d155d3a80d629210d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5fa8aa3cc68eeeeba595825447badc"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a1d5fa8aa3cc68eeeeba595825447badc">getQualifiedAsyncId</a> () const</td></tr>
+<tr class="memdesc:a1d5fa8aa3cc68eeeeba595825447badc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the fully qualified <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> ID.  <a href="class_chimera_t_k_1_1_backend_register_info_base.html#a1d5fa8aa3cc68eeeeba595825447badc">More...</a><br /></td></tr>
+<tr class="separator:a1d5fa8aa3cc68eeeeba595825447badc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DeviceBackend-independent register description. </p>
@@ -299,7 +302,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of dimensions of this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00052">52</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00058">58</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -353,6 +356,38 @@ Public Member Functions</h2></td></tr>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_ad7a70e2d734cd02c65f713be0045a690_icgraph.svg" width="100%" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a1d5fa8aa3cc68eeeeba595825447badc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d5fa8aa3cc68eeeeba595825447badc">&#9670;&nbsp;</a></span>getQualifiedAsyncId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;size_t&gt; ChimeraTK::BackendRegisterInfoBase::getQualifiedAsyncId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the fully qualified <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> ID. </p>
+<p>The default implementation returns an empty vector. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a981a03fdaec07b99cdb994d44ab95703">ChimeraTK::NumericAddressedRegisterInfo</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00053">53</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +508,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>device_backends/include/<a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a></li>
+<li>include/<a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -481,7 +516,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:19 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:28 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

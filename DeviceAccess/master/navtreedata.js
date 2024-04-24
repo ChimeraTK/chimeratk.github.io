@@ -46,7 +46,7 @@ var NAVTREE =
       [ "Concept overview", "design__async_n_d_register_accessor__numeric_addressed.html#conceptOverview", [
         [ "AsyncNDRegisterAccessors and the AsyncAccessorManager", "design__async_n_d_register_accessor__numeric_addressed.html#design_AsyncAccessorManager", null ],
         [ "The TriggeredPollDistributor", "design__async_n_d_register_accessor__numeric_addressed.html#design_TriggeredPollDistributor", null ],
-        [ "The TriggerDistributor", "design__async_n_d_register_accessor__numeric_addressed.html#design_TriggerDistributor", null ],
+        [ "The SubDomain", "design__async_n_d_register_accessor__numeric_addressed.html#design_SubDomain", null ],
         [ "Vision: Using the VariableDistributor DOOCS backend", "design__async_n_d_register_accessor__numeric_addressed.html#design_envisioned_DoocsDistributor", null ]
       ] ],
       [ "The AsyncNDRegisterAccessor and the AsyncAccessorManager", "design__async_n_d_register_accessor__numeric_addressed.html#design_AsyncNDRegisterAccessor", [
@@ -55,9 +55,9 @@ var NAVTREE =
         [ "Interface for implementing backends", "design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_usage", null ]
       ] ],
       [ "Implementation in the NumericAddressedBackend", "design__async_n_d_register_accessor__numeric_addressed.html#design_async_NumericAddressedBackend", [
-        [ "Asynchronous registers in the map file", "design__async_n_d_register_accessor__numeric_addressed.html#design_async_map_file", null ],
-        [ "InterruptControllerHandlers", "design__async_n_d_register_accessor__numeric_addressed.html#design_interrupt_constroller_handlers", null ],
-        [ "Interface to implementing backends base on the NumericAddressedBackend", "design__async_n_d_register_accessor__numeric_addressed.html#async_NumericAddressedBackend_interface", null ]
+        [ "Asynchronous registers in the map file", "design__async_n_d_register_accessor__numeric_addressed.html#design_async_map_file", [
+          [ "Canonical interrupt names", "design__async_n_d_register_accessor__numeric_addressed.html#design_async_canonical_interrupt_name", null ]
+        ] ]
       ] ]
     ] ],
     [ "Device Mapping", "dmap.html", [
@@ -174,27 +174,27 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"_mapped_image_8h.html#a1335f948996830a55e08acf57cbab631",
-"_type_changing_decorator_8h_source.html",
-"class_chimera_t_k_1_1_async_n_d_register_accessor.html#a80464e54dfe3c36c858a46dfe3a7fa42",
-"class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a6490bbf255c0da29018b73113342f83a",
-"class_chimera_t_k_1_1_interrupt_controller_handler.html#a8b585cb8ea5054fd93c281b00fb01112",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7d3c15281246ec70a9977004d4fb02c3",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a4cf5b5f59029be203d8bd24f6c1b56f6",
-"class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html#a5bdf5501b097a054a0be0bd5c8332ef3",
-"class_chimera_t_k_1_1_transfer_element_test_accessor.html#af2d334719079f4545dfc2348182c936f",
-"class_chimera_t_k_1_1_xdma_backend.html#aba237aeb88b4c9cd04c4711998912d08",
-"classes.html",
-"globals_g.html",
-"pciedev__io__compat_8h.html#a0ce58a436c9a78d135964a5b62c0dfd5",
-"struct_chimera_t_k_1_1_dummy_protocol0.html#a482f185fcc7f26c3fa1ea1d4a0ebea9a",
-"struct_chimera_t_k_1_1_test_capabilities.html#a6315d056a1d58bfb7b9e48927cf5847e",
-"struct_integers__signed32__async__rw.html#a5ed4c1e2bbc4e0ffb0563198b5be950f",
-"struct_reg_lower_half_of_firmware.html",
-"struct_short_raw__signed16.html#a190f8ebcb20a8bc1ef1405343d807acb",
-"test_dummy_backend_8cpp.html#aa5eeaf24a63e9bca0028cb3a16ad8fae",
-"test_n_d_register_accessor_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_uio_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
+"_mapped_image_8h.html#a3014565c0fa0cadd5639c2a264790404a2bb1e3c71aa95f3c3463fdf7b2577ea7",
+"_uio_access_8cc.html",
+"class_chimera_t_k_1_1_backend_register_info_base.html#aaeb090dbd73d93b6952ecae6279f9abb",
+"class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a606efab4953c8d852a00280b6db981ed",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04",
+"class_chimera_t_k_1_1_rebot_dummy_server.html#afd21652e5990e7687316ef743bb768a2",
+"class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946",
+"class_chimera_t_k_1_1_unified_backend_test.html#a0096a3fc279c9bc1258a56fe5a7f52dd",
+"class_chimera_t_k_1_1async_1_1_variable_distributor.html#afda9ccda1cc38a04ae11c397383cc7b9",
+"classmy_register_info.html#a19975a112e6b0d3795fd423eee953ad5",
+"helper_functions_8cc.html#a4588ba93ef42031eafc572bfebe9b2ca",
+"pciedev__io__compat_8h.html#a7473bbc92af15efd739f5c06409d8bc4",
+"struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html#a410345297605e0aa109db3f4c213d50b",
+"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4.html#ae0330771f19dfbb291f34b94d43e4b4c",
+"struct_interrupt__dummy.html#a2d4e8116732ee0907951c543194f79d1",
+"struct_reg_part_of_area.html#a03076c2a6a4f9acf256de343f55c5363",
+"struct_static_core.html#a540b46cdf636da7518414030e498b095",
+"test_dummy_register_accessor_8cpp.html",
+"test_numeric_addressed_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
+"test_utilities_8cpp.html#a0bddf85a5ea2e73b8ba1d9203c4bf0b1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

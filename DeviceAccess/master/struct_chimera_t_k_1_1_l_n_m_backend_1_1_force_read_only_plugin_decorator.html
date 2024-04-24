@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a988485c8c10714cb990c98c49d1b1dcd inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a988485c8c10714cb990c98c49d1b1dcd">isReadable</a> () const override</td></tr>
 <tr class="memdesc:a988485c8c10714cb990c98c49d1b1dcd inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is readable.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a988485c8c10714cb990c98c49d1b1dcd">More...</a><br /></td></tr>
 <tr class="separator:a988485c8c10714cb990c98c49d1b1dcd inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf37cd79f233aade89f616d9f236ff8 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aecf37cd79f233aade89f616d9f236ff8">isWriteable</a> () const override</td></tr>
+<tr class="memdesc:aecf37cd79f233aade89f616d9f236ff8 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is writeable.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aecf37cd79f233aade89f616d9f236ff8">More...</a><br /></td></tr>
+<tr class="separator:aecf37cd79f233aade89f616d9f236ff8 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22f66016cf08d8c47e3f98e7d4b52566 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a22f66016cf08d8c47e3f98e7d4b52566">getHardwareAccessingElements</a> () override</td></tr>
 <tr class="memdesc:a22f66016cf08d8c47e3f98e7d4b52566 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the underlying TransferElements with actual hardware access.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a22f66016cf08d8c47e3f98e7d4b52566">More...</a><br /></td></tr>
 <tr class="separator:a22f66016cf08d8c47e3f98e7d4b52566 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,14 +320,14 @@ template&lt;typename UserType &gt; </div>
 <p>Check if transfer element is writeable. </p>
 <p>It throws an exception if you try to write and <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a46d8e909273211386315b9a65657eb15" title="Check if transfer element is writeable.">isWriteable()</a> is not true. </p>
 
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aecf37cd79f233aade89f616d9f236ff8">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00041">41</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>device_backends/LogicalNameMapping/src/<a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a></li>
+<li>backends/LogicalNameMapping/src/<a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -332,7 +335,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html">ForceReadOnlyPluginDecorator</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:19 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:29 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

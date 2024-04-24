@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: device_backends/LogicalNameMapping/src/LNMMathPlugin.cc Source File</title>
+<title>ChimeraTK-DeviceAccess: backends/LogicalNameMapping/src/LNMMathPlugin.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -628,7 +628,7 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8cc_source.html',''
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      <span class="comment">// if results.count() is 0, the return statement presumably has not been used</span></div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      <span class="keywordflow">if</span>(resultBuffer.size() != 1) {</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;LogicalNameMapping MathPlugin for register &#39;&quot;</span> + <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aaa27bc4223d25ac3fdd65465eca8dcaf">varName</a> +</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            <span class="stringliteral">&quot;&#39;: The expression returns a scalar but &quot;</span> + std::to_string(resultBuffer.size()) + <span class="stringliteral">&quot; expected.&quot;</span>);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            <span class="stringliteral">&quot;&#39;: The expression returns a scalar but &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(resultBuffer.size()) + <span class="stringliteral">&quot; expected.&quot;</span>);</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;      }</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;      resultBuffer[0] = numericToUserType&lt;T&gt;(valueWhenNotUsingReturn);</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    }</div>
@@ -646,8 +646,8 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8cc_source.html',''
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      exprtk::type_store&lt;double&gt;::type_view&lt;<span class="keywordtype">double</span>&gt; view(result);</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      <span class="keywordflow">if</span>(view.size() != resultBuffer.size()) {</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;LogicalNameMapping MathPlugin for register &#39;&quot;</span> + <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aaa27bc4223d25ac3fdd65465eca8dcaf">varName</a> +</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            <span class="stringliteral">&quot;&#39;: The expression returns &quot;</span> + std::to_string(view.size()) + <span class="stringliteral">&quot; elements but &quot;</span> +</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            std::to_string(resultBuffer.size()) + <span class="stringliteral">&quot; expected.&quot;</span>);</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            <span class="stringliteral">&quot;&#39;: The expression returns &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(view.size()) + <span class="stringliteral">&quot; elements but &quot;</span> +</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(resultBuffer.size()) + <span class="stringliteral">&quot; expected.&quot;</span>);</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      }</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160; </div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;      <span class="comment">// convert and copy data into target buffer</span></div>
@@ -658,7 +658,7 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8cc_source.html',''
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;      <span class="comment">// multiple results in return statement are unexpected</span></div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;LogicalNameMapping MathPlugin for register &#39;&quot;</span> + <a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aaa27bc4223d25ac3fdd65465eca8dcaf">varName</a> +</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;          <span class="stringliteral">&quot;&#39;: The expression returned &quot;</span> + std::to_string(results.count()) + <span class="stringliteral">&quot; results, expect exactly one result.&quot;</span>);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;          <span class="stringliteral">&quot;&#39;: The expression returned &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(results.count()) + <span class="stringliteral">&quot; results, expect exactly one result.&quot;</span>);</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    }</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  }</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
@@ -733,7 +733,8 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8cc_source.html',''
 <div class="ttc" id="aclass_chimera_t_k_1_1runtime__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a></div><div class="ttdoc">Exception thrown when a runtime error has occured.</div><div class="ttdef"><b>Definition:</b> <a href="_exception_8h_source.html#l00018">Exception.h:18</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1runtime__error_html_ab67e3b1164fa01d3ec0f70c08a1fa610"><div class="ttname"><a href="class_chimera_t_k_1_1runtime__error.html#ab67e3b1164fa01d3ec0f70c08a1fa610">ChimeraTK::runtime_error::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdoc">Return the message describing what exactly went wrong.</div><div class="ttdef"><b>Definition:</b> <a href="_exception_8cpp_source.html#l00014">Exception.cpp:14</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_l_n_m_backend_html"><div class="ttname"><a href="namespace_chimera_t_k_1_1_l_n_m_backend.html">ChimeraTK::LNMBackend</a></div><div class="ttdef"><b>Definition:</b> <a href="_l_n_m_math_plugin_formula_helper_8h_source.html#l00016">LNMMathPluginFormulaHelper.h:16</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_8h_source.html#l00016">DummyBackend.h:16</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_a20b2775608abae67eee7a9e7b7cf6b3c"><div class="ttname"><a href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">ChimeraTK::to_string</a></div><div class="ttdeci">std::string to_string(Boolean &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00059">SupportedUserTypes.h:59</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a9a7d226a45242c6825eb7a26235298df"><div class="ttname"><a href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">ChimeraTK::DataValidity</a></div><div class="ttdeci">DataValidity</div><div class="ttdoc">The current state of the data.</div><div class="ttdef"><b>Definition:</b> <a href="_transfer_element_8h_source.html#l00041">TransferElement.h:41</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6"><div class="ttname"><a href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">ChimeraTK::DataValidity::ok</a></div><div class="ttdeci">@ ok</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a9a7d226a45242c6825eb7a26235298dfac4ef1e7ec5c765839c8acdd9968542b2"><div class="ttname"><a href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfac4ef1e7ec5c765839c8acdd9968542b2">ChimeraTK::DataValidity::faulty</a></div><div class="ttdeci">@ faulty</div><div class="ttdoc">The data is considered valid.</div></div>
@@ -758,8 +759,8 @@ $(document).ready(function(){initNavTree('_l_n_m_math_plugin_8cc_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ee326fa6789bb6bdc0887158d2381386.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_04e7a3a48585d4391a17b116de84faa7.html">src</a></li><li class="navelem"><a class="el" href="_l_n_m_math_plugin_8cc.html">LNMMathPlugin.cc</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_dec21994cd756836ecefab773235960a.html">backends</a></li><li class="navelem"><a class="el" href="dir_0d7cd5ee1b5d41097c4e7a5343d9e52f.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_b4155f2e56eb3e67a7160c298caf5a3e.html">src</a></li><li class="navelem"><a class="el" href="_l_n_m_math_plugin_8cc.html">LNMMathPlugin.cc</a></li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

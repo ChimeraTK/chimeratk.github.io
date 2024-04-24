@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: device_backends/SharedDummy/src/SharedMemoryManager.cc Source File</title>
+<title>ChimeraTK-DeviceAccess: backends/SharedDummy/src/SharedMemoryManager.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('_shared_memory_manager_8cc_source.html
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  SharedDummyBackend::SharedMemoryManager::SharedMemoryManager(</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      SharedDummyBackend&amp; sharedDummyBackend_, <span class="keyword">const</span> std::string&amp; instanceId, <span class="keyword">const</span> std::string&amp; mapFileName)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  : sharedDummyBackend(sharedDummyBackend_), userHash(std::<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">to_string</a>(std::hash&lt;std::string&gt;{}(<a class="code" href="_process_management_8h.html#a897bd7b90a50e91470652693fc3f8f7d">getUserName</a>()))),</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    mapFileHash(std::to_string(std::hash&lt;std::string&gt;{}(mapFileName))),</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    instanceIdHash(std::to_string(std::hash&lt;std::string&gt;{}(instanceId))),</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    mapFileHash(<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(std::hash&lt;std::string&gt;{}(mapFileName))),</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    instanceIdHash(<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(std::hash&lt;std::string&gt;{}(instanceId))),</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    name(<span class="stringliteral">&quot;ChimeraTK_SharedDummy_&quot;</span> + instanceIdHash + <span class="stringliteral">&quot;_&quot;</span> + mapFileHash + <span class="stringliteral">&quot;_&quot;</span> + userHash),</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    segment(boost::interprocess::open_or_create, name.c_str(), getRequiredMemoryWithOverhead()),</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    sharedMemoryIntAllocator(segment.get_segment_manager()),</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('_shared_memory_manager_8cc_source.html
 <div class="ttc" id="a_shared_dummy_backend_8h_html"><div class="ttname"><a href="_shared_dummy_backend_8h.html">SharedDummyBackend.h</a></div></div>
 <div class="ttc" id="a_shared_dummy_backend_8h_html_a8327693f5a73291f60af05c2c5fa78dc"><div class="ttname"><a href="_shared_dummy_backend_8h.html#a8327693f5a73291f60af05c2c5fa78dc">SharedMemoryVector</a></div><div class="ttdeci">boost::interprocess::vector&lt; int32_t, ShmemAllocator &gt; SharedMemoryVector</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8h_source.html#l00030">SharedDummyBackend.h:30</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1runtime__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a></div><div class="ttdoc">Exception thrown when a runtime error has occured.</div><div class="ttdef"><b>Definition:</b> <a href="_exception_8h_source.html#l00018">Exception.h:18</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_8h_source.html#l00016">DummyBackend.h:16</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a20b2775608abae67eee7a9e7b7cf6b3c"><div class="ttname"><a href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">ChimeraTK::to_string</a></div><div class="ttdeci">std::string to_string(Boolean &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00059">SupportedUserTypes.h:59</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_ad8feb605e95e15ab6e0dee12dfdcbae6"><div class="ttname"><a href="namespace_chimera_t_k.html#ad8feb605e95e15ab6e0dee12dfdcbae6">ChimeraTK::SHARED_MEMORY_N_MAX_MEMBER</a></div><div class="ttdeci">const int SHARED_MEMORY_N_MAX_MEMBER</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8h_source.html#l00036">SharedDummyBackend.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -251,8 +251,8 @@ $(document).ready(function(){initNavTree('_shared_memory_manager_8cc_source.html
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_2c90e15a7117effef4353a6eb562e96d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_c02021404aa43b7226fc426addd80f61.html">src</a></li><li class="navelem"><a class="el" href="_shared_memory_manager_8cc.html">SharedMemoryManager.cc</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_dec21994cd756836ecefab773235960a.html">backends</a></li><li class="navelem"><a class="el" href="dir_3d9251ce23a7b3eb30bf15d56d746237.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_88959c7829c560848d60105b6c9f5caf.html">src</a></li><li class="navelem"><a class="el" href="_shared_memory_manager_8cc.html">SharedMemoryManager.cc</a></li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

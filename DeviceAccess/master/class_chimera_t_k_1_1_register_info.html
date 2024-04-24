@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c1c00fcd4e479955c749bdf9dcfb9f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a7c1c00fcd4e479955c749bdf9dcfb9f2">getImpl</a> () const</td></tr>
 <tr class="memdesc:a7c1c00fcd4e479955c749bdf9dcfb9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the implementation object.  <a href="class_chimera_t_k_1_1_register_info.html#a7c1c00fcd4e479955c749bdf9dcfb9f2">More...</a><br /></td></tr>
 <tr class="separator:a7c1c00fcd4e479955c749bdf9dcfb9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a33ae6b91b5222409bf257ffac84fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a47a33ae6b91b5222409bf257ffac84fd">getQualifiedAsyncId</a> () const</td></tr>
+<tr class="memdesc:a47a33ae6b91b5222409bf257ffac84fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fully qualified <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> ID.  <a href="class_chimera_t_k_1_1_register_info.html#a47a33ae6b91b5222409bf257ffac84fd">More...</a><br /></td></tr>
+<tr class="separator:a47a33ae6b91b5222409bf257ffac84fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -401,6 +404,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a47a33ae6b91b5222409bf257ffac84fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a33ae6b91b5222409bf257ffac84fd">&#9670;&nbsp;</a></span>getQualifiedAsyncId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; size_t &gt; ChimeraTK::RegisterInfo::getQualifiedAsyncId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the fully qualified <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> ID. </p>
+<p>If the register does not support wait_for_new_data it will be empty. Note: At the moment using <a class="el" href="class_chimera_t_k_1_1async_1_1_domain.html" title="The Domain is the thread-safe entry point for each distribution tree.">async::Domain</a> and <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> is not mandatory yet, so the ID might be empty even if the register supports wait_for_new_data. </p>
+
+<p class="definition">Definition at line <a class="el" href="_register_info_8cpp_source.html#l00098">98</a> of file <a class="el" href="_register_info_8cpp_source.html">RegisterInfo.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a00d0b08366995234dbe9f239b00498b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00d0b08366995234dbe9f239b00498b9">&#9670;&nbsp;</a></span>getRegisterName()</h2>
 
@@ -622,13 +647,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_8h_source.html#l00063">63</a> of file <a class="el" href="_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_8h_source.html#l00071">71</a> of file <a class="el" href="_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>device/include/<a class="el" href="_register_info_8h_source.html">RegisterInfo.h</a></li>
-<li>device/src/<a class="el" href="_register_info_8cpp_source.html">RegisterInfo.cpp</a></li>
+<li>include/<a class="el" href="_register_info_8h_source.html">RegisterInfo.h</a></li>
+<li>src/<a class="el" href="_register_info_8cpp_source.html">RegisterInfo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -636,7 +661,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:28 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

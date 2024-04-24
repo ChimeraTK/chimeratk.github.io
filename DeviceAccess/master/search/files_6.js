@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['genericinterruptcontrollerhandler_2ecc_2979',['GenericInterruptControllerHandler.cc',['../_generic_interrupt_controller_handler_8cc.html',1,'']]],
-  ['genericinterruptcontrollerhandler_2eh_2980',['GenericInterruptControllerHandler.h',['../_generic_interrupt_controller_handler_8h.html',1,'']]]
+  ['genericmuxedinterruptdistributor_2ecc_2985',['GenericMuxedInterruptDistributor.cc',['../_generic_muxed_interrupt_distributor_8cc.html',1,'']]],
+  ['genericmuxedinterruptdistributor_2eh_2986',['GenericMuxedInterruptDistributor.h',['../_generic_muxed_interrupt_distributor_8h.html',1,'']]]
 ];

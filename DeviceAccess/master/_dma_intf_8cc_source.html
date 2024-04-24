@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: device_backends/xdma/src/DmaIntf.cc Source File</title>
+<title>ChimeraTK-DeviceAccess: backends/xdma/src/DmaIntf.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,15 +109,15 @@ $(document).ready(function(){initNavTree('_dma_intf_8cc_source.html',''); initRe
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ssize_t result = ::pread(_c2h, buf, nbytes, address);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span>(result != <span class="keyword">static_cast&lt;</span>ssize_t<span class="keyword">&gt;</span>(nbytes)) {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">throw</span>(<a class="code" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          <span class="stringliteral">&quot;DmaIntf read size mismatch: read &quot;</span> + std::to_string(result) + <span class="stringliteral">&quot; bytes, expected &quot;</span> + std::to_string(nbytes)));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          <span class="stringliteral">&quot;DmaIntf read size mismatch: read &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(result) + <span class="stringliteral">&quot; bytes, expected &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(nbytes)));</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_dma_intf.html#a9328794eeb2bf852f240d28101577cc8">   27</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_dma_intf.html#a9328794eeb2bf852f240d28101577cc8">DmaIntf::write</a>(uintptr_t address, <span class="keyword">const</span> int32_t* data, <span class="keywordtype">size_t</span> nbytes) {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ssize_t result = ::pwrite(_h2c, data, nbytes, address);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span>(result != <span class="keyword">static_cast&lt;</span>ssize_t<span class="keyword">&gt;</span>(nbytes)) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">throw</span>(<a class="code" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>(<span class="stringliteral">&quot;DmaIntf write size mismatch: wrote &quot;</span> + std::to_string(result) +</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;          <span class="stringliteral">&quot; bytes, expected &quot;</span> + std::to_string(nbytes)));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">throw</span>(<a class="code" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>(<span class="stringliteral">&quot;DmaIntf write size mismatch: wrote &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(result) +</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;          <span class="stringliteral">&quot; bytes, expected &quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(nbytes)));</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -130,15 +130,15 @@ $(document).ready(function(){initNavTree('_dma_intf_8cc_source.html',''); initRe
 <div class="ttc" id="aclass_chimera_t_k_1_1_dma_intf_html_a9328794eeb2bf852f240d28101577cc8"><div class="ttname"><a href="class_chimera_t_k_1_1_dma_intf.html#a9328794eeb2bf852f240d28101577cc8">ChimeraTK::DmaIntf::write</a></div><div class="ttdeci">void write(uintptr_t address, const int32_t *data, size_t nbytes) override</div><div class="ttdef"><b>Definition:</b> <a href="_dma_intf_8cc_source.html#l00027">DmaIntf.cc:27</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_dma_intf_html_accdc605473229656e4fc00cf18c22f96"><div class="ttname"><a href="class_chimera_t_k_1_1_dma_intf.html#accdc605473229656e4fc00cf18c22f96">ChimeraTK::DmaIntf::DmaIntf</a></div><div class="ttdeci">DmaIntf()=delete</div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1runtime__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a></div><div class="ttdoc">Exception thrown when a runtime error has occured.</div><div class="ttdef"><b>Definition:</b> <a href="_exception_8h_source.html#l00018">Exception.h:18</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_8h_source.html#l00016">DummyBackend.h:16</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a20b2775608abae67eee7a9e7b7cf6b3c"><div class="ttname"><a href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">ChimeraTK::to_string</a></div><div class="ttdeci">std::string to_string(Boolean &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00059">SupportedUserTypes.h:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ff4f312f938d4beffb3ddcab4a7dfd02.html">xdma</a></li><li class="navelem"><a class="el" href="dir_9e938238994bf6c30587f7ab5108cdb0.html">src</a></li><li class="navelem"><a class="el" href="_dma_intf_8cc.html">DmaIntf.cc</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_dec21994cd756836ecefab773235960a.html">backends</a></li><li class="navelem"><a class="el" href="dir_4255389abb0fa6dfaf9ae7c45b4787f2.html">xdma</a></li><li class="navelem"><a class="el" href="dir_e27812abca3138daa19ee5b4dc88b30c.html">src</a></li><li class="navelem"><a class="el" href="_dma_intf_8cc.html">DmaIntf.cc</a></li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: device_backends/src/BackendFactory.cc Source File</title>
+<title>ChimeraTK-DeviceAccess: src/BackendFactory.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('_backend_factory_8cc_source.html','');
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">catch</span>(std::out_of_range&amp;) {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Unknown backend: \&quot;&quot;</span> + <a class="code" href="test_async_read_8cpp.html#a9d57eb1d8464d13e1d0d697d9ae420e2">cdd</a>.backendType + <span class="stringliteral">&quot;\&quot; at &quot;</span> + deviceInfo.<a class="code" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a563737aed65226e0717444c4a6c75f37">dmapFileName</a> +</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="stringliteral">&quot;:&quot;</span> + std::to_string(deviceInfo.<a class="code" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aab8018e944f04b3dea79982f9ff02f5d">dmapFileLineNumber</a>) + <span class="stringliteral">&quot; for &quot;</span> + deviceInfo.<a class="code" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e">uri</a>);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="stringliteral">&quot;:&quot;</span> + <a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(deviceInfo.<a class="code" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aab8018e944f04b3dea79982f9ff02f5d">dmapFileLineNumber</a>) + <span class="stringliteral">&quot; for &quot;</span> + deviceInfo.<a class="code" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e">uri</a>);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      }</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
@@ -486,7 +486,8 @@ $(document).ready(function(){initNavTree('_backend_factory_8cc_source.html','');
 <div class="ttc" id="anamespace_chimera_t_k_1_1_utilities_html_a685a9e8b21d8fe1d21d9fa5941e3d2bc"><div class="ttname"><a href="namespace_chimera_t_k_1_1_utilities.html#a685a9e8b21d8fe1d21d9fa5941e3d2bc">ChimeraTK::Utilities::parseDeviceString</a></div><div class="ttdeci">Sdm parseDeviceString(const std::string &amp;deviceString)</div><div class="ttdoc">Parse an old-style device string (either path to device node or map file name for dummies)</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8cpp_source.html#l00260">Utilities.cpp:260</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_utilities_html_aa1751b9f4874cde2c2c92581681852a0"><div class="ttname"><a href="namespace_chimera_t_k_1_1_utilities.html#aa1751b9f4874cde2c2c92581681852a0">ChimeraTK::Utilities::parseSdm</a></div><div class="ttdeci">Sdm parseSdm(const std::string &amp;sdmString)</div><div class="ttdoc">Parse an SDM URI and return the device information in the Sdm struct.</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8cpp_source.html#l00189">Utilities.cpp:189</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_utilities_html_ac9962632f9db42e2b2e7be4b3875a7bc"><div class="ttname"><a href="namespace_chimera_t_k_1_1_utilities.html#ac9962632f9db42e2b2e7be4b3875a7bc">ChimeraTK::Utilities::isDeviceDescriptor</a></div><div class="ttdeci">bool isDeviceDescriptor(std::string theString)</div><div class="ttdoc">Check whether the given string seems to be a CDD.</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8cpp_source.html#l00037">Utilities.cpp:37</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_access_mode_8h_source.html#l00010">AccessMode.h:10</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_8h_source.html#l00016">DummyBackend.h:16</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_a20b2775608abae67eee7a9e7b7cf6b3c"><div class="ttname"><a href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">ChimeraTK::to_string</a></div><div class="ttdeci">std::string to_string(Boolean &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00059">SupportedUserTypes.h:59</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_sdm_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_sdm.html">ChimeraTK::Sdm</a></div><div class="ttdoc">This structure holds the information of an SDM.</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8h_source.html#l00040">Utilities.h:40</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_sdm_html_a7b71ee35fd0f95f7f99200eacd45615b"><div class="ttname"><a href="struct_chimera_t_k_1_1_sdm.html#a7b71ee35fd0f95f7f99200eacd45615b">ChimeraTK::Sdm::parameters</a></div><div class="ttdeci">std::list&lt; std::string &gt; parameters</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8h_source.html#l00046">Utilities.h:46</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_sdm_html_a9e79cc6b57adcf32f93544bf3903f68d"><div class="ttname"><a href="struct_chimera_t_k_1_1_sdm.html#a9e79cc6b57adcf32f93544bf3903f68d">ChimeraTK::Sdm::host</a></div><div class="ttdeci">std::string host</div><div class="ttdef"><b>Definition:</b> <a href="_utilities_8h_source.html#l00042">Utilities.h:42</a></div></div>
@@ -499,8 +500,8 @@ $(document).ready(function(){initNavTree('_backend_factory_8cc_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_3fa1c5292c3942cc834181309cb54b60.html">src</a></li><li class="navelem"><a class="el" href="_backend_factory_8cc.html">BackendFactory.cc</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_backend_factory_8cc.html">BackendFactory.cc</a></li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:26 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

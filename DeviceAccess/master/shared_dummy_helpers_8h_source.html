@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('shared_dummy_helpers_8h_source.html','
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Static helper functions</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="shared_dummy_helpers_8h.html#a95eac460675da1c54272660a446f1739">   16</a></span>&#160;std::string <a class="code" href="shared_dummy_helpers_8h.html#a95eac460675da1c54272660a446f1739">createExpectedShmName</a>(std::string instanceId_, std::string mapFileName_, std::string userName) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::string mapFileHash{std::to_string(std::hash&lt;std::string&gt;{}(mapFileName_))};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::string instanceIdHash{std::to_string(std::hash&lt;std::string&gt;{}(instanceId_))};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  std::string userHash{std::to_string(std::hash&lt;std::string&gt;{}(userName))};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::string mapFileHash{<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(std::hash&lt;std::string&gt;{}(mapFileName_))};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::string instanceIdHash{<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(std::hash&lt;std::string&gt;{}(instanceId_))};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  std::string userHash{<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">std::to_string</a>(std::hash&lt;std::string&gt;{}(userName))};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;ChimeraTK_SharedDummy_&quot;</span> + instanceIdHash + <span class="stringliteral">&quot;_&quot;</span> + mapFileHash + <span class="stringliteral">&quot;_&quot;</span> + userHash;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
@@ -147,6 +147,7 @@ $(document).ready(function(){initNavTree('shared_dummy_helpers_8h_source.html','
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">   59</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="ttc" id="anamespace_chimera_t_k_html_a20b2775608abae67eee7a9e7b7cf6b3c"><div class="ttname"><a href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">ChimeraTK::to_string</a></div><div class="ttdeci">std::string to_string(Boolean &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_supported_user_types_8h_source.html#l00059">SupportedUserTypes.h:59</a></div></div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2e"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e">MirrorRequestType</a></div><div class="ttdeci">MirrorRequestType</div><div class="ttdef"><b>Definition:</b> <a href="shared_dummy_helpers_8h_source.html#l00013">sharedDummyHelpers.h:13</a></div></div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531">MirrorRequestType::to</a></div><div class="ttdeci">@ to</div></div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c">MirrorRequestType::from</a></div><div class="ttdeci">@ from</div></div>
@@ -162,7 +163,7 @@ $(document).ready(function(){initNavTree('shared_dummy_helpers_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_dcba6dfd410a966f3c2ecded9b1039f6.html">include</a></li><li class="navelem"><a class="el" href="shared_dummy_helpers_8h.html">sharedDummyHelpers.h</a></li>
-    <li class="footer">Generated on Thu Apr 18 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 24 2024 03:54:27 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

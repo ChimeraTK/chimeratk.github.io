@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['multiplexeddataaccessor_3c_20usertype_20_3e_4751',['MultiplexedDataAccessor&lt; UserType &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ab6255101bca3f241ade8a80d4ae0292f',1,'ChimeraTK::NDRegisterAccessor']]]
+  ['numericaddressedbackendasciiaccessor_4757',['NumericAddressedBackendASCIIAccessor',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a92b66d52d21601b7a69589c1959a05a1',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
+  ['numericaddressedbackendmuxedregisteraccessor_4758',['NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a8832452e77a6be7f771b9cf8e934aba9',1,'ChimeraTK::NumericAddressedBackend']]],
+  ['numericaddressedbackendregisteraccessor_4759',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ac06c3adbcb08c25e2a42e23c96e66152',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]]
 ];

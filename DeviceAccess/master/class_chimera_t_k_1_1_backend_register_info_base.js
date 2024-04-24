@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_backend_register_info_base =
     [ "getNumberOfChannels", "class_chimera_t_k_1_1_backend_register_info_base.html#a8507f34475d08bae6bfd8f14b2e8e361", null ],
     [ "getNumberOfDimensions", "class_chimera_t_k_1_1_backend_register_info_base.html#a82e9a504d5b063a6e3b34f3229466287", null ],
     [ "getNumberOfElements", "class_chimera_t_k_1_1_backend_register_info_base.html#ad7a70e2d734cd02c65f713be0045a690", null ],
+    [ "getQualifiedAsyncId", "class_chimera_t_k_1_1_backend_register_info_base.html#a1d5fa8aa3cc68eeeeba595825447badc", null ],
     [ "getRegisterName", "class_chimera_t_k_1_1_backend_register_info_base.html#a31c78dfbea563960cbe4805a01a1238d", null ],
     [ "getSupportedAccessModes", "class_chimera_t_k_1_1_backend_register_info_base.html#a85ece0fd9d481d869e938261bd21b2b8", null ],
     [ "isReadable", "class_chimera_t_k_1_1_backend_register_info_base.html#a128e5806d389ffa3ed99ee07e3cecc39", null ],
