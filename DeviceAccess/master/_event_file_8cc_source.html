@@ -170,37 +170,34 @@ $(document).ready(function(){initNavTree('_event_file_8cc_source.html',''); init
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Only distribute once. If numInterrupts is &gt; 1 we are discarding missed interrupts here.</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// FIXME: should we have a variable to report this (accessible via RegisterAccessor)?</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span>(numInterrupts != 0) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">auto</span> domain = _owner._asyncDomain.lock();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span>(domain) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        domain-&gt;distribute(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_event_thread.html#a81ce135bf863cf864b59892f6d430215">waitForEvent</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_event_file.html#aee5a0a882253280fc8ab13f7ab63260f">   92</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_event_file.html#ac07058a724a7619120a02521b2d32dc7">EventFile::EventFile</a>(<span class="keyword">const</span> std::string&amp; devicePath, <span class="keywordtype">size_t</span> interruptIdx,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      boost::shared_ptr&lt;<a class="code" href="class_chimera_t_k_1_1async_1_1_domain_impl.html">async::DomainImpl&lt;std::nullptr_t&gt;</a>&gt; asyncDomain)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  : _file{devicePath + <span class="stringliteral">&quot;/events&quot;</span> + std::<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">to_string</a>(interruptIdx), O_RDONLY}, _asyncDomain{asyncDomain} {}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b">   96</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b">EventFile::~EventFile</a>() {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    _evtThread.reset(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_event_file.html#a584efbe07acbda268253944158c9a05f">  100</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_event_file.html#a584efbe07acbda268253944158c9a05f">EventFile::startThread</a>(std::promise&lt;void&gt; subscriptionDonePromise) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span>(_evtThread) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      subscriptionDonePromise.set_value();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    _evtThread = std::make_unique&lt;EventThread&gt;(*<span class="keyword">this</span>, std::move(subscriptionDonePromise));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      _owner._asyncDomain-&gt;distribute(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_event_thread.html#a81ce135bf863cf864b59892f6d430215">waitForEvent</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_event_file.html#aee5a0a882253280fc8ab13f7ab63260f">   89</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_event_file.html#ac07058a724a7619120a02521b2d32dc7">EventFile::EventFile</a>(<span class="keyword">const</span> std::string&amp; devicePath, <span class="keywordtype">size_t</span> interruptIdx,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      boost::shared_ptr&lt;<a class="code" href="class_chimera_t_k_1_1async_1_1_domain_impl.html">async::DomainImpl&lt;std::nullptr_t&gt;</a>&gt; asyncDomain)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  : _file{devicePath + <span class="stringliteral">&quot;/events&quot;</span> + std::<a class="code" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">to_string</a>(interruptIdx), O_RDONLY}, _asyncDomain{asyncDomain} {}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b">   93</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b">EventFile::~EventFile</a>() {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    _evtThread.reset(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_event_file.html#a584efbe07acbda268253944158c9a05f">   97</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_event_file.html#a584efbe07acbda268253944158c9a05f">EventFile::startThread</a>(std::promise&lt;void&gt; subscriptionDonePromise) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(_evtThread) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      subscriptionDonePromise.set_value();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    _evtThread = std::make_unique&lt;EventThread&gt;(*<span class="keyword">this</span>, std::move(subscriptionDonePromise));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_event_file_8h_html"><div class="ttname"><a href="_event_file_8h.html">EventFile.h</a></div></div>
 <div class="ttc" id="a_exception_8h_html"><div class="ttname"><a href="_exception_8h.html">Exception.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_file_html_af21ec802777273823aff31665c9cf68d"><div class="ttname"><a href="class_chimera_t_k_1_1_device_file.html#af21ec802777273823aff31665c9cf68d">ChimeraTK::DeviceFile::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdef"><b>Definition:</b> <a href="_device_file_8cc_source.html#l00045">DeviceFile.cc:45</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_event_file_html"><div class="ttname"><a href="class_chimera_t_k_1_1_event_file.html">ChimeraTK::EventFile</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8h_source.html#l00040">EventFile.h:40</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_event_file_html_a2c015bf15afa8d940f4749ee5183660b"><div class="ttname"><a href="class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b">ChimeraTK::EventFile::~EventFile</a></div><div class="ttdeci">~EventFile()</div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8cc_source.html#l00096">EventFile.cc:96</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_event_file_html_a584efbe07acbda268253944158c9a05f"><div class="ttname"><a href="class_chimera_t_k_1_1_event_file.html#a584efbe07acbda268253944158c9a05f">ChimeraTK::EventFile::startThread</a></div><div class="ttdeci">void startThread(std::promise&lt; void &gt; subscriptionDonePromise)</div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8cc_source.html#l00100">EventFile.cc:100</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_event_file_html_a2c015bf15afa8d940f4749ee5183660b"><div class="ttname"><a href="class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b">ChimeraTK::EventFile::~EventFile</a></div><div class="ttdeci">~EventFile()</div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8cc_source.html#l00093">EventFile.cc:93</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_event_file_html_a584efbe07acbda268253944158c9a05f"><div class="ttname"><a href="class_chimera_t_k_1_1_event_file.html#a584efbe07acbda268253944158c9a05f">ChimeraTK::EventFile::startThread</a></div><div class="ttdeci">void startThread(std::promise&lt; void &gt; subscriptionDonePromise)</div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8cc_source.html#l00097">EventFile.cc:97</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_event_file_html_ac07058a724a7619120a02521b2d32dc7"><div class="ttname"><a href="class_chimera_t_k_1_1_event_file.html#ac07058a724a7619120a02521b2d32dc7">ChimeraTK::EventFile::EventFile</a></div><div class="ttdeci">EventFile()=delete</div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_event_thread_html"><div class="ttname"><a href="class_chimera_t_k_1_1_event_thread.html">ChimeraTK::EventThread</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8h_source.html#l00019">EventFile.h:19</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_event_thread_html_a15e93964080a3ec0d0ff5bae311ec9a2"><div class="ttname"><a href="class_chimera_t_k_1_1_event_thread.html#a15e93964080a3ec0d0ff5bae311ec9a2">ChimeraTK::EventThread::~EventThread</a></div><div class="ttdeci">~EventThread()</div><div class="ttdef"><b>Definition:</b> <a href="_event_file_8cc_source.html#l00021">EventFile.cc:21</a></div></div>
@@ -219,7 +216,7 @@ $(document).ready(function(){initNavTree('_event_file_8cc_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dec21994cd756836ecefab773235960a.html">backends</a></li><li class="navelem"><a class="el" href="dir_4255389abb0fa6dfaf9ae7c45b4787f2.html">xdma</a></li><li class="navelem"><a class="el" href="dir_e27812abca3138daa19ee5b4dc88b30c.html">src</a></li><li class="navelem"><a class="el" href="_event_file_8cc.html">EventFile.cc</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:53:21 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 8 2024 03:56:42 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
