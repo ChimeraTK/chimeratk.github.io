@@ -140,6 +140,7 @@ var hierarchy =
           [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_device_module.html", [
             [ "ChimeraTK::ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", null ]
           ] ],
+          [ "ChimeraTK::EventMessageAggregator", "class_chimera_t_k_1_1_event_message_aggregator.html", null ],
           [ "Deeper2", "struct_deeper2.html", null ],
           [ "DummyApplication::Group1", "struct_dummy_application_1_1_group1.html", null ],
           [ "DummyApplication::Group2", "struct_dummy_application_1_1_group2.html", null ],
@@ -370,7 +371,9 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< uint32_t >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarOutput< double >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
-        [ "ChimeraTK::ScalarOutput< std::string >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
+        [ "ChimeraTK::ScalarOutput< std::string >", "struct_chimera_t_k_1_1_scalar_output.html", [
+          [ "ChimeraTK::AggregatableMessage", "class_chimera_t_k_1_1_aggregatable_message.html", null ]
+        ] ],
         [ "ChimeraTK::ScalarOutput< float >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarOutput< int >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarOutput< T >", "struct_chimera_t_k_1_1_scalar_output.html", null ],

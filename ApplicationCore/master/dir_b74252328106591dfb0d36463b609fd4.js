@@ -15,6 +15,10 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "DataLossCounter", "struct_chimera_t_k_1_1_data_loss_counter.html", "struct_chimera_t_k_1_1_data_loss_counter" ],
       [ "TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat" ]
     ] ],
+    [ "EventMessageAggregator.h", "_event_message_aggregator_8h.html", [
+      [ "AggregatableMessage", "class_chimera_t_k_1_1_aggregatable_message.html", "class_chimera_t_k_1_1_aggregatable_message" ],
+      [ "EventMessageAggregator", "class_chimera_t_k_1_1_event_message_aggregator.html", "class_chimera_t_k_1_1_event_message_aggregator" ]
+    ] ],
     [ "InvalidityTracer.h", "_invalidity_tracer_8h.html", [
       [ "InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", "struct_chimera_t_k_1_1_invalidity_tracer" ]
     ] ],

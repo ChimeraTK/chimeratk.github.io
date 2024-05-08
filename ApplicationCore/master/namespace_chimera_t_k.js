@@ -69,6 +69,8 @@ var namespace_chimera_t_k =
     [ "ReadBitMask", "struct_chimera_t_k_1_1_read_bit_mask.html", "struct_chimera_t_k_1_1_read_bit_mask" ],
     [ "ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", "struct_chimera_t_k_1_1_config_reader" ],
     [ "DataLossCounter", "struct_chimera_t_k_1_1_data_loss_counter.html", "struct_chimera_t_k_1_1_data_loss_counter" ],
+    [ "AggregatableMessage", "class_chimera_t_k_1_1_aggregatable_message.html", "class_chimera_t_k_1_1_aggregatable_message" ],
+    [ "EventMessageAggregator", "class_chimera_t_k_1_1_event_message_aggregator.html", "class_chimera_t_k_1_1_event_message_aggregator" ],
     [ "InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", "struct_chimera_t_k_1_1_invalidity_tracer" ],
     [ "LimitValueModuleBase", "struct_chimera_t_k_1_1_limit_value_module_base.html", "struct_chimera_t_k_1_1_limit_value_module_base" ],
     [ "LimitValue", "struct_chimera_t_k_1_1_limit_value.html", "struct_chimera_t_k_1_1_limit_value" ],
