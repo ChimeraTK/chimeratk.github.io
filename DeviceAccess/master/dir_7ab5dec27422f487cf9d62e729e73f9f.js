@@ -56,5 +56,6 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testUnifiedTypeChangingDecorator.cpp", "test_unified_type_changing_decorator_8cpp.html", "test_unified_type_changing_decorator_8cpp" ],
     [ "testUtilities.cpp", "test_utilities_8cpp.html", "test_utilities_8cpp" ],
     [ "testVersionNumber.cpp", "test_version_number_8cpp.html", "test_version_number_8cpp" ],
+    [ "testVirtualFunctionTemplate.cc", "test_virtual_function_template_8cc.html", "test_virtual_function_template_8cc" ],
     [ "testVoidRegisterAccessor.cpp", "test_void_register_accessor_8cpp.html", "test_void_register_accessor_8cpp" ]
 ];

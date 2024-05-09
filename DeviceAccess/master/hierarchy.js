@@ -74,6 +74,11 @@ var hierarchy =
       [ "ChimeraTK::NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html", null ],
       [ "myRegisterInfo", "classmy_register_info.html", null ]
     ] ],
+    [ "ChimeraTK::Base", "class_chimera_t_k_1_1_base.html", [
+      [ "ChimeraTK::Derived1", "class_chimera_t_k_1_1_derived1.html", [
+        [ "ChimeraTK::Derived2", "class_chimera_t_k_1_1_derived2.html", null ]
+      ] ]
+    ] ],
     [ "BoolAsVoid< WITHPATH, INTERRUPT >", "struct_bool_as_void.html", null ],
     [ "BoolAsVoid< canonicalInterrupt4_8_2, 4 >", "struct_bool_as_void.html", [
       [ "canonicalInterrupt4_8_2", "structcanonical_interrupt4__8__2.html", null ]

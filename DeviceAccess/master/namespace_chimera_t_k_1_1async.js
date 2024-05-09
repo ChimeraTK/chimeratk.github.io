@@ -21,5 +21,6 @@ var namespace_chimera_t_k_1_1async =
     [ "GenericAsyncVariable", "class_chimera_t_k_1_1async_1_1_generic_async_variable.html", "class_chimera_t_k_1_1async_1_1_generic_async_variable" ],
     [ "VoidAsyncVariable", "class_chimera_t_k_1_1async_1_1_void_async_variable.html", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k_1_1async.html#abff0b3b4bcbf9299d47e901ea8514cd8", null ],
-    [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k_1_1async.html#ad96b9890ed545241283c67fce1c6a64f", null ]
+    [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k_1_1async.html#ad96b9890ed545241283c67fce1c6a64f", null ],
+    [ "MuxedInterruptDistributor::getAccessorManager< VariableDistributor< std::nullptr_t > >", "namespace_chimera_t_k_1_1async.html#a2b8e58b5044248fc3a43974f5ab8935e", null ]
 ];

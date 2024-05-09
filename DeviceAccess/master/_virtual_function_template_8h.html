@@ -89,18 +89,16 @@ $(document).ready(function(){initNavTree('_virtual_function_template_8h.html',''
 <div class="title">VirtualFunctionTemplate.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>&quot;</code><br />
-<code>#include &lt;boost/bind/bind.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/bind/bind.hpp&gt;</code><br />
 <code>#include &lt;boost/function.hpp&gt;</code><br />
 <code>#include &lt;boost/fusion/include/at_key.hpp&gt;</code><br />
 <code>#include &lt;boost/fusion/include/for_each.hpp&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for VirtualFunctionTemplate.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_virtual_function_template_8h__incl.svg" width="100%" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_virtual_function_template_8h__incl.svg" width="100%" height="395"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -119,12 +117,21 @@ Macros</h2></td></tr>
 <tr class="memitem:af17cdfe4bdc6a97d29cda32a0253187f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName, ...)</td></tr>
 <tr class="memdesc:af17cdfe4bdc6a97d29cda32a0253187f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a virtual function template with the given function name and signature in the base class.  <a href="_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f">More...</a><br /></td></tr>
 <tr class="separator:af17cdfe4bdc6a97d29cda32a0253187f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9ffc1e7ff60573c7d0efa9bf1b075e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#a0f9ffc1e7ff60573c7d0efa9bf1b075e">DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE</a>(BaseClass,  functionName, ...)&#160;&#160;&#160;  <a class="el" href="_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(BaseClass##functionName, __VA_ARGS__)</td></tr>
+<tr class="memdesc:a0f9ffc1e7ff60573c7d0efa9bf1b075e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an override for a function template with the given function name and signature in the base class.  <a href="_virtual_function_template_8h.html#a0f9ffc1e7ff60573c7d0efa9bf1b075e">More...</a><br /></td></tr>
+<tr class="separator:a0f9ffc1e7ff60573c7d0efa9bf1b075e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5">CALL_VIRTUAL_FUNCTION_TEMPLATE</a>(functionName,  templateArgument, ...)&#160;&#160;&#160;  boost::fusion::at_key&lt;templateArgument&gt;(functionName##_vtable.table)(__VA_ARGS__)</td></tr>
 <tr class="memdesc:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the virtual function template call using the vtable defined with the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro.  <a href="_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5">More...</a><br /></td></tr>
 <tr class="separator:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9905e1dc1acb88b66ea438cc2777f619"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#a9905e1dc1acb88b66ea438cc2777f619">CALL_BASE_FUNCTION_TEMPLATE</a>(BaseClass,  functionName,  templateArgument, ...)&#160;&#160;&#160;  boost::fusion::at_key&lt;templateArgument&gt;(BaseClass##functionName##_vtable.table)(__VA_ARGS__)</td></tr>
+<tr class="memdesc:a9905e1dc1acb88b66ea438cc2777f619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the virtual function template call to the base implementation of the function.  <a href="_virtual_function_template_8h.html#a9905e1dc1acb88b66ea438cc2777f619">More...</a><br /></td></tr>
+<tr class="separator:a9905e1dc1acb88b66ea438cc2777f619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)</td></tr>
 <tr class="memdesc:ab5e6eeda5f812bf87b6da853d103ee37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">More...</a><br /></td></tr>
 <tr class="separator:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb474c17dc394d2df7457be0f23e290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#a2fb474c17dc394d2df7457be0f23e290">OVERRIDE_VIRTUAL_FUNCTION_TEMPLATE</a>(BaseClass,  functionName)</td></tr>
+<tr class="memdesc:a2fb474c17dc394d2df7457be0f23e290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the old vtable to be accessible by CALL_BASE_FUNCTION_TEMPLATE and overwrite it with the new implementation.  <a href="_virtual_function_template_8h.html#a2fb474c17dc394d2df7457be0f23e290">More...</a><br /></td></tr>
+<tr class="separator:a2fb474c17dc394d2df7457be0f23e290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cfaa4375c315e463c69a4f05bb90d94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE</a>(functionName,  numberOfArguments)&#160;&#160;&#160;  <a class="el" href="_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)</td></tr>
 <tr class="memdesc:a9cfaa4375c315e463c69a4f05bb90d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility only, do not use.  <a href="_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94">More...</a><br /></td></tr>
 <tr class="separator:a9cfaa4375c315e463c69a4f05bb90d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +140,51 @@ Macros</h2></td></tr>
 <tr class="separator:ad55f079dbae8d46794e4a68782511746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9905e1dc1acb88b66ea438cc2777f619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9905e1dc1acb88b66ea438cc2777f619">&#9670;&nbsp;</a></span>CALL_BASE_FUNCTION_TEMPLATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CALL_BASE_FUNCTION_TEMPLATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">BaseClass, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">functionName, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">templateArgument, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;  boost::fusion::at_key&lt;templateArgument&gt;(BaseClass##functionName##_vtable.table)(__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute the virtual function template call to the base implementation of the function. </p>
+<p>The function must have been overriden by DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE and OVERRIDE_VIRTUAL_FUNCTION_TEMPLATE </p>
+
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00078">78</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+
+</div>
+</div>
 <a id="a9ae25c66f893b5dffc9251887f2bb9a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ae25c66f893b5dffc9251887f2bb9a5">&#9670;&nbsp;</a></span>CALL_VIRTUAL_FUNCTION_TEMPLATE</h2>
 
@@ -169,7 +221,46 @@ Macros</h2></td></tr>
 <p>It is recommended to put this macro into a function template with the same name and signature, so the user of the class can call the virtual function template conveniently.</p>
 <p>Implementation note: This function template could automatically be provided via the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro. This is not done, because it wouldn't allow to specify default values for the parameters, and the proper signature would not be visible in Doxygen. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00059">59</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00070">70</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+
+</div>
+</div>
+<a id="a0f9ffc1e7ff60573c7d0efa9bf1b075e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9ffc1e7ff60573c7d0efa9bf1b075e">&#9670;&nbsp;</a></span>DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">BaseClass, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">functionName, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;  <a class="el" href="_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(BaseClass##functionName, __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define an override for a function template with the given function name and signature in the base class. </p>
+<p>Semantics apply as in DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
+
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00058">58</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -214,10 +305,19 @@ Macros</h2></td></tr>
 <p>you should call this macro in the base class like this:</p>
 <p>DEFINE_VIRTUAL_FUNCTION_TEMPLATE( getRegisterAccessor, T(std::string) );</p>
 <p>The virtual function can be called using the CALL_VIRTUAL_FUNCTION_TEMPLATE macro. It is recommended to define the function template in the base class (without the virtual keyword of course) and implement it by using this macro.</p>
-<p>In the derived class, the function template must be implemented with the same signature, and the vtable for this virtual function template must be filled using the macros DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER and FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE.</p>
+<p>In the derived class, the function template must be implemented with the same signature, and the vtable for this virtual function template must be filled differently depending on whether you want to (be able to) call the base class's implementation or not:</p>
+<ul>
+<li>
+</li>
+</ul>
+<p>you do not care about the base implementation, use the macros DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER and FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE. </p><ul>
+<li>
+</li>
+</ul>
+<p>you want to be able to delegate to the base implementation, use the macros DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE and OVERRIDE_VIRTUAL_FUNCTION_TEMPLATE. To chain up to the base implementation, use the macro CALL_BASE_FUNCTION_TEMPLATE</p>
 <p>Note: the signature is passed through the <b>VA_ARGS</b> variable macro arguments, as it may contain commas. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00039">39</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00042">42</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +355,7 @@ Macros</h2></td></tr>
 
 <p>Compatibility, do not use. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00076">76</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00108">108</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +383,7 @@ Macros</h2></td></tr>
 <p>Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
 <p>Use this macro inside the constructor of the derived class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00065">65</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00084">84</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +415,47 @@ Macros</h2></td></tr>
 
 <p>Compatibility only, do not use. </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00072">72</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00104">104</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+
+</div>
+</div>
+<a id="a2fb474c17dc394d2df7457be0f23e290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb474c17dc394d2df7457be0f23e290">&#9670;&nbsp;</a></span>OVERRIDE_VIRTUAL_FUNCTION_TEMPLATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OVERRIDE_VIRTUAL_FUNCTION_TEMPLATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">BaseClass, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">functionName&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                                                 \</div>
+<div class="line">    <span class="comment">/* Copy the old vtable into _base before filling it with the new implementation */</span>                                 <a class="code" href="namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc">\</a></div>
+<div class="line"><a class="code" href="namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc">    ChimeraTK::for_each</a>(BaseClass##functionName##_vtable.table, [&amp;](<span class="keyword">auto</span>&amp; pair) {                                      \</div>
+<div class="line">      typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type VTableFillerUserType;                   \</div>
+<div class="line">      pair.second = (boost::fusion::at_key&lt;VTableFillerUserType&gt;(functionName##_vtable.table));                        \</div>
+<div class="line">    });                                                                                                                \</div>
+<div class="line">    FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE(functionName);                                                               \</div>
+<div class="line">  } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+<p>Save the old vtable to be accessible by CALL_BASE_FUNCTION_TEMPLATE and overwrite it with the new implementation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_virtual_function_template_8h_source.html#l00093">93</a> of file <a class="el" href="_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +465,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_virtual_function_template_8h.html">VirtualFunctionTemplate.h</a></li>
-    <li class="footer">Generated on Wed May 8 2024 03:56:43 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 9 2024 03:53:17 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
