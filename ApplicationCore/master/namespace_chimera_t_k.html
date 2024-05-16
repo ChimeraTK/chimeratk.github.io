@@ -186,6 +186,8 @@ back") (always <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa752
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_inversion_of_control_accessor.html">InversionOfControlAccessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds features required for inversion of control to an accessor.  <a href="class_chimera_t_k_1_1_inversion_of_control_accessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logger.html">Logger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html">MetaDataPropagationFlagProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mix-in helper class so you can set the flags without knowing the user data type.  <a href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -435,6 +437,9 @@ Functions</h2></td></tr>
 <tr class="separator:adbb94f785d8c1087884163cc6364f61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6996acf48cdfb7d1b64b4d21089564c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa6996acf48cdfb7d1b64b4d21089564c">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a>)</td></tr>
 <tr class="separator:aa6996acf48cdfb7d1b64b4d21089564c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1ff17ff1ee9c50c855b99af5b0c580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_stream_proxy.html">Logger::StreamProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">logger</a> (<a class="el" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a> severity, std::string context)</td></tr>
+<tr class="memdesc:afd1ff17ff1ee9c50c855b99af5b0c580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to obtain the logger stream.  <a href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">More...</a><br /></td></tr>
+<tr class="separator:afd1ff17ff1ee9c50c855b99af5b0c580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8276cf7454dc5762663bba087f1abf8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8276cf7454dc5762663bba087f1abf8e">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">MetaDataPropagatingRegisterDecorator</a>)</td></tr>
 <tr class="separator:a8276cf7454dc5762663bba087f1abf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a2c51d96e2fbf32e11257d58085fcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad8a2c51d96e2fbf32e11257d58085fcb">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">DebugPrintAccessorDecorator</a>)</td></tr>
@@ -499,7 +504,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Convenience type definition which can optionally be used as a shortcut for the type which defines a list of tags. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00026">26</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00027">27</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -756,13 +761,69 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="afd1ff17ff1ee9c50c855b99af5b0c580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1ff17ff1ee9c50c855b99af5b0c580">&#9670;&nbsp;</a></span>logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_stream_proxy.html">Logger::StreamProxy</a> ChimeraTK::logger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a>&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function to obtain the logger stream. </p>
+
+<p class="definition">Definition at line <a class="el" href="_logger_8h_source.html#l00124">124</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_afd1ff17ff1ee9c50c855b99af5b0c580_cgraph.svg" width="356" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_afd1ff17ff1ee9c50c855b99af5b0c580_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Wed May 8 2024 03:59:04 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 16 2024 03:53:52 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

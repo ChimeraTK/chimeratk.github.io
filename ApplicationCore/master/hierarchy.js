@@ -430,7 +430,17 @@ var hierarchy =
         [ "ChimeraTK::VoidOutput", "struct_chimera_t_k_1_1_void_output.html", null ]
       ] ]
     ] ],
+    [ "std::ios_base", null, [
+      [ "std::basic_ios< Char >", null, [
+        [ "std::basic_ostream< Char >", null, [
+          [ "std::ostream", null, [
+            [ "ChimeraTK::Logger::StreamProxy", "class_chimera_t_k_1_1_logger_1_1_stream_proxy.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
     [ "Item", "struct_item.html", null ],
+    [ "ChimeraTK::Logger", "class_chimera_t_k_1_1_logger.html", null ],
     [ "ChimeraTK::MetaDataPropagationFlagProvider", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html", [
       [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ]
     ] ],

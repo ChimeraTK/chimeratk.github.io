@@ -59,6 +59,7 @@ var class_chimera_t_k_1_1_application =
     [ "_initialiseCalled", "class_chimera_t_k_1_1_application.html#a2f1673dfa45b73ef37d7986e1ba7b567", null ],
     [ "_internalModuleList", "class_chimera_t_k_1_1_application.html#a23ecb63894c1130654e73f8c40b2abaf", null ],
     [ "_lifeCycleState", "class_chimera_t_k_1_1_application.html#a46d00935e5932cc9fcca2e66593bd112", null ],
+    [ "_logger", "class_chimera_t_k_1_1_application.html#a6cefc807f3ff682bb60334aeba19d53b", null ],
     [ "_model", "class_chimera_t_k_1_1_application.html#af8f0acd9b6394a1792ef55fc3495aed4", null ],
     [ "_pvIdMap", "class_chimera_t_k_1_1_application.html#a7cba93e3ed0be14cee1f516752f71eff", null ],
     [ "_runCalled", "class_chimera_t_k_1_1_application.html#a842603d44e679f058df56d297eef5187", null ],

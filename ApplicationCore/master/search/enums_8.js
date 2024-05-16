@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visitordertype_3276',['VisitOrderType',['../struct_chimera_t_k_1_1_model_1_1_visit_order.html#a0ae0596fb064a6a941a99f4894f06339',1,'ChimeraTK::Model::VisitOrder']]]
+  ['updatemode_3305',['UpdateMode',['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3b',1,'ChimeraTK']]]
 ];

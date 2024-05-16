@@ -11,6 +11,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "EntityOwner.cc", "_entity_owner_8cc.html", null ],
     [ "ExceptionHandlingDecorator.cc", "_exception_handling_decorator_8cc.html", "_exception_handling_decorator_8cc" ],
     [ "HierarchyModifyingGroup.cc", "_hierarchy_modifying_group_8cc.html", null ],
+    [ "Logger.cc", "_logger_8cc.html", null ],
     [ "MetaDataPropagatingRegisterDecorator.cc", "_meta_data_propagating_register_decorator_8cc.html", "_meta_data_propagating_register_decorator_8cc" ],
     [ "Model.cc", "_model_8cc.html", null ],
     [ "Module.cc", "_module_8cc.html", null ],

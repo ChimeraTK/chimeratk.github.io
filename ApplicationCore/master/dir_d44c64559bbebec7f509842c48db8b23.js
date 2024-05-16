@@ -56,6 +56,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "InversionOfControlAccessor.h", "_inversion_of_control_accessor_8h.html", [
       [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ]
     ] ],
+    [ "Logger.h", "_logger_8h.html", "_logger_8h" ],
     [ "MetaDataPropagatingRegisterDecorator.h", "_meta_data_propagating_register_decorator_8h.html", "_meta_data_propagating_register_decorator_8h" ],
     [ "Model.h", "_model_8h.html", "_model_8h" ],
     [ "Module.h", "_module_8h.html", [

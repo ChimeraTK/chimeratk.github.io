@@ -65,6 +65,7 @@ var annotated_dup =
       [ "ModifyHierarchy", "struct_chimera_t_k_1_1_modify_hierarchy.html", "struct_chimera_t_k_1_1_modify_hierarchy" ],
       [ "InternalModule", "class_chimera_t_k_1_1_internal_module.html", "class_chimera_t_k_1_1_internal_module" ],
       [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ],
+      [ "Logger", "class_chimera_t_k_1_1_logger.html", "class_chimera_t_k_1_1_logger" ],
       [ "MetaDataPropagationFlagProvider", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider" ],
       [ "MetaDataPropagatingRegisterDecorator", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator" ],
       [ "Module", "class_chimera_t_k_1_1_module.html", "class_chimera_t_k_1_1_module" ],

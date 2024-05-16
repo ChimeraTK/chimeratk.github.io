@@ -156,7 +156,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a5947115f249bb27d3572a62944156582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8878997cf981c4a5a8b509e3f43fba9d"><td class="memItemLeft" align="right" valign="top">std::map&lt; ChimeraTK::TransferElementID, std::vector&lt; <a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a8878997cf981c4a5a8b509e3f43fba9d">_validatorMap</a></td></tr>
 <tr class="separator:a8878997cf981c4a5a8b509e3f43fba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ac5874dd3d35783002b62fdb81c5a1fe4">_errorFunction</a> {[](const std::string&amp; m) { std::cerr &lt;&lt; m &lt;&lt; std::endl; }}</td></tr>
+<tr class="memitem:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ac5874dd3d35783002b62fdb81c5a1fe4">_errorFunction</a></td></tr>
 <tr class="separator:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4061fe4bb936ded3b36611e8bb418f90"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; ChimeraTK::TransferElementID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a4061fe4bb936ded3b36611e8bb418f90">_downstreamInvalidatingReturnChannels</a> {}</td></tr>
 <tr class="separator:a4061fe4bb936ded3b36611e8bb418f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +231,7 @@ template&lt;typename... ACCESSORTYPES&gt; </div>
 <p>This function can be called an arbitrary number of times. Also the same accessors may be passed multiple times to different calls of this function. That way the expressions written in the isValidFunction can be kept simple and the provided error messages can be more specific. E.g. the two conditions A &gt; 0 and A &lt; B can be defined in two separate calls to the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function despite A being part of both conditions. If A changes, both conditions will be checked, since A is specified in the list of accessors in both calls.</p>
 <p>This function does not yet evaluate anything. It merely stores all information for later use. When <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is called, all isValidFunctions matching the given change are checked. If any of the checked isValidFunctions returns false, the variable passed to <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is reverted to its previous value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00219">219</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00220">220</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -277,7 +277,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00267">267</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00268">268</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -383,7 +383,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00253">253</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00254">254</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -427,7 +427,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>This value is used if the validation of the initial value fails, since there is no previous value to revert to in that case.</p>
 <p>It is mandatory to call this function for all accessors whose value after construction (usually 0) is outside the range of valid values, as otherwise a failed initial value validation reverts to the (invalid) value after construction and hence the subsequent computations might fail. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00238">238</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00239">239</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -539,7 +539,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00210">210</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00211">211</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; ChimeraTK::UserInputValidator::_errorFunction {[](const std::string&amp; m) { std::cerr &lt;&lt; m &lt;&lt; std::endl; }}</td>
+          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; ChimeraTK::UserInputValidator::_errorFunction</td>
         </tr>
       </table>
   </td>
@@ -562,7 +562,11 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        [](<span class="keyword">const</span> std::string&amp; m) { <a class="code" href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">logger</a>(<a class="code" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd">Logger::Severity::warning</a>, <span class="stringliteral">&quot;UserInputValidator&quot;</span>) &lt;&lt; m; }}</div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_logger_html_a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd"><div class="ttname"><a href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd">ChimeraTK::Logger::Severity::warning</a></div><div class="ttdeci">@ warning</div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_afd1ff17ff1ee9c50c855b99af5b0c580"><div class="ttname"><a href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">ChimeraTK::logger</a></div><div class="ttdeci">Logger::StreamProxy logger(Logger::Severity severity, std::string context)</div><div class="ttdoc">Convenience function to obtain the logger stream.</div><div class="ttdef"><b>Definition:</b> <a href="_logger_8h_source.html#l00124">Logger.h:124</a></div></div>
+</div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00208">208</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
@@ -587,7 +591,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00213">213</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00214">214</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -611,7 +615,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00212">212</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00213">213</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +639,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00211">211</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00212">212</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +749,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html">UserInputValidator</a></li>
-    <li class="footer">Generated on Wed May 8 2024 03:59:05 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 16 2024 03:53:53 for ChimeraTK-ApplicationCore by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -37,6 +37,7 @@ var namespace_chimera_t_k =
     [ "ModifyHierarchy", "struct_chimera_t_k_1_1_modify_hierarchy.html", "struct_chimera_t_k_1_1_modify_hierarchy" ],
     [ "InternalModule", "class_chimera_t_k_1_1_internal_module.html", "class_chimera_t_k_1_1_internal_module" ],
     [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ],
+    [ "Logger", "class_chimera_t_k_1_1_logger.html", "class_chimera_t_k_1_1_logger" ],
     [ "MetaDataPropagationFlagProvider", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider" ],
     [ "MetaDataPropagatingRegisterDecorator", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator" ],
     [ "Module", "class_chimera_t_k_1_1_module.html", "class_chimera_t_k_1_1_module" ],
@@ -141,5 +142,6 @@ var namespace_chimera_t_k =
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#aa6996acf48cdfb7d1b64b4d21089564c", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a8276cf7454dc5762663bba087f1abf8e", null ],
     [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#ad8a2c51d96e2fbf32e11257d58085fcb", null ],
-    [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a2922a31cfc160510cb2317d67353661e", null ]
+    [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a2922a31cfc160510cb2317d67353661e", null ],
+    [ "logger", "namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580", null ]
 ];
