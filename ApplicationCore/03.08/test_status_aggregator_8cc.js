@@ -1,0 +1,26 @@
+var test_status_aggregator_8cc =
+[
+    [ "StatusGenerator", "struct_status_generator.html", "struct_status_generator" ],
+    [ "StatusWithMessageGenerator", "struct_status_with_message_generator.html", "struct_status_with_message_generator" ],
+    [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
+    [ "OuterGroup", "struct_test_application_1_1_outer_group.html", "struct_test_application_1_1_outer_group" ],
+    [ "InnerGroup", "struct_test_application_1_1_outer_group_1_1_inner_group.html", "struct_test_application_1_1_outer_group_1_1_inner_group" ],
+    [ "TestPrioApplication", "struct_test_prio_application.html", "struct_test_prio_application" ],
+    [ "TestApplication2Levels", "struct_test_application2_levels.html", "struct_test_application2_levels" ],
+    [ "OuterGroup", "struct_test_application2_levels_1_1_outer_group.html", "struct_test_application2_levels_1_1_outer_group" ],
+    [ "TestApplicationTags", "struct_test_application_tags.html", "struct_test_application_tags" ],
+    [ "OuterGroup", "struct_test_application_tags_1_1_outer_group.html", "struct_test_application_tags_1_1_outer_group" ],
+    [ "TestApplicationAggregatorTags", "struct_test_application_aggregator_tags.html", "struct_test_application_aggregator_tags" ],
+    [ "OuterGroup", "struct_test_application_aggregator_tags_1_1_outer_group.html", "struct_test_application_aggregator_tags_1_1_outer_group" ],
+    [ "TestApplicationMessage", "struct_test_application_message.html", "struct_test_application_message" ],
+    [ "OuterGroup", "struct_test_application_message_1_1_outer_group.html", "struct_test_application_message_1_1_outer_group" ],
+    [ "BOOST_NO_EXCEPTIONS", "test_status_aggregator_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
+    [ "BOOST_TEST_MODULE", "test_status_aggregator_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#a5c538d91733eabf3fdaa707ad4f2f077", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#a8eb491cf971baae345688667b56abe5f", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#a3f7cf628398e9afad92738eb3d5fc656", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#a24c884888833ff767806404b0da45e75", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#a18611a4e9871328c843dc1b4d1d2eef8", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#af5e427ae57eeb3d1316ff322cc56680d", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#afa4501a6ef1542d2e69c7f612fb0f3c4", null ]
+];
