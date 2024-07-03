@@ -1,0 +1,25 @@
+var struct_chimera_t_k_1_1_test_capabilities =
+[
+    [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html#aaaf5377c54ba3a6f249f4586bd588124", null ],
+    [ "disableAsyncReadInconsistency", "struct_chimera_t_k_1_1_test_capabilities.html#a5090ae6ac1902fab70e2823bb7911f68", null ],
+    [ "disableForceDataLossWrite", "struct_chimera_t_k_1_1_test_capabilities.html#a009e2f1b0d32bd5a384e78540961b604", null ],
+    [ "disableSetRemoteValueIncrementsVersion", "struct_chimera_t_k_1_1_test_capabilities.html#a05822caa2e91e4577ba9eb846e3b11f9", null ],
+    [ "disableSwitchReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a1dc53c8eecd832191848ae403424da8d", null ],
+    [ "disableSwitchWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#ac932233cf52291ef0fb6b1c6a225e2a2", null ],
+    [ "disableSyncRead", "struct_chimera_t_k_1_1_test_capabilities.html#acde423a46df579bfd2a68d4fb9e441a4", null ],
+    [ "disableTestCatalogue", "struct_chimera_t_k_1_1_test_capabilities.html#a2f4b94e826cf6f2b59f4e501a900a65f", null ],
+    [ "disableTestRawTransfer", "struct_chimera_t_k_1_1_test_capabilities.html#a3decb141179b5510f85807fe7de03158", null ],
+    [ "disableTestReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a8b3b166ec2aa3a1542b78da543670f5a", null ],
+    [ "disableTestWriteNeverLosesData", "struct_chimera_t_k_1_1_test_capabilities.html#a6e905a1aad2e9109ecfb874b7ec8a5e3", null ],
+    [ "disableTestWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a21f410c1a096bd9a2a792bf040f1dafe", null ],
+    [ "enableAsyncReadInconsistency", "struct_chimera_t_k_1_1_test_capabilities.html#a33a57ca917b541e7c90ed301dc8c33ef", null ],
+    [ "enableForceDataLossWrite", "struct_chimera_t_k_1_1_test_capabilities.html#a5980fb3aaab1fb75a76cce431fd79f97", null ],
+    [ "enableSetRemoteValueIncrementsVersion", "struct_chimera_t_k_1_1_test_capabilities.html#ab8d61ddaa0db218e3fa5ae5ad50353ff", null ],
+    [ "enableSwitchReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a6315d056a1d58bfb7b9e48927cf5847e", null ],
+    [ "enableSwitchWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#ab9e81e5db27d7ff833ddbf1a76c675e4", null ],
+    [ "enableTestCatalogue", "struct_chimera_t_k_1_1_test_capabilities.html#a4d7e96374df88f988e999142eafc5127", null ],
+    [ "enableTestRawTransfer", "struct_chimera_t_k_1_1_test_capabilities.html#a7916ba2b5564cb1e9a1ae78bc454db92", null ],
+    [ "enableTestReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a2f2f24fcd42969c3576a2c21f99330e9", null ],
+    [ "enableTestWriteNeverLosesData", "struct_chimera_t_k_1_1_test_capabilities.html#a2ba5ed97c182dc706b5c8ba7dac48b8b", null ],
+    [ "enableTestWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a4b3a3c9bb2500894110e3943fc905ab3", null ]
+];
