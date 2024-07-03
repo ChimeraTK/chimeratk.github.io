@@ -233,6 +233,7 @@ var annotated_dup =
     [ "TestApplication4", "struct_test_application4.html", "struct_test_application4" ],
     [ "TestApplication5", "struct_test_application5.html", "struct_test_application5" ],
     [ "TestApplication6", "struct_test_application6.html", "struct_test_application6" ],
+    [ "TestApplicationAggregatorTags", "struct_test_application_aggregator_tags.html", "struct_test_application_aggregator_tags" ],
     [ "TestApplicationEmpty", "struct_test_application_empty.html", "struct_test_application_empty" ],
     [ "TestApplicationMessage", "struct_test_application_message.html", "struct_test_application_message" ],
     [ "TestApplicationNoConfigs", "struct_test_application_no_configs.html", "struct_test_application_no_configs" ],
