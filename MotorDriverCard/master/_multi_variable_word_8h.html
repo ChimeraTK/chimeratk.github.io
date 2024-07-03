@@ -158,8 +158,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">get</span>##VAR_NAME()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getSubWord(<a class="code" href="_multi_variable_word_8h.html#a436b0310582c58e527d6622b1f62e9e1">OUTPUT_MASK</a>(FIRST_BIT, LAST_BIT), FIRST_BIT); }               \</div>
-<div class="line">  void <span class="keyword">set</span>##VAR_NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> word) { <span class="keywordflow">return</span> setSubWord(word, <a class="code" href="_multi_variable_word_8h.html#aea1b6a90d1240fbe79d09447ddb90db9">INPUT_MASK</a>(FIRST_BIT, LAST_BIT), FIRST_BIT); }</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">get</span>##VAR_NAME()<span class="keyword"> const </span>{                                                                                 \</div>
+<div class="line">    return getSubWord(<a class="code" href="_multi_variable_word_8h.html#a436b0310582c58e527d6622b1f62e9e1">OUTPUT_MASK</a>(FIRST_BIT, LAST_BIT), FIRST_BIT);                                                    \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  void <span class="keyword">set</span>##VAR_NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> word) {                                                                              \</div>
+<div class="line">    return setSubWord(word, <a class="code" href="_multi_variable_word_8h.html#aea1b6a90d1240fbe79d09447ddb90db9">INPUT_MASK</a>(FIRST_BIT, LAST_BIT), FIRST_BIT);                                               \</div>
+<div class="line">  }</div>
 <div class="ttc" id="a_multi_variable_word_8h_html_a436b0310582c58e527d6622b1f62e9e1"><div class="ttname"><a href="_multi_variable_word_8h.html#a436b0310582c58e527d6622b1f62e9e1">OUTPUT_MASK</a></div><div class="ttdeci">#define OUTPUT_MASK(FIRST_BIT, LAST_BIT)</div><div class="ttdoc">Generate an outpu mask from the position of the first and the last bit of the mask.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8h_source.html#l00028">MultiVariableWord.h:28</a></div></div>
 <div class="ttc" id="a_multi_variable_word_8h_html_aea1b6a90d1240fbe79d09447ddb90db9"><div class="ttname"><a href="_multi_variable_word_8h.html#aea1b6a90d1240fbe79d09447ddb90db9">INPUT_MASK</a></div><div class="ttdeci">#define INPUT_MASK(FIRST_BIT, LAST_BIT)</div><div class="ttdoc">Generate an input mask from the position of the first and the last bit of the mask.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8h_source.html#l00017">MultiVariableWord.h:17</a></div></div>
 </div><!-- fragment -->
@@ -246,7 +250,7 @@ unsigned int getVoltage();</pre><p> including the implementation for a 4 bit wid
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_afc1e89bdcbaba0f1e323dc5f755439c.html">include</a></li><li class="navelem"><a class="el" href="_multi_variable_word_8h.html">MultiVariableWord.h</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 04:09:29 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

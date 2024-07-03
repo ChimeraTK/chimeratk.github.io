@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_5flogstderr_5f_5f_1297',['_logstderr__',['../namespace_chimera_t_k.html#a2d9aa118cad19e74b16fb3b4ac2dcec0',1,'ChimeraTK']]],
-  ['_5flogstdout_5f_5f_1298',['_logstdout__',['../namespace_chimera_t_k.html#af8f89b4324c8657c453d400154674e79',1,'ChimeraTK']]]
+  ['_5flogstderr_5f_5f_1298',['_logstderr__',['../namespace_chimera_t_k_1_1_motor_driver_card_detail.html#a0d01408df3ae581975ad650e553e2156',1,'ChimeraTK::MotorDriverCardDetail']]],
+  ['_5flogstdout_5f_5f_1299',['_logstdout__',['../namespace_chimera_t_k_1_1_motor_driver_card_detail.html#a0f471eb5b1c1463d4ac6607539e7ea79',1,'ChimeraTK::MotorDriverCardDetail']]]
 ];

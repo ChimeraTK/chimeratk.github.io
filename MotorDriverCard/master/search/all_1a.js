@@ -4,7 +4,7 @@ var searchData=
   ['_7ederivedstatemachine_1030',['~DerivedStateMachine',['../class_derived_state_machine.html#a66363af6adea22b51d747bacb9a6fc06',1,'DerivedStateMachine']]],
   ['_7egeneralstatus_1031',['~GeneralStatus',['../class_chimera_t_k_1_1_general_status.html#ad19f6bbb51a214e62bedf08bde6e724b',1,'ChimeraTK::GeneralStatus']]],
   ['_7elinearsteppermotor_1032',['~LinearStepperMotor',['../classmtca4u_1_1_linear_stepper_motor.html#abb198c324c08ef856038f9c195df0eb8',1,'mtca4u::LinearStepperMotor::~LinearStepperMotor()'],['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#ab941063af6bf58578b579998f1664c5e',1,'ChimeraTK::MotorDriver::LinearStepperMotor::~LinearStepperMotor()']]],
-  ['_7elogger_1033',['~Logger',['../class_chimera_t_k_1_1_logger.html#abfd2aa2b9c71bdd61c8d42edd8b2707e',1,'ChimeraTK::Logger']]],
+  ['_7elogger_1033',['~Logger',['../class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html#a0aac4c1d2125be4f0304019137825c8d',1,'ChimeraTK::MotorDriverCardDetail::Logger']]],
   ['_7emotorcontroler_1034',['~MotorControler',['../classmtca4u_1_1_motor_controler.html#a75809f9b1c396a8b2623ac99e8f1735a',1,'mtca4u::MotorControler']]],
   ['_7emotordrivercard_1035',['~MotorDriverCard',['../classmtca4u_1_1_motor_driver_card.html#a0b47d178c629ee9a98ea89e3abbd8e03',1,'mtca4u::MotorDriverCard']]],
   ['_7emotordrivercarddummy_1036',['~MotorDriverCardDummy',['../classmtca4u_1_1_motor_driver_card_dummy.html#ae8c5aaeefe7bf0af422659cbba1bd0ca',1,'mtca4u::MotorDriverCardDummy']]],

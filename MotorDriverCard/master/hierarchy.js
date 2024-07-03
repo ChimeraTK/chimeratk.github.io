@@ -22,8 +22,8 @@ var hierarchy =
     [ "HexData", "class_hex_data.html", null ],
     [ "mtca4u::LinearStepperMotorStatusAndError", "classmtca4u_1_1_linear_stepper_motor_status_and_error.html", null ],
     [ "LinearStepperMotorTest", "class_linear_stepper_motor_test.html", null ],
-    [ "ChimeraTK::Logger", "class_chimera_t_k_1_1_logger.html", null ],
-    [ "ChimeraTK::Logger::LogLevel", "class_chimera_t_k_1_1_logger_1_1_log_level.html", null ],
+    [ "ChimeraTK::MotorDriverCardDetail::Logger", "class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html", null ],
+    [ "ChimeraTK::MotorDriverCardDetail::Logger::LogLevel", "class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger_1_1_log_level.html", null ],
     [ "mtca4u::MotorControler", "classmtca4u_1_1_motor_controler.html", [
       [ "mtca4u::MotorControlerDummy", "classmtca4u_1_1_motor_controler_dummy.html", null ],
       [ "mtca4u::MotorControlerExpert", "classmtca4u_1_1_motor_controler_expert.html", [

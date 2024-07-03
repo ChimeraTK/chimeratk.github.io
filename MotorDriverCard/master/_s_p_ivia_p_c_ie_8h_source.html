@@ -99,47 +99,42 @@ $(document).ready(function(){initNavTree('_s_p_ivia_p_c_ie_8h_source.html',''); 
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">   15</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">const</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a> = 40; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">SPIviaPCIe</a>(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string <span class="keyword">const</span>&amp; moduleName,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::string <span class="keyword">const</span>&amp; writeRegisterName,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::string <span class="keyword">const</span>&amp; syncRegisterName,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spiWaitingTime = <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">SPIviaPCIe</a>(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string <span class="keyword">const</span>&amp; moduleName,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string <span class="keyword">const</span>&amp; writeRegisterName,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string <span class="keyword">const</span>&amp; syncRegisterName,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string <span class="keyword">const</span>&amp; readbackRegisterName,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spiWaitingTime = <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    uint32_t <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1">read</a>(int32_t spiCommand); </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a5b8c8b62747147e0540d26d312b86cce">write</a>(int32_t spiCommand);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a8dd651d92edcc34ed91cfe5add7b4c28">setSpiWaitingTime</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> microSeconds);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a267f2c59fe4a35a4c499937560d0249b">getSpiWaitingTime</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// No need to keep an instance of the  shared pointer. Each accessor has one.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; _writeRegister;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; _synchronisationRegister;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; _readbackRegister;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> sleepMicroSeconds(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> microSeconds);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    boost::chrono::microseconds _spiWaitingTime;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// store module name for debug purposes</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::string _moduleName;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// store these two register names for debug output (exception messages)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string _writeRegisterName;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string _syncRegisterName;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">SPIviaPCIe</a>(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device, std::string <span class="keyword">const</span>&amp; moduleName,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string <span class="keyword">const</span>&amp; writeRegisterName, std::string <span class="keyword">const</span>&amp; syncRegisterName,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spiWaitingTime = <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">SPIviaPCIe</a>(boost::shared_ptr&lt;ChimeraTK::Device&gt; <span class="keyword">const</span>&amp; device, std::string <span class="keyword">const</span>&amp; moduleName,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::string <span class="keyword">const</span>&amp; writeRegisterName, std::string <span class="keyword">const</span>&amp; syncRegisterName,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::string <span class="keyword">const</span>&amp; readbackRegisterName, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spiWaitingTime = <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">SPI_DEFAULT_WAITING_TIME</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    uint32_t <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1">read</a>(int32_t spiCommand); </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a5b8c8b62747147e0540d26d312b86cce">write</a>(int32_t spiCommand);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a8dd651d92edcc34ed91cfe5add7b4c28">setSpiWaitingTime</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> microSeconds);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a267f2c59fe4a35a4c499937560d0249b">getSpiWaitingTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// No need to keep an instance of the  shared pointer. Each accessor has one.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; _writeRegister;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; _synchronisationRegister;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ChimeraTK::ScalarRegisterAccessor&lt;int32_t&gt; _readbackRegister;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> sleepMicroSeconds(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> microSeconds);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    boost::chrono::microseconds _spiWaitingTime;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// store module name for debug purposes</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string _moduleName;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// store these two register names for debug output (exception messages)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string _writeRegisterName;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::string _syncRegisterName;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">mutable</span> boost::recursive_mutex _spiMutex;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">mutable</span> boost::recursive_mutex _spiMutex;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  };</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CHIMERATK_SPI_VIA_PCIE_H</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CHIMERATK_SPI_VIA_PCIE_H</span></div>
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html">mtca4u::SPIviaPCIe</a></div><div class="ttdoc">This class implements synchronous SPI operation over PCIexpress, using an SPI command register and a ...</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8h_source.html#l00013">SPIviaPCIe.h:13</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html_a0b12fea46722b0d69f116e90265b9273"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">mtca4u::SPIviaPCIe::SPI_DEFAULT_WAITING_TIME</a></div><div class="ttdeci">static unsigned int const SPI_DEFAULT_WAITING_TIME</div><div class="ttdoc">microseconds</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8h_source.html#l00015">SPIviaPCIe.h:15</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_s_p_ivia_p_c_ie_html_a235f3bdd4b7931219c04526273f948a1"><div class="ttname"><a href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1">mtca4u::SPIviaPCIe::read</a></div><div class="ttdeci">uint32_t read(int32_t spiCommand)</div><div class="ttdoc">Write the command and return the readback value.</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ivia_p_c_ie_8cc_source.html#l00083">SPIviaPCIe.cc:83</a></div></div>
@@ -154,7 +149,7 @@ $(document).ready(function(){initNavTree('_s_p_ivia_p_c_ie_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_afc1e89bdcbaba0f1e323dc5f755439c.html">include</a></li><li class="navelem"><a class="el" href="dir_f3da13494b49b0d2d492d3b81c0764f9.html">impl</a></li><li class="navelem"><a class="el" href="_s_p_ivia_p_c_ie_8h.html">SPIviaPCIe.h</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 04:09:28 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

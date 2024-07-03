@@ -18,9 +18,9 @@ var searchData=
   ['loadendswitchcalibration_480',['loadEndSwitchCalibration',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#abbf598f522835888161401393df65217',1,'ChimeraTK::MotorDriver::LinearStepperMotor']]],
   ['lock_5fguard_481',['lock_guard',['../_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01',1,'lock_guard():&#160;MotorControlerDummy.cc'],['../_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01',1,'lock_guard():&#160;MotorControlerImpl.cc']]],
   ['lockguard_482',['LockGuard',['../steppermotor_2src_2_linear_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6',1,'LockGuard():&#160;LinearStepperMotor.cc'],['../_basic_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6',1,'LockGuard():&#160;BasicStepperMotor.cc']]],
-  ['logger_483',['Logger',['../class_chimera_t_k_1_1_logger.html',1,'ChimeraTK::Logger'],['../class_chimera_t_k_1_1_logger_1_1_log_level.html#aff02b76416d2846736b7ecd798921a0a',1,'ChimeraTK::Logger::LogLevel::Logger()'],['../class_chimera_t_k_1_1_logger.html#a8fd3b761c0a3fc2d7ecea8d54a733966',1,'ChimeraTK::Logger::Logger()']]],
+  ['logger_483',['Logger',['../class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html',1,'ChimeraTK::MotorDriverCardDetail::Logger'],['../class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger_1_1_log_level.html#aff02b76416d2846736b7ecd798921a0a',1,'ChimeraTK::MotorDriverCardDetail::Logger::LogLevel::Logger()'],['../class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html#ae5bf52adea14aee0169885648ba25d4f',1,'ChimeraTK::MotorDriverCardDetail::Logger::Logger()']]],
   ['logger_2ecc_484',['Logger.cc',['../_logger_8cc.html',1,'']]],
   ['logger_2eh_485',['Logger.h',['../_logger_8h.html',1,'']]],
   ['loggermacros_2eh_486',['LoggerMacros.h',['../_logger_macros_8h.html',1,'']]],
-  ['loglevel_487',['LogLevel',['../class_chimera_t_k_1_1_logger_1_1_log_level.html',1,'ChimeraTK::Logger']]]
+  ['loglevel_487',['LogLevel',['../class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger_1_1_log_level.html',1,'ChimeraTK::MotorDriverCardDetail::Logger']]]
 ];

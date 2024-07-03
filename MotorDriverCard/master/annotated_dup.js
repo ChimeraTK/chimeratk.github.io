@@ -14,8 +14,10 @@ var annotated_dup =
         [ "StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor" ],
         [ "StepperMotorFactory", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory" ]
       ] ],
-      [ "GeneralStatus", "class_chimera_t_k_1_1_general_status.html", "class_chimera_t_k_1_1_general_status" ],
-      [ "Logger", "class_chimera_t_k_1_1_logger.html", "class_chimera_t_k_1_1_logger" ]
+      [ "MotorDriverCardDetail", "namespace_chimera_t_k_1_1_motor_driver_card_detail.html", [
+        [ "Logger", "class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html", "class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger" ]
+      ] ],
+      [ "GeneralStatus", "class_chimera_t_k_1_1_general_status.html", "class_chimera_t_k_1_1_general_status" ]
     ] ],
     [ "detail", "namespacedetail.html", [
       [ "NodeFiller", "classdetail_1_1_node_filler.html", "classdetail_1_1_node_filler" ]

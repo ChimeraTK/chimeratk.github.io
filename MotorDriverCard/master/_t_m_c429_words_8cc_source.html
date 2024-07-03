@@ -88,29 +88,30 @@ $(document).ready(function(){initNavTree('_t_m_c429_words_8cc_source.html',''); 
 </div><!--header-->
 <div class="contents">
 <a href="_t_m_c429_words_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_m_c429_words_8h.html">TMC429Words.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;ChimeraTK/Exception.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4">    6</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4">TMC429StatusWord::getTargetPositionReached</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> motorID) {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">if</span>(motorID &gt; 2) {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;MotorID is too large&quot;</span>);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    }</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>((<a class="code" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a>() &gt;&gt; motorID * 2) &amp; 0x1);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b">   13</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b">TMC429StatusWord::getReferenceSwitchBit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> motorID) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span>(motorID &gt; 2) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;MotorID is too large&quot;</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>((<a class="code" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a>() &gt;&gt; (motorID * 2 + 1)) &amp; 0x1);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ChimeraTK/Exception.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4">    7</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4">TMC429StatusWord::getTargetPositionReached</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> motorID) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">if</span>(motorID &gt; 2) {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;MotorID is too large&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>((<a class="code" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a>() &gt;&gt; motorID * 2) &amp; 0x1);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b">   14</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b">TMC429StatusWord::getReferenceSwitchBit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> motorID) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span>(motorID &gt; 2) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;MotorID is too large&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>((<a class="code" href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">getDataWord</a>() &gt;&gt; (motorID * 2 + 1)) &amp; 0x1);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
 <div class="ttc" id="a_t_m_c429_words_8h_html"><div class="ttname"><a href="_t_m_c429_words_8h.html">TMC429Words.h</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_multi_variable_word_html_a50597aba3dc5fe3c639006e0dfa17de2"><div class="ttname"><a href="classmtca4u_1_1_multi_variable_word.html#a50597aba3dc5fe3c639006e0dfa17de2">mtca4u::MultiVariableWord::getDataWord</a></div><div class="ttdeci">unsigned int getDataWord() const</div><div class="ttdoc">Get the encoded 32 bit data word.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8cc_source.html#l00013">MultiVariableWord.cc:13</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_status_word_html_a2fffe7098156bb5513fad655d3646b1b"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b">mtca4u::TMC429StatusWord::getReferenceSwitchBit</a></div><div class="ttdeci">unsigned int getReferenceSwitchBit(unsigned int motorID)</div><div class="ttdoc">Convenience function to avoid switch statements on the motor ID.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8cc_source.html#l00013">TMC429Words.cc:13</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_status_word_html_ab7f6047a0ed4e76a307a1c3dc12cb1c4"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4">mtca4u::TMC429StatusWord::getTargetPositionReached</a></div><div class="ttdeci">bool getTargetPositionReached(unsigned int motorID)</div><div class="ttdoc">Convenience function to avoid switch statements on the motor ID.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8cc_source.html#l00006">TMC429Words.cc:6</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_status_word_html_a2fffe7098156bb5513fad655d3646b1b"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b">mtca4u::TMC429StatusWord::getReferenceSwitchBit</a></div><div class="ttdeci">unsigned int getReferenceSwitchBit(unsigned int motorID)</div><div class="ttdoc">Convenience function to avoid switch statements on the motor ID.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8cc_source.html#l00014">TMC429Words.cc:14</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_t_m_c429_status_word_html_ab7f6047a0ed4e76a307a1c3dc12cb1c4"><div class="ttname"><a href="classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4">mtca4u::TMC429StatusWord::getTargetPositionReached</a></div><div class="ttdeci">bool getTargetPositionReached(unsigned int motorID)</div><div class="ttdoc">Convenience function to avoid switch statements on the motor ID.</div><div class="ttdef"><b>Definition:</b> <a href="_t_m_c429_words_8cc_source.html#l00007">TMC429Words.cc:7</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -118,7 +119,7 @@ $(document).ready(function(){initNavTree('_t_m_c429_words_8cc_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_t_m_c429_words_8cc.html">TMC429Words.cc</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 04:09:28 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

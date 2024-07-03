@@ -88,9 +88,9 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 </div><!--header-->
 <div class="contents">
 <a href="test_linear_stepper_motor_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;LinearStepperMotor.h&quot;</span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="test_linear_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b">   78</a></span>&#160;test_suite* <a class="code" href="test_linear_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b">init_unit_test_suite</a>(<span class="keywordtype">int</span> <span class="comment">/*argc*/</span>, <span class="keywordtype">char</span>* <span class="comment">/*argv*/</span> []) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="test_linear_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b">   78</a></span>&#160;test_suite* <a class="code" href="test_linear_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b">init_unit_test_suite</a>(<span class="keywordtype">int</span> <span class="comment">/*argc*/</span>, <span class="keywordtype">char</span>* <span class="comment">/*argv*/</span>[]) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  framework::master_test_suite().p_name.value = <span class="stringliteral">&quot;LinearStepperMotor test suite&quot;</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_linear_stepper_motor_test_suite.html">LinearStepperMotorTestSuite</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      DUMMY_DEVICE_FILE_NAME, moduleName, stepperMotorDeviceConfigFile);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  _motorControlerDummy = boost::dynamic_pointer_cast&lt;MotorControlerDummy&gt;(_motorCard</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          -&gt;getMotorControler(0));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                              -&gt;getMotorControler(0));</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  _stepperMotor.reset(<span class="keyword">new</span> <a class="code" href="classmtca4u_1_1_linear_stepper_motor.html">LinearStepperMotor</a>(DUMMY_DEVICE_FILE_NAME, moduleName, 0, stepperMotorDeviceConfigFile));</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
@@ -812,7 +812,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="ttc" id="aclass_test_unit_conveter_html_a93df8d76da98666ffae47debf8d4cdef"><div class="ttname"><a href="class_test_unit_conveter.html#a93df8d76da98666ffae47debf8d4cdef">TestUnitConveter::TestUnitConveter</a></div><div class="ttdeci">TestUnitConveter()</div><div class="ttdef"><b>Definition:</b> <a href="test_linear_stepper_motor_8cpp_source.html#l00023">testLinearStepperMotor.cpp:23</a></div></div>
 <div class="ttc" id="aclass_test_unit_conveter_html_aabea81b4c71bcfd3afc3a3a1d161802c"><div class="ttname"><a href="class_test_unit_conveter.html#aabea81b4c71bcfd3afc3a3a1d161802c">TestUnitConveter::unitsToSteps</a></div><div class="ttdeci">virtual int unitsToSteps(float units)</div><div class="ttdef"><b>Definition:</b> <a href="test_linear_stepper_motor_8cpp_source.html#l00027">testLinearStepperMotor.cpp:27</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_linear_stepper_motor_html"><div class="ttname"><a href="classmtca4u_1_1_linear_stepper_motor.html">mtca4u::LinearStepperMotor</a></div><div class="ttdef"><b>Definition:</b> <a href="mtca4u__steppermotor_2include_2_linear_stepper_motor_8h_source.html#l00030">LinearStepperMotor.h:30</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_stepper_motor_calibration_status_html"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_calibration_status_8h_source.html#l00028">StepperMotorCalibrationStatus.h:28</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_stepper_motor_calibration_status_html"><div class="ttname"><a href="classmtca4u_1_1_stepper_motor_calibration_status.html">mtca4u::StepperMotorCalibrationStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_calibration_status_8h_source.html#l00029">StepperMotorCalibrationStatus.h:29</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html"><div class="ttname"><a href="test_config_constants_8h.html">testConfigConstants.h</a></div></div>
 <div class="ttc" id="atest_linear_stepper_motor_8cpp_html_a49394edadc36ff2739d7f79cca01aa1b"><div class="ttname"><a href="test_linear_stepper_motor_8cpp.html#a49394edadc36ff2739d7f79cca01aa1b">init_unit_test_suite</a></div><div class="ttdeci">test_suite * init_unit_test_suite(int, char *[])</div><div class="ttdef"><b>Definition:</b> <a href="test_linear_stepper_motor_8cpp_source.html#l00078">testLinearStepperMotor.cpp:78</a></div></div>
@@ -822,7 +822,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_linear_stepper_motor_8cpp.html">testLinearStepperMotor.cpp</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 04:09:29 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

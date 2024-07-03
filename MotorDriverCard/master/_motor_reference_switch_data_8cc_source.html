@@ -93,12 +93,14 @@ $(document).ready(function(){initNavTree('_motor_reference_switch_data_8cc_sourc
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7">    5</a></span>&#160;  <a class="code" href="classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7">MotorReferenceSwitchData::MotorReferenceSwitchData</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dataWord) : <a class="code" href="classmtca4u_1_1_multi_variable_word.html">MultiVariableWord</a>(dataWord) {}</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_reference_switch_data.html#acf2d8f3ba877fd3c2e69d0d2e1c7729a">    7</a></span>&#160;  MotorReferenceSwitchData::operator bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(getSwitchesActiveWord()); }</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_reference_switch_data.html#acf2d8f3ba877fd3c2e69d0d2e1c7729a">    7</a></span>&#160;  MotorReferenceSwitchData::operator bool()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(getSwitchesActiveWord());</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;} <span class="comment">// namespace mtca4u</span></div>
 <div class="ttc" id="a_motor_reference_switch_data_8h_html"><div class="ttname"><a href="_motor_reference_switch_data_8h.html">MotorReferenceSwitchData.h</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_reference_switch_data_html_a4b0887b259d541707a374cba85259ef7"><div class="ttname"><a href="classmtca4u_1_1_motor_reference_switch_data.html#a4b0887b259d541707a374cba85259ef7">mtca4u::MotorReferenceSwitchData::MotorReferenceSwitchData</a></div><div class="ttdeci">MotorReferenceSwitchData(unsigned int dataWord=0)</div><div class="ttdoc">The default constructor initialises everyting to 0 (all switches inactive and disabled);.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_reference_switch_data_8cc_source.html#l00005">MotorReferenceSwitchData.cc:5</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_multi_variable_word_html"><div class="ttname"><a href="classmtca4u_1_1_multi_variable_word.html">mtca4u::MultiVariableWord</a></div><div class="ttdoc">The MultiVariableWord encodes and decodes multiple short words into one unsigned int.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8h_source.html#l00091">MultiVariableWord.h:91</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_multi_variable_word_html"><div class="ttname"><a href="classmtca4u_1_1_multi_variable_word.html">mtca4u::MultiVariableWord</a></div><div class="ttdoc">The MultiVariableWord encodes and decodes multiple short words into one unsigned int.</div><div class="ttdef"><b>Definition:</b> <a href="_multi_variable_word_8h_source.html#l00095">MultiVariableWord.h:95</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition:</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -106,7 +108,7 @@ $(document).ready(function(){initNavTree('_motor_reference_switch_data_8cc_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_motor_reference_switch_data_8cc.html">MotorReferenceSwitchData.cc</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 04:09:28 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

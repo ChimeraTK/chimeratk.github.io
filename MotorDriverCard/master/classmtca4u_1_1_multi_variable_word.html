@@ -148,7 +148,7 @@ void setUpperThreshold(unsigned int);
 unsigned int getUpperThreshold();
 </pre><p>and implements them, calling <a class="el" href="classmtca4u_1_1_multi_variable_word.html#a217fe527721f2f10c64cf54928f47691" title="Set the sub word at the width and position defined by input mask and offset.">setSubWord()</a> and <a class="el" href="classmtca4u_1_1_multi_variable_word.html#adcd059a871a73bbf9fc84db533f62546" title="Get the sub word from the data word as specified by the output mask and offset.">getSubWord()</a> with the correct masks and offsets as specified by the bit ranges. All masks and offsets are hard coded at compile time for maximum performance. They are not needed in the further code, which only uses the generated getter and setter functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8h_source.html#l00091">91</a> of file <a class="el" href="_multi_variable_word_8h_source.html">MultiVariableWord.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8h_source.html#l00095">95</a> of file <a class="el" href="_multi_variable_word_8h_source.html">MultiVariableWord.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5c3b0dea9810d6b1b18b1d25f55a790"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5c3b0dea9810d6b1b18b1d25f55a790">&#9670;&nbsp;</a></span>MultiVariableWord()</h2>
@@ -269,7 +269,7 @@ unsigned int getUpperThreshold();
 <p>The output mask is the mask at the position of the data word in the 32 bit word.</p>
 <p>N.B. The offset information is redundant and could be extracted from the mask. For performance reasons, and as this code usually is only called from macro-generated code which avoids inconsistencies, this additional information is used to avoid unnecessary computations. </p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00021">21</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00029">29</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ unsigned int getUpperThreshold();
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00019">19</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00025">25</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ unsigned int getUpperThreshold();
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00017">17</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00021">21</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ unsigned int getUpperThreshold();
 
 <p>Set the whole 32 bit data word. </p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00015">15</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00017">17</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -388,7 +388,7 @@ unsigned int getUpperThreshold();
 <p>The code throws an OutOfRangeException if the word is too large to fit the input mask. Like this the trunkation of words is avoided which could lead to unwanted results like setting a position to 0 instead of max+1.</p>
 <p>N.B. The offset information is redundant and could be extracted from the mask. For performance reasons, and as this code usually is only called from macro-generated code which avoids inconsistencies, this additional information is used to avoid unnecessary computations. </p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00025">25</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_multi_variable_word_8cc_source.html#l00033">33</a> of file <a class="el" href="_multi_variable_word_8cc_source.html">MultiVariableWord.cc</a>.</p>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ unsigned int getUpperThreshold();
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_multi_variable_word.html">MultiVariableWord</a></li>
-    <li class="footer">Generated on Sat Apr 27 2024 03:56:57 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 04:09:29 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

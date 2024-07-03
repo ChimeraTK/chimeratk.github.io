@@ -6,7 +6,7 @@ var searchData=
   ['fix_2dlinter_2dfor_2dall_2epy_287',['fix-linter-for-all.py',['../fix-linter-for-all_8py.html',1,'']]],
   ['forwardbackwarddfmc_2dmd22_2ecpp_288',['forwardBackwardDFMC-MD22.cpp',['../forward_backward_d_f_m_c-_m_d22_8cpp.html',1,'']]],
   ['full_289',['FULL',['../namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444aba7de5bc6888294e5884b024a4c894f1',1,'ChimeraTK::MotorDriver']]],
-  ['full_5fdetail_290',['FULL_DETAIL',['../class_chimera_t_k_1_1_logger.html#a714be60c00034334dcc30c38d13c8056',1,'ChimeraTK::Logger']]],
+  ['full_5fdetail_290',['FULL_DETAIL',['../class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html#a1d12db4c04111278b5b95053c95f753b',1,'ChimeraTK::MotorDriverCardDetail::Logger']]],
   ['functionaltests_291',['FunctionalTests',['../class_functional_tests.html',1,'']]],
   ['functionaltestsuite_292',['FunctionalTestSuite',['../class_functional_test_suite.html',1,'FunctionalTestSuite'],['../class_functional_test_suite.html#ac9473a3215fb2f0e9c5c01d27fcf13b8',1,'FunctionalTestSuite::FunctionalTestSuite()']]]
 ];
