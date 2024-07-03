@@ -30,6 +30,12 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< Derived >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", null ]
     ] ],
+    [ "AcknowledgeTest", "struct_acknowledge_test.html", [
+      [ "IarTestFixture", "struct_iar_test_fixture.html", null ],
+      [ "IcrTestFixture", "struct_icr_test_fixture.html", null ],
+      [ "IsrTestFixture", "struct_isr_test_fixture.html", null ]
+    ] ],
+    [ "Active0", "struct_active0.html", null ],
     [ "Adder< T, IMPL_T >", "struct_adder.html", null ],
     [ "Adder< std::string, IMPL_T >", "struct_adder_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
     [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
@@ -58,6 +64,7 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::BackendRegisterCatalogueImplIterator< BackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
+    [ "BackendRegisterer", "class_backend_registerer.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "DecoratorBackend::BackendRegisterer", "class_decorator_backend_1_1_backend_registerer.html", null ],
     [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
@@ -270,6 +277,7 @@ var hierarchy =
                 [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
                 [ "WorkingBackend", "struct_working_backend.html", null ],
                 [ "WriteCountingBackend", "struct_write_counting_backend.html", null ],
+                [ "WriteMonitoringBackend", "class_write_monitoring_backend.html", null ],
                 [ "WrongVersionBackend", "struct_wrong_version_backend.html", null ],
                 [ "WrongVersionBackend", "struct_wrong_version_backend.html", null ]
               ] ],
@@ -398,6 +406,8 @@ var hierarchy =
     [ "HelperProcess", "struct_helper_process.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
     [ "ChimeraTK::ImgView< ValType, OPTIONS >", "class_chimera_t_k_1_1_img_view.html", null ],
+    [ "Inactive0", "struct_inactive0.html", null ],
+    [ "Inactive5", "struct_inactive5.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
     [ "Integers_base< Derived >", "struct_integers__base.html", null ],
     [ "Integers_base< Integers_signed32 >", "struct_integers__base.html", [
@@ -417,6 +427,7 @@ var hierarchy =
     ] ],
     [ "Integers_signed32_async_rw", "struct_integers__signed32__async__rw.html", null ],
     [ "Interrupt_dummy", "struct_interrupt__dummy.html", null ],
+    [ "ChimeraTK::async::JsonDescriptorKeysV1", "struct_chimera_t_k_1_1async_1_1_json_descriptor_keys_v1.html", null ],
     [ "std::less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "std::list< T >", null, [
       [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ]
@@ -427,6 +438,14 @@ var hierarchy =
     [ "ChimeraTK::MappedStruct< StructHeader >", "class_chimera_t_k_1_1_mapped_struct.html", null ],
     [ "ChimeraTK::MappedStruct< ImgHeader >", "class_chimera_t_k_1_1_mapped_struct.html", [
       [ "ChimeraTK::MappedImage", "class_chimera_t_k_1_1_mapped_image.html", null ]
+    ] ],
+    [ "MasterEnableTest", "struct_master_enable_test.html", [
+      [ "GieActiveTestFixture", "struct_gie_active_test_fixture.html", null ],
+      [ "GieInactiveTestFixture", "struct_gie_inactive_test_fixture.html", null ],
+      [ "MerActiveTestFixture", "struct_mer_active_test_fixture.html", null ],
+      [ "MerInactiveTestFixture", "struct_mer_inactive_test_fixture.html", null ],
+      [ "MieActiveTestFixture", "struct_mie_active_test_fixture.html", null ],
+      [ "MieInactiveTestFixture", "struct_mie_inactive_test_fixture.html", null ]
     ] ],
     [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
@@ -687,6 +706,7 @@ var hierarchy =
       [ "VersionNumberTestSuite", "class_version_number_test_suite.html", null ]
     ] ],
     [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion >", "struct_chimera_t_k_1_1_test_capabilities.html", null ],
+    [ "TestFixture", "struct_test_fixture.html", null ],
     [ "TestLocker", "struct_test_locker.html", null ],
     [ "TestParameters", "struct_test_parameters.html", null ],
     [ "TestRegister< T >", "struct_test_register.html", [
@@ -699,6 +719,34 @@ var hierarchy =
       [ "TestRegisterRoRangeChecked< T >", "struct_test_register_ro_range_checked.html", null ]
     ] ],
     [ "ChimeraTK::ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", null ],
+    [ "ThrowTestFixture", "struct_throw_test_fixture.html", [
+      [ "CieWritableTestFixture", "struct_cie_writable_test_fixture.html", null ],
+      [ "GieAndMerTestFixture", "struct_gie_and_mer_test_fixture.html", null ],
+      [ "GieWritableTestFixture", "struct_gie_writable_test_fixture.html", null ],
+      [ "IarAndIcrTestFixture", "struct_iar_and_icr_test_fixture.html", null ],
+      [ "IarWritableTestFixture", "struct_iar_writable_test_fixture.html", null ],
+      [ "IcrWritableTestFixture", "struct_icr_writable_test_fixture.html", null ],
+      [ "IerWritableTestFixture", "struct_ier_writable_test_fixture.html", null ],
+      [ "InvalidJson1TestFixture", "struct_invalid_json1_test_fixture.html", null ],
+      [ "InvalidJson2TestFixture", "struct_invalid_json2_test_fixture.html", null ],
+      [ "IsrReadableTestFixture", "struct_isr_readable_test_fixture.html", null ],
+      [ "IsrWritableTestFixture", "struct_isr_writable_test_fixture.html", null ],
+      [ "MerWritableTestFixture", "struct_mer_writable_test_fixture.html", null ],
+      [ "MieAndGieTestFixture", "struct_mie_and_gie_test_fixture.html", null ],
+      [ "MieAndMerTestFixture", "struct_mie_and_mer_test_fixture.html", null ],
+      [ "MieGieAndMerTestFixture", "struct_mie_gie_and_mer_test_fixture.html", null ],
+      [ "MieWritableTestFixture", "struct_mie_writable_test_fixture.html", null ],
+      [ "NoIerTestFixture", "struct_no_ier_test_fixture.html", null ],
+      [ "NoIsrTestFixture", "struct_no_isr_test_fixture.html", null ],
+      [ "NoPathTestFixture", "struct_no_path_test_fixture.html", null ],
+      [ "NonexistendPathTestFixture", "struct_nonexistend_path_test_fixture.html", null ],
+      [ "OnlyCieTestFixture", "struct_only_cie_test_fixture.html", null ],
+      [ "OnlySieTestFixture", "struct_only_sie_test_fixture.html", null ],
+      [ "SieWritableTestFixture", "struct_sie_writable_test_fixture.html", null ],
+      [ "UnknownMainKeyTestFixture", "struct_unknown_main_key_test_fixture.html", null ],
+      [ "UnknownOptionTestFixture", "struct_unknown_option_test_fixture.html", null ],
+      [ "UnknownVersionTestFixture", "struct_unknown_version_test_fixture.html", null ]
+    ] ],
     [ "ChimeraTK::TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", [
       [ "ChimeraTK::NDRegisterAccessorAbstractor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", null ]

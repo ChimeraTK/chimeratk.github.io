@@ -16,6 +16,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testExceptionDummyDevice.cc", "test_exception_dummy_device_8cc.html", "test_exception_dummy_device_8cc" ],
     [ "testFixedPointConverter.cpp", "test_fixed_point_converter_8cpp.html", "test_fixed_point_converter_8cpp" ],
     [ "testFloatRawData.cpp", "test_float_raw_data_8cpp.html", "test_float_raw_data_8cpp" ],
+    [ "testGenericMuxedInterruptDistributor.cpp", "test_generic_muxed_interrupt_distributor_8cpp.html", "test_generic_muxed_interrupt_distributor_8cpp" ],
     [ "testGetSetAsCoocked.cpp", "test_get_set_as_coocked_8cpp.html", "test_get_set_as_coocked_8cpp" ],
     [ "testIEEE754_SingleConverter.cpp", "test_i_e_e_e754___single_converter_8cpp.html", "test_i_e_e_e754___single_converter_8cpp" ],
     [ "testLargeBar.cpp", "test_large_bar_8cpp.html", "test_large_bar_8cpp" ],

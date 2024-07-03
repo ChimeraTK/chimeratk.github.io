@@ -301,6 +301,7 @@ var namespace_chimera_t_k =
     [ "to_string", "namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c", null ],
     [ "userTypeToNumeric", "namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b", null ],
     [ "userTypeToUserType", "namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e", null ],
+    [ "DUMMY_READABLE_SUFFIX", "namespace_chimera_t_k.html#a4ad9e93b08897dba1d513c6be6315b2d", null ],
     [ "DUMMY_WRITEABLE_SUFFIX", "namespace_chimera_t_k.html#a4670c21e6bd33fbbe81acee66e1d3076", null ],
     [ "globalDecoratorMap", "namespace_chimera_t_k.html#a5453614d4428268571689bca7bbf571b", null ],
     [ "MEM_MULTIPLEXED_PREFIX", "namespace_chimera_t_k.html#adbc3bae518355d2b08e4111b194e8883", null ],

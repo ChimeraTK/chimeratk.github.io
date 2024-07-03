@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['usertypemap_4665',['userTypeMap',['../namespace_chimera_t_k.html#a1e4921a63a21ed0cdbe9c1259b7b7bb2',1,'ChimeraTK']]],
-  ['usertypemapnovoid_4666',['userTypeMapNoVoid',['../namespace_chimera_t_k.html#ad1f8efd0503fa72d47d28fcdb95c64b7',1,'ChimeraTK']]]
+  ['this_5ftype_4905',['THIS_TYPE',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa5cb556fdc69bf76b6fb26b033ed384b',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
+  ['timepoint_4906',['TimePoint',['../testable_rebot_sleep__testing_impl_8h.html#ad3e8c75320f092bc568948ea00fa7771',1,'testableRebotSleep_testingImpl.h']]],
+  ['type_4907',['type',['../struct_numeric_addressed_low_level_transfer_element__start_address.html#ae88b5262632eb727221a29537226002b',1,'NumericAddressedLowLevelTransferElement_startAddress::type()'],['../struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html#aadbf79334adff8ebd202681421e037dd',1,'NumericAddressedLowLevelTransferElement_numberOfBytes::type()']]]
 ];

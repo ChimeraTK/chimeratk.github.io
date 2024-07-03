@@ -252,16 +252,16 @@ Double Buffering plugin for the Logical Name Mapper</h3>
 <div class="line">  &lt;<span class="keywordtype">targetRegister</span>&gt;<span class="keyword">APP.0.DAQ0_BUF0</span>&lt;/<span class="keywordtype">targetRegister</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;doubleBuffer&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;secondBuffer&quot;</span>&gt; <span class="keyword">APP.0.DAQ0_BUF1</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;controlRegister&quot;</span>&gt; <span class="keyword">ADC.1.WORD_DUB_BUF_ENA</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;statusRegister&quot;</span>&gt; <span class="keyword">ADC.1.WORD_DUB_BUF_CURR</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;enableDoubleBuffering&quot;</span>&gt; <span class="keyword">ADC.1.WORD_DUB_BUF_ENA</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;currentBufferNumber&quot;</span>&gt; <span class="keyword">ADC.1.WORD_DUB_BUF_CURR</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;daqNumber&quot;</span>&gt;0&lt;/<span class="keywordtype">parameter</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">plugin</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">redirectedRegister</span>&gt;</div>
 </div><!-- fragment --><p>This example creates the read only register, <code>bufferedValue</code>. Reading this register returns the value from the current active buffer, hiding away the buffer switching and handshaking tasks under the hood.</p>
-<p>The controlRegister and statusRegister hook into the corresponding firmware double buffering interface. The optional parameter <code>daqNumber</code> defines the offset used in the controlRegister and statusRegister. If not present, the value 0 is assumed.</p>
+<p>The enableDoubleBuffering and currentBufferNumber hook into the corresponding firmware double buffering interface. The optional parameter <code>daqNumber</code> defines the offset used in the enableDoubleBuffering and currentBufferNumber. If not present, the value 0 is assumed.</p>
 <p>Notes and CAVEATS:</p><ul>
 <li>doubleBuffer plugin is not supported for <em>redirectedChannel</em>. The reason we decided against it is that is would be difficult to optimize access to more than one channel. Instead, apply the plugin to the whole 2D area with redirectedRegister, and refer to the logical register in redirectedChannel by targetDevice=this.</li>
-<li>Current implementation is safe for concurrent readers from the same process, i.e. the double buffering handshake with the firmware begins when first reader starts reading and ends when last reader of the same double buffered region finishes. Regions are identified on the basis of the controlRegister. However, current implementation is not safe for concurrent readers from different processes.</li>
+<li>Current implementation is safe for concurrent readers from the same process, i.e. the double buffering handshake with the firmware begins when first reader starts reading and ends when last reader of the same double buffered region finishes. Regions are identified on the basis of the enableDoubleBuffering. However, current implementation is not safe for concurrent readers from different processes.</li>
 </ul>
 <h3><a class="anchor" id="plugins_reference_bit_range"></a>
 bitRange</h3>
@@ -292,7 +292,7 @@ bitRange</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 9 2024 03:53:18 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 03:56:55 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

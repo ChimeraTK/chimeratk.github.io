@@ -139,7 +139,8 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -174,27 +175,28 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"_mapped_image_8h.html#a3014565c0fa0cadd5639c2a264790404a2bb1e3c71aa95f3c3463fdf7b2577ea7",
-"_type_changing_decorator_8h_source.html",
-"class_chimera_t_k_1_1_backend_register_info_base.html#a31c78dfbea563960cbe4805a01a1238d",
-"class_chimera_t_k_1_1_dummy_backend_base.html#a905555d8c2a6902277a4365ece876b9f",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#a60a7f6cf031d3fe4561cd07ee208d29f",
-"class_chimera_t_k_1_1_rebot_backend.html#a7835c507785e12ce3d1bb75845f11069",
-"class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd",
-"class_chimera_t_k_1_1_uio_access.html#af3fbea006c813694e14c13be8e12caa4",
-"class_chimera_t_k_1_1async_1_1_sub_domain.html#abb1ab06d2e9235a1291b4241dfa22747",
-"class_version_number_test.html#a815eacde826153a8c4043ac8a9279e4a",
-"globals_i.html",
-"pciedev__io__compat_8h.html#a0ce58a436c9a78d135964a5b62c0dfd5",
-"struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html#a7bd3e59733580f18852a25ca35b30ae3",
-"struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html",
-"struct_integers__signed32__async__rw.html#a5ed4c1e2bbc4e0ffb0563198b5be950f",
-"struct_reg_lower_half_of_firmware.html",
-"struct_short_raw__signed16.html#a190f8ebcb20a8bc1ef1405343d807acb",
-"test_dummy_backend_8cpp.html#aa5eeaf24a63e9bca0028cb3a16ad8fae",
-"test_n_d_register_accessor_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_uio_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
+"_l_n_m_math_plugin_formula_helper_8h_source.html",
+"_transfer_element_test_accessor_8h_source.html",
+"class_chimera_t_k_1_1_backend_register_catalogue.html#adf9a759eaa5c832d7ca05b2185fc4ef0",
+"class_chimera_t_k_1_1_dummy_backend.html#a19e2aa42ba9c6cfb0e8bea7b47261a49",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a4bb9a0035fe429d3b5113b2ad75964e5",
+"class_chimera_t_k_1_1_n_d_register_accessor.html#ae9d7c22ec91a68482159315571e5fc96",
+"class_chimera_t_k_1_1_read_any_group.html#af6689b5ae469df7eed0f453dc07c3df0",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#aa92a5f2db6213b0930aff6d8c95d3651",
+"class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html",
+"class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a37df5b7550e6111788469f9695acf391",
+"class_pcie_backend_test.html#aa6e194013bade461028dbdb540b406a7",
+"functions_vars_o.html",
+"namespace_chimera_t_k_1_1_utilities.html#a685a9e8b21d8fe1d21d9fa5941e3d2bc",
+"struct_bool_as_void.html#a2cea94c6917260881523d7caa2e0215d",
+"struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_spe9033bbf1deb4f2449f5a993bab102f6.html",
+"struct_dummy_protocol_implementor.html#a7769942d18f42d702d87ee472eec011e",
+"struct_muxed_nodma_async.html#a9e546d1cf4b338b1200fa2a5ab8ec329",
+"struct_reg_upper_half_of_firmware.html#a7df749f7cb739c403fabdfa53c0f99cb",
+"struct_test_register_casted_async_ro.html#a273bb659ab9d67a1e4e23faaada82f00",
+"test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649",
+"test_numeric_addressed_backend_register_accessor_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_unified_type_changing_decorator_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

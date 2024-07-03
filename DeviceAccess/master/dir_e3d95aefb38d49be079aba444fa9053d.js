@@ -21,9 +21,7 @@ var dir_e3d95aefb38d49be079aba444fa9053d =
     [ "DummyMuxedInterruptDistributor.h", "_dummy_muxed_interrupt_distributor_8h.html", [
       [ "DummyMuxedInterruptDistributor", "class_chimera_t_k_1_1async_1_1_dummy_muxed_interrupt_distributor.html", "class_chimera_t_k_1_1async_1_1_dummy_muxed_interrupt_distributor" ]
     ] ],
-    [ "GenericMuxedInterruptDistributor.h", "_generic_muxed_interrupt_distributor_8h.html", [
-      [ "GenericMuxedInterruptDistributor", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor" ]
-    ] ],
+    [ "GenericMuxedInterruptDistributor.h", "_generic_muxed_interrupt_distributor_8h.html", "_generic_muxed_interrupt_distributor_8h" ],
     [ "MuxedInterruptDistributor.h", "_muxed_interrupt_distributor_8h.html", [
       [ "MuxedInterruptDistributorFactory", "class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory.html", "class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory" ],
       [ "MuxedInterruptDistributor", "class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html", "class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor" ]

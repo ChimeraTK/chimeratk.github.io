@@ -152,8 +152,8 @@ $(document).ready(function(){initNavTree('_custom_backend_8cc-example.html','');
 <div class="line"><span class="comment">   * of the class, so you just have to create an instance of the class and the</span></div>
 <div class="line"><span class="comment">   * code is executed.</span></div>
 <div class="line"><span class="comment">   */</span></div>
-<div class="line">  <span class="keyword">struct </span>BackendRegisterer {</div>
-<div class="line">    <a name="a5"></a><a class="code" href="struct_custom_backend_1_1_backend_registerer.html#a31bb7bc390448fa5fdfc3e589c078b22">BackendRegisterer</a>() {</div>
+<div class="line">  <span class="keyword">struct </span><a name="_a5"></a><a class="code" href="class_backend_registerer.html">BackendRegisterer</a> {</div>
+<div class="line">    <a name="a6"></a><a class="code" href="struct_custom_backend_1_1_backend_registerer.html#a31bb7bc390448fa5fdfc3e589c078b22">BackendRegisterer</a>() {</div>
 <div class="line">      <span class="comment">/*</span></div>
 <div class="line"><span class="comment">       * The first parameter is the backend type string. It is the name by which</span></div>
 <div class="line"><span class="comment">       * the factory knows which type of backend to create. The name has to be</span></div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('_custom_backend_8cc-example.html','');
 <div class="line"><span class="comment">       * The factory stores this pointer together with the type name and call</span></div>
 <div class="line"><span class="comment">       * the functions when this type if backed needs to be created.</span></div>
 <div class="line"><span class="comment">       */</span></div>
-<div class="line">      <a name="a6"></a><a class="code" href="class_chimera_t_k_1_1_backend_factory.html#a1176b9ab5e2ef7a1b8aa4a4aaaeb924e">ChimeraTK::BackendFactory::getInstance</a>().<a name="a7"></a><a class="code" href="class_chimera_t_k_1_1_backend_factory.html#a1492b4d8cb3313233154abb709255cfe">registerBackendType</a>(<span class="stringliteral">&quot;CUSTOM&quot;</span>, &amp;<a class="code" href="class_custom_backend.html#ad91973dd7ec0803f9bc7ed0b552631db">CustomBackend::createInstance</a>);</div>
+<div class="line">      <a name="a7"></a><a class="code" href="class_chimera_t_k_1_1_backend_factory.html#a1176b9ab5e2ef7a1b8aa4a4aaaeb924e">ChimeraTK::BackendFactory::getInstance</a>().<a name="a8"></a><a class="code" href="class_chimera_t_k_1_1_backend_factory.html#a1492b4d8cb3313233154abb709255cfe">registerBackendType</a>(<span class="stringliteral">&quot;CUSTOM&quot;</span>, &amp;<a class="code" href="class_custom_backend.html#ad91973dd7ec0803f9bc7ed0b552631db">CustomBackend::createInstance</a>);</div>
 <div class="line">    }</div>
 <div class="line">  };</div>
 <div class="line">};</div>
@@ -175,7 +175,8 @@ $(document).ready(function(){initNavTree('_custom_backend_8cc-example.html','');
 <div class="line"><span class="comment">// containing this backend is loaded, this object is instantiated. As the</span></div>
 <div class="line"><span class="comment">// constructor of this class is registering the device, the backend is</span></div>
 <div class="line"><span class="comment">// automatically known to the factory when the library is loaded.</span></div>
-<div class="line"><span class="keyword">static</span> <a name="_a8"></a><a class="code" href="struct_custom_backend_1_1_backend_registerer.html">CustomBackend::BackendRegisterer</a> gCustomBackendRegisterer;</div>
+<div class="line"><span class="keyword">static</span> <a name="_a9"></a><a class="code" href="struct_custom_backend_1_1_backend_registerer.html">CustomBackend::BackendRegisterer</a> gCustomBackendRegisterer;</div>
+<div class="ttc" id="aclass_backend_registerer_html"><div class="ttname"><a href="class_backend_registerer.html">BackendRegisterer</a></div><div class="ttdef"><b>Definition:</b> <a href="test_generic_muxed_interrupt_distributor_8cpp_source.html#l00070">testGenericMuxedInterruptDistributor.cpp:70</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_backend_factory_html_a1176b9ab5e2ef7a1b8aa4a4aaaeb924e"><div class="ttname"><a href="class_chimera_t_k_1_1_backend_factory.html#a1176b9ab5e2ef7a1b8aa4a4aaaeb924e">ChimeraTK::BackendFactory::getInstance</a></div><div class="ttdeci">static BackendFactory &amp; getInstance()</div><div class="ttdoc">Static function to get an instance of factory.</div><div class="ttdef"><b>Definition:</b> <a href="_backend_factory_8cc_source.html#l00191">BackendFactory.cc:191</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_backend_factory_html_a1492b4d8cb3313233154abb709255cfe"><div class="ttname"><a href="class_chimera_t_k_1_1_backend_factory.html#a1492b4d8cb3313233154abb709255cfe">ChimeraTK::BackendFactory::registerBackendType</a></div><div class="ttdeci">void registerBackendType(const std::string &amp;backendType, boost::shared_ptr&lt; DeviceBackend &gt;(*creatorFunction)(std::string address, std::map&lt; std::string, std::string &gt; parameters), const std::vector&lt; std::string &gt; &amp;sdmParameterNames={}, const std::string &amp;deviceAccessVersion=CHIMERATK_DEVICEACCESS_VERSION)</div><div class="ttdoc">Register a backend by the name backendType with the given creatorFunction.</div><div class="ttdef"><b>Definition:</b> <a href="_backend_factory_8cc_source.html#l00045">BackendFactory.cc:45</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_dummy_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_dummy_backend.html">ChimeraTK::DummyBackend</a></div><div class="ttdoc">The dummy device opens a mapping file instead of a device, and implements all registers defined in th...</div><div class="ttdef"><b>Definition:</b> <a href="_dummy_backend_8h_source.html#l00045">DummyBackend.h:45</a></div></div>
@@ -190,7 +191,7 @@ $(document).ready(function(){initNavTree('_custom_backend_8cc-example.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 9 2024 03:53:16 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 3 2024 03:56:53 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
