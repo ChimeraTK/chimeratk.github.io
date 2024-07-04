@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      EqAdr ea;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      ea.adr(lastFailedAddress);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      EqCall eq;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      EqData src, dst;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      doocs::EqData src, dst;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordtype">int</span> rc = eq.get(&amp;ea, &amp;src, &amp;dst);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="comment">// if again error received, throw exception</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span>(rc &amp;&amp; <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">isCommunicationError</a>(dst.error())) {</div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">if</span>(isOpen()) {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      EqAdr ea;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      EqCall eq;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      EqData src, dst;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      doocs::EqData src, dst;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      ea.adr(path);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <span class="keywordtype">int</span> rc = eq.get(&amp;ea, &amp;src, &amp;dst);</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <span class="keywordflow">if</span>(rc) {</div>
@@ -469,7 +469,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Unsupported DOOCS data type &quot;</span> + std::string(EqData().type_string(doocsTypeId)) +</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Unsupported DOOCS data type &quot;</span> + std::string(doocs::EqData().type_string(doocsTypeId)) +</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;              <span class="stringliteral">&quot; of property &#39;&quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">// if the field name has been specified but the data type does not use it, throw an exception</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">if</span>(hasExtraLevel &amp;&amp; !extraLevelUsed) {</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Specifiaction of field name is not supported for the DOOCS data type &quot;</span> +</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          std::string(EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot;: &quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot;: &quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    p-&gt;setExceptionBackend(shared_from_this());</div>
@@ -565,7 +565,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_doocs_backend_8cc.html">DoocsBackend.cc</a></li>
-    <li class="footer">Generated on Wed Jul 3 2024 04:03:16 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 4 2024 03:53:38 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

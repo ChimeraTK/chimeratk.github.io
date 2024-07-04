@@ -5,7 +5,7 @@ var searchData=
   ['cachefile_20mechanism_31',['CacheFile Mechanism',['../cache_file.html',1,'']]],
   ['cachefile1_32',['cacheFile1',['../class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8',1,'DoocsLauncher']]],
   ['cachefile2_33',['cacheFile2',['../class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213',1,'DoocsLauncher']]],
-  ['callfordoocstype_34',['callForDoocsType',['../class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html#a2eccf40884d4a6529765d6010844b0fe',1,'ChimeraTK::DoocsBackendNumericRegisterAccessor']]],
+  ['callfordoocstype_34',['callForDoocsType',['../class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html#a01070f332cd9ffcdda8b563d77db8e6b',1,'ChimeraTK::DoocsBackendNumericRegisterAccessor']]],
   ['capabilities_35',['capabilities',['../struct_reg_some_ro_int.html#aeb695268f9854c26f587fcfb87a1ffaa',1,'RegSomeRoInt::capabilities()'],['../struct_reg_some_zmq_int.html#adda5e9005e32155c915a0c7a7ce48211',1,'RegSomeZmqInt::capabilities()'],['../struct_reg_some_int.html#a9c6ca3e1d00c7fe84b0003383ae2ef71',1,'RegSomeInt::capabilities()'],['../struct_all_register_defaults.html#a3dbfc8d80a0e95fda5d688d943dda53a',1,'AllRegisterDefaults::capabilities()']]],
   ['cataloguecache_2ecc_36',['CatalogueCache.cc',['../_catalogue_cache_8cc.html',1,'']]],
   ['cataloguecache_2eh_37',['CatalogueCache.h',['../_catalogue_cache_8h.html',1,'']]],

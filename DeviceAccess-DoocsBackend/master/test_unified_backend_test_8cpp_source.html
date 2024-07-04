@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// wait until server has started (both the update thread and the rpc thread)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    EqCall eq;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    EqAdr ea;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    EqData src, dst;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    doocs::EqData src, dst;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ea.adr(<span class="stringliteral">&quot;doocs://localhost:&quot;</span> + rpcNo() + <span class="stringliteral">&quot;/F/D/MYDUMMY/SOME_ZMQINT&quot;</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">while</span>(eq.get(&amp;ea, &amp;src, &amp;dst)) usleep(100000);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;ZeroMQ Subscribe&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    [[maybe_unused]] <span class="keywordtype">int</span> err = dmsg_attach(</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        &amp;ea, &amp;dst, <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        [](<span class="keywordtype">void</span>*, EqData* data, dmsg_info_t*) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        [](<span class="keywordtype">void</span>*, doocs::EqData* data, dmsg_info_t*) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="keywordflow">if</span>(!data-&gt;error()) zmqStartup_gotData = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        },</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        &amp;tag);</div>
@@ -794,7 +794,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_unified_backend_test_8cpp.html">testUnifiedBackendTest.cpp</a></li>
-    <li class="footer">Generated on Wed Jul 3 2024 04:03:16 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 4 2024 03:53:38 for ChimeraTK-DeviceAccess-DoocsBackend by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
