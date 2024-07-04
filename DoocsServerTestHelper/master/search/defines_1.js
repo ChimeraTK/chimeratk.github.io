@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['check_5ftimeout_188',['CHECK_TIMEOUT',['../test_initialisation_update_only_8cc.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;testInitialisationUpdateOnly.cc'],['../test_initialisation_with_sigusr1_8cc.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;testInitialisationWithSigusr1.cc']]]
+  ['boost_5ftest_5fmodule_186',['BOOST_TEST_MODULE',['../test_initialisation_update_only_8cc.html#a6b2a3852db8bb19ab6909bac01859985',1,'BOOST_TEST_MODULE():&#160;testInitialisationUpdateOnly.cc'],['../test_initialisation_with_sigusr1_8cc.html#a6b2a3852db8bb19ab6909bac01859985',1,'BOOST_TEST_MODULE():&#160;testInitialisationWithSigusr1.cc']]]
 ];
