@@ -1,0 +1,26 @@
+var classfred_1_1_x_port_gpio_client =
+[
+    [ "ReadBuffer", "classfred_1_1_x_port_gpio_client.html#a0957143751973d3d223cd1a2e64b3197", null ],
+    [ "WriteBuffer", "classfred_1_1_x_port_gpio_client.html#a21abb0c0e0f6594e43610fa12e582108", null ],
+    [ "XPortGpioClient", "classfred_1_1_x_port_gpio_client.html#a7bb3c67a67aca7b2cc0510bbc94ab77e", null ],
+    [ "checkAsynchronousConnect", "classfred_1_1_x_port_gpio_client.html#aa6201f48857b78c6cbe689c50c2206b4", null ],
+    [ "checkAsynchronousRead", "classfred_1_1_x_port_gpio_client.html#a7ce5fb8e92ed11b5d27cdf66cc7bd68c", null ],
+    [ "checkAsynchronousWrite", "classfred_1_1_x_port_gpio_client.html#a3f28e3c1d3e76fe118b36e9d33ef31d9", null ],
+    [ "checkResponse", "classfred_1_1_x_port_gpio_client.html#ad33a04e41d3246a1d01a59e0bd9ac44d", null ],
+    [ "checkResponseParameter", "classfred_1_1_x_port_gpio_client.html#aada800273f11eb9a564ae30f34399cc7", null ],
+    [ "closeSocketOnTimeout", "classfred_1_1_x_port_gpio_client.html#accb00d7ada0f4d36eaa44da467d51a5b", null ],
+    [ "connectIfSocketIsClosed", "classfred_1_1_x_port_gpio_client.html#ac73fa728ec00ac14baae5a5845e56d14", null ],
+    [ "disconnect", "classfred_1_1_x_port_gpio_client.html#ae7b870270d589878c08aad1a70af0a99", null ],
+    [ "extractResponseParameter", "classfred_1_1_x_port_gpio_client.html#ab2dd0dc4c790746b0a4495203073c88a", null ],
+    [ "getActiveLowWord", "classfred_1_1_x_port_gpio_client.html#a803a3b789523ea371745d90bd1a006c4", null ],
+    [ "getGpioPinMask", "classfred_1_1_x_port_gpio_client.html#a9195d9a3b2e7d3b38419a807e9c6bcb1", null ],
+    [ "getOutputPinsWord", "classfred_1_1_x_port_gpio_client.html#aafeebdb1b8239e389a800bb470c92b5e", null ],
+    [ "getPinsActiveWord", "classfred_1_1_x_port_gpio_client.html#a4c1481e5b390da1433b06387987f0f0f", null ],
+    [ "isPinActive", "classfred_1_1_x_port_gpio_client.html#a47f1942d8cc6229c3904dd56f3a782c9", null ],
+    [ "prepareWriteBuffer", "classfred_1_1_x_port_gpio_client.html#a8c764d76b6feea1fa5887ea3cd902975", null ],
+    [ "setActiveLowWord", "classfred_1_1_x_port_gpio_client.html#abffe0aaef8d0d643a70066bb14c02420", null ],
+    [ "setOutputPins", "classfred_1_1_x_port_gpio_client.html#a7ba3c5f2a5764c78b1bdd570edd217aa", null ],
+    [ "setPin", "classfred_1_1_x_port_gpio_client.html#a3e06d76879d178b83732e99511e50779", null ],
+    [ "setPins", "classfred_1_1_x_port_gpio_client.html#a3dbdc09662be969b6478ed3eece76723", null ],
+    [ "writeCommandAndGetResponse", "classfred_1_1_x_port_gpio_client.html#af1c12dd2bc29f707871d80b7351ec556", null ]
+];

@@ -1,0 +1,8 @@
+var structcppext_1_1detail_1_1continuation__process__async_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_t_o_u_t_00_01_c_a_l_l_a_b_l_e_01_4 =
+[
+    [ "continuation_process_async", "structcppext_1_1detail_1_1continuation__process__async_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_t_o_u_t_00_01_c_a_l_l_a_b_l_e_01_4.html#ab56ac91aea0396d36cb5ad08ca0df37a", null ],
+    [ "operator()", "structcppext_1_1detail_1_1continuation__process__async_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_t_o_u_t_00_01_c_a_l_l_a_b_l_e_01_4.html#a6d24b2dfc637623a804a4b80747aeda1", null ],
+    [ "callable", "structcppext_1_1detail_1_1continuation__process__async_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_t_o_u_t_00_01_c_a_l_l_a_b_l_e_01_4.html#ade2313bca8c24ead18100a5da25647df", null ],
+    [ "q_input", "structcppext_1_1detail_1_1continuation__process__async_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_t_o_u_t_00_01_c_a_l_l_a_b_l_e_01_4.html#a28f0ccbbf7c13ad08c1a78dfcbee80cb", null ],
+    [ "q_output", "structcppext_1_1detail_1_1continuation__process__async_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_t_o_u_t_00_01_c_a_l_l_a_b_l_e_01_4.html#a36416ad6a051bb83b392ffec3b9f8716", null ]
+];
