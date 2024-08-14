@@ -8,6 +8,7 @@ var class_chimera_t_k_1_1_inversion_of_control_accessor =
     [ "completeDescription", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a86b63d53d3a50ac8b588fd14459569f2", null ],
     [ "getModel", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#afb0f23b358181c2bead9cc586aa8c1f3", null ],
     [ "getOwner", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa9695443e71aca7a26755278e1f73f38", null ],
+    [ "getTags", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#abd8b524cc9b876e66eecbcb6dccd4fa1", null ],
     [ "operator VariableNetworkNode", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa48152bbbc8b5b533df63556d3e62304", null ],
     [ "operator VariableNetworkNode", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a2834128a4c8194a5ab1d5499132404cb", null ],
     [ "replace", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a71f97419e6d9f15de998dd31ddf7bc9f", null ],

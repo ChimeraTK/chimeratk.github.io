@@ -17,5 +17,6 @@ var struct_test_module1 =
     [ "o1", "struct_test_module1.html#a22e32c3ec9f940708862a5a21ba1f15a", null ],
     [ "o2", "struct_test_module1.html#ac9d0356d1d488d2fadc5195a536d9811", null ],
     [ "oconst", "struct_test_module1.html#abdb4bfe03ba5378813480033c7225eac", null ],
+    [ "oStat", "struct_test_module1.html#aab863b5d688c8f5783de3d785e73d81b", null ],
     [ "outputValidity", "struct_test_module1.html#af9441c6116da727c28e5df6462bf8329", null ]
 ];

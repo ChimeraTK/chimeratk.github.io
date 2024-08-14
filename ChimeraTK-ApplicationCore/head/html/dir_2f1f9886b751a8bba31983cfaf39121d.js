@@ -8,7 +8,7 @@ var dir_2f1f9886b751a8bba31983cfaf39121d =
     [ "DebugPrintAccessorDecorator.cc", "_debug_print_accessor_decorator_8cc.html", "_debug_print_accessor_decorator_8cc" ],
     [ "DeviceManager.cc", "_device_manager_8cc.html", null ],
     [ "DeviceModule.cc", "_device_module_8cc.html", null ],
-    [ "EntityOwner.cc", "_entity_owner_8cc.html", null ],
+    [ "EntityOwner.cc", "_entity_owner_8cc.html", "_entity_owner_8cc" ],
     [ "ExceptionHandlingDecorator.cc", "_exception_handling_decorator_8cc.html", "_exception_handling_decorator_8cc" ],
     [ "HierarchyModifyingGroup.cc", "_hierarchy_modifying_group_8cc.html", null ],
     [ "Logger.cc", "_logger_8cc.html", null ],

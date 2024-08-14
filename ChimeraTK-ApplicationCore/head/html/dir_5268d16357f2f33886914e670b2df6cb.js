@@ -92,11 +92,7 @@ var dir_5268d16357f2f33886914e670b2df6cb =
     [ "VariableGroup.h", "_variable_group_8h.html", [
       [ "VariableGroup", "class_chimera_t_k_1_1_variable_group.html", "class_chimera_t_k_1_1_variable_group" ]
     ] ],
-    [ "VariableNetworkNode.h", "_variable_network_node_8h.html", [
-      [ "AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
-      [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html", "class_chimera_t_k_1_1_variable_network_node" ],
-      [ "VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html", "struct_chimera_t_k_1_1_variable_network_node__data" ]
-    ] ],
+    [ "VariableNetworkNode.h", "_variable_network_node_8h.html", "_variable_network_node_8h" ],
     [ "VariableNetworkNodeDumpingVisitor.h", "_variable_network_node_dumping_visitor_8h.html", [
       [ "PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", "class_chimera_t_k_1_1_pushable_stream" ],
       [ "VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor" ]

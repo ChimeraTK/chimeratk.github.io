@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variablehouseoldtowikitable_1996',['variableHouseoldToWikiTable',['../namespacevariable_houseold_to_wiki_table.html',1,'']]]
+  ['variablehouseoldtowikitable_2001',['variableHouseoldToWikiTable',['../namespacevariable_houseold_to_wiki_table.html',1,'']]]
 ];

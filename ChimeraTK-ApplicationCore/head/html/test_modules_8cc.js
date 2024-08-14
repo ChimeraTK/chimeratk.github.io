@@ -18,6 +18,7 @@ var test_modules_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a66fe25197dcc1d3f436a2f4fbe73c83f", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a9d24eea5924bbd61af30546a5cdeafc0", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a8d1a8553ac6153918e23845a529418ee", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a18246f1eabccf676330719c3369b2097", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#ac061868745661f1d128b1393bb804a50", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a8f032dfe7e4405cdbb96e434c34ad78a", null ]
 ];

@@ -380,9 +380,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a> for error status and message reporting. </p>
-<p>Convenience methods ensure that status and message are updated consistently. </p>
+<p>Convenience methods ensure that status and message are updated consistently. Like <a class="el" href="struct_chimera_t_k_1_1_status_output.html" title="Special ScalarOutput which represents a status which can be aggregated by the StatusAggregator.">StatusOutput</a>, by default does not propagate DataValidity=invalid of owning module to status and message. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00025">25</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00026">26</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3289701712bed2d84e0b9df998a63cb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3289701712bed2d84e0b9df998a63cb2">&#9670;&nbsp;</a></span>StatusWithMessage() <span class="overload">[1/2]</span></h2>
@@ -481,7 +481,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set status and message but to not write. </p>
 <p>This is useful when using <a class="el" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb" title="Just call write() on all writable variables in the group.">writeAll()</a> on parent. status must be != OK. To set an OK status, use <a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a3814e4f5f1d2b817a09aa0df68e12284" title="Set status to OK and clear the message, but to not write.">setOk()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00051">51</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00053">53</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -511,7 +511,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set status to OK and clear the message, but to not write. </p>
 <p>This is useful when using <a class="el" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb" title="Just call write() on all writable variables in the group.">writeAll()</a> on parent. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00059">59</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00061">61</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -552,7 +552,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the status and the message and write the outputs. </p>
 <p>status must be != OK. To set an OK status, use <a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a130a76dc4b5917131d460e05063555cb" title="Set status to OK, clear the message and write the outputs.">writeOk()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00017">17</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00019">19</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -598,7 +598,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00024">24</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00026">26</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -635,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set status to OK, clear the message and write the outputs. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00032">32</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00034">34</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -670,7 +670,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00039">39</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00041">41</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -703,7 +703,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00063">63</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00064">64</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00061">61</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00062">62</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +745,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reserved tag which is used to mark presense of the message output. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00056">56</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00057">57</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html">StatusWithMessage</a></li>
-    <li class="footer">Generated on Mon Aug 12 2024 21:37:41 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 13 2024 21:33:45 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

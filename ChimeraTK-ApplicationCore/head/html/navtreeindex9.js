@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"struct_my_module.html#a38a355c52087641b4b32c63490203eef":[14,0,42,1],
+"struct_my_module.html#a74f37b284d3dc4c4684ed344bb2eae5c":[14,0,42,6],
+"struct_my_module.html#ab638d4f2b024c77e1ed62bf77c77dc76":[14,0,42,4],
+"struct_my_module.html#aca0be9e7ca63360d85a7994cf400f4b6":[14,0,42,8],
+"struct_my_module.html#af9436181e8106490572d033b10b72d51":[14,0,42,7],
+"struct_my_module_1_1_pointless_variable_group.html":[14,0,42,0],
 "struct_my_module_1_1_pointless_variable_group.html#ae92116e9eb158c0a2bf06471bc6da063":[14,0,42,0,0],
 "struct_notifying_module.html":[14,0,43],
 "struct_notifying_module.html#a3ec2cb7834ff65e2285b1a196d0b17fe":[14,0,43,1],
@@ -240,14 +246,8 @@ var NAVTREEINDEX9 =
 "struct_test_app.html#a053ea51131d3752ebb3894b190f973be":[14,0,82,15],
 "struct_test_app.html#a08177de9fc3e32add783669397fa2962":[14,0,82,1],
 "struct_test_app.html#a08177de9fc3e32add783669397fa2962":[14,0,82,3],
-"struct_test_app.html#a08177de9fc3e32add783669397fa2962":[14,0,82,4],
 "struct_test_app.html#a08177de9fc3e32add783669397fa2962":[14,0,82,6],
+"struct_test_app.html#a08177de9fc3e32add783669397fa2962":[14,0,82,4],
 "struct_test_app.html#a41d26e260d16b82207f7675cff5c432b":[14,0,82,7],
-"struct_test_app.html#a470f8e1a02a638f484d7324f85d35f84":[14,0,82,8],
-"struct_test_app.html#a7718e7b8954304b71aabe083200a16ea":[14,0,82,10],
-"struct_test_app.html#a9ccacf2a3513981e1240cd89a5b74679":[14,0,82,16],
-"struct_test_app.html#ac15202bc5303f7b771a6ac97d12702a8":[14,0,82,11],
-"struct_test_app.html#aca930a3f233f26d24386b623647dd236":[14,0,82,2],
-"struct_test_app.html#aca930a3f233f26d24386b623647dd236":[14,0,82,0],
-"struct_test_app.html#ad32f853793eefbce05935168f5d4cec0":[14,0,82,5]
+"struct_test_app.html#a470f8e1a02a638f484d7324f85d35f84":[14,0,82,8]
 };
