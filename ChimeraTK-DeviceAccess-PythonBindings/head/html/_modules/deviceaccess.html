@@ -1,0 +1,1558 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>deviceaccess &#8212; ChimeraTK-DeviceAccess-PythonBindings  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for deviceaccess</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span>
+<span class="c1"># SPDX-License-Identifier: LGPL-3.0-or-later</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This module offers the functionality of the DeviceAccess C++ library for python.</span>
+
+<span class="sd">The ChimeraTK DeviceAccess library provides an abstract interface for register</span>
+<span class="sd">based devices. Registers are identified by a name and usually accessed though</span>
+<span class="sd">an accessor object. Since this library also allows access to other control</span>
+<span class="sd">system applications, it can be understood as the client library of the</span>
+<span class="sd">ChimeraTK framework.</span>
+
+<span class="sd">More information on ChimeraTK can be found at the project&#39;s</span>
+<span class="sd">`github.io &lt;https://chimeratk.github.io/&gt;`_.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">Union</span>
+<span class="kn">import</span> <span class="nn">_da_python_bindings</span> <span class="k">as</span> <span class="nn">pb</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">_da_python_bindings</span> <span class="k">import</span> <span class="n">AccessMode</span><span class="p">,</span> <span class="n">DataValidity</span><span class="p">,</span> <span class="n">TransferElementID</span><span class="p">,</span> <span class="n">VersionNumber</span><span class="p">,</span> <span class="n">FundamentalType</span>
+<span class="kn">import</span> <span class="nn">abc</span>
+<span class="kn">import</span> <span class="nn">functools</span>
+
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="setDMapFilePath"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.setDMapFilePath">[docs]</a><span class="k">def</span> <span class="nf">setDMapFilePath</span><span class="p">(</span><span class="n">dmapFilePath</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Set the location of the dmap file.</span>
+
+<span class="sd">    The library will parse this dmap file for the device(alias) lookup.</span>
+<span class="sd">    Relative or absolute path of the dmap file (directory and file name).</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Setting the location of the dmap file</span>
+<span class="sd">      &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">      &gt;&gt;&gt; da.setDMapFilePath(&#39;deviceInformation/exampleCrate.dmap&#39;)</span>
+<span class="sd">      &gt;&gt;&gt; dmap_path = da.getDMapFilePath()</span>
+<span class="sd">      &gt;&gt;&gt; print(dmap_path)</span>
+<span class="sd">      deviceInformation/exampleCrate.dmap</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pb</span><span class="o">.</span><span class="n">setDmapFile</span><span class="p">(</span><span class="n">dmapFilePath</span><span class="p">)</span></div>
+
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="getDMapFilePath"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.getDMapFilePath">[docs]</a><span class="k">def</span> <span class="nf">getDMapFilePath</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the dmap file name which the library currently uses for looking up device(alias) names.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">pb</span><span class="o">.</span><span class="n">getDmapFile</span><span class="p">()</span></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="GeneralRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor">[docs]</a><span class="k">class</span> <span class="nc">GeneralRegisterAccessor</span><span class="p">(</span><span class="n">abc</span><span class="o">.</span><span class="n">ABC</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This is a super class to avoid code duplication. It contains</span>
+<span class="sd">    methods that are common for the inheriting accessors.</span>
+
+<span class="sd">    .. note:: As all accessors inherit from numpy&#39;s ndarray, the</span>
+<span class="sd">              behaviour concerning slicing and mathematical operations</span>
+<span class="sd">              is simimlar. Result accessors share the attributes of the left</span>
+<span class="sd">              operand, hence they are shallow copies of it. This leads to</span>
+<span class="sd">              functionality that is not available in the C++ implementation.</span>
+<span class="sd">              Please refer to the examples below.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Slicing and writing. Operations are shared with the original accessor.</span>
+<span class="sd">      &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; dev.open()</span>
+<span class="sd">      &gt;&gt;&gt; originAcc = dev.getTwoDRegisterAccessor(np.int32, &quot;BOARD/DMA&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; originAcc.set(7)</span>
+<span class="sd">      &gt;&gt;&gt; originAcc.write() # all elements are now 7.</span>
+<span class="sd">      &gt;&gt;&gt; print(originAcc)</span>
+<span class="sd">          [[7 7 7 7 7 7]</span>
+<span class="sd">          [7 7 7 7 7 7]</span>
+<span class="sd">          [7 7 7 7 7 7]</span>
+<span class="sd">          [7 7 7 7 7 7]]</span>
+<span class="sd">      &gt;&gt;&gt; channels = originAcc.getNChannels()</span>
+<span class="sd">      &gt;&gt;&gt; elementsPerChannel = originAcc.getNElementsPerChannel()</span>
+<span class="sd">      &gt;&gt;&gt; print(channels, elementsPerChannel) # there are 4 channels, each with 6 elements</span>
+<span class="sd">          4 6</span>
+<span class="sd">      &gt;&gt;&gt; slicedAcc = originAcc[:][1] # the second element of every channel</span>
+<span class="sd">      &gt;&gt;&gt; slicedAcc.set(21) # set these to 21</span>
+<span class="sd">      &gt;&gt;&gt; slicedAcc.write()</span>
+<span class="sd">      &gt;&gt;&gt; print(originAcc) # originAcc is changed as well</span>
+<span class="sd">          [[ 7  7  7  7  7  7]</span>
+<span class="sd">           [21 21 21 21 21 21]</span>
+<span class="sd">           [ 7  7  7  7  7  7]</span>
+<span class="sd">           [ 7  7  7  7  7  7]]</span>
+
+<span class="sd">    Results from mathematical operations are shallow copies of the left operand.</span>
+<span class="sd">      &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; dev.open()</span>
+<span class="sd">      &gt;&gt;&gt; oneAcc = dev.getScalarRegisterAccessor(np.uint32, &quot;ADC/WORD_CLK_CNT&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; oneAcc.set(72)</span>
+<span class="sd">      &gt;&gt;&gt; oneAcc.write() # oneAcc is now 72</span>
+<span class="sd">      &gt;&gt;&gt; otherAcc = dev.getScalarRegisterAccessor(np.uint32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; otherAcc.set(47)</span>
+<span class="sd">      &gt;&gt;&gt; otherAcc.write() #  otherAcc is now 47.</span>
+<span class="sd">      &gt;&gt;&gt; resultAcc = oneAcc + otherAcc # resultAcc&#39;s numpy buffer is now 119</span>
+<span class="sd">      &gt;&gt;&gt; print(resultAcc)</span>
+<span class="sd">          [119]</span>
+<span class="sd">      &gt;&gt;&gt; resultAcc.write() # write() will also write into the register of oneAcc</span>
+<span class="sd">      &gt;&gt;&gt; oneAcc.read()</span>
+<span class="sd">      &gt;&gt;&gt; print(oneAcc)</span>
+<span class="sd">          [119]</span>
+<span class="sd">      &gt;&gt;&gt; otherAcc.read() # the buffer&#39;s and registers of the right operand are not touched</span>
+<span class="sd">      &gt;&gt;&gt; print(otherAcc)</span>
+<span class="sd">          [47]</span>
+<span class="sd">      &gt;&gt;&gt; resultAcc.getName() # the resultAcc is a shallow copy of the left operand</span>
+<span class="sd">          &#39;/ADC/WORD_CLK_CNT&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.read"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.read">[docs]</a>    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Read the data from the device.</span>
+
+<span class="sd">        If :py:obj:`AccessMode.wait_for_new_data` was set, this function</span>
+<span class="sd">        will block until new data has arrived. Otherwise, it still might block</span>
+<span class="sd">        for a short time until the data transfer is complete.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Reading from a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.read()</span>
+<span class="sd">          &gt;&gt;&gt; acc</span>
+<span class="sd">            ScalarRegisterAccessor([99], dtype=int32)</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Not implemented in base class&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.readLatest"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.readLatest">[docs]</a>    <span class="k">def</span> <span class="nf">readLatest</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Read the latest value, discarding any other update since the last read if present.</span>
+
+<span class="sd">        Otherwise, this function is identical to :py:func:`readNonBlocking`,</span>
+<span class="sd">        i.e. it will never wait for new values, and it will return</span>
+<span class="sd">        whether a new value was available if</span>
+<span class="sd">        :py:obj:`AccessMode.wait_for_new_data` is set.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Not implemented in base class&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.readNonBlocking"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.readNonBlocking">[docs]</a>    <span class="k">def</span> <span class="nf">readNonBlocking</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Read the next value, if available in the input buffer.</span>
+
+<span class="sd">        If :py:obj:`AccessMode.wait_for_new_data` was set, this function returns</span>
+<span class="sd">        immediately and the return value indicated if a new value was</span>
+<span class="sd">        available (`True`) or not (`False`).</span>
+
+<span class="sd">        If :py:obj:`AccessMode.wait_for_new_data` was not set, this function is</span>
+<span class="sd">        identical to :py:meth:`.read` , which will still return quickly. Depending on</span>
+<span class="sd">        the actual transfer implementation, the backend might need to</span>
+<span class="sd">        transfer data to obtain the current value before returning. Also</span>
+<span class="sd">        this function is not guaranteed to be lock free. The return value</span>
+<span class="sd">        will be always true in this mode.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Not implemented in base class&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.write"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.write">[docs]</a>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Write the data to device.</span>
+
+<span class="sd">        The return value is true, old data was lost on the write transfer</span>
+<span class="sd">        (e.g. due to an buffer overflow). In case of an unbuffered write</span>
+<span class="sd">        transfer, the return value will always be false.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Writing to a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; reference = [199]</span>
+<span class="sd">          &gt;&gt;&gt; acc.set(reference)</span>
+<span class="sd">          &gt;&gt;&gt; acc.write()</span>
+<span class="sd">            ScalarRegisterAccessor([199], dtype=int32)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Not implemented in base class&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.writeDestructively"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.writeDestructively">[docs]</a>    <span class="k">def</span> <span class="nf">writeDestructively</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Just like :py:meth:`.write`, but allows the implementation</span>
+<span class="sd">        to destroy the content of the user buffer in the process.</span>
+
+<span class="sd">        The application must expect the user buffer of the</span>
+<span class="sd">        TransferElement to contain undefined data after calling this function.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Not implemented in base class&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getName"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getName">[docs]</a>    <span class="k">def</span> <span class="nf">getName</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the name that identifies the process variable.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the name of a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.getName()</span>
+<span class="sd">            &#39;/ADC/WORD_CLK_CNT_1&#39;</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getName</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getUnit"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getUnit">[docs]</a>    <span class="k">def</span> <span class="nf">getUnit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the engineering unit.</span>
+
+<span class="sd">        If none was specified, it will default to &quot;n./a.&quot;</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the engineering unit of a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.getUnit()</span>
+<span class="sd">            &#39;n./a.&#39;</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getUnit</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getValueType"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getValueType">[docs]</a>    <span class="k">def</span> <span class="nf">getValueType</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserType</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the type for the userType of this transfer element, that</span>
+<span class="sd">        was given at the initialization of the accessor.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the userType of a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.getValueType()</span>
+<span class="sd">            numpy.int32</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">userType</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getDescription"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getDescription">[docs]</a>    <span class="k">def</span> <span class="nf">getDescription</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the description of this variable/register, if there is any.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the description of a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.getDescription()</span>
+<span class="sd">            &#39;&#39;</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getDescription</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getAccessModeFlags"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getAccessModeFlags">[docs]</a>    <span class="k">def</span> <span class="nf">getAccessModeFlags</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the access modes flags, that</span>
+<span class="sd">        were given at the initialization of the accessor.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the access modes flags of a OneDRegisterAccessor with the wait_for_new_data flag:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">            np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; acc.getAccessModeFlags()</span>
+<span class="sd">            [da.AccessMode.wait_for_new_data]</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">accessModeFlagStrings</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getAccessModeFlagsString</span><span class="p">()</span>
+        <span class="n">flags</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">flag</span> <span class="ow">in</span> <span class="n">accessModeFlagStrings</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">flag</span> <span class="o">==</span> <span class="s1">&#39;wait_for_new_data&#39;</span><span class="p">:</span>
+                <span class="n">flags</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">wait_for_new_data</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">flag</span> <span class="o">==</span> <span class="s1">&#39;raw&#39;</span><span class="p">:</span>
+                <span class="n">flags</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">flags</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getVersionNumber"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getVersionNumber">[docs]</a>    <span class="k">def</span> <span class="nf">getVersionNumber</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">VersionNumber</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the version number that is associated with the last transfer</span>
+<span class="sd">        (i.e. last read or write). See :py:class:`VersionNumber` for details.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the version number of a OneDRegisterAccessor:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">            np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; acc.getVersionNumber()</span>
+<span class="sd">            &lt;_da_python_bindings.VersionNumber at 0x7f52b5f8a740&gt;</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getVersionNumber</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.isReadOnly"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.isReadOnly">[docs]</a>    <span class="k">def</span> <span class="nf">isReadOnly</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if transfer element is read only, i.e.</span>
+<span class="sd">        it is readable but not writeable.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the readOnly status of a OneDRegisterAccessor:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">            np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; acc.isReadOnly()</span>
+<span class="sd">            True</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">isReadOnly</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.isReadable"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.isReadable">[docs]</a>    <span class="k">def</span> <span class="nf">isReadable</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if transfer element is readable.</span>
+
+<span class="sd">        It throws an exception if you try to read and :py:meth:`isReadable` is not True.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the readable status of a OneDRegisterAccessor:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">            np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; acc.isReadable()</span>
+<span class="sd">            True</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">isReadable</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.isWriteable"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.isWriteable">[docs]</a>    <span class="k">def</span> <span class="nf">isWriteable</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if transfer element is writeable.</span>
+
+<span class="sd">        It throws an exception if you try to write and :py:meth:`isWriteable` is not True.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the writeable status of a OneDRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">            np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; acc.isReadable()</span>
+<span class="sd">            False</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">isWriteable</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.isInitialised"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.isInitialised">[docs]</a>    <span class="k">def</span> <span class="nf">isInitialised</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return if the accessor is properly initialized.</span>
+
+<span class="sd">        It is initialized if it was constructed passing the</span>
+<span class="sd">        pointer to an implementation, it is not</span>
+<span class="sd">        initialized if it was constructed only using the placeholder</span>
+<span class="sd">        constructor without arguments. Which should currently not happen,</span>
+<span class="sd">        as the registerPath is a required argument for this module, but might</span>
+<span class="sd">        be true for other implementations.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the initialized status of a OneDRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">              np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; acc.isInitialised()</span>
+<span class="sd">              True</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">isInitialised</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.setDataValidity"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.setDataValidity">[docs]</a>    <span class="k">def</span> <span class="nf">setDataValidity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valid</span><span class="o">=</span><span class="n">DataValidity</span><span class="o">.</span><span class="n">ok</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Associate a persistent data storage object to be updated</span>
+<span class="sd">        on each write operation of this ProcessArray.</span>
+
+<span class="sd">        If no persistent data storage as associated previously, the</span>
+<span class="sd">        value from the persistent storage is read and send to the receiver.</span>
+
+<span class="sd">        .. note:: A call to this function will be ignored, if the</span>
+<span class="sd">            TransferElement does not support persistent data storage</span>
+<span class="sd">            (e.g. read-only variables or device registers)</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        valid: DataValidity</span>
+<span class="sd">            DataValidity.ok or DataValidity.faulty</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">setDataValidity</span><span class="p">(</span><span class="n">valid</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.dataValidity"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.dataValidity">[docs]</a>    <span class="k">def</span> <span class="nf">dataValidity</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DataValidity</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return current validity of the data.</span>
+
+<span class="sd">        Will always return :py:obj:`DataValidity.ok` if the backend does not support it</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">dataValidity</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.getId"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.getId">[docs]</a>    <span class="k">def</span> <span class="nf">getId</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TransferElementID</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtain unique ID for the actual implementation of this TransferElement.</span>
+
+<span class="sd">        This means that e.g. two instances of ScalarRegisterAccessor</span>
+<span class="sd">        created by the same call to :py:meth:`Device.getScalarRegisterAccessor`</span>
+<span class="sd">        will have the same ID, while two instances obtained by to</span>
+<span class="sd">        difference calls to :py:meth:`Device.getScalarRegisterAccessor`</span>
+<span class="sd">        will have a different ID even when accessing the very same register.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting the name of a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.getId()</span>
+<span class="sd">            &lt;_da_python_bindings.TransferElementID at 0x7f5298a8f400&gt;</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getId</span><span class="p">()</span></div></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor">[docs]</a><span class="k">class</span> <span class="nc">NumpyGeneralRegisterAccessor</span><span class="p">(</span><span class="n">GeneralRegisterAccessor</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channels</span><span class="p">,</span> <span class="n">elementsPerChannel</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span>
+                 <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">dtype</span> <span class="o">=</span> <span class="n">userType</span>
+        <span class="k">if</span> <span class="n">dtype</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="n">dtype</span> <span class="o">=</span> <span class="s1">&#39;U1&#39;</span>
+        <span class="k">if</span> <span class="n">channels</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">elementsPerChannel</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">channels</span><span class="p">,</span> <span class="n">elementsPerChannel</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span> <span class="o">=</span> <span class="n">accessor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">userType</span> <span class="o">=</span> <span class="n">userType</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_AccessModeFlags</span> <span class="o">=</span> <span class="n">accessModeFlags</span>
+
+    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span>
+
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor.set"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor.set">[docs]</a>    <span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set the user buffer to the given value.</span>
+
+<span class="sd">        The value shape has to match the accessor, any mismatch will throw an exception.</span>
+<span class="sd">        Different types will be converted to the userType of the accessor.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        value : numpy.array or compatible type</span>
+<span class="sd">            The new content of the user buffer.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Setting a ScalarRegisterAccessor</span>
+<span class="sd">            &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">            &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; dev.open()</span>
+<span class="sd">            &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; acc.read()</span>
+<span class="sd">                ScalarRegisterAccessor([74678], dtype=int32)</span>
+<span class="sd">            &gt;&gt;&gt; acc.set([-23])</span>
+<span class="sd">            &gt;&gt;&gt; acc.write()</span>
+<span class="sd">                ScalarRegisterAccessor([-23], dtype=int32)</span>
+
+<span class="sd">        Setting a OneDRegisterAccessor</span>
+<span class="sd">            &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">            &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; dev.open()</span>
+<span class="sd">            &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(np.int32, &quot;BOARD/WORD_CLK_MUX&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; acc.read()</span>
+<span class="sd">                OneDRegisterAccessor([342011132 958674678 342011132 958674678], dtype=int32)</span>
+<span class="sd">            &gt;&gt;&gt; acc.set([1, 9, 42, -23])</span>
+<span class="sd">            &gt;&gt;&gt; acc.write()</span>
+<span class="sd">                OneDRegisterAccessor([  1,   9,  42, -23], dtype=int32)</span>
+
+<span class="sd">        Setting a TwoDRegisterAccessor</span>
+<span class="sd">            &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">            &gt;&gt;&gt; dda.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; dev.open()</span>
+<span class="sd">            &gt;&gt;&gt; acc = dev.getTwoDRegisterAccessor(np.int32, &quot;BOARD/DMA&quot;)</span>
+<span class="sd">            &gt;&gt;&gt; acc.read()</span>
+<span class="sd">            TwoDRegisterAccessor([[  0   4  16  36  64 100]</span>
+<span class="sd">                    [  0   0   0   0   0   0]</span>
+<span class="sd">                    [  1   9  25  49  81 121]</span>
+<span class="sd">                    [  0   0   0   0   0   0]], dtype=int32)</span>
+<span class="sd">            &gt;&gt;&gt; channels = acc.getNChannels()</span>
+<span class="sd">            &gt;&gt;&gt; elementsPerChannel = acc.getNElementsPerChannel()</span>
+<span class="sd">            &gt;&gt;&gt; reference = [</span>
+<span class="sd">            &gt;&gt;&gt;     [i*j+i+j+12 for j in range(elementsPerChannel)] for i in range(channels)]</span>
+<span class="sd">            &gt;&gt;&gt; acc.set(reference)</span>
+<span class="sd">            &gt;&gt;&gt; acc.write()</span>
+<span class="sd">            TwoDRegisterAccessor([[12, 13, 14, 15, 16, 17],</span>
+<span class="sd">                        [13, 15, 17, 19, 21, 23],</span>
+<span class="sd">                        [14, 17, 20, 23, 26, 29],</span>
+<span class="sd">                        [15, 19, 23, 27, 31, 35]], dtype=int32)</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># TODO: maybe we should store scalars as such?</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="n">dtype</span><span class="o">.</span><span class="n">kind</span> <span class="o">!=</span> <span class="s1">&#39;U&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isscalar</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+                <span class="n">newarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">newarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">value</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isscalar</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+                <span class="n">newarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">newarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">value</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="n">newarray</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The shape of the provided value is incompatible with this accessor.&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="n">newarray</span></div>
+
+    <span class="c1"># pass through all (non-operator) functions to the np array (unless defined here)</span>
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="c1"># comparison operators</span>
+    <span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">&lt;</span> <span class="n">other</span>
+
+    <span class="k">def</span> <span class="nf">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">&lt;=</span> <span class="n">other</span>
+
+    <span class="k">def</span> <span class="nf">__gt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">&gt;</span> <span class="n">other</span>
+
+    <span class="k">def</span> <span class="nf">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">&gt;=</span> <span class="n">other</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">==</span> <span class="n">other</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">!=</span> <span class="n">other</span>
+
+    <span class="c1"># conversion operators</span>
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__bool__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span>
+
+    <span class="c1"># subscript operator as getter</span>
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserType</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="c1"># subscript operator as setter</span>
+    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">newvalue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">newvalue</span>
+
+    <span class="c1"># binary operators</span>
+    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__add__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__sub__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__mul__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__truediv__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__floordiv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__floordiv__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__mod__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__mod__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__pow__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__pow__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__rshift__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__rshift__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">___lshift___mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__lshift__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__and__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__and__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__or__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__or__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__xor__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__xor__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="c1"># assignment operators</span>
+    <span class="k">def</span> <span class="nf">__isub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__isub__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__iadd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__iadd__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__imul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__imul__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__idiv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="n">__idiv__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__ifloordiv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__ifloordiv__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__imod__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__imod__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__ipow__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__ipow__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__irshift__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__irshift__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__ilshift__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__ilshift__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__iand__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__iand__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__ior__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__ior__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__ixor__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterAccessor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__ixor__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="c1"># unary operators</span>
+    <span class="k">def</span> <span class="nf">__neg__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__neg__</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__pos__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__pos__</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__invert__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__invert__</span><span class="p">()</span>
+
+    <span class="c1"># accessor functions</span>
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor.read"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor.read">[docs]</a>    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor.readNonBlocking"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor.readNonBlocking">[docs]</a>    <span class="k">def</span> <span class="nf">readNonBlocking</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">status</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">readNonBlocking</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">status</span></div>
+
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor.readLatest"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor.readLatest">[docs]</a>    <span class="k">def</span> <span class="nf">readLatest</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">status</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">readLatest</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">status</span></div>
+
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor.write"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor.write">[docs]</a>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="NumpyGeneralRegisterAccessor.writeDestructively"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.NumpyGeneralRegisterAccessor.writeDestructively">[docs]</a>    <span class="k">def</span> <span class="nf">writeDestructively</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">writeDestructively</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span></div>
+
+    <span class="c1"># transfer doc strings from base class for accessor functions</span>
+    <span class="n">read</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">GeneralRegisterAccessor</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="vm">__doc__</span>
+    <span class="n">readNonBlocking</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">GeneralRegisterAccessor</span><span class="o">.</span><span class="n">readNonBlocking</span><span class="o">.</span><span class="vm">__doc__</span>
+    <span class="n">readLatest</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">GeneralRegisterAccessor</span><span class="o">.</span><span class="n">readLatest</span><span class="o">.</span><span class="vm">__doc__</span>
+    <span class="n">write</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">GeneralRegisterAccessor</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="vm">__doc__</span>
+    <span class="n">writeDestructively</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">GeneralRegisterAccessor</span><span class="o">.</span><span class="n">writeDestructively</span><span class="o">.</span><span class="vm">__doc__</span></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="TwoDRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.TwoDRegisterAccessor">[docs]</a><span class="k">class</span> <span class="nc">TwoDRegisterAccessor</span><span class="p">(</span><span class="n">NumpyGeneralRegisterAccessor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Accessor class to read and write registers transparently by using the accessor object</span>
+<span class="sd">    like a 2D array of the type UserType.</span>
+
+<span class="sd">    Conversion to and from the UserType will be handled by a data</span>
+<span class="sd">    converter matching the register description in the map (if applicable).</span>
+
+<span class="sd">    .. note:: As all accessors inherit from :py:obj:`GeneralRegisterAccessor`,</span>
+<span class="sd">              please refer to the respective examples for the behaviour of</span>
+<span class="sd">              mathematical operations and slicing with accessors.</span>
+
+<span class="sd">    .. note:: Transfers between the device and the internal buffer need</span>
+<span class="sd">            to be triggered using the read() and write() functions before reading</span>
+<span class="sd">            from resp. after writing to the buffer using the operators.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">channels</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span>
+        <span class="n">elementsPerChannel</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">channels</span><span class="p">,</span> <span class="n">elementsPerChannel</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+
+<div class="viewcode-block" id="TwoDRegisterAccessor.getNChannels"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.TwoDRegisterAccessor.getNChannels">[docs]</a>    <span class="k">def</span> <span class="nf">getNChannels</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return number of channels.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="TwoDRegisterAccessor.getNElementsPerChannel"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.TwoDRegisterAccessor.getNElementsPerChannel">[docs]</a>    <span class="k">def</span> <span class="nf">getNElementsPerChannel</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return number of elements/samples per channel.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span></div></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="OneDRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.OneDRegisterAccessor">[docs]</a><span class="k">class</span> <span class="nc">OneDRegisterAccessor</span><span class="p">(</span><span class="n">NumpyGeneralRegisterAccessor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Accessor class to read and write registers transparently by using the accessor object</span>
+<span class="sd">    like a vector of the type UserType.</span>
+
+<span class="sd">    Conversion to and from the UserType will be handled by a data</span>
+<span class="sd">    converter matching the register description in the map (if applicable).</span>
+
+<span class="sd">    .. note:: As all accessors inherit from :py:obj:`GeneralRegisterAccessor`,</span>
+<span class="sd">              please refer to the respective examples for the behaviour of</span>
+<span class="sd">              mathematical operations and slicing with accessors.</span>
+
+<span class="sd">    .. note:: Transfers between the device and the internal buffer need</span>
+<span class="sd">              to be triggered using the read() and write() functions before reading</span>
+<span class="sd">              from resp. after writing to the buffer using the operators.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">elements</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNElements</span><span class="p">()</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">elements</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+
+<div class="viewcode-block" id="OneDRegisterAccessor.getNElements"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.OneDRegisterAccessor.getNElements">[docs]</a>    <span class="k">def</span> <span class="nf">getNElements</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return number of elements/samples in the register.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getNElements</span><span class="p">()</span></div></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="ScalarRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.ScalarRegisterAccessor">[docs]</a><span class="k">class</span> <span class="nc">ScalarRegisterAccessor</span><span class="p">(</span><span class="n">NumpyGeneralRegisterAccessor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Accessor class to read and write scalar registers transparently by using the accessor object</span>
+<span class="sd">    like a vector of the type UserType.</span>
+
+<span class="sd">    Conversion to and from the UserType will be handled by a data</span>
+<span class="sd">    converter matching the register description in the map (if applicable).</span>
+
+<span class="sd">    .. note:: As all accessors inherit from :py:obj:`GeneralRegisterAccessor`,</span>
+<span class="sd">              please refer to the respective examples for the behaviour of</span>
+<span class="sd">              mathematical operations and slicing with accessors.</span>
+
+<span class="sd">    .. note:: Transfers between the device and the internal buffer need</span>
+<span class="sd">            to be triggered using the read() and write() functions before reading</span>
+<span class="sd">            from resp. after writing to the buffer using the operators.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+
+<div class="viewcode-block" id="ScalarRegisterAccessor.readAndGet"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.ScalarRegisterAccessor.readAndGet">[docs]</a>    <span class="k">def</span> <span class="nf">readAndGet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Convenience function to read and return a value of UserType.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Reading and Getting from a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; dev.write(&quot;ADC/WORD_CLK_CNT_1&quot;, 37)</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.readAndGet()</span>
+<span class="sd">            37</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">readAndGet</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ScalarRegisterAccessor.setAndWrite"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.ScalarRegisterAccessor.setAndWrite">[docs]</a>    <span class="k">def</span> <span class="nf">setAndWrite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">newValue</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">,</span> <span class="n">versionNumber</span><span class="p">:</span> <span class="n">VersionNumber</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Convenience function to set and write new value.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        newValue : numpy.number and compatible types</span>
+<span class="sd">          The content that should be written to the register.</span>
+
+<span class="sd">        versionNumber: VersionNumber, optional</span>
+<span class="sd">          The versionNumber that should be used for the write action.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Reading and Getting from a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.setAndWrite(38)</span>
+<span class="sd">          &gt;&gt;&gt; acc.readAndGet()</span>
+<span class="sd">            38</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">versionNumber</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">versionNumber</span> <span class="o">=</span> <span class="n">VersionNumber</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">setAndWrite</span><span class="p">(</span><span class="n">newValue</span><span class="p">,</span> <span class="n">versionNumber</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ScalarRegisterAccessor.writeIfDifferent"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.ScalarRegisterAccessor.writeIfDifferent">[docs]</a>    <span class="k">def</span> <span class="nf">writeIfDifferent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">newValue</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">,</span> <span class="n">versionNumber</span><span class="p">:</span> <span class="n">VersionNumber</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                         <span class="n">validity</span><span class="p">:</span> <span class="n">DataValidity</span> <span class="o">=</span> <span class="n">DataValidity</span><span class="o">.</span><span class="n">ok</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Convenience function to set and write new value if it differes from the current value.</span>
+
+<span class="sd">        The given version number is only used in case the value differs.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        newValue : numpy.number and compatible types</span>
+<span class="sd">          The contentthat should be written to the register.</span>
+
+<span class="sd">        versionmNumber: VersionNumber, optional</span>
+<span class="sd">          The versionNumber that should be used for the write action.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Reading and Getting from a ScalarRegisterAccessor</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int32, &quot;ADC/WORD_CLK_CNT_1&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.setAndWrite(38)</span>
+<span class="sd">          &gt;&gt;&gt; acc.writeIfDifferent(38) # will not write</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">versionNumber</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">versionNumber</span> <span class="o">=</span> <span class="n">VersionNumber</span><span class="o">.</span><span class="n">getNullVersion</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">writeIfDifferent</span><span class="p">(</span><span class="n">newValue</span><span class="p">,</span> <span class="n">versionNumber</span><span class="p">,</span> <span class="n">validity</span><span class="p">)</span></div></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="VoidRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.VoidRegisterAccessor">[docs]</a><span class="k">class</span> <span class="nc">VoidRegisterAccessor</span><span class="p">(</span><span class="n">GeneralRegisterAccessor</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Accessor class to read and write void registers transparently by using the accessor object..</span>
+
+<span class="sd">    .. note:: Transfers between the device and the internal buffer need</span>
+<span class="sd">            to be triggered using the read() and write() functions before reading</span>
+<span class="sd">            from resp. after writing to the buffer using the operators.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">obj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">void</span><span class="p">))</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+        <span class="n">obj</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+        <span class="n">obj</span><span class="o">.</span><span class="n">_accessor</span> <span class="o">=</span> <span class="n">accessor</span>
+        <span class="n">obj</span><span class="o">.</span><span class="n">_AccessModeFlags</span> <span class="o">=</span> <span class="n">accessModeFlags</span>
+        <span class="k">return</span> <span class="n">obj</span>
+
+    <span class="k">def</span> <span class="nf">__array_finalize__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">obj</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s1">&#39;_accessor&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_AccessModeFlags</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s1">&#39;_AccessModeFlags&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+<div class="viewcode-block" id="VoidRegisterAccessor.read"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.VoidRegisterAccessor.read">[docs]</a>    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="VoidRegisterAccessor.readLatest"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.VoidRegisterAccessor.readLatest">[docs]</a>    <span class="k">def</span> <span class="nf">readLatest</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">readLatest</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="VoidRegisterAccessor.readNonBlocking"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.VoidRegisterAccessor.readNonBlocking">[docs]</a>    <span class="k">def</span> <span class="nf">readNonBlocking</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">readNonBlocking</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="VoidRegisterAccessor.write"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.VoidRegisterAccessor.write">[docs]</a>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">write</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="VoidRegisterAccessor.writeDestructively"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.VoidRegisterAccessor.writeDestructively">[docs]</a>    <span class="k">def</span> <span class="nf">writeDestructively</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">writeDestructively</span><span class="p">()</span></div></div>
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1">#######################################################################################################################</span>
+
+
+<div class="viewcode-block" id="Device"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device">[docs]</a><span class="k">class</span> <span class="nc">Device</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Construct Device from user provided device information</span>
+
+<span class="sd">    This constructor is used to open a device listed in the dmap file.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    aliasName : str</span>
+<span class="sd">      The device alias/name in the dmap file for the hardware</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Creating a device using a dmap file:</span>
+<span class="sd">      &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">      &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">      # CARD_WITH_MODULES is an alias in the dmap file above</span>
+<span class="sd">      &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">    Supports also with-statements:</span>
+<span class="sd">      &gt;&gt;&gt; with da.Device(&#39;CARD_WITH_MODULES&#39;) as dev:</span>
+<span class="sd">      &gt;&gt;&gt;     reg_value = dev.read(&#39;/PATH/TO/REGISTER&#39;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># dict to get the corresponding function for each datatype</span>
+    <span class="n">_userTypeExtensions</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">:</span> <span class="s2">&quot;int8&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">:</span> <span class="s2">&quot;uint8&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">:</span> <span class="s2">&quot;int16&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">uint16</span><span class="p">:</span> <span class="s2">&quot;uint16&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">:</span> <span class="s2">&quot;int32&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">:</span> <span class="s2">&quot;uint32&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">:</span> <span class="s2">&quot;int64&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">uint64</span><span class="p">:</span> <span class="s2">&quot;uint64&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">single</span><span class="p">:</span> <span class="s2">&quot;float&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">:</span> <span class="s2">&quot;float&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">double</span><span class="p">:</span> <span class="s2">&quot;double&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">:</span> <span class="s2">&quot;double&quot;</span><span class="p">,</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">bool_</span><span class="p">:</span> <span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
+        <span class="nb">bool</span><span class="p">:</span> <span class="s2">&quot;boolean&quot;</span><span class="p">,</span>
+        <span class="nb">str</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aliasName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">aliasName</span> <span class="o">=</span> <span class="n">aliasName</span>
+        <span class="k">if</span> <span class="n">aliasName</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">getDevice</span><span class="p">(</span><span class="n">aliasName</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">getDevice_no_alias</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Device</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Helper function for with-statements&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">aliasName</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s1">&#39;In a with-statement, an alias has to be provided in the device constructor!&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">aliasName</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Helper function for with-statements&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Device.open"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.open">[docs]</a>    <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aliasName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Open a :py:class:`Device`</span>
+
+<span class="sd">        This method has to be called after the initialization to get accessors. It</span>
+<span class="sd">        can also re-opens a :py:class:`Device` after :py:func:`close` was called.</span>
+<span class="sd">        If no aliasName was giving during initialization, it is needed by</span>
+<span class="sd">        this method.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        aliasName : str, optional</span>
+<span class="sd">          The :py:class:`Device` alias/name in the dmap file for the hardware</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Opening a :py:class:`Device` without aliasName, as it has already been supplied at creation:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+
+<span class="sd">        Opening a :py:class:`Device` with aliasName, as it has non been supplied at creation:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device()</span>
+<span class="sd">          &gt;&gt;&gt; dev.open(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">aliasName</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">aliasName</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span>
+                    <span class="s2">&quot;No backend is assigned: the device is not opened&quot;</span>
+                <span class="p">)</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">aliasName</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">aliasName</span> <span class="o">=</span> <span class="n">aliasName</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">aliasName</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span>
+                <span class="s2">&quot;Device has not been opened correctly: the device is not opened&quot;</span>
+            <span class="p">)</span></div>
+
+<div class="viewcode-block" id="Device.close"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.close">[docs]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Close the :py:class:`Device`.</span>
+
+<span class="sd">        The connection with the alias name is kept so the device can be re-opened</span>
+<span class="sd">        using the :py:func:`open` function without argument.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Closing an open device:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; dev.close()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Device.getCatalogueMetadata"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.getCatalogueMetadata">[docs]</a>    <span class="k">def</span> <span class="nf">getCatalogueMetadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metaTag</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Provides access to catalogue metadata.</span>
+<span class="sd">        This method uses the metadata catalogue to access the value, defined at the beginning of a mapp file, i.e.:</span>
+<span class="sd">        @TAG value</span>
+<span class="sd">        By convention the tag is in uppercase.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        metaTag</span>
+<span class="sd">          Tag of the metadata, i.e.: MAPFILE_REVISION</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        String containing the metadata</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">getCatalogueMetadata</span><span class="p">(</span><span class="n">metaTag</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Device.getTwoDRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.getTwoDRegisterAccessor">[docs]</a>    <span class="k">def</span> <span class="nf">getTwoDRegisterAccessor</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">userType</span><span class="p">,</span>
+            <span class="n">registerPathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+            <span class="n">numberOfElements</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">elementsOffset</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TwoDRegisterAccessor</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Get a :py:class:`TwoDRegisterAccessor` object for the given register.</span>
+
+<span class="sd">        This allows to read and write transparently 2-dimensional registers.</span>
+<span class="sd">        The optional arguments allow to restrict the accessor to a region of</span>
+<span class="sd">        interest in the 2D register.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        userType : type or numpy.dtype</span>
+<span class="sd">          The userType for the accessor. Can be of any of the numpy.dtype</span>
+<span class="sd">          combinations of float, int, 32 or 64-bit. Integers are also</span>
+<span class="sd">          supported as signed, unsigned, 8 and 16-bit. E.g.</span>
+<span class="sd">          `numpy.uint8`, or `numpy.float32`. There are also `str`, `bool`.</span>
+
+<span class="sd">        registerPathName : str</span>
+<span class="sd">          The name of the register to read from.</span>
+
+<span class="sd">        numberOfElements : int, optional</span>
+<span class="sd">          Specifies the number of elements per channel to read from the register.</span>
+<span class="sd">          The width and fixed point representation of the register</span>
+<span class="sd">          element are internally obtained from the map file.</span>
+
+<span class="sd">          The method returns all elements in the register if this parameter is</span>
+<span class="sd">          omitted or when its value is set as 0.</span>
+
+<span class="sd">          If the value provided as this parameter exceeds the register size, an</span>
+<span class="sd">          array with all elements upto the last element is returned.</span>
+
+<span class="sd">        elementsOffset : int, optional</span>
+<span class="sd">          This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">          an elementIndexInRegister parameter is specified, the method reads out</span>
+<span class="sd">          elements starting from this element index. The element at the index</span>
+<span class="sd">          position is included in the read as well.</span>
+
+<span class="sd">        accessModeFlags : list, optional</span>
+<span class="sd">          A list to specify the access mode. It allows e.g. to enable raw access.</span>
+<span class="sd">          See :py:class:`AccessMode` documentation for more details.</span>
+<span class="sd">          Passing an access mode flag which is not supported by the backend or the given</span>
+<span class="sd">          register will raise a NOT_IMPLEMENTED DeviceException.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting a Two-D Register Accessor of type uint8 from DMA; which is 6 elements long and has 4 channels:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getTwoDRegisterAccessor(np.float32, &quot;BOARD/DMA&quot;, 0, 0, [])</span>
+<span class="sd">          &gt;&gt;&gt; acc.read()</span>
+<span class="sd">          &gt;&gt;&gt; acc</span>
+<span class="sd">          TwoDRegisterAccessor([[12., 13., 14., 15., 16., 17.],</span>
+<span class="sd">                      [13., 15., 17., 19., 21., 23.],</span>
+<span class="sd">                      [14., 17., 20., 23., 26., 29.],</span>
+<span class="sd">                      [15., 19., 23., 27., 31., 35.]], dtype=float32)</span>
+
+<span class="sd">        Getting a Two-D Register Accessor of type float64 from register &quot;WORD_CLK_MUX&quot; is 4 elements long.</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getTwoDRegisterAccessor(np.uint8, &quot;BOARD/WORD_CLK_MUX&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.read()</span>
+<span class="sd">          &gt;&gt;&gt; acc</span>
+<span class="sd">          TwoDRegisterAccessor([[42, 43, 44, 45]], dtype=uint8)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">accessModeFlags</span><span class="p">:</span>
+            <span class="n">accessModeFlags</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># get function name according to userType</span>
+        <span class="n">userTypeFunctionExtension</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_userTypeExtensions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">userType</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">userTypeFunctionExtension</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s2">&quot;userType not supported&quot;</span><span class="p">)</span>
+        <span class="n">getTwoDAccessor</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="p">,</span> <span class="s2">&quot;getTwoDAccessor_&quot;</span> <span class="o">+</span> <span class="n">userTypeFunctionExtension</span><span class="p">)</span>
+
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">getTwoDAccessor</span><span class="p">(</span>
+            <span class="n">registerPathName</span><span class="p">,</span> <span class="n">numberOfElements</span><span class="p">,</span> <span class="n">elementsOffset</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="n">twoDRegisterAccessor</span> <span class="o">=</span> <span class="n">TwoDRegisterAccessor</span><span class="p">(</span>
+            <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">twoDRegisterAccessor</span></div>
+
+<div class="viewcode-block" id="Device.getOneDRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.getOneDRegisterAccessor">[docs]</a>    <span class="k">def</span> <span class="nf">getOneDRegisterAccessor</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">userType</span><span class="p">,</span>
+            <span class="n">registerPathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+            <span class="n">numberOfElements</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">elementsOffset</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">OneDRegisterAccessor</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Get a :py:class:`OneDRegisterAccessor` object for the given register.</span>
+
+<span class="sd">        The OneDRegisterAccessor allows to read and write registers transparently by using</span>
+<span class="sd">        the accessor object like a vector of the type UserType. If needed, the conversion</span>
+<span class="sd">        to and from the UserType will be handled by a data converter matching the</span>
+<span class="sd">        register description in e.g. a map file.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        userType : type or numpy.dtype</span>
+<span class="sd">          The userType for the accessor. Can be of any of the numpy.dtype</span>
+<span class="sd">          combinations of float, int, 32 or 64-bit. Integers are also</span>
+<span class="sd">          supported as signed, unsigned, 8 and 16-bit. E.g.</span>
+<span class="sd">          `numpy.uint8`, or `numpy.float32`. There are also `str`, `bool`.</span>
+
+<span class="sd">        registerPathName : str</span>
+<span class="sd">          The name of the register to read from.</span>
+
+<span class="sd">        numberOfElements : int, optional</span>
+<span class="sd">          Specifies the number of elements per channel to read from the register.</span>
+<span class="sd">          The width and fixed point representation of the register</span>
+<span class="sd">          element are internally obtained from the map file.</span>
+
+<span class="sd">          The method returns all elements in the register if this parameter is</span>
+<span class="sd">          omitted or when its value is set as 0.</span>
+
+<span class="sd">          If the value provided as this parameter exceeds the register size, an</span>
+<span class="sd">          array with all elements upto the last element is returned.</span>
+
+<span class="sd">        elementsOffset : int, optional</span>
+<span class="sd">          This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">          an elementIndexInRegister parameter is specified, the method reads out</span>
+<span class="sd">          elements starting from this element index. The element at the index</span>
+<span class="sd">          position is included in the read as well.</span>
+
+<span class="sd">        accessModeFlags : list, optional</span>
+<span class="sd">          A list to specify the access mode. It allows e.g. to enable raw access.</span>
+<span class="sd">          See :py:class:`AccessMode` documentation for more details.</span>
+<span class="sd">          Passing an access mode flag which is not supported by the backend or the given</span>
+<span class="sd">          register will raise a NOT_IMPLEMENTED DeviceException.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting a One-D Register Accessor of type uint8 from WORD_STATUS; which is 1 element long:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(np.uint8, &quot;BOARD/WORD_STATUS&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.read()</span>
+<span class="sd">          &gt;&gt;&gt; acc</span>
+<span class="sd">          OneDRegisterAccessor([255], dtype=uint8)</span>
+
+<span class="sd">        Getting a One-D Register Accessor of type float64 from register &quot;WORD_CLK_MUX&quot; is 4 elements long.</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getOneDRegisterAccessor(np.uint8, &quot;BOARD/WORD_CLK_MUX&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.read()</span>
+<span class="sd">          &gt;&gt;&gt; acc</span>
+<span class="sd">          OneDRegisterAccessor([42., 43., 44., 45.], dtype=float32)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">accessModeFlags</span><span class="p">:</span>
+            <span class="n">accessModeFlags</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># get function name according to userType</span>
+        <span class="n">userTypeFunctionExtension</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_userTypeExtensions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">userType</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">userTypeFunctionExtension</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s2">&quot;userType not supported&quot;</span><span class="p">)</span>
+        <span class="n">getOneDAccessor</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="p">,</span> <span class="s2">&quot;getOneDAccessor_&quot;</span> <span class="o">+</span> <span class="n">userTypeFunctionExtension</span><span class="p">)</span>
+
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">getOneDAccessor</span><span class="p">(</span>
+            <span class="n">registerPathName</span><span class="p">,</span> <span class="n">numberOfElements</span><span class="p">,</span> <span class="n">elementsOffset</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="n">oneDRegisterAccessor</span> <span class="o">=</span> <span class="n">OneDRegisterAccessor</span><span class="p">(</span>
+            <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">oneDRegisterAccessor</span></div>
+
+<div class="viewcode-block" id="Device.getScalarRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.getScalarRegisterAccessor">[docs]</a>    <span class="k">def</span> <span class="nf">getScalarRegisterAccessor</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">userType</span><span class="p">,</span>
+            <span class="n">registerPathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+            <span class="n">elementsOffset</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ScalarRegisterAccessor</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Get a :py:class:`ScalarRegisterAccessor` object for the given register.</span>
+
+<span class="sd">        The ScalarRegisterObject allows to read and write registers transparently by using</span>
+<span class="sd">        the accessor object like a variable of the type UserType. If needed, the conversion</span>
+<span class="sd">        to and from the UserType will be handled by a data converter matching the register</span>
+<span class="sd">        description in e.g. a map file.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        userType : type or numpy.dtype</span>
+<span class="sd">          The userType for the accessor. Can be of any of the numpy.dtype</span>
+<span class="sd">          combinations of float, int, 32 or 64-bit. Integers are also</span>
+<span class="sd">          supported as signed, unsigned, 8 and 16-bit. E.g.</span>
+<span class="sd">          `numpy.uint8`, or `numpy.float32`. There are also `str`, `bool`.</span>
+
+<span class="sd">        registerPathName : str</span>
+<span class="sd">          The name of the register to read from.</span>
+
+<span class="sd">        elementsOffset : int, optional</span>
+<span class="sd">          This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">          an elementIndexInRegister parameter is specified, the method reads out</span>
+<span class="sd">          elements starting from this element index. The element at the index</span>
+<span class="sd">          position is included in the read as well.</span>
+
+<span class="sd">        accessModeFlags : list, optional</span>
+<span class="sd">          A list to specify the access mode. It allows e.g. to enable raw access.</span>
+<span class="sd">          See :py:class:`AccessMode` documentation for more details.</span>
+<span class="sd">          Passing an access mode flag which is not supported by the backend or the given</span>
+<span class="sd">          register will raise a NOT_IMPLEMENTED DeviceException.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Getting a scalar Register Accessor of type int16 from WORD_STATUS:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/exampleCrate.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;CARD_WITH_MODULES&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; acc = dev.getScalarRegisterAccessor(np.int16, &quot;ADC/WORD_STATUS&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; acc.read()</span>
+<span class="sd">          &gt;&gt;&gt; acc</span>
+<span class="sd">          ScalarRegisterAccessor([32767], dtype=int16)</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">accessModeFlags</span><span class="p">:</span>
+            <span class="n">accessModeFlags</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># get function name according to userType</span>
+        <span class="n">userTypeFunctionExtension</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_userTypeExtensions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">userType</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">userTypeFunctionExtension</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s2">&quot;userType not supported&quot;</span><span class="p">)</span>
+        <span class="n">getScalarAccessor</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="p">,</span> <span class="s2">&quot;getScalarAccessor_&quot;</span> <span class="o">+</span> <span class="n">userTypeFunctionExtension</span><span class="p">)</span>
+
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">getScalarAccessor</span><span class="p">(</span>
+            <span class="n">registerPathName</span><span class="p">,</span> <span class="n">elementsOffset</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="n">scalarRegisterAccessor</span> <span class="o">=</span> <span class="n">ScalarRegisterAccessor</span><span class="p">(</span>
+            <span class="n">userType</span><span class="p">,</span> <span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">scalarRegisterAccessor</span></div>
+
+<div class="viewcode-block" id="Device.getVoidRegisterAccessor"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.getVoidRegisterAccessor">[docs]</a>    <span class="k">def</span> <span class="nf">getVoidRegisterAccessor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">registerPathName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">VoidRegisterAccessor</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Get a :py:class:`VoidRegisterAccessor` object for the given register.</span>
+
+<span class="sd">        The VoidRegisterAccessor allows to read and write registers. Getting a read</span>
+<span class="sd">        accessor is only possible with the wait_for_new_data flag. This access mode</span>
+<span class="sd">        will be rejected for write accessors.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        registerPathName : str</span>
+<span class="sd">          The name of the register to read from.</span>
+
+<span class="sd">        accessModeFlags : list, optional</span>
+<span class="sd">          A list to specify the access mode. It allows e.g. to enable wait_for_new_data access.</span>
+<span class="sd">          See :py:class:`AccessMode` documentation for more details.</span>
+<span class="sd">          Passing an access mode flag which is not supported by the backend or the given</span>
+<span class="sd">          register will raise a NOT_IMPLEMENTED DeviceException.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        Sending interrupts per Void Accessor:</span>
+<span class="sd">          &gt;&gt;&gt; import deviceaccess as da</span>
+<span class="sd">          &gt;&gt;&gt; da.setDMapFilePath(&quot;deviceInformation/push.dmap&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev = da.Device(&quot;SHARED_RAW_DEVICE&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; dev.open()</span>
+<span class="sd">          &gt;&gt;&gt; dev.activateAsyncRead()</span>
+<span class="sd">          &gt;&gt;&gt;</span>
+<span class="sd">          &gt;&gt;&gt; writeAcc = dev.getOneDRegisterAccessor(np.int32, &quot;MODULE1/TEST_AREA&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; arr1to10 = np.array(range(1, 11), dtype=np.int32)</span>
+<span class="sd">          &gt;&gt;&gt; writeAcc.set(arr1to10)</span>
+<span class="sd">          &gt;&gt;&gt; writeAcc.write()</span>
+<span class="sd">          &gt;&gt;&gt;</span>
+<span class="sd">          &gt;&gt;&gt; readAcc = dev.getOneDRegisterAccessor(</span>
+<span class="sd">          &gt;&gt;&gt;     np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="sd">          &gt;&gt;&gt; readAcc.read() # first read is always non-blocking</span>
+<span class="sd">            OneDRegisterAccessor([ 1  2  3  4  5  6  7  8  9 10]], dtype=int32)</span>
+<span class="sd">          &gt;&gt;&gt; # double values of writeAccReg</span>
+<span class="sd">          &gt;&gt;&gt; writeAcc += arr1to10</span>
+<span class="sd">          &gt;&gt;&gt; writeAcc.write()</span>
+<span class="sd">          &gt;&gt;&gt; interruptAcc = dev.getVoidRegisterAccessor(&quot;DUMMY_INTERRUPT_2&quot;)</span>
+<span class="sd">          &gt;&gt;&gt; interruptAcc.write() # interrupt needed, otherwise second read would be blocking</span>
+<span class="sd">          &gt;&gt;&gt;</span>
+<span class="sd">          &gt;&gt;&gt; readAcc.read()</span>
+<span class="sd">            OneDRegisterAccessor(</span>
+<span class="sd">                [ 2,  4,  6,  8, 10, 12, 14, 16, 18, 20], dtype=int32)</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">accessModeFlags</span><span class="p">:</span>
+            <span class="n">accessModeFlags</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">getVoidAccessor</span><span class="p">(</span>
+            <span class="n">registerPathName</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="n">voidRegisterAccessor</span> <span class="o">=</span> <span class="n">VoidRegisterAccessor</span><span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">voidRegisterAccessor</span></div>
+
+<div class="viewcode-block" id="Device.activateAsyncRead"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.activateAsyncRead">[docs]</a>    <span class="k">def</span> <span class="nf">activateAsyncRead</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Activate asynchronous read for all transfer elements where</span>
+<span class="sd">        :py:obj:`AccessMode.wait_for_new_data` is set.</span>
+
+<span class="sd">        If this method is called while the device is not opened or has an error,</span>
+<span class="sd">        this call has no effect. If it is called when no deactivated transfer</span>
+<span class="sd">        element exists, this call also has no effect.</span>
+<span class="sd">        On return, it is not guaranteed that</span>
+<span class="sd">        all initial values have been received already.</span>
+
+<span class="sd">        See also</span>
+<span class="sd">        --------</span>
+<span class="sd">        :py:func:`getVoidRegisterAccessor`: has a usage example.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">activateAsyncRead</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Device.getRegisterCatalogue"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.getRegisterCatalogue">[docs]</a>    <span class="k">def</span> <span class="nf">getRegisterCatalogue</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pb</span><span class="o">.</span><span class="n">RegisterCatalogue</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the register catalogue with detailed information on all registers.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">getRegisterCatalogue</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Device.read"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.read">[docs]</a>    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">registerPath</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">,</span> <span class="n">numberOfWords</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+             <span class="n">wordOffsetInRegister</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Inefficient convenience function to read a register without obtaining an accessor.</span>
+<span class="sd">        If no dtype is selected, the returned ndarray will default to np.float64.</span>
+<span class="sd">        If numberOfWords is not specified, it takes the maximm minus the offset.</span>
+<span class="sd">        If numberOfChannels is not specified, it takes the maximm possible.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">accessModeFlags</span> <span class="o">=</span> <span class="p">[]</span> <span class="k">if</span> <span class="n">accessModeFlags</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">accessModeFlags</span>
+        <span class="n">arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfWords</span><span class="p">,</span> <span class="n">wordOffsetInRegister</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">arr</span><span class="p">[:][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">arr</span></div>
+
+<div class="viewcode-block" id="Device.write"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.Device.write">[docs]</a>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">registerPath</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+            <span class="n">dataToWrite</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">|</span> <span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">,</span>
+            <span class="n">wordOffsetInRegister</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">accessModeFlags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">AccessMode</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Inefficient convenience function to write a register without obtaining an accessor.</span>
+<span class="sd">        If no dtype is selected, the returned ndarray will default to np.float64.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># make proper array, if number was submitted</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span>
+            <span class="c1"># upgrade 1d-list input two the 2d that is expected for scalar and 1d lists:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">array</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">dataToWrite</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">dataToWrite</span><span class="p">]])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">array</span> <span class="o">=</span> <span class="n">dataToWrite</span>
+        <span class="n">numberOfElements</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">array</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">else</span> <span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">array</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">accessModeFlags</span> <span class="o">=</span> <span class="p">[]</span> <span class="k">if</span> <span class="n">accessModeFlags</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">accessModeFlags</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_device</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfElements</span><span class="p">,</span>
+                           <span class="n">wordOffsetInRegister</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="p">)</span></div></div>
+
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1"># Middle Layer Class extensions, might be unnecessary in the future with a switch from boost to pybind11</span>
+
+<span class="k">class</span> <span class="nc">RegisterClassIterator</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">registerCatalogue</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rc</span> <span class="o">=</span> <span class="n">registerCatalogue</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_index</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_rc</span><span class="o">.</span><span class="n">_items</span><span class="p">())</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_index</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_index</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rc</span><span class="o">.</span><span class="n">_items</span><span class="p">()[</span><span class="bp">self</span><span class="o">.</span><span class="n">_index</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">StopIteration</span>
+
+
+<span class="n">pb</span><span class="o">.</span><span class="n">RegisterCatalogue</span><span class="o">.</span><span class="fm">__iter__</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">rc</span><span class="p">:</span> <span class="n">RegisterClassIterator</span><span class="p">(</span><span class="n">rc</span><span class="p">)</span>
+
+
+<span class="c1">#######################################################################################################################</span>
+<span class="c1"># Type Definitions</span>
+
+
+<span class="n">UserType</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="nb">list</span><span class="p">(</span><span class="n">Device</span><span class="o">.</span><span class="n">_userTypeExtensions</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+
+<span class="n">RegisterAccessor</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">OneDRegisterAccessor</span><span class="p">,</span>
+                         <span class="n">TwoDRegisterAccessor</span><span class="p">,</span>
+                         <span class="n">ScalarRegisterAccessor</span><span class="p">]</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/DESY_logo.png" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mtca4u.html">mtca4u module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deviceaccess.html">deviceaccess module</a></li>
+</ul>
+
+
+<h1 class="logo"><a href="../index.html">ChimeraTK-DeviceAccess-PythonBindings</a></h1>
+
+
+
+
+
+
+
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project <chimeratk-support@desy.de>.
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
