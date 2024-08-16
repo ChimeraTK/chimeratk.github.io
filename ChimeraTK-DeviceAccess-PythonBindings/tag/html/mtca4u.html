@@ -1,0 +1,702 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>mtca4u module &#8212; ChimeraTK-DeviceAccess-PythonBindings  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="deviceaccess module" href="deviceaccess.html" />
+    <link rel="prev" title="mtca4u Python Bindings Doucmentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-mtca4u">
+<span id="mtca4u-module"></span><h1>mtca4u module<a class="headerlink" href="#module-mtca4u" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="mtca4u.Device">
+<em class="property">class </em><code class="descclassname">mtca4u.</code><code class="descname">Device</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Construct Device from user provided device information</p>
+<p>This constructor is used to open a device listed in the dmap file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>alias</strong> (<em>str</em>) – The device alias/name in the dmap file for the hardware</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Creating a device using dmap file:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;my_card&quot;</span><span class="p">)</span> <span class="c1"># my_card is a alias in my_example_dmap_file.dmap</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="method">
+<dt id="mtca4u.Device.getCatalogueMetadata">
+<code class="descname">getCatalogueMetadata</code><span class="sig-paren">(</span><em>parameterName</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.getCatalogueMetadata"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.getCatalogueMetadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads out metadata form the device catalogue</p>
+<p>The available metadata depends on the use backend. E.g. for
+NumericAddressedBackends, metadata will come from the map file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parameterName</strong> (<em>str</em>) – Name of the metadata parameter to read.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>metadataValue</strong> – The value corresponding to the given parameterName.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mtca4u.Device.read">
+<code class="descname">read</code><span class="sig-paren">(</span><em>moduleName=''</em>, <em>registerName=None</em>, <em>numberOfElementsToRead=0</em>, <em>elementIndexInRegister=0</em>, <em>registerPath=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads out Fixed point converted values from the opened device</p>
+<p>This method uses the map file to return Fixed Point converted values from a
+register. It can read the whole register or an arbitary number of register
+elements. Data can also be read from an offset within the register (through
+the ‘elementIndexInRegister’ parameter).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Both moduleName and registerName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module to which the register belongs to. If the
+register is not contained in a  module, then provide an empty string as
+the parameter value.</li>
+<li><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the register to read from.</li>
+<li><strong>numberOfElementsToRead</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>Specifies the number of register elements that should
+be read out. The width and fixed point representation of the register
+element are internally obtained from the map file.</p>
+<p>The method returns all elements in the register if this parameter is
+ommitted or when its value is set as 0.</p>
+<p>If the value provided as this parameter exceeds the register size, an
+array with all elements upto the last element is returned</p>
+</li>
+<li><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method reads out
+elements starting from this element index. The elemnt at the index
+position is included in the read as well.</li>
+<li><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
+location lookup.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>readoutValues</strong> – The return type for the method is a 1-Dimensional numpy array with
+datatype numpy.float64. The returned numpy.array would either contain all
+elements in the register or only the number specified by the
+numberOfElementsToRead parameter</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.array, dtype == numpy.float64</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>register “WORD_STATUS” is 1 element long..</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="go">array([15.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span><span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="go">array([15.0], dtype=float64)</span>
+</pre></div>
+</div>
+</dd>
+<dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">)</span>
+<span class="go">array([15.0, 14.0, 13.0, 12.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">array([15.0, 14.0, 13.0, 12.0], dtype=float64)</span>
+</pre></div>
+</div>
+</dd>
+<dt>read out select number of elements from specified locations:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">array([15.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13.0, 12.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13.0, 12.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13.0], dtype=float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13.0, 12.0], dtype=float64)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.read_raw()</span></code></a></dt>
+<dd>Read in ‘raw’ bit values from a device register</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="mtca4u.Device.read_dma_raw">
+<code class="descname">read_dma_raw</code><span class="sig-paren">(</span><em>moduleName=''</em>, <em>DMARegisterName=None</em>, <em>numberOfElementsToRead=0</em>, <em>elementIndexInRegister=0</em>, <em>registerPath=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_dma_raw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.read_dma_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in Data from the DMA region of the card</p>
+<p>This method can be used to fetch data copied to a dma memory block. The
+method assumes that the device maps the DMA memory block to a register made
+up of 32 bit elements.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Deprecated since 1.0.0; use Device.read_raw instead.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module that has the register we intend to write to.
+If module name is not applicable to the device, then provide an empty
+string as the parameter value.</li>
+<li><strong>DMARegisterName</strong> (<em>str</em><em>, </em><em>optional</em>) – The register name to which the DMA memory region is mapped</li>
+<li><strong>numberOfElementsToRead</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>This optional parameter specifies the number of 32 bit elements that have
+to be returned from the mapped dma register. When this parameter is not
+specified or is provided with a value of 0,  every  element in the DMA
+memory block is returned.</p>
+<p>If the value provided as this parameter exceeds the register size, an
+array with all elements upto the last element is returned</p>
+</li>
+<li><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This parameter specifies the index from which the read should commence.</li>
+<li><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
+location lookup.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>arrayOfRawValues</strong> – The method returns a numpy.int32 array containing the raw bit values
+contained in the DMA register elements. The length of the array either
+equals the number of 32 bit elements that make up the whole DMA region or
+the number specified through the numberOfElementsToRead parameter</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.array, dtype == numpy.int32</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Use Device.read_raw: In the example, register “AREA_DMA_VIA_DMA” is the DMA mapped memory made up of 32 bit elements.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read__raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;AREA_DMA_VIA_DMA&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="go">array([0, 1, 4, 9, 16, 25, 36, 49, 64, 81], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.read_raw()</span></code></a></dt>
+<dd>Use this method for the same purpose instead.</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="mtca4u.Device.read_raw">
+<code class="descname">read_raw</code><span class="sig-paren">(</span><em>moduleName=''</em>, <em>registerName=None</em>, <em>numberOfElementsToRead=0</em>, <em>elementIndexInRegister=0</em>, <em>registerPath=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_raw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.read_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns ‘raw values’ (Without fixed point conversion applied) from a device’s register</p>
+<p>This method returns the raw bit values contained in the queried register.
+The returned values are not Fixed Point converted, but direct binary values
+contained in the register elements.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Both moduleName and registerName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module to which the register to read from belongs.
+If module name is not applicable to the register, then provide an empty
+string as the parameter value.</li>
+<li><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device register to read from.</li>
+<li><strong>numberOfElementsToRead</strong> (<em>int</em><em>, </em><em>optional</em>) – Specifies the number of register elements that should be read out.
+The method returns all elements in the register if this parameter is
+ommitted or when its value is set as 0.
+If the value provided as this parameter exceeds the register size, an
+array will all elements upto the last element is returned</li>
+<li><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method reads out
+elements starting from this element index. The element at the index
+position is included in the read as well.</li>
+<li><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
+location lookup.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>readInRawValues</strong> – The method returns a numpy.int32 array containing the raw bit values of
+the register elements. The length of the array either equals the number of
+elements that make up the register or the number specified through the
+numberOfElementsToRead parameter</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.array, dtype == numpy.int32</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>register “WORD_STATUS” is 1 element long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="go">array([15], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span><span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="go">array([15], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+<dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">)</span>
+<span class="go">array([15, 14, 13, 12], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">array([15, 14, 13, 12], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">array([15], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13], dtype = int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13, 12], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13, 12], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.Device.read" title="mtca4u.Device.read"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.read()</span></code></a></dt>
+<dd>Read in Fixed Point converted bit values from a device register</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="mtca4u.Device.read_sequences">
+<code class="descname">read_sequences</code><span class="sig-paren">(</span><em>moduleName=''</em>, <em>regionName=None</em>, <em>registerPath=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_sequences"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.read_sequences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in all sequences from a Multiplexed data Region</p>
+<p>This method returns the demultiplexed sequences in the memory area specified
+by regionName. The data is returned as a 2D numpy array with the coulums
+representing induvidual sequences</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Both moduleName and regionName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module that has the register we intend to write to.
+If module name is not applicable to the device, then provide an empty
+string as the parameter value.</li>
+<li><strong>regionName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the memory area containing the multiplexed data.</li>
+<li><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and regionName for
+location lookup.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>2DarrayOfValues</strong> – The method returns a 2D numpy.double array containing extracted
+induvidual sequences as the columns</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.array, dtype == numpy.double</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>“DMA” is the Multiplexed data region name. This region is defined by ‘AREA_MULTIPLEXED_SEQUENCE_DMA’ in the mapfile.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
+<span class="go">array([[   0.,    1.,    4.,    9.,   16.],</span>
+<span class="go">       [  25.,   36.,   49.,   64.,   81.],</span>
+<span class="go">       [ 100.,  121.,  144.,  169.,  196.],</span>
+<span class="go">       [ 225.,  256.,  289.,  324.,  361.]</span>
+<span class="go">       [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span> <span class="s1">&#39;/BOARD.0/DMA&#39;</span><span class="p">)</span>
+<span class="go">array([[   0.,    1.,    4.,    9.,   16.],</span>
+<span class="go">       [  25.,   36.,   49.,   64.,   81.],</span>
+<span class="go">       [ 100.,  121.,  144.,  169.,  196.],</span>
+<span class="go">       [ 225.,  256.,  289.,  324.,  361.]</span>
+<span class="go">       [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Each column of the 2D matrix represents an extracted sequence:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adc0_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># array([0., 25., 100., 225., 400.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adc1_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># array([1., 36., 49., 64., 81.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adc3_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># array([9., 64., 169., 324., 529.])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="mtca4u.Device.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>moduleName=''</em>, <em>registerName=None</em>, <em>dataToWrite=None</em>, <em>elementIndexInRegister=0</em>, <em>registerPath=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets data into a desired register</p>
+<p>This method writes values into a register on the board. The method
+internally uses a fixed point converter that is aware of the register width
+on the device and its fractional representation. This Fixed point converter
+converts the input into corresponding Fixed Point representaions that fit
+into the decive register.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Both moduleName and registerName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module which has the register to write into.
+If module name is not applicable to the register, then provide an empty
+string as the parameter value.</li>
+<li><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – Mapped name of the register to write to</li>
+<li><strong>dataToWrite</strong> (<em>int</em><em>, </em><em>float</em><em>,         </em><em>list of int/float</em><em>, </em><em>numpy.array</em><em>(</em><em>dtype numpy.float32/64</em><em>)</em><em>,         </em><em>numpy.array</em><em>(</em><em>dtype = numpy.int32/64</em><em>)</em>) – The data to be written in to the register. it may be a numpy.float32/64 or a
+numpy.int32/64 array or a list with int or float values . Each value in this
+array represents an induvidual element of the register. dataToWrite may also
+take on int/float type when single vaues are passesed</li>
+<li><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method starts the
+write from this index</li>
+<li><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
+location lookup.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>register “WORD_STATUS” is 1 element long and belongs to module “BOARD”.</dt>
+<dd><div class="first highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="mf">15.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">15</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mf">15.0</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">registerPath</span> <span class="o">=</span> <span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">,</span>
+<span class="go">                           dataToWrite = [15.0])</span>
+</pre></div>
+</div>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">15.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">15.0</span><span class="p">,</span> <span class="mf">14.0</span><span class="p">,</span> <span class="mf">13.0</span><span class="p">,</span> <span class="mf">12.0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mf">2.78</span><span class="p">)</span> <span class="c1"># writes value to first element of register</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.Device.write_raw" title="mtca4u.Device.write_raw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.write_raw()</span></code></a></dt>
+<dd>Write ‘raw’ bit values to a device register</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="mtca4u.Device.write_raw">
+<code class="descname">write_raw</code><span class="sig-paren">(</span><em>moduleName=''</em>, <em>registerName=None</em>, <em>dataToWrite=None</em>, <em>elementIndexInRegister=0</em>, <em>registerPath=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.write_raw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device.write_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write raw bit values (no fixed point conversion applied) into the register</p>
+<p>Provides a way to put in a desired bit value into individual register
+elements.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Both moduleName and registerName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module that has the register we intend to write to.
+If module name is not applicable to the register, then provide an empty
+string as the parameter value.</li>
+<li><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the desired register to write into.</li>
+<li><strong>dataToWrite</strong> (<em>numpy.array</em><em>, </em><em>dtype == numpy.int32</em>) – The array holding the bit values to be written into the register. The numpy
+array is expected to contain numpy.int32 values</li>
+<li><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method starts the
+write from this index</li>
+<li><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
+location lookup.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>register “WORD_STATUS” is 1 element long and is part of the module “BOARD”.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">15</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int32</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write_raw</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="o">=</span><span class="n">_dataToWrite</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write_raw</span><span class="p">(</span><span class="n">registerPath</span> <span class="o">=</span> <span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">,</span>
+<span class="go">                                dataToWrite=_dataToWrite)</span>
+</pre></div>
+</div>
+</dd>
+<dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">15</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int32</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">write_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int32</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">write_raw</span><span class="p">(</span><span class="s2">&quot;MODULE1&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.Device.write" title="mtca4u.Device.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.write()</span></code></a></dt>
+<dd>Write values that get fixed point converted to the device</dd>
+</dl>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="mtca4u.get_dmap_location">
+<code class="descclassname">mtca4u.</code><code class="descname">get_dmap_location</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_dmap_location"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.get_dmap_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the dmap file which is currently in use by the library.</p>
+<p>Method returns the file path of the dmap file the library currently uses.
+This is the dmap file the library uses to look up the device name(alias) and
+its details</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>string</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">File path of the dmap file the library currently uses.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dmapPath</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">get_dmap_location</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">dmapPath</span> <span class="c1"># prints &#39;../my_example_dmap_file.dmap&#39;</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.set_dmap_location" title="mtca4u.set_dmap_location"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_dmap_location()</span></code></a></dt>
+<dd>set dmap file path for the library.</dd>
+<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-func docutils literal notranslate"><span class="pre">Device()</span></code></a></dt>
+<dd>Open device using specified alias names or using device id and mapfile</dd>
+</dl>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="mtca4u.get_info">
+<code class="descclassname">mtca4u.</code><code class="descname">get_info</code><span class="sig-paren">(</span><em>outputStream=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.get_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>prints details about the module and the deviceaccess library
+against which it was linked</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outputStream</strong> (<em>optional</em>) – default: sys.stdout</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
+<span class="go">mtca4uPy v02.03.00, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="mtca4u.set_dmap_location">
+<code class="descclassname">mtca4u.</code><code class="descname">set_dmap_location</code><span class="sig-paren">(</span><em>dmapFileLocation</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#set_dmap_location"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.set_dmap_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the location of the dmap file to use</p>
+<p>The library will check the user specified device Alias names (when creating
+devices) in this dmap file. Once set, the library will look at this dmap file
+through out the program lifetime. This is true until a new dmap file is
+set again using set_dmap_location</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dmapFileLocation</strong> (<em>string</em>) – Path to the desired dmap file.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;my_card&quot;</span><span class="p">)</span> <span class="c1"># my_card is a alias in my_example_dmap_file.dmap</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><a class="reference internal" href="#mtca4u.get_dmap_location" title="mtca4u.get_dmap_location"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_dmap_location()</span></code></a></dt>
+<dd>View the current dmap file which the library uses for device name (alias) lookup.</dd>
+<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-func docutils literal notranslate"><span class="pre">Device()</span></code></a></dt>
+<dd>Open device using specified alias names or using device id and mapfile</dd>
+</dl>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/DESY_logo.png" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">mtca4u module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deviceaccess.html">deviceaccess module</a></li>
+</ul>
+
+
+<h1 class="logo"><a href="index.html">ChimeraTK-DeviceAccess-PythonBindings</a></h1>
+
+
+
+
+
+
+
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">mtca4u Python Bindings Doucmentation</a></li>
+      <li>Next: <a href="deviceaccess.html" title="next chapter">deviceaccess module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project <chimeratk-support@desy.de>.
+      
+      |
+      <a href="_sources/mtca4u.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

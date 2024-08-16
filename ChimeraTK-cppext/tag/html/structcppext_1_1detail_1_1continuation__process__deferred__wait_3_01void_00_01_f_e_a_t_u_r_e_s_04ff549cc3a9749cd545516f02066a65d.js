@@ -1,0 +1,8 @@
+var structcppext_1_1detail_1_1continuation__process__deferred__wait_3_01void_00_01_f_e_a_t_u_r_e_s_04ff549cc3a9749cd545516f02066a65d =
+[
+    [ "continuation_process_deferred_wait", "structcppext_1_1detail_1_1continuation__process__deferred__wait_3_01void_00_01_f_e_a_t_u_r_e_s_04ff549cc3a9749cd545516f02066a65d.html#ada5e003d49a9437633815f3d5065f629", null ],
+    [ "operator()", "structcppext_1_1detail_1_1continuation__process__deferred__wait_3_01void_00_01_f_e_a_t_u_r_e_s_04ff549cc3a9749cd545516f02066a65d.html#a2a826ab9312ba026b016aa1a41710f9e", null ],
+    [ "callable", "structcppext_1_1detail_1_1continuation__process__deferred__wait_3_01void_00_01_f_e_a_t_u_r_e_s_04ff549cc3a9749cd545516f02066a65d.html#a84cf19b93ec5e78bb4559577f227ee2e", null ],
+    [ "q_input", "structcppext_1_1detail_1_1continuation__process__deferred__wait_3_01void_00_01_f_e_a_t_u_r_e_s_04ff549cc3a9749cd545516f02066a65d.html#a9408ff1acb1b1120283d61c886188cb2", null ],
+    [ "q_output", "structcppext_1_1detail_1_1continuation__process__deferred__wait_3_01void_00_01_f_e_a_t_u_r_e_s_04ff549cc3a9749cd545516f02066a65d.html#a39e613532abeefc1f3dcc1bc28447ec6", null ]
+];

@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+\pagestyle{empty}
+\begin{document}
+$ \bar{\alpha} $
+\pagebreak
+
+$ \alpha_{1}, \alpha_{2}, ..., \alpha{n} $
+\pagebreak
+
+\[ \bar{\alpha} = atan2\left( \frac{1}{n} S, \frac{1}{n} C \right) \]
+\pagebreak
+
+\[ V = 1 - \bar{R} \]
+\pagebreak
+
+\[ \sigma = \sqrt{ - 2 \ln{ \bar{R} } } \]
+\pagebreak
+
+\[ \mbox{with } C = \sum_{j=1}^{n}{\sin{\alpha_{j}}} \ , \ \ S = \sum_{j=1}^{n}{\cos{\alpha_{j}}} \ , \ \ R = \sqrt{ C^2 + S^2 } \ , \ \ \bar{R} = \frac{R}{n} \]
+\pagebreak
+
+$ \sum_{j=1}^{n}{\sin{\alpha_{j}}} $
+\pagebreak
+
+$ \sum_{j=1}^{n}{\cos{\alpha_{j}}} $
+\pagebreak
+
+$ C $
+\pagebreak
+
+$ S $
+\pagebreak
+
+\[ \bar{\alpha} = atan2\left( \frac{1}{n} \sum_{j=1}^{n}{\sin{\alpha_{j}}}, \frac{1}{n} \sum_{j=1}^{n}{\cos{\alpha_{j}}} \right) \]
+\pagebreak
+
+$ = \bar{\alpha} \cdot \frac{180}{\pi} $
+\pagebreak
+
+\[ \bar{\alpha}=\left\{\begin{array}{ll}\tan^{-1}{ ( \frac{S}{C} ) }, & C > 0, S >= 0 \\ \tan^{-1}{ ( \frac{S}{C} ) } + \pi ,& C < 0 \\ \tan^{-1}{ ( \frac{S}{C} ) } + 2 \pi ,& C > 0, S < 0 \end{array}\right. \]
+\pagebreak
+
+$V$
+\pagebreak
+
+$ \sigma $
+\pagebreak
+
+$ \sigma * 180 / \pi $
+\pagebreak
+
+$ x_{1}, x_{2}, ..., x_{N} $
+\pagebreak
+
+\[ \bar{x} = \frac{1}{N} \sum_{i=1}^{N}{ x_{i} } \]
+\pagebreak
+
+\[ \sigma = \sqrt{ \frac{1}{N-1} \sum_{i=1}^{N}{(x_{i} - \bar{x} )^2} } \]
+\pagebreak
+
+\[ \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{N}} \]
+\pagebreak
+
+$ x_{1}, x_{2}, ..., x_{start}, ..., x_{start + rang}, ..., x_{N} $
+\pagebreak
+
+$ x_{start}, ..., x_{start + range - 1} $
+\pagebreak
+
+\[ S^2 = \frac{\sum_{i=1}^{N}{ (x_{i} - \bar{x})^2}}{n - 1} \]
+\pagebreak
+
+\[ \sigma_{\bar{x}} = \sqrt{ \frac{1}{N\cdot(N-1)}\sum_{i=1}^{N}{(x_{i} - \bar{x} )^2} } \]
+\pagebreak
+
+$-\infty$
+\pagebreak
+
+\end{document}

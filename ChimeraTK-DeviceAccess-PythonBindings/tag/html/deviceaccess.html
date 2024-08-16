@@ -1,0 +1,1377 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>deviceaccess module &#8212; ChimeraTK-DeviceAccess-PythonBindings  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="mtca4u module" href="mtca4u.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-deviceaccess">
+<span id="deviceaccess-module"></span><h1>deviceaccess module<a class="headerlink" href="#module-deviceaccess" title="Permalink to this headline">¶</a></h1>
+<p>This module offers the functionality of the DeviceAccess C++ library for python.</p>
+<p>The ChimeraTK DeviceAccess library provides an abstract interface for register
+based devices. Registers are identified by a name and usually accessed though
+an accessor object. Since this library also allows access to other control
+system applications, it can be understood as the client library of the
+ChimeraTK framework.</p>
+<p>More information on ChimeraTK can be found at the project’s
+<a class="reference external" href="https://chimeratk.github.io/">github.io</a>.</p>
+<dl class="class">
+<dt id="deviceaccess.Device">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">Device</code><span class="sig-paren">(</span><em>aliasName: Optional[str] = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deviceaccess.html#Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Construct Device from user provided device information</p>
+<p>This constructor is used to open a device listed in the dmap file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>aliasName</strong> (<em>str</em>) – The device alias/name in the dmap file for the hardware</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Creating a device using a dmap file:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="go"># CARD_WITH_MODULES is an alias in the dmap file above</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Supports also with-statements:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s1">&#39;CARD_WITH_MODULES&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">dev</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">reg_value</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;/PATH/TO/REGISTER&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="method">
+<dt id="deviceaccess.Device.activateAsyncRead">
+<code class="descname">activateAsyncRead</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#Device.activateAsyncRead"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.activateAsyncRead" title="Permalink to this definition">¶</a></dt>
+<dd><p>Activate asynchronous read for all transfer elements where
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> is set.</p>
+<p>If this method is called while the device is not opened or has an error,
+this call has no effect. If it is called when no deactivated transfer
+element exists, this call also has no effect.
+On return, it is not guaranteed that
+all initial values have been received already.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#deviceaccess.Device.getVoidRegisterAccessor" title="deviceaccess.Device.getVoidRegisterAccessor"><code class="xref py py-func docutils literal notranslate"><span class="pre">getVoidRegisterAccessor()</span></code></a>: has a usage example.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#Device.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close the <a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">Device</span></code></a>.</p>
+<p>The connection with the alias name is kept so the device can be re-opened
+using the <a class="reference internal" href="#deviceaccess.Device.open" title="deviceaccess.Device.open"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> function without argument.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Closing an open device:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.getCatalogueMetadata">
+<code class="descname">getCatalogueMetadata</code><span class="sig-paren">(</span><em>metaTag: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/deviceaccess.html#Device.getCatalogueMetadata"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.getCatalogueMetadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides access to catalogue metadata.
+This method uses the metadata catalogue to access the value, defined at the beginning of a mapp file, i.e.:
+&#64;TAG value
+By convention the tag is in uppercase.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>metaTag</strong> – Tag of the metadata, i.e.: MAPFILE_REVISION</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">String containing the metadata</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.getOneDRegisterAccessor">
+<code class="descname">getOneDRegisterAccessor</code><span class="sig-paren">(</span><em>userType</em>, <em>registerPathName: str</em>, <em>numberOfElements: int = 0</em>, <em>elementsOffset: int = 0</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span> &#x2192; deviceaccess.OneDRegisterAccessor<a class="reference internal" href="_modules/deviceaccess.html#Device.getOneDRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.getOneDRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a <a class="reference internal" href="#deviceaccess.OneDRegisterAccessor" title="deviceaccess.OneDRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a> object for the given register.</p>
+<p>The OneDRegisterAccessor allows to read and write registers transparently by using
+the accessor object like a vector of the type UserType. If needed, the conversion
+to and from the UserType will be handled by a data converter matching the
+register description in e.g. a map file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>userType</strong> (<em>type</em><em> or </em><em>numpy.dtype</em>) – The userType for the accessor. Can be of any of the numpy.dtype
+combinations of float, int, 32 or 64-bit. Integers are also
+supported as signed, unsigned, 8 and 16-bit. E.g.
+<cite>numpy.uint8</cite>, or <cite>numpy.float32</cite>. There are also <cite>str</cite>, <cite>bool</cite>.</li>
+<li><strong>registerPathName</strong> (<em>str</em>) – The name of the register to read from.</li>
+<li><strong>numberOfElements</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>Specifies the number of elements per channel to read from the register.
+The width and fixed point representation of the register
+element are internally obtained from the map file.</p>
+<p>The method returns all elements in the register if this parameter is
+omitted or when its value is set as 0.</p>
+<p>If the value provided as this parameter exceeds the register size, an
+array with all elements upto the last element is returned.</p>
+</li>
+<li><strong>elementsOffset</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method reads out
+elements starting from this element index. The element at the index
+position is included in the read as well.</li>
+<li><strong>accessModeFlags</strong> (<em>list</em><em>, </em><em>optional</em>) – A list to specify the access mode. It allows e.g. to enable raw access.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">AccessMode</span></code> documentation for more details.
+Passing an access mode flag which is not supported by the backend or the given
+register will raise a NOT_IMPLEMENTED DeviceException.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting a One-D Register Accessor of type uint8 from WORD_STATUS; which is 1 element long:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">,</span> <span class="s2">&quot;BOARD/WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">OneDRegisterAccessor([255], dtype=uint8)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Getting a One-D Register Accessor of type float64 from register “WORD_CLK_MUX” is 4 elements long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">,</span> <span class="s2">&quot;BOARD/WORD_CLK_MUX&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">OneDRegisterAccessor([42., 43., 44., 45.], dtype=float32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.getRegisterCatalogue">
+<code class="descname">getRegisterCatalogue</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; &lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf1274b340&gt;<a class="reference internal" href="_modules/deviceaccess.html#Device.getRegisterCatalogue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.getRegisterCatalogue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the register catalogue with detailed information on all registers.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.getScalarRegisterAccessor">
+<code class="descname">getScalarRegisterAccessor</code><span class="sig-paren">(</span><em>userType</em>, <em>registerPathName: str</em>, <em>elementsOffset: int = 0</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span> &#x2192; deviceaccess.ScalarRegisterAccessor<a class="reference internal" href="_modules/deviceaccess.html#Device.getScalarRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.getScalarRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a <a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor" title="deviceaccess.ScalarRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a> object for the given register.</p>
+<p>The ScalarRegisterObject allows to read and write registers transparently by using
+the accessor object like a variable of the type UserType. If needed, the conversion
+to and from the UserType will be handled by a data converter matching the register
+description in e.g. a map file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>userType</strong> (<em>type</em><em> or </em><em>numpy.dtype</em>) – The userType for the accessor. Can be of any of the numpy.dtype
+combinations of float, int, 32 or 64-bit. Integers are also
+supported as signed, unsigned, 8 and 16-bit. E.g.
+<cite>numpy.uint8</cite>, or <cite>numpy.float32</cite>. There are also <cite>str</cite>, <cite>bool</cite>.</li>
+<li><strong>registerPathName</strong> (<em>str</em>) – The name of the register to read from.</li>
+<li><strong>elementsOffset</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method reads out
+elements starting from this element index. The element at the index
+position is included in the read as well.</li>
+<li><strong>accessModeFlags</strong> (<em>list</em><em>, </em><em>optional</em>) – A list to specify the access mode. It allows e.g. to enable raw access.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">AccessMode</span></code> documentation for more details.
+Passing an access mode flag which is not supported by the backend or the given
+register will raise a NOT_IMPLEMENTED DeviceException.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting a scalar Register Accessor of type int16 from WORD_STATUS:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">ScalarRegisterAccessor([32767], dtype=int16)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.getTwoDRegisterAccessor">
+<code class="descname">getTwoDRegisterAccessor</code><span class="sig-paren">(</span><em>userType</em>, <em>registerPathName: str</em>, <em>numberOfElements: int = 0</em>, <em>elementsOffset: int = 0</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span> &#x2192; deviceaccess.TwoDRegisterAccessor<a class="reference internal" href="_modules/deviceaccess.html#Device.getTwoDRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.getTwoDRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a <a class="reference internal" href="#deviceaccess.TwoDRegisterAccessor" title="deviceaccess.TwoDRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a> object for the given register.</p>
+<p>This allows to read and write transparently 2-dimensional registers.
+The optional arguments allow to restrict the accessor to a region of
+interest in the 2D register.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>userType</strong> (<em>type</em><em> or </em><em>numpy.dtype</em>) – The userType for the accessor. Can be of any of the numpy.dtype
+combinations of float, int, 32 or 64-bit. Integers are also
+supported as signed, unsigned, 8 and 16-bit. E.g.
+<cite>numpy.uint8</cite>, or <cite>numpy.float32</cite>. There are also <cite>str</cite>, <cite>bool</cite>.</li>
+<li><strong>registerPathName</strong> (<em>str</em>) – The name of the register to read from.</li>
+<li><strong>numberOfElements</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>Specifies the number of elements per channel to read from the register.
+The width and fixed point representation of the register
+element are internally obtained from the map file.</p>
+<p>The method returns all elements in the register if this parameter is
+omitted or when its value is set as 0.</p>
+<p>If the value provided as this parameter exceeds the register size, an
+array with all elements upto the last element is returned.</p>
+</li>
+<li><strong>elementsOffset</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method reads out
+elements starting from this element index. The element at the index
+position is included in the read as well.</li>
+<li><strong>accessModeFlags</strong> (<em>list</em><em>, </em><em>optional</em>) – A list to specify the access mode. It allows e.g. to enable raw access.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">AccessMode</span></code> documentation for more details.
+Passing an access mode flag which is not supported by the backend or the given
+register will raise a NOT_IMPLEMENTED DeviceException.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting a Two-D Register Accessor of type uint8 from DMA; which is 6 elements long and has 4 channels:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getTwoDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="s2">&quot;BOARD/DMA&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">TwoDRegisterAccessor([[12., 13., 14., 15., 16., 17.],</span>
+<span class="go">            [13., 15., 17., 19., 21., 23.],</span>
+<span class="go">            [14., 17., 20., 23., 26., 29.],</span>
+<span class="go">            [15., 19., 23., 27., 31., 35.]], dtype=float32)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Getting a Two-D Register Accessor of type float64 from register “WORD_CLK_MUX” is 4 elements long.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getTwoDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">,</span> <span class="s2">&quot;BOARD/WORD_CLK_MUX&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">TwoDRegisterAccessor([[42, 43, 44, 45]], dtype=uint8)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.getVoidRegisterAccessor">
+<code class="descname">getVoidRegisterAccessor</code><span class="sig-paren">(</span><em>registerPathName: str</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span> &#x2192; deviceaccess.VoidRegisterAccessor<a class="reference internal" href="_modules/deviceaccess.html#Device.getVoidRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.getVoidRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a <a class="reference internal" href="#deviceaccess.VoidRegisterAccessor" title="deviceaccess.VoidRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a> object for the given register.</p>
+<p>The VoidRegisterAccessor allows to read and write registers. Getting a read
+accessor is only possible with the wait_for_new_data flag. This access mode
+will be rejected for write accessors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>registerPathName</strong> (<em>str</em>) – The name of the register to read from.</li>
+<li><strong>accessModeFlags</strong> (<em>list</em><em>, </em><em>optional</em>) – A list to specify the access mode. It allows e.g. to enable wait_for_new_data access.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">AccessMode</span></code> documentation for more details.
+Passing an access mode flag which is not supported by the backend or the given
+register will raise a NOT_IMPLEMENTED DeviceException.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Sending interrupts per Void Accessor:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/push.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;SHARED_RAW_DEVICE&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">activateAsyncRead</span><span class="p">()</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">writeAcc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;MODULE1/TEST_AREA&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">arr1to10</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">writeAcc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">arr1to10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">writeAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">readAcc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;MODULE1/TEST_AREA_PUSH&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="n">da</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">wait_for_new_data</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">readAcc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># first read is always non-blocking</span>
+<span class="go">  OneDRegisterAccessor([ 1  2  3  4  5  6  7  8  9 10]], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># double values of writeAccReg</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">writeAcc</span> <span class="o">+=</span> <span class="n">arr1to10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">writeAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interruptAcc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getVoidRegisterAccessor</span><span class="p">(</span><span class="s2">&quot;DUMMY_INTERRUPT_2&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interruptAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span> <span class="c1"># interrupt needed, otherwise second read would be blocking</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">readAcc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="go">  OneDRegisterAccessor(</span>
+<span class="go">      [ 2,  4,  6,  8, 10, 12, 14, 16, 18, 20], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>aliasName: Optional[str] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#Device.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open a <a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">Device</span></code></a></p>
+<p>This method has to be called after the initialization to get accessors. It
+can also re-opens a <a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">Device</span></code></a> after <a class="reference internal" href="#deviceaccess.Device.close" title="deviceaccess.Device.close"><code class="xref py py-func docutils literal notranslate"><span class="pre">close()</span></code></a> was called.
+If no aliasName was giving during initialization, it is needed by
+this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>aliasName</strong> (<em>str</em><em>, </em><em>optional</em>) – The <a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">Device</span></code></a> alias/name in the dmap file for the hardware</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Opening a <a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">Device</span></code></a> without aliasName, as it has already been supplied at creation:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+<dt>Opening a <a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><code class="xref py py-class docutils literal notranslate"><span class="pre">Device</span></code></a> with aliasName, as it has non been supplied at creation:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.read">
+<code class="descname">read</code><span class="sig-paren">(</span><em>registerPath: str</em>, <em>dtype: np.dtype = &lt;class 'numpy.float64'&gt;</em>, <em>numberOfWords: int = 0</em>, <em>wordOffsetInRegister: int = 0</em>, <em>accessModeFlags: Sequence[AccessMode] = None</em><span class="sig-paren">)</span> &#x2192; np.ndarray | np.number<a class="reference internal" href="_modules/deviceaccess.html#Device.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inefficient convenience function to read a register without obtaining an accessor.
+If no dtype is selected, the returned ndarray will default to np.float64.
+If numberOfWords is not specified, it takes the maximm minus the offset.
+If numberOfChannels is not specified, it takes the maximm possible.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.Device.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>registerPath: str</em>, <em>dataToWrite: np.ndarray | np.number</em>, <em>wordOffsetInRegister: int = 0</em>, <em>accessModeFlags: Sequence[AccessMode] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#Device.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.Device.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inefficient convenience function to write a register without obtaining an accessor.
+If no dtype is selected, the returned ndarray will default to np.float64.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deviceaccess.GeneralRegisterAccessor">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">GeneralRegisterAccessor</code><a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>This is a super class to avoid code duplication. It contains
+methods that are common for the inheriting accessors.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As all accessors inherit from numpy’s ndarray, the
+behaviour concerning slicing and mathematical operations
+is simimlar. Result accessors share the attributes of the left
+operand, hence they are shallow copies of it. This leads to
+functionality that is not available in the C++ implementation.
+Please refer to the examples below.</p>
+</div>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Slicing and writing. Operations are shared with the original accessor.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">originAcc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getTwoDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;BOARD/DMA&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">originAcc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">originAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span> <span class="c1"># all elements are now 7.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">originAcc</span><span class="p">)</span>
+<span class="go">    [[7 7 7 7 7 7]</span>
+<span class="go">    [7 7 7 7 7 7]</span>
+<span class="go">    [7 7 7 7 7 7]</span>
+<span class="go">    [7 7 7 7 7 7]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">channels</span> <span class="o">=</span> <span class="n">originAcc</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">elementsPerChannel</span> <span class="o">=</span> <span class="n">originAcc</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">channels</span><span class="p">,</span> <span class="n">elementsPerChannel</span><span class="p">)</span> <span class="c1"># there are 4 channels, each with 6 elements</span>
+<span class="go">    4 6</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slicedAcc</span> <span class="o">=</span> <span class="n">originAcc</span><span class="p">[:][</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># the second element of every channel</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slicedAcc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span> <span class="c1"># set these to 21</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">slicedAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">originAcc</span><span class="p">)</span> <span class="c1"># originAcc is changed as well</span>
+<span class="go">    [[ 7  7  7  7  7  7]</span>
+<span class="go">     [21 21 21 21 21 21]</span>
+<span class="go">     [ 7  7  7  7  7  7]</span>
+<span class="go">     [ 7  7  7  7  7  7]]</span>
+</pre></div>
+</div>
+</dd>
+<dt>Results from mathematical operations are shallow copies of the left operand.</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oneAcc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oneAcc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oneAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span> <span class="c1"># oneAcc is now 72</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">otherAcc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">otherAcc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">47</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">otherAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span> <span class="c1">#  otherAcc is now 47.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultAcc</span> <span class="o">=</span> <span class="n">oneAcc</span> <span class="o">+</span> <span class="n">otherAcc</span> <span class="c1"># resultAcc&#39;s numpy buffer is now 119</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">resultAcc</span><span class="p">)</span>
+<span class="go">    [119]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultAcc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span> <span class="c1"># write() will also write into the register of oneAcc</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">oneAcc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">oneAcc</span><span class="p">)</span>
+<span class="go">    [119]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">otherAcc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># the buffer&#39;s and registers of the right operand are not touched</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">otherAcc</span><span class="p">)</span>
+<span class="go">    [47]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultAcc</span><span class="o">.</span><span class="n">getName</span><span class="p">()</span> <span class="c1"># the resultAcc is a shallow copy of the left operand</span>
+<span class="go">    &#39;/ADC/WORD_CLK_CNT&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.dataValidity">
+<code class="descname">dataValidity</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; &lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b975b0&gt;<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.dataValidity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.dataValidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return current validity of the data.</p>
+<p>Will always return <code class="xref py py-obj docutils literal notranslate"><span class="pre">DataValidity.ok</span></code> if the backend does not support it</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getAccessModeFlags">
+<code class="descname">getAccessModeFlags</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getAccessModeFlags"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getAccessModeFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the access modes flags, that
+were given at the initialization of the accessor.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the access modes flags of a OneDRegisterAccessor with the wait_for_new_data flag:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="go">  np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getAccessModeFlags</span><span class="p">()</span>
+<span class="go">  [da.AccessMode.wait_for_new_data]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getDescription">
+<code class="descname">getDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getDescription"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getDescription" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the description of this variable/register, if there is any.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the description of a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getDescription</span><span class="p">()</span>
+<span class="go">  &#39;&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getId">
+<code class="descname">getId</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; &lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13bc43d0&gt;<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getId"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain unique ID for the actual implementation of this TransferElement.</p>
+<p>This means that e.g. two instances of ScalarRegisterAccessor
+created by the same call to <a class="reference internal" href="#deviceaccess.Device.getScalarRegisterAccessor" title="deviceaccess.Device.getScalarRegisterAccessor"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.getScalarRegisterAccessor()</span></code></a>
+will have the same ID, while two instances obtained by to
+difference calls to <a class="reference internal" href="#deviceaccess.Device.getScalarRegisterAccessor" title="deviceaccess.Device.getScalarRegisterAccessor"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.getScalarRegisterAccessor()</span></code></a>
+will have a different ID even when accessing the very same register.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the name of a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getId</span><span class="p">()</span>
+<span class="go">  &lt;_da_python_bindings.TransferElementID at 0x7f5298a8f400&gt;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getName">
+<code class="descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getName"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name that identifies the process variable.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the name of a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getName</span><span class="p">()</span>
+<span class="go">  &#39;/ADC/WORD_CLK_CNT_1&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getUnit">
+<code class="descname">getUnit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getUnit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the engineering unit.</p>
+<p>If none was specified, it will default to “n./a.”</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the engineering unit of a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getUnit</span><span class="p">()</span>
+<span class="go">  &#39;n./a.&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getValueType">
+<code class="descname">getValueType</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Union[int8, uint8, int16, uint16, int32, uint32, int64, uint64, float, double, boolean, string]<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getValueType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getValueType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the type for the userType of this transfer element, that
+was given at the initialization of the accessor.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the userType of a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getValueType</span><span class="p">()</span>
+<span class="go">  numpy.int32</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.getVersionNumber">
+<code class="descname">getVersionNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; &lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf12ac1d30&gt;<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.getVersionNumber"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.getVersionNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the version number that is associated with the last transfer
+(i.e. last read or write). See <code class="xref py py-class docutils literal notranslate"><span class="pre">VersionNumber</span></code> for details.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the version number of a OneDRegisterAccessor:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="go">  np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">getVersionNumber</span><span class="p">()</span>
+<span class="go">  &lt;_da_python_bindings.VersionNumber at 0x7f52b5f8a740&gt;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.isInitialised">
+<code class="descname">isInitialised</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.isInitialised"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.isInitialised" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if the accessor is properly initialized.</p>
+<p>It is initialized if it was constructed passing the
+pointer to an implementation, it is not
+initialized if it was constructed only using the placeholder
+constructor without arguments. Which should currently not happen,
+as the registerPath is a required argument for this module, but might
+be true for other implementations.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the initialized status of a OneDRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="go">    np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">isInitialised</span><span class="p">()</span>
+<span class="go">    True</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.isReadOnly">
+<code class="descname">isReadOnly</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.isReadOnly"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.isReadOnly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if transfer element is read only, i.e.
+it is readable but not writeable.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the readOnly status of a OneDRegisterAccessor:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="go">  np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">isReadOnly</span><span class="p">()</span>
+<span class="go">  True</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.isReadable">
+<code class="descname">isReadable</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.isReadable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.isReadable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if transfer element is readable.</p>
+<p>It throws an exception if you try to read and <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor.isReadable" title="deviceaccess.GeneralRegisterAccessor.isReadable"><code class="xref py py-meth docutils literal notranslate"><span class="pre">isReadable()</span></code></a> is not True.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the readable status of a OneDRegisterAccessor:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="go">  np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">isReadable</span><span class="p">()</span>
+<span class="go">  True</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.isWriteable">
+<code class="descname">isWriteable</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.isWriteable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.isWriteable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if transfer element is writeable.</p>
+<p>It throws an exception if you try to write and <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor.isWriteable" title="deviceaccess.GeneralRegisterAccessor.isWriteable"><code class="xref py py-meth docutils literal notranslate"><span class="pre">isWriteable()</span></code></a> is not True.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Getting the writeable status of a OneDRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span>
+<span class="go">  np.int32, &quot;MODULE1/TEST_AREA_PUSH&quot;, 0, 0, [da.AccessMode.wait_for_new_data])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">isReadable</span><span class="p">()</span>
+<span class="go">  False</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the data from the device.</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was set, this function
+will block until new data has arrived. Otherwise, it still might block
+for a short time until the data transfer is complete.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Reading from a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">  ScalarRegisterAccessor([99], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.readLatest">
+<code class="descname">readLatest</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.readLatest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.readLatest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the latest value, discarding any other update since the last read if present.</p>
+<p>Otherwise, this function is identical to <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor.readNonBlocking" title="deviceaccess.GeneralRegisterAccessor.readNonBlocking"><code class="xref py py-func docutils literal notranslate"><span class="pre">readNonBlocking()</span></code></a>,
+i.e. it will never wait for new values, and it will return
+whether a new value was available if
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> is set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.readNonBlocking">
+<code class="descname">readNonBlocking</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.readNonBlocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.readNonBlocking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the next value, if available in the input buffer.</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was set, this function returns
+immediately and the return value indicated if a new value was
+available (<cite>True</cite>) or not (<cite>False</cite>).</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was not set, this function is
+identical to <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor.read" title="deviceaccess.GeneralRegisterAccessor.read"><code class="xref py py-meth docutils literal notranslate"><span class="pre">read()</span></code></a> , which will still return quickly. Depending on
+the actual transfer implementation, the backend might need to
+transfer data to obtain the current value before returning. Also
+this function is not guaranteed to be lock free. The return value
+will be always true in this mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.setDataValidity">
+<code class="descname">setDataValidity</code><span class="sig-paren">(</span><em>valid=&lt;sphinx.ext.autodoc.importer._MockObject object&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.setDataValidity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.setDataValidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Associate a persistent data storage object to be updated
+on each write operation of this ProcessArray.</p>
+<p>If no persistent data storage as associated previously, the
+value from the persistent storage is read and send to the receiver.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A call to this function will be ignored, if the
+TransferElement does not support persistent data storage
+(e.g. read-only variables or device registers)</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>valid</strong> (<em>DataValidity</em>) – DataValidity.ok or DataValidity.faulty</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the data to device.</p>
+<p>The return value is true, old data was lost on the write transfer
+(e.g. due to an buffer overflow). In case of an unbuffered write
+transfer, the return value will always be false.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Writing to a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reference</span> <span class="o">=</span> <span class="p">[</span><span class="mi">199</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">  ScalarRegisterAccessor([199], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.GeneralRegisterAccessor.writeDestructively">
+<code class="descname">writeDestructively</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#GeneralRegisterAccessor.writeDestructively"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.GeneralRegisterAccessor.writeDestructively" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor.write" title="deviceaccess.GeneralRegisterAccessor.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a>, but allows the implementation
+to destroy the content of the user buffer in the process.</p>
+<p>The application must expect the user buffer of the
+TransferElement to contain undefined data after calling this function.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">NumpyGeneralRegisterAccessor</code><span class="sig-paren">(</span><em>channels</em>, <em>elementsPerChannel</em>, <em>userType</em>, <em>accessor</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor" title="deviceaccess.GeneralRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">deviceaccess.GeneralRegisterAccessor</span></code></a></p>
+<dl class="method">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the data from the device.</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was set, this function
+will block until new data has arrived. Otherwise, it still might block
+for a short time until the data transfer is complete.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Reading from a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">  ScalarRegisterAccessor([99], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor.readLatest">
+<code class="descname">readLatest</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor.readLatest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor.readLatest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the latest value, discarding any other update since the last read if present.</p>
+<p>Otherwise, this function is identical to <a class="reference internal" href="#deviceaccess.NumpyGeneralRegisterAccessor.readNonBlocking" title="deviceaccess.NumpyGeneralRegisterAccessor.readNonBlocking"><code class="xref py py-func docutils literal notranslate"><span class="pre">readNonBlocking()</span></code></a>,
+i.e. it will never wait for new values, and it will return
+whether a new value was available if
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> is set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor.readNonBlocking">
+<code class="descname">readNonBlocking</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor.readNonBlocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor.readNonBlocking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the next value, if available in the input buffer.</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was set, this function returns
+immediately and the return value indicated if a new value was
+available (<cite>True</cite>) or not (<cite>False</cite>).</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was not set, this function is
+identical to <a class="reference internal" href="#deviceaccess.NumpyGeneralRegisterAccessor.read" title="deviceaccess.NumpyGeneralRegisterAccessor.read"><code class="xref py py-meth docutils literal notranslate"><span class="pre">read()</span></code></a> , which will still return quickly. Depending on
+the actual transfer implementation, the backend might need to
+transfer data to obtain the current value before returning. Also
+this function is not guaranteed to be lock free. The return value
+will be always true in this mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the user buffer to the given value.</p>
+<p>The value shape has to match the accessor, any mismatch will throw an exception.
+Different types will be converted to the userType of the accessor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>numpy.array</em><em> or </em><em>compatible type</em>) – The new content of the user buffer.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Setting a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="go">    ScalarRegisterAccessor([74678], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">set</span><span class="p">([</span><span class="o">-</span><span class="mi">23</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">    ScalarRegisterAccessor([-23], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Setting a OneDRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;BOARD/WORD_CLK_MUX&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="go">    OneDRegisterAccessor([342011132 958674678 342011132 958674678], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="o">-</span><span class="mi">23</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">    OneDRegisterAccessor([  1,   9,  42, -23], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Setting a TwoDRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dda</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getTwoDRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;BOARD/DMA&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="go">TwoDRegisterAccessor([[  0   4  16  36  64 100]</span>
+<span class="go">        [  0   0   0   0   0   0]</span>
+<span class="go">        [  1   9  25  49  81 121]</span>
+<span class="go">        [  0   0   0   0   0   0]], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">channels</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">elementsPerChannel</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reference</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">12</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">elementsPerChannel</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">channels</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">TwoDRegisterAccessor([[12, 13, 14, 15, 16, 17],</span>
+<span class="go">            [13, 15, 17, 19, 21, 23],</span>
+<span class="go">            [14, 17, 20, 23, 26, 29],</span>
+<span class="go">            [15, 19, 23, 27, 31, 35]], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the data to device.</p>
+<p>The return value is true, old data was lost on the write transfer
+(e.g. due to an buffer overflow). In case of an unbuffered write
+transfer, the return value will always be false.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Writing to a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reference</span> <span class="o">=</span> <span class="p">[</span><span class="mi">199</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">  ScalarRegisterAccessor([199], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.NumpyGeneralRegisterAccessor.writeDestructively">
+<code class="descname">writeDestructively</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#NumpyGeneralRegisterAccessor.writeDestructively"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.NumpyGeneralRegisterAccessor.writeDestructively" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like <a class="reference internal" href="#deviceaccess.NumpyGeneralRegisterAccessor.write" title="deviceaccess.NumpyGeneralRegisterAccessor.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a>, but allows the implementation
+to destroy the content of the user buffer in the process.</p>
+<p>The application must expect the user buffer of the
+TransferElement to contain undefined data after calling this function.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deviceaccess.OneDRegisterAccessor">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">OneDRegisterAccessor</code><span class="sig-paren">(</span><em>userType, accessor, accessModeFlags: Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deviceaccess.html#OneDRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.OneDRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deviceaccess.NumpyGeneralRegisterAccessor" title="deviceaccess.NumpyGeneralRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">deviceaccess.NumpyGeneralRegisterAccessor</span></code></a></p>
+<p>Accessor class to read and write registers transparently by using the accessor object
+like a vector of the type UserType.</p>
+<p>Conversion to and from the UserType will be handled by a data
+converter matching the register description in the map (if applicable).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As all accessors inherit from <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor" title="deviceaccess.GeneralRegisterAccessor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralRegisterAccessor</span></code></a>,
+please refer to the respective examples for the behaviour of
+mathematical operations and slicing with accessors.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Transfers between the device and the internal buffer need
+to be triggered using the read() and write() functions before reading
+from resp. after writing to the buffer using the operators.</p>
+</div>
+<dl class="method">
+<dt id="deviceaccess.OneDRegisterAccessor.getNElements">
+<code class="descname">getNElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/deviceaccess.html#OneDRegisterAccessor.getNElements"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.OneDRegisterAccessor.getNElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of elements/samples in the register.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deviceaccess.ScalarRegisterAccessor">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">ScalarRegisterAccessor</code><span class="sig-paren">(</span><em>userType</em>, <em>accessor</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deviceaccess.html#ScalarRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deviceaccess.NumpyGeneralRegisterAccessor" title="deviceaccess.NumpyGeneralRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">deviceaccess.NumpyGeneralRegisterAccessor</span></code></a></p>
+<p>Accessor class to read and write scalar registers transparently by using the accessor object
+like a vector of the type UserType.</p>
+<p>Conversion to and from the UserType will be handled by a data
+converter matching the register description in the map (if applicable).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As all accessors inherit from <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor" title="deviceaccess.GeneralRegisterAccessor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralRegisterAccessor</span></code></a>,
+please refer to the respective examples for the behaviour of
+mathematical operations and slicing with accessors.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Transfers between the device and the internal buffer need
+to be triggered using the read() and write() functions before reading
+from resp. after writing to the buffer using the operators.</p>
+</div>
+<dl class="method">
+<dt id="deviceaccess.ScalarRegisterAccessor.readAndGet">
+<code class="descname">readAndGet</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; numpy.number<a class="reference internal" href="_modules/deviceaccess.html#ScalarRegisterAccessor.readAndGet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.readAndGet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to read and return a value of UserType.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Reading and Getting from a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">,</span> <span class="mi">37</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">readAndGet</span><span class="p">()</span>
+<span class="go">  37</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.ScalarRegisterAccessor.setAndWrite">
+<code class="descname">setAndWrite</code><span class="sig-paren">(</span><em>newValue: numpy.number</em>, <em>versionNumber: Optional[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf12ac1d30&gt;] = None</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#ScalarRegisterAccessor.setAndWrite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.setAndWrite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to set and write new value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>newValue</strong> (<em>numpy.number and compatible types</em>) – The content that should be written to the register.</li>
+<li><strong>versionNumber</strong> (<em>VersionNumber</em><em>, </em><em>optional</em>) – The versionNumber that should be used for the write action.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Reading and Getting from a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">setAndWrite</span><span class="p">(</span><span class="mi">38</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">readAndGet</span><span class="p">()</span>
+<span class="go">  38</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.ScalarRegisterAccessor.writeIfDifferent">
+<code class="descname">writeIfDifferent</code><span class="sig-paren">(</span><em>newValue: numpy.number</em>, <em>versionNumber: Optional[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf12ac1d30&gt;] = None</em>, <em>validity: &lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b975b0&gt; = &lt;sphinx.ext.autodoc.importer._MockObject object&gt;</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#ScalarRegisterAccessor.writeIfDifferent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.writeIfDifferent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to set and write new value if it differes from the current value.</p>
+<p>The given version number is only used in case the value differs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>newValue</strong> (<em>numpy.number and compatible types</em>) – The contentthat should be written to the register.</li>
+<li><strong>versionmNumber</strong> (<em>VersionNumber</em><em>, </em><em>optional</em>) – The versionNumber that should be used for the write action.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Reading and Getting from a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">setAndWrite</span><span class="p">(</span><span class="mi">38</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">writeIfDifferent</span><span class="p">(</span><span class="mi">38</span><span class="p">)</span> <span class="c1"># will not write</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deviceaccess.TwoDRegisterAccessor">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">TwoDRegisterAccessor</code><span class="sig-paren">(</span><em>userType</em>, <em>accessor</em>, <em>accessModeFlags: Optional[Sequence[&lt;sphinx.ext.autodoc.importer._MockObject object at 0x7faf13b97b80&gt;]] = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deviceaccess.html#TwoDRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.TwoDRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deviceaccess.NumpyGeneralRegisterAccessor" title="deviceaccess.NumpyGeneralRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">deviceaccess.NumpyGeneralRegisterAccessor</span></code></a></p>
+<p>Accessor class to read and write registers transparently by using the accessor object
+like a 2D array of the type UserType.</p>
+<p>Conversion to and from the UserType will be handled by a data
+converter matching the register description in the map (if applicable).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As all accessors inherit from <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor" title="deviceaccess.GeneralRegisterAccessor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralRegisterAccessor</span></code></a>,
+please refer to the respective examples for the behaviour of
+mathematical operations and slicing with accessors.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Transfers between the device and the internal buffer need
+to be triggered using the read() and write() functions before reading
+from resp. after writing to the buffer using the operators.</p>
+</div>
+<dl class="method">
+<dt id="deviceaccess.TwoDRegisterAccessor.getNChannels">
+<code class="descname">getNChannels</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/deviceaccess.html#TwoDRegisterAccessor.getNChannels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.TwoDRegisterAccessor.getNChannels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of channels.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.TwoDRegisterAccessor.getNElementsPerChannel">
+<code class="descname">getNElementsPerChannel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/deviceaccess.html#TwoDRegisterAccessor.getNElementsPerChannel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.TwoDRegisterAccessor.getNElementsPerChannel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of elements/samples per channel.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deviceaccess.VoidRegisterAccessor">
+<em class="property">class </em><code class="descclassname">deviceaccess.</code><code class="descname">VoidRegisterAccessor</code><a class="reference internal" href="_modules/deviceaccess.html#VoidRegisterAccessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.VoidRegisterAccessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deviceaccess.GeneralRegisterAccessor" title="deviceaccess.GeneralRegisterAccessor"><code class="xref py py-class docutils literal notranslate"><span class="pre">deviceaccess.GeneralRegisterAccessor</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p>
+<p>Accessor class to read and write void registers transparently by using the accessor object..</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Transfers between the device and the internal buffer need
+to be triggered using the read() and write() functions before reading
+from resp. after writing to the buffer using the operators.</p>
+</div>
+<dl class="method">
+<dt id="deviceaccess.VoidRegisterAccessor.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#VoidRegisterAccessor.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.VoidRegisterAccessor.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the data from the device.</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was set, this function
+will block until new data has arrived. Otherwise, it still might block
+for a short time until the data transfer is complete.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Reading from a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span>
+<span class="go">  ScalarRegisterAccessor([99], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.VoidRegisterAccessor.readLatest">
+<code class="descname">readLatest</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#VoidRegisterAccessor.readLatest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.VoidRegisterAccessor.readLatest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the latest value, discarding any other update since the last read if present.</p>
+<p>Otherwise, this function is identical to <a class="reference internal" href="#deviceaccess.VoidRegisterAccessor.readNonBlocking" title="deviceaccess.VoidRegisterAccessor.readNonBlocking"><code class="xref py py-func docutils literal notranslate"><span class="pre">readNonBlocking()</span></code></a>,
+i.e. it will never wait for new values, and it will return
+whether a new value was available if
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> is set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.VoidRegisterAccessor.readNonBlocking">
+<code class="descname">readNonBlocking</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#VoidRegisterAccessor.readNonBlocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.VoidRegisterAccessor.readNonBlocking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the next value, if available in the input buffer.</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was set, this function returns
+immediately and the return value indicated if a new value was
+available (<cite>True</cite>) or not (<cite>False</cite>).</p>
+<p>If <code class="xref py py-obj docutils literal notranslate"><span class="pre">AccessMode.wait_for_new_data</span></code> was not set, this function is
+identical to <a class="reference internal" href="#deviceaccess.VoidRegisterAccessor.read" title="deviceaccess.VoidRegisterAccessor.read"><code class="xref py py-meth docutils literal notranslate"><span class="pre">read()</span></code></a> , which will still return quickly. Depending on
+the actual transfer implementation, the backend might need to
+transfer data to obtain the current value before returning. Also
+this function is not guaranteed to be lock free. The return value
+will be always true in this mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.VoidRegisterAccessor.write">
+<code class="descname">write</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#VoidRegisterAccessor.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.VoidRegisterAccessor.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the data to device.</p>
+<p>The return value is true, old data was lost on the write transfer
+(e.g. due to an buffer overflow). In case of an unbuffered write
+transfer, the return value will always be false.</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Writing to a ScalarRegisterAccessor</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;deviceInformation/exampleCrate.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;CARD_WITH_MODULES&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dev</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="s2">&quot;ADC/WORD_CLK_CNT_1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reference</span> <span class="o">=</span> <span class="p">[</span><span class="mi">199</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+<span class="go">  ScalarRegisterAccessor([199], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviceaccess.VoidRegisterAccessor.writeDestructively">
+<code class="descname">writeDestructively</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/deviceaccess.html#VoidRegisterAccessor.writeDestructively"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.VoidRegisterAccessor.writeDestructively" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like <a class="reference internal" href="#deviceaccess.VoidRegisterAccessor.write" title="deviceaccess.VoidRegisterAccessor.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a>, but allows the implementation
+to destroy the content of the user buffer in the process.</p>
+<p>The application must expect the user buffer of the
+TransferElement to contain undefined data after calling this function.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="deviceaccess.getDMapFilePath">
+<code class="descclassname">deviceaccess.</code><code class="descname">getDMapFilePath</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/deviceaccess.html#getDMapFilePath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.getDMapFilePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the dmap file name which the library currently uses for looking up device(alias) names.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deviceaccess.setDMapFilePath">
+<code class="descclassname">deviceaccess.</code><code class="descname">setDMapFilePath</code><span class="sig-paren">(</span><em>dmapFilePath: str</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/deviceaccess.html#setDMapFilePath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deviceaccess.setDMapFilePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the location of the dmap file.</p>
+<p>The library will parse this dmap file for the device(alias) lookup.
+Relative or absolute path of the dmap file (directory and file name).</p>
+<p class="rubric">Examples</p>
+<dl class="docutils">
+<dt>Setting the location of the dmap file</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s1">&#39;deviceInformation/exampleCrate.dmap&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dmap_path</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">getDMapFilePath</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">dmap_path</span><span class="p">)</span>
+<span class="go">deviceInformation/exampleCrate.dmap</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/DESY_logo.png" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="mtca4u.html">mtca4u module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">deviceaccess module</a></li>
+</ul>
+
+
+<h1 class="logo"><a href="index.html">ChimeraTK-DeviceAccess-PythonBindings</a></h1>
+
+
+
+
+
+
+
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="mtca4u.html" title="previous chapter">mtca4u module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project <chimeratk-support@desy.de>.
+      
+      |
+      <a href="_sources/deviceaccess.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,8 @@
+var structcppext_1_1detail_1_1continuation__process__deferred_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_tebac6b82d650ef2e626607dc64772a3f =
+[
+    [ "continuation_process_deferred", "structcppext_1_1detail_1_1continuation__process__deferred_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_tebac6b82d650ef2e626607dc64772a3f.html#a65a41fb8cee11d9494f1d9640d7ea534", null ],
+    [ "operator()", "structcppext_1_1detail_1_1continuation__process__deferred_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_tebac6b82d650ef2e626607dc64772a3f.html#ae29d5b515c3c79c824044326cc68bd78", null ],
+    [ "callable", "structcppext_1_1detail_1_1continuation__process__deferred_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_tebac6b82d650ef2e626607dc64772a3f.html#a9784e8f1936f309646864f7e5510a917", null ],
+    [ "q_input", "structcppext_1_1detail_1_1continuation__process__deferred_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_tebac6b82d650ef2e626607dc64772a3f.html#a95e1af6ae8c0279ffadfc0f5da0f14a8", null ],
+    [ "q_output", "structcppext_1_1detail_1_1continuation__process__deferred_3_01void_00_01_f_e_a_t_u_r_e_s_00_01_tebac6b82d650ef2e626607dc64772a3f.html#a28e1eb426b75e9446c746eef50fa2dff", null ]
+];

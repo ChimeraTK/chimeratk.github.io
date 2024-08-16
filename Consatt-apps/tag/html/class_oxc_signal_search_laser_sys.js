@@ -1,0 +1,38 @@
+var class_oxc_signal_search_laser_sys =
+[
+    [ "ST_ERR_FLAG", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4", [
+      [ "ACTIVE", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a4cb302051038c6e7e9d27042a3741d38", null ],
+      [ "RF_ACT", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a32f6417f52276398e44362b2f97782c7", null ],
+      [ "ODL_ACT", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a2638bd74d8df373011199c4d03af0767", null ],
+      [ "PREPARE_ACT", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4ab13e700c3ec95dcb1f010d11c659f1d0", null ],
+      [ "COARSE_SEARCH", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4ab005af559f52a1cb16f933492dfb0203", null ],
+      [ "FINE_SEARCH", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a073f78c63b605c46145e8b7c4c128959", null ],
+      [ "LSU_PULSE_SWITCH", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a6ca163e38a63bc052a701fc312910773", null ],
+      [ "SYSTEM_TIMING_CORRECTION", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a30847dba27d7716c3227a0c995062317", null ],
+      [ "OXC_SIG_FOUND", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a730d7562b58d2edfba9ea70868aab61f", null ],
+      [ "OXC_SIG_NOT_FOUND", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4af16d5033fbae786474a729d0defdddf2", null ],
+      [ "STOPPED_BY_USER", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a0da255704c9453c3c3f221a6cfd219e6", null ],
+      [ "STOPPED_BY_USER_REQUESTED", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a440c207e96a690b84f80929eee7c96a4", null ],
+      [ "ACTUATOR_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a5320842c323d0cf2f68807f8e125022c", null ],
+      [ "LSU_SWITCH_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a858be0c083dd176b7527ffa1afc1d208", null ],
+      [ "DATA_TIMEOUT_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4ac92b889e98731289970d2c9ff64813d1", null ],
+      [ "SETTINGS_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4ab7f545cf2c460a45c4287a6bf1f55a12", null ],
+      [ "LASER_UNLOCKED", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a3fbb157a031ec5fea58019bc446e07e5", null ],
+      [ "SYSTEM_TIMING_CORRECTION_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a2ddba1753a0122c41fd6f3b4fae1278a", null ],
+      [ "SEARCH_START_FORBID_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a48ca703f40920cfb0aaec2c1580d33aa", null ],
+      [ "ACTUATOR_UNEXPECTED_SOFT_END_SW_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a15066883b8ec9813b0b1f703ac28b964", null ],
+      [ "ACTUATOR_UNEXPECTED_HARD_END_SW_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4aeb326e10f59c5715ca0a64499c5747dc", null ],
+      [ "FINE_SEARCH_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a73dd394de3c21928950e6d5b1207433d", null ],
+      [ "OXC_ZERO_CROSSING_SEARCH_ERROR", "class_oxc_signal_search_laser_sys.html#aafc4f40d21a2435ca60b0776a94f5ff4a29da79c7507a41ec3532347f480f4633", null ]
+    ] ],
+    [ "getCtrlSwitchCheck", "class_oxc_signal_search_laser_sys.html#a0b985782873c0208e0b12a36383267d7", null ],
+    [ "getStatusAndError", "class_oxc_signal_search_laser_sys.html#af382d304f2831e7d59e703a35e523f0a", null ],
+    [ "getStatusAndError", "class_oxc_signal_search_laser_sys.html#a141f634d1bf8378cf9b55e9446315078", null ],
+    [ "isAnyErrorActive", "class_oxc_signal_search_laser_sys.html#a741e71f9efd272d5c3a103035186c713", null ],
+    [ "setCtrlSwitchCheck", "class_oxc_signal_search_laser_sys.html#ab305d48dbad35830d0e491e109722845", null ],
+    [ "setStatusAndError", "class_oxc_signal_search_laser_sys.html#ab46d9e92e316203041605beb827bb41e", null ],
+    [ "setStatusAndError", "class_oxc_signal_search_laser_sys.html#a85f1336510e358f6c45c7bd228da6208", null ],
+    [ "OxcSignalSearchLaser", "class_oxc_signal_search_laser_sys.html#a5ad205f845d9514ae3423bbf64e2042a", null ],
+    [ "OxcSignalSearchLaserODL", "class_oxc_signal_search_laser_sys.html#a285ad2bb6e83b8878fca0556db27de37", null ],
+    [ "OxcSignalSearchLaserRF", "class_oxc_signal_search_laser_sys.html#a1031493e9f08180c5a14c1c394c009e6", null ]
+];
