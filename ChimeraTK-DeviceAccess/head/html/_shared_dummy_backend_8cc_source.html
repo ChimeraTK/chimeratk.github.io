@@ -497,24 +497,20 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="keywordtype">void</span> SharedDummyBackend::ShmForSems::print() {</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;shmem contents: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">if</span>(entry.used) std::cout &lt;&lt; <span class="stringliteral">&quot;sem : &quot;</span> &lt;&lt; entry.semId &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      i++;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    i = 0;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;interrupt : &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; entry._intNumber &lt;&lt; <span class="stringliteral">&quot; count = &quot;</span> &lt;&lt; entry._counter</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                  &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      i++;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    }</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  }</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;} <span class="comment">// Namespace ChimeraTK</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : semEntries) {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <span class="keywordflow">if</span>(entry.used) std::cout &lt;&lt; <span class="stringliteral">&quot;sem : &quot;</span> &lt;&lt; entry.semId &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; entry : interruptEntries) {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keywordflow">if</span>(entry.used) {</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;interrupt : &quot;</span> &lt;&lt; entry._controllerId &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; entry._intNumber &lt;&lt; <span class="stringliteral">&quot; count = &quot;</span> &lt;&lt; entry._counter</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                  &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;} <span class="comment">// Namespace ChimeraTK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_chimera_t_k_1_1_shared_dummy_backend_html_a3c9ed215934274a01e9e68c4d75ce17c"><div class="ttname"><a href="class_chimera_t_k_1_1_shared_dummy_backend.html#a3c9ed215934274a01e9e68c4d75ce17c">ChimeraTK::SharedDummyBackend::SharedDummyBackend</a></div><div class="ttdeci">SharedDummyBackend(const std::string &amp;instanceId, const std::string &amp;mapFileName)</div><div class="ttdef"><b>Definition:</b> <a href="_shared_dummy_backend_8cc_source.html#l00022">SharedDummyBackend.cc:22</a></div></div>
@@ -554,7 +550,7 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_3ec190043de3e334f5fbc34ca06628ff.html">ChimeraTK-DeviceAccess</a></li><li class="navelem"><a class="el" href="dir_60a9254ef745c2751e078f990f3577bb.html">backends</a></li><li class="navelem"><a class="el" href="dir_247a17e21aa38010eb7d0455ce119a0d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_aacaa7b6ceed047c376d931ee8585d77.html">src</a></li><li class="navelem"><a class="el" href="_shared_dummy_backend_8cc.html">SharedDummyBackend.cc</a></li>
-    <li class="footer">Generated on Thu Aug 15 2024 19:24:29 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Aug 20 2024 08:52:13 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
