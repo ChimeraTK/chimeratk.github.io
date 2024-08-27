@@ -87,44 +87,46 @@ $(document).ready(function(){initNavTree('_device_p_v_manager_8cc_source.html','
 <div class="title">DevicePVManager.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_device_p_v_manager_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<a href="_device_p_v_manager_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_device_p_v_manager_8h.html">DevicePVManager.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_device_p_v_manager_8h.html">DevicePVManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  DevicePVManager::DevicePVManager(boost::shared_ptr&lt;PVManager&gt; pvManager) : _pvManager(pvManager) {}</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">    9</a></span>&#160;  ProcessVariable::SharedPtr <a class="code" href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">DevicePVManager::getProcessVariable</a>(</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      <span class="keyword">const</span> ChimeraTK::RegisterPath&amp; processVariableName)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> _pvManager-&gt;getProcessVariable(processVariableName).second;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">   14</a></span>&#160;  std::vector&lt;ProcessVariable::SharedPtr&gt; <a class="code" href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">DevicePVManager::getAllProcessVariables</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::vector&lt;ProcessVariable::SharedPtr&gt; devProcessVariables;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">PVManager::ProcessVariableMap</a> <span class="keyword">const</span>&amp; processVariables = _pvManager-&gt;getAllProcessVariables();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// We reserve the capacity that we need in order to avoid unnecessary copy</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// operations.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    devProcessVariables.reserve(processVariables.size());</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span>(PVManager::ProcessVariableMap::const_iterator i = processVariables.begin(); i != processVariables.end(); i++) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      devProcessVariables.push_back(i-&gt;second.second);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> devProcessVariables;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  DevicePVManager::DevicePVManager(boost::shared_ptr&lt;PVManager&gt; pvManager)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  : _pvManager(std::move(std::move(pvManager))) {}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">   11</a></span>&#160;  ProcessVariable::SharedPtr <a class="code" href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">DevicePVManager::getProcessVariable</a>(</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      <span class="keyword">const</span> ChimeraTK::RegisterPath&amp; processVariableName)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> _pvManager-&gt;getProcessVariable(processVariableName).second;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">   16</a></span>&#160;  std::vector&lt;ProcessVariable::SharedPtr&gt; <a class="code" href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">DevicePVManager::getAllProcessVariables</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::vector&lt;ProcessVariable::SharedPtr&gt; devProcessVariables;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">PVManager::ProcessVariableMap</a> <span class="keyword">const</span>&amp; processVariables = _pvManager-&gt;getAllProcessVariables();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// We reserve the capacity that we need in order to avoid unnecessary copy</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// operations.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    devProcessVariables.reserve(processVariables.size());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; processVariable : processVariables) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      devProcessVariables.push_back(processVariable.second.second);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> devProcessVariables;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_chimera_t_k_1_1_device_p_v_manager_html_a5c2cfffbc7d75bd8205b673c125f1105"><div class="ttname"><a href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">ChimeraTK::DevicePVManager::getAllProcessVariables</a></div><div class="ttdeci">std::vector&lt; ProcessVariable::SharedPtr &gt; getAllProcessVariables() const</div><div class="ttdoc">Returns a vector containing all process variables that are registered with this PV manager.</div><div class="ttdef"><b>Definition:</b> <a href="_device_p_v_manager_8cc_source.html#l00014">DevicePVManager.cc:14</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_p_v_manager_html_a4e76fa5b5b3b9c5d0dabf009524d6809"><div class="ttname"><a href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ChimeraTK::PVManager::ProcessVariableMap</a></div><div class="ttdeci">std::map&lt; ChimeraTK::RegisterPath, ProcessVariableSharedPtrPair &gt; ProcessVariableMap</div><div class="ttdoc">Type alias for the process variable map.</div><div class="ttdef"><b>Definition:</b> <a href="_p_v_manager_8h_source.html#l00065">PVManager.h:65</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_device_p_v_manager_html_a5c2cfffbc7d75bd8205b673c125f1105"><div class="ttname"><a href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">ChimeraTK::DevicePVManager::getAllProcessVariables</a></div><div class="ttdeci">std::vector&lt; ProcessVariable::SharedPtr &gt; getAllProcessVariables() const</div><div class="ttdoc">Returns a vector containing all process variables that are registered with this PV manager.</div><div class="ttdef"><b>Definition:</b> <a href="_device_p_v_manager_8cc_source.html#l00016">DevicePVManager.cc:16</a></div></div>
 <div class="ttc" id="a_device_p_v_manager_8h_html"><div class="ttname"><a href="_device_p_v_manager_8h.html">DevicePVManager.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_device_p_v_manager_html_a939072fc261e4422c48e699ddd7c27cf"><div class="ttname"><a href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">ChimeraTK::DevicePVManager::getProcessVariable</a></div><div class="ttdeci">ProcessVariable::SharedPtr getProcessVariable(const ChimeraTK::RegisterPath &amp;processVariableName) const</div><div class="ttdoc">Returns a reference to a process scalar or array that has been created earlier using the createProces...</div><div class="ttdef"><b>Definition:</b> <a href="_device_p_v_manager_8cc_source.html#l00009">DevicePVManager.cc:9</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_device_p_v_manager_html_a939072fc261e4422c48e699ddd7c27cf"><div class="ttname"><a href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">ChimeraTK::DevicePVManager::getProcessVariable</a></div><div class="ttdeci">ProcessVariable::SharedPtr getProcessVariable(const ChimeraTK::RegisterPath &amp;processVariableName) const</div><div class="ttdoc">Returns a reference to a process scalar or array that has been created earlier using the createProces...</div><div class="ttdef"><b>Definition:</b> <a href="_device_p_v_manager_8cc_source.html#l00011">DevicePVManager.cc:11</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_base_8h_source.html#l00011">ApplicationBase.h:11</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_p_v_manager_html_a04a55ea63d9830a54c34026af85a3151"><div class="ttname"><a href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">ChimeraTK::PVManager::ProcessVariableMap</a></div><div class="ttdeci">std::map&lt; ChimeraTK::RegisterPath, ProcessVariableSharedPtrPair &gt; ProcessVariableMap</div><div class="ttdoc">Type alias for the process variable map.</div><div class="ttdef"><b>Definition:</b> <a href="_p_v_manager_8h_source.html#l00065">PVManager.h:65</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_d6e4451068109fff7f628c0c95ca39e7.html">ChimeraTK-ControlSystemAdapter</a></li><li class="navelem"><a class="el" href="dir_f0e0c6abd6bc2f4ae01ac38d02dc69f5.html">src</a></li><li class="navelem"><a class="el" href="_device_p_v_manager_8cc.html">DevicePVManager.cc</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 19:15:20 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Mon Aug 26 2024 19:16:35 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

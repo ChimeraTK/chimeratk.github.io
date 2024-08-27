@@ -139,8 +139,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a192dc5dbf7ebc07b1c012381df066b4e"><td class="memItemLeft" align="right" valign="top">typedef ChimeraTK::TransferElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a></td></tr>
-<tr class="separator:a192dc5dbf7ebc07b1c012381df066b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479ae377b93f9b9e90e43915bcee65fd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a479ae377b93f9b9e90e43915bcee65fd">ProcessVariable</a> = ChimeraTK::TransferElement</td></tr>
+<tr class="separator:a479ae377b93f9b9e90e43915bcee65fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -194,14 +194,14 @@ Functions</h2></td></tr>
 <tr class="separator:a7a26be422586550a071b2cdbbfa5376e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a192dc5dbf7ebc07b1c012381df066b4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a192dc5dbf7ebc07b1c012381df066b4e">&#9670;&nbsp;</a></span>ProcessVariable</h2>
+<a id="a479ae377b93f9b9e90e43915bcee65fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479ae377b93f9b9e90e43915bcee65fd">&#9670;&nbsp;</a></span>ProcessVariable</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef ChimeraTK::TransferElement <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ChimeraTK::ProcessVariable</a></td>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k.html#a479ae377b93f9b9e90e43915bcee65fd">ChimeraTK::ProcessVariable</a> = typedef ChimeraTK::TransferElement</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -307,7 +307,7 @@ template&lt;class T &gt; </div>
 <p>The array's size is set to the number of elements stored in the vector provided for initialization and all elements are initialized with the values provided by this vector.</p>
 <p>Of the two returned process arrays, only the first one can take an optional persistent data storage. Trying to set a persistent data storage on the first one results in an exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00394">394</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00398">398</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -385,7 +385,7 @@ template&lt;class T &gt; </div>
 <p>The specified initial value is used for all the elements of the array.</p>
 <p>Of the two returned process arrays, only the first one can take an optional persistent data storage. Trying to set a persistent data storage on the first one results in an exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00364">364</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00367">367</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -424,7 +424,7 @@ template&lt;class T &gt; </div>
 <p>The <a class="el" href="namespace_chimera_t_k.html#a2da887c3ca7c2351d7d6331b5636bd24">createPVManager()</a> function is used to instantiate a <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a>.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> is only intended for use by the device-library thread and the <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> is only intended for use by the control-system thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00043">43</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00040">40</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -496,7 +496,7 @@ template&lt;class T &gt; </div>
 <p>The specified time-stamp source is used for determining the current time when sending a value. The receiver will be updated with this time stamp when receiving the value. If no time-stamp source is specified, the current system-time when the value is sent is used.</p>
 <p>The array's size is set to the number of elements stored in the vector provided for initialization and all elements are initialized with the values provided by this vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00595">595</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00597">597</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +566,7 @@ template&lt;class T &gt; </div>
 <p>The specified time-stamp source is used for determining the current time when sending a value. The receiver will be updated with this time stamp when receiving the value. If no time-stamp source is specified, the current system-time when the value is sent is used.</p>
 <p>The specified initial value is used for all the elements of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00578">578</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00580">580</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -638,6 +638,9 @@ template&lt;class UserType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double <a class="el" href="namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a">ChimeraTK::toDouble</a>&lt; std::string &gt; </td>
@@ -647,6 +650,11 @@ template&lt;&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="to_double_8h_source.html#l00016">16</a> of file <a class="el" href="to_double_8h_source.html">toDouble.h</a>.</p>
@@ -746,7 +754,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 21:09:50 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Mon Aug 26 2024 20:50:05 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

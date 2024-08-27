@@ -9,7 +9,6 @@ var hierarchy =
     [ "ChimeraTK::ApplicationFactoryBase", "class_chimera_t_k_1_1_application_factory_base.html", [
       [ "ChimeraTK::ApplicationFactory< APPLICATION_TYPE >", "class_chimera_t_k_1_1_application_factory.html", null ]
     ] ],
-    [ "AsyncReadTest", "class_async_read_test.html", null ],
     [ "ProcessArrayFactoryBackend::BackendRegisterer", "class_process_array_factory_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", null ],
     [ "DeviceBackendImpl", null, [
@@ -53,14 +52,11 @@ var hierarchy =
     [ "RegisterDescriptorBase< UnidirSender >", "struct_register_descriptor_base.html", [
       [ "UnidirSender", "struct_unidir_sender.html", null ]
     ] ],
-    [ "ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover", "struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html", null ],
+    [ "ChimeraTK::PersistentDataStorage::RegisterVariableOldTypeRemover", "struct_chimera_t_k_1_1_persistent_data_storage_1_1_register_variable_old_type_remover.html", null ],
     [ "ChimeraTK::StatusAccessorBase", "struct_chimera_t_k_1_1_status_accessor_base.html", null ],
     [ "ChimeraTK::StatusWithMessageReaderBase< Derived >", "class_chimera_t_k_1_1_status_with_message_reader_base.html", null ],
     [ "ChimeraTK::StatusWithMessageReaderBase< StatusWithMessageReader >", "class_chimera_t_k_1_1_status_with_message_reader_base.html", [
       [ "ChimeraTK::StatusWithMessageReader", "struct_chimera_t_k_1_1_status_with_message_reader.html", null ]
-    ] ],
-    [ "test_suite", null, [
-      [ "AsyncReadTestSuite", "class_async_read_test_suite.html", null ]
     ] ],
     [ "TestApplicationFixture", "struct_test_application_fixture.html", null ],
     [ "TestDeviceCallable", "struct_test_device_callable.html", null ],

@@ -1,7 +1,7 @@
 var struct_register_descriptor_base =
 [
-    [ "minimumUserType", "struct_register_descriptor_base.html#a07d1658fb5b5addd53adfae361d131f6", null ],
-    [ "rawUserType", "struct_register_descriptor_base.html#a71c8ed5fb79e195cb05523d89686900f", null ],
+    [ "minimumUserType", "struct_register_descriptor_base.html#ae7eb9d9792d921d3b49726f2257cde22", null ],
+    [ "rawUserType", "struct_register_descriptor_base.html#a089fe4bafc8590515ef214685161737f", null ],
     [ "generateValue", "struct_register_descriptor_base.html#a811f18e26f882bc1091440af9bad80ef", null ],
     [ "isPush", "struct_register_descriptor_base.html#af57d0534ce35b70d52b2618ced6a5185", null ],
     [ "nRuntimeErrorCases", "struct_register_descriptor_base.html#a69763ae2bf994bbc97be829123629c9d", null ],

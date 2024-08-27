@@ -118,9 +118,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_application_base
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab2401064abba81cc0201f34a75512c47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#ab2401064abba81cc0201f34a75512c47">ApplicationBase</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:ab2401064abba81cc0201f34a75512c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: the first instance will be created explicitly by the control system adapter code.  <a href="class_chimera_t_k_1_1_application_base.html#ab2401064abba81cc0201f34a75512c47">More...</a><br /></td></tr>
-<tr class="separator:ab2401064abba81cc0201f34a75512c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372aec17ad33121213021296a4926786"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a372aec17ad33121213021296a4926786">ApplicationBase</a> (std::string name)</td></tr>
+<tr class="memdesc:a372aec17ad33121213021296a4926786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: the first instance will be created explicitly by the control system adapter code.  <a href="class_chimera_t_k_1_1_application_base.html#a372aec17ad33121213021296a4926786">More...</a><br /></td></tr>
+<tr class="separator:a372aec17ad33121213021296a4926786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5c230cc0d37e9874f99d1757e36758"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a2e5c230cc0d37e9874f99d1757e36758">~ApplicationBase</a> ()</td></tr>
 <tr class="memdesc:a2e5c230cc0d37e9874f99d1757e36758"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of Application must call Application::shutdown() in its destructor.  <a href="class_chimera_t_k_1_1_application_base.html#a2e5c230cc0d37e9874f99d1757e36758">More...</a><br /></td></tr>
 <tr class="separator:a2e5c230cc0d37e9874f99d1757e36758"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,18 +157,18 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:adb56be02730cdd3abc9002700dbb84c4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#adb56be02730cdd3abc9002700dbb84c4">applicationName</a></td></tr>
-<tr class="memdesc:adb56be02730cdd3abc9002700dbb84c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the application.  <a href="class_chimera_t_k_1_1_application_base.html#adb56be02730cdd3abc9002700dbb84c4">More...</a><br /></td></tr>
-<tr class="separator:adb56be02730cdd3abc9002700dbb84c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4949ac0453924684e69985f6604f4434"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a4949ac0453924684e69985f6604f4434">_applicationName</a></td></tr>
+<tr class="memdesc:a4949ac0453924684e69985f6604f4434"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the application.  <a href="class_chimera_t_k_1_1_application_base.html#a4949ac0453924684e69985f6604f4434">More...</a><br /></td></tr>
+<tr class="separator:a4949ac0453924684e69985f6604f4434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a5fcd2b5071771b4092ea61f07503f"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">ChimeraTK::DevicePVManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a68a5fcd2b5071771b4092ea61f07503f">_processVariableManager</a></td></tr>
 <tr class="memdesc:a68a5fcd2b5071771b4092ea61f07503f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the process variable manager used to create variables exported to the control system.  <a href="class_chimera_t_k_1_1_application_base.html#a68a5fcd2b5071771b4092ea61f07503f">More...</a><br /></td></tr>
 <tr class="separator:a68a5fcd2b5071771b4092ea61f07503f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63baa1626fd1a7a5debabd66161fe394"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a63baa1626fd1a7a5debabd66161fe394">_persistentDataStorage</a></td></tr>
 <tr class="memdesc:a63baa1626fd1a7a5debabd66161fe394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to persistent data storage object, if used.  <a href="class_chimera_t_k_1_1_application_base.html#a63baa1626fd1a7a5debabd66161fe394">More...</a><br /></td></tr>
 <tr class="separator:a63baa1626fd1a7a5debabd66161fe394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484ff3c54e3f2782052ac3871ac01fb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a484ff3c54e3f2782052ac3871ac01fb7">hasBeenShutdown</a> {false}</td></tr>
-<tr class="memdesc:a484ff3c54e3f2782052ac3871ac01fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if <a class="el" href="class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012" title="This will remove the global pointer to the instance and allows creating another instance afterwards.">shutdown()</a> has been called.  <a href="class_chimera_t_k_1_1_application_base.html#a484ff3c54e3f2782052ac3871ac01fb7">More...</a><br /></td></tr>
-<tr class="separator:a484ff3c54e3f2782052ac3871ac01fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c6233818750132b2248bae630042da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a96c6233818750132b2248bae630042da">_hasBeenShutdown</a> {false}</td></tr>
+<tr class="memdesc:a96c6233818750132b2248bae630042da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if <a class="el" href="class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012" title="This will remove the global pointer to the instance and allows creating another instance afterwards.">shutdown()</a> has been called.  <a href="class_chimera_t_k_1_1_application_base.html#a96c6233818750132b2248bae630042da">More...</a><br /></td></tr>
+<tr class="separator:a96c6233818750132b2248bae630042da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -193,26 +193,34 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00018">18</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab2401064abba81cc0201f34a75512c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2401064abba81cc0201f34a75512c47">&#9670;&nbsp;</a></span>ApplicationBase()</h2>
+<a id="a372aec17ad33121213021296a4926786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372aec17ad33121213021296a4926786">&#9670;&nbsp;</a></span>ApplicationBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ChimeraTK::ApplicationBase::ApplicationBase </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Constructor: the first instance will be created explicitly by the control system adapter code. </p>
 <p>Any second instance is not allowed, thus calling the constructor multiple times will throw an exception. Design note: We are not using a true singleton pattern, since Application is an abstract base class. The actual instance is created as a static variable. The application developer should derive his application from this class and implement the <a class="el" href="class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b" title="Initialise the application.">initialise()</a> function only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00017">17</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00019">19</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 
 </div>
 </div>
@@ -242,7 +250,7 @@ Friends</h2></td></tr>
 <p>The implementation of Application must call Application::shutdown() in its destructor. </p>
 <p>This destructor just checks if Application::shutdown() was properly called and throws an exception otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00048">48</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00050">50</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 
 </div>
 </div>
@@ -273,7 +281,7 @@ Friends</h2></td></tr>
 <p>Obtain instance of the application. </p>
 <p>Will throw an exception if called before the instance has been created by the control system adapter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00087">87</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00089">89</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -416,7 +424,7 @@ Friends</h2></td></tr>
 <p>Initialise the application. </p>
 <p>This function must be implemented by the application programmer. In this function, the application must register all process variables in the PV manager. </p>
 
-<p>Implemented in <a class="el" href="class_reference_test_application.html#ab6ee82c54c2941157ce767fee73b6d9c">ReferenceTestApplication</a>, and <a class="el" href="class_my_test_application.html#a96017bb72e828802bf04efdf07fa4169">MyTestApplication</a>.</p>
+<p>Implemented in <a class="el" href="class_reference_test_application.html#ab6ee82c54c2941157ce767fee73b6d9c">ReferenceTestApplication</a>, and <a class="el" href="class_my_test_application.html#ae0fc21a3b16de8c25d081a708b881a02">MyTestApplication</a>.</p>
 
 </div>
 </div>
@@ -447,7 +455,7 @@ Friends</h2></td></tr>
 <p>Optimise unmapped variables to avoid unnecessary copies. </p>
 <p>The application must implement this function. The ControlSystemAdapter implementation should call it with a list of PV names which are not mapped, i.e. the Application does not need to update the values of these PVs. If this function is not called, no such optimisation can be done and the application may have an increased CPU usage. If the function is called, it must be called after <a class="el" href="class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b" title="Initialise the application.">initialise()</a> and before <a class="el" href="class_chimera_t_k_1_1_application_base.html#a3a32c70d9576ac03963dbcf2f9f4f34d" title="Run the application.">run()</a>. </p>
 
-<p>Reimplemented in <a class="el" href="class_reference_test_application.html#a4c6f251ad5a6c6b55db14339e8a32e4f">ReferenceTestApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="class_reference_test_application.html#a1d8c53bd95aabd6b83d03fbe910f3186">ReferenceTestApplication</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00045">45</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
@@ -479,7 +487,7 @@ Friends</h2></td></tr>
 <p>Run the application. </p>
 <p>This function must be implemented by the application programmer. It will be called after <a class="el" href="class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b" title="Initialise the application.">initialise()</a> and after all process variables have been created and, if applicable, initialised with values e.g. from a config file. The application must start one or more threads inside this function, which will execute the actual application. The function must then return, so the control system adpater can continue its operation. </p>
 
-<p>Implemented in <a class="el" href="class_reference_test_application.html#aa13fc1c5fb03375dcbf5da8ba8d8f813">ReferenceTestApplication</a>, and <a class="el" href="class_my_test_application.html#ab481b68bead03f1a0e5b18200cbfd106">MyTestApplication</a>.</p>
+<p>Implemented in <a class="el" href="class_reference_test_application.html#aa13fc1c5fb03375dcbf5da8ba8d8f813">ReferenceTestApplication</a>, and <a class="el" href="class_my_test_application.html#a7f7254f1de2ad558c8d7cbdd898de388">MyTestApplication</a>.</p>
 
 </div>
 </div>
@@ -502,7 +510,7 @@ Friends</h2></td></tr>
 <p>Set the process variable manager. </p>
 <p>This will be called by the control system adapter initialisation code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00081">81</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00083">83</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -540,7 +548,7 @@ Friends</h2></td></tr>
 <p>This will remove the global pointer to the instance and allows creating another instance afterwards. </p>
 <p>This is mostly useful for writing tests, as it allows to run several applications sequentially in the same executable. It is mandatory to call this function inside the descructor of the implemention of this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00071">71</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8cc_source.html#l00073">73</a> of file <a class="el" href="_application_base_8cc_source.html">ApplicationBase.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -575,7 +583,7 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00104">104</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00106">106</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -599,11 +607,63 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00106">106</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00108">108</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4949ac0453924684e69985f6604f4434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4949ac0453924684e69985f6604f4434">&#9670;&nbsp;</a></span>_applicationName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChimeraTK::ApplicationBase::_applicationName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the application. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00087">87</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+
+</div>
+</div>
+<a id="a96c6233818750132b2248bae630042da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c6233818750132b2248bae630042da">&#9670;&nbsp;</a></span>_hasBeenShutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::ApplicationBase::_hasBeenShutdown {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag if <a class="el" href="class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012" title="This will remove the global pointer to the instance and allows creating another instance afterwards.">shutdown()</a> has been called. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00097">97</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+
+</div>
+</div>
 <a id="a63baa1626fd1a7a5debabd66161fe394"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63baa1626fd1a7a5debabd66161fe394">&#9670;&nbsp;</a></span>_persistentDataStorage</h2>
 
@@ -626,7 +686,7 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 
 <p>Pointer to persistent data storage object, if used. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00092">92</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00094">94</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -652,59 +712,7 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 
 <p>Pointer to the process variable manager used to create variables exported to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00089">89</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
-
-</div>
-</div>
-<a id="adb56be02730cdd3abc9002700dbb84c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb56be02730cdd3abc9002700dbb84c4">&#9670;&nbsp;</a></span>applicationName</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string ChimeraTK::ApplicationBase::applicationName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The name of the application. </p>
-
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00085">85</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
-
-</div>
-</div>
-<a id="a484ff3c54e3f2782052ac3871ac01fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a484ff3c54e3f2782052ac3871ac01fb7">&#9670;&nbsp;</a></span>hasBeenShutdown</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::ApplicationBase::hasBeenShutdown {false}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flag if <a class="el" href="class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012" title="This will remove the global pointer to the instance and allows creating another instance afterwards.">shutdown()</a> has been called. </p>
-
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00095">95</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00091">91</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +738,7 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 
 <p>Pointer to the only instance of the Application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00098">98</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00100">100</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -756,7 +764,7 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 
 <p>Mutex for thread-safety when setting the instance pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00101">101</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00103">103</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +778,7 @@ template&lt;typename APPLICATION_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application_base.html">ApplicationBase</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 21:09:50 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Mon Aug 26 2024 20:50:05 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

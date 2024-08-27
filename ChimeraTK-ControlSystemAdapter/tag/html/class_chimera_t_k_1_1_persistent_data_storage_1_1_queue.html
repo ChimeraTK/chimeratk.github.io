@@ -100,10 +100,10 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_persistent_data_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b8f77e986819c5f3fadecceb902b058"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#a0b8f77e986819c5f3fadecceb902b058">Queue</a> (size_t queueSize=2)</td></tr>
 <tr class="separator:a0b8f77e986819c5f3fadecceb902b058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f5083547c04c8cd85faa7052d69700"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#a63f5083547c04c8cd85faa7052d69700">push_overwrite</a> (const std::vector&lt; DataType &gt; &amp;e)</td></tr>
-<tr class="separator:a63f5083547c04c8cd85faa7052d69700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac477f06a31df518a623a3e873a2caeb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; DataType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#ac477f06a31df518a623a3e873a2caeb1">read_latest</a> ()</td></tr>
-<tr class="separator:ac477f06a31df518a623a3e873a2caeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f049e28573709ae2e759227dce9e003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#a3f049e28573709ae2e759227dce9e003">pushOverwrite</a> (const std::vector&lt; DataType &gt; &amp;e)</td></tr>
+<tr class="separator:a3f049e28573709ae2e759227dce9e003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325617975bf207daf9b12f127bdbe44f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; DataType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#a325617975bf207daf9b12f127bdbe44f">readLatest</a> ()</td></tr>
+<tr class="separator:a325617975bf207daf9b12f127bdbe44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename DataType&gt;<br />
@@ -111,7 +111,7 @@ class ChimeraTK::PersistentDataStorage::Queue&lt; DataType &gt;</h3>
 
 <p>Thread safe queue for write to file thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00109">109</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00110">110</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0b8f77e986819c5f3fadecceb902b058"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b8f77e986819c5f3fadecceb902b058">&#9670;&nbsp;</a></span>Queue()</h2>
@@ -134,18 +134,18 @@ template&lt;typename DataType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00114">114</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00115">115</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a63f5083547c04c8cd85faa7052d69700"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63f5083547c04c8cd85faa7052d69700">&#9670;&nbsp;</a></span>push_overwrite()</h2>
+<a id="a3f049e28573709ae2e759227dce9e003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f049e28573709ae2e759227dce9e003">&#9670;&nbsp;</a></span>pushOverwrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +156,7 @@ template&lt;typename DataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">ChimeraTK::PersistentDataStorage::Queue</a>&lt; DataType &gt;::push_overwrite </td>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">ChimeraTK::PersistentDataStorage::Queue</a>&lt; DataType &gt;::pushOverwrite </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; DataType &gt; &amp;&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
@@ -170,12 +170,12 @@ template&lt;typename DataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00115">115</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00116">116</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
-<a id="ac477f06a31df518a623a3e873a2caeb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac477f06a31df518a623a3e873a2caeb1">&#9670;&nbsp;</a></span>read_latest()</h2>
+<a id="a325617975bf207daf9b12f127bdbe44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325617975bf207daf9b12f127bdbe44f">&#9670;&nbsp;</a></span>readLatest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,7 @@ template&lt;typename DataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;DataType&gt;&amp; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">ChimeraTK::PersistentDataStorage::Queue</a>&lt; DataType &gt;::read_latest </td>
+          <td class="memname">std::vector&lt;DataType&gt;&amp; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">ChimeraTK::PersistentDataStorage::Queue</a>&lt; DataType &gt;::readLatest </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -199,7 +199,7 @@ template&lt;typename DataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00118">118</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00117">117</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ template&lt;typename DataType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">Queue</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 19:15:20 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Mon Aug 26 2024 19:16:36 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

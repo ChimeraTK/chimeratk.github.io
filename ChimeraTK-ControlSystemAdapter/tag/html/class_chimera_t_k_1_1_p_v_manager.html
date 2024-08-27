@@ -113,12 +113,12 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_p_v_manager.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab464e065c5d5eaee3d727896256cc1d2"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; ProcessVariable::SharedPtr, ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2">ProcessVariableSharedPtrPair</a></td></tr>
-<tr class="memdesc:ab464e065c5d5eaee3d727896256cc1d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for a pair of shared pointers to <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a>s.  <a href="class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2">More...</a><br /></td></tr>
-<tr class="separator:ab464e065c5d5eaee3d727896256cc1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e76fa5b5b3b9c5d0dabf009524d6809"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; ChimeraTK::RegisterPath, <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2">ProcessVariableSharedPtrPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ProcessVariableMap</a></td></tr>
-<tr class="memdesc:a4e76fa5b5b3b9c5d0dabf009524d6809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for the process variable map.  <a href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">More...</a><br /></td></tr>
-<tr class="separator:a4e76fa5b5b3b9c5d0dabf009524d6809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9b3f9f03e014f9995fdaf746364dd9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#acf9b3f9f03e014f9995fdaf746364dd9">ProcessVariableSharedPtrPair</a> = std::pair&lt; ProcessVariable::SharedPtr, ProcessVariable::SharedPtr &gt;</td></tr>
+<tr class="memdesc:acf9b3f9f03e014f9995fdaf746364dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for a pair of shared pointers to <a class="el" href="namespace_chimera_t_k.html#a479ae377b93f9b9e90e43915bcee65fd">ProcessVariable</a>s.  <a href="class_chimera_t_k_1_1_p_v_manager.html#acf9b3f9f03e014f9995fdaf746364dd9">More...</a><br /></td></tr>
+<tr class="separator:acf9b3f9f03e014f9995fdaf746364dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a55ea63d9830a54c34026af85a3151"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">ProcessVariableMap</a> = std::map&lt; ChimeraTK::RegisterPath, <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#acf9b3f9f03e014f9995fdaf746364dd9">ProcessVariableSharedPtrPair</a> &gt;</td></tr>
+<tr class="memdesc:a04a55ea63d9830a54c34026af85a3151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for the process variable map.  <a href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">More...</a><br /></td></tr>
+<tr class="separator:a04a55ea63d9830a54c34026af85a3151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab684935583b526e5a2bf1ed3a860e97f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; ProcessVariable::SharedPtr, ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab684935583b526e5a2bf1ed3a860e97f">getProcessVariable</a> (ChimeraTK::RegisterPath const &amp;processVariableName) const</td></tr>
 <tr class="memdesc:ab684935583b526e5a2bf1ed3a860e97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a process scalar or array that has been created earlier using one of the <code>createProcessScalar...</code> or <code>createProcessArray...</code> methods.  <a href="class_chimera_t_k_1_1_p_v_manager.html#ab684935583b526e5a2bf1ed3a860e97f">More...</a><br /></td></tr>
 <tr class="separator:ab684935583b526e5a2bf1ed3a860e97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5921db2ce0a6de40a3354b9d7fce81d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ProcessVariableMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab5921db2ce0a6de40a3354b9d7fce81d">getAllProcessVariables</a> () const</td></tr>
+<tr class="memitem:ab5921db2ce0a6de40a3354b9d7fce81d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">ProcessVariableMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab5921db2ce0a6de40a3354b9d7fce81d">getAllProcessVariables</a> () const</td></tr>
 <tr class="memdesc:ab5921db2ce0a6de40a3354b9d7fce81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the map containing all process variables, using the names as keys and the respective process variables as values.  <a href="class_chimera_t_k_1_1_p_v_manager.html#ab5921db2ce0a6de40a3354b9d7fce81d">More...</a><br /></td></tr>
 <tr class="separator:ab5921db2ce0a6de40a3354b9d7fce81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -158,14 +158,14 @@ Friends</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00027">27</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a4e76fa5b5b3b9c5d0dabf009524d6809"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e76fa5b5b3b9c5d0dabf009524d6809">&#9670;&nbsp;</a></span>ProcessVariableMap</h2>
+<a id="a04a55ea63d9830a54c34026af85a3151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a55ea63d9830a54c34026af85a3151">&#9670;&nbsp;</a></span>ProcessVariableMap</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;ChimeraTK::RegisterPath, <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2">ProcessVariableSharedPtrPair</a>&gt; <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ChimeraTK::PVManager::ProcessVariableMap</a></td>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">ChimeraTK::PVManager::ProcessVariableMap</a> =  std::map&lt;ChimeraTK::RegisterPath, <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#acf9b3f9f03e014f9995fdaf746364dd9">ProcessVariableSharedPtrPair</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -177,19 +177,19 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ab464e065c5d5eaee3d727896256cc1d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab464e065c5d5eaee3d727896256cc1d2">&#9670;&nbsp;</a></span>ProcessVariableSharedPtrPair</h2>
+<a id="acf9b3f9f03e014f9995fdaf746364dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf9b3f9f03e014f9995fdaf746364dd9">&#9670;&nbsp;</a></span>ProcessVariableSharedPtrPair</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;ProcessVariable::SharedPtr, ProcessVariable::SharedPtr&gt; <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2">ChimeraTK::PVManager::ProcessVariableSharedPtrPair</a></td>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#acf9b3f9f03e014f9995fdaf746364dd9">ChimeraTK::PVManager::ProcessVariableSharedPtrPair</a> =  std::pair&lt;ProcessVariable::SharedPtr, ProcessVariable::SharedPtr&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Type alias for a pair of shared pointers to <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a>s. </p>
+<p>Type alias for a pair of shared pointers to <a class="el" href="namespace_chimera_t_k.html#a479ae377b93f9b9e90e43915bcee65fd">ProcessVariable</a>s. </p>
 
 <p class="definition">Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00055">55</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
 
@@ -383,7 +383,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">PVManager::ProcessVariableMap</a> &amp; ChimeraTK::PVManager::getAllProcessVariables </td>
+          <td class="memname">const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a04a55ea63d9830a54c34026af85a3151">PVManager::ProcessVariableMap</a> &amp; ChimeraTK::PVManager::getAllProcessVariables </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -394,7 +394,7 @@ template&lt;class T &gt; </div>
 <p>Returns the map containing all process variables, using the names as keys and the respective process variables as values. </p>
 <p>Each value in the map is a pair which has a reference to the process variable instance intended for the control system as its first and a reference to the instance intended for the device library as its second member. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00041">41</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00038">38</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ template&lt;class T &gt; </div>
 <p>Throws ChimeraTK::logic_error if there is no process scalar or array with the specified name.</p>
 <p>A pair of two process variables is returned: The first member of the pair is a reference to the instance intended for the control system and the second member of the pair is a reference to the instance intended for the device library. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00028">28</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00027">27</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -520,7 +520,7 @@ template&lt;class T &gt; </div>
 <p>The <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab4cc40820493020ce035479360273eff">createPVManager()</a> function is used to instantiate a <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a>. </p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> is only intended for use by the device-library thread and the <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> is only intended for use by the control-system thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00043">43</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00040">40</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 19:15:20 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Mon Aug 26 2024 19:16:36 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

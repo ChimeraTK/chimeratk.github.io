@@ -2,11 +2,9 @@ var annotated_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "AppWithParams", "class_app_with_params.html", "class_app_with_params" ],
-    [ "AsyncReadTest", "class_async_read_test.html", "class_async_read_test" ],
-    [ "AsyncReadTestSuite", "class_async_read_test_suite.html", "class_async_read_test_suite" ],
     [ "Bidir", "struct_bidir.html", "struct_bidir" ],
-    [ "BidirA", "struct_bidir_a.html", "struct_bidir_a" ],
-    [ "BidirB", "struct_bidir_b.html", "struct_bidir_b" ],
+    [ "BidirA", "struct_bidir_a.html", null ],
+    [ "BidirB", "struct_bidir_b.html", null ],
     [ "Hardware", "class_hardware.html", "class_hardware" ],
     [ "IndependentControlCore", "class_independent_control_core.html", "class_independent_control_core" ],
     [ "MyTestApplication", "class_my_test_application.html", "class_my_test_application" ],
