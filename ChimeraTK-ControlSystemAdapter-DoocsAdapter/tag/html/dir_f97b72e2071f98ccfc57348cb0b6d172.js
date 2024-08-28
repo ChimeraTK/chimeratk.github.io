@@ -6,7 +6,7 @@ var dir_f97b72e2071f98ccfc57348cb0b6d172 =
       [ "CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", "class_chimera_t_k_1_1_c_s_adapter_eq_fct" ]
     ] ],
     [ "D_textUnifier.h", "_d__text_unifier_8h.html", [
-      [ "D_textUnifier", "struct_d__text_unifier.html", "struct_d__text_unifier" ]
+      [ "DTextUnifier", "struct_d_text_unifier.html", "struct_d_text_unifier" ]
     ] ],
     [ "DoocsAdapter.h", "_doocs_adapter_8h.html", "_doocs_adapter_8h" ],
     [ "DoocsIfff.h", "_doocs_ifff_8h.html", [

@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::unique_lock&lt;std::mutex&gt; lk(_mxRecovery);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(lastFailedAddress != <span class="stringliteral">&quot;&quot;</span>) {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="comment">// open() is called after a runtime_error: check if device is recovered.</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      EqAdr ea;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      doocs::EqAdr ea;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      ea.adr(lastFailedAddress);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      EqCall eq;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      doocs::EqData src, dst;</div>
@@ -369,7 +369,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// if backend is open, read property once to obtain type</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">int</span> doocsTypeId = DATA_NULL;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">if</span>(isOpen()) {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      EqAdr ea;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      doocs::EqAdr ea;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      EqCall eq;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      doocs::EqData src, dst;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      ea.adr(path);</div>
@@ -469,48 +469,49 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Unsupported DOOCS data type &quot;</span> + std::string(doocs::EqData().type_string(doocsTypeId)) +</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;              <span class="stringliteral">&quot; of property &#39;&quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">// if the field name has been specified but the data type does not use it, throw an exception</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">if</span>(hasExtraLevel &amp;&amp; !extraLevelUsed) {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Specifiaction of field name is not supported for the DOOCS data type &quot;</span> +</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot;: &quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    p-&gt;setExceptionBackend(shared_from_this());</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> p;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">  399</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(<span class="keywordtype">int</span> doocs_error) {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="comment">// logic_error-like errors are caught at a different place. If such error appears later, a runtime_error need to</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// be generated (device does not behave as expected, as it is not expected to change)</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">switch</span>(doocs_error) {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      <span class="keywordflow">case</span> eq_errors::unsup_domain:</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">case</span> eq_errors::no_ens_entry:</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_monitor:</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="keywordflow">case</span> eq_errors::faulty_chans:</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      <span class="keywordflow">case</span> eq_errors::unavail_serv:</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_serv:</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      <span class="keywordflow">case</span> eq_errors::rpc_prot_error:</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <span class="keywordflow">case</span> eq_errors::ens_fault:</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_protocol:</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_location:</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_property:</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">case</span> eq_errors::no_connection:</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keywordflow">case</span> eq_errors::conn_timeout:</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      <span class="keywordflow">case</span> eq_errors::alias_error:</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <span class="keywordflow">case</span> eq_errors::no_permission:</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;} <span class="comment">/* namespace ChimeraTK */</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Unsupported DOOCS data type &quot;</span> +</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;              std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot; of property &#39;&quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> +</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;              registerPathName + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">// if the field name has been specified but the data type does not use it, throw an exception</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span>(hasExtraLevel &amp;&amp; !extraLevelUsed) {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Specifiaction of field name is not supported for the DOOCS data type &quot;</span> +</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;          std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot;: &quot;</span> + <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    p-&gt;setExceptionBackend(shared_from_this());</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">return</span> p;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">  400</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(<span class="keywordtype">int</span> doocs_error) {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// logic_error-like errors are caught at a different place. If such error appears later, a runtime_error need to</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="comment">// be generated (device does not behave as expected, as it is not expected to change)</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">switch</span>(doocs_error) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">case</span> eq_errors::unsup_domain:</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      <span class="keywordflow">case</span> eq_errors::no_ens_entry:</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_monitor:</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      <span class="keywordflow">case</span> eq_errors::faulty_chans:</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      <span class="keywordflow">case</span> eq_errors::unavail_serv:</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_serv:</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <span class="keywordflow">case</span> eq_errors::rpc_prot_error:</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">case</span> eq_errors::ens_fault:</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_protocol:</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_location:</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">case</span> eq_errors::ill_property:</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keywordflow">case</span> eq_errors::no_connection:</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      <span class="keywordflow">case</span> eq_errors::conn_timeout:</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <span class="keywordflow">case</span> eq_errors::alias_error:</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <span class="keywordflow">case</span> eq_errors::no_permission:</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;} <span class="comment">/* namespace ChimeraTK */</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_doocs_backend_image_register_accessor_8h_html"><div class="ttname"><a href="_doocs_backend_image_register_accessor_8h.html">DoocsBackendImageRegisterAccessor.h</a></div></div>
@@ -550,7 +551,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_string_register_accessor_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html">ChimeraTK::DoocsBackendStringRegisterAccessor</a></div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_string_register_accessor_8h_source.html#l00018">DoocsBackendStringRegisterAccessor.h:18</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_addc282bdd467e7d831cf1e46103c4540"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#addc282bdd467e7d831cf1e46103c4540">ChimeraTK::DoocsBackend::DoocsBackend</a></div><div class="ttdeci">DoocsBackend(const std::string &amp;serverAddress, const std::string &amp;cacheFile={}, const std::string &amp;updateCache={})</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_8cc_source.html#l00082">DoocsBackend.cc:82</a></div></div>
 <div class="ttc" id="a_doocs_backend_i_i_i_i_register_accessor_8h_html"><div class="ttname"><a href="_doocs_backend_i_i_i_i_register_accessor_8h.html">DoocsBackendIIIIRegisterAccessor.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a02e160d0a945224f86d7ef21af9629c9"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">ChimeraTK::DoocsBackend::isCommunicationError</a></div><div class="ttdeci">static bool isCommunicationError(int doocs_error)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_8cc_source.html#l00399">DoocsBackend.cc:399</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a02e160d0a945224f86d7ef21af9629c9"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">ChimeraTK::DoocsBackend::isCommunicationError</a></div><div class="ttdeci">static bool isCommunicationError(int doocs_error)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_8cc_source.html#l00400">DoocsBackend.cc:400</a></div></div>
 <div class="ttc" id="a_doocs_backend_numeric_register_accessor_8h_html"><div class="ttname"><a href="_doocs_backend_numeric_register_accessor_8h.html">DoocsBackendNumericRegisterAccessor.h</a></div></div>
 <div class="ttc" id="a_doocs_backend_event_id_accessor_8h_html"><div class="ttname"><a href="_doocs_backend_event_id_accessor_8h.html">DoocsBackendEventIdAccessor.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a86bfca8ff60fbf3f7b09d98d8977c664"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a86bfca8ff60fbf3f7b09d98d8977c664">ChimeraTK::DoocsBackend::getBackendRegisterCatalogue</a></div><div class="ttdeci">const DoocsBackendRegisterCatalogue &amp; getBackendRegisterCatalogue() const</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_backend_8cc_source.html#l00197">DoocsBackend.cc:197</a></div></div>
@@ -565,7 +566,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_1052d29f6371a5fade6b292c62d3ed20.html">ChimeraTK-DeviceAccess-DoocsBackend</a></li><li class="navelem"><a class="el" href="dir_e1c9f90dcf952b064e1cc6db2a9bff9a.html">src</a></li><li class="navelem"><a class="el" href="_doocs_backend_8cc.html">DoocsBackend.cc</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 22:06:24 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Aug 27 2024 22:16:09 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

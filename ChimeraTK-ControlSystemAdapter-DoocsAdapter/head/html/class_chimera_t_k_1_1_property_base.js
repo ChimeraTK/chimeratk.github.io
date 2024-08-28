@@ -10,7 +10,7 @@ var class_chimera_t_k_1_1_property_base =
     [ "registerVariable", "class_chimera_t_k_1_1_property_base.html#aeff70d958167694a5f54f2495323c422", null ],
     [ "sendArrayToDevice", "class_chimera_t_k_1_1_property_base.html#a1f8acfc56fc493ac85b961eb536512eb", null ],
     [ "sendZMQ", "class_chimera_t_k_1_1_property_base.html#adc83cf086f9caac0f5612795eb68a3f9", null ],
-    [ "setMacroPulseNumberSource", "class_chimera_t_k_1_1_property_base.html#a5daf977e9c3fc9f4870bab0134d659ff", null ],
+    [ "setMacroPulseNumberSource", "class_chimera_t_k_1_1_property_base.html#ae9d116abb1d688d9f221c5ebb34a21e2", null ],
     [ "setMatchingMode", "class_chimera_t_k_1_1_property_base.html#aa57e0f0b418f29806fafb377c788208c", null ],
     [ "setupOutputVar", "class_chimera_t_k_1_1_property_base.html#a24b9748fec6e913d9e7103d677db2b48", null ],
     [ "updateConsistency", "class_chimera_t_k_1_1_property_base.html#a748011619da365007e5f1ffaca82b29f", null ],
@@ -24,5 +24,5 @@ var class_chimera_t_k_1_1_property_base =
     [ "_nDataLossWarnings", "class_chimera_t_k_1_1_property_base.html#a7226e87348331ab527255e37b8f9d6b0", null ],
     [ "_outputVarForVersionNum", "class_chimera_t_k_1_1_property_base.html#a6c191c75303b7c5f1adfc5e6c94b805f", null ],
     [ "_publishZMQ", "class_chimera_t_k_1_1_property_base.html#a5ce2aea8fa82cfe47100215fa85687b1", null ],
-    [ "otherPropertiesToUpdate", "class_chimera_t_k_1_1_property_base.html#ab3924b02a7735ac918103c699f1afc4c", null ]
+    [ "otherPropertiesToUpdate", "class_chimera_t_k_1_1_property_base.html#a134dc7528496b00073ea5519d403b71e", null ]
 ];

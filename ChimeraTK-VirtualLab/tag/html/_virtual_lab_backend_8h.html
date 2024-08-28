@@ -304,7 +304,7 @@ Macros</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The backends are not thread-safe. When using a VirtualLabBackend from a frontend Device concurrently in multiple threads, a transparent locking decorator must be used. When using it concurrently from the backend-side (e.g. through the backend register accessors, timers, sinks and sources etc.) you must ensure proper locking yourself.</dd></dl>
 <p>(test coverage hint: these two macros are used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00292">292</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00296">296</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,9 @@ Macros</h2></td></tr>
 <div class="line">  BOOST_MSM_EUML_DECLARE_STATE_MACHINE((mainStateMachine_table, init_ &lt;&lt; initialState), mainStateMachine__)            \</div>
 <div class="line">  class mainStateMachine_ : <span class="keyword">public</span> mainStateMachine__ {                                                                \</div>
 <div class="line">   public:                                                                                                             \</div>
-<div class="line">    mainStateMachine_(dummyDeviceType* _dev) : mainStateMachine__(), dev(_dev) {}                                      \</div>
+<div class="line">    mainStateMachine_(dummyDeviceType* _dev) : mainStateMachine__(), dev(_dev) {                                       \</div>
+<div class="line">      _dev-&gt;theStateMachine.start();                                                                                   \</div>
+<div class="line">    }                                                                                                                  \</div>
 <div class="line">    dummyDeviceType* dev;                                                                                              \</div>
 <div class="line">  };                                                                                                                   \</div>
 <div class="line">  typedef msm::back::state_machine&lt;mainStateMachine_&gt; mainStateMachine;                                                \</div>
@@ -460,7 +462,7 @@ Macros</h2></td></tr>
 </div><!-- fragment --><p>Declare the main state machine. This is just like DECLARE_STATE_MACHINE but with a fixed name "mainStateMachine". Also the state machine will be instantiated under the name "theStateMachine", as expected by other parts of this framework.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00255">255</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00257">257</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +632,9 @@ Macros</h2></td></tr>
 <div class="line">  class stateMachineName##_ : <span class="keyword">public</span> stateMachineName##__ {                                                            \</div>
 <div class="line">   public:                                                                                                             \</div>
 <div class="line">    stateMachineName##_() : stateMachineName##__() {}                                                                  \</div>
-<div class="line">    void setDummyDevice(dummyDeviceType* _dev) { dev = _dev; }                                                         \</div>
+<div class="line">    void setDummyDevice(dummyDeviceType* _dev) {                                                                       \</div>
+<div class="line">      dev = _dev;                                                                                                      \</div>
+<div class="line">    }                                                                                                                  \</div>
 <div class="line">    dummyDeviceType* dev;                                                                                              \</div>
 <div class="line">  };                                                                                                                   \</div>
 <div class="line">  typedef msm::back::state_machine&lt;stateMachineName##_&gt; stateMachineName</div>
@@ -729,7 +733,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00319">319</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00323">323</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -815,7 +819,7 @@ Macros</h2></td></tr>
 <p>Initialise a sub-state machine. This should be called inside of the constructor.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00326">326</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00330">330</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -859,7 +863,7 @@ Macros</h2></td></tr>
 <p>Register backend type with the BackendFactory. Must be placed into the C++ source file for any VirtualLabBackend even when not intending to use the backend factory (not into the header file)!</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00334">334</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00338">338</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -895,7 +899,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_4c403ecd173c09492acce198f8225c62.html">ChimeraTK-VirtualLab</a></li><li class="navelem"><a class="el" href="dir_70a246c1fa14068511305a51210d4c01.html">include</a></li><li class="navelem"><a class="el" href="_virtual_lab_backend_8h.html">VirtualLabBackend.h</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 19:07:26 for ChimeraTK-VirtualLab by
+    <li class="footer">Generated on Tue Aug 27 2024 19:03:05 for ChimeraTK-VirtualLab by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

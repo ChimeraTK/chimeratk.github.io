@@ -315,14 +315,14 @@ $(document).ready(function(){initNavTree('_testable_mode_8cc_source.html',''); i
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  TestableMode::_LastMutexOwner::operator boost::thread::id() {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  TestableMode::LastMutexOwner::operator boost::thread::id() {</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    std::lock_guard&lt;std::mutex&gt; lk(_mxLastMutexOwner);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> _lastMutexOwner;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  TestableMode::_LastMutexOwner&amp; TestableMode::_LastMutexOwner::operator=(<span class="keyword">const</span> boost::thread::id&amp; <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  TestableMode::LastMutexOwner&amp; TestableMode::LastMutexOwner::operator=(<span class="keyword">const</span> boost::thread::id&amp; <span class="keywordtype">id</span>) {</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    std::lock_guard&lt;std::mutex&gt; lk(_mxLastMutexOwner);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    _lastMutexOwner = id;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('_testable_mode_8cc_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_5109b932ec3539e2c49f24923816914b.html">ChimeraTK-ApplicationCore</a></li><li class="navelem"><a class="el" href="dir_2f1f9886b751a8bba31983cfaf39121d.html">src</a></li><li class="navelem"><a class="el" href="_testable_mode_8cc.html">TestableMode.cc</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 19:31:58 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 27 2024 19:33:24 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

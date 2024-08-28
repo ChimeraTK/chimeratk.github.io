@@ -1,7 +1,5 @@
 var class_doocs_backend_register_info =
 [
-    [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html#a7ed8754f5e6af6d2add99959f32978fa", null ],
-    [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html#a96c2e8bede75794549083b860ebed92c", null ],
     [ "clone", "class_doocs_backend_register_info.html#a8ddba2fe18759f38fa4a6bf5befd68e2", null ],
     [ "getDataDescriptor", "class_doocs_backend_register_info.html#a867700bb11f1f6fdcb072cf071c07cff", null ],
     [ "getNumberOfChannels", "class_doocs_backend_register_info.html#a704c7b61234dc55338832b3b83f7b941", null ],

@@ -49,7 +49,7 @@ var class_chimera_t_k_1_1_variable_network_node =
     [ "setDirection", "class_chimera_t_k_1_1_variable_network_node.html#a3f3dc812fce3505affc004515b0f9c3a", null ],
     [ "setMetaData", "class_chimera_t_k_1_1_variable_network_node.html#aa7bcdf06301f07527325f68eafaced92", null ],
     [ "setMetaData", "class_chimera_t_k_1_1_variable_network_node.html#a7f3a3ac0956db68f7f242faabc343b8f", null ],
-    [ "setModel", "class_chimera_t_k_1_1_variable_network_node.html#a8e9e0fa9bdf063b395f62e3be4cf1704", null ],
+    [ "setModel", "class_chimera_t_k_1_1_variable_network_node.html#a7cc6d565f035208ff472d5949eff1218", null ],
     [ "setNumberOfElements", "class_chimera_t_k_1_1_variable_network_node.html#a8211a84d914fa71aa3e2a2fc6e7af578", null ],
     [ "setOwningModule", "class_chimera_t_k_1_1_variable_network_node.html#a689a0a96e23945218df44176da973283", null ],
     [ "setPublicName", "class_chimera_t_k_1_1_variable_network_node.html#a93c6d8185db9dbbaddc4f20c5cf522eb", null ],

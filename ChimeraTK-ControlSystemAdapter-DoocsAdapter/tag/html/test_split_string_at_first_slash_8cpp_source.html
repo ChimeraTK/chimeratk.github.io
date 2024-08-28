@@ -95,49 +95,47 @@ $(document).ready(function(){initNavTree('test_split_string_at_first_slash_8cpp_
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Only after defining the name include the unit test header.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// boost unit_test needs to be included before serverBasedTestTools.h</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="empty_server_functions_8h.html">emptyServerFunctions.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="split_string_at_first_slash_8h.html">splitStringAtFirstSlash.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;BOOST_AUTO_TEST_SUITE(SplitTestSuite)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="test_split_string_at_first_slash_8cpp.html#a6fd4e37af23df95b8bcd17c04e8d9a82">   17</a></span>&#160;<a class="code" href="test_split_string_at_first_slash_8cpp.html#a6fd4e37af23df95b8bcd17c04e8d9a82">BOOST_AUTO_TEST_CASE</a>(testSpitting) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">auto</span> splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;stringWithout.a.slash&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;stringWithout.a.slash&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;/stringStartingWith.slash&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;stringStartingWith.slash&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;stringEndingWith.slash/&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;stringEndingWith.slash&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;string/With.slash&quot;</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;string&quot;</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;With.slash&quot;</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;string/With/twoSlashes&quot;</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;string&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;With.twoSlashes&quot;</span>); <span class="comment">// second slash gets replaced with dot</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="split_string_at_first_slash_8h.html">splitStringAtFirstSlash.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>boost::unit_test_framework;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;BOOST_AUTO_TEST_SUITE(SplitTestSuite)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="test_split_string_at_first_slash_8cpp.html#a6fd4e37af23df95b8bcd17c04e8d9a82">   16</a></span>&#160;<a class="code" href="test_split_string_at_first_slash_8cpp.html#a6fd4e37af23df95b8bcd17c04e8d9a82">BOOST_AUTO_TEST_CASE</a>(testSpitting) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">auto</span> splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;stringWithout.a.slash&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  BOOST_CHECK(splitResult.first.empty());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;stringWithout.a.slash&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;/stringStartingWith.slash&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  BOOST_CHECK(splitResult.first.empty());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;stringStartingWith.slash&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;stringEndingWith.slash/&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;stringEndingWith.slash&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  BOOST_CHECK(splitResult.second.empty());</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;string/With.slash&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;string&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;With.slash&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  splitResult = <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(<span class="stringliteral">&quot;string/With/twoSlashes&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  BOOST_CHECK(splitResult.first == <span class="stringliteral">&quot;string&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  BOOST_CHECK(splitResult.second == <span class="stringliteral">&quot;With.twoSlashes&quot;</span>); <span class="comment">// second slash gets replaced with dot</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aempty_server_functions_8h_html"><div class="ttname"><a href="empty_server_functions_8h.html">emptyServerFunctions.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_afbd78a37f72dd506f7e136f7ac06cf98"><div class="ttname"><a href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">ChimeraTK::splitStringAtFirstSlash</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; splitStringAtFirstSlash(std::string input)</div><div class="ttdoc">Split the given process variable name into location and property name.</div><div class="ttdef"><b>Definition:</b> <a href="split_string_at_first_slash_8h_source.html#l00011">splitStringAtFirstSlash.h:11</a></div></div>
 <div class="ttc" id="asplit_string_at_first_slash_8h_html"><div class="ttname"><a href="split_string_at_first_slash_8h.html">splitStringAtFirstSlash.h</a></div></div>
-<div class="ttc" id="atest_split_string_at_first_slash_8cpp_html_a6fd4e37af23df95b8bcd17c04e8d9a82"><div class="ttname"><a href="test_split_string_at_first_slash_8cpp.html#a6fd4e37af23df95b8bcd17c04e8d9a82">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testSpitting)</div><div class="ttdef"><b>Definition:</b> <a href="test_split_string_at_first_slash_8cpp_source.html#l00017">testSplitStringAtFirstSlash.cpp:17</a></div></div>
+<div class="ttc" id="atest_split_string_at_first_slash_8cpp_html_a6fd4e37af23df95b8bcd17c04e8d9a82"><div class="ttname"><a href="test_split_string_at_first_slash_8cpp.html#a6fd4e37af23df95b8bcd17c04e8d9a82">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testSpitting)</div><div class="ttdef"><b>Definition:</b> <a href="test_split_string_at_first_slash_8cpp_source.html#l00016">testSplitStringAtFirstSlash.cpp:16</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_73dabe853f5a69cc63d01e9c5e92eee9.html">ChimeraTK-ControlSystemAdapter-DoocsAdapter</a></li><li class="navelem"><a class="el" href="dir_0fb152a537aaa09f0ea9f261754eb87c.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c51cc5c1bd9b18579b1f9a53ec390e4.html">src</a></li><li class="navelem"><a class="el" href="test_split_string_at_first_slash_8cpp.html">testSplitStringAtFirstSlash.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:47:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 19:48:18 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('split_string_at_first_slash_8h_source.
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">   11</a></span>&#160;  <span class="keyword">inline</span> std::pair&lt;std::string, std::string&gt; <a class="code" href="namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98">splitStringAtFirstSlash</a>(std::string input) {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// find first slash</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> slashPosition = input.find_first_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> slashPosition = input.find_first_of(<span class="charliteral">&#39;/&#39;</span>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span>(slashPosition == 0) { <span class="comment">// ignore leading slash</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      input = input.substr(1);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      slashPosition = input.find_first_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      slashPosition = input.find_first_of(<span class="charliteral">&#39;/&#39;</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// no slash found: return empty location name</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(slashPosition == std::string::npos) {</div>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('split_string_at_first_slash_8h_source.
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">auto</span> locationName = input.substr(0, slashPosition);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">auto</span> propertyName = input.substr(slashPosition + 1);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// replace any remaining slashes in property name with dots</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span>((slashPosition = propertyName.find_first_of(<span class="stringliteral">&quot;/&quot;</span>)) != std::string::npos) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span>((slashPosition = propertyName.find_first_of(<span class="charliteral">&#39;/&#39;</span>)) != std::string::npos) {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      propertyName[slashPosition] = <span class="charliteral">&#39;.&#39;</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> std::make_pair(locationName, propertyName);</div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('split_string_at_first_slash_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_73dabe853f5a69cc63d01e9c5e92eee9.html">ChimeraTK-ControlSystemAdapter-DoocsAdapter</a></li><li class="navelem"><a class="el" href="dir_f97b72e2071f98ccfc57348cb0b6d172.html">include</a></li><li class="navelem"><a class="el" href="split_string_at_first_slash_8h.html">splitStringAtFirstSlash.h</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:47:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 19:48:18 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

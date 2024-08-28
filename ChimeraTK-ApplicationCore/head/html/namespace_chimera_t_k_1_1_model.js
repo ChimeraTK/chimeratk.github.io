@@ -16,6 +16,7 @@ var namespace_chimera_t_k_1_1_model =
     [ "EdgeProperties", "struct_chimera_t_k_1_1_model_1_1_edge_properties.html", "struct_chimera_t_k_1_1_model_1_1_edge_properties" ],
     [ "Impl", "class_chimera_t_k_1_1_model_1_1_impl.html", "class_chimera_t_k_1_1_model_1_1_impl" ],
     [ "ModuleGroupProxy", "class_chimera_t_k_1_1_model_1_1_module_group_proxy.html", "class_chimera_t_k_1_1_model_1_1_module_group_proxy" ],
+    [ "NonOwningProxy", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy" ],
     [ "OrSet", "struct_chimera_t_k_1_1_model_1_1_or_set.html", "struct_chimera_t_k_1_1_model_1_1_or_set" ],
     [ "ProcessVariableProxy", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy" ],
     [ "PropertyFilterTag", "struct_chimera_t_k_1_1_model_1_1_property_filter_tag.html", "struct_chimera_t_k_1_1_model_1_1_property_filter_tag" ],

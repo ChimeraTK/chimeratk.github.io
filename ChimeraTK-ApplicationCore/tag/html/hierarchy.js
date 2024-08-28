@@ -512,6 +512,8 @@ var hierarchy =
       [ "ChimeraTK::ConnectionMaker", "class_chimera_t_k_1_1_connection_maker.html", null ],
       [ "ChimeraTK::XMLGenerator", "class_chimera_t_k_1_1_x_m_l_generator.html", null ]
     ] ],
+    [ "ChimeraTK::Model::NonOwningProxy< ProxyType >", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html", null ],
+    [ "ChimeraTK::Model::NonOwningProxy< ChimeraTK::Model::ProcessVariableProxy >", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html", null ],
     [ "OneDRegisterAccessor", null, [
       [ "ChimeraTK::ArrayAccessor< double >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< InputType >", "class_chimera_t_k_1_1_array_accessor.html", null ],

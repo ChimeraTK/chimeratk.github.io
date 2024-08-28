@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('get_all_variable_names_8cc_source.html
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#abd0e132f7e95b3e82f1f6b85aba381d7">    8</a></span>&#160;  std::set&lt;std::string&gt; <a class="code" href="namespace_chimera_t_k.html#abd0e132f7e95b3e82f1f6b85aba381d7">getAllVariableNames</a>(boost::shared_ptr&lt;ControlSystemPVManager&gt; csManager) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html#a8e59630129b4248186709bb532ca3851">    8</a></span>&#160;  std::set&lt;std::string&gt; <a class="code" href="namespace_chimera_t_k.html#a8e59630129b4248186709bb532ca3851">getAllVariableNames</a>(<span class="keyword">const</span> boost::shared_ptr&lt;ControlSystemPVManager&gt;&amp; csManager) {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    std::set&lt;std::string&gt; output;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; pv : csManager-&gt;getAllProcessVariables()) {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      output.insert(pv-&gt;getName());</div>
@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('get_all_variable_names_8cc_source.html
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aget_all_variable_names_8h_html"><div class="ttname"><a href="get_all_variable_names_8h.html">getAllVariableNames.h</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html_abd0e132f7e95b3e82f1f6b85aba381d7"><div class="ttname"><a href="namespace_chimera_t_k.html#abd0e132f7e95b3e82f1f6b85aba381d7">ChimeraTK::getAllVariableNames</a></div><div class="ttdeci">std::set&lt; std::string &gt; getAllVariableNames(boost::shared_ptr&lt; ControlSystemPVManager &gt; csManager)</div><div class="ttdoc">convenience function to get all variable names from the CS adapter as a std::set (needed for instance...</div><div class="ttdef"><b>Definition:</b> <a href="get_all_variable_names_8cc_source.html#l00008">getAllVariableNames.cc:8</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html_a8e59630129b4248186709bb532ca3851"><div class="ttname"><a href="namespace_chimera_t_k.html#a8e59630129b4248186709bb532ca3851">ChimeraTK::getAllVariableNames</a></div><div class="ttdeci">std::set&lt; std::string &gt; getAllVariableNames(const boost::shared_ptr&lt; ControlSystemPVManager &gt; &amp;csManager)</div><div class="ttdoc">convenience function to get all variable names from the CS adapter as a std::set (needed for instance...</div><div class="ttdef"><b>Definition:</b> <a href="get_all_variable_names_8cc_source.html#l00008">getAllVariableNames.cc:8</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_73dabe853f5a69cc63d01e9c5e92eee9.html">ChimeraTK-ControlSystemAdapter-DoocsAdapter</a></li><li class="navelem"><a class="el" href="dir_68f3e33577dcba624875e08d7c32489c.html">src</a></li><li class="navelem"><a class="el" href="get_all_variable_names_8cc.html">getAllVariableNames.cc</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:47:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 19:48:18 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

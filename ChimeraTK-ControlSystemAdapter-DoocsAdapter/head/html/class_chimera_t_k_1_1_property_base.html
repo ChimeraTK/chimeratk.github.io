@@ -130,16 +130,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0033cff00aad08d04aea38303d3b946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946">publishZeroMQ</a> ()</td></tr>
 <tr class="memdesc:aa0033cff00aad08d04aea38303d3b946"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on ZeroMQ publishing  <a href="class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946">More...</a><br /></td></tr>
 <tr class="separator:aa0033cff00aad08d04aea38303d3b946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5daf977e9c3fc9f4870bab0134d659ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a5daf977e9c3fc9f4870bab0134d659ff">setMacroPulseNumberSource</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</td></tr>
-<tr class="separator:a5daf977e9c3fc9f4870bab0134d659ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d116abb1d688d9f221c5ebb34a21e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ae9d116abb1d688d9f221c5ebb34a21e2">setMacroPulseNumberSource</a> (const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; &amp;macroPulseNumberSource)</td></tr>
+<tr class="separator:ae9d116abb1d688d9f221c5ebb34a21e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57e0f0b418f29806fafb377c788208c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa57e0f0b418f29806fafb377c788208c">setMatchingMode</a> (DataConsistencyGroup::MatchingMode newMode)</td></tr>
 <tr class="separator:aa57e0f0b418f29806fafb377c788208c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab3924b02a7735ac918103c699f1afc4c"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ab3924b02a7735ac918103c699f1afc4c">otherPropertiesToUpdate</a></td></tr>
-<tr class="memdesc:ab3924b02a7735ac918103c699f1afc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of other properties which need to update their DOOCS buffers when this property is written from the DOOCS side.  <a href="class_chimera_t_k_1_1_property_base.html#ab3924b02a7735ac918103c699f1afc4c">More...</a><br /></td></tr>
-<tr class="separator:ab3924b02a7735ac918103c699f1afc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134dc7528496b00073ea5519d403b71e"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a134dc7528496b00073ea5519d403b71e">otherPropertiesToUpdate</a></td></tr>
+<tr class="memdesc:a134dc7528496b00073ea5519d403b71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of other properties which need to update their DOOCS buffers when this property is written from the DOOCS side.  <a href="class_chimera_t_k_1_1_property_base.html#a134dc7528496b00073ea5519d403b71e">More...</a><br /></td></tr>
+<tr class="separator:a134dc7528496b00073ea5519d403b71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -539,7 +539,7 @@ template&lt;typename SELF , typename UserType &gt; </div>
 
 <p>a helper which unifies data-&gt;device for DOOCS_T = one of D_array&lt;DOOCS_PRIMITIVE_T&gt; or D_spectrum </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00096">96</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00097">97</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -605,8 +605,8 @@ template&lt;typename SELF , typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a5daf977e9c3fc9f4870bab0134d659ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5daf977e9c3fc9f4870bab0134d659ff">&#9670;&nbsp;</a></span>setMacroPulseNumberSource()</h2>
+<a id="ae9d116abb1d688d9f221c5ebb34a21e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d116abb1d688d9f221c5ebb34a21e2">&#9670;&nbsp;</a></span>setMacroPulseNumberSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -614,20 +614,20 @@ template&lt;typename SELF , typename UserType &gt; </div>
         <tr>
           <td class="memname">void ChimeraTK::PropertyBase::setMacroPulseNumberSource </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>macroPulseNumberSource</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00125">125</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00130">130</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_property_base_a5daf977e9c3fc9f4870bab0134d659ff_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_property_base_ae9d116abb1d688d9f221c5ebb34a21e2_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -657,7 +657,7 @@ template&lt;typename SELF , typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00033">33</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00034">34</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -689,7 +689,7 @@ template&lt;typename T &gt; </div>
 
 <p>should be called for output vars mapped to doocs registers processVar in data consistency group, initializes DOOCS error state and keeps a reference as _mainOutputVar </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00085">85</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00086">86</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -861,7 +861,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00070">70</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00071">71</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -885,7 +885,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00072">72</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00073">73</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -909,7 +909,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00077">77</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00078">78</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -933,7 +933,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00073">73</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00074">74</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -957,7 +957,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00069">69</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00070">70</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -981,7 +981,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00079">79</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00080">80</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1005,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00076">76</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00077">77</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -1029,18 +1029,18 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00074">74</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00075">75</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
-<a id="ab3924b02a7735ac918103c699f1afc4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3924b02a7735ac918103c699f1afc4c">&#9670;&nbsp;</a></span>otherPropertiesToUpdate</h2>
+<a id="a134dc7528496b00073ea5519d403b71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134dc7528496b00073ea5519d403b71e">&#9670;&nbsp;</a></span>otherPropertiesToUpdate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a>&gt; &gt; ChimeraTK::PropertyBase::otherPropertiesToUpdate</td>
+          <td class="memname">std::set&lt;boost::weak_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a>&gt; &gt; ChimeraTK::PropertyBase::otherPropertiesToUpdate</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1048,7 +1048,7 @@ template&lt;typename T &gt; </div>
 <p>List of other properties which need to update their DOOCS buffers when this property is written from the DOOCS side. </p>
 <p>This is used to synchronise multi-mapped PVs. </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00037">37</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00038">38</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 21:57:50 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 22:07:17 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

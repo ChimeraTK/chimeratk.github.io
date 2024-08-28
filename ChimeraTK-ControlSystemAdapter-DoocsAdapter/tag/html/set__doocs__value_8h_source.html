@@ -96,21 +96,23 @@ $(document).ready(function(){initNavTree('set__doocs__value_8h_source.html','');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// a convenience function to call set() on a D_fct, which is doing the real call</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// overloaded/ not overloaded set_value, fill history, call set_and_arcive etc.</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> DOOCS_T, <span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="set__doocs__value_8h.html#aa1af9201ce386d11499030efe6def5d1">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="set__doocs__value_8h.html#aa1af9201ce386d11499030efe6def5d1">set_doocs_value</a>(DOOCS_T&amp; property, T value) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="set__doocs__value_8h.html#aa7a1cf07bef85aa43f82c5033775293c">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="set__doocs__value_8h.html#aa7a1cf07bef85aa43f82c5033775293c">setDoocsValue</a>(DOOCS_T&amp; property, T value) {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  EqAdr adr;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  doocs::EqData src, dest;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  src.set(value);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">property</span>.set(&amp;adr, &amp;src, &amp;dest, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">return</span> dest.error();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">property</span>.get_eqfct()-&gt;lock();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">property</span>.set(&amp;adr, &amp;src, &amp;dest, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">property</span>.get_eqfct()-&gt;unlock();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> dest.error();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aset__doocs__value_8h_html_aa1af9201ce386d11499030efe6def5d1"><div class="ttname"><a href="set__doocs__value_8h.html#aa1af9201ce386d11499030efe6def5d1">set_doocs_value</a></div><div class="ttdeci">int set_doocs_value(DOOCS_T &amp;property, T value)</div><div class="ttdef"><b>Definition:</b> <a href="set__doocs__value_8h_source.html#l00010">set_doocs_value.h:10</a></div></div>
+<div class="ttc" id="aset__doocs__value_8h_html_aa7a1cf07bef85aa43f82c5033775293c"><div class="ttname"><a href="set__doocs__value_8h.html#aa7a1cf07bef85aa43f82c5033775293c">setDoocsValue</a></div><div class="ttdeci">int setDoocsValue(DOOCS_T &amp;property, T value)</div><div class="ttdef"><b>Definition:</b> <a href="set__doocs__value_8h_source.html#l00010">set_doocs_value.h:10</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_73dabe853f5a69cc63d01e9c5e92eee9.html">ChimeraTK-ControlSystemAdapter-DoocsAdapter</a></li><li class="navelem"><a class="el" href="dir_0fb152a537aaa09f0ea9f261754eb87c.html">tests</a></li><li class="navelem"><a class="el" href="dir_0d1b251b7160e8b90e6cad486e10be76.html">include</a></li><li class="navelem"><a class="el" href="set__doocs__value_8h.html">set_doocs_value.h</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:47:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 19:48:18 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

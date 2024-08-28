@@ -12,6 +12,7 @@ var class_chimera_t_k_1_1_model_1_1_proxy =
     [ "DirectoryProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a5b56992616643ba81b3a672d7cf40a1b", null ],
     [ "Impl", "class_chimera_t_k_1_1_model_1_1_proxy.html#ae708b2c3f144ba0c31bb444c4efe8ccf", null ],
     [ "ModuleGroupProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167", null ],
+    [ "NonOwningProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a145f050d261a950de8837a38376edcf9", null ],
     [ "ProcessVariableProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#aea041c73da1d9771be65a8de77db646c", null ],
     [ "RootProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a4dcd2aff114d1a9cc923a9cbb1aabe81", null ],
     [ "VariableGroupProxy", "class_chimera_t_k_1_1_model_1_1_proxy.html#a1ac33056aa34c5680e47a72b1de3fc49", null ],

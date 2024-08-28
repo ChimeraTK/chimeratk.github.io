@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="eq__dummy_8h.html">eq_dummy.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;eq_client.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;doocs/EqCall.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/Device.h&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/TransferGroup.h&gt;</span></div>
@@ -132,8 +132,8 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    DoocsServer = <span class="stringliteral">&quot;doocs:doocs://localhost:&quot;</span> + rpcNo() + <span class="stringliteral">&quot;/F/D&quot;</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// wait until server has started (both the update thread and the rpc thread)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    EqCall eq;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    EqAdr ea;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    doocs::EqCall eq;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    doocs::EqAdr ea;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    doocs::EqData src, dst;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ea.adr(<span class="stringliteral">&quot;doocs://localhost:&quot;</span> + rpcNo() + <span class="stringliteral">&quot;/F/D/MYDUMMY/SOME_ZMQINT&quot;</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">while</span>(eq.get(&amp;ea, &amp;src, &amp;dst)) usleep(100000);</div>
@@ -794,7 +794,7 @@ $(document).ready(function(){initNavTree('test_unified_backend_test_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_1052d29f6371a5fade6b292c62d3ed20.html">ChimeraTK-DeviceAccess-DoocsBackend</a></li><li class="navelem"><a class="el" href="dir_00c4adc29d29ce13cee8f68c38ecf9e2.html">tests</a></li><li class="navelem"><a class="el" href="dir_f197a160868cfb9181473f536ad331dd.html">executables_src</a></li><li class="navelem"><a class="el" href="test_unified_backend_test_8cpp.html">testUnifiedBackendTest.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:49:39 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Aug 27 2024 19:55:45 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

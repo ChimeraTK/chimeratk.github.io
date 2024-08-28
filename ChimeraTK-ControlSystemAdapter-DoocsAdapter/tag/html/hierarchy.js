@@ -14,7 +14,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "D_text", null, [
-      [ "D_textUnifier", "struct_d__text_unifier.html", null ]
+      [ "DTextUnifier", "struct_d_text_unifier.html", null ]
     ] ],
     [ "D_xy", null, [
       [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ]

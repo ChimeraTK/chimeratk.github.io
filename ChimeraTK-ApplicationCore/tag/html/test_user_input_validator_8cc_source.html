@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('test_user_input_validator_8cc_source.h
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_module_a.html#a0c93491a7b687d3d9d03fcdf55ecbd46">   31</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="struct_module_a.html#a0c93491a7b687d3d9d03fcdf55ecbd46">prepare</a>()<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    in1ErrorMessage = <span class="stringliteral">&quot;(&quot;</span> + getName() + <span class="stringliteral">&quot;) in1 needs to be smaller than 10&quot;</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    validator.<a class="code" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1">add</a>(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        in1ErrorMessage.data(), [&amp;] { return in1 &lt; 10; }, in1);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        in1ErrorMessage, [&amp;] { <span class="keywordflow">return</span> in1 &lt; 10; }, in1);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_module_a.html#a744f87d154ab07aaf4e2ad12826a0ea1">   37</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="struct_module_a.html#a744f87d154ab07aaf4e2ad12826a0ea1">mainLoop</a>()<span class="keyword"> override </span>{</div>
@@ -785,7 +785,7 @@ $(document).ready(function(){initNavTree('test_user_input_validator_8cc_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_5109b932ec3539e2c49f24923816914b.html">ChimeraTK-ApplicationCore</a></li><li class="navelem"><a class="el" href="dir_cac710b2f1ca0b8bfa4564217e72ae2e.html">tests</a></li><li class="navelem"><a class="el" href="dir_12103a13d03486cdb1fa8b48e27c887f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_user_input_validator_8cc.html">testUserInputValidator.cc</a></li>
-    <li class="footer">Generated on Thu Aug 22 2024 19:31:59 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 27 2024 19:33:29 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

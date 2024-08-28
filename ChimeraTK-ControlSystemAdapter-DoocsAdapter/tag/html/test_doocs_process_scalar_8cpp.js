@@ -1,7 +1,7 @@
 var test_doocs_process_scalar_8cpp =
 [
     [ "BOOST_TEST_MODULE", "test_doocs_process_scalar_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "integer_test_types", "test_doocs_process_scalar_8cpp.html#a8dfcd18f6fff89ef742cfcfac7a68e2f", null ],
+    [ "integer_test_types", "test_doocs_process_scalar_8cpp.html#afa8227395e14c6feb008ba878fc7145a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_process_scalar_8cpp.html#aa5bc6fcd1aa55434c8c55f2f5ff68ed7", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_process_scalar_8cpp.html#aaf374f8a3bb50d810690cf3b2420d786", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_process_scalar_8cpp.html#ac865bf025fec3c6003d10ee521ddfa6f", null ],

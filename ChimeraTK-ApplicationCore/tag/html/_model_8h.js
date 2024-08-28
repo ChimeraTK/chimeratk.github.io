@@ -1,6 +1,7 @@
 var _model_8h =
 [
     [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ],
+    [ "NonOwningProxy", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy" ],
     [ "Proxy", "class_chimera_t_k_1_1_model_1_1_proxy.html", "class_chimera_t_k_1_1_model_1_1_proxy" ],
     [ "RootProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html", "class_chimera_t_k_1_1_model_1_1_root_proxy" ],
     [ "ModuleGroupProxy", "class_chimera_t_k_1_1_model_1_1_module_group_proxy.html", "class_chimera_t_k_1_1_model_1_1_module_group_proxy" ],
@@ -9,6 +10,7 @@ var _model_8h =
     [ "DeviceModuleProxy", "class_chimera_t_k_1_1_model_1_1_device_module_proxy.html", "class_chimera_t_k_1_1_model_1_1_device_module_proxy" ],
     [ "ProcessVariableProxy", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy" ],
     [ "DirectoryProxy", "class_chimera_t_k_1_1_model_1_1_directory_proxy.html", "class_chimera_t_k_1_1_model_1_1_directory_proxy" ],
+    [ "NonOwningProxy", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html", "class_chimera_t_k_1_1_model_1_1_non_owning_proxy" ],
     [ "VertexProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties" ],
     [ "InvalidProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_invalid_properties.html", null ],
     [ "RootProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties" ],

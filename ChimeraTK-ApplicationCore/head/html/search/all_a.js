@@ -8,10 +8,11 @@ var searchData=
   ['limitvalue_741',['LimitValue',['../struct_chimera_t_k_1_1_limit_value.html',1,'ChimeraTK']]],
   ['limitvalue_2eh_742',['LimitValue.h',['../_limit_value_8h.html',1,'']]],
   ['limitvaluemodulebase_743',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],
-  ['logger_744',['Logger',['../class_chimera_t_k_1_1_logger.html',1,'ChimeraTK::Logger'],['../class_chimera_t_k_1_1_application_module.html#a8db8d8b0dd0413b48acb928552381336',1,'ChimeraTK::ApplicationModule::logger()'],['../namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580',1,'ChimeraTK::logger()']]],
-  ['logger_2ecc_745',['Logger.cc',['../_logger_8cc.html',1,'']]],
-  ['logger_2eh_746',['Logger.h',['../_logger_8h.html',1,'']]],
-  ['lookup_747',['lookup',['../class_chimera_t_k_1_1_module_tree.html#a8c80bdc300a82224ca483452febf0fdd',1,'ChimeraTK::ModuleTree']]],
-  ['lostdatainlasttrigger_748',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]],
-  ['lower_749',['lower',['../struct_test_application2.html#aff0a200a0d96ca0738742ae3daffae61',1,'TestApplication2']]]
+  ['lock_744',['lock',['../class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html#a09ceebfc1317cf2f9ede23e69392065c',1,'ChimeraTK::Model::NonOwningProxy']]],
+  ['logger_745',['Logger',['../class_chimera_t_k_1_1_logger.html',1,'ChimeraTK::Logger'],['../class_chimera_t_k_1_1_application_module.html#a8db8d8b0dd0413b48acb928552381336',1,'ChimeraTK::ApplicationModule::logger()'],['../namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580',1,'ChimeraTK::logger()']]],
+  ['logger_2ecc_746',['Logger.cc',['../_logger_8cc.html',1,'']]],
+  ['logger_2eh_747',['Logger.h',['../_logger_8h.html',1,'']]],
+  ['lookup_748',['lookup',['../class_chimera_t_k_1_1_module_tree.html#a8c80bdc300a82224ca483452febf0fdd',1,'ChimeraTK::ModuleTree']]],
+  ['lostdatainlasttrigger_749',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]],
+  ['lower_750',['lower',['../struct_test_application2.html#aff0a200a0d96ca0738742ae3daffae61',1,'TestApplication2']]]
 ];

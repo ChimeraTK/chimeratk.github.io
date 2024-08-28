@@ -37,7 +37,6 @@ var test_initial_value_spec_d8_8cc =
     [ "Test6BInitialValueEceptionDummy", "struct_test6_b_initial_value_eception_dummy.html", "struct_test6_b_initial_value_eception_dummy" ],
     [ "Test6CDummyApplication", "struct_test6_c_dummy_application.html", "struct_test6_c_dummy_application" ],
     [ "Test6CInitialValueEceptionDummy", "struct_test6_c_initial_value_eception_dummy.html", "struct_test6_c_initial_value_eception_dummy" ],
-    [ "BOOST_NO_EXCEPTIONS", "test_initial_value_spec_d8_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_initial_value_spec_d8_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "DeviceTestApplicationTypes", "test_initial_value_spec_d8_8cc.html#a29e1f7095de0c61c9ad4da6b22d4b2ad", null ],
     [ "TestInputTypes", "test_initial_value_spec_d8_8cc.html#aeeaa333375ad8dbfb0f4b8bf3abb4215", null ],

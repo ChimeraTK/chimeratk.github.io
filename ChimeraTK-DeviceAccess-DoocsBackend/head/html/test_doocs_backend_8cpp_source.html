@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="eq__dummy_8h.html">eq_dummy.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;eq_client.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;doocs/EqCall.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/Device.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/MappedImage.h&gt;</span></div>
@@ -142,8 +142,8 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="stringliteral">&quot;(doocs:doocs://localhost:&quot;</span> + rpcNo() + <span class="stringliteral">&quot;/F/D/MYDUMMY?cacheFile=&quot;</span> + cacheFile2 + <span class="stringliteral">&quot;&amp;updateCache=1)&quot;</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// wait until server has started (both the update thread and the rpc thread)</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    EqCall eq;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    EqAdr ea;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    doocs::EqCall eq;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    doocs::EqAdr ea;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    doocs::EqData src, dst;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ea.adr(<span class="stringliteral">&quot;doocs://localhost:&quot;</span> + rpcNo() + <span class="stringliteral">&quot;/F/D/MYDUMMY/SOME_ZMQINT&quot;</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">while</span>(eq.get(&amp;ea, &amp;src, &amp;dst)) usleep(100000);</div>
@@ -1311,524 +1311,527 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;  server-&gt;lock();</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;  {</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>);</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    (void)std::async(std::launch::async, [=]() { server-&gt;unlock(); });</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;  } <span class="comment">// should not block here on instance destruction.</span></div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;}</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160; </div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160; </div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;<span class="keywordtype">bool</span> file_exists(<span class="keyword">const</span> std::string&amp; name) {</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;  std::ifstream f(name.c_str());</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;  <span class="keywordflow">return</span> f.good();</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;}</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160; </div>
-<div class="line"><a name="l01236"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a131a40ca808351e4d1fd3d976894a9c3"> 1236</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheFileCreation) {</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;  {</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160; </div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <span class="keyword">auto</span> d1 = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    <span class="keyword">auto</span> d2 = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>);</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    d.open();</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    usleep(10000); <span class="comment">// give it a chance to start filling the catalogue</span></div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    <span class="comment">// should not block here on instance destruction.</span></div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;  }</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;  server-&gt;unlock();</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;}</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160; </div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160; </div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;<span class="keywordtype">bool</span> file_exists(<span class="keyword">const</span> std::string&amp; name) {</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;  std::ifstream f(name.c_str());</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;  <span class="keywordflow">return</span> f.good();</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;}</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160; </div>
+<div class="line"><a name="l01239"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a131a40ca808351e4d1fd3d976894a9c3"> 1239</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheFileCreation) {</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;  {</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160; </div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="keyword">auto</span> discardedCatalogue = d1.getRegisterCatalogue();</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    discardedCatalogue = d2.getRegisterCatalogue();</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="keyword">auto</span> d1 = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    <span class="keyword">auto</span> d2 = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>);</div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160; </div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;  }</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>);</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;}</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160; </div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160; </div>
-<div class="line"><a name="l01256"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11"> 1256</a></span>&#160;std::time_t <a class="code" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a>(<span class="keyword">const</span> std::string&amp; filename) {</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;  std::string xml = <span class="stringliteral">&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;\n&quot;</span></div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;                    <span class="stringliteral">&quot;&lt;catalogue version=\&quot;1.0\&quot;&gt;&quot;</span></div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;                    <span class="stringliteral">&quot;  &lt;register&gt;\n&quot;</span></div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;                    <span class="stringliteral">&quot;    &lt;name&gt;/DUMMY&lt;/name&gt;\n&quot;</span></div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;                    <span class="stringliteral">&quot;    &lt;length&gt;1&lt;/length&gt;\n&quot;</span></div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;                    <span class="stringliteral">&quot;    &lt;access_mode&gt;&lt;/access_mode&gt;\n&quot;</span></div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;                    <span class="stringliteral">&quot;    &lt;doocs_type_id&gt;1&lt;/doocs_type_id&gt;\n&quot;</span> <span class="comment">// DATA_TEXT</span></div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                    <span class="stringliteral">&quot;    &lt;!--doocs id: INT--&gt;\n&quot;</span></div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;                    <span class="stringliteral">&quot;  &lt;/register&gt;\n&quot;</span></div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;                    <span class="stringliteral">&quot;&lt;/catalogue&gt;\n&quot;</span>;</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;  std::ofstream o(filename);</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;  o &lt;&lt; xml;</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;  o.close();</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160; </div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;  <span class="keyword">auto</span> creation_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160; </div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;  <span class="comment">// boost::filesystem::last_write_time timestamp resolution is not high</span></div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;  <span class="comment">// enough to pick modifications without this wait.</span></div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;  std::this_thread::sleep_for(std::chrono::seconds(1));</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;  <span class="keywordflow">return</span> creation_time;</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;}</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160; </div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160; </div>
-<div class="line"><a name="l01281"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a5d56c66d6ab38ec480473578aa84666c"> 1281</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheXmlReplacement) {</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;  <span class="comment">// test local copy is replaced when catalogue fetching is complete.</span></div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;  <span class="keyword">auto</span> creation_time = <a class="code" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a>(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;  {</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>);</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;    std::atomic&lt;bool&gt; cancelTimeOutTask{<span class="keyword">false</span>};</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160; </div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    std::future&lt;void&gt; timeoutTask = std::async(std::launch::async, [&amp;]() {</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count = 60;</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;      <span class="keywordflow">while</span>(count &gt; 0 &amp;&amp; not cancelTimeOutTask) {</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;        std::this_thread::sleep_for(std::chrono::seconds(1));</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;        count--;</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;      }</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;    });</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160; </div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    <span class="keyword">auto</span> hasTimedOut = [&amp;]() { <span class="keywordflow">return</span> timeoutTask.wait_for(std::chrono::seconds(0)) == std::future_status::ready; };</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160; </div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    <span class="keyword">auto</span> modification_time = creation_time;</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;    <span class="keywordflow">while</span>((modification_time &lt;= creation_time) &amp;&amp; not hasTimedOut()) {</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;      modification_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;      std::this_thread::sleep_for(std::chrono::seconds(2));</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    }</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    <span class="comment">// cancel timeout task</span></div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    cancelTimeOutTask = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    BOOST_TEST(modification_time &gt; creation_time); <span class="comment">// given the percondition,</span></div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                                                   <span class="comment">// this should fail if loop</span></div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                                                   <span class="comment">// times out.</span></div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;  }</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;}</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160; </div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160; </div>
-<div class="line"><a name="l01314"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a73e8809a934096f62c375e7ed911f1e3"> 1314</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheXmlReplacementBehaviorOnFailure) {</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;  <span class="comment">// local copy unchanged if app exits before.</span></div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;  <span class="keyword">auto</span> creation_time = <a class="code" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a>(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;  <span class="keyword">auto</span> server = find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>);</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;  server-&gt;lock();</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;  { <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>); }</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;  server-&gt;unlock();</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;  <span class="keyword">auto</span> modification_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;  BOOST_TEST(creation_time == modification_time);</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;}</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160; </div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160; </div>
-<div class="line"><a name="l01328"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#aa3508d0088bc5a8b00a6094422dca379"> 1328</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testAccessorForCachedMode) {</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;  createCacheFileFromCdd(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;  <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160; </div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 120);</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;  TwoDRegisterAccessor&lt;int32_t&gt; acc_someInt_as_int(d.getTwoDRegisterAccessor&lt;int32_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNChannels() == 1);</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNElementsPerChannel() == 1);</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160; </div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;  d.open();</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160; </div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;  acc_someInt_as_int.read();</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;  BOOST_TEST(acc_someInt_as_int[0][0] == 120);</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    <span class="keyword">auto</span> discardedCatalogue = d1.getRegisterCatalogue();</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    discardedCatalogue = d2.getRegisterCatalogue();</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160; </div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>) == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    BOOST_TEST(file_exists(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>) == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;  }</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>);</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;}</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160; </div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160; </div>
+<div class="line"><a name="l01259"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11"> 1259</a></span>&#160;std::time_t <a class="code" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a>(<span class="keyword">const</span> std::string&amp; filename) {</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  std::string xml = <span class="stringliteral">&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;\n&quot;</span></div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;                    <span class="stringliteral">&quot;&lt;catalogue version=\&quot;1.0\&quot;&gt;&quot;</span></div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;                    <span class="stringliteral">&quot;  &lt;register&gt;\n&quot;</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;                    <span class="stringliteral">&quot;    &lt;name&gt;/DUMMY&lt;/name&gt;\n&quot;</span></div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                    <span class="stringliteral">&quot;    &lt;length&gt;1&lt;/length&gt;\n&quot;</span></div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;                    <span class="stringliteral">&quot;    &lt;access_mode&gt;&lt;/access_mode&gt;\n&quot;</span></div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;                    <span class="stringliteral">&quot;    &lt;doocs_type_id&gt;1&lt;/doocs_type_id&gt;\n&quot;</span> <span class="comment">// DATA_TEXT</span></div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;                    <span class="stringliteral">&quot;    &lt;!--doocs id: INT--&gt;\n&quot;</span></div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;                    <span class="stringliteral">&quot;  &lt;/register&gt;\n&quot;</span></div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;                    <span class="stringliteral">&quot;&lt;/catalogue&gt;\n&quot;</span>;</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;  std::ofstream o(filename);</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;  o &lt;&lt; xml;</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;  o.close();</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160; </div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;  <span class="keyword">auto</span> creation_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160; </div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;  <span class="comment">// boost::filesystem::last_write_time timestamp resolution is not high</span></div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;  <span class="comment">// enough to pick modifications without this wait.</span></div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;  std::this_thread::sleep_for(std::chrono::seconds(1));</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;  <span class="keywordflow">return</span> creation_time;</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;}</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160; </div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160; </div>
+<div class="line"><a name="l01284"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a5d56c66d6ab38ec480473578aa84666c"> 1284</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheXmlReplacement) {</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;  <span class="comment">// test local copy is replaced when catalogue fetching is complete.</span></div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;  <span class="keyword">auto</span> creation_time = <a class="code" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a>(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;  {</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>);</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;    std::atomic&lt;bool&gt; cancelTimeOutTask{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160; </div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;    std::future&lt;void&gt; timeoutTask = std::async(std::launch::async, [&amp;]() {</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count = 60;</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;      <span class="keywordflow">while</span>(count &gt; 0 &amp;&amp; not cancelTimeOutTask) {</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        std::this_thread::sleep_for(std::chrono::seconds(1));</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        count--;</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;      }</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;    });</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160; </div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;    <span class="keyword">auto</span> hasTimedOut = [&amp;]() { <span class="keywordflow">return</span> timeoutTask.wait_for(std::chrono::seconds(0)) == std::future_status::ready; };</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160; </div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <span class="keyword">auto</span> modification_time = creation_time;</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    <span class="keywordflow">while</span>((modification_time &lt;= creation_time) &amp;&amp; not hasTimedOut()) {</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;      modification_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;      std::this_thread::sleep_for(std::chrono::seconds(2));</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    }</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <span class="comment">// cancel timeout task</span></div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    cancelTimeOutTask = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    BOOST_TEST(modification_time &gt; creation_time); <span class="comment">// given the percondition,</span></div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                                                   <span class="comment">// this should fail if loop</span></div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                                                   <span class="comment">// times out.</span></div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;  }</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;}</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160; </div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160; </div>
+<div class="line"><a name="l01317"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a73e8809a934096f62c375e7ed911f1e3"> 1317</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testCacheXmlReplacementBehaviorOnFailure) {</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;  <span class="comment">// local copy unchanged if app exits before.</span></div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;  <span class="keyword">auto</span> creation_time = <a class="code" href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a>(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;  <span class="keyword">auto</span> server = find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>);</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;  server-&gt;lock();</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;  { <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>); }</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;  server-&gt;unlock();</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;  <span class="keyword">auto</span> modification_time = boost::filesystem::last_write_time(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;  BOOST_TEST(creation_time == modification_time);</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;}</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160; </div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160; </div>
+<div class="line"><a name="l01331"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#aa3508d0088bc5a8b00a6094422dca379"> 1331</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testAccessorForCachedMode) {</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;  createCacheFileFromCdd(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;  <span class="keyword">auto</span> d = ChimeraTK::Device(<a class="code" href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a>);</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160; </div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;  DoocsServerTestHelper::doocsSet(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>, 120);</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;  TwoDRegisterAccessor&lt;int32_t&gt; acc_someInt_as_int(d.getTwoDRegisterAccessor&lt;int32_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>));</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNChannels() == 1);</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;  BOOST_TEST(acc_someInt_as_int.getNElementsPerChannel() == 1);</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160; </div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;  d.open();</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160; </div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;  acc_someInt_as_int[0][0] = 50;</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;  acc_someInt_as_int.write();</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 50);</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>);</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;}</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160; </div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160; </div>
-<div class="line"><a name="l01350"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a812d46eda0e4c06432ddd46bf73e4a40"> 1350</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testBlankXMLThrow) {</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;  std::string xml = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;  std::ofstream o(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;  o &lt;&lt; xml;</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;  o.close();</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160; </div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;  BOOST_CHECK_THROW(ChimeraTK::Device x(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;}</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160; </div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160; </div>
-<div class="line"><a name="l01362"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#ab885311ff7e611cc29b73398bbbea7e8"> 1362</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testEventId) {</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;  ChimeraTK::Device device;</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;  <span class="keyword">auto</span> catalogue = device.getRegisterCatalogue();</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160; </div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;  acc_someInt_as_int.read();</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;  BOOST_TEST(acc_someInt_as_int[0][0] == 120);</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160; </div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;  acc_someInt_as_int[0][0] = 50;</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;  acc_someInt_as_int.write();</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;int&gt;(<span class="stringliteral">&quot;//MYDUMMY/SOME_INT&quot;</span>) == 50);</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ad1e3edcb389a28766f65b972c63566d8">DoocsLauncher::cacheFile1</a>);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;}</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160; </div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160; </div>
+<div class="line"><a name="l01353"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a812d46eda0e4c06432ddd46bf73e4a40"> 1353</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testBlankXMLThrow) {</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;  std::string xml = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;  std::ofstream o(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;  o &lt;&lt; xml;</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;  o.close();</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160; </div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;  BOOST_CHECK_THROW(ChimeraTK::Device x(<a class="code" href="class_doocs_launcher.html#a6500fbc8d4c7b81268d49e5539fb9c43">DoocsLauncher::DoocsServer2_cached</a>), ChimeraTK::logic_error);</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;  deleteFile(<a class="code" href="class_doocs_launcher.html#ae8deed0bd2bbe5afd0c8d520802bb213">DoocsLauncher::cacheFile2</a>);</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;}</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160; </div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160; </div>
+<div class="line"><a name="l01365"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#ab885311ff7e611cc29b73398bbbea7e8"> 1365</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testEventId) {</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;  ChimeraTK::Device device;</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;  <span class="keyword">auto</span> catalogue = device.getRegisterCatalogue();</div>
 <div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160; </div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;  <span class="comment">// Get EqFct to access the mp counter for ZMQ</span></div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160; </div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;  <span class="comment">// device info string</span></div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;  <span class="comment">// Get EqFct to access the mp counter for ZMQ</span></div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;  <span class="keywordflow">for</span>(std::string param : {<span class="stringliteral">&quot;SOME_INT&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT&quot;</span>, <span class="stringliteral">&quot;SOME_BIT&quot;</span>, <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>,</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;          <span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>, <span class="stringliteral">&quot;SOME_IIII&quot;</span>, <span class="stringliteral">&quot;SOME_IFFF&quot;</span>}) {</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/&quot;</span> + param + <span class="stringliteral">&quot;/eventId&quot;</span>);</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    BOOST_TEST(catalogue.hasRegister(path));</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160; </div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    <span class="keyword">auto</span> regInfo = catalogue.getRegister(path);</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    BOOST_TEST(regInfo.isReadable());</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    BOOST_TEST(!regInfo.isWriteable());</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfElements(), 1);</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfChannels(), 1);</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfDimensions(), 0);</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    <span class="keyword">auto</span> descriptor = regInfo.getDataDescriptor();</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    BOOST_TEST(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    BOOST_CHECK_EQUAL(descriptor.nDigits(), 20);</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    BOOST_TEST(descriptor.isSigned());</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    BOOST_TEST(descriptor.isIntegral());</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160; </div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    acc1.read();</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc1), eqfct-&gt;counter - 1);</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadOnly(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    BOOST_CHECK_EQUAL(acc1.isWriteable(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadable(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;    BOOST_CHECK_THROW(acc1.write(), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160; </div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;std::string&gt;(path);</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    acc2.read();</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2), std::to_string(eqfct-&gt;counter - 1));</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160; </div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    <span class="comment">// auto acc3 = device.getScalarRegisterAccessor&lt;uint8_t&gt;(path);</span></div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    <span class="comment">// BOOST_CHECK_THROW(acc3.read(), boost::numeric::positive_overflow);</span></div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;  }</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160; </div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  <span class="comment">// Check that we get the accessor for some unsupported type as well</span></div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  <span class="comment">// Whether or not eventId retuns something usefull here is completely undefined</span></div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/UNSUPPORTED_DATA_TYPE/eventId&quot;</span>);</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;  BOOST_TEST(acc1.isInitialised());</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160; </div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;  <span class="comment">// device info string</span></div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160; </div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;  <span class="keywordflow">for</span>(std::string param : {<span class="stringliteral">&quot;SOME_INT&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT&quot;</span>, <span class="stringliteral">&quot;SOME_BIT&quot;</span>, <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>,</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;          <span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>, <span class="stringliteral">&quot;SOME_IIII&quot;</span>, <span class="stringliteral">&quot;SOME_IFFF&quot;</span>}) {</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/&quot;</span> + param + <span class="stringliteral">&quot;/eventId&quot;</span>);</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    BOOST_TEST(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160; </div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    <span class="keyword">auto</span> regInfo = catalogue.getRegister(path);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    BOOST_TEST(regInfo.isReadable());</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    BOOST_TEST(!regInfo.isWriteable());</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfElements(), 1);</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfChannels(), 1);</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfDimensions(), 0);</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    <span class="keyword">auto</span> descriptor = regInfo.getDataDescriptor();</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    BOOST_TEST(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    BOOST_CHECK_EQUAL(descriptor.nDigits(), 20);</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    BOOST_TEST(descriptor.isSigned());</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    BOOST_TEST(descriptor.isIntegral());</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160; </div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    acc1.read();</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc1), eqfct-&gt;counter - 1);</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadOnly(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;    BOOST_CHECK_EQUAL(acc1.isWriteable(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadable(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    BOOST_CHECK_THROW(acc1.write(), ChimeraTK::logic_error);</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160; </div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;    <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;std::string&gt;(path);</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    acc2.read();</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2), std::to_string(eqfct-&gt;counter - 1));</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160; </div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    <span class="comment">// auto acc3 = device.getScalarRegisterAccessor&lt;uint8_t&gt;(path);</span></div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    <span class="comment">// BOOST_CHECK_THROW(acc3.read(), boost::numeric::positive_overflow);</span></div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  }</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160; </div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;  <span class="comment">// Check that we get the accessor for some unsupported type as well</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;  <span class="comment">// Whether or not eventId retuns something usefull here is completely undefined</span></div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/UNSUPPORTED_DATA_TYPE/eventId&quot;</span>);</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;  BOOST_TEST(acc1.isInitialised());</div>
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160; </div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;  <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT/eventId&quot;</span>);</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;  BOOST_TEST(catalogue.hasRegister(path));</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc2), eqfct-&gt;counter - 1);</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;  BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;  BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160; </div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;  device.close();</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;}</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160; </div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;  <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT/eventId&quot;</span>);</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;  BOOST_TEST(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc2), eqfct-&gt;counter - 1);</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;  BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;  BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
 <div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160; </div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160; </div>
-<div class="line"><a name="l01436"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#aa2b56760321300ad0fb6c2670b833ebe"> 1436</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testTimeStamp) {</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;  ChimeraTK::Device device;</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;  <span class="keyword">auto</span> catalogue = device.getRegisterCatalogue();</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160; </div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;  device.close();</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;}</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160; </div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160; </div>
+<div class="line"><a name="l01439"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#aa2b56760321300ad0fb6c2670b833ebe"> 1439</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testTimeStamp) {</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;  ChimeraTK::Device device;</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;  <span class="keyword">auto</span> catalogue = device.getRegisterCatalogue();</div>
 <div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160; </div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;  <span class="comment">// Get EqFct to access the mp counter for ZMQ</span></div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
 <div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160; </div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;  <span class="comment">// device info string</span></div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;  <span class="comment">// Get EqFct to access the mp counter for ZMQ</span></div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
 <div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160; </div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;  <span class="keywordflow">for</span>(std::string param : {<span class="stringliteral">&quot;SOME_INT&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT&quot;</span>, <span class="stringliteral">&quot;SOME_BIT&quot;</span>, <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>,</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;          <span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>, <span class="stringliteral">&quot;SOME_IIII&quot;</span>, <span class="stringliteral">&quot;SOME_IFFF&quot;</span>}) {</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/&quot;</span> + param + <span class="stringliteral">&quot;/timeStamp&quot;</span>);</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    BOOST_TEST(catalogue.hasRegister(path));</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160; </div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    <span class="keyword">auto</span> regInfo = catalogue.getRegister(path);</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    BOOST_TEST(regInfo.isReadable());</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    BOOST_TEST(!regInfo.isWriteable());</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfElements(), 1);</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfChannels(), 1);</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfDimensions(), 0);</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    <span class="keyword">auto</span> descriptor = regInfo.getDataDescriptor();</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    BOOST_TEST(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    BOOST_CHECK_EQUAL(descriptor.nDigits(), 20);</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    BOOST_TEST(descriptor.isSigned());</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    BOOST_TEST(descriptor.isIntegral());</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160; </div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;    <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    acc1.read();</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc1), eqfct-&gt;startTime - 1);</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadOnly(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    BOOST_CHECK_EQUAL(acc1.isWriteable(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadable(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;    BOOST_CHECK_THROW(acc1.write(), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160; </div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;    <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;std::string&gt;(path);</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;    acc2.read();</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2), std::to_string(eqfct-&gt;startTime - 1));</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;    BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;    BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160; </div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;    <span class="comment">// auto acc3 = device.getScalarRegisterAccessor&lt;uint8_t&gt;(path);</span></div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    <span class="comment">// BOOST_CHECK_THROW(acc3.read(), boost::numeric::positive_overflow);</span></div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;  }</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160; </div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;  <span class="comment">// Check that we get the accessor for some unsupported type as well</span></div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;  <span class="comment">// Whether or not eventId retuns something usefull here is completely undefined</span></div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/UNSUPPORTED_DATA_TYPE/timeStamp&quot;</span>);</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;  BOOST_TEST(acc1.isInitialised());</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160; </div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;  <span class="comment">// device info string</span></div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;  BOOST_TEST(device.readDeviceInfo() == <span class="stringliteral">&quot;DOOCS server address: doocs://localhost:&quot;</span> + <a class="code" href="class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher::rpc_no</a> + <span class="stringliteral">&quot;/F/D&quot;</span>);</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160; </div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;  <span class="keywordflow">for</span>(std::string param : {<span class="stringliteral">&quot;SOME_INT&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT&quot;</span>, <span class="stringliteral">&quot;SOME_BIT&quot;</span>, <span class="stringliteral">&quot;SOME_INT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SHORT_ARRAY&quot;</span>,</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;          <span class="stringliteral">&quot;SOME_LONG_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_FLOAT_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_DOUBLE_ARRAY&quot;</span>, <span class="stringliteral">&quot;SOME_SPECTRUM&quot;</span>, <span class="stringliteral">&quot;SOME_IIII&quot;</span>, <span class="stringliteral">&quot;SOME_IFFF&quot;</span>}) {</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/&quot;</span> + param + <span class="stringliteral">&quot;/timeStamp&quot;</span>);</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    BOOST_TEST(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160; </div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    <span class="keyword">auto</span> regInfo = catalogue.getRegister(path);</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    BOOST_TEST(regInfo.isReadable());</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;    BOOST_TEST(!regInfo.isWriteable());</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfElements(), 1);</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfChannels(), 1);</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    BOOST_CHECK_EQUAL(regInfo.getNumberOfDimensions(), 0);</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    <span class="keyword">auto</span> descriptor = regInfo.getDataDescriptor();</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    BOOST_TEST(descriptor.fundamentalType() == ChimeraTK::DataDescriptor::FundamentalType::numeric);</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;    BOOST_CHECK_EQUAL(descriptor.nDigits(), 20);</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;    BOOST_TEST(descriptor.isSigned());</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    BOOST_TEST(descriptor.isIntegral());</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160; </div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    acc1.read();</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc1), eqfct-&gt;startTime - 1);</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadOnly(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;    BOOST_CHECK_EQUAL(acc1.isWriteable(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;    BOOST_CHECK_EQUAL(acc1.isReadable(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;    BOOST_CHECK_THROW(acc1.write(), ChimeraTK::logic_error);</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160; </div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;std::string&gt;(path);</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;    acc2.read();</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2), std::to_string(eqfct-&gt;startTime - 1));</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;    BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;    BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160; </div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;    <span class="comment">// auto acc3 = device.getScalarRegisterAccessor&lt;uint8_t&gt;(path);</span></div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;    <span class="comment">// BOOST_CHECK_THROW(acc3.read(), boost::numeric::positive_overflow);</span></div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;  }</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160; </div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;  <span class="comment">// Check that we get the accessor for some unsupported type as well</span></div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;  <span class="comment">// Whether or not eventId retuns something usefull here is completely undefined</span></div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/UNSUPPORTED_DATA_TYPE/timeStamp&quot;</span>);</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;  BOOST_TEST(acc1.isInitialised());</div>
 <div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160; </div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;  <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT/timeStamp&quot;</span>);</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;  BOOST_TEST(catalogue.hasRegister(path));</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc2), eqfct-&gt;startTime - 1);</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;  BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;  BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160; </div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;  device.close();</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;}</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated</span></div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160; </div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;  <span class="keyword">auto</span> path = RegisterPath(<span class="stringliteral">&quot;MYDUMMY/SOME_ZMQINT/timeStamp&quot;</span>);</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;  BOOST_TEST(catalogue.hasRegister(path));</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;int64_t&gt;(path);</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(acc2), eqfct-&gt;startTime - 1);</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadOnly(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;  BOOST_CHECK_EQUAL(acc2.isWriteable(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;  BOOST_CHECK_EQUAL(acc2.isReadable(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;  BOOST_CHECK_THROW(acc2.write(), ChimeraTK::logic_error);</div>
 <div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160; </div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160; </div>
-<div class="line"><a name="l01510"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a8bd9202033f6e5ae4dea1695dd320716"> 1510</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testEventIdMapping) {</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;  ChimeraTK::Device device;</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;  <span class="keyword">auto</span> catalogue = device.getRegisterCatalogue();</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160; </div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>);</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>);</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;  <span class="keyword">auto</span> acc1_id = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT/eventId&quot;</span>);</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;  <span class="keyword">auto</span> acc2_id = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT/eventId&quot;</span>);</div>
-<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160; </div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;  <span class="comment">// Start with eventID 0 - even with that, we should not get VersionNumber{nullptr}</span></div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;  <span class="keyword">auto</span> <span class="keywordtype">id</span> = eqfct-&gt;<a class="code" href="classeq__dummy.html#a2d1cc1d49a8c5b47120606630e44ae1c">counter</a>;</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;  eqfct-&gt;counter = 0;</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160; </div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated to 0 (before reading anything, i.e.</span></div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;  <span class="comment">// before having id in the EventID mapper</span></div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160; </div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;  acc2_id.read();</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160; </div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;  BOOST_TEST(acc1.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;  BOOST_TEST(acc2.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;  <span class="comment">// notice: The version numbers for acc1 and acc2 are not the same, and also</span></div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;  <span class="comment">// those of acc1_id and acc2_id  do not match any of them. Data with eventId 0 cannot be correlated at all.</span></div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;  BOOST_TEST(acc1_id == 0);</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;  BOOST_TEST(acc2_id == 0);</div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160; </div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;  eqfct-&gt;counter = id;</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160; </div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated. As it was not in the mapper yet,</span></div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;  <span class="comment">// the according VersionNumber will be larger that the ones from the last reads with eventID 0, so the</span></div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;  <span class="comment">// correlation works. (see further test with eventID 0 at the end of the sequence).</span></div>
-<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160; </div>
-<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;  acc2_id.read();</div>
-<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160; </div>
-<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc2.getVersionNumber(),</div>
-<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;  device.close();</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;}</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160; </div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160; </div>
+<div class="line"><a name="l01513"></a><span class="lineno"><a class="line" href="test_doocs_backend_8cpp.html#a8bd9202033f6e5ae4dea1695dd320716"> 1513</a></span>&#160;<a class="code" href="test_doocs_backend_8cpp.html#aac554c85cc71d824ad4725b087bbc5d5">BOOST_AUTO_TEST_CASE</a>(testEventIdMapping) {</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;  ChimeraTK::Device device;</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;  device.open(<a class="code" href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a>);</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;  <span class="keyword">auto</span> catalogue = device.getRegisterCatalogue();</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;  <span class="keyword">auto</span> eqfct = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classeq__dummy.html">eq_dummy</a>*<span class="keyword">&gt;</span>(find_device(<span class="stringliteral">&quot;MYDUMMY&quot;</span>));</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160; </div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;  <span class="keyword">auto</span> acc1 = device.getScalarRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT&quot;</span>);</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;  <span class="keyword">auto</span> acc2 = device.getScalarRegisterAccessor&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT&quot;</span>);</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;  <span class="keyword">auto</span> acc1_id = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_INT/eventId&quot;</span>);</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;  <span class="keyword">auto</span> acc2_id = device.getScalarRegisterAccessor&lt;int64_t&gt;(<span class="stringliteral">&quot;MYDUMMY/SOME_FLOAT/eventId&quot;</span>);</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160; </div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;  <span class="comment">// Start with eventID 0 - even with that, we should not get VersionNumber{nullptr}</span></div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;  <span class="keyword">auto</span> <span class="keywordtype">id</span> = eqfct-&gt;<a class="code" href="classeq__dummy.html#a2d1cc1d49a8c5b47120606630e44ae1c">counter</a>;</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;  eqfct-&gt;counter = 0;</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160; </div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated to 0 (before reading anything, i.e.</span></div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;  <span class="comment">// before having id in the EventID mapper</span></div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160; </div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;  acc1_id.read();</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;  acc2_id.read();</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160; </div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;  BOOST_TEST(acc1.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;  BOOST_TEST(acc2.getVersionNumber() != ChimeraTK::VersionNumber{nullptr});</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;  <span class="comment">// notice: The version numbers for acc1 and acc2 are not the same, and also</span></div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;  <span class="comment">// those of acc1_id and acc2_id  do not match any of them. Data with eventId 0 cannot be correlated at all.</span></div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;  BOOST_TEST(acc1_id == 0);</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;  BOOST_TEST(acc2_id == 0);</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160; </div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;  eqfct-&gt;counter = id;</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160; </div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;  <span class="comment">// Run update once to have the ZMQ variable&#39;s mp number updated. As it was not in the mapper yet,</span></div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;  <span class="comment">// the according VersionNumber will be larger that the ones from the last reads with eventID 0, so the</span></div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;  <span class="comment">// correlation works. (see further test with eventID 0 at the end of the sequence).</span></div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160; </div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;  acc1_id.read();</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;  acc2_id.read();</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160; </div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc2.getVersionNumber(),</div>
 <div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()));</div>
-<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == acc2_id.getVersionNumber(),</div>
-<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2_id.getVersionNumber()));</div>
-<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;  BOOST_CHECK_EQUAL(acc2_id, <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160; </div>
-<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;  <span class="comment">// update() will set a new eventId</span></div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()));</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == acc2_id.getVersionNumber(),</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2_id.getVersionNumber()));</div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;  BOOST_CHECK_EQUAL(acc2_id, <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160; </div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;  <span class="comment">// After reading only one of the accessors, the version should now be different</span></div>
-<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() != acc2.getVersionNumber(),</div>
-<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should not be equal to &quot;</span> +</div>
-<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
-<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160; </div>
-<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;  <span class="comment">// After reading acc1 as well, they should match up now</span></div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc2.getVersionNumber(),</div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
-<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160; </div>
-<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;  <span class="comment">// Check consistency accros two different DOOCS backend instances. Right after opening, the spec B.1.2.1 kicks in and</span></div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;  <span class="comment">// prevents that the version numbers are consistent.</span></div>
-<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;  VersionNumber someVersionBeforeOpeningSecondDevice;</div>
-<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;  ChimeraTK::Device device2;</div>
-<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;  device2.open(<a class="code" href="class_doocs_launcher.html#af1c287e6c089a5f389c821f615b96b4c">DoocsLauncher::DoocsServer2</a>);</div>
-<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;  <span class="keyword">auto</span> acc3 = device2.getScalarRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SOME_INT&quot;</span>);</div>
-<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;  acc3.read();</div>
-<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; someVersionBeforeOpeningSecondDevice,</div>
-<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
-<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(someVersionBeforeOpeningSecondDevice));</div>
-<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160; </div>
-<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;  <span class="comment">// update() will set a new eventId, hence a new version number. Now that both backends are already open, numbers must</span></div>
-<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;  <span class="comment">// be consistent.</span></div>
-<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;  VersionNumber lastVersion = acc3.getVersionNumber();</div>
-<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; 3; ++i) {</div>
-<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;    DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;    acc2.read();</div>
-<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;    acc3.read();</div>
-<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;    BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; lastVersion,</div>
-<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;        <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
-<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;            <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastVersion));</div>
-<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;    BOOST_CHECK_MESSAGE(acc3.getVersionNumber() == acc2.getVersionNumber(),</div>
-<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;        <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;            <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
-<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;    lastVersion = acc3.getVersionNumber();</div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;  }</div>
-<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160; </div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;  <span class="comment">// Putting one device into an exception state and recovering it will break consistency for exactly one read again.</span></div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;  device2.setException(<span class="stringliteral">&quot;Test Exception&quot;</span>);</div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;  <span class="comment">// update() will set a new eventId</span></div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160; </div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;  <span class="comment">// After reading only one of the accessors, the version should now be different</span></div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() != acc2.getVersionNumber(),</div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should not be equal to &quot;</span> +</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160; </div>
+<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;  <span class="comment">// After reading acc1 as well, they should match up now</span></div>
+<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc2.getVersionNumber(),</div>
+<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
+<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160; </div>
+<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;  <span class="comment">// Check consistency accros two different DOOCS backend instances. Right after opening, the spec B.1.2.1 kicks in and</span></div>
+<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;  <span class="comment">// prevents that the version numbers are consistent.</span></div>
+<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;  VersionNumber someVersionBeforeOpeningSecondDevice;</div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;  ChimeraTK::Device device2;</div>
+<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;  device2.open(<a class="code" href="class_doocs_launcher.html#af1c287e6c089a5f389c821f615b96b4c">DoocsLauncher::DoocsServer2</a>);</div>
+<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;  <span class="keyword">auto</span> acc3 = device2.getScalarRegisterAccessor&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SOME_INT&quot;</span>);</div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;  acc3.read();</div>
+<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; someVersionBeforeOpeningSecondDevice,</div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
+<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(someVersionBeforeOpeningSecondDevice));</div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160; </div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;  <span class="comment">// update() will set a new eventId, hence a new version number. Now that both backends are already open, numbers must</span></div>
+<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;  <span class="comment">// be consistent.</span></div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;  VersionNumber lastVersion = acc3.getVersionNumber();</div>
+<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; 3; ++i) {</div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;    DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;    acc2.read();</div>
+<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;    acc3.read();</div>
+<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;    BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; lastVersion,</div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;        <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;            <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastVersion));</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;    BOOST_CHECK_MESSAGE(acc3.getVersionNumber() == acc2.getVersionNumber(),</div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;        <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;            <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    lastVersion = acc3.getVersionNumber();</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;  }</div>
 <div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160; </div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;  <span class="comment">// device being in exception state should not affect the first device</span></div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() &gt; lastVersion,</div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastVersion));</div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;  lastVersion = acc2.getVersionNumber();</div>
-<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160; </div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;  <span class="comment">// recover second device</span></div>
-<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;  someVersionBeforeOpeningSecondDevice = {};</div>
-<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;  device2.open();</div>
-<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;  acc3.read();</div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; someVersionBeforeOpeningSecondDevice,</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(someVersionBeforeOpeningSecondDevice));</div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160; </div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;  <span class="comment">// next update: numbers must be consistent again</span></div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;  acc3.read();</div>
-<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; lastVersion,</div>
-<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
-<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastVersion));</div>
-<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() == acc2.getVersionNumber(),</div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
-<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;  lastVersion = acc3.getVersionNumber();</div>
-<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160; </div>
-<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;  <span class="comment">//+++++++++++++++++++++++++++++++++</span></div>
-<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;  <span class="comment">// Check out-of-order updates</span></div>
-<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;  <span class="comment">//+++++++++++++++++++++++++++++++++</span></div>
-<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;  <span class="comment">// We use acc3 from device2 to fill two events in normal order, then read the two events in inverse order on acc1</span></div>
-<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;  <span class="comment">// and acc2 of device1.</span></div>
-<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;  <span class="keyword">auto</span> id1 = eqfct-&gt;counter; <span class="comment">// eqfct-&gt;counter gets incremented at the end of update()...</span></div>
-<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;  acc3.read();</div>
-<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;  <span class="keyword">auto</span> ver1 = acc3.getVersionNumber(); <span class="comment">// this is the version number matching id1</span></div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;  <span class="comment">// Putting one device into an exception state and recovering it will break consistency for exactly one read again.</span></div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  device2.setException(<span class="stringliteral">&quot;Test Exception&quot;</span>);</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160; </div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  <span class="comment">// device being in exception state should not affect the first device</span></div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() &gt; lastVersion,</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastVersion));</div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;  lastVersion = acc2.getVersionNumber();</div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160; </div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;  <span class="comment">// recover second device</span></div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;  someVersionBeforeOpeningSecondDevice = {};</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;  device2.open();</div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;  acc3.read();</div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; someVersionBeforeOpeningSecondDevice,</div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(someVersionBeforeOpeningSecondDevice));</div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160; </div>
+<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;  <span class="comment">// next update: numbers must be consistent again</span></div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;  acc3.read();</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() &gt; lastVersion,</div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be greater than &quot;</span> +</div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastVersion));</div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;  BOOST_CHECK_MESSAGE(acc3.getVersionNumber() == acc2.getVersionNumber(),</div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc3.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()));</div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;  lastVersion = acc3.getVersionNumber();</div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160; </div>
+<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;  <span class="comment">//+++++++++++++++++++++++++++++++++</span></div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;  <span class="comment">// Check out-of-order updates</span></div>
+<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;  <span class="comment">//+++++++++++++++++++++++++++++++++</span></div>
+<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;  <span class="comment">// We use acc3 from device2 to fill two events in normal order, then read the two events in inverse order on acc1</span></div>
+<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;  <span class="comment">// and acc2 of device1.</span></div>
+<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;  <span class="keyword">auto</span> id1 = eqfct-&gt;counter; <span class="comment">// eqfct-&gt;counter gets incremented at the end of update()...</span></div>
 <div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
 <div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;  acc3.read();</div>
-<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;  <span class="keyword">auto</span> ver2 = acc3.getVersionNumber(); <span class="comment">// this is the version number matching id2</span></div>
-<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160; </div>
-<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == ver2,</div>
-<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver2));</div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;  BOOST_TEST(acc1.dataValidity() == DataValidity::ok);</div>
-<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160; </div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;  eqfct-&gt;counter = id1;</div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;  <span class="keyword">auto</span> ver1 = acc3.getVersionNumber(); <span class="comment">// this is the version number matching id1</span></div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;  acc3.read();</div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;  <span class="keyword">auto</span> ver2 = acc3.getVersionNumber(); <span class="comment">// this is the version number matching id2</span></div>
+<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160; </div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == ver2,</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver2));</div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;  BOOST_TEST(acc1.dataValidity() == DataValidity::ok);</div>
 <div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160; </div>
-<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == ver1,</div>
-<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver1));</div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  BOOST_TEST(acc2.dataValidity() == DataValidity::ok);</div>
-<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160; </div>
-<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;  <span class="comment">// backwards going eventId on same accessor does not change VersionNumber. Data validity stays ok</span></div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == ver2,</div>
-<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver2));</div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;  BOOST_TEST(acc1.dataValidity() == DataValidity::ok);</div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160; </div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;  <span class="comment">//++++++++++++++++++++++++++++++++++++++++++++++</span></div>
-<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;  <span class="comment">// Check eventID 0 mixed with regular updates</span></div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;  <span class="comment">//++++++++++++++++++++++++++++++++++++++++++++++</span></div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;  <span class="comment">// first do two update so we get out of the out-of-order sequence</span></div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;  DoocsServerTestHelper::</div>
-<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;      runUpdate(); <span class="comment">// after the first update we are back to ID 2 from above. Just get a new one again..</span></div>
-<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160; </div>
-<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;  <span class="keyword">auto</span> lastRegularAcc1Version = acc1.getVersionNumber();</div>
-<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;  int64_t lastRegularEventId = acc1_id;</div>
-<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()));</div>
-<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160; </div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;  <span class="comment">// now process some data with event ID 0</span></div>
-<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;  <span class="keyword">auto</span> idAfterZero = eqfct-&gt;counter; <span class="comment">// the id that would have been given out</span></div>
-<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;  eqfct-&gt;counter = 0;</div>
-<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160; </div>
-<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;  <span class="comment">// the version number increases with event ID 0</span></div>
-<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;  <span class="keyword">auto</span> acc1VersionForId0 = acc1.getVersionNumber();</div>
-<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;  <span class="keyword">auto</span> acc1_idVersionForId0 = acc1_id.getVersionNumber();</div>
-<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;  BOOST_TEST(acc1.getVersionNumber() &gt; lastRegularAcc1Version);</div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;  BOOST_TEST(acc1_id.getVersionNumber() &gt; lastRegularAcc1Version);</div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, 0);</div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160; </div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;  <span class="comment">// Now send the same eventID again as we had it before the 0 (a new version has already been tested in the start</span></div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;  <span class="comment">// sequence, where id 0 was the first one to be received)</span></div>
-<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;  eqfct-&gt;counter = lastRegularEventId;</div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
-<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160; </div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1VersionForId0, <span class="comment">// version has not changed</span></div>
-<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1VersionForId0));</div>
-<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;  BOOST_CHECK_MESSAGE(acc1_id.getVersionNumber() == acc1_idVersionForId0, <span class="comment">// version has not changed</span></div>
-<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_idVersionForId0));</div>
-<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, lastRegularEventId); <span class="comment">// the data content of acc1_id changed -&gt; we lost the consistency</span></div>
-<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160; </div>
-<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;  <span class="comment">// acc2 has not seen the id 0 and still is consistent</span></div>
-<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;  acc2.read();</div>
-<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;  acc2_id.read();</div>
-<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == lastRegularAcc1Version, <span class="comment">// version has not changed</span></div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastRegularAcc1Version));</div>
-<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;  BOOST_CHECK_MESSAGE(acc2_id.getVersionNumber() == lastRegularAcc1Version, <span class="comment">// version has not changed</span></div>
-<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2_id.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;  eqfct-&gt;counter = id1;</div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160; </div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == ver1,</div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver1));</div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;  BOOST_TEST(acc2.dataValidity() == DataValidity::ok);</div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160; </div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;  <span class="comment">// backwards going eventId on same accessor does not change VersionNumber. Data validity stays ok</span></div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == ver2,</div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> + <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ver2));</div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;  BOOST_TEST(acc1.dataValidity() == DataValidity::ok);</div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160; </div>
+<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;  <span class="comment">//++++++++++++++++++++++++++++++++++++++++++++++</span></div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;  <span class="comment">// Check eventID 0 mixed with regular updates</span></div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;  <span class="comment">//++++++++++++++++++++++++++++++++++++++++++++++</span></div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;  <span class="comment">// first do two update so we get out of the out-of-order sequence</span></div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;  DoocsServerTestHelper::</div>
+<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;      runUpdate(); <span class="comment">// after the first update we are back to ID 2 from above. Just get a new one again..</span></div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160; </div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;  <span class="keyword">auto</span> lastRegularAcc1Version = acc1.getVersionNumber();</div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;  acc1_id.read();</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;  int64_t lastRegularEventId = acc1_id;</div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()));</div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160; </div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;  <span class="comment">// now process some data with event ID 0</span></div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;  <span class="keyword">auto</span> idAfterZero = eqfct-&gt;counter; <span class="comment">// the id that would have been given out</span></div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;  eqfct-&gt;counter = 0;</div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160; </div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;  <span class="comment">// the version number increases with event ID 0</span></div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;  acc1_id.read();</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;  <span class="keyword">auto</span> acc1VersionForId0 = acc1.getVersionNumber();</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;  <span class="keyword">auto</span> acc1_idVersionForId0 = acc1_id.getVersionNumber();</div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;  BOOST_TEST(acc1.getVersionNumber() &gt; lastRegularAcc1Version);</div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;  BOOST_TEST(acc1_id.getVersionNumber() &gt; lastRegularAcc1Version);</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, 0);</div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160; </div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;  <span class="comment">// Now send the same eventID again as we had it before the 0 (a new version has already been tested in the start</span></div>
+<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;  <span class="comment">// sequence, where id 0 was the first one to be received)</span></div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;  eqfct-&gt;counter = lastRegularEventId;</div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160; </div>
+<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;  acc1_id.read();</div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1VersionForId0, <span class="comment">// version has not changed</span></div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1VersionForId0));</div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;  BOOST_CHECK_MESSAGE(acc1_id.getVersionNumber() == acc1_idVersionForId0, <span class="comment">// version has not changed</span></div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_idVersionForId0));</div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, lastRegularEventId); <span class="comment">// the data content of acc1_id changed -&gt; we lost the consistency</span></div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160; </div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;  <span class="comment">// acc2 has not seen the id 0 and still is consistent</span></div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;  acc2.read();</div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;  acc2_id.read();</div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;  BOOST_CHECK_MESSAGE(acc2.getVersionNumber() == lastRegularAcc1Version, <span class="comment">// version has not changed</span></div>
+<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
 <div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastRegularAcc1Version));</div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;  BOOST_CHECK_EQUAL(acc2_id, lastRegularEventId);</div>
-<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160; </div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;  <span class="comment">// after the next update, acc1 is back to consistent again</span></div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;  BOOST_CHECK_MESSAGE(acc2_id.getVersionNumber() == lastRegularAcc1Version, <span class="comment">// version has not changed</span></div>
+<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc2_id.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(lastRegularAcc1Version));</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;  BOOST_CHECK_EQUAL(acc2_id, lastRegularEventId);</div>
 <div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160; </div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;  acc1.read();</div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;  acc1_id.read();</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;  BOOST_TEST(acc1.getVersionNumber() &gt; acc1VersionForId0);</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160; </div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()));</div>
-<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, idAfterZero);</div>
-<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;}</div>
-<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160; </div>
-<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;  <span class="comment">// after the next update, acc1 is back to consistent again</span></div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;  DoocsServerTestHelper::runUpdate();</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160; </div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;  acc1.read();</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;  acc1_id.read();</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;  BOOST_TEST(acc1.getVersionNumber() &gt; acc1VersionForId0);</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160; </div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;  BOOST_CHECK_MESSAGE(acc1.getVersionNumber() == acc1_id.getVersionNumber(),</div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;      <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1.getVersionNumber()) + <span class="stringliteral">&quot; should be equal to &quot;</span> +</div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;          <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(acc1_id.getVersionNumber()));</div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;  BOOST_CHECK_EQUAL(acc1_id, idAfterZero);</div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;}</div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160; </div>
+<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="atest_doocs_backend_8cpp_html_ac44d28c7f7e4ebf191da6594ee07ec11"><div class="ttname"><a href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a></div><div class="ttdeci">std::time_t createDummyXml(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="test_doocs_backend_8cpp_source.html#l01256">testDoocsBackend.cpp:1256</a></div></div>
+<div class="ttc" id="atest_doocs_backend_8cpp_html_ac44d28c7f7e4ebf191da6594ee07ec11"><div class="ttname"><a href="test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11">createDummyXml</a></div><div class="ttdeci">std::time_t createDummyXml(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="test_doocs_backend_8cpp_source.html#l01259">testDoocsBackend.cpp:1259</a></div></div>
 <div class="ttc" id="aclass_doocs_launcher_html_a473b8c6ab026c30358edd31e43fc0eca"><div class="ttname"><a href="class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher::DoocsServer1</a></div><div class="ttdeci">static std::string DoocsServer1</div><div class="ttdef"><b>Definition:</b> <a href="test_doocs_backend_8cpp_source.html#l00069">testDoocsBackend.cpp:69</a></div></div>
 <div class="ttc" id="aclass_doocs_launcher_html_a4524c308d7800ed0bc2f1b5e2b8ceb3d"><div class="ttname"><a href="class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d">DoocsLauncher::DoocsServer1_cached</a></div><div class="ttdeci">static std::string DoocsServer1_cached</div><div class="ttdef"><b>Definition:</b> <a href="test_doocs_backend_8cpp_source.html#l00070">testDoocsBackend.cpp:70</a></div></div>
 <div class="ttc" id="atest_doocs_backend_8cpp_html_a28df7f71d0da5f3d08e45822674622e5"><div class="ttname"><a href="test_doocs_backend_8cpp.html#a28df7f71d0da5f3d08e45822674622e5">BOOST_GLOBAL_FIXTURE</a></div><div class="ttdeci">BOOST_GLOBAL_FIXTURE(DoocsLauncher)</div></div>
@@ -1849,7 +1852,7 @@ $(document).ready(function(){initNavTree('test_doocs_backend_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_1052d29f6371a5fade6b292c62d3ed20.html">ChimeraTK-DeviceAccess-DoocsBackend</a></li><li class="navelem"><a class="el" href="dir_00c4adc29d29ce13cee8f68c38ecf9e2.html">tests</a></li><li class="navelem"><a class="el" href="dir_f197a160868cfb9181473f536ad331dd.html">executables_src</a></li><li class="navelem"><a class="el" href="test_doocs_backend_8cpp.html">testDoocsBackend.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 22:06:24 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Aug 27 2024 22:16:09 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('test_doocs_p_v_factory_8cpp.html','');
 <code>#include &quot;<a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="empty_server_functions_8h_source.html">emptyServerFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="get_all_variable_names_8h_source.html">getAllVariableNames.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>&quot;</code><br />
 <code>#include &lt;doocs/EqFctTest.h&gt;</code><br />
@@ -124,8 +123,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a943e1ba9eadbc59adfe9aa67ede217fd"><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::list&lt; int64_t, uint64_t, int32_t, uint32_t, int16_t, uint16_t, int8_t, uint8_t, float, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a></td></tr>
-<tr class="separator:a943e1ba9eadbc59adfe9aa67ede217fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a6a3e62602b0917215e9a9e83ccd49"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a00a6a3e62602b0917215e9a9e83ccd49">simple_test_types</a> = boost::mpl::list&lt; int64_t, uint64_t, int32_t, uint32_t, int16_t, uint16_t, int8_t, uint8_t, float, double &gt;</td></tr>
+<tr class="separator:a00a6a3e62602b0917215e9a9e83ccd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -133,12 +132,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7986f7120dde2f135805355601102528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92b13bd0830806d8e0899eab3df079b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#aa92b13bd0830806d8e0899eab3df079b">BOOST_AUTO_TEST_CASE</a> (testAutoCreateScalars)</td></tr>
 <tr class="separator:aa92b13bd0830806d8e0899eab3df079b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc7790649d368beaad3299ef0ee1132"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a4bc7790649d368beaad3299ef0ee1132">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testCreateSpectrum, T, <a class="el" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a>)</td></tr>
+<tr class="memitem:a4bc7790649d368beaad3299ef0ee1132"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a4bc7790649d368beaad3299ef0ee1132">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testCreateSpectrum, T, <a class="el" href="test_doocs_p_v_factory_8cpp.html#a00a6a3e62602b0917215e9a9e83ccd49">simple_test_types</a>)</td></tr>
 <tr class="separator:a4bc7790649d368beaad3299ef0ee1132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eef0bbe3edafbf9ab9725bab10bdffc"><td class="memTemplParams" colspan="2">template&lt;class DOOCS_T &gt; </td></tr>
-<tr class="memitem:a8eef0bbe3edafbf9ab9725bab10bdffc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a8eef0bbe3edafbf9ab9725bab10bdffc">testArrayIsCorrectType</a> (<a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html">DoocsPVFactory</a> &amp;factory, <a class="el" href="struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661">AutoPropertyDescription::DataType</a> dataType, std::string name=&quot;fromDeviceArray1&quot;)</td></tr>
-<tr class="separator:a8eef0bbe3edafbf9ab9725bab10bdffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7e4d032cc8aa2264d1d5128b7a4f0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#afa7e4d032cc8aa2264d1d5128b7a4f0e">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testCreateArray, T, <a class="el" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a>)</td></tr>
+<tr class="memitem:acd2556b5a9a8340f6b4caf3382014a2d"><td class="memTemplParams" colspan="2">template&lt;class DOOCS_T &gt; </td></tr>
+<tr class="memitem:acd2556b5a9a8340f6b4caf3382014a2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#acd2556b5a9a8340f6b4caf3382014a2d">testArrayIsCorrectType</a> (<a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html">DoocsPVFactory</a> &amp;factory, <a class="el" href="struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661">AutoPropertyDescription::DataType</a> dataType, const std::string &amp;name=&quot;fromDeviceArray1&quot;)</td></tr>
+<tr class="separator:acd2556b5a9a8340f6b4caf3382014a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7e4d032cc8aa2264d1d5128b7a4f0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#afa7e4d032cc8aa2264d1d5128b7a4f0e">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testCreateArray, T, <a class="el" href="test_doocs_p_v_factory_8cpp.html#a00a6a3e62602b0917215e9a9e83ccd49">simple_test_types</a>)</td></tr>
 <tr class="separator:afa7e4d032cc8aa2264d1d5128b7a4f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbefcc69d9d977f2cb20e38d8abbacd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_doocs_p_v_factory_8cpp.html#adbefcc69d9d977f2cb20e38d8abbacd8">BOOST_AUTO_TEST_CASE</a> (testAutoCreateArray)</td></tr>
 <tr class="separator:adbefcc69d9d977f2cb20e38d8abbacd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,19 +162,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a943e1ba9eadbc59adfe9aa67ede217fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a943e1ba9eadbc59adfe9aa67ede217fd">&#9670;&nbsp;</a></span>simple_test_types</h2>
+<a id="a00a6a3e62602b0917215e9a9e83ccd49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a6a3e62602b0917215e9a9e83ccd49">&#9670;&nbsp;</a></span>simple_test_types</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::mpl::list&lt;int64_t, uint64_t, int32_t, uint32_t, int16_t, uint16_t, int8_t, uint8_t, float, double&gt; <a class="el" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a></td>
+          <td class="memname">using <a class="el" href="test_doocs_p_v_factory_8cpp.html#a00a6a3e62602b0917215e9a9e83ccd49">simple_test_types</a> =  boost::mpl::list&lt;int64_t, uint64_t, int32_t, uint32_t, int16_t, uint16_t, int8_t, uint8_t, float, double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00035">35</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00034">34</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -196,7 +195,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00214">214</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00212">212</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -224,7 +223,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00057">57</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00055">55</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -252,7 +251,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00260">260</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00258">258</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -285,7 +284,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a00a6a3e62602b0917215e9a9e83ccd49">simple_test_types</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -296,7 +295,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00184">184</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00182">182</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -329,7 +328,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd">simple_test_types</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="test_doocs_p_v_factory_8cpp.html#a00a6a3e62602b0917215e9a9e83ccd49">simple_test_types</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -340,7 +339,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00136">136</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00134">134</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -378,8 +377,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8eef0bbe3edafbf9ab9725bab10bdffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8eef0bbe3edafbf9ab9725bab10bdffc">&#9670;&nbsp;</a></span>testArrayIsCorrectType()</h2>
+<a id="acd2556b5a9a8340f6b4caf3382014a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2556b5a9a8340f6b4caf3382014a2d">&#9670;&nbsp;</a></span>testArrayIsCorrectType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +400,7 @@ template&lt;class DOOCS_T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em> = <code>&quot;fromDeviceArray1&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -412,13 +411,13 @@ template&lt;class DOOCS_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00171">171</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_doocs_p_v_factory_8cpp_source.html#l00169">169</a> of file <a class="el" href="test_doocs_p_v_factory_8cpp_source.html">testDoocsPVFactory.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_doocs_p_v_factory_8cpp_a8eef0bbe3edafbf9ab9725bab10bdffc_cgraph.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_doocs_p_v_factory_8cpp_acd2556b5a9a8340f6b4caf3382014a2d_cgraph.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -430,7 +429,7 @@ template&lt;class DOOCS_T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_73dabe853f5a69cc63d01e9c5e92eee9.html">ChimeraTK-ControlSystemAdapter-DoocsAdapter</a></li><li class="navelem"><a class="el" href="dir_0fb152a537aaa09f0ea9f261754eb87c.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c51cc5c1bd9b18579b1f9a53ec390e4.html">src</a></li><li class="navelem"><a class="el" href="test_doocs_p_v_factory_8cpp.html">testDoocsPVFactory.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:47:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 19:48:18 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -90,14 +90,14 @@ $(document).ready(function(){initNavTree('server_test_spectrum_buffer-exception_
 <a href="server_test_spectrum_buffer-exception_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="server_test_spectrum_buffer-exception_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    4</a></span>&#160;<span class="preprocessor">#define BOOST_TEST_MODULE serverTestSpectrumBuffer - exception</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="server_test_spectrum_buffer-exception_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    4</a></span>&#160;<span class="preprocessor">#define BOOST_TEST_MODULE serverTestSpectrumBuffer_exception</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// boost unit_test needs to be included before serverBasedTestTools.h</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_doocs_adapter_8h.html">DoocsAdapter.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="server_based_test_tools_8h.html">serverBasedTestTools.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;eq_client.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;doocs/EqCall.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('server_test_spectrum_buffer-exception_
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// staring the server should cause the exception</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="_doocs_adapter_8h.html#a21911bbae22f33d6749e3e59194a4d0d">doocsAdapter</a>.<a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a540df5860a62d5acf30c784bbe21b18b">createServer</a>()-&gt;run(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a540df5860a62d5acf30c784bbe21b18b">ChimeraTK::DoocsAdapter::createServer</a>()-&gt;run(</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        boost::unit_test::framework::master_test_suite().argc, boost::unit_test::framework::master_test_suite().argv);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    BOOST_ERROR(<span class="stringliteral">&quot;Exception expected&quot;</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
@@ -136,18 +136,17 @@ $(document).ready(function(){initNavTree('server_test_spectrum_buffer-exception_
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**********************************************************************************************************************/</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_doocs_adapter_8h_html_a21911bbae22f33d6749e3e59194a4d0d"><div class="ttname"><a href="_doocs_adapter_8h.html#a21911bbae22f33d6749e3e59194a4d0d">doocsAdapter</a></div><div class="ttdeci">ChimeraTK::DoocsAdapter doocsAdapter</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00007">main.cc:7</a></div></div>
 <div class="ttc" id="aserver_test_spectrum_buffer-exception_8cpp_html_a1f8893621f4cebe2116c94e600749fa9"><div class="ttname"><a href="server_test_spectrum_buffer-exception_8cpp.html#a1f8893621f4cebe2116c94e600749fa9">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testSpectrum)</div><div class="ttdef"><b>Definition:</b> <a href="server_test_spectrum_buffer-exception_8cpp_source.html#l00025">serverTestSpectrumBuffer-exception.cpp:25</a></div></div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="areference_test_doocs_server_8cc_html_a84752c4a47e5d0688a72b1a9be1d9e6e"><div class="ttname"><a href="reference_test_doocs_server_8cc.html#a84752c4a47e5d0688a72b1a9be1d9e6e">referenceTestApplication</a></div><div class="ttdeci">ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="reference_test_doocs_server_8cc_source.html#l00008">referenceTestDoocsServer.cc:8</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_adapter_html_a540df5860a62d5acf30c784bbe21b18b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_adapter.html#a540df5860a62d5acf30c784bbe21b18b">ChimeraTK::DoocsAdapter::createServer</a></div><div class="ttdeci">std::unique_ptr&lt; doocs::Server &gt; createServer()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_adapter_8cc_source.html#l00100">DoocsAdapter.cc:100</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_adapter_html_a540df5860a62d5acf30c784bbe21b18b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_adapter.html#a540df5860a62d5acf30c784bbe21b18b">ChimeraTK::DoocsAdapter::createServer</a></div><div class="ttdeci">static std::unique_ptr&lt; doocs::Server &gt; createServer()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_adapter_8cc_source.html#l00114">DoocsAdapter.cc:114</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_73dabe853f5a69cc63d01e9c5e92eee9.html">ChimeraTK-ControlSystemAdapter-DoocsAdapter</a></li><li class="navelem"><a class="el" href="dir_0fb152a537aaa09f0ea9f261754eb87c.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c51cc5c1bd9b18579b1f9a53ec390e4.html">src</a></li><li class="navelem"><a class="el" href="server_test_spectrum_buffer-exception_8cpp.html">serverTestSpectrumBuffer-exception.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 19:47:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Tue Aug 27 2024 19:48:18 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

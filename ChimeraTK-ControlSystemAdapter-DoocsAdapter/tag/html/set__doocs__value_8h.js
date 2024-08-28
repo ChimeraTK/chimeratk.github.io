@@ -1,4 +1,4 @@
 var set__doocs__value_8h =
 [
-    [ "set_doocs_value", "set__doocs__value_8h.html#aa1af9201ce386d11499030efe6def5d1", null ]
+    [ "setDoocsValue", "set__doocs__value_8h.html#aa7a1cf07bef85aa43f82c5033775293c", null ]
 ];

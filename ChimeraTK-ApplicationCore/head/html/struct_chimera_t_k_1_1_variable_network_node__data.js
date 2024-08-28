@@ -9,7 +9,7 @@ var struct_chimera_t_k_1_1_variable_network_node__data =
     [ "direction", "struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33", null ],
     [ "externalTrigger", "struct_chimera_t_k_1_1_variable_network_node__data.html#aea2ed7a5d1fe7756e73ed112a3560ca2", null ],
     [ "mode", "struct_chimera_t_k_1_1_variable_network_node__data.html#a4481ab32cdb405da3507936b37511c27", null ],
-    [ "model", "struct_chimera_t_k_1_1_variable_network_node__data.html#a09d3233d7ee3dca5d738dc51a348eacd", null ],
+    [ "model", "struct_chimera_t_k_1_1_variable_network_node__data.html#a3f73437d251d2c752fe74b755d20f39a", null ],
     [ "name", "struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1", null ],
     [ "nElements", "struct_chimera_t_k_1_1_variable_network_node__data.html#a45c063050975eec1d6914bc52d210c45", null ],
     [ "nodeToTrigger", "struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777", null ],

@@ -237,198 +237,199 @@ $(document).ready(function(){initNavTree('_virtual_lab_backend_8h_source.html','
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">  class stateMachineName##_ : public stateMachineName##__ {                                                            \</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">   public:                                                                                                             \</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">    stateMachineName##_() : stateMachineName##__() {}                                                                  \</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">    void setDummyDevice(dummyDeviceType* _dev) { dev = _dev; }                                                         \</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">    dummyDeviceType* dev;                                                                                              \</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">  typedef msm::back::state_machine&lt;stateMachineName##_&gt; stateMachineName</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="_virtual_lab_backend_8h.html#acca7f26c8e9cbb33756f99bb330dbf18">  255</a></span>&#160;<span class="preprocessor">#define DECLARE_MAIN_STATE_MACHINE(initialState, transitionTable)                                                      \</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">  BOOST_MSM_EUML_TRANSITION_TABLE((transitionTable), mainStateMachine_table)                                           \</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">  BOOST_MSM_EUML_DECLARE_STATE_MACHINE((mainStateMachine_table, init_ &lt;&lt; initialState), mainStateMachine__)            \</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">  class mainStateMachine_ : public mainStateMachine__ {                                                                \</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">   public:                                                                                                             \</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">    mainStateMachine_(dummyDeviceType* _dev) : mainStateMachine__(), dev(_dev) {}                                      \</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">    dummyDeviceType* dev;                                                                                              \</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">  typedef msm::back::state_machine&lt;mainStateMachine_&gt; mainStateMachine;                                                \</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">  mainStateMachine theStateMachine</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="_virtual_lab_backend_8h.html#a14e136f646e92809e78b04d59dee998e">  292</a></span>&#160;<span class="preprocessor">#define CONSTRUCTOR(name, ...)                                                                                         \</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">  </span><span class="comment">/* createInstance() function used by the BackendFactory. Creates only one                                            \</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">   * instance per instance name! */</span><span class="preprocessor">                                                                                    \</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">  static boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt; createInstance(                                                   \</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">      std::string address, std::map&lt;std::string, std::string&gt; parameters) {                                            \</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">    if(parameters[&quot;map&quot;].empty()) {                                                                                    \</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">      throw ChimeraTK::logic_error(&quot;No map file name given in the device descriptor.&quot;);                                \</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">    return returnInstance&lt;name&gt;(address, convertPathRelativeToDmapToAbs(parameters[&quot;map&quot;]));                           \</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">  }                                                                                                                    \</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">  </span><span class="comment">/* Static and global instance map (plain static members don&#39;t work                                                   \</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">   * header-only!) */</span><span class="preprocessor">                                                                                                  \</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">  static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt;&amp; getInstanceMap() {                        \</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">    static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt; instanceMap;                             \</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">    return instanceMap;                                                                                                \</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">  }                                                                                                                    \</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">  </span><span class="comment">/* Class to register the backend type with the factory. */</span><span class="preprocessor">                                                           \</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">  class BackendRegisterer {                                                                                            \</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">   public:                                                                                                             \</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">    BackendRegisterer() : dummy(0) {                                                                                   \</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">      std::cout &lt;&lt; &quot;VirtualLabBackend::BackendRegisterer: registering backend type &quot; &lt;&lt; #name &lt;&lt; std::endl;            \</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">      ChimeraTK::BackendFactory::getInstance().registerBackendType(#name, &amp;name::createInstance);                      \</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">    </span><span class="comment">/* dummy variable we can reference to force linking the object code when                                           \</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">     * just using the header */</span><span class="preprocessor">                                                                                        \</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">    int dummy;                                                                                                         \</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca">  319</a></span>&#160;<span class="preprocessor">  static BackendRegisterer backendRegisterer;                                                                          \</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">  </span><span class="comment">/* Actual constructor of the VirtualLabBackend class. */</span><span class="preprocessor">                                                             \</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">  explicit name(std::string mapFileName) : VirtualLabBackend(mapFileName), ##__VA_ARGS__, theStateMachine(this) {</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#define END_CONSTRUCTOR }</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">#define INIT_SUB_STATE_MACHINE(name) theStateMachine.get_state&lt;name*&gt;()-&gt;setDummyDevice(this)</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#define REGISTER_BACKEND_TYPE(name) name::BackendRegisterer name::backendRegisterer</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> { <span class="keyword">namespace </span>VirtualLab {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">  /*********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> derived&gt;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keyword">class </span>VirtualLabBackend : <span class="keyword">public</span> ChimeraTK::DummyBackend {</div>
-<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#af02656245e58400373f030ff52acdd5e">  381</a></span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">// constructor via standard device model decription (as used by the</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">// DeviceFactory)</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">VirtualLabBackend</a>(std::string mapFileName)</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    : <a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>::DummyBackend(mapFileName), lastWrittenData(NULL), lastWrittenSize(0) {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <span class="comment">// start the main state machine</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a3767bd1a673cb25fdf8dad001a8c7195">  387</a></span>&#160;      <span class="keyword">static_cast&lt;</span>derived&amp;<span class="keyword">&gt;</span>(*this).theStateMachine.start();</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a80228a1b87fb42969afbc38e006249d5">  390</a></span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">VirtualLabBackend</a>() {}</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordtype">void</span> write(uint64_t bar, uint64_t address, int32_t <span class="keyword">const</span>* data, <span class="keywordtype">size_t</span> sizeInBytes)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="comment">// save as last written data, for use inside guards of the events we may</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <span class="comment">// trigger now</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        std::lock_guard&lt;std::mutex&gt; guard(mutex);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        lastWrittenData = data;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        lastWrittenSize = sizeInBytes;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      }</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      <span class="comment">// perform the actual write</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      DummyBackend::write(bar, address, data, sizeInBytes);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      <span class="comment">// trigger events</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      {</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        std::lock_guard&lt;std::mutex&gt; guard(mutex);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        regWriteEvents(bar, address, sizeInBytes);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      }</div>
-<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#afd37522964e5cd3561687ee27d61eaa6">  410</a></span>&#160;    }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordtype">void</span> read(uint64_t bar, uint64_t address, int32_t* data, <span class="keywordtype">size_t</span> sizeInBytes)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="comment">// trigger events</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        std::lock_guard&lt;std::mutex&gt; guard(mutex);</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        regReadEvents(bar, address, sizeInBytes);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      }</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <span class="comment">// perform the actual write</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a5286b79ffedc1b2d0eeee0f5de8b024f">  421</a></span>&#160;      DummyBackend::read(bar, address, data, sizeInBytes);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isAddressInRange(</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keyword">const</span> NumericAddressedRegisterInfo&amp; registerInfo, uint8_t bar, uint32_t address, <span class="keywordtype">size_t</span> length) {</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      assert(registerInfo.elementPitchBits % 8 == 0);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="keywordflow">return</span> (bar == registerInfo.bar &amp;&amp; address &gt;= registerInfo.address &amp;&amp;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;          address + length &lt;= registerInfo.address + registerInfo.nElements * registerInfo.elementPitchBits / 8);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    }</div>
-<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a95779fb624c6fa6e11f2346b1774cb72">  430</a></span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;   <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">typedef</span> derived <a class="code" href="class_virtual_test_device.html">dummyDeviceType</a>;</div>
-<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ad5f9d77b2bd2fd26d4c82e4e813d28d0">  434</a></span>&#160; </div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> regWriteEvents(uint8_t <span class="comment">/* bar */</span>, uint32_t <span class="comment">/* address */</span>, <span class="keywordtype">size_t</span> <span class="comment">/* sizeInBytes */</span>) {</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    } <span class="comment">// LCOV_EXCL_LINE</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ae5a6968774ae0edf299379ef906190a5">  439</a></span>&#160; </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> regReadEvents(uint8_t <span class="comment">/* bar */</span>, uint32_t <span class="comment">/* address */</span>, <span class="keywordtype">size_t</span> <span class="comment">/* sizeInBytes */</span>) {} <span class="comment">// LCOV_EXCL_LINE</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">  443</a></span>&#160; </div>
-<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a5cc104cc34151cf4ec876d7a641a32e9">  445</a></span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> timerEvent&gt;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keyword">class </span><a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">Timer</a> {</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a614727398c7f262fed7e6ec74d9ef24d">  448</a></span>&#160;      <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">Timer</a>(derived* _dev) : dev(_dev), request(-1), current(0) {}</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
-<div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a2dbb540b2490ce2fb140cc9a9d135431">  451</a></span>&#160;      <span class="keywordtype">void</span> set(<a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> tval) { request = tval + current; }</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      <span class="keywordtype">void</span> clear() { request = -1; }</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;      <span class="keywordtype">bool</span> advance(<a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> tval) {</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordflow">if</span>(tval &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        current += tval;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="keywordflow">if</span>(request &gt; 0 &amp;&amp; current &gt;= request) {</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;          request = -1;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;          <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            std::unique_lock&lt;std::mutex&gt; lk(dev-&gt;mutex);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            dev-&gt;theStateMachine.process_event(timerEvent());</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;          }</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;          <span class="keywordflow">catch</span>(...) {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR in VirtualLabBackend: Exception thrown while &quot;</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                         <span class="stringliteral">&quot;processing timer event. The state &quot;</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;machine is now in an unusable condition. Make sure to &quot;</span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                         <span class="stringliteral">&quot;catch all exceptions in your &quot;</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;actions!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;          }</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        }</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      }</div>
-<div class="line"><a name="l00480"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a6f7c2e668168806b9de590547410bb14">  480</a></span>&#160; </div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> getRemaining() {</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="keywordflow">if</span>(request &gt; 0) {</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;          <span class="keywordflow">return</span> request - current;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        }</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;          <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        }</div>
-<div class="line"><a name="l00490"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#aeaaa6d7da07afd19884a4e77bd17d84d">  490</a></span>&#160;      }</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> getCurrent() { <span class="keywordflow">return</span> current; }</div>
-<div class="line"><a name="l00494"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a33c7d836e580c0b08e67c8f56eed3d7a">  494</a></span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;     <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00497"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a8fe2917200d2eae7d49a913aadeb17be">  497</a></span>&#160;      derived* dev;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160; </div>
-<div class="line"><a name="l00500"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#ab2b8eec1b1315a0de64c0f15da527016">  500</a></span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> request;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> current;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    };</div>
-<div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ac26bfb19f95ae4c24907ea77cd46048f">  505</a></span>&#160; </div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    int32_t <span class="keyword">const</span>* lastWrittenData;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">size_t</span> lastWrittenSize;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  };</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;}} <span class="comment">// namespace ChimeraTK::VirtualLab</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160; </div>
-<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html">  514</a></span>&#160;<span class="comment">// Compatibility</span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> { <span class="keyword">namespace </span>VirtualLab {</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> derived&gt;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keyword">class </span><a class="code" href="classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html">VirtualLabBackend</a> : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend</a>&lt;derived&gt; {</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keyword">using</span> <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend&lt;derived&gt;::VirtualLabBackend</a>;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  };</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}} <span class="comment">// namespace mtca4u::VirtualLab</span></div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* VIRTUALDEVICE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">    void setDummyDevice(dummyDeviceType* _dev) {                                                                       \</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">      dev = _dev;                                                                                                      \</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">    dummyDeviceType* dev;                                                                                              \</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">  typedef msm::back::state_machine&lt;stateMachineName##_&gt; stateMachineName</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="_virtual_lab_backend_8h.html#acca7f26c8e9cbb33756f99bb330dbf18">  257</a></span>&#160;<span class="preprocessor">#define DECLARE_MAIN_STATE_MACHINE(initialState, transitionTable)                                                      \</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">  BOOST_MSM_EUML_TRANSITION_TABLE((transitionTable), mainStateMachine_table)                                           \</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">  BOOST_MSM_EUML_DECLARE_STATE_MACHINE((mainStateMachine_table, init_ &lt;&lt; initialState), mainStateMachine__)            \</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">  class mainStateMachine_ : public mainStateMachine__ {                                                                \</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">   public:                                                                                                             \</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">    mainStateMachine_(dummyDeviceType* _dev) : mainStateMachine__(), dev(_dev) {                                       \</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">      _dev-&gt;theStateMachine.start();                                                                                   \</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">    dummyDeviceType* dev;                                                                                              \</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">  typedef msm::back::state_machine&lt;mainStateMachine_&gt; mainStateMachine;                                                \</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">  mainStateMachine theStateMachine</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="_virtual_lab_backend_8h.html#a14e136f646e92809e78b04d59dee998e">  296</a></span>&#160;<span class="preprocessor">#define CONSTRUCTOR(name, ...)                                                                                         \</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">  </span><span class="comment">/* createInstance() function used by the BackendFactory. Creates only one                                            \</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">   * instance per instance name! */</span><span class="preprocessor">                                                                                    \</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">  static boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt; createInstance(                                                   \</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">      std::string address, std::map&lt;std::string, std::string&gt; parameters) {                                            \</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">    if(parameters[&quot;map&quot;].empty()) {                                                                                    \</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">      throw ChimeraTK::logic_error(&quot;No map file name given in the device descriptor.&quot;);                                \</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">    return returnInstance&lt;name&gt;(address, convertPathRelativeToDmapToAbs(parameters[&quot;map&quot;]));                           \</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">  }                                                                                                                    \</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">  </span><span class="comment">/* Static and global instance map (plain static members don&#39;t work                                                   \</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">   * header-only!) */</span><span class="preprocessor">                                                                                                  \</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">  static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt;&amp; getInstanceMap() {                        \</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">    static std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt;&gt; instanceMap;                             \</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">    return instanceMap;                                                                                                \</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">  }                                                                                                                    \</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">  </span><span class="comment">/* Class to register the backend type with the factory. */</span><span class="preprocessor">                                                           \</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">  class BackendRegisterer {                                                                                            \</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">   public:                                                                                                             \</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">    BackendRegisterer() : dummy(0) {                                                                                   \</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">      std::cout &lt;&lt; &quot;VirtualLabBackend::BackendRegisterer: registering backend type &quot; &lt;&lt; #name &lt;&lt; std::endl;            \</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">      ChimeraTK::BackendFactory::getInstance().registerBackendType(#name, &amp;name::createInstance);                      \</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">    }                                                                                                                  \</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">    </span><span class="comment">/* dummy variable we can reference to force linking the object code when                                           \</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">     * just using the header */</span><span class="preprocessor">                                                                                        \</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">    int dummy;                                                                                                         \</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">  };                                                                                                                   \</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca">  323</a></span>&#160;<span class="preprocessor">  static BackendRegisterer backendRegisterer;                                                                          \</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">  </span><span class="comment">/* Actual constructor of the VirtualLabBackend class. */</span><span class="preprocessor">                                                             \</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">  explicit name(std::string mapFileName) : VirtualLabBackend(mapFileName), ##__VA_ARGS__, theStateMachine(this) {</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#define END_CONSTRUCTOR }</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#define INIT_SUB_STATE_MACHINE(name) theStateMachine.get_state&lt;name*&gt;()-&gt;setDummyDevice(this)</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">#define REGISTER_BACKEND_TYPE(name) name::BackendRegisterer name::backendRegisterer</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> { <span class="keyword">namespace </span>VirtualLab {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">  /*********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> derived&gt;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keyword">class </span>VirtualLabBackend : <span class="keyword">public</span> ChimeraTK::DummyBackend {</div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#af02656245e58400373f030ff52acdd5e">  385</a></span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="comment">// constructor via standard device model decription (as used by the</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// DeviceFactory)</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a3767bd1a673cb25fdf8dad001a8c7195">  388</a></span>&#160;    <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">VirtualLabBackend</a>(std::string mapFileName)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    : <a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a>::DummyBackend(mapFileName), lastWrittenData(NULL), lastWrittenSize(0) {}</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a80228a1b87fb42969afbc38e006249d5">  391</a></span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">VirtualLabBackend</a>() {}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">void</span> write(uint64_t bar, uint64_t address, int32_t <span class="keyword">const</span>* data, <span class="keywordtype">size_t</span> sizeInBytes)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <span class="comment">// save as last written data, for use inside guards of the events we may</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="comment">// trigger now</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        std::lock_guard&lt;std::mutex&gt; guard(mutex);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        lastWrittenData = data;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        lastWrittenSize = sizeInBytes;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      }</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      <span class="comment">// perform the actual write</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      DummyBackend::write(bar, address, data, sizeInBytes);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="comment">// trigger events</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      {</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        std::lock_guard&lt;std::mutex&gt; guard(mutex);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        regWriteEvents(bar, address, sizeInBytes);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      }</div>
+<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#afd37522964e5cd3561687ee27d61eaa6">  411</a></span>&#160;    }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">void</span> read(uint64_t bar, uint64_t address, int32_t* data, <span class="keywordtype">size_t</span> sizeInBytes)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="comment">// trigger events</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        std::lock_guard&lt;std::mutex&gt; guard(mutex);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        regReadEvents(bar, address, sizeInBytes);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="comment">// perform the actual write</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a5286b79ffedc1b2d0eeee0f5de8b024f">  422</a></span>&#160;      DummyBackend::read(bar, address, data, sizeInBytes);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isAddressInRange(</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keyword">const</span> NumericAddressedRegisterInfo&amp; registerInfo, uint8_t bar, uint32_t address, <span class="keywordtype">size_t</span> length) {</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      assert(registerInfo.elementPitchBits % 8 == 0);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;      <span class="keywordflow">return</span> (bar == registerInfo.bar &amp;&amp; address &gt;= registerInfo.address &amp;&amp;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;          address + length &lt;= registerInfo.address + registerInfo.nElements * registerInfo.elementPitchBits / 8);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
+<div class="line"><a name="l00431"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a95779fb624c6fa6e11f2346b1774cb72">  431</a></span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;   <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">typedef</span> derived <a class="code" href="class_virtual_test_device.html">dummyDeviceType</a>;</div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ad5f9d77b2bd2fd26d4c82e4e813d28d0">  435</a></span>&#160; </div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> regWriteEvents(uint8_t <span class="comment">/* bar */</span>, uint32_t <span class="comment">/* address */</span>, <span class="keywordtype">size_t</span> <span class="comment">/* sizeInBytes */</span>) {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    } <span class="comment">// LCOV_EXCL_LINE</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ae5a6968774ae0edf299379ef906190a5">  440</a></span>&#160; </div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> regReadEvents(uint8_t <span class="comment">/* bar */</span>, uint32_t <span class="comment">/* address */</span>, <span class="keywordtype">size_t</span> <span class="comment">/* sizeInBytes */</span>) {} <span class="comment">// LCOV_EXCL_LINE</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">  444</a></span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a5cc104cc34151cf4ec876d7a641a32e9">  446</a></span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> timerEvent&gt;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keyword">class </span><a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">Timer</a> {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a614727398c7f262fed7e6ec74d9ef24d">  449</a></span>&#160;      <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">Timer</a>(derived* _dev) : dev(_dev), request(-1), current(0) {}</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a2dbb540b2490ce2fb140cc9a9d135431">  452</a></span>&#160;      <span class="keywordtype">void</span> set(<a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> tval) { request = tval + current; }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="keywordtype">void</span> clear() { request = -1; }</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      <span class="keywordtype">bool</span> advance(<a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> tval) {</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keywordflow">if</span>(tval &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        current += tval;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="keywordflow">if</span>(request &gt; 0 &amp;&amp; current &gt;= request) {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;          request = -1;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;          <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            std::unique_lock&lt;std::mutex&gt; lk(dev-&gt;mutex);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            dev-&gt;theStateMachine.process_event(timerEvent());</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;          }</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;          <span class="keywordflow">catch</span>(...) {</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;ERROR in VirtualLabBackend: Exception thrown while &quot;</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                         <span class="stringliteral">&quot;processing timer event. The state &quot;</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;machine is now in an unusable condition. Make sure to &quot;</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                         <span class="stringliteral">&quot;catch all exceptions in your &quot;</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;actions!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;          }</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        }</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      }</div>
+<div class="line"><a name="l00481"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a6f7c2e668168806b9de590547410bb14">  481</a></span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> getRemaining() {</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordflow">if</span>(request &gt; 0) {</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;          <span class="keywordflow">return</span> request - current;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        }</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;          <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        }</div>
+<div class="line"><a name="l00491"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#aeaaa6d7da07afd19884a4e77bd17d84d">  491</a></span>&#160;      }</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> getCurrent() { <span class="keywordflow">return</span> current; }</div>
+<div class="line"><a name="l00495"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a33c7d836e580c0b08e67c8f56eed3d7a">  495</a></span>&#160; </div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;     <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00498"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a8fe2917200d2eae7d49a913aadeb17be">  498</a></span>&#160;      derived* dev;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
+<div class="line"><a name="l00501"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#ab2b8eec1b1315a0de64c0f15da527016">  501</a></span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> request;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160; </div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;      <a class="code" href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">VirtualTime</a> current;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    };</div>
+<div class="line"><a name="l00506"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ac26bfb19f95ae4c24907ea77cd46048f">  506</a></span>&#160; </div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    int32_t <span class="keyword">const</span>* lastWrittenData;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordtype">size_t</span> lastWrittenSize;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  };</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;}} <span class="comment">// namespace ChimeraTK::VirtualLab</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html">  515</a></span>&#160;<span class="comment">// Compatibility</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemtca4u.html">mtca4u</a> { <span class="keyword">namespace </span>VirtualLab {</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> derived&gt;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keyword">class </span><a class="code" href="classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html">VirtualLabBackend</a> : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend</a>&lt;derived&gt; {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">using</span> <a class="code" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend&lt;derived&gt;::VirtualLabBackend</a>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  };</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;}} <span class="comment">// namespace mtca4u::VirtualLab</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* VIRTUALDEVICE_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_timer_group_8h_html"><div class="ttname"><a href="_timer_group_8h.html">TimerGroup.h</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend_html"><div class="ttname"><a href="classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html">mtca4u::VirtualLab::VirtualLabBackend</a></div><div class="ttdef"><b>Definition:</b> <a href="_virtual_lab_backend_8h_source.html#l00514">VirtualLabBackend.h:514</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend</a></div><div class="ttdoc">Base class for VirtualLab dummy devices.</div><div class="ttdef"><b>Definition:</b> <a href="_virtual_lab_backend_8h_source.html#l00377">VirtualLabBackend.h:377</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend_html"><div class="ttname"><a href="classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html">mtca4u::VirtualLab::VirtualLabBackend</a></div><div class="ttdef"><b>Definition:</b> <a href="_virtual_lab_backend_8h_source.html#l00515">VirtualLabBackend.h:515</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend</a></div><div class="ttdoc">Base class for VirtualLab dummy devices.</div><div class="ttdef"><b>Definition:</b> <a href="_virtual_lab_backend_8h_source.html#l00381">VirtualLabBackend.h:381</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdef"><b>Definition:</b> <a href="_signal_sink_8h_source.html#l00047">SignalSink.h:47</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_virtual_lab_html_a0fa9920f23ee6ecb6c02e4cba6b6ac2e"><div class="ttname"><a href="namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e">ChimeraTK::VirtualLab::VirtualTime</a></div><div class="ttdeci">int64_t VirtualTime</div><div class="ttdoc">Type and units for virtual time.</div><div class="ttdef"><b>Definition:</b> <a href="_virtual_time_8h_source.html#l00024">VirtualTime.h:24</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_signal_sink_8h_source.html#l00015">SignalSink.h:15</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer_html"><div class="ttname"><a href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">ChimeraTK::VirtualLab::VirtualLabBackend::Timer</a></div><div class="ttdoc">VirtualDevice::Timer class.</div><div class="ttdef"><b>Definition:</b> <a href="_virtual_lab_backend_8h_source.html#l00443">VirtualLabBackend.h:443</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer_html"><div class="ttname"><a href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html">ChimeraTK::VirtualLab::VirtualLabBackend::Timer</a></div><div class="ttdoc">VirtualDevice::Timer class.</div><div class="ttdef"><b>Definition:</b> <a href="_virtual_lab_backend_8h_source.html#l00444">VirtualLabBackend.h:444</a></div></div>
 <div class="ttc" id="aclass_virtual_test_device_html"><div class="ttname"><a href="class_virtual_test_device.html">VirtualTestDevice</a></div><div class="ttdoc">The VirtualTestDevice is a VirtualDevice implementation to test the framework.</div><div class="ttdef"><b>Definition:</b> <a href="performance__test_8cpp_source.html#l00021">performance_test.cpp:21</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_4c403ecd173c09492acce198f8225c62.html">ChimeraTK-VirtualLab</a></li><li class="navelem"><a class="el" href="dir_70a246c1fa14068511305a51210d4c01.html">include</a></li><li class="navelem"><a class="el" href="_virtual_lab_backend_8h.html">VirtualLabBackend.h</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 20:36:13 for ChimeraTK-VirtualLab by
+    <li class="footer">Generated on Tue Aug 27 2024 21:03:32 for ChimeraTK-VirtualLab by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
