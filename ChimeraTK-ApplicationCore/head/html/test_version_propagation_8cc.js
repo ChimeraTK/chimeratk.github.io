@@ -1,16 +1,16 @@
 var test_version_propagation_8cc =
 [
-    [ "ThePushModule", "struct_the_push_module.html", "struct_the_push_module" ],
-    [ "TheOutputModule", "struct_the_output_module.html", "struct_the_output_module" ],
-    [ "TheTestApplication", "struct_the_test_application.html", "struct_the_test_application" ],
+    [ "ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_push_module" ],
+    [ "TheOutputModule", "struct_tests_1_1test_versionpropagation_1_1_the_output_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_output_module" ],
+    [ "TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", "struct_tests_1_1test_versionpropagation_1_1_the_test_application" ],
     [ "BOOST_TEST_MODULE", "test_version_propagation_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "Fixture", "test_version_propagation_8cc.html#a0b9eba24d931c415333f3d1f750e7f4d", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a4ee05a322902e46564ac95de08a9deff", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#ac18a4c2294f549ceb7b2fe571a104c19", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#af653a39528392a7788d5c9727386ec09", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#ac186d00a924a1520091380bb97043bca", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a6f0236289191e17f1c8943cefbf6dd26", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a2a69b4f90e54adc39339dfe2d7f4be0d", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a88157de45355a3ee6f9b16897c04f562", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#af3c5aa6e662ae1241dd98181d7c70f1b", null ]
+    [ "Fixture", "test_version_propagation_8cc.html#a6ab63a4f98fd089af5cf625290160a51", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a94eb8e1c7eb3ca201f2f0b626d1ca0e7", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#ab0b765f8182eaa129eef81b0ab532b23", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a5c249c8a401bbf222cd5baac415e1b7e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a8681ac532780123e3788e99b3039255e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a70b3a23c919d8bef18016b44513e17fd", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a975c97840842f386f20d919b49b48543", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a0b0119f9975cc5117c724626c8d926a6", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#ac26b7d3968578cf5cde7142f05d99983", null ]
 ];

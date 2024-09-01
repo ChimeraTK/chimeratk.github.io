@@ -191,8 +191,8 @@ var NAVTREE =
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
@@ -215,10 +215,9 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],
@@ -233,16 +232,16 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_device_module.html#a4a9e010d61ef112b7d688e72cbfc20a3",
 "class_chimera_t_k_1_1_model_1_1_proxy.html#a4bd07f16e35057750f3f09bcdf0beb4a",
 "class_chimera_t_k_1_1_variable_network_node.html#af2c26e82b61376a13729bccab739ba4c",
-"namespacemembers_type.html",
-"struct_chimera_t_k_1_1_divider.html#af543a7f20028002a7f1e66d27617a90c",
-"struct_chimera_t_k_1_1_periodic_trigger.html",
-"struct_circular_app_test_fixcture.html#abdf918efcc269e6e28da8bdeea0c700b",
-"struct_module_y.html#a38d0ab8413540a8f167edefb3bff7cdb",
-"struct_test_app.html#a08177de9fc3e32add783669397fa2962",
-"struct_test_application6.html#a8c32cee36c55190a9b31aa328e7bc940",
-"struct_test_module1.html#ac94d616a908060d1603d4ab222fe8ace",
-"test_data_validity_propagation_8cc.html#aefc6263d58ec0d0ddf2c090f1ce14858",
-"test_test_facilities_8cc.html#a11ebac2b68cb7b11d2d355cd9e967fa3"
+"namespace_tests_1_1test_device_initialisation_handler.html",
+"struct_chimera_t_k_1_1_config_reader_1_1_array.html#af08a912cb8bd7b26407e49dafdac05f0",
+"struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html#af3b5c072c9f07ace665139693f32714c",
+"struct_chimera_t_k_1_1_void_input.html#a6501dd829478666020243bd915cdea58",
+"struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a8c142f358e1f72f3b6032f476a551a27",
+"struct_tests_1_1test_device_accessors_1_1_deeper2.html",
+"struct_tests_1_1test_initial_values_1_1_test6_a2_dummy_application.html#af5784e08b52de9aba630d08506d677e9",
+"struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application2.html#a42701c0a34bcef9d553643260a269213",
+"struct_tests_1_1test_trigger_1_1_test_app3.html#ab064f06fc9d47da8e2feda9875f613e5",
+"test_illegal_networks_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

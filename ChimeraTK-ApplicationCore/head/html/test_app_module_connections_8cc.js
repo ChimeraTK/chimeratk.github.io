@@ -1,17 +1,17 @@
 var test_app_module_connections_8cc =
 [
-    [ "TestModule", "struct_test_module.html", "struct_test_module" ],
-    [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
-    [ "SelfUnregisteringModule", "struct_self_unregistering_module.html", "struct_self_unregistering_module" ],
-    [ "TestAppSelfUnregisteringModule", "struct_test_app_self_unregistering_module.html", "struct_test_app_self_unregistering_module" ],
+    [ "TestModule", "struct_tests_1_1test_app_module_connections_1_1_test_module.html", "struct_tests_1_1test_app_module_connections_1_1_test_module" ],
+    [ "TestApplication", "struct_tests_1_1test_app_module_connections_1_1_test_application.html", "struct_tests_1_1test_app_module_connections_1_1_test_application" ],
+    [ "SelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module.html", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module" ],
+    [ "TestAppSelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module.html", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module" ],
     [ "BOOST_NO_EXCEPTIONS", "test_app_module_connections_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_app_module_connections_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "test_types", "test_app_module_connections_8cc.html#a805243a67da521297a409dc904f436b4", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_app_module_connections_8cc.html#aedfd9c613376854aaeca07f1e4d12249", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a4636a21370548b3929d43dcba8f38bd9", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a8112d54f94c91e6008880a63435c5e7f", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a8994ae0fd8ab9e7a600d25d839b9d56f", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#aafe5b5185bdcb0075fac64dfa99a1c65", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a5ce7368e009c920d69740c3053f16a88", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#acb752a051f22de0fb9969c3e089e565d", null ]
+    [ "test_types", "test_app_module_connections_8cc.html#a3a4f75e4db7d021c9c2f486bf2d5932e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_app_module_connections_8cc.html#a46f03c85fb795641e98efe6f0e997950", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a490f73b14ad8bf36b615888cd17ed17c", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#ad90b0d440cacd098df03a71191d40ae8", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a00dd9697074eb7be9e63f3f9aafe5e7d", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a75e802e226546915fa6d60d465c98d52", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#ac13e199d5847f9db201e213af60f179c", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a3ebe2e1c855b8cbb3954c4da4b921ced", null ]
 ];

@@ -183,7 +183,7 @@ Static Protected Attributes</h2></td></tr>
 <p>Use <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a16caa942446623c2f97416667be52406" title="Define how to report error messages to the user.">setErrorFunction()</a> to define a function which reports the error to the user.</p>
 <p>The class must be used together with a ReadAnyGroup. Each value change reported by the ReadAnyGroup should be passed to the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> function. This will trigger all relevant validations and ensure all (validated) inputs have valid values when returning.</p>
 <p>A typical program flow of the <a class="el" href="test_illegal_networks_8cc.html#af14601579e7c6dd672a85c562800b1fa">mainLoop()</a> looks like this:</p>
-<p>void <a class="el" href="struct_my_module.html#a220b167c558bb5b3bcfc3783dfb5d0fa" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">MyModule::mainLoop()</a> { <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html" title="Class to realise the validation of user input values.">ChimeraTK::UserInputValidator</a> validator; validator.setErrorFunction([&amp;](const std::string &amp;message) { ... code to report error ...}); validator.add("MyInput must be bigger than 0!", [&amp;] { return myInput &gt; 0; }, myInput); validator.setFallback(myInput, 1); // necessary, since 0 is not valid</p>
+<p>void MyModule::mainLoop() { <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html" title="Class to realise the validation of user input values.">ChimeraTK::UserInputValidator</a> validator; validator.setErrorFunction([&amp;](const std::string &amp;message) { ... code to report error ...}); validator.add("MyInput must be bigger than 0!", [&amp;] { return myInput &gt; 0; }, myInput); validator.setFallback(myInput, 1); // necessary, since 0 is not valid</p>
 <p>ChimeraTK::TransferElementID change; auto rag = readAnyGroup(); while(true) { validator.validate(change); // change is default constructed in first run -&gt; validate all initial values</p>
 <p>... do some computations based on myInput which would fail for myInput &lt;= 0 ...</p>
 <p>change = rag.readAny(); } } </p>
@@ -245,7 +245,7 @@ template&lt;typename... ACCESSORTYPES&gt; </div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_ab949ef18c845814bdacfdb6eaa1e97f1_icgraph.svg" width="510" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_ab949ef18c845814bdacfdb6eaa1e97f1_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -283,7 +283,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a29ef9362126a81687383b2a34f5cffae_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a29ef9362126a81687383b2a34f5cffae_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -326,7 +326,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a78cc582ee5cc335083777233a938eaab_icgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a78cc582ee5cc335083777233a938eaab_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -474,7 +474,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a151e31bb3edbf713a54e43dbe3333fb9_icgraph.svg" width="504" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_a151e31bb3edbf713a54e43dbe3333fb9_icgraph.svg" width="511" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -512,7 +512,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_aec1ce9b3f82cf6c093373bed08c57d47_icgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_user_input_validator_aec1ce9b3f82cf6c093373bed08c57d47_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
