@@ -18,6 +18,5 @@ var test_data_validity_propagation_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#ae449ceef4f0e31bf39500f3abb0f18c3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#aa74685bcc2816656b73cb2231acf0770", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a709ce96f7f552738a7a7dfa95a97e5f4", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#ab110794c4fb5469b3f5e1a1351c50f67", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a2681b356e218355926d6b21a6d425ebe", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#ab110794c4fb5469b3f5e1a1351c50f67", null ]
 ];
