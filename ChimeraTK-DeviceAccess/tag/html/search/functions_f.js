@@ -26,7 +26,7 @@ var searchData=
   ['rebotdummysession_4154',['RebotDummySession',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a918b37b29cd6be7574609a61b0ded6de',1,'ChimeraTK::RebotDummySession']]],
   ['rebotprotocol0_4155',['RebotProtocol0',['../struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945',1,'ChimeraTK::RebotProtocol0']]],
   ['rebotprotocol1_4156',['RebotProtocol1',['../struct_chimera_t_k_1_1_rebot_protocol1.html#a03ca701e16d90df9f0e7df26f6431f1c',1,'ChimeraTK::RebotProtocol1']]],
-  ['rebotserverdetails_4157',['RebotServerDetails',['../struct_rebot_server_details.html#a54cfa8f2324e1c9531cd6a04de5e5986',1,'RebotServerDetails::RebotServerDetails()'],['../struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3',1,'RebotServerDetails::RebotServerDetails(std::string &amp;ipAddress, std::string portNumber)']]],
+  ['rebotserverdetails_4157',['RebotServerDetails',['../struct_rebot_server_details.html#abfa66cb8b3b0a05eb41df59ada244905',1,'RebotServerDetails::RebotServerDetails()=default'],['../struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3',1,'RebotServerDetails::RebotServerDetails(std::string &amp;ipAddress, std::string portNumber)']]],
   ['rebottestclass_4158',['RebotTestClass',['../class_rebot_test_class.html#ac58d489c5a55ea8f6521c505c9aee6fc',1,'RebotTestClass']]],
   ['reconfigure_4159',['reconfigure',['../class_chimera_t_k_1_1_fixed_point_converter.html#aae7ba81ef0eb12d2ed6c1144b4c9eb9f',1,'ChimeraTK::FixedPointConverter']]],
   ['recoverdevice_4160',['recoverDevice',['../class_chimera_t_k_1_1_unified_backend_test.html#a2a5af100a20a46cf62a7311ce92c2f71',1,'ChimeraTK::UnifiedBackendTest']]],

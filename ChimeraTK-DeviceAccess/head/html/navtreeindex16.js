@@ -143,7 +143,7 @@ var NAVTREEINDEX16 =
 "struct_raw_to_cooked_provider__x.html":[19,0,136],
 "struct_rebot_server_details.html":[19,0,139],
 "struct_rebot_server_details.html#a2f9f80babd0826bcf5ca87d4d1fc865d":[19,0,139,3],
-"struct_rebot_server_details.html#a54cfa8f2324e1c9531cd6a04de5e5986":[19,0,139,0],
+"struct_rebot_server_details.html#abfa66cb8b3b0a05eb41df59ada244905":[19,0,139,0],
 "struct_rebot_server_details.html#ae88870eca060d36af1584dab13b45c86":[19,0,139,2],
 "struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3":[19,0,139,1],
 "struct_reg9_bits_in_char.html":[19,0,141],

@@ -57,7 +57,7 @@ var searchData=
   ['rebotprotocolimplementor_1663',['RebotProtocolImplementor',['../struct_chimera_t_k_1_1_rebot_protocol_implementor.html',1,'ChimeraTK']]],
   ['rebotprotocolimplementor_2eh_1664',['RebotProtocolImplementor.h',['../_rebot_protocol_implementor_8h.html',1,'']]],
   ['rebotserver_1665',['rebotServer',['../struct_f.html#a7073bd2fb241c42f78d5f34ddb1d9293',1,'F']]],
-  ['rebotserverdetails_1666',['RebotServerDetails',['../struct_rebot_server_details.html',1,'RebotServerDetails'],['../struct_rebot_server_details.html#a54cfa8f2324e1c9531cd6a04de5e5986',1,'RebotServerDetails::RebotServerDetails()'],['../struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3',1,'RebotServerDetails::RebotServerDetails(std::string &amp;ipAddress, std::string portNumber)']]],
+  ['rebotserverdetails_1666',['RebotServerDetails',['../struct_rebot_server_details.html',1,'RebotServerDetails'],['../struct_rebot_server_details.html#abfa66cb8b3b0a05eb41df59ada244905',1,'RebotServerDetails::RebotServerDetails()=default'],['../struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3',1,'RebotServerDetails::RebotServerDetails(std::string &amp;ipAddress, std::string portNumber)']]],
   ['rebotsleepsynchroniser_1667',['RebotSleepSynchroniser',['../struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html',1,'ChimeraTK']]],
   ['rebottestableclock_1668',['RebotTestableClock',['../class_chimera_t_k_1_1_rebot_testable_clock.html',1,'ChimeraTK']]],
   ['rebottestclass_1669',['RebotTestClass',['../class_rebot_test_class.html',1,'RebotTestClass'],['../class_rebot_test_class.html#ac58d489c5a55ea8f6521c505c9aee6fc',1,'RebotTestClass::RebotTestClass()']]],
