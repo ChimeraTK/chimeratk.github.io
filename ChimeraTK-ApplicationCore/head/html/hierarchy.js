@@ -41,6 +41,8 @@ var hierarchy =
         [ "Tests::testFanoutConnections::TestApplication1", "struct_tests_1_1test_fanout_connections_1_1_test_application1.html", null ],
         [ "Tests::testHierarchyModifyingGroup::TestApplication", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application.html", null ],
         [ "Tests::testHierarchyModifyingGroup::TestApplicationEmpty", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty.html", null ],
+        [ "Tests::testIllegalNetworks::CircularConnectionApp", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_app.html", null ],
+        [ "Tests::testIllegalNetworks::CircularConnectionApp2", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_app2.html", null ],
         [ "Tests::testIllegalNetworks::TestApplication1", "struct_tests_1_1test_illegal_networks_1_1_test_application1.html", null ],
         [ "Tests::testIllegalNetworks::TestApplication3< T >", "struct_tests_1_1test_illegal_networks_1_1_test_application3.html", null ],
         [ "Tests::testIllegalNetworks::TestApplication4", "struct_tests_1_1test_illegal_networks_1_1_test_application4.html", null ],
@@ -205,7 +207,8 @@ var hierarchy =
             [ "Tests::testApplicationPVModel::RogueModule", "struct_tests_1_1test_application_p_v_model_1_1_rogue_module.html", null ],
             [ "Tests::testApplicationPVModel::TestModule", "struct_tests_1_1test_application_p_v_model_1_1_test_module.html", null ],
             [ "Tests::testAppModuleConnections::SelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module.html", null ],
-            [ "Tests::testAppModuleConnections::TestModule< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module.html", null ],
+            [ "Tests::testAppModuleConnections::TestModuleConsume< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html", null ],
+            [ "Tests::testAppModuleConnections::TestModuleFeed< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html", null ],
             [ "Tests::testBidirectionalVariables::ModuleA", "struct_tests_1_1test_bidirectional_variables_1_1_module_a.html", null ],
             [ "Tests::testBidirectionalVariables::ModuleB", "struct_tests_1_1test_bidirectional_variables_1_1_module_b.html", null ],
             [ "Tests::testBidirectionalVariables::ModuleC", "struct_tests_1_1test_bidirectional_variables_1_1_module_c.html", null ],
@@ -244,6 +247,8 @@ var hierarchy =
             [ "Tests::testFanoutConnections::TestModule1", "struct_tests_1_1test_fanout_connections_1_1_test_module1.html", null ],
             [ "Tests::testHierarchyModifyingGroup::TestApplication::TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module.html", null ],
             [ "Tests::testHierarchyModifyingGroup::TestApplicationEmpty::TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty_1_1_test_module.html", null ],
+            [ "Tests::testIllegalNetworks::CircularConnectionModule", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_module.html", null ],
+            [ "Tests::testIllegalNetworks::CircularConnectionModuleWithIntermediateGroup", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group.html", null ],
             [ "Tests::testInitialValues::ConstantModule", "struct_tests_1_1test_initial_values_1_1_constant_module.html", null ],
             [ "Tests::testInitialValues::InputModule< INPUT_TYPE >", "struct_tests_1_1test_initial_values_1_1_input_module.html", null ],
             [ "Tests::testInitialValues::NotifyingModule", "struct_tests_1_1test_initial_values_1_1_notifying_module.html", [
@@ -280,7 +285,8 @@ var hierarchy =
             ] ],
             [ "Tests::testUserInputValidator::UpstreamSingleOut", "struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html", null ],
             [ "Tests::testUserInputValidator::UpstreamTwinOut", "struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out.html", null ],
-            [ "Tests::testVariableGroup::TestModule", "struct_tests_1_1test_variable_group_1_1_test_module.html", null ],
+            [ "Tests::testVariableGroup::InputModule", "struct_tests_1_1test_variable_group_1_1_input_module.html", null ],
+            [ "Tests::testVariableGroup::OutputModule", "struct_tests_1_1test_variable_group_1_1_output_module.html", null ],
             [ "Tests::testVersionpropagation::TheOutputModule", "struct_tests_1_1test_versionpropagation_1_1_the_output_module.html", null ],
             [ "Tests::testVersionpropagation::ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", null ]
           ] ],
@@ -312,7 +318,7 @@ var hierarchy =
           [ "Tests::testModules::TestModule::AnotherGroup", "struct_tests_1_1test_modules_1_1_test_module_1_1_another_group.html", null ],
           [ "Tests::testModules::VectorModule::AnotherGroup", "struct_tests_1_1test_modules_1_1_vector_module_1_1_another_group.html", null ],
           [ "Tests::testTestFacilities::ReadAnyTestModule::Inputs", "struct_tests_1_1test_test_facilities_1_1_read_any_test_module_1_1_inputs.html", null ],
-          [ "Tests::testVariableGroup::TestModule::MixedGroup", "struct_tests_1_1test_variable_group_1_1_test_module_1_1_mixed_group.html", null ]
+          [ "Tests::testVariableGroup::InputModule::MixedGroup", "struct_tests_1_1test_variable_group_1_1_input_module_1_1_mixed_group.html", null ]
         ] ]
       ] ]
     ] ],

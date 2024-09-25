@@ -388,14 +388,14 @@ template&lt;typename VISITOR , typename... Args&gt; </div>
 <li>returnFirstHit: Terminate the search after the first hit. If specified, the visitor may return a non-void value which will be returned by the <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a855db53096ed1b927644f8603faa23ed" title="Traverse the model using the specified filter and call the visitor functor for each ModuleGroup,...">visit()</a> function.</li>
 </ul>
 <p>In case of depthFirstSearch, the following search option can be specified:</p><ul>
-<li>continueSearchDisjunctTrees: Continue search even when starting object/vertex is finished. This allows to traverse also disjuct parts of the model.</li>
+<li>continueSearchDisjunctTrees: Continue search even when starting object/vertex is finished. This allows to traverse also disjunct parts of the model.</li>
 </ul>
 <p>There are also combined search configurations which can be used to specify filters and search types at the same time:</p><ul>
 <li>ownedModuleGroups: equivalent of adjacentOutSearch, keepOwnership, keepModuleGroups</li>
 <li>ownedApplicationModules: equivalent of adjacentOutSearch, keepOwnership, keepApplicationModules</li>
 <li>ownedVariableGroups: equivalent of adjacentOutSearch, keepOwnership, keepVariableGroups</li>
 <li>ownedVariables: equivalent of adjacentOutSearch, keepParenthood, keepProcessVariables</li>
-<li>childDirectories: equivalent of adjacentOutSearch, parendhoodFilter, keepDirectories</li>
+<li>childDirectories: equivalent of adjacentOutSearch, parenthoodFilter, keepDirectories</li>
 <li>childVariables: equivalent of adjacentOutSearch, keepParenthood, keepProcessVariables</li>
 <li>children: equivalent of adjacentOutSearch, keepParenthood</li>
 <li>getOwner: equivalent of adjacentInSearch, keepOwnership</li>
