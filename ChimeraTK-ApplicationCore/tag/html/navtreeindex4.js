@@ -1,5 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"class_chimera_t_k_1_1_variable_network_node.html#adaef0dc9ea18655aa4699d9fcbae9115":[14,0,0,87,22],
+"class_chimera_t_k_1_1_variable_network_node.html#ae6c65e0978f3382265c632b48b756007":[14,0,0,87,0],
+"class_chimera_t_k_1_1_variable_network_node.html#aecf2d39df34f2a86c8e29c6b7c852520":[14,0,0,87,24],
+"class_chimera_t_k_1_1_variable_network_node.html#af0d4f24c03c4517bc35408d7a3747aeb":[14,0,0,87,17],
 "class_chimera_t_k_1_1_variable_network_node.html#af2c26e82b61376a13729bccab739ba4c":[14,0,0,87,31],
 "class_chimera_t_k_1_1_variable_network_node.html#af3879332388701550dc63f2ee257d977":[14,0,0,87,15],
 "class_chimera_t_k_1_1_variable_network_node.html#af851ec9380c31c0c06c612d03889ab0f":[14,0,0,87,43],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "namespace_tests_1_1test_control_system_accessors.html":[13,0,6,6],
 "namespace_tests_1_1test_control_system_accessors.html":[14,0,1,6],
 "namespace_tests_1_1test_data_validity_propagation.html":[13,0,6,7],
-"namespace_tests_1_1test_data_validity_propagation.html":[14,0,1,7],
-"namespace_tests_1_1test_device_accessors.html":[13,0,6,8],
-"namespace_tests_1_1test_device_accessors.html":[14,0,1,8],
-"namespace_tests_1_1test_device_exception_flag_propagation.html":[13,0,6,9],
-"namespace_tests_1_1test_device_exception_flag_propagation.html":[14,0,1,9]
+"namespace_tests_1_1test_data_validity_propagation.html":[14,0,1,7]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"struct_short_raw__fixed_point16__8u.html#aafbac5d0374344ff1c0d1fc0ab1ce669":[19,0,197,6],
 "struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b":[19,0,197,2],
 "struct_short_raw__signed16.html":[19,0,198],
 "struct_short_raw__signed16.html#a04e0df595f39a5feb9fc4222dc0902d4":[19,0,198,6],
@@ -132,8 +133,8 @@ var NAVTREEINDEX18 =
 "struct_write_counting_backend_1_1_backend_registerer.html#ac9b2a38453841e4993d53772ef024824":[19,0,224,0,0],
 "struct_wrong_version_backend.html":[19,0,226],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[19,0,226,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,226,0,0],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,226,0,1],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,226,0,0],
 "structaccess_private_data_1_1stow__private.html":[19,0,0,0],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[19,0,0,0,0],
 "structaccess_private_data_1_1stowed.html":[19,0,0,1],
@@ -199,11 +200,12 @@ var NAVTREEINDEX18 =
 "test_async_read_8cpp.html":[20,0,0,0,7,1,2],
 "test_async_read_8cpp.html#a02698ab897f3215b69bdc9455ae46e18":[20,0,0,0,7,1,2,5],
 "test_async_read_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,0,0,7,1,2,3],
-"test_async_read_8cpp.html#a235814bfef964effb8c56d287f64e75a":[20,0,0,0,7,1,2,8],
-"test_async_read_8cpp.html#a4b5b351740d20cbf56d983603405f803":[20,0,0,0,7,1,2,9],
+"test_async_read_8cpp.html#a235814bfef964effb8c56d287f64e75a":[20,0,0,0,7,1,2,9],
+"test_async_read_8cpp.html#a4b5b351740d20cbf56d983603405f803":[20,0,0,0,7,1,2,10],
 "test_async_read_8cpp.html#a53b782b1ee851363138b611f8c738321":[20,0,0,0,7,1,2,7],
 "test_async_read_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,0,0,7,1,2,4],
-"test_async_read_8cpp.html#a9d57eb1d8464d13e1d0d697d9ae420e2":[20,0,0,0,7,1,2,10],
+"test_async_read_8cpp.html#a976fb5b7cfb2a662c550866fa3aa8d1f":[20,0,0,0,7,1,2,8],
+"test_async_read_8cpp.html#a9d57eb1d8464d13e1d0d697d9ae420e2":[20,0,0,0,7,1,2,11],
 "test_async_read_8cpp.html#ac0bab11760e2aafd6e5e761b618fe67a":[20,0,0,0,7,1,2,6],
 "test_async_read_8cpp_source.html":[20,0,0,0,7,1,2],
 "test_async_var_and_hierarchical_interrupts_unified_8cpp.html":[20,0,0,0,7,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434":[20,0,0,0,7,1,9,15],
 "test_double_buffering_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,0,0,7,1,9,10],
 "test_double_buffering_8cpp.html#a853017d5a2c41666d5714fce28aa6bdb":[20,0,0,0,7,1,9,11],
-"test_double_buffering_8cpp.html#ab4423a7f580c59b7d5935f0e0f4d01fe":[20,0,0,0,7,1,9,16],
-"test_double_buffering_8cpp.html#ad1dfc5906ae5cdcfbedf0e90f18a2e01":[20,0,0,0,7,1,9,12],
-"test_double_buffering_8cpp_source.html":[20,0,0,0,7,1,9]
+"test_double_buffering_8cpp.html#ab4423a7f580c59b7d5935f0e0f4d01fe":[20,0,0,0,7,1,9,16]
 };

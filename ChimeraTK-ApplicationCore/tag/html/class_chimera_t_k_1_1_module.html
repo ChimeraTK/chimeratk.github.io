@@ -365,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor: Create <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types.">Module</a> by the given name with the given description and register it with its owner. </p>
 <p>The specified list of tags will be added to all elements directly or indirectly owned by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00012">12</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00013">13</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -431,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00022">22</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00023">23</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -508,7 +508,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Obtain the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> instance of the application. </p>
 <p>If no or multiple <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> instances are found, a ChimeraTK::logic_error is thrown. Note: This function is expensive. It should be called only during the constructor of the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and the obtained configuration values should be stored for later use in member variables. Beware that the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> instance can only be found if it has been constructed before calling this function. Hence, the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> should have the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> as its first member. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00250">250</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00251">251</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -580,7 +580,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Disable the module such that it is not part of the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
 <p>This function can be called in the constructor, e.g. if the module should be disabled based on the configuration (c.f. <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a>). The module will then behave like if it were default-constructed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00274">274</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00275">275</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -611,7 +611,7 @@ Additional Inherited Members</h2></td></tr>
 <p>If "this" is an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, "this" is returned. If "this" is a <a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>, the tree of owners is followed, until the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> is found. If "this" is neither an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> nor a <a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>, a ChimeraTK::logic_error is thrown.</p>
 <p>Note: This function treats ApplicationModules and DeviceModules the same (hence the return type must be the common base class). </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00196">196</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00197">197</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -779,7 +779,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00224">224</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00225">225</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -819,7 +819,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aaf825b4dc0166f829b65b4e32b603227">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00240">240</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00241">241</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -902,7 +902,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00218">218</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00219">219</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1009,7 +1009,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Move assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00030">30</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00031">31</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -1080,7 +1080,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Read all readable variables in the group. </p>
 <p>If there are push-type variables in the group, this call will block until all of the variables have received an update. All push-type variables are read first, the poll-type variables are therefore updated with the latest values upon return. includeReturnChannels determines whether return channels of *OutputRB accessors are included in the read. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00071">71</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00072">72</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -1119,7 +1119,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Just call readLatest() on all readable variables in the group. </p>
 <p>includeReturnChannels determines whether return channels of *OutputRB accessors are included in the read. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00137">137</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00138">138</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -1158,7 +1158,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Just call readNonBlocking() on all readable variables in the group. </p>
 <p>includeReturnChannels determines whether return channels of *OutputRB accessors are included in the read. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00105">105</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00106">106</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1195,7 +1195,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create a ChimeraTK::ReadAnyGroup for all readable variables in this <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types.">Module</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00053">53</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00054">54</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-27-summary" class="dynsummary" style="display:block;">
@@ -1242,7 +1242,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="struct_tests_1_1test_test_facilities_1_1_polling_through_fanouts_module.html#ac36f86490406802270240e882a7ae9ae">Tests::testTestFacilities::PollingThroughFanoutsModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#a4657828fa7b0ad3a50e10a8745c063e1">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">ChimeraTK::Application</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00047">47</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00048">48</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1369,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Just call write() on all writable variables in the group. </p>
 <p>includeReturnChannels determines whether return channels of *InputWB accessors are included in the write. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00156">156</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00157">157</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-30-summary" class="dynsummary" style="display:block;">
@@ -1408,7 +1408,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Just call writeDestructively() on all writable variables in the group. </p>
 <p>includeReturnChannels determines whether return channels of *InputWB accessors are included in the write. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00176">176</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00177">177</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-32-summary" class="dynsummary" style="display:block;">
