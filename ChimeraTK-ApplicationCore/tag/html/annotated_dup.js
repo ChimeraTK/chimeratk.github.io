@@ -2,6 +2,12 @@ var annotated_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "Tests", "namespace_tests.html", "namespace_tests" ],
+    [ "ArrayApplicationModuleTestApp", "struct_array_application_module_test_app.html", "struct_array_application_module_test_app" ],
+    [ "ArrayInputModule", "struct_array_input_module.html", "struct_array_input_module" ],
+    [ "ArrayOutputModule", "struct_array_output_module.html", "struct_array_output_module" ],
+    [ "ArrayVariableGroup", "struct_array_variable_group.html", "struct_array_variable_group" ],
+    [ "ArrayVariableGroupTestApp", "struct_array_variable_group_test_app.html", "struct_array_variable_group_test_app" ],
+    [ "ArrayVariableGroupTestAppForMove", "struct_array_variable_group_test_app_for_move.html", "struct_array_variable_group_test_app_for_move" ],
     [ "AverageCurrent", "class_average_current.html", null ],
     [ "Controller", "class_controller.html", null ],
     [ "DummyApplication", "struct_dummy_application.html", "struct_dummy_application" ],
@@ -12,6 +18,12 @@ var annotated_dup =
     [ "PushModule", "struct_push_module.html", "struct_push_module" ],
     [ "PushModuleForFanOut", "struct_push_module_for_fan_out.html", "struct_push_module_for_fan_out" ],
     [ "PushModuleForTrigger", "struct_push_module_for_trigger.html", "struct_push_module_for_trigger" ],
+    [ "ScalarApplicationModuleTestApp", "struct_scalar_application_module_test_app.html", "struct_scalar_application_module_test_app" ],
+    [ "ScalarInputModule", "struct_scalar_input_module.html", "struct_scalar_input_module" ],
+    [ "ScalarOutputModule", "struct_scalar_output_module.html", "struct_scalar_output_module" ],
+    [ "ScalarVariableGroup", "struct_scalar_variable_group.html", "struct_scalar_variable_group" ],
+    [ "ScalarVariableGroupTestApp", "struct_scalar_variable_group_test_app.html", "struct_scalar_variable_group_test_app" ],
+    [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", "struct_scalar_variable_group_test_app_for_move" ],
     [ "SetpointRamp", "class_setpoint_ramp.html", null ],
     [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ]
 ];

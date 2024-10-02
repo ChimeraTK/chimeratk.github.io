@@ -1,10 +1,12 @@
 var dir_12103a13d03486cdb1fa8b48e27c887f =
 [
+    [ "manual", "dir_76dd53ff3fbe0e4107a99dd8d68da870.html", "dir_76dd53ff3fbe0e4107a99dd8d68da870" ],
     [ "testApplication.cc", "test_application_8cc.html", "test_application_8cc" ],
     [ "testAppModuleConnections.cc", "test_app_module_connections_8cc.html", "test_app_module_connections_8cc" ],
     [ "testBidirectionalVariables.cc", "test_bidirectional_variables_8cc.html", "test_bidirectional_variables_8cc" ],
     [ "testCircularDependencyFaultyFlags.cc", "test_circular_dependency_faulty_flags_8cc.html", "test_circular_dependency_faulty_flags_8cc" ],
     [ "testConfigReader.cc", "test_config_reader_8cc.html", "test_config_reader_8cc" ],
+    [ "testConnectedDestruction.cc", "test_connected_destruction_8cc.html", "test_connected_destruction_8cc" ],
     [ "testControlSystemAccessors.cc", "test_control_system_accessors_8cc.html", "test_control_system_accessors_8cc" ],
     [ "testDataValidityPropagation.cc", "test_data_validity_propagation_8cc.html", "test_data_validity_propagation_8cc" ],
     [ "testDeviceAccessors.cc", "test_device_accessors_8cc.html", "test_device_accessors_8cc" ],

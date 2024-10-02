@@ -11,11 +11,18 @@ var hierarchy =
     [ "ChimeraTK::AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
     [ "ApplicationBase", null, [
       [ "ChimeraTK::Application", "class_chimera_t_k_1_1_application.html", [
+        [ "ArrayApplicationModuleTestApp", "struct_array_application_module_test_app.html", null ],
+        [ "ArrayVariableGroupTestApp", "struct_array_variable_group_test_app.html", null ],
+        [ "ArrayVariableGroupTestAppForMove", "struct_array_variable_group_test_app_for_move.html", null ],
         [ "DummyApplication", "struct_dummy_application.html", null ],
         [ "ExampleApp", "class_example_app.html", null ],
+        [ "ScalarApplicationModuleTestApp", "struct_scalar_application_module_test_app.html", null ],
+        [ "ScalarVariableGroupTestApp", "struct_scalar_variable_group_test_app.html", null ],
+        [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", null ],
         [ "Tests::testApplication::TestApp", "struct_tests_1_1test_application_1_1_test_app.html", null ],
         [ "Tests::testApplicationPVModel::TestApplication", "struct_tests_1_1test_application_p_v_model_1_1_test_application.html", null ],
         [ "Tests::testApplicationPVModel::TestApplication2", "struct_tests_1_1test_application_p_v_model_1_1_test_application2.html", null ],
+        [ "Tests::testAppModuleConnections::ConstantTestApplication< T >", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application.html", null ],
         [ "Tests::testAppModuleConnections::TestApplication< T >", "struct_tests_1_1test_app_module_connections_1_1_test_application.html", null ],
         [ "Tests::testAppModuleConnections::TestAppSelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module.html", null ],
         [ "Tests::testBidirectionalVariables::FunnelApplication", "struct_tests_1_1test_bidirectional_variables_1_1_funnel_application.html", null ],
@@ -161,7 +168,10 @@ var hierarchy =
           [ "Tests::testStatusAggregator::TestApplicationTags::OuterGroup", "struct_tests_1_1test_status_aggregator_1_1_test_application_tags_1_1_outer_group.html", null ]
         ] ],
         [ "ChimeraTK::VariableGroup", "class_chimera_t_k_1_1_variable_group.html", [
+          [ "ArrayVariableGroup", "struct_array_variable_group.html", null ],
           [ "ChimeraTK::ApplicationModule", "class_chimera_t_k_1_1_application_module.html", [
+            [ "ArrayInputModule", "struct_array_input_module.html", null ],
+            [ "ArrayOutputModule", "struct_array_output_module.html", null ],
             [ "AverageCurrent", "class_average_current.html", null ],
             [ "ChimeraTK::ArrayPipe< Type >", "struct_chimera_t_k_1_1_array_pipe.html", null ],
             [ "ChimeraTK::ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", null ],
@@ -203,6 +213,8 @@ var hierarchy =
             [ "PushModule", "struct_push_module.html", null ],
             [ "PushModuleForFanOut", "struct_push_module_for_fan_out.html", null ],
             [ "PushModuleForTrigger", "struct_push_module_for_trigger.html", null ],
+            [ "ScalarInputModule", "struct_scalar_input_module.html", null ],
+            [ "ScalarOutputModule", "struct_scalar_output_module.html", null ],
             [ "ChimeraTK::ScalarPipe< double >", "struct_chimera_t_k_1_1_scalar_pipe.html", null ],
             [ "ChimeraTK::ScalarPipe< std::string >", "struct_chimera_t_k_1_1_scalar_pipe.html", null ],
             [ "SetpointRamp", "class_setpoint_ramp.html", null ],
@@ -210,6 +222,7 @@ var hierarchy =
             [ "Tests::testApplicationPVModel::MyModule", "struct_tests_1_1test_application_p_v_model_1_1_my_module.html", null ],
             [ "Tests::testApplicationPVModel::RogueModule", "struct_tests_1_1test_application_p_v_model_1_1_rogue_module.html", null ],
             [ "Tests::testApplicationPVModel::TestModule", "struct_tests_1_1test_application_p_v_model_1_1_test_module.html", null ],
+            [ "Tests::testAppModuleConnections::ConstantTestModule< T >", "struct_tests_1_1test_app_module_connections_1_1_constant_test_module.html", null ],
             [ "Tests::testAppModuleConnections::SelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module.html", null ],
             [ "Tests::testAppModuleConnections::TestModuleConsume< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html", null ],
             [ "Tests::testAppModuleConnections::TestModuleFeed< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html", null ],
@@ -305,6 +318,7 @@ var hierarchy =
           [ "ChimeraTK::StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", null ],
           [ "ChimeraTK::StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", null ],
           [ "ChimeraTK::WriteBitMask< NBITS >::Input", "struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html", null ],
+          [ "ScalarVariableGroup", "struct_scalar_variable_group.html", null ],
           [ "Tests::testApplicationPVModel::MyModule::PointlessVariableGroup", "struct_tests_1_1test_application_p_v_model_1_1_my_module_1_1_pointless_variable_group.html", null ],
           [ "Tests::testApplicationPVModel::TestModule::Need", "struct_tests_1_1test_application_p_v_model_1_1_test_module_1_1_need.html", null ],
           [ "Tests::testCircularDependencyFaultyFlags::BB::OutputGroup2", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_b_b_1_1_output_group2.html", null ],
@@ -491,6 +505,7 @@ var hierarchy =
         [ "ChimeraTK::ScalarOutput< std::string >", "struct_chimera_t_k_1_1_scalar_output.html", [
           [ "ChimeraTK::AggregatableMessage", "class_chimera_t_k_1_1_aggregatable_message.html", null ]
         ] ],
+        [ "ChimeraTK::ScalarPollInput< std::string >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPushInput< std::string >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
       ] ]
     ] ],

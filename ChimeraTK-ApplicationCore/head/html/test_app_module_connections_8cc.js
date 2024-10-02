@@ -3,6 +3,8 @@ var test_app_module_connections_8cc =
     [ "TestModuleFeed", "struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html", "struct_tests_1_1test_app_module_connections_1_1_test_module_feed" ],
     [ "TestModuleConsume", "struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html", "struct_tests_1_1test_app_module_connections_1_1_test_module_consume" ],
     [ "TestApplication", "struct_tests_1_1test_app_module_connections_1_1_test_application.html", "struct_tests_1_1test_app_module_connections_1_1_test_application" ],
+    [ "ConstantTestModule", "struct_tests_1_1test_app_module_connections_1_1_constant_test_module.html", "struct_tests_1_1test_app_module_connections_1_1_constant_test_module" ],
+    [ "ConstantTestApplication", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application.html", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application" ],
     [ "SelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module.html", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module" ],
     [ "TestAppSelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module.html", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module" ],
     [ "BOOST_NO_EXCEPTIONS", "test_app_module_connections_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],

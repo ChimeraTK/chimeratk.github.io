@@ -38,7 +38,7 @@ var NAVTREEINDEX1 =
 "check__timeout_8h.html#a17030ac7f00713a62e05ab6c35cb710e":[15,0,0,0,7,1,0,1],
 "check__timeout_8h.html#a53486434270be6831a41afe38262de96":[15,0,0,0,7,1,0,0],
 "check__timeout_8h_source.html":[15,0,0,0,7,1,0],
-"class_average_current.html":[14,0,2],
+"class_average_current.html":[14,0,8],
 "class_chimera_t_k_1_1_accessor.html":[14,0,0,1],
 "class_chimera_t_k_1_1_aggregatable_message.html":[14,0,0,2],
 "class_chimera_t_k_1_1_aggregatable_message.html#a6ed2fad03b75b7182070f0c3247ccda0":[14,0,0,2,0],
