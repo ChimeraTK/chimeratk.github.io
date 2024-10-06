@@ -1,5 +1,6 @@
 var class_chimera_t_k_1_1_array_accessor =
 [
+    [ "value_type", "class_chimera_t_k_1_1_array_accessor.html#aeb4d7a6e8a4a1fc12f7ed46705bc8747", null ],
     [ "ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a3936202769effce91c764e35645f46f1", null ],
     [ "ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a0f2f61d3e0c96cbf787c5856eba8dc96", null ],
     [ "ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a11ffbe8469a64d2c14f7d3c99b3bc7f9", null ],

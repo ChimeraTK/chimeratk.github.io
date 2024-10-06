@@ -1,5 +1,6 @@
 var class_chimera_t_k_1_1_scalar_accessor =
 [
+    [ "value_type", "class_chimera_t_k_1_1_scalar_accessor.html#a4ff80836d8593d49395a310093093106", null ],
     [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html#a65823f27218e6beb98a1c283e0006484", null ],
     [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html#afaa607b47634ffdc104506df939254cc", null ],
     [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html#ada6f09e871cec18a30b08f42afd241d0", null ],

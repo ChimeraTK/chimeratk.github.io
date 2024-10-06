@@ -1,13 +1,6 @@
 var _flags_8h =
 [
     [ "VariableDirection", "struct_chimera_t_k_1_1_variable_direction.html", "struct_chimera_t_k_1_1_variable_direction" ],
-    [ "HierarchyModifier", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0", [
-      [ "none", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
-      [ "hideThis", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0a42fd45b7dde2262d94504c986ff06e36", null ],
-      [ "moveToRoot", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0a5cf8fc165257722f4ff962f06359ee11", null ],
-      [ "oneLevelUp", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0ae47527f81def99820295151c908e9c4c", null ],
-      [ "oneUpAndHide", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0aaf52e9bd48f3a48fa47a05d2b3b90338", null ]
-    ] ],
     [ "LifeCycleState", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72d", [
       [ "initialisation", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252", null ],
       [ "run", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6", null ],

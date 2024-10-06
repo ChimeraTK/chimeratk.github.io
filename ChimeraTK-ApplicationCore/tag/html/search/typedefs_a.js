@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['variablelist_3469',['VariableList',['../namespace_chimera_t_k.html#a4bfbdf81932b5329e6f49991fae02abc',1,'ChimeraTK']]],
-  ['vertex_3470',['Vertex',['../namespace_chimera_t_k_1_1_model.html#ad6ecc0a8871e870be8e76f31f4ef4bc2',1,'ChimeraTK::Model']]],
-  ['vertexlisttype_3471',['VertexListType',['../namespace_chimera_t_k_1_1_model_1_1detail.html#af2af67e28e402ff41e7e667654082863',1,'ChimeraTK::Model::detail']]],
-  ['visitorreturntype_3472',['VisitorReturnType',['../namespace_chimera_t_k_1_1_model_1_1detail.html#a95b777dae5b736132d20207630e5a5e2',1,'ChimeraTK::Model::detail']]]
+  ['usertypetemplatevariant_3781',['userTypeTemplateVariant',['../namespace_chimera_t_k.html#a4a5be8871fc3874f46457c18d263ddc9',1,'ChimeraTK']]],
+  ['usertypetemplatevariantnovoid_3782',['userTypeTemplateVariantNoVoid',['../namespace_chimera_t_k.html#acd34e34ab48dd7457aefb44792e9546d',1,'ChimeraTK']]],
+  ['usertypevariant_3783',['userTypeVariant',['../namespace_chimera_t_k.html#ad3dfdc20abc3272e709558c5c84949bb',1,'ChimeraTK']]],
+  ['usertypevariantnovoid_3784',['userTypeVariantNoVoid',['../namespace_chimera_t_k.html#a0e310ca6f44eb91273503ba6f16992ac',1,'ChimeraTK']]]
 ];

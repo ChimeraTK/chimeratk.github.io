@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34458c34d2e1abc5d551b41ea97b3499"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a34458c34d2e1abc5d551b41ea97b3499">getName</a> () const</td></tr>
 <tr class="memdesc:a34458c34d2e1abc5d551b41ea97b3499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the ProcessVariable.  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a34458c34d2e1abc5d551b41ea97b3499">More...</a><br /></td></tr>
 <tr class="separator:a34458c34d2e1abc5d551b41ea97b3499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80f13fd35af505aa93440a4f5d923b5a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a80f13fd35af505aa93440a4f5d923b5a">getNodes</a> () const</td></tr>
-<tr class="memdesc:a80f13fd35af505aa93440a4f5d923b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all VariableNetworkNodes for this variable.  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a80f13fd35af505aa93440a4f5d923b5a">More...</a><br /></td></tr>
-<tr class="separator:a80f13fd35af505aa93440a4f5d923b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af028197688422fc539d2ced7291a08"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a1af028197688422fc539d2ced7291a08">getNodes</a> () const</td></tr>
+<tr class="memdesc:a1af028197688422fc539d2ced7291a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all VariableNetworkNodes for this variable.  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a1af028197688422fc539d2ced7291a08">More...</a><br /></td></tr>
+<tr class="separator:a1af028197688422fc539d2ced7291a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab552020ba245a6a57b91953d5ea386e1"><td class="memItemLeft" align="right" valign="top">const std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#ab552020ba245a6a57b91953d5ea386e1">getTags</a> () const</td></tr>
 <tr class="memdesc:ab552020ba245a6a57b91953d5ea386e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all tags attached to this variable.  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#ab552020ba245a6a57b91953d5ea386e1">More...</a><br /></td></tr>
 <tr class="separator:ab552020ba245a6a57b91953d5ea386e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a1d720b85c7b8a2c2dc096ece2b30c50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tag to this PV. Used by <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network.">VariableNetworkNode</a> to update the model when tags are added to PVs.  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a1d720b85c7b8a2c2dc096ece2b30c50e">More...</a><br /></td></tr>
 <tr class="separator:a1d720b85c7b8a2c2dc096ece2b30c50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa59f87d2a4b422d4bc89d93c59d001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a4aa59f87d2a4b422d4bc89d93c59d001">removeNode</a> (const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;node)</td></tr>
-<tr class="memdesc:a4aa59f87d2a4b422d4bc89d93c59d001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network.">VariableNetworkNode</a> from the list of nodes. Note: Will invalidate return value of <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a80f13fd35af505aa93440a4f5d923b5a" title="Return all VariableNetworkNodes for this variable.">getNodes()</a>!  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a4aa59f87d2a4b422d4bc89d93c59d001">More...</a><br /></td></tr>
+<tr class="memdesc:a4aa59f87d2a4b422d4bc89d93c59d001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network.">VariableNetworkNode</a> from the list of nodes. Note: Will invalidate return value of <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a1af028197688422fc539d2ced7291a08" title="Return all VariableNetworkNodes for this variable.">getNodes()</a>!  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a4aa59f87d2a4b422d4bc89d93c59d001">More...</a><br /></td></tr>
 <tr class="separator:a4aa59f87d2a4b422d4bc89d93c59d001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceee3a01f207e8d866e7a17f60096fc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#aceee3a01f207e8d866e7a17f60096fc9">Proxy</a> ()=default</td></tr>
 <tr class="memdesc:aceee3a01f207e8d866e7a17f60096fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor creates a dysfunctional, empty proxy.  <a href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#aceee3a01f207e8d866e7a17f60096fc9">More...</a><br /></td></tr>
@@ -242,20 +242,20 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_model_1_1_process_variable_proxy_a34458c34d2e1abc5d551b41ea97b3499_icgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_model_1_1_process_variable_proxy_a34458c34d2e1abc5d551b41ea97b3499_icgraph.svg" width="478" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a80f13fd35af505aa93440a4f5d923b5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80f13fd35af505aa93440a4f5d923b5a">&#9670;&nbsp;</a></span>getNodes()</h2>
+<a id="a1af028197688422fc539d2ced7291a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af028197688422fc539d2ced7291a08">&#9670;&nbsp;</a></span>getNodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt; &amp; ChimeraTK::Model::ProcessVariableProxy::getNodes </td>
+          <td class="memname">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt; &gt; &amp; ChimeraTK::Model::ProcessVariableProxy::getNodes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -271,7 +271,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_model_1_1_process_variable_proxy_a80f13fd35af505aa93440a4f5d923b5a_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_model_1_1_process_variable_proxy_a1af028197688422fc539d2ced7291a08_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -373,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network.">VariableNetworkNode</a> from the list of nodes. Note: Will invalidate return value of <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a80f13fd35af505aa93440a4f5d923b5a" title="Return all VariableNetworkNodes for this variable.">getNodes()</a>! </p>
+<p>Remove <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network.">VariableNetworkNode</a> from the list of nodes. Note: Will invalidate return value of <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a1af028197688422fc539d2ced7291a08" title="Return all VariableNetworkNodes for this variable.">getNodes()</a>! </p>
 
 <p class="definition">Definition at line <a class="el" href="_model_8cc_source.html#l00403">403</a> of file <a class="el" href="_model_8cc_source.html">Model.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

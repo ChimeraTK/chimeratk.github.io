@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['whats_5fnew_5fin_5fac_5f2_5f0_2edox_2283',['Whats_new_in_AC_2_0.dox',['../_whats__new__in___a_c__2__0_8dox.html',1,'']]]
+  ['xmlgeneratorvisitor_2ecc_2512',['XMLGeneratorVisitor.cc',['../_x_m_l_generator_visitor_8cc.html',1,'']]],
+  ['xmlgeneratorvisitor_2eh_2513',['XMLGeneratorVisitor.h',['../_x_m_l_generator_visitor_8h.html',1,'']]]
 ];

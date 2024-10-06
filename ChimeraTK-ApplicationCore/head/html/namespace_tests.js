@@ -20,6 +20,7 @@ var namespace_tests =
     [ "testPeriodicTrigger", "namespace_tests_1_1test_periodic_trigger.html", "namespace_tests_1_1test_periodic_trigger" ],
     [ "testProcessVariableRecovery", "namespace_tests_1_1test_process_variable_recovery.html", "namespace_tests_1_1test_process_variable_recovery" ],
     [ "testPropagateDataFaultFlag", "namespace_tests_1_1test_propagate_data_fault_flag.html", "namespace_tests_1_1test_propagate_data_fault_flag" ],
+    [ "testPython", "namespace_tests_1_1test_python.html", "namespace_tests_1_1test_python" ],
     [ "testScriptedInitialisationHandler", "namespace_tests_1_1test_scripted_initialisation_handler.html", "namespace_tests_1_1test_scripted_initialisation_handler" ],
     [ "testStatusAggregator", "namespace_tests_1_1test_status_aggregator.html", "namespace_tests_1_1test_status_aggregator" ],
     [ "testStatusMonitor", "namespace_tests_1_1test_status_monitor.html", "namespace_tests_1_1test_status_monitor" ],

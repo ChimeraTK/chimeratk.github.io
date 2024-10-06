@@ -1,7 +1,16 @@
 var annotated_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
+    [ "testPythonApplicationModule", "namespacetest_python_application_module.html", "namespacetest_python_application_module" ],
+    [ "testPythonDataConsistencyGroup", "namespacetest_python_data_consistency_group.html", "namespacetest_python_data_consistency_group" ],
+    [ "testPythonReadAnyGroup", "namespacetest_python_read_any_group.html", "namespacetest_python_read_any_group" ],
+    [ "testPythonScalarAccessors", "namespacetest_python_scalar_accessors.html", "namespacetest_python_scalar_accessors" ],
+    [ "testPythonSimpleApp", "namespacetest_python_simple_app.html", "namespacetest_python_simple_app" ],
+    [ "testPythonVariableGroup", "namespacetest_python_variable_group.html", "namespacetest_python_variable_group" ],
+    [ "testPythonVersionNumber", "namespacetest_python_version_number.html", "namespacetest_python_version_number" ],
+    [ "testPythonWithArray", "namespacetest_python_with_array.html", "namespacetest_python_with_array" ],
     [ "Tests", "namespace_tests.html", "namespace_tests" ],
+    [ "userAppModules", "namespaceuser_app_modules.html", "namespaceuser_app_modules" ],
     [ "ArrayApplicationModuleTestApp", "struct_array_application_module_test_app.html", "struct_array_application_module_test_app" ],
     [ "ArrayInputModule", "struct_array_input_module.html", "struct_array_input_module" ],
     [ "ArrayOutputModule", "struct_array_output_module.html", "struct_array_output_module" ],

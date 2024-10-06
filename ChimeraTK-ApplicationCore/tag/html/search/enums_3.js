@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nodetype_3476',['NodeType',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d',1,'ChimeraTK']]]
+  ['prioritymode_3794',['PriorityMode',['../struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334',1,'ChimeraTK::StatusAggregator']]]
 ];

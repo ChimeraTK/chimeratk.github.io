@@ -1,9 +1,6 @@
 var class_chimera_t_k_1_1_module_group =
 [
     [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html#a0c7ac59d7dee183e580e9af3701e1746", null ],
-    [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html#afb29a8305857f9e8ebd0baa74e18595d", null ],
-    [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html#a65b28310b394f273b6e8786af92bf9e7", null ],
-    [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html#ade50267d8747cdb0a6f644cb8f8b00d3", null ],
     [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html#ac6f8414b7c904b85c67cc2b4ddf87a7f", null ],
     [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html#af8ecced5822a6ed8ecac05c87e3dc37b", null ],
     [ "getModel", "class_chimera_t_k_1_1_module_group.html#a9bddc22b4c7151d456de461ea9317217", null ],

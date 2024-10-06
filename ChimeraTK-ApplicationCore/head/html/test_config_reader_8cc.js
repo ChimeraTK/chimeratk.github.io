@@ -9,10 +9,12 @@ var test_config_reader_8cc =
     [ "TestApplication", "struct_tests_1_1test_config_reader_1_1_test_application.html", "struct_tests_1_1test_config_reader_1_1_test_application" ],
     [ "TestApplicationTwoConfigs", "struct_tests_1_1test_config_reader_1_1_test_application_two_configs.html", "struct_tests_1_1test_config_reader_1_1_test_application_two_configs" ],
     [ "TestApplicationNoConfigs", "struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html", "struct_tests_1_1test_config_reader_1_1_test_application_no_configs" ],
+    [ "TestApplicationInvalidConfig", "struct_tests_1_1test_config_reader_1_1_test_application_invalid_config.html", "struct_tests_1_1test_config_reader_1_1_test_application_invalid_config" ],
     [ "TestApplicationWithDevice", "struct_tests_1_1test_config_reader_1_1_test_application_with_device.html", "struct_tests_1_1test_config_reader_1_1_test_application_with_device" ],
     [ "BOOST_TEST_MODULE", "test_config_reader_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#a745e80cf2b29fd4d210353904df46346", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#a02bc089aad192c6c8f09357a8fda58ea", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#aa0aa1a2a3f64b8f7dea131c9557d3eac", null ],
-    [ "cdd", "test_config_reader_8cc.html#a9d57eb1d8464d13e1d0d697d9ae420e2", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#a5dff7f9eee2f9cb156ca23e76caa9607", null ],
+    [ "cdd", "test_config_reader_8cc.html#a2babe5c6890cb08bfbe3e48ae2a9f6e3", null ]
 ];

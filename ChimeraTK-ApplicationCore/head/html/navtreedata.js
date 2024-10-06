@@ -178,6 +178,12 @@ var NAVTREE =
         [ "config/oven.xlmap", "example.html#example_config_oven_xlmap", null ]
       ] ]
     ] ],
+    [ "Example how to write application modules in Python", "example_python_modules.html", [
+      [ "Changed/added files", "example_python_modules.html#pyExample_files", [
+        [ "config to load python modules", "example_python_modules.html#pyExample_config", null ],
+        [ "python code", "example_python_modules.html#pyExample_code", null ]
+      ] ]
+    ] ],
     [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
     [ "What's new in ApplicationCore 2.0", "whats_new__a_c_2_0.html", [
       [ "Initial value propagation", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value", [
@@ -228,21 +234,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"_utilities_8h.html#a97ff87abb83d90566bac43c12912ec41",
-"class_chimera_t_k_1_1_device_module.html#a0c7ac59d7dee183e580e9af3701e1746",
-"class_chimera_t_k_1_1_model_1_1_proxy.html#a0909543ef52b5aabbd24339598d7d392",
-"class_chimera_t_k_1_1_variable_network_node.html#adaef0dc9ea18655aa4699d9fcbae9115",
-"namespace_tests_1_1test_data_validity_propagation.html",
-"struct_chimera_t_k_1_1_config_reader.html",
-"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html",
-"struct_chimera_t_k_1_1_variable_direction.html#a0c4e4a4909382750d2df313fa4e38224",
-"struct_tests_1_1test_application_p_v_model_1_1_test_application.html#a0562d92b26eeb7983a501ef8a5907115",
-"struct_tests_1_1test_config_reader_1_1_test_module_1_1_module1.html#aa4d96105cc40d67ac2387070feedc7ae",
-"struct_tests_1_1test_initial_values_1_1_constant_module.html#a367cc8364538515ffad6a32f9781d8ae",
-"struct_tests_1_1test_modules_1_1_test_module.html#ad38f3dd56d552414f7e0b947431bede7",
-"struct_tests_1_1test_status_aggregator_1_1_test_application_tags_1_1_outer_group.html#abf2628aed9fa1e8b9742aa9df0e1cb2f",
-"test_bidirectional_variables_8cc.html#a83e862b532f2e9e51c667eee195c3d15",
-"test_modules_8cc.html#a3ca653f884d42540e82af21858d4ef65"
+"_status_aggregator_8cc_source.html",
+"class_chimera_t_k_1_1_debug_print_accessor_decorator.html#affba0d6d0aa9834fbfb780d99ee71ffc",
+"class_chimera_t_k_1_1_model_1_1_impl.html#a4d76bb4136b3dbba2b533d9c87f017c7",
+"class_chimera_t_k_1_1_py_transfer_element.html#aecf60126288be7f49c3f56af467a2dd8",
+"classtest_python_scalar_accessors_1_1_my_mod.html#af1dff7e3dae55be15af5ba3b78e26634",
+"namespace_tests_1_1test_control_system_accessors.html",
+"struct_chimera_t_k_1_1_array_output.html",
+"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_module_group_properties.html#a7c3221f898cbd83d418b6d20d3e3dc61",
+"struct_chimera_t_k_1_1_variable_direction.html#af26c11fdda8c407b533916af35c8b254",
+"struct_tests_1_1test_application_p_v_model_1_1_test_application2.html#a1246af473dca6604ce79fda9b19d08a4",
+"struct_tests_1_1test_config_reader_1_1_test_module_1_1_module1_1_1_sub_module_1_1_sub_sub_module.html#ab9c291c1f0b14323c3471aead62b10e0",
+"struct_tests_1_1test_initial_values_1_1_constant_d10_initial_value_eception_dummy.html#af0b647188d74a02fb9ca2b124e672e20",
+"struct_tests_1_1test_modules_1_1_test_module.html#a26ebc7383c355d7ea816f7adfb2b7b1a",
+"struct_tests_1_1test_status_aggregator_1_1_test_application_tags.html#a0578c557aff501576e2e86aee070daf1",
+"test_application_8cc.html#ab3854372e9150871cb26f638f304a2cd",
+"test_model_8cc.html#af80ab9b4257f4745688ee85663362272"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

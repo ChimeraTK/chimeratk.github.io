@@ -2,7 +2,6 @@ var struct_tests_1_1test_config_reader_1_1_test_module =
 [
     [ "Module1", "struct_tests_1_1test_config_reader_1_1_test_module_1_1_module1.html", "struct_tests_1_1test_config_reader_1_1_test_module_1_1_module1" ],
     [ "Module2", "struct_tests_1_1test_config_reader_1_1_test_module_1_1_module2.html", "struct_tests_1_1test_config_reader_1_1_test_module_1_1_module2" ],
-    [ "TestModule", "struct_tests_1_1test_config_reader_1_1_test_module.html#aba10665de07aabe09c7f7fd8a58937ae", null ],
     [ "mainLoop", "struct_tests_1_1test_config_reader_1_1_test_module.html#a1ed320721974a93111c41847129979db", null ],
     [ "appConfigHasThrown", "struct_tests_1_1test_config_reader_1_1_test_module.html#aadd0f753b73a3082e18cfd23c9e8bbfb", null ],
     [ "done", "struct_tests_1_1test_config_reader_1_1_test_module.html#a4b28e57e298d2321a66895577ad757e1", null ],

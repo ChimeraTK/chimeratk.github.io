@@ -23,6 +23,7 @@ var dir_12103a13d03486cdb1fa8b48e27c887f =
     [ "testPeriodicTrigger.cc", "test_periodic_trigger_8cc.html", "test_periodic_trigger_8cc" ],
     [ "testProcessVariableRecovery.cc", "test_process_variable_recovery_8cc.html", "test_process_variable_recovery_8cc" ],
     [ "testPropagateDataFaultFlag.cc", "test_propagate_data_fault_flag_8cc.html", "test_propagate_data_fault_flag_8cc" ],
+    [ "testPython.cc", "test_python_8cc.html", "test_python_8cc" ],
     [ "testScriptedInitialisationHandler.cc", "test_scripted_initialisation_handler_8cc.html", "test_scripted_initialisation_handler_8cc" ],
     [ "testStatusAggregator.cc", "test_status_aggregator_8cc.html", "test_status_aggregator_8cc" ],
     [ "testStatusMonitor.cc", "test_status_monitor_8cc.html", "test_status_monitor_8cc" ],

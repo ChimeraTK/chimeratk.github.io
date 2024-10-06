@@ -7,6 +7,7 @@ var hierarchy =
     [ "ACCESSOR", null, [
       [ "ChimeraTK::StatusAccessor< ACCESSOR >", "struct_chimera_t_k_1_1_status_accessor.html", null ]
     ] ],
+    [ "ChimeraTK::AccessorTypeTag< AccessorType >", "class_chimera_t_k_1_1_accessor_type_tag.html", null ],
     [ "ChimeraTK::Model::AndSet< FILTER_LHS, FILTER_RHS >", "struct_chimera_t_k_1_1_model_1_1_and_set.html", null ],
     [ "ChimeraTK::AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
     [ "ApplicationBase", null, [
@@ -33,6 +34,7 @@ var hierarchy =
         [ "Tests::testCircularDependencyFaultyFlags::TestApplication1", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_application1.html", null ],
         [ "Tests::testCircularDependencyFaultyFlags::TestApplication2", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_application2.html", null ],
         [ "Tests::testConfigReader::TestApplication", "struct_tests_1_1test_config_reader_1_1_test_application.html", null ],
+        [ "Tests::testConfigReader::TestApplicationInvalidConfig", "struct_tests_1_1test_config_reader_1_1_test_application_invalid_config.html", null ],
         [ "Tests::testConfigReader::TestApplicationNoConfigs", "struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html", null ],
         [ "Tests::testConfigReader::TestApplicationTwoConfigs", "struct_tests_1_1test_config_reader_1_1_test_application_two_configs.html", null ],
         [ "Tests::testConfigReader::TestApplicationWithDevice", "struct_tests_1_1test_config_reader_1_1_test_application_with_device.html", null ],
@@ -86,6 +88,9 @@ var hierarchy =
         [ "Tests::testPropagateDataFaultFlag::TestApplication3", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application3.html", null ],
         [ "Tests::testPropagateDataFaultFlag::TestApplication4", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application4.html", null ],
         [ "Tests::testPropagateDataFaultFlag::TestApplication5", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application5.html", null ],
+        [ "Tests::testPython::TestApp", "struct_tests_1_1test_python_1_1_test_app.html", null ],
+        [ "Tests::testPython::TestAppReadAny", "struct_tests_1_1test_python_1_1_test_app_read_any.html", null ],
+        [ "Tests::testPython::TestAppVersionNumber", "struct_tests_1_1test_python_1_1_test_app_version_number.html", null ],
         [ "Tests::testScriptedInitialisationHandler::TestApp", "struct_tests_1_1test_scripted_initialisation_handler_1_1_test_app.html", null ],
         [ "Tests::testStatusAggregator::TestApplication", "struct_tests_1_1test_status_aggregator_1_1_test_application.html", null ],
         [ "Tests::testStatusAggregator::TestApplication2Levels", "struct_tests_1_1test_status_aggregator_1_1_test_application2_levels.html", null ],
@@ -115,6 +120,22 @@ var hierarchy =
         [ "Tests::testVersionpropagation::TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", null ]
       ] ]
     ] ],
+    [ "ApplicationModule", null, [
+      [ "testPythonApplicationModule.MyMod", "classtest_python_application_module_1_1_my_mod.html", null ],
+      [ "testPythonApplicationModule.SecondMod", "classtest_python_application_module_1_1_second_mod.html", null ],
+      [ "testPythonDataConsistencyGroup.Receiver", "classtest_python_data_consistency_group_1_1_receiver.html", null ],
+      [ "testPythonDataConsistencyGroup.Sender", "classtest_python_data_consistency_group_1_1_sender.html", null ],
+      [ "testPythonReadAnyGroup.ReadAnyGroupMod1", "classtest_python_read_any_group_1_1_read_any_group_mod1.html", null ],
+      [ "testPythonScalarAccessors.MyMod", "classtest_python_scalar_accessors_1_1_my_mod.html", null ],
+      [ "testPythonVariableGroup.MyMod", "classtest_python_variable_group_1_1_my_mod.html", null ],
+      [ "testPythonVersionNumber.TestRunner", "classtest_python_version_number_1_1_test_runner.html", null ],
+      [ "testPythonWithArray.MyMod", "classtest_python_with_array_1_1_my_mod.html", null ],
+      [ "testPythonWithArray.MySecondMod", "classtest_python_with_array_1_1_my_second_mod.html", null ],
+      [ "userAppModules.SetpointRamp", "classuser_app_modules_1_1_setpoint_ramp.html", null ]
+    ] ],
+    [ "ApplicationModule", null, [
+      [ "testPythonSimpleApp.MyMod", "classtest_python_simple_app_1_1_my_mod.html", null ]
+    ] ],
     [ "ChimeraTK::Model::VertexProperties::ApplicationModuleProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_application_module_properties.html", null ],
     [ "ChimeraTK::ConfigReader::Array< T >", "struct_chimera_t_k_1_1_config_reader_1_1_array.html", null ],
     [ "ChimeraTK::Array", "struct_chimera_t_k_1_1_array.html", null ],
@@ -136,6 +157,7 @@ var hierarchy =
       [ "Tests::testTrigger::TestTransferGroupDummy", "class_tests_1_1test_trigger_1_1_test_transfer_group_dummy.html", null ]
     ] ],
     [ "ChimeraTK::Model::EdgeProperties", "struct_chimera_t_k_1_1_model_1_1_edge_properties.html", null ],
+    [ "Tests::testVersionpropagation::EmptyFixture", "class_tests_1_1test_versionpropagation_1_1_empty_fixture.html", null ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::Model::Impl", "class_chimera_t_k_1_1_model_1_1_impl.html", null ]
     ] ],
@@ -149,10 +171,9 @@ var hierarchy =
       [ "ChimeraTK::Module", "class_chimera_t_k_1_1_module.html", [
         [ "ChimeraTK::ModuleGroup", "class_chimera_t_k_1_1_module_group.html", [
           [ "ChimeraTK::Application", "class_chimera_t_k_1_1_application.html", null ],
-          [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_device_module.html", [
-            [ "ChimeraTK::ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", null ]
-          ] ],
+          [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_device_module.html", null ],
           [ "ChimeraTK::EventMessageAggregator", "class_chimera_t_k_1_1_event_message_aggregator.html", null ],
+          [ "ChimeraTK::PyModuleGroup", "class_chimera_t_k_1_1_py_module_group.html", null ],
           [ "DummyApplication::Group1", "struct_dummy_application_1_1_group1.html", null ],
           [ "DummyApplication::Group2", "struct_dummy_application_1_1_group2.html", null ],
           [ "DummyApplication::Group3", "struct_dummy_application_1_1_group3.html", null ],
@@ -193,6 +214,9 @@ var hierarchy =
             ] ],
             [ "ChimeraTK::Multiplier< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_multiplier.html", null ],
             [ "ChimeraTK::PeriodicTrigger", "struct_chimera_t_k_1_1_periodic_trigger.html", null ],
+            [ "ChimeraTK::PyApplicationModule", "class_chimera_t_k_1_1_py_application_module.html", [
+              [ "ChimeraTK::PythonApplicationModuleTrampoline", "class_chimera_t_k_1_1_python_application_module_trampoline.html", null ]
+            ] ],
             [ "ChimeraTK::ReadBitMask< NBITS >", "struct_chimera_t_k_1_1_read_bit_mask.html", null ],
             [ "ChimeraTK::ReadSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_read_split_array_module.html", null ],
             [ "ChimeraTK::ScalarPipe< Type >", "struct_chimera_t_k_1_1_scalar_pipe.html", null ],
@@ -311,9 +335,8 @@ var hierarchy =
             [ "Tests::testVersionpropagation::ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", null ]
           ] ],
           [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", null ],
-          [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", null ],
-          [ "ChimeraTK::ModifyHierarchy< ACCESSOR >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
           [ "ChimeraTK::ModuleTree", "class_chimera_t_k_1_1_module_tree.html", null ],
+          [ "ChimeraTK::PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", null ],
           [ "ChimeraTK::ReadBitMask< NBITS >::Output", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html", null ],
           [ "ChimeraTK::StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", null ],
           [ "ChimeraTK::StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", null ],
@@ -335,6 +358,10 @@ var hierarchy =
           [ "Tests::testDeviceExceptionFlagPropagation::TestApplication::Name::Name2", "struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_name_1_1_name2.html", null ],
           [ "Tests::testHierarchyModifyingGroup::TestApplication::TestModule::ExtraHierarchy", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy.html", null ],
           [ "Tests::testHierarchyModifyingGroup::TestGroup", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_group.html", null ],
+          [ "Tests::testIllegalNetworks::CircularConnectionModuleWithIntermediateGroup::A", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group_1_1_a.html", null ],
+          [ "Tests::testIllegalNetworks::CircularConnectionModuleWithIntermediateGroup::A::B", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group_1_1_a_1_1_b.html", null ],
+          [ "Tests::testIllegalNetworks::CircularConnectionModuleWithIntermediateGroup::A::B::C", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group_1_1_a_1_1_b_1_1_c.html", null ],
+          [ "Tests::testIllegalNetworks::CircularConnectionModuleWithIntermediateGroup::A::B::C::D", "struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group_1_1_a_1_1_b_1_1_c_1_1_d.html", null ],
           [ "Tests::testModules::SlashedGroup", "struct_tests_1_1test_modules_1_1_slashed_group.html", null ],
           [ "Tests::testModules::SlashModule::AnotherGroup", "struct_tests_1_1test_modules_1_1_slash_module_1_1_another_group.html", null ],
           [ "Tests::testModules::SomeGroup", "struct_tests_1_1test_modules_1_1_some_group.html", null ],
@@ -431,6 +458,7 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ArrayAccessor< UserType >", "class_chimera_t_k_1_1_array_accessor.html", [
         [ "ChimeraTK::ArrayOutput< UserType >", "struct_chimera_t_k_1_1_array_output.html", null ],
+        [ "ChimeraTK::ArrayOutputPushRB< UserType >", "struct_chimera_t_k_1_1_array_output_push_r_b.html", null ],
         [ "ChimeraTK::ArrayOutputRB< UserType >", "struct_chimera_t_k_1_1_array_output_r_b.html", null ],
         [ "ChimeraTK::ArrayPollInput< UserType >", "struct_chimera_t_k_1_1_array_poll_input.html", null ],
         [ "ChimeraTK::ArrayPushInput< UserType >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
@@ -631,6 +659,31 @@ var hierarchy =
     [ "ChimeraTK::PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", [
       [ "ChimeraTK::VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", null ]
     ] ],
+    [ "ChimeraTK::PyApplicationCoreUnload", "struct_chimera_t_k_1_1_py_application_core_unload.html", null ],
+    [ "ChimeraTK::PyConfigReader", "class_chimera_t_k_1_1_py_config_reader.html", null ],
+    [ "ChimeraTK::PyDataConsistencyGroup", "class_chimera_t_k_1_1_py_data_consistency_group.html", null ],
+    [ "ChimeraTK::PyLogger", "class_chimera_t_k_1_1_py_logger.html", null ],
+    [ "ChimeraTK::PyLoggerStreamProxy", "class_chimera_t_k_1_1_py_logger_stream_proxy.html", null ],
+    [ "ChimeraTK::PyOwnedObject", "class_chimera_t_k_1_1_py_owned_object.html", [
+      [ "ChimeraTK::PyArrayAccessor", "class_chimera_t_k_1_1_py_array_accessor.html", null ],
+      [ "ChimeraTK::PyOwningObject", "class_chimera_t_k_1_1_py_owning_object.html", [
+        [ "ChimeraTK::PyApplicationModule", "class_chimera_t_k_1_1_py_application_module.html", null ],
+        [ "ChimeraTK::PyModuleGroup", "class_chimera_t_k_1_1_py_module_group.html", null ],
+        [ "ChimeraTK::PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", null ]
+      ] ],
+      [ "ChimeraTK::PyScalarAccessor", "class_chimera_t_k_1_1_py_scalar_accessor.html", null ]
+    ] ],
+    [ "ChimeraTK::PyReadAnyGroup", "class_chimera_t_k_1_1_py_read_any_group.html", null ],
+    [ "ChimeraTK::PythonModuleManager", "class_chimera_t_k_1_1_python_module_manager.html", null ],
+    [ "ChimeraTK::PyTransferElementBase", "class_chimera_t_k_1_1_py_transfer_element_base.html", [
+      [ "ChimeraTK::PyTransferElement< DerivedAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", null ],
+      [ "ChimeraTK::PyTransferElement< PyArrayAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", [
+        [ "ChimeraTK::PyArrayAccessor", "class_chimera_t_k_1_1_py_array_accessor.html", null ]
+      ] ],
+      [ "ChimeraTK::PyTransferElement< PyScalarAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", [
+        [ "ChimeraTK::PyScalarAccessor", "class_chimera_t_k_1_1_py_scalar_accessor.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
     [ "ChimeraTK::Model::VertexProperties::RootProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html", null ],
     [ "ScalarRegisterAccessor", null, [
@@ -698,6 +751,9 @@ var hierarchy =
       [ "ChimeraTK::UserInputValidator::Variable< UserType, Accessor >", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html", null ]
     ] ],
     [ "ChimeraTK::VariableDirection", "struct_chimera_t_k_1_1_variable_direction.html", null ],
+    [ "VariableGroup", null, [
+      [ "testPythonVariableGroup.MyMod.VG2", "classtest_python_variable_group_1_1_my_mod_1_1_v_g2.html", null ]
+    ] ],
     [ "ChimeraTK::Model::VertexProperties::VariableGroupProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html", null ],
     [ "ChimeraTK::VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html", null ],
     [ "ChimeraTK::VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html", null ],
