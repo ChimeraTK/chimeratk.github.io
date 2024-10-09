@@ -41,11 +41,15 @@ var searchData=
   ['user_5fregister_5fstring_2368',['USER_REGISTER_STRING',['../test_dummy_backend_8cpp.html#a3666956980c94e99f82e036ef8b34395',1,'testDummyBackend.cpp']]],
   ['usertypemap_2369',['userTypeMap',['../namespace_chimera_t_k.html#a1e4921a63a21ed0cdbe9c1259b7b7bb2',1,'ChimeraTK']]],
   ['usertypemapnovoid_2370',['userTypeMapNoVoid',['../namespace_chimera_t_k.html#ad1f8efd0503fa72d47d28fcdb95c64b7',1,'ChimeraTK']]],
-  ['usertypetonumeric_2371',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
-  ['usertypetousertype_2372',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]],
-  ['usestatus_2373',['useStatus',['../struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377',1,'StaticCore']]],
-  ['usingformulas_2374',['usingFormulas',['../struct_chimera_t_k_1_1_l_n_m_variable.html#aeb42470c1353bddd16c02eb2d9fdada3',1,'ChimeraTK::LNMVariable']]],
-  ['utilities_2ecpp_2375',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],
-  ['utilities_2eh_2376',['Utilities.h',['../_utilities_8h.html',1,'']]],
-  ['using_20push_2dtype_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_2377',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
+  ['usertypetemplatevariant_2371',['UserTypeTemplateVariant',['../namespace_chimera_t_k.html#a213dc243ddad446f4859cc85817498f5',1,'ChimeraTK']]],
+  ['usertypetemplatevariantnovoid_2372',['UserTypeTemplateVariantNoVoid',['../namespace_chimera_t_k.html#ab00baf19828b33e1b4257b274bab7a09',1,'ChimeraTK']]],
+  ['usertypetonumeric_2373',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
+  ['usertypetousertype_2374',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]],
+  ['usertypevariant_2375',['UserTypeVariant',['../namespace_chimera_t_k.html#a1d304b40c766b2ac64f55e5452a7372f',1,'ChimeraTK']]],
+  ['usertypevariantnovoid_2376',['UserTypeVariantNoVoid',['../namespace_chimera_t_k.html#a58e1416ff1b810464c18fdb359c70b3f',1,'ChimeraTK']]],
+  ['usestatus_2377',['useStatus',['../struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377',1,'StaticCore']]],
+  ['usingformulas_2378',['usingFormulas',['../struct_chimera_t_k_1_1_l_n_m_variable.html#aeb42470c1353bddd16c02eb2d9fdada3',1,'ChimeraTK::LNMVariable']]],
+  ['utilities_2ecpp_2379',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],
+  ['utilities_2eh_2380',['Utilities.h',['../_utilities_8h.html',1,'']]],
+  ['using_20push_2dtype_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_2381',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
 ];

@@ -140,6 +140,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "TypeChangingDecorator.h", "_type_changing_decorator_8h.html", "_type_changing_decorator_8h" ],
     [ "UnifiedBackendTest.h", "_unified_backend_test_8h.html", "_unified_backend_test_8h" ],
     [ "Utilities.h", "_utilities_8h.html", "_utilities_8h" ],
+    [ "VariantUserTypes.h", "_variant_user_types_8h.html", "_variant_user_types_8h" ],
     [ "VersionNumber.h", "_version_number_8h.html", "_version_number_8h" ],
     [ "VirtualFunctionTemplate.h", "_virtual_function_template_8h.html", "_virtual_function_template_8h" ],
     [ "VoidRegisterAccessor.h", "_void_register_accessor_8h.html", [

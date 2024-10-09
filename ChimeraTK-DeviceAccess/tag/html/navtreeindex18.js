@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"struct_short_raw__fixed_point16__8u.html":[19,0,197],
+"struct_short_raw__fixed_point16__8u.html#a6a5570284a03b02f7c9d67c77827ef47":[19,0,197,0],
+"struct_short_raw__fixed_point16__8u.html#a739aaa8b11f696050c7fd935623b38a0":[19,0,197,3],
+"struct_short_raw__fixed_point16__8u.html#a874764c5ff5d5fe0dcb31d0c92938d3d":[19,0,197,4],
+"struct_short_raw__fixed_point16__8u.html#a9289dd9f6902e43924a8a5c94a73b97f":[19,0,197,5],
+"struct_short_raw__fixed_point16__8u.html#aaace8f250609d61f4428df5abf49a4d3":[19,0,197,1],
 "struct_short_raw__fixed_point16__8u.html#aafbac5d0374344ff1c0d1fc0ab1ce669":[19,0,197,6],
 "struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b":[19,0,197,2],
 "struct_short_raw__signed16.html":[19,0,198],
@@ -44,8 +50,8 @@ var NAVTREEINDEX18 =
 "struct_test_fixture.html#abfb36f8ba87894524c54cc49e0d478c6":[19,0,205,7],
 "struct_test_locker.html":[19,0,206],
 "struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4":[19,0,206,5],
-"struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[19,0,206,1],
 "struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[19,0,206,3],
+"struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[19,0,206,1],
 "struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1":[19,0,206,4],
 "struct_test_locker.html#a53df2e77dd02d4582270cc57184af79a":[19,0,206,2],
 "struct_test_locker.html#a53df2e77dd02d4582270cc57184af79a":[19,0,206,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[20,0,0,0,7,1,7,2],
 "test_device_info_map_8cpp_source.html":[20,0,0,0,7,1,7],
 "test_double_buffering_8cpp.html":[20,0,0,0,7,1,9],
-"test_double_buffering_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,0,0,7,1,9,9],
-"test_double_buffering_8cpp.html#a3f6c2f53febe485c77b8715b10670629":[20,0,0,0,7,1,9,13],
-"test_double_buffering_8cpp.html#a462f73aa1a75a1d480ec5aa94383d439":[20,0,0,0,7,1,9,14],
-"test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434":[20,0,0,0,7,1,9,15],
-"test_double_buffering_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,0,0,7,1,9,10],
-"test_double_buffering_8cpp.html#a853017d5a2c41666d5714fce28aa6bdb":[20,0,0,0,7,1,9,11],
-"test_double_buffering_8cpp.html#ab4423a7f580c59b7d5935f0e0f4d01fe":[20,0,0,0,7,1,9,16]
+"test_double_buffering_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,0,0,7,1,9,9]
 };

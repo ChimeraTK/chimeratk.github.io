@@ -1,5 +1,11 @@
 var NAVTREEINDEX13 =
 {
+"shared_dummy_helpers_8h_source.html":[20,0,0,0,7,2,3],
+"spec__device_backend.html":[12],
+"spec__transfer_element.html":[13],
+"spec__transfer_element.html#autotoc_md1":[0],
+"spec__transfer_element.html#autotoc_md10":[5],
+"spec__transfer_element.html#autotoc_md11":[5,0],
 "spec__transfer_element.html#autotoc_md2":[1],
 "spec__transfer_element.html#autotoc_md3":[1,1],
 "spec__transfer_element.html#autotoc_md4":[2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX13 =
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a4d498d2a51596adfde956ab442fa9267":[19,0,1,2,3,1],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a5872b352f7abc3d3b5d09839abd698cf":[19,0,1,2,3,0],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a68dffc4379b8e04304c1fc4e0a2205f3":[19,0,1,2,3,7],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a8552efb2b84e69bba8f3ea4ce0b4b581":[19,0,1,2,3,5],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a89e00f1f170ff4404b5eecb37f72bf28":[19,0,1,2,3,13],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a9e05390f3f7aab227ad5f1fc25808eae":[19,0,1,2,3,14],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#aaf4f33745ee63e4fe16993e9b881e47b":[19,0,1,2,3,4],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#abcc73797c67c0a115df0886a2d18aadd":[19,0,1,2,3,11],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ad0d3d30aaa8082e9e53520076492dc06":[19,0,1,2,3,15],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ae54dc668730cb4031da6f4ddfcabb8e4":[19,0,1,2,3,6]
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a8552efb2b84e69bba8f3ea4ce0b4b581":[19,0,1,2,3,5]
 };

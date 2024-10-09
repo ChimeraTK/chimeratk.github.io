@@ -1,5 +1,11 @@
 var NAVTREEINDEX14 =
 {
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a89e00f1f170ff4404b5eecb37f72bf28":[19,0,1,2,3,13],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a9e05390f3f7aab227ad5f1fc25808eae":[19,0,1,2,3,14],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#aaf4f33745ee63e4fe16993e9b881e47b":[19,0,1,2,3,4],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#abcc73797c67c0a115df0886a2d18aadd":[19,0,1,2,3,11],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ad0d3d30aaa8082e9e53520076492dc06":[19,0,1,2,3,15],
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ae54dc668730cb4031da6f4ddfcabb8e4":[19,0,1,2,3,6],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html":[19,0,1,2,8],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a27a4786e70ff09a490ae316bdda06430":[19,0,1,2,8,1],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a46d8e909273211386315b9a65657eb15":[19,0,1,2,8,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX14 =
 "struct_constant_register_descriptor_base.html#a6e68fe5e4565936482ed07c608d90e6e":[19,0,36,7],
 "struct_constant_register_descriptor_base.html#a9f44f03cb95c71198f102bf283c1dd3a":[19,0,36,6],
 "struct_constant_register_descriptor_base.html#abc15f5afdfbdaecb8071218aa243f79b":[19,0,36,2],
-"struct_constant_register_descriptor_base.html#af076bd4dae4d56715927396dbdd92bcd":[19,0,36,1],
-"struct_constant_register_descriptor_base.html#afc2e20dded028af6900e842078a47e14":[19,0,36,0],
-"struct_counting_decorator.html":[19,0,37],
-"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[19,0,37,1],
-"struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12":[19,0,37,9],
-"struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[19,0,37,17],
-"struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[19,0,37,2]
+"struct_constant_register_descriptor_base.html#af076bd4dae4d56715927396dbdd92bcd":[19,0,36,1]
 };
