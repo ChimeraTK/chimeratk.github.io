@@ -35,6 +35,5 @@ var dir_c4f004b0a33fd27f79e42c6ef0e1ea63 =
     ] ],
     [ "PyVariableGroup.h", "_py_variable_group_8h.html", [
       [ "PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", "class_chimera_t_k_1_1_py_variable_group" ]
-    ] ],
-    [ "PyVariantTypeDefs.h", "_py_variant_type_defs_8h.html", "_py_variant_type_defs_8h" ]
+    ] ]
 ];

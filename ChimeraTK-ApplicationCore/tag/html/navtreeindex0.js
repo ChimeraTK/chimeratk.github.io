@@ -220,12 +220,6 @@ var NAVTREEINDEX0 =
 "_py_variable_group_8cc_source.html":[16,0,0,0,6,0,1,10],
 "_py_variable_group_8h.html":[16,0,0,0,6,0,0,10],
 "_py_variable_group_8h_source.html":[16,0,0,0,6,0,0,10],
-"_py_variant_type_defs_8h.html":[16,0,0,0,6,0,0,11],
-"_py_variant_type_defs_8h.html#a0e310ca6f44eb91273503ba6f16992ac":[16,0,0,0,6,0,0,11,3],
-"_py_variant_type_defs_8h.html#a4a5be8871fc3874f46457c18d263ddc9":[16,0,0,0,6,0,0,11,0],
-"_py_variant_type_defs_8h.html#acd34e34ab48dd7457aefb44792e9546d":[16,0,0,0,6,0,0,11,1],
-"_py_variant_type_defs_8h.html#ad3dfdc20abc3272e709558c5c84949bb":[16,0,0,0,6,0,0,11,2],
-"_py_variant_type_defs_8h_source.html":[16,0,0,0,6,0,0,11],
 "_python_bindings_8cc.html":[16,0,0,0,6,0,1,8],
 "_python_bindings_8cc.html#ad1d2aa2e2e2ee982024aad4d8c637fb0":[16,0,0,0,6,0,1,8,1],
 "_python_bindings_8cc_source.html":[16,0,0,0,6,0,1,8],
@@ -249,5 +243,11 @@ var NAVTREEINDEX0 =
 "_split_array_8h_source.html":[16,0,0,0,5,0,10],
 "_status_accessor_8h.html":[16,0,0,0,5,0,11],
 "_status_accessor_8h_source.html":[16,0,0,0,5,0,11],
-"_status_aggregator_8cc.html":[16,0,0,0,5,1,4]
+"_status_aggregator_8cc.html":[16,0,0,0,5,1,4],
+"_status_aggregator_8cc_source.html":[16,0,0,0,5,1,4],
+"_status_aggregator_8h.html":[16,0,0,0,5,0,12],
+"_status_aggregator_8h_source.html":[16,0,0,0,5,0,12],
+"_status_monitor_8cc.html":[16,0,0,0,5,1,5],
+"_status_monitor_8cc_source.html":[16,0,0,0,5,1,5],
+"_status_monitor_8h.html":[16,0,0,0,5,0,13]
 };

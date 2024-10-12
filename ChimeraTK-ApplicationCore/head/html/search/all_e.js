@@ -115,6 +115,5 @@ var searchData=
   ['pytransferelementbase_1062',['PyTransferElementBase',['../class_chimera_t_k_1_1_py_transfer_element_base.html',1,'ChimeraTK']]],
   ['pyvariablegroup_1063',['PyVariableGroup',['../class_chimera_t_k_1_1_py_variable_group.html',1,'ChimeraTK::PyVariableGroup'],['../class_chimera_t_k_1_1_py_variable_group.html#a3628fa8700f4b77a0a2d309900de30ba',1,'ChimeraTK::PyVariableGroup::PyVariableGroup()']]],
   ['pyvariablegroup_2ecc_1064',['PyVariableGroup.cc',['../_py_variable_group_8cc.html',1,'']]],
-  ['pyvariablegroup_2eh_1065',['PyVariableGroup.h',['../_py_variable_group_8h.html',1,'']]],
-  ['pyvarianttypedefs_2eh_1066',['PyVariantTypeDefs.h',['../_py_variant_type_defs_8h.html',1,'']]]
+  ['pyvariablegroup_2eh_1065',['PyVariableGroup.h',['../_py_variable_group_8h.html',1,'']]]
 ];

@@ -1,11 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_status_aggregator_8cc_source.html":[16,0,0,0,5,1,4],
-"_status_aggregator_8h.html":[16,0,0,0,5,0,12],
-"_status_aggregator_8h_source.html":[16,0,0,0,5,0,12],
-"_status_monitor_8cc.html":[16,0,0,0,5,1,5],
-"_status_monitor_8cc_source.html":[16,0,0,0,5,1,5],
-"_status_monitor_8h.html":[16,0,0,0,5,0,13],
 "_status_monitor_8h_source.html":[16,0,0,0,5,0,13],
 "_status_with_message_8cc.html":[16,0,0,0,5,1,6],
 "_status_with_message_8cc_source.html":[16,0,0,0,5,1,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX1 =
 "class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a5cc4cf7db51ff936f4d7211e3749e442":[15,0,0,24,7],
 "class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a77c532dd2a65ed2dd6a09883cec0005b":[15,0,0,24,2],
 "class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a82d80ac677590bc1b2d9ab8602143c7d":[15,0,0,24,6],
-"class_chimera_t_k_1_1_debug_print_accessor_decorator.html#acbbfc1d903df2ecd31179b19051b2fe2":[15,0,0,24,0]
+"class_chimera_t_k_1_1_debug_print_accessor_decorator.html#acbbfc1d903df2ecd31179b19051b2fe2":[15,0,0,24,0],
+"class_chimera_t_k_1_1_debug_print_accessor_decorator.html#affba0d6d0aa9834fbfb780d99ee71ffc":[15,0,0,24,1],
+"class_chimera_t_k_1_1_device_manager.html":[15,0,0,25],
+"class_chimera_t_k_1_1_device_manager.html#a047c4799d7d30c2576b5ba327678c7d7":[15,0,0,25,20],
+"class_chimera_t_k_1_1_device_manager.html#a04c9d966edbfb5a6bd449fa48b4e2c62":[15,0,0,25,37],
+"class_chimera_t_k_1_1_device_manager.html#a0f0dff488e465fd497706830dda52280":[15,0,0,25,4],
+"class_chimera_t_k_1_1_device_manager.html#a16fa7f958a6cb4ad0d9880d9b386fa5f":[15,0,0,25,26]
 };

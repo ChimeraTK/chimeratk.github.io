@@ -1,11 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classtest_python_scalar_accessors_1_1_my_mod.html#af1dff7e3dae55be15af5ba3b78e26634":[15,0,4,0,4],
-"classtest_python_scalar_accessors_1_1_my_mod.html#af324e4b3bde609f3eaaf5c291a5fa715":[15,0,4,0,9],
-"classtest_python_simple_app_1_1_my_mod.html":[15,0,5,0],
-"classtest_python_simple_app_1_1_my_mod.html#a21d96541d0713ce3d168c430dd35b0cc":[15,0,5,0,0],
-"classtest_python_simple_app_1_1_my_mod.html#aa1741a1aa37aa904a94abd72aafcab76":[15,0,5,0,1],
-"classtest_python_simple_app_1_1_my_mod.html#ab1dabbe57706efb71f44ee0f92411c94":[15,0,5,0,2],
 "classtest_python_simple_app_1_1_my_mod.html#aee49c85683f94738b8d7a01821fdd194":[15,0,5,0,3],
 "classtest_python_variable_group_1_1_my_mod.html":[15,0,6,0],
 "classtest_python_variable_group_1_1_my_mod.html#a040eb71b4615b7b424fa8d63913d89b0":[15,0,6,0,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX5 =
 "namespace_tests_1_1test_circular_dependency_faulty_flags.html":[15,0,9,4],
 "namespace_tests_1_1test_config_reader.html":[14,0,15,5],
 "namespace_tests_1_1test_config_reader.html":[15,0,9,5],
-"namespace_tests_1_1test_control_system_accessors.html":[14,0,15,6]
+"namespace_tests_1_1test_control_system_accessors.html":[15,0,9,6],
+"namespace_tests_1_1test_control_system_accessors.html":[14,0,15,6],
+"namespace_tests_1_1test_data_validity_propagation.html":[15,0,9,7],
+"namespace_tests_1_1test_data_validity_propagation.html":[14,0,15,7],
+"namespace_tests_1_1test_device_accessors.html":[15,0,9,8],
+"namespace_tests_1_1test_device_accessors.html":[14,0,15,8],
+"namespace_tests_1_1test_device_exception_flag_propagation.html":[15,0,9,9]
 };
