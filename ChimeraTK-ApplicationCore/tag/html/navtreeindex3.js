@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"class_chimera_t_k_1_1_model_1_1_module_group_proxy.html":[15,0,0,0,15],
 "class_chimera_t_k_1_1_model_1_1_module_group_proxy.html#a009f89316d68b2f98e4fb78fb2aec4f2":[15,0,0,0,15,7],
 "class_chimera_t_k_1_1_model_1_1_module_group_proxy.html#a09733850f8b910bc2c1284c6a2731056":[15,0,0,0,15,2],
 "class_chimera_t_k_1_1_model_1_1_module_group_proxy.html#a14e143440f8e06f4ff7a076015c70bbc":[15,0,0,0,15,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "class_chimera_t_k_1_1_py_transfer_element_base.html#a693a90dde473819f99338c9daebb5358":[15,0,0,73,0],
 "class_chimera_t_k_1_1_py_transfer_element_base.html#a9db60d7b051895370b91c9e0136ca59d":[15,0,0,73,1],
 "class_chimera_t_k_1_1_py_variable_group.html":[15,0,0,74],
-"class_chimera_t_k_1_1_py_variable_group.html#a0abfd6063f345e59df6cebfabe379c86":[15,0,0,74,2]
+"class_chimera_t_k_1_1_py_variable_group.html#a0abfd6063f345e59df6cebfabe379c86":[15,0,0,74,2],
+"class_chimera_t_k_1_1_py_variable_group.html#a11e5376cecc16ce4cb0bf68cd002d831":[15,0,0,74,4]
 };

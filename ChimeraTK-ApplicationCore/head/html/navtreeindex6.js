@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"namespace_tests_1_1test_device_exception_flag_propagation.html":[15,0,9,9],
 "namespace_tests_1_1test_device_exception_flag_propagation.html":[14,0,15,9],
 "namespace_tests_1_1test_device_initialisation_handler.html":[15,0,9,10],
 "namespace_tests_1_1test_device_initialisation_handler.html":[14,0,15,10],
@@ -223,15 +224,15 @@ var NAVTREEINDEX6 =
 "struct_array_variable_group_test_app.html":[15,0,15],
 "struct_array_variable_group_test_app.html#a2f0bdec9544b7c85e3918629763dae1a":[15,0,15,0],
 "struct_array_variable_group_test_app.html#a835f71498d8f63108e5d03a90d08bd6b":[15,0,15,1],
-"struct_array_variable_group_test_app.html#a8c54cd3607dbc96523283460c12ba086":[15,0,15,3],
 "struct_array_variable_group_test_app.html#a8c54cd3607dbc96523283460c12ba086":[15,0,15,2],
+"struct_array_variable_group_test_app.html#a8c54cd3607dbc96523283460c12ba086":[15,0,15,3],
 "struct_array_variable_group_test_app.html#aed712717149e99262b70db48cdf4fc5a":[15,0,15,4],
 "struct_array_variable_group_test_app_for_move.html":[15,0,16],
 "struct_array_variable_group_test_app_for_move.html#a034ecdd9f3612c53b74bca882244007a":[15,0,16,1],
 "struct_array_variable_group_test_app_for_move.html#a5d0abe6d1b10d6560948cbea2f7bfe48":[15,0,16,4],
 "struct_array_variable_group_test_app_for_move.html#a71f71a5cd7daa13fcf8943818795fe57":[15,0,16,0],
-"struct_array_variable_group_test_app_for_move.html#adc31d40c4d9f0e99b3e7c9f77f4e652c":[15,0,16,2],
 "struct_array_variable_group_test_app_for_move.html#adc31d40c4d9f0e99b3e7c9f77f4e652c":[15,0,16,3],
+"struct_array_variable_group_test_app_for_move.html#adc31d40c4d9f0e99b3e7c9f77f4e652c":[15,0,16,2],
 "struct_chimera_t_k_1_1_array.html":[15,0,0,7],
 "struct_chimera_t_k_1_1_array.html#a1b8c05d2433a2926a401f61a9c2b21fd":[15,0,0,7,2],
 "struct_chimera_t_k_1_1_array.html#a3fd321284846576870e78a57bd741457":[15,0,0,7,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "struct_chimera_t_k_1_1_array_output.html#a237fa8df1cc3ba82faad79792aec7a01":[15,0,0,10,1],
 "struct_chimera_t_k_1_1_array_output.html#a2d9907b36a677adedfa23827dd8b8af7":[15,0,0,10,0],
 "struct_chimera_t_k_1_1_array_output_push_r_b.html":[15,0,0,11],
-"struct_chimera_t_k_1_1_array_output_push_r_b.html#a4f88368114a8a54d53bc3dcf1d0283c7":[15,0,0,11,1],
-"struct_chimera_t_k_1_1_array_output_push_r_b.html#abcd31e4f185538433b8db527d2e259a9":[15,0,0,11,0]
+"struct_chimera_t_k_1_1_array_output_push_r_b.html#a4f88368114a8a54d53bc3dcf1d0283c7":[15,0,0,11,1]
 };

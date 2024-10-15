@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_feeding_fan_out.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_feeding_fan_out-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -117,9 +118,6 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_feeding_fan_out.
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ad1d338effacc26a2f5f0fa0b3e5352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a4ad1d338effacc26a2f5f0fa0b3e5352">FeedingFanOut</a> (std::string const &amp;name, std::string const &amp;unit, std::string const &amp;description, size_t numberOfElements, bool withReturn, <a class="el" href="namespace_chimera_t_k.html#aab0d646f1a4050a8537ab53ee768e09a">ConsumerImplementationPairs</a>&lt; UserType &gt; const &amp;consumerImplementationPairs)</td></tr>
 <tr class="separator:a4ad1d338effacc26a2f5f0fa0b3e5352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab543f8100799a049314e8989d50eafc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ab543f8100799a049314e8989d50eafc6">addSlave</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; slave, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;) override</td></tr>
-<tr class="memdesc:ab543f8100799a049314e8989d50eafc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a slave to the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers.">FanOut</a>.  <a href="class_chimera_t_k_1_1_feeding_fan_out.html#ab543f8100799a049314e8989d50eafc6">More...</a><br /></td></tr>
-<tr class="separator:ab543f8100799a049314e8989d50eafc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d35630b945bce470c62f71f0200e05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a77d35630b945bce470c62f71f0200e05">isReadable</a> () const override</td></tr>
 <tr class="separator:a77d35630b945bce470c62f71f0200e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab25d68fb154f9f8407dcb415660da4a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ab25d68fb154f9f8407dcb415660da4a5">isReadOnly</a> () const override</td></tr>
@@ -158,14 +156,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3496aa9439055f429a1ed9f86d9d98fa inherit pub_methods_class_chimera_t_k_1_1_fan_out"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#a3496aa9439055f429a1ed9f86d9d98fa">removeSlave</a> (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;slave) override</td></tr>
 <tr class="separator:a3496aa9439055f429a1ed9f86d9d98fa inherit pub_methods_class_chimera_t_k_1_1_fan_out"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab543f8100799a049314e8989d50eafc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ab543f8100799a049314e8989d50eafc6">addSlave</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; slave, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;) override</td></tr>
+<tr class="memdesc:ab543f8100799a049314e8989d50eafc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a slave to the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers.">FanOut</a>.  <a href="class_chimera_t_k_1_1_feeding_fan_out.html#ab543f8100799a049314e8989d50eafc6">More...</a><br /></td></tr>
+<tr class="separator:ab543f8100799a049314e8989d50eafc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aeb1f2f3e239b92d48edacd5962df4e1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e">_withReturn</a></td></tr>
 <tr class="memdesc:aeb1f2f3e239b92d48edacd5962df4e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether this <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a> has a return channel.  <a href="class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e">More...</a><br /></td></tr>
 <tr class="separator:aeb1f2f3e239b92d48edacd5962df4e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc8759cb30495d47af53116e1a136ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a6cc8759cb30495d47af53116e1a136ba">_hasReturnSlave</a> {false}</td></tr>
-<tr class="memdesc:a6cc8759cb30495d47af53116e1a136ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used if _withReturn is true: flag whether the corresponding slave with the return channel has already been added.  <a href="class_chimera_t_k_1_1_feeding_fan_out.html#a6cc8759cb30495d47af53116e1a136ba">More...</a><br /></td></tr>
-<tr class="separator:a6cc8759cb30495d47af53116e1a136ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea17f80b08cd42ea1967ad095cef30d"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a1ea17f80b08cd42ea1967ad095cef30d">_returnSlave</a></td></tr>
 <tr class="memdesc:a1ea17f80b08cd42ea1967ad095cef30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The slave with return channel.  <a href="class_chimera_t_k_1_1_feeding_fan_out.html#a1ea17f80b08cd42ea1967ad095cef30d">More...</a><br /></td></tr>
 <tr class="separator:a1ea17f80b08cd42ea1967ad095cef30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +236,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00082">82</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00077">77</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +272,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -281,7 +282,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#aa1a940be01f017aea279642ed5309e59">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00104">104</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00102">102</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -329,7 +330,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00175">175</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00172">172</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +370,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00280">280</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00276">276</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +400,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00161">161</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00158">158</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +440,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00208">208</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00204">204</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +466,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00150">150</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00147">147</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +496,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00236">236</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00232">232</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -525,7 +526,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00263">263</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00259">259</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +553,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00305">305</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00301">301</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +580,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00298">298</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00294">294</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +609,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00061">61</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00057">57</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +637,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#acd4fd1135e8f1cf792c356bc9e609080">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00321">321</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00317">317</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -673,7 +674,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00031">31</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00027">27</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +703,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00033">33</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00029">29</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -731,7 +732,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00035">35</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00031">31</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +763,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00291">291</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00287">287</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -793,39 +794,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00313">313</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00309">309</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6cc8759cb30495d47af53116e1a136ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cc8759cb30495d47af53116e1a136ba">&#9670;&nbsp;</a></span>_hasReturnSlave</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::_hasReturnSlave {false}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Used if _withReturn is true: flag whether the corresponding slave with the return channel has already been added. </p>
-
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00072">72</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
-
-</div>
-</div>
 <a id="a1ea17f80b08cd42ea1967ad095cef30d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ea17f80b08cd42ea1967ad095cef30d">&#9670;&nbsp;</a></span>_returnSlave</h2>
 
@@ -850,7 +823,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>The slave with return channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00075">75</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00070">70</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +852,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag whether this <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a> has a return channel. </p>
 <p>Is specified in the constructor </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00068">68</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00067">67</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>

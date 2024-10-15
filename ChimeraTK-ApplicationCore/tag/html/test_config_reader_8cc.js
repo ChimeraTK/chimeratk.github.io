@@ -16,5 +16,6 @@ var test_config_reader_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#a02bc089aad192c6c8f09357a8fda58ea", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#aa0aa1a2a3f64b8f7dea131c9557d3eac", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#a5dff7f9eee2f9cb156ca23e76caa9607", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_config_reader_8cc.html#ac5f343bef13a852321d22804fa9636bc", null ],
     [ "cdd", "test_config_reader_8cc.html#a2babe5c6890cb08bfbe3e48ae2a9f6e3", null ]
 ];
