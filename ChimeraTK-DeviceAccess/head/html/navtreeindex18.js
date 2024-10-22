@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"struct_short_raw__fixed_point16__8s.html#a7c3e4a81d5bc8a3cc43e66b7e96c2986":[19,0,196,2],
+"struct_short_raw__fixed_point16__8s.html#acd2235bd3df5df9409981afa2a6dd5a1":[19,0,196,3],
 "struct_short_raw__fixed_point16__8u.html":[19,0,197],
 "struct_short_raw__fixed_point16__8u.html#a6a5570284a03b02f7c9d67c77827ef47":[19,0,197,0],
 "struct_short_raw__fixed_point16__8u.html#a739aaa8b11f696050c7fd935623b38a0":[19,0,197,3],
@@ -50,8 +52,8 @@ var NAVTREEINDEX18 =
 "struct_test_fixture.html#abfb36f8ba87894524c54cc49e0d478c6":[19,0,205,7],
 "struct_test_locker.html":[19,0,206],
 "struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4":[19,0,206,5],
-"struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[19,0,206,3],
 "struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[19,0,206,1],
+"struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[19,0,206,3],
 "struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1":[19,0,206,4],
 "struct_test_locker.html#a53df2e77dd02d4582270cc57184af79a":[19,0,206,2],
 "struct_test_locker.html#a53df2e77dd02d4582270cc57184af79a":[19,0,206,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "test_device_8cpp_source.html":[20,0,0,0,7,1,6],
 "test_device_info_map_8cpp.html":[20,0,0,0,7,1,7],
 "test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[20,0,0,0,7,1,7,2],
-"test_device_info_map_8cpp_source.html":[20,0,0,0,7,1,7],
-"test_double_buffering_8cpp.html":[20,0,0,0,7,1,9],
-"test_double_buffering_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,0,0,7,1,9,9]
+"test_device_info_map_8cpp_source.html":[20,0,0,0,7,1,7]
 };
