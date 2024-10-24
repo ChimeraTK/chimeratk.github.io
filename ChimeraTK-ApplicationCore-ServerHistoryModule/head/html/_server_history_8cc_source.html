@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore-ServerHistoryModule
-   &#160;<span id="projectnumber">01.01.02</span>
+   &#160;<span id="projectnumber">01.02.00</span>
    </div>
   </td>
  </tr>
@@ -128,8 +128,8 @@ $(document).ready(function(){initNavTree('_server_history_8cc_source.html',''); 
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> Model::ProcessVariableProxy&amp; pv, <span class="keyword">const</span> RegisterPath&amp; submodule, <span class="keywordtype">bool</span> checkTag) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// gather information about the PV</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> name = pv.getFullyQualifiedPath();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; type = pv.getNodes().front().getValueType(); <span class="comment">// All node types must be equal for a PV</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span> length = pv.getNodes().front().getNumberOfElements();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; type = pv.getNodes().front()-&gt;getValueType(); <span class="comment">// All node types must be equal for a PV</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span> length = pv.getNodes().front()-&gt;getNumberOfElements();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span>(checkTag) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">auto</span> tag = pv.getTags();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">if</span>(!tag.count(_inputTag)) <span class="keywordflow">return</span>;</div>
