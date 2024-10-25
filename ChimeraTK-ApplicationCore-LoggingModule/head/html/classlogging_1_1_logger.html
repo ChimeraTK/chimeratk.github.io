@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore-LoggingModule
-   &#160;<span id="projectnumber">01.01.00</span>
+   &#160;<span id="projectnumber">01.01.01</span>
    </div>
   </td>
  </tr>
@@ -140,7 +140,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Class used to send messages in a convenient way to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages.">LoggingModule</a>. </p>
 <p>In principle this class only adds two output variables and provides a simple method to fill these variables. They are supposed to be connected to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages.">LoggingModule</a> via LoggingModule::addSource. If sendMessage is used before chimeraTK process variables are initialized an internal buffer is used to store those messages. Once the process variables are initialized the messages from the buffer are send. </p><dl class="section attention"><dt>Attention</dt><dd>This only happens once a message is send after chimeraTK process variables are initialized! In other words if no message is send in the mainLoop messages from defineConnections will never be shown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00144">144</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00143">143</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a87cd7a6981b805533c717053ae412cd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87cd7a6981b805533c717053ae412cd0">&#9670;&nbsp;</a></span>Logger() <span class="overload">[1/2]</span></h2>
@@ -169,7 +169,7 @@ Public Attributes</h2></td></tr>
 <p>when creating arrays of modules).</p>
 <p>This constructor also has to be here to mitigate a bug in gcc. It is needed to allow constructor inheritance of modules owning other modules. This constructor will not actually be called then. See this bug report: <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=67054">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=67054</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00157">157</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00156">156</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ Public Attributes</h2></td></tr>
 
 <p>Alias that is used instead of the module name when printing messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00174">174</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00173">173</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ Public Attributes</h2></td></tr>
 
 <p>Message to be send to the logging module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00171">171</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00170">170</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>

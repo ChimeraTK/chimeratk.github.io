@@ -96,6 +96,8 @@ $(document).ready(function(){initNavTree('test_utilities_8cpp.html',''); initRes
 <code>#include &quot;<a class="el" href="_exception_8h_source.html">Exception.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_utilities_8h_source.html">Utilities.h</a>&quot;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testUtilities.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -158,6 +160,10 @@ Functions</h2></td></tr>
 <tr class="separator:a0b5be493b7aedc390f30eec5f5e687c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52e8d4c209462b6401b79aa71cb6027"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_utilities_8cpp.html#ab52e8d4c209462b6401b79aa71cb6027">BOOST_AUTO_TEST_CASE</a> (testUserTypeToUserType_Boolean)</td></tr>
 <tr class="separator:ab52e8d4c209462b6401b79aa71cb6027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af838703b297e0b94c42eef99e1a4c8f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_utilities_8cpp.html#af838703b297e0b94c42eef99e1a4c8f8">BOOST_AUTO_TEST_CASE</a> (testUserTypeToUserType_HexString)</td></tr>
+<tr class="separator:af838703b297e0b94c42eef99e1a4c8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b512c2fb70d79fcc5aa3d3438306101"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_utilities_8cpp.html#a0b512c2fb70d79fcc5aa3d3438306101">BOOST_AUTO_TEST_CASE</a> (testUserTypeToUserType_DecString)</td></tr>
+<tr class="separator:a0b512c2fb70d79fcc5aa3d3438306101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -204,7 +210,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +226,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00026">26</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00028">28</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +242,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +258,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00017">17</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00019">19</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +274,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00018">18</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00020">20</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -284,7 +290,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00019">19</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00021">21</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +306,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00020">20</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00022">22</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -316,7 +322,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00021">21</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00023">23</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +338,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00023">23</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +354,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00024">24</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00026">26</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +370,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00022">22</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00024">24</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +386,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00015">15</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00017">17</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -396,13 +402,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00016">16</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00018">18</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7b167ccc126dfcc16cdb7ea11839354e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b167ccc126dfcc16cdb7ea11839354e">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b167ccc126dfcc16cdb7ea11839354e">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +423,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00214">214</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00216">216</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -430,7 +436,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad453ddbb5323a02a0e09df53aa04785b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad453ddbb5323a02a0e09df53aa04785b">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad453ddbb5323a02a0e09df53aa04785b">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +451,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00198">198</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00200">200</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -458,7 +464,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b5be493b7aedc390f30eec5f5e687c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b5be493b7aedc390f30eec5f5e687c7">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5be493b7aedc390f30eec5f5e687c7">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,7 +479,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00223">223</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00225">225</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -486,7 +492,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0bddf85a5ea2e73b8ba1d9203c4bf0b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bddf85a5ea2e73b8ba1d9203c4bf0b1">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bddf85a5ea2e73b8ba1d9203c4bf0b1">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +507,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00206">206</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00208">208</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -514,7 +520,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="af396e8b1dbe8d17723cb245fc1f59625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af396e8b1dbe8d17723cb245fc1f59625">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af396e8b1dbe8d17723cb245fc1f59625">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,7 +535,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00033">33</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00035">35</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -542,7 +548,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a30a713b47abac7c9e1af7cb70cfd413b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30a713b47abac7c9e1af7cb70cfd413b">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a713b47abac7c9e1af7cb70cfd413b">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +563,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00181">181</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00183">183</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -570,7 +576,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad0808988bd43632dbf819e16e1c33b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0808988bd43632dbf819e16e1c33b12">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0808988bd43632dbf819e16e1c33b12">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,7 +591,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00155">155</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00157">157</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -598,7 +604,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab52e8d4c209462b6401b79aa71cb6027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab52e8d4c209462b6401b79aa71cb6027">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52e8d4c209462b6401b79aa71cb6027">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,7 +619,47 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00247">247</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00249">249</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b512c2fb70d79fcc5aa3d3438306101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b512c2fb70d79fcc5aa3d3438306101">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testUserTypeToUserType_DecString&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00365">365</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af838703b297e0b94c42eef99e1a4c8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af838703b297e0b94c42eef99e1a4c8f8">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testUserTypeToUserType_HexString&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_utilities_8cpp_source.html#l00271">271</a> of file <a class="el" href="test_utilities_8cpp_source.html">testUtilities.cpp</a>.</p>
 
 </div>
 </div>

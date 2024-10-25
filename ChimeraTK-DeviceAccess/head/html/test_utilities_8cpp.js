@@ -22,5 +22,7 @@ var test_utilities_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#af396e8b1dbe8d17723cb245fc1f59625", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#a30a713b47abac7c9e1af7cb70cfd413b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#ad0808988bd43632dbf819e16e1c33b12", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#ab52e8d4c209462b6401b79aa71cb6027", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#ab52e8d4c209462b6401b79aa71cb6027", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#a0b512c2fb70d79fcc5aa3d3438306101", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_utilities_8cpp.html#af838703b297e0b94c42eef99e1a4c8f8", null ]
 ];
