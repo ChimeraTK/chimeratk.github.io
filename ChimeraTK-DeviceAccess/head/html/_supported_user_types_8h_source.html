@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess
-   &#160;<span id="projectnumber">03.16.00</span>
+   &#160;<span id="projectnumber">03.17.00</span>
    </div>
   </td>
  </tr>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('_supported_user_types_8h_source.html',
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> NUMERIC&gt;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  NUMERIC detail::userTypeToNumeric_impl&lt;std::string, NUMERIC&gt;::impl(<span class="keyword">const</span> std::string&amp; value) {</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">// 0xABCD form hex</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">bool</span> isHexidecimal = (value.length() &gt; 1) and ((value[1] == <span class="charliteral">&#39;x&#39;</span>) or (value[1] == <span class="charliteral">&#39;X&#39;</span>)) and (value[0] == <span class="charliteral">&#39;0&#39;</span>); </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">bool</span> isHexidecimal = (value.length() &gt; 1) and ((value[1] == <span class="charliteral">&#39;x&#39;</span>) or (value[1] == <span class="charliteral">&#39;X&#39;</span>)) and (value[0] == <span class="charliteral">&#39;0&#39;</span>);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">if</span> constexpr(!std::is_same&lt;NUMERIC, int8_t&gt;::value &amp;&amp; !std::is_same&lt;NUMERIC, uint8_t&gt;::value) {</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      NUMERIC v;</div>
