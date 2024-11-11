@@ -1,0 +1,26 @@
+var annotated_dup =
+[
+    [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
+    [ "open62541_MacroHelper", "namespaceopen62541___macro_helper.html", "namespaceopen62541___macro_helper" ],
+    [ "open62541_XMLPreprocessor", "namespaceopen62541___x_m_l_preprocessor.html", "namespaceopen62541___x_m_l_preprocessor" ],
+    [ "ua_builtin_types", "namespaceua__builtin__types.html", "namespaceua__builtin__types" ],
+    [ "ua_namespace", "namespaceua__namespace.html", "namespaceua__namespace" ],
+    [ "ua_node_types", "namespaceua__node__types.html", "namespaceua__node__types" ],
+    [ "AdditionalVariableTest", "class_additional_variable_test.html", null ],
+    [ "AdditionalVariableTestSuite", "class_additional_variable_test_suite.html", "class_additional_variable_test_suite" ],
+    [ "CSAOPCUATest", "class_c_s_a_o_p_c_u_a_test.html", null ],
+    [ "CSAOPCUATestSuite", "class_c_s_a_o_p_c_u_a_test_suite.html", "class_c_s_a_o_p_c_u_a_test_suite" ],
+    [ "MyApp", "struct_my_app.html", "struct_my_app" ],
+    [ "ProcessVariableTest", "class_process_variable_test.html", null ],
+    [ "ProcessVariableTestSuite", "class_process_variable_test_suite.html", "class_process_variable_test_suite" ],
+    [ "runtime_value_generator", "classruntime__value__generator.html", "classruntime__value__generator" ],
+    [ "TestFixtureEmptySet", "struct_test_fixture_empty_set.html", "struct_test_fixture_empty_set" ],
+    [ "TestFixturePVSet", "struct_test_fixture_p_v_set.html", "struct_test_fixture_p_v_set" ],
+    [ "TestFixtureServerSet", "struct_test_fixture_server_set.html", "struct_test_fixture_server_set" ],
+    [ "UAAdapterTest", "class_u_a_adapter_test.html", null ],
+    [ "UAAdapterTestSuite", "class_u_a_adapter_test_suite.html", "class_u_a_adapter_test_suite" ],
+    [ "UAMappingTest", "class_u_a_mapping_test.html", null ],
+    [ "UAMappingTestSuite", "class_u_a_mapping_test_suite.html", "class_u_a_mapping_test_suite" ],
+    [ "XMLFileHandlerTest", "class_x_m_l_file_handler_test.html", null ],
+    [ "XMLFileHandlerTestSuite", "class_x_m_l_file_handler_test_suite.html", "class_x_m_l_file_handler_test_suite" ]
+];

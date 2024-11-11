@@ -1,5 +1,8 @@
 var NAVTREEINDEX12 =
 {
+"functions_vars.html":[19,3,2],
+"functions_vars_a.html":[19,3,2,1],
+"functions_vars_b.html":[19,3,2,2],
 "functions_vars_c.html":[19,3,2,3],
 "functions_vars_d.html":[19,3,2,4],
 "functions_vars_e.html":[19,3,2,5],
@@ -25,8 +28,8 @@ var NAVTREEINDEX12 =
 "functions_x.html":[19,3,0,24],
 "functions_y.html":[19,3,0,25],
 "functions_~.html":[19,3,0,26],
-"globals.html":[20,1,0,0],
 "globals.html":[20,1,0],
+"globals.html":[20,1,0,0],
 "globals_b.html":[20,1,0,1],
 "globals_c.html":[20,1,0,2],
 "globals_d.html":[20,1,0,3],
@@ -137,8 +140,8 @@ var NAVTREEINDEX12 =
 "namespace_chimera_t_k.html":[19,0,1],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[19,0,1,2],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[18,0,1,2],
-"namespace_chimera_t_k_1_1_rebot.html":[18,0,1,6],
 "namespace_chimera_t_k_1_1_rebot.html":[19,0,1,4],
+"namespace_chimera_t_k_1_1_rebot.html":[18,0,1,6],
 "namespace_chimera_t_k_1_1_utilities.html":[18,0,1,8],
 "namespace_chimera_t_k_1_1async.html":[18,0,1,0],
 "namespace_chimera_t_k_1_1async.html":[19,0,1,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX12 =
 "rebot_manual_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[20,0,0,0,7,5,0,0],
 "rebot_manual_test_8cpp_source.html":[20,0,0,0,7,5,0],
 "shared_dummy_helpers_8h.html":[20,0,0,0,7,2,3],
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e":[20,0,0,0,7,2,3,1],
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531":[20,0,0,0,7,2,3,1,1],
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c":[20,0,0,0,7,2,3,1,0],
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b":[20,0,0,0,7,2,3,1,2]
+"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e":[20,0,0,0,7,2,3,1]
 };
