@@ -1,8 +1,10 @@
 var annotated_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
+    [ "ctk_opcua_generator_tools", "namespacectk__opcua__generator__tools.html", "namespacectk__opcua__generator__tools" ],
     [ "open62541_MacroHelper", "namespaceopen62541___macro_helper.html", "namespaceopen62541___macro_helper" ],
     [ "open62541_XMLPreprocessor", "namespaceopen62541___x_m_l_preprocessor.html", "namespaceopen62541___x_m_l_preprocessor" ],
+    [ "testMapGenerator", "namespacetest_map_generator.html", "namespacetest_map_generator" ],
     [ "ua_builtin_types", "namespaceua__builtin__types.html", "namespaceua__builtin__types" ],
     [ "ua_namespace", "namespaceua__namespace.html", "namespaceua__namespace" ],
     [ "ua_node_types", "namespaceua__node__types.html", "namespaceua__node__types" ],

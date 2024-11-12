@@ -9,8 +9,29 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::csa_opcua_adapter", "class_chimera_t_k_1_1csa__opcua__adapter.html", null ],
     [ "CSAOPCUATest", "class_c_s_a_o_p_c_u_a_test.html", null ],
+    [ "ctk_opcua_generator_tools.generatorClass.EncryptionSettings", "classctk__opcua__generator__tools_1_1generator_class_1_1_encryption_settings.html", [
+      [ "ctk_opcua_generator_tools.generatorClass.Config", "classctk__opcua__generator__tools_1_1generator_class_1_1_config.html", [
+        [ "ctk_opcua_generator_tools.generatorClass.MapGenerator", "classctk__opcua__generator__tools_1_1generator_class_1_1_map_generator.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::FolderInfo", "struct_chimera_t_k_1_1_folder_info.html", null ],
     [ "ChimeraTK::HandleFolderVariables", "struct_chimera_t_k_1_1_handle_folder_variables.html", null ],
+    [ "ctk_opcua_generator_tools.generatorClass.HistorySetting", "classctk__opcua__generator__tools_1_1generator_class_1_1_history_setting.html", null ],
+    [ "ctk_opcua_generator_tools.generatorClass.MapOption", "classctk__opcua__generator__tools_1_1generator_class_1_1_map_option.html", [
+      [ "ctk_opcua_generator_tools.generatorClass.XMLDirectory", "classctk__opcua__generator__tools_1_1generator_class_1_1_x_m_l_directory.html", null ],
+      [ "ctk_opcua_generator_tools.generatorClass.XMLVar", "classctk__opcua__generator__tools_1_1generator_class_1_1_x_m_l_var.html", null ]
+    ] ],
+    [ "object", null, [
+      [ "ctk_opcua_generator_tools.encryptionUI.Ui_EncryptionDialog", "classctk__opcua__generator__tools_1_1encryption_u_i_1_1_ui___encryption_dialog.html", [
+        [ "ctk_opcua_generator_tools.generatorForm.EncryptionDialog", "classctk__opcua__generator__tools_1_1generator_form_1_1_encryption_dialog.html", null ]
+      ] ],
+      [ "ctk_opcua_generator_tools.generatorUI.Ui_MainWindow", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html", [
+        [ "ctk_opcua_generator_tools.generatorForm.MapGeneratorForm", "classctk__opcua__generator__tools_1_1generator_form_1_1_map_generator_form.html", null ]
+      ] ],
+      [ "ctk_opcua_generator_tools.historyUI.Ui_HistoryDialog", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html", [
+        [ "ctk_opcua_generator_tools.generatorForm.HistorySettingsDialog", "classctk__opcua__generator__tools_1_1generator_form_1_1_history_settings_dialog.html", null ]
+      ] ]
+    ] ],
     [ "ua_namespace.opcua_namespace", "classua__namespace_1_1opcua__namespace.html", null ],
     [ "ua_node_types.opcua_node_id_t", "classua__node__types_1_1opcua__node__id__t.html", null ],
     [ "ua_node_types.opcua_node_t", "classua__node__types_1_1opcua__node__t.html", [
@@ -64,6 +85,9 @@ var hierarchy =
       [ "UAMappingTestSuite", "class_u_a_mapping_test_suite.html", null ],
       [ "XMLFileHandlerTestSuite", "class_x_m_l_file_handler_test_suite.html", null ]
     ] ],
+    [ "TestCase", null, [
+      [ "testMapGenerator.Test", "classtest_map_generator_1_1_test.html", null ]
+    ] ],
     [ "TestFixtureEmptySet", "struct_test_fixture_empty_set.html", null ],
     [ "TestFixturePVSet", "struct_test_fixture_p_v_set.html", null ],
     [ "TestFixtureServerSet", "struct_test_fixture_server_set.html", null ],
@@ -80,5 +104,12 @@ var hierarchy =
     [ "UAMappingTest", "class_u_a_mapping_test.html", null ],
     [ "ChimeraTK::void_observer_data", "struct_chimera_t_k_1_1void__observer__data.html", null ],
     [ "ChimeraTK::xml_file_handler", "class_chimera_t_k_1_1xml__file__handler.html", null ],
-    [ "XMLFileHandlerTest", "class_x_m_l_file_handler_test.html", null ]
+    [ "XMLFileHandlerTest", "class_x_m_l_file_handler_test.html", null ],
+    [ "QDialog", null, [
+      [ "ctk_opcua_generator_tools.generatorForm.EncryptionDialog", "classctk__opcua__generator__tools_1_1generator_form_1_1_encryption_dialog.html", null ],
+      [ "ctk_opcua_generator_tools.generatorForm.HistorySettingsDialog", "classctk__opcua__generator__tools_1_1generator_form_1_1_history_settings_dialog.html", null ]
+    ] ],
+    [ "QMainWindow", null, [
+      [ "ctk_opcua_generator_tools.generatorForm.MapGeneratorForm", "classctk__opcua__generator__tools_1_1generator_form_1_1_map_generator_form.html", null ]
+    ] ]
 ];

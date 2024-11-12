@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('create__self-signed_8py_source.html','
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="namespacecreate__self-signed.html#a3fd1a5850eb1c61782433e7564d3a179">   72</a></span>&#160;iteratorValue = 0</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"># Read the number of interfaces available</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacecreate__self-signed.html#a9983669c0ff1ebb150dd4a0bb8ba9a22">   75</a></span>&#160;numberOfInterfaces = int(format(len(netifaces.interfaces())))</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacecreate__self-signed.html#a9983669c0ff1ebb150dd4a0bb8ba9a22">   75</a></span>&#160;numberOfInterfaces = int(<a class="code" href="namespacetest_map_generator.html#aec4001e000fae6dc77787810274d17b4">format</a>(len(netifaces.interfaces())))</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"># Traverse through the available network interfaces and store the</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"># corresponding IP addresses of the network interface in a variable</span></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('create__self-signed_8py_source.html','
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">     -newkey rsa:{} \</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral">     -keyout localhost.key -days 365 \</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral">     -subj &quot;/C=DE/O=open62541/CN=open62541Server@localhost&quot;\</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral">     -out localhost.crt&quot;&quot;&quot;</span>.format(openssl_conf, keysize))</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral">     -out localhost.crt&quot;&quot;&quot;</span>.<a class="code" href="namespacetest_map_generator.html#aec4001e000fae6dc77787810274d17b4">format</a>(openssl_conf, keysize))</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;os.system(<span class="stringliteral">&quot;openssl x509 -in localhost.crt -outform der -out %s_cert.der&quot;</span> % (certificatename))</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;os.system(<span class="stringliteral">&quot;openssl rsa -inform PEM -in localhost.key -outform DER -out %s_key.der&quot;</span>% (certificatename))</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
@@ -209,6 +209,7 @@ $(document).ready(function(){initNavTree('create__self-signed_8py_source.html','
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;print(<span class="stringliteral">&quot;Certificates generated in &quot;</span> + args.outdir)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacetest_map_generator_html_aec4001e000fae6dc77787810274d17b4"><div class="ttname"><a href="namespacetest_map_generator.html#aec4001e000fae6dc77787810274d17b4">testMapGenerator.format</a></div><div class="ttdeci">format</div><div class="ttdef"><b>Definition:</b> <a href="test_map_generator_8py_source.html#l00078">testMapGenerator.py:78</a></div></div>
 <div class="ttc" id="anamespacecreate__self-signed_html_a13e6f7d78a35e281deb295d2d557fcd8"><div class="ttname"><a href="namespacecreate__self-signed.html#a13e6f7d78a35e281deb295d2d557fcd8">create_self-signed.is_interface_up</a></div><div class="ttdeci">def is_interface_up(interface)</div><div class="ttdef"><b>Definition:</b> <a href="create__self-signed_8py_source.html#l00066">create_self-signed.py:66</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['folderinfo_528',['FolderInfo',['../struct_chimera_t_k_1_1_folder_info.html',1,'ChimeraTK']]]
+  ['encryptiondialog_675',['EncryptionDialog',['../classctk__opcua__generator__tools_1_1generator_form_1_1_encryption_dialog.html',1,'ctk_opcua_generator_tools::generatorForm']]],
+  ['encryptionsettings_676',['EncryptionSettings',['../classctk__opcua__generator__tools_1_1generator_class_1_1_encryption_settings.html',1,'ctk_opcua_generator_tools::generatorClass']]]
 ];

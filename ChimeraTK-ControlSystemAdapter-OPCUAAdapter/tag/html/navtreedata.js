@@ -41,7 +41,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -61,10 +61,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classua__builtin__types_1_1opcua___builtin_type__sbyte__t.html",
-"create__self-signed_8py.html#a99c6ee57b9eeef3d21b47bac8f849a24",
-"struct_chimera_t_k_1_1_u_a___data_source___map___element__t.html#a3993bf3381d1655880b9c7007ea639e3"
+"____init_____8py.html",
+"classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a73023015aeabf118dc869dbc919887a5",
+"classua__builtin__types_1_1opcua___builtin_type__xmlelement__t.html#a24bf3ff74b5751c104e358af1a42e412",
+"csa__processvariable_8h.html",
+"struct_chimera_t_k_1_1_server_config.html#aeae05c01a639656b66e435b3ae58c13f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
