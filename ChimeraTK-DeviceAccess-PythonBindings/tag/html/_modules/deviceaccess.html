@@ -497,7 +497,15 @@
 <span class="sd">            &lt;_da_python_bindings.TransferElementID at 0x7f5298a8f400&gt;</span>
 
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getId</span><span class="p">()</span></div></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">getId</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="GeneralRegisterAccessor.interrupt"><a class="viewcode-back" href="../deviceaccess.html#deviceaccess.GeneralRegisterAccessor.interrupt">[docs]</a>    <span class="k">def</span> <span class="nf">interrupt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Place a thread interrupted exception on the read queue of this accessor,</span>
+<span class="sd">        so the thread currently waiting in a blocking read() will terminate. May</span>
+<span class="sd">        only be called for accessors with AccessMode.wait_for_new_data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_accessor</span><span class="o">.</span><span class="n">interrupt</span><span class="p">()</span></div></div>
 
 <span class="c1">#######################################################################################################################</span>
 <span class="c1">#######################################################################################################################</span>
