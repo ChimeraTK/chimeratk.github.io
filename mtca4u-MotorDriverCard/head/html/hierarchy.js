@@ -98,13 +98,13 @@ var hierarchy =
       ] ],
       [ "DerivedStateMachine", "class_derived_state_machine.html", null ]
     ] ],
-    [ "mtca4u::StepperMotor", "classmtca4u_1_1_stepper_motor.html", [
-      [ "mtca4u::LinearStepperMotor", "classmtca4u_1_1_linear_stepper_motor.html", null ]
-    ] ],
     [ "ChimeraTK::MotorDriver::StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html", [
       [ "ChimeraTK::MotorDriver::BasicStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html", [
         [ "ChimeraTK::MotorDriver::LinearStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html", null ]
       ] ]
+    ] ],
+    [ "mtca4u::StepperMotor", "classmtca4u_1_1_stepper_motor.html", [
+      [ "mtca4u::LinearStepperMotor", "classmtca4u_1_1_linear_stepper_motor.html", null ]
     ] ],
     [ "mtca4u::StepperMotorCalibrationStatusType", "classmtca4u_1_1_stepper_motor_calibration_status_type.html", null ],
     [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", null ],

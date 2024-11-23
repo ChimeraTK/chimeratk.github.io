@@ -468,7 +468,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="comment">// now the same for negative end  switch</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  _motorControlerDummy-&gt;resetInternalStateToDefaults();</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  _stepperMotor-&gt;setTargetPosition(_motorControlerDummy-&gt;getNEgativeEndSwitch());</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  _stepperMotor-&gt;setTargetPosition(_motorControlerDummy-&gt;getNegativeEndSwitch());</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  _stepperMotor-&gt;start();</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getStatusAndError().status == LinearStepperMotorStatusTypes::M_NEGATIVE_END_SWITCHED_ON);</div>
@@ -770,7 +770,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  <span class="comment">// 2. Move beyond an end switch</span></div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  _motorControlerDummy-&gt;resetInternalStateToDefaults();</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  <span class="keyword">auto</span> negativeEndSwitchPosition = _motorControlerDummy-&gt;getNEgativeEndSwitch();</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  <span class="keyword">auto</span> negativeEndSwitchPosition = _motorControlerDummy-&gt;getNegativeEndSwitch();</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isMoving() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  _stepperMotor-&gt;setTargetPosition(negativeEndSwitchPosition - 100);</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isMoving() == <span class="keyword">true</span>);</div>
@@ -780,7 +780,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;}</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160; </div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="keywordtype">bool</span> LinearStepperMotorTest::isMoveToNegativeEndSwitchRequested() {</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">return</span> _motorControlerDummy-&gt;getTargetPosition() &lt;= _motorControlerDummy-&gt;getNEgativeEndSwitch();</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">return</span> _motorControlerDummy-&gt;getTargetPosition() &lt;= _motorControlerDummy-&gt;getNegativeEndSwitch();</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;}</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="keywordtype">bool</span> LinearStepperMotorTest::isMoveToPositiveEndSwitchRequested() {</div>
@@ -789,7 +789,7 @@ $(document).ready(function(){initNavTree('test_linear_stepper_motor_8cpp_source.
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="keywordtype">bool</span> LinearStepperMotorTest::isMoveToValidPositionRequested() {</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;  <span class="keywordflow">return</span> (_motorControlerDummy-&gt;getTargetPosition() &lt; _motorControlerDummy-&gt;getPositiveEndSwitch()) &amp;&amp;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;      (_motorControlerDummy-&gt;getTargetPosition() &gt; _motorControlerDummy-&gt;getNEgativeEndSwitch());</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;      (_motorControlerDummy-&gt;getTargetPosition() &gt; _motorControlerDummy-&gt;getNegativeEndSwitch());</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

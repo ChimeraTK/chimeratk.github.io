@@ -1,7 +1,7 @@
 var classmtca4u_1_1_motor_controler =
 [
     [ "DecoderReadoutMode", "structmtca4u_1_1_motor_controler_1_1_decoder_readout_mode.html", null ],
-    [ "~MotorControler", "classmtca4u_1_1_motor_controler.html#a75809f9b1c396a8b2623ac99e8f1735a", null ],
+    [ "~MotorControler", "classmtca4u_1_1_motor_controler.html#a23e88c510cf65221b6a7e403f4adb2d2", null ],
     [ "enableFullStepping", "classmtca4u_1_1_motor_controler.html#aed8e50f3bf425a89a316aac875b16702", null ],
     [ "getActualAcceleration", "classmtca4u_1_1_motor_controler.html#a1760c2e4d3e9642e984bb7ab90ce27bb", null ],
     [ "getActualPosition", "classmtca4u_1_1_motor_controler.html#aa1b0066fab356a076c351ad3cc40c498", null ],

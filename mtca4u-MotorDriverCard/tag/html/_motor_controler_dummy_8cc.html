@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8cc.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>&quot;</code><br />
-<code>#include &quot;ChimeraTK/Exception.h&quot;</code><br />
+<code>#include &lt;ChimeraTK/Exception.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for MotorControlerDummy.cc:</div>
@@ -112,20 +112,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a35ba3251eeb5d4705554f998d2d45f01"><td class="memItemLeft" align="right" valign="top">typedef std::lock_guard&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a></td></tr>
-<tr class="separator:a35ba3251eeb5d4705554f998d2d45f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb00abeee050671ad182a1e88de8914"><td class="memItemLeft" align="right" valign="top">typedef std::unique_lock&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_dummy_8cc.html#aedb00abeee050671ad182a1e88de8914">unique_lock</a></td></tr>
-<tr class="separator:aedb00abeee050671ad182a1e88de8914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199019db841beffc9956bd25ad7e80c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_dummy_8cc.html#a199019db841beffc9956bd25ad7e80c3">LockGuard</a> = <a class="el" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">std::lock_guard</a>&lt; std::mutex &gt;</td></tr>
+<tr class="separator:a199019db841beffc9956bd25ad7e80c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e29cf3ac0ec1738b21f05ea4555e7eb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_dummy_8cc.html#a2e29cf3ac0ec1738b21f05ea4555e7eb">UniqueLog</a> = <a class="el" href="_motor_controler_impl_8cc.html#aedb00abeee050671ad182a1e88de8914">std::unique_lock</a>&lt; std::mutex &gt;</td></tr>
+<tr class="separator:a2e29cf3ac0ec1738b21f05ea4555e7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a35ba3251eeb5d4705554f998d2d45f01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ba3251eeb5d4705554f998d2d45f01">&#9670;&nbsp;</a></span>lock_guard</h2>
+<a id="a199019db841beffc9956bd25ad7e80c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199019db841beffc9956bd25ad7e80c3">&#9670;&nbsp;</a></span>LockGuard</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::lock_guard&lt;std::mutex&gt; <a class="el" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a></td>
+          <td class="memname">using <a class="el" href="_motor_controler_dummy_8cc.html#a199019db841beffc9956bd25ad7e80c3">LockGuard</a> =  <a class="el" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">std::lock_guard</a>&lt;std::mutex&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -134,14 +134,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="aedb00abeee050671ad182a1e88de8914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedb00abeee050671ad182a1e88de8914">&#9670;&nbsp;</a></span>unique_lock</h2>
+<a id="a2e29cf3ac0ec1738b21f05ea4555e7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e29cf3ac0ec1738b21f05ea4555e7eb">&#9670;&nbsp;</a></span>UniqueLog</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::unique_lock&lt;std::mutex&gt; <a class="el" href="_motor_controler_dummy_8cc.html#aedb00abeee050671ad182a1e88de8914">unique_lock</a></td>
+          <td class="memname">using <a class="el" href="_motor_controler_dummy_8cc.html#a2e29cf3ac0ec1738b21f05ea4555e7eb">UniqueLog</a> =  <a class="el" href="_motor_controler_impl_8cc.html#aedb00abeee050671ad182a1e88de8914">std::unique_lock</a>&lt;std::mutex&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

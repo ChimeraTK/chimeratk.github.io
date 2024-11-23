@@ -92,14 +92,13 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8h.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>&quot;</code><br />
-<code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for MotorControlerDummy.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_motor_controler_dummy_8h__incl.svg" width="458" height="380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_motor_controler_dummy_8h__incl.svg" width="390" height="380"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -116,7 +115,7 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8h.html',''); i
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html">mtca4u::MotorControlerDummy</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html" title="The MotorControlerDummy only implements the basic functionality defined in the MotorControler class,...">MotorControlerDummy</a> only implements the basic functionality defined in the <a class="el" href="classmtca4u_1_1_motor_controler.html" title="A class to controll stepper motors using the DFMC-MD22 card.">MotorControler</a> class, not the full functionality defined in <a class="el" href="classmtca4u_1_1_motor_controler_expert.html" title="A class to controll stepper motors using the DFMC-MD22 card.">MotorControlerExpert</a>.  <a href="classmtca4u_1_1_motor_controler_dummy.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html" title="The MotorControlerDummy only implements the basic functionality defined in the MotorControler class,...">MotorControlerDummy</a> only implements the basic functionality defined in the <a class="el" href="classmtca4u_1_1_motor_controler.html" title="A class to control stepper motors using the DFMC-MD22 card.">MotorControler</a> class, not the full functionality defined in <a class="el" href="classmtca4u_1_1_motor_controler_expert.html" title="A class to control stepper motors using the DFMC-MD22 card.">MotorControlerExpert</a>.  <a href="classmtca4u_1_1_motor_controler_dummy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -160,8 +159,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <span class="keyword">set</span>##NAME(NAME <span class="keyword">const</span>&amp; VARIABLE_NAME);                                                                           \</div>
-<div class="line">  NAME <span class="keyword">get</span>##NAME()</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <span class="keyword">set</span>##NAME(NAME <span class="keyword">const</span>&amp; VARIABLE_NAME) <span class="keyword">override</span>;                                                                  \</div>
+<div class="line">  NAME <span class="keyword">get</span>##NAME() override</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00017">17</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
 
@@ -192,8 +191,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <span class="keyword">set</span>##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VARIABLE_IN_UNITS);                                                                      \</div>
-<div class="line">  unsigned <span class="keywordtype">int</span> <span class="keyword">get</span>##NAME()</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <span class="keyword">set</span>##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VARIABLE_IN_UNITS) <span class="keyword">override</span>;                                                             \</div>
+<div class="line">  unsigned <span class="keywordtype">int</span> <span class="keyword">get</span>##NAME() override</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00009">9</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
 
@@ -224,8 +223,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <span class="keyword">set</span>##NAME(<span class="keywordtype">int</span> VARIABLE_IN_UNITS);                                                                               \</div>
-<div class="line">  int <span class="keyword">get</span>##NAME()</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <span class="keyword">set</span>##NAME(<span class="keywordtype">int</span> VARIABLE_IN_UNITS) <span class="keyword">override</span>;                                                                      \</div>
+<div class="line">  int <span class="keyword">get</span>##NAME() override</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00013">13</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
 
