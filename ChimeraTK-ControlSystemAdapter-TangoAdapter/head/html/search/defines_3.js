@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['seperator_509',['SEPERATOR',['../_tango_property_helper_8h.html#a68d53e0284a38baa1aaedfbbdf797f13',1,'TangoPropertyHelper.h']]]
+  ['tango_5flog_5fdebug_505',['TANGO_LOG_DEBUG',['../_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad',1,'TangoLogCompat.h']]],
+  ['tango_5flog_5finfo_506',['TANGO_LOG_INFO',['../_tango_log_compat_8h.html#ac5366c263b8af52fecccce6377a33314',1,'TangoLogCompat.h']]]
 ];

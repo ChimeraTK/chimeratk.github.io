@@ -3,6 +3,7 @@ var struct_threaded_tango_server =
     [ "ThreadedTangoServer", "struct_threaded_tango_server.html#a39af37dc0f2eefbd4cd546b4017be552", null ],
     [ "~ThreadedTangoServer", "struct_threaded_tango_server.html#a5170a4ffd39ad1b363050f080e01411f", null ],
     [ "device", "struct_threaded_tango_server.html#a709e2a48c7238d583a42c73673071587", null ],
+    [ "getClassProperty", "struct_threaded_tango_server.html#a6442efed8ff184e13ccc40ed4545e915", null ],
     [ "getClientUrl", "struct_threaded_tango_server.html#aa596a0a93f714fcb70734a4ea4703af2", null ],
     [ "overrideNames", "struct_threaded_tango_server.html#a825663031c1bed66dbbfb7f8a6bf6ac9", null ],
     [ "setCreateOfflineDatabase", "struct_threaded_tango_server.html#a8433d6fbdad4c85eb6a87b1e655532b0", null ],

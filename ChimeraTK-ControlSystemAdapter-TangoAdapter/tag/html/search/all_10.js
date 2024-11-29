@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['read_156',['read',['../class_chimera_t_k_1_1_scalar_attrib_templ.html#acae660f92b9aa1704dedd4130500d7c6',1,'ChimeraTK::ScalarAttribTempl::read()'],['../class_chimera_t_k_1_1_spectrum_attrib_templ.html#aa64128a7eb75748afe75fe6a8e71fe1c',1,'ChimeraTK::SpectrumAttribTempl::read()']]],
-  ['read_5fattr_5fhardware_157',['read_attr_hardware',['../class_tango_adapter_1_1_adapter_device_impl.html#a4ef30ff76d0c183e54ef347cb89e05a9',1,'TangoAdapter::AdapterDeviceImpl']]],
-  ['regtypemap_158',['regTypeMap',['../struct_chimera_t_k_1_1_attribute_property.html#ae08717df3f64f64a99587326aa7bc10d',1,'ChimeraTK::AttributeProperty']]],
-  ['run_159',['run',['../class_chimera_t_k_1_1_tango_updater.html#afdbf4ce1a3c16cdb9cfb2749d0e90eeb',1,'ChimeraTK::TangoUpdater']]]
+  ['read_153',['read',['../class_tango_adapter_1_1_scalar_attrib_templ.html#aacabb7f33a8e191de9c58537976c5cf5',1,'TangoAdapter::ScalarAttribTempl::read()'],['../class_tango_adapter_1_1_spectrum_attrib_templ.html#a6b132e209feaed2a113453fc1dd5bee4',1,'TangoAdapter::SpectrumAttribTempl::read()']]],
+  ['read_5fattr_5fhardware_154',['read_attr_hardware',['../class_tango_adapter_1_1_adapter_device_impl.html#a4ef30ff76d0c183e54ef347cb89e05a9',1,'TangoAdapter::AdapterDeviceImpl']]],
+  ['readmapperfile_155',['readMapperFile',['../class_tango_adapter_1_1_attribute_mapper.html#a54e84c163c8975849fbd4db754bcc059',1,'TangoAdapter::AttributeMapper']]],
+  ['run_156',['run',['../class_tango_adapter_1_1_tango_adapter.html#a93c768f0bbc936443f8c8914fd92de8d',1,'TangoAdapter::TangoAdapter::run()'],['../class_tango_adapter_1_1_tango_updater.html#a798ec90744e39b59b3055f09f6b81312',1,'TangoAdapter::TangoUpdater::run()']]]
 ];

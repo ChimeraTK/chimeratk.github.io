@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['scalar_504',['SCALAR',['../namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f',1,'ChimeraTK']]],
-  ['spectrum_505',['SPECTRUM',['../namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a7c96960d760cc69832cbe711895abda8',1,'ChimeraTK']]]
+  ['scalar_500',['SCALAR',['../namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca8f3d9a4b6a7b7f2c7afa61ca113d0db9',1,'TangoAdapter']]],
+  ['spectrum_501',['SPECTRUM',['../namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1',1,'TangoAdapter']]]
 ];

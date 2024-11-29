@@ -1,7 +1,7 @@
 var class_tango_adapter_1_1_adapter_device_class =
 [
-    [ "~AdapterDeviceClass", "class_tango_adapter_1_1_adapter_device_class.html#a9513f14418135036ef72bd07193cd5db", null ],
     [ "AdapterDeviceClass", "class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953", null ],
+    [ "~AdapterDeviceClass", "class_tango_adapter_1_1_adapter_device_class.html#a1b73f35357b61d35c60c228deed8f0a3", null ],
     [ "attribute_factory", "class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef", null ],
     [ "command_factory", "class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0", null ],
     [ "get_class_property", "class_tango_adapter_1_1_adapter_device_class.html#a712ec8d1af360d0a5a913dc5200e7382", null ],

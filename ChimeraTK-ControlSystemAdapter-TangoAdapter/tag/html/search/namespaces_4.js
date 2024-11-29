@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tangoadapter_275',['TangoAdapter',['../namespace_tango_adapter.html',1,'']]]
+  ['xml2tango_274',['xml2tango',['../namespacexml2tango.html',1,'']]]
 ];

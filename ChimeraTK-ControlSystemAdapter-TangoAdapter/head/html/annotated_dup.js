@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "TangoAdapter", "namespace_tango_adapter.html", "namespace_tango_adapter" ],
     [ "AverageCurrent", "class_average_current.html", null ],
     [ "Controller", "class_controller.html", null ],

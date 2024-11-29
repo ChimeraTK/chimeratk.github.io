@@ -1,11 +1,5 @@
 var dir_6871a11f9c4c1a53de35ef51ac1ea602 =
 [
-    [ "BitMask.h", "_bit_mask_8h.html", [
-      [ "WriteBitMask", "struct_chimera_t_k_1_1_write_bit_mask.html", "struct_chimera_t_k_1_1_write_bit_mask" ],
-      [ "Input", "struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html", "struct_chimera_t_k_1_1_write_bit_mask_1_1_input" ],
-      [ "ReadBitMask", "struct_chimera_t_k_1_1_read_bit_mask.html", "struct_chimera_t_k_1_1_read_bit_mask" ],
-      [ "Output", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output" ]
-    ] ],
     [ "ConfigReader.h", "_config_reader_8h.html", [
       [ "ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", "struct_chimera_t_k_1_1_config_reader" ],
       [ "Var", "struct_chimera_t_k_1_1_config_reader_1_1_var.html", "struct_chimera_t_k_1_1_config_reader_1_1_var" ],

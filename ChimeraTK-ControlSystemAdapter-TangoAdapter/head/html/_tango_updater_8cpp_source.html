@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter
-   &#160;<span id="projectnumber">01.00.00</span>
+   &#160;<span id="projectnumber">02.00.00</span>
    </div>
   </td>
  </tr>
@@ -93,117 +93,129 @@ $(document).ready(function(){initNavTree('_tango_updater_8cpp_source.html',''); 
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tango_updater_8h.html">TangoUpdater.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_adapter_device_class_8h.html">AdapterDeviceClass.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ReadAnyGroup.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_tango_updater.html#a5f0934a9a56093f302785a5da142fbd1">   12</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a5f0934a9a56093f302785a5da142fbd1">TangoUpdater::addVariable</a>(TransferElementAbstractor variable, <span class="keyword">const</span> std::string&amp; attrId) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    INFO_STREAM &lt;&lt; <a class="code" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">::TangoAdapter::AdapterDeviceClass::getClassName</a>() &lt;&lt;<span class="stringliteral">&quot;: TangoUpdater::addVariable &quot;</span> &lt;&lt; attrId &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span>(variable.isReadable()) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keyword">auto</span> <span class="keywordtype">id</span> = variable.getId();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="comment">// device, Attribute  read(device,attribute)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">_descriptorMap</a>.find(<span class="keywordtype">id</span>) ==</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">_descriptorMap</a>.end()) { <span class="comment">// jade: push to _elementsToRead if not found in _descriptorMap</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#afcba0ec468491fd3916c4dbe259b851f">_elementsToRead</a>.push_back(variable);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">_descriptorMap</a>[id].additionalTransferElements.insert(variable.getHighLevelImplElement());</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="comment">// push variable.getHighLevelImplElement()/updaterFunction/eq_fct in _descriptorMap</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="comment">// and push TransferElementAbstractor _elementsToRead</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">_descriptorMap</a>[id].attributeID.push_back(attrId);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_tango_updater.html#a1ff5bc0588a7da79cbbca005165bcf93">   31</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a1ff5bc0588a7da79cbbca005165bcf93">TangoUpdater::updateLoop</a>() {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_chimera_t_k_1_1_tango_updater.html#afcba0ec468491fd3916c4dbe259b851f">_elementsToRead</a>.empty()) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ReadAnyGroup group(<a class="code" href="class_chimera_t_k_1_1_tango_updater.html#afcba0ec468491fd3916c4dbe259b851f">_elementsToRead</a>.begin(), <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#afcba0ec468491fd3916c4dbe259b851f">_elementsToRead</a>.end());</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Call preRead for all TEs on additional transfer elements. waitAny() is doing this for all elements in the</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// ReadAnyGroup. Unnecessary calls to preRead() are anyway ignored and merely pose a performance issue. For large</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// servers, the performance impact is significant, hence we keep track of the TEs which need to be called.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; pair : <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">_descriptorMap</a>) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : pair.second.additionalTransferElements) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        elem-&gt;preRead(ChimeraTK::TransferType::read); <span class="comment">// TransferElement</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="comment">// Wait until any variable got an update</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">auto</span> notification = group.waitAny();               <span class="comment">// inside has a //handlePreRead TransferElement</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">auto</span> updatedElement = notification.getId();        <span class="comment">// 1 ID</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">auto</span>&amp; descriptor = <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">_descriptorMap</a>[updatedElement]; <span class="comment">// one descriptor</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="comment">// Complete the read transfer of the process variable</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      notification.accept();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tango_log_compat_8h.html">TangoLogCompat.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ReadAnyGroup.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_tango_adapter.html">TangoAdapter</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_tango_updater.html#a90becbca4d36ff3cfd1c6c1a6ff8a69e">   13</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a90becbca4d36ff3cfd1c6c1a6ff8a69e">TangoUpdater::addVariable</a>(ChimeraTK::TransferElementAbstractor variable, <span class="keyword">const</span> std::string&amp; attrId) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;TangoAdapter::Updater adding variable &quot;</span> &lt;&lt; attrId &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span>(variable.isReadable()) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">auto</span> <span class="keywordtype">id</span> = variable.getId();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="comment">// device, Attribute  read(device,attribute)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">_descriptorMap</a>.find(<span class="keywordtype">id</span>) ==</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;          <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">_descriptorMap</a>.end()) { <span class="comment">// jade: push to _elementsToRead if not found in _descriptorMap</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea">_elementsToRead</a>.push_back(variable);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">_descriptorMap</a>[id].additionalTransferElements.insert(variable.getHighLevelImplElement());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="comment">// push variable.getHighLevelImplElement()/updaterFunction/eq_fct in _descriptorMap</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="comment">// and push TransferElementAbstractor _elementsToRead</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">_descriptorMap</a>[id].attributeID.push_back(attrId);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_tango_updater.html#a0c21f09e18927e830e10b2c1efab5b7f">   34</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a0c21f09e18927e830e10b2c1efab5b7f">TangoUpdater::updateLoop</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea">_elementsToRead</a>.empty()) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ChimeraTK::ReadAnyGroup group(<a class="code" href="class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea">_elementsToRead</a>.begin(), <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea">_elementsToRead</a>.end());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Call preRead for all TEs on additional transfer elements. waitAny() is doing this for all elements in the</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// ReadAnyGroup. Unnecessary calls to preRead() are anyway ignored and merely pose a performance issue. For large</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// servers, the performance impact is significant, hence we keep track of the TEs which need to be called.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; pair : <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">_descriptorMap</a>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : pair.second.additionalTransferElements) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        elem-&gt;preRead(ChimeraTK::TransferType::read); <span class="comment">// TransferElement</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="comment">// Wait until any variable got an update</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">auto</span> notification = group.waitAny();               <span class="comment">// inside has a //handlePreRead TransferElement</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">auto</span> updatedElement = notification.getId();        <span class="comment">// 1 ID</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">auto</span>&amp; descriptor = <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">_descriptorMap</a>[updatedElement]; <span class="comment">// one descriptor</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="comment">// Call postRead for all TEs for the updated ID</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : descriptor.additionalTransferElements) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        elem-&gt;postRead(ChimeraTK::TransferType::read, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="comment">// FIXME: Ideally we would fill the Tango buffer for the attribute here, then attribute-&gt;read()</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="comment">// would just send it out to CORBA</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="comment">// FIXME: Also we would need to toggle the event here, once supported</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      DEBUG_STREAM &lt;&lt; <a class="code" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">::TangoAdapter::AdapterDeviceClass::getClassName</a>()&lt;&lt;<span class="stringliteral">&quot;:TangoUpdater::updateLoop update attribute: &quot;</span> &lt;&lt; descriptor.attributeID[0];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">// Call preRead for all TEs for the updated ID</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : descriptor.additionalTransferElements) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        elem-&gt;preRead(ChimeraTK::TransferType::read);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">// Allow shutting down this thread...</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      boost::this_thread::interruption_point();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_tango_updater.html#afdbf4ce1a3c16cdb9cfb2749d0e90eeb">   76</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#afdbf4ce1a3c16cdb9cfb2749d0e90eeb">TangoUpdater::run</a>() {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a19607fce01253a939f54b7f56377d48f">_syncThread</a> = boost::thread([&amp;]() { <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a1ff5bc0588a7da79cbbca005165bcf93">updateLoop</a>(); });</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="comment">// Complete the read transfer of the process variable</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      notification.accept();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="comment">// Call postRead for all TEs for the updated ID</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : descriptor.additionalTransferElements) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        elem-&gt;postRead(ChimeraTK::TransferType::read, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="comment">// FIXME: Ideally we would fill the Tango buffer for the attribute here, then attribute-&gt;read()</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="comment">// would just send it out to CORBA</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">// FIXME: Also we would need to toggle the event here, once supported</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="comment">// Call preRead for all TEs for the updated ID</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem : descriptor.additionalTransferElements) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        elem-&gt;preRead(ChimeraTK::TransferType::read);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">// Allow shutting down this thread...</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      boost::this_thread::interruption_point();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_tango_updater.html#a9c53d00052a1b0a046b5832178d6ec4e">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a9c53d00052a1b0a046b5832178d6ec4e">TangoUpdater::stop</a>() {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a19607fce01253a939f54b7f56377d48f">_syncThread</a>.interrupt();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; var : <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#afcba0ec468491fd3916c4dbe259b851f">_elementsToRead</a>) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        var.getHighLevelImplElement()-&gt;interrupt();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a19607fce01253a939f54b7f56377d48f">_syncThread</a>.join();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">catch</span>(boost::thread_interrupted&amp;) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// Ignore</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">catch</span>(std::system_error&amp; e) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      ERROR_STREAM &lt;&lt; <a class="code" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">::TangoAdapter::AdapterDeviceClass::getClassName</a>()&lt;&lt;<span class="stringliteral">&quot;:Failed to shut down updater thread: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_tango_updater.html#a798ec90744e39b59b3055f09f6b81312">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a798ec90744e39b59b3055f09f6b81312">TangoUpdater::run</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_tango_adapter_1_1_tango_updater.html#ae4725c14474bf4062c212f2e2625a14b">_syncThread</a> = boost::thread([&amp;]() { <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a0c21f09e18927e830e10b2c1efab5b7f">updateLoop</a>(); });</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_tango_updater.html#a117b07e7d4f7328a1fe44c6819af954f">   86</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a117b07e7d4f7328a1fe44c6819af954f">TangoUpdater::stop</a>() {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="class_tango_adapter_1_1_tango_updater.html#ae4725c14474bf4062c212f2e2625a14b">_syncThread</a>.interrupt();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; var : <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea">_elementsToRead</a>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        var.getHighLevelImplElement()-&gt;interrupt();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="class_tango_adapter_1_1_tango_updater.html#ae4725c14474bf4062c212f2e2625a14b">_syncThread</a>.join();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">// ChimeraTK::logic_error is theoretically thrown in ::interrupt(), practically should not happen and if it does,</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">// we should have aborted anyway much sooner</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// NOLINTNEXTLINE(bugprone-exception-escape)</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_tango_updater.html#a8df9816027ef3dcaa5400676b57dc032">   99</a></span>&#160;  <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a8df9816027ef3dcaa5400676b57dc032">TangoUpdater::~TangoUpdater</a>() {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_chimera_t_k_1_1_tango_updater.html#a9c53d00052a1b0a046b5832178d6ec4e">stop</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">catch</span>(boost::thread_interrupted&amp;) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="comment">// Ignore</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">catch</span>(std::system_error&amp; e) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="_tango_log_compat_8h.html#ac5366c263b8af52fecccce6377a33314">TANGO_LOG_INFO</a> &lt;&lt; <a class="code" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">::TangoAdapter::AdapterDeviceClass::getClassName</a>()</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;:Failed to shut down updater thread: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// ChimeraTK::logic_error is theoretically thrown in ::interrupt(), practically should not happen and if it does,</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// we should have aborted anyway much sooner</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">// NOLINTNEXTLINE(bugprone-exception-escape)</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_tango_updater.html#a099ba435b2271c9b940ef3961f675ec6">  108</a></span>&#160;  <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a099ba435b2271c9b940ef3961f675ec6">TangoUpdater::~TangoUpdater</a>() {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_tango_adapter_1_1_tango_updater.html#a117b07e7d4f7328a1fe44c6819af954f">stop</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} <span class="comment">// namespace TangoAdapter</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a33f7881b47541b2b07b7fa58bbdd704a"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">TangoAdapter::AdapterDeviceClass::getClassName</a></div><div class="ttdeci">static std::string getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="_adapter_device_class_8cpp_source.html#l00083">AdapterDeviceClass.cpp:83</a></div></div>
+<div class="ttc" id="a_tango_log_compat_8h_html"><div class="ttname"><a href="_tango_log_compat_8h.html">TangoLogCompat.h</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a33f7881b47541b2b07b7fa58bbdd704a"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">TangoAdapter::AdapterDeviceClass::getClassName</a></div><div class="ttdeci">static std::string getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="_adapter_device_class_8cpp_source.html#l00030">AdapterDeviceClass.cpp:30</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a099ba435b2271c9b940ef3961f675ec6"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a099ba435b2271c9b940ef3961f675ec6">TangoAdapter::TangoUpdater::~TangoUpdater</a></div><div class="ttdeci">~TangoUpdater()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00108">TangoUpdater.cpp:108</a></div></div>
 <div class="ttc" id="a_adapter_device_class_8h_html"><div class="ttname"><a href="_adapter_device_class_8h.html">AdapterDeviceClass.h</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_ae4725c14474bf4062c212f2e2625a14b"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#ae4725c14474bf4062c212f2e2625a14b">TangoAdapter::TangoUpdater::_syncThread</a></div><div class="ttdeci">boost::thread _syncThread</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8h_source.html#l00041">TangoUpdater.h:41</a></div></div>
 <div class="ttc" id="a_tango_updater_8h_html"><div class="ttname"><a href="_tango_updater_8h.html">TangoUpdater.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_a8df9816027ef3dcaa5400676b57dc032"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#a8df9816027ef3dcaa5400676b57dc032">ChimeraTK::TangoUpdater::~TangoUpdater</a></div><div class="ttdeci">~TangoUpdater() override</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00099">TangoUpdater.cpp:99</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_afcba0ec468491fd3916c4dbe259b851f"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#afcba0ec468491fd3916c4dbe259b851f">ChimeraTK::TangoUpdater::_elementsToRead</a></div><div class="ttdeci">std::list&lt; ChimeraTK::TransferElementAbstractor &gt; _elementsToRead</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8h_source.html#l00051">TangoUpdater.h:51</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_a9c53d00052a1b0a046b5832178d6ec4e"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#a9c53d00052a1b0a046b5832178d6ec4e">ChimeraTK::TangoUpdater::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00080">TangoUpdater.cpp:80</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_afdbf4ce1a3c16cdb9cfb2749d0e90eeb"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#afdbf4ce1a3c16cdb9cfb2749d0e90eeb">ChimeraTK::TangoUpdater::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00076">TangoUpdater.cpp:76</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_aabc5860ef33ff7f74cf15ec989991a98"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#aabc5860ef33ff7f74cf15ec989991a98">ChimeraTK::TangoUpdater::_descriptorMap</a></div><div class="ttdeci">std::map&lt; ChimeraTK::TransferElementID, UpdateDescriptor &gt; _descriptorMap</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8h_source.html#l00060">TangoUpdater.h:60</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_a1ff5bc0588a7da79cbbca005165bcf93"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#a1ff5bc0588a7da79cbbca005165bcf93">ChimeraTK::TangoUpdater::updateLoop</a></div><div class="ttdeci">void updateLoop()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00031">TangoUpdater.cpp:31</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_a19607fce01253a939f54b7f56377d48f"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#a19607fce01253a939f54b7f56377d48f">ChimeraTK::TangoUpdater::_syncThread</a></div><div class="ttdeci">boost::thread _syncThread</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8h_source.html#l00052">TangoUpdater.h:52</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_tango_updater_html_a5f0934a9a56093f302785a5da142fbd1"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_updater.html#a5f0934a9a56093f302785a5da142fbd1">ChimeraTK::TangoUpdater::addVariable</a></div><div class="ttdeci">void addVariable(ChimeraTK::TransferElementAbstractor variable, const std::string &amp;attrId)</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00012">TangoUpdater.cpp:12</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_attribute_mapper_8h_source.html#l00009">AttributeMapper.h:9</a></div></div>
+<div class="ttc" id="a_tango_log_compat_8h_html_a062aa5f90335f324ed72e4c68678a0ad"><div class="ttname"><a href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a></div><div class="ttdeci">#define TANGO_LOG_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="_tango_log_compat_8h_source.html#l00010">TangoLogCompat.h:10</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a980b927e3cc49d0b64126998d1fb96d9"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a980b927e3cc49d0b64126998d1fb96d9">TangoAdapter::TangoUpdater::_descriptorMap</a></div><div class="ttdeci">std::map&lt; ChimeraTK::TransferElementID, UpdateDescriptor &gt; _descriptorMap</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8h_source.html#l00049">TangoUpdater.h:49</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a6f79b9f22053332d3b3c4068bdbc33ea"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea">TangoAdapter::TangoUpdater::_elementsToRead</a></div><div class="ttdeci">std::list&lt; ChimeraTK::TransferElementAbstractor &gt; _elementsToRead</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8h_source.html#l00040">TangoUpdater.h:40</a></div></div>
+<div class="ttc" id="a_tango_log_compat_8h_html_ac5366c263b8af52fecccce6377a33314"><div class="ttname"><a href="_tango_log_compat_8h.html#ac5366c263b8af52fecccce6377a33314">TANGO_LOG_INFO</a></div><div class="ttdeci">#define TANGO_LOG_INFO</div><div class="ttdef"><b>Definition:</b> <a href="_tango_log_compat_8h_source.html#l00011">TangoLogCompat.h:11</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a117b07e7d4f7328a1fe44c6819af954f"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a117b07e7d4f7328a1fe44c6819af954f">TangoAdapter::TangoUpdater::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00086">TangoUpdater.cpp:86</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a798ec90744e39b59b3055f09f6b81312"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a798ec90744e39b59b3055f09f6b81312">TangoAdapter::TangoUpdater::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00080">TangoUpdater.cpp:80</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a0c21f09e18927e830e10b2c1efab5b7f"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a0c21f09e18927e830e10b2c1efab5b7f">TangoAdapter::TangoUpdater::updateLoop</a></div><div class="ttdeci">void updateLoop()</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00034">TangoUpdater.cpp:34</a></div></div>
+<div class="ttc" id="anamespace_tango_adapter_html"><div class="ttname"><a href="namespace_tango_adapter.html">TangoAdapter</a></div><div class="ttdoc">AdapterDeviceImpl class description: Test of TangoAdapterfor ChimeraTK.</div><div class="ttdef"><b>Definition:</b> <a href="_adapter_device_class_8h_source.html#l00010">AdapterDeviceClass.h:10</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_updater_html_a90becbca4d36ff3cfd1c6c1a6ff8a69e"><div class="ttname"><a href="class_tango_adapter_1_1_tango_updater.html#a90becbca4d36ff3cfd1c6c1a6ff8a69e">TangoAdapter::TangoUpdater::addVariable</a></div><div class="ttdeci">void addVariable(ChimeraTK::TransferElementAbstractor variable, const std::string &amp;attrId)</div><div class="ttdef"><b>Definition:</b> <a href="_tango_updater_8cpp_source.html#l00013">TangoUpdater.cpp:13</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

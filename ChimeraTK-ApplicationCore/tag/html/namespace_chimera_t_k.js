@@ -76,7 +76,6 @@ var namespace_chimera_t_k =
     [ "PyTransferElementBase", "class_chimera_t_k_1_1_py_transfer_element_base.html", "class_chimera_t_k_1_1_py_transfer_element_base" ],
     [ "PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", "class_chimera_t_k_1_1_py_variable_group" ],
     [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
-    [ "ReadBitMask", "struct_chimera_t_k_1_1_read_bit_mask.html", "struct_chimera_t_k_1_1_read_bit_mask" ],
     [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ],
     [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ],
     [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html", "class_chimera_t_k_1_1_scalar_accessor" ],
@@ -113,7 +112,6 @@ var namespace_chimera_t_k =
     [ "VoidAccessor", "class_chimera_t_k_1_1_void_accessor.html", "class_chimera_t_k_1_1_void_accessor" ],
     [ "VoidInput", "struct_chimera_t_k_1_1_void_input.html", "struct_chimera_t_k_1_1_void_input" ],
     [ "VoidOutput", "struct_chimera_t_k_1_1_void_output.html", "struct_chimera_t_k_1_1_void_output" ],
-    [ "WriteBitMask", "struct_chimera_t_k_1_1_write_bit_mask.html", "struct_chimera_t_k_1_1_write_bit_mask" ],
     [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],
     [ "XMLGenerator", "class_chimera_t_k_1_1_x_m_l_generator.html", "class_chimera_t_k_1_1_x_m_l_generator" ]
 ];

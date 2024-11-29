@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['delete_5fdevice_352',['delete_device',['../class_tango_adapter_1_1_adapter_device_impl.html#a359105f4ef7d3865badf5cf41e0834d3',1,'TangoAdapter::AdapterDeviceImpl']]],
-  ['derivetype_353',['deriveType',['../class_chimera_t_k_1_1_attribute_mapper.html#a2a4cfccd2b50a906f02ae6fa807007fe',1,'ChimeraTK::AttributeMapper']]],
-  ['detach_5fdynamic_5fattributes_5ffrom_5fdevice_354',['detach_dynamic_attributes_from_device',['../class_chimera_t_k_1_1_tango_adapter.html#a644b8ff87aaa0c50c1644a6878623045',1,'ChimeraTK::TangoAdapter']]],
-  ['device_355',['device',['../struct_threaded_tango_server.html#a709e2a48c7238d583a42c73673071587',1,'ThreadedTangoServer']]],
-  ['directimport_356',['directImport',['../class_chimera_t_k_1_1_attribute_mapper.html#a0882665a93864f300ac391e50cc3a16c',1,'ChimeraTK::AttributeMapper']]]
+  ['delete_5fdevice_344',['delete_device',['../class_tango_adapter_1_1_adapter_device_impl.html#a359105f4ef7d3865badf5cf41e0834d3',1,'TangoAdapter::AdapterDeviceImpl']]],
+  ['deriveattributename_345',['deriveAttributeName',['../namespace_tango_adapter_1_1util.html#ae88ae37de427ac4b7e4d55cc5fefb556',1,'TangoAdapter::util']]],
+  ['derivetype_346',['deriveType',['../namespace_tango_adapter_1_1util.html#a0b82108ba38d5e8d8270fb8c89f25e5c',1,'TangoAdapter::util']]],
+  ['device_347',['device',['../struct_threaded_tango_server.html#a709e2a48c7238d583a42c73673071587',1,'ThreadedTangoServer']]],
+  ['deviceclass_348',['DeviceClass',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html#a654062afe4ec042fce32a02312084001',1,'TangoAdapter::AttributeMapper::DeviceClass']]],
+  ['deviceinstance_349',['DeviceInstance',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html#a6ce49dcf0d6f4e3b1b4ca533165bdcf2',1,'TangoAdapter::AttributeMapper::DeviceInstance']]]
 ];

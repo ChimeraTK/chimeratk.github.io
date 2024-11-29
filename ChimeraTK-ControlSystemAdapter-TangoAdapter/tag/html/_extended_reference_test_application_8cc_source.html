@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter
-   &#160;<span id="projectnumber">01.00.00</span>
+   &#160;<span id="projectnumber">02.00.00</span>
    </div>
   </td>
  </tr>
@@ -96,18 +96,17 @@ $(document).ready(function(){initNavTree('_extended_reference_test_application_8
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/DevicePVManager.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/ProcessArray.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_extended_reference_test_application.html#ae1a6e2c4ca8a6820ceb466fc4c0a3ccd">   11</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_extended_reference_test_application.html#ae1a6e2c4ca8a6820ceb466fc4c0a3ccd">ExtendedReferenceTestApplication::initialise</a>() {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;[direction, name, size]: <a class="code" href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a>) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_extended_reference_test_application.html#aa3544ac34664cf221763f06da4caca6d">additionalProcessArrays</a>.emplace_back(_processVariableManager-&gt;createProcessArray&lt;<span class="keywordtype">int</span>&gt;(direction, name, size));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ReferenceTestApplication::initialise();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;std::list&lt;ExtendedReferenceTestApplication::VariableHolder&gt; <a class="code" href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_extended_reference_test_application.html#ae1a6e2c4ca8a6820ceb466fc4c0a3ccd">   10</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_extended_reference_test_application.html#ae1a6e2c4ca8a6820ceb466fc4c0a3ccd">ExtendedReferenceTestApplication::initialise</a>() {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [direction, name, size] : <a class="code" href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a>) {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_extended_reference_test_application.html#aa3544ac34664cf221763f06da4caca6d">additionalProcessArrays</a>.emplace_back(_processVariableManager-&gt;createProcessArray&lt;<span class="keywordtype">int</span>&gt;(direction, name, size));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  ReferenceTestApplication::initialise();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;std::list&lt;ExtendedReferenceTestApplication::VariableHolder&gt; <a class="code" href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a>;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_extended_reference_test_application_html_ae1a6e2c4ca8a6820ceb466fc4c0a3ccd"><div class="ttname"><a href="class_extended_reference_test_application.html#ae1a6e2c4ca8a6820ceb466fc4c0a3ccd">ExtendedReferenceTestApplication::initialise</a></div><div class="ttdeci">void initialise() override</div><div class="ttdef"><b>Definition:</b> <a href="_extended_reference_test_application_8cc_source.html#l00011">ExtendedReferenceTestApplication.cc:11</a></div></div>
+<div class="ttc" id="aclass_extended_reference_test_application_html_ae1a6e2c4ca8a6820ceb466fc4c0a3ccd"><div class="ttname"><a href="class_extended_reference_test_application.html#ae1a6e2c4ca8a6820ceb466fc4c0a3ccd">ExtendedReferenceTestApplication::initialise</a></div><div class="ttdeci">void initialise() override</div><div class="ttdef"><b>Definition:</b> <a href="_extended_reference_test_application_8cc_source.html#l00010">ExtendedReferenceTestApplication.cc:10</a></div></div>
 <div class="ttc" id="aclass_extended_reference_test_application_html_a85b158ed6e7df389005f6def6a4fd589"><div class="ttname"><a href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a></div><div class="ttdeci">static std::list&lt; VariableHolder &gt; additionalVariables</div><div class="ttdef"><b>Definition:</b> <a href="_extended_reference_test_application_8h_source.html#l00022">ExtendedReferenceTestApplication.h:22</a></div></div>
 <div class="ttc" id="aclass_extended_reference_test_application_html_aa3544ac34664cf221763f06da4caca6d"><div class="ttname"><a href="class_extended_reference_test_application.html#aa3544ac34664cf221763f06da4caca6d">ExtendedReferenceTestApplication::additionalProcessArrays</a></div><div class="ttdeci">std::list&lt; ChimeraTK::ProcessArray&lt; int &gt;::SharedPtr &gt; additionalProcessArrays</div><div class="ttdef"><b>Definition:</b> <a href="_extended_reference_test_application_8h_source.html#l00023">ExtendedReferenceTestApplication.h:23</a></div></div>
 <div class="ttc" id="a_extended_reference_test_application_8h_html"><div class="ttname"><a href="_extended_reference_test_application_8h.html">ExtendedReferenceTestApplication.h</a></div></div>

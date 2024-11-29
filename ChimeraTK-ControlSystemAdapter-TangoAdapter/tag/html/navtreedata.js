@@ -26,7 +26,8 @@ var NAVTREE =
     [ "Integrating your control system application into Tango", "index.html#Integration", [
       [ "Tango Device Server configuration", "index.html#configuration", [
         [ "Tango Device Server working folder", "index.html#working_folder", null ],
-        [ "ApplicationCore to Tango attribute mapping", "index.html#attribute_mapping", null ]
+        [ "ApplicationCore to Tango attribute mapping", "index.html#attribute_mapping", null ],
+        [ "Complex mapping of attributes through configuration", "index.html#attribute_mapping_file", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -35,8 +36,7 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -65,7 +65,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adapter_device_class_8cpp.html",
-"oven__sim_8py.html#adc2713b1b600d9a8f8f1c3273a21ba6c"
+"struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html#a398cc295c389b33b2105b242806e503b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

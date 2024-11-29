@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter
-   &#160;<span id="projectnumber">01.00.00</span>
+   &#160;<span id="projectnumber">02.00.00</span>
    </div>
   </td>
  </tr>
@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <h1><a class="anchor" id="Integration"></a>
 Integrating your control system application into Tango</h1>
 <p>Prerequisites: </p><ul>
-<li>The application has been written with the ChimeraTK-ApplicationCore library</li>
+<li>The application has been written with the ChimeraTK-ApplicationCore library </li>
+<li>The application MUST have a ChimeraTK::ApplicationFactory instead of a plain static application instance</li>
 </ul>
 <p>To integrate the application into Tango, it has to be linked against the ChimeraTK-ControlSystemAdapter-TangoAdapter library. Simply use the <code>find_package()</code> Feature from CMake. The package provides imported targets, so all you have to do is to use <code>target_link_library(${PROJECT_NAME} PRIVATE ChimeraTK::ChimeraTK-ControlSystemAdapter-TangoAdapter)</code>.</p>
 <h2><a class="anchor" id="configuration"></a>
@@ -103,59 +104,43 @@ Tango Device Server working folder</h3>
 <p>If no property is provided, the working folder will be the folder that contains the device server executable.</p>
 <h3><a class="anchor" id="attribute_mapping"></a>
 ApplicationCore to Tango attribute mapping</h3>
-<p>By default, the Tango adapter will export all variables available in the variable household of the application to Tango as attributes. ApplicationCore's hierarchical names are as follows:</p>
+<p>By default, the Tango adapter will export all available variables in the variable household of the application to Tango as attributes. ApplicationCore's hierarchical names are translated as follows:</p>
 <p>The top level Application module is separated from the rest of the hierarchy with an underscore. The rest of the hierarchy is appended translating "/" to ".". For example, <code>/ControlUnit/AverageCurrent/heatingCurrentAveraged</code> becomes <code>ControlUnit_AverageCurrent.heatingCurrentAveraged</code>.</p>
-<p>It is possible to filter and rename the list of exported attributes using the AttributeList property of the device server. The format consists of six values separated by ";"</p>
-<ol type="1">
-<li>The name of the Tango property</li>
-<li>The full path of the ApplicationCore</li>
-<li>Whether the variable is a SCALAR or a SPECTRUM</li>
-<li>The Tango type</li>
-<li>A description (will override a description that is available from ApplicationCore)</li>
-<li>The EGU (will override the one provided by ApplicationCore)</li>
-</ol>
-<div class="fragment"><div class="line">SetTemp;<a class="code" href="class_setpoint_ramp.html">SetpointRamp</a>/operatorSetpoint;<a class="code" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f">SCALAR</a>;DevFloat;Temperature setpoint <span class="keywordflow">for</span> the oven;<a class="code" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">c</a></div>
-<div class="line">OvenDeviceStatus;Devices/oven/status_message;<a class="code" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f">SCALAR</a>;DevString;;</div>
-<div class="line">Current;Monitoring/heatingCurrent;<a class="code" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f">SCALAR</a>;DevFloat;Heating current of the oven;mA</div>
-<div class="line">Temp;/Monitoring/tempartureOvenTop;<a class="code" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f">SCALAR</a>;DevFloat;;<a class="code" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">c</a></div>
-</div><!-- fragment --><p>Currently the type has to match exactly with the automatic type mapping done in the <a class="el" href="namespace_tango_adapter.html" title="AdapterDeviceImpl class description: Test of TangoAdapterfor ChimeraTK.">TangoAdapter</a>. In future versions it will be possible to change the type of a variable between ApplicationCore and Tango.</p>
-<p>Please refer to the following mapping of ApplicationCore types to Tango types for now:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">ApplicationCore </th><th class="markdownTableHeadNone">Tango  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone">DevUChar  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">int8 </td><td class="markdownTableBodyNone">DevChar  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uint16 </td><td class="markdownTableBodyNone">DevUShort  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">int16 </td><td class="markdownTableBodyNone">DevShort  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone">DevULong  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">DevLong  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uint64 </td><td class="markdownTableBodyNone">DevULong64  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">int64 </td><td class="markdownTableBodyNone">DevLong64  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">DevFloat  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">double </td><td class="markdownTableBodyNone">DevDouble  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bool </td><td class="markdownTableBodyNone">DevBolean  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">string </td><td class="markdownTableBodyNone">DevString  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">void </td><td class="markdownTableBodyNone">DevVoid  </td></tr>
-</table>
+<h3><a class="anchor" id="attribute_mapping_file"></a>
+Complex mapping of attributes through configuration</h3>
+<p>More complex mapping and filtering of process variables is supported as well through a configuration file.</p>
+<p>The configuration file for the extended attribute mapping configuration is called <code>applicationName-AttributeMapper.xml</code>. <code>applicationName</code> must be replaced with the name of your application.</p>
+<div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
+<div class="line">&lt;<span class="keywordtype">deviceServer</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">deviceClass</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MD22&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">DFMC-MD22</span> <span class="keyword">stepper</span> <span class="keyword">motor</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">deviceInstance</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;test/md22/0&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">Motor1</span>&lt;/<span class="keywordtype">import</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">deviceInstance</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">deviceInstance</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;test/md22/1&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">Motor2</span>&lt;/<span class="keywordtype">import</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">deviceInstance</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">deviceClass</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">deviceClass</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MD22Controller&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">title</span>&gt;<span class="keyword">MD22</span> <span class="keyword">Controller</span>&lt;/<span class="keywordtype">title</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">DFMC-MD22</span> <span class="keyword">stepper</span> <span class="keyword">controller</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">deviceInstance</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;test/md22/controller&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">attribute</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;numberOfMotors&quot;</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;/Motors/nMotors&quot;</span>&gt;</div>
+<div class="line">                &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">The</span> <span class="keyword">number</span> <span class="keyword">of</span> <span class="keyword">motors</span> <span class="keyword">in</span> <span class="keyword">this</span> <span class="keyword">device</span> <span class="keyword">server</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">                &lt;<span class="keywordtype">egu</span>&gt;<span class="keyword">n</span>/<span class="keyword">a</span>&lt;/<span class="keywordtype">egu</span>&gt;</div>
+<div class="line">            &lt;/<span class="keywordtype">attribute</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">deviceInstance</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">deviceClass</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">deviceServer</span>&gt;</div>
+</div><!-- fragment --><p>In the example above we declare a <code>deviceServer</code> with two <code>deviceClasses</code> and three <code>deviceInstances</code>.</p>
+<p>There can only be one <code>deviceServer</code> per configuration. The number of device classes and device instances, however, is not limited.</p>
+<p>The deviceClass has a mandatory <code>name</code> attribute and contains any number of <code>deviceInstances</code>. Variables inside the device instance can either be mass-imported by using the <code>import</code> tag, where the naming translation as described above is applied.</p>
+<p>A device class can have an optional <code>title</code> and <code>description</code>. Those override the device properties usually provided by the C++ code. If not given, <code>title</code> defaults to the class name and <code>description</code> to "ChimeraTK-based DeviceServer".</p>
+<p>It is also possible to map individual variables to attributes using the <code>&lt;attribute&gt;</code> tag. The <code>&lt;attribute&gt;</code> tag has a mandatory <code>source</code> attribute describing the path to the process variable. Using the optional <code>name</code> attribute, the attribute name can be specified.</p>
+<p>It is also possible to override the description and egu of the process variable using the <code>&lt;description&gt;</code> and <code>&lt;egu&gt;</code> child tags of <code>&lt;attribute&gt;</code>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespaceoven__sim_html_adc2713b1b600d9a8f8f1c3273a21ba6c"><div class="ttname"><a href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">oven_sim.c</a></div><div class="ttdeci">float c</div><div class="ttdef"><b>Definition:</b> <a href="oven__sim_8py_source.html#l00030">oven_sim.py:30</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html_a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f"><div class="ttname"><a href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f">ChimeraTK::SCALAR</a></div><div class="ttdeci">@ SCALAR</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_property_8h_source.html#l00014">AttributeProperty.h:14</a></div></div>
-<div class="ttc" id="aclass_setpoint_ramp_html"><div class="ttname"><a href="class_setpoint_ramp.html">SetpointRamp</a></div><div class="ttdef"><b>Definition:</b> <a href="_setpoint_ramp_8h_source.html#l00018">SetpointRamp.h:18</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

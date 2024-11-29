@@ -1,23 +1,4 @@
 var searchData=
 [
-  ['tangoadapter_2ecpp_304',['TangoAdapter.cpp',['../_tango_adapter_8cpp.html',1,'']]],
-  ['tangoadapter_2eh_305',['TangoAdapter.h',['../_tango_adapter_8h.html',1,'']]],
-  ['tangoadapterstatemachine_2ecpp_306',['TangoAdapterStateMachine.cpp',['../_tango_adapter_state_machine_8cpp.html',1,'']]],
-  ['tangopropertyhelper_2eh_307',['TangoPropertyHelper.h',['../_tango_property_helper_8h.html',1,'']]],
-  ['tangotestserver_2ecc_308',['TangoTestServer.cc',['../_tango_test_server_8cc.html',1,'']]],
-  ['tangotestserver_2eh_309',['TangoTestServer.h',['../_tango_test_server_8h.html',1,'']]],
-  ['tangoupdater_2ecpp_310',['TangoUpdater.cpp',['../_tango_updater_8cpp.html',1,'']]],
-  ['tangoupdater_2eh_311',['TangoUpdater.h',['../_tango_updater_8h.html',1,'']]],
-  ['testattributeproperty_2ecc_312',['testAttributeProperty.cc',['../test_attribute_property_8cc.html',1,'']]],
-  ['testtangoattributemapper_2ecc_313',['testTangoAttributeMapper.cc',['../test_tango_attribute_mapper_8cc.html',1,'']]],
-  ['testtangoserver_2ecpp_314',['testTangoServer.cpp',['../test_tango_server_8cpp.html',1,'']]],
-  ['testtangoservererrorflag_2ecc_315',['testTangoServerErrorFlag.cc',['../test_tango_server_error_flag_8cc.html',1,'']]],
-  ['testtangoserverfaultstartup_2ecc_316',['testTangoServerFaultStartup.cc',['../test_tango_server_fault_startup_8cc.html',1,'']]],
-  ['testtangoserverfaultstartup2_2ecc_317',['testTangoServerFaultStartup2.cc',['../test_tango_server_fault_startup2_8cc.html',1,'']]],
-  ['testtangoserverfilterattributes_2ecpp_318',['testTangoServerFilterAttributes.cpp',['../test_tango_server_filter_attributes_8cpp.html',1,'']]],
-  ['testtangoserverimportall_2ecpp_319',['testTangoServerImportAll.cpp',['../test_tango_server_import_all_8cpp.html',1,'']]],
-  ['testtangoservermaptwice_2ecc_320',['testTangoServerMapTwice.cc',['../test_tango_server_map_twice_8cc.html',1,'']]],
-  ['testtangoserverpersistspectrum_2ecpp_321',['testTangoServerPersistSpectrum.cpp',['../test_tango_server_persist_spectrum_8cpp.html',1,'']]],
-  ['testtangoserverpersistspectrumread_2ecpp_322',['testTangoServerPersistSpectrumRead.cpp',['../test_tango_server_persist_spectrum_read_8cpp.html',1,'']]],
-  ['testtangoserverreadwrite_2ecc_323',['testTangoServerReadWrite.cc',['../test_tango_server_read_write_8cc.html',1,'']]]
+  ['xml2tango_2epy_319',['xml2tango.py',['../xml2tango_8py.html',1,'']]]
 ];

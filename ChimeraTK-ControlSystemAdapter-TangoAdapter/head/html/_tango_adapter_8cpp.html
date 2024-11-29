@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter
-   &#160;<span id="projectnumber">01.00.00</span>
+   &#160;<span id="projectnumber">02.00.00</span>
    </div>
   </td>
  </tr>
@@ -84,22 +84,14 @@ $(document).ready(function(){initNavTree('_tango_adapter_8cpp.html',''); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">TangoAdapter.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_tango_adapter_8h_source.html">TangoAdapter.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_attribute_mapper_8h_source.html">AttributeMapper.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_adapter_device_class_8h_source.html">AdapterDeviceClass.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_spectrum_attrib_templ_8h_source.html">SpectrumAttribTempl.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="get_all_variable_names_8h_source.html">getAllVariableNames.h</a>&quot;</code><br />
+<code>#include &lt;tango/tango.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/ControlSystemAdapter/ApplicationFactory.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/ReadAnyGroup.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/RegisterPath.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/VoidRegisterAccessor.h&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;filesystem&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for TangoAdapter.cpp:</div>
@@ -114,16 +106,9 @@ $(document).ready(function(){initNavTree('_tango_adapter_8cpp.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacedetail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html">detail</a></td></tr>
+<tr class="memitem:namespace_tango_adapter"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tango_adapter.html">TangoAdapter</a></td></tr>
+<tr class="memdesc:namespace_tango_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_tango_adapter_1_1_adapter_device_impl.html">AdapterDeviceImpl</a> class description: Test of TangoAdapterfor ChimeraTK. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a3bd969b25681599145569becbf63c53d"><td class="memTemplParams" colspan="2">template&lt;typename TangoType , typename AdapterType &gt; </td></tr>
-<tr class="memitem:a3bd969b25681599145569becbf63c53d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a3bd969b25681599145569becbf63c53d">detail::writeInitialSpectrumValue</a> (Tango::DeviceImpl *device, const std::string &amp;memoriedValue, Tango::WAttribute &amp;writeAttribute, Tango::Attr *attr)</td></tr>
-<tr class="separator:a3bd969b25681599145569becbf63c53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

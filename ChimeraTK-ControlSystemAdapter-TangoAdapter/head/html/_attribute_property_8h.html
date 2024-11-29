@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter
-   &#160;<span id="projectnumber">01.00.00</span>
+   &#160;<span id="projectnumber">02.00.00</span>
    </div>
   </td>
  </tr>
@@ -86,17 +86,16 @@ $(document).ready(function(){initNavTree('_attribute_property_8h.html',''); init
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">AttributeProperty.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;tango/tango.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/Exception.h&gt;</code><br />
 <code>#include &lt;boost/algorithm/string/classification.hpp&gt;</code><br />
 <code>#include &lt;boost/algorithm/string/split.hpp&gt;</code><br />
-<code>#include &lt;ChimeraTK/Exception.h&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for AttributeProperty.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -118,41 +117,128 @@ $(document).ready(function(){initNavTree('_attribute_property_8h.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_attribute_property.html">ChimeraTK::AttributeProperty</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tango_adapter_1_1_attribute_property.html">TangoAdapter::AttributeProperty</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
+<tr class="memitem:namespace_tango_adapter"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tango_adapter.html">TangoAdapter</a></td></tr>
+<tr class="memdesc:namespace_tango_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_tango_adapter_1_1_adapter_device_impl.html">AdapterDeviceImpl</a> class description: Test of TangoAdapterfor ChimeraTK. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a5c3a83864bf5991d09aa5c2abb911bf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_attribute_property_8h.html#a5c3a83864bf5991d09aa5c2abb911bf0">TOKEN</a>&#160;&#160;&#160;&quot;;&quot;</td></tr>
-<tr class="separator:a5c3a83864bf5991d09aa5c2abb911bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a19a478b4dd6253da37ff542562ec0358"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358">ChimeraTK::AttrDataFormat</a> { <a class="el" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a5d3e285f85f7e0a3842f09502a8b1a1f">ChimeraTK::SCALAR</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358a7c96960d760cc69832cbe711895abda8">ChimeraTK::SPECTRUM</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a19a478b4dd6253da37ff542562ec0358ac8450ef7d90d06056ea93c17fa0ea70c">ChimeraTK::IMAGE</a>
+<tr class="memitem:ab7d82969bf35457264613277dbb3ffac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffac">TangoAdapter::AttrDataFormat</a> { <a class="el" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca8f3d9a4b6a7b7f2c7afa61ca113d0db9">TangoAdapter::AttrDataFormat::SCALAR</a>, 
+<a class="el" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1">TangoAdapter::AttrDataFormat::SPECTRUM</a>, 
+<a class="el" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca23a12f67f614b5518c7f1c2465bf95e3">TangoAdapter::AttrDataFormat::IMAGE</a>
  }</td></tr>
-<tr class="separator:a19a478b4dd6253da37ff542562ec0358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab7d82969bf35457264613277dbb3ffac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2b185cc6a37a0b82872b1a98eda094da"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_attribute_property_8h.html#a2b185cc6a37a0b82872b1a98eda094da">std::operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffac">TangoAdapter::AttrDataFormat</a> &amp;f)</td></tr>
+<tr class="separator:a2b185cc6a37a0b82872b1a98eda094da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9cdf1008147c209f56f34b79de2cd4"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_attribute_property_8h.html#acb9cdf1008147c209f56f34b79de2cd4">std::operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_tango_adapter_1_1_attribute_property.html">TangoAdapter::AttributeProperty</a> &amp;prop)</td></tr>
+<tr class="separator:acb9cdf1008147c209f56f34b79de2cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5c3a83864bf5991d09aa5c2abb911bf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c3a83864bf5991d09aa5c2abb911bf0">&#9670;&nbsp;</a></span>TOKEN</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2b185cc6a37a0b82872b1a98eda094da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b185cc6a37a0b82872b1a98eda094da">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define TOKEN&#160;&#160;&#160;&quot;;&quot;</td>
+          <td class="memname">std::ostream&amp; std::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffac">TangoAdapter::AttrDataFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_attribute_property_8h_source.html#l00011">11</a> of file <a class="el" href="_attribute_property_8h_source.html">AttributeProperty.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_attribute_property_8h_source.html#l00046">46</a> of file <a class="el" href="_attribute_property_8h_source.html">AttributeProperty.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_attribute_property_8h_a2b185cc6a37a0b82872b1a98eda094da_cgraph.svg" width="138" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_attribute_property_8h_a2b185cc6a37a0b82872b1a98eda094da_icgraph.svg" width="138" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="acb9cdf1008147c209f56f34b79de2cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9cdf1008147c209f56f34b79de2cd4">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; std::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_tango_adapter_1_1_attribute_property.html">TangoAdapter::AttributeProperty</a> &amp;&#160;</td>
+          <td class="paramname"><em>prop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_property_8h_source.html#l00068">68</a> of file <a class="el" href="_attribute_property_8h_source.html">AttributeProperty.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_attribute_property_8h_acb9cdf1008147c209f56f34b79de2cd4_cgraph.svg" width="312" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
