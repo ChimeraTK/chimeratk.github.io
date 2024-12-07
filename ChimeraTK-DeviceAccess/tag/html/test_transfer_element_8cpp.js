@@ -13,7 +13,6 @@ var test_transfer_element_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a9f0de6997a9b96ae96df844ec4d3d1ba", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a3d0e2fca3872855c3ea51161849c23ab", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a2576802154fcbb90a3e086435e68c469", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a22cf6a6f9fec875ea234eb0bbf729828", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a420be5410e3a9c6246b3650678e9f44f", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a1d00dabaec19eea786d5aa951efdfa97", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_element_8cpp.html#a44016c3713ca7f4f8853f777406ca4e9", null ],

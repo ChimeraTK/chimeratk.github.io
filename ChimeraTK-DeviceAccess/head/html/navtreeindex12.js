@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"functions_v.html":[19,3,0,22],
 "functions_vars.html":[19,3,2],
 "functions_vars.html":[19,3,2,0],
 "functions_vars_a.html":[19,3,2,1],
@@ -29,8 +30,8 @@ var NAVTREEINDEX12 =
 "functions_x.html":[19,3,0,24],
 "functions_y.html":[19,3,0,25],
 "functions_~.html":[19,3,0,26],
-"globals.html":[20,1,0,0],
 "globals.html":[20,1,0],
+"globals.html":[20,1,0,0],
 "globals_b.html":[20,1,0,1],
 "globals_c.html":[20,1,0,2],
 "globals_d.html":[20,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "read_temperature_doocs_zmq_8cpp-example.html":[21,6],
 "rebot_manual_test_8cpp.html":[20,0,0,0,7,5,0],
 "rebot_manual_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[20,0,0,0,7,5,0,0],
-"rebot_manual_test_8cpp_source.html":[20,0,0,0,7,5,0],
-"shared_dummy_helpers_8h.html":[20,0,0,0,7,2,3]
+"rebot_manual_test_8cpp_source.html":[20,0,0,0,7,5,0]
 };

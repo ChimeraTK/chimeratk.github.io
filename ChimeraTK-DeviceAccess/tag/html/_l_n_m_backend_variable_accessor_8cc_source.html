@@ -343,14 +343,17 @@ $(document).ready(function(){initNavTree('_l_n_m_backend_variable_accessor_8cc_s
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d">callForType</a>(_info.valueType, [&amp;, <span class="keyword">this</span>](<span class="keyword">auto</span> arg) {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      auto&amp; vtEntry = boost::fusion::at_key&lt;decltype(arg)&gt;(lnmVariable.valueTable.table);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      this-&gt;interrupt_impl(vtEntry.subscriptions[this-&gt;getId()]);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    });</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <a class="code" href="_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(<a class="code" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      auto itsub = vtEntry.subscriptions.find(this-&gt;getId());</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      if(itsub != vtEntry.subscriptions.end()) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        this-&gt;interrupt_impl(itsub-&gt;second);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    });</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <a class="code" href="_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(LNMBackendVariableAccessor);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_chimera_t_k_1_1_l_n_m_backend_variable_accessor_html_a6490213090445315ccfba3740257949d"><div class="ttname"><a href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a6490213090445315ccfba3740257949d">ChimeraTK::LNMBackendVariableAccessor::_info</a></div><div class="ttdeci">LNMBackendRegisterInfo _info</div><div class="ttdoc">register information.</div><div class="ttdef"><b>Definition:</b> <a href="_l_n_m_backend_variable_accessor_8h_source.html#l00059">LNMBackendVariableAccessor.h:59</a></div></div>

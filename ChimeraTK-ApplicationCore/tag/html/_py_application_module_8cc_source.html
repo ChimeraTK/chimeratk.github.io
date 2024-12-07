@@ -149,75 +149,73 @@ $(document).ready(function(){initNavTree('_py_application_module_8cc_source.html
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">while</span>(_myThread.attr(<span class="stringliteral">&quot;is_alive&quot;</span>)().cast&lt;<span class="keywordtype">bool</span>&gt;()) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; var : getAccessorListRecursive()) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">auto</span> el{var.getAppAccessorNoType().getHighLevelImplElement()};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span>(el-&gt;getAccessModeFlags().has(AccessMode::wait_for_new_data)) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          el-&gt;interrupt();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      _myThread.attr(<span class="stringliteral">&quot;join&quot;</span>)(0.01);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        el-&gt;interrupt();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      _myThread.attr(<span class="stringliteral">&quot;join&quot;</span>)(0.01);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_application_module.html#a6cff4707111e01489792a7a2ac22913f">   74</a></span>&#160;  <span class="keywordtype">void</span> PyApplicationModule::bind(<a class="code" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// on Python side, PythonApplicationModule derives from PyVariableGroup although on C++ side, it does not.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// So we specify inheritance on Python side by constructor args.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    py::class_&lt;<a class="code" href="class_chimera_t_k_1_1_py_application_module.html">PyApplicationModule</a>, <a class="code" href="class_chimera_t_k_1_1_python_application_module_trampoline.html">PythonApplicationModuleTrampoline</a>, <a class="code" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::unique_ptr&lt;PyApplicationModule, py::nodelete&gt;&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        cam(m, <span class="stringliteral">&quot;ApplicationModule&quot;</span>, py::multiple_inheritance());</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    cam.def(py::init([](<a class="code" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a>&amp; owner, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; description,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                         <span class="keyword">const</span> std::unordered_set&lt;std::string&gt;&amp; tags) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1_py_owning_object.html">PyOwningObject</a>&amp;<span class="keyword">&gt;</span>(owner).make_child&lt;PythonApplicationModuleTrampoline&gt;(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          &amp;owner, name, description, tags);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }),</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        py::return_value_policy::reference,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// doc and default args:</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="stringliteral">&quot;&quot;</span>, py::arg(<span class="stringliteral">&quot;owner&quot;</span>), py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;description&quot;</span>),</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        py::arg(<span class="stringliteral">&quot;tags&quot;</span>) = std::unordered_set&lt;std::string&gt;{});</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    cam.def(<span class="stringliteral">&quot;mainLoopWrapper&quot;</span>, &amp;PyApplicationModule::mainLoopWrapper, py::call_guard&lt;py::gil_scoped_release&gt;())</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        .def(<span class="stringliteral">&quot;appConfig&quot;</span>,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            []([[maybe_unused]] <a class="code" href="class_chimera_t_k_1_1_py_application_module.html">PyApplicationModule</a>&amp; pam) { <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_py_config_reader.html">PyConfigReader</a>(PyApplicationModule::appConfig()); })</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        .def(<span class="stringliteral">&quot;getDataValidity&quot;</span>, &amp;PyApplicationModule::getDataValidity,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="stringliteral">&quot;Return the data validity flag.\n\nIf any This function will be called by all output accessors in their &quot;</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="stringliteral">&quot;write functions.&quot;</span>)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        .def(<span class="stringliteral">&quot;getCurrentVersionNumber&quot;</span>, &amp;PyApplicationModule::getCurrentVersionNumber,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="stringliteral">&quot;Return the current version number which has been received with the last push-type read operation.&quot;</span>)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        .def(<span class="stringliteral">&quot;setCurrentVersionNumber&quot;</span>, &amp;PyApplicationModule::setCurrentVersionNumber,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="stringliteral">&quot;Set the current version number.\n\nThis function is called by the push-type input accessors in their read &quot;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="stringliteral">&quot;functions.&quot;</span>,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            py::arg(<span class="stringliteral">&quot;versionNumber&quot;</span>))</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// TODO: Bind Model .def(&quot;getModel&quot;, &amp;PythonApplicationModule::getModel)</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        .def(<span class="stringliteral">&quot;incrementDataFaultCounter&quot;</span>, &amp;PyApplicationModule::incrementDataFaultCounter,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="stringliteral">&quot;Set the data validity flag to fault and increment the fault counter.\n\nThis function will be called by &quot;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="stringliteral">&quot;all input accessors when receiving the a faulty update if the previous update was ok. The caller of this &quot;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="stringliteral">&quot;function must ensure that calls to this function are paired to a subsequent call to &quot;</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="stringliteral">&quot;decrementDataFaultCounter().&quot;</span>)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        .def(<span class="stringliteral">&quot;decrementDataFaultCounter&quot;</span>, &amp;PyApplicationModule::decrementDataFaultCounter,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="stringliteral">&quot;Decrement the fault counter and set the data validity flag to ok if the counter has reached 0.\n\nThis &quot;</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="stringliteral">&quot;function will be called by all input accessors when receiving the an ok update if the previous update was &quot;</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="stringliteral">&quot;faulty. The caller of this function must ensure that calles to this function are paired to a previous &quot;</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="stringliteral">&quot;call to incrementDataFaultCounter().&quot;</span>)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        .def(<span class="stringliteral">&quot;getDataFaultCounter&quot;</span>, &amp;PyApplicationModule::getDataFaultCounter,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="stringliteral">&quot;Get the Number of inputs which report DataValidity::faulty.&quot;</span>)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        .def(</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="stringliteral">&quot;logger&quot;</span>,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            [](<a class="code" href="class_chimera_t_k_1_1_py_application_module.html">PyApplicationModule</a>&amp; <a class="code" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">module</a>, <a class="code" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a> severity) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              <span class="comment">// Get name of python implementation, not the C++ class, which would be PythonApplicationModule</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;              <span class="keyword">auto</span> pythonClassName = py::cast(&amp;<a class="code" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">module</a>).get_type().attr(<span class="stringliteral">&quot;__name__&quot;</span>).cast&lt;std::string&gt;();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;              <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_py_logger_stream_proxy.html">PyLoggerStreamProxy</a>(severity, pythonClassName);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            },</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="stringliteral">&quot;Convenicene function to obtain a logger stream with the given Severity.\n\nThe context string will be &quot;</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="stringliteral">&quot;obtained from the class name of the module.&quot;</span>)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        .def(<span class="stringliteral">&quot;disable&quot;</span>, &amp;PyApplicationModule::disable,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="stringliteral">&quot;Disable the module such that it is not part of the Application.&quot;</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_application_module.html#a6cff4707111e01489792a7a2ac22913f">   72</a></span>&#160;  <span class="keywordtype">void</span> PyApplicationModule::bind(<a class="code" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// on Python side, PythonApplicationModule derives from PyVariableGroup although on C++ side, it does not.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// So we specify inheritance on Python side by constructor args.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    py::class_&lt;<a class="code" href="class_chimera_t_k_1_1_py_application_module.html">PyApplicationModule</a>, <a class="code" href="class_chimera_t_k_1_1_python_application_module_trampoline.html">PythonApplicationModuleTrampoline</a>, <a class="code" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::unique_ptr&lt;PyApplicationModule, py::nodelete&gt;&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        cam(m, <span class="stringliteral">&quot;ApplicationModule&quot;</span>, py::multiple_inheritance());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    cam.def(py::init([](<a class="code" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a>&amp; owner, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; description,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                         <span class="keyword">const</span> std::unordered_set&lt;std::string&gt;&amp; tags) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1_py_owning_object.html">PyOwningObject</a>&amp;<span class="keyword">&gt;</span>(owner).make_child&lt;PythonApplicationModuleTrampoline&gt;(</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          &amp;owner, name, description, tags);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }),</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        py::return_value_policy::reference,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// doc and default args:</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="stringliteral">&quot;&quot;</span>, py::arg(<span class="stringliteral">&quot;owner&quot;</span>), py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;description&quot;</span>),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        py::arg(<span class="stringliteral">&quot;tags&quot;</span>) = std::unordered_set&lt;std::string&gt;{});</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cam.def(<span class="stringliteral">&quot;mainLoopWrapper&quot;</span>, &amp;PyApplicationModule::mainLoopWrapper, py::call_guard&lt;py::gil_scoped_release&gt;())</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        .def(<span class="stringliteral">&quot;appConfig&quot;</span>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            []([[maybe_unused]] <a class="code" href="class_chimera_t_k_1_1_py_application_module.html">PyApplicationModule</a>&amp; pam) { <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_py_config_reader.html">PyConfigReader</a>(PyApplicationModule::appConfig()); })</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        .def(<span class="stringliteral">&quot;getDataValidity&quot;</span>, &amp;PyApplicationModule::getDataValidity,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="stringliteral">&quot;Return the data validity flag.\n\nIf any This function will be called by all output accessors in their &quot;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="stringliteral">&quot;write functions.&quot;</span>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        .def(<span class="stringliteral">&quot;getCurrentVersionNumber&quot;</span>, &amp;PyApplicationModule::getCurrentVersionNumber,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="stringliteral">&quot;Return the current version number which has been received with the last push-type read operation.&quot;</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        .def(<span class="stringliteral">&quot;setCurrentVersionNumber&quot;</span>, &amp;PyApplicationModule::setCurrentVersionNumber,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="stringliteral">&quot;Set the current version number.\n\nThis function is called by the push-type input accessors in their read &quot;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="stringliteral">&quot;functions.&quot;</span>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            py::arg(<span class="stringliteral">&quot;versionNumber&quot;</span>))</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// TODO: Bind Model .def(&quot;getModel&quot;, &amp;PythonApplicationModule::getModel)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        .def(<span class="stringliteral">&quot;incrementDataFaultCounter&quot;</span>, &amp;PyApplicationModule::incrementDataFaultCounter,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="stringliteral">&quot;Set the data validity flag to fault and increment the fault counter.\n\nThis function will be called by &quot;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="stringliteral">&quot;all input accessors when receiving the a faulty update if the previous update was ok. The caller of this &quot;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="stringliteral">&quot;function must ensure that calls to this function are paired to a subsequent call to &quot;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="stringliteral">&quot;decrementDataFaultCounter().&quot;</span>)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        .def(<span class="stringliteral">&quot;decrementDataFaultCounter&quot;</span>, &amp;PyApplicationModule::decrementDataFaultCounter,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="stringliteral">&quot;Decrement the fault counter and set the data validity flag to ok if the counter has reached 0.\n\nThis &quot;</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="stringliteral">&quot;function will be called by all input accessors when receiving the an ok update if the previous update was &quot;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="stringliteral">&quot;faulty. The caller of this function must ensure that calles to this function are paired to a previous &quot;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="stringliteral">&quot;call to incrementDataFaultCounter().&quot;</span>)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        .def(<span class="stringliteral">&quot;getDataFaultCounter&quot;</span>, &amp;PyApplicationModule::getDataFaultCounter,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="stringliteral">&quot;Get the Number of inputs which report DataValidity::faulty.&quot;</span>)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        .def(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="stringliteral">&quot;logger&quot;</span>,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            [](<a class="code" href="class_chimera_t_k_1_1_py_application_module.html">PyApplicationModule</a>&amp; <a class="code" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">module</a>, <a class="code" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a> severity) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;              <span class="comment">// Get name of python implementation, not the C++ class, which would be PythonApplicationModule</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;              <span class="keyword">auto</span> pythonClassName = py::cast(&amp;<a class="code" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">module</a>).get_type().attr(<span class="stringliteral">&quot;__name__&quot;</span>).cast&lt;std::string&gt;();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              <span class="keywordflow">return</span> <a class="code" href="class_chimera_t_k_1_1_py_logger_stream_proxy.html">PyLoggerStreamProxy</a>(severity, pythonClassName);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            },</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="stringliteral">&quot;Convenicene function to obtain a logger stream with the given Severity.\n\nThe context string will be &quot;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="stringliteral">&quot;obtained from the class name of the module.&quot;</span>)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        .def(<span class="stringliteral">&quot;disable&quot;</span>, &amp;PyApplicationModule::disable,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="stringliteral">&quot;Disable the module such that it is not part of the Application.&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_chimera_t_k_1_1_python_application_module_trampoline_html"><div class="ttname"><a href="class_chimera_t_k_1_1_python_application_module_trampoline.html">ChimeraTK::PythonApplicationModuleTrampoline</a></div><div class="ttdef"><b>Definition:</b> <a href="_py_application_module_8h_source.html#l00035">PyApplicationModule.h:35</a></div></div>

@@ -852,12 +852,12 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
+    [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
-    [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
+    [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, Void >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< Void, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html", null ],
