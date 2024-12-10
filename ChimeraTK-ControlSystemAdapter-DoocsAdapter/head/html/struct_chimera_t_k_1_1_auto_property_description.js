@@ -16,7 +16,6 @@ var struct_chimera_t_k_1_1_auto_property_description =
     [ "getSources", "struct_chimera_t_k_1_1_auto_property_description.html#a73cb09c4ac947a66c37795ca48c925a9", null ],
     [ "operator==", "struct_chimera_t_k_1_1_auto_property_description.html#ad7917775bfbf04cb786d73eb984bd4a2", null ],
     [ "print", "struct_chimera_t_k_1_1_auto_property_description.html#ae307ea1ce4c8365935cbf8b5b4717572", null ],
-    [ "type", "struct_chimera_t_k_1_1_auto_property_description.html#a6ea25a4eee2a6702f8eb9b551ad8c7c7", null ],
     [ "dataType", "struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246", null ],
     [ "source", "struct_chimera_t_k_1_1_auto_property_description.html#ab5146c69e798b20a26bf8a05ee9c539d", null ]
 ];

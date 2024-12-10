@@ -9,6 +9,7 @@ var dir_5c51cc5c1bd9b18579b1f9a53ec390e4 =
     [ "serverTestGlobalTurnOnOffHistory.cpp", "server_test_global_turn_on_off_history_8cpp.html", "server_test_global_turn_on_off_history_8cpp" ],
     [ "serverTestGlobalTurnOnOffWriteable.cpp", "server_test_global_turn_on_off_writeable_8cpp.html", "server_test_global_turn_on_off_writeable_8cpp" ],
     [ "serverTestIfff.cpp", "server_test_ifff_8cpp.html", "server_test_ifff_8cpp" ],
+    [ "serverTestIiii.cpp", "server_test_iiii_8cpp.html", "server_test_iiii_8cpp" ],
     [ "serverTestImportAllIntoLocation.cpp", "server_test_import_all_into_location_8cpp.html", "server_test_import_all_into_location_8cpp" ],
     [ "serverTestMultiMappedPV.cpp", "server_test_multi_mapped_p_v_8cpp.html", "server_test_multi_mapped_p_v_8cpp" ],
     [ "serverTestPlainVariableCreation.cpp", "server_test_plain_variable_creation_8cpp.html", "server_test_plain_variable_creation_8cpp" ],

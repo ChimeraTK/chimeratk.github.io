@@ -12,6 +12,9 @@ var dir_f97b72e2071f98ccfc57348cb0b6d172 =
     [ "DoocsIfff.h", "_doocs_ifff_8h.html", [
       [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", "class_chimera_t_k_1_1_doocs_ifff" ]
     ] ],
+    [ "DoocsIiii.h", "_doocs_iiii_8h.html", [
+      [ "DoocsIiii", "class_chimera_t_k_1_1_doocs_iiii.html", "class_chimera_t_k_1_1_doocs_iiii" ]
+    ] ],
     [ "DoocsImage.h", "_doocs_image_8h.html", [
       [ "MappedDoocsImg", "struct_chimera_t_k_1_1_mapped_doocs_img.html", "struct_chimera_t_k_1_1_mapped_doocs_img" ],
       [ "DoocsImage", "class_chimera_t_k_1_1_doocs_image.html", "class_chimera_t_k_1_1_doocs_image" ]
@@ -48,6 +51,7 @@ var dir_f97b72e2071f98ccfc57348cb0b6d172 =
       [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ],
       [ "Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", "struct_chimera_t_k_1_1_xy_description_1_1_axis" ],
       [ "IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", "struct_chimera_t_k_1_1_ifff_description" ],
+      [ "IiiiDescription", "struct_chimera_t_k_1_1_iiii_description.html", "struct_chimera_t_k_1_1_iiii_description" ],
       [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ],
       [ "ErrorReportingInfo", "struct_chimera_t_k_1_1_error_reporting_info.html", "struct_chimera_t_k_1_1_error_reporting_info" ]
     ] ],

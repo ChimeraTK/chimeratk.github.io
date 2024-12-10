@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('server_test_xy_8cpp_source.html',''); 
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::vector&lt;double&gt; yArrayValues = {-10.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0F};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  DoocsServerTestHelper::doocsSet&lt;double&gt;(<span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_ARRAY&quot;</span>, yArrayValues);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Wait a bit</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  usleep(2000000);</div>
@@ -172,10 +172,10 @@ $(document).ready(function(){initNavTree('server_test_xy_8cpp_source.html',''); 
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FLOAT/TO_DEVICE_ARRAY&quot;</span>, xArrayValues);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  DoocsServerTestHelper::doocsSet&lt;double&gt;(<span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_ARRAY&quot;</span>, yArrayValues);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  checkWithTimeout&lt;double&gt;(check, -10.0);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('server_test_xy_8cpp_source.html',''); 
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">/* Just updating Y values with matching version */</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  std::transform(yArrayValues.begin(), yArrayValues.end(), yArrayValues.begin(), [](<span class="keywordtype">double</span> v) { return v * 10.0; });</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  DoocsServerTestHelper::doocsSet&lt;double&gt;(<span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_ARRAY&quot;</span>, yArrayValues);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  checkWithTimeout&lt;double&gt;(check, -10.0 * 10.0);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Nothing should have happened</span></div>
@@ -207,9 +207,9 @@ $(document).ready(function(){initNavTree('server_test_xy_8cpp_source.html',''); 
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  std::transform(yArrayValues.begin(), yArrayValues.end(), yArrayValues.begin(), [](<span class="keywordtype">double</span> v) { return v * 10.0; });</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.versionNumber = boost::none;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.versionNumber = boost::none;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  DoocsServerTestHelper::doocsSet&lt;double&gt;(<span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_ARRAY&quot;</span>, yArrayValues);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// Wait a bit</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  usleep(2000000);</div>
@@ -229,10 +229,10 @@ $(document).ready(function(){initNavTree('server_test_xy_8cpp_source.html',''); 
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aserver_test_xy_8cpp_html_affbafe6144ce723eb1c724356f970c22"><div class="ttname"><a href="server_test_xy_8cpp.html#affbafe6144ce723eb1c724356f970c22">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testXyMetadata)</div><div class="ttdef"><b>Definition:</b> <a href="server_test_xy_8cpp_source.html#l00031">serverTestXy.cpp:31</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_ab72e9bb9f1d314e6e36ca2c81c3bf85c"><div class="ttname"><a href="server_based_test_tools_8h.html#ab72e9bb9f1d314e6e36ca2c81c3bf85c">getLocationFromPropertyAddress</a></div><div class="ttdeci">EqFct * getLocationFromPropertyAddress(std::string const &amp;propertyAddress)</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00082">serverBasedTestTools.h:82</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_a9c2852da25e25d4dc4f3f36a4ed8e8df"><div class="ttname"><a href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00055">serverBasedTestTools.h:55</a></div></div>
-<div class="ttc" id="astruct_global_fixture_html_ae53b0447f01f4c125c50be2035158c97"><div class="ttname"><a href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_array_persistence_8cpp_source.html#l00072">serverTestArrayPersistence.cpp:72</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_ab72e9bb9f1d314e6e36ca2c81c3bf85c"><div class="ttname"><a href="server_based_test_tools_8h.html#ab72e9bb9f1d314e6e36ca2c81c3bf85c">getLocationFromPropertyAddress</a></div><div class="ttdeci">EqFct * getLocationFromPropertyAddress(std::string const &amp;propertyAddress)</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00083">serverBasedTestTools.h:83</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_a9c2852da25e25d4dc4f3f36a4ed8e8df"><div class="ttname"><a href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00056">serverBasedTestTools.h:56</a></div></div>
 <div class="ttc" id="aserver_test_xy_8cpp_html_ad8d1b5a48a55c8db28b8c3f09e090ca8"><div class="ttname"><a href="server_test_xy_8cpp.html#ad8d1b5a48a55c8db28b8c3f09e090ca8">PROPERTY_NAME</a></div><div class="ttdeci">const DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION std::string PROPERTY_NAME</div><div class="ttdef"><b>Definition:</b> <a href="server_test_xy_8cpp_source.html#l00027">serverTestXy.cpp:27</a></div></div>
+<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_array_persistence_8cpp_source.html#l00073">serverTestArrayPersistence.cpp:73</a></div></div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
 <div class="ttc" id="aserver_test_xy_8cpp_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="server_test_xy_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div></div>

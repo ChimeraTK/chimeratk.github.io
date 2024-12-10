@@ -35,6 +35,7 @@ var NAVTREE =
         [ "D_array", "index.html#D_array", null ],
         [ "D_xy", "index.html#D_xy", null ],
         [ "D_ifff", "index.html#D_ifff", null ],
+        [ "D_iiii", "index.html#D_iiii", null ],
         [ "D_imagec", "index.html#D_imagec", null ]
       ] ],
       [ "Error reporting", "index.html#set_error", null ],
@@ -66,7 +67,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -79,9 +80,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"class_chimera_t_k_1_1_variable_mapper.html#ac3686bd70845c1269f59f271e7ffa964",
-"server_test_retype_properties_8cpp.html#ac7b0a6e9928eed1f7cd1d2761b64fa6f",
-"test_variable_mapper_8cpp.html#ae40e338148a7657ff1b59518cc5959cc"
+"class_chimera_t_k_1_1_variable_mapper.html#a2301669db60d97e4bcf6d57ae8c368f9",
+"server_test_iiii_8cpp.html#a3a0ff8a947b99ecd7440e172d57d2c92",
+"test_doocs_p_v_factory_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

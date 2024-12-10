@@ -4,6 +4,7 @@ var dir_68f3e33577dcba624875e08d7c32489c =
     [ "D_textUnifier.cpp", "_d__text_unifier_8cpp.html", null ],
     [ "DoocsAdapter.cc", "_doocs_adapter_8cc.html", null ],
     [ "DoocsIfff.cc", "_doocs_ifff_8cc.html", null ],
+    [ "DoocsIiii.cc", "_doocs_iiii_8cc.html", null ],
     [ "DoocsImage.cc", "_doocs_image_8cc.html", null ],
     [ "DoocsPVFactory.cc", "_doocs_p_v_factory_8cc.html", "_doocs_p_v_factory_8cc" ],
     [ "DoocsSpectrum.cc", "_doocs_spectrum_8cc.html", null ],

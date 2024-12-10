@@ -136,37 +136,40 @@ $(document).ready(function(){initNavTree('server_test_call_optimise_unmapped_var
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Actual list: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">auto</span>&amp; actualList = <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.unmappedVariables;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : actualList) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Missing entries: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::set&lt;std::string&gt; missing;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::set_difference(expectedList.begin(), expectedList.end(), actualList.begin(), actualList.end(),</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::inserter(missing, missing.begin()));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : missing) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Additional entries: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::set&lt;std::string&gt; additional;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::set_difference(actualList.begin(), actualList.end(), expectedList.begin(), expectedList.end(),</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      std::inserter(additional, additional.begin()));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : additional) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  BOOST_CHECK(actualList == expectedList);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  expectedList.insert(<span class="stringliteral">&quot;/IIII/FROM_DEVICE&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  expectedList.insert(<span class="stringliteral">&quot;/IIII/TO_DEVICE&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Actual list: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">auto</span>&amp; actualList = <a class="code" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : actualList) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Missing entries: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::set&lt;std::string&gt; missing;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::set_difference(expectedList.begin(), expectedList.end(), actualList.begin(), actualList.end(),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      std::inserter(missing, missing.begin()));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : missing) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Additional entries: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::set&lt;std::string&gt; additional;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  std::set_difference(actualList.begin(), actualList.end(), expectedList.begin(), expectedList.end(),</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      std::inserter(additional, additional.begin()));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : additional) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  BOOST_CHECK(actualList == expectedList);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_global_fixture_html_ae53b0447f01f4c125c50be2035158c97"><div class="ttname"><a href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_array_persistence_8cpp_source.html#l00072">serverTestArrayPersistence.cpp:72</a></div></div>
 <div class="ttc" id="aserver_test_call_optimise_unmapped_variables_8cpp_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="server_test_call_optimise_unmapped_variables_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div></div>
+<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_array_persistence_8cpp_source.html#l00073">serverTestArrayPersistence.cpp:73</a></div></div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="aserver_test_call_optimise_unmapped_variables_8cpp_html_acd5685578794fb4c4278e3de076de70e"><div class="ttname"><a href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE BOOST_AUTO_TEST_CASE(testListOfUnmappedVariables)</div><div class="ttdef"><b>Definition:</b> <a href="server_test_call_optimise_unmapped_variables_8cpp_source.html#l00027">serverTestCallOptimiseUnmappedVariables.cpp:27</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_a1fee8002aaa2abcd5a1b23996c3d979e"><div class="ttname"><a href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00015">serverBasedTestTools.h:15</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_a1fee8002aaa2abcd5a1b23996c3d979e"><div class="ttname"><a href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE</div><div class="ttdef"><b>Definition:</b> <a href="server_based_test_tools_8h_source.html#l00016">serverBasedTestTools.h:16</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <!-- start footer part -->
