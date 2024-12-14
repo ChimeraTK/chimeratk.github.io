@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">04.00.00</span>
+   &#160;<span id="projectnumber">04.01.00</span>
    </div>
   </td>
  </tr>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('test_python_data_consistency_group_8py
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            self.<a class="code" href="classtest_python_data_consistency_group_1_1_receiver.html#a2475342e5d9ba1f0ebbbd81e44abd4f1">testError</a>.setAndWrite(<span class="stringliteral">&quot;ok&quot;</span>)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">except</span> AssertionError <span class="keyword">as</span> e:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            print(f<span class="stringliteral">&quot;Exception: {&quot;</span>\n<span class="stringliteral">&quot;.join(traceback.format_exception(e))}&quot;</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            print(<span class="stringliteral">&quot;Exception: &quot;</span>+<span class="stringliteral">&quot;\n&quot;</span>.join(traceback.format_exception(e)))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            sys.stdout.flush()</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            self.<a class="code" href="classtest_python_data_consistency_group_1_1_receiver.html#a2475342e5d9ba1f0ebbbd81e44abd4f1">testError</a>.setAndWrite(<span class="stringliteral">&quot;\n&quot;</span>.join(traceback.format_exception(e)))</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
