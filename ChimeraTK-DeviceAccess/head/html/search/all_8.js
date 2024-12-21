@@ -134,6 +134,7 @@ var searchData=
   ['giewritabletestfixture_1035',['GieWritableTestFixture',['../struct_gie_writable_test_fixture.html',1,'GieWritableTestFixture'],['../struct_gie_writable_test_fixture.html#ae10b6b4db9256af3a0b6daa9003dd4fc',1,'GieWritableTestFixture::GieWritableTestFixture()']]],
   ['globaldecoratormap_1036',['globalDecoratorMap',['../namespace_chimera_t_k.html#a5453614d4428268571689bca7bbf571b',1,'ChimeraTK']]],
   ['gmidoptioncode_1037',['GmidOptionCode',['../namespace_chimera_t_k_1_1async.html#a3089c365fce6a50a562b7b38549fa36b',1,'ChimeraTK::async']]],
-  ['gray16_1038',['Gray16',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2a6ec0dac8730c09dba12f860dbbad12',1,'ChimeraTK']]],
-  ['gray8_1039',['Gray8',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404ac8cfe3d00282445878661f32adca48ef',1,'ChimeraTK']]]
+  ['goodstate_1038',['goodState',['../class_chimera_t_k_1_1_device_file.html#a1bfbba94eaf779cb18a8af006218f0a6',1,'ChimeraTK::DeviceFile']]],
+  ['gray16_1039',['Gray16',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2a6ec0dac8730c09dba12f860dbbad12',1,'ChimeraTK']]],
+  ['gray8_1040',['Gray8',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404ac8cfe3d00282445878661f32adca48ef',1,'ChimeraTK']]]
 ];

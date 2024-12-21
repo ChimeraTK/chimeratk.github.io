@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('_xdma_backend_8cc_source.html',''); in
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span>(!_eventFiles[interruptNumber]) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      _eventFiles[interruptNumber] = std::make_unique&lt;EventFile&gt;(_devicePath, interruptNumber, asyncDomain);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      _eventFiles[interruptNumber] = std::make_unique&lt;EventFile&gt;(<span class="keyword">this</span>, _devicePath, interruptNumber, asyncDomain);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      _eventFiles[interruptNumber]-&gt;startThread(std::move(subscriptionDonePromise));</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">else</span> {</div>

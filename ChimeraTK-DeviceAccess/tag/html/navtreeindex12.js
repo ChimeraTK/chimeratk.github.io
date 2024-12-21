@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"functions_s.html":[19,3,0,19],
+"functions_t.html":[19,3,0,20],
+"functions_type.html":[19,3,3],
+"functions_u.html":[19,3,0,21],
 "functions_v.html":[19,3,0,22],
 "functions_vars.html":[19,3,2],
 "functions_vars.html":[19,3,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "q_and_a.html#why_no_accessor_assignment":[11,0],
 "read__temperature__doocs__zmq_8cpp.html":[20,0,0,0,3,1,0],
 "read__temperature__doocs__zmq_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[20,0,0,0,3,1,0,0],
-"read__temperature__doocs__zmq_8cpp_source.html":[20,0,0,0,3,1,0],
-"read_temperature_doocs_zmq_8cpp-example.html":[21,6],
-"rebot_manual_test_8cpp.html":[20,0,0,0,7,5,0],
-"rebot_manual_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[20,0,0,0,7,5,0,0],
-"rebot_manual_test_8cpp_source.html":[20,0,0,0,7,5,0]
+"read__temperature__doocs__zmq_8cpp_source.html":[20,0,0,0,3,1,0]
 };

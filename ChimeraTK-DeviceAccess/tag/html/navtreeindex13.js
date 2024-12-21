@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"read_temperature_doocs_zmq_8cpp-example.html":[21,6],
+"rebot_manual_test_8cpp.html":[20,0,0,0,7,5,0],
+"rebot_manual_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[20,0,0,0,7,5,0,0],
+"rebot_manual_test_8cpp_source.html":[20,0,0,0,7,5,0],
 "shared_dummy_helpers_8h.html":[20,0,0,0,7,2,3],
 "shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e":[20,0,0,0,7,2,3,1],
 "shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531":[20,0,0,0,7,2,3,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "struct_chimera_t_k_1_1_img_header.html#a827899088d25d8b484eb705f02d51cb8":[19,0,1,60,12],
 "struct_chimera_t_k_1_1_img_header.html#aa73a6118d1be121587501c532af65a95":[19,0,1,60,0],
 "struct_chimera_t_k_1_1_img_header.html#aaf9a47e6519ebbc4be090577b759e401":[19,0,1,60,3],
-"struct_chimera_t_k_1_1_img_header.html#af87e1415c4c3e882a532ade701ecc303":[19,0,1,60,10],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html":[19,0,1,2,3],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a0bf46d2b0cb94824d26553df84b15610":[19,0,1,2,3,9],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a0fb7a2930710505d2b017b1cf25e00c3":[19,0,1,2,3,2],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a1b29cd8133cb2f96cf0e452483d64ac5":[19,0,1,2,3,8]
+"struct_chimera_t_k_1_1_img_header.html#af87e1415c4c3e882a532ade701ecc303":[19,0,1,60,10]
 };
