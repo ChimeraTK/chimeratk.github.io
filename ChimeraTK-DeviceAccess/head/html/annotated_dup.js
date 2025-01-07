@@ -68,7 +68,6 @@ var annotated_dup =
     [ "DummyProtocolImplementor", "struct_dummy_protocol_implementor.html", "struct_dummy_protocol_implementor" ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", "class_dummy_register_test" ],
     [ "DummyRegisterTestSuite", "class_dummy_register_test_suite.html", "class_dummy_register_test_suite" ],
-    [ "ExampleBackend", "class_example_backend.html", "class_example_backend" ],
     [ "F", "struct_f.html", "struct_f" ],
     [ "Fixture", "struct_fixture.html", "struct_fixture" ],
     [ "Fixture_t", "class_fixture__t.html", "class_fixture__t" ],
