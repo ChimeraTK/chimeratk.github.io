@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">04.00.00</span>
+   &#160;<span id="projectnumber">04.00.01</span>
    </div>
   </td>
  </tr>
@@ -120,13 +120,14 @@ $(document).ready(function(){initNavTree('ua__map__types_8cpp_source.html',''); 
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">auto</span>* lst = <span class="keyword">static_cast&lt;</span><a class="code" href="namespace_chimera_t_k.html#a6e1a3fba3275e8dd430da148b87c193f">nodePairList</a>*<span class="keyword">&gt;</span>(handle);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span>* thisNode = <span class="keyword">new</span> <a class="code" href="namespace_chimera_t_k.html#abb26184b68a906ce7f95309f900d5f5f">UA_NodeId_pair</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    UA_NodeId_copy(&amp;definitionId, &amp;thisNode-&gt;sourceNodeId);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    UA_NodeId_copy(&amp;objectId, &amp;thisNode-&gt;targetNodeId);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    lst-&gt;push_back(thisNode);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> UA_STATUSCODE_GOOD;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    UA_NodeId_copy(&amp;definitionId, &amp;thisNode-&gt;sourceNodeId);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    UA_NodeId_copy(&amp;objectId, &amp;thisNode-&gt;targetNodeId);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    lst-&gt;push_back(std::move(thisNode));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> UA_STATUSCODE_GOOD;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace ChimeraTK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_chimera_t_k_html_aa0b7c62c7e6e014ec42b35ea4adb0e52"><div class="ttname"><a href="namespace_chimera_t_k.html#aa0b7c62c7e6e014ec42b35ea4adb0e52">ChimeraTK::ua_mapInstantiatedNodes</a></div><div class="ttdeci">UA_StatusCode ua_mapInstantiatedNodes(UA_NodeId objectId, UA_NodeId definitionId, void *handle)</div><div class="ttdoc">Node function and proxy mapping for new nodes.</div><div class="ttdef"><b>Definition:</b> <a href="ua__map__types_8cpp_source.html#l00030">ua_map_types.cpp:30</a></div></div>

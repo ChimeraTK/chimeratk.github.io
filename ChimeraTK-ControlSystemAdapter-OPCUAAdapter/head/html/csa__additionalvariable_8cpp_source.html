@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">04.00.00</span>
+   &#160;<span id="projectnumber">04.00.01</span>
    </div>
   </td>
  </tr>
@@ -141,9 +141,9 @@ $(document).ready(function(){initNavTree('csa__additionalvariable_8cpp_source.ht
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Value</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1ua__additionalvariable.html#a80422b8bf547a5c72bdbba6aa4e43693">   55</a></span>&#160;  UA_StatusCode <a class="code" href="class_chimera_t_k_1_1ua__additionalvariable.html#a80422b8bf547a5c72bdbba6aa4e43693">ua_additionalvariable::ua_readproxy_ua_additionalvariable_getValue</a>(UA_Server* server,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> UA_NodeId* sessionId, <span class="keywordtype">void</span>* sessionContext, <span class="keyword">const</span> UA_NodeId* nodeId, <span class="keywordtype">void</span>* nodeContext,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      UA_Boolean includeSourceTimeStamp, <span class="keyword">const</span> UA_NumericRange* range, UA_DataValue* value) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1ua__additionalvariable.html#a80422b8bf547a5c72bdbba6aa4e43693">   55</a></span>&#160;  UA_StatusCode <a class="code" href="class_chimera_t_k_1_1ua__additionalvariable.html#a80422b8bf547a5c72bdbba6aa4e43693">ua_additionalvariable::ua_readproxy_ua_additionalvariable_getValue</a>(UA_Server* <span class="comment">/*server*/</span>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> UA_NodeId* <span class="comment">/*sessionId*/</span>, <span class="keywordtype">void</span>* <span class="comment">/*sessionContext*/</span>, <span class="keyword">const</span> UA_NodeId* <span class="comment">/*nodeId*/</span>, <span class="keywordtype">void</span>* nodeContext,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      UA_Boolean includeSourceTimeStamp, <span class="keyword">const</span> UA_NumericRange* <span class="comment">/*range*/</span>, UA_DataValue* value) {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span> thisObj = <span class="keyword">static_cast&lt;</span><a class="code" href="class_chimera_t_k_1_1ua__additionalvariable.html">ua_additionalvariable</a>*<span class="keyword">&gt;</span>(nodeContext);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    UA_String ua_val;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* s = (<span class="keywordtype">char</span>*)malloc(thisObj-&gt;getValue().length() + 1);</div>

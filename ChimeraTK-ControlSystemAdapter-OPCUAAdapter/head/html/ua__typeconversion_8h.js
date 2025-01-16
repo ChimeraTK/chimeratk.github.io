@@ -1,6 +1,5 @@
 var ua__typeconversion_8h =
 [
-    [ "CPPSTRING_TO_UASTRING_NEW", "ua__typeconversion_8h.html#af97f8968ee8a5e673f284a5cbe8a8b7f", null ],
     [ "NODE_BROWSENAME_AS_STRING", "ua__typeconversion_8h.html#a7522e99c3bd13f4f7513b5aaf8a128b5", null ],
     [ "NODE_DESCRIPTION_AS_STRING", "ua__typeconversion_8h.html#a7b7e9773140cee0fbb0b1b49e64a1f9e", null ],
     [ "NODE_DISPLAYNAME_AS_STRING", "ua__typeconversion_8h.html#a60abbeafc0e463580dbdfcd63bf8d66c", null ],

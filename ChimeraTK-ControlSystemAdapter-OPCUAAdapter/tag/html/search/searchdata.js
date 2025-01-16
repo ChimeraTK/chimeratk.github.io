@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "u",
   8: "_u",
   9: "c",
-  10: "cnsux"
+  10: "nsux"
 };
 
 var indexSectionNames =

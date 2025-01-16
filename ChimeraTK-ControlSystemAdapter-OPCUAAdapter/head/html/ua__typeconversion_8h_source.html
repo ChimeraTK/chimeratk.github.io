@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">04.00.00</span>
+   &#160;<span id="projectnumber">04.00.01</span>
    </div>
   </td>
  </tr>
@@ -147,47 +147,26 @@ $(document).ready(function(){initNavTree('ua__typeconversion_8h_source.html','')
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">    free(s);                                                                                                           \</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  } while(0);</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/* CPPSTRING_TO_UASTRING(UA_String s_ua, std::string s_cpp)</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * Copy contents of s_cpp into s_ua</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> UA_String CPPSTRING_TO_UASTRING(std::string&amp; s) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">char</span>* buf = (<span class="keywordtype">char</span>*)malloc(s.length());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span>(!buf) <span class="keywordflow">return</span> UA_STRING_NULL;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  strncpy(buf, (<span class="keywordtype">char</span>*)s.c_str(), s.length());</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> {s.length(), (UA_Byte*)buf};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#af97f8968ee8a5e673f284a5cbe8a8b7f">   72</a></span>&#160;<span class="preprocessor">#define CPPSTRING_TO_UASTRING_NEW(_p_uastring, _p_cppstring)                                                           \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    char* s = (char*)malloc(_p_cppstring-&gt;length() + 1);                                                               \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    strncpy(s, (char*)_p_cppstring-&gt;c_str(), _p_cppstring-&gt;length());                                                  \</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    _p_uastring.length = _p_cppstring-&gt;length();                                                                       \</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">    _p_uastring.data = (UA_Byte*)malloc(_p_uastring.length);                                                           \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    memcpy(_p_uastring.data, s, _p_uastring.length);                                                                   \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    free(s);                                                                                                           \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#a7522e99c3bd13f4f7513b5aaf8a128b5">   61</a></span>&#160;<span class="preprocessor">#define NODE_BROWSENAME_AS_STRING(_p_server, _p_nodeid, _p_strbuffer)                                                  \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    UA_QualifiedName _p_tmpName;                                                                                       \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    UA_Server_readBrowseName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                       \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    UASTRING_AS_STRING(_p_tmpName.name, _p_strbuffer);                                                                 \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#a60abbeafc0e463580dbdfcd63bf8d66c">   68</a></span>&#160;<span class="preprocessor">#define NODE_DISPLAYNAME_AS_STRING(_p_server, _p_nodeid, _p_strbuffer)                                                 \</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    UA_LocalizedText _p_tmpName;                                                                                       \</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                      \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">    UASTRING_AS_STRING(_p_tmpName.text, _p_strbuffer);                                                                 \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#a7b7e9773140cee0fbb0b1b49e64a1f9e">   75</a></span>&#160;<span class="preprocessor">#define NODE_DESCRIPTION_AS_STRING(_p_server, _p_nodeid, _p_strbuffer)                                                 \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">    UA_LocalizedText _p_tmpName;                                                                                       \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                      \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    UASTRING_AS_STRING(_p_tmpName.text, _p_strbuffer);                                                                 \</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#a7522e99c3bd13f4f7513b5aaf8a128b5">   82</a></span>&#160;<span class="preprocessor">#define NODE_BROWSENAME_AS_STRING(_p_server, _p_nodeid, _p_strbuffer)                                                  \</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    UA_QualifiedName _p_tmpName;                                                                                       \</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    UA_Server_readBrowseName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                       \</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">    UASTRING_AS_STRING(_p_tmpName.name, _p_strbuffer);                                                                 \</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#a60abbeafc0e463580dbdfcd63bf8d66c">   89</a></span>&#160;<span class="preprocessor">#define NODE_DISPLAYNAME_AS_STRING(_p_server, _p_nodeid, _p_strbuffer)                                                 \</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">    UA_LocalizedText _p_tmpName;                                                                                       \</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">    UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                      \</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">    UASTRING_AS_STRING(_p_tmpName.text, _p_strbuffer);                                                                 \</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="ua__typeconversion_8h.html#a7b7e9773140cee0fbb0b1b49e64a1f9e">   96</a></span>&#160;<span class="preprocessor">#define NODE_DESCRIPTION_AS_STRING(_p_server, _p_nodeid, _p_strbuffer)                                                 \</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">  {                                                                                                                    \</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">    UA_LocalizedText _p_tmpName;                                                                                       \</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                      \</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">    UASTRING_AS_STRING(_p_tmpName.text, _p_strbuffer);                                                                 \</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  }</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

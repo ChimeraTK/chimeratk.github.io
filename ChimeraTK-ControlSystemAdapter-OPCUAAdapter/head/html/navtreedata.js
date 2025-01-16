@@ -51,6 +51,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -65,7 +66,7 @@ var NAVTREEINDEX =
 "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a73023015aeabf118dc869dbc919887a5",
 "classua__builtin__types_1_1opcua___builtin_type__xmlelement__t.html#a24bf3ff74b5751c104e358af1a42e412",
 "csa__processvariable_8h.html",
-"struct_chimera_t_k_1_1_server_config.html#aeae05c01a639656b66e435b3ae58c13f"
+"struct_chimera_t_k_1_1_server_config.html#ac776146e0ab4442dec0841a4f80cdca9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

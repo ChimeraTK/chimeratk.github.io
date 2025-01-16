@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">04.00.00</span>
+   &#160;<span id="projectnumber">04.00.01</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('test__opcua__processvariable_8cpp.html
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">test_opcua_processvariable.cpp File Reference</div>  </div>
@@ -94,6 +95,7 @@ $(document).ready(function(){initNavTree('test__opcua__processvariable_8cpp.html
 <code>#include &lt;<a class="el" href="csa__opcua__adapter_8h_source.html">csa_opcua_adapter.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="test__sample__data_8h_source.html">test_sample_data.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>&gt;</code><br />
+<code>#include &lt;boost/fusion/container/map.hpp&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="csa__namespace_8h_source.html">csa_namespace.h</a>&quot;</code><br />
@@ -116,14 +118,36 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_variable_test_suite.html">ProcessVariableTestSuite</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8307a7440f074087063c5c249d87759e"><td class="memItemLeft" align="right" valign="top">typedef fusion::map&lt; fusion::pair&lt; uint8_t, UA_DataType &gt;, fusion::pair&lt; int8_t, UA_DataType &gt;, fusion::pair&lt; uint16_t, UA_DataType &gt;, fusion::pair&lt; int16_t, UA_DataType &gt;, fusion::pair&lt; uint32_t, UA_DataType &gt;, fusion::pair&lt; int32_t, UA_DataType &gt;, fusion::pair&lt; uint64_t, UA_DataType &gt;, fusion::pair&lt; int64_t, UA_DataType &gt;, fusion::pair&lt; float, UA_DataType &gt;, fusion::pair&lt; double, UA_DataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__opcua__processvariable_8cpp.html#a8307a7440f074087063c5c249d87759e">TestTypesMap</a></td></tr>
+<tr class="separator:a8307a7440f074087063c5c249d87759e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a438f96d3e275d25b1a559760feaf1ab9"><td class="memItemLeft" align="right" valign="top">test_suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__opcua__processvariable_8cpp.html#a438f96d3e275d25b1a559760feaf1ab9">init_unit_test_suite</a> (int argc, char *argv[])</td></tr>
-<tr class="separator:a438f96d3e275d25b1a559760feaf1ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed9489784921561f550f6a2005520e9"><td class="memItemLeft" align="right" valign="top">test_suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__opcua__processvariable_8cpp.html#a5ed9489784921561f550f6a2005520e9">init_unit_test_suite</a> (int, char **)</td></tr>
+<tr class="separator:a5ed9489784921561f550f6a2005520e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8307a7440f074087063c5c249d87759e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8307a7440f074087063c5c249d87759e">&#9670;&nbsp;</a></span>TestTypesMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef fusion::map&lt;fusion::pair&lt;uint8_t, UA_DataType&gt;, fusion::pair&lt;int8_t, UA_DataType&gt;, fusion::pair&lt;uint16_t, UA_DataType&gt;, fusion::pair&lt;int16_t, UA_DataType&gt;, fusion::pair&lt;uint32_t, UA_DataType&gt;, fusion::pair&lt;int32_t, UA_DataType&gt;, fusion::pair&lt;uint64_t, UA_DataType&gt;, fusion::pair&lt;int64_t, UA_DataType&gt;, fusion::pair&lt;float, UA_DataType&gt;, fusion::pair&lt;double, UA_DataType&gt; &gt; <a class="el" href="test__opcua__processvariable_8cpp.html#a8307a7440f074087063c5c249d87759e">TestTypesMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test__opcua__processvariable_8cpp_source.html#l00024">24</a> of file <a class="el" href="test__opcua__processvariable_8cpp_source.html">test_opcua_processvariable.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a438f96d3e275d25b1a559760feaf1ab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a438f96d3e275d25b1a559760feaf1ab9">&#9670;&nbsp;</a></span>init_unit_test_suite()</h2>
+<a id="a5ed9489784921561f550f6a2005520e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed9489784921561f550f6a2005520e9">&#9670;&nbsp;</a></span>init_unit_test_suite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,13 +156,13 @@ Functions</h2></td></tr>
           <td class="memname">test_suite* init_unit_test_suite </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -148,7 +172,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__opcua__processvariable_8cpp_source.html#l01414">1414</a> of file <a class="el" href="test__opcua__processvariable_8cpp_source.html">test_opcua_processvariable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__opcua__processvariable_8cpp_source.html#l01155">1155</a> of file <a class="el" href="test__opcua__processvariable_8cpp_source.html">test_opcua_processvariable.cpp</a>.</p>
 
 </div>
 </div>
