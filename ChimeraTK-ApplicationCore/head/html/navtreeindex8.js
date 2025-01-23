@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html#a5b5e030385b5ff8d4bb65273bcde4047":[15,0,0,0,29,6,0],
 "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html":[15,0,0,0,29,7],
 "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html#acf078291d2494b1039ec5c0002e764a9":[15,0,0,0,29,7,0],
 "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html#afcb2202362345a0dd3d3db8ad3bbfb27":[15,0,0,0,29,7,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "struct_chimera_t_k_1_1_variable_network_node__data.html#a813a974414573c296ffe2f34d81cf0d1":[15,0,0,103,1],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#a87f4975ed069256b930182573cd0fcc1":[15,0,0,103,14],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#a8d8d4cab71c80df623beb08566c48639":[15,0,0,103,2],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6":[15,0,0,103,15],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#aa69696eea47f2507c7ff2278e809f285":[15,0,0,103,18]
+"struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6":[15,0,0,103,15]
 };

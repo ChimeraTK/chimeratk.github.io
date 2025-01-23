@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"namespace_tests_1_1test_device_initialisation_handler.html":[14,0,15,10],
 "namespace_tests_1_1test_exception_handling.html":[14,0,15,11],
 "namespace_tests_1_1test_fanout_connections.html":[15,0,9,11],
 "namespace_tests_1_1test_fanout_connections.html":[14,0,15,12],
@@ -220,8 +221,8 @@ var NAVTREEINDEX6 =
 "struct_array_variable_group_test_app.html":[15,0,15],
 "struct_array_variable_group_test_app.html#a2f0bdec9544b7c85e3918629763dae1a":[15,0,15,0],
 "struct_array_variable_group_test_app.html#a835f71498d8f63108e5d03a90d08bd6b":[15,0,15,1],
-"struct_array_variable_group_test_app.html#a8c54cd3607dbc96523283460c12ba086":[15,0,15,3],
 "struct_array_variable_group_test_app.html#a8c54cd3607dbc96523283460c12ba086":[15,0,15,2],
+"struct_array_variable_group_test_app.html#a8c54cd3607dbc96523283460c12ba086":[15,0,15,3],
 "struct_array_variable_group_test_app.html#aed712717149e99262b70db48cdf4fc5a":[15,0,15,4],
 "struct_array_variable_group_test_app_for_move.html":[15,0,16],
 "struct_array_variable_group_test_app_for_move.html#a034ecdd9f3612c53b74bca882244007a":[15,0,16,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "struct_chimera_t_k_1_1_array_output_push_r_b.html#a4f88368114a8a54d53bc3dcf1d0283c7":[15,0,0,11,1],
 "struct_chimera_t_k_1_1_array_output_push_r_b.html#abcd31e4f185538433b8db527d2e259a9":[15,0,0,11,0],
 "struct_chimera_t_k_1_1_array_output_r_b.html":[15,0,0,12],
-"struct_chimera_t_k_1_1_array_output_r_b.html#a57ed2275859641700030c23000c4ca3a":[15,0,0,12,1],
-"struct_chimera_t_k_1_1_array_output_r_b.html#a958ebc320bd9c69422263ed03b937426":[15,0,0,12,0]
+"struct_chimera_t_k_1_1_array_output_r_b.html#a57ed2275859641700030c23000c4ca3a":[15,0,0,12,1]
 };
