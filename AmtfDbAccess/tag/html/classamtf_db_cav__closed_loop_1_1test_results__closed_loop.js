@@ -1,0 +1,26 @@
+var classamtf_db_cav__closed_loop_1_1test_results__closed_loop =
+[
+    [ "getScalars", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a941fa07253a1e35ef44f0b2902a112e7", null ],
+    [ "getVectors", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a2f39bde6aa5708c1e88c7541825255c1", null ],
+    [ "cav_c1_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#ab57a5c6a71e5dac0e07491af21401f11", null ],
+    [ "cav_c2_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#abaea22b78e9f3121745daf70fa41face", null ],
+    [ "cav_c3_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#afba5c8fd8f9a250767aa9ef801bd520e", null ],
+    [ "cav_c4_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#aca98cdc67021a37c63d1f4b84abbe23f", null ],
+    [ "cav_c5_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a271eafe520a43e5550e56b8f258f0cdf", null ],
+    [ "cav_c6_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a67ab1d78fa279d92340d988d76e1d4b9", null ],
+    [ "cav_c7_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#accabe4c71fba7f64d7c0455785d28d1b", null ],
+    [ "cav_c8_eacc", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a8265f16fac896f2e03311e2b25722679", null ],
+    [ "cav_dynheatload", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a7d84684ec43c2f335e1ef5bfa92d4de6", null ],
+    [ "cav_fp_gain", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a50bb241bacd08d5441b2260b54ea57d4", null ],
+    [ "cav_interpulse_ampl_p2p", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#ae7189f458b41ec608cf7c83ed99581fc", null ],
+    [ "cav_interpulse_ampl_rms", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a219eafd32744843f71492f6372509489", null ],
+    [ "cav_interpulse_phase_p2p", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a40739c8bede0f03e8cdeb4d7825dac17", null ],
+    [ "cav_interpulse_phase_rms", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a64b731a738193643609e268eea2a33a9", null ],
+    [ "cav_intrapulse_ampl_p2p", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a8f964f6fbd8231b93b7fba3d52138378", null ],
+    [ "cav_intrapulse_ampl_rms", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#acd6e4560c9a2957dc55c38c2685ae83d", null ],
+    [ "cav_intrapulse_phase_p2p", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a37624f58d69e401b635c11667ed59216", null ],
+    [ "cav_intrapulse_phase_rms", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#acd7eb10522af5f8a439aef60f28fd0b2", null ],
+    [ "cav_radiation", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a758fbe574588396b27a5776f76c9bd9c", null ],
+    [ "cav_sp_ampl", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a454b04a0bb08089a0bf1efa439ef466d", null ],
+    [ "cav_sp_phase", "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a8eb4ff28a53719a401c6b8c9f5554851", null ]
+];
