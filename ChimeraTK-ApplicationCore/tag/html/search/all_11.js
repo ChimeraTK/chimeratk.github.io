@@ -132,7 +132,7 @@ var searchData=
   ['setwarnmixedmessage_1255',['setWarnMixedMessage',['../struct_chimera_t_k_1_1_status_aggregator.html#a5dfeaf4adeba3ee85a80711950678d00',1,'ChimeraTK::StatusAggregator']]],
   ['severity_1256',['Severity',['../class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf',1,'ChimeraTK::Logger']]],
   ['shutdown_1257',['shutdown',['../class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a',1,'ChimeraTK::Application::shutdown()'],['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc',1,'ChimeraTK::shutdown()']]],
-  ['simulation_1258',['Simulation',['../class_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
+  ['simulation_1258',['simulation',['../class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()'],['../class_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()']]],
   ['simulationmodule_1259',['SimulationModule',['../struct_simulation_module.html',1,'']]],
   ['singed32_1260',['singed32',['../struct_tests_1_1test_trigger_1_1_test_app4.html#a09e63df148c855ae3ee21101dfd95813',1,'Tests::testTrigger::TestApp4']]],
   ['slashapp_1261',['SlashApp',['../struct_tests_1_1test_modules_1_1_slash_app.html',1,'Tests::testModules::SlashApp'],['../struct_tests_1_1test_modules_1_1_slash_app.html#a3c52e15ebe6ea27f1945711e70f2dcf9',1,'Tests::testModules::SlashApp::SlashApp()']]],

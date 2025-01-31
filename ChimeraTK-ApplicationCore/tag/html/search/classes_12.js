@@ -5,7 +5,7 @@ var searchData=
   ['valueholder_3c_20detail_3a_3avisitorreturntype_3c_20visitor_2c_20filter_20_3e_20_3e_2235',['ValueHolder&lt; detail::VisitorReturnType&lt; VISITOR, FILTER &gt; &gt;',['../struct_chimera_t_k_1_1_model_1_1detail_1_1_value_holder.html',1,'ChimeraTK::Model::detail']]],
   ['valueholder_3c_20void_20_3e_2236',['ValueHolder&lt; void &gt;',['../struct_chimera_t_k_1_1_model_1_1detail_1_1_value_holder_3_01void_01_4.html',1,'ChimeraTK::Model::detail']]],
   ['var_2237',['Var',['../struct_chimera_t_k_1_1_config_reader_1_1_var.html',1,'ChimeraTK::ConfigReader']]],
-  ['variable_2238',['Variable',['../struct_chimera_t_k_1_1_variable.html',1,'ChimeraTK::Variable'],['../struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html',1,'ChimeraTK::UserInputValidator::Variable&lt; UserType, Accessor &gt;']]],
+  ['variable_2238',['Variable',['../struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html',1,'ChimeraTK::UserInputValidator::Variable&lt; UserType, Accessor &gt;'],['../struct_chimera_t_k_1_1_variable.html',1,'ChimeraTK::Variable']]],
   ['variablebase_2239',['VariableBase',['../struct_chimera_t_k_1_1_user_input_validator_1_1_variable_base.html',1,'ChimeraTK::UserInputValidator']]],
   ['variabledirection_2240',['VariableDirection',['../struct_chimera_t_k_1_1_variable_direction.html',1,'ChimeraTK']]],
   ['variablegroup_2241',['VariableGroup',['../class_chimera_t_k_1_1_variable_group.html',1,'ChimeraTK']]],

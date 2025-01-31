@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['registerinfo_5f_523',['registerInfo_',['../class_device_element_q_tree_item.html#a2761df94a1359b43c7134aeeacb270b9',1,'DeviceElementQTreeItem']]],
-  ['registerqtreeitem_524',['registerQTreeItem',['../struct_register_q_tree_item__fixture.html#ab18601114393f3eb48a32ae7e0313110',1,'RegisterQTreeItem_fixture']]],
-  ['registertobefound_525',['registerToBeFound',['../struct_qt_hardmon__populates_register_properties__fixture.html#aedd0b671ee722e3d254eca90f8424a48',1,'QtHardmon_populatesRegisterProperties_fixture']]]
+  ['treewidget_483',['treeWidget',['../struct_register_q_tree_item__fixture.html#a9659fa2cdb62eaf204ebfadb22836408',1,'RegisterQTreeItem_fixture::treeWidget()'],['../struct_numeric_addressed_register_q_tree_item__fixture.html#a8357cca9baf2608c523c7b71d41c85e7',1,'NumericAddressedRegisterQTreeItem_fixture::treeWidget()'],['../struct_numeric_addressed_multiplexed_area_q_tree_item__fixture.html#acca783a9cbaf6334fcf9c27fcd600b83',1,'NumericAddressedMultiplexedAreaQTreeItem_fixture::treeWidget()'],['../struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture.html#a5bb9c300fa726d6a2cc969d177e683b4',1,'NumericAddressedCookedMultiplexedAreaQTreeItem_fixture::treeWidget()']]],
+  ['twodregisteraccessor_484',['twoDRegisterAccessor',['../struct_numeric_addressed_multiplexed_area_q_tree_item__fixture.html#a3239a40154d562503d17953a737a1ffc',1,'NumericAddressedMultiplexedAreaQTreeItem_fixture::twoDRegisterAccessor()'],['../struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture.html#a5fc6665e9fb9edfa8435d7726121a784',1,'NumericAddressedCookedMultiplexedAreaQTreeItem_fixture::twoDRegisterAccessor()']]]
 ];

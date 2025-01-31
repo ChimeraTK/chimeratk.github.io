@@ -14,7 +14,7 @@ var searchData=
   ['scalarroinput_3637',['scalarROInput',['../struct_tests_1_1test_process_variable_recovery_1_1_read_only_test_application_1_1_test_module.html#a321c7d5dc87cb5ff7379bec6956eaa49',1,'Tests::testProcessVariableRecovery::ReadOnlyTestApplication::TestModule']]],
   ['sendinitialvalue_3638',['sendInitialValue',['../struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#acf6ed1f65923bba2518dca8e64add32e',1,'Tests::testBidirectionalVariables::TestApplication2::Module']]],
   ['set_3639',['set',['../struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_module_1_1_vars.html#af38da5269ac3db19f5a30f89f2fd19fb',1,'Tests::testDeviceExceptionFlagPropagation::TestApplication::Module::Vars']]],
-  ['simulation_3640',['Simulation',['../class_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
+  ['simulation_3640',['simulation',['../class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()'],['../class_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()']]],
   ['singed32_3641',['singed32',['../struct_tests_1_1test_trigger_1_1_test_app4.html#a09e63df148c855ae3ee21101dfd95813',1,'Tests::testTrigger::TestApp4']]],
   ['slashmodule_3642',['slashModule',['../struct_tests_1_1test_modules_1_1_slash_app.html#adcf1bf5db7a423fb17007fb623097995',1,'Tests::testModules::SlashApp']]],
   ['somegroup_3643',['someGroup',['../struct_tests_1_1test_modules_1_1_test_module.html#a1f91085be575911745059d50c6ce5bf5',1,'Tests::testModules::TestModule']]],

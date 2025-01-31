@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lastselectedregister_513',['lastSelectedRegister',['../class_qt_hard_mon_1_1_device_list_item.html#a57dc872f6b6fd8b2d5b8b03af83e9721',1,'QtHardMon::DeviceListItem']]]
+  ['modulepropertieswidget_471',['modulePropertiesWidget',['../struct_device_element_q_tree_item__fixture_base.html#aeb919886851364765cc1ee3b524a3de3',1,'DeviceElementQTreeItem_fixtureBase']]]
 ];

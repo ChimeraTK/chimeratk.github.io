@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"classtest_python_simple_app_1_1_my_mod.html#aee49c85683f94738b8d7a01821fdd194":[15,0,5,0,3],
+"classtest_python_variable_group_1_1_my_mod.html":[15,0,6,0],
 "classtest_python_variable_group_1_1_my_mod.html#a040eb71b4615b7b424fa8d63913d89b0":[15,0,6,0,2],
 "classtest_python_variable_group_1_1_my_mod.html#a27e3245a51c11f3d9e8498ad1e545386":[15,0,6,0,1],
 "classtest_python_variable_group_1_1_my_mod.html#a482c5b9d45635599efc263272fe89747":[15,0,6,0,3],
@@ -144,8 +146,8 @@ var NAVTREEINDEX5 =
 "functions_enum.html":[15,3,4],
 "functions_eval.html":[15,3,5],
 "functions_f.html":[15,3,0,6],
-"functions_func.html":[15,3,1,0],
 "functions_func.html":[15,3,1],
+"functions_func.html":[15,3,1,0],
 "functions_func_a.html":[15,3,1,1],
 "functions_func_b.html":[15,3,1,2],
 "functions_func_c.html":[15,3,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "namespace_tests_1_1test_data_validity_propagation.html":[15,0,9,7],
 "namespace_tests_1_1test_device_accessors.html":[15,0,9,8],
 "namespace_tests_1_1test_device_accessors.html":[14,0,15,8],
-"namespace_tests_1_1test_device_exception_flag_propagation.html":[15,0,9,9],
-"namespace_tests_1_1test_device_exception_flag_propagation.html":[14,0,15,9],
-"namespace_tests_1_1test_device_initialisation_handler.html":[15,0,9,10]
+"namespace_tests_1_1test_device_exception_flag_propagation.html":[15,0,9,9]
 };
