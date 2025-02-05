@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#adc74cab76c27d2ea962ec63a8cda21de":[15,0,9,3,2,3],
 "struct_tests_1_1test_bidirectional_variables_1_1_module_b.html":[15,0,9,3,3],
 "struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#a0d7fe770776b729ebbfa62a594005059":[15,0,9,3,3,2],
 "struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#a6adaf843aad0b0f4b0515be166fa67f6":[15,0,9,3,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html#a70813e492629dae7ec9c0b62b60a2fab":[15,0,9,7,0,3],
 "struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html#aa098f5dbb9015ca927a452329f96352d":[15,0,9,7,0,1],
 "struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html#abc890473a8067fff09125c7e82eba7d8":[15,0,9,7,0,5],
-"struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html#ad63c441c02a36f8bfb342f305a5b5714":[15,0,9,7,0,6],
-"struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html#aef909477f270bc2ed5a76dbe0d08e617":[15,0,9,7,0,0]
+"struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html#ad63c441c02a36f8bfb342f305a5b5714":[15,0,9,7,0,6]
 };

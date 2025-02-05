@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"struct_tests_1_1test_status_aggregator_1_1_test_application_tags.html#a9a3210ce01a71487416bddeec7acf858":[15,0,9,22,6,5],
 "struct_tests_1_1test_status_aggregator_1_1_test_application_tags_1_1_outer_group.html":[15,0,9,22,6,0],
 "struct_tests_1_1test_status_aggregator_1_1_test_application_tags_1_1_outer_group.html#a816ad6ee67da5723977c78320e38f261":[15,0,9,22,6,0,3],
 "struct_tests_1_1test_status_aggregator_1_1_test_application_tags_1_1_outer_group.html#abf2628aed9fa1e8b9742aa9df0e1cb2f":[15,0,9,22,6,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "test_application_8cc_source.html":[16,0,0,0,8,1,1],
 "test_bidirectional_variables_8cc.html":[16,0,0,0,8,1,3],
 "test_bidirectional_variables_8cc.html#a3a74fd98e3f09907174a6881e3f0ce52":[16,0,0,0,8,1,3,20],
-"test_bidirectional_variables_8cc.html#a642eb4934d998e1f5a5e1f0d4fe45b57":[16,0,0,0,8,1,3,17],
-"test_bidirectional_variables_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[16,0,0,0,8,1,3,14]
+"test_bidirectional_variables_8cc.html#a642eb4934d998e1f5a5e1f0d4fe45b57":[16,0,0,0,8,1,3,17]
 };
