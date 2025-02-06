@@ -1,9 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"class_chimera_t_k_1_1_py_variable_group.html#a3628fa8700f4b77a0a2d309900de30ba":[15,0,0,74,0],
-"class_chimera_t_k_1_1_py_variable_group.html#a53aa278b275cd8b8bb71847eeae388fe":[15,0,0,74,3],
-"class_chimera_t_k_1_1_py_variable_group.html#aefa460e39dd2e72346f6a6eb638761d3":[15,0,0,74,1],
-"class_chimera_t_k_1_1_python_application_module_trampoline.html":[15,0,0,70],
 "class_chimera_t_k_1_1_python_application_module_trampoline.html#a906dd7c13732a0a9d946a73586e78f37":[15,0,0,70,0],
 "class_chimera_t_k_1_1_python_application_module_trampoline.html#aea17961c679d4bb08bf16c10aee6b6c2":[15,0,0,70,1],
 "class_chimera_t_k_1_1_python_module_manager.html":[15,0,0,71],
@@ -249,5 +245,9 @@ var NAVTREEINDEX4 =
 "classtest_python_scalar_accessors_1_1_my_mod.html#af324e4b3bde609f3eaaf5c291a5fa715":[15,0,4,0,9],
 "classtest_python_simple_app_1_1_my_mod.html":[15,0,5,0],
 "classtest_python_simple_app_1_1_my_mod.html#a21d96541d0713ce3d168c430dd35b0cc":[15,0,5,0,0],
-"classtest_python_simple_app_1_1_my_mod.html#aa1741a1aa37aa904a94abd72aafcab76":[15,0,5,0,1]
+"classtest_python_simple_app_1_1_my_mod.html#aa1741a1aa37aa904a94abd72aafcab76":[15,0,5,0,1],
+"classtest_python_simple_app_1_1_my_mod.html#ab1dabbe57706efb71f44ee0f92411c94":[15,0,5,0,2],
+"classtest_python_simple_app_1_1_my_mod.html#aee49c85683f94738b8d7a01821fdd194":[15,0,5,0,3],
+"classtest_python_variable_group_1_1_my_mod.html":[15,0,6,0],
+"classtest_python_variable_group_1_1_my_mod.html#a040eb71b4615b7b424fa8d63913d89b0":[15,0,6,0,2]
 };

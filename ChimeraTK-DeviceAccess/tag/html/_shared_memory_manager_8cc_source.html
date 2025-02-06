@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_shared_memory_manager_8cc_source.html
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      IpcNamedMutex proxy(interprocessMutex);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      std::unique_lock&lt;IpcNamedMutex&gt; lock(proxy, std::defer_lock);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">ok</a> = lock.try_lock_for(std::chrono::milliseconds(2000));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">auto</span> <a class="code" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">ok</a> = lock.try_lock_for(std::chrono::milliseconds(2000));</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">if</span>(!ok) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;SharedDummyBackend: stale lock detected, removing mutex... &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>

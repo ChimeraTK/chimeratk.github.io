@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write_72',['write',['../struct_data_struct.html#ab988114c5a0672759de9cbe4a92b27f2',1,'DataStruct']]]
+  ['write_68',['write',['../struct_data_struct.html#ab988114c5a0672759de9cbe4a92b27f2',1,'DataStruct']]]
 ];

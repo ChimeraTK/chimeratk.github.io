@@ -1,9 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a87f4975ed069256b930182573cd0fcc1":[15,0,0,103,14],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a8d8d4cab71c80df623beb08566c48639":[15,0,0,103,2],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6":[15,0,0,103,15],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#aa69696eea47f2507c7ff2278e809f285":[15,0,0,103,18],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#ac6879ef33720ec05a6c6b5aac424e9ee":[15,0,0,103,3],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#ad304c654982f85fae53af69c9fd8f396":[15,0,0,103,19],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#ae415593a9b9a048543f38466e49c540f":[15,0,0,103,4],
@@ -249,5 +245,9 @@ var NAVTREEINDEX9 =
 "struct_tests_1_1test_bidirectional_variables_1_1_module_a.html":[15,0,9,3,2],
 "struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#a17a454f2a1a70a315999641d705acfe7":[15,0,9,3,2,0],
 "struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#a20c4b1759fee6c7ba6b5eec2541f7a26":[15,0,9,3,2,2],
-"struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#a4a45b3330d477bc57aabef941153b505":[15,0,9,3,2,1]
+"struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#a4a45b3330d477bc57aabef941153b505":[15,0,9,3,2,1],
+"struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#adc74cab76c27d2ea962ec63a8cda21de":[15,0,9,3,2,3],
+"struct_tests_1_1test_bidirectional_variables_1_1_module_b.html":[15,0,9,3,3],
+"struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#a0d7fe770776b729ebbfa62a594005059":[15,0,9,3,3,2],
+"struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#a6adaf843aad0b0f4b0515be166fa67f6":[15,0,9,3,3,3]
 };

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['plotwindow_255',['PlotWindow',['../class_plot_window.html',1,'']]],
-  ['preferencesprovider_256',['PreferencesProvider',['../class_preferences_provider.html',1,'']]],
-  ['preferencesprovider_5ffixturebase_257',['PreferencesProvider_fixtureBase',['../struct_preferences_provider__fixture_base.html',1,'']]],
-  ['propertieswidget_258',['PropertiesWidget',['../class_properties_widget.html',1,'']]]
+  ['numericaddressedcookedmultiplexedareaqtreeitem_5ffixture_273',['NumericAddressedCookedMultiplexedAreaQTreeItem_fixture',['../struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture.html',1,'']]],
+  ['numericaddressedmultiplexedareaqtreeitem_5ffixture_274',['NumericAddressedMultiplexedAreaQTreeItem_fixture',['../struct_numeric_addressed_multiplexed_area_q_tree_item__fixture.html',1,'']]],
+  ['numericaddressedregisterqtreeitem_5ffixture_275',['NumericAddressedRegisterQTreeItem_fixture',['../struct_numeric_addressed_register_q_tree_item__fixture.html',1,'']]]
 ];

@@ -156,9 +156,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3fc963233d251705cd197ced1aa0876"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">getQualifiedName</a> () const =0</td></tr>
 <tr class="memdesc:aa3fc963233d251705cd197ced1aa0876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fully qualified name of the module instance, i.e.  <a href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">More...</a><br /></td></tr>
 <tr class="separator:aa3fc963233d251705cd197ced1aa0876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab981b6b3067f93073365365c8995bd99"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ab981b6b3067f93073365365c8995bd99">getQualifiedNameWithType</a> () const</td></tr>
-<tr class="memdesc:ab981b6b3067f93073365365c8995bd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fully qualified name of the module instance, followed by the C++ data type (in pointy brackets)  <a href="class_chimera_t_k_1_1_entity_owner.html#ab981b6b3067f93073365365c8995bd99">More...</a><br /></td></tr>
-<tr class="separator:ab981b6b3067f93073365365c8995bd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b95816cec9192c997e0447bcf73d4a"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ad7b95816cec9192c997e0447bcf73d4a">getDescription</a> () const</td></tr>
 <tr class="memdesc:ad7b95816cec9192c997e0447bcf73d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the description of the module instance.  <a href="class_chimera_t_k_1_1_entity_owner.html#ad7b95816cec9192c997e0447bcf73d4a">More...</a><br /></td></tr>
 <tr class="separator:ad7b95816cec9192c997e0447bcf73d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,7 +285,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="aa856db8bf289b50c32116089e3d95e8fa4bbb8f967da6d1a610596d7257179c2b"></a>Invalid&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00117">117</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00114">114</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +325,7 @@ Protected Attributes</h2></td></tr>
 <p>Constructor: Create <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g.">EntityOwner</a> by the given name with the given description. </p>
 <p>The specified list of tags will be added to all elements directly or indirectly owned by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00018">18</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00016">16</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
 
 </div>
 </div>
@@ -349,7 +346,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Default constructor just for late initialisation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00023">23</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00021">21</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
 
 </div>
 </div>
@@ -464,7 +461,7 @@ Protected Attributes</h2></td></tr>
 <p>Add a tag to all Application-type nodes inside this group. </p>
 <p>It will recurse into any subgroups. See <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad47918e84230dbde4721f5b23461a891" title="Add a tag.">VariableNetworkNode::addTag()</a> for additional information about tags. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00126">126</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00124">124</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -505,7 +502,7 @@ template&lt;typename T &gt; </div>
 <p>Create a variable name which will be automatically connected with a constant value. </p>
 <p>This can be used when a constant value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00196">196</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00193">193</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -585,7 +582,7 @@ template&lt;typename T &gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="demo_status_monitor_8cc-example.html#a12">demoStatusMonitor.cc</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00108">108</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00106">106</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -630,7 +627,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain the list of accessors/variables directly associated with this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00077">77</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00074">74</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -659,7 +656,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain the list of accessors/variables associated with this instance and any submodules. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00069">69</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00067">67</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -817,7 +814,7 @@ template&lt;typename T &gt; </div>
 
 <p>Get the description of the module instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00069">69</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00066">66</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1010,36 +1007,7 @@ template&lt;typename T &gt; </div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_aa3fc963233d251705cd197ced1aa0876_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ab981b6b3067f93073365365c8995bd99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab981b6b3067f93073365365c8995bd99">&#9670;&nbsp;</a></span>getQualifiedNameWithType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string ChimeraTK::EntityOwner::getQualifiedNameWithType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the fully qualified name of the module instance, followed by the C++ data type (in pointy brackets) </p>
-
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00156">156</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_ab981b6b3067f93073365365c8995bd99_cgraph.svg" width="450" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_aa3fc963233d251705cd197ced1aa0876_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1070,12 +1038,12 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain the list of submodules associated with this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00080">80</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00077">77</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_af1809c78bbe963d86e764a0150d6551d_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1099,20 +1067,20 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain the list of submodules associated with this instance and any submodules. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00083">83</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00081">81</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a01f4d19a8090e46f70e71758f3e5eaf8_cgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a01f4d19a8090e46f70e71758f3e5eaf8_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1136,12 +1104,12 @@ template&lt;typename T &gt; </div>
 
 <p>Check whether this module has declared that it reached the testable mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00141">141</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00139">139</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a832b61d208952ddfe335f5c5c09208d6_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1175,11 +1143,11 @@ template&lt;typename T &gt; </div>
 <p>This function will be called by all input accessors when receiving the a faulty update if the previous update was ok. The caller of this function must ensure that calls to this function are paired to a subsequent call to <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb" title="Decrement the fault counter and set the data validity flag to ok if the counter has reached 0.">decrementDataFaultCounter()</a>. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a0043e5e1a2c7a89bd114113596281475">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#aeab986f027cd1b5f683b468abf7f07fc">ChimeraTK::Module</a>, <a class="el" href="struct_tests_1_1test_data_validity_propagation_1_1_test_module1.html#a247e6d74c780877d1bf203df3c39419f">Tests::testDataValidityPropagation::TestModule1</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#af4290a346d2b866d4c8fd11e459a0196">ChimeraTK::ApplicationModule</a>, <a class="el" href="class_chimera_t_k_1_1_device_manager.html#ae052ea3be4da9c34ff15d229af2ebeed">ChimeraTK::DeviceManager</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#ade8d75869da5cb4b174ef4c7ae9c451f">ChimeraTK::InternalModule</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a59d02ecae8bc99e76c7561c3ccea946c_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1238,12 +1206,12 @@ template&lt;typename T &gt; </div>
 
 <p>Move assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00028">28</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00026">26</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_ac3e4475eee992b596106ce8d4a2f76b2_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1268,12 +1236,12 @@ template&lt;typename T &gt; </div>
 
 <p>Called inside the constructor of <a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>: adds the accessor to the list. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00097">97</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00095">95</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a260d2a06bf851b4b685ae498cf5a2237_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1309,12 +1277,12 @@ template&lt;typename T &gt; </div>
 <p>Register another module as a sub-module. </p>
 <p>Will be called automatically by all modules in their constructors. If addTags is set to false, the tags of this <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g.">EntityOwner</a> will not be set to the module being registered. This is e.g. used in the move-constructor of <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types.">Module</a> to prevent from altering the tags in the move operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00052">52</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00050">50</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a9690d4ae29d8a9e05d34feed82533e94_icgraph.svg" width="400" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1349,11 +1317,11 @@ template&lt;typename T &gt; </div>
 <p>This function is called by the push-type input accessors in their read functions. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#adea9d78e90e883d43758339a3c37c647">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_internal_module.html#ac0800aa56f26f411587c70adc6bbcf4a">ChimeraTK::InternalModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#aa36ac737e999a242eaf8c49f92524b15">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_module.html#a19a036a23479885e7dbd39e395c544c4">ChimeraTK::Module</a>.</p>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a5e2a53bcd523efe6546098aec632a60b_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1386,7 +1354,7 @@ template&lt;typename T &gt; </div>
 
 <p>Called inside the destructor of <a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>: removes the accessor from the list. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00096">96</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00093">93</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1419,12 +1387,12 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_application_module.html#a2586b398b1e6d126521c72ca68aabf80">ChimeraTK::ApplicationModule</a>, <a class="el" href="class_chimera_t_k_1_1_variable_group.html#ae94c6d6bae909935384f7fee075cb655">ChimeraTK::VariableGroup</a>, and <a class="el" href="class_chimera_t_k_1_1_module_group.html#a14961fd10bbd6af8abd122396e759faf">ChimeraTK::ModuleGroup</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00063">63</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
-<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00061">61</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_entity_owner_a4f4a46dfc054d0653e4f1dd1c088bd00_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1454,7 +1422,7 @@ template&lt;typename T &gt; </div>
 
 <p>List of accessors owned by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00177">177</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00174">174</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1480,7 +1448,7 @@ template&lt;typename T &gt; </div>
 
 <p>The description of this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00174">174</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00171">171</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1506,7 +1474,7 @@ template&lt;typename T &gt; </div>
 
 <p>List of modules owned by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00180">180</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00177">177</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1532,7 +1500,7 @@ template&lt;typename T &gt; </div>
 
 <p>The name of this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00171">171</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00168">168</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1526,7 @@ template&lt;typename T &gt; </div>
 
 <p>List of tags to be added to all accessors and modules inside this module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00184">184</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00181">181</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1585,7 +1553,7 @@ template&lt;typename T &gt; </div>
 <p>Flag used by the testable mode to identify whether a thread within the <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g.">EntityOwner</a> has reached the point where the testable mode lock is acquired. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>This should be moved to a more proper place in the hierarchy (e.g. ModuleImpl) after <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e....">InternalModule</a> class has been properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types.">Module</a> class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00190">190</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00187">187</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1611,7 +1579,7 @@ template&lt;typename T &gt; </div>
 
 <p>Prefix for constants created by <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a38e92b9f1be12d637408b06f8020b855" title="Create a variable name which will be automatically connected with a constant value.">constant()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00167">167</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00164">164</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>

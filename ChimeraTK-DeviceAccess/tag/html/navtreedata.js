@@ -173,27 +173,27 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"_l_n_m_multiplier_plugin_8cc_source.html",
-"_transfer_group_8h.html",
-"class_chimera_t_k_1_1_backend_register_catalogue.html#ad2f73070700284837f5e5172acdbebc2",
-"class_chimera_t_k_1_1_dummy_backend.html#a093b0616fcd7f468dd8a476876b14da9",
+"_l_n_m_math_plugin_formula_helper_8h_source.html",
+"_transfer_element_test_accessor_8h.html",
+"class_chimera_t_k_1_1_backend_register_catalogue.html#a743db6b2a3582c172e884552b90dca9b",
+"class_chimera_t_k_1_1_dma_intf.html#accdc605473229656e4fc00cf18c22f96",
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a83e946359978ea853b87c6141d49d0a6",
 "class_chimera_t_k_1_1_n_d_register_accessor.html#ac2b41bf5123ae657a3d10283ff484a9d",
 "class_chimera_t_k_1_1_read_any_group.html#a8eb7e6feb056c6920293d28004495783",
 "class_chimera_t_k_1_1_subdevice_register_accessor.html#a4c02e1f18c9d1ad94672aa58f196d988",
 "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_chimera_t_k_1_1_void_00_01_chimera_t_k_1_1_void_01_4.html",
 "class_chimera_t_k_1_1async_1_1_dummy_muxed_interrupt_distributor.html#afa25c851d34a801096c2882d5155bd01",
-"class_pcie_backend_test.html#a60132ee154609697510f23bed461f6c9",
-"functions_vars_n.html",
-"spec__transfer_element.html#autotoc_md3",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a27a4786e70ff09a490ae316bdda06430",
-"struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa",
-"struct_master_enable_test.html#ae503aba38eacc99847043d1d47f45698",
-"struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762",
-"struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b",
-"test_double_buffering_8cpp_source.html",
-"test_l_map_math_plugin_push_pars_8cc.html#adec092d555ab6ba87a5bc4972c6658c0",
-"test_transfer_element_8cpp.html#a4fb082e0f242b0913393bd68cb7e0147"
+"class_parser_utils_test_class.html#ab394be1b88b8911b293d126257bdce0b",
+"functions_v.html",
+"shared_dummy_helpers_8h.html",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a2ac5c032bb7d28e56ab48d7cb014eeef",
+"struct_constant_register_descriptor_base.html#a0880e66795bc771acc3d07501158c2ee",
+"struct_invalid_json1_test_fixture.html",
+"struct_reg_full_area.html",
+"struct_short_raw__fixed_point16__8s.html#a0088f60b2446074a8f6833162975acab",
+"test_device_8cpp.html#ab83892089340958763d777921ead7687",
+"test_l_map_math_plugin_8cpp.html",
+"test_transfer_element_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

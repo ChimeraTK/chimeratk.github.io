@@ -105,7 +105,7 @@ var NAVTREEINDEX =
 "_channel_status_widget_8cc.html",
 "class_fred_serial_protocol__2__2.html#ac3fd71202e834fb889a8a1619dfba2d2",
 "classfred__emergency_1_1_fred_emergency.html",
-"protocol.html#progInvNr"
+"protocol.html#readCurLimits"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

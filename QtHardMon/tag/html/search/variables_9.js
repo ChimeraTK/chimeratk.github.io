@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['onedregisteraccessor_475',['oneDRegisterAccessor',['../struct_register_q_tree_item__fixture.html#ae0541d0e618d57aaafdfd0e53bccc98a',1,'RegisterQTreeItem_fixture::oneDRegisterAccessor()'],['../struct_numeric_addressed_register_q_tree_item__fixture.html#a1dbc25f5068c47ed3435d57c5e412a06',1,'NumericAddressedRegisterQTreeItem_fixture::oneDRegisterAccessor()']]]
+  ['numericaddressedcookedmultiplexedareaqtreeitem_511',['numericAddressedCookedMultiplexedAreaQTreeItem',['../struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture.html#a271ebf9149ca9febaf704e256de34f6a',1,'NumericAddressedCookedMultiplexedAreaQTreeItem_fixture']]],
+  ['numericaddressedmultiplexedareaqtreeitem_512',['numericAddressedMultiplexedAreaQTreeItem',['../struct_numeric_addressed_multiplexed_area_q_tree_item__fixture.html#a6b8657608c683b5796309575782222b2',1,'NumericAddressedMultiplexedAreaQTreeItem_fixture']]],
+  ['numericaddressedregisterqtreeitem_513',['numericAddressedRegisterQTreeItem',['../struct_numeric_addressed_register_q_tree_item__fixture.html#ad6e6ef35747fc3c84ab237fb78231cd3',1,'NumericAddressedRegisterQTreeItem_fixture']]]
 ];

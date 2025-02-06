@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fix_2dlinter_2dfor_2dall_2epy_85',['fix-linter-for-all.py',['../fix-linter-for-all_8py.html',1,'']]]
+  ['mainpage_2edox_80',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
+  ['math_2dutils_2eh_81',['math-utils.h',['../math-utils_8h.html',1,'']]]
 ];

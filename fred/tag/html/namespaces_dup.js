@@ -2,7 +2,6 @@ var namespaces_dup =
 [
     [ "boost", "namespaceboost.html", "namespaceboost" ],
     [ "context", "namespacecontext.html", null ],
-    [ "fix-linter-for-all", "namespacefix-linter-for-all.html", null ],
     [ "fred", "namespacefred.html", "namespacefred" ],
     [ "fred_emergency", "namespacefred__emergency.html", null ],
     [ "kmp_search", "namespacekmp__search.html", null ],

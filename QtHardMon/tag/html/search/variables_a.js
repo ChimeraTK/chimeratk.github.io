@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['propertieswidget_476',['propertiesWidget',['../struct_device_element_q_tree_item__fixture_base.html#af2fdf5676c378039c4a2ab6e871d59de',1,'DeviceElementQTreeItem_fixtureBase']]],
-  ['propertieswidgetprovider_477',['propertiesWidgetProvider',['../struct_device_element_q_tree_item__fixture_base.html#a0037f38aa4b5afbd397c2ff3ba2e5761',1,'DeviceElementQTreeItem_fixtureBase']]],
-  ['provider_478',['provider',['../struct_preferences_provider__fixture_base.html#a779e5e555cf0adf50905ca6c32f32ddc',1,'PreferencesProvider_fixtureBase']]]
+  ['onedregisteraccessor_514',['oneDRegisterAccessor',['../struct_register_q_tree_item__fixture.html#ae0541d0e618d57aaafdfd0e53bccc98a',1,'RegisterQTreeItem_fixture::oneDRegisterAccessor()'],['../struct_numeric_addressed_register_q_tree_item__fixture.html#a1dbc25f5068c47ed3435d57c5e412a06',1,'NumericAddressedRegisterQTreeItem_fixture::oneDRegisterAccessor()']]]
 ];

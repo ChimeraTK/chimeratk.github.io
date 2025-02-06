@@ -549,7 +549,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_chimera_t_k_8cc_sou
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isCalibrated() == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isFullStepping() == <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 0);</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;enableFullStepping(<span class="keyword">true</span>));</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;enableFullStepping());</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isFullStepping() == <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPositionInSteps(23));</div>
@@ -647,288 +647,272 @@ $(document).ready(function(){initNavTree('test_stepper_motor_chimera_t_k_8cc_sou
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  _stepperMotor-&gt;setSoftwareLimitsEnabled(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;}</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160; </div>
-<div class="line"><a name="l00561"></a><span class="lineno"><a class="line" href="test_stepper_motor_chimera_t_k_8cc.html#a902c1ee0643f02b867bb495cb4405745">  561</a></span>&#160;<a class="code" href="test_stepper_motor_chimera_t_k_8cc.html#ac320b192052afa3dbbe369f7c58508e2">BOOST_AUTO_TEST_CASE</a>(foo) {</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  _motorControlerDummy-&gt;resetInternalStateToDefaults();</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  _motorControlerDummy-&gt;setCalibrationTime(std::time(<span class="keyword">nullptr</span>));</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(0);</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  _stepperMotor-&gt;setAutostart(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  _stepperMotor-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  BOOST_TEST(_stepperMotor-&gt;getState() == <span class="stringliteral">&quot;idle&quot;</span>);</div>
+<div class="line"><a name="l00561"></a><span class="lineno"><a class="line" href="test_stepper_motor_chimera_t_k_8cc.html#ad4e0714d03010e3c5edb9974c5a10ea0">  561</a></span>&#160;<a class="code" href="test_stepper_motor_chimera_t_k_8cc.html#ac320b192052afa3dbbe369f7c58508e2">BOOST_AUTO_TEST_CASE</a>(testDisable) {</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testDisable&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  _motorControlerDummy-&gt;resetInternalStateToDefaults();</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  <span class="comment">//  _motorControlerDummy-&gt;setCalibrationTime(32);</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(0);</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setEnabled(<span class="keyword">true</span>));</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPositionInSteps(96));</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  _stepperMotor-&gt;start();</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  BOOST_TEST(_stepperMotor-&gt;getState() == <span class="stringliteral">&quot;moving&quot;</span>);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(0.2);</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  <span class="keyword">auto</span> steps = _stepperMotor-&gt;getCurrentPositionInSteps();</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPositionInSteps(2 * steps));</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  BOOST_TEST(_stepperMotor-&gt;getState() == <span class="stringliteral">&quot;moving&quot;</span>);</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;}</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
-<div class="line"><a name="l00577"></a><span class="lineno"><a class="line" href="test_stepper_motor_chimera_t_k_8cc.html#ad4e0714d03010e3c5edb9974c5a10ea0">  577</a></span>&#160;<a class="code" href="test_stepper_motor_chimera_t_k_8cc.html#ac320b192052afa3dbbe369f7c58508e2">BOOST_AUTO_TEST_CASE</a>(testDisable) {</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testDisable&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  _motorControlerDummy-&gt;resetInternalStateToDefaults();</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="comment">//  _motorControlerDummy-&gt;setCalibrationTime(32);</span></div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(0);</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setEnabled(<span class="keyword">true</span>));</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPositionInSteps(96));</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  BOOST_CHECK(waitForState(<span class="stringliteral">&quot;moving&quot;</span>));</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(0.5);</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  _stepperMotor-&gt;setEnabled(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  BOOST_CHECK(waitForState(<span class="stringliteral">&quot;disabled&quot;</span>));</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 64);</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  BOOST_CHECK(_motorControlerDummy-&gt;getMicroStepCount() == 255);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;getEnabled(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isCalibrated() == <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(68);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getError() == Error::NO_ERROR);</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  _stepperMotor-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getEnabled() == <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;}</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
-<div class="line"><a name="l00604"></a><span class="lineno"><a class="line" href="test_stepper_motor_chimera_t_k_8cc.html#a5dcfdb5908d076167206d4c51e099506">  604</a></span>&#160;<a class="code" href="test_stepper_motor_chimera_t_k_8cc.html#ac320b192052afa3dbbe369f7c58508e2">BOOST_AUTO_TEST_CASE</a>(testConverter) {</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testConverter&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  <span class="comment">// Has the default 1:1 converter</span></div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(68);</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getCurrentPosition(), 68, 1e-3);</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMinPositionLimit(), -1000, 1e-3);</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMaxPositionLimit(), 1000, 1e-3);</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  <span class="comment">// Should throw because we attempt to set to nullptr</span></div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  _testUnitConverter.reset();</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter) == ExitStatus::ERR_INVALID_PARAMETER);</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  <span class="comment">// Now set to a proper converter (1:10)</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;  _testUnitConverter = std::make_shared&lt;TestUnitConverter&gt;();</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter));</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getCurrentPosition(), 6.8, 1e-3);</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMinPositionLimit(), -100, 1e-3);</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMaxPositionLimit(), 100, 1e-3);</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  _stepperMotor-&gt;setActualPosition(10.3f);</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getCurrentPosition(), 10.3, 1e-3);</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 103);</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setMaxPositionLimit(-900) == ExitStatus::ERR_INVALID_PARAMETER);</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setMinPositionLimit(900) == ExitStatus::ERR_INVALID_PARAMETER);</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setMaxPositionLimit(90));</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setMinPositionLimit(-90));</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160; </div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimit() == -90);</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimit() == 90);</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimitInSteps() == -900);</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimitInSteps() == 900);</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  BOOST_CHECK(waitForState(<span class="stringliteral">&quot;moving&quot;</span>));</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(0.5);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  _stepperMotor-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  BOOST_CHECK(waitForState(<span class="stringliteral">&quot;disabled&quot;</span>));</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160; </div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 64);</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  BOOST_CHECK(_motorControlerDummy-&gt;getMicroStepCount() == 255);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;getEnabled(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;isCalibrated() == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(68);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getError() == Error::NO_ERROR);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  _stepperMotor-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getEnabled() == <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;}</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00588"></a><span class="lineno"><a class="line" href="test_stepper_motor_chimera_t_k_8cc.html#a5dcfdb5908d076167206d4c51e099506">  588</a></span>&#160;<a class="code" href="test_stepper_motor_chimera_t_k_8cc.html#ac320b192052afa3dbbe369f7c58508e2">BOOST_AUTO_TEST_CASE</a>(testConverter) {</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;testConverter&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  <span class="comment">// Has the default 1:1 converter</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  _stepperMotor-&gt;setActualPositionInSteps(68);</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getCurrentPosition(), 68, 1e-3);</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMinPositionLimit(), -1000, 1e-3);</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMaxPositionLimit(), 1000, 1e-3);</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  <span class="comment">// Should throw because we attempt to set to nullptr</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  _testUnitConverter.reset();</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter) == ExitStatus::ERR_INVALID_PARAMETER);</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  <span class="comment">// Now set to a proper converter (1:10)</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  _testUnitConverter = std::make_shared&lt;TestUnitConverter&gt;();</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter));</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getCurrentPosition(), 6.8, 1e-3);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMinPositionLimit(), -100, 1e-3);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getMaxPositionLimit(), 100, 1e-3);</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160; </div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  _stepperMotor-&gt;setActualPosition(10.3f);</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  BOOST_CHECK_CLOSE(_stepperMotor-&gt;getCurrentPosition(), 10.3, 1e-3);</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 103);</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setMaxPositionLimit(-900) == ExitStatus::ERR_INVALID_PARAMETER);</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setMinPositionLimit(900) == ExitStatus::ERR_INVALID_PARAMETER);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setMaxPositionLimit(90));</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setMinPositionLimit(-90));</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimit() == -90);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimit() == 90);</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimitInSteps() == -900);</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimitInSteps() == 900);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setEnabled(<span class="keyword">true</span>));</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPosition(10));</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPosition() == 10);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 100);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getError() == Error::NO_ERROR);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160; </div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;moveRelative(5));</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setEnabled(<span class="keyword">true</span>));</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPosition(10));</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160; </div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPosition() == 10);</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 100);</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  <span class="comment">// Attempt to set unitsConverter while moving, should throw</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setStepperMotorUnitsConverterToDefault() == ExitStatus::ERR_SYSTEM_IN_ACTION);</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPosition() == 15);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 150);</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getError() == Error::NO_ERROR);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getError() == Error::NO_ERROR);</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;moveRelative(5));</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  <span class="comment">// Now, it should be safe to set the converter</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  _testUnitConverter = std::make_shared&lt;TestUnitConverter&gt;();</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter));</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  _stepperMotor-&gt;setTargetPositionInSteps(100);</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  <span class="comment">// Attempt to set unitsConverter while moving, should throw</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setStepperMotorUnitsConverterToDefault() == ExitStatus::ERR_SYSTEM_IN_ACTION);</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPosition() == 15);</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 150);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getError() == Error::NO_ERROR);</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="comment">// Now, it should be safe to set the converter</span></div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  _testUnitConverter = std::make_shared&lt;TestUnitConverter&gt;();</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter));</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;  _stepperMotor-&gt;setTargetPositionInSteps(100);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160; </div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(0.5);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  _stepperMotor-&gt;stop();</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160; </div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;getCurrentPosition(), 12.5);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;getCurrentPositionInSteps(), 125);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="comment">// In idle, resetting should be fine now</span></div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  _stepperMotor-&gt;setStepperMotorUnitsConverterToDefault();</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPosition(100));</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160; </div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(0.5);</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  _stepperMotor-&gt;stop();</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160; </div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="comment">// Again, this should throw because motor is moving</span></div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  _testUnitConverter = std::make_shared&lt;TestUnitConverter&gt;();</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter) == ExitStatus::ERR_SYSTEM_IN_ACTION);</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160; </div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;getCurrentPosition(), 12.5);</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;getCurrentPositionInSteps(), 125);</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="comment">// In idle, resetting should be fine now</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  _stepperMotor-&gt;setStepperMotorUnitsConverterToDefault();</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  BOOST_CHECK_NO_THROW(_stepperMotor-&gt;setTargetPosition(100));</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  BOOST_CHECK_EQUAL(_stepperMotor-&gt;isSystemIdle(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPosition() == 100);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 100);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimit() == -900);</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimit() == 900);</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimitInSteps() == -900);</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimitInSteps() == 900);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;}</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160; </div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  waitForState(<span class="stringliteral">&quot;moving&quot;</span>);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  <span class="comment">// Again, this should throw because motor is moving</span></div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  _testUnitConverter = std::make_shared&lt;TestUnitConverter&gt;();</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;setStepperMotorUnitsConverter(_testUnitConverter) == ExitStatus::ERR_SYSTEM_IN_ACTION);</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="comment">// FIXME The following tests are not related to the ChimeraTK interface,</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="comment">//      also existent in the mtca4u test?</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="comment">// BOOST_AUTO_TEST_CASE( testGetSetSpeedLimit ){</span></div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160; </div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  _motorControlerDummy-&gt;moveTowardsTarget(1);</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  _stepperMotor-&gt;waitForIdle();</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160; </div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPosition() == 100);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getCurrentPositionInSteps() == 100);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimit() == -900);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimit() == 900);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMinPositionLimitInSteps() == -900);</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  BOOST_CHECK(_stepperMotor-&gt;getMaxPositionLimitInSteps() == 900);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;}</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160; </div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="comment">// FIXME The following tests are not related to the ChimeraTK interface,</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="comment">//      also existent in the mtca4u test?</span></div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160; </div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">// BOOST_AUTO_TEST_CASE( testGetSetSpeedLimit ){</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160; </div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="comment">//  // setup</span></div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="comment">//  auto dmapFile = ChimeraTK::getDMapFilePath();</span></div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="comment">//  ChimeraTK::setDMapFilePath(&quot;./dummies.dmap&quot;);</span></div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="comment">//  auto dummyModeStatus =</span></div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().getDummyMode();</span></div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().setDummyMode(false);</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">//  mtca4u::StepperMotor motor(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;, &quot;MD22_0&quot;, 0,</span></div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment">//  &quot;custom_speed_and_curruent_limits.xml&quot;);</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160; </div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="comment">//  // Expected max speed  capability in this case:[from</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="comment">//  custom_speed_and_curruent_limits.xml]</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="comment">//  //   Vmax = 1398 (0x576)</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">//  //   fclk = 32000000</span></div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="comment">//  //   pulse_div = 6</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="comment">//  // expectedMaxSpeedLimitInUstepsPerSecond = Vmax * fclk/((2^pulse_div) *</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="comment">//  2048 * 32)</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="comment">//  //</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="comment">//  auto expectedMaxSpeedLimit = (1398.0 * 32000000.0) / (exp2(6) * 2048 * 32);</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment">//  // setup</span></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="comment">//  auto dmapFile = ChimeraTK::getDMapFilePath();</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="comment">//  ChimeraTK::setDMapFilePath(&quot;./dummies.dmap&quot;);</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="comment">//  auto dummyModeStatus =</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().getDummyMode();</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().setDummyMode(false);</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment">//  mtca4u::StepperMotor motor(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;, &quot;MD22_0&quot;, 0,</span></div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="comment">//  &quot;custom_speed_and_curruent_limits.xml&quot;);</span></div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="comment">//  // Expected max speed  capability in this case:[from</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="comment">//  custom_speed_and_curruent_limits.xml]</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="comment">//  //   Vmax = 1398 (0x576)</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="comment">//  //   fclk = 32000000</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="comment">//  //   pulse_div = 6</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">//  // expectedMaxSpeedLimitInUstepsPerSecond = Vmax * fclk/((2^pulse_div) *</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="comment">//  2048 * 32)</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="comment">//  //</span></div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="comment">//  auto expectedMaxSpeedLimit = (1398.0 * 32000000.0) / (exp2(6) * 2048 * 32);</span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160; </div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="comment">//  // expectedMinimumSpeedLimitInUstepsPerSec = Vmin * fclk/((2^pulse_div) *</span></div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment">//  2048 * 32) auto expectedMinimumSpeed = (1.0 * 32000000.0) / // VMin = 1</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment">//  (1.0)</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">//                              (exp2(6) * 2048 * 32);</span></div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160; </div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="comment">//  //verify getMaxSpeedCapability</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getMaxSpeedCapability() == expectedMaxSpeedLimit);</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160; </div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="comment">//  // set speed &gt; MaxAllowedSpeed</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMaxSpeedLimit) ==</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="comment">//  expectedMaxSpeedLimit); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="comment">//  expectedMaxSpeedLimit);</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMaxSpeedLimit + 10) ==</span></div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="comment">//  expectedMaxSpeedLimit); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="comment">//  expectedMaxSpeedLimit);</span></div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="comment">//  // expectedMinimumSpeedLimitInUstepsPerSec = Vmin * fclk/((2^pulse_div) *</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">//  2048 * 32) auto expectedMinimumSpeed = (1.0 * 32000000.0) / // VMin = 1</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">//  (1.0)</span></div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="comment">//                              (exp2(6) * 2048 * 32);</span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160; </div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">//  //verify getMaxSpeedCapability</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getMaxSpeedCapability() == expectedMaxSpeedLimit);</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment">//  // set speed &gt; MaxAllowedSpeed</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMaxSpeedLimit) ==</span></div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="comment">//  expectedMaxSpeedLimit); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="comment">//  expectedMaxSpeedLimit);</span></div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMaxSpeedLimit + 10) ==</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment">//  expectedMaxSpeedLimit); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="comment">//  expectedMaxSpeedLimit);</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="comment">//  // set speed &lt; MinAllowedSpeed</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMinimumSpeed) ==</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="comment">//  expectedMinimumSpeed);</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMinimumSpeed - 10) ==</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.setUserSpeedLimit(-100) ==</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">//  expectedMinimumSpeed);</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160; </div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">//  // set speed in valid range [Vmin, Vmax]</span></div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="comment">//  // speed = 8000 microsteps per second -&gt; results in Vmax = 1048.576</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="comment">//  // Vmax 1048.576  floors to 1048 =&gt; which gives returned/actual set speed as</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="comment">//  // 7995.6054... microsteps per second</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="comment">//  auto expectedSetSpeed = (1048.0 * 32000000.0) / (exp2(6) * 2048 * 32);</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(8000) == expectedSetSpeed);</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserSpeedLimit() == expectedSetSpeed);</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="comment">//  // Verify that Vmax is 1048 in the internal register (which is the</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="comment">//  // VMax corresponding to expectedSetSpeed)</span></div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="comment">//  auto md22_instance = boost::dynamic_pointer_cast&lt;mtca4u::DFMC_MD22Dummy&gt;(</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="comment">//      BackendFactory::getInstance().createBackend(</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="comment">//          &quot;DFMC_MD22_PERSISTENT_BACKEND&quot;));</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="comment">//  BOOST_ASSERT(md22_instance != NULL);</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="comment">//  mtca4u::TMC429OutputWord vMaxRegister =</span></div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="comment">//  readDFMCDummyMotor0VMaxRegister(md22_instance);</span></div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="comment">// BOOST_CHECK(vMaxRegister.getDATA() == 1048);</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160; </div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="comment">//  //teardown</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="comment">//    mtca4u::MotorDriverCardFactory::instance().setDummyMode(dummyModeStatus);</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="comment">//    ChimeraTK::setDMapFilePath(dmapFile);</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="comment">//}</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment">// BOOST_AUTO_TEST_CASE( testGetSetCurrent ){</span></div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="comment">//  auto dmapFile = ChimeraTK::getDMapFilePath();</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="comment">//  ChimeraTK::setDMapFilePath(&quot;./dummies.dmap&quot;);</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;<span class="comment">//  auto dummyModeStatus =</span></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().getDummyMode();</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().setDummyMode(false);</span></div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="comment">//  mtca4u::StepperMotor motor(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;, &quot;MD22_0&quot;, 0,</span></div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="comment">//  &quot;custom_speed_and_curruent_limits.xml&quot;);</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="comment">//  // The motor has been configured for a maximum current of .24 Amps,</span></div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="comment">//  with 1.8A</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="comment">//  // being the maximum the driver ic can provide. This translates to a current</span></div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="comment">//  // scale according to the formula:</span></div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="comment">//  // (.24 * 32)/1.8 - 1 == 3.266</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="comment">//  // the 32 in the above formula comes from the 32 current scale levels for</span></div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="comment">//  the</span></div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="comment">//  // tmc260.</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="comment">//  // The tmc260 current scale register takes a whole number. So floor(3.266)</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="comment">//  // goes into the current scale register. Because of this we get an effective</span></div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="comment">//  // current limit of:</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="comment">//  // 1.8 * (3 + 1)/32 == .225 A</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="comment">//  auto expectedSafeCurrentLimitValue = 1.8 * (4.0)/32.0;</span></div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="comment">//  auto safeCurrentLimit = motor.getSafeCurrentLimit();</span></div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="comment">//  BOOST_CHECK(safeCurrentLimit == expectedSafeCurrentLimitValue);</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="comment">//  // set speed &lt; MinAllowedSpeed</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMinimumSpeed) ==</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="comment">//  expectedMinimumSpeed);</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(expectedMinimumSpeed - 10) ==</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.setUserSpeedLimit(-100) ==</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="comment">//  expectedMinimumSpeed); BOOST_CHECK(motor.getUserSpeedLimit() ==</span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment">//  expectedMinimumSpeed);</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="comment">//  // set speed in valid range [Vmin, Vmax]</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="comment">//  // speed = 8000 microsteps per second -&gt; results in Vmax = 1048.576</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="comment">//  // Vmax 1048.576  floors to 1048 =&gt; which gives returned/actual set speed as</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment">//  // 7995.6054... microsteps per second</span></div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="comment">//  auto expectedSetSpeed = (1048.0 * 32000000.0) / (exp2(6) * 2048 * 32);</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserSpeedLimit(8000) == expectedSetSpeed);</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserSpeedLimit() == expectedSetSpeed);</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="comment">//  // Verify that Vmax is 1048 in the internal register (which is the</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="comment">//  // VMax corresponding to expectedSetSpeed)</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="comment">//  auto md22_instance = boost::dynamic_pointer_cast&lt;mtca4u::DFMC_MD22Dummy&gt;(</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">//      BackendFactory::getInstance().createBackend(</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="comment">//          &quot;DFMC_MD22_PERSISTENT_BACKEND&quot;));</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">//  BOOST_ASSERT(md22_instance != NULL);</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">//  mtca4u::TMC429OutputWord vMaxRegister =</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="comment">//  readDFMCDummyMotor0VMaxRegister(md22_instance);</span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">// BOOST_CHECK(vMaxRegister.getDATA() == 1048);</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160; </div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="comment">//  //teardown</span></div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="comment">//    mtca4u::MotorDriverCardFactory::instance().setDummyMode(dummyModeStatus);</span></div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="comment">//    ChimeraTK::setDMapFilePath(dmapFile);</span></div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="comment">//}</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160; </div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="comment">// BOOST_AUTO_TEST_CASE( testGetSetCurrent ){</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160; </div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="comment">//  auto dmapFile = ChimeraTK::getDMapFilePath();</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="comment">//  ChimeraTK::setDMapFilePath(&quot;./dummies.dmap&quot;);</span></div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="comment">//  auto dummyModeStatus =</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().getDummyMode();</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="comment">//  mtca4u::MotorDriverCardFactory::instance().setDummyMode(false);</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="comment">//  mtca4u::StepperMotor motor(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;, &quot;MD22_0&quot;, 0,</span></div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="comment">//  &quot;custom_speed_and_curruent_limits.xml&quot;);</span></div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160; </div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<span class="comment">//  // The motor has been configured for a maximum current of .24 Amps,</span></div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="comment">//  with 1.8A</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="comment">//  // being the maximum the driver ic can provide. This translates to a current</span></div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="comment">//  // scale according to the formula:</span></div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="comment">//  // (.24 * 32)/1.8 - 1 == 3.266</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="comment">//  // the 32 in the above formula comes from the 32 current scale levels for</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment">//  the</span></div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="comment">//  // tmc260.</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="comment">//  // The tmc260 current scale register takes a whole number. So floor(3.266)</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="comment">//  // goes into the current scale register. Because of this we get an effective</span></div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;<span class="comment">//  // current limit of:</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="comment">//  // 1.8 * (3 + 1)/32 == .225 A</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="comment">//  auto expectedSafeCurrentLimitValue = 1.8 * (4.0)/32.0;</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="comment">//  auto safeCurrentLimit = motor.getSafeCurrentLimit();</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="comment">//  BOOST_CHECK(safeCurrentLimit == expectedSafeCurrentLimitValue);</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160; </div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="comment">//  // set Current to Beyond the safe limit</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(safeCurrentLimit + 10) ==</span></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="comment">//  safeCurrentLimit); BOOST_CHECK(motor.getUserCurrentLimit() ==</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="comment">//  safeCurrentLimit); BOOST_CHECK(motor.setUserCurrentLimit(safeCurrentLimit)</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="comment">//  == safeCurrentLimit); BOOST_CHECK(motor.getUserCurrentLimit() ==</span></div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="comment">//  safeCurrentLimit);</span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160; </div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="comment">//  // set a current below minimum value.</span></div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="comment">//  // Minimum value of current (when current scale is 0):</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="comment">//  // 1.8 * (0 + 1)/32 == .05625A</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="comment">//  auto minimumCurrent = 1.8 * 1.0/32.0;</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(0) == minimumCurrent);</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserCurrentLimit() == minimumCurrent);</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(-10) == minimumCurrent);</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserCurrentLimit() == minimumCurrent);</span></div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160; </div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="comment">//  // set Current to Beyond the safe limit</span></div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(safeCurrentLimit + 10) ==</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="comment">//  safeCurrentLimit); BOOST_CHECK(motor.getUserCurrentLimit() ==</span></div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment">//  safeCurrentLimit); BOOST_CHECK(motor.setUserCurrentLimit(safeCurrentLimit)</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="comment">//  == safeCurrentLimit); BOOST_CHECK(motor.getUserCurrentLimit() ==</span></div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">//  safeCurrentLimit);</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">//  // set a current below minimum value.</span></div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">//  // Minimum value of current (when current scale is 0):</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">//  // 1.8 * (0 + 1)/32 == .05625A</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">//  auto minimumCurrent = 1.8 * 1.0/32.0;</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(0) == minimumCurrent);</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserCurrentLimit() == minimumCurrent);</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(-10) == minimumCurrent);</span></div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserCurrentLimit() == minimumCurrent);</span></div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160; </div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="comment">//  // Current in a valid range: 0 - .24A</span></div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="comment">//  // I = .2A</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="comment">//  // CS = (.20 * 32)/1.8 - 1 = floor(2.556) = 2</span></div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="comment">//  // For CS 2: Expected current = (1.8 * (2 + 1))/32 = .16875A</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="comment">//  auto expectedCurrent = (1.8 * (2 + 1))/32.0;</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(.2) == expectedCurrent);</span></div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserCurrentLimit() == expectedCurrent);</span></div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;<span class="comment">//  // Verify that CS is 2 in the internal register ()</span></div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="comment">//  auto md22_instance = boost::dynamic_pointer_cast&lt;mtca4u::DFMC_MD22Dummy&gt;(</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="comment">//      BackendFactory::getInstance().createBackend(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;));</span></div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="comment">//  BOOST_ASSERT(md22_instance != nullptr);</span></div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="comment">//  mtca4u::StallGuardControlData stallGuard =</span></div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;<span class="comment">//  readDFMCDummyMotor0CurrentScale(md22_instance);</span></div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;<span class="comment">//  BOOST_CHECK(stallGuard.getCurrentScale() == 2);</span></div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160; </div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="comment">//  //teardown</span></div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="comment">//    mtca4u::MotorDriverCardFactory::instance().setDummyMode(dummyModeStatus);</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="comment">//    ChimeraTK::setDMapFilePath(dmapFile);</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="comment">//}</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160; </div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="comment">//  // Current in a valid range: 0 - .24A</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="comment">//  // I = .2A</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="comment">//  // CS = (.20 * 32)/1.8 - 1 = floor(2.556) = 2</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment">//  // For CS 2: Expected current = (1.8 * (2 + 1))/32 = .16875A</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="comment">//  auto expectedCurrent = (1.8 * (2 + 1))/32.0;</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">//  BOOST_CHECK(motor.setUserCurrentLimit(.2) == expectedCurrent);</span></div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">//  BOOST_CHECK(motor.getUserCurrentLimit() == expectedCurrent);</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">//  // Verify that CS is 2 in the internal register ()</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">//  auto md22_instance = boost::dynamic_pointer_cast&lt;mtca4u::DFMC_MD22Dummy&gt;(</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">//      BackendFactory::getInstance().createBackend(&quot;DFMC_MD22_PERSISTENT_BACKEND&quot;));</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">//  BOOST_ASSERT(md22_instance != nullptr);</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">//  mtca4u::StallGuardControlData stallGuard =</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">//  readDFMCDummyMotor0CurrentScale(md22_instance);</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="comment">//  BOOST_CHECK(stallGuard.getCurrentScale() == 2);</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="comment">//  //teardown</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="comment">//    mtca4u::MotorDriverCardFactory::instance().setDummyMode(dummyModeStatus);</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="comment">//    ChimeraTK::setDMapFilePath(dmapFile);</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="comment">//}</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_motor_driver_card_factory_8h_html"><div class="ttname"><a href="_motor_driver_card_factory_8h.html">MotorDriverCardFactory.h</a></div></div>
 <div class="ttc" id="aclass_test_unit_converter_html_a3ec607e9e24042c5ddf16c1b227a078d"><div class="ttname"><a href="class_test_unit_converter.html#a3ec607e9e24042c5ddf16c1b227a078d">TestUnitConverter::unitsToSteps</a></div><div class="ttdeci">virtual int unitsToSteps(float units)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00039">testStepperMotorChimeraTK.cc:39</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_motor_driver_html"><div class="ttname"><a href="namespace_chimera_t_k_1_1_motor_driver.html">ChimeraTK::MotorDriver</a></div><div class="ttdef"><b>Definition:</b> <a href="_basic_stepper_motor_8h_source.html#l00023">BasicStepperMotor.h:23</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory_html"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html">ChimeraTK::MotorDriver::StepperMotorFactory</a></div><div class="ttdoc">The StepperMotorFactory is used to create StepperMotor instances.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00435">StepperMotor.h:435</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory_html"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html">ChimeraTK::MotorDriver::StepperMotorFactory</a></div><div class="ttdoc">The StepperMotorFactory is used to create StepperMotor instances.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00443">StepperMotor.h:443</a></div></div>
 <div class="ttc" id="aclass_test_unit_converter_html_a615e54b6ee8e09067c3bdd1ce886179d"><div class="ttname"><a href="class_test_unit_converter.html#a615e54b6ee8e09067c3bdd1ce886179d">TestUnitConverter::stepsToUnits</a></div><div class="ttdeci">virtual float stepsToUnits(int steps)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00038">testStepperMotorChimeraTK.cc:38</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_a1d25bcd13f7d1462cd6320989e2a850f"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#a1d25bcd13f7d1462cd6320989e2a850f">StepperMotorChimeraTKFixture::_stepperMotor</a></div><div class="ttdeci">std::unique_ptr&lt; StepperMotor &gt; _stepperMotor</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00071">testStepperMotorChimeraTK.cc:71</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_html_a5b48e9637ad16630e007c7a30a3c31ae"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a5b48e9637ad16630e007c7a30a3c31ae">ChimeraTK::MotorDriver::StepperMotor::getEncoderPosition</a></div><div class="ttdeci">virtual double getEncoderPosition()=0</div><div class="ttdoc">Get the current position from encoder in user-defined units, according to the encoderUnitsConverter d...</div></div>
@@ -936,30 +920,30 @@ $(document).ready(function(){initNavTree('test_stepper_motor_chimera_t_k_8cc_sou
 <div class="ttc" id="atest_stepper_motor_chimera_t_k_8cc_html_ac320b192052afa3dbbe369f7c58508e2"><div class="ttname"><a href="test_stepper_motor_chimera_t_k_8cc.html#ac320b192052afa3dbbe369f7c58508e2">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testStepperMotorFactory)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00147">testStepperMotorChimeraTK.cc:147</a></div></div>
 <div class="ttc" id="a_t_m_c429_constants_8h_html"><div class="ttname"><a href="_t_m_c429_constants_8h.html">TMC429Constants.h</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_a61c326c7ee89b34e1c70a1e2cc06855b"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#a61c326c7ee89b34e1c70a1e2cc06855b">StepperMotorChimeraTKFixture::StepperMotorChimeraTKFixture</a></div><div class="ttdeci">StepperMotorChimeraTKFixture()</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00078">testStepperMotorChimeraTK.cc:78</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html">ChimeraTK::MotorDriver::StepperMotorParameters</a></div><div class="ttdoc">Contains parameters for initialization of a StepperMotor object.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00020">StepperMotor.h:20</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html">ChimeraTK::MotorDriver::StepperMotorParameters</a></div><div class="ttdoc">Contains parameters for initialization of a StepperMotor object.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00028">StepperMotor.h:28</a></div></div>
 <div class="ttc" id="aclass_test_unit_converter_html_ab824519b51476e3cb244887689a78a52"><div class="ttname"><a href="class_test_unit_converter.html#ab824519b51476e3cb244887689a78a52">TestUnitConverter::TestUnitConverter</a></div><div class="ttdeci">TestUnitConverter()</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00036">testStepperMotorChimeraTK.cc:36</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory_html_a0449b75a86485b04b3efe4a820cf9c20"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html#a0449b75a86485b04b3efe4a820cf9c20">ChimeraTK::MotorDriver::StepperMotorFactory::create</a></div><div class="ttdeci">std::shared_ptr&lt; StepperMotor &gt; create(const StepperMotorParameters &amp;parameters)</div><div class="ttdoc">Creates an StepperMotor instance according to the specifed type and configuration parameters.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_factory_8cc_source.html#l00019">StepperMotorFactory.cc:19</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory_html_a0449b75a86485b04b3efe4a820cf9c20"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html#a0449b75a86485b04b3efe4a820cf9c20">ChimeraTK::MotorDriver::StepperMotorFactory::create</a></div><div class="ttdeci">std::shared_ptr&lt; StepperMotor &gt; create(const StepperMotorParameters &amp;parameters)</div><div class="ttdoc">Creates an StepperMotor instance according to the specifed type and configuration parameters.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_factory_8cc_source.html#l00017">StepperMotorFactory.cc:17</a></div></div>
 <div class="ttc" id="a_basic_stepper_motor_8h_html"><div class="ttname"><a href="_basic_stepper_motor_8h.html">BasicStepperMotor.h</a></div></div>
 <div class="ttc" id="atest_config_constants_8h_html"><div class="ttname"><a href="test_config_constants_8h.html">testConfigConstants.h</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a14beb96708831ce3a3ee4738d23ae23a"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a14beb96708831ce3a3ee4738d23ae23a">ChimeraTK::MotorDriver::StepperMotorParameters::driverId</a></div><div class="ttdeci">unsigned int driverId</div><div class="ttdoc">Each Motor Card Driver has two independent Motor Drivers (can drive two physical motors).</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00030">StepperMotor.h:30</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_a3f682c513d5cc33212a22ab0485182bb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">mtca4u::MotorDriverCardFactory::createMotorDriverCard</a></div><div class="ttdeci">boost::shared_ptr&lt; MotorDriverCard &gt; createMotorDriverCard(std::string alias, std::string mapModuleName, std::string motorConfigFileName)</div><div class="ttdoc">Create a motor driver card from the device alias, the module name in the map file (there might be mor...</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00020">MotorDriverCardFactory.cc:20</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a14beb96708831ce3a3ee4738d23ae23a"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a14beb96708831ce3a3ee4738d23ae23a">ChimeraTK::MotorDriver::StepperMotorParameters::driverId</a></div><div class="ttdeci">unsigned int driverId</div><div class="ttdoc">Each Motor Card Driver has two independent Motor Drivers (can drive two physical motors).</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00038">StepperMotor.h:38</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_a3f682c513d5cc33212a22ab0485182bb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">mtca4u::MotorDriverCardFactory::createMotorDriverCard</a></div><div class="ttdeci">boost::shared_ptr&lt; MotorDriverCard &gt; createMotorDriverCard(std::string alias, std::string mapModuleName, std::string motorConfigFileName)</div><div class="ttdoc">Create a motor driver card from the device alias, the module name in the map file (there mighte be mo...</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00024">MotorDriverCardFactory.cc:24</a></div></div>
 <div class="ttc" id="a_d_f_m_c___m_d22_dummy_8h_html"><div class="ttname"><a href="_d_f_m_c___m_d22_dummy_8h.html">DFMC_MD22Dummy.h</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_a070d449dbd4f378f31e492ee06e34a19"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#a070d449dbd4f378f31e492ee06e34a19">StepperMotorChimeraTKFixture::_motorControlerDummy</a></div><div class="ttdeci">boost::shared_ptr&lt; mtca4u::MotorControlerDummy &gt; _motorControlerDummy</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00073">testStepperMotorChimeraTK.cc:73</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_ad18967ca6c33717d8fc84cf6e40d7bdc"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#ad18967ca6c33717d8fc84cf6e40d7bdc">ChimeraTK::MotorDriver::StepperMotorParameters::motorType</a></div><div class="ttdeci">StepperMotorType motorType</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00021">StepperMotor.h:21</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_aad51e92b6cd2b366fcd5f7cd0e8a6afb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">mtca4u::MotorDriverCardFactory::instance</a></div><div class="ttdeci">static MotorDriverCardFactory &amp; instance()</div><div class="ttdoc">Access the single instance of the factory.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00015">MotorDriverCardFactory.cc:15</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_ada87532a82ec391a5925e41068eeefb5"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">mtca4u::MotorDriverCardFactory::setDummyMode</a></div><div class="ttdeci">void setDummyMode(bool dummyMode=true)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00060">MotorDriverCardFactory.cc:60</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a103811a6afb5c2be5b70511f934fdb28"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a103811a6afb5c2be5b70511f934fdb28">ChimeraTK::MotorDriver::StepperMotorParameters::configFileName</a></div><div class="ttdeci">std::string configFileName</div><div class="ttdoc">Name of configuration file.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00032">StepperMotor.h:32</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_ad18967ca6c33717d8fc84cf6e40d7bdc"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#ad18967ca6c33717d8fc84cf6e40d7bdc">ChimeraTK::MotorDriver::StepperMotorParameters::motorType</a></div><div class="ttdeci">StepperMotorType motorType</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00029">StepperMotor.h:29</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_aad51e92b6cd2b366fcd5f7cd0e8a6afb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">mtca4u::MotorDriverCardFactory::instance</a></div><div class="ttdeci">static MotorDriverCardFactory &amp; instance()</div><div class="ttdoc">Access the single instance of the factory.</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00019">MotorDriverCardFactory.cc:19</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_ada87532a82ec391a5925e41068eeefb5"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">mtca4u::MotorDriverCardFactory::setDummyMode</a></div><div class="ttdeci">void setDummyMode(bool dummyMode=true)</div><div class="ttdef"><b>Definition:</b> <a href="_motor_driver_card_factory_8cc_source.html#l00059">MotorDriverCardFactory.cc:59</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a103811a6afb5c2be5b70511f934fdb28"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a103811a6afb5c2be5b70511f934fdb28">ChimeraTK::MotorDriver::StepperMotorParameters::configFileName</a></div><div class="ttdeci">std::string configFileName</div><div class="ttdoc">Name of configuration file.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00040">StepperMotor.h:40</a></div></div>
 <div class="ttc" id="a_motor_controler_dummy_8h_html"><div class="ttname"><a href="_motor_controler_dummy_8h.html">MotorControlerDummy.h</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_afe3c76b64747626a5bb26f5f96fb22ee"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#afe3c76b64747626a5bb26f5f96fb22ee">StepperMotorChimeraTKFixture::_motorDriverCard</a></div><div class="ttdeci">boost::shared_ptr&lt; mtca4u::MotorDriverCard &gt; _motorDriverCard</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00072">testStepperMotorChimeraTK.cc:72</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_aba367ab15055f784a733b33ffb834588"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#aba367ab15055f784a733b33ffb834588">StepperMotorChimeraTKFixture::configThreadFcn</a></div><div class="ttdeci">void configThreadFcn()</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00118">testStepperMotorChimeraTK.cc:118</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_acee1822520f5b12f7e75224ec40a039a"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#acee1822520f5b12f7e75224ec40a039a">StepperMotorChimeraTKFixture::waitForState</a></div><div class="ttdeci">bool waitForState(std::string stateName, unsigned timeoutInSeconds=10)</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00127">testStepperMotorChimeraTK.cc:127</a></div></div>
 <div class="ttc" id="a_motor_driver_card_8h_html"><div class="ttname"><a href="_motor_driver_card_8h.html">MotorDriverCard.h</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_acacfc1fd7294071e32dcdc2a73265a83"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#acacfc1fd7294071e32dcdc2a73265a83">StepperMotorChimeraTKFixture::_testUnitConverter</a></div><div class="ttdeci">std::shared_ptr&lt; TestUnitConverter &gt; _testUnitConverter</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00074">testStepperMotorChimeraTK.cc:74</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a02c19bf3610bd65b47b0314314e04ab9"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a02c19bf3610bd65b47b0314314e04ab9">ChimeraTK::MotorDriver::StepperMotorParameters::encoderUnitsConverter</a></div><div class="ttdeci">std::shared_ptr&lt; utility::EncoderStepsConverter &gt; encoderUnitsConverter</div><div class="ttdoc">A converter between encoder steps and user unit.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00041">StepperMotor.h:41</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_afc0f5df3417aa60a96e7adfa43c25097"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#afc0f5df3417aa60a96e7adfa43c25097">ChimeraTK::MotorDriver::StepperMotorParameters::motorUnitsConverter</a></div><div class="ttdeci">std::shared_ptr&lt; utility::MotorStepsConverter &gt; motorUnitsConverter</div><div class="ttdoc">A converter between motor steps and user unit.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00036">StepperMotor.h:36</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a02c19bf3610bd65b47b0314314e04ab9"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a02c19bf3610bd65b47b0314314e04ab9">ChimeraTK::MotorDriver::StepperMotorParameters::encoderUnitsConverter</a></div><div class="ttdeci">std::shared_ptr&lt; utility::EncoderStepsConverter &gt; encoderUnitsConverter</div><div class="ttdoc">A converter between encoder steps and user unit.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00049">StepperMotor.h:49</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_afc0f5df3417aa60a96e7adfa43c25097"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#afc0f5df3417aa60a96e7adfa43c25097">ChimeraTK::MotorDriver::StepperMotorParameters::motorUnitsConverter</a></div><div class="ttdeci">std::shared_ptr&lt; utility::MotorStepsConverter &gt; motorUnitsConverter</div><div class="ttdoc">A converter between motor steps and user unit.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00044">StepperMotor.h:44</a></div></div>
 <div class="ttc" id="aclass_stepper_motor_chimera_t_k_fixture_html_aa781c6db2ac02aa5fccafb99521284a5"><div class="ttname"><a href="class_stepper_motor_chimera_t_k_fixture.html#aa781c6db2ac02aa5fccafb99521284a5">StepperMotorChimeraTKFixture::moveThreadFcn</a></div><div class="ttdeci">void moveThreadFcn()</div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00108">testStepperMotorChimeraTK.cc:108</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_ac58c0552f4110e533368ce9ea5620925"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#ac58c0552f4110e533368ce9ea5620925">ChimeraTK::MotorDriver::StepperMotorParameters::moduleName</a></div><div class="ttdeci">std::string moduleName</div><div class="ttdoc">Name of the module in the map file (there might be more than one MD22 per device/ FMC carrier).</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00026">StepperMotor.h:26</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a0a4184da2940c265130814a8d02811df"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a0a4184da2940c265130814a8d02811df">ChimeraTK::MotorDriver::StepperMotorParameters::deviceName</a></div><div class="ttdeci">std::string deviceName</div><div class="ttdoc">Name of the device in DMAP file.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00023">StepperMotor.h:23</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_ac58c0552f4110e533368ce9ea5620925"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#ac58c0552f4110e533368ce9ea5620925">ChimeraTK::MotorDriver::StepperMotorParameters::moduleName</a></div><div class="ttdeci">std::string moduleName</div><div class="ttdoc">Name of the module in the map file (there might be more than one MD22 per device/ FMC carrier).</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00034">StepperMotor.h:34</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters_html_a0a4184da2940c265130814a8d02811df"><div class="ttname"><a href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a0a4184da2940c265130814a8d02811df">ChimeraTK::MotorDriver::StepperMotorParameters::deviceName</a></div><div class="ttdeci">std::string deviceName</div><div class="ttdoc">Name of the device in DMAP file.</div><div class="ttdef"><b>Definition:</b> <a href="steppermotor_2include_2_stepper_motor_8h_source.html#l00031">StepperMotor.h:31</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter_html"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter.html">ChimeraTK::MotorDriver::utility::UnitsConverter</a></div><div class="ttdoc">A generic abstract units converter between an integer value (steps)  and a user-defined unit.</div><div class="ttdef"><b>Definition:</b> <a href="_stepper_motor_util_8h_source.html#l00076">StepperMotorUtil.h:76</a></div></div>
 <div class="ttc" id="aclass_test_unit_converter_html"><div class="ttname"><a href="class_test_unit_converter.html">TestUnitConverter</a></div><div class="ttdef"><b>Definition:</b> <a href="test_stepper_motor_chimera_t_k_8cc_source.html#l00034">testStepperMotorChimeraTK.cc:34</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_html_a78876622b6990acd29f4db546a14df5b"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a78876622b6990acd29f4db546a14df5b">ChimeraTK::MotorDriver::StepperMotor::recalculateStepsInUnits</a></div><div class="ttdeci">virtual float recalculateStepsInUnits(int steps)=0</div><div class="ttdoc">it transforms steps in units using the internal converter</div></div>
@@ -967,7 +951,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_chimera_t_k_8cc_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_5c1af8e39d626a10449ff2cc02efa59d.html">tests</a></li><li class="navelem"><a class="el" href="dir_d6b74272cc69793117ffbe9db9784b0f.html">src</a></li><li class="navelem"><a class="el" href="dir_316a4a3ce26cb695c39d446fee976666.html">steppermotor</a></li><li class="navelem"><a class="el" href="test_stepper_motor_chimera_t_k_8cc.html">testStepperMotorChimeraTK.cc</a></li>
-    <li class="footer">Generated by
+    <li class="footer">Generated on Wed Feb 5 2025 19:47:19 for mtca4u-MotorDriverCard by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

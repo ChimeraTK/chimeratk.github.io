@@ -90,7 +90,6 @@ $(document).ready(function(){initNavTree('_register_type_abstractor_8cpp.html','
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_preferences_provider_8h_source.html">PreferencesProvider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>&quot;</code><br />
-<code>#include &lt;QDebug&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for RegisterTypeAbstractor.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,21 +103,21 @@ $(document).ready(function(){initNavTree('_register_type_abstractor_8cpp.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9757c349cae421acda0845f02f3cb635"><td class="memTemplParams" colspan="2">template&lt;class USER_DATA_TYPE &gt; </td></tr>
-<tr class="memitem:a9757c349cae421acda0845f02f3cb635"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_register_type_abstractor_8cpp.html#a9757c349cae421acda0845f02f3cb635">createTypedAccessors</a> (ChimeraTK::RegisterInfo const &amp;registerInfo, ChimeraTK::Device &amp;device)</td></tr>
-<tr class="separator:a9757c349cae421acda0845f02f3cb635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d288d5090784ced860b4a736f5d849"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_register_type_abstractor_8cpp.html#ac7d288d5090784ced860b4a736f5d849">createAbstractAccessors</a> (ChimeraTK::RegisterInfo const &amp;registerInfo, ChimeraTK::Device &amp;device)</td></tr>
-<tr class="separator:ac7d288d5090784ced860b4a736f5d849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f8de145075de5ff8dfd66747b756f9"><td class="memTemplParams" colspan="2">template&lt;class USER_DATA_TYPE &gt; </td></tr>
+<tr class="memitem:af4f8de145075de5ff8dfd66747b756f9"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_register_type_abstractor_8cpp.html#af4f8de145075de5ff8dfd66747b756f9">createTypedAccessor</a> (ChimeraTK::RegisterInfo const &amp;registerInfo, ChimeraTK::Device &amp;device)</td></tr>
+<tr class="separator:af4f8de145075de5ff8dfd66747b756f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b2826f88843662d03c2e92df25c9a6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_register_type_abstractor_8cpp.html#ae1b2826f88843662d03c2e92df25c9a6">createAbstractAccessor</a> (ChimeraTK::RegisterInfo const &amp;registerInfo, ChimeraTK::Device &amp;device)</td></tr>
+<tr class="separator:ae1b2826f88843662d03c2e92df25c9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac7d288d5090784ced860b4a736f5d849"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7d288d5090784ced860b4a736f5d849">&#9670;&nbsp;</a></span>createAbstractAccessors()</h2>
+<a id="ae1b2826f88843662d03c2e92df25c9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b2826f88843662d03c2e92df25c9a6">&#9670;&nbsp;</a></span>createAbstractAccessor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt;, std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt; &gt; createAbstractAccessors </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt; createAbstractAccessor </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::RegisterInfo const &amp;&#160;</td>
           <td class="paramname"><em>registerInfo</em>, </td>
@@ -136,14 +135,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section attention"><dt>Attention</dt><dd>This function can return a nullptr as first pair element in case the data type is undefined (or noData) </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This function can return a nullptr in case the data type is undefined (or noData) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_8cpp_source.html#l00086">86</a> of file <a class="el" href="_register_type_abstractor_8cpp_source.html">RegisterTypeAbstractor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_8cpp_source.html#l00073">73</a> of file <a class="el" href="_register_type_abstractor_8cpp_source.html">RegisterTypeAbstractor.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9757c349cae421acda0845f02f3cb635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9757c349cae421acda0845f02f3cb635">&#9670;&nbsp;</a></span>createTypedAccessors()</h2>
+<a id="af4f8de145075de5ff8dfd66747b756f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f8de145075de5ff8dfd66747b756f9">&#9670;&nbsp;</a></span>createTypedAccessor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +150,7 @@ Functions</h2></td></tr>
 template&lt;class USER_DATA_TYPE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt;, std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt; &gt; createTypedAccessors </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt; createTypedAccessor </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::RegisterInfo const &amp;&#160;</td>
           <td class="paramname"><em>registerInfo</em>, </td>
@@ -170,13 +169,13 @@ template&lt;class USER_DATA_TYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_8cpp_source.html#l00007">7</a> of file <a class="el" href="_register_type_abstractor_8cpp_source.html">RegisterTypeAbstractor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_8cpp_source.html#l00005">5</a> of file <a class="el" href="_register_type_abstractor_8cpp_source.html">RegisterTypeAbstractor.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_register_type_abstractor_8cpp_a9757c349cae421acda0845f02f3cb635_cgraph.svg" width="415" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_register_type_abstractor_8cpp_af4f8de145075de5ff8dfd66747b756f9_cgraph.svg" width="407" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -188,7 +187,7 @@ template&lt;class USER_DATA_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_bfb5f3d63642a01f97f89b5278173bdf.html">QtHardMon</a></li><li class="navelem"><a class="el" href="dir_c3a7b89716084537df8c4c9c0ec0d30d.html">src</a></li><li class="navelem"><a class="el" href="_register_type_abstractor_8cpp.html">RegisterTypeAbstractor.cpp</a></li>
-    <li class="footer">Generated by
+    <li class="footer">Generated on Wed Feb 5 2025 19:44:41 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

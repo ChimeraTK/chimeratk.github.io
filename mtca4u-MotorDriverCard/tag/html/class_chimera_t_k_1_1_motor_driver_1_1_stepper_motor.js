@@ -1,10 +1,10 @@
 var class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor =
 [
-    [ "~StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a8d3685bfa81fd22ab50f2165652c8f80", null ],
+    [ "~StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#aff9e565dac1cefbf4579f39d77604533", null ],
     [ "calibrate", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a9c2b6f7dece25b39f6b5ff62b28344de", null ],
     [ "determineTolerance", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a501bc341adf3a6c171b44314d382df09", null ],
     [ "emergencyStop", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a7c377f1bee1ed10e5eac1ccedc6019f8", null ],
-    [ "enableFullStepping", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a4dafbfdc8123f9465a437a6daec78545", null ],
+    [ "enableFullStepping", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a34e231aa141ee76564c4e1124818647e", null ],
     [ "getAutostart", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#ae17e1a19c45f2333d52b15eb7f6ea251", null ],
     [ "getCalibrationMode", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a23695f03a3a43d8230c0cee184847528", null ],
     [ "getCalibrationTime", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#aa2e2054114cc84a8aad6868a3f73c832", null ],

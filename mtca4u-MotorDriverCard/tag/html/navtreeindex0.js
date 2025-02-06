@@ -65,7 +65,6 @@ var NAVTREEINDEX0 =
 "_hex_spin_box_8h.html":[8,0,0,0,2,1,3],
 "_hex_spin_box_8h_source.html":[8,0,0,0,2,1,3],
 "_linear_stepper_motor_state_machine_8cc.html":[8,0,0,0,6,1,2],
-"_linear_stepper_motor_state_machine_8cc.html#aea83d5bac956735ec3c814cb4acd3d75":[8,0,0,0,6,1,2,0],
 "_linear_stepper_motor_state_machine_8cc_source.html":[8,0,0,0,6,1,2],
 "_logger_8cc.html":[8,0,0,0,8,1,1],
 "_logger_8cc.html#a004c337ed4488d60e87d77fcfd1f905d":[8,0,0,0,8,1,1,2],
@@ -123,8 +122,8 @@ var NAVTREEINDEX0 =
 "_motor_controler_config_defaults_8h.html#af9a43f744889601af54f39372d572fef":[8,0,0,0,0,0,6,1],
 "_motor_controler_config_defaults_8h_source.html":[8,0,0,0,0,0,6],
 "_motor_controler_dummy_8cc.html":[8,0,0,0,0,1,2],
-"_motor_controler_dummy_8cc.html#a199019db841beffc9956bd25ad7e80c3":[8,0,0,0,0,1,2,0],
-"_motor_controler_dummy_8cc.html#a2e29cf3ac0ec1738b21f05ea4555e7eb":[8,0,0,0,0,1,2,1],
+"_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01":[8,0,0,0,0,1,2,0],
+"_motor_controler_dummy_8cc.html#aedb00abeee050671ad182a1e88de8914":[8,0,0,0,0,1,2,1],
 "_motor_controler_dummy_8cc_source.html":[8,0,0,0,0,1,2],
 "_motor_controler_dummy_8h.html":[8,0,0,0,0,0,7],
 "_motor_controler_dummy_8h.html#a427600c1dd9662d68c914388c1d7a16e":[8,0,0,0,0,0,7,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "_stepper_motor_state_machine_8cc.html":[8,0,0,0,6,1,4],
 "_stepper_motor_state_machine_8cc_source.html":[8,0,0,0,6,1,4],
 "_stepper_motor_status_8cc.html":[8,0,0,0,5,1,4],
-"_stepper_motor_status_8cc_source.html":[8,0,0,0,5,1,4]
+"_stepper_motor_status_8cc_source.html":[8,0,0,0,5,1,4],
+"_stepper_motor_status_8h.html":[8,0,0,0,5,0,4]
 };

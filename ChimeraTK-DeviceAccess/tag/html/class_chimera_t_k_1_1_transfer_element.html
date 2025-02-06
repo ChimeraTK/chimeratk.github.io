@@ -624,7 +624,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae08a734a6d7f3024c2478687eb0da7d0">ChimeraTK::NumericAddressedLowLevelTransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00600">600</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00599">599</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -716,7 +716,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae3991bf5308f4043763e305332e01c91">ChimeraTK::NumericAddressedLowLevelTransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00550">550</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00549">549</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -845,7 +845,7 @@ Friends</h2></td></tr>
 <li>The implementation may destroy the content of the user buffer in the process. This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer().">doWriteTransfer()</a>. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00650">650</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00649">649</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1011,7 +1011,7 @@ Friends</h2></td></tr>
 <p>For TransferElements which are itself an implementation this will directly return a shared pointer to this. If this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is a user frontend, the pointer to the internal implementation is returned.</p>
 <p>Note: Avoid using this in application code, since it will break the abstraction! </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00723">723</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00722">722</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1040,7 @@ Friends</h2></td></tr>
 
 <p>Obtain unique ID for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>, see <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement.">TransferElementID</a> for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00763">763</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00762">762</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1273,7 @@ Friends</h2></td></tr>
 <p>See <a class="el" href="spec__transfer_element.html#transferElement_B_8_6">Technical specification: TransferElement B.8.6</a></p>
 <p>Implementation notice: This default implementation is always doing nothing. Each <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> implementation that supports <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a> (or may need to interrupt synchronous read calls) has to override it like this (unless the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> has special requirements): void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted.">interrupt()</a> override { this-&gt;interrupt_impl(this-&gt;_myDataTransportQueue); } </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00784">784</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00783">783</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1306,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>Implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted.">interrupt()</a> </p>
 <p>This function shall be called by backends in their <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted.">interrupt()</a> implementation as stated in its implementation note. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00793">793</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00792">792</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1396,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>Check whether a read transaction is in progress, i.e. </p>
 <p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary.">preRead()</a> has been called but not yet <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00798">798</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00797">797</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1456,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>Check whether a write transaction is in progress, i.e. </p>
 <p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> has been called but not yet <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary.">postWrite()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00801">801</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00800">800</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1515,7 +1515,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Allow generating a unique ID from derived classes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00817">817</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00816">816</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1566,7 +1566,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#af0db033b7d19e3709ce29639b8b5a5ea">ChimeraTK::NumericAddressedLowLevelTransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00678">678</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00677">677</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1709,7 +1709,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>If during <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> e.g. the user data buffer was swapped away, it must be swapped back in this function so the just sent data is available again to the calling program.</p>
 <p>Called by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b" title="Write the data to device.">write()</a>. Also the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a> will call this function after a write was executed directly on the underlying accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00574">574</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00573">573</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -2061,7 +2061,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>Search for all underlying TransferElements which are considered identical (see sameRegister()) with the given <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. </p>
 <p>These TransferElements are then replaced with the new element. If no underlying element matches the new element, this function has no effect. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00733">733</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00732">732</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2195,7 +2195,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>If no persistent data storage as associated previously, the value from the persistent storage is read and send to the receiver.</p>
 <p>Note: A call to this function will be ignored, if the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> does not support persistent data storage (e.g. read-only variables or device registers) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>TODO does this make sense? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00757">757</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00756">756</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2289,7 +2289,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary.">postWrite()</a>. If the return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false.</p>
 <p>This function internally calls <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer().">doWriteTransfer()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer().">doWriteTransfer()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary.">postWrite()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00611">611</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00610">610</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -2330,7 +2330,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary.">postWrite()</a>. If the return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false.</p>
 <p>This function internally calls <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer().">doWriteTransfer()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer().">doWriteTransfer()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary.">postWrite()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00635">635</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00634">634</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -2363,7 +2363,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00830">830</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00829">829</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2387,7 +2387,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00829">829</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00828">828</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2414,7 +2414,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>The access mode flags for this transfer element. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00827">827</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00826">826</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2440,7 +2440,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Exception to be rethrown in postXXX() in case hasSeenException == true Can be set via <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e" title="Set an active exception.">setActiveException()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00860">860</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00859">859</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2467,7 +2467,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>The validity of the data in the application buffer. </p>
 <p>Part of the application buffer <a class="el" href="spec__transfer_element.html#transferElement_A_5">(see TransferElement specification A.5)</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00856">856</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00855">855</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2493,7 +2493,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Description of this variable/register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00811">811</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00810">810</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2546,7 +2546,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>The ID of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00814">814</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00813">813</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2572,7 +2572,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Flag whether this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> has been added to a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00824">824</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00823">823</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2598,7 +2598,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Flag whether this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> has been added to a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a> or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00821">821</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00820">820</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2624,7 +2624,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Identifier uniquely identifying the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00805">805</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00804">804</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2651,7 +2651,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>The queue for asynchronous read transfers. </p>
 <p>This is the void queue which is a continuation of the actual data transport queue, which is implementation dependent. With _readQueue the exception propagation and waiting for new data is implemented in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00848">848</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00847">847</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2678,7 +2678,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>Engineering unit. </p>
 <p>Defaults to "n./a.", if none was specified </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00808">808</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00807">807</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2705,7 +2705,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 <p>The version number of the last successful transfer. </p>
 <p>Part of the application buffer <a class="el" href="spec__transfer_element.html#transferElement_A_5">(see TransferElement specification A.5)</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00852">852</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00851">851</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2731,7 +2731,7 @@ template&lt;typename QUEUE_TYPE &gt; </div>
 
 <p>Constant string to be used as a unit when the unit is not provided or known. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00743">743</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00742">742</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
