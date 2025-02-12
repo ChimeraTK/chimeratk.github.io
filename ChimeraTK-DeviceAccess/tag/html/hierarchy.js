@@ -70,11 +70,10 @@ var hierarchy =
     [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
     [ "DecoratorBackend::BackendRegisterer", "class_decorator_backend_1_1_backend_registerer.html", null ],
     [ "WriteCountingBackend::BackendRegisterer", "struct_write_counting_backend_1_1_backend_registerer.html", null ],
-    [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
     [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
-    [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
-    [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
     [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
+    [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
+    [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
     [ "DummyForCleanupCheck::BackendRegisterer", "struct_dummy_for_cleanup_check_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::BackendRegisterInfoBase", "class_chimera_t_k_1_1_backend_register_info_base.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
@@ -301,8 +300,7 @@ var hierarchy =
             [ "ChimeraTK::XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", null ]
           ] ],
           [ "ChimeraTK::SubdeviceBackend", "class_chimera_t_k_1_1_subdevice_backend.html", null ],
-          [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::ExceptionReportingBackend", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html", null ],
-          [ "ExampleBackend", "class_example_backend.html", null ]
+          [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::ExceptionReportingBackend", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html", null ]
         ] ]
       ] ],
       [ "ChimeraTK::TransferElement", "class_chimera_t_k_1_1_transfer_element.html", [
@@ -1006,8 +1004,8 @@ var hierarchy =
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],

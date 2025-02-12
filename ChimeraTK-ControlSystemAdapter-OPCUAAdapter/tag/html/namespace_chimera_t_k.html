@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
-   &#160;<span id="projectnumber">04.00.02</span>
+   &#160;<span id="projectnumber">04.00.03</span>
    </div>
   </td>
  </tr>
@@ -150,6 +150,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab2431f7ec05d99e55f4a1259c02d5047"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ab2431f7ec05d99e55f4a1259c02d5047"><td class="memTemplItemLeft" align="right" valign="top">UA_StatusCode&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ab2431f7ec05d99e55f4a1259c02d5047">ua_processvariable::setValue&lt; std::string &gt;</a> (const UA_Variant *data)</td></tr>
+<tr class="separator:ab2431f7ec05d99e55f4a1259c02d5047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9646056f41b1bd4558f2b0bce765127"><td class="memItemLeft" align="right" valign="top">UA_HistoryDataGathering&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac9646056f41b1bd4558f2b0bce765127">add_historizing_nodes</a> (vector&lt; UA_NodeId &gt; &amp;historizing_nodes, vector&lt; string &gt; &amp;historizing_setup, UA_Server *mappedServer, UA_ServerConfig *server_config, vector&lt; <a class="el" href="struct_chimera_t_k_1_1_adapter_history_setup.html">AdapterHistorySetup</a> &gt; history, vector&lt; <a class="el" href="struct_chimera_t_k_1_1_adapter_folder_history_setup.html">AdapterFolderHistorySetup</a> &gt; historyfolders, vector&lt; <a class="el" href="struct_chimera_t_k_1_1_adapter_p_v_history_setup.html">AdapterPVHistorySetup</a> &gt; historyvariables)</td></tr>
 <tr class="separator:ac9646056f41b1bd4558f2b0bce765127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa481b329721276204583e9158e9a676d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa481b329721276204583e9158e9a676d">clear_history</a> (UA_HistoryDataGathering gathering, vector&lt; UA_NodeId &gt; &amp;historizing_nodes, vector&lt; string &gt; &amp;historizing_setup, UA_Server *mappedServer, vector&lt; <a class="el" href="struct_chimera_t_k_1_1_adapter_folder_history_setup.html">AdapterFolderHistorySetup</a> &gt; historyfolders, vector&lt; <a class="el" href="struct_chimera_t_k_1_1_adapter_p_v_history_setup.html">AdapterPVHistorySetup</a> &gt; historyvariables, UA_ServerConfig *server_config)</td></tr>
@@ -166,9 +169,6 @@ Functions</h2></td></tr>
 <tr class="separator:a2b3c305abd04a8f9238b6bc92b5407d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75112f76652889f61e0fc262264e8855"><td class="memItemLeft" align="right" valign="top">UA_StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a75112f76652889f61e0fc262264e8855">add_void_event_type</a> (UA_Server *server)</td></tr>
 <tr class="separator:a75112f76652889f61e0fc262264e8855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2431f7ec05d99e55f4a1259c02d5047"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ab2431f7ec05d99e55f4a1259c02d5047"><td class="memTemplItemLeft" align="right" valign="top">UA_StatusCode&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ab2431f7ec05d99e55f4a1259c02d5047">ua_processvariable::setValue&lt; std::string &gt;</a> (const UA_Variant *data)</td></tr>
-<tr class="separator:ab2431f7ec05d99e55f4a1259c02d5047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32266d0372fe2f285f46b6940afab86b"><td class="memItemLeft" align="right" valign="top">UA_StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a32266d0372fe2f285f46b6940afab86b">get_child_variables</a> (UA_NodeId childId, UA_Boolean isInverse, UA_NodeId referenceTypeId, void *handle)</td></tr>
 <tr class="separator:a32266d0372fe2f285f46b6940afab86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791225855414c4883acb91ca4fff1af5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a791225855414c4883acb91ca4fff1af5">add_folder_historizing</a> (vector&lt; UA_NodeId &gt; *historizing_nodes, vector&lt; string &gt; *historizing_setup, vector&lt; <a class="el" href="struct_chimera_t_k_1_1_adapter_folder_history_setup.html">AdapterFolderHistorySetup</a> &gt; historyfolders, UA_Server *mappedServer, UA_ServerConfig *server_config)</td></tr>
@@ -893,6 +893,9 @@ Functions</h2></td></tr>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">UA_StatusCode <a class="el" href="class_chimera_t_k_1_1ua__processvariable.html#ad6f8d75a3a9ec47374248702d819207c">ChimeraTK::ua_processvariable::setValue</a>&lt; std::string &gt; </td>
@@ -902,9 +905,14 @@ template&lt;&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="csa__processvariable_8cpp_source.html#l00349">349</a> of file <a class="el" href="csa__processvariable_8cpp_source.html">csa_processvariable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__processvariable_8h_source.html#l00298">298</a> of file <a class="el" href="csa__processvariable_8h_source.html">csa_processvariable.h</a>.</p>
 
 </div>
 </div>
