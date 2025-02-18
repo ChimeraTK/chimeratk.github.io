@@ -4,7 +4,7 @@ var class_chimera_t_k_1_1_trigger_fan_out =
     [ "TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html#a8c29877be26fc36068456693d737ea51", null ],
     [ "~TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html#ab5ae6a6ba3845ae986f2a8f777420988", null ],
     [ "activate", "class_chimera_t_k_1_1_trigger_fan_out.html#a1e62fe742bdca6b91751bb21047f9a6f", null ],
-    [ "addNetwork", "class_chimera_t_k_1_1_trigger_fan_out.html#aee8eeaa4d1c7f02cf4ad63b482bb87da", null ],
+    [ "addNetwork", "class_chimera_t_k_1_1_trigger_fan_out.html#a3619b43eada96e3b3e1ce2f2828fb01c", null ],
     [ "deactivate", "class_chimera_t_k_1_1_trigger_fan_out.html#aa7a615ce3c34ffd5e1af2c474d7fc106", null ],
     [ "run", "class_chimera_t_k_1_1_trigger_fan_out.html#ac46817d485e17425b7200cfe5c3c7bff", null ],
     [ "_deviceModule", "class_chimera_t_k_1_1_trigger_fan_out.html#a0bdec0981f40becaeaabc4d23c778118", null ],

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['example_3a_20basic_20structure_20of_20an_20application_3888',['Example: Basic structure of an Application',['../example.html',1,'']]],
-  ['example_20how_20to_20write_20application_20modules_20in_20python_3889',['Example how to write application modules in Python',['../example_python_modules.html',1,'']]],
-  ['exception_20handling_3890',['Exception Handling',['../exception_handling.html',1,'index']]]
+  ['3_200_20migration_20guide_0',['ApplicationCore 2.x -&gt; 3.0 migration guide',['../migration_guide_v2_to_v3.html',1,'index']]]
 ];

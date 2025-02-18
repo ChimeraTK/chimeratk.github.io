@@ -26,9 +26,7 @@ var dir_ccf361d41c2ac4e35aed62439097184c =
     [ "LOTablePhaseCorrection.cc", "_l_o_table_phase_correction_8cc.html", null ],
     [ "LsuController.cc", "_lsu_controller_8cc.html", null ],
     [ "MultiActuatorCoarseTuningAlgorithm.cc", "_multi_actuator_coarse_tuning_algorithm_8cc.html", null ],
-    [ "MziSignalSearchAlg.cc", "_mzi_signal_search_alg_8cc.html", [
-      [ "NewtonPoint", "struct_newton_point.html", "struct_newton_point" ]
-    ] ],
+    [ "MziSignalSearchAlg.cc", "_mzi_signal_search_alg_8cc.html", "_mzi_signal_search_alg_8cc" ],
     [ "OxcSignalCorrectionLaser.cc", "_oxc_signal_correction_laser_8cc.html", null ],
     [ "OxcSignalSearchLaser.cc", "_oxc_signal_search_laser_8cc.html", null ],
     [ "OxcSignalSearchLaserODL.cc", "_oxc_signal_search_laser_o_d_l_8cc.html", null ],

@@ -45,7 +45,7 @@ var hierarchy =
       [ "ChannelStatusWidget", "class_channel_status_widget.html", null ],
       [ "EmergencyControlWidget", "class_emergency_control_widget.html", null ]
     ] ],
-    [ "QMainWindow", null, [
+    [ "QtWidgets.QMainWindow", null, [
       [ "xport_pin_tester.MainWindow", "classxport__pin__tester_1_1_main_window.html", null ]
     ] ],
     [ "QWidget", null, [
@@ -57,7 +57,7 @@ var hierarchy =
       [ "XPortGpioClientTestSuite", "class_x_port_gpio_client_test_suite.html", null ],
       [ "XPortGpioDummyServerTestSuite", "class_x_port_gpio_dummy_server_test_suite.html", null ]
     ] ],
-    [ "TestCase", null, [
+    [ "unittest.TestCase", null, [
       [ "test_kmp.TestKMP", "classtest__kmp_1_1_test_k_m_p.html", null ]
     ] ],
     [ "TestCaseFixture", "struct_test_case_fixture.html", null ],

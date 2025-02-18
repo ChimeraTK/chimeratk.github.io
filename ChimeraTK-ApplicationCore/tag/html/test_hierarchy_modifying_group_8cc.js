@@ -1,11 +1,11 @@
 var test_hierarchy_modifying_group_8cc =
 [
-    [ "TestGroup", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_group.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_group" ],
-    [ "TestApplication", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application" ],
-    [ "TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module" ],
-    [ "ExtraHierarchy", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy" ],
-    [ "TestApplicationEmpty", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty" ],
-    [ "TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty_1_1_test_module.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty_1_1_test_module" ],
+    [ "Tests::testHierarchyModifyingGroup::TestGroup", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_group.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_group" ],
+    [ "Tests::testHierarchyModifyingGroup::TestApplication", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application" ],
+    [ "Tests::testHierarchyModifyingGroup::TestApplication::TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module" ],
+    [ "Tests::testHierarchyModifyingGroup::TestApplication::TestModule::ExtraHierarchy", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy" ],
+    [ "Tests::testHierarchyModifyingGroup::TestApplicationEmpty", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty" ],
+    [ "Tests::testHierarchyModifyingGroup::TestApplicationEmpty::TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty_1_1_test_module.html", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty_1_1_test_module" ],
     [ "BOOST_TEST_MODULE", "test_hierarchy_modifying_group_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#acf3d992c8659355ad89c2ecd39e7470a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a6d8ead50df81fd57fe3a8816f159c077", null ],

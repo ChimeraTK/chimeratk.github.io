@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['iterator_5ftraits_3c_20helper_5fiterator_20_3e_178',['iterator_traits&lt; helper_iterator &gt;',['../structstd_1_1iterator__traits_3_01helper__iterator_01_4.html',1,'std']]]
+  ['movabledatatype_0',['MovableDataType',['../struct_movable_data_type.html',1,'']]],
+  ['move_5fdata_1',['MOVE_DATA',['../classcppext_1_1_m_o_v_e___d_a_t_a.html',1,'cppext']]],
+  ['myexception_2',['MyException',['../class_my_exception.html',1,'']]]
 ];

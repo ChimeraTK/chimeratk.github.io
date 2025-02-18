@@ -1,9 +1,9 @@
 var classua__builtin__types_1_1opcua___builtin_type__localizedtext__t =
 [
-    [ "parseXML", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a0bdc512b40d7b53fbe272a9f9af9facb", null ],
-    [ "printOpen62541CCode_SubType", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a7adf45b967ce16e1a83ca0c497901154", null ],
-    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a4a984420063331f800be3bb1d64d797f", null ],
-    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#ac5aa04e614a8064f5c64465362971fdf", null ],
+    [ "parseXML", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a9656637d29118a758333e45c91148e08", null ],
+    [ "printOpen62541CCode_SubType", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a95b7cd9d14e6d64bdcaa1b0230b3fdb4", null ],
+    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a6086828e0e5aaf60b58c8c058f6a7e6b", null ],
+    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#a398633b6859bbfbbec458f2efa1e58ce", null ],
     [ "stringRepresentation", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#aeef60963e0a45eae92076fbd9710d935", null ],
     [ "value", "classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#af5e09afe14db1c4c8dd120f4e713beb2", null ]
 ];

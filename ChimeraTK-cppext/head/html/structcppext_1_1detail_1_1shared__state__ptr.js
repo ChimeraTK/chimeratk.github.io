@@ -7,8 +7,8 @@ var structcppext_1_1detail_1_1shared__state__ptr =
     [ "get", "structcppext_1_1detail_1_1shared__state__ptr.html#a3f11b4404bf0920d1ce3cb43d8b44a9a", null ],
     [ "make_new", "structcppext_1_1detail_1_1shared__state__ptr.html#a053d0086172e59adff7e058b8c8c01ee", null ],
     [ "operator bool", "structcppext_1_1detail_1_1shared__state__ptr.html#afe371869b060d3cd1bbd662c92df7ff3", null ],
-    [ "operator->", "structcppext_1_1detail_1_1shared__state__ptr.html#a0c5ea721311b2cf4468a2ff6d1eb86b9", null ],
-    [ "operator->", "structcppext_1_1detail_1_1shared__state__ptr.html#ad7331905cd7275fcfa4437e019be75a6", null ],
+    [ "operator->", "structcppext_1_1detail_1_1shared__state__ptr.html#a0c61097dce5a4b5d5da595931f76fe05", null ],
+    [ "operator->", "structcppext_1_1detail_1_1shared__state__ptr.html#a1d105fa02808dc1bf31a5349b1906a70", null ],
     [ "operator=", "structcppext_1_1detail_1_1shared__state__ptr.html#a3aec192c531787e3516d277843991736", null ],
     [ "operator==", "structcppext_1_1detail_1_1shared__state__ptr.html#ae9ad72577a596d7776e0162bda9e0df1", null ],
     [ "set", "structcppext_1_1detail_1_1shared__state__ptr.html#a480e9bb2e3289bcd5248786811d07ebc", null ]

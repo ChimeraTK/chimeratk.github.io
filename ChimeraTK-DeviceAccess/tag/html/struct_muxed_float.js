@@ -1,8 +1,8 @@
 var struct_muxed_float =
 [
     [ "minimumUserType", "struct_muxed_float.html#a3ce937f1af606116abe71cdd3fced7f3", null ],
-    [ "generateValue", "struct_muxed_float.html#a1381f71ba079affc5eeca114ac76a142", null ],
-    [ "getRemoteValue", "struct_muxed_float.html#adfac474fd5c5dfaff79870d246233a42", null ],
+    [ "generateValue", "struct_muxed_float.html#a55ee124a5af31456e418b2b3a9bdfed4", null ],
+    [ "getRemoteValue", "struct_muxed_float.html#afa07193a60d64bb2d09fc9bf64262eeb", null ],
     [ "isReadable", "struct_muxed_float.html#aa085f99f2ec66911b661f7d208c2a4c8", null ],
     [ "isWriteable", "struct_muxed_float.html#a670dca738f75a921273ad8e9cc92db8a", null ],
     [ "nChannels", "struct_muxed_float.html#ac2ed6e04aa27438dd498a964b2eaf6fe", null ],

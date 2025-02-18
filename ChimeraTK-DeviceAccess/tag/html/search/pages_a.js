@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['using_20and_20creating_20custom_20backends_5382',['Using and creating custom backends',['../custom_backends.html',1,'']]],
-  ['using_20push_2dtype_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_5383',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
+  ['list_0',['Todo List',['../todo.html',1,'']]],
+  ['logical_20name_20mapping_20backend_1',['Logical Name Mapping Backend',['../lmap.html',1,'']]]
 ];

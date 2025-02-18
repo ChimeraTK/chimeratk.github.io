@@ -1,6 +1,6 @@
 var classtest__kmp_1_1_test_k_m_p =
 [
-    [ "test_bytestream_in_chunks", "classtest__kmp_1_1_test_k_m_p.html#a5fe7edf1aff9118d3eeb665118b0f07b", null ],
-    [ "test_matcher_reset", "classtest__kmp_1_1_test_k_m_p.html#a1ef5c772921706a39a4bea7aa59bf81d", null ],
-    [ "test_whole_bytestream", "classtest__kmp_1_1_test_k_m_p.html#afe6c58167b8703cd02c9d711c50d1c6b", null ]
+    [ "test_bytestream_in_chunks", "classtest__kmp_1_1_test_k_m_p.html#a47942c4bff2d017e846160e30946441d", null ],
+    [ "test_matcher_reset", "classtest__kmp_1_1_test_k_m_p.html#a2ec028a7e24452f31ac9237f5ead6699", null ],
+    [ "test_whole_bytestream", "classtest__kmp_1_1_test_k_m_p.html#a9b98b0d18567aef6783b5eca2dd57808", null ]
 ];

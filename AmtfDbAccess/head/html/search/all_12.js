@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['_7eamtfdbcav_360',['~amtfDbCav',['../classamtf_db_cav.html#ae5ccce8e60e00b2cf39a1121a642764b',1,'amtfDbCav']]],
-  ['_7eamtfdbex_361',['~amtfDbEx',['../classamtf_db_ex.html#a4804bfca23a2e4fead0850411cad8d26',1,'amtfDbEx']]],
-  ['_7eamtfdbmod_362',['~amtfDbMod',['../classamtf_db_mod.html#a67e08c74e7252ecb45fe2c97dadc9137',1,'amtfDbMod']]],
-  ['_7eamtfdbnodataex_363',['~amtfDbNoDataEx',['../classamtf_db_no_data_ex.html#a815a91628e8e5dcb6c7481db7597e4cf',1,'amtfDbNoDataEx']]],
-  ['_7edbconnection_364',['~dbConnection',['../classdb_connection.html#ad6f6c0876349e3be86e426eaf5fde741',1,'dbConnection']]]
+  ['valid_0',['valid',['../classrdata.html#a4bd72b0f450da744abcf61eb6f91e94a',1,'rdata::valid()'],['../classrdata.html#afd5d6409571876e7dc4f59ab11cae6be',1,'rdata::valid(bool _isValid)'],['../classrdata_v.html#a66629a6196706265750cf023793c3f52',1,'rdataV::valid() const'],['../classrdata_v.html#a537ccb5fc825d0027989b707f044948c',1,'rdataV::valid(bool _isValid)']]],
+  ['value_1',['value',['../classamtf_db_cav_1_1test_results_1_1scalar_res.html#a127b278b925723aca14840541270e48a',1,'amtfDbCav::testResults::scalarRes']]],
+  ['vectorres_2',['vectorres',['../classamtf_db_cav_1_1test_results_1_1vector_res.html',1,'amtfDbCav::testResults::vectorRes'],['../classamtf_db_cav_1_1test_results_1_1vector_res.html#aa5fd02283257b72234d6b8b55ca022d8',1,'amtfDbCav::testResults::vectorRes::vectorRes(const std::string &amp;_name, const std::string _ox_eu, const std::string _oy_eu, const std::vector&lt; float &gt; &amp;_ox, const std::vector&lt; float &gt; &amp;_oy)'],['../classamtf_db_cav_1_1test_results_1_1vector_res.html#a51540f74ed0d2c5f43255e1f9547ea30',1,'amtfDbCav::testResults::vectorRes::vectorRes(const std::string &amp;_name, const std::string _ox_eu, const std::string _oy_eu, const amtfDbCav::testResults::vectorRes::axisTypeBase &amp;ox_type, const std::vector&lt; float &gt; &amp;_oy)'],['../classamtf_db_cav_1_1test_results_1_1vector_res.html#a97095ac85ab002bd6c9ff21f2fc2eb1a',1,'amtfDbCav::testResults::vectorRes::vectorRes(const std::string &amp;_name, const std::string _ox_eu, const std::string _oy_eu, const std::vector&lt; std::string &gt; &amp;_ox, const std::vector&lt; float &gt; &amp;_oy)']]],
+  ['via_20ubuntu_20help_20a_3',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['viewname_4',['viewName',['../classamtf_db_cav.html#a945f893ad209396287b863497dfd2c8f',1,'amtfDbCav']]]
 ];

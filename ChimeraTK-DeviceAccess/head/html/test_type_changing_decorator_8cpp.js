@@ -1,6 +1,6 @@
 var test_type_changing_decorator_8cpp =
 [
-    [ "Adder", "struct_adder.html", null ],
+    [ "Adder< T, IMPL_T >", "struct_adder.html", null ],
     [ "Adder< std::string, IMPL_T >", "struct_adder_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
     [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
     [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],

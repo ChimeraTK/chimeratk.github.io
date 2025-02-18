@@ -1,8 +1,8 @@
 var _slow_signal_feedback_8h =
 [
-    [ "MovingAverage", "class_moving_average.html", "class_moving_average" ],
+    [ "MovingAverage< T >", "class_moving_average.html", "class_moving_average" ],
     [ "RefSlowFeedbackCtrl", "class_ref_slow_feedback_ctrl.html", "class_ref_slow_feedback_ctrl" ],
-    [ "CtrlState", "struct_ref_slow_feedback_ctrl_1_1_ctrl_state.html", "struct_ref_slow_feedback_ctrl_1_1_ctrl_state" ],
+    [ "RefSlowFeedbackCtrl::CtrlState", "struct_ref_slow_feedback_ctrl_1_1_ctrl_state.html", "struct_ref_slow_feedback_ctrl_1_1_ctrl_state" ],
     [ "RefSlowFeedbackCtrlOdl", "class_ref_slow_feedback_ctrl_odl.html", "class_ref_slow_feedback_ctrl_odl" ],
     [ "RefSlowFeedbackCtrlRfShifter", "class_ref_slow_feedback_ctrl_rf_shifter.html", "class_ref_slow_feedback_ctrl_rf_shifter" ],
     [ "SlowSignalFeedback", "class_slow_signal_feedback.html", "class_slow_signal_feedback" ],

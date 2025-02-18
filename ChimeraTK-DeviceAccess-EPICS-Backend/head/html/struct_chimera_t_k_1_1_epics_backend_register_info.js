@@ -2,8 +2,8 @@ var struct_chimera_t_k_1_1_epics_backend_register_info =
 [
     [ "EpicsBackendRegisterInfo", "struct_chimera_t_k_1_1_epics_backend_register_info.html#aa28f99a6c3148e1c6b338fb5d2296163", null ],
     [ "EpicsBackendRegisterInfo", "struct_chimera_t_k_1_1_epics_backend_register_info.html#a0b2a8e8cdd5de393ba8e3a8a2dd9a036", null ],
-    [ "clone", "struct_chimera_t_k_1_1_epics_backend_register_info.html#a2adf7497675d4d677fbab67e9fc2a863", null ],
-    [ "getDataDescriptor", "struct_chimera_t_k_1_1_epics_backend_register_info.html#ae537bef3258823ec9f9e8d1aa3541833", null ],
+    [ "clone", "struct_chimera_t_k_1_1_epics_backend_register_info.html#ac167ee809654de4ea3c69fd9b907597c", null ],
+    [ "getDataDescriptor", "struct_chimera_t_k_1_1_epics_backend_register_info.html#ae8d2a5ca0e839f89db1ff7635299727c", null ],
     [ "getNumberOfChannels", "struct_chimera_t_k_1_1_epics_backend_register_info.html#a02df439ca1216808045e2861a230bc80", null ],
     [ "getNumberOfElements", "struct_chimera_t_k_1_1_epics_backend_register_info.html#aa7b9f507afdcc4b40344405e27e0527e", null ],
     [ "getRegisterName", "struct_chimera_t_k_1_1_epics_backend_register_info.html#a5ab3fdcce0583308ba930597b66214b6", null ],

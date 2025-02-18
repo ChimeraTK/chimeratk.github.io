@@ -2,9 +2,9 @@ var searchData=
 [
   ['_5faccessmodes_0',['_accessModes',['../struct_chimera_t_k_1_1_epics_backend_register_info.html#a062782f4ef2c271e6a65bf372272701f',1,'ChimeraTK::EpicsBackendRegisterInfo']]],
   ['_5faccessors_1',['_accessors',['../struct_chimera_t_k_1_1_channel_info.html#a8b9880015152302063062a16c1b7a84f',1,'ChimeraTK::ChannelInfo']]],
-  ['_5fasyncreadactivated_2',['_asyncReadActivated',['../class_chimera_t_k_1_1_epics_backend.html#a58849d05c93627a8a237aea13c596a41',1,'ChimeraTK::EpicsBackend::_asyncReadActivated()'],['../struct_chimera_t_k_1_1_channel_info.html#af4bd4251703f446b234917874a39b978',1,'ChimeraTK::ChannelInfo::_asyncReadActivated()']]],
+  ['_5fasyncreadactivated_2',['_asyncreadactivated',['../class_chimera_t_k_1_1_epics_backend.html#a58849d05c93627a8a237aea13c596a41',1,'ChimeraTK::EpicsBackend::_asyncReadActivated'],['../struct_chimera_t_k_1_1_channel_info.html#af4bd4251703f446b234917874a39b978',1,'ChimeraTK::ChannelInfo::_asyncReadActivated']]],
   ['_5fbackend_3',['_backend',['../class_chimera_t_k_1_1_epics_backend_register_accessor_base.html#a109daedf548ec6ec875b1b95107f9150',1,'ChimeraTK::EpicsBackendRegisterAccessorBase']]],
-  ['_5fcaname_4',['_caName',['../struct_chimera_t_k_1_1_channel_info.html#ab738a91116382d4afb183abc82a9ab75',1,'ChimeraTK::ChannelInfo::_caName()'],['../struct_chimera_t_k_1_1_epics_backend_register_info.html#a6094978c3774a06af760943b335fa91d',1,'ChimeraTK::EpicsBackendRegisterInfo::_caName()']]],
+  ['_5fcaname_4',['_caname',['../struct_chimera_t_k_1_1_channel_info.html#ab738a91116382d4afb183abc82a9ab75',1,'ChimeraTK::ChannelInfo::_caName'],['../struct_chimera_t_k_1_1_epics_backend_register_info.html#a6094978c3774a06af760943b335fa91d',1,'ChimeraTK::EpicsBackendRegisterInfo::_caName']]],
   ['_5fcatalogue_5fmutable_5',['_catalogue_mutable',['../class_chimera_t_k_1_1_epics_backend.html#ab7e3b8b9a546176a004abe7acfb196bc',1,'ChimeraTK::EpicsBackend']]],
   ['_5fchannelaccessup_6',['_channelAccessUp',['../class_chimera_t_k_1_1_epics_backend.html#ada73a7b4f01a359d9a05ab34447840cd',1,'ChimeraTK::EpicsBackend']]],
   ['_5fconfigured_7',['_configured',['../struct_chimera_t_k_1_1_channel_info.html#a8270b0c3ee8ab73cdc7532871d50c89b',1,'ChimeraTK::ChannelInfo']]],

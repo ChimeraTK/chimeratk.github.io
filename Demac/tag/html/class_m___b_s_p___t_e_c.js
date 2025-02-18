@@ -3,7 +3,7 @@ var class_m___b_s_p___t_e_c =
     [ "M_BSP_TEC", "class_m___b_s_p___t_e_c.html#acb0e9d4dc641e5c2946ce947eeb2d9b6", null ],
     [ "M_BSP_TEC", "class_m___b_s_p___t_e_c.html#a1d443690efe70ee53712f60cafdc41bc", null ],
     [ "~M_BSP_TEC", "class_m___b_s_p___t_e_c.html#a950ab8f76295f3174cd59dbbea72fa96", null ],
-    [ "getGeneralController", "class_m___b_s_p___t_e_c.html#a811f9571a1c92c12929dce4bd4cc7d47", null ],
+    [ "getGeneralController", "class_m___b_s_p___t_e_c.html#a59b70a8b2286cb8aeb20a1593e235e6a", null ],
     [ "getRunIsSeparateTheadFlag", "class_m___b_s_p___t_e_c.html#a5bf287cb8175e22021151c01c687cd72", null ],
     [ "initializeDeviceModule", "class_m___b_s_p___t_e_c.html#a4a5f45dd7913e9e69e6ee335b789e72e", null ],
     [ "initializeDeviceModule", "class_m___b_s_p___t_e_c.html#a29612d1753f56594da5ac2aa8464afa1", null ],

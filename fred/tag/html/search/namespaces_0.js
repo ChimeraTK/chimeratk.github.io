@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['boost_508',['boost',['../namespaceboost.html',1,'']]],
-  ['placeholders_509',['placeholders',['../namespaceboost_1_1placeholders.html',1,'boost']]]
+  ['boost_0',['boost',['../namespaceboost.html',1,'']]],
+  ['boost_3a_3aplaceholders_1',['placeholders',['../namespaceboost_1_1placeholders.html',1,'boost']]]
 ];

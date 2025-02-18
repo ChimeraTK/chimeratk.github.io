@@ -1,6 +1,6 @@
 var test_doocs_tools_8cpp =
 [
-    [ "TestEqFct", "struct_test_eq_fct.html", "struct_test_eq_fct" ],
+    [ "TestEqFct< DOOCS_T >", "struct_test_eq_fct.html", "struct_test_eq_fct" ],
     [ "BOOST_TEST_DYN_LINK", "test_doocs_tools_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_doocs_tools_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_tools_8cpp.html#aebeecf929ee20abfb545a16e111172d0", null ],

@@ -8,8 +8,8 @@ var class_accessor =
     [ "doPreWrite", "class_accessor.html#a6567308cb28d53ac65ec1991910677ec", null ],
     [ "doReadTransferSynchronously", "class_accessor.html#acbf10726507c6844fd91e8d75ef3a8f9", null ],
     [ "doWriteTransfer", "class_accessor.html#a7662ec675f7a71e070dbaa5c520b7385", null ],
-    [ "getHardwareAccessingElements", "class_accessor.html#a8e96650955649ed3b2d7b7d83621298e", null ],
-    [ "getInternalElements", "class_accessor.html#a0b641128e385f7dbf790121eaf34eda7", null ],
+    [ "getHardwareAccessingElements", "class_accessor.html#a73cecb0c5314c0bdf01b6b122a0b1fed", null ],
+    [ "getInternalElements", "class_accessor.html#aae7d8cdd5a02191b3f18273740c2996d", null ],
     [ "isReadable", "class_accessor.html#a0ec6ea3153b85d02190af9b4b34caaea", null ],
     [ "isReadOnly", "class_accessor.html#afd4ebfd150fd50aceba00cc5da9dce99", null ],
     [ "isWriteable", "class_accessor.html#ac74e71c2dfef6ccd498c2926f5f45c8a", null ]

@@ -1,6 +1,6 @@
 var _flags_8h =
 [
-    [ "VariableDirection", "struct_chimera_t_k_1_1_variable_direction.html", "struct_chimera_t_k_1_1_variable_direction" ],
+    [ "ChimeraTK::VariableDirection", "struct_chimera_t_k_1_1_variable_direction.html", "struct_chimera_t_k_1_1_variable_direction" ],
     [ "LifeCycleState", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72d", [
       [ "initialisation", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252", null ],
       [ "run", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6", null ],

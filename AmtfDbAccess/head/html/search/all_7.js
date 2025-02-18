@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['libamtfdbaccess_2eh_234',['libAmtfDbAccess.h',['../lib_amtf_db_access_8h.html',1,'']]]
+  ['help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_0',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_1',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['html_20via_20ubuntu_20help_20a_2',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_3',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]]
 ];

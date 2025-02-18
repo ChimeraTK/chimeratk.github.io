@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triggersource_2846',['triggerSource',['../class_doocs_helper.html#ad48bb0a2b71585edbac8aa2aca9c9584',1,'DoocsHelper']]]
+  ['triggersource_0',['triggerSource',['../class_doocs_helper.html#ad48bb0a2b71585edbac8aa2aca9c9584',1,'DoocsHelper']]]
 ];

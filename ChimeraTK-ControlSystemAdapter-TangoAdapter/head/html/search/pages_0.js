@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['chimeratk_2dcontrolsystemadapter_2dtangoadapter_507',['ChimeraTK-ControlSystemAdapter-TangoAdapter',['../index.html',1,'']]]
+  ['chimeratk_20controlsystemadapter_20tangoadapter_0',['ChimeraTK-ControlSystemAdapter-TangoAdapter',['../index.html',1,'']]],
+  ['controlsystemadapter_20tangoadapter_1',['ChimeraTK-ControlSystemAdapter-TangoAdapter',['../index.html',1,'']]]
 ];

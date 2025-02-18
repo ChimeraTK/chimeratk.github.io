@@ -2,7 +2,7 @@ var class_chimera_t_k_1_1_doocs_adapter =
 [
     [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html#a07438247086e6cfac3ccf66a33226899", null ],
     [ "beforeAutoInit", "class_chimera_t_k_1_1_doocs_adapter.html#a79d6b90f7b1bd337067ac37ccfe7164e", null ],
-    [ "getControlSystemPVManager", "class_chimera_t_k_1_1_doocs_adapter.html#a272045c785f7306548b3dff7b84f496b", null ],
+    [ "getControlSystemPVManager", "class_chimera_t_k_1_1_doocs_adapter.html#a11879c9f3cfed0e282a4085f7faf1f7e", null ],
     [ "getControlSystemPVManager", "class_chimera_t_k_1_1_doocs_adapter.html#a63f08e25bb5fe5f7752d6b77b72f9041", null ],
     [ "getDevicePVManager", "class_chimera_t_k_1_1_doocs_adapter.html#a396057c5005d59f33b94733e86b2948c", null ],
     [ "_before_auto_init_called", "class_chimera_t_k_1_1_doocs_adapter.html#a08a6569fe57182e680de9113dab04ac8", null ],

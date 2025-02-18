@@ -46,7 +46,7 @@ var hierarchy =
     ] ],
     [ "FFTCooleyTukeyAlgorithm", "class_f_f_t_cooley_tukey_algorithm.html", null ],
     [ "FMC20_LLL_CPS", "struct_f_m_c20___l_l_l___c_p_s.html", null ],
-    [ "GeneralStatus", null, [
+    [ "ChimeraTK::GeneralStatus", null, [
       [ "SMADetectHardLimitStatus", "class_s_m_a_detect_hard_limit_status.html", null ],
       [ "SMAError", "class_s_m_a_error.html", null ],
       [ "SMAStatus", "class_s_m_a_status.html", null ]
@@ -81,26 +81,26 @@ var hierarchy =
         [ "M_ENT_CtrlExcitationMemories", "class_m___e_n_t___ctrl_excitation_memories.html", null ],
         [ "M_ENT_DAQCtrlBase", "class_m___e_n_t___d_a_q_ctrl_base.html", [
           [ "M_RapidX_ENT_DAQCtrl", "class_m___rapid_x___e_n_t___d_a_q_ctrl.html", null ],
-          [ "M_VHDL_ENT_DAQ_AXI_Ctrl", "class_m___v_h_d_l___e_n_t___d_a_q___a_x_i___ctrl.html", null ],
-          [ "M_VHDL_ENT_DAQCtrl", "class_m___v_h_d_l___e_n_t___d_a_q_ctrl.html", null ]
+          [ "M_VHDL_ENT_DAQCtrl", "class_m___v_h_d_l___e_n_t___d_a_q_ctrl.html", null ],
+          [ "M_VHDL_ENT_DAQ_AXI_Ctrl", "class_m___v_h_d_l___e_n_t___d_a_q___a_x_i___ctrl.html", null ]
         ] ],
         [ "M_ENT_DiffInputStage", "class_m___e_n_t___diff_input_stage.html", [
           [ "M_RapidX_ENT_DcInputStage", "class_m___rapid_x___e_n_t___dc_input_stage.html", null ],
           [ "M_VHDL_ENT_DiffInputStage", "class_m___v_h_d_l___e_n_t___diff_input_stage.html", null ]
         ] ],
+        [ "M_ENT_FMC20LllCps", "class_m___e_n_t___f_m_c20_lll_cps.html", null ],
         [ "M_ENT_FirmwareProjectVersion", "class_m___e_n_t___firmware_project_version.html", null ],
         [ "M_ENT_FirmwareVersion", "class_m___e_n_t___firmware_version.html", null ],
-        [ "M_ENT_FMC20LllCps", "class_m___e_n_t___f_m_c20_lll_cps.html", null ],
         [ "M_ENT_IIRFilter", "class_m___e_n_t___i_i_r_filter.html", null ],
         [ "M_ENT_LowLatencyLinkHub", "class_m___e_n_t___low_latency_link_hub.html", null ],
         [ "M_ENT_LowLatencyLinks", "class_m___e_n_t___low_latency_links.html", null ],
         [ "M_ENT_Mlvds", "class_m___e_n_t___mlvds.html", null ],
-        [ "M_ENT_PiezoFeedback", "class_m___e_n_t___piezo_feedback.html", null ],
         [ "M_ENT_PZT4Adc", "class_m___e_n_t___p_z_t4_adc.html", [
           [ "M_ENT_PZT4Adc_V1", "class_m___e_n_t___p_z_t4_adc___v1.html", null ],
           [ "M_ENT_PZT4Adc_V2", "class_m___e_n_t___p_z_t4_adc___v2.html", null ]
         ] ],
         [ "M_ENT_PZT4Channel", "class_m___e_n_t___p_z_t4_channel.html", null ],
+        [ "M_ENT_PiezoFeedback", "class_m___e_n_t___piezo_feedback.html", null ],
         [ "M_ENT_Sis8300BspAdc", "class_m___e_n_t___sis8300_bsp_adc.html", null ],
         [ "M_ENT_Sis8300BspClocks", "class_m___e_n_t___sis8300_bsp_clocks.html", [
           [ "M_ENT_Sis8300L2BspClocks", "class_m___e_n_t___sis8300_l2_bsp_clocks.html", null ]
@@ -117,10 +117,10 @@ var hierarchy =
         [ "M_RapidX_ENT_AOffRms", "class_m___rapid_x___e_n_t___a_off_rms.html", null ],
         [ "M_RapidX_ENT_Common", "class_m___rapid_x___e_n_t___common.html", null ],
         [ "M_RapidX_ENT_DcSingleInputStage", "class_m___rapid_x___e_n_t___dc_single_input_stage.html", null ],
+        [ "M_RapidX_ENT_LO_Generator", "class_m___rapid_x___e_n_t___l_o___generator.html", null ],
         [ "M_RapidX_ENT_LllPzt4", "class_m___rapid_x___e_n_t___lll_pzt4.html", null ],
         [ "M_RapidX_ENT_LllPzt4Rx", "class_m___rapid_x___e_n_t___lll_pzt4_rx.html", null ],
         [ "M_RapidX_ENT_LllPzt4Tx", "class_m___rapid_x___e_n_t___lll_pzt4_tx.html", null ],
-        [ "M_RapidX_ENT_LO_Generator", "class_m___rapid_x___e_n_t___l_o___generator.html", null ],
         [ "M_RapidX_ENT_LsuInputStage", "class_m___rapid_x___e_n_t___lsu_input_stage.html", null ],
         [ "M_RapidX_ENT_PhaseDetection", "class_m___rapid_x___e_n_t___phase_detection.html", [
           [ "M_RapidX_ENT_PhaseDetection_Adv", "class_m___rapid_x___e_n_t___phase_detection___adv.html", null ]

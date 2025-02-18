@@ -1,7 +1,7 @@
 var test_dummy_backend_8cpp =
 [
     [ "TestableDummyBackend", "class_testable_dummy_backend.html", "class_testable_dummy_backend" ],
-    [ "BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", "class_testable_dummy_backend_1_1_backend_registerer" ],
+    [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", "class_testable_dummy_backend_1_1_backend_registerer" ],
     [ "Fixture_t", "class_fixture__t.html", "class_fixture__t" ],
     [ "BOOST_NO_EXCEPTIONS", "test_dummy_backend_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_DYN_LINK", "test_dummy_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],

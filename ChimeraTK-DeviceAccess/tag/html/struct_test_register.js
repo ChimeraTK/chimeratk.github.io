@@ -2,8 +2,8 @@ var struct_test_register =
 [
     [ "minimumUserType", "struct_test_register.html#a2165754973b98dbae2ddd0d5dec1c47e", null ],
     [ "rawUserType", "struct_test_register.html#a841f7ed1056c2dc425407a9e2fd6e13a", null ],
-    [ "generateValue", "struct_test_register.html#a06472857f4242d3913b85dec553890df", null ],
-    [ "getRemoteValue", "struct_test_register.html#aa53f3a33ddde296cba0824fd910ac953", null ],
+    [ "generateValue", "struct_test_register.html#ab4621cc1a6f0970b1f7380b43dd7db84", null ],
+    [ "getRemoteValue", "struct_test_register.html#a71653396651872bb0b0d54bd8a5fc017", null ],
     [ "isReadable", "struct_test_register.html#ae3b7207b3898734ec0820625e8c72b3b", null ],
     [ "isWriteable", "struct_test_register.html#afa2869a74b59ba4a36d4de2f6ff96365", null ],
     [ "nChannels", "struct_test_register.html#a44a59bef1e1b78b3b678a8b728621701", null ],

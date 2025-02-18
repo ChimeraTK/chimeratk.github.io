@@ -1,7 +1,7 @@
 var _doocs_bloat_8h =
 [
     [ "eq_cancel", "_doocs_bloat_8h.html#a4cdd43f1c4ee22133a32375c86d963a1", null ],
-    [ "eq_create", "_doocs_bloat_8h.html#a33d9495dd3deba4dc752f877e2cd4d67", null ],
+    [ "eq_create", "_doocs_bloat_8h.html#a2dce3b55e23b506b1fde7231c2008f9a", null ],
     [ "eq_init_epilog", "_doocs_bloat_8h.html#ad68cb7b6f77871fee00b0abf4c3c57cf", null ],
     [ "eq_init_prolog", "_doocs_bloat_8h.html#aba8ed0ede8e0e7f4df47c03b39e484ac", null ],
     [ "interrupt_usr1_epilog", "_doocs_bloat_8h.html#af20c61d0fcfd8848be67e1ecb1810123", null ],

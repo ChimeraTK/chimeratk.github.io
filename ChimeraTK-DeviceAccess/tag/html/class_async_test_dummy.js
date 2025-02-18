@@ -4,7 +4,7 @@ var class_async_test_dummy =
     [ "AsyncTestDummy", "class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15", null ],
     [ "close", "class_async_test_dummy.html#a5d3832c36a317468c7d0e5f73e1da4be", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_async_test_dummy.html#a0dfe9b45d36ef38b2f7954bee736cdb9", null ],
-    [ "getRegisterAccessor_impl", "class_async_test_dummy.html#a0478a401f99a1ded2b976fed0adfdd9b", null ],
+    [ "getRegisterAccessor_impl", "class_async_test_dummy.html#a5eae4a4c635d3e8b944ba58890fd6f54", null ],
     [ "getRegisterCatalogue", "class_async_test_dummy.html#a035e3c398b88401c1386d070c3d4e804", null ],
     [ "open", "class_async_test_dummy.html#a4b8f0b0fc0ecd3808369403b687fca5f", null ],
     [ "readDeviceInfo", "class_async_test_dummy.html#ab5eec23df8c5bbea58f4e1a77a9c9b06", null ],

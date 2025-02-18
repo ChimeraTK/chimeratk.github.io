@@ -1,6 +1,6 @@
 var test_p_v_manager_8cpp =
 [
-    [ "ThreadedPvManagerHolder", "struct_threaded_pv_manager_holder.html", "struct_threaded_pv_manager_holder" ],
+    [ "ThreadedPvManagerHolder< CALLABLE >", "struct_threaded_pv_manager_holder.html", "struct_threaded_pv_manager_holder" ],
     [ "TestDeviceCallable", "struct_test_device_callable.html", "struct_test_device_callable" ],
     [ "TestDeviceCallable2", "struct_test_device_callable2.html", "struct_test_device_callable2" ],
     [ "TestDeviceCallable4", "struct_test_device_callable4.html", "struct_test_device_callable4" ],
@@ -14,7 +14,7 @@ var test_p_v_manager_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_p_v_manager_8cpp.html#a2c1573d1eced1abf298a6513bf53cdd3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_p_v_manager_8cpp.html#ab593014b72036a309cafccaa85770f80", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_p_v_manager_8cpp.html#a3e7157c827ff8c19a4cd2591cb03e3fe", null ],
-    [ "initTestDeviceLib", "test_p_v_manager_8cpp.html#a8d90a573312e95a69de480f488e4a630", null ],
-    [ "initTestDeviceLib2", "test_p_v_manager_8cpp.html#ae8d69bbda7f221a53eab5eb9bf049736", null ],
-    [ "initTestDeviceLib5", "test_p_v_manager_8cpp.html#a304df6996277aee70e550e87f0e0a200", null ]
+    [ "initTestDeviceLib", "test_p_v_manager_8cpp.html#a3970888a5a0352a5e81d65340a156cd4", null ],
+    [ "initTestDeviceLib2", "test_p_v_manager_8cpp.html#ab6210e5f954ed31614826efccbfcab9a", null ],
+    [ "initTestDeviceLib5", "test_p_v_manager_8cpp.html#a1e6b0018a3710df988414c2795499cfe", null ]
 ];

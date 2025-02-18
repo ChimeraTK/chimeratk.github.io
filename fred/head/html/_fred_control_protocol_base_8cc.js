@@ -1,6 +1,6 @@
 var _fred_control_protocol_base_8cc =
 [
-    [ "FilteredResponse", "structfred_1_1_filtered_response.html", "structfred_1_1_filtered_response" ],
+    [ "fred::FilteredResponse", "structfred_1_1_filtered_response.html", "structfred_1_1_filtered_response" ],
     [ "CircularBuffer", "_fred_control_protocol_base_8cc.html#a5057c6caa2dc8f87606e7add291b585b", null ],
     [ "LineType", "_fred_control_protocol_base_8cc.html#ab231cc9aa9fa628ddf38db7d8971c3a9", [
       [ "EMPTY", "_fred_control_protocol_base_8cc.html#ab231cc9aa9fa628ddf38db7d8971c3a9aba2b45bdc11e2a4a6e86aab2ac693cbb", null ],

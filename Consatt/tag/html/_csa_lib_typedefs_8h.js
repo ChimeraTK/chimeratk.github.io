@@ -1,6 +1,6 @@
 var _csa_lib_typedefs_8h =
 [
-    [ "ThreadSafeData", "class_thread_safe_data.html", "class_thread_safe_data" ],
+    [ "ThreadSafeData< T >", "class_thread_safe_data.html", "class_thread_safe_data" ],
     [ "ThreadSafeString", "class_thread_safe_string.html", null ],
     [ "ThreadSafeStatus", "class_thread_safe_status.html", "class_thread_safe_status" ],
     [ "THREAD_SAFE_STATUS_CLASS", "_csa_lib_typedefs_8h.html#af30555579e4203ff2c7f425988d30c71", null ],

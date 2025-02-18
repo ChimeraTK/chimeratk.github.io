@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_doocs_spectrum =
 [
-    [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html#afd93f956498a041d5dcef1dbe58fd56d", null ],
-    [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html#a5a23adca568996fa88ef41466f10b95f", null ],
+    [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html#aa1084830473ed5397f4dd24cda18e090", null ],
+    [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html#a9a08ebed7bc067c1431a18e46decc9f4", null ],
     [ "addParameterAccessors", "class_chimera_t_k_1_1_doocs_spectrum.html#a7104a8a71f761debaa3839dd43b1c7c7", null ],
     [ "auto_init", "class_chimera_t_k_1_1_doocs_spectrum.html#ab3b7bd702de8fe226b7659c419755a13", null ],
     [ "sendToDevice", "class_chimera_t_k_1_1_doocs_spectrum.html#ae5eb8cc34d17f90b3556de8422f1af6d", null ],

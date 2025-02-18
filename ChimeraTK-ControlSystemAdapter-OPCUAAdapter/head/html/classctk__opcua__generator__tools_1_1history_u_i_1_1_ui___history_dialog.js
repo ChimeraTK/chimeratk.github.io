@@ -1,7 +1,7 @@
 var classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog =
 [
-    [ "retranslateUi", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#a9b7f8ef90b6f83e5b8f4a3b2854151c5", null ],
-    [ "setupUi", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#aad092d2eb95ce9f5e62ea624375724ce", null ],
+    [ "retranslateUi", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#a975ff4a1af316b41f26bb6455724a719", null ],
+    [ "setupUi", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#afde67f279b739bd902e02ebc471b8513", null ],
     [ "bufferLength", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#a7aabb5afe597392d612accf27205f2fd", null ],
     [ "buttonBox", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#a1444061805169bc426d09c48cbdf3672", null ],
     [ "entriesPerResponse", "classctk__opcua__generator__tools_1_1history_u_i_1_1_ui___history_dialog.html#a1dc3fd7fb2e8cb56d0fe7fc6747fd450", null ],

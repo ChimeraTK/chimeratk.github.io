@@ -1,4 +1,4 @@
 var _adapter_device_class_8cpp =
 [
-    [ "_create_AdapterDeviceImpl_class", "_adapter_device_class_8cpp.html#ae46fd5399eac3eac7adaed6490e150bf", null ]
+    [ "_create_AdapterDeviceImpl_class", "_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9", null ]
 ];

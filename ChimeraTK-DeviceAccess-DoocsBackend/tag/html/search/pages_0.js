@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['cachefile_20mechanism_572',['CacheFile Mechanism',['../cache_file.html',1,'']]],
-  ['chimeratk_2ddeviceaccess_2ddoocsbackend_573',['ChimeraTK-DeviceAccess-DoocsBackend',['../index.html',1,'']]]
+  ['0wip_0',['Technical specification: DeviceAccess DoocsBackend V0.0WIP',['../spec__doocs_backend.html',1,'']]]
 ];

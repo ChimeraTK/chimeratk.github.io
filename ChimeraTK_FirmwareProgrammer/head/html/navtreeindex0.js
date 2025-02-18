@@ -163,8 +163,8 @@ var NAVTREEINDEX0 =
 "class_progress_bar.html#a82baf37f99231a05286c91e4908dfe0b":[1,0,9,0],
 "class_x_s_v_f_player.html":[1,0,12],
 "class_x_s_v_f_player.html#a1c856695937715d59ad76c0a3f6acd5a":[1,0,12,0],
-"class_x_s_v_f_player.html#a3406fee73895fce84a9ec2d09a577e14":[1,0,12,3],
 "class_x_s_v_f_player.html#a5d938bc9489838d9379ca97373e1a06b":[1,0,12,4],
+"class_x_s_v_f_player.html#a6525699740576676bca070422fc2f3ea":[1,0,12,3],
 "class_x_s_v_f_player.html#a9594017ef61a67a289557fc1e5e44b4b":[1,0,12,1],
 "class_x_s_v_f_player.html#aa49facec115f4156846e286c94358c4d":[1,0,12,2],
 "class_x_s_v_f_player_interface.html":[1,0,13],
@@ -181,8 +181,8 @@ var NAVTREEINDEX0 =
 "dir_aafc6c186da6de0876376e7985498083.html":[2,0,0,0,0],
 "files.html":[2,0],
 "fix-linter-for-all_8py.html":[2,0,0,0,0,0],
-"fix-linter-for-all_8py.html#ab0cc65b5b365ba7a7276a416538b5371":[2,0,0,0,0,0,0],
-"fix-linter-for-all_8py.html#ac1509b919b6fe45c78b024a9b055c475":[2,0,0,0,0,0,1],
+"fix-linter-for-all_8py.html#a6a7d32698d0a26e1154b3d58b567662e":[2,0,0,0,0,0,1],
+"fix-linter-for-all_8py.html#ae54728cb38a5ed3acc46eb7d05f10c3d":[2,0,0,0,0,0,0],
 "fix-linter-for-all_8py_source.html":[2,0,0,0,0,0],
 "functions.html":[1,3,0],
 "functions_enum.html":[1,3,3],
@@ -223,6 +223,8 @@ var NAVTREEINDEX0 =
 "main_8cpp.html#a98b0bbbffd908569d7e10c09f5d2d3c7":[2,0,0,0,2,1,3],
 "main_8cpp_source.html":[2,0,0,0,2,1],
 "namespacefix-linter-for-all.html":[0,0,0],
+"namespacefix-linter-for-all.html#a6a7d32698d0a26e1154b3d58b567662e":[0,0,0,1],
+"namespacefix-linter-for-all.html#ae54728cb38a5ed3acc46eb7d05f10c3d":[0,0,0,0],
 "namespacemembers.html":[0,1,0],
 "namespacemembers_func.html":[0,1,1],
 "namespaces.html":[0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "registers_8h.html#a4cd7b28563be4053aea69a5eba339a58":[2,0,0,0,1,5,29],
 "registers_8h.html#a5ffd374a04548fcc69d5a0802bb7d223":[2,0,0,0,1,5,9],
 "registers_8h.html#a667e51f879915ee72bd1b55a33448d1d":[2,0,0,0,1,5,1],
-"registers_8h.html#a795320fb5aae950b22d29686eb75020a":[2,0,0,0,1,5,18],
-"registers_8h.html#a7955819d09961462b0965e63dc68b0ef":[2,0,0,0,1,5,10],
-"registers_8h.html#a7df61fa3020e010c8ac3956f1a5eead0":[2,0,0,0,1,5,5]
+"registers_8h.html#a795320fb5aae950b22d29686eb75020a":[2,0,0,0,1,5,18]
 };

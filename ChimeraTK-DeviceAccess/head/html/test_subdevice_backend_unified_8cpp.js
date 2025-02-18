@@ -1,8 +1,8 @@
 var test_subdevice_backend_unified_8cpp =
 [
-    [ "AreaType", "struct_area_type.html", "struct_area_type" ],
+    [ "AreaType< Register >", "struct_area_type.html", "struct_area_type" ],
     [ "StaticCore", "struct_static_core.html", "struct_static_core" ],
-    [ "Regs3Type", "struct_regs3_type.html", "struct_regs3_type" ],
+    [ "Regs3Type< Register >", "struct_regs3_type.html", "struct_regs3_type" ],
     [ "MyRegister1", "struct_my_register1.html", "struct_my_register1" ],
     [ "MyArea1", "struct_my_area1.html", "struct_my_area1" ],
     [ "MuxedArea1", "struct_muxed_area1.html", "struct_muxed_area1" ],

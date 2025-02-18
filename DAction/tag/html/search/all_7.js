@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['get_137',['get',['../class_d__fctarray_extended.html#a0dc6425e7674700c9ad1664206e41fd4',1,'D_fctarrayExtended::get()'],['../class_d__fct_extended.html#a8a0cbe255921a0b0ea2d888f44b609c6',1,'D_fctExtended::get()'],['../class_d___std_string_extended.html#ab9cf90646cdf4494b3d745a791033303',1,'D_StdStringExtended::get()'],['../class_d_action_1_1_task_output_data_buffer.html#ac4c9b58d7df9e8c21a99d6ea334a5389',1,'DAction::TaskOutputDataBuffer::get()']]],
-  ['getdevice_138',['getDevice',['../class_device_provider.html#ab0514beefa83f57947df8e32526bf495',1,'DeviceProvider']]],
-  ['getnumberofelements_139',['getNumberOfElements',['../class_d_action_1_1_register_accessor.html#a67974d474ac6e6f0bd919c2d8553fbe8',1,'DAction::RegisterAccessor']]],
-  ['getregisterinfo_140',['getRegisterInfo',['../class_d_action_1_1_register_accessor.html#ab4d47d7b33b3433045e946316bd28ad9',1,'DAction::RegisterAccessor']]]
+  ['d_5ffct_20extensions_0',['Using D_fct extensions',['../examples.html#dfctextended',1,'']]],
+  ['d_5ffctarrayextended_1',['d_fctarrayextended',['../class_d__fctarray_extended.html',1,'D_fctarrayExtended&lt; D_type, basicType &gt;'],['../class_d__fctarray_extended.html#a652aec4137133c98374bfbd166611dcc',1,'D_fctarrayExtended::D_fctarrayExtended()']]],
+  ['d_5ffctarrayextended_2eh_2',['D_fctarrayExtended.h',['../_d__fctarray_extended_8h.html',1,'']]],
+  ['d_5ffctextended_3',['d_fctextended',['../class_d__fct_extended.html',1,'D_fctExtended&lt; D_type, basicType, asyncOnGet, ActionType &gt;'],['../class_d__fct_extended.html#a6f31db611bc607d887d7a1988dfdfb4b',1,'D_fctExtended::D_fctExtended(EqFct *ef, const char *pn, LimiterRawPtr limiter=NULL, ActionRawPtr action=NULL)'],['../class_d__fct_extended.html#ad0e2199ea34b76c3fa486462e594643f',1,'D_fctExtended::D_fctExtended(const char *pn, EqFct *ef, LimiterRawPtr limiter=NULL, ActionRawPtr action=NULL)']]],
+  ['d_5ffctextended_2eh_4',['D_fctExtended.h',['../_d__fct_extended_8h.html',1,'']]],
+  ['d_5fstdstringextended_5',['d_stdstringextended',['../class_d___std_string_extended.html#a008b13921a2c5f4920491a650f23703b',1,'D_StdStringExtended::D_StdStringExtended(const char *pn, EqFct *ef, LimiterRawPtr limiter=NULL, ActionRawPtr action=NULL)'],['../class_d___std_string_extended.html#a494c64bc9f441c0e2a19b842939f3ba4',1,'D_StdStringExtended::D_StdStringExtended(EqFct *ef, const char *pn, LimiterRawPtr limiter=NULL, ActionRawPtr action=NULL)'],['../class_d___std_string_extended.html',1,'D_StdStringExtended&lt; asyncOnGet &gt;']]],
+  ['d_5fstdstringextended_2eh_6',['D_StdStringExtended.h',['../_d___std_string_extended_8h.html',1,'']]],
+  ['d_5fxextended_20classes_7',['Changing D_XExtended classes',['../migration.html#dfctmigration',1,'']]],
+  ['daction_8',['DAction',['../namespace_d_action.html',1,'']]],
+  ['daction_201_200_201_204_20to_20daction2_20guide_9',['Migration from DAction 1.0-1.4 to DAction2 guide',['../migration.html',1,'']]],
+  ['daction2_20guide_10',['Migration from DAction 1.0-1.4 to DAction2 guide',['../migration.html',1,'']]],
+  ['databuffer_11',['databuffer',['../structfixture___action_task_access.html#a76f4e69461856c919aa730c95dbc820d',1,'fixture_ActionTaskAccess::dataBuffer'],['../structfixture___task_device.html#ae9dc82d62e75a8435c49204e28669223',1,'fixture_TaskDevice::dataBuffer']]],
+  ['defaultconvertfrom_12',['defaultconvertfrom',['../class_action_device_access.html#a680170cf7ca3dce2bc2f2b320dc06647',1,'ActionDeviceAccess::defaultConvertFrom()'],['../namespace_converter.html#a44e688172a05443b831817e5d59bde94',1,'Converter::defaultConvertFrom()'],['../class_action_device_access.html#a4b63afd3ebb3fb8c1f8e3547b2057775',1,'ActionDeviceAccess::defaultConvertFrom(int value)']]],
+  ['defaultconvertto_13',['defaultconvertto',['../class_action_device_access.html#aa40d09d9378b68f83fa44f01f68fea78',1,'ActionDeviceAccess::defaultConvertTo()'],['../namespace_converter.html#a39ec4a17ad9b046596a20d0ac4256758',1,'Converter::defaultConvertTo()']]],
+  ['derivative_20class_14',['Writing your own ActionBase derivative class',['../examples.html#actionwriting',1,'']]],
+  ['description_15',['Description',['../description.html',1,'']]],
+  ['descritpion_2edox_16',['descritpion.dox',['../descritpion_8dox.html',1,'']]],
+  ['determinevaluetype_17',['determineValueType',['../class_d_action_1_1_task_queue.html#a5552c040b632ed82fead764037f457fe',1,'DAction::TaskQueue']]],
+  ['device_18',['device',['../structfixture___task_device.html#abde0c50c1e057544dae17743a9027484',1,'fixture_TaskDevice']]],
+  ['deviceprovider_19',['deviceprovider',['../class_device_provider.html',1,'DeviceProvider'],['../class_device_provider.html#a092efe8930ed05deb50b1bb5a8d161de',1,'DeviceProvider::DeviceProvider()']]],
+  ['deviceprovider_2ecc_20',['DeviceProvider.cc',['../_device_provider_8cc.html',1,'']]],
+  ['deviceprovider_2eh_21',['DeviceProvider.h',['../_device_provider_8h.html',1,'']]],
+  ['doocsbloat_2eh_22',['DoocsBloat.h',['../_doocs_bloat_8h.html',1,'']]],
+  ['doocstools_23',['DoocsTools',['../namespace_doocs_tools.html',1,'']]],
+  ['doocstools_2eh_24',['DoocsTools.h',['../_doocs_tools_8h.html',1,'']]]
 ];

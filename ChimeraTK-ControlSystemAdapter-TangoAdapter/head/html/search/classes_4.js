@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nullconfiguration_257',['NullConfiguration',['../struct_null_configuration.html',1,'']]]
+  ['nullconfiguration_0',['NullConfiguration',['../struct_null_configuration.html',1,'']]]
 ];

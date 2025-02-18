@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dbconnection_384',['dbConnection',['../classdb_connection.html',1,'']]]
+  ['dbconnection_0',['dbConnection',['../classdb_connection.html',1,'']]]
 ];

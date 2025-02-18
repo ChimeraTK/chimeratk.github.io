@@ -1,13 +1,13 @@
 var test_async_var_and_hierarchical_interrupts_unified_8cpp =
 [
     [ "DummyForCleanupCheck", "struct_dummy_for_cleanup_check.html", "struct_dummy_for_cleanup_check" ],
-    [ "BackendRegisterer", "struct_dummy_for_cleanup_check_1_1_backend_registerer.html", "struct_dummy_for_cleanup_check_1_1_backend_registerer" ],
-    [ "TriggeredInt", "struct_triggered_int.html", "struct_triggered_int" ],
+    [ "DummyForCleanupCheck::BackendRegisterer", "struct_dummy_for_cleanup_check_1_1_backend_registerer.html", "struct_dummy_for_cleanup_check_1_1_backend_registerer" ],
+    [ "TriggeredInt< WITHPATH, INTERRUPT >", "struct_triggered_int.html", "struct_triggered_int" ],
     [ "datafrom6", "structdatafrom6.html", null ],
     [ "datafrom5_9", "structdatafrom5__9.html", null ],
     [ "datafrom4_8_2", "structdatafrom4__8__2.html", "structdatafrom4__8__2" ],
     [ "datafrom4_8_3", "structdatafrom4__8__3.html", "structdatafrom4__8__3" ],
-    [ "BoolAsVoid", "struct_bool_as_void.html", "struct_bool_as_void" ],
+    [ "BoolAsVoid< WITHPATH, INTERRUPT >", "struct_bool_as_void.html", "struct_bool_as_void" ],
     [ "interrupt6", "structinterrupt6.html", "structinterrupt6" ],
     [ "canonicalInterrupt6", "structcanonical_interrupt6.html", "structcanonical_interrupt6" ],
     [ "interrupt5_9", "structinterrupt5__9.html", null ],

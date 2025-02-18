@@ -13,6 +13,6 @@ var class_chimera_t_k_1_1_backend_factory =
     [ "_existingBackends", "class_chimera_t_k_1_1_backend_factory.html#a3c5de0373da3d756e49e97ea9dc22d8d", null ],
     [ "_mutex", "class_chimera_t_k_1_1_backend_factory.html#a29d40e9befe5fb2c33df2d7c0558fee5", null ],
     [ "called_registerBackendType", "class_chimera_t_k_1_1_backend_factory.html#aa75990b6944f9e6bb5bb4d50a1aab723", null ],
-    [ "creatorMap", "class_chimera_t_k_1_1_backend_factory.html#ac6f2809b16bc6fac6572e2104e5d99d7", null ],
-    [ "creatorMap_compat", "class_chimera_t_k_1_1_backend_factory.html#a15b24b38de6528dc74626fc8f1a6501b", null ]
+    [ "creatorMap", "class_chimera_t_k_1_1_backend_factory.html#af49f58dd10c2ee2fdbdadddc79b2736e", null ],
+    [ "creatorMap_compat", "class_chimera_t_k_1_1_backend_factory.html#abae62568b9a7d6d46556cdcaa7adfc90", null ]
 ];

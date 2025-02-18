@@ -29,7 +29,7 @@ var classfred_1_1_fred_control_protocol_base =
     [ "readFPGAstatus", "classfred_1_1_fred_control_protocol_base.html#a1c41b4dbed2277df45305d8d7f5da556", null ],
     [ "readOperationMode", "classfred_1_1_fred_control_protocol_base.html#aa5ad824947f804bbb69a105dd8505362", null ],
     [ "readPowerMasks", "classfred_1_1_fred_control_protocol_base.html#abc261a5c1ecda5c78d8104ea34b4f9fd", null ],
-    [ "readTmcbPinVoltages", "classfred_1_1_fred_control_protocol_base.html#abc6c2d6e0461e5f1702dacdc918ced8b", null ],
+    [ "readTmcbPinVoltages", "classfred_1_1_fred_control_protocol_base.html#a7b2f4d6867c63802606460b86e7c243b", null ],
     [ "readUptime", "classfred_1_1_fred_control_protocol_base.html#a1f00cf6d4ed22d6d7204969b3634c92e", null ],
     [ "readWarningMessages", "classfred_1_1_fred_control_protocol_base.html#a14a0178e9e4b905b1a8617aa0725d2b8", null ],
     [ "readXPWatchdogInfo", "classfred_1_1_fred_control_protocol_base.html#a1c65ff3f33318f47805f0d68e83b1ee9", null ],

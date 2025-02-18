@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oppstatus_719',['OppStatus',['../class_opp_status.html',1,'']]]
+  ['oppstatus_0',['OppStatus',['../class_opp_status.html',1,'']]]
 ];

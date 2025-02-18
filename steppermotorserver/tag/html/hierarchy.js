@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "Application", null, [
+    [ "ChimeraTK::Application", null, [
       [ "StepperMotorServer", "struct_stepper_motor_server.html", null ]
     ] ],
-    [ "ApplicationModule", null, [
+    [ "ChimeraTK::ApplicationModule", null, [
       [ "MotorDummy", "struct_motor_dummy.html", null ]
     ] ]
 ];

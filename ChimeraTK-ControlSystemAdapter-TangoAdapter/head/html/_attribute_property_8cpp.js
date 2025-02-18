@@ -1,5 +1,5 @@
 var _attribute_property_8cpp =
 [
-    [ "toScalarTangoAttribute", "_attribute_property_8cpp.html#a45ea01c440fcee6d68663dc12f74f35d", null ],
-    [ "toSpectrumTangoAttribute", "_attribute_property_8cpp.html#a39a2f151400f9dd9da74c9d963b2d7cc", null ]
+    [ "toScalarTangoAttribute", "_attribute_property_8cpp.html#a933f5adac6bef42cd82ceace2767fab4", null ],
+    [ "toSpectrumTangoAttribute", "_attribute_property_8cpp.html#ad6a26029f4abee4a0d1e43ce333cb88f", null ]
 ];

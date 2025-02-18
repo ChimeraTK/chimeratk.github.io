@@ -13,5 +13,16 @@ var namespace_tests_1_1test_test_facilities =
     [ "TestPollingApplication", "struct_tests_1_1test_test_facilities_1_1_test_polling_application.html", "struct_tests_1_1test_test_facilities_1_1_test_polling_application" ],
     [ "TestPollingThroughFanOutsApplication", "struct_tests_1_1test_test_facilities_1_1_test_polling_through_fan_outs_application.html", "struct_tests_1_1test_test_facilities_1_1_test_polling_through_fan_outs_application" ],
     [ "TestReadAnyApplication", "struct_tests_1_1test_test_facilities_1_1_test_read_any_application.html", "struct_tests_1_1test_test_facilities_1_1_test_read_any_application" ],
-    [ "TestWithTriggerApplication", "struct_tests_1_1test_test_facilities_1_1_test_with_trigger_application.html", "struct_tests_1_1test_test_facilities_1_1_test_with_trigger_application" ]
+    [ "TestWithTriggerApplication", "struct_tests_1_1test_test_facilities_1_1_test_with_trigger_application.html", "struct_tests_1_1test_test_facilities_1_1_test_with_trigger_application" ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#ae00fde76d2e11629a6a12867be0dfbb6", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#a729e09b931485ef82c3b6078a7416ef3", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#a88bc6fba005cb0b8c5c4fe8d7c048bf3", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#ab45201de4b886097f6230070b765adb9", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#a87551d7e6711ee863473744ca072712e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#a9ad27cdaf82e0865f8fd851030d9af13", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#a2eec5e9147c99276ab484793745c4b60", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#a55d8372fcaa66b1555980a1646547ad2", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#ad71ef7497125ae0928eff307608ac2ed", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_test_facilities.html#af91a25da58f637039acfda9ef0849b71", null ],
+    [ "dummySdm", "namespace_tests_1_1test_test_facilities.html#aa8d48086bc612d4905b12252c487ac84", null ]
 ];

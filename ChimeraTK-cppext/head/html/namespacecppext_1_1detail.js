@@ -17,5 +17,11 @@ var namespacecppext_1_1detail =
     [ "shared_state_base", "structcppext_1_1detail_1_1shared__state__base.html", "structcppext_1_1detail_1_1shared__state__base" ],
     [ "shared_state_ptr", "structcppext_1_1detail_1_1shared__state__ptr.html", "structcppext_1_1detail_1_1shared__state__ptr" ],
     [ "TerminateInternalThread", "classcppext_1_1detail_1_1_terminate_internal_thread.html", null ],
-    [ "when_any_notification_info", "structcppext_1_1detail_1_1when__any__notification__info.html", "structcppext_1_1detail_1_1when__any__notification__info" ]
+    [ "when_any_notification_info", "structcppext_1_1detail_1_1when__any__notification__info.html", "structcppext_1_1detail_1_1when__any__notification__info" ],
+    [ "data_assign", "namespacecppext_1_1detail.html#a7cae409d396447cb8fb49fbaa7d511e4", null ],
+    [ "data_assign", "namespacecppext_1_1detail.html#a7cc12bb27f3631a8cc775fd66293644b", null ],
+    [ "make_continuation_process_async", "namespacecppext_1_1detail.html#a157d1b51d0ad71b0158b3fa3c6c7b6c0", null ],
+    [ "make_continuation_process_deferred", "namespacecppext_1_1detail.html#a49b559bf502bfa7257966df4de7d6b8e", null ],
+    [ "make_continuation_process_deferred_wait", "namespacecppext_1_1detail.html#a9b599dc39a046a476f58ff7eb95e0892", null ],
+    [ "make_shared_state", "namespacecppext_1_1detail.html#aa3a5bc04f904aa612626f805714241ee", null ]
 ];

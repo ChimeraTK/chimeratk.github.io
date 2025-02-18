@@ -2,10 +2,10 @@ var test_unified_backend_test_8_c =
 [
     [ "IOCLauncher", "class_i_o_c_launcher.html", "class_i_o_c_launcher" ],
     [ "AllRegisterDefaults", "struct_all_register_defaults.html", "struct_all_register_defaults" ],
-    [ "identity", "structidentity.html", "structidentity" ],
-    [ "ScalarDefaults", "struct_scalar_defaults.html", "struct_scalar_defaults" ],
+    [ "identity< T >", "structidentity.html", "structidentity" ],
+    [ "ScalarDefaults< T >", "struct_scalar_defaults.html", "struct_scalar_defaults" ],
     [ "ScalarDefaults< bool >", "struct_scalar_defaults_3_01bool_01_4.html", "struct_scalar_defaults_3_01bool_01_4" ],
-    [ "ArrayDefaults", "struct_array_defaults.html", "struct_array_defaults" ],
+    [ "ArrayDefaults< T >", "struct_array_defaults.html", "struct_array_defaults" ],
     [ "RegAo", "struct_reg_ao.html", "struct_reg_ao" ],
     [ "Reglongout", "struct_reglongout.html", "struct_reglongout" ],
     [ "RegBoInt", "struct_reg_bo_int.html", "struct_reg_bo_int" ],

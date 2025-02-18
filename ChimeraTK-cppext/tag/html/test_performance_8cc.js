@@ -1,7 +1,6 @@
 var test_performance_8cc =
 [
     [ "helper_iterator", "classhelper__iterator.html", "classhelper__iterator" ],
-    [ "iterator_traits< helper_iterator >", "structstd_1_1iterator__traits_3_01helper__iterator_01_4.html", "structstd_1_1iterator__traits_3_01helper__iterator_01_4" ],
     [ "BOOST_TEST_MODULE", "test_performance_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_performance_8cc.html#ad628dc19d5f216e4085c0836b4d8f3ae", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_performance_8cc.html#aa864f06c933db0524cddcad6fc0f8788", null ],

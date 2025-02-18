@@ -2,8 +2,8 @@ var test_logging_8cc =
 [
     [ "DummyModule", "struct_dummy_module.html", "struct_dummy_module" ],
     [ "TestGroup", "struct_test_group.html", "struct_test_group" ],
-    [ "A", "struct_test_group_1_1_a.html", "struct_test_group_1_1_a" ],
-    [ "B", "struct_test_group_1_1_b.html", "struct_test_group_1_1_b" ],
+    [ "TestGroup::A", "struct_test_group_1_1_a.html", "struct_test_group_1_1_a" ],
+    [ "TestGroup::B", "struct_test_group_1_1_b.html", "struct_test_group_1_1_b" ],
     [ "testApp", "structtest_app.html", "structtest_app" ],
     [ "MultipleModuleApp", "struct_multiple_module_app.html", "struct_multiple_module_app" ],
     [ "FailingApp", "struct_failing_app.html", "struct_failing_app" ],

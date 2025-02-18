@@ -1,6 +1,6 @@
 var test_data_consistency_group_8cpp =
 [
-    [ "Accessor", "class_accessor.html", "class_accessor" ],
+    [ "Accessor< UserType >", "class_accessor.html", "class_accessor" ],
     [ "BOOST_TEST_DYN_LINK", "test_data_consistency_group_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_data_consistency_group_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_consistency_group_8cpp.html#ac8d42af6b38f2a6f620333a5346c03a7", null ],

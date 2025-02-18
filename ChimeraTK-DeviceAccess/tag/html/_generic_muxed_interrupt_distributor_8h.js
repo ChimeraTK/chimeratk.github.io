@@ -1,6 +1,6 @@
 var _generic_muxed_interrupt_distributor_8h =
 [
-    [ "GenericMuxedInterruptDistributor", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor" ],
+    [ "ChimeraTK::async::GenericMuxedInterruptDistributor", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor" ],
     [ "GmidOptionCode", "_generic_muxed_interrupt_distributor_8h.html#a3089c365fce6a50a562b7b38549fa36b", [
       [ "ISR", "_generic_muxed_interrupt_distributor_8h.html#a3089c365fce6a50a562b7b38549fa36bacedbe3bac36240c1f5698ad0a4a72fce", null ],
       [ "IER", "_generic_muxed_interrupt_distributor_8h.html#a3089c365fce6a50a562b7b38549fa36bafbb8be5884314052343c1a09089670cf", null ],

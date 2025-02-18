@@ -1,7 +1,7 @@
 var class_csa_coarse_tuning_detector_ctrl_out_value =
 [
     [ "CsaCoarseTuningDetectorCtrlOutValue", "class_csa_coarse_tuning_detector_ctrl_out_value.html#a2c29ca620859bc579608625cfe64b6c0", null ],
-    [ "addDetector", "class_csa_coarse_tuning_detector_ctrl_out_value.html#ac0b13cc697c99584717bc0a79edf9aa6", null ],
+    [ "addDetector", "class_csa_coarse_tuning_detector_ctrl_out_value.html#ad631c6aa3fd1f455d5091efb683a329f", null ],
     [ "checkSafetyCondition", "class_csa_coarse_tuning_detector_ctrl_out_value.html#a0d6213bef768ef754b90676b33e3fe6e", null ],
     [ "checkSettingsValidity", "class_csa_coarse_tuning_detector_ctrl_out_value.html#a376a5090b5f802f6cd53316fb089adc8", null ],
     [ "getActiveDetectorName", "class_csa_coarse_tuning_detector_ctrl_out_value.html#ae4b529c29e2ae8655432bc1315a50386", null ],

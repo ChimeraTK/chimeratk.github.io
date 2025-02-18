@@ -1,12 +1,13 @@
 var classua__builtin__types_1_1opcua___builtin_type__extension_object__t =
 [
-    [ "__str__", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#aa0220e50c97e9b0fb825d78e7b67988e", null ],
-    [ "getCodeInstanceName", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#ad277e1780c0903a9ab36628813d2d42e", null ],
-    [ "printOpen62541CCode_SubType", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#ab0be6ed4571bcb2474b9fb7aa6814c54", null ],
-    [ "printOpen62541CCode_SubType_build", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#aa3ac589e0174037c4f22fe0f75eee52f", null ],
-    [ "setCodeInstanceName", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a403f511906c67eb6b0ed04384b2f0e1b", null ],
-    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#ae36a20023668e893e5224c06c0686a4d", null ],
-    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a28948ddcaf47119b0f8b8fb27d5dd72d", null ],
-    [ "typeId", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a8f88bb8b31b8b5a5ae6876a6eab5107d", null ],
-    [ "stringRepresentation", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a80e565decd103bd9d910fadf824c8f30", null ]
+    [ "__str__", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#abeb035e55c52d9871f6f62297231fe27", null ],
+    [ "getCodeInstanceName", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a874f7b944577f0b2a0fda52d60f05dab", null ],
+    [ "printOpen62541CCode_SubType", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a312f305a60093d489bcf428b2f454274", null ],
+    [ "printOpen62541CCode_SubType_build", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#ae4e782966761f4974bb5b28ab0b88adb", null ],
+    [ "setCodeInstanceName", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a5e713c8f1583b5c404be3ccd15d813de", null ],
+    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a50faad5fde817df7bd36d40622835acd", null ],
+    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a7ec86a73456a9719be6d0a2a4ae36b52", null ],
+    [ "typeId", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#ab65c3c20dfbd6147739e32d8103d3360", null ],
+    [ "stringRepresentation", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a80e565decd103bd9d910fadf824c8f30", null ],
+    [ "value", "classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a472b75c8c43210ecb7ed31744598da62", null ]
 ];

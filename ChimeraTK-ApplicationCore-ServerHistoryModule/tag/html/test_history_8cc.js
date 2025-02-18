@@ -1,9 +1,9 @@
 var test_history_8cc =
 [
-    [ "Dummy", "struct_dummy.html", "struct_dummy" ],
-    [ "DummyArray", "struct_dummy_array.html", "struct_dummy_array" ],
-    [ "testApp", "structtest_app.html", "structtest_app" ],
-    [ "testAppArray", "structtest_app_array.html", "structtest_app_array" ],
+    [ "Dummy< UserType >", "struct_dummy.html", "struct_dummy" ],
+    [ "DummyArray< UserType >", "struct_dummy_array.html", "struct_dummy_array" ],
+    [ "testApp< UserType >", "structtest_app.html", "structtest_app" ],
+    [ "testAppArray< UserType >", "structtest_app_array.html", "structtest_app_array" ],
     [ "testAppDev", "structtest_app_dev.html", "structtest_app_dev" ],
     [ "BOOST_TEST_MODULE", "test_history_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "test_types", "test_history_8cc.html#a767b2fc2a87506eaf7282fc818bb3651", null ],

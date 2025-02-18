@@ -2,9 +2,9 @@ var class_chimera_t_k_1_1_application_base =
 [
     [ "ApplicationBase", "class_chimera_t_k_1_1_application_base.html#a372aec17ad33121213021296a4926786", null ],
     [ "~ApplicationBase", "class_chimera_t_k_1_1_application_base.html#a2e5c230cc0d37e9874f99d1757e36758", null ],
-    [ "getName", "class_chimera_t_k_1_1_application_base.html#aca7083d2e7ba79435fcb337c205dfc43", null ],
-    [ "getPersistentDataStorage", "class_chimera_t_k_1_1_application_base.html#a25aebdb26a0fe2520bbb9989194ea69b", null ],
-    [ "getPVManager", "class_chimera_t_k_1_1_application_base.html#a35298f9e9a366164a6789cd691af5cbd", null ],
+    [ "getName", "class_chimera_t_k_1_1_application_base.html#a07a0a7c23fb3be6a65bedeb534f12253", null ],
+    [ "getPersistentDataStorage", "class_chimera_t_k_1_1_application_base.html#ae25865a59afbefb206a72b87bb0ecb6c", null ],
+    [ "getPVManager", "class_chimera_t_k_1_1_application_base.html#a9b14a972be8d283980dc78f90c6fe828", null ],
     [ "initialise", "class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b", null ],
     [ "optimiseUnmappedVariables", "class_chimera_t_k_1_1_application_base.html#abd3103d056ea320768e422280ee709f3", null ],
     [ "run", "class_chimera_t_k_1_1_application_base.html#a3a32c70d9576ac03963dbcf2f9f4f34d", null ],

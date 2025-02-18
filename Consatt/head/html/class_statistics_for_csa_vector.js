@@ -14,7 +14,7 @@ var class_statistics_for_csa_vector =
     [ "getMin", "class_statistics_for_csa_vector.html#a72dfb51dcef0e41a7cdb8485ab44bf11", null ],
     [ "getRms", "class_statistics_for_csa_vector.html#a31801fedb016e4d58f35a85e71190f55", null ],
     [ "getStdDev", "class_statistics_for_csa_vector.html#a8ad66d78e908bed8b734e962a61d53e2", null ],
-    [ "setCsaVector", "class_statistics_for_csa_vector.html#a8a399792e01ad27a9c1c263914c6284e", null ],
+    [ "setCsaVector", "class_statistics_for_csa_vector.html#ad950885793644a493d49988fe28fafcb", null ],
     [ "setEnableMean", "class_statistics_for_csa_vector.html#a676a9b08afa70a6d2be3cebfdf85ba41", null ],
     [ "setEnableMinMax", "class_statistics_for_csa_vector.html#ac4df864b2d21e65e02a3bf0156ef31a0", null ],
     [ "setEnableRms", "class_statistics_for_csa_vector.html#a96438d3bfeffef55574966771ee5e8b8", null ],

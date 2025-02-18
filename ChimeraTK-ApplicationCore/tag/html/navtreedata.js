@@ -1,24 +1,26 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -92,58 +94,6 @@ var NAVTREE =
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", [
       [ "Introduction", "spec__status_aggregator.html#autotoc_md46", null ],
       [ "High-level requirements", "spec__status_aggregator.html#autotoc_md47", [
-        [ "A. Introduction", "spec_initial_value_propagation.html#autotoc_md19", null ],
-        [ "B. Definitions", "spec_initial_value_propagation.html#autotoc_md20", null ],
-        [ "C. High-level requirements", "spec_initial_value_propagation.html#autotoc_md21", [
-          [ "(*) Comments", "spec_initial_value_propagation.html#autotoc_md22", null ]
-        ] ],
-        [ "D. Detailed requirements", "spec_initial_value_propagation.html#autotoc_md23", [
-          [ "Comments", "spec_initial_value_propagation.html#autotoc_md24", null ]
-        ] ],
-        [ "E. Implementation", "spec_initial_value_propagation.html#autotoc_md25", [
-          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md26", null ],
-          [ "ApplicationModule", "spec_initial_value_propagation.html#autotoc_md27", null ],
-          [ "ThreadedFanOut", "spec_initial_value_propagation.html#autotoc_md28", null ],
-          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md29", null ],
-          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md30", null ],
-          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md31", null ],
-          [ "Application", "spec_initial_value_propagation.html#autotoc_md32", null ],
-          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md33", null ],
-          [ "ProcessArrays", "spec_initial_value_propagation.html#autotoc_md34", null ]
-        ] ],
-        [ "F. Known bugs [OUTDATED!!!]", "spec_initial_value_propagation.html#autotoc_md35", [
-          [ "DeviceAccess interface", "spec_initial_value_propagation.html#autotoc_md36", null ],
-          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md37", null ],
-          [ "ApplicationModule / EntityOwner", "spec_initial_value_propagation.html#autotoc_md38", null ],
-          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md39", null ],
-          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md40", null ],
-          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md41", null ],
-          [ "VariableNetworkNode", "spec_initial_value_propagation.html#autotoc_md42", null ],
-          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md43", null ],
-          [ "Non-memeber functions", "spec_initial_value_propagation.html#autotoc_md44", null ],
-          [ "Documentation", "spec_initial_value_propagation.html#autotoc_md45", null ]
-        ] ],
-        [ "1. General idea", "spec_data_validity_propagation.html#autotoc_md3", [
-          [ "Comments", "spec_data_validity_propagation.html#autotoc_md4", null ]
-        ] ],
-        [ "2. Technical implementation", "spec_data_validity_propagation.html#autotoc_md5", [
-          [ "2.1 MetaDataPropagatingRegisterDecorator (*)", "spec_data_validity_propagation.html#autotoc_md6", null ],
-          [ "2.2 removed", "spec_data_validity_propagation.html#autotoc_md7", null ],
-          [ "2.3 ApplicationModule", "spec_data_validity_propagation.html#autotoc_md8", null ],
-          [ "2.4 TriggerFanOut", "spec_data_validity_propagation.html#autotoc_md9", null ],
-          [ "2.5 Interaction with exception handling", "spec_data_validity_propagation.html#autotoc_md10", null ],
-          [ "2.6 Application class", "spec_data_validity_propagation.html#autotoc_md11", null ],
-          [ "Comments:", "spec_data_validity_propagation.html#autotoc_md12", null ]
-        ] ],
-        [ "3. Implementation details", "spec_data_validity_propagation.html#autotoc_md13", null ],
-        [ "4. Circular dependencies", "spec_data_validity_propagation.html#autotoc_md14", [
-          [ "4.1 General behaviour", "spec_data_validity_propagation.html#autotoc_md15", [
-            [ "Comments", "spec_data_validity_propagation.html#autotoc_md16", null ]
-          ] ],
-          [ "4.3 Technical implementation", "spec_data_validity_propagation.html#autotoc_md17", [
-            [ "Comments", "spec_data_validity_propagation.html#autotoc_md18", null ]
-          ] ]
-        ] ],
         [ "R1.1 Automatic detection of instances", "spec__status_aggregator.html#autotoc_md48", null ],
         [ "R1.2 Priorization of status values", "spec__status_aggregator.html#autotoc_md49", null ],
         [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md50", null ]
@@ -187,8 +137,6 @@ var NAVTREE =
     [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
     [ "What's new in ApplicationCore 2.0", "whats_new__a_c_2_0.html", [
       [ "Initial value propagation", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value", [
-        [ "ApplicationModule", "spec__version_propagation.html#autotoc_md54", null ],
-        [ "Transfer Groups", "spec__version_propagation.html#autotoc_md55", null ],
         [ "Required changes to existing applications", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value_app_change", null ]
       ] ]
     ] ],
@@ -215,7 +163,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -235,21 +183,34 @@ var NAVTREEINDEX =
 [
 "_application_8cc.html",
 "_status_with_message_8cc_source.html",
-"class_chimera_t_k_1_1_device_manager.html#a36928e7fdaa5402ed80a17e209cfb9bd",
-"class_chimera_t_k_1_1_model_1_1_module_group_proxy.html#a79c99b57c2f14d1e0b4e68c6fbe9ea41",
-"class_chimera_t_k_1_1_python_application_module_trampoline.html#a906dd7c13732a0a9d946a73586e78f37",
-"classtest_python_variable_group_1_1_my_mod.html#a27e3245a51c11f3d9e8498ad1e545386",
-"namespace_tests_1_1test_exception_handling.html",
-"struct_chimera_t_k_1_1_array_pipe.html",
-"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html",
-"struct_chimera_t_k_1_1_variable_network_node__data.html#ac6879ef33720ec05a6c6b5aac424e9ee",
-"struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#a8a05107fe70d29dd4bd87485c6da4935",
-"struct_tests_1_1test_data_validity_propagation_1_1_test_application16.html#a5e43c332252e087466883418ac19c18e",
-"struct_tests_1_1test_initial_values_1_1_notifying_module.html#a7f20b1fb2a371371bfe1bf6a94c84dab",
-"struct_tests_1_1test_modules_1_1_variable_slash_array_app.html#a46f1f44a12f6ee5c158764d47864a2ed",
-"struct_tests_1_1test_status_aggregator_1_1_test_application_tags_1_1_outer_group.html#ac345883fab9be96612b6aed5e56bd57b",
-"test_bidirectional_variables_8cc.html#a912bd24ddbddac7740249705109610c7",
-"test_modules_8cc.html#a3257eb9334a4b1570d044f8b0f550d32"
+"class_chimera_t_k_1_1_application_module.html#a4714f0858da3bda2b8179f472840b5cd",
+"class_chimera_t_k_1_1_device_module.html#a2d02f4b39ac1a2bf8b1221eaba06a457",
+"class_chimera_t_k_1_1_internal_module.html#a9cc7e19957d8dce55abc2e95d911dde3",
+"class_chimera_t_k_1_1_model_1_1_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167",
+"class_chimera_t_k_1_1_py_array_accessor.html#abe10f0eefc21537334640d9bed99f82f",
+"class_chimera_t_k_1_1_test_facility.html#a73198f87b8f156c20bf6a91d180dd339",
+"class_chimera_t_k_1_1_void_accessor.html#a634a60bfccbed1d302c49499266243f8",
+"conceptual_overview.html#conceptualOverview_VariableGroup",
+"namespace_tests_1_1test_application.html#ab3854372e9150871cb26f638f304a2cd",
+"namespace_tests_1_1test_status_aggregator.html#a591322d8c608e5776f4a71fc16836380",
+"struct_chimera_t_k_1_1_array_functor_fill.html#a83a17cca27e6593f58f09dffd0f664c9",
+"struct_chimera_t_k_1_1_functor_set_values_array.html#a1dff26d7db1e645a97132878b00ba48b",
+"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_invalid_properties.html",
+"struct_chimera_t_k_1_1_scripted_init_handler.html#a1c20f405b28d388323e507e61876f752",
+"struct_chimera_t_k_1_1_variable_network_node__data.html#a87f4975ed069256b930182573cd0fcc1",
+"struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html#a0749d5f307e0d3d39d7920fb5600a6ab",
+"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_b_b.html#ad9055e550d138d2741363e32c89af980",
+"struct_tests_1_1test_config_reader_1_1_test_application_with_device.html#aaba4b994932569a0513c586b779f19b1",
+"struct_tests_1_1test_device_accessors_1_1_test_application.html#a6d6ca73869813b93064ac9aec3f235f4",
+"struct_tests_1_1test_illegal_networks_1_1_test_application1.html#a17c995f4e8190321a80ba1b068fd900c",
+"struct_tests_1_1test_initial_values_1_1_test6_a1_initial_value_eception_dummy.html#ad981405d25baca264d0fd1a27d0300f9",
+"struct_tests_1_1test_initial_values_1_1_writer_module.html#ae7ee37aedcdb9cc649028234debe599e",
+"struct_tests_1_1test_process_variable_recovery_1_1_read_only_test_application.html#a0f20aca62224b3cdd4f980e502fe171e",
+"struct_tests_1_1test_status_aggregator_1_1_status_with_message_generator.html",
+"struct_tests_1_1test_test_facilities_1_1_test_chanied_modules_application.html#ad6e8d2631f76e6ed5de97bd13147ad58",
+"struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out.html#a69d922116924a1a75104b5cd49646afa",
+"test_hierarchy_modifying_group_8cc.html#a6d8ead50df81fd57fe3a8816f159c077",
+"test_user_input_validator_8cc.html#a1ff3fe4dc6faf8493849532dd03c69c8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,8 +1,8 @@
 var _virtual_lab_backend_8h =
 [
-    [ "VirtualLabBackend", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend" ],
-    [ "Timer", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer" ],
-    [ "VirtualLabBackend", "classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html", null ],
+    [ "ChimeraTK::VirtualLab::VirtualLabBackend< derived >", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend" ],
+    [ "ChimeraTK::VirtualLab::VirtualLabBackend< derived >::Timer< timerEvent >", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html", "class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer" ],
+    [ "mtca4u::VirtualLab::VirtualLabBackend< derived >", "classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html", null ],
     [ "CONNECT_REGISTER_EVENT", "_virtual_lab_backend_8h.html#a39d6fc80c74c46f1c9e9dda478b2d760", null ],
     [ "CONSTRUCTOR", "_virtual_lab_backend_8h.html#a14e136f646e92809e78b04d59dee998e", null ],
     [ "DECLARE_ACTION", "_virtual_lab_backend_8h.html#ab097e981e2772b908f529855a61938d0", null ],

@@ -3,7 +3,7 @@ var test_numeric_addressed_backend_unified_8cpp =
     [ "Integers_signed32", "struct_integers__signed32.html", "struct_integers__signed32" ],
     [ "Integers_signed32_async", "struct_integers__signed32__async.html", "struct_integers__signed32__async" ],
     [ "Integers_signed32_async_rw", "struct_integers__signed32__async__rw.html", "struct_integers__signed32__async__rw" ],
-    [ "ShortRaw_base", "struct_short_raw__base.html", "struct_short_raw__base" ],
+    [ "ShortRaw_base< Derived, rawUserType >", "struct_short_raw__base.html", "struct_short_raw__base" ],
     [ "ShortRaw_signed16", "struct_short_raw__signed16.html", "struct_short_raw__signed16" ],
     [ "ShortRaw_unsigned16", "struct_short_raw__unsigned16.html", "struct_short_raw__unsigned16" ],
     [ "ShortRaw_fixedPoint16_8u", "struct_short_raw__fixed_point16__8u.html", "struct_short_raw__fixed_point16__8u" ],

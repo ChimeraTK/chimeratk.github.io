@@ -1,6 +1,6 @@
 var node__historizing_8cpp =
 [
-    [ "HandleFolderVariables", "struct_chimera_t_k_1_1_handle_folder_variables.html", "struct_chimera_t_k_1_1_handle_folder_variables" ],
+    [ "ChimeraTK::HandleFolderVariables", "struct_chimera_t_k_1_1_handle_folder_variables.html", "struct_chimera_t_k_1_1_handle_folder_variables" ],
     [ "add_folder_historizing", "node__historizing_8cpp.html#a791225855414c4883acb91ca4fff1af5", null ],
     [ "add_historizing_nodes", "node__historizing_8cpp.html#ac9646056f41b1bd4558f2b0bce765127", null ],
     [ "add_variable_historizing", "node__historizing_8cpp.html#a51f1748a82d9ebfc27bd58e9d48e70d6", null ],

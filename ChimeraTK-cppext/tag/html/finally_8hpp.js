@@ -1,6 +1,6 @@
 var finally_8hpp =
 [
-    [ "final_act", "classcppext_1_1final__act.html", "classcppext_1_1final__act" ],
-    [ "finally", "finally_8hpp.html#ab7a6dcf5cc773e5a62099459b7cd4f1b", null ],
-    [ "finally", "finally_8hpp.html#a0645561899573094128df4b3b0325e03", null ]
+    [ "cppext::final_act< F >", "classcppext_1_1final__act.html", "classcppext_1_1final__act" ],
+    [ "finally", "finally_8hpp.html#a26dfda30cf73f76b08a3430f8bc00239", null ],
+    [ "finally", "finally_8hpp.html#a6e43a0e9fa7728fe67e0a10f6f072968", null ]
 ];

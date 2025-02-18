@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['math_2dutils_156',['math-utils',['../index.html',1,'']]]
+  ['example_0',['Just a simple example',['../examples.html',1,'index']]]
 ];

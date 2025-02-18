@@ -1,39 +1,41 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "AmtfDbAccess", "index.html", [
-    [ "PostgreSQL database setup for AMTF / XFEL Operational testing", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html", [
-      [ "Check if PostgreSQL is actually listening", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md1", null ],
-      [ "Setup proper authentication", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md2", [
-        [ "Change <tt>postgres</tt> password to default (<a href=\"https://help.ubuntu.com/stable/serverguide/postgresql.html\">via Ubuntu help</a>)", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md3", null ],
-        [ "Setup remote access", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md4", null ]
+    [ "PostgreSQL database setup for AMTF / XFEL Operational testing", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html", [
+      [ "Check if PostgreSQL is actually listening", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md1", null ],
+      [ "Setup proper authentication", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md2", [
+        [ "Change <tt>postgres</tt> password to default (<a href=\"https://help.ubuntu.com/stable/serverguide/postgresql.html\" >via Ubuntu help</a>)", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3", null ],
+        [ "Setup remote access", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md4", null ]
       ] ],
-      [ "Connecting to database", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md5", null ],
-      [ "Lack of instrumentation functions", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md6", null ],
-      [ "Backing up the database", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md7", null ],
-      [ "Restoring database", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md8", [
-        [ "Using <tt>.sql</tt> files in <tt>amtfdbaccess</tt> repository", "md__scratch_dragon_sources__amtf_db_access_doc__database_setup.html#autotoc_md9", null ]
+      [ "Connecting to database", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md5", null ],
+      [ "Lack of instrumentation functions", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md6", null ],
+      [ "Backing up the database", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md7", null ],
+      [ "Restoring database", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md8", [
+        [ "Using <tt>.sql</tt> files in <tt>amtfdbaccess</tt> repository", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -54,7 +56,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [

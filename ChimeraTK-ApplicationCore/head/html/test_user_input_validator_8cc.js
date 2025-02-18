@@ -1,9 +1,9 @@
 var test_user_input_validator_8cc =
 [
-    [ "ModuleA", "struct_tests_1_1test_user_input_validator_1_1_module_a.html", "struct_tests_1_1test_user_input_validator_1_1_module_a" ],
-    [ "ModuleAwithSecondInput", "struct_tests_1_1test_user_input_validator_1_1_module_awith_second_input.html", "struct_tests_1_1test_user_input_validator_1_1_module_awith_second_input" ],
-    [ "UpstreamSingleOut", "struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html", "struct_tests_1_1test_user_input_validator_1_1_upstream_single_out" ],
-    [ "UpstreamTwinOut", "struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out.html", "struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out" ],
+    [ "Tests::testUserInputValidator::ModuleA", "struct_tests_1_1test_user_input_validator_1_1_module_a.html", "struct_tests_1_1test_user_input_validator_1_1_module_a" ],
+    [ "Tests::testUserInputValidator::ModuleAwithSecondInput", "struct_tests_1_1test_user_input_validator_1_1_module_awith_second_input.html", "struct_tests_1_1test_user_input_validator_1_1_module_awith_second_input" ],
+    [ "Tests::testUserInputValidator::UpstreamSingleOut", "struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html", "struct_tests_1_1test_user_input_validator_1_1_upstream_single_out" ],
+    [ "Tests::testUserInputValidator::UpstreamTwinOut", "struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out.html", "struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out" ],
     [ "BOOST_TEST_MODULE", "test_user_input_validator_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_user_input_validator_8cc.html#a9e586c4178531ad7730a94bd52503090", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_user_input_validator_8cc.html#a1ff3fe4dc6faf8493849532dd03c69c8", null ],

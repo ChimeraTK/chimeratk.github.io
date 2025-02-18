@@ -1,10 +1,10 @@
 var _mapped_image_8h =
 [
-    [ "OpaqueStructHeader", "struct_chimera_t_k_1_1_opaque_struct_header.html", "struct_chimera_t_k_1_1_opaque_struct_header" ],
-    [ "MappedStruct", "class_chimera_t_k_1_1_mapped_struct.html", "class_chimera_t_k_1_1_mapped_struct" ],
-    [ "ImgHeader", "struct_chimera_t_k_1_1_img_header.html", "struct_chimera_t_k_1_1_img_header" ],
-    [ "ImgView", "class_chimera_t_k_1_1_img_view.html", "class_chimera_t_k_1_1_img_view" ],
-    [ "MappedImage", "class_chimera_t_k_1_1_mapped_image.html", "class_chimera_t_k_1_1_mapped_image" ],
+    [ "ChimeraTK::OpaqueStructHeader", "struct_chimera_t_k_1_1_opaque_struct_header.html", "struct_chimera_t_k_1_1_opaque_struct_header" ],
+    [ "ChimeraTK::MappedStruct< StructHeader >", "class_chimera_t_k_1_1_mapped_struct.html", "class_chimera_t_k_1_1_mapped_struct" ],
+    [ "ChimeraTK::ImgHeader", "struct_chimera_t_k_1_1_img_header.html", "struct_chimera_t_k_1_1_img_header" ],
+    [ "ChimeraTK::ImgView< ValType, OPTIONS >", "class_chimera_t_k_1_1_img_view.html", "class_chimera_t_k_1_1_img_view" ],
+    [ "ChimeraTK::MappedImage", "class_chimera_t_k_1_1_mapped_image.html", "class_chimera_t_k_1_1_mapped_image" ],
     [ "ImgFormat", "_mapped_image_8h.html#a3014565c0fa0cadd5639c2a264790404", [
       [ "Unset", "_mapped_image_8h.html#a3014565c0fa0cadd5639c2a264790404ac9f88e098f6fe4e4e112eeb05ccb9671", null ],
       [ "Gray8", "_mapped_image_8h.html#a3014565c0fa0cadd5639c2a264790404ac8cfe3d00282445878661f32adca48ef", null ],

@@ -34,9 +34,7 @@ var annotated_dup =
     [ "RegisterTypeAbstractor", "class_register_type_abstractor.html", "class_register_type_abstractor" ],
     [ "RegisterTypeAbstractorImpl", "class_register_type_abstractor_impl.html", "class_register_type_abstractor_impl" ],
     [ "RegisterTypeAbstractorRawImpl", "class_register_type_abstractor_raw_impl.html", "class_register_type_abstractor_raw_impl" ],
-    [ "SingleThread", "class_single_thread.html", [
-      [ "Lock", "class_single_thread_1_1_lock.html", null ]
-    ] ],
+    [ "SingleThread", "class_single_thread.html", "class_single_thread" ],
     [ "SingletonHolder", "class_singleton_holder.html", null ],
     [ "TestUtilities", "class_test_utilities.html", null ]
 ];

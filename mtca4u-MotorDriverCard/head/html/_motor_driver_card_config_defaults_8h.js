@@ -1,6 +1,6 @@
 var _motor_driver_card_config_defaults_8h =
 [
-    [ "CONTROLER_SPI_WAITING_TIME_DEFAULT", "_motor_driver_card_config_defaults_8h.html#a4581017c7864a00409fca60372e72cf1", null ],
-    [ "INTERFACE_CONFIGURATION_DEFAULT", "_motor_driver_card_config_defaults_8h.html#a6ce83da498569e9e5ee4c30a924dd746", null ],
-    [ "STEPPER_MOTOR_GLOBAL_PARAMETERS_DEFAULT", "_motor_driver_card_config_defaults_8h.html#a7894584234bed16592bae094403f2fb9", null ]
+    [ "CONTROLER_SPI_WAITING_TIME_DEFAULT", "_motor_driver_card_config_defaults_8h.html#a3c4d36688de5843fb368e37372525086", null ],
+    [ "INTERFACE_CONFIGURATION_DEFAULT", "_motor_driver_card_config_defaults_8h.html#a440649ecc337200afb9d8fdc3ffdfa4a", null ],
+    [ "STEPPER_MOTOR_GLOBAL_PARAMETERS_DEFAULT", "_motor_driver_card_config_defaults_8h.html#a79c25f27e80a4a75c32b46ae7357f510", null ]
 ];

@@ -15,34 +15,32 @@ var hierarchy =
       [ "ProcessArrayFactoryBackend", "struct_process_array_factory_backend.html", null ]
     ] ],
     [ "ChimeraTK::DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", null ],
-    [ "enable_shared_from_this", null, [
+    [ "boost::enable_shared_from_this", null, [
       [ "ChimeraTK::PVManager", "class_chimera_t_k_1_1_p_v_manager.html", null ]
     ] ],
     [ "Hardware", "class_hardware.html", null ],
     [ "IndependentControlCore", "class_independent_control_core.html", null ],
-    [ "NDRegisterAccessor", null, [
+    [ "ChimeraTK::NDRegisterAccessor", null, [
+      [ "ChimeraTK::ProcessArray< DataType >", "class_chimera_t_k_1_1_process_array.html", null ],
       [ "ChimeraTK::ProcessArray< T >", "class_chimera_t_k_1_1_process_array.html", [
         [ "ChimeraTK::BidirectionalProcessArray< T >", "class_chimera_t_k_1_1_bidirectional_process_array.html", null ],
         [ "ChimeraTK::UnidirectionalProcessArray< T >", "class_chimera_t_k_1_1_unidirectional_process_array.html", null ]
-      ] ],
-      [ "ChimeraTK::ProcessArray< DataType >", "class_chimera_t_k_1_1_process_array.html", null ]
+      ] ]
     ] ],
     [ "PerformInputToOutput", "struct_perform_input_to_output.html", null ],
     [ "ChimeraTK::PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", null ],
     [ "ChimeraTK::PersistentDataStorage::Queue< DataType >", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", null ],
     [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", [
-      [ "Bidir< Derived >", "struct_bidir.html", null ]
-    ] ],
-    [ "RegisterDescriptorBase< BidirA >", "struct_register_descriptor_base.html", [
       [ "Bidir< BidirA >", "struct_bidir.html", [
         [ "BidirA", "struct_bidir_a.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< BidirB >", "struct_register_descriptor_base.html", [
+      ] ],
       [ "Bidir< BidirB >", "struct_bidir.html", [
         [ "BidirB", "struct_bidir_b.html", null ]
-      ] ]
+      ] ],
+      [ "Bidir< Derived >", "struct_bidir.html", null ]
     ] ],
+    [ "RegisterDescriptorBase< BidirA >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< BidirB >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< UnidirPolledSender >", "struct_register_descriptor_base.html", [
       [ "UnidirPolledSender", "struct_unidir_polled_sender.html", null ]
     ] ],

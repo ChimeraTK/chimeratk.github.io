@@ -21,7 +21,7 @@ var classcppext_1_1future__queue__base =
     [ "detail::continuation_process_async", "classcppext_1_1future__queue__base.html#a9b858006e74cd788f14a0a269f70bea9", null ],
     [ "detail::shared_state_base", "classcppext_1_1future__queue__base.html#ad81db3fbf830accabc736e573e857248", null ],
     [ "detail::shared_state_ptr", "classcppext_1_1future__queue__base.html#a4abce44a38afacbde2e7b3437e4e8aee", null ],
-    [ "when_all", "classcppext_1_1future__queue__base.html#a01a1487cdf3099037ae1752908ca18e3", null ],
-    [ "when_any", "classcppext_1_1future__queue__base.html#a565c2435ea9a1c6443b75fe82567f47e", null ],
+    [ "when_all", "classcppext_1_1future__queue__base.html#aaa8f37769766dbb77349c1bcc48b96bf", null ],
+    [ "when_any", "classcppext_1_1future__queue__base.html#af4f0dc7e7ba5c93f9e8d912a6903851c", null ],
     [ "d", "classcppext_1_1future__queue__base.html#a1b79f4b30b728fb2d6e165b5cbec46cb", null ]
 ];

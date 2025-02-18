@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "Application", null, [
+    [ "ChimeraTK::Application", null, [
       [ "TestServer", "struct_test_server.html", null ]
     ] ],
     [ "ApplicationModule", null, [

@@ -2,8 +2,8 @@ var classmy_register_info =
 [
     [ "myRegisterInfo", "classmy_register_info.html#abbc4e77521b384685031779fd35c871c", null ],
     [ "myRegisterInfo", "classmy_register_info.html#a4ff285b574d1f0888feedf703cef2990", null ],
-    [ "clone", "classmy_register_info.html#adc8ec398d03045a349bfa4c4ea181397", null ],
-    [ "getDataDescriptor", "classmy_register_info.html#ad3e8cab96ac744704ac11abf017fa851", null ],
+    [ "clone", "classmy_register_info.html#aef49d69f88b9873cdc0cf507f0f9ae0d", null ],
+    [ "getDataDescriptor", "classmy_register_info.html#a0170a7a50c25c0da7b76dbd7a539d5a1", null ],
     [ "getNumberOfChannels", "classmy_register_info.html#a8afebaf3baa27beba0435f92dcf6c550", null ],
     [ "getNumberOfElements", "classmy_register_info.html#ae8145c77ae96df6cd5384ef67f48912b", null ],
     [ "getRegisterName", "classmy_register_info.html#ade061abb459aac00556b421dedd23a13", null ],

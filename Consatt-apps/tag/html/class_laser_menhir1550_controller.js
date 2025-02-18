@@ -6,6 +6,7 @@ var class_laser_menhir1550_controller =
     ] ],
     [ "LaserMenhir1550Controller", "class_laser_menhir1550_controller.html#a6e5b0650f1724e03cdcb6e8764e11765", null ],
     [ "~LaserMenhir1550Controller", "class_laser_menhir1550_controller.html#a8784c11be460ff5090c167d6e0778bbe", null ],
+    [ "convertFromString", "class_laser_menhir1550_controller.html#a527e7734a79e316866a4fb6651def773", null ],
     [ "convertFromString", "class_laser_menhir1550_controller.html#afae70f23747d648e214a422d788db970", null ],
     [ "initialize", "class_laser_menhir1550_controller.html#ae06abb41e6ed5da10adeeabd88c95ca0", null ],
     [ "ld0PumpCurrentApply", "class_laser_menhir1550_controller.html#a2eb7e46816915b608bf17d6aa8b0ff2b", null ],

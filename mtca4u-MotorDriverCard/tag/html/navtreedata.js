@@ -1,31 +1,31 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "mtca4u-MotorDriverCard", "index.html", [
-    [ "MotorDriverCard", "index.html", [
-      [ "Getting Started", "index.html#getting_started", null ]
-    ] ],
+    [ "MotorDriverCard", "index.html", "index" ],
     [ "\\c LinearStepperMotor", "linear_stepper_motor.html", null ],
     [ "Why you need a motor driver card config and how to create it", "motor_driver_card_config_docu.html", [
       [ "Creating an XML config file", "motor_driver_card_config_docu.html#gui_parameters", null ],
@@ -54,7 +54,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -74,14 +74,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_stepper_motor_8cc.html",
-"_stepper_motor_status_8h_source.html",
-"class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#ac6c282e23c28946cf71564735ab23059",
-"class_motor_driver_card_config_x_m_l_test.html#abf31d3625553fd4b8cca2018d087af92",
-"classmtca4u_1_1_interrupt_data.html#ad37d0221ce83f19f40ecf7230a025755",
-"classmtca4u_1_1_motor_controler_test.html#af158ef1cf97f8fdfd819ad1aa02e9291",
-"classmtca4u_1_1_stepper_motor_status_and_error.html#a8723656d410a57c8ab3e0833b8fb5407",
-"steppermotor_2include_2_stepper_motor_8h_source.html",
-"test_t_m_c429_words_8cpp.html"
+"_stepper_motor_util_8h.html#a127e10207b409b6bcb30e9c2fb63dec7",
+"class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#ab559d173d674f0685d0329b76c837f4a",
+"class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a501bc341adf3a6c171b44314d382df09",
+"class_derived_state_machine.html#ab12780a5c398b22d18349776201d4130",
+"classmtca4u_1_1_cool_step_control_data.html#a574b8f91ebed6684293affa5069a6fc8",
+"classmtca4u_1_1_motor_controler.html#a1ea016a20846eef85f97c6e5e8c9aa6d",
+"classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377",
+"classmtca4u_1_1_motor_driver_card_expert.html#affab330c06db01c5ada39f0bac08a30d",
+"classmtca4u_1_1_stepper_motor.html#a2b467800598f61ffc06bf395f0ed51db",
+"classmtca4u_1_1_t_m_c429_status_word.html",
+"namespacemtca4u.html#a9056b84b0e5991b88a39bf214946a779",
+"test_config_constants_8h.html#a373528e713a07fbbf6b7beceefb76ae1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,9 +1,9 @@
 var classua__builtin__types_1_1opcua___builtin_type__int32__t =
 [
-    [ "parseXML", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#a30b6c849a93b3042c292409c1df5f81b", null ],
-    [ "printOpen62541CCode_SubType", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#a21690225506a8379eeb27959124d326d", null ],
-    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#a5f0119396824bf8b510d684de6c89464", null ],
-    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#a414e8b953b13ceefff7d41f2348f1981", null ],
+    [ "parseXML", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#ac64b6e13e0e17838db1ebc151fc1dfde", null ],
+    [ "printOpen62541CCode_SubType", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#aa326be00c25e8ea36827485d8267dc30", null ],
+    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#af55184c3905334ae8d7eb884bf55e63e", null ],
+    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#a60e58552f1ec0ae4fc56947c45c51793", null ],
     [ "stringRepresentation", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#af97b305f24a032b606becc228016eb73", null ],
     [ "value", "classua__builtin__types_1_1opcua___builtin_type__int32__t.html#a60fed865f50f061eee016548cb8440c4", null ]
 ];

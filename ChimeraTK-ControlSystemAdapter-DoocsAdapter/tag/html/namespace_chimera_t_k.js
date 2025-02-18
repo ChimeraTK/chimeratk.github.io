@@ -25,5 +25,14 @@ var namespace_chimera_t_k =
     [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
     [ "StatusHandler", "class_chimera_t_k_1_1_status_handler.html", "class_chimera_t_k_1_1_status_handler" ],
     [ "VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", "class_chimera_t_k_1_1_variable_mapper" ],
-    [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ]
+    [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ],
+    [ "asXmlElement", "namespace_chimera_t_k.html#a7ccc0a55e83d4c4a59f981da7abdeb1a", null ],
+    [ "basenameFromAddress", "namespace_chimera_t_k.html#a1d382dcc126da60501f9940b29dea51d", null ],
+    [ "determineName", "namespace_chimera_t_k.html#a76ae8c499735588a556f99205b693955", null ],
+    [ "DoocsPVFactory::createDoocsScalar< std::string, D_string >", "namespace_chimera_t_k.html#a98f370dee3a842a3a5c6cb2cde16b7ca", null ],
+    [ "DoocsPVFactory::createDoocsScalar< std::string, DTextUnifier >", "namespace_chimera_t_k.html#ac49dc6375e0d9e0b35828bd5a0c620cc", null ],
+    [ "DoocsPVFactory::typedCreateDoocsArray< std::nullptr_t, std::nullptr_t >", "namespace_chimera_t_k.html#acda82509de015fd1b523ffa80eb0e3a9", null ],
+    [ "getAbsoluteSource", "namespace_chimera_t_k.html#a66c0eb3bf1c3b3d538cba018c69f262b", null ],
+    [ "getAllVariableNames", "namespace_chimera_t_k.html#a8e59630129b4248186709bb532ca3851", null ],
+    [ "splitStringAtFirstSlash", "namespace_chimera_t_k.html#a00c3d61e9462b8da1a7fea6722eb56b2", null ]
 ];

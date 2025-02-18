@@ -1,8 +1,7 @@
 var loader_8py =
 [
-    [ "checksum", "loader_8py.html#a349894ec83fec3ffe530a51279c2fe51", null ],
-    [ "receive_until", "loader_8py.html#a107e84f9db811207bb74a65ab600f9ca", null ],
-    [ "__author__", "loader_8py.html#a8b91f6e3baf4a0ed63dd50a7ae8e2e0f", null ],
+    [ "checksum", "loader_8py.html#ad473bcc20acc0a524a0ed36f89037b77", null ],
+    [ "receive_until", "loader_8py.html#a1f921dfd3d383a785130788202151f7b", null ],
     [ "action", "loader_8py.html#abbdf2409081905e3846d81e71bfa550b", null ],
     [ "args", "loader_8py.html#a431fb27aa5b21a6820ba12a329cedd3e", null ],
     [ "BOOTLDR_DATA", "loader_8py.html#a64d0fd31214fa0423a714bd32501d44a", null ],
@@ -26,6 +25,6 @@ var loader_8py =
     [ "parser", "loader_8py.html#a69a2e42891f45c34303caefcf03c82d1", null ],
     [ "program", "loader_8py.html#afe1ed7d6bef9aa4236dba11cbc745d1c", null ],
     [ "resp", "loader_8py.html#a7678db23d78d4ba30fe09b7ee527e946", null ],
-    [ "sync_token", "loader_8py.html#acb9c269f13115efc9107f8963f8c9375", null ],
+    [ "sync_token", "loader_8py.html#a547fea18396f16bfb1f38e8fc6e38b85", null ],
     [ "type", "loader_8py.html#a7717263f63b842a905f43bab9e1161c0", null ]
 ];

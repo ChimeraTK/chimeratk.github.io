@@ -9,5 +9,5 @@ var class_data_buffer =
     [ "isEmpty", "class_data_buffer.html#a4933dc383a0d254c864363b10ef8af62", null ],
     [ "isFull", "class_data_buffer.html#ab5745bdb93ea81a200b8f133f90dd8cf", null ],
     [ "setLenght", "class_data_buffer.html#a55b18640fd26d0e60821309a6c6c8107", null ],
-    [ "toStdVector", "class_data_buffer.html#a851e21e01bb099bb8c669e6a1f528b79", null ]
+    [ "toStdVector", "class_data_buffer.html#af33c5fa9996886f31c15edbeec98c6ab", null ]
 ];

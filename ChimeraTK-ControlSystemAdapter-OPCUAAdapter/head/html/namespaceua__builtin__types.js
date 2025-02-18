@@ -23,5 +23,8 @@ var namespaceua__builtin__types =
     [ "opcua_BuiltinType_uint32_t", "classua__builtin__types_1_1opcua___builtin_type__uint32__t.html", "classua__builtin__types_1_1opcua___builtin_type__uint32__t" ],
     [ "opcua_BuiltinType_uint64_t", "classua__builtin__types_1_1opcua___builtin_type__uint64__t.html", "classua__builtin__types_1_1opcua___builtin_type__uint64__t" ],
     [ "opcua_BuiltinType_xmlelement_t", "classua__builtin__types_1_1opcua___builtin_type__xmlelement__t.html", "classua__builtin__types_1_1opcua___builtin_type__xmlelement__t" ],
-    [ "opcua_value_t", "classua__builtin__types_1_1opcua__value__t.html", "classua__builtin__types_1_1opcua__value__t" ]
+    [ "opcua_value_t", "classua__builtin__types_1_1opcua__value__t.html", "classua__builtin__types_1_1opcua__value__t" ],
+    [ "getNextElementNode", "namespaceua__builtin__types.html#a4b2709d79ece9de465908d3b0535ce10", null ],
+    [ "unicode", "namespaceua__builtin__types.html#a4aa27c6137e68e74cfb3c9f8bc6feeb8", null ],
+    [ "logger", "namespaceua__builtin__types.html#aa3a1bf9c6ad6c186919a11cf6cba201e", null ]
 ];

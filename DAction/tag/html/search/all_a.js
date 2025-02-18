@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['main_20page_163',['Main Page',['../index.html',1,'']]],
-  ['main_164',['main',['../namespacefix-linter-for-all.html#ab0cc65b5b365ba7a7276a416538b5371',1,'fix-linter-for-all']]],
-  ['main_2edox_165',['main.dox',['../main_8dox.html',1,'']]],
-  ['make_5fabsolute_166',['make_absolute',['../namespacefix-linter-for-all.html#ac1509b919b6fe45c78b024a9b055c475',1,'fix-linter-for-all']]],
-  ['migration_20from_20daction_201_2e0_2d1_2e4_20to_20daction2_20guide_167',['Migration from DAction 1.0-1.4 to DAction2 guide',['../migration.html',1,'']]],
-  ['migration_2edox_168',['migration.dox',['../migration_8dox.html',1,'']]],
-  ['myaction_169',['myAction',['../struct_action_callback_fixture.html#ace2c55ff56638b1b42172eb9f83b97c9',1,'ActionCallbackFixture::myAction()'],['../struct_action_device_access_fixture.html#a6eecfbd595a20c06d60d029c953774a7',1,'ActionDeviceAccessFixture::myAction()'],['../struct_action_fixture.html#a4c15ba15856713d3063df333c4a48c51',1,'ActionFixture::myAction()']]],
-  ['mydevice_170',['myDevice',['../struct_action_device_access_fixture.html#aa3587e8ac2124ae2639e46436266c002',1,'ActionDeviceAccessFixture::myDevice()'],['../struct_action_fixture.html#a41550e8d0fdb7708b134a8308b9304f0',1,'ActionFixture::myDevice()']]]
+  ['get_0',['get',['../class_d__fctarray_extended.html#a0dc6425e7674700c9ad1664206e41fd4',1,'D_fctarrayExtended::get()'],['../class_d__fct_extended.html#a8a0cbe255921a0b0ea2d888f44b609c6',1,'D_fctExtended::get()'],['../class_d___std_string_extended.html#ab9cf90646cdf4494b3d745a791033303',1,'D_StdStringExtended::get()'],['../class_d_action_1_1_task_output_data_buffer.html#ac4c9b58d7df9e8c21a99d6ea334a5389',1,'DAction::TaskOutputDataBuffer::get()']]],
+  ['getdevice_1',['getDevice',['../class_device_provider.html#ab0514beefa83f57947df8e32526bf495',1,'DeviceProvider']]],
+  ['getnumberofelements_2',['getNumberOfElements',['../class_d_action_1_1_register_accessor.html#a67974d474ac6e6f0bd919c2d8553fbe8',1,'DAction::RegisterAccessor']]],
+  ['getregisterinfo_3',['getRegisterInfo',['../class_d_action_1_1_register_accessor.html#ab4d47d7b33b3433045e946316bd28ad9',1,'DAction::RegisterAccessor']]],
+  ['guide_4',['Migration from DAction 1.0-1.4 to DAction2 guide',['../migration.html',1,'']]]
 ];

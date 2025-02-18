@@ -46,8 +46,7 @@ var NAVTREEINDEX10 =
 "class_stepper_actuator.html#ae8f7f090d4d9ae265a5f81e57ea85e17":[1,0,125,44],
 "class_stepper_actuator.html#af4c60421871552f68fce7fc183d771f0":[1,0,125,29],
 "class_stepper_motor_actuator_exception.html":[1,0,126],
-"class_stepper_motor_actuator_exception.html#a418c1188b66c1e33a487d8bafff32067":[1,0,126,1],
-"class_stepper_motor_actuator_exception.html#a7fbee77ada5153261470fb44f1331272a470f0e0558b9c097c375ac35d5337023":[1,0,126,0],
+"class_stepper_motor_actuator_exception.html#a418c1188b66c1e33a487d8bafff32067":[1,0,126,0],
 "class_stepper_motor_linear_m_d22.html":[1,0,127],
 "class_stepper_motor_linear_m_d22.html#a0f982aa3e55e8bb2c1ad200094103010":[1,0,127,11],
 "class_stepper_motor_linear_m_d22.html#a17c7e60c1bbef001e2884b1b29f48fdd":[1,0,127,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "class_stepper_motor_remote.html#a29cd23186696f61bc35b58e949f24f38":[1,0,133,43],
 "class_stepper_motor_remote.html#a2c2946eb3a91b30bef40e2e8f7e54e0b":[1,0,133,44],
 "class_stepper_motor_remote.html#a2de5329e9fc6ef951ec1cd6d3ba0441f":[1,0,133,93],
-"class_stepper_motor_remote.html#a2e6149e9bf322e2c71087133d2f01973":[1,0,133,2]
+"class_stepper_motor_remote.html#a2e6149e9bf322e2c71087133d2f01973":[1,0,133,2],
+"class_stepper_motor_remote.html#a362487306b137c8f36c46d20de390210":[1,0,133,106]
 };

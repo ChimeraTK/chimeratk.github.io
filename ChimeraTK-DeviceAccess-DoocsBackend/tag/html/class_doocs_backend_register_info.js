@@ -1,7 +1,7 @@
 var class_doocs_backend_register_info =
 [
     [ "clone", "class_doocs_backend_register_info.html#a8ddba2fe18759f38fa4a6bf5befd68e2", null ],
-    [ "getDataDescriptor", "class_doocs_backend_register_info.html#a867700bb11f1f6fdcb072cf071c07cff", null ],
+    [ "getDataDescriptor", "class_doocs_backend_register_info.html#a8ff05499005dd66d38a85fce30a07401", null ],
     [ "getNumberOfChannels", "class_doocs_backend_register_info.html#a704c7b61234dc55338832b3b83f7b941", null ],
     [ "getNumberOfElements", "class_doocs_backend_register_info.html#ad0b9b9ad0e6505e3e41e2620c05cd216", null ],
     [ "getRegisterName", "class_doocs_backend_register_info.html#a76873fb8a36585d82b670f0d701f85de", null ],

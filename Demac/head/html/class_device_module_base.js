@@ -3,7 +3,7 @@ var class_device_module_base =
     [ "~DeviceModuleBase", "class_device_module_base.html#a2b16894f808a73841c71ab66a6b141e3", null ],
     [ "DeviceModuleBase", "class_device_module_base.html#a0081894a565f86d714a0c9cb4a93bb58", null ],
     [ "DeviceModuleBase", "class_device_module_base.html#aa82728dec33b8de271692155859a7601", null ],
-    [ "buildStrClear", "class_device_module_base.html#a2d033c1ed264a3b5d8e7509fa6ee4271", null ],
+    [ "buildStrClear", "class_device_module_base.html#a596ced179374c5fdf728e8310f83fead", null ],
     [ "checkIfRegExistsInMap", "class_device_module_base.html#ad4b68e1140dfedcac9433a2e6966d051", null ],
     [ "init", "class_device_module_base.html#a64f4b4cda0dea8a7a9cf5770c8aee996", null ],
     [ "init", "class_device_module_base.html#ad3130faf6cbed4a35747881b5fb875ca", null ],

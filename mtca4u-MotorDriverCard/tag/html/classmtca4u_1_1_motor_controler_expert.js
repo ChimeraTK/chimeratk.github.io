@@ -1,11 +1,11 @@
 var classmtca4u_1_1_motor_controler_expert =
 [
-    [ "getChopperControlData", "classmtca4u_1_1_motor_controler_expert.html#a27e07afe22a5db79e55f20c3aa5c49b9", null ],
-    [ "getCoolStepControlData", "classmtca4u_1_1_motor_controler_expert.html#a87136a45e1718c1a1888a81cb5b8229e", null ],
+    [ "getChopperControlData", "classmtca4u_1_1_motor_controler_expert.html#ab9af523a82508a804d3c0e845c6a9db8", null ],
+    [ "getCoolStepControlData", "classmtca4u_1_1_motor_controler_expert.html#a1a43485133a85932dd96df0d661b5bfa", null ],
     [ "getCoolStepValue", "classmtca4u_1_1_motor_controler_expert.html#ad191c761fa8b9c739a659efa8d401844", null ],
-    [ "getDriverConfigData", "classmtca4u_1_1_motor_controler_expert.html#a5ac1ceb42cae7030ba5f18c4197e27d2", null ],
-    [ "getDriverControlData", "classmtca4u_1_1_motor_controler_expert.html#ab7308f8c67f13d70225a03de21d8d0e5", null ],
-    [ "getStallGuardControlData", "classmtca4u_1_1_motor_controler_expert.html#aad02f0f2efe14b625354408a41fc864b", null ],
+    [ "getDriverConfigData", "classmtca4u_1_1_motor_controler_expert.html#a43e474c224d9971803bd26811046508e", null ],
+    [ "getDriverControlData", "classmtca4u_1_1_motor_controler_expert.html#ae1585cded8da7eb38f7ed6fe676afa0b", null ],
+    [ "getStallGuardControlData", "classmtca4u_1_1_motor_controler_expert.html#a52bf022a34bab3a819798deb36891e1e", null ],
     [ "getStallGuardValue", "classmtca4u_1_1_motor_controler_expert.html#a2bbe5b0ed8a38b1f8613ed2ea88862a2", null ],
     [ "MCX_DECLARE_SET_GET_TYPED_REGISTER", "classmtca4u_1_1_motor_controler_expert.html#abcbfe122d5f15acef91d0684d64e92c1", null ],
     [ "MCX_DECLARE_SET_GET_TYPED_REGISTER", "classmtca4u_1_1_motor_controler_expert.html#ae1e614b025d6c3ac4c9c6ba9c70d05c2", null ],

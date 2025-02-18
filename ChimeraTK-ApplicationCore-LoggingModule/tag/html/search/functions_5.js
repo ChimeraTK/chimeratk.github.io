@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c_80',['operator&lt;&lt;',['../namespacelogging.html#a4933226495fe152b5ec6b3556f2f78fa',1,'logging']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../namespacelogging.html#a4933226495fe152b5ec6b3556f2f78fa',1,'logging']]]
 ];

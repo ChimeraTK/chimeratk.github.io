@@ -1,16 +1,8 @@
 var hierarchy =
 [
     [ "AllRegisterDefaults", "struct_all_register_defaults.html", [
-      [ "ArrayDefaults< T >", "struct_array_defaults.html", null ],
       [ "ArrayDefaults< float >", "struct_array_defaults.html", [
         [ "RegAao", "struct_reg_aao.html", null ]
-      ] ],
-      [ "ScalarDefaults< T >", "struct_scalar_defaults.html", null ],
-      [ "ScalarDefaults< bool >", "struct_scalar_defaults_3_01bool_01_4.html", [
-        [ "RegBoInt", "struct_reg_bo_int.html", null ],
-        [ "RegBoIntInverse", "struct_reg_bo_int_inverse.html", null ],
-        [ "RegBotruefalse", "struct_reg_botruefalse.html", null ],
-        [ "RegBoTrueFalse", "struct_reg_bo_true_false.html", null ]
       ] ],
       [ "ScalarDefaults< double >", "struct_scalar_defaults.html", [
         [ "RegAo", "struct_reg_ao.html", null ]
@@ -20,6 +12,14 @@ var hierarchy =
       ] ],
       [ "ScalarDefaults< std::string >", "struct_scalar_defaults.html", [
         [ "Reglso", "struct_reglso.html", null ]
+      ] ],
+      [ "ArrayDefaults< T >", "struct_array_defaults.html", null ],
+      [ "ScalarDefaults< T >", "struct_scalar_defaults.html", null ],
+      [ "ScalarDefaults< bool >", "struct_scalar_defaults_3_01bool_01_4.html", [
+        [ "RegBoInt", "struct_reg_bo_int.html", null ],
+        [ "RegBoIntInverse", "struct_reg_bo_int_inverse.html", null ],
+        [ "RegBoTrueFalse", "struct_reg_bo_true_false.html", null ],
+        [ "RegBotruefalse", "struct_reg_botruefalse.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::EpicsBackend::BackendRegisterer", "class_chimera_t_k_1_1_epics_backend_1_1_backend_registerer.html", null ],

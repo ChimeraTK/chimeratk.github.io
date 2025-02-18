@@ -15,7 +15,7 @@ var classamtf_db_cav =
     [ "getTestResultsByModTestIdAndCavity", "classamtf_db_cav.html#ad1ebefe06c0daed6e911a9569d7d07a8", null ],
     [ "getTestResultsByTestId", "classamtf_db_cav.html#aa1d20614db776d01c5de08ef8c52e611", null ],
     [ "newCavTest", "classamtf_db_cav.html#adc379807dc7d078ec70378462c5aea4a", null ],
-    [ "processTestResults", "classamtf_db_cav.html#a96913e164c600ae589757ea7616a6908", null ],
+    [ "processTestResults", "classamtf_db_cav.html#acbb6e29abf6883e128d6f26dc17a6775", null ],
     [ "setCavTestEndDate", "classamtf_db_cav.html#aac112c8d37e73a585a1c65c24e709d33", null ],
     [ "setCavTestParameter", "classamtf_db_cav.html#a14ebfa61c5491fb2d31a22b1cdf7620f", null ],
     [ "setCavTestParameter", "classamtf_db_cav.html#ae21b80d80b2a3bc444bbbd3eba7360f7", null ],

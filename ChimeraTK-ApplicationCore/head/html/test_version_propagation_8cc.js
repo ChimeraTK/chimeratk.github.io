@@ -1,9 +1,9 @@
 var test_version_propagation_8cc =
 [
-    [ "EmptyFixture", "class_tests_1_1test_versionpropagation_1_1_empty_fixture.html", null ],
-    [ "ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_push_module" ],
-    [ "TheOutputModule", "struct_tests_1_1test_versionpropagation_1_1_the_output_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_output_module" ],
-    [ "TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", "struct_tests_1_1test_versionpropagation_1_1_the_test_application" ],
+    [ "Tests::testVersionpropagation::EmptyFixture", "class_tests_1_1test_versionpropagation_1_1_empty_fixture.html", null ],
+    [ "Tests::testVersionpropagation::ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_push_module" ],
+    [ "Tests::testVersionpropagation::TheOutputModule", "struct_tests_1_1test_versionpropagation_1_1_the_output_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_output_module" ],
+    [ "Tests::testVersionpropagation::TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", "struct_tests_1_1test_versionpropagation_1_1_the_test_application" ],
     [ "BOOST_TEST_MODULE", "test_version_propagation_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "Fixture", "test_version_propagation_8cc.html#a6ab63a4f98fd089af5cf625290160a51", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a94eb8e1c7eb3ca201f2f0b626d1ca0e7", null ],

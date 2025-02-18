@@ -1,7 +1,7 @@
 var classua__builtin__types_1_1opcua___builtin_type__statuscode__t =
 [
-    [ "parseXML", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#abfc1ebbd058f6c3738fcc568461ebb3b", null ],
-    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#a319af1636bb723707d2f04b692325490", null ],
-    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#aa3eee9b0e3f0f99be9e32cec45c878e3", null ],
+    [ "parseXML", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#ad4724819ac51300e99826426cc908d79", null ],
+    [ "setNumericRepresentation", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#a924035e8e305926146289f8540c2a18f", null ],
+    [ "setStringReprentation", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#aa5013e1099940dae48ddcbbe4026fcb2", null ],
     [ "stringRepresentation", "classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#a27142dea7828c9832d8e230e9022fba1", null ]
 ];

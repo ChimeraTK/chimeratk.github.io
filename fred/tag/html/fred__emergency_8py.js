@@ -1,7 +1,7 @@
 var fred__emergency_8py =
 [
-    [ "FredEmergency", "classfred__emergency_1_1_fred_emergency.html", "classfred__emergency_1_1_fred_emergency" ],
-    [ "_execute_command", "fred__emergency_8py.html#a60b1161a8718205651238e26c7a5e204", null ],
+    [ "fred_emergency.FredEmergency", "classfred__emergency_1_1_fred_emergency.html", "classfred__emergency_1_1_fred_emergency" ],
+    [ "_execute_command", "fred__emergency_8py.html#a88d29d1fc52768b70f84a72aff4f9c96", null ],
     [ "action", "fred__emergency_8py.html#a8d7ff9de5547b490ddcf19e468c2dde4", null ],
     [ "args", "fred__emergency_8py.html#ad0d47dc44056af8482cac9ea9397dfa7", null ],
     [ "choices", "fred__emergency_8py.html#a90395b1dbece3412a429c26269c530e5", null ],

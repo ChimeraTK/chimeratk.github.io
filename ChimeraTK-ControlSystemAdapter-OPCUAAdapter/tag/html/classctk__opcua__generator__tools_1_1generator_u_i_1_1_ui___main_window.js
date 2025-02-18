@@ -1,7 +1,7 @@
 var classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window =
 [
-    [ "retranslateUi", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a0e573ae37b0ee66f849d52d8fc8fcd62", null ],
-    [ "setupUi", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a08cc5960782f95eea1a5b1a2584bcd01", null ],
+    [ "retranslateUi", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#aabf9c7660acdb7024b4be071a4a226f1", null ],
+    [ "setupUi", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a5e6872fec5e1ec88144f478adf6bb440", null ],
     [ "actionLoad_mapping_file", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#aa8237cffd9490e379c57d544531aceb8", null ],
     [ "actionOpen_File", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#aa3c7a502871509c5e63ccc8268ff45bd", null ],
     [ "actionQuit", "classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a252a2223a396c93f1dd057b637c3e72c", null ],

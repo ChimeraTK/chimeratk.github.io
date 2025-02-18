@@ -5,12 +5,13 @@ var indexSectionsWithContent =
   2: "cfgotu",
   3: "_cefghlnortuvx",
   4: "_abcdefghilmnoprstuvwx~",
-  5: "abcdefghiklmnoprstuv",
+  5: "_abcdefghiklmnoprstuv",
   6: "ntu",
   7: "u",
   8: "_u",
   9: "c",
-  10: "nsux"
+  10: "nsux",
+  11: "co"
 };
 
 var indexSectionNames =
@@ -25,7 +26,8 @@ var indexSectionNames =
   7: "enums",
   8: "enumvalues",
   9: "related",
-  10: "defines"
+  10: "defines",
+  11: "pages"
 };
 
 var indexSectionLabels =
@@ -40,6 +42,7 @@ var indexSectionLabels =
   7: "Enumerations",
   8: "Enumerator",
   9: "Friends",
-  10: "Macros"
+  10: "Macros",
+  11: "Pages"
 };
 

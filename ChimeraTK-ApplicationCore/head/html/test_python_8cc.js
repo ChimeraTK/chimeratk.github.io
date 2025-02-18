@@ -1,8 +1,8 @@
 var test_python_8cc =
 [
-    [ "TestApp", "struct_tests_1_1test_python_1_1_test_app.html", "struct_tests_1_1test_python_1_1_test_app" ],
-    [ "TestAppReadAny", "struct_tests_1_1test_python_1_1_test_app_read_any.html", "struct_tests_1_1test_python_1_1_test_app_read_any" ],
-    [ "TestAppVersionNumber", "struct_tests_1_1test_python_1_1_test_app_version_number.html", "struct_tests_1_1test_python_1_1_test_app_version_number" ],
+    [ "Tests::testPython::TestApp", "struct_tests_1_1test_python_1_1_test_app.html", "struct_tests_1_1test_python_1_1_test_app" ],
+    [ "Tests::testPython::TestAppReadAny", "struct_tests_1_1test_python_1_1_test_app_read_any.html", "struct_tests_1_1test_python_1_1_test_app_read_any" ],
+    [ "Tests::testPython::TestAppVersionNumber", "struct_tests_1_1test_python_1_1_test_app_version_number.html", "struct_tests_1_1test_python_1_1_test_app_version_number" ],
     [ "BOOST_TEST_MODULE", "test_python_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_python_8cc.html#ab40f20f4e36e028068aec18f521fbcbc", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_python_8cc.html#aaeaa45430e1d89c39a62d78b8cc1e47c", null ],

@@ -3,6 +3,7 @@ var hierarchy =
     [ "DAction::RegisterAccessor::AccessorHandler< UserType >", "class_d_action_1_1_register_accessor_1_1_accessor_handler.html", null ],
     [ "DAction::RegisterAccessor::AccessorHandler< int32_t >", "class_d_action_1_1_register_accessor_1_1_accessor_handler.html", null ],
     [ "ActionBase< T >", "class_action_base.html", [
+      [ "ActionCallback< int >", "class_action_callback.html", null ],
       [ "ActionCallback< T >", "class_action_callback.html", null ],
       [ "ActionDeviceAccess< T >", "class_action_device_access.html", null ],
       [ "ActionMuxDeviceAccess< T >", "class_action_mux_device_access.html", null ],
@@ -10,12 +11,11 @@ var hierarchy =
     ] ],
     [ "ActionBase< basicType >", "class_action_base.html", null ],
     [ "ActionBase< int >", "class_action_base.html", [
-      [ "ActionBitDeviceAccess", "class_action_bit_device_access.html", null ],
-      [ "ActionCallback< int >", "class_action_callback.html", null ]
+      [ "ActionBitDeviceAccess", "class_action_bit_device_access.html", null ]
     ] ],
     [ "ActionBase< Type >", "class_action_base.html", [
-      [ "ActionAdapter< BaseClass, Type >", "class_action_adapter.html", null ],
-      [ "ActionAdapter< int >", "class_action_adapter.html", null ]
+      [ "ActionAdapter< int >", "class_action_adapter.html", null ],
+      [ "ActionAdapter< BaseClass, Type >", "class_action_adapter.html", null ]
     ] ],
     [ "ActionCallbackFixture", "struct_action_callback_fixture.html", null ],
     [ "ActionCtkDeviceAccessBase< T >", "class_action_ctk_device_access_base.html", null ],
@@ -33,11 +33,11 @@ var hierarchy =
       [ "D_StdStringExtended< asyncOnGet >", "class_d___std_string_extended.html", null ]
     ] ],
     [ "D_type", null, [
-      [ "D_fctarrayExtended< D_type, basicType >", "class_d__fctarray_extended.html", null ],
-      [ "D_fctExtended< D_type, basicType, asyncOnGet, ActionType >", "class_d__fct_extended.html", null ]
+      [ "D_fctExtended< D_type, basicType, asyncOnGet, ActionType >", "class_d__fct_extended.html", null ],
+      [ "D_fctarrayExtended< D_type, basicType >", "class_d__fctarray_extended.html", null ]
     ] ],
     [ "DeviceProvider", "class_device_provider.html", null ],
-    [ "EqFctTest", null, [
+    [ "doocs::EqFctTest", null, [
       [ "TestEqFct< DOOCS_T >", "struct_test_eq_fct.html", null ]
     ] ],
     [ "std::exception", null, [

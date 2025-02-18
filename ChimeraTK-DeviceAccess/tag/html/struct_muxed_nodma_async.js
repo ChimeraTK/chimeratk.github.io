@@ -2,8 +2,8 @@ var struct_muxed_nodma_async =
 [
     [ "minimumUserType", "struct_muxed_nodma_async.html#a44b67ab0eef156654330c7597881778f", null ],
     [ "rawUserType", "struct_muxed_nodma_async.html#a1d858a0cf54941d2926c86164436fdac", null ],
-    [ "generateValue", "struct_muxed_nodma_async.html#ad628bed81249c304ef2ee51071c226c3", null ],
-    [ "getRemoteValue", "struct_muxed_nodma_async.html#a765f4224513fe812f466ed533cbe7a0f", null ],
+    [ "generateValue", "struct_muxed_nodma_async.html#afdf27ae7c1f14982a5e0dc3db3458f1e", null ],
+    [ "getRemoteValue", "struct_muxed_nodma_async.html#a127dbe7a4f538ed0301e8e78166fa028", null ],
     [ "isReadable", "struct_muxed_nodma_async.html#a316a8a7f9d967de34e1f6753343d17f9", null ],
     [ "isWriteable", "struct_muxed_nodma_async.html#a3ec5b62757afc2f4f4fc840c63d5d91f", null ],
     [ "nChannels", "struct_muxed_nodma_async.html#ae009802f4ac0d26fb7b306ef90739674", null ],

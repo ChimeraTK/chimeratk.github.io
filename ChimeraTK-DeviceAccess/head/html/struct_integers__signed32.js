@@ -2,8 +2,8 @@ var struct_integers__signed32 =
 [
     [ "minimumUserType", "struct_integers__signed32.html#a5810c49c7fa4af916268dee2b9ae48fd", null ],
     [ "rawUserType", "struct_integers__signed32.html#a98141081669e59b9ee52f7a0edd441d9", null ],
-    [ "generateValue", "struct_integers__signed32.html#a0842366dd86af533b73ffe055aebd209", null ],
-    [ "getRemoteValue", "struct_integers__signed32.html#a6ff4d05b4ad6484d41de2119f3c6ad69", null ],
+    [ "generateValue", "struct_integers__signed32.html#a503fb06bd018e3ed49afc91c44607aaa", null ],
+    [ "getRemoteValue", "struct_integers__signed32.html#acbcffa089d56a2254bc331233bf43a21", null ],
     [ "isReadable", "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6", null ],
     [ "isReadable", "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6", null ],
     [ "isWriteable", "struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063", null ],

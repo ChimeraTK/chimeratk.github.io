@@ -1,24 +1,26 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -104,29 +106,12 @@ var NAVTREE =
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
-    [ "XDMA backend", "md__scratch_dragon_sources__chimera_t_k-_device_access_doc_xdma_backend.html", [
-      [ "Prerequisites", "md__scratch_dragon_sources__chimera_t_k-_device_access_doc_xdma_backend.html#autotoc_md13", null ],
-      [ "Mapping of XDMA driver interfaces", "md__scratch_dragon_sources__chimera_t_k-_device_access_doc_xdma_backend.html#autotoc_md14", [
-        [ "Introduction", "spec__transfer_element.html#autotoc_md1", null ],
-        [ "A. Definitions", "spec__transfer_element.html#autotoc_md2", [
-          [ "Side note", "basic_example.html#autotoc_md0", null ],
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md3", null ]
-        ] ],
-        [ "B. Behavioural specification", "spec__transfer_element.html#autotoc_md4", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md5", null ]
-        ] ],
-        [ "C. Requirements for all implementations (full and decorator-like)", "spec__transfer_element.html#autotoc_md6", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md7", null ]
-        ] ],
-        [ "D. Requirements for full implementations (e.g. in backends)", "spec__transfer_element.html#autotoc_md8", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md9", null ]
-        ] ],
-        [ "E. Requirements for decorator-like implementations", "spec__transfer_element.html#autotoc_md10", [
-          [ "(*) Comments", "spec__transfer_element.html#autotoc_md11", null ]
-        ] ],
-        [ "AXI-Lite Master interface", "md__scratch_dragon_sources__chimera_t_k-_device_access_doc_xdma_backend.html#autotoc_md15", null ],
-        [ "AXI MM DMA interface", "md__scratch_dragon_sources__chimera_t_k-_device_access_doc_xdma_backend.html#autotoc_md16", null ],
-        [ "Interrupt lines (events)", "md__scratch_dragon_sources__chimera_t_k-_device_access_doc_xdma_backend.html#autotoc_md17", null ]
+    [ "XDMA backend", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html", [
+      [ "Prerequisites", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md13", null ],
+      [ "Mapping of XDMA driver interfaces", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md14", [
+        [ "AXI-Lite Master interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md15", null ],
+        [ "AXI MM DMA interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md16", null ],
+        [ "Interrupt lines (events)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md17", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -152,7 +137,7 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -172,28 +157,38 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"_l_n_m_multiplier_plugin_8cc_source.html",
-"_transfer_group_8h.html",
-"class_chimera_t_k_1_1_backend_register_catalogue.html#ad2f73070700284837f5e5172acdbebc2",
-"class_chimera_t_k_1_1_dummy_backend.html#a093b0616fcd7f468dd8a476876b14da9",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a83e946359978ea853b87c6141d49d0a6",
-"class_chimera_t_k_1_1_n_d_register_accessor.html#ac2b41bf5123ae657a3d10283ff484a9d",
-"class_chimera_t_k_1_1_read_any_group.html#a8eb7e6feb056c6920293d28004495783",
-"class_chimera_t_k_1_1_subdevice_register_accessor.html#a4c02e1f18c9d1ad94672aa58f196d988",
-"class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_chimera_t_k_1_1_void_00_01_chimera_t_k_1_1_void_01_4.html",
-"class_chimera_t_k_1_1async_1_1_dummy_muxed_interrupt_distributor.html#afa25c851d34a801096c2882d5155bd01",
-"class_pcie_backend_test.html#a60132ee154609697510f23bed461f6c9",
-"functions_vars_n.html",
-"spec__transfer_element.html#autotoc_md3",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a27a4786e70ff09a490ae316bdda06430",
-"struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa",
-"struct_master_enable_test.html#ae503aba38eacc99847043d1d47f45698",
-"struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762",
-"struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b",
-"test_double_buffering_8cpp_source.html",
-"test_l_map_math_plugin_push_pars_8cc.html#adec092d555ab6ba87a5bc4972c6658c0",
-"test_transfer_element_8cpp.html#a4fb082e0f242b0913393bd68cb7e0147"
+"_access_mode_8cc.html",
+"_l_n_m_type_hint_modifier_plugin_8cc.html",
+"_triggered_poll_distributor_8cc.html",
+"class_chimera_t_k_1_1_backend_factory.html#ad822950d59282d538922d5ac05edd94f",
+"class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a507102dc046aef8ad3ab6766020987b0",
+"class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1c",
+"class_chimera_t_k_1_1_event_file.html",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#a9ffa3ea7153f51a49c725526e5496b14",
+"class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a63d9bdc5b457a66aafb74564870813d5",
+"class_chimera_t_k_1_1_metadata_catalogue.html#ae0e2d27c4d5137b110e6750dc676cf83",
+"class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a1ababefe27fa83d009e4ffa1952c66f2",
+"class_chimera_t_k_1_1_one_d_register_accessor.html#afe95aa6e072a7565655d69afa67a41ff",
+"class_chimera_t_k_1_1_register_info.html",
+"class_chimera_t_k_1_1_subdevice_backend.html#ab01bbfe4c4c1d1d9b8d18ee5e97e7586",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html#aa96628a4ab593aff6f21d06cac6661b8",
+"class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01_i_m_p_l___t_01_4.html",
+"class_chimera_t_k_1_1_unified_backend_test.html#ad3f74d88389c6c2c7d9cea95cc8f38cb",
+"class_chimera_t_k_1_1async_1_1_domains_container.html#a457e8d37146999590359f88a1ae57c9e",
+"class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html",
+"class_write_monitoring_backend.html#aa24d995692d7f41e328c3f2bfce06273",
+"globals_s.html",
+"namespace_chimera_t_k_1_1testable__rebot__sleep.html#a73e89a8c5e60ca0f1571ed3e34c7af68",
+"struct_chimera_t_k_1_1_decorator_map_key.html#a3a0f5571b0b4db08b48bd3623a460766",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#aa64fbd6467e3661891e1fc62327b440d",
+"struct_chimera_t_k_1_1_test_capabilities.html#a09866ed2770ce955a71312f9c6c58f1b",
+"struct_device_fixture2_d___d_a_q0.html",
+"struct_muxed_area2.html#aedc2288a1ecbf8aad092fb8555c4146e",
+"struct_reg_single_word.html#a878cc2958f8458a208d45474e8dc22cc",
+"struct_test_fixture.html#a352637affc631a82ca50edb051b0bbf5",
+"test_dummy_backend_8cpp.html#aa1c549aea605c905fc69a7ff50ae6331",
+"test_map_file_parser_8cpp.html#a3079652f1678356c25da911b0210b35f",
+"test_transfer_element_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

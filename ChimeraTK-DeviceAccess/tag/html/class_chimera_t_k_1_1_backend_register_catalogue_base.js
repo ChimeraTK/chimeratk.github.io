@@ -4,12 +4,12 @@ var class_chimera_t_k_1_1_backend_register_catalogue_base =
     [ "BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a17a8cbcd1f2d7ebd88a7840eacdac8be", null ],
     [ "~BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a0720f531a1e6a16cb04982df5bb1c4fa", null ],
     [ "BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a24c80b49f7384777d988be19e49f2e67", null ],
-    [ "clone", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a70de19981c9b5459f95baff09ae98735", null ],
-    [ "getConstIteratorBegin", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#aebd6cdf51331ad2c3b33ecfd789045b7", null ],
-    [ "getConstIteratorEnd", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#ac75c3ff306a9d86240e1128bb5c7a10c", null ],
+    [ "clone", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a45f954ca5fdec757f35788f969c646de", null ],
+    [ "getConstIteratorBegin", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a3dcd2260adca64fc7ff943796154a08e", null ],
+    [ "getConstIteratorEnd", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#ae610f01e314cc844985f5af13904f921", null ],
     [ "getNumberOfRegisters", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a60d9b6a864b0c5996c6e2d799a71dfa0", null ],
     [ "getRegister", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a4916b6b0611b36b4be85ee742d499322", null ],
     [ "hasRegister", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a6c2ced8239bde7a7bc27f62404bd6937", null ],
-    [ "operator=", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a09f0db233445fa9e495b92c1efa0795e", null ],
-    [ "operator=", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a41519fead753a4b1cedb783141e78847", null ]
+    [ "operator=", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#aa223d6f7aee607b346bc891cdaefa547", null ],
+    [ "operator=", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a165250d39d882f987175bc0036d91332", null ]
 ];

@@ -1,7 +1,7 @@
 var _utilities_8h =
 [
-    [ "DeviceDescriptor", "struct_chimera_t_k_1_1_device_descriptor.html", "struct_chimera_t_k_1_1_device_descriptor" ],
-    [ "Sdm", "struct_chimera_t_k_1_1_sdm.html", "struct_chimera_t_k_1_1_sdm" ],
+    [ "ChimeraTK::DeviceDescriptor", "struct_chimera_t_k_1_1_device_descriptor.html", "struct_chimera_t_k_1_1_device_descriptor" ],
+    [ "ChimeraTK::Sdm", "struct_chimera_t_k_1_1_sdm.html", "struct_chimera_t_k_1_1_sdm" ],
     [ "aliasLookUp", "_utilities_8h.html#a2eee1bba7066a6d441061840f63ccd6d", null ],
     [ "countOccurence", "_utilities_8h.html#a5bf0fb7a4de6e9fba9e6b36baa4bf531", null ],
     [ "getAliasList", "_utilities_8h.html#a25a0748d411f914029fd961f040bd2ee", null ],

@@ -6,7 +6,7 @@ var struct_chimera_t_k_1_1_model_1_1_vertex_properties =
     [ "InvalidProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_invalid_properties.html", null ],
     [ "ModuleGroupProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_module_group_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_module_group_properties" ],
     [ "ProcessVariableProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_process_variable_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_process_variable_properties" ],
-    [ "RootProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties" ],
+    [ "RootProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html", null ],
     [ "VariableGroupProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_variable_group_properties" ],
     [ "Type", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a903fd8315e038ca9a6870b32bcb0bbbe", [
       [ "invalid", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a903fd8315e038ca9a6870b32bcb0bbbeafedb2d84cafe20862cb4399751a8a7e3", null ],
@@ -21,7 +21,7 @@ var struct_chimera_t_k_1_1_model_1_1_vertex_properties =
     [ "VertexProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a5aa2059d0b8b6ad78ca916ccb93c12a6", null ],
     [ "VertexProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a7682e4e7c524d340659d0c40b4a15fa2", null ],
     [ "makeProxy", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a997c09f537eb678f138b14d6a6fa6064", null ],
-    [ "operator=", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a49b692e060b58b1d8736b5627ef605a1", null ],
+    [ "operator=", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a32052f3ce8dd03c66f8e7194bc38bd57", null ],
     [ "visit", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a626f2e69e863d1da4d8d22a3ca0b3c4b", null ],
     [ "visitProxy", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#ad503fb3264409549cf023d607234ad4f", null ],
     [ "p", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a408f6f965fa80d4a935717e00bc4e675", null ],

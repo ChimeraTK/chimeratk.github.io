@@ -1,6 +1,6 @@
 var _fred_control_protocol_base_8h =
 [
-    [ "FredControlProtocolBase", "classfred_1_1_fred_control_protocol_base.html", "classfred_1_1_fred_control_protocol_base" ],
+    [ "fred::FredControlProtocolBase", "classfred_1_1_fred_control_protocol_base.html", "classfred_1_1_fred_control_protocol_base" ],
     [ "LineBreaks", "_fred_control_protocol_base_8h.html#a63af6a0d9bace23e9dfed72c64bb9f55", [
       [ "windows_", "_fred_control_protocol_base_8h.html#a63af6a0d9bace23e9dfed72c64bb9f55a92c45a25e824a0997f38eb58ef8072f2", null ],
       [ "linux_", "_fred_control_protocol_base_8h.html#a63af6a0d9bace23e9dfed72c64bb9f55af3dfd03e84bb3efd1302688157a2a896", null ]

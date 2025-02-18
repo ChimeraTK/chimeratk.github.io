@@ -2,8 +2,8 @@ var struct_interrupt__dummy =
 [
     [ "minimumUserType", "struct_interrupt__dummy.html#a4640cee5c34d473d6b5a47ec0277954b", null ],
     [ "rawUserType", "struct_interrupt__dummy.html#a8f87ce19b65f38266307989f7ac08d48", null ],
-    [ "generateValue", "struct_interrupt__dummy.html#aeead18088be61af793b09531492b52a9", null ],
-    [ "getRemoteValue", "struct_interrupt__dummy.html#a20f7eda01f542092b95580bc13dae816", null ],
+    [ "generateValue", "struct_interrupt__dummy.html#a2023ef6246c10460f58d6f12dc05e2f5", null ],
+    [ "getRemoteValue", "struct_interrupt__dummy.html#a88f440e66acf849c77b389b96eb49994", null ],
     [ "isReadable", "struct_interrupt__dummy.html#a12b3fe37b53f4a39f6082bb0e332f9e5", null ],
     [ "isWriteable", "struct_interrupt__dummy.html#aedc83648b27554b4f80805887223d545", null ],
     [ "nChannels", "struct_interrupt__dummy.html#a1f05518699bfc8e0b78b42e971e5119c", null ],

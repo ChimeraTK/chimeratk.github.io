@@ -1,6 +1,6 @@
 var _exceptions_8h =
 [
-    [ "Exception", "classfred_1_1_exception.html", "classfred_1_1_exception" ],
+    [ "fred::Exception", "classfred_1_1_exception.html", "classfred_1_1_exception" ],
     [ "DEFINE_FUSE_RELAY_BOARD_EXCEPTION", "_exceptions_8h.html#aaa694fd2dcb0361f258902d0eacb3487", null ],
     [ "DEFINE_FUSE_RELAY_BOARD_EXCEPTION", "_exceptions_8h.html#ac43a502e3ee2b1ed31666ca24bfffc76", null ],
     [ "DEFINE_FUSE_RELAY_BOARD_EXCEPTION", "_exceptions_8h.html#ace196da2487556d9e963e5c9c6cc16e4", null ],

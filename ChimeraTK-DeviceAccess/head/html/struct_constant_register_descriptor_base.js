@@ -1,7 +1,7 @@
 var struct_constant_register_descriptor_base =
 [
-    [ "generateValue", "struct_constant_register_descriptor_base.html#afc2e20dded028af6900e842078a47e14", null ],
-    [ "getRemoteValue", "struct_constant_register_descriptor_base.html#af076bd4dae4d56715927396dbdd92bcd", null ],
+    [ "generateValue", "struct_constant_register_descriptor_base.html#a0557e7a64a5fda19612360c1820b6d45", null ],
+    [ "getRemoteValue", "struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9", null ],
     [ "isWriteable", "struct_constant_register_descriptor_base.html#abc15f5afdfbdaecb8071218aa243f79b", null ],
     [ "nChannels", "struct_constant_register_descriptor_base.html#a534162394e15a2ddd6042480cea25942", null ],
     [ "nRuntimeErrorCases", "struct_constant_register_descriptor_base.html#a0880e66795bc771acc3d07501158c2ee", null ],

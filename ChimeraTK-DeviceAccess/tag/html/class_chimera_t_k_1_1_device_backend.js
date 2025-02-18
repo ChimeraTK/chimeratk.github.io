@@ -4,7 +4,7 @@ var class_chimera_t_k_1_1_device_backend =
     [ "activateAsyncRead", "class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8", null ],
     [ "checkActiveException", "class_chimera_t_k_1_1_device_backend.html#abe07262daa951277112950a2f593ab51", null ],
     [ "close", "class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e", null ],
-    [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE", "class_chimera_t_k_1_1_device_backend.html#a3feea5c1b2cdfbafa6aec22c86dbe6dd", null ],
+    [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE", "class_chimera_t_k_1_1_device_backend.html#a11f5bf9acb8651b7ee9b5aeda5909989", null ],
     [ "getMetadataCatalogue", "class_chimera_t_k_1_1_device_backend.html#a89791ccc7e5e875cd4b1e6efb21c5633", null ],
     [ "getRegisterAccessor", "class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_device_backend.html#a517c358022e282864da357bc1b8dfd5e", null ],

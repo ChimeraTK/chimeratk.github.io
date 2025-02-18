@@ -1,6 +1,6 @@
 var test_device_initialisation_handler_8cc =
 [
-    [ "TestApplication", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application.html", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application" ],
+    [ "Tests::testDeviceInitialisationHandler::TestApplication", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application.html", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application" ],
     [ "BOOST_TEST_MODULE", "test_device_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_initialisation_handler_8cc.html#a0ec685088a1064294caf3e98dcc22c5e", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_initialisation_handler_8cc.html#a95861e01a48fcfd929433ec337829e94", null ],

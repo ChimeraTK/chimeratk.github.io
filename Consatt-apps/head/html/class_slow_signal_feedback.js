@@ -15,7 +15,7 @@ var class_slow_signal_feedback =
     [ "SlowSignalFeedback", "class_slow_signal_feedback.html#ad41be69da3583e743027cf764b4233ef", null ],
     [ "clearCtrlI", "class_slow_signal_feedback.html#a2efc0b85d6357b9925b3da7fcce2f0c7", null ],
     [ "getStatus", "class_slow_signal_feedback.html#afb7c2209dc32646d4a51025c4e814f50", null ],
-    [ "initialize", "class_slow_signal_feedback.html#a3e52d365c1c1b7dfd37873919a4eabb5", null ],
+    [ "initialize", "class_slow_signal_feedback.html#ac490ddd3a3fdd6929eee842b5c5ed2a0", null ],
     [ "isActive", "class_slow_signal_feedback.html#a36340194e3206d5cf31dd47bb8b1ae1e", null ],
     [ "resetCtrl", "class_slow_signal_feedback.html#a026bc2373cd24a56be28360cb780108a", null ],
     [ "setFbPaused", "class_slow_signal_feedback.html#a9602758cd0717072439269a806a8de1c", null ],

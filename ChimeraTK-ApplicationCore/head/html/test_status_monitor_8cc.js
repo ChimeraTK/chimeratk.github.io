@@ -1,6 +1,6 @@
 var test_status_monitor_8cc =
 [
-    [ "TestApplication", "struct_tests_1_1test_status_monitor_1_1_test_application.html", "struct_tests_1_1test_status_monitor_1_1_test_application" ],
+    [ "Tests::testStatusMonitor::TestApplication< T >", "struct_tests_1_1test_status_monitor_1_1_test_application.html", "struct_tests_1_1test_status_monitor_1_1_test_application" ],
     [ "BOOST_TEST_MODULE", "test_status_monitor_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_monitor_8cc.html#a76dc34176809f9aebc2108780145d35a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_monitor_8cc.html#a7c0257d91b3b2a063f08ebf39031b75c", null ],

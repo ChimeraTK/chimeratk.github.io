@@ -15,5 +15,22 @@ var namespace_tests_1_1test_modules =
     [ "VectorModule", "struct_tests_1_1test_modules_1_1_vector_module.html", "struct_tests_1_1test_modules_1_1_vector_module" ],
     [ "VectorModuleGroup", "struct_tests_1_1test_modules_1_1_vector_module_group.html", "struct_tests_1_1test_modules_1_1_vector_module_group" ],
     [ "VectorOfEverythingApp", "struct_tests_1_1test_modules_1_1_vector_of_everything_app.html", "struct_tests_1_1test_modules_1_1_vector_of_everything_app" ],
-    [ "VectorOfModulesApp", "struct_tests_1_1test_modules_1_1_vector_of_modules_app.html", "struct_tests_1_1test_modules_1_1_vector_of_modules_app" ]
+    [ "VectorOfModulesApp", "struct_tests_1_1test_modules_1_1_vector_of_modules_app.html", "struct_tests_1_1test_modules_1_1_vector_of_modules_app" ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a2c842fcc91b3659f330e5180c93f8a0d", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a48bdf4d7ae147683316632b97be0d6a8", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#abc7bcccc1759f45deaa1e467742a2a45", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a3ca653f884d42540e82af21858d4ef65", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#ae549da02229fa71aad65a257fc4a0170", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a0fa454f6743716824e102cfea93f5142", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#aa7f8e219e6ce51b026ee25a4a79f5fd1", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a3257eb9334a4b1570d044f8b0f550d32", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a028fb3adf3e89116d643fd682ebfeae8", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a2bc7545b24b71dd9ac6b7bb13e1e7fdd", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a3c09261577b8e7a3aacdda44ffbc952d", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a35e319278c84e5ee310d783c59b5f9ac", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#aa82bcbff6823a640242d1a048fdd53ea", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a999d83facdf2ff7fa94d47efb83908d8", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a0e90acbae8e401e8851f775b4fedd1d6", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a3874780b0cb17f1332193c64fb4f8b09", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_modules.html#a9dd0d4928e1eed7c378b15bacd1fa30a", null ]
 ];

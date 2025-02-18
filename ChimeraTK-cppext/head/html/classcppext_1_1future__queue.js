@@ -6,7 +6,7 @@ var classcppext_1_1future__queue =
     [ "future_queue", "classcppext_1_1future__queue.html#a1959210ec118f06d9a102bf2ba3e81a6", null ],
     [ "front", "classcppext_1_1future__queue.html#ac0e89fcfd55f9a61fa32fec5bfb8173a", null ],
     [ "front", "classcppext_1_1future__queue.html#a04cc3d83b0f2d1bc720053258b300ff4", null ],
-    [ "operator=", "classcppext_1_1future__queue.html#a09c3a1d189e7694b8c2e8e97644ae4fa", null ],
+    [ "operator=", "classcppext_1_1future__queue.html#a5f136c8313e912530b91a6fbe5b1c17f", null ],
     [ "pop", "classcppext_1_1future__queue.html#a3cf26b7974d1b28a4f070bf35cd70031", null ],
     [ "pop", "classcppext_1_1future__queue.html#a42a0a7f4fbffbe0911990de5fd76dc75", null ],
     [ "pop_wait", "classcppext_1_1future__queue.html#a08ba4fd52b05b1acb462ec5e6bb6b0c7", null ],

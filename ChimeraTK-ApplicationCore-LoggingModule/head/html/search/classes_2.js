@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dummymodule_57',['DummyModule',['../struct_dummy_module.html',1,'']]]
+  ['dummymodule_0',['DummyModule',['../struct_dummy_module.html',1,'']]]
 ];

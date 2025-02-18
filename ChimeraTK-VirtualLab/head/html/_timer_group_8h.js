@@ -1,10 +1,9 @@
 var _timer_group_8h =
 [
-    [ "TimerGroup", "class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html", "class_chimera_t_k_1_1_virtual_lab_1_1_timer_group" ],
-    [ "findRemaining", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining.html", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining" ],
-    [ "findRemainingByName", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining_by_name.html", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining_by_name" ],
-    [ "advanceTimer", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1advance_timer.html", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1advance_timer" ],
-    [ "TimerGroup", "classmtca4u_1_1_virtual_lab_1_1_timer_group.html", null ],
+    [ "ChimeraTK::VirtualLab::TimerGroup< timerTypes >", "class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html", "class_chimera_t_k_1_1_virtual_lab_1_1_timer_group" ],
+    [ "ChimeraTK::VirtualLab::TimerGroup< timerTypes >::findRemaining", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining.html", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining" ],
+    [ "ChimeraTK::VirtualLab::TimerGroup< timerTypes >::findRemainingByName", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining_by_name.html", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1find_remaining_by_name" ],
+    [ "ChimeraTK::VirtualLab::TimerGroup< timerTypes >::advanceTimer", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1advance_timer.html", "struct_chimera_t_k_1_1_virtual_lab_1_1_timer_group_1_1advance_timer" ],
     [ "COUNT_ARGS", "_timer_group_8h.html#acba40d6e71ce4513a0dda5c273536fec", null ],
     [ "COUNT_ARGS_HELPER", "_timer_group_8h.html#ae0e0a1df059e81c02f6c03dc93f4aa91", null ],
     [ "DECLARE_TIMER_GROUP_DECLARE_VECTOR", "_timer_group_8h.html#af5fc1f8f3478c2e0e28a5176dd821333", null ],

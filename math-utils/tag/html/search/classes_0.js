@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['circularstatistics_72',['CircularStatistics',['../class_math_utils_1_1_circular_statistics.html',1,'MathUtils']]]
+  ['circularstatistics_0',['CircularStatistics',['../class_math_utils_1_1_circular_statistics.html',1,'MathUtils']]]
 ];

@@ -1,7 +1,7 @@
 var test_shared_dummy_backend_unified_8cpp =
 [
     [ "HelperProcess", "struct_helper_process.html", "struct_helper_process" ],
-    [ "Integers_base", "struct_integers__base.html", "struct_integers__base" ],
+    [ "Integers_base< Derived >", "struct_integers__base.html", "struct_integers__base" ],
     [ "Integers_signed32", "struct_integers__signed32.html", "struct_integers__signed32" ],
     [ "Integers_signed32_RO", "struct_integers__signed32___r_o.html", "struct_integers__signed32___r_o" ],
     [ "Integers_signed32_WO", "struct_integers__signed32___w_o.html", "struct_integers__signed32___w_o" ],

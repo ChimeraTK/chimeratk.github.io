@@ -1,4 +1,4 @@
 var _loger_8cc =
 [
-    [ "operator<<", "_loger_8cc.html#a41e6edd09268b658d7aa6004aadcdf4e", null ]
+    [ "operator<<", "_loger_8cc.html#a7e9dab8f2aeaf1b92d2c1c5cfee63972", null ]
 ];

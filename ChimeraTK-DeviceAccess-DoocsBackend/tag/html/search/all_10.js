@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['unsubscribe_261',['unsubscribe',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a1b05e96e439a7650f00c057ce739502c',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
-  ['update_262',['update',['../classeq__dummy.html#ade42fc83f3b97c3bcc52ecb31b8a82e6',1,'eq_dummy']]],
-  ['updatestamp_263',['updateStamp',['../struct_all_register_defaults.html#af99cc1591a83902d0d576193c33d67da',1,'AllRegisterDefaults::updateStamp()'],['../struct_reg_some_spectrum.html#af62ac540cb5d895ecc6f41056327afb4',1,'RegSomeSpectrum::updateStamp()']]],
-  ['usezmq_264',['useZMQ',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]]
+  ['technical_20specification_3a_20deviceaccess_20doocsbackend_20v0_200wip_0',['Technical specification: DeviceAccess DoocsBackend V0.0WIP',['../spec__doocs_backend.html',1,'']]],
+  ['testcaching_2ecpp_1',['testCaching.cpp',['../test_caching_8cpp.html',1,'']]],
+  ['testdoocsbackend_2ecpp_2',['testDoocsBackend.cpp',['../test_doocs_backend_8cpp.html',1,'']]],
+  ['testunifiedbackendtest_2ecpp_3',['testUnifiedBackendTest.cpp',['../test_unified_backend_test_8cpp.html',1,'']]],
+  ['testzeromq_2ecpp_4',['testZeroMQ.cpp',['../test_zero_m_q_8cpp.html',1,'']]],
+  ['to_20generate_20xml_20descriptor_20file_5',['Using DoocsBackend to Generate Xml Descriptor File',['../cache_file.html#autotoc_md0',1,'']]],
+  ['types_6',['Supported Data Types',['../supported_types.html',1,'']]]
 ];

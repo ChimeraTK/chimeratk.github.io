@@ -1,6 +1,6 @@
 var test_transfer_group_8cpp =
 [
-    [ "CountingDecorator", "struct_counting_decorator.html", "struct_counting_decorator" ],
+    [ "CountingDecorator< T >", "struct_counting_decorator.html", "struct_counting_decorator" ],
     [ "BOOST_TEST_DYN_LINK", "test_transfer_group_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_transfer_group_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "CHECK_COUNTERS_HIGH_LEVEL", "test_transfer_group_8cpp.html#acfbc2b3911b321f1715322ee5075a8ec", null ],
@@ -25,5 +25,5 @@ var test_transfer_group_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a1caddae8b870aa08dea86735f24942b4", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#ad64e074a85030c1367320244e9178ea4", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a10aea291c8afe5cda98fe78a10872044", null ],
-    [ "makeTETA", "test_transfer_group_8cpp.html#a36e2e1b38077237ab715556d6af8d779", null ]
+    [ "makeTETA", "test_transfer_group_8cpp.html#aeb580dccbbe967b14885542387eef7ab", null ]
 ];

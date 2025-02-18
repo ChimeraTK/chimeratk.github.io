@@ -1,7 +1,7 @@
 var struct_reg_some_spectrum =
 [
     [ "minimumUserType", "struct_reg_some_spectrum.html#af1613a5df9e3d1e7118d05762ff5a064", null ],
-    [ "getRemoteValue", "struct_reg_some_spectrum.html#a132eb0aa21a8944822ef9c635e6f8700", null ],
+    [ "getRemoteValue", "struct_reg_some_spectrum.html#ad9438d0edc99ccb918e1c326b49d59bf", null ],
     [ "nElementsPerChannel", "struct_reg_some_spectrum.html#a42f1a7debb88d5396091a77b853aaba2", null ],
     [ "path", "struct_reg_some_spectrum.html#a749e287b5be5730b6efb4ba7b7e9db50", null ],
     [ "setRemoteValue", "struct_reg_some_spectrum.html#ab8dedae9c06aaf55779ed7a1925e27fd", null ],

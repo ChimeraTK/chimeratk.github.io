@@ -1,7 +1,7 @@
 var struct_my_data =
 [
-    [ "operator<<", "struct_my_data.html#a3ca397918aa887a9d9cdb23c9a631de6", null ],
-    [ "operator>>", "struct_my_data.html#a007c42622b2091ce7bfd3d74596ce5c9", null ],
+    [ "operator<<", "struct_my_data.html#a9b52e7c6f94aba03601422ef41af5f38", null ],
+    [ "operator>>", "struct_my_data.html#a96250df16c82215bb700f8c529e21a22", null ],
     [ "f0", "struct_my_data.html#a7906ebd93252afea63cd8d71e32d6014", null ],
     [ "fs", "struct_my_data.html#a84b7eea737905e8ca037a03cdf006dd1", null ],
     [ "name", "struct_my_data.html#aaab9a605e76a82d6a5950e72bad361a2", null ],

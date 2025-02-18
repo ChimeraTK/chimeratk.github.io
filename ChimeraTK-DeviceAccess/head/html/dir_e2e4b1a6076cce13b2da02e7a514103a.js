@@ -7,18 +7,11 @@ var dir_e2e4b1a6076cce13b2da02e7a514103a =
     [ "LNMBitRangeAccessPlugin.cc", "_l_n_m_bit_range_access_plugin_8cc.html", "_l_n_m_bit_range_access_plugin_8cc" ],
     [ "LNMDoubleBufferPlugin.cc", "_l_n_m_double_buffer_plugin_8cc.html", null ],
     [ "LNMForcePollingReadPlugin.cc", "_l_n_m_force_polling_read_plugin_8cc.html", null ],
-    [ "LNMForceReadOnlyPlugin.cc", "_l_n_m_force_read_only_plugin_8cc.html", [
-      [ "ForceReadOnlyPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator" ]
-    ] ],
-    [ "LNMMathPlugin.cc", "_l_n_m_math_plugin_8cc.html", [
-      [ "MathPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator" ]
-    ] ],
-    [ "LNMMonostableTriggerPlugin.cc", "_l_n_m_monostable_trigger_plugin_8cc.html", [
-      [ "MonostableTriggerPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator" ]
-    ] ],
-    [ "LNMMultiplierPlugin.cc", "_l_n_m_multiplier_plugin_8cc.html", [
-      [ "MultiplierPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator" ]
-    ] ],
+    [ "LNMForceReadOnlyPlugin.cc", "_l_n_m_force_read_only_plugin_8cc.html", "_l_n_m_force_read_only_plugin_8cc" ],
+    [ "LNMMathPlugin.cc", "_l_n_m_math_plugin_8cc.html", "_l_n_m_math_plugin_8cc" ],
+    [ "LNMMonostableTriggerPlugin.cc", "_l_n_m_monostable_trigger_plugin_8cc.html", "_l_n_m_monostable_trigger_plugin_8cc" ],
+    [ "LNMMultiplierPlugin.cc", "_l_n_m_multiplier_plugin_8cc.html", "_l_n_m_multiplier_plugin_8cc" ],
+    [ "LNMTagModifierPluign.cc", "_l_n_m_tag_modifier_pluign_8cc.html", null ],
     [ "LNMTypeHintModifierPlugin.cc", "_l_n_m_type_hint_modifier_plugin_8cc.html", null ],
     [ "LogicalNameMapParser.cc", "_logical_name_map_parser_8cc.html", "_logical_name_map_parser_8cc" ],
     [ "LogicalNameMappingBackend.cc", "_logical_name_mapping_backend_8cc.html", "_logical_name_mapping_backend_8cc" ]

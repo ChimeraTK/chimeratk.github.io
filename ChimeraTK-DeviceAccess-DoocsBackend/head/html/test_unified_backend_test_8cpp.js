@@ -1,9 +1,9 @@
 var test_unified_backend_test_8cpp =
 [
     [ "DoocsLauncher", "class_doocs_launcher.html", "class_doocs_launcher" ],
-    [ "AllRegisterDefaults", "struct_all_register_defaults.html", "struct_all_register_defaults" ],
-    [ "ScalarDefaults", "struct_scalar_defaults.html", "struct_scalar_defaults" ],
-    [ "ArrayDefaults", "struct_array_defaults.html", "struct_array_defaults" ],
+    [ "AllRegisterDefaults< DERIVED >", "struct_all_register_defaults.html", "struct_all_register_defaults" ],
+    [ "ScalarDefaults< DERIVED >", "struct_scalar_defaults.html", "struct_scalar_defaults" ],
+    [ "ArrayDefaults< DERIVED >", "struct_array_defaults.html", "struct_array_defaults" ],
     [ "RegSomeInt", "struct_reg_some_int.html", "struct_reg_some_int" ],
     [ "RegSomeRoInt", "struct_reg_some_ro_int.html", "struct_reg_some_ro_int" ],
     [ "RegSomeZmqInt", "struct_reg_some_zmq_int.html", "struct_reg_some_zmq_int" ],
@@ -26,5 +26,5 @@ var test_unified_backend_test_8cpp =
     [ "BOOST_TEST_MODULE", "test_unified_backend_test_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_unified_backend_test_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ],
     [ "BOOST_GLOBAL_FIXTURE", "test_unified_backend_test_8cpp.html#a28df7f71d0da5f3d08e45822674622e5", null ],
-    [ "RegSomeString::generateValue< std::string >", "test_unified_backend_test_8cpp.html#ab6633e116b5815c9253d61ed0f4a98d3", null ]
+    [ "RegSomeString::generateValue< std::string >", "test_unified_backend_test_8cpp.html#ac11054d49dc01daeaf43b47c2935aec8", null ]
 ];

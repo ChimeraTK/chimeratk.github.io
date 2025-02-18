@@ -10,6 +10,6 @@ var test_variable_mapper_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_variable_mapper_8cpp.html#afbd763163476492fbf3cc6a33747c357", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_variable_mapper_8cpp.html#ac4496423b41156884bb226eeb580fd9a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_variable_mapper_8cpp.html#ac6ab0f2ec46da87f9c3785f4a92a9965", null ],
-    [ "generateInputVariables", "test_variable_mapper_8cpp.html#a0f602618a3c14a28b0ea85cb42980ab1", null ],
+    [ "generateInputVariables", "test_variable_mapper_8cpp.html#a74d151b24e6ce13ec60eb880b73447a3", null ],
     [ "testXmlParsing", "test_variable_mapper_8cpp.html#ad7cc765a56d441c093fb4ce50133e6a1", null ]
 ];

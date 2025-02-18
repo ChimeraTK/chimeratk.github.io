@@ -12,5 +12,15 @@ var namespace_tests_1_1test_propagate_data_fault_flag =
     [ "TestApplication5", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application5.html", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application5" ],
     [ "TestModule1", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module1.html", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module1" ],
     [ "TestModule2", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module2.html", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module2" ],
-    [ "TestModule3", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module3.html", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module3" ]
+    [ "TestModule3", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module3.html", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_module3" ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#a284a4ca4dfdc9eec3ce05ec166a9465e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#a8cc0ce058ee15bb4aea1a6f2ae3fcf59", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#af2d3fc9723f106c8ae3d988665c3e316", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#aeda12f351ae96ef5c72bf5a54bc3b3fc", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#a23964c9832d198571b667ce036e5f236", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#a8265c299d71266dad2e9b3f8d6f03e32", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#afc7687294952f4f3074136037d8d74b0", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#a3900c06dda573270252afbdc1bdbc6ba", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#ab7a090e63356795563d1fe9a95036827", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_propagate_data_fault_flag.html#a16d2f33dca8f131777249832548bb50b", null ]
 ];

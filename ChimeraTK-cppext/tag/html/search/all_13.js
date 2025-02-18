@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['value_144',['value',['../class_my_exception.html#a99b403c09e350c3f824c4267123c985b',1,'MyException::value()'],['../struct_movable_data_type.html#aa77dfeb839babbb8e0928364481c8a13',1,'MovableDataType::value()'],['../struct_movable_data_type.html#aee1893ecd65677163f518b5f6727f89b',1,'MovableDataType::value() const'],['../struct_movable_data_type.html#aa77dfeb839babbb8e0928364481c8a13',1,'MovableDataType::value()'],['../struct_movable_data_type.html#aa77dfeb839babbb8e0928364481c8a13',1,'MovableDataType::value()'],['../struct_movable_data_type.html#aee1893ecd65677163f518b5f6727f89b',1,'MovableDataType::value() const'],['../struct_movable_data_type.html#aee1893ecd65677163f518b5f6727f89b',1,'MovableDataType::value() const']]],
-  ['value_5ftype_145',['value_type',['../classcppext_1_1future__queue.html#a3156a4f9a08e6cbe3f4761a014f9b7fc',1,'cppext::future_queue::value_type()'],['../structstd_1_1iterator__traits_3_01helper__iterator_01_4.html#af896466b85a6a0f73718cb6ab538d74c',1,'std::iterator_traits&lt; helper_iterator &gt;::value_type()']]]
+  ['undef_0',['undef',['../struct_movable_data_type.html#ab2b2ba48978f4af65c1413b4c56b3fae',1,'MovableDataType']]],
+  ['unlock_1',['unlock',['../classcppext_1_1semaphore.html#a4c26ed96cbaa4c3fec9c9d9c03c460e8',1,'cppext::semaphore']]],
+  ['update_5fread_5findex_5fmax_2',['update_read_index_max',['../classcppext_1_1future__queue__base.html#a8384de814d10e0c85eba712debe838fb',1,'cppext::future_queue_base']]]
 ];

@@ -15,5 +15,11 @@ var namespace_tests_1_1test_circular_dependency_faulty_flags =
     [ "TestApplication1", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_application1.html", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_application1" ],
     [ "TestApplication2", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_application2.html", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_application2" ],
     [ "TestModuleBase", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_module_base.html", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_module_base" ],
-    [ "TestModuleBase2", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_module_base2.html", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_module_base2" ]
+    [ "TestModuleBase2", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_module_base2.html", "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_test_module_base2" ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_circular_dependency_faulty_flags.html#af09cbb6df08b8bdec5d281be5d192df8", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_circular_dependency_faulty_flags.html#ab0b14e0eceeb429ab9a3d73038331eee", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_circular_dependency_faulty_flags.html#a111fd9678cf4c398d2290cba24f982c7", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_circular_dependency_faulty_flags.html#a8a749000de07065340af9a7c693976f1", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_circular_dependency_faulty_flags.html#aecd023834e43405b1d3688a2aa7b4d24", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_circular_dependency_faulty_flags.html#aeb72de6508e817587bc443d57a2932a7", null ]
 ];
