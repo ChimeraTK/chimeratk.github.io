@@ -40,7 +40,7 @@ var searchData=
   ['setvalidity_37',['setValidity',['../class_chimera_t_k_1_1_exception_dummy.html#ab4a4085a0c80283ee8a2dae5ea6af0d7',1,'ChimeraTK::ExceptionDummy']]],
   ['setwritecallback_38',['setWriteCallback',['../class_chimera_t_k_1_1_dummy_register_accessor.html#ae2eff144ac5972ec082dc104eb1554b3',1,'ChimeraTK::DummyRegisterAccessor']]],
   ['setwritecallbackfunction_39',['setwritecallbackfunction',['../class_chimera_t_k_1_1_dummy_backend.html#a1bef5821adab43ec90aeca88767632ae',1,'ChimeraTK::DummyBackend::setWriteCallbackFunction()'],['../class_testable_dummy_backend.html#a1bef5821adab43ec90aeca88767632ae',1,'TestableDummyBackend::setWriteCallbackFunction()']]],
-  ['shareddummybackend_40',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html#a3c9ed215934274a01e9e68c4d75ce17c',1,'ChimeraTK::SharedDummyBackend']]],
+  ['shareddummybackend_40',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html#a51b01035c0e7a94e6942b432b1e30682',1,'ChimeraTK::SharedDummyBackend']]],
   ['shm_5fexists_41',['shm_exists',['../shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026',1,'sharedDummyHelpers.h']]],
   ['siewritabletestfixture_42',['SieWritableTestFixture',['../struct_sie_writable_test_fixture.html#a47b2832b17439aba2eea7c7fe2d2dfa5',1,'SieWritableTestFixture']]],
   ['simplecheckextractedchannels_43',['simpleCheckExtractedChannels',['../struct_device_fixture2_d.html#a19c93b94dfbe4c6567befe6487029501',1,'DeviceFixture2D']]],

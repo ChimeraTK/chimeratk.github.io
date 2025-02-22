@@ -4,7 +4,7 @@ var searchData=
   ['deactivatealllisteners_1',['deactivateAllListeners',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a30c75e5928220a718f8a7f9fa198fd1b',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
   ['deactivatealllistenersandpushexception_2',['deactivateAllListenersAndPushException',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a06888e243c359a75a6d2796072806e0a',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller_3',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359',1,'ChimeraTK::DoocsBackend']]],
-  ['doocsbackend_4',['DoocsBackend',['../class_chimera_t_k_1_1_doocs_backend.html#addc282bdd467e7d831cf1e46103c4540',1,'ChimeraTK::DoocsBackend']]],
+  ['doocsbackend_4',['DoocsBackend',['../class_chimera_t_k_1_1_doocs_backend.html#a2be4be2c59b26f687f9faa2c88a82c0c',1,'ChimeraTK::DoocsBackend']]],
   ['doocsbackendeventidregisteraccessor_5',['DoocsBackendEventIdRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html#a69984c15c97248ff2e75fe7dbfbdcbf2',1,'ChimeraTK::DoocsBackendEventIdRegisterAccessor']]],
   ['doocsbackendifffregisteraccessor_6',['DoocsBackendIFFFRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a503c90b7e236e6c17136c2e4688d3a7d',1,'ChimeraTK::DoocsBackendIFFFRegisterAccessor']]],
   ['doocsbackendimageregisteraccessor_7',['DoocsBackendImageRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html#af6b4896149d9b24ff81fbffe7d1b7455',1,'ChimeraTK::DoocsBackendImageRegisterAccessor']]],

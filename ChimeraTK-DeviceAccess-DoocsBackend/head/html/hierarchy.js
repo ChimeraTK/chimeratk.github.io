@@ -105,7 +105,6 @@ var hierarchy =
     [ "EqFct", null, [
       [ "eq_dummy", "classeq__dummy.html", null ]
     ] ],
-    [ "EventIdMapper", "class_event_id_mapper.html", null ],
     [ "MappedImage", null, [
       [ "ChimeraTK::MappedDoocsImgIn", "struct_chimera_t_k_1_1_mapped_doocs_img_in.html", null ]
     ] ],

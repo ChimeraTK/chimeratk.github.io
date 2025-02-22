@@ -32,6 +32,5 @@ var searchData=
   ['switchreadonly_29',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a03e86d04d5cd7033868198c93c28e4ed',1,'ChimeraTK::TestCapabilities']]],
   ['switchwriteonly_30',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#abbde487b7401ca4dc15dc2a61524192d',1,'ChimeraTK::TestCapabilities']]],
   ['symbols_31',['symbols',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a86cccc2b98dd88bcd9467dd898ef3a75',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
-  ['syncaccessor_32',['syncAccessor',['../struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a5f46b870da1eea7b01c72bebdd229f9e',1,'ChimeraTK::async::PolledAsyncVariable']]],
-  ['syncread_33',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#a7453a218535821ac59b2a4962f0b5443',1,'ChimeraTK::TestCapabilities']]]
+  ['syncread_32',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#a7453a218535821ac59b2a4962f0b5443',1,'ChimeraTK::TestCapabilities']]]
 ];

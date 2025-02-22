@@ -14,5 +14,6 @@ var searchData=
   ['forceasyncreadinconsistency_5fproxy_5fhelper_3c_20t_2c_20false_20_3e_11',['forceAsyncReadInconsistency_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1force_async_read_inconsistency__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]],
   ['forcepollingreadplugin_12',['ForcePollingReadPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['forcereadonlyplugin_13',['ForceReadOnlyPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html',1,'ChimeraTK::LNMBackend']]],
-  ['forcereadonlyplugindecorator_14',['ForceReadOnlyPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html',1,'ChimeraTK::LNMBackend']]]
+  ['forcereadonlyplugindecorator_14',['ForceReadOnlyPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html',1,'ChimeraTK::LNMBackend']]],
+  ['formatter_3c_20chimeratk_3a_3aversionnumber_2c_20chart_20_3e_15',['formatter&lt; ChimeraTK::VersionNumber, CharT &gt;',['../structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html',1,'std']]]
 ];
