@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['abbreviation_48',['abbreviation',['../namespacedictionary.html#abf144d7b2eee9a37be283f8a0c37f7e0',1,'dictionary']]]
+  ['abbreviation_0',['abbreviation',['../namespacedictionary.html#ac6c003356c2ec7d4c7c3dbc5455b52e8',1,'dictionary']]]
 ];

@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_doocs_process_array =
 [
     [ "THE_DOOCS_TYPE", "class_chimera_t_k_1_1_doocs_process_array.html#a809228a0030b336546dc4bb3a76317c3", null ],
-    [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html#a5af809e1c4d97ffb2a8301d84f7dbb1b", null ],
+    [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html#a66d77fd78678222938ca507def7ec3b0", null ],
     [ "auto_init", "class_chimera_t_k_1_1_doocs_process_array.html#a654085dd61dc6115320dde47a5485f4a", null ],
     [ "sendToDevice", "class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33", null ],
     [ "set", "class_chimera_t_k_1_1_doocs_process_array.html#a1df4423c516f60ed4311bcbf7137c6cb", null ],

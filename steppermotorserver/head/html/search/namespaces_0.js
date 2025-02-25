@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dictionary_36',['dictionary',['../namespacedictionary.html',1,'']]]
+  ['dictionary_0',['dictionary',['../namespacedictionary.html',1,'']]]
 ];

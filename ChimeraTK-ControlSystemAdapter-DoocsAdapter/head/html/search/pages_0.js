@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['chimeratk_2dcontrolsystemadapter_2ddoocsadapter_820',['ChimeraTK-ControlSystemAdapter-DoocsAdapter',['../index.html',1,'']]]
+  ['chimeratk_20controlsystemadapter_20doocsadapter_0',['ChimeraTK-ControlSystemAdapter-DoocsAdapter',['../index.html',1,'']]],
+  ['controlsystemadapter_20doocsadapter_1',['ChimeraTK-ControlSystemAdapter-DoocsAdapter',['../index.html',1,'']]]
 ];

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.26.01</span>
+   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.26.02</span>
    </div>
   </td>
  </tr>
@@ -114,61 +114,60 @@ $(document).ready(function(){initNavTree('_doocs_update_watchdog_8h_source.html'
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef DOOCUPDATEWATCHDOG_H</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define DOOCUPDATEWATCHDOG_H</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;eq_client.h&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;eq_fct.h&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_doocs_update_watchdog.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_doocs_update_watchdog.html">DoocsUpdateWatchdog</a> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  EqFct* _parent;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e">   30</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506b">STATUS</a> { <a class="code hl_enumvalue" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506bab003eb7ed439fcbe374007d5c0aa3421">OK</a> = 0, <a class="code hl_enumvalue" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506badee0b3cc209b6c76803497028d148a85">ERROR</a> = 1, <a class="code hl_enumvalue" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e">DISABLED</a> = 2 };</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_class" href="class_doocs_update_watchdog.html">DoocsUpdateWatchdog</a>(EqFct* parent);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#a14bb6accabc2bea06321c96793916a6e">init</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#a8ec6766a6925c50708223a86ea06aef2">update</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#ab90d6d522a2d9208b7d00231540d8daa">reset</a>();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#a6909c283496acabd048269b4cdb67284">getStatus</a>();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#ae0bf957668b27e483a79e18dd9994bd0">getEnabled</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  D_int _enabled;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  D_int _status;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::chrono::seconds _lastUpdateTime;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">int</span> _timeoutValueInSeconds{10};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  std::mutex _mutex;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;eq_fct.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_doocs_update_watchdog.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_doocs_update_watchdog.html">DoocsUpdateWatchdog</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  EqFct* _parent;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e">   29</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506b">STATUS</a> { <a class="code hl_enumvalue" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506bab003eb7ed439fcbe374007d5c0aa3421">OK</a> = 0, <a class="code hl_enumvalue" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506badee0b3cc209b6c76803497028d148a85">ERROR</a> = 1, <a class="code hl_enumvalue" href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e">DISABLED</a> = 2 };</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_class" href="class_doocs_update_watchdog.html">DoocsUpdateWatchdog</a>(EqFct* parent);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#a14bb6accabc2bea06321c96793916a6e">init</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#a8ec6766a6925c50708223a86ea06aef2">update</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#ab90d6d522a2d9208b7d00231540d8daa">reset</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#a6909c283496acabd048269b4cdb67284">getStatus</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_doocs_update_watchdog.html#ae0bf957668b27e483a79e18dd9994bd0">getEnabled</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  D_int _enabled;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  D_int _status;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  std::chrono::seconds _lastUpdateTime;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">int</span> _timeoutValueInSeconds{10};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  std::mutex _mutex;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">/* DOOCUPDATEWATCHDOG_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_doocs_update_watchdog_html"><div class="ttname"><a href="class_doocs_update_watchdog.html">DoocsUpdateWatchdog</a></div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00025">DoocsUpdateWatchdog.h:25</a></div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">/* DOOCUPDATEWATCHDOG_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclass_doocs_update_watchdog_html"><div class="ttname"><a href="class_doocs_update_watchdog.html">DoocsUpdateWatchdog</a></div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00024">DoocsUpdateWatchdog.h:24</a></div></div>
 <div class="ttc" id="aclass_doocs_update_watchdog_html_a14bb6accabc2bea06321c96793916a6e"><div class="ttname"><a href="class_doocs_update_watchdog.html#a14bb6accabc2bea06321c96793916a6e">DoocsUpdateWatchdog::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8cc_source.html#l00018">DoocsUpdateWatchdog.cc:18</a></div></div>
 <div class="ttc" id="aclass_doocs_update_watchdog_html_a6909c283496acabd048269b4cdb67284"><div class="ttname"><a href="class_doocs_update_watchdog.html#a6909c283496acabd048269b4cdb67284">DoocsUpdateWatchdog::getStatus</a></div><div class="ttdeci">int getStatus()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8cc_source.html#l00073">DoocsUpdateWatchdog.cc:73</a></div></div>
 <div class="ttc" id="aclass_doocs_update_watchdog_html_a8ec6766a6925c50708223a86ea06aef2"><div class="ttname"><a href="class_doocs_update_watchdog.html#a8ec6766a6925c50708223a86ea06aef2">DoocsUpdateWatchdog::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8cc_source.html#l00028">DoocsUpdateWatchdog.cc:28</a></div></div>
 <div class="ttc" id="aclass_doocs_update_watchdog_html_ab90d6d522a2d9208b7d00231540d8daa"><div class="ttname"><a href="class_doocs_update_watchdog.html#ab90d6d522a2d9208b7d00231540d8daa">DoocsUpdateWatchdog::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8cc_source.html#l00067">DoocsUpdateWatchdog.cc:67</a></div></div>
 <div class="ttc" id="aclass_doocs_update_watchdog_html_ae0bf957668b27e483a79e18dd9994bd0"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae0bf957668b27e483a79e18dd9994bd0">DoocsUpdateWatchdog::getEnabled</a></div><div class="ttdeci">int getEnabled()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8cc_source.html#l00077">DoocsUpdateWatchdog.cc:77</a></div></div>
-<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506b"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506b">DoocsUpdateWatchdog::STATUS</a></div><div class="ttdeci">STATUS</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00030">DoocsUpdateWatchdog.h:30</a></div></div>
-<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e">DoocsUpdateWatchdog::DISABLED</a></div><div class="ttdeci">@ DISABLED</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00030">DoocsUpdateWatchdog.h:30</a></div></div>
-<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506bab003eb7ed439fcbe374007d5c0aa3421"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506bab003eb7ed439fcbe374007d5c0aa3421">DoocsUpdateWatchdog::OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00030">DoocsUpdateWatchdog.h:30</a></div></div>
-<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506badee0b3cc209b6c76803497028d148a85"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506badee0b3cc209b6c76803497028d148a85">DoocsUpdateWatchdog::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00030">DoocsUpdateWatchdog.h:30</a></div></div>
+<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506b"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506b">DoocsUpdateWatchdog::STATUS</a></div><div class="ttdeci">STATUS</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00029">DoocsUpdateWatchdog.h:29</a></div></div>
+<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506ba0c46aa6c503691c64b479903b9629d8e">DoocsUpdateWatchdog::DISABLED</a></div><div class="ttdeci">@ DISABLED</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00029">DoocsUpdateWatchdog.h:29</a></div></div>
+<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506bab003eb7ed439fcbe374007d5c0aa3421"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506bab003eb7ed439fcbe374007d5c0aa3421">DoocsUpdateWatchdog::OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00029">DoocsUpdateWatchdog.h:29</a></div></div>
+<div class="ttc" id="aclass_doocs_update_watchdog_html_ae9f56f576c0f294401fdd0ecb9b5506badee0b3cc209b6c76803497028d148a85"><div class="ttname"><a href="class_doocs_update_watchdog.html#ae9f56f576c0f294401fdd0ecb9b5506badee0b3cc209b6c76803497028d148a85">DoocsUpdateWatchdog::ERROR</a></div><div class="ttdeci">@ ERROR</div><div class="ttdef"><b>Definition</b> <a href="_doocs_update_watchdog_8h_source.html#l00029">DoocsUpdateWatchdog.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_eac7c90a82c75937b07cd6b39a8b73b2.html">Consatt-doocs</a></li><li class="navelem"><a class="el" href="dir_79723dd9bddfa5f1f9fa5cc5b1a720c0.html">include</a></li><li class="navelem"><a class="el" href="_doocs_update_watchdog_8h.html">DoocsUpdateWatchdog.h</a></li>
-    <li class="footer">Generated on Wed Feb 19 2025 20:09:26 for Consatt-doocs by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

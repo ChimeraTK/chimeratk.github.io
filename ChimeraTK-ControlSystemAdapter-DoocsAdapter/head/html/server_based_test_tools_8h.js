@@ -17,8 +17,8 @@ var server_based_test_tools_8h =
     [ "checkHistory", "server_based_test_tools_8h.html#a02f442b017a61d0d87ef08faf3eb4bf5", null ],
     [ "checkSpectrum", "server_based_test_tools_8h.html#a19f7c51a55fc5ea47f9ffd766f485bfd", null ],
     [ "checkWithTimeout", "server_based_test_tools_8h.html#a144561068fc8e9326fb24b82cba2b1ad", null ],
-    [ "getDoocsProperty", "server_based_test_tools_8h.html#acc3ed5bc6386b42ed79d1653c1361f62", null ],
-    [ "getLocationFromPropertyAddress", "server_based_test_tools_8h.html#ab72e9bb9f1d314e6e36ca2c81c3bf85c", null ],
+    [ "getDoocsProperty", "server_based_test_tools_8h.html#a3dc317d7319c2a1d52286075be3640e2", null ],
+    [ "getLocationFromPropertyAddress", "server_based_test_tools_8h.html#ae3d6bc32994c74be2951285332e7062a", null ],
     [ "readSpectrumIncrement", "server_based_test_tools_8h.html#a11857b9d32bb4efef6c5f53352bf8de0", null ],
     [ "readSpectrumStart", "server_based_test_tools_8h.html#ab8c1b6f5a145e2d6a9b9ee1f444b2c6f", null ]
 ];

@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_doocs_iiii =
 [
-    [ "DoocsIiii", "class_chimera_t_k_1_1_doocs_iiii.html#ab8b913995eb41966f5bf594c9fac7cd8", null ],
-    [ "DoocsIiii", "class_chimera_t_k_1_1_doocs_iiii.html#a36eefd70be15213499e70f57b0900385", null ],
+    [ "DoocsIiii", "class_chimera_t_k_1_1_doocs_iiii.html#aa7d8c9079735e6402c2658c8f745a12a", null ],
+    [ "DoocsIiii", "class_chimera_t_k_1_1_doocs_iiii.html#a9e65a4538defb969d8efd14ac2b1336f", null ],
     [ "auto_init", "class_chimera_t_k_1_1_doocs_iiii.html#aadae7c3a179db3fd93273e0639fab372", null ],
     [ "checkSourceConsistency", "class_chimera_t_k_1_1_doocs_iiii.html#a56242ca38e14d419b3b567abf670a281", null ],
     [ "registerIiiiSources", "class_chimera_t_k_1_1_doocs_iiii.html#a8f21a3a46d415789cf9f90db081fdb2c", null ],

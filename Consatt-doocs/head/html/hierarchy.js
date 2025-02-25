@@ -18,7 +18,7 @@ var hierarchy =
     [ "D_text", null, [
       [ "Doocs_CsaTypesString", "class_doocs___csa_types_string.html", null ]
     ] ],
-    [ "D_value", null, [
+    [ "doocs::D_value", null, [
       [ "D_valueConsatt< SimpleType >", "class_d__value_consatt.html", [
         [ "Doocs_CsaTypesBasic< DoocsClass, SimpleType, LibraryType >", "class_doocs___csa_types_basic.html", null ]
       ] ]
