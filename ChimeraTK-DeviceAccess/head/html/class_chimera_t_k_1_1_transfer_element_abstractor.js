@@ -10,6 +10,7 @@ var class_chimera_t_k_1_1_transfer_element_abstractor =
     [ "getId", "class_chimera_t_k_1_1_transfer_element_abstractor.html#afb4c01a7604516958f57d8ec67f4aa5e", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a274009bf1b3a598699ff725778011768", null ],
     [ "getName", "class_chimera_t_k_1_1_transfer_element_abstractor.html#afcdf66927b87f55a333ec0fcdfe8873e", null ],
+    [ "getReadAnyGroup", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a8e8fdf8df3b0e5a41749d13698035648", null ],
     [ "getUnit", "class_chimera_t_k_1_1_transfer_element_abstractor.html#afb6356a39bcb73ef14cfa3b609576def", null ],
     [ "getValueType", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a484eb9101cf36e01d4d31d0acd1b597b", null ],
     [ "getVersionNumber", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a05416264bd9c68ac18d9ba5b476cc801", null ],

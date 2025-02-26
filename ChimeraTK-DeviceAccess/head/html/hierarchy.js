@@ -352,6 +352,9 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< T, std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "TestNDRegisterAccessorDecorator< UserType >", "class_test_n_d_register_accessor_decorator.html", null ]
+            ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
               [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],

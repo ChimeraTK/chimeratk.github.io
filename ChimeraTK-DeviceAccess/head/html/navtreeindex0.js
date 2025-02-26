@@ -23,8 +23,6 @@ var NAVTREEINDEX0 =
 "_backend_factory_8cc.html":[21,0,0,0,5,2],
 "_backend_factory_8cc_source.html":[21,0,0,0,5,2],
 "_backend_factory_8h.html":[21,0,0,0,4,2],
-"_backend_factory_8h.html#a133539a4d76d2a1aaef2b0bfebbf18c4":[21,0,0,0,4,2,2],
-"_backend_factory_8h.html#a4d45b10c18ecba2e96feee9e03ef74dd":[21,0,0,0,4,2,1],
 "_backend_factory_8h_source.html":[21,0,0,0,4,2],
 "_backend_register_catalogue_8cc.html":[21,0,0,0,5,3],
 "_backend_register_catalogue_8cc_source.html":[21,0,0,0,5,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "_l_n_m_double_buffer_plugin_8h.html":[21,0,0,0,0,1,0,6],
 "_l_n_m_double_buffer_plugin_8h_source.html":[21,0,0,0,0,1,0,6],
 "_l_n_m_force_polling_read_plugin_8cc.html":[21,0,0,0,0,1,1,6],
-"_l_n_m_force_polling_read_plugin_8cc_source.html":[21,0,0,0,0,1,1,6]
+"_l_n_m_force_polling_read_plugin_8cc_source.html":[21,0,0,0,0,1,1,6],
+"_l_n_m_force_read_only_plugin_8cc.html":[21,0,0,0,0,1,1,7],
+"_l_n_m_force_read_only_plugin_8cc_source.html":[21,0,0,0,0,1,1,7]
 };

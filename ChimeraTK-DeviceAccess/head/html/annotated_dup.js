@@ -425,6 +425,7 @@ var annotated_dup =
     [ "TestDummy", "class_test_dummy.html", "class_test_dummy" ],
     [ "TestFixture", "struct_test_fixture.html", "struct_test_fixture" ],
     [ "TestLocker", "struct_test_locker.html", "struct_test_locker" ],
+    [ "TestNDRegisterAccessorDecorator", "class_test_n_d_register_accessor_decorator.html", null ],
     [ "TestParameters", "struct_test_parameters.html", "struct_test_parameters" ],
     [ "TestRegister", "struct_test_register.html", "struct_test_register" ],
     [ "TestRegisterCasted", "struct_test_register_casted.html", "struct_test_register_casted" ],

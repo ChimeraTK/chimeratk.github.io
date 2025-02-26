@@ -196,6 +196,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fc158c26e1523d3b1ef1f5a3bbfcc07" id="r_a3fc158c26e1523d3b1ef1f5a3bbfcc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a3fc158c26e1523d3b1ef1f5a3bbfcc07">interrupt</a> ()</td></tr>
 <tr class="memdesc:a3fc158c26e1523d3b1ef1f5a3bbfcc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <br /></td></tr>
 <tr class="separator:a3fc158c26e1523d3b1ef1f5a3bbfcc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8fdf8df3b0e5a41749d13698035648" id="r_a8e8fdf8df3b0e5a41749d13698035648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a8e8fdf8df3b0e5a41749d13698035648">getReadAnyGroup</a> () const</td></tr>
+<tr class="memdesc:a8e8fdf8df3b0e5a41749d13698035648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of, or nullptr if not in a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.  <br /></td></tr>
+<tr class="separator:a8e8fdf8df3b0e5a41749d13698035648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -517,6 +520,35 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_abstractor_afcdf66927b87f55a333ec0fcdfe8873e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="a8e8fdf8df3b0e5a41749d13698035648" name="a8e8fdf8df3b0e5a41749d13698035648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8fdf8df3b0e5a41749d13698035648">&#9670;&#160;</a></span>getReadAnyGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> * ChimeraTK::TransferElementAbstractor::getReadAnyGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of, or nullptr if not in a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_transfer_element_abstractor_8h_source.html#l00224">224</a> of file <a class="el" href="_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1143,7 @@ Protected Attributes</h2></td></tr>
 <p>Just like <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aefb2a684e4afb7d55e6147fbe5a332ee">write()</a>, but allows the implementation to destroy the content of the user buffer in the process. </p>
 <p>This is an optional optimisation, hence there is a default implementation which just calls the normal doWriteTransfer(). In any case, the application must expect the user buffer of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> to contain undefined data after calling this function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_abstractor_8h_source.html#l00230">230</a> of file <a class="el" href="_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_abstractor_8h_source.html#l00233">233</a> of file <a class="el" href="_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1170,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Untyped pointer to implementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_abstractor_8h_source.html#l00225">225</a> of file <a class="el" href="_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_abstractor_8h_source.html#l00228">228</a> of file <a class="el" href="_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
