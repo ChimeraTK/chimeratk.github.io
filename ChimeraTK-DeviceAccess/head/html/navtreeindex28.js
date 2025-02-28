@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"struct_reg_word_firmware_with_math___r.html":[20,0,187],
+"struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966":[20,0,187,0],
+"struct_reg_word_firmware_with_math___r.html#a4c76cc0c1abb4faa5251c5e2594bd5d8":[20,0,187,2],
+"struct_reg_word_firmware_with_math___r.html#a4fb589ea22eb1afe9d112e53cd0bd8ef":[20,0,187,1],
 "struct_reg_word_firmware_with_math___r__push.html":[20,0,188],
 "struct_reg_word_firmware_with_math___r__push.html#a0756f2904ddbdac76fd0c1f6cbc9a74a":[20,0,188,4],
 "struct_reg_word_firmware_with_math___r__push.html#a4e11d27bd0c7696f873b5cd31538b27f":[20,0,188,1],
@@ -216,15 +220,15 @@ var NAVTREEINDEX28 =
 "struct_write_counting_backend_1_1_backend_registerer.html":[20,0,224,0],
 "struct_write_counting_backend_1_1_backend_registerer.html#ac9b2a38453841e4993d53772ef024824":[20,0,224,0,0],
 "struct_wrong_version_backend.html":[20,0,226],
-"struct_wrong_version_backend.html#a569a3484da2cce7f6e0b8dd5da572587":[20,0,226,1],
 "struct_wrong_version_backend.html#a569a3484da2cce7f6e0b8dd5da572587":[20,0,226,2],
+"struct_wrong_version_backend.html#a569a3484da2cce7f6e0b8dd5da572587":[20,0,226,1],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[20,0,226,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[20,0,226,0,0],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[20,0,226,0,1],
-"structaccess_private_data_1_1stow__private.html":[20,0,0,0],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[20,0,226,0,0],
 "structaccess_private_data_1_1stow__private.html":[19,0,0,0],
-"structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[19,0,0,0,0],
+"structaccess_private_data_1_1stow__private.html":[20,0,0,0],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[20,0,0,0,0],
+"structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[19,0,0,0,0],
 "structaccess_private_data_1_1stowed.html":[19,0,0,1],
 "structaccess_private_data_1_1stowed.html":[20,0,0,1],
 "structcanonical_interrupt4__8__2.html":[20,0,24],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "structdatafrom4__8__3.html":[20,0,40],
 "structdatafrom4__8__3.html#abf906f04c4813e531a8a8cb7f8bedc68":[20,0,40,0],
 "structdatafrom5__9.html":[20,0,41],
-"structdatafrom6.html":[20,0,42],
-"structdevice__ioctrl__data.html":[20,0,45],
-"structdevice__ioctrl__data.html#a378b71218baaadf1a5938141be87890b":[20,0,45,1],
-"structdevice__ioctrl__data.html#a4591ed737a751c9edda235df064c1038":[20,0,45,2],
-"structdevice__ioctrl__data.html#a52de50611d298e669a3a0be9751df37a":[20,0,45,0]
+"structdatafrom6.html":[20,0,42]
 };

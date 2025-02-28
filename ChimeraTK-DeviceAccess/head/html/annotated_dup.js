@@ -172,6 +172,7 @@ var annotated_dup =
       [ "SharedDummyBackend", "class_chimera_t_k_1_1_shared_dummy_backend.html", "class_chimera_t_k_1_1_shared_dummy_backend" ],
       [ "SubdeviceBackend", "class_chimera_t_k_1_1_subdevice_backend.html", "class_chimera_t_k_1_1_subdevice_backend" ],
       [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", "class_chimera_t_k_1_1_subdevice_register_accessor" ],
+      [ "SystemTags", "struct_chimera_t_k_1_1_system_tags.html", null ],
       [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
       [ "TemplateUserTypeMapNoVoid", "class_chimera_t_k_1_1_template_user_type_map_no_void.html", "class_chimera_t_k_1_1_template_user_type_map_no_void" ],
       [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html", "struct_chimera_t_k_1_1_test_capabilities" ],

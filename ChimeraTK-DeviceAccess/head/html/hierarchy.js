@@ -793,6 +793,7 @@ var hierarchy =
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchWriteOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchWriteOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4.html", null ],
+    [ "ChimeraTK::SystemTags", "struct_chimera_t_k_1_1_system_tags.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< ChimeraTK::LNMVariable::ValueTable >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< SharedAccessorMap >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],

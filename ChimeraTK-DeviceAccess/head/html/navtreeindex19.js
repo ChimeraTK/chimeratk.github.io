@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c":[20,0,64,0],
+"class_fixture__t.html":[20,0,67],
 "class_fixture__t.html#a043486f0b39fb24dd30ad5895d8b3a04":[20,0,67,7],
 "class_fixture__t.html#a176680b873b6ee7ab159c872413a8e43":[20,0,67,0],
 "class_fixture__t.html#a2878a074a1f0830f95ee57d9f35728f0":[20,0,67,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "functions_func_h.html":[20,3,1,7],
 "functions_func_i.html":[20,3,1,8],
 "functions_func_k.html":[20,3,1,9],
-"functions_func_l.html":[20,3,1,10],
-"functions_func_m.html":[20,3,1,11],
-"functions_func_n.html":[20,3,1,12]
+"functions_func_l.html":[20,3,1,10]
 };

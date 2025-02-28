@@ -42,6 +42,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "RegisterPath.h", "_register_path_8h.html", "_register_path_8h" ],
     [ "ScalarRegisterAccessor.h", "_scalar_register_accessor_8h.html", "_scalar_register_accessor_8h" ],
     [ "SupportedUserTypes.h", "_supported_user_types_8h.html", "_supported_user_types_8h" ],
+    [ "SystemTags.h", "_system_tags_8h.html", "_system_tags_8h" ],
     [ "TransferElement.h", "_transfer_element_8h.html", "_transfer_element_8h" ],
     [ "TransferElementAbstractor.h", "_transfer_element_abstractor_8h.html", "_transfer_element_abstractor_8h" ],
     [ "TransferElementID.h", "_transfer_element_i_d_8h.html", "_transfer_element_i_d_8h" ],
