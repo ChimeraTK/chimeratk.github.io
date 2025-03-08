@@ -99,7 +99,7 @@ var namespace_chimera_t_k =
     [ "logic_error", "class_chimera_t_k_1_1logic__error.html", "class_chimera_t_k_1_1logic__error" ],
     [ "LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", "class_chimera_t_k_1_1_logical_name_map_parser" ],
     [ "LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html", "class_chimera_t_k_1_1_logical_name_mapping_backend" ],
-    [ "MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", "class_chimera_t_k_1_1_map_file_parser" ],
+    [ "MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
     [ "MappedImage", "class_chimera_t_k_1_1_mapped_image.html", "class_chimera_t_k_1_1_mapped_image" ],
     [ "MappedStruct", "class_chimera_t_k_1_1_mapped_struct.html", "class_chimera_t_k_1_1_mapped_struct" ],
     [ "MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", "class_chimera_t_k_1_1_metadata_catalogue" ],

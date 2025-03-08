@@ -9,6 +9,7 @@ var test_subdevice_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#ac5f3b84f8849b2f6e9ed3b2c4a52946b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#a68a41fc7232d99338cefc2589c5b64ec", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#ac0e400efe03664bca8d1719e53d18e30", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#a6e621118aa53ff203987691a14aaee85", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#aaa9eadcce1d343b4de95227d72be381f", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3", null ],

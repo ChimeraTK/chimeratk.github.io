@@ -10,6 +10,7 @@ var class_chimera_t_k_1_1_subdevice_backend =
     [ "activateAsyncRead", "class_chimera_t_k_1_1_subdevice_backend.html#ae231a2b26431cb1bccee3b18723e367d", null ],
     [ "close", "class_chimera_t_k_1_1_subdevice_backend.html#a4f4c2c1947fa970b4197a321c36bf593", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_chimera_t_k_1_1_subdevice_backend.html#a6ab749c8f16e36e038b5c42a8a7d90ce", null ],
+    [ "getInvolvedBackendIDs", "class_chimera_t_k_1_1_subdevice_backend.html#ae69eecd77aa3774961771e0822f35f6e", null ],
     [ "getMetadataCatalogue", "class_chimera_t_k_1_1_subdevice_backend.html#a5bdfdbcf703ead898c3b1a96f4c33644", null ],
     [ "getRegisterAccessor_area", "class_chimera_t_k_1_1_subdevice_backend.html#ad584015f09db6583a6f21a67c3e83710", null ],
     [ "getRegisterAccessor_area", "class_chimera_t_k_1_1_subdevice_backend.html#a3d747946eac157ea6db3cd4d0aeb665a", null ],

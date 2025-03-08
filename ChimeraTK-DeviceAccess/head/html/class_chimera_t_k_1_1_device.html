@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5578d188fe745c943acceeb9152e49d8" id="r_a5578d188fe745c943acceeb9152e49d8"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a> ()</td></tr>
 <tr class="memdesc:a5578d188fe745c943acceeb9152e49d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the backend.  <br /></td></tr>
 <tr class="separator:a5578d188fe745c943acceeb9152e49d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09371dbc56ea330a47f74418b6796fb1" id="r_a09371dbc56ea330a47f74418b6796fb1"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">DeviceBackend::BackendID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a09371dbc56ea330a47f74418b6796fb1">getInvolvedBackendIDs</a> ()</td></tr>
+<tr class="memdesc:a09371dbc56ea330a47f74418b6796fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively obtain the set of all backend IDs that are used withing the device.  <br /></td></tr>
+<tr class="separator:a09371dbc56ea330a47f74418b6796fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7f6a974f2dd96cc27634800339e8af" id="r_abc7f6a974f2dd96cc27634800339e8af"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:abc7f6a974f2dd96cc27634800339e8af"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#abc7f6a974f2dd96cc27634800339e8af">read</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})) const</td></tr>
 <tr class="memdesc:abc7f6a974f2dd96cc27634800339e8af"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Inefficient convenience function</b> to read a single-word register without obtaining an accessor.  <br /></td></tr>
@@ -417,7 +420,42 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a5578d188fe745c943acceeb9152e49d8_icgraph.svg" width="663" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a5578d188fe745c943acceeb9152e49d8_icgraph.svg" width="663" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a09371dbc56ea330a47f74418b6796fb1" name="a09371dbc56ea330a47f74418b6796fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09371dbc56ea330a47f74418b6796fb1">&#9670;&#160;</a></span>getInvolvedBackendIDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">DeviceBackend::BackendID</a> &gt; ChimeraTK::Device::getInvolvedBackendIDs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recursively obtain the set of all backend IDs that are used withing the device. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00117">117</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a09371dbc56ea330a47f74418b6796fb1_cgraph.svg" width="418" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a09371dbc56ea330a47f74418b6796fb1_icgraph.svg" width="424" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -440,11 +478,11 @@ Protected Attributes</h2></td></tr>
 <p>Return the register catalogue with detailed information on all registers. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00029">29</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a1155c5fd9b8f2dd50f2dfc871bcb381f_cgraph.svg" width="414" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -498,19 +536,19 @@ template&lt;typename UserType &gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="accessor1_d_8cpp-example.html#a5">accessor1D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a4">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00273">273</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00276">276</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aa88ff92b7fa348da80729437dde47f5d_cgraph.svg" width="434" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aa88ff92b7fa348da80729437dde47f5d_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -534,18 +572,18 @@ template&lt;typename UserType &gt; </div>
 <p>Return the register catalogue with detailed information on all registers. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00022">22</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aa43e1797a29c2bfcfa8d370cbc389cc1_cgraph.svg" width="406" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aa43e1797a29c2bfcfa8d370cbc389cc1_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -592,19 +630,19 @@ template&lt;typename UserType &gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="basic_8cpp-example.html#a5">basic.cpp</a>, and <a class="el" href="read_temperature_doocs_zmq_8cpp-example.html#a4">read_temperature_doocs_zmq.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00263">263</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00266">266</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a953db6616908b17380fb1ace248c5a77_cgraph.svg" width="438" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a953db6616908b17380fb1ace248c5a77_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -657,19 +695,19 @@ template&lt;typename UserType &gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="accessor2_d_8cpp-example.html#a5">accessor2D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a6">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00283">283</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00286">286</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a053fa37d233cc991fbfdb3c470d308dd_cgraph.svg" width="434" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a053fa37d233cc991fbfdb3c470d308dd_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -704,18 +742,18 @@ template&lt;typename UserType &gt; </div>
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_void_register_accessor.html" title="Accessor class to read and write void-typed registers.">VoidRegisterAccessor</a> object for the given register. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00103">103</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a80413e58d7b0c2e798d16ce9fe546a1d_cgraph.svg" width="426" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a80413e58d7b0c2e798d16ce9fe546a1d_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -740,11 +778,11 @@ template&lt;typename UserType &gt; </div>
 <p>If a backend does not implement any error reporting, this functions id equivalent to <a class="el" href="class_chimera_t_k_1_1_device.html#a0595273d58b7ae326ca7f8def4f8a6d3" title="Check if the device is currently opened.">isOpened()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00082">82</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_ab4e16a54db85cd0d908484dd68f10780_icgraph.svg" width="483" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -768,11 +806,11 @@ template&lt;typename UserType &gt; </div>
 <p>Check if the device is currently opened. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00073">73</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a0595273d58b7ae326ca7f8def4f8a6d3_icgraph.svg" width="483" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -796,11 +834,11 @@ template&lt;typename UserType &gt; </div>
 <p>Re-open the device after previously closeing it by calling <a class="el" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d" title="Close the device.">close()</a>, or when it was constructed with a given aliasName. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00051">51</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a0a86afbebd076b8bc1d7bc6fe87db89d_cgraph.svg" width="430" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -827,11 +865,11 @@ template&lt;typename UserType &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00058">58</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aedbf8aa7daab16909fe3df80c788d0bf_cgraph.svg" width="450" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -869,12 +907,12 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77" title="Get a ScalarRegisterObject object for the given register.">Device::getScalarRegisterAccessor</a>).</dd></dl>
 <p>If a multi-word register is read, only the first element is returned. This function only works for 1D registers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00293">293</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00296">296</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_abc7f6a974f2dd96cc27634800339e8af_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -924,7 +962,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d" title="Get a OneDRegisterAccessor object for the given register.">Device::getOneDRegisterAccessor</a>).</dd></dl>
 <p>The function only works for 1D registers. For 2D registers, see <a class="el" href="class_chimera_t_k_1_1_device.html#a053fa37d233cc991fbfdb3c470d308dd" title="Get a TwoDRegisterAccessor object for the given register.">Device::getTwoDRegisterAccessor</a>. The argument numberOfWords specifies how many elements are read. The returned vector will have a length of numberOfWords or shorter. numberOfWords must not exceed the size of the register. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00302">302</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00305">305</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -947,18 +985,18 @@ template&lt;typename UserType &gt; </div>
 <p>Format depends on the backend, use for display only. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00036">36</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aa7fe4ce4336cedce3fce015d15f59bda_cgraph.svg" width="398" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aa7fe4ce4336cedce3fce015d15f59bda_icgraph.svg" width="404" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -988,11 +1026,11 @@ template&lt;typename UserType &gt; </div>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="_device_8cc_source.html#l00097">97</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_a41fb30e128b2c697296218725143e687_icgraph.svg" width="416" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1042,7 +1080,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d" title="Get a OneDRegisterAccessor object for the given register.">Device::getOneDRegisterAccessor</a>).</dd></dl>
 <p>The function only works for 1D registers. For 2D registers, see <a class="el" href="class_chimera_t_k_1_1_device.html#a053fa37d233cc991fbfdb3c470d308dd" title="Get a TwoDRegisterAccessor object for the given register.">Device::getTwoDRegisterAccessor</a>. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00323">323</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00326">326</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1084,12 +1122,12 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77" title="Get a ScalarRegisterObject object for the given register.">Device::getScalarRegisterAccessor</a>).</dd></dl>
 <p>If a multi-word register is read, only the first element is written. This function only works for 1D registers </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00314">314</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00317">317</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_aff70dfe5a22e63aa63a42a06c9cec619_icgraph.svg" width="643" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1116,7 +1154,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00255">255</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00258">258</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
