@@ -39,7 +39,9 @@ var namespace_tests =
       [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#ae9e19745307af63eaece3c2629f45567", null ],
       [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#aa17ea524b6ccf3f37953ec43b9821f79", null ],
       [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#a9314b284f42a630663969b658c58f6b7", null ],
-      [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#a3467114dd8a98c3420304ae6d02c4423", null ]
+      [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#a3467114dd8a98c3420304ae6d02c4423", null ],
+      [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#a4dca59926bcfb28ef9b3de4bcb50f1c8", null ],
+      [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#ae411032db01214d29a4b0a8b9b405bbd", null ]
     ] ],
     [ "testFanoutConnections", "namespace_tests_1_1test_fanout_connections.html", "namespace_tests_1_1test_fanout_connections" ],
     [ "testHierarchyModifyingGroup", "namespace_tests_1_1test_hierarchy_modifying_group.html", "namespace_tests_1_1test_hierarchy_modifying_group" ],

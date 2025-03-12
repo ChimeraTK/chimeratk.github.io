@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['in_20applicationcore_202_200_0',['What&apos;s new in ApplicationCore 2.0',['../whats_new__a_c_2_0.html',1,'']]],
-  ['in_20python_1',['Example how to write application modules in Python',['../example_python_modules.html',1,'']]],
-  ['initial_20values_20v1_200_2',['Technical specification: Propagation of initial values V1.0',['../spec_initial_value_propagation.html',1,'index']]]
+  ['handling_0',['Exception Handling',['../exception_handling.html',1,'index']]],
+  ['handling_20for_20device_20runtime_20errors_20v1_201rc1wip_1',['Technical specification: Exception handling for device runtime errors V1.1RC1WIP',['../spec_execption_handling.html',1,'index']]],
+  ['how_20to_20write_20application_20modules_20in_20python_2',['Example how to write application modules in Python',['../example_python_modules.html',1,'']]]
 ];

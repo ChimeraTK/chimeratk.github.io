@@ -11,7 +11,7 @@ var searchData=
   ['sendrebotreadrequest_8',['sendRebotReadRequest',['../struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a',1,'ChimeraTK::RebotProtocol0']]],
   ['sendsingleword_9',['sendSingleWord',['../class_chimera_t_k_1_1_rebot_dummy_session.html#aa7733a7ebace937c5bd7e85699ed536f',1,'ChimeraTK::RebotDummySession']]],
   ['serialize_10',['serialize',['../class_chimera_t_k_1_1_access_mode_flags.html#a3964778af9ce1df614024d1c7cf328cf',1,'ChimeraTK::AccessModeFlags']]],
-  ['service_11',['service',['../class_chimera_t_k_1_1_rebot_dummy_server.html#a3c64108ec782219f4ea1eceaa437ddea',1,'ChimeraTK::RebotDummyServer']]],
+  ['service_11',['service',['../class_chimera_t_k_1_1_rebot_dummy_server.html#a1c1be59c23f9a6d4c2b2787df543268a',1,'ChimeraTK::RebotDummyServer']]],
   ['session_12',['session',['../class_chimera_t_k_1_1_rebot_dummy_server.html#a3937336a0c8cb3525f1ab7d6d1d51976',1,'ChimeraTK::RebotDummyServer']]],
   ['set_13',['set',['../struct_short_raw__base.html#ae8f789dc42f64614acf91d6808a944fe',1,'ShortRaw_base']]],
   ['setactiveexception_14',['setActiveException',['../class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e',1,'ChimeraTK::TransferElement']]],

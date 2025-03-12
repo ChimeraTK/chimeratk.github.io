@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_factory_8cpp_so
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// corresponding register.</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// boost::shared_ptr &lt; Device&lt;BaseDevice&gt; &gt;   mappedMtcadummy =</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// DeviceFactory::getInstance().createDevice(DUMMY_DEV_ALIAS);</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::string testFilePath = TEST_DMAP_FILE_PATH;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::string testFilePath = <span class="stringliteral">&quot;dummies.dmap&quot;</span>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  ChimeraTK::BackendFactory::getInstance().setDMapFilePath(testFilePath);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  boost::shared_ptr&lt;mtca4u::MotorDriverCard&gt; motorDriverCard_PCIe1 =</div>

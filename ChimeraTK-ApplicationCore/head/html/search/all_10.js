@@ -2,7 +2,7 @@ var searchData=
 [
   ['h_0',['h',['../namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7',1,'oven_sim.h'],['../example.html#example_include_AverageCurrent_h',1,'include/AverageCurrent.h'],['../example.html#example_include_Controller_h',1,'include/Controller.h'],['../example.html#example_include_ExampleApp_h',1,'include/ExampleApp.h'],['../example.html#example_include_SetpointRamp_h',1,'include/SetpointRamp.h']]],
   ['handling_1',['handling',['../spec_data_validity_propagation.html#autotoc_md10',1,'2.5 Interaction with exception handling'],['../conceptual_overview.html#conceptualOverview_ExceptionHandling',1,'Device exception handling'],['../exception_handling.html',1,'Exception Handling'],['../spec_execption_handling.html#spec_exceptionHandling_behaviour_runtime_errors',1,'Runtime error handling']]],
-  ['handling_20for_20device_20runtime_20errors_20v1_200_2',['Technical specification: Exception handling for device runtime errors V1.0',['../spec_execption_handling.html',1,'index']]],
+  ['handling_20for_20device_20runtime_20errors_20v1_201rc1wip_2',['Technical specification: Exception handling for device runtime errors V1.1RC1WIP',['../spec_execption_handling.html',1,'index']]],
   ['hasimplementation_3',['hasImplementation',['../class_chimera_t_k_1_1_variable_network_node.html#a9133f59abf1a4c9553d11695cbbca079',1,'ChimeraTK::VariableNetworkNode']]],
   ['hasinstance_4',['hasInstance',['../class_chimera_t_k_1_1_application.html#af564d31e43f664c931bfa47b2762e680',1,'ChimeraTK::Application']]],
   ['hasname_5',['hasName',['../namespace_chimera_t_k_1_1_model.html#a465ca26583aa5dda8ab88e9e908c7244',1,'ChimeraTK::Model']]],

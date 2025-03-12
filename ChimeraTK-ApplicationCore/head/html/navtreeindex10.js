@@ -135,6 +135,7 @@ var NAVTREEINDEX10 =
 "namespace_tests_1_1test_exception_handling.html#a3467114dd8a98c3420304ae6d02c4423":[14,0,15,11,27],
 "namespace_tests_1_1test_exception_handling.html#a45c0f05d94dd0d6e55210c08932d625c":[14,0,15,11,20],
 "namespace_tests_1_1test_exception_handling.html#a464d55cc5ff13a95f21a98be8d031814":[14,0,15,11,8],
+"namespace_tests_1_1test_exception_handling.html#a4dca59926bcfb28ef9b3de4bcb50f1c8":[14,0,15,11,28],
 "namespace_tests_1_1test_exception_handling.html#a54c21e81a392e60235f449e41bdd6649":[14,0,15,11,18],
 "namespace_tests_1_1test_exception_handling.html#a56a0b5c6e669bfaf14677f4b1c75e6e7":[14,0,15,11,7],
 "namespace_tests_1_1test_exception_handling.html#a5de78eb5b4aa6027a0384106d799e644":[14,0,15,11,12],
@@ -150,6 +151,7 @@ var NAVTREEINDEX10 =
 "namespace_tests_1_1test_exception_handling.html#acd462e158ca6d5ad10dafb3e4fdb2ad1":[14,0,15,11,23],
 "namespace_tests_1_1test_exception_handling.html#ad0d913332fce6c357b47e6a6e753d07a":[14,0,15,11,22],
 "namespace_tests_1_1test_exception_handling.html#ad6485c372a08ea047a99ce17d00233d5":[14,0,15,11,9],
+"namespace_tests_1_1test_exception_handling.html#ae411032db01214d29a4b0a8b9b405bbd":[14,0,15,11,29],
 "namespace_tests_1_1test_exception_handling.html#ae9e19745307af63eaece3c2629f45567":[14,0,15,11,24],
 "namespace_tests_1_1test_fanout_connections.html":[14,0,15,12],
 "namespace_tests_1_1test_fanout_connections.html#a2494410b474e191e33077817483aecfa":[14,0,15,12,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "namespace_tests_1_1test_python.html#ab40f20f4e36e028068aec18f521fbcbc":[14,0,15,21,3],
 "namespace_tests_1_1test_python.html#acf2d0c485f8004a2027c6544847d9fcf":[14,0,15,21,6],
 "namespace_tests_1_1test_python.html#af9b497766c81840e17b93ae8873dc3f1":[14,0,15,21,9],
-"namespace_tests_1_1test_python.html#afa56e726917cd3376c9df96779776d2b":[14,0,15,21,12],
-"namespace_tests_1_1test_scripted_initialisation_handler.html":[14,0,15,22],
-"namespace_tests_1_1test_scripted_initialisation_handler.html#a059cafd44809a7ed390fd102a9268159":[14,0,15,22,3]
+"namespace_tests_1_1test_python.html#afa56e726917cd3376c9df96779776d2b":[14,0,15,21,12]
 };

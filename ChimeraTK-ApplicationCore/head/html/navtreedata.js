@@ -59,7 +59,7 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
-    [ "Technical specification: Exception handling for device runtime errors V1.0", "spec_execption_handling.html", [
+    [ "Technical specification: Exception handling for device runtime errors V1.1RC1WIP", "spec_execption_handling.html", [
       [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
         [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
@@ -192,25 +192,25 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_visitor_3_01_t_01_4.html",
 "conceptual_overview.html#conceptualOverview_ExceptionHandling",
 "namespace_tests_1_1test_app_module_connections.html#a46f03c85fb795641e98efe6f0e997950",
-"namespace_tests_1_1test_scripted_initialisation_handler.html#a71627cd8be06cf37fcdeba53a8878a70",
-"struct_chimera_t_k_1_1_array_functor_fill.html#a11113398606590fd8c24236a748df3f4",
-"struct_chimera_t_k_1_1_functor_set_values.html#a1775f855609a87ad323376db28269afa",
-"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_device_module_properties.html#a3b72ef53c253dc03a2f08a7c90d306c3",
-"struct_chimera_t_k_1_1_scalar_push_input_w_b.html#a4872518b0cc3778cd7244fdcb5b31569",
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a5da8f84d69e239401006d7af009acc15",
-"struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html#aa46777c4e603d517f49031a5eed654d0",
-"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_b_b.html",
-"struct_tests_1_1test_config_reader_1_1_test_application_two_configs.html#ae7cb2ff3f037f0933514de21a8d64050",
-"struct_tests_1_1test_device_accessors_1_1_deeper_1_1_hierarchies_1_1_need.html",
-"struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group_1_1_a_1_1_b_1_1_c.html#a9c70e685223e1bd7995b9c8ab50acf4d",
-"struct_tests_1_1test_initial_values_1_1_test6_a1_initial_value_eception_dummy.html",
-"struct_tests_1_1test_initial_values_1_1_writer_module.html",
-"struct_tests_1_1test_periodic_trigger_1_1_test_module.html#a54a30faef03ee6df975fdb440d0a9bbb",
-"struct_tests_1_1test_status_aggregator_1_1_status_generator.html#a0bbbedf88185f810e12970637a5d378a",
-"struct_tests_1_1test_test_facilities_1_1_test_blocking_read_application.html#adca1a2b39bb1ea865ec9f002cbb55540",
-"struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html#aa4e951ab3b49806cdfac336a2021700a",
-"test_fanout_connections_8cc.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_trigger_8cc.html#a733a976b964df0877dc988e6665523a8"
+"namespace_tests_1_1test_scripted_initialisation_handler.html",
+"struct_chimera_t_k_1_1_array_functor_fill.html",
+"struct_chimera_t_k_1_1_functor_set_values.html",
+"struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_device_module_properties.html",
+"struct_chimera_t_k_1_1_scalar_push_input_w_b.html",
+"struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1",
+"struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html#aa265fa57aa84e22393af104b6ec3c1f8",
+"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#acbff9d2f444bd23eb0b34c170b8583d5",
+"struct_tests_1_1test_config_reader_1_1_test_application_two_configs.html#a1e017bb624bb911c91b275973f5c84d6",
+"struct_tests_1_1test_device_accessors_1_1_deeper_1_1_hierarchies.html#ac078ffdf4b96fdb965a0edae618f170e",
+"struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group_1_1_a_1_1_b_1_1_c.html#a6ede44a14f191a3ea07dedcea95160d0",
+"struct_tests_1_1test_initial_values_1_1_test6_a1_dummy_application.html#abff0109555d95395337bb57fd3c69600",
+"struct_tests_1_1test_initial_values_1_1_trigger_module.html#ae48947608d39278db04160f630c503d6",
+"struct_tests_1_1test_periodic_trigger_1_1_test_module.html#a527d36175aa9b3126553b6a2a8933e38",
+"struct_tests_1_1test_status_aggregator_1_1_status_generator.html",
+"struct_tests_1_1test_test_facilities_1_1_test_blocking_read_application.html#ad4cea7cf327be28134588ad9925f13d9",
+"struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html#aa2249f716e381f4c3a08b603fb6a6cf4",
+"test_exception_handling_8cc.html#ae9e19745307af63eaece3c2629f45567",
+"test_trigger_8cc.html#a21283c0194a47518809ba81b78238644"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

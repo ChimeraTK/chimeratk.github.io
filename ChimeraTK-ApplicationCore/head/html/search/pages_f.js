@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['of_20an_20application_0',['Example: Basic structure of an Application',['../example.html',1,'']]],
-  ['of_20initial_20values_20v1_200_1',['Technical specification: Propagation of initial values V1.0',['../spec_initial_value_propagation.html',1,'index']]],
-  ['overview_2',['Conceptual overview',['../conceptual_overview.html',1,'index']]]
+  ['new_20in_20applicationcore_202_200_0',['What&apos;s new in ApplicationCore 2.0',['../whats_new__a_c_2_0.html',1,'']]]
 ];

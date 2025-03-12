@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-ApplicationCore: Technical specification: Exception handling for device runtime errors V1.0</title>
+<title>ChimeraTK-ApplicationCore: Technical specification: Exception handling for device runtime errors V1.1RC1WIP</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,15 +90,12 @@ $(document).ready(function(){initNavTree('spec_execption_handling.html',''); ini
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Technical specification: Exception handling for device runtime errors V1.0</div></div>
+  <div class="headertitle"><div class="title">Technical specification: Exception handling for device runtime errors V1.1RC1WIP</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
-<p>&zwj;This version is identical to V1.0RC2WIP.</p>
-<p></p>
-</blockquote>
-<blockquote class="doxtable">
-<p>&zwj;<b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
+<p>&zwj;<b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl.</p>
+<p>links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
 </blockquote>
 <h1><a class="anchor" id="spec_execptionHandling_intro"></a>
 A. Introduction</h1>
@@ -206,7 +203,10 @@ Startup</h2>
 <h2><a class="anchor" id="spec_execptionHandling_behaviour_forced_recovery"></a>
 Forced Recovery</h2>
 <ul>
-<li><a class="anchor" id="b_5"></a>5. Any <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> can explicitly report a problem with the device by calling <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception.">DeviceModule::reportException()</a>. This allows the reinitialisation of a device e.g. after a reboot of the device which didn't result in an exception (e.g. because it was too quick to be noticed, or rebooting the device takes place without interrupting the communication).</li>
+<li><a class="anchor" id="testExceptionHandling_b_5"></a>5. Any <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> can explicitly report a problem with the device by calling <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception.">DeviceModule::reportException()</a>. This allows the reinitialisation of a device e.g. after a reboot of the device which didn't result in an exception (e.g. because it was too quick to be noticed, or rebooting the device takes place without interrupting the communication). [<a class="el" href="spec_execption_handling.html#testExceptionHandling_b_5">T</a>]<ul>
+<li><a class="anchor" id="exceptionHandling_b_5_1"></a>5.1 <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception.">DeviceModule::reportException()</a> internally calls Device::setException(), such that the Device itselfs is aware of the error condition and all accessors with AccessMode::wait_for_new_data see an exception (resulting in a read with DataValidity::faulty due to the exception handling decorator). [<a class="el" href="namespace_tests_1_1test_exception_handling.html#testExceptionHandling_b_5_1">T</a>]</li>
+</ul>
+</li>
 </ul>
 <h2><a class="anchor" id="spec_execptionHandling_behaviour_comments"></a>
 (*) Comments</h2>
@@ -226,7 +226,7 @@ C. Implementation</h1>
 <p>A so-called <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application.">ExceptionHandlingDecorator</a> is placed around all device register accessors (used in ApplicationModules and FanOuts). It is responsible for catching the exceptions and implementing most of the behaviour described in <a class="el" href="spec_execption_handling.html#b_2">B.2</a>, and its implementation is described in <a class="el" href="spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator">C.2</a>. It has to work closely with the <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> and there is a complex synchronisation and locking scheme, which is described in <a class="el" href="spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface">C.1</a>. The sequence executed in the <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> is described in <a class="el" href="spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule">C.3</a>.</p>
 <h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_interface"></a>
 C.1 Internal interface between ExceptionHandlingDecorator and DeviceModule</h2>
-<p>Note: This section defines the internal interface on a low level. Helper functions, like getters and setters, are intenionally not mentioned here, since those are (in this context) unimportant details which can be chosen at will to structure the code conveniently. The entire interface between the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application.">ExceptionHandlingDecorator</a> and the <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> should be protected and the two classes should be friends, to prevent interference with the interface from other entities. Only <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception.">DeviceModule::reportException()</a> is public, see <a class="el" href="spec_execption_handling.html#b_5">B.5</a>.</p>
+<p>Note: This section defines the internal interface on a low level. Helper functions, like getters and setters, are intenionally not mentioned here, since those are (in this context) unimportant details which can be chosen at will to structure the code conveniently. The entire interface between the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application.">ExceptionHandlingDecorator</a> and the <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> should be protected and the two classes should be friends, to prevent interference with the interface from other entities. Only <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception.">DeviceModule::reportException()</a> is public, see B.5.</p>
 <ul>
 <li>1.1 The boolean flag DeviceModule::deviceHasError<ul>
 <li>1.1.1 is used by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application.">ExceptionHandlingDecorator</a> to detect prevailing error conditions, to know when transfers have to be skipped or delayed (cf. <a class="el" href="spec_execption_handling.html#c_2_4">2.4</a>).</li>

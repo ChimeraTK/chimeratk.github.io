@@ -9,7 +9,7 @@ var searchData=
   ['tagvalidatedvariable_6',['tagValidatedVariable',['../struct_chimera_t_k_1_1_user_input_validator.html#a1c25b272a9992e332b6516c2430f4fe1',1,'ChimeraTK::UserInputValidator']]],
   ['technical_20implementation_7',['technical implementation',['../spec_data_validity_propagation.html#autotoc_md5',1,'2. Technical implementation'],['../spec_data_validity_propagation.html#autotoc_md17',1,'4.3 Technical implementation']]],
   ['technical_20specification_3a_20data_20validity_20propagation_20specification_20version_20v1_200_8',['Technical specification: data validity propagation Specification version V1.0',['../spec_data_validity_propagation.html',1,'index']]],
-  ['technical_20specification_3a_20exception_20handling_20for_20device_20runtime_20errors_20v1_200_9',['Technical specification: Exception handling for device runtime errors V1.0',['../spec_execption_handling.html',1,'index']]],
+  ['technical_20specification_3a_20exception_20handling_20for_20device_20runtime_20errors_20v1_201rc1wip_9',['Technical specification: Exception handling for device runtime errors V1.1RC1WIP',['../spec_execption_handling.html',1,'index']]],
   ['technical_20specification_3a_20propagation_20of_20initial_20values_20v1_200_10',['Technical specification: Propagation of initial values V1.0',['../spec_initial_value_propagation.html',1,'index']]],
   ['technical_20specification_3a_20statusaggregator_11',['Technical specification: StatusAggregator',['../spec__status_aggregator.html',1,'index']]],
   ['tempchange_12',['tempChange',['../namespaceoven__sim.html#a5429fd646dac622dc00c2343cd058fab',1,'oven_sim']]],
