@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"namespace_chimera_t_k.html#a6488bea8863c6fe508989798b7721604":[19,0,1,238],
+"namespace_chimera_t_k.html#a66bf69a9e441fdd29a9ffc9ed8f4e562":[19,0,1,186],
 "namespace_chimera_t_k.html#a6e2237e39c86c1a9585534992ff9c446":[19,0,1,205],
 "namespace_chimera_t_k.html#a6ee53c548a088d9ed0b72677847b07b7":[19,0,1,225],
 "namespace_chimera_t_k.html#a7436572505b7cbb9c68d42fc881db771":[19,0,1,195],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "shared_dummy_helpers_8h_source.html":[21,0,0,0,6,2,3],
 "spec__data_consistency_key_mapping.html":[12],
 "spec__device_backend.html":[13],
-"spec__transfer_element.html":[14],
-"struct__pcieuni__ioctl__bar__sizes.html":[20,0,3],
-"struct__pcieuni__ioctl__bar__sizes.html#a1655f2c0a5992b5017c45c4bbd8d045d":[20,0,3,0]
+"spec__transfer_element.html":[14]
 };

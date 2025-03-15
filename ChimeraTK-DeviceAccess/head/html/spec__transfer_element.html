@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.1</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.2</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html',''); init
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Technical specification: TransferElement V1.1</div></div>
+  <div class="headertitle"><div class="title">Technical specification: TransferElement V1.2</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
@@ -330,9 +330,15 @@ B. Behavioural specification</h2>
 </li>
 <li><a class="anchor" id="transferElement_B_8_5_2"></a>8.5.2 In case the device does not send an initial value after the subscription, the accessor implementation must get an initial value synchronously and treat it as if it would have been received, i.e. push it to the queue. This must happen after the actual asynchronous sending has been turned on to make sure no update is missed. (*) [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_5_2">U</a>]</li>
 <li><a class="anchor" id="transferElement_B_8_5_3"></a>8.5.3 If a transfer element is created while the device is opened, functional and <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> has been called, the asynchronous read is activated immediately (incl. sending of the initial value). This ensures that either all or none of the transfer elements are receiving asyncronously send data. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_5_3">Needs to be changed, most probably testing the wrong thing. U</a>]</li>
-<li>8.5.4 If <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> is called while the device is not opened or has an error, this call has no effect. If it is called when no deactivated transfer element exists, this call also has no effect.</li>
+<li><a class="anchor" id="transferElement_B_8_5_4"></a>8.5.4 A <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> call has no effect if<ul>
+<li>8.5.4.1 the device is not opened</li>
+<li>8.5.4.2 the device has an error</li>
+<li><a class="anchor" id="transferElement_B_8_5_4_3"></a>8.5.4.3 asynchronous read is already active [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_5_4_3">U</a>]</li>
+</ul>
+</li>
 <li>8.5.5 <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> does not throw any exceptions.</li>
 <li>8.5.6 When <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> returns, it is not guaranteed that all initial values have been received already.</li>
+<li>8.5.7 <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> is thread safe against other calls of activateAsyncRead(), the creation/destuction of accessors, read/write operations and calls of <a class="el" href="class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687" title="Set the device into an exception state.">Device::setException()</a>.</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_8_6"></a>8.6 Blocking <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device.">TransferElement::read()</a> calls can be interrupted by the application via <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted.">TransferElement::interrupt()</a>.<ul>

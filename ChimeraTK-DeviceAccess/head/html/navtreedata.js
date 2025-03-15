@@ -102,7 +102,7 @@ var NAVTREE =
     ] ],
     [ "Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP", "spec__data_consistency_key_mapping.html", null ],
     [ "Technical specification DeviceBackend", "spec__device_backend.html", null ],
-    [ "Technical specification: TransferElement V1.1", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.2", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -176,22 +176,22 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8",
 "class_chimera_t_k_1_1_transfer_group.html#a359ad5b2f663420d47720acfb58cb13a",
 "class_chimera_t_k_1_1_unified_backend_test.html#a2702689c97a4924078d427490c5ebaa8",
-"class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html#a9282370d4f42695e956abc633de3e8f7",
-"class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory.html#a7f2d90116f97e1f787a017943e5926cb",
-"class_decorator_test_accessor.html#ae4067a6a982ff6e2ff8b95bc6d841654",
-"fix-linter-for-all_8py_source.html",
-"namespace_chimera_t_k.html#a6e2237e39c86c1a9585534992ff9c446",
-"struct__pcieuni__ioctl__bar__sizes.html#a5965724071c9397c5319ef10e9ebf5fa",
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ad319e839119cb0140070b67430c44898",
-"struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#a7f8723ef5356444e61a4e4eb6626089b",
-"struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html",
-"struct_integers__base.html#a9273b623705fe1b710a16c0d817b42ae",
-"struct_raw_to_cooked_provider__x.html",
-"struct_reg_word_firmware_as_parameter_in_math.html#ab3d66ed4dee56a82c390002912b39147",
-"structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5",
-"test_fixed_point_converter_8cpp.html#ae03464d1a31c1654f90958d6071ab180",
-"test_numeric_addressed_backend_unified_8cpp_source.html",
-"test_utilities_8cpp.html#a30a713b47abac7c9e1af7cb70cfd413b"
+"class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html#a908f96e2cfd5fc8c0303973a85ae307b",
+"class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory.html#a7d136ec5259cd3d3adc2e9d7be6118a9",
+"class_decorator_test_accessor.html#ad7b34e3e2fc86d9ac5280cc4f4b165e6",
+"fix-linter-for-all_8py.html#a6a7d32698d0a26e1154b3d58b567662e",
+"namespace_chimera_t_k.html#a6488bea8863c6fe508989798b7721604",
+"struct__pcieuni__ioctl__bar__sizes.html",
+"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ace81d4a490d4fb40ebc7bec8ea70db16",
+"struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html",
+"struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html#a762986b737c6a0a1d176ea25b697fc80",
+"struct_integers__base.html#a61a7992d50e812705794cbdad320d08b",
+"struct_raw_to_cooked_provider___var1.html",
+"struct_reg_word_firmware_as_parameter_in_math.html#aab163e3ef245cd6be8715bbc4516304d",
+"structaccess_private_data_1_1stow__private.html",
+"test_fixed_point_converter_8cpp.html#adc1982ab008f1d27098ffc2aa0a089a4",
+"test_numeric_addressed_backend_unified_8cpp.html#a79bd2784c77778975fd1503e8c97b3da",
+"test_utilities_8cpp.html#a0ee978fa15aae1d3003083fbccd2db8a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

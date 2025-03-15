@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"struct__pcieuni__ioctl__bar__sizes.html":[20,0,3],
+"struct__pcieuni__ioctl__bar__sizes.html#a1655f2c0a5992b5017c45c4bbd8d045d":[20,0,3,0],
 "struct__pcieuni__ioctl__bar__sizes.html#a5965724071c9397c5319ef10e9ebf5fa":[20,0,3,1],
 "struct_acknowledge_test.html":[20,0,5],
 "struct_acknowledge_test.html#a0b0d956b1445cc22baf1c1c954452d6f":[20,0,5,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#abbe256286bde78acae7f8a5f504fa6ea":[20,0,1,50,2],
 "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ac963db09278e80be9c97c91338ff577f":[19,0,1,54,1],
 "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ac963db09278e80be9c97c91338ff577f":[20,0,1,50,1],
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ace81d4a490d4fb40ebc7bec8ea70db16":[20,0,1,50,3],
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ace81d4a490d4fb40ebc7bec8ea70db16":[19,0,1,54,3],
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ad319e839119cb0140070b67430c44898":[20,0,1,50,9]
+"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ace81d4a490d4fb40ebc7bec8ea70db16":[20,0,1,50,3]
 };

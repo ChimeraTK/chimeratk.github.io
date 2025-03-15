@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"struct_integers__base.html#a61a7992d50e812705794cbdad320d08b":[20,0,81,10],
+"struct_integers__base.html#a6dc64093397a2b2fe3aef985668512eb":[20,0,81,3],
 "struct_integers__base.html#a9273b623705fe1b710a16c0d817b42ae":[20,0,81,6],
 "struct_integers__base.html#aa50896be4109d200e3f11d692660ed80":[20,0,81,2],
 "struct_integers__base.html#aaa069ed62135673ad7fc81f74c34f00c":[20,0,81,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "struct_only_cie_test_fixture.html#a16794c7e5455d1491e2c2d344e454c55":[20,0,126,0],
 "struct_only_sie_test_fixture.html":[20,0,127],
 "struct_only_sie_test_fixture.html#a0fd484f805842bc644b38f3634fc4af7":[20,0,127,0],
-"struct_raw_to_cooked_provider___bit_with_math.html":[20,0,132],
-"struct_raw_to_cooked_provider___var1.html":[20,0,133],
-"struct_raw_to_cooked_provider___var2.html":[20,0,134]
+"struct_raw_to_cooked_provider___bit_with_math.html":[20,0,132]
 };

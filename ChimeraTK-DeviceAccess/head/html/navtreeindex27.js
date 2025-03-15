@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"struct_raw_to_cooked_provider___var1.html":[20,0,133],
+"struct_raw_to_cooked_provider___var2.html":[20,0,134],
 "struct_raw_to_cooked_provider__x.html":[20,0,135],
 "struct_rebot_server_details.html":[20,0,138],
 "struct_rebot_server_details.html#a2f9f80babd0826bcf5ca87d4d1fc865d":[20,0,138,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "struct_reg_word_firmware_as_parameter_in_math.html#a13d5c7bb887249cd0105e4b75d80ea59":[20,0,183,7],
 "struct_reg_word_firmware_as_parameter_in_math.html#a4796f4acf1b46349276b26eb030eee06":[20,0,183,2],
 "struct_reg_word_firmware_as_parameter_in_math.html#a8d92700a5385ba7e9ceb0ce79dc1c18a":[20,0,183,6],
-"struct_reg_word_firmware_as_parameter_in_math.html#aaacfdd79fb5c749af656482893bc4561":[20,0,183,3],
-"struct_reg_word_firmware_as_parameter_in_math.html#aab163e3ef245cd6be8715bbc4516304d":[20,0,183,5],
-"struct_reg_word_firmware_as_parameter_in_math.html#ab042656d041ea382e71293ef9d789979":[20,0,183,1]
+"struct_reg_word_firmware_as_parameter_in_math.html#aaacfdd79fb5c749af656482893bc4561":[20,0,183,3]
 };

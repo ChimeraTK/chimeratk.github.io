@@ -468,86 +468,91 @@ $(document).ready(function(){initNavTree('_logical_name_mapping_backend_8cc_sour
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac0aa218e9c9f77da85b197b6c27d996c">  346</a></span>  <span class="keywordtype">void</span> LogicalNameMappingBackend::activateAsyncRead() noexcept {</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">if</span>(!isFunctional()) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="comment">// store information locally, as variable accessors have async read</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    _asyncReadActive = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="comment">// delegate to target devices</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; d : _devices) {</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>      d.second-&gt;activateAsyncRead();</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="comment">// Store information locally, as variable accessors have async read.</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="comment">// Atomically exchange with the existing value (for thread safety against concurrent activateAsyncRead calls), and</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="comment">// check the old state. If async read was already active, don&#39;t send the &quot;initial&quot; values again.</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keyword">auto</span> asyncWasActive = _asyncReadActive.exchange(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">if</span>(asyncWasActive) {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    }</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="comment">// iterate all push subscriptions of variables and place initial value into queue</span></div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <a class="code hl_class" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> v = getVersionOnOpen();</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : _catalogue_mutable) {</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>      <span class="keyword">auto</span>&amp; info = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a>&amp;<span class="keyword">&gt;</span>(r);</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>      <span class="keywordflow">if</span>(info.targetType == LNMBackendRegisterInfo::TargetType::VARIABLE) {</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        <span class="keyword">auto</span>&amp; lnmVariable = _variables[info.name];</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>          <a class="code hl_function" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d">callForType</a>(info.valueType, [&amp;](<span class="keyword">auto</span> arg) {</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            auto&amp; vtEntry = boost::fusion::at_key&lt;decltype(arg)&gt;(lnmVariable.valueTable.table);</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            <span class="comment">// override version number if last write to variable was before reopening the device</span></div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            if(vtEntry.latestVersion &lt; v) {</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>              vtEntry.latestVersion = v; <span class="comment">// store in case an accessor is created after calling activateAsyncRead</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            }</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sub : vtEntry.subscriptions) {</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>              <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                sub.second.push_overwrite({vtEntry.latestValue, vtEntry.latestValidity, vtEntry.latestVersion});</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>              }</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>              <span class="keywordflow">catch</span>(std::system_error&amp; e) {</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                std::cerr &lt;&lt; <span class="stringliteral">&quot;Caught system error in activateAsyncRead(): &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                std::terminate();</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>              }</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>            }</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>          });</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        }</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        <span class="keywordflow">catch</span>(std::bad_cast&amp; e) {</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>          <span class="comment">// bad_cast is thrown by callForType if the type is not known. This should not happen at this point any more</span></div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>          <span class="comment">// because we are iterating a list that has already been processed before.</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>          std::ignore = e;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>          assert(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        }</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>      }</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    }</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  }</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="comment">// delegate to target devices</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; d : _devices) {</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>      d.second-&gt;activateAsyncRead();</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    }</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="comment">// iterate all push subscriptions of variables and place initial value into queue</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <a class="code hl_class" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> v = getVersionOnOpen();</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : _catalogue_mutable) {</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>      <span class="keyword">auto</span>&amp; info = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a>&amp;<span class="keyword">&gt;</span>(r);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>      <span class="keywordflow">if</span>(info.targetType == LNMBackendRegisterInfo::TargetType::VARIABLE) {</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keyword">auto</span>&amp; lnmVariable = _variables[info.name];</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>          <a class="code hl_function" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d">callForType</a>(info.valueType, [&amp;](<span class="keyword">auto</span> arg) {</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            auto&amp; vtEntry = boost::fusion::at_key&lt;decltype(arg)&gt;(lnmVariable.valueTable.table);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            <span class="comment">// override version number if last write to variable was before reopening the device</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            if(vtEntry.latestVersion &lt; v) {</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>              vtEntry.latestVersion = v; <span class="comment">// store in case an accessor is created after calling activateAsyncRead</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            }</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sub : vtEntry.subscriptions) {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>              <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                sub.second.push_overwrite({vtEntry.latestValue, vtEntry.latestValidity, vtEntry.latestVersion});</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>              }</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>              <span class="keywordflow">catch</span>(std::system_error&amp; e) {</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                std::cerr &lt;&lt; <span class="stringliteral">&quot;Caught system error in activateAsyncRead(): &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                std::terminate();</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>              }</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>            }</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>          });</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        }</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">catch</span>(std::bad_cast&amp; e) {</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>          <span class="comment">// bad_cast is thrown by callForType if the type is not known. This should not happen at this point any more</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>          <span class="comment">// because we are iterating a list that has already been processed before.</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>          std::ignore = e;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>          assert(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        }</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>      }</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    }</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  }</div>
 </div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
-<div class="foldopen" id="foldopen00393" data-start="{" data-end="}">
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a3e1f51a139fe2d82286824b7f02f24df">  393</a></span>  std::unordered_set&lt;std::string&gt; LogicalNameMappingBackend::getTargetDevices()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    std::unordered_set&lt;std::string&gt; ret;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; info : _catalogue_mutable) {</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>      <span class="keywordflow">if</span>(info.deviceName != <span class="stringliteral">&quot;this&quot;</span> &amp;&amp; !info.deviceName.empty()) ret.insert(info.deviceName);</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    }</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>  }</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="foldopen" id="foldopen00398" data-start="{" data-end="}">
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a3e1f51a139fe2d82286824b7f02f24df">  398</a></span>  std::unordered_set&lt;std::string&gt; LogicalNameMappingBackend::getTargetDevices()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    std::unordered_set&lt;std::string&gt; ret;</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; info : _catalogue_mutable) {</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>      <span class="keywordflow">if</span>(info.deviceName != <span class="stringliteral">&quot;this&quot;</span> &amp;&amp; !info.deviceName.empty()) ret.insert(info.deviceName);</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    }</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>  }</div>
 </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
-<div class="foldopen" id="foldopen00403" data-start="{" data-end="}">
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7335d4638fba63540a65e9829bbe1407">  403</a></span>  <a class="code hl_class" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> LogicalNameMappingBackend::getVersionOnOpen()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="keywordflow">return</span> _versionOnOpen;</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  }</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="foldopen" id="foldopen00408" data-start="{" data-end="}">
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7335d4638fba63540a65e9829bbe1407">  408</a></span>  <a class="code hl_class" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> LogicalNameMappingBackend::getVersionOnOpen()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordflow">return</span> _versionOnOpen;</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  }</div>
 </div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
-<div class="foldopen" id="foldopen00409" data-start="{" data-end="}">
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a166309e3d8955efa9e9ec44909926f88">  409</a></span>  std::set&lt;DeviceBackend::BackendID&gt; LogicalNameMappingBackend::getInvolvedBackendIDs() {</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    parse();</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    std::set&lt;DeviceBackend::BackendID&gt; retVal{getBackendID()};</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; devIter : _devices) {</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>      <span class="keyword">auto</span>&amp; dev = devIter.second;</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      retVal.merge(dev-&gt;getInvolvedBackendIDs());</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    }</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    <span class="keywordflow">return</span> retVal;</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  }</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="foldopen" id="foldopen00414" data-start="{" data-end="}">
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a166309e3d8955efa9e9ec44909926f88">  414</a></span>  std::set&lt;DeviceBackend::BackendID&gt; LogicalNameMappingBackend::getInvolvedBackendIDs() {</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    parse();</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    std::set&lt;DeviceBackend::BackendID&gt; retVal{getBackendID()};</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; devIter : _devices) {</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      <span class="keyword">auto</span>&amp; dev = devIter.second;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      retVal.merge(dev-&gt;getInvolvedBackendIDs());</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    }</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <span class="keywordflow">return</span> retVal;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  }</div>
 </div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>} <span class="comment">// namespace ChimeraTK</span></div>
 </div>
 <div class="ttc" id="a_l_n_m_backend_bit_accessor_8h_html"><div class="ttname"><a href="_l_n_m_backend_bit_accessor_8h.html">LNMBackendBitAccessor.h</a></div></div>
 <div class="ttc" id="a_l_n_m_backend_channel_accessor_8h_html"><div class="ttname"><a href="_l_n_m_backend_channel_accessor_8h.html">LNMBackendChannelAccessor.h</a></div></div>
@@ -585,7 +590,7 @@ $(document).ready(function(){initNavTree('_logical_name_mapping_backend_8cc_sour
 <div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_map_parser_html_a63e405294bc4a2b05069bf7168690cc0"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_map_parser.html#a63e405294bc4a2b05069bf7168690cc0">ChimeraTK::LogicalNameMapParser::parseFile</a></div><div class="ttdeci">BackendRegisterCatalogue&lt; LNMBackendRegisterInfo &gt; parseFile(const std::string &amp;fileName)</div><div class="ttdoc">parse the given XML file</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_map_parser_8cc_source.html#l00261">LogicalNameMapParser.cc:261</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">ChimeraTK::LogicalNameMappingBackend</a></div><div class="ttdoc">Backend to map logical register names onto real hardware registers.</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8h_source.html#l00019">LogicalNameMappingBackend.h:19</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html_a040d968ac5144d39df47e0f3456cf42b"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a040d968ac5144d39df47e0f3456cf42b">ChimeraTK::LogicalNameMappingBackend::_catalogue_mutable</a></div><div class="ttdeci">BackendRegisterCatalogue&lt; LNMBackendRegisterInfo &gt; _catalogue_mutable</div><div class="ttdoc">We need to make the catalogue mutable, since we fill it within getRegisterCatalogue()</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8h_source.html#l00065">LogicalNameMappingBackend.h:65</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html_a3e1f51a139fe2d82286824b7f02f24df"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a3e1f51a139fe2d82286824b7f02f24df">ChimeraTK::LogicalNameMappingBackend::getTargetDevices</a></div><div class="ttdeci">std::unordered_set&lt; std::string &gt; getTargetDevices() const</div><div class="ttdoc">Obtain list of all target devices referenced in the catalogue.</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8cc_source.html#l00393">LogicalNameMappingBackend.cc:393</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html_a3e1f51a139fe2d82286824b7f02f24df"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a3e1f51a139fe2d82286824b7f02f24df">ChimeraTK::LogicalNameMappingBackend::getTargetDevices</a></div><div class="ttdeci">std::unordered_set&lt; std::string &gt; getTargetDevices() const</div><div class="ttdoc">Obtain list of all target devices referenced in the catalogue.</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8cc_source.html#l00398">LogicalNameMappingBackend.cc:398</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html_a61288f923cb78a49373c69387b1c139d"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a61288f923cb78a49373c69387b1c139d">ChimeraTK::LogicalNameMappingBackend::hasParsed</a></div><div class="ttdeci">bool hasParsed</div><div class="ttdoc">flag if already parsed</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8h_source.html#l00052">LogicalNameMappingBackend.h:52</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html_a64318838cfa707b222c53cc4a0f4b4fa"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a64318838cfa707b222c53cc4a0f4b4fa">ChimeraTK::LogicalNameMappingBackend::createInstance</a></div><div class="ttdeci">static boost::shared_ptr&lt; DeviceBackend &gt; createInstance(std::string address, std::map&lt; std::string, std::string &gt; parameters)</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8cc_source.html#l00108">LogicalNameMappingBackend.cc:108</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logical_name_mapping_backend_html_a6b020ac5ae848f98a0220c858d7808e7"><div class="ttname"><a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6b020ac5ae848f98a0220c858d7808e7">ChimeraTK::LogicalNameMappingBackend::parse</a></div><div class="ttdeci">void parse() const</div><div class="ttdoc">parse the logical map file, if not yet done</div><div class="ttdef"><b>Definition</b> <a href="_logical_name_mapping_backend_8cc_source.html#l00022">LogicalNameMappingBackend.cc:22</a></div></div>
