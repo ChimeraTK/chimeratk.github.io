@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('_hex_spin_box_8cpp_source.html',''); i
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_hex_spin_box.html#ae69102afb7140df46d470b91f0882776">   12</a></span><a class="code hl_function" href="class_hex_spin_box.html#ae69102afb7140df46d470b91f0882776">HexSpinBox::HexSpinBox</a>(QWidget* parent_) : QSpinBox(parent_), _validator(nullptr) {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="comment">// right now the hex spin box accepts [1,7] characters</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  QString regex(<span class="stringliteral">&quot;[0-9A-Fa-f]{1,8}&quot;</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  _validator = <span class="keyword">new</span> QRegExpValidator(QRegExp(regex), <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  _validator = <span class="keyword">new</span> QRegularExpressionValidator(QRegularExpression(regex), <span class="keyword">this</span>);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
