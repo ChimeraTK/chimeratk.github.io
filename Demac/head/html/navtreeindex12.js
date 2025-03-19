@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"class_stepper_motor_tec_remote.html#ac1e350855079813fa7213cd65e2a448f":[1,0,136,49],
 "class_stepper_motor_tec_remote.html#ac40a8325828565b857582908c3eac995":[1,0,136,50],
 "class_stepper_motor_tec_remote.html#ac47e15abc1ee514ae85ed6a58ab9cd0b":[1,0,136,51],
 "class_stepper_motor_tec_remote.html#aca543c9d870ae4b57a81ffa7454a5b78":[1,0,136,84],

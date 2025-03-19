@@ -68,10 +68,10 @@ var NAVTREEINDEX =
 "class_i_i_r_coeficient_calculator_1_1_i_i_r_params.html#afa6edc8e12c3b968380c742190fe1d8b",
 "class_m___e_n_t___firmware_version.html#af67fda584d7853b648f517f4875b1d2e",
 "class_m___e_n_t___tec_base.html#ae0d7da7830cf087d0c4d16a234df6b67",
-"class_m___rapid_x___e_n_t___sis_dac.html#aef9dcca223b70a4be7af151d232d339b",
-"class_stepper_actuator.html#a5b79a393292acfb49cebf8b3c4bbd9e9",
-"class_stepper_motor_remote.html#a37d086e680a3aa2389af974b460a6719",
-"class_stepper_motor_tec_remote.html#ac1e350855079813fa7213cd65e2a448f"
+"class_m___rapid_x___e_n_t___sis_dac.html#afc49a60574614680019ef6e94c798b1d",
+"class_stepper_actuator.html#a5b79a393292acfb49cebf8b3c4bbd9e9a021d92a6c29464ce8455c9bbcea76fa5",
+"class_stepper_motor_remote.html#a3861d9727f69698b55e16ee2af0838a8",
+"class_stepper_motor_tec_remote.html#ac40a8325828565b857582908c3eac995"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

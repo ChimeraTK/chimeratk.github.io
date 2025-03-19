@@ -7,7 +7,7 @@ var searchData=
   ['clearfields_4',['clearFields',['../class_properties_widget.html#af4e895a0977460151bcc17021b325c8c',1,'PropertiesWidget']]],
   ['clearmodifiedflags_5',['clearModifiedFlags',['../class_register_accessor_model.html#aecf113c52514c5493d342679c63c2bd4',1,'RegisterAccessorModel']]],
   ['closedevice_6',['closeDevice',['../class_qt_hard_mon.html#a5da296206e6ab06385c7c2c58cb73e2b',1,'QtHardMon']]],
-  ['closeevent_7',['closeEvent',['../class_plot_window.html#afd4910a232349529182475abf700f1eb',1,'PlotWindow']]],
+  ['closeevent_7',['closeEvent',['../class_plot_window.html#a938be2adcee75466f0ded901a2d01920',1,'PlotWindow']]],
   ['columncount_8',['columnCount',['../class_register_accessor_model.html#a33829c2c915386f838c94fc2e57f9898',1,'RegisterAccessorModel']]],
   ['configfilereaderwriter_9',['configfilereaderwriter',['../class_config_file_reader_writer.html#a7fae593e20df60c321e4dca0355115f8',1,'ConfigFileReaderWriter::ConfigFileReaderWriter(std::string const &amp;fileName)'],['../class_config_file_reader_writer.html#a30b2fe53c3b3d31b8e5ddfb2b55d2140',1,'ConfigFileReaderWriter::ConfigFileReaderWriter()']]],
   ['create_10',['Create',['../class_create_by_new.html#a8ed2aa648ac31d49da58ad018f17b4f3',1,'CreateByNew']]],

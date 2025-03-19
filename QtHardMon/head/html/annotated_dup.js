@@ -12,6 +12,7 @@ var annotated_dup =
     [ "NumericAddressedCookedMultiplexedAreaQTreeItem_fixture", "struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture.html", "struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture" ],
     [ "NumericAddressedMultiplexedAreaQTreeItem_fixture", "struct_numeric_addressed_multiplexed_area_q_tree_item__fixture.html", "struct_numeric_addressed_multiplexed_area_q_tree_item__fixture" ],
     [ "NumericAddressedRegisterQTreeItem_fixture", "struct_numeric_addressed_register_q_tree_item__fixture.html", "struct_numeric_addressed_register_q_tree_item__fixture" ],
+    [ "PlotView", "class_plot_view.html", "class_plot_view" ],
     [ "PlotWindow", "class_plot_window.html", "class_plot_window" ],
     [ "PreferencesProvider", "class_preferences_provider.html", "class_preferences_provider" ],
     [ "PreferencesProvider_fixtureBase", "struct_preferences_provider__fixture_base.html", "struct_preferences_provider__fixture_base" ],
