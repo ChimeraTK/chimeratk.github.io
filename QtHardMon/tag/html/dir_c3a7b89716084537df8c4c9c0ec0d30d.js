@@ -10,7 +10,7 @@ var dir_c3a7b89716084537df8c4c9c0ec0d30d =
     [ "HexSpinBox.cpp", "_hex_spin_box_8cpp.html", null ],
     [ "HexSpinBox.h", "_hex_spin_box_8h.html", "_hex_spin_box_8h" ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "PlotWindow.cpp", "_plot_window_8cpp.html", null ],
+    [ "PlotWindow.cpp", "_plot_window_8cpp.html", "_plot_window_8cpp" ],
     [ "PlotWindow.h", "_plot_window_8h.html", "_plot_window_8h" ],
     [ "PreferencesProvider.cpp", "_preferences_provider_8cpp.html", null ],
     [ "PreferencesProvider.h", "_preferences_provider_8h.html", "_preferences_provider_8h" ],

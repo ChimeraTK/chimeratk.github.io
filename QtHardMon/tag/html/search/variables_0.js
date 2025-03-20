@@ -9,11 +9,12 @@ var searchData=
   ['_5fcookedhexcolumnindex_6',['_cookedHexColumnIndex',['../class_register_accessor_model.html#a0b9801cd86c87de0aac5cc5220f5ca9f',1,'RegisterAccessorModel']]],
   ['_5fcurrentdevicelistitem_7',['_currentDeviceListItem',['../class_qt_hard_mon.html#abf98cabc4a7c57c5e45696bac4d9005e',1,'QtHardMon']]],
   ['_5fdefaulttableviewedittriggers_8',['_defaultTableViewEditTriggers',['../class_qt_hard_mon.html#a057d6716bcce7d56a24ea7cc3f0ed0da',1,'QtHardMon']]],
-  ['_5fismodified_9',['_isModified',['../class_register_accessor_model.html#ad19ae270038ed31ce74047aa8f9b629b',1,'RegisterAccessorModel']]],
-  ['_5fmessage_10',['_message',['../class_qt_hard_mon_exception.html#ada4e0c83514c95b8ec1a566520b48fd8',1,'QtHardMonException']]],
-  ['_5fncolumns_11',['_nColumns',['../class_register_accessor_model.html#a29de97d50c2ec003a2f48c0cbef5f207',1,'RegisterAccessorModel']]],
-  ['_5fplotwindow_12',['_plotWindow',['../class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40',1,'QtHardMon']]],
-  ['_5frawcolumnindex_13',['_rawColumnIndex',['../class_register_accessor_model.html#a7ba70650d3993162a00e025c916e14bd',1,'RegisterAccessorModel']]],
-  ['_5frawdatatype_14',['_rawDataType',['../class_register_type_abstractor_impl.html#ab65f368c601ce67e6674aa4cc33ae31f',1,'RegisterTypeAbstractorImpl']]],
-  ['_5frawhexcolumnindex_15',['_rawHexColumnIndex',['../class_register_accessor_model.html#af3b94c40ec94c8e617dd0607357ed074',1,'RegisterAccessorModel']]]
+  ['_5fdummywritableaccessor_9',['_dummyWritableAccessor',['../class_register_accessor_model.html#a99a6701c70aace02c3cb8931e20a211d',1,'RegisterAccessorModel']]],
+  ['_5fismodified_10',['_isModified',['../class_register_accessor_model.html#ad19ae270038ed31ce74047aa8f9b629b',1,'RegisterAccessorModel']]],
+  ['_5fmessage_11',['_message',['../class_qt_hard_mon_exception.html#ada4e0c83514c95b8ec1a566520b48fd8',1,'QtHardMonException']]],
+  ['_5fncolumns_12',['_nColumns',['../class_register_accessor_model.html#a29de97d50c2ec003a2f48c0cbef5f207',1,'RegisterAccessorModel']]],
+  ['_5fplotwindow_13',['_plotWindow',['../class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40',1,'QtHardMon']]],
+  ['_5frawcolumnindex_14',['_rawColumnIndex',['../class_register_accessor_model.html#a7ba70650d3993162a00e025c916e14bd',1,'RegisterAccessorModel']]],
+  ['_5frawdatatype_15',['_rawDataType',['../class_register_type_abstractor_impl.html#ab65f368c601ce67e6674aa4cc33ae31f',1,'RegisterTypeAbstractorImpl']]],
+  ['_5frawhexcolumnindex_16',['_rawHexColumnIndex',['../class_register_accessor_model.html#af3b94c40ec94c8e617dd0607357ed074',1,'RegisterAccessorModel']]]
 ];

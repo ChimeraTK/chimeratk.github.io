@@ -1,6 +1,6 @@
 var class_register_accessor_model =
 [
-    [ "RegisterAccessorModel", "class_register_accessor_model.html#a2ce82e0c7c282215f00e48b49df77b42", null ],
+    [ "RegisterAccessorModel", "class_register_accessor_model.html#a21160c68e1146fce4a26feb6959be906", null ],
     [ "clearModifiedFlags", "class_register_accessor_model.html#aecf113c52514c5493d342679c63c2bd4", null ],
     [ "columnCount", "class_register_accessor_model.html#a33829c2c915386f838c94fc2e57f9898", null ],
     [ "data", "class_register_accessor_model.html#a4b9dc31ab2b4e814d20a966f8b2424ec", null ],
@@ -18,6 +18,7 @@ var class_register_accessor_model =
     [ "_abstractAccessor", "class_register_accessor_model.html#aadc46f44e3065524562a86598ed4e09f", null ],
     [ "_channelNumber", "class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb", null ],
     [ "_cookedHexColumnIndex", "class_register_accessor_model.html#a0b9801cd86c87de0aac5cc5220f5ca9f", null ],
+    [ "_dummyWritableAccessor", "class_register_accessor_model.html#a99a6701c70aace02c3cb8931e20a211d", null ],
     [ "_isModified", "class_register_accessor_model.html#ad19ae270038ed31ce74047aa8f9b629b", null ],
     [ "_nColumns", "class_register_accessor_model.html#a29de97d50c2ec003a2f48c0cbef5f207", null ],
     [ "_rawColumnIndex", "class_register_accessor_model.html#a7ba70650d3993162a00e025c916e14bd", null ],

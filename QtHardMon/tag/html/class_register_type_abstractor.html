@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af8f97fe27d17eb03a865d9105f8336b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a478cd5890a491bafdb1d500dafdeda0f" id="r_a478cd5890a491bafdb1d500dafdeda0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a478cd5890a491bafdb1d500dafdeda0f">setRawData</a> (unsigned int channelIndex, unsigned int elementIndex, const QVariant &amp;value)=0</td></tr>
 <tr class="separator:a478cd5890a491bafdb1d500dafdeda0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f1be70fd07c7af4f2196459f98f6f8" id="r_ae0f1be70fd07c7af4f2196459f98f6f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#ae0f1be70fd07c7af4f2196459f98f6f8">setFromOther</a> (<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> const &amp;other)=0</td></tr>
+<tr class="separator:ae0f1be70fd07c7af4f2196459f98f6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60cb6d79dac7d07c72182a97071dbea3" id="r_a60cb6d79dac7d07c72182a97071dbea3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a60cb6d79dac7d07c72182a97071dbea3">isIntegral</a> () const =0</td></tr>
 <tr class="separator:a60cb6d79dac7d07c72182a97071dbea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7f3d727786422b84e11f856420f165" id="r_a4c7f3d727786422b84e11f856420f165"><td class="memItemLeft" align="right" valign="top">virtual ChimeraTK::DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a4c7f3d727786422b84e11f856420f165">rawDataType</a> () const =0</td></tr>
@@ -154,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Register ChimeraTK::Boolean type with Qt. </p>
 <p>Qt objects with signals and slots cannot be template classes. As we need a container for the user-type templated RegisterAccessors, this class is used as a non-templated base class a Qt-compatible interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_8h_source.html#l00015">15</a> of file <a class="el" href="_register_type_abstractor_8h_source.html">RegisterTypeAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_8h_source.html#l00016">16</a> of file <a class="el" href="_register_type_abstractor_8h_source.html">RegisterTypeAbstractor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2541df91f2aad9cc67fa4018f0ae827f" name="a2541df91f2aad9cc67fa4018f0ae827f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2541df91f2aad9cc67fa4018f0ae827f">&#9670;&#160;</a></span>~RegisterTypeAbstractor()</h2>
@@ -675,6 +677,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae0f1be70fd07c7af4f2196459f98f6f8" name="ae0f1be70fd07c7af4f2196459f98f6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f1be70fd07c7af4f2196459f98f6f8">&#9670;&#160;</a></span>setFromOther()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RegisterTypeAbstractor::setFromOther </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_register_type_abstractor_impl.html#a3b23329c497e76f28ea3ee148b5d3c04">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>, and <a class="el" href="class_register_type_abstractor_impl.html#a3b23329c497e76f28ea3ee148b5d3c04">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a478cd5890a491bafdb1d500dafdeda0f" name="a478cd5890a491bafdb1d500dafdeda0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a478cd5890a491bafdb1d500dafdeda0f">&#9670;&#160;</a></span>setRawData()</h2>
 
@@ -755,7 +785,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a></li>
-    <li class="footer">Generated on Wed Mar 12 2025 19:42:03 for QtHardMon by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

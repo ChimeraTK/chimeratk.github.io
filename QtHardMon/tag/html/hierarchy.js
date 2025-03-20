@@ -3,7 +3,6 @@ var hierarchy =
     [ "ConfigFileReaderWriter", "class_config_file_reader_writer.html", null ],
     [ "CreateByNew< T >", "class_create_by_new.html", null ],
     [ "DeviceAccessSetup_fixture", "struct_device_access_setup__fixture.html", [
-      [ "ExampleDeviceElementQTreeItem_fixture", "struct_example_device_element_q_tree_item__fixture.html", null ],
       [ "NumericAddressedCookedMultiplexedAreaQTreeItem_fixture", "struct_numeric_addressed_cooked_multiplexed_area_q_tree_item__fixture.html", null ],
       [ "NumericAddressedMultiplexedAreaQTreeItem_fixture", "struct_numeric_addressed_multiplexed_area_q_tree_item__fixture.html", null ],
       [ "NumericAddressedRegisterQTreeItem_fixture", "struct_numeric_addressed_register_q_tree_item__fixture.html", null ],
@@ -15,23 +14,19 @@ var hierarchy =
       [ "NumericAddressedRegisterQTreeItem_fixture", "struct_numeric_addressed_register_q_tree_item__fixture.html", null ],
       [ "RegisterQTreeItem_fixture", "struct_register_q_tree_item__fixture.html", null ]
     ] ],
-    [ "ExampleDeviceElementQTreeItem_fixtureBase", "struct_example_device_element_q_tree_item__fixture_base.html", [
-      [ "ExampleDeviceElementQTreeItem_fixture", "struct_example_device_element_q_tree_item__fixture.html", null ]
-    ] ],
-    [ "ExamplePropertiesWidget_fixtureBase", "struct_example_properties_widget__fixture_base.html", null ],
     [ "std::exception", null, [
       [ "QtHardMonException", "class_qt_hard_mon_exception.html", null ]
     ] ],
     [ "HexData", "class_hex_data.html", null ],
     [ "LifetimeStandard< T >", "class_lifetime_standard.html", null ],
     [ "SingleThread< T >::Lock", "class_single_thread_1_1_lock.html", null ],
-    [ "NumericDataTableMixin", null, [
-      [ "ExamplePropertiesWidget", "class_example_properties_widget.html", null ]
-    ] ],
     [ "PreferencesProvider", "class_preferences_provider.html", null ],
     [ "PreferencesProvider_fixtureBase", "struct_preferences_provider__fixture_base.html", null ],
     [ "QAbstractTableModel", null, [
       [ "RegisterAccessorModel", "class_register_accessor_model.html", null ]
+    ] ],
+    [ "QChartView", null, [
+      [ "PlotView", "class_plot_view.html", null ]
     ] ],
     [ "QListWidgetItem", null, [
       [ "QtHardMon::DeviceListItem", "class_qt_hard_mon_1_1_device_list_item.html", null ]
@@ -53,15 +48,11 @@ var hierarchy =
       ] ]
     ] ],
     [ "QTreeWidgetItem", null, [
-      [ "DeviceElementQTreeItem", "class_device_element_q_tree_item.html", [
-        [ "RegisterQTreeItem", "class_register_q_tree_item.html", null ]
-      ] ]
+      [ "DeviceElementQTreeItem", "class_device_element_q_tree_item.html", null ]
     ] ],
     [ "QWidget", null, [
       [ "PlotWindow", "class_plot_window.html", null ],
-      [ "PropertiesWidget", "class_properties_widget.html", [
-        [ "ExamplePropertiesWidget", "class_example_properties_widget.html", null ]
-      ] ]
+      [ "PropertiesWidget", "class_properties_widget.html", null ]
     ] ],
     [ "RegisterPropertiesWidget_fixtureBase", "struct_register_properties_widget__fixture_base.html", null ],
     [ "RegisterTreeUtilities", "class_register_tree_utilities.html", null ],

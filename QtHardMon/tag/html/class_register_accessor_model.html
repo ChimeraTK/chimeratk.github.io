@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('class_register_accessor_model.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ce82e0c7c282215f00e48b49df77b42" id="r_a2ce82e0c7c282215f00e48b49df77b42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a2ce82e0c7c282215f00e48b49df77b42">RegisterAccessorModel</a> (QObject *parent, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;abstractAccessor)</td></tr>
-<tr class="separator:a2ce82e0c7c282215f00e48b49df77b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21160c68e1146fce4a26feb6959be906" id="r_a21160c68e1146fce4a26feb6959be906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a21160c68e1146fce4a26feb6959be906">RegisterAccessorModel</a> (QObject *parent, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;abstractAccessor, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;dummyWriteableAccessor={nullptr})</td></tr>
+<tr class="separator:a21160c68e1146fce4a26feb6959be906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ce063127f54c5058fa5b53c689bfc9b" id="r_a2ce063127f54c5058fa5b53c689bfc9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a2ce063127f54c5058fa5b53c689bfc9b">rowCount</a> (const QModelIndex &amp;modelIndex=QModelIndex()) const override</td></tr>
 <tr class="separator:a2ce063127f54c5058fa5b53c689bfc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33829c2c915386f838c94fc2e57f9898" id="r_a33829c2c915386f838c94fc2e57f9898"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a33829c2c915386f838c94fc2e57f9898">columnCount</a> (const QModelIndex &amp;modelIndex=QModelIndex()) const override</td></tr>
@@ -155,6 +155,8 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aadc46f44e3065524562a86598ed4e09f" id="r_aadc46f44e3065524562a86598ed4e09f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#aadc46f44e3065524562a86598ed4e09f">_abstractAccessor</a></td></tr>
 <tr class="separator:aadc46f44e3065524562a86598ed4e09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a6701c70aace02c3cb8931e20a211d" id="r_a99a6701c70aace02c3cb8931e20a211d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a99a6701c70aace02c3cb8931e20a211d">_dummyWritableAccessor</a></td></tr>
+<tr class="separator:a99a6701c70aace02c3cb8931e20a211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad19ae270038ed31ce74047aa8f9b629b" id="r_ad19ae270038ed31ce74047aa8f9b629b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#ad19ae270038ed31ce74047aa8f9b629b">_isModified</a></td></tr>
 <tr class="separator:ad19ae270038ed31ce74047aa8f9b629b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ead1327e583ca921fe7233b33d420cb" id="r_a4ead1327e583ca921fe7233b33d420cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb">_channelNumber</a></td></tr>
@@ -172,8 +174,8 @@ Protected Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00009">9</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2ce82e0c7c282215f00e48b49df77b42" name="a2ce82e0c7c282215f00e48b49df77b42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce82e0c7c282215f00e48b49df77b42">&#9670;&#160;</a></span>RegisterAccessorModel()</h2>
+<a id="a21160c68e1146fce4a26feb6959be906" name="a21160c68e1146fce4a26feb6959be906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21160c68e1146fce4a26feb6959be906">&#9670;&#160;</a></span>RegisterAccessorModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +190,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>abstractAccessor</em>&#160;</td>
+          <td class="paramname"><em>abstractAccessor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>dummyWriteableAccessor</em> = <code>{nullptr}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -198,7 +206,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00008">8</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00010">10</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -226,7 +234,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00143">143</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00153">153</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -261,7 +269,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00049">49</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00052">52</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -306,7 +314,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00053">53</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00056">56</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -348,7 +356,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00085">85</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00088">88</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +375,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00193">193</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00203">203</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -393,7 +401,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00201">201</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00211">211</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -444,7 +452,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00154">154</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00164">164</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -463,7 +471,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00189">189</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00199">199</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +490,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00132">132</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00135">135</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -509,7 +517,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00116">116</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00119">119</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -551,7 +559,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00040">40</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00043">43</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -578,7 +586,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00111">111</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00114">114</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -629,7 +637,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00089">89</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00092">92</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +656,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00136">136</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00139">139</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -687,7 +695,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00032">32</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00033">33</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +719,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00036">36</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00038">38</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -735,7 +743,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00050">50</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00052">52</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a id="a99a6701c70aace02c3cb8931e20a211d" name="a99a6701c70aace02c3cb8931e20a211d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a6701c70aace02c3cb8931e20a211d">&#9670;&#160;</a></span>_dummyWritableAccessor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt; RegisterAccessorModel::_dummyWritableAccessor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00034">34</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +791,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00033">33</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00035">35</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -783,7 +815,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00055">55</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00057">57</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -807,7 +839,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00051">51</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00053">53</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +863,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00053">53</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00055">55</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
 
 </div>
 </div>
@@ -845,7 +877,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_accessor_model.html">RegisterAccessorModel</a></li>
-    <li class="footer">Generated on Wed Mar 12 2025 19:42:03 for QtHardMon by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
