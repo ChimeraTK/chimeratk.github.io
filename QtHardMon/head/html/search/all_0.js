@@ -5,7 +5,7 @@ var searchData=
   ['_5fcachedcookeddata_2',['_cachedCookedData',['../class_register_type_abstractor_raw_impl.html#a1e0a56a0716b898e27740ff081379550',1,'RegisterTypeAbstractorRawImpl']]],
   ['_5fcachedcookeddatavalid_3',['_cachedCookedDataValid',['../class_register_type_abstractor_raw_impl.html#a9606da721f186eb2139c561d5f4eea92',1,'RegisterTypeAbstractorRawImpl']]],
   ['_5fchannelnumber_4',['_channelNumber',['../class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb',1,'RegisterAccessorModel']]],
-  ['_5fcontinuousreadtimner_5',['_continuousReadTimner',['../class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253',1,'QtHardMon']]],
+  ['_5fcontinuousreadtimer_5',['_continuousReadTimer',['../class_qt_hard_mon.html#ae32f7c39bf72cc05a6a20a638596d2b6',1,'QtHardMon']]],
   ['_5fcookedhexcolumnindex_6',['_cookedHexColumnIndex',['../class_register_accessor_model.html#a0b9801cd86c87de0aac5cc5220f5ca9f',1,'RegisterAccessorModel']]],
   ['_5fcurrentdevicelistitem_7',['_currentDeviceListItem',['../class_qt_hard_mon.html#abf98cabc4a7c57c5e45696bac4d9005e',1,'QtHardMon']]],
   ['_5fdefaulttableviewedittriggers_8',['_defaultTableViewEditTriggers',['../class_qt_hard_mon.html#a057d6716bcce7d56a24ea7cc3f0ed0da',1,'QtHardMon']]],

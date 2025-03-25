@@ -14,9 +14,14 @@ var hierarchy =
         [ "ArrayApplicationModuleTestApp", "struct_array_application_module_test_app.html", null ],
         [ "ArrayVariableGroupTestApp", "struct_array_variable_group_test_app.html", null ],
         [ "ArrayVariableGroupTestAppForMove", "struct_array_variable_group_test_app_for_move.html", null ],
+        [ "BasicTestApp", "struct_basic_test_app.html", [
+          [ "BlockInitTestApp", "struct_block_init_test_app.html", null ],
+          [ "InitFailureApp", "struct_init_failure_app.html", null ]
+        ] ],
         [ "DummyApplication", "struct_dummy_application.html", null ],
         [ "ExampleApp", "class_example_app.html", null ],
         [ "ExampleApp", "class_example_app.html", null ],
+        [ "IncompleteRecoveryTestApp", "struct_incomplete_recovery_test_app.html", null ],
         [ "ScalarApplicationModuleTestApp", "struct_scalar_application_module_test_app.html", null ],
         [ "ScalarVariableGroupTestApp", "struct_scalar_variable_group_test_app.html", null ],
         [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", null ],
@@ -121,7 +126,8 @@ var hierarchy =
         [ "Tests::testTrigger::TestApp5", "struct_tests_1_1test_trigger_1_1_test_app5.html", null ],
         [ "Tests::testTrigger::TestApplication", "struct_tests_1_1test_trigger_1_1_test_application.html", null ],
         [ "Tests::testVariableGroup::TestApplication", "struct_tests_1_1test_variable_group_1_1_test_application.html", null ],
-        [ "Tests::testVersionpropagation::TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", null ]
+        [ "Tests::testVersionpropagation::TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", null ],
+        [ "WriteRecoveryTestApp", "struct_write_recovery_test_app.html", null ]
       ] ]
     ] ],
     [ "ac.ApplicationModule", null, [
@@ -177,6 +183,7 @@ var hierarchy =
           [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_device_module.html", null ],
           [ "ChimeraTK::EventMessageAggregator", "class_chimera_t_k_1_1_event_message_aggregator.html", null ],
           [ "ChimeraTK::PyModuleGroup", "class_chimera_t_k_1_1_py_module_group.html", null ],
+          [ "DeviceModuleWithPath", "struct_device_module_with_path.html", null ],
           [ "DummyApplication::Group1", "struct_dummy_application_1_1_group1.html", null ],
           [ "DummyApplication::Group2", "struct_dummy_application_1_1_group2.html", null ],
           [ "DummyApplication::Group3", "struct_dummy_application_1_1_group3.html", null ],
@@ -376,6 +383,9 @@ var hierarchy =
     [ "std::exception", null, [
       [ "ChimeraTK::Model::detail::VisitorHelper< BASE, VISITOR, FILTER, RETURN_FIRST_HIT >::StopException", "class_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper_1_1_stop_exception.html", null ]
     ] ],
+    [ "ChimeraTK::ExceptionDummy", null, [
+      [ "WriteBlockingDummy", "struct_write_blocking_dummy.html", null ]
+    ] ],
     [ "ChimeraTK::FanOutBase", "class_chimera_t_k_1_1_fan_out_base.html", [
       [ "ChimeraTK::FanOut< UserType >", "class_chimera_t_k_1_1_fan_out.html", [
         [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
@@ -391,6 +401,7 @@ var hierarchy =
       [ "ChimeraTK::Model::AndSet< FILTER_LHS, FILTER_RHS >", "struct_chimera_t_k_1_1_model_1_1_and_set.html", null ],
       [ "ChimeraTK::Model::OrSet< FILTER_LHS, FILTER_RHS >", "struct_chimera_t_k_1_1_model_1_1_or_set.html", null ]
     ] ],
+    [ "Fixture< APP >", "struct_fixture.html", null ],
     [ "Tests::testScriptedInitialisationHandler::Fixture", "struct_tests_1_1test_scripted_initialisation_handler_1_1_fixture.html", null ],
     [ "Tests::testPropagateDataFaultFlag::FixtureNoTestableMode", "struct_tests_1_1test_propagate_data_fault_flag_1_1_fixture_no_testable_mode.html", null ],
     [ "Tests::testPropagateDataFaultFlag::FixtureTestFacility", "struct_tests_1_1test_propagate_data_fault_flag_1_1_fixture_test_facility.html", null ],
@@ -558,6 +569,9 @@ var hierarchy =
     ] ],
     [ "Tests::testApplicationPVModel::Item", "struct_tests_1_1test_application_p_v_model_1_1_item.html", null ],
     [ "ChimeraTK::Logger", "class_chimera_t_k_1_1_logger.html", null ],
+    [ "ChimeraTK::LogicalNameMappingBackend", null, [
+      [ "OpenCountingLmapBackend", "struct_open_counting_lmap_backend.html", null ]
+    ] ],
     [ "ChimeraTK::MetaDataPropagationFlagProvider", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html", [
       [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ]
     ] ],
@@ -639,7 +653,10 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::PyTransferElement< DerivedAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", null ]
     ] ],
+    [ "ChimeraTK::DeviceManager::RecoveryGroup", "struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html", null ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
+    [ "OpenCountingLmapBackend::Registerer", "struct_open_counting_lmap_backend_1_1_registerer.html", null ],
+    [ "WriteBlockingDummy::Registerer", "struct_write_blocking_dummy_1_1_registerer.html", null ],
     [ "ChimeraTK::Model::VertexProperties::RootProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html", null ],
     [ "ChimeraTK::ScalarRegisterAccessor", null, [
       [ "ChimeraTK::ScalarAccessor< std::string >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],

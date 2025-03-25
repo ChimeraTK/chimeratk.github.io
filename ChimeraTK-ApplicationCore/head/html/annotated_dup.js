@@ -453,10 +453,17 @@ var annotated_dup =
     [ "ArrayVariableGroupTestApp", "struct_array_variable_group_test_app.html", "struct_array_variable_group_test_app" ],
     [ "ArrayVariableGroupTestAppForMove", "struct_array_variable_group_test_app_for_move.html", "struct_array_variable_group_test_app_for_move" ],
     [ "AverageCurrent", "class_average_current.html", null ],
+    [ "BasicTestApp", "struct_basic_test_app.html", "struct_basic_test_app" ],
+    [ "BlockInitTestApp", "struct_block_init_test_app.html", "struct_block_init_test_app" ],
     [ "Controller", "class_controller.html", null ],
+    [ "DeviceModuleWithPath", "struct_device_module_with_path.html", "struct_device_module_with_path" ],
     [ "DummyApplication", "struct_dummy_application.html", "struct_dummy_application" ],
     [ "ExampleApp", "class_example_app.html", "class_example_app" ],
+    [ "Fixture", "struct_fixture.html", "struct_fixture" ],
     [ "FixtureWithPollAndPushInput", "struct_fixture_with_poll_and_push_input.html", "struct_fixture_with_poll_and_push_input" ],
+    [ "IncompleteRecoveryTestApp", "struct_incomplete_recovery_test_app.html", "struct_incomplete_recovery_test_app" ],
+    [ "InitFailureApp", "struct_init_failure_app.html", "struct_init_failure_app" ],
+    [ "OpenCountingLmapBackend", "struct_open_counting_lmap_backend.html", "struct_open_counting_lmap_backend" ],
     [ "OutputModule", "struct_output_module.html", "struct_output_module" ],
     [ "PollModule", "struct_poll_module.html", "struct_poll_module" ],
     [ "PushModule", "struct_push_module.html", "struct_push_module" ],
@@ -469,5 +476,7 @@ var annotated_dup =
     [ "ScalarVariableGroupTestApp", "struct_scalar_variable_group_test_app.html", "struct_scalar_variable_group_test_app" ],
     [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", "struct_scalar_variable_group_test_app_for_move" ],
     [ "SetpointRamp", "class_setpoint_ramp.html", null ],
-    [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ]
+    [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ],
+    [ "WriteBlockingDummy", "struct_write_blocking_dummy.html", "struct_write_blocking_dummy" ],
+    [ "WriteRecoveryTestApp", "struct_write_recovery_test_app.html", "struct_write_recovery_test_app" ]
 ];

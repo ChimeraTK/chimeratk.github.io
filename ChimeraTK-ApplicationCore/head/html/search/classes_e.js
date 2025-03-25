@@ -8,10 +8,12 @@ var searchData=
   ['readonlytestapplication_5',['ReadOnlyTestApplication',['../struct_tests_1_1test_process_variable_recovery_1_1_read_only_test_application.html',1,'Tests::testProcessVariableRecovery']]],
   ['readsplitarraymodule_6',['ReadSplitArrayModule',['../struct_chimera_t_k_1_1_read_split_array_module.html',1,'ChimeraTK']]],
   ['receiver_7',['Receiver',['../classtest_python_data_consistency_group_1_1_receiver.html',1,'testPythonDataConsistencyGroup']]],
-  ['recoveryhelper_8',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html',1,'ChimeraTK']]],
-  ['returnfirsthit_9',['ReturnFirstHit',['../struct_chimera_t_k_1_1_model_1_1_return_first_hit.html',1,'ChimeraTK::Model']]],
-  ['returnfirsthitwithvalue_10',['ReturnFirstHitWithValue',['../struct_chimera_t_k_1_1_model_1_1_return_first_hit_with_value.html',1,'ChimeraTK::Model']]],
-  ['roguemodule_11',['RogueModule',['../struct_tests_1_1test_application_p_v_model_1_1_rogue_module.html',1,'Tests::testApplicationPVModel']]],
-  ['rootproperties_12',['RootProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
-  ['rootproxy_13',['RootProxy',['../class_chimera_t_k_1_1_model_1_1_root_proxy.html',1,'ChimeraTK::Model']]]
+  ['recoverygroup_8',['RecoveryGroup',['../struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html',1,'ChimeraTK::DeviceManager']]],
+  ['recoveryhelper_9',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html',1,'ChimeraTK']]],
+  ['registerer_10',['registerer',['../struct_open_counting_lmap_backend_1_1_registerer.html',1,'OpenCountingLmapBackend::Registerer'],['../struct_write_blocking_dummy_1_1_registerer.html',1,'WriteBlockingDummy::Registerer']]],
+  ['returnfirsthit_11',['ReturnFirstHit',['../struct_chimera_t_k_1_1_model_1_1_return_first_hit.html',1,'ChimeraTK::Model']]],
+  ['returnfirsthitwithvalue_12',['ReturnFirstHitWithValue',['../struct_chimera_t_k_1_1_model_1_1_return_first_hit_with_value.html',1,'ChimeraTK::Model']]],
+  ['roguemodule_13',['RogueModule',['../struct_tests_1_1test_application_p_v_model_1_1_rogue_module.html',1,'Tests::testApplicationPVModel']]],
+  ['rootproperties_14',['RootProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
+  ['rootproxy_15',['RootProxy',['../class_chimera_t_k_1_1_model_1_1_root_proxy.html',1,'ChimeraTK::Model']]]
 ];

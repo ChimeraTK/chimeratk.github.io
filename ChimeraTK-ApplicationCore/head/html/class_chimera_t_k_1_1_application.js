@@ -15,6 +15,7 @@ var class_chimera_t_k_1_1_application =
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_application.html#a85591458b59766a934c520d3894ea40c", null ],
     [ "getDataValidity", "class_chimera_t_k_1_1_application.html#afc90a088a6dd23059f539bc80b486c7a", null ],
     [ "getDeviceManager", "class_chimera_t_k_1_1_application.html#a8eee96a1e7df1b0457e58f5097fdaa04", null ],
+    [ "getDeviceManagerMap", "class_chimera_t_k_1_1_application.html#a904a545097e84077638d246d7b83d216", null ],
     [ "getFullDescription", "class_chimera_t_k_1_1_application.html#afcf25c1bf30d7c001d5ae0a593a1abbc", null ],
     [ "getInputModulesRecursively", "class_chimera_t_k_1_1_application.html#a107919a605e17b5640d038ff54688f81", null ],
     [ "getLifeCycleState", "class_chimera_t_k_1_1_application.html#a4a48851ef845c324e5a2c2eef9211ba0", null ],

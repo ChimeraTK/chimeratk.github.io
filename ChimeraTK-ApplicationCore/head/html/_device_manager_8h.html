@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.00</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.02.00</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,8 @@ $(document).ready(function(){initNavTree('_device_manager_8h.html',''); initResi
 <code>#include &quot;<a class="el" href="_void_accessor_8h_source.html">VoidAccessor.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/Device.h&gt;</code><br />
 <code>#include &lt;boost/thread/latch.hpp&gt;</code><br />
+<code>#include &lt;barrier&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for DeviceManager.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -114,7 +116,7 @@ $(document).ready(function(){initNavTree('_device_manager_8h.html',''); initResi
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_device_manager_8h__dep__incl.svg" width="100%" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_device_manager_8h__dep__incl.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="_device_manager_8h_source.html">Go to the source code of this file.</a></p>
@@ -123,6 +125,9 @@ $(document).ready(function(){initNavTree('_device_manager_8h.html',''); initResi
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_manager.html">ChimeraTK::DeviceManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements access to a <a class="el" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ChimeraTK::Device</a>.  <a href="class_chimera_t_k_1_1_device_manager.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html">ChimeraTK::DeviceManager::RecoveryGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared state of a group of DeviceManagers which are recovering together.  <a href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
