@@ -160,7 +160,7 @@ var searchData=
   ['specialunaryfunctionstoemulatenumeric_157',['specialUnaryFunctionsToEmulateNumeric',['../class_chimera_t_k_1_1_py_transfer_element_base.html#a06af9333723d5b7e8cbc21944f3c3b3d',1,'ChimeraTK::PyTransferElementBase']]],
   ['specification_20version_20v1_200_158',['Technical specification: data validity propagation Specification version V1.0',['../spec_data_validity_propagation.html',1,'index']]],
   ['specification_3a_20data_20validity_20propagation_20specification_20version_20v1_200_159',['Technical specification: data validity propagation Specification version V1.0',['../spec_data_validity_propagation.html',1,'index']]],
-  ['specification_3a_20exception_20handling_20for_20device_20runtime_20errors_20v1_201rc2wip_160',['Technical specification: Exception handling for device runtime errors V1.1RC2WIP',['../spec_execption_handling.html',1,'index']]],
+  ['specification_3a_20exception_20handling_20for_20device_20runtime_20errors_20v1_201_160',['Technical specification: Exception handling for device runtime errors V1.1',['../spec_execption_handling.html',1,'index']]],
   ['specification_3a_20propagation_20of_20initial_20values_20v1_200_161',['Technical specification: Propagation of initial values V1.0',['../spec_initial_value_propagation.html',1,'index']]],
   ['specification_3a_20statusaggregator_162',['Technical specification: StatusAggregator',['../spec__status_aggregator.html',1,'index']]],
   ['splitarray_2eh_163',['SplitArray.h',['../_split_array_8h.html',1,'']]],

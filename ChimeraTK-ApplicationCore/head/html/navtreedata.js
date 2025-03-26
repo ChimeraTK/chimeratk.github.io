@@ -59,7 +59,7 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
-    [ "Technical specification: Exception handling for device runtime errors V1.1RC2WIP", "spec_execption_handling.html", [
+    [ "Technical specification: Exception handling for device runtime errors V1.1", "spec_execption_handling.html", [
       [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
         [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]

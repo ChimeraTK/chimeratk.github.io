@@ -123,7 +123,7 @@ C. High-level requirements</h2>
 <li>The control system does not wait for "initial values" as such. The first value of a process variable is sent to the control system when available. This may depend even on external conditions like the availability of devices, e.g. the control system interface has to run even if devices are not available and hence cannot send an inital value.</li>
 <li>The first value received by the control system can be an initial value. This is different to ApplicationModules, where an initial value is never seen as a new value that can be read because they are always already there and received when the main loop starts.</li>
 <li>Control system variables show the <code>DataValidity::faulty</code> flag until they have received the first valid value.</li>
-<li>For push-type variables from devices, the initial is automatically send by the backend. The framework can just wait for a value to arrive. 9.1 According to the TransferElement specification, also after recovery from an exception the current value is send again. No special action needed by AplicationCore (c.f. <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1RC2WIP</a>).</li>
+<li>For push-type variables from devices, the initial is automatically send by the backend. The framework can just wait for a value to arrive. 9.1 According to the TransferElement specification, also after recovery from an exception the current value is send again. No special action needed by AplicationCore (c.f. <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1</a>).</li>
 </ol>
 <h3><a class="anchor" id="autotoc_md22"></a>
 (*) Comments</h3>
@@ -243,10 +243,10 @@ TriggerFanOut</h3>
 </ul>
 <h3><a class="anchor" id="autotoc_md30"></a>
 DeviceModule</h3>
-<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1RC2WIP</a>.</p>
+<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1</a>.</p>
 <h3><a class="anchor" id="autotoc_md31"></a>
 ExceptionHandlingDecorator</h3>
-<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1RC2WIP</a>.</p>
+<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1</a>.</p>
 <h3><a class="anchor" id="autotoc_md32"></a>
 Application</h3>
 <p>(This section refers to the class <code><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></code>, not to the user-defined application.)</p>
@@ -308,14 +308,14 @@ TriggerFanOut</h3>
 </ul>
 <h3><a class="anchor" id="autotoc_md40"></a>
 DeviceModule</h3>
-<p>Probably all points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1RC2WIP</a>.</p>
+<p>Probably all points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1</a>.</p>
 <ul>
 <li>Merge <code>DeviceModule::writeAfterOpen/writeRecoveryOpen</code> lists.</li>
 <li>Implement mechanism to block read/write operations in other threads until after the initialsation is done.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md41"></a>
 ExceptionHandlingDecorator</h3>
-<p>Some points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1RC2WIP</a>.</p>
+<p>Some points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.1</a>.</p>
 <ul>
 <li>It waits until the device is opened, but not until after the initialisation is done.</li>
 <li>Provide non-blocking function.</li>
