@@ -768,7 +768,7 @@ $(document).ready(function(){initNavTree('test_subdevice_backend_8cpp_source.htm
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    accS = 0;</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    accS.write();</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  }</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  BOOST_CHECK(countStatusResets == 8);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  BOOST_TEST(countStatusResets == 8);</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  t.join();</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  accArea.read();</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  BOOST_CHECK(accArea[0] == 1897);</div>
