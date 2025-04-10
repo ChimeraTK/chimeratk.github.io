@@ -8,6 +8,7 @@ var dir_12103a13d03486cdb1fa8b48e27c887f =
     [ "testConfigReader.cc", "test_config_reader_8cc.html", "test_config_reader_8cc" ],
     [ "testConnectedDestruction.cc", "test_connected_destruction_8cc.html", "test_connected_destruction_8cc" ],
     [ "testControlSystemAccessors.cc", "test_control_system_accessors_8cc.html", "test_control_system_accessors_8cc" ],
+    [ "testDataConsistencyAC.cc", "test_data_consistency_a_c_8cc.html", "test_data_consistency_a_c_8cc" ],
     [ "testDataValidityPropagation.cc", "test_data_validity_propagation_8cc.html", "test_data_validity_propagation_8cc" ],
     [ "testDeviceAccessors.cc", "test_device_accessors_8cc.html", "test_device_accessors_8cc" ],
     [ "testDeviceExceptionFlagPropagation.cc", "test_device_exception_flag_propagation_8cc.html", "test_device_exception_flag_propagation_8cc" ],

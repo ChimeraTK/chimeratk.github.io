@@ -188,7 +188,7 @@ C. Implementation for the AsyncNDRegisterAccessor</h2>
 </ul>
 </li>
 <li>2. Backends, like the DoocsBackend (called "SomeNonNumericAddressedBackend" in the above graph), which have their <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_key.html">DataConsistencyKey</a> value shipped together with the payload data in their protocol, need to obey the following rules in their event handler (called <code>handleEvent()</code> in the above graph, although the naming and structure may be vastly different for actual implementations):<ul>
-<li>2.1. Such backends will typically use a fixed realm name, which should clearly refer to the protocol (e.g. "DoocsEventId" in case of the DoocsBackend).<ul>
+<li>2.1. Such backends will typically use a fixed realm name, which should clearly refer to the protocol (e.g. "doocsEventId" in case of the DoocsBackend).<ul>
 <li>2.1.1. The realm name should be overrideable through a CDD parameter.</li>
 </ul>
 </li>
@@ -198,9 +198,9 @@ C. Implementation for the AsyncNDRegisterAccessor</h2>
 </li>
 <li>3. Backends, like the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a>, which are using the poll mechanism of the <a class="el" href="design__async_n_d_register_accessor__numeric_addressed.html">AsyncNDRegisterAccessor concept</a> (i.e. the <a class="el" href="class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html" title="The TriggeredPollDistributor has std::nullptr_t source data type and is polling the data for the Asyn...">TriggeredPollDistributor</a>), need to provide the necessary information through the catalogue and can otherwise rely on the framework implementation:<ul>
 <li>3.1. The <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html" title="Pure virtual implementation base class for the register catalogue.">BackendRegisterCatalogueBase</a> contains a map of <a class="el" href="design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_qualifiedAsyncSubDomainID">qualifiedAsyncSubDomainID</a> to <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_realm.html">DataConsistencyRealm</a> names.</li>
-<li>3.2. The CDD can contain a parameter "DataConsistencyKey" to define the registers with the <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_key.html">DataConsistencyKey</a> values.<ul>
+<li>3.2. The CDD can contain a parameter "DataConsistencyKeys" to define the registers with the <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_key.html">DataConsistencyKey</a> values.<ul>
 <li>3.2.1. These registers need to be triggered each by a different interrupt.</li>
-<li>3.2.2. The CDD parameter "DataConsistencyKey" contains a JSON object, where each JSON key is interpreted as the register path and each value as the corresponding realm name.</li>
+<li>3.2.2. The CDD parameter "DataConsistencyKeys" contains a JSON object, where each JSON key is interpreted as the register path and each value as the corresponding realm name.</li>
 <li>3.2.3. Based on this information, the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a> will fill the BackendRegisterCatalogueBase::_dataConsistencyRealmIdMap</li>
 </ul>
 </li>

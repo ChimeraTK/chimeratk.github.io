@@ -306,7 +306,7 @@ template&lt;class STATE &gt; </div>
 
 <p>default interpolate function to throw an exception </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00376">376</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00358">358</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ template&lt;class STATE &gt; </div>
 <p>If time is &lt; currentTime, newer entries will be removed. After inserting the new entry, the old history will be removed as well.</p>
 <p>Note: No check is performed if the gap to the previous state is larger than the maximum gap! </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00245">245</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00227">227</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ template&lt;class STATE &gt; </div>
 
 <p>Obtain the current map of states. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00231">231</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00215">215</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ template&lt;class STATE &gt; </div>
 
 <p>Obtain the callback function previously set with <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a395b76c9db60370ffad6fc91493c83e5" title="Set callback function which will compute a new state for a given time.">setComputeFunction()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00071">71</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00067">67</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +446,7 @@ template&lt;class STATE &gt; </div>
 <p>This function will usually be called inside the compute function (see <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a395b76c9db60370ffad6fc91493c83e5" title="Set callback function which will compute a new state for a given time.">setComputeFunction()</a>) to have a basis for the computations. Use <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#af51c224ae6ae104891156ae36e6c5c6e" title="Obtain the time of latest computed state.">getLatestTime()</a> to obtain the time of the latest state.</p>
 <p>Guarantee: When this function is called inside the compute function, the returned state will be in the past and not older than the gap configured with <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#aa9335dda95a59a09069f979aac9cf576" title="Set maximum time gap.">setMaximumGap()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00217">217</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00203">203</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ template&lt;class STATE &gt; </div>
 <p>Obtain the time of latest computed state. </p>
 <p>See <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#aae98449a94b5f3212b890ddb9d2b0838" title="Obtain the latest computed state.">getLatestState()</a> for further comments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00225">225</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00211">211</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ template&lt;class STATE &gt; </div>
 <p>Obtain the state for the given time. </p>
 <p>time must be &gt;= 0. The optional second argument forceNoInterpolation allows to disable a potentially enabled interpolation and thus force a full recomputation of the state. This is mainly used inside the interpolation code to make sure there are no recursion problems, but it could be helpful in other contexts as well. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00159">159</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00145">145</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +554,7 @@ template&lt;class STATE &gt; </div>
 <p>obtain a new state via the callback function and place it into the buffer. </p>
 <p>Helper for getValue() </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00299">299</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00281">281</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ template&lt;class STATE &gt; </div>
 
 <p>obtain a new state via interpolation, if enabled, or via callback otherwise </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00279">279</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00261">261</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ template&lt;class STATE &gt; </div>
 <p>Guarantee: When this function is called for a time T, the latest state requested by <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#aae98449a94b5f3212b890ddb9d2b0838" title="Obtain the latest computed state.">getLatestState()</a> will be in the past w.r.t. T and not older than the gap configured with <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#aa9335dda95a59a09069f979aac9cf576" title="Set maximum time gap.">setMaximumGap()</a>.</p>
 <p>It is mandatory to set this function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00065">65</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00063">63</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +663,7 @@ template&lt;class STATE &gt; </div>
 <p>Experimental feature: enable by defining ENABLE_EXPERIMENTAL_FEATURES Enable interpolation. </p>
 <p>No states will be fully computed by the model closer together than the maximum gap time. Instead requests for these times will be interpolated. Note that this usually will lead to requests to other model components being generated into the "future" (from the current request), since values are needed on both sides for an interpolation (in contrast to an extrapolation, which might be invalid). </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00107">107</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00097">97</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ template&lt;class STATE &gt; </div>
 <p>If a state is requested into the far future (more than 2*hugeGap), intermediate steps with a distance of hugeGap (instead of maxGap) will be inserted to fill the gap. Only the last hugeGap interval before the requested state will be filled with intermediate steps in a distance of maxGap.</p>
 <p>The hugeGap must be larger than maxGap. If not set, the feature is disabled and only maxGap is used to fill large steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00096">96</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00088">88</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ template&lt;class STATE &gt; </div>
 <li>the requested time to return the interpolated state for </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00122">122</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00112">112</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +802,7 @@ template&lt;class STATE &gt; </div>
 <p>Set maximum time difference a getValue() request may go into the past. </p>
 <p>If the history length is not set, no history is kept and only the latest state is retained. The history length must be larger then the validity period to have an effect and should normally be larger then the maximum gap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00138">138</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00128">128</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +836,7 @@ template&lt;class STATE &gt; </div>
 <p>If a state further into the future of the latest computed state than the maximum gap time is requested, intermediate states will be computed so that no states are further apart than the gap.</p>
 <p>If the gap is not set, intermediate states are never computed. The maximum gap must be larger than the validity period to have an effect. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00082">82</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00076">76</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +870,7 @@ template&lt;class STATE &gt; </div>
 <p>A state for the time T will be used when a state for a time &lt; T+validityPeriod (and &gt; T) is requested. It is not possible to have two states closer together in time than this period.</p>
 <p>Setting the validity period is optional, it will default to 1 (i.e. no effect). The period must be &gt; 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00149">149</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00137">137</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -903,7 +903,7 @@ template&lt;class STATE &gt; </div>
 <p>Truncate a future part of the buffer: remove all entries newer then the given time. </p>
 <p>Has no effect, if time &gt;= currentTime/ </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00256">256</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00238">238</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -934,7 +934,7 @@ template&lt;class STATE &gt; </div>
 
 <p>Truncate old history of the buffer: remove all entries older than currentTime - historyLength. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00269">269</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00251">251</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +963,7 @@ template&lt;class STATE &gt; </div>
 
 <p>buffer of values (in dependence of time) </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00355">355</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00337">337</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +991,7 @@ template&lt;class STATE &gt; </div>
 
 <p>callback called when a state needs to be computed </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00352">352</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00334">334</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1019,7 @@ template&lt;class STATE &gt; </div>
 
 <p>time of last fed sample </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00367">367</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00349">349</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1047,7 @@ template&lt;class STATE &gt; </div>
 
 <p>enable or disable interpolation </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00370">370</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00352">352</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1075,7 @@ template&lt;class STATE &gt; </div>
 
 <p>history length </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00364">364</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00346">346</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1101,7 @@ template&lt;class STATE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00358">358</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00340">340</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1129,7 @@ template&lt;class STATE &gt; </div>
 
 <p>function called to interpolate between two states </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00373">373</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00355">355</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1157,7 @@ template&lt;class STATE &gt; </div>
 
 <p>maximum gap and huge gap </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00358">358</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00340">340</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1185,7 @@ template&lt;class STATE &gt; </div>
 
 <p>validity period </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00361">361</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00343">343</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
 
 </div>
 </div>

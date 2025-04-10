@@ -245,6 +245,10 @@ var annotated_dup =
         [ "TestApplication", "struct_tests_1_1test_control_system_accessors_1_1_test_application.html", "struct_tests_1_1test_control_system_accessors_1_1_test_application" ],
         [ "TestModule", "struct_tests_1_1test_control_system_accessors_1_1_test_module.html", "struct_tests_1_1test_control_system_accessors_1_1_test_module" ]
       ] ],
+      [ "testDataConsistencyAC", "namespace_tests_1_1test_data_consistency_a_c.html", [
+        [ "ModuleA", "struct_tests_1_1test_data_consistency_a_c_1_1_module_a.html", "struct_tests_1_1test_data_consistency_a_c_1_1_module_a" ],
+        [ "TestFixture", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture.html", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture" ]
+      ] ],
       [ "testDataValidityPropagation", "namespace_tests_1_1test_data_validity_propagation.html", [
         [ "TestApplication1", "struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html", "struct_tests_1_1test_data_validity_propagation_1_1_test_application1" ],
         [ "TestApplication16", "struct_tests_1_1test_data_validity_propagation_1_1_test_application16.html", "struct_tests_1_1test_data_validity_propagation_1_1_test_application16" ],

@@ -7,6 +7,7 @@ var namespace_tests =
     [ "testCircularDependencyFaultyFlags", "namespace_tests_1_1test_circular_dependency_faulty_flags.html", "namespace_tests_1_1test_circular_dependency_faulty_flags" ],
     [ "testConfigReader", "namespace_tests_1_1test_config_reader.html", "namespace_tests_1_1test_config_reader" ],
     [ "testControlSystemAccessors", "namespace_tests_1_1test_control_system_accessors.html", "namespace_tests_1_1test_control_system_accessors" ],
+    [ "testDataConsistencyAC", "namespace_tests_1_1test_data_consistency_a_c.html", "namespace_tests_1_1test_data_consistency_a_c" ],
     [ "testDataValidityPropagation", "namespace_tests_1_1test_data_validity_propagation.html", "namespace_tests_1_1test_data_validity_propagation" ],
     [ "testDeviceAccessors", "namespace_tests_1_1test_device_accessors.html", "namespace_tests_1_1test_device_accessors" ],
     [ "testDeviceExceptionFlagPropagation", "namespace_tests_1_1test_device_exception_flag_propagation.html", "namespace_tests_1_1test_device_exception_flag_propagation" ],

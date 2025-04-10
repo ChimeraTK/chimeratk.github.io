@@ -2,6 +2,7 @@ var namespace_chimera_t_k =
 [
     [ "async", "namespace_chimera_t_k_1_1async.html", "namespace_chimera_t_k_1_1async" ],
     [ "csa_helpers", "namespace_chimera_t_k_1_1csa__helpers.html", "namespace_chimera_t_k_1_1csa__helpers" ],
+    [ "DataConsistencyGroupDetail", "namespace_chimera_t_k_1_1_data_consistency_group_detail.html", "namespace_chimera_t_k_1_1_data_consistency_group_detail" ],
     [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", "namespace_chimera_t_k_1_1_l_n_m_backend" ],
     [ "numeric_address", "namespace_chimera_t_k_1_1numeric__address.html", [
       [ "BAR", "namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e", null ]
@@ -48,6 +49,7 @@ var namespace_chimera_t_k =
     [ "CopyRegisterDecorator", "struct_chimera_t_k_1_1_copy_register_decorator.html", "struct_chimera_t_k_1_1_copy_register_decorator" ],
     [ "CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", null ],
     [ "CtrlIntf", "class_chimera_t_k_1_1_ctrl_intf.html", "class_chimera_t_k_1_1_ctrl_intf" ],
+    [ "DataConsistencyDecorator", "class_chimera_t_k_1_1_data_consistency_decorator.html", "class_chimera_t_k_1_1_data_consistency_decorator" ],
     [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", "class_chimera_t_k_1_1_data_consistency_group" ],
     [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html", "class_chimera_t_k_1_1_data_descriptor" ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],
@@ -251,6 +253,7 @@ var namespace_chimera_t_k =
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a33389204e881032753f65b9e16273a9e", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a331e219ebc74268d0ed33fd394f24696", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#ae52ee1e5af79ce2638fc5841f2b8f2a5", null ],
+    [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a026130dce57025946232b98aae6d9536", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a10ef28fb63a4bd204baaa8ba29130d18", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#aa3a3068556abc98cc29ae738b3fcec0b", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#aff96b5b96f07b7d89a63107cc11ce264", null ],

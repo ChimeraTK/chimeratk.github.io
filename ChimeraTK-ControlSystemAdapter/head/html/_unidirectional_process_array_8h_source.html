@@ -101,19 +101,19 @@ $(document).ready(function(){initNavTree('_unidirectional_process_array_8h_sourc
 <a href="_unidirectional_process_array_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CHIMERA_TK_CONTROL_SYSTEM_ADAPTER_UNIDIRECTIONAL_PROCESS_ARRAY_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CHIMERA_TK_CONTROL_SYSTEM_ADAPTER_UNIDIRECTIONAL_PROCESS_ARRAY_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_persistent_data_storage_8h.html">PersistentDataStorage.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_process_array_8h.html">ProcessArray.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;ChimeraTK/VersionNumber.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;ChimeraTK/VersionNumber.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_persistent_data_storage_8h.html">PersistentDataStorage.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_process_array_8h.html">ProcessArray.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('_unidirectional_process_array_8h_sourc
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D.resize(1);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0] = initialValue;</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="comment">// Workaround</span></div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    _intermedateBuffer.resize( ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0].size() );</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    _intermedateBuffer.resize(ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0].size());</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="comment">// It would be better to do the validation before initializing, but this</span></div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="comment">// would mean that we would have to initialize twice.</span></div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordflow">if</span>(!this-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_process_array.html#a92d8e7e212d04e16e7aebb6b69bf1a1b">isReadable</a>()) {</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('_unidirectional_process_array_8h_sourc
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D.resize(1);</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0] = receiver-&gt;buffer_2D[0];</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="comment">// Workaround</span></div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    _intermedateBuffer.resize( ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0].size() );</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    _intermedateBuffer.resize(ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0].size());</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  }</div>
 </div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('_unidirectional_process_array_8h_sourc
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="foldopen" id="foldopen00446" data-start="{" data-end="}">
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a56dc18e1a17c483f74e0782196e60799">  446</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a56dc18e1a17c483f74e0782196e60799">UnidirectionalProcessArray&lt;T&gt;::doPostWrite</a>(ChimeraTK::TransferType type, VersionNumber) {</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="keywordflow">if</span> (type == ChimeraTK::TransferType::write) {</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="keywordflow">if</span>(type == ChimeraTK::TransferType::write) {</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>      assert(ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0].size() == _intermedateBuffer.size());</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>      ChimeraTK::NDRegisterAccessor&lt;T&gt;::buffer_2D[0].swap(_intermedateBuffer);</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    }</div>
@@ -568,7 +568,7 @@ $(document).ready(function(){initNavTree('_unidirectional_process_array_8h_sourc
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="preprocessor">#endif </span><span class="comment">// CHIMERA_TK_CONTROL_SYSTEM_ADAPTER_UNIDIRECTIONAL_PROCESS_ARRAY_H</span></div>
 <div class="ttc" id="a_persistent_data_storage_8h_html"><div class="ttname"><a href="_persistent_data_storage_8h.html">PersistentDataStorage.h</a></div></div>
 <div class="ttc" id="a_process_array_8h_html"><div class="ttname"><a href="_process_array_8h.html">ProcessArray.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_bidirectional_process_array_html"><div class="ttname"><a href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a></div><div class="ttdoc">Implementation of the process array that transports data in both directions.</div><div class="ttdef"><b>Definition</b> <a href="_bidirectional_process_array_8h_source.html#l00098">BidirectionalProcessArray.h:98</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_bidirectional_process_array_html"><div class="ttname"><a href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a></div><div class="ttdoc">Implementation of the process array that transports data in both directions.</div><div class="ttdef"><b>Definition</b> <a href="_bidirectional_process_array_8h_source.html#l00097">BidirectionalProcessArray.h:97</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_process_array_html"><div class="ttname"><a href="class_chimera_t_k_1_1_process_array.html">ChimeraTK::ProcessArray</a></div><div class="ttdoc">Array version of the ProcessVariable.</div><div class="ttdef"><b>Definition</b> <a href="_process_array_8h_source.html#l00028">ProcessArray.h:28</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_process_array_html_a1413422d38894108682faba26eff7d2c"><div class="ttname"><a href="class_chimera_t_k_1_1_process_array.html#a1413422d38894108682faba26eff7d2c">ChimeraTK::ProcessArray::SharedPtr</a></div><div class="ttdeci">boost::shared_ptr&lt; ProcessArray &gt; SharedPtr</div><div class="ttdoc">Type alias for a shared pointer to this type.</div><div class="ttdef"><b>Definition</b> <a href="_process_array_8h_source.html#l00033">ProcessArray.h:33</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_process_array_html_a66ede83bca155215a0e5d030c9403ab1"><div class="ttname"><a href="class_chimera_t_k_1_1_process_array.html#a66ede83bca155215a0e5d030c9403ab1">ChimeraTK::ProcessArray::isWriteable</a></div><div class="ttdeci">bool isWriteable() const override</div><div class="ttdef"><b>Definition</b> <a href="_process_array_8h_source.html#l00074">ProcessArray.h:74</a></div></div>

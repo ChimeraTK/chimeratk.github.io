@@ -342,6 +342,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f2265961d8482bc4035d741dc77967d inherit pub_methods_class_chimera_t_k_1_1_transfer_element" id="r_a7f2265961d8482bc4035d741dc77967d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7f2265961d8482bc4035d741dc77967d">getReadAnyGroup</a> () const</td></tr>
 <tr class="memdesc:a7f2265961d8482bc4035d741dc77967d inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of, or nullptr if not in a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.  <br /></td></tr>
 <tr class="separator:a7f2265961d8482bc4035d741dc77967d inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ca2fc42809ca55f606c626235c7b91 inherit pub_methods_class_chimera_t_k_1_1_transfer_element" id="r_ab8ca2fc42809ca55f606c626235c7b91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab8ca2fc42809ca55f606c626235c7b91">setInReadAnyGroup</a> (<a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *rag)</td></tr>
+<tr class="memdesc:ab8ca2fc42809ca55f606c626235c7b91 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> of which this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of.  <br /></td></tr>
+<tr class="separator:ab8ca2fc42809ca55f606c626235c7b91 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1261,7 +1264,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>The access mode flags for this transfer element. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00835">835</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00838">838</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1284,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Exception to be rethrown in postXXX() in case hasSeenException == true Can be set via <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e" title="Set an active exception.">setActiveException()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00868">868</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00871">871</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1580,7 +1583,7 @@ template&lt;typename UserType &gt; </div>
 <p>The queue for asynchronous read transfers. </p>
 <p>This is the void queue which is a continuation of the actual data transport queue, which is implementation dependent. With _readQueue the exception propagation and waiting for new data is implemented in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00856">856</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00859">859</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>

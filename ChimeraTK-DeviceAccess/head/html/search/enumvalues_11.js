@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['wait_5ffor_5fnew_5fdata_0',['wait_for_new_data',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031',1,'ChimeraTK']]],
-  ['warning_1',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca5ad6b78774879a01d465f58dba1a9b54',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
-  ['write_2',['write',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aefb2a684e4afb7d55e6147fbe5a332ee',1,'ChimeraTK']]],
-  ['write_5fonly_3',['WRITE_ONLY',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0ad8fddf06187e680ab5a6355f76a17357',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
-  ['writedestructively_4',['writeDestructively',['../namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7abc219b057095a6e31adf97545d6b6ea6',1,'ChimeraTK']]]
+  ['value_0',['value',['../class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html#abaaf87be16de772e3b57f308209ff4f9a44f74e30fe801efa742457c08c1b24bc',1,'ChimeraTK::UnifiedBackendTest::has_nValuesToTest']]],
+  ['variable_1',['VARIABLE',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4ec9fd489be4c3384dbafebd980148e7',1,'ChimeraTK::LNMBackendRegisterInfo']]],
+  ['void_2',['void',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a51cddcf7e04fca1b6590e993576fc8e2',1,'ChimeraTK::DataType::Void'],['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035fa6d0c9fc747131795e6e5d0c5119f12cb',1,'ChimeraTK::NumericAddressedRegisterInfo::VOID']]]
 ];

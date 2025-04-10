@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['numericaddressedbackendasciiaccessor_0',['NumericAddressedBackendASCIIAccessor',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a92b66d52d21601b7a69589c1959a05a1',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
-  ['numericaddressedbackendmuxedregisteraccessor_1',['NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a8832452e77a6be7f771b9cf8e934aba9',1,'ChimeraTK::NumericAddressedBackend']]],
-  ['numericaddressedbackendregisteraccessor_2',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ac06c3adbcb08c25e2a42e23c96e66152',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]]
+  ['multiplexeddataaccessor_3c_20usertype_20_3e_0',['MultiplexedDataAccessor&lt; UserType &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ab6255101bca3f241ade8a80d4ae0292f',1,'ChimeraTK::NDRegisterAccessor']]],
+  ['muxedinterruptdistributor_1',['MuxedInterruptDistributor',['../class_chimera_t_k_1_1async_1_1_domain.html#affa6e918b9ce0e3dd0de0a4c1ff0a308',1,'ChimeraTK::async::Domain']]]
 ];

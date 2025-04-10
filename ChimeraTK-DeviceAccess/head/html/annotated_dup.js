@@ -36,6 +36,11 @@ var annotated_dup =
       [ "csa_helpers", "namespace_chimera_t_k_1_1csa__helpers.html", [
         [ "Round", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", "struct_chimera_t_k_1_1csa__helpers_1_1_round" ]
       ] ],
+      [ "DataConsistencyGroupDetail", "namespace_chimera_t_k_1_1_data_consistency_group_detail.html", [
+        [ "HistorizedMatcher", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher" ],
+        [ "MatcherBase", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_matcher_base.html", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_matcher_base" ],
+        [ "SimpleMatcher", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_simple_matcher.html", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_simple_matcher" ]
+      ] ],
       [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", [
         [ "AccessorPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin" ],
         [ "AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base" ],
@@ -80,6 +85,7 @@ var annotated_dup =
       [ "CopyRegisterDecorator", "struct_chimera_t_k_1_1_copy_register_decorator.html", "struct_chimera_t_k_1_1_copy_register_decorator" ],
       [ "CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", null ],
       [ "CtrlIntf", "class_chimera_t_k_1_1_ctrl_intf.html", "class_chimera_t_k_1_1_ctrl_intf" ],
+      [ "DataConsistencyDecorator", "class_chimera_t_k_1_1_data_consistency_decorator.html", "class_chimera_t_k_1_1_data_consistency_decorator" ],
       [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", "class_chimera_t_k_1_1_data_consistency_group" ],
       [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html", "class_chimera_t_k_1_1_data_descriptor" ],
       [ "DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],
