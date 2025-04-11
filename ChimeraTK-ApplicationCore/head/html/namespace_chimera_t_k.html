@@ -482,8 +482,11 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a2fdc2f768f8fdb507450414460ec2c9d" id="r_a2fdc2f768f8fdb507450414460ec2c9d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a2fdc2f768f8fdb507450414460ec2c9d">explicitDataValidityTag</a> = &quot;_ChimeraTK_NodeHasExplicitDataValidity&quot;</td></tr>
-<tr class="memdesc:a2fdc2f768f8fdb507450414460ec2c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special tag to designate that a not should not automatically take over DataValidity of its owning module.  <br /></td></tr>
+<tr class="memdesc:a2fdc2f768f8fdb507450414460ec2c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special tag to designate that an output should not automatically take over DataValidity of its owning module.  <br /></td></tr>
 <tr class="separator:a2fdc2f768f8fdb507450414460ec2c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8a5e2e7566441d305705f90ef9cace" id="r_a3e8a5e2e7566441d305705f90ef9cace"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3e8a5e2e7566441d305705f90ef9cace">independentVersionTag</a> = &quot;_ChimeraTK_NodeHasIndependentVersion&quot;</td></tr>
+<tr class="memdesc:a3e8a5e2e7566441d305705f90ef9cace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special tag to designate that a push-input should not propagate VersionNumber updates to its owning module.  <br /></td></tr>
+<tr class="separator:a3e8a5e2e7566441d305705f90ef9cace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="struct_chimera_t_k_1_1_invalidity_tracer.html">InvalidityTracer</a> application module. </p>
@@ -889,10 +892,37 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Special tag to designate that a not should not automatically take over DataValidity of its owning module. </p>
+<p>Special tag to designate that an output should not automatically take over DataValidity of its owning module. </p>
 <p>Use e.g. for a <a class="el" href="struct_chimera_t_k_1_1_status_output.html" title="Special ScalarOutput which represents a status which can be aggregated by the StatusAggregator.">StatusOutput</a> which should indicate errors. </p>
 
 <p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00184">184</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e8a5e2e7566441d305705f90ef9cace" name="a3e8a5e2e7566441d305705f90ef9cace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8a5e2e7566441d305705f90ef9cace">&#9670;&#160;</a></span>independentVersionTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto ChimeraTK::independentVersionTag = &quot;_ChimeraTK_NodeHasIndependentVersion&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Special tag to designate that a push-input should not propagate VersionNumber updates to its owning module. </p>
+<p>Use if a poll-input is not adequate. </p>
+
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00188">188</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>

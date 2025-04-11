@@ -154,5 +154,6 @@ var namespace_chimera_t_k =
     [ "logger", "namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580", null ],
     [ "negateTag", "namespace_chimera_t_k.html#a5d819141b6e36a5baf954cb63aef357b", null ],
     [ "PYBIND11_MODULE", "namespace_chimera_t_k.html#ad1d2aa2e2e2ee982024aad4d8c637fb0", null ],
-    [ "explicitDataValidityTag", "namespace_chimera_t_k.html#a2fdc2f768f8fdb507450414460ec2c9d", null ]
+    [ "explicitDataValidityTag", "namespace_chimera_t_k.html#a2fdc2f768f8fdb507450414460ec2c9d", null ],
+    [ "independentVersionTag", "namespace_chimera_t_k.html#a3e8a5e2e7566441d305705f90ef9cace", null ]
 ];
