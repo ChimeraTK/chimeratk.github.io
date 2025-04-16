@@ -113,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7bd87f852602d02a205b4a811530dfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9ffea928cc18a2b5168a20b7ab134d" id="r_abd9ffea928cc18a2b5168a20b7ab134d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fixture.html#abd9ffea928cc18a2b5168a20b7ab134d">waitOnReceiveAck</a> ()</td></tr>
 <tr class="separator:abd9ffea928cc18a2b5168a20b7ab134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e78b2fdf47e5632764623a29df046e" id="r_aa3e78b2fdf47e5632764623a29df046e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fixture.html#aa3e78b2fdf47e5632764623a29df046e">updaterLoop</a> (unsigned nLoops, unsigned delay, unsigned duplicateVns=0)</td></tr>
-<tr class="separator:aa3e78b2fdf47e5632764623a29df046e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa666e629f57793511fcd0716c3b84c6" id="r_aaa666e629f57793511fcd0716c3b84c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fixture.html#aaa666e629f57793511fcd0716c3b84c6">updaterLoop</a> (unsigned nLoops, unsigned delay, unsigned duplicateVns=0, bool catchUp=false)</td></tr>
+<tr class="separator:aaa666e629f57793511fcd0716c3b84c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd87f852602d02a205b4a811530dfe4" id="r_a7bd87f852602d02a205b4a811530dfe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4">Fixture</a> ()</td></tr>
 <tr class="separator:a7bd87f852602d02a205b4a811530dfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -217,8 +217,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa3e78b2fdf47e5632764623a29df046e" name="aa3e78b2fdf47e5632764623a29df046e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3e78b2fdf47e5632764623a29df046e">&#9670;&#160;</a></span>updaterLoop()</h2>
+<a id="aaa666e629f57793511fcd0716c3b84c6" name="aaa666e629f57793511fcd0716c3b84c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa666e629f57793511fcd0716c3b84c6">&#9670;&#160;</a></span>updaterLoop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>duplicateVns</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>duplicateVns</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>catchUp</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,7 +307,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00094">94</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00101">101</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +339,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00095">95</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00102">102</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +355,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00096">96</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00103">103</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +371,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00099">99</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_historized_data_matching_8cpp_source.html#l00106">106</a> of file <a class="el" href="test_historized_data_matching_8cpp_source.html">testHistorizedDataMatching.cpp</a>.</p>
 
 </div>
 </div>

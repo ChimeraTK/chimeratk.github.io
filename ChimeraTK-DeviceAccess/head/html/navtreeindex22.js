@@ -1,9 +1,7 @@
 var NAVTREEINDEX22 =
 {
-"namespace_chimera_t_k_1_1csa__helpers.html#a2f4a838d449ed98e49552e7927a4be68":[19,0,1,1,2],
-"namespace_chimera_t_k_1_1csa__helpers.html#a2f4a838d449ed98e49552e7927a4be68":[19,0,1,1,3],
-"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[19,0,1,1,4],
 "namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[19,0,1,1,5],
+"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[19,0,1,1,4],
 "namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1":[19,0,1,1,8],
 "namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1":[19,0,1,1,7],
 "namespace_chimera_t_k_1_1csa__helpers.html#ab4ff7a4fec1a1e0c63c62ae5318205f6":[19,0,1,1,6],
@@ -150,14 +148,14 @@ var NAVTREEINDEX22 =
 "struct_another_working_backend_1_1_backend_registerer.html":[20,0,11,0],
 "struct_another_working_backend_1_1_backend_registerer.html#aa6a1734aecd0581fc3c8fc2676a9551b":[20,0,11,0,0],
 "struct_area_type.html":[20,0,12],
-"struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[20,0,12,19],
 "struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[20,0,12,18],
+"struct_area_type.html#a042930befb4d68a51839ca8bb4799f15":[20,0,12,19],
 "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[20,0,12,10],
 "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9":[20,0,12,11],
 "struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[20,0,12,8],
 "struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114":[20,0,12,9],
-"struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[20,0,12,14],
 "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[20,0,12,15],
+"struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1":[20,0,12,14],
 "struct_area_type.html#a552815bb1214710734fd3a340a6dcc5e":[20,0,12,0],
 "struct_area_type.html#a806f51b68bec33bcbc4e254a91117f87":[20,0,12,12],
 "struct_area_type.html#a8c486ceeaef450b2d7fcbc6b1fe5de00":[20,0,12,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX22 =
 "struct_byte_raw__unsigned8.html#aca0f74174682e341a93a5e04aad59495":[20,0,23,6],
 "struct_byte_raw__unsigned8.html#af92e8a39ad58ce7166945b3587c41b1d":[20,0,23,5],
 "struct_channel_register_descriptor_base.html":[20,0,34],
-"struct_channel_register_descriptor_base.html#a1b2bbef72edf9ae9739ed3ceab98518f":[20,0,34,3]
+"struct_channel_register_descriptor_base.html#a1b2bbef72edf9ae9739ed3ceab98518f":[20,0,34,3],
+"struct_channel_register_descriptor_base.html#a20f832241c202a06d99672e0ab186d53":[20,0,34,4],
+"struct_channel_register_descriptor_base.html#a8925d9bf44be7f9850b68cef4b515c15":[20,0,34,2]
 };

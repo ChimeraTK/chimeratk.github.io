@@ -73,5 +73,5 @@ var searchData=
   ['fromraw_70',['fromraw',['../struct_muxed_area2.html#ae221c523c400d55ea76278982ca37d38',1,'MuxedArea2::fromRaw()'],['../struct_muxed_area1.html#a0b2a743b75a74150ef5af457852012b5',1,'MuxedArea1::fromRaw()'],['../struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7',1,'MyArea1::fromRaw()'],['../struct_my_register1.html#af51dcdbabf3036a841b9efc18f307f4f',1,'MyRegister1::fromRaw()']]],
   ['full_20and_20decorator_20like_71',['C. Requirements for all implementations (full and decorator-like)',['../spec__transfer_element.html#autotoc_md10',1,'']]],
   ['full_20implementations_20e_20g_20in_20backends_72',['D. Requirements for full implementations (e.g. in backends)',['../spec__transfer_element.html#autotoc_md12',1,'']]],
-  ['fundamentaltype_73',['fundamentaltype',['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951',1,'ChimeraTK::DataDescriptor::FundamentalType'],['../class_chimera_t_k_1_1_data_descriptor.html#a40d518a86f5269b6a0b706c85d9fcfc8',1,'ChimeraTK::DataDescriptor::fundamentalType() const']]]
+  ['fundamentaltype_73',['fundamentaltype',['../class_chimera_t_k_1_1_data_descriptor.html#a40d518a86f5269b6a0b706c85d9fcfc8',1,'ChimeraTK::DataDescriptor::fundamentalType() const'],['../class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951',1,'ChimeraTK::DataDescriptor::FundamentalType']]]
 ];

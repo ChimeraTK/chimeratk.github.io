@@ -3,7 +3,7 @@ var struct_fixture =
     [ "Fixture", "struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4", null ],
     [ "Fixture", "struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4", null ],
     [ "Fixture", "struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4", null ],
-    [ "updaterLoop", "struct_fixture.html#aa3e78b2fdf47e5632764623a29df046e", null ],
+    [ "updaterLoop", "struct_fixture.html#aaa666e629f57793511fcd0716c3b84c6", null ],
     [ "waitOnReceiveAck", "struct_fixture.html#abd9ffea928cc18a2b5168a20b7ab134d", null ],
     [ "dev", "struct_fixture.html#ac6d2ed5d99d228536fbbe25a2b1f99bf", null ],
     [ "device", "struct_fixture.html#aff52823ee42337680261409d72b629bf", null ],
