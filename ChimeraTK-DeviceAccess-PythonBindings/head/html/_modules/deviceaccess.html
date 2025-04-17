@@ -677,6 +677,11 @@
 
     <span class="c1"># pass through all (non-operator) functions to the np array (unless defined here)</span>
     <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;__array_struct__&quot;</span><span class="p">:</span>
+            <span class="c1"># This fixes issues with string type accessors. Casting a string accessor into an np.array via either</span>
+            <span class="c1"># &quot;np.array(myAccessor)&quot; or &quot;np.asarray(myAccessor)&quot; delivers incorrect results if __array_struct__</span>
+            <span class="c1"># is passed through, while it works when not redirecting it here.</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 
     <span class="c1"># comparison operators</span>
