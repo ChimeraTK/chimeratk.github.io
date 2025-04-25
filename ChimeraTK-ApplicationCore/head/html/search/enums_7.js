@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatemode_0',['UpdateMode',['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3b',1,'ChimeraTK']]]
+  ['type_0',['type',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties.html#a903fd8315e038ca9a6870b32bcb0bbbe',1,'ChimeraTK::Model::VertexProperties::Type'],['../struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4e',1,'ChimeraTK::Model::EdgeProperties::Type']]]
 ];

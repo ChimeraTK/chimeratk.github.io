@@ -26,6 +26,7 @@ var dir_5268d16357f2f33886914e670b2df6cb =
     [ "Module.h", "_module_8h.html", "_module_8h" ],
     [ "ModuleGroup.h", "_module_group_8h.html", "_module_group_8h" ],
     [ "RecoveryHelper.h", "_recovery_helper_8h.html", "_recovery_helper_8h" ],
+    [ "ReverseRecoveryDecorator.h", "_reverse_recovery_decorator_8h.html", "_reverse_recovery_decorator_8h" ],
     [ "ScalarAccessor.h", "_scalar_accessor_8h.html", "_scalar_accessor_8h" ],
     [ "TestableMode.h", "_testable_mode_8h.html", null ],
     [ "TestFacility.h", "_test_facility_8h.html", "_test_facility_8h" ],

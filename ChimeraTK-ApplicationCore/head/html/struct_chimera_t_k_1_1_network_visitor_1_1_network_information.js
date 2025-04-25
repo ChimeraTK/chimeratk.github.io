@@ -10,6 +10,7 @@ var struct_chimera_t_k_1_1_network_visitor_1_1_network_information =
     [ "triggerImpl", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a4465a5195a031d84657dc1362f976cf8", null ],
     [ "unit", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a0d9b7c7d37e05f3446a573d90332349c", null ],
     [ "useExternalTrigger", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a05d7024a3b9ebefca71b841143167ea8", null ],
+    [ "useReverseRecovery", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#ab2d2f943a1a2371f507374793cde3c82", null ],
     [ "valueLength", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#aed43777f3e37094e45287bdfec1ccced", null ],
     [ "valueType", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#af836904afded8e579514cde4ff65a9c3", null ]
 ];

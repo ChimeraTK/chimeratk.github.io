@@ -15,6 +15,7 @@ var dir_2f1f9886b751a8bba31983cfaf39121d =
     [ "Model.cc", "_model_8cc.html", null ],
     [ "Module.cc", "_module_8cc.html", null ],
     [ "ModuleGroup.cc", "_module_group_8cc.html", null ],
+    [ "ReverseRecoveryDecorator.cc", "_reverse_recovery_decorator_8cc.html", "_reverse_recovery_decorator_8cc" ],
     [ "TestableMode.cc", "_testable_mode_8cc.html", null ],
     [ "TestFacility.cc", "_test_facility_8cc.html", null ],
     [ "TriggerFanOut.cc", "_trigger_fan_out_8cc.html", "_trigger_fan_out_8cc" ],

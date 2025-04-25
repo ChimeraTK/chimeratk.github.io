@@ -145,6 +145,8 @@ back") (always <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa752
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_array_output_r_b.html">ArrayOutputRB</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated, do not use.  <a href="struct_chimera_t_k_1_1_array_output_r_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_array_output_reverse_recovery.html">ArrayOutputReverseRecovery</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_array_pipe.html">ArrayPipe</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic module to pipe through a scalar value without altering it.  <a href="struct_chimera_t_k_1_1_array_pipe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,6 +315,8 @@ back") and <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html">RecoveryHelper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Helper struct to store an accessor and a version number.  <a href="struct_chimera_t_k_1_1_recovery_helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_reverse_recovery_decorator.html">ReverseRecoveryDecorator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html">ScalarAccessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a> for scalar variables (i.e.  <a href="class_chimera_t_k_1_1_scalar_accessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,6 +325,9 @@ back") and <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_scalar_output_push_r_b.html">ScalarOutputPushRB</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience class for output scalar accessors with return channel ("read back") (always <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3ba21a361d96e3e13f5f109748c2a9d2434">UpdateMode::push</a>)  <a href="struct_chimera_t_k_1_1_scalar_output_push_r_b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html">ScalarOutputReverseRecovery</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience class for output scalar accessors with return channel ("read back") (always <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3ba21a361d96e3e13f5f109748c2a9d2434">UpdateMode::push</a>)  <a href="struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_scalar_pipe.html">ScalarPipe</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic module to pipe through a scalar value without altering it.  <a href="struct_chimera_t_k_1_1_scalar_pipe.html#details">More...</a><br /></td></tr>
@@ -472,17 +479,21 @@ Functions</h2></td></tr>
 <tr class="separator:afd1ff17ff1ee9c50c855b99af5b0c580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8276cf7454dc5762663bba087f1abf8e" id="r_a8276cf7454dc5762663bba087f1abf8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8276cf7454dc5762663bba087f1abf8e">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">MetaDataPropagatingRegisterDecorator</a>)</td></tr>
 <tr class="separator:a8276cf7454dc5762663bba087f1abf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2c3ba419b2c44470f92456abe647ed" id="r_aaa2c3ba419b2c44470f92456abe647ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aaa2c3ba419b2c44470f92456abe647ed">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_reverse_recovery_decorator.html">ReverseRecoveryDecorator</a>)</td></tr>
+<tr class="separator:aaa2c3ba419b2c44470f92456abe647ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d2aa2e2e2ee982024aad4d8c637fb0" id="r_ad1d2aa2e2e2ee982024aad4d8c637fb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad1d2aa2e2e2ee982024aad4d8c637fb0">PYBIND11_MODULE</a> (PyApplicationCore, m)</td></tr>
 <tr class="separator:ad1d2aa2e2e2ee982024aad4d8c637fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a2c51d96e2fbf32e11257d58085fcb" id="r_ad8a2c51d96e2fbf32e11257d58085fcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad8a2c51d96e2fbf32e11257d58085fcb">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">DebugPrintAccessorDecorator</a>)</td></tr>
 <tr class="separator:ad8a2c51d96e2fbf32e11257d58085fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2922a31cfc160510cb2317d67353661e" id="r_a2922a31cfc160510cb2317d67353661e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a2922a31cfc160510cb2317d67353661e">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a>)</td></tr>
 <tr class="separator:a2922a31cfc160510cb2317d67353661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0444a1edf78b8d909eeda6a400ce1a7" id="r_ab0444a1edf78b8d909eeda6a400ce1a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ab0444a1edf78b8d909eeda6a400ce1a7">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_reverse_recovery_decorator.html">ReverseRecoveryDecorator</a>)</td></tr>
+<tr class="separator:ab0444a1edf78b8d909eeda6a400ce1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a2fdc2f768f8fdb507450414460ec2c9d" id="r_a2fdc2f768f8fdb507450414460ec2c9d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a2fdc2f768f8fdb507450414460ec2c9d">explicitDataValidityTag</a> = &quot;_ChimeraTK_NodeHasExplicitDataValidity&quot;</td></tr>
-<tr class="memdesc:a2fdc2f768f8fdb507450414460ec2c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special tag to designate that an output should not automatically take over DataValidity of its owning module.  <br /></td></tr>
+<tr class="memdesc:a2fdc2f768f8fdb507450414460ec2c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special tag to designate that a node should not automatically take over DataValidity of its owning module.  <br /></td></tr>
 <tr class="separator:a2fdc2f768f8fdb507450414460ec2c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8a5e2e7566441d305705f90ef9cace" id="r_a3e8a5e2e7566441d305705f90ef9cace"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3e8a5e2e7566441d305705f90ef9cace">independentVersionTag</a> = &quot;_ChimeraTK_NodeHasIndependentVersion&quot;</td></tr>
 <tr class="memdesc:a3e8a5e2e7566441d305705f90ef9cace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special tag to designate that a push-input should not propagate VersionNumber updates to its owning module.  <br /></td></tr>
@@ -674,7 +685,7 @@ template&lt;typename UserType &gt; </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="adbb94f785d8c1087884163cc6364f61d" name="adbb94f785d8c1087884163cc6364f61d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbb94f785d8c1087884163cc6364f61d">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb94f785d8c1087884163cc6364f61d">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,7 +703,7 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <a id="aa6996acf48cdfb7d1b64b4d21089564c" name="aa6996acf48cdfb7d1b64b4d21089564c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6996acf48cdfb7d1b64b4d21089564c">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6996acf48cdfb7d1b64b4d21089564c">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +721,7 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <a id="a8276cf7454dc5762663bba087f1abf8e" name="a8276cf7454dc5762663bba087f1abf8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8276cf7454dc5762663bba087f1abf8e">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8276cf7454dc5762663bba087f1abf8e">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -727,8 +738,26 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="aaa2c3ba419b2c44470f92456abe647ed" name="aaa2c3ba419b2c44470f92456abe647ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2c3ba419b2c44470f92456abe647ed">&#9670;&#160;</a></span>DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_reverse_recovery_decorator.html">ReverseRecoveryDecorator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad8a2c51d96e2fbf32e11257d58085fcb" name="ad8a2c51d96e2fbf32e11257d58085fcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a2c51d96e2fbf32e11257d58085fcb">&#9670;&#160;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a2c51d96e2fbf32e11257d58085fcb">&#9670;&#160;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -746,7 +775,7 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <a id="a2922a31cfc160510cb2317d67353661e" name="a2922a31cfc160510cb2317d67353661e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2922a31cfc160510cb2317d67353661e">&#9670;&#160;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2922a31cfc160510cb2317d67353661e">&#9670;&#160;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -755,6 +784,24 @@ template&lt;typename UserType &gt; </div>
           <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0444a1edf78b8d909eeda6a400ce1a7" name="ab0444a1edf78b8d909eeda6a400ce1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0444a1edf78b8d909eeda6a400ce1a7">&#9670;&#160;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_reverse_recovery_decorator.html">ReverseRecoveryDecorator</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -892,10 +939,10 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Special tag to designate that an output should not automatically take over DataValidity of its owning module. </p>
+<p>Special tag to designate that a node should not automatically take over DataValidity of its owning module. </p>
 <p>Use e.g. for a <a class="el" href="struct_chimera_t_k_1_1_status_output.html" title="Special ScalarOutput which represents a status which can be aggregated by the StatusAggregator.">StatusOutput</a> which should indicate errors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00184">184</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00185">185</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -922,7 +969,7 @@ template&lt;typename UserType &gt; </div>
 <p>Special tag to designate that a push-input should not propagate VersionNumber updates to its owning module. </p>
 <p>Use if a poll-input is not adequate. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00188">188</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00189">189</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>

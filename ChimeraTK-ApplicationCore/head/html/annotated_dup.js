@@ -50,6 +50,7 @@ var annotated_dup =
       [ "ArrayOutput", "struct_chimera_t_k_1_1_array_output.html", "struct_chimera_t_k_1_1_array_output" ],
       [ "ArrayOutputPushRB", "struct_chimera_t_k_1_1_array_output_push_r_b.html", "struct_chimera_t_k_1_1_array_output_push_r_b" ],
       [ "ArrayOutputRB", "struct_chimera_t_k_1_1_array_output_r_b.html", "struct_chimera_t_k_1_1_array_output_r_b" ],
+      [ "ArrayOutputReverseRecovery", "struct_chimera_t_k_1_1_array_output_reverse_recovery.html", "struct_chimera_t_k_1_1_array_output_reverse_recovery" ],
       [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ],
       [ "ArrayPollInput", "struct_chimera_t_k_1_1_array_poll_input.html", "struct_chimera_t_k_1_1_array_poll_input" ],
       [ "ArrayPushInput", "struct_chimera_t_k_1_1_array_push_input.html", "struct_chimera_t_k_1_1_array_push_input" ],
@@ -115,9 +116,11 @@ var annotated_dup =
       [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
       [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ],
       [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ],
+      [ "ReverseRecoveryDecorator", "class_chimera_t_k_1_1_reverse_recovery_decorator.html", "class_chimera_t_k_1_1_reverse_recovery_decorator" ],
       [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html", "class_chimera_t_k_1_1_scalar_accessor" ],
       [ "ScalarOutput", "struct_chimera_t_k_1_1_scalar_output.html", "struct_chimera_t_k_1_1_scalar_output" ],
       [ "ScalarOutputPushRB", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", "struct_chimera_t_k_1_1_scalar_output_push_r_b" ],
+      [ "ScalarOutputReverseRecovery", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery" ],
       [ "ScalarPipe", "struct_chimera_t_k_1_1_scalar_pipe.html", "struct_chimera_t_k_1_1_scalar_pipe" ],
       [ "ScalarPollInput", "struct_chimera_t_k_1_1_scalar_poll_input.html", "struct_chimera_t_k_1_1_scalar_poll_input" ],
       [ "ScalarPushInput", "struct_chimera_t_k_1_1_scalar_push_input.html", "struct_chimera_t_k_1_1_scalar_push_input" ],
@@ -481,6 +484,7 @@ var annotated_dup =
     [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", "struct_scalar_variable_group_test_app_for_move" ],
     [ "SetpointRamp", "class_setpoint_ramp.html", null ],
     [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ],
+    [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
     [ "WriteBlockingDummy", "struct_write_blocking_dummy.html", "struct_write_blocking_dummy" ],
     [ "WriteRecoveryTestApp", "struct_write_recovery_test_app.html", "struct_write_recovery_test_app" ]
 ];

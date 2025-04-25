@@ -2,7 +2,7 @@ var class_chimera_t_k_1_1_variable_network_node =
 [
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#ae6c65e0978f3382265c632b48b756007", null ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#aae3eef593d7a0c3131813a15c6e10ff8", null ],
-    [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#a33b54b1da7f0eafbc41b40247413e83d", null ],
+    [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#a030569b2ce0cf6eed0f6e354c46b5c09", null ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#a15f932dfaff9f6faf3c8ea8bb27df1c9", null ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#a632858ac075614fd4e500c57d0b37169", null ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#ac54174b107671aa6f0c21958e48fa600", null ],
@@ -35,6 +35,7 @@ var class_chimera_t_k_1_1_variable_network_node =
     [ "getValueType", "class_chimera_t_k_1_1_variable_network_node.html#a4d1ef6ae206a43dd3a046abc34ef9eb0", null ],
     [ "hasImplementation", "class_chimera_t_k_1_1_variable_network_node.html#a9133f59abf1a4c9553d11695cbbca079", null ],
     [ "isCircularInput", "class_chimera_t_k_1_1_variable_network_node.html#a45a3acf287d22a5b912227a79896e3f5", null ],
+    [ "isReadable", "class_chimera_t_k_1_1_variable_network_node.html#a23815e19c23a2d15fa322e79b1208669", null ],
     [ "isValid", "class_chimera_t_k_1_1_variable_network_node.html#a443218227432b46cd4a023b53dff8f67", null ],
     [ "operator!=", "class_chimera_t_k_1_1_variable_network_node.html#ac02c642f1c402eb09541e8d526a250db", null ],
     [ "operator<", "class_chimera_t_k_1_1_variable_network_node.html#a5ce458951be8abc9a7d305bbc4a5866e", null ],

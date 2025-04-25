@@ -13,7 +13,8 @@ var searchData=
   ['registerer_10',['registerer',['../struct_open_counting_lmap_backend_1_1_registerer.html',1,'OpenCountingLmapBackend::Registerer'],['../struct_write_blocking_dummy_1_1_registerer.html',1,'WriteBlockingDummy::Registerer']]],
   ['returnfirsthit_11',['ReturnFirstHit',['../struct_chimera_t_k_1_1_model_1_1_return_first_hit.html',1,'ChimeraTK::Model']]],
   ['returnfirsthitwithvalue_12',['ReturnFirstHitWithValue',['../struct_chimera_t_k_1_1_model_1_1_return_first_hit_with_value.html',1,'ChimeraTK::Model']]],
-  ['roguemodule_13',['RogueModule',['../struct_tests_1_1test_application_p_v_model_1_1_rogue_module.html',1,'Tests::testApplicationPVModel']]],
-  ['rootproperties_14',['RootProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
-  ['rootproxy_15',['RootProxy',['../class_chimera_t_k_1_1_model_1_1_root_proxy.html',1,'ChimeraTK::Model']]]
+  ['reverserecoverydecorator_13',['ReverseRecoveryDecorator',['../class_chimera_t_k_1_1_reverse_recovery_decorator.html',1,'ChimeraTK']]],
+  ['roguemodule_14',['RogueModule',['../struct_tests_1_1test_application_p_v_model_1_1_rogue_module.html',1,'Tests::testApplicationPVModel']]],
+  ['rootproperties_15',['RootProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_root_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
+  ['rootproxy_16',['RootProxy',['../class_chimera_t_k_1_1_model_1_1_root_proxy.html',1,'ChimeraTK::Model']]]
 ];

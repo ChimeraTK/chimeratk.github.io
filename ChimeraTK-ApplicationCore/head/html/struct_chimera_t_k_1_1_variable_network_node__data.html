@@ -157,11 +157,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3dfa2000cbe4999ad42b12b7af905e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c4580a91e4e43cbe1efa82b2de3f6d" id="r_a29c4580a91e4e43cbe1efa82b2de3f6d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a29c4580a91e4e43cbe1efa82b2de3f6d">registerName</a></td></tr>
 <tr class="separator:a29c4580a91e4e43cbe1efa82b2de3f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485afed59d10d37ae98f1debf3a958af" id="r_a485afed59d10d37ae98f1debf3a958af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a485afed59d10d37ae98f1debf3a958af">isReadable</a> {true}</td></tr>
+<tr class="separator:a485afed59d10d37ae98f1debf3a958af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c063050975eec1d6914bc52d210c45" id="r_a45c063050975eec1d6914bc52d210c45"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a45c063050975eec1d6914bc52d210c45">nElements</a> {0}</td></tr>
 <tr class="memdesc:a45c063050975eec1d6914bc52d210c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the variable.  <br /></td></tr>
 <tr class="separator:a45c063050975eec1d6914bc52d210c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69696eea47f2507c7ff2278e809f285" id="r_aa69696eea47f2507c7ff2278e809f285"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#aa69696eea47f2507c7ff2278e809f285">tags</a></td></tr>
-<tr class="memdesc:aa69696eea47f2507c7ff2278e809f285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of tags if type == <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>.  <br /></td></tr>
+<tr class="memdesc:aa69696eea47f2507c7ff2278e809f285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of tags if type == <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> || type == Device.  <br /></td></tr>
 <tr class="separator:aa69696eea47f2507c7ff2278e809f285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6adf71dcffcc8793977290195fa597f" id="r_ae6adf71dcffcc8793977290195fa597f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#ae6adf71dcffcc8793977290195fa597f">nodeWithTrigger</a></td></tr>
 <tr class="memdesc:ae6adf71dcffcc8793977290195fa597f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map to store triggered versions of this node.  <br /></td></tr>
@@ -170,7 +172,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a87f4975ed069256b930182573cd0fcc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the module owning this node.  <br /></td></tr>
 <tr class="separator:a87f4975ed069256b930182573cd0fcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8d4cab71c80df623beb08566c48639" id="r_a8d8d4cab71c80df623beb08566c48639"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a8d8d4cab71c80df623beb08566c48639">circularNetworkHash</a> {0}</td></tr>
-<tr class="memdesc:a8d8d4cab71c80df623beb08566c48639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash which idientifies a circular network.  <br /></td></tr>
+<tr class="memdesc:a8d8d4cab71c80df623beb08566c48639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash which identifies a circular network.  <br /></td></tr>
 <tr class="separator:a8d8d4cab71c80df623beb08566c48639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f73437d251d2c752fe74b755d20f39a" id="r_a3f73437d251d2c752fe74b755d20f39a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_model_1_1_non_owning_proxy.html">Model::NonOwningProxy</a>&lt; <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html">Model::ProcessVariableProxy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a3f73437d251d2c752fe74b755d20f39a">model</a></td></tr>
 <tr class="memdesc:a3f73437d251d2c752fe74b755d20f39a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_chimera_t_k_1_1_model.html">Model</a> representation of this variable.  <br /></td></tr>
@@ -182,7 +184,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We use a pimpl pattern so copied instances of <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network.">VariableNetworkNode</a> refer to the same instance of the data structure and thus stay consistent all the time. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00195">195</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00196">196</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5daa274e03af477f60b20eb9ff3410c9" name="a5daa274e03af477f60b20eb9ff3410c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5daa274e03af477f60b20eb9ff3410c9">&#9670;&#160;</a></span>VariableNetworkNode_data()</h2>
@@ -224,7 +226,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pointer to implementation if type == <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00219">219</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00220">220</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -240,10 +242,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Hash which idientifies a circular network. </p>
+<p>Hash which identifies a circular network. </p>
 <p>0 if the node is not part if a circular dependency. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00254">254</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00256">256</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +263,7 @@ Public Attributes</h2></td></tr>
 
 <p>Value in case of a constant. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00260">260</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00262">262</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +281,7 @@ Public Attributes</h2></td></tr>
 
 <p>Description. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00216">216</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00217">217</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +299,7 @@ Public Attributes</h2></td></tr>
 
 <p>Device information if type == Device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00237">237</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00238">238</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +317,7 @@ Public Attributes</h2></td></tr>
 
 <p>Node direction: feeding or consuming. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00205">205</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00206">206</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +336,23 @@ Public Attributes</h2></td></tr>
 <p>Pointer to the network providing the external trigger. </p>
 <p>May only be used for feeding nodes with an update mode poll. When enabled, the update mode will be converted into push. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00227">227</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00228">228</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+
+</div>
+</div>
+<a id="a485afed59d10d37ae98f1debf3a958af" name="a485afed59d10d37ae98f1debf3a958af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485afed59d10d37ae98f1debf3a958af">&#9670;&#160;</a></span>isReadable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::VariableNetworkNode_data::isReadable {true}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00240">240</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +370,7 @@ Public Attributes</h2></td></tr>
 
 <p>Update mode: poll or push. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00202">202</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00203">203</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +388,7 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="namespace_chimera_t_k_1_1_model.html">Model</a> representation of this variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00257">257</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00259">259</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +406,7 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a> name if type == <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00233">233</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00234">234</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +425,7 @@ Public Attributes</h2></td></tr>
 <p>Number of elements in the variable. </p>
 <p>0 means not yet decided. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00241">241</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00243">243</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +443,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pointer to network which should be triggered by this node. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00222">222</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00223">223</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +462,7 @@ Public Attributes</h2></td></tr>
 <p>Map to store triggered versions of this node. </p>
 <p>The map key is the trigger node and the value is the node with the respective trigger added. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00248">248</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00250">250</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +480,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pointer to the module owning this node. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00251">251</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00253">253</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +498,7 @@ Public Attributes</h2></td></tr>
 
 <p>Public name if type == ControlSystem. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00230">230</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00231">231</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +514,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00234">234</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00235">235</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +530,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00238">238</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00239">239</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -528,9 +546,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set of tags if type == <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
+<p>Set of tags if type == <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> || type == Device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00244">244</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00246">246</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +566,7 @@ Public Attributes</h2></td></tr>
 
 <p>Type of the node (<a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>, Device, ControlSystem, Trigger) </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00199">199</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00200">200</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +585,7 @@ Public Attributes</h2></td></tr>
 <p>Engineering unit. </p>
 <p>If equal to ChimeraTK::TransferElement::unitNotSet, no unit has been defined (and any unit is allowed). </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00213">213</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00214">214</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -586,7 +604,7 @@ Public Attributes</h2></td></tr>
 <p>Value type of this node. </p>
 <p>If the type_info is the typeid of <a class="el" href="class_chimera_t_k_1_1_any_type.html" title="Pseudo type to identify nodes which can have arbitrary types.">AnyType</a>, the actual type can be decided when making the connections. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00209">209</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00210">210</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>

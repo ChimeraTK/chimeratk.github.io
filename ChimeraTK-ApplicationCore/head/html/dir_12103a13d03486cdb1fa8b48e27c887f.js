@@ -26,6 +26,7 @@ var dir_12103a13d03486cdb1fa8b48e27c887f =
     [ "testPropagateDataFaultFlag.cc", "test_propagate_data_fault_flag_8cc.html", "test_propagate_data_fault_flag_8cc" ],
     [ "testPython.cc", "test_python_8cc.html", "test_python_8cc" ],
     [ "testRecoveryGroups.cc", "test_recovery_groups_8cc.html", "test_recovery_groups_8cc" ],
+    [ "testReverseRecovery.cc", "test_reverse_recovery_8cc.html", "test_reverse_recovery_8cc" ],
     [ "testScriptedInitialisationHandler.cc", "test_scripted_initialisation_handler_8cc.html", "test_scripted_initialisation_handler_8cc" ],
     [ "testStatusAggregator.cc", "test_status_aggregator_8cc.html", "test_status_aggregator_8cc" ],
     [ "testStatusMonitor.cc", "test_status_monitor_8cc.html", "test_status_monitor_8cc" ],

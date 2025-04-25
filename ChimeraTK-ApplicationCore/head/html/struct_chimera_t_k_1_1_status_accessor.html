@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_status_accessor
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1_status_accessor-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::StatusAccessor&lt; ACCESSOR &gt; Struct Template Reference</div></div>
 </div><!--header-->
@@ -141,18 +140,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4d4b2b0473d2a92f959e96387bd53912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6134441bec58a5c1372d5c32761e2a2" id="r_ac6134441bec58a5c1372d5c32761e2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_accessor.html#ac6134441bec58a5c1372d5c32761e2a2">operator--</a> (int)=delete</td></tr>
 <tr class="separator:ac6134441bec58a5c1372d5c32761e2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5f3b36eb3a1ac58d739c56b913487abe" id="r_a5f3b36eb3a1ac58d739c56b913487abe"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_accessor.html#a5f3b36eb3a1ac58d739c56b913487abe">tagStatusOutput</a> = &quot;_ChimeraTK_StatusOutput_statusOutput&quot;</td></tr>
-<tr class="memdesc:a5f3b36eb3a1ac58d739c56b913487abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved tag which is used to mark status outputs.  <br /></td></tr>
-<tr class="separator:a5f3b36eb3a1ac58d739c56b913487abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ACCESSOR&gt;<br />
 struct ChimeraTK::StatusAccessor&lt; ACCESSOR &gt;</div><p>Special <a class="el" href="struct_chimera_t_k_1_1_status_accessor.html" title="Special StatusAccessor - used to avoid code duplication in StatusOutput, StatusPushInput and StatusPo...">StatusAccessor</a> - used to avoid code duplication in <a class="el" href="struct_chimera_t_k_1_1_status_output.html" title="Special ScalarOutput which represents a status which can be aggregated by the StatusAggregator.">StatusOutput</a>, <a class="el" href="struct_chimera_t_k_1_1_status_push_input.html" title="Special StatusPushInput which reads from a StatusOutput and also handles the type conversion.">StatusPushInput</a> and <a class="el" href="struct_chimera_t_k_1_1_status_poll_input.html" title="Special StatusPollInput which reads from a StatusOutput and also handles the type conversion.">StatusPollInput</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00025">25</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00026">26</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aea1421d687f163f6af6d9b4ef94127e9" name="aea1421d687f163f6af6d9b4ef94127e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea1421d687f163f6af6d9b4ef94127e9">&#9670;&#160;</a></span>StatusAccessor() <span class="overload">[1/2]</span></h2>
@@ -204,7 +197,7 @@ template&lt;typename ACCESSOR &gt; </div>
 
 <p>Note: In contrast to normal ScalarInput accessors, this constructor omits the unit argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00027">27</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00028">28</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +256,7 @@ template&lt;typename ACCESSOR &gt; </div>
 
 <p>Implicit type conversion to user type T to access the const value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00045">45</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00043">43</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +287,7 @@ template&lt;typename ACCESSOR &gt; </div>
 
 <p>Implicit type conversion to user type T to access the value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00040">40</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00038">38</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -436,36 +429,7 @@ template&lt;typename ACCESSOR &gt; </div>
 
 <p>Assignment operator, assigns the first element. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00048">48</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5f3b36eb3a1ac58d739c56b913487abe" name="a5f3b36eb3a1ac58d739c56b913487abe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f3b36eb3a1ac58d739c56b913487abe">&#9670;&#160;</a></span>tagStatusOutput</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ACCESSOR &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto <a class="el" href="struct_chimera_t_k_1_1_status_accessor.html">ChimeraTK::StatusAccessor</a>&lt; ACCESSOR &gt;::tagStatusOutput = &quot;_ChimeraTK_StatusOutput_statusOutput&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reserved tag which is used to mark status outputs. </p>
-
-<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00035">35</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_accessor_8h_source.html#l00046">46</a> of file <a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>.</p>
 
 </div>
 </div>

@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_recovery_helper
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1_recovery_helper-members.html">List of all members</a>  </div>
@@ -103,10 +104,17 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_recovery_helper
 
 <p><code>#include &lt;<a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9f38a85b22ba9edf6f95af8fd216de01" id="r_a9f38a85b22ba9edf6f95af8fd216de01"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01">Direction</a> { <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01a8b5e26f033a8988525392366fb96725b">fromDevice</a>
+, <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74">toDevice</a>
+ }</td></tr>
+<tr class="separator:a9f38a85b22ba9edf6f95af8fd216de01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af07d7a8033b29d8fae131632acd96101" id="r_af07d7a8033b29d8fae131632acd96101"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#af07d7a8033b29d8fae131632acd96101">RecoveryHelper</a> (boost::shared_ptr&lt; TransferElement &gt; a, VersionNumber v=VersionNumber(nullptr), uint64_t order=0)</td></tr>
-<tr class="separator:af07d7a8033b29d8fae131632acd96101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1492818bb33a23209f2c3ba0fa11146b" id="r_a1492818bb33a23209f2c3ba0fa11146b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1492818bb33a23209f2c3ba0fa11146b">RecoveryHelper</a> (boost::shared_ptr&lt; TransferElement &gt; a, VersionNumber v=VersionNumber(nullptr), uint64_t order=0, <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01">Direction</a> direction=<a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74">Direction::toDevice</a>)</td></tr>
+<tr class="separator:a1492818bb33a23209f2c3ba0fa11146b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -118,15 +126,48 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a02f305373033ff9001e294b6fe15c1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb690e93ebfcb0bc7d49b4ea16344637" id="r_acb690e93ebfcb0bc7d49b4ea16344637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637">wasWritten</a> {false}</td></tr>
 <tr class="separator:acb690e93ebfcb0bc7d49b4ea16344637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f923482e77605ebc29d5986a969eb0" id="r_ab6f923482e77605ebc29d5986a969eb0"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ab6f923482e77605ebc29d5986a969eb0">notificationQueue</a></td></tr>
+<tr class="separator:ab6f923482e77605ebc29d5986a969eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e19a07c588de358a912210cf689112b" id="r_a3e19a07c588de358a912210cf689112b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a3e19a07c588de358a912210cf689112b">recoveryDirection</a> {<a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74">Direction::toDevice</a>}</td></tr>
+<tr class="separator:a3e19a07c588de358a912210cf689112b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Helper struct to store an accessor and a version number. </p>
 <p>Like this you can set the user buffer of the accessors and the version number which shall be used when the accessor is written, but delay the writing do a later point in time. </p>
 
 <p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00015">15</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af07d7a8033b29d8fae131632acd96101" name="af07d7a8033b29d8fae131632acd96101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af07d7a8033b29d8fae131632acd96101">&#9670;&#160;</a></span>RecoveryHelper()</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a9f38a85b22ba9edf6f95af8fd216de01" name="a9f38a85b22ba9edf6f95af8fd216de01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f38a85b22ba9edf6f95af8fd216de01">&#9670;&#160;</a></span>Direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01">ChimeraTK::RecoveryHelper::Direction</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9f38a85b22ba9edf6f95af8fd216de01a8b5e26f033a8988525392366fb96725b" name="a9f38a85b22ba9edf6f95af8fd216de01a8b5e26f033a8988525392366fb96725b"></a>fromDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74" name="a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74"></a>toDevice&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00016">16</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1492818bb33a23209f2c3ba0fa11146b" name="a1492818bb33a23209f2c3ba0fa11146b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1492818bb33a23209f2c3ba0fa11146b">&#9670;&#160;</a></span>RecoveryHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +191,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>order</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>order</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01">Direction</a>&#160;</td>
+          <td class="paramname"><em>direction</em> = <code><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74">Direction::toDevice</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -165,7 +212,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00021">21</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00024">24</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
 
 </div>
 </div>
@@ -182,7 +229,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00016">16</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00017">17</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+
+</div>
+</div>
+<a id="ab6f923482e77605ebc29d5986a969eb0" name="ab6f923482e77605ebc29d5986a969eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f923482e77605ebc29d5986a969eb0">&#9670;&#160;</a></span>notificationQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cppext::future_queue&lt;void&gt; ChimeraTK::RecoveryHelper::notificationQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00021">21</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e19a07c588de358a912210cf689112b" name="a3e19a07c588de358a912210cf689112b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e19a07c588de358a912210cf689112b">&#9670;&#160;</a></span>recoveryDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01">Direction</a> ChimeraTK::RecoveryHelper::recoveryDirection {<a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01a48f6f67089881aa136bc8827d7fc4d74">Direction::toDevice</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00022">22</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +277,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00017">17</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00018">18</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +293,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00019">19</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00020">20</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +309,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00018">18</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_recovery_helper_8h_source.html#l00019">19</a> of file <a class="el" href="_recovery_helper_8h_source.html">RecoveryHelper.h</a>.</p>
 
 </div>
 </div>
