@@ -1,9 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[19,0,1,1,5],
-"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[19,0,1,1,4],
-"namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1":[19,0,1,1,8],
-"namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1":[19,0,1,1,7],
 "namespace_chimera_t_k_1_1csa__helpers.html#ab4ff7a4fec1a1e0c63c62ae5318205f6":[19,0,1,1,6],
 "namespace_chimera_t_k_1_1numeric__address.html":[19,0,1,4],
 "namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e":[19,0,1,4,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX22 =
 "struct_channel_register_descriptor_base.html":[20,0,34],
 "struct_channel_register_descriptor_base.html#a1b2bbef72edf9ae9739ed3ceab98518f":[20,0,34,3],
 "struct_channel_register_descriptor_base.html#a20f832241c202a06d99672e0ab186d53":[20,0,34,4],
-"struct_channel_register_descriptor_base.html#a8925d9bf44be7f9850b68cef4b515c15":[20,0,34,2]
+"struct_channel_register_descriptor_base.html#a8925d9bf44be7f9850b68cef4b515c15":[20,0,34,2],
+"struct_channel_register_descriptor_base.html#ac7f2b640511ae3ee36f1e8539eea8bec":[20,0,34,0],
+"struct_channel_register_descriptor_base.html#af7b910ecc52f9b458e3baa44661eefb7":[20,0,34,1],
+"struct_chimera_t_k_1_1_copy_register_decorator.html":[20,0,1,18],
+"struct_chimera_t_k_1_1_copy_register_decorator.html":[19,0,1,22]
 };

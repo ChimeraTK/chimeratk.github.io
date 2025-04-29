@@ -1,9 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"struct_short_raw__fixed_point16__8s.html#a0088f60b2446074a8f6833162975acab":[20,0,195,4],
-"struct_short_raw__fixed_point16__8s.html#a15dbf2bee5b4e262e8d9647e140f56ec":[20,0,195,6],
-"struct_short_raw__fixed_point16__8s.html#a1ae60801b74323002047d389281c73e8":[20,0,195,1],
-"struct_short_raw__fixed_point16__8s.html#a2a67a9650403f2dd049ab8b33bcc4c7b":[20,0,195,5],
 "struct_short_raw__fixed_point16__8s.html#a479c4131e573b881d456145024da4c0b":[20,0,195,0],
 "struct_short_raw__fixed_point16__8s.html#a7c3e4a81d5bc8a3cc43e66b7e96c2986":[20,0,195,2],
 "struct_short_raw__fixed_point16__8s.html#acd2235bd3df5df9409981afa2a6dd5a1":[20,0,195,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX29 =
 "test_async_var_and_hierarchical_interrupts_unified_8cpp_source.html":[21,0,0,0,6,1,3],
 "test_backend_factory_8cpp.html":[21,0,0,0,6,1,4],
 "test_backend_factory_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[21,0,0,0,6,1,4,1],
-"test_backend_factory_8cpp.html#a4b519297abf546f0dffe3ddccec507c3":[21,0,0,0,6,1,4,5]
+"test_backend_factory_8cpp.html#a4b519297abf546f0dffe3ddccec507c3":[21,0,0,0,6,1,4,5],
+"test_backend_factory_8cpp.html#a59f5b27575b38f3e8b53f4323f575fe4":[21,0,0,0,6,1,4,4],
+"test_backend_factory_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[21,0,0,0,6,1,4,2],
+"test_backend_factory_8cpp.html#a9f15aa63cc160538eda9419543a94d60":[21,0,0,0,6,1,4,3],
+"test_backend_factory_8cpp_source.html":[21,0,0,0,6,1,4]
 };

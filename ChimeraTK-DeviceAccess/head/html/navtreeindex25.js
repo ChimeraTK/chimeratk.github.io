@@ -1,9 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#af92af6259adc2803d150982ca153a1cc":[19,0,1,101,2],
-"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#af92af6259adc2803d150982ca153a1cc":[20,0,1,97,2],
-"struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html":[19,0,1,102],
-"struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html":[20,0,1,98],
 "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html":[19,0,1,107],
 "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html":[20,0,1,103],
 "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html#abee18accea224d38f15cadef0e803fad":[19,0,1,107,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX25 =
 "struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[20,0,37,1],
 "struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12":[20,0,37,9],
 "struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[20,0,37,17],
-"struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[20,0,37,2]
+"struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[20,0,37,2],
+"struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa":[20,0,37,5],
+"struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[20,0,37,12],
+"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[20,0,37,6],
+"struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16":[20,0,37,15]
 };
