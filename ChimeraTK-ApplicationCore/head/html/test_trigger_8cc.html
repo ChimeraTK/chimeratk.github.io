@@ -101,8 +101,6 @@ $(document).ready(function(){initNavTree('test_trigger_8cc.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_void_accessor_8h_source.html">VoidAccessor.h</a>&quot;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;future&gt;</code><br />
 <code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_application_module_8h_source.html">ApplicationModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>&quot;</code><br />
@@ -118,6 +116,7 @@ $(document).ready(function(){initNavTree('test_trigger_8cc.html',''); initResiza
 <code>#include &lt;ChimeraTK/DummyBackend.h&gt;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
+<code>#include &lt;latch&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testTrigger.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -146,6 +145,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_trigger_1_1_test_application.html">Tests::testTrigger::TestApplication</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_trigger_1_1_test_application2.html">Tests::testTrigger::TestApplication2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -166,25 +167,27 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7b3b72162d77ac719681dac1c64cdb8f" id="r_a7b3b72162d77ac719681dac1c64cdb8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a7b3b72162d77ac719681dac1c64cdb8f">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testDev2AppWithPollTrigger)</td></tr>
-<tr class="separator:a7b3b72162d77ac719681dac1c64cdb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e99d78bdb682ec646a7d98e914e1ab0" id="r_a4e99d78bdb682ec646a7d98e914e1ab0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a4e99d78bdb682ec646a7d98e914e1ab0">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testDev2AppWithCsDirectTrigger)</td></tr>
-<tr class="separator:a4e99d78bdb682ec646a7d98e914e1ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ed09109fe29be7d664b8bf14823e73" id="r_a60ed09109fe29be7d664b8bf14823e73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a60ed09109fe29be7d664b8bf14823e73">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testDev2AppWithCsDistributedTrigger)</td></tr>
-<tr class="separator:a60ed09109fe29be7d664b8bf14823e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08c9ed84d252b811c1f717abf7dcb3bd" id="r_a08c9ed84d252b811c1f717abf7dcb3bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a08c9ed84d252b811c1f717abf7dcb3bd">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testDev2App1Trigger2Devices)</td></tr>
-<tr class="separator:a08c9ed84d252b811c1f717abf7dcb3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f2d4114d5d761b219ac67995c81ee2" id="r_a73f2d4114d5d761b219ac67995c81ee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a73f2d4114d5d761b219ac67995c81ee2">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testDev2CSCsTrigger)</td></tr>
-<tr class="separator:a73f2d4114d5d761b219ac67995c81ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ad5b18018adc36064c202a1d787cc1" id="r_a97ad5b18018adc36064c202a1d787cc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a97ad5b18018adc36064c202a1d787cc1">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testDev2CSAppTrigger)</td></tr>
-<tr class="separator:a97ad5b18018adc36064c202a1d787cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa31d11f21e687a62c1f695361fc935ab" id="r_aa31d11f21e687a62c1f695361fc935ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#aa31d11f21e687a62c1f695361fc935ab">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (testTriggerTransferGroup)</td></tr>
-<tr class="separator:aa31d11f21e687a62c1f695361fc935ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e59df2cc4f9b5aedd33efd4961d9d68" id="r_a0e59df2cc4f9b5aedd33efd4961d9d68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a0e59df2cc4f9b5aedd33efd4961d9d68">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestDev2AppWithPollTrigger)</td></tr>
+<tr class="separator:a0e59df2cc4f9b5aedd33efd4961d9d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4e3b604aa6727007e4010e4ae931a0" id="r_aec4e3b604aa6727007e4010e4ae931a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#aec4e3b604aa6727007e4010e4ae931a0">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestDev2AppWithCsDirectTrigger)</td></tr>
+<tr class="separator:aec4e3b604aa6727007e4010e4ae931a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa75d98c40a50cca3a06097dfb0c663" id="r_adfa75d98c40a50cca3a06097dfb0c663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#adfa75d98c40a50cca3a06097dfb0c663">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestDev2AppWithCsDistributedTrigger)</td></tr>
+<tr class="separator:adfa75d98c40a50cca3a06097dfb0c663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2ba1ebb1081e02afd0cbbb9fcbba88" id="r_a5f2ba1ebb1081e02afd0cbbb9fcbba88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a5f2ba1ebb1081e02afd0cbbb9fcbba88">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestDev2App1Trigger2Devices)</td></tr>
+<tr class="separator:a5f2ba1ebb1081e02afd0cbbb9fcbba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085e1ed398348a4f3bc6a817b3fe1e82" id="r_a085e1ed398348a4f3bc6a817b3fe1e82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a085e1ed398348a4f3bc6a817b3fe1e82">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestDev2CSCsTrigger)</td></tr>
+<tr class="separator:a085e1ed398348a4f3bc6a817b3fe1e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b131dede9f3d087df75b11ca114ac3" id="r_a06b131dede9f3d087df75b11ca114ac3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a06b131dede9f3d087df75b11ca114ac3">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestDev2CSAppTrigger)</td></tr>
+<tr class="separator:a06b131dede9f3d087df75b11ca114ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8e9ca17b14fe010f50f6c959246643" id="r_a8e8e9ca17b14fe010f50f6c959246643"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a8e8e9ca17b14fe010f50f6c959246643">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestTriggerTransferGroup)</td></tr>
+<tr class="separator:a8e8e9ca17b14fe010f50f6c959246643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f4df842c962a533e97fe6296ee1a03" id="r_ac4f4df842c962a533e97fe6296ee1a03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#ac4f4df842c962a533e97fe6296ee1a03">Tests::testTrigger::BOOST_AUTO_TEST_CASE</a> (TestTriggerTransferGroupInitHandler)</td></tr>
+<tr class="separator:ac4f4df842c962a533e97fe6296ee1a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a21283c0194a47518809ba81b78238644" id="r_a21283c0194a47518809ba81b78238644"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#a21283c0194a47518809ba81b78238644">Tests::testTrigger::dummySdm</a> {&quot;(TestTransferGroupDummy?map=test_readonly.map)&quot;}</td></tr>
-<tr class="separator:a21283c0194a47518809ba81b78238644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa99d12b916b5db31347c6f8672a0c8" id="r_aefa99d12b916b5db31347c6f8672a0c8"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_trigger.html#aefa99d12b916b5db31347c6f8672a0c8">Tests::testTrigger::dummySdm</a> {&quot;(TestTransferGroupDummy?map=test_readonly.map)&quot;}</td></tr>
+<tr class="separator:aefa99d12b916b5db31347c6f8672a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6b2a3852db8bb19ab6909bac01859985" name="a6b2a3852db8bb19ab6909bac01859985"></a>
@@ -199,7 +202,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_trigger_8cc_source.html#l00008">8</a> of file <a class="el" href="test_trigger_8cc_source.html">testTrigger.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_trigger_8cc_source.html#l00005">5</a> of file <a class="el" href="test_trigger_8cc_source.html">testTrigger.cc</a>.</p>
 
 </div>
 </div>

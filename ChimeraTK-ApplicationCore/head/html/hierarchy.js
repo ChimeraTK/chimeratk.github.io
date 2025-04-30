@@ -127,6 +127,7 @@ var hierarchy =
         [ "Tests::testTrigger::TestApp4", "struct_tests_1_1test_trigger_1_1_test_app4.html", null ],
         [ "Tests::testTrigger::TestApp5", "struct_tests_1_1test_trigger_1_1_test_app5.html", null ],
         [ "Tests::testTrigger::TestApplication", "struct_tests_1_1test_trigger_1_1_test_application.html", null ],
+        [ "Tests::testTrigger::TestApplication2", "struct_tests_1_1test_trigger_1_1_test_application2.html", null ],
         [ "Tests::testVariableGroup::TestApplication", "struct_tests_1_1test_variable_group_1_1_test_application.html", null ],
         [ "Tests::testVersionpropagation::TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", null ],
         [ "WriteRecoveryTestApp", "struct_write_recovery_test_app.html", null ]
