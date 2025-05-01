@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8306476cda738d19dfc27f83a33f7baa" id="r_a8306476cda738d19dfc27f83a33f7baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a8306476cda738d19dfc27f83a33f7baa">handleMissingPreReads</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> callerId)</td></tr>
 <tr class="memdesc:a8306476cda738d19dfc27f83a33f7baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">since after DiscardValueException, <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> does not call preRead at following operation, <a class="el" href="class_chimera_t_k_1_1_data_consistency_decorator.html" title="A quasi-decorator to be used to decorate targets which should provide data updates only when data is ...">DataConsistencyDecorator</a> must 'catch up' on preReads by calling this  <br /></td></tr>
 <tr class="separator:a8306476cda738d19dfc27f83a33f7baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d3d9b522ff7092a3ead15df579fdc0d" id="r_a7d3d9b522ff7092a3ead15df579fdc0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a7d3d9b522ff7092a3ead15df579fdc0d">handleMissingPostReads</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> callerId)</td></tr>
-<tr class="separator:a7d3d9b522ff7092a3ead15df579fdc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135bcb45c12b85665c0da8c615fa2dcf" id="r_a135bcb45c12b85665c0da8c615fa2dcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a135bcb45c12b85665c0da8c615fa2dcf">handleMissingPostReads</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> callerId, bool updateBuffer)</td></tr>
+<tr class="separator:a135bcb45c12b85665c0da8c615fa2dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c42572eb8718251bf7cf020b3375b0b" id="r_a9c42572eb8718251bf7cf020b3375b0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a9c42572eb8718251bf7cf020b3375b0b">updateHistory</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> transferElementID)</td></tr>
 <tr class="memdesc:a9c42572eb8718251bf7cf020b3375b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">swap data of target buffer into history  <br /></td></tr>
 <tr class="separator:a9c42572eb8718251bf7cf020b3375b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -531,8 +531,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a7d3d9b522ff7092a3ead15df579fdc0d" name="a7d3d9b522ff7092a3ead15df579fdc0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d3d9b522ff7092a3ead15df579fdc0d">&#9670;&#160;</a></span>handleMissingPostReads()</h2>
+<a id="a135bcb45c12b85665c0da8c615fa2dcf" name="a135bcb45c12b85665c0da8c615fa2dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135bcb45c12b85665c0da8c615fa2dcf">&#9670;&#160;</a></span>handleMissingPostReads()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,8 +541,18 @@ template&lt;typename UserType &gt; </div>
           <td class="memname">void ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher::handleMissingPostReads </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td>
-          <td class="paramname"><em>callerId</em></td><td>)</td>
+          <td class="paramname"><em>callerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>updateBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
