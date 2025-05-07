@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"struct_chimera_t_k_1_1_model_1_1_edge_properties.html#ac0df84a8b92c8fe6f7588ea0b30cf10d":[14,0,0,0,13,1],
 "struct_chimera_t_k_1_1_model_1_1_or_set.html":[15,0,0,0,17],
 "struct_chimera_t_k_1_1_model_1_1_or_set.html":[14,0,0,0,17],
 "struct_chimera_t_k_1_1_model_1_1_or_set.html#a10215ff86c161d989d87e4aefccaede5":[14,0,0,0,17,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "struct_chimera_t_k_1_1_network_visitor_1_1_process_variable_comperator.html":[15,0,0,56,1],
 "struct_chimera_t_k_1_1_network_visitor_1_1_process_variable_comperator.html#a18e3a3cd37117f2b42899ab18b7a488a":[14,0,0,57,1,0],
 "struct_chimera_t_k_1_1_network_visitor_1_1_process_variable_comperator.html#a18e3a3cd37117f2b42899ab18b7a488a":[15,0,0,56,1,0],
-"struct_chimera_t_k_1_1_periodic_trigger.html":[14,0,0,58],
-"struct_chimera_t_k_1_1_periodic_trigger.html":[15,0,0,57]
+"struct_chimera_t_k_1_1_periodic_trigger.html":[14,0,0,58]
 };

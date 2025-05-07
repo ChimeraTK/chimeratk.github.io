@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_behaviour":[4,2,1,1],
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments":[4,2,1,2],
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_structure":[4,2,1,0],
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule":[4,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a11e5376cecc16ce4cb0bf68cd002d831":[14,0,0,25,0,3],
 "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a53aa278b275cd8b8bb71847eeae388fe":[15,0,0,24,0,2],
 "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a53aa278b275cd8b8bb71847eeae388fe":[14,0,0,25,0,2],
-"struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a96f200faa248a98008bf79cdddd740a4":[15,0,0,24,0,4],
-"struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a96f200faa248a98008bf79cdddd740a4":[14,0,0,25,0,4]
+"struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a96f200faa248a98008bf79cdddd740a4":[15,0,0,24,0,4]
 };

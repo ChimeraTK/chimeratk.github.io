@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#a96f200faa248a98008bf79cdddd740a4":[14,0,0,25,0,4],
 "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#aefa460e39dd2e72346f6a6eb638761d3":[15,0,0,24,0,0],
 "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html#aefa460e39dd2e72346f6a6eb638761d3":[14,0,0,25,0,0],
 "struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html":[14,0,0,27,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4eac7d08e09a44d2b453e7eeecebf0a8daf":[14,0,0,0,13,0,5],
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4eafedb2d84cafe20862cb4399751a8a7e3":[15,0,0,0,13,0,0],
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4eafedb2d84cafe20862cb4399751a8a7e3":[14,0,0,0,13,0,0],
-"struct_chimera_t_k_1_1_model_1_1_edge_properties.html#ac0df84a8b92c8fe6f7588ea0b30cf10d":[15,0,0,0,13,1],
-"struct_chimera_t_k_1_1_model_1_1_edge_properties.html#ac0df84a8b92c8fe6f7588ea0b30cf10d":[14,0,0,0,13,1]
+"struct_chimera_t_k_1_1_model_1_1_edge_properties.html#ac0df84a8b92c8fe6f7588ea0b30cf10d":[15,0,0,0,13,1]
 };

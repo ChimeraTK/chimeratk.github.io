@@ -99,10 +99,9 @@ $(document).ready(function(){initNavTree('test_test_facilities_8cc.html',''); in
   <div class="headertitle"><div class="title">testTestFacilities.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;future&gt;</code><br />
-<code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_application_module_8h_source.html">ApplicationModule.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_testable_mode_8h_source.html">TestableMode.h</a>&quot;</code><br />
@@ -110,8 +109,9 @@ $(document).ready(function(){initNavTree('test_test_facilities_8cc.html',''); in
 <code>#include &quot;<a class="el" href="_variable_group_8h_source.html">VariableGroup.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/Device.h&gt;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
-<code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/barrier.hpp&gt;</code><br />
+<code>#include &lt;latch&gt;</code><br />
+<code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testTestFacilities.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -166,8 +166,6 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985" id="r_a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_test_facilities_8cc.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;testTestFacilities</td></tr>
 <tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17030ac7f00713a62e05ab6c35cb710e" id="r_a17030ac7f00713a62e05ab6c35cb710e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_test_facilities_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(condition,  maxMilliseconds)</td></tr>
-<tr class="separator:a17030ac7f00713a62e05ab6c35cb710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -191,6 +189,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab45201de4b886097f6230070b765adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87551d7e6711ee863473744ca072712e" id="r_a87551d7e6711ee863473744ca072712e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_test_facilities.html#a87551d7e6711ee863473744ca072712e">Tests::testTestFacilities::BOOST_AUTO_TEST_CASE</a> (testInitialValues)</td></tr>
 <tr class="separator:a87551d7e6711ee863473744ca072712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f7138e1b969346f88373d1aa5b9b7b" id="r_ac6f7138e1b969346f88373d1aa5b9b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_test_facilities.html#ac6f7138e1b969346f88373d1aa5b9b7b">Tests::testTestFacilities::BOOST_AUTO_TEST_CASE</a> (TestableModeLockShared)</td></tr>
+<tr class="memdesc:ac6f7138e1b969346f88373d1aa5b9b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that the testable mode lock is a shared lock and only the test thread acquires it in exclusive mode.  <br /></td></tr>
+<tr class="separator:ac6f7138e1b969346f88373d1aa5b9b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -210,46 +211,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00006">6</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
-
-</div>
-</div>
-<a id="a17030ac7f00713a62e05ab6c35cb710e" name="a17030ac7f00713a62e05ab6c35cb710e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17030ac7f00713a62e05ab6c35cb710e">&#9670;&#160;</a></span>CHECK_TIMEOUT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CHECK_TIMEOUT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">condition, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">maxMilliseconds&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                                    \</div>
-<div class="line">    std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();                                       \</div>
-<div class="line">    while(!(condition)) {                                                                                              \</div>
-<div class="line">      <span class="keywordtype">bool</span> timeout_reached = (std::chrono::steady_clock::now() - t0) &gt; std::chrono::milliseconds(maxMilliseconds);     \</div>
-<div class="line">      BOOST_CHECK(!timeout_reached);                                                                                   \</div>
-<div class="line">      if(timeout_reached) <span class="keywordflow">break</span>;                                                                                       \</div>
-<div class="line">      usleep(1000);                                                                                                    \</div>
-<div class="line">    }                                                                                                                  \</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00029">29</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00004">4</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>

@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('_device_manager_8cc_source.html',''); 
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#a1c744dbf1b4d19d54301dc03bed17e10">_owner</a>-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a704b92f60328487bfe6b12ffbd6c0159">getTestableMode</a>().unlock(<span class="stringliteral">&quot;Wait before open/recover device&quot;</span>);</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        usleep(500000);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        boost::this_thread::interruption_point();</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#a1c744dbf1b4d19d54301dc03bed17e10">_owner</a>-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a704b92f60328487bfe6b12ffbd6c0159">getTestableMode</a>().lock(<span class="stringliteral">&quot;Attempt open/recover device&quot;</span>);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#a1c744dbf1b4d19d54301dc03bed17e10">_owner</a>-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a704b92f60328487bfe6b12ffbd6c0159">getTestableMode</a>().lock(<span class="stringliteral">&quot;Attempt open/recover device&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>          std::lock_guard&lt;std::mutex&gt; deviceOpenLock(<a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#ab603b5b000f366910378a18e12c55993">_recoveryGroup</a>-&gt;deviceOpenCloseMutex);</div>
@@ -493,7 +493,7 @@ $(document).ready(function(){initNavTree('_device_manager_8cc_source.html',''); 
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#ab722e02b5476f00c8a668998b3de0806">_errorQueue</a>.wait();</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>      boost::this_thread::interruption_point();</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#a1c744dbf1b4d19d54301dc03bed17e10">_owner</a>-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a704b92f60328487bfe6b12ffbd6c0159">getTestableMode</a>().lock(<span class="stringliteral">&quot;Process exception&quot;</span>);</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#a1c744dbf1b4d19d54301dc03bed17e10">_owner</a>-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a704b92f60328487bfe6b12ffbd6c0159">getTestableMode</a>().lock(<span class="stringliteral">&quot;Process exception&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>      <span class="comment">// increment special testable mode counter to make sure the initialisation completes within one</span></div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>      <span class="comment">// &quot;application step&quot;</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>      <span class="keywordflow">if</span>(<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#aa3c1c63e078d14fb104431a15951a070">Application::getInstance</a>().getTestableMode()._enabled) {</div>
@@ -651,48 +651,45 @@ $(document).ready(function(){initNavTree('_device_manager_8cc_source.html',''); 
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
 <div class="foldopen" id="foldopen00518" data-start="{" data-end="}">
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#a7893a193ecdb73c3bdf4ecaf686d1a1a">  518</a></span>  <span class="keywordtype">bool</span> DeviceManager::RecoveryGroup::waitForRecoveryStage(<a class="code hl_enumeration" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#a965798c4c23ab1de58157361f6ed384d">RecoveryStage</a> stage) {</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    app-&gt;getTestableMode().unlock(std::string(<span class="stringliteral">&quot;DeviceManager: Sync device recovery after &quot;</span>) + stageToString(stage));</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    <span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc">shutdown</a>) {</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>      <span class="keywordflow">throw</span> boost::thread_interrupted(); <span class="comment">// NOLINT hicpp-exception-baseclass</span></div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    }</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    boost::this_thread::interruption_point();</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    recoveryBarrier.arrive_and_wait();</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    <span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc">shutdown</a>) {</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>      <span class="keywordflow">throw</span> boost::thread_interrupted(); <span class="comment">// NOLINT hicpp-exception-baseclass</span></div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    }</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    boost::this_thread::interruption_point();</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    app-&gt;getTestableMode().lock(</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        std::string(<span class="stringliteral">&quot;DeviceManager: Starting next device recovery stage after &quot;</span>) + stageToString(stage));</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    <span class="keywordflow">return</span> !(errorAtStage == stage);</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>  }</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    <span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc">shutdown</a>) {</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>      <span class="keywordflow">throw</span> boost::thread_interrupted(); <span class="comment">// NOLINT hicpp-exception-baseclass</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    }</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    boost::this_thread::interruption_point();</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    recoveryBarrier.arrive_and_wait();</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span> </div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    <span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc">shutdown</a>) {</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>      <span class="keywordflow">throw</span> boost::thread_interrupted(); <span class="comment">// NOLINT hicpp-exception-baseclass</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    }</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    boost::this_thread::interruption_point();</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="keywordflow">return</span> !(errorAtStage == stage);</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>  }</div>
 </div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span> </div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span> </div>
-<div class="foldopen" id="foldopen00551" data-start="{" data-end="}">
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#ab83adca90605ee2c5ea7afb46e748804">  551</a></span>  <span class="keywordtype">void</span> DeviceManager::RecoveryGroup::setErrorAtStage(<a class="code hl_enumeration" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#a965798c4c23ab1de58157361f6ed384d">RecoveryStage</a> stage) {</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    assert((errorAtStage == RecoveryStage::NO_ERROR) || (errorAtStage == stage));</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    errorAtStage = stage;</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  }</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="foldopen" id="foldopen00548" data-start="{" data-end="}">
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#ab83adca90605ee2c5ea7afb46e748804">  548</a></span>  <span class="keywordtype">void</span> DeviceManager::RecoveryGroup::setErrorAtStage(<a class="code hl_enumeration" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#a965798c4c23ab1de58157361f6ed384d">RecoveryStage</a> stage) {</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    assert((errorAtStage == RecoveryStage::NO_ERROR) || (errorAtStage == stage));</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    errorAtStage = stage;</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>  }</div>
 </div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span> </div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
+<div class="foldopen" id="foldopen00555" data-start="{" data-end="}">
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#a57437df68f1b1f96a384067b9017e0aa">  555</a></span>  <span class="keywordtype">void</span> DeviceManager::RecoveryGroup::resetErrorAtStage() {</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    errorAtStage = RecoveryStage::NO_ERROR;</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
-<div class="foldopen" id="foldopen00558" data-start="{" data-end="}">
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno"><a class="line" href="struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#a57437df68f1b1f96a384067b9017e0aa">  558</a></span>  <span class="keywordtype">void</span> DeviceManager::RecoveryGroup::resetErrorAtStage() {</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    errorAtStage = RecoveryStage::NO_ERROR;</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    app-&gt;getTestableMode().unlock(<span class="stringliteral">&quot;DeviceManager: Sync after resetting recovery group stage&quot;</span>);</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    recoveryBarrier.arrive_and_wait();</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    boost::this_thread::interruption_point();</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    app-&gt;getTestableMode().lock(<span class="stringliteral">&quot;DeviceManager: Starting recovery&quot;</span>);</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>  }</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    app-&gt;getTestableMode().unlock(<span class="stringliteral">&quot;DeviceManager: Sync after resetting recovery group stage&quot;</span>);</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    recoveryBarrier.arrive_and_wait();</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    boost::this_thread::interruption_point();</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    app-&gt;getTestableMode().lock(<span class="stringliteral">&quot;DeviceManager: Starting recovery&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  }</div>
 </div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_device_manager_8h_html"><div class="ttname"><a href="_device_manager_8h.html">DeviceManager.h</a></div></div>
 <div class="ttc" id="a_recovery_helper_8h_html"><div class="ttname"><a href="_recovery_helper_8h.html">RecoveryHelper.h</a></div></div>
 <div class="ttc" id="a_utilities_8h_html"><div class="ttname"><a href="_utilities_8h.html">Utilities.h</a></div></div>
@@ -700,7 +697,7 @@ $(document).ready(function(){initNavTree('_device_manager_8cc_source.html',''); 
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_a704b92f60328487bfe6b12ffbd6c0159"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#a704b92f60328487bfe6b12ffbd6c0159">ChimeraTK::Application::getTestableMode</a></div><div class="ttdeci">detail::TestableMode &amp; getTestableMode()</div><div class="ttdoc">Get the TestableMode control object of this application.</div><div class="ttdef"><b>Definition</b> <a href="_application_8h_source.html#l00117">Application.h:117</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_a813fdc81e6f13f90feba10915b774ba2"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#a813fdc81e6f13f90feba10915b774ba2">ChimeraTK::Application::registerThread</a></div><div class="ttdeci">static void registerThread(const std::string &amp;name)</div><div class="ttdoc">Register the thread in the application system and give it a name.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00081">Application.cc:81</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_a904a545097e84077638d246d7b83d216"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#a904a545097e84077638d246d7b83d216">ChimeraTK::Application::getDeviceManagerMap</a></div><div class="ttdeci">std::map&lt; std::string, boost::shared_ptr&lt; DeviceManager &gt; &gt; const &amp; getDeviceManagerMap()</div><div class="ttdoc">Access the device manager map.</div><div class="ttdef"><b>Definition</b> <a href="_application_8h_source.html#l00169">Application.h:169</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_aa3c1c63e078d14fb104431a15951a070"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#aa3c1c63e078d14fb104431a15951a070">ChimeraTK::Application::getInstance</a></div><div class="ttdeci">static Application &amp; getInstance()</div><div class="ttdoc">Obtain instance of the application.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00261">Application.cc:261</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_aa3c1c63e078d14fb104431a15951a070"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#aa3c1c63e078d14fb104431a15951a070">ChimeraTK::Application::getInstance</a></div><div class="ttdeci">static Application &amp; getInstance()</div><div class="ttdoc">Obtain instance of the application.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00263">Application.cc:263</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_module_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></div><div class="ttdef"><b>Definition</b> <a href="_application_module_8h_source.html#l00024">ApplicationModule.h:24</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_module_html_aa36ac737e999a242eaf8c49f92524b15"><div class="ttname"><a href="class_chimera_t_k_1_1_application_module.html#aa36ac737e999a242eaf8c49f92524b15">ChimeraTK::ApplicationModule::setCurrentVersionNumber</a></div><div class="ttdeci">void setCurrentVersionNumber(VersionNumber versionNumber) override</div><div class="ttdoc">Set the current version number.</div><div class="ttdef"><b>Definition</b> <a href="_application_module_8cc_source.html#l00091">ApplicationModule.cc:91</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_manager_html_a04c9d966edbfb5a6bd449fa48b4e2c62"><div class="ttname"><a href="class_chimera_t_k_1_1_device_manager.html#a04c9d966edbfb5a6bd449fa48b4e2c62">ChimeraTK::DeviceManager::_synchronousTransferCounter</a></div><div class="ttdeci">std::atomic&lt; int64_t &gt; _synchronousTransferCounter</div><div class="ttdef"><b>Definition</b> <a href="_device_manager_8h_source.html#l00199">DeviceManager.h:199</a></div></div>
