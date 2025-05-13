@@ -104,15 +104,16 @@ $(document).ready(function(){initNavTree('_class_factory_8cpp_source.html',''); 
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_adapter_device_class_8h.html">AdapterDeviceClass.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_attribute_mapper_8h.html">AttributeMapper.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_tango_adapter_8h.html">TangoAdapter.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Factory function required from Tango.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span> Tango::DServer::class_factory() {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">auto</span>&amp; mapper = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::TangoAdapter::getInstance</a>().<a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#a95884a71e24020f67c2b17722e89ba82">getMapper</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; className : mapper.getClasses()) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    add_class(std::make_unique&lt;TangoAdapter::AdapterDeviceClass&gt;(className).release());</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Factory function required from Tango.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> Tango::DServer::class_factory() {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">auto</span>&amp; mapper = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::TangoAdapter::getInstance</a>().<a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#a95884a71e24020f67c2b17722e89ba82">getMapper</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; className : mapper.getClasses()) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    add_class(std::make_unique&lt;TangoAdapter::AdapterDeviceClass&gt;(className).release());</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 <div class="ttc" id="a_adapter_device_class_8h_html"><div class="ttname"><a href="_adapter_device_class_8h.html">AdapterDeviceClass.h</a></div></div>
 <div class="ttc" id="a_attribute_mapper_8h_html"><div class="ttname"><a href="_attribute_mapper_8h.html">AttributeMapper.h</a></div></div>
 <div class="ttc" id="a_tango_adapter_8h_html"><div class="ttname"><a href="_tango_adapter_8h.html">TangoAdapter.h</a></div></div>

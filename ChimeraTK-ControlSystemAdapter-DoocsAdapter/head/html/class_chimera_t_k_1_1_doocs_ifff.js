@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_doocs_ifff =
 [
-    [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html#a6b4995e63f43f67f8d2ae3860561be36", null ],
-    [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html#a5a9baae013172559f0a82051b966fc42", null ],
+    [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html#ac622a8e79070e60db45063a249aa5464", null ],
+    [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html#ab3e5f51018912df0f1e1cd94e3552dce", null ],
     [ "auto_init", "class_chimera_t_k_1_1_doocs_ifff.html#a8e3c669a019252d7b66404344b6bb5e3", null ],
     [ "checkSourceConsistency", "class_chimera_t_k_1_1_doocs_ifff.html#addd93fb3d86780b87b281c71ec05f0ff", null ],
     [ "registerIfffSources", "class_chimera_t_k_1_1_doocs_ifff.html#aa4e6c45750b5590481f7674664babeb2", null ],

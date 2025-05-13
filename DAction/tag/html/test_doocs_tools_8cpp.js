@@ -6,6 +6,5 @@ var test_doocs_tools_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_tools_8cpp.html#aebeecf929ee20abfb545a16e111172d0", null ],
     [ "config_arch", "test_doocs_tools_8cpp.html#a6e80ea416baa8ae52ce042aa0cfafd52", null ],
     [ "setEguTests", "test_doocs_tools_8cpp.html#a892e18a5b7dedfe54e5b07937e9dc344", null ],
-    [ "setFiltTests", "test_doocs_tools_8cpp.html#a41bab3b069511d86fd78061c09dacb26", null ],
-    [ "archive_mode", "test_doocs_tools_8cpp.html#a957ca5634b3ab9f24c9573b2aefe2cca", null ]
+    [ "setFiltTests", "test_doocs_tools_8cpp.html#a41bab3b069511d86fd78061c09dacb26", null ]
 ];

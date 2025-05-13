@@ -104,86 +104,88 @@ $(document).ready(function(){initNavTree('server_test_call_optimise_unmapped_var
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="server_test_call_optimise_unmapped_variables_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    4</a></span><span class="preprocessor">#define BOOST_TEST_MODULE serverTestCallOptimiseUnmappedVariables</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_doocs_adapter_8h.html">DoocsAdapter.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/filesystem.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="server_test_call_optimise_unmapped_variables_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// boost unit_test needs to be included before serverBasedTestTools.h</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="server_based_test_tools_8h.html">serverBasedTestTools.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;boost/filesystem.hpp&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="server_test_call_optimise_unmapped_variables_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// boost unit_test needs to be included before serverBasedTestTools.h</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="server_based_test_tools_8h.html">serverBasedTestTools.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">using namespace </span>boost::unit_test_framework;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><a class="code hl_define" href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">using namespace </span>boost::unit_test_framework;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">   27</a></span><a class="code hl_function" href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">BOOST_AUTO_TEST_CASE</a>(testListOfUnmappedVariables) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  std::list&lt;std::string&gt; refAppModuleList = {<span class="stringliteral">&quot;CHAR&quot;</span>, <span class="stringliteral">&quot;UCHAR&quot;</span>, <span class="stringliteral">&quot;SHORT&quot;</span>, <span class="stringliteral">&quot;USHORT&quot;</span>, <span class="stringliteral">&quot;INT&quot;</span>, <span class="stringliteral">&quot;UINT&quot;</span>, <span class="stringliteral">&quot;LONG&quot;</span>, <span class="stringliteral">&quot;ULONG&quot;</span>,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="stringliteral">&quot;FLOAT&quot;</span>, <span class="stringliteral">&quot;DOUBLE&quot;</span>, <span class="stringliteral">&quot;STRING&quot;</span>, <span class="stringliteral">&quot;BOOLEAN&quot;</span>, <span class="stringliteral">&quot;VOID&quot;</span>};</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  std::list&lt;std::string&gt; refAppVarPerModuleList = {<span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;TO_DEVICE_ARRAY&quot;</span>,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="stringliteral">&quot;FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>, <span class="stringliteral">&quot;CONSTANT_ARRAY&quot;</span>};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::set&lt;std::string&gt; mappedVars = {<span class="stringliteral">&quot;/DOUBLE/TO_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;/DOUBLE/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;/DOUBLE/FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  std::set&lt;std::string&gt; expectedList;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Expected list: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; m : refAppModuleList) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : refAppVarPerModuleList) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="comment">// VOID does not have constants or arrays, so skip those in the check</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keywordflow">if</span>(m == <span class="stringliteral">&quot;VOID&quot;</span> &amp;&amp; ((v.find(<span class="stringliteral">&quot;CONSTANT&quot;</span>) != std::string::npos) || (v.find(<span class="stringliteral">&quot;ARRAY&quot;</span>) != std::string::npos))) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      std::string name = <span class="stringliteral">&quot;/&quot;</span> + m + <span class="stringliteral">&quot;/&quot;</span> + v;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keywordflow">if</span>(mappedVars.find(name) == mappedVars.end()) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        expectedList.insert(name);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  expectedList.insert(<span class="stringliteral">&quot;/IIII/FROM_DEVICE&quot;</span>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  expectedList.insert(<span class="stringliteral">&quot;/IIII/TO_DEVICE&quot;</span>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Actual list: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">auto</span>&amp; actualList = <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : actualList) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Missing entries: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::set&lt;std::string&gt; missing;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::set_difference(expectedList.begin(), expectedList.end(), actualList.begin(), actualList.end(),</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      std::inserter(missing, missing.begin()));</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : missing) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Additional entries: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  std::set&lt;std::string&gt; additional;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  std::set_difference(actualList.begin(), actualList.end(), expectedList.begin(), expectedList.end(),</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      std::inserter(additional, additional.begin()));</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : additional) {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_function" href="_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a75b773047228aadfe09b2752a0f57a48">BOOST_CHECK</a>(actualList == expectedList);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_define" href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">   29</a></span><a class="code hl_function" href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">BOOST_AUTO_TEST_CASE</a>(testListOfUnmappedVariables) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  std::list&lt;std::string&gt; refAppModuleList = {<span class="stringliteral">&quot;CHAR&quot;</span>, <span class="stringliteral">&quot;UCHAR&quot;</span>, <span class="stringliteral">&quot;SHORT&quot;</span>, <span class="stringliteral">&quot;USHORT&quot;</span>, <span class="stringliteral">&quot;INT&quot;</span>, <span class="stringliteral">&quot;UINT&quot;</span>, <span class="stringliteral">&quot;LONG&quot;</span>, <span class="stringliteral">&quot;ULONG&quot;</span>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="stringliteral">&quot;FLOAT&quot;</span>, <span class="stringliteral">&quot;DOUBLE&quot;</span>, <span class="stringliteral">&quot;STRING&quot;</span>, <span class="stringliteral">&quot;BOOLEAN&quot;</span>, <span class="stringliteral">&quot;VOID&quot;</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::list&lt;std::string&gt; refAppVarPerModuleList = {<span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;TO_DEVICE_ARRAY&quot;</span>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>, <span class="stringliteral">&quot;CONSTANT_ARRAY&quot;</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  std::set&lt;std::string&gt; mappedVars = {<span class="stringliteral">&quot;/DOUBLE/TO_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="stringliteral">&quot;/DOUBLE/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;/DOUBLE/FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  std::set&lt;std::string&gt; expectedList;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Expected list: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; m : refAppModuleList) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : refAppVarPerModuleList) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="comment">// VOID does not have constants or arrays, so skip those in the check</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordflow">if</span>(m == <span class="stringliteral">&quot;VOID&quot;</span> &amp;&amp; ((v.find(<span class="stringliteral">&quot;CONSTANT&quot;</span>) != std::string::npos) || (v.find(<span class="stringliteral">&quot;ARRAY&quot;</span>) != std::string::npos))) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      std::string name = <span class="stringliteral">&quot;/&quot;</span> + m + <span class="stringliteral">&quot;/&quot;</span> + v;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordflow">if</span>(mappedVars.find(name) == mappedVars.end()) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        expectedList.insert(name);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  expectedList.insert(<span class="stringliteral">&quot;/IIII/FROM_DEVICE&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  expectedList.insert(<span class="stringliteral">&quot;/IIII/TO_DEVICE&quot;</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Actual list: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">auto</span>&amp; actualList = <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : actualList) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Missing entries: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  std::set&lt;std::string&gt; missing;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  std::set_difference(expectedList.begin(), expectedList.end(), actualList.begin(), actualList.end(),</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      std::inserter(missing, missing.begin()));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : missing) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;=== Additional entries: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  std::set&lt;std::string&gt; additional;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  std::set_difference(actualList.begin(), actualList.end(), expectedList.begin(), expectedList.end(),</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      std::inserter(additional, additional.begin()));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; name : additional) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::cout &lt;&lt; name &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_function" href="_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a75b773047228aadfe09b2752a0f57a48">BOOST_CHECK</a>(actualList == expectedList);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 </div>
 <div class="ttc" id="a_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp_html_a75b773047228aadfe09b2752a0f57a48"><div class="ttname"><a href="_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a75b773047228aadfe09b2752a0f57a48">BOOST_CHECK</a></div><div class="ttdeci">BOOST_CHECK(_get_cb_counter1==0)</div></div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_a1fee8002aaa2abcd5a1b23996c3d979e"><div class="ttname"><a href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00016">serverBasedTestTools.h:16</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_a1fee8002aaa2abcd5a1b23996c3d979e"><div class="ttname"><a href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00017">serverBasedTestTools.h:17</a></div></div>
 <div class="ttc" id="aserver_test_call_optimise_unmapped_variables_8cpp_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="server_test_call_optimise_unmapped_variables_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div></div>
-<div class="ttc" id="aserver_test_call_optimise_unmapped_variables_8cpp_html_acd5685578794fb4c4278e3de076de70e"><div class="ttname"><a href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE BOOST_AUTO_TEST_CASE(testListOfUnmappedVariables)</div><div class="ttdef"><b>Definition</b> <a href="server_test_call_optimise_unmapped_variables_8cpp_source.html#l00027">serverTestCallOptimiseUnmappedVariables.cpp:27</a></div></div>
-<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00081">serverTestArrayPersistence.cpp:81</a></div></div>
+<div class="ttc" id="aserver_test_call_optimise_unmapped_variables_8cpp_html_acd5685578794fb4c4278e3de076de70e"><div class="ttname"><a href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE BOOST_AUTO_TEST_CASE(testListOfUnmappedVariables)</div><div class="ttdef"><b>Definition</b> <a href="server_test_call_optimise_unmapped_variables_8cpp_source.html#l00029">serverTestCallOptimiseUnmappedVariables.cpp:29</a></div></div>
+<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00082">serverTestArrayPersistence.cpp:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

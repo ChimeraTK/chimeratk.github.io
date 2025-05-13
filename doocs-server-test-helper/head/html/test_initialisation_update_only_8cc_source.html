@@ -122,59 +122,55 @@ $(document).ready(function(){initNavTree('test_initialisation_update_only_8cc_so
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  std::atomic&lt;bool&gt; flag{};</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// check if nanosleep with different time than the magic number works</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">struct </span>timespec nonMagicSleepTime {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    0, 10</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  };</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  nanosleep(&amp;nonMagicSleepTime, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="comment">// allow the update thread to enter nanosleep</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_function" href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">allowUpdate</a>();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="comment">// test a full update cycle</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  flag = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::thread t1([&amp;flag] {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;DoocsServerTestHelper::runUpdate() -&gt;&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5">DoocsServerTestHelper::runUpdate</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;- DoocsServerTestHelper::runUpdate()&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    flag = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  });</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  usleep(100000);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  BOOST_CHECK(flag == <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_function" href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">allowUpdate</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_define" href="test_initialisation_update_only_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(flag == <span class="keyword">true</span>, 5000);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  t1.join();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_function" href="class_helper_test.html#ab35c863a8c112a9c5adad27c1332ad25">waitUpdate</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="comment">// test a second full update cycle</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  flag = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  std::thread t2([&amp;flag] {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;DoocsServerTestHelper::runUpdate() -&gt;&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5">DoocsServerTestHelper::runUpdate</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;- DoocsServerTestHelper::runUpdate()&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    flag = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  });</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  usleep(100000);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  BOOST_CHECK(flag == <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_function" href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">allowUpdate</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_define" href="test_initialisation_update_only_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(flag == <span class="keyword">true</span>, 5000);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  t2.join();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_function" href="class_helper_test.html#ab35c863a8c112a9c5adad27c1332ad25">waitUpdate</a>();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// check if nanosleep with different time than the magic number works</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">struct </span>timespec nonMagicSleepTime2 {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    1, 0</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  };</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  nanosleep(&amp;nonMagicSleepTime2, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">struct </span>timespec nonMagicSleepTime{0, 10};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  nanosleep(&amp;nonMagicSleepTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="comment">// allow the update thread to enter nanosleep</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_function" href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">allowUpdate</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="comment">// test a full update cycle</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  flag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  std::thread t1([&amp;flag] {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;DoocsServerTestHelper::runUpdate() -&gt;&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5">DoocsServerTestHelper::runUpdate</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;- DoocsServerTestHelper::runUpdate()&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    flag = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  });</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  usleep(100000);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  BOOST_CHECK(flag == <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_function" href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">allowUpdate</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_define" href="test_initialisation_update_only_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(flag == <span class="keyword">true</span>, 5000);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  t1.join();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_function" href="class_helper_test.html#ab35c863a8c112a9c5adad27c1332ad25">waitUpdate</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// test a second full update cycle</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  flag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  std::thread t2([&amp;flag] {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;DoocsServerTestHelper::runUpdate() -&gt;&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5">DoocsServerTestHelper::runUpdate</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;- DoocsServerTestHelper::runUpdate()&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    flag = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  });</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  usleep(100000);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  BOOST_CHECK(flag == <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_function" href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">allowUpdate</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_define" href="test_initialisation_update_only_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(flag == <span class="keyword">true</span>, 5000);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  t2.join();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_function" href="class_helper_test.html#ab35c863a8c112a9c5adad27c1332ad25">waitUpdate</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// check if nanosleep with different time than the magic number works</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">struct </span>timespec nonMagicSleepTime2{1, 0};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  nanosleep(&amp;nonMagicSleepTime2, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="test_initialisation_update_only_8cc.html#a90d20ff1ccec3737a894e76e34371fef">   67</a></span><a class="code hl_function" href="test_initialisation_update_only_8cc.html#a90d20ff1ccec3737a894e76e34371fef">BOOST_AUTO_TEST_CASE</a>(testUpdateOnly) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_class" href="class_helper_test.html">HelperTest</a> test;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  test.<a class="code hl_function" href="class_helper_test.html#a736c2f4eacb731037f8688ec41dfffd7">testRoutine</a>();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="test_initialisation_update_only_8cc.html#a90d20ff1ccec3737a894e76e34371fef">   63</a></span><a class="code hl_function" href="test_initialisation_update_only_8cc.html#a90d20ff1ccec3737a894e76e34371fef">BOOST_AUTO_TEST_CASE</a>(testUpdateOnly) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="class_helper_test.html">HelperTest</a> test;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  test.<a class="code hl_function" href="class_helper_test.html#a736c2f4eacb731037f8688ec41dfffd7">testRoutine</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 </div>
-<div class="ttc" id="aclass_doocs_server_test_helper_html_aa36f5adadfc0edbf3de9907e3ad54ed5"><div class="ttname"><a href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5">DoocsServerTestHelper::runUpdate</a></div><div class="ttdeci">static void runUpdate()</div><div class="ttdoc">trigger doocs to run update() in all locations and wait until the processing is finished</div><div class="ttdef"><b>Definition</b> <a href="doocs_server_test_helper_8cc_source.html#l00118">doocsServerTestHelper.cc:118</a></div></div>
+<div class="ttc" id="aclass_doocs_server_test_helper_html_aa36f5adadfc0edbf3de9907e3ad54ed5"><div class="ttname"><a href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5">DoocsServerTestHelper::runUpdate</a></div><div class="ttdeci">static void runUpdate()</div><div class="ttdoc">trigger doocs to run update() in all locations and wait until the processing is finished</div><div class="ttdef"><b>Definition</b> <a href="doocs_server_test_helper_8cc_source.html#l00119">doocsServerTestHelper.cc:119</a></div></div>
 <div class="ttc" id="aclass_helper_test_html"><div class="ttname"><a href="class_helper_test.html">HelperTest</a></div><div class="ttdef"><b>Definition</b> <a href="test_doocs_server_test_helper__skeleton_8h_source.html#l00024">testDoocsServerTestHelper_skeleton.h:24</a></div></div>
 <div class="ttc" id="aclass_helper_test_html_a1e7bb479ce05158a06a94773c296917c"><div class="ttname"><a href="class_helper_test.html#a1e7bb479ce05158a06a94773c296917c">HelperTest::allowUpdate</a></div><div class="ttdeci">void allowUpdate()</div><div class="ttdef"><b>Definition</b> <a href="test_doocs_server_test_helper__skeleton_8h_source.html#l00168">testDoocsServerTestHelper_skeleton.h:168</a></div></div>
 <div class="ttc" id="aclass_helper_test_html_a3b22a994ff78e5eb8067fed3b5dca026"><div class="ttname"><a href="class_helper_test.html#a3b22a994ff78e5eb8067fed3b5dca026">HelperTest::testRoutineBody</a></div><div class="ttdeci">void testRoutineBody()</div><div class="ttdef"><b>Definition</b> <a href="test_initialisation_update_only_8cc_source.html#l00018">testInitialisationUpdateOnly.cc:18</a></div></div>
@@ -182,7 +178,7 @@ $(document).ready(function(){initNavTree('test_initialisation_update_only_8cc_so
 <div class="ttc" id="aclass_helper_test_html_ab35c863a8c112a9c5adad27c1332ad25"><div class="ttname"><a href="class_helper_test.html#ab35c863a8c112a9c5adad27c1332ad25">HelperTest::waitUpdate</a></div><div class="ttdeci">void waitUpdate()</div><div class="ttdef"><b>Definition</b> <a href="test_doocs_server_test_helper__skeleton_8h_source.html#l00193">testDoocsServerTestHelper_skeleton.h:193</a></div></div>
 <div class="ttc" id="atest_doocs_server_test_helper__skeleton_8h_html"><div class="ttname"><a href="test_doocs_server_test_helper__skeleton_8h.html">testDoocsServerTestHelper_skeleton.h</a></div></div>
 <div class="ttc" id="atest_initialisation_update_only_8cc_html_a17030ac7f00713a62e05ab6c35cb710e"><div class="ttname"><a href="test_initialisation_update_only_8cc.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a></div><div class="ttdeci">#define CHECK_TIMEOUT(condition, maxMilliseconds)</div><div class="ttdef"><b>Definition</b> <a href="test_initialisation_update_only_8cc_source.html#l00007">testInitialisationUpdateOnly.cc:7</a></div></div>
-<div class="ttc" id="atest_initialisation_update_only_8cc_html_a90d20ff1ccec3737a894e76e34371fef"><div class="ttname"><a href="test_initialisation_update_only_8cc.html#a90d20ff1ccec3737a894e76e34371fef">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testUpdateOnly)</div><div class="ttdef"><b>Definition</b> <a href="test_initialisation_update_only_8cc_source.html#l00067">testInitialisationUpdateOnly.cc:67</a></div></div>
+<div class="ttc" id="atest_initialisation_update_only_8cc_html_a90d20ff1ccec3737a894e76e34371fef"><div class="ttname"><a href="test_initialisation_update_only_8cc.html#a90d20ff1ccec3737a894e76e34371fef">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testUpdateOnly)</div><div class="ttdef"><b>Definition</b> <a href="test_initialisation_update_only_8cc_source.html#l00063">testInitialisationUpdateOnly.cc:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -9,7 +9,7 @@ var searchData=
   ['registerifffsources_6',['registerIfffSources',['../class_chimera_t_k_1_1_doocs_ifff.html#aa4e6c45750b5590481f7674664babeb2',1,'ChimeraTK::DoocsIfff']]],
   ['registeriiiisources_7',['registerIiiiSources',['../class_chimera_t_k_1_1_doocs_iiii.html#a8f21a3a46d415789cf9f90db081fdb2c',1,'ChimeraTK::DoocsIiii']]],
   ['registerprocessvariablesindoocs_8',['registerProcessVariablesInDoocs',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae6ea446f82465cd12cce0232017f9f7c',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['registervariable_9',['registerVariable',['../class_chimera_t_k_1_1_property_base.html#aeff70d958167694a5f54f2495323c422',1,'ChimeraTK::PropertyBase']]],
+  ['registervariable_9',['registervariable',['../class_chimera_t_k_1_1_property_base.html#a3cc9d87cd04741a5a5ff39301b3043b1',1,'ChimeraTK::PropertyBase::registerVariable(TransferElementAbstractor &amp;var)'],['../class_chimera_t_k_1_1_property_base.html#ae3c942ae0562ffc7ebecb6429c656e71',1,'ChimeraTK::PropertyBase::registerVariable(boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;var)']]],
   ['reporting_10',['Error reporting',['../index.html#set_error',1,'']]],
   ['res1_11',['res1',['../_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a3a885966d0780b449af5eacf4e8d20af',1,'DOOCSProcessVariableAdapter_testCases_numericals.hpp']]],
   ['res2_12',['res2',['../_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a404b15c3a6446483b06ed30dd38c0c4b',1,'DOOCSProcessVariableAdapter_testCases_numericals.hpp']]],
