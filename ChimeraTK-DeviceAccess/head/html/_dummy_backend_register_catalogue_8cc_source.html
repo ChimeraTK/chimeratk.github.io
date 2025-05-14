@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('_dummy_backend_register_catalogue_8cc_
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::string DUMMY_INTERRUPT_REGISTER_NAME{<span class="stringliteral">&quot;^/DUMMY_INTERRUPT_([0-9]+)$&quot;</span>};</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> std::string regPathNameStr{registerPathName};</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> std::regex dummyInterruptRegex{DUMMY_INTERRUPT_REGISTER_NAME};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> <span class="keyword">static</span> std::regex dummyInterruptRegex{DUMMY_INTERRUPT_REGISTER_NAME};</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::smatch match;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::regex_search(regPathNameStr, match, dummyInterruptRegex);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
