@@ -739,7 +739,7 @@ $(document).ready(function(){initNavTree('test_subdevice_backend_8cpp_source.htm
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  BOOST_CHECK_THROW(acc1.read(), <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>);</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5, 6};</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  accS = 1;</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  accS = 0;</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  accS.write();</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  done = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  t = std::thread([&amp;] {</div>
@@ -751,109 +751,108 @@ $(document).ready(function(){initNavTree('test_subdevice_backend_8cpp_source.htm
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    acc3.write();</div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    done = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  });</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  usleep(10000);</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>  BOOST_CHECK(done == <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>  <span class="keywordtype">int</span> countStatusResets = 0;</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  <span class="comment">// the dummyForAreaHandshake backend which we use for this test does not set back the status register. we do it</span></div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  <span class="comment">// manually from the test, and count how often we need do so Like this we can check that the accessor waits on</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  <span class="comment">// status==0 _each_ time before writing, in particular each array entry counts.</span></div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>  <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    <span class="comment">// wait for status=busy</span></div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      accS.read();</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      usleep(20000);</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    } <span class="keywordflow">while</span>(accS == 0 &amp;&amp; !done);</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordflow">if</span>(done) <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    countStatusResets++;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    accS = 0;</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    accS.write();</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  }</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  BOOST_TEST(countStatusResets == 8);</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  t.join();</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  accArea.read();</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  BOOST_CHECK(accArea[0] == 1897);</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  BOOST_CHECK(accArea[1] == 1897 * 4);</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  BOOST_CHECK(accArea[2] == 65536 * vec[0]);</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  BOOST_CHECK(accArea[3] == 65536 * vec[1]);</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>}</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  BOOST_CHECK(done == <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>  <span class="keywordtype">int</span> countStatusResets = 0;</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>  <span class="comment">// the dummyForAreaHandshake backend which we use for this test does not set back the status register. we do it</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  <span class="comment">// manually from the test, and count how often we need do so Like this we can check that the accessor waits on</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  <span class="comment">// status==0 _each_ time before writing, in particular each array entry counts.</span></div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="comment">// wait for status=busy</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>      accS.read();</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      usleep(20000);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    } <span class="keywordflow">while</span>(accS == 0 &amp;&amp; !done);</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keywordflow">if</span>(done) <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    countStatusResets++;</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    accS = 0;</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    accS.write();</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  }</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  BOOST_TEST(countStatusResets == 8);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  t.join();</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  accArea.read();</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  BOOST_CHECK(accArea[0] == 1897);</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  BOOST_CHECK(accArea[1] == 1897 * 4);</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  BOOST_CHECK(accArea[2] == 65536 * vec[0]);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  BOOST_CHECK(accArea[3] == 65536 * vec[1]);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>}</div>
 </div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
-<div class="foldopen" id="foldopen00653" data-start="{" data-end="}">
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno"><a class="line" href="test_subdevice_backend_8cpp.html#adeedfed3b90cc29a83a39ea1ef8780f7">  653</a></span><a class="code hl_function" href="test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a>(test2regsScalar) {</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <a class="code hl_function" href="namespace_chimera_t_k.html#ac081e51ebc9ef4fe64b469290d39b7a2">setDMapFilePath</a>(<span class="stringliteral">&quot;subdeviceTest.dmap&quot;</span>);</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> dev;</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;SUBDEV3&quot;</span>);</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> target;</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;TARGET1&quot;</span>);</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>  <span class="keyword">auto</span> acc2 = dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;APP.0.MY_REGISTER2&quot;</span>);</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>  <span class="keyword">auto</span> accA = target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;int32_t&gt;(<span class="stringliteral">&quot;APP.1.ADDRESS&quot;</span>);</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>  <span class="keyword">auto</span> accD = target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;int32_t&gt;(<span class="stringliteral">&quot;APP.1.DATA&quot;</span>);</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  BOOST_CHECK_THROW(acc2.read(), <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>);</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  accA = 42;</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  accA.write();</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>  <span class="keyword">auto</span> start = std::chrono::steady_clock::now();</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  acc2 = 666;</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>  acc2.write();</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  <span class="keyword">auto</span> <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b">stop</a> = std::chrono::steady_clock::now();</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  std::chrono::duration&lt;double&gt; diff = <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b">stop</a> - start;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  BOOST_CHECK(diff.count() &gt;= 1.0); <span class="comment">// sleep time is set to 1 second</span></div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  accA.read();</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  BOOST_CHECK(accA == 4);</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>  accD.read();</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(accD), 666 * 4);</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>}</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
+<div class="foldopen" id="foldopen00652" data-start="{" data-end="}">
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="test_subdevice_backend_8cpp.html#adeedfed3b90cc29a83a39ea1ef8780f7">  652</a></span><a class="code hl_function" href="test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a>(test2regsScalar) {</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>  <a class="code hl_function" href="namespace_chimera_t_k.html#ac081e51ebc9ef4fe64b469290d39b7a2">setDMapFilePath</a>(<span class="stringliteral">&quot;subdeviceTest.dmap&quot;</span>);</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> dev;</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;SUBDEV3&quot;</span>);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> target;</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;TARGET1&quot;</span>);</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>  <span class="keyword">auto</span> acc2 = dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;APP.0.MY_REGISTER2&quot;</span>);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>  <span class="keyword">auto</span> accA = target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;int32_t&gt;(<span class="stringliteral">&quot;APP.1.ADDRESS&quot;</span>);</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>  <span class="keyword">auto</span> accD = target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;int32_t&gt;(<span class="stringliteral">&quot;APP.1.DATA&quot;</span>);</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>  BOOST_CHECK_THROW(acc2.read(), <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>);</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  accA = 42;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  accA.write();</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  <span class="keyword">auto</span> start = std::chrono::steady_clock::now();</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>  acc2 = 666;</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  acc2.write();</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>  <span class="keyword">auto</span> <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b">stop</a> = std::chrono::steady_clock::now();</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  std::chrono::duration&lt;double&gt; diff = <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b">stop</a> - start;</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  BOOST_CHECK(diff.count() &gt;= 1.0); <span class="comment">// sleep time is set to 1 second</span></div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>  accA.read();</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  BOOST_CHECK(accA == 4);</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  accD.read();</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>int32_t<span class="keyword">&gt;</span>(accD), 666 * 4);</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>}</div>
 </div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span> </div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
-<div class="foldopen" id="foldopen00686" data-start="{" data-end="}">
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno"><a class="line" href="test_subdevice_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd">  686</a></span><a class="code hl_function" href="test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a>(testIsFunctional) {</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>  <a class="code hl_function" href="namespace_chimera_t_k.html#ac081e51ebc9ef4fe64b469290d39b7a2">setDMapFilePath</a>(<span class="stringliteral">&quot;subdeviceTest.dmap&quot;</span>);</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> dev;</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;SUBDEV1&quot;</span>);</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> target;</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>  target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;TARGET1&quot;</span>);</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>  BOOST_CHECK(dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687">setException</a>(<span class="stringliteral">&quot;Test Exception&quot;</span>);</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>  <span class="comment">// Device should not be functional anymore</span></div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  BOOST_CHECK(!dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>();</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  BOOST_CHECK(dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  BOOST_CHECK(!dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>}</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
+<div class="foldopen" id="foldopen00685" data-start="{" data-end="}">
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno"><a class="line" href="test_subdevice_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd">  685</a></span><a class="code hl_function" href="test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a>(testIsFunctional) {</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>  <a class="code hl_function" href="namespace_chimera_t_k.html#ac081e51ebc9ef4fe64b469290d39b7a2">setDMapFilePath</a>(<span class="stringliteral">&quot;subdeviceTest.dmap&quot;</span>);</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> dev;</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;SUBDEV1&quot;</span>);</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">Device</a> target;</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>  target.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;TARGET1&quot;</span>);</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>  BOOST_CHECK(dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687">setException</a>(<span class="stringliteral">&quot;Test Exception&quot;</span>);</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>  <span class="comment">// Device should not be functional anymore</span></div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>  BOOST_CHECK(!dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>();</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>  BOOST_CHECK(dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d">close</a>();</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  BOOST_CHECK(!dev.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780">isFunctional</a>());</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>}</div>
 </div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span> </div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
-<div class="foldopen" id="foldopen00705" data-start="{" data-end="}">
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno"><a class="line" href="test_subdevice_backend_8cpp.html#a6e621118aa53ff203987691a14aaee85">  705</a></span><a class="code hl_function" href="test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a>(TestInvolvedBackendIDs) {</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>  <a class="code hl_function" href="namespace_chimera_t_k.html#ac081e51ebc9ef4fe64b469290d39b7a2">setDMapFilePath</a>(<span class="stringliteral">&quot;subdeviceTest.dmap&quot;</span>);</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a> <a class="code hl_variable" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>(<span class="stringliteral">&quot;SUBDEV1&quot;</span>);</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a> target1(<span class="stringliteral">&quot;TARGET1&quot;</span>);</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  <span class="keyword">auto</span> deviceIDs = <a class="code hl_variable" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a09371dbc56ea330a47f74418b6796fb1">getInvolvedBackendIDs</a>();</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>  BOOST_TEST(deviceIDs.size() == 2);</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  BOOST_TEST(deviceIDs.contains(target1.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a>()-&gt;getBackendID()));</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  BOOST_TEST(deviceIDs.contains(<a class="code hl_variable" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a>()-&gt;getBackendID()));</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>}</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="foldopen" id="foldopen00704" data-start="{" data-end="}">
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno"><a class="line" href="test_subdevice_backend_8cpp.html#a6e621118aa53ff203987691a14aaee85">  704</a></span><a class="code hl_function" href="test_subdevice_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a>(TestInvolvedBackendIDs) {</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>  <a class="code hl_function" href="namespace_chimera_t_k.html#ac081e51ebc9ef4fe64b469290d39b7a2">setDMapFilePath</a>(<span class="stringliteral">&quot;subdeviceTest.dmap&quot;</span>);</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a> <a class="code hl_variable" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>(<span class="stringliteral">&quot;SUBDEV1&quot;</span>);</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a> target1(<span class="stringliteral">&quot;TARGET1&quot;</span>);</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <span class="keyword">auto</span> deviceIDs = <a class="code hl_variable" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a09371dbc56ea330a47f74418b6796fb1">getInvolvedBackendIDs</a>();</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  BOOST_TEST(deviceIDs.size() == 2);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>  BOOST_TEST(deviceIDs.contains(target1.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a>()-&gt;getBackendID()));</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  BOOST_TEST(deviceIDs.contains(<a class="code hl_variable" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8">getBackend</a>()-&gt;getBackendID()));</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>}</div>
 </div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span> </div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span> </div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_html"><div class="ttname"><a href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a></div><div class="ttdoc">Class allows to read/write registers from device.</div><div class="ttdef"><b>Definition</b> <a href="_device_8h_source.html#l00039">Device.h:39</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_html_a0595273d58b7ae326ca7f8def4f8a6d3"><div class="ttname"><a href="class_chimera_t_k_1_1_device.html#a0595273d58b7ae326ca7f8def4f8a6d3">ChimeraTK::Device::isOpened</a></div><div class="ttdeci">bool isOpened() const</div><div class="ttdoc">Check if the device is currently opened.</div><div class="ttdef"><b>Definition</b> <a href="_device_8cc_source.html#l00073">Device.cc:73</a></div></div>
