@@ -14,7 +14,6 @@ var test_unified_backend_8cpp =
     [ "RegSomeIntArray", "struct_reg_some_int_array.html", "struct_reg_some_int_array" ],
     [ "RegSomeStringArray", "struct_reg_some_string_array.html", "struct_reg_some_string_array" ],
     [ "RegSomeBooleanArray", "struct_reg_some_boolean_array.html", "struct_reg_some_boolean_array" ],
-    [ "BOOST_NO_EXCEPTIONS", "test_unified_backend_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_DYN_LINK", "test_unified_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_unified_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_unified_backend_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ],

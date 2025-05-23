@@ -1,6 +1,6 @@
 var struct_reg_some_int =
 [
-    [ "minimumUserType", "struct_reg_some_int.html#abb10eb3bba0d1394424e3a17285b3237", null ],
+    [ "minimumUserType", "struct_reg_some_int.html#a756d8a6a233158da1838b1c6574aa32c", null ],
     [ "getValue", "struct_reg_some_int.html#a1b0b17e20eb28a17be94932a5d13dbb4", null ],
     [ "path", "struct_reg_some_int.html#a710a110ed51a6924f5b4d8e5f5042f72", null ],
     [ "readPath", "struct_reg_some_int.html#a913c201ebc20e72b23227c4b7dd269d1", null ],
