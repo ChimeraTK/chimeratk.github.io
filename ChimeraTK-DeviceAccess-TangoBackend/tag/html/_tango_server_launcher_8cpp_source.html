@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess-TangoBackend<span id="projectnumber">&#160;00.01.01</span>
+   <div id="projectname">ChimeraTK-DeviceAccess-TangoBackend<span id="projectnumber">&#160;00.01.02</span>
    </div>
   </td>
  </tr>
@@ -174,139 +174,143 @@ $(document).ready(function(){initNavTree('_tango_server_launcher_8cpp_source.htm
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">auto</span> url = <a class="code hl_function" href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">getClientUrl</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  url.replace(url.find(<span class="stringliteral">&quot;%23&quot;</span>), 3, <span class="stringliteral">&quot;#&quot;</span>);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      std::this_thread::sleep_for(std::chrono::milliseconds(500));</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <a class="code hl_variable" href="struct_tango_server_launcher.html#acbbb3cff67d4518f66ac9978e097456f">remoteProxy</a> = std::make_shared&lt;Tango::DeviceProxy&gt;(url);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">catch</span>(CORBA::Exception&amp; ex) {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      Tango::Except::print_exception(ex);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      assert(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">auto</span> <a class="code hl_function" href="struct_tango_server_launcher.html#a922ec7e715ee86530cbb1d3a4af1b033">start</a> = std::chrono::steady_clock::now();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      std::this_thread::sleep_for(std::chrono::milliseconds(500));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <a class="code hl_variable" href="struct_tango_server_launcher.html#acbbb3cff67d4518f66ac9978e097456f">remoteProxy</a> = std::make_shared&lt;Tango::DeviceProxy&gt;(url);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <a class="code hl_variable" href="struct_tango_server_launcher.html#acbbb3cff67d4518f66ac9978e097456f">remoteProxy</a>-&gt;read_attribute(<span class="stringliteral">&quot;State&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">catch</span>(CORBA::Exception&amp; ex) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> now = std::chrono::steady_clock::now(); now &gt; <a class="code hl_function" href="struct_tango_server_launcher.html#a922ec7e715ee86530cbb1d3a4af1b033">start</a> + std::chrono::seconds(10)) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        Tango::Except::print_exception(ex);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        assert(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a84e886089382d4418bd1fa90ff7498d1">   87</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="struct_tango_server_launcher.html#a84e886089382d4418bd1fa90ff7498d1">TangoServerLauncher::stop</a>() {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#acbbb3cff67d4518f66ac9978e097456f">remoteProxy</a>.reset();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">auto</span> remotePid = <a class="code hl_variable" href="struct_tango_server_launcher.html#a027a52430736cb1905c0f73622aab1e2">tangoServerProcess</a>.id();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  kill(remotePid, SIGINT);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a027a52430736cb1905c0f73622aab1e2">tangoServerProcess</a>.wait();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a84e886089382d4418bd1fa90ff7498d1">   91</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="struct_tango_server_launcher.html#a84e886089382d4418bd1fa90ff7498d1">TangoServerLauncher::stop</a>() {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#acbbb3cff67d4518f66ac9978e097456f">remoteProxy</a>.reset();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keyword">auto</span> remotePid = <a class="code hl_variable" href="struct_tango_server_launcher.html#a027a52430736cb1905c0f73622aab1e2">tangoServerProcess</a>.id();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  kill(remotePid, SIGINT);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a027a52430736cb1905c0f73622aab1e2">tangoServerProcess</a>.wait();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">   97</a></span>std::string <a class="code hl_function" href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">TangoServerLauncher::port</a>() {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">static</span> std::string corbaPort;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">if</span>(corbaPort.empty()) {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    std::random_device rd;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::uniform_int_distribution&lt;int&gt; dist(10000, 50000);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    corbaPort = std::to_string(dist(rd));</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">return</span> corbaPort;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">  101</a></span>std::string <a class="code hl_function" href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">TangoServerLauncher::port</a>() {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">static</span> std::string corbaPort;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordflow">if</span>(corbaPort.empty()) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    std::random_device rd;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::uniform_int_distribution&lt;int&gt; dist(10000, 50000);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    corbaPort = std::to_string(dist(rd));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordflow">return</span> corbaPort;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
 </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">  110</a></span>std::string <a class="code hl_function" href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">TangoServerLauncher::getClientUrl</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;tango://localhost:&quot;</span> + <a class="code hl_function" href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">port</a>() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">device</a>() + <span class="stringliteral">&quot;%23dbase=no&quot;</span>;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
-</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">  116</a></span><span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">TangoServerLauncher::device</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="struct_tango_server_launcher.html#a64c79744d0d00e91462f79b72d6b9ded">deviceString</a>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">  114</a></span>std::string <a class="code hl_function" href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">TangoServerLauncher::getClientUrl</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;tango://localhost:&quot;</span> + <a class="code hl_function" href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">port</a>() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">device</a>() + <span class="stringliteral">&quot;%23dbase=no&quot;</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a31ba06cc898e202a47b7fb4d998d8d57">  122</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#a31ba06cc898e202a47b7fb4d998d8d57">TangoServerLauncher::setCreateOfflineDatabase</a>(<span class="keywordtype">bool</span> create) {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#afb80dae086734efcdd58316095816990">createOfflineDatabase</a> = create;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">  120</a></span><span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">TangoServerLauncher::device</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="struct_tango_server_launcher.html#a64c79744d0d00e91462f79b72d6b9ded">deviceString</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
 </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#ac39ba89a5c17e81e1885da514a1c4c2f">  130</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#ac39ba89a5c17e81e1885da514a1c4c2f">TangoServerLauncher::setKeepOfflineDatabase</a>(<span class="keywordtype">bool</span> keep) {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a536dcf4c428315d7d4ffe2a776a114cf">keepOfflineDatabase</a> = keep;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a31ba06cc898e202a47b7fb4d998d8d57">  126</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#a31ba06cc898e202a47b7fb4d998d8d57">TangoServerLauncher::setCreateOfflineDatabase</a>(<span class="keywordtype">bool</span> create) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#afb80dae086734efcdd58316095816990">createOfflineDatabase</a> = create;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
 </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#afe2e76235638a27fba8dfebd07a29f12">  138</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#afe2e76235638a27fba8dfebd07a29f12">TangoServerLauncher::setOfflineDatabase</a>(<span class="keyword">const</span> std::string&amp; basePath) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a7ebe53e448c36862959549563745aca8">offlineDatabase</a> = basePath + <span class="stringliteral">&quot;.db&quot;</span>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordflow">if</span>(<a class="code hl_variable" href="struct_tango_server_launcher.html#afb80dae086734efcdd58316095816990">createOfflineDatabase</a>) {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keyword">auto</span> sourceTemplate = basePath + <span class="stringliteral">&quot;_template.db&quot;</span>;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>      std::filesystem::copy_file(sourceTemplate, <a class="code hl_variable" href="struct_tango_server_launcher.html#a7ebe53e448c36862959549563745aca8">offlineDatabase</a>, std::filesystem::copy_options::overwrite_existing);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">catch</span>(std::runtime_error&amp; err) {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      std::cerr &lt;&lt; err.what() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="keywordflow">throw</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#ac39ba89a5c17e81e1885da514a1c4c2f">  134</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#ac39ba89a5c17e81e1885da514a1c4c2f">TangoServerLauncher::setKeepOfflineDatabase</a>(<span class="keywordtype">bool</span> keep) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a536dcf4c428315d7d4ffe2a776a114cf">keepOfflineDatabase</a> = keep;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#afe2e76235638a27fba8dfebd07a29f12">  142</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#afe2e76235638a27fba8dfebd07a29f12">TangoServerLauncher::setOfflineDatabase</a>(<span class="keyword">const</span> std::string&amp; basePath) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a7ebe53e448c36862959549563745aca8">offlineDatabase</a> = basePath + <span class="stringliteral">&quot;.db&quot;</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordflow">if</span>(<a class="code hl_variable" href="struct_tango_server_launcher.html#afb80dae086734efcdd58316095816990">createOfflineDatabase</a>) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">auto</span> sourceTemplate = basePath + <span class="stringliteral">&quot;_template.db&quot;</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      std::filesystem::copy_file(sourceTemplate, <a class="code hl_variable" href="struct_tango_server_launcher.html#a7ebe53e448c36862959549563745aca8">offlineDatabase</a>, std::filesystem::copy_options::overwrite_existing);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  }</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">catch</span>(std::runtime_error&amp; err) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      std::cerr &lt;&lt; err.what() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="keywordflow">throw</span>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a838bfdbae0331a55830c34f1187693b4">  156</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#a838bfdbae0331a55830c34f1187693b4">TangoServerLauncher::overrideNames</a>(<span class="keyword">const</span> std::string&amp; newNames) {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a131bf71fcdb9965f950c7823b5232314">testName</a> = newNames;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="struct_tango_server_launcher.html#a838bfdbae0331a55830c34f1187693b4">  160</a></span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>&amp; <a class="code hl_function" href="struct_tango_server_launcher.html#a838bfdbae0331a55830c34f1187693b4">TangoServerLauncher::overrideNames</a>(<span class="keyword">const</span> std::string&amp; newNames) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <a class="code hl_variable" href="struct_tango_server_launcher.html#a131bf71fcdb9965f950c7823b5232314">testName</a> = newNames;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}</div>
 </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>* <a class="code hl_variable" href="struct_tango_server_launcher.html#a9a4855324d47b22c98759d47e3dd4783">TangoServerLauncher::self</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><a class="code hl_struct" href="struct_tango_server_launcher.html">TangoServerLauncher</a>* <a class="code hl_variable" href="struct_tango_server_launcher.html#a9a4855324d47b22c98759d47e3dd4783">TangoServerLauncher::self</a>{<span class="keyword">nullptr</span>};</div>
 <div class="ttc" id="a_tango_server_launcher_8h_html"><div class="ttname"><a href="_tango_server_launcher_8h.html">TangoServerLauncher.h</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html"><div class="ttname"><a href="struct_tango_server_launcher.html">TangoServerLauncher</a></div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00012">TangoServerLauncher.h:12</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a027a52430736cb1905c0f73622aab1e2"><div class="ttname"><a href="struct_tango_server_launcher.html#a027a52430736cb1905c0f73622aab1e2">TangoServerLauncher::tangoServerProcess</a></div><div class="ttdeci">boost::process::child tangoServerProcess</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00066">TangoServerLauncher.h:66</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a05e55695c22b1a976f8750d61823b98d"><div class="ttname"><a href="struct_tango_server_launcher.html#a05e55695c22b1a976f8750d61823b98d">TangoServerLauncher::TangoServerLauncher</a></div><div class="ttdeci">TangoServerLauncher(std::string setTestName=&quot;Unified&quot;, bool setVerbose=false)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00012">TangoServerLauncher.cpp:12</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a131bf71fcdb9965f950c7823b5232314"><div class="ttname"><a href="struct_tango_server_launcher.html#a131bf71fcdb9965f950c7823b5232314">TangoServerLauncher::testName</a></div><div class="ttdeci">std::string testName</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00059">TangoServerLauncher.h:59</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a1c0a09a69491ddc717f5e79d782bcf83"><div class="ttname"><a href="struct_tango_server_launcher.html#a1c0a09a69491ddc717f5e79d782bcf83">TangoServerLauncher::argv</a></div><div class="ttdeci">std::vector&lt; std::string &gt; argv</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00064">TangoServerLauncher.h:64</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_a253a7a148e861e01e14759b31693451c"><div class="ttname"><a href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">TangoServerLauncher::getClientUrl</a></div><div class="ttdeci">std::string getClientUrl() const</div><div class="ttdoc">An URL that can be used by the Tango::DeviceProxy to connect to this server.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00110">TangoServerLauncher.cpp:110</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_a2fdcb2aeefbc145842820dfc3c639d50"><div class="ttname"><a href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">TangoServerLauncher::device</a></div><div class="ttdeci">const std::string &amp; device() const</div><div class="ttdoc">The Tango device name.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00116">TangoServerLauncher.cpp:116</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_a31ba06cc898e202a47b7fb4d998d8d57"><div class="ttname"><a href="struct_tango_server_launcher.html#a31ba06cc898e202a47b7fb4d998d8d57">TangoServerLauncher::setCreateOfflineDatabase</a></div><div class="ttdeci">TangoServerLauncher &amp; setCreateOfflineDatabase(bool create)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00122">TangoServerLauncher.cpp:122</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_a253a7a148e861e01e14759b31693451c"><div class="ttname"><a href="struct_tango_server_launcher.html#a253a7a148e861e01e14759b31693451c">TangoServerLauncher::getClientUrl</a></div><div class="ttdeci">std::string getClientUrl() const</div><div class="ttdoc">An URL that can be used by the Tango::DeviceProxy to connect to this server.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00114">TangoServerLauncher.cpp:114</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_a2fdcb2aeefbc145842820dfc3c639d50"><div class="ttname"><a href="struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50">TangoServerLauncher::device</a></div><div class="ttdeci">const std::string &amp; device() const</div><div class="ttdoc">The Tango device name.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00120">TangoServerLauncher.cpp:120</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_a31ba06cc898e202a47b7fb4d998d8d57"><div class="ttname"><a href="struct_tango_server_launcher.html#a31ba06cc898e202a47b7fb4d998d8d57">TangoServerLauncher::setCreateOfflineDatabase</a></div><div class="ttdeci">TangoServerLauncher &amp; setCreateOfflineDatabase(bool create)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00126">TangoServerLauncher.cpp:126</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a536dcf4c428315d7d4ffe2a776a114cf"><div class="ttname"><a href="struct_tango_server_launcher.html#a536dcf4c428315d7d4ffe2a776a114cf">TangoServerLauncher::keepOfflineDatabase</a></div><div class="ttdeci">bool keepOfflineDatabase</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00062">TangoServerLauncher.h:62</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a64c79744d0d00e91462f79b72d6b9ded"><div class="ttname"><a href="struct_tango_server_launcher.html#a64c79744d0d00e91462f79b72d6b9ded">TangoServerLauncher::deviceString</a></div><div class="ttdeci">std::string deviceString</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00068">TangoServerLauncher.h:68</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a7b2fb21c0d32dcce0fa476b79fc584ad"><div class="ttname"><a href="struct_tango_server_launcher.html#a7b2fb21c0d32dcce0fa476b79fc584ad">TangoServerLauncher::~TangoServerLauncher</a></div><div class="ttdeci">~TangoServerLauncher()</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00020">TangoServerLauncher.cpp:20</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a7ebe53e448c36862959549563745aca8"><div class="ttname"><a href="struct_tango_server_launcher.html#a7ebe53e448c36862959549563745aca8">TangoServerLauncher::offlineDatabase</a></div><div class="ttdeci">std::string offlineDatabase</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00060">TangoServerLauncher.h:60</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_a838bfdbae0331a55830c34f1187693b4"><div class="ttname"><a href="struct_tango_server_launcher.html#a838bfdbae0331a55830c34f1187693b4">TangoServerLauncher::overrideNames</a></div><div class="ttdeci">TangoServerLauncher &amp; overrideNames(const std::string &amp;newNames)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00156">TangoServerLauncher.cpp:156</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_a84e886089382d4418bd1fa90ff7498d1"><div class="ttname"><a href="struct_tango_server_launcher.html#a84e886089382d4418bd1fa90ff7498d1">TangoServerLauncher::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Shut down the Tango server.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00087">TangoServerLauncher.cpp:87</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_a838bfdbae0331a55830c34f1187693b4"><div class="ttname"><a href="struct_tango_server_launcher.html#a838bfdbae0331a55830c34f1187693b4">TangoServerLauncher::overrideNames</a></div><div class="ttdeci">TangoServerLauncher &amp; overrideNames(const std::string &amp;newNames)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00160">TangoServerLauncher.cpp:160</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_a84e886089382d4418bd1fa90ff7498d1"><div class="ttname"><a href="struct_tango_server_launcher.html#a84e886089382d4418bd1fa90ff7498d1">TangoServerLauncher::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Shut down the Tango server.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00091">TangoServerLauncher.cpp:91</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_a922ec7e715ee86530cbb1d3a4af1b033"><div class="ttname"><a href="struct_tango_server_launcher.html#a922ec7e715ee86530cbb1d3a4af1b033">TangoServerLauncher::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00039">TangoServerLauncher.cpp:39</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_a9a4855324d47b22c98759d47e3dd4783"><div class="ttname"><a href="struct_tango_server_launcher.html#a9a4855324d47b22c98759d47e3dd4783">TangoServerLauncher::self</a></div><div class="ttdeci">static TangoServerLauncher * self</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00164">TangoServerLauncher.h:164</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_a9a4855324d47b22c98759d47e3dd4783"><div class="ttname"><a href="struct_tango_server_launcher.html#a9a4855324d47b22c98759d47e3dd4783">TangoServerLauncher::self</a></div><div class="ttdeci">static TangoServerLauncher * self</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00168">TangoServerLauncher.h:168</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_aa32731dc6ea2e843fc55ef07d833a7c6"><div class="ttname"><a href="struct_tango_server_launcher.html#aa32731dc6ea2e843fc55ef07d833a7c6">TangoServerLauncher::verbose</a></div><div class="ttdeci">bool verbose</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00063">TangoServerLauncher.h:63</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_ac39ba89a5c17e81e1885da514a1c4c2f"><div class="ttname"><a href="struct_tango_server_launcher.html#ac39ba89a5c17e81e1885da514a1c4c2f">TangoServerLauncher::setKeepOfflineDatabase</a></div><div class="ttdeci">TangoServerLauncher &amp; setKeepOfflineDatabase(bool keep)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00130">TangoServerLauncher.cpp:130</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_ac39ba89a5c17e81e1885da514a1c4c2f"><div class="ttname"><a href="struct_tango_server_launcher.html#ac39ba89a5c17e81e1885da514a1c4c2f">TangoServerLauncher::setKeepOfflineDatabase</a></div><div class="ttdeci">TangoServerLauncher &amp; setKeepOfflineDatabase(bool keep)</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00134">TangoServerLauncher.cpp:134</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_acbbb3cff67d4518f66ac9978e097456f"><div class="ttname"><a href="struct_tango_server_launcher.html#acbbb3cff67d4518f66ac9978e097456f">TangoServerLauncher::remoteProxy</a></div><div class="ttdeci">std::shared_ptr&lt; Tango::DeviceProxy &gt; remoteProxy</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00072">TangoServerLauncher.h:72</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_ae3f3cb8cf795d24395e8a127173fb5b4"><div class="ttname"><a href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">TangoServerLauncher::port</a></div><div class="ttdeci">static std::string port()</div><div class="ttdoc">Get the port used for CORBA commuication.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00097">TangoServerLauncher.cpp:97</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_ae3f3cb8cf795d24395e8a127173fb5b4"><div class="ttname"><a href="struct_tango_server_launcher.html#ae3f3cb8cf795d24395e8a127173fb5b4">TangoServerLauncher::port</a></div><div class="ttdeci">static std::string port()</div><div class="ttdoc">Get the port used for CORBA commuication.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00101">TangoServerLauncher.cpp:101</a></div></div>
 <div class="ttc" id="astruct_tango_server_launcher_html_afb80dae086734efcdd58316095816990"><div class="ttname"><a href="struct_tango_server_launcher.html#afb80dae086734efcdd58316095816990">TangoServerLauncher::createOfflineDatabase</a></div><div class="ttdeci">bool createOfflineDatabase</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8h_source.html#l00061">TangoServerLauncher.h:61</a></div></div>
-<div class="ttc" id="astruct_tango_server_launcher_html_afe2e76235638a27fba8dfebd07a29f12"><div class="ttname"><a href="struct_tango_server_launcher.html#afe2e76235638a27fba8dfebd07a29f12">TangoServerLauncher::setOfflineDatabase</a></div><div class="ttdeci">TangoServerLauncher &amp; setOfflineDatabase(const std::string &amp;basePath)</div><div class="ttdoc">Configure the Tango server to run against an offline database.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00138">TangoServerLauncher.cpp:138</a></div></div>
+<div class="ttc" id="astruct_tango_server_launcher_html_afe2e76235638a27fba8dfebd07a29f12"><div class="ttname"><a href="struct_tango_server_launcher.html#afe2e76235638a27fba8dfebd07a29f12">TangoServerLauncher::setOfflineDatabase</a></div><div class="ttdeci">TangoServerLauncher &amp; setOfflineDatabase(const std::string &amp;basePath)</div><div class="ttdoc">Configure the Tango server to run against an offline database.</div><div class="ttdef"><b>Definition</b> <a href="_tango_server_launcher_8cpp_source.html#l00142">TangoServerLauncher.cpp:142</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

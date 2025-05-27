@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess-TangoBackend<span id="projectnumber">&#160;00.01.01</span>
+   <div id="projectname">ChimeraTK-DeviceAccess-TangoBackend<span id="projectnumber">&#160;00.01.02</span>
    </div>
   </td>
  </tr>
@@ -103,32 +103,33 @@ $(document).ready(function(){initNavTree('_offline_cache_8h_source.html',''); in
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_register_catalogue_8h.html">RegisterCatalogue.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;nlohmann/json.hpp&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_offline_cache.html">   12</a></span>  <span class="keyword">class </span><a class="code hl_class" href="class_chimera_t_k_1_1_offline_cache.html">OfflineCache</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>   <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_offline_cache.html#a7d4f2ada22a40036aae9883f89609066">   14</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_chimera_t_k_1_1_offline_cache.html#a7d4f2ada22a40036aae9883f89609066">OfflineCache</a>(std::string cacheFilePath) : _cacheFilePath(std::move(cacheFilePath)) {}</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="class_chimera_t_k_1_1_tango_register_catalogue.html">TangoRegisterCatalogue</a> <a class="code hl_function" href="class_chimera_t_k_1_1_offline_cache.html#a0cb56926dc307361741fe27cbbb17380">read</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::string _cacheFilePath;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  };</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;nlohmann/json.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespace_chimera_t_k.html">   11</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_offline_cache.html">   13</a></span>  <span class="keyword">class </span><a class="code hl_class" href="class_chimera_t_k_1_1_offline_cache.html">OfflineCache</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_offline_cache.html#a7d4f2ada22a40036aae9883f89609066">   15</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_chimera_t_k_1_1_offline_cache.html#a7d4f2ada22a40036aae9883f89609066">OfflineCache</a>(std::string cacheFilePath) : _cacheFilePath(std::move(cacheFilePath)) {}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_chimera_t_k_1_1_tango_register_catalogue.html">TangoRegisterCatalogue</a> <a class="code hl_function" href="class_chimera_t_k_1_1_offline_cache.html#a0cb56926dc307361741fe27cbbb17380">read</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::string _cacheFilePath;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  };</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace ChimeraTK</span></div>
 </div>
 <div class="ttc" id="a_register_catalogue_8h_html"><div class="ttname"><a href="_register_catalogue_8h.html">RegisterCatalogue.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_offline_cache_html"><div class="ttname"><a href="class_chimera_t_k_1_1_offline_cache.html">ChimeraTK::OfflineCache</a></div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8h_source.html#l00012">OfflineCache.h:12</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_offline_cache_html"><div class="ttname"><a href="class_chimera_t_k_1_1_offline_cache.html">ChimeraTK::OfflineCache</a></div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8h_source.html#l00013">OfflineCache.h:13</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_offline_cache_html_a0cb56926dc307361741fe27cbbb17380"><div class="ttname"><a href="class_chimera_t_k_1_1_offline_cache.html#a0cb56926dc307361741fe27cbbb17380">ChimeraTK::OfflineCache::read</a></div><div class="ttdeci">TangoRegisterCatalogue read()</div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8cc_source.html#l00008">OfflineCache.cc:8</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_offline_cache_html_a7d4f2ada22a40036aae9883f89609066"><div class="ttname"><a href="class_chimera_t_k_1_1_offline_cache.html#a7d4f2ada22a40036aae9883f89609066">ChimeraTK::OfflineCache::OfflineCache</a></div><div class="ttdeci">OfflineCache(std::string cacheFilePath)</div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8h_source.html#l00014">OfflineCache.h:14</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_offline_cache_html_a7d4f2ada22a40036aae9883f89609066"><div class="ttname"><a href="class_chimera_t_k_1_1_offline_cache.html#a7d4f2ada22a40036aae9883f89609066">ChimeraTK::OfflineCache::OfflineCache</a></div><div class="ttdeci">OfflineCache(std::string cacheFilePath)</div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8h_source.html#l00015">OfflineCache.h:15</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_tango_register_catalogue_html"><div class="ttname"><a href="class_chimera_t_k_1_1_tango_register_catalogue.html">ChimeraTK::TangoRegisterCatalogue</a></div><div class="ttdef"><b>Definition</b> <a href="_register_catalogue_8h_source.html#l00017">RegisterCatalogue.h:17</a></div></div>
-<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8h_source.html#l00010">OfflineCache.h:10</a></div></div>
+<div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="_offline_cache_8h_source.html#l00011">OfflineCache.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
