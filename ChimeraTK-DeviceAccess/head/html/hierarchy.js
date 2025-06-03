@@ -427,23 +427,25 @@ var hierarchy =
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
     [ "ChimeraTK::ImgView< ValType, OPTIONS >", "class_chimera_t_k_1_1_img_view.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
-    [ "Integers_base< Derived >", "struct_integers__base.html", null ],
-    [ "Integers_base< Integers_signed32 >", "struct_integers__base.html", [
-      [ "Integers_signed32", "struct_integers__signed32.html", null ]
-    ] ],
-    [ "Integers_base< Integers_signed32_async >", "struct_integers__base.html", [
-      [ "Integers_signed32_async", "struct_integers__signed32__async.html", null ]
-    ] ],
-    [ "Integers_base< Integers_signed32_DummyWritable >", "struct_integers__base.html", [
-      [ "Integers_signed32_DummyWritable", "struct_integers__signed32___dummy_writable.html", null ]
-    ] ],
-    [ "Integers_base< Integers_signed32_RO >", "struct_integers__base.html", [
-      [ "Integers_signed32_RO", "struct_integers__signed32___r_o.html", null ]
-    ] ],
-    [ "Integers_base< Integers_signed32_WO >", "struct_integers__base.html", [
-      [ "Integers_signed32_WO", "struct_integers__signed32___w_o.html", null ]
-    ] ],
+    [ "Integers_signed32", "struct_integers__signed32.html", null ],
+    [ "Integers_signed32_async", "struct_integers__signed32__async.html", null ],
     [ "Integers_signed32_async_rw", "struct_integers__signed32__async__rw.html", null ],
+    [ "IntegersBase< Derived >", "struct_integers_base.html", null ],
+    [ "IntegersBase< IntegersSigned32 >", "struct_integers_base.html", [
+      [ "IntegersSigned32", "struct_integers_signed32.html", null ]
+    ] ],
+    [ "IntegersBase< IntegersSigned32Async >", "struct_integers_base.html", [
+      [ "IntegersSigned32Async", "struct_integers_signed32_async.html", null ]
+    ] ],
+    [ "IntegersBase< IntegersSigned32DummyWritable >", "struct_integers_base.html", [
+      [ "IntegersSigned32DummyWritable", "struct_integers_signed32_dummy_writable.html", null ]
+    ] ],
+    [ "IntegersBase< IntegersSigned32RO >", "struct_integers_base.html", [
+      [ "IntegersSigned32RO", "struct_integers_signed32_r_o.html", null ]
+    ] ],
+    [ "IntegersBase< IntegersSigned32WO >", "struct_integers_base.html", [
+      [ "IntegersSigned32WO", "struct_integers_signed32_w_o.html", null ]
+    ] ],
     [ "Interrupt_dummy", "struct_interrupt__dummy.html", null ],
     [ "ChimeraTK::async::JsonDescriptorKeysV1", "struct_chimera_t_k_1_1async_1_1_json_descriptor_keys_v1.html", null ],
     [ "std::less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],

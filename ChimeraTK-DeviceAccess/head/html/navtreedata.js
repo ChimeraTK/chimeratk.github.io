@@ -186,12 +186,12 @@ var NAVTREEINDEX =
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#abcc73797c67c0a115df0886a2d18aadd",
 "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html",
 "struct_counting_decorator.html#a86505de3b2c8edc75e644b1b4bbee0c7",
-"struct_isr_test_fixture.html",
-"struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5",
-"struct_short_raw__fixed_point16__8s.html#a479c4131e573b881d456145024da4c0b",
-"test_d_map_file_parser_8cpp.html",
-"test_l_map_backend_8cpp.html#a6e621118aa53ff203987691a14aaee85",
-"test_scalar_register_accessor_8cpp.html#af6690df3622b4b8fc105f750a010295b"
+"struct_mie_active_test_fixture.html#ab39cb4b95fa45898935ffef82ea3190c",
+"struct_reg_lower_half_of_firmware.html#aaa737f7ad75b7a29838e3e5f9271449c",
+"struct_short_raw__signed16.html#a67b61450910f29fa40a431ded789e657",
+"test_data_consistency_realm_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_l_map_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_shared_dummy_backend_unified_8cpp.html#a6de67d84a8638a97f4bb1c99c7fb730a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

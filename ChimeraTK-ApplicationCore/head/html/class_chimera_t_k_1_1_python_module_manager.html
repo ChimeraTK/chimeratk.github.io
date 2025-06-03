@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_python_module_ma
 </div><!--header-->
 <div class="contents">
 
-<p>This class loads and unloads the Python modules as specified in the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file, and creates the Python interpreter instance if necessary.  
+<p>This class loads and unloads the Python modules as specified in the <a class="el" href="class_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file, and creates the Python interpreter instance if necessary.  
  <a href="class_chimera_t_k_1_1_python_module_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_python_module_manager_8h_source.html">PythonModuleManager.h</a>&gt;</code></p>
@@ -114,14 +114,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7ee5b9e77f06a3d2ec9ec88cedefbe4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">need non-default destructor due to incomplete type detail::PythonModuleManagerImpl  <br /></td></tr>
 <tr class="separator:a7ee5b9e77f06a3d2ec9ec88cedefbe4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20e3843d4b86c580b459655f1383d69e" id="r_a20e3843d4b86c580b459655f1383d69e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_python_module_manager.html#a20e3843d4b86c580b459655f1383d69e">createModules</a> (<a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> &amp;app)</td></tr>
-<tr class="memdesc:a20e3843d4b86c580b459655f1383d69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">called by <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> to load all Python modules specified in the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file  <br /></td></tr>
+<tr class="memdesc:a20e3843d4b86c580b459655f1383d69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">called by <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> to load all Python modules specified in the <a class="el" href="class_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file  <br /></td></tr>
 <tr class="separator:a20e3843d4b86c580b459655f1383d69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43445322f4e33a65ed1d3460c1e9c631" id="r_a43445322f4e33a65ed1d3460c1e9c631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_python_module_manager.html#a43445322f4e33a65ed1d3460c1e9c631">setOnMainGroupChange</a> (std::function&lt; void(const std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_py_module_group.html">PyModuleGroup</a> &gt; &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:a43445322f4e33a65ed1d3460c1e9c631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function to get informed about the main <a class="el" href="class_chimera_t_k_1_1_py_module_group.html">PyModuleGroup</a> which is created by the <a class="el" href="class_chimera_t_k_1_1_python_module_manager.html" title="This class loads and unloads the Python modules as specified in the ConfigReader XML file,...">PythonModuleManager</a>.  <br /></td></tr>
 <tr class="separator:a43445322f4e33a65ed1d3460c1e9c631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class loads and unloads the Python modules as specified in the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file, and creates the Python interpreter instance if necessary. </p>
+<div class="textblock"><p>This class loads and unloads the Python modules as specified in the <a class="el" href="class_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file, and creates the Python interpreter instance if necessary. </p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> keeps an instance of the <a class="el" href="class_chimera_t_k_1_1_python_module_manager.html" title="This class loads and unloads the Python modules as specified in the ConfigReader XML file,...">PythonModuleManager</a> and calls <a class="el" href="class_chimera_t_k_1_1_python_module_manager.html#a20e3843d4b86c580b459655f1383d69e" title="called by Application to load all Python modules specified in the ConfigReader XML file">createModules()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_python_module_manager_8h_source.html#l00022">22</a> of file <a class="el" href="_python_module_manager_8h_source.html">PythonModuleManager.h</a>.</p>
@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>called by <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> to load all Python modules specified in the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file </p>
+<p>called by <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> to load all Python modules specified in the <a class="el" href="class_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file </p>
 
 <p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00164">164</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
 

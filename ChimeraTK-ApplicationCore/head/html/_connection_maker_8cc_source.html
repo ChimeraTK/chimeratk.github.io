@@ -1106,8 +1106,8 @@ $(document).ready(function(){initNavTree('_connection_maker_8cc_source.html','')
 <div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>            return consumer.getType() == NodeType::Device &amp;&amp;</div>
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>                consumer.getTags().contains(ChimeraTK::SystemTags::reverseRecovery);</div>
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>          });</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>          network.consumers.remove(*reverseConsumer);</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>          network.feeder = *reverseConsumer;</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>          network.feeder = *reverseConsumer;</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>          network.consumers.remove(*reverseConsumer);</div>
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>        }</div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>        <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>          network.feeder = <a class="code hl_class" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>(network.valueType, <span class="keyword">true</span>, network.valueLength);</div>

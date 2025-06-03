@@ -215,7 +215,7 @@ var hierarchy =
             [ "ArrayOutputModule", "struct_array_output_module.html", null ],
             [ "AverageCurrent", "class_average_current.html", null ],
             [ "ChimeraTK::ArrayPipe< Type >", "struct_chimera_t_k_1_1_array_pipe.html", null ],
-            [ "ChimeraTK::ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", null ],
+            [ "ChimeraTK::ConfigReader", "class_chimera_t_k_1_1_config_reader.html", null ],
             [ "ChimeraTK::ConstMultiplier< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
             [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >", "struct_chimera_t_k_1_1_data_loss_counter.html", null ],
             [ "ChimeraTK::DeviceManager", "class_chimera_t_k_1_1_device_manager.html", null ],

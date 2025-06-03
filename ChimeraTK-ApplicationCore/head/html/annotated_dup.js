@@ -56,7 +56,7 @@ var annotated_dup =
       [ "ArrayPushInput", "struct_chimera_t_k_1_1_array_push_input.html", "struct_chimera_t_k_1_1_array_push_input" ],
       [ "ArrayPushInputWB", "struct_chimera_t_k_1_1_array_push_input_w_b.html", "struct_chimera_t_k_1_1_array_push_input_w_b" ],
       [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
-      [ "ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", "struct_chimera_t_k_1_1_config_reader" ],
+      [ "ConfigReader", "class_chimera_t_k_1_1_config_reader.html", "class_chimera_t_k_1_1_config_reader" ],
       [ "ConnectionMaker", "class_chimera_t_k_1_1_connection_maker.html", "class_chimera_t_k_1_1_connection_maker" ],
       [ "ConstantAccessor", "class_chimera_t_k_1_1_constant_accessor.html", "class_chimera_t_k_1_1_constant_accessor" ],
       [ "ConstMultiplier", "struct_chimera_t_k_1_1_const_multiplier.html", "struct_chimera_t_k_1_1_const_multiplier" ],

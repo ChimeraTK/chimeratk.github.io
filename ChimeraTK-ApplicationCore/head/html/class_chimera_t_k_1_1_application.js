@@ -34,7 +34,7 @@ var class_chimera_t_k_1_1_application =
     [ "shutdown", "class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a", null ],
     [ "Accessor", "class_chimera_t_k_1_1_application.html#af6ffd104cd1bfe13fd84f63bcd1c2c44", null ],
     [ "ApplicationModule", "class_chimera_t_k_1_1_application.html#acfb4bf09dc26ce696cc077e79995dd42", null ],
-    [ "ConfigReader", "class_chimera_t_k_1_1_application.html#a0b9e56af141f2afdbb463ff4b4b5c8ea", null ],
+    [ "ConfigReader", "class_chimera_t_k_1_1_application.html#ada75ae56b35b5bf88aca48da1012be67", null ],
     [ "ConnectionMaker", "class_chimera_t_k_1_1_application.html#a9798a81b66fe8dba37b7e53be7928890", null ],
     [ "DebugPrintAccessorDecorator", "class_chimera_t_k_1_1_application.html#ae695c6843b4a8363af68d12eb640997e", null ],
     [ "detail::CircularDependencyDetector", "class_chimera_t_k_1_1_application.html#af27a883ef1fd8fe1bb4f2be0492d7b4f", null ],
