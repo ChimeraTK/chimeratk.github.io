@@ -60,7 +60,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -74,18 +74,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_stepper_motor_8cc.html",
-"_stepper_motor_util_8h.html",
-"class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#ab2a2aba05884e82b536fe16146b2db40",
-"class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a500fcdd91a096563a5620f9ff42dbd59",
-"class_derived_state_machine.html#a9ffd88e506b79b66bfe5d7d434535980",
-"classmtca4u_1_1_chopper_control_data.html#ab59a197572bd5cae3710b9ed79b11542",
-"classmtca4u_1_1_motor_controler.html#a1bbaa4c6419f80de10d3006946c0585e",
-"classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2",
-"classmtca4u_1_1_motor_driver_card_expert.html#ae9833877561b84d439c447a6230dc6ae",
-"classmtca4u_1_1_stepper_motor.html#a22d6733af7e8483f9eb459164719a3a8",
-"classmtca4u_1_1_t_m_c429_s_p_i.html#a16f51d64ae517322e885c65f1014deb7",
-"namespacemtca4u.html#a440649ecc337200afb9d8fdc3ffdfa4a",
-"test_communication_8cpp.html"
+"_t_m_c260_dummy_constants_8h.html",
+"class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#afe15ae2ac4dd3bba952340b5ad24ce0b",
+"class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#aa2e2054114cc84a8aad6868a3f73c832",
+"class_parameters_panel.html",
+"classmtca4u_1_1_interface_configuration.html#a2bb44d6f1f6a7c1352865462a561c39c",
+"classmtca4u_1_1_motor_controler_dummy.html#ae503aa88d52e9deb0727dd5efd5f397e",
+"classmtca4u_1_1_motor_driver_card.html",
+"classmtca4u_1_1_reference_switch_data.html#a41e8b0d261a379e839efa9031fee9fa7",
+"functions_h.html",
+"structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

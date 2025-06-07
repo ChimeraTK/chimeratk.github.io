@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[20,0,37,12],
+"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[20,0,37,6],
+"struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16":[20,0,37,15],
 "struct_counting_decorator.html#a86505de3b2c8edc75e644b1b4bbee0c7":[20,0,37,0],
 "struct_counting_decorator.html#a8c836afa2a2ab7d09d8bc0047c8a0bff":[20,0,37,16],
 "struct_counting_decorator.html#a9f933e35370a945419faef18478da638":[20,0,37,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "struct_mer_active_test_fixture.html":[20,0,102],
 "struct_mer_active_test_fixture.html#a073c6ba73a4d1daa5558791a7d3203aa":[20,0,102,0],
 "struct_mer_inactive_test_fixture.html":[20,0,103],
-"struct_mer_inactive_test_fixture.html#a8585697e069d644f3771ede0316bf183":[20,0,103,0],
-"struct_mer_writable_test_fixture.html":[20,0,104],
-"struct_mer_writable_test_fixture.html#abdfa84bf984d516c90ec7ad16c580afa":[20,0,104,0],
-"struct_mie_active_test_fixture.html":[20,0,105]
+"struct_mer_inactive_test_fixture.html#a8585697e069d644f3771ede0316bf183":[20,0,103,0]
 };

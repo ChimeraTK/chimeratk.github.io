@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"struct_reg_lower_half_of_firmware.html":[20,0,161],
+"struct_reg_lower_half_of_firmware.html#a19f6e5906205238b7e2bf581d40df724":[20,0,161,2],
+"struct_reg_lower_half_of_firmware.html#a62f98164938ad6e638d4287aff11141b":[20,0,161,3],
 "struct_reg_lower_half_of_firmware.html#aaa737f7ad75b7a29838e3e5f9271449c":[20,0,161,0],
 "struct_reg_lower_half_of_firmware.html#ae0d43652331fe96c27385683d7b661a7":[20,0,161,1],
 "struct_reg_lower_half_of_firmware.html#af81a5b58c50ede055c74697ebac44c11":[20,0,161,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX28 =
 "struct_short_raw__fixed_point16__8u.html#aafbac5d0374344ff1c0d1fc0ab1ce669":[20,0,198,6],
 "struct_short_raw__fixed_point16__8u.html#ac4b4322ed0a060682463e56787644b0b":[20,0,198,2],
 "struct_short_raw__signed16.html":[20,0,199],
-"struct_short_raw__signed16.html#a04e0df595f39a5feb9fc4222dc0902d4":[20,0,199,6],
-"struct_short_raw__signed16.html#a190f8ebcb20a8bc1ef1405343d807acb":[20,0,199,4],
-"struct_short_raw__signed16.html#a4a4f08af2f71504b15843149fed15223":[20,0,199,1],
-"struct_short_raw__signed16.html#a550b2d19069900ed33fc678471b3648c":[20,0,199,0]
+"struct_short_raw__signed16.html#a04e0df595f39a5feb9fc4222dc0902d4":[20,0,199,6]
 };

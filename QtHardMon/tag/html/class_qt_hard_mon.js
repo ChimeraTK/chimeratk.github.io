@@ -15,7 +15,7 @@ var class_qt_hard_mon =
     [ "write", "class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f", null ],
     [ "writeConfig", "class_qt_hard_mon.html#a81efa5e61c35f932af1026528047e2e3", null ],
     [ "PlotWindow", "class_qt_hard_mon.html#a9a209df8a0320461906b6dfe4643d187", null ],
-    [ "_continuousReadTimner", "class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253", null ],
+    [ "_continuousReadTimer", "class_qt_hard_mon.html#ae32f7c39bf72cc05a6a20a638596d2b6", null ],
     [ "_currentDeviceListItem", "class_qt_hard_mon.html#abf98cabc4a7c57c5e45696bac4d9005e", null ],
     [ "_defaultTableViewEditTriggers", "class_qt_hard_mon.html#a057d6716bcce7d56a24ea7cc3f0ed0da", null ],
     [ "_plotWindow", "class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40", null ],

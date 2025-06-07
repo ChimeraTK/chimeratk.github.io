@@ -26,13 +26,15 @@ var namespace_chimera_t_k =
     [ "Utilities", "namespace_chimera_t_k_1_1_utilities.html", [
       [ "aliasLookUp", "namespace_chimera_t_k_1_1_utilities.html#a2eee1bba7066a6d441061840f63ccd6d", null ],
       [ "countOccurence", "namespace_chimera_t_k_1_1_utilities.html#a5bf0fb7a4de6e9fba9e6b36baa4bf531", null ],
+      [ "createShmName", "namespace_chimera_t_k_1_1_utilities.html#ac4b7bf96a69e0e412bc6fa602e2f6f6c", null ],
       [ "getAliasList", "namespace_chimera_t_k_1_1_utilities.html#a25a0748d411f914029fd961f040bd2ee", null ],
       [ "isDeviceDescriptor", "namespace_chimera_t_k_1_1_utilities.html#ac9962632f9db42e2b2e7be4b3875a7bc", null ],
       [ "isSdm", "namespace_chimera_t_k_1_1_utilities.html#a5ba5af0fe01ab6b38bedbc32749eb5ce", null ],
       [ "parseDeviceDesciptor", "namespace_chimera_t_k_1_1_utilities.html#a01df8292c600039a0d654b7591e33a45", null ],
       [ "parseDeviceString", "namespace_chimera_t_k_1_1_utilities.html#a685a9e8b21d8fe1d21d9fa5941e3d2bc", null ],
       [ "parseSdm", "namespace_chimera_t_k_1_1_utilities.html#aa1751b9f4874cde2c2c92581681852a0", null ],
-      [ "printStackTrace", "namespace_chimera_t_k_1_1_utilities.html#a2ece51d51220974672726b2d1f30ed62", null ]
+      [ "printStackTrace", "namespace_chimera_t_k_1_1_utilities.html#a2ece51d51220974672726b2d1f30ed62", null ],
+      [ "shmDummyInstanceIdHash", "namespace_chimera_t_k_1_1_utilities.html#a49ba24611f93991206a0dfb26bd6ec38", null ]
     ] ],
     [ "AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", "class_chimera_t_k_1_1_access_mode_flags" ],
     [ "BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", "class_chimera_t_k_1_1_backend_factory" ],

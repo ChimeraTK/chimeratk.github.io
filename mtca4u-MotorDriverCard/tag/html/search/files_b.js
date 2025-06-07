@@ -9,7 +9,7 @@ var searchData=
   ['statemachine_2eh_6',['StateMachine.h',['../_state_machine_8h.html',1,'']]],
   ['stepper_5fmotor_2edox_7',['stepper_motor.dox',['../stepper__motor_8dox.html',1,'']]],
   ['steppermotor_2ecc_8',['StepperMotor.cc',['../_stepper_motor_8cc.html',1,'']]],
-  ['steppermotor_2eh_9',['steppermotor.h',['../steppermotor_2include_2_stepper_motor_8h.html',1,'(Global Namespace)'],['../mtca4u__steppermotor_2include_2_stepper_motor_8h.html',1,'(Global Namespace)']]],
+  ['steppermotor_2eh_9',['steppermotor.h',['../mtca4u__steppermotor_2include_2_stepper_motor_8h.html',1,'(Global Namespace)'],['../steppermotor_2include_2_stepper_motor_8h.html',1,'(Global Namespace)']]],
   ['steppermotorcalibrationstatus_2ecc_10',['StepperMotorCalibrationStatus.cc',['../_stepper_motor_calibration_status_8cc.html',1,'']]],
   ['steppermotorcalibrationstatus_2eh_11',['StepperMotorCalibrationStatus.h',['../_stepper_motor_calibration_status_8h.html',1,'']]],
   ['steppermotorerror_2ecc_12',['StepperMotorError.cc',['../_stepper_motor_error_8cc.html',1,'']]],

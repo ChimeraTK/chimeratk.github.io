@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['label_0',['label',['../class_parameter_widget.html#a2c6a1a6bc810ed94034f6ba5c4fd9a17',1,'ParameterWidget']]]
+  ['maximum_5facceleration_5fdefault_0',['MAXIMUM_ACCELERATION_DEFAULT',['../namespacemtca4u.html#a5ef26d3aa13cdec1eac7b4688ea03a25',1,'mtca4u']]],
+  ['maximum_5fvelocity_5fdefault_1',['MAXIMUM_VELOCITY_DEFAULT',['../namespacemtca4u.html#a5beacd2b1cb218ddbce305b84aa5eced',1,'mtca4u']]],
+  ['maximumacceleration_2',['maximumAcceleration',['../structmtca4u_1_1_motor_controler_config.html#a67b9e891d09c26f83bd3c886869ac20c',1,'mtca4u::MotorControlerConfig']]],
+  ['maximumvelocity_3',['maximumVelocity',['../structmtca4u_1_1_motor_controler_config.html#a3d543b0b1cdf8890c6fa87afc0d3fad5',1,'mtca4u::MotorControlerConfig']]],
+  ['maxrpm_4',['maxRPM',['../class_parameters_calculator_1_1_physical_parameters.html#a50e81162d8cda262a31cfee00d0855c6',1,'ParametersCalculator::PhysicalParameters']]],
+  ['micro_5fstep_5fcount_5fsuffix_5',['MICRO_STEP_COUNT_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#aacb78b2579e013bad179d00b0fde40b8',1,'mtca4u::dfmc_md22']]],
+  ['microstepcount_6',['microStepCount',['../structmtca4u_1_1_motor_controler_config.html#abc11d183239eee355e93d03a4ba3e9d6',1,'mtca4u::MotorControlerConfig']]],
+  ['microsteps_7',['microsteps',['../class_parameters_calculator_1_1_physical_parameters.html#aa3c8ca7a28f590c218b35aa53627e0e7',1,'ParametersCalculator::PhysicalParameters']]],
+  ['minimal_5ffirmware_5fversion_8',['MINIMAL_FIRMWARE_VERSION',['../namespacemtca4u_1_1dfmc__md22.html#a6c26ef449bc82f2d2ebba52fae21cf96',1,'mtca4u::dfmc_md22']]],
+  ['minimum_5fvelocity_5fdefault_9',['MINIMUM_VELOCITY_DEFAULT',['../namespacemtca4u.html#ab36073f697bdcf7eeeca3e90c64f3f88',1,'mtca4u']]],
+  ['minimumvelocity_10',['minimumVelocity',['../structmtca4u_1_1_motor_controler_config.html#ab6a1e1c78d062c9a03bd9750b5130eb1',1,'mtca4u::MotorControlerConfig']]],
+  ['modulename_11',['moduleName',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#ac58c0552f4110e533368ce9ea5620925',1,'ChimeraTK::MotorDriver::StepperMotorParameters']]],
+  ['motor_5fcurrent_5fenable_5fsuffix_12',['MOTOR_CURRENT_ENABLE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ac78faea37f1a9ea61278e2d31555a92c',1,'mtca4u::dfmc_md22']]],
+  ['motor_5fregister_5fprefix_13',['MOTOR_REGISTER_PREFIX',['../namespacemtca4u_1_1dfmc__md22.html#a88ef6946510632e1bb7433a12db0f9db',1,'mtca4u::dfmc_md22']]],
+  ['motorcontrolerconfigurations_14',['motorControlerConfigurations',['../structmtca4u_1_1_motor_driver_card_config.html#ab2e9667b1129b25288a2a38e0fb533ef',1,'mtca4u::MotorDriverCardConfig']]],
+  ['motortype_15',['motorType',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#ad18967ca6c33717d8fc84cf6e40d7bdc',1,'ChimeraTK::MotorDriver::StepperMotorParameters']]],
+  ['motorunitsconverter_16',['motorUnitsConverter',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#afc0f5df3417aa60a96e7adfa43c25097',1,'ChimeraTK::MotorDriver::StepperMotorParameters']]],
+  ['moveevent_17',['moveEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#aa571cf7eb23758ad8aed962a84bc950e',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]]
 ];

@@ -120,8 +120,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_shared_dummy_bac
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a51b01035c0e7a94e6942b432b1e30682" id="r_a51b01035c0e7a94e6942b432b1e30682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a51b01035c0e7a94e6942b432b1e30682">SharedDummyBackend</a> (const std::string &amp;instanceId, const std::string &amp;mapFileName, const std::string &amp;dataConsistencyKeyDescriptor=&quot;&quot;)</td></tr>
-<tr class="separator:a51b01035c0e7a94e6942b432b1e30682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77229d3096d64acd57f3cacf84c22692" id="r_a77229d3096d64acd57f3cacf84c22692"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a77229d3096d64acd57f3cacf84c22692">SharedDummyBackend</a> (size_t instanceIdHash, const std::string &amp;mapFileName, const std::string &amp;dataConsistencyKeyDescriptor=&quot;&quot;)</td></tr>
+<tr class="separator:a77229d3096d64acd57f3cacf84c22692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae39750cafdd0b0ca13deeb7eb451180b" id="r_ae39750cafdd0b0ca13deeb7eb451180b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#ae39750cafdd0b0ca13deeb7eb451180b">~SharedDummyBackend</a> () override</td></tr>
 <tr class="separator:ae39750cafdd0b0ca13deeb7eb451180b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a15441b3839ae89d0181f2fa3dddec" id="r_a80a15441b3839ae89d0181f2fa3dddec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a80a15441b3839ae89d0181f2fa3dddec">open</a> () override</td></tr>
@@ -296,8 +296,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00047">47</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a51b01035c0e7a94e6942b432b1e30682" name="a51b01035c0e7a94e6942b432b1e30682"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b01035c0e7a94e6942b432b1e30682">&#9670;&#160;</a></span>SharedDummyBackend()</h2>
+<a id="a77229d3096d64acd57f3cacf84c22692" name="a77229d3096d64acd57f3cacf84c22692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77229d3096d64acd57f3cacf84c22692">&#9670;&#160;</a></span>SharedDummyBackend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,8 +305,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">ChimeraTK::SharedDummyBackend::SharedDummyBackend </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>instanceId</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>instanceIdHash</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,7 +328,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00022">22</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00023">23</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00045">45</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00043">43</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00078">78</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00076">76</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00131">131</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00129">129</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00074">74</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00072">72</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -512,7 +512,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#afc3c29e05410f66513e88cecab73ac53">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00082">82</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00080">80</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -599,7 +599,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00111">111</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00109">109</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -633,7 +633,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a49048b0e780643064de64104ecefe497">ChimeraTK::DummyBackendBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00157">157</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00162">162</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -688,7 +688,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ad1098fd2df0455e1fcfb6625dd22b99a">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00096">96</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00094">94</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>

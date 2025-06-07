@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['generalstatus_0',['GeneralStatus',['../class_chimera_t_k_1_1_general_status.html',1,'ChimeraTK']]]
+  ['interfaceconfiguration_0',['InterfaceConfiguration',['../classmtca4u_1_1_interface_configuration.html',1,'mtca4u']]],
+  ['interruptdata_1',['InterruptData',['../classmtca4u_1_1_interrupt_data.html',1,'mtca4u']]]
 ];

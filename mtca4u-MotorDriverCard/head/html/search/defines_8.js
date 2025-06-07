@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_5fand_5fcount_5ferrors_0',['PRINT_AND_COUNT_ERRORS',['../test_communication_8cpp.html#a392dd7f1ba29d41f5919ba7909bd22d0',1,'testCommunication.cpp']]]
+  ['raw_5faccessor_5ffrom_5fsuffix_0',['RAW_ACCESSOR_FROM_SUFFIX',['../_motor_controler_impl_8cc.html#aa203880a5ca5a354d7fccc240ebd918d',1,'MotorControlerImpl.cc']]]
 ];

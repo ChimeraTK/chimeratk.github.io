@@ -1,10 +1,20 @@
 var searchData=
 [
-  ['rampdiv_0',['rampDiv',['../struct_parameters_calculator_1_1_chip_parameters.html#a65b836ae83a3ad43707e269c1922dd93',1,'ParametersCalculator::ChipParameters']]],
-  ['reference_5fconfig_5fand_5framp_5fmode_5fdefault_1',['REFERENCE_CONFIG_AND_RAMP_MODE_DEFAULT',['../namespacemtca4u.html#a032b7d8e6973c8018d9b60d4518ec4a1',1,'mtca4u']]],
-  ['referenceconfigandrampmodedata_2',['referenceConfigAndRampModeData',['../structmtca4u_1_1_motor_controler_config.html#a357a02ee6da2099d4379ebd9c11b6f03',1,'mtca4u::MotorControlerConfig']]],
-  ['resettodisableevent_3',['resetToDisableEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a91772fdaeb3516db638b94f4449388e7',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
-  ['resettoidleevent_4',['resetToIdleEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a6d9beeba7cfea532465a559e145d9beb',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
-  ['rw_5fread_5',['RW_READ',['../namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4',1,'mtca4u::tmc429']]],
-  ['rw_5fwrite_6',['RW_WRITE',['../namespacemtca4u_1_1tmc429.html#ab1c8ba7d281f82643fa952172b91116e',1,'mtca4u::tmc429']]]
+  ['size_5fof_5fspi_5faddress_5fspace_0',['size_of_spi_address_space',['../namespacemtca4u_1_1tmc260.html#a03e796d17e0a2c4c7809943128d70ec6',1,'mtca4u::tmc260::SIZE_OF_SPI_ADDRESS_SPACE'],['../namespacemtca4u_1_1tmc429.html#ab8c639e2e020a1484d40bd57afe374e4',1,'mtca4u::tmc429::SIZE_OF_SPI_ADDRESS_SPACE']]],
+  ['smda_5fcommon_1',['SMDA_COMMON',['../namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d',1,'mtca4u::tmc429']]],
+  ['spi_5fdata_5fmask_2',['SPI_DATA_MASK',['../namespacemtca4u_1_1tmc429.html#a1c54be883a5e26939dde72a617187bf9',1,'mtca4u::tmc429']]],
+  ['spi_5fdefault_5fwaiting_5ftime_3',['SPI_DEFAULT_WAITING_TIME',['../classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273',1,'mtca4u::SPIviaPCIe']]],
+  ['spi_5fsync_5ferror_4',['SPI_SYNC_ERROR',['../namespacemtca4u_1_1dfmc__md22.html#abf4d7b5e9b8ef8cc59f1217ae4cee011',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fsync_5fok_5',['SPI_SYNC_OK',['../namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fsync_5frequested_6',['SPI_SYNC_REQUESTED',['../namespacemtca4u_1_1dfmc__md22.html#a41c3584b3c2981e1fbda848eaebf5351',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fsync_5fsuffix_7',['SPI_SYNC_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ae2bbf6e9bdcdfb241810089b815d3820',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fwrite_5fsuffix_8',['SPI_WRITE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#aaf80f7218ce55b69f27008aa67710e22',1,'mtca4u::dfmc_md22']]],
+  ['stall_5fguard_5fcontrol_5fdefault_9',['STALL_GUARD_CONTROL_DEFAULT',['../namespacemtca4u.html#a18656b605d36709b1d0651f0b044c9d6',1,'mtca4u']]],
+  ['stall_5fguard_5fvalue_5fsuffix_10',['STALL_GUARD_VALUE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ae4fc1caecb9f843ce5ca3a02e5349906',1,'mtca4u::dfmc_md22']]],
+  ['stallguardcontroldata_11',['stallGuardControlData',['../structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc',1,'mtca4u::MotorControlerConfig']]],
+  ['status_5fsuffix_12',['STATUS_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ab5e87f171c099d32cbaab14c12d61c08',1,'mtca4u::dfmc_md22']]],
+  ['stepper_5fmotor_5fglobal_5fparameters_5fdefault_13',['STEPPER_MOTOR_GLOBAL_PARAMETERS_DEFAULT',['../namespacemtca4u.html#a79c25f27e80a4a75c32b46ae7357f510',1,'mtca4u']]],
+  ['steppermotorglobalparameters_14',['stepperMotorGlobalParameters',['../structmtca4u_1_1_motor_driver_card_config.html#a90f5e3c50c3e7ec7394574427ee36cb0',1,'mtca4u::MotorDriverCardConfig']]],
+  ['stopevent_15',['stopEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#aae91616f3880956567965248fb803ef2',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
+  ['systemclock_16',['systemClock',['../class_parameters_calculator_1_1_physical_parameters.html#a852114822c66fc5bb0007781f4bd22e2',1,'ParametersCalculator::PhysicalParameters']]]
 ];
