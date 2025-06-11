@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.05.02</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
    </div>
   </td>
  </tr>
@@ -98,53 +98,52 @@ $(document).ready(function(){initNavTree('type__erasing__vector_8hpp_source.html
   <div class="headertitle"><div class="title">type_erasing_vector.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="type__erasing__vector_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TYPE_ERASING_VECTOR_HPP</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TYPE_ERASING_VECTOR_HPP</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespacecppext_1_1experimental.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecppext.html">cppext</a> { <span class="keyword">namespace </span>experimental {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> CALLABLE&gt;</div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html">   42</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classcppext_1_1experimental_1_1type__erasing__vector.html">type_erasing_vector</a> {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>   <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a77a6df6e2b2c1e564979dabadf7e2c7e">   44</a></span>    <a class="code hl_function" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a77a6df6e2b2c1e564979dabadf7e2c7e">type_erasing_vector</a>(<a class="code hl_class" href="classcppext_1_1final__act.html">CALLABLE</a> <a class="code hl_class" href="classcppext_1_1final__act.html">callable_</a>) : callable(<a class="code hl_class" href="classcppext_1_1final__act.html">callable_</a>) {}</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a1acc96846469b7b50d34b021c471654b">   47</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a1acc96846469b7b50d34b021c471654b">push_back</a>(<span class="keyword">const</span> T&amp; value) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      functions.push_back(std::bind(callable, value));</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<a href="type__erasing__vector_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespacecppext_1_1experimental.html">    8</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecppext.html">cppext</a> { <span class="keyword">namespace </span>experimental {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> CALLABLE&gt;</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html">   43</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classcppext_1_1experimental_1_1type__erasing__vector.html">type_erasing_vector</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a77a6df6e2b2c1e564979dabadf7e2c7e">   45</a></span>    <a class="code hl_function" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a77a6df6e2b2c1e564979dabadf7e2c7e">type_erasing_vector</a>(<a class="code hl_class" href="classcppext_1_1final__act.html">CALLABLE</a> <a class="code hl_class" href="classcppext_1_1final__act.html">callable_</a>) : callable(<a class="code hl_class" href="classcppext_1_1final__act.html">callable_</a>) {}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a1acc96846469b7b50d34b021c471654b">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classcppext_1_1experimental_1_1type__erasing__vector.html#a1acc96846469b7b50d34b021c471654b">push_back</a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      functions.push_back(std::bind(callable, value));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html#aa2e3245b93b1af2b99994903c88b02d5">   51</a></span>    std::function&lt;<a class="code hl_class" href="classcppext_1_1final__act.html">void</a>(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classcppext_1_1experimental_1_1type__erasing__vector.html#aa2e3245b93b1af2b99994903c88b02d5">at</a>(<span class="keywordtype">size_t</span> <a class="code hl_class" href="classcppext_1_1final__act.html">index</a>) { <span class="keywordflow">return</span> functions.at(<a class="code hl_class" href="classcppext_1_1final__act.html">index</a>); }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classcppext_1_1final__act.html">CALLABLE</a> callable;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::vector&lt;std::function&lt;<a class="code hl_class" href="classcppext_1_1final__act.html">void</a>(<span class="keywordtype">void</span>)&gt;&gt; functions;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  };</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classcppext_1_1experimental_1_1type__erasing__vector.html#aa2e3245b93b1af2b99994903c88b02d5">   52</a></span>    std::function&lt;<a class="code hl_class" href="classcppext_1_1final__act.html">void</a>(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classcppext_1_1experimental_1_1type__erasing__vector.html#aa2e3245b93b1af2b99994903c88b02d5">at</a>(<span class="keywordtype">size_t</span> <a class="code hl_class" href="classcppext_1_1final__act.html">index</a>) { <span class="keywordflow">return</span> functions.at(<a class="code hl_class" href="classcppext_1_1final__act.html">index</a>); }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classcppext_1_1final__act.html">CALLABLE</a> callable;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::vector&lt;std::function&lt;<a class="code hl_class" href="classcppext_1_1final__act.html">void</a>(<span class="keywordtype">void</span>)&gt;&gt; functions;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  };</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}} <span class="comment">// namespace cppext::experimental</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}} <span class="comment">// namespace cppext::experimental</span></div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// TYPE_ERASING_VECTOR_HPP</span></div>
-<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html">cppext::experimental::type_erasing_vector</a></div><div class="ttdoc">A simple &quot;type erasing&quot; container which works without predefining a list of allowed types and calls a...</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00042">type_erasing_vector.hpp:42</a></div></div>
-<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html_a1acc96846469b7b50d34b021c471654b"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html#a1acc96846469b7b50d34b021c471654b">cppext::experimental::type_erasing_vector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00047">type_erasing_vector.hpp:47</a></div></div>
-<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html_a77a6df6e2b2c1e564979dabadf7e2c7e"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html#a77a6df6e2b2c1e564979dabadf7e2c7e">cppext::experimental::type_erasing_vector::type_erasing_vector</a></div><div class="ttdeci">type_erasing_vector(CALLABLE callable_)</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00044">type_erasing_vector.hpp:44</a></div></div>
-<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html_aa2e3245b93b1af2b99994903c88b02d5"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html#aa2e3245b93b1af2b99994903c88b02d5">cppext::experimental::type_erasing_vector::at</a></div><div class="ttdeci">std::function&lt; void(void)&gt; at(size_t index)</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00051">type_erasing_vector.hpp:51</a></div></div>
-<div class="ttc" id="aclasscppext_1_1final__act_html"><div class="ttname"><a href="classcppext_1_1final__act.html">cppext::final_act</a></div><div class="ttdef"><b>Definition</b> <a href="finally_8hpp_source.html#l00012">finally.hpp:12</a></div></div>
-<div class="ttc" id="anamespacecppext_html"><div class="ttname"><a href="namespacecppext.html">cppext</a></div><div class="ttdef"><b>Definition</b> <a href="barrier_8hpp_source.html#l00007">barrier.hpp:7</a></div></div>
+<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html">cppext::experimental::type_erasing_vector</a></div><div class="ttdoc">A simple &quot;type erasing&quot; container which works without predefining a list of allowed types and calls a...</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00043">type_erasing_vector.hpp:43</a></div></div>
+<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html_a1acc96846469b7b50d34b021c471654b"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html#a1acc96846469b7b50d34b021c471654b">cppext::experimental::type_erasing_vector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00048">type_erasing_vector.hpp:48</a></div></div>
+<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html_a77a6df6e2b2c1e564979dabadf7e2c7e"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html#a77a6df6e2b2c1e564979dabadf7e2c7e">cppext::experimental::type_erasing_vector::type_erasing_vector</a></div><div class="ttdeci">type_erasing_vector(CALLABLE callable_)</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00045">type_erasing_vector.hpp:45</a></div></div>
+<div class="ttc" id="aclasscppext_1_1experimental_1_1type__erasing__vector_html_aa2e3245b93b1af2b99994903c88b02d5"><div class="ttname"><a href="classcppext_1_1experimental_1_1type__erasing__vector.html#aa2e3245b93b1af2b99994903c88b02d5">cppext::experimental::type_erasing_vector::at</a></div><div class="ttdeci">std::function&lt; void(void)&gt; at(size_t index)</div><div class="ttdef"><b>Definition</b> <a href="type__erasing__vector_8hpp_source.html#l00052">type_erasing_vector.hpp:52</a></div></div>
+<div class="ttc" id="aclasscppext_1_1final__act_html"><div class="ttname"><a href="classcppext_1_1final__act.html">cppext::final_act</a></div><div class="ttdef"><b>Definition</b> <a href="finally_8hpp_source.html#l00013">finally.hpp:13</a></div></div>
+<div class="ttc" id="anamespacecppext_html"><div class="ttname"><a href="namespacecppext.html">cppext</a></div><div class="ttdef"><b>Definition</b> <a href="barrier_8hpp_source.html#l00008">barrier.hpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_1115b20bbe34500d5c740ca5480fdf3c.html">ChimeraTK-cppext</a></li><li class="navelem"><a class="el" href="dir_07438610803f9c044b7a1361b83a95dd.html">include</a></li><li class="navelem"><a class="el" href="type__erasing__vector_8hpp.html">type_erasing_vector.hpp</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:05:11 for ChimeraTK-cppext by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

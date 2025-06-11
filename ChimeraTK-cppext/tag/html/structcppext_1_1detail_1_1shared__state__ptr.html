@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.05.02</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>shared_ptr-like smart pointer type for referencing the <a class="el" href="structcppext_1_1detail_1_1shared__state.html" title="Internal class for holding the data which is shared between multiple instances of the same queue.">shared_state</a>. </p>
 <p>This is required (instead or in addition to using a shared_ptr), since in case of a async continuation the internal thread always holds a reference to the <a class="el" href="structcppext_1_1detail_1_1shared__state.html" title="Internal class for holding the data which is shared between multiple instances of the same queue.">shared_state</a> but should be destroyed when the last reference (outside the internal thread) gets destroyed. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00046">46</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00047">47</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a591b1105be3b19b3bfc93c62c3034043" name="a591b1105be3b19b3bfc93c62c3034043"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a591b1105be3b19b3bfc93c62c3034043">&#9670;&#160;</a></span>shared_state_ptr() <span class="overload">[1/2]</span></h2>
@@ -173,7 +173,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Default constructor: create empty pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00672">672</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00673">673</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,14 +203,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00674">674</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_acc90a96eacbbf9e3b1f307eefc50f5b2_cgraph.svg" width="426" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00675">675</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -239,7 +232,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00688">688</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00689">689</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,21 +256,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Cast into shared state for type T. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00723">723</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a1eef2e95e3a4a0dea2ee5259e838ed3b_cgraph.svg" width="384" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a1eef2e95e3a4a0dea2ee5259e838ed3b_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00730">730</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -306,14 +285,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Obtain the target pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00690">690</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a3f11b4404bf0920d1ce3cb43d8b44a9a_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00693">693</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,14 +309,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Create new <a class="el" href="structcppext_1_1detail_1_1shared__state.html" title="Internal class for holding the data which is shared between multiple instances of the same queue.">shared_state</a> for type T. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00706">706</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a053d0086172e59adff7e058b8c8c01ee_cgraph.svg" width="387" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00713">713</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +338,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Check if pointer is initialised. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00728">728</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00735">735</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -402,14 +367,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Dereferencing operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00712">712</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a0c61097dce5a4b5d5da595931f76fe05_cgraph.svg" width="388" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00719">719</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -436,14 +394,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00717">717</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a1d105fa02808dc1bf31a5349b1906a70_cgraph.svg" width="388" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00724">724</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,14 +424,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Copy by assignment. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00680">680</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a3aec192c531787e3516d277843991736_cgraph.svg" width="384" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00681">681</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,14 +454,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Check if two pointers are identical. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00730">730</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_ae9ad72577a596d7776e0162bda9e0df1_cgraph.svg" width="394" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00739">739</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -547,14 +484,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 
 <p>Set the target pointer without incrementing the reference counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00692">692</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__ptr_a480e9bb2e3289bcd5248786811d07ebc_icgraph.svg" width="426" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00697">697</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +497,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T &
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecppext.html">cppext</a></li><li class="navelem"><a class="el" href="namespacecppext_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structcppext_1_1detail_1_1shared__state__ptr.html">shared_state_ptr</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:05:11 for ChimeraTK-cppext by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

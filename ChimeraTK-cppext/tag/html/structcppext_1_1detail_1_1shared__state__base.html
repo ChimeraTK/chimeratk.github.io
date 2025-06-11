@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.05.02</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
    </div>
   </td>
  </tr>
@@ -188,7 +188,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Internal base class for holding the data which is shared between multiple instances of the same queue. </p>
 <p>The base class does not depend on the data type and is used by <a class="el" href="classcppext_1_1future__queue__base.html" title="Type-independent base class for future_queue which does not depend on the template argument.">future_queue_base</a>. Instances of this class must only be created dynamically using new() (don't allocate on the stack!), but the creator must not call delete(), but rather <a class="el" href="structcppext_1_1detail_1_1shared__state__base.html" title="Internal base class for holding the data which is shared between multiple instances of the same queue...">shared_state_base</a>'s <a class="el" href="structcppext_1_1detail_1_1shared__state__base.html#ad35aab5cd6cb27f24046ec107e7d20c6" title="Decreaces the reference count and calls &quot;delete this&quot; where appropriate.">free()</a> function, so as to correctly decrement references of this class and objects pointed to. The <a class="el" href="structcppext_1_1detail_1_1shared__state__base.html" title="Internal base class for holding the data which is shared between multiple instances of the same queue...">shared_state_base</a> and pointers to it must no longer be used after calling <a class="el" href="structcppext_1_1detail_1_1shared__state__base.html#ad35aab5cd6cb27f24046ec107e7d20c6" title="Decreaces the reference count and calls &quot;delete this&quot; where appropriate.">free()</a> since <a class="el" href="structcppext_1_1detail_1_1shared__state__base.html#ad35aab5cd6cb27f24046ec107e7d20c6" title="Decreaces the reference count and calls &quot;delete this&quot; where appropriate.">free()</a> may call "delete this". </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00355">355</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00356">356</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b6af4fe068ce075ebe0d843ca48b8ec" name="a3b6af4fe068ce075ebe0d843ca48b8ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b6af4fe068ce075ebe0d843ca48b8ec">&#9670;&#160;</a></span>shared_state_base()</h2>
@@ -214,7 +214,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00356">356</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00357">357</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Public Attributes</h2></td></tr>
 
 <p>Destructor must be virtual so the destructor of the derived class gets called. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00362">362</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00363">363</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,14 +274,7 @@ Public Attributes</h2></td></tr>
 <p>Decreaces the reference count and calls "delete this" where appropriate. </p>
 <p>The share_state_base object and pointers to it must not be used after calling <a class="el" href="structcppext_1_1detail_1_1shared__state__base.html#ad35aab5cd6cb27f24046ec107e7d20c6" title="Decreaces the reference count and calls &quot;delete this&quot; where appropriate.">free()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00452">452</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structcppext_1_1detail_1_1shared__state__base_ad35aab5cd6cb27f24046ec107e7d20c6_cgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00453">453</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +293,7 @@ Public Attributes</h2></td></tr>
 
 <p>If either is_continuation_deferred or is_continuation_async is true, this will point to the original queue of which *this is the continuation. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00430">430</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00431">431</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +311,7 @@ Public Attributes</h2></td></tr>
 
 <p>Thread handling async-type continuations. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00418">418</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00419">419</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +329,7 @@ Public Attributes</h2></td></tr>
 
 <p>Flag whether the internal thread <a class="el" href="structcppext_1_1detail_1_1continuation__process__async.html">continuation_process_async</a> has been terminated. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00422">422</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00423">423</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -354,7 +347,7 @@ Public Attributes</h2></td></tr>
 
 <p>Function to be called for deferred evaulation of a single value if this queue is a continuation. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00407">407</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00408">408</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +366,7 @@ Public Attributes</h2></td></tr>
 <p>Function to be called for deferred evaulation of a single value if this queue is a continuation. </p>
 <p>This version is supposed to wait until there is data to process. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00412">412</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00413">413</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -391,7 +384,7 @@ Public Attributes</h2></td></tr>
 
 <p>vector of exception pointers, can be set instead of values through push_exception() </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00383">383</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00384">384</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -410,7 +403,7 @@ Public Attributes</h2></td></tr>
 <p>Flag if the receiver has already ownership over the front element. </p>
 <p>This flag may only be used by the receiver. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00399">399</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00400">400</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +421,7 @@ Public Attributes</h2></td></tr>
 
 <p>Flag whether this <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> is a async-type continuation of another. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00415">415</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00416">416</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -446,7 +439,7 @@ Public Attributes</h2></td></tr>
 
 <p>Flag whether this <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> is a deferred-type continuation of another. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00403">403</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00404">404</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +457,7 @@ Public Attributes</h2></td></tr>
 
 <p>Flag whether this <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> is a when_all-type continuation (of many other) </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00426">426</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00427">427</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +475,7 @@ Public Attributes</h2></td></tr>
 
 <p>the number of buffers we have allocated </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00375">375</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00376">376</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -500,7 +493,7 @@ Public Attributes</h2></td></tr>
 
 <p>index of the element which will be next read </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00395">395</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00396">396</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +512,7 @@ Public Attributes</h2></td></tr>
 <p>maximum index which the receiver is currently allowed to read (after checking it semaphore). </p>
 <p>Often equal to writeIndex, unless write operations are currently in progress </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00392">392</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00393">393</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -538,7 +531,7 @@ Public Attributes</h2></td></tr>
 <p>reference count. </p>
 <p>See <a class="el" href="structcppext_1_1detail_1_1shared__state__ptr.html" title="shared_ptr-like smart pointer type for referencing the shared_state.">shared_state_ptr</a> for further documentation. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00369">369</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00370">370</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +549,7 @@ Public Attributes</h2></td></tr>
 
 <p>vector of semaphores corresponding to the buffers which allows the receiver to wait for new data </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00379">379</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00380">380</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +567,7 @@ Public Attributes</h2></td></tr>
 
 <p>index used in wait_any to identify the queue </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00372">372</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00373">373</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +583,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00432">432</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00433">433</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -609,7 +602,7 @@ Public Attributes</h2></td></tr>
 <p>index of the element which will be next written </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FIXME protect handling of all indices against overruns of size_t! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00387">387</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00388">388</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -622,7 +615,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecppext.html">cppext</a></li><li class="navelem"><a class="el" href="namespacecppext_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structcppext_1_1detail_1_1shared__state__base.html">shared_state_base</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:05:11 for ChimeraTK-cppext by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.05.02</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
    </div>
   </td>
  </tr>
@@ -204,7 +204,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Type-independent base class for <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> which does not depend on the template argument. </p>
 <p>For a description see <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00107">107</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00108">108</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a48663b9633da99b998ecac58d825fae3" name="a48663b9633da99b998ecac58d825fae3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48663b9633da99b998ecac58d825fae3">&#9670;&#160;</a></span>future_queue_base() <span class="overload">[1/2]</span></h2>
@@ -230,7 +230,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00892">892</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00907">907</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00894">894</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00909">909</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Friends</h2></td></tr>
 
 <p>Decrement the "previous data" counter used in <a class="el" href="classcppext_1_1future__queue__base.html#af4f0dc7e7ba5c93f9e8d912a6903851c" title="Implementations of non-member functions.">when_any()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00785">785</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00796">796</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -317,14 +317,7 @@ Friends</h2></td></tr>
 <p>Check if there is currently no data on the queue. </p>
 <p>If the queue contains data (i.e. true will be returned), the function will guarantee that this data can be accessed later e.g. thorugh front() or pop(). This guarantee holds even if the sender uses pop_overwrite(). </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00862">862</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_ab41a07d65910c604d5b2e248fedfde05_icgraph.svg" width="462" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00873">873</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -355,14 +348,7 @@ Friends</h2></td></tr>
 <p>The counter is incremented if no notification queue is set. This allows wait_any to determine how many pending values are in the value queue, so it can place corresponding notifications to the notification queue.</p>
 <p>The call to this function must take place before signalling the receiving side of the queue, so the corresponding call to <a class="el" href="classcppext_1_1future__queue__base.html#a5af74d2f04c2cd6822ea49241fd8dd9d" title="Decrement the &quot;previous data&quot; counter used in when_any().">decrement_previous_data_counter()</a> is properly synchronised. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00758">758</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_a99d76b81d37decef5db4d75d1f92c143_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00769">769</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,14 +379,7 @@ Friends</h2></td></tr>
 <p>reserve next available write slot. </p>
 <p>Returns false if no free slot is available or true on success. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00896">896</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_aea7be12e8ccba68aada6c3a3a236295e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00911">911</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +407,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00890">890</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00903">903</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +438,7 @@ Friends</h2></td></tr>
 <p>Check whether two <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> instances use the same shared state, i.e. </p>
 <p>represent the same queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00888">888</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00899">899</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -490,21 +469,7 @@ Friends</h2></td></tr>
 <p>Push an exception pointer (inplace of a value) into the queue. </p>
 <p>The exception gets thrown by pop()/pop_wait()/front() when the receiver reads the corresponding queue element. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00796">796</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_a7665c6142d0f73abd148781a5af8c598_cgraph.svg" width="458" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_a7665c6142d0f73abd148781a5af8c598_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00807">807</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -535,14 +500,7 @@ Friends</h2></td></tr>
 <p>Like <a class="el" href="classcppext_1_1future__queue__base.html#a7665c6142d0f73abd148781a5af8c598" title="Push an exception pointer (inplace of a value) into the queue.">push_exception()</a> but overwrite the last pushed value in case the queue is full. </p>
 <p>See also push_overwrite() for more information. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00817">817</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_ae8f61c2a8529b1c9f7961189aaf9d611_cgraph.svg" width="455" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00828">828</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -572,7 +530,7 @@ Friends</h2></td></tr>
 <p>Number of pop operations which can be performed before the queue is empty. </p>
 <p>Note that the result can be inaccurate in case the sender uses push_overwrite(). If a guarantee is required that a readable element is present before accessing it through pop() or front(), use <a class="el" href="classcppext_1_1future__queue__base.html#ab41a07d65910c604d5b2e248fedfde05" title="Check if there is currently no data on the queue.">empty()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00753">753</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00764">764</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -604,14 +562,7 @@ Friends</h2></td></tr>
 <p>The notification queue must be obtained before through <a class="el" href="classcppext_1_1future__queue__base.html#a99d76b81d37decef5db4d75d1f92c143" title="Atomically return the notification queue or increment the &quot;previous data&quot; counter (for wait_any).">get_notification_queue()</a>.</p>
 <p>The call to this function must take place after signalling the receiving side of the queue, so the value is available right away when receiving the notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00771">771</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_a8ec3af69b7e9b7b06ebd15d49ba0cba2_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00782">782</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +603,7 @@ Friends</h2></td></tr>
 <p>Set the notification queue in the shared state, as done in when_any. </p>
 <p>Returns the number of data in the queue at the time the notification queue was set (atomically). </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00921">921</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00936">936</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -681,7 +632,7 @@ Friends</h2></td></tr>
 
 <p>return length of the queue </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00879">879</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00890">890</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -710,14 +661,7 @@ Friends</h2></td></tr>
 
 <p>update readIndexMax after a write operation was completed </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00906">906</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_a8384de814d10e0c85eba712debe838fb_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00921">921</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -747,14 +691,7 @@ Friends</h2></td></tr>
 <p>Wait until the queue is not empty. </p>
 <p>This function guarantees similar like <a class="el" href="classcppext_1_1future__queue__base.html#ab41a07d65910c604d5b2e248fedfde05" title="Check if there is currently no data on the queue.">empty()</a> that after this call data can be accessed e.g. through front() or pop(). </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00872">872</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue__base_a6f3214b9a16f4c2c5006393234afaaf7_icgraph.svg" width="468" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00883">883</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -785,7 +722,7 @@ Friends</h2></td></tr>
 <p>Implementation of <a class="el" href="classcppext_1_1future__queue__base.html" title="Type-independent base class for future_queue which does not depend on the template argument.">future_queue_base</a>.</p>
 <p>Note that the result may be inacurate e.g. in multi-producer contexts. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00740">740</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00751">751</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -812,7 +749,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00186">186</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00187">187</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -838,7 +775,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00198">198</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00199">199</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -862,7 +799,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00194">194</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00195">195</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -886,7 +823,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00195">195</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00196">196</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -929,7 +866,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>This function expects two forward iterators pointing to a region of a container of <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> objects. </p>
 <p>It returns a <a class="el" href="classcppext_1_1future__queue.html">future_queue&lt;void&gt;</a> which will receive a notification when all of the queues in the region have received a new value. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00589">589</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00590">590</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -975,7 +912,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>If push_overwrite() is used on one of the participating queues, the notifications received through the returned queue might be in a different order (i.e. when data is overwritten, the corresponding queue index is not moved to the correct place later in the notfication queue). Also, a notification for a value written to a queue with push_overwrite() might appear in the notification queue before the value can be retrieved from the data queue. It is therefore recommended to use pop_wait() to retrieve the values from the data queues if push_overwrite() is used. Otherwise failed pop() have to be retried until the data is received.</p>
 <p>If data is already available in the queues before calling <a class="el" href="classcppext_1_1future__queue__base.html#af4f0dc7e7ba5c93f9e8d912a6903851c" title="Implementations of non-member functions.">when_any()</a>, the appropriate number of notifications are placed in the notifyer queue in arbitrary order. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00561">561</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00562">562</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +939,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 
 <p>pointer to data used to allow sharing the queue (create multiple copies which all refer to the same queue). </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00183">183</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00184">184</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +952,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecppext.html">cppext</a></li><li class="navelem"><a class="el" href="classcppext_1_1future__queue__base.html">future_queue_base</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:05:11 for ChimeraTK-cppext by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

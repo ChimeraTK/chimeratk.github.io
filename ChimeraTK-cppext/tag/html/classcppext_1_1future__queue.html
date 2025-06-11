@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.05.02</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
    </div>
   </td>
  </tr>
@@ -253,7 +253,7 @@ class cppext::future_queue&lt; T, FEATURES &gt;</div><p>A lockfree multi-produce
 </ul>
 <p>In both cases, T must be default constructible. Upon creation of the queue all internal buffers will be filled with default constructed elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00228">228</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00229">229</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3156a4f9a08e6cbe3f4761a014f9b7fc" name="a3156a4f9a08e6cbe3f4761a014f9b7fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3156a4f9a08e6cbe3f4761a014f9b7fc">&#9670;&#160;</a></span>value_type</h2>
@@ -269,7 +269,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00331">331</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00332">332</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 <p>Implementation of <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a>.</p>
 <p>Internally additional buffers will be allocated-&gt; All buffers are allocated upon construction, so no dynamic memory allocation is required later. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00955">955</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00970">970</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 
 <p>The default constructor creates only a place holder which can later be assigned with a properly constructed queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00958">958</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00973">973</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -379,21 +379,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>Note: No const variant exists, since <a class="el" href="classcppext_1_1future__queue__base.html#ab41a07d65910c604d5b2e248fedfde05" title="Check if there is currently no data on the queue.">empty()</a> already changes the state of the queue internally (to acquire ownership on the front element, so <a class="el" href="classcppext_1_1future__queue.html#a628061e94d90758bb78c6343229640d0" title="This version of push_overwrite() is valid only for T=void.">push_overwrite()</a> can no longer overwrite it). Without a const variant of <a class="el" href="classcppext_1_1future__queue__base.html#ab41a07d65910c604d5b2e248fedfde05" title="Check if there is currently no data on the queue.">empty()</a>, a const variant of <a class="el" href="classcppext_1_1future__queue.html#ac0e89fcfd55f9a61fa32fec5bfb8173a" title="Obtain the front element of the queue without removing it.">front()</a> would be unusable.</p>
 <p>This <a class="el" href="classcppext_1_1future__queue.html#ac0e89fcfd55f9a61fa32fec5bfb8173a" title="Obtain the front element of the queue without removing it.">front()</a> is for non-void data types and a non-const *this </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01191">1191</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_ac0e89fcfd55f9a61fa32fec5bfb8173a_cgraph.svg" width="592" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_ac0e89fcfd55f9a61fa32fec5bfb8173a_icgraph.svg" width="468" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01206">1206</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +404,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 
 <p>This <a class="el" href="classcppext_1_1future__queue.html#ac0e89fcfd55f9a61fa32fec5bfb8173a" title="Obtain the front element of the queue without removing it.">front()</a> is for void data types. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01200">1200</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01215">1215</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -471,7 +457,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 
 <p>This <a class="el" href="classcppext_1_1future__queue.html#a3cf26b7974d1b28a4f070bf35cd70031" title="This pop() is for all data types (for non-void data types the value will be discarded)">pop()</a> is for all data types (for non-void data types the value will be discarded) </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01118">1118</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01133">1133</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -500,21 +486,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>If no data is available, false is returned</p>
 <p>This <a class="el" href="classcppext_1_1future__queue.html#a3cf26b7974d1b28a4f070bf35cd70031" title="This pop() is for all data types (for non-void data types the value will be discarded)">pop()</a> is for non-void data types </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01090">1090</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a42a0a7f4fbffbe0911990de5fd76dc75_cgraph.svg" width="399" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a42a0a7f4fbffbe0911990de5fd76dc75_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01105">1105</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -537,7 +509,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 
 <p>This <a class="el" href="classcppext_1_1future__queue.html#a08ba4fd52b05b1acb462ec5e6bb6b0c7" title="This pop_wait() is for all data types (for non-void data types the value will be discarded)">pop_wait()</a> is for all data types (for non-void data types the value will be discarded) </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01167">1167</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01182">1182</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -565,21 +537,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>This pop_void() is for non-void data types.</p>
 <p>This function will block until data is available. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01142">1142</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a773272befcc5a9b8deb29e5e966e1d68_cgraph.svg" width="367" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a773272befcc5a9b8deb29e5e966e1d68_icgraph.svg" width="466" height="332"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01157">1157</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +563,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 
 <p>This <a class="el" href="classcppext_1_1future__queue.html#aeebd866575e603a2ac465c7f4f9733a7" title="This version of push() is valid only for T=void.">push()</a> is for non-void data types passed by Lvalue reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00992">992</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01007">1007</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -634,21 +592,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>Returns true if successful and false if queue is full.</p>
 <p>This <a class="el" href="classcppext_1_1future__queue.html#aeebd866575e603a2ac465c7f4f9733a7" title="This version of push() is valid only for T=void.">push()</a> is for non-void data types passed by Rvalue reference </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00966">966</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a2a7e69daf329e7fe0b1ebdd7e02ca1b3_cgraph.svg" width="367" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a2a7e69daf329e7fe0b1ebdd7e02ca1b3_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00981">981</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +617,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> T ,
 <p>This version of <a class="el" href="classcppext_1_1future__queue.html#aeebd866575e603a2ac465c7f4f9733a7" title="This version of push() is valid only for T=void.">push()</a> is valid only for T=void. </p>
 <p>This <a class="el" href="classcppext_1_1future__queue.html#aeebd866575e603a2ac465c7f4f9733a7" title="This version of push() is valid only for T=void.">push()</a> is for void data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01000">1000</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01015">1015</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -720,7 +664,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 
 <p>This <a class="el" href="classcppext_1_1future__queue.html#a628061e94d90758bb78c6343229640d0" title="This version of push_overwrite() is valid only for T=void.">push_overwrite()</a> is for non-void data types passed by Lvalue reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01078">1078</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01093">1093</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -750,14 +694,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>When using this function, the queue must have a length of at least 2.</p>
 <p>Note: when used in a multi-producer context and false is returned, it is not defined whether other data or data written in this call to <a class="el" href="classcppext_1_1future__queue.html#a628061e94d90758bb78c6343229640d0" title="This version of push_overwrite() is valid only for T=void.">push_overwrite()</a> has been discarded. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01027">1027</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a0f7cd302b6098a040894735f75ae9005_cgraph.svg" width="367" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01042">1042</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -799,14 +736,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <li>std::launch::deferred will defer data processing until the data is accessed on the resulting queue. Checking the presence through <a class="el" href="classcppext_1_1future__queue__base.html#ab41a07d65910c604d5b2e248fedfde05" title="Check if there is currently no data on the queue.">empty()</a> is already counted an access. If the same data is accessed multiple times (e.g. by calling <a class="el" href="classcppext_1_1future__queue.html#ac0e89fcfd55f9a61fa32fec5bfb8173a" title="Obtain the front element of the queue without removing it.">front()</a> several times), the callable is only executed once. If neither std::launch::async (which is the default) nor std::launch::deferred is specified, the behaviour is undefined. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01577">1577</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classcppext_1_1future__queue_a403a9c26a8e8d422d6e6ff84cf424af1_cgraph.svg" width="431" height="210"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l01592">1592</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +749,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecppext.html">cppext</a></li><li class="navelem"><a class="el" href="classcppext_1_1future__queue.html">future_queue</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:05:11 for ChimeraTK-cppext by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

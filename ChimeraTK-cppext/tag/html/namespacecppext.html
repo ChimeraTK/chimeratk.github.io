@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.05.02</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
    </div>
   </td>
  </tr>
@@ -171,7 +171,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">class</a> <a cla
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finally_8hpp_source.html#l00031">31</a> of file <a class="el" href="finally_8hpp_source.html">finally.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="finally_8hpp_source.html#l00032">32</a> of file <a class="el" href="finally_8hpp_source.html">finally.hpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +201,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">class</a> <a cla
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finally_8hpp_source.html#l00036">36</a> of file <a class="el" href="finally_8hpp_source.html">finally.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="finally_8hpp_source.html#l00037">37</a> of file <a class="el" href="finally_8hpp_source.html">finally.hpp</a>.</p>
 
 </div>
 </div>
@@ -236,14 +236,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>This function expects two forward iterators pointing to a region of a container of <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> objects. </p>
 <p>It returns a <a class="el" href="classcppext_1_1future__queue.html">future_queue&lt;void&gt;</a> which will receive a notification when all of the queues in the region have received a new value. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00589">589</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecppext_ae6b851409ecc7cb19c9ef1a86221a851_icgraph.svg" width="246" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00590">590</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,14 +274,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <p>If push_overwrite() is used on one of the participating queues, the notifications received through the returned queue might be in a different order (i.e. when data is overwritten, the corresponding queue index is not moved to the correct place later in the notfication queue). Also, a notification for a value written to a queue with push_overwrite() might appear in the notification queue before the value can be retrieved from the data queue. It is therefore recommended to use pop_wait() to retrieve the values from the data queues if push_overwrite() is used. Otherwise failed pop() have to be retried until the data is received.</p>
 <p>If data is already available in the queues before calling <a class="el" href="namespacecppext.html#a015ade366c1cb2388631f4d9b8000877" title="Implementations of non-member functions.">when_any()</a>, the appropriate number of notifications are placed in the notifyer queue in arbitrary order. </p>
 
-<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00561">561</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecppext_a015ade366c1cb2388631f4d9b8000877_icgraph.svg" width="254" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="future__queue_8hpp_source.html#l00562">562</a> of file <a class="el" href="future__queue_8hpp_source.html">future_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -298,7 +284,7 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">typename</a> <a 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecppext.html">cppext</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:05:11 for ChimeraTK-cppext by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
