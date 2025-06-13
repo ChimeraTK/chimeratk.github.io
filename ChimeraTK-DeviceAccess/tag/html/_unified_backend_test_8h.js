@@ -1,6 +1,6 @@
 var _unified_backend_test_8h =
 [
-    [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion >", "struct_chimera_t_k_1_1_test_capabilities.html", "struct_chimera_t_k_1_1_test_capabilities" ],
+    [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly, _writeNeverLosesData, _testWriteOnly, _testReadOnly, _testRawTransfer, _testCatalogue, _setRemoteValueIncrementsVersion, _testPartialAccessor >", "struct_chimera_t_k_1_1_test_capabilities.html", "struct_chimera_t_k_1_1_test_capabilities" ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", "class_chimera_t_k_1_1_unified_backend_test" ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::ExceptionReportingBackend", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend" ],

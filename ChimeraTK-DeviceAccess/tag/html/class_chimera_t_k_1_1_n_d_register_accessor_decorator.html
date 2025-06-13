@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_n_d_register_acc
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_n_d_register_acc
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator__coll__graph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator__coll__graph.svg" width="100%" height="562"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -150,21 +151,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4eee9c9221bf2ac861f1d734ae447a84" id="r_a4eee9c9221bf2ac861f1d734ae447a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">setPersistentDataStorage</a> (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt; storage) override</td></tr>
 <tr class="memdesc:a4eee9c9221bf2ac861f1d734ae447a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a persistent data storage object to be updated on each write operation of this ProcessArray.  <br /></td></tr>
 <tr class="separator:a4eee9c9221bf2ac861f1d734ae447a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ca683f56281a04da996e052c024ba2" id="r_af5ca683f56281a04da996e052c024ba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#af5ca683f56281a04da996e052c024ba2">setInReadAnyGroup</a> (<a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *rag) override</td></tr>
+<tr class="memdesc:af5ca683f56281a04da996e052c024ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> of which this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of.  <br /></td></tr>
+<tr class="separator:af5ca683f56281a04da996e052c024ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ee5febe49ac00d6e0523acbf777266" id="r_a91ee5febe49ac00d6e0523acbf777266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a91ee5febe49ac00d6e0523acbf777266">replaceTransferElement</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> &gt; newElement) override</td></tr>
 <tr class="separator:a91ee5febe49ac00d6e0523acbf777266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69200430f5ce28151a4b067bbad37a83" id="r_a69200430f5ce28151a4b067bbad37a83"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69200430f5ce28151a4b067bbad37a83">decorateDeepInside</a> (std::function&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;(const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; &amp;)&gt; factory) override</td></tr>
+<tr class="memdesc:a69200430f5ce28151a4b067bbad37a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate the innermost <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> of the stack of decorators or decorator-like accessors.  <br /></td></tr>
+<tr class="separator:a69200430f5ce28151a4b067bbad37a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a3d128ee8a823743e5a032d23ca726" id="r_a19a3d128ee8a823743e5a032d23ca726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a19a3d128ee8a823743e5a032d23ca726">setExceptionBackend</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; exceptionBackend) override</td></tr>
 <tr class="memdesc:a19a3d128ee8a823743e5a032d23ca726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend to which the exception has to be reported.  <br /></td></tr>
 <tr class="separator:a19a3d128ee8a823743e5a032d23ca726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa53474af7726cac1b8437a3aa4ea2fb4" id="r_aa53474af7726cac1b8437a3aa4ea2fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aa53474af7726cac1b8437a3aa4ea2fb4">interrupt</a> () override</td></tr>
 <tr class="memdesc:aa53474af7726cac1b8437a3aa4ea2fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <br /></td></tr>
 <tr class="separator:aa53474af7726cac1b8437a3aa4ea2fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6e0891d9e41592861c67c21bbcadfaac" id="r_a6e0891d9e41592861c67c21bbcadfaac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a6e0891d9e41592861c67c21bbcadfaac">initFromTarget</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor</a>&lt; TargetUserType &gt; &gt; &amp;target)</td></tr>
+<tr class="separator:a6e0891d9e41592861c67c21bbcadfaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType, typename TargetUserType = UserType&gt;<br />
 class ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</div><p><a class="el" href="class_chimera_t_k_1_1_base.html">Base</a> class for decorators of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a>. </p>
 <p>This is basically an empty decorator, so implementations can easily extend by overriding only single functions (and usually calling the implementations of this class inside the overrides). </p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00120">120</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00089">89</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a313cba7e77fdea5dc355f86d13956908" name="a313cba7e77fdea5dc355f86d13956908"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a313cba7e77fdea5dc355f86d13956908">&#9670;&#160;</a></span>NDRegisterAccessorDecorator()</h2>
@@ -172,7 +184,7 @@ class ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -187,23 +199,65 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00122">122</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00262">262</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a69200430f5ce28151a4b067bbad37a83" name="a69200430f5ce28151a4b067bbad37a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69200430f5ce28151a4b067bbad37a83">&#9670;&#160;</a></span>decorateDeepInside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename TargetUserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">ChimeraTK::NDRegisterAccessorDecorator</a>&lt; UserType, TargetUserType &gt;::decorateDeepInside </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;(const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>factory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decorate the innermost <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> of the stack of decorators or decorator-like accessors. </p>
+<p>Decorators (and certain decorator-like accessors which shall allow this type of "inside" decoration) shall first attempt to delegate a call to <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69200430f5ce28151a4b067bbad37a83" title="Decorate the innermost TransferElement of the stack of decorators or decorator-like accessors.">decorateDeepInside()</a> to their target. Accessors which cannot decorate an internal target simply do not implement this function, so the default implementation returns a nulled shared_ptr. Only if a decorator (or decorator-like accessor) sees that the delegated call returns a nulled shared_ptr, it shall use the factory to decorate its target, and then return its new (now decorated) target. If the delegated call returned a non-nulled shared_ptr, that shared_ptr must be passed through unaltered.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">factory</td><td>Functor object to create the decorator. The functor takes one argument, which is the target accessor to be decorated. The functor may return a nulled pointer if the target is not suitable for decoration, in which case it will be retired on level further out, if applicable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>{nullptr} if no decoration can be done inside, otherwise the decorator created by the factory function. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a877cac1e0fb7c9c92e4e323b61fc8acb">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00422">422</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+
+</div>
+</div>
 <a id="a9559d505d8c8826a5acc8e03a0fb6f7f" name="a9559d505d8c8826a5acc8e03a0fb6f7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9559d505d8c8826a5acc8e03a0fb6f7f">&#9670;&#160;</a></span>doPreRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -218,7 +272,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -231,14 +285,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; T, IMPL_T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; ChimeraTK::Void, ChimeraTK::Void &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; ChimeraTK::Void, IMPL_T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; ChimeraTK::Void, std::string &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; std::string, ChimeraTK::Void &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; std::string, IMPL_T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; T, ChimeraTK::Void &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08">ChimeraTK::TypeChangingDecorator&lt; T, std::string &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00151">151</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator_a9559d505d8c8826a5acc8e03a0fb6f7f_icgraph.svg" width="446" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00327">327</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +295,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -262,7 +309,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -277,14 +324,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00149">149</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator_a39a2683ac35dfa94510eee80c969b0ad_icgraph.svg" width="568" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00320">320</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +334,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -309,7 +349,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -322,14 +362,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00141">141</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator_ad65f9df8ac9783cce0c7466fbfa32b10_icgraph.svg" width="446" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00305">305</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +372,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -354,7 +387,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -369,7 +402,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00145">145</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00312">312</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +412,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -393,7 +426,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -404,14 +437,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac69c35862286b6a67cd5a11536c8a408">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00159">159</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator_aa340c9821647d8c43e5b1fba63a7382d_icgraph.svg" width="595" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00356">356</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +447,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -435,7 +461,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -448,14 +474,37 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4a511b856a6d966647f3ed38feca55cc">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00163">163</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00364">364</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator_a01cb40ee0a27d204252355dbca80ac5c_icgraph.svg" width="448" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+<a id="a6e0891d9e41592861c67c21bbcadfaac" name="a6e0891d9e41592861c67c21bbcadfaac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e0891d9e41592861c67c21bbcadfaac">&#9670;&#160;</a></span>initFromTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename TargetUserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">ChimeraTK::NDRegisterAccessorDecorator</a>&lt; UserType, TargetUserType &gt;::initFromTarget </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor</a>&lt; TargetUserType &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00272">272</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +514,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -479,7 +528,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -492,7 +541,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00180">180</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00415">415</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +551,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -516,7 +565,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -526,7 +575,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00155">155</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00341">341</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +585,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -550,7 +599,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -560,7 +609,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00153">153</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00334">334</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -570,7 +619,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -584,7 +633,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -594,7 +643,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00157">157</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00348">348</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -624,14 +673,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00203">203</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_decorator_a91ee5febe49ac00d6e0523acbf777266_icgraph.svg" width="546" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00389">389</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -641,7 +683,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -656,7 +698,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -667,7 +709,41 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a23782060d06fa418950b74f8b10d4ec8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00175">175</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00406">406</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="af5ca683f56281a04da996e052c024ba2" name="af5ca683f56281a04da996e052c024ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ca683f56281a04da996e052c024ba2">&#9670;&#160;</a></span>setInReadAnyGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename TargetUserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">ChimeraTK::NDRegisterAccessorDecorator</a>&lt; UserType, TargetUserType &gt;::setInReadAnyGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *&#160;</td>
+          <td class="paramname"><em>rag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> of which this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab8ca2fc42809ca55f606c626235c7b91">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00381">381</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -677,7 +753,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
+template&lt;typename UserType , typename TargetUserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -692,7 +768,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -703,7 +779,7 @@ template&lt;typename UserType , typename TargetUserType  = UserType&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00169">169</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_decorator_8h_source.html#l00373">373</a> of file <a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>

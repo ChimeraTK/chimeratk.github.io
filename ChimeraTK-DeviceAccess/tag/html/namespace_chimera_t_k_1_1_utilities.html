@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -110,6 +110,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a685a9e8b21d8fe1d21d9fa5941e3d2bc" id="r_a685a9e8b21d8fe1d21d9fa5941e3d2bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_sdm.html">Sdm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a685a9e8b21d8fe1d21d9fa5941e3d2bc">parseDeviceString</a> (const std::string &amp;deviceString)</td></tr>
 <tr class="memdesc:a685a9e8b21d8fe1d21d9fa5941e3d2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an old-style device string (either path to device node or map file name for dummies)  <br /></td></tr>
 <tr class="separator:a685a9e8b21d8fe1d21d9fa5941e3d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ba24611f93991206a0dfb26bd6ec38" id="r_a49ba24611f93991206a0dfb26bd6ec38"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a49ba24611f93991206a0dfb26bd6ec38">shmDummyInstanceIdHash</a> (const std::string &amp;address, const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
+<tr class="memdesc:a49ba24611f93991206a0dfb26bd6ec38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates shm dummy instanceId hash from address and parameter map, Intended for use with parseDeviceDesciptor return value.  <br /></td></tr>
+<tr class="separator:a49ba24611f93991206a0dfb26bd6ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b7bf96a69e0e412bc6fa602e2f6f6c" id="r_ac4b7bf96a69e0e412bc6fa602e2f6f6c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#ac4b7bf96a69e0e412bc6fa602e2f6f6c">createShmName</a> (std::size_t instanceIdHash, const std::string &amp;mapFileName, const std::string &amp;userName)</td></tr>
+<tr class="memdesc:ac4b7bf96a69e0e412bc6fa602e2f6f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates shm dummy name from parameter hashes.  <br /></td></tr>
+<tr class="separator:ac4b7bf96a69e0e412bc6fa602e2f6f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba5af0fe01ab6b38bedbc32749eb5ce" id="r_a5ba5af0fe01ab6b38bedbc32749eb5ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a5ba5af0fe01ab6b38bedbc32749eb5ce">isSdm</a> (const std::string &amp;theString)</td></tr>
 <tr class="memdesc:a5ba5af0fe01ab6b38bedbc32749eb5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check wehter the given string seems to be an SDM.  <br /></td></tr>
 <tr class="separator:a5ba5af0fe01ab6b38bedbc32749eb5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,21 +162,7 @@ Functions</h2></td></tr>
 <p>Search for an alias in a given DMap file and return the DeviceInfo entry. </p>
 <p>If the alias is not found, the DeviceInfo will have empty strings. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00286">286</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a2eee1bba7066a6d441061840f63ccd6d_cgraph.svg" width="100%" height="429"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a2eee1bba7066a6d441061840f63ccd6d_icgraph.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00288">288</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -202,14 +194,45 @@ Functions</h2></td></tr>
 
 <p>Check if the given string only contains alphanumeric characters. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00021">21</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00023">23</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
+
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a5bf0fb7a4de6e9fba9e6b36baa4bf531_icgraph.svg" width="642" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+<a id="ac4b7bf96a69e0e412bc6fa602e2f6f6c" name="ac4b7bf96a69e0e412bc6fa602e2f6f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b7bf96a69e0e412bc6fa602e2f6f6c">&#9670;&#160;</a></span>createShmName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChimeraTK::Utilities::createShmName </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>instanceIdHash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>mapFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>userName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates shm dummy name from parameter hashes. </p>
+
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00366">366</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -230,21 +253,7 @@ Functions</h2></td></tr>
 
 <p>Returns the list of device aliases from the DMap file set using <a class="el" href="class_chimera_t_k_1_1_backend_factory.html#a7348fb0d34d8737df3fa4f396fc5163d">BackendFactory::setDMapFilePath</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00295">295</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a25a0748d411f914029fd961f040bd2ee_cgraph.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a25a0748d411f914029fd961f040bd2ee_icgraph.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00297">297</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -267,7 +276,7 @@ Functions</h2></td></tr>
 <p>Check whether the given string seems to be a CDD. </p>
 <p>There is no guarantee that the CDD is well-formed, the function just looks for the signature of a CDD. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00037">37</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00039">39</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,14 +299,7 @@ Functions</h2></td></tr>
 <p>Check wehter the given string seems to be an SDM. </p>
 <p>There is no guarantee that the SDM is well-formed, the finction just looks for the signatore of an SDM. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00028">28</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a5ba5af0fe01ab6b38bedbc32749eb5ce_icgraph.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00030">30</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -319,14 +321,7 @@ Functions</h2></td></tr>
 
 <p>Parse a <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> device descriptor (CDD) and return the information in the <a class="el" href="struct_chimera_t_k_1_1_device_descriptor.html" title="This structure holds the information of an ChimeraTK device descriptor.">DeviceDescriptor</a> struct. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00047">47</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a01df8292c600039a0d654b7591e33a45_icgraph.svg" width="423" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00049">49</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -348,14 +343,7 @@ Functions</h2></td></tr>
 
 <p>Parse an old-style device string (either path to device node or map file name for dummies) </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00260">260</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_a685a9e8b21d8fe1d21d9fa5941e3d2bc_icgraph.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00262">262</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,21 +365,7 @@ Functions</h2></td></tr>
 
 <p>Parse an SDM URI and return the device information in the <a class="el" href="struct_chimera_t_k_1_1_sdm.html" title="This structure holds the information of an SDM.">Sdm</a> struct. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00189">189</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_aa1751b9f4874cde2c2c92581681852a0_cgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_utilities_aa1751b9f4874cde2c2c92581681852a0_icgraph.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00191">191</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +387,39 @@ Functions</h2></td></tr>
 <p>Print a call stack trace (but continue executing the process normally). </p>
 <p>Can be used for debugging. C++ names will be demangled, if possible. </p>
 
-<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00333">333</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00335">335</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a49ba24611f93991206a0dfb26bd6ec38" name="a49ba24611f93991206a0dfb26bd6ec38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ba24611f93991206a0dfb26bd6ec38">&#9670;&#160;</a></span>shmDummyInstanceIdHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t ChimeraTK::Utilities::shmDummyInstanceIdHash </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates shm dummy instanceId hash from address and parameter map, Intended for use with parseDeviceDesciptor return value. </p>
+
+<p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00354">354</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
 
 </div>
 </div>

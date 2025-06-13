@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -229,6 +229,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add81fefa0d27a7844637a7a6f4e79104 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor" id="r_add81fefa0d27a7844637a7a6f4e79104"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#add81fefa0d27a7844637a7a6f4e79104">makeCopyRegisterDecorator</a> () override</td></tr>
 <tr class="memdesc:add81fefa0d27a7844637a7a6f4e79104 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html" title="Decorator for NDRegisterAccessors which makes a copy of the data from the target accessor.">CopyRegisterDecorator</a> of the right type decorating this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>.  <br /></td></tr>
 <tr class="separator:add81fefa0d27a7844637a7a6f4e79104 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877cac1e0fb7c9c92e4e323b61fc8acb inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor" id="r_a877cac1e0fb7c9c92e4e323b61fc8acb"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a877cac1e0fb7c9c92e4e323b61fc8acb">decorateDeepInside</a> (std::function&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;(const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; &amp;)&gt; factory)</td></tr>
+<tr class="memdesc:a877cac1e0fb7c9c92e4e323b61fc8acb inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate the innermost <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> of the stack of decorators or decorator-like accessors.  <br /></td></tr>
+<tr class="separator:a877cac1e0fb7c9c92e4e323b61fc8acb inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_transfer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_transfer_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a></td></tr>
 <tr class="memitem:aec2ac9c273c4a8da4b6eb24ea7e73b8a inherit pub_methods_class_chimera_t_k_1_1_transfer_element" id="r_aec2ac9c273c4a8da4b6eb24ea7e73b8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aec2ac9c273c4a8da4b6eb24ea7e73b8a">TransferElement</a> (std::string name, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> accessModeFlags, std::string unit=std::string(<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab731c2eedf2851f0e7a3c03a10a7bafb">unitNotSet</a>), std::string description=std::string())</td></tr>
 <tr class="memdesc:aec2ac9c273c4a8da4b6eb24ea7e73b8a inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transfer element with the specified name.  <br /></td></tr>
@@ -336,6 +339,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbf184b701b7e4f038d5f39ad1176a67 inherit pub_methods_class_chimera_t_k_1_1_transfer_element" id="r_adbf184b701b7e4f038d5f39ad1176a67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adbf184b701b7e4f038d5f39ad1176a67">isWriteTransactionInProgress</a> () const</td></tr>
 <tr class="memdesc:adbf184b701b7e4f038d5f39ad1176a67 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a write transaction is in progress, i.e.  <br /></td></tr>
 <tr class="separator:adbf184b701b7e4f038d5f39ad1176a67 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2265961d8482bc4035d741dc77967d inherit pub_methods_class_chimera_t_k_1_1_transfer_element" id="r_a7f2265961d8482bc4035d741dc77967d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7f2265961d8482bc4035d741dc77967d">getReadAnyGroup</a> () const</td></tr>
+<tr class="memdesc:a7f2265961d8482bc4035d741dc77967d inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of, or nullptr if not in a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.  <br /></td></tr>
+<tr class="separator:a7f2265961d8482bc4035d741dc77967d inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ca2fc42809ca55f606c626235c7b91 inherit pub_methods_class_chimera_t_k_1_1_transfer_element" id="r_ab8ca2fc42809ca55f606c626235c7b91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab8ca2fc42809ca55f606c626235c7b91">setInReadAnyGroup</a> (<a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *rag)</td></tr>
+<tr class="memdesc:ab8ca2fc42809ca55f606c626235c7b91 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> of which this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of.  <br /></td></tr>
+<tr class="separator:ab8ca2fc42809ca55f606c626235c7b91 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -387,8 +396,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad58b10e4968323bcc44264c1268ed7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a735d71e1c17d1d361c0c03221e683dda" id="r_a735d71e1c17d1d361c0c03221e683dda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html#a735d71e1c17d1d361c0c03221e683dda">_throwRuntimeErrInPre</a> {false}</td></tr>
 <tr class="separator:a735d71e1c17d1d361c0c03221e683dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6f328c7a4a01bede29932acabffb0a1" id="r_aa6f328c7a4a01bede29932acabffb0a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html#aa6f328c7a4a01bede29932acabffb0a1">_throwRuntimeErrInPreconditions</a> {false}</td></tr>
-<tr class="separator:aa6f328c7a4a01bede29932acabffb0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c22b8d093fb13deb82d6435d854d7f5" id="r_a1c22b8d093fb13deb82d6435d854d7f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html#a1c22b8d093fb13deb82d6435d854d7f5">_throwNumericCast</a> {false}</td></tr>
 <tr class="separator:a1c22b8d093fb13deb82d6435d854d7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95aa80e089628d505bcbe630a10b2dca" id="r_a95aa80e089628d505bcbe630a10b2dca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html#a95aa80e089628d505bcbe630a10b2dca">_setPostReadVersion</a> {nullptr}</td></tr>
@@ -460,9 +467,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aaa340a8029a130735f2412c1a60290d6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element" id="r_aaa340a8029a130735f2412c1a60290d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aaa340a8029a130735f2412c1a60290d6">_isInTransferGroup</a> {false}</td></tr>
 <tr class="memdesc:aaa340a8029a130735f2412c1a60290d6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> has been added to a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a> or not.  <br /></td></tr>
 <tr class="separator:aaa340a8029a130735f2412c1a60290d6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2dcf2a48f68536660799325aa81a38 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element" id="r_a3f2dcf2a48f68536660799325aa81a38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3f2dcf2a48f68536660799325aa81a38">_isInReadAnyGroup</a> {false}</td></tr>
-<tr class="memdesc:a3f2dcf2a48f68536660799325aa81a38 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> has been added to a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> or not.  <br /></td></tr>
-<tr class="separator:a3f2dcf2a48f68536660799325aa81a38 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd66d3892c6af0934288f4fc3b06cac inherit pro_attribs_class_chimera_t_k_1_1_transfer_element" id="r_a1dd66d3892c6af0934288f4fc3b06cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a1dd66d3892c6af0934288f4fc3b06cac">_inReadAnyGroup</a> {nullptr}</td></tr>
+<tr class="memdesc:a1dd66d3892c6af0934288f4fc3b06cac inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> has been added to, nullptr if not in a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.  <br /></td></tr>
+<tr class="separator:a1dd66d3892c6af0934288f4fc3b06cac inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e5595381e62b6f86d524761c3be44b inherit pro_attribs_class_chimera_t_k_1_1_transfer_element" id="r_a35e5595381e62b6f86d524761c3be44b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a35e5595381e62b6f86d524761c3be44b">_accessModeFlags</a></td></tr>
 <tr class="memdesc:a35e5595381e62b6f86d524761c3be44b inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">The access mode flags for this transfer element.  <br /></td></tr>
 <tr class="separator:a35e5595381e62b6f86d524761c3be44b inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -590,7 +597,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00097">97</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +643,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00123">123</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00129">129</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +725,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00037">37</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00040">40</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +764,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00054">54</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00060">60</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -795,7 +802,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00073">73</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +842,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00082">82</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00088">88</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +877,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac69c35862286b6a67cd5a11536c8a408">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00135">135</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00141">141</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -907,7 +914,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4a511b856a6d966647f3ed38feca55cc">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00142">142</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00148">148</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -944,14 +951,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00166">166</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_test_accessor_ab5fdad2f3add25e49e69d45df4106ee9_cgraph.svg" width="475" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00163">163</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -985,7 +985,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00156">156</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00159">159</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1019,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00151">151</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00157">157</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1090,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00132">132</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00138">138</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1119,14 +1119,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00262">262</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_test_accessor_ad8972031ae35b6e0d01bce9fb8a6c9f8_icgraph.svg" width="458" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00258">258</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1148,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00252">252</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00248">248</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1177,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00243">243</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00239">239</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1212,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00147">147</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00153">153</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1248,14 +1241,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00212">212</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_test_accessor_a41ea1fcb6f6fcc7bc34944029179fb4b_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00208">208</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1262,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>The access mode flags for this transfer element. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00827">827</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00838">838</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1296,7 +1282,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Exception to be rethrown in postXXX() in case hasSeenException == true Can be set via <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e" title="Set an active exception.">setActiveException()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00860">860</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00871">871</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1308,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00182">182</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00179">179</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1340,7 +1326,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00207">207</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00203">203</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1344,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00205">205</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00201">201</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1362,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00209">209</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00205">205</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1394,7 +1380,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00204">204</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00200">200</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1412,7 +1398,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00181">181</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00178">178</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1416,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00177">177</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00174">174</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1434,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00178">178</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00175">175</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1466,7 +1452,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00189">189</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00186">186</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1484,7 +1470,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00179">179</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00176">176</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1488,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00172">172</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00169">169</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1506,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00194">194</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00191">191</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1524,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00173">173</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00170">170</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1542,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00187">187</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00184">184</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1560,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00169">169</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00166">166</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1595,7 +1581,7 @@ template&lt;typename UserType &gt; </div>
 <p>The queue for asynchronous read transfers. </p>
 <p>This is the void queue which is a continuation of the actual data transport queue, which is implementation dependent. With _readQueue the exception propagation and waiting for new data is implemented in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00848">848</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_8h_source.html#l00859">859</a> of file <a class="el" href="_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1599,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00174">174</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00171">171</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1631,7 +1617,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00190">190</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00187">187</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1649,7 +1635,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00201">201</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00197">197</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1667,7 +1653,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00200">200</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00196">196</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1671,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00195">195</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00192">192</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1703,7 +1689,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00191">191</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00188">188</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1721,7 +1707,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00199">199</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00195">195</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1739,25 +1725,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00197">197</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
-
-</div>
-</div>
-<a id="aa6f328c7a4a01bede29932acabffb0a1" name="aa6f328c7a4a01bede29932acabffb0a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6f328c7a4a01bede29932acabffb0a1">&#9670;&#160;</a></span>_throwRuntimeErrInPreconditions</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html">ChimeraTK::TransferElementTestAccessor</a>&lt; UserType &gt;::_throwRuntimeErrInPreconditions {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00198">198</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00194">194</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1743,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00196">196</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00193">193</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1793,7 +1761,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00180">180</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00177">177</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1811,7 +1779,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00185">185</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00182">182</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1829,7 +1797,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00185">185</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00182">182</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1847,7 +1815,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00186">186</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00183">183</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1865,7 +1833,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00168">168</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00165">165</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1883,7 +1851,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00175">175</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00172">172</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1901,7 +1869,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00188">188</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00185">185</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1919,7 +1887,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00176">176</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_element_test_accessor_8h_source.html#l00173">173</a> of file <a class="el" href="_transfer_element_test_accessor_8h_source.html">TransferElementTestAccessor.h</a>.</p>
 
 </div>
 </div>

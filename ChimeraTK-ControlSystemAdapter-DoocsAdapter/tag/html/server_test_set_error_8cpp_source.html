@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.12.02</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.13.00</span>
    </div>
   </td>
  </tr>
@@ -110,68 +110,70 @@ $(document).ready(function(){initNavTree('server_test_set_error_8cpp_source.html
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="server_test_set_error_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_doocs_adapter_8h.html">DoocsAdapter.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="server_based_test_tools_8h.html">serverBasedTestTools.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;eq_fct.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;doocs-server-test-helper/ThreadedDoocsServer.h&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span>boost::unit_test_framework;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;eq_fct.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span>boost::unit_test_framework;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">   22</a></span>std::string <a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> = <span class="stringliteral">&quot;(unset)&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_define" href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// basic check for error code handling, without associated message source</span></div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">   25</a></span><a class="code hl_function" href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">BOOST_AUTO_TEST_CASE</a>(testErrorNoMessageSource) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">auto</span> check = [] {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span>* location = <a class="code hl_function" href="server_based_test_tools_8h.html#ae3d6bc32994c74be2951285332e7062a">getLocationFromPropertyAddress</a>(<span class="stringliteral">&quot;//INT/FROM_DEVICE_SCALAR&quot;</span>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    location-&gt;lock();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">int</span> code = location-&gt;get_error();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> = location-&gt;get_errorstr();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    location-&gt;unlock();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>eq_errors<span class="keyword">&gt;</span>(code);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  };</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// Testing initial state</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 0);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  checkWithTimeout&lt;eq_errors&gt;(check, no_error);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_define" href="server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1">TEST_WITH_TIMEOUT</a>((check(), (<a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> == <span class="stringliteral">&quot;ok&quot;</span>)));</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// Check fault state</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::faulty;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 1);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  checkWithTimeout&lt;eq_errors&gt;(check, not_available);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// there must be a generic error message</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_define" href="server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1">TEST_WITH_TIMEOUT</a>((check(), (<a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> != <span class="stringliteral">&quot;ok&quot;</span>)));</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">   24</a></span>std::string <a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> = <span class="stringliteral">&quot;(unset)&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// basic check for error code handling, without associated message source</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">   27</a></span><a class="code hl_function" href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">BOOST_AUTO_TEST_CASE</a>(testErrorNoMessageSource) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">auto</span> check = [] {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">auto</span>* location = <a class="code hl_function" href="server_based_test_tools_8h.html#ae3d6bc32994c74be2951285332e7062a">getLocationFromPropertyAddress</a>(<span class="stringliteral">&quot;//INT/FROM_DEVICE_SCALAR&quot;</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    location-&gt;lock();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> code = location-&gt;get_error();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> = location-&gt;get_errorstr();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    location-&gt;unlock();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>eq_errors<span class="keyword">&gt;</span>(code);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// Testing initial state</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::ok;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 0);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  checkWithTimeout&lt;eq_errors&gt;(check, no_error);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_define" href="server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1">TEST_WITH_TIMEOUT</a>((check(), (<a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> == <span class="stringliteral">&quot;ok&quot;</span>)));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="comment">// Check fault state</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.dataValidity = DataValidity::faulty;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 1);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  checkWithTimeout&lt;eq_errors&gt;(check, not_available);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// there must be a generic error message</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_define" href="server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1">TEST_WITH_TIMEOUT</a>((check(), (<a class="code hl_variable" href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a> != <span class="stringliteral">&quot;ok&quot;</span>)));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="server_test_set_error_8cpp.html#a92f328b6e7073d0ca81b1f0178cf75b3">   52</a></span><a class="code hl_function" href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">BOOST_AUTO_TEST_CASE</a>(setErrorSourceMarkedAsUsed) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="comment">// kind of a regression test for bug #11853</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// (set_error source was thrown away in optimization step since it was not marked as used)</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// - do not explicitly map statusCodeSource of set_error</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// - check that statusCodeSource goes into set of used variables</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> res = <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables.find(<span class="stringliteral">&quot;/INT/FROM_DEVICE_SCALAR&quot;</span>) ==</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables.end();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  BOOST_TEST(res);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="server_test_set_error_8cpp.html#a92f328b6e7073d0ca81b1f0178cf75b3">   54</a></span><a class="code hl_function" href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">BOOST_AUTO_TEST_CASE</a>(setErrorSourceMarkedAsUsed) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// kind of a regression test for bug #11853</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// (set_error source was thrown away in optimization step since it was not marked as used)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// - do not explicitly map statusCodeSource of set_error</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// - check that statusCodeSource goes into set of used variables</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">bool</span> res = <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables.find(<span class="stringliteral">&quot;/INT/FROM_DEVICE_SCALAR&quot;</span>) ==</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.unmappedVariables.end();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  BOOST_TEST(res);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_a272d7452848709ef0ba13b05f4fb01e1"><div class="ttname"><a href="server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1">TEST_WITH_TIMEOUT</a></div><div class="ttdeci">#define TEST_WITH_TIMEOUT(...)</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00203">serverBasedTestTools.h:203</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_a9c2852da25e25d4dc4f3f36a4ed8e8df"><div class="ttname"><a href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00056">serverBasedTestTools.h:56</a></div></div>
-<div class="ttc" id="aserver_based_test_tools_8h_html_ae3d6bc32994c74be2951285332e7062a"><div class="ttname"><a href="server_based_test_tools_8h.html#ae3d6bc32994c74be2951285332e7062a">getLocationFromPropertyAddress</a></div><div class="ttdeci">EqFct * getLocationFromPropertyAddress(std::string const &amp;propertyAddress)</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00083">serverBasedTestTools.h:83</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_a272d7452848709ef0ba13b05f4fb01e1"><div class="ttname"><a href="server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1">TEST_WITH_TIMEOUT</a></div><div class="ttdeci">#define TEST_WITH_TIMEOUT(...)</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00208">serverBasedTestTools.h:208</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_a9c2852da25e25d4dc4f3f36a4ed8e8df"><div class="ttname"><a href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00061">serverBasedTestTools.h:61</a></div></div>
+<div class="ttc" id="aserver_based_test_tools_8h_html_ae3d6bc32994c74be2951285332e7062a"><div class="ttname"><a href="server_based_test_tools_8h.html#ae3d6bc32994c74be2951285332e7062a">getLocationFromPropertyAddress</a></div><div class="ttdeci">EqFct * getLocationFromPropertyAddress(std::string const &amp;propertyAddress)</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00088">serverBasedTestTools.h:88</a></div></div>
 <div class="ttc" id="aserver_test_set_error_8cpp_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="server_test_set_error_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div></div>
-<div class="ttc" id="aserver_test_set_error_8cpp_html_a7496b9e64198c25a1b1a6e77bb6260e5"><div class="ttname"><a href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testErrorNoMessageSource)</div><div class="ttdef"><b>Definition</b> <a href="server_test_set_error_8cpp_source.html#l00025">serverTestSetError.cpp:25</a></div></div>
-<div class="ttc" id="aserver_test_set_error_8cpp_html_ae52a296e39f5b4ffc40a21a2c8f949fd"><div class="ttname"><a href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION std::string lastErrString</div><div class="ttdef"><b>Definition</b> <a href="server_test_set_error_8cpp_source.html#l00022">serverTestSetError.cpp:22</a></div></div>
-<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00081">serverTestArrayPersistence.cpp:81</a></div></div>
+<div class="ttc" id="aserver_test_set_error_8cpp_html_a7496b9e64198c25a1b1a6e77bb6260e5"><div class="ttname"><a href="server_test_set_error_8cpp.html#a7496b9e64198c25a1b1a6e77bb6260e5">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testErrorNoMessageSource)</div><div class="ttdef"><b>Definition</b> <a href="server_test_set_error_8cpp_source.html#l00027">serverTestSetError.cpp:27</a></div></div>
+<div class="ttc" id="aserver_test_set_error_8cpp_html_ae52a296e39f5b4ffc40a21a2c8f949fd"><div class="ttname"><a href="server_test_set_error_8cpp.html#ae52a296e39f5b4ffc40a21a2c8f949fd">lastErrString</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION std::string lastErrString</div><div class="ttdef"><b>Definition</b> <a href="server_test_set_error_8cpp_source.html#l00024">serverTestSetError.cpp:24</a></div></div>
+<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00082">serverTestArrayPersistence.cpp:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

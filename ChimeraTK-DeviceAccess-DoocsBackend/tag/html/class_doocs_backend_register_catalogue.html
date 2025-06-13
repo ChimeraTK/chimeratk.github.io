@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend<span id="projectnumber">&#160;01.09.02</span>
+   <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend<span id="projectnumber">&#160;01.10.00</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('class_doocs_backend_register_catalogue
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_doocs_backend_register_catalogue-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">DoocsBackendRegisterCatalogue Class Reference</div></div>
 </div><!--header-->
@@ -117,6 +118,13 @@ $(document).ready(function(){initNavTree('class_doocs_backend_register_catalogue
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e2154284f6dc7da3c131985dbdd9991" id="r_a0e2154284f6dc7da3c131985dbdd9991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_backend_register_catalogue.html#a0e2154284f6dc7da3c131985dbdd9991">addProperty</a> (const std::string &amp;name, unsigned int length, int doocsType, ChimeraTK::AccessModeFlags flags)</td></tr>
 <tr class="separator:a0e2154284f6dc7da3c131985dbdd9991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5954752d5ce833805cdd1df31f16feb" id="r_ab5954752d5ce833805cdd1df31f16feb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_backend_register_catalogue.html#ab5954752d5ce833805cdd1df31f16feb">isComplete</a> () const</td></tr>
+<tr class="separator:ab5954752d5ce833805cdd1df31f16feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2ba4bedef2b845a4cf22ebb23d04703e" id="r_a2ba4bedef2b845a4cf22ebb23d04703e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_backend_register_catalogue.html#a2ba4bedef2b845a4cf22ebb23d04703e">CatalogueFetcher</a></td></tr>
+<tr class="separator:a2ba4bedef2b845a4cf22ebb23d04703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -161,13 +169,58 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_register_info_8cc_source.html#l00009">9</a> of file <a class="el" href="_register_info_8cc_source.html">RegisterInfo.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_backend_register_catalogue_a0e2154284f6dc7da3c131985dbdd9991_cgraph.svg" width="492" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+<a id="ab5954752d5ce833805cdd1df31f16feb" name="ab5954752d5ce833805cdd1df31f16feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5954752d5ce833805cdd1df31f16feb">&#9670;&#160;</a></span>isComplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DoocsBackendRegisterCatalogue::isComplete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_register_info_8h_source.html#l00018">18</a> of file <a class="el" href="_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a2ba4bedef2b845a4cf22ebb23d04703e" name="a2ba4bedef2b845a4cf22ebb23d04703e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba4bedef2b845a4cf22ebb23d04703e">&#9670;&#160;</a></span>CatalogueFetcher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_catalogue_fetcher.html">CatalogueFetcher</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_register_info_8h_source.html#l00022">22</a> of file <a class="el" href="_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>

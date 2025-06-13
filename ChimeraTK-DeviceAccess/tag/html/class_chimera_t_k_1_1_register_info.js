@@ -12,6 +12,7 @@ var class_chimera_t_k_1_1_register_info =
     [ "getQualifiedAsyncId", "class_chimera_t_k_1_1_register_info.html#a47a33ae6b91b5222409bf257ffac84fd", null ],
     [ "getRegisterName", "class_chimera_t_k_1_1_register_info.html#a00d0b08366995234dbe9f239b00498b9", null ],
     [ "getSupportedAccessModes", "class_chimera_t_k_1_1_register_info.html#a748df43161b035b9a2af7044e3f827ee", null ],
+    [ "getTags", "class_chimera_t_k_1_1_register_info.html#a60cf4bd81c8fa2ef2d071690293935d4", null ],
     [ "isReadable", "class_chimera_t_k_1_1_register_info.html#aebe1c7b073d0968d40aed64e4e53b014", null ],
     [ "isValid", "class_chimera_t_k_1_1_register_info.html#adff51ba5bd6b966dae36fe56495eafcc", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_register_info.html#a28f514a946cc889dae837573466c3d30", null ],

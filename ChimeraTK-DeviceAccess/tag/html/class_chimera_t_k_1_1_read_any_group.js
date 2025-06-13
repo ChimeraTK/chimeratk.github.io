@@ -5,10 +5,13 @@ var class_chimera_t_k_1_1_read_any_group =
     [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html#a0c2ad23ea6393ce1acafcb09e3d93c79", null ],
     [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html#a1f455ff3e08f1c8f81c1fdc2492fe416", null ],
     [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html#af6689b5ae469df7eed0f453dc07c3df0", null ],
+    [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html#a59238b8ae00c9d6320220bb9a398a274", null ],
+    [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html#a4c29c37423ddfeab1dd650b7711cf597", null ],
     [ "add", "class_chimera_t_k_1_1_read_any_group.html#a5f3b1d214ca8bdd742f16896fb3dc28d", null ],
     [ "add", "class_chimera_t_k_1_1_read_any_group.html#a8a680e44e341d8c28fbcf42a2746f102", null ],
     [ "finalise", "class_chimera_t_k_1_1_read_any_group.html#af53a97adcbde58b2ee8249536b30e36a", null ],
     [ "interrupt", "class_chimera_t_k_1_1_read_any_group.html#af970686444d50c58a097a0a97bb1ced0", null ],
+    [ "operator=", "class_chimera_t_k_1_1_read_any_group.html#a96281cdc618fff7f41d294867030cf23", null ],
     [ "processPolled", "class_chimera_t_k_1_1_read_any_group.html#ae57188eba7e01de51a3f06347913f2c7", null ],
     [ "readAny", "class_chimera_t_k_1_1_read_any_group.html#a52e203fd66aed19b829db1150fb90fc1", null ],
     [ "readAnyNonBlocking", "class_chimera_t_k_1_1_read_any_group.html#a8eb7e6feb056c6920293d28004495783", null ],
@@ -17,5 +20,6 @@ var class_chimera_t_k_1_1_read_any_group =
     [ "readUntilAll", "class_chimera_t_k_1_1_read_any_group.html#aa39feaeaa501c009b3bcd90b7304445d", null ],
     [ "readUntilAll", "class_chimera_t_k_1_1_read_any_group.html#a948a672093fb98777bc9dfb9a0114c11", null ],
     [ "waitAny", "class_chimera_t_k_1_1_read_any_group.html#a0616097393d6007d2b865c2fb3362bb6", null ],
-    [ "waitAnyNonBlocking", "class_chimera_t_k_1_1_read_any_group.html#ae58487570b91913f2ce2c386b1aae0e3", null ]
+    [ "waitAnyNonBlocking", "class_chimera_t_k_1_1_read_any_group.html#ae58487570b91913f2ce2c386b1aae0e3", null ],
+    [ "ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher", "class_chimera_t_k_1_1_read_any_group.html#a014c48a095d9195cc0df6612f1f06ecd", null ]
 ];

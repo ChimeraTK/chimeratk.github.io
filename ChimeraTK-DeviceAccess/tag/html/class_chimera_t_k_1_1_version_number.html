@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a91ea62e37e9324dec4abe44c588e847f" id="r_a91ea62e37e9324dec4abe44c588e847f"><td class="memTemplParams" colspan="2">template&lt;class T , class CharT &gt; </td></tr>
+<tr class="memitem:a91ea62e37e9324dec4abe44c588e847f"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#a91ea62e37e9324dec4abe44c588e847f">std::formatter</a></td></tr>
+<tr class="separator:a91ea62e37e9324dec4abe44c588e847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85dbc208645685b87cebfe748f9299f" id="r_aa85dbc208645685b87cebfe748f9299f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#aa85dbc208645685b87cebfe748f9299f">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;version)</td></tr>
 <tr class="memdesc:aa85dbc208645685b87cebfe748f9299f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream operator passing the human readable representation to an ostream.  <br /></td></tr>
 <tr class="separator:aa85dbc208645685b87cebfe748f9299f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +154,7 @@ Friends</h2></td></tr>
 <p>Version numbers are used to resolve competing updates that are applied to the same process variable. For example, it they can help in breaking an infinite update loop that might occur when two process variables are related and update each other.</p>
 <p>They are also used to determine the order of updates made to different process variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00023">23</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00024">24</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9182ffd8795b397438d1fb58aec79886" name="a9182ffd8795b397438d1fb58aec79886"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9182ffd8795b397438d1fb58aec79886">&#9670;&#160;</a></span>VersionNumber() <span class="overload">[1/4]</span></h2>
@@ -178,7 +181,7 @@ Friends</h2></td></tr>
 
 <p>Default constructor: Generate new unique version number with current time as time stamp. </p>
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00028">28</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00029">29</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +239,7 @@ Friends</h2></td></tr>
 
 <p>Generate new unique version number with a given time stamp. </p>
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00099">99</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00103">103</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +270,7 @@ Friends</h2></td></tr>
 <p>Create null version number, which is guaranteed to be smaller than all version numbers generated with the default constructor. </p>
 <p>This should be used to initialse version numbers which are never actually used for data transfers (e.g. at application start). The argument is a dummy argument to distinguish the contructor signature. </p>
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00045">45</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00046">46</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -297,14 +300,7 @@ Friends</h2></td></tr>
 
 <p>Return the time stamp associated with this version number. </p>
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00048">48</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_version_number_a35b1f45e223bedaff4f3fa5976356e69_icgraph.svg" width="655" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00049">49</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -335,13 +331,6 @@ Friends</h2></td></tr>
 <p>printing the version number on screen. Do not try to parse the string in any way, the exact format is unspecified. </p>
 
 <p class="definition">Definition at line <a class="el" href="_version_number_8cc_source.html#l00014">14</a> of file <a class="el" href="_version_number_8cc_source.html">VersionNumber.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_version_number_a31e2c1cd52b4fcb022cb32b97775c0b8_cgraph.svg" width="368" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -369,7 +358,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00057">57</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00058">58</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +386,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00059">59</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00060">60</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +414,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00061">61</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00062">62</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +473,7 @@ Friends</h2></td></tr>
 <p>Comparison operators. </p>
 <p>Compare version number only, since they are ordered in time and atomically generated, so the result is logically as expected. The time stamp is not precise and not atomically generated, so comparing it would not be precise. </p>
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00056">56</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00057">57</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +501,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00058">58</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00059">59</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +529,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00060">60</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00061">61</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -582,6 +571,32 @@ Friends</h2></td></tr>
 <p>Stream operator passing the human readable representation to an ostream. </p>
 
 <p class="definition">Definition at line <a class="el" href="_version_number_8cc_source.html#l00020">20</a> of file <a class="el" href="_version_number_8cc_source.html">VersionNumber.cc</a>.</p>
+
+</div>
+</div>
+<a id="a91ea62e37e9324dec4abe44c588e847f" name="a91ea62e37e9324dec4abe44c588e847f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ea62e37e9324dec4abe44c588e847f">&#9670;&#160;</a></span>std::formatter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct std::formatter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_version_number_8h_source.html#l00098">98</a> of file <a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>

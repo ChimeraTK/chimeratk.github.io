@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_device_backend_impl =
 [
     [ "checkActiveException", "class_chimera_t_k_1_1_device_backend_impl.html#aa45a13e22531ae57af9a4ae5072fc916", null ],
     [ "getActiveExceptionMessage", "class_chimera_t_k_1_1_device_backend_impl.html#a37f748ddc8782147557f26ed5011d7d0", null ],
+    [ "getInvolvedBackendIDs", "class_chimera_t_k_1_1_device_backend_impl.html#aa677a7a4ba47fe3192811c29b83aa535", null ],
     [ "getMetadataCatalogue", "class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504", null ],
     [ "isConnected", "class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda", null ],
     [ "isFunctional", "class_chimera_t_k_1_1_device_backend_impl.html#a1e659ac1150dde815f3f89d0f6f18d38", null ],

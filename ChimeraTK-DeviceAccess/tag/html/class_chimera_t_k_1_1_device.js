@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_device =
     [ "checkPointersAreNotNull", "class_chimera_t_k_1_1_device.html#a9e472f646192fb1b56a5fe83cc02507b", null ],
     [ "close", "class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d", null ],
     [ "getBackend", "class_chimera_t_k_1_1_device.html#a5578d188fe745c943acceeb9152e49d8", null ],
+    [ "getInvolvedBackendIDs", "class_chimera_t_k_1_1_device.html#a09371dbc56ea330a47f74418b6796fb1", null ],
     [ "getMetadataCatalogue", "class_chimera_t_k_1_1_device.html#a1155c5fd9b8f2dd50f2dfc871bcb381f", null ],
     [ "getOneDRegisterAccessor", "class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_device.html#aa43e1797a29c2bfcfa8d370cbc389cc1", null ],

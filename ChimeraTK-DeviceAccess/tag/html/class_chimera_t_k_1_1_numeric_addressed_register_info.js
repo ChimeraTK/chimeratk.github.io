@@ -17,6 +17,7 @@ var class_chimera_t_k_1_1_numeric_addressed_register_info =
     [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a85126d43e79d689a3e7929652cdbe5fa", null ],
     [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1cfb528d88b13476a6aee9d1db65b06b", null ],
     [ "clone", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a7763897f3d113244a769589907d45d6e", null ],
+    [ "computeDataDescriptor", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#ad312eca20c2b6f8400dfe32e6a997132", null ],
     [ "getDataDescriptor", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a4e5408f34c5b64a773d6bff1f4a831ab", null ],
     [ "getNumberOfChannels", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1c0b14fc512fdcf7c4b45605c6761af7", null ],
     [ "getNumberOfElements", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#af8cb033bb588030faafd483b951dc7a6", null ],

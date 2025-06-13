@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -213,13 +213,15 @@ $(document).ready(function(){initNavTree('_t_m_c260_words_8h_source.html',''); i
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_driver_status_data.html#ae015df55e59066b8068d359393999824">   96</a></span>    <a class="code hl_function" href="classmtca4u_1_1_driver_status_data.html#ae015df55e59066b8068d359393999824">ADD_VARIABLE</a>(OpenLoadCoilA, 5, 5);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_driver_status_data.html#acd224ef8b0dd0b02434f9de9a918265d">   97</a></span>    <a class="code hl_function" href="classmtca4u_1_1_driver_status_data.html#acd224ef8b0dd0b02434f9de9a918265d">ADD_VARIABLE</a>(OpenLoadCoilB, 6, 6);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_driver_status_data.html#a258a6896bc69029e472e29904402e12a">   98</a></span>    <a class="code hl_function" href="classmtca4u_1_1_driver_status_data.html#a258a6896bc69029e472e29904402e12a">ADD_VARIABLE</a>(OpenLoadIndicators, 5, 6);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_driver_status_data.html#aa27f113563100552787d4d93c67c765e">   99</a></span>    <a class="code hl_function" href="classmtca4u_1_1_driver_status_data.html#aa27f113563100552787d4d93c67c765e">ADD_VARIABLE</a>(StandstillIndicator, 7, 7);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  };</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// Standstill indicator bit, set if no STEP input was seen for 2^20 clock cycles of 16Mhz (~65ms)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_driver_status_data.html#aa27f113563100552787d4d93c67c765e">  101</a></span>    <a class="code hl_function" href="classmtca4u_1_1_driver_status_data.html#aa27f113563100552787d4d93c67c765e">ADD_VARIABLE</a>(StandstillIndicator, 7, 7);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  };</div>
 </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <span class="comment">// namespace mtca4u</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">// MTCA4U_TMC260WORDS_H</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>} <span class="comment">// namespace mtca4u</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#endif </span><span class="comment">// MTCA4U_TMC260WORDS_H</span></div>
 <div class="ttc" id="a_multi_variable_word_8h_html"><div class="ttname"><a href="_multi_variable_word_8h.html">MultiVariableWord.h</a></div></div>
 <div class="ttc" id="a_t_m_c260_constants_8h_html"><div class="ttname"><a href="_t_m_c260_constants_8h.html">TMC260Constants.h</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_chopper_control_data_html"><div class="ttname"><a href="classmtca4u_1_1_chopper_control_data.html">mtca4u::ChopperControlData</a></div><div class="ttdef"><b>Definition</b> <a href="_t_m_c260_words_8h_source.html#l00031">TMC260Words.h:31</a></div></div>
@@ -278,14 +280,14 @@ $(document).ready(function(){initNavTree('_t_m_c260_words_8h_source.html',''); i
 <div class="ttc" id="anamespacemtca4u_1_1tmc260_html_a7854347cac9b7b882ff5c5a63d41048f"><div class="ttname"><a href="namespacemtca4u_1_1tmc260.html#a7854347cac9b7b882ff5c5a63d41048f">mtca4u::tmc260::ADDRESS_DRIVER_CONFIG</a></div><div class="ttdeci">uint32_t const ADDRESS_DRIVER_CONFIG</div><div class="ttdef"><b>Definition</b> <a href="_t_m_c260_constants_8h_source.html#l00012">TMC260Constants.h:12</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc260_html_aba13b0add487a1da3a08d273a591f845"><div class="ttname"><a href="namespacemtca4u_1_1tmc260.html#aba13b0add487a1da3a08d273a591f845">mtca4u::tmc260::ADDRESS_STALL_GUARD_CONFIG</a></div><div class="ttdeci">uint32_t const ADDRESS_STALL_GUARD_CONFIG</div><div class="ttdef"><b>Definition</b> <a href="_t_m_c260_constants_8h_source.html#l00011">TMC260Constants.h:11</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc260_html_af7e003386863c33f332f91f04604db72"><div class="ttname"><a href="namespacemtca4u_1_1tmc260.html#af7e003386863c33f332f91f04604db72">mtca4u::tmc260::ADDRESS_COOL_STEP_CONFIG</a></div><div class="ttdeci">uint32_t const ADDRESS_COOL_STEP_CONFIG</div><div class="ttdef"><b>Definition</b> <a href="_t_m_c260_constants_8h_source.html#l00010">TMC260Constants.h:10</a></div></div>
-<div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
+<div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_6d503f7fb68534c3b75a73a185594ff3.html">backend</a></li><li class="navelem"><a class="el" href="dir_e6bda3329ea1bd0f2c4b10845dd61408.html">include</a></li><li class="navelem"><a class="el" href="_t_m_c260_words_8h.html">TMC260Words.h</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:41 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['push_20type_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_0',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
+  ['name_20mapping_20backend_0',['Logical Name Mapping Backend',['../lmap.html',1,'']]],
+  ['numeric_20addressed_20registers_20without_20a_20map_20file_1',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]]
 ];

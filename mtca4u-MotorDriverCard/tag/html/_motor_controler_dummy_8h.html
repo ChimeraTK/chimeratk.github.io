@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -98,14 +98,13 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8h.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>&quot;</code><br />
-<code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for MotorControlerDummy.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_motor_controler_dummy_8h__incl.svg" width="458" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_motor_controler_dummy_8h__incl.svg" width="390" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -120,13 +119,12 @@ $(document).ready(function(){initNavTree('_motor_controler_dummy_8h.html',''); i
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html">mtca4u::MotorControlerDummy</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html" title="The MotorControlerDummy only implements the basic functionality defined in the MotorControler class,...">MotorControlerDummy</a> only implements the basic functionality defined in the <a class="el" href="classmtca4u_1_1_motor_controler.html" title="A class to controll stepper motors using the DFMC-MD22 card.">MotorControler</a> class, not the full functionality defined in <a class="el" href="classmtca4u_1_1_motor_controler_expert.html" title="A class to controll stepper motors using the DFMC-MD22 card.">MotorControlerExpert</a>.  <a href="classmtca4u_1_1_motor_controler_dummy.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html" title="The MotorControlerDummy only implements the basic functionality defined in the MotorControler class,...">MotorControlerDummy</a> only implements the basic functionality defined in the <a class="el" href="classmtca4u_1_1_motor_controler.html" title="A class to control stepper motors using the DFMC-MD22 card.">MotorControler</a> class, not the full functionality defined in <a class="el" href="classmtca4u_1_1_motor_controler_expert.html" title="A class to control stepper motors using the DFMC-MD22 card.">MotorControlerExpert</a>.  <a href="classmtca4u_1_1_motor_controler_dummy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemtca4u" id="r_namespacemtca4u"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html">mtca4u</a></td></tr>
-<tr class="memdesc:namespacemtca4u"><td class="mdescLeft">&#160;</td><td class="mdescRight">File: StepperMotor.h Author: tkozak. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -164,8 +162,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> set##NAME(NAME <span class="keyword">const</span>&amp; VARIABLE_NAME);                                                                           \</div>
-<div class="line">  NAME get##NAME()</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> set##NAME(NAME <span class="keyword">const</span>&amp; VARIABLE_NAME) <span class="keyword">override</span>;                                                                  \</div>
+<div class="line">  NAME get##NAME() override</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00017">17</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
 
@@ -196,8 +194,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> set##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VARIABLE_IN_UNITS);                                                                      \</div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get##NAME()</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> set##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> VARIABLE_IN_UNITS) <span class="keyword">override</span>;                                                             \</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get##NAME() override</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00009">9</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
 
@@ -228,8 +226,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> set##NAME(<span class="keywordtype">int</span> VARIABLE_IN_UNITS);                                                                               \</div>
-<div class="line">  <span class="keywordtype">int</span> get##NAME()</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> set##NAME(<span class="keywordtype">int</span> VARIABLE_IN_UNITS) <span class="keyword">override</span>;                                                                      \</div>
+<div class="line">  <span class="keywordtype">int</span> get##NAME() override</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00013">13</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
 
@@ -241,7 +239,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_6d503f7fb68534c3b75a73a185594ff3.html">backend</a></li><li class="navelem"><a class="el" href="dir_e6bda3329ea1bd0f2c4b10845dd61408.html">include</a></li><li class="navelem"><a class="el" href="_motor_controler_dummy_8h.html">MotorControlerDummy.h</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:42 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

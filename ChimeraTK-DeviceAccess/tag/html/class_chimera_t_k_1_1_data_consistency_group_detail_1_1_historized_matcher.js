@@ -1,0 +1,28 @@
+var class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher =
+[
+    [ "TargetElement", "struct_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher_1_1_target_element.html", "struct_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher_1_1_target_element" ],
+    [ "HistorizedMatcher", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ac346ee5f1c2461d6cf0b373d1f22ec9e", null ],
+    [ "~HistorizedMatcher", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a820aa8fd5b8428abbd6ca408f62088b6", null ],
+    [ "add", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a7d8ec4fedb49a3bf9a734659010bada4", null ],
+    [ "checkUpdate", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a6bc7362367a2e3b3e2a68a247f8ba099", null ],
+    [ "decorateAccessor", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a7c4c3a0375c147460271c211abb25657", null ],
+    [ "findMatch", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a10db483b549a527413e7dc465869a8cd", null ],
+    [ "getBufferVector", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ab1b1d67b7deba4ea3a7bd5ebf15665eb", null ],
+    [ "getMatchingBuffer", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#adfaa3bfb97648dd80f6af19367b2523b", null ],
+    [ "getMatchingInfo", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ad7ec582761a1edf18717bac9fb352ace", null ],
+    [ "getTargetElements", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a34c866fc615a61adc5f58ccf89f6c836", null ],
+    [ "getUserBuffer", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ab6aaab52809a7a37378dde2871d3a1fa", null ],
+    [ "handleMissingPostReads", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a135bcb45c12b85665c0da8c615fa2dcf", null ],
+    [ "handleMissingPreReads", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a8306476cda738d19dfc27f83a33f7baa", null ],
+    [ "lastMatchingVersionNumber", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#af22522613ba28c90b7c41bc2799c3d4f", null ],
+    [ "lastUpdateCall", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a22a00f33b92045c4f575239d10589550", null ],
+    [ "setupHistory", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a04ce147443e926b870f11dd041a978ab", null ],
+    [ "updateCalled", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#af26e64f2f8abdce07ff5348d962a2172", null ],
+    [ "updateHistory", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a9c42572eb8718251bf7cf020b3375b0b", null ],
+    [ "_decoratorsNeedPreRead", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a765aac01a84d9255aff83253f25b02d9", null ],
+    [ "_handleMissingPostReadsCalled", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ab7563179ec2d01b6722b49309ecdf855", null ],
+    [ "_handleMissingPreReadsCalled", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a73d15e848f283b20f3f39235fed73888", null ],
+    [ "_lastMatchingVersionNumber", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#aab68fe6c5743bfabb7c266d8b6f1868d", null ],
+    [ "_targetElements", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ae076ba4767df24acf78badfc66688aa4", null ],
+    [ "_updateCalled", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a3f105c093627861ce53de0749832f88d", null ]
+];

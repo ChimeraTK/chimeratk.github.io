@@ -60,7 +60,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -74,18 +74,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_stepper_motor_8cc.html",
-"_stepper_motor_util_8h.html#a127e10207b409b6bcb30e9c2fb63dec7",
-"class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#ab559d173d674f0685d0329b76c837f4a",
-"class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a501bc341adf3a6c171b44314d382df09",
-"class_derived_state_machine.html#ab12780a5c398b22d18349776201d4130",
-"classmtca4u_1_1_cool_step_control_data.html#a574b8f91ebed6684293affa5069a6fc8",
-"classmtca4u_1_1_motor_controler.html#a1ea016a20846eef85f97c6e5e8c9aa6d",
-"classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377",
-"classmtca4u_1_1_motor_driver_card_expert.html#affab330c06db01c5ada39f0bac08a30d",
-"classmtca4u_1_1_stepper_motor.html#a2b467800598f61ffc06bf395f0ed51db",
-"classmtca4u_1_1_t_m_c429_status_word.html",
-"namespacemtca4u.html#a9056b84b0e5991b88a39bf214946a779",
-"test_config_constants_8h.html#a373528e713a07fbbf6b7beceefb76ae1"
+"_t_m_c260_dummy_constants_8h.html",
+"class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#afe15ae2ac4dd3bba952340b5ad24ce0b",
+"class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#aa2e2054114cc84a8aad6868a3f73c832",
+"class_parameters_panel.html",
+"classmtca4u_1_1_interface_configuration.html#a2bb44d6f1f6a7c1352865462a561c39c",
+"classmtca4u_1_1_motor_controler_dummy.html#ae503aa88d52e9deb0727dd5efd5f397e",
+"classmtca4u_1_1_motor_driver_card.html",
+"classmtca4u_1_1_reference_switch_data.html#a41e8b0d261a379e839efa9031fee9fa7",
+"functions_h.html",
+"structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

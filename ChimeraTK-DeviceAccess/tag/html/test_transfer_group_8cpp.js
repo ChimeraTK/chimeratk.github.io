@@ -6,8 +6,6 @@ var test_transfer_group_8cpp =
     [ "CHECK_COUNTERS_HIGH_LEVEL", "test_transfer_group_8cpp.html#acfbc2b3911b321f1715322ee5075a8ec", null ],
     [ "CHECK_COUNTERS_LOW_LEVEL", "test_transfer_group_8cpp.html#a0217f3fead9d41fd2bef0bd5b63268a1", null ],
     [ "CHECK_COUNTERS_MID_LEVEL", "test_transfer_group_8cpp.html#ae189acd90ecdf0978b5d0c561a1e9021", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#aa663fca82c2a4c6e134425e035e733dc", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a55c35f772591ee73716bf2312aee5778", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a87a7dbdf82501c472f17df8064b59eb7", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a6d8cdcd3c619105347984bb64e758eb6", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#aa159cee5d314823e1cb81f5a40ca6a40", null ],

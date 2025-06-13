@@ -10,6 +10,7 @@ var class_chimera_t_k_1_1_n_d_register_accessor =
     [ "accessData", "class_chimera_t_k_1_1_n_d_register_accessor.html#afa9199d4344bbabcb10b39d4337c74a7", null ],
     [ "accessData", "class_chimera_t_k_1_1_n_d_register_accessor.html#a80774502fb4e727ee81057bd2562e606", null ],
     [ "accessData", "class_chimera_t_k_1_1_n_d_register_accessor.html#ae70f4d074b5e956f211281d5682e67e2", null ],
+    [ "decorateDeepInside", "class_chimera_t_k_1_1_n_d_register_accessor.html#a877cac1e0fb7c9c92e4e323b61fc8acb", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE", "class_chimera_t_k_1_1_n_d_register_accessor.html#ae9d7c22ec91a68482159315571e5fc96", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE", "class_chimera_t_k_1_1_n_d_register_accessor.html#a25d3e9dc838577b6c8be65fd5b004633", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_chimera_t_k_1_1_n_d_register_accessor.html#ac2b41bf5123ae657a3d10283ff484a9d", null ],

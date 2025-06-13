@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,6 @@ $(document).ready(function(){initNavTree('_motor_controler_impl_8cc.html',''); i
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemtca4u" id="r_namespacemtca4u"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html">mtca4u</a></td></tr>
-<tr class="memdesc:namespacemtca4u"><td class="mdescLeft">&#160;</td><td class="mdescRight">File: StepperMotor.h Author: tkozak. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -166,14 +165,14 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MotorControlerImpl::get##NAME() {                                                                       \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    <span class="keywordflow">return</span> _controlerSPI-&gt;read(_id, IDX).getDATA();                                                                    \</div>
 <div class="line">  }                                                                                                                    \</div>
 <div class="line">  <span class="keywordtype">void</span> MotorControlerImpl::set##NAME(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value) {                                                             \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    _controlerSPI-&gt;write(_id, IDX, value);                                                                             \</div>
 <div class="line">  }</div>
-<div class="ttc" id="a_motor_controler_dummy_8cc_html_a35ba3251eeb5d4705554f998d2d45f01"><div class="ttname"><a href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a></div><div class="ttdeci">std::lock_guard&lt; std::mutex &gt; lock_guard</div><div class="ttdef"><b>Definition</b> <a href="_motor_controler_dummy_8cc_source.html#l00007">MotorControlerDummy.cc:7</a></div></div>
+<div class="ttc" id="a_motor_controler_impl_8cc_html_a35ba3251eeb5d4705554f998d2d45f01"><div class="ttname"><a href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a></div><div class="ttdeci">std::lock_guard&lt; std::mutex &gt; lock_guard</div><div class="ttdef"><b>Definition</b> <a href="_motor_controler_impl_8cc_source.html#l00067">MotorControlerImpl.cc:67</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00025">25</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
 
@@ -195,11 +194,11 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  NAME MotorControlerImpl::get##NAME() {                                                                               \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    <span class="keywordflow">return</span> readTypedRegister&lt;NAME&gt;();                                                                                  \</div>
 <div class="line">  }                                                                                                                    \</div>
 <div class="line">  <span class="keywordtype">void</span> MotorControlerImpl::set##NAME(NAME <span class="keyword">const</span>&amp; inputWord) {                                                          \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    writeTypedControlerRegister(inputWord);                                                                            \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
@@ -233,11 +232,11 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  NAME <span class="keyword">const</span>&amp; MotorControlerImpl::get##NAME()<span class="keyword"> const </span>{                                                                  \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    <span class="keywordflow">return</span> LOCAL_DATA_INSTANCE;                                                                                        \</div>
 <div class="line">  }                                                                                                                    \</div>
 <div class="line">  <span class="keywordtype">void</span> MotorControlerImpl::set##NAME(NAME <span class="keyword">const</span>&amp; driverData) {                                                         \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    setTypedDriverData&lt;NAME&gt;(driverData, LOCAL_DATA_INSTANCE);                                                         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
@@ -277,12 +276,12 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">int</span> MotorControlerImpl::get##NAME() {                                                                                \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    <span class="keywordtype">int</span> readValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(_controlerSPI-&gt;read(_id, IDX).getDATA());                                         \</div>
 <div class="line">    <span class="keywordflow">return</span> CONVERTER.customToThirtyTwo(readValue);                                                                     \</div>
 <div class="line">  }                                                                                                                    \</div>
 <div class="line">  <span class="keywordtype">void</span> MotorControlerImpl::set##NAME(<span class="keywordtype">int</span> value) {                                                                      \</div>
-<div class="line">    <a class="code hl_typedef" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
+<div class="line">    <a class="code hl_typedef" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a> guard(_mutex);                                                                                          \</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeValue = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(CONVERTER.thirtyTwoToCustom(value));                           \</div>
 <div class="line">    _controlerSPI-&gt;write(_id, IDX, writeValue);                                                                        \</div>
 <div class="line">  }</div>
@@ -332,7 +331,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::lock_guard&lt;std::mutex&gt; <a class="el" href="_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a></td>
+          <td class="memname">typedef std::lock_guard&lt;std::mutex&gt; <a class="el" href="_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01">lock_guard</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -348,7 +347,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::unique_lock&lt;std::mutex&gt; <a class="el" href="_motor_controler_dummy_8cc.html#aedb00abeee050671ad182a1e88de8914">unique_lock</a></td>
+          <td class="memname">typedef std::unique_lock&lt;std::mutex&gt; <a class="el" href="_motor_controler_impl_8cc.html#aedb00abeee050671ad182a1e88de8914">unique_lock</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -363,7 +362,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_6d503f7fb68534c3b75a73a185594ff3.html">backend</a></li><li class="navelem"><a class="el" href="dir_b0847440e2dab0d413ba064dfb19449c.html">src</a></li><li class="navelem"><a class="el" href="_motor_controler_impl_8cc.html">MotorControlerImpl.cc</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:42 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

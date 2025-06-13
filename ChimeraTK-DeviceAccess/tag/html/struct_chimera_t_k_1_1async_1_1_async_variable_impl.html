@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -154,7 +154,7 @@ struct ChimeraTK::async::AsyncVariableImpl&lt; UserType &gt;</div><p><a class="e
 <p>This class provides implementation for those functions of the <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a> which touch the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a>. It does implement the functions which provide the information needed to create an <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a>, like <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable_impl.html#a7d9c5b2374f7ec4b35c44381c0b31f9d" title="Helper functions for the creation of an AsyncNDRegisterAccessor.">getNumberOfChannels()</a>. These are backend specific and need a dedicated implementation per backend.</p>
 <p>The AsyncVariableManager cannot hold a shared pointer of the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> because then you could never get rid of a created accessor, which means the manager would just keep growing in memory if accessors are dynamically created and removed. Hence a weak pointer is used, and this class provides all the functions that access this weak pointer and do all the locking and nullptr checking. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00166">166</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00175">175</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af1840911a1aca29c2a2a3c58d6f6a591" name="af1840911a1aca29c2a2a3c58d6f6a591"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1840911a1aca29c2a2a3c58d6f6a591">&#9670;&#160;</a></span>AsyncVariableImpl()</h2>
@@ -184,7 +184,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00212">212</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00223">223</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a07d482f9b4d18c584c5c387669c793ab">ChimeraTK::async::PolledAsyncVariable&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00197">197</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00208">208</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a506cc33f8cfe3342a8a77b6c3dc99f52">ChimeraTK::async::PolledAsyncVariable&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00203">203</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00214">214</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html#a7a8c859ba561f7d0e1c68741dd20aa09">ChimeraTK::async::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00217">217</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00228">228</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -323,14 +323,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html#a4b69a1ed1ae4cf9a1774176d5d8c24fc">ChimeraTK::async::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00188">188</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1async_1_1_async_variable_impl_a43380c6c95022938581db8e903b5274b_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00199">199</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +342,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00174">174</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00183">183</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -103,18 +103,16 @@ $(document).ready(function(){initNavTree('helper_functions_8h_source.html',''); 
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_device_info_map_8h.html">DeviceInfoMap.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_numeric_addressed_register_catalogue_8h.html">NumericAddressedRegisterCatalogue.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keywordtype">void</span> <a class="code hl_function" href="helper_functions_8h.html#a5f9f86994aa2532791bf7c40f59deca0">populateDummyDeviceInfo</a>(<a class="code hl_class" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a>&amp; deviceInfo, std::string dmapFileName,</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::string deviceName = <span class="stringliteral">&quot;card&quot;</span>, std::string dev_file = <span class="stringliteral">&quot;/dev/dummy_device_identifier&quot;</span>,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    std::string map_file_name = <span class="stringliteral">&quot;/dev/dummy_map_file&quot;</span>);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>std::string <a class="code hl_function" href="helper_functions_8h.html#a46b0ebb2324f645c97fa08cebca0f010">appendNumberToName</a>(std::string name, <span class="keywordtype">int</span> cardNumber);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">bool</span> <a class="code hl_function" href="helper_functions_8h.html#a565ab20d6b9db97d9592f57b614b6839">compareDeviceInfos</a>(</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a>&amp; deviceInfo1, <span class="keyword">const</span> <a class="code hl_class" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a>&amp; deviceInfo2);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keywordtype">void</span> <a class="code hl_function" href="helper_functions_8h.html#a5f9f86994aa2532791bf7c40f59deca0">populateDummyDeviceInfo</a>(<a class="code hl_class" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a>&amp; deviceInfo, std::string dmapFileName,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    std::string deviceName = <span class="stringliteral">&quot;card&quot;</span>, std::string dev_file = <span class="stringliteral">&quot;/dev/dummy_device_identifier&quot;</span>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::string map_file_name = <span class="stringliteral">&quot;/dev/dummy_map_file&quot;</span>);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>std::string <a class="code hl_function" href="helper_functions_8h.html#a46b0ebb2324f645c97fa08cebca0f010">appendNumberToName</a>(std::string name, <span class="keywordtype">int</span> cardNumber);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">bool</span> <a class="code hl_function" href="helper_functions_8h.html#a565ab20d6b9db97d9592f57b614b6839">compareDeviceInfos</a>(</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a>&amp; deviceInfo1, <span class="keyword">const</span> <a class="code hl_class" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a>&amp; deviceInfo2);</div>
 <div class="ttc" id="a_device_info_map_8h_html"><div class="ttname"><a href="_device_info_map_8h.html">DeviceInfoMap.h</a></div></div>
-<div class="ttc" id="a_numeric_addressed_register_catalogue_8h_html"><div class="ttname"><a href="_numeric_addressed_register_catalogue_8h.html">NumericAddressedRegisterCatalogue.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_info_map_1_1_device_info_html"><div class="ttname"><a href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">ChimeraTK::DeviceInfoMap::DeviceInfo</a></div><div class="ttdoc">Stores information about one device.</div><div class="ttdef"><b>Definition</b> <a href="_device_info_map_8h_source.html#l00030">DeviceInfoMap.h:30</a></div></div>
 <div class="ttc" id="ahelper_functions_8h_html_a46b0ebb2324f645c97fa08cebca0f010"><div class="ttname"><a href="helper_functions_8h.html#a46b0ebb2324f645c97fa08cebca0f010">appendNumberToName</a></div><div class="ttdeci">std::string appendNumberToName(std::string name, int cardNumber)</div><div class="ttdef"><b>Definition</b> <a href="helper_functions_8cc_source.html#l00022">helperFunctions.cc:22</a></div></div>
 <div class="ttc" id="ahelper_functions_8h_html_a565ab20d6b9db97d9592f57b614b6839"><div class="ttname"><a href="helper_functions_8h.html#a565ab20d6b9db97d9592f57b614b6839">compareDeviceInfos</a></div><div class="ttdeci">bool compareDeviceInfos(const ChimeraTK::DeviceInfoMap::DeviceInfo &amp;deviceInfo1, const ChimeraTK::DeviceInfoMap::DeviceInfo &amp;deviceInfo2)</div><div class="ttdef"><b>Definition</b> <a href="helper_functions_8cc_source.html#l00028">helperFunctions.cc:28</a></div></div>

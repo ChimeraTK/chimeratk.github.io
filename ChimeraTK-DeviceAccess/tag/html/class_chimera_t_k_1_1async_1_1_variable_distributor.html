@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -124,8 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afda9ccda1cc38a04ae11c397383cc7b9" id="r_afda9ccda1cc38a04ae11c397383cc7b9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html">AsyncVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_variable_distributor.html#afda9ccda1cc38a04ae11c397383cc7b9">createAsyncVariable</a> (<a class="el" href="struct_chimera_t_k_1_1async_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a> const &amp;)</td></tr>
 <tr class="separator:afda9ccda1cc38a04ae11c397383cc7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager.html">ChimeraTK::async::SourceTypedAsyncAccessorManager&lt; SourceType &gt;</a></td></tr>
-<tr class="memitem:a8ce967876fefe581c967290a8beba866 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager" id="r_a8ce967876fefe581c967290a8beba866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager.html#a8ce967876fefe581c967290a8beba866">distribute</a> (SourceType, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version)</td></tr>
-<tr class="separator:a8ce967876fefe581c967290a8beba866 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a63af85df1f1b58cab59df45d1dba9 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager" id="r_aa0a63af85df1f1b58cab59df45d1dba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager.html#aa0a63af85df1f1b58cab59df45d1dba9">distribute</a> (SourceType, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> version)</td></tr>
+<tr class="memdesc:aa0a63af85df1f1b58cab59df45d1dba9 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribute the given data to the subsribers.  <br /></td></tr>
+<tr class="separator:aa0a63af85df1f1b58cab59df45d1dba9 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af783734125dea01df7f59d1e50236802 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager" id="r_af783734125dea01df7f59d1e50236802"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager.html#af783734125dea01df7f59d1e50236802">prepareIntermediateBuffers</a> ()</td></tr>
 <tr class="memdesc:af783734125dea01df7f59d1e50236802 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this function in case there is a step between setting the source buffer and filling the user buffers.  <br /></td></tr>
 <tr class="separator:af783734125dea01df7f59d1e50236802 inherit pub_methods_class_chimera_t_k_1_1async_1_1_source_typed_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,13 +224,6 @@ template&lt;typename SourceType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_variable_distributor_8h_source.html#l00061">61</a> of file <a class="el" href="_variable_distributor_8h_source.html">VariableDistributor.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_variable_distributor_a7c8197fdeb5dfc3b54fcfd86dbc496d4_cgraph.svg" width="512" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -273,13 +267,6 @@ template&lt;typename UserType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_variable_distributor_a6a9d513a6d787dacc2b7fe004dab3db7_icgraph.svg" width="512" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>

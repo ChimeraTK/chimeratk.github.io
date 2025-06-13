@@ -9,21 +9,7 @@ var hierarchy =
     ] ],
     [ "EncoderUnitsConverter", "class_encoder_units_converter.html", null ],
     [ "ChimeraTK::MotorDriver::utility::StateMachine::Event", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_event.html", null ],
-    [ "FunctionalTests", "class_functional_tests.html", null ],
-    [ "ChimeraTK::GeneralStatus", "class_chimera_t_k_1_1_general_status.html", [
-      [ "mtca4u::StepperMotorCalibrationStatus", "classmtca4u_1_1_stepper_motor_calibration_status.html", null ],
-      [ "mtca4u::StepperMotorError", "classmtca4u_1_1_stepper_motor_error.html", [
-        [ "mtca4u::LinearStepperMotorError", "classmtca4u_1_1_linear_stepper_motor_error.html", null ]
-      ] ],
-      [ "mtca4u::StepperMotorStatus", "classmtca4u_1_1_stepper_motor_status.html", [
-        [ "mtca4u::LinearStepperMotorStatus", "classmtca4u_1_1_linear_stepper_motor_status.html", null ]
-      ] ]
-    ] ],
     [ "HexData", "class_hex_data.html", null ],
-    [ "mtca4u::LinearStepperMotorStatusAndError", "classmtca4u_1_1_linear_stepper_motor_status_and_error.html", null ],
-    [ "LinearStepperMotorTest", "class_linear_stepper_motor_test.html", null ],
-    [ "ChimeraTK::MotorDriverCardDetail::Logger", "class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger.html", null ],
-    [ "ChimeraTK::MotorDriverCardDetail::Logger::LogLevel", "class_chimera_t_k_1_1_motor_driver_card_detail_1_1_logger_1_1_log_level.html", null ],
     [ "mtca4u::MotorControler", "classmtca4u_1_1_motor_controler.html", [
       [ "mtca4u::MotorControlerDummy", "classmtca4u_1_1_motor_controler_dummy.html", null ],
       [ "mtca4u::MotorControlerExpert", "classmtca4u_1_1_motor_controler_expert.html", [
@@ -103,33 +89,18 @@ var hierarchy =
         [ "ChimeraTK::MotorDriver::LinearStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html", null ]
       ] ]
     ] ],
-    [ "mtca4u::StepperMotor", "classmtca4u_1_1_stepper_motor.html", [
-      [ "mtca4u::LinearStepperMotor", "classmtca4u_1_1_linear_stepper_motor.html", null ]
-    ] ],
-    [ "mtca4u::StepperMotorCalibrationStatusType", "classmtca4u_1_1_stepper_motor_calibration_status_type.html", null ],
     [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", null ],
-    [ "mtca4u::StepperMotorErrorTypes", "classmtca4u_1_1_stepper_motor_error_types.html", [
-      [ "mtca4u::LinearStepperMotorErrorTypes", "classmtca4u_1_1_linear_stepper_motor_error_types.html", null ]
-    ] ],
     [ "ChimeraTK::MotorDriver::StepperMotorFactory", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html", null ],
     [ "ChimeraTK::MotorDriver::StepperMotorParameters", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html", null ],
-    [ "mtca4u::StepperMotorStatusAndError", "classmtca4u_1_1_stepper_motor_status_and_error.html", null ],
-    [ "mtca4u::StepperMotorStatusTypes", "classmtca4u_1_1_stepper_motor_status_types.html", [
-      [ "mtca4u::LinearStepperMotorStatusTypes", "classmtca4u_1_1_linear_stepper_motor_status_types.html", null ]
-    ] ],
-    [ "StepperMotorTest", "class_stepper_motor_test.html", null ],
     [ "StepperMotorUnitsConverter", "class_stepper_motor_units_converter.html", null ],
     [ "StepperMotorUnitsConveterTrivia", "class_stepper_motor_units_conveter_trivia.html", null ],
     [ "StepperMotorUnitsScalingConverter", "class_stepper_motor_units_scaling_converter.html", null ],
     [ "StepperMotorWithReferenceTestFixture", "class_stepper_motor_with_reference_test_fixture.html", null ],
     [ "test_suite", null, [
-      [ "FunctionalTestSuite", "class_functional_test_suite.html", null ],
-      [ "LinearStepperMotorTestSuite", "class_linear_stepper_motor_test_suite.html", null ],
       [ "MotorControlerDummyTestSuite", "class_motor_controler_dummy_test_suite.html", null ],
       [ "MotorDriverCardConfigXMLTestSuite", "class_motor_driver_card_config_x_m_l_test_suite.html", null ],
       [ "MultiVariableWordTestSuite< T >", "class_multi_variable_word_test_suite.html", null ],
       [ "SPIviaPCIeTestSuite", "class_s_p_ivia_p_c_ie_test_suite.html", null ],
-      [ "StepperMotorTestSuite", "class_stepper_motor_test_suite.html", null ],
       [ "mtca4u::MotorControlerTestSuite", "classmtca4u_1_1_motor_controler_test_suite.html", null ],
       [ "mtca4u::MotorDriverCardDummyTestSuite", "classmtca4u_1_1_motor_driver_card_dummy_test_suite.html", null ],
       [ "mtca4u::MotorDriverCardTestSuite", "classmtca4u_1_1_motor_driver_card_test_suite.html", null ]
@@ -139,8 +110,6 @@ var hierarchy =
     [ "ChimeraTK::MotorDriver::utility::UnitsConverter< T >", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter.html", [
       [ "ChimeraTK::MotorDriver::utility::ScalingUnitsConverter< T >", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter.html", null ],
       [ "ChimeraTK::MotorDriver::utility::UnitsConverterTrivia< T >", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_units_converter_trivia.html", null ],
-      [ "TestUnitConverter", "class_test_unit_converter.html", null ],
-      [ "TestUnitConveter", "class_test_unit_conveter.html", null ],
-      [ "TestUnitConveter", "class_test_unit_conveter.html", null ]
+      [ "TestUnitConverter", "class_test_unit_converter.html", null ]
     ] ]
 ];

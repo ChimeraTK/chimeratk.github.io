@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -124,10 +124,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3820feb4789985e98ed1ac110bcd74a0" id="r_a3820feb4789985e98ed1ac110bcd74a0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0">Access</a> { <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44">READ_ONLY</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0ad8fddf06187e680ab5a6355f76a17357">WRITE_ONLY</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0aa7b843fb734e3b3fea8e5f902d3f4144">READ_WRITE</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a81b7fe15c43052525db74111aa314cc9">INTERRUPT</a>
+<tr class="memitem:a3820feb4789985e98ed1ac110bcd74a0" id="r_a3820feb4789985e98ed1ac110bcd74a0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0">Access</a> { <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44">READ_ONLY</a> = 0
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0ad8fddf06187e680ab5a6355f76a17357">WRITE_ONLY</a> = 1
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0aa7b843fb734e3b3fea8e5f902d3f4144">READ_WRITE</a> = 2
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a81b7fe15c43052525db74111aa314cc9">INTERRUPT</a> = 3
  }</td></tr>
 <tr class="memdesc:a3820feb4789985e98ed1ac110bcd74a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum describing the access mode of the register:  <a href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0">More...</a><br /></td></tr>
 <tr class="separator:a3820feb4789985e98ed1ac110bcd74a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +165,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1c0b14fc512fdcf7c4b45605c6761af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of channels in register.  <br /></td></tr>
 <tr class="separator:a1c0b14fc512fdcf7c4b45605c6761af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5408f34c5b64a773d6bff1f4a831ab" id="r_a4e5408f34c5b64a773d6bff1f4a831ab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html">DataDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a4e5408f34c5b64a773d6bff1f4a831ab">getDataDescriptor</a> () const override</td></tr>
-<tr class="memdesc:a4e5408f34c5b64a773d6bff1f4a831ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <br /></td></tr>
+<tr class="memdesc:a4e5408f34c5b64a773d6bff1f4a831ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return description of the actual payload data for this register.  <br /></td></tr>
 <tr class="separator:a4e5408f34c5b64a773d6bff1f4a831ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279714b8dfa9011616127110b8f1b10f" id="r_a279714b8dfa9011616127110b8f1b10f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a279714b8dfa9011616127110b8f1b10f">isReadable</a> () const override</td></tr>
 <tr class="memdesc:a279714b8dfa9011616127110b8f1b10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is readable.  <br /></td></tr>
@@ -182,6 +182,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a981a03fdaec07b99cdb994d44ab95703" id="r_a981a03fdaec07b99cdb994d44ab95703"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a981a03fdaec07b99cdb994d44ab95703">getQualifiedAsyncId</a> () const override</td></tr>
 <tr class="memdesc:a981a03fdaec07b99cdb994d44ab95703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the fully qualified <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> ID.  <br /></td></tr>
 <tr class="separator:a981a03fdaec07b99cdb994d44ab95703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad312eca20c2b6f8400dfe32e6a997132" id="r_ad312eca20c2b6f8400dfe32e6a997132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#ad312eca20c2b6f8400dfe32e6a997132">computeDataDescriptor</a> ()</td></tr>
+<tr class="separator:ad312eca20c2b6f8400dfe32e6a997132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_backend_register_info_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_backend_register_info_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">ChimeraTK::BackendRegisterInfoBase</a></td></tr>
 <tr class="memitem:aaeb090dbd73d93b6952ecae6279f9abb inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base" id="r_aaeb090dbd73d93b6952ecae6279f9abb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#aaeb090dbd73d93b6952ecae6279f9abb">~BackendRegisterInfoBase</a> ()=default</td></tr>
 <tr class="memdesc:aaeb090dbd73d93b6952ecae6279f9abb inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
@@ -189,6 +191,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a82e9a504d5b063a6e3b34f3229466287 inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base" id="r_a82e9a504d5b063a6e3b34f3229466287"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a82e9a504d5b063a6e3b34f3229466287">getNumberOfDimensions</a> () const</td></tr>
 <tr class="memdesc:a82e9a504d5b063a6e3b34f3229466287 inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of dimensions of this register.  <br /></td></tr>
 <tr class="separator:a82e9a504d5b063a6e3b34f3229466287 inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af323ad5c9bfa9620e99c9e72067f97ad inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base" id="r_af323ad5c9bfa9620e99c9e72067f97ad"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#af323ad5c9bfa9620e99c9e72067f97ad">getTags</a> () const</td></tr>
+<tr class="memdesc:af323ad5c9bfa9620e99c9e72067f97ad inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of tags associated with this register.  <br /></td></tr>
+<tr class="separator:af323ad5c9bfa9620e99c9e72067f97ad inherit pub_methods_class_chimera_t_k_1_1_backend_register_info_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -390,7 +395,7 @@ Public Attributes</h2></td></tr>
 <p>Constructor to set all data members for scalar/1D registers. </p>
 <p>They all have default values, so this also acts as default constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00018">18</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00021">21</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -458,14 +463,7 @@ Public Attributes</h2></td></tr>
 
 <p>Constructor to set all data members for 2D registers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00043">43</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a85126d43e79d689a3e7929652cdbe5fa_cgraph.svg" width="554" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00046">46</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -527,6 +525,25 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad312eca20c2b6f8400dfe32e6a997132" name="ad312eca20c2b6f8400dfe32e6a997132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad312eca20c2b6f8400dfe32e6a997132">&#9670;&#160;</a></span>computeDataDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::NumericAddressedRegisterInfo::computeDataDescriptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00061">61</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+
+</div>
+</div>
 <a id="a4e5408f34c5b64a773d6bff1f4a831ab" name="a4e5408f34c5b64a773d6bff1f4a831ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e5408f34c5b64a773d6bff1f4a831ab">&#9670;&#160;</a></span>getDataDescriptor()</h2>
 
@@ -550,19 +567,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return desciption of the actual payload data for this register. </p>
+<p>Return description of the actual payload data for this register. </p>
 <p>See the description of <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner.">DataDescriptor</a> for more information. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a3255f0abb0a4e83ddb95c97fb473e3e5">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00083">83</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a4e5408f34c5b64a773d6bff1f4a831ab_icgraph.svg" width="550" height="239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -625,13 +635,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#ad7a70e2d734cd02c65f713be0045a690">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00079">79</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_af8cb033bb588030faafd483b951dc7a6_icgraph.svg" width="618" height="160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -663,7 +666,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#abd91330b9b878e4053db6fd040582cfd">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00181">181</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00184">184</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -695,13 +698,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a31c78dfbea563960cbe4805a01a1238d">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00077">77</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_ac63118e58a1251387d92ef6fa2498c95_icgraph.svg" width="510" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -733,13 +729,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a85ece0fd9d481d869e938261bd21b2b8">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00094">94</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a42c10bdd34bf7f303b4a05c69c7fac5f_cgraph.svg" width="594" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -771,13 +760,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a128e5806d389ffa3ed99ee07e3cecc39">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00085">85</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a279714b8dfa9011616127110b8f1b10f_icgraph.svg" width="100%" height="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -809,13 +791,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#ab0dc5bfc30a29577986d10a3b59d7dc0">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00090">90</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_ad88d4b62f26408e41ce076c3d9faa3b8_icgraph.svg" width="100%" height="505"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -835,14 +810,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00175">175</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a8d73d9807e48cba323df752dcab39c6f_cgraph.svg" width="100%" height="386"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00178">178</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -888,21 +856,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00166">166</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a8232f919c49f06e92f35467e5e4a13fc_cgraph.svg" width="100%" height="386"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_register_info_a8232f919c49f06e92f35467e5e4a13fc_icgraph.svg" width="510" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00169">169</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>

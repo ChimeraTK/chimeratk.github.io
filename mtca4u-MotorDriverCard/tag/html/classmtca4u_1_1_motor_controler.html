@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classmtca4u_1_1_motor_controler.html',
 </div><!--header-->
 <div class="contents">
 
-<p>A class to controll stepper motors using the DFMC-MD22 card.  
+<p>A class to control stepper motors using the DFMC-MD22 card.  
  <a href="classmtca4u_1_1_motor_controler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>&gt;</code></p>
@@ -119,7 +119,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3c73ceeb0f96b6e02da56cb8a633362" id="r_ad3c73ceeb0f96b6e02da56cb8a633362"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#ad3c73ceeb0f96b6e02da56cb8a633362">getID</a> ()=0</td></tr>
-<tr class="memdesc:ad3c73ceeb0f96b6e02da56cb8a633362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the motor controler on the FMC board (0 or 1).  <br /></td></tr>
+<tr class="memdesc:ad3c73ceeb0f96b6e02da56cb8a633362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the motor controller on the FMC board (0 or 1).  <br /></td></tr>
 <tr class="separator:ad3c73ceeb0f96b6e02da56cb8a633362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b0066fab356a076c351ad3cc40c498" id="r_aa1b0066fab356a076c351ad3cc40c498"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#aa1b0066fab356a076c351ad3cc40c498">getActualPosition</a> ()=0</td></tr>
 <tr class="memdesc:aa1b0066fab356a076c351ad3cc40c498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actual position in steps.  <br /></td></tr>
@@ -225,25 +225,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2ee74fd047a6ab6c934e2cee06ecf157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latched position in steps.  <br /></td></tr>
 <tr class="separator:a2ee74fd047a6ab6c934e2cee06ecf157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee36371b3b39fae124c37698082c4b65" id="r_aee36371b3b39fae124c37698082c4b65"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#aee36371b3b39fae124c37698082c4b65">targetPositionReached</a> ()=0</td></tr>
-<tr class="memdesc:aee36371b3b39fae124c37698082c4b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the correct bit from the controler status word.  <br /></td></tr>
+<tr class="memdesc:aee36371b3b39fae124c37698082c4b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the correct bit from the controller status word.  <br /></td></tr>
 <tr class="separator:aee36371b3b39fae124c37698082c4b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af574bb5e420cfbc34346409f474045eb" id="r_af574bb5e420cfbc34346409f474045eb"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#af574bb5e420cfbc34346409f474045eb">getReferenceSwitchBit</a> ()=0</td></tr>
 <tr class="memdesc:af574bb5e420cfbc34346409f474045eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ReferenceSwitchBit for this motor as defined in section 10.1 of the TMC429 data sheet.  <br /></td></tr>
 <tr class="separator:af574bb5e420cfbc34346409f474045eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75809f9b1c396a8b2623ac99e8f1735a" id="r_a75809f9b1c396a8b2623ac99e8f1735a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a75809f9b1c396a8b2623ac99e8f1735a">~MotorControler</a> ()</td></tr>
-<tr class="separator:a75809f9b1c396a8b2623ac99e8f1735a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e88c510cf65221b6a7e403f4adb2d2" id="r_a23e88c510cf65221b6a7e403f4adb2d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler.html#a23e88c510cf65221b6a7e403f4adb2d2">~MotorControler</a> ()=default</td></tr>
+<tr class="separator:a23e88c510cf65221b6a7e403f4adb2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class to controll stepper motors using the DFMC-MD22 card. </p>
+<div class="textblock"><p>A class to control stepper motors using the DFMC-MD22 card. </p>
 <p>This class represents the base functionality of one motor.</p>
-<p>Note: Technically this controler class addresses registers of the TMC 429 motor controler chip (which can handle up to 3 motors) and the TMC 260 motor driver, which is indiviual for each motor. On the software side these implementation details are not important. Think of this class as a virtual controler with integrated driver.</p>
+<p>Note: Technically this controller class addresses registers of the TMC 429 motor controller chip (which can handle up to 3 motors) and the TMC 260 motor driver, which is individual for each motor. On the software side these implementation details are not important. Think of this class as a virtual controller with integrated driver.</p>
 <p>This purely virtual class defines the interface.</p>
 <dl class="section author"><dt>Author</dt><dd>Martin Killenberg <a href="#" onclick="location.href='mai'+'lto:'+'mar'+'ti'+'n.k'+'il'+'len'+'be'+'rg@'+'de'+'sy.'+'de'; return false;">marti<span class="obfuscator">.nosp@m.</span>n.ki<span class="obfuscator">.nosp@m.</span>llenb<span class="obfuscator">.nosp@m.</span>erg@<span class="obfuscator">.nosp@m.</span>desy.<span class="obfuscator">.nosp@m.</span>de</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_8h_source.html#l00034">34</a> of file <a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_8h_source.html#l00036">36</a> of file <a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a75809f9b1c396a8b2623ac99e8f1735a" name="a75809f9b1c396a8b2623ac99e8f1735a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75809f9b1c396a8b2623ac99e8f1735a">&#9670;&#160;</a></span>~MotorControler()</h2>
+<a id="a23e88c510cf65221b6a7e403f4adb2d2" name="a23e88c510cf65221b6a7e403f4adb2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e88c510cf65221b6a7e403f4adb2d2">&#9670;&#160;</a></span>~MotorControler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,12 +260,10 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_motor_controler_8h_source.html#l00128">128</a> of file <a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +292,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1654b5295f6b57d0f0dc959e717b1fe6">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a203cda9ca983062c77715d10b66c857e">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a3af278b46f820e7e516bfd676b3b6600">mtca4u::MotorControlerDummy</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1654b5295f6b57d0f0dc959e717b1fe6">mtca4u::MotorControlerImpl</a>.</p>
 
 </div>
 </div>
@@ -323,7 +321,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the actual acceleration in steps per square FIXME. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a2cbd4e82eb3ab46b972bd42ff7878513">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a244f4f9f4efa654708f67a13d57c38b9">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a64ea33c00dd6fbdbe0e132ace691ef8f">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -352,7 +350,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the actual position in steps. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#adacb4e7617913538c4a53a01b868bca7">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a1149922bb63f46a848b64cc2cd17acce">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#adacb4e7617913538c4a53a01b868bca7">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a94476045f4570b251ecaead8179abe3e">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -381,7 +379,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the actual velocity in steps per FIXME. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad8e18aa5cec73c4b8fc52e61d153dbf7">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a5fa9c415ac9a0ef7bd10f095184bd592">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ad8e18aa5cec73c4b8fc52e61d153dbf7">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a61dc18ead2008885a7acf0b4bfa37098">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -408,7 +406,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5cef6d6d198748777f370183ce7de8fb">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a21a4cfc898f585b5b8f36e6b7f253341">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5cef6d6d198748777f370183ce7de8fb">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a543a73b4d2e09b0f2305cbb1827f3563">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -437,14 +435,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the decoder position (which units?) </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae321b6000625508c13e2198c2d34f534">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#afdbed08ef9e476d37e9e541200f939f7">mtca4u::MotorControlerDummy</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_a274c48824e01a030de99117dbfecf686_icgraph.svg" width="456" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae321b6000625508c13e2198c2d34f534">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a281da31a7cb65d0df2d77913b0143783">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -473,7 +464,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the decoder readout mode. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#accfa75b09957371c76729c2abdafa8e5">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a6c26ac53bc10b98a53503984c82120ca">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#accfa75b09957371c76729c2abdafa8e5">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a303df7a0ef508819b11ae53f23ae9118">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -500,9 +491,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the ID of the motor controler on the FMC board (0 or 1). </p>
+<p>Get the ID of the motor controller on the FMC board (0 or 1). </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab0e3526d99e4b63beefc08e415cf389f">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a367ee0a12faf3e7f28110639fcd2346a">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab0e3526d99e4b63beefc08e415cf389f">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a98455bb4679a43bd4d043db7311c1e3e">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -529,7 +520,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a567368a21acc304efdc6d8ede5fb1928">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a50b2ab0700182ee07ae0d47121f23ca0">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a567368a21acc304efdc6d8ede5fb1928">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a14540da056ca2b187268db5871987137">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -556,7 +547,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1585ea8c9862b08176bfd3605f27f476">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aaa28661402e0e3ea6690ebd387849ad3">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1585ea8c9862b08176bfd3605f27f476">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a8677a1290ca3710c02a64e71c5ae469f">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -585,7 +576,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the micro step value (which units? what does it mean?) </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab20796e93276ab46ba069e2c075d5248">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a549ffe8c3210b372af66c6d0a7724c74">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab20796e93276ab46ba069e2c075d5248">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a2f9d2b6cabad3d10853bca5d03f0fed4">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -612,7 +603,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ace43e13badf5dcc9066049e301f4b0de">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aa124439e5e0691c1e8b23d8fdba6b736">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ace43e13badf5dcc9066049e301f4b0de">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ae503aa88d52e9deb0727dd5efd5f397e">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -639,7 +630,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aab90b6980456b04569423ce5a27060fe">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a171cbb2366bc2dd020a2d2b05498c507">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aab90b6980456b04569423ce5a27060fe">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a1c57c026c33134475206f54c40d23de1">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -667,9 +658,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the ReferenceSwitchBit for this motor as defined in section 10.1 of the TMC429 data sheet. </p>
-<p>This function the extracts the correct bit from the controler status word and stores it as the least significant bit. </p>
+<p>This function the extracts the correct bit from the controller status word and stores it as the least significant bit. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa0e873a430de3709779ca6275e1230cb">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aece2e98a8eaf6e5695955a357e828de9">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa0e873a430de3709779ca6275e1230cb">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#acee001279ea0f6e12a2f69103464d3ee">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -698,7 +689,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get information about both reference switches of this Motor. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a4ade42f52bddecb8aba9784ea41722e4">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ae148cdaa0d680731d0f654ea79962ba5">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a4ade42f52bddecb8aba9784ea41722e4">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aa43d21a667becbfa3767a8db35efb5a4">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -727,14 +718,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the status of the motor driver. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ac3447a09c2ab259436e3950292a81b90">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a6a5b34927a96e0ef25e1d8b9f8777157">mtca4u::MotorControlerDummy</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_a85f8dd665ee9c12b94352572b339a816_icgraph.svg" width="456" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ac3447a09c2ab259436e3950292a81b90">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a4cb317d106a649e49a0e8891243b2149">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -761,7 +745,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aa283bccaa095fcee1e571cbc24dae35e">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1f6cedcae59e695014cb031ed63826d2">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a566b0b1d08727f2a9a9eeb4baa942ad8">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -788,7 +772,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2a1c1ac60f2f73114a892cfb0b091ca8">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a72e7e4b61fbee1cdc18945145c3341b1">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2a1c1ac60f2f73114a892cfb0b091ca8">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ae3995a23c949b920cf6c57e4851e854a">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -816,7 +800,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use isMotorCurrentEnabled instead. </dd></dl>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9fb1442acb6d2a977eae1502917975aa">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aefd91429e2490e99a9406d57385e3e86">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a9fb1442acb6d2a977eae1502917975aa">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a73ef63f567112ed4129f5278ecc8d368">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -843,7 +827,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab9454aa7fad953a4c83e796522760062">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad7608a85ab8baedba248baae02b93f32">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab9454aa7fad953a4c83e796522760062">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ac20b2f390588aa039679e97960fa1e57">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -870,7 +854,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2ef5fe978c7a383556e0ee9c146a1385">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ab428e2c7fa5a6e82d0b161968e4a8a27">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2ef5fe978c7a383556e0ee9c146a1385">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a1397d47ad876067d602c659dd3fba850">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -897,7 +881,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a286b61cd86f9588350dc49f4349ef164">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a19db763787c171ec4987330075d1a541">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a286b61cd86f9588350dc49f4349ef164">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a7a0504876a060b0452e5e4c89ce4fbb8">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -926,7 +910,7 @@ Public Member Functions</h2></td></tr>
 
 <p>check if the motor is moving. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af54e43e269debc45741787fa63c13828">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ab89245462dd25d47a7244bcb6e40253c">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af54e43e269debc45741787fa63c13828">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#adce9055c1ed3601e281f58995cb24413">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1148,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae72052e81d59e8e8b55a96ec16ab8cee">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a810416fb1e1d87a4bd5dafe07eab782b">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae72052e81d59e8e8b55a96ec16ab8cee">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ae8a670132dfa4a899dc61717965a00dc">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1178,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Set the actual position counter for a recalibration of the actual position. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a46717eab6a0cd80e064e96ac6e959401">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2702a2299e9c577806d68853c11a046e">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a506cdcb1facec31926e15f5890689038">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1206,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#acc9390000eb9981fc15f0bb59496f639">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a2e56bf7c306f72c81347c916a3a2d311">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#acc9390000eb9981fc15f0bb59496f639">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a556256c40705311d0d12994d17f7b6d2">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1234,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5d54e72618481665749ccbef028740a5">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#add901d0f910b5eec5fef0a70827baaaa">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a5d54e72618481665749ccbef028740a5">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a90a5aca00c306d5c9de8315882199613">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1263,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use setMotorCurrentEnabled instead. </dd></dl>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a7c8abe212e61d8a8e07ea245b1eca3a5">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a6a97e7e505d85bf58a84c9b14f03b012">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ac799481a22bdfca78f535f26fbb1fe78">mtca4u::MotorControlerDummy</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a7c8abe212e61d8a8e07ea245b1eca3a5">mtca4u::MotorControlerImpl</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1291,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa84bc3fd38c273ac482c72b028cacc9e">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a4beaeacde5cc6850aae36673b7e6a296">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a05cc8912c7c43ee39d19ba67dc498f0b">mtca4u::MotorControlerDummy</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#aa84bc3fd38c273ac482c72b028cacc9e">mtca4u::MotorControlerImpl</a>.</p>
 
 </div>
 </div>
@@ -1335,7 +1319,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a8f4d2614b5ed09c33121ebf33a8d0239">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a91e8e990b93d564eeac024148567dbed">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a8f4d2614b5ed09c33121ebf33a8d0239">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a2dcacc01c0fa3f5d83051db22ca76470">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1363,7 +1347,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1212f671047657455a20d7663f1a5848">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a453e9800d8db162d3756fd68876fe2bc">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a311b3bf136c97f886beff9e23ea9107f">mtca4u::MotorControlerDummy</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1212f671047657455a20d7663f1a5848">mtca4u::MotorControlerImpl</a>.</p>
 
 </div>
 </div>
@@ -1391,7 +1375,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af903386dd25dc8dba6ce686dfa529563">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a59b80b517927f3b52641a438becfb0aa">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af903386dd25dc8dba6ce686dfa529563">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a18856d2e4195dcd04f6be8d7e37e62ed">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1406,7 @@ Public Member Functions</h2></td></tr>
 <p>Enable or disable the negative reference switch. </p>
 <p>(true=enabled) </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae65a8d5449b157a0ce085ec417fcb781">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a17890ae8cd5b42f83abcdecd5aea32b0">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ae65a8d5449b157a0ce085ec417fcb781">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a9af5dedfc2aed6c82437fecc76e71905">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1434,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af3980683530bb053c62cad9a2ccfa5ef">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad991e24ea15de16885deb948cc6b7781">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af3980683530bb053c62cad9a2ccfa5ef">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a03044f52d6628962068d13ca15f76532">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1481,7 +1465,7 @@ Public Member Functions</h2></td></tr>
 <p>Enable or disable the positive reference switch. </p>
 <p>(true=enabled) </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a1d5478d5ce8e0ceb1d9457f7a324856c">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a22e088c1334a7109b8e9c987240d8377">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a29b0d101ca522c659a0fcc33b7f6218e">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1509,7 +1493,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#afd447c35d9b26b1e0fa2608ce0bff84c">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad1dabf4d3d48677cea5f417cb72f9955">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#afd447c35d9b26b1e0fa2608ce0bff84c">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a648c44bf9e3f1cef3f4753d7beabc9e7">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1537,7 +1521,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a33b189e7c6989dc592967e5b1b360267">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#abaac70b34c8a6b59d654bec0a174256b">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a33b189e7c6989dc592967e5b1b360267">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad2c82a509d2d0906d76c028339c5c09b">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1564,9 +1548,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Extracts the correct bit from the controler status word. </p>
+<p>Extracts the correct bit from the controller status word. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab4c37b67435001447829b6551bdc6062">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a87d493263082d051a1e1361f033a0dc7">mtca4u::MotorControlerDummy</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#ab4c37b67435001447829b6551bdc6062">mtca4u::MotorControlerImpl</a>, and <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#aaa2845464982612e6d45dee205eddcfe">mtca4u::MotorControlerDummy</a>.</p>
 
 </div>
 </div>
@@ -1579,7 +1563,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_controler.html">MotorControler</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:42 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

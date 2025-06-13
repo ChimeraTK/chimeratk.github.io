@@ -16,6 +16,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_register_info =
     [ "getNumberOfElements", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a77065ed1981822f356f143dcb136bd47", null ],
     [ "getRegisterName", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a15124f8b7e8aedbc4a1cbdbb5b78225f", null ],
     [ "getSupportedAccessModes", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a8d915425d300ff6b398831727717509e", null ],
+    [ "getTags", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a94b0fc192b724bedae6374e75f25a0e8", null ],
     [ "isReadable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa", null ],
     [ "operator=", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a9784086bf0c9d5119543ff249ec1908e", null ],
@@ -31,6 +32,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_register_info =
     [ "readable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6c445623ee9b3977e4e73c1965ab7cb2", null ],
     [ "registerName", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a63d9bdc5b457a66aafb74564870813d5", null ],
     [ "supportedFlags", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c", null ],
+    [ "tags", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65a5636262ed465f3d3c02f02727ffb9", null ],
     [ "targetType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17", null ],
     [ "valueType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a0232afb5cb9aabded20da080b24ecc47", null ],
     [ "writeable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a78eaed0aaebd9163a7006d65b2a095eb", null ]

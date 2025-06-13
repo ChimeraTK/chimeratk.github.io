@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mtca4u-MotorDriverCard: /scratch/dragon/sources/mtca4u-MotorDriverCard/tests/src/testMotorDriverCardDummy.cpp Source File</title>
+<title>mtca4u-MotorDriverCard: /scratch/dragon/sources/mtca4u-MotorDriverCard/tests/src/backend/testMotorDriverCardDummy.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -139,24 +139,24 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_dummy_8cpp_sour
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_dummy_test.html#af197f2c13eae8e617cb07e3cda441a4a">   34</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy_test.html#af197f2c13eae8e617cb07e3cda441a4a">MotorDriverCardDummyTest::testGetMotorControler</a>() {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    boost::shared_ptr&lt;MotorControler&gt; controler0 = _motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#aafb17f4ad0c726c04330e08a741e7087">getMotorControler</a>(0);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    boost::shared_ptr&lt;MotorControler&gt; controler0 = _motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#a447867b10819382e15847044ad26e304">getMotorControler</a>(0);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    BOOST_CHECK(controler0-&gt;getID() == 0);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// check that we actually get a MotorControlerDummy</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    boost::shared_ptr&lt;MotorControlerDummy&gt; controler1 =</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        boost::dynamic_pointer_cast&lt;MotorControlerDummy&gt;(_motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#aafb17f4ad0c726c04330e08a741e7087">getMotorControler</a>(1));</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        boost::dynamic_pointer_cast&lt;MotorControlerDummy&gt;(_motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#a447867b10819382e15847044ad26e304">getMotorControler</a>(1));</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// this will cause an exception if the cast failed</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    BOOST_CHECK(controler1-&gt;getID() == 1);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    BOOST_CHECK_THROW(_motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#aafb17f4ad0c726c04330e08a741e7087">getMotorControler</a>(2), ChimeraTK::logic_error);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    BOOST_CHECK_THROW(_motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#a447867b10819382e15847044ad26e304">getMotorControler</a>(2), ChimeraTK::logic_error);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_dummy_test.html#ae83e33faf3d8160f19f3ecf14ff4975d">   49</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy_test.html#ae83e33faf3d8160f19f3ecf14ff4975d">MotorDriverCardDummyTest::testGetPowerMonitor</a>() {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    BOOST_CHECK_THROW(_motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#ab04514f6a5260ac12966635a71ef0a46">getPowerMonitor</a>(), ChimeraTK::logic_error);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    BOOST_CHECK_THROW(_motorDriverCardDummy.<a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_dummy.html#af952715f2f8632164eaa19dd055e36d2">getPowerMonitor</a>(), ChimeraTK::logic_error);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  }</div>
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
@@ -171,23 +171,23 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_dummy_8cpp_sour
 <div class="ttc" id="a_motor_controler_dummy_8h_html"><div class="ttname"><a href="_motor_controler_dummy_8h.html">MotorControlerDummy.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_dummy_8h_html"><div class="ttname"><a href="_motor_driver_card_dummy_8h.html">MotorDriverCardDummy.h</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy.html">mtca4u::MotorDriverCardDummy</a></div><div class="ttdoc">A dummy implementation of the MotorDriverCard.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_dummy_8h_source.html#l00013">MotorDriverCardDummy.h:13</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_html_aafb17f4ad0c726c04330e08a741e7087"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy.html#aafb17f4ad0c726c04330e08a741e7087">mtca4u::MotorDriverCardDummy::getMotorControler</a></div><div class="ttdeci">virtual boost::shared_ptr&lt; MotorControler &gt; getMotorControler(unsigned int motorControlerID)</div><div class="ttdoc">Get acces to one of the two motor controlers on this board.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_dummy_8cc_source.html#l00020">MotorDriverCardDummy.cc:20</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_html_ab04514f6a5260ac12966635a71ef0a46"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy.html#ab04514f6a5260ac12966635a71ef0a46">mtca4u::MotorDriverCardDummy::getPowerMonitor</a></div><div class="ttdeci">virtual PowerMonitor &amp; getPowerMonitor()</div><div class="ttdoc">Get a reference to the power monitor.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_dummy_8cc_source.html#l00031">MotorDriverCardDummy.cc:31</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_html_a447867b10819382e15847044ad26e304"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy.html#a447867b10819382e15847044ad26e304">mtca4u::MotorDriverCardDummy::getMotorControler</a></div><div class="ttdeci">boost::shared_ptr&lt; MotorControler &gt; getMotorControler(unsigned int motorControlerID) override</div><div class="ttdoc">Get acces to one of the two motor controlers on this board.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_dummy_8cc_source.html#l00023">MotorDriverCardDummy.cc:23</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_html_af952715f2f8632164eaa19dd055e36d2"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy.html#af952715f2f8632164eaa19dd055e36d2">mtca4u::MotorDriverCardDummy::getPowerMonitor</a></div><div class="ttdeci">PowerMonitor &amp; getPowerMonitor() override</div><div class="ttdoc">Get a reference to the power monitor.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_dummy_8cc_source.html#l00034">MotorDriverCardDummy.cc:34</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_test_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy_test.html">mtca4u::MotorDriverCardDummyTest</a></div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00011">testMotorDriverCardDummy.cpp:11</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_test_html_ab03819af4a19ba98c680adf80a49c307"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy_test.html#ab03819af4a19ba98c680adf80a49c307">mtca4u::MotorDriverCardDummyTest::MotorDriverCardDummyTest</a></div><div class="ttdeci">MotorDriverCardDummyTest()</div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00016">testMotorDriverCardDummy.cpp:16</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_test_html_ae83e33faf3d8160f19f3ecf14ff4975d"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy_test.html#ae83e33faf3d8160f19f3ecf14ff4975d">mtca4u::MotorDriverCardDummyTest::testGetPowerMonitor</a></div><div class="ttdeci">void testGetPowerMonitor()</div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00049">testMotorDriverCardDummy.cpp:49</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_test_html_af197f2c13eae8e617cb07e3cda441a4a"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy_test.html#af197f2c13eae8e617cb07e3cda441a4a">mtca4u::MotorDriverCardDummyTest::testGetMotorControler</a></div><div class="ttdeci">void testGetMotorControler()</div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00034">testMotorDriverCardDummy.cpp:34</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_test_suite_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy_test_suite.html">mtca4u::MotorDriverCardDummyTestSuite</a></div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00022">testMotorDriverCardDummy.cpp:22</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_test_suite_html_af9f28d556ae3fdf58c5a7749d8e1596b"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy_test_suite.html#af9f28d556ae3fdf58c5a7749d8e1596b">mtca4u::MotorDriverCardDummyTestSuite::MotorDriverCardDummyTestSuite</a></div><div class="ttdeci">MotorDriverCardDummyTestSuite()</div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00024">testMotorDriverCardDummy.cpp:24</a></div></div>
-<div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
+<div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 <div class="ttc" id="atest_motor_driver_card_dummy_8cpp_html_a81c147de09701e9aa28ee4e4b7b5b7a1"><div class="ttname"><a href="test_motor_driver_card_dummy_8cpp.html#a81c147de09701e9aa28ee4e4b7b5b7a1">init_unit_test_suite</a></div><div class="ttdeci">test_suite * init_unit_test_suite(int, char *[])</div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_dummy_8cpp_source.html#l00055">testMotorDriverCardDummy.cpp:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_5c1af8e39d626a10449ff2cc02efa59d.html">tests</a></li><li class="navelem"><a class="el" href="dir_d6b74272cc69793117ffbe9db9784b0f.html">src</a></li><li class="navelem"><a class="el" href="test_motor_driver_card_dummy_8cpp.html">testMotorDriverCardDummy.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:42 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_5c1af8e39d626a10449ff2cc02efa59d.html">tests</a></li><li class="navelem"><a class="el" href="dir_d6b74272cc69793117ffbe9db9784b0f.html">src</a></li><li class="navelem"><a class="el" href="dir_2dee51d1c9522d808e1a7a7fd5cbe7a6.html">backend</a></li><li class="navelem"><a class="el" href="test_motor_driver_card_dummy_8cpp.html">testMotorDriverCardDummy.cpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

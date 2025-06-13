@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ Static Protected Attributes</h2></td></tr>
 <p>This is done in a single class because the container with the fluctuating number of subscribed variables is not thread safe. This class implements a lock so data distribution to the variables is safe against concurrent subscriptions/unsubscriptions.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1async_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> has some pure virtual functions. They have implementation specific functionality which must be provided by a derived version of the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00069">69</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00070">70</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e1c03921fcff20f5f5befb9e6d37166" name="a5e1c03921fcff20f5f5befb9e6d37166"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e1c03921fcff20f5f5befb9e6d37166">&#9670;&#160;</a></span>AsyncAccessorManager()</h2>
@@ -211,7 +211,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00071">71</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00072">72</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -267,14 +267,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This virtual function lets derived classes react on subscribe / unsubscribe. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00109">109</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_aba7196a0af8ff0b462af49544f741683_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00110">110</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -334,20 +327,6 @@ Static Protected Attributes</h2></td></tr>
 <p>This automatically de-activates them. </p>
 
 <p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00028">28</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_a736ca053ebeaea59cd0f85a0ce35493b_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_a736ca053ebeaea59cd0f85a0ce35493b_icgraph.svg" width="544" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -394,14 +373,7 @@ template&lt;typename UserType &gt; </div>
 <p>Request a new subscription. </p>
 <p>This function internally creates the correct asynchronous accessor and a matching <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a>. A weak pointer to the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> is registered in the <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html" title="Typeless base class.">AsyncVariable</a>, and a shared pointer is returned to the calling code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00226">226</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_a0dc9f5ac6d032d0d085bfdb35dc62c6e_cgraph.svg" width="567" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00244">244</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -424,13 +396,6 @@ template&lt;typename UserType &gt; </div>
 <p>This function must only be called from the destructor of the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> which is created in the subscribe function! </p>
 
 <p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00017">17</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_a8b9c1fda699e1d2cd259a7337eac528a_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -461,20 +426,6 @@ template&lt;typename UserType &gt; </div>
 <p>Internal helper function to avoid code duplication. </p>
 
 <p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00011">11</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_a6b68630903fc0beef03afd86fb0e3bc3_cgraph.svg" width="567" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_async_accessor_manager_a6b68630903fc0beef03afd86fb0e3bc3_icgraph.svg" width="100%" height="386"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -499,7 +450,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00106">106</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00107">107</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +474,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00103">103</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00104">104</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +498,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00105">105</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00106">106</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +524,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>If an unsubscription request is coming in while iterating the _asyncVariables container, we have to remember it and do it afterwards. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00128">128</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00129">129</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +552,7 @@ template&lt;typename UserType &gt; </div>
 <p>In this case we must not try to get the domain lock again in unsubscribe because we are already holding it in this thread. This implementation was chosen as opposed to using a recursive mutex, because re-acquiring the recursive mutex might cause lock order inversion and possible dead locks if other locks are involved in backends that are not part of the core framework.</p>
 <p>The variable is holding a pointer to the actual instance of the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> while distributing data or exceptions, and nullptr otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00123">123</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00124">124</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>

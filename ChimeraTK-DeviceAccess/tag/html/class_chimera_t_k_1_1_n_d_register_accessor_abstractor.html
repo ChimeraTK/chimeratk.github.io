@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -221,6 +221,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fc158c26e1523d3b1ef1f5a3bbfcc07 inherit pub_methods_class_chimera_t_k_1_1_transfer_element_abstractor" id="r_a3fc158c26e1523d3b1ef1f5a3bbfcc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a3fc158c26e1523d3b1ef1f5a3bbfcc07">interrupt</a> ()</td></tr>
 <tr class="memdesc:a3fc158c26e1523d3b1ef1f5a3bbfcc07 inherit pub_methods_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <br /></td></tr>
 <tr class="separator:a3fc158c26e1523d3b1ef1f5a3bbfcc07 inherit pub_methods_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8fdf8df3b0e5a41749d13698035648 inherit pub_methods_class_chimera_t_k_1_1_transfer_element_abstractor" id="r_a8e8fdf8df3b0e5a41749d13698035648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a8e8fdf8df3b0e5a41749d13698035648">getReadAnyGroup</a> () const</td></tr>
+<tr class="memdesc:a8e8fdf8df3b0e5a41749d13698035648 inherit pub_methods_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a> this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> is part of, or nullptr if not in a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.  <br /></td></tr>
+<tr class="separator:a8e8fdf8df3b0e5a41749d13698035648 inherit pub_methods_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -361,13 +364,6 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00080">80</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_abstractor_a0c0d2aa4e1ef2bc500be14f8d9e93ef9_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -497,13 +493,6 @@ template&lt;typename UserType &gt; </div>
 <p>Since another <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the register accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw...">NDRegisterAccessorAbstractor</a> is passed as argument, both NDRegisterAccessorAbstractors will then point to the same accessor and thus are sharing the same buffer. To obtain a new copy of the accessor with a distinct buffer, the corresponding getXXRegisterAccessor() function of <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device.">Device</a> must be called. </p>
 
 <p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00067">67</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_abstractor_ab6e2e3825b61976c4ad61ec9d1a7f547_icgraph.svg" width="518" height="528"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>

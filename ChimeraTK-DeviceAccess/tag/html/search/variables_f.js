@@ -11,5 +11,7 @@ var searchData=
   ['pong_8',['PONG',['../class_chimera_t_k_1_1_rebot_dummy_session.html#ac5d9d235dab59e2201723faa77e266e3',1,'ChimeraTK::RebotDummySession']]],
   ['port_9',['port',['../struct_rebot_server_details.html#a2f9f80babd0826bcf5ca87d4d1fc865d',1,'RebotServerDetails']]],
   ['printpaddingchangedmessage_10',['printPaddingChangedMessage',['../struct_short_raw__base.html#ac0940d2422ff570d04fcfa75ac86ed12',1,'ShortRaw_base']]],
-  ['protocol_11',['protocol',['../struct_chimera_t_k_1_1_sdm.html#afe899f17863fa80392569dab9e0c545a',1,'ChimeraTK::Sdm']]]
+  ['printtime_11',['printTime',['../structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html#a4815b41ccca3e155e56e42cf6f569660',1,'std::formatter&lt; ChimeraTK::VersionNumber, CharT &gt;']]],
+  ['printversion_12',['printVersion',['../structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html#a9ce2bf0b1226d5f933a43360a1c70e37',1,'std::formatter&lt; ChimeraTK::VersionNumber, CharT &gt;']]],
+  ['protocol_13',['protocol',['../struct_chimera_t_k_1_1_sdm.html#afe899f17863fa80392569dab9e0c545a',1,'ChimeraTK::Sdm']]]
 ];

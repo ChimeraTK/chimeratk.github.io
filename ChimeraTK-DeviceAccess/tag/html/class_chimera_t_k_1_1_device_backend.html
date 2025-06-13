@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_device_backend.h
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_device_backend-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::DeviceBackend Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
@@ -116,6 +117,11 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_device_backend.h
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend__coll__graph.svg" width="232" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a84fe39d878fadf389f4cbbbe31590ae5" id="r_a84fe39d878fadf389f4cbbbe31590ae5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">BackendID</a> = std::uintptr_t</td></tr>
+<tr class="separator:a84fe39d878fadf389f4cbbbe31590ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a62d0ebfa2becc2f94eee54a5f1ccb49c" id="r_a62d0ebfa2becc2f94eee54a5f1ccb49c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a62d0ebfa2becc2f94eee54a5f1ccb49c">~DeviceBackend</a> ()=default</td></tr>
@@ -160,13 +166,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe07262daa951277112950a2f593ab51" id="r_abe07262daa951277112950a2f593ab51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#abe07262daa951277112950a2f593ab51">checkActiveException</a> ()=0</td></tr>
 <tr class="memdesc:abe07262daa951277112950a2f593ab51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called by backends when needing to check for an active exception.  <br /></td></tr>
 <tr class="separator:abe07262daa951277112950a2f593ab51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b9f21e46960f337cad38ca40b31e80" id="r_a85b9f21e46960f337cad38ca40b31e80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">BackendID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85b9f21e46960f337cad38ca40b31e80">getBackendID</a> ()</td></tr>
+<tr class="memdesc:a85b9f21e46960f337cad38ca40b31e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a unique ID for this backend instance.  <br /></td></tr>
+<tr class="separator:a85b9f21e46960f337cad38ca40b31e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4829e36d86c4f96563185b97c2ee498" id="r_af4829e36d86c4f96563185b97c2ee498"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">BackendID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#af4829e36d86c4f96563185b97c2ee498">getInvolvedBackendIDs</a> ()=0</td></tr>
+<tr class="memdesc:af4829e36d86c4f96563185b97c2ee498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the backend IDs of all involved backends.  <br /></td></tr>
+<tr class="separator:af4829e36d86c4f96563185b97c2ee498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for backends providing IO functionality for the <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device.">Device</a> class. </p>
 <p>Note that most backends should actually be based on the <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends.">DeviceBackendImpl</a> class (unless it is a decorator backend). The actual IO is always performed through register accessors, which is obtained through the getBufferingRegisterAccessor() member function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00028">28</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00029">29</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a84fe39d878fadf389f4cbbbe31590ae5" name="a84fe39d878fadf389f4cbbbe31590ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fe39d878fadf389f4cbbbe31590ae5">&#9670;&#160;</a></span>BackendID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">ChimeraTK::DeviceBackend::BackendID</a> =  std::uintptr_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00106">106</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a62d0ebfa2becc2f94eee54a5f1ccb49c" name="a62d0ebfa2becc2f94eee54a5f1ccb49c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62d0ebfa2becc2f94eee54a5f1ccb49c">&#9670;&#160;</a></span>~DeviceBackend()</h2>
 
@@ -224,14 +253,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ae4ef5735a32d50e7cb7f699c08e7a349">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac0aa218e9c9f77da85b197b6c27d996c">ChimeraTK::LogicalNameMappingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae231a2b26431cb1bccee3b18723e367d">ChimeraTK::SubdeviceBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aad91568071e601c3100b79be077f532d">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00097">97</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_a513692593b6dc8babc9544d9bfea04c8_icgraph.svg" width="480" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00098">98</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -322,6 +344,65 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a85b9f21e46960f337cad38ca40b31e80" name="a85b9f21e46960f337cad38ca40b31e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b9f21e46960f337cad38ca40b31e80">&#9670;&#160;</a></span>getBackendID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">BackendID</a> ChimeraTK::DeviceBackend::getBackendID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a unique ID for this backend instance. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00111">111</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+
+</div>
+</div>
+<a id="af4829e36d86c4f96563185b97c2ee498" name="af4829e36d86c4f96563185b97c2ee498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4829e36d86c4f96563185b97c2ee498">&#9670;&#160;</a></span>getInvolvedBackendIDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::set&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">BackendID</a> &gt; ChimeraTK::DeviceBackend::getInvolvedBackendIDs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the backend IDs of all involved backends. </p>
+<p>For meta backends like the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers.">LogicalNameMappingBackend</a> or the SubDeviceBackend this contains the ID of all target backend, in addition to this backend's ID. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a166309e3d8955efa9e9ec44909926f88">ChimeraTK::LogicalNameMappingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae69eecd77aa3774961771e0822f35f6e">ChimeraTK::SubdeviceBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#aa677a7a4ba47fe3192811c29b83aa535">ChimeraTK::DeviceBackendImpl</a>.</p>
+
+</div>
+</div>
 <a id="a89791ccc7e5e875cd4b1e6efb21c5633" name="a89791ccc7e5e875cd4b1e6efb21c5633"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89791ccc7e5e875cd4b1e6efb21c5633">&#9670;&#160;</a></span>getMetadataCatalogue()</h2>
 
@@ -348,13 +429,6 @@ Public Member Functions</h2></td></tr>
 <p>Return the device metadata catalogue. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a5bdfdbcf703ead898c3b1a96f4c33644">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">ChimeraTK::DeviceBackendImpl</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aab6aefb8e9dbbf6f8bd8a5d36bedebb6">ChimeraTK::NumericAddressedBackend</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_a89791ccc7e5e875cd4b1e6efb21c5633_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -400,14 +474,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a> object from the register name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00109">109</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_a85a134106068b02a89cbfa9a4559ccfc_icgraph.svg" width="504" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00126">126</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -617,13 +684,6 @@ template&lt;typename UserType &gt; </div>
 <p>All backends must remember this, turn off asyncronous reads and all accessors will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> on read and write operations with the provided message string, until <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9" title="Open the device.">open()</a> has been called successfully. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a9a27c28b9e50f5750aa19c9eba775345">ChimeraTK::DeviceBackendImpl</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_ab3d996241286ea3b233e3ea59824b670_icgraph.svg" width="446" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>

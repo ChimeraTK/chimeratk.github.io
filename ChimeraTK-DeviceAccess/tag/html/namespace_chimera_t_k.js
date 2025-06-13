@@ -2,6 +2,7 @@ var namespace_chimera_t_k =
 [
     [ "async", "namespace_chimera_t_k_1_1async.html", "namespace_chimera_t_k_1_1async" ],
     [ "csa_helpers", "namespace_chimera_t_k_1_1csa__helpers.html", "namespace_chimera_t_k_1_1csa__helpers" ],
+    [ "DataConsistencyGroupDetail", "namespace_chimera_t_k_1_1_data_consistency_group_detail.html", "namespace_chimera_t_k_1_1_data_consistency_group_detail" ],
     [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", "namespace_chimera_t_k_1_1_l_n_m_backend" ],
     [ "numeric_address", "namespace_chimera_t_k_1_1numeric__address.html", [
       [ "BAR", "namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e", null ]
@@ -25,13 +26,15 @@ var namespace_chimera_t_k =
     [ "Utilities", "namespace_chimera_t_k_1_1_utilities.html", [
       [ "aliasLookUp", "namespace_chimera_t_k_1_1_utilities.html#a2eee1bba7066a6d441061840f63ccd6d", null ],
       [ "countOccurence", "namespace_chimera_t_k_1_1_utilities.html#a5bf0fb7a4de6e9fba9e6b36baa4bf531", null ],
+      [ "createShmName", "namespace_chimera_t_k_1_1_utilities.html#ac4b7bf96a69e0e412bc6fa602e2f6f6c", null ],
       [ "getAliasList", "namespace_chimera_t_k_1_1_utilities.html#a25a0748d411f914029fd961f040bd2ee", null ],
       [ "isDeviceDescriptor", "namespace_chimera_t_k_1_1_utilities.html#ac9962632f9db42e2b2e7be4b3875a7bc", null ],
       [ "isSdm", "namespace_chimera_t_k_1_1_utilities.html#a5ba5af0fe01ab6b38bedbc32749eb5ce", null ],
       [ "parseDeviceDesciptor", "namespace_chimera_t_k_1_1_utilities.html#a01df8292c600039a0d654b7591e33a45", null ],
       [ "parseDeviceString", "namespace_chimera_t_k_1_1_utilities.html#a685a9e8b21d8fe1d21d9fa5941e3d2bc", null ],
       [ "parseSdm", "namespace_chimera_t_k_1_1_utilities.html#aa1751b9f4874cde2c2c92581681852a0", null ],
-      [ "printStackTrace", "namespace_chimera_t_k_1_1_utilities.html#a2ece51d51220974672726b2d1f30ed62", null ]
+      [ "printStackTrace", "namespace_chimera_t_k_1_1_utilities.html#a2ece51d51220974672726b2d1f30ed62", null ],
+      [ "shmDummyInstanceIdHash", "namespace_chimera_t_k_1_1_utilities.html#a49ba24611f93991206a0dfb26bd6ec38", null ]
     ] ],
     [ "AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", "class_chimera_t_k_1_1_access_mode_flags" ],
     [ "BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", "class_chimera_t_k_1_1_backend_factory" ],
@@ -48,6 +51,7 @@ var namespace_chimera_t_k =
     [ "CopyRegisterDecorator", "struct_chimera_t_k_1_1_copy_register_decorator.html", "struct_chimera_t_k_1_1_copy_register_decorator" ],
     [ "CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", null ],
     [ "CtrlIntf", "class_chimera_t_k_1_1_ctrl_intf.html", "class_chimera_t_k_1_1_ctrl_intf" ],
+    [ "DataConsistencyDecorator", "class_chimera_t_k_1_1_data_consistency_decorator.html", "class_chimera_t_k_1_1_data_consistency_decorator" ],
     [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", "class_chimera_t_k_1_1_data_consistency_group" ],
     [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html", "class_chimera_t_k_1_1_data_descriptor" ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],
@@ -99,7 +103,7 @@ var namespace_chimera_t_k =
     [ "logic_error", "class_chimera_t_k_1_1logic__error.html", "class_chimera_t_k_1_1logic__error" ],
     [ "LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", "class_chimera_t_k_1_1_logical_name_map_parser" ],
     [ "LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html", "class_chimera_t_k_1_1_logical_name_mapping_backend" ],
-    [ "MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", "class_chimera_t_k_1_1_map_file_parser" ],
+    [ "MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
     [ "MappedImage", "class_chimera_t_k_1_1_mapped_image.html", "class_chimera_t_k_1_1_mapped_image" ],
     [ "MappedStruct", "class_chimera_t_k_1_1_mapped_struct.html", "class_chimera_t_k_1_1_mapped_struct" ],
     [ "MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", "class_chimera_t_k_1_1_metadata_catalogue" ],
@@ -140,6 +144,7 @@ var namespace_chimera_t_k =
     [ "SharedDummyBackend", "class_chimera_t_k_1_1_shared_dummy_backend.html", "class_chimera_t_k_1_1_shared_dummy_backend" ],
     [ "SubdeviceBackend", "class_chimera_t_k_1_1_subdevice_backend.html", "class_chimera_t_k_1_1_subdevice_backend" ],
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", "class_chimera_t_k_1_1_subdevice_register_accessor" ],
+    [ "SystemTags", "struct_chimera_t_k_1_1_system_tags.html", null ],
     [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
     [ "TemplateUserTypeMapNoVoid", "class_chimera_t_k_1_1_template_user_type_map_no_void.html", "class_chimera_t_k_1_1_template_user_type_map_no_void" ],
     [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html", "struct_chimera_t_k_1_1_test_capabilities" ],
@@ -250,6 +255,7 @@ var namespace_chimera_t_k =
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a33389204e881032753f65b9e16273a9e", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a331e219ebc74268d0ed33fd394f24696", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#ae52ee1e5af79ce2638fc5841f2b8f2a5", null ],
+    [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a026130dce57025946232b98aae6d9536", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#a10ef28fb63a4bd204baaa8ba29130d18", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#aa3a3068556abc98cc29ae738b3fcec0b", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#aff96b5b96f07b7d89a63107cc11ce264", null ],

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -112,68 +112,55 @@ $(document).ready(function(){initNavTree('shared_dummy_helpers_8h_source.html','
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e">   13</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e">MirrorRequestType</a> : <span class="keywordtype">int</span> { <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c">from</a> = 1, <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531">to</a>, <a class="code hl_enumvalue" href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b">stop</a> };</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Static helper functions</span></div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="shared_dummy_helpers_8h.html#a95eac460675da1c54272660a446f1739">   16</a></span>std::string <a class="code hl_function" href="shared_dummy_helpers_8h.html#a95eac460675da1c54272660a446f1739">createExpectedShmName</a>(std::string instanceId_, std::string mapFileName_, std::string userName) {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  std::string mapFileHash{<a class="code hl_function" href="namespacestd.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(std::hash&lt;std::string&gt;{}(mapFileName_))};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  std::string instanceIdHash{<a class="code hl_function" href="namespacestd.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(std::hash&lt;std::string&gt;{}(instanceId_))};</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  std::string userHash{<a class="code hl_function" href="namespacestd.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(std::hash&lt;std::string&gt;{}(userName))};</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;ChimeraTK_SharedDummy_&quot;</span> + instanceIdHash + <span class="stringliteral">&quot;_&quot;</span> + mapFileHash + <span class="stringliteral">&quot;_&quot;</span> + userHash;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026">   15</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026">shm_exists</a>(std::string shmName) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">bool</span> result;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    boost::interprocess::managed_shared_memory shm{boost::interprocess::open_only, shmName.c_str()};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    result = shm.check_sanity();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::exception&amp; ex) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    result = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026">   24</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026">shm_exists</a>(std::string shmName) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> result;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    boost::interprocess::managed_shared_memory shm{boost::interprocess::open_only, shmName.c_str()};</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    result = shm.check_sanity();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::exception&amp; ex) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    result = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Use a file lock on dmap-file to ensure we are not running</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// concurrent tests in parallel using the same shared dummies.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Note: flock() creates an advisory lock only, plain file access is not</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// prevented. The lock is automatically released when the process terminates!</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_test_locker.html">TestLocker</a> {</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">   34</a></span>  <a class="code hl_function" href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">TestLocker</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dmapFile) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// open dmap file for locking</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a> = open(dmapFile, O_RDONLY);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a> == -1) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Cannot open file &#39;&quot;</span> &lt;&lt; dmapFile &lt;&lt; <span class="stringliteral">&quot;&#39; for locking.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      exit(1);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// obtain lock</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> res = flock(<a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a>, LOCK_EX);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span>(res == -1) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Cannot acquire lock on file &#39;&quot;</span> &lt;&lt; dmapFile &lt;&lt; <span class="stringliteral">&quot;&#39;.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      exit(1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// Use a file lock on dmap-file to ensure we are not running</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// concurrent tests in parallel using the same shared dummies.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Note: flock() creates an advisory lock only, plain file access is not</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// prevented. The lock is automatically released when the process terminates!</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_test_locker.html">TestLocker</a> {</div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">   43</a></span>  <a class="code hl_function" href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">TestLocker</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dmapFile) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// open dmap file for locking</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a> = open(dmapFile, O_RDONLY);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a> == -1) {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Cannot open file &#39;&quot;</span> &lt;&lt; dmapFile &lt;&lt; <span class="stringliteral">&quot;&#39; for locking.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      exit(1);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// obtain lock</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> res = flock(<a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a>, LOCK_EX);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">if</span>(res == -1) {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Cannot acquire lock on file &#39;&quot;</span> &lt;&lt; dmapFile &lt;&lt; <span class="stringliteral">&quot;&#39;.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      exit(1);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
-</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">   59</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
-<div class="ttc" id="anamespacestd_html_a91283b6c9ec83b1b6502cdb1f753104a"><div class="ttname"><a href="namespacestd.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a></div><div class="ttdeci">std::string to_string(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="_unified_backend_test_8h_source.html#l00672">UnifiedBackendTest.h:672</a></div></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">   50</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2e"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e">MirrorRequestType</a></div><div class="ttdeci">MirrorRequestType</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00013">sharedDummyHelpers.h:13</a></div></div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531">MirrorRequestType::to</a></div><div class="ttdeci">@ to</div></div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c">MirrorRequestType::from</a></div><div class="ttdeci">@ from</div></div>
 <div class="ttc" id="ashared_dummy_helpers_8h_html_a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2eaef399b2d446bb37b7c32ad2cc1b6045b">MirrorRequestType::stop</a></div><div class="ttdeci">@ stop</div></div>
-<div class="ttc" id="ashared_dummy_helpers_8h_html_a95eac460675da1c54272660a446f1739"><div class="ttname"><a href="shared_dummy_helpers_8h.html#a95eac460675da1c54272660a446f1739">createExpectedShmName</a></div><div class="ttdeci">std::string createExpectedShmName(std::string instanceId_, std::string mapFileName_, std::string userName)</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00016">sharedDummyHelpers.h:16</a></div></div>
-<div class="ttc" id="ashared_dummy_helpers_8h_html_aab781fbb766e734140cbf6e471656026"><div class="ttname"><a href="shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026">shm_exists</a></div><div class="ttdeci">bool shm_exists(std::string shmName)</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00024">sharedDummyHelpers.h:24</a></div></div>
-<div class="ttc" id="astruct_test_locker_html"><div class="ttname"><a href="struct_test_locker.html">TestLocker</a></div><div class="ttdef"><b>Definition</b> <a href="test_pcie_backend_8cpp_source.html#l00051">testPcieBackend.cpp:51</a></div></div>
-<div class="ttc" id="astruct_test_locker_html_a15564fdf2963fe392b32d2b081446ed4"><div class="ttname"><a href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">TestLocker::fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00059">sharedDummyHelpers.h:59</a></div></div>
-<div class="ttc" id="astruct_test_locker_html_a31dca32b746efab8407d6d1db97737a1"><div class="ttname"><a href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">TestLocker::TestLocker</a></div><div class="ttdeci">TestLocker(const char *dmapFile)</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00043">sharedDummyHelpers.h:43</a></div></div>
+<div class="ttc" id="ashared_dummy_helpers_8h_html_aab781fbb766e734140cbf6e471656026"><div class="ttname"><a href="shared_dummy_helpers_8h.html#aab781fbb766e734140cbf6e471656026">shm_exists</a></div><div class="ttdeci">bool shm_exists(std::string shmName)</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00015">sharedDummyHelpers.h:15</a></div></div>
+<div class="ttc" id="astruct_test_locker_html"><div class="ttname"><a href="struct_test_locker.html">TestLocker</a></div><div class="ttdef"><b>Definition</b> <a href="test_pcie_backend_8cpp_source.html#l00052">testPcieBackend.cpp:52</a></div></div>
+<div class="ttc" id="astruct_test_locker_html_a15564fdf2963fe392b32d2b081446ed4"><div class="ttname"><a href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">TestLocker::fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00050">sharedDummyHelpers.h:50</a></div></div>
+<div class="ttc" id="astruct_test_locker_html_a31dca32b746efab8407d6d1db97737a1"><div class="ttname"><a href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">TestLocker::TestLocker</a></div><div class="ttdeci">TestLocker(const char *dmapFile)</div><div class="ttdef"><b>Definition</b> <a href="shared_dummy_helpers_8h_source.html#l00034">sharedDummyHelpers.h:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

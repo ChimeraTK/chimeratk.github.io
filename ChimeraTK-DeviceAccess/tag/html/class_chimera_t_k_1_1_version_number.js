@@ -13,5 +13,6 @@ var class_chimera_t_k_1_1_version_number =
     [ "operator==", "class_chimera_t_k_1_1_version_number.html#a62d862b9bfbeeb17641dddedf9aac579", null ],
     [ "operator>", "class_chimera_t_k_1_1_version_number.html#a76cc5b990fa24cbc89ce9daf8eee3043", null ],
     [ "operator>=", "class_chimera_t_k_1_1_version_number.html#a00cc7b9bdb84d467f4e5925aa47d6806", null ],
-    [ "operator<<", "class_chimera_t_k_1_1_version_number.html#aa85dbc208645685b87cebfe748f9299f", null ]
+    [ "operator<<", "class_chimera_t_k_1_1_version_number.html#aa85dbc208645685b87cebfe748f9299f", null ],
+    [ "std::formatter", "class_chimera_t_k_1_1_version_number.html#a91ea62e37e9324dec4abe44c588e847f", null ]
 ];

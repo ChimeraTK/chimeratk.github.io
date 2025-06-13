@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['functionaltests_0',['FunctionalTests',['../class_functional_tests.html',1,'']]],
-  ['functionaltestsuite_1',['FunctionalTestSuite',['../class_functional_test_suite.html',1,'']]]
+  ['hexdata_0',['HexData',['../class_hex_data.html',1,'']]],
+  ['hexspinbox_1',['HexSpinBox',['../class_hex_spin_box.html',1,'']]]
 ];

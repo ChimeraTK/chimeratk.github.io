@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1async_1_1_polled
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1async_1_1_polled_async_variable-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::async::PolledAsyncVariable&lt; UserType &gt; Struct Template Reference</div></div>
 </div><!--header-->
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1async_1_1_polled
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1async_1_1_polled_async_variable__coll__graph.svg" width="478" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1async_1_1_polled_async_variable__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -122,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b8b90b2a990a3cfee5236d9f3440a2c" id="r_a7b8b90b2a990a3cfee5236d9f3440a2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b8b90b2a990a3cfee5236d9f3440a2c">fillSendBuffer</a> () final</td></tr>
 <tr class="memdesc:a7b8b90b2a990a3cfee5236d9f3440a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the send buffer with data and version number.  <br /></td></tr>
 <tr class="separator:a7b8b90b2a990a3cfee5236d9f3440a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e3e037d43ff0d86f5fca6f882fe386" id="r_a79e3e037d43ff0d86f5fca6f882fe386"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a79e3e037d43ff0d86f5fca6f882fe386">PolledAsyncVariable</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; syncAccessor_, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;v)</td></tr>
-<tr class="memdesc:a79e3e037d43ff0d86f5fca6f882fe386"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor takes an already created synchronous accessor and a reference to the version variable.  <br /></td></tr>
-<tr class="separator:a79e3e037d43ff0d86f5fca6f882fe386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58add9054029c1862c3fedc61e00ccbe" id="r_a58add9054029c1862c3fedc61e00ccbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a58add9054029c1862c3fedc61e00ccbe">PolledAsyncVariable</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; syncAccessor_, <a class="el" href="class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html">TriggeredPollDistributor</a> &amp;owner)</td></tr>
+<tr class="memdesc:a58add9054029c1862c3fedc61e00ccbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor takes an already created synchronous accessor and a reference to the owing distributor.  <br /></td></tr>
+<tr class="separator:a58add9054029c1862c3fedc61e00ccbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d482f9b4d18c584c5c387669c793ab" id="r_a07d482f9b4d18c584c5c387669c793ab"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a07d482f9b4d18c584c5c387669c793ab">getNumberOfChannels</a> () override</td></tr>
 <tr class="memdesc:a07d482f9b4d18c584c5c387669c793ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper functions for the creation of an <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a>.  <br /></td></tr>
 <tr class="separator:a07d482f9b4d18c584c5c387669c793ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,12 +147,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae200b998466cf19a6fedb953f43873da inherit pub_methods_struct_chimera_t_k_1_1async_1_1_async_variable" id="r_ae200b998466cf19a6fedb953f43873da"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html#ae200b998466cf19a6fedb953f43873da">~AsyncVariable</a> ()=default</td></tr>
 <tr class="separator:ae200b998466cf19a6fedb953f43873da inherit pub_methods_struct_chimera_t_k_1_1async_1_1_async_variable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a5f46b870da1eea7b01c72bebdd229f9e" id="r_a5f46b870da1eea7b01c72bebdd229f9e"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a5f46b870da1eea7b01c72bebdd229f9e">syncAccessor</a></td></tr>
-<tr class="separator:a5f46b870da1eea7b01c72bebdd229f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b29f26d5f7054cfbe420536104f12fe" id="r_a7b29f26d5f7054cfbe420536104f12fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b29f26d5f7054cfbe420536104f12fe">_version</a></td></tr>
-<tr class="separator:a7b29f26d5f7054cfbe420536104f12fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a939ae08b045baa00726e34c1a36e6c4b" id="r_a939ae08b045baa00726e34c1a36e6c4b"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b">_syncAccessor</a></td></tr>
+<tr class="separator:a939ae08b045baa00726e34c1a36e6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52360026ad9981a07c8b7f79a6763ae1" id="r_a52360026ad9981a07c8b7f79a6763ae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html">TriggeredPollDistributor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a52360026ad9981a07c8b7f79a6763ae1">_owner</a></td></tr>
+<tr class="separator:a52360026ad9981a07c8b7f79a6763ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_struct_chimera_t_k_1_1async_1_1_async_variable_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_chimera_t_k_1_1async_1_1_async_variable_impl')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable_impl.html">ChimeraTK::async::AsyncVariableImpl&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:abad60a83ccf5b32fc9e63e44942238dc inherit pub_attribs_struct_chimera_t_k_1_1async_1_1_async_variable_impl" id="r_abad60a83ccf5b32fc9e63e44942238dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt;::Buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable_impl.html#abad60a83ccf5b32fc9e63e44942238dc">_sendBuffer</a></td></tr>
 <tr class="separator:abad60a83ccf5b32fc9e63e44942238dc inherit pub_attribs_struct_chimera_t_k_1_1async_1_1_async_variable_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,10 +164,10 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType&gt;<br />
 struct ChimeraTK::async::PolledAsyncVariable&lt; UserType &gt;</div><p>Implementation of the <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html" title="Implementation of the PolledAsyncVariable for the concrete UserType.">PolledAsyncVariable</a> for the concrete UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00038">38</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00048">48</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a79e3e037d43ff0d86f5fca6f882fe386" name="a79e3e037d43ff0d86f5fca6f882fe386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79e3e037d43ff0d86f5fca6f882fe386">&#9670;&#160;</a></span>PolledAsyncVariable()</h2>
+<a id="a58add9054029c1862c3fedc61e00ccbe" name="a58add9054029c1862c3fedc61e00ccbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58add9054029c1862c3fedc61e00ccbe">&#9670;&#160;</a></span>PolledAsyncVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,8 +186,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html">TriggeredPollDistributor</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -199,9 +202,9 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The constructor takes an already created synchronous accessor and a reference to the version variable. </p>
+<p>The constructor takes an already created synchronous accessor and a reference to the owing distributor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00090">90</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00102">102</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +239,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html#aad7f583c86e843f8de2c6b91c8341e40">ChimeraTK::async::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00082">82</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00094">94</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +270,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html#a4e48b169c3f95310beef1d54c0b6b1fe">ChimeraTK::async::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00051">51</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00058">58</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +304,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable_impl.html#a7d9c5b2374f7ec4b35c44381c0b31f9d">ChimeraTK::async::AsyncVariableImpl&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00048">48</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00055">55</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +335,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable_impl.html#a9672653bda13e29f6fdfb03cfe745d28">ChimeraTK::async::AsyncVariableImpl&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00049">49</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00056">56</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -363,44 +366,60 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="struct_chimera_t_k_1_1async_1_1_async_variable.html#a154db904ebad71f4f81711289e3f163b">ChimeraTK::async::AsyncVariable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00050">50</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00057">57</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7b29f26d5f7054cfbe420536104f12fe" name="a7b29f26d5f7054cfbe420536104f12fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b29f26d5f7054cfbe420536104f12fe">&#9670;&#160;</a></span>_version</h2>
+<a id="a52360026ad9981a07c8b7f79a6763ae1" name="a52360026ad9981a07c8b7f79a6763ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52360026ad9981a07c8b7f79a6763ae1">&#9670;&#160;</a></span>_owner</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&amp; <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html">ChimeraTK::async::PolledAsyncVariable</a>&lt; UserType &gt;::_version</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html">TriggeredPollDistributor</a>&amp; <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html">ChimeraTK::async::PolledAsyncVariable</a>&lt; UserType &gt;::_owner</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00046">46</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00063">63</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>
-<a id="a5f46b870da1eea7b01c72bebdd229f9e" name="a5f46b870da1eea7b01c72bebdd229f9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f46b870da1eea7b01c72bebdd229f9e">&#9670;&#160;</a></span>syncAccessor</h2>
+<a id="a939ae08b045baa00726e34c1a36e6c4b" name="a939ae08b045baa00726e34c1a36e6c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939ae08b045baa00726e34c1a36e6c4b">&#9670;&#160;</a></span>_syncAccessor</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;UserType&gt; &gt; <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html">ChimeraTK::async::PolledAsyncVariable</a>&lt; UserType &gt;::syncAccessor</td>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;UserType&gt; &gt; <a class="el" href="struct_chimera_t_k_1_1async_1_1_polled_async_variable.html">ChimeraTK::async::PolledAsyncVariable</a>&lt; UserType &gt;::_syncAccessor</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00045">45</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_triggered_poll_distributor_8h_source.html#l00061">61</a> of file <a class="el" href="_triggered_poll_distributor_8h_source.html">TriggeredPollDistributor.h</a>.</p>
 
 </div>
 </div>

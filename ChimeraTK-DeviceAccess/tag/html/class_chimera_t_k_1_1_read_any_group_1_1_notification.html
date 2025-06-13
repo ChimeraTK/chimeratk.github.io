@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_read_any_group_1_1_notification.html" title="Notification object returned by waitAny().">Notification</a> object returned by <a class="el" href="class_chimera_t_k_1_1_read_any_group.html#a0616097393d6007d2b865c2fb3362bb6" title="Wait until one of the elements received an update notification, but do not actually process the updat...">waitAny()</a>. </p>
 <p>A notification can be accepted immediately or retained to be accepted at a later point in time. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00027">27</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00034">34</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9581323d5fe8efc992bce40d47f71cd0" name="a9581323d5fe8efc992bce40d47f71cd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9581323d5fe8efc992bce40d47f71cd0">&#9670;&#160;</a></span>Notification() <span class="overload">[1/3]</span></h2>
@@ -203,7 +203,7 @@ Friends</h2></td></tr>
 <p>Construct a notification from another notification. </p>
 <p>After this, this notification will contain the state and information of the other notification and the other notification is going to be invalid. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00304">304</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00315">315</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -233,14 +233,7 @@ Friends</h2></td></tr>
 <p>Destructor. </p>
 <p>Calls <a class="el" href="class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a458a68f871ec3ab996a14195751a1dc4" title="Accept the notification.">accept()</a> if this notification is valid and has not been accepted yet. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00311">311</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_read_any_group_1_1_notification_a949d73dd42d92eb82c81e8413933a030_cgraph.svg" width="456" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00322">322</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -297,16 +290,9 @@ Friends</h2></td></tr>
 <p>Accept the notification. </p>
 <p>This will complete the read operation of the transfer element for which this notification has been generated. After accepting a notification, this notification object becomes invalid.</p>
 <p>Due to implementation details, it can happen that a notification is generated without a new value being actually available. In these cases, this method returns false and the transfer element is not updated with a new value. In all other cases, this method returns true.</p>
-<p>This method throws an std::logic_error if this method is called on an invalid notification or a notification that has already been accepted. </p>
+<p>This method throws an <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> if this method is called on an invalid notification or a notification that has already been accepted. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00351">351</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_read_any_group_1_1_notification_a458a68f871ec3ab996a14195751a1dc4_icgraph.svg" width="100%" height="546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00362">362</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -334,16 +320,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the ID of the transfer element for which this notification has been generated. </p>
-<p>This method throws an std::logic_error if this method is called on an invalid notification. </p>
+<p>This method throws an <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> if this method is called on an invalid notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00380">380</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_read_any_group_1_1_notification_a4e48bd44414317569b9fd5c13e219f54_icgraph.svg" width="100%" height="546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00391">391</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -372,9 +351,9 @@ Friends</h2></td></tr>
 
 <p>Return the index of the transfer element for which this notifiaction has been generated. </p>
 <p>The index is the offset into the list of transfer elements that was specified when creating the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.</p>
-<p>This method throws an std::logic_error if this method is called on an invalid notification. </p>
+<p>This method throws an <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> if this method is called on an invalid notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00389">389</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00400">400</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -402,9 +381,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the transfer element for which this notification has been generated. </p>
-<p>This method throws an std::logic_error if this method is called on an invalid notification. </p>
+<p>This method throws an <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> if this method is called on an invalid notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00398">398</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00409">409</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -433,14 +412,7 @@ Friends</h2></td></tr>
 
 <p>Tell whether this notification is valid and has not been accepted yet. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00407">407</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_read_any_group_1_1_notification_a8d532d6c729d65d53e69a631561cb3cc_icgraph.svg" width="456" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00418">418</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +469,7 @@ Friends</h2></td></tr>
 <p>Assign this notification from another notification. </p>
 <p>After this, this notification will contain the state and information of the other notification and the other notification is going to be invalid. If this notification was valid and had not been accepted before, <a class="el" href="class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a458a68f871ec3ab996a14195751a1dc4" title="Accept the notification.">accept()</a> is called before assigning the data from the other notification. </p>
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00328">328</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00339">339</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +494,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00029">29</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_read_any_group_8h_source.html#l00036">36</a> of file <a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>.</p>
 
 </div>
 </div>

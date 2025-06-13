@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -160,6 +160,13 @@ Map file syntax</h1>
 <div class="line">        &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;numberOfBits&quot;</span>&gt;16&lt;/<span class="keywordtype">parameter</span>&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">plugin</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">redirectedRegister</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">redirectRegister</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Tagged&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">targetDevice</span>&gt;<span class="keyword">PCIE2</span>&lt;/<span class="keywordtype">targetDevice</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">targetRegister</span>&gt;<span class="keyword">BOARD.WORD_BOOT_STATUS</span>&lt;/<span class="keywordtype">targetRegister</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tagModifier&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;set&quot;</span>&gt;<span class="keyword">status-output</span>&lt;/<span class="keywordtype">parameter</span>&gt;</div>
+<div class="line">      &lt;/<span class="keywordtype">plugin</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">redirectRegister</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">logicalNameMap</span>&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="variables_and_constants"></a>
 Variables and constants</h2>
@@ -290,7 +297,20 @@ bitRange</h3>
 </div><!-- fragment --><p>Notes and CAVEATS:</p><ul>
 <li>wait_for_new_data is currently not supported</li>
 <li>When overlapping bit ranges are used in a TransferGroup, the TransferGroup will become read-only since write order of overlapping registers cannot be guaranteed</li>
-<li>If the target register is writeable, the plugin does read-modify-write if the target register is also readable. </li>
+<li>If the target register is writeable, the plugin does read-modify-write if the target register is also readable.</li>
+</ul>
+<h2><a class="anchor" id="plugins_reference_tag_modifier"></a>
+tagModifier</h2>
+<p><code>tagModifier</code> can be used to modifiy the tags that are associated with a register. All parameters are a list of comma-separated string.</p>
+<p>Parameters</p><ul>
+<li><code>set</code>: Completly override the tags from the target register.</li>
+<li><code>add</code>: Adds the list of tags to the target register's tags.</li>
+<li><code>remove</code>: Remove the passed list of tags from the target register's tags.</li>
+</ul>
+<p>Notes:</p><ul>
+<li>The plugin accepts either <code>add</code> and <code>remove</code> or <code>set</code>, but not a mix.</li>
+<li>The order of application is first <code>add</code>, then <code>remove</code>.</li>
+<li>See <a class="el" href="struct_chimera_t_k_1_1_system_tags.html" title="A list of pre-defined tags that can be used to mark registers.">ChimeraTK::SystemTags</a> for a list of pre-defined tags. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

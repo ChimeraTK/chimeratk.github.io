@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_data_consistency
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_data_consistency_group-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::DataConsistencyGroup Class Reference</div></div>
 </div><!--header-->
@@ -107,31 +108,45 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_data_consistency
 Public Types</h2></td></tr>
 <tr class="memitem:abce53bc4f2979ff64f30da01d799397b" id="r_abce53bc4f2979ff64f30da01d799397b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a> { <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47">exact</a>
+, <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375">historized</a>
  }</td></tr>
 <tr class="memdesc:abce53bc4f2979ff64f30da01d799397b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum describing the matching mode of a <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html" title="Group several registers (= TransferElement) which ensures data consistency across multiple variables ...">DataConsistencyGroup</a>.  <a href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">More...</a><br /></td></tr>
 <tr class="separator:abce53bc4f2979ff64f30da01d799397b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2874aa3d2117aed3a21af14fcd91c6d7" id="r_a2874aa3d2117aed3a21af14fcd91c6d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a2874aa3d2117aed3a21af14fcd91c6d7">DataConsistencyGroup</a> ()</td></tr>
-<tr class="memdesc:a2874aa3d2117aed3a21af14fcd91c6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct empty group.  <br /></td></tr>
-<tr class="separator:a2874aa3d2117aed3a21af14fcd91c6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26926e2479148123d4e85630394f56d" id="r_ad26926e2479148123d4e85630394f56d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#ad26926e2479148123d4e85630394f56d">DataConsistencyGroup</a> (<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a> mode=<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47">MatchingMode::exact</a>)</td></tr>
+<tr class="memdesc:ad26926e2479148123d4e85630394f56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct empty group.  <br /></td></tr>
+<tr class="separator:ad26926e2479148123d4e85630394f56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b55018198af81949407085f36472a9f" id="r_a9b55018198af81949407085f36472a9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a9b55018198af81949407085f36472a9f">~DataConsistencyGroup</a> ()</td></tr>
+<tr class="separator:a9b55018198af81949407085f36472a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818d2e5625e5d42a31a921880798d5f6" id="r_a818d2e5625e5d42a31a921880798d5f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a818d2e5625e5d42a31a921880798d5f6">DataConsistencyGroup</a> (const <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;other)=delete</td></tr>
+<tr class="separator:a818d2e5625e5d42a31a921880798d5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317c86c418027111a7b849b64c795fb2" id="r_a317c86c418027111a7b849b64c795fb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a317c86c418027111a7b849b64c795fb2">DataConsistencyGroup</a> (<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a317c86c418027111a7b849b64c795fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa68e4e03afa6e8b033c53a9ff7a61f" id="r_a9fa68e4e03afa6e8b033c53a9ff7a61f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a9fa68e4e03afa6e8b033c53a9ff7a61f">operator=</a> (<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a9fa68e4e03afa6e8b033c53a9ff7a61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b36162923b81822428222c0355ec19" id="r_ad4b36162923b81822428222c0355ec19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#ad4b36162923b81822428222c0355ec19">DataConsistencyGroup</a> (std::initializer_list&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &gt; list)</td></tr>
 <tr class="memdesc:ad4b36162923b81822428222c0355ec19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct this group with elements from the list using the <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337" title="Add register to group.">add()</a> function.  <br /></td></tr>
 <tr class="separator:ad4b36162923b81822428222c0355ec19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd31380e3d6cb571be10feffb0d292ca" id="r_abd31380e3d6cb571be10feffb0d292ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abd31380e3d6cb571be10feffb0d292ca">DataConsistencyGroup</a> (std::initializer_list&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt; list)</td></tr>
 <tr class="separator:abd31380e3d6cb571be10feffb0d292ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa74dd86cbf702eb0d14824e98a1e4cc9" id="r_aa74dd86cbf702eb0d14824e98a1e4cc9"><td class="memTemplParams" colspan="2">template&lt;typename ITERATOR &gt; </td></tr>
-<tr class="memitem:aa74dd86cbf702eb0d14824e98a1e4cc9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aa74dd86cbf702eb0d14824e98a1e4cc9">DataConsistencyGroup</a> (ITERATOR first, ITERATOR last)</td></tr>
-<tr class="separator:aa74dd86cbf702eb0d14824e98a1e4cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238a4ffb3d34232ea2f930ed89f0e651" id="r_a238a4ffb3d34232ea2f930ed89f0e651"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a238a4ffb3d34232ea2f930ed89f0e651">DataConsistencyGroup</a> (std::initializer_list&lt; std::reference_wrapper&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &gt; &gt; list, <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a> mode, unsigned histLen=<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a>)</td></tr>
+<tr class="separator:a238a4ffb3d34232ea2f930ed89f0e651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f9a87e0524d18927731614e9deb848" id="r_a75f9a87e0524d18927731614e9deb848"><td class="memTemplParams" colspan="2">template&lt;typename ITERATOR &gt; </td></tr>
+<tr class="memitem:a75f9a87e0524d18927731614e9deb848"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a75f9a87e0524d18927731614e9deb848">DataConsistencyGroup</a> (ITERATOR first, ITERATOR last, <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a> mode=<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47">MatchingMode::exact</a>, unsigned int histLen=<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a>)</td></tr>
+<tr class="separator:a75f9a87e0524d18927731614e9deb848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6051622217174732d5d10c3cf4fd7337" id="r_a6051622217174732d5d10c3cf4fd7337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337">add</a> (const <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;element)</td></tr>
 <tr class="memdesc:a6051622217174732d5d10c3cf4fd7337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add register to group.  <br /></td></tr>
 <tr class="separator:a6051622217174732d5d10c3cf4fd7337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bd9e4bf2892c9857c7a155ab1be746e" id="r_a6bd9e4bf2892c9857c7a155ab1be746e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a6bd9e4bf2892c9857c7a155ab1be746e">add</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; element)</td></tr>
 <tr class="separator:a6bd9e4bf2892c9857c7a155ab1be746e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf4d6aff053740e6070273666e13edcb" id="r_abf4d6aff053740e6070273666e13edcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abf4d6aff053740e6070273666e13edcb">update</a> (const <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> &amp;transferelementid)</td></tr>
-<tr class="memdesc:abf4d6aff053740e6070273666e13edcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function updates consistentElements, a set of <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement.">TransferElementID</a>.  <br /></td></tr>
-<tr class="separator:abf4d6aff053740e6070273666e13edcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809c6d89449f58df355e395d08a67fa5" id="r_a809c6d89449f58df355e395d08a67fa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a809c6d89449f58df355e395d08a67fa5">add</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;acc, unsigned histLen=<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a>)</td></tr>
+<tr class="memdesc:a809c6d89449f58df355e395d08a67fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add register to group.  <br /></td></tr>
+<tr class="separator:a809c6d89449f58df355e395d08a67fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecab71fd5901db776ab9149ff28e552b" id="r_aecab71fd5901db776ab9149ff28e552b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aecab71fd5901db776ab9149ff28e552b">update</a> (const <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> &amp;transferElementID)</td></tr>
+<tr class="memdesc:aecab71fd5901db776ab9149ff28e552b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function must be called after an update was received from the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>.  <br /></td></tr>
+<tr class="separator:aecab71fd5901db776ab9149ff28e552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f2fb89a0fb58e9dc252531609a1bf08" id="r_a4f2fb89a0fb58e9dc252531609a1bf08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a4f2fb89a0fb58e9dc252531609a1bf08">setMatchingMode</a> (<a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a> newMode)</td></tr>
 <tr class="memdesc:a4f2fb89a0fb58e9dc252531609a1bf08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the matching mode.  <br /></td></tr>
 <tr class="separator:a4f2fb89a0fb58e9dc252531609a1bf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,15 +156,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac11528df679307e761d12ae20a1648b7" id="r_ac11528df679307e761d12ae20a1648b7"><td class="memItemLeft" align="right" valign="top">const std::map&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#ac11528df679307e761d12ae20a1648b7">getElements</a> () const</td></tr>
 <tr class="memdesc:ac11528df679307e761d12ae20a1648b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For inspection of contents.  <br /></td></tr>
 <tr class="separator:ac11528df679307e761d12ae20a1648b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331dbda6e1cf55262e63ca9a9397f28b" id="r_a331dbda6e1cf55262e63ca9a9397f28b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_matcher_base.html">DataConsistencyGroupDetail::MatcherBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a331dbda6e1cf55262e63ca9a9397f28b">getMatcher</a> ()</td></tr>
+<tr class="memdesc:a331dbda6e1cf55262e63ca9a9397f28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For diagnostics.  <br /></td></tr>
+<tr class="separator:a331dbda6e1cf55262e63ca9a9397f28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60348c3dccb21d5cd4f95d86563079a" id="r_ad60348c3dccb21d5cd4f95d86563079a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#ad60348c3dccb21d5cd4f95d86563079a">isConsistent</a> () const</td></tr>
 <tr class="memdesc:ad60348c3dccb21d5cd4f95d86563079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if consistent state is reached  <br /></td></tr>
 <tr class="separator:ad60348c3dccb21d5cd4f95d86563079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aeff969c21fcffecd5022483ab13cef69" id="r_aeff969c21fcffecd5022483ab13cef69"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a> = 2</td></tr>
+<tr class="separator:aeff969c21fcffecd5022483ab13cef69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Group several registers (= <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>) which ensures data consistency across multiple variables through an algorithm which matches the <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a>. </p>
-<p>This group does not read on its own. It should work together with a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>. You should wait for changed variable and transfer it to this group by calling <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abf4d6aff053740e6070273666e13edcb" title="This function updates consistentElements, a set of TransferElementID.">ChimeraTK::DataConsistencyGroup::update</a>. If a consistent state is reached, this function returns true. </p>
+<p>This group does not read on its own. It should work together with a <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>. This is a proxy class, which delegates to two different implementations. MatchingMode=exact is handled by SimpleMatcher (the legacy <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html" title="Group several registers (= TransferElement) which ensures data consistency across multiple variables ...">DataConsistencyGroup</a> implementation). For this, you should wait for changed variable and transfer it to this group by calling <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aecab71fd5901db776ab9149ff28e552b" title="This function must be called after an update was received from the ReadAnyGroup.">DataConsistencyGroup::update</a>. If a consistent state is reached, this function returns true. MatchingMode=historized is handled by HistorizedMatcher. In this case, the provided accessors are decorated with DataConsistencyDecorators, with the effect that the readAny() returns only on consistent inputs. In this mode, it is unnecessary but still allowed to call <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aecab71fd5901db776ab9149ff28e552b" title="This function must be called after an update was received from the ReadAnyGroup.">DataConsistencyGroup::update</a> and it simply returns true. </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00019">19</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00027">27</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="abce53bc4f2979ff64f30da01d799397b" name="abce53bc4f2979ff64f30da01d799397b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abce53bc4f2979ff64f30da01d799397b">&#9670;&#160;</a></span>MatchingMode</h2>
@@ -173,19 +196,21 @@ Public Member Functions</h2></td></tr>
 
 <p>Enum describing the matching mode of a <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html" title="Group several registers (= TransferElement) which ensures data consistency across multiple variables ...">DataConsistencyGroup</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8" name="abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>No matching, effectively disable the DataConsitencyGroup. <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abf4d6aff053740e6070273666e13edcb" title="This function updates consistentElements, a set of TransferElementID.">update()</a> will always return true. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8" name="abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>No matching, effectively disable the DataConsitencyGroup. <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aecab71fd5901db776ab9149ff28e552b" title="This function must be called after an update was received from the ReadAnyGroup.">update()</a> will always return true. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47" name="abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47"></a>exact&#160;</td><td class="fielddoc"><p>Require an exact match of the <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a> of all current values of the group's members. </p>
+<p>Require an exact match of the <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a> of all current or historized values of the group's members </p>
 </td></tr>
+<tr><td class="fieldname"><a id="abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375" name="abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375"></a>historized&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00041">41</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00030">30</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2874aa3d2117aed3a21af14fcd91c6d7" name="a2874aa3d2117aed3a21af14fcd91c6d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2874aa3d2117aed3a21af14fcd91c6d7">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[1/4]</span></h2>
+<a id="ad26926e2479148123d4e85630394f56d" name="ad26926e2479148123d4e85630394f56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26926e2479148123d4e85630394f56d">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,6 +220,37 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">ChimeraTK::DataConsistencyGroup::DataConsistencyGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47">MatchingMode::exact</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct empty group. </p>
+<p>Elements can later be added using the <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337" title="Add register to group.">add()</a> function. </p>
+
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00024">24</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
+
+</div>
+</div>
+<a id="a9b55018198af81949407085f36472a9f" name="a9b55018198af81949407085f36472a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b55018198af81949407085f36472a9f">&#9670;&#160;</a></span>~DataConsistencyGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DataConsistencyGroup::~DataConsistencyGroup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -207,13 +263,62 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct empty group. </p>
-<p>Elements can later be added using the <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337" title="Add register to group.">add()</a> function. </p>
+</div>
+</div>
+<a id="a818d2e5625e5d42a31a921880798d5f6" name="a818d2e5625e5d42a31a921880798d5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818d2e5625e5d42a31a921880798d5f6">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DataConsistencyGroup::DataConsistencyGroup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a317c86c418027111a7b849b64c795fb2" name="a317c86c418027111a7b849b64c795fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a317c86c418027111a7b849b64c795fb2">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DataConsistencyGroup::DataConsistencyGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="ad4b36162923b81822428222c0355ec19" name="ad4b36162923b81822428222c0355ec19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4b36162923b81822428222c0355ec19">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b36162923b81822428222c0355ec19">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,19 +335,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct this group with elements from the list using the <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337" title="Add register to group.">add()</a> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00014">14</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_consistency_group_ad4b36162923b81822428222c0355ec19_cgraph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00038">38</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
 
 </div>
 </div>
 <a id="abd31380e3d6cb571be10feffb0d292ca" name="abd31380e3d6cb571be10feffb0d292ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd31380e3d6cb571be10feffb0d292ca">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd31380e3d6cb571be10feffb0d292ca">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,19 +355,48 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00020">20</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_consistency_group_abd31380e3d6cb571be10feffb0d292ca_cgraph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00051">51</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
 
 </div>
 </div>
-<a id="aa74dd86cbf702eb0d14824e98a1e4cc9" name="aa74dd86cbf702eb0d14824e98a1e4cc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa74dd86cbf702eb0d14824e98a1e4cc9">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[4/4]</span></h2>
+<a id="a238a4ffb3d34232ea2f930ed89f0e651" name="a238a4ffb3d34232ea2f930ed89f0e651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238a4ffb3d34232ea2f930ed89f0e651">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DataConsistencyGroup::DataConsistencyGroup </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::reference_wrapper&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>histLen</em> = <code><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00064">64</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
+
+</div>
+</div>
+<a id="a75f9a87e0524d18927731614e9deb848" name="a75f9a87e0524d18927731614e9deb848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f9a87e0524d18927731614e9deb848">&#9670;&#160;</a></span>DataConsistencyGroup() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +413,19 @@ template&lt;typename ITERATOR &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ITERATOR&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b">MatchingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47">MatchingMode::exact</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>histLen</em> = <code><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -296,20 +435,13 @@ template&lt;typename ITERATOR &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00077">77</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_consistency_group_aa74dd86cbf702eb0d14824e98a1e4cc9_cgraph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00107">107</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6bd9e4bf2892c9857c7a155ab1be746e" name="a6bd9e4bf2892c9857c7a155ab1be746e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bd9e4bf2892c9857c7a155ab1be746e">&#9670;&#160;</a></span>add() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd9e4bf2892c9857c7a155ab1be746e">&#9670;&#160;</a></span>add() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,19 +456,12 @@ template&lt;typename ITERATOR &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00040">40</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_consistency_group_a6bd9e4bf2892c9857c7a155ab1be746e_cgraph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00088">88</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
 
 </div>
 </div>
 <a id="a6051622217174732d5d10c3cf4fd7337" name="a6051622217174732d5d10c3cf4fd7337"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6051622217174732d5d10c3cf4fd7337">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6051622217174732d5d10c3cf4fd7337">&#9670;&#160;</a></span>add() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,21 +479,40 @@ template&lt;typename ITERATOR &gt; </div>
 <p>Add register to group. </p>
 <p>The same <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> can be part of multiple DataConsistencyGroups. The register must be must be readable, and it must have <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00026">26</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00077">77</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
+
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_consistency_group_a6051622217174732d5d10c3cf4fd7337_cgraph.svg" width="520" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_consistency_group_a6051622217174732d5d10c3cf4fd7337_icgraph.svg" width="490" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<a id="a809c6d89449f58df355e395d08a67fa5" name="a809c6d89449f58df355e395d08a67fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a809c6d89449f58df355e395d08a67fa5">&#9670;&#160;</a></span>add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DataConsistencyGroup::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;&#160;</td>
+          <td class="paramname"><em>acc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>histLen</em> = <code><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#aeff969c21fcffecd5022483ab13cef69">defaultHistLen</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add register to group. </p>
+<p>The same <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> can be part of multiple DataConsistencyGroups. The register must be must be readable, and it must have <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a>. This function may modify the register accessor, placing a <a class="el" href="class_chimera_t_k_1_1_data_consistency_decorator.html" title="A quasi-decorator to be used to decorate targets which should provide data updates only when data is ...">DataConsistencyDecorator</a> around it. </p>
+
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00110">110</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
 
 </div>
 </div>
@@ -377,9 +521,6 @@ template&lt;typename ITERATOR &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::map&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &gt; &amp; ChimeraTK::DataConsistencyGroup::getElements </td>
@@ -388,16 +529,32 @@ template&lt;typename ITERATOR &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>For inspection of contents. </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00053">53</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00156">156</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
+
+</div>
+</div>
+<a id="a331dbda6e1cf55262e63ca9a9397f28b" name="a331dbda6e1cf55262e63ca9a9397f28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331dbda6e1cf55262e63ca9a9397f28b">&#9670;&#160;</a></span>getMatcher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_matcher_base.html">DataConsistencyGroupDetail::MatcherBase</a> &amp; ChimeraTK::DataConsistencyGroup::getMatcher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For diagnostics. </p>
+
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00162">162</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
 
 </div>
 </div>
@@ -426,7 +583,7 @@ template&lt;typename ITERATOR &gt; </div>
 
 <p>Return the current matching mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00050">50</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00084">84</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
 
 </div>
 </div>
@@ -435,9 +592,6 @@ template&lt;typename ITERATOR &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool ChimeraTK::DataConsistencyGroup::isConsistent </td>
@@ -446,16 +600,37 @@ template&lt;typename ITERATOR &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>returns true if consistent state is reached </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00056">56</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00168">168</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
+
+</div>
+</div>
+<a id="a9fa68e4e03afa6e8b033c53a9ff7a61f" name="a9fa68e4e03afa6e8b033c53a9ff7a61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa68e4e03afa6e8b033c53a9ff7a61f">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp; ChimeraTK::DataConsistencyGroup::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html">DataConsistencyGroup</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -464,9 +639,6 @@ template&lt;typename ITERATOR &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ChimeraTK::DataConsistencyGroup::setMatchingMode </td>
@@ -476,22 +648,41 @@ template&lt;typename ITERATOR &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Change the matching mode. </p>
-<p>The default mode is <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47" title="Require an exact match of the VersionNumber of all current values of the group&#39;s members.">MatchingMode::exact</a>. </p>
+<p>The default mode is <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47" title="Require an exact match of the VersionNumber of all current values of the group&#39;s members.">MatchingMode::exact</a>, if not set differently in constructor. This method is deprecated since it's not possible to set <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375">MatchingMode::historized</a> like this. </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00047">47</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00144">144</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
 
 </div>
 </div>
-<a id="abf4d6aff053740e6070273666e13edcb" name="abf4d6aff053740e6070273666e13edcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf4d6aff053740e6070273666e13edcb">&#9670;&#160;</a></span>update()</h2>
+<a id="aecab71fd5901db776ab9149ff28e552b" name="aecab71fd5901db776ab9149ff28e552b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecab71fd5901db776ab9149ff28e552b">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DataConsistencyGroup::update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> &amp;&#160;</td>
+          <td class="paramname"><em>transferElementID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function must be called after an update was received from the <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers.">ReadAnyGroup</a>. </p>
+<p>It returns true, if a consistent state is reached. It returns false if an <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement.">TransferElementID</a> was updated, that was not added to this group. For <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375">MatchingMode::historized</a>, readAny will only let through consistent updates, so then update always returns true. </p>
+
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8cc_source.html#l00122">122</a> of file <a class="el" href="_data_consistency_group_8cc_source.html">DataConsistencyGroup.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aeff969c21fcffecd5022483ab13cef69" name="aeff969c21fcffecd5022483ab13cef69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff969c21fcffecd5022483ab13cef69">&#9670;&#160;</a></span>defaultHistLen</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,24 +691,17 @@ template&lt;typename ITERATOR &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ChimeraTK::DataConsistencyGroup::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> &amp;&#160;</td>
-          <td class="paramname"><em>transferelementid</em></td><td>)</td>
-          <td></td>
+          <td class="memname">constexpr unsigned ChimeraTK::DataConsistencyGroup::defaultHistLen = 2</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>This function updates consistentElements, a set of <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement.">TransferElementID</a>. </p>
-<p>It returns true, if a consistent state is reached. It returns false if an <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement.">TransferElementID</a> was updated, that was not added to this Group. </p>
-
-<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00083">83</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_consistency_group_8h_source.html#l00036">36</a> of file <a class="el" href="_data_consistency_group_8h_source.html">DataConsistencyGroup.h</a>.</p>
 
 </div>
 </div>

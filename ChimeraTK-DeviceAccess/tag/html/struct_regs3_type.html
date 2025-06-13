@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ template&lt;typename Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00136">136</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00139">139</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ template&lt;typename Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00155">155</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00158">158</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00182">182</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00185">185</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00170">170</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00173">173</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -476,8 +476,11 @@ template&lt;typename Register &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      TestCapabilities&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency().enableTestRawTransfer()</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= TestCapabilities&lt;&gt;()</div>
+<div class="line">                                           .disableForceDataLossWrite()</div>
+<div class="line">                                           .disableAsyncReadInconsistency()</div>
+<div class="line">                                           .enableTestRawTransfer()</div>
+<div class="line">                                           .disableTestPartialAccessor()</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00132">132</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 

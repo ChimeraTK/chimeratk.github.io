@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('test_stepper_motor_with_reference_8cc.
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/pointer_cast.hpp&gt;</code><br />
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
-<code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 <code>#include &quot;<a class="el" href="_d_f_m_c___m_d22_dummy_8h_source.html">DFMC_MD22Dummy.h</a>&quot;</code><br />
-<code>#include &quot;LinearStepperMotor.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_linear_stepper_motor_8h_source.html">LinearStepperMotor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_card_8h_source.html">MotorDriverCard.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_card_factory_8h_source.html">MotorDriverCardFactory.h</a>&quot;</code><br />
-<code>#include &quot;StepperMotor.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test_config_constants_8h_source.html">testConfigConstants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_t_m_c429_constants_8h_source.html">TMC429Constants.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/Utilities.h&gt;</code><br />
@@ -143,13 +143,6 @@ Functions</h2></td></tr>
 <tr class="separator:a005884d3e124731d33da745253c953e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07f09699aedde03b5910e908459dcbf7" id="r_a07f09699aedde03b5910e908459dcbf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_with_reference_8cc.html#a07f09699aedde03b5910e908459dcbf7">BOOST_AUTO_TEST_CASE</a> (testTranslation)</td></tr>
 <tr class="separator:a07f09699aedde03b5910e908459dcbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db1789457db5d6d9da9b534a7022842" id="r_a4db1789457db5d6d9da9b534a7022842"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_with_reference_8cc.html#a4db1789457db5d6d9da9b534a7022842">BOOST_AUTO_TEST_CASE</a> (testDetermineTolerance)</td></tr>
-<tr class="separator:a4db1789457db5d6d9da9b534a7022842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a871aaac844c361cfd52b123ee4fca895" id="r_a871aaac844c361cfd52b123ee4fca895"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_with_reference_8cc.html#a871aaac844c361cfd52b123ee4fca895">BOOST_AUTO_TEST_CASE</a> (testDetermineToleranceError)</td></tr>
-<tr class="memdesc:a871aaac844c361cfd52b123ee4fca895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the following:  <br /></td></tr>
-<tr class="separator:a871aaac844c361cfd52b123ee4fca895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e79950474e2315a4f13f10d2d70e646" id="r_a3e79950474e2315a4f13f10d2d70e646"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_with_reference_8cc.html#a3e79950474e2315a4f13f10d2d70e646">BOOST_AUTO_TEST_CASE</a> (testDetermineToleranceStop)</td></tr>
-<tr class="separator:a3e79950474e2315a4f13f10d2d70e646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -186,7 +179,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2f78bbfd6eac36fb84ef37079c499e08" name="a2f78bbfd6eac36fb84ef37079c499e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f78bbfd6eac36fb84ef37079c499e08">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f78bbfd6eac36fb84ef37079c499e08">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +199,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a028932b22bd596c67509ed83af7502f9" name="a028932b22bd596c67509ed83af7502f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a028932b22bd596c67509ed83af7502f9">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a028932b22bd596c67509ed83af7502f9">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +219,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a005884d3e124731d33da745253c953e0" name="a005884d3e124731d33da745253c953e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a005884d3e124731d33da745253c953e0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a005884d3e124731d33da745253c953e0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,75 +238,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4db1789457db5d6d9da9b534a7022842" name="a4db1789457db5d6d9da9b534a7022842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4db1789457db5d6d9da9b534a7022842">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testDetermineTolerance&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_with_reference_8cc_source.html#l00499">499</a> of file <a class="el" href="test_stepper_motor_with_reference_8cc_source.html">testStepperMotorWithReference.cc</a>.</p>
-
-</div>
-</div>
-<a id="a871aaac844c361cfd52b123ee4fca895" name="a871aaac844c361cfd52b123ee4fca895"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a871aaac844c361cfd52b123ee4fca895">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testDetermineToleranceError&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Test the following: </p>
-<ol type="1">
-<li>Motor gets stuck during tolerance calculation</li>
-<li>After determination of tolerance, an end switch<br  />
- out of tolerance is detected </li>
-</ol>
-
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_with_reference_8cc_source.html#l00546">546</a> of file <a class="el" href="test_stepper_motor_with_reference_8cc_source.html">testStepperMotorWithReference.cc</a>.</p>
-
-</div>
-</div>
-<a id="a3e79950474e2315a4f13f10d2d70e646" name="a3e79950474e2315a4f13f10d2d70e646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e79950474e2315a4f13f10d2d70e646">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testDetermineToleranceStop&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_with_reference_8cc_source.html#l00591">591</a> of file <a class="el" href="test_stepper_motor_with_reference_8cc_source.html">testStepperMotorWithReference.cc</a>.</p>
-
-</div>
-</div>
 <a id="a07f09699aedde03b5910e908459dcbf7" name="a07f09699aedde03b5910e908459dcbf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f09699aedde03b5910e908459dcbf7">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f09699aedde03b5910e908459dcbf7">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +264,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_5c1af8e39d626a10449ff2cc02efa59d.html">tests</a></li><li class="navelem"><a class="el" href="dir_d6b74272cc69793117ffbe9db9784b0f.html">src</a></li><li class="navelem"><a class="el" href="dir_316a4a3ce26cb695c39d446fee976666.html">steppermotor</a></li><li class="navelem"><a class="el" href="test_stepper_motor_with_reference_8cc.html">testStepperMotorWithReference.cc</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:42 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

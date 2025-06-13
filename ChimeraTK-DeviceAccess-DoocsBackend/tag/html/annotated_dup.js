@@ -23,7 +23,6 @@ var annotated_dup =
     [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", "class_doocs_backend_register_info" ],
     [ "DoocsLauncher", "class_doocs_launcher.html", "class_doocs_launcher" ],
     [ "eq_dummy", "classeq__dummy.html", "classeq__dummy" ],
-    [ "EventIdMapper", "class_event_id_mapper.html", "class_event_id_mapper" ],
     [ "RegSomeBit", "struct_reg_some_bit.html", "struct_reg_some_bit" ],
     [ "RegSomeDouble", "struct_reg_some_double.html", "struct_reg_some_double" ],
     [ "RegSomeDoubleArray", "struct_reg_some_double_array.html", "struct_reg_some_double_array" ],

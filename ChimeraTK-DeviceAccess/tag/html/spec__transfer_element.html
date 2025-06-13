@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.1</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.2</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -90,17 +90,17 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html',''); init
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Technical specification: TransferElement V1.1</div></div>
+  <div class="headertitle"><div class="title">Technical specification: TransferElement V1.2</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
 <p>&zwj;<b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl.</p>
 <p>links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Introduction</h2>
 <p>This document describes the behaviour of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> base class, the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a> base class, as well as requirements for all implementations (backends and decorators). The behaviour has been defined such that consistent behaviour with other libraries in the framework is ensured, namely ApplicationCore with the specifications for exception handling, initial value propagation and propagation of the data validity flag.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 A. Definitions</h2>
 <ul>
 <li>1. A <em>process variable</em> is the logical entity which is accessed through the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>. Outside this document, it is sometimes also called register.<ul>
@@ -191,13 +191,13 @@ A. Definitions</h2>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md3"></a>
+<h3><a class="anchor" id="autotoc_md7"></a>
 (*) Comments</h3>
 <ul>
 <li>5.4 The buffer is accessed by the read/write operatons and must not be changed at this time. As transfer elements are not thread safe (B.1) this means the application will either perform an operation or otherwise change the buffer ad libitum.</li>
 <li>6.5 doReadTransferSynchonously() is currently called doReadTransfer(). This should be renamed.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 B. Behavioural specification</h2>
 <ul>
 <li>1. TransferElements are not thread safe</li>
@@ -284,6 +284,7 @@ B. Behavioural specification</h2>
 </li>
 <li><a class="anchor" id="transferElement_B_4_2_3"></a>4.2.3 writeTransferYyy() calls the corresonding doWriteTransferYyy() [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_4_2_3">T</a>]</li>
 <li><a class="anchor" id="transferElement_B_4_2_4"></a>4.2.4 Transfer implementations do not change the application buffer [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_4_2_4">U</a>]</li>
+<li><a class="anchor" id="transferElement_B_4_2_5"></a>4.2.5 xxxTransferYyy() can be skipped between preXxx() and postXxx(), even if preXxx() has not thrown an exception. In this case, postXxx() must be called with the updateDataBuffer set to false. The result of such operation is no observable change, in particular the application buffer must remain unaltered. See <a class="el" href="spec__transfer_element.html#transferElement_B_12_10_2_3">B.12.10.2.3</a>.</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_4_3"></a>4.3 postXxx(): calls doPostXxx() of the implementation to allow follow-up work after the actual transfer. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_4_3">T</a>]<ul>
@@ -330,9 +331,15 @@ B. Behavioural specification</h2>
 </li>
 <li><a class="anchor" id="transferElement_B_8_5_2"></a>8.5.2 In case the device does not send an initial value after the subscription, the accessor implementation must get an initial value synchronously and treat it as if it would have been received, i.e. push it to the queue. This must happen after the actual asynchronous sending has been turned on to make sure no update is missed. (*) [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_5_2">U</a>]</li>
 <li><a class="anchor" id="transferElement_B_8_5_3"></a>8.5.3 If a transfer element is created while the device is opened, functional and <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> has been called, the asynchronous read is activated immediately (incl. sending of the initial value). This ensures that either all or none of the transfer elements are receiving asyncronously send data. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_5_3">Needs to be changed, most probably testing the wrong thing. U</a>]</li>
-<li>8.5.4 If <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> is called while the device is not opened or has an error, this call has no effect. If it is called when no deactivated transfer element exists, this call also has no effect.</li>
+<li><a class="anchor" id="transferElement_B_8_5_4"></a>8.5.4 A <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> call has no effect if<ul>
+<li>8.5.4.1 the device is not opened</li>
+<li>8.5.4.2 the device has an error</li>
+<li><a class="anchor" id="transferElement_B_8_5_4_3"></a>8.5.4.3 asynchronous read is already active [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_5_4_3">U</a>]</li>
+</ul>
+</li>
 <li>8.5.5 <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> does not throw any exceptions.</li>
 <li>8.5.6 When <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> returns, it is not guaranteed that all initial values have been received already.</li>
+<li>8.5.7 <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set.">Device::activateAsyncRead()</a> is thread safe against other calls of activateAsyncRead(), the creation/destuction of accessors, read/write operations and calls of <a class="el" href="class_chimera_t_k_1_1_device.html#a41fb30e128b2c697296218725143e687" title="Set the device into an exception state.">Device::setException()</a>.</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_8_6"></a>8.6 Blocking <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device.">TransferElement::read()</a> calls can be interrupted by the application via <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted.">TransferElement::interrupt()</a>.<ul>
@@ -455,16 +462,11 @@ B. Behavioural specification</h2>
 </ul>
 </li>
 <li>12.10 The <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a> implements a similar exception handling in <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group.">TransferGroup::read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group.">TransferGroup::write()</a> as their <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> counterparts. This especially means:<ul>
-<li><a class="anchor" id="transferElement_B_12_10_1"></a>12.10.1 Before preXxx() is called, the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a> checks all pre-conditions (device opened and operation allowed) to make sure no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> can occur.<ul>
-<li><a class="anchor" id="transferElement_B_12_10_1_1"></a>12.10.1.1 If any <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> occurs while checking the pre-conditions, it is immediately passed on to the application. [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_1_1">T</a>]</li>
-<li><a class="anchor" id="transferElement_B_12_10_1_2"></a>12.10.1.2 Any pre-condition which is not met will immediately result in a thrown <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_1_2">T</a>]</li>
-<li>12.10.1.3 The exceptions from <a class="el" href="spec__transfer_element.html#transferElement_B_12_10_1_1">12.10.1.1</a> and <a class="el" href="spec__transfer_element.html#transferElement_B_12_10_1_2">12.10.1.2</a> are not prioritised by type. The first detected error throws.</li>
-</ul>
-</li>
+<li><a class="anchor" id="transferElement_B_12_10_1"></a>12.10.1 (removed)</li>
 <li><a class="anchor" id="transferElement_B_12_10_2"></a>12.10.2 If <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> exceptions occur during preXxx()<ul>
 <li><a class="anchor" id="transferElement_B_12_10_2_1"></a>12.10.2.1 still all preXxx() are executed.</li>
 <li><a class="anchor" id="transferElement_B_12_10_2_2"></a>12.10.2.2 the whole transfer phase is skipped.</li>
-<li><a class="anchor" id="transferElement_B_12_10_2_3"></a>12.10.2.3 This implies that TransferElements in TransferGroups must expect that the transfer is not executed, even if preXxx() has not thrown an exception.</li>
+<li><a class="anchor" id="transferElement_B_12_10_2_3"></a>12.10.2.3 This implies that TransferElements in TransferGroups must expect that the transfer is not executed, even if preXxx() has not thrown an exception. See <a class="el" href="spec__transfer_element.html#transferElement_B_4_2_5">B.4.2.5</a>.</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_12_10_3"></a>12.10.3 <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> exceptions thrown by the low-level elements are propagated to the corresponding high-level elements so they are seen by their postXxx() functions (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_6_3">6.3</a>) [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_3">INCOMPLETE T</a>]</li>
@@ -492,7 +494,7 @@ B. Behavioural specification</h2>
 </li>
 <li><a class="anchor" id="transferElement_B_16"></a>16. This section will be moved from <a class="el" href="spec__transfer_element.html#transferElement_C_2">C.2</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md5"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 (*) Comments</h3>
 <ul>
 <li><a class="anchor" id="transferElement_comment_B_2_5_1"></a> <a class="el" href="spec__transfer_element.html#transferElement_B_2_5_1">2.5.1</a> Backends which don't support data validity flags (like the PCIe backend) just get the clampled value. The DOOCS backend however, which supports data validity, sets the outgoing data to invalid in addition.</li>
@@ -529,7 +531,7 @@ B. Behavioural specification</h2>
 <li><a class="anchor" id="transferElement_comment_B_11_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_7_2">11.7.2</a> The BiDirectionalProcessArray is implemented like this.</li>
 <li><a class="anchor" id="transferElement_comment_B_12_8_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_12_8_2">12.8.2</a> The reason is that there needs to be some entity which holds the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> to be replaced. If it is directly used by the calling code, the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a> has no means to replace it.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 C. Requirements for all implementations (full and decorator-like)</h2>
 <ul>
 <li>1. Other exceptions than <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> are not allowed to be thrown or passed through at any place under any circumstance (unless of course they are guaranteed to be caught before they become visible to the application, like the detail::DiscardValueException). The framework (in particular ApplicationCore) may use "uncatchable" exceptions in some places to force the termination of the application. Backend implementations etc. may not do this, since it would lead to uncontrollable behaviour.</li>
@@ -609,7 +611,7 @@ C. Requirements for all implementations (full and decorator-like)</h2>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md11"></a>
 (*) Comments</h3>
 <ul>
 <li><a class="anchor" id="transferElement_comment_C_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2">2.</a> This concerns all exceptions that were caught, not only <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a> and <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a>.</li>
@@ -625,7 +627,7 @@ C. Requirements for all implementations (full and decorator-like)</h2>
 <li><a class="anchor" id="transferElement_comment_C_5_2_8"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_8">5.2.8</a> A <a class="el" href="class_chimera_t_k_1_1_void_register_accessor.html" title="Accessor class to read and write void-typed registers.">VoidRegisterAccessor</a> has to be used instead.</li>
 <li><a class="anchor" id="transferElement_comment_C_5_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_3_1">5.3.1</a> To recover from the <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">ChimeraTK::runtime_error</a>, the application must call open(). At that point, the information is allowed to be changed. If the application fails to recheck the information, a retry of the failed operation will result in a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a>. This behaviour follows the requirement to throw logic_errors only in doPreXxx(): if during a transfer the backend discovers that the operation is no longer allowed, a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">runtime_error</a> must be thrown.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 D. Requirements for full implementations (e.g. in backends)</h2>
 <ul>
 <li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a> is specified:</li>
@@ -637,13 +639,13 @@ D. Requirements for full implementations (e.g. in backends)</h2>
 </li>
 <li>2. In doPostRead() the whole application buffer (data buffer and meta data) must be updated together if updateDataBuffer is true and there was no exception, or not at all in all other cases.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md13"></a>
 (*) Comments</h3>
 <ul>
 <li>1.3 Either the currently pushed data or older data on the queue might be discarded. In any case there will be one fewer read operation because the number of entries in the queue could not be increased because it was full.</li>
 <li><a class="anchor" id="transferElement_comment_D_1_4"></a><a class="el" href="spec__transfer_element.html#transferElement_D_1_4">1.4</a> All data and exceptions must be pushed into the data transport queue. As <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asynchronous read transfers.">TransferElement::_readQueue</a> is a deferred continuation queue, a pop_wait() is waiting for data on the original queue and does not see that something has been but into the deferred queue.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 E. Requirements for decorator-like implementations</h2>
 <ul>
 <li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">AccessMode::wait_for_new_data</a> is specified, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asynchronous read transfers.">TransferElement::_readQueue</a> is initialised in the constructor with a copy of the readQueue of the target <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>.<ul>
@@ -664,7 +666,7 @@ E. Requirements for decorator-like implementations</h2>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
 (*) Comments</h3>
 <ul>
 <li>5. The <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor.">NDRegisterAccessorDecorator</a> base class already contains an implementation which does this in doPreXxx() and doPostXxx(). You usually call it from the Decorators implementation, as mentioned in 3.</li>

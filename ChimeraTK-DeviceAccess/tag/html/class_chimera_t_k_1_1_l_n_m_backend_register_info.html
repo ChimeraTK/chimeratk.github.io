@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9419885cc47cd49e71660f079047ea2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of channels in register.  <br /></td></tr>
 <tr class="separator:a9419885cc47cd49e71660f079047ea2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d848fc05743eb201a5ec425e981cdc" id="r_a74d848fc05743eb201a5ec425e981cdc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html">DataDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a74d848fc05743eb201a5ec425e981cdc">getDataDescriptor</a> () const override</td></tr>
-<tr class="memdesc:a74d848fc05743eb201a5ec425e981cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <br /></td></tr>
+<tr class="memdesc:a74d848fc05743eb201a5ec425e981cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return description of the actual payload data for this register.  <br /></td></tr>
 <tr class="separator:a74d848fc05743eb201a5ec425e981cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1dbd642172674091c39b188dbdd7942" id="r_ab1dbd642172674091c39b188dbdd7942"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942">isReadable</a> () const override</td></tr>
 <tr class="memdesc:ab1dbd642172674091c39b188dbdd7942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is readable.  <br /></td></tr>
@@ -163,6 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d915425d300ff6b398831727717509e" id="r_a8d915425d300ff6b398831727717509e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a8d915425d300ff6b398831727717509e">getSupportedAccessModes</a> () const override</td></tr>
 <tr class="memdesc:a8d915425d300ff6b398831727717509e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all supported AccessModes for this register.  <br /></td></tr>
 <tr class="separator:a8d915425d300ff6b398831727717509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b0fc192b724bedae6374e75f25a0e8" id="r_a94b0fc192b724bedae6374e75f25a0e8"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a94b0fc192b724bedae6374e75f25a0e8">getTags</a> () const override</td></tr>
+<tr class="memdesc:a94b0fc192b724bedae6374e75f25a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of tags associated with this register.  <br /></td></tr>
+<tr class="separator:a94b0fc192b724bedae6374e75f25a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf13298a830cba9fa7dc57893c4c5dbd" id="r_aaf13298a830cba9fa7dc57893c4c5dbd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aaf13298a830cba9fa7dc57893c4c5dbd">clone</a> () const override</td></tr>
 <tr class="memdesc:aaf13298a830cba9fa7dc57893c4c5dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create copy of the object.  <br /></td></tr>
 <tr class="separator:aaf13298a830cba9fa7dc57893c4c5dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +183,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae9e252ec92f84503971f1a0ecb418d5c" id="r_ae9e252ec92f84503971f1a0ecb418d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ae9e252ec92f84503971f1a0ecb418d5c">name</a></td></tr>
-<tr class="memdesc:ae9e252ec92f84503971f1a0ecb418d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the registrer.  <br /></td></tr>
+<tr class="memdesc:ae9e252ec92f84503971f1a0ecb418d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the register.  <br /></td></tr>
 <tr class="separator:ae9e252ec92f84503971f1a0ecb418d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac207ec46daf9ba7cae5a125fd9093a17" id="r_ac207ec46daf9ba7cae5a125fd9093a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b">TargetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17">targetType</a> {<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba464bac7271c91e146fddec802a1076e5">TargetType::INVALID</a>}</td></tr>
 <tr class="memdesc:ac207ec46daf9ba7cae5a125fd9093a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the target.  <br /></td></tr>
@@ -223,6 +226,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af7bab2b23212722a12ac7dbec26d6978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db9fdbb7870c4c352c7abdc87f1e33d" id="r_a5db9fdbb7870c4c352c7abdc87f1e33d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_data_descriptor.html">DataDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a5db9fdbb7870c4c352c7abdc87f1e33d">_dataDescriptor</a></td></tr>
 <tr class="separator:a5db9fdbb7870c4c352c7abdc87f1e33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a5636262ed465f3d3c02f02727ffb9" id="r_a65a5636262ed465f3d3c02f02727ffb9"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65a5636262ed465f3d3c02f02727ffb9">tags</a></td></tr>
+<tr class="separator:a65a5636262ed465f3d3c02f02727ffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> structure for the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers.">LogicalNameMappingBackend</a>. </p>
@@ -337,7 +342,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a76ad133b62223ce5329dc99017a3be47">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00113">113</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00117">117</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +369,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return desciption of the actual payload data for this register. </p>
+<p>Return description of the actual payload data for this register. </p>
 <p>See the description of <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner.">DataDescriptor</a> for more information. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a3255f0abb0a4e83ddb95c97fb473e3e5">ChimeraTK::BackendRegisterInfoBase</a>.</p>
@@ -463,13 +468,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a31c78dfbea563960cbe4805a01a1238d">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00032">32</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_register_info_a15124f8b7e8aedbc4a1cbdbb5b78225f_icgraph.svg" width="506" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -501,6 +499,38 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a85ece0fd9d481d869e938261bd21b2b8">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00044">44</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a94b0fc192b724bedae6374e75f25a0e8" name="a94b0fc192b724bedae6374e75f25a0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b0fc192b724bedae6374e75f25a0e8">&#9670;&#160;</a></span>getTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; std::string &gt; ChimeraTK::LNMBackendRegisterInfo::getTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the list of tags associated with this register. </p>
+<p>The default implementation returns an empty list. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#af323ad5c9bfa9620e99c9e72067f97ad">ChimeraTK::BackendRegisterInfoBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00046">46</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -563,13 +593,6 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#ab0dc5bfc30a29577986d10a3b59d7dc0">ChimeraTK::BackendRegisterInfoBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00042">42</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_register_info_ad059e76a50742d83b31e0997b61006fa_icgraph.svg" width="486" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -612,7 +635,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00111">111</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00113">113</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +653,7 @@ Public Attributes</h2></td></tr>
 
 <p>The bit of the target register (if <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba31ddcac9356415b3567341d34a9adede">TargetType::BIT</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00068">68</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00070">70</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -648,7 +671,7 @@ Public Attributes</h2></td></tr>
 
 <p>The channel of the target 2D register (if <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8">TargetType::CHANNEL</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00065">65</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00067">67</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +689,7 @@ Public Attributes</h2></td></tr>
 
 <p>The target device alias. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00053">53</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00055">55</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -684,7 +707,7 @@ Public Attributes</h2></td></tr>
 
 <p>The first index in the range. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00059">59</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00061">61</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +726,7 @@ Public Attributes</h2></td></tr>
 <p>The length of the range (i.e. </p>
 <p>number of indices) </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00062">62</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00064">64</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -719,9 +742,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Name of the registrer. </p>
+<p>Name of the register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00047">47</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00049">49</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -739,7 +762,7 @@ Public Attributes</h2></td></tr>
 
 <p>The number of channels of the logical register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00071">71</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00073">73</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +780,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of accessor plugins enabled for this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00109">109</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00111">111</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +799,7 @@ Public Attributes</h2></td></tr>
 <p>Flag if the register is readable. </p>
 <p>Might be derived from the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00099">99</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00101">101</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +817,7 @@ Public Attributes</h2></td></tr>
 
 <p>The target register name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00056">56</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00058">58</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +836,23 @@ Public Attributes</h2></td></tr>
 <p>Supported AccessMode flags. </p>
 <p>Might be derived from the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00106">106</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00108">108</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a65a5636262ed465f3d3c02f02727ffb9" name="a65a5636262ed465f3d3c02f02727ffb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a5636262ed465f3d3c02f02727ffb9">&#9670;&#160;</a></span>tags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;std::string&gt; ChimeraTK::LNMBackendRegisterInfo::tags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00115">115</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +870,7 @@ Public Attributes</h2></td></tr>
 
 <p>Type of the target. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00050">50</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00052">52</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -849,7 +888,7 @@ Public Attributes</h2></td></tr>
 
 <p>Data type of CONSTANT or VARIABLE type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00074">74</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00076">76</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -868,7 +907,7 @@ Public Attributes</h2></td></tr>
 <p>Flag if the register is writeable. </p>
 <p>Might be derived from the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00103">103</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_register_info_8h_source.html#l00105">105</a> of file <a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>

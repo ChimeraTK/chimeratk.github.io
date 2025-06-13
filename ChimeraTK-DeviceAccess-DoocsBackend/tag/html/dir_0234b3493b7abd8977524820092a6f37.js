@@ -11,7 +11,6 @@ var dir_0234b3493b7abd8977524820092a6f37 =
     [ "DoocsBackendRegisterAccessor.h", "_doocs_backend_register_accessor_8h.html", "_doocs_backend_register_accessor_8h" ],
     [ "DoocsBackendStringRegisterAccessor.h", "_doocs_backend_string_register_accessor_8h.html", "_doocs_backend_string_register_accessor_8h" ],
     [ "DoocsBackendTimeStampAccessor.h", "_doocs_backend_time_stamp_accessor_8h.html", "_doocs_backend_time_stamp_accessor_8h" ],
-    [ "EventIdMapper.h", "_event_id_mapper_8h.html", "_event_id_mapper_8h" ],
     [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],
     [ "StringUtility.h", "_string_utility_8h.html", "_string_utility_8h" ],
     [ "ZMQSubscriptionManager.h", "_z_m_q_subscription_manager_8h.html", "_z_m_q_subscription_manager_8h" ]

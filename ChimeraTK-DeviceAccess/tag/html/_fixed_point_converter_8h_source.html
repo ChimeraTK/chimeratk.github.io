@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -104,21 +104,21 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_exception_8h.html">Exception.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_supported_user_types_8h.html">SupportedUserTypes.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;boost/fusion/algorithm.hpp&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;boost/fusion/container.hpp&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/fusion/sequence.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;boost/numeric/conversion/cast.hpp&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;boost/fusion/algorithm.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;boost/fusion/container.hpp&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;boost/fusion/sequence.hpp&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/numeric/conversion/cast.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -540,7 +540,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h_source.html'
 <div class="ttc" id="anamespace_chimera_t_k_html_a1e4921a63a21ed0cdbe9c1259b7b7bb2"><div class="ttname"><a href="namespace_chimera_t_k.html#a1e4921a63a21ed0cdbe9c1259b7b7bb2">ChimeraTK::userTypeMap</a></div><div class="ttdeci">boost::fusion::map&lt; boost::fusion::pair&lt; int8_t, int8_t &gt;, boost::fusion::pair&lt; uint8_t, uint8_t &gt;, boost::fusion::pair&lt; int16_t, int16_t &gt;, boost::fusion::pair&lt; uint16_t, uint16_t &gt;, boost::fusion::pair&lt; int32_t, int32_t &gt;, boost::fusion::pair&lt; uint32_t, uint32_t &gt;, boost::fusion::pair&lt; int64_t, int64_t &gt;, boost::fusion::pair&lt; uint64_t, uint64_t &gt;, boost::fusion::pair&lt; float, float &gt;, boost::fusion::pair&lt; double, double &gt;, boost::fusion::pair&lt; std::string, std::string &gt;, boost::fusion::pair&lt; Boolean, Boolean &gt;, boost::fusion::pair&lt; Void, Void &gt; &gt; userTypeMap</div><div class="ttdoc">Map of UserType to value of the UserType.</div><div class="ttdef"><b>Definition</b> <a href="_supported_user_types_8h_source.html#l00376">SupportedUserTypes.h:381</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb"><div class="ttname"><a href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb">ChimeraTK::AccessMode::raw</a></div><div class="ttdeci">@ raw</div><div class="ttdoc">Raw access: disable any possible conversion from the original hardware data type into the given UserT...</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
-<div class="ttc" id="anamespacestd_html_a91283b6c9ec83b1b6502cdb1f753104a"><div class="ttname"><a href="namespacestd.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a></div><div class="ttdeci">std::string to_string(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="_unified_backend_test_8h_source.html#l00672">UnifiedBackendTest.h:672</a></div></div>
+<div class="ttc" id="anamespacestd_html_a91283b6c9ec83b1b6502cdb1f753104a"><div class="ttname"><a href="namespacestd.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a></div><div class="ttdeci">std::string to_string(const std::string &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="_unified_backend_test_8h_source.html#l00691">UnifiedBackendTest.h:691</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d_html_ae1d0d17fabaffe80c458db1765fe5f2e"><div class="ttname"><a href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html#ae1d0d17fabaffe80c458db1765fe5f2e">ChimeraTK::FixedPointConverter::vectorToCooked_impl&lt; std::string, RAW_ITERATOR, COOKED_ITERATOR &gt;::impl</a></div><div class="ttdeci">static void impl(const FixedPointConverter &amp;fpc, const RAW_ITERATOR &amp;raw_begin, const RAW_ITERATOR &amp;raw_end, COOKED_ITERATOR cooked_begin)</div><div class="ttdef"><b>Definition</b> <a href="_fixed_point_converter_8h_source.html#l00415">FixedPointConverter.h:415</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html">ChimeraTK::FixedPointConverter::vectorToCooked_impl</a></div><div class="ttdef"><b>Definition</b> <a href="_fixed_point_converter_8h_source.html#l00079">FixedPointConverter.h:79</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_html_a6c33e40b1354831cdaf699fd9c1078c1"><div class="ttname"><a href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html#a6c33e40b1354831cdaf699fd9c1078c1">ChimeraTK::FixedPointConverter::vectorToCooked_impl::impl</a></div><div class="ttdeci">static void impl(const FixedPointConverter &amp;fpc, const RAW_ITERATOR &amp;raw_begin, const RAW_ITERATOR &amp;raw_end, COOKED_ITERATOR cooked_begin)</div><div class="ttdef"><b>Definition</b> <a href="_fixed_point_converter_8h_source.html#l00249">FixedPointConverter.h:249</a></div></div>

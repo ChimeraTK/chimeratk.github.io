@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -110,85 +110,93 @@ $(document).ready(function(){initNavTree('_motor_driver_card_factory_8cc_source.
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemtca4u.html">mtca4u</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  MotorDriverCardFactory::MotorDriverCardFactory() : _factoryMutex(), _motorDriverCards(), _dummyMode(false) {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">/* empty */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="comment">// the copy constructor is intentionally not implemented</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">   19</a></span>  <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_factory.html">MotorDriverCardFactory</a>&amp; MotorDriverCardFactory::instance() {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_factory.html">MotorDriverCardFactory</a> motorDriverCardFactory;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> motorDriverCardFactory;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="comment">// the copy constructor is intentionally not implemented</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">   15</a></span>  <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_factory.html">MotorDriverCardFactory</a>&amp; <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">MotorDriverCardFactory::instance</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">static</span> <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_factory.html">MotorDriverCardFactory</a> motorDriverCardFactory;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> motorDriverCardFactory;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  }</div>
 </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">   20</a></span>  boost::shared_ptr&lt;MotorDriverCard&gt; <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">MotorDriverCardFactory::createMotorDriverCard</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      std::string alias, std::string mapModuleName, std::string motorConfigFileName) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    boost::lock_guard&lt;boost::mutex&gt; guard(_factoryMutex);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">   24</a></span>  boost::shared_ptr&lt;MotorDriverCard&gt; MotorDriverCardFactory::createMotorDriverCard(</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      std::string alias, std::string mapModuleName, std::string motorConfigFileName) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    boost::lock_guard&lt;boost::mutex&gt; guard(_factoryMutex);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Check if we have the card and if the weak reference is still valid. That way we can guarantee that there is only</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// one MotorDriverCard instance accessing the device (at least in this process) while also being able to re-open</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// the underlying device by giving up all motors using the card.</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> <span class="keywordtype">id</span> = std::make_pair(alias, mapModuleName);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">auto</span> iterator = _motorDriverCards.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span>(iterator != _motorDriverCards.end()) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keyword">auto</span> card = iterator-&gt;second.lock();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordflow">if</span>(card) <span class="keywordflow">return</span> card;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    boost::shared_ptr&lt;MotorDriverCard&gt; motorDriverCard;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span>(_dummyMode) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="comment">// just create a MotorDriverCardDummy</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      motorDriverCard.reset(<span class="keyword">new</span> <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_dummy.html">MotorDriverCardDummy</a>());</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      boost::shared_ptr&lt;ChimeraTK::Device&gt; device(<span class="keyword">new</span> ChimeraTK::Device);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      device-&gt;open(alias);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <a class="code hl_struct" href="structmtca4u_1_1_motor_driver_card_config.html">MotorDriverCardConfig</a> cardConfig = MotorDriverCardConfigXML::read(motorConfigFileName);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      motorDriverCard.reset(<span class="keyword">new</span> <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_impl.html">MotorDriverCardImpl</a>(device, mapModuleName, cardConfig));</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    _motorDriverCards[id] = motorDriverCard;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> motorDriverCard;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">auto</span> <span class="keywordtype">id</span> = std::make_pair(alias, mapModuleName);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> (_dummyMode) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">auto</span> card = _dummyMotorDriverCards[id];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">if</span> (!card) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            _dummyMotorDriverCards[id].reset(<span class="keyword">new</span> <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_dummy.html">MotorDriverCardDummy</a>());</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> _dummyMotorDriverCards[id];</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// Check if we have the card and if the weak reference is still valid. That way we can guarantee that there is only</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// one MotorDriverCard instance accessing the device (at least in this process) while also being able to re-open</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// the underlying device by giving up all motors using the card.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">auto</span> iterator = _motorDriverCards.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span>(iterator != _motorDriverCards.end()) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keyword">auto</span> card = iterator-&gt;second.lock();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordflow">if</span>(card) <span class="keywordflow">return</span> card;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    boost::shared_ptr&lt;MotorDriverCard&gt; motorDriverCard;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      boost::shared_ptr&lt;ChimeraTK::Device&gt; device(<span class="keyword">new</span> ChimeraTK::Device);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      device-&gt;open(alias);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <a class="code hl_struct" href="structmtca4u_1_1_motor_driver_card_config.html">MotorDriverCardConfig</a> cardConfig = <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_config_x_m_l.html#a3da93f428a48345d38b0c7e276e2096c">MotorDriverCardConfigXML::read</a>(motorConfigFileName);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      motorDriverCard.reset(<span class="keyword">new</span> <a class="code hl_class" href="classmtca4u_1_1_motor_driver_card_impl.html">MotorDriverCardImpl</a>(device, mapModuleName, cardConfig));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    _motorDriverCards[id] = motorDriverCard;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> motorDriverCard;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a90b26b091667a44a8a5bd2d88476e313">   55</a></span>  <span class="keywordtype">bool</span> MotorDriverCardFactory::getDummyMode() {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> _dummyMode;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a90b26b091667a44a8a5bd2d88476e313">   56</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_factory.html#a90b26b091667a44a8a5bd2d88476e313">MotorDriverCardFactory::getDummyMode</a>() {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> _dummyMode;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">   59</a></span>  <span class="keywordtype">void</span> MotorDriverCardFactory::setDummyMode(<span class="keywordtype">bool</span> dummyMode) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    _dummyMode = dummyMode;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">   60</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">MotorDriverCardFactory::setDummyMode</a>(<span class="keywordtype">bool</span> dummyMode) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    _dummyMode = dummyMode;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a42f89b228b22a9b857c88e1460c8c74a">   63</a></span>  <span class="keywordtype">void</span> MotorDriverCardFactory::setDeviceaccessDMapFilePath(std::string dmapFileName) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    ChimeraTK::BackendFactory::getInstance().setDMapFilePath(dmapFileName);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#a42f89b228b22a9b857c88e1460c8c74a">   64</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_factory.html#a42f89b228b22a9b857c88e1460c8c74a">MotorDriverCardFactory::setDeviceaccessDMapFilePath</a>(std::string dmapFileName) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    ChimeraTK::BackendFactory::getInstance().setDMapFilePath(dmapFileName);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">   67</a></span>  std::string MotorDriverCardFactory::getDeviceaccessDMapFilePath() {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> ChimeraTK::BackendFactory::getInstance().getDMapFilePath();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">   68</a></span>  std::string <a class="code hl_function" href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">MotorDriverCardFactory::getDeviceaccessDMapFilePath</a>() {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> ChimeraTK::BackendFactory::getInstance().getDMapFilePath();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace mtca4u</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace mtca4u</span></div>
 <div class="ttc" id="a_motor_driver_card_config_x_m_l_8h_html"><div class="ttname"><a href="_motor_driver_card_config_x_m_l_8h.html">MotorDriverCardConfigXML.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_dummy_8h_html"><div class="ttname"><a href="_motor_driver_card_dummy_8h.html">MotorDriverCardDummy.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_factory_8h_html"><div class="ttname"><a href="_motor_driver_card_factory_8h.html">MotorDriverCardFactory.h</a></div></div>
 <div class="ttc" id="a_motor_driver_card_impl_8h_html"><div class="ttname"><a href="_motor_driver_card_impl_8h.html">MotorDriverCardImpl.h</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_config_x_m_l_html_a3da93f428a48345d38b0c7e276e2096c"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_config_x_m_l.html#a3da93f428a48345d38b0c7e276e2096c">mtca4u::MotorDriverCardConfigXML::read</a></div><div class="ttdeci">static MotorDriverCardConfig read(std::string fileName)</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_config_x_m_l_8cc_source.html#l00219">MotorDriverCardConfigXML.cc:219</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_dummy_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_dummy.html">mtca4u::MotorDriverCardDummy</a></div><div class="ttdoc">A dummy implementation of the MotorDriverCard.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_dummy_8h_source.html#l00013">MotorDriverCardDummy.h:13</a></div></div>
-<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html">mtca4u::MotorDriverCardFactory</a></div><div class="ttdoc">The MotorDriverCardFactory is used to create instances of the MotorDriverCard class.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8h_source.html#l00027">MotorDriverCardFactory.h:27</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html">mtca4u::MotorDriverCardFactory</a></div><div class="ttdoc">The MotorDriverCardFactory is used to create instances of the MotorDriverCard class.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8h_source.html#l00028">MotorDriverCardFactory.h:28</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_a3f682c513d5cc33212a22ab0485182bb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb">mtca4u::MotorDriverCardFactory::createMotorDriverCard</a></div><div class="ttdeci">boost::shared_ptr&lt; MotorDriverCard &gt; createMotorDriverCard(std::string alias, std::string mapModuleName, std::string motorConfigFileName)</div><div class="ttdoc">Create a motor driver card from the device alias, the module name in the map file (there might be mor...</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8cc_source.html#l00020">MotorDriverCardFactory.cc:20</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_a42f89b228b22a9b857c88e1460c8c74a"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#a42f89b228b22a9b857c88e1460c8c74a">mtca4u::MotorDriverCardFactory::setDeviceaccessDMapFilePath</a></div><div class="ttdeci">static void setDeviceaccessDMapFilePath(std::string dmapFileName)</div><div class="ttdoc">Set the application wide dmap file to use.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8cc_source.html#l00064">MotorDriverCardFactory.cc:64</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_a90b26b091667a44a8a5bd2d88476e313"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#a90b26b091667a44a8a5bd2d88476e313">mtca4u::MotorDriverCardFactory::getDummyMode</a></div><div class="ttdeci">bool getDummyMode()</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8cc_source.html#l00056">MotorDriverCardFactory.cc:56</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_aad51e92b6cd2b366fcd5f7cd0e8a6afb"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#aad51e92b6cd2b366fcd5f7cd0e8a6afb">mtca4u::MotorDriverCardFactory::instance</a></div><div class="ttdeci">static MotorDriverCardFactory &amp; instance()</div><div class="ttdoc">Access the single instance of the factory.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8cc_source.html#l00015">MotorDriverCardFactory.cc:15</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_ab0ed2b63a7ac8ae08c02bb9d0ac80048"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#ab0ed2b63a7ac8ae08c02bb9d0ac80048">mtca4u::MotorDriverCardFactory::getDeviceaccessDMapFilePath</a></div><div class="ttdeci">static std::string getDeviceaccessDMapFilePath()</div><div class="ttdoc">Get the dmap file name that is currently set for mtca4u::deviceaccess.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8cc_source.html#l00068">MotorDriverCardFactory.cc:68</a></div></div>
+<div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_factory_html_ada87532a82ec391a5925e41068eeefb5"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_factory.html#ada87532a82ec391a5925e41068eeefb5">mtca4u::MotorDriverCardFactory::setDummyMode</a></div><div class="ttdeci">void setDummyMode(bool dummyMode=true)</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_factory_8cc_source.html#l00060">MotorDriverCardFactory.cc:60</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_motor_driver_card_impl_html"><div class="ttname"><a href="classmtca4u_1_1_motor_driver_card_impl.html">mtca4u::MotorDriverCardImpl</a></div><div class="ttdoc">The implementation of the DFMC-MD22 motor driver card.</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_impl_8h_source.html#l00020">MotorDriverCardImpl.h:20</a></div></div>
-<div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdoc">File: StepperMotor.h Author: tkozak.</div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
+<div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
 <div class="ttc" id="astructmtca4u_1_1_motor_driver_card_config_html"><div class="ttname"><a href="structmtca4u_1_1_motor_driver_card_config.html">mtca4u::MotorDriverCardConfig</a></div><div class="ttdoc">This configuration contains start values for all data words that can be written to the MotorDriverImp...</div><div class="ttdef"><b>Definition</b> <a href="_motor_driver_card_config_8h_source.html#l00015">MotorDriverCardConfig.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -196,7 +204,7 @@ $(document).ready(function(){initNavTree('_motor_driver_card_factory_8cc_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_6d503f7fb68534c3b75a73a185594ff3.html">backend</a></li><li class="navelem"><a class="el" href="dir_b0847440e2dab0d413ba064dfb19449c.html">src</a></li><li class="navelem"><a class="el" href="_motor_driver_card_factory_8cc.html">MotorDriverCardFactory.cc</a></li>
-    <li class="footer">Generated on Mon Jun 9 2025 18:48:41 for mtca4u-MotorDriverCard by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

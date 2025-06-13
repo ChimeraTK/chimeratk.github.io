@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.19.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a82e9a504d5b063a6e3b34f3229466287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of dimensions of this register.  <br /></td></tr>
 <tr class="separator:a82e9a504d5b063a6e3b34f3229466287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3255f0abb0a4e83ddb95c97fb473e3e5" id="r_a3255f0abb0a4e83ddb95c97fb473e3e5"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html">DataDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a3255f0abb0a4e83ddb95c97fb473e3e5">getDataDescriptor</a> () const =0</td></tr>
-<tr class="memdesc:a3255f0abb0a4e83ddb95c97fb473e3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <br /></td></tr>
+<tr class="memdesc:a3255f0abb0a4e83ddb95c97fb473e3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return description of the actual payload data for this register.  <br /></td></tr>
 <tr class="separator:a3255f0abb0a4e83ddb95c97fb473e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128e5806d389ffa3ed99ee07e3cecc39" id="r_a128e5806d389ffa3ed99ee07e3cecc39"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a128e5806d389ffa3ed99ee07e3cecc39">isReadable</a> () const =0</td></tr>
 <tr class="memdesc:a128e5806d389ffa3ed99ee07e3cecc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is readable.  <br /></td></tr>
@@ -144,6 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd91330b9b878e4053db6fd040582cfd" id="r_abd91330b9b878e4053db6fd040582cfd"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#abd91330b9b878e4053db6fd040582cfd">getQualifiedAsyncId</a> () const</td></tr>
 <tr class="memdesc:abd91330b9b878e4053db6fd040582cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the fully qualified <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html" title="Send backend-specific asynchronous data to different distributors:">async::SubDomain</a> ID.  <br /></td></tr>
 <tr class="separator:abd91330b9b878e4053db6fd040582cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af323ad5c9bfa9620e99c9e72067f97ad" id="r_af323ad5c9bfa9620e99c9e72067f97ad"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#af323ad5c9bfa9620e99c9e72067f97ad">getTags</a> () const</td></tr>
+<tr class="memdesc:af323ad5c9bfa9620e99c9e72067f97ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of tags associated with this register.  <br /></td></tr>
+<tr class="separator:af323ad5c9bfa9620e99c9e72067f97ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DeviceBackend-independent register description. </p>
@@ -204,13 +207,6 @@ Public Member Functions</h2></td></tr>
 <p>Create copy of the object. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aaf13298a830cba9fa7dc57893c4c5dbd">ChimeraTK::LNMBackendRegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a7763897f3d113244a769589907d45d6e">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#aef49d69f88b9873cdc0cf507f0f9ae0d">myRegisterInfo</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_a76ad133b62223ce5329dc99017a3be47_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -237,7 +233,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return desciption of the actual payload data for this register. </p>
+<p>Return description of the actual payload data for this register. </p>
 <p>See the description of <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner.">DataDescriptor</a> for more information. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a74d848fc05743eb201a5ec425e981cdc">ChimeraTK::LNMBackendRegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a4e5408f34c5b64a773d6bff1f4a831ab">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a0170a7a50c25c0da7b76dbd7a539d5a1">myRegisterInfo</a>.</p>
@@ -270,13 +266,6 @@ Public Member Functions</h2></td></tr>
 <p>Return number of channels in register. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a9419885cc47cd49e71660f079047ea2b">ChimeraTK::LNMBackendRegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1c0b14fc512fdcf7c4b45605c6761af7">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a8afebaf3baa27beba0435f92dcf6c550">myRegisterInfo</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_a8507f34475d08bae6bfd8f14b2e8e361_icgraph.svg" width="100%" height="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -305,21 +294,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of dimensions of this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00058">58</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_a82e9a504d5b063a6e3b34f3229466287_cgraph.svg" width="547" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_a82e9a504d5b063a6e3b34f3229466287_icgraph.svg" width="100%" height="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00065">65</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>
@@ -349,13 +324,6 @@ Public Member Functions</h2></td></tr>
 <p>Return number of elements per channel. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a77065ed1981822f356f143dcb136bd47">ChimeraTK::LNMBackendRegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#af8cb033bb588030faafd483b951dc7a6">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#ae8145c77ae96df6cd5384ef67f48912b">myRegisterInfo</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_ad7a70e2d734cd02c65f713be0045a690_icgraph.svg" width="100%" height="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -388,13 +356,6 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a981a03fdaec07b99cdb994d44ab95703">ChimeraTK::NumericAddressedRegisterInfo</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00053">53</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_backend_register_info_base_abd91330b9b878e4053db6fd040582cfd_icgraph.svg" width="458" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -453,6 +414,38 @@ Public Member Functions</h2></td></tr>
 <p>Return all supported AccessModes for this register. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a8d915425d300ff6b398831727717509e">ChimeraTK::LNMBackendRegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a42c10bdd34bf7f303b4a05c69c7fac5f">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a91a84451c482c514214f1e2bf49d977e">myRegisterInfo</a>.</p>
+
+</div>
+</div>
+<a id="af323ad5c9bfa9620e99c9e72067f97ad" name="af323ad5c9bfa9620e99c9e72067f97ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af323ad5c9bfa9620e99c9e72067f97ad">&#9670;&#160;</a></span>getTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::set&lt; std::string &gt; ChimeraTK::BackendRegisterInfoBase::getTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the list of tags associated with this register. </p>
+<p>The default implementation returns an empty list. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a94b0fc192b724bedae6374e75f25a0e8">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00060">60</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>

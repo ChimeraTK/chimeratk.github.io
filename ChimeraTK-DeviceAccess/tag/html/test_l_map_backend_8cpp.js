@@ -5,6 +5,7 @@ var test_l_map_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a8f027a33bd90eb1c8c2d0a4226bb52ad", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aad9c2513f92e9141623b49f8c24b544b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a6e621118aa53ff203987691a14aaee85", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a7b21d19a7332f57ca5556b6fbab0f3ad", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a7ff992440c0b98be761736b3d41e140b", null ],
