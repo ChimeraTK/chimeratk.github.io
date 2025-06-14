@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.00</span>
    </div>
   </td>
  </tr>
@@ -172,9 +172,9 @@ include/SetpointRamp.h</h2>
 <div class="ttc" id="aclass_chimera_t_k_1_1_variable_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_variable_group.html">ChimeraTK::VariableGroup</a></div><div class="ttdef"><b>Definition</b> <a href="_variable_group_8h_source.html#l00022">VariableGroup.h:22</a></div></div>
 <div class="ttc" id="aclass_setpoint_ramp_html"><div class="ttname"><a href="class_setpoint_ramp.html">SetpointRamp</a></div><div class="ttdef"><b>Definition</b> <a href="_setpoint_ramp_8h_source.html#l00018">SetpointRamp.h:18</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_output_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_output.html">ChimeraTK::ScalarOutput</a></div><div class="ttdoc">Convenience class for output scalar accessors (always UpdateMode::push)</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00092">ScalarAccessor.h:92</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_poll_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_poll_input.html">ChimeraTK::ScalarPollInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::poll.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00080">ScalarAccessor.h:80</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_push_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_push_input.html">ChimeraTK::ScalarPushInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::push.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00069">ScalarAccessor.h:69</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_output_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_output.html">ChimeraTK::ScalarOutput</a></div><div class="ttdoc">Convenience class for output scalar accessors (always UpdateMode::push)</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00093">ScalarAccessor.h:93</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_poll_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_poll_input.html">ChimeraTK::ScalarPollInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::poll.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00081">ScalarAccessor.h:81</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_push_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_push_input.html">ChimeraTK::ScalarPushInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::push.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00070">ScalarAccessor.h:70</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="example_include_AverageCurrent_h"></a>
 include/AverageCurrent.h</h2>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
@@ -303,7 +303,7 @@ include/ExampleApp.h</h2>
 <div class="line">  ControlUnit controlUnit{<span class="keyword">this</span>, <span class="stringliteral">&quot;ControlUnit&quot;</span>, <span class="stringliteral">&quot;Unit for controlling the oven temperature&quot;</span>};</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Optionally instantiate the automated setpoint ramping module</span></div>
-<div class="line">  <a class="code hl_class" href="class_setpoint_ramp.html">SetpointRamp</a> ramp{<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a1c24a9655257070ef1100ffcbaef5bf8">getConfigReader</a>().<a class="code hl_function" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">get</a>&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;Configuration/enableSetpointRamping&quot;</span>) ?</div>
+<div class="line">  <a class="code hl_class" href="class_setpoint_ramp.html">SetpointRamp</a> ramp{<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a1c24a9655257070ef1100ffcbaef5bf8">getConfigReader</a>().<a class="code hl_function" href="class_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">get</a>&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;Configuration/enableSetpointRamping&quot;</span>) ?</div>
 <div class="line">          <a class="code hl_class" href="class_setpoint_ramp.html">SetpointRamp</a>(<span class="keyword">this</span>, <span class="stringliteral">&quot;SetpointRamp&quot;</span>, <span class="stringliteral">&quot;Slow ramping of temperator setpoint&quot;</span>) :</div>
 <div class="line">          <a class="code hl_class" href="class_setpoint_ramp.html">SetpointRamp</a>()};</div>
 <div class="line">};</div>
@@ -311,7 +311,8 @@ include/ExampleApp.h</h2>
 <div class="ttc" id="a_controller_8h_html"><div class="ttname"><a href="_controller_8h.html">Controller.h</a></div></div>
 <div class="ttc" id="a_setpoint_ramp_8h_html"><div class="ttname"><a href="_setpoint_ramp_8h.html">SetpointRamp.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></div><div class="ttdef"><b>Definition</b> <a href="_application_8h_source.html#l00048">Application.h:48</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_a1c24a9655257070ef1100ffcbaef5bf8"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#a1c24a9655257070ef1100ffcbaef5bf8">ChimeraTK::Application::getConfigReader</a></div><div class="ttdeci">ConfigReader &amp; getConfigReader()</div><div class="ttdef"><b>Definition</b> <a href="_application_8h_source.html#l00189">Application.h:189</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_a1c24a9655257070ef1100ffcbaef5bf8"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#a1c24a9655257070ef1100ffcbaef5bf8">ChimeraTK::Application::getConfigReader</a></div><div class="ttdeci">ConfigReader &amp; getConfigReader()</div><div class="ttdef"><b>Definition</b> <a href="_application_8h_source.html#l00192">Application.h:192</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_config_reader_html_ad2b1bb3c5c4a974bce539fc4cd194793"><div class="ttname"><a href="class_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">ChimeraTK::ConfigReader::get</a></div><div class="ttdeci">const T &amp; get(const std::string &amp;variableName) const</div><div class="ttdoc">Get value for given configuration variable.</div><div class="ttdef"><b>Definition</b> <a href="_config_reader_8h_source.html#l00249">ConfigReader.h:249</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_module_html"><div class="ttname"><a href="class_chimera_t_k_1_1_device_module.html">ChimeraTK::DeviceModule</a></div><div class="ttdef"><b>Definition</b> <a href="_device_module_8h_source.html#l00020">DeviceModule.h:20</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_entity_owner_html_a081a3af228567c88d8f01e923564ea34"><div class="ttname"><a href="class_chimera_t_k_1_1_entity_owner.html#a081a3af228567c88d8f01e923564ea34">ChimeraTK::EntityOwner::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdoc">Get the name of the module instance.</div><div class="ttdef"><b>Definition</b> <a href="_entity_owner_8h_source.html#l00059">EntityOwner.h:59</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_module_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_module_group.html">ChimeraTK::ModuleGroup</a></div><div class="ttdef"><b>Definition</b> <a href="_module_group_8h_source.html#l00016">ModuleGroup.h:16</a></div></div>
@@ -320,7 +321,6 @@ include/ExampleApp.h</h2>
 <div class="ttc" id="aclass_example_app_html"><div class="ttname"><a href="class_example_app.html">ExampleApp</a></div><div class="ttdoc">[Snippet: Class Definition Start]</div><div class="ttdef"><b>Definition</b> <a href="_example_app_8h_source.html#l00027">ExampleApp.h:27</a></div></div>
 <div class="ttc" id="aclass_example_app_html_a496387672eeb08223ce159afc3ef7443"><div class="ttname"><a href="class_example_app.html#a496387672eeb08223ce159afc3ef7443">ExampleApp::~ExampleApp</a></div><div class="ttdeci">~ExampleApp() override</div><div class="ttdoc">[Snippet: Destructor]</div><div class="ttdef"><b>Definition</b> <a href="_example_app_8cc_source.html#l00018">ExampleApp.cc:18</a></div></div>
 <div class="ttc" id="anamespaceoven_init_html"><div class="ttname"><a href="namespaceoven_init.html">ovenInit</a></div><div class="ttdef"><b>Definition</b> <a href="oven_init_8py_source.html#l00001">ovenInit.py:1</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_config_reader_html_ad2b1bb3c5c4a974bce539fc4cd194793"><div class="ttname"><a href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793">ChimeraTK::ConfigReader::get</a></div><div class="ttdeci">const T &amp; get(const std::string &amp;variableName) const</div><div class="ttdoc">Get value for given configuration variable.</div><div class="ttdef"><b>Definition</b> <a href="_config_reader_8h_source.html#l00248">ConfigReader.h:248</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_periodic_trigger_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_periodic_trigger.html">ChimeraTK::PeriodicTrigger</a></div><div class="ttdoc">Simple periodic trigger that fires a variable once per second.</div><div class="ttdef"><b>Definition</b> <a href="_periodic_trigger_8h_source.html#l00016">PeriodicTrigger.h:16</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_scripted_init_handler_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scripted_init_handler.html">ChimeraTK::ScriptedInitHandler</a></div><div class="ttdoc">Initialisation handler which calls an external application (usually a script), captures its output (b...</div><div class="ttdef"><b>Definition</b> <a href="_scripted_initialisation_handler_8h_source.html#l00034">ScriptedInitialisationHandler.h:34</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="example_src"></a>
@@ -341,7 +341,7 @@ src/AutomSetpointRampation.cc</h2>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_setpoint_ramp_8h.html">SetpointRamp.h</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> SetpointRamp::mainLoop() {</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> maxStep = 0.1F;</div>
@@ -352,7 +352,7 @@ src/AutomSetpointRampation.cc</h2>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_module_html_a20b7d1b8fdd6fb84dcfea23e36a27b1a"><div class="ttname"><a href="class_chimera_t_k_1_1_module.html#a20b7d1b8fdd6fb84dcfea23e36a27b1a">ChimeraTK::Module::readAll</a></div><div class="ttdeci">void readAll(bool includeReturnChannels=false)</div><div class="ttdoc">Read all readable variables in the group.</div><div class="ttdef"><b>Definition</b> <a href="_module_8cc_source.html#l00072">Module.cc:72</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_module_html_ac91e2a2ce01c0616d57050b229cde5bb"><div class="ttname"><a href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb">ChimeraTK::Module::writeAll</a></div><div class="ttdeci">void writeAll(bool includeReturnChannels=false)</div><div class="ttdoc">Just call write() on all writable variables in the group.</div><div class="ttdef"><b>Definition</b> <a href="_module_8cc_source.html#l00157">Module.cc:157</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="example_src_AverageCurrent_cc"></a>
@@ -371,7 +371,7 @@ src/AverageCurrent.cc</h2>
 <div class="line"><span class="comment"> * the documentation pages.</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> AverageCurrent::mainLoop() {</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> coeff = 0.1;</div>
@@ -387,7 +387,7 @@ src/AverageCurrent.cc</h2>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_scalar_accessor_html_a5eeff99021076ad757f3014219964d18"><div class="ttname"><a href="class_chimera_t_k_1_1_scalar_accessor.html#a5eeff99021076ad757f3014219964d18">ChimeraTK::ScalarAccessor::writeIfDifferent</a></div><div class="ttdeci">void writeIfDifferent(UserType newValue, VersionNumber versionNumber, DataValidity validity)=delete</div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_scalar_accessor_html_aa4a256db36e0927b6ac89138e921fc02"><div class="ttname"><a href="class_chimera_t_k_1_1_scalar_accessor.html#aa4a256db36e0927b6ac89138e921fc02">ChimeraTK::ScalarAccessor::setAndWrite</a></div><div class="ttdeci">void setAndWrite(UserType newValue, VersionNumber versionNumber)=delete</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="example_src_Controller_cc"></a>
@@ -406,7 +406,7 @@ src/AutomatiControlleron.cc</h2>
 <div class="line"><span class="comment"> * the documentation pages.</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> Controller::mainLoop() {</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">float</span> gain = 100.0F;</div>
@@ -418,7 +418,7 @@ src/AutomatiControlleron.cc</h2>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="example_src_ExampleApp_cc"></a>
 src/ExampleApp.cc</h2>
 <div class="fragment"><div class="line"><span class="comment">// SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span></div>
@@ -435,15 +435,15 @@ src/ExampleApp.cc</h2>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_example_app_8h.html">ExampleApp.h</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="class_example_app.html#a496387672eeb08223ce159afc3ef7443">ExampleApp::~ExampleApp</a>() {</div>
 <div class="line">  <a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_example_app_8h_html"><div class="ttname"><a href="_example_app_8h.html">ExampleApp.h</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00207">Application.cc:207</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00209">Application.cc:209</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="example_src_factory"></a>
 src_factory</h1>
 <h2><a class="anchor" id=""></a>
@@ -464,11 +464,11 @@ src_factory</h1>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;ChimeraTK/ApplicationCore/EnableXMLGenerator.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> ctk::ApplicationFactory&lt;ExampleApp&gt; appFactory(<span class="stringliteral">&quot;demo_example&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*********************************************************************************************************************/</span></div>
+<div class="line"><span class="comment">/**********************************************************************************************************************/</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="example_config"></a>
 config</h1>
 <h2><a class="anchor" id=""></a>

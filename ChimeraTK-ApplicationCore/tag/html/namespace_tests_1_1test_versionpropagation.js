@@ -5,6 +5,7 @@ var namespace_tests_1_1test_versionpropagation =
     [ "ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", "struct_tests_1_1test_versionpropagation_1_1_the_push_module" ],
     [ "TheTestApplication", "struct_tests_1_1test_versionpropagation_1_1_the_test_application.html", "struct_tests_1_1test_versionpropagation_1_1_the_test_application" ],
     [ "Fixture", "namespace_tests_1_1test_versionpropagation.html#a6ab63a4f98fd089af5cf625290160a51", null ],
+    [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_versionpropagation.html#a63bc2a1cfd2ceed3ecee6582c06daae4", null ],
     [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_versionpropagation.html#a94eb8e1c7eb3ca201f2f0b626d1ca0e7", null ],
     [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_versionpropagation.html#ab0b765f8182eaa129eef81b0ab532b23", null ],
     [ "BOOST_AUTO_TEST_CASE", "namespace_tests_1_1test_versionpropagation.html#a5c249c8a401bbf222cd5baac415e1b7e", null ],

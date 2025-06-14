@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['handling_0',['Exception Handling',['../exception_handling.html',1,'index']]],
-  ['handling_20for_20device_20runtime_20errors_20v1_200_1',['Technical specification: Exception handling for device runtime errors V1.0',['../spec_execption_handling.html',1,'index']]],
-  ['how_20to_20write_20application_20modules_20in_20python_2',['Example how to write application modules in Python',['../example_python_modules.html',1,'']]]
+  ['guide_0',['ApplicationCore 2.x -&gt; 3.0 migration guide',['../migration_guide_v2_to_v3.html',1,'index']]]
 ];

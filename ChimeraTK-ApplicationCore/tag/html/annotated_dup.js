@@ -50,12 +50,13 @@ var annotated_dup =
       [ "ArrayOutput", "struct_chimera_t_k_1_1_array_output.html", "struct_chimera_t_k_1_1_array_output" ],
       [ "ArrayOutputPushRB", "struct_chimera_t_k_1_1_array_output_push_r_b.html", "struct_chimera_t_k_1_1_array_output_push_r_b" ],
       [ "ArrayOutputRB", "struct_chimera_t_k_1_1_array_output_r_b.html", "struct_chimera_t_k_1_1_array_output_r_b" ],
+      [ "ArrayOutputReverseRecovery", "struct_chimera_t_k_1_1_array_output_reverse_recovery.html", "struct_chimera_t_k_1_1_array_output_reverse_recovery" ],
       [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ],
       [ "ArrayPollInput", "struct_chimera_t_k_1_1_array_poll_input.html", "struct_chimera_t_k_1_1_array_poll_input" ],
       [ "ArrayPushInput", "struct_chimera_t_k_1_1_array_push_input.html", "struct_chimera_t_k_1_1_array_push_input" ],
       [ "ArrayPushInputWB", "struct_chimera_t_k_1_1_array_push_input_w_b.html", "struct_chimera_t_k_1_1_array_push_input_w_b" ],
       [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
-      [ "ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", "struct_chimera_t_k_1_1_config_reader" ],
+      [ "ConfigReader", "class_chimera_t_k_1_1_config_reader.html", "class_chimera_t_k_1_1_config_reader" ],
       [ "ConnectionMaker", "class_chimera_t_k_1_1_connection_maker.html", "class_chimera_t_k_1_1_connection_maker" ],
       [ "ConstantAccessor", "class_chimera_t_k_1_1_constant_accessor.html", "class_chimera_t_k_1_1_constant_accessor" ],
       [ "ConstMultiplier", "struct_chimera_t_k_1_1_const_multiplier.html", "struct_chimera_t_k_1_1_const_multiplier" ],
@@ -115,9 +116,11 @@ var annotated_dup =
       [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
       [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ],
       [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ],
+      [ "ReverseRecoveryDecorator", "class_chimera_t_k_1_1_reverse_recovery_decorator.html", "class_chimera_t_k_1_1_reverse_recovery_decorator" ],
       [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html", "class_chimera_t_k_1_1_scalar_accessor" ],
       [ "ScalarOutput", "struct_chimera_t_k_1_1_scalar_output.html", "struct_chimera_t_k_1_1_scalar_output" ],
       [ "ScalarOutputPushRB", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", "struct_chimera_t_k_1_1_scalar_output_push_r_b" ],
+      [ "ScalarOutputReverseRecovery", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery" ],
       [ "ScalarPipe", "struct_chimera_t_k_1_1_scalar_pipe.html", "struct_chimera_t_k_1_1_scalar_pipe" ],
       [ "ScalarPollInput", "struct_chimera_t_k_1_1_scalar_poll_input.html", "struct_chimera_t_k_1_1_scalar_poll_input" ],
       [ "ScalarPushInput", "struct_chimera_t_k_1_1_scalar_push_input.html", "struct_chimera_t_k_1_1_scalar_push_input" ],
@@ -244,6 +247,10 @@ var annotated_dup =
       [ "testControlSystemAccessors", "namespace_tests_1_1test_control_system_accessors.html", [
         [ "TestApplication", "struct_tests_1_1test_control_system_accessors_1_1_test_application.html", "struct_tests_1_1test_control_system_accessors_1_1_test_application" ],
         [ "TestModule", "struct_tests_1_1test_control_system_accessors_1_1_test_module.html", "struct_tests_1_1test_control_system_accessors_1_1_test_module" ]
+      ] ],
+      [ "testDataConsistencyAC", "namespace_tests_1_1test_data_consistency_a_c.html", [
+        [ "ModuleA", "struct_tests_1_1test_data_consistency_a_c_1_1_module_a.html", "struct_tests_1_1test_data_consistency_a_c_1_1_module_a" ],
+        [ "TestFixture", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture.html", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture" ]
       ] ],
       [ "testDataValidityPropagation", "namespace_tests_1_1test_data_validity_propagation.html", [
         [ "TestApplication1", "struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html", "struct_tests_1_1test_data_validity_propagation_1_1_test_application1" ],
@@ -422,6 +429,7 @@ var annotated_dup =
         [ "TestApp4", "struct_tests_1_1test_trigger_1_1_test_app4.html", "struct_tests_1_1test_trigger_1_1_test_app4" ],
         [ "TestApp5", "struct_tests_1_1test_trigger_1_1_test_app5.html", "struct_tests_1_1test_trigger_1_1_test_app5" ],
         [ "TestApplication", "struct_tests_1_1test_trigger_1_1_test_application.html", "struct_tests_1_1test_trigger_1_1_test_application" ],
+        [ "TestApplication2", "struct_tests_1_1test_trigger_1_1_test_application2.html", "struct_tests_1_1test_trigger_1_1_test_application2" ],
         [ "TestModule", "struct_tests_1_1test_trigger_1_1_test_module.html", "struct_tests_1_1test_trigger_1_1_test_module" ],
         [ "TestTransferGroupDummy", "class_tests_1_1test_trigger_1_1_test_transfer_group_dummy.html", "class_tests_1_1test_trigger_1_1_test_transfer_group_dummy" ]
       ] ],
@@ -453,10 +461,17 @@ var annotated_dup =
     [ "ArrayVariableGroupTestApp", "struct_array_variable_group_test_app.html", "struct_array_variable_group_test_app" ],
     [ "ArrayVariableGroupTestAppForMove", "struct_array_variable_group_test_app_for_move.html", "struct_array_variable_group_test_app_for_move" ],
     [ "AverageCurrent", "class_average_current.html", null ],
+    [ "BasicTestApp", "struct_basic_test_app.html", "struct_basic_test_app" ],
+    [ "BlockInitTestApp", "struct_block_init_test_app.html", "struct_block_init_test_app" ],
     [ "Controller", "class_controller.html", null ],
+    [ "DeviceModuleWithPath", "struct_device_module_with_path.html", "struct_device_module_with_path" ],
     [ "DummyApplication", "struct_dummy_application.html", "struct_dummy_application" ],
     [ "ExampleApp", "class_example_app.html", "class_example_app" ],
+    [ "Fixture", "struct_fixture.html", "struct_fixture" ],
     [ "FixtureWithPollAndPushInput", "struct_fixture_with_poll_and_push_input.html", "struct_fixture_with_poll_and_push_input" ],
+    [ "IncompleteRecoveryTestApp", "struct_incomplete_recovery_test_app.html", "struct_incomplete_recovery_test_app" ],
+    [ "InitFailureApp", "struct_init_failure_app.html", "struct_init_failure_app" ],
+    [ "OpenCountingLmapBackend", "struct_open_counting_lmap_backend.html", "struct_open_counting_lmap_backend" ],
     [ "OutputModule", "struct_output_module.html", "struct_output_module" ],
     [ "PollModule", "struct_poll_module.html", "struct_poll_module" ],
     [ "PushModule", "struct_push_module.html", "struct_push_module" ],
@@ -469,5 +484,8 @@ var annotated_dup =
     [ "ScalarVariableGroupTestApp", "struct_scalar_variable_group_test_app.html", "struct_scalar_variable_group_test_app" ],
     [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", "struct_scalar_variable_group_test_app_for_move" ],
     [ "SetpointRamp", "class_setpoint_ramp.html", null ],
-    [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ]
+    [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ],
+    [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
+    [ "WriteBlockingDummy", "struct_write_blocking_dummy.html", "struct_write_blocking_dummy" ],
+    [ "WriteRecoveryTestApp", "struct_write_recovery_test_app.html", "struct_write_recovery_test_app" ]
 ];

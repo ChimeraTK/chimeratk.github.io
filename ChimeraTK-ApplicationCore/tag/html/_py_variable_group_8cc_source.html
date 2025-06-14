@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.00</span>
    </div>
   </td>
  </tr>
@@ -104,89 +104,90 @@ $(document).ready(function(){initNavTree('_py_variable_group_8cc_source.html',''
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_py_variable_group_8h.html">PyVariableGroup.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_py_read_any_group_8h.html">PyReadAnyGroup.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;pybind11/stl.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacepybind11.html">py</a> = <a class="code hl_namespace" href="namespacepybind11.html">pybind11</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">   15</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">PyVariableGroup::bind</a>(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    py::class_&lt;VariableGroup&gt;(m, <span class="stringliteral">&quot;VariableGroupBase&quot;</span>)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        .def(<span class="stringliteral">&quot;getName&quot;</span>, &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_entity_owner.html#a081a3af228567c88d8f01e923564ea34">VariableGroup::getName</a>, <span class="stringliteral">&quot;Get the name of the module instance.&quot;</span>)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        .def(</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="stringliteral">&quot;readAnyGroup&quot;</span>, [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self) { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_read_any_group.html">PyReadAnyGroup</a>(self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">readAnyGroup</a>()); },</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="stringliteral">&quot;Create a ChimeraTK::ReadAnyGroup for all readable variables in this Module.&quot;</span>)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        .def(</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="stringliteral">&quot;readAll&quot;</span>,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>              py::gil_scoped_release release;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a20b7d1b8fdd6fb84dcfea23e36a27b1a">readAll</a>(includeReturnChannels);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            },</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="stringliteral">&quot;Read all readable variables in the group.\n\nIf there are push-type variables in the group, this call &quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="stringliteral">&quot;will block until all of the variables have received an update. All push-type variables are read first, &quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="stringliteral">&quot;the poll-type variables are therefore updated with the latest values upon return. includeReturnChannels &quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="stringliteral">&quot;determines whether return channels of *OutputRB accessors are included in the read.&quot;</span>,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        .def(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="stringliteral">&quot;readAllLatest&quot;</span>,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>              py::gil_scoped_release release;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a077ccaefcae045d216f546318b2c3a49">readAllLatest</a>(includeReturnChannels);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            },</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="stringliteral">&quot;Just call readLatest() on all readable variables in the group.\n\nincludeReturnChannels determines &quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="stringliteral">&quot;whether return channels of *OutputRB accessors are included in the read.&quot;</span>,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        .def(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="stringliteral">&quot;readAllNonBlocking&quot;</span>,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>              py::gil_scoped_release release;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a3a15c3de08251f5622d12a83adb5cb24">readAllNonBlocking</a>(includeReturnChannels);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            },</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="stringliteral">&quot;Just call readNonBlocking() on all readable variables in the group.\n\nincludeReturnChannels determines &quot;</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="stringliteral">&quot;whether return channels of *OutputRB accessors are included in the read.&quot;</span>,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        .def(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="stringliteral">&quot;writeAll&quot;</span>,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>              py::gil_scoped_release release;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb">writeAll</a>(includeReturnChannels);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            },</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="stringliteral">&quot;Just call write() on all writable variables in the group.\n\nincludeReturnChannels determines whether &quot;</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="stringliteral">&quot;return channels of *InputWB accessors are included in the write.&quot;</span>,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        .def(</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="stringliteral">&quot;writeAllDestructively&quot;</span>,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>              py::gil_scoped_release release;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a52547cc6ff2510b82c8c8e281c01b02a">writeAllDestructively</a>(includeReturnChannels);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            },</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="stringliteral">&quot;Just call writeDestructively() on all writable variables in the group.\n\nincludeReturnChannels &quot;</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="stringliteral">&quot;determines whether return channels of *InputWB accessors are included in the write.&quot;</span>,</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// return_value_policy::reference is not enough in constructor factory function.</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// in order to turn off memory management by python, we also need to adapt custom holder type and remove deleter.</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    py::class_&lt;PyVariableGroup, VariableGroup, PyOwningObject, std::unique_ptr&lt;PyVariableGroup, py::nodelete&gt;&gt; vg(</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        m, <span class="stringliteral">&quot;VariableGroup&quot;</span>, py::dynamic_attr(), py::multiple_inheritance());</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    vg.def(py::init([](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; owner, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; description,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        <span class="keyword">const</span> std::unordered_set&lt;std::string&gt;&amp; tags) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_chimera_t_k_1_1_py_owning_object.html">PyOwningObject</a>&amp;<span class="keyword">&gt;</span>(owner).make_child&lt;PyVariableGroup&gt;(&amp;owner, name, description, tags);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }),</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        py::return_value_policy::reference,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">// doc and default args:</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="stringliteral">&quot;&quot;</span>, py::arg(<span class="stringliteral">&quot;owner&quot;</span>), py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;description&quot;</span>),</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        py::arg(<span class="stringliteral">&quot;tags&quot;</span>) = std::unordered_set&lt;std::string&gt;{});</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;pybind11/stl.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacepybind11.html">py</a> = <a class="code hl_namespace" href="namespacepybind11.html">pybind11</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">   16</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">PyVariableGroup::bind</a>(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    py::class_&lt;VariableGroup&gt;(m, <span class="stringliteral">&quot;VariableGroupBase&quot;</span>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        .def(<span class="stringliteral">&quot;getName&quot;</span>, &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_entity_owner.html#a081a3af228567c88d8f01e923564ea34">VariableGroup::getName</a>, <span class="stringliteral">&quot;Get the name of the module instance.&quot;</span>)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        .def(</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="stringliteral">&quot;readAnyGroup&quot;</span>, [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self) { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_read_any_group.html">PyReadAnyGroup</a>(self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">readAnyGroup</a>()); },</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="stringliteral">&quot;Create a ChimeraTK::ReadAnyGroup for all readable variables in this Module.&quot;</span>)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        .def(</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="stringliteral">&quot;readAll&quot;</span>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>              py::gil_scoped_release release;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a20b7d1b8fdd6fb84dcfea23e36a27b1a">readAll</a>(includeReturnChannels);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            },</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="stringliteral">&quot;Read all readable variables in the group.\n\nIf there are push-type variables in the group, this call &quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="stringliteral">&quot;will block until all of the variables have received an update. All push-type variables are read first, &quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="stringliteral">&quot;the poll-type variables are therefore updated with the latest values upon return. includeReturnChannels &quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="stringliteral">&quot;determines whether return channels of *OutputRB accessors are included in the read.&quot;</span>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        .def(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="stringliteral">&quot;readAllLatest&quot;</span>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>              py::gil_scoped_release release;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a077ccaefcae045d216f546318b2c3a49">readAllLatest</a>(includeReturnChannels);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            },</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="stringliteral">&quot;Just call readLatest() on all readable variables in the group.\n\nincludeReturnChannels determines &quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="stringliteral">&quot;whether return channels of *OutputRB accessors are included in the read.&quot;</span>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        .def(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="stringliteral">&quot;readAllNonBlocking&quot;</span>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>              py::gil_scoped_release release;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a3a15c3de08251f5622d12a83adb5cb24">readAllNonBlocking</a>(includeReturnChannels);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            },</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="stringliteral">&quot;Just call readNonBlocking() on all readable variables in the group.\n\nincludeReturnChannels determines &quot;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="stringliteral">&quot;whether return channels of *OutputRB accessors are included in the read.&quot;</span>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        .def(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="stringliteral">&quot;writeAll&quot;</span>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>              py::gil_scoped_release release;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb">writeAll</a>(includeReturnChannels);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            },</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="stringliteral">&quot;Just call write() on all writable variables in the group.\n\nincludeReturnChannels determines whether &quot;</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="stringliteral">&quot;return channels of *InputWB accessors are included in the write.&quot;</span>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        .def(</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="stringliteral">&quot;writeAllDestructively&quot;</span>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self, <span class="keywordtype">bool</span> includeReturnChannels) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>              py::gil_scoped_release release;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>              self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#a52547cc6ff2510b82c8c8e281c01b02a">writeAllDestructively</a>(includeReturnChannels);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            },</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="stringliteral">&quot;Just call writeDestructively() on all writable variables in the group.\n\nincludeReturnChannels &quot;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="stringliteral">&quot;determines whether return channels of *InputWB accessors are included in the write.&quot;</span>,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            py::arg(<span class="stringliteral">&quot;includeReturnChannels&quot;</span>) = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// return_value_policy::reference is not enough in constructor factory function.</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// in order to turn off memory management by python, we also need to adapt custom holder type and remove deleter.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    py::class_&lt;PyVariableGroup, VariableGroup, PyOwningObject, std::unique_ptr&lt;PyVariableGroup, py::nodelete&gt;&gt; vg(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        m, <span class="stringliteral">&quot;VariableGroup&quot;</span>, py::dynamic_attr(), py::multiple_inheritance());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    vg.def(py::init([](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; owner, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; description,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        <span class="keyword">const</span> std::unordered_set&lt;std::string&gt;&amp; tags) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_chimera_t_k_1_1_py_owning_object.html">PyOwningObject</a>&amp;<span class="keyword">&gt;</span>(owner).make_child&lt;PyVariableGroup&gt;(&amp;owner, name, description, tags);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }),</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        py::return_value_policy::reference,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="comment">// doc and default args:</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="stringliteral">&quot;&quot;</span>, py::arg(<span class="stringliteral">&quot;owner&quot;</span>), py::arg(<span class="stringliteral">&quot;name&quot;</span>), py::arg(<span class="stringliteral">&quot;description&quot;</span>),</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        py::arg(<span class="stringliteral">&quot;tags&quot;</span>) = std::unordered_set&lt;std::string&gt;{});</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  }</div>
 </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_py_read_any_group_8h_html"><div class="ttname"><a href="_py_read_any_group_8h.html">PyReadAnyGroup.h</a></div></div>
 <div class="ttc" id="a_py_variable_group_8h_html"><div class="ttname"><a href="_py_variable_group_8h.html">PyVariableGroup.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_entity_owner_html_a081a3af228567c88d8f01e923564ea34"><div class="ttname"><a href="class_chimera_t_k_1_1_entity_owner.html#a081a3af228567c88d8f01e923564ea34">ChimeraTK::EntityOwner::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdoc">Get the name of the module instance.</div><div class="ttdef"><b>Definition</b> <a href="_entity_owner_8h_source.html#l00059">EntityOwner.h:59</a></div></div>
@@ -198,7 +199,7 @@ $(document).ready(function(){initNavTree('_py_variable_group_8cc_source.html',''
 <div class="ttc" id="aclass_chimera_t_k_1_1_module_html_ac91e2a2ce01c0616d57050b229cde5bb"><div class="ttname"><a href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb">ChimeraTK::Module::writeAll</a></div><div class="ttdeci">void writeAll(bool includeReturnChannels=false)</div><div class="ttdoc">Just call write() on all writable variables in the group.</div><div class="ttdef"><b>Definition</b> <a href="_module_8cc_source.html#l00157">Module.cc:157</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_py_owning_object_html"><div class="ttname"><a href="class_chimera_t_k_1_1_py_owning_object.html">ChimeraTK::PyOwningObject</a></div><div class="ttdoc">Base class used for all objects in the Python world which can own other objects and can be owned them...</div><div class="ttdef"><b>Definition</b> <a href="_py_ownership_management_8h_source.html#l00022">PyOwnershipManagement.h:22</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_py_read_any_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_py_read_any_group.html">ChimeraTK::PyReadAnyGroup</a></div><div class="ttdef"><b>Definition</b> <a href="_py_read_any_group_8h_source.html#l00018">PyReadAnyGroup.h:18</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_py_variable_group_html_a0c2d43aa4516daa916f0e55368cf40d1"><div class="ttname"><a href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">ChimeraTK::PyVariableGroup::bind</a></div><div class="ttdeci">static void bind(py::module &amp;m)</div><div class="ttdef"><b>Definition</b> <a href="_py_variable_group_8cc_source.html#l00015">PyVariableGroup.cc:15</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_py_variable_group_html_a0c2d43aa4516daa916f0e55368cf40d1"><div class="ttname"><a href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">ChimeraTK::PyVariableGroup::bind</a></div><div class="ttdeci">static void bind(py::module &amp;m)</div><div class="ttdef"><b>Definition</b> <a href="_py_variable_group_8cc_source.html#l00016">PyVariableGroup.cc:16</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_variable_group_html"><div class="ttname"><a href="class_chimera_t_k_1_1_variable_group.html">ChimeraTK::VariableGroup</a></div><div class="ttdef"><b>Definition</b> <a href="_variable_group_8h_source.html#l00022">VariableGroup.h:22</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 <div class="ttc" id="anamespacepybind11_html"><div class="ttname"><a href="namespacepybind11.html">pybind11</a></div><div class="ttdef"><b>Definition</b> <a href="_py_module_group_8h_source.html#l00010">PyModuleGroup.h:10</a></div></div>

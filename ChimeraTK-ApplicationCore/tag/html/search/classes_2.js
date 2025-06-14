@@ -9,7 +9,7 @@ var searchData=
   ['circularconnectionmodulewithintermediategroup_6',['CircularConnectionModuleWithIntermediateGroup',['../struct_tests_1_1test_illegal_networks_1_1_circular_connection_module_with_intermediate_group.html',1,'Tests::testIllegalNetworks']]],
   ['combinedsearchconfig_7',['CombinedSearchConfig',['../struct_chimera_t_k_1_1_model_1_1_combined_search_config.html',1,'ChimeraTK::Model']]],
   ['configparser_8',['ConfigParser',['../class_chimera_t_k_1_1_config_parser.html',1,'ChimeraTK']]],
-  ['configreader_9',['ConfigReader',['../struct_chimera_t_k_1_1_config_reader.html',1,'ChimeraTK']]],
+  ['configreader_9',['ConfigReader',['../class_chimera_t_k_1_1_config_reader.html',1,'ChimeraTK']]],
   ['connectionmaker_10',['ConnectionMaker',['../class_chimera_t_k_1_1_connection_maker.html',1,'ChimeraTK']]],
   ['constantaccessor_11',['ConstantAccessor',['../class_chimera_t_k_1_1_constant_accessor.html',1,'ChimeraTK']]],
   ['constantd10dummyapplication_12',['ConstantD10DummyApplication',['../struct_tests_1_1test_initial_values_1_1_constant_d10_dummy_application.html',1,'Tests::testInitialValues']]],

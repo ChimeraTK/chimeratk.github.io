@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lifecyclestate_0',['LifeCycleState',['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72d',1,'ChimeraTK']]]
+  ['direction_0',['Direction',['../struct_chimera_t_k_1_1_recovery_helper.html#a9f38a85b22ba9edf6f95af8fd216de01',1,'ChimeraTK::RecoveryHelper']]]
 ];

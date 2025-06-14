@@ -16,7 +16,7 @@ var test_test_facilities_8cc =
     [ "Tests::testTestFacilities::TestDeviceApplication", "struct_tests_1_1test_test_facilities_1_1_test_device_application.html", "struct_tests_1_1test_test_facilities_1_1_test_device_application" ],
     [ "Tests::testTestFacilities::TestInitialApplication", "struct_tests_1_1test_test_facilities_1_1_test_initial_application.html", "struct_tests_1_1test_test_facilities_1_1_test_initial_application" ],
     [ "BOOST_TEST_MODULE", "test_test_facilities_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "CHECK_TIMEOUT", "test_test_facilities_8cc.html#a17030ac7f00713a62e05ab6c35cb710e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#ac6f7138e1b969346f88373d1aa5b9b7b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#ae00fde76d2e11629a6a12867be0dfbb6", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a729e09b931485ef82c3b6078a7416ef3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a88bc6fba005cb0b8c5c4fe8d7c048bf3", null ],

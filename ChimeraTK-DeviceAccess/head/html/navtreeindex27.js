@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"struct_mer_inactive_test_fixture.html":[20,0,103],
+"struct_mer_inactive_test_fixture.html#a8585697e069d644f3771ede0316bf183":[20,0,103,0],
 "struct_mer_writable_test_fixture.html":[20,0,104],
 "struct_mer_writable_test_fixture.html#abdfa84bf984d516c90ec7ad16c580afa":[20,0,104,0],
 "struct_mie_active_test_fixture.html":[20,0,105],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "struct_reg_full_area_scaled.html#a2011ca68f62b1d04facdc6e1999a9df1":[20,0,157,7],
 "struct_reg_full_area_scaled.html#a303d71c20f6accc07676e02df216b9f9":[20,0,157,1],
 "struct_reg_full_area_scaled.html#a89083583f93e80d3c89138582894ad55":[20,0,157,8],
-"struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762":[20,0,157,5],
-"struct_reg_full_area_scaled.html#ad83da311f374a93c94ff42a28c7b75a2":[20,0,157,6],
-"struct_reg_full_area_scaled.html#af68910dde0d9398d343ae911bbfd9e8d":[20,0,157,4]
+"struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762":[20,0,157,5]
 };

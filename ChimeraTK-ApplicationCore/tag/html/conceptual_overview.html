@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.00</span>
    </div>
   </td>
  </tr>
@@ -143,9 +143,9 @@ Application module</h1>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_module_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></div><div class="ttdef"><b>Definition</b> <a href="_application_module_8h_source.html#l00024">ApplicationModule.h:24</a></div></div>
 <div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdoc">[Snippet: Class Definition]</div><div class="ttdef"><b>Definition</b> <a href="_controller_8h_source.html#l00019">Controller.h:19</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_output_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_output.html">ChimeraTK::ScalarOutput</a></div><div class="ttdoc">Convenience class for output scalar accessors (always UpdateMode::push)</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00092">ScalarAccessor.h:92</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_poll_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_poll_input.html">ChimeraTK::ScalarPollInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::poll.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00080">ScalarAccessor.h:80</a></div></div>
-<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_push_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_push_input.html">ChimeraTK::ScalarPushInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::push.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00069">ScalarAccessor.h:69</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_output_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_output.html">ChimeraTK::ScalarOutput</a></div><div class="ttdoc">Convenience class for output scalar accessors (always UpdateMode::push)</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00093">ScalarAccessor.h:93</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_poll_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_poll_input.html">ChimeraTK::ScalarPollInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::poll.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00081">ScalarAccessor.h:81</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_push_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_push_input.html">ChimeraTK::ScalarPushInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::push.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00070">ScalarAccessor.h:70</a></div></div>
 </div><!-- fragment --><p>In this small example, two input and one output process variable is defined. For each variable, the name, engineering unit and a short description needs to be provided. One of the two inputs is push-type, which means it can be used to trigger the computations when the variable changes. The other input is poll-type so just the curent value can be obtained. This will be explained in more details in <a class="el" href="conceptual_overview.html#conceptualOverview_ProcessVariable">the next section</a>.</p>
 <p>The code processing the data needs to go into the implementation of the ApplicationModule::mainLoop() function implementation. In our small example, we implement a simple, fixed-gain proportional controller like this: </p><div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> Controller::mainLoop() {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> gain = 100.0F;</div>
@@ -191,7 +191,7 @@ The Application</h1>
 <div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><a class="code hl_function" href="class_example_app.html#a496387672eeb08223ce159afc3ef7443">ExampleApp::~ExampleApp</a>() {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00207">Application.cc:207</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00209">Application.cc:209</a></div></div>
 </div><!-- fragment --><p>In this first example, only the <a class="el" href="class_controller.html" title="[Snippet: Class Definition]">Controller</a> ApplicationModule from above is instantiated in the application. This alone would be quite useless, since the module would not be connected to any device.</p>
 <p>All variables from the <a class="el" href="class_controller.html" title="[Snippet: Class Definition]">Controller</a> module will be published to the control system. The names of the variables are hierarchical using the slash as a hierarchy separator, similar to a Unix file system, with the modules being the equivalent of directories. This example would hence publish the following variables:</p>
 <ul>
@@ -292,7 +292,7 @@ Periodic Triggers</h1>
 <h1><a class="anchor" id="conceptualOverview_ConfigReader"></a>
 Configuration constants</h1>
 <ul>
-<li><a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ChimeraTK::ConfigReader</a> is another generic ApplicationModule</li>
+<li><a class="el" href="class_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ChimeraTK::ConfigReader</a> is another generic ApplicationModule</li>
 <li>provides variables defined in XML config file with contant values</li>
 <li>example: instantiation and config file (providing /Timer/period)</li>
 </ul>

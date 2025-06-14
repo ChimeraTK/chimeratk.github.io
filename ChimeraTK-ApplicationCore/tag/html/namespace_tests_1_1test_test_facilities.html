@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.00</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab45201de4b886097f6230070b765adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87551d7e6711ee863473744ca072712e" id="r_a87551d7e6711ee863473744ca072712e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_test_facilities.html#a87551d7e6711ee863473744ca072712e">BOOST_AUTO_TEST_CASE</a> (testInitialValues)</td></tr>
 <tr class="separator:a87551d7e6711ee863473744ca072712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f7138e1b969346f88373d1aa5b9b7b" id="r_ac6f7138e1b969346f88373d1aa5b9b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_test_facilities.html#ac6f7138e1b969346f88373d1aa5b9b7b">BOOST_AUTO_TEST_CASE</a> (TestableModeLockShared)</td></tr>
+<tr class="memdesc:ac6f7138e1b969346f88373d1aa5b9b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that the testable mode lock is a shared lock and only the test thread acquires it in exclusive mode.  <br /></td></tr>
+<tr class="separator:ac6f7138e1b969346f88373d1aa5b9b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -158,8 +161,32 @@ Variables</h2></td></tr>
 <tr class="separator:aa8d48086bc612d4905b12252c487ac84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac6f7138e1b969346f88373d1aa5b9b7b" name="ac6f7138e1b969346f88373d1aa5b9b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f7138e1b969346f88373d1aa5b9b7b">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tests::testTestFacilities::BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestableModeLockShared&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test that the testable mode lock is a shared lock and only the test thread acquires it in exclusive mode. </p>
+<p>This test makes sure that a DeviceManager can execute an init handler as part of the recovery procedure (which takes place while holding the testable mode lock) in parallel with an ApplicationModule thread doing something.</p>
+<p>The test was written to reproduce roughly a specific regression discovered after the introduction of recovery groups: A write() opreation issued from an ApplicationModule going to a Device in error state can dead lock with the device recovery in DeviceManager::RecoveryGroup::waitForRecoveryStage(), because the device recovery thread (holding the recovery lock) gives up the testable mode lock temporarily while arriving at the recovery stage barrier, but the ExceptionHandlingDecorator obtains the recovery lock while keeping the testable mode lock. This problem occured because the testable mode lock was at that time not yet a shared lock, which was then changed to fix the issue. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00992">992</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+
+</div>
+</div>
 <a id="ae00fde76d2e11629a6a12867be0dfbb6" name="ae00fde76d2e11629a6a12867be0dfbb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae00fde76d2e11629a6a12867be0dfbb6">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00fde76d2e11629a6a12867be0dfbb6">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,12 +201,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00249">249</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00240">240</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="a729e09b931485ef82c3b6078a7416ef3" name="a729e09b931485ef82c3b6078a7416ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a729e09b931485ef82c3b6078a7416ef3">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a729e09b931485ef82c3b6078a7416ef3">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,12 +221,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00431">431</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00422">422</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="a88bc6fba005cb0b8c5c4fe8d7c048bf3" name="a88bc6fba005cb0b8c5c4fe8d7c048bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88bc6fba005cb0b8c5c4fe8d7c048bf3">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bc6fba005cb0b8c5c4fe8d7c048bf3">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,12 +241,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00610">610</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00601">601</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="ab45201de4b886097f6230070b765adb9" name="ab45201de4b886097f6230070b765adb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab45201de4b886097f6230070b765adb9">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45201de4b886097f6230070b765adb9">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,19 +261,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00897">897</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_tests_1_1test_test_facilities_ab45201de4b886097f6230070b765adb9_cgraph.svg" width="432" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00888">888</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="a87551d7e6711ee863473744ca072712e" name="a87551d7e6711ee863473744ca072712e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87551d7e6711ee863473744ca072712e">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87551d7e6711ee863473744ca072712e">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,12 +281,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00952">952</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00943">943</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="a9ad27cdaf82e0865f8fd851030d9af13" name="a9ad27cdaf82e0865f8fd851030d9af13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ad27cdaf82e0865f8fd851030d9af13">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad27cdaf82e0865f8fd851030d9af13">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,19 +301,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00215">215</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_tests_1_1test_test_facilities_a9ad27cdaf82e0865f8fd851030d9af13_cgraph.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00206">206</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="a2eec5e9147c99276ab484793745c4b60" name="a2eec5e9147c99276ab484793745c4b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eec5e9147c99276ab484793745c4b60">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eec5e9147c99276ab484793745c4b60">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,12 +321,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00648">648</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00639">639</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="a55d8372fcaa66b1555980a1646547ad2" name="a55d8372fcaa66b1555980a1646547ad2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d8372fcaa66b1555980a1646547ad2">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d8372fcaa66b1555980a1646547ad2">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,19 +341,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00740">740</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_tests_1_1test_test_facilities_a55d8372fcaa66b1555980a1646547ad2_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00731">731</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="ad71ef7497125ae0928eff307608ac2ed" name="ad71ef7497125ae0928eff307608ac2ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad71ef7497125ae0928eff307608ac2ed">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71ef7497125ae0928eff307608ac2ed">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,12 +361,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00286">286</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00277">277</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
 <a id="af91a25da58f637039acfda9ef0849b71" name="af91a25da58f637039acfda9ef0849b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af91a25da58f637039acfda9ef0849b71">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af91a25da58f637039acfda9ef0849b71">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[11/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +381,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00528">528</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00519">519</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
@@ -400,7 +406,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00040">40</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00031">31</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>

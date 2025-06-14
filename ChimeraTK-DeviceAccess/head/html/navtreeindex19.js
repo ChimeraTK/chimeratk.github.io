@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html":[19,0,1,20],
+"class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html":[20,0,1,16],
 "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html#a05d5d832df2694278a5f9290ed3ebbe1":[19,0,1,20,1],
 "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html#a05d5d832df2694278a5f9290ed3ebbe1":[20,0,1,16,1],
 "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html#a138914f0d505bf6669b8faef5e5e2d26":[20,0,1,16,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "class_version_number_test.html#a416798cde3b04a0ff48df1b23638d9f5":[20,0,223,15],
 "class_version_number_test.html#a573b8eea9bc447ccc253214d7626e5e9":[20,0,223,3],
 "class_version_number_test.html#a611d3f8cd9f5b6e46f674945cab8e140":[20,0,223,16],
-"class_version_number_test.html#a6853efb6ff40c7070e88b190540933e5":[20,0,223,8],
-"class_version_number_test.html#a7c581d482c0898bdf9c680c04bc146f1":[20,0,223,12],
-"class_version_number_test.html#a7f6ab81333bf50a77b862e8c3912e098":[20,0,223,2]
+"class_version_number_test.html#a6853efb6ff40c7070e88b190540933e5":[20,0,223,8]
 };

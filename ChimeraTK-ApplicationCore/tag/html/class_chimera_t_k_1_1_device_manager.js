@@ -1,5 +1,6 @@
 var class_chimera_t_k_1_1_device_manager =
 [
+    [ "RecoveryGroup", "struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html", "struct_chimera_t_k_1_1_device_manager_1_1_recovery_group" ],
     [ "DeviceManager", "class_chimera_t_k_1_1_device_manager.html#acb102acc08a6a944ef69f9569045247c", null ],
     [ "DeviceManager", "class_chimera_t_k_1_1_device_manager.html#a8cdcd7f8692e2ae3f7a9e136ea8c36ef", null ],
     [ "addInitialisationHandler", "class_chimera_t_k_1_1_device_manager.html#a6fcf8870b3cc24857d97480f29dfa249", null ],
@@ -15,9 +16,11 @@ var class_chimera_t_k_1_1_device_manager =
     [ "getRecoverySharedLock", "class_chimera_t_k_1_1_device_manager.html#a8b474290aa339656f267eb1f0de43f98", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_device_manager.html#ae052ea3be4da9c34ff15d229af2ebeed", null ],
     [ "mainLoop", "class_chimera_t_k_1_1_device_manager.html#adf65353ead72b9f02ad25822aa9c3883", null ],
+    [ "mainLoopImpl", "class_chimera_t_k_1_1_device_manager.html#ac0c4a3cedeb0aa93ea7a9e0ad2065eb8", null ],
     [ "operator=", "class_chimera_t_k_1_1_device_manager.html#accaa39846e1574aaa6f5feb35e7bea69", null ],
     [ "prepare", "class_chimera_t_k_1_1_device_manager.html#ad380aa2db690a30bbf458ce486f4bc55", null ],
-    [ "reportException", "class_chimera_t_k_1_1_device_manager.html#ad6a2d94d29996fa7f9e71f4694ca0e56", null ],
+    [ "reportException", "class_chimera_t_k_1_1_device_manager.html#ab2897f652fa2e142561147b4a2696ccc", null ],
+    [ "stageToString", "class_chimera_t_k_1_1_device_manager.html#afd7a1a1558d88c202e762773f3a55134", null ],
     [ "terminate", "class_chimera_t_k_1_1_device_manager.html#a686b82ab1d808e10bbb93f15b88e7558", null ],
     [ "waitForInitialValues", "class_chimera_t_k_1_1_device_manager.html#a4451b05d9579bb593c8c560b088b5ff1", null ],
     [ "writeOrder", "class_chimera_t_k_1_1_device_manager.html#a047c4799d7d30c2576b5ba327678c7d7", null ],
@@ -35,6 +38,7 @@ var class_chimera_t_k_1_1_device_manager =
     [ "_isHoldingInitialValueLatch", "class_chimera_t_k_1_1_device_manager.html#a4594157acd21bb04d7a9e0861a73dbd3", null ],
     [ "_owner", "class_chimera_t_k_1_1_device_manager.html#a1c744dbf1b4d19d54301dc03bed17e10", null ],
     [ "_readRegisterPaths", "class_chimera_t_k_1_1_device_manager.html#a36928e7fdaa5402ed80a17e209cfb9bd", null ],
+    [ "_recoveryGroup", "class_chimera_t_k_1_1_device_manager.html#ab603b5b000f366910378a18e12c55993", null ],
     [ "_recoveryHelpers", "class_chimera_t_k_1_1_device_manager.html#af283a0b667c54bc26d485b4961e7b745", null ],
     [ "_recoveryMutex", "class_chimera_t_k_1_1_device_manager.html#ad4af08ac6ed57aa139d388143bfabf70", null ],
     [ "_synchronousTransferCounter", "class_chimera_t_k_1_1_device_manager.html#a04c9d966edbfb5a6bd449fa48b4e2c62", null ],

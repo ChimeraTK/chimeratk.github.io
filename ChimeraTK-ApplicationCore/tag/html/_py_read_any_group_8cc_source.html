@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.00</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('_py_read_any_group_8cc_source.html',''
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_read_any_group.html#a3240c390dd23172515e23b7b39129d41">   29</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_read_any_group.html#a3240c390dd23172515e23b7b39129d41">PyReadAnyGroup::add</a>(<a class="code hl_class" href="class_chimera_t_k_1_1_py_transfer_element_base.html">PyTransferElementBase</a>&amp; acc) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span> teAbstractor = acc.<a class="code hl_function" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a9db60d7b051895370b91c9e0136ca59d">getTE</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span> teAbstractor = acc.<a class="code hl_function" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a8e5f0e912f9e29dba64943d005574932">getTE</a>();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_chimera_t_k_1_1_py_read_any_group.html#ad83acf400df33271c1a3062c7a14887b">_impl</a>.add(teAbstractor);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  }</div>
 </div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('_py_read_any_group_8cc_source.html',''
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_read_any_group.html#a3120d5b765c4e9211bcae3efaafecb57">   36</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_read_any_group.html#a3120d5b765c4e9211bcae3efaafecb57">PyReadAnyGroup::readUntilAccessor</a>(<a class="code hl_class" href="class_chimera_t_k_1_1_py_transfer_element_base.html">PyTransferElementBase</a>&amp; acc) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">auto</span> te = acc.<a class="code hl_function" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a9db60d7b051895370b91c9e0136ca59d">getTE</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">auto</span> te = acc.<a class="code hl_function" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a8e5f0e912f9e29dba64943d005574932">getTE</a>();</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    py::gil_scoped_release release;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="class_chimera_t_k_1_1_py_read_any_group.html#ad83acf400df33271c1a3062c7a14887b">_impl</a>.readUntil(te);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('_py_read_any_group_8cc_source.html',''
 <div class="ttc" id="aclass_chimera_t_k_1_1_py_read_any_group_html_ac93e14566b11df9fd8180a7d40c3592e"><div class="ttname"><a href="class_chimera_t_k_1_1_py_read_any_group.html#ac93e14566b11df9fd8180a7d40c3592e">ChimeraTK::PyReadAnyGroup::bind</a></div><div class="ttdeci">static void bind(py::module &amp;mod)</div><div class="ttdef"><b>Definition</b> <a href="_py_read_any_group_8cc_source.html#l00067">PyReadAnyGroup.cc:67</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_py_read_any_group_html_ad83acf400df33271c1a3062c7a14887b"><div class="ttname"><a href="class_chimera_t_k_1_1_py_read_any_group.html#ad83acf400df33271c1a3062c7a14887b">ChimeraTK::PyReadAnyGroup::_impl</a></div><div class="ttdeci">ReadAnyGroup _impl</div><div class="ttdef"><b>Definition</b> <a href="_py_read_any_group_8h_source.html#l00045">PyReadAnyGroup.h:45</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_py_transfer_element_base_html"><div class="ttname"><a href="class_chimera_t_k_1_1_py_transfer_element_base.html">ChimeraTK::PyTransferElementBase</a></div><div class="ttdef"><b>Definition</b> <a href="_py_transfer_element_8h_source.html#l00016">PyTransferElement.h:16</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_py_transfer_element_base_html_a9db60d7b051895370b91c9e0136ca59d"><div class="ttname"><a href="class_chimera_t_k_1_1_py_transfer_element_base.html#a9db60d7b051895370b91c9e0136ca59d">ChimeraTK::PyTransferElementBase::getTE</a></div><div class="ttdeci">virtual TransferElementAbstractor getTE() const =0</div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_py_transfer_element_base_html_a8e5f0e912f9e29dba64943d005574932"><div class="ttname"><a href="class_chimera_t_k_1_1_py_transfer_element_base.html#a8e5f0e912f9e29dba64943d005574932">ChimeraTK::PyTransferElementBase::getTE</a></div><div class="ttdeci">virtual const TransferElementAbstractor &amp; getTE() const =0</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 <div class="ttc" id="anamespacepybind11_html"><div class="ttname"><a href="namespacepybind11.html">pybind11</a></div><div class="ttdef"><b>Definition</b> <a href="_py_module_group_8h_source.html#l00010">PyModuleGroup.h:10</a></div></div>
 <div class="ttc" id="anamespacepybind11_html_ad952f3f47afb586cdc0f250f70f0a565"><div class="ttname"><a href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">pybind11::module</a></div><div class="ttdeci">module_ module</div><div class="ttdef"><b>Definition</b> <a href="_py_module_group_8h_source.html#l00012">PyModuleGroup.h:12</a></div></div>

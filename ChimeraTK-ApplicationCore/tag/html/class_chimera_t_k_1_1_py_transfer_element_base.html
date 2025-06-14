@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.01.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.00</span>
    </div>
   </td>
  </tr>
@@ -119,8 +119,10 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_py_transfer_elem
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a693a90dde473819f99338c9daebb5358" id="r_a693a90dde473819f99338c9daebb5358"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a693a90dde473819f99338c9daebb5358">~PyTransferElementBase</a> ()=default</td></tr>
 <tr class="separator:a693a90dde473819f99338c9daebb5358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db60d7b051895370b91c9e0136ca59d" id="r_a9db60d7b051895370b91c9e0136ca59d"><td class="memItemLeft" align="right" valign="top">virtual TransferElementAbstractor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a9db60d7b051895370b91c9e0136ca59d">getTE</a> () const =0</td></tr>
-<tr class="separator:a9db60d7b051895370b91c9e0136ca59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5f0e912f9e29dba64943d005574932" id="r_a8e5f0e912f9e29dba64943d005574932"><td class="memItemLeft" align="right" valign="top">virtual const TransferElementAbstractor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_transfer_element_base.html#a8e5f0e912f9e29dba64943d005574932">getTE</a> () const =0</td></tr>
+<tr class="separator:a8e5f0e912f9e29dba64943d005574932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe467462b1f2759d7f8c15b4fa80704a" id="r_afe467462b1f2759d7f8c15b4fa80704a"><td class="memItemLeft" align="right" valign="top">virtual TransferElementAbstractor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_transfer_element_base.html#afe467462b1f2759d7f8c15b4fa80704a">getTE</a> ()=0</td></tr>
+<tr class="separator:afe467462b1f2759d7f8c15b4fa80704a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -189,18 +191,11 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_py_transfer_element_8cc_source.html#l00012">12</a> of file <a class="el" href="_py_transfer_element_8cc_source.html">PyTransferElement.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_py_transfer_element_base_a76e9585a967dbba3f80d38c008bd4e68_icgraph.svg" width="450" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
-<a id="a9db60d7b051895370b91c9e0136ca59d" name="a9db60d7b051895370b91c9e0136ca59d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9db60d7b051895370b91c9e0136ca59d">&#9670;&#160;</a></span>getTE()</h2>
+<a id="a8e5f0e912f9e29dba64943d005574932" name="a8e5f0e912f9e29dba64943d005574932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5f0e912f9e29dba64943d005574932">&#9670;&#160;</a></span>getTE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +204,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual TransferElementAbstractor ChimeraTK::PyTransferElementBase::getTE </td>
+          <td class="memname">virtual const TransferElementAbstractor &amp; ChimeraTK::PyTransferElementBase::getTE </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -222,14 +217,34 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#ab508382e59c489f104c6cb9364bf3d14">ChimeraTK::PyTransferElement&lt; DerivedAccessor &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#ab508382e59c489f104c6cb9364bf3d14">ChimeraTK::PyTransferElement&lt; PyArrayAccessor &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#ab508382e59c489f104c6cb9364bf3d14">ChimeraTK::PyTransferElement&lt; PyScalarAccessor &gt;</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#a785cfd3019647386b8a20adea677da30">ChimeraTK::PyTransferElement&lt; DerivedAccessor &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#a785cfd3019647386b8a20adea677da30">ChimeraTK::PyTransferElement&lt; PyArrayAccessor &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#a785cfd3019647386b8a20adea677da30">ChimeraTK::PyTransferElement&lt; PyScalarAccessor &gt;</a>.</p>
+
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_py_transfer_element_base_a9db60d7b051895370b91c9e0136ca59d_icgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+<a id="afe467462b1f2759d7f8c15b4fa80704a" name="afe467462b1f2759d7f8c15b4fa80704a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe467462b1f2759d7f8c15b4fa80704a">&#9670;&#160;</a></span>getTE() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TransferElementAbstractor &amp; ChimeraTK::PyTransferElementBase::getTE </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#af1b34b6fa9c1ff9ec147b1d3192a756a">ChimeraTK::PyTransferElement&lt; DerivedAccessor &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#af1b34b6fa9c1ff9ec147b1d3192a756a">ChimeraTK::PyTransferElement&lt; PyArrayAccessor &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_py_transfer_element.html#af1b34b6fa9c1ff9ec147b1d3192a756a">ChimeraTK::PyTransferElement&lt; PyScalarAccessor &gt;</a>.</p>
 
 </div>
 </div>
@@ -259,7 +274,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line">      <span class="stringliteral">&quot;__rsub__&quot;</span>, <span class="stringliteral">&quot;__rmul__&quot;</span>, <span class="stringliteral">&quot;__rmatmul__&quot;</span>, <span class="stringliteral">&quot;__rtruediv__&quot;</span>, <span class="stringliteral">&quot;__rfloordiv__&quot;</span>, <span class="stringliteral">&quot;__rmod__&quot;</span>, <span class="stringliteral">&quot;__rdivmod__&quot;</span>, <span class="stringliteral">&quot;__rpow__&quot;</span>,</div>
 <div class="line">      <span class="stringliteral">&quot;__rlshift__&quot;</span>, <span class="stringliteral">&quot;__rrshift__&quot;</span>, <span class="stringliteral">&quot;__rand__&quot;</span>, <span class="stringliteral">&quot;__rxor__&quot;</span>, <span class="stringliteral">&quot;__ror__&quot;</span>, <span class="stringliteral">&quot;__round__&quot;</span>}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_py_transfer_element_8h_source.html#l00024">24</a> of file <a class="el" href="_py_transfer_element_8h_source.html">PyTransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_transfer_element_8h_source.html#l00025">25</a> of file <a class="el" href="_py_transfer_element_8h_source.html">PyTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +301,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line">      <span class="stringliteral">&quot;__abs__&quot;</span>, <span class="stringliteral">&quot;__invert__&quot;</span>, <span class="stringliteral">&quot;__int__&quot;</span>, <span class="stringliteral">&quot;__float__&quot;</span>, <span class="stringliteral">&quot;__round__&quot;</span>, <span class="stringliteral">&quot;__trunc__&quot;</span>, <span class="stringliteral">&quot;__floor__&quot;</span>, <span class="stringliteral">&quot;__ceil__&quot;</span>, <span class="stringliteral">&quot;__str__&quot;</span>,</div>
 <div class="line">      <span class="stringliteral">&quot;__bool__&quot;</span>}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_py_transfer_element_8h_source.html#l00026">26</a> of file <a class="el" href="_py_transfer_element_8h_source.html">PyTransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_transfer_element_8h_source.html#l00027">27</a> of file <a class="el" href="_py_transfer_element_8h_source.html">PyTransferElement.h</a>.</p>
 
 </div>
 </div>
