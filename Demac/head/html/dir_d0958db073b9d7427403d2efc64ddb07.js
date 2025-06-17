@@ -10,6 +10,7 @@ var dir_d0958db073b9d7427403d2efc64ddb07 =
     [ "CsaStepperMotorTecRemote.h", "_csa_stepper_motor_tec_remote_8h.html", "_csa_stepper_motor_tec_remote_8h" ],
     [ "CsaStepperMotorUNIO.h", "_csa_stepper_motor_u_n_i_o_8h.html", "_csa_stepper_motor_u_n_i_o_8h" ],
     [ "CsaStepperMotorUnitConverter.h", "_csa_stepper_motor_unit_converter_8h.html", "_csa_stepper_motor_unit_converter_8h" ],
+    [ "GeneralStatus.h", "_general_status_8h.html", "_general_status_8h" ],
     [ "PiezoTuner.h", "_piezo_tuner_8h.html", "_piezo_tuner_8h" ],
     [ "PiezoTunerPzt4.h", "_piezo_tuner_pzt4_8h.html", "_piezo_tuner_pzt4_8h" ],
     [ "PiezoTunerRapidXSis8300Dac.h", "_piezo_tuner_rapid_x_sis8300_dac_8h.html", "_piezo_tuner_rapid_x_sis8300_dac_8h" ],

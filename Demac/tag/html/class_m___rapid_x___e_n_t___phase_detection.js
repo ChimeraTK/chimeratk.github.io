@@ -55,6 +55,5 @@ var class_m___rapid_x___e_n_t___phase_detection =
     [ "_unwrapFactorReal", "class_m___rapid_x___e_n_t___phase_detection.html#a2f484fc2e039e1466d354c3c62329ec9", null ],
     [ "_unwrapOneOverFactor", "class_m___rapid_x___e_n_t___phase_detection.html#a5dfca59525d64c524da15e2c97f0ed99", null ],
     [ "_wrapCounter", "class_m___rapid_x___e_n_t___phase_detection.html#a29320f85c08b54a893d25105e5f1f124", null ],
-    [ "_wrapCounterManualTests", "class_m___rapid_x___e_n_t___phase_detection.html#a9b99511fbd5e2fd12c2c45307518afd2", null ],
     [ "_wrapCounterReset", "class_m___rapid_x___e_n_t___phase_detection.html#aa9c8f6ae5b00e9fa07b7ec123b10529a", null ]
 ];

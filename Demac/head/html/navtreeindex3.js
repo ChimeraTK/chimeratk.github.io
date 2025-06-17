@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"class_coarse_tuning_algorithm_base.html#a1cfbb66a4cbf8e82d46376cadba48da7":[1,0,3,0],
+"class_coarse_tuning_algorithm_base.html#a1cfbb66a4cbf8e82d46376cadba48da7a0f94cd0fc8f8ab2f807b2f2db9801a78":[1,0,3,0,2],
+"class_coarse_tuning_algorithm_base.html#a1cfbb66a4cbf8e82d46376cadba48da7a35122be17a554ec281679ff8dc42a249":[1,0,3,0,1],
+"class_coarse_tuning_algorithm_base.html#a1cfbb66a4cbf8e82d46376cadba48da7accf7f8d120f5902466934e52baf5aa6c":[1,0,3,0,0],
+"class_coarse_tuning_algorithm_base.html#a1cfbb66a4cbf8e82d46376cadba48da7ae72d2a1d378dc6db241a5ba5f5d9c9bd":[1,0,3,0,3],
 "class_coarse_tuning_algorithm_base.html#a59c93d029e00027a435ca45309da875e":[1,0,3,6],
 "class_coarse_tuning_algorithm_base.html#aa0e83079f3f225b3c67538f77ebcde46":[1,0,3,4],
 "class_coarse_tuning_algorithm_base.html#aaae4808e40e47353a31d9bc01735c14d":[1,0,3,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "class_csa_multi_bit_field_reg_acc_config_1_1_bit_field_width.html":[1,0,13,1],
 "class_csa_multi_bit_field_reg_acc_config_1_1_bit_field_width.html#a894e75e7f83cf34e9aa60f76696eedbd":[1,0,13,1,0],
 "class_csa_multi_bit_field_register_accesor.html":[1,0,14],
-"class_csa_multi_bit_field_register_accesor.html#a24ade045dade6778e6172587de770c27":[1,0,14,13],
-"class_csa_multi_bit_field_register_accesor.html#a2cd77f6de394a6e52ed14ed913b3b51d":[1,0,14,8],
-"class_csa_multi_bit_field_register_accesor.html#a3be72b7a3f8027689d1d98d9acee55ab":[1,0,14,3],
-"class_csa_multi_bit_field_register_accesor.html#a49fc4430d385e4788308df711f6bbefc":[1,0,14,17],
-"class_csa_multi_bit_field_register_accesor.html#a5baef9b24729c29cc02c4bc704c5da70":[1,0,14,4],
-"class_csa_multi_bit_field_register_accesor.html#a6581df4500dc1b6e4a8aa11dd26bbb8c":[1,0,14,2]
+"class_csa_multi_bit_field_register_accesor.html#a24ade045dade6778e6172587de770c27":[1,0,14,13]
 };

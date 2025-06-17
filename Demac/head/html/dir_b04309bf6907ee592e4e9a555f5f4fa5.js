@@ -10,6 +10,7 @@ var dir_b04309bf6907ee592e4e9a555f5f4fa5 =
     [ "CsaStepperMotorTecRemote.cc", "_csa_stepper_motor_tec_remote_8cc.html", null ],
     [ "CsaStepperMotorUNIO.cc", "_csa_stepper_motor_u_n_i_o_8cc.html", null ],
     [ "CsaStepperMotorUnitConverter.cc", "_csa_stepper_motor_unit_converter_8cc.html", null ],
+    [ "GeneralStatus.cc", "_general_status_8cc.html", "_general_status_8cc" ],
     [ "PiezoTunerPzt4.cc", "_piezo_tuner_pzt4_8cc.html", null ],
     [ "PiezoTunerRapidXSis8300Dac.cc", "_piezo_tuner_rapid_x_sis8300_dac_8cc.html", null ],
     [ "RemotePZT4Channel.cc", "_remote_p_z_t4_channel_8cc.html", null ],

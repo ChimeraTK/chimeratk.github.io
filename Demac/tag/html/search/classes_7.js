@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lllstatus_0',['LLLStatus',['../class_m___e_n_t___low_latency_links_1_1_l_l_l_status.html',1,'M_ENT_LowLatencyLinks']]]
+  ['iircoeficientcalculator_0',['IIRCoeficientCalculator',['../class_i_i_r_coeficient_calculator.html',1,'']]],
+  ['iirparams_1',['IIRParams',['../class_i_i_r_coeficient_calculator_1_1_i_i_r_params.html',1,'IIRCoeficientCalculator']]]
 ];

@@ -38,6 +38,7 @@ var annotated_dup =
     [ "ExRegAccBase", "class_ex_reg_acc_base.html", "class_ex_reg_acc_base" ],
     [ "FFTCooleyTukeyAlgorithm", "class_f_f_t_cooley_tukey_algorithm.html", "class_f_f_t_cooley_tukey_algorithm" ],
     [ "FMC20_LLL_CPS", "struct_f_m_c20___l_l_l___c_p_s.html", "struct_f_m_c20___l_l_l___c_p_s" ],
+    [ "GeneralStatus", "class_general_status.html", "class_general_status" ],
     [ "IIRCoeficientCalculator", "class_i_i_r_coeficient_calculator.html", "class_i_i_r_coeficient_calculator" ],
     [ "M_APP_FMC20_LbSync", "class_m___a_p_p___f_m_c20___lb_sync.html", "class_m___a_p_p___f_m_c20___lb_sync" ],
     [ "M_BSP_AD16", "class_m___b_s_p___a_d16.html", "class_m___b_s_p___a_d16" ],

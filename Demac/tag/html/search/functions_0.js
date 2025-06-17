@@ -13,7 +13,7 @@ var searchData=
   ['addtowritemap_10',['addToWriteMap',['../class_m___e_n_t___tec_base.html#ae0d7da7830cf087d0c4d16a234df6b67',1,'M_ENT_TecBase']]],
   ['analizeanswerframe_11',['analizeanswerframe',['../class_m___e_n_t___tec_base.html#a7b45e9a96a57334de9ce963934282674',1,'M_ENT_TecBase::analizeAnswerFrame()'],['../class_m___e_n_t___tec_ctrl.html#a0cd9e10256e1318d66783033126c2aa7',1,'M_ENT_TecCtrl::analizeAnswerFrame()']]],
   ['applydmareadsize_12',['applyDmaReadSize',['../class_csa_multiplex_data_daq.html#aa709b1cd077b29374aef17c82bbe5557',1,'CsaMultiplexDataDaq']]],
-  ['asstring_13',['asstring',['../class_s_m_a_status.html#a91f8e7c184a391e036e1f87f2e17be43',1,'SMAStatus::asString()'],['../class_s_m_a_error.html#af9b55cf6a2082a8849584d4c680053e9',1,'SMAError::asString()'],['../class_s_m_a_detect_hard_limit_status.html#a7c88c999ffdda5af3059e4cd129e7082',1,'SMADetectHardLimitStatus::asString()']]],
+  ['asstring_13',['asstring',['../class_general_status.html#ac3a0f5458d040e7f1c7c960109dd8950',1,'GeneralStatus::asString()'],['../class_s_m_a_status.html#a91f8e7c184a391e036e1f87f2e17be43',1,'SMAStatus::asString()'],['../class_s_m_a_error.html#af9b55cf6a2082a8849584d4c680053e9',1,'SMAError::asString()'],['../class_s_m_a_detect_hard_limit_status.html#a7c88c999ffdda5af3059e4cd129e7082',1,'SMADetectHardLimitStatus::asString()']]],
   ['autoloadcb_14',['autoloadCb',['../class_csa_ctrl_on_state_space_manager.html#afba1deacb463e57611f78b68f2a59293',1,'CsaCtrlOnStateSpaceManager']]],
   ['autoupdateperiodms_15',['AutoupdatePeriodMs',['../class_csa_reg_acc_config_1_1_autoupdate_period_ms.html#ad26d9f5ea28a1289fe8cf9a46a3f7097',1,'CsaRegAccConfig::AutoupdatePeriodMs']]]
 ];

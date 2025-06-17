@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-MotorDriverCard-ApplicationModule<span id="projectnumber">&#160;00.08.04</span>
+   <div id="projectname">ChimeraTK-MotorDriverCard-ApplicationModule<span id="projectnumber">&#160;00.08.05</span>
    </div>
   </td>
  </tr>
@@ -273,125 +273,123 @@ $(document).ready(function(){initNavTree('test_motor_driver_8cc_source.html','')
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  testFacility.stepApplication();</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="comment">// Application should start with disabled motor</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="comment">// We currently have to test for FULL instead of SIMPLE, because the MotorControlerDummy does</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="comment">// not yet support storage of the calibration  (TODO, See MotorDriverCard issue #9).</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/calibrationMode&quot;</span>),</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::MotorDriver::CalibrationMode::FULL));</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/calibrationMode&quot;</span>),</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::MotorDriver::CalibrationMode::SIMPLE));</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
 </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="test_motor_driver_8cc.html#a2e5374d342cbee230f879ce01b54486d">  177</a></span><a class="code hl_function" href="test_motor_driver_8cc.html#a1d8fe7693780135b5cfc6c91cfb57b78">BOOST_FIXTURE_TEST_CASE</a>(testStartup, <a class="code hl_struct" href="struct_test_fixture.html">TestFixture</a>) {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testStartup (calibration mode FULL)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="comment">// Enable he dummy motor</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  _motorControlerDummy-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  _motorControlerDummy-&gt;setMotorCurrentEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="comment">// Set the calibration time to a nonzero value and proper end switch positions</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="comment">// -&gt; Motor instance should be initialized with CalibrationMode::SIMPLE</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  _motorControlerDummy-&gt;setCalibrationTime(123456U);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  _motorControlerDummy-&gt;setPositiveReferenceSwitchCalibration(1000);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  _motorControlerDummy-&gt;setNegativeReferenceSwitchCalibration(-1000);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <a class="code hl_struct" href="struct_test_server.html">TestServer</a> testServer;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  ChimeraTK::TestFacility testFacility{testServer};</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  testFacility.runApplication();</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keyword">auto</span> trigger = testFacility.getVoid(<span class="stringliteral">&quot;Motor/readback/tick&quot;</span>);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">auto</span> motorState = testFacility.getScalar&lt;std::string&gt;(<span class="stringliteral">&quot;Motor/readback/status/state&quot;</span>);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  trigger.write();</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  testFacility.stepApplication();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  motorState.read();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="comment">// Application should start with disabled motor</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/calibrationMode&quot;</span>),</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::MotorDriver::CalibrationMode::FULL));</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="test_motor_driver_8cc.html#a2e5374d342cbee230f879ce01b54486d">  175</a></span><a class="code hl_function" href="test_motor_driver_8cc.html#a1d8fe7693780135b5cfc6c91cfb57b78">BOOST_FIXTURE_TEST_CASE</a>(testStartup, <a class="code hl_struct" href="struct_test_fixture.html">TestFixture</a>) {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testStartup (calibration mode FULL)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="comment">// Enable he dummy motor</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  _motorControlerDummy-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  _motorControlerDummy-&gt;setMotorCurrentEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="comment">// Set the calibration time to a nonzero value and proper end switch positions</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="comment">// -&gt; Motor instance should be initialized with CalibrationMode::SIMPLE</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  _motorControlerDummy-&gt;setCalibrationTime(123456U);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  _motorControlerDummy-&gt;setPositiveReferenceSwitchCalibration(1000);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  _motorControlerDummy-&gt;setNegativeReferenceSwitchCalibration(-1000);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <a class="code hl_struct" href="struct_test_server.html">TestServer</a> testServer;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  ChimeraTK::TestFacility testFacility{testServer};</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  testFacility.runApplication();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keyword">auto</span> trigger = testFacility.getVoid(<span class="stringliteral">&quot;Motor/readback/tick&quot;</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keyword">auto</span> motorState = testFacility.getScalar&lt;std::string&gt;(<span class="stringliteral">&quot;Motor/readback/status/state&quot;</span>);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  trigger.write();</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  testFacility.stepApplication();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  motorState.read();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="comment">// Application should start with disabled motor</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/calibrationMode&quot;</span>),</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::MotorDriver::CalibrationMode::FULL));</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>}</div>
 </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="test_motor_driver_8cc.html#a46822075637d975fcbcf1206b3ca30a0">  206</a></span><a class="code hl_function" href="test_motor_driver_8cc.html#a1d8fe7693780135b5cfc6c91cfb57b78">BOOST_FIXTURE_TEST_CASE</a>(testCalibrationEmergencyStop, <a class="code hl_struct" href="struct_test_fixture.html">TestFixture</a>) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testCalibrationEmergencyStop&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <a class="code hl_struct" href="struct_test_server.html">TestServer</a> testServer;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  ChimeraTK::TestFacility testFacility{testServer};</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  testFacility.runApplication();</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keyword">auto</span> trigger = testFacility.getVoid(<span class="stringliteral">&quot;/Motor/readback/tick&quot;</span>);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keyword">auto</span> motorState = testFacility.getScalar&lt;std::string&gt;(<span class="stringliteral">&quot;/Motor/readback/status/state&quot;</span>);</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="comment">// Enable the dummy motor</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="comment">// FIXME: If the dummy is enabled here or not does not make a difference. The test still passes. Check the test code.</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  _motorControlerDummy-&gt;setEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  _motorControlerDummy-&gt;setMotorCurrentEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="comment">// Remove all calibration on the controller</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  _motorControlerDummy-&gt;setCalibrationTime(0);</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  _motorControlerDummy-&gt;setPositiveReferenceSwitchCalibration(std::numeric_limits&lt;int&gt;::max());</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  _motorControlerDummy-&gt;setNegativeReferenceSwitchCalibration(std::numeric_limits&lt;int&gt;::min());</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">// This is used to make the move below stop before the endswitch</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="comment">// The default end switch position in the dummy is at +/-10000</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="comment">// while POS_BEYOND_POSITIVE_ENDSWITCH is 50000. So the moveTowardsTarget(1.) will hit the endswitch and the</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="comment">// emergency stop will not have any effect at all - I think.</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  _motorControlerDummy-&gt;setPositiveEndSwitch(60000);</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  _motorControlerDummy-&gt;setNegativeEndSwitch(-60000);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="foldopen" id="foldopen00204" data-start="{" data-end="}">
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="test_motor_driver_8cc.html#a46822075637d975fcbcf1206b3ca30a0">  204</a></span><a class="code hl_function" href="test_motor_driver_8cc.html#a1d8fe7693780135b5cfc6c91cfb57b78">BOOST_FIXTURE_TEST_CASE</a>(testCalibrationEmergencyStop, <a class="code hl_struct" href="struct_test_fixture.html">TestFixture</a>) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testCalibrationEmergencyStop&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <a class="code hl_struct" href="struct_test_server.html">TestServer</a> testServer;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  ChimeraTK::TestFacility testFacility{testServer};</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  testFacility.runApplication();</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keyword">auto</span> trigger = testFacility.getVoid(<span class="stringliteral">&quot;/Motor/readback/tick&quot;</span>);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keyword">auto</span> motorState = testFacility.getScalar&lt;std::string&gt;(<span class="stringliteral">&quot;/Motor/readback/status/state&quot;</span>);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="comment">// Enable the dummy motor</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="comment">// FIXME: If the dummy is enabled here or not does not make a difference. The test still passes. Check the test code.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  _motorControlerDummy-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  _motorControlerDummy-&gt;setMotorCurrentEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="comment">// Remove all calibration on the controller</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  _motorControlerDummy-&gt;setCalibrationTime(0);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  _motorControlerDummy-&gt;setPositiveReferenceSwitchCalibration(std::numeric_limits&lt;int&gt;::max());</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  _motorControlerDummy-&gt;setNegativeReferenceSwitchCalibration(std::numeric_limits&lt;int&gt;::min());</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="comment">// This is used to make the move below stop before the endswitch</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="comment">// The default end switch position in the dummy is at +/-10000</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">// while POS_BEYOND_POSITIVE_ENDSWITCH is 50000. So the moveTowardsTarget(1.) will hit the endswitch and the</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="comment">// emergency stop will not have any effect at all - I think.</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  _motorControlerDummy-&gt;setPositiveEndSwitch(60000);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  _motorControlerDummy-&gt;setNegativeEndSwitch(-60000);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  BOOST_CHECK(motorState.dataValidity() == ctk::DataValidity::ok);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  BOOST_CHECK(motorState.dataValidity() == ctk::DataValidity::ok);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="comment">// Trigger readout loop once, so the motor device &quot;wakes up&quot; and actually initializes itself</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  testServer.<a class="code hl_variable" href="struct_test_server.html#a43a1590ba528ebdcdccc58c743a13e9c">motor</a>-&gt;motorProxyDevice.reportException(<span class="stringliteral">&quot;Exception trigger from test to toggle deviceBecameFunctional&quot;</span>);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  testFacility.stepApplication();</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="comment">// Get rid of all the intermediate changes due to exception reporting</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  motorState.readLatest();</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="comment">// Application should start with disabled motor (initial value being send)</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="comment">// Directly check. Initial values are already received.</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;disabled&quot;</span>);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="comment">// Enable stepper motor and set a reference position</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="comment">// (the latter should yield ChimeraTK::MotorDriver::CalibrationMode::SIMPLE)</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/enable&quot;</span>, 1);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/enableAutostart&quot;</span>, 1);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  testFacility.stepApplication();</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  motorState.readLatest();</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  trigger.write();</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  testFacility.stepApplication();</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/autostartEnabled&quot;</span>), 1);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;idle&quot;</span>);</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;Motor/controlInput/notification/hasMessage&quot;</span>), <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/calibrate&quot;</span>, 1);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="comment">// Trigger readout loop once, so the motor device &quot;wakes up&quot; and actually initializes itself</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  testServer.<a class="code hl_variable" href="struct_test_server.html#a43a1590ba528ebdcdccc58c743a13e9c">motor</a>-&gt;motorProxyDevice.reportException(<span class="stringliteral">&quot;Exception trigger from test to toggle deviceBecameFunctional&quot;</span>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  testFacility.stepApplication();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="comment">// Get rid of all the intermediate changes due to exception reporting</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  motorState.readLatest();</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="comment">// Application should start with disabled motor (initial value being send)</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="comment">// Directly check. Initial values are already received.</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;disabled&quot;</span>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="comment">// Enable stepper motor and set a reference position</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="comment">// (the latter should yield ChimeraTK::MotorDriver::CalibrationMode::SIMPLE)</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/enable&quot;</span>, 1);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/enableAutostart&quot;</span>, 1);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  testFacility.stepApplication();</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  motorState.readLatest();</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  trigger.write();</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  testFacility.stepApplication();</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/autostartEnabled&quot;</span>), 1);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;idle&quot;</span>);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;Motor/controlInput/notification/hasMessage&quot;</span>), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/calibrate&quot;</span>, 1);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  testFacility.stepApplication();</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  trigger.write();</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  testFacility.stepApplication();</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  trigger.write();</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  testFacility.stepApplication();</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  motorState.read();</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="comment">// Move the dummy</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="comment">// Afterwards target position should be read back as actual value and system in state &quot;idle&quot;</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;calibrating&quot;</span>);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">if</span>(i &lt; 50) {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      _motorControlerDummy-&gt;moveTowardsTarget(i / 100.F);</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    }</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    trigger.write();</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">if</span>(i == 50) {</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Performing emergency stop&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/emergencyStop&quot;</span>, 1);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    }</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    testFacility.stepApplication();</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    i++;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  } <span class="keywordflow">while</span>(!motorState.readNonBlocking() &amp;&amp; (std::string)motorState == std::string{<span class="stringliteral">&quot;calibrating&quot;</span>});</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;error&quot;</span>);</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/calibrationMode&quot;</span>),</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::MotorDriver::CalibrationMode::NONE));</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>}</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  motorState.read();</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="comment">// Move the dummy</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="comment">// Afterwards target position should be read back as actual value and system in state &quot;idle&quot;</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;calibrating&quot;</span>);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">if</span>(i &lt; 50) {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      _motorControlerDummy-&gt;moveTowardsTarget(i / 100.F);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    }</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    trigger.write();</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">if</span>(i == 50) {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Performing emergency stop&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      testFacility.writeScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/controlInput/control/emergencyStop&quot;</span>, 1);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    testFacility.stepApplication();</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    i++;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  } <span class="keywordflow">while</span>(!motorState.readNonBlocking() &amp;&amp; (std::string)motorState == std::string{<span class="stringliteral">&quot;calibrating&quot;</span>});</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  BOOST_CHECK_EQUAL(<span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(motorState), <span class="stringliteral">&quot;error&quot;</span>);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  BOOST_CHECK_EQUAL(testFacility.readScalar&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Motor/readback/status/calibrationMode&quot;</span>),</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>      <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::MotorDriver::CalibrationMode::NONE));</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
 </div>
 <div class="ttc" id="a_stepper_motor_module_8h_html"><div class="ttname"><a href="_stepper_motor_module_8h.html">StepperMotorModule.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="_motor_8h_source.html#l00008">Motor.h:8</a></div></div>
@@ -413,7 +411,7 @@ $(document).ready(function(){initNavTree('test_motor_driver_8cc_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_e95d5160e668691ecdec1aadb296def7.html">ChimeraTK-MotorDriverCard-ApplicationModule</a></li><li class="navelem"><a class="el" href="dir_1969f1f998a75ef91c896884b36a0914.html">tests</a></li><li class="navelem"><a class="el" href="test_motor_driver_8cc.html">testMotorDriver.cc</a></li>
-    <li class="footer">Generated on Sun Jun 15 2025 18:58:32 for ChimeraTK-MotorDriverCard-ApplicationModule by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

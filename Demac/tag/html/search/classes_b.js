@@ -1,23 +1,7 @@
 var searchData=
 [
-  ['settings_0',['Settings',['../struct_csa_coarse_tuning_detector_1_1_settings.html',1,'CsaCoarseTuningDetector']]],
-  ['smadetecthardlimitstatus_1',['SMADetectHardLimitStatus',['../class_s_m_a_detect_hard_limit_status.html',1,'']]],
-  ['smadetecthardlimitstatustypes_2',['SMADetectHardLimitStatusTypes',['../class_s_m_a_detect_hard_limit_status_types.html',1,'']]],
-  ['smaerror_3',['SMAError',['../class_s_m_a_error.html',1,'']]],
-  ['smaerrortypes_4',['SMAErrorTypes',['../class_s_m_a_error_types.html',1,'']]],
-  ['smastatus_5',['SMAStatus',['../class_s_m_a_status.html',1,'']]],
-  ['smastatustypes_6',['SMAStatusTypes',['../class_s_m_a_status_types.html',1,'']]],
-  ['stepperactuator_7',['StepperActuator',['../class_stepper_actuator.html',1,'']]],
-  ['steppermotoractuatorexception_8',['StepperMotorActuatorException',['../class_stepper_motor_actuator_exception.html',1,'']]],
-  ['steppermotorlinearmd22_9',['StepperMotorLinearMD22',['../class_stepper_motor_linear_m_d22.html',1,'']]],
-  ['steppermotormd22_10',['StepperMotorMD22',['../class_stepper_motor_m_d22.html',1,'']]],
-  ['steppermotormd22statusanderror_11',['StepperMotorMD22StatusAndError',['../class_stepper_motor_m_d22_status_and_error.html',1,'']]],
-  ['steppermotormd22unitsconverter_12',['StepperMotorMD22UnitsConverter',['../class_stepper_motor_m_d22_units_converter.html',1,'']]],
-  ['steppermotormd22unitsconvertertrivia_13',['StepperMotorMD22UnitsConverterTrivia',['../class_stepper_motor_m_d22_units_converter_trivia.html',1,'']]],
-  ['steppermotorpiezo_14',['StepperMotorPiezo',['../class_stepper_motor_piezo.html',1,'']]],
-  ['steppermotorremote_15',['StepperMotorRemote',['../class_stepper_motor_remote.html',1,'']]],
-  ['steppermotorsawpiezopzt4_16',['StepperMotorSawPiezoPZT4',['../class_stepper_motor_saw_piezo_p_z_t4.html',1,'']]],
-  ['steppermotorsawpiezopzt4shapegen_17',['StepperMotorSawPiezoPZT4ShapeGen',['../class_stepper_motor_saw_piezo_p_z_t4_shape_gen.html',1,'']]],
-  ['steppermotortecremote_18',['StepperMotorTecRemote',['../class_stepper_motor_tec_remote.html',1,'']]],
-  ['steppermotorunio_19',['StepperMotorUNIO',['../class_stepper_motor_u_n_i_o.html',1,'']]]
+  ['rapidx_5fssctrllooptester_0',['RapidX_SSCtrlLoopTester',['../class_rapid_x___s_s_ctrl_loop_tester.html',1,'']]],
+  ['registeraccessmode_1',['RegisterAccessMode',['../class_csa_reg_acc_config_1_1_register_access_mode.html',1,'CsaRegAccConfig']]],
+  ['registeroffset_2',['RegisterOffset',['../class_csa_reg_acc_config_1_1_register_offset.html',1,'CsaRegAccConfig']]],
+  ['remotepzt4channel_3',['RemotePZT4Channel',['../class_remote_p_z_t4_channel.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['iircoeficientcalculator_2ecc_0',['IIRCoeficientCalculator.cc',['../_i_i_r_coeficient_calculator_8cc.html',1,'']]],
-  ['iircoeficientcalculator_2eh_1',['IIRCoeficientCalculator.h',['../_i_i_r_coeficient_calculator_8h.html',1,'']]]
+  ['generalstatus_2ecc_0',['GeneralStatus.cc',['../_general_status_8cc.html',1,'']]],
+  ['generalstatus_2eh_1',['GeneralStatus.h',['../_general_status_8h.html',1,'']]]
 ];

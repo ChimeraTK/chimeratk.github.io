@@ -49,6 +49,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -60,18 +61,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_actuator_setting_helper_8cc.html",
-"_m___b_s_p___s_i_s8300_l2_8h.html#a021010cd10fcf25989fecf39567c6d69",
-"_m___e_n_t___tec_mon_8cc.html#a5221ae5ca0d2fc831930600fcd2dbbc6",
-"class_coarse_tuning_algorithm_base.html#a59c93d029e00027a435ca45309da875e",
-"class_csa_multi_bit_field_register_accesor.html#a6abde500ae175d2f61784037a26b8130",
-"class_csa_stepper_motor.html#aaf0ec17aa6359166bd90bb7301d5ef57",
-"class_i_i_r_coeficient_calculator_1_1_i_i_r_params.html#afa6edc8e12c3b968380c742190fe1d8b",
-"class_m___e_n_t___firmware_version.html#af67fda584d7853b648f517f4875b1d2e",
-"class_m___e_n_t___tec_base.html#ae0d7da7830cf087d0c4d16a234df6b67",
-"class_m___rapid_x___e_n_t___sis_dac.html#aef9dcca223b70a4be7af151d232d339b",
-"class_stepper_actuator.html#a5b79a393292acfb49cebf8b3c4bbd9e9",
-"class_stepper_motor_remote.html#a37d086e680a3aa2389af974b460a6719",
-"class_stepper_motor_tec_remote.html#ac1e350855079813fa7213cd65e2a448f"
+"_m___b_s_p___s_i_s8300_base_8h.html#ab323f40dfa608967921c7e50d7820ea2",
+"_m___e_n_t___tec_mon_8cc.html",
+"class_coarse_tuning_algorithm_base.html#a1cfbb66a4cbf8e82d46376cadba48da7",
+"class_csa_multi_bit_field_register_accesor.html#a2cd77f6de394a6e52ed14ed913b3b51d",
+"class_csa_stepper_motor.html#aa1ae5e5a8a7e91e667e9866499c5a08d",
+"class_i_i_r_coeficient_calculator.html",
+"class_m___e_n_t___firmware_project_version.html#acc02b6fc0ddab4c1a5e16c15c1332c60",
+"class_m___e_n_t___tec_base.html#a7b45e9a96a57334de9ce963934282674",
+"class_m___rapid_x___e_n_t___phase_detection___adv.html#a80c68753dee4034802de6b09bbfcfd18",
+"class_stepper_actuator.html#a18e349184a0e233b7f34cca044eae2ca",
+"class_stepper_motor_remote.html#a1d662802f8bd4310a564f37f4c4dd673",
+"class_stepper_motor_tec_remote.html#aa20a1a6ffec1893bdb33019163947af2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

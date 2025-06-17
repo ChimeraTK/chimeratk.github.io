@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"class_csa_multi_bit_field_register_accesor.html#a2cd77f6de394a6e52ed14ed913b3b51d":[1,0,14,8],
+"class_csa_multi_bit_field_register_accesor.html#a3be72b7a3f8027689d1d98d9acee55ab":[1,0,14,3],
+"class_csa_multi_bit_field_register_accesor.html#a49fc4430d385e4788308df711f6bbefc":[1,0,14,17],
+"class_csa_multi_bit_field_register_accesor.html#a5baef9b24729c29cc02c4bc704c5da70":[1,0,14,4],
+"class_csa_multi_bit_field_register_accesor.html#a6581df4500dc1b6e4a8aa11dd26bbb8c":[1,0,14,2],
 "class_csa_multi_bit_field_register_accesor.html#a6abde500ae175d2f61784037a26b8130":[1,0,14,18],
 "class_csa_multi_bit_field_register_accesor.html#a9d5dac276bd48092a9618ae83db3d797":[1,0,14,7],
 "class_csa_multi_bit_field_register_accesor.html#a9ec7c8cd8013cb7561011d6ba75f78bc":[1,0,14,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "class_csa_stepper_motor.html#a9a7fc155f54d000c82d700e4c20df77d":[1,0,21,64],
 "class_csa_stepper_motor.html#a9b7e23235088e96291d04ac9bbf1000e":[1,0,21,16],
 "class_csa_stepper_motor.html#a9f5da288d58af57f3cd863c9ff03b383":[1,0,21,17],
-"class_csa_stepper_motor.html#aa0d63d1a3e41e9b23018acde5ae495b6":[1,0,21,34],
-"class_csa_stepper_motor.html#aa1ae5e5a8a7e91e667e9866499c5a08d":[1,0,21,60],
-"class_csa_stepper_motor.html#aa742910f497bef08edd7db30cc00e412":[1,0,21,29],
-"class_csa_stepper_motor.html#aa88e77b6a8e554ac2e9ddc77de0c928c":[1,0,21,55],
-"class_csa_stepper_motor.html#aa969e4da9438f7dcaaba241ade475437":[1,0,21,21],
-"class_csa_stepper_motor.html#aae5f91e63e688cc36155bd58fc1a83df":[1,0,21,69]
+"class_csa_stepper_motor.html#aa0d63d1a3e41e9b23018acde5ae495b6":[1,0,21,34]
 };

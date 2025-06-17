@@ -46,7 +46,7 @@ var hierarchy =
     ] ],
     [ "FFTCooleyTukeyAlgorithm", "class_f_f_t_cooley_tukey_algorithm.html", null ],
     [ "FMC20_LLL_CPS", "struct_f_m_c20___l_l_l___c_p_s.html", null ],
-    [ "ChimeraTK::GeneralStatus", null, [
+    [ "GeneralStatus", "class_general_status.html", [
       [ "SMADetectHardLimitStatus", "class_s_m_a_detect_hard_limit_status.html", null ],
       [ "SMAError", "class_s_m_a_error.html", null ],
       [ "SMAStatus", "class_s_m_a_status.html", null ]
