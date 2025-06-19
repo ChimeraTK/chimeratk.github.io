@@ -1,6 +1,6 @@
 var class_data_buffer =
 [
-    [ "DataBuffer", "class_data_buffer.html#a0e697509cc173381a320a2b9a8065096", null ],
+    [ "DataBuffer", "class_data_buffer.html#a93d6900695ddfb07f23d9b84c92c6818", null ],
     [ "DataBuffer", "class_data_buffer.html#a5e86df26ed89d42ea86fbfbdab864497", null ],
     [ "add", "class_data_buffer.html#a4e4cd9e9d20ee561e17553cfd6925327", null ],
     [ "clear", "class_data_buffer.html#a451388381876f06232231b0ce679555c", null ],

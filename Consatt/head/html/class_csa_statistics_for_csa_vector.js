@@ -12,5 +12,6 @@ var class_csa_statistics_for_csa_vector =
     [ "_meanCs", "class_csa_statistics_for_csa_vector.html#a6a8f2643903b6a92923574e4fe5691e8", null ],
     [ "_minCs", "class_csa_statistics_for_csa_vector.html#aedf000d5dbab018551d7abbfebb0529a", null ],
     [ "_rmsCs", "class_csa_statistics_for_csa_vector.html#a2331c396ca2ca9ca2ee628a0c9bd38fa", null ],
-    [ "_stdDevCs", "class_csa_statistics_for_csa_vector.html#ad2ec1df9f14c29b041ed39a0d00a0692", null ]
+    [ "_stdDevCs", "class_csa_statistics_for_csa_vector.html#ad2ec1df9f14c29b041ed39a0d00a0692", null ],
+    [ "_testMeanOffsetCs", "class_csa_statistics_for_csa_vector.html#a58c367902ca6fa54e194167103a7da53", null ]
 ];

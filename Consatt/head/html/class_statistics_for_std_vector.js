@@ -2,8 +2,8 @@ var class_statistics_for_std_vector =
 [
     [ "StatisticsForStdVector", "class_statistics_for_std_vector.html#a62093de6a0c28fb63c9a0cb6c8bc2c1b", null ],
     [ "~StatisticsForStdVector", "class_statistics_for_std_vector.html#afee90982a32d982ac77f27e64e123e03", null ],
-    [ "calcMeanWithMinMax", "class_statistics_for_std_vector.html#a984e16733e9521151363a984fa45d226", null ],
-    [ "calcMinMaxWithSum", "class_statistics_for_std_vector.html#a320279302bd2885856938edd7d4f5bd6", null ],
+    [ "calcMeanWithMinMax", "class_statistics_for_std_vector.html#a704433590873ebba5235ef716608f390", null ],
+    [ "calcMinMaxWithSum", "class_statistics_for_std_vector.html#ac58b899500cf78f5efb5f5f8162ee6f2", null ],
     [ "calculate", "class_statistics_for_std_vector.html#a5493818ce152a054788b3300051ac4ca", null ],
     [ "calculate", "class_statistics_for_std_vector.html#a7576c420dc52f0430c9e53bf38574672", null ],
     [ "getDataSize", "class_statistics_for_std_vector.html#a1b6f4b535730641ac4556f0407d4be5c", null ],
@@ -25,6 +25,7 @@ var class_statistics_for_std_vector =
     [ "setVector", "class_statistics_for_std_vector.html#a5372445f3aa689611607853ee67dd042", null ],
     [ "zeroAllStatistics", "class_statistics_for_std_vector.html#a21f6589a21e20b4ff06f96feb61412e0", null ],
     [ "_calcDataSize", "class_statistics_for_std_vector.html#a3912f838a4b5454fc626a83c09b4d6c2", null ],
+    [ "_dataAsDouble", "class_statistics_for_std_vector.html#aa4d9795d4a7c98daf738c7473bff30ee", null ],
     [ "_indexMax", "class_statistics_for_std_vector.html#a04da23d650a024c5474ac43c26cbb54e", null ],
     [ "_indexMin", "class_statistics_for_std_vector.html#a0e9a41419b8c1ad867bc93e04fb8db12", null ],
     [ "_max", "class_statistics_for_std_vector.html#a8ef260574a9c82b02c2680aae09ecf2e", null ],

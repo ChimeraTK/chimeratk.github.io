@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['calcmeanwithminmax_0',['calcMeanWithMinMax',['../class_statistics_for_std_vector.html#a984e16733e9521151363a984fa45d226',1,'StatisticsForStdVector']]],
-  ['calcminmaxwithsum_1',['calcMinMaxWithSum',['../class_statistics_for_std_vector.html#a320279302bd2885856938edd7d4f5bd6',1,'StatisticsForStdVector']]],
+  ['calcmeanwithminmax_0',['calcMeanWithMinMax',['../class_statistics_for_std_vector.html#a704433590873ebba5235ef716608f390',1,'StatisticsForStdVector']]],
+  ['calcminmaxwithsum_1',['calcMinMaxWithSum',['../class_statistics_for_std_vector.html#ac58b899500cf78f5efb5f5f8162ee6f2',1,'StatisticsForStdVector']]],
   ['calculate_2',['calculate',['../class_statistics_for_std_vector.html#a7576c420dc52f0430c9e53bf38574672',1,'StatisticsForStdVector::calculate(uint64_t timeStamp)'],['../class_statistics_for_std_vector.html#a5493818ce152a054788b3300051ac4ca',1,'StatisticsForStdVector::calculate()'],['../class_csa_statistics_for_csa_vector.html#afb384ce9ed91b20b2c6ad1930338af46',1,'CsaStatisticsForCsaVector::calculate()'],['../class_csa_statistics_for_csa_vector.html#a0e54c38c856854d3131cb739b756527d',1,'CsaStatisticsForCsaVector::calculate(uint64_t timeStamp)'],['../class_statistics_for_csa_vector.html#a4556587885138f953ebbbf44e1204626',1,'StatisticsForCsaVector::calculate()'],['../class_statistics_for_csa_vector.html#a7f60e9a051ebe682e34eb6a013c1156c',1,'StatisticsForCsaVector::calculate(uint64_t timeStamp)']]],
   ['capacity_3',['capacity',['../class_csa_vector.html#a9a66c8834c82deea2119d35ded44e637',1,'CsaVector']]],
   ['changeaccessdirection_4',['changeAccessDirection',['../class_csa_external_process_variable.html#a8c5af24575970b911f122d9edec3893f',1,'CsaExternalProcessVariable']]],

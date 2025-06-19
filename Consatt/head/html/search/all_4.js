@@ -1,7 +1,7 @@
 var searchData=
 [
   ['dataamount_0',['dataAmount',['../class_x_axis_settings.html#a17ed244644260361ad5466a15fe73172',1,'XAxisSettings']]],
-  ['databuffer_1',['databuffer',['../class_data_buffer.html#a0e697509cc173381a320a2b9a8065096',1,'DataBuffer::DataBuffer()'],['../class_data_buffer.html#a5e86df26ed89d42ea86fbfbdab864497',1,'DataBuffer::DataBuffer(unsigned int lenght)'],['../class_data_buffer.html',1,'DataBuffer&lt; T &gt;']]],
+  ['databuffer_1',['databuffer',['../class_data_buffer.html#a93d6900695ddfb07f23d9b84c92c6818',1,'DataBuffer::DataBuffer()=default'],['../class_data_buffer.html#a5e86df26ed89d42ea86fbfbdab864497',1,'DataBuffer::DataBuffer(unsigned int lenght)'],['../class_data_buffer.html',1,'DataBuffer&lt; T &gt;']]],
   ['databufferwithtemplate_2',['DataBufferWithTemplate',['../class_data_buffer_with_template.html',1,'']]],
   ['dataholder_3',['dataholder',['../class_data_holder.html',1,'DataHolder&lt; T &gt;'],['../class_data_holder.html#ae8480e79755dea22449e76be19c13b6e',1,'DataHolder::DataHolder()']]],
   ['dataintholder_4',['DataIntHolder',['../_csa_object_user_config_8h.html#a106ccdc2457dffc6dc8a58b7e395112c',1,'CsaObjectUserConfig.h']]],
