@@ -26,7 +26,9 @@ var hierarchy =
         [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< TagModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
-        [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", null ]
+        [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", [
+          [ "ChimeraTK::LNMBackend::FixedTagModifierPlugin< Tag >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin.html", null ]
+        ] ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< TypeHintModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::TypeHintModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html", null ]

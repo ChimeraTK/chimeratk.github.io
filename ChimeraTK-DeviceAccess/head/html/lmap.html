@@ -167,6 +167,16 @@ Map file syntax</h1>
 <div class="line">        &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;set&quot;</span>&gt;<span class="keyword">status-output</span>&lt;/<span class="keywordtype">parameter</span>&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">plugin</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">redirectRegister</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">redirectedRegister</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;StatusOutput&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">targetDevice</span>&gt;<span class="keyword">PCIE2</span>&lt;/<span class="keywordtype">targetDevice</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">targetRegister</span>&gt;<span class="keyword">BOARD.WORD_STATUS</span>&lt;/<span class="keywordtype">targetRegister</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;isStatusOutput&quot;</span> /&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">redirectedRegister</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">redirectedRegister</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PositionSetpoint&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">targetDevice</span>&gt;<span class="keyword">PCIE2</span>&lt;/<span class="keywordtype">targetDevice</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">targetRegister</span>&gt;<span class="keyword">BOARD.POSITION_SETPOINT</span>&lt;/<span class="keywordtype">targetRegister</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;hasReverseRecovery&quot;</span> /&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">redirectedRegister</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">logicalNameMap</span>&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="variables_and_constants"></a>
 Variables and constants</h2>
@@ -310,8 +320,14 @@ tagModifier</h2>
 <p>Notes:</p><ul>
 <li>The plugin accepts either <code>add</code> and <code>remove</code> or <code>set</code>, but not a mix.</li>
 <li>The order of application is first <code>add</code>, then <code>remove</code>.</li>
-<li>See <a class="el" href="struct_chimera_t_k_1_1_system_tags.html" title="A list of pre-defined tags that can be used to mark registers.">ChimeraTK::SystemTags</a> for a list of pre-defined tags. </li>
+<li>See <a class="el" href="struct_chimera_t_k_1_1_system_tags.html" title="A list of pre-defined tags that can be used to mark registers.">ChimeraTK::SystemTags</a> for a list of pre-defined tags.</li>
 </ul>
+<h2><a class="anchor" id="plugins_reference_is_status_output"></a>
+isStatusOutput</h2>
+<p><code>isStatusOutput</code> is a plugin that will mark a register as being compatible with the StatusOutput expectations from ApplicationCore.</p>
+<h2><a class="anchor" id="plugins_reference_is_reverse_recovery"></a>
+hasReverseRecovery</h2>
+<p><code>hasReverseRecovery</code> is a plugin that will mark a register as not being written to on device start-up, and potentially will be read instead. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

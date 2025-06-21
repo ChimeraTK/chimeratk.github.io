@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"struct_constant_register_descriptor_base.html#a6e68fe5e4565936482ed07c608d90e6e":[20,0,36,7],
+"struct_constant_register_descriptor_base.html#a9f44f03cb95c71198f102bf283c1dd3a":[20,0,36,6],
+"struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9":[20,0,36,1],
+"struct_constant_register_descriptor_base.html#abc15f5afdfbdaecb8071218aa243f79b":[20,0,36,2],
+"struct_counting_decorator.html":[20,0,37],
+"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[20,0,37,1],
+"struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12":[20,0,37,9],
+"struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[20,0,37,17],
 "struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[20,0,37,2],
 "struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa":[20,0,37,5],
 "struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[20,0,37,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "struct_isr_readable_test_fixture.html#ac492f077a4d4f18359694dd833901470":[20,0,98,0],
 "struct_isr_test_fixture.html":[20,0,99],
 "struct_isr_test_fixture.html#a1173e20ab356b32ea243273924aade13":[20,0,99,0],
-"struct_isr_writable_test_fixture.html":[20,0,100],
-"struct_isr_writable_test_fixture.html#ac949b0c7e81c7056195f4c98459fa85c":[20,0,100,0],
-"struct_master_enable_test.html":[20,0,101],
-"struct_master_enable_test.html#a0e615be27aa5379b29eee7294013169b":[20,0,101,0],
-"struct_master_enable_test.html#a41b8bc34f92bc19fbccbba4505116724":[20,0,101,2],
-"struct_master_enable_test.html#aa32a782bd996ab0f541742a1d0697b00":[20,0,101,1],
-"struct_master_enable_test.html#ae503aba38eacc99847043d1d47f45698":[20,0,101,3],
-"struct_mer_active_test_fixture.html":[20,0,102],
-"struct_mer_active_test_fixture.html#a073c6ba73a4d1daa5558791a7d3203aa":[20,0,102,0]
+"struct_isr_writable_test_fixture.html":[20,0,100]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX25 =
 {
+"struct_chimera_t_k_1_1_rebot_protocol1.html#af16693f15829deb2cd9ad961d485813d":[20,0,1,96,4],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html":[19,0,1,101],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html":[20,0,1,97],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#a2b0b647dc620f8a1aa852e41f459e6bf":[20,0,1,97,3],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#a2b0b647dc620f8a1aa852e41f459e6bf":[19,0,1,101,3],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#ac15da0b374255604714fadadae6f6503":[20,0,1,97,1],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#ac15da0b374255604714fadadae6f6503":[19,0,1,101,1],
+"struct_chimera_t_k_1_1_rebot_protocol_implementor.html#ac4030b951719c735490c6347e60d5b14":[20,0,1,97,0],
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#ac4030b951719c735490c6347e60d5b14":[19,0,1,101,0],
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#af92af6259adc2803d150982ca153a1cc":[20,0,1,97,2],
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#af92af6259adc2803d150982ca153a1cc":[19,0,1,101,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX25 =
 "struct_constant_register_descriptor_base.html#a0557e7a64a5fda19612360c1820b6d45":[20,0,36,0],
 "struct_constant_register_descriptor_base.html#a0880e66795bc771acc3d07501158c2ee":[20,0,36,4],
 "struct_constant_register_descriptor_base.html#a32e5431891945700072a13e91b351b1c":[20,0,36,5],
-"struct_constant_register_descriptor_base.html#a534162394e15a2ddd6042480cea25942":[20,0,36,3],
-"struct_constant_register_descriptor_base.html#a6e68fe5e4565936482ed07c608d90e6e":[20,0,36,7],
-"struct_constant_register_descriptor_base.html#a9f44f03cb95c71198f102bf283c1dd3a":[20,0,36,6],
-"struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9":[20,0,36,1],
-"struct_constant_register_descriptor_base.html#abc15f5afdfbdaecb8071218aa243f79b":[20,0,36,2],
-"struct_counting_decorator.html":[20,0,37],
-"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[20,0,37,1],
-"struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12":[20,0,37,9],
-"struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[20,0,37,17]
+"struct_constant_register_descriptor_base.html#a534162394e15a2ddd6042480cea25942":[20,0,36,3]
 };

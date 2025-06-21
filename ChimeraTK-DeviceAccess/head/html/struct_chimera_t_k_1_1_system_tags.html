@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_system_tags.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab1dd83a93afe3940394225255e71a7fd" id="r_ab1dd83a93afe3940394225255e71a7fd"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_system_tags.html#ab1dd83a93afe3940394225255e71a7fd">statusOutput</a> {&quot;_ChimeraTK_StatusOutput_statusOutput&quot;}</td></tr>
-<tr class="memdesc:ab1dd83a93afe3940394225255e71a7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to mark something as aggregable by ApplicationCore's status aggregator.  <br /></td></tr>
-<tr class="separator:ab1dd83a93afe3940394225255e71a7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c93e01f1b8ebd1c66d63c7c57408fd9" id="r_a1c93e01f1b8ebd1c66d63c7c57408fd9"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_system_tags.html#a1c93e01f1b8ebd1c66d63c7c57408fd9">reverseRecovery</a> {&quot;_ChimeraTK_DeviceRegister_reverseRecovery&quot;}</td></tr>
-<tr class="memdesc:a1c93e01f1b8ebd1c66d63c7c57408fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to flag a register as "reverse recovery".  <br /></td></tr>
-<tr class="separator:a1c93e01f1b8ebd1c66d63c7c57408fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af066d767b3516936c063f9805fe39974" id="r_af066d767b3516936c063f9805fe39974"><td class="memItemLeft" align="right" valign="top">static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_system_tags.html#af066d767b3516936c063f9805fe39974">statusOutput</a> [] {&quot;_ChimeraTK_StatusOutput_statusOutput&quot;}</td></tr>
+<tr class="memdesc:af066d767b3516936c063f9805fe39974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to mark something as aggregable by ApplicationCore's status aggregator.  <br /></td></tr>
+<tr class="separator:af066d767b3516936c063f9805fe39974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb82a0f9fc753b2f402c3c916e94bac" id="r_a0fb82a0f9fc753b2f402c3c916e94bac"><td class="memItemLeft" align="right" valign="top">static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_system_tags.html#a0fb82a0f9fc753b2f402c3c916e94bac">reverseRecovery</a> [] {&quot;_ChimeraTK_DeviceRegister_reverseRecovery&quot;}</td></tr>
+<tr class="memdesc:a0fb82a0f9fc753b2f402c3c916e94bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to flag a register as "reverse recovery".  <br /></td></tr>
+<tr class="separator:a0fb82a0f9fc753b2f402c3c916e94bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A list of pre-defined tags that can be used to mark registers. </p>
@@ -123,8 +123,8 @@ Static Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_system_tags_8h_source.html#l00018">18</a> of file <a class="el" href="_system_tags_8h_source.html">SystemTags.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1c93e01f1b8ebd1c66d63c7c57408fd9" name="a1c93e01f1b8ebd1c66d63c7c57408fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c93e01f1b8ebd1c66d63c7c57408fd9">&#9670;&#160;</a></span>reverseRecovery</h2>
+<a id="a0fb82a0f9fc753b2f402c3c916e94bac" name="a0fb82a0f9fc753b2f402c3c916e94bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb82a0f9fc753b2f402c3c916e94bac">&#9670;&#160;</a></span>reverseRecovery</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +133,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto ChimeraTK::SystemTags::reverseRecovery {&quot;_ChimeraTK_DeviceRegister_reverseRecovery&quot;}</td>
+          <td class="memname">constexpr char ChimeraTK::SystemTags::reverseRecovery[] {&quot;_ChimeraTK_DeviceRegister_reverseRecovery&quot;}</td>
         </tr>
       </table>
   </td>
@@ -146,12 +146,12 @@ Static Public Attributes</h2></td></tr>
 <p>Used to flag a register as "reverse recovery". </p>
 <p>ApplicationCore can use this information to not write into this register on device recovery, but pull the latest value from it instead. Can also be used on write-only registers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_system_tags_8h_source.html#l00027">27</a> of file <a class="el" href="_system_tags_8h_source.html">SystemTags.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_system_tags_8h_source.html#l00029">29</a> of file <a class="el" href="_system_tags_8h_source.html">SystemTags.h</a>.</p>
 
 </div>
 </div>
-<a id="ab1dd83a93afe3940394225255e71a7fd" name="ab1dd83a93afe3940394225255e71a7fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1dd83a93afe3940394225255e71a7fd">&#9670;&#160;</a></span>statusOutput</h2>
+<a id="af066d767b3516936c063f9805fe39974" name="af066d767b3516936c063f9805fe39974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af066d767b3516936c063f9805fe39974">&#9670;&#160;</a></span>statusOutput</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +160,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto ChimeraTK::SystemTags::statusOutput {&quot;_ChimeraTK_StatusOutput_statusOutput&quot;}</td>
+          <td class="memname">constexpr char ChimeraTK::SystemTags::statusOutput[] {&quot;_ChimeraTK_StatusOutput_statusOutput&quot;}</td>
         </tr>
       </table>
   </td>
@@ -172,7 +172,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Used to mark something as aggregable by ApplicationCore's status aggregator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_system_tags_8h_source.html#l00020">20</a> of file <a class="el" href="_system_tags_8h_source.html">SystemTags.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_system_tags_8h_source.html#l00021">21</a> of file <a class="el" href="_system_tags_8h_source.html">SystemTags.h</a>.</p>
 
 </div>
 </div>

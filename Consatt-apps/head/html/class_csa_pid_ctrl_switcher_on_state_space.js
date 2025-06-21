@@ -23,6 +23,7 @@ var class_csa_pid_ctrl_switcher_on_state_space =
     [ "isCtrlRampingInProgress", "class_csa_pid_ctrl_switcher_on_state_space.html#a3b04cac50d1c9a59ffff9b185bb60c71", null ],
     [ "isCtrlSafetyHoldOn", "class_csa_pid_ctrl_switcher_on_state_space.html#a5b84ac6e8b4c9f37c69c6735cc684b66", null ],
     [ "isCtrlSwitchingInProgress", "class_csa_pid_ctrl_switcher_on_state_space.html#acb046d1a9cc8fb95c81911fa02e623ae", null ],
+    [ "isFastPiezoChannelFunctional", "class_csa_pid_ctrl_switcher_on_state_space.html#af83e5ab81d29b8cf016d3dc67a83b3c9", null ],
     [ "isStageLockable", "class_csa_pid_ctrl_switcher_on_state_space.html#a7252927b0a202566fc8cf572c8702a50", null ],
     [ "pzt4ChannelSettingsCb", "class_csa_pid_ctrl_switcher_on_state_space.html#a818021178105c1da82b7303e56037fee", null ],
     [ "rampAndResetCtrl", "class_csa_pid_ctrl_switcher_on_state_space.html#aef8a1d4b97011c38a8eaf2c955472835", null ],
