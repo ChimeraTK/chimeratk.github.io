@@ -10,5 +10,6 @@ var dir_c4f004b0a33fd27f79e42c6ef0e1ea63 =
     [ "PyReadAnyGroup.h", "_py_read_any_group_8h.html", "_py_read_any_group_8h" ],
     [ "PyScalarAccessor.h", "_py_scalar_accessor_8h.html", "_py_scalar_accessor_8h" ],
     [ "PyTransferElement.h", "_py_transfer_element_8h.html", "_py_transfer_element_8h" ],
-    [ "PyVariableGroup.h", "_py_variable_group_8h.html", "_py_variable_group_8h" ]
+    [ "PyVariableGroup.h", "_py_variable_group_8h.html", "_py_variable_group_8h" ],
+    [ "PyVoidAccessor.h", "_py_void_accessor_8h.html", "_py_void_accessor_8h" ]
 ];

@@ -113,6 +113,7 @@ var annotated_dup =
       [ "PyTransferElement", "class_chimera_t_k_1_1_py_transfer_element.html", "class_chimera_t_k_1_1_py_transfer_element" ],
       [ "PyTransferElementBase", "class_chimera_t_k_1_1_py_transfer_element_base.html", "class_chimera_t_k_1_1_py_transfer_element_base" ],
       [ "PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", "class_chimera_t_k_1_1_py_variable_group" ],
+      [ "PyVoidAccessor", "class_chimera_t_k_1_1_py_void_accessor.html", "class_chimera_t_k_1_1_py_void_accessor" ],
       [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
       [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ],
       [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ],
@@ -152,6 +153,7 @@ var annotated_dup =
       [ "VoidAccessor", "class_chimera_t_k_1_1_void_accessor.html", "class_chimera_t_k_1_1_void_accessor" ],
       [ "VoidInput", "struct_chimera_t_k_1_1_void_input.html", "struct_chimera_t_k_1_1_void_input" ],
       [ "VoidOutput", "struct_chimera_t_k_1_1_void_output.html", "struct_chimera_t_k_1_1_void_output" ],
+      [ "VoidTypeTag", "class_chimera_t_k_1_1_void_type_tag.html", null ],
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],
       [ "XMLGenerator", "class_chimera_t_k_1_1_x_m_l_generator.html", "class_chimera_t_k_1_1_x_m_l_generator" ]
     ] ],
