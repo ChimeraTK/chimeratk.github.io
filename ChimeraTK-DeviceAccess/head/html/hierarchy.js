@@ -10,6 +10,9 @@ var hierarchy =
       [ "ChimeraTK::LNMBackend::AccessorPlugin< DoubleBufferPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::DoubleBufferPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html", null ]
       ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< FanOutPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::FanOutPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin.html", null ]
+      ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< ForcePollingReadPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html", null ]
       ] ],
@@ -333,6 +336,7 @@ var hierarchy =
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::DataConsistencyDecorator< UserType >", "class_chimera_t_k_1_1_data_consistency_decorator.html", null ],
+              [ "ChimeraTK::LNMBackend::FanOutPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin_decorator.html", null ],
               [ "TestNDRegisterAccessorDecorator< UserType >", "class_test_n_d_register_accessor_decorator.html", null ]
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
@@ -569,6 +573,9 @@ var hierarchy =
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_one_d_register_descriptor_base.html", null ],
@@ -631,6 +638,15 @@ var hierarchy =
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_scalar_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_scalar_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWithFanOutMainTarget", "struct_reg_with_fan_out_main_target.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWithFanOutTarget2", "struct_reg_with_fan_out_target2.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWithFanOutTarget3", "struct_reg_with_fan_out_target3.html", null ]
+        ] ],
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", [
           [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", null ]
         ] ],
@@ -743,6 +759,9 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_register_descriptor_base.html", null ],

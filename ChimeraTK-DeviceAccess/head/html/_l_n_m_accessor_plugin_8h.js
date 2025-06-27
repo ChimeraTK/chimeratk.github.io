@@ -11,5 +11,6 @@ var _l_n_m_accessor_plugin_8h =
     [ "ChimeraTK::LNMBackend::BitRangeAccessPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin" ],
     [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin" ],
     [ "ChimeraTK::LNMBackend::FixedTagModifierPlugin< Tag >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin" ],
+    [ "ChimeraTK::LNMBackend::FanOutPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin" ],
     [ "makePlugin", "_l_n_m_accessor_plugin_8h.html#acdeb68d7bebaa9232243ffbb49bb0ef4", null ]
 ];

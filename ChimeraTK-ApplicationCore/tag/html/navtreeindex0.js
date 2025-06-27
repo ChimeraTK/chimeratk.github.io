@@ -218,6 +218,10 @@ var NAVTREEINDEX0 =
 "_py_variable_group_8cc_source.html":[16,0,0,0,6,0,1,10],
 "_py_variable_group_8h.html":[16,0,0,0,6,0,0,10],
 "_py_variable_group_8h_source.html":[16,0,0,0,6,0,0,10],
+"_py_void_accessor_8cc.html":[16,0,0,0,6,0,1,11],
+"_py_void_accessor_8cc_source.html":[16,0,0,0,6,0,1,11],
+"_py_void_accessor_8h.html":[16,0,0,0,6,0,0,11],
+"_py_void_accessor_8h_source.html":[16,0,0,0,6,0,0,11],
 "_python_bindings_8cc.html":[16,0,0,0,6,0,1,8],
 "_python_bindings_8cc.html#ad1d2aa2e2e2ee982024aad4d8c637fb0":[16,0,0,0,6,0,1,8,1],
 "_python_bindings_8cc_source.html":[16,0,0,0,6,0,1,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "_setpoint_ramp_8h_source.html":[16,0,0,0,2,1,3],
 "_split_array_8h.html":[16,0,0,0,5,0,9],
 "_split_array_8h_source.html":[16,0,0,0,5,0,9],
-"_status_accessor_8h.html":[16,0,0,0,5,0,10],
-"_status_accessor_8h_source.html":[16,0,0,0,5,0,10],
-"_status_aggregator_8cc.html":[16,0,0,0,5,1,4],
-"_status_aggregator_8cc_source.html":[16,0,0,0,5,1,4],
-"_status_aggregator_8h.html":[16,0,0,0,5,0,11]
+"_status_accessor_8h.html":[16,0,0,0,5,0,10]
 };

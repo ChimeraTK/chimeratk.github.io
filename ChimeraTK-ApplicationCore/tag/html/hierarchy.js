@@ -452,8 +452,8 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< int64_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< std::string > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< T > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
-    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< Type > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
+    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< uint16_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< unsigned > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -656,7 +656,8 @@ var hierarchy =
         [ "ChimeraTK::PyModuleGroup", "class_chimera_t_k_1_1_py_module_group.html", null ],
         [ "ChimeraTK::PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", null ]
       ] ],
-      [ "ChimeraTK::PyScalarAccessor", "class_chimera_t_k_1_1_py_scalar_accessor.html", null ]
+      [ "ChimeraTK::PyScalarAccessor", "class_chimera_t_k_1_1_py_scalar_accessor.html", null ],
+      [ "ChimeraTK::PyVoidAccessor", "class_chimera_t_k_1_1_py_void_accessor.html", null ]
     ] ],
     [ "ChimeraTK::PyReadAnyGroup", "class_chimera_t_k_1_1_py_read_any_group.html", null ],
     [ "ChimeraTK::PythonModuleManager", "class_chimera_t_k_1_1_python_module_manager.html", null ],
@@ -666,6 +667,9 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::PyTransferElement< PyScalarAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", [
         [ "ChimeraTK::PyScalarAccessor", "class_chimera_t_k_1_1_py_scalar_accessor.html", null ]
+      ] ],
+      [ "ChimeraTK::PyTransferElement< PyVoidAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", [
+        [ "ChimeraTK::PyVoidAccessor", "class_chimera_t_k_1_1_py_void_accessor.html", null ]
       ] ],
       [ "ChimeraTK::PyTransferElement< DerivedAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", null ]
     ] ],
@@ -760,5 +764,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::VoidRegisterAccessor", null, [
       [ "ChimeraTK::VoidAccessor", "class_chimera_t_k_1_1_void_accessor.html", null ]
-    ] ]
+    ] ],
+    [ "ChimeraTK::VoidTypeTag< AccessorType >", "class_chimera_t_k_1_1_void_type_tag.html", null ]
 ];

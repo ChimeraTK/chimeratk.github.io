@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"_supported_user_types_8h.html#ae7a87d6ef5da36852a971cab2ac6eddc":[21,0,0,0,4,45,23],
+"_supported_user_types_8h.html#ae7a8921ab1ff250afdd79cc5f3c70fea":[21,0,0,0,4,45,15],
 "_supported_user_types_8h_source.html":[21,0,0,0,4,45],
 "_system_tags_8h.html":[21,0,0,0,4,46],
 "_system_tags_8h_source.html":[21,0,0,0,4,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "class_catalogue_generator.html#aec8418823f0aed01a99b353611d1b84e":[20,0,33,5],
 "class_catalogue_generator.html#aefc923f4483c293310efba405970d47d":[20,0,33,1],
 "class_chimera_t_k_1_1_access_mode_flags.html":[20,0,1,6],
-"class_chimera_t_k_1_1_access_mode_flags.html":[19,0,1,10],
-"class_chimera_t_k_1_1_access_mode_flags.html#a1d509b12bd747a392369d30c21acbfc2":[19,0,1,10,7],
-"class_chimera_t_k_1_1_access_mode_flags.html#a1d509b12bd747a392369d30c21acbfc2":[20,0,1,6,7]
+"class_chimera_t_k_1_1_access_mode_flags.html":[19,0,1,10]
 };

@@ -58,6 +58,9 @@ var test_l_map_backend_unified_8cpp =
     [ "RegLowerHalfOfFirmware", "struct_reg_lower_half_of_firmware.html", "struct_reg_lower_half_of_firmware" ],
     [ "RegUpperHalfOfFirmware", "struct_reg_upper_half_of_firmware.html", "struct_reg_upper_half_of_firmware" ],
     [ "Reg9BitsInChar", "struct_reg9_bits_in_char.html", "struct_reg9_bits_in_char" ],
+    [ "RegWithFanOutMainTarget", "struct_reg_with_fan_out_main_target.html", "struct_reg_with_fan_out_main_target" ],
+    [ "RegWithFanOutTarget2", "struct_reg_with_fan_out_target2.html", "struct_reg_with_fan_out_target2" ],
+    [ "RegWithFanOutTarget3", "struct_reg_with_fan_out_target3.html", "struct_reg_with_fan_out_target3" ],
     [ "BOOST_TEST_DYN_LINK", "test_l_map_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_l_map_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_unified_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ]

@@ -327,7 +327,10 @@ isStatusOutput</h2>
 <p><code>isStatusOutput</code> is a plugin that will mark a register as being compatible with the StatusOutput expectations from ApplicationCore.</p>
 <h2><a class="anchor" id="plugins_reference_is_reverse_recovery"></a>
 hasReverseRecovery</h2>
-<p><code>hasReverseRecovery</code> is a plugin that will mark a register as not being written to on device start-up, and potentially will be read instead. </p>
+<p><code>hasReverseRecovery</code> is a plugin that will mark a register as not being written to on device start-up, and potentially will be read instead.</p>
+<h2><a class="anchor" id="plugins_reference_fanout"></a>
+fanOut</h2>
+<p><code>fanOut</code> is a plugin that allows writing to multiple target registers in a single write operation. Any parameter starting with "target" will be taken as a register name for an additional target register (within the same logical name mapping device). All write operations to the main register will be directed to the main register itself as well as all specified targets. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
