@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_property_base.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_property_base-members.html">List of all members</a>  </div>
@@ -134,33 +133,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0033cff00aad08d04aea38303d3b946" id="r_aa0033cff00aad08d04aea38303d3b946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946">publishZeroMQ</a> ()</td></tr>
 <tr class="memdesc:aa0033cff00aad08d04aea38303d3b946"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on ZeroMQ publishing  <br /></td></tr>
 <tr class="separator:aa0033cff00aad08d04aea38303d3b946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9757c2844c0a7f1c0127f59c47b046" id="r_a2b9757c2844c0a7f1c0127f59c47b046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a2b9757c2844c0a7f1c0127f59c47b046">setMacroPulseNumberSource</a> (const std::string &amp;sourcePath)</td></tr>
+<tr class="memdesc:a2b9757c2844c0a7f1c0127f59c47b046"><td class="mdescLeft">&#160;</td><td class="mdescRight">set macro pulse number source, if configured  <br /></td></tr>
+<tr class="separator:a2b9757c2844c0a7f1c0127f59c47b046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ea0909d8c596fd5d7930c3f9194f2b" id="r_af9ea0909d8c596fd5d7930c3f9194f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#af9ea0909d8c596fd5d7930c3f9194f2b">setMacroPulseNumberSource</a> (const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt; &amp;macroPulseNumberSource)</td></tr>
 <tr class="separator:af9ea0909d8c596fd5d7930c3f9194f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd7f31c04b9cc0e30ecc415c3830c83" id="r_abcd7f31c04b9cc0e30ecc415c3830c83"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abcd7f31c04b9cc0e30ecc415c3830c83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#abcd7f31c04b9cc0e30ecc415c3830c83">setupOutputVar</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;processVar)</td></tr>
-<tr class="separator:abcd7f31c04b9cc0e30ecc415c3830c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a134dc7528496b00073ea5519d403b71e" id="r_a134dc7528496b00073ea5519d403b71e"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a134dc7528496b00073ea5519d403b71e">otherPropertiesToUpdate</a></td></tr>
-<tr class="memdesc:a134dc7528496b00073ea5519d403b71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of other properties which need to update their DOOCS buffers when this property is written from the DOOCS side.  <br /></td></tr>
-<tr class="separator:a134dc7528496b00073ea5519d403b71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca6ca6872bd2f50ba5ad50cc2b2d4dc" id="r_a2ca6ca6872bd2f50ba5ad50cc2b2d4dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">CommonlyUpdatedPropertySet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a2ca6ca6872bd2f50ba5ad50cc2b2d4dc">propertiesToUpdate</a> ()</td></tr>
+<tr class="memdesc:a2ca6ca6872bd2f50ba5ad50cc2b2d4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of properties which need to update their DOOCS buffers when any of them changes.  <br /></td></tr>
+<tr class="separator:a2ca6ca6872bd2f50ba5ad50cc2b2d4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af7feb7108c210432980262da7e2b87" id="r_a1af7feb7108c210432980262da7e2b87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a1af7feb7108c210432980262da7e2b87">hasOtherPropertiesToUpdate</a> ()</td></tr>
+<tr class="separator:a1af7feb7108c210432980262da7e2b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a84321bee2f774f409885cca97c6c8ff8" id="r_a84321bee2f774f409885cca97c6c8ff8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a84321bee2f774f409885cca97c6c8ff8">updateDoocsBuffer</a> (const TransferElementID &amp;transferElementId)=0</td></tr>
 <tr class="memdesc:a84321bee2f774f409885cca97c6c8ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update DOOCS buffer from PVs.  <br /></td></tr>
 <tr class="separator:a84321bee2f774f409885cca97c6c8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae680ac6f437a6408a935f86cc079cfac" id="r_ae680ac6f437a6408a935f86cc079cfac"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae680ac6f437a6408a935f86cc079cfac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ae680ac6f437a6408a935f86cc079cfac">setupOutputVar</a> (boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;processVar)</td></tr>
-<tr class="memdesc:ae680ac6f437a6408a935f86cc079cfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">should be called for output vars mapped to doocs registers processVar in data consistency group, initializes DOOCS error state and keeps a reference as _mainOutputVar  <br /></td></tr>
-<tr class="separator:ae680ac6f437a6408a935f86cc079cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc9d87cd04741a5a5ff39301b3043b1" id="r_a3cc9d87cd04741a5a5ff39301b3043b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a3cc9d87cd04741a5a5ff39301b3043b1">registerVariable</a> (TransferElementAbstractor &amp;var)</td></tr>
-<tr class="memdesc:a3cc9d87cd04741a5a5ff39301b3043b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">register a variable in consistency group  <br /></td></tr>
-<tr class="separator:a3cc9d87cd04741a5a5ff39301b3043b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c942ae0562ffc7ebecb6429c656e71" id="r_ae3c942ae0562ffc7ebecb6429c656e71"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae3c942ae0562ffc7ebecb6429c656e71"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ae3c942ae0562ffc7ebecb6429c656e71">registerVariable</a> (boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;var)</td></tr>
-<tr class="separator:ae3c942ae0562ffc7ebecb6429c656e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45099985e233e53f1affe25d1609b0ed" id="r_a45099985e233e53f1affe25d1609b0ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a45099985e233e53f1affe25d1609b0ed">setupOutputVar</a> (TransferElementAbstractor &amp;processVar)</td></tr>
+<tr class="memdesc:a45099985e233e53f1affe25d1609b0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">should be called for output vars mapped to doocs registers processVar in data consistency group, initializes DOOCS error state and keeps a reference as _mainOutputVar.  <br /></td></tr>
+<tr class="separator:a45099985e233e53f1affe25d1609b0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3f7dcd1a6a28f05968f8983894e90e" id="r_a8f3f7dcd1a6a28f05968f8983894e90e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a8f3f7dcd1a6a28f05968f8983894e90e">registerVariable</a> (TransferElementAbstractor &amp;var, bool update=true)</td></tr>
+<tr class="memdesc:a8f3f7dcd1a6a28f05968f8983894e90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">register a variable in consistency group If update=true, updates are processed with our updateDoocsBuffer function.  <br /></td></tr>
+<tr class="separator:a8f3f7dcd1a6a28f05968f8983894e90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748011619da365007e5f1ffaca82b29f" id="r_a748011619da365007e5f1ffaca82b29f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a748011619da365007e5f1ffaca82b29f">updateConsistency</a> (const TransferElementID &amp;updatedId)</td></tr>
 <tr class="memdesc:a748011619da365007e5f1ffaca82b29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">update for data consistency group  <br /></td></tr>
 <tr class="separator:a748011619da365007e5f1ffaca82b29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,15 +170,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:afd11e59ec01a446c193e6a1aeb5ca3fe" id="r_afd11e59ec01a446c193e6a1aeb5ca3fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#afd11e59ec01a446c193e6a1aeb5ca3fe">updateOthers</a> (bool handleLocking)</td></tr>
 <tr class="memdesc:afd11e59ec01a446c193e6a1aeb5ca3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">make sure other properties using these PVs see the update  <br /></td></tr>
 <tr class="separator:afd11e59ec01a446c193e6a1aeb5ca3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72ed760449f3452032bd381ba1cdb3f0" id="r_a72ed760449f3452032bd381ba1cdb3f0"><td class="memTemplParams" colspan="2">template&lt;typename SELF , typename UserType &gt; </td></tr>
-<tr class="memitem:a72ed760449f3452032bd381ba1cdb3f0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a72ed760449f3452032bd381ba1cdb3f0">sendArrayToDevice</a> (SELF *dfct, const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; &amp;processArray)</td></tr>
-<tr class="memdesc:a72ed760449f3452032bd381ba1cdb3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">a helper which unifies data-&gt;device for DOOCS_T = one of D_array&lt;DOOCS_PRIMITIVE_T&gt; or D_spectrum  <br /></td></tr>
-<tr class="separator:a72ed760449f3452032bd381ba1cdb3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689f5b25f1e3415f82953839d0a145de" id="r_a689f5b25f1e3415f82953839d0a145de"><td class="memTemplParams" colspan="2">template&lt;typename SELF , typename UserType &gt; </td></tr>
+<tr class="memitem:a689f5b25f1e3415f82953839d0a145de"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a689f5b25f1e3415f82953839d0a145de">sendArrayToDevice</a> (SELF *dfct, OneDRegisterAccessor&lt; UserType &gt; &amp;processArray)</td></tr>
+<tr class="memdesc:a689f5b25f1e3415f82953839d0a145de"><td class="mdescLeft">&#160;</td><td class="mdescRight">a helper which unifies data-&gt;device for DOOCS_T = one of D_array&lt;DOOCS_PRIMITIVE_T&gt; or D_spectrum  <br /></td></tr>
+<tr class="separator:a689f5b25f1e3415f82953839d0a145de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a74e7fad4053a18b7377c047421929cd6" id="r_a74e7fad4053a18b7377c047421929cd6"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a74e7fad4053a18b7377c047421929cd6">_macroPulseNumberSource</a></td></tr>
-<tr class="separator:a74e7fad4053a18b7377c047421929cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50fed374093bab70dac5a66c3fea487" id="r_ab50fed374093bab70dac5a66c3fea487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">CommonlyUpdatedPropertySet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ab50fed374093bab70dac5a66c3fea487">_propertiesToUpdate_cache</a></td></tr>
+<tr class="separator:ab50fed374093bab70dac5a66c3fea487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4593ea1c73db5dedf99148da5546900" id="r_ac4593ea1c73db5dedf99148da5546900"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ac4593ea1c73db5dedf99148da5546900">_propertiesToUpdate_cacheIsFinal</a> = false</td></tr>
+<tr class="separator:ac4593ea1c73db5dedf99148da5546900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e96e3146b498eaa8436f255fa1802d" id="r_a58e96e3146b498eaa8436f255fa1802d"><td class="memItemLeft" align="right" valign="top">ScalarRegisterAccessor&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a58e96e3146b498eaa8436f255fa1802d">_macroPulseNumberSource</a></td></tr>
+<tr class="separator:a58e96e3146b498eaa8436f255fa1802d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be1e73892ca1594417061c8500bb016" id="r_a0be1e73892ca1594417061c8500bb016"><td class="memItemLeft" align="right" valign="top">DataConsistencyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a0be1e73892ca1594417061c8500bb016">_consistencyGroup</a></td></tr>
 <tr class="separator:a0be1e73892ca1594417061c8500bb016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c117c4f68363e9c8ff1cb1ed752b37" id="r_aa8c117c4f68363e9c8ff1cb1ed752b37"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa8c117c4f68363e9c8ff1cb1ed752b37">_doocsPropertyName</a></td></tr>
@@ -193,8 +191,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a07e0c272a4cb7504c2cbcbfd11e4701c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce2aea8fa82cfe47100215fa85687b1" id="r_a5ce2aea8fa82cfe47100215fa85687b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a5ce2aea8fa82cfe47100215fa85687b1">_publishZMQ</a> {false}</td></tr>
 <tr class="separator:a5ce2aea8fa82cfe47100215fa85687b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c191c75303b7c5f1adfc5e6c94b805f" id="r_a6c191c75303b7c5f1adfc5e6c94b805f"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a6c191c75303b7c5f1adfc5e6c94b805f">_outputVarForVersionNum</a></td></tr>
-<tr class="separator:a6c191c75303b7c5f1adfc5e6c94b805f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95d5c88121971ef53af9a495326362f" id="r_af95d5c88121971ef53af9a495326362f"><td class="memItemLeft" align="right" valign="top">TransferElementAbstractor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#af95d5c88121971ef53af9a495326362f">_outputVarForVersionNum</a> {nullptr}</td></tr>
+<tr class="separator:af95d5c88121971ef53af9a495326362f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dcddac856de0f3b22d3020ddf043162" id="r_a6dcddac856de0f3b22d3020ddf043162"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a6dcddac856de0f3b22d3020ddf043162">_doocsSuccessfullyUpdated</a> {true}</td></tr>
 <tr class="separator:a6dcddac856de0f3b22d3020ddf043162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7226e87348331ab527255e37b8f9d6b0" id="r_a7226e87348331ab527255e37b8f9d6b0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a7226e87348331ab527255e37b8f9d6b0">_nDataLossWarnings</a> {0}</td></tr>
@@ -204,16 +202,13 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Base class used for all properties. </p>
 <p>Handles data consistency, ZMQ send, and synchronization with other DOOCS buffers All derived classes also must derive from DOOCS D_fct implementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00020">20</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00023">23</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae68830763316cd9e6bbf21439674d66e" name="ae68830763316cd9e6bbf21439674d66e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae68830763316cd9e6bbf21439674d66e">&#9670;&#160;</a></span>PropertyBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ChimeraTK::PropertyBase::PropertyBase </td>
@@ -239,14 +234,9 @@ Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00022">22</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00011">11</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
@@ -301,7 +291,7 @@ Protected Attributes</h2></td></tr>
 
 <p>implements timestamp workarounds for associated DOOCS property </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00067">67</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00076">76</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
@@ -330,7 +320,7 @@ Protected Attributes</h2></td></tr>
 
 <p>returns associated DOOCS property. Not null. </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00029">29</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00031">31</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +349,7 @@ Protected Attributes</h2></td></tr>
 
 <p>returns associated DOOCS location </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00027">27</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00029">29</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +378,56 @@ Protected Attributes</h2></td></tr>
 
 <p>default implementation returns timestamp of _outputVarForVersionNum </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00061">61</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00070">70</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+
+</div>
+</div>
+<a id="a1af7feb7108c210432980262da7e2b87" name="a1af7feb7108c210432980262da7e2b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af7feb7108c210432980262da7e2b87">&#9670;&#160;</a></span>hasOtherPropertiesToUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::PropertyBase::hasOtherPropertiesToUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00048">48</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ca6ca6872bd2f50ba5ad50cc2b2d4dc" name="a2ca6ca6872bd2f50ba5ad50cc2b2d4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca6ca6872bd2f50ba5ad50cc2b2d4dc">&#9670;&#160;</a></span>propertiesToUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">CommonlyUpdatedPropertySet</a> &amp; ChimeraTK::PropertyBase::propertiesToUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns list of properties which need to update their DOOCS buffers when any of them changes. </p>
+<p>This is used to synchronise multi-mapped PVs. </p>
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00168">168</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
@@ -417,42 +456,12 @@ Protected Attributes</h2></td></tr>
 
 <p>turns on ZeroMQ publishing </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00031">31</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00033">33</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
-<a id="ae3c942ae0562ffc7ebecb6429c656e71" name="ae3c942ae0562ffc7ebecb6429c656e71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3c942ae0562ffc7ebecb6429c656e71">&#9670;&#160;</a></span>registerVariable() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::PropertyBase::registerVariable </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>var</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00053">53</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
-
-</div>
-</div>
-<a id="a3cc9d87cd04741a5a5ff39301b3043b1" name="a3cc9d87cd04741a5a5ff39301b3043b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cc9d87cd04741a5a5ff39301b3043b1">&#9670;&#160;</a></span>registerVariable() <span class="overload">[2/2]</span></h2>
+<a id="a8f3f7dcd1a6a28f05968f8983894e90e" name="a8f3f7dcd1a6a28f05968f8983894e90e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3f7dcd1a6a28f05968f8983894e90e">&#9670;&#160;</a></span>registerVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,8 +473,18 @@ template&lt;typename T &gt; </div>
           <td class="memname">void ChimeraTK::PropertyBase::registerVariable </td>
           <td>(</td>
           <td class="paramtype">TransferElementAbstractor &amp;&#160;</td>
-          <td class="paramname"><em>var</em></td><td>)</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>update</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -475,14 +494,14 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>register a variable in consistency group </p>
+<p>register a variable in consistency group If update=true, updates are processed with our updateDoocsBuffer function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00011">11</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00015">15</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
-<a id="a72ed760449f3452032bd381ba1cdb3f0" name="a72ed760449f3452032bd381ba1cdb3f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72ed760449f3452032bd381ba1cdb3f0">&#9670;&#160;</a></span>sendArrayToDevice()</h2>
+<a id="a689f5b25f1e3415f82953839d0a145de" name="a689f5b25f1e3415f82953839d0a145de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689f5b25f1e3415f82953839d0a145de">&#9670;&#160;</a></span>sendArrayToDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +520,7 @@ template&lt;typename SELF , typename UserType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">OneDRegisterAccessor&lt; UserType &gt; &amp;&#160;</td>
           <td class="paramname"><em>processArray</em>&#160;</td>
         </tr>
         <tr>
@@ -519,7 +538,7 @@ template&lt;typename SELF , typename UserType &gt; </div>
 
 <p>a helper which unifies data-&gt;device for DOOCS_T = one of D_array&lt;DOOCS_PRIMITIVE_T&gt; or D_spectrum </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00104">104</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00109">109</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -549,12 +568,12 @@ template&lt;typename SELF , typename UserType &gt; </div>
 
 <p>send data via ZeroMQ if enabled and if DOOCS initialisation is complete </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00085">85</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00094">94</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
 <a id="af9ea0909d8c596fd5d7930c3f9194f2b" name="af9ea0909d8c596fd5d7930c3f9194f2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9ea0909d8c596fd5d7930c3f9194f2b">&#9670;&#160;</a></span>setMacroPulseNumberSource()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ea0909d8c596fd5d7930c3f9194f2b">&#9670;&#160;</a></span>setMacroPulseNumberSource() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,39 +588,37 @@ template&lt;typename SELF , typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00130">130</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00159">159</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
-<a id="abcd7f31c04b9cc0e30ecc415c3830c83" name="abcd7f31c04b9cc0e30ecc415c3830c83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd7f31c04b9cc0e30ecc415c3830c83">&#9670;&#160;</a></span>setupOutputVar() <span class="overload">[1/2]</span></h2>
+<a id="a2b9757c2844c0a7f1c0127f59c47b046" name="a2b9757c2844c0a7f1c0127f59c47b046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9757c2844c0a7f1c0127f59c47b046">&#9670;&#160;</a></span>setMacroPulseNumberSource() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void ChimeraTK::PropertyBase::setupOutputVar </td>
+          <td class="memname">void ChimeraTK::PropertyBase::setMacroPulseNumberSource </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>processVar</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>sourcePath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00093">93</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p>set macro pulse number source, if configured </p>
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00143">143</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
-<a id="ae680ac6f437a6408a935f86cc079cfac" name="ae680ac6f437a6408a935f86cc079cfac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae680ac6f437a6408a935f86cc079cfac">&#9670;&#160;</a></span>setupOutputVar() <span class="overload">[2/2]</span></h2>
+<a id="a45099985e233e53f1affe25d1609b0ed" name="a45099985e233e53f1affe25d1609b0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45099985e233e53f1affe25d1609b0ed">&#9670;&#160;</a></span>setupOutputVar()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -609,19 +626,22 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void ChimeraTK::PropertyBase::setupOutputVar </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">TransferElementAbstractor &amp;&#160;</td>
           <td class="paramname"><em>processVar</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>should be called for output vars mapped to doocs registers processVar in data consistency group, initializes DOOCS error state and keeps a reference as _mainOutputVar </p>
+<p>should be called for output vars mapped to doocs registers processVar in data consistency group, initializes DOOCS error state and keeps a reference as _mainOutputVar. </p>
+<p>processVar must be owned by this <a class="el" href="class_chimera_t_k_1_1_property_base.html" title="Base class used for all properties.">PropertyBase</a> instance for the entire lifetime of the object. </p>
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00098">98</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +671,7 @@ template&lt;typename T &gt; </div>
 
 <p>update for data consistency group </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00019">19</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00028">28</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
@@ -712,7 +732,7 @@ template&lt;typename T &gt; </div>
 
 <p>make sure other properties using these PVs see the update </p>
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00107">107</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8cc_source.html#l00116">116</a> of file <a class="el" href="_property_base_8cc_source.html">PropertyBase.cc</a>.</p>
 
 </div>
 </div>
@@ -737,7 +757,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00078">78</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00082">82</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +781,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00080">80</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00084">84</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +805,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00085">85</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00091">91</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -809,12 +829,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00081">81</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00085">85</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
-<a id="a74e7fad4053a18b7377c047421929cd6" name="a74e7fad4053a18b7377c047421929cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74e7fad4053a18b7377c047421929cd6">&#9670;&#160;</a></span>_macroPulseNumberSource</h2>
+<a id="a58e96e3146b498eaa8436f255fa1802d" name="a58e96e3146b498eaa8436f255fa1802d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e96e3146b498eaa8436f255fa1802d">&#9670;&#160;</a></span>_macroPulseNumberSource</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -823,7 +843,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;int64_t&gt; &gt; ChimeraTK::PropertyBase::_macroPulseNumberSource</td>
+          <td class="memname">ScalarRegisterAccessor&lt;int64_t&gt; ChimeraTK::PropertyBase::_macroPulseNumberSource</td>
         </tr>
       </table>
   </td>
@@ -833,7 +853,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00077">77</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00081">81</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -857,12 +877,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00087">87</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00093">93</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
-<a id="a6c191c75303b7c5f1adfc5e6c94b805f" name="a6c191c75303b7c5f1adfc5e6c94b805f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c191c75303b7c5f1adfc5e6c94b805f">&#9670;&#160;</a></span>_outputVarForVersionNum</h2>
+<a id="af95d5c88121971ef53af9a495326362f" name="af95d5c88121971ef53af9a495326362f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95d5c88121971ef53af9a495326362f">&#9670;&#160;</a></span>_outputVarForVersionNum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -871,7 +891,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;ChimeraTK::TransferElement&gt; ChimeraTK::PropertyBase::_outputVarForVersionNum</td>
+          <td class="memname">TransferElementAbstractor* ChimeraTK::PropertyBase::_outputVarForVersionNum {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -881,7 +901,55 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00084">84</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00090">90</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+
+</div>
+</div>
+<a id="ab50fed374093bab70dac5a66c3fea487" name="ab50fed374093bab70dac5a66c3fea487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50fed374093bab70dac5a66c3fea487">&#9670;&#160;</a></span>_propertiesToUpdate_cache</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">CommonlyUpdatedPropertySet</a> ChimeraTK::PropertyBase::_propertiesToUpdate_cache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00044">44</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+
+</div>
+</div>
+<a id="ac4593ea1c73db5dedf99148da5546900" name="ac4593ea1c73db5dedf99148da5546900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4593ea1c73db5dedf99148da5546900">&#9670;&#160;</a></span>_propertiesToUpdate_cacheIsFinal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::PropertyBase::_propertiesToUpdate_cacheIsFinal = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00045">45</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -905,26 +973,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00082">82</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
-
-</div>
-</div>
-<a id="a134dc7528496b00073ea5519d403b71e" name="a134dc7528496b00073ea5519d403b71e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a134dc7528496b00073ea5519d403b71e">&#9670;&#160;</a></span>otherPropertiesToUpdate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::set&lt;boost::weak_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a>&gt; &gt; ChimeraTK::PropertyBase::otherPropertiesToUpdate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>List of other properties which need to update their DOOCS buffers when this property is written from the DOOCS side. </p>
-<p>This is used to synchronise multi-mapped PVs. </p>
-
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00037">37</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00086">86</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>

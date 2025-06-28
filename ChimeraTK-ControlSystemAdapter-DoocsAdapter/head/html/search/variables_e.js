@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['received_0',['received',['../struct_z_m_q_fixture.html#a6e44e7e133d249ab1e7b13d94348738e',1,'ZMQFixture']]],
-  ['receivedinfo_1',['receivedInfo',['../struct_z_m_q_fixture.html#a78821ee0a22f07af2aa55ea37954468f',1,'ZMQFixture']]],
-  ['referencetestapplication_2',['referencetestapplication',['../struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73',1,'GlobalFixture::referenceTestApplication'],['../reference_test_doocs_server_8cc.html#a84752c4a47e5d0688a72b1a9be1d9e6e',1,'referenceTestApplication:&#160;referenceTestDoocsServer.cc']]],
-  ['res1_3',['res1',['../_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a3a885966d0780b449af5eacf4e8d20af',1,'DOOCSProcessVariableAdapter_testCases_numericals.hpp']]],
-  ['res2_4',['res2',['../_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a404b15c3a6446483b06ed30dd38c0c4b',1,'DOOCSProcessVariableAdapter_testCases_numericals.hpp']]],
-  ['res3_5',['res3',['../_d_o_o_c_s_process_variable_adapter__test_cases__numericals_8hpp.html#a2e08674f608dad9fc7d6abe4627d06ea',1,'DOOCSProcessVariableAdapter_testCases_numericals.hpp']]],
-  ['rpcno_6',['rpcNo',['../struct_global_fixture.html#af4d07773622b270bc44eed044d0d8d39',1,'GlobalFixture']]]
+  ['persist_0',['persist',['../struct_chimera_t_k_1_1_property_attributes.html#a6e3b89d5ad36c797f7013e541c696122',1,'ChimeraTK::PropertyAttributes']]],
+  ['property_5fname_1',['property_name',['../server_test_ifff_8cpp.html#a3a0ff8a947b99ecd7440e172d57d2c92',1,'PROPERTY_NAME:&#160;serverTestIfff.cpp'],['../server_test_iiii_8cpp.html#a3a0ff8a947b99ecd7440e172d57d2c92',1,'PROPERTY_NAME:&#160;serverTestIiii.cpp'],['../server_test_xy_8cpp.html#a642e190f1867ffcf3d68888589bea066',1,'PROPERTY_NAME:&#160;serverTestXy.cpp']]],
+  ['publishzmq_2',['publishZMQ',['../struct_chimera_t_k_1_1_property_attributes.html#a2e90872d5391a4c6e71efe3b2057f061',1,'ChimeraTK::PropertyAttributes']]],
+  ['pvmanagers_3',['pvManagers',['../struct_device_fixture.html#a260341f495a49ff92b8b876e684a7512',1,'DeviceFixture']]]
 ];

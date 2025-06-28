@@ -10,11 +10,12 @@ var searchData=
   ['senderthread3_7',['senderThread3',['../example2_8cc.html#afa7d677914042083fdf555976c6f9db1',1,'example2.cc']]],
   ['set_8',['set',['../structcppext_1_1detail_1_1shared__state__ptr.html#a480e9bb2e3289bcd5248786811d07ebc',1,'cppext::detail::shared_state_ptr']]],
   ['setnotificationqueue_9',['setNotificationQueue',['../classcppext_1_1future__queue__base.html#a4fb255621822eef8ed3016f2d1c97a27',1,'cppext::future_queue_base']]],
-  ['shared_5fstate_10',['shared_state',['../structcppext_1_1detail_1_1shared__state.html#a064776e8622d19ae7c9df771d5d99e5a',1,'cppext::detail::shared_state::shared_state()'],['../structcppext_1_1detail_1_1shared__state_3_01void_01_4.html#a81037aec2d52d66409bc943ef9662c4f',1,'cppext::detail::shared_state&lt; void &gt;::shared_state()'],['../structcppext_1_1detail_1_1shared__state.html',1,'cppext::detail::shared_state&lt; T &gt;']]],
-  ['shared_5fstate_3c_20void_20_3e_11',['shared_state&lt; void &gt;',['../structcppext_1_1detail_1_1shared__state_3_01void_01_4.html',1,'cppext::detail']]],
-  ['shared_5fstate_5fbase_12',['shared_state_base',['../structcppext_1_1detail_1_1shared__state__base.html#a3b6af4fe068ce075ebe0d843ca48b8ec',1,'cppext::detail::shared_state_base::shared_state_base()'],['../structcppext_1_1detail_1_1shared__state__base.html',1,'cppext::detail::shared_state_base']]],
-  ['shared_5fstate_5fptr_13',['shared_state_ptr',['../structcppext_1_1detail_1_1shared__state__ptr.html#a591b1105be3b19b3bfc93c62c3034043',1,'cppext::detail::shared_state_ptr::shared_state_ptr()'],['../structcppext_1_1detail_1_1shared__state__ptr.html#acc90a96eacbbf9e3b1f307eefc50f5b2',1,'cppext::detail::shared_state_ptr::shared_state_ptr(const shared_state_ptr &amp;other)'],['../structcppext_1_1detail_1_1shared__state__ptr.html',1,'cppext::detail::shared_state_ptr']]],
-  ['size_14',['size',['../classcppext_1_1future__queue__base.html#af804285e4a73ec24294bf304ab5cb186',1,'cppext::future_queue_base']]],
-  ['std_15',['std',['../namespacestd.html',1,'']]],
-  ['swap_5fdata_16',['SWAP_DATA',['../classcppext_1_1_s_w_a_p___d_a_t_a.html',1,'cppext']]]
+  ['setthreadname_10',['setThreadName',['../namespacecppext.html#a26267838234d0db28091107770f23f56',1,'cppext']]],
+  ['shared_5fstate_11',['shared_state',['../structcppext_1_1detail_1_1shared__state.html#a064776e8622d19ae7c9df771d5d99e5a',1,'cppext::detail::shared_state::shared_state()'],['../structcppext_1_1detail_1_1shared__state_3_01void_01_4.html#a81037aec2d52d66409bc943ef9662c4f',1,'cppext::detail::shared_state&lt; void &gt;::shared_state()'],['../structcppext_1_1detail_1_1shared__state.html',1,'cppext::detail::shared_state&lt; T &gt;']]],
+  ['shared_5fstate_3c_20void_20_3e_12',['shared_state&lt; void &gt;',['../structcppext_1_1detail_1_1shared__state_3_01void_01_4.html',1,'cppext::detail']]],
+  ['shared_5fstate_5fbase_13',['shared_state_base',['../structcppext_1_1detail_1_1shared__state__base.html#a3b6af4fe068ce075ebe0d843ca48b8ec',1,'cppext::detail::shared_state_base::shared_state_base()'],['../structcppext_1_1detail_1_1shared__state__base.html',1,'cppext::detail::shared_state_base']]],
+  ['shared_5fstate_5fptr_14',['shared_state_ptr',['../structcppext_1_1detail_1_1shared__state__ptr.html#a591b1105be3b19b3bfc93c62c3034043',1,'cppext::detail::shared_state_ptr::shared_state_ptr()'],['../structcppext_1_1detail_1_1shared__state__ptr.html#acc90a96eacbbf9e3b1f307eefc50f5b2',1,'cppext::detail::shared_state_ptr::shared_state_ptr(const shared_state_ptr &amp;other)'],['../structcppext_1_1detail_1_1shared__state__ptr.html',1,'cppext::detail::shared_state_ptr']]],
+  ['size_15',['size',['../classcppext_1_1future__queue__base.html#af804285e4a73ec24294bf304ab5cb186',1,'cppext::future_queue_base']]],
+  ['std_16',['std',['../namespacestd.html',1,'']]],
+  ['swap_5fdata_17',['SWAP_DATA',['../classcppext_1_1_s_w_a_p___d_a_t_a.html',1,'cppext']]]
 ];

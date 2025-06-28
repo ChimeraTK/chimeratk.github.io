@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['waituntilinitialised_0',['waitUntilInitialised',['../class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38',1,'ChimeraTK::DoocsAdapter']]],
-  ['write_1',['write',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa88769179f52993aaec24d66ac4f2a2e',1,'ChimeraTK::CSAdapterEqFct::write()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a6c5b1ebdd8b4347e9c5cd06104ed79c0',1,'ChimeraTK::DoocsSpectrum::write()']]]
+  ['variablemapper_0',['variablemapper',['../class_chimera_t_k_1_1_variable_mapper.html#ad042399bc493b6ce1631bbd95fbd381b',1,'ChimeraTK::VariableMapper::VariableMapper(VariableMapper &amp;)=delete'],['../class_chimera_t_k_1_1_variable_mapper.html#a10d70f14b9a298cd1b44d1dbbc5d2bc7',1,'ChimeraTK::VariableMapper::VariableMapper()=default']]],
+  ['vectorfromfile_1',['vectorFromFile',['../server_test_array_persistence_8cpp.html#a77d53b5056c6dd343dabbab23c997346',1,'serverTestArrayPersistence.cpp']]],
+  ['vectortofile_2',['vectorToFile',['../server_test_array_persistence_8cpp.html#a8c1975b141c0049760d2516659263abe',1,'serverTestArrayPersistence.cpp']]]
 ];

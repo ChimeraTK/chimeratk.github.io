@@ -48,6 +48,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -58,7 +59,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -81,10 +82,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"class_chimera_t_k_1_1_doocs_p_v_factory.html#aa39ca83409ab6a864386a0dbf504e7a8",
-"dir_68f3e33577dcba624875e08d7c32489c.html",
-"server_test_read_write_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8",
-"struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html#a8478f85bc264e7c4474034e70bbebd39"
+"class_chimera_t_k_1_1_doocs_p_v_factory.html#a4864aa67d8900988a961c03472945065",
+"class_chimera_t_k_1_1_variable_mapper.html#a398d4909b87ea3819103d582741e91e0",
+"server_based_test_tools_8h.html#a144561068fc8e9326fb24b82cba2b1ad",
+"struct_chimera_t_k_1_1_location_info.html#a7193b14b443e699a44394cea9b3fa494"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

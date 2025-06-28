@@ -22,6 +22,7 @@ var hierarchy =
     [ "D_xy", null, [
       [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ]
     ] ],
+    [ "DataMatchingFixture", "struct_data_matching_fixture.html", null ],
     [ "DeviceFixture", "struct_device_fixture.html", null ],
     [ "DOOCS_T", null, [
       [ "ChimeraTK::DoocsProcessArray< DOOCS_T, DOOCS_PRIMITIVE_T >", "class_chimera_t_k_1_1_doocs_process_array.html", null ],
@@ -47,6 +48,9 @@ var hierarchy =
     [ "MappedImage", null, [
       [ "ChimeraTK::MappedDoocsImg", "struct_chimera_t_k_1_1_mapped_doocs_img.html", null ]
     ] ],
+    [ "NDRegisterAccessorDecorator", null, [
+      [ "ChimeraTK::RoutingDecorator< UserType >", "class_chimera_t_k_1_1_routing_decorator.html", null ]
+    ] ],
     [ "boost::noncopyable", null, [
       [ "ChimeraTK::CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", null ],
       [ "ChimeraTK::DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", null ],
@@ -61,27 +65,21 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", null ],
     [ "ChimeraTK::PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", [
-      [ "ChimeraTK::AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", null ],
-      [ "ChimeraTK::IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", null ],
-      [ "ChimeraTK::IiiiDescription", "struct_chimera_t_k_1_1_iiii_description.html", null ],
-      [ "ChimeraTK::ImageDescription", "struct_chimera_t_k_1_1_image_description.html", null ],
       [ "ChimeraTK::LocationInfo", "struct_chimera_t_k_1_1_location_info.html", null ],
-      [ "ChimeraTK::SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", null ],
-      [ "ChimeraTK::XyDescription", "struct_chimera_t_k_1_1_xy_description.html", null ]
-    ] ],
-    [ "ChimeraTK::PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", [
-      [ "ChimeraTK::AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", null ],
-      [ "ChimeraTK::IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", null ],
-      [ "ChimeraTK::IiiiDescription", "struct_chimera_t_k_1_1_iiii_description.html", null ],
-      [ "ChimeraTK::ImageDescription", "struct_chimera_t_k_1_1_image_description.html", null ],
-      [ "ChimeraTK::SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", null ],
-      [ "ChimeraTK::XyDescription", "struct_chimera_t_k_1_1_xy_description.html", null ]
+      [ "ChimeraTK::PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", [
+        [ "ChimeraTK::AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", null ],
+        [ "ChimeraTK::IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", null ],
+        [ "ChimeraTK::IiiiDescription", "struct_chimera_t_k_1_1_iiii_description.html", null ],
+        [ "ChimeraTK::ImageDescription", "struct_chimera_t_k_1_1_image_description.html", null ],
+        [ "ChimeraTK::SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", null ],
+        [ "ChimeraTK::XyDescription", "struct_chimera_t_k_1_1_xy_description.html", null ]
+      ] ]
     ] ],
     [ "ReferenceTestApplication", null, [
       [ "ExtendedTestApplication", "struct_extended_test_application.html", null ]
     ] ],
+    [ "ChimeraTK::RoutingDecoratorDomain", "class_chimera_t_k_1_1_routing_decorator_domain.html", null ],
     [ "ChimeraTK::DoocsUpdater::ToDoocsUpdateDescriptor", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html", null ],
     [ "ChimeraTK::VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", null ],
-    [ "ZmqData", "struct_zmq_data.html", null ],
-    [ "ZMQFixture< ExpectedValueType >", "struct_z_m_q_fixture.html", null ]
+    [ "ZeroMQFixture< SetValueType, ExpectedValueType >", "struct_zero_m_q_fixture.html", null ]
 ];
