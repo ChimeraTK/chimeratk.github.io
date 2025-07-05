@@ -584,7 +584,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="Accessor class to read and write 2D registers.">TwoDRegisterAccessor</a> object for the given register. </p>
-<p>This allows to read and write transparently 2-dimensional registers. The register accessor is similar to the 1-dimensional <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">BufferingRegisterAccessor</a>.</p>
+<p>This allows to read and write transparently 2-dimensional registers.</p>
 <p>The optional arguments allow to restrict the accessor to a region of interest in the 2D register: numberOfElements specifies the number of elements per channel to read from the register. elementsOffset is the first element index for each channel to read.</p>
 <p>TODO: Currently only the restriction to a smaller region of interest is only possible in one dimension. Support for the second dimension should be added as well, but it will involve an internal interface change. Since all current backends will not be able to optimise the performance when reducing the number of channels, this change is postponed. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="accessor2_d_8cpp-example.html#a5">accessor2D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a6">accessor2D_multiplexed.cpp</a>.</dd>

@@ -301,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aea884943cf09b1544983a16d9438ae18 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType, typename TAG = std::nullptr_t&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;user_type UserType, typename TAG = std::nullptr_t&gt;<br />
 class ChimeraTK::ScalarRegisterAccessor&lt; UserType, TAG &gt;</div><p><a class="el" href="class_accessor.html">Accessor</a> class to read and write scalar registers transparently by using the accessor object like a variable of the type UserType. </p>
 <p>Conversion to and from the UserType will be handled by a data converter matching the register description in the map, if required. Obtain the accessor using the <a class="el" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77" title="Get a ScalarRegisterObject object for the given register.">Device::getScalarRegisterAccessor()</a> function.</p>
 <p>Note: Transfers between the device and the internal buffer need to be triggered using the <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device.">read()</a> and <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aefb2a684e4afb7d55e6147fbe5a332ee">write()</a> functions before reading from resp. after writing to the buffer using the operators.</p>
@@ -317,7 +317,7 @@ class ChimeraTK::ScalarRegisterAccessor&lt; UserType, TAG &gt;</div><p><a class=
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::ScalarRegisterAccessor </td>
@@ -342,7 +342,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::ScalarRegisterAccessor </td>
@@ -368,7 +368,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
 <div class="memtemplate">
 template&lt;typename COOKED_TYPE &gt; </div>
       <table class="memname">
@@ -394,7 +394,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
+template&lt;user_type UserType, typename TAG  = std::nullptr_t&gt; </div>
 <div class="memtemplate">
 template&lt;typename OTHER_TAG &gt; </div>
 <table class="mlabels">
@@ -427,7 +427,7 @@ template&lt;typename OTHER_TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
+template&lt;user_type UserType, typename TAG  = std::nullptr_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -458,7 +458,7 @@ template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
 <div class="memtemplate">
 template&lt;typename OTHER_TAG &gt; </div>
       <table class="memname">
@@ -483,7 +483,7 @@ template&lt;typename OTHER_TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
+template&lt;user_type UserType, typename TAG  = std::nullptr_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -514,7 +514,7 @@ template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
+template&lt;user_type UserType, typename TAG  = std::nullptr_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -545,7 +545,7 @@ template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">UserType <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::operator++ </td>
@@ -569,7 +569,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
+template&lt;user_type UserType, typename TAG  = std::nullptr_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -600,7 +600,7 @@ template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">UserType <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::operator-- </td>
@@ -624,7 +624,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt; UserType, TAG &gt; &amp; <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::operator= </td>
@@ -648,7 +648,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">UserType <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::readAndGet </td>
@@ -671,7 +671,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::setAndWrite </td>
@@ -706,7 +706,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
 <div class="memtemplate">
 template&lt;typename COOKED_TYPE &gt; </div>
       <table class="memname">
@@ -733,7 +733,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG &gt; </div>
+template&lt;user_type UserType, typename TAG &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType, TAG &gt;::writeIfDifferent </td>
@@ -775,7 +775,7 @@ template&lt;typename UserType , typename TAG &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType , typename TAG  = std::nullptr_t&gt; </div>
+template&lt;user_type UserType, typename TAG  = std::nullptr_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('namespace_chimera_t_k.html',''); initR
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#concepts">Concepts</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -150,8 +151,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper Class to avoid vector&lt;bool&gt; problems.  <a href="class_chimera_t_k_1_1_boolean.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">BufferingRegisterAccessor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html">const_BackendRegisterCatalogueImplIterator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of the catalogue const iterator which is templated to the actual BackendRegisterInfo implementation provided by the backend.  <a href="class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#details">More...</a><br /></td></tr>
@@ -315,8 +314,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_metadata_catalogue.html">MetadataCatalogue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for backend metadata.  <a href="class_chimera_t_k_1_1_metadata_catalogue.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_multiplexed_data_accessor.html">MultiplexedDataAccessor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">N-dimensional register accessor.  <a href="class_chimera_t_k_1_1_n_d_register_accessor.html#details">More...</a><br /></td></tr>
@@ -534,6 +531,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_xdma_backend.html">XdmaBackend</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_xdma_intf_abstract.html">XdmaIntfAbstract</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concept_chimera_t_k_1_1accessor__abstractor.html">accessor_abstractor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept requiring a type to be an NDRegisterAccessorAbstractor-derived type. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concept_chimera_t_k_1_1user__type.html">user_type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept requiring a type to be one of the supported <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> UserTypes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -861,7 +867,7 @@ template&lt;typename T &gt; </div>
 
 <p>Map of UserType to a single type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00451">451</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00465">465</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -881,7 +887,7 @@ template&lt;typename T &gt; </div>
 
 <p>Just like SingleTypeUserTypeMap, only without the <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">ChimeraTK::Void</a> type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00459">459</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00473">473</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +906,7 @@ template&lt;typename T &gt; </div>
 <p>Map of UserType to value of the UserType. </p>
 <p>Used e.g. by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> to store coefficients etc. in dependence of the UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00376">376</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00390">390</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -918,7 +924,7 @@ template&lt;typename T &gt; </div>
 
 <p>Just like userTypeMap, only without the <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">ChimeraTK::Void</a> type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00384">384</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00398">398</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1269,7 +1275,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 
 <p><a class="el" href="namespace_chimera_t_k.html#a0c6a8b37004cfe48be8855986e1316c8" title="callForRawType() is similar to callForType(), just with a subset of supported data types which can be...">callForRawType()</a> is similar to <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a>, just with a subset of supported data types which can be raw types in the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l01024">1024</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l01041">1041</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1304,7 +1310,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>Alternate form of <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a> which takes a <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">DataType</a> as a runtime type description. </p>
 <p>If <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087" title="The data type/concept does not exist, e.g. there is no raw transfer (do not confuse with Void)">DataType::none</a> is passed, std::bad_cast is thrown. For more details have a look at the other form. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00950">950</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00967">967</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1346,7 +1352,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>std::cout &lt;&lt; typeid(int).name() &lt;&lt; std::endl;</p>
 <p>Please note that this call is not as efficient as a direct call to a template. For each call all allowed user types have to be tested against the given type_info. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00919">919</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00936">936</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1381,7 +1387,7 @@ template&lt;typename TYPE_DESCRIPTOR , typename LAMBDATYPE &gt; </div>
 <p>Like <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a> but omit the <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">Void</a> data type. </p>
 <p>typeDescriptor can be either a std::type_info or a <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">ChimeraTK::DataType</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l01011">1011</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l01028">1028</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1912,7 +1918,7 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 <p>Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead of the callable class requred by the boost version. </p>
 <p>The lambda must have one single argument of the type auto, which will be a boost::fusion::pair&lt;&gt;. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00888">888</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00905">905</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -2495,7 +2501,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 <p>Helper function to convert numeric data into any UserType (even if it is a string etc.). </p>
 <p>The conversion is done with proper rounding and range checking. It will throw boost::numeric::positive_overflow resp. boost::numeric::negative_overflow if the data is out of range. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00200">200</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00214">214</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -2690,7 +2696,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00086">86</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00087">87</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3035,7 +3041,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00080">80</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00081">81</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3073,7 +3079,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00039">39</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00040">40</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3169,7 +3175,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00059">59</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00060">60</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3194,7 +3200,7 @@ template&lt;typename NUMERIC , typename UserType &gt; </div>
 <p>Helper function to convert numeric data into any UserType (even if it is a string etc.). </p>
 <p>The conversion is done with proper rounding and range checking. It will throw boost::numeric::positive_overflow resp. boost::numeric::negative_overflow if the data is out of range. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00210">210</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00224">224</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3219,7 +3225,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <p>Helper function to convert any UserType data into any other UserType (even if it is a string etc.). </p>
 <p>The conversion is done with proper rounding and range checking for numeric types. It will return the closed possible value if the value is out of range. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00337">337</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00351">351</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>

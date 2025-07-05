@@ -23,7 +23,6 @@ var class_chimera_t_k_1_1_n_d_register_accessor =
     [ "makeCopyRegisterDecorator", "class_chimera_t_k_1_1_n_d_register_accessor.html#add81fefa0d27a7844637a7a6f4e79104", null ],
     [ "setAsCooked", "class_chimera_t_k_1_1_n_d_register_accessor.html#ac8bc09c1cd931bd3144461f4929d257e", null ],
     [ "setAsCooked_impl", "class_chimera_t_k_1_1_n_d_register_accessor.html#acced6e77f634ed68e4d66eef4cb48a41", null ],
-    [ "MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor.html#ab6255101bca3f241ade8a80d4ae0292f", null ],
     [ "RegisterAccessor", "class_chimera_t_k_1_1_n_d_register_accessor.html#a6915d546591b571ef2f0099548c9b726", null ],
     [ "buffer_2D", "class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770", null ]
 ];

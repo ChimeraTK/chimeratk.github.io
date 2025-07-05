@@ -130,7 +130,6 @@ var hierarchy =
     [ "ChimeraTK::Boolean", "class_chimera_t_k_1_1_boolean.html", null ],
     [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >::Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", null ],
     [ "ChimeraTK::NDRegisterAccessor< UserType >::Buffer", "struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html", null ],
-    [ "ChimeraTK::BufferingRegisterAccessor< UserType >", "class_chimera_t_k_1_1_buffering_register_accessor.html", null ],
     [ "CatalogueGenerator", "class_catalogue_generator.html", null ],
     [ "ChimeraTK::NumericAddressedRegisterInfo::ChannelInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html", null ],
     [ "DeviceFixture2D< Derived >::ConfigParams", "struct_device_fixture2_d_1_1_config_params.html", null ],
@@ -471,7 +470,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
-    [ "ChimeraTK::MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ],
     [ "MuxedArea1", "struct_muxed_area1.html", null ],
     [ "MuxedArea2", "struct_muxed_area2.html", null ],
     [ "MuxedFloat", "struct_muxed_float.html", null ],
@@ -897,17 +895,12 @@ var hierarchy =
       [ "UnknownVersionTestFixture", "struct_unknown_version_test_fixture.html", null ]
     ] ],
     [ "ChimeraTK::TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", [
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< unsigned char >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", null ]
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< ChimeraTK::Void >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", null ]
       ] ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< DataConsistencyKey::BaseType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< int32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [
