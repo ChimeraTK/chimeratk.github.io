@@ -44,6 +44,7 @@ var namespaces_dup =
     [ "testPythonReadAnyGroup", "namespacetest_python_read_any_group.html", "namespacetest_python_read_any_group" ],
     [ "testPythonScalarAccessors", "namespacetest_python_scalar_accessors.html", "namespacetest_python_scalar_accessors" ],
     [ "testPythonSimpleApp", "namespacetest_python_simple_app.html", "namespacetest_python_simple_app" ],
+    [ "testPythonUserInputValidator", "namespacetest_python_user_input_validator.html", "namespacetest_python_user_input_validator" ],
     [ "testPythonVariableGroup", "namespacetest_python_variable_group.html", "namespacetest_python_variable_group" ],
     [ "testPythonVersionNumber", "namespacetest_python_version_number.html", "namespacetest_python_version_number" ],
     [ "testPythonWithArray", "namespacetest_python_with_array.html", "namespacetest_python_with_array" ],

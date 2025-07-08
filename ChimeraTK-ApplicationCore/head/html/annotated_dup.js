@@ -112,6 +112,7 @@ var annotated_dup =
       [ "PythonModuleManager", "class_chimera_t_k_1_1_python_module_manager.html", "class_chimera_t_k_1_1_python_module_manager" ],
       [ "PyTransferElement", "class_chimera_t_k_1_1_py_transfer_element.html", "class_chimera_t_k_1_1_py_transfer_element" ],
       [ "PyTransferElementBase", "class_chimera_t_k_1_1_py_transfer_element_base.html", "class_chimera_t_k_1_1_py_transfer_element_base" ],
+      [ "PyUserInputValidator", "class_chimera_t_k_1_1_py_user_input_validator.html", "class_chimera_t_k_1_1_py_user_input_validator" ],
       [ "PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", "class_chimera_t_k_1_1_py_variable_group" ],
       [ "PyVoidAccessor", "class_chimera_t_k_1_1_py_void_accessor.html", "class_chimera_t_k_1_1_py_void_accessor" ],
       [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
@@ -173,6 +174,9 @@ var annotated_dup =
     ] ],
     [ "testPythonSimpleApp", "namespacetest_python_simple_app.html", [
       [ "MyMod", "classtest_python_simple_app_1_1_my_mod.html", "classtest_python_simple_app_1_1_my_mod" ]
+    ] ],
+    [ "testPythonUserInputValidator", "namespacetest_python_user_input_validator.html", [
+      [ "TestRunner", "classtest_python_user_input_validator_1_1_test_runner.html", "classtest_python_user_input_validator_1_1_test_runner" ]
     ] ],
     [ "testPythonVariableGroup", "namespacetest_python_variable_group.html", [
       [ "MyMod", "classtest_python_variable_group_1_1_my_mod.html", "classtest_python_variable_group_1_1_my_mod" ]
@@ -385,6 +389,7 @@ var annotated_dup =
       [ "testPython", "namespace_tests_1_1test_python.html", [
         [ "TestApp", "struct_tests_1_1test_python_1_1_test_app.html", "struct_tests_1_1test_python_1_1_test_app" ],
         [ "TestAppReadAny", "struct_tests_1_1test_python_1_1_test_app_read_any.html", "struct_tests_1_1test_python_1_1_test_app_read_any" ],
+        [ "TestAppUserInputValiador", "struct_tests_1_1test_python_1_1_test_app_user_input_valiador.html", "struct_tests_1_1test_python_1_1_test_app_user_input_valiador" ],
         [ "TestAppVersionNumber", "struct_tests_1_1test_python_1_1_test_app_version_number.html", "struct_tests_1_1test_python_1_1_test_app_version_number" ]
       ] ],
       [ "testScriptedInitialisationHandler", "namespace_tests_1_1test_scripted_initialisation_handler.html", [

@@ -84,6 +84,7 @@ var namespace_chimera_t_k =
     [ "PythonModuleManager", "class_chimera_t_k_1_1_python_module_manager.html", "class_chimera_t_k_1_1_python_module_manager" ],
     [ "PyTransferElement", "class_chimera_t_k_1_1_py_transfer_element.html", "class_chimera_t_k_1_1_py_transfer_element" ],
     [ "PyTransferElementBase", "class_chimera_t_k_1_1_py_transfer_element_base.html", "class_chimera_t_k_1_1_py_transfer_element_base" ],
+    [ "PyUserInputValidator", "class_chimera_t_k_1_1_py_user_input_validator.html", "class_chimera_t_k_1_1_py_user_input_validator" ],
     [ "PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", "class_chimera_t_k_1_1_py_variable_group" ],
     [ "PyVoidAccessor", "class_chimera_t_k_1_1_py_void_accessor.html", "class_chimera_t_k_1_1_py_void_accessor" ],
     [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
