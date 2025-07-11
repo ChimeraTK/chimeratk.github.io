@@ -44,6 +44,7 @@ var namespace_tests =
       [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#a4dca59926bcfb28ef9b3de4bcb50f1c8", null ],
       [ "BOOST_FIXTURE_TEST_CASE", "namespace_tests_1_1test_exception_handling.html#ae411032db01214d29a4b0a8b9b405bbd", null ]
     ] ],
+    [ "testFanIn", "namespace_tests_1_1test_fan_in.html", "namespace_tests_1_1test_fan_in" ],
     [ "testFanoutConnections", "namespace_tests_1_1test_fanout_connections.html", "namespace_tests_1_1test_fanout_connections" ],
     [ "testHierarchyModifyingGroup", "namespace_tests_1_1test_hierarchy_modifying_group.html", "namespace_tests_1_1test_hierarchy_modifying_group" ],
     [ "testIllegalNetworks", "namespace_tests_1_1test_illegal_networks.html", "namespace_tests_1_1test_illegal_networks" ],

@@ -32,7 +32,6 @@ var class_chimera_t_k_1_1_application =
     [ "setCurrentVersionNumber", "class_chimera_t_k_1_1_application.html#adea9d78e90e883d43758339a3c37c647", null ],
     [ "setVersionInfoProvider", "class_chimera_t_k_1_1_application.html#aeb8eb3bb825a95be1c72e65de5938668", null ],
     [ "shutdown", "class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a", null ],
-    [ "Accessor", "class_chimera_t_k_1_1_application.html#af6ffd104cd1bfe13fd84f63bcd1c2c44", null ],
     [ "ApplicationModule", "class_chimera_t_k_1_1_application.html#acfb4bf09dc26ce696cc077e79995dd42", null ],
     [ "ConfigReader", "class_chimera_t_k_1_1_application.html#ada75ae56b35b5bf88aca48da1012be67", null ],
     [ "ConnectionMaker", "class_chimera_t_k_1_1_application.html#a9798a81b66fe8dba37b7e53be7928890", null ],

@@ -38,7 +38,6 @@ var annotated_dup =
         [ "VertexProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties.html", "struct_chimera_t_k_1_1_model_1_1_vertex_properties" ],
         [ "VisitOrder", "struct_chimera_t_k_1_1_model_1_1_visit_order.html", "struct_chimera_t_k_1_1_model_1_1_visit_order" ]
       ] ],
-      [ "Accessor", "class_chimera_t_k_1_1_accessor.html", null ],
       [ "AccessorTypeTag", "class_chimera_t_k_1_1_accessor_type_tag.html", null ],
       [ "AggregatableMessage", "class_chimera_t_k_1_1_aggregatable_message.html", "class_chimera_t_k_1_1_aggregatable_message" ],
       [ "AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
@@ -53,8 +52,8 @@ var annotated_dup =
       [ "ArrayOutputReverseRecovery", "struct_chimera_t_k_1_1_array_output_reverse_recovery.html", "struct_chimera_t_k_1_1_array_output_reverse_recovery" ],
       [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ],
       [ "ArrayPollInput", "struct_chimera_t_k_1_1_array_poll_input.html", "struct_chimera_t_k_1_1_array_poll_input" ],
-      [ "ArrayPushInput", "struct_chimera_t_k_1_1_array_push_input.html", "struct_chimera_t_k_1_1_array_push_input" ],
-      [ "ArrayPushInputWB", "struct_chimera_t_k_1_1_array_push_input_w_b.html", "struct_chimera_t_k_1_1_array_push_input_w_b" ],
+      [ "ArrayPushInput", "class_chimera_t_k_1_1_array_push_input.html", "class_chimera_t_k_1_1_array_push_input" ],
+      [ "ArrayPushInputWB", "class_chimera_t_k_1_1_array_push_input_w_b.html", "class_chimera_t_k_1_1_array_push_input_w_b" ],
       [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
       [ "ConfigReader", "class_chimera_t_k_1_1_config_reader.html", "class_chimera_t_k_1_1_config_reader" ],
       [ "ConnectionMaker", "class_chimera_t_k_1_1_connection_maker.html", "class_chimera_t_k_1_1_connection_maker" ],
@@ -70,6 +69,7 @@ var annotated_dup =
       [ "EventMessageAggregator", "class_chimera_t_k_1_1_event_message_aggregator.html", "class_chimera_t_k_1_1_event_message_aggregator" ],
       [ "ExactMonitor", "struct_chimera_t_k_1_1_exact_monitor.html", "struct_chimera_t_k_1_1_exact_monitor" ],
       [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_exception_handling_decorator.html", "class_chimera_t_k_1_1_exception_handling_decorator" ],
+      [ "FanIn", "class_chimera_t_k_1_1_fan_in.html", "class_chimera_t_k_1_1_fan_in" ],
       [ "FanOut", "class_chimera_t_k_1_1_fan_out.html", "class_chimera_t_k_1_1_fan_out" ],
       [ "FanOutBase", "class_chimera_t_k_1_1_fan_out_base.html", "class_chimera_t_k_1_1_fan_out_base" ],
       [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html", "class_chimera_t_k_1_1_feeding_fan_out" ],
@@ -125,8 +125,8 @@ var annotated_dup =
       [ "ScalarOutputReverseRecovery", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery" ],
       [ "ScalarPipe", "struct_chimera_t_k_1_1_scalar_pipe.html", "struct_chimera_t_k_1_1_scalar_pipe" ],
       [ "ScalarPollInput", "struct_chimera_t_k_1_1_scalar_poll_input.html", "struct_chimera_t_k_1_1_scalar_poll_input" ],
-      [ "ScalarPushInput", "struct_chimera_t_k_1_1_scalar_push_input.html", "struct_chimera_t_k_1_1_scalar_push_input" ],
-      [ "ScalarPushInputWB", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", "struct_chimera_t_k_1_1_scalar_push_input_w_b" ],
+      [ "ScalarPushInput", "class_chimera_t_k_1_1_scalar_push_input.html", "class_chimera_t_k_1_1_scalar_push_input" ],
+      [ "ScalarPushInputWB", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", "class_chimera_t_k_1_1_scalar_push_input_w_b" ],
       [ "ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", "struct_chimera_t_k_1_1_scripted_init_handler" ],
       [ "SetDMapFilePath", "class_chimera_t_k_1_1_set_d_map_file_path.html", "class_chimera_t_k_1_1_set_d_map_file_path" ],
       [ "StatusAccessor", "struct_chimera_t_k_1_1_status_accessor.html", "struct_chimera_t_k_1_1_status_accessor" ],
@@ -281,6 +281,13 @@ var annotated_dup =
       ] ],
       [ "testDeviceInitialisationHandler", "namespace_tests_1_1test_device_initialisation_handler.html", [
         [ "TestApplication", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application.html", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application" ]
+      ] ],
+      [ "testFanIn", "namespace_tests_1_1test_fan_in.html", [
+        [ "TestAdditionalInputsApp", "class_tests_1_1test_fan_in_1_1_test_additional_inputs_app.html", "class_tests_1_1test_fan_in_1_1_test_additional_inputs_app" ],
+        [ "TestAggregatedValueApp", "class_tests_1_1test_fan_in_1_1_test_aggregated_value_app.html", "class_tests_1_1test_fan_in_1_1_test_aggregated_value_app" ],
+        [ "TestUserInputValidationApp", "class_tests_1_1test_fan_in_1_1_test_user_input_validation_app.html", "class_tests_1_1test_fan_in_1_1_test_user_input_validation_app" ],
+        [ "TheReceiverBase", "class_tests_1_1test_fan_in_1_1_the_receiver_base.html", "class_tests_1_1test_fan_in_1_1_the_receiver_base" ],
+        [ "TheSender", "class_tests_1_1test_fan_in_1_1_the_sender.html", "class_tests_1_1test_fan_in_1_1_the_sender" ]
       ] ],
       [ "testFanoutConnections", "namespace_tests_1_1test_fanout_connections.html", [
         [ "TestApplication1", "struct_tests_1_1test_fanout_connections_1_1_test_application1.html", "struct_tests_1_1test_fanout_connections_1_1_test_application1" ],
