@@ -107,47 +107,73 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html',''); initResiza
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_math_utils.html">MathUtils</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> std::enable_if&lt;std::is_<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span>&lt;T&gt;{}, <span class="keywordtype">bool</span>&gt;::type = true&gt;</div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">   26</a></span>  std::pair&lt;std::vector&lt;T&gt;, <span class="keywordtype">double</span>&gt; <a class="code hl_function" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">linspace2</a>(T start, T stop, <span class="keywordtype">size_t</span> elementCount, <span class="keywordtype">bool</span> endPoint = <span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::vector&lt;T&gt; result(elementCount);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">double</span> stepSize = (stop - start) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(elementCount - (endPoint ? 1 : 0));</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::generate(result.begin(), result.end(), [n = start, &amp;stepSize]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      auto val = n;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      n += stepSize;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      return val;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    });</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> std::make_pair(result, stepSize);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ContainerIterator, <span class="keyword">typename</span> ResultType&gt;</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespace_math_utils.html#a4c06dd1d33a4f7ca4409eb0380bcc4c8">   22</a></span>  <span class="keyword">inline</span> ResultType <a class="code hl_function" href="namespace_math_utils.html#a4c06dd1d33a4f7ca4409eb0380bcc4c8">polynomial</a>(</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      ContainerIterator polyCoefficientsStart, ContainerIterator polyCoefficientsEnd, ResultType value) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span>(polyCoefficientsStart == polyCoefficientsEnd) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">double</span> power = value;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Constant term</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">double</span> result = *polyCoefficientsStart;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// term 1 to N</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">while</span>(++polyCoefficientsStart != polyCoefficientsEnd) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      result += power * *polyCoefficientsStart;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      power = power * value;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ResultType<span class="keyword">&gt;</span>(result);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> std::enable_if&lt;std::is_<span class="keywordtype">int</span>egral&lt;T&gt;{}, <span class="keywordtype">bool</span>&gt;::type = true&gt;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  std::pair&lt;std::vector&lt;T&gt;, <span class="keywordtype">double</span>&gt; <a class="code hl_function" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">linspace2</a>(T start, T stop, <span class="keywordtype">size_t</span> elementCount, <span class="keywordtype">bool</span> endPoint = <span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> [values, stepSize] = linspace2&lt;double&gt;(start, stop, elementCount, endPoint);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">  /******************************************************************************************************************/</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::vector&lt;T&gt; result(elementCount);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::transform(</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        values.begin(), values.end(), result.begin(), [](<span class="keywordtype">double</span> v) { return static_cast&lt;T&gt;(std::floor(v)); });</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">return</span> std::make_pair(result, stepSize);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="namespace_math_utils.html#a61b2a34e7914d578d42a95aa6c8b4241">   67</a></span>  std::vector&lt;T&gt; <a class="code hl_function" href="namespace_math_utils.html#a61b2a34e7914d578d42a95aa6c8b4241">linspace</a>(T start, T stop, <span class="keywordtype">size_t</span> elementCount, <span class="keywordtype">bool</span> endPoint = <span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> linspace2&lt;T&gt;(start, stop, elementCount, endPoint).first;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> std::enable_if&lt;std::is_<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span>&lt;T&gt;{}, <span class="keywordtype">bool</span>&gt;::type = true&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">   60</a></span>  std::pair&lt;std::vector&lt;T&gt;, <span class="keywordtype">double</span>&gt; <a class="code hl_function" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">linspace2</a>(T start, T stop, <span class="keywordtype">size_t</span> elementCount, <span class="keywordtype">bool</span> endPoint = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::vector&lt;T&gt; result(elementCount);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">double</span> stepSize = (stop - start) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(elementCount - (endPoint ? 1 : 0));</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    std::generate(result.begin(), result.end(), [n = start, &amp;stepSize]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      auto val = n;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      n += stepSize;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      return val;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    });</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> std::make_pair(result, stepSize);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace MathUtils</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> std::enable_if&lt;std::is_<span class="keywordtype">int</span>egral&lt;T&gt;{}, <span class="keywordtype">bool</span>&gt;::type = true&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::pair&lt;std::vector&lt;T&gt;, <span class="keywordtype">double</span>&gt; <a class="code hl_function" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">linspace2</a>(T start, T stop, <span class="keywordtype">size_t</span> elementCount, <span class="keywordtype">bool</span> endPoint = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">auto</span> [values, stepSize] = linspace2&lt;double&gt;(start, stop, elementCount, endPoint);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::vector&lt;T&gt; result(elementCount);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    std::transform(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        values.begin(), values.end(), result.begin(), [](<span class="keywordtype">double</span> v) { return static_cast&lt;T&gt;(std::floor(v)); });</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> std::make_pair(result, stepSize);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="namespace_math_utils.html#a61b2a34e7914d578d42a95aa6c8b4241">  101</a></span>  std::vector&lt;T&gt; <a class="code hl_function" href="namespace_math_utils.html#a61b2a34e7914d578d42a95aa6c8b4241">linspace</a>(T start, T stop, <span class="keywordtype">size_t</span> elementCount, <span class="keywordtype">bool</span> endPoint = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> linspace2&lt;T&gt;(start, stop, elementCount, endPoint).first;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>} <span class="comment">// namespace MathUtils</span></div>
 <div class="ttc" id="anamespace_math_utils_html"><div class="ttname"><a href="namespace_math_utils.html">MathUtils</a></div><div class="ttdef"><b>Definition</b> <a href="_circular_statistics_8h_source.html#l00010">CircularStatistics.h:10</a></div></div>
-<div class="ttc" id="anamespace_math_utils_html_a5e19dd81b143f321a673307c8d09ad6d"><div class="ttname"><a href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">MathUtils::linspace2</a></div><div class="ttdeci">std::pair&lt; std::vector&lt; T &gt;, double &gt; linspace2(T start, T stop, size_t elementCount, bool endPoint=true)</div><div class="ttdoc">Return a pair of evenly spaced numbers over a specified interval and the step size used.</div><div class="ttdef"><b>Definition</b> <a href="_utils_8h_source.html#l00026">Utils.h:26</a></div></div>
-<div class="ttc" id="anamespace_math_utils_html_a61b2a34e7914d578d42a95aa6c8b4241"><div class="ttname"><a href="namespace_math_utils.html#a61b2a34e7914d578d42a95aa6c8b4241">MathUtils::linspace</a></div><div class="ttdeci">std::vector&lt; T &gt; linspace(T start, T stop, size_t elementCount, bool endPoint=true)</div><div class="ttdoc">Return evenly spaced numbers over a specified interval.</div><div class="ttdef"><b>Definition</b> <a href="_utils_8h_source.html#l00067">Utils.h:67</a></div></div>
+<div class="ttc" id="anamespace_math_utils_html_a4c06dd1d33a4f7ca4409eb0380bcc4c8"><div class="ttname"><a href="namespace_math_utils.html#a4c06dd1d33a4f7ca4409eb0380bcc4c8">MathUtils::polynomial</a></div><div class="ttdeci">ResultType polynomial(ContainerIterator polyCoefficientsStart, ContainerIterator polyCoefficientsEnd, ResultType value)</div><div class="ttdoc">Calculate the polynomial of arbitrary order at point value.</div><div class="ttdef"><b>Definition</b> <a href="_utils_8h_source.html#l00022">Utils.h:22</a></div></div>
+<div class="ttc" id="anamespace_math_utils_html_a5e19dd81b143f321a673307c8d09ad6d"><div class="ttname"><a href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">MathUtils::linspace2</a></div><div class="ttdeci">std::pair&lt; std::vector&lt; T &gt;, double &gt; linspace2(T start, T stop, size_t elementCount, bool endPoint=true)</div><div class="ttdoc">Return a pair of evenly spaced numbers over a specified interval and the step size used.</div><div class="ttdef"><b>Definition</b> <a href="_utils_8h_source.html#l00060">Utils.h:60</a></div></div>
+<div class="ttc" id="anamespace_math_utils_html_a61b2a34e7914d578d42a95aa6c8b4241"><div class="ttname"><a href="namespace_math_utils.html#a61b2a34e7914d578d42a95aa6c8b4241">MathUtils::linspace</a></div><div class="ttdeci">std::vector&lt; T &gt; linspace(T start, T stop, size_t elementCount, bool endPoint=true)</div><div class="ttdoc">Return evenly spaced numbers over a specified interval.</div><div class="ttdef"><b>Definition</b> <a href="_utils_8h_source.html#l00101">Utils.h:101</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

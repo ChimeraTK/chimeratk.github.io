@@ -112,6 +112,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4c06dd1d33a4f7ca4409eb0380bcc4c8" id="r_a4c06dd1d33a4f7ca4409eb0380bcc4c8"><td class="memTemplParams" colspan="2">template&lt;typename ContainerIterator , typename ResultType &gt; </td></tr>
+<tr class="memitem:a4c06dd1d33a4f7ca4409eb0380bcc4c8"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_math_utils.html#a4c06dd1d33a4f7ca4409eb0380bcc4c8">polynomial</a> (ContainerIterator polyCoefficientsStart, ContainerIterator polyCoefficientsEnd, ResultType value)</td></tr>
+<tr class="memdesc:a4c06dd1d33a4f7ca4409eb0380bcc4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the polynomial of arbitrary order at point value.  <br /></td></tr>
+<tr class="separator:a4c06dd1d33a4f7ca4409eb0380bcc4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e19dd81b143f321a673307c8d09ad6d" id="r_a5e19dd81b143f321a673307c8d09ad6d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt; std::is_floating_point&lt; T &gt;{}, bool &gt;::type  = true&gt; </td></tr>
 <tr class="memitem:a5e19dd81b143f321a673307c8d09ad6d"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::vector&lt; T &gt;, double &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_math_utils.html#a5e19dd81b143f321a673307c8d09ad6d">linspace2</a> (T start, T stop, size_t elementCount, bool endPoint=true)</td></tr>
 <tr class="memdesc:a5e19dd81b143f321a673307c8d09ad6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pair of evenly spaced numbers over a specified interval and the step size used.  <br /></td></tr>
@@ -175,7 +179,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of <code>elementCount</code> elements in the range [<code>start</code>, <code>stop</code>] if endPoint is true, [<code>start</code>, <code>stop</code>) otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_utils_8h_source.html#l00067">67</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_utils_8h_source.html#l00101">101</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
 
 </div>
 </div>
@@ -233,7 +237,65 @@ template&lt;typename T , typename std::enable_if&lt; std::is_floating_point&lt; 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pair consisting of a vector of <code>elementCount</code> elements in the range [<code>start</code>, <code>stop</code>] if endPoint is true, [<code>start</code>, <code>stop</code>) otherwise and the used step size </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_utils_8h_source.html#l00026">26</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_utils_8h_source.html#l00060">60</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+
+</div>
+</div>
+<a id="a4c06dd1d33a4f7ca4409eb0380bcc4c8" name="a4c06dd1d33a4f7ca4409eb0380bcc4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c06dd1d33a4f7ca4409eb0380bcc4c8">&#9670;&#160;</a></span>polynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ContainerIterator , typename ResultType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResultType MathUtils::polynomial </td>
+          <td>(</td>
+          <td class="paramtype">ContainerIterator&#160;</td>
+          <td class="paramname"><em>polyCoefficientsStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerIterator&#160;</td>
+          <td class="paramname"><em>polyCoefficientsEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResultType&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the polynomial of arbitrary order at point value. </p>
+<p>The function will calclate the polynomial with coefficients from the passed iterators. The coefficients needs to be sorted ascending from lowest order to highest order.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polyCoefficientsStart</td><td>Iterator to the lowest element in the polynomial coefficients container </td></tr>
+    <tr><td class="paramname">polyCoefficientsEnd</td><td>Iterator after the highest element in the polynomial coefficients container </td></tr>
+    <tr><td class="paramname">value</td><td>the point to calculate the polynomial at </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the evaluated polynmial at value. If the given list is empty, returns 0. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_utils_8h_source.html#l00022">22</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
 
 </div>
 </div>
