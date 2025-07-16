@@ -87,7 +87,7 @@ var class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor =
     [ "_errorMode", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abaab17d2aafbb112bca8d52115de28ff", null ],
     [ "_maxPositionLimitInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a727452daf34640c1b402e4aeadcd1595", null ],
     [ "_minPositionLimitInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a1416d6e745e1036668b470d97d03166f", null ],
-    [ "_motorControler", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a15487699cc0a52394634026044257f97", null ],
+    [ "_motorController", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a856a85292db9d2f78a647b9a5d7d32a7", null ],
     [ "_motorDriverCard", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a3924c9e66ea2f24cc0a6ae32d69bb7b8", null ],
     [ "_mutex", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a058498b7d7c64ba77ea7876aa33bf816", null ],
     [ "_softwareLimitsEnabled", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a004cb8435ccfa008c67319320c44cb30", null ],

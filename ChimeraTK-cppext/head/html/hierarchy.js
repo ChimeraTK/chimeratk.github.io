@@ -25,6 +25,9 @@ var hierarchy =
     [ "MovableDataType", "struct_movable_data_type.html", null ],
     [ "cppext::MOVE_DATA", "classcppext_1_1_m_o_v_e___d_a_t_a.html", null ],
     [ "MyException", "class_my_exception.html", null ],
+    [ "std::ranges::range_adaptor_closure", null, [
+      [ "cppext::ranges::detail::ToImpl< Container >", "structcppext_1_1ranges_1_1detail_1_1_to_impl.html", null ]
+    ] ],
     [ "cppext::semaphore", "classcppext_1_1semaphore.html", null ],
     [ "cppext::detail::shared_state_base", "structcppext_1_1detail_1_1shared__state__base.html", [
       [ "cppext::detail::shared_state< T >", "structcppext_1_1detail_1_1shared__state.html", null ],

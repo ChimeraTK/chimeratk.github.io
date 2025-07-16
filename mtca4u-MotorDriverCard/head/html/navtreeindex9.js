@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"functions_h.html":[7,3,0,9],
-"functions_i.html":[7,3,0,10],
 "functions_l.html":[7,3,0,11],
 "functions_m.html":[7,3,0,12],
 "functions_n.html":[7,3,0,13],
@@ -33,8 +31,8 @@ var NAVTREEINDEX9 =
 "globals_type.html":[8,1,3],
 "globals_vars.html":[8,1,2],
 "hierarchy.html":[7,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#getting_started":[0,0],
 "initialise_d_f_m_c-_m_d22_8cpp.html":[8,0,0,0,6,0,0,1],
 "initialise_d_f_m_c-_m_d22_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[8,0,0,0,6,0,0,1,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "structmtca4u_1_1_motor_controler_config.html#a2dde6d50e72ba7cc1b8bdb8ed0241081":[7,0,2,13,9],
 "structmtca4u_1_1_motor_controler_config.html#a357a02ee6da2099d4379ebd9c11b6f03":[6,0,3,16,19],
 "structmtca4u_1_1_motor_controler_config.html#a357a02ee6da2099d4379ebd9c11b6f03":[7,0,2,13,19],
-"structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4":[7,0,2,13,1]
+"structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4":[7,0,2,13,1],
+"structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4":[6,0,3,16,1],
+"structmtca4u_1_1_motor_controler_config.html#a3d543b0b1cdf8890c6fa87afc0d3fad5":[7,0,2,13,14]
 };

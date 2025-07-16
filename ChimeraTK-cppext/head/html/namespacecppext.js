@@ -2,6 +2,7 @@ var namespacecppext =
 [
     [ "detail", "namespacecppext_1_1detail.html", "namespacecppext_1_1detail" ],
     [ "experimental", "namespacecppext_1_1experimental.html", "namespacecppext_1_1experimental" ],
+    [ "ranges", "namespacecppext_1_1ranges.html", "namespacecppext_1_1ranges" ],
     [ "barrier", "classcppext_1_1barrier.html", "classcppext_1_1barrier" ],
     [ "final_act", "classcppext_1_1final__act.html", "classcppext_1_1final__act" ],
     [ "future_queue", "classcppext_1_1future__queue.html", "classcppext_1_1future__queue" ],

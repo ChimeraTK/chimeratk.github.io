@@ -77,13 +77,13 @@ var NAVTREEINDEX =
 "_t_m_c260_dummy_constants_8h.html",
 "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#afe15ae2ac4dd3bba952340b5ad24ce0b",
 "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#aa2e2054114cc84a8aad6868a3f73c832",
-"class_parameters_panel.html",
-"classmtca4u_1_1_interface_configuration.html#a2bb44d6f1f6a7c1352865462a561c39c",
-"classmtca4u_1_1_motor_controler_dummy.html#ae503aa88d52e9deb0727dd5efd5f397e",
-"classmtca4u_1_1_motor_driver_card.html",
-"classmtca4u_1_1_reference_switch_data.html#a41e8b0d261a379e839efa9031fee9fa7",
-"functions_h.html",
-"structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4"
+"class_parameters_panel.html#a32fa8ca760591757a2346b1957ea6486",
+"classmtca4u_1_1_interface_configuration.html#a475d52ed7cba04856269768a789f98e8",
+"classmtca4u_1_1_motor_controler_dummy.html#ae86904cbdbb9f3ba1b93e7521cf342ad",
+"classmtca4u_1_1_motor_driver_card.html#a0b47d178c629ee9a98ea89e3abbd8e03",
+"classmtca4u_1_1_reference_switch_data.html#a51ffd00763cd515fac68a19e31d39b1f",
+"functions_l.html",
+"structmtca4u_1_1_motor_controler_config.html#a3d543b0b1cdf8890c6fa87afc0d3fad5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

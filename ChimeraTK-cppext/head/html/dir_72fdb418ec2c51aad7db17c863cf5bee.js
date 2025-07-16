@@ -8,6 +8,7 @@ var dir_72fdb418ec2c51aad7db17c863cf5bee =
     [ "testFront.cc", "test_front_8cc.html", "test_front_8cc" ],
     [ "testPerformance.cc", "test_performance_8cc.html", "test_performance_8cc" ],
     [ "testPushPop.cc", "test_push_pop_8cc.html", "test_push_pop_8cc" ],
+    [ "testRanges.cc", "test_ranges_8cc.html", "test_ranges_8cc" ],
     [ "testReadWriteAvailable.cc", "test_read_write_available_8cc.html", "test_read_write_available_8cc" ],
     [ "testSemaphore.cc", "test_semaphore_8cc.html", "test_semaphore_8cc" ],
     [ "testSharing.cc", "test_sharing_8cc.html", "test_sharing_8cc" ],

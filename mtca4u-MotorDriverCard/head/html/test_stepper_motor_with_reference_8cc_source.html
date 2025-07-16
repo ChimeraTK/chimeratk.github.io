@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.01</span>
    </div>
   </td>
  </tr>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_with_reference_8cc_
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keywordflow">while</span>(1) {</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    std::this_thread::sleep_for(std::chrono::milliseconds(100));</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_mutex.lock();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_motorControler-&gt;getReferenceSwitchData().getPositiveSwitchActive()) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_motorController-&gt;getReferenceSwitchData().getPositiveSwitchActive()) {</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      <a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_mutex.unlock();</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">else</span> {</div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('test_stepper_motor_with_reference_8cc_
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keywordflow">while</span>(1) {</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    std::this_thread::sleep_for(std::chrono::milliseconds(100));</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_mutex.lock();</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_motorControler-&gt;getReferenceSwitchData().getNegativeSwitchActive()) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_motorController-&gt;getReferenceSwitchData().getNegativeSwitchActive()) {</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      <a class="code hl_variable" href="class_stepper_motor_with_reference_test_fixture.html#adaf1724fc5bc126e448539f8c87f07a1">_stepperMotor</a>-&gt;_mutex.unlock();</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">else</span> {</div>

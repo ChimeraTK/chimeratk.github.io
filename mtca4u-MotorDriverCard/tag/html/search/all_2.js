@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_20motor_20driver_20card_20config_20and_20how_20to_20create_20it_0',['Why you need a motor driver card config and how to create it',['../motor_driver_card_config_docu.html',1,'']]],
-  ['accelerationthresholddata_1',['accelerationthresholddata',['../classmtca4u_1_1_acceleration_threshold_data.html#a459551ef40e703f00fd6e50c7ea969d0',1,'mtca4u::AccelerationThresholdData::AccelerationThresholdData()'],['../structmtca4u_1_1_motor_controler_config.html#add596e0996dd851b5623f613cb485f88',1,'mtca4u::MotorControlerConfig::accelerationThresholdData'],['../classmtca4u_1_1_acceleration_threshold_data.html',1,'mtca4u::AccelerationThresholdData']]],
+  ['accelerationthresholddata_1',['accelerationthresholddata',['../structmtca4u_1_1_motor_controler_config.html#add596e0996dd851b5623f613cb485f88',1,'mtca4u::MotorControlerConfig::accelerationThresholdData'],['../classmtca4u_1_1_acceleration_threshold_data.html#a459551ef40e703f00fd6e50c7ea969d0',1,'mtca4u::AccelerationThresholdData::AccelerationThresholdData()'],['../classmtca4u_1_1_acceleration_threshold_data.html',1,'mtca4u::AccelerationThresholdData']]],
   ['action_5ferror_2',['ACTION_ERROR',['../namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722a0555ee5459842ef8915fc3fe14c1b7c0',1,'ChimeraTK::MotorDriver']]],
   ['actioncompleteevent_3',['actionCompleteEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a7a2fb9badb397b82601b09fc1577f4b8',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
   ['actiondisable_4',['actionDisable',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#aa4623e3aca1afab5d5ef125f1327c545',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
