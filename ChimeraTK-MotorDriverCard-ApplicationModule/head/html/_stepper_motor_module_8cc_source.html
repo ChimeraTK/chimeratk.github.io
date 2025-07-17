@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-MotorDriverCard-ApplicationModule<span id="projectnumber">&#160;00.08.05</span>
+   <div id="projectname">ChimeraTK-MotorDriverCard-ApplicationModule<span id="projectnumber">&#160;00.08.07</span>
    </div>
   </td>
  </tr>
@@ -125,22 +125,23 @@ $(document).ready(function(){initNavTree('_stepper_motor_module_8cc_source.html'
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// Add our own initialisation handler here so it is called after the init script handler that may or may not have</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// been passed to the StepperMotorModule</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_module.html#a33f72137d7cc330aa31fc3d6343996dc">motorProxyDevice</a>.addInitialisationHandler([<span class="keyword">this</span>](<span class="keyword">auto</span>&amp;) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_module.html#a33f72137d7cc330aa31fc3d6343996dc">motorProxyDevice</a>.addInitialisationHandler([<span class="keyword">this</span>](<span class="keyword">auto</span>&amp; device) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="comment">// Poke at the motor. We already know that the underlying transport works when we get called, so this is to do</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">// some SPI communication and see if this layer works. If not, hold the init process for a while and then notify</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="comment">// the device module that something isn&#39;t right. This is mainly to prevent excessive spamming</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_variable" href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_module.html#af30d95ec9063054894bba17088264123">motor</a>-&gt;renew();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keywordflow">catch</span>(ChimeraTK::runtime_error&amp;) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        boost::this_thread::sleep_for(boost::chrono::seconds(5));</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">throw</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    });</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        device.open();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_module.html#af30d95ec9063054894bba17088264123">motor</a>-&gt;renew();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordflow">catch</span>(ChimeraTK::runtime_error&amp;) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        boost::this_thread::sleep_for(boost::chrono::seconds(5));</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">throw</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    });</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace ChimeraTK::MotorDriver</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace ChimeraTK::MotorDriver</span></div>
 <div class="ttc" id="a_stepper_motor_module_8h_html"><div class="ttname"><a href="_stepper_motor_module_8h.html">StepperMotorModule.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_motor_html"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_motor.html">ChimeraTK::MotorDriver::Motor</a></div><div class="ttdef"><b>Definition</b> <a href="_motor_8h_source.html#l00009">Motor.h:9</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_motor_driver_html"><div class="ttname"><a href="namespace_chimera_t_k_1_1_motor_driver.html">ChimeraTK::MotorDriver</a></div><div class="ttdef"><b>Definition</b> <a href="_motor_8h_source.html#l00008">Motor.h:8</a></div></div>
