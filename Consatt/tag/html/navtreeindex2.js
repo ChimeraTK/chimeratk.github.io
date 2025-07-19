@@ -48,6 +48,7 @@ var NAVTREEINDEX2 =
 "class_csa_statistics_for_csa_vector.html#a2331c396ca2ca9ca2ee628a0c9bd38fa":[1,0,28,11],
 "class_csa_statistics_for_csa_vector.html#a34c48954c520824f0df5c61b7cd4699a":[1,0,28,0],
 "class_csa_statistics_for_csa_vector.html#a434bd23afa9237100103e7f551b375fc":[1,0,28,1],
+"class_csa_statistics_for_csa_vector.html#a58c367902ca6fa54e194167103a7da53":[1,0,28,13],
 "class_csa_statistics_for_csa_vector.html#a5ccf157fcb4635c1a80b07ed0629c0b3":[1,0,28,5],
 "class_csa_statistics_for_csa_vector.html#a6a8f2643903b6a92923574e4fe5691e8":[1,0,28,9],
 "class_csa_statistics_for_csa_vector.html#a7bfb719e8148c2a4b9c4247bdbd8f2f4":[1,0,28,7],
@@ -125,7 +126,6 @@ var NAVTREEINDEX2 =
 "class_csa_vector_config.html#ae814b5b1c9a123cd33fe5a2126cebbdb":[1,0,32,2],
 "class_d_y_n_a_m_i_c___c_o_n_f_i_g___c_o_n_s_t.html":[1,0,37],
 "class_data_buffer.html":[1,0,34],
-"class_data_buffer.html#a0e697509cc173381a320a2b9a8065096":[1,0,34,0],
 "class_data_buffer.html#a19b84a25b791a74ada40ed304c8cc1d3":[1,0,34,4],
 "class_data_buffer.html#a451388381876f06232231b0ce679555c":[1,0,34,3],
 "class_data_buffer.html#a4933dc383a0d254c864363b10ef8af62":[1,0,34,6],
@@ -133,6 +133,7 @@ var NAVTREEINDEX2 =
 "class_data_buffer.html#a55b18640fd26d0e60821309a6c6c8107":[1,0,34,8],
 "class_data_buffer.html#a5e86df26ed89d42ea86fbfbdab864497":[1,0,34,1],
 "class_data_buffer.html#a8454a92e5fdc4c398033231cc79dc316":[1,0,34,5],
+"class_data_buffer.html#a93d6900695ddfb07f23d9b84c92c6818":[1,0,34,0],
 "class_data_buffer.html#ab5745bdb93ea81a200b8f133f90dd8cf":[1,0,34,7],
 "class_data_buffer.html#af33c5fa9996886f31c15edbeec98c6ab":[1,0,34,9],
 "class_data_buffer_with_template.html":[1,0,35],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "class_loger.html#a237cdfc0912e52394f88b6bcb802714f":[1,0,45,8],
 "class_loger.html#a24405ce161b8316fec671bcece51a850":[1,0,45,16],
 "class_loger.html#a313a7710be5cc1f9587867f893d93232":[1,0,45,15],
-"class_loger.html#a465fd9c8e6ed9a1c5b20e923f4c2779b":[1,0,45,6],
-"class_loger.html#a4f3b1abc82d9f2245fd60d7564adcc65":[1,0,45,3]
+"class_loger.html#a465fd9c8e6ed9a1c5b20e923f4c2779b":[1,0,45,6]
 };

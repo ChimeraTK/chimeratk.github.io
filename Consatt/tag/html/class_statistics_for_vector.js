@@ -8,5 +8,6 @@ var class_statistics_for_vector =
     [ "getStdDev", "class_statistics_for_vector.html#ae14c51b90c9f6955bdb3bae5180b15ab", null ],
     [ "getTimestamp", "class_statistics_for_vector.html#aeae14abd02897bb29f6e1149d84b152f", null ],
     [ "zeroAllStatistics", "class_statistics_for_vector.html#ad31c0037a8e1a22f4915099527e0e2c4", null ],
+    [ "_testMeanOffset", "class_statistics_for_vector.html#a80f01d05081da60b9ddcacbcd9f1d962", null ],
     [ "_timeStamp", "class_statistics_for_vector.html#ab0dc87447cec93bafd5028cd7317d006", null ]
 ];

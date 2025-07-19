@@ -65,8 +65,8 @@ var NAVTREEINDEX =
 "_bindable_8cc.html",
 "class_csa_app_config_file_parser.html#ac3a69baf029561e98a3a6225f74d0077",
 "class_csa_shape_generator.html#a1cbbb1182417423b134c51b721f9040d",
-"class_loger.html#a4f5608979ec3e29f46991f7d4b8e55d1",
-"hierarchy.html"
+"class_loger.html#a4f3b1abc82d9f2245fd60d7564adcc65",
+"globals_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
