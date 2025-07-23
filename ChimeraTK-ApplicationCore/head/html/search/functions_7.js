@@ -12,7 +12,7 @@ var searchData=
   ['getappaccessor_9',['getAppAccessor',['../class_chimera_t_k_1_1_variable_network_node.html#aaf5204e2ecb11cd76fbd785ed80313c7',1,'ChimeraTK::VariableNetworkNode']]],
   ['getappaccessornotype_10',['getAppAccessorNoType',['../class_chimera_t_k_1_1_variable_network_node.html#a0ca8864998b9e6551f33b4d15c88f77e',1,'ChimeraTK::VariableNetworkNode']]],
   ['getapplicationmodule_11',['getApplicationModule',['../class_chimera_t_k_1_1_model_1_1_application_module_proxy.html#abbfe23b9c4324065460bf58c5bf7a4ab',1,'ChimeraTK::Model::ApplicationModuleProxy']]],
-  ['getarray_12',['getArray',['../class_chimera_t_k_1_1_test_facility.html#a0577c3398f60d9aa3485874d87fd9eb8',1,'ChimeraTK::TestFacility']]],
+  ['getarray_12',['getarray',['../class_chimera_t_k_1_1_test_facility.html#a0577c3398f60d9aa3485874d87fd9eb8',1,'ChimeraTK::TestFacility::getArray()'],['../class_chimera_t_k_1_1_py_config_reader.html#ac22f5b4d24632cbd2241c0e494bdc8bb',1,'ChimeraTK::PyConfigReader::getArray()']]],
   ['getarraylist_13',['getArrayList',['../class_chimera_t_k_1_1_config_parser.html#adce2a29e49519476694b0c6cd9613412',1,'ChimeraTK::ConfigParser']]],
   ['getattr_14',['getattr',['../class_chimera_t_k_1_1_py_array_accessor.html#aed2075c1449f5525d7718877f1bffcbb',1,'ChimeraTK::PyArrayAccessor']]],
   ['getbufferinfo_15',['getBufferInfo',['../class_chimera_t_k_1_1_py_array_accessor.html#ad01cc2ce8115282acd8b2fb00a76be0e',1,'ChimeraTK::PyArrayAccessor']]],

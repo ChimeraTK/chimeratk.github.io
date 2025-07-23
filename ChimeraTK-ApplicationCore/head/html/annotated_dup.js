@@ -158,6 +158,9 @@ var annotated_dup =
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],
       [ "XMLGenerator", "class_chimera_t_k_1_1_x_m_l_generator.html", "class_chimera_t_k_1_1_x_m_l_generator" ]
     ] ],
+    [ "testPythonAppConfig", "namespacetest_python_app_config.html", [
+      [ "MyMod", "classtest_python_app_config_1_1_my_mod.html", "classtest_python_app_config_1_1_my_mod" ]
+    ] ],
     [ "testPythonApplicationModule", "namespacetest_python_application_module.html", [
       [ "MyMod", "classtest_python_application_module_1_1_my_mod.html", "classtest_python_application_module_1_1_my_mod" ],
       [ "SecondMod", "classtest_python_application_module_1_1_second_mod.html", "classtest_python_application_module_1_1_second_mod" ]

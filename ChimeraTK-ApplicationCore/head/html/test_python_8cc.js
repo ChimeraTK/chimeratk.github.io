@@ -5,6 +5,7 @@ var test_python_8cc =
     [ "Tests::testPython::TestAppVersionNumber", "struct_tests_1_1test_python_1_1_test_app_version_number.html", "struct_tests_1_1test_python_1_1_test_app_version_number" ],
     [ "Tests::testPython::TestAppUserInputValiador", "struct_tests_1_1test_python_1_1_test_app_user_input_valiador.html", "struct_tests_1_1test_python_1_1_test_app_user_input_valiador" ],
     [ "BOOST_TEST_MODULE", "test_python_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_python_8cc.html#ad9e7a1fc837786ef8f1eab5e6121327c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_python_8cc.html#ab40f20f4e36e028068aec18f521fbcbc", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_python_8cc.html#aaeaa45430e1d89c39a62d78b8cc1e47c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_python_8cc.html#a7d953907c796593a8a478f24f878983b", null ],

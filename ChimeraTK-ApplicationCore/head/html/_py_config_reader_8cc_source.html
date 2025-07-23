@@ -107,59 +107,92 @@ $(document).ready(function(){initNavTree('_py_config_reader_8cc_source.html','')
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_py_application_module_8h.html">PyApplicationModule.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_py_config_reader_8h.html">PyConfigReader.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;pybind11/stl.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;ChimeraTK/cppext/ranges.hpp&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacepybind11.html">py</a> = <a class="code hl_namespace" href="namespacepybind11.html">pybind11</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;pybind11/stl.h&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacepybind11.html">py</a> = <a class="code hl_namespace" href="namespacepybind11.html">pybind11</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#aee377e83554eb60592992daf65ba4b7b">   18</a></span>  UserTypeVariantNoVoid <a class="code hl_function" href="class_chimera_t_k_1_1_py_config_reader.html#aee377e83554eb60592992daf65ba4b7b">PyConfigReader::get</a>(</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      ChimeraTK::DataType dt, <span class="keyword">const</span> std::string&amp; path, std::optional&lt;UserTypeVariantNoVoid&gt; defaultValue) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::optional&lt;UserTypeVariantNoVoid&gt; rv;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ChimeraTK::callForTypeNoVoid(dt.getAsTypeInfo(), [&amp;](<span class="keyword">auto</span> t) {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      using UserType = decltype(t);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      if(defaultValue) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        UserType valAsUserType;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        std::visit(</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            [&amp;](auto value) { valAsUserType = ChimeraTK::userTypeToUserType&lt;UserType&gt;(value); }, defaultValue.value());</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        rv.emplace(_reader.get().get&lt;UserType&gt;(path, valAsUserType));</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        rv.emplace(_reader.get().get&lt;UserType&gt;(path));</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      }</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    });</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> std::move(rv.value());</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#aee377e83554eb60592992daf65ba4b7b">   20</a></span>  UserTypeVariantNoVoid <a class="code hl_function" href="class_chimera_t_k_1_1_py_config_reader.html#aee377e83554eb60592992daf65ba4b7b">PyConfigReader::get</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      ChimeraTK::DataType dt, <span class="keyword">const</span> std::string&amp; path, std::optional&lt;UserTypeVariantNoVoid&gt; defaultValue) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::optional&lt;UserTypeVariantNoVoid&gt; rv;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    ChimeraTK::callForTypeNoVoid(dt.getAsTypeInfo(), [&amp;](<span class="keyword">auto</span> t) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      using UserType = decltype(t);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      if(defaultValue) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        UserType valAsUserType;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        std::visit(</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            [&amp;](auto value) { valAsUserType = ChimeraTK::userTypeToUserType&lt;UserType&gt;(value); }, defaultValue.value());</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        rv.emplace(_reader.get().get&lt;UserType&gt;(path, valAsUserType));</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        rv.emplace(_reader.get().get&lt;UserType&gt;(path));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    });</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> std::move(rv.value());</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  }</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#a0dbfc41d0d6f27b1b1954b15e9bce68f">   40</a></span>  <span class="keywordtype">void</span> PyConfigReader::bind(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// Global access to appConfig(), mimicking something like Application::appConfig() in C++</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    m.def(<span class="stringliteral">&quot;appConfig&quot;</span>, []() { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_config_reader.html">PyConfigReader</a>(PyApplicationModule::appConfig()); });</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    py::class_&lt;PyConfigReader&gt;(m, <span class="stringliteral">&quot;ConfigReader&quot;</span>)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        .def(<span class="stringliteral">&quot;get&quot;</span>, &amp;PyConfigReader::get,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="stringliteral">&quot;Get value for given configuration variable.\n\nThis is already accessible right after construction of &quot;</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="stringliteral">&quot;this object. Throws ChimeraTK::logic_error if variable doesn&#39;t exist. To obtain the value of an array, &quot;</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="stringliteral">&quot;use an std::vector&lt;T&gt; as template argument.&quot;</span>,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            py::arg(), py::arg(<span class="stringliteral">&quot;variableName&quot;</span>), py::arg(<span class="stringliteral">&quot;defaultValue&quot;</span>) = std::nullopt)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        .def(<span class="stringliteral">&quot;getModules&quot;</span>, &amp;PyConfigReader::getModules, py::arg(<span class="stringliteral">&quot;path&quot;</span>) = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#ac22f5b4d24632cbd2241c0e494bdc8bb">   42</a></span>  UserTypeTemplateVariantNoVoid&lt;std::vector&gt; PyConfigReader::getArray(ChimeraTK::DataType dt, <span class="keyword">const</span> std::string&amp; path,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      std::optional&lt;UserTypeTemplateVariantNoVoid&lt;std::vector&gt;&gt; defaultValue) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::optional&lt;UserTypeTemplateVariantNoVoid&lt;std::vector&gt;&gt; rv;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ChimeraTK::callForTypeNoVoid(dt.getAsTypeInfo(), [&amp;](<span class="keyword">auto</span> t) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      using UserType = decltype(t);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      if(defaultValue) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        std::vector&lt;UserType&gt; valAsUserType = std::visit(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            [&amp;](auto value) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>              return value | std::views::transform([](auto&amp; v) { return ChimeraTK::userTypeToUserType&lt;UserType&gt;(v); }) |</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                  cppext::ranges::to&lt;std::vector&gt;();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            },</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            defaultValue.value());</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        rv.emplace(_reader.get().get&lt;std::vector&lt;UserType&gt;&gt;(path, valAsUserType));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        rv.emplace(_reader.get().get&lt;std::vector&lt;UserType&gt;&gt;(path));</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    });</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> std::move(rv.value());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#a0dbfc41d0d6f27b1b1954b15e9bce68f">   67</a></span>  <span class="keywordtype">void</span> PyConfigReader::bind(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Global access to appConfig(), mimicking something like Application::appConfig() in C++</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    m.def(<span class="stringliteral">&quot;appConfig&quot;</span>, []() { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_config_reader.html">PyConfigReader</a>(PyApplicationModule::appConfig()); });</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    py::class_&lt;PyConfigReader&gt;(m, <span class="stringliteral">&quot;ConfigReader&quot;</span>)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        .def(<span class="stringliteral">&quot;get&quot;</span>, &amp;PyConfigReader::get,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="stringliteral">&quot;Get value for given configuration variable.\n\nThis is already accessible right after construction of &quot;</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="stringliteral">&quot;this object. Throws ChimeraTK::logic_error if variable doesn&#39;t exist. To obtain the value of an array, &quot;</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="stringliteral">&quot;use an std::vector&lt;T&gt; as template argument.&quot;</span>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            py::arg(), py::arg(<span class="stringliteral">&quot;variableName&quot;</span>), py::arg(<span class="stringliteral">&quot;defaultValue&quot;</span>) = std::nullopt)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        .def(<span class="stringliteral">&quot;getArray&quot;</span>, &amp;PyConfigReader::getArray,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="stringliteral">&quot;Get value for given configuration variable.\n\nThis is already accessible right after construction of &quot;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="stringliteral">&quot;this object. Throws ChimeraTK::logic_error if variable doesn&#39;t exist. &quot;</span>,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            py::arg(), py::arg(<span class="stringliteral">&quot;variableName&quot;</span>), py::arg(<span class="stringliteral">&quot;defaultValue&quot;</span>) = std::nullopt)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        .def(<span class="stringliteral">&quot;getModules&quot;</span>, &amp;PyConfigReader::getModules, py::arg(<span class="stringliteral">&quot;path&quot;</span>) = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_py_application_module_8h_html"><div class="ttname"><a href="_py_application_module_8h.html">PyApplicationModule.h</a></div></div>
 <div class="ttc" id="a_py_config_reader_8h_html"><div class="ttname"><a href="_py_config_reader_8h.html">PyConfigReader.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_py_config_reader_html"><div class="ttname"><a href="class_chimera_t_k_1_1_py_config_reader.html">ChimeraTK::PyConfigReader</a></div><div class="ttdef"><b>Definition</b> <a href="_py_config_reader_8h_source.html#l00018">PyConfigReader.h:18</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_py_config_reader_html_aee377e83554eb60592992daf65ba4b7b"><div class="ttname"><a href="class_chimera_t_k_1_1_py_config_reader.html#aee377e83554eb60592992daf65ba4b7b">ChimeraTK::PyConfigReader::get</a></div><div class="ttdeci">UserTypeVariantNoVoid get(ChimeraTK::DataType dt, const std::string &amp;path, std::optional&lt; UserTypeVariantNoVoid &gt; defaultValue)</div><div class="ttdef"><b>Definition</b> <a href="_py_config_reader_8cc_source.html#l00018">PyConfigReader.cc:18</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_py_config_reader_html_aee377e83554eb60592992daf65ba4b7b"><div class="ttname"><a href="class_chimera_t_k_1_1_py_config_reader.html#aee377e83554eb60592992daf65ba4b7b">ChimeraTK::PyConfigReader::get</a></div><div class="ttdeci">UserTypeVariantNoVoid get(ChimeraTK::DataType dt, const std::string &amp;path, std::optional&lt; UserTypeVariantNoVoid &gt; defaultValue)</div><div class="ttdef"><b>Definition</b> <a href="_py_config_reader_8cc_source.html#l00020">PyConfigReader.cc:20</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 <div class="ttc" id="anamespacepybind11_html"><div class="ttname"><a href="namespacepybind11.html">pybind11</a></div><div class="ttdef"><b>Definition</b> <a href="_py_module_group_8h_source.html#l00010">PyModuleGroup.h:10</a></div></div>
 <div class="ttc" id="anamespacepybind11_html_ad952f3f47afb586cdc0f250f70f0a565"><div class="ttname"><a href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">pybind11::module</a></div><div class="ttdeci">module_ module</div><div class="ttdef"><b>Definition</b> <a href="_py_module_group_8h_source.html#l00012">PyModuleGroup.h:12</a></div></div>

@@ -39,6 +39,7 @@ var namespaces_dup =
     [ "pybind11", "namespacepybind11.html", [
       [ "module", "namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565", null ]
     ] ],
+    [ "testPythonAppConfig", "namespacetest_python_app_config.html", "namespacetest_python_app_config" ],
     [ "testPythonApplicationModule", "namespacetest_python_application_module.html", "namespacetest_python_application_module" ],
     [ "testPythonDataConsistencyGroup", "namespacetest_python_data_consistency_group.html", "namespacetest_python_data_consistency_group" ],
     [ "testPythonReadAnyGroup", "namespacetest_python_read_any_group.html", "namespacetest_python_read_any_group" ],

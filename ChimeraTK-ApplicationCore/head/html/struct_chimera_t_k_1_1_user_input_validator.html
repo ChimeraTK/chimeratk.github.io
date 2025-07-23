@@ -116,7 +116,8 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_user_input_vali
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html">AccessorHook</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html">AccessorHook</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessors inheriting from this class (in addition to their accessor base class) can get informed about the validation process.  <a href="class_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,7 +255,7 @@ template&lt;typename... ACCESSORTYPES&gt; </div>
 <p>This function can be called an arbitrary number of times. Also the same accessors may be passed multiple times to different calls of this function. That way the expressions written in the isValidFunction can be kept simple and the provided error messages can be more specific. E.g. the two conditions A &gt; 0 and A &lt; B can be defined in two separate calls to the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function despite A being part of both conditions. If A changes, both conditions will be checked, since A is specified in the list of accessors in both calls.</p>
 <p>This function does not yet evaluate anything. It merely stores all information for later use. When <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is called, all isValidFunctions matching the given change are checked. If any of the checked isValidFunctions returns false, the variable passed to <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is reverted to its previous value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00248">248</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00270">270</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +297,7 @@ requires push_input&lt;std::ranges::range_value_t&lt;R&gt;&gt;</div>
 <p>Alternate signature for <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a>, accepting an iterable container of accessors instead of individual arguments. </p>
 <p>This requires all accessors to be of the same type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00264">264</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00286">286</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +327,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00310">310</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00332">332</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +432,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00240">240</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00262">262</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +487,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00296">296</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00318">318</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +523,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>This value is used if the validation of the initial value fails, since there is no previous value to revert to in that case.</p>
 <p>It is mandatory to call this function for all accessors whose value after construction (usually 0) is outside the range of valid values, as otherwise a failed initial value validation reverts to the (invalid) value after construction and hence the subsequent computations might fail. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00281">281</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00303">303</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +595,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00234">234</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00256">256</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +620,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00229">229</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00251">251</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +648,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div class="ttc" id="aclass_chimera_t_k_1_1_logger_html_a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd"><div class="ttname"><a href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd">ChimeraTK::Logger::Severity::warning</a></div><div class="ttdeci">@ warning</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_afd1ff17ff1ee9c50c855b99af5b0c580"><div class="ttname"><a href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">ChimeraTK::logger</a></div><div class="ttdeci">Logger::StreamProxy logger(Logger::Severity severity, std::string context)</div><div class="ttdoc">Convenience function to obtain the logger stream.</div><div class="ttdef"><b>Definition</b> <a href="_logger_8h_source.html#l00124">Logger.h:124</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00226">226</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00248">248</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +672,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00232">232</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00254">254</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +696,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00231">231</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00253">253</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -719,7 +720,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00230">230</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00252">252</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +744,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00223">223</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00245">245</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +768,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00217">217</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00239">239</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +792,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00220">220</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00242">242</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -815,7 +816,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00157">157</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00178">178</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>

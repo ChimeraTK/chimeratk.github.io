@@ -119,6 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a13c98ada9d9902f36fb8108a3b32be30" id="r_a13c98ada9d9902f36fb8108a3b32be30"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a13c98ada9d9902f36fb8108a3b32be30">raiseIftrailingSlash</a> (const std::string &amp;name, bool isModule)</td></tr>
 <tr class="memdesc:a13c98ada9d9902f36fb8108a3b32be30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises logic error if name ends in a slash, or if it contains consecutive slashes.  <br /></td></tr>
 <tr class="separator:a13c98ada9d9902f36fb8108a3b32be30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5a9b56c965766439b49a1b9b0cefd1" id="r_aef5a9b56c965766439b49a1b9b0cefd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_utilities.html#aef5a9b56c965766439b49a1b9b0cefd1">isBeingDebugged</a> ()</td></tr>
+<tr class="memdesc:aef5a9b56c965766439b49a1b9b0cefd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the current process is being debugged.  <br /></td></tr>
+<tr class="separator:aef5a9b56c965766439b49a1b9b0cefd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4af6a2239a8b0ee9eafa26faf00a2e9a" name="a4af6a2239a8b0ee9eafa26faf00a2e9a"></a>
@@ -232,6 +235,28 @@ Functions</h2></td></tr>
 <p>This function is useful together with <a class="el" href="namespace_chimera_t_k_1_1_utilities.html#a7794e94545a8b22daead4e95d1231247" title="Return all but the last components of the given qualified name.">getPathName()</a>, when a qualified variable name is given, and a HierarchyModifyingGroup with the variable inside needs to be created. </p>
 
 <p class="definition">Definition at line <a class="el" href="_utilities_8cc_source.html#l00019">19</a> of file <a class="el" href="_utilities_8cc_source.html">Utilities.cc</a>.</p>
+
+</div>
+</div>
+<a id="aef5a9b56c965766439b49a1b9b0cefd1" name="aef5a9b56c965766439b49a1b9b0cefd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5a9b56c965766439b49a1b9b0cefd1">&#9670;&#160;</a></span>isBeingDebugged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::Utilities::isBeingDebugged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the current process is being debugged. </p>
+<p>Works only on Unix-like systems with a /proc file system. </p>
+
+<p class="definition">Definition at line <a class="el" href="_utilities_8cc_source.html#l00132">132</a> of file <a class="el" href="_utilities_8cc_source.html">Utilities.cc</a>.</p>
 
 </div>
 </div>

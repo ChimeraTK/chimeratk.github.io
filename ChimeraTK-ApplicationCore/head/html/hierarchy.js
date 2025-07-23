@@ -6,7 +6,7 @@ var hierarchy =
     [ "ACCESSOR", null, [
       [ "ChimeraTK::StatusAccessor< ACCESSOR >", "struct_chimera_t_k_1_1_status_accessor.html", null ]
     ] ],
-    [ "ChimeraTK::UserInputValidator::AccessorHook", "struct_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html", [
+    [ "ChimeraTK::UserInputValidator::AccessorHook", "class_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html", [
       [ "ChimeraTK::FanIn< AccessorType >::Inputs::TrackingDecorator< U >", "class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html", null ]
     ] ],
     [ "ChimeraTK::AccessorTypeTag< AccessorType >", "class_chimera_t_k_1_1_accessor_type_tag.html", null ],
@@ -140,6 +140,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "ac.ApplicationModule", null, [
+      [ "testPythonAppConfig.MyMod", "classtest_python_app_config_1_1_my_mod.html", null ],
       [ "testPythonApplicationModule.MyMod", "classtest_python_application_module_1_1_my_mod.html", null ],
       [ "testPythonApplicationModule.SecondMod", "classtest_python_application_module_1_1_second_mod.html", null ],
       [ "testPythonDataConsistencyGroup.Receiver", "classtest_python_data_consistency_group_1_1_receiver.html", null ],
