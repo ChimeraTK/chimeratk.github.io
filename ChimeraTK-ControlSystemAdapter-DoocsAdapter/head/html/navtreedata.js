@@ -48,9 +48,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -84,8 +82,8 @@ var NAVTREEINDEX =
 "_c_s_adapter_eq_fct_8cc.html",
 "class_chimera_t_k_1_1_doocs_p_v_factory.html#a4864aa67d8900988a961c03472945065",
 "class_chimera_t_k_1_1_variable_mapper.html#a398d4909b87ea3819103d582741e91e0",
-"server_based_test_tools_8h.html#a144561068fc8e9326fb24b82cba2b1ad",
-"struct_chimera_t_k_1_1_location_info.html#a7193b14b443e699a44394cea9b3fa494"
+"server_based_test_tools_8h.html#ac1bb50c6aa83d60cc50e9f5244c4aaa8",
+"struct_chimera_t_k_1_1_persist_config.html#a217a05624cca529329deb302a2c0a540"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

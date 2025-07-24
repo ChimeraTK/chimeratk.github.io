@@ -2,6 +2,7 @@ var struct_typed_p_v_holder =
 [
     [ "TypedPVHolder", "struct_typed_p_v_holder.html#a05ba851ce5171df89944d7e72b7142cb", null ],
     [ "inputToOutput", "struct_typed_p_v_holder.html#a722adb3f6b2a617d2d3a11e2091498b4", null ],
+    [ "bidirectionalScalar", "struct_typed_p_v_holder.html#ae49e9f8ced59836d6858d4b0d392ea7f", null ],
     [ "constantArray", "struct_typed_p_v_holder.html#aee3601a1a61bfae272f97c714bf574c5", null ],
     [ "dataTypeConstant", "struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a", null ],
     [ "failedTransfers", "struct_typed_p_v_holder.html#a92ad257a5964989502a8c941d33964a1", null ],
