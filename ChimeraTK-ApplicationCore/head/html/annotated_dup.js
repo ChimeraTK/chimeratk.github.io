@@ -288,6 +288,7 @@ var annotated_dup =
       [ "testFanIn", "namespace_tests_1_1test_fan_in.html", [
         [ "TestAdditionalInputsApp", "class_tests_1_1test_fan_in_1_1_test_additional_inputs_app.html", "class_tests_1_1test_fan_in_1_1_test_additional_inputs_app" ],
         [ "TestAggregatedValueApp", "class_tests_1_1test_fan_in_1_1_test_aggregated_value_app.html", "class_tests_1_1test_fan_in_1_1_test_aggregated_value_app" ],
+        [ "TestRelativeSenderNamesApp", "class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app.html", "class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app" ],
         [ "TestUserInputValidationApp", "class_tests_1_1test_fan_in_1_1_test_user_input_validation_app.html", "class_tests_1_1test_fan_in_1_1_test_user_input_validation_app" ],
         [ "TheReceiverBase", "class_tests_1_1test_fan_in_1_1_the_receiver_base.html", "class_tests_1_1test_fan_in_1_1_the_receiver_base" ],
         [ "TheSender", "class_tests_1_1test_fan_in_1_1_the_sender.html", "class_tests_1_1test_fan_in_1_1_the_sender" ]

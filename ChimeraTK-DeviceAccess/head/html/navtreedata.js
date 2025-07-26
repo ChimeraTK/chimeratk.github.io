@@ -187,16 +187,16 @@ var NAVTREEINDEX =
 "globals_defs_v.html",
 "namespace_chimera_t_k_1_1async.html#a4f61b584b4682359be35d60aec9aa057",
 "struct_byte_raw__signed8.html#a3c7245e3b9e6d06da95b4c42385f0735",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a0fb7a2930710505d2b017b1cf25e00c3",
-"struct_chimera_t_k_1_1_rebot_protocol0.html#a9a43a9108870ac7984db0501e4431c94",
-"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a07d482f9b4d18c584c5c387669c793ab",
-"struct_integers_signed32_r_o.html",
-"struct_reg_channel_last.html#a78abcefcc42f58ef526ee79ac3f7abf2",
-"struct_scalar_descriptor.html#a2cdc798147541b7e8b87b2251591011b",
-"structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#a30aabaf7410ebbe0309ea389baccb224",
-"test_get_set_as_coocked_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_rebot_connection_timeouts_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
-"testable_rebot_sleep__testing_impl_8h.html#a73e89a8c5e60ca0f1571ed3e34c7af68"
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html",
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a7bb408ba7f852be32cb75b7a8e8e95c7",
+"struct_chimera_t_k_1_1async_1_1_json_descriptor_keys_v1.html",
+"struct_integers_signed32_async.html",
+"struct_reg_channel4__push.html#ae296d8db26e3048a7e6bd25b61dfbdae",
+"struct_scalar32_async.html",
+"structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html#aedc970ef063aa01fac090f74ce205d2b",
+"test_generic_muxed_interrupt_distributor_8cpp.html#af8f27ca38c6841c96cc986a00add518b",
+"test_rebot_backend_creation_8cpp.html#af5e0065971f86f4039f7a9ed991e3add",
+"testable_rebot_sleep__testing_impl_8h.html#a1851c267e4dd419a948306ff85195a86"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

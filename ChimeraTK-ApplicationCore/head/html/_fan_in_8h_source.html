@@ -366,151 +366,152 @@ $(document).ready(function(){initNavTree('_fan_in_8h_source.html',''); initResiz
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>      <span class="keywordflow">if</span>(*node == <a class="code hl_class" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>(*_output)) {</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>      }</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>      inputNames.emplace_back(node-&gt;getName() + <span class="stringliteral">&quot;/__FanInNode_&quot;</span> + std::to_string(index) + <span class="stringliteral">&quot;__&quot;</span>);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>      node-&gt;setMetaData(inputNames.back());</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      ++index;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    }</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; name : boost::join(inputNames, _additionalNames)) {</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_fan_in.html#a708496efdf3ee285bf776f10fd0d2b02">_inputs</a>.emplace_back(<span class="keyword">this</span>, name, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    }</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>      <span class="keyword">auto</span> qualifiedName = node-&gt;getModel().getFullyQualifiedPath();</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>      inputNames.emplace_back(qualifiedName + <span class="stringliteral">&quot;/__FanInNode_&quot;</span> + std::to_string(index) + <span class="stringliteral">&quot;__&quot;</span>);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      node-&gt;setMetaData(inputNames.back());</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>      ++index;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    }</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; name : boost::join(inputNames, _additionalNames)) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_fan_in.html#a708496efdf3ee285bf776f10fd0d2b02">_inputs</a>.emplace_back(<span class="keyword">this</span>, name, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  }</div>
 </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="foldopen" id="foldopen00312" data-start="{" data-end="}">
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">  312</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">FanIn&lt;AccessorType&gt;::Inputs::prepare</a>() {</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <span class="keywordflow">if</span>(!_accessorMap.empty()) {</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>      <span class="comment">// prepare() is also called by inputs() to make sure the map is already filled, e.g. when needed by the owning</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>      <span class="comment">// module&#39;s prepare() function, which might be called first.</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    }</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a> : <a class="code hl_variable" href="class_chimera_t_k_1_1_fan_in.html#a708496efdf3ee285bf776f10fd0d2b02">_inputs</a>) {</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>      <span class="keyword">auto</span> deco = boost::make_shared&lt;TrackingDecorator&lt;typename AccessorType::value_type&gt;&gt;(<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.getImpl(), *<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>      <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.NDRegisterAccessorAbstractor&lt;typename AccessorType::value_type&gt;::replace(deco);</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>      _accessorMap[<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.getId()] = &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      _abstractorMap[<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.getId()].replace(<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  }</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">  313</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">FanIn&lt;AccessorType&gt;::Inputs::prepare</a>() {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordflow">if</span>(!_accessorMap.empty()) {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>      <span class="comment">// prepare() is also called by inputs() to make sure the map is already filled, e.g. when needed by the owning</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      <span class="comment">// module&#39;s prepare() function, which might be called first.</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    }</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a> : <a class="code hl_variable" href="class_chimera_t_k_1_1_fan_in.html#a708496efdf3ee285bf776f10fd0d2b02">_inputs</a>) {</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>      <span class="keyword">auto</span> deco = boost::make_shared&lt;TrackingDecorator&lt;typename AccessorType::value_type&gt;&gt;(<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.getImpl(), *<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>      <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.NDRegisterAccessorAbstractor&lt;typename AccessorType::value_type&gt;::replace(deco);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      _accessorMap[<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.getId()] = &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>      _abstractorMap[<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>.getId()].replace(<a class="code hl_function" href="class_chimera_t_k_1_1_fan_in.html#aa6fc65292046cbc4da5b15f476926460">input</a>);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    }</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  }</div>
 </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="foldopen" id="foldopen00331" data-start="{" data-end="}">
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a31caf421456b113cb95ed3b176ca9acb">  331</a></span>  <span class="keyword">const</span> AccessorType&amp; <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a31caf421456b113cb95ed3b176ca9acb">FanIn&lt;AccessorType&gt;::Inputs::get</a>(<span class="keyword">const</span> TransferElementID&amp; <span class="keywordtype">id</span>)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">if</span>(_accessorMap.empty()) {</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;FanIn::get() called too early, prepare() has not yet been called.&quot;</span>);</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    }</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <span class="keywordflow">return</span> *(_accessorMap.at(<span class="keywordtype">id</span>));</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="foldopen" id="foldopen00332" data-start="{" data-end="}">
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a31caf421456b113cb95ed3b176ca9acb">  332</a></span>  <span class="keyword">const</span> AccessorType&amp; <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a31caf421456b113cb95ed3b176ca9acb">FanIn&lt;AccessorType&gt;::Inputs::get</a>(<span class="keyword">const</span> TransferElementID&amp; <span class="keywordtype">id</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">if</span>(_accessorMap.empty()) {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;FanIn::get() called too early, prepare() has not yet been called.&quot;</span>);</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    }</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> *(_accessorMap.at(<span class="keywordtype">id</span>));</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  }</div>
 </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="foldopen" id="foldopen00342" data-start="{" data-end="}">
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a199127ab03a666b6acd032824bc850e3">  342</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a199127ab03a666b6acd032824bc850e3">FanIn&lt;AccessorType&gt;::Inputs::has</a>(<span class="keyword">const</span> TransferElementID&amp; <span class="keywordtype">id</span>)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">if</span>(_accessorMap.empty()) {</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;FanIn::get() called too early, prepare() has not yet been called.&quot;</span>);</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    }</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">return</span> _accessorMap.contains(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  }</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a199127ab03a666b6acd032824bc850e3">  343</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a199127ab03a666b6acd032824bc850e3">FanIn&lt;AccessorType&gt;::Inputs::has</a>(<span class="keyword">const</span> TransferElementID&amp; <span class="keywordtype">id</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <span class="keywordflow">if</span>(_accessorMap.empty()) {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;FanIn::get() called too early, prepare() has not yet been called.&quot;</span>);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">return</span> _accessorMap.contains(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  }</div>
 </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="foldopen" id="foldopen00353" data-start="{" data-end="}">
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#af0458392b7d29eb741f8dff6cba0d379">  353</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#af0458392b7d29eb741f8dff6cba0d379">FanIn&lt;AccessorType&gt;::Inputs::processUpdate</a>(<span class="keyword">const</span> TransferElementID&amp; change, <a class="code hl_enumeration" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#ae3a639a03bc5751c7e355060e29a377a">UpdateType</a> type) {</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    assert(_output != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    _lastUpdate = change;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <span class="comment">// Only send initial value once all inputs have seen their initial value, so we send out only one single initial</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="comment">// value with the aggregator having access to all initial values.</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">if</span>(_output-&gt;getVersionNumber() == VersionNumber{nullptr}) {</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, inp] : _abstractorMap) {</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        <span class="keywordflow">if</span>(inp.getVersionNumber() == VersionNumber{<span class="keyword">nullptr</span>}) {</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>          <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        }</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>      }</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    }</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordflow">if</span>(type != UpdateType::ACCEPT) {</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>      *_output = _aggregator(change, _abstractorMap);</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    }</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">if</span>(_output-&gt;getVersionNumber() == VersionNumber{nullptr} &amp;&amp; _hasValidator &amp;&amp; type != UpdateType::POST_READ) {</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>      ++_nInitialValuesValidated;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>      <span class="keywordflow">if</span>(_nInitialValuesValidated &lt; <a class="code hl_variable" href="class_chimera_t_k_1_1_fan_in.html#a708496efdf3ee285bf776f10fd0d2b02">_inputs</a>.size()) {</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>      }</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    }</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="comment">// If a UserInputValidator is added, delay writing the output until after the validation took place (see the hook</span></div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="comment">// functions onAccept() and onReject() of the TrackingDecorator).</span></div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="keywordflow">if</span>(!_hasValidator || type != UpdateType::POST_READ) {</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>      _output-&gt;write();</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    }</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  }</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="foldopen" id="foldopen00354" data-start="{" data-end="}">
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#af0458392b7d29eb741f8dff6cba0d379">  354</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#af0458392b7d29eb741f8dff6cba0d379">FanIn&lt;AccessorType&gt;::Inputs::processUpdate</a>(<span class="keyword">const</span> TransferElementID&amp; change, <a class="code hl_enumeration" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#ae3a639a03bc5751c7e355060e29a377a">UpdateType</a> type) {</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    assert(_output != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    _lastUpdate = change;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="comment">// Only send initial value once all inputs have seen their initial value, so we send out only one single initial</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="comment">// value with the aggregator having access to all initial values.</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="keywordflow">if</span>(_output-&gt;getVersionNumber() == VersionNumber{nullptr}) {</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, inp] : _abstractorMap) {</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        <span class="keywordflow">if</span>(inp.getVersionNumber() == VersionNumber{<span class="keyword">nullptr</span>}) {</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>          <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>      }</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordflow">if</span>(type != UpdateType::ACCEPT) {</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>      *_output = _aggregator(change, _abstractorMap);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    }</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">if</span>(_output-&gt;getVersionNumber() == VersionNumber{nullptr} &amp;&amp; _hasValidator &amp;&amp; type != UpdateType::POST_READ) {</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>      ++_nInitialValuesValidated;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>      <span class="keywordflow">if</span>(_nInitialValuesValidated &lt; <a class="code hl_variable" href="class_chimera_t_k_1_1_fan_in.html#a708496efdf3ee285bf776f10fd0d2b02">_inputs</a>.size()) {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>      }</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="comment">// If a UserInputValidator is added, delay writing the output until after the validation took place (see the hook</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="comment">// functions onAccept() and onReject() of the TrackingDecorator).</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <span class="keywordflow">if</span>(!_hasValidator || type != UpdateType::POST_READ) {</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>      _output-&gt;write();</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    }</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  }</div>
 </div>
 </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
-<div class="foldopen" id="foldopen00391" data-start="{" data-end="}">
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a38d8d69cf418f6eacf7fbdbf08ee8ef7">  391</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::doPostRead</a>(TransferType type, <span class="keywordtype">bool</span> updateDataBuffer) {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    NDRegisterAccessorDecorator&lt;U&gt;::doPostRead(type, updateDataBuffer);</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">if</span>(updateDataBuffer) {</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>      _fanIn.processUpdate(this-&gt;getId(), UpdateType::POST_READ);</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    }</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  }</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
+<div class="foldopen" id="foldopen00392" data-start="{" data-end="}">
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a38d8d69cf418f6eacf7fbdbf08ee8ef7">  392</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::doPostRead</a>(TransferType type, <span class="keywordtype">bool</span> updateDataBuffer) {</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    NDRegisterAccessorDecorator&lt;U&gt;::doPostRead(type, updateDataBuffer);</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="keywordflow">if</span>(updateDataBuffer) {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>      _fanIn.processUpdate(this-&gt;getId(), UpdateType::POST_READ);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    }</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>  }</div>
 </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
-<div class="foldopen" id="foldopen00402" data-start="{" data-end="}">
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aa2bd945b4593c2c6b9e29448a65b2e33">  402</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::onReject</a>() {</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    assert(_fanIn._hasValidator);</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    _fanIn.processUpdate(this-&gt;getId(), UpdateType::REJECT);</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  }</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
+<div class="foldopen" id="foldopen00403" data-start="{" data-end="}">
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aa2bd945b4593c2c6b9e29448a65b2e33">  403</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::onReject</a>() {</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    assert(_fanIn._hasValidator);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    _fanIn.processUpdate(this-&gt;getId(), UpdateType::REJECT);</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  }</div>
 </div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
-<div class="foldopen" id="foldopen00411" data-start="{" data-end="}">
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aadb52e4ecd188d085edcec255276adb0">  411</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::onAccept</a>() {</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    assert(_fanIn._hasValidator);</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    _fanIn.processUpdate(this-&gt;getId(), UpdateType::ACCEPT);</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  }</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
+<div class="foldopen" id="foldopen00412" data-start="{" data-end="}">
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aadb52e4ecd188d085edcec255276adb0">  412</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::onAccept</a>() {</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    assert(_fanIn._hasValidator);</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    _fanIn.processUpdate(this-&gt;getId(), UpdateType::ACCEPT);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  }</div>
 </div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
-<div class="foldopen" id="foldopen00419" data-start="{" data-end="}">
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a0d8843bde4a449dc90280a93e89bb6b5">  419</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::onAddValidator</a>(<a class="code hl_struct" href="struct_chimera_t_k_1_1_user_input_validator.html">UserInputValidator</a>&amp;) {</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    _fanIn._hasValidator = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>  }</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keyword">template</span>&lt;push_input AccessorType&gt;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  <span class="keyword">template</span>&lt;user_type U&gt;</div>
+<div class="foldopen" id="foldopen00420" data-start="{" data-end="}">
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a0d8843bde4a449dc90280a93e89bb6b5">  420</a></span>  <span class="keywordtype">void</span> <a class="code hl_class" href="class_chimera_t_k_1_1_fan_in.html">FanIn&lt;AccessorType&gt;::Inputs::TrackingDecorator&lt;U&gt;::onAddValidator</a>(<a class="code hl_struct" href="struct_chimera_t_k_1_1_user_input_validator.html">UserInputValidator</a>&amp;) {</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    _fanIn._hasValidator = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  }</div>
 </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>} <span class="comment">// namespace ChimeraTK</span></div>
 </div>
 </div>
 </div>
@@ -530,19 +531,19 @@ $(document).ready(function(){initNavTree('_fan_in_8h_source.html',''); initResiz
 <div class="ttc" id="a_variable_group_8h_html"><div class="ttname"><a href="_variable_group_8h.html">VariableGroup.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_entity_owner_html_a3b3c71e5ae35ad4bdbd491ac43676971"><div class="ttname"><a href="class_chimera_t_k_1_1_entity_owner.html#a3b3c71e5ae35ad4bdbd491ac43676971">ChimeraTK::EntityOwner::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdoc">The name of this instance.</div><div class="ttdef"><b>Definition</b> <a href="_entity_owner_8h_source.html#l00171">EntityOwner.h:171</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html">ChimeraTK::FanIn::Inputs::TrackingDecorator</a></div><div class="ttdoc">Helper decorator which keeps track of the last update received by the FanIn.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00185">FanIn.h:185</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_a0d8843bde4a449dc90280a93e89bb6b5"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a0d8843bde4a449dc90280a93e89bb6b5">ChimeraTK::FanIn::Inputs::TrackingDecorator::onAddValidator</a></div><div class="ttdeci">void onAddValidator(UserInputValidator &amp;) override</div><div class="ttdoc">Called when the accessor is added to the validator, i.e.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00419">FanIn.h:419</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_a38d8d69cf418f6eacf7fbdbf08ee8ef7"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a38d8d69cf418f6eacf7fbdbf08ee8ef7">ChimeraTK::FanIn::Inputs::TrackingDecorator::doPostRead</a></div><div class="ttdeci">void doPostRead(TransferType type, bool updateDataBuffer) override</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00391">FanIn.h:391</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_aa2bd945b4593c2c6b9e29448a65b2e33"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aa2bd945b4593c2c6b9e29448a65b2e33">ChimeraTK::FanIn::Inputs::TrackingDecorator::onReject</a></div><div class="ttdeci">void onReject() override</div><div class="ttdoc">Called when UserInputValidator::validate() (or validateAll()) rejects an incoming or initial value.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00402">FanIn.h:402</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_aadb52e4ecd188d085edcec255276adb0"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aadb52e4ecd188d085edcec255276adb0">ChimeraTK::FanIn::Inputs::TrackingDecorator::onAccept</a></div><div class="ttdeci">void onAccept() override</div><div class="ttdoc">Called when UserInputValidator::validate() (or validateAll()) accepts an incoming or initial value,...</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00411">FanIn.h:411</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_a0d8843bde4a449dc90280a93e89bb6b5"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a0d8843bde4a449dc90280a93e89bb6b5">ChimeraTK::FanIn::Inputs::TrackingDecorator::onAddValidator</a></div><div class="ttdeci">void onAddValidator(UserInputValidator &amp;) override</div><div class="ttdoc">Called when the accessor is added to the validator, i.e.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00420">FanIn.h:420</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_a38d8d69cf418f6eacf7fbdbf08ee8ef7"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#a38d8d69cf418f6eacf7fbdbf08ee8ef7">ChimeraTK::FanIn::Inputs::TrackingDecorator::doPostRead</a></div><div class="ttdeci">void doPostRead(TransferType type, bool updateDataBuffer) override</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00392">FanIn.h:392</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_aa2bd945b4593c2c6b9e29448a65b2e33"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aa2bd945b4593c2c6b9e29448a65b2e33">ChimeraTK::FanIn::Inputs::TrackingDecorator::onReject</a></div><div class="ttdeci">void onReject() override</div><div class="ttdoc">Called when UserInputValidator::validate() (or validateAll()) rejects an incoming or initial value.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00403">FanIn.h:403</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_aadb52e4ecd188d085edcec255276adb0"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#aadb52e4ecd188d085edcec255276adb0">ChimeraTK::FanIn::Inputs::TrackingDecorator::onAccept</a></div><div class="ttdeci">void onAccept() override</div><div class="ttdoc">Called when UserInputValidator::validate() (or validateAll()) accepts an incoming or initial value,...</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00412">FanIn.h:412</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator_html_afb3b0b35e9a506dd42eacc300f89db17"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html#afb3b0b35e9a506dd42eacc300f89db17">ChimeraTK::FanIn::Inputs::TrackingDecorator::TrackingDecorator</a></div><div class="ttdeci">TrackingDecorator(const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; U &gt; &gt; &amp;target, FanIn::Inputs &amp;fanIn)</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00187">FanIn.h:187</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html">ChimeraTK::FanIn::Inputs</a></div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00142">FanIn.h:142</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a09d02ab593edb40760d047c998cb57eb"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a09d02ab593edb40760d047c998cb57eb">ChimeraTK::FanIn::Inputs::_additionalNames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _additionalNames</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00164">FanIn.h:164</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a11da38b014032d75ff380549a9ba9215"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a11da38b014032d75ff380549a9ba9215">ChimeraTK::FanIn::Inputs::postConstruct</a></div><div class="ttdeci">void postConstruct() override</div><div class="ttdoc">Hook function called on all Modules of an Application after the Application constructor is complete b...</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00283">FanIn.h:283</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a199127ab03a666b6acd032824bc850e3"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a199127ab03a666b6acd032824bc850e3">ChimeraTK::FanIn::Inputs::has</a></div><div class="ttdeci">bool has(const TransferElementID &amp;id) const</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00342">FanIn.h:342</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a31caf421456b113cb95ed3b176ca9acb"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a31caf421456b113cb95ed3b176ca9acb">ChimeraTK::FanIn::Inputs::get</a></div><div class="ttdeci">const AccessorType &amp; get(const TransferElementID &amp;id) const</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00331">FanIn.h:331</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a199127ab03a666b6acd032824bc850e3"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a199127ab03a666b6acd032824bc850e3">ChimeraTK::FanIn::Inputs::has</a></div><div class="ttdeci">bool has(const TransferElementID &amp;id) const</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00343">FanIn.h:343</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a31caf421456b113cb95ed3b176ca9acb"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a31caf421456b113cb95ed3b176ca9acb">ChimeraTK::FanIn::Inputs::get</a></div><div class="ttdeci">const AccessorType &amp; get(const TransferElementID &amp;id) const</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00332">FanIn.h:332</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a349cbdf0f00a0b38ffde930ef8ae1e32"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a349cbdf0f00a0b38ffde930ef8ae1e32">ChimeraTK::FanIn::Inputs::_output</a></div><div class="ttdeci">out_type * _output</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00168">FanIn.h:168</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a4459cafa826f261bbe0ecb98f00d5e8d"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a4459cafa826f261bbe0ecb98f00d5e8d">ChimeraTK::FanIn::Inputs::_nInitialValuesValidated</a></div><div class="ttdeci">size_t _nInitialValuesValidated</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00175">FanIn.h:175</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a471b9282c94a2533730a45090559ecbd"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">ChimeraTK::FanIn::Inputs::prepare</a></div><div class="ttdeci">void prepare() override</div><div class="ttdoc">Prepare the execution of the module.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00312">FanIn.h:312</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a471b9282c94a2533730a45090559ecbd"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">ChimeraTK::FanIn::Inputs::prepare</a></div><div class="ttdeci">void prepare() override</div><div class="ttdoc">Prepare the execution of the module.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00313">FanIn.h:313</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a6a2423a56e3ad8d2e79a2c49f01e46f9"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a6a2423a56e3ad8d2e79a2c49f01e46f9">ChimeraTK::FanIn::Inputs::_lastUpdate</a></div><div class="ttdeci">TransferElementID _lastUpdate</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00173">FanIn.h:173</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a759927466dffee3296b5e7d8a2cafb57"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a759927466dffee3296b5e7d8a2cafb57">ChimeraTK::FanIn::Inputs::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00162">FanIn.h:162</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_a788a3e52d6baef993405886f8789e835"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a788a3e52d6baef993405886f8789e835">ChimeraTK::FanIn::Inputs::_aggregator</a></div><div class="ttdeci">AggregatorType _aggregator</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00166">FanIn.h:166</a></div></div>
@@ -555,7 +556,7 @@ $(document).ready(function(){initNavTree('_fan_in_8h_source.html',''); initResiz
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_ae3a639a03bc5751c7e355060e29a377aa03e1211c4923ad827a6c62517e1eb284"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#ae3a639a03bc5751c7e355060e29a377aa03e1211c4923ad827a6c62517e1eb284">ChimeraTK::FanIn::Inputs::UpdateType::POST_READ</a></div><div class="ttdeci">@ POST_READ</div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_ae3a639a03bc5751c7e355060e29a377aa1fd72e016e8fbf2cf1f0c918dcd9bad3"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#ae3a639a03bc5751c7e355060e29a377aa1fd72e016e8fbf2cf1f0c918dcd9bad3">ChimeraTK::FanIn::Inputs::UpdateType::ACCEPT</a></div><div class="ttdeci">@ ACCEPT</div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_ae3a639a03bc5751c7e355060e29a377aa59b228d9fec9b88833bfe5d812ed8ad4"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#ae3a639a03bc5751c7e355060e29a377aa59b228d9fec9b88833bfe5d812ed8ad4">ChimeraTK::FanIn::Inputs::UpdateType::REJECT</a></div><div class="ttdeci">@ REJECT</div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_af0458392b7d29eb741f8dff6cba0d379"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#af0458392b7d29eb741f8dff6cba0d379">ChimeraTK::FanIn::Inputs::processUpdate</a></div><div class="ttdeci">void processUpdate(const TransferElementID &amp;change, UpdateType type)</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00353">FanIn.h:353</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_af0458392b7d29eb741f8dff6cba0d379"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#af0458392b7d29eb741f8dff6cba0d379">ChimeraTK::FanIn::Inputs::processUpdate</a></div><div class="ttdeci">void processUpdate(const TransferElementID &amp;change, UpdateType type)</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00354">FanIn.h:354</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_1_1_inputs_html_afc7df71390a0950265baaf3cc76c0829"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#afc7df71390a0950265baaf3cc76c0829">ChimeraTK::FanIn::Inputs::_hasValidator</a></div><div class="ttdeci">bool _hasValidator</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00174">FanIn.h:174</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_html"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in.html">ChimeraTK::FanIn</a></div><div class="ttdoc">Special accessor allows multiple incoming connections to the same logical process variable.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00056">FanIn.h:56</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_fan_in_html_a15c6876ff39a552f10b048e2fe34ef50"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_in.html#a15c6876ff39a552f10b048e2fe34ef50">ChimeraTK::FanIn::hasInput</a></div><div class="ttdeci">bool hasInput(const TransferElementID &amp;id) const</div><div class="ttdoc">Check whether the given TransferElementID identifies an internal input.</div><div class="ttdef"><b>Definition</b> <a href="_fan_in_8h_source.html#l00114">FanIn.h:114</a></div></div>
