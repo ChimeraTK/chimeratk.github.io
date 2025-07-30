@@ -142,9 +142,9 @@ $(document).ready(function(){initNavTree('_py_config_reader_8cc_source.html','')
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#ac22f5b4d24632cbd2241c0e494bdc8bb">   42</a></span>  UserTypeTemplateVariantNoVoid&lt;std::vector&gt; PyConfigReader::getArray(ChimeraTK::DataType dt, <span class="keyword">const</span> std::string&amp; path,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      std::optional&lt;UserTypeTemplateVariantNoVoid&lt;std::vector&gt;&gt; defaultValue) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::optional&lt;UserTypeTemplateVariantNoVoid&lt;std::vector&gt;&gt; rv;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_config_reader.html#a72d0b9c9d9431fdf46acb4e41f2fc5e2">   42</a></span>  UserTypeTemplateVariantNoVoid&lt;PyConfigReader::Vector&gt; PyConfigReader::getArray(ChimeraTK::DataType dt,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keyword">const</span> std::string&amp; path, std::optional&lt;UserTypeTemplateVariantNoVoid&lt;Vector&gt;&gt; defaultValue) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::optional&lt;UserTypeTemplateVariantNoVoid&lt;Vector&gt;&gt; rv;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ChimeraTK::callForTypeNoVoid(dt.getAsTypeInfo(), [&amp;](<span class="keyword">auto</span> t) {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      using UserType = decltype(t);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
