@@ -14,6 +14,7 @@ var dir_12103a13d03486cdb1fa8b48e27c887f =
     [ "testDeviceExceptionFlagPropagation.cc", "test_device_exception_flag_propagation_8cc.html", "test_device_exception_flag_propagation_8cc" ],
     [ "testDeviceInitialisationHandler.cc", "test_device_initialisation_handler_8cc.html", "test_device_initialisation_handler_8cc" ],
     [ "testExceptionHandling.cc", "test_exception_handling_8cc.html", "test_exception_handling_8cc" ],
+    [ "testFanIn.cc", "test_fan_in_8cc.html", "test_fan_in_8cc" ],
     [ "testFanoutConnections.cc", "test_fanout_connections_8cc.html", "test_fanout_connections_8cc" ],
     [ "testHierarchyModifyingGroup.cc", "test_hierarchy_modifying_group_8cc.html", "test_hierarchy_modifying_group_8cc" ],
     [ "testIllegalNetworks.cc", "test_illegal_networks_8cc.html", "test_illegal_networks_8cc" ],

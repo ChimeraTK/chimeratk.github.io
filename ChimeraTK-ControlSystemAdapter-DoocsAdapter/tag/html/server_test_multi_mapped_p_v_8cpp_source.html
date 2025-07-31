@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.13.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.14.00</span>
    </div>
   </td>
  </tr>
@@ -121,24 +121,43 @@ $(document).ready(function(){initNavTree('server_test_multi_mapped_p_v_8cpp_sour
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_define" href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="server_test_multi_mapped_p_v_8cpp.html#af7dbffc4acfcc071a74b07916e71aee2">   25</a></span><a class="code hl_function" href="server_test_multi_mapped_p_v_8cpp.html#af7dbffc4acfcc071a74b07916e71aee2">BOOST_AUTO_TEST_CASE</a>(testMultiMapped, *boost::unit_test::tolerance(0.0001)) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="comment">// Note: In the .conf file, SECOND/SCALAR_1 is initialised with 23.456, which must be ignored.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/SCALAR_1&quot;</span>) == 12.345);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//SECOND/SCALAR_1&quot;</span>) == 12.345);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/SCALAR_1&quot;</span>, 42.42);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="server_test_multi_mapped_p_v_8cpp.html#a78109cc1fc2f236818b08446d4f2d350">   27</a></span><a class="code hl_function" href="server_test_multi_mapped_p_v_8cpp.html#a78109cc1fc2f236818b08446d4f2d350">BOOST_AUTO_TEST_CASE</a>(TestMultiMapped, *boost::unit_test::tolerance(0.0001)) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="comment">// Note: In the .conf file, SECOND/SCALAR_1 is initialised with 23.456, which must be ignored.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/SCALAR_1&quot;</span>) == 12.345);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//SECOND/SCALAR_1&quot;</span>) == 12.345);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/SCALAR_1&quot;</span>) == 42.42);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//SECOND/SCALAR_1&quot;</span>) == 42.42);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/SCALAR_1&quot;</span>, 42.42);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/SCALAR_1&quot;</span>) == 42.42);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//SECOND/SCALAR_1&quot;</span>) == 42.42);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="server_test_multi_mapped_p_v_8cpp.html#a741af34b5ec04d0d689bf25d819d0598">   41</a></span><a class="code hl_function" href="server_test_multi_mapped_p_v_8cpp.html#a78109cc1fc2f236818b08446d4f2d350">BOOST_AUTO_TEST_CASE</a>(TestMultiMappedBidirectional, *boost::unit_test::tolerance(0.0001)) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="comment">// Note: In the .conf file, SECOND/BIDIRECTIONAL is initialised with 23.456, which must be ignored.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/BIDIRECTIONAL&quot;</span>) == 12.345);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//SECOND/BIDIRECTIONAL&quot;</span>) == 12.345);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/BIDIRECTIONAL&quot;</span>, 42.42);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//FIRST/BIDIRECTIONAL&quot;</span>) == 42.42);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  BOOST_TEST(DoocsServerTestHelper::doocsGet&lt;float&gt;(<span class="stringliteral">&quot;//SECOND/BIDIRECTIONAL&quot;</span>) == 42.42);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_doocs_adapter_8h_html"><div class="ttname"><a href="_doocs_adapter_8h.html">DoocsAdapter.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html"><div class="ttname"><a href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></div></div>
 <div class="ttc" id="aserver_based_test_tools_8h_html_a9c2852da25e25d4dc4f3f36a4ed8e8df"><div class="ttname"><a href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a></div><div class="ttdeci">#define DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</div><div class="ttdef"><b>Definition</b> <a href="server_based_test_tools_8h_source.html#l00061">serverBasedTestTools.h:61</a></div></div>
 <div class="ttc" id="aserver_test_multi_mapped_p_v_8cpp_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="server_test_multi_mapped_p_v_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div></div>
-<div class="ttc" id="aserver_test_multi_mapped_p_v_8cpp_html_af7dbffc4acfcc071a74b07916e71aee2"><div class="ttname"><a href="server_test_multi_mapped_p_v_8cpp.html#af7dbffc4acfcc071a74b07916e71aee2">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION BOOST_AUTO_TEST_CASE(testMultiMapped, *boost::unit_test::tolerance(0.0001))</div><div class="ttdoc">Check that all expected variables are there.</div><div class="ttdef"><b>Definition</b> <a href="server_test_multi_mapped_p_v_8cpp_source.html#l00025">serverTestMultiMappedPV.cpp:25</a></div></div>
+<div class="ttc" id="aserver_test_multi_mapped_p_v_8cpp_html_a78109cc1fc2f236818b08446d4f2d350"><div class="ttname"><a href="server_test_multi_mapped_p_v_8cpp.html#a78109cc1fc2f236818b08446d4f2d350">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION BOOST_AUTO_TEST_CASE(TestMultiMapped, *boost::unit_test::tolerance(0.0001))</div><div class="ttdoc">Check that all expected variables are there.</div><div class="ttdef"><b>Definition</b> <a href="server_test_multi_mapped_p_v_8cpp_source.html#l00027">serverTestMultiMappedPV.cpp:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

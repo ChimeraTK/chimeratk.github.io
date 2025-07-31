@@ -24,6 +24,11 @@ var annotated_dup =
       [ "experimental", "namespacecppext_1_1experimental.html", [
         [ "type_erasing_vector", "classcppext_1_1experimental_1_1type__erasing__vector.html", "classcppext_1_1experimental_1_1type__erasing__vector" ]
       ] ],
+      [ "ranges", "namespacecppext_1_1ranges.html", [
+        [ "detail", "namespacecppext_1_1ranges_1_1detail.html", [
+          [ "ToImpl", "structcppext_1_1ranges_1_1detail_1_1_to_impl.html", "structcppext_1_1ranges_1_1detail_1_1_to_impl" ]
+        ] ]
+      ] ],
       [ "barrier", "classcppext_1_1barrier.html", "classcppext_1_1barrier" ],
       [ "final_act", "classcppext_1_1final__act.html", "classcppext_1_1final__act" ],
       [ "future_queue", "classcppext_1_1future__queue.html", "classcppext_1_1future__queue" ],

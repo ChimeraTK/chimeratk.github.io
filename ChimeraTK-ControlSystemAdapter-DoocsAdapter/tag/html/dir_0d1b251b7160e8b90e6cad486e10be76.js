@@ -5,5 +5,6 @@ var dir_0d1b251b7160e8b90e6cad486e10be76 =
     [ "m4uD_array_testCases_numericals.hpp", "m4u_d__array__test_cases__numericals_8hpp.html", "m4u_d__array__test_cases__numericals_8hpp" ],
     [ "m4uD_type_testCases_numericals.hpp", "m4u_d__type__test_cases__numericals_8hpp.html", "m4u_d__type__test_cases__numericals_8hpp" ],
     [ "serverBasedTestTools.h", "server_based_test_tools_8h.html", "server_based_test_tools_8h" ],
-    [ "set_doocs_value.h", "set__doocs__value_8h.html", "set__doocs__value_8h" ]
+    [ "set_doocs_value.h", "set__doocs__value_8h.html", "set__doocs__value_8h" ],
+    [ "ZeroMQFixture.h", "_zero_m_q_fixture_8h.html", "_zero_m_q_fixture_8h" ]
 ];

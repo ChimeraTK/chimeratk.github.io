@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.21.00</span>
    </div>
   </td>
  </tr>
@@ -128,6 +128,9 @@ Public Types</h2></td></tr>
 <tr class="separator:ab95fa31c3f4d1394093cdeaf096a7451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ef42ff766c269f1c0c68a7f20190d4f" id="r_a2ef42ff766c269f1c0c68a7f20190d4f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#a2ef42ff766c269f1c0c68a7f20190d4f">const_reverse_iterator</a> = typename std::vector&lt; UserType &gt;::const_reverse_iterator</td></tr>
 <tr class="separator:a2ef42ff766c269f1c0c68a7f20190d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_chimera_t_k_1_1_n_d_register_accessor_abstractor')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;</a></td></tr>
+<tr class="memitem:a8a6b103395f5fce9318ee293c22608e2 inherit pub_types_class_chimera_t_k_1_1_n_d_register_accessor_abstractor" id="r_a8a6b103395f5fce9318ee293c22608e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a8a6b103395f5fce9318ee293c22608e2">value_type</a> = UserType</td></tr>
+<tr class="separator:a8a6b103395f5fce9318ee293c22608e2 inherit pub_types_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -317,9 +320,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aea884943cf09b1544983a16d9438ae18 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;user_type UserType&gt;<br />
 class ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;</div><p><a class="el" href="class_accessor.html">Accessor</a> class to read and write registers transparently by using the accessor object like a vector of the type UserType. </p>
-<p>Conversion to and from the UserType will be handled by a data converter matching the register description in the map (if applicable). Obtain the accessor using the Device::getBufferingRegisterAccessor() function.</p>
+<p>Conversion to and from the UserType will be handled by a data converter matching the register description in the map (if applicable). Obtain the accessor using the <a class="el" href="class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d" title="Get a OneDRegisterAccessor object for the given register.">Device::getOneDRegisterAccessor()</a> function.</p>
 <p>Note: Transfers between the device and the internal buffer need to be triggered using the <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device.">read()</a> and <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aefb2a684e4afb7d55e6147fbe5a332ee">write()</a> functions before reading from resp. after writing to the buffer using the operators. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="accessor1_d_8cpp-example.html#_a4">accessor1D.cpp</a>.</dd>
 </dl>
@@ -332,7 +335,7 @@ class ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;</div><p><a class="el" hr
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::const_iterator =  typename std::vector&lt;UserType&gt;::const_iterator</td>
@@ -350,7 +353,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::const_reverse_iterator =  typename std::vector&lt;UserType&gt;::const_reverse_iterator</td>
@@ -368,7 +371,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::iterator =  typename std::vector&lt;UserType&gt;::iterator</td>
@@ -386,7 +389,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::reverse_iterator =  typename std::vector&lt;UserType&gt;::reverse_iterator</td>
@@ -405,7 +408,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::OneDRegisterAccessor </td>
@@ -430,7 +433,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::OneDRegisterAccessor </td>
@@ -456,7 +459,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -485,7 +488,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -514,7 +517,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -543,7 +546,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -572,7 +575,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -601,7 +604,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -630,7 +633,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -662,7 +665,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -691,7 +694,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -720,7 +723,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <div class="memtemplate">
 template&lt;typename COOKED_TYPE &gt; </div>
       <table class="memname">
@@ -747,7 +750,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -780,7 +783,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -812,7 +815,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">OneDRegisterAccessor</a>&lt; UserType &gt; &amp; <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::operator= </td>
@@ -836,7 +839,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -869,7 +872,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -898,7 +901,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -927,7 +930,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -956,7 +959,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -985,7 +988,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <div class="memtemplate">
 template&lt;typename COOKED_TYPE &gt; </div>
       <table class="memname">
@@ -1022,7 +1025,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1054,7 +1057,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::writeIfDifferent </td>
@@ -1096,7 +1099,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

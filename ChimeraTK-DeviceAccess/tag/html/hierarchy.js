@@ -10,6 +10,9 @@ var hierarchy =
       [ "ChimeraTK::LNMBackend::AccessorPlugin< DoubleBufferPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::DoubleBufferPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html", null ]
       ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< FanOutPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::FanOutPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin.html", null ]
+      ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< ForcePollingReadPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html", null ]
       ] ],
@@ -26,7 +29,9 @@ var hierarchy =
         [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< TagModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
-        [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", null ]
+        [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", [
+          [ "ChimeraTK::LNMBackend::FixedTagModifierPlugin< Tag >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin.html", null ]
+        ] ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< TypeHintModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::TypeHintModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html", null ]
@@ -125,7 +130,6 @@ var hierarchy =
     [ "ChimeraTK::Boolean", "class_chimera_t_k_1_1_boolean.html", null ],
     [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >::Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", null ],
     [ "ChimeraTK::NDRegisterAccessor< UserType >::Buffer", "struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html", null ],
-    [ "ChimeraTK::BufferingRegisterAccessor< UserType >", "class_chimera_t_k_1_1_buffering_register_accessor.html", null ],
     [ "CatalogueGenerator", "class_catalogue_generator.html", null ],
     [ "ChimeraTK::NumericAddressedRegisterInfo::ChannelInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html", null ],
     [ "DeviceFixture2D< Derived >::ConfigParams", "struct_device_fixture2_d_1_1_config_params.html", null ],
@@ -331,6 +335,7 @@ var hierarchy =
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::DataConsistencyDecorator< UserType >", "class_chimera_t_k_1_1_data_consistency_decorator.html", null ],
+              [ "ChimeraTK::LNMBackend::FanOutPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin_decorator.html", null ],
               [ "TestNDRegisterAccessorDecorator< UserType >", "class_test_n_d_register_accessor_decorator.html", null ]
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
@@ -465,7 +470,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::LNMBackend::MathPluginFormulaHelper", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", null ],
     [ "ChimeraTK::MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", null ],
-    [ "ChimeraTK::MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ],
     [ "MuxedArea1", "struct_muxed_area1.html", null ],
     [ "MuxedArea2", "struct_muxed_area2.html", null ],
     [ "MuxedFloat", "struct_muxed_float.html", null ],
@@ -567,6 +571,9 @@ var hierarchy =
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_one_d_register_descriptor_base.html", null ],
@@ -629,6 +636,15 @@ var hierarchy =
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_scalar_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_scalar_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWithFanOutMainTarget", "struct_reg_with_fan_out_main_target.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWithFanOutTarget2", "struct_reg_with_fan_out_target2.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWithFanOutTarget3", "struct_reg_with_fan_out_target3.html", null ]
+        ] ],
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", [
           [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", null ]
         ] ],
@@ -741,6 +757,9 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_register_descriptor_base.html", null ],
@@ -876,17 +895,12 @@ var hierarchy =
       [ "UnknownVersionTestFixture", "struct_unknown_version_test_fixture.html", null ]
     ] ],
     [ "ChimeraTK::TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", [
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< unsigned char >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", null ]
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< ChimeraTK::Void >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", null ]
       ] ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< DataConsistencyKey::BaseType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< int32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", null ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.13.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.14.00</span>
    </div>
   </td>
  </tr>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('server_test_call_optimise_unmapped_var
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">   29</a></span><a class="code hl_function" href="server_test_call_optimise_unmapped_variables_8cpp.html#acd5685578794fb4c4278e3de076de70e">BOOST_AUTO_TEST_CASE</a>(testListOfUnmappedVariables) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  std::list&lt;std::string&gt; refAppModuleList = {<span class="stringliteral">&quot;CHAR&quot;</span>, <span class="stringliteral">&quot;UCHAR&quot;</span>, <span class="stringliteral">&quot;SHORT&quot;</span>, <span class="stringliteral">&quot;USHORT&quot;</span>, <span class="stringliteral">&quot;INT&quot;</span>, <span class="stringliteral">&quot;UINT&quot;</span>, <span class="stringliteral">&quot;LONG&quot;</span>, <span class="stringliteral">&quot;ULONG&quot;</span>,</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="stringliteral">&quot;FLOAT&quot;</span>, <span class="stringliteral">&quot;DOUBLE&quot;</span>, <span class="stringliteral">&quot;STRING&quot;</span>, <span class="stringliteral">&quot;BOOLEAN&quot;</span>, <span class="stringliteral">&quot;VOID&quot;</span>};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::list&lt;std::string&gt; refAppVarPerModuleList = {<span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;TO_DEVICE_ARRAY&quot;</span>,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>, <span class="stringliteral">&quot;CONSTANT_ARRAY&quot;</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  std::list&lt;std::string&gt; refAppVarPerModuleList = {<span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;BIDIRECTIONAL&quot;</span>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;TO_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>, <span class="stringliteral">&quot;CONSTANT_ARRAY&quot;</span>};</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  std::set&lt;std::string&gt; mappedVars = {<span class="stringliteral">&quot;/DOUBLE/TO_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>,</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="stringliteral">&quot;/DOUBLE/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;/DOUBLE/FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;/FLOAT/TO_DEVICE_SCALAR&quot;</span>};</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  std::set&lt;std::string&gt; expectedList;</div>

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend<span id="projectnumber">&#160;01.10.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend<span id="projectnumber">&#160;01.11.00</span>
    </div>
   </td>
  </tr>
@@ -122,11 +122,14 @@ $(document).ready(function(){initNavTree('_catalogue_fetcher_8h_source.html','')
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  std::future&lt;void&gt; cancelFlag_;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <a class="code hl_class" href="class_doocs_backend_register_catalogue.html">DoocsBackendRegisterCatalogue</a> catalogue_;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">bool</span> locationLookupError_{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">void</span> fillCatalogue(std::string fixedComponents, <span class="keywordtype">long</span> level);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">bool</span> isCancelled()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (cancelFlag_.wait_for(std::chrono::microseconds(0)) == std::future_status::ready); }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> checkZmqAvailability(<span class="keyword">const</span> std::string&amp; fullQualifiedName) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  std::string _failedPropertyFirst;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  std::string _failedPropertyError;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">size_t</span> _failedPropertyCount{0};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> fillCatalogue(std::string fixedComponents, <span class="keywordtype">long</span> level);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">bool</span> isCancelled()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (cancelFlag_.wait_for(std::chrono::microseconds(0)) == std::future_status::ready); }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">bool</span> checkZmqAvailability(<span class="keyword">const</span> std::string&amp; fullQualifiedName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
 <div class="ttc" id="a_register_info_8h_html"><div class="ttname"><a href="_register_info_8h.html">RegisterInfo.h</a></div></div>
 <div class="ttc" id="aclass_catalogue_fetcher_html"><div class="ttname"><a href="class_catalogue_fetcher.html">CatalogueFetcher</a></div><div class="ttdef"><b>Definition</b> <a href="_catalogue_fetcher_8h_source.html#l00010">CatalogueFetcher.h:10</a></div></div>

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.21.00</span>
    </div>
   </td>
  </tr>
@@ -120,12 +120,18 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_copy_register_d
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c8d9039c794855b44b1a21601bcd4f2" id="r_a0c8d9039c794855b44b1a21601bcd4f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a0c8d9039c794855b44b1a21601bcd4f2">CopyRegisterDecorator</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor</a>&lt; T &gt; &gt; &amp;target)</td></tr>
 <tr class="separator:a0c8d9039c794855b44b1a21601bcd4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7e057057a46f5074c835b2ffa63262" id="r_a4e7e057057a46f5074c835b2ffa63262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a4e7e057057a46f5074c835b2ffa63262">doPreRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>) override</td></tr>
+<tr class="memdesc:a4e7e057057a46f5074c835b2ffa63262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary.">preRead()</a>.  <br /></td></tr>
+<tr class="separator:a4e7e057057a46f5074c835b2ffa63262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e47253eee1f8e86f9dbb64832e3535" id="r_ae4e47253eee1f8e86f9dbb64832e3535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#ae4e47253eee1f8e86f9dbb64832e3535">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>) override</td></tr>
 <tr class="memdesc:ae4e47253eee1f8e86f9dbb64832e3535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <br /></td></tr>
 <tr class="separator:ae4e47253eee1f8e86f9dbb64832e3535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3862add181c233c1f80365008e87a57d" id="r_a3862add181c233c1f80365008e87a57d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a3862add181c233c1f80365008e87a57d">doPostRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, bool hasNewData) override</td></tr>
 <tr class="memdesc:a3862add181c233c1f80365008e87a57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <br /></td></tr>
 <tr class="separator:a3862add181c233c1f80365008e87a57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d4f8a85dbbae7f6220c58c9e9cf1a8" id="r_a92d4f8a85dbbae7f6220c58c9e9cf1a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a92d4f8a85dbbae7f6220c58c9e9cf1a8">doReadTransferSynchronously</a> ()</td></tr>
+<tr class="memdesc:a92d4f8a85dbbae7f6220c58c9e9cf1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement.">readTransfer()</a> for synchronous reads.  <br /></td></tr>
+<tr class="separator:a92d4f8a85dbbae7f6220c58c9e9cf1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a762babb29356600d740f549482d50c68" id="r_a762babb29356600d740f549482d50c68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68">isReadOnly</a> () const override</td></tr>
 <tr class="memdesc:a762babb29356600d740f549482d50c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is read only, i.e.  <br /></td></tr>
 <tr class="separator:a762babb29356600d740f549482d50c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,7 +275,43 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00037">37</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00042">42</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="a4e7e057057a46f5074c835b2ffa63262" name="a4e7e057057a46f5074c835b2ffa63262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7e057057a46f5074c835b2ffa63262">&#9670;&#160;</a></span>doPreRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html">ChimeraTK::CopyRegisterDecorator</a>&lt; T &gt;::doPreRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary.">preRead()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary.">preRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured.">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00033">33</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +357,46 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00033">33</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00038">38</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="a92d4f8a85dbbae7f6220c58c9e9cf1a8" name="a92d4f8a85dbbae7f6220c58c9e9cf1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d4f8a85dbbae7f6220c58c9e9cf1a8">&#9670;&#160;</a></span>doReadTransferSynchronously()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html">ChimeraTK::CopyRegisterDecorator</a>&lt; T &gt;::doReadTransferSynchronously </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement.">readTransfer()</a> for synchronous reads. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement.">readTransfer()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>This function must return within ~1 second after both boost::thread::interrupt() (on the thread calling this function) and <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted.">TransferElement::interrupt()</a> have been called (reliable termination requires both calls; implementation needs to react to one of the call only).</li>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement.">readTransfer()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to BaseClass::doReadTransferSynchronously() </li>
+</ul>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00049">49</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +430,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00044">44</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00054">54</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +464,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00046">46</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00056">56</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>

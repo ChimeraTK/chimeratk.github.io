@@ -34,9 +34,8 @@ var searchData=
   ['boolasvoid_3c_20interrupt6_2c_206_20_3e_31',['BoolAsVoid&lt; interrupt6, 6 &gt;',['../struct_bool_as_void.html',1,'']]],
   ['boolean_32',['Boolean',['../class_chimera_t_k_1_1_boolean.html',1,'ChimeraTK']]],
   ['buffer_33',['buffer',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html',1,'ChimeraTK::ExceptionDummyPushDecorator&lt; UserType &gt;::Buffer'],['../struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html',1,'ChimeraTK::NDRegisterAccessor&lt; UserType &gt;::Buffer']]],
-  ['bufferingregisteraccessor_34',['BufferingRegisterAccessor',['../class_chimera_t_k_1_1_buffering_register_accessor.html',1,'ChimeraTK']]],
-  ['byteraw_5ffixedpoint8_5f4s_35',['ByteRaw_fixedPoint8_4s',['../struct_byte_raw__fixed_point8__4s.html',1,'']]],
-  ['byteraw_5ffixedpoint8_5f4u_36',['ByteRaw_fixedPoint8_4u',['../struct_byte_raw__fixed_point8__4u.html',1,'']]],
-  ['byteraw_5fsigned8_37',['ByteRaw_signed8',['../struct_byte_raw__signed8.html',1,'']]],
-  ['byteraw_5funsigned8_38',['ByteRaw_unsigned8',['../struct_byte_raw__unsigned8.html',1,'']]]
+  ['byteraw_5ffixedpoint8_5f4s_34',['ByteRaw_fixedPoint8_4s',['../struct_byte_raw__fixed_point8__4s.html',1,'']]],
+  ['byteraw_5ffixedpoint8_5f4u_35',['ByteRaw_fixedPoint8_4u',['../struct_byte_raw__fixed_point8__4u.html',1,'']]],
+  ['byteraw_5fsigned8_36',['ByteRaw_signed8',['../struct_byte_raw__signed8.html',1,'']]],
+  ['byteraw_5funsigned8_37',['ByteRaw_unsigned8',['../struct_byte_raw__unsigned8.html',1,'']]]
 ];

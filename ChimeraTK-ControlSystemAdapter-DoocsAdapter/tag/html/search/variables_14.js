@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['xsource_0',['xSource',['../struct_chimera_t_k_1_1_xy_description.html#a37757553ec1ab2faa41e443b562776ca',1,'ChimeraTK::XyDescription']]]
+  ['writeablevariableswithmultipleproperties_0',['writeableVariablesWithMultipleProperties',['../class_chimera_t_k_1_1_doocs_adapter.html#af795f4eff179c7c157d05c572e3debb2',1,'ChimeraTK::DoocsAdapter']]],
+  ['writeablevariableswithmultiplepropertiesisfinal_1',['writeableVariablesWithMultiplePropertiesIsFinal',['../class_chimera_t_k_1_1_doocs_adapter.html#a2973a2712cd68522fe39ba021ab0335d',1,'ChimeraTK::DoocsAdapter']]]
 ];

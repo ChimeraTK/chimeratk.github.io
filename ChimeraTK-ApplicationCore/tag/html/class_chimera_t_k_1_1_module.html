@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.04.00</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a941ad3d070a319b9cdf4f7892d5bbaf1" id="r_a941ad3d070a319b9cdf4f7892d5bbaf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a941ad3d070a319b9cdf4f7892d5bbaf1">operator=</a> (<a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memdesc:a941ad3d070a319b9cdf4f7892d5bbaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <br /></td></tr>
 <tr class="separator:a941ad3d070a319b9cdf4f7892d5bbaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1765181199e522b0b062c848169454f8" id="r_a1765181199e522b0b062c848169454f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a1765181199e522b0b062c848169454f8">postConstruct</a> ()</td></tr>
+<tr class="memdesc:a1765181199e522b0b062c848169454f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook function called on all Modules of an <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> after the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> constructor is complete but before the PV connections are being finalised.  <br /></td></tr>
+<tr class="separator:a1765181199e522b0b062c848169454f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2807dcc289719688b513e05ca6f1568" id="r_af2807dcc289719688b513e05ca6f1568"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">prepare</a> ()</td></tr>
 <tr class="memdesc:af2807dcc289719688b513e05ca6f1568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the execution of the module.  <br /></td></tr>
 <tr class="separator:af2807dcc289719688b513e05ca6f1568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,10 +247,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a01f4d19a8090e46f70e71758f3e5eaf8 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the list of submodules associated with this instance and any submodules.  <br /></td></tr>
 <tr class="separator:a01f4d19a8090e46f70e71758f3e5eaf8 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260d2a06bf851b4b685ae498cf5a2237 inherit pub_methods_class_chimera_t_k_1_1_entity_owner" id="r_a260d2a06bf851b4b685ae498cf5a2237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a260d2a06bf851b4b685ae498cf5a2237">registerAccessor</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> accessor)</td></tr>
-<tr class="memdesc:a260d2a06bf851b4b685ae498cf5a2237 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called inside the constructor of <a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>: adds the accessor to the list.  <br /></td></tr>
+<tr class="memdesc:a260d2a06bf851b4b685ae498cf5a2237 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called inside the constructor of Accessor: adds the accessor to the list.  <br /></td></tr>
 <tr class="separator:a260d2a06bf851b4b685ae498cf5a2237 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe28c3eba8c8820534b9827e799bac29 inherit pub_methods_class_chimera_t_k_1_1_entity_owner" id="r_afe28c3eba8c8820534b9827e799bac29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#afe28c3eba8c8820534b9827e799bac29">unregisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;accessor)</td></tr>
-<tr class="memdesc:afe28c3eba8c8820534b9827e799bac29 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called inside the destructor of <a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>: removes the accessor from the list.  <br /></td></tr>
+<tr class="memdesc:afe28c3eba8c8820534b9827e799bac29 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called inside the destructor of Accessor: removes the accessor from the list.  <br /></td></tr>
 <tr class="separator:afe28c3eba8c8820534b9827e799bac29 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9690d4ae29d8a9e05d34feed82533e94 inherit pub_methods_class_chimera_t_k_1_1_entity_owner" id="r_a9690d4ae29d8a9e05d34feed82533e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9690d4ae29d8a9e05d34feed82533e94">registerModule</a> (<a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> *module, bool addTags=true)</td></tr>
 <tr class="memdesc:a9690d4ae29d8a9e05d34feed82533e94 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register another module as a sub-module.  <br /></td></tr>
@@ -521,7 +524,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="struct_tests_1_1test_data_validity_propagation_1_1_test_module1.html#a24aa4ad61d2e19b9fe5fa8cec0857aeb">Tests::testDataValidityPropagation::TestModule1</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00106">106</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00112">112</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +601,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a29c7a77d4ddff057505c40f47d3aa8f7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00110">110</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00116">116</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +632,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00098">98</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00104">104</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +666,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a9e67fdd12bf01f1db36818dc237e8ecd">ChimeraTK::StatusAggregator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00102">102</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00108">108</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -753,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00096">96</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00102">102</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +849,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="struct_tests_1_1test_data_validity_propagation_1_1_test_module1.html#a247e6d74c780877d1bf203df3c39419f">Tests::testDataValidityPropagation::TestModule1</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00104">104</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00110">110</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -880,6 +883,37 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a1765181199e522b0b062c848169454f8" name="a1765181199e522b0b062c848169454f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1765181199e522b0b062c848169454f8">&#9670;&#160;</a></span>postConstruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Module::postConstruct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hook function called on all Modules of an <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> after the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> constructor is complete but before the PV connections are being finalised. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a11da38b014032d75ff380549a9ba9215">ChimeraTK::FanIn&lt; AccessorType &gt;::Inputs</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00050">50</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
 <a id="af2807dcc289719688b513e05ca6f1568" name="af2807dcc289719688b513e05ca6f1568"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2807dcc289719688b513e05ca6f1568">&#9670;&#160;</a></span>prepare()</h2>
 
@@ -906,9 +940,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Prepare the execution of the module. </p>
 <p>This function is called before any module is started (including internal modules like FanOuts) and before the initial values of the variables are pushed into the queues. Reading and writing variables at this point may result in undefined behaviour. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_device_manager.html#ad380aa2db690a30bbf458ce486f4bc55">ChimeraTK::DeviceManager</a>, <a class="el" href="class_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20">ChimeraTK::ConfigReader</a>, <a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#af89ea984b22c0b0d144d10b7a864b161">ChimeraTK::PeriodicTrigger</a>, <a class="el" href="class_chimera_t_k_1_1_python_application_module_trampoline.html#aea17961c679d4bb08bf16c10aee6b6c2">ChimeraTK::PythonApplicationModuleTrampoline</a>, <a class="el" href="struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html#ae7b62981677e71c148a3a54afbe6da9d">Tests::testAppModuleConnections::TestModuleFeed&lt; T &gt;</a>, <a class="el" href="struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html#a1209b37eea6e0fd928e108130132c5ff">Tests::testAppModuleConnections::TestModuleConsume&lt; T &gt;</a>, <a class="el" href="struct_tests_1_1test_app_module_connections_1_1_constant_test_module.html#a220d9092e57084947d734a4082b6d1d4">Tests::testAppModuleConnections::ConstantTestModule&lt; T &gt;</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#a4a45b3330d477bc57aabef941153b505">Tests::testBidirectionalVariables::ModuleA</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#adf6f796bad84e878887394ff2e7416c3">Tests::testBidirectionalVariables::ModuleB</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a5d3a5739c5959f38475ee504eef591fd">Tests::testBidirectionalVariables::TestApplication2::Module&lt; ACCESSOR &gt;</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a5d3a5739c5959f38475ee504eef591fd">Tests::testBidirectionalVariables::TestApplication2::Module&lt; ChimeraTK::ScalarOutputPushRB&lt; int &gt; &gt;</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a5d3a5739c5959f38475ee504eef591fd">Tests::testBidirectionalVariables::TestApplication2::Module&lt; ChimeraTK::ScalarPushInputWB&lt; int &gt; &gt;</a>, <a class="el" href="struct_tests_1_1test_circular_dependency_faulty_flags_1_1_module_a.html#a72fa1e548243a21071111613158c4086">Tests::testCircularDependencyFaultyFlags::ModuleA</a>, <a class="el" href="struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#a5465ab428546eb90d518e8aca6de288d">Tests::testCircularDependencyFaultyFlags::AA</a>, <a class="el" href="struct_tests_1_1test_circular_dependency_faulty_flags_1_1_g_g.html#a6f1ca2f0b03d4a15da1b0302781dcd62">Tests::testCircularDependencyFaultyFlags::GG</a>, <a class="el" href="struct_tests_1_1test_data_validity_propagation_1_1_test_module1.html#a10d58b21ff7b6ae75ccf766bea9090b7">Tests::testDataValidityPropagation::TestModule1</a>, <a class="el" href="struct_tests_1_1test_device_accessors_1_1_test_module.html#a7a17256e622945d39ce098164443741e">Tests::testDeviceAccessors::TestModule</a>, <a class="el" href="struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_name.html#a7f34269060cf9511bbbed72c6980ae60">Tests::testDeviceExceptionFlagPropagation::TestApplication::Name</a>, <a class="el" href="struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_module.html#a4d305860485a22545350a75b1966f884">Tests::testDeviceExceptionFlagPropagation::TestApplication::Module</a>, <a class="el" href="struct_tests_1_1test_initial_values_1_1_notifying_module.html#a7f20b1fb2a371371bfe1bf6a94c84dab">Tests::testInitialValues::NotifyingModule</a>, <a class="el" href="struct_tests_1_1test_initial_values_1_1_constant_module.html#a8753b1b7c02b8baad9c1f58fa99fde9b">Tests::testInitialValues::ConstantModule</a>, <a class="el" href="struct_tests_1_1test_initial_values_1_1_writer_module.html#a0836f48f2b8ef4ea4458b369f61bcc83">Tests::testInitialValues::WriterModule</a>, <a class="el" href="struct_tests_1_1test_status_aggregator_1_1_status_generator.html#a0bbbedf88185f810e12970637a5d378a">Tests::testStatusAggregator::StatusGenerator</a>, <a class="el" href="struct_tests_1_1test_status_aggregator_1_1_status_with_message_generator.html#a9b931564071112655714699611b31b9f">Tests::testStatusAggregator::StatusWithMessageGenerator</a>, <a class="el" href="struct_tests_1_1test_test_facilities_1_1_read_any_test_module.html#a0e2365b925f6d9d35501b8e978a6bd5f">Tests::testTestFacilities::ReadAnyTestModule</a>, <a class="el" href="struct_tests_1_1test_test_facilities_1_1_polling_read_module.html#a14160619f577164843eea77a5f4b7c82">Tests::testTestFacilities::PollingReadModule</a>, <a class="el" href="struct_tests_1_1test_test_facilities_1_1_polling_through_fanouts_module.html#ad6787629db1fc28dc31b03544f81fac1">Tests::testTestFacilities::PollingThroughFanoutsModule</a>, <a class="el" href="struct_tests_1_1test_trigger_1_1_test_module.html#ab07571103914726fb52ceed3a17ef77c">Tests::testTrigger::TestModule</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_module_a.html#a3d819a1c7d176e178ecf799b09e9b930">Tests::testUserInputValidator::ModuleA</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_module_awith_second_input.html#a01341356e1748c96b9d18875478c7dde">Tests::testUserInputValidator::ModuleAwithSecondInput</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html#a4f8b1000acff2dd8ede01410775adad6">Tests::testUserInputValidator::UpstreamSingleOut</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out.html#a81801b1faeb31fd97efbf5255dabf50d">Tests::testUserInputValidator::UpstreamTwinOut</a>, <a class="el" href="struct_tests_1_1test_variable_group_1_1_input_module.html#a50a699c27d04a137e97a60de8fd89bd2">Tests::testVariableGroup::InputModule</a>, <a class="el" href="struct_tests_1_1test_variable_group_1_1_output_module.html#a2db92b3378435bd17220d6f44559b814">Tests::testVariableGroup::OutputModule</a>, <a class="el" href="struct_tests_1_1test_versionpropagation_1_1_the_output_module.html#a3323f6c7dc555b217bc2cc0599f114b7">Tests::testVersionpropagation::TheOutputModule</a>, and <a class="el" href="struct_output_module.html#a2e70f44b9e9dcda06762cc730a249fa7">OutputModule</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_device_manager.html#ad380aa2db690a30bbf458ce486f4bc55">ChimeraTK::DeviceManager</a>, <a class="el" href="class_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20">ChimeraTK::ConfigReader</a>, <a class="el" href="class_chimera_t_k_1_1_fan_in_1_1_inputs.html#a471b9282c94a2533730a45090559ecbd">ChimeraTK::FanIn&lt; AccessorType &gt;::Inputs</a>, <a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#af89ea984b22c0b0d144d10b7a864b161">ChimeraTK::PeriodicTrigger</a>, <a class="el" href="class_chimera_t_k_1_1_python_application_module_trampoline.html#aea17961c679d4bb08bf16c10aee6b6c2">ChimeraTK::PythonApplicationModuleTrampoline</a>, <a class="el" href="struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html#ae7b62981677e71c148a3a54afbe6da9d">Tests::testAppModuleConnections::TestModuleFeed&lt; T &gt;</a>, <a class="el" href="struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html#a1209b37eea6e0fd928e108130132c5ff">Tests::testAppModuleConnections::TestModuleConsume&lt; T &gt;</a>, <a class="el" href="struct_tests_1_1test_app_module_connections_1_1_constant_test_module.html#a220d9092e57084947d734a4082b6d1d4">Tests::testAppModuleConnections::ConstantTestModule&lt; T &gt;</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_module_a.html#a4a45b3330d477bc57aabef941153b505">Tests::testBidirectionalVariables::ModuleA</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_module_b.html#adf6f796bad84e878887394ff2e7416c3">Tests::testBidirectionalVariables::ModuleB</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a5d3a5739c5959f38475ee504eef591fd">Tests::testBidirectionalVariables::TestApplication2::Module&lt; ACCESSOR &gt;</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a5d3a5739c5959f38475ee504eef591fd">Tests::testBidirectionalVariables::TestApplication2::Module&lt; ChimeraTK::ScalarOutputPushRB&lt; int &gt; &gt;</a>, <a class="el" href="struct_tests_1_1test_bidirectional_variables_1_1_test_application2_1_1_module.html#a5d3a5739c5959f38475ee504eef591fd">Tests::testBidirectionalVariables::TestApplication2::Module&lt; ChimeraTK::ScalarPushInputWB&lt; int &gt; &gt;</a>, <a class="el" href="struct_tests_1_1test_circular_dependency_faulty_flags_1_1_module_a.html#a72fa1e548243a21071111613158c4086">Tests::testCircularDependencyFaultyFlags::ModuleA</a>, <a class="el" href="struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#a5465ab428546eb90d518e8aca6de288d">Tests::testCircularDependencyFaultyFlags::AA</a>, <a class="el" href="struct_tests_1_1test_circular_dependency_faulty_flags_1_1_g_g.html#a6f1ca2f0b03d4a15da1b0302781dcd62">Tests::testCircularDependencyFaultyFlags::GG</a>, <a class="el" href="struct_tests_1_1test_data_validity_propagation_1_1_test_module1.html#a10d58b21ff7b6ae75ccf766bea9090b7">Tests::testDataValidityPropagation::TestModule1</a>, <a class="el" href="struct_tests_1_1test_device_accessors_1_1_test_module.html#a7a17256e622945d39ce098164443741e">Tests::testDeviceAccessors::TestModule</a>, <a class="el" href="struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_name.html#a7f34269060cf9511bbbed72c6980ae60">Tests::testDeviceExceptionFlagPropagation::TestApplication::Name</a>, <a class="el" href="struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_module.html#a4d305860485a22545350a75b1966f884">Tests::testDeviceExceptionFlagPropagation::TestApplication::Module</a>, <a class="el" href="class_tests_1_1test_fan_in_1_1_the_sender.html#a16c79994e1db2809830a2aca46fb02ec">Tests::testFanIn::TheSender</a>, <a class="el" href="class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app_1_1_m_g_1_1_my_sender.html#a45433c51de59dd519fe2654da8de8045">Tests::testFanIn::TestRelativeSenderNamesApp::MG::MySender</a>, <a class="el" href="class_tests_1_1test_fan_in_1_1_test_user_input_validation_app_1_1_the_receiver.html#ae9fb0e7edd1748979309525b9b036b7d">Tests::testFanIn::TestUserInputValidationApp::TheReceiver</a>, <a class="el" href="struct_tests_1_1test_initial_values_1_1_notifying_module.html#a7f20b1fb2a371371bfe1bf6a94c84dab">Tests::testInitialValues::NotifyingModule</a>, <a class="el" href="struct_tests_1_1test_initial_values_1_1_constant_module.html#a8753b1b7c02b8baad9c1f58fa99fde9b">Tests::testInitialValues::ConstantModule</a>, <a class="el" href="struct_tests_1_1test_initial_values_1_1_writer_module.html#a0836f48f2b8ef4ea4458b369f61bcc83">Tests::testInitialValues::WriterModule</a>, <a class="el" href="struct_tests_1_1test_status_aggregator_1_1_status_generator.html#a0bbbedf88185f810e12970637a5d378a">Tests::testStatusAggregator::StatusGenerator</a>, <a class="el" href="struct_tests_1_1test_status_aggregator_1_1_status_with_message_generator.html#a9b931564071112655714699611b31b9f">Tests::testStatusAggregator::StatusWithMessageGenerator</a>, <a class="el" href="struct_tests_1_1test_test_facilities_1_1_read_any_test_module.html#a0e2365b925f6d9d35501b8e978a6bd5f">Tests::testTestFacilities::ReadAnyTestModule</a>, <a class="el" href="struct_tests_1_1test_test_facilities_1_1_polling_read_module.html#a14160619f577164843eea77a5f4b7c82">Tests::testTestFacilities::PollingReadModule</a>, <a class="el" href="struct_tests_1_1test_test_facilities_1_1_polling_through_fanouts_module.html#ad6787629db1fc28dc31b03544f81fac1">Tests::testTestFacilities::PollingThroughFanoutsModule</a>, <a class="el" href="struct_tests_1_1test_trigger_1_1_test_module.html#ab07571103914726fb52ceed3a17ef77c">Tests::testTrigger::TestModule</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_module_a.html#a3d819a1c7d176e178ecf799b09e9b930">Tests::testUserInputValidator::ModuleA</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_module_awith_second_input.html#a01341356e1748c96b9d18875478c7dde">Tests::testUserInputValidator::ModuleAwithSecondInput</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html#a4f8b1000acff2dd8ede01410775adad6">Tests::testUserInputValidator::UpstreamSingleOut</a>, <a class="el" href="struct_tests_1_1test_user_input_validator_1_1_upstream_twin_out.html#a81801b1faeb31fd97efbf5255dabf50d">Tests::testUserInputValidator::UpstreamTwinOut</a>, <a class="el" href="struct_tests_1_1test_variable_group_1_1_input_module.html#a50a699c27d04a137e97a60de8fd89bd2">Tests::testVariableGroup::InputModule</a>, <a class="el" href="struct_tests_1_1test_variable_group_1_1_output_module.html#a2db92b3378435bd17220d6f44559b814">Tests::testVariableGroup::OutputModule</a>, <a class="el" href="struct_tests_1_1test_versionpropagation_1_1_the_output_module.html#a3323f6c7dc555b217bc2cc0599f114b7">Tests::testVersionpropagation::TheOutputModule</a>, and <a class="el" href="struct_output_module.html#a2e70f44b9e9dcda06762cc730a249fa7">OutputModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00049">49</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00055">55</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1096,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5e2a53bcd523efe6546098aec632a60b">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00100">100</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00106">106</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1127,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set a new owner. </p>
 <p>The caller has to take care himself that the <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types.">Module</a> gets unregistered with the old owner and registered with the new one. Do not use in user code! </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00094">94</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00100">100</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1159,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267">ChimeraTK::ApplicationModule</a>, <a class="el" href="class_chimera_t_k_1_1_device_manager.html#a686b82ab1d808e10bbb93f15b88e7558">ChimeraTK::DeviceManager</a>, and <a class="el" href="class_chimera_t_k_1_1_py_application_module.html#a5405aec004cb3bab3cf4d2699da10a8d">ChimeraTK::PyApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00056">56</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00062">62</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1232,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Owner of this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00139">139</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00145">145</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>

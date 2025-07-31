@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.06.00</span>
+   <div id="projectname">ChimeraTK-cppext<span id="projectnumber">&#160;01.07.00</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacecppext_1_1experimental" id="r_namespacecppext_1_1experimental"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppext_1_1experimental.html">experimental</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacecppext_1_1ranges" id="r_namespacecppext_1_1ranges"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppext_1_1ranges.html">ranges</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -143,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6b851409ecc7cb19c9ef1a86221a851"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppext_1_1future__queue.html">future_queue</a>&lt; <a class="el" href="classcppext_1_1final__act.html">void</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppext.html#ae6b851409ecc7cb19c9ef1a86221a851">when_all</a> (<a class="el" href="classcppext_1_1final__act.html">ITERATOR_TYPE</a> <a class="el" href="classcppext_1_1final__act.html">begin</a>, <a class="el" href="classcppext_1_1final__act.html">ITERATOR_TYPE</a> <a class="el" href="classcppext_1_1final__act.html">end</a>)</td></tr>
 <tr class="memdesc:ae6b851409ecc7cb19c9ef1a86221a851"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function expects two forward iterators pointing to a region of a container of <a class="el" href="classcppext_1_1future__queue.html" title="A lockfree multi-producer single-consumer queue of a fixed length which the receiver can wait on in c...">future_queue</a> objects.  <br /></td></tr>
 <tr class="separator:ae6b851409ecc7cb19c9ef1a86221a851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26267838234d0db28091107770f23f56" id="r_a26267838234d0db28091107770f23f56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppext_1_1final__act.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppext.html#a26267838234d0db28091107770f23f56">setThreadName</a> (<a class="el" href="classcppext_1_1final__act.html">const</a> std::string &amp;<a class="el" href="classcppext_1_1final__act.html">name</a>)</td></tr>
+<tr class="memdesc:a26267838234d0db28091107770f23f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set name of the current thread.  <br /></td></tr>
+<tr class="separator:a26267838234d0db28091107770f23f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a26dfda30cf73f76b08a3430f8bc00239" name="a26dfda30cf73f76b08a3430f8bc00239"></a>
@@ -202,6 +207,37 @@ template&lt;<a class="el" href="classcppext_1_1final__act.html">class</a> <a cla
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="finally_8hpp_source.html#l00037">37</a> of file <a class="el" href="finally_8hpp_source.html">finally.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a26267838234d0db28091107770f23f56" name="a26267838234d0db28091107770f23f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26267838234d0db28091107770f23f56">&#9670;&#160;</a></span>setThreadName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcppext_1_1final__act.html">void</a> cppext::setThreadName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppext_1_1final__act.html">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set name of the current thread. </p>
+<dl class="section note"><dt>Note</dt><dd>: This function contains platform-dependent code and may need adjustment for new platforms. On unsupported platforms, this function does nothing. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="thread_name_8hpp_source.html#l00017">17</a> of file <a class="el" href="thread_name_8hpp_source.html">threadName.hpp</a>.</p>
 
 </div>
 </div>

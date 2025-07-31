@@ -11,8 +11,8 @@ var class_chimera_t_k_1_1_inversion_of_control_accessor =
     [ "getTags", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#abd8b524cc9b876e66eecbcb6dccd4fa1", null ],
     [ "operator VariableNetworkNode", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa48152bbbc8b5b533df63556d3e62304", null ],
     [ "operator VariableNetworkNode", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a2834128a4c8194a5ab1d5499132404cb", null ],
+    [ "registerInModel", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#adabf67d10f13920a3b36d67adfdc5729", null ],
     [ "replace", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a71f97419e6d9f15de998dd31ddf7bc9f", null ],
-    [ "setMetaData", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#ac964c23d7543e1b60cc43a7fb8152c2e", null ],
-    [ "setMetaData", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a6bd561ea5fe0afbaa3c3d36937619f74", null ],
+    [ "setMetaData", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a5a3790206dbc7b6c08d355e8ceed7610", null ],
     [ "_node", "class_chimera_t_k_1_1_inversion_of_control_accessor.html#a5eee0a9e4b14165ed587de286164f8dd", null ]
 ];

@@ -42,6 +42,7 @@ var searchData=
   ['pytransferelement_3c_20pyscalaraccessor_20_3e_39',['PyTransferElement&lt; PyScalarAccessor &gt;',['../class_chimera_t_k_1_1_py_transfer_element.html',1,'ChimeraTK']]],
   ['pytransferelement_3c_20pyvoidaccessor_20_3e_40',['PyTransferElement&lt; PyVoidAccessor &gt;',['../class_chimera_t_k_1_1_py_transfer_element.html',1,'ChimeraTK']]],
   ['pytransferelementbase_41',['PyTransferElementBase',['../class_chimera_t_k_1_1_py_transfer_element_base.html',1,'ChimeraTK']]],
-  ['pyvariablegroup_42',['PyVariableGroup',['../class_chimera_t_k_1_1_py_variable_group.html',1,'ChimeraTK']]],
-  ['pyvoidaccessor_43',['PyVoidAccessor',['../class_chimera_t_k_1_1_py_void_accessor.html',1,'ChimeraTK']]]
+  ['pyuserinputvalidator_42',['PyUserInputValidator',['../class_chimera_t_k_1_1_py_user_input_validator.html',1,'ChimeraTK']]],
+  ['pyvariablegroup_43',['PyVariableGroup',['../class_chimera_t_k_1_1_py_variable_group.html',1,'ChimeraTK']]],
+  ['pyvoidaccessor_44',['PyVoidAccessor',['../class_chimera_t_k_1_1_py_void_accessor.html',1,'ChimeraTK']]]
 ];

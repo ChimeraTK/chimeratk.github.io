@@ -13,6 +13,7 @@ var dir_68f3e33577dcba624875e08d7c32489c =
     [ "getAllVariableNames.cc", "get_all_variable_names_8cc.html", "get_all_variable_names_8cc" ],
     [ "main.cc", "main_8cc.html", "main_8cc" ],
     [ "PropertyBase.cc", "_property_base_8cc.html", null ],
+    [ "RoutingDecorator.cc", "_routing_decorator_8cc.html", null ],
     [ "StatusHandler.cc", "_status_handler_8cc.html", null ],
     [ "VariableMapper.cc", "_variable_mapper_8cc.html", "_variable_mapper_8cc" ]
 ];

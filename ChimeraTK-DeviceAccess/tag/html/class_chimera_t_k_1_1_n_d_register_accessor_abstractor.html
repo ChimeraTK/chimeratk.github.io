@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.21.00</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_n_d_register_acc
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor-members.html">List of all members</a>  </div>
@@ -117,6 +118,11 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_n_d_register_acc
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_n_d_register_accessor_abstractor__coll__graph.svg" width="246" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8a6b103395f5fce9318ee293c22608e2" id="r_a8a6b103395f5fce9318ee293c22608e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a8a6b103395f5fce9318ee293c22608e2">value_type</a> = UserType</td></tr>
+<tr class="separator:a8a6b103395f5fce9318ee293c22608e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6194911c234927ca324f9a83f25c5d5" id="r_ab6194911c234927ca324f9a83f25c5d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#ab6194911c234927ca324f9a83f25c5d5">NDRegisterAccessorAbstractor</a> ()=default</td></tr>
@@ -242,19 +248,38 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aea884943cf09b1544983a16d9438ae18 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element_abstractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;user_type UserType&gt;<br />
 class ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;</div><p><a class="el" href="class_chimera_t_k_1_1_base.html">Base</a> class for the register accessor abstractors (<a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v...">ScalarRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> and <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="Accessor class to read and write 2D registers.">TwoDRegisterAccessor</a>). </p>
 <p>Provides a private implementation of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> interface to allow the bridges to be added to a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">TransferGroup</a>. Also stores the shared pointer to the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a> implementation. </p>
 
 <p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00019">19</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8a6b103395f5fce9318ee293c22608e2" name="a8a6b103395f5fce9318ee293c22608e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6b103395f5fce9318ee293c22608e2">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;user_type UserType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor</a>&lt; UserType &gt;::value_type =  UserType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00053">53</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab6194911c234927ca324f9a83f25c5d5" name="ab6194911c234927ca324f9a83f25c5d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6194911c234927ca324f9a83f25c5d5">&#9670;&#160;</a></span>NDRegisterAccessorAbstractor() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -283,7 +308,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -313,7 +338,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -333,7 +358,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00094">94</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00096">96</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +369,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -363,7 +388,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00080">80</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00082">82</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +398,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -392,7 +417,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00087">87</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00089">89</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +427,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor</a>&lt; UserType &gt;::getImpl </td>
@@ -413,7 +438,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00101">101</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00103">103</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +448,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -453,7 +478,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor</a>&lt; UserType &gt;::replace </td>
@@ -467,7 +492,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Alternative signature of <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#ab6e2e3825b61976c4ad61ec9d1a7f547" title="Assign a new accessor to this NDRegisterAccessorAbstractor.">replace()</a> with the same functionality, used when a pointer to the implementation has been obtained directly (instead of a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the register accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw...">NDRegisterAccessorAbstractor</a>). </p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00073">73</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00075">75</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +502,7 @@ template&lt;typename UserType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;user_type UserType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor</a>&lt; UserType &gt;::replace </td>
@@ -492,7 +517,7 @@ template&lt;typename UserType &gt; </div>
 <p>Assign a new accessor to this <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the register accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw...">NDRegisterAccessorAbstractor</a>. </p>
 <p>Since another <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the register accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw...">NDRegisterAccessorAbstractor</a> is passed as argument, both NDRegisterAccessorAbstractors will then point to the same accessor and thus are sharing the same buffer. To obtain a new copy of the accessor with a distinct buffer, the corresponding getXXRegisterAccessor() function of <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device.">Device</a> must be called. </p>
 
-<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00067">67</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html#l00069">69</a> of file <a class="el" href="_n_d_register_accessor_abstractor_8h_source.html">NDRegisterAccessorAbstractor.h</a>.</p>
 
 </div>
 </div>

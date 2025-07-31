@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.13.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.14.00</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('server_test_data_matching_8cpp.html','
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -113,6 +114,11 @@ $(document).ready(function(){initNavTree('server_test_data_matching_8cpp.html','
 </div>
 <p><a href="server_test_data_matching_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_matching_fixture.html">DataMatchingFixture</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985" id="r_a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_data_matching_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;serverTestDataMatching</td></tr>
@@ -120,9 +126,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a01d382d43b51213d6df25e73db2b71e0" id="r_a01d382d43b51213d6df25e73db2b71e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_data_matching_8cpp.html#a01d382d43b51213d6df25e73db2b71e0">BOOST_AUTO_TEST_CASE</a> (testProcessScalar)</td></tr>
-<tr class="memdesc:a01d382d43b51213d6df25e73db2b71e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note: The data is processed by the ReferenceTestApplication in the order of the types as listed in the HolderMap of the ReferenceTestApplication.  <br /></td></tr>
-<tr class="separator:a01d382d43b51213d6df25e73db2b71e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76eebbabc74ca07d682b2a7761db8796" id="r_a76eebbabc74ca07d682b2a7761db8796"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_data_matching_8cpp.html#a76eebbabc74ca07d682b2a7761db8796">BOOST_FIXTURE_TEST_CASE</a> (testProcessScalar, <a class="el" href="struct_data_matching_fixture.html">DataMatchingFixture</a>)</td></tr>
+<tr class="separator:a76eebbabc74ca07d682b2a7761db8796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -147,26 +152,33 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a01d382d43b51213d6df25e73db2b71e0" name="a01d382d43b51213d6df25e73db2b71e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01d382d43b51213d6df25e73db2b71e0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE()</h2>
+<a id="a76eebbabc74ca07d682b2a7761db8796" name="a76eebbabc74ca07d682b2a7761db8796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76eebbabc74ca07d682b2a7761db8796">&#9670;&#160;</a></span>BOOST_FIXTURE_TEST_CASE()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION</a> BOOST_AUTO_TEST_CASE </td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
           <td class="paramtype">testProcessScalar&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_data_matching_fixture.html">DataMatchingFixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Note: The data is processed by the ReferenceTestApplication in the order of the types as listed in the HolderMap of the ReferenceTestApplication. </p>
-<p>INT comes before UINT and FLOAT, so the macro pulse number is first written and then our values. </p>
-
-<p class="definition">Definition at line <a class="el" href="server_test_data_matching_8cpp_source.html#l00030">30</a> of file <a class="el" href="server_test_data_matching_8cpp_source.html">serverTestDataMatching.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_test_data_matching_8cpp_source.html#l00083">83</a> of file <a class="el" href="server_test_data_matching_8cpp_source.html">serverTestDataMatching.cpp</a>.</p>
 
 </div>
 </div>

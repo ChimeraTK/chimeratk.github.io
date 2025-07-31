@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.20.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.21.00</span>
    </div>
   </td>
  </tr>
@@ -184,7 +184,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00046">46</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00058">58</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ Protected Attributes</h2></td></tr>
 <p>If the plugin needs data that depends on the target and which is only available after opening (e.g. whether the register is writeable), the plugin has to call <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a5aeb3c6e2eaf692b629c1070b2821ead" title="Update the register info inside the catalogue if needed.">updateRegisterInfo()</a> in the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a12281fa9a7bb9411d93fb354a2fb8cbf" title="Hook called when the backend is opened, at the end of the open() function after all backend work has ...">openHook()</a> and can then modify internal variables in the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a708875402d53bdedba1531d843de46c9" title="Implementation of the plugin specific register information update.">doRegisterInfoUpdate()</a> function.</p>
 <p>Note: in principle it is fine to do nothing in this function, if no catalogue change is required. This function intentionally has no empty default implementation, because it might otherwise easy to overlook that the register info must be updated here instead of the constructor. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#afb269be333882461b011793f6e4627eb">ChimeraTK::LNMBackend::MultiplierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a6184d0a75bcb3746adb2880a666efda5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a6c9b2fb59c31000c88851f1433bd4886">ChimeraTK::LNMBackend::ForceReadOnlyPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a59ab3d04e094bc17a3da759a19ae8383">ChimeraTK::LNMBackend::ForcePollingReadPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html#a2f7f81f629092f5dbbadb1c92203a30e">ChimeraTK::LNMBackend::TypeHintModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#adc3f61953ddabefcb65ec094beadf5fd">ChimeraTK::LNMBackend::BitRangeAccessPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html#a9c841dba0ffdb140b75aa733a6403792">ChimeraTK::LNMBackend::TagModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a0f810eaef616db3734ea6622e8b6b88f">ChimeraTK::LNMBackend::DoubleBufferPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ae466dbfc08e03802cb536818ed99f9fb">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#afb269be333882461b011793f6e4627eb">ChimeraTK::LNMBackend::MultiplierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a6184d0a75bcb3746adb2880a666efda5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a6c9b2fb59c31000c88851f1433bd4886">ChimeraTK::LNMBackend::ForceReadOnlyPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a59ab3d04e094bc17a3da759a19ae8383">ChimeraTK::LNMBackend::ForcePollingReadPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html#a2f7f81f629092f5dbbadb1c92203a30e">ChimeraTK::LNMBackend::TypeHintModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#adc3f61953ddabefcb65ec094beadf5fd">ChimeraTK::LNMBackend::BitRangeAccessPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html#a9c841dba0ffdb140b75aa733a6403792">ChimeraTK::LNMBackend::TagModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin.html#a9c841dba0ffdb140b75aa733a6403792">ChimeraTK::LNMBackend::FixedTagModifierPlugin&lt; Tag &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin.html#a9bda4969e94199458e13cc23e5ea840c">ChimeraTK::LNMBackend::FanOutPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a0f810eaef616db3734ea6622e8b6b88f">ChimeraTK::LNMBackend::DoubleBufferPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ae466dbfc08e03802cb536818ed99f9fb">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ template&lt;typename UserType &gt; </div>
 <p>This function is called by the backend after the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html" title="RegisterInfo structure for the LogicalNameMappingBackend.">LNMBackendRegisterInfo</a> has been filled with all information from the target backend.</p>
 <p>This function implements the common steps and calls doRegisterInfoUpdate. where the actual implementation is happening. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00051">51</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html#l00063">63</a> of file <a class="el" href="_l_n_m_accessor_plugin_8cc_source.html">LNMAccessorPlugin.cc</a>.</p>
 
 </div>
 </div>

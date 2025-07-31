@@ -9,9 +9,9 @@ var class_chimera_t_k_1_1_doocs_spectrum =
     [ "updateDoocsBuffer", "class_chimera_t_k_1_1_doocs_spectrum.html#ad9ece55911ed7b101dfdf2274a5a9890", null ],
     [ "updateParameters", "class_chimera_t_k_1_1_doocs_spectrum.html#a585c8c2eadfa3fac5ac129ed95e1fe05", null ],
     [ "write", "class_chimera_t_k_1_1_doocs_spectrum.html#a6c5b1ebdd8b4347e9c5cd06104ed79c0", null ],
-    [ "_incrementAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#a522689bb63253a3315193eac89a6f950", null ],
+    [ "_incrementAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#a4b5e6b730a8ffbfcabf8e4260e12063d", null ],
     [ "_nBuffers", "class_chimera_t_k_1_1_doocs_spectrum.html#a5ef8f0c657d5bf61a09c4f82a7013018", null ],
-    [ "_processArray", "class_chimera_t_k_1_1_doocs_spectrum.html#a534524b0be3fdafc240d8629371933b3", null ],
-    [ "_startAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#a1b0ff12ba9b213be7d02ab0964ac635d", null ],
+    [ "_processArray", "class_chimera_t_k_1_1_doocs_spectrum.html#a1a9925d8798441bf7017e8079e0d0fc2", null ],
+    [ "_startAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#aefb25ae62a4ca818a7a40fa9835e136d", null ],
     [ "modified", "class_chimera_t_k_1_1_doocs_spectrum.html#aa5d59a574c2a78d8ec5338f1febe67e0", null ]
 ];

@@ -6,7 +6,9 @@ var hierarchy =
     [ "ACCESSOR", null, [
       [ "ChimeraTK::StatusAccessor< ACCESSOR >", "struct_chimera_t_k_1_1_status_accessor.html", null ]
     ] ],
-    [ "ChimeraTK::Accessor< UserType >", "class_chimera_t_k_1_1_accessor.html", null ],
+    [ "ChimeraTK::UserInputValidator::AccessorHook", "class_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html", [
+      [ "ChimeraTK::FanIn< AccessorType >::Inputs::TrackingDecorator< U >", "class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html", null ]
+    ] ],
     [ "ChimeraTK::AccessorTypeTag< AccessorType >", "class_chimera_t_k_1_1_accessor_type_tag.html", null ],
     [ "ChimeraTK::AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
     [ "ApplicationBase", null, [
@@ -54,6 +56,10 @@ var hierarchy =
         [ "Tests::testDeviceAccessors::TestApplication4", "struct_tests_1_1test_device_accessors_1_1_test_application4.html", null ],
         [ "Tests::testDeviceExceptionFlagPropagation::TestApplication", "struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application.html", null ],
         [ "Tests::testDeviceInitialisationHandler::TestApplication", "struct_tests_1_1test_device_initialisation_handler_1_1_test_application.html", null ],
+        [ "Tests::testFanIn::TestAdditionalInputsApp", "class_tests_1_1test_fan_in_1_1_test_additional_inputs_app.html", null ],
+        [ "Tests::testFanIn::TestAggregatedValueApp", "class_tests_1_1test_fan_in_1_1_test_aggregated_value_app.html", null ],
+        [ "Tests::testFanIn::TestRelativeSenderNamesApp", "class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app.html", null ],
+        [ "Tests::testFanIn::TestUserInputValidationApp", "class_tests_1_1test_fan_in_1_1_test_user_input_validation_app.html", null ],
         [ "Tests::testFanoutConnections::TestApplication1", "struct_tests_1_1test_fanout_connections_1_1_test_application1.html", null ],
         [ "Tests::testHierarchyModifyingGroup::TestApplication", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application.html", null ],
         [ "Tests::testHierarchyModifyingGroup::TestApplicationEmpty", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty.html", null ],
@@ -101,6 +107,7 @@ var hierarchy =
         [ "Tests::testPropagateDataFaultFlag::TestApplication5", "struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application5.html", null ],
         [ "Tests::testPython::TestApp", "struct_tests_1_1test_python_1_1_test_app.html", null ],
         [ "Tests::testPython::TestAppReadAny", "struct_tests_1_1test_python_1_1_test_app_read_any.html", null ],
+        [ "Tests::testPython::TestAppUserInputValiador", "struct_tests_1_1test_python_1_1_test_app_user_input_valiador.html", null ],
         [ "Tests::testPython::TestAppVersionNumber", "struct_tests_1_1test_python_1_1_test_app_version_number.html", null ],
         [ "Tests::testScriptedInitialisationHandler::TestApp", "struct_tests_1_1test_scripted_initialisation_handler_1_1_test_app.html", null ],
         [ "Tests::testStatusAggregator::TestApplication", "struct_tests_1_1test_status_aggregator_1_1_test_application.html", null ],
@@ -134,12 +141,14 @@ var hierarchy =
       ] ]
     ] ],
     [ "ac.ApplicationModule", null, [
+      [ "testPythonAppConfig.MyMod", "classtest_python_app_config_1_1_my_mod.html", null ],
       [ "testPythonApplicationModule.MyMod", "classtest_python_application_module_1_1_my_mod.html", null ],
       [ "testPythonApplicationModule.SecondMod", "classtest_python_application_module_1_1_second_mod.html", null ],
       [ "testPythonDataConsistencyGroup.Receiver", "classtest_python_data_consistency_group_1_1_receiver.html", null ],
       [ "testPythonDataConsistencyGroup.Sender", "classtest_python_data_consistency_group_1_1_sender.html", null ],
       [ "testPythonReadAnyGroup.ReadAnyGroupMod1", "classtest_python_read_any_group_1_1_read_any_group_mod1.html", null ],
       [ "testPythonScalarAccessors.MyMod", "classtest_python_scalar_accessors_1_1_my_mod.html", null ],
+      [ "testPythonUserInputValidator.TestRunner", "classtest_python_user_input_validator_1_1_test_runner.html", null ],
       [ "testPythonVariableGroup.MyMod", "classtest_python_variable_group_1_1_my_mod.html", null ],
       [ "testPythonVersionNumber.TestRunner", "classtest_python_version_number_1_1_test_runner.html", null ],
       [ "testPythonWithArray.MyMod", "classtest_python_with_array_1_1_my_mod.html", null ],
@@ -192,6 +201,7 @@ var hierarchy =
           [ "DummyApplication::Group3", "struct_dummy_application_1_1_group3.html", null ],
           [ "Tests::testApplicationPVModel::TestModuleGroup", "struct_tests_1_1test_application_p_v_model_1_1_test_module_group.html", null ],
           [ "Tests::testDeviceAccessors::Deeper2", "struct_tests_1_1test_device_accessors_1_1_deeper2.html", null ],
+          [ "Tests::testFanIn::TestRelativeSenderNamesApp::MG", "class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app_1_1_m_g.html", null ],
           [ "Tests::testModules::VectorModuleGroup", "struct_tests_1_1test_modules_1_1_vector_module_group.html", null ],
           [ "Tests::testStatusAggregator::TestApplication2Levels::OuterGroup", "struct_tests_1_1test_status_aggregator_1_1_test_application2_levels_1_1_outer_group.html", null ],
           [ "Tests::testStatusAggregator::TestApplication::OuterGroup", "struct_tests_1_1test_status_aggregator_1_1_test_application_1_1_outer_group.html", null ],
@@ -296,6 +306,14 @@ var hierarchy =
             [ "Tests::testDeviceAccessors::TestModule2", "struct_tests_1_1test_device_accessors_1_1_test_module2.html", null ],
             [ "Tests::testDeviceExceptionFlagPropagation::TestApplication::Module", "struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_module.html", null ],
             [ "Tests::testDeviceExceptionFlagPropagation::TestApplication::Name", "struct_tests_1_1test_device_exception_flag_propagation_1_1_test_application_1_1_name.html", null ],
+            [ "Tests::testFanIn::TestRelativeSenderNamesApp::MG::MySender", "class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app_1_1_m_g_1_1_my_sender.html", null ],
+            [ "Tests::testFanIn::TheReceiverBase", "class_tests_1_1test_fan_in_1_1_the_receiver_base.html", [
+              [ "Tests::testFanIn::TestAdditionalInputsApp::TheReceiver", "class_tests_1_1test_fan_in_1_1_test_additional_inputs_app_1_1_the_receiver.html", null ],
+              [ "Tests::testFanIn::TestAggregatedValueApp::TheReceiver", "class_tests_1_1test_fan_in_1_1_test_aggregated_value_app_1_1_the_receiver.html", null ],
+              [ "Tests::testFanIn::TestRelativeSenderNamesApp::MG::TheReceiver", "class_tests_1_1test_fan_in_1_1_test_relative_sender_names_app_1_1_m_g_1_1_the_receiver.html", null ],
+              [ "Tests::testFanIn::TestUserInputValidationApp::TheReceiver", "class_tests_1_1test_fan_in_1_1_test_user_input_validation_app_1_1_the_receiver.html", null ]
+            ] ],
+            [ "Tests::testFanIn::TheSender", "class_tests_1_1test_fan_in_1_1_the_sender.html", null ],
             [ "Tests::testFanoutConnections::TestModule1", "struct_tests_1_1test_fanout_connections_1_1_test_module1.html", null ],
             [ "Tests::testHierarchyModifyingGroup::TestApplication::TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module.html", null ],
             [ "Tests::testHierarchyModifyingGroup::TestApplicationEmpty::TestModule", "struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_empty_1_1_test_module.html", null ],
@@ -350,6 +368,7 @@ var hierarchy =
             [ "Tests::testVersionpropagation::ThePushModule", "struct_tests_1_1test_versionpropagation_1_1_the_push_module.html", null ]
           ] ],
           [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", null ],
+          [ "ChimeraTK::FanIn< AccessorType >::Inputs", "class_chimera_t_k_1_1_fan_in_1_1_inputs.html", null ],
           [ "ChimeraTK::ModuleTree", "class_chimera_t_k_1_1_module_tree.html", null ],
           [ "ChimeraTK::PyVariableGroup", "class_chimera_t_k_1_1_py_variable_group.html", null ],
           [ "ChimeraTK::StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", null ],
@@ -467,24 +486,24 @@ var hierarchy =
         [ "ChimeraTK::ArrayOutput< uint16_t >", "struct_chimera_t_k_1_1_array_output.html", null ],
         [ "ChimeraTK::ArrayOutput< int32_t >", "struct_chimera_t_k_1_1_array_output.html", null ],
         [ "ChimeraTK::ArrayPollInput< T >", "struct_chimera_t_k_1_1_array_poll_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< int >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< Type >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< InputType >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< TYPE >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< T >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< double >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< uint16_t >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< int32_t >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< std::string >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< unsigned >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< int64_t >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< int >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< Type >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< InputType >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< TYPE >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< T >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< double >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< uint16_t >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< int32_t >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< std::string >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< unsigned >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInput< int64_t >", "class_chimera_t_k_1_1_array_push_input.html", null ],
         [ "ChimeraTK::ArrayOutput< UserType >", "struct_chimera_t_k_1_1_array_output.html", null ],
         [ "ChimeraTK::ArrayOutputPushRB< UserType >", "struct_chimera_t_k_1_1_array_output_push_r_b.html", null ],
         [ "ChimeraTK::ArrayOutputRB< UserType >", "struct_chimera_t_k_1_1_array_output_r_b.html", null ],
         [ "ChimeraTK::ArrayOutputReverseRecovery< UserType >", "struct_chimera_t_k_1_1_array_output_reverse_recovery.html", null ],
         [ "ChimeraTK::ArrayPollInput< UserType >", "struct_chimera_t_k_1_1_array_poll_input.html", null ],
-        [ "ChimeraTK::ArrayPushInput< UserType >", "struct_chimera_t_k_1_1_array_push_input.html", null ],
-        [ "ChimeraTK::ArrayPushInputWB< UserType >", "struct_chimera_t_k_1_1_array_push_input_w_b.html", null ]
+        [ "ChimeraTK::ArrayPushInput< UserType >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInputWB< UserType >", "class_chimera_t_k_1_1_array_push_input_w_b.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< ChimeraTK::Boolean > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
@@ -534,35 +553,35 @@ var hierarchy =
         [ "ChimeraTK::ScalarPollInput< int >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPollInput< T >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPollInput< std::string >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< int32_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", [
+        [ "ChimeraTK::ScalarPushInput< int32_t >", "class_chimera_t_k_1_1_scalar_push_input.html", [
           [ "ChimeraTK::StatusAccessor< ScalarPushInput< int32_t > >", "struct_chimera_t_k_1_1_status_accessor.html", [
             [ "ChimeraTK::StatusPushInput", "struct_chimera_t_k_1_1_status_push_input.html", null ]
           ] ]
         ] ],
-        [ "ChimeraTK::ScalarPushInput< float >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< TRIGGERTYPE >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< double >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< std::string >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< uint64_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< T >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< int >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< ChimeraTK::Boolean >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< Type >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< int8_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< uint8_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< int16_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< uint16_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< uint32_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< int64_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< unsigned >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInputWB< int >", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", null ],
-        [ "ChimeraTK::ScalarPushInputWB< double >", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", null ],
+        [ "ChimeraTK::ScalarPushInput< float >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< TRIGGERTYPE >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< double >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< std::string >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< uint64_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< T >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< int >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< Type >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< int8_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< uint8_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< int16_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< uint16_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< uint32_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< int64_t >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< unsigned >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInputWB< int >", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", null ],
+        [ "ChimeraTK::ScalarPushInputWB< double >", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", null ],
         [ "ChimeraTK::ScalarOutput< UserType >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarOutputPushRB< UserType >", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", null ],
         [ "ChimeraTK::ScalarOutputReverseRecovery< UserType >", "struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html", null ],
         [ "ChimeraTK::ScalarPollInput< UserType >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< UserType >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInputWB< UserType >", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", null ]
+        [ "ChimeraTK::ScalarPushInput< UserType >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInputWB< UserType >", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< VoidAccessor >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -599,6 +618,7 @@ var hierarchy =
       [ "ChimeraTK::ExceptionHandlingDecorator< UserType >", "class_chimera_t_k_1_1_exception_handling_decorator.html", [
         [ "ChimeraTK::ReverseRecoveryDecorator< UserType >", "class_chimera_t_k_1_1_reverse_recovery_decorator.html", null ]
       ] ],
+      [ "ChimeraTK::FanIn< AccessorType >::Inputs::TrackingDecorator< U >", "class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html", null ],
       [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ]
     ] ],
     [ "ChimeraTK::NetworkVisitor::NetworkInformation", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html", null ],
@@ -621,6 +641,10 @@ var hierarchy =
       [ "ChimeraTK::ArrayAccessor< unsigned >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< int64_t >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< UserType >", "class_chimera_t_k_1_1_array_accessor.html", null ]
+    ] ],
+    [ "detail::FanIn::AccessorTypeHelper::out_type", null, [
+      [ "ChimeraTK::FanIn< int32_t >", "class_chimera_t_k_1_1_fan_in.html", null ],
+      [ "ChimeraTK::FanIn< AccessorType >", "class_chimera_t_k_1_1_fan_in.html", null ]
     ] ],
     [ "ChimeraTK::NetworkVisitor::ProcessVariableComperator", "struct_chimera_t_k_1_1_network_visitor_1_1_process_variable_comperator.html", null ],
     [ "ChimeraTK::Model::VertexProperties::ProcessVariableProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_process_variable_properties.html", null ],
@@ -673,6 +697,7 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::PyTransferElement< DerivedAccessor >", "class_chimera_t_k_1_1_py_transfer_element.html", null ]
     ] ],
+    [ "ChimeraTK::PyUserInputValidator", "class_chimera_t_k_1_1_py_user_input_validator.html", null ],
     [ "ChimeraTK::DeviceManager::RecoveryGroup", "struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html", null ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
     [ "OpenCountingLmapBackend::Registerer", "struct_open_counting_lmap_backend_1_1_registerer.html", null ],

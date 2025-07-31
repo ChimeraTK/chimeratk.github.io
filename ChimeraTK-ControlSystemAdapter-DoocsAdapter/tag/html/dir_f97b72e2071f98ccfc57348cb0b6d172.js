@@ -16,6 +16,7 @@ var dir_f97b72e2071f98ccfc57348cb0b6d172 =
     [ "getAllVariableNames.h", "get_all_variable_names_8h.html", "get_all_variable_names_8h" ],
     [ "PropertyBase.h", "_property_base_8h.html", "_property_base_8h" ],
     [ "PropertyDescription.h", "_property_description_8h.html", "_property_description_8h" ],
+    [ "RoutingDecorator.h", "_routing_decorator_8h.html", "_routing_decorator_8h" ],
     [ "splitStringAtFirstSlash.h", "split_string_at_first_slash_8h.html", "split_string_at_first_slash_8h" ],
     [ "StatusHandler.h", "_status_handler_8h.html", "_status_handler_8h" ],
     [ "VariableMapper.h", "_variable_mapper_8h.html", "_variable_mapper_8h" ]

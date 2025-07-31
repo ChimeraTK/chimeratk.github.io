@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-VirtualLab<span id="projectnumber">&#160;01.01.02</span>
+   <div id="projectname">ChimeraTK-VirtualLab<span id="projectnumber">&#160;01.01.03</span>
    </div>
   </td>
  </tr>
@@ -323,7 +323,7 @@ Macros</h2></td></tr>
 <div class="line">  <span class="keyword">static</span> BackendRegisterer backendRegisterer;                                                                          \</div>
 <div class="line">  <span class="comment">/* Actual constructor of the VirtualLabBackend class. */</span>                                                             \</div>
 <div class="line">  <span class="keyword">explicit</span> name(std::string mapFileName) : VirtualLabBackend(mapFileName), ##__VA_ARGS__, theStateMachine(this) {</div>
-<div class="ttc" id="atest_virtual_lab_8cpp_html_ae6e687588f105b8c77b93929e5f18d31"><div class="ttname"><a href="test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31">convertPathRelativeToDmapToAbs</a></div><div class="ttdeci">std::string convertPathRelativeToDmapToAbs(const std::string &amp;mapfileName)</div><div class="ttdef"><b>Definition</b> <a href="test_virtual_lab_8cpp_source.html#l00229">testVirtualLab.cpp:229</a></div></div>
+<div class="ttc" id="atest_virtual_lab_8cpp_html_ae6e687588f105b8c77b93929e5f18d31"><div class="ttname"><a href="test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31">convertPathRelativeToDmapToAbs</a></div><div class="ttdeci">std::string convertPathRelativeToDmapToAbs(const std::string &amp;mapfileName)</div><div class="ttdef"><b>Definition</b> <a href="test_virtual_lab_8cpp_source.html#l00230">testVirtualLab.cpp:230</a></div></div>
 </div><!-- fragment -->
 <p>Declare the constructor of the VirtualLabBackend. </p>
 <p>The first argument must be the class name. The other arguments must be the list of member initialisers, the code of the cunstructor follows this macro and must be terminated with END_CONSTRUCTOR, even if no code is put into the constructor. This macro will also insert the appropriate createInstance function used in the BackendFactory. It will maintain a map of all instances, so the same instance can be obtained multiple times when using the same instance name in the SDM URI (like "instanceID" in "sdm://./myVirtualLabBackend:instanceID=mapfile.map"). To register the backend type with the BackendFactory, the macro REGISTER_BACKEND_TYPE must be used.</p>

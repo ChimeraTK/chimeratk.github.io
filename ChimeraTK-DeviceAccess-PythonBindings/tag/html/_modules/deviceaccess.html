@@ -53,7 +53,7 @@
 <span class="kn">import</span> <span class="nn">abc</span>
 <span class="kn">import</span> <span class="nn">functools</span>
 
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="setDMapFilePath">
@@ -77,7 +77,7 @@
     <span class="n">pb</span><span class="o">.</span><span class="n">setDmapFile</span><span class="p">(</span><span class="n">dmapFilePath</span><span class="p">)</span></div>
 
 
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="getDMapFilePath">
@@ -89,8 +89,8 @@
     <span class="k">return</span> <span class="n">pb</span><span class="o">.</span><span class="n">getDmapFile</span><span class="p">()</span></div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="GeneralRegisterAccessor">
@@ -572,8 +572,8 @@
 </div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="NumpyGeneralRegisterAccessor">
@@ -677,6 +677,11 @@
 
     <span class="c1"># pass through all (non-operator) functions to the np array (unless defined here)</span>
     <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;__array_struct__&quot;</span><span class="p">:</span>
+            <span class="c1"># This fixes issues with string type accessors. Casting a string accessor into an np.array via either</span>
+            <span class="c1"># &quot;np.array(myAccessor)&quot; or &quot;np.asarray(myAccessor)&quot; delivers incorrect results if __array_struct__</span>
+            <span class="c1"># is passed through, while it works when not redirecting it here.</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 
     <span class="c1"># comparison operators</span>
@@ -860,8 +865,8 @@
     <span class="n">writeDestructively</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">GeneralRegisterAccessor</span><span class="o">.</span><span class="n">writeDestructively</span><span class="o">.</span><span class="vm">__doc__</span></div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="TwoDRegisterAccessor">
@@ -907,8 +912,8 @@
 </div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="OneDRegisterAccessor">
@@ -944,8 +949,8 @@
 </div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="ScalarRegisterAccessor">
@@ -1059,8 +1064,8 @@
 </div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="VoidRegisterAccessor">
@@ -1118,8 +1123,8 @@
 </div>
 
 
-<span class="c1">#######################################################################################################################</span>
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 
 
 <div class="viewcode-block" id="Device">
@@ -1650,7 +1655,7 @@
 
 
 
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 <span class="c1"># Middle Layer Class extensions, might be unnecessary in the future with a switch from boost to pybind11</span>
 
 <span class="k">class</span> <span class="nc">RegisterClassIterator</span><span class="p">:</span>
@@ -1672,7 +1677,7 @@
 <span class="n">pb</span><span class="o">.</span><span class="n">RegisterCatalogue</span><span class="o">.</span><span class="fm">__iter__</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">rc</span><span class="p">:</span> <span class="n">RegisterClassIterator</span><span class="p">(</span><span class="n">rc</span><span class="p">)</span>
 
 
-<span class="c1">#######################################################################################################################</span>
+<span class="c1">########################################################################################################################</span>
 <span class="c1"># Type Definitions</span>
 
 

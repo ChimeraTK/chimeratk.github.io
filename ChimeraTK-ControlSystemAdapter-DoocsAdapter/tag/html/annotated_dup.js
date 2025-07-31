@@ -23,16 +23,18 @@ var annotated_dup =
       [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
       [ "PropertyBase", "class_chimera_t_k_1_1_property_base.html", "class_chimera_t_k_1_1_property_base" ],
       [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
+      [ "RoutingDecorator", "class_chimera_t_k_1_1_routing_decorator.html", "class_chimera_t_k_1_1_routing_decorator" ],
+      [ "RoutingDecoratorDomain", "class_chimera_t_k_1_1_routing_decorator_domain.html", "class_chimera_t_k_1_1_routing_decorator_domain" ],
       [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
       [ "StatusHandler", "class_chimera_t_k_1_1_status_handler.html", "class_chimera_t_k_1_1_status_handler" ],
       [ "VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", "class_chimera_t_k_1_1_variable_mapper" ],
       [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ]
     ] ],
+    [ "DataMatchingFixture", "struct_data_matching_fixture.html", "struct_data_matching_fixture" ],
     [ "DeviceFixture", "struct_device_fixture.html", "struct_device_fixture" ],
     [ "DTextUnifier", "struct_d_text_unifier.html", "struct_d_text_unifier" ],
     [ "ExtendedTestApplication", "struct_extended_test_application.html", "struct_extended_test_application" ],
     [ "GlobalFixture", "struct_global_fixture.html", "struct_global_fixture" ],
     [ "TestableDoocsSpectrum", "class_testable_doocs_spectrum.html", "class_testable_doocs_spectrum" ],
-    [ "ZmqData", "struct_zmq_data.html", "struct_zmq_data" ],
-    [ "ZMQFixture", "struct_z_m_q_fixture.html", "struct_z_m_q_fixture" ]
+    [ "ZeroMQFixture", "struct_zero_m_q_fixture.html", "struct_zero_m_q_fixture" ]
 ];

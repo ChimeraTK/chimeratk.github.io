@@ -1,5 +1,6 @@
 var class_chimera_t_k_1_1_n_d_register_accessor_abstractor =
 [
+    [ "value_type", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a8a6b103395f5fce9318ee293c22608e2", null ],
     [ "NDRegisterAccessorAbstractor", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#ab6194911c234927ca324f9a83f25c5d5", null ],
     [ "NDRegisterAccessorAbstractor", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a268de44a0106c6adc243be1e135b8596", null ],
     [ "NDRegisterAccessorAbstractor", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a0a1b0cd5d05825430c5493b5775cd25c", null ],

@@ -8,6 +8,6 @@ var class_chimera_t_k_1_1_doocs_iiii =
     [ "sendToApplication", "class_chimera_t_k_1_1_doocs_iiii.html#a43e8ec7cbb29b85ca284dfe58d1ad44b", null ],
     [ "set", "class_chimera_t_k_1_1_doocs_iiii.html#ad970c72382de1481585501f8fc188fe1", null ],
     [ "updateDoocsBuffer", "class_chimera_t_k_1_1_doocs_iiii.html#a5aab90015d9cd6a1b7dc2549b6d22aa8", null ],
-    [ "_iiiiValue", "class_chimera_t_k_1_1_doocs_iiii.html#acd4b119356ac478d28d4a7c2cd175779", null ],
+    [ "_iiiiValue", "class_chimera_t_k_1_1_doocs_iiii.html#a2a183ff2acdf9691bd2542eff3a44a4c", null ],
     [ "_isWriteable", "class_chimera_t_k_1_1_doocs_iiii.html#a2e50722174b64d28682e865dcf882216", null ]
 ];

@@ -7,6 +7,7 @@ var _supported_user_types_8h =
     [ "ChimeraTK::TemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
     [ "ChimeraTK::TemplateUserTypeMapNoVoid< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map_no_void.html", "class_chimera_t_k_1_1_template_user_type_map_no_void" ],
     [ "ChimeraTK::DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],
+    [ "ChimeraTK::user_type", "concept_chimera_t_k_1_1user__type.html", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "_supported_user_types_8h.html#a393c59a0bbe800ef9a1420bc5f8f8be7", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID", "_supported_user_types_8h.html#a15e1765bd46f19c26165b67774466461", null ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d", null ],

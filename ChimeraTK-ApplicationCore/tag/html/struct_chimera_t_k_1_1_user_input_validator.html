@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.03.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.04.00</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_user_input_vali
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="struct_chimera_t_k_1_1_user_input_validator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::UserInputValidator Struct Reference</div></div>
 </div><!--header-->
@@ -115,6 +116,9 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_user_input_vali
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html">AccessorHook</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessors inheriting from this class (in addition to their accessor base class) can get informed about the validation process.  <a href="class_chimera_t_k_1_1_user_input_validator_1_1_accessor_hook.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html">Variable</a></td></tr>
@@ -128,12 +132,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab949ef18c845814bdacfdb6eaa1e97f1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1">add</a> (const std::string &amp;errorMessage, const std::function&lt; bool(void)&gt; &amp;isValidFunction, ACCESSORTYPES &amp;... accessors)</td></tr>
 <tr class="memdesc:ab949ef18c845814bdacfdb6eaa1e97f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new condition to validate the given accessors against.  <br /></td></tr>
 <tr class="separator:ab949ef18c845814bdacfdb6eaa1e97f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f27295cfdbc8c6510d848befc181d6" id="r_ac3f27295cfdbc8c6510d848befc181d6"><td class="memTemplParams" colspan="2">template&lt;std::ranges::input_range R&gt; <br />
+requires push_input&lt;std::ranges::range_value_t&lt;R&gt;&gt;</td></tr>
+<tr class="memitem:ac3f27295cfdbc8c6510d848befc181d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ac3f27295cfdbc8c6510d848befc181d6">add</a> (const std::string &amp;errorMessage, const std::function&lt; bool(void)&gt; &amp;isValidFunction, const R &amp;accessors)</td></tr>
+<tr class="memdesc:ac3f27295cfdbc8c6510d848befc181d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternate signature for <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a>, accepting an iterable container of accessors instead of individual arguments.  <br /></td></tr>
+<tr class="separator:ac3f27295cfdbc8c6510d848befc181d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad362d336c3c9c9e3e83aab5f402168be" id="r_ad362d336c3c9c9e3e83aab5f402168be"><td class="memTemplParams" colspan="2">template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt; </td></tr>
-<tr class="memitem:ad362d336c3c9c9e3e83aab5f402168be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ad362d336c3c9c9e3e83aab5f402168be">setFallback</a> (<a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>&lt; UserType &gt; &amp;accessor, UserType value)</td></tr>
+<tr class="memitem:ad362d336c3c9c9e3e83aab5f402168be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ad362d336c3c9c9e3e83aab5f402168be">setFallback</a> (Accessor&lt; UserType &gt; &amp;accessor, UserType value)</td></tr>
 <tr class="memdesc:ad362d336c3c9c9e3e83aab5f402168be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide fallback value for the given accessor.  <br /></td></tr>
 <tr class="separator:ad362d336c3c9c9e3e83aab5f402168be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a660e1d79d4337e11cf8d213da464e6" id="r_a0a660e1d79d4337e11cf8d213da464e6"><td class="memTemplParams" colspan="2">template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt; </td></tr>
-<tr class="memitem:a0a660e1d79d4337e11cf8d213da464e6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a0a660e1d79d4337e11cf8d213da464e6">setFallback</a> (<a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>&lt; UserType &gt; &amp;accessor, std::vector&lt; UserType &gt; value)</td></tr>
+<tr class="memitem:a0a660e1d79d4337e11cf8d213da464e6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a0a660e1d79d4337e11cf8d213da464e6">setFallback</a> (Accessor&lt; UserType &gt; &amp;accessor, std::vector&lt; UserType &gt; value)</td></tr>
 <tr class="separator:a0a660e1d79d4337e11cf8d213da464e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16caa942446623c2f97416667be52406" id="r_a16caa942446623c2f97416667be52406"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a16caa942446623c2f97416667be52406">setErrorFunction</a> (const std::function&lt; void(const std::string &amp;)&gt; &amp;errorFunction)</td></tr>
 <tr class="memdesc:a16caa942446623c2f97416667be52406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define how to report error messages to the user.  <br /></td></tr>
@@ -150,8 +159,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a78cc582ee5cc335083777233a938eaab" id="r_a78cc582ee5cc335083777233a938eaab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a78cc582ee5cc335083777233a938eaab">finalise</a> ()</td></tr>
 <tr class="separator:a78cc582ee5cc335083777233a938eaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ef9362126a81687383b2a34f5cffae" id="r_a29ef9362126a81687383b2a34f5cffae"><td class="memTemplParams" colspan="2">template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt; </td></tr>
-<tr class="memitem:a29ef9362126a81687383b2a34f5cffae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a29ef9362126a81687383b2a34f5cffae">addAccessorIfNeeded</a> (<a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>&lt; UserType &gt; &amp;accessor)</td></tr>
+<tr class="memitem:a29ef9362126a81687383b2a34f5cffae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a29ef9362126a81687383b2a34f5cffae">addAccessorIfNeeded</a> (Accessor&lt; UserType &gt; &amp;accessor)</td></tr>
 <tr class="separator:a29ef9362126a81687383b2a34f5cffae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11fd4068250306d697458fca17ca7672" id="r_a11fd4068250306d697458fca17ca7672"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a11fd4068250306d697458fca17ca7672">addValidator</a> (const std::function&lt; bool(void)&gt; &amp;isValidFunction, const std::string &amp;errorMessage)</td></tr>
+<tr class="separator:a11fd4068250306d697458fca17ca7672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e95e0eae154e719d0367bf9e737710" id="r_aa1e95e0eae154e719d0367bf9e737710"><td class="memTemplParams" colspan="2">template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt; </td></tr>
+<tr class="memitem:aa1e95e0eae154e719d0367bf9e737710"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#aa1e95e0eae154e719d0367bf9e737710">registerAccessorWithValidator</a> (Accessor&lt; UserType &gt; &amp;accessor, <a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a> *validator)</td></tr>
+<tr class="separator:aa1e95e0eae154e719d0367bf9e737710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -163,7 +177,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8878997cf981c4a5a8b509e3f43fba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5874dd3d35783002b62fdb81c5a1fe4" id="r_ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ac5874dd3d35783002b62fdb81c5a1fe4">_errorFunction</a></td></tr>
 <tr class="separator:ac5874dd3d35783002b62fdb81c5a1fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4061fe4bb936ded3b36611e8bb418f90" id="r_a4061fe4bb936ded3b36611e8bb418f90"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; ChimeraTK::TransferElementID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a4061fe4bb936ded3b36611e8bb418f90">_downstreamInvalidatingReturnChannels</a> {}</td></tr>
+<tr class="memitem:a4061fe4bb936ded3b36611e8bb418f90" id="r_a4061fe4bb936ded3b36611e8bb418f90"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; ChimeraTK::TransferElementID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a4061fe4bb936ded3b36611e8bb418f90">_downstreamInvalidatingReturnChannels</a></td></tr>
 <tr class="separator:a4061fe4bb936ded3b36611e8bb418f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08800c8d5fb50b6d32c33083814b655b" id="r_a08800c8d5fb50b6d32c33083814b655b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a08800c8d5fb50b6d32c33083814b655b">_validationDepth</a> {0}</td></tr>
 <tr class="separator:a08800c8d5fb50b6d32c33083814b655b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,13 +190,18 @@ Protected Attributes</h2></td></tr>
 Static Protected Attributes</h2></td></tr>
 <tr class="memitem:a1c25b272a9992e332b6516c2430f4fe1" id="r_a1c25b272a9992e332b6516c2430f4fe1"><td class="memItemLeft" align="right" valign="top">static constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a1c25b272a9992e332b6516c2430f4fe1">tagValidatedVariable</a> {&quot;__UserInputValidator&quot;}</td></tr>
 <tr class="separator:a1c25b272a9992e332b6516c2430f4fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a94d303f5b34a5be0e5afc8af780d591b" id="r_a94d303f5b34a5be0e5afc8af780d591b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a94d303f5b34a5be0e5afc8af780d591b">PyUserInputValidator</a></td></tr>
+<tr class="separator:a94d303f5b34a5be0e5afc8af780d591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to realise the validation of user input values. </p>
 <p>User input values will be checked to fulfill certain conditions upon change. If the conditions are not met, the change is rejected and an error function is called e.g. to report the error to the user.</p>
 <p>Note, this class is not a module. Instantiate it as a member of any <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> which needs to perform validation of its inputs, or at the beginning of its <a class="el" href="test_illegal_networks_8cc.html#af14601579e7c6dd672a85c562800b1fa">mainLoop()</a> function.</p>
 <p>Also note that as of now only scalar inputs can be validated.</p>
-<p>Inputs to validate can be added through the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function. To ensure consistency between the value used by the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and the value visible on the control system side, the input should be of the type <a class="el" href="struct_chimera_t_k_1_1_scalar_push_input_w_b.html" title="Convenience class for input scalar accessors with return channel (&quot;write back&quot;) and UpdateMode::push.">ChimeraTK::ScalarPushInputWB</a>. If this is not possible (e.g. the same input is used by multiple ApplicationModules), a <a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html" title="Convenience class for input scalar accessors with UpdateMode::push.">ChimeraTK::ScalarPushInput</a> can be used instead and the value will not be changed back to the previous value when being rejected.</p>
+<p>Inputs to validate can be added through the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function. To ensure consistency between the value used by the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and the value visible on the control system side, the input should be of the type <a class="el" href="class_chimera_t_k_1_1_scalar_push_input_w_b.html" title="Convenience class for input scalar accessors with return channel (&quot;write back&quot;) and UpdateMode::push.">ChimeraTK::ScalarPushInputWB</a>. If this is not possible (e.g. the same input is used by multiple ApplicationModules), a <a class="el" href="class_chimera_t_k_1_1_scalar_push_input.html" title="Convenience class for input scalar accessors with UpdateMode::push.">ChimeraTK::ScalarPushInput</a> can be used instead and the value will not be changed back to the previous value when being rejected.</p>
 <p>Fallback values can be specified for each input, which will be used if the validation of the initial values fails already. If no fallback value is specified, an invalid initial value will be changed to the default-constructed value (e.g. 0). Hence a fallback value must be specified if the default-constructed value is not in the range of valid values - otherwise the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> might be confronted with this invalid value at runtime.</p>
 <p>The validation of initial values can be triggered either by calling <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#aec1ce9b3f82cf6c093373bed08c57d47" title="Evaluate all validation conditions and correct all invalid values.">validateAll()</a> or be calling <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> with a default-constructed ChimeraTK::TransferElementID.</p>
 <p>Use <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a16caa942446623c2f97416667be52406" title="Define how to report error messages to the user.">setErrorFunction()</a> to define a function which reports the error to the user.</p>
@@ -193,10 +212,10 @@ Static Protected Attributes</h2></td></tr>
 <p>... do some computations based on myInput which would fail for myInput &lt;= 0 ...</p>
 <p>change = rag.readAny(); } } </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00069">69</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00068">68</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab949ef18c845814bdacfdb6eaa1e97f1" name="ab949ef18c845814bdacfdb6eaa1e97f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab949ef18c845814bdacfdb6eaa1e97f1">&#9670;&#160;</a></span>add()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab949ef18c845814bdacfdb6eaa1e97f1">&#9670;&#160;</a></span>add() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +255,49 @@ template&lt;typename... ACCESSORTYPES&gt; </div>
 <p>This function can be called an arbitrary number of times. Also the same accessors may be passed multiple times to different calls of this function. That way the expressions written in the isValidFunction can be kept simple and the provided error messages can be more specific. E.g. the two conditions A &gt; 0 and A &lt; B can be defined in two separate calls to the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function despite A being part of both conditions. If A changes, both conditions will be checked, since A is specified in the list of accessors in both calls.</p>
 <p>This function does not yet evaluate anything. It merely stores all information for later use. When <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is called, all isValidFunctions matching the given change are checked. If any of the checked isValidFunctions returns false, the variable passed to <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> is reverted to its previous value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00220">220</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00270">270</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+
+</div>
+</div>
+<a id="ac3f27295cfdbc8c6510d848befc181d6" name="ac3f27295cfdbc8c6510d848befc181d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f27295cfdbc8c6510d848befc181d6">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::ranges::input_range R&gt; <br />
+requires push_input&lt;std::ranges::range_value_t&lt;R&gt;&gt;</div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::UserInputValidator::add </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>errorMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; bool(void)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>isValidFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const R &amp;&#160;</td>
+          <td class="paramname"><em>accessors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alternate signature for <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a>, accepting an iterable container of accessors instead of individual arguments. </p>
+<p>This requires all accessors to be of the same type. </p>
+
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00286">286</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +315,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
         <tr>
           <td class="memname">void ChimeraTK::UserInputValidator::addAccessorIfNeeded </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>&lt; UserType &gt; &amp;&#160;</td>
+          <td class="paramtype">Accessor&lt; UserType &gt; &amp;&#160;</td>
           <td class="paramname"><em>accessor</em></td><td>)</td>
           <td></td>
         </tr>
@@ -266,7 +327,45 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00268">268</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00332">332</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+
+</div>
+</div>
+<a id="a11fd4068250306d697458fca17ca7672" name="a11fd4068250306d697458fca17ca7672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11fd4068250306d697458fca17ca7672">&#9670;&#160;</a></span>addValidator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">UserInputValidator::Validator</a> * ChimeraTK::UserInputValidator::addValidator </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; bool(void)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>isValidFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>errorMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00013">13</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 
 </div>
 </div>
@@ -293,7 +392,47 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00069">69</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00079">79</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+
+</div>
+</div>
+<a id="aa1e95e0eae154e719d0367bf9e737710" name="aa1e95e0eae154e719d0367bf9e737710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e95e0eae154e719d0367bf9e737710">&#9670;&#160;</a></span>registerAccessorWithValidator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::UserInputValidator::registerAccessorWithValidator </td>
+          <td>(</td>
+          <td class="paramtype">Accessor&lt; UserType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>accessor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html">Validator</a> *&#160;</td>
+          <td class="paramname"><em>validator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00262">262</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +455,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>Define how to report error messages to the user. </p>
 <p>The first argument of the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against.">add()</a> function is passed to the given errorFunction when the corresponding validation condition is false. Typically this function will pass this string on to some string output which will display the value to the user/operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00013">13</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00023">23</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 
 </div>
 </div>
@@ -331,7 +470,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
         <tr>
           <td class="memname">void ChimeraTK::UserInputValidator::setFallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>&lt; UserType &gt; &amp;&#160;</td>
+          <td class="paramtype">Accessor&lt; UserType &gt; &amp;&#160;</td>
           <td class="paramname"><em>accessor</em>, </td>
         </tr>
         <tr>
@@ -348,7 +487,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00254">254</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00318">318</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +502,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
         <tr>
           <td class="memname">void ChimeraTK::UserInputValidator::setFallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_accessor.html">Accessor</a>&lt; UserType &gt; &amp;&#160;</td>
+          <td class="paramtype">Accessor&lt; UserType &gt; &amp;&#160;</td>
           <td class="paramname"><em>accessor</em>, </td>
         </tr>
         <tr>
@@ -384,7 +523,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>This value is used if the validation of the initial value fails, since there is no previous value to revert to in that case.</p>
 <p>It is mandatory to call this function for all accessors whose value after construction (usually 0) is outside the range of valid values, as otherwise a failed initial value validation reverts to the (invalid) value after construction and hence the subsequent computations might fail. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00239">239</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00303">303</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +548,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>The value of the accessor is then changed back to the last known value (resp. the fallback value if no previous valid value exists). If the accessor has a writeback channel, this reverted value is written back. Finally, the errorFunction provided through <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a16caa942446623c2f97416667be52406" title="Define how to report error messages to the user.">setErrorFunction()</a> is called with the error string matching the first failed validation condition to inform the user/operator.</p>
 <p>If change is a default-constructed ChimeraTK::TransferElementID, all validation conditions are evaluated and all invalid values are corrected. This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#aec1ce9b3f82cf6c093373bed08c57d47" title="Evaluate all validation conditions and correct all invalid values.">validateAll()</a>. This functionality is useful to trigger the validation of initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00019">19</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00029">29</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 
 </div>
 </div>
@@ -431,7 +570,32 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>Evaluate all validation conditions and correct all invalid values. </p>
 <p>This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change.">validate()</a> with a default-constructed ChimeraTK::TransferElementID. This function is useful to trigger the validation of initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00056">56</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00066">66</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a94d303f5b34a5be0e5afc8af780d591b" name="a94d303f5b34a5be0e5afc8af780d591b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d303f5b34a5be0e5afc8af780d591b">&#9670;&#160;</a></span>PyUserInputValidator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_chimera_t_k_1_1_py_user_input_validator.html">PyUserInputValidator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00256">256</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +610,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_set&lt;ChimeraTK::TransferElementID&gt; ChimeraTK::UserInputValidator::_downstreamInvalidatingReturnChannels {}</td>
+          <td class="memname">std::unordered_set&lt;ChimeraTK::TransferElementID&gt; ChimeraTK::UserInputValidator::_downstreamInvalidatingReturnChannels</td>
         </tr>
       </table>
   </td>
@@ -456,7 +620,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00211">211</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00251">251</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +648,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div class="ttc" id="aclass_chimera_t_k_1_1_logger_html_a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd"><div class="ttname"><a href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfa7b83d3f08fa392b79e3f553b585971cd">ChimeraTK::Logger::Severity::warning</a></div><div class="ttdeci">@ warning</div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_afd1ff17ff1ee9c50c855b99af5b0c580"><div class="ttname"><a href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">ChimeraTK::logger</a></div><div class="ttdeci">Logger::StreamProxy logger(Logger::Severity severity, std::string context)</div><div class="ttdoc">Convenience function to obtain the logger stream.</div><div class="ttdef"><b>Definition</b> <a href="_logger_8h_source.html#l00124">Logger.h:124</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00208">208</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00248">248</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +672,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00214">214</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00254">254</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +696,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00213">213</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00253">253</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +720,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00212">212</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00252">252</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +744,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00205">205</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00245">245</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +768,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00199">199</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00239">239</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +792,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00202">202</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00242">242</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +816,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00144">144</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00178">178</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
