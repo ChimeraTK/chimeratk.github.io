@@ -254,6 +254,7 @@ var hierarchy =
             [ "ChimeraTK::VersionInfoProvider", "class_chimera_t_k_1_1_version_info_provider.html", null ],
             [ "ChimeraTK::WriteSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_write_split_array_module.html", null ],
             [ "Controller", "class_controller.html", null ],
+            [ "ExternalMainLoopModule", "struct_external_main_loop_module.html", null ],
             [ "OutputModule", "struct_output_module.html", null ],
             [ "PollModule", "struct_poll_module.html", null ],
             [ "PushModule", "struct_push_module.html", null ],

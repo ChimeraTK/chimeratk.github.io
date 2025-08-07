@@ -4,6 +4,7 @@ var struct_chimera_t_k_1_1_network_visitor_1_1_network_information =
     [ "consumers", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a6775997c77698edaea608450cefd81c8", null ],
     [ "description", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#ab35ea40c01735edb7fc7c34e0f2d4135", null ],
     [ "feeder", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a86012644b84f079f91cca0ecab4594c6", null ],
+    [ "numberOfBidirectionalConsumers", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a2c7e9f3ee537ae8c703aa968dd7575f8", null ],
     [ "numberOfBidirectionalNodes", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a76d94fe2b301b84409c228e4dede7dc8", null ],
     [ "numberOfPollingConsumers", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#acb2d4387cbca5e6edcdb8687075b2e67", null ],
     [ "proxy", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a1fc55d043e639910b2e21c3021a7613f", null ],
