@@ -28,7 +28,8 @@ var searchData=
   ['notificationqueue_25',['notificationQueue',['../struct_chimera_t_k_1_1_recovery_helper.html#ab6f923482e77605ebc29d5986a969eb0',1,'ChimeraTK::RecoveryHelper']]],
   ['notifyingmodule_26',['NotifyingModule',['../struct_tests_1_1test_initial_values_1_1_notifying_module.html',1,'Tests::testInitialValues']]],
   ['ns_27',['ns',['../namespacedraw_module_connections.html#ab64cd82048460cbff0e6668616aaad53',1,'drawModuleConnections']]],
-  ['numberofbidirectionalnodes_28',['numberOfBidirectionalNodes',['../struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a76d94fe2b301b84409c228e4dede7dc8',1,'ChimeraTK::NetworkVisitor::NetworkInformation']]],
-  ['numberofpollingconsumers_29',['numberOfPollingConsumers',['../struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#acb2d4387cbca5e6edcdb8687075b2e67',1,'ChimeraTK::NetworkVisitor::NetworkInformation']]],
-  ['numberoftransfers_30',['numberOfTransfers',['../class_tests_1_1test_trigger_1_1_test_transfer_group_dummy.html#ab256716362dbee6bee785576a220df63',1,'Tests::testTrigger::TestTransferGroupDummy']]]
+  ['numberofbidirectionalconsumers_28',['numberOfBidirectionalConsumers',['../struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a2c7e9f3ee537ae8c703aa968dd7575f8',1,'ChimeraTK::NetworkVisitor::NetworkInformation']]],
+  ['numberofbidirectionalnodes_29',['numberOfBidirectionalNodes',['../struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a76d94fe2b301b84409c228e4dede7dc8',1,'ChimeraTK::NetworkVisitor::NetworkInformation']]],
+  ['numberofpollingconsumers_30',['numberOfPollingConsumers',['../struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#acb2d4387cbca5e6edcdb8687075b2e67',1,'ChimeraTK::NetworkVisitor::NetworkInformation']]],
+  ['numberoftransfers_31',['numberOfTransfers',['../class_tests_1_1test_trigger_1_1_test_transfer_group_dummy.html#ab256716362dbee6bee785576a220df63',1,'Tests::testTrigger::TestTransferGroupDummy']]]
 ];

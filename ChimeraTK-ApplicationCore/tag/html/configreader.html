@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.04.00</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.05.00</span>
    </div>
   </td>
  </tr>
@@ -100,26 +100,21 @@ $(document).ready(function(){initNavTree('configreader.html',''); initResizable(
 <h1><a class="anchor" id="usage"></a>
 Example usage</h1>
 <ul>
-<li>A server application using the config reader may look like: <div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ctk</a> = ChimeratK</div>
+<li>Each server comes with a built-in config reader that will look for the file &lt;servername&gt;-config.xml. So for the server below: <div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ctk</a> = ChimeratK</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>Server : <span class="keyword">public</span> <a class="code hl_class" href="class_chimera_t_k_1_1_application.html">ctk::Application</a> {</div>
 <div class="line">  Server() : Application(<span class="stringliteral">&quot;testserver&quot;</span>) {}</div>
 <div class="line">  ~Server() { <a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>(); }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code hl_class" href="class_chimera_t_k_1_1_config_reader.html">ctk::ConfigReader</a> config{<span class="keyword">this</span>, <span class="stringliteral">&quot;config&quot;</span>, <span class="stringliteral">&quot;validConfig.xml&quot;</span>, {<span class="stringliteral">&quot;MyTAG&quot;</span>}};</div>
 <div class="line">  TestModule testModule{<span class="keyword">this</span>, <span class="stringliteral">&quot;TestModule&quot;</span>, <span class="stringliteral">&quot;The test module&quot;</span>};</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> Server::defineConnections() <span class="keyword">override</span>;</div>
-<div class="line"> </div>
 <div class="line">};</div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></div><div class="ttdef"><b>Definition</b> <a href="_application_8h_source.html#l00045">Application.h:45</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_application_html_acd050c59340807685052276fb053787a"><div class="ttname"><a href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">ChimeraTK::Application::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">This will remove the global pointer to the instance and allows creating another instance afterwards.</div><div class="ttdef"><b>Definition</b> <a href="_application_8cc_source.html#l00214">Application.cc:214</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_config_reader_html"><div class="ttname"><a href="class_chimera_t_k_1_1_config_reader.html">ChimeraTK::ConfigReader</a></div><div class="ttdoc">Generic module to read an XML config file and provide the defined values as constant variables.</div><div class="ttdef"><b>Definition</b> <a href="_config_reader_8h_source.html#l00113">ConfigReader.h:113</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 </div><!-- fragment --></li>
-<li>Values from validConfig.xml can be accessed at server startup: <div class="fragment"><div class="line">Server::Server() {</div>
-<div class="line"> <span class="keyword">auto</span> config_var = config.get&lt;int8_t&gt;(<span class="stringliteral">&quot;module1/var8&quot;</span>);</div>
-<div class="line"> <span class="keyword">auto</span> config_arr = config.get&lt;std::vector&lt;int8&gt;&gt;(<span class="stringliteral">&quot;module1/submodule/intArray&quot;</span>);</div>
+<li>Values from testserver-config.xml can be accessed at server startup: <div class="fragment"><div class="line">Server::Server() {</div>
+<div class="line"> <span class="keyword">auto</span> config_var = appConfig().get&lt;int8_t&gt;(<span class="stringliteral">&quot;module1/var8&quot;</span>);</div>
+<div class="line"> <span class="keyword">auto</span> config_arr = appConfig().get&lt;std::vector&lt;int8&gt;&gt;(<span class="stringliteral">&quot;module1/submodule/intArray&quot;</span>);</div>
 <div class="line"> <span class="comment">// ...</span></div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
@@ -130,6 +125,7 @@ XML file structure</h1>
 <ul>
 <li>A valid configuration file may look like: <pre class="fragment">  &lt;configuration&gt;
     &lt;variable name="var8" type="int8" value="-123"/&gt;
+    &lt;variable name="bool" type="boolean" value="true"/&gt;
     &lt;module name="module1"&gt;
       &lt;variable name="var8" type="int8" value="-123"/&gt;
       &lt;module name="submodule"&gt;

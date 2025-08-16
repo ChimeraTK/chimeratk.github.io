@@ -9,5 +9,6 @@ var searchData=
   ['exactmonitor_6',['ExactMonitor',['../struct_chimera_t_k_1_1_exact_monitor.html',1,'ChimeraTK']]],
   ['exampleapp_7',['ExampleApp',['../class_example_app.html',1,'']]],
   ['exceptionhandlingdecorator_8',['ExceptionHandlingDecorator',['../class_chimera_t_k_1_1_exception_handling_decorator.html',1,'ChimeraTK']]],
-  ['extrahierarchy_9',['ExtraHierarchy',['../struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy.html',1,'Tests::testHierarchyModifyingGroup::TestApplication::TestModule']]]
+  ['externalmainloopmodule_9',['ExternalMainLoopModule',['../struct_external_main_loop_module.html',1,'']]],
+  ['extrahierarchy_10',['ExtraHierarchy',['../struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module_1_1_extra_hierarchy.html',1,'Tests::testHierarchyModifyingGroup::TestApplication::TestModule']]]
 ];

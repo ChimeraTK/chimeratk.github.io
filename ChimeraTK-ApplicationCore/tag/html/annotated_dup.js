@@ -485,6 +485,7 @@ var annotated_dup =
     [ "DeviceModuleWithPath", "struct_device_module_with_path.html", "struct_device_module_with_path" ],
     [ "DummyApplication", "struct_dummy_application.html", "struct_dummy_application" ],
     [ "ExampleApp", "class_example_app.html", "class_example_app" ],
+    [ "ExternalMainLoopModule", "struct_external_main_loop_module.html", "struct_external_main_loop_module" ],
     [ "Fixture", "struct_fixture.html", "struct_fixture" ],
     [ "FixtureWithPollAndPushInput", "struct_fixture_with_poll_and_push_input.html", "struct_fixture_with_poll_and_push_input" ],
     [ "IncompleteRecoveryTestApp", "struct_incomplete_recovery_test_app.html", "struct_incomplete_recovery_test_app" ],
