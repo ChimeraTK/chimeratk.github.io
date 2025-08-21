@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('test_tango_server_import_all_8cpp_sour
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  std::unique_ptr&lt;std::vector&lt;std::string&gt;&gt; attributes(proxy.get_attribute_list());</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="comment">// All of our attributes and the built-in &quot;State&quot; and &quot;Status&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  BOOST_TEST(attributes-&gt;size() == 76);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  BOOST_TEST(attributes-&gt;size() == 89);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>* <span class="keyword">const</span> directory : {<span class="stringliteral">&quot;DOUBLE&quot;</span>, <span class="stringliteral">&quot;FLOAT&quot;</span>, <span class="stringliteral">&quot;LONG&quot;</span>, <span class="stringliteral">&quot;INT&quot;</span>, <span class="stringliteral">&quot;SHORT&quot;</span>, <span class="stringliteral">&quot;ULONG&quot;</span>, <span class="stringliteral">&quot;UCHAR&quot;</span>, <span class="stringliteral">&quot;UINT&quot;</span>, <span class="stringliteral">&quot;USHORT&quot;</span>,</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>          <span class="stringliteral">&quot;CHAR&quot;</span>, <span class="stringliteral">&quot;BOOLEAN&quot;</span>, <span class="stringliteral">&quot;VOID&quot;</span>, <span class="stringliteral">&quot;STRING&quot;</span>}) {</div>
@@ -142,71 +142,72 @@ $(document).ready(function(){initNavTree('test_tango_server_import_all_8cpp_sour
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;test done &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>* <span class="keyword">const</span> variable : {<span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>}) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordflow">if</span>(std::string(directory) == <span class="stringliteral">&quot;VOID&quot;</span> &amp;&amp; std::string(variable) == <span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keyword">auto</span> tangoName = std::string(directory) + <span class="stringliteral">&quot;_&quot;</span> + variable;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;testing existence of &quot;</span> &lt;&lt; std::string(<span class="stringliteral">&quot;//MASTER/&quot;</span>) + directory + <span class="stringliteral">&quot;.&quot;</span> + variable</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                &lt;&lt; <span class="stringliteral">&quot; with tango name &quot;</span> &lt;&lt; tangoName &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <span class="comment">// if this throws the property does not exist. we should always be able to</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// read&quot;</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      Tango::AttributeInfoEx attrInfo;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      BOOST_CHECK_NO_THROW(attrInfo = proxy.attribute_query(tangoName));</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      BOOST_TEST(attrInfo.data_format == Tango::AttrDataFormat::SCALAR);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      BOOST_TEST(attrInfo.data_type == tf.name2TypeId(directory));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;test done &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>* <span class="keyword">const</span> variable :</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        {<span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>, <span class="stringliteral">&quot;FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;BIDIRECTIONAL&quot;</span>}) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keywordflow">if</span>(std::string(directory) == <span class="stringliteral">&quot;VOID&quot;</span> &amp;&amp; std::string(variable) == <span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span>) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keyword">auto</span> tangoName = std::string(directory) + <span class="stringliteral">&quot;_&quot;</span> + variable;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;testing existence of &quot;</span> &lt;&lt; std::string(<span class="stringliteral">&quot;//MASTER/&quot;</span>) + directory + <span class="stringliteral">&quot;.&quot;</span> + variable</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                &lt;&lt; <span class="stringliteral">&quot; with tango name &quot;</span> &lt;&lt; tangoName &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// if this throws the property does not exist. we should always be able to</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="comment">// read&quot;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      Tango::AttributeInfoEx attrInfo;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      BOOST_CHECK_NO_THROW(attrInfo = proxy.attribute_query(tangoName));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      BOOST_TEST(attrInfo.data_format == Tango::AttrDataFormat::SCALAR);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      BOOST_TEST(attrInfo.data_type == tf.name2TypeId(directory));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;test done &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849">   64</a></span><a class="code hl_function" href="test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849">BOOST_AUTO_TEST_CASE_TEMPLATE</a>(testReadConstants, T, <a class="code hl_typedef" href="_tango_test_server_8h.html#a57bbeb47783fd529223902ed09c460b5">TestTypesNoVoid</a>) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">auto</span> [tf, app, proxy] = <a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="comment">// Read contants</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// Scalar</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">auto</span> name = tf.adapterType2Name&lt;T&gt;();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">auto</span> tangoName = name + <span class="stringliteral">&quot;_DATA_TYPE_CONSTANT&quot;</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> attr = proxy.read_attribute(tangoName);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">using </span>TargetType = <span class="keyword">typename</span> boost::mpl::at&lt;Type2Tango, T&gt;::type;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">auto</span> expectedValue = tf.generateDefaultValueForType&lt;TargetType, T&gt;();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    TargetType value;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    attr &gt;&gt; value;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    BOOST_TEST(expectedValue == value);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Arrays</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">auto</span> name = tf.adapterType2Name&lt;T&gt;();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">auto</span> tangoName = name + <span class="stringliteral">&quot;_CONSTANT_ARRAY&quot;</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">auto</span> attr = proxy.read_attribute(tangoName);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">using </span>TargetType = <span class="keyword">typename</span> boost::mpl::at&lt;Type2Tango, T&gt;::type;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">auto</span> expectedValue = tf.generateDefaultValueForType&lt;TargetType, T&gt;();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::vector&lt;TargetType&gt; expectedValues;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; 10; i++) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;ChimeraTK::Boolean, T&gt;) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        expectedValues.push_back(i == 0 ? <span class="keyword">false</span> : expectedValue);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;std::string, T&gt;) {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        expectedValues.push_back(std::to_string(<span class="keywordtype">double</span>(i) * double(i) * 42.0));</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        expectedValues.push_back(TargetType(i) * TargetType(i) * expectedValue);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::vector&lt;TargetType&gt; values;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    attr &gt;&gt; values;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    BOOST_CHECK_EQUAL_COLLECTIONS(expectedValues.begin(), expectedValues.end(), values.begin(), values.end());</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849">   65</a></span><a class="code hl_function" href="test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849">BOOST_AUTO_TEST_CASE_TEMPLATE</a>(testReadConstants, T, <a class="code hl_typedef" href="_tango_test_server_8h.html#a57bbeb47783fd529223902ed09c460b5">TestTypesNoVoid</a>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">auto</span> [tf, app, proxy] = <a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="comment">// Read contants</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Scalar</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">auto</span> name = tf.adapterType2Name&lt;T&gt;();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> tangoName = name + <span class="stringliteral">&quot;_DATA_TYPE_CONSTANT&quot;</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">auto</span> attr = proxy.read_attribute(tangoName);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">using </span>TargetType = <span class="keyword">typename</span> boost::mpl::at&lt;Type2Tango, T&gt;::type;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">auto</span> expectedValue = tf.generateDefaultValueForType&lt;TargetType, T&gt;();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    TargetType value;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    attr &gt;&gt; value;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    BOOST_TEST(expectedValue == value);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// Arrays</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">auto</span> name = tf.adapterType2Name&lt;T&gt;();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">auto</span> tangoName = name + <span class="stringliteral">&quot;_CONSTANT_ARRAY&quot;</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">auto</span> attr = proxy.read_attribute(tangoName);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">using </span>TargetType = <span class="keyword">typename</span> boost::mpl::at&lt;Type2Tango, T&gt;::type;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">auto</span> expectedValue = tf.generateDefaultValueForType&lt;TargetType, T&gt;();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::vector&lt;TargetType&gt; expectedValues;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; 10; i++) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;ChimeraTK::Boolean, T&gt;) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        expectedValues.push_back(i == 0 ? <span class="keyword">false</span> : expectedValue);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;std::string, T&gt;) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        expectedValues.push_back(std::to_string(<span class="keywordtype">double</span>(i) * double(i) * 42.0));</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        expectedValues.push_back(TargetType(i) * TargetType(i) * expectedValue);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    std::vector&lt;TargetType&gt; values;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    attr &gt;&gt; values;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    BOOST_CHECK_EQUAL_COLLECTIONS(expectedValues.begin(), expectedValues.end(), values.begin(), values.end());</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
 </div>
 <div class="ttc" id="a_tango_test_server_8h_html"><div class="ttname"><a href="_tango_test_server_8h.html">TangoTestServer.h</a></div></div>
 <div class="ttc" id="a_tango_test_server_8h_html_a57bbeb47783fd529223902ed09c460b5"><div class="ttname"><a href="_tango_test_server_8h.html#a57bbeb47783fd529223902ed09c460b5">TestTypesNoVoid</a></div><div class="ttdeci">boost::mpl::list&lt; double, float, int64_t, int32_t, int16_t, int8_t, uint64_t, uint32_t, uint16_t, uint8_t, ChimeraTK::Boolean, std::string &gt; TestTypesNoVoid</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00022">TangoTestServer.h:23</a></div></div>
@@ -214,7 +215,7 @@ $(document).ready(function(){initNavTree('test_tango_server_import_all_8cpp_sour
 <div class="ttc" id="astruct_tango_test_fixture_impl_html_ab90860baae20e0c7ea4515dfc1ecc7ad"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a></div><div class="ttdeci">static std::tuple&lt; TangoTestFixtureImpl &amp;, ExtendedReferenceTestApplication &amp;, Tango::DeviceProxy &amp; &gt; getContents()</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00177">TangoTestServer.h:177</a></div></div>
 <div class="ttc" id="atest_tango_server_import_all_8cpp_html_a45db44fbf9098e40e70d900cfb55a4c0"><div class="ttname"><a href="test_tango_server_import_all_8cpp.html#a45db44fbf9098e40e70d900cfb55a4c0">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testVariableExistence)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_import_all_8cpp_source.html#l00019">testTangoServerImportAll.cpp:19</a></div></div>
 <div class="ttc" id="atest_tango_server_import_all_8cpp_html_adcb547bcf6c175d4c3ad20688da85f70"><div class="ttname"><a href="test_tango_server_import_all_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a></div><div class="ttdeci">BOOST_GLOBAL_FIXTURE(Fixture_t)</div></div>
-<div class="ttc" id="atest_tango_server_import_all_8cpp_html_aeafecd91c812389e884a7f43dfa3c849"><div class="ttname"><a href="test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849">BOOST_AUTO_TEST_CASE_TEMPLATE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE_TEMPLATE(testReadConstants, T, TestTypesNoVoid)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_import_all_8cpp_source.html#l00064">testTangoServerImportAll.cpp:64</a></div></div>
+<div class="ttc" id="atest_tango_server_import_all_8cpp_html_aeafecd91c812389e884a7f43dfa3c849"><div class="ttname"><a href="test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849">BOOST_AUTO_TEST_CASE_TEMPLATE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE_TEMPLATE(testReadConstants, T, TestTypesNoVoid)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_import_all_8cpp_source.html#l00065">testTangoServerImportAll.cpp:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
