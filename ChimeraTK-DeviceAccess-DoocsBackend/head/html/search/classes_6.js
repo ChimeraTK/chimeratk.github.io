@@ -16,7 +16,6 @@ var searchData=
   ['regsomeroint_13',['RegSomeRoInt',['../struct_reg_some_ro_int.html',1,'']]],
   ['regsomeshortarray_14',['RegSomeShortArray',['../struct_reg_some_short_array.html',1,'']]],
   ['regsomespectrum_15',['RegSomeSpectrum',['../struct_reg_some_spectrum.html',1,'']]],
-  ['regsomestatus_16',['RegSomeStatus',['../struct_reg_some_status.html',1,'']]],
-  ['regsomestring_17',['RegSomeString',['../struct_reg_some_string.html',1,'']]],
-  ['regsomezmqint_18',['RegSomeZmqInt',['../struct_reg_some_zmq_int.html',1,'']]]
+  ['regsomestring_16',['RegSomeString',['../struct_reg_some_string.html',1,'']]],
+  ['regsomezmqint_17',['RegSomeZmqInt',['../struct_reg_some_zmq_int.html',1,'']]]
 ];

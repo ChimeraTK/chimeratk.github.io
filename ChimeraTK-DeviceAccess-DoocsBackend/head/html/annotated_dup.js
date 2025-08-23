@@ -39,7 +39,6 @@ var annotated_dup =
     [ "RegSomeRoInt", "struct_reg_some_ro_int.html", "struct_reg_some_ro_int" ],
     [ "RegSomeShortArray", "struct_reg_some_short_array.html", "struct_reg_some_short_array" ],
     [ "RegSomeSpectrum", "struct_reg_some_spectrum.html", "struct_reg_some_spectrum" ],
-    [ "RegSomeStatus", "struct_reg_some_status.html", "struct_reg_some_status" ],
     [ "RegSomeString", "struct_reg_some_string.html", "struct_reg_some_string" ],
     [ "RegSomeZmqInt", "struct_reg_some_zmq_int.html", "struct_reg_some_zmq_int" ],
     [ "ScalarDefaults", "struct_scalar_defaults.html", "struct_scalar_defaults" ]

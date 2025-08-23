@@ -47,9 +47,6 @@ var hierarchy =
         [ "RegSomeInt", "struct_reg_some_int.html", null ],
         [ "RegSomeRoInt", "struct_reg_some_ro_int.html", null ]
       ] ],
-      [ "ScalarDefaults< RegSomeStatus >", "struct_scalar_defaults.html", [
-        [ "RegSomeStatus", "struct_reg_some_status.html", null ]
-      ] ],
       [ "ScalarDefaults< RegSomeString >", "struct_scalar_defaults.html", [
         [ "RegSomeString", "struct_reg_some_string.html", null ]
       ] ],
@@ -74,7 +71,6 @@ var hierarchy =
     [ "AllRegisterDefaults< RegSomeLongArray >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeShortArray >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeSpectrum >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeStatus >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeString >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeZmqInt >", "struct_all_register_defaults.html", null ],
     [ "ChimeraTK::BackendRegisterCatalogue", null, [
