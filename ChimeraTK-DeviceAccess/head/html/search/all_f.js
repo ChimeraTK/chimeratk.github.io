@@ -66,7 +66,7 @@ var searchData=
   ['loadallpluginsfromdmapfile_63',['loadAllPluginsFromDMapFile',['../class_chimera_t_k_1_1_backend_factory.html#afb11ba2d5dbe02a49f8e99ff9e84ae54',1,'ChimeraTK::BackendFactory']]],
   ['loading_20custom_20backends_20at_20run_20time_64',['Loading custom backends at run time',['../custom_backends.html#loading_backends',1,'']]],
   ['loadpluginlibrary_65',['loadPluginLibrary',['../class_chimera_t_k_1_1_backend_factory.html#adf2022ba5de940677c888dea01954727',1,'ChimeraTK::BackendFactory']]],
-  ['lock_66',['lock',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a8606f3a10f891827af710a8339792388',1,'ChimeraTK::LNMBackend::ReferenceCountedUniqueLock::lock()'],['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af195f467968cfe6db337f1a6ebd8b5bd',1,'ChimeraTK::LNMBackendBitAccessor::lock']]],
+  ['lock_66',['lock',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a8606f3a10f891827af710a8339792388',1,'ChimeraTK::LNMBackend::ReferenceCountedUniqueLock::lock()'],['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af195f467968cfe6db337f1a6ebd8b5bd',1,'ChimeraTK::LNMBackendBitAccessor::lock']]],
   ['lockfile_67',['lockfile',['../struct_test_locker.html#a74c7a8bdca18aa944e3f24c466a9e70c',1,'TestLocker']]],
   ['logic_5ferror_68',['logic_error',['../class_chimera_t_k_1_1logic__error.html#a7cc99d54b4de93dd27b0cb67417dd43f',1,'ChimeraTK::logic_error::logic_error()'],['../class_chimera_t_k_1_1logic__error.html',1,'ChimeraTK::logic_error']]],
   ['logical_20name_20mapper_69',['Double Buffering plugin for the Logical Name Mapper',['../lmap.html#double_buffering_plugin',1,'']]],

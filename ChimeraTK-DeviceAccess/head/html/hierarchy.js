@@ -509,7 +509,7 @@ var hierarchy =
     [ "ChimeraTK::RebotSleepSynchroniser", "struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html", null ],
     [ "ChimeraTK::RebotTestableClock", "class_chimera_t_k_1_1_rebot_testable_clock.html", null ],
     [ "RebotTestClass", "class_rebot_test_class.html", null ],
-    [ "ChimeraTK::LNMBackend::ReferenceCountedUniqueLock", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html", null ],
+    [ "ChimeraTK::LNMBackend::ReferenceCountedUniqueLock", "class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html", null ],
     [ "Register", null, [
       [ "AreaType< Register >", "struct_area_type.html", null ],
       [ "AreaType< Register >", "struct_area_type.html", null ],

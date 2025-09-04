@@ -6,7 +6,7 @@ var searchData=
   ['unknownmainkeytestfixture_3',['UnknownMainKeyTestFixture',['../struct_unknown_main_key_test_fixture.html#aea0574566c1de5562a2249e4188ad60e',1,'UnknownMainKeyTestFixture']]],
   ['unknownoptiontestfixture_4',['UnknownOptionTestFixture',['../struct_unknown_option_test_fixture.html#a8a9d41e512e85d5f308362a62421b6e0',1,'UnknownOptionTestFixture']]],
   ['unknownversiontestfixture_5',['UnknownVersionTestFixture',['../struct_unknown_version_test_fixture.html#a7a587d2ca4f334e4f6b8aebdc2f6ab43',1,'UnknownVersionTestFixture']]],
-  ['unlock_6',['unlock',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#abddce14badb02aa93a1d1e9f1503234f',1,'ChimeraTK::LNMBackend::ReferenceCountedUniqueLock']]],
+  ['unlock_6',['unlock',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#abddce14badb02aa93a1d1e9f1503234f',1,'ChimeraTK::LNMBackend::ReferenceCountedUniqueLock']]],
   ['unsafegetisactive_7',['unsafeGetIsActive',['../class_chimera_t_k_1_1async_1_1_domain.html#a4cbe5b3f4de8068162b6240b254e43a6',1,'ChimeraTK::async::Domain']]],
   ['unsubscribe_8',['unsubscribe',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html#a8b9c1fda699e1d2cd259a7337eac528a',1,'ChimeraTK::async::AsyncAccessorManager']]],
   ['unsubscribeimpl_9',['unsubscribeImpl',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html#a6b68630903fc0beef03afd86fb0e3bc3',1,'ChimeraTK::async::AsyncAccessorManager']]],
@@ -18,7 +18,7 @@ var searchData=
   ['updateregisterinfo_15',['updateRegisterInfo',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a5aeb3c6e2eaf692b629c1070b2821ead',1,'ChimeraTK::LNMBackend::AccessorPluginBase']]],
   ['updateresult_16',['updateResult',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
   ['updaterloop_17',['updaterLoop',['../struct_fixture.html#aaa666e629f57793511fcd0716c3b84c6',1,'Fixture']]],
-  ['usecount_18',['useCount',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#acc3032c73acf395694e6f5b5a2eb62d7',1,'ChimeraTK::LNMBackend::ReferenceCountedUniqueLock']]],
+  ['usecount_18',['useCount',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#a23e3cf56898321c53e4f2a3ef02194ba',1,'ChimeraTK::LNMBackend::ReferenceCountedUniqueLock']]],
   ['usertypetonumeric_19',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
   ['usertypetousertype_20',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]]
 ];
