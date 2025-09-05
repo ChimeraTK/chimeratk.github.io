@@ -102,7 +102,7 @@ var searchData=
   ['_5freadregisterpaths_99',['_readRegisterPaths',['../class_chimera_t_k_1_1_device_manager.html#a36928e7fdaa5402ed80a17e209cfb9bd',1,'ChimeraTK::DeviceManager']]],
   ['_5frecoveryaccessor_100',['_recoveryAccessor',['../class_chimera_t_k_1_1_exception_handling_decorator.html#adb8931d7eca76758f0de9835af4f0148',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['_5frecoverygroup_101',['_recoveryGroup',['../class_chimera_t_k_1_1_device_manager.html#ab603b5b000f366910378a18e12c55993',1,'ChimeraTK::DeviceManager']]],
-  ['_5frecoveryhelper_102',['_recoveryHelper',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a1ad91648a84895edeb2b344ca13f479f',1,'ChimeraTK::ExceptionHandlingDecorator']]],
+  ['_5frecoveryhelper_102',['_recoveryhelper',['../class_chimera_t_k_1_1_reverse_recovery_decorator.html#a46844b7f3466b1ff5aca38769639f549',1,'ChimeraTK::ReverseRecoveryDecorator::_recoveryHelper'],['../class_chimera_t_k_1_1_exception_handling_decorator.html#a1ad91648a84895edeb2b344ca13f479f',1,'ChimeraTK::ExceptionHandlingDecorator::_recoveryHelper']]],
   ['_5frecoveryhelpers_103',['_recoveryHelpers',['../class_chimera_t_k_1_1_device_manager.html#af283a0b667c54bc26d485b4961e7b745',1,'ChimeraTK::DeviceManager']]],
   ['_5frecoverymutex_104',['_recoveryMutex',['../class_chimera_t_k_1_1_device_manager.html#ad4af08ac6ed57aa139d388143bfabf70',1,'ChimeraTK::DeviceManager']]],
   ['_5frecursionstopper_105',['_recursionStopper',['../class_chimera_t_k_1_1_application_module.html#a4714f0858da3bda2b8179f472840b5cd',1,'ChimeraTK::ApplicationModule']]],

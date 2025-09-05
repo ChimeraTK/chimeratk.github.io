@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.05.00</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.05.01</span>
    </div>
   </td>
  </tr>
@@ -694,28 +694,28 @@ $(document).ready(function(){initNavTree('test_reverse_recovery_8cc_source.html'
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <a class="code hl_struct" href="struct_test_application.html">TestApplication</a> app;</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span> </div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  std::atomic&lt;bool&gt; up{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;taggedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;taggedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB.DUMMY_WRITEABLE&quot;</span>, 8);</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  <span class="comment">// Nothing to do</span></div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {};</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a>({<span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>});</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB.DUMMY_WRITEABLE&quot;</span>, 8);</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  <span class="comment">// Nothing to do</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {};</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a>({<span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>});</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  std::this_thread::sleep_for(std::chrono::seconds(1));</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  std::this_thread::sleep_for(std::chrono::seconds(1));</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  BOOST_TEST(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB&quot;</span>) == 8);</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>}</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  BOOST_TEST(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB&quot;</span>) == 8);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>}</div>
 </div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
 <div class="foldopen" id="foldopen00594" data-start="{" data-end="}">
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno"><a class="line" href="test_reverse_recovery_8cc.html#a77e899306efbe4e16043ffa219719d5b">  594</a></span><a class="code hl_function" href="test_reverse_recovery_8cc.html#a0deeb1ab779fdc388b3db2f104071075">BOOST_AUTO_TEST_CASE</a>(testReverseRecoveryNetworkWoOptimized) {</div>
@@ -724,39 +724,152 @@ $(document).ready(function(){initNavTree('test_reverse_recovery_8cc_source.html'
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>  <span class="comment">// This test just checks that we can connect this network successfully</span></div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  ctk::BackendFactory::getInstance().setDMapFilePath(<span class="stringliteral">&quot;testTagged.dmap&quot;</span>);</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  ctk::Logger::getInstance().setMinSeverity(ctk::Logger::Severity::debug);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  <a class="code hl_struct" href="struct_test_application.html">TestApplication</a> app;</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  <a class="code hl_struct" href="struct_test_application.html">TestApplication</a> app;</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  std::atomic&lt;bool&gt; up{<span class="keyword">false</span>};</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  std::atomic&lt;bool&gt; up{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;taggedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  <a class="code hl_struct" href="class_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput&lt;int32_t&gt;</a> modIn{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB.DUMMY_WRITEABLE&quot;</span>, 8);</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span> </div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  <span class="comment">// Nothing to do</span></div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    up = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    up.notify_one();</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  };</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24">setScalarDefault</a>&lt;int32_t&gt;(<span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>, 12);</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a>({<span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>});</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span> </div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  up.wait(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>  <span class="comment">// Gets value from constant feeder</span></div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  <a class="code hl_define" href="check__timeout_8h.html#a53486434270be6831a41afe38262de96">CHECK_EQUAL_TIMEOUT</a>(<span class="keywordtype">int</span>(modIn), 0, 2000);</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  <a class="code hl_define" href="check__timeout_8h.html#a53486434270be6831a41afe38262de96">CHECK_EQUAL_TIMEOUT</a>(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB&quot;</span>), 8, 2000);</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>}</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;taggedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>  <a class="code hl_struct" href="class_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput&lt;int32_t&gt;</a> modIn{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB.DUMMY_WRITEABLE&quot;</span>, 8);</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  <span class="comment">// Nothing to do</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    up = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    up.notify_one();</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  };</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24">setScalarDefault</a>&lt;int32_t&gt;(<span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>, 12);</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a>({<span class="stringliteral">&quot;/taggedWriteOnly&quot;</span>});</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  up.wait(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  <span class="comment">// Gets value from constant feeder</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>  <a class="code hl_define" href="check__timeout_8h.html#a53486434270be6831a41afe38262de96">CHECK_EQUAL_TIMEOUT</a>(<span class="keywordtype">int</span>(modIn), 0, 2000);</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  <a class="code hl_define" href="check__timeout_8h.html#a53486434270be6831a41afe38262de96">CHECK_EQUAL_TIMEOUT</a>(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/writeOnlyRB&quot;</span>), 8, 2000);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>}</div>
 </div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="foldopen" id="foldopen00633" data-start="{" data-end="}">
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno"><a class="line" href="test_reverse_recovery_8cc.html#a42fce89757a324fb5340d29bf0c724a0">  633</a></span><a class="code hl_function" href="test_reverse_recovery_8cc.html#a0deeb1ab779fdc388b3db2f104071075">BOOST_AUTO_TEST_CASE</a>(testReverseRecoveryBitAccessorFanOut) {</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testReverseRecoveryBitAccessorFanOut&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  <span class="comment">// This test just checks that we can connect this network successfully</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  ctk::BackendFactory::getInstance().setDMapFilePath(<span class="stringliteral">&quot;testTagged.dmap&quot;</span>);</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  <a class="code hl_struct" href="struct_test_application.html">TestApplication</a> app;</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;bitMappedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/readWrite&quot;</span>, 0x7fff);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  <span class="comment">// Nothing to do</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {};</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24">setScalarDefault</a>&lt;ctk::Boolean&gt;(<span class="stringliteral">&quot;/bit3&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  std::this_thread::sleep_for(std::chrono::seconds(1));</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  BOOST_TEST(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/readWrite&quot;</span>) == 0x7FFF);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>}</div>
+</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
+<div class="foldopen" id="foldopen00662" data-start="{" data-end="}">
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno"><a class="line" href="test_reverse_recovery_8cc.html#a9cf9d76ac0a8f5fbd74064eeaf2d21e7">  662</a></span><a class="code hl_function" href="test_reverse_recovery_8cc.html#a0deeb1ab779fdc388b3db2f104071075">BOOST_AUTO_TEST_CASE</a>(testReverseRecoveryBitAccessorDirect) {</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testReverseRecoveryBitAccessorFanOut&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  <span class="comment">// This test just checks that we can connect this network successfully</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  ctk::BackendFactory::getInstance().setDMapFilePath(<span class="stringliteral">&quot;testTagged.dmap&quot;</span>);</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  <a class="code hl_struct" href="struct_test_application.html">TestApplication</a> app;</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;bitMappedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/readWrite&quot;</span>, 0x7fff);</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  <span class="comment">// Nothing to do</span></div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  };</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24">setScalarDefault</a>&lt;ctk::Boolean&gt;(<span class="stringliteral">&quot;/bit3&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a>({<span class="stringliteral">&quot;/bit3&quot;</span>});</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>  std::this_thread::sleep_for(std::chrono::seconds(1));</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>  BOOST_TEST(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/readWrite&quot;</span>) == 0x7FFF);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>}</div>
+</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="foldopen" id="foldopen00694" data-start="{" data-end="}">
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno"><a class="line" href="test_reverse_recovery_8cc.html#aa76bdfcbdb8944b11b825801e30ac464">  694</a></span><a class="code hl_function" href="test_reverse_recovery_8cc.html#a0deeb1ab779fdc388b3db2f104071075">BOOST_AUTO_TEST_CASE</a>(testReverseRecoveryBitAccessorMultipleInModule) {</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testReverseRecoveryBitAccessorMultipleInModule&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>  <span class="comment">// Regression test whether this setup deadlocks itself</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  ctk::BackendFactory::getInstance().setDMapFilePath(<span class="stringliteral">&quot;testTagged.dmap&quot;</span>);</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  <a class="code hl_struct" href="struct_test_application.html">TestApplication</a> app;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_device_module.html">ctk::DeviceModule</a> devModule{&amp;app, <span class="stringliteral">&quot;bitMappedDevice&quot;</span>, <span class="stringliteral">&quot;/trigger&quot;</span>};</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput&lt;ctk::Boolean&gt;</a> bit0{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit0&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput&lt;ctk::Boolean&gt;</a> bit1{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit1&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput&lt;ctk::Boolean&gt;</a> bit2{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit2&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput&lt;ctk::Boolean&gt;</a> bit3{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit3&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput&lt;ctk::Boolean&gt;</a> bit4{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit4&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput&lt;ctk::Boolean&gt;</a> bit5{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit5&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput&lt;ctk::Boolean&gt;</a> bit6{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit6&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput&lt;ctk::Boolean&gt;</a> bit7{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit7&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>  <a class="code hl_struct" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput&lt;ctk::Boolean&gt;</a> bit8{&amp;app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>, <span class="stringliteral">&quot;/bit8&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  <a class="code hl_enumvalue" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ctk::Device</a> dev;</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  dev.open(<span class="stringliteral">&quot;baseDevice&quot;</span>);</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>  dev.write&lt;int32_t&gt;(<span class="stringliteral">&quot;/readWrite&quot;</span>, 0x7fff);</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  std::atomic&lt;bool&gt; up{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>  <span class="comment">// Nothing to do</span></div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>  app.<a class="code hl_variable" href="struct_test_application.html#a08d9a87c4d5b53b058849068e43ffa1c">mod</a>.<a class="code hl_variable" href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">doMainLoop</a> = [&amp;]() {</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    up = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    up.notify_all();</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>  };</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  <a class="code hl_class" href="class_chimera_t_k_1_1_test_facility.html">ctk::TestFacility</a> test(app, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8f7965aa97520a44bcd2f7c7ed707856">getVoid</a>(<span class="stringliteral">&quot;/trigger&quot;</span>).write();</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>  up.wait(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="comment">// sanity check if the reverse recovery for the output bits still holds</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>  BOOST_TEST(dev.read&lt;int32_t&gt;(<span class="stringliteral">&quot;/readWrite&quot;</span>) == 0x7FFF);</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  app.<a class="code hl_function" href="class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a">shutdown</a>();</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>}</div>
+</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="ttc" id="a_application_8h_html"><div class="ttname"><a href="_application_8h.html">Application.h</a></div></div>
 <div class="ttc" id="a_application_module_8h_html"><div class="ttname"><a href="_application_module_8h.html">ApplicationModule.h</a></div></div>
 <div class="ttc" id="a_device_module_8h_html"><div class="ttname"><a href="_device_module_8h.html">DeviceModule.h</a></div></div>
@@ -775,12 +888,15 @@ $(document).ready(function(){initNavTree('test_reverse_recovery_8cc_source.html'
 <div class="ttc" id="aclass_chimera_t_k_1_1_scalar_push_input_html"><div class="ttname"><a href="class_chimera_t_k_1_1_scalar_push_input.html">ChimeraTK::ScalarPushInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::push.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00070">ScalarAccessor.h:70</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_test_facility_html"><div class="ttname"><a href="class_chimera_t_k_1_1_test_facility.html">ChimeraTK::TestFacility</a></div><div class="ttdoc">Helper class to facilitate tests of applications based on ApplicationCore.</div><div class="ttdef"><b>Definition</b> <a href="_test_facility_8h_source.html#l00036">TestFacility.h:36</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_test_facility_html_a3dbd50a75109e977ed45a13ae29234cc"><div class="ttname"><a href="class_chimera_t_k_1_1_test_facility.html#a3dbd50a75109e977ed45a13ae29234cc">ChimeraTK::TestFacility::readScalar</a></div><div class="ttdeci">TYPE readScalar(const std::string &amp;name)</div><div class="ttdoc">Convenience function to read the latest value of a scalar process variable in a single call.</div><div class="ttdef"><b>Definition</b> <a href="_test_facility_8h_source.html#l00193">TestFacility.h:193</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_test_facility_html_a8f7965aa97520a44bcd2f7c7ed707856"><div class="ttname"><a href="class_chimera_t_k_1_1_test_facility.html#a8f7965aa97520a44bcd2f7c7ed707856">ChimeraTK::TestFacility::getVoid</a></div><div class="ttdeci">ChimeraTK::VoidRegisterAccessor getVoid(const ChimeraTK::RegisterPath &amp;name) const</div><div class="ttdoc">Obtain a void process variable from the application, which is published to the control system.</div><div class="ttdef"><b>Definition</b> <a href="_test_facility_8cc_source.html#l00119">TestFacility.cc:119</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_test_facility_html_aa2724549aa631be07b9163ebb4c1356b"><div class="ttname"><a href="class_chimera_t_k_1_1_test_facility.html#aa2724549aa631be07b9163ebb4c1356b">ChimeraTK::TestFacility::getScalar</a></div><div class="ttdeci">ChimeraTK::ScalarRegisterAccessor&lt; T &gt; getScalar(const ChimeraTK::RegisterPath &amp;name) const</div><div class="ttdoc">Obtain a scalar process variable from the application, which is published to the control system.</div><div class="ttdef"><b>Definition</b> <a href="_test_facility_8h_source.html#l00155">TestFacility.h:155</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_test_facility_html_aa89dcd98d96bef731b8dbd75964bb18c"><div class="ttname"><a href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">ChimeraTK::TestFacility::runApplication</a></div><div class="ttdeci">void runApplication() const</div><div class="ttdoc">Start the application in testable mode.</div><div class="ttdef"><b>Definition</b> <a href="_test_facility_8cc_source.html#l00028">TestFacility.cc:28</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_test_facility_html_aaec541448a82eaf896cf4acbeb16cf24"><div class="ttname"><a href="class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24">ChimeraTK::TestFacility::setScalarDefault</a></div><div class="ttdeci">void setScalarDefault(const ChimeraTK::RegisterPath &amp;name, const T &amp;value)</div><div class="ttdoc">Set default value for scalar process variable.</div><div class="ttdef"><b>Definition</b> <a href="_test_facility_8h_source.html#l00211">TestFacility.h:211</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdoc">InvalidityTracer application module.</div><div class="ttdef"><b>Definition</b> <a href="spec__data_validity_propagation_8dox_source.html#l00002">spec_dataValidityPropagation.dox:2</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html_a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737"><div class="ttname"><a href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ChimeraTK::NodeType::Device</a></div><div class="ttdeci">@ Device</div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_output_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_output.html">ChimeraTK::ScalarOutput</a></div><div class="ttdoc">Convenience class for output scalar accessors (always UpdateMode::push)</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00093">ScalarAccessor.h:93</a></div></div>
 <div class="ttc" id="astruct_chimera_t_k_1_1_scalar_output_reverse_recovery_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_output_reverse_recovery.html">ChimeraTK::ScalarOutputReverseRecovery</a></div><div class="ttdoc">Convenience class for output scalar accessors with return channel (&quot;read back&quot;) (always UpdateMode::p...</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00126">ScalarAccessor.h:126</a></div></div>
+<div class="ttc" id="astruct_chimera_t_k_1_1_scalar_poll_input_html"><div class="ttname"><a href="struct_chimera_t_k_1_1_scalar_poll_input.html">ChimeraTK::ScalarPollInput</a></div><div class="ttdoc">Convenience class for input scalar accessors with UpdateMode::poll.</div><div class="ttdef"><b>Definition</b> <a href="_scalar_accessor_8h_source.html#l00081">ScalarAccessor.h:81</a></div></div>
 <div class="ttc" id="astruct_external_main_loop_module_html"><div class="ttname"><a href="struct_external_main_loop_module.html">ExternalMainLoopModule</a></div><div class="ttdef"><b>Definition</b> <a href="test_reverse_recovery_8cc_source.html#l00032">testReverseRecovery.cc:32</a></div></div>
 <div class="ttc" id="astruct_external_main_loop_module_html_a2783f1f5e245baf46360441b06e6156f"><div class="ttname"><a href="struct_external_main_loop_module.html#a2783f1f5e245baf46360441b06e6156f">ExternalMainLoopModule::doMainLoop</a></div><div class="ttdeci">std::function&lt; void()&gt; doMainLoop</div><div class="ttdef"><b>Definition</b> <a href="test_reverse_recovery_8cc_source.html#l00035">testReverseRecovery.cc:35</a></div></div>
 <div class="ttc" id="astruct_external_main_loop_module_html_a965e8cb2fc209e4d2be9479ffdd76266"><div class="ttname"><a href="struct_external_main_loop_module.html#a965e8cb2fc209e4d2be9479ffdd76266">ExternalMainLoopModule::mainLoop</a></div><div class="ttdeci">void mainLoop() final</div><div class="ttdoc">To be implemented by the user: function called in a separate thread executing the main loop of the mo...</div><div class="ttdef"><b>Definition</b> <a href="test_reverse_recovery_8cc_source.html#l00037">testReverseRecovery.cc:37</a></div></div>

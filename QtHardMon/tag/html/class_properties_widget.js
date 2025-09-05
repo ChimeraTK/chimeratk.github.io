@@ -3,7 +3,7 @@ var class_properties_widget =
     [ "PropertiesWidget", "class_properties_widget.html#a51c2c7b29f6d51854c635829cf0e2cbe", null ],
     [ "clearDataWidgetBackground", "class_properties_widget.html#ac0c319ea86060ad8933ee482e2725df8", null ],
     [ "clearFields", "class_properties_widget.html#af4e895a0977460151bcc17021b325c8c", null ],
-    [ "setAddress", "class_properties_widget.html#a0c0b9495f184121c0dc3233946fd0648", null ],
+    [ "setAddress", "class_properties_widget.html#aaef274ad0210683316c1484f843dc0a1", null ],
     [ "setFixedPointInfo", "class_properties_widget.html#a472db309f62f83d399123378f810cbd8", null ],
     [ "setOneDWidgetsVisible", "class_properties_widget.html#a76743665a4fd1fda4420abf9f1c1e05f", null ],
     [ "setShape", "class_properties_widget.html#af499d1e850fdbe8d75773620c6bfc949", null ],

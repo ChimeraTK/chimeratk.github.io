@@ -616,11 +616,10 @@ var hierarchy =
     [ "ChimeraTK::NDRegisterAccessorDecorator", null, [
       [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
       [ "ChimeraTK::DebugPrintAccessorDecorator< UserType >", "class_chimera_t_k_1_1_debug_print_accessor_decorator.html", null ],
-      [ "ChimeraTK::ExceptionHandlingDecorator< UserType >", "class_chimera_t_k_1_1_exception_handling_decorator.html", [
-        [ "ChimeraTK::ReverseRecoveryDecorator< UserType >", "class_chimera_t_k_1_1_reverse_recovery_decorator.html", null ]
-      ] ],
+      [ "ChimeraTK::ExceptionHandlingDecorator< UserType >", "class_chimera_t_k_1_1_exception_handling_decorator.html", null ],
       [ "ChimeraTK::FanIn< AccessorType >::Inputs::TrackingDecorator< U >", "class_chimera_t_k_1_1_fan_in_1_1_inputs_1_1_tracking_decorator.html", null ],
-      [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ]
+      [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ],
+      [ "ChimeraTK::ReverseRecoveryDecorator< UserType >", "class_chimera_t_k_1_1_reverse_recovery_decorator.html", null ]
     ] ],
     [ "ChimeraTK::NetworkVisitor::NetworkInformation", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html", null ],
     [ "ChimeraTK::NetworkVisitor", "class_chimera_t_k_1_1_network_visitor.html", [
