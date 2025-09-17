@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter<span id="projectnumber">&#160;02.00.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter<span id="projectnumber">&#160;02.00.01</span>
    </div>
   </td>
  </tr>
@@ -115,277 +115,278 @@ $(document).ready(function(){initNavTree('_adapter_device_class_8cpp_source.html
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>__declspec(dllexport)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// Naming is for Tango</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">// NOLINTNEXTLINE(readability-identifier-naming,reserved-identifier)</span></div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9">   20</a></span>    Tango::DeviceClass* <a class="code hl_function" href="_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9">_create_AdapterDeviceImpl_class</a>([[maybe_unused]] <span class="keyword">const</span> <span class="keywordtype">char</span>* name) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// FIXME: Do we need to support this? It&#39;s for using this class in pytango</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  assert(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
-</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Naming is for Tango</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// NOLINTNEXTLINE(readability-identifier-naming,reserved-identifier)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>Tango::DeviceClass*</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9">   21</a></span>    <a class="code hl_function" href="_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9">_create_AdapterDeviceImpl_class</a>([[maybe_unused]] <span class="keyword">const</span> <span class="keywordtype">char</span>* name) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="comment">// FIXME: Do we need to support this? It&#39;s for using this class in pytango</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  assert(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_tango_adapter.html">TangoAdapter</a> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="comment">// Apply some heuristics to derive the class name from the executable name</span></div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">   30</a></span>  std::string <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">AdapterDeviceClass::getClassName</a>() {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    std::string ourName{Tango::Util::instance()-&gt;get_ds_exec_name()};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::regex start{<span class="stringliteral">&quot;^ds_?&quot;</span>};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    std::regex end{<span class="stringliteral">&quot;_?ds$&quot;</span>};</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ourName = std::regex_replace(ourName, start, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    ourName = std::regex_replace(ourName, end, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;Deriving class name from executable name: &quot;</span> &lt;&lt; Tango::Util::instance()-&gt;get_ds_exec_name()</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; ourName &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> ourName;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953">   47</a></span>  <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953">AdapterDeviceClass::AdapterDeviceClass</a>(std::string&amp; s) : Tango::DeviceClass(s) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;Entering AdapterDeviceClass constructor&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">set_default_property</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">write_class_property</a>();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;Leaving AdapterDeviceClass constructor&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_tango_adapter.html">TangoAdapter</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="comment">// Apply some heuristics to derive the class name from the executable name</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">   31</a></span>  std::string <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">AdapterDeviceClass::getClassName</a>() {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::string ourName{Tango::Util::instance()-&gt;get_ds_exec_name()};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    std::regex start{<span class="stringliteral">&quot;^ds_?&quot;</span>};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::regex end{<span class="stringliteral">&quot;_?ds$&quot;</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    ourName = std::regex_replace(ourName, start, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ourName = std::regex_replace(ourName, end, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;Deriving class name from executable name: &quot;</span> &lt;&lt; Tango::Util::instance()-&gt;get_ds_exec_name()</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; ourName &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> ourName;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  Tango::DbDatum AdapterDeviceClass::getPropertyWithDefault(</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">const</span> Tango::DbData&amp; list, <span class="keyword">const</span> std::string&amp; propertyName) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; position = std::find_if(list.begin(), list.end(), [&amp;](<span class="keyword">auto</span> x) { return x.name == propertyName; });</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span>(position != list.end()) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keywordflow">return</span> *position;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> {name};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a1ce70102c1900d89a530c2c3b8ea8d40">   69</a></span>  Tango::DbDatum <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a712ec8d1af360d0a5a913dc5200e7382">AdapterDeviceClass::get_class_property</a>(std::string&amp; prop_name) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> getPropertyWithDefault(<a class="code hl_variable" href="class_tango_adapter_1_1_adapter_device_class.html#aaec4b79acc22c89a60cfca0133638b61">cl_prop</a>, prop_name);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953">   48</a></span>  <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953">AdapterDeviceClass::AdapterDeviceClass</a>(std::string&amp; s) : Tango::DeviceClass(s) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;Entering AdapterDeviceClass constructor&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">set_default_property</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">write_class_property</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; <span class="stringliteral">&quot;Leaving AdapterDeviceClass constructor&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#ad07066bf41725b9db688049906dd753c">   75</a></span>  Tango::DbDatum <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ad07066bf41725b9db688049906dd753c">AdapterDeviceClass::get_default_device_property</a>(std::string&amp; prop_name) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> getPropertyWithDefault(<a class="code hl_variable" href="class_tango_adapter_1_1_adapter_device_class.html#a10c84174fe53ffde50b6947f3fa5a533">dev_def_prop</a>, prop_name);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  Tango::DbDatum AdapterDeviceClass::getPropertyWithDefault(</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keyword">const</span> Tango::DbData&amp; list, <span class="keyword">const</span> std::string&amp; propertyName) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; position = std::find_if(list.begin(), list.end(), [&amp;](<span class="keyword">auto</span> x) { return x.name == propertyName; });</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span>(position != list.end()) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">return</span> *position;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> {name};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a1ce70102c1900d89a530c2c3b8ea8d40">   70</a></span>  Tango::DbDatum <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a712ec8d1af360d0a5a913dc5200e7382">AdapterDeviceClass::get_class_property</a>(std::string&amp; prop_name) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> getPropertyWithDefault(<a class="code hl_variable" href="class_tango_adapter_1_1_adapter_device_class.html#aaec4b79acc22c89a60cfca0133638b61">cl_prop</a>, prop_name);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  }</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a83299d49efb7606eeb342c4cc7c892bd">   81</a></span>  Tango::DbDatum <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a83299d49efb7606eeb342c4cc7c892bd">AdapterDeviceClass::get_default_class_property</a>(std::string&amp; prop_name) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> getPropertyWithDefault(<a class="code hl_variable" href="class_tango_adapter_1_1_adapter_device_class.html#a8a4f6ca3adddf2641df337f7956a7ba5">cl_def_prop</a>, prop_name);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#ad07066bf41725b9db688049906dd753c">   76</a></span>  Tango::DbDatum <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ad07066bf41725b9db688049906dd753c">AdapterDeviceClass::get_default_device_property</a>(std::string&amp; prop_name) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> getPropertyWithDefault(<a class="code hl_variable" href="class_tango_adapter_1_1_adapter_device_class.html#a10c84174fe53ffde50b6947f3fa5a533">dev_def_prop</a>, prop_name);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">   87</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">AdapterDeviceClass::set_default_property</a>() {}</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">   91</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">AdapterDeviceClass::write_class_property</a>() {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">//  First time, check if database used</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span>(!Tango::Util::_UseDb) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    Tango::DbData data;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    std::string classname = get_name();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">auto</span> ourClass = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::getInstance</a>().<a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#a95884a71e24020f67c2b17722e89ba82">getMapper</a>().<a class="code hl_function" href="class_tango_adapter_1_1_attribute_mapper.html#ab3f512a8921f3b953931d1f2ab7e12ae">getClass</a>(get_name());</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    assert(ourClass);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">//  Put title</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    Tango::DbDatum title(<span class="stringliteral">&quot;ProjectTitle&quot;</span>);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::vector&lt;std::string&gt; str_title{ourClass-&gt;title.value_or(ourClass-&gt;name)};</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    title &lt;&lt; str_title;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    data.push_back(title);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">//  Put Description</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Tango::DbDatum description(<span class="stringliteral">&quot;Description&quot;</span>);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    std::vector&lt;std::string&gt; str_desc;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    str_desc.emplace_back(ourClass-&gt;description.value_or(<span class="stringliteral">&quot;ChimeraTK-based DeviceServer&quot;</span>));</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    description &lt;&lt; str_desc;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    data.push_back(description);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">//  Put inheritance</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    Tango::DbDatum inher_datum(<span class="stringliteral">&quot;InheritedFrom&quot;</span>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    std::vector&lt;std::string&gt; inheritance;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    inheritance.emplace_back(<span class="stringliteral">&quot;TANGO_BASE_CLASS&quot;</span>);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    inher_datum &lt;&lt; inheritance;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    data.push_back(inher_datum);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">//  Call database and and values</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    get_db_class()-&gt;put_property(data);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a83299d49efb7606eeb342c4cc7c892bd">   82</a></span>  Tango::DbDatum <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a83299d49efb7606eeb342c4cc7c892bd">AdapterDeviceClass::get_default_class_property</a>(std::string&amp; prop_name) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> getPropertyWithDefault(<a class="code hl_variable" href="class_tango_adapter_1_1_adapter_device_class.html#a8a4f6ca3adddf2641df337f7956a7ba5">cl_def_prop</a>, prop_name);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
 </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordtype">void</span> AdapterDeviceClass::device_factory(<span class="keyword">const</span> Tango::DevVarStringArray* devlist_ptr) {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">//  Add your own code</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">auto</span>&amp; adapter = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::getInstance</a>();</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">auto</span>&amp; mapper = adapter.getMapper();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keyword">auto</span> deviceClass = mapper.getClass(get_name());</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">//  Create devices and add it into the device list</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; devlist_ptr-&gt;length(); i++) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      <span class="keyword">const</span> <span class="keyword">auto</span>* deviceName = (*devlist_ptr)[i].in();</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>      <span class="keywordflow">if</span>(!deviceClass-&gt;hasDevice(deviceName) &amp;&amp;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>          !deviceClass-&gt;hasDevice(<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data())) {</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Device &quot;</span> &lt;&lt; deviceName &lt;&lt; <span class="stringliteral">&quot;not known in attribute mapper. Skipping.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="keyword">auto</span> device = std::make_unique&lt;AdapterDeviceImpl&gt;(<span class="keyword">this</span>, deviceName);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      device-&gt;init_device();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <span class="keywordflow">if</span>(!deviceClass-&gt;hasDevice(deviceName) &amp;&amp;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>          !deviceClass-&gt;hasDevice(<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data())) {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="comment">// See if we have the &quot;generic&quot; device&quot;</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        DEV_ERROR_STREAM(device) &lt;&lt; <span class="stringliteral">&quot;Device &quot;</span> &lt;&lt; deviceName &lt;&lt; <span class="stringliteral">&quot;not known in attribute mapper. Expect issues&quot;</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                                 &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        device-&gt;set_state(Tango::FAULT);</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        device-&gt;set_status(<span class="stringliteral">&quot;Device was not found in mapping file, no variables could be mapped.&quot;</span>);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="comment">// Move the generic device we have to this device.</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">if</span>(!deviceClass-&gt;hasDevice(deviceName)) {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          <span class="keyword">auto</span> genericDevice = deviceClass-&gt;devicesInDeviceClass[<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data()];</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          deviceClass-&gt;devicesInDeviceClass.erase(<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data());</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          genericDevice-&gt;name = deviceName;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          deviceClass-&gt;devicesInDeviceClass[deviceName] = genericDevice;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        device-&gt;attachToClassAttributes(deviceClass);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      <span class="comment">// Check before if database used.</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      <span class="keywordflow">if</span>(Tango::Util::_UseDb &amp;&amp; !Tango::Util::_FileDb) {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        export_device(device.get());</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        export_device(device.get(), deviceName);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <span class="comment">// Hand over device pointer to Tango</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      device_list.push_back(device.release());</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="comment">//  Manage dynamic attributes if any</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    erase_dynamic_attributes(get_class_attr()-&gt;get_attr_list());</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* dev : device_list) {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      <span class="comment">// Only set the device state ok ON if it is still in the default constructed</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <span class="comment">// value</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="keywordflow">if</span>(<a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;get_state() == Tango::UNKNOWN) {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;set_state(Tango::ON);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;set_status(<span class="stringliteral">&quot;Application is running.&quot;</span>);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef">  195</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef">AdapterDeviceClass::attribute_factory</a>([[maybe_unused]] std::vector&lt;Tango::Attr*&gt;&amp; att_list) {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">auto</span>&amp; adapter = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::getInstance</a>();</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keyword">auto</span>&amp; mapper = adapter.getMapper();</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">auto</span> deviceClass = mapper.getClass(get_name());</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; attDesc : deviceClass-&gt;attributes) {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      att_list.push_back(attDesc.toTangoAttribute().release());</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="comment">//  Create a list of static attributes</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    create_static_attribute_list(get_class_attr()-&gt;get_attr_list());</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">   88</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">AdapterDeviceClass::set_default_property</a>() {}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">   92</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">AdapterDeviceClass::write_class_property</a>() {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">//  First time, check if database used</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span>(!Tango::Util::_UseDb) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    Tango::DbData data;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    std::string classname = get_name();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">auto</span> ourClass = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::getInstance</a>().<a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#a95884a71e24020f67c2b17722e89ba82">getMapper</a>().<a class="code hl_function" href="class_tango_adapter_1_1_attribute_mapper.html#ab3f512a8921f3b953931d1f2ab7e12ae">getClass</a>(get_name());</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    assert(ourClass);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">//  Put title</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    Tango::DbDatum title(<span class="stringliteral">&quot;ProjectTitle&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    std::vector&lt;std::string&gt; str_title{ourClass-&gt;title.value_or(ourClass-&gt;name)};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    title &lt;&lt; str_title;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    data.push_back(title);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">//  Put Description</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    Tango::DbDatum description(<span class="stringliteral">&quot;Description&quot;</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    std::vector&lt;std::string&gt; str_desc;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    str_desc.emplace_back(ourClass-&gt;description.value_or(<span class="stringliteral">&quot;ChimeraTK-based DeviceServer&quot;</span>));</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    description &lt;&lt; str_desc;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    data.push_back(description);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">//  Put inheritance</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    Tango::DbDatum inher_datum(<span class="stringliteral">&quot;InheritedFrom&quot;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    std::vector&lt;std::string&gt; inheritance;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    inheritance.emplace_back(<span class="stringliteral">&quot;TANGO_BASE_CLASS&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    inher_datum &lt;&lt; inheritance;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    data.push_back(inher_datum);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">//  Call database and and values</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    get_db_class()-&gt;put_property(data);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
 </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#aca2715d538b01dff4baf09c5d6c8389f">  211</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#aca2715d538b01dff4baf09c5d6c8389f">AdapterDeviceClass::pipe_factory</a>() {}</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0">  215</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0">AdapterDeviceClass::command_factory</a>() {}</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keywordtype">void</span> AdapterDeviceClass::create_static_attribute_list(std::vector&lt;Tango::Attr*&gt;&amp; att_list) {</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* attr : att_list) {</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>      <span class="keyword">auto</span> att_name = attr-&gt;get_name();</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      std::transform(att_name.begin(), att_name.end(), att_name.begin(), ::tolower);</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      defaultAttList.push_back(att_name);</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; defaultAttList.size() &lt;&lt; <span class="stringliteral">&quot; attributes in default list&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">void</span> AdapterDeviceClass::erase_dynamic_attributes(std::vector&lt;Tango::Attr*&gt;&amp; att_list) {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* dev_impl : device_list) {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      <span class="keyword">auto</span>* <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a> = <span class="keyword">dynamic_cast&lt;</span>AdapterDeviceImpl*<span class="keyword">&gt;</span>(dev_impl);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      assert(dev != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      std::vector&lt;Tango::Attribute*&gt;&amp; dev_att_list = <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;get_device_attr()-&gt;get_attribute_list();</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      std::vector&lt;Tango::Attribute*&gt;::iterator ite_att;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      <span class="keywordflow">for</span>(ite_att = dev_att_list.begin(); ite_att != dev_att_list.end(); ++ite_att) {</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        std::string att_name((*ite_att)-&gt;get_name_lower());</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keywordflow">if</span>((att_name == <span class="stringliteral">&quot;state&quot;</span>) || (att_name == <span class="stringliteral">&quot;status&quot;</span>)) {</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        }</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keyword">auto</span> ite_str = find(defaultAttList.begin(), defaultAttList.end(), att_name);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordflow">if</span>(ite_str == defaultAttList.end()) {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>          <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; att_name &lt;&lt; <span class="stringliteral">&quot; is a UNWANTED dynamic attribute for device &quot;</span> &lt;&lt; <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;name() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>          Tango::Attribute&amp; att = <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;get_device_attr()-&gt;get_attr_by_name(att_name.c_str());</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>          <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;remove_attribute(att_list[att.get_attr_idx()], <span class="keyword">true</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>          --ite_att;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>} <span class="comment">// namespace TangoAdapter</span></div>
-<div class="ttc" id="a_adapter_device_class_8cpp_html_abb5b38ee5738f0183f2597da2578d0f9"><div class="ttname"><a href="_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9">_create_AdapterDeviceImpl_class</a></div><div class="ttdeci">Tango::DeviceClass * _create_AdapterDeviceImpl_class(const char *name)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00020">AdapterDeviceClass.cpp:20</a></div></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">void</span> AdapterDeviceClass::device_factory(<span class="keyword">const</span> Tango::DevVarStringArray* devlist_ptr) {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="comment">//  Add your own code</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">auto</span>&amp; adapter = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::getInstance</a>();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">auto</span>&amp; mapper = adapter.getMapper();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">auto</span> deviceClass = mapper.getClass(get_name());</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="comment">//  Create devices and add it into the device list</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; devlist_ptr-&gt;length(); i++) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      <span class="keyword">const</span> <span class="keyword">auto</span>* deviceName = (*devlist_ptr)[i].in();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>      <span class="keywordflow">if</span>(!deviceClass-&gt;hasDevice(deviceName) &amp;&amp;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>          !deviceClass-&gt;hasDevice(<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data())) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Device &quot;</span> &lt;&lt; deviceName &lt;&lt; <span class="stringliteral">&quot;not known in attribute mapper. Skipping.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      <span class="keyword">auto</span> device = std::make_unique&lt;AdapterDeviceImpl&gt;(<span class="keyword">this</span>, deviceName);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      device-&gt;init_device();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      <span class="keywordflow">if</span>(!deviceClass-&gt;hasDevice(deviceName) &amp;&amp;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>          !deviceClass-&gt;hasDevice(<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data())) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="comment">// See if we have the &quot;generic&quot; device&quot;</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        DEV_ERROR_STREAM(device) &lt;&lt; <span class="stringliteral">&quot;Device &quot;</span> &lt;&lt; deviceName &lt;&lt; <span class="stringliteral">&quot;not known in attribute mapper. Expect issues&quot;</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                                 &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        device-&gt;set_state(Tango::FAULT);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        device-&gt;set_status(<span class="stringliteral">&quot;Device was not found in mapping file, no variables could be mapped.&quot;</span>);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="comment">// Move the generic device we have to this device.</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">if</span>(!deviceClass-&gt;hasDevice(deviceName)) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          <span class="keyword">auto</span> genericDevice = deviceClass-&gt;devicesInDeviceClass[<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data()];</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          deviceClass-&gt;devicesInDeviceClass.erase(<a class="code hl_variable" href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a>.data());</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          genericDevice-&gt;name = deviceName;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          deviceClass-&gt;devicesInDeviceClass[deviceName] = genericDevice;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        device-&gt;attachToClassAttributes(deviceClass);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      <span class="comment">// Check before if database used.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      <span class="keywordflow">if</span>(Tango::Util::_UseDb &amp;&amp; !Tango::Util::_FileDb) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        export_device(device.get());</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        export_device(device.get(), deviceName);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="comment">// Hand over device pointer to Tango</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      device_list.push_back(device.release());</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="comment">//  Manage dynamic attributes if any</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    erase_dynamic_attributes(get_class_attr()-&gt;get_attr_list());</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* dev : device_list) {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <span class="comment">// Only set the device state ok ON if it is still in the default constructed</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="comment">// value</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      <span class="keywordflow">if</span>(<a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;get_state() == Tango::UNKNOWN) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;set_state(Tango::ON);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;set_status(<span class="stringliteral">&quot;Application is running.&quot;</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef">  196</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef">AdapterDeviceClass::attribute_factory</a>([[maybe_unused]] std::vector&lt;Tango::Attr*&gt;&amp; att_list) {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keyword">auto</span>&amp; adapter = <a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::getInstance</a>();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">auto</span>&amp; mapper = adapter.getMapper();</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keyword">auto</span> deviceClass = mapper.getClass(get_name());</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; attDesc : deviceClass-&gt;attributes) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      att_list.push_back(attDesc.toTangoAttribute().release());</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="comment">//  Create a list of static attributes</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    create_static_attribute_list(get_class_attr()-&gt;get_attr_list());</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  }</div>
+</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#aca2715d538b01dff4baf09c5d6c8389f">  212</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#aca2715d538b01dff4baf09c5d6c8389f">AdapterDeviceClass::pipe_factory</a>() {}</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0">  216</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0">AdapterDeviceClass::command_factory</a>() {}</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordtype">void</span> AdapterDeviceClass::create_static_attribute_list(std::vector&lt;Tango::Attr*&gt;&amp; att_list) {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* attr : att_list) {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      <span class="keyword">auto</span> att_name = attr-&gt;get_name();</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      std::transform(att_name.begin(), att_name.end(), att_name.begin(), ::tolower);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      defaultAttList.push_back(att_name);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; defaultAttList.size() &lt;&lt; <span class="stringliteral">&quot; attributes in default list&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">void</span> AdapterDeviceClass::erase_dynamic_attributes(std::vector&lt;Tango::Attr*&gt;&amp; att_list) {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* dev_impl : device_list) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      <span class="keyword">auto</span>* <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a> = <span class="keyword">dynamic_cast&lt;</span>AdapterDeviceImpl*<span class="keyword">&gt;</span>(dev_impl);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      assert(dev != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      std::vector&lt;Tango::Attribute*&gt;&amp; dev_att_list = <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;get_device_attr()-&gt;get_attribute_list();</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      std::vector&lt;Tango::Attribute*&gt;::iterator ite_att;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      <span class="keywordflow">for</span>(ite_att = dev_att_list.begin(); ite_att != dev_att_list.end(); ++ite_att) {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        std::string att_name((*ite_att)-&gt;get_name_lower());</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">if</span>((att_name == <span class="stringliteral">&quot;state&quot;</span>) || (att_name == <span class="stringliteral">&quot;status&quot;</span>)) {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keyword">auto</span> ite_str = find(defaultAttList.begin(), defaultAttList.end(), att_name);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">if</span>(ite_str == defaultAttList.end()) {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>          <a class="code hl_define" href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a> &lt;&lt; att_name &lt;&lt; <span class="stringliteral">&quot; is a UNWANTED dynamic attribute for device &quot;</span> &lt;&lt; <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;name() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>          Tango::Attribute&amp; att = <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;get_device_attr()-&gt;get_attr_by_name(att_name.c_str());</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>          <a class="code hl_variable" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">dev</a>-&gt;remove_attribute(att_list[att.get_attr_idx()], <span class="keyword">true</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>          --ite_att;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>      }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  }</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>} <span class="comment">// namespace TangoAdapter</span></div>
+<div class="ttc" id="a_adapter_device_class_8cpp_html_abb5b38ee5738f0183f2597da2578d0f9"><div class="ttname"><a href="_adapter_device_class_8cpp.html#abb5b38ee5738f0183f2597da2578d0f9">_create_AdapterDeviceImpl_class</a></div><div class="ttdeci">Tango::DeviceClass * _create_AdapterDeviceImpl_class(const char *name)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00021">AdapterDeviceClass.cpp:21</a></div></div>
 <div class="ttc" id="a_adapter_device_class_8h_html"><div class="ttname"><a href="_adapter_device_class_8h.html">AdapterDeviceClass.h</a></div></div>
 <div class="ttc" id="a_adapter_device_impl_8h_html"><div class="ttname"><a href="_adapter_device_impl_8h.html">AdapterDeviceImpl.h</a></div></div>
 <div class="ttc" id="a_tango_adapter_8h_html"><div class="ttname"><a href="_tango_adapter_8h.html">TangoAdapter.h</a></div></div>
 <div class="ttc" id="a_tango_log_compat_8h_html"><div class="ttname"><a href="_tango_log_compat_8h.html">TangoLogCompat.h</a></div></div>
 <div class="ttc" id="a_tango_log_compat_8h_html_a062aa5f90335f324ed72e4c68678a0ad"><div class="ttname"><a href="_tango_log_compat_8h.html#a062aa5f90335f324ed72e4c68678a0ad">TANGO_LOG_DEBUG</a></div><div class="ttdeci">#define TANGO_LOG_DEBUG</div><div class="ttdef"><b>Definition</b> <a href="_tango_log_compat_8h_source.html#l00010">TangoLogCompat.h:10</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a00931bbdbb0219231546247884e1f953"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953">TangoAdapter::AdapterDeviceClass::AdapterDeviceClass</a></div><div class="ttdeci">AdapterDeviceClass(std::string &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00047">AdapterDeviceClass.cpp:47</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a07f539ad5ee644059bcefb2683f2b3ef"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef">TangoAdapter::AdapterDeviceClass::attribute_factory</a></div><div class="ttdeci">void attribute_factory(std::vector&lt; Tango::Attr * &gt; &amp;) override</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00195">AdapterDeviceClass.cpp:195</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a00931bbdbb0219231546247884e1f953"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a00931bbdbb0219231546247884e1f953">TangoAdapter::AdapterDeviceClass::AdapterDeviceClass</a></div><div class="ttdeci">AdapterDeviceClass(std::string &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00048">AdapterDeviceClass.cpp:48</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a07f539ad5ee644059bcefb2683f2b3ef"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a07f539ad5ee644059bcefb2683f2b3ef">TangoAdapter::AdapterDeviceClass::attribute_factory</a></div><div class="ttdeci">void attribute_factory(std::vector&lt; Tango::Attr * &gt; &amp;) override</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00196">AdapterDeviceClass.cpp:196</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a10c84174fe53ffde50b6947f3fa5a533"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a10c84174fe53ffde50b6947f3fa5a533">TangoAdapter::AdapterDeviceClass::dev_def_prop</a></div><div class="ttdeci">Tango::DbData dev_def_prop</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8h_source.html#l00020">AdapterDeviceClass.h:20</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a138dd8c2a1bc832cfb65bc9d75b5d9a0"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0">TangoAdapter::AdapterDeviceClass::command_factory</a></div><div class="ttdeci">void command_factory() override</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00215">AdapterDeviceClass.cpp:215</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a33f7881b47541b2b07b7fa58bbdd704a"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">TangoAdapter::AdapterDeviceClass::getClassName</a></div><div class="ttdeci">static std::string getClassName()</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00030">AdapterDeviceClass.cpp:30</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a138dd8c2a1bc832cfb65bc9d75b5d9a0"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a138dd8c2a1bc832cfb65bc9d75b5d9a0">TangoAdapter::AdapterDeviceClass::command_factory</a></div><div class="ttdeci">void command_factory() override</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00216">AdapterDeviceClass.cpp:216</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a33f7881b47541b2b07b7fa58bbdd704a"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a33f7881b47541b2b07b7fa58bbdd704a">TangoAdapter::AdapterDeviceClass::getClassName</a></div><div class="ttdeci">static std::string getClassName()</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00031">AdapterDeviceClass.cpp:31</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a712ec8d1af360d0a5a913dc5200e7382"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a712ec8d1af360d0a5a913dc5200e7382">TangoAdapter::AdapterDeviceClass::get_class_property</a></div><div class="ttdeci">void get_class_property()</div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a83299d49efb7606eeb342c4cc7c892bd"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a83299d49efb7606eeb342c4cc7c892bd">TangoAdapter::AdapterDeviceClass::get_default_class_property</a></div><div class="ttdeci">Tango::DbDatum get_default_class_property(std::string &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00081">AdapterDeviceClass.cpp:81</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a83299d49efb7606eeb342c4cc7c892bd"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a83299d49efb7606eeb342c4cc7c892bd">TangoAdapter::AdapterDeviceClass::get_default_class_property</a></div><div class="ttdeci">Tango::DbDatum get_default_class_property(std::string &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00082">AdapterDeviceClass.cpp:82</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_a8a4f6ca3adddf2641df337f7956a7ba5"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#a8a4f6ca3adddf2641df337f7956a7ba5">TangoAdapter::AdapterDeviceClass::cl_def_prop</a></div><div class="ttdeci">Tango::DbData cl_def_prop</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8h_source.html#l00019">AdapterDeviceClass.h:19</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_aaec4b79acc22c89a60cfca0133638b61"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#aaec4b79acc22c89a60cfca0133638b61">TangoAdapter::AdapterDeviceClass::cl_prop</a></div><div class="ttdeci">Tango::DbData cl_prop</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8h_source.html#l00018">AdapterDeviceClass.h:18</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_aca2715d538b01dff4baf09c5d6c8389f"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#aca2715d538b01dff4baf09c5d6c8389f">TangoAdapter::AdapterDeviceClass::pipe_factory</a></div><div class="ttdeci">void pipe_factory() override</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00211">AdapterDeviceClass.cpp:211</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_ad07066bf41725b9db688049906dd753c"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#ad07066bf41725b9db688049906dd753c">TangoAdapter::AdapterDeviceClass::get_default_device_property</a></div><div class="ttdeci">Tango::DbDatum get_default_device_property(std::string &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00075">AdapterDeviceClass.cpp:75</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_ae128017bb097b87b5dd057ce6cefce4f"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">TangoAdapter::AdapterDeviceClass::set_default_property</a></div><div class="ttdeci">void set_default_property()</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00087">AdapterDeviceClass.cpp:87</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_ae427ac1eabfff96110126ecc441209d8"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">TangoAdapter::AdapterDeviceClass::write_class_property</a></div><div class="ttdeci">void write_class_property()</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00091">AdapterDeviceClass.cpp:91</a></div></div>
-<div class="ttc" id="aclass_tango_adapter_1_1_attribute_mapper_html_ab3f512a8921f3b953931d1f2ab7e12ae"><div class="ttname"><a href="class_tango_adapter_1_1_attribute_mapper.html#ab3f512a8921f3b953931d1f2ab7e12ae">TangoAdapter::AttributeMapper::getClass</a></div><div class="ttdeci">std::shared_ptr&lt; DeviceClass &gt; getClass(std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="_attribute_mapper_8h_source.html#l00060">AttributeMapper.h:60</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_aca2715d538b01dff4baf09c5d6c8389f"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#aca2715d538b01dff4baf09c5d6c8389f">TangoAdapter::AdapterDeviceClass::pipe_factory</a></div><div class="ttdeci">void pipe_factory() override</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00212">AdapterDeviceClass.cpp:212</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_ad07066bf41725b9db688049906dd753c"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#ad07066bf41725b9db688049906dd753c">TangoAdapter::AdapterDeviceClass::get_default_device_property</a></div><div class="ttdeci">Tango::DbDatum get_default_device_property(std::string &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00076">AdapterDeviceClass.cpp:76</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_ae128017bb097b87b5dd057ce6cefce4f"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#ae128017bb097b87b5dd057ce6cefce4f">TangoAdapter::AdapterDeviceClass::set_default_property</a></div><div class="ttdeci">void set_default_property()</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00088">AdapterDeviceClass.cpp:88</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_adapter_device_class_html_ae427ac1eabfff96110126ecc441209d8"><div class="ttname"><a href="class_tango_adapter_1_1_adapter_device_class.html#ae427ac1eabfff96110126ecc441209d8">TangoAdapter::AdapterDeviceClass::write_class_property</a></div><div class="ttdeci">void write_class_property()</div><div class="ttdef"><b>Definition</b> <a href="_adapter_device_class_8cpp_source.html#l00092">AdapterDeviceClass.cpp:92</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_attribute_mapper_html_ab3f512a8921f3b953931d1f2ab7e12ae"><div class="ttname"><a href="class_tango_adapter_1_1_attribute_mapper.html#ab3f512a8921f3b953931d1f2ab7e12ae">TangoAdapter::AttributeMapper::getClass</a></div><div class="ttdeci">std::shared_ptr&lt; DeviceClass &gt; getClass(std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="_attribute_mapper_8h_source.html#l00061">AttributeMapper.h:61</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_tango_adapter_html_a95884a71e24020f67c2b17722e89ba82"><div class="ttname"><a href="class_tango_adapter_1_1_tango_adapter.html#a95884a71e24020f67c2b17722e89ba82">TangoAdapter::TangoAdapter::getMapper</a></div><div class="ttdeci">AttributeMapper &amp; getMapper()</div><div class="ttdef"><b>Definition</b> <a href="_tango_adapter_8h_source.html#l00032">TangoAdapter.h:32</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_tango_adapter_html_aa975b693fe8aacaabbede9ce1fae040c"><div class="ttname"><a href="class_tango_adapter_1_1_tango_adapter.html#aa975b693fe8aacaabbede9ce1fae040c">TangoAdapter::TangoAdapter::PLAIN_IMPORT_DUMMY_DEVICE</a></div><div class="ttdeci">static constexpr std::string_view PLAIN_IMPORT_DUMMY_DEVICE</div><div class="ttdef"><b>Definition</b> <a href="_tango_adapter_8h_source.html#l00013">TangoAdapter.h:13</a></div></div>
 <div class="ttc" id="aclass_tango_adapter_1_1_tango_adapter_html_ac1b926af7b5481907f607380c22e3d27"><div class="ttname"><a href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::TangoAdapter::getInstance</a></div><div class="ttdeci">static TangoAdapter &amp; getInstance()</div><div class="ttdef"><b>Definition</b> <a href="_tango_adapter_8h_source.html#l00014">TangoAdapter.h:14</a></div></div>

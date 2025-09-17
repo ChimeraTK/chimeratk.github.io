@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter<span id="projectnumber">&#160;02.00.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-TangoAdapter<span id="projectnumber">&#160;02.00.01</span>
    </div>
   </td>
  </tr>
@@ -104,69 +104,70 @@ $(document).ready(function(){initNavTree('test_tango_server_filter_attributes_8c
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    4</a></span><span class="preprocessor">#define BOOST_TEST_MODULE serverTestFilterAttributes</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_tango_test_server_8h.html">TangoTestServer.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_test_fixture_config.html">TestFixtureConfig</a> {</div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_test_fixture_config.html#a3248330886274637854ed90430b0f7ec">   12</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_test_fixture_config.html#a3248330886274637854ed90430b0f7ec">apply</a>(<a class="code hl_struct" href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a>&amp; f) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    f.<a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab7f1af9ca5ce55bdcc1ef71fdd1df4a7">setManualLoopControl</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    f.<a class="code hl_variable" href="struct_tango_test_fixture_impl.html#afa7ef0e467d13bb5686783d456073e12">theServer</a>.<a class="code hl_function" href="struct_threaded_tango_server.html#a1d2f5f551ea8854d227243f01cc95356">setOfflineDatabase</a>(<span class="stringliteral">&quot;testFilterAttributes&quot;</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_test_fixture_config.html">TestFixtureConfig</a> {</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_test_fixture_config.html#a3248330886274637854ed90430b0f7ec">   13</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_test_fixture_config.html#a3248330886274637854ed90430b0f7ec">apply</a>(<a class="code hl_struct" href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a>&amp; f) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    f.<a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab7f1af9ca5ce55bdcc1ef71fdd1df4a7">setManualLoopControl</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    f.<a class="code hl_variable" href="struct_tango_test_fixture_impl.html#afa7ef0e467d13bb5686783d456073e12">theServer</a>.<a class="code hl_function" href="struct_threaded_tango_server.html#a1d2f5f551ea8854d227243f01cc95356">setOfflineDatabase</a>(<span class="stringliteral">&quot;testFilterAttributes&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  }</div>
 </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#a59d75e127358e4a9006ed6768c5a80f7">   18</a></span><span class="keyword">using </span><a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a> = <a class="code hl_struct" href="struct_tango_test_fixture.html">TangoTestFixture&lt;TestFixtureConfig&gt;</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70">   19</a></span><a class="code hl_function" href="test_tango_server_filter_attributes_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a>(<a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a>);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#a028f67065f3d5d1f751f21082463d288">   23</a></span><a class="code hl_function" href="test_tango_server_filter_attributes_8cpp.html#a028f67065f3d5d1f751f21082463d288">BOOST_AUTO_TEST_CASE</a>(testPropertyFiltering) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">auto</span> [tf, app, proxy] = <a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  std::unique_ptr&lt;std::vector&lt;std::string&gt;&gt; attributes(proxy.get_attribute_list());</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="comment">// We expect the 4 mapped properties and the built-in &quot;State&quot; and &quot;Status&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  BOOST_TEST(attributes-&gt;size() == 6);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  BOOST_CHECK(std::find_if(attributes-&gt;begin(), attributes-&gt;end(), [](<span class="keyword">auto</span>&amp; attr) { return attr == <span class="stringliteral">&quot;PlainRename&quot;</span>; }) !=</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      attributes-&gt;end());</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">auto</span> info = proxy.get_attribute_config(<span class="stringliteral">&quot;PlainRename&quot;</span>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  BOOST_TEST(info.unit == <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="comment">// This is the default that Tango generates internally</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  BOOST_TEST(info.description == <span class="stringliteral">&quot;No description&quot;</span>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  tf.write(std::string(<span class="stringliteral">&quot;INT_TO_DEVICE_SCALAR&quot;</span>), 42);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  app.runMainLoopOnce();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  BOOST_CHECK(tf.checkWithTimeout(std::string(<span class="stringliteral">&quot;PlainRename&quot;</span>), Tango::DevLong(42)));</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  BOOST_CHECK(std::find_if(attributes-&gt;begin(), attributes-&gt;end(),</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                  [](<span class="keyword">auto</span>&amp; attr) { return attr == <span class="stringliteral">&quot;ChangeAttributes&quot;</span>; }) != attributes-&gt;end());</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  info = proxy.get_attribute_config(<span class="stringliteral">&quot;ChangeAttributes&quot;</span>);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  BOOST_TEST(info.unit == <span class="stringliteral">&quot;mA&quot;</span>);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  BOOST_TEST(info.description == <span class="stringliteral">&quot;ChangedDescription&quot;</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  tf.write(std::string(<span class="stringliteral">&quot;SHORT_TO_DEVICE_SCALAR&quot;</span>), Tango::DevShort(23));</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  app.runMainLoopOnce();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  BOOST_CHECK(tf.checkWithTimeout(std::string(<span class="stringliteral">&quot;ChangeAttributes&quot;</span>), Tango::DevShort(23)));</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#a59d75e127358e4a9006ed6768c5a80f7">   19</a></span><span class="keyword">using </span><a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a> = <a class="code hl_struct" href="struct_tango_test_fixture.html">TangoTestFixture&lt;TestFixtureConfig&gt;</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70">   20</a></span><a class="code hl_function" href="test_tango_server_filter_attributes_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a>(<a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="test_tango_server_filter_attributes_8cpp.html#a028f67065f3d5d1f751f21082463d288">   24</a></span><a class="code hl_function" href="test_tango_server_filter_attributes_8cpp.html#a028f67065f3d5d1f751f21082463d288">BOOST_AUTO_TEST_CASE</a>(testPropertyFiltering) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">auto</span> [tf, app, proxy] = <a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::unique_ptr&lt;std::vector&lt;std::string&gt;&gt; attributes(proxy.get_attribute_list());</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="comment">// We expect the 4 mapped properties and the built-in &quot;State&quot; and &quot;Status&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  BOOST_TEST(attributes-&gt;size() == 6);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  BOOST_CHECK(std::find_if(attributes-&gt;begin(), attributes-&gt;end(), [](<span class="keyword">auto</span>&amp; attr) { return attr == <span class="stringliteral">&quot;PlainRename&quot;</span>; }) !=</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      attributes-&gt;end());</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">auto</span> info = proxy.get_attribute_config(<span class="stringliteral">&quot;PlainRename&quot;</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  BOOST_TEST(info.unit == <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// This is the default that Tango generates internally</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  BOOST_TEST(info.description == <span class="stringliteral">&quot;No description&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  tf.write(std::string(<span class="stringliteral">&quot;INT_TO_DEVICE_SCALAR&quot;</span>), 42);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  app.runMainLoopOnce();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  BOOST_CHECK(tf.checkWithTimeout(std::string(<span class="stringliteral">&quot;PlainRename&quot;</span>), Tango::DevLong(42)));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  BOOST_CHECK(std::find_if(attributes-&gt;begin(), attributes-&gt;end(),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                  [](<span class="keyword">auto</span>&amp; attr) { return attr == <span class="stringliteral">&quot;ChangeAttributes&quot;</span>; }) != attributes-&gt;end());</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  info = proxy.get_attribute_config(<span class="stringliteral">&quot;ChangeAttributes&quot;</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  BOOST_TEST(info.unit == <span class="stringliteral">&quot;mA&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  BOOST_TEST(info.description == <span class="stringliteral">&quot;ChangedDescription&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  tf.write(std::string(<span class="stringliteral">&quot;SHORT_TO_DEVICE_SCALAR&quot;</span>), Tango::DevShort(23));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  app.runMainLoopOnce();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  BOOST_CHECK(tf.checkWithTimeout(std::string(<span class="stringliteral">&quot;ChangeAttributes&quot;</span>), Tango::DevShort(23)));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 </div>
 <div class="ttc" id="a_tango_test_server_8h_html"><div class="ttname"><a href="_tango_test_server_8h.html">TangoTestServer.h</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_html"><div class="ttname"><a href="struct_tango_test_fixture.html">TangoTestFixture</a></div><div class="ttdoc">Test fixture to use in all TangoAdapter tests.</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00317">TangoTestServer.h:317</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_impl_html"><div class="ttname"><a href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a></div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00146">TangoTestServer.h:146</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_impl_html_ab7f1af9ca5ce55bdcc1ef71fdd1df4a7"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab7f1af9ca5ce55bdcc1ef71fdd1df4a7">TangoTestFixtureImpl::setManualLoopControl</a></div><div class="ttdeci">void setManualLoopControl(bool manualControl)</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8cc_source.html#l00257">TangoTestServer.cc:257</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_impl_html_ab90860baae20e0c7ea4515dfc1ecc7ad"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a></div><div class="ttdeci">static std::tuple&lt; TangoTestFixtureImpl &amp;, ExtendedReferenceTestApplication &amp;, Tango::DeviceProxy &amp; &gt; getContents()</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00176">TangoTestServer.h:176</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_impl_html_afa7ef0e467d13bb5686783d456073e12"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#afa7ef0e467d13bb5686783d456073e12">TangoTestFixtureImpl::theServer</a></div><div class="ttdeci">ThreadedTangoServer theServer</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00171">TangoTestServer.h:171</a></div></div>
-<div class="ttc" id="astruct_test_fixture_config_html"><div class="ttname"><a href="struct_test_fixture_config.html">TestFixtureConfig</a></div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00015">testTangoAttributeMapper.cc:15</a></div></div>
-<div class="ttc" id="astruct_test_fixture_config_html_a3248330886274637854ed90430b0f7ec"><div class="ttname"><a href="struct_test_fixture_config.html#a3248330886274637854ed90430b0f7ec">TestFixtureConfig::apply</a></div><div class="ttdeci">static void apply(TangoTestFixtureImpl &amp;f)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_filter_attributes_8cpp_source.html#l00012">testTangoServerFilterAttributes.cpp:12</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_html"><div class="ttname"><a href="struct_tango_test_fixture.html">TangoTestFixture</a></div><div class="ttdoc">Test fixture to use in all TangoAdapter tests.</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00318">TangoTestServer.h:318</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_impl_html"><div class="ttname"><a href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a></div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00147">TangoTestServer.h:147</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_impl_html_ab7f1af9ca5ce55bdcc1ef71fdd1df4a7"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab7f1af9ca5ce55bdcc1ef71fdd1df4a7">TangoTestFixtureImpl::setManualLoopControl</a></div><div class="ttdeci">void setManualLoopControl(bool manualControl)</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8cc_source.html#l00254">TangoTestServer.cc:254</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_impl_html_ab90860baae20e0c7ea4515dfc1ecc7ad"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a></div><div class="ttdeci">static std::tuple&lt; TangoTestFixtureImpl &amp;, ExtendedReferenceTestApplication &amp;, Tango::DeviceProxy &amp; &gt; getContents()</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00177">TangoTestServer.h:177</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_impl_html_afa7ef0e467d13bb5686783d456073e12"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#afa7ef0e467d13bb5686783d456073e12">TangoTestFixtureImpl::theServer</a></div><div class="ttdeci">ThreadedTangoServer theServer</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00172">TangoTestServer.h:172</a></div></div>
+<div class="ttc" id="astruct_test_fixture_config_html"><div class="ttname"><a href="struct_test_fixture_config.html">TestFixtureConfig</a></div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00016">testTangoAttributeMapper.cc:16</a></div></div>
+<div class="ttc" id="astruct_test_fixture_config_html_a3248330886274637854ed90430b0f7ec"><div class="ttname"><a href="struct_test_fixture_config.html#a3248330886274637854ed90430b0f7ec">TestFixtureConfig::apply</a></div><div class="ttdeci">static void apply(TangoTestFixtureImpl &amp;f)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_filter_attributes_8cpp_source.html#l00013">testTangoServerFilterAttributes.cpp:13</a></div></div>
 <div class="ttc" id="astruct_threaded_tango_server_html_a1d2f5f551ea8854d227243f01cc95356"><div class="ttname"><a href="struct_threaded_tango_server.html#a1d2f5f551ea8854d227243f01cc95356">ThreadedTangoServer::setOfflineDatabase</a></div><div class="ttdeci">ThreadedTangoServer &amp; setOfflineDatabase(const std::string &amp;basePath)</div><div class="ttdoc">Configure the Tango server to run against an offline database.</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8cc_source.html#l00142">TangoTestServer.cc:142</a></div></div>
-<div class="ttc" id="atest_tango_server_filter_attributes_8cpp_html_a028f67065f3d5d1f751f21082463d288"><div class="ttname"><a href="test_tango_server_filter_attributes_8cpp.html#a028f67065f3d5d1f751f21082463d288">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testPropertyFiltering)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_filter_attributes_8cpp_source.html#l00023">testTangoServerFilterAttributes.cpp:23</a></div></div>
+<div class="ttc" id="atest_tango_server_filter_attributes_8cpp_html_a028f67065f3d5d1f751f21082463d288"><div class="ttname"><a href="test_tango_server_filter_attributes_8cpp.html#a028f67065f3d5d1f751f21082463d288">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testPropertyFiltering)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_server_filter_attributes_8cpp_source.html#l00024">testTangoServerFilterAttributes.cpp:24</a></div></div>
 <div class="ttc" id="atest_tango_server_filter_attributes_8cpp_html_adcb547bcf6c175d4c3ad20688da85f70"><div class="ttname"><a href="test_tango_server_filter_attributes_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a></div><div class="ttdeci">BOOST_GLOBAL_FIXTURE(Fixture_t)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
