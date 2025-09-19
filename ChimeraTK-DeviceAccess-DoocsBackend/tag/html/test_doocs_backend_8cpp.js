@@ -8,7 +8,7 @@ var test_doocs_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a79a1c66d9029df4f13787742cbef80f7", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a56f45be5994d05b0a0452a1bb09c8da4", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#aa804ba0cd6cdcf2b4ec512fd13ce0f85", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a60fb773e9c4744c2bd0b02825dd8a052", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a16564f8ac832e20e1a0be4e593671b0e", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a812d46eda0e4c06432ddd46bf73e4a40", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a131a40ca808351e4d1fd3d976894a9c3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a5d56c66d6ab38ec480473578aa84666c", null ],
@@ -30,5 +30,6 @@ var test_doocs_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#acd18d6d870bfedc07825bc0238fa2ddf", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#aa2b56760321300ad0fb6c2670b833ebe", null ],
     [ "BOOST_GLOBAL_FIXTURE", "test_doocs_backend_8cpp.html#a28df7f71d0da5f3d08e45822674622e5", null ],
-    [ "createDummyXml", "test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11", null ]
+    [ "createDummyXml", "test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11", null ],
+    [ "deleteFileIfExisting", "test_doocs_backend_8cpp.html#a5fdef485f0e1dd563a80b11472c23326", null ]
 ];

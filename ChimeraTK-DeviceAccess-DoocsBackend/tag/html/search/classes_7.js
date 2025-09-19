@@ -9,7 +9,6 @@ var searchData=
   ['scalardefaults_3c_20regsomeifff_5ff3_20_3e_6',['ScalarDefaults&lt; RegSomeIfff_F3 &gt;',['../struct_scalar_defaults.html',1,'']]],
   ['scalardefaults_3c_20regsomeifff_5fi_20_3e_7',['ScalarDefaults&lt; RegSomeIfff_I &gt;',['../struct_scalar_defaults.html',1,'']]],
   ['scalardefaults_3c_20regsomeint_20_3e_8',['ScalarDefaults&lt; RegSomeInt &gt;',['../struct_scalar_defaults.html',1,'']]],
-  ['scalardefaults_3c_20regsomestatus_20_3e_9',['ScalarDefaults&lt; RegSomeStatus &gt;',['../struct_scalar_defaults.html',1,'']]],
-  ['scalardefaults_3c_20regsomestring_20_3e_10',['ScalarDefaults&lt; RegSomeString &gt;',['../struct_scalar_defaults.html',1,'']]],
-  ['scalardefaults_3c_20regsomezmqint_20_3e_11',['ScalarDefaults&lt; RegSomeZmqInt &gt;',['../struct_scalar_defaults.html',1,'']]]
+  ['scalardefaults_3c_20regsomestring_20_3e_9',['ScalarDefaults&lt; RegSomeString &gt;',['../struct_scalar_defaults.html',1,'']]],
+  ['scalardefaults_3c_20regsomezmqint_20_3e_10',['ScalarDefaults&lt; RegSomeZmqInt &gt;',['../struct_scalar_defaults.html',1,'']]]
 ];

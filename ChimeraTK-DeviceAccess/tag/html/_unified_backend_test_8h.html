@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.21.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.22.00</span>
    </div>
   </td>
  </tr>
@@ -187,9 +187,13 @@ Macros</h2></td></tr>
 <tr class="separator:a282b845dd77195597ebb0903d0332344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17030ac7f00713a62e05ab6c35cb710e" id="r_a17030ac7f00713a62e05ab6c35cb710e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unified_backend_test_8h.html#a17030ac7f00713a62e05ab6c35cb710e">CHECK_TIMEOUT</a>(condition,  maxMilliseconds)</td></tr>
 <tr class="separator:a17030ac7f00713a62e05ab6c35cb710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7450a09cbc33bcb6d4249327271438c" id="r_ab7450a09cbc33bcb6d4249327271438c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unified_backend_test_8h.html#ab7450a09cbc33bcb6d4249327271438c">STORE_APPLICATION_DATA_BUFFER</a>(UserType,  accessor)</td></tr>
+<tr class="memdesc:ab7450a09cbc33bcb6d4249327271438c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macros for test_B_4_2_4 and test_B_4_2_5.  <br /></td></tr>
+<tr class="separator:ab7450a09cbc33bcb6d4249327271438c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d5556693e6504b9c6114acc1823622" id="r_a51d5556693e6504b9c6114acc1823622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unified_backend_test_8h.html#a51d5556693e6504b9c6114acc1823622">ALTER_AND_STORE_APPLICATION_BUFFER</a>(UserType,  accessor)</td></tr>
-<tr class="memdesc:a51d5556693e6504b9c6114acc1823622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macros for test_B_4_2_4.  <br /></td></tr>
 <tr class="separator:a51d5556693e6504b9c6114acc1823622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bd291e6dc16def38a219f72cc185c6" id="r_aa0bd291e6dc16def38a219f72cc185c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unified_backend_test_8h.html#aa0bd291e6dc16def38a219f72cc185c6">CHECK_APPLICATION_DATA_BUFFER</a>(UserType,  accessor)&#160;&#160;&#160;<a class="el" href="_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae">CHECK_EQUALITY</a>(accessor, STORE_APPLICATION_BUFFER_data)</td></tr>
+<tr class="separator:aa0bd291e6dc16def38a219f72cc185c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a048d20ccdf8bf904afec713ede5b2cc2" id="r_a048d20ccdf8bf904afec713ede5b2cc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2">CHECK_APPLICATION_BUFFER</a>(UserType,  accessor)</td></tr>
 <tr class="separator:a048d20ccdf8bf904afec713ede5b2cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -247,21 +251,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  std::vector&lt;std::vector&lt;UserType&gt;&gt; STORE_APPLICATION_BUFFER_data;                                                    \</div>
-<div class="line">  VersionNumber STORE_APPLICATION_BUFFER_version;                                                                      \</div>
-<div class="line">  DataValidity STORE_APPLICATION_BUFFER_validity;                                                                      \</div>
-<div class="line">  for(<span class="keywordtype">size_t</span> i = 0; i &lt; accessor.getNChannels(); ++i) {                                                                \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; accessor.getNChannels(); ++i) {                                                                \</div>
 <div class="line">    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_arithmetic_v&lt;UserType&gt;)                                                                       \</div>
 <div class="line">      std::iota(accessor[i].begin(), accessor[i].end(), std::numeric_limits&lt;UserType&gt;::min() + 1);                     \</div>
 <div class="line">    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;std::string, UserType&gt;) std::fill(accessor[i].begin(), accessor[i].end(), <span class="stringliteral">&quot;FACECAFE&quot;</span>); \</div>
-<div class="line">    STORE_APPLICATION_BUFFER_data.push_back(accessor[i]);                                                              \</div>
 <div class="line">  }                                                                                                                    \</div>
+<div class="line">  STORE_APPLICATION_DATA_BUFFER(UserType, accessor);                                                                   \</div>
+<div class="line">  VersionNumber STORE_APPLICATION_BUFFER_version;                                                                      \</div>
+<div class="line">  DataValidity STORE_APPLICATION_BUFFER_validity;                                                                      \</div>
 <div class="line">  STORE_APPLICATION_BUFFER_version = accessor.getVersionNumber();                                                      \</div>
 <div class="line">  STORE_APPLICATION_BUFFER_validity = accessor.dataValidity()</div>
 </div><!-- fragment -->
-<p>Helper macros for test_B_4_2_4. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01356">1356</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01365">1365</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -290,12 +291,42 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae">CHECK_EQUALITY</a>(accessor, STORE_APPLICATION_BUFFER_data);                                                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_define" href="_unified_backend_test_8h.html#aa0bd291e6dc16def38a219f72cc185c6">CHECK_APPLICATION_DATA_BUFFER</a>(UserType, accessor);                                                                   \</div>
 <div class="line">  BOOST_CHECK(STORE_APPLICATION_BUFFER_version == accessor.getVersionNumber());                                        \</div>
 <div class="line">  BOOST_CHECK(STORE_APPLICATION_BUFFER_validity == accessor.dataValidity())</div>
-<div class="ttc" id="a_unified_backend_test_8h_html_a3b6893388f16002bc124de0fe5fc18ae"><div class="ttname"><a href="_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae">CHECK_EQUALITY</a></div><div class="ttdeci">#define CHECK_EQUALITY(accessor, expectedValue)</div><div class="ttdef"><b>Definition</b> <a href="_unified_backend_test_8h_source.html#l00711">UnifiedBackendTest.h:711</a></div></div>
+<div class="ttc" id="a_unified_backend_test_8h_html_aa0bd291e6dc16def38a219f72cc185c6"><div class="ttname"><a href="_unified_backend_test_8h.html#aa0bd291e6dc16def38a219f72cc185c6">CHECK_APPLICATION_DATA_BUFFER</a></div><div class="ttdeci">#define CHECK_APPLICATION_DATA_BUFFER(UserType, accessor)</div><div class="ttdef"><b>Definition</b> <a href="_unified_backend_test_8h_source.html#l01377">UnifiedBackendTest.h:1377</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01369">1369</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01379">1379</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0bd291e6dc16def38a219f72cc185c6" name="aa0bd291e6dc16def38a219f72cc185c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bd291e6dc16def38a219f72cc185c6">&#9670;&#160;</a></span>CHECK_APPLICATION_DATA_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_APPLICATION_DATA_BUFFER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">UserType, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">accessor&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae">CHECK_EQUALITY</a>(accessor, STORE_APPLICATION_BUFFER_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01377">1377</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +356,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00711">711</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00712">712</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +392,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00784">784</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00785">785</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +422,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00747">747</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00748">748</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +458,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00826">826</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00827">827</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +498,44 @@ Functions</h2></td></tr>
 <div class="line">  }                                                                                                                    \</div>
 <div class="line">  (void)0</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00868">868</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00869">869</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="ab7450a09cbc33bcb6d4249327271438c" name="ab7450a09cbc33bcb6d4249327271438c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7450a09cbc33bcb6d4249327271438c">&#9670;&#160;</a></span>STORE_APPLICATION_DATA_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STORE_APPLICATION_DATA_BUFFER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">UserType, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">accessor&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  std::vector&lt;std::vector&lt;UserType&gt;&gt; STORE_APPLICATION_BUFFER_data;                                                    \</div>
+<div class="line">  for(<span class="keywordtype">size_t</span> i = 0; i &lt; accessor.getNChannels(); ++i) {                                                                \</div>
+<div class="line">    STORE_APPLICATION_BUFFER_data.push_back(accessor[i]);                                                              \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  (void)0</div>
+</div><!-- fragment -->
+<p>Helper macros for test_B_4_2_4 and test_B_4_2_5. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01358">1358</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>

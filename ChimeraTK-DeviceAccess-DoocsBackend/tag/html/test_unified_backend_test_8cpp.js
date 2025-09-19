@@ -10,7 +10,6 @@ var test_unified_backend_test_8cpp =
     [ "RegSomeFloat", "struct_reg_some_float.html", "struct_reg_some_float" ],
     [ "RegSomeDouble", "struct_reg_some_double.html", "struct_reg_some_double" ],
     [ "RegSomeString", "struct_reg_some_string.html", "struct_reg_some_string" ],
-    [ "RegSomeStatus", "struct_reg_some_status.html", "struct_reg_some_status" ],
     [ "RegSomeBit", "struct_reg_some_bit.html", "struct_reg_some_bit" ],
     [ "RegSomeIntArray", "struct_reg_some_int_array.html", "struct_reg_some_int_array" ],
     [ "RegSomeShortArray", "struct_reg_some_short_array.html", "struct_reg_some_short_array" ],

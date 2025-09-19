@@ -17,7 +17,7 @@ var searchData=
   ['rebotsleepsynchroniser_14',['RebotSleepSynchroniser',['../struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html',1,'ChimeraTK']]],
   ['rebottestableclock_15',['RebotTestableClock',['../class_chimera_t_k_1_1_rebot_testable_clock.html',1,'ChimeraTK']]],
   ['rebottestclass_16',['RebotTestClass',['../class_rebot_test_class.html',1,'']]],
-  ['referencecounteduniquelock_17',['ReferenceCountedUniqueLock',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html',1,'ChimeraTK::LNMBackend']]],
+  ['referencecounteduniquelock_17',['ReferenceCountedUniqueLock',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html',1,'ChimeraTK::LNMBackend']]],
   ['reg9bitsinchar_18',['Reg9BitsInChar',['../struct_reg9_bits_in_char.html',1,'']]],
   ['regarrayconstant_19',['RegArrayConstant',['../struct_reg_array_constant.html',1,'']]],
   ['regarrayvariable_20',['RegArrayVariable',['../struct_reg_array_variable.html',1,'']]],

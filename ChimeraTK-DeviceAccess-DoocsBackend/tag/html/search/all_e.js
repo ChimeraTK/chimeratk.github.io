@@ -21,10 +21,9 @@ var searchData=
   ['regsomeroint_18',['RegSomeRoInt',['../struct_reg_some_ro_int.html',1,'']]],
   ['regsomeshortarray_19',['RegSomeShortArray',['../struct_reg_some_short_array.html',1,'']]],
   ['regsomespectrum_20',['RegSomeSpectrum',['../struct_reg_some_spectrum.html',1,'']]],
-  ['regsomestatus_21',['RegSomeStatus',['../struct_reg_some_status.html',1,'']]],
-  ['regsomestring_22',['RegSomeString',['../struct_reg_some_string.html',1,'']]],
-  ['regsomestring_3a_3ageneratevalue_3c_20std_3a_3astring_20_3e_23',['generateValue&lt; std::string &gt;',['../test_unified_backend_test_8cpp.html#ac11054d49dc01daeaf43b47c2935aec8',1,'testUnifiedBackendTest.cpp']]],
-  ['regsomezmqint_24',['RegSomeZmqInt',['../struct_reg_some_zmq_int.html',1,'']]],
-  ['replacetransferelement_25',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
-  ['rpc_5fno_26',['rpc_no',['../class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78',1,'DoocsLauncher']]]
+  ['regsomestring_21',['RegSomeString',['../struct_reg_some_string.html',1,'']]],
+  ['regsomestring_3a_3ageneratevalue_3c_20std_3a_3astring_20_3e_22',['generateValue&lt; std::string &gt;',['../test_unified_backend_test_8cpp.html#ac11054d49dc01daeaf43b47c2935aec8',1,'testUnifiedBackendTest.cpp']]],
+  ['regsomezmqint_23',['RegSomeZmqInt',['../struct_reg_some_zmq_int.html',1,'']]],
+  ['replacetransferelement_24',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
+  ['rpc_5fno_25',['rpc_no',['../class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78',1,'DoocsLauncher']]]
 ];
