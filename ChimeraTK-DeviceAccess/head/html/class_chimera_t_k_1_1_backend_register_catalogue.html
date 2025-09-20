@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5e0554b3a21524033bca5f3d6c7bcbc" id="r_ad5e0554b3a21524033bca5f3d6c7bcbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html">const_BackendRegisterCatalogueImplIterator</a>&lt; BackendRegisterInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#ad5e0554b3a21524033bca5f3d6c7bcbc">cend</a> () const</td></tr>
 <tr class="memdesc:ad5e0554b3a21524033bca5f3d6c7bcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return const end iterators for iterating through the registers in the catalogue.  <br /></td></tr>
 <tr class="separator:ad5e0554b3a21524033bca5f3d6c7bcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c8c8139677aefe880a4eeabac4b19e" id="r_ae4c8c8139677aefe880a4eeabac4b19e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a563a28dc0406910d68b5b5beaa4cbd3c">HiddenRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#ae4c8c8139677aefe880a4eeabac4b19e">hiddenRegisters</a> () const override</td></tr>
+<tr class="memdesc:ae4c8c8139677aefe880a4eeabac4b19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns non-owning range of all hidden registers in the catalogue.  <br /></td></tr>
+<tr class="separator:ae4c8c8139677aefe880a4eeabac4b19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_backend_register_catalogue_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_backend_register_catalogue_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html">ChimeraTK::BackendRegisterCatalogueBase</a></td></tr>
 <tr class="memitem:ac11a165c71f792f084445b7d3848f919 inherit pub_methods_class_chimera_t_k_1_1_backend_register_catalogue_base" id="r_ac11a165c71f792f084445b7d3848f919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#ac11a165c71f792f084445b7d3848f919">BackendRegisterCatalogueBase</a> ()=default</td></tr>
 <tr class="separator:ac11a165c71f792f084445b7d3848f919 inherit pub_methods_class_chimera_t_k_1_1_backend_register_catalogue_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,7 +202,7 @@ class ChimeraTK::BackendRegisterCatalogue&lt; BackendRegisterInfo &gt;</div><p>I
 <p>In addition to the functionality offered by the <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html" title="Catalogue of register information.">RegisterCatalogue</a> class, the content of the catalogue can be modified through this interface.</p>
 <p>Backend implementations should instantiate this class with their backend-specific implementation of the RegisterInfoImpl class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00093">93</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00096">96</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2761d0dccddca7293a2ac7a5ce8345fc" name="a2761d0dccddca7293a2ac7a5ce8345fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2761d0dccddca7293a2ac7a5ce8345fc">&#9670;&#160;</a></span>addRegister()</h2>
@@ -222,7 +225,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 <p>Add register information to the catalogue. </p>
 <p>The full path name of the register is taken from the <a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00371">371</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00392">392</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +256,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Return begin iterator for iterating through the registers in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00135">135</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00139">139</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +287,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Return const begin iterators for iterating through the registers in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00145">145</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00149">149</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +318,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Return const begin iterators for iterating through the registers in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00155">155</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00159">159</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +349,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Return const end iterators for iterating through the registers in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00160">160</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00164">164</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -380,9 +383,9 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a45f954ca5fdec757f35788f969c646de">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a6ffa5e8b92af1010e31f31acd69d6ed8">ChimeraTK::DummyBackendRegisterCatalogue</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#ab8bdc1e4daee7a1fa05bbc73ed5809a2">ChimeraTK::NumericAddressedRegisterCatalogue</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#ab8bdc1e4daee7a1fa05bbc73ed5809a2">ChimeraTK::NumericAddressedRegisterCatalogue</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00337">337</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00357">357</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +416,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Return end iterator for iterating through the registers in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00140">140</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00144">144</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +447,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Return const end iterators for iterating through the registers in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00150">150</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00154">154</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +481,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 <p>It copies/clones the content of the private variables of the <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html" title="Interface for backends to the register catalogue.">BackendRegisterCatalogue</a> into the target catalogue. See implementation of the <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a743db6b2a3582c172e884552b90dca9b" title="Create deep copy of the catalogue.">clone()</a> function.</p>
 <p>A function like this shall be defined for each <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html" title="Interface for backends to the register catalogue.">BackendRegisterCatalogue</a> implementation, so its <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a743db6b2a3582c172e884552b90dca9b" title="Create deep copy of the catalogue.">clone()</a> implementation can defer the data member copying to it, and each <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a30509122064e5bb25acf3b34625fb719" title="Helper function for clone functions.">fillFromThis()</a> function can defer to its base class <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a30509122064e5bb25acf3b34625fb719" title="Helper function for clone functions.">fillFromThis()</a> to fill the base class data members. Define such function even if no data members are actually added, and just defer to the base class implementation there. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00357">357</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00377">377</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -511,9 +514,9 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 <p>Note: Override this function if backend has "hidden" registers which are not added to the map and hence do not appear when iterating. </p>
 <p>Do not forget to also override <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a98e4991be24f5adca1bdc83262f5c9ef" title="Check if register with the given path name exists.">hasRegister()</a> in this case. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a68ac3973fa455d92cc618a08e5bebda4">ChimeraTK::DummyBackendRegisterCatalogue</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a33ee63fb41be9df3080c8ebe527c4b75">ChimeraTK::NumericAddressedRegisterCatalogue</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a33ee63fb41be9df3080c8ebe527c4b75">ChimeraTK::NumericAddressedRegisterCatalogue</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00290">290</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00310">310</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -546,7 +549,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a3dcd2260adca64fc7ff943796154a08e">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00318">318</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00338">338</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +582,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#ae610f01e314cc844985f5af13904f921">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00328">328</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00348">348</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +615,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a60d9b6a864b0c5996c6e2d799a71dfa0">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00310">310</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00330">330</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +649,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a4916b6b0611b36b4be85ee742d499322">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00283">283</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00303">303</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -680,9 +683,42 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a6c2ced8239bde7a7bc27f62404bd6937">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a56d4a7e00d5218a5ff9ad4deeb8f0adb">ChimeraTK::DummyBackendRegisterCatalogue</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a239c769476321072af9e353e5365cc61">ChimeraTK::NumericAddressedRegisterCatalogue</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a239c769476321072af9e353e5365cc61">ChimeraTK::NumericAddressedRegisterCatalogue</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00303">303</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00323">323</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+
+</div>
+</div>
+<a id="ae4c8c8139677aefe880a4eeabac4b19e" name="ae4c8c8139677aefe880a4eeabac4b19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c8c8139677aefe880a4eeabac4b19e">&#9670;&#160;</a></span>hiddenRegisters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BackendRegisterInfo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a563a28dc0406910d68b5b5beaa4cbd3c">HiddenRange</a> <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html">ChimeraTK::BackendRegisterCatalogue</a>&lt; BackendRegisterInfo &gt;::hiddenRegisters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns non-owning range of all hidden registers in the catalogue. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a632bb3df101d639104519fd311a636fd">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00171">171</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -708,7 +744,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 <p>The full path name of the register to be modified is taken from the <a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> structure. You cannot change the name of the register.</p>
 <p>Throws <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> if register does not exist in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00404">404</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00427">427</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +769,7 @@ template&lt;typename BackendRegisterInfo &gt; </div>
 <p>Remove register as identified by the given name from the catalogue. </p>
 <p>Throws <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> if register does not exist in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00383">383</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_catalogue_8h_source.html#l00406">406</a> of file <a class="el" href="_backend_register_catalogue_8h_source.html">BackendRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>

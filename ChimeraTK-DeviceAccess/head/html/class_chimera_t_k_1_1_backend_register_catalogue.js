@@ -15,6 +15,7 @@ var class_chimera_t_k_1_1_backend_register_catalogue =
     [ "getNumberOfRegisters", "class_chimera_t_k_1_1_backend_register_catalogue.html#a385badc121ddf056847feeca8a319f39", null ],
     [ "getRegister", "class_chimera_t_k_1_1_backend_register_catalogue.html#a36d208b859f32c9a20c3fddfa9d73daf", null ],
     [ "hasRegister", "class_chimera_t_k_1_1_backend_register_catalogue.html#a98e4991be24f5adca1bdc83262f5c9ef", null ],
+    [ "hiddenRegisters", "class_chimera_t_k_1_1_backend_register_catalogue.html#ae4c8c8139677aefe880a4eeabac4b19e", null ],
     [ "modifyRegister", "class_chimera_t_k_1_1_backend_register_catalogue.html#a14f25763ec5e392648e28758de1dc3af", null ],
     [ "removeRegister", "class_chimera_t_k_1_1_backend_register_catalogue.html#a2ecd309e4a0a8824ffc187d668915166", null ]
 ];

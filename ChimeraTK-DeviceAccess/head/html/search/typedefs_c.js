@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['usertypemap_0',['userTypeMap',['../namespace_chimera_t_k.html#a1e4921a63a21ed0cdbe9c1259b7b7bb2',1,'ChimeraTK']]],
-  ['usertypemapnovoid_1',['userTypeMapNoVoid',['../namespace_chimera_t_k.html#ad1f8efd0503fa72d47d28fcdb95c64b7',1,'ChimeraTK']]],
-  ['usertypetemplatevariant_2',['UserTypeTemplateVariant',['../namespace_chimera_t_k.html#a213dc243ddad446f4859cc85817498f5',1,'ChimeraTK']]],
-  ['usertypetemplatevariantnovoid_3',['UserTypeTemplateVariantNoVoid',['../namespace_chimera_t_k.html#ab00baf19828b33e1b4257b274bab7a09',1,'ChimeraTK']]],
-  ['usertypevariant_4',['UserTypeVariant',['../namespace_chimera_t_k.html#a1d304b40c766b2ac64f55e5452a7372f',1,'ChimeraTK']]],
-  ['usertypevariantnovoid_5',['UserTypeVariantNoVoid',['../namespace_chimera_t_k.html#a58e1416ff1b810464c18fdb359c70b3f',1,'ChimeraTK']]]
+  ['this_5ftype_0',['THIS_TYPE',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa5cb556fdc69bf76b6fb26b033ed384b',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
+  ['timepoint_1',['TimePoint',['../testable_rebot_sleep__testing_impl_8h.html#ad3e8c75320f092bc568948ea00fa7771',1,'testableRebotSleep_testingImpl.h']]],
+  ['type_2',['type',['../struct_numeric_addressed_low_level_transfer_element__start_address.html#ae88b5262632eb727221a29537226002b',1,'NumericAddressedLowLevelTransferElement_startAddress::type'],['../struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html#aadbf79334adff8ebd202681421e037dd',1,'NumericAddressedLowLevelTransferElement_numberOfBytes::type']]]
 ];
