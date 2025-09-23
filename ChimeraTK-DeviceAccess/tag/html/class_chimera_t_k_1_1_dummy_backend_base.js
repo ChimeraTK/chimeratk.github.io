@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_dummy_backend_base =
     [ "~DummyBackendBase", "class_chimera_t_k_1_1_dummy_backend_base.html#aed323b8c565402996b7df7066b74051e", null ],
     [ "barIndexValid", "class_chimera_t_k_1_1_dummy_backend_base.html#a544654b88fdf469a35f43a147e15fa1b", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE", "class_chimera_t_k_1_1_dummy_backend_base.html#a896685c8d5d0058ba9499a06ebb82561", null ],
+    [ "extractControllerInterrupt", "class_chimera_t_k_1_1_dummy_backend_base.html#a0171408923e8c8cde08e505dc33c5dec", null ],
     [ "getBarSizesInBytesFromRegisterMapping", "class_chimera_t_k_1_1_dummy_backend_base.html#a2ac5711731ea8584a1344cfb3f5edb1b", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_dummy_backend_base.html#a10617c1588bb4917bc675e9be33b3f7b", null ],
     [ "minimumTransferAlignment", "class_chimera_t_k_1_1_dummy_backend_base.html#a1f46c90e794f5b08f9f4fe598fb980cb", null ],

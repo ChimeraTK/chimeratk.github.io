@@ -106,7 +106,6 @@ var annotated_dup =
       [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
       [ "DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", "class_chimera_t_k_1_1_dummy_backend" ],
       [ "DummyBackendBase", "class_chimera_t_k_1_1_dummy_backend_base.html", "class_chimera_t_k_1_1_dummy_backend_base" ],
-      [ "DummyBackendRegisterCatalogue", "class_chimera_t_k_1_1_dummy_backend_register_catalogue.html", "class_chimera_t_k_1_1_dummy_backend_register_catalogue" ],
       [ "DummyInterruptTriggerAccessor", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor" ],
       [ "DummyMultiplexedRegisterAccessor", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor" ],
       [ "DummyProtocol0", "struct_chimera_t_k_1_1_dummy_protocol0.html", "struct_chimera_t_k_1_1_dummy_protocol0" ],

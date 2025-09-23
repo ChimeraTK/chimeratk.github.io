@@ -57,9 +57,7 @@ var hierarchy =
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
     [ "ChimeraTK::BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html", [
       [ "ChimeraTK::BackendRegisterCatalogue< NumericAddressedRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue.html", [
-        [ "ChimeraTK::NumericAddressedRegisterCatalogue", "class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html", [
-          [ "ChimeraTK::DummyBackendRegisterCatalogue", "class_chimera_t_k_1_1_dummy_backend_register_catalogue.html", null ]
-        ] ]
+        [ "ChimeraTK::NumericAddressedRegisterCatalogue", "class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html", null ]
       ] ],
       [ "ChimeraTK::BackendRegisterCatalogue< ChimeraTK::LNMBackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue.html", null ],
       [ "ChimeraTK::BackendRegisterCatalogue< BackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue.html", null ]

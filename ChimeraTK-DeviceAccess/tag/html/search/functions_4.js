@@ -30,7 +30,7 @@ var searchData=
   ['exceptionhook_27',['exceptionhook',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a09112f5742836feb83f0d62b4d94e967',1,'ChimeraTK::LNMBackend::AccessorPluginBase::exceptionHook()'],['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219',1,'ChimeraTK::LNMBackend::MathPlugin::exceptionHook()']]],
   ['exceptionreportingbackend_28',['ExceptionReportingBackend',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#afc1dc3fb280a20b761a0158696a33d9b',1,'ChimeraTK::UnifiedBackendTest::ExceptionReportingBackend']]],
   ['explainoptcode_29',['explainOptCode',['../namespace_chimera_t_k_1_1async.html#a0f3dafe1b42fe409efff2b3f7290aabb',1,'ChimeraTK::async']]],
-  ['extractcontrollerinterrupt_30',['extractControllerInterrupt',['../class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a7c6bba75213aca2f1bedd6f58b31d6ee',1,'ChimeraTK::DummyBackendRegisterCatalogue']]],
+  ['extractcontrollerinterrupt_30',['extractControllerInterrupt',['../class_chimera_t_k_1_1_dummy_backend_base.html#a0171408923e8c8cde08e505dc33c5dec',1,'ChimeraTK::DummyBackendBase']]],
   ['extractdirectory_31',['extractDirectory',['../namespace_chimera_t_k_1_1parser_utilities.html#a91ebf0d4263ce92117ee4f260cdd5edf',1,'ChimeraTK::parserUtilities']]],
   ['extractfilename_32',['extractFileName',['../namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272',1,'ChimeraTK::parserUtilities']]]
 ];

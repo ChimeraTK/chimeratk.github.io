@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.22.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.23.00</span>
    </div>
   </td>
  </tr>
@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af323ad5c9bfa9620e99c9e72067f97ad" id="r_af323ad5c9bfa9620e99c9e72067f97ad"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#af323ad5c9bfa9620e99c9e72067f97ad">getTags</a> () const</td></tr>
 <tr class="memdesc:af323ad5c9bfa9620e99c9e72067f97ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of tags associated with this register.  <br /></td></tr>
 <tr class="separator:af323ad5c9bfa9620e99c9e72067f97ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0665538d48ad46a558af532f647a72" id="r_a3f0665538d48ad46a558af532f647a72"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a3f0665538d48ad46a558af532f647a72">isHidden</a> () const</td></tr>
+<tr class="memdesc:a3f0665538d48ad46a558af532f647a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the register is "hidden", meaning it won't be listed when iterating the catalogue.  <br /></td></tr>
+<tr class="separator:a3f0665538d48ad46a558af532f647a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DeviceBackend-independent register description. </p>
@@ -294,7 +297,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of dimensions of this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00065">65</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00072">72</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>
@@ -446,6 +449,38 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a94b0fc192b724bedae6374e75f25a0e8">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00060">60</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+
+</div>
+</div>
+<a id="a3f0665538d48ad46a558af532f647a72" name="a3f0665538d48ad46a558af532f647a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0665538d48ad46a558af532f647a72">&#9670;&#160;</a></span>isHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ChimeraTK::BackendRegisterInfoBase::isHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether the register is "hidden", meaning it won't be listed when iterating the catalogue. </p>
+<p>Hidden registers can be explicitly iterated, but the ordinary iterators will not show them. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a97a348675d59741fc2c44d2fbd5b0980">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a06151618bc1f7e472c48b024545996e8">myRegisterInfo</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00067">67</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>

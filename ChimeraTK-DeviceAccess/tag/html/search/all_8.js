@@ -62,7 +62,7 @@ var searchData=
   ['expression_59',['expression',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a84692678773756a2b001c42bd62c1304',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
   ['extending_20the_20dummybackend_60',['Writing Dummies: Extending the DummyBackend',['../custom_backends.html#writing_dummies',1,'']]],
   ['external_20backends_61',['Debian packaging scheme for external backends',['../custom_backends.html#backend_packaging_scheme',1,'']]],
-  ['extractcontrollerinterrupt_62',['extractControllerInterrupt',['../class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a7c6bba75213aca2f1bedd6f58b31d6ee',1,'ChimeraTK::DummyBackendRegisterCatalogue']]],
+  ['extractcontrollerinterrupt_62',['extractControllerInterrupt',['../class_chimera_t_k_1_1_dummy_backend_base.html#a0171408923e8c8cde08e505dc33c5dec',1,'ChimeraTK::DummyBackendBase']]],
   ['extractdirectory_63',['extractDirectory',['../namespace_chimera_t_k_1_1parser_utilities.html#a91ebf0d4263ce92117ee4f260cdd5edf',1,'ChimeraTK::parserUtilities']]],
   ['extractfilename_64',['extractFileName',['../namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272',1,'ChimeraTK::parserUtilities']]]
 ];

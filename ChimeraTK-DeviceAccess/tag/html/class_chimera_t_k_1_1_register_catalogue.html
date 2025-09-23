@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.22.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.23.00</span>
    </div>
   </td>
  </tr>
@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4473a526b659eca88ec7e45255ddadf" id="r_ae4473a526b659eca88ec7e45255ddadf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html">BackendRegisterCatalogueBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html#ae4473a526b659eca88ec7e45255ddadf">getImpl</a> () const</td></tr>
 <tr class="memdesc:ae4473a526b659eca88ec7e45255ddadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the implementation object.  <br /></td></tr>
 <tr class="separator:ae4473a526b659eca88ec7e45255ddadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6cb6e48bdf3a853aa38cf480c4f60d" id="r_a6d6cb6e48bdf3a853aa38cf480c4f60d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a563a28dc0406910d68b5b5beaa4cbd3c">HiddenRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html#a6d6cb6e48bdf3a853aa38cf480c4f60d">hiddenRegisters</a> () const</td></tr>
+<tr class="memdesc:a6d6cb6e48bdf3a853aa38cf480c4f60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns non-owning range of all hidden registers in the catalogue.  <br /></td></tr>
+<tr class="separator:a6d6cb6e48bdf3a853aa38cf480c4f60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc69e96fc9cf1278a00cabf25e2c9c5" id="r_abfc69e96fc9cf1278a00cabf25e2c9c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html#abfc69e96fc9cf1278a00cabf25e2c9c5">begin</a> () const</td></tr>
 <tr class="memdesc:abfc69e96fc9cf1278a00cabf25e2c9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return iterators for iterating through the registers in the catalogue.  <br /></td></tr>
 <tr class="separator:abfc69e96fc9cf1278a00cabf25e2c9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +160,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Catalogue of register information. </p>
 
-<p class="definition">Definition at line <a class="el" href="_register_catalogue_8h_source.html#l00018">18</a> of file <a class="el" href="_register_catalogue_8h_source.html">RegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_catalogue_8h_source.html#l00027">27</a> of file <a class="el" href="_register_catalogue_8h_source.html">RegisterCatalogue.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7cc5426f65163aceeb41657d247b712" name="ae7cc5426f65163aceeb41657d247b712"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7cc5426f65163aceeb41657d247b712">&#9670;&#160;</a></span>RegisterCatalogue() <span class="overload">[1/3]</span></h2>
@@ -389,6 +392,27 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d6cb6e48bdf3a853aa38cf480c4f60d" name="a6d6cb6e48bdf3a853aa38cf480c4f60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6cb6e48bdf3a853aa38cf480c4f60d">&#9670;&#160;</a></span>hiddenRegisters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a563a28dc0406910d68b5b5beaa4cbd3c">HiddenRange</a> ChimeraTK::RegisterCatalogue::hiddenRegisters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns non-owning range of all hidden registers in the catalogue. </p>
+
+<p class="definition">Definition at line <a class="el" href="_register_catalogue_8cc_source.html#l00138">138</a> of file <a class="el" href="_register_catalogue_8cc_source.html">RegisterCatalogue.cc</a>.</p>
+
+</div>
+</div>
 <a id="a9e959219ea7aa80be5404b07c2335fc5" name="a9e959219ea7aa80be5404b07c2335fc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e959219ea7aa80be5404b07c2335fc5">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -458,7 +482,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_catalogue_8h_source.html#l00077">77</a> of file <a class="el" href="_register_catalogue_8h_source.html">RegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_catalogue_8h_source.html#l00091">91</a> of file <a class="el" href="_register_catalogue_8h_source.html">RegisterCatalogue.h</a>.</p>
 
 </div>
 </div>

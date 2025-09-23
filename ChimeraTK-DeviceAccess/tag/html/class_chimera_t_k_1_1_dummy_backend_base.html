@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.22.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.23.00</span>
    </div>
   </td>
  </tr>
@@ -148,6 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a10617c1588bb4917bc675e9be33b3f7b"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a10617c1588bb4917bc675e9be33b3f7b">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="memdesc:a10617c1588bb4917bc675e9be33b3f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific override which allows to create "DUMMY_INTEERRUPT_X" accessors.  <br /></td></tr>
 <tr class="separator:a10617c1588bb4917bc675e9be33b3f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0171408923e8c8cde08e505dc33c5dec" id="r_a0171408923e8c8cde08e505dc33c5dec"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a0171408923e8c8cde08e505dc33c5dec">extractControllerInterrupt</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName) const</td></tr>
+<tr class="separator:a0171408923e8c8cde08e505dc33c5dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
 <tr class="memitem:a89f2ae7dc99bb1aaea1a8b3053c2ae33 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend" id="r_a89f2ae7dc99bb1aaea1a8b3053c2ae33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a89f2ae7dc99bb1aaea1a8b3053c2ae33">NumericAddressedBackend</a> (const std::string &amp;mapFileName=&quot;&quot;, std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt; registerMapPointer=std::make_unique&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> &gt;(), const std::string &amp;dataConsistencyKeyDescriptor=&quot;&quot;)</td></tr>
 <tr class="separator:a89f2ae7dc99bb1aaea1a8b3053c2ae33 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_base.html">Base</a> class for DummyBackends, provides common functionality. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00031">31</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00030">30</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5968c9003cfcde7145f2c86c40ccede2" name="a5968c9003cfcde7145f2c86c40ccede2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5968c9003cfcde7145f2c86c40ccede2">&#9670;&#160;</a></span>DummyBackendBase()</h2>
@@ -322,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00008">8</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00018">18</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
 
 </div>
 </div>
@@ -380,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a55ad13a5ab2754923d62ad753657116e">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00020">20</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00066">66</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
 
 </div>
 </div>
@@ -408,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00036">36</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00086">86</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
 
 </div>
 </div>
@@ -446,6 +448,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a0171408923e8c8cde08e505dc33c5dec" name="a0171408923e8c8cde08e505dc33c5dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0171408923e8c8cde08e505dc33c5dec">&#9670;&#160;</a></span>extractControllerInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; bool, int &gt; ChimeraTK::DummyBackendBase::extractControllerInterrupt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00124">124</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+
+</div>
+</div>
 <a id="a2ac5711731ea8584a1344cfb3f5edb1b" name="a2ac5711731ea8584a1344cfb3f5edb1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ac5711731ea8584a1344cfb3f5edb1b">&#9670;&#160;</a></span>getBarSizesInBytesFromRegisterMapping()</h2>
 
@@ -463,7 +485,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Determines the size of each bar because the DummyBackends allocate memory per bar. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00024">24</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00072">72</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
 
 </div>
 </div>
@@ -509,7 +531,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Specific override which allows to create "DUMMY_INTEERRUPT_X" accessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00043">43</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00095">95</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
 
 </div>
 </div>
@@ -544,7 +566,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ac6f6e45c765cd7e6eddefff210053a25">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00015">15</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8cc_source.html#l00059">59</a> of file <a class="el" href="_dummy_backend_base_8cc_source.html">DummyBackendBase.cc</a>.</p>
 
 </div>
 </div>
@@ -601,7 +623,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a3b423b4415629b8bb87e1c479b23e774">ChimeraTK::SharedDummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00055">55</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00054">54</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +673,7 @@ template&lt;typename T , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00102">102</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00101">101</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -740,7 +762,7 @@ template&lt;typename T , typename... Args&gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a234b88ce11cb97443ca4cd216fd4a263">ChimeraTK::SharedDummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00063">63</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00062">62</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +779,7 @@ template&lt;typename T , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00079">79</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00078">78</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -773,7 +795,7 @@ template&lt;typename T , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00076">76</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00075">75</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -789,7 +811,7 @@ template&lt;typename T , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00077">77</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00076">76</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -805,7 +827,7 @@ template&lt;typename T , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00078">78</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00077">77</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>

@@ -14,7 +14,7 @@ var dir_c58e9917cb89e86e015f963e5eb1f350 =
     [ "DeviceBackendImpl.cc", "_device_backend_impl_8cc.html", null ],
     [ "DeviceInfoMap.cc", "_device_info_map_8cc.html", "_device_info_map_8cc" ],
     [ "DMapFileParser.cpp", "_d_map_file_parser_8cpp.html", null ],
-    [ "DummyBackendBase.cc", "_dummy_backend_base_8cc.html", null ],
+    [ "DummyBackendBase.cc", "_dummy_backend_base_8cc.html", "_dummy_backend_base_8cc" ],
     [ "DummyInterruptTriggerAccessor.cc", "_dummy_interrupt_trigger_accessor_8cc.html", "_dummy_interrupt_trigger_accessor_8cc" ],
     [ "Exception.cpp", "_exception_8cpp.html", null ],
     [ "ExperimentalFeatures.cc", "_experimental_features_8cc.html", null ],
