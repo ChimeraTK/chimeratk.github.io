@@ -403,7 +403,7 @@ $(document).ready(function(){initNavTree('_supported_user_types_8h_source.html',
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordtype">bool</span> isHexidecimal = (value.length() &gt; 1) and ((value[1] == <span class="charliteral">&#39;x&#39;</span>) or (value[1] == <span class="charliteral">&#39;X&#39;</span>)) and (value[0] == <span class="charliteral">&#39;0&#39;</span>);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(!std::is_same&lt;NUMERIC, int8_t&gt;::value &amp;&amp; !std::is_same&lt;NUMERIC, uint8_t&gt;::value) {</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      NUMERIC v;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      NUMERIC v = 0;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>      std::stringstream ss;</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>      <span class="keywordflow">if</span>(isHexidecimal) {</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        ss &lt;&lt; std::hex &lt;&lt; value.substr(2);</div>
