@@ -2,6 +2,8 @@ var test_map_file_parser_8cpp =
 [
     [ "BOOST_TEST_DYN_LINK", "test_map_file_parser_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_map_file_parser_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a6e3d2ea00da3ac60b21dc0c09d372020", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a53c81c782f7af2b13164f8a1552b9066", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a02f8b021db932214f69f3cd1c98b42a8", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a6ad250a09d4930bd00765612c5b62f16", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a95f3a17d851e9925f3e0be362711d929", null ],
