@@ -32,7 +32,7 @@
 <span></span><span class="c1"># SPDX-FileCopyrightText: Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;</span>
 <span class="c1"># SPDX-License-Identifier: LGPL-3.0-or-later</span>
 
-<span class="kn">import</span> <span class="nn">_da_python_bindings</span> <span class="k">as</span> <span class="nn">mtca4udeviceaccess</span>  <span class="c1"># alias quick fix</span>
+<span class="kn">import</span> <span class="nn">deviceaccess</span>
 <span class="kn">import</span> <span class="nn">numpy</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 
@@ -98,7 +98,7 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># os.environ[&quot;DMAP_FILE&quot;] = dmapFileLocation</span>
-    <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">setDmapFile</span><span class="p">(</span><span class="n">dmapFileLocation</span><span class="p">)</span></div>
+    <span class="n">deviceaccess</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="n">dmapFileLocation</span><span class="p">)</span></div>
 
 
 
@@ -131,7 +131,7 @@
 <span class="sd">    Device : Open device using specified alias names or using device id and mapfile</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">getDmapFile</span><span class="p">()</span></div>
+    <span class="k">return</span> <span class="n">deviceaccess</span><span class="o">.</span><span class="n">getDMapFilePath</span><span class="p">()</span></div>
 
 
 
@@ -155,25 +155,9 @@
 <span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;my_card&quot;) # my_card is a alias in my_example_dmap_file.dmap</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
-        <span class="c1"># define a dictiWe do not wantonary to hold multiplexed data accessors</span>
-        <span class="c1"># TODO: Limit the number of entries this dictionary can hold,</span>
-        <span class="c1"># We do not want to hold on to too much ram</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__accsessor_dictionary</span> <span class="o">=</span> <span class="p">{}</span>
-
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-            <span class="n">deviceFile</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="n">mapFile</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">__printDeprecationWarning</span><span class="p">(</span><span class="n">deviceFile</span><span class="p">,</span> <span class="n">mapFile</span><span class="p">)</span>
-            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s2">&quot;Syntax error.&quot;</span><span class="p">)</span>
-
-        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">cardAlias</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span> <span class="o">=</span> <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">createDevice</span><span class="p">(</span><span class="n">cardAlias</span><span class="p">)</span>
-
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span>
-                <span class="s2">&quot;Syntax Error: please see help(mtca4u.Device) for usage instructions.&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cddOrAlias</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span> <span class="o">=</span> <span class="n">deviceaccess</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="n">cddOrAlias</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
 
 <div class="viewcode-block" id="Device.read">
 <a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.read">[docs]</a>
@@ -269,13 +253,11 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
-        <span class="n">registerAccessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getOneDAccessor_double</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span>
-                                                                      <span class="n">numberOfElementsToRead</span><span class="p">,</span>
-                                                                      <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="p">[])</span>
-
-        <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNElements</span><span class="p">()</span>
-        <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">registerSize</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">double</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array</span><span class="p">)</span></div>
+        <span class="n">val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfWords</span><span class="o">=</span><span class="n">numberOfElementsToRead</span><span class="p">,</span>
+                                       <span class="n">wordOffsetInRegister</span><span class="o">=</span><span class="n">elementIndexInRegister</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">val</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">val</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="Device.write">
@@ -356,31 +338,10 @@
 <span class="sd">        Device.write_raw : Write &#39;raw&#39; bit values to a device register</span>
 
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="c1"># get register accessor</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span>
-        <span class="n">numberOfElementsToWrite</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">size</span>
-        <span class="k">if</span> <span class="n">numberOfElementsToWrite</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span>
         <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
-        <span class="n">arguments</span> <span class="o">=</span> <span class="p">(</span><span class="n">registerPath</span><span class="p">,</span>
-                     <span class="n">numberOfElementsToWrite</span><span class="p">,</span>
-                     <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="p">[])</span>
-
-        <span class="n">device</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span>
-        <span class="n">dtype</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">):</span>
-            <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getOneDAccessor_int32</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int64</span><span class="p">):</span>
-            <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getOneDAccessor_int64</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">float32</span><span class="p">):</span>
-            <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getOneDAccessor_float</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">float64</span><span class="p">):</span>
-            <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getOneDAccessor_double</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Data format used is unsupported&quot;</span><span class="p">)</span>
-
-        <span class="n">accessor</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+            <span class="n">registerPath</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="o">=</span><span class="n">dataToWrite</span><span class="p">,</span> <span class="n">wordOffsetInRegister</span><span class="o">=</span><span class="n">elementIndexInRegister</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="Device.read_raw">
@@ -468,13 +429,11 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
-        <span class="c1"># legacy implemention is done with int32</span>
-        <span class="n">registerAccessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getOneDAccessor_int32</span><span class="p">(</span>
-            <span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="p">[</span>
-                <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">])</span>
-        <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNElements</span><span class="p">()</span>
-        <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">registerSize</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array</span><span class="p">)</span></div>
+        <span class="n">val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfWords</span><span class="o">=</span><span class="n">numberOfElementsToRead</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span>
+                                       <span class="n">wordOffsetInRegister</span><span class="o">=</span><span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="o">=</span><span class="p">[</span><span class="n">deviceaccess</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">])</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">val</span>
+        <span class="k">return</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">val</span><span class="p">])</span></div>
 
 
 <div class="viewcode-block" id="Device.write_raw">
@@ -540,21 +499,10 @@
 <span class="sd">        Device.write : Write values that get fixed point converted to the device</span>
 
 <span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">__checkAndExitIfArrayNotInt32</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span>
-
-        <span class="n">numberOfElementsToWrite</span> <span class="o">=</span> <span class="n">dataToWrite</span><span class="o">.</span><span class="n">size</span>
-        <span class="k">if</span> <span class="n">numberOfElementsToWrite</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span>
-
         <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
-
-        <span class="c1"># old binding:</span>
-        <span class="c1"># accessor = self.__openedDevice.getRaw1DAccessor(registerPath, numberOfElementsToWrite, elementIndexInRegister)</span>
-        <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getOneDAccessor_int32</span><span class="p">(</span>
-            <span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfElementsToWrite</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="p">[</span><span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">])</span>
-        <span class="n">accessor</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="o">=</span><span class="n">dataToWrite</span><span class="p">,</span>
+                                  <span class="n">wordOffsetInRegister</span><span class="o">=</span><span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">accessModeFlags</span><span class="o">=</span><span class="p">[</span><span class="n">deviceaccess</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="Device.read_dma_raw">
@@ -686,17 +634,10 @@
 
         <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">regionName</span>
-        <span class="c1"># accessor = self.__openedDevice.get2DAccessor(registerPath) # old</span>
-        <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getTwoDAccessor_double</span><span class="p">(</span>
-            <span class="n">registerPath</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[])</span>
-
-        <span class="c1"># readFromDevice fetches data from the card to its intenal buffer of the</span>
-        <span class="c1"># c++ accessor</span>
-        <span class="n">numberOfSequences</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span>
-        <span class="n">numberOfBlocks</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span>
-        <span class="n">array2D</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create2DArray</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="n">numberOfSequences</span><span class="p">,</span> <span class="n">numberOfBlocks</span><span class="p">)</span>
-
-        <span class="k">return</span> <span class="n">numpy</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">accessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array2D</span><span class="p">))</span></div>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getTwoDRegisterAccessor</span><span class="p">(</span>
+            <span class="n">numpy</span><span class="o">.</span><span class="n">float64</span><span class="p">,</span> <span class="n">registerPath</span><span class="p">)</span>
+        <span class="n">accessor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">accessor</span><span class="o">.</span><span class="n">get</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span></div>
 
 
 <div class="viewcode-block" id="Device.getCatalogueMetadata">
@@ -719,102 +660,7 @@
 
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getCatalogueMetadata</span><span class="p">(</span><span class="n">parameterName</span><span class="p">)</span></div>
-
-
-<span class="c1"># Helper methods below</span>
-
-    <span class="k">def</span> <span class="nf">__exitIfSuppliedIndexIncorrect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">registerAccessor</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="p">):</span>
-        <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNumElements</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">elementIndexInRegister</span> <span class="o">&gt;=</span> <span class="n">registerSize</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">registerSize</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-                <span class="c1"># did this for displaying specific error string without the range when</span>
-                <span class="c1"># there is only one element in the register</span>
-                <span class="n">errorString</span> <span class="o">=</span> <span class="s2">&quot;Element index: </span><span class="si">{0}</span><span class="s2"> incorrect. Valid index is </span><span class="si">{1}</span><span class="s2">&quot;</span>\
-                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">registerSize</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">errorString</span> <span class="o">=</span> <span class="s2">&quot;Element index: </span><span class="si">{0}</span><span class="s2"> incorrect. Valid index range is [0-</span><span class="si">{1}</span><span class="s2">]&quot;</span>\
-                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">registerSize</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">errorString</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">__checkAndExitIfArrayNotFloat32</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__raiseExceptionIfNumpyArraydTypeIncorrect</span><span class="p">(</span>
-            <span class="n">dataToWrite</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">__checkAndExitIfArrayNotInt32</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__raiseExceptionIfNumpyArraydTypeIncorrect</span><span class="p">(</span>
-            <span class="n">dataToWrite</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">__raiseExceptionIfNumpyArraydTypeIncorrect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numpyArray</span><span class="p">,</span> <span class="n">dType</span><span class="p">):</span>
-        <span class="k">if</span> <span class="p">((</span><span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">numpyArray</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">ndarray</span><span class="p">))</span> <span class="ow">or</span>
-           <span class="p">(</span><span class="n">numpyArray</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="n">dType</span><span class="p">)):</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Method expects values in a </span><span class="si">{0}</span><span class="s2"> &quot;</span>
-                            <span class="s2">&quot; numpy.array&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dType</span><span class="p">))</span>
-
-    <span class="k">def</span> <span class="nf">__getCorrectedElementCount</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elementCountInRegister</span><span class="p">,</span> <span class="n">numberOfelements</span><span class="p">,</span>
-                                   <span class="n">elementOffset</span><span class="p">):</span>
-        <span class="n">elementCountInRegister</span>  <span class="c1"># =  registerAccessor.getNumElements()</span>
-        <span class="n">maxFetchableElements</span> <span class="o">=</span> <span class="n">elementCountInRegister</span> <span class="o">-</span> <span class="n">elementOffset</span>
-        <span class="n">correctedElementCount</span> <span class="o">=</span> <span class="n">numberOfelements</span> <span class="k">if</span> <span class="p">(</span>
-            <span class="n">numberOfelements</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">numberOfelements</span> <span class="o">&lt;=</span> <span class="n">maxFetchableElements</span><span class="p">)</span> <span class="k">else</span> <span class="n">maxFetchableElements</span>
-        <span class="k">return</span> <span class="n">correctedElementCount</span>
-
-    <span class="k">def</span> <span class="nf">__createArray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dType</span><span class="p">,</span> <span class="n">numberOfElementsInRegister</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="p">,</span>
-                      <span class="n">elementIndexInRegister</span><span class="p">):</span>
-        <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getCorrectedElementCount</span><span class="p">(</span><span class="n">numberOfElementsInRegister</span><span class="p">,</span>
-                                               <span class="n">numberOfElementsToRead</span><span class="p">,</span>
-                                               <span class="n">elementIndexInRegister</span><span class="p">)</span>
-        <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dType</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">array</span>
-
-    <span class="k">def</span> <span class="nf">__create2DArray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dType</span><span class="p">,</span> <span class="n">numberOfRows</span><span class="p">,</span> <span class="n">numberOfColumns</span><span class="p">):</span>
-        <span class="n">array2D</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">numberOfRows</span><span class="p">,</span> <span class="n">numberOfColumns</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dType</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">array2D</span>
-
-    <span class="k">def</span> <span class="nf">__printDeprecationWarning</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deviceFile</span><span class="p">,</span> <span class="n">mapFile</span><span class="p">):</span>
-        <span class="n">deviceFileName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__extractNameFromDeviceFile</span><span class="p">(</span><span class="n">deviceFile</span><span class="p">)</span>
-
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*************************************************************************************************&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &gt;&gt;&gt; mtca4u.Device(&#39;&quot;</span> <span class="o">+</span> <span class="n">deviceFile</span> <span class="o">+</span> <span class="s2">&quot;&#39;, &#39;&quot;</span> <span class="o">+</span> <span class="n">mapFile</span> <span class="o">+</span> <span class="s2">&quot;&#39;)&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; ERROR: The above usage for device creation has been phased out!&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; Please consider using a dmap file for device creation.                     &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; Instructions:                                                              &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; - Create dmap file: &lt;your_dmapfile_name_goes_here&gt;.dmap                    &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; - Add this line to your dmap file:                                         &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &lt;your_card_alias_goes_here&gt; sdm://./pci:&quot;</span> <span class="o">+</span>
-              <span class="n">deviceFileName</span> <span class="o">+</span> <span class="s2">&quot;; &quot;</span> <span class="o">+</span> <span class="n">mapFile</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; - Tell the library about the dmap file                                     &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;     &gt;&gt;&gt; mtca4u.set_dmap_location(&#39;your_dmapfile_name.dmap&#39;)                &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; - Create your device                                                       &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;     &gt;&gt;&gt; device = mtca4u.Device(&#39;your_card_alias&#39;)                          &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; Alternatively, you can pass the sdm string directly in place of the alias  &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="s2">&quot; name, if it includes the map file name, e.g.:                              &quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   sdm://./pci:&quot;</span> <span class="o">+</span> <span class="n">deviceFileName</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">+</span> <span class="n">mapFile</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*************************************************************************************************&quot;</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">__extractNameFromDeviceFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deviceFile</span><span class="p">):</span>
-        <span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">deviceFile</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="k">return</span> <span class="n">deviceFile</span><span class="p">[</span><span class="n">index</span><span class="p">:]</span></div>
+</div>
 
 </pre></div>
 
