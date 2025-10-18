@@ -33,6 +33,8 @@ var class_chimera_t_k_1_1_unified_backend_test =
     [ "test_B_11_2_1", "class_chimera_t_k_1_1_unified_backend_test.html#ab8fdc2b1593d1131c2d6fc344dc04782", null ],
     [ "test_B_11_2_2", "class_chimera_t_k_1_1_unified_backend_test.html#a7e5530200a3fe569ee4756fa965fbd05", null ],
     [ "test_B_11_6", "class_chimera_t_k_1_1_unified_backend_test.html#a00d906cc2c5c33256c11bc8c46b09ca5", null ],
+    [ "test_B_12_1_3_1", "class_chimera_t_k_1_1_unified_backend_test.html#af04547b8ee5a988aad6b84c3ab7bc9a1", null ],
+    [ "test_B_12_1_5_1", "class_chimera_t_k_1_1_unified_backend_test.html#a193ddbc1d6d2c1b8374b80f189dd5c49", null ],
     [ "test_B_3_1_2_1", "class_chimera_t_k_1_1_unified_backend_test.html#ad387cb1c6bce5574bb2bc99f55273a0f", null ],
     [ "test_B_3_2_1_2", "class_chimera_t_k_1_1_unified_backend_test.html#a820337ac2ee974f23de3baa51ceb0a93", null ],
     [ "test_B_3_2_2", "class_chimera_t_k_1_1_unified_backend_test.html#a6df37e8af45a7f594825ed251134e1a8", null ],
