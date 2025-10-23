@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"struct_integers_base.html#acfe961e3cf23577cbd66b89c4cc508c5":[21,0,84,8],
+"struct_integers_base.html#adbfa9c66013156b290c39cf257c4c6c3":[21,0,84,2],
+"struct_integers_base.html#ade36a6c02d3b3919cdc2a533700d94ab":[21,0,84,0],
+"struct_integers_base.html#aed514049c981187df54f85ed5be65c65":[21,0,84,10],
 "struct_integers_base.html#afb5638edbff91fb37a5918e69bd177b9":[21,0,84,1],
 "struct_integers_base.html#afddf6f969135733baa3d6e1926bf6b5b":[21,0,84,11],
 "struct_integers_signed32.html":[21,0,85],
@@ -124,8 +128,8 @@ var NAVTREEINDEX27 =
 "struct_muxed_nodma_async.html#ae009802f4ac0d26fb7b306ef90739674":[21,0,115,6],
 "struct_muxed_nodma_async.html#afdf27ae7c1f14982a5e0dc3db3458f1e":[21,0,115,2],
 "struct_my_area1.html":[21,0,116],
-"struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[21,0,116,11],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[21,0,116,10],
+"struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[21,0,116,11],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[21,0,116,4],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[21,0,116,5],
 "struct_my_area1.html#a467c26d5b4063f0920caab13429b769d":[21,0,116,13],
@@ -133,8 +137,8 @@ var NAVTREEINDEX27 =
 "struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[21,0,116,1],
 "struct_my_area1.html#a61da69d56c012c4ffa25bec4a39e9498":[21,0,116,14],
 "struct_my_area1.html#a8b30e909ad48c7c47ea47103b559a6ea":[21,0,116,0],
-"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[21,0,116,8],
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[21,0,116,9],
+"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[21,0,116,8],
 "struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[21,0,116,7],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[21,0,116,3],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[21,0,116,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "struct_reg_channel3.html#a98ef688fc0f877566d5f99818b236595":[21,0,151,3],
 "struct_reg_channel3.html#ab0c9781b4079c8883cd3f41a25936b02":[21,0,151,0],
 "struct_reg_channel3.html#ae0f2c5019fc4a199767b61ff2ea8b6df":[21,0,151,7],
-"struct_reg_channel4__push.html":[21,0,152],
-"struct_reg_channel4__push.html#a0a505bfb5eb473f9e3c17907ff9a29d0":[21,0,152,2],
-"struct_reg_channel4__push.html#a406e15fa04783a39a6e6a23f6ac0c723":[21,0,152,8],
-"struct_reg_channel4__push.html#a5ca4c961f22a5197113731e2d172e2ef":[21,0,152,3],
-"struct_reg_channel4__push.html#aa7bff10607b7dae9d99593636ec44462":[21,0,152,4]
+"struct_reg_channel4__push.html":[21,0,152]
 };
