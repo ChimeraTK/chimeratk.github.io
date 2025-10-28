@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('_catalogue_fetcher_8cc_source.html',''
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// iterate over list</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; propList.array_length() &amp;&amp; (isCancelled() == <span class="keyword">false</span>); ++i) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; propList.array_length() &amp;&amp; not isCancelled(); ++i) {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// obtain the name of the element</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">auto</span> u = propList.get_ustr(i);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::string name(u-&gt;str_data.str_data_val);</div>
