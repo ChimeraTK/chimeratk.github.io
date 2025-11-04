@@ -279,6 +279,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2ca682b5f247b240666acff88d31e0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d12f8f595b86fc69d608868c7777a3b" id="r_a5d12f8f595b86fc69d608868c7777a3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#a5d12f8f595b86fc69d608868c7777a3b">getActualMd22CtrlPosition</a> ()</td></tr>
 <tr class="separator:a5d12f8f595b86fc69d608868c7777a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae4a56e10749426885c798a0d1e756e" id="r_acae4a56e10749426885c798a0d1e756e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#acae4a56e10749426885c798a0d1e756e">setHoldCurrentOffWhenNotMoving</a> (bool flag)</td></tr>
+<tr class="separator:acae4a56e10749426885c798a0d1e756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d6ac1e8177409e6eff7854aacb917c" id="r_a92d6ac1e8177409e6eff7854aacb917c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#a92d6ac1e8177409e6eff7854aacb917c">getHoldCurrentOffWhenNotMoving</a> () const</td></tr>
+<tr class="separator:a92d6ac1e8177409e6eff7854aacb917c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5cf6225a9a7ea06c3e8c42110ef40f" id="r_abd5cf6225a9a7ea06c3e8c42110ef40f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#abd5cf6225a9a7ea06c3e8c42110ef40f">getHoldCurrentOn</a> () const</td></tr>
+<tr class="separator:abd5cf6225a9a7ea06c3e8c42110ef40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -310,6 +316,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad60f87dfc873a752eb867f72676cca70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e24b45315c3de13589d05cbb1cb44d9" id="r_a3e24b45315c3de13589d05cbb1cb44d9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#a3e24b45315c3de13589d05cbb1cb44d9">_motorDriverId</a></td></tr>
 <tr class="separator:a3e24b45315c3de13589d05cbb1cb44d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2114df805c44f557d03a6de354765b7" id="r_ae2114df805c44f557d03a6de354765b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#ae2114df805c44f557d03a6de354765b7">_md22IsEnabled</a> {false}</td></tr>
+<tr class="separator:ae2114df805c44f557d03a6de354765b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac217fdf54012fe525184606a34949c" id="r_a9ac217fdf54012fe525184606a34949c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#a9ac217fdf54012fe525184606a34949c">_holdCurrOffWhenNotMoving</a> {false}</td></tr>
+<tr class="separator:a9ac217fdf54012fe525184606a34949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a884c8133c065957d2886146c4e345" id="r_a63a884c8133c065957d2886146c4e345"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; MotorDriverCard &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#a63a884c8133c065957d2886146c4e345">_motorDriverCard</a></td></tr>
 <tr class="separator:a63a884c8133c065957d2886146c4e345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2efbdb784ecc9165bd2db633827e8c90" id="r_a2efbdb784ecc9165bd2db633827e8c90"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; MotorControler &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_m_d22.html#a2efbdb784ecc9165bd2db633827e8c90">_motorControler</a></td></tr>
@@ -373,7 +383,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00084">84</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00083">83</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3fec09771447d8b526ad4b7257e33e9" name="ad3fec09771447d8b526ad4b7257e33e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3fec09771447d8b526ad4b7257e33e9">&#9670;&#160;</a></span>StepperMotorMD22()</h2>
@@ -472,7 +482,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Destructor of the class object. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00044">44</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00042">42</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -505,7 +515,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_stepper_motor_linear_m_d22.html#a4d30fd629e2bc19678989522acd5342d">StepperMotorLinearMD22</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00087">87</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00085">85</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -532,7 +542,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00423">423</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00413">413</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -556,7 +566,7 @@ Protected Attributes</h2></td></tr>
 Function internally calls 'void stopMotor()' method so all blocking functions will be interrupted.<br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00124">124</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00121">121</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -583,7 +593,7 @@ Function internally calls 'void stopMotor()' method so all blocking functions wi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00547">547</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00555">555</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -602,7 +612,7 @@ Function internally calls 'void stopMotor()' method so all blocking functions wi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00529">529</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00537">537</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -629,7 +639,7 @@ Function internally calls 'void stopMotor()' method so all blocking functions wi
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00524">524</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00530">530</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -654,7 +664,7 @@ Function internally calls 'void stopMotor()' method so all blocking functions wi
  When Autostart flag is set to FALSE motor will NOT automatically start moving to desired position. Additionally, execution of <a class="el" href="class_stepper_motor_m_d22.html#aea10f8567e3db08087b7b113d60a82de" title="Start the motor.">start()</a> method is necessary to start motor.<br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00288">288</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00285">285</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -688,7 +698,7 @@ Currently following status are forseen:<br  />
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00149">149</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00146">146</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -711,7 +721,7 @@ Currently following status are forseen:<br  />
 <p>Calculation between steps and arbitrary units is done internally.<br  />
 </p><dl class="section return"><dt>Returns</dt><dd>float - current, real position of motor in arbitrary units. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00225">225</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00222">222</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -733,7 +743,7 @@ Currently following status are forseen:<br  />
 <p>Return real motor position read directly from the hardware and expressed in steps. </p>
 <p>No calculation is involved. </p><dl class="section return"><dt>Returns</dt><dd>int - current, real position in number of steps. The number of steps can be either negative or positive, depending on the position with respect to the zero. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00229">229</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00226">226</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -756,7 +766,7 @@ Currently following status are forseen:<br  />
 <dl class="section return"><dt>Returns</dt><dd>bool - Current Enabled flag value</dd></dl>
 <p>Motor can be disabled or enabled. To work with the motor user need to enable it. When motor disabled it stops moving immediately. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00326">326</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00318">318</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -775,7 +785,7 @@ Currently following status are forseen:<br  />
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00643">643</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00687">687</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -794,7 +804,7 @@ Currently following status are forseen:<br  />
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00389">389</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00375">375</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -813,7 +823,45 @@ Currently following status are forseen:<br  />
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00381">381</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00367">367</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+
+</div>
+</div>
+<a id="a92d6ac1e8177409e6eff7854aacb917c" name="a92d6ac1e8177409e6eff7854aacb917c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d6ac1e8177409e6eff7854aacb917c">&#9670;&#160;</a></span>getHoldCurrentOffWhenNotMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StepperMotorMD22::getHoldCurrentOffWhenNotMoving </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00716">716</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+
+</div>
+</div>
+<a id="abd5cf6225a9a7ea06c3e8c42110ef40f" name="abd5cf6225a9a7ea06c3e8c42110ef40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5cf6225a9a7ea06c3e8c42110ef40f">&#9670;&#160;</a></span>getHoldCurrentOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StepperMotorMD22::getHoldCurrentOn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00720">720</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -835,7 +883,7 @@ Currently following status are forseen:<br  />
 <p>Get current log level of the motor. </p>
 <dl class="section return"><dt>Returns</dt><dd>Loger::LogLevel - current log level </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00340">340</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00326">326</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -854,7 +902,7 @@ Currently following status are forseen:<br  />
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00377">377</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00363">363</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -877,7 +925,7 @@ Currently following status are forseen:<br  />
 <dl class="section return"><dt>Returns</dt><dd>float - Maximum position which motor is able to reach</dd></dl>
 <p>Motor can have not physical end switches which would limits range of possible position. For the reason software limits has been introduced. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00268">268</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00265">265</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -899,7 +947,7 @@ Currently following status are forseen:<br  />
 <p>Returns soft limit on the maximum position of the motor expressed in steps. </p>
 <dl class="section return"><dt>Returns</dt><dd>float - Maximum position which motor is able to reach </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00272">272</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00269">269</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -921,7 +969,7 @@ Currently following status are forseen:<br  />
 <p>Returns the maximum speed the motor is capable of achieving. </p>
 <p>Speed is expressed in microsteps per second </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00344">344</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00330">330</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -944,7 +992,7 @@ Currently following status are forseen:<br  />
 <dl class="section return"><dt>Returns</dt><dd>float - Minimum position which motor is able to reach</dd></dl>
 <p>Motor can have not physical end switches which would limits range of possible position. For the reason software limits has been introduced. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00276">276</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00273">273</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -966,7 +1014,7 @@ Currently following status are forseen:<br  />
 <p>Returns soft limit on the minimum position of the motor expressed in steps. </p>
 <dl class="section return"><dt>Returns</dt><dd>float - Minimum position which motor is able to reach </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00280">280</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00277">277</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -987,7 +1035,7 @@ Currently following status are forseen:<br  />
 
 <p>Returns the maximum value of current that this motor can be driven saftely. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00356">356</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00342">342</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1057,7 @@ Currently following status are forseen:<br  />
 <p>Get current soft limit enabled flag. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool - When true soft limits will be checked and validated, in false they will not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00157">157</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00154">154</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1096,7 @@ It give possibility to check what was an error type when status is set to Steppe
 5) StepperMotorErrorTypes::M_HARDWARE_ERROR - hardware has some error which prevents correct operation.<br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00284">284</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00281">281</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1118,7 @@ It give possibility to check what was an error type when status is set to Steppe
 <p>Return target motor position in the arbitrary units. </p>
 <dl class="section return"><dt>Returns</dt><dd>float - target position of motor in arbitrary units. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00217">217</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00214">214</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1140,7 @@ It give possibility to check what was an error type when status is set to Steppe
 <p>Return target motor position in steps. </p>
 <dl class="section return"><dt>Returns</dt><dd>int - target position of motor in steps </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00221">221</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00218">218</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1159,7 @@ It give possibility to check what was an error type when status is set to Steppe
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00373">373</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00359">359</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1180,7 @@ It give possibility to check what was an error type when status is set to Steppe
 
 <p>Returns the current used to drive the motor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00352">352</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00338">338</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1201,7 @@ It give possibility to check what was an error type when status is set to Steppe
 
 <p>returns the current motor speed limit configured by the user </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00360">360</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00346">346</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1223,7 @@ It give possibility to check what was an error type when status is set to Steppe
 <p>Returns True if the motor is moving and false if at standstill. </p>
 <p>This command is reliable as long as the motor is not stalled. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00482">482</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00478">478</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1254,7 @@ It give possibility to check what was an error type when status is set to Steppe
 <p>This method sends motor to new position. It is blocking blocking method. It will finish when motor movement will end with success or error. Function can be interrupted by using 'void stopMotor()' method.<br  />
  Function returns <a class="el" href="class_stepper_motor_m_d22_status_and_error.html">StepperMotorMD22StatusAndError</a> object which is status of the motor after movement routine finished. Should be StepperMotorStatusTypes::M_OK in case of success. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00082">82</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00080">80</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1284,7 @@ It give possibility to check what was an error type when status is set to Steppe
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_stepper_motor_m_d22_status_and_error.html">StepperMotorMD22StatusAndError</a> - status of the motor after movement routine finish</dd></dl>
 <p>see method <a class="el" href="class_stepper_motor_m_d22.html#ad7777f5a8e39f2a8ff23ee8360b507bb" title="Sending motor to new position (blocking).">moveToPosition(float)</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00055">55</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00053">53</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1304,7 @@ It give possibility to check what was an error type when status is set to Steppe
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00664">664</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00708">708</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1333,7 @@ It give possibility to check what was an error type when status is set to Steppe
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float - Calculated units which correspond to the number of steps </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00137">137</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00134">134</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1362,7 @@ It give possibility to check what was an error type when status is set to Steppe
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int - steps value which corresponds to given as parameter value of arbitrary units. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00133">133</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00130">130</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1345,7 +1393,7 @@ It give possibility to check what was an error type when status is set to Steppe
  When Autostart flag is set to FALSE motor will NOT automatically start moving to desired position. Additionally, execution of <a class="el" href="class_stepper_motor_m_d22.html#aea10f8567e3db08087b7b113d60a82de" title="Start the motor.">start()</a> method is necessary to start motor.<br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00292">292</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00289">289</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1434,7 @@ Can be used in example to zeroed current position. </p>
 
 <p>Reimplemented in <a class="el" href="class_stepper_motor_linear_m_d22.html#afe83294307c621a2e002871d11301b93">StepperMotorLinearMD22</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00161">161</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00158">158</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1425,7 +1473,7 @@ Can be used in example to zeroed current position. </p>
 
 <p>Reimplemented in <a class="el" href="class_stepper_motor_linear_m_d22.html#a2e7970c19d73c254fa92f6241997b753">StepperMotorLinearMD22</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00165">165</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00162">162</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1502,7 @@ Can be used in example to zeroed current position. </p>
 </dl>
 <p>Motor can be disabled or enabled. To work with the motor user need to enable it. When motor disabled it stops moving immediately. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00299">299</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00296">296</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1474,7 +1522,7 @@ Can be used in example to zeroed current position. </p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00651">651</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00695">695</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1494,7 +1542,7 @@ Can be used in example to zeroed current position. </p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00655">655</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00699">699</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1562,7 @@ Can be used in example to zeroed current position. </p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00385">385</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00371">371</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1582,27 @@ Can be used in example to zeroed current position. </p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00647">647</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00691">691</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+
+</div>
+</div>
+<a id="acae4a56e10749426885c798a0d1e756e" name="acae4a56e10749426885c798a0d1e756e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae4a56e10749426885c798a0d1e756e">&#9670;&#160;</a></span>setHoldCurrentOffWhenNotMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StepperMotorMD22::setHoldCurrentOffWhenNotMoving </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00712">712</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1639,7 @@ Loger::LogLevel DETAIL;<br  />
 Loger::LogLevel FULL_DETAIL;<br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00336">336</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00322">322</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1600,7 +1668,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
 </dl>
 <p>Motor can have not physical end switches which would limits range of possible position. For the reason software limits has been introduced. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00252">252</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00249">249</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1696,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00256">256</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00253">253</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1657,7 +1725,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
 </dl>
 <p>Motor can have not physical end switches which would limits range of possible position. For the reason software limits has been introduced. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00260">260</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00257">257</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1753,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00264">264</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00261">261</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1713,7 +1781,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00511">511</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00509">509</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1741,7 +1809,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00153">153</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00150">150</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1771,7 +1839,7 @@ Loger::LogLevel FULL_DETAIL;<br  />
 <p>Set a pointer to StepperMotorUnitsConverter object. The StepperMotorUnitsConverter is an interface (abstract class) which provides two methods which are converting steps to arbitrary units and vice-versa. The user need to create its own class which inherits from StepperMotorUnitsConverter and implements the: 'float stepsToUnits(int
 steps)' and 'int unitsToSteps(float units)' methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00233">233</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00230">230</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1792,7 +1860,7 @@ steps)' and 'int unitsToSteps(float units)' methods. </p>
 
 <p>set the unit converter to default one, with a 1:1 conversion factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00244">244</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00241">241</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1828,7 +1896,7 @@ When Autostart flag is set to TRUE motor will automatically start moving to desi
 StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. When not set conversion coefficient is 1 (steps = 1 x units). <br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00206">206</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00203">203</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1926,7 @@ StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. W
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
 <p>see method <a class="el" href="class_stepper_motor_m_d22.html#a34838691f57999fd5c58a58e1a29196a" title="Set new position for the motor (no blocking)">setTargetPosition(float)</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00210">210</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00207">207</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1888,7 +1956,7 @@ StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. W
 
 <p>Reimplemented in <a class="el" href="class_stepper_motor_linear_m_d22.html#a48bffa4d1da8f4056f51b7bd0fdc11e5">StepperMotorLinearMD22</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00532">532</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00540">540</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1908,7 +1976,7 @@ StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. W
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00364">364</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00350">350</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1938,7 +2006,7 @@ StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. W
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current used to drive the motor. This will be in the range [05625A, 1.8A] and will be closest to the user requested value (but not exceed it). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00348">348</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00334">334</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1968,7 +2036,7 @@ StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. W
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the motor speed that was actually set. This speed may not be what the user requested, but a value closest to it (but not exceeding the provided limit) as permitted by the motor controller parameters </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00248">248</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00245">245</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -1991,7 +2059,7 @@ StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. W
 <p>Function starts the motor. When 'Autostart' is set to FALSE it allows to move motor.<br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00100">100</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00098">98</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -2026,7 +2094,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 
 <p>Reimplemented in <a class="el" href="class_stepper_motor_linear_m_d22.html#af10186016b16a5048b8eabaf07fd53d6">StepperMotorLinearMD22</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00114">114</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00111">111</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -2056,7 +2124,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 
 <p>Reimplemented in <a class="el" href="class_stepper_motor_linear_m_d22.html#aac2c4bc4dc2e2d69812a2ed1e6ded870">StepperMotorLinearMD22</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00403">403</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00389">389</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -2084,7 +2152,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00486">486</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00482">482</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -2112,7 +2180,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00506">506</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00504">504</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -2140,7 +2208,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00491">491</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8cc_source.html#l00489">489</a> of file <a class="el" href="_stepper_motor_m_d22_8cc_source.html">StepperMotorMD22.cc</a>.</p>
 
 </div>
 </div>
@@ -2165,7 +2233,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00569">569</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00579">579</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2189,7 +2257,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00603">603</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00613">613</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2213,7 +2281,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00610">610</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00620">620</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2237,7 +2305,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00608">608</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00618">618</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2329,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00601">601</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00611">611</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2285,7 +2353,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00600">600</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00610">610</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2309,7 +2377,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00605">605</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00615">615</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2333,7 +2401,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00611">611</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00621">621</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2357,7 +2425,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00597">597</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00607">607</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2381,7 +2449,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00599">599</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00609">609</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2405,7 +2473,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00594">594</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00604">604</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2429,7 +2497,31 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00604">604</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00614">614</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+
+</div>
+</div>
+<a id="a9ac217fdf54012fe525184606a34949c" name="a9ac217fdf54012fe525184606a34949c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac217fdf54012fe525184606a34949c">&#9670;&#160;</a></span>_holdCurrOffWhenNotMoving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StepperMotorMD22::_holdCurrOffWhenNotMoving {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00567">567</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2445,7 +2537,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00614">614</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00624">624</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2469,7 +2561,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00580">580</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00590">590</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2484,6 +2576,30 @@ Delays in communication can trigger effect that motor will move a few steps in c
       <table class="memname">
         <tr>
           <td class="memname">int StepperMotorMD22::_maxPositionLimitInSteps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00575">575</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+
+</div>
+</div>
+<a id="ae2114df805c44f557d03a6de354765b7" name="ae2114df805c44f557d03a6de354765b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2114df805c44f557d03a6de354765b7">&#9670;&#160;</a></span>_md22IsEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StepperMotorMD22::_md22IsEnabled {false}</td>
         </tr>
       </table>
   </td>
@@ -2517,7 +2633,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00567">567</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00577">577</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2541,7 +2657,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00574">574</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00584">584</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2565,7 +2681,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00561">561</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00571">571</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2589,7 +2705,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00577">577</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00587">587</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2613,7 +2729,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00560">560</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00570">570</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2637,7 +2753,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00556">556</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00560">560</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2661,7 +2777,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00557">557</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00561">561</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2685,7 +2801,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00573">573</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00583">583</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2709,7 +2825,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00575">575</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00585">585</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2733,7 +2849,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00606">606</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00616">616</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2757,7 +2873,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00571">571</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00581">581</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2781,7 +2897,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00563">563</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00573">573</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2805,7 +2921,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00596">596</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00606">606</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2829,7 +2945,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00564">564</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00574">574</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2853,7 +2969,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00592">592</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00602">602</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2877,7 +2993,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00579">579</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00589">589</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2901,7 +3017,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00585">585</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00595">595</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
@@ -2925,7 +3041,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00586">586</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stepper_motor_m_d22_8h_source.html#l00596">596</a> of file <a class="el" href="_stepper_motor_m_d22_8h_source.html">StepperMotorMD22.h</a>.</p>
 
 </div>
 </div>
