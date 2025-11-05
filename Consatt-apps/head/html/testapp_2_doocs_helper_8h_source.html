@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Consatt-apps<span id="projectnumber">&#160;00.38.00</span>
+   <div id="projectname">Consatt-apps<span id="projectnumber">&#160;00.39.00</span>
    </div>
   </td>
  </tr>
@@ -114,42 +114,41 @@ $(document).ready(function(){initNavTree('testapp_2_doocs_helper_8h_source.html'
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef DOOCSHELPER_H</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define DOOCSHELPER_H</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;eq_client.h&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;eq_fct.h&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span><a class="code hl_class" href="class_doocs_helper.html">DoocsHelper</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  EqFct* _parent;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_doocs_helper.html#a95e366fbd58d681bc9a2e5b633b02e42">   25</a></span>  <a class="code hl_function" href="class_doocs_helper.html#a95e366fbd58d681bc9a2e5b633b02e42">DoocsHelper</a>(EqFct* parent);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  D_zmqstring <a class="code hl_variable" href="class_doocs_helper.html#aa9ef482efbf4a65b1f25ced7d7d194d0">interruptAddressZmq</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  D_string <a class="code hl_variable" href="class_doocs_helper.html#a24c6239b1590b4d321f614a2476b4687">watchdogAddress</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  D_string <a class="code hl_variable" href="class_doocs_helper.html#a3e01a44656acf47303b91cdb40e8d70c">x2timerAddress</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  D_int <a class="code hl_variable" href="class_doocs_helper.html#ad48bb0a2b71585edbac8aa2aca9c9584">triggerSource</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_doocs_helper.html#a64b424cbaedbbac5510ba37cab4e598d">   32</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_helper.html#a64b424cbaedbbac5510ba37cab4e598d">update</a>();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  D_int _cmd;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  D_text _logFileTail;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  D_int _logFileTailLineNumber;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  D_int _logFileTailLineNumberAutoUpdate;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">int</span> _autoupdateCnt;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> loadLogFileTail();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">/* DOOCSHELPER_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_doocs_helper_html"><div class="ttname"><a href="class_doocs_helper.html">DoocsHelper</a></div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00020">DoocsHelper.h:20</a></div></div>
-<div class="ttc" id="aclass_doocs_helper_html_a24c6239b1590b4d321f614a2476b4687"><div class="ttname"><a href="class_doocs_helper.html#a24c6239b1590b4d321f614a2476b4687">DoocsHelper::watchdogAddress</a></div><div class="ttdeci">D_string watchdogAddress</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00028">DoocsHelper.h:28</a></div></div>
-<div class="ttc" id="aclass_doocs_helper_html_a3e01a44656acf47303b91cdb40e8d70c"><div class="ttname"><a href="class_doocs_helper.html#a3e01a44656acf47303b91cdb40e8d70c">DoocsHelper::x2timerAddress</a></div><div class="ttdeci">D_string x2timerAddress</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00029">DoocsHelper.h:29</a></div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;eq_fct.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span><a class="code hl_class" href="class_doocs_helper.html">DoocsHelper</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  EqFct* _parent;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_doocs_helper.html#a95e366fbd58d681bc9a2e5b633b02e42">   24</a></span>  <a class="code hl_function" href="class_doocs_helper.html#a95e366fbd58d681bc9a2e5b633b02e42">DoocsHelper</a>(EqFct* parent);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  D_zmqstring <a class="code hl_variable" href="class_doocs_helper.html#aa9ef482efbf4a65b1f25ced7d7d194d0">interruptAddressZmq</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  D_string <a class="code hl_variable" href="class_doocs_helper.html#a24c6239b1590b4d321f614a2476b4687">watchdogAddress</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  D_string <a class="code hl_variable" href="class_doocs_helper.html#a3e01a44656acf47303b91cdb40e8d70c">x2timerAddress</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  D_int <a class="code hl_variable" href="class_doocs_helper.html#ad48bb0a2b71585edbac8aa2aca9c9584">triggerSource</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_doocs_helper.html#a64b424cbaedbbac5510ba37cab4e598d">   31</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_doocs_helper.html#a64b424cbaedbbac5510ba37cab4e598d">update</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  D_int _cmd;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  D_text _logFileTail;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  D_int _logFileTailLineNumber;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  D_int _logFileTailLineNumberAutoUpdate;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> _autoupdateCnt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> loadLogFileTail();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">/* DOOCSHELPER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclass_doocs_helper_html"><div class="ttname"><a href="class_doocs_helper.html">DoocsHelper</a></div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00019">DoocsHelper.h:19</a></div></div>
+<div class="ttc" id="aclass_doocs_helper_html_a24c6239b1590b4d321f614a2476b4687"><div class="ttname"><a href="class_doocs_helper.html#a24c6239b1590b4d321f614a2476b4687">DoocsHelper::watchdogAddress</a></div><div class="ttdeci">D_string watchdogAddress</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00027">DoocsHelper.h:27</a></div></div>
+<div class="ttc" id="aclass_doocs_helper_html_a3e01a44656acf47303b91cdb40e8d70c"><div class="ttname"><a href="class_doocs_helper.html#a3e01a44656acf47303b91cdb40e8d70c">DoocsHelper::x2timerAddress</a></div><div class="ttdeci">D_string x2timerAddress</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00028">DoocsHelper.h:28</a></div></div>
 <div class="ttc" id="aclass_doocs_helper_html_a64b424cbaedbbac5510ba37cab4e598d"><div class="ttname"><a href="class_doocs_helper.html#a64b424cbaedbbac5510ba37cab4e598d">DoocsHelper::update</a></div><div class="ttdeci">void update()</div></div>
 <div class="ttc" id="aclass_doocs_helper_html_a95e366fbd58d681bc9a2e5b633b02e42"><div class="ttname"><a href="class_doocs_helper.html#a95e366fbd58d681bc9a2e5b633b02e42">DoocsHelper::DoocsHelper</a></div><div class="ttdeci">DoocsHelper(EqFct *parent)</div></div>
-<div class="ttc" id="aclass_doocs_helper_html_aa9ef482efbf4a65b1f25ced7d7d194d0"><div class="ttname"><a href="class_doocs_helper.html#aa9ef482efbf4a65b1f25ced7d7d194d0">DoocsHelper::interruptAddressZmq</a></div><div class="ttdeci">D_zmqstring interruptAddressZmq</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00027">DoocsHelper.h:27</a></div></div>
-<div class="ttc" id="aclass_doocs_helper_html_ad48bb0a2b71585edbac8aa2aca9c9584"><div class="ttname"><a href="class_doocs_helper.html#ad48bb0a2b71585edbac8aa2aca9c9584">DoocsHelper::triggerSource</a></div><div class="ttdeci">D_int triggerSource</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00031">DoocsHelper.h:31</a></div></div>
+<div class="ttc" id="aclass_doocs_helper_html_aa9ef482efbf4a65b1f25ced7d7d194d0"><div class="ttname"><a href="class_doocs_helper.html#aa9ef482efbf4a65b1f25ced7d7d194d0">DoocsHelper::interruptAddressZmq</a></div><div class="ttdeci">D_zmqstring interruptAddressZmq</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00026">DoocsHelper.h:26</a></div></div>
+<div class="ttc" id="aclass_doocs_helper_html_ad48bb0a2b71585edbac8aa2aca9c9584"><div class="ttname"><a href="class_doocs_helper.html#ad48bb0a2b71585edbac8aa2aca9c9584">DoocsHelper::triggerSource</a></div><div class="ttdeci">D_int triggerSource</div><div class="ttdef"><b>Definition</b> <a href="misc_2_doocs_helper_8h_source.html#l00030">DoocsHelper.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
