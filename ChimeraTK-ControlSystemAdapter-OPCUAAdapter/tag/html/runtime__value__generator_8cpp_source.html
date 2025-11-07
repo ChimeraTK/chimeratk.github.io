@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter<span id="projectnumber">&#160;04.00.04</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter<span id="projectnumber">&#160;04.00.05</span>
    </div>
   </td>
  </tr>
@@ -121,131 +121,133 @@ $(document).ready(function(){initNavTree('runtime__value__generator_8cpp_source.
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="runtime__value__generator_8h.html">runtime_value_generator.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="csa__opcua__adapter_8h.html">csa_opcua_adapter.h</a>&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;sys/sysinfo.h&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;ChimeraTK/ReadAnyGroup.h&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;ChimeraTK/ReadAnyGroup.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;sys/sysinfo.h&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">using </span>std::cout;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span>std::endl;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classruntime__value__generator.html#a4eaa81ea71a3d1685070edddd4219054">   36</a></span><a class="code hl_function" href="classruntime__value__generator.html#a4eaa81ea71a3d1685070edddd4219054">runtime_value_generator::runtime_value_generator</a>(boost::shared_ptr&lt;DevicePVManager&gt; <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  this-&gt;valueGeneratorThread = std::thread(&amp;<a class="code hl_function" href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">runtime_value_generator::generateValues</a>, <span class="keyword">this</span>, <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using </span>std::cout;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">using </span>std::endl;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_chimera_t_k.html">ChimeraTK</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classruntime__value__generator.html#a4eaa81ea71a3d1685070edddd4219054">   38</a></span><a class="code hl_function" href="classruntime__value__generator.html#a4eaa81ea71a3d1685070edddd4219054">runtime_value_generator::runtime_value_generator</a>(boost::shared_ptr&lt;DevicePVManager&gt; <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  this-&gt;valueGeneratorThread = std::thread(&amp;<a class="code hl_function" href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">runtime_value_generator::generateValues</a>, <span class="keyword">this</span>, <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b">   40</a></span><a class="code hl_function" href="classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b">runtime_value_generator::~runtime_value_generator</a>() {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  this-&gt;running = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">if</span>(this-&gt;valueGeneratorThread.joinable()) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    this-&gt;valueGeneratorThread.join();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b">   42</a></span><a class="code hl_function" href="classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b">runtime_value_generator::~runtime_value_generator</a>() {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  this-&gt;running = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">if</span>(this-&gt;valueGeneratorThread.joinable()) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    this-&gt;valueGeneratorThread.join();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">runtime_value_generator::generateValues</a>(boost::shared_ptr&lt;DevicePVManager&gt; <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  this-&gt;running = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  ReadAnyGroup readAnyGroup;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; pv : <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getAllProcessVariables()) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">if</span>(pv-&gt;isReadable()) readAnyGroup.add(pv);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  readAnyGroup.finalise();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// Time meassureing</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  clock_t start, end, im1, im2, writeTime;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  start = clock();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  end = clock();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">int</span> counter = 0;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">float</span> duration1 = 0.0f;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;accessChannel(0) = vector&lt;int32_t&gt;{(int32_t)start};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">while</span>(this-&gt;running) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">double</span> double_sine = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;amplitude&quot;</span>)-&gt;accessChannel(0).at(0) *</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        sin((2 * 3.141) / <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;period&quot;</span>)-&gt;accessChannel(0).at(0) *</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;accessChannel(0).at(0));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    int32_t int_sine = round(double_sine);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;double_sine&quot;</span>)-&gt;accessChannel(0) = vector&lt;double&gt;{double_sine};</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;double_sine&quot;</span>)-&gt;write();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;int_sine&quot;</span>)-&gt;accessChannel(0) = vector&lt;int32_t&gt;{int_sine};</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;int_sine&quot;</span>)-&gt;write();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;bool&quot;</span>)-&gt;accessChannel(0) =</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        vector&lt;ChimeraTK::Boolean&gt;{!<a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;bool&quot;</span>)-&gt;accessChannel(0).at(0)};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;bool&quot;</span>)-&gt;write();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Void&gt;(<span class="stringliteral">&quot;void&quot;</span>)-&gt;write();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;accessChannel(0) =</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        vector&lt;int32_t&gt;{(int32_t)((end - start) / (CLOCKS_PER_SEC / 1000))};</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;write();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    usleep(<a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;dt&quot;</span>)-&gt;accessChannel(0).at(0));</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    end = clock();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    counter = 0;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    writeTime = 0;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span>(int32_t i = 1000; i &lt; 65535; i = i + 1000) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="keywordtype">string</span> nameDouble = <span class="stringliteral">&quot;testDoubleArray_&quot;</span> + to_string(i);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordtype">string</span> nameInt = <span class="stringliteral">&quot;testIntArray_&quot;</span> + to_string(i);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      ProcessArray&lt;double&gt;::SharedPtr testDoubleArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(nameDouble);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      ProcessArray&lt;int32_t&gt;::SharedPtr testIntArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(nameInt);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">for</span>(int32_t k = 0; k &lt; i; k++) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">if</span>(k % 2 == 0) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          testDoubleArray-&gt;accessChannel(0).at(k) = rand() % 6 + 1;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>          testIntArray-&gt;accessChannel(0).at(k) = rand() % 6 + 1;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>          testDoubleArray-&gt;accessChannel(0).at(k) = rand() % 50 + 10;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>          testIntArray-&gt;accessChannel(0).at(k) = rand() % 50 + 10;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      im1 = clock();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      testDoubleArray-&gt;write();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      testIntArray-&gt;write();</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      im2 = clock();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      writeTime += im2 - im1;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      counter++;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    duration1 = ((float)writeTime / CLOCKS_PER_SEC) * 1000.0f;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    printf(<span class="stringliteral">&quot;1: %d write passes, duration write: %.3f ms\n&quot;</span>, counter, duration1);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    ProcessArray&lt;double&gt;::SharedPtr testDoubleArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;testDoubleArray_65535&quot;</span>);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    ProcessArray&lt;int32_t&gt;::SharedPtr testIntArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;testIntArray_65535&quot;</span>);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">for</span>(int32_t i = 0; i &lt; 65535; i++) {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">if</span>(i % 2 == 0) {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        testDoubleArray-&gt;accessChannel(0).at(i) = rand() % 6 + 1;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        testIntArray-&gt;accessChannel(0).at(i) = rand() % 6 + 1;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        testDoubleArray-&gt;accessChannel(0).at(i) = rand() % 50 + 10;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        testIntArray-&gt;accessChannel(0).at(i) = rand() % 50 + 10;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    clock_t tmp2 = clock();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">runtime_value_generator::generateValues</a>(boost::shared_ptr&lt;DevicePVManager&gt; <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  this-&gt;running = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  ReadAnyGroup readAnyGroup;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; pv : <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getAllProcessVariables()) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span>(pv-&gt;isReadable()) readAnyGroup.add(pv);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  readAnyGroup.finalise();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// Time meassureing</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  clock_t start, end, im1, im2, writeTime;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  start = clock();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  end = clock();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">int</span> counter = 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">float</span> duration1 = 0.0f;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;accessChannel(0) = vector&lt;int32_t&gt;{(int32_t)start};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordflow">while</span>(this-&gt;running) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">double</span> double_sine = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;amplitude&quot;</span>)-&gt;accessChannel(0).at(0) *</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        sin((2 * 3.141) / <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;period&quot;</span>)-&gt;accessChannel(0).at(0) *</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;accessChannel(0).at(0));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    int32_t int_sine = round(double_sine);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;double_sine&quot;</span>)-&gt;accessChannel(0) = vector&lt;double&gt;{double_sine};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;double_sine&quot;</span>)-&gt;write();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;int_sine&quot;</span>)-&gt;accessChannel(0) = vector&lt;int32_t&gt;{int_sine};</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;int_sine&quot;</span>)-&gt;write();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;bool&quot;</span>)-&gt;accessChannel(0) =</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        vector&lt;ChimeraTK::Boolean&gt;{!<a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;bool&quot;</span>)-&gt;accessChannel(0).at(0)};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Boolean&gt;(<span class="stringliteral">&quot;bool&quot;</span>)-&gt;write();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;ChimeraTK::Void&gt;(<span class="stringliteral">&quot;void&quot;</span>)-&gt;write();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;accessChannel(0) =</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        vector&lt;int32_t&gt;{(int32_t)((end - start) / (CLOCKS_PER_SEC / 1000))};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;t&quot;</span>)-&gt;write();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    usleep(<a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;dt&quot;</span>)-&gt;accessChannel(0).at(0));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    end = clock();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    counter = 0;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    writeTime = 0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">for</span>(int32_t i = 1000; i &lt; 65535; i = i + 1000) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keywordtype">string</span> nameDouble = <span class="stringliteral">&quot;testDoubleArray_&quot;</span> + to_string(i);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keywordtype">string</span> nameInt = <span class="stringliteral">&quot;testIntArray_&quot;</span> + to_string(i);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      ProcessArray&lt;double&gt;::SharedPtr testDoubleArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(nameDouble);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      ProcessArray&lt;int32_t&gt;::SharedPtr testIntArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(nameInt);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">for</span>(int32_t k = 0; k &lt; i; k++) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">if</span>(k % 2 == 0) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>          testDoubleArray-&gt;accessChannel(0).at(k) = rand() % 6 + 1;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>          testIntArray-&gt;accessChannel(0).at(k) = rand() % 6 + 1;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>          testDoubleArray-&gt;accessChannel(0).at(k) = rand() % 50 + 10;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          testIntArray-&gt;accessChannel(0).at(k) = rand() % 50 + 10;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      im1 = clock();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      testDoubleArray-&gt;write();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      testIntArray-&gt;write();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      im2 = clock();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      writeTime += im2 - im1;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      counter++;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    duration1 = ((float)writeTime / CLOCKS_PER_SEC) * 1000.0f;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    printf(<span class="stringliteral">&quot;1: %d write passes, duration write: %.3f ms\n&quot;</span>, counter, duration1);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    ProcessArray&lt;double&gt;::SharedPtr testDoubleArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;testDoubleArray_65535&quot;</span>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    ProcessArray&lt;int32_t&gt;::SharedPtr testIntArray = <a class="code hl_variable" href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a>-&gt;getProcessArray&lt;int32_t&gt;(<span class="stringliteral">&quot;testIntArray_65535&quot;</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">for</span>(int32_t i = 0; i &lt; 65535; i++) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <span class="keywordflow">if</span>(i % 2 == 0) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        testDoubleArray-&gt;accessChannel(0).at(i) = rand() % 6 + 1;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        testIntArray-&gt;accessChannel(0).at(i) = rand() % 6 + 1;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        testDoubleArray-&gt;accessChannel(0).at(i) = rand() % 50 + 10;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        testIntArray-&gt;accessChannel(0).at(i) = rand() % 50 + 10;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    testDoubleArray-&gt;write();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    testIntArray-&gt;write();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    clock_t tmp3 = clock();</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    duration1 = ((float)(tmp3 - tmp2) / CLOCKS_PER_SEC) * 1000.0f;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    printf(<span class="stringliteral">&quot;write pass 2, duration write: %.3f ms\n&quot;</span>, duration1);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">while</span>(readAnyGroup.readAnyNonBlocking().isValid()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    clock_t tmp2 = clock();</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    testDoubleArray-&gt;write();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    testIntArray-&gt;write();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    clock_t tmp3 = clock();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    duration1 = ((float)(tmp3 - tmp2) / CLOCKS_PER_SEC) * 1000.0f;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    printf(<span class="stringliteral">&quot;write pass 2, duration write: %.3f ms\n&quot;</span>, duration1);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">while</span>(readAnyGroup.readAnyNonBlocking().isValid()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
 </div>
-<div class="ttc" id="aclassruntime__value__generator_html_a192a29d42abc642591c62b35de3bfd3b"><div class="ttname"><a href="classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b">runtime_value_generator::~runtime_value_generator</a></div><div class="ttdeci">~runtime_value_generator()</div><div class="ttdef"><b>Definition</b> <a href="runtime__value__generator_8cpp_source.html#l00040">runtime_value_generator.cpp:40</a></div></div>
-<div class="ttc" id="aclassruntime__value__generator_html_a4eaa81ea71a3d1685070edddd4219054"><div class="ttname"><a href="classruntime__value__generator.html#a4eaa81ea71a3d1685070edddd4219054">runtime_value_generator::runtime_value_generator</a></div><div class="ttdeci">runtime_value_generator(boost::shared_ptr&lt; DevicePVManager &gt; devManager)</div><div class="ttdef"><b>Definition</b> <a href="runtime__value__generator_8cpp_source.html#l00036">runtime_value_generator.cpp:36</a></div></div>
-<div class="ttc" id="aclassruntime__value__generator_html_aff4ed499bd34677557e6779e2d71400c"><div class="ttname"><a href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">runtime_value_generator::generateValues</a></div><div class="ttdeci">void generateValues(boost::shared_ptr&lt; DevicePVManager &gt; devManager)</div><div class="ttdef"><b>Definition</b> <a href="runtime__value__generator_8cpp_source.html#l00047">runtime_value_generator.cpp:47</a></div></div>
+<div class="ttc" id="aclassruntime__value__generator_html_a192a29d42abc642591c62b35de3bfd3b"><div class="ttname"><a href="classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b">runtime_value_generator::~runtime_value_generator</a></div><div class="ttdeci">~runtime_value_generator()</div><div class="ttdef"><b>Definition</b> <a href="runtime__value__generator_8cpp_source.html#l00042">runtime_value_generator.cpp:42</a></div></div>
+<div class="ttc" id="aclassruntime__value__generator_html_a4eaa81ea71a3d1685070edddd4219054"><div class="ttname"><a href="classruntime__value__generator.html#a4eaa81ea71a3d1685070edddd4219054">runtime_value_generator::runtime_value_generator</a></div><div class="ttdeci">runtime_value_generator(boost::shared_ptr&lt; DevicePVManager &gt; devManager)</div><div class="ttdef"><b>Definition</b> <a href="runtime__value__generator_8cpp_source.html#l00038">runtime_value_generator.cpp:38</a></div></div>
+<div class="ttc" id="aclassruntime__value__generator_html_aff4ed499bd34677557e6779e2d71400c"><div class="ttname"><a href="classruntime__value__generator.html#aff4ed499bd34677557e6779e2d71400c">runtime_value_generator::generateValues</a></div><div class="ttdeci">void generateValues(boost::shared_ptr&lt; DevicePVManager &gt; devManager)</div><div class="ttdef"><b>Definition</b> <a href="runtime__value__generator_8cpp_source.html#l00049">runtime_value_generator.cpp:49</a></div></div>
 <div class="ttc" id="acsa__opcua__adapter_8h_html"><div class="ttname"><a href="csa__opcua__adapter_8h.html">csa_opcua_adapter.h</a></div></div>
-<div class="ttc" id="acsa__opcua__application_8cpp_html_ac2f3e4a3558922393e9e7577594138ba"><div class="ttname"><a href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::DevicePVManager &gt; devManager</div><div class="ttdef"><b>Definition</b> <a href="csa__opcua__application_8cpp_source.html#l00060">csa_opcua_application.cpp:60</a></div></div>
+<div class="ttc" id="acsa__opcua__application_8cpp_html_ac2f3e4a3558922393e9e7577594138ba"><div class="ttname"><a href="csa__opcua__application_8cpp.html#ac2f3e4a3558922393e9e7577594138ba">devManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::DevicePVManager &gt; devManager</div><div class="ttdef"><b>Definition</b> <a href="csa__opcua__application_8cpp_source.html#l00061">csa_opcua_application.cpp:61</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="csa__additionalvariable_8h_source.html#l00028">csa_additionalvariable.h:28</a></div></div>
 <div class="ttc" id="aruntime__value__generator_8h_html"><div class="ttname"><a href="runtime__value__generator_8h.html">runtime_value_generator.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

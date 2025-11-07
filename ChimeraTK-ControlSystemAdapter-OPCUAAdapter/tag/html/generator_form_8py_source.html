@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter<span id="projectnumber">&#160;04.00.04</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter<span id="projectnumber">&#160;04.00.05</span>
    </div>
   </td>
  </tr>
@@ -468,7 +468,7 @@ $(document).ready(function(){initNavTree('generator_form_8py_source.html',''); i
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>      unit = <span class="stringliteral">&quot;{} (Orig.: {})&quot;</span>.format(v.newUnit, v.unit)</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    node = QTreeWidgetItem(parent, [name]+[<span class="stringliteral">&quot;&quot;</span>]*2 + [unit] + [description]+[v.newDestination])</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">if</span> v.direction == <span class="stringliteral">&#39;control_system_to_application&#39;</span>:</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">if</span> <span class="stringliteral">&#39;control_system_to_application&#39;</span> <span class="keywordflow">in</span> v.direction:</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>      node.setBackground(0,QBrush(QColor(<span class="stringliteral">&quot;#fee8c8&quot;</span>)))</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordflow">else</span>:</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      node.setBackground(0,QBrush(QColor(<span class="stringliteral">&quot;#e5f5e0&quot;</span>)))</div>
@@ -749,7 +749,7 @@ $(document).ready(function(){initNavTree('generator_form_8py_source.html',''); i
 <div class="foldopen" id="foldopen00566" data-start="" data-end="">
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno"><a class="line" href="classctk__opcua__generator__tools_1_1generator_form_1_1_map_generator_form.html#aab00de8f4e80c422689445458828a560">  566</a></span>  <span class="keyword">def </span><a class="code hl_function" href="classctk__opcua__generator__tools_1_1generator_form_1_1_map_generator_form.html#aab00de8f4e80c422689445458828a560">addHistoryForInputs</a>(self, isChecked:bool, node:QTreeWidgetItem):</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    data = node.data(0, Qt.UserRole)</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="keywordflow">if</span> isinstance(data, XMLVar) <span class="keywordflow">and</span> data.direction == <span class="stringliteral">&#39;control_system_to_application&#39;</span>:</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="keywordflow">if</span> isinstance(data, XMLVar) <span class="keywordflow">and</span> (<span class="stringliteral">&#39;control_system_to_application&#39;</span> <span class="keywordflow">in</span> data.direction):</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>      <span class="keywordflow">if</span> isChecked:</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        self.<a class="code hl_variable" href="classctk__opcua__generator__tools_1_1generator_form_1_1_map_generator_form.html#ac160f22f4a96bb9af71372c88a0150cb">treeWidget</a><a class="code hl_variable" href="classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a39cb39b353e6115846817cc318abafac">treeWidget</a>.itemWidget(node, 2).setCurrentText(self.<a class="code hl_variable" href="classctk__opcua__generator__tools_1_1generator_u_i_1_1_ui___main_window.html#a8e03ff576462b28bffcb094ea673b8af">histories</a>.currentText())</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>      <span class="keywordflow">else</span>:</div>
@@ -1007,7 +1007,7 @@ $(document).ready(function(){initNavTree('generator_form_8py_source.html',''); i
 <div class="ttc" id="anamespacectk__opcua__generator__tools_1_1generator_class_html"><div class="ttname"><a href="namespacectk__opcua__generator__tools_1_1generator_class.html">ctk_opcua_generator_tools.generatorClass</a></div><div class="ttdef"><b>Definition</b> <a href="generator_class_8py_source.html#l00001">generatorClass.py:1</a></div></div>
 <div class="ttc" id="anamespacectk__opcua__generator__tools_1_1generator_u_i_html"><div class="ttname"><a href="namespacectk__opcua__generator__tools_1_1generator_u_i.html">ctk_opcua_generator_tools.generatorUI</a></div><div class="ttdef"><b>Definition</b> <a href="generator_u_i_8py_source.html#l00001">generatorUI.py:1</a></div></div>
 <div class="ttc" id="anamespacectk__opcua__generator__tools_1_1history_u_i_html"><div class="ttname"><a href="namespacectk__opcua__generator__tools_1_1history_u_i.html">ctk_opcua_generator_tools.historyUI</a></div><div class="ttdef"><b>Definition</b> <a href="history_u_i_8py_source.html#l00001">historyUI.py:1</a></div></div>
-<div class="ttc" id="aua__adapter_8cpp_html_af6cf19e40e97afb5a7c29f7b439d091d"><div class="ttname"><a href="ua__adapter_8cpp.html#af6cf19e40e97afb5a7c29f7b439d091d">str</a></div><div class="ttdeci">#define str(a)</div><div class="ttdef"><b>Definition</b> <a href="ua__adapter_8cpp_source.html#l00052">ua_adapter.cpp:52</a></div></div>
+<div class="ttc" id="aua__adapter_8cpp_html_af6cf19e40e97afb5a7c29f7b439d091d"><div class="ttname"><a href="ua__adapter_8cpp.html#af6cf19e40e97afb5a7c29f7b439d091d">str</a></div><div class="ttdeci">#define str(a)</div><div class="ttdef"><b>Definition</b> <a href="ua__adapter_8cpp_source.html#l00053">ua_adapter.cpp:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
