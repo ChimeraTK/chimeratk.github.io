@@ -1,9 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"class_test_dummy.html#a72ef645efb10190c2c01a38d8c901d71":[21,0,208,4],
-"class_test_dummy.html#aa1ede7926941251b65bf46228033fb63":[21,0,208,8],
-"class_test_dummy.html#aa5067318f24c35303b5316d122b8f362":[21,0,208,3],
-"class_test_dummy_1_1_backend_registerer.html":[21,0,208,0],
 "class_test_dummy_1_1_backend_registerer.html#a3ddcdbcee40de9541c2311c1edb59499":[21,0,208,0,0],
 "class_test_n_d_register_accessor_decorator.html":[21,0,211],
 "class_testable_device.html":[21,0,206],
@@ -249,5 +245,9 @@ var NAVTREEINDEX20 =
 "functions_y.html":[21,3,0,25],
 "functions_~.html":[21,3,0,26],
 "globals.html":[22,1,0,0],
-"globals.html":[22,1,0]
+"globals.html":[22,1,0],
+"globals_b.html":[22,1,0,1],
+"globals_c.html":[22,1,0,2],
+"globals_d.html":[22,1,0,3],
+"globals_defs.html":[22,1,5]
 };
