@@ -56,9 +56,9 @@ var test_fixed_point_converter_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a8be1a0362c864ef72d164217ee693df7", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a3173352b799446b904f94a55e21d9c42", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a73aa1a85dbb2f04233f0e01017071c70", null ],
-    [ "checkToCooked", "test_fixed_point_converter_8cpp.html#ad882e15ec48ff47ceb050e573c2cc1df", null ],
-    [ "checkToCookedOverflowNeg", "test_fixed_point_converter_8cpp.html#adc3ac53eaca804f520f6e447f9589ce1", null ],
-    [ "checkToCookedOverflowPos", "test_fixed_point_converter_8cpp.html#a48ef98e7a7ec6d83ef42d79d68fb6e51", null ],
-    [ "checkToRaw", "test_fixed_point_converter_8cpp.html#a939197390a7cf2e59457c1e230013cdf", null ],
+    [ "checkToCooked", "test_fixed_point_converter_8cpp.html#a8487c659b6f8bc23d203155e94ae69a7", null ],
+    [ "checkToCookedOverflowNeg", "test_fixed_point_converter_8cpp.html#a8628c55cf246ce27ed360f2a0c529ad9", null ],
+    [ "checkToCookedOverflowPos", "test_fixed_point_converter_8cpp.html#aa7370f7074c79b3417b214ba22d5eb0e", null ],
+    [ "checkToRaw", "test_fixed_point_converter_8cpp.html#ad7a88ca52714dc21609560db2fd6a804", null ],
     [ "typeName", "test_fixed_point_converter_8cpp.html#a9fb6fa1263817d41180caa399727ea28", null ]
 ];

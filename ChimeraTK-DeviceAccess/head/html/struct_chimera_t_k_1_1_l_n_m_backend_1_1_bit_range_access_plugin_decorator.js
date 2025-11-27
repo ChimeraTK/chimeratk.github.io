@@ -15,5 +15,5 @@ var struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator =
     [ "_temporaryVersion", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a2ac5c032bb7d28e56ab48d7cb014eeef", null ],
     [ "_userTypeMask", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a89e00f1f170ff4404b5eecb37f72bf28", null ],
     [ "_writeable", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#a9e05390f3f7aab227ad5f1fc25808eae", null ],
-    [ "fixedPointConverter", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ad0d3d30aaa8082e9e53520076492dc06", null ]
+    [ "fixedPointConverter", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html#ac2853b69e3cacf932abdb978868a4ec4", null ]
 ];

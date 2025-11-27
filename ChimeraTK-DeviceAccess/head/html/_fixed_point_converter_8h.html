@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h.html',''); i
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">FixedPointConverter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h.html',''); i
 <code>#include &lt;boost/fusion/container.hpp&gt;</code><br />
 <code>#include &lt;boost/fusion/sequence.hpp&gt;</code><br />
 <code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
+<code>#include &lt;bit&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
@@ -131,12 +132,12 @@ $(document).ready(function(){initNavTree('_fixed_point_converter_8h.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">ChimeraTK::FixedPointConverter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">ChimeraTK::FixedPointConverter&lt; RawType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fixed point converter provides conversion functions between a user type and up to 32 bit fixed point (signed or unsigned).  <a href="class_chimera_t_k_1_1_fixed_point_converter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html">ChimeraTK::FixedPointConverter::vectorToCooked_impl&lt; UserType, RAW_ITERATOR, COOKED_ITERATOR &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html">ChimeraTK::FixedPointConverter&lt; RawType &gt;::vectorToCooked_impl&lt; UserType, RAW_ITERATOR, COOKED_ITERATOR &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html">ChimeraTK::FixedPointConverter::vectorToCooked_impl&lt; std::string, RAW_ITERATOR, COOKED_ITERATOR &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html">ChimeraTK::FixedPointConverter&lt; RawType &gt;::vectorToCooked_impl&lt; std::string, RAW_ITERATOR, COOKED_ITERATOR &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -144,11 +145,10 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k" id="r_namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:afff8173557eb5f22e54120e7cd2e4697" id="r_afff8173557eb5f22e54120e7cd2e4697"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:afff8173557eb5f22e54120e7cd2e4697"><td class="memTemplItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afff8173557eb5f22e54120e7cd2e4697">ChimeraTK::FixedPointConverter::toRaw&lt; std::string &gt;</a> (std::string cookedValue) const</td></tr>
-<tr class="separator:afff8173557eb5f22e54120e7cd2e4697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab184234a078c9ec4a2b14b816523825f" id="r_ab184234a078c9ec4a2b14b816523825f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ab184234a078c9ec4a2b14b816523825f">ChimeraTK::DEPRECATED_FIXEDPOINT_DEFAULT</a> = int32_t</td></tr>
+<tr class="separator:ab184234a078c9ec4a2b14b816523825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
