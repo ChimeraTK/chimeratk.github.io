@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.05.01</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.06.00</span>
    </div>
   </td>
  </tr>
@@ -150,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0018a35b38723454b7dac740d386685c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe10f0eefc21537334640d9bed99f82f" id="r_abe10f0eefc21537334640d9bed99f82f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_array_accessor.html#abe10f0eefc21537334640d9bed99f82f">setitem</a> (size_t index, const UserTypeVariantNoVoid &amp;val)</td></tr>
 <tr class="separator:abe10f0eefc21537334640d9bed99f82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1571eb2c35523d5a70ec738fcf8d7d" id="r_a7d1571eb2c35523d5a70ec738fcf8d7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_array_accessor.html#a7d1571eb2c35523d5a70ec738fcf8d7d">setslice</a> (const py::slice &amp;slice, const UserTypeVariantNoVoid &amp;val)</td></tr>
+<tr class="separator:a7d1571eb2c35523d5a70ec738fcf8d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad01cc2ce8115282acd8b2fb00a76be0e" id="r_ad01cc2ce8115282acd8b2fb00a76be0e"><td class="memItemLeft" align="right" valign="top">py::buffer_info&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_array_accessor.html#ad01cc2ce8115282acd8b2fb00a76be0e">getBufferInfo</a> ()</td></tr>
 <tr class="separator:ad01cc2ce8115282acd8b2fb00a76be0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2075c1449f5525d7718877f1bffcbb" id="r_aed2075c1449f5525d7718877f1bffcbb"><td class="memItemLeft" align="right" valign="top">py::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_py_array_accessor.html#aed2075c1449f5525d7718877f1bffcbb">getattr</a> (const std::string &amp;name) const</td></tr>
@@ -430,7 +432,7 @@ template&lt;template&lt; typename &gt; class AccessorType&gt; </div>
 <p><a class="el" href="struct_chimera_t_k_1_1_array_output_push_r_b.html" title="Convenience class for output array accessors with return channel (&quot;read back&quot;) (always UpdateMode::pu...">ArrayOutputPushRB</a></p>
 <p><a class="el" href="struct_chimera_t_k_1_1_array_output_reverse_recovery.html">ArrayOutputReverseRecovery</a></p>
 
-<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00163">163</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00187">187</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -477,7 +479,7 @@ template&lt;template&lt; typename &gt; class AccessorType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8h_source.html#l00065">65</a> of file <a class="el" href="_py_array_accessor_8h_source.html">PyArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="_py_array_accessor_8h_source.html">PyArrayAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +498,7 @@ template&lt;template&lt; typename &gt; class AccessorType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00130">130</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00154">154</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -582,7 +584,7 @@ template&lt;template&lt; typename &gt; class AccessorType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00110">110</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00134">134</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -652,7 +654,37 @@ template&lt;template&lt; typename &gt; class AccessorType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00097">97</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00098">98</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
+
+</div>
+</div>
+<a id="a7d1571eb2c35523d5a70ec738fcf8d7d" name="a7d1571eb2c35523d5a70ec738fcf8d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1571eb2c35523d5a70ec738fcf8d7d">&#9670;&#160;</a></span>setslice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::PyArrayAccessor::setslice </td>
+          <td>(</td>
+          <td class="paramtype">const py::slice &amp;&#160;</td>
+          <td class="paramname"><em>slice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UserTypeVariantNoVoid &amp;&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8cc_source.html#l00112">112</a> of file <a class="el" href="_py_array_accessor_8cc_source.html">PyArrayAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -677,7 +709,7 @@ template&lt;template&lt; typename &gt; class AccessorType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8h_source.html#l00069">69</a> of file <a class="el" href="_py_array_accessor_8h_source.html">PyArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_array_accessor_8h_source.html#l00071">71</a> of file <a class="el" href="_py_array_accessor_8h_source.html">PyArrayAccessor.h</a>.</p>
 
 </div>
 </div>

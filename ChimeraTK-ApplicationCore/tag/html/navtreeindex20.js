@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#ab57bfe988be317b9c62228cfa69d97e8":[16,0,11,4,0,0],
+"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#ab57bfe988be317b9c62228cfa69d97e8":[14,0,17,4,0,0],
 "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#acbff9d2f444bd23eb0b34c170b8583d5":[16,0,11,4,0,3],
 "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#acbff9d2f444bd23eb0b34c170b8583d5":[14,0,17,4,0,3],
 "struct_tests_1_1test_circular_dependency_faulty_flags_1_1_b_b.html":[14,0,17,4,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html#a64c8755286814005618e54b70f90fb42":[14,0,17,5,2,0],
 "struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html#a64c8755286814005618e54b70f90fb42":[16,0,11,5,2,0],
 "struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html#a8875f03ebf555a9d0be50fc6f4bdf2f7":[16,0,11,5,2,1],
-"struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html#a8875f03ebf555a9d0be50fc6f4bdf2f7":[14,0,17,5,2,1],
-"struct_tests_1_1test_config_reader_1_1_test_application_two_configs.html":[16,0,11,5,3],
-"struct_tests_1_1test_config_reader_1_1_test_application_two_configs.html":[14,0,17,5,3]
+"struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html#a8875f03ebf555a9d0be50fc6f4bdf2f7":[14,0,17,5,2,1]
 };
