@@ -12,6 +12,7 @@ var namespace_tango_adapter =
     [ "AdapterDeviceImpl", "class_tango_adapter_1_1_adapter_device_impl.html", "class_tango_adapter_1_1_adapter_device_impl" ],
     [ "AttributeMapper", "class_tango_adapter_1_1_attribute_mapper.html", "class_tango_adapter_1_1_attribute_mapper" ],
     [ "AttributeProperty", "struct_tango_adapter_1_1_attribute_property.html", "struct_tango_adapter_1_1_attribute_property" ],
+    [ "DServerImpl", "class_tango_adapter_1_1_d_server_impl.html", "class_tango_adapter_1_1_d_server_impl" ],
     [ "ScalarAttribTempl", "class_tango_adapter_1_1_scalar_attrib_templ.html", "class_tango_adapter_1_1_scalar_attrib_templ" ],
     [ "SpectrumAttribTempl", "class_tango_adapter_1_1_spectrum_attrib_templ.html", "class_tango_adapter_1_1_spectrum_attrib_templ" ],
     [ "TangoAdapter", "class_tango_adapter_1_1_tango_adapter.html", "class_tango_adapter_1_1_tango_adapter" ],
@@ -22,6 +23,7 @@ var namespace_tango_adapter =
       [ "IMAGE", "namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca23a12f67f614b5518c7f1c2465bf95e3", null ]
     ] ],
     [ "arrayToString", "namespace_tango_adapter.html#a1364114c161c6ec2df03cfc4e6452a8f", null ],
+    [ "constructor", "namespace_tango_adapter.html#ae1c28d783a4bca6155adb75f8549d81c", null ],
     [ "createPropertyIfEmpty", "namespace_tango_adapter.html#ae67061b5b94fcbbfaa04a2cbd9ba3501", null ],
     [ "getProperty", "namespace_tango_adapter.html#aed63cab46c76529b37f135a89ae01940", null ],
     [ "setProperty", "namespace_tango_adapter.html#ab7a375c5a4a1e49e7605e9d6690120c8", null ],

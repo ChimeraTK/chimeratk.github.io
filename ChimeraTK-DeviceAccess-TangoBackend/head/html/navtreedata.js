@@ -58,9 +58,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_class_factory_8cpp.html",
-"class_tango_test_server__ns_1_1_float_scalar_attrib.html",
-"class_tango_test_server__ns_1_1_tango_test_server.html#a635461e15d9b952ae60a835028f40185",
-"struct_array_defaults.html"
+"class_tango_test_server__ns_1_1_float_ro_spectrum_attrib.html#a76d2438a1cb706b644428ec798d16453",
+"class_tango_test_server__ns_1_1_tango_test_server.html#a58dd73a733d307327c215877e70237a3",
+"struct_all_register_defaults.html#a765cd9283f1d3f977e939b4c4ffa5988"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
