@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_meta_data_propagating_register_decorator =
     [ "doPostRead", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a2d62a08acf2402410c8b26b1fb45c7ce", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a5e6b1c1b4f1bbe831d5784037c2b4ed8", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a0bff559ae4f9c5f2c588d08b992cb679", null ],
+    [ "getDisableDataValidityPropagation", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#ae41fe8714df5fda6898dd8e87e6c0aa5", null ],
     [ "getTargetValidity", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#ab6a36b7d3a5562cb340a721556174396", null ],
     [ "_direction", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a497b7f93a16eef91dbf42af35613f967", null ],
     [ "_disableDataValidityPropagation", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#aa21d35e1db1efe904153b1319d02bad9", null ],

@@ -1052,36 +1052,35 @@ $(document).ready(function(){initNavTree('test_status_monitor_8cc_source.html','
 <div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    <span class="comment">// lastStatusValidity</span></div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    BOOST_CHECK(status.readLatest());</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>    BOOST_CHECK(status == <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::StatusOutput::Status::OK));</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    <span class="comment">// StatusOutput by default does not propagate DataValidity=fault (behaviour was changed!)</span></div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    BOOST_CHECK(status.dataValidity() == ctk::DataValidity::ok);</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span> </div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    watch = 55.0;</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    watch.write();</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    status.readLatest();</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    <span class="comment">// status is changed, data validity is not changed -&gt; test condition: status.value != newStatus</span></div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    BOOST_CHECK(status == <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::StatusOutput::Status::WARNING));</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    BOOST_CHECK(status.dataValidity() == ctk::DataValidity::ok);</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span> </div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    watch = 70.0;</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    watch.setDataValidity(ctk::DataValidity::ok);</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    watch.write();</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    status.readLatest();</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    <span class="comment">// status is changed, data validity is changed -&gt; test condition: status.value != newStatus</span></div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    BOOST_CHECK(status == <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::StatusOutput::Status::FAULT));</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    BOOST_CHECK(status.dataValidity() == ctk::DataValidity::ok);</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    watch = 75.0;</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    watch.setDataValidity(ctk::DataValidity::ok);</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    watch.write();</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    <span class="comment">// status is not changed, data validity is not changed -&gt; test that there is no new value of status</span></div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    BOOST_CHECK(status.readLatest() == <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>  }</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    BOOST_CHECK(status.dataValidity() == ctk::DataValidity::faulty);</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    watch = 55.0;</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    watch.write();</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    status.readLatest();</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    <span class="comment">// status is changed, data validity is not changed -&gt; test condition: status.value != newStatus</span></div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    BOOST_CHECK(status == <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::StatusOutput::Status::WARNING));</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    BOOST_CHECK(status.dataValidity() == ctk::DataValidity::faulty);</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span> </div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    watch = 70.0;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    watch.setDataValidity(ctk::DataValidity::ok);</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    watch.write();</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    status.readLatest();</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    <span class="comment">// status is changed, data validity is changed -&gt; test condition: status.value != newStatus</span></div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    BOOST_CHECK(status == <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ChimeraTK::StatusOutput::Status::FAULT));</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    BOOST_CHECK(status.dataValidity() == ctk::DataValidity::ok);</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    watch = 75.0;</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    watch.setDataValidity(ctk::DataValidity::ok);</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    watch.write();</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780">stepApplication</a>();</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    <span class="comment">// status is not changed, data validity is not changed -&gt; test that there is no new value of status</span></div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    BOOST_CHECK(status.readLatest() == <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  }</div>
 </div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>} <span class="comment">// namespace Tests::testStatusMonitor</span></div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>} <span class="comment">// namespace Tests::testStatusMonitor</span></div>
 </div>
 <div class="ttc" id="a_application_8h_html"><div class="ttname"><a href="_application_8h.html">Application.h</a></div></div>
 <div class="ttc" id="a_scalar_accessor_8h_html"><div class="ttname"><a href="_scalar_accessor_8h.html">ScalarAccessor.h</a></div></div>

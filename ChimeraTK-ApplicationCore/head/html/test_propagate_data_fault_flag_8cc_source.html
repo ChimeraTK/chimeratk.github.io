@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    test.<a class="code hl_function" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a>();</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">// test if fault flag propagates to all outputs, except oStat</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">// test if fault flag propagates to all outputs</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    i1 = 1;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    i1.setDataValidity(ctk::DataValidity::faulty);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    i1.write();</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('test_propagate_data_fault_flag_8cc_sou
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    oStat.read();</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    BOOST_CHECK(o1.dataValidity() == ctk::DataValidity::faulty);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    BOOST_CHECK(o2.dataValidity() == ctk::DataValidity::faulty);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    BOOST_CHECK(oStat.dataValidity() == ctk::DataValidity::ok);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    BOOST_CHECK(oStat.dataValidity() == ctk::DataValidity::faulty);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    BOOST_CHECK_EQUAL(<span class="keywordtype">int</span>(o1), 1);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    BOOST_CHECK_EQUAL(o2[0], 0);</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    BOOST_CHECK_EQUAL(o2[1], 0);</div>
