@@ -52,6 +52,7 @@ var dir_cd2eacd0d4a0b1b44be2af10e62d9e9e =
     [ "testScalarRegisterAccessor.cpp", "test_scalar_register_accessor_8cpp.html", "test_scalar_register_accessor_8cpp" ],
     [ "testSharedDummyBackend.cpp", "test_shared_dummy_backend_8cpp.html", "test_shared_dummy_backend_8cpp" ],
     [ "testSharedDummyBackendUnified.cpp", "test_shared_dummy_backend_unified_8cpp.html", "test_shared_dummy_backend_unified_8cpp" ],
+    [ "testSubArrayAccessorDecorator.cc", "test_sub_array_accessor_decorator_8cc.html", "test_sub_array_accessor_decorator_8cc" ],
     [ "testSubdeviceBackend.cpp", "test_subdevice_backend_8cpp.html", "test_subdevice_backend_8cpp" ],
     [ "testSubdeviceBackendUnified.cpp", "test_subdevice_backend_unified_8cpp.html", "test_subdevice_backend_unified_8cpp" ],
     [ "testTransferElement.cpp", "test_transfer_element_8cpp.html", "test_transfer_element_8cpp" ],

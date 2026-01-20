@@ -280,6 +280,7 @@ var hierarchy =
                 [ "InvalidDummyBackend", "class_invalid_dummy_backend.html", null ],
                 [ "NewBackend", "struct_new_backend.html", null ],
                 [ "NotRegisteringPlugin", "struct_not_registering_plugin.html", null ],
+                [ "SubArrayDecoratorTestBackend", "class_sub_array_decorator_test_backend.html", null ],
                 [ "TestDummy", "class_test_dummy.html", null ],
                 [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
                 [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
@@ -334,6 +335,7 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::DataConsistencyDecorator< UserType >", "class_chimera_t_k_1_1_data_consistency_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::FanOutPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin_decorator.html", null ],
+              [ "DoNothingDecorator< UserType >", "class_do_nothing_decorator.html", null ],
               [ "TestNDRegisterAccessorDecorator< UserType >", "class_test_n_d_register_accessor_decorator.html", null ]
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
@@ -864,6 +866,7 @@ var hierarchy =
       [ "TestRegisterRoCasted< T >", "struct_test_register_ro_casted.html", null ],
       [ "TestRegisterRoRangeChecked< T >", "struct_test_register_ro_range_checked.html", null ]
     ] ],
+    [ "TheFixture", "struct_the_fixture.html", null ],
     [ "ChimeraTK::ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", null ],
     [ "ThrowTestFixture", "struct_throw_test_fixture.html", [
       [ "CieWritableTestFixture", "struct_cie_writable_test_fixture.html", null ],
@@ -902,6 +905,7 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
+        [ "ChimeraTK::OneDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [
           [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", null ]
         ] ],

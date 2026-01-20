@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.25.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.26.00</span>
    </div>
   </td>
  </tr>
@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f0665538d48ad46a558af532f647a72" id="r_a3f0665538d48ad46a558af532f647a72"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a3f0665538d48ad46a558af532f647a72">isHidden</a> () const</td></tr>
 <tr class="memdesc:a3f0665538d48ad46a558af532f647a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the register is "hidden", meaning it won't be listed when iterating the catalogue.  <br /></td></tr>
 <tr class="separator:a3f0665538d48ad46a558af532f647a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75708e5cdf68d177686cf75ce939990" id="r_aa75708e5cdf68d177686cf75ce939990"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#aa75708e5cdf68d177686cf75ce939990">operator==</a> (const <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a> &amp;) const =default</td></tr>
+<tr class="memdesc:aa75708e5cdf68d177686cf75ce939990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default comparison so inheriting classes can define a default comparison.  <br /></td></tr>
+<tr class="separator:aa75708e5cdf68d177686cf75ce939990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DeviceBackend-independent register description. </p>
@@ -297,7 +300,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of dimensions of this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00072">72</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00075">75</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>
@@ -539,6 +542,34 @@ Public Member Functions</h2></td></tr>
 <p>Return whether the register is writeable. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa">ChimeraTK::LNMBackendRegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#ad88d4b62f26408e41ce076c3d9faa3b8">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a">myRegisterInfo</a>.</p>
+
+</div>
+</div>
+<a id="aa75708e5cdf68d177686cf75ce939990" name="aa75708e5cdf68d177686cf75ce939990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75708e5cdf68d177686cf75ce939990">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::BackendRegisterInfoBase::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html">BackendRegisterInfoBase</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default comparison so inheriting classes can define a default comparison. </p>
 
 </div>
 </div>
