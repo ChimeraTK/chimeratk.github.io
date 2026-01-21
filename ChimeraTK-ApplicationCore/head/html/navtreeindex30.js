@@ -1,5 +1,15 @@
 var NAVTREEINDEX30 =
 {
+"test_connected_destruction_8cc_source.html":[17,0,0,0,8,1,6],
+"test_connected_destruction_runner_8cc.html":[17,0,0,0,8,1,0,0],
+"test_connected_destruction_runner_8cc.html#a0d61581262af1111ecdb4bfb38b0b780":[17,0,0,0,8,1,0,0,13],
+"test_connected_destruction_runner_8cc.html#a1d326ed4432bd208b3fbffaa8a08846f":[17,0,0,0,8,1,0,0,20],
+"test_connected_destruction_runner_8cc.html#a2e6a84bfe27501697e703566eed9ad46":[17,0,0,0,8,1,0,0,14],
+"test_connected_destruction_runner_8cc.html#a5b5037ea0e2ead4e274a6b34a7338bbb":[17,0,0,0,8,1,0,0,15],
+"test_connected_destruction_runner_8cc.html#a67c0b4f40d7bef317bb9f70a6c36fafa":[17,0,0,0,8,1,0,0,16],
+"test_connected_destruction_runner_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[17,0,0,0,8,1,0,0,12],
+"test_connected_destruction_runner_8cc.html#a8f5f7f6cef83a7b36f74d20ebb54270e":[17,0,0,0,8,1,0,0,19],
+"test_connected_destruction_runner_8cc.html#aaf69b2beb76c0e6945c818b034232526":[17,0,0,0,8,1,0,0,18],
 "test_connected_destruction_runner_8cc.html#adb66f5731cc380334acc8cd0e99d8f55":[17,0,0,0,8,1,0,0,17],
 "test_connected_destruction_runner_8cc_source.html":[17,0,0,0,8,1,0,0],
 "test_control_system_accessors_8cc.html":[17,0,0,0,8,1,7],
@@ -239,15 +249,5 @@ var NAVTREEINDEX30 =
 "test_modules_8cc_source.html":[17,0,0,0,8,1,20],
 "test_optimise_unmapped_variables_8cc.html":[17,0,0,0,8,1,21],
 "test_optimise_unmapped_variables_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[17,0,0,0,8,1,21,2],
-"test_optimise_unmapped_variables_8cc.html#a99132c7e07f9d68129dcc80607273d43":[17,0,0,0,8,1,21,3],
-"test_optimise_unmapped_variables_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e":[17,0,0,0,8,1,21,1],
-"test_optimise_unmapped_variables_8cc_source.html":[17,0,0,0,8,1,21],
-"test_periodic_trigger_8cc.html":[17,0,0,0,8,1,22],
-"test_periodic_trigger_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[17,0,0,0,8,1,22,2],
-"test_periodic_trigger_8cc.html#aa09a8b785d645f97d14e1e8fec8d8e69":[17,0,0,0,8,1,22,3],
-"test_periodic_trigger_8cc_source.html":[17,0,0,0,8,1,22],
-"test_process_variable_recovery_8cc.html":[17,0,0,0,8,1,23],
-"test_process_variable_recovery_8cc.html#a22eccacf4602ece9fa0a2ad5d2d36ccf":[17,0,0,0,8,1,23,7],
-"test_process_variable_recovery_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[17,0,0,0,8,1,23,5],
-"test_process_variable_recovery_8cc.html#a7d482fa2d685cf3f6d3f28f31472ab0f":[17,0,0,0,8,1,23,6]
+"test_optimise_unmapped_variables_8cc.html#a99132c7e07f9d68129dcc80607273d43":[17,0,0,0,8,1,21,3]
 };
