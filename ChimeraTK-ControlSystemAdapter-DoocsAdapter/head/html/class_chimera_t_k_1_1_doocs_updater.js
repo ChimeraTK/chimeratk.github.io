@@ -3,7 +3,7 @@ var class_chimera_t_k_1_1_doocs_updater =
     [ "ToDoocsUpdateDescriptor", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor" ],
     [ "DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html#aef6a67aaf5c6d23876125a1a4460104e", null ],
     [ "~DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329", null ],
-    [ "addVariable", "class_chimera_t_k_1_1_doocs_updater.html#a3003e0e0e71921ef9cfa9644884f46a0", null ],
+    [ "addVariable", "class_chimera_t_k_1_1_doocs_updater.html#ae73af569005bfdfb11fea9e7897532a7", null ],
     [ "getElementsToRead", "class_chimera_t_k_1_1_doocs_updater.html#a44bed815e9c87f931a8fe8130b126e1c", null ],
     [ "getMappedProcessVariable", "class_chimera_t_k_1_1_doocs_updater.html#ac2b3730f5c241043fe64771a665495cf", null ],
     [ "getMappedProcessVariable", "class_chimera_t_k_1_1_doocs_updater.html#a8987d09f5a5a62e33e2eff8dcf9cad1f", null ],
