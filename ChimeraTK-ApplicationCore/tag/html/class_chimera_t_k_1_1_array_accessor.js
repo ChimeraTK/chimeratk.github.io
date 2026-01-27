@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_array_accessor =
 [
     [ "value_type", "class_chimera_t_k_1_1_array_accessor.html#aeb4d7a6e8a4a1fc12f7ed46705bc8747", null ],
     [ "ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a3936202769effce91c764e35645f46f1", null ],
+    [ "~ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a0592148091bdcf0e2b272c890e36df62", null ],
     [ "ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a0f2f61d3e0c96cbf787c5856eba8dc96", null ],
     [ "ArrayAccessor", "class_chimera_t_k_1_1_array_accessor.html#a11ffbe8469a64d2c14f7d3c99b3bc7f9", null ],
     [ "operator=", "class_chimera_t_k_1_1_array_accessor.html#a4796b51c6eeda3a8d68cbb76b4746c3b", null ],

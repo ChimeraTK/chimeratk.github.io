@@ -33,7 +33,7 @@ var searchData=
   ['visitorder_30',['VisitOrder',['../struct_chimera_t_k_1_1_model_1_1_visit_order.html',1,'ChimeraTK::Model']]],
   ['visitorhelper_31',['VisitorHelper',['../struct_chimera_t_k_1_1_model_1_1detail_1_1_visitor_helper.html',1,'ChimeraTK::Model::detail']]],
   ['voidaccessor_32',['VoidAccessor',['../class_chimera_t_k_1_1_void_accessor.html',1,'ChimeraTK']]],
-  ['voidinput_33',['VoidInput',['../struct_chimera_t_k_1_1_void_input.html',1,'ChimeraTK']]],
-  ['voidoutput_34',['VoidOutput',['../struct_chimera_t_k_1_1_void_output.html',1,'ChimeraTK']]],
+  ['voidinput_33',['VoidInput',['../class_chimera_t_k_1_1_void_input.html',1,'ChimeraTK']]],
+  ['voidoutput_34',['VoidOutput',['../class_chimera_t_k_1_1_void_output.html',1,'ChimeraTK']]],
   ['voidtypetag_35',['VoidTypeTag',['../class_chimera_t_k_1_1_void_type_tag.html',1,'ChimeraTK']]]
 ];

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.06.00</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.00</span>
    </div>
   </td>
  </tr>
@@ -318,9 +318,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a73b2217a049bc013c525ae917de2018e" id="r_a73b2217a049bc013c525ae917de2018e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_status_output.html">StatusOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a73b2217a049bc013c525ae917de2018e">_status</a></td></tr>
+<tr class="memitem:a73b2217a049bc013c525ae917de2018e" id="r_a73b2217a049bc013c525ae917de2018e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_status_output.html">StatusOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a73b2217a049bc013c525ae917de2018e">_status</a></td></tr>
 <tr class="separator:a73b2217a049bc013c525ae917de2018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1780e97305f987139e014af7ce94bd" id="r_a9a1780e97305f987139e014af7ce94bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a9a1780e97305f987139e014af7ce94bd">_message</a></td></tr>
+<tr class="memitem:a9a1780e97305f987139e014af7ce94bd" id="r_a9a1780e97305f987139e014af7ce94bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a9a1780e97305f987139e014af7ce94bd">_message</a></td></tr>
 <tr class="separator:a9a1780e97305f987139e014af7ce94bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -380,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a> for error status and message reporting. </p>
-<p>Convenience methods ensure that status and message are updated consistently. Like <a class="el" href="struct_chimera_t_k_1_1_status_output.html" title="Special ScalarOutput which represents a status which can be aggregated by the StatusAggregator.">StatusOutput</a>, by default does not propagate DataValidity=invalid of owning module to status and message. </p>
+<p>Convenience methods ensure that status and message are updated consistently. Like <a class="el" href="class_chimera_t_k_1_1_status_output.html" title="Special ScalarOutput which represents a status which can be aggregated by the StatusAggregator.">StatusOutput</a>, by default does not propagate DataValidity=invalid of owning module to status and message. </p>
 
 <p class="definition">Definition at line <a class="el" href="_status_with_message_8h_source.html#l00026">26</a> of file <a class="el" href="_status_with_message_8h_source.html">StatusWithMessage.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -481,7 +481,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set status and message but to not write. </p>
 <p>This is useful when using <a class="el" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb" title="Just call write() on all writable variables in the group.">writeAll()</a> on parent. status must be != OK. To set an OK status, use <a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a3814e4f5f1d2b817a09aa0df68e12284" title="Set status to OK and clear the message, but to not write.">setOk()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00053">53</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00051">51</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 
 </div>
 </div>
@@ -503,7 +503,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set status to OK and clear the message, but to not write. </p>
 <p>This is useful when using <a class="el" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb" title="Just call write() on all writable variables in the group.">writeAll()</a> on parent. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00061">61</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00059">59</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 
 </div>
 </div>
@@ -536,7 +536,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the status and the message and write the outputs. </p>
 <p>status must be != OK. To set an OK status, use <a class="el" href="struct_chimera_t_k_1_1_status_with_message.html#a130a76dc4b5917131d460e05063555cb" title="Set status to OK, clear the message and write the outputs.">writeOk()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00019">19</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00017">17</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 
 </div>
 </div>
@@ -566,7 +566,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00026">26</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00024">24</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set status to OK, clear the message and write the outputs. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00034">34</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00032">32</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 
 </div>
 </div>
@@ -606,7 +606,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00041">41</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_with_message_8cc_source.html#l00039">39</a> of file <a class="el" href="_status_with_message_8cc_source.html">StatusWithMessage.cc</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt;std::string&gt; ChimeraTK::StatusWithMessage::_message</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_output.html">ScalarOutput</a>&lt;std::string&gt; ChimeraTK::StatusWithMessage::_message</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -634,7 +634,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_status_output.html">StatusOutput</a> ChimeraTK::StatusWithMessage::_status</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_status_output.html">StatusOutput</a> ChimeraTK::StatusWithMessage::_status</td>
         </tr>
       </table>
 </div><div class="memdoc">

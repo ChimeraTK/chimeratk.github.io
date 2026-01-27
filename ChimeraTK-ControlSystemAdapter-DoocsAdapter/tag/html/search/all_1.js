@@ -6,7 +6,7 @@ var searchData=
   ['adddescription_3',['addDescription',['../class_chimera_t_k_1_1_variable_mapper.html#a563cd14f1ae7d4347e61ff2fd202fd8b',1,'ChimeraTK::VariableMapper']]],
   ['addparameteraccessors_4',['addParameterAccessors',['../class_chimera_t_k_1_1_doocs_spectrum.html#a7104a8a71f761debaa3839dd43b1c7c7',1,'ChimeraTK::DoocsSpectrum']]],
   ['addtofan_5',['addToFan',['../class_chimera_t_k_1_1_routing_decorator.html#a6b2593411ef1ea33c0b171121020ab10',1,'ChimeraTK::RoutingDecorator']]],
-  ['addvariable_6',['addVariable',['../class_chimera_t_k_1_1_doocs_updater.html#a3003e0e0e71921ef9cfa9644884f46a0',1,'ChimeraTK::DoocsUpdater']]],
+  ['addvariable_6',['addVariable',['../class_chimera_t_k_1_1_doocs_updater.html#ae73af569005bfdfb11fea9e7897532a7',1,'ChimeraTK::DoocsUpdater']]],
   ['alen_7',['alen',['../server_test_array_persistence_8cpp.html#aa8796073098224db5cfabe2e283607fc',1,'serverTestArrayPersistence.cpp']]],
   ['application_20into_20doocs_8',['Integrating your control system application into DOOCS',['../index.html#Integration',1,'']]],
   ['arraysize_9',['arraySize',['../struct_device_fixture.html#a52ece4cb6eea17e9c344cc6a33549526',1,'DeviceFixture']]],

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.14.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.00</span>
    </div>
   </td>
  </tr>
@@ -138,9 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafe7082f09c25245074fed216d78c528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95813ee7f671133d514189c3c033286" id="r_ae95813ee7f671133d514189c3c033286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">stop</a> ()</td></tr>
 <tr class="separator:ae95813ee7f671133d514189c3c033286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3003e0e0e71921ef9cfa9644884f46a0" id="r_a3003e0e0e71921ef9cfa9644884f46a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a3003e0e0e71921ef9cfa9644884f46a0">addVariable</a> (ChimeraTK::TransferElementAbstractor variable, EqFct *eq_fct=nullptr, const std::function&lt; void()&gt; &amp;updaterFunction={})</td></tr>
-<tr class="memdesc:a3003e0e0e71921ef9cfa9644884f46a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a variable to be updated.  <br /></td></tr>
-<tr class="separator:a3003e0e0e71921ef9cfa9644884f46a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73af569005bfdfb11fea9e7897532a7" id="r_ae73af569005bfdfb11fea9e7897532a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ae73af569005bfdfb11fea9e7897532a7">addVariable</a> (const ChimeraTK::TransferElementAbstractor &amp;variable, EqFct *eq_fct, const std::function&lt; void()&gt; &amp;updaterFunction={})</td></tr>
+<tr class="memdesc:ae73af569005bfdfb11fea9e7897532a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a variable to be updated.  <br /></td></tr>
+<tr class="separator:ae73af569005bfdfb11fea9e7897532a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44bed815e9c87f931a8fe8130b126e1c" id="r_a44bed815e9c87f931a8fe8130b126e1c"><td class="memItemLeft" align="right" valign="top">const std::list&lt; ChimeraTK::TransferElementAbstractor &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a44bed815e9c87f931a8fe8130b126e1c">getElementsToRead</a> ()</td></tr>
 <tr class="separator:a44bed815e9c87f931a8fe8130b126e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b3730f5c241043fe64771a665495cf" id="r_ac2b3730f5c241043fe64771a665495cf"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
@@ -226,8 +226,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3003e0e0e71921ef9cfa9644884f46a0" name="a3003e0e0e71921ef9cfa9644884f46a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3003e0e0e71921ef9cfa9644884f46a0">&#9670;&#160;</a></span>addVariable()</h2>
+<a id="ae73af569005bfdfb11fea9e7897532a7" name="ae73af569005bfdfb11fea9e7897532a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73af569005bfdfb11fea9e7897532a7">&#9670;&#160;</a></span>addVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,14 +235,14 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::DoocsUpdater::addVariable </td>
           <td>(</td>
-          <td class="paramtype">ChimeraTK::TransferElementAbstractor&#160;</td>
+          <td class="paramtype">const ChimeraTK::TransferElementAbstractor &amp;&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">EqFct *&#160;</td>
-          <td class="paramname"><em>eq_fct</em> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>eq_fct</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -259,7 +259,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a variable to be updated. </p>
-<p>Together with the TransferElementAbstractor pointing to the ChimeraTK::ProcessArray, the EqFct* to obtain the lock for and a function to be called which executes the actual update should be specified. The lock is held while the updaterFunction is called, so it must neither obtained nor freed within the updaterFunction. eq_fct and updateFunction can be empty, in case the variable is used by only by other updaterFunctions. </p>
+<p>Together with the TransferElementAbstractor pointing to the ChimeraTK::ProcessArray, the EqFct* to obtain the lock for and a function to be called which executes the actual update should be specified. The lock is held while read operations are executed on the accessor and while the updaterFunction is called, so it must neither obtained nor released within the updaterFunction. updateFunction can be empty, in case the variable is used by only by other updaterFunctions. </p>
 
 <p class="definition">Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00013">13</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
@@ -288,7 +288,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00055">55</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00054">54</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00087">87</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00086">86</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00067">67</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00066">66</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00070">70</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00069">69</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00072">72</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00071">71</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +547,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00071">71</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00070">70</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +571,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00073">73</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00072">72</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -595,7 +595,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00081">81</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00080">80</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -611,7 +611,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00057">57</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
