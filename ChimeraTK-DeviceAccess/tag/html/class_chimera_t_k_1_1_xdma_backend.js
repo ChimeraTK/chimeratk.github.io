@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_xdma_backend =
 [
-    [ "XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html#affd02be57cac49a6c7eb0567c3e4234e", null ],
-    [ "~XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html#aed872f5a3552be637e6318ea3c356b0d", null ],
+    [ "XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html#a3cd95834b1400abbea4fa9ed86bdb1d1", null ],
+    [ "~XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html#ad045278c6cfabc8c23ffbe1a2822d8d0", null ],
     [ "activateSubscription", "class_chimera_t_k_1_1_xdma_backend.html#adeb02157773bcdd75a2494cd1d23d7a7", null ],
     [ "closeImpl", "class_chimera_t_k_1_1_xdma_backend.html#a97255f0fb2bac735b14d2cad046f0e36", null ],
     [ "dump", "class_chimera_t_k_1_1_xdma_backend.html#a01d15c73dbcea086ba5b7eb2846a0528", null ],

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.25.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.26.00</span>
    </div>
   </td>
  </tr>
@@ -263,7 +263,7 @@ monostableTrigger</h3>
 <p>Note that writing to the logical register will block for the full duration of the two target write transfers including the delay.</p>
 <h3><a class="anchor" id="plugins_reference_type_hint_modifier"></a>
 typeHintModifier</h3>
-<p>The <code>typeHintModifier</code> is a simple plugin to change the type of the mapped variable in logical name mapper's catalogue. It does, however, <b>NOT</b> perform any type conversion on its own.</p>
+<p>The <code>typeHintModifier</code> is a simple plugin to change the type of the mapped variable in logical name mapper's catalogue. It does, however, <b>NOT</b> perform any type conversion on its own. In the context of ApplicationCore, use this to request conversion from the transport-layer type (raw type) to another type. Note that type conversion is implemented by clamping.</p>
 <p>Parameters:</p><ul>
 <li><code>type</code>: New type. The same type names as for <a class="el" href="lmap.html#variables_and_constants">Variables and constants</a> are supported.</li>
 </ul>

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.25.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.26.00</span>
    </div>
   </td>
  </tr>
@@ -172,12 +172,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4829e36d86c4f96563185b97c2ee498" id="r_af4829e36d86c4f96563185b97c2ee498"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a84fe39d878fadf389f4cbbbe31590ae5">BackendID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#af4829e36d86c4f96563185b97c2ee498">getInvolvedBackendIDs</a> ()=0</td></tr>
 <tr class="memdesc:af4829e36d86c4f96563185b97c2ee498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the backend IDs of all involved backends.  <br /></td></tr>
 <tr class="separator:af4829e36d86c4f96563185b97c2ee498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb140491a537f6c7b53e963a700ed5b" id="r_a5cb140491a537f6c7b53e963a700ed5b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5cb140491a537f6c7b53e963a700ed5b">getVersionOnOpen</a> () const =0</td></tr>
+<tr class="memdesc:a5cb140491a537f6c7b53e963a700ed5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version number which was set during the open process.  <br /></td></tr>
+<tr class="separator:a5cb140491a537f6c7b53e963a700ed5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for backends providing IO functionality for the <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device.">Device</a> class. </p>
 <p>Note that most backends should actually be based on the <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends.">DeviceBackendImpl</a> class (unless it is a decorator backend). The actual IO is always performed through register accessors, which is obtained through the <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc" title="Get a NDRegisterAccessor object from the register name.">getRegisterAccessor()</a> member function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00029">29</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00030">30</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a84fe39d878fadf389f4cbbbe31590ae5" name="a84fe39d878fadf389f4cbbbe31590ae5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84fe39d878fadf389f4cbbbe31590ae5">&#9670;&#160;</a></span>BackendID</h2>
@@ -191,7 +194,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00106">106</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00107">107</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +256,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ae4ef5735a32d50e7cb7f699c08e7a349">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac0aa218e9c9f77da85b197b6c27d996c">ChimeraTK::LogicalNameMappingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae231a2b26431cb1bccee3b18723e367d">ChimeraTK::SubdeviceBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aad91568071e601c3100b79be077f532d">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00098">98</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00099">99</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +372,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get a unique ID for this backend instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00111">111</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00112">112</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +477,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a> object from the register name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00126">126</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_backend_8h_source.html#l00134">134</a> of file <a class="el" href="_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -504,6 +507,36 @@ template&lt;typename UserType &gt; </div>
 <p>Return the register catalogue with detailed information on all registers. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a72f1bf37a09e7c088658d00ed8b83ac8">ChimeraTK::LogicalNameMappingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ad7aeeca18b2e41a5ea79cc28b18af30b">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b50f2e7460810b9cfac12f45c0aaab5">ChimeraTK::NumericAddressedBackend</a>, <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a6009c2a1bd6f0667c503e909c3d59a8a">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, and <a class="el" href="class_async_test_dummy.html#a035e3c398b88401c1386d070c3d4e804">AsyncTestDummy</a>.</p>
+
+</div>
+</div>
+<a id="a5cb140491a537f6c7b53e963a700ed5b" name="a5cb140491a537f6c7b53e963a700ed5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb140491a537f6c7b53e963a700ed5b">&#9670;&#160;</a></span>getVersionOnOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> ChimeraTK::DeviceBackend::getVersionOnOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the version number which was set during the open process. </p>
+<p>It allows to determine whether a version number has been generated before or after the last time the device became functional. Note that the version is not increased if <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9" title="Open the device.">open()</a> is called on an already functional backend. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a3b8f8d16d973354801b9dfe05c672c1c">ChimeraTK::DeviceBackendImpl</a>.</p>
 
 </div>
 </div>

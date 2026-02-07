@@ -12,5 +12,6 @@ var class_chimera_t_k_1_1_backend_register_info_base =
     [ "getTags", "class_chimera_t_k_1_1_backend_register_info_base.html#af323ad5c9bfa9620e99c9e72067f97ad", null ],
     [ "isHidden", "class_chimera_t_k_1_1_backend_register_info_base.html#a3f0665538d48ad46a558af532f647a72", null ],
     [ "isReadable", "class_chimera_t_k_1_1_backend_register_info_base.html#a128e5806d389ffa3ed99ee07e3cecc39", null ],
-    [ "isWriteable", "class_chimera_t_k_1_1_backend_register_info_base.html#ab0dc5bfc30a29577986d10a3b59d7dc0", null ]
+    [ "isWriteable", "class_chimera_t_k_1_1_backend_register_info_base.html#ab0dc5bfc30a29577986d10a3b59d7dc0", null ],
+    [ "operator==", "class_chimera_t_k_1_1_backend_register_info_base.html#aa75708e5cdf68d177686cf75ce939990", null ]
 ];

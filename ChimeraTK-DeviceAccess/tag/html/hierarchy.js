@@ -280,6 +280,7 @@ var hierarchy =
                 [ "InvalidDummyBackend", "class_invalid_dummy_backend.html", null ],
                 [ "NewBackend", "struct_new_backend.html", null ],
                 [ "NotRegisteringPlugin", "struct_not_registering_plugin.html", null ],
+                [ "SubArrayDecoratorTestBackend", "class_sub_array_decorator_test_backend.html", null ],
                 [ "TestDummy", "class_test_dummy.html", null ],
                 [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
                 [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
@@ -334,6 +335,7 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::DataConsistencyDecorator< UserType >", "class_chimera_t_k_1_1_data_consistency_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::FanOutPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin_decorator.html", null ],
+              [ "DoNothingDecorator< UserType >", "class_do_nothing_decorator.html", null ],
               [ "TestNDRegisterAccessorDecorator< UserType >", "class_test_n_d_register_accessor_decorator.html", null ]
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
@@ -415,7 +417,8 @@ var hierarchy =
     [ "ChimeraTK::ExperimentalFeatures", "class_chimera_t_k_1_1_experimental_features.html", null ],
     [ "F", "struct_f.html", null ],
     [ "ChimeraTK::findDevByName_pred", "class_chimera_t_k_1_1find_dev_by_name__pred.html", null ],
-    [ "ChimeraTK::FixedPointConverter", "class_chimera_t_k_1_1_fixed_point_converter.html", null ],
+    [ "ChimeraTK::FixedPointConverter< RawType >", "class_chimera_t_k_1_1_fixed_point_converter.html", null ],
+    [ "ChimeraTK::FixedPointConverter< DEPRECATED_FIXEDPOINT_DEFAULT >", "class_chimera_t_k_1_1_fixed_point_converter.html", null ],
     [ "ChimeraTK::FixedUserTypeMap< TargetType >", "class_chimera_t_k_1_1_fixed_user_type_map.html", null ],
     [ "ChimeraTK::FixedUserTypeMap< int >", "class_chimera_t_k_1_1_fixed_user_type_map.html", null ],
     [ "ChimeraTK::FixedUserTypeMapNoVoid< TargetType >", "class_chimera_t_k_1_1_fixed_user_type_map_no_void.html", null ],
@@ -863,6 +866,7 @@ var hierarchy =
       [ "TestRegisterRoCasted< T >", "struct_test_register_ro_casted.html", null ],
       [ "TestRegisterRoRangeChecked< T >", "struct_test_register_ro_range_checked.html", null ]
     ] ],
+    [ "TheFixture", "struct_the_fixture.html", null ],
     [ "ChimeraTK::ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", null ],
     [ "ThrowTestFixture", "struct_throw_test_fixture.html", [
       [ "CieWritableTestFixture", "struct_cie_writable_test_fixture.html", null ],
@@ -901,6 +905,7 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
+        [ "ChimeraTK::OneDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [
           [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", null ]
         ] ],
@@ -932,9 +937,9 @@ var hierarchy =
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::FixedPointConverter< RawType >::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
+    [ "ChimeraTK::FixedPointConverter< RawType >::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
     [ "VersionNumberTest", "class_version_number_test.html", null ],

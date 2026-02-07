@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.00</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.01</span>
    </div>
   </td>
  </tr>
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 
 <p>need non-default destructor due to incomplete type detail::PythonModuleManagerImpl </p>
 
-<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00156">156</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00154">154</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 
 <p>called by <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> to load all Python modules specified in the <a class="el" href="class_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables.">ConfigReader</a> XML file </p>
 
-<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00164">164</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00162">162</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Public Member Functions</h2></td></tr>
 
 <p>clean up detail::PythonModuleManagerImpl, in particular py::gil_scoped_release </p>
 
-<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00126">126</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00124">124</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
 
 </div>
 </div>
@@ -237,7 +237,7 @@ Public Member Functions</h2></td></tr>
 <p>Register callback function to get informed about the main <a class="el" href="class_chimera_t_k_1_1_py_module_group.html">PyModuleGroup</a> which is created by the <a class="el" href="class_chimera_t_k_1_1_python_module_manager.html" title="This class loads and unloads the Python modules as specified in the ConfigReader XML file,...">PythonModuleManager</a>. </p>
 <p>This function is called by the Python bindings module (i.e. when loading the first Python module in <a class="el" href="class_chimera_t_k_1_1_python_module_manager.html#a20e3843d4b86c580b459655f1383d69e" title="called by Application to load all Python modules specified in the ConfigReader XML file">createModules()</a>). The callback is immediately called, but also later again in subsequent instances of the <a class="el" href="class_chimera_t_k_1_1_python_module_manager.html" title="This class loads and unloads the Python modules as specified in the ConfigReader XML file,...">PythonModuleManager</a> (in case multiple Applications run after each other in the same process, as done in tests). This trick is needed since the call crosses from the PyApplicationCore.cpython....so into the libChimeraTK-ApplicationCore.so and the visibility of all <a class="el" href="namespacepybind11.html">pybind11</a> classes is hidden. </p>
 
-<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00186">186</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_python_module_manager_8cc_source.html#l00184">184</a> of file <a class="el" href="_python_module_manager_8cc_source.html">PythonModuleManager.cc</a>.</p>
 
 </div>
 </div>

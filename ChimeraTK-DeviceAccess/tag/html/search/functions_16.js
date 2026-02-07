@@ -53,5 +53,5 @@ var searchData=
   ['_7etransferelementtestaccessor_50',['~TransferElementTestAccessor',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#a26cf101aa6b36d8d2e0d5b7d628017e8',1,'ChimeraTK::TransferElementTestAccessor']]],
   ['_7euioaccess_51',['~UioAccess',['../class_chimera_t_k_1_1_uio_access.html#a3bdebe31fe660eeaaa056c7efcef72b7',1,'ChimeraTK::UioAccess']]],
   ['_7euiobackend_52',['~UioBackend',['../class_chimera_t_k_1_1_uio_backend.html#a1ac643484d884553f1e740ce9d7e8bec',1,'ChimeraTK::UioBackend']]],
-  ['_7exdmabackend_53',['~XdmaBackend',['../class_chimera_t_k_1_1_xdma_backend.html#aed872f5a3552be637e6318ea3c356b0d',1,'ChimeraTK::XdmaBackend']]]
+  ['_7exdmabackend_53',['~XdmaBackend',['../class_chimera_t_k_1_1_xdma_backend.html#ad045278c6cfabc8c23ffbe1a2822d8d0',1,'ChimeraTK::XdmaBackend']]]
 ];

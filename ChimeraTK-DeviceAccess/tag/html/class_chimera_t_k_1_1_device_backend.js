@@ -11,6 +11,7 @@ var class_chimera_t_k_1_1_device_backend =
     [ "getMetadataCatalogue", "class_chimera_t_k_1_1_device_backend.html#a89791ccc7e5e875cd4b1e6efb21c5633", null ],
     [ "getRegisterAccessor", "class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_device_backend.html#a517c358022e282864da357bc1b8dfd5e", null ],
+    [ "getVersionOnOpen", "class_chimera_t_k_1_1_device_backend.html#a5cb140491a537f6c7b53e963a700ed5b", null ],
     [ "isConnected", "class_chimera_t_k_1_1_device_backend.html#a055b0e25c6a296fa9f60db4cf7880e83", null ],
     [ "isFunctional", "class_chimera_t_k_1_1_device_backend.html#a5985225d64cbf271ecf406760d45548a", null ],
     [ "isOpen", "class_chimera_t_k_1_1_device_backend.html#a877f0db7d0c63becf2bd8b8fb0955e60", null ],

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.25.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.26.00</span>
    </div>
   </td>
  </tr>
@@ -362,9 +362,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae0053e8b9dccc0a2ba7d32a38d841681" id="r_ae0053e8b9dccc0a2ba7d32a38d841681"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae0053e8b9dccc0a2ba7d32a38d841681">_dev</a></td></tr>
 <tr class="memdesc:ae0053e8b9dccc0a2ba7d32a38d841681"><td class="mdescLeft">&#160;</td><td class="mdescRight">backend device  <br /></td></tr>
 <tr class="separator:ae0053e8b9dccc0a2ba7d32a38d841681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b49da001999978dd11a4e91e904df84" id="r_a6b49da001999978dd11a4e91e904df84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6b49da001999978dd11a4e91e904df84">_fixedPointConverter</a></td></tr>
-<tr class="memdesc:a6b49da001999978dd11a4e91e904df84"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixed point converter to handle type conversions from our "raw" type int to the requested user type.  <br /></td></tr>
-<tr class="separator:a6b49da001999978dd11a4e91e904df84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ef2e66ac64b559124810814372ee46" id="r_a99ef2e66ac64b559124810814372ee46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&lt; <a class="el" href="namespace_chimera_t_k.html#ab184234a078c9ec4a2b14b816523825f">DEPRECATED_FIXEDPOINT_DEFAULT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a99ef2e66ac64b559124810814372ee46">_fixedPointConverter</a></td></tr>
+<tr class="memdesc:a99ef2e66ac64b559124810814372ee46"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixed point converter to handle type conversions from our "raw" type int to the requested user type.  <br /></td></tr>
+<tr class="separator:a99ef2e66ac64b559124810814372ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb9b845999e0b58a2472279d21f0fac" id="r_abcb9b845999e0b58a2472279d21f0fac"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#abcb9b845999e0b58a2472279d21f0fac">_bitMask</a></td></tr>
 <tr class="memdesc:abcb9b845999e0b58a2472279d21f0fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">bit mask for the bit we want to access  <br /></td></tr>
 <tr class="separator:abcb9b845999e0b58a2472279d21f0fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1107,8 +1107,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a6b49da001999978dd11a4e91e904df84" name="a6b49da001999978dd11a4e91e904df84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b49da001999978dd11a4e91e904df84">&#9670;&#160;</a></span>_fixedPointConverter</h2>
+<a id="a99ef2e66ac64b559124810814372ee46" name="a99ef2e66ac64b559124810814372ee46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ef2e66ac64b559124810814372ee46">&#9670;&#160;</a></span>_fixedPointConverter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1119,7 +1119,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a> <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">ChimeraTK::LNMBackendBitAccessor</a>&lt; UserType &gt;::_fixedPointConverter</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&lt;<a class="el" href="namespace_chimera_t_k.html#ab184234a078c9ec4a2b14b816523825f">DEPRECATED_FIXEDPOINT_DEFAULT</a>&gt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">ChimeraTK::LNMBackendBitAccessor</a>&lt; UserType &gt;::_fixedPointConverter</td>
         </tr>
       </table>
   </td>

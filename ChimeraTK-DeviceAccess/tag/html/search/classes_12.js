@@ -65,13 +65,14 @@ var searchData=
   ['stopthread_62',['StopThread',['../class_chimera_t_k_1_1async_1_1_domains_container_1_1_stop_thread.html',1,'ChimeraTK::async::DomainsContainer']]],
   ['stow_5fprivate_63',['stow_private',['../structaccess_private_data_1_1stow__private.html',1,'accessPrivateData']]],
   ['stowed_64',['stowed',['../structaccess_private_data_1_1stowed.html',1,'accessPrivateData']]],
-  ['subdevicebackend_65',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],
-  ['subdeviceregisteraccessor_66',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html',1,'ChimeraTK']]],
-  ['subdomain_67',['SubDomain',['../class_chimera_t_k_1_1async_1_1_sub_domain.html',1,'ChimeraTK::async']]],
-  ['subdomainsubscriptionimplementor_68',['SubDomainSubscriptionImplementor',['../class_chimera_t_k_1_1async_1_1detail_1_1_sub_domain_subscription_implementor.html',1,'ChimeraTK::async::detail']]],
-  ['switchreadonly_5fproxy_5fhelper_69',['switchReadOnly_proxy_helper',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper.html',1,'ChimeraTK::UnifiedBackendTest']]],
-  ['switchreadonly_5fproxy_5fhelper_3c_20t_2c_20false_20_3e_70',['switchReadOnly_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]],
-  ['switchwriteonly_5fproxy_5fhelper_71',['switchWriteOnly_proxy_helper',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html',1,'ChimeraTK::UnifiedBackendTest']]],
-  ['switchwriteonly_5fproxy_5fhelper_3c_20t_2c_20false_20_3e_72',['switchWriteOnly_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]],
-  ['systemtags_73',['SystemTags',['../struct_chimera_t_k_1_1_system_tags.html',1,'ChimeraTK']]]
+  ['subarraydecoratortestbackend_65',['SubArrayDecoratorTestBackend',['../class_sub_array_decorator_test_backend.html',1,'']]],
+  ['subdevicebackend_66',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],
+  ['subdeviceregisteraccessor_67',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html',1,'ChimeraTK']]],
+  ['subdomain_68',['SubDomain',['../class_chimera_t_k_1_1async_1_1_sub_domain.html',1,'ChimeraTK::async']]],
+  ['subdomainsubscriptionimplementor_69',['SubDomainSubscriptionImplementor',['../class_chimera_t_k_1_1async_1_1detail_1_1_sub_domain_subscription_implementor.html',1,'ChimeraTK::async::detail']]],
+  ['switchreadonly_5fproxy_5fhelper_70',['switchReadOnly_proxy_helper',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper.html',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['switchreadonly_5fproxy_5fhelper_3c_20t_2c_20false_20_3e_71',['switchReadOnly_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['switchwriteonly_5fproxy_5fhelper_72',['switchWriteOnly_proxy_helper',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['switchwriteonly_5fproxy_5fhelper_3c_20t_2c_20false_20_3e_73',['switchWriteOnly_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['systemtags_74',['SystemTags',['../struct_chimera_t_k_1_1_system_tags.html',1,'ChimeraTK']]]
 ];
