@@ -136,8 +136,6 @@ var hierarchy =
     [ "ChimeraTK::const_RegisterCatalogueImplIterator", "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html", [
       [ "ChimeraTK::const_BackendRegisterCatalogueImplIterator< BackendRegisterInfo >", "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html", null ]
     ] ],
-    [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, Void >::converter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4_1_1converter.html", null ],
-    [ "ChimeraTK::RoundingRangeCheckingDataConverter< Void, DestType >::converter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4_1_1converter.html", null ],
     [ "ChimeraTK::copmaredRegisterInfosByName2_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html", null ],
     [ "ChimeraTK::CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", [
       [ "ChimeraTK::CopyRegisterDecorator< T >", "struct_chimera_t_k_1_1_copy_register_decorator.html", null ]
@@ -772,10 +770,6 @@ var hierarchy =
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
     [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
-    [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
-    [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", null ],
-    [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, Void >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html", null ],
-    [ "ChimeraTK::RoundingRangeCheckingDataConverter< Void, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html", null ],
     [ "ScalarDescriptor< Derived >", "struct_scalar_descriptor.html", null ],
     [ "ScalarDescriptor< Scalar32 >", "struct_scalar_descriptor.html", [
       [ "Scalar32", "struct_scalar32.html", null ]

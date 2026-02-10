@@ -113,6 +113,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1_l_n_m_backend" id="r_namespace_chimera_t_k_1_1_l_n_m_backend"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_chimera_t_k_1_1numeric" id="r_namespace_chimera_t_k_1_1numeric"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1numeric.html">numeric</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1numeric__address" id="r_namespace_chimera_t_k_1_1numeric__address"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1numeric__address.html">numeric_address</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1parser_utilities" id="r_namespace_chimera_t_k_1_1parser_utilities"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1parser_utilities.html">parserUtilities</a></td></tr>
@@ -378,12 +380,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to store a register path name.  <a href="class_chimera_t_k_1_1_register_path.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html">RoundingRangeCheckingDataConverter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html">RoundingRangeCheckingDataConverter&lt; SourceType, Void &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html">RoundingRangeCheckingDataConverter&lt; Void, DestType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1runtime__error.html">runtime_error</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when a runtime error has occured.  <a href="class_chimera_t_k_1_1runtime__error.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -466,7 +462,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial template specialisation for strings as impl type.  <a href="class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01std_1_1string_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_type_changing_range_checking_decorator.html">TypeChangingRangeCheckingDecorator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This decorator uses the boost numeric converter which performs two tasks:  <a href="class_chimera_t_k_1_1_type_changing_range_checking_decorator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This decorator uses <a class="el" href="namespace_chimera_t_k_1_1numeric.html#a4741a93c7c68c743a8940eeea9529309" title="Convert numeric data types with proper rounding and clamping to the target value range.">ChimeraTK::numeric::convert()</a> for proper conversion with clamping and rounding.  <a href="class_chimera_t_k_1_1_type_changing_range_checking_decorator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_chimera_t_k_1_1_void_00_01_chimera_t_k_1_1_void_01_4.html">TypeChangingRangeCheckingDecorator&lt; ChimeraTK::Void, ChimeraTK::Void &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -668,6 +664,10 @@ Functions</h2></td></tr>
 <tr class="separator:aaf67cf29867872341e439e109428bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6488bea8863c6fe508989798b7721604" id="r_a6488bea8863c6fe508989798b7721604"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6488bea8863c6fe508989798b7721604">parseRxServerHello</a> (const std::vector&lt; uint32_t &gt; &amp;serverHello)</td></tr>
 <tr class="separator:a6488bea8863c6fe508989798b7721604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add666a64ef037c29af520a6f9c94636a" id="r_add666a64ef037c29af520a6f9c94636a"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#add666a64ef037c29af520a6f9c94636a">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a> &amp;value)</td></tr>
+<tr class="separator:add666a64ef037c29af520a6f9c94636a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b2775608abae67eee7a9e7b7cf6b3c" id="r_a20b2775608abae67eee7a9e7b7cf6b3c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">to_string</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a> &amp;value)</td></tr>
+<tr class="separator:a20b2775608abae67eee7a9e7b7cf6b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026130dce57025946232b98aae6d9536" id="r_a026130dce57025946232b98aae6d9536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a026130dce57025946232b98aae6d9536">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_data_consistency_decorator.html">DataConsistencyDecorator</a>)</td></tr>
 <tr class="separator:a026130dce57025946232b98aae6d9536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596958c5fb1ce0b5f4d71fbdd590a766" id="r_a596958c5fb1ce0b5f4d71fbdd590a766"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a596958c5fb1ce0b5f4d71fbdd590a766">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951">DataDescriptor::FundamentalType</a> &amp;fundamentalType)</td></tr>
@@ -702,14 +702,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a8131149d6d551e64aad220a635e28e73" id="r_a8131149d6d551e64aad220a635e28e73"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8131149d6d551e64aad220a635e28e73">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;me)</td></tr>
 <tr class="memdesc:a8131149d6d551e64aad220a635e28e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">streaming operator  <br /></td></tr>
 <tr class="separator:a8131149d6d551e64aad220a635e28e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add666a64ef037c29af520a6f9c94636a" id="r_add666a64ef037c29af520a6f9c94636a"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#add666a64ef037c29af520a6f9c94636a">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a> &amp;value)</td></tr>
-<tr class="separator:add666a64ef037c29af520a6f9c94636a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20b2775608abae67eee7a9e7b7cf6b3c" id="r_a20b2775608abae67eee7a9e7b7cf6b3c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a20b2775608abae67eee7a9e7b7cf6b3c">to_string</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a> &amp;value)</td></tr>
-<tr class="separator:a20b2775608abae67eee7a9e7b7cf6b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa6443482e75e0e1fceca147c7fb084" id="r_a1aa6443482e75e0e1fceca147c7fb084"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1aa6443482e75e0e1fceca147c7fb084">operator&gt;&gt;</a> (std::istream &amp;is, __attribute__((unused)) <a class="el" href="class_chimera_t_k_1_1_void.html">Void</a> &amp;value)</td></tr>
-<tr class="separator:a1aa6443482e75e0e1fceca147c7fb084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee53c548a088d9ed0b72677847b07b7" id="r_a6ee53c548a088d9ed0b72677847b07b7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6ee53c548a088d9ed0b72677847b07b7">operator&lt;&lt;</a> (std::ostream &amp;os, __attribute__((unused)) <a class="el" href="class_chimera_t_k_1_1_void.html">Void</a> &amp;value)</td></tr>
-<tr class="separator:a6ee53c548a088d9ed0b72677847b07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa159464ac26217627bc921cc3e9f3c62" id="r_aa159464ac26217627bc921cc3e9f3c62"><td class="memTemplParams" colspan="2">template&lt;typename UserType , typename NUMERIC &gt; </td></tr>
 <tr class="memitem:aa159464ac26217627bc921cc3e9f3c62"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62">numericToUserType</a> (NUMERIC value)</td></tr>
 <tr class="memdesc:aa159464ac26217627bc921cc3e9f3c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert numeric data into any UserType (even if it is a string etc.).  <br /></td></tr>
@@ -778,6 +770,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aaf5ed856dd61a9b26be790c0ce3a68c3" id="r_aaf5ed856dd61a9b26be790c0ce3a68c3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aaf5ed856dd61a9b26be790c0ce3a68c3">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;version)</td></tr>
 <tr class="memdesc:aaf5ed856dd61a9b26be790c0ce3a68c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream operator passing the human readable representation to an ostream.  <br /></td></tr>
 <tr class="separator:aaf5ed856dd61a9b26be790c0ce3a68c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa6443482e75e0e1fceca147c7fb084" id="r_a1aa6443482e75e0e1fceca147c7fb084"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1aa6443482e75e0e1fceca147c7fb084">operator&gt;&gt;</a> (std::istream &amp;is, __attribute__((unused)) <a class="el" href="class_chimera_t_k_1_1_void.html">Void</a> &amp;value)</td></tr>
+<tr class="separator:a1aa6443482e75e0e1fceca147c7fb084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee53c548a088d9ed0b72677847b07b7" id="r_a6ee53c548a088d9ed0b72677847b07b7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6ee53c548a088d9ed0b72677847b07b7">operator&lt;&lt;</a> (std::ostream &amp;os, __attribute__((unused)) <a class="el" href="class_chimera_t_k_1_1_void.html">Void</a> &amp;value)</td></tr>
+<tr class="separator:a6ee53c548a088d9ed0b72677847b07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb2ea81bed5be7692a2d8d1a7ef7914" id="r_a0cb2ea81bed5be7692a2d8d1a7ef7914"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0cb2ea81bed5be7692a2d8d1a7ef7914">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_chimera_t_k_1_1_device_info_map.html">DeviceInfoMap</a> &amp;deviceInfoMap)</td></tr>
 <tr class="separator:a0cb2ea81bed5be7692a2d8d1a7ef7914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c847e13c3950efbac95a924b5da81a" id="r_a55c847e13c3950efbac95a924b5da81a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a55c847e13c3950efbac95a924b5da81a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">DeviceInfoMap::DeviceInfo</a> &amp;deviceInfo)</td></tr>
@@ -811,6 +807,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ad8feb605e95e15ab6e0dee12dfdcbae6" id="r_ad8feb605e95e15ab6e0dee12dfdcbae6"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad8feb605e95e15ab6e0dee12dfdcbae6">SHARED_MEMORY_N_MAX_MEMBER</a> = 10</td></tr>
 <tr class="separator:ad8feb605e95e15ab6e0dee12dfdcbae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa148123af8cd931c3d32a8109fbc67a9" id="r_aa148123af8cd931c3d32a8109fbc67a9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa148123af8cd931c3d32a8109fbc67a9"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa148123af8cd931c3d32a8109fbc67a9">isBoolean</a> = std::is_same_v&lt;T, bool&gt; || std::is_same_v&lt;T, <a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a>&gt;</td></tr>
+<tr class="separator:aa148123af8cd931c3d32a8109fbc67a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb35d143efd5215194f952d74c5b343" id="r_a3eb35d143efd5215194f952d74c5b343"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3eb35d143efd5215194f952d74c5b343">MULTIPLEXED_SEQUENCE_PREFIX</a> = &quot;AREA_MULTIPLEXED_SEQUENCE_&quot;</td></tr>
 <tr class="separator:a3eb35d143efd5215194f952d74c5b343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832f6b113713661de4a7f9f68112461a" id="r_a832f6b113713661de4a7f9f68112461a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a832f6b113713661de4a7f9f68112461a">SEQUENCE_PREFIX</a> = &quot;SEQUENCE_&quot;</td></tr>
@@ -844,7 +843,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fixed_point_converter_8h_source.html#l00554">554</a> of file <a class="el" href="_fixed_point_converter_8h_source.html">FixedPointConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fixed_point_converter_8h_source.html#l00516">516</a> of file <a class="el" href="_fixed_point_converter_8h_source.html">FixedPointConverter.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +899,7 @@ template&lt;typename T &gt; </div>
 
 <p>Map of UserType to a single type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00463">463</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00362">362</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +919,7 @@ template&lt;typename T &gt; </div>
 
 <p>Just like SingleTypeUserTypeMap, only without the <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">ChimeraTK::Void</a> type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00471">471</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00370">370</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +938,7 @@ template&lt;typename T &gt; </div>
 <p>Map of UserType to value of the UserType. </p>
 <p>Used e.g. by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> to store coefficients etc. in dependence of the UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00388">388</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00287">287</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -957,7 +956,7 @@ template&lt;typename T &gt; </div>
 
 <p>Just like userTypeMap, only without the <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">ChimeraTK::Void</a> type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00396">396</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00295">295</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1307,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 
 <p><a class="el" href="namespace_chimera_t_k.html#a0c6a8b37004cfe48be8855986e1316c8" title="callForRawType() is similar to callForType(), just with a subset of supported data types which can be...">callForRawType()</a> is similar to <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a>, just with a subset of supported data types which can be raw types in the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l01039">1039</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00938">938</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1342,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>Alternate form of <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a> which takes a <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">DataType</a> as a runtime type description. </p>
 <p>If <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087" title="The data type/concept does not exist, e.g. there is no raw transfer (do not confuse with Void)">DataType::none</a> is passed, std::bad_cast is thrown. For more details have a look at the other form. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00965">965</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00864">864</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1384,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>std::cout &lt;&lt; typeid(int).name() &lt;&lt; std::endl;</p>
 <p>Please note that this call is not as efficient as a direct call to a template. For each call all allowed user types have to be tested against the given type_info. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00934">934</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00833">833</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1419,7 @@ template&lt;typename TYPE_DESCRIPTOR , typename LAMBDATYPE &gt; </div>
 <p>Like <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a> but omit the <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">Void</a> data type. </p>
 <p>typeDescriptor can be either a std::type_info or a <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">ChimeraTK::DataType</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l01026">1026</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00925">925</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1906,7 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 <p>Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead of the callable class requred by the boost version. </p>
 <p>The lambda must have one single argument of the type auto, which will be a boost::fusion::pair&lt;&gt;. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00903">903</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00802">802</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -2065,7 +2064,7 @@ template&lt;class UserType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00656">656</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00614">614</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -2488,9 +2487,9 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div><div class="memdoc">
 
 <p>Helper function to convert numeric data into any UserType (even if it is a string etc.). </p>
-<p>The conversion is done with proper rounding and range checking. It will throw boost::numeric::positive_overflow resp. boost::numeric::negative_overflow if the data is out of range. </p>
+<p>The conversion is done with proper rounding and range checking (clamping). </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00214">214</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00140">140</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -2685,7 +2684,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00087">87</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_void_8h_source.html#l00030">30</a> of file <a class="el" href="_void_8h_source.html">Void.h</a>.</p>
 
 </div>
 </div>
@@ -3030,7 +3029,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00081">81</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_void_8h_source.html#l00024">24</a> of file <a class="el" href="_void_8h_source.html">Void.h</a>.</p>
 
 </div>
 </div>
@@ -3068,7 +3067,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00040">40</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_boolean_8h_source.html#l00034">34</a> of file <a class="el" href="_boolean_8h_source.html">Boolean.h</a>.</p>
 
 </div>
 </div>
@@ -3164,7 +3163,7 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00060">60</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_boolean_8h_source.html#l00060">60</a> of file <a class="el" href="_boolean_8h_source.html">Boolean.h</a>.</p>
 
 </div>
 </div>
@@ -3187,9 +3186,9 @@ template&lt;typename NUMERIC , typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Helper function to convert numeric data into any UserType (even if it is a string etc.). </p>
-<p>The conversion is done with proper rounding and range checking. It will throw boost::numeric::positive_overflow resp. boost::numeric::negative_overflow if the data is out of range. </p>
+<p>The conversion is done with proper rounding and range checking (clamping). </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00224">224</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00149">149</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3214,7 +3213,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <p>Helper function to convert any UserType data into any other UserType (even if it is a string etc.). </p>
 <p>The conversion is done with proper rounding and range checking for numeric types. It will return the closed possible value if the value is out of range. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00349">349</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00248">248</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3304,6 +3303,32 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8cc_source.html#l00009">9</a> of file <a class="el" href="_type_changing_decorator_8cc_source.html">TypeChangingDecorator.cc</a>.</p>
+
+</div>
+</div>
+<a id="aa148123af8cd931c3d32a8109fbc67a9" name="aa148123af8cd931c3d32a8109fbc67a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa148123af8cd931c3d32a8109fbc67a9">&#9670;&#160;</a></span>isBoolean</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool ChimeraTK::isBoolean = std::is_same_v&lt;T, bool&gt; || std::is_same_v&lt;T, <a class="el" href="class_chimera_t_k_1_1_boolean.html">Boolean</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_boolean_8h_source.html#l00052">52</a> of file <a class="el" href="_boolean_8h_source.html">Boolean.h</a>.</p>
 
 </div>
 </div>

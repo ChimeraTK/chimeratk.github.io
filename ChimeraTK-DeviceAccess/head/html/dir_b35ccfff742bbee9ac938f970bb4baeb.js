@@ -5,6 +5,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "BackendFactory.h", "_backend_factory_8h.html", "_backend_factory_8h" ],
     [ "BackendRegisterCatalogue.h", "_backend_register_catalogue_8h.html", "_backend_register_catalogue_8h" ],
     [ "BackendRegisterInfoBase.h", "_backend_register_info_base_8h.html", "_backend_register_info_base_8h" ],
+    [ "Boolean.h", "_boolean_8h.html", "_boolean_8h" ],
     [ "CopyRegisterDecorator.h", "_copy_register_decorator_8h.html", "_copy_register_decorator_8h" ],
     [ "CountedRecursiveMutex.h", "_counted_recursive_mutex_8h.html", null ],
     [ "createDataConverter.h", "create_data_converter_8h.html", null ],
@@ -37,6 +38,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "NumericAddressedBackendRegisterAccessor.h", "_numeric_addressed_backend_register_accessor_8h.html", "_numeric_addressed_backend_register_accessor_8h" ],
     [ "NumericAddressedLowLevelTransferElement.h", "_numeric_addressed_low_level_transfer_element_8h.html", "_numeric_addressed_low_level_transfer_element_8h" ],
     [ "NumericAddressedRegisterCatalogue.h", "_numeric_addressed_register_catalogue_8h.html", "_numeric_addressed_register_catalogue_8h" ],
+    [ "NumericConverter.h", "_numeric_converter_8h.html", "_numeric_converter_8h" ],
     [ "OneDRegisterAccessor.h", "_one_d_register_accessor_8h.html", "_one_d_register_accessor_8h" ],
     [ "parserUtilities.h", "parser_utilities_8h.html", "parser_utilities_8h" ],
     [ "predicates.h", "predicates_8h.html", "predicates_8h" ],
@@ -62,5 +64,6 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "VariantUserTypes.h", "_variant_user_types_8h.html", "_variant_user_types_8h" ],
     [ "VersionNumber.h", "_version_number_8h.html", "_version_number_8h" ],
     [ "VirtualFunctionTemplate.h", "_virtual_function_template_8h.html", "_virtual_function_template_8h" ],
+    [ "Void.h", "_void_8h.html", "_void_8h" ],
     [ "VoidRegisterAccessor.h", "_void_register_accessor_8h.html", "_void_register_accessor_8h" ]
 ];

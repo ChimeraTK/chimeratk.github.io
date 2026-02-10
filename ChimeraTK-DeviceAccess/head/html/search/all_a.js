@@ -154,5 +154,6 @@ var searchData=
   ['goodstate_151',['goodState',['../class_chimera_t_k_1_1_device_file.html#a1bfbba94eaf779cb18a8af006218f0a6',1,'ChimeraTK::DeviceFile']]],
   ['gray16_152',['Gray16',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2a6ec0dac8730c09dba12f860dbbad12',1,'ChimeraTK']]],
   ['gray8_153',['Gray8',['../namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404ac8cfe3d00282445878661f32adca48ef',1,'ChimeraTK']]],
-  ['group_154',['Data Consistency Group',['../data_consistency_group.html',1,'']]]
+  ['greatermaximum_154',['greaterMaximum',['../namespace_chimera_t_k_1_1numeric_1_1detail.html#a9927c2e82aca85ba76d04352878e25a8',1,'ChimeraTK::numeric::detail']]],
+  ['group_155',['Data Consistency Group',['../data_consistency_group.html',1,'']]]
 ];

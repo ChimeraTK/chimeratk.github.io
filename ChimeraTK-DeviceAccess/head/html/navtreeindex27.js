@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"struct_integers__signed32__async__rw.html#add13e98df464594d1ad2379979b319f0":[21,0,84,11],
+"struct_integers_base.html":[21,0,85],
+"struct_integers_base.html#a075e377f6817339eafb86d4b1b431e1a":[21,0,85,7],
+"struct_integers_base.html#a224cf05438bddbf99287563b4a704be3":[21,0,85,4],
+"struct_integers_base.html#a3578d0d5da8c53e9b483d9600b50a936":[21,0,85,14],
+"struct_integers_base.html#a4d59c57737bf582aa18abc15c390fd6d":[21,0,85,12],
+"struct_integers_base.html#a5f89a892e96f662b4b5022d3670cf96d":[21,0,85,13],
+"struct_integers_base.html#a7ca3366068eb38ef08377e18fdeb6c68":[21,0,85,16],
 "struct_integers_base.html#a87321045c5f74d7724e35f2aa471a1a2":[21,0,85,6],
 "struct_integers_base.html#aac3fcec9532e2c27a471ba65c5bcf875":[21,0,85,15],
 "struct_integers_base.html#ac250c43ee5a3529aeecf45c4636db5ca":[21,0,85,9],
@@ -133,10 +141,10 @@ var NAVTREEINDEX27 =
 "struct_muxed_nodma_async.html#ae009802f4ac0d26fb7b306ef90739674":[21,0,116,6],
 "struct_muxed_nodma_async.html#afdf27ae7c1f14982a5e0dc3db3458f1e":[21,0,116,2],
 "struct_my_area1.html":[21,0,117],
-"struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[21,0,117,11],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[21,0,117,10],
-"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[21,0,117,4],
+"struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[21,0,117,11],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[21,0,117,5],
+"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[21,0,117,4],
 "struct_my_area1.html#a467c26d5b4063f0920caab13429b769d":[21,0,117,13],
 "struct_my_area1.html#a53c17123f20c464a6a962e34d69603db":[21,0,117,12],
 "struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[21,0,117,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "struct_reg_bit_range_descriptor.html#a22641e8d2b0c461d329f6a8ab2da98ad":[21,0,151,0],
 "struct_reg_bit_range_descriptor.html#a5addf3d616b813df1166f2251827f3d7":[21,0,151,4],
 "struct_reg_bit_range_descriptor.html#a65c76ad4e1c71c60750bf1e532271ed8":[21,0,151,2],
-"struct_reg_bit_range_descriptor.html#ac5fe0a4ee64e98765eb62bdb348bd257":[21,0,151,1],
-"struct_reg_bit_range_descriptor.html#ac9798398f7b5a46f6c2bdc9283f21a9c":[21,0,151,3],
-"struct_reg_bit_range_descriptor.html#ad509264613b9945de207588490aa823e":[21,0,151,7],
-"struct_reg_bit_range_descriptor.html#af706680c43e862eebe3c2fc39e6a0073":[21,0,151,6],
-"struct_reg_channel3.html":[21,0,152],
-"struct_reg_channel3.html#a05018d5be8b34dc112ed6aba96b24b9b":[21,0,152,6],
-"struct_reg_channel3.html#a2351955c2631657a03568b5fe191cb11":[21,0,152,1],
-"struct_reg_channel3.html#a2deccd8e20556ae067a9ea66ca16524f":[21,0,152,4],
-"struct_reg_channel3.html#a6ce97e8e2d277cc05cab8e2dc5d4797b":[21,0,152,5]
+"struct_reg_bit_range_descriptor.html#ac5fe0a4ee64e98765eb62bdb348bd257":[21,0,151,1]
 };

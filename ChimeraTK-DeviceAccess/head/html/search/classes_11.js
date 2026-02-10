@@ -140,9 +140,6 @@ var searchData=
   ['regwordfirmwarewithmath_5fr_137',['RegWordFirmwareWithMath_R',['../struct_reg_word_firmware_with_math___r.html',1,'']]],
   ['regwordfirmwarewithmath_5fr_5fpush_138',['RegWordFirmwareWithMath_R_push',['../struct_reg_word_firmware_with_math___r__push.html',1,'']]],
   ['regwordfirmwarewithmath_5fw_139',['RegWordFirmwareWithMath_W',['../struct_reg_word_firmware_with_math___w.html',1,'']]],
-  ['round_140',['round',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html',1,'ChimeraTK::csa_helpers::Round&lt; S &gt;'],['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html',1,'ChimeraTK::RoundingRangeCheckingDataConverter&lt; SourceType, DestType &gt;::Round&lt; S &gt;']]],
-  ['roundingrangecheckingdataconverter_141',['RoundingRangeCheckingDataConverter',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html',1,'ChimeraTK']]],
-  ['roundingrangecheckingdataconverter_3c_20sourcetype_2c_20void_20_3e_142',['RoundingRangeCheckingDataConverter&lt; SourceType, Void &gt;',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html',1,'ChimeraTK']]],
-  ['roundingrangecheckingdataconverter_3c_20void_2c_20desttype_20_3e_143',['RoundingRangeCheckingDataConverter&lt; Void, DestType &gt;',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html',1,'ChimeraTK']]],
-  ['runtime_5ferror_144',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html',1,'ChimeraTK']]]
+  ['round_140',['Round',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html',1,'ChimeraTK::csa_helpers']]],
+  ['runtime_5ferror_141',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html',1,'ChimeraTK']]]
 ];

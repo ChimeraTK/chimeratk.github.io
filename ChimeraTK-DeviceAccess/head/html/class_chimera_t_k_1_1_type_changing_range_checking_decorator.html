@@ -91,14 +91,13 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_type_changing_ra
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_type_changing_range_checking_decorator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::TypeChangingRangeCheckingDecorator&lt; T, IMPL_T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This decorator uses the boost numeric converter which performs two tasks:  
+<p>This decorator uses <a class="el" href="namespace_chimera_t_k_1_1numeric.html#a4741a93c7c68c743a8940eeea9529309" title="Convert numeric data types with proper rounding and clamping to the target value range.">ChimeraTK::numeric::convert()</a> for proper conversion with clamping and rounding.  
  <a href="class_chimera_t_k_1_1_type_changing_range_checking_decorator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>&gt;</code></p>
@@ -195,13 +194,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T, class IMPL_T&gt;<br />
-class ChimeraTK::TypeChangingRangeCheckingDecorator&lt; T, IMPL_T &gt;</div><p>This decorator uses the boost numeric converter which performs two tasks: </p>
-<ul>
-<li>a range check (throws boost::numeric::bad_numeric_cast if out of range)</li>
-<li>the rounding floating point -&gt; int is done mathematically (not just cut off the bits) </li>
-</ul>
+class ChimeraTK::TypeChangingRangeCheckingDecorator&lt; T, IMPL_T &gt;</div><p>This decorator uses <a class="el" href="namespace_chimera_t_k_1_1numeric.html#a4741a93c7c68c743a8940eeea9529309" title="Convert numeric data types with proper rounding and clamping to the target value range.">ChimeraTK::numeric::convert()</a> for proper conversion with clamping and rounding. </p>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00325">325</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00322">322</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af360260163fc39f92f672d40aff4cc94" name="af360260163fc39f92f672d40aff4cc94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af360260163fc39f92f672d40aff4cc94">&#9670;&#160;</a></span>convertAndCopyFromImpl()</h2>
@@ -230,7 +225,7 @@ template&lt;class T , class IMPL_T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#a02c7f929b0b14e05cccf17b4c9163dc5">ChimeraTK::TypeChangingDecorator&lt; T, IMPL_T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00456">456</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00437">437</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +256,7 @@ template&lt;class T , class IMPL_T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_type_changing_decorator.html#afdf82ffdf3967df7739c475784ba6a07">ChimeraTK::TypeChangingDecorator&lt; T, IMPL_T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00477">477</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00446">446</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +287,7 @@ template&lt;class T , class IMPL_T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_decorator_type_holder.html#ae297892b070c9467201a2450d48f779a">ChimeraTK::DecoratorTypeHolder</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00330">330</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00327">327</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 
 </div>
 </div>

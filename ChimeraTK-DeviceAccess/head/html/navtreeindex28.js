@@ -1,5 +1,13 @@
 var NAVTREEINDEX28 =
 {
+"struct_reg_bit_range_descriptor.html#ac9798398f7b5a46f6c2bdc9283f21a9c":[21,0,151,3],
+"struct_reg_bit_range_descriptor.html#ad509264613b9945de207588490aa823e":[21,0,151,7],
+"struct_reg_bit_range_descriptor.html#af706680c43e862eebe3c2fc39e6a0073":[21,0,151,6],
+"struct_reg_channel3.html":[21,0,152],
+"struct_reg_channel3.html#a05018d5be8b34dc112ed6aba96b24b9b":[21,0,152,6],
+"struct_reg_channel3.html#a2351955c2631657a03568b5fe191cb11":[21,0,152,1],
+"struct_reg_channel3.html#a2deccd8e20556ae067a9ea66ca16524f":[21,0,152,4],
+"struct_reg_channel3.html#a6ce97e8e2d277cc05cab8e2dc5d4797b":[21,0,152,5],
 "struct_reg_channel3.html#a7976ae4e9430828b560be840e010d102":[21,0,152,2],
 "struct_reg_channel3.html#a98ef688fc0f877566d5f99818b236595":[21,0,152,3],
 "struct_reg_channel3.html#ab0c9781b4079c8883cd3f41a25936b02":[21,0,152,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX28 =
 "struct_reg_word_firmware_with_math___w.html#a702effa67ca090eac4d2a410f440bb8f":[21,0,195,1],
 "struct_reg_word_firmware_with_math___w.html#ab8dfec0eefb4f13ac3a6f3157a38294d":[21,0,195,2],
 "struct_reg_word_firmware_with_math___w.html#acbf428581eddf1d660f7178f71c076f0":[21,0,195,0],
-"struct_register_descriptor_base.html":[21,0,159],
-"struct_register_descriptor_base.html#a0c5aa1b770ce8013f65a2aa1ae66e082":[21,0,159,5],
-"struct_register_descriptor_base.html#a14ad808083b841a828bd231da9b65c01":[21,0,159,6],
-"struct_register_descriptor_base.html#a2400055ed5076b82e62c746f48f9a301":[21,0,159,1],
-"struct_register_descriptor_base.html#a51d65d39543b08129a514efc338e0d2d":[21,0,159,4],
-"struct_register_descriptor_base.html#a69763ae2bf994bbc97be829123629c9d":[21,0,159,3],
-"struct_register_descriptor_base.html#ab37f2475709b24565b586926c39cf882":[21,0,159,2],
-"struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537":[21,0,159,7],
-"struct_register_descriptor_base.html#af57d0534ce35b70d52b2618ced6a5185":[21,0,159,0]
+"struct_register_descriptor_base.html":[21,0,159]
 };

@@ -4,6 +4,7 @@ var namespace_chimera_t_k =
     [ "csa_helpers", "namespace_chimera_t_k_1_1csa__helpers.html", "namespace_chimera_t_k_1_1csa__helpers" ],
     [ "DataConsistencyGroupDetail", "namespace_chimera_t_k_1_1_data_consistency_group_detail.html", "namespace_chimera_t_k_1_1_data_consistency_group_detail" ],
     [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", "namespace_chimera_t_k_1_1_l_n_m_backend" ],
+    [ "numeric", "namespace_chimera_t_k_1_1numeric.html", "namespace_chimera_t_k_1_1numeric" ],
     [ "numeric_address", "namespace_chimera_t_k_1_1numeric__address.html", [
       [ "BAR", "namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e", null ]
     ] ],
@@ -130,9 +131,6 @@ var namespace_chimera_t_k =
     [ "RegisterCatalogue", "class_chimera_t_k_1_1_register_catalogue.html", "class_chimera_t_k_1_1_register_catalogue" ],
     [ "RegisterInfo", "class_chimera_t_k_1_1_register_info.html", "class_chimera_t_k_1_1_register_info" ],
     [ "RegisterPath", "class_chimera_t_k_1_1_register_path.html", "class_chimera_t_k_1_1_register_path" ],
-    [ "RoundingRangeCheckingDataConverter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter" ],
-    [ "RoundingRangeCheckingDataConverter< SourceType, Void >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4" ],
-    [ "RoundingRangeCheckingDataConverter< Void, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4" ],
     [ "runtime_error", "class_chimera_t_k_1_1runtime__error.html", "class_chimera_t_k_1_1runtime__error" ],
     [ "ScalarRegisterAccessor", "class_chimera_t_k_1_1_scalar_register_accessor.html", "class_chimera_t_k_1_1_scalar_register_accessor" ],
     [ "ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4" ],
@@ -312,6 +310,7 @@ var namespace_chimera_t_k =
     [ "DUMMY_READABLE_SUFFIX", "namespace_chimera_t_k.html#a4ad9e93b08897dba1d513c6be6315b2d", null ],
     [ "DUMMY_WRITEABLE_SUFFIX", "namespace_chimera_t_k.html#a4670c21e6bd33fbbe81acee66e1d3076", null ],
     [ "globalDecoratorMap", "namespace_chimera_t_k.html#a5453614d4428268571689bca7bbf571b", null ],
+    [ "isBoolean", "namespace_chimera_t_k.html#aa148123af8cd931c3d32a8109fbc67a9", null ],
     [ "MEM_MULTIPLEXED_PREFIX", "namespace_chimera_t_k.html#adbc3bae518355d2b08e4111b194e8883", null ],
     [ "MULTIPLEXED_SEQUENCE_PREFIX", "namespace_chimera_t_k.html#a3eb35d143efd5215194f952d74c5b343", null ],
     [ "SEQUENCE_PREFIX", "namespace_chimera_t_k.html#a832f6b113713661de4a7f9f68112461a", null ],

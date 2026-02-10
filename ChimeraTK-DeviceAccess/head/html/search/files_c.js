@@ -19,5 +19,6 @@ var searchData=
   ['numericaddressedbackendregisteraccessor_2eh_16',['NumericAddressedBackendRegisterAccessor.h',['../_numeric_addressed_backend_register_accessor_8h.html',1,'']]],
   ['numericaddressedlowleveltransferelement_2eh_17',['NumericAddressedLowLevelTransferElement.h',['../_numeric_addressed_low_level_transfer_element_8h.html',1,'']]],
   ['numericaddressedregistercatalogue_2ecc_18',['NumericAddressedRegisterCatalogue.cc',['../_numeric_addressed_register_catalogue_8cc.html',1,'']]],
-  ['numericaddressedregistercatalogue_2eh_19',['NumericAddressedRegisterCatalogue.h',['../_numeric_addressed_register_catalogue_8h.html',1,'']]]
+  ['numericaddressedregistercatalogue_2eh_19',['NumericAddressedRegisterCatalogue.h',['../_numeric_addressed_register_catalogue_8h.html',1,'']]],
+  ['numericconverter_2eh_20',['NumericConverter.h',['../_numeric_converter_8h.html',1,'']]]
 ];

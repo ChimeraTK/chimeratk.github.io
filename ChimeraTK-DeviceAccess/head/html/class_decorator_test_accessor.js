@@ -31,7 +31,6 @@ var class_decorator_test_accessor =
     [ "_readable", "class_decorator_test_accessor.html#a93e8e4544df8cefb2971e57c9bab3df8", null ],
     [ "_readTransfer_counter", "class_decorator_test_accessor.html#a6d3b191a9435105614d94bb2b6cf5b6c", null ],
     [ "_throwLogicErr", "class_decorator_test_accessor.html#afa680235ff7cde7dd132969ffdd6dc90", null ],
-    [ "_throwNumericCast", "class_decorator_test_accessor.html#a4a25ac27e0cd05423fa6ec2760fd4fe3", null ],
     [ "_throwRuntimeErrInPre", "class_decorator_test_accessor.html#a70feb04bccbcbffab222ccdac5eccb93", null ],
     [ "_throwRuntimeErrInTransfer", "class_decorator_test_accessor.html#a04c59a94d2680c7f0344f2a4a8eb3f5b", null ],
     [ "_throwThreadInterruptedInPost", "class_decorator_test_accessor.html#a50228f4cc5eba6867f5e47a8b422e0c6", null ],

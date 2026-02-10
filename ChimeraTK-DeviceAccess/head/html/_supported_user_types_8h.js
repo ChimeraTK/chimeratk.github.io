@@ -1,7 +1,5 @@
 var _supported_user_types_8h =
 [
-    [ "ChimeraTK::Boolean", "class_chimera_t_k_1_1_boolean.html", "class_chimera_t_k_1_1_boolean" ],
-    [ "ChimeraTK::Void", "class_chimera_t_k_1_1_void.html", "class_chimera_t_k_1_1_void" ],
     [ "ChimeraTK::FixedUserTypeMap< TargetType >", "class_chimera_t_k_1_1_fixed_user_type_map.html", "class_chimera_t_k_1_1_fixed_user_type_map" ],
     [ "ChimeraTK::FixedUserTypeMapNoVoid< TargetType >", "class_chimera_t_k_1_1_fixed_user_type_map_no_void.html", "class_chimera_t_k_1_1_fixed_user_type_map_no_void" ],
     [ "ChimeraTK::TemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
@@ -26,10 +24,6 @@ var _supported_user_types_8h =
     [ "callForTypeNoVoid", "_supported_user_types_8h.html#a1477604124c874deb2accb6b7361a055", null ],
     [ "for_each", "_supported_user_types_8h.html#ae7a87d6ef5da36852a971cab2ac6eddc", null ],
     [ "numericToUserType", "_supported_user_types_8h.html#aa159464ac26217627bc921cc3e9f3c62", null ],
-    [ "operator<<", "_supported_user_types_8h.html#a6ee53c548a088d9ed0b72677847b07b7", null ],
-    [ "operator>>", "_supported_user_types_8h.html#a1aa6443482e75e0e1fceca147c7fb084", null ],
-    [ "operator>>", "_supported_user_types_8h.html#add666a64ef037c29af520a6f9c94636a", null ],
-    [ "to_string", "_supported_user_types_8h.html#a20b2775608abae67eee7a9e7b7cf6b3c", null ],
     [ "userTypeToNumeric", "_supported_user_types_8h.html#a7fbd27ae4a9682ebb5b14b6c967f488b", null ],
     [ "userTypeToUserType", "_supported_user_types_8h.html#a4db52a34472ed003b9ffeb24195f457e", null ]
 ];
