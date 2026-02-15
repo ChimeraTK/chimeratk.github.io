@@ -259,7 +259,10 @@ var annotated_dup =
       ] ],
       [ "testDataConsistencyAC", "namespace_tests_1_1test_data_consistency_a_c.html", [
         [ "ModuleA", "struct_tests_1_1test_data_consistency_a_c_1_1_module_a.html", "struct_tests_1_1test_data_consistency_a_c_1_1_module_a" ],
-        [ "TestFixture", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture.html", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture" ]
+        [ "ModuleIVConsumer", "struct_tests_1_1test_data_consistency_a_c_1_1_module_i_v_consumer.html", "struct_tests_1_1test_data_consistency_a_c_1_1_module_i_v_consumer" ],
+        [ "ModuleIVProvider", "struct_tests_1_1test_data_consistency_a_c_1_1_module_i_v_provider.html", "struct_tests_1_1test_data_consistency_a_c_1_1_module_i_v_provider" ],
+        [ "TestFixture", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture.html", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture" ],
+        [ "TestFixtureIV", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture_i_v.html", "struct_tests_1_1test_data_consistency_a_c_1_1_test_fixture_i_v" ]
       ] ],
       [ "testDataValidityPropagation", "namespace_tests_1_1test_data_validity_propagation.html", [
         [ "TestApplication1", "struct_tests_1_1test_data_validity_propagation_1_1_test_application1.html", "struct_tests_1_1test_data_validity_propagation_1_1_test_application1" ],

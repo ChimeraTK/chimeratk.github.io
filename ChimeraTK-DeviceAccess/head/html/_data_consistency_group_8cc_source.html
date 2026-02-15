@@ -296,17 +296,16 @@ $(document).ready(function(){initNavTree('_data_consistency_group_8cc_source.htm
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47">MatchingMode::exact</a>:</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_simple_matcher.html">DataConsistencyGroupDetail::SimpleMatcher</a>*<span class="keyword">&gt;</span>(_impl.get())-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_data_consistency_group.html#ad60348c3dccb21d5cd4f95d86563079a">isConsistent</a>();</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375">MatchingMode::historized</a>:</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="comment">// no need to call HistorizedMatcher::findMatch; it would return true</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    assert(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html">DataConsistencyGroupDetail::HistorizedMatcher</a>*<span class="keyword">&gt;</span>(_impl.get())-&gt;<a class="code hl_function" href="class_chimera_t_k_1_1_data_consistency_group.html#ad60348c3dccb21d5cd4f95d86563079a">isConsistent</a>();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    assert(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  }</div>
 </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_data_consistency_group_8h_html"><div class="ttname"><a href="_data_consistency_group_8h.html">DataConsistencyGroup.h</a></div></div>
 <div class="ttc" id="a_data_consistency_group_historized_matcher_8h_html"><div class="ttname"><a href="_data_consistency_group_historized_matcher_8h.html">DataConsistencyGroupHistorizedMatcher.h</a></div></div>
 <div class="ttc" id="a_data_consistency_group_simple_matcher_8h_html"><div class="ttname"><a href="_data_consistency_group_simple_matcher_8h.html">DataConsistencyGroupSimpleMatcher.h</a></div></div>

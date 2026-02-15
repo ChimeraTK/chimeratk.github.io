@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"struct_reg_bit_range_descriptor.html#a65c76ad4e1c71c60750bf1e532271ed8":[21,0,151,2],
+"struct_reg_bit_range_descriptor.html#ac5fe0a4ee64e98765eb62bdb348bd257":[21,0,151,1],
 "struct_reg_bit_range_descriptor.html#ac9798398f7b5a46f6c2bdc9283f21a9c":[21,0,151,3],
 "struct_reg_bit_range_descriptor.html#ad509264613b9945de207588490aa823e":[21,0,151,7],
 "struct_reg_bit_range_descriptor.html#af706680c43e862eebe3c2fc39e6a0073":[21,0,151,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "struct_reg_word_firmware_with_math___r__push.html#afc3bbd0e53690ea738d1b1356d3ee615":[21,0,194,0],
 "struct_reg_word_firmware_with_math___w.html":[21,0,195],
 "struct_reg_word_firmware_with_math___w.html#a702effa67ca090eac4d2a410f440bb8f":[21,0,195,1],
-"struct_reg_word_firmware_with_math___w.html#ab8dfec0eefb4f13ac3a6f3157a38294d":[21,0,195,2],
-"struct_reg_word_firmware_with_math___w.html#acbf428581eddf1d660f7178f71c076f0":[21,0,195,0],
-"struct_register_descriptor_base.html":[21,0,159]
+"struct_reg_word_firmware_with_math___w.html#ab8dfec0eefb4f13ac3a6f3157a38294d":[21,0,195,2]
 };

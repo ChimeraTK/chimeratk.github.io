@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"functions_vars_f.html":[21,3,2,6],
+"functions_vars_h.html":[21,3,2,7],
 "functions_vars_i.html":[21,3,2,8],
 "functions_vars_j.html":[21,3,2,9],
 "functions_vars_l.html":[21,3,2,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "namespace_chimera_t_k.html#ae6277eb3879dae8f0dc340c74c99358d":[19,0,1,229],
 "namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc":[19,0,1,198],
 "namespace_chimera_t_k.html#ae7a8921ab1ff250afdd79cc5f3c70fea":[19,0,1,163],
-"namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7":[19,0,1,177],
-"namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7a168b97c08a29d6cd39c5aeeb3e6cc842":[19,0,1,177,2],
-"namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aafcf399c9a4d4e33eda6ff5e3b011540":[19,0,1,177,1]
+"namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7":[19,0,1,177]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"struct_integers__signed32__async__rw.html#ac4e0ffc0590caaeda76c1b3752fff7d1":[21,0,84,0],
+"struct_integers__signed32__async__rw.html#ad8602cb97b6bea738c4f043d95c4b865":[21,0,84,13],
 "struct_integers__signed32__async__rw.html#add13e98df464594d1ad2379979b319f0":[21,0,84,11],
 "struct_integers_base.html":[21,0,85],
 "struct_integers_base.html#a075e377f6817339eafb86d4b1b431e1a":[21,0,85,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "struct_reg_bit_range_descriptor.html":[21,0,151],
 "struct_reg_bit_range_descriptor.html#a0284fbf634a1dc0e1828a64ed663a2c6":[21,0,151,5],
 "struct_reg_bit_range_descriptor.html#a22641e8d2b0c461d329f6a8ab2da98ad":[21,0,151,0],
-"struct_reg_bit_range_descriptor.html#a5addf3d616b813df1166f2251827f3d7":[21,0,151,4],
-"struct_reg_bit_range_descriptor.html#a65c76ad4e1c71c60750bf1e532271ed8":[21,0,151,2],
-"struct_reg_bit_range_descriptor.html#ac5fe0a4ee64e98765eb62bdb348bd257":[21,0,151,1]
+"struct_reg_bit_range_descriptor.html#a5addf3d616b813df1166f2251827f3d7":[21,0,151,4]
 };
