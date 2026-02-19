@@ -18,6 +18,9 @@ var hierarchy =
     ] ],
     [ "TangoAdapter::AttributeMapper::DeviceClass", "struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html", null ],
     [ "TangoAdapter::AttributeMapper::DeviceInstance", "struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html", null ],
+    [ "Tango::DServer", null, [
+      [ "TangoAdapter::DServerImpl", "class_tango_adapter_1_1_d_server_impl.html", null ]
+    ] ],
     [ "boost::noncopyable", null, [
       [ "TangoAdapter::TangoUpdater", "class_tango_adapter_1_1_tango_updater.html", null ]
     ] ],

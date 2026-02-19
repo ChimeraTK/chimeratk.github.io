@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"test_tango_server_import_all_8cpp.html#a45db44fbf9098e40e70d900cfb55a4c0":[3,0,0,0,5,1,4,2],
+"test_tango_server_import_all_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[3,0,0,0,5,1,4,0],
+"test_tango_server_import_all_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70":[3,0,0,0,5,1,4,4],
+"test_tango_server_import_all_8cpp.html#aeafecd91c812389e884a7f43dfa3c849":[3,0,0,0,5,1,4,3],
+"test_tango_server_import_all_8cpp_source.html":[3,0,0,0,5,1,4],
+"test_tango_server_map_twice_8cc.html":[3,0,0,0,5,1,5],
+"test_tango_server_map_twice_8cc.html#a59d75e127358e4a9006ed6768c5a80f7":[3,0,0,0,5,1,5,2],
+"test_tango_server_map_twice_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[3,0,0,0,5,1,5,1],
+"test_tango_server_map_twice_8cc.html#ad5e6f696c1b7bf8db5e4484313098269":[3,0,0,0,5,1,5,3],
+"test_tango_server_map_twice_8cc.html#adcb547bcf6c175d4c3ad20688da85f70":[3,0,0,0,5,1,5,4],
 "test_tango_server_map_twice_8cc_source.html":[3,0,0,0,5,1,5],
 "test_tango_server_persist_spectrum_8cpp.html":[3,0,0,0,5,1,6],
 "test_tango_server_persist_spectrum_8cpp.html#a59d75e127358e4a9006ed6768c5a80f7":[3,0,0,0,5,1,6,2],

@@ -5,5 +5,6 @@ var searchData=
   ['derivetype_2',['deriveType',['../namespace_tango_adapter_1_1util.html#a0b82108ba38d5e8d8270fb8c89f25e5c',1,'TangoAdapter::util']]],
   ['device_3',['device',['../struct_threaded_tango_server.html#a709e2a48c7238d583a42c73673071587',1,'ThreadedTangoServer']]],
   ['deviceclass_4',['DeviceClass',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html#a654062afe4ec042fce32a02312084001',1,'TangoAdapter::AttributeMapper::DeviceClass']]],
-  ['deviceinstance_5',['DeviceInstance',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html#a6ce49dcf0d6f4e3b1b4ca533165bdcf2',1,'TangoAdapter::AttributeMapper::DeviceInstance']]]
+  ['deviceinstance_5',['DeviceInstance',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html#a6ce49dcf0d6f4e3b1b4ca533165bdcf2',1,'TangoAdapter::AttributeMapper::DeviceInstance']]],
+  ['dserverimpl_6',['DServerImpl',['../class_tango_adapter_1_1_d_server_impl.html#ae9b8bd154dd1233787195706e5878a9d',1,'TangoAdapter::DServerImpl']]]
 ];

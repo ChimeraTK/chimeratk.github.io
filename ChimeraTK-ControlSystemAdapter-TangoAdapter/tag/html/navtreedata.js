@@ -67,8 +67,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adapter_device_class_8cpp.html",
-"classes.html",
-"test_tango_server_map_twice_8cc_source.html"
+"class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea",
+"test_tango_server_import_all_8cpp.html#a45db44fbf9098e40e70d900cfb55a4c0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
