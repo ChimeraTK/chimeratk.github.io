@@ -1,6 +1,7 @@
 var class_chimera_t_k_1_1_numeric_addressed_register_info =
 [
     [ "ChannelInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info" ],
+    [ "DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info" ],
     [ "Access", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0", [
       [ "READ_ONLY", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44", null ],
       [ "WRITE_ONLY", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0ad8fddf06187e680ab5a6355f76a17357", null ],
@@ -13,8 +14,8 @@ var class_chimera_t_k_1_1_numeric_addressed_register_info =
       [ "IEEE754", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035faac6a6b8a25c5c9332dcd09a9ebd672ac", null ],
       [ "ASCII", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#abd0d2a19427b8eb648bb520b2d0a035fad2cd8253361a9c732d21ca1d336599cc", null ]
     ] ],
-    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a479cef73c246a77c829b9f16c7838774", null ],
-    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a85126d43e79d689a3e7929652cdbe5fa", null ],
+    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#ae2089a29e6fa1b4a7b388d757b0c95a0", null ],
+    [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a4b345f61548227586675c6137f984721", null ],
     [ "NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1cfb528d88b13476a6aee9d1db65b06b", null ],
     [ "clone", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a7763897f3d113244a769589907d45d6e", null ],
     [ "computeDataDescriptor", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#ad312eca20c2b6f8400dfe32e6a997132", null ],
@@ -34,6 +35,7 @@ var class_chimera_t_k_1_1_numeric_addressed_register_info =
     [ "bar", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a4cf5b5f59029be203d8bd24f6c1b56f6", null ],
     [ "channels", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a116fb9385221c136bd21a43bea588761", null ],
     [ "dataDescriptor", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a9bd1b996e98bdf30b5ad9ad4f484331c", null ],
+    [ "doubleBuffer", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a8c16b893deb4733d02a68ece46ad1bcb", null ],
     [ "elementPitchBits", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a58855d5b7cbb0af4ecf91a5071ef37da", null ],
     [ "hidden", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#af96498593f743131fc74449fa20e61ff", null ],
     [ "interruptId", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#ad2f99380d1309f19442657943b380593", null ],

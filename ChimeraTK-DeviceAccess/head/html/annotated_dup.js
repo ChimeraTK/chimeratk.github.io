@@ -104,6 +104,7 @@ var annotated_dup =
       [ "DeviceInfoMap", "class_chimera_t_k_1_1_device_info_map.html", "class_chimera_t_k_1_1_device_info_map" ],
       [ "DmaIntf", "class_chimera_t_k_1_1_dma_intf.html", "class_chimera_t_k_1_1_dma_intf" ],
       [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
+      [ "DoubleBufferAccessor", "class_chimera_t_k_1_1_double_buffer_accessor.html", "class_chimera_t_k_1_1_double_buffer_accessor" ],
       [ "DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", "class_chimera_t_k_1_1_dummy_backend" ],
       [ "DummyBackendBase", "class_chimera_t_k_1_1_dummy_backend_base.html", "class_chimera_t_k_1_1_dummy_backend_base" ],
       [ "DummyInterruptTriggerAccessor", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor" ],
@@ -220,6 +221,9 @@ var annotated_dup =
       [ "VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", "class_chimera_t_k_1_1_void_register_accessor" ],
       [ "XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", "class_chimera_t_k_1_1_xdma_backend" ],
       [ "XdmaIntfAbstract", "class_chimera_t_k_1_1_xdma_intf_abstract.html", "class_chimera_t_k_1_1_xdma_intf_abstract" ]
+    ] ],
+    [ "nlohmann", "namespacenlohmann.html", [
+      [ "adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ]
     ] ],
     [ "std", "namespacestd.html", [
       [ "formatter< ChimeraTK::VersionNumber, CharT >", "structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html", "structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4" ],

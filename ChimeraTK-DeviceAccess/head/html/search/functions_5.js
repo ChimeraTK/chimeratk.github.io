@@ -26,6 +26,7 @@ var searchData=
   ['foreach_23',['forEach',['../class_chimera_t_k_1_1async_1_1_domains_container.html#a498957143f37bb0c7f5dc344295e7fa0',1,'ChimeraTK::async::DomainsContainer']]],
   ['foreachtype_24',['forEachType',['../test_numeric_converter_8cpp.html#a4af3d9d871882e14247b2831b62d3c09',1,'testNumericConverter.cpp']]],
   ['format_25',['format',['../structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html#ae610c170a915d0b9b3c67a9d7c4fbd98',1,'std::formatter&lt; ChimeraTK::VersionNumber, CharT &gt;']]],
-  ['fromraw_26',['fromraw',['../struct_my_register1.html#af51dcdbabf3036a841b9efc18f307f4f',1,'MyRegister1::fromRaw()'],['../struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7',1,'MyArea1::fromRaw()'],['../struct_muxed_area1.html#a0b2a743b75a74150ef5af457852012b5',1,'MuxedArea1::fromRaw()'],['../struct_muxed_area2.html#ae221c523c400d55ea76278982ca37d38',1,'MuxedArea2::fromRaw()']]],
-  ['fundamentaltype_27',['fundamentalType',['../class_chimera_t_k_1_1_data_descriptor.html#a40d518a86f5269b6a0b706c85d9fcfc8',1,'ChimeraTK::DataDescriptor']]]
+  ['from_5fjson_26',['from_json',['../structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html#af4203029ef3de16b53c7b88fcdf4d4fe',1,'nlohmann::adl_serializer&lt; std::optional&lt; T &gt; &gt;']]],
+  ['fromraw_27',['fromraw',['../struct_my_register1.html#af51dcdbabf3036a841b9efc18f307f4f',1,'MyRegister1::fromRaw()'],['../struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7',1,'MyArea1::fromRaw()'],['../struct_muxed_area1.html#a0b2a743b75a74150ef5af457852012b5',1,'MuxedArea1::fromRaw()'],['../struct_muxed_area2.html#ae221c523c400d55ea76278982ca37d38',1,'MuxedArea2::fromRaw()']]],
+  ['fundamentaltype_28',['fundamentalType',['../class_chimera_t_k_1_1_data_descriptor.html#a40d518a86f5269b6a0b706c85d9fcfc8',1,'ChimeraTK::DataDescriptor']]]
 ];

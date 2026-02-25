@@ -43,6 +43,7 @@ var hierarchy =
     [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
     [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
+    [ "nlohmann::adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
     [ "ChimeraTK::async::AsyncVariable", "struct_chimera_t_k_1_1async_1_1_async_variable.html", [
@@ -226,6 +227,7 @@ var hierarchy =
     [ "ChimeraTK::DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
     [ "DMapFileParserTest", "class_d_map_file_parser_test.html", null ],
     [ "ChimeraTK::async::DomainsContainer", "class_chimera_t_k_1_1async_1_1_domains_container.html", null ],
+    [ "ChimeraTK::NumericAddressedRegisterInfo::DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", null ],
     [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
@@ -317,6 +319,7 @@ var hierarchy =
           ] ],
           [ "Accessor< UserType >", "class_accessor.html", null ],
           [ "AsyncTestDummy::Accessor< UserType >", "class_async_test_dummy_1_1_accessor.html", null ],
+          [ "ChimeraTK::DoubleBufferAccessor< UserType >", "class_chimera_t_k_1_1_double_buffer_accessor.html", null ],
           [ "ChimeraTK::DummyInterruptTriggerAccessor< UserType >", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html", null ],
           [ "ChimeraTK::LNMBackendBitAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html", null ],
           [ "ChimeraTK::LNMBackendChannelAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html", null ],

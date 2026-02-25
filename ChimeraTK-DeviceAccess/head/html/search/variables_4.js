@@ -35,10 +35,11 @@ var searchData=
   ['dmapfilelinenumber_32',['dmapFileLineNumber',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aab8018e944f04b3dea79982f9ff02f5d',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
   ['dmapfilename_33',['dmapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a563737aed65226e0717444c4a6c75f37',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
   ['doublebufdummy_34',['doubleBufDummy',['../struct_device_fixture.html#ad0e940477f47a52a4cc11225fb59876b',1,'DeviceFixture']]],
-  ['doublebufferingenabled_35',['doublebufferingenabled',['../struct_device_fixture.html#a25c4c004d662de6e1b5d88db2f1bddab',1,'DeviceFixture::doubleBufferingEnabled'],['../struct_device_fixture2_d.html#ad2bf0e832ee77cdd3e9e3cf10f95fdb4',1,'DeviceFixture2D::doubleBufferingEnabled'],['../struct_device_fixture___h_w.html#ab7b581041b907e8fb70cb7988e9789eb',1,'DeviceFixture_HW::doubleBufferingEnabled']]],
-  ['dummy_5finterrupt_5fregister_5fprefix_36',['DUMMY_INTERRUPT_REGISTER_PREFIX',['../namespace_chimera_t_k.html#a10806d5e36a373c26f0233b5c368840c',1,'ChimeraTK']]],
-  ['dummy_5freadable_5fsuffix_37',['DUMMY_READABLE_SUFFIX',['../namespace_chimera_t_k.html#a4ad9e93b08897dba1d513c6be6315b2d',1,'ChimeraTK']]],
-  ['dummy_5fwriteable_5fsuffix_38',['DUMMY_WRITEABLE_SUFFIX',['../namespace_chimera_t_k.html#a4670c21e6bd33fbbe81acee66e1d3076',1,'ChimeraTK']]],
-  ['dummybackend_39',['dummyBackend',['../struct_test_fixture.html#a7b2cccd0796944ec6ab5fb0288965030',1,'TestFixture']]],
-  ['dummyinterrupt_40',['dummyInterrupt',['../struct_test_fixture.html#a691b636f386bf7cebbb8f413f6717ff5',1,'TestFixture']]]
+  ['doublebuffer_35',['doubleBuffer',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a8c16b893deb4733d02a68ece46ad1bcb',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
+  ['doublebufferingenabled_36',['doublebufferingenabled',['../struct_device_fixture.html#a25c4c004d662de6e1b5d88db2f1bddab',1,'DeviceFixture::doubleBufferingEnabled'],['../struct_device_fixture2_d.html#ad2bf0e832ee77cdd3e9e3cf10f95fdb4',1,'DeviceFixture2D::doubleBufferingEnabled'],['../struct_device_fixture___h_w.html#ab7b581041b907e8fb70cb7988e9789eb',1,'DeviceFixture_HW::doubleBufferingEnabled']]],
+  ['dummy_5finterrupt_5fregister_5fprefix_37',['DUMMY_INTERRUPT_REGISTER_PREFIX',['../namespace_chimera_t_k.html#a10806d5e36a373c26f0233b5c368840c',1,'ChimeraTK']]],
+  ['dummy_5freadable_5fsuffix_38',['DUMMY_READABLE_SUFFIX',['../namespace_chimera_t_k.html#a4ad9e93b08897dba1d513c6be6315b2d',1,'ChimeraTK']]],
+  ['dummy_5fwriteable_5fsuffix_39',['DUMMY_WRITEABLE_SUFFIX',['../namespace_chimera_t_k.html#a4670c21e6bd33fbbe81acee66e1d3076',1,'ChimeraTK']]],
+  ['dummybackend_40',['dummyBackend',['../struct_test_fixture.html#a7b2cccd0796944ec6ab5fb0288965030',1,'TestFixture']]],
+  ['dummyinterrupt_41',['dummyInterrupt',['../struct_test_fixture.html#a691b636f386bf7cebbb8f413f6717ff5',1,'TestFixture']]]
 ];
