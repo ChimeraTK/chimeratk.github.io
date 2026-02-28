@@ -20,7 +20,7 @@ var searchData=
   ['helperfunctions_2ecc_17',['helperFunctions.cc',['../helper_functions_8cc.html',1,'']]],
   ['helperfunctions_2eh_18',['helperFunctions.h',['../helper_functions_8h.html',1,'']]],
   ['helperprocess_19',['helperprocess',['../struct_helper_process.html',1,'HelperProcess'],['../struct_helper_process.html#a815fcfe1efb41db737779a3134d47155',1,'HelperProcess::HelperProcess()']]],
-  ['hex_5fto_5fdouble_20',['HEX_TO_DOUBLE',['../test_fixed_point_converter_8cpp.html#a487bf380dfbd1da6dec444f9bc6ed701',1,'testFixedPointConverter.cpp']]],
+  ['hex_5fto_5fdouble_20',['hex_to_double',['../test_fixed_point_converter_8cpp.html#a487bf380dfbd1da6dec444f9bc6ed701',1,'HEX_TO_DOUBLE:&#160;testFixedPointConverter.cpp'],['../test_raw_converter_8cpp.html#a487bf380dfbd1da6dec444f9bc6ed701',1,'HEX_TO_DOUBLE:&#160;testRawConverter.cpp']]],
   ['hidden_21',['hidden',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#af96498593f743131fc74449fa20e61ff',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
   ['hiddenrange_22',['HiddenRange',['../namespace_chimera_t_k.html#a563a28dc0406910d68b5b5beaa4cbd3c',1,'ChimeraTK']]],
   ['hiddenregisters_23',['hiddenregisters',['../class_chimera_t_k_1_1_backend_register_catalogue_base.html#a632bb3df101d639104519fd311a636fd',1,'ChimeraTK::BackendRegisterCatalogueBase::hiddenRegisters()'],['../class_chimera_t_k_1_1_backend_register_catalogue.html#ae4c8c8139677aefe880a4eeabac4b19e',1,'ChimeraTK::BackendRegisterCatalogue::hiddenRegisters()'],['../class_chimera_t_k_1_1_register_catalogue.html#a6d6cb6e48bdf3a853aa38cf480c4f60d',1,'ChimeraTK::RegisterCatalogue::hiddenRegisters()']]],

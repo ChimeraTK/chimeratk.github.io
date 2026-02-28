@@ -43,6 +43,7 @@ var dir_cd2eacd0d4a0b1b44be2af10e62d9e9e =
     [ "testNumericConverter.cpp", "test_numeric_converter_8cpp.html", "test_numeric_converter_8cpp" ],
     [ "testOneDRegisterAccessor.cpp", "test_one_d_register_accessor_8cpp.html", "test_one_d_register_accessor_8cpp" ],
     [ "testPcieBackend.cpp", "test_pcie_backend_8cpp.html", "test_pcie_backend_8cpp" ],
+    [ "testRawConverter.cpp", "test_raw_converter_8cpp.html", "test_raw_converter_8cpp" ],
     [ "testRawDataTypeInfo.cpp", "test_raw_data_type_info_8cpp.html", "test_raw_data_type_info_8cpp" ],
     [ "testRebotConnectionTimeouts.cpp", "test_rebot_connection_timeouts_8cpp.html", "test_rebot_connection_timeouts_8cpp" ],
     [ "testRebotHeartbeatCount.cpp", "test_rebot_heartbeat_count_8cpp.html", "test_rebot_heartbeat_count_8cpp" ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['deprecated_5ffixedpoint_5fdefault_0',['DEPRECATED_FIXEDPOINT_DEFAULT',['../namespace_chimera_t_k.html#ab184234a078c9ec4a2b14b816523825f',1,'ChimeraTK']]],
+  ['deprecated_5ffixedpoint_5fdefault_0',['deprecated_fixedpoint_default',['../namespace_chimera_t_k.html#ab184234a078c9ec4a2b14b816523825f',1,'ChimeraTK::DEPRECATED_FIXEDPOINT_DEFAULT'],['../test_raw_converter_8cpp.html#a7e43ae2fe67beb1e8e6e6ec5982ebbdd',1,'DEPRECATED_FIXEDPOINT_DEFAULT:&#160;testRawConverter.cpp']]],
   ['device_5fioctrl_5fdata_1',['device_ioctrl_data',['../pciedev__io__compat_8h.html#a9f5c23857ea399bf4a9bb9652b6d817b',1,'pciedev_io_compat.h']]],
   ['device_5fioctrl_5fdma_2',['device_ioctrl_dma',['../pciedev__io__compat_8h.html#a795326190b88aa344d83d5493642a274',1,'pciedev_io_compat.h']]],
   ['device_5fioctrl_5ftime_3',['device_ioctrl_time',['../pciedev__io__compat_8h.html#aba7e14009372d9742940885711d7890e',1,'pciedev_io_compat.h']]],

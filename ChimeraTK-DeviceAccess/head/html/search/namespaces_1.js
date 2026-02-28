@@ -11,7 +11,9 @@ var searchData=
   ['chimeratk_3a_3anumeric_5faddress_8',['numeric_address',['../namespace_chimera_t_k_1_1numeric__address.html',1,'ChimeraTK']]],
   ['chimeratk_3a_3aparserutilities_9',['parserUtilities',['../namespace_chimera_t_k_1_1parser_utilities.html',1,'ChimeraTK']]],
   ['chimeratk_3a_3aproxies_10',['proxies',['../namespace_chimera_t_k_1_1proxies.html',1,'ChimeraTK']]],
-  ['chimeratk_3a_3arebot_11',['Rebot',['../namespace_chimera_t_k_1_1_rebot.html',1,'ChimeraTK']]],
-  ['chimeratk_3a_3atestable_5frebot_5fsleep_12',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]],
-  ['chimeratk_3a_3autilities_13',['Utilities',['../namespace_chimera_t_k_1_1_utilities.html',1,'ChimeraTK']]]
+  ['chimeratk_3a_3arawconverter_11',['RawConverter',['../namespace_chimera_t_k_1_1_raw_converter.html',1,'ChimeraTK']]],
+  ['chimeratk_3a_3arawconverter_3a_3adetail_12',['detail',['../namespace_chimera_t_k_1_1_raw_converter_1_1detail.html',1,'ChimeraTK::RawConverter']]],
+  ['chimeratk_3a_3arebot_13',['Rebot',['../namespace_chimera_t_k_1_1_rebot.html',1,'ChimeraTK']]],
+  ['chimeratk_3a_3atestable_5frebot_5fsleep_14',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]],
+  ['chimeratk_3a_3autilities_15',['Utilities',['../namespace_chimera_t_k_1_1_utilities.html',1,'ChimeraTK']]]
 ];

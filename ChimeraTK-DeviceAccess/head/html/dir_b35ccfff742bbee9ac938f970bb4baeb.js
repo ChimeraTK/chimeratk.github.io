@@ -45,6 +45,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "parserUtilities.h", "parser_utilities_8h.html", "parser_utilities_8h" ],
     [ "predicates.h", "predicates_8h.html", "predicates_8h" ],
     [ "ProcessManagement.h", "_process_management_8h.html", "_process_management_8h" ],
+    [ "RawConverter.h", "_raw_converter_8h.html", "_raw_converter_8h" ],
     [ "ReadAnyGroup.h", "_read_any_group_8h.html", "_read_any_group_8h" ],
     [ "RegisterCatalogue.h", "_register_catalogue_8h.html", "_register_catalogue_8h" ],
     [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],

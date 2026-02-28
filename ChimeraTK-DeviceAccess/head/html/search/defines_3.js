@@ -4,7 +4,7 @@ var searchData=
   ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_5fno_5fvoid_1',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID',['../_supported_user_types_8h.html#a15e1765bd46f19c26165b67774466461',1,'SupportedUserTypes.h']]],
   ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_2',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d',1,'SupportedUserTypes.h']]],
   ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_5fno_5fvoid_3',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID',['../_supported_user_types_8h.html#a6e202e989c52cc471484fa2f1864e3db',1,'SupportedUserTypes.h']]],
-  ['def_5ftypename_4',['DEF_TYPENAME',['../test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'testFixedPointConverter.cpp']]],
+  ['def_5ftypename_4',['def_typename',['../test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'DEF_TYPENAME:&#160;testFixedPointConverter.cpp'],['../test_raw_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'DEF_TYPENAME:&#160;testRawConverter.cpp']]],
   ['define_5fvirtual_5ffunction_5foverride_5fvtable_5',['DEFINE_VIRTUAL_FUNCTION_OVERRIDE_VTABLE',['../_virtual_function_template_8h.html#a0f9ffc1e7ff60573c7d0efa9bf1b075e',1,'VirtualFunctionTemplate.h']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_6',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE',['../_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f',1,'VirtualFunctionTemplate.h']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller_7',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746',1,'VirtualFunctionTemplate.h']]],

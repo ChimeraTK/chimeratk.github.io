@@ -25,10 +25,14 @@ var searchData=
   ['constantregisterdescriptorbase_3c_20regarrayconstant_20_3e_22',['ConstantRegisterDescriptorBase&lt; RegArrayConstant &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
   ['constantregisterdescriptorbase_3c_20regconstant_20_3e_23',['ConstantRegisterDescriptorBase&lt; RegConstant &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
   ['constantregisterdescriptorbase_3c_20regconstant2_20_3e_24',['ConstantRegisterDescriptorBase&lt; RegConstant2 &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
-  ['copmaredregisterinfosbyname2_5ffunctor_25',['copmaredRegisterInfosByName2_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html',1,'ChimeraTK']]],
-  ['copyregisterdecorator_26',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],
-  ['copyregisterdecoratortrait_27',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
-  ['countingdecorator_28',['CountingDecorator',['../struct_counting_decorator.html',1,'']]],
-  ['ctrlintf_29',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK']]],
-  ['custombackend_30',['CustomBackend',['../class_custom_backend.html',1,'']]]
+  ['converter_25',['Converter',['../class_chimera_t_k_1_1_raw_converter_1_1_converter.html',1,'ChimeraTK::RawConverter']]],
+  ['converter_3c_20usertype_2c_20rawtype_2c_20significantbitscase_3a_3ageneric_2c_20fractionalcase_3a_3ainteger_2c_20false_20_3e_26',['Converter&lt; UserType, RawType, SignificantBitsCase::generic, FractionalCase::integer, false &gt;',['../class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html',1,'ChimeraTK::RawConverter']]],
+  ['converterloophelper_27',['ConverterLoopHelper',['../class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html',1,'ChimeraTK::RawConverter']]],
+  ['converterloophelperimpl_28',['ConverterLoopHelperImpl',['../class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper_impl.html',1,'ChimeraTK::RawConverter']]],
+  ['copmaredregisterinfosbyname2_5ffunctor_29',['copmaredRegisterInfosByName2_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html',1,'ChimeraTK']]],
+  ['copyregisterdecorator_30',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],
+  ['copyregisterdecoratortrait_31',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
+  ['countingdecorator_32',['CountingDecorator',['../struct_counting_decorator.html',1,'']]],
+  ['ctrlintf_33',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK']]],
+  ['custombackend_34',['CustomBackend',['../class_custom_backend.html',1,'']]]
 ];

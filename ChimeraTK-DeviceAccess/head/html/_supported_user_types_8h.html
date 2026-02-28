@@ -96,7 +96,8 @@ $(document).ready(function(){initNavTree('_supported_user_types_8h.html',''); in
 <a href="#concepts">Concepts</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">SupportedUserTypes.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -153,6 +154,9 @@ Namespaces</h2></td></tr>
 Concepts</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concept_chimera_t_k_1_1user__type.html">ChimeraTK::user_type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept requiring a type to be one of the supported <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> UserTypes. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concept_chimera_t_k_1_1raw__type.html">ChimeraTK::raw_type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept requiring a type to be one of the supported <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> RawTypes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -226,6 +230,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a0c6a8b37004cfe48be8855986e1316c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0c6a8b37004cfe48be8855986e1316c8">ChimeraTK::callForRawType</a> (const <a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> &amp;type, LAMBDATYPE lambda)</td></tr>
 <tr class="memdesc:a0c6a8b37004cfe48be8855986e1316c8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_chimera_t_k.html#a0c6a8b37004cfe48be8855986e1316c8" title="callForRawType() is similar to callForType(), just with a subset of supported data types which can be...">callForRawType()</a> is similar to <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a>, just with a subset of supported data types which can be raw types in the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g.">NumericAddressedBackend</a>.  <br /></td></tr>
 <tr class="separator:a0c6a8b37004cfe48be8855986e1316c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab3641296d709ebef676a1f10af6591c8" id="r_ab3641296d709ebef676a1f10af6591c8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab3641296d709ebef676a1f10af6591c8"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ab3641296d709ebef676a1f10af6591c8">ChimeraTK::isUserType</a></td></tr>
+<tr class="memdesc:ab3641296d709ebef676a1f10af6591c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant which alles to check whether a type is one of the supported <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> UserTypes.  <br /></td></tr>
+<tr class="separator:ab3641296d709ebef676a1f10af6591c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c412c5b84761ba84251052c8d1294d7" id="r_a0c412c5b84761ba84251052c8d1294d7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0c412c5b84761ba84251052c8d1294d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0c412c5b84761ba84251052c8d1294d7">ChimeraTK::isRawType</a></td></tr>
+<tr class="memdesc:a0c412c5b84761ba84251052c8d1294d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant which alles to check whether a type is one of the supported <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> RawTypes.  <br /></td></tr>
+<tr class="separator:a0c412c5b84761ba84251052c8d1294d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a393c59a0bbe800ef9a1420bc5f8f8be7" name="a393c59a0bbe800ef9a1420bc5f8f8be7"></a>
@@ -270,7 +285,7 @@ Functions</h2></td></tr>
 <p>Macro to declare a template class with multiple template parameters for all supported user types. </p>
 <p>The variadic arguments are the additional template parameters. Only works for classes where the user type is the first template parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00443">443</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00467">467</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +327,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;std::string, __VA_ARGS__&gt;;                                                       \</div>
 <div class="line">  <span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean, __VA_ARGS__&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00458">458</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00482">482</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +360,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean&gt;;                                                             \</div>
 <div class="line">  <span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Void&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00379">379</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00403">403</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +392,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;std::string&gt;;                                                                    \</div>
 <div class="line">  <span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00394">394</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00418">418</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +435,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean, __VA_ARGS__&gt;;                                                       \</div>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Void, __VA_ARGS__&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00472">472</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00496">496</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +477,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;std::string, __VA_ARGS__&gt;;                                                              \</div>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean, __VA_ARGS__&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00487">487</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00511">511</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +510,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean&gt;;                                                                    \</div>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Void&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00408">408</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00432">432</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -527,7 +542,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;std::string&gt;;                                                                           \</div>
 <div class="line">  <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;ChimeraTK::Boolean&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00423">423</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00447">447</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>

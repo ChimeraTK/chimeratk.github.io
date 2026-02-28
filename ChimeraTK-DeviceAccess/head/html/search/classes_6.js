@@ -4,7 +4,7 @@ var searchData=
   ['fanoutplugin_1',['FanOutPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['fanoutplugindecorator_2',['FanOutPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_fan_out_plugin_decorator.html',1,'ChimeraTK::LNMBackend']]],
   ['finddevbyname_5fpred_3',['findDevByName_pred',['../class_chimera_t_k_1_1find_dev_by_name__pred.html',1,'ChimeraTK']]],
-  ['fixedpointconverter_4',['FixedPointConverter',['../class_chimera_t_k_1_1_fixed_point_converter.html',1,'ChimeraTK']]],
+  ['fixedpointconverter_4',['fixedpointconverter',['../class_chimera_t_k_1_1_fixed_point_converter.html',1,'ChimeraTK::FixedPointConverter&lt; RawType &gt;'],['../class_fixed_point_converter.html',1,'FixedPointConverter&lt; RawType &gt;']]],
   ['fixedpointconverter_3c_20deprecated_5ffixedpoint_5fdefault_20_3e_5',['FixedPointConverter&lt; DEPRECATED_FIXEDPOINT_DEFAULT &gt;',['../class_chimera_t_k_1_1_fixed_point_converter.html',1,'ChimeraTK']]],
   ['fixedpointconvertingdecorator_6',['FixedPointConvertingDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html',1,'ChimeraTK']]],
   ['fixedpointconvertingrawdecorator_7',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html',1,'ChimeraTK']]],

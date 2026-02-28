@@ -70,6 +70,12 @@ var annotated_dup =
         [ "DummyRegisterElement", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element" ],
         [ "DummyRegisterSequence", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ]
       ] ],
+      [ "RawConverter", "namespace_chimera_t_k_1_1_raw_converter.html", [
+        [ "Converter", "class_chimera_t_k_1_1_raw_converter_1_1_converter.html", "class_chimera_t_k_1_1_raw_converter_1_1_converter" ],
+        [ "Converter< UserType, RawType, SignificantBitsCase::generic, FractionalCase::integer, false >", "class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html", "class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a" ],
+        [ "ConverterLoopHelper", "class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html", "class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper" ],
+        [ "ConverterLoopHelperImpl", "class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper_impl.html", "class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper_impl" ]
+      ] ],
       [ "Rebot", "namespace_chimera_t_k_1_1_rebot.html", [
         [ "Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html", "class_chimera_t_k_1_1_rebot_1_1_connection" ]
       ] ],
@@ -294,6 +300,7 @@ var annotated_dup =
     [ "DummyRegisterTest", "class_dummy_register_test.html", "class_dummy_register_test" ],
     [ "DummyRegisterTestSuite", "class_dummy_register_test_suite.html", "class_dummy_register_test_suite" ],
     [ "F", "struct_f.html", "struct_f" ],
+    [ "FixedPointConverter", "class_fixed_point_converter.html", "class_fixed_point_converter" ],
     [ "Fixture", "struct_fixture.html", "struct_fixture" ],
     [ "Fixture_t", "class_fixture__t.html", "class_fixture__t" ],
     [ "GieActiveTestFixture", "struct_gie_active_test_fixture.html", "struct_gie_active_test_fixture" ],
