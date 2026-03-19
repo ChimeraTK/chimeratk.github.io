@@ -1,5 +1,6 @@
 var _dummy_register_accessor_8h =
 [
+    [ "ChimeraTK::proxies::RawConverterCapsule< UserType >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule" ],
     [ "ChimeraTK::proxies::DummyRegisterElement< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element" ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ],
     [ "ChimeraTK::DummyRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_register_accessor.html", "class_chimera_t_k_1_1_dummy_register_accessor" ],

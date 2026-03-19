@@ -91,7 +91,8 @@ var searchData=
   ['transfergroup_2eh_88',['TransferGroup.h',['../_transfer_group_8h.html',1,'']]],
   ['triggeredpolldistributor_2ecc_89',['TriggeredPollDistributor.cc',['../_triggered_poll_distributor_8cc.html',1,'']]],
   ['triggeredpolldistributor_2eh_90',['TriggeredPollDistributor.h',['../_triggered_poll_distributor_8h.html',1,'']]],
-  ['twodregisteraccessor_2eh_91',['TwoDRegisterAccessor.h',['../_two_d_register_accessor_8h.html',1,'']]],
-  ['typechangingdecorator_2ecc_92',['TypeChangingDecorator.cc',['../_type_changing_decorator_8cc.html',1,'']]],
-  ['typechangingdecorator_2eh_93',['TypeChangingDecorator.h',['../_type_changing_decorator_8h.html',1,'']]]
+  ['tupleusertypes_2eh_91',['TupleUserTypes.h',['../_tuple_user_types_8h.html',1,'']]],
+  ['twodregisteraccessor_2eh_92',['TwoDRegisterAccessor.h',['../_two_d_register_accessor_8h.html',1,'']]],
+  ['typechangingdecorator_2ecc_93',['TypeChangingDecorator.cc',['../_type_changing_decorator_8cc.html',1,'']]],
+  ['typechangingdecorator_2eh_94',['TypeChangingDecorator.h',['../_type_changing_decorator_8h.html',1,'']]]
 ];

@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_raw_converter_1_
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_raw_converter_1_1_converter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::RawConverter::Converter&lt; UserType, RawType, sc, fc, isSigned &gt; Class Template Reference</div></div>
@@ -102,6 +103,11 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_raw_converter_1_
 
 <p><code>#include &lt;<a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a63babb58d7a7264ed9a5c075369801af" id="r_a63babb58d7a7264ed9a5c075369801af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html#a63babb58d7a7264ed9a5c075369801af">raw_type</a> = RawType</td></tr>
+<tr class="separator:a63babb58d7a7264ed9a5c075369801af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a513381c23a647eb7b5fcff8ca40082d4" id="r_a513381c23a647eb7b5fcff8ca40082d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html#a513381c23a647eb7b5fcff8ca40082d4">Converter</a> (const <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html">ChimeraTK::NumericAddressedRegisterInfo::ChannelInfo</a> &amp;info)</td></tr>
@@ -119,7 +125,26 @@ class ChimeraTK::RawConverter::Converter&lt; UserType, RawType, sc, fc, isSigned
 <p>For implementing getAsCooked/setAsCooked (which are templated on the COOKED_TYPE and hence require a new converter instance on each call), the function <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a79f7afaf122bf99f4d205b07ad03c0cf" title="Create Converter matching the given register info and channel, and call the functor object passing th...">withConverter()</a> can be used. </p>
 
 <p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00040">40</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a63babb58d7a7264ed9a5c075369801af" name="a63babb58d7a7264ed9a5c075369801af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63babb58d7a7264ed9a5c075369801af">&#9670;&#160;</a></span>raw_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename RawType , <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a9cc454729690e0f9bf48fa1c7e7f2b87">SignificantBitsCase</a> sc, <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1">FractionalCase</a> fc, bool isSigned&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html">ChimeraTK::RawConverter::Converter</a>&lt; UserType, RawType, sc, fc, isSigned &gt;::raw_type =  RawType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00048">48</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a513381c23a647eb7b5fcff8ca40082d4" name="a513381c23a647eb7b5fcff8ca40082d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a513381c23a647eb7b5fcff8ca40082d4">&#9670;&#160;</a></span>Converter()</h2>
 
@@ -146,7 +171,7 @@ template&lt;typename UserType , typename RawType , <a class="el" href="namespace
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00366">366</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00402">402</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>
@@ -169,7 +194,7 @@ template&lt;typename UserType , typename RawType , <a class="el" href="namespace
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00427">427</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00466">466</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +216,7 @@ template&lt;typename UserType , typename RawType , <a class="el" href="namespace
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00459">459</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00515">515</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>

@@ -130,6 +130,8 @@ var hierarchy =
     [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >::Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", null ],
     [ "ChimeraTK::NDRegisterAccessor< UserType >::Buffer", "struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html", null ],
     [ "CatalogueGenerator", "class_catalogue_generator.html", null ],
+    [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >::ChannelGroup::Channel", "struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group_1_1_channel.html", null ],
+    [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >::ChannelGroup", "struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group.html", null ],
     [ "ChimeraTK::NumericAddressedRegisterInfo::ChannelInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html", null ],
     [ "DeviceFixture2D< Derived >::ConfigParams", "struct_device_fixture2_d_1_1_config_params.html", null ],
     [ "ChimeraTK::Rebot::Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html", null ],
@@ -231,8 +233,8 @@ var hierarchy =
     [ "ChimeraTK::NumericAddressedRegisterInfo::DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", null ],
     [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
+    [ "ChimeraTK::DummyMultiplexedRegisterAccessor< float >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
-    [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< uint16_t >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
     [ "DummyProtocolImplementor", "struct_dummy_protocol_implementor.html", [
@@ -343,8 +345,8 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::FixedPointConvertingRawDecorator< TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html", null ]
             ] ],
-            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::LNMBackend::BitRangeAccessPluginDecorator< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html", null ]
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint64_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::LNMBackend::BitRangeAccessPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html", null ]
             ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MathPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", null ],
@@ -497,6 +499,18 @@ var hierarchy =
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", null ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >::QueuedValue", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table_1_1_queued_value.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< UserType >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", [
+      [ "ChimeraTK::proxies::RawConverterCapsuleImpl< UserType, RawConverter >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule_impl.html", null ]
+    ] ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< ChimeraTK::Boolean >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< float >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< int >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< int32_t >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< minimumUserType >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< rawUserType >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< T >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< uint16_t >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
+    [ "ChimeraTK::proxies::RawConverterCapsule< uint32_t >", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", null ],
     [ "RawToCookedProvider_BitWithMath", "struct_raw_to_cooked_provider___bit_with_math.html", null ],
     [ "RawToCookedProvider_Var1", "struct_raw_to_cooked_provider___var1.html", null ],
     [ "RawToCookedProvider_Var2", "struct_raw_to_cooked_provider___var2.html", null ],

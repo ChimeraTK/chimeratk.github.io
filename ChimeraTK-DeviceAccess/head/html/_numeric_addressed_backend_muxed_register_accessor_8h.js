@@ -1,6 +1,8 @@
 var _numeric_addressed_backend_muxed_register_accessor_8h =
 [
     [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor" ],
+    [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >::ChannelGroup", "struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group.html", "struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group" ],
+    [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >::ChannelGroup::Channel", "struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group_1_1_channel.html", "struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group_1_1_channel" ],
     [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "_numeric_addressed_backend_muxed_register_accessor_8h.html#a278538b785d2dba8e3a03b924e125c11", null ],
     [ "MEM_MULTIPLEXED_PREFIX", "_numeric_addressed_backend_muxed_register_accessor_8h.html#adbc3bae518355d2b08e4111b194e8883", null ],
     [ "MULTIPLEXED_SEQUENCE_PREFIX", "_numeric_addressed_backend_muxed_register_accessor_8h.html#a3eb35d143efd5215194f952d74c5b343", null ],

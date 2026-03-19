@@ -11,5 +11,6 @@ var class_chimera_t_k_1_1async_1_1_data_consistency_key =
     [ "operator-", "class_chimera_t_k_1_1async_1_1_data_consistency_key.html#a41e3ddca9f4242910e4b8e412ee11b65", null ],
     [ "operator-", "class_chimera_t_k_1_1async_1_1_data_consistency_key.html#a30402ee893c9a683285248a81c708bb0", null ],
     [ "operator<=>", "class_chimera_t_k_1_1async_1_1_data_consistency_key.html#ad79d8b713db72e4da43001ba798de37c", null ],
-    [ "operator<=>", "class_chimera_t_k_1_1async_1_1_data_consistency_key.html#adc00f1e76d8b4e92d1c19926af593660", null ]
+    [ "operator<=>", "class_chimera_t_k_1_1async_1_1_data_consistency_key.html#adc00f1e76d8b4e92d1c19926af593660", null ],
+    [ "operator=", "class_chimera_t_k_1_1async_1_1_data_consistency_key.html#af24bb642867ce361db4066b372d57827", null ]
 ];

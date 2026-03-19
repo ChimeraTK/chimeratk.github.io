@@ -52,5 +52,6 @@ var searchData=
   ['dummyprotocol1_2ecc_49',['DummyProtocol1.cc',['../_dummy_protocol1_8cc.html',1,'']]],
   ['dummyprotocol1_2eh_50',['DummyProtocol1.h',['../_dummy_protocol1_8h.html',1,'']]],
   ['dummyprotocolimplementor_2eh_51',['DummyProtocolImplementor.h',['../_dummy_protocol_implementor_8h.html',1,'']]],
-  ['dummyregisteraccessor_2eh_52',['DummyRegisterAccessor.h',['../_dummy_register_accessor_8h.html',1,'']]]
+  ['dummyregisteraccessor_2ecc_52',['DummyRegisterAccessor.cc',['../_dummy_register_accessor_8cc.html',1,'']]],
+  ['dummyregisteraccessor_2eh_53',['DummyRegisterAccessor.h',['../_dummy_register_accessor_8h.html',1,'']]]
 ];

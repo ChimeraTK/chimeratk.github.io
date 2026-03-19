@@ -10,7 +10,7 @@ var searchData=
   ['waitonreceiveack_7',['waitOnReceiveAck',['../struct_fixture.html#abd9ffea928cc18a2b5168a20b7ab134d',1,'Fixture']]],
   ['wake_5fup_5fapplication_8',['wake_up_application',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a6901c950b4203167e804d151547676cf',1,'ChimeraTK::testable_rebot_sleep']]],
   ['wanteddecoratortype_9',['wantedDecoratorType',['../class_chimera_t_k_1_1_decorator_factory.html#ab0f93e643748f82e5bfb0a4d028c35b4',1,'ChimeraTK::DecoratorFactory']]],
-  ['warning_10',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca5ad6b78774879a01d465f58dba1a9b54',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
+  ['warning_10',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca059e9861e0400dfbe05c98a841f3f96b',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
   ['what_11',['what',['../class_chimera_t_k_1_1runtime__error.html#ab67e3b1164fa01d3ec0f70c08a1fa610',1,'ChimeraTK::runtime_error::what()'],['../class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400',1,'ChimeraTK::logic_error::what()']]],
   ['why_20can_20i_20not_20read_20sequence_20registers_12',['Why can I not read SEQUENCE registers?',['../q_and_a.html#use_sequences',1,'']]],
   ['why_20do_20registeraccessors_20not_20have_20an_20assignment_20operator_20for_20other_20registeraccessors_13',['Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?',['../q_and_a.html#why_no_accessor_assignment',1,'']]],

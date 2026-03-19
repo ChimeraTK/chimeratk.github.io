@@ -68,7 +68,9 @@ var annotated_dup =
       ] ],
       [ "proxies", "namespace_chimera_t_k_1_1proxies.html", [
         [ "DummyRegisterElement", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element" ],
-        [ "DummyRegisterSequence", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ]
+        [ "DummyRegisterSequence", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ],
+        [ "RawConverterCapsule", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule.html", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule" ],
+        [ "RawConverterCapsuleImpl", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule_impl.html", "class_chimera_t_k_1_1proxies_1_1_raw_converter_capsule_impl" ]
       ] ],
       [ "RawConverter", "namespace_chimera_t_k_1_1_raw_converter.html", [
         [ "Converter", "class_chimera_t_k_1_1_raw_converter_1_1_converter.html", "class_chimera_t_k_1_1_raw_converter_1_1_converter" ],

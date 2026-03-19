@@ -130,10 +130,14 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9cc454729690e0f9bf48fa1c7e7f2b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5919626730031398f195deef46e2eaa1" id="r_a5919626730031398f195deef46e2eaa1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1">FractionalCase</a> { <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a157db7df530023575515d366c9b672e8">integer</a>
+<tr class="memitem:a5919626730031398f195deef46e2eaa1" id="r_a5919626730031398f195deef46e2eaa1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1">FractionalCase</a> { <br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a157db7df530023575515d366c9b672e8">integer</a>
 , <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a7a7d3f44cc3b1654781baed15e45eabe">fixedPositive</a>
 , <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1abe3bb82c9ae75efbd71517427e60ad8b">fixedNegative</a>
-, <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a491bdd22b26adef49c35e22eca51834d">ieee754_32</a>
+, <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a8119af4752e567f77061a7720528596d">fixedNegativeFast</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a491bdd22b26adef49c35e22eca51834d">ieee754_32</a>
+<br />
  }</td></tr>
 <tr class="separator:a5919626730031398f195deef46e2eaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -168,6 +172,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5919626730031398f195deef46e2eaa1a157db7df530023575515d366c9b672e8" name="a5919626730031398f195deef46e2eaa1a157db7df530023575515d366c9b672e8"></a>integer&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5919626730031398f195deef46e2eaa1a7a7d3f44cc3b1654781baed15e45eabe" name="a5919626730031398f195deef46e2eaa1a7a7d3f44cc3b1654781baed15e45eabe"></a>fixedPositive&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5919626730031398f195deef46e2eaa1abe3bb82c9ae75efbd71517427e60ad8b" name="a5919626730031398f195deef46e2eaa1abe3bb82c9ae75efbd71517427e60ad8b"></a>fixedNegative&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5919626730031398f195deef46e2eaa1a8119af4752e567f77061a7720528596d" name="a5919626730031398f195deef46e2eaa1a8119af4752e567f77061a7720528596d"></a>fixedNegativeFast&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5919626730031398f195deef46e2eaa1a491bdd22b26adef49c35e22eca51834d" name="a5919626730031398f195deef46e2eaa1a491bdd22b26adef49c35e22eca51834d"></a>ieee754_32&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -244,7 +249,7 @@ template&lt;typename UserType , typename RawType , typename FUN &gt; </div>
 <p>Create <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html" title="Converter class for conversions from raw to cooked values.">Converter</a> matching the given register info and channel, and call the functor object passing the <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html" title="Converter class for conversions from raw to cooked values.">Converter</a> object. </p>
 <p>This can be used to implement setAsCooked/getAsCooked in the accessors. For the converter used in postRead/preWrite, it is recommended to use the <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html" title="Abstract base class to implement erasure of the exact Converter type.">ConverterLoopHelper</a> instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00544">544</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00599">599</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>

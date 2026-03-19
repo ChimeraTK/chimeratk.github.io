@@ -5,7 +5,6 @@ var dir_c58e9917cb89e86e015f963e5eb1f350 =
     [ "BackendFactory.cc", "_backend_factory_8cc.html", null ],
     [ "BackendRegisterCatalogue.cc", "_backend_register_catalogue_8cc.html", null ],
     [ "CountedRecursiveMutex.cc", "_counted_recursive_mutex_8cc.html", null ],
-    [ "createDataConverter.cc", "create_data_converter_8cc.html", null ],
     [ "DataConsistencyDecorator.cc", "_data_consistency_decorator_8cc.html", "_data_consistency_decorator_8cc" ],
     [ "DataConsistencyGroup.cc", "_data_consistency_group_8cc.html", null ],
     [ "DataConsistencyGroupHistorizedMatcher.cc", "_data_consistency_group_historized_matcher_8cc.html", null ],

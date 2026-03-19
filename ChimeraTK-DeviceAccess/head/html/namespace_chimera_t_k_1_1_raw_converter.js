@@ -9,6 +9,7 @@ var namespace_chimera_t_k_1_1_raw_converter =
       [ "integer", "namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a157db7df530023575515d366c9b672e8", null ],
       [ "fixedPositive", "namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a7a7d3f44cc3b1654781baed15e45eabe", null ],
       [ "fixedNegative", "namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1abe3bb82c9ae75efbd71517427e60ad8b", null ],
+      [ "fixedNegativeFast", "namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a8119af4752e567f77061a7720528596d", null ],
       [ "ieee754_32", "namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1a491bdd22b26adef49c35e22eca51834d", null ]
     ] ],
     [ "SignificantBitsCase", "namespace_chimera_t_k_1_1_raw_converter.html#a9cc454729690e0f9bf48fa1c7e7f2b87", [
