@@ -12,9 +12,8 @@ var searchData=
   ['active_9',['active',['../class_test_dummy.html#aa5067318f24c35303b5316d122b8f362',1,'TestDummy']]],
   ['address_10',['address',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#aa54f754fc2c7c542a6e567eba45ad17f',1,'ChimeraTK::NumericAddressedRegisterInfo::address'],['../struct_static_core.html#a2eba5dcb8602cda0416c3ea027fc470b',1,'StaticCore::address'],['../struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688',1,'ChimeraTK::DeviceDescriptor::address'],['../struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html#a61c3bea370c6ae4f190bfc40a090d913',1,'ChimeraTK::NumericAddressedRegisterInfo::DoubleBufferInfo::address']]],
   ['addressinwords_11',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
-  ['addresstodatadelay_12',['addressToDataDelay',['../class_chimera_t_k_1_1_subdevice_backend.html#a31cdcdbfc10595adc3432d810ed13a0a',1,'ChimeraTK::SubdeviceBackend']]],
-  ['area_13',['area',['../struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238',1,'StaticCore']]],
-  ['areasize_14',['areaSize',['../struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89',1,'StaticCore']]],
-  ['asciilength_15',['asciiLength',['../struct_ascii_data.html#a59ea8af863ca09bae12d490f9653fc3a',1,'AsciiData']]],
-  ['asyncreadinconsistency_16',['asyncReadInconsistency',['../struct_chimera_t_k_1_1_test_capabilities.html#af3192b3990b384f3a138d205af5b33b9',1,'ChimeraTK::TestCapabilities']]]
+  ['area_12',['area',['../struct_static_core.html#a3c5787dfebc59d0855f0b392c2518fe8',1,'StaticCore']]],
+  ['areasize_13',['areasize',['../struct_static_core.html#a87c0b45c09f3958b6ca7ed765ac82779',1,'StaticCore::areaSize'],['../struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89',1,'StaticCore::areaSize']]],
+  ['asciilength_14',['asciiLength',['../struct_ascii_data.html#a59ea8af863ca09bae12d490f9653fc3a',1,'AsciiData']]],
+  ['asyncreadinconsistency_15',['asyncReadInconsistency',['../struct_chimera_t_k_1_1_test_capabilities.html#af3192b3990b384f3a138d205af5b33b9',1,'ChimeraTK::TestCapabilities']]]
 ];

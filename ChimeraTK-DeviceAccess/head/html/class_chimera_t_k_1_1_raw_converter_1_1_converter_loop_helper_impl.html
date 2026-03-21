@@ -136,6 +136,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0e9286edd7ef6051124b3b50184dd3f0 inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html">ConverterLoopHelper</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a0e9286edd7ef6051124b3b50184dd3f0">makeConverterLoopHelper</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">ChimeraTK::NumericAddressedRegisterInfo</a> &amp;info, size_t channelIndex, size_t implParameter, <a class="el" href="class_accessor.html">Accessor</a> &amp;accessor)</td></tr>
 <tr class="memdesc:a0e9286edd7ef6051124b3b50184dd3f0 inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html" title="Abstract base class to implement erasure of the exact Converter type.">ConverterLoopHelper</a> with the <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html" title="Converter class for conversions from raw to cooked values.">Converter</a> object matching the given <a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> and channel.  <br /></td></tr>
 <tr class="separator:a0e9286edd7ef6051124b3b50184dd3f0 inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5147bc7868e4e1466dc2d65e6d91e15c inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper" id="r_a5147bc7868e4e1466dc2d65e6d91e15c"><td class="memTemplParams" colspan="2">template&lt;typename UserType , typename RawType , typename <a class="el" href="class_accessor.html">Accessor</a> &gt; </td></tr>
+<tr class="memitem:a5147bc7868e4e1466dc2d65e6d91e15c inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html">ConverterLoopHelper</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a5147bc7868e4e1466dc2d65e6d91e15c">makeConverterLoopHelperFixedRaw</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">ChimeraTK::NumericAddressedRegisterInfo</a> &amp;info, size_t channelIndex, size_t implParameter, <a class="el" href="class_accessor.html">Accessor</a> &amp;accessor)</td></tr>
+<tr class="memdesc:a5147bc7868e4e1466dc2d65e6d91e15c inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">More efficient version of makeConverterLoopHelper if the raw type is already known in the calling code.  <br /></td></tr>
+<tr class="separator:a5147bc7868e4e1466dc2d65e6d91e15c inherit pub_static_methods_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html">ChimeraTK::RawConverter::ConverterLoopHelper</a></td></tr>
 <tr class="memitem:a1c4798ec9447613db410ab29034df3f0 inherit pro_attribs_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper" id="r_a1c4798ec9447613db410ab29034df3f0"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a1c4798ec9447613db410ab29034df3f0">_implParameter</a></td></tr>
 <tr class="separator:a1c4798ec9447613db410ab29034df3f0 inherit pro_attribs_class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +147,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType, typename RawType, <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a9cc454729690e0f9bf48fa1c7e7f2b87">SignificantBitsCase</a> sc, <a class="el" href="namespace_chimera_t_k_1_1_raw_converter.html#a5919626730031398f195deef46e2eaa1">FractionalCase</a> fc, bool isSigned, typename <a class="el" href="class_accessor.html">Accessor</a>&gt;<br />
 class ChimeraTK::RawConverter::ConverterLoopHelperImpl&lt; UserType, RawType, sc, fc, isSigned, Accessor &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00126">126</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00134">134</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a73d29e130048547a12acffbef4a06615" name="a73d29e130048547a12acffbef4a06615"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73d29e130048547a12acffbef4a06615">&#9670;&#160;</a></span>ConverterLoopHelperImpl()</h2>
@@ -179,7 +183,7 @@ template&lt;typename UserType , typename RawType , <a class="el" href="namespace
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00576">576</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00606">606</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +222,7 @@ template&lt;typename UserType , typename RawType , <a class="el" href="namespace
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a1fa45c62ff73907e31e4d44e4071eab2">ChimeraTK::RawConverter::ConverterLoopHelper</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00584">584</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00614">614</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +256,7 @@ template&lt;typename UserType , typename RawType , <a class="el" href="namespace
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a9119e3d00b5082aa679a785f95e8aeed">ChimeraTK::RawConverter::ConverterLoopHelper</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00592">592</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00622">622</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>

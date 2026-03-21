@@ -130,6 +130,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e9286edd7ef6051124b3b50184dd3f0"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html">ConverterLoopHelper</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a0e9286edd7ef6051124b3b50184dd3f0">makeConverterLoopHelper</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">ChimeraTK::NumericAddressedRegisterInfo</a> &amp;info, size_t channelIndex, size_t implParameter, <a class="el" href="class_accessor.html">Accessor</a> &amp;accessor)</td></tr>
 <tr class="memdesc:a0e9286edd7ef6051124b3b50184dd3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html" title="Abstract base class to implement erasure of the exact Converter type.">ConverterLoopHelper</a> with the <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html" title="Converter class for conversions from raw to cooked values.">Converter</a> object matching the given <a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> and channel.  <br /></td></tr>
 <tr class="separator:a0e9286edd7ef6051124b3b50184dd3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5147bc7868e4e1466dc2d65e6d91e15c" id="r_a5147bc7868e4e1466dc2d65e6d91e15c"><td class="memTemplParams" colspan="2">template&lt;typename UserType , typename RawType , typename <a class="el" href="class_accessor.html">Accessor</a> &gt; </td></tr>
+<tr class="memitem:a5147bc7868e4e1466dc2d65e6d91e15c"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html">ConverterLoopHelper</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html#a5147bc7868e4e1466dc2d65e6d91e15c">makeConverterLoopHelperFixedRaw</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">ChimeraTK::NumericAddressedRegisterInfo</a> &amp;info, size_t channelIndex, size_t implParameter, <a class="el" href="class_accessor.html">Accessor</a> &amp;accessor)</td></tr>
+<tr class="memdesc:a5147bc7868e4e1466dc2d65e6d91e15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">More efficient version of makeConverterLoopHelper if the raw type is already known in the calling code.  <br /></td></tr>
+<tr class="separator:a5147bc7868e4e1466dc2d65e6d91e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -165,7 +169,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00570">570</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00600">600</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +314,61 @@ template&lt;typename UserType , typename <a class="el" href="class_accessor.html
 <p>Create <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html" title="Abstract base class to implement erasure of the exact Converter type.">ConverterLoopHelper</a> with the <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter.html" title="Converter class for conversions from raw to cooked values.">Converter</a> object matching the given <a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> and channel. </p>
 <p>On the given accessor, the <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html" title="Abstract base class to implement erasure of the exact Converter type.">ConverterLoopHelper</a> will call doPostReadImpl/doPreWriteImpl when doPostRead/doPreWrite is called. The argument "implParameter" is the value which will be passed on to doPostReadImpl/doPreWriteImpl. It is entirely up to the accessor implementation to define the meaning of this value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00552">552</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00560">560</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5147bc7868e4e1466dc2d65e6d91e15c" name="a5147bc7868e4e1466dc2d65e6d91e15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5147bc7868e4e1466dc2d65e6d91e15c">&#9670;&#160;</a></span>makeConverterLoopHelperFixedRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename RawType , typename <a class="el" href="class_accessor.html">Accessor</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html">ConverterLoopHelper</a> &gt; ChimeraTK::RawConverter::ConverterLoopHelper::makeConverterLoopHelperFixedRaw </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">ChimeraTK::NumericAddressedRegisterInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>channelIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>implParameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_accessor.html">Accessor</a> &amp;&#160;</td>
+          <td class="paramname"><em>accessor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>More efficient version of makeConverterLoopHelper if the raw type is already known in the calling code. </p>
+
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00579">579</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>
@@ -335,7 +393,7 @@ template&lt;typename UserType , typename <a class="el" href="class_accessor.html
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00119">119</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_raw_converter_8h_source.html#l00127">127</a> of file <a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>.</p>
 
 </div>
 </div>

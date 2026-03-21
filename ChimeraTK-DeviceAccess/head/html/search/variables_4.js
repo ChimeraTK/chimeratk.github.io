@@ -2,7 +2,7 @@ var searchData=
 [
   ['d_0',['d',['../struct_device_fixture2_d.html#a43b807039956876be52cb5e04c4247a6',1,'DeviceFixture2D::d'],['../struct_device_fixture___h_w.html#a606560c80c9543b0ce1f9084f4e1c9ab',1,'DeviceFixture_HW::d'],['../struct_device_fixture.html#a37976292e6b5345f20399ab9bdfcb0b7',1,'DeviceFixture::d']]],
   ['daqnumber_1',['daqNumber',['../struct_device_fixture2_d_1_1_config_params.html#a6a5013866aba303b8247878aa5e8508c',1,'DeviceFixture2D::ConfigParams']]],
-  ['data_2',['data',['../structdevice__ioctrl__data.html#a378b71218baaadf1a5938141be87890b',1,'device_ioctrl_data::data'],['../struct_static_core.html#adb729216fb515cc16e38f7faf0c46cb1',1,'StaticCore::data']]],
+  ['data_2',['data',['../structdevice__ioctrl__data.html#a378b71218baaadf1a5938141be87890b',1,'device_ioctrl_data::data'],['../struct_static_core.html#a67a0c5bc8eb3ae4ef80bbd254e80a3fb',1,'StaticCore::data']]],
   ['data_5frw_3',['data_rw',['../structdevice__rw.html#af7e2eca2fad800bd88e7f11849d81440',1,'device_rw']]],
   ['datadescriptor_4',['datadescriptor',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a9bd1b996e98bdf30b5ad9ad4f484331c',1,'ChimeraTK::NumericAddressedRegisterInfo::dataDescriptor'],['../class_catalogue_generator.html#aefc923f4483c293310efba405970d47d',1,'CatalogueGenerator::dataDescriptor']]],
   ['datadescriptor2_5',['dataDescriptor2',['../class_catalogue_generator.html#a90ba0815da6d1695b7011f30a75ebaeb',1,'CatalogueGenerator']]],

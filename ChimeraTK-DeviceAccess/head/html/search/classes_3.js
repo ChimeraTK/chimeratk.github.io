@@ -31,10 +31,12 @@ var searchData=
   ['converter_3c_20usertype_2c_20rawtype_2c_20significantbitscase_3a_3ageneric_2c_20fractionalcase_3a_3ainteger_2c_20false_20_3e_28',['Converter&lt; UserType, RawType, SignificantBitsCase::generic, FractionalCase::integer, false &gt;',['../class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html',1,'ChimeraTK::RawConverter']]],
   ['converterloophelper_29',['ConverterLoopHelper',['../class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html',1,'ChimeraTK::RawConverter']]],
   ['converterloophelperimpl_30',['ConverterLoopHelperImpl',['../class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper_impl.html',1,'ChimeraTK::RawConverter']]],
-  ['copmaredregisterinfosbyname2_5ffunctor_31',['copmaredRegisterInfosByName2_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html',1,'ChimeraTK']]],
-  ['copyregisterdecorator_32',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],
-  ['copyregisterdecoratortrait_33',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
-  ['countingdecorator_34',['CountingDecorator',['../struct_counting_decorator.html',1,'']]],
-  ['ctrlintf_35',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK']]],
-  ['custombackend_36',['CustomBackend',['../class_custom_backend.html',1,'']]]
+  ['convertingdecorator_31',['ConvertingDecorator',['../class_chimera_t_k_1_1_converting_decorator.html',1,'ChimeraTK']]],
+  ['convertingrawdecorator_32',['ConvertingRawDecorator',['../class_chimera_t_k_1_1_converting_raw_decorator.html',1,'ChimeraTK']]],
+  ['copmaredregisterinfosbyname2_5ffunctor_33',['copmaredRegisterInfosByName2_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html',1,'ChimeraTK']]],
+  ['copyregisterdecorator_34',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],
+  ['copyregisterdecoratortrait_35',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
+  ['countingdecorator_36',['CountingDecorator',['../struct_counting_decorator.html',1,'']]],
+  ['ctrlintf_37',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK']]],
+  ['custombackend_38',['CustomBackend',['../class_custom_backend.html',1,'']]]
 ];
