@@ -701,6 +701,24 @@ in each call. For better performance, use register accessors instead.</p>
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="deviceaccess.MatchingMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deviceaccess.</span></span><span class="sig-name descname"><span class="pre">MatchingMode</span></span><a class="headerlink" href="#deviceaccess.MatchingMode" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_object</span></code></p>
+<p>Enum describing the matching mode of a DataConsistencyGroup.</p>
+<p>Members:</p>
+<blockquote>
+<div><p>none : No matching, effectively disable the DataConsitencyGroup. update() will always return true.</p>
+<p>exact : Require an exact match of the VersionNumber of all current values of the group’s members. Require an exact match of the VersionNumber of all current or historized values of the group’s members</p>
+<p>historized : The data is not considered valid</p>
+</div></blockquote>
+<dl class="py property">
+<dt class="sig sig-object py" id="deviceaccess.MatchingMode.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#deviceaccess.MatchingMode.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="deviceaccess.OneDRegisterAccessor">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deviceaccess.</span></span><span class="sig-name descname"><span class="pre">OneDRegisterAccessor</span></span><a class="headerlink" href="#deviceaccess.OneDRegisterAccessor" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TransferElementBase</span></code></p>
@@ -2683,6 +2701,10 @@ number is generated.</p>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#deviceaccess.FundamentalType"><code class="docutils literal notranslate"><span class="pre">FundamentalType</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#deviceaccess.FundamentalType.name"><code class="docutils literal notranslate"><span class="pre">FundamentalType.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deviceaccess.MatchingMode"><code class="docutils literal notranslate"><span class="pre">MatchingMode</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deviceaccess.MatchingMode.name"><code class="docutils literal notranslate"><span class="pre">MatchingMode.name</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a><ul>
