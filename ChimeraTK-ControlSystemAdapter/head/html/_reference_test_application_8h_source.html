@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('_reference_test_application_8h_source.
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <a class="code hl_variable" href="struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a">dataTypeConstant</a>-&gt;accessData(0) = ChimeraTK::toType&lt;DataType&gt;(typeIdentifyingConstant);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="struct_typed_p_v_holder.html#aee3601a1a61bfae272f97c714bf574c5">constantArray</a>-&gt;accessChannel(0).size(); ++i) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_variable" href="struct_typed_p_v_holder.html#aee3601a1a61bfae272f97c714bf574c5">constantArray</a>-&gt;accessChannel(0)[i] = ChimeraTK::toType&lt;DataType&gt;(typeIdentifyingConstant * i * i);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_variable" href="struct_typed_p_v_holder.html#aee3601a1a61bfae272f97c714bf574c5">constantArray</a>-&gt;accessChannel(0)[i] = ChimeraTK::toType&lt;DataType&gt;(typeIdentifyingConstant * <span class="keywordtype">double</span>(i * i));</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      }</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>

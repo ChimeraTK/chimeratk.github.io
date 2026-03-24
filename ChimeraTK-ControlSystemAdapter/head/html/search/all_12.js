@@ -18,7 +18,7 @@ var searchData=
   ['testunidirectionalprocessarray_2ecpp_15',['testUnidirectionalProcessArray.cpp',['../test_unidirectional_process_array_8cpp.html',1,'']]],
   ['testunidirectionalprocessarraynowaitfornewdata_2ecpp_16',['testUnidirectionalProcessArrayNoWaitForNewData.cpp',['../test_unidirectional_process_array_no_wait_for_new_data_8cpp.html',1,'']]],
   ['testunified_2ecpp_17',['testUnified.cpp',['../test_unified_8cpp.html',1,'']]],
-  ['threadedpvmanagerholder_18',['threadedpvmanagerholder',['../struct_threaded_pv_manager_holder.html#a618a8b113e1c96e32566520269f4b2e3',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(const shared_ptr&lt; DevicePVManager &gt; &amp;devPvManager, shared_ptr&lt; ControlSystemPVManager &gt; csPvManager)'],['../struct_threaded_pv_manager_holder.html#aff62db032ef4399b58acb60e5a8fdea2',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(ThreadedPvManagerHolder &amp;&amp;) noexcept=default'],['../struct_threaded_pv_manager_holder.html',1,'ThreadedPvManagerHolder&lt; CALLABLE &gt;']]],
+  ['threadedpvmanagerholder_18',['threadedpvmanagerholder',['../struct_threaded_pv_manager_holder.html',1,'ThreadedPvManagerHolder&lt; CALLABLE &gt;'],['../struct_threaded_pv_manager_holder.html#a618a8b113e1c96e32566520269f4b2e3',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(const shared_ptr&lt; DevicePVManager &gt; &amp;devPvManager, shared_ptr&lt; ControlSystemPVManager &gt; csPvManager)'],['../struct_threaded_pv_manager_holder.html#aff62db032ef4399b58acb60e5a8fdea2',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(ThreadedPvManagerHolder &amp;&amp;) noexcept=default']]],
   ['timestamp_2eh_19',['TimeStamp.h',['../_time_stamp_8h.html',1,'']]],
   ['timestampsource_2eh_20',['TimeStampSource.h',['../_time_stamp_source_8h.html',1,'']]],
   ['todevicearray_21',['toDeviceArray',['../struct_typed_p_v_holder.html#a0f240c6f0f085c2eb5066f01bcb099ec',1,'TypedPVHolder']]],
@@ -27,13 +27,11 @@ var searchData=
   ['todouble_24',['toDouble',['../namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a',1,'ChimeraTK']]],
   ['todouble_2eh_25',['toDouble.h',['../to_double_8h.html',1,'']]],
   ['todouble_3c_20std_3a_3astring_20_3e_26',['toDouble&lt; std::string &gt;',['../namespace_chimera_t_k.html#a7a26be422586550a071b2cdbbfa5376e',1,'ChimeraTK']]],
-  ['totype_27',['toType',['../namespace_chimera_t_k.html#a7a2ffbe236e21d41b8cd3be170b3fe02',1,'ChimeraTK']]],
+  ['totype_27',['toType',['../namespace_chimera_t_k.html#a8df9335531893a5c2ccf7a29ddfea367',1,'ChimeraTK']]],
   ['totype_2eh_28',['toType.h',['../to_type_8h.html',1,'']]],
-  ['totype_3c_20chimeratk_3a_3avoid_20_3e_29',['toType&lt; ChimeraTK::Void &gt;',['../namespace_chimera_t_k.html#a1b55e3f979260075d0970c4f2704ab85',1,'ChimeraTK']]],
-  ['totype_3c_20std_3a_3astring_20_3e_30',['toType&lt; std::string &gt;',['../namespace_chimera_t_k.html#af0709cce07849becb0e11825ed3838b0',1,'ChimeraTK']]],
-  ['type_31',['type',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1_register_variable_old_type_remover.html#a331a0abac87cb40b4bf962268eeca99f',1,'ChimeraTK::PersistentDataStorage::RegisterVariableOldTypeRemover']]],
-  ['typedpvholder_32',['typedpvholder',['../struct_typed_p_v_holder.html',1,'TypedPVHolder&lt; DataType &gt;'],['../struct_typed_p_v_holder.html#a05ba851ce5171df89944d7e72b7142cb',1,'TypedPVHolder::TypedPVHolder()']]],
-  ['typedreadarraytest_33',['typedReadArrayTest',['../struct_test_application_fixture.html#a5c4f3f8f61c943c7cb356f92b29c335a',1,'TestApplicationFixture']]],
-  ['typedwritearraytest_34',['typedWriteArrayTest',['../struct_test_application_fixture.html#a2681aff44a6f70d01e731f83cb957d30',1,'TestApplicationFixture']]],
-  ['typedwritescalartest_35',['typedWriteScalarTest',['../struct_test_application_fixture.html#ad0c0fe35f104de15b0ef7c7269ab8e46',1,'TestApplicationFixture']]]
+  ['type_29',['type',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1_register_variable_old_type_remover.html#a331a0abac87cb40b4bf962268eeca99f',1,'ChimeraTK::PersistentDataStorage::RegisterVariableOldTypeRemover']]],
+  ['typedpvholder_30',['typedpvholder',['../struct_typed_p_v_holder.html#a05ba851ce5171df89944d7e72b7142cb',1,'TypedPVHolder::TypedPVHolder()'],['../struct_typed_p_v_holder.html',1,'TypedPVHolder&lt; DataType &gt;']]],
+  ['typedreadarraytest_31',['typedReadArrayTest',['../struct_test_application_fixture.html#a5c4f3f8f61c943c7cb356f92b29c335a',1,'TestApplicationFixture']]],
+  ['typedwritearraytest_32',['typedWriteArrayTest',['../struct_test_application_fixture.html#a2681aff44a6f70d01e731f83cb957d30',1,'TestApplicationFixture']]],
+  ['typedwritescalartest_33',['typedWriteScalarTest',['../struct_test_application_fixture.html#ad0c0fe35f104de15b0ef7c7269ab8e46',1,'TestApplicationFixture']]]
 ];
