@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_subdevice_backen
 </div><!--header-->
 <div class="contents">
 
+<p>Backend for subdevices which are passed through some register or area of another device (subsequently called target device).  
+ <a href="class_chimera_t_k_1_1_subdevice_backend.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::SubdeviceBackend:</div>
@@ -314,58 +317,27 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a84fe39d878fadf389f4cbbbe31590ae5 inherit pub_types_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">  Backend for subdevices which are passed through some register or area of
- another device (subsequently called target device). The subdevice is close to
- a numeric addressed backend and has a map file of the same format (but BARs
- other than 0 are not supported). The target device may be of any type.
+<div class="textblock"><p>Backend for subdevices which are passed through some register or area of another device (subsequently called target device). </p>
+<p>The subdevice is close to a numeric addressed backend and has a map file of the same format (but BARs other than 0 are not supported). The target device may be of any type.</p>
+<p>The sdm URI syntax for setting up the subdevice depends on the protocol used to pass through the registers. The following pass-trough types are supported:</p>
+<ul>
+<li>"area" type: use a 1D register as an address space.<br  />
+ URI scheme:<br  />
+ <pre class="fragment">(subdevice?type=area&amp;device=&lt;targetDevice&gt;&amp;area=&lt;targetRegister&gt;&amp;map=mapFile&gt;)</pre></li>
+<li>"3regs" type: use three scalar registers: address, (write) data and status. Before access, a value of 0 in the status register is awaited. Next, the address is written to the address register. The value is then written to resp. read from the data register.<br  />
+URI scheme:<br  />
+<pre class="fragment">(subdevice?type=3regs&amp;device=&lt;targetDevice&gt;&amp;address=&lt;addressRegister&gt;&amp;data=&lt;dataRegister&gt;&amp;status=&lt;statusRegister&gt;&amp;sleep=&lt;usecs&gt;&amp;map=&lt;mapFile&gt;)</pre> The sleep parameter is optional and defaults to 100 usecs. It sets the polling interval for the status register in microseconds. Another optional parameter "dataDelay" can be used to configure an additional delay in microseconds between the write of the address and the data registers (defaults to 0 usecs).</li>
+<li>"2regs" type: same as "3regs" but without a status register. Instead the sleep parameter is mandatory and specifies the fixed sleep time before each operation.</li>
+<li>"areaHandshake" type: mapped area, but before write operations to registers inside the map, waits for value 0 in the status register like in 3regs mode. The sleep parameter is optional.<br  />
+URI scheme:<br  />
+<pre class="fragment">(subdevice?type=areaHandshake&amp;device=&lt;targetDevice&gt;&amp;area=&lt;targetRegister&gt;&amp;map=mapFile&amp;status=&lt;statusRegister&gt;&amp;sleep=&lt;usecs&gt;)</pre></li>
+<li>"regWindow" type: extension of the "3reg" interface for reading and addressing multiple chips/sub-devices through the same register set. In addition to the address, writeData (data) and busy (status) parameters there is readRequest, readData, chipSelectRegister and chipIndex.<br  />
+ read sequence: the backend writes into the (void type) "readRequest" register and waits until the status(busy) flag turns back off. It then reads the data from the "readResponse" register.<br  />
+ URI scheme:<br  />
+<pre class="fragment">(subdevice?type=regWindow&amp;device=&lt;targetDevice&gt;&amp;address=&lt;addressRegister&gt;&amp;writeData=&lt;writeDataRegister&gt;&amp;busy=&lt;busyRegister&gt;&amp;readRequest=&lt;readRequestRegister&gt;&amp;readData=&lt;readDataRegister&gt;&amp;chipSelectRegister=&lt;chipSelectRegister&gt;&amp;chipIndex=&lt;chipIndex&gt;&amp;map=&lt;mapFile&gt;)</pre> The "chipIndex" parameter is optional and defaults to 0. For compatibility with the 3reg-mode, 'data' can be used instead of 'readData', and 'status' instead of 'busy'</li>
+</ul>
+<p>Example: We like to use the register "APP.0.EXT_PZ16M" of the device with the alias name "TCK7_0" in our dmap file as a target and the file piezo_pz16m_acc1_r0.mapp as a map file. The file contains addresses relative to the beginning of the register "APP.0.EXT_PZ16M". The URI then looks like this: </p><pre class="fragment">(subdevice?type=area&amp;device=TCK7_0&amp;area=APP.0.EXT_PZ16M&amp;map=piezo_pz16m_acc1_r0.mapp)</pre><dl class="section warning"><dt>Warning</dt><dd>The protocol for the types "3regs" and "2regs" is not yet finalised. In particular read transfers might change in future. Please do not use these for reading in production code! </dd></dl>
 
-  The sdm URI syntax for setting up the subdevice depends on the protocol used
- to pass through the registers. The following pass-trough types are supported:
-
-  - "area" type:  use a 1D register as an address space.\n
-  URI scheme:\n
-  \verbatim(subdevice?type=area&amp;device=&lt;targetDevice&gt;&amp;area=&lt;targetRegister&gt;&amp;map=mapFile&gt;)\endverbatim
-
-  - "3regs" type: use three scalar registers: address, (write) data and status. Before
- access, a value of 0 in the status register is awaited. Next, the address is
- written to the address register. The value is then written to resp. read from
- the data register.\n
- URI scheme:\n
- \verbatim(subdevice?type=3regs&amp;device=&lt;targetDevice&gt;&amp;address=&lt;addressRegister&gt;&amp;data=&lt;dataRegister&gt;&amp;status=&lt;statusRegister&gt;&amp;sleep=&lt;usecs&gt;&amp;map=&lt;mapFile&gt;)\endverbatim
- The sleep parameter is optional and defaults to 100 usecs. It sets the polling interval for the status register in
- microseconds. Another optional parameter "dataDelay" can be used to configure an additional delay in microseconds
- between the write of the address and the data registers (defaults to 0 usecs).
-
-  - "2regs" type: same as "3regs" but without a status register. Instead the
- sleep parameter is mandatory and specifies the fixed sleep time before each
- operation.
-  - "areaHandshake" type: mapped area, but before write operations to registers
-    inside the map, waits for value 0 in the status register like in 3regs mode.
-    The sleep parameter is optional.\n
- URI scheme:\n
- \verbatim(subdevice?type=areaHandshake&amp;device=&lt;targetDevice&gt;&amp;area=&lt;targetRegister&gt;&amp;map=mapFile&amp;status=&lt;statusRegister&gt;&amp;sleep=&lt;usecs&gt;)\endverbatim
-
-  - "regWindow" type: extension of the "3reg" interface for reading and addressing multiple chips/sub-devices through
-    the same register set. In addition to the address, writeData (data) and busy (status) parameters there is readRequest,
-    readData, chipSelectRegister and chipIndex.\n
-    read sequence: the backend writes into the (void type) "readRequest" register and waits until the
-</pre><p> status(busy) flag turns back off. It then reads the data from the "readResponse" register.<br  />
-</p><pre class="fragment"> URI scheme:\n
- \verbatim(subdevice?type=regWindow&amp;device=&lt;targetDevice&gt;&amp;address=&lt;addressRegister&gt;&amp;writeData=&lt;writeDataRegister&gt;&amp;busy=&lt;busyRegister&gt;&amp;readRequest=&lt;readRequestRegister&gt;&amp;readData=&lt;readDataRegister&gt;&amp;chipSelectRegister=&lt;chipSelectRegister&gt;&amp;chipIndex=&lt;chipIndex&gt;&amp;map=&lt;mapFile&gt;)\endverbatim
- The "chipIndex" parameter is optional and defaults to 0.
- For compatibility with the 3reg-mode, 'data' can be used instead of 'readData', and 'status' instead of 'busy'
-
-  Example: We like to use the register "APP.0.EXT_PZ16M" of the device with
- the alias name "TCK7_0" in our dmap file as a target and the file
- piezo_pz16m_acc1_r0.mapp as a map file. The file contains addresses relative
- to the beginning of the register "APP.0.EXT_PZ16M". The URI then looks like
- this:
-  \verbatim(subdevice?type=area&amp;device=TCK7_0&amp;area=APP.0.EXT_PZ16M&amp;map=piezo_pz16m_acc1_r0.mapp)\endverbatim
-
-  @warning The protocol for the types "3regs" and "2regs" is not yet
- finalised. In particular read transfers might change in future. Please do not
- use these for reading in production code!
-</pre> 
 <p class="definition">Definition at line <a class="el" href="_subdevice_backend_8h_source.html#l00070">70</a> of file <a class="el" href="_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5db38d40a8c0df31c1bbefc38ee30f19" name="a5db38d40a8c0df31c1bbefc38ee30f19"></a>
@@ -1409,7 +1381,7 @@ template&lt;typename RegisterRawType , typename WriteDataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Mutex to protext concurrent access to the target registers. </p>
-<p>The mutex must be shared with all backends that use the same busy register. There might be multiple instances of the <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html">SubdeviceBackend</a> with different ChipIDs. </p>
+<p>The mutex must be shared with all backends that use the same busy register. There might be multiple instances of the <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html" title="Backend for subdevices which are passed through some register or area of another device (subsequently...">SubdeviceBackend</a> with different ChipIDs. </p>
 
 <p class="definition">Definition at line <a class="el" href="_subdevice_backend_8h_source.html#l00111">111</a> of file <a class="el" href="_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
