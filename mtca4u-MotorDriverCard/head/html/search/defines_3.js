@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['declare_5fget_5fset_5ftest_0',['declare_get_set_test',['../test_motor_controler_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f',1,'DECLARE_GET_SET_TEST:&#160;testMotorControler.cpp'],['../test_motor_driver_card_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f',1,'DECLARE_GET_SET_TEST:&#160;testMotorDriverCard.cpp']]],
+  ['declare_5fget_5fset_5ftest_0',['DECLARE_GET_SET_TEST',['../test_motor_controler_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f',1,'testMotorControler.cpp']]],
   ['declare_5fget_5fset_5fthrow_5ftest_1',['DECLARE_GET_SET_THROW_TEST',['../test_motor_controler_dummy_8cpp.html#a7ec967f6503fd693a69b1e6fd7b35572',1,'testMotorControlerDummy.cpp']]],
   ['define_5fget_5fset_5fdriver_5fspi_5fdata_2',['DEFINE_GET_SET_DRIVER_SPI_DATA',['../test_motor_controler_8cpp.html#ae0a0c6214c6000d6537155eabbf79624',1,'testMotorControler.cpp']]],
   ['define_5fget_5fset_5ftest_3',['DEFINE_GET_SET_TEST',['../test_motor_controler_8cpp.html#a2e49cd94ee8b8b5790f18a724745a052',1,'testMotorControler.cpp']]],
