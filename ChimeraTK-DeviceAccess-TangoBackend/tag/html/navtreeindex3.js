@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"struct_all_register_defaults.html#a765cd9283f1d3f977e939b4c4ffa5988":[1,0,3,0],
+"struct_all_register_defaults.html#a779531bdb960b3b3438187837bb2bd02":[1,0,3,6],
+"struct_all_register_defaults.html#a9546f6e3dc5b6397e171f2c4f15fd0c4":[1,0,3,8],
+"struct_all_register_defaults.html#abe31f9ed3c8eab857c84bb1c46e90de1":[1,0,3,4],
+"struct_all_register_defaults.html#acaee3f86add9c50286eb5e4e01e8f414":[1,0,3,1],
+"struct_all_register_defaults.html#ae9f937694faab913e01e8a4729bd44cd":[1,0,3,7],
 "struct_array_defaults.html":[1,0,4],
 "struct_array_defaults.html#a00fb7cdfb5e997aa2c89d558b931bfe9":[1,0,4,2],
 "struct_array_defaults.html#a6a7809feaf83c8a2a510faf03f20f921":[1,0,4,1],
