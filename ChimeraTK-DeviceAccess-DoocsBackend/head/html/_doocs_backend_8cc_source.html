@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      doocs::EqData src, dst;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <span class="keywordtype">int</span> rc = eq.get(&amp;ea, &amp;src, &amp;dst);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="comment">// if again error received, throw exception</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      <span class="keywordflow">if</span>(rc &amp;&amp; <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">isCommunicationError</a>(dst.error())) {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      <span class="keywordflow">if</span>(rc == doocs::TransactionResult::transaction_error || rc == doocs::TransactionResult::transport_error) {</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        lk.unlock();</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keyword">auto</span> message = std::string(<span class="stringliteral">&quot;Cannot read from DOOCS property: &quot;</span>) + dst.get_string();</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        setException(message);</div>
@@ -433,143 +433,114 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>      doocs::EqData src, dst;</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>      ea.adr(path);</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>      <span class="keywordtype">int</span> rc = eq.get(&amp;ea, &amp;src, &amp;dst);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      <span class="keywordflow">if</span>(rc) {</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keywordflow">if</span>(rc == eq_errors::ill_property || rc == eq_errors::ill_location ||</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            rc == eq_errors::ill_address) { <span class="comment">// no property by that name</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Property does not exist: &quot;</span> + path + <span class="stringliteral">&quot;&#39;: &quot;</span> + dst.get_string());</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        }</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="comment">// runtime errors are thrown later</span></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      }</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        doocsTypeId = dst.type();</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>      }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    }</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="comment">// if backend is closed, or if property could not be read, use the (potentially cached) catalogue</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordflow">if</span>(doocsTypeId == DATA_NULL) {</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>      <span class="keyword">auto</span> reg = <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_backend.html#a86bfca8ff60fbf3f7b09d98d8977c664">getBackendRegisterCatalogue</a>().getBackendRegister(registerPathName);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>      doocsTypeId = reg.doocsTypeId;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    }</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="comment">// check type and create matching accessor</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keywordtype">bool</span> extraLevelUsed = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keyword">auto</span> sharedThis = boost::static_pointer_cast&lt;DoocsBackend&gt;(shared_from_this());</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">if</span>(field == <span class="stringliteral">&quot;eventId&quot;</span>) {</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      extraLevelUsed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html">DoocsBackendEventIdRegisterAccessor&lt;UserType&gt;</a>(sharedThis, path, registerPathName, flags));</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    }</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(field == <span class="stringliteral">&quot;timeStamp&quot;</span>) {</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>      extraLevelUsed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html">DoocsBackendTimeStampRegisterAccessor&lt;UserType&gt;</a>(sharedThis, path, registerPathName, flags));</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    }</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>      <span class="keywordflow">switch</span>(doocsTypeId) {</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordflow">case</span> DATA_BOOL:</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <span class="keywordflow">case</span> DATA_A_BOOL:</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="keywordflow">case</span> DATA_SHORT:</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        <span class="keywordflow">case</span> DATA_A_SHORT:</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <span class="keywordflow">case</span> DATA_USHORT:</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="keywordflow">case</span> DATA_A_USHORT:</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="keywordflow">case</span> DATA_INT:</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="keywordflow">case</span> DATA_A_INT:</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <span class="keywordflow">case</span> DATA_UINT:</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="keywordflow">case</span> DATA_A_UINT:</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordflow">case</span> DATA_LONG:</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">case</span> DATA_A_LONG:</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keywordflow">case</span> DATA_ULONG:</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="keywordflow">case</span> DATA_A_ULONG:</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <span class="keywordflow">case</span> DATA_FLOAT:</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keywordflow">case</span> DATA_SPECTRUM:</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <span class="keywordflow">case</span> DATA_GSPECTRUM:</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">case</span> DATA_A_FLOAT:</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">case</span> DATA_DOUBLE:</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        <span class="keywordflow">case</span> DATA_A_DOUBLE:</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html">DoocsBackendNumericRegisterAccessor&lt;UserType&gt;</a>(</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keywordflow">case</span> DATA_IIII:</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html">DoocsBackendIIIIRegisterAccessor&lt;UserType&gt;</a>(</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="keywordflow">case</span> DATA_IFFF:</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>          <span class="keywordflow">if</span>(!hasExtraLevel) {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;DOOCS property of IFFF type &#39;&quot;</span> + <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName +</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                <span class="stringliteral">&quot;&#39; cannot be accessed as a whole.&quot;</span>);</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>          }</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>          extraLevelUsed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html">DoocsBackendIFFFRegisterAccessor&lt;UserType&gt;</a>(</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>              sharedThis, path, field, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        <span class="keywordflow">case</span> DATA_TEXT:</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        <span class="keywordflow">case</span> DATA_STRING:</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html">DoocsBackendStringRegisterAccessor&lt;UserType&gt;</a>(</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        <span class="keywordflow">case</span> DATA_IMAGE: {</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>          <span class="keyword">auto</span> accImpl = <span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html">DoocsBackendImageRegisterAccessor</a>(</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags);</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;UserType, std::uint8_t&gt;) {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>            p.reset(accImpl);</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>          }</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>          <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            boost::shared_ptr&lt;NDRegisterAccessor&lt;std::uint8_t&gt;&gt; pImpl(accImpl);</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            <span class="comment">// any UserType can hold uint8</span></div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            boost::shared_ptr&lt;NDRegisterAccessor&lt;UserType&gt;&gt; accDecorated(</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                <span class="keyword">new</span> TypeChangingRangeCheckingDecorator&lt;UserType, std::uint8_t&gt;(</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                    boost::dynamic_pointer_cast&lt;ChimeraTK::NDRegisterAccessor&lt;std::uint8_t&gt;&gt;(pImpl)));</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            p = accDecorated;</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>          }</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>        }</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      <span class="keywordflow">if</span>(!rc) {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        doocsTypeId = dst.type();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      }</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    }</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="comment">// if backend is closed, or if property could not be read, use the (potentially cached) catalogue</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keywordflow">if</span>(doocsTypeId == DATA_NULL) {</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      <span class="keyword">auto</span> reg = <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_backend.html#a86bfca8ff60fbf3f7b09d98d8977c664">getBackendRegisterCatalogue</a>().getBackendRegister(registerPathName);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>      doocsTypeId = reg.doocsTypeId;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="comment">// check type and create matching accessor</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keywordtype">bool</span> extraLevelUsed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keyword">auto</span> sharedThis = boost::static_pointer_cast&lt;DoocsBackend&gt;(shared_from_this());</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">if</span>(field == <span class="stringliteral">&quot;eventId&quot;</span>) {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>      extraLevelUsed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html">DoocsBackendEventIdRegisterAccessor&lt;UserType&gt;</a>(sharedThis, path, registerPathName, flags));</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(field == <span class="stringliteral">&quot;timeStamp&quot;</span>) {</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>      extraLevelUsed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html">DoocsBackendTimeStampRegisterAccessor&lt;UserType&gt;</a>(sharedThis, path, registerPathName, flags));</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    }</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      <span class="keywordflow">switch</span>(doocsTypeId) {</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keywordflow">case</span> DATA_BOOL:</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        <span class="keywordflow">case</span> DATA_A_BOOL:</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <span class="keywordflow">case</span> DATA_SHORT:</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keywordflow">case</span> DATA_A_SHORT:</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">case</span> DATA_USHORT:</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keywordflow">case</span> DATA_A_USHORT:</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">case</span> DATA_INT:</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordflow">case</span> DATA_A_INT:</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <span class="keywordflow">case</span> DATA_UINT:</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="keywordflow">case</span> DATA_A_UINT:</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        <span class="keywordflow">case</span> DATA_LONG:</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <span class="keywordflow">case</span> DATA_A_LONG:</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="keywordflow">case</span> DATA_ULONG:</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="keywordflow">case</span> DATA_A_ULONG:</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="keywordflow">case</span> DATA_FLOAT:</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <span class="keywordflow">case</span> DATA_SPECTRUM:</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="keywordflow">case</span> DATA_GSPECTRUM:</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordflow">case</span> DATA_A_FLOAT:</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">case</span> DATA_DOUBLE:</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keywordflow">case</span> DATA_A_DOUBLE:</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_numeric_register_accessor.html">DoocsBackendNumericRegisterAccessor&lt;UserType&gt;</a>(</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">case</span> DATA_IIII:</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html">DoocsBackendIIIIRegisterAccessor&lt;UserType&gt;</a>(</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        <span class="keywordflow">case</span> DATA_IFFF:</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>          <span class="keywordflow">if</span>(!hasExtraLevel) {</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;DOOCS property of IFFF type &#39;&quot;</span> + <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName +</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                <span class="stringliteral">&quot;&#39; cannot be accessed as a whole.&quot;</span>);</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>          }</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>          extraLevelUsed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html">DoocsBackendIFFFRegisterAccessor&lt;UserType&gt;</a>(</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>              sharedThis, path, field, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        <span class="keywordflow">case</span> DATA_TEXT:</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keywordflow">case</span> DATA_STRING:</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>          p.reset(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html">DoocsBackendStringRegisterAccessor&lt;UserType&gt;</a>(</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags));</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        <span class="keywordflow">case</span> DATA_IMAGE: {</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>          <span class="keyword">auto</span> accImpl = <span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_doocs_backend_image_register_accessor.html">DoocsBackendImageRegisterAccessor</a>(</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>              sharedThis, path, registerPathName, numberOfWords, wordOffsetInRegister, flags);</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;UserType, std::uint8_t&gt;) {</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>            p.reset(accImpl);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>          }</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>          <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            boost::shared_ptr&lt;NDRegisterAccessor&lt;std::uint8_t&gt;&gt; pImpl(accImpl);</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>            <span class="comment">// any UserType can hold uint8</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>            boost::shared_ptr&lt;NDRegisterAccessor&lt;UserType&gt;&gt; accDecorated(</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                <span class="keyword">new</span> TypeChangingRangeCheckingDecorator&lt;UserType, std::uint8_t&gt;(</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                    boost::dynamic_pointer_cast&lt;ChimeraTK::NDRegisterAccessor&lt;std::uint8_t&gt;&gt;(pImpl)));</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>            p = accDecorated;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>          }</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        }</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Unsupported DOOCS data type &quot;</span> +</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>              std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot; of property &#39;&quot;</span> + <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> +</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>              registerPathName + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>      }</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    }</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>          <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Unsupported DOOCS data type &quot;</span> +</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>              std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot; of property &#39;&quot;</span> + <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> +</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>              registerPathName + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>      }</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    }</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <span class="comment">// if the field name has been specified but the data type does not use it, throw an exception</span></div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="keywordflow">if</span>(hasExtraLevel &amp;&amp; !extraLevelUsed) {</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Specifiaction of field name is not supported for the DOOCS data type &quot;</span> +</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>          std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot;: &quot;</span> + <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName);</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    }</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    p-&gt;setExceptionBackend(shared_from_this());</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    <span class="keywordflow">return</span> p;</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  }</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="comment">// if the field name has been specified but the data type does not use it, throw an exception</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <span class="keywordflow">if</span>(hasExtraLevel &amp;&amp; !extraLevelUsed) {</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>      <span class="keywordflow">throw</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;Specifiaction of field name is not supported for the DOOCS data type &quot;</span> +</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>          std::string(doocs::EqData().type_string(doocsTypeId)) + <span class="stringliteral">&quot;: &quot;</span> + <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">_serverAddress</a> + registerPathName);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    }</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    p-&gt;setExceptionBackend(shared_from_this());</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  }</div>
 </div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
-<div class="foldopen" id="foldopen00423" data-start="{" data-end="}">
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">  423</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">DoocsBackend::isCommunicationError</a>(<span class="keywordtype">int</span> doocs_error) {</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <span class="comment">// logic_error-like errors are caught at a different place. If such error appears later, a runtime_error need to</span></div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="comment">// be generated (device does not behave as expected, as it is not expected to change)</span></div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    <span class="keywordflow">switch</span>(doocs_error) {</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>      <span class="keywordflow">case</span> eq_errors::unsup_domain:</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>      <span class="keywordflow">case</span> eq_errors::ill_monitor:</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      <span class="keywordflow">case</span> eq_errors::faulty_chans:</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>      <span class="keywordflow">case</span> eq_errors::unavail_serv:</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>      <span class="keywordflow">case</span> eq_errors::ill_serv:</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>      <span class="keywordflow">case</span> eq_errors::rpc_prot_error:</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>      <span class="keywordflow">case</span> eq_errors::ens_fault:</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>      <span class="keywordflow">case</span> eq_errors::ill_protocol:</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>      <span class="keywordflow">case</span> eq_errors::no_connection:</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>      <span class="keywordflow">case</span> eq_errors::no_permission:</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>      <span class="keywordflow">case</span> eq_errors::remote_error:</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>      <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    }</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>  }</div>
-</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>} <span class="comment">/* namespace ChimeraTK */</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>} <span class="comment">/* namespace ChimeraTK */</span></div>
 <div class="ttc" id="a_catalogue_cache_8h_html"><div class="ttname"><a href="_catalogue_cache_8h.html">CatalogueCache.h</a></div></div>
 <div class="ttc" id="a_catalogue_fetcher_8h_html"><div class="ttname"><a href="_catalogue_fetcher_8h.html">CatalogueFetcher.h</a></div></div>
 <div class="ttc" id="a_doocs_backend_8cc_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="_doocs_backend_8cc.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00034">DoocsBackend.cc:34</a></div></div>
@@ -586,11 +557,10 @@ $(document).ready(function(){initNavTree('_doocs_backend_8cc_source.html',''); i
 <div class="ttc" id="a_string_utility_8h_html"><div class="ttname"><a href="_string_utility_8h.html">StringUtility.h</a></div></div>
 <div class="ttc" id="a_z_m_q_subscription_manager_8h_html"><div class="ttname"><a href="_z_m_q_subscription_manager_8h.html">ZMQSubscriptionManager.h</a></div></div>
 <div class="ttc" id="aclass_catalogue_fetcher_html"><div class="ttname"><a href="class_catalogue_fetcher.html">CatalogueFetcher</a></div><div class="ttdef"><b>Definition</b> <a href="_catalogue_fetcher_8h_source.html#l00010">CatalogueFetcher.h:10</a></div></div>
-<div class="ttc" id="aclass_catalogue_fetcher_html_ab40b75515d7728737efe11039c2e707f"><div class="ttname"><a href="class_catalogue_fetcher.html#ab40b75515d7728737efe11039c2e707f">CatalogueFetcher::fetch</a></div><div class="ttdeci">std::pair&lt; DoocsBackendRegisterCatalogue, bool &gt; fetch()</div><div class="ttdef"><b>Definition</b> <a href="_catalogue_fetcher_8cc_source.html#l00015">CatalogueFetcher.cc:15</a></div></div>
+<div class="ttc" id="aclass_catalogue_fetcher_html_ab40b75515d7728737efe11039c2e707f"><div class="ttname"><a href="class_catalogue_fetcher.html#ab40b75515d7728737efe11039c2e707f">CatalogueFetcher::fetch</a></div><div class="ttdeci">std::pair&lt; DoocsBackendRegisterCatalogue, bool &gt; fetch()</div><div class="ttdef"><b>Definition</b> <a href="_catalogue_fetcher_8cc_source.html#l00019">CatalogueFetcher.cc:19</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer_html_abd0c348c619ab7fb7e800e522ff66f62"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html#abd0c348c619ab7fb7e800e522ff66f62">ChimeraTK::DoocsBackend::BackendRegisterer::BackendRegisterer</a></div><div class="ttdeci">BackendRegisterer()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00075">DoocsBackend.cc:75</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_event_id_register_accessor_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html">ChimeraTK::DoocsBackendEventIdRegisterAccessor</a></div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_event_id_accessor_8h_source.html#l00014">DoocsBackendEventIdAccessor.h:14</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html">ChimeraTK::DoocsBackend</a></div><div class="ttdoc">Backend to access DOOCS control system servers.</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00057">DoocsBackend.h:57</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a02e160d0a945224f86d7ef21af9629c9"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">ChimeraTK::DoocsBackend::isCommunicationError</a></div><div class="ttdeci">static bool isCommunicationError(int doocs_error)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00423">DoocsBackend.cc:423</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a19b7e95c78800543c5031042a45143bc"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a19b7e95c78800543c5031042a45143bc">ChimeraTK::DoocsBackend::_asyncReadActivated</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _asyncReadActivated</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00106">DoocsBackend.h:106</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a2be4be2c59b26f687f9faa2c88a82c0c"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a2be4be2c59b26f687f9faa2c88a82c0c">ChimeraTK::DoocsBackend::DoocsBackend</a></div><div class="ttdeci">DoocsBackend(const std::string &amp;serverAddress, const std::string &amp;cacheFile, const std::string &amp;updateCache, const std::string &amp;dataConsistencyRealmName)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00083">DoocsBackend.cc:83</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a58f45db14806046e4511b36f23ba2bb0"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">ChimeraTK::DoocsBackend::_serverAddress</a></div><div class="ttdeci">std::string _serverAddress</div><div class="ttdoc">DOOCS address component for the server (FACILITY/DEVICE)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00085">DoocsBackend.h:85</a></div></div>

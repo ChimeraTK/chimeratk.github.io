@@ -37,6 +37,7 @@ var test_raw_converter_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#a09998a98b4fb5c182cafbbffce9dda64", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#a8ce115b3e6ce1189864602474105d8cd", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#a9bc9c54b816c8400b914b4ba309341c2", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#a65cc4d0fc22b571e002692012bc1b458", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#a869d7e3e66b6c1b7d1dfd33b9f096458", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#aa00672ab793166f82fa86ce6875992cb", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_raw_converter_8cpp.html#a2a845b77a296a5851bd2af3523ad8b08", null ],

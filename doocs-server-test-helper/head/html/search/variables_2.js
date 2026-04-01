@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['do_5fshutdown_0',['do_shutdown',['../class_doocs_server_test_helper.html#abd884333853d9dd7f99cab4e7490078a',1,'DoocsServerTestHelper']]],
-  ['donotprocesssignalsindoocs_1',['doNotProcessSignalsInDoocs',['../class_doocs_server_test_helper.html#a6190d9f9f852a45f2bfa2095ce8f9d67',1,'DoocsServerTestHelper']]]
+  ['data_0',['data',['../class_doocs_server_test_helper.html#a542f51f5ee14a78752c3af9f1a403609',1,'DoocsServerTestHelper']]],
+  ['do_5fshutdown_1',['do_shutdown',['../struct_doocs_server_test_helper_1_1_data.html#ab96ee5ee6b1a0ae6d90a306b8f34fce2',1,'DoocsServerTestHelper::Data']]],
+  ['donotprocesssignalsindoocs_2',['doNotProcessSignalsInDoocs',['../struct_doocs_server_test_helper_1_1_data.html#ac9e260efb7d32993055d6cdee0dcf46a',1,'DoocsServerTestHelper::Data']]]
 ];
