@@ -14,6 +14,7 @@ var class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher =
     [ "getUserBuffer", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ab6aaab52809a7a37378dde2871d3a1fa", null ],
     [ "handleMissingPostReads", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a135bcb45c12b85665c0da8c615fa2dcf", null ],
     [ "handleMissingPreReads", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a8306476cda738d19dfc27f83a33f7baa", null ],
+    [ "isConsistent", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a75971a5f19511aff15d0cf56e4048bd2", null ],
     [ "lastMatchingVersionNumber", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#af22522613ba28c90b7c41bc2799c3d4f", null ],
     [ "lastUpdateCall", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a22a00f33b92045c4f575239d10589550", null ],
     [ "setupHistory", "class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a04ce147443e926b870f11dd041a978ab", null ],

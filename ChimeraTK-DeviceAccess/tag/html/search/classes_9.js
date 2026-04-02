@@ -5,7 +5,7 @@ var searchData=
   ['iarwritabletestfixture_2',['IarWritableTestFixture',['../struct_iar_writable_test_fixture.html',1,'']]],
   ['icrtestfixture_3',['IcrTestFixture',['../struct_icr_test_fixture.html',1,'']]],
   ['icrwritabletestfixture_4',['IcrWritableTestFixture',['../struct_icr_writable_test_fixture.html',1,'']]],
-  ['ieee754_5fsingleconverter_5',['IEEE754_SingleConverter',['../struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html',1,'ChimeraTK']]],
+  ['ieee754_5fsingleconverter_5',['IEEE754_SingleConverter',['../class_i_e_e_e754___single_converter.html',1,'']]],
   ['ierwritabletestfixture_6',['IerWritableTestFixture',['../struct_ier_writable_test_fixture.html',1,'']]],
   ['imgheader_7',['ImgHeader',['../struct_chimera_t_k_1_1_img_header.html',1,'ChimeraTK']]],
   ['imgview_8',['ImgView',['../class_chimera_t_k_1_1_img_view.html',1,'ChimeraTK']]],

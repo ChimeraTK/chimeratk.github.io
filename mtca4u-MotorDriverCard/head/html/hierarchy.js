@@ -76,7 +76,7 @@ var hierarchy =
     [ "mtca4u::SignedIntConverter", "classmtca4u_1_1_signed_int_converter.html", null ],
     [ "SpiReadWriteThreadStressTest", "class_spi_read_write_thread_stress_test.html", null ],
     [ "mtca4u::SPIviaPCIe", "classmtca4u_1_1_s_p_ivia_p_c_ie.html", null ],
-    [ "SPIviaPCIeTest", "class_s_p_ivia_p_c_ie_test.html", null ],
+    [ "SPIviaPCIeTestFixture", "class_s_p_ivia_p_c_ie_test_fixture.html", null ],
     [ "ChimeraTK::MotorDriver::utility::StateMachine::State", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html", null ],
     [ "ChimeraTK::MotorDriver::utility::StateMachine", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html", [
       [ "ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html", [
@@ -97,13 +97,7 @@ var hierarchy =
     [ "StepperMotorUnitsScalingConverter", "class_stepper_motor_units_scaling_converter.html", null ],
     [ "StepperMotorWithReferenceTestFixture", "class_stepper_motor_with_reference_test_fixture.html", null ],
     [ "test_suite", null, [
-      [ "MotorControlerDummyTestSuite", "class_motor_controler_dummy_test_suite.html", null ],
-      [ "MotorDriverCardConfigXMLTestSuite", "class_motor_driver_card_config_x_m_l_test_suite.html", null ],
-      [ "MultiVariableWordTestSuite< T >", "class_multi_variable_word_test_suite.html", null ],
-      [ "SPIviaPCIeTestSuite", "class_s_p_ivia_p_c_ie_test_suite.html", null ],
-      [ "mtca4u::MotorControlerTestSuite", "classmtca4u_1_1_motor_controler_test_suite.html", null ],
-      [ "mtca4u::MotorDriverCardDummyTestSuite", "classmtca4u_1_1_motor_driver_card_dummy_test_suite.html", null ],
-      [ "mtca4u::MotorDriverCardTestSuite", "classmtca4u_1_1_motor_driver_card_test_suite.html", null ]
+      [ "mtca4u::MotorControlerTestFixture< motorId >", "classmtca4u_1_1_motor_controler_test_fixture.html", null ]
     ] ],
     [ "mtca4u::TMC429SPI", "classmtca4u_1_1_t_m_c429_s_p_i.html", null ],
     [ "TMC429SPITestFixture", "class_t_m_c429_s_p_i_test_fixture.html", null ],

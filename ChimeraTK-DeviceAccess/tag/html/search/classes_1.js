@@ -22,13 +22,14 @@ var searchData=
   ['adder_3c_20std_3a_3astring_2c_20int8_5ft_20_3e_19',['Adder&lt; std::string, int8_t &gt;',['../struct_adder_3_01std_1_1string_00_01int8__t_01_4.html',1,'']]],
   ['adder_3c_20std_3a_3astring_2c_20uint8_5ft_20_3e_20',['Adder&lt; std::string, uint8_t &gt;',['../struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html',1,'']]],
   ['addressrange_21',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend']]],
-  ['anotherworkingbackend_22',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
-  ['areatype_23',['AreaType',['../struct_area_type.html',1,'']]],
-  ['argument_24',['Argument',['../struct_argument.html',1,'']]],
-  ['asciidata_25',['AsciiData',['../struct_ascii_data.html',1,'']]],
-  ['asyncaccessormanager_26',['AsyncAccessorManager',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html',1,'ChimeraTK::async']]],
-  ['asyncndregisteraccessor_27',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async']]],
-  ['asynctestdummy_28',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
-  ['asyncvariable_29',['AsyncVariable',['../struct_chimera_t_k_1_1async_1_1_async_variable.html',1,'ChimeraTK::async']]],
-  ['asyncvariableimpl_30',['AsyncVariableImpl',['../struct_chimera_t_k_1_1async_1_1_async_variable_impl.html',1,'ChimeraTK::async']]]
+  ['adl_5fserializer_3c_20std_3a_3aoptional_3c_20t_20_3e_20_3e_22',['adl_serializer&lt; std::optional&lt; T &gt; &gt;',['../structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html',1,'nlohmann']]],
+  ['anotherworkingbackend_23',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
+  ['areatype_24',['AreaType',['../struct_area_type.html',1,'']]],
+  ['argument_25',['Argument',['../struct_argument.html',1,'']]],
+  ['asciidata_26',['AsciiData',['../struct_ascii_data.html',1,'']]],
+  ['asyncaccessormanager_27',['AsyncAccessorManager',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html',1,'ChimeraTK::async']]],
+  ['asyncndregisteraccessor_28',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async']]],
+  ['asynctestdummy_29',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
+  ['asyncvariable_30',['AsyncVariable',['../struct_chimera_t_k_1_1async_1_1_async_variable.html',1,'ChimeraTK::async']]],
+  ['asyncvariableimpl_31',['AsyncVariableImpl',['../struct_chimera_t_k_1_1async_1_1_async_variable_impl.html',1,'ChimeraTK::async']]]
 ];

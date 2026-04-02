@@ -98,52 +98,53 @@ $(document).ready(function(){initNavTree('test_signed_int_converter_8cpp_source.
   <div class="headertitle"><div class="title">testSignedIntConverter.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="test_signed_int_converter_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    1</a></span><span class="preprocessor">#define BOOST_TEST_MODULE SignedIntConverterTest</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using namespace </span>boost::unit_test_framework;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_signed_int_converter_8h.html">SignedIntConverter.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacemtca4u.html">mtca4u</a>;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>BOOST_AUTO_TEST_SUITE(SignedIntConverterTestSuite)</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma GCC diagnostic push</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Weffc++&quot;</span></div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a2d2a552d5ecaf36a33273733e4c9308e">   12</a></span><a class="code hl_function" href="test_signed_int_converter_8cpp.html#a2d2a552d5ecaf36a33273733e4c9308e">BOOST_AUTO_TEST_CASE</a>(from24bits) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#pragma GCC diagnostic pop</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <a class="code hl_class" href="classmtca4u_1_1_signed_int_converter.html">SignedIntConverter</a> converter24(24);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0xFFFFFF) == -1);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0xAAAAAA) == -5592406);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(25) == 25);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0) == 0);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0x7FFFFF) == 0x7FFFFF);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<a href="test_signed_int_converter_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1">    1</a></span><span class="preprocessor">#define BOOST_TEST_DYN_LINK</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    2</a></span><span class="preprocessor">#define BOOST_TEST_MODULE SignedIntConverterTest</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;boost/test/unit_test.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using namespace </span>boost::unit_test_framework;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_signed_int_converter_8h.html">SignedIntConverter.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacemtca4u.html">mtca4u</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>BOOST_AUTO_TEST_SUITE(SignedIntConverterTestSuite)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma GCC diagnostic push</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Weffc++&quot;</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a2d2a552d5ecaf36a33273733e4c9308e">   13</a></span><a class="code hl_function" href="namespacemtca4u.html#a2a89a58be7932d3bb9536fa67ca18800">BOOST_AUTO_TEST_CASE</a>(from24bits) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma GCC diagnostic pop</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_class" href="classmtca4u_1_1_signed_int_converter.html">SignedIntConverter</a> converter24(24);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0xFFFFFF) == -1);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0xAAAAAA) == -5592406);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(25) == 25);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0) == 0);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">customToThirtyTwo</a>(0x7FFFFF) == 0x7FFFFF);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma GCC diagnostic push</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Weffc++&quot;</span></div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a08eac68c20482e1f083a399ca669f56d">   25</a></span><a class="code hl_function" href="test_signed_int_converter_8cpp.html#a2d2a552d5ecaf36a33273733e4c9308e">BOOST_AUTO_TEST_CASE</a>(to24bits) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#pragma GCC diagnostic pop</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="classmtca4u_1_1_signed_int_converter.html">SignedIntConverter</a> converter24(24);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(-1) == 0xFFFFFF);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(-16) == 0xFFFFF0);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(25) == 25);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(0) == 0);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(0x7FFFFF) == 0x7FFFFF);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#pragma GCC diagnostic push</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Weffc++&quot;</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="test_signed_int_converter_8cpp.html#a08eac68c20482e1f083a399ca669f56d">   26</a></span><a class="code hl_function" href="namespacemtca4u.html#a2a89a58be7932d3bb9536fa67ca18800">BOOST_AUTO_TEST_CASE</a>(to24bits) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#pragma GCC diagnostic pop</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="classmtca4u_1_1_signed_int_converter.html">SignedIntConverter</a> converter24(24);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(-1) == 0xFFFFFF);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(-16) == 0xFFFFF0);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(25) == 25);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(0) == 0);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  BOOST_CHECK(converter24.<a class="code hl_function" href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">thirtyTwoToCustom</a>(0x7FFFFF) == 0x7FFFFF);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_signed_int_converter_8h_html"><div class="ttname"><a href="_signed_int_converter_8h.html">SignedIntConverter.h</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_signed_int_converter_html"><div class="ttname"><a href="classmtca4u_1_1_signed_int_converter.html">mtca4u::SignedIntConverter</a></div><div class="ttdoc">Convert signed int of arbitraty length (&lt; 32 bits) to and from 32 bits on the user side.</div><div class="ttdef"><b>Definition</b> <a href="_signed_int_converter_8h_source.html#l00011">SignedIntConverter.h:11</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_signed_int_converter_html_a3a2f635e5fd26ec2591e18376e402d1a"><div class="ttname"><a href="classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a">mtca4u::SignedIntConverter::customToThirtyTwo</a></div><div class="ttdeci">int32_t customToThirtyTwo(int32_t const &amp;customInt)</div><div class="ttdoc">Although contained in a 32 bit variable, only nBits are set in the custom int.</div><div class="ttdef"><b>Definition</b> <a href="_signed_int_converter_8cc_source.html#l00009">SignedIntConverter.cc:9</a></div></div>
 <div class="ttc" id="aclassmtca4u_1_1_signed_int_converter_html_afa08804e34313887586e50a7f106a986"><div class="ttname"><a href="classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986">mtca4u::SignedIntConverter::thirtyTwoToCustom</a></div><div class="ttdeci">int32_t thirtyTwoToCustom(int32_t const &amp;thirtyTwoBitInt)</div><div class="ttdoc">Although the return value is 32 bit, it is truncated to nBits.</div><div class="ttdef"><b>Definition</b> <a href="_signed_int_converter_8cc_source.html#l00019">SignedIntConverter.cc:19</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="atest_signed_int_converter_8cpp_html_a2d2a552d5ecaf36a33273733e4c9308e"><div class="ttname"><a href="test_signed_int_converter_8cpp.html#a2d2a552d5ecaf36a33273733e4c9308e">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(from24bits)</div><div class="ttdef"><b>Definition</b> <a href="test_signed_int_converter_8cpp_source.html#l00012">testSignedIntConverter.cpp:12</a></div></div>
+<div class="ttc" id="anamespacemtca4u_html_a2a89a58be7932d3bb9536fa67ca18800"><div class="ttname"><a href="namespacemtca4u.html#a2a89a58be7932d3bb9536fa67ca18800">mtca4u::BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(TestConstuctor)</div><div class="ttdef"><b>Definition</b> <a href="test_motor_driver_card_8cpp_source.html#l00067">testMotorDriverCard.cpp:67</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

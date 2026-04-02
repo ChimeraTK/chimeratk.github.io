@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">doocs-server-test-helper<span id="projectnumber">&#160;01.07.03</span>
+   <div id="projectname">doocs-server-test-helper<span id="projectnumber">&#160;01.08.00</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,8 @@ $(document).ready(function(){initNavTree('class_doocs_server_test_helper.html','
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_doocs_server_test_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">DoocsServerTestHelper Class Reference</div></div>
@@ -108,13 +108,18 @@ $(document).ready(function(){initNavTree('class_doocs_server_test_helper.html','
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper__coll__graph.svg" width="546" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper__coll__graph.svg" width="546" height="491"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_doocs_server_test_helper_1_1_data.html">Data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad9feb98ae2b93ce92e3a11f568561da9" id="r_ad9feb98ae2b93ce92e3a11f568561da9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ad9feb98ae2b93ce92e3a11f568561da9">setDoNotProcessSignalsInDoocs</a> (bool <a class="el" href="class_doocs_server_test_helper.html#a6190d9f9f852a45f2bfa2095ce8f9d67">doNotProcessSignalsInDoocs</a>=true)</td></tr>
-<tr class="memdesc:ad9feb98ae2b93ce92e3a11f568561da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If doNotProcessSignalsInDoocs is set to true, DOOCS will not receive any signals via <a class="el" href="class_doocs_server_test_helper.html#aed0e2879277687aa21d6959ce05d31ef">sigwait()</a> to process.  <br /></td></tr>
+<tr class="memitem:ad9feb98ae2b93ce92e3a11f568561da9" id="r_ad9feb98ae2b93ce92e3a11f568561da9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ad9feb98ae2b93ce92e3a11f568561da9">setDoNotProcessSignalsInDoocs</a> (bool doNotProcessSignalsInDoocs=true)</td></tr>
+<tr class="memdesc:ad9feb98ae2b93ce92e3a11f568561da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If doNotProcessSignalsInDoocs is set to true, DOOCS will not receive any signals via <a class="el" href="class_doocs_server_test_helper.html#aad7f9ae84d891de1e880b57ee2534dfd">sigwait()</a> to process.  <br /></td></tr>
 <tr class="separator:ad9feb98ae2b93ce92e3a11f568561da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153ce9718db7c51c3b176cefea926817" id="r_a153ce9718db7c51c3b176cefea926817"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a153ce9718db7c51c3b176cefea926817">initialise</a> (doocs::Server *)</td></tr>
 <tr class="memdesc:a153ce9718db7c51c3b176cefea926817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needed to register the wait_for_upate() function with the doocs Server object.  <br /></td></tr>
@@ -156,44 +161,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abd12d43bcbf20b735d98c7041fe77db7" id="r_abd12d43bcbf20b735d98c7041fe77db7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#abd12d43bcbf20b735d98c7041fe77db7">waitForUpdate</a> (const doocs::Server *server)</td></tr>
 <tr class="memdesc:abd12d43bcbf20b735d98c7041fe77db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to replace the wait_for_update() function in the server.  <br /></td></tr>
 <tr class="separator:abd12d43bcbf20b735d98c7041fe77db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aed0e2879277687aa21d6959ce05d31ef" id="r_aed0e2879277687aa21d6959ce05d31ef"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#aed0e2879277687aa21d6959ce05d31ef">int::sigwait</a> (__const sigset_t *__restrict _set, int *__restrict _sig)</td></tr>
-<tr class="separator:aed0e2879277687aa21d6959ce05d31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7f9ae84d891de1e880b57ee2534dfd" id="r_aad7f9ae84d891de1e880b57ee2534dfd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#aad7f9ae84d891de1e880b57ee2534dfd">sigwait</a> (__const sigset_t *__restrict set, int *__restrict sig)</td></tr>
+<tr class="separator:aad7f9ae84d891de1e880b57ee2534dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:afd0a89028df7eae0a833b4638332fa53" id="r_afd0a89028df7eae0a833b4638332fa53"><td class="memItemLeft" align="right" valign="top">static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#afd0a89028df7eae0a833b4638332fa53">update_mutex</a></td></tr>
-<tr class="memdesc:afd0a89028df7eae0a833b4638332fa53"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex and flag to trigger update()  <br /></td></tr>
-<tr class="separator:afd0a89028df7eae0a833b4638332fa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095b686d2bd57bc220980cbadd520e51" id="r_a095b686d2bd57bc220980cbadd520e51"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a095b686d2bd57bc220980cbadd520e51">allowUpdate</a></td></tr>
-<tr class="separator:a095b686d2bd57bc220980cbadd520e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f8e78715d01a566b48682f135dc16d" id="r_a85f8e78715d01a566b48682f135dc16d"><td class="memItemLeft" align="right" valign="top">static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a85f8e78715d01a566b48682f135dc16d">sigusr1_mutex</a></td></tr>
-<tr class="memdesc:a85f8e78715d01a566b48682f135dc16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex and flag to trigger interrupt_usr1()  <br /></td></tr>
-<tr class="separator:a85f8e78715d01a566b48682f135dc16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827136ab11e5b37d513c92cb054e233b" id="r_a827136ab11e5b37d513c92cb054e233b"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a827136ab11e5b37d513c92cb054e233b">allowSigusr1</a></td></tr>
-<tr class="separator:a827136ab11e5b37d513c92cb054e233b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f292952f128dd8863d4e3c709313c42" id="r_a3f292952f128dd8863d4e3c709313c42"><td class="memItemLeft" align="right" valign="top">static std::unique_lock&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a3f292952f128dd8863d4e3c709313c42">update_lock</a></td></tr>
-<tr class="memdesc:a3f292952f128dd8863d4e3c709313c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique locks for  <br /></td></tr>
-<tr class="separator:a3f292952f128dd8863d4e3c709313c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39bde10238bf3b299d2bd4e5b7b1a25" id="r_aa39bde10238bf3b299d2bd4e5b7b1a25"><td class="memItemLeft" align="right" valign="top">static std::unique_lock&lt; std::mutex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#aa39bde10238bf3b299d2bd4e5b7b1a25">sigusr1_lock</a></td></tr>
-<tr class="separator:aa39bde10238bf3b299d2bd4e5b7b1a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6190d9f9f852a45f2bfa2095ce8f9d67" id="r_a6190d9f9f852a45f2bfa2095ce8f9d67"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a6190d9f9f852a45f2bfa2095ce8f9d67">doNotProcessSignalsInDoocs</a></td></tr>
-<tr class="memdesc:a6190d9f9f852a45f2bfa2095ce8f9d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">do not process any signals in DOOCS (to allow installing signal handlers instead)  <br /></td></tr>
-<tr class="separator:a6190d9f9f852a45f2bfa2095ce8f9d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee7b4b2cd965488f45d9251e910787cc" id="r_aee7b4b2cd965488f45d9251e910787cc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#aee7b4b2cd965488f45d9251e910787cc">event</a></td></tr>
-<tr class="memdesc:aee7b4b2cd965488f45d9251e910787cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal event counter  <br /></td></tr>
-<tr class="separator:aee7b4b2cd965488f45d9251e910787cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d5a6e6f21ff510fd5ea098299bafb3" id="r_ad2d5a6e6f21ff510fd5ea098299bafb3"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ad2d5a6e6f21ff510fd5ea098299bafb3">is_initialised</a></td></tr>
-<tr class="separator:ad2d5a6e6f21ff510fd5ea098299bafb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd884333853d9dd7f99cab4e7490078a" id="r_abd884333853d9dd7f99cab4e7490078a"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#abd884333853d9dd7f99cab4e7490078a">do_shutdown</a></td></tr>
-<tr class="separator:abd884333853d9dd7f99cab4e7490078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542f51f5ee14a78752c3af9f1a403609" id="r_a542f51f5ee14a78752c3af9f1a403609"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_doocs_server_test_helper_1_1_data.html">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a542f51f5ee14a78752c3af9f1a403609">data</a> {}</td></tr>
+<tr class="separator:a542f51f5ee14a78752c3af9f1a403609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of helper routines to test DOOCS servers: control the DOOCS update() and interrupt_usr1() functions and access properties directly through pointers (instead of the RPC interface). </p>
 <p>The class has only static functions, so there is no need to create an instance.</p>
-<p>Warning: When linking against the <a class="el" href="class_doocs_server_test_helper.html" title="Collection of helper routines to test DOOCS servers: control the DOOCS update() and interrupt_usr1() ...">DoocsServerTestHelper</a> library, doocs::Server::wait_for_update() and <a class="el" href="class_doocs_server_test_helper.html#aed0e2879277687aa21d6959ce05d31ef">sigwait()</a> will be replaced and calls to those functions will be intercepted to wait until the corresponding function (<a class="el" href="class_doocs_server_test_helper.html#a6feb31616fc57eb7cd0ec350f3369a48" title="trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished">runSigusr1()</a> or <a class="el" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5" title="trigger doocs to run update() in all locations and wait until the processing is finished">runUpdate()</a>) has been called by the test code, if the passed arguments match the expected signature. If this library is linked against an ordinary DOOCS server without a test routine calling those functions, the server will hang in a dead lock situation. Use this library only in combination with an appropriate test routine! </p>
+<p>Warning: When linking against the <a class="el" href="class_doocs_server_test_helper.html" title="Collection of helper routines to test DOOCS servers: control the DOOCS update() and interrupt_usr1() ...">DoocsServerTestHelper</a> library, doocs::Server::wait_for_update() and <a class="el" href="class_doocs_server_test_helper.html#aad7f9ae84d891de1e880b57ee2534dfd">sigwait()</a> will be replaced and calls to those functions will be intercepted to wait until the corresponding function (<a class="el" href="class_doocs_server_test_helper.html#a6feb31616fc57eb7cd0ec350f3369a48" title="trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished">runSigusr1()</a> or <a class="el" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5" title="trigger doocs to run update() in all locations and wait until the processing is finished">runUpdate()</a>) has been called by the test code, if the passed arguments match the expected signature. If this library is linked against an ordinary DOOCS server without a test routine calling those functions, the server will hang in a dead lock situation. Use this library only in combination with an appropriate test routine! </p>
 
 <p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00050">50</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -225,7 +204,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>get a scalar DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00226">226</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00232">232</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -257,7 +236,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>get an array DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00264">264</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00270">270</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +278,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property - array version "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00176">176</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00182">182</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +320,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00151">151</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00157">157</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +360,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property - IIII version "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00175">175</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00213">213</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -421,7 +400,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property - spectrum version "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00145">145</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00179">179</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -452,7 +431,7 @@ template&lt;typename TYPE &gt; </div>
 <p>Needed to register the wait_for_upate() function with the doocs Server object. </p>
 <p>This can only happen after the server object has been created, but has to happen before the server is started. </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00072">72</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00083">83</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -482,43 +461,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Initialisation function for use in the test for the test helper. </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00079">79</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
-
-</div>
-</div>
-<a id="aed0e2879277687aa21d6959ce05d31ef" name="aed0e2879277687aa21d6959ce05d31ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed0e2879277687aa21d6959ce05d31ef">&#9670;&#160;</a></span>int::sigwait()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DoocsServerTestHelper::int::sigwait </td>
-          <td>(</td>
-          <td class="paramtype">__const sigset_t *__restrict&#160;</td>
-          <td class="paramname"><em>_set</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *__restrict&#160;</td>
-          <td class="paramname"><em>_sig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00090">90</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -547,7 +490,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00108">108</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00121">121</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -576,7 +519,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>trigger doocs to run update() in all locations and wait until the processing is finished </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00119">119</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00134">134</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -604,10 +547,10 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>If doNotProcessSignalsInDoocs is set to true, DOOCS will not receive any signals via <a class="el" href="class_doocs_server_test_helper.html#aed0e2879277687aa21d6959ce05d31ef">sigwait()</a> to process. </p>
+<p>If doNotProcessSignalsInDoocs is set to true, DOOCS will not receive any signals via <a class="el" href="class_doocs_server_test_helper.html#aad7f9ae84d891de1e880b57ee2534dfd">sigwait()</a> to process. </p>
 <p>This allows catching signals via signal handlers (e.g. sigaction). </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00102">102</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00115">115</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -636,7 +579,45 @@ template&lt;typename TYPE &gt; </div>
 
 <p>shutdown the doocs server </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00133">133</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00150">150</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+
+</div>
+</div>
+<a id="aad7f9ae84d891de1e880b57ee2534dfd" name="aad7f9ae84d891de1e880b57ee2534dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7f9ae84d891de1e880b57ee2534dfd">&#9670;&#160;</a></span>sigwait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DoocsServerTestHelper::sigwait </td>
+          <td>(</td>
+          <td class="paramtype">__const sigset_t *__restrict&#160;</td>
+          <td class="paramname"><em>set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *__restrict&#160;</td>
+          <td class="paramname"><em>sig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00039">39</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -667,13 +648,13 @@ template&lt;typename TYPE &gt; </div>
 <p>Function to replace the wait_for_update() function in the server. </p>
 <p>It blocks until <a class="el" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5" title="trigger doocs to run update() in all locations and wait until the processing is finished">runUpdate()</a> has been called in the test. Public to be able to unit-test it. </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00087">87</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00098">98</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a827136ab11e5b37d513c92cb054e233b" name="a827136ab11e5b37d513c92cb054e233b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a827136ab11e5b37d513c92cb054e233b">&#9670;&#160;</a></span>allowSigusr1</h2>
+<a id="a542f51f5ee14a78752c3af9f1a403609" name="a542f51f5ee14a78752c3af9f1a403609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542f51f5ee14a78752c3af9f1a403609">&#9670;&#160;</a></span>data</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,7 +663,7 @@ template&lt;typename TYPE &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::allowSigusr1</td>
+          <td class="memname"><a class="el" href="struct_doocs_server_test_helper_1_1_data.html">DoocsServerTestHelper::Data</a> DoocsServerTestHelper::data {}</td>
         </tr>
       </table>
   </td>
@@ -692,233 +673,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00131">131</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="a095b686d2bd57bc220980cbadd520e51" name="a095b686d2bd57bc220980cbadd520e51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a095b686d2bd57bc220980cbadd520e51">&#9670;&#160;</a></span>allowUpdate</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::allowUpdate</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00127">127</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="abd884333853d9dd7f99cab4e7490078a" name="abd884333853d9dd7f99cab4e7490078a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd884333853d9dd7f99cab4e7490078a">&#9670;&#160;</a></span>do_shutdown</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::do_shutdown</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00145">145</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="a6190d9f9f852a45f2bfa2095ce8f9d67" name="a6190d9f9f852a45f2bfa2095ce8f9d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6190d9f9f852a45f2bfa2095ce8f9d67">&#9670;&#160;</a></span>doNotProcessSignalsInDoocs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::doNotProcessSignalsInDoocs</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>do not process any signals in DOOCS (to allow installing signal handlers instead) </p>
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00139">139</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="aee7b4b2cd965488f45d9251e910787cc" name="aee7b4b2cd965488f45d9251e910787cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee7b4b2cd965488f45d9251e910787cc">&#9670;&#160;</a></span>event</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int DoocsServerTestHelper::event</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>internal event counter </p>
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00142">142</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="ad2d5a6e6f21ff510fd5ea098299bafb3" name="ad2d5a6e6f21ff510fd5ea098299bafb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2d5a6e6f21ff510fd5ea098299bafb3">&#9670;&#160;</a></span>is_initialised</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::is_initialised</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00144">144</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="aa39bde10238bf3b299d2bd4e5b7b1a25" name="aa39bde10238bf3b299d2bd4e5b7b1a25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39bde10238bf3b299d2bd4e5b7b1a25">&#9670;&#160;</a></span>sigusr1_lock</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_lock&lt; std::mutex &gt; DoocsServerTestHelper::sigusr1_lock</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00135">135</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="a85f8e78715d01a566b48682f135dc16d" name="a85f8e78715d01a566b48682f135dc16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f8e78715d01a566b48682f135dc16d">&#9670;&#160;</a></span>sigusr1_mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::mutex DoocsServerTestHelper::sigusr1_mutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>mutex and flag to trigger interrupt_usr1() </p>
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00130">130</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="a3f292952f128dd8863d4e3c709313c42" name="a3f292952f128dd8863d4e3c709313c42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f292952f128dd8863d4e3c709313c42">&#9670;&#160;</a></span>update_lock</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_lock&lt; std::mutex &gt; DoocsServerTestHelper::update_lock</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>unique locks for </p>
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00134">134</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="afd0a89028df7eae0a833b4638332fa53" name="afd0a89028df7eae0a833b4638332fa53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd0a89028df7eae0a833b4638332fa53">&#9670;&#160;</a></span>update_mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::mutex DoocsServerTestHelper::update_mutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>mutex and flag to trigger update() </p>
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00126">126</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00026">26</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>

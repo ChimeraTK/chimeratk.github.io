@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['event_0',['event',['../class_doocs_server_test_helper.html#aee7b4b2cd965488f45d9251e910787cc',1,'DoocsServerTestHelper']]]
+  ['event_0',['event',['../struct_doocs_server_test_helper_1_1_data.html#a3d2e1ae984408b163a80efc540a00e75',1,'DoocsServerTestHelper::Data']]]
 ];

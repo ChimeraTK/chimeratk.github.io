@@ -12,5 +12,5 @@ var struct_muxed_float =
     [ "setForceRuntimeError", "struct_muxed_float.html#a18d86cbcaebfa011321a48ac0d625e4d", null ],
     [ "setRemoteValue", "struct_muxed_float.html#a420fcf2ac9858dbb5a019dedb1873350", null ],
     [ "supportedFlags", "struct_muxed_float.html#a70f3d2054b60b2d7c9b58cf77f174207", null ],
-    [ "rawAcc", "struct_muxed_float.html#a419206568389380da0286bf7a91e1753", null ]
+    [ "acc", "struct_muxed_float.html#a869ee7e2124fec0f3e595aa94154e5ad", null ]
 ];

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend<span id="projectnumber">&#160;01.12.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend<span id="projectnumber">&#160;01.12.01</span>
    </div>
   </td>
  </tr>
@@ -176,33 +176,30 @@ $(document).ready(function(){initNavTree('_doocs_backend_8h_source.html',''); in
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
 </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">isCommunicationError</a>(<span class="keywordtype">int</span> doocs_error);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    std::string _cacheFile;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    std::promise&lt;void&gt; _cancelFlag{};</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">mutable</span> std::future&lt;DoocsBackendRegisterCatalogue&gt; _catalogueFuture;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">mutable</span> <a class="code hl_class" href="class_doocs_backend_register_catalogue.html">DoocsBackendRegisterCatalogue</a> catalogue;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">bool</span> _catalogueFromCache{<span class="keyword">false</span>}; <span class="comment">// controls whether open() might re-trigger catalogue filling</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">bool</span> cacheFileExists();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">bool</span> isCachingEnabled() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">mutable</span> std::mutex _mxRecovery;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    VersionNumber _startVersion{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    std::string lastFailedAddress;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    std::shared_ptr&lt;async::DataConsistencyRealm&gt; _dataConsistencyRealm;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  };</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    std::string _cacheFile;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    std::promise&lt;void&gt; _cancelFlag{};</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">mutable</span> std::future&lt;DoocsBackendRegisterCatalogue&gt; _catalogueFuture;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">mutable</span> <a class="code hl_class" href="class_doocs_backend_register_catalogue.html">DoocsBackendRegisterCatalogue</a> catalogue;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">bool</span> _catalogueFromCache{<span class="keyword">false</span>}; <span class="comment">// controls whether open() might re-trigger catalogue filling</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">bool</span> cacheFileExists();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">bool</span> isCachingEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">mutable</span> std::mutex _mxRecovery;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    VersionNumber _startVersion{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    std::string lastFailedAddress;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    std::shared_ptr&lt;async::DataConsistencyRealm&gt; _dataConsistencyRealm;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  };</div>
 </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_register_info_8h_html"><div class="ttname"><a href="_register_info_8h.html">RegisterInfo.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html">ChimeraTK::DoocsBackend::BackendRegisterer</a></div><div class="ttdoc">Class to register the backend type with the factory.</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00088">DoocsBackend.h:88</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html">ChimeraTK::DoocsBackend</a></div><div class="ttdoc">Backend to access DOOCS control system servers.</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00057">DoocsBackend.h:57</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a02e160d0a945224f86d7ef21af9629c9"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">ChimeraTK::DoocsBackend::isCommunicationError</a></div><div class="ttdeci">static bool isCommunicationError(int doocs_error)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00423">DoocsBackend.cc:423</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a19b7e95c78800543c5031042a45143bc"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a19b7e95c78800543c5031042a45143bc">ChimeraTK::DoocsBackend::_asyncReadActivated</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _asyncReadActivated</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00106">DoocsBackend.h:106</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a1dfcd1e520fd0026a516b60b1dfee46b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a1dfcd1e520fd0026a516b60b1dfee46b">ChimeraTK::DoocsBackend::getStartVersion</a></div><div class="ttdeci">VersionNumber getStartVersion()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00108">DoocsBackend.h:108</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_a58f45db14806046e4511b36f23ba2bb0"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0">ChimeraTK::DoocsBackend::_serverAddress</a></div><div class="ttdeci">std::string _serverAddress</div><div class="ttdoc">DOOCS address component for the server (FACILITY/DEVICE)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8h_source.html#l00085">DoocsBackend.h:85</a></div></div>
@@ -220,7 +217,7 @@ $(document).ready(function(){initNavTree('_doocs_backend_8h_source.html',''); in
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_ad777f3414af4944b2f9c1bafd272a801"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#ad777f3414af4944b2f9c1bafd272a801">ChimeraTK::DoocsBackend::open</a></div><div class="ttdeci">void open() override</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00177">DoocsBackend.cc:177</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_adf9b745a8f3445ddb8af46f361241408"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#adf9b745a8f3445ddb8af46f361241408">ChimeraTK::DoocsBackend::setExceptionImpl</a></div><div class="ttdeci">void setExceptionImpl() noexcept override</div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_8cc_source.html#l00246">DoocsBackend.cc:246</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_html_af722dad9f7247dbcc506f4fb2b6bc359"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359">ChimeraTK::DoocsBackend::DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a></div><div class="ttdeci">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER(DoocsBackend, getRegisterAccessor_impl, 4)</div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a></div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00074">DoocsBackendRegisterAccessor.h:74</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_backend_register_accessor_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a></div><div class="ttdef"><b>Definition</b> <a href="_doocs_backend_register_accessor_8h_source.html#l00073">DoocsBackendRegisterAccessor.h:73</a></div></div>
 <div class="ttc" id="aclass_doocs_backend_register_catalogue_html"><div class="ttname"><a href="class_doocs_backend_register_catalogue.html">DoocsBackendRegisterCatalogue</a></div><div class="ttdef"><b>Definition</b> <a href="_register_info_8h_source.html#l00012">RegisterInfo.h:12</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="spec___doocs_backend_8dox_source.html#l00002">spec_DoocsBackend.dox:2</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

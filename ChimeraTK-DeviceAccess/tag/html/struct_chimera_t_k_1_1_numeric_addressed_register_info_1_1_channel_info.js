@@ -6,6 +6,7 @@ var struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info =
     [ "bitOffset", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#aa0d74073cb7812a0bb6404c9255599cb", null ],
     [ "dataType", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#ad53d821919906d656475b7be4f53ea89", null ],
     [ "nFractionalBits", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a5e14030cf58b5d920b1c5e853f811fd6", null ],
+    [ "rawType", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a471abff600cd6bf155387d12e002951b", null ],
     [ "signedFlag", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a660e909c3491a70ea0284b34f3272148", null ],
     [ "width", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#ab573301d84f53823a493ce265d71ac9e", null ]
 ];

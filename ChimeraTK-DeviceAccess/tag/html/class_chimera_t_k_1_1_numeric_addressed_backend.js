@@ -18,7 +18,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
     [ "setExceptionImpl", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a914f3d006a694ead290a36dc961c3468", null ],
     [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad1098fd2df0455e1fcfb6625dd22b99a", null ],
     [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a7209a2dbfae1f771e7bed7aa6627385a", null ],
-    [ "NumericAddressedBackendMuxedRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a8832452e77a6be7f771b9cf8e934aba9", null ],
+    [ "NumericAddressedBackendMuxedRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend.html#aef57505941eacbf57bf9db5f8680cfa1", null ],
     [ "_metadataCatalogue", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a04148e280b880be972de29e10f8f8f6b", null ],
     [ "_registerMap", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a691a41642834757b25ebf994092960e0", null ],
     [ "_registerMapPointer", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a39ebc2e0fd1f1547f2f61cb9841b9bc9", null ],

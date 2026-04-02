@@ -18,5 +18,6 @@ var searchData=
   ['drivercontroldata_15',['driverControlData',['../structmtca4u_1_1_motor_controler_config.html#a2dde6d50e72ba7cc1b8bdb8ed0241081',1,'mtca4u::MotorControlerConfig']]],
   ['driverid_16',['driverId',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a14beb96708831ce3a3ee4738d23ae23a',1,'ChimeraTK::MotorDriver::StepperMotorParameters']]],
   ['drivermicrostepvalue_17',['driverMicroStepValue',['../struct_parameters_calculator_1_1_chip_parameters.html#ab8c583a26bd7c52211b8b0e65b620518',1,'ParametersCalculator::ChipParameters']]],
-  ['driverspiwaitingtime_18',['driverSpiWaitingTime',['../structmtca4u_1_1_motor_controler_config.html#aaaa88f93f33cf51ba777c10e1094ee14',1,'mtca4u::MotorControlerConfig']]]
+  ['driverspiwaitingtime_18',['driverSpiWaitingTime',['../structmtca4u_1_1_motor_controler_config.html#aaaa88f93f33cf51ba777c10e1094ee14',1,'mtca4u::MotorControlerConfig']]],
+  ['dummydevice_19',['dummyDevice',['../classmtca4u_1_1_motor_driver_card_test.html#a96e072f12b163160b8e6a9e5bb33fb2a',1,'mtca4u::MotorDriverCardTest']]]
 ];

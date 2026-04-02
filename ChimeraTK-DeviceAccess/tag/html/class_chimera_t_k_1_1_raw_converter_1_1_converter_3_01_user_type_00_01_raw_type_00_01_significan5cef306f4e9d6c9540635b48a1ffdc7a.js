@@ -1,0 +1,6 @@
+var class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a =
+[
+    [ "Converter", "class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html#a4ceb0b4cf1057553bdb072558a54c243", null ],
+    [ "toCooked", "class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html#aafe26fc10fcc1888a2092065d39dea8a", null ],
+    [ "toRaw", "class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html#ac00b0549276a34e7c71220aa4b1865ec", null ]
+];

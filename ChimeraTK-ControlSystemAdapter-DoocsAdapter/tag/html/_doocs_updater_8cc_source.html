@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.01</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.02</span>
    </div>
   </td>
  </tr>
@@ -160,129 +160,152 @@ $(document).ready(function(){initNavTree('_doocs_updater_8cc_source.html',''); i
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ReadAnyGroup group(<a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>.begin(), <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>.end());</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="comment">// Wait until any variable got an update</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keyword">auto</span> notification = group.waitAny();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keyword">auto</span> updatedElement = notification.getId();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keyword">auto</span>&amp; descriptor = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>[updatedElement];</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="keywordtype">bool</span> isFanSource = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">routing</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_routing_decorator_domain.html#a14e2d4842429f00cfb57bc6e37993b10">isFanSource</a>(updatedElement);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">if</span>(!isFanSource) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">// Gather all involved locations in a unique set</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; location : descriptor.locations) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>          <span class="keywordflow">if</span>(locationsToLock.insert(location).second) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            location-&gt;lock();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>          }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="comment">// Complete the read transfer of the process variable.</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">if</span>(notification.accept()) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">auto</span> te = notification.getTransferElement();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        assert(notification.getTransferElement().getVersionNumber() &gt; VersionNumber{nullptr});</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span>(isFanSource) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>          <span class="comment">// if updated process var is source for a fan-out, generate the copies</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>          <span class="comment">// We assume that all elements (source and copies) are in our ReadAnyGroup</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>          <span class="comment">// Do not send out updates via DOOCS if the update is for source of a fan-out.</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>          assert(descriptor.updateFunctions.empty());</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>          <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">routing</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_routing_decorator_domain.html#afd45045145627a71d634d6984bf48b00">send</a>(updatedElement);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          <span class="comment">// Call all updater functions</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; updaterFunction : descriptor.updateFunctions) {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            updaterFunction();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="comment">// Unlock all involved locations</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; location : locationsToLock) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        location-&gt;unlock();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      locationsToLock.clear();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="comment">// Allow shutting down this thread...</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      boost::this_thread::interruption_point();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Execute preRead() on all _elementsToRead while having the location lock. This prevents a data race for</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// bidirectional PVs, if a write operation happens concurrently (in the RPC thread). waitAny() will issue preRead()</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// again, but we cannot have the location lock during waitAny() any more, since it will block until the next change</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// arrives. The extra preRead does not hurt, since multiple consecutive preReads are ignored by the TransferElement</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// base class.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; pair : <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; location : pair.second.locations) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">if</span>(locationsToLock.insert(location).second) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>          location-&gt;lock();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; elem : <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      elem.getHighLevelImplElement()-&gt;preRead(ChimeraTK::TransferType::read);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; location : locationsToLock) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      location-&gt;unlock();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    locationsToLock.clear();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="comment">// Wait until any variable got an update</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keyword">auto</span> notification = group.waitAny();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keyword">auto</span> updatedElement = notification.getId();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keyword">auto</span>&amp; descriptor = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>[updatedElement];</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordtype">bool</span> isFanSource = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">routing</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_routing_decorator_domain.html#a14e2d4842429f00cfb57bc6e37993b10">isFanSource</a>(updatedElement);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordflow">if</span>(!isFanSource) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// Gather all involved locations in a unique set</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; location : descriptor.locations) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          <span class="keywordflow">if</span>(locationsToLock.insert(location).second) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            location-&gt;lock();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>          }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="comment">// Complete the read transfer of the process variable.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">if</span>(notification.accept()) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keyword">auto</span> te = notification.getTransferElement();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        assert(notification.getTransferElement().getVersionNumber() &gt; VersionNumber{nullptr});</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span>(isFanSource) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>          <span class="comment">// if updated process var is source for a fan-out, generate the copies</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>          <span class="comment">// We assume that all elements (source and copies) are in our ReadAnyGroup</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>          <span class="comment">// Do not send out updates via DOOCS if the update is for source of a fan-out.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          assert(descriptor.updateFunctions.empty());</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>          <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">routing</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_routing_decorator_domain.html#afd45045145627a71d634d6984bf48b00">send</a>(updatedElement);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>          <span class="comment">// Call all updater functions</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; updaterFunction : descriptor.updateFunctions) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            updaterFunction();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>          }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="comment">// Run preRead() while we still have the location lock. See above comment for running preRead before the</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">// while(true) loop for an explanation.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        te.getHighLevelImplElement()-&gt;preRead(ChimeraTK::TransferType::read);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      <span class="comment">// Unlock all involved locations</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; location : locationsToLock) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        location-&gt;unlock();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      locationsToLock.clear();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="comment">// Allow shutting down this thread...</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      boost::this_thread::interruption_point();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  }</div>
 </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">  104</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">DoocsUpdater::run</a>() {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a> = boost::thread([<span class="keyword">this</span>] {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      cppext::setThreadName(<span class="stringliteral">&quot;DoocsUpdater&quot;</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#a9fe9fd577b491a49f7205fd86ca754f7">updateLoop</a>();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    });</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
-</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">  113</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">DoocsUpdater::stop</a>() {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a>.joinable()) {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a>.interrupt();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; var : <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>) {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        var.getHighLevelImplElement()-&gt;interrupt();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a>.join();</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
-</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329">  125</a></span>  <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329">DoocsUpdater::~DoocsUpdater</a>() {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">stop</a>();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">  127</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">DoocsUpdater::run</a>() {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a> = boost::thread([<span class="keyword">this</span>] {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      cppext::setThreadName(<span class="stringliteral">&quot;DoocsUpdater&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#a9fe9fd577b491a49f7205fd86ca754f7">updateLoop</a>();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    });</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  }</div>
 </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#adf27d15f90ac7a1d83bee657cdb8fa92">  131</a></span>  TransferElement::SharedPtr <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#adf27d15f90ac7a1d83bee657cdb8fa92">DoocsUpdater::getMappedProcessVariableUnTyped</a>(</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="keyword">const</span> ChimeraTK::RegisterPath&amp; processVariableName) {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">auto</span> pv = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a79b1b1afbb4a7303a914e746dfe2fa05">_controlSystemPVManager</a>-&gt;getProcessVariable(processVariableName);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="comment">// Note about bi-directional PVs: they are not covered here, because the RoutingDecorator cannot handle them. This</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// may be an issue if bi-directional PVs are mapped more than once to DOOCS (e.g. one writeable and one or more</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">// read-only copy) with different types, but this does also not work for write-only properties yet.</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">if</span>(pv-&gt;isWriteable()) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      <span class="keywordflow">return</span> pv;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">bool</span> sourceRequiresFan = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#ad515d525f7b7a293716fc0f30da5600a">_pvNamesWithFan</a>.contains(pv-&gt;getName());</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">if</span>(!sourceRequiresFan) {</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>      <span class="keywordflow">return</span> pv;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="foldopen" id="foldopen00136" data-start="{" data-end="}">
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">  136</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">DoocsUpdater::stop</a>() {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a>.joinable()) {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a>.interrupt();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; var : <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        var.getHighLevelImplElement()-&gt;interrupt();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>      }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a>.join();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  }</div>
+</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="comment">// We add the source for the fan to elementsToRead.</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// We don&#39;t need a doocsUpdater function for the source.</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    TransferElementID sourceId = pv-&gt;getId();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>.contains(sourceId)) {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>.emplace_back(pv);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>[sourceId];</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">routing</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_routing_decorator_domain.html#a69e787c12b0f8f1dad17e3ee51f19a42">add</a>(pv);</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329">  148</a></span>  <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329">DoocsUpdater::~DoocsUpdater</a>() {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">stop</a>();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  }</div>
 </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_doocs_updater.html#adf27d15f90ac7a1d83bee657cdb8fa92">  154</a></span>  TransferElement::SharedPtr <a class="code hl_function" href="class_chimera_t_k_1_1_doocs_updater.html#adf27d15f90ac7a1d83bee657cdb8fa92">DoocsUpdater::getMappedProcessVariableUnTyped</a>(</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <span class="keyword">const</span> ChimeraTK::RegisterPath&amp; processVariableName) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keyword">auto</span> pv = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a79b1b1afbb4a7303a914e746dfe2fa05">_controlSystemPVManager</a>-&gt;getProcessVariable(processVariableName);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="comment">// Note about bi-directional PVs: they are not covered here, because the RoutingDecorator cannot handle them. This</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="comment">// may be an issue if bi-directional PVs are mapped more than once to DOOCS (e.g. one writeable and one or more</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">// read-only copy) with different types, but this does also not work for write-only properties yet.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">if</span>(pv-&gt;isWriteable()) {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      <span class="keywordflow">return</span> pv;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">bool</span> sourceRequiresFan = <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#ad515d525f7b7a293716fc0f30da5600a">_pvNamesWithFan</a>.contains(pv-&gt;getName());</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span>(!sourceRequiresFan) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      <span class="keywordflow">return</span> pv;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// We add the source for the fan to elementsToRead.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">// We don&#39;t need a doocsUpdater function for the source.</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    TransferElementID sourceId = pv-&gt;getId();</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>.contains(sourceId)) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">_elementsToRead</a>.emplace_back(pv);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">_toDoocsDescriptorMap</a>[sourceId];</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">routing</a>.<a class="code hl_function" href="class_chimera_t_k_1_1_routing_decorator_domain.html#a69e787c12b0f8f1dad17e3ee51f19a42">add</a>(pv);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  }</div>
+</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_doocs_updater_8h_html"><div class="ttname"><a href="_doocs_updater_8h.html">DoocsUpdater.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_a1603c55d5a148d4e2afdf95e2f0730d2"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#a1603c55d5a148d4e2afdf95e2f0730d2">ChimeraTK::DoocsUpdater::_toDoocsDescriptorMap</a></div><div class="ttdeci">std::map&lt; ChimeraTK::TransferElementID, ToDoocsUpdateDescriptor &gt; _toDoocsDescriptorMap</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00080">DoocsUpdater.h:80</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_a47e2fd420a881a64e0ab38d4b4bba5aa"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#a47e2fd420a881a64e0ab38d4b4bba5aa">ChimeraTK::DoocsUpdater::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00030">DoocsUpdater.cc:30</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_a59282eb42563fb3483756170bda65329"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329">ChimeraTK::DoocsUpdater::~DoocsUpdater</a></div><div class="ttdeci">~DoocsUpdater()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00125">DoocsUpdater.cc:125</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_a59282eb42563fb3483756170bda65329"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329">ChimeraTK::DoocsUpdater::~DoocsUpdater</a></div><div class="ttdeci">~DoocsUpdater()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00148">DoocsUpdater.cc:148</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_a79b1b1afbb4a7303a914e746dfe2fa05"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#a79b1b1afbb4a7303a914e746dfe2fa05">ChimeraTK::DoocsUpdater::_controlSystemPVManager</a></div><div class="ttdeci">boost::shared_ptr&lt; ControlSystemPVManager &gt; _controlSystemPVManager</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00069">DoocsUpdater.h:69</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_a9fe9fd577b491a49f7205fd86ca754f7"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#a9fe9fd577b491a49f7205fd86ca754f7">ChimeraTK::DoocsUpdater::updateLoop</a></div><div class="ttdeci">void updateLoop()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00042">DoocsUpdater.cc:42</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_aa702766800d6c1863c232758f723798e"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">ChimeraTK::DoocsUpdater::_syncThread</a></div><div class="ttdeci">boost::thread _syncThread</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00072">DoocsUpdater.h:72</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_aafe7082f09c25245074fed216d78c528"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">ChimeraTK::DoocsUpdater::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00104">DoocsUpdater.cc:104</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_aafe7082f09c25245074fed216d78c528"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">ChimeraTK::DoocsUpdater::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00127">DoocsUpdater.cc:127</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_abc43b075ca8f4a6f5de4537c1016e2ee"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#abc43b075ca8f4a6f5de4537c1016e2ee">ChimeraTK::DoocsUpdater::routing</a></div><div class="ttdeci">RoutingDecoratorDomain routing</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00056">DoocsUpdater.h:56</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_abe9102d68e37adc3bf7d2d484ccbcfea"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">ChimeraTK::DoocsUpdater::_elementsToRead</a></div><div class="ttdeci">std::list&lt; ChimeraTK::TransferElementAbstractor &gt; _elementsToRead</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00071">DoocsUpdater.h:71</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_ad515d525f7b7a293716fc0f30da5600a"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#ad515d525f7b7a293716fc0f30da5600a">ChimeraTK::DoocsUpdater::_pvNamesWithFan</a></div><div class="ttdeci">std::set&lt; std::string &gt; _pvNamesWithFan</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00070">DoocsUpdater.h:70</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_adf27d15f90ac7a1d83bee657cdb8fa92"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#adf27d15f90ac7a1d83bee657cdb8fa92">ChimeraTK::DoocsUpdater::getMappedProcessVariableUnTyped</a></div><div class="ttdeci">TransferElement::SharedPtr getMappedProcessVariableUnTyped(const ChimeraTK::RegisterPath &amp;processVariableName)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00131">DoocsUpdater.cc:131</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_adf27d15f90ac7a1d83bee657cdb8fa92"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#adf27d15f90ac7a1d83bee657cdb8fa92">ChimeraTK::DoocsUpdater::getMappedProcessVariableUnTyped</a></div><div class="ttdeci">TransferElement::SharedPtr getMappedProcessVariableUnTyped(const ChimeraTK::RegisterPath &amp;processVariableName)</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00154">DoocsUpdater.cc:154</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_ae73af569005bfdfb11fea9e7897532a7"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#ae73af569005bfdfb11fea9e7897532a7">ChimeraTK::DoocsUpdater::addVariable</a></div><div class="ttdeci">void addVariable(const ChimeraTK::TransferElementAbstractor &amp;variable, EqFct *eq_fct, const std::function&lt; void()&gt; &amp;updaterFunction={})</div><div class="ttdoc">Add a variable to be updated.</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00013">DoocsUpdater.cc:13</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_ae95813ee7f671133d514189c3c033286"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">ChimeraTK::DoocsUpdater::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00113">DoocsUpdater.cc:113</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html_ae95813ee7f671133d514189c3c033286"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">ChimeraTK::DoocsUpdater::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8cc_source.html#l00136">DoocsUpdater.cc:136</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_routing_decorator_domain_html_a14e2d4842429f00cfb57bc6e37993b10"><div class="ttname"><a href="class_chimera_t_k_1_1_routing_decorator_domain.html#a14e2d4842429f00cfb57bc6e37993b10">ChimeraTK::RoutingDecoratorDomain::isFanSource</a></div><div class="ttdeci">bool isFanSource(TransferElementID updatedElement)</div><div class="ttdef"><b>Definition</b> <a href="_routing_decorator_8h_source.html#l00056">RoutingDecorator.h:56</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_routing_decorator_domain_html_a69e787c12b0f8f1dad17e3ee51f19a42"><div class="ttname"><a href="class_chimera_t_k_1_1_routing_decorator_domain.html#a69e787c12b0f8f1dad17e3ee51f19a42">ChimeraTK::RoutingDecoratorDomain::add</a></div><div class="ttdeci">TransferElement::SharedPtr add(TransferElement::SharedPtr source)</div><div class="ttdoc">return a new RoutingDecorator for source; creates the fan-out on first call for given source.</div><div class="ttdef"><b>Definition</b> <a href="_routing_decorator_8cc_source.html#l00008">RoutingDecorator.cc:8</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_routing_decorator_domain_html_afd45045145627a71d634d6984bf48b00"><div class="ttname"><a href="class_chimera_t_k_1_1_routing_decorator_domain.html#afd45045145627a71d634d6984bf48b00">ChimeraTK::RoutingDecoratorDomain::send</a></div><div class="ttdeci">bool send(TransferElementID updatedElement)</div><div class="ttdoc">For updatedElement = source of a fan-out belonging to RoutingDecoratorDomain, send out the copies and...</div><div class="ttdef"><b>Definition</b> <a href="_routing_decorator_8cc_source.html#l00033">RoutingDecorator.cc:33</a></div></div>

@@ -28,7 +28,5 @@ var namespace_chimera_t_k =
     [ "setEnableProcessArrayThreadSafetyCheck", "namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc", null ],
     [ "toDouble", "namespace_chimera_t_k.html#abb2b8dfa58977b1813fe9757a117cf5a", null ],
     [ "toDouble< std::string >", "namespace_chimera_t_k.html#a7a26be422586550a071b2cdbbfa5376e", null ],
-    [ "toType", "namespace_chimera_t_k.html#a7a2ffbe236e21d41b8cd3be170b3fe02", null ],
-    [ "toType< ChimeraTK::Void >", "namespace_chimera_t_k.html#a1b55e3f979260075d0970c4f2704ab85", null ],
-    [ "toType< std::string >", "namespace_chimera_t_k.html#af0709cce07849becb0e11825ed3838b0", null ]
+    [ "toType", "namespace_chimera_t_k.html#a8df9335531893a5c2ccf7a29ddfea367", null ]
 ];
