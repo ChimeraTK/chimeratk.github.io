@@ -2,7 +2,6 @@ var struct_stepper_motor_server =
 [
     [ "StepperMotorServer", "struct_stepper_motor_server.html#a542aad3afe98e832ea12c9d64fcbe936", null ],
     [ "~StepperMotorServer", "struct_stepper_motor_server.html#abb2ae032e183247911688e91265649d6", null ],
-    [ "config", "struct_stepper_motor_server.html#a6fc0549c1cfe66f1b78c1009f0d53520", null ],
     [ "dmapPathSetter", "struct_stepper_motor_server.html#a98b9f14ad610a8695468100eac24a904", null ],
     [ "motorDriver", "struct_stepper_motor_server.html#a1bb4f1874d376a13fd2e32a6eaee3221", null ],
     [ "motorDummy", "struct_stepper_motor_server.html#ad9ae64960bf88064f6dfd70d5165aa00", null ],

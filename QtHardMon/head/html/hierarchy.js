@@ -21,7 +21,6 @@ var hierarchy =
     [ "LifetimeStandard< T >", "class_lifetime_standard.html", null ],
     [ "SingleThread< T >::Lock", "class_single_thread_1_1_lock.html", null ],
     [ "PreferencesProvider", "class_preferences_provider.html", null ],
-    [ "PreferencesProvider_fixtureBase", "struct_preferences_provider__fixture_base.html", null ],
     [ "QAbstractTableModel", null, [
       [ "RegisterAccessorModel", "class_register_accessor_model.html", null ]
     ] ],

@@ -13,11 +13,9 @@ var searchData=
   ['preferencesprovider_10',['PreferencesProvider',['../class_preferences_provider.html',1,'']]],
   ['preferencesprovider_2ecpp_11',['PreferencesProvider.cpp',['../_preferences_provider_8cpp.html',1,'']]],
   ['preferencesprovider_2eh_12',['PreferencesProvider.h',['../_preferences_provider_8h.html',1,'']]],
-  ['preferencesprovider_5ffixturebase_13',['preferencesprovider_fixturebase',['../struct_preferences_provider__fixture_base.html',1,'PreferencesProvider_fixtureBase'],['../struct_preferences_provider__fixture_base.html#a08defa6085fa6dbf52973eb0a79ae794',1,'PreferencesProvider_fixtureBase::PreferencesProvider_fixtureBase()']]],
-  ['preferencesprovidersingleton_14',['PreferencesProviderSingleton',['../_preferences_provider_8h.html#a2eb6a58ec1ca5070e4089f85fa1e946d',1,'PreferencesProvider.h']]],
-  ['propertieswidget_15',['propertieswidget',['../struct_device_element_q_tree_item__fixture_base.html#af2fdf5676c378039c4a2ab6e871d59de',1,'DeviceElementQTreeItem_fixtureBase::propertiesWidget'],['../class_properties_widget.html#a51c2c7b29f6d51854c635829cf0e2cbe',1,'PropertiesWidget::PropertiesWidget()'],['../class_properties_widget.html',1,'PropertiesWidget']]],
-  ['propertieswidget_2ecpp_16',['PropertiesWidget.cpp',['../_properties_widget_8cpp.html',1,'']]],
-  ['propertieswidget_2eh_17',['PropertiesWidget.h',['../_properties_widget_8h.html',1,'']]],
-  ['propertieswidgetprovider_18',['propertiesWidgetProvider',['../struct_device_element_q_tree_item__fixture_base.html#a0037f38aa4b5afbd397c2ff3ba2e5761',1,'DeviceElementQTreeItem_fixtureBase']]],
-  ['provider_19',['provider',['../struct_preferences_provider__fixture_base.html#a779e5e555cf0adf50905ca6c32f32ddc',1,'PreferencesProvider_fixtureBase']]]
+  ['preferencesprovidersingleton_13',['PreferencesProviderSingleton',['../_preferences_provider_8h.html#a2eb6a58ec1ca5070e4089f85fa1e946d',1,'PreferencesProvider.h']]],
+  ['propertieswidget_14',['propertieswidget',['../class_properties_widget.html',1,'PropertiesWidget'],['../struct_device_element_q_tree_item__fixture_base.html#af2fdf5676c378039c4a2ab6e871d59de',1,'DeviceElementQTreeItem_fixtureBase::propertiesWidget'],['../class_properties_widget.html#a51c2c7b29f6d51854c635829cf0e2cbe',1,'PropertiesWidget::PropertiesWidget()']]],
+  ['propertieswidget_2ecpp_15',['PropertiesWidget.cpp',['../_properties_widget_8cpp.html',1,'']]],
+  ['propertieswidget_2eh_16',['PropertiesWidget.h',['../_properties_widget_8h.html',1,'']]],
+  ['propertieswidgetprovider_17',['propertiesWidgetProvider',['../struct_device_element_q_tree_item__fixture_base.html#a0037f38aa4b5afbd397c2ff3ba2e5761',1,'DeviceElementQTreeItem_fixtureBase']]]
 ];
