@@ -14,6 +14,7 @@ var test_logging_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#a3fc7767c1a2a89f2a8e1c73b712c1b27", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#a9bebd2e7e644c76d80b27f1c4ca105e3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#af2ea12666b6426b545ba47b8ddc7363f", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#abe81b89ff7273f269e2a728800393454", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#adffa4bad642a20e9a865372d80a36173", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#ac9e60f0c289666c091ab4fd11d3a1ca2", null ]
 ];
