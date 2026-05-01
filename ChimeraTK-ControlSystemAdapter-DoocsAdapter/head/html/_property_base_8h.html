@@ -102,6 +102,10 @@ $(document).ready(function(){initNavTree('_property_base_8h.html',''); initResiz
 <code>#include &lt;ChimeraTK/OneDRegisterAccessor.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/ScalarRegisterAccessor.h&gt;</code><br />
 <code>#include &lt;eq_fct.h&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for PropertyBase.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,8 +136,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a05f7ffc18bc0ca7a7e8f804ebdb1167e" id="r_a05f7ffc18bc0ca7a7e8f804ebdb1167e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">ChimeraTK::CommonlyUpdatedPropertySet</a> = std::set&lt; boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt;</td></tr>
-<tr class="separator:a05f7ffc18bc0ca7a7e8f804ebdb1167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30862e16d7e235a158f3d8de8f344c0b" id="r_a30862e16d7e235a158f3d8de8f344c0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a30862e16d7e235a158f3d8de8f344c0b">ChimeraTK::PVChangeListeners</a> = std::vector&lt; std::function&lt; void(bool, const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &amp;)&gt; &gt;</td></tr>
+<tr class="memdesc:a30862e16d7e235a158f3d8de8f344c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of callbacks to be invoked when a shared PV changes.  <br /></td></tr>
+<tr class="separator:a30862e16d7e235a158f3d8de8f344c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

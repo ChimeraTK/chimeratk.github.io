@@ -19,5 +19,6 @@ var searchData=
   ['isfan_16',['isFan',['../class_chimera_t_k_1_1_routing_decorator.html#ab1307ff3fbd3efacc770b0413ddcf155',1,'ChimeraTK::RoutingDecorator']]],
   ['isfansource_17',['isFanSource',['../class_chimera_t_k_1_1_routing_decorator_domain.html#a14e2d4842429f00cfb57bc6e37993b10',1,'ChimeraTK::RoutingDecoratorDomain']]],
   ['isinitialised_18',['isInitialised',['../class_chimera_t_k_1_1_doocs_adapter.html#aefa97e9f933246fe87418ed282900f54',1,'ChimeraTK::DoocsAdapter']]],
-  ['iswriteable_19',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes']]]
+  ['iswriteable_19',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes']]],
+  ['iswriteablesource_20',['isWriteableSource',['../struct_chimera_t_k_1_1_property_attributes.html#abb1ac7150723bd12bb436453f13f9fa2',1,'ChimeraTK::PropertyAttributes']]]
 ];

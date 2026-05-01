@@ -2,7 +2,8 @@ var struct_chimera_t_k_1_1_spectrum_description =
 [
     [ "Axis", "struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html", "struct_chimera_t_k_1_1_spectrum_description_1_1_axis" ],
     [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html#a41af855afa3487885c9f1e51d4d0af98", null ],
-    [ "getSources", "struct_chimera_t_k_1_1_spectrum_description.html#a952345feb5c967bf356a06ceece7a557", null ],
+    [ "getMetadataSources", "struct_chimera_t_k_1_1_spectrum_description.html#a7cf3aab3d80f44c0e94c26c207eee94e", null ],
+    [ "getPayloadDataSources", "struct_chimera_t_k_1_1_spectrum_description.html#a5d6f26901526c11537b2cb178e471df6", null ],
     [ "print", "struct_chimera_t_k_1_1_spectrum_description.html#ab6e4f76e35862dfeed6f5f59e22ab495", null ],
     [ "axis", "struct_chimera_t_k_1_1_spectrum_description.html#a79411da04af79474a43f0b604c17dd74", null ],
     [ "description", "struct_chimera_t_k_1_1_spectrum_description.html#a13b843a0ecd9ac2013a5de11ab8cbf8d", null ],
