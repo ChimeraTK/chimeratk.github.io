@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.02</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.16.00</span>
    </div>
   </td>
  </tr>
@@ -106,21 +106,25 @@ $(document).ready(function(){initNavTree('_d__text_unifier_8cpp_source.html','')
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// just call the constructor without history (the only one)</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_d_text_unifier.html#a4e5e306f8badd01cb492ebaf7d90f7ed">    7</a></span><a class="code hl_function" href="struct_d_text_unifier.html#a4e5e306f8badd01cb492ebaf7d90f7ed">DTextUnifier::DTextUnifier</a>(EqFct* eqFct, <span class="keyword">const</span> std::string&amp; doocsPropertyName) : D_text(doocsPropertyName, eqFct) {}</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_d_text_unifier.html#a6d1e8e0f8d567908bcb7bb0aec939a66">    9</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="struct_d_text_unifier.html#a6d1e8e0f8d567908bcb7bb0aec939a66">DTextUnifier::setAndArchive</a>(<span class="keyword">const</span> std::string&amp; str, ArchiveStatus, doocs::Timestamp, doocs::EventId) {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  set_value(str);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_d_text_unifier.html#a6d1e8e0f8d567908bcb7bb0aec939a66">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="struct_d_text_unifier.html#a6d1e8e0f8d567908bcb7bb0aec939a66">DTextUnifier::setAndArchive</a>(<span class="keyword">const</span> std::string&amp; str, ArchiveStatus, doocs::Timestamp, doocs::EventId) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  set_value(str);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_d_text_unifier.html#aa3fbe500704125e9d83e21a9f83d56db">   13</a></span>D_hist* <a class="code hl_function" href="struct_d_text_unifier.html#aa3fbe500704125e9d83e21a9f83d56db">DTextUnifier::getHistPointer</a>() {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_d_text_unifier.html#aa3fbe500704125e9d83e21a9f83d56db">   17</a></span>D_hist* <a class="code hl_function" href="struct_d_text_unifier.html#aa3fbe500704125e9d83e21a9f83d56db">DTextUnifier::getHistPointer</a>() {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 </div>
 <div class="ttc" id="a_d__text_unifier_8h_html"><div class="ttname"><a href="_d__text_unifier_8h.html">D_textUnifier.h</a></div></div>
 <div class="ttc" id="astruct_d_text_unifier_html_a4e5e306f8badd01cb492ebaf7d90f7ed"><div class="ttname"><a href="struct_d_text_unifier.html#a4e5e306f8badd01cb492ebaf7d90f7ed">DTextUnifier::DTextUnifier</a></div><div class="ttdeci">DTextUnifier(EqFct *eqFct, const std::string &amp;doocsPropertyName)</div><div class="ttdef"><b>Definition</b> <a href="_d__text_unifier_8cpp_source.html#l00007">D_textUnifier.cpp:7</a></div></div>
-<div class="ttc" id="astruct_d_text_unifier_html_a6d1e8e0f8d567908bcb7bb0aec939a66"><div class="ttname"><a href="struct_d_text_unifier.html#a6d1e8e0f8d567908bcb7bb0aec939a66">DTextUnifier::setAndArchive</a></div><div class="ttdeci">void setAndArchive(const std::string &amp;str, ArchiveStatus status, doocs::Timestamp timestamp, doocs::EventId eventId)</div><div class="ttdef"><b>Definition</b> <a href="_d__text_unifier_8cpp_source.html#l00009">D_textUnifier.cpp:9</a></div></div>
-<div class="ttc" id="astruct_d_text_unifier_html_aa3fbe500704125e9d83e21a9f83d56db"><div class="ttname"><a href="struct_d_text_unifier.html#aa3fbe500704125e9d83e21a9f83d56db">DTextUnifier::getHistPointer</a></div><div class="ttdeci">static D_hist * getHistPointer()</div><div class="ttdef"><b>Definition</b> <a href="_d__text_unifier_8cpp_source.html#l00013">D_textUnifier.cpp:13</a></div></div>
+<div class="ttc" id="astruct_d_text_unifier_html_a6d1e8e0f8d567908bcb7bb0aec939a66"><div class="ttname"><a href="struct_d_text_unifier.html#a6d1e8e0f8d567908bcb7bb0aec939a66">DTextUnifier::setAndArchive</a></div><div class="ttdeci">void setAndArchive(const std::string &amp;str, ArchiveStatus status, doocs::Timestamp timestamp, doocs::EventId eventId)</div><div class="ttdef"><b>Definition</b> <a href="_d__text_unifier_8cpp_source.html#l00011">D_textUnifier.cpp:11</a></div></div>
+<div class="ttc" id="astruct_d_text_unifier_html_aa3fbe500704125e9d83e21a9f83d56db"><div class="ttname"><a href="struct_d_text_unifier.html#aa3fbe500704125e9d83e21a9f83d56db">DTextUnifier::getHistPointer</a></div><div class="ttdeci">static D_hist * getHistPointer()</div><div class="ttdef"><b>Definition</b> <a href="_d__text_unifier_8cpp_source.html#l00017">D_textUnifier.cpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

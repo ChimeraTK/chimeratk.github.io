@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.02</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.16.00</span>
    </div>
   </td>
  </tr>
@@ -169,8 +169,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a05f7ffc18bc0ca7a7e8f804ebdb1167e" id="r_a05f7ffc18bc0ca7a7e8f804ebdb1167e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">CommonlyUpdatedPropertySet</a> = std::set&lt; boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt;</td></tr>
-<tr class="separator:a05f7ffc18bc0ca7a7e8f804ebdb1167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30862e16d7e235a158f3d8de8f344c0b" id="r_a30862e16d7e235a158f3d8de8f344c0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a30862e16d7e235a158f3d8de8f344c0b">PVChangeListeners</a> = std::vector&lt; std::function&lt; void(bool, const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &amp;)&gt; &gt;</td></tr>
+<tr class="memdesc:a30862e16d7e235a158f3d8de8f344c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of callbacks to be invoked when a shared PV changes.  <br /></td></tr>
+<tr class="separator:a30862e16d7e235a158f3d8de8f344c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -194,27 +195,28 @@ Functions</h2></td></tr>
 <tr class="separator:acda82509de015fd1b523ffa80eb0e3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ae8c499735588a556f99205b693955" id="r_a76ae8c499735588a556f99205b693955"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a76ae8c499735588a556f99205b693955">determineName</a> (const xmlpp::Element *property, std::string source)</td></tr>
 <tr class="separator:a76ae8c499735588a556f99205b693955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c0eb3bf1c3b3d538cba018c69f262b" id="r_a66c0eb3bf1c3b3d538cba018c69f262b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a66c0eb3bf1c3b3d538cba018c69f262b">getAbsoluteSource</a> (std::string source, const std::string &amp;locationName)</td></tr>
-<tr class="separator:a66c0eb3bf1c3b3d538cba018c69f262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ccc0a55e83d4c4a59f981da7abdeb1a" id="r_a7ccc0a55e83d4c4a59f981da7abdeb1a"><td class="memItemLeft" align="right" valign="top">xmlpp::Element const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a7ccc0a55e83d4c4a59f981da7abdeb1a">asXmlElement</a> (xmlpp::Node const *node)</td></tr>
 <tr class="separator:a7ccc0a55e83d4c4a59f981da7abdeb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>FIXME: Separate these out into individual files </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a05f7ffc18bc0ca7a7e8f804ebdb1167e" name="a05f7ffc18bc0ca7a7e8f804ebdb1167e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05f7ffc18bc0ca7a7e8f804ebdb1167e">&#9670;&#160;</a></span>CommonlyUpdatedPropertySet</h2>
+<a id="a30862e16d7e235a158f3d8de8f344c0b" name="a30862e16d7e235a158f3d8de8f344c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30862e16d7e235a158f3d8de8f344c0b">&#9670;&#160;</a></span>PVChangeListeners</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespace_chimera_t_k.html#a05f7ffc18bc0ca7a7e8f804ebdb1167e">ChimeraTK::CommonlyUpdatedPropertySet</a> = typedef std::set&lt;boost::weak_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k.html#a30862e16d7e235a158f3d8de8f344c0b">ChimeraTK::PVChangeListeners</a> = typedef std::vector&lt;std::function&lt;void(bool, const boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a>&gt;&amp;)&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00016">16</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
+<p>List of callbacks to be invoked when a shared PV changes. </p>
+<p>Each callback receives a flag indicating whether locking is needed and a shared_ptr to the property that triggered the change. </p>
+
+<p class="definition">Definition at line <a class="el" href="_property_base_8h_source.html#l00023">23</a> of file <a class="el" href="_property_base_8h_source.html">PropertyBase.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +237,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00210">210</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00217">217</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -296,7 +298,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>FIXME: use register path to do the slash and replace fiddeling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00117">117</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00119">119</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -358,7 +360,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00032">32</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00036">36</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 
 </div>
 </div>
@@ -380,37 +382,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00361">361</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
-
-</div>
-</div>
-<a id="a66c0eb3bf1c3b3d538cba018c69f262b" name="a66c0eb3bf1c3b3d538cba018c69f262b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66c0eb3bf1c3b3d538cba018c69f262b">&#9670;&#160;</a></span>getAbsoluteSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string ChimeraTK::getAbsoluteSource </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>locationName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00138">138</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00390">390</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 
 </div>
 </div>
@@ -432,7 +404,7 @@ template&lt;&gt; </div>
 
 <p>convenience function to get all variable names from the CS adapter as a std::set (needed for instance for the variable mapper) </p>
 
-<p class="definition">Definition at line <a class="el" href="get_all_variable_names_8cc_source.html#l00008">8</a> of file <a class="el" href="get_all_variable_names_8cc_source.html">getAllVariableNames.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="get_all_variable_names_8cc_source.html#l00010">10</a> of file <a class="el" href="get_all_variable_names_8cc_source.html">getAllVariableNames.cc</a>.</p>
 
 </div>
 </div>

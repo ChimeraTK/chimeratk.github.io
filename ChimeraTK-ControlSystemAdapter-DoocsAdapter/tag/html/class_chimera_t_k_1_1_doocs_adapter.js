@@ -9,8 +9,7 @@ var class_chimera_t_k_1_1_doocs_adapter =
     [ "_before_auto_init_called", "class_chimera_t_k_1_1_doocs_adapter.html#a08a6569fe57182e680de9113dab04ac8", null ],
     [ "_controlSystemPVManager", "class_chimera_t_k_1_1_doocs_adapter.html#abd9d02096a55995d55eaa0fa2fe176f4", null ],
     [ "_devicePVManager", "class_chimera_t_k_1_1_doocs_adapter.html#aa68288d8deb8724e6c357b9ded29217c", null ],
-    [ "reverseMapping", "class_chimera_t_k_1_1_doocs_adapter.html#aa46c4d882f65351a37b1c5b79d2e36d0", null ],
     [ "updater", "class_chimera_t_k_1_1_doocs_adapter.html#a2ffe502b554af5713c1a1b0406f7b5a4", null ],
-    [ "writeableVariablesWithMultipleProperties", "class_chimera_t_k_1_1_doocs_adapter.html#af795f4eff179c7c157d05c572e3debb2", null ],
+    [ "writeableVariablesWithMultipleProperties", "class_chimera_t_k_1_1_doocs_adapter.html#af203c62bf27f58ce647e031ae0437ccd", null ],
     [ "writeableVariablesWithMultiplePropertiesIsFinal", "class_chimera_t_k_1_1_doocs_adapter.html#a2973a2712cd68522fe39ba021ab0335d", null ]
 ];

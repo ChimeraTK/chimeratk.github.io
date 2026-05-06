@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.02</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.16.00</span>
    </div>
   </td>
  </tr>
@@ -174,43 +174,10 @@ $(document).ready(function(){initNavTree('server_test_zero_m_q__no_matching_m_p_
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#a6209bd30c92a0fa5e93db2bdc869a2fd">   69</a></span><a class="code hl_function" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#a7ab811b760e07f23fca2fdfe064babbf">BOOST_FIXTURE_TEST_CASE</a>(testIFFFa, <a class="code hl_struct" href="struct_zero_m_q_fixture.html">ZeroMQFixture&lt;IFFF&gt;</a>) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testIFFFa&quot;</span> &lt;&lt; <a class="code hl_variable" href="struct_global_fixture.html#af4d07773622b270bc44eed044d0d8d39">GlobalFixture::rpcNo</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="struct_global_fixture.html#a4d9170ba161e4fbd86afdf27d1ca2533">GlobalFixture::bpn</a> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  toDevicePath = <span class="stringliteral">&quot;//CUSTOM/IFFF&quot;</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  fromDevicePath = toDevicePath;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  fromDeviceMetaDataPath = <span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  configUsesDataMatching = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// we cannot generate errors since data not routed through AC app</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  generateErrors = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  init();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  checkTransport();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#aa94ffa333903070ca7f9e8443a17ab37">   83</a></span><span class="keyword">using </span><a class="code hl_typedef" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#aa94ffa333903070ca7f9e8443a17ab37">FixtureForTestIFFFb</a> = <a class="code hl_struct" href="struct_zero_m_q_fixture.html">ZeroMQFixture&lt;IFFF, int&gt;</a>; <span class="comment">// needed because of &#39;,&#39; parsing in macro</span></div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#a7e9915539aaae0254e9697573403ef87">   84</a></span><a class="code hl_function" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#a7ab811b760e07f23fca2fdfe064babbf">BOOST_FIXTURE_TEST_CASE</a>(testIFFFb, <a class="code hl_typedef" href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#aa94ffa333903070ca7f9e8443a17ab37">FixtureForTestIFFFb</a>) {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  std::cout &lt;&lt; <span class="stringliteral">&quot;testIFFFb&quot;</span> &lt;&lt; <a class="code hl_variable" href="struct_global_fixture.html#af4d07773622b270bc44eed044d0d8d39">GlobalFixture::rpcNo</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="struct_global_fixture.html#a4d9170ba161e4fbd86afdf27d1ca2533">GlobalFixture::bpn</a> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  toDevicePath = <span class="stringliteral">&quot;//CUSTOM/IFFF&quot;</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  fromDevicePath = <span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  configUsesDataMatching = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// we cannot generate errors since data not routed through AC app</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  generateErrors = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  init();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  checkTransport();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
-</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_zero_m_q_fixture_8h_html"><div class="ttname"><a href="_zero_m_q_fixture_8h.html">ZeroMQFixture.h</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 <div class="ttc" id="aserver_test_zero_m_q__no_matching_m_p_number_8cc_html_a7ab811b760e07f23fca2fdfe064babbf"><div class="ttname"><a href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#a7ab811b760e07f23fca2fdfe064babbf">BOOST_FIXTURE_TEST_CASE</a></div><div class="ttdeci">BOOST_FIXTURE_TEST_CASE(testScalar, ZeroMQFixture&lt; int32_t &gt;)</div><div class="ttdef"><b>Definition</b> <a href="server_test_zero_m_q__no_matching_m_p_number_8cc_source.html#l00018">serverTestZeroMQ_noMatchingMPNumber.cc:18</a></div></div>
-<div class="ttc" id="aserver_test_zero_m_q__no_matching_m_p_number_8cc_html_aa94ffa333903070ca7f9e8443a17ab37"><div class="ttname"><a href="server_test_zero_m_q__no_matching_m_p_number_8cc.html#aa94ffa333903070ca7f9e8443a17ab37">FixtureForTestIFFFb</a></div><div class="ttdeci">ZeroMQFixture&lt; IFFF, int &gt; FixtureForTestIFFFb</div><div class="ttdef"><b>Definition</b> <a href="server_test_zero_m_q__no_matching_m_p_number_8cc_source.html#l00083">serverTestZeroMQ_noMatchingMPNumber.cc:83</a></div></div>
 <div class="ttc" id="astruct_global_fixture_html_a4d9170ba161e4fbd86afdf27d1ca2533"><div class="ttname"><a href="struct_global_fixture.html#a4d9170ba161e4fbd86afdf27d1ca2533">GlobalFixture::bpn</a></div><div class="ttdeci">static std::string bpn</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00076">serverTestArrayPersistence.cpp:76</a></div></div>
 <div class="ttc" id="astruct_global_fixture_html_af4d07773622b270bc44eed044d0d8d39"><div class="ttname"><a href="struct_global_fixture.html#af4d07773622b270bc44eed044d0d8d39">GlobalFixture::rpcNo</a></div><div class="ttdeci">static std::string rpcNo</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00075">serverTestArrayPersistence.cpp:75</a></div></div>
 <div class="ttc" id="astruct_zero_m_q_fixture_html"><div class="ttname"><a href="struct_zero_m_q_fixture.html">ZeroMQFixture</a></div><div class="ttdef"><b>Definition</b> <a href="_zero_m_q_fixture_8h_source.html#l00026">ZeroMQFixture.h:26</a></div></div>

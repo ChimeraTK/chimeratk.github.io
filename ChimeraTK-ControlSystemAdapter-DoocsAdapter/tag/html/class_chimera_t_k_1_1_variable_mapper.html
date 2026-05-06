@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.15.02</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.16.00</span>
    </div>
   </td>
  </tr>
@@ -134,6 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a545ca3a6e2680f64139ed53da83c58e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">printing the map is useful for debugging  <br /></td></tr>
 <tr class="separator:a545ca3a6e2680f64139ed53da83c58e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ac04c0a4af5db6fd671abaf2c122e2" id="r_af2ac04c0a4af5db6fd671abaf2c122e2"><td class="memItemLeft" align="right" valign="top">const std::set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#af2ac04c0a4af5db6fd671abaf2c122e2">getUsedVariables</a> () const</td></tr>
+<tr class="memdesc:af2ac04c0a4af5db6fd671abaf2c122e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all names of the process variables which have been mapped to the DOOCS control system.  <br /></td></tr>
 <tr class="separator:af2ac04c0a4af5db6fd671abaf2c122e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c613d62d33dacac6fe99a37e65eede7" id="r_a4c613d62d33dacac6fe99a37e65eede7"><td class="memItemLeft" align="right" valign="top">const std::list&lt; <a class="el" href="struct_chimera_t_k_1_1_error_reporting_info.html">ErrorReportingInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a4c613d62d33dacac6fe99a37e65eede7">getErrorReportingInfos</a> () const</td></tr>
 <tr class="separator:a4c613d62d33dacac6fe99a37e65eede7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,8 +208,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa8491093ba2856d4e321d39b08dc0c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a275442e601dc3702ef306841c92c48" id="r_a2a275442e601dc3702ef306841c92c48"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a2a275442e601dc3702ef306841c92c48">_inputVariables</a></td></tr>
 <tr class="separator:a2a275442e601dc3702ef306841c92c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398d4909b87ea3819103d582741e91e0" id="r_a398d4909b87ea3819103d582741e91e0"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a398d4909b87ea3819103d582741e91e0">_usedInputVariables</a></td></tr>
-<tr class="separator:a398d4909b87ea3819103d582741e91e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741c115ac281441007b2184b6092d2ab" id="r_a741c115ac281441007b2184b6092d2ab"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a741c115ac281441007b2184b6092d2ab">_userProcessVariables</a></td></tr>
+<tr class="separator:a741c115ac281441007b2184b6092d2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2301669db60d97e4bcf6d57ae8c368f9" id="r_a2301669db60d97e4bcf6d57ae8c368f9"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="struct_chimera_t_k_1_1_error_reporting_info.html">ErrorReportingInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a2301669db60d97e4bcf6d57ae8c368f9">_errorReportingInfos</a></td></tr>
 <tr class="separator:a2301669db60d97e4bcf6d57ae8c368f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8049c4aa061744e50fcc56b7a586ae55" id="r_a8049c4aa061744e50fcc56b7a586ae55"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="struct_chimera_t_k_1_1_location_info.html">LocationInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a8049c4aa061744e50fcc56b7a586ae55">_locationDefaults</a></td></tr>
@@ -298,7 +299,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00201">201</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00208">208</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -317,7 +318,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00682">682</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00690">690</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -337,7 +338,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00673">673</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00681">681</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -368,7 +369,7 @@ Protected Attributes</h2></td></tr>
 <p>Function to get a bool out of the texts true/True/TRUE/false/False/FALSE/1/0. </p>
 <p>Note on the input: we intentionally make a copy because we modify it inside. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00703">703</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00711">711</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -398,7 +399,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Functiont o convert a string into a DataConsistencyGroup::MatchingMode enum value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00716">716</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00724">724</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -417,7 +418,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00663">663</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00671">671</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -436,7 +437,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00643">643</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00651">651</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -474,7 +475,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00810">810</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00819">819</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -504,7 +505,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Loop through the sub nodes and take the string from the first non-empty which can be casted to a string-node. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00735">735</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00743">743</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -532,7 +533,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00797">797</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00806">806</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -559,7 +560,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00063">63</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00064">64</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +588,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00751">751</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00759">759</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -614,7 +615,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00022">22</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00024">24</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -642,7 +643,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00764">764</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00772">772</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -697,7 +698,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00785">785</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00793">793</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -725,7 +726,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00775">775</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00783">783</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -745,7 +746,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00649">649</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00657">657</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -772,7 +773,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00061">61</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p>Return all names of the process variables which have been mapped to the DOOCS control system. </p>
+
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00062">62</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +819,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00486">486</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00494">494</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -846,7 +849,7 @@ Protected Attributes</h2></td></tr>
 
 <p>An internal helper function to abbreviate the syntax. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00029">29</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00031">31</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -902,7 +905,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00587">587</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00595">595</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -924,7 +927,7 @@ Protected Attributes</h2></td></tr>
 
 <p>printing the map is useful for debugging </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00693">693</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00701">701</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -962,7 +965,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00553">553</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00561">561</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1003,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00147">147</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00140">140</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1041,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00410">410</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00418">418</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1079,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00428">428</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00436">436</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1117,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00336">336</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00343">343</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1155,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00466">466</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00474">474</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1183,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00039">39</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00041">41</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1221,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00220">220</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00227">227</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1259,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00442">442</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00450">450</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1297,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00257">257</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00264">264</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1335,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00356">356</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00363">363</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -1357,7 +1360,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00098">98</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00099">99</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1381,7 +1384,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00073">73</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00074">74</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1408,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00095">95</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00096">96</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1432,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00068">68</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00069">69</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1453,7 +1456,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00070">70</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00071">71</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1477,12 +1480,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00094">94</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00095">95</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
-<a id="a398d4909b87ea3819103d582741e91e0" name="a398d4909b87ea3819103d582741e91e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a398d4909b87ea3819103d582741e91e0">&#9670;&#160;</a></span>_usedInputVariables</h2>
+<a id="a741c115ac281441007b2184b6092d2ab" name="a741c115ac281441007b2184b6092d2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741c115ac281441007b2184b6092d2ab">&#9670;&#160;</a></span>_userProcessVariables</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1491,7 +1494,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;std::string&gt; ChimeraTK::VariableMapper::_usedInputVariables</td>
+          <td class="memname">std::set&lt;std::string&gt; ChimeraTK::VariableMapper::_userProcessVariables</td>
         </tr>
       </table>
   </td>
@@ -1501,7 +1504,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00071">71</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00072">72</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
