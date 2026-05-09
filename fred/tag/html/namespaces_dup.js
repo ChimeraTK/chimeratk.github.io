@@ -2,6 +2,10 @@ var namespaces_dup =
 [
     [ "boost", "namespaceboost.html", "namespaceboost" ],
     [ "context", "namespacecontext.html", null ],
+    [ "fix-linter-for-all", "namespacefix-linter-for-all.html", [
+      [ "main", "namespacefix-linter-for-all.html#ae54728cb38a5ed3acc46eb7d05f10c3d", null ],
+      [ "make_absolute", "namespacefix-linter-for-all.html#a6a7d32698d0a26e1154b3d58b567662e", null ]
+    ] ],
     [ "fred", "namespacefred.html", "namespacefred" ],
     [ "fred_emergency", "namespacefred__emergency.html", "namespacefred__emergency" ],
     [ "kmp_search", "namespacekmp__search.html", "namespacekmp__search" ],

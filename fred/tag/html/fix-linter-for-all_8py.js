@@ -1,5 +1,5 @@
 var fix_linter_for_all_8py =
 [
-    [ "main", "fix-linter-for-all_8py.html#ab0cc65b5b365ba7a7276a416538b5371", null ],
-    [ "make_absolute", "fix-linter-for-all_8py.html#ac1509b919b6fe45c78b024a9b055c475", null ]
+    [ "main", "fix-linter-for-all_8py.html#ae54728cb38a5ed3acc46eb7d05f10c3d", null ],
+    [ "make_absolute", "fix-linter-for-all_8py.html#a6a7d32698d0a26e1154b3d58b567662e", null ]
 ];

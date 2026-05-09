@@ -108,7 +108,8 @@ var NAVTREEINDEX =
 "class_fred_serial_protocol__2__2.html#ac3fd71202e834fb889a8a1619dfba2d2",
 "classfred_1_1_fred_control_protocol_base.html#a7b2f4d6867c63802606460b86e7c243b",
 "classxport__pin__tester_1_1_main_window.html#a6c834379edce7a375754a5631511df6b",
-"namespaceloader.html#ad161adbcb92daffb256f3dda6061680a"
+"namespaceloader.html#a7f8377a36d1f3ce0681de73114c07399",
+"xport__pin__tester_8py.html#a259e9b061c116bfe474a0aa7b8aae34d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
