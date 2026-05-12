@@ -322,7 +322,8 @@ Macros</h2></td></tr>
 <div class="line">  };                                                                                                                   \</div>
 <div class="line">  <span class="keyword">static</span> BackendRegisterer backendRegisterer;                                                                          \</div>
 <div class="line">  <span class="comment">/* Actual constructor of the VirtualLabBackend class. */</span>                                                             \</div>
-<div class="line">  <span class="keyword">explicit</span> name(std::string mapFileName) : VirtualLabBackend(mapFileName), ##__VA_ARGS__, theStateMachine(this) {</div>
+<div class="line">  <span class="keyword">explicit</span> name(std::string mapFileName)                                                                               \</div>
+<div class="line">  : VirtualLabBackend(mapFileName) __VA_OPT__(, ) __VA_ARGS__, theStateMachine(this) {</div>
 <div class="ttc" id="atest_virtual_lab_8cpp_html_ae6e687588f105b8c77b93929e5f18d31"><div class="ttname"><a href="test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31">convertPathRelativeToDmapToAbs</a></div><div class="ttdeci">std::string convertPathRelativeToDmapToAbs(const std::string &amp;mapfileName)</div><div class="ttdef"><b>Definition</b> <a href="test_virtual_lab_8cpp_source.html#l00230">testVirtualLab.cpp:230</a></div></div>
 </div><!-- fragment -->
 <p>Declare the constructor of the VirtualLabBackend. </p>
@@ -786,7 +787,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00323">323</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00324">324</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -874,7 +875,7 @@ Macros</h2></td></tr>
 <p>This should be called inside of the constructor.</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00330">330</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00331">331</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -889,7 +890,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> regReadEvents(uint8_t bar, uint32_t address, <span class="keywordtype">size_t</span> sizeInBytes) {                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> regReadEvents(uint8_t bar, uint32_t address, <span class="keywordtype">size_t</span> sizeInBytes)<span class="keyword"> override </span>{                                     \</div>
 <div class="line">    (void)bar;                                                                                                         \</div>
 <div class="line">    (void)address;                                                                                                     \</div>
 <div class="line">    (void)sizeInBytes;</div>
@@ -921,7 +922,7 @@ Macros</h2></td></tr>
 <p>Must be placed into the C++ source file for any VirtualLabBackend even when not intending to use the backend factory (not into the header file)!</p>
 <p>(test coverage hint: this macro is used in the test) </p>
 
-<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00338">338</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_virtual_lab_backend_8h_source.html#l00339">339</a> of file <a class="el" href="_virtual_lab_backend_8h_source.html">VirtualLabBackend.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +937,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> regWriteEvents(uint8_t bar, uint32_t address, <span class="keywordtype">size_t</span> sizeInBytes) {                                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> regWriteEvents(uint8_t bar, uint32_t address, <span class="keywordtype">size_t</span> sizeInBytes)<span class="keyword"> override </span>{                                    \</div>
 <div class="line">    (void)bar;                                                                                                         \</div>
 <div class="line">    (void)address;                                                                                                     \</div>
 <div class="line">    (void)sizeInBytes;</div>

@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('test_action_device_access_8cpp_source.
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="class_action_device_access.html">ActionDeviceAccess&lt;uint32_t&gt;</a> ada(<a class="code hl_function" href="class_d_action_1_1_register_accessor.html#a4d830fe30bcb900eeb46bd5b1b3b45f5">DAction::RegisterAccessor::create</a>(d, <span class="stringliteral">&quot;WORD_FIRMWARE&quot;</span>, <span class="stringliteral">&quot;BOARD&quot;</span>));</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  uint32_t val;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  uint32_t val{0};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  d.write(<span class="stringliteral">&quot;BOARD/WORD_FIRMWARE&quot;</span>, 10);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  ada.<a class="code hl_function" href="class_action_base.html#abd3d715debbc15f3677a8b20b2e04e5c">onGet</a>(val);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  BOOST_CHECK(val == 10);</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('test_action_device_access_8cpp_source.
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_class" href="class_action_device_access.html">ActionDeviceAccess&lt;float&gt;</a> ada(<a class="code hl_function" href="class_d_action_1_1_register_accessor.html#a4d830fe30bcb900eeb46bd5b1b3b45f5">DAction::RegisterAccessor::create</a>(d, <span class="stringliteral">&quot;WORD_USER&quot;</span>, <span class="stringliteral">&quot;BOARD&quot;</span>));</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">float</span> val;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">float</span> val{0};</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  d.write(<span class="stringliteral">&quot;BOARD/WORD_USER&quot;</span>, 4.5);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  ada.<a class="code hl_function" href="class_action_base.html#abd3d715debbc15f3677a8b20b2e04e5c">onGet</a>(val);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="comment">// This is showing unexpected behaviour. The value is a fixed point in the device</span></div>
