@@ -50,6 +50,7 @@ var annotated_dup =
     [ "TestableXPortGpioClient", "class_testable_x_port_gpio_client.html", "class_testable_x_port_gpio_client" ],
     [ "TestableXPortGpioDummyServer", "class_testable_x_port_gpio_dummy_server.html", "class_testable_x_port_gpio_dummy_server" ],
     [ "TestCaseFixture", "struct_test_case_fixture.html", "struct_test_case_fixture" ],
+    [ "TestLocker", "class_test_locker.html", "class_test_locker" ],
     [ "TriColorLed", "class_tri_color_led.html", "class_tri_color_led" ],
     [ "XPortGpioClientTest", "class_x_port_gpio_client_test.html", "class_x_port_gpio_client_test" ],
     [ "XPortGpioClientTestSuite", "class_x_port_gpio_client_test_suite.html", "class_x_port_gpio_client_test_suite" ],

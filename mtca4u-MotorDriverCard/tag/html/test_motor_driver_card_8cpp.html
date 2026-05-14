@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.01</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.02</span>
    </div>
   </td>
  </tr>
@@ -94,11 +94,12 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_8cpp.html','');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">testMotorDriverCard.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &quot;ChimeraTK/BackendFactory.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_d_f_m_c___m_d22_dummy_8h_source.html">DFMC_MD22Dummy.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_card_impl_8h_source.html">impl/MotorDriverCardImpl.h</a>&quot;</code><br />
@@ -109,7 +110,6 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_8cpp.html','');
 <code>#include &quot;<a class="el" href="test_word_from_p_c_ie_address_8h_source.html">testWordFromPCIeAddress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test_word_from_spi_address_8h_source.html">testWordFromSpiAddress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_d_f_m_c___m_d22_constants_8h_source.html">DFMC_MD22Constants.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_motor_driver_card_config_defaults_8h_source.html">MotorDriverCardConfigDefaults.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test_config_constants_8h_source.html">testConfigConstants.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testMotorDriverCard.cpp:</div>
@@ -125,8 +125,6 @@ $(document).ready(function(){initNavTree('test_motor_driver_card_8cpp.html','');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_driver_card_test.html">mtca4u::MotorDriverCardTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_driver_card_test_suite.html">mtca4u::MotorDriverCardTestSuite</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -135,92 +133,97 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1c3fc33281a9750dbf957ec06350d07f" id="r_a1c3fc33281a9750dbf957ec06350d07f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_driver_card_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f">DECLARE_GET_SET_TEST</a>(NAME)</td></tr>
-<tr class="separator:a1c3fc33281a9750dbf957ec06350d07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d684b7f97805092bde964f02f0e709" id="r_a58d684b7f97805092bde964f02f0e709"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_driver_card_8cpp.html#a58d684b7f97805092bde964f02f0e709">ADD_GET_SET_TEST</a>(NAME)</td></tr>
-<tr class="separator:a58d684b7f97805092bde964f02f0e709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_driver_card_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="separator:a139f00d2466d591f60b8d6a73c8273f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2a3852db8bb19ab6909bac01859985" id="r_a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_driver_card_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;MotorControlerTest</td></tr>
+<tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a81c147de09701e9aa28ee4e4b7b5b7a1" id="r_a81c147de09701e9aa28ee4e4b7b5b7a1"><td class="memItemLeft" align="right" valign="top">test_suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_driver_card_8cpp.html#a81c147de09701e9aa28ee4e4b7b5b7a1">init_unit_test_suite</a> (int, char *[])</td></tr>
-<tr class="separator:a81c147de09701e9aa28ee4e4b7b5b7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c21d2d6160786183e9f98d18fe921c" id="r_a15c21d2d6160786183e9f98d18fe921c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a15c21d2d6160786183e9f98d18fe921c">mtca4u::asciiToInt</a> (std::string text)</td></tr>
+<tr class="separator:a15c21d2d6160786183e9f98d18fe921c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a89fdbcfb349cc3861d1e841bf8a4b" id="r_a06a89fdbcfb349cc3861d1e841bf8a4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a06a89fdbcfb349cc3861d1e841bf8a4b">mtca4u::testConfiguration</a> (<a class="el" href="structmtca4u_1_1_motor_driver_card_config.html">MotorDriverCardConfig</a> const &amp;motorDriverCardConfig)</td></tr>
+<tr class="separator:a06a89fdbcfb349cc3861d1e841bf8a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a89a58be7932d3bb9536fa67ca18800" id="r_a2a89a58be7932d3bb9536fa67ca18800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a2a89a58be7932d3bb9536fa67ca18800">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestConstuctor)</td></tr>
+<tr class="separator:a2a89a58be7932d3bb9536fa67ca18800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca73920e4ac3509e2902c7565384932" id="r_a7ca73920e4ac3509e2902c7565384932"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a7ca73920e4ac3509e2902c7565384932">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetControlerChipVersion)</td></tr>
+<tr class="separator:a7ca73920e4ac3509e2902c7565384932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a3c9dde23209e4d1561b014221907c" id="r_ab5a3c9dde23209e4d1561b014221907c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#ab5a3c9dde23209e4d1561b014221907c">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetReferenceSwitchData)</td></tr>
+<tr class="separator:ab5a3c9dde23209e4d1561b014221907c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508ae32f23b604be2c1443892493552c" id="r_a508ae32f23b604be2c1443892493552c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a508ae32f23b604be2c1443892493552c">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetStatusWord)</td></tr>
+<tr class="separator:a508ae32f23b604be2c1443892493552c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c018384ce321608dce66664f53ad24" id="r_a78c018384ce321608dce66664f53ad24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a78c018384ce321608dce66664f53ad24">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetDatagramLowWord)</td></tr>
+<tr class="separator:a78c018384ce321608dce66664f53ad24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2525adf65120caf671d535eb0f8854" id="r_aec2525adf65120caf671d535eb0f8854"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aec2525adf65120caf671d535eb0f8854">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetDatagramLowWord)</td></tr>
+<tr class="separator:aec2525adf65120caf671d535eb0f8854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2835abacf8d385b02647dc820d7d888d" id="r_a2835abacf8d385b02647dc820d7d888d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a2835abacf8d385b02647dc820d7d888d">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetDatagramHighWord)</td></tr>
+<tr class="separator:a2835abacf8d385b02647dc820d7d888d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebe242e50136587c5ea0dd054fc7400" id="r_aaebe242e50136587c5ea0dd054fc7400"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aaebe242e50136587c5ea0dd054fc7400">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetDatagramHighWord)</td></tr>
+<tr class="separator:aaebe242e50136587c5ea0dd054fc7400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2d887cb06254dc3cff18f82b45f451" id="r_a8e2d887cb06254dc3cff18f82b45f451"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a8e2d887cb06254dc3cff18f82b45f451">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetCoverPositionAndLength)</td></tr>
+<tr class="separator:a8e2d887cb06254dc3cff18f82b45f451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7aeaf5576b09b932427ab1b3e38f4e" id="r_aab7aeaf5576b09b932427ab1b3e38f4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aab7aeaf5576b09b932427ab1b3e38f4e">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetCoverPositionAndLength)</td></tr>
+<tr class="separator:aab7aeaf5576b09b932427ab1b3e38f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97294aea3076dac41da40cc70a78646" id="r_ad97294aea3076dac41da40cc70a78646"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#ad97294aea3076dac41da40cc70a78646">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetCoverDatagram)</td></tr>
+<tr class="separator:ad97294aea3076dac41da40cc70a78646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac7e4cd66fda27408db9d1cf22a2f13" id="r_adac7e4cd66fda27408db9d1cf22a2f13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#adac7e4cd66fda27408db9d1cf22a2f13">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetCoverDatagram)</td></tr>
+<tr class="separator:adac7e4cd66fda27408db9d1cf22a2f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3e56d5faa35d6a46c23060eb1d7d18" id="r_acd3e56d5faa35d6a46c23060eb1d7d18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#acd3e56d5faa35d6a46c23060eb1d7d18">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetStepperMotorGlobalParameters)</td></tr>
+<tr class="separator:acd3e56d5faa35d6a46c23060eb1d7d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcac8e0d48ed16d4fe0def2c5b8e92b4" id="r_adcac8e0d48ed16d4fe0def2c5b8e92b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#adcac8e0d48ed16d4fe0def2c5b8e92b4">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetStepperMotorGlobalParameters)</td></tr>
+<tr class="separator:adcac8e0d48ed16d4fe0def2c5b8e92b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85dcd505e60210635f7a3e12da4d099" id="r_ad85dcd505e60210635f7a3e12da4d099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#ad85dcd505e60210635f7a3e12da4d099">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetInterfaceConfiguration)</td></tr>
+<tr class="separator:ad85dcd505e60210635f7a3e12da4d099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91998fab7ec389fe69adf79080be6325" id="r_a91998fab7ec389fe69adf79080be6325"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a91998fab7ec389fe69adf79080be6325">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetInterfaceConfiguration)</td></tr>
+<tr class="separator:a91998fab7ec389fe69adf79080be6325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf54fc8f8d09ae2e7c2f95cf9ab72932" id="r_acf54fc8f8d09ae2e7c2f95cf9ab72932"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#acf54fc8f8d09ae2e7c2f95cf9ab72932">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetPositionCompareWord)</td></tr>
+<tr class="separator:acf54fc8f8d09ae2e7c2f95cf9ab72932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa76ab75524b047b6a7453243103a167" id="r_afa76ab75524b047b6a7453243103a167"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#afa76ab75524b047b6a7453243103a167">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetPositionCompareWord)</td></tr>
+<tr class="separator:afa76ab75524b047b6a7453243103a167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565dca5a590261c3c3ad6f1089856c08" id="r_a565dca5a590261c3c3ad6f1089856c08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a565dca5a590261c3c3ad6f1089856c08">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetPositionCompareInterruptData)</td></tr>
+<tr class="separator:a565dca5a590261c3c3ad6f1089856c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251c1fecac1889fb054c8c8a26dd1ca9" id="r_a251c1fecac1889fb054c8c8a26dd1ca9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a251c1fecac1889fb054c8c8a26dd1ca9">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestSetPositionCompareInterruptData)</td></tr>
+<tr class="separator:a251c1fecac1889fb054c8c8a26dd1ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512efb6016213b78aba2544dae577aac" id="r_a512efb6016213b78aba2544dae577aac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a512efb6016213b78aba2544dae577aac">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestPowerDown)</td></tr>
+<tr class="separator:a512efb6016213b78aba2544dae577aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9c70f8878fb661ec083f20686791be" id="r_a7e9c70f8878fb661ec083f20686791be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a7e9c70f8878fb661ec083f20686791be">mtca4u::BOOST_AUTO_TEST_CASE</a> (TestGetMotorControler)</td></tr>
+<tr class="separator:a7e9c70f8878fb661ec083f20686791be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6b77313d07969d8355b24d5cf56de0f3" id="r_a6b77313d07969d8355b24d5cf56de0f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_motor_driver_card_test.html">MotorDriverCardTest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a6b77313d07969d8355b24d5cf56de0f3">mtca4u::gTest</a></td></tr>
+<tr class="separator:a6b77313d07969d8355b24d5cf56de0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a58d684b7f97805092bde964f02f0e709" name="a58d684b7f97805092bde964f02f0e709"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58d684b7f97805092bde964f02f0e709">&#9670;&#160;</a></span>ADD_GET_SET_TEST</h2>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADD_GET_SET_TEST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME</td><td>)</td>
-          <td></td>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  test_case* set##NAME##TestCase = BOOST_CLASS_TEST_CASE(&amp;MotorDriverCardTest::testSet##NAME, motorDriverCardTest);    \</div>
-<div class="line">  test_case* get##NAME##TestCase = BOOST_CLASS_TEST_CASE(&amp;MotorDriverCardTest::testGet##NAME, motorDriverCardTest);    \</div>
-<div class="line">  set##NAME##TestCase-&gt;depends_on(get##NAME##TestCase);                                                                \</div>
-<div class="line">  add(get##NAME##TestCase);                                                                                            \</div>
-<div class="line">  add(set##NAME##TestCase)</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_driver_card_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_motor_driver_card_8cpp_source.html">testMotorDriverCard.cpp</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="test_motor_driver_card_8cpp_source.html#l00001">1</a> of file <a class="el" href="test_motor_driver_card_8cpp_source.html">testMotorDriverCard.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1c3fc33281a9750dbf957ec06350d07f" name="a1c3fc33281a9750dbf957ec06350d07f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3fc33281a9750dbf957ec06350d07f">&#9670;&#160;</a></span>DECLARE_GET_SET_TEST</h2>
+<a id="a6b2a3852db8bb19ab6909bac01859985" name="a6b2a3852db8bb19ab6909bac01859985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2a3852db8bb19ab6909bac01859985">&#9670;&#160;</a></span>BOOST_TEST_MODULE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DECLARE_GET_SET_TEST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> testGet##NAME();                                                                                                \</div>
-<div class="line">  <span class="keywordtype">void</span> testSet##NAME()</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_driver_card_8cpp_source.html#l00023">23</a> of file <a class="el" href="test_motor_driver_card_8cpp_source.html">testMotorDriverCard.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a81c147de09701e9aa28ee4e4b7b5b7a1" name="a81c147de09701e9aa28ee4e4b7b5b7a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81c147de09701e9aa28ee4e4b7b5b7a1">&#9670;&#160;</a></span>init_unit_test_suite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">test_suite * init_unit_test_suite </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname">[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define BOOST_TEST_MODULE&#160;&#160;&#160;MotorControlerTest</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_motor_driver_card_8cpp_source.html#l00370">370</a> of file <a class="el" href="test_motor_driver_card_8cpp_source.html">testMotorDriverCard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_driver_card_8cpp_source.html#l00002">2</a> of file <a class="el" href="test_motor_driver_card_8cpp_source.html">testMotorDriverCard.cpp</a>.</p>
 
 </div>
 </div>

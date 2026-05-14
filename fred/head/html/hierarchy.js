@@ -61,6 +61,7 @@ var hierarchy =
       [ "test_kmp.TestKMP", "classtest__kmp_1_1_test_k_m_p.html", null ]
     ] ],
     [ "TestCaseFixture", "struct_test_case_fixture.html", null ],
+    [ "TestLocker", "class_test_locker.html", null ],
     [ "fred::VersionInfo", "structfred_1_1_version_info.html", null ],
     [ "xport_gpio.XPortGpio", "classxport__gpio_1_1_x_port_gpio.html", null ],
     [ "fred::XPortGpioClient", "classfred_1_1_x_port_gpio_client.html", [

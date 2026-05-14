@@ -1,5 +1,6 @@
 var test_motor_driver_card_factory_8cpp =
 [
+    [ "BOOST_TEST_DYN_LINK", "test_motor_driver_card_factory_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_motor_driver_card_factory_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_motor_driver_card_factory_8cpp.html#a74ae9ec5b84e177131158ac67150a82f", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_motor_driver_card_factory_8cpp.html#a7b7701a4eb6a242c38ae9e5a5792020f", null ],

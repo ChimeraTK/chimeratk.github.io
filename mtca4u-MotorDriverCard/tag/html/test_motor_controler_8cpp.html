@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.01</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.15.02</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('test_motor_controler_8cpp.html',''); i
   <div class="headertitle"><div class="title">testMotorControler.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_d_f_m_c___m_d22_constants_8h_source.html">DFMC_MD22Constants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_d_f_m_c___m_d22_dummy_8h_source.html">DFMC_MD22Dummy.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_controler_impl_8h_source.html">impl/MotorControlerImpl.h</a>&quot;</code><br />
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('test_motor_controler_8cpp.html',''); i
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_test.html">mtca4u::MotorControlerTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_test_suite.html">mtca4u::MotorControlerTestSuite</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">mtca4u::MotorControlerTestFixture&lt; motorId &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -142,10 +142,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="separator:a139f00d2466d591f60b8d6a73c8273f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2a3852db8bb19ab6909bac01859985" id="r_a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;MotorControlerTest</td></tr>
+<tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3fc33281a9750dbf957ec06350d07f" id="r_a1c3fc33281a9750dbf957ec06350d07f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a1c3fc33281a9750dbf957ec06350d07f">DECLARE_GET_SET_TEST</a>(NAME)</td></tr>
 <tr class="separator:a1c3fc33281a9750dbf957ec06350d07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d684b7f97805092bde964f02f0e709" id="r_a58d684b7f97805092bde964f02f0e709"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a58d684b7f97805092bde964f02f0e709">ADD_GET_SET_TEST</a>(NAME)</td></tr>
-<tr class="separator:a58d684b7f97805092bde964f02f0e709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95220d2ccd4b431915cc6caea19348d9" id="r_a95220d2ccd4b431915cc6caea19348d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a95220d2ccd4b431915cc6caea19348d9">ADD_TEST</a>(NAME, ...)</td></tr>
+<tr class="separator:a95220d2ccd4b431915cc6caea19348d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab64048425b9579bc55e0c2e3a10d1a3" id="r_aab64048425b9579bc55e0c2e3a10d1a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#aab64048425b9579bc55e0c2e3a10d1a3">ADD_GET_SET_TEST</a>(NAME, ...)</td></tr>
+<tr class="separator:aab64048425b9579bc55e0c2e3a10d1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e49cd94ee8b8b5790f18a724745a052" id="r_a2e49cd94ee8b8b5790f18a724745a052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a2e49cd94ee8b8b5790f18a724745a052">DEFINE_GET_SET_TEST</a>(NAME,  IDX,  PATTERN)</td></tr>
 <tr class="separator:a2e49cd94ee8b8b5790f18a724745a052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720a6556a92cfd8a9642293c29904bbb" id="r_a720a6556a92cfd8a9642293c29904bbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a720a6556a92cfd8a9642293c29904bbb">DEFINE_SIGNED_GET_SET_TEST</a>(NAME,  IDX,  NBITS)</td></tr>
@@ -157,18 +163,90 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1c06a5b3220efbdffb6fb8e2c75b49e3" id="r_a1c06a5b3220efbdffb6fb8e2c75b49e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a1c06a5b3220efbdffb6fb8e2c75b49e3">mtca4u::ADD_GET_SET_TEST</a> (ActualPosition)</td></tr>
+<tr class="separator:a1c06a5b3220efbdffb6fb8e2c75b49e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d7f9b6c6ac46628b3afcbc9ea1eebf" id="r_a91d7f9b6c6ac46628b3afcbc9ea1eebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a91d7f9b6c6ac46628b3afcbc9ea1eebf">mtca4u::ADD_GET_SET_TEST</a> (ActualVelocity)</td></tr>
+<tr class="separator:a91d7f9b6c6ac46628b3afcbc9ea1eebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16a3bca98f905a9999ac8e2435397b5" id="r_aa16a3bca98f905a9999ac8e2435397b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aa16a3bca98f905a9999ac8e2435397b5">mtca4u::ADD_GET_SET_TEST</a> (ActualAcceleration)</td></tr>
+<tr class="separator:aa16a3bca98f905a9999ac8e2435397b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadfe4db72a9590f45a2c9f2179d5113" id="r_adadfe4db72a9590f45a2c9f2179d5113"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#adadfe4db72a9590f45a2c9f2179d5113">mtca4u::ADD_GET_SET_TEST</a> (MicroStepCount)</td></tr>
+<tr class="separator:adadfe4db72a9590f45a2c9f2179d5113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcf5526913157048e2f7d9b2b36375b" id="r_a6fcf5526913157048e2f7d9b2b36375b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a6fcf5526913157048e2f7d9b2b36375b">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetStallGuardValue0, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 0 &gt;)</td></tr>
+<tr class="separator:a6fcf5526913157048e2f7d9b2b36375b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc5c56d24a3cbe365598819e3084e2e" id="r_a9fc5c56d24a3cbe365598819e3084e2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a9fc5c56d24a3cbe365598819e3084e2e">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetStallGuardValue1, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 1 &gt;)</td></tr>
+<tr class="separator:a9fc5c56d24a3cbe365598819e3084e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3735cdf0c17a48997ea00a1b7f7d90" id="r_a9e3735cdf0c17a48997ea00a1b7f7d90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a9e3735cdf0c17a48997ea00a1b7f7d90">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetCoolStepValue0, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 0 &gt;)</td></tr>
+<tr class="separator:a9e3735cdf0c17a48997ea00a1b7f7d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab16f3c37fe28a5d7e490a495ca5f91f" id="r_aab16f3c37fe28a5d7e490a495ca5f91f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aab16f3c37fe28a5d7e490a495ca5f91f">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetCoolStepValue1, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 1 &gt;)</td></tr>
+<tr class="separator:aab16f3c37fe28a5d7e490a495ca5f91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93dfbd25bb6f4439cba6b29bad42013c" id="r_a93dfbd25bb6f4439cba6b29bad42013c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a93dfbd25bb6f4439cba6b29bad42013c">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetDriverStatus0, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 0 &gt;)</td></tr>
+<tr class="separator:a93dfbd25bb6f4439cba6b29bad42013c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60b470c23586a00f59a8e8a7c289f52" id="r_ac60b470c23586a00f59a8e8a7c289f52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#ac60b470c23586a00f59a8e8a7c289f52">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetDriverStatus1, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 1 &gt;)</td></tr>
+<tr class="separator:ac60b470c23586a00f59a8e8a7c289f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34afe00a22570f08148d5e3c8e16a9d7" id="r_a34afe00a22570f08148d5e3c8e16a9d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a34afe00a22570f08148d5e3c8e16a9d7">mtca4u::ADD_TEST</a> (SetIsEnabled)</td></tr>
+<tr class="separator:a34afe00a22570f08148d5e3c8e16a9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe578c670306738e7c9fa1970ea8a793" id="r_afe578c670306738e7c9fa1970ea8a793"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#afe578c670306738e7c9fa1970ea8a793">mtca4u::ADD_GET_SET_TEST</a> (DecoderReadoutMode)</td></tr>
+<tr class="separator:afe578c670306738e7c9fa1970ea8a793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453c9ec4f4f8023e383e409911446735" id="r_a453c9ec4f4f8023e383e409911446735"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a453c9ec4f4f8023e383e409911446735">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetDecoderPosition0, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 0 &gt;)</td></tr>
+<tr class="separator:a453c9ec4f4f8023e383e409911446735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a0c81991ce8bfbd6b722874292540c" id="r_ad2a0c81991ce8bfbd6b722874292540c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#ad2a0c81991ce8bfbd6b722874292540c">mtca4u::BOOST_FIXTURE_TEST_CASE</a> (TestGetDecoderPosition1, <a class="el" href="classmtca4u_1_1_motor_controler_test_fixture.html">MotorControlerTestFixture</a>&lt; 1 &gt;)</td></tr>
+<tr class="separator:ad2a0c81991ce8bfbd6b722874292540c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2146241ff2272f5092351c9bc8c5a01b" id="r_a2146241ff2272f5092351c9bc8c5a01b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a2146241ff2272f5092351c9bc8c5a01b">mtca4u::ADD_GET_SET_TEST</a> (MinimumVelocity)</td></tr>
+<tr class="separator:a2146241ff2272f5092351c9bc8c5a01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2790b3f53d03eff6d6748006e95e24" id="r_aae2790b3f53d03eff6d6748006e95e24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aae2790b3f53d03eff6d6748006e95e24">mtca4u::ADD_GET_SET_TEST</a> (MaximumVelocity)</td></tr>
+<tr class="separator:aae2790b3f53d03eff6d6748006e95e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269591963530c6bbd713f75ea6e322fa" id="r_a269591963530c6bbd713f75ea6e322fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a269591963530c6bbd713f75ea6e322fa">mtca4u::ADD_GET_SET_TEST</a> (TargetVelocity)</td></tr>
+<tr class="separator:a269591963530c6bbd713f75ea6e322fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d0e77e0280e9f1b7994ae007ad1c6c" id="r_a34d0e77e0280e9f1b7994ae007ad1c6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a34d0e77e0280e9f1b7994ae007ad1c6c">mtca4u::ADD_GET_SET_TEST</a> (MaximumAcceleration)</td></tr>
+<tr class="separator:a34d0e77e0280e9f1b7994ae007ad1c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5740fa27c39dcf040b3aa63099f305f0" id="r_a5740fa27c39dcf040b3aa63099f305f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a5740fa27c39dcf040b3aa63099f305f0">mtca4u::ADD_GET_SET_TEST</a> (PositionTolerance)</td></tr>
+<tr class="separator:a5740fa27c39dcf040b3aa63099f305f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e613234a6db0c99a81bcf3fc0fdd37" id="r_a89e613234a6db0c99a81bcf3fc0fdd37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a89e613234a6db0c99a81bcf3fc0fdd37">mtca4u::ADD_GET_SET_TEST</a> (PositionLatched)</td></tr>
+<tr class="separator:a89e613234a6db0c99a81bcf3fc0fdd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db63c42b8f4960bc4d33efa8f976837" id="r_a8db63c42b8f4960bc4d33efa8f976837"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a8db63c42b8f4960bc4d33efa8f976837">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a>)</td></tr>
+<tr class="separator:a8db63c42b8f4960bc4d33efa8f976837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6883be2a7965f044e037eddc71ae05" id="r_a2e6883be2a7965f044e037eddc71ae05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a2e6883be2a7965f044e037eddc71ae05">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_proportionality_factor_data.html">ProportionalityFactorData</a>)</td></tr>
+<tr class="separator:a2e6883be2a7965f044e037eddc71ae05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9071c17d0a20f1c5ddf655d90fda137" id="r_aa9071c17d0a20f1c5ddf655d90fda137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#aa9071c17d0a20f1c5ddf655d90fda137">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_reference_config_and_ramp_mode_data.html">ReferenceConfigAndRampModeData</a>)</td></tr>
+<tr class="separator:aa9071c17d0a20f1c5ddf655d90fda137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed21bb789d7801add32715c7e6c66a0" id="r_a6ed21bb789d7801add32715c7e6c66a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a6ed21bb789d7801add32715c7e6c66a0">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_interrupt_data.html">InterruptData</a>)</td></tr>
+<tr class="separator:a6ed21bb789d7801add32715c7e6c66a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37624e01f06c71d2bb84c15991f5ad79" id="r_a37624e01f06c71d2bb84c15991f5ad79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a37624e01f06c71d2bb84c15991f5ad79">mtca4u::ADD_GET_SET_TEST</a> (TargetPosition)</td></tr>
+<tr class="separator:a37624e01f06c71d2bb84c15991f5ad79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c8d0b09c97e577f2d63f417e3632d5" id="r_af5c8d0b09c97e577f2d63f417e3632d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#af5c8d0b09c97e577f2d63f417e3632d5">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_dividers_and_micro_step_resolution_data.html">DividersAndMicroStepResolutionData</a>)</td></tr>
+<tr class="separator:af5c8d0b09c97e577f2d63f417e3632d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83a36ff5480858e21ddf1e20f03fc91" id="r_ae83a36ff5480858e21ddf1e20f03fc91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#ae83a36ff5480858e21ddf1e20f03fc91">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a>)</td></tr>
+<tr class="separator:ae83a36ff5480858e21ddf1e20f03fc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb6f47de5a6f0967e2ec223e1b19729" id="r_a9eb6f47de5a6f0967e2ec223e1b19729"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a9eb6f47de5a6f0967e2ec223e1b19729">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a>)</td></tr>
+<tr class="separator:a9eb6f47de5a6f0967e2ec223e1b19729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3f68a34a30a1197e93aad30aa4ffe6" id="r_a6b3f68a34a30a1197e93aad30aa4ffe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a6b3f68a34a30a1197e93aad30aa4ffe6">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a>)</td></tr>
+<tr class="separator:a6b3f68a34a30a1197e93aad30aa4ffe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500f3e76ee46ba794390104c9cbeb9c2" id="r_a500f3e76ee46ba794390104c9cbeb9c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a500f3e76ee46ba794390104c9cbeb9c2">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a>)</td></tr>
+<tr class="separator:a500f3e76ee46ba794390104c9cbeb9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33cd8c4a04625ca189a16295b6bc775a" id="r_a33cd8c4a04625ca189a16295b6bc775a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a33cd8c4a04625ca189a16295b6bc775a">mtca4u::ADD_GET_SET_TEST</a> (<a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a>)</td></tr>
+<tr class="separator:a33cd8c4a04625ca189a16295b6bc775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4571f7404db7ba083106125b8caa8ca0" id="r_a4571f7404db7ba083106125b8caa8ca0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a4571f7404db7ba083106125b8caa8ca0">mtca4u::ADD_TEST</a> (GetReferenceSwitchData, _motorDriverCard)</td></tr>
+<tr class="separator:a4571f7404db7ba083106125b8caa8ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17af007a786431b23a8e6b0953e0c27c" id="r_a17af007a786431b23a8e6b0953e0c27c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a17af007a786431b23a8e6b0953e0c27c">mtca4u::ADD_TEST</a> (SetReferenceSwitchEnabled)</td></tr>
+<tr class="separator:a17af007a786431b23a8e6b0953e0c27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66daae93891952e686e5c2442299f9bc" id="r_a66daae93891952e686e5c2442299f9bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a66daae93891952e686e5c2442299f9bc">mtca4u::ADD_TEST</a> (TargetPositionReached)</td></tr>
+<tr class="separator:a66daae93891952e686e5c2442299f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962237bc4c7784cc30763d43c8f2c158" id="r_a962237bc4c7784cc30763d43c8f2c158"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a962237bc4c7784cc30763d43c8f2c158">mtca4u::ADD_TEST</a> (GetReferenceSwitchBit)</td></tr>
+<tr class="separator:a962237bc4c7784cc30763d43c8f2c158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4928b77bf28472d53bd58097cce4a6f7" id="r_a4928b77bf28472d53bd58097cce4a6f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a4928b77bf28472d53bd58097cce4a6f7">mtca4u::ADD_TEST</a> (ThreadSaftey)</td></tr>
+<tr class="separator:a4928b77bf28472d53bd58097cce4a6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e24d5c224a35f94234757b6e5a9331" id="r_a22e24d5c224a35f94234757b6e5a9331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a22e24d5c224a35f94234757b6e5a9331">mtca4u::ADD_TEST</a> (SetEndSwitchPowerEnabled)</td></tr>
+<tr class="separator:a22e24d5c224a35f94234757b6e5a9331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87fa724e275449ba3dcdc560bab73bc3" id="r_a87fa724e275449ba3dcdc560bab73bc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a87fa724e275449ba3dcdc560bab73bc3">mtca4u::DEFINE_GET_SET_DRIVER_SPI_DATA</a> (<a class="el" href="classmtca4u_1_1_driver_control_data.html">DriverControlData</a>, <a class="el" href="namespacemtca4u_1_1tmc260.html#a20c7981da23f87952b7cd6d7c0be1401">mtca4u::tmc260::ADDRESS_DRIVER_CONTROL</a>, <a class="el" href="namespacemtca4u.html#a0662f0b2565ec8de58ccf5f0208f525a">DRIVER_CONTROL_DEFAULT</a>, 0x2AAAA) DEFINE_GET_SET_DRIVER_SPI_DATA(<a class="el" href="classmtca4u_1_1_chopper_control_data.html">ChopperControlData</a></td></tr>
 <tr class="separator:a87fa724e275449ba3dcdc560bab73bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9056b84b0e5991b88a39bf214946a779" id="r_a9056b84b0e5991b88a39bf214946a779"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a9056b84b0e5991b88a39bf214946a779">mtca4u::DEFINE_GET_SET_DRIVER_SPI_DATA</a> (<a class="el" href="classmtca4u_1_1_cool_step_control_data.html">CoolStepControlData</a>, <a class="el" href="namespacemtca4u_1_1tmc260.html#af7e003386863c33f332f91f04604db72">mtca4u::tmc260::ADDRESS_COOL_STEP_CONFIG</a>, <a class="el" href="namespacemtca4u.html#a778debba63224ad0b4cc9ee2529d6632">COOL_STEP_CONTROL_DEFAULT</a>, 0x1AAAA) DEFINE_GET_SET_DRIVER_SPI_DATA(<a class="el" href="classmtca4u_1_1_stall_guard_control_data.html">StallGuardControlData</a></td></tr>
 <tr class="separator:a9056b84b0e5991b88a39bf214946a779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64083d647e02376ca3b66d000299f4a2" id="r_a64083d647e02376ca3b66d000299f4a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html#a64083d647e02376ca3b66d000299f4a2">mtca4u::DEFINE_GET_SET_DRIVER_SPI_DATA</a> (<a class="el" href="classmtca4u_1_1_driver_config_data.html">DriverConfigData</a>, <a class="el" href="namespacemtca4u_1_1tmc260.html#a7854347cac9b7b882ff5c5a63d41048f">mtca4u::tmc260::ADDRESS_DRIVER_CONFIG</a>, <a class="el" href="namespacemtca4u.html#ab7a4dbca790890a5f9553876252a3f79">DRIVER_CONFIG_DEFAULT</a>, 0x1AAAA) void <a class="el" href="classmtca4u_1_1_motor_controler_test.html">MotorControlerTest</a></td></tr>
 <tr class="separator:a64083d647e02376ca3b66d000299f4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c147de09701e9aa28ee4e4b7b5b7a1" id="r_a81c147de09701e9aa28ee4e4b7b5b7a1"><td class="memItemLeft" align="right" valign="top">test_suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_motor_controler_8cpp.html#a81c147de09701e9aa28ee4e4b7b5b7a1">init_unit_test_suite</a> (int, char *[])</td></tr>
-<tr class="separator:a81c147de09701e9aa28ee4e4b7b5b7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a58d684b7f97805092bde964f02f0e709" name="a58d684b7f97805092bde964f02f0e709"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58d684b7f97805092bde964f02f0e709">&#9670;&#160;</a></span>ADD_GET_SET_TEST</h2>
+<a id="aab64048425b9579bc55e0c2e3a10d1a3" name="aab64048425b9579bc55e0c2e3a10d1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab64048425b9579bc55e0c2e3a10d1a3">&#9670;&#160;</a></span>ADD_GET_SET_TEST</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,18 +255,104 @@ Functions</h2></td></tr>
           <td class="memname">#define ADD_GET_SET_TEST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME</td><td>)</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  test_case* set##NAME##TestCase = BOOST_CLASS_TEST_CASE(&amp;MotorControlerTest::testSet##NAME, motorControlerTest);      \</div>
-<div class="line">  test_case* get##NAME##TestCase = BOOST_CLASS_TEST_CASE(&amp;MotorControlerTest::testGet##NAME, motorControlerTest);      \</div>
-<div class="line">  set##NAME##TestCase-&gt;depends_on(get##NAME##TestCase);                                                                \</div>
-<div class="line">  add(get##NAME##TestCase);                                                                                            \</div>
-<div class="line">  add(set##NAME##TestCase)</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="test_motor_controler_dummy_8cpp.html#a44d8f65c41be372f722bb1ea2f37d84d">BOOST_FIXTURE_TEST_CASE</a>(TestSet##NAME##0, MotorControlerTestFixture&lt;0&gt;) {                                            \</div>
+<div class="line">    _motorControlerTest-&gt;testSet##NAME(__VA_ARGS__);                                                                   \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  BOOST_FIXTURE_TEST_CASE(TestSet##NAME##1, MotorControlerTestFixture&lt;1&gt;) {                                            \</div>
+<div class="line">    _motorControlerTest-&gt;testSet##NAME(__VA_ARGS__);                                                                   \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  BOOST_FIXTURE_TEST_CASE(TestGet##NAME##0, MotorControlerTestFixture&lt;0&gt;) {                                            \</div>
+<div class="line">    _motorControlerTest-&gt;testGet##NAME(__VA_ARGS__);                                                                   \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  BOOST_FIXTURE_TEST_CASE(TestGet##NAME##1, MotorControlerTestFixture&lt;1&gt;) {                                            \</div>
+<div class="line">    _motorControlerTest-&gt;testGet##NAME(__VA_ARGS__);                                                                   \</div>
+<div class="line">  }</div>
+<div class="ttc" id="atest_motor_controler_dummy_8cpp_html_a44d8f65c41be372f722bb1ea2f37d84d"><div class="ttname"><a href="test_motor_controler_dummy_8cpp.html#a44d8f65c41be372f722bb1ea2f37d84d">BOOST_FIXTURE_TEST_CASE</a></div><div class="ttdeci">BOOST_FIXTURE_TEST_CASE(TestGetId, MotorControlerDummyTest)</div><div class="ttdef"><b>Definition</b> <a href="test_motor_controler_dummy_8cpp_source.html#l00030">testMotorControlerDummy.cpp:30</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00041">41</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95220d2ccd4b431915cc6caea19348d9" name="a95220d2ccd4b431915cc6caea19348d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95220d2ccd4b431915cc6caea19348d9">&#9670;&#160;</a></span>ADD_TEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADD_TEST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="test_motor_controler_dummy_8cpp.html#a44d8f65c41be372f722bb1ea2f37d84d">BOOST_FIXTURE_TEST_CASE</a>(Test##NAME##0, MotorControlerTestFixture&lt;0&gt;) {                                               \</div>
+<div class="line">    _motorControlerTest-&gt;test##NAME(__VA_ARGS__);                                                                      \</div>
+<div class="line">  }                                                                                                                    \</div>
+<div class="line">  BOOST_FIXTURE_TEST_CASE(Test##NAME##1, MotorControlerTestFixture&lt;1&gt;) {                                               \</div>
+<div class="line">    _motorControlerTest-&gt;test##NAME(__VA_ARGS__);                                                                      \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00033">33</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00001">1</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b2a3852db8bb19ab6909bac01859985" name="a6b2a3852db8bb19ab6909bac01859985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2a3852db8bb19ab6909bac01859985">&#9670;&#160;</a></span>BOOST_TEST_MODULE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MODULE&#160;&#160;&#160;MotorControlerTest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00002">2</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
 
 </div>
 </div>
@@ -210,7 +374,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> testGet##NAME();                                                                                                \</div>
 <div class="line">  <span class="keywordtype">void</span> testSet##NAME()</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
 
 </div>
 </div>
@@ -259,7 +423,7 @@ Functions</h2></td></tr>
 <div class="line">        &amp;MotorControlerImpl::set##NAME, &amp;MotorControlerImpl::get##NAME, SPI_ADDRESS, TEST_PATTERN);                    \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00075">75</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00092">92</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +469,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_a1c54be883a5e26939dde72a617187bf9"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#a1c54be883a5e26939dde72a617187bf9">mtca4u::tmc429::SPI_DATA_MASK</a></div><div class="ttdeci">uint32_t const SPI_DATA_MASK</div><div class="ttdef"><b>Definition</b> <a href="_t_m_c429_dummy_constants_8h_source.html#l00010">TMC429DummyConstants.h:10</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_a5e9302444d05bf23df56e22489d0590d"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#a5e9302444d05bf23df56e22489d0590d">mtca4u::tmc429::testWordFromSpiAddress</a></div><div class="ttdeci">unsigned int testWordFromSpiAddress(unsigned int smda, unsigned int idx_jdx)</div><div class="ttdef"><b>Definition</b> <a href="test_word_from_spi_address_8h_source.html#l00006">testWordFromSpiAddress.h:6</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00038">38</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00055">55</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
 
 </div>
 </div>
@@ -346,8 +510,8 @@ Functions</h2></td></tr>
 <div class="line">    BOOST_CHECK(_motorControler-&gt;get##NAME() == converter.customToThirtyTwo(expectedValue));                           \</div>
 <div class="line">  }                                                                                                                    \</div>
 <div class="line">  <span class="keywordtype">void</span> MotorControlerTest::testSet##NAME() {                                                                           \</div>
-<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positiveMask = (1 &lt;&lt; (NBITS - 1)) - 1;                                                                \</div>
-<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> negativeBit = (1 &lt;&lt; (NBITS - 1));                                                                     \</div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positiveMask = (1U &lt;&lt; ((NBITS) - 1)) - 1;                                                             \</div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> negativeBit = (1U &lt;&lt; ((NBITS) - 1));                                                                  \</div>
 <div class="line">    _motorControler-&gt;set##NAME(0xAAAAAAAA &amp; positiveMask); <span class="comment">/* something positive */</span>                                    \</div>
 <div class="line">    BOOST_CHECK(_motorControler-&gt;get##NAME() == <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(0xAAAAAAAA &amp; positiveMask));                          \</div>
 <div class="line">    _motorControler-&gt;set##NAME((0x55555555 &amp; positiveMask) | negativeBit); <span class="comment">/* out of range positive with the           \</span></div>
@@ -362,7 +526,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="comment">                                                                                                 positive */</span>           \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00048">48</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00065">65</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
 
 </div>
 </div>
@@ -388,38 +552,7 @@ Functions</h2></td></tr>
 <div class="line">    testSetTypedData&lt;NAME&gt;(&amp;MotorControlerImpl::get##NAME, &amp;MotorControlerImpl::set##NAME);                            \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00067">67</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a81c147de09701e9aa28ee4e4b7b5b7a1" name="a81c147de09701e9aa28ee4e4b7b5b7a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81c147de09701e9aa28ee4e4b7b5b7a1">&#9670;&#160;</a></span>init_unit_test_suite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">test_suite * init_unit_test_suite </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname">[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00545">545</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_motor_controler_8cpp_source.html#l00084">84</a> of file <a class="el" href="test_motor_controler_8cpp_source.html">testMotorControler.cpp</a>.</p>
 
 </div>
 </div>

@@ -12,5 +12,6 @@ var searchData=
   ['_7eminimaltelnetconnection_9',['~MinimalTelnetConnection',['../class_minimal_telnet_connection.html#aab9731db3811f20a5b949daf6719ed38',1,'MinimalTelnetConnection']]],
   ['_7eminimaltelnetserver_10',['~MinimalTelnetServer',['../class_minimal_telnet_server.html#ac5ea50ccbc025266cba0e5671546bd5c',1,'MinimalTelnetServer']]],
   ['_7etestcasefixture_11',['~TestCaseFixture',['../struct_test_case_fixture.html#ae201bd022e9201ed6f4be32daa364928',1,'TestCaseFixture']]],
-  ['_7exportgpioclienttest_12',['~XPortGpioClientTest',['../class_x_port_gpio_client_test.html#a906ba91f7122d4295ceca635790452f2',1,'XPortGpioClientTest']]]
+  ['_7etestlocker_12',['~TestLocker',['../class_test_locker.html#a2350e86f1e896171ba56a812e7f7653d',1,'TestLocker']]],
+  ['_7exportgpioclienttest_13',['~XPortGpioClientTest',['../class_x_port_gpio_client_test.html#a906ba91f7122d4295ceca635790452f2',1,'XPortGpioClientTest']]]
 ];

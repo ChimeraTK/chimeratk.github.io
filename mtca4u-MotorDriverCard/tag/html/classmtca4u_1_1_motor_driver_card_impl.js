@@ -23,7 +23,7 @@ var classmtca4u_1_1_motor_driver_card_impl =
     [ "setPositionCompareWord", "classmtca4u_1_1_motor_driver_card_impl.html#aaa91364a85e5b41d3f5a81d4f842d2ef", null ],
     [ "setStepperMotorGlobalParameters", "classmtca4u_1_1_motor_driver_card_impl.html#a6540ca842f29483937474f03b9325310", null ],
     [ "MotorControlerTest", "classmtca4u_1_1_motor_driver_card_impl.html#ad10d38a8bdb4f28fa80ff2ab00b1640e", null ],
-    [ "MotorControlerTestSuite", "classmtca4u_1_1_motor_driver_card_impl.html#ab78fba5b48386af49e67ccf1876fc177", null ],
+    [ "MotorControlerTestFixture", "classmtca4u_1_1_motor_driver_card_impl.html#a9c134464aad49c472bd24a6e4a1a57a2", null ],
     [ "MotorDriverCardFactory", "classmtca4u_1_1_motor_driver_card_impl.html#a30ba9f4e57cef288f9ada7fdd1ada4bd", null ],
     [ "MotorDriverCardTest", "classmtca4u_1_1_motor_driver_card_impl.html#ad7659eb3e28ce407975f26ca55c4d00f", null ]
 ];

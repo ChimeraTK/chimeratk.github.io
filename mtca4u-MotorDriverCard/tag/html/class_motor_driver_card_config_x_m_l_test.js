@@ -1,11 +1,11 @@
 var class_motor_driver_card_config_x_m_l_test =
 [
     [ "MotorDriverCardConfigXMLTest", "class_motor_driver_card_config_x_m_l_test.html#a28d00b61f4b36c1634c0f0d378fbc3f6", null ],
-    [ "testInvalidOutput", "class_motor_driver_card_config_x_m_l_test.html#ae9bc401c210edf6b7ef5c7c2721b0b84", null ],
-    [ "testOldInvalidRegister", "class_motor_driver_card_config_x_m_l_test.html#a53b3985d208db685de08ab99084ee480", null ],
-    [ "testReadComplete", "class_motor_driver_card_config_x_m_l_test.html#ad6c3a54f8f3abbedacca784a86764753", null ],
-    [ "testReadFirstHalf", "class_motor_driver_card_config_x_m_l_test.html#a4aebf51072b68f3adc763cc26fcf8021", null ],
-    [ "testReadMinimal", "class_motor_driver_card_config_x_m_l_test.html#abf31d3625553fd4b8cca2018d087af92", null ],
-    [ "testReadSecondHalf", "class_motor_driver_card_config_x_m_l_test.html#ae3076431cddc1c46f780c521498e1d31", null ],
-    [ "testWrite", "class_motor_driver_card_config_x_m_l_test.html#a1a66d34b02c86e8fb7cbf5c3b43b4ec9", null ]
+    [ "checkControlerConfig", "class_motor_driver_card_config_x_m_l_test.html#ac39ba2523af2eb0daa2dfe492f7c1dca", null ],
+    [ "_completeCardConfig", "class_motor_driver_card_config_x_m_l_test.html#a9bbc2d2ad1822b7822a9ca72b33164dc", null ],
+    [ "_defaultCardConfig", "class_motor_driver_card_config_x_m_l_test.html#a772f52fa15a6d7f7722571875661fea5", null ],
+    [ "_defaultControlerConfig", "class_motor_driver_card_config_x_m_l_test.html#ac813eca619717de01f4e79bbbf78df5d", null ],
+    [ "_firstHalfCardConfig", "class_motor_driver_card_config_x_m_l_test.html#a68ba89b1d2f876c16b314263690ffe95", null ],
+    [ "_plusOneControlerConfig", "class_motor_driver_card_config_x_m_l_test.html#a10ad725a709e93d64bf986d3668418e9", null ],
+    [ "_secondHalfCardConfig", "class_motor_driver_card_config_x_m_l_test.html#aa4085618369d505a91a031455d5e82ce", null ]
 ];

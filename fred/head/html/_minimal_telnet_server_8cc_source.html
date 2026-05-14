@@ -107,10 +107,14 @@ $(document).ready(function(){initNavTree('_minimal_telnet_server_8cc_source.html
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>boost::asio::ip::tcp;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//Ubuntu16 compatibility hack: the boost placeholders are not in a namespace yet</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceboost.html">boost</a>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">namespace </span>placeholders{</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespaceboost.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceboost.html">boost</a>{</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceboost_1_1placeholders.html">   11</a></span>  <span class="keyword">namespace </span>placeholders{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  }</div>
+</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceboost_1_1placeholders.html">boost::placeholders</a>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
@@ -303,8 +307,8 @@ $(document).ready(function(){initNavTree('_minimal_telnet_server_8cc_source.html
 <div class="ttc" id="aclass_minimal_telnet_server_html_ac5ea50ccbc025266cba0e5671546bd5c"><div class="ttname"><a href="class_minimal_telnet_server.html#ac5ea50ccbc025266cba0e5671546bd5c">MinimalTelnetServer::~MinimalTelnetServer</a></div><div class="ttdeci">~MinimalTelnetServer()</div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_server_8cc_source.html#l00022">MinimalTelnetServer.cc:22</a></div></div>
 <div class="ttc" id="aclass_minimal_telnet_server_html_ae05e8e2a663ddd589cea33e97735ff8f"><div class="ttname"><a href="class_minimal_telnet_server.html#ae05e8e2a663ddd589cea33e97735ff8f">MinimalTelnetServer::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_server_8cc_source.html#l00181">MinimalTelnetServer.cc:181</a></div></div>
 <div class="ttc" id="aclass_minimal_telnet_server_html_afd5a7d9a9538462eff9a72462abd9795"><div class="ttname"><a href="class_minimal_telnet_server.html#afd5a7d9a9538462eff9a72462abd9795">MinimalTelnetServer::delayNMoreWrites</a></div><div class="ttdeci">void delayNMoreWrites(unsigned int nMoreWrites)</div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_server_8cc_source.html#l00177">MinimalTelnetServer.cc:177</a></div></div>
-<div class="ttc" id="anamespaceboost_1_1placeholders_html"><div class="ttname"><a href="namespaceboost_1_1placeholders.html">boost::placeholders</a></div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_connection_8cc_source.html#l00010">MinimalTelnetConnection.cc:10</a></div></div>
-<div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_connection_8cc_source.html#l00009">MinimalTelnetConnection.cc:9</a></div></div>
+<div class="ttc" id="anamespaceboost_1_1placeholders_html"><div class="ttname"><a href="namespaceboost_1_1placeholders.html">boost::placeholders</a></div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_server_8cc_source.html#l00011">MinimalTelnetServer.cc:11</a></div></div>
+<div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition</b> <a href="_minimal_telnet_server_8cc_source.html#l00010">MinimalTelnetServer.cc:10</a></div></div>
 <div class="ttc" id="anamespacetelnet_html"><div class="ttname"><a href="namespacetelnet.html">telnet</a></div><div class="ttdef"><b>Definition</b> <a href="telnet_constants_8h_source.html#l00004">telnetConstants.h:4</a></div></div>
 <div class="ttc" id="anamespacetelnet_html_a2eb9d1ff491d386c070c0f189272b0ab"><div class="ttname"><a href="namespacetelnet.html#a2eb9d1ff491d386c070c0f189272b0ab">telnet::TELNET_DONT</a></div><div class="ttdeci">unsigned char const TELNET_DONT</div><div class="ttdef"><b>Definition</b> <a href="telnet_constants_8h_source.html#l00006">telnetConstants.h:6</a></div></div>
 <div class="ttc" id="anamespacetelnet_html_a594d17dd9e7cb0827bcd5c172ec537a6"><div class="ttname"><a href="namespacetelnet.html#a594d17dd9e7cb0827bcd5c172ec537a6">telnet::TELNET_WONT</a></div><div class="ttdeci">unsigned char const TELNET_WONT</div><div class="ttdef"><b>Definition</b> <a href="telnet_constants_8h_source.html#l00008">telnetConstants.h:8</a></div></div>

@@ -5,6 +5,7 @@ var dir_25a1e2ec3f0d4e2d7d8361a422bd3614 =
     [ "EmergencyControlBlackboxTest.cpp", "_emergency_control_blackbox_test_8cpp.html", "_emergency_control_blackbox_test_8cpp" ],
     [ "fred-dummy-server_main.cpp", "fred-dummy-server__main_8cpp.html", "fred-dummy-server__main_8cpp" ],
     [ "testFuseRelayBoardControl.cpp", "test_fuse_relay_board_control_8cpp.html", "test_fuse_relay_board_control_8cpp" ],
+    [ "TestLocker.cc", "_test_locker_8cc.html", null ],
     [ "testTelnetClientErrorHandling.cpp", "test_telnet_client_error_handling_8cpp.html", "test_telnet_client_error_handling_8cpp" ],
     [ "testXPortGpioClient.cpp", "test_x_port_gpio_client_8cpp.html", "test_x_port_gpio_client_8cpp" ],
     [ "testXPortGpioDummyServer.cpp", "test_x_port_gpio_dummy_server_8cpp.html", "test_x_port_gpio_dummy_server_8cpp" ],

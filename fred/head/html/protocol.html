@@ -378,8 +378,8 @@ readHotplugMask</h2>
 <h2><a class="anchor" id="progOperationMode"></a>
 progOperationMode</h2>
 <p>Set the operation mode of the <a class="el" href="class_fred.html" title="This is the singleton class used by all tests to access the fred connection.">Fred</a></p>
-<p>Syntax: <code> progOperationMode mode <code></code></code></p>
-<p><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>Syntax: <code> progOperationMode mode </code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Valid modes are <ul>
 <li><code>t</code> : <b>T</b>MCB mode. Perform hotplug handshakes with the TMCB. </li>
@@ -390,16 +390,11 @@ progOperationMode</h2>
   </table>
   </dd>
 </dl>
-<p></code></code></p>
-<p><code><code></code></code></p>
-<p><code><code></code></code></p>
-<p><code><code>Response format: see readOperationMode</code></code></p>
-<p><code><code></code></code></p>
+<p>Response format: see readOperationMode</p>
 <h2><a class="anchor" id="readOperationMode"></a>
 readOperationMode</h2>
-<p><code><code></code></code></p>
-<p><code><code>Syntax: <code> readOperationMode <code></code></code></code></code></p>
-<p><code><code><code><code>Response format: </p><ul>
+<p>Syntax: <code> readOperationMode </code></p>
+<p>Response format: </p><ul>
 <li>comment line: "% [TMCB/Standalone] mode configured by [jumper/software]" </li>
 <li>status line: <code> operationModeWord </code></li>
 </ul>
@@ -414,14 +409,10 @@ readOperationMode</h2>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code>The bit field was chosen as return value because it is easy to parse programmatically. As the bit field is difficult to decypher manually, a comment line with plain text is added.</code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>The bit field was chosen as return value because it is easy to parse programmatically. As the bit field is difficult to decypher manually, a comment line with plain text is added.</p>
 <h2><a class="anchor" id="progAlarmMasks"></a>
 progAlarmMasks</h2>
-<p><code><code><code><code> Configure which channels should turn off in case of an alarm either due to overcurrent or a signal on the hardware alarm pins 0 and 1. The alarm masks are 8 bit hex values configuring whether the alarm is active for the specific channels [0..7] </p><ul>
+<p>Configure which channels should turn off in case of an alarm either due to overcurrent or a signal on the hardware alarm pins 0 and 1. The alarm masks are 8 bit hex values configuring whether the alarm is active for the specific channels [0..7] </p><ul>
 <li>bit n = 0 : alarm on channel n is off </li>
 <li>bit n = 1 : alarm on channel n is active</li>
 </ul>
@@ -432,23 +423,21 @@ progAlarmMasks</h2>
   </table>
   </dd>
 </dl>
-<p>Response format: <code> overcurrentAlarmMask pin0AlarmMask pin1AlarmMask </code></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>Response format: <code> overcurrentAlarmMask pin0AlarmMask pin1AlarmMask </code></p>
 <h2><a class="anchor" id="readAlarmMasks"></a>
 readAlarmMasks</h2>
-<p><code><code><code><code> Read back the alarms masks.</code></code></code></code></p>
-<p><code><code><code><code>Syntax: <code> readAlarmMasks </code></code></code></code></code></p>
-<p><code><code><code><code>Response format: </p><ul>
+<p>Read back the alarms masks.</p>
+<p>Syntax: <code> readAlarmMasks </code></p>
+<p>Response format: </p><ul>
 <li>header line <code>"overcurrentAlarmMask pin0AlarmMask pin1AlarmMask"</code><br  />
  </li>
 <li>status line <code> overcurrentAlarmMask pin0AlarmMask pin1AlarmMask </code></li>
 </ul>
-<p></code></code></code></code></p>
 <h2><a class="anchor" id="readAlarms"></a>
 readAlarms</h2>
-<p><code><code><code><code> Read the hardware alarms register (alarm pins 0 and 1). The overcurrent alarm is a channel specific alarm generated in the micro controler and not part of this regsiter.</code></code></code></code></p>
-<p><code><code><code><code>Syntax: <code> readAlarms </code></code></code></code></code></p>
-<p><code><code><code><code>Response format: </p><ul>
+<p>Read the hardware alarms register (alarm pins 0 and 1). The overcurrent alarm is a channel specific alarm generated in the micro controler and not part of this regsiter.</p>
+<p>Syntax: <code> readAlarms </code></p>
+<p>Response format: </p><ul>
 <li>header line <code>"harwareAlarms overcurretAlarms"</code><br  />
  </li>
 <li>status line <code>harwareAlarmWord overcurretAlarmWord</code></li>
@@ -460,13 +449,12 @@ readAlarms</h2>
   </table>
   </dd>
 </dl>
-<p>To reset the alarms flags use <code>clearAlarms</code>.</code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>To reset the alarms flags use <code>clearAlarms</code>.</p>
 <h2><a class="anchor" id="clearAlarms"></a>
 clearAlarms</h2>
-<p><code><code><code><code> Clear the hardware alarms register (alarm pins 0 and 1) and the overcurrent alarm flags. The response is 0 if the alarm could be cleared. If the alarm is still present at the alarm pin, the register will not be cleared and the updated alarm state will be returned. Overcurrent alarms can always be cleared as the cannel is of the overcurrent cannot be persistent.</code></code></code></code></p>
-<p><code><code><code><code>Syntax: <code> clearAlarms </code></code></code></code></code></p>
-<p><code><code><code><code>Response format: </p><ul>
+<p>Clear the hardware alarms register (alarm pins 0 and 1) and the overcurrent alarm flags. The response is 0 if the alarm could be cleared. If the alarm is still present at the alarm pin, the register will not be cleared and the updated alarm state will be returned. Overcurrent alarms can always be cleared as the cannel is of the overcurrent cannot be persistent.</p>
+<p>Syntax: <code> clearAlarms </code></p>
+<p>Response format: </p><ul>
 <li>header line <code>"harwareAlarms overcurretAlarms"</code><br  />
  </li>
 <li>status line <code>harwareAlarmWord overcurretAlarmWord</code></li>
@@ -478,14 +466,13 @@ clearAlarms</h2>
   </table>
   </dd>
 </dl>
-<p>Example: <code>readAlarms</code> returned 03 00 (both hardware alarms are triggered). A subsequent <code>clearAlarms</code> returns 02 00, which means alarm pin 1 is still active, while pin 0 is not.</code></code></code></code></p>
-<p><code><code><code><code> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>TmcbSelectProm Review what has been witten down. Was not exactly clear on all the details </dd></dl>
-<p></code></code></code></code></p>
+<p>Example: <code>readAlarms</code> returned 03 00 (both hardware alarms are triggered). A subsequent <code>clearAlarms</code> returns 02 00, which means alarm pin 1 is still active, while pin 0 is not.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>TmcbSelectProm Review what has been witten down. Was not exactly clear on all the details </dd></dl>
 <h2><a class="anchor" id="TmcbSelectProm"></a>
 TmcbSelectProm</h2>
-<p><code><code><code><code> Command can be used to select the program to load on the tmcb fpga board</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>TmcbSelectProm value</code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>Command can be used to select the program to load on the tmcb fpga board</p>
+<p>Syntax: <code>TmcbSelectProm value</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>Prom value can be 0 or 1. For all other values "Bad argument(s)" is returned.</td></tr>
   </table>
@@ -503,13 +490,11 @@ In case of an error, an additional %%% ERROR message will be displayed with spec
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
 <h2><a class="anchor" id="TmcbReloadFPGA"></a>
 TmcbReloadFPGA</h2>
-<p><code><code><code><code> Resets the FPGA on the the tmcb board</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>TmcbReloadFPGA</code></code></code></code></code></p>
-<p><code><code><code><code> Response format: <code>fpgaRebootErrorFlags</code> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Resets the FPGA on the the tmcb board</p>
+<p>Syntax: <code>TmcbReloadFPGA</code></p>
+<p>Response format: <code>fpgaRebootErrorFlags</code> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fpgaRebootErrorFlags</td><td>8 bit hex word errors when rebooting the FPGA. An additional % debug or %%% ERROR message will be displayed to indicate <ul>
 <li>No error "% OK" </li>
@@ -521,14 +506,12 @@ TmcbReloadFPGA</h2>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
 <h2><a class="anchor" id="TmcbReadStatus"></a>
 TmcbReadStatus</h2>
-<p><code><code><code><code> Read the TMCB status (present or absent, handle in or out, FPGA status)</code></code></code></code></p>
-<p><code><code><code><code> Indicates if the tmcb board fpga is booted up or not. The command checks for the DONE_N signal from the tmcb board to know the status of the fpga.</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>TmcbReadStatus</code></code></code></code></code></p>
-<p><code><code><code><code> Response format: </p><ul>
+<p>Read the TMCB status (present or absent, handle in or out, FPGA status)</p>
+<p>Indicates if the tmcb board fpga is booted up or not. The command checks for the DONE_N signal from the tmcb board to know the status of the fpga.</p>
+<p>Syntax: <code>TmcbReadStatus</code></p>
+<p>Response format: </p><ul>
 <li>header line: "present handleIn FpgaOK errorFlags" </li>
 <li>status line: <code>presenseStatus handleStatus FpgaStatus errorFlags</code></li>
 </ul>
@@ -547,36 +530,29 @@ TmcbReadStatus</h2>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="section note"><dt>Note</dt><dd>Having four words instead of a large bit field is a compromise between human and machine readability. Error flags might me printed as debug comments.</dd></dl>
-<p></code></code></code></code></p>
+<dl class="section note"><dt>Note</dt><dd>Having four words instead of a large bit field is a compromise between human and machine readability. Error flags might me printed as debug comments.</dd></dl>
 <h2><a class="anchor" id="TmcbHardReset"></a>
 TmcbHardReset</h2>
-<p><code><code><code><code> Reset the TMCB by cutting the management power</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>TmcbHardReset </code></code></code></code></code></p>
-<p><code><code><code><code> The command ends by executing a TmcbReadStatus after the management power has been turned back on.</code></code></code></code></p>
-<p><code><code><code><code> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>What about the FPGA status. It will need some time to reboot...</dd></dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code> Response format: see TmcbReadStatus</code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>Reset the TMCB by cutting the management power</p>
+<p>Syntax: <code>TmcbHardReset </code></p>
+<p>The command ends by executing a TmcbReadStatus after the management power has been turned back on.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>What about the FPGA status. It will need some time to reboot...</dd></dl>
+<p>Response format: see TmcbReadStatus</p>
 <h2><a class="anchor" id="FbProgShunt"></a>
 FbProgShunt</h2>
-<p><code><code><code><code> Programme the resistance of the shunt resistor on the fan board.</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code> FbProgShunt resistance </code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>Programme the resistance of the shunt resistor on the fan board.</p>
+<p>Syntax: <code> FbProgShunt resistance </code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resistance</td><td>Resistance of the shunt resistor in mOhms.</td></tr>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
 <h2><a class="anchor" id="FbProgFan"></a>
 FbProgFan</h2>
-<p><code><code><code><code> Set the operation mode and the speed of all fans.</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code> FbProgFan mode speed </code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the operation mode and the speed of all fans.</p>
+<p>Syntax: <code> FbProgFan mode speed </code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>One of the two modes <ul>
 <li>'R/r' Rpm mode: speed argument is treated as a uint16_t rpm value </li>
@@ -587,17 +563,13 @@ FbProgFan</h2>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code> Response format: String indicating bad argument if the input parameters are not as expected</code></code></code></code></p>
-<p><code><code><code><code> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>FIXME "a string" is not a proper, automatically parsable output format. Define a response.</dd></dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>Response format: String indicating bad argument if the input parameters are not as expected</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>FIXME "a string" is not a proper, automatically parsable output format. Define a response.</dd></dl>
 <h2><a class="anchor" id="FbReadFansInfo"></a>
 FbReadFansInfo</h2>
-<p><code><code><code><code> Read speed, voltage, current and mode of all fans.</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code> FbReadFansInfo </code></code></code></code></code></p>
-<p><code><code><code><code> response format: </p><ul>
+<p>Read speed, voltage, current and mode of all fans.</p>
+<p>Syntax: <code> FbReadFansInfo </code></p>
+<p>response format: </p><ul>
 <li>header line <code>"fan mode alarm mV  mA targetRPM monitorRPM"</code><br  />
  </li>
 <li>status line: <code> fanNr mode alarmBit voltage current targetSpeed actualSpeed</code> <dl class="params"><dt>Parameters</dt><dd>
@@ -614,63 +586,52 @@ FbReadFansInfo</h2>
 </dl>
 </li>
 </ul>
-<p></code></code></code></code></p>
 <h2><a class="anchor" id="help"></a>
 help</h2>
-<p><code><code><code><code> Show a list of all commands and their parameters.</code></code></code></code></p>
-<p><code><code><code><code>Syntax: <code> help </code></code></code></code></code></p>
-<p><code><code><code><code>Response format: see example below</code></code></code></code></p>
-<p><code><code><code><code></p><dl class="section note"><dt>Note</dt><dd>The 'fwupgrade' command is intentionally not displayed in the help. It is not intended for interactive use and dangerous because it leaves the system in a vulnerable state where incoming data is interpreted as firmware to be written into the flash memory.</dd></dl>
-<p></code></code></code></code></p>
+<p>Show a list of all commands and their parameters.</p>
+<p>Syntax: <code> help </code></p>
+<p>Response format: see example below</p>
+<dl class="section note"><dt>Note</dt><dd>The 'fwupgrade' command is intentionally not displayed in the help. It is not intended for interactive use and dangerous because it leaves the system in a vulnerable state where incoming data is interpreted as firmware to be written into the flash memory.</dd></dl>
 <h2><a class="anchor" id="progDeviceName"></a>
 progDeviceName</h2>
-<p><code><code><code><code> This command can be used to provide a device name to the FRED board</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>progDeviceName deviceName</code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>This command can be used to provide a device name to the FRED board</p>
+<p>Syntax: <code>progDeviceName deviceName</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceName</td><td>The parameter indicates the name of the device. The name can be 63 charachters long [0..9a..zA..Z_]</td></tr>
   </table>
   </dd>
 </dl>
-<p>Response format: The (truncated) name which has just been set.</code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>Response format: The (truncated) name which has just been set.</p>
 <h2><a class="anchor" id="progInvNr"></a>
 progInvNr</h2>
-<p><code><code><code><code> Sets an inventory number for the device</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>progInvNr inventoryNumber</code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets an inventory number for the device</p>
+<p>Syntax: <code>progInvNr inventoryNumber</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inventoryNumber</td><td>String containing a 63 charachter long inventory number for the board [0..9a..zA..Z_]. Longer names are truncated.</td></tr>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code> Response format: The (truncated) name which has just been set.</code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>Response format: The (truncated) name which has just been set.</p>
 <h2><a class="anchor" id="progChanName"></a>
 progChanName</h2>
-<p><code><code><code><code> Sets the name of a channel and writes it to the micro controller's EEPROM</code></code></code></code></p>
-<p><code><code><code><code> Syntax: <code>progChanName chanNr name</code></code></code></code></code></p>
-<p><code><code><code><code></p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the name of a channel and writes it to the micro controller's EEPROM</p>
+<p>Syntax: <code>progChanName chanNr name</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chanNr</td><td>The channel number [0..7] </td></tr>
     <tr><td class="paramname">name</td><td>The channel name. A string up to 20 characters long [0..9a..zA..Z_]</td></tr>
   </table>
   </dd>
 </dl>
-<p>If the string is longer than 20 characters, it is truncated.</code></code></code></code></p>
-<p><code><code><code><code> </code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
-<p><code><code><code><code> Response format: The actual, truncated name which has been set.</code></code></code></code></p>
-<p><code><code><code><code></code></code></code></code></p>
+<p>If the string is longer than 20 characters, it is truncated.</p>
+<p>Response format: The actual, truncated name which has been set.</p>
 <h2><a class="anchor" id="getChanNames"></a>
 getChanNames</h2>
-<p><code><code><code><code> Read back the names of all channels</code></code></code></code></p>
-<p><code><code><code><code> Syntax <code>&lt;getChanNames/tt&gt;</code></code></code></code></code></p>
-<p><code><code><code><code><code> </code></code></code></code></code></p>
-<p><code><code><code><code><code></code></code></code></code></code></p>
-<p><code><code><code><code><code> Response format: <code> chanNr chanName </code><br  />
+<p>Read back the names of all channels</p>
+<p>Syntax <code>getChanNames</code></p>
+<p>Response format: <code> chanNr chanName </code><br  />
  One line per channel </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chanNr</td><td>The channel number (1 digit) </td></tr>
@@ -678,12 +639,11 @@ getChanNames</h2>
   </table>
   </dd>
 </dl>
-<p></code></code></code></code></code></p>
 <h2><a class="anchor" id="version"></a>
 version</h2>
-<p><code><code><code><code><code> Read the firmware versions of the micro processor and the CPLD chip. Also displays the UUID, configured board name and board inventory number</code></code></code></code></code></p>
-<p><code><code><code><code><code> Syntax: <code> version </code></code></code></code></code></code></p>
-<p><code><code><code><code><code> Response format: This is a multi-line printout </p><ul>
+<p>Read the firmware versions of the micro processor and the CPLD chip. Also displays the UUID, configured board name and board inventory number</p>
+<p>Syntax: <code> version </code></p>
+<p>Response format: This is a multi-line printout </p><ul>
 <li><code>Firmware: processorFirmwareVersion CPLD cpldFirmwarenVersion </code> </li>
 <li><code>UUID: uuid</code> </li>
 <li><code>Device name: deviceName</code> </li>
@@ -694,7 +654,7 @@ version</h2>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">processorFirmwareVersion</td><td>Firmware version of the microcprocessor, free text string<ul>
-<li>For tags the string is the tag name, for instance \t 00.02.01, but could also be <code>tmcbHotPlugTestJune2016</code>.</li>
+<li>For tags the string is the tag name, for instance <code>00.02.01</code>, but could also be <code>tmcbHotPlugTestJune2016</code>.</li>
 <li>For the trunk versions will be reported as trunk_rxxx, where xxx is taken from svnversion. It might be 1234..1237M in case of stuff not committed.</li>
 <li>For braches, it will be branchname_rxxx </li>
 </ul>
@@ -709,20 +669,16 @@ version</h2>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>There will be a script which replaces the version in the source code before compilation.</dd></dl>
-<p></code></code></code></code></code></p>
 <h2><a class="anchor" id="reboot"></a>
 reboot</h2>
-<p><code><code><code><code><code> Reboot the <a class="el" href="class_fred.html" title="This is the singleton class used by all tests to access the fred connection.">Fred</a> micro controller. You will see the boot messages and finally get a new prompt. No defined response format.</code></code></code></code></code></p>
-<p><code><code><code><code><code></code></code></code></code></code></p>
+<p>Reboot the <a class="el" href="class_fred.html" title="This is the singleton class used by all tests to access the fred connection.">Fred</a> micro controller. You will see the boot messages and finally get a new prompt. No defined response format.</p>
 <h2><a class="anchor" id="fwupgrade"></a>
 fwupgrade</h2>
-<p><code><code><code><code><code> Shuts down the micro controller and tells the boot loader not to reload the firmware, but to wait for new firmware to be played in through the serial interface.</code></code></code></code></code></p>
-<p><code><code><code><code><code></p><dl class="section warning"><dt>Warning</dt><dd>To not use this command manually! It is intended for use with the remote update script only.</dd></dl>
-<p></code></code></code></code></code></p>
+<p>Shuts down the micro controller and tells the boot loader not to reload the firmware, but to wait for new firmware to be played in through the serial interface.</p>
+<dl class="section warning"><dt>Warning</dt><dd>To not use this command manually! It is intended for use with the remote update script only.</dd></dl>
 <h1><a class="anchor" id="Example"></a>
 Example</h1>
-<p><code><code><code><code><code></code></code></code></code></code></p>
-<p><code><code><code><code><code> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>There are way too many commands to make an exhaustice example. This example is for standalone mode (?). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>There are way too many commands to make an exhaustice example. This example is for standalone mode (?). </dd></dl>
 <pre class="fragment"># readChan 0
 chan state mV  mA
 0 01  15030  1234
@@ -835,8 +791,7 @@ reboot
 
 progDeviceName
 progInvNr
-progChanName</pre><p> </code></code></code></code></code></p>
-</div></div><!-- contents -->
+progChanName</pre> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

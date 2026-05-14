@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <li>The client sends a command and waits for the response, whose end again is recognised by the prompt. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8h_source.html#l00024">24</a> of file <a class="el" href="_minimal_telnet_connection_8h_source.html">MinimalTelnetConnection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8h_source.html#l00026">26</a> of file <a class="el" href="_minimal_telnet_connection_8h_source.html">MinimalTelnetConnection.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af2d5185099aee65c0f1b97697cc02720" name="af2d5185099aee65c0f1b97697cc02720"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2d5185099aee65c0f1b97697cc02720">&#9670;&#160;</a></span>MinimalTelnetConnection()</h2>
@@ -175,13 +175,15 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">serverName</td><td>The name of the server, of IP as string </td></tr>
     <tr><td class="paramname">serviceName</td><td>The name of the service, or the port number as string. Default "telnet". </td></tr>
-    <tr><td class="paramname">promt</td><td>The promt signature which indicates that the server is ready to accept new input. The server has to send &lt;CR&gt;&lt;LF&gt; followed by this signature. </td></tr>
-    <tr><td class="paramname">greetingAndResponseFunction</td><td>Callback function to generate a greeting function and the expected response. It is uses as a synchronisation point, so it is a function and not a static string because it might contain a unique key for each time it is called. </td></tr>
+    <tr><td class="paramname">prompt</td><td>The prompt signature which indicates that the server is ready to accept new input. The server has to send &lt;CR&gt;&lt;LF&gt; followed by this signature. </td></tr>
+    <tr><td class="paramname">greetingAndResponseFunction</td><td>Callback function to generate a greeting function and the expected response. It is uses as a synchronisation point, so it is a function and not a static string because it might contain a unique key for each time it is called.</td></tr>
+    <tr><td class="paramname">connectionTimeoutInSeconds</td><td>Timeout while stablishing and during the connection. </td></tr>
+    <tr><td class="paramname">recoveryTimeoutInSeconds</td><td>Timeout for recovery after a connection failure. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8cc_source.html#l00022">22</a> of file <a class="el" href="_minimal_telnet_connection_8cc_source.html">MinimalTelnetConnection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8cc_source.html#l00016">16</a> of file <a class="el" href="_minimal_telnet_connection_8cc_source.html">MinimalTelnetConnection.cc</a>.</p>
 
 </div>
 </div>
@@ -200,7 +202,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8cc_source.html#l00052">52</a> of file <a class="el" href="_minimal_telnet_connection_8cc_source.html">MinimalTelnetConnection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8cc_source.html#l00046">46</a> of file <a class="el" href="_minimal_telnet_connection_8cc_source.html">MinimalTelnetConnection.cc</a>.</p>
 
 </div>
 </div>
@@ -224,7 +226,7 @@ Public Member Functions</h2></td></tr>
 <p>Send a command. </p>
 <p>The string must not contain &lt;CR&gt;&lt;LF&gt; at the end. They will be added automatically. </p>
 
-<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8cc_source.html#l00189">189</a> of file <a class="el" href="_minimal_telnet_connection_8cc_source.html">MinimalTelnetConnection.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_minimal_telnet_connection_8cc_source.html#l00186">186</a> of file <a class="el" href="_minimal_telnet_connection_8cc_source.html">MinimalTelnetConnection.cc</a>.</p>
 
 </div>
 </div>

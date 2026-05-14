@@ -102,9 +102,6 @@ var NAVTREEINDEX0 =
 "_motor_controler_dummy_8cc.html#a2e29cf3ac0ec1738b21f05ea4555e7eb":[8,0,0,0,0,1,2,1],
 "_motor_controler_dummy_8cc_source.html":[8,0,0,0,0,1,2],
 "_motor_controler_dummy_8h.html":[8,0,0,0,0,0,7],
-"_motor_controler_dummy_8h.html#a427600c1dd9662d68c914388c1d7a16e":[8,0,0,0,0,0,7,1],
-"_motor_controler_dummy_8h.html#a5fb6422b6735e78c0a955e33baec53f9":[8,0,0,0,0,0,7,2],
-"_motor_controler_dummy_8h.html#ad1207da6fe3f121d65c5c227e76417d5":[8,0,0,0,0,0,7,3],
 "_motor_controler_dummy_8h_source.html":[8,0,0,0,0,0,7],
 "_motor_controler_expert_8h.html":[8,0,0,0,0,0,8],
 "_motor_controler_expert_8h.html#a2f3386edf3caef4dd60cd27f6f360f2f":[8,0,0,0,0,0,8,2],
@@ -121,9 +118,6 @@ var NAVTREEINDEX0 =
 "_motor_controler_impl_8cc.html#aedb00abeee050671ad182a1e88de8914":[8,0,0,0,0,1,3,6],
 "_motor_controler_impl_8cc_source.html":[8,0,0,0,0,1,3],
 "_motor_controler_impl_8h.html":[8,0,0,0,0,0,0,0],
-"_motor_controler_impl_8h.html#a8b2c657188c12d853d821631f49fb390":[8,0,0,0,0,0,0,0,2],
-"_motor_controler_impl_8h.html#aaa9f6db0a35406d9ea8e509dbf6d3ac0":[8,0,0,0,0,0,0,0,1],
-"_motor_controler_impl_8h.html#afe8828e33d0b59a093ecefc7a7719ef7":[8,0,0,0,0,0,0,0,3],
 "_motor_controler_impl_8h_source.html":[8,0,0,0,0,0,0,0],
 "_motor_driver_card_8h.html":[8,0,0,0,0,0,9],
 "_motor_driver_card_8h_source.html":[8,0,0,0,0,0,9],
@@ -249,5 +243,11 @@ var NAVTREEINDEX0 =
 "_t_m_c260_constants_8h.html#a7854347cac9b7b882ff5c5a63d41048f":[8,0,0,0,0,0,20,2],
 "_t_m_c260_constants_8h.html#aba13b0add487a1da3a08d273a591f845":[8,0,0,0,0,0,20,4],
 "_t_m_c260_constants_8h.html#af7e003386863c33f332f91f04604db72":[8,0,0,0,0,0,20,1],
-"_t_m_c260_constants_8h_source.html":[8,0,0,0,0,0,20]
+"_t_m_c260_constants_8h_source.html":[8,0,0,0,0,0,20],
+"_t_m_c260_dummy_constants_8h.html":[8,0,0,0,0,0,21],
+"_t_m_c260_dummy_constants_8h.html#a03e796d17e0a2c4c7809943128d70ec6":[8,0,0,0,0,0,21,4],
+"_t_m_c260_dummy_constants_8h.html#a106ff94ba32fa98c4264bd835db77fef":[8,0,0,0,0,0,21,3],
+"_t_m_c260_dummy_constants_8h.html#a7a4116242e18dc10aa973cc641182516":[8,0,0,0,0,0,21,2],
+"_t_m_c260_dummy_constants_8h.html#ac32ace08657149edb7a3f4650ad13b1a":[8,0,0,0,0,0,21,1],
+"_t_m_c260_dummy_constants_8h.html#adcfa324084aff966e1c109c6a62422e1":[8,0,0,0,0,0,21,0]
 };
