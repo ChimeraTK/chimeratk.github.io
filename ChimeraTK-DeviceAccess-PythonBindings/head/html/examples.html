@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examples &mdash; ChimeraTK-DeviceAccess-PythonBindings 04.02.00 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=86f27845" />
+
+  
+    <link rel="shortcut icon" href="_static/ChimeraTK_Favicon.ico"/>
+  
+        <script src="_static/jquery.js?v=8dae8fb0"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=175b9258"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api_reference.html" />
+    <link rel="prev" title="User Guide" href="user_guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ChimeraTK-DeviceAccess-PythonBindings
+              <img src="_static/ChimeraTK_Logo_whitebg.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                04.02
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#what-is-chimeratk-deviceaccess">What is ChimeraTK DeviceAccess?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#key-features">Key Features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#common-use-cases">Common Use Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#why-python-bindings">Why Python Bindings?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#repository-based-installation-on-debian-ubuntu-systems">Repository-Based Installation on Debian/Ubuntu systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#from-source">From Source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#your-first-program">Your First Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#id1">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#basic-example">Basic Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#step-by-step-explanation">Step-by-Step Explanation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#understanding-accessors">Understanding Accessors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#accessor-lifecycle">Accessor Lifecycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#accessor-types">Accessor Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#type-conversion">Type Conversion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#automatic-type-conversion">Automatic Type Conversion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#transfer-groups">Transfer Groups</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#motivation">Motivation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#solution-transfer-groups">Solution: Transfer Groups</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#data-consistency-groups">Data Consistency Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#device-maps">Device Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#basic-syntax">Basic Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#best-practices">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-scalar-register-access">Basic Scalar Register Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-with-1d-accessors">Working with 1D Accessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-different-device-backends">Using Different Device Backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#used-map-files">Used Map Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#api-index">API Index</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.setDMapFilePath.html">deviceaccess.setDMapFilePath</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.setDMapFilePath.html#deviceaccess.setDMapFilePath"><code class="docutils literal notranslate"><span class="pre">setDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.getDMapFilePath.html">deviceaccess.getDMapFilePath</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.getDMapFilePath.html#deviceaccess.getDMapFilePath"><code class="docutils literal notranslate"><span class="pre">getDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.Device.html">deviceaccess.Device</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.Device.html#deviceaccess.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.ScalarRegisterAccessor.html">deviceaccess.ScalarRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.ScalarRegisterAccessor.html#deviceaccess.ScalarRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.OneDRegisterAccessor.html">deviceaccess.OneDRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.OneDRegisterAccessor.html#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.TwoDRegisterAccessor.html">deviceaccess.TwoDRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.TwoDRegisterAccessor.html#deviceaccess.TwoDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.VoidRegisterAccessor.html">deviceaccess.VoidRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.VoidRegisterAccessor.html#deviceaccess.VoidRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.TransferGroup.html">deviceaccess.TransferGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.TransferGroup.html#deviceaccess.TransferGroup"><code class="docutils literal notranslate"><span class="pre">TransferGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.ReadAnyGroup.html">deviceaccess.ReadAnyGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.ReadAnyGroup.html#deviceaccess.ReadAnyGroup"><code class="docutils literal notranslate"><span class="pre">ReadAnyGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataConsistencyGroup.html">deviceaccess.DataConsistencyGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataConsistencyGroup.html#deviceaccess.DataConsistencyGroup"><code class="docutils literal notranslate"><span class="pre">DataConsistencyGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.RegisterCatalogue.html">deviceaccess.RegisterCatalogue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.RegisterCatalogue.html#deviceaccess.RegisterCatalogue"><code class="docutils literal notranslate"><span class="pre">RegisterCatalogue</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.RegisterInfo.html">deviceaccess.RegisterInfo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.RegisterInfo.html#deviceaccess.RegisterInfo"><code class="docutils literal notranslate"><span class="pre">RegisterInfo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataDescriptor.html">deviceaccess.DataDescriptor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataDescriptor.html#deviceaccess.DataDescriptor"><code class="docutils literal notranslate"><span class="pre">DataDescriptor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataType.html">deviceaccess.DataType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataType.html#deviceaccess.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.VersionNumber.html">deviceaccess.VersionNumber</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.VersionNumber.html#deviceaccess.VersionNumber"><code class="docutils literal notranslate"><span class="pre">VersionNumber</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.AccessMode.html">deviceaccess.AccessMode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.AccessMode.html#deviceaccess.AccessMode"><code class="docutils literal notranslate"><span class="pre">AccessMode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataValidity.html">deviceaccess.DataValidity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataValidity.html#deviceaccess.DataValidity"><code class="docutils literal notranslate"><span class="pre">DataValidity</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#core-classes">Core Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#type-mapping">Type Mapping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_reference.html#module-deviceaccess">Main Module: deviceaccess</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.AccessMode"><code class="docutils literal notranslate"><span class="pre">AccessMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.BackendRegisterInfoBase"><code class="docutils literal notranslate"><span class="pre">BackendRegisterInfoBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataConsistencyGroup"><code class="docutils literal notranslate"><span class="pre">DataConsistencyGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataDescriptor"><code class="docutils literal notranslate"><span class="pre">DataDescriptor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataValidity"><code class="docutils literal notranslate"><span class="pre">DataValidity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.FundamentalType"><code class="docutils literal notranslate"><span class="pre">FundamentalType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.MatchingMode"><code class="docutils literal notranslate"><span class="pre">MatchingMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.Notification"><code class="docutils literal notranslate"><span class="pre">Notification</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.ReadAnyGroup"><code class="docutils literal notranslate"><span class="pre">ReadAnyGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.RegisterCatalogue"><code class="docutils literal notranslate"><span class="pre">RegisterCatalogue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.RegisterInfo"><code class="docutils literal notranslate"><span class="pre">RegisterInfo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.RegisterPath"><code class="docutils literal notranslate"><span class="pre">RegisterPath</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.ScalarRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.ThreadInterrupted"><code class="docutils literal notranslate"><span class="pre">ThreadInterrupted</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TransferElementBase"><code class="docutils literal notranslate"><span class="pre">TransferElementBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TransferElementID"><code class="docutils literal notranslate"><span class="pre">TransferElementID</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TransferGroup"><code class="docutils literal notranslate"><span class="pre">TransferGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TwoDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.VersionNumber"><code class="docutils literal notranslate"><span class="pre">VersionNumber</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.VersionNumberBase"><code class="docutils literal notranslate"><span class="pre">VersionNumberBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.VoidRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.getDMapFilePath"><code class="docutils literal notranslate"><span class="pre">getDMapFilePath()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.setDMapFilePath"><code class="docutils literal notranslate"><span class="pre">setDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api_reference.html#legacy-module-mtca4u">Legacy Module: mtca4u</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.get_info"><code class="docutils literal notranslate"><span class="pre">get_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.set_dmap_location"><code class="docutils literal notranslate"><span class="pre">set_dmap_location()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.get_dmap_location"><code class="docutils literal notranslate"><span class="pre">get_dmap_location()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api_reference.html#id35">See Also</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#installation-and-setup">Installation and Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#basic-usage">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#accessors-and-type-conversion">Accessors and Type Conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#device-maps">Device Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#transfer-groups">Transfer Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#performance-and-optimization">Performance and Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#compatibility-and-versions">Compatibility and Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#data-handling">Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#still-have-questions">Still Have Questions?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#performance-issues">Performance Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#read-write-operations-slow">Read/Write Operations Slow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#getting-help">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ChimeraTK-DeviceAccess-PythonBindings</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Examples</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/examples.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h1>
+<p>This page contains practical examples demonstrating common usage patterns with the DeviceAccess Python bindings.
+The actual example code, and the <cite>map</cite> and <cite>dmap</cite> files used in this example can be found in the <cite>tests</cite> folder of the source distribution. The content is also listed in the <a class="reference internal" href="#used-map-files-section"><span class="std std-ref">Used Map Files section</span></a> section below.</p>
+<section id="basic-scalar-register-access">
+<span id="basic-example-python"></span><h2>Basic Scalar Register Access<a class="headerlink" href="#basic-scalar-register-access" title="Link to this heading"></a></h2>
+<p>Reading and writing a single register value:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+
+    <span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;documentationExamples/someCrate.dmap&quot;</span><span class="p">)</span>
+    <span class="n">device</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;someDummyDevice&quot;</span><span class="p">)</span>
+    <span class="n">device</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+
+    <span class="c1"># Read a value</span>
+    <span class="n">temperature</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="s2">&quot;SENSORS.TEMPERATURE&quot;</span><span class="p">)</span>
+    <span class="n">temperature</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Current temperature: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span><span class="si">}</span><span class="s2"> °C&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Write a value</span>
+    <span class="n">setpoint</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="s2">&quot;SENSORS.SET_POINT&quot;</span><span class="p">)</span>
+    <span class="n">setpoint</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mf">25.0</span><span class="p">)</span>
+    <span class="n">setpoint</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+
+    <span class="c1"># Verify the write</span>
+    <span class="n">setpoint</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setpoint is now: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">setpoint</span><span class="p">)</span><span class="si">}</span><span class="s2"> °C&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="working-with-1d-accessors">
+<span id="array-example-python"></span><h2>Working with 1D Accessors<a class="headerlink" href="#working-with-1d-accessors" title="Link to this heading"></a></h2>
+<p>Reading and processing array data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="kn">import</span> <span class="nn">deviceaccess</span> <span class="k">as</span> <span class="nn">da</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+    <span class="n">da</span><span class="o">.</span><span class="n">setDMapFilePath</span><span class="p">(</span><span class="s2">&quot;documentationExamples/someCrate.dmap&quot;</span><span class="p">)</span>
+    <span class="n">device</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;someDummyDevice&quot;</span><span class="p">)</span>
+    <span class="n">device</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+
+    <span class="c1"># Get 1D accessor</span>
+    <span class="n">waveform</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getOneDRegisterAccessor</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="s2">&quot;SENSORS.WAVEFORM&quot;</span><span class="p">)</span>
+    <span class="n">waveform</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+    <span class="c1"># Access like a list:</span>
+    <span class="p">[</span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Waveform element </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">waveform</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">waveform</span><span class="p">))]</span>
+
+    <span class="c1"># Scale all values by a factor of 2</span>
+    <span class="n">waveform</span> <span class="o">*=</span> <span class="mi">2</span>
+
+    <span class="c1"># Write back the modified waveform</span>
+    <span class="n">waveform</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+
+    <span class="c1"># Read back to verify</span>
+    <span class="n">waveform</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Modified waveform data:&quot;</span><span class="p">,</span> <span class="n">waveform</span><span class="p">)</span>  <span class="c1"># accessor can be used as a numpy array or python list</span>
+
+    <span class="c1"># slicing also works</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;First 3 elements:&quot;</span><span class="p">,</span> <span class="n">waveform</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Last 2 elements:&quot;</span><span class="p">,</span> <span class="n">waveform</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements 2 to 4:&quot;</span><span class="p">,</span> <span class="n">waveform</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Every other element:&quot;</span><span class="p">,</span> <span class="n">waveform</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
+<section id="using-different-device-backends">
+<span id="device-map-example-python"></span><h2>Using Different Device Backends<a class="headerlink" href="#using-different-device-backends" title="Link to this heading"></a></h2>
+<p>The ChimeraTK library supports multiple backends. Configure them in your device map file:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># Device map example
+ AMC_PCIe    (xdma:xdma/slot6?map=device.map)
+ SCPI_Dev    (CommandBasedTCP:lab_dev?map=hw_prep.json&amp;port=50000)
+ OPCUADev    (opcua:192.168.1.101?port=16664)
+ DummyDev    (dummy?map=device.map)
+</pre></div>
+</div>
+<p>Then use them the same way in your Python code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">deviceaccess</span>
+
+<span class="c1"># Open different backend devices with same API</span>
+<span class="n">dummy</span> <span class="o">=</span> <span class="n">deviceaccess</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;DummyDev&quot;</span><span class="p">)</span>
+<span class="n">pcie</span> <span class="o">=</span> <span class="n">deviceaccess</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;AMC_PCIe&quot;</span><span class="p">)</span>
+<span class="n">scpi</span> <span class="o">=</span> <span class="n">deviceaccess</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;SCPI_Dev&quot;</span><span class="p">)</span>
+<span class="n">opcua</span> <span class="o">=</span> <span class="n">deviceaccess</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;OPCUADev&quot;</span><span class="p">)</span>
+
+<span class="c1"># All use the same accessor interface</span>
+<span class="k">for</span> <span class="n">device</span> <span class="ow">in</span> <span class="p">[</span><span class="n">dummy</span><span class="p">,</span> <span class="n">pcie</span><span class="p">,</span> <span class="n">scpi</span><span class="p">,</span> <span class="n">opcua</span><span class="p">]:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">getScalarRegisterAccessor</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="s2">&quot;MEASUREMENT&quot;</span><span class="p">)</span>
+    <span class="n">value</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Value: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="used-map-files">
+<span id="used-map-files-section"></span><h2>Used Map Files<a class="headerlink" href="#used-map-files" title="Link to this heading"></a></h2>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Example Crate dMap File</span><a class="headerlink" href="#id1" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># DEVICE_LABEL   backend_specification
+someDummyDevice (dummy?map=./someDummyModule.map)
+someSharedDummyDevice (sharedMemoryDummy?map=someDummyModule.map)
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Example Module Map File</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># name                    nr of elements       address          size           bar    width   fracbits    signed  access</span>
+<span class="n">SENSORS</span><span class="o">.</span><span class="n">TEMPERATURE</span>       <span class="mh">0x01</span>                 <span class="mh">0x00000000</span>       <span class="mh">0x00000004</span>     <span class="mh">0x0</span>    <span class="mi">32</span>      <span class="mi">4</span>           <span class="mi">1</span>       <span class="n">RW</span>
+<span class="n">SENSORS</span><span class="o">.</span><span class="n">SET_POINT</span>         <span class="mh">0x01</span>                 <span class="mh">0x00000004</span>       <span class="mh">0x00000004</span>     <span class="mh">0x0</span>    <span class="mi">32</span>      <span class="mi">4</span>           <span class="mi">1</span>       <span class="n">RW</span>
+
+<span class="n">SENSORS</span><span class="o">.</span><span class="n">WAVEFORM</span>          <span class="mh">0x08</span>                 <span class="mh">0x00000008</span>       <span class="mh">0x00000020</span>     <span class="mh">0x0</span>    <span class="mi">32</span>      <span class="mi">0</span>           <span class="mi">1</span>       <span class="n">RW</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="user_guide.html"><span class="doc">User Guide</span></a> for in-depth explanations</p></li>
+<li><p><a class="reference internal" href="api_reference.html"><span class="doc">API Reference</span></a> for complete API documentation</p></li>
+<li><p><a class="reference internal" href="faq.html"><span class="doc">Frequently Asked Questions</span></a> for common questions</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user_guide.html" class="btn btn-neutral float-left" title="User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api_reference.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
