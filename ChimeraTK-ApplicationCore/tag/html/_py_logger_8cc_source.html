@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.02</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.08.00</span>
    </div>
   </td>
  </tr>
@@ -112,8 +112,8 @@ $(document).ready(function(){initNavTree('_py_logger_8cc_source.html',''); initR
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_logger.html#a86cd1a4d4fe23a2c6771f892cc6fe459">   12</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_logger.html#a86cd1a4d4fe23a2c6771f892cc6fe459">PyLogger::bind</a>(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; mod) {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// Logger::Severity</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    py::class_&lt;Logger&gt; mPythonLogger(mod, <span class="stringliteral">&quot;Logger&quot;</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    py::enum_&lt;Logger::Severity&gt;(mPythonLogger, <span class="stringliteral">&quot;Severity&quot;</span>)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    py::class_&lt;Logger&gt; mPythonLogger(mod, <span class="stringliteral">&quot;Logger&quot;</span>, py::module_local());</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    py::enum_&lt;Logger::Severity&gt;(mPythonLogger, <span class="stringliteral">&quot;Severity&quot;</span>, py::module_local())</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        .value(<span class="stringliteral">&quot;trace&quot;</span>, <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfa04a75036e9d520bb983c5ed03b8d0182">Logger::Severity::trace</a>)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        .value(<span class="stringliteral">&quot;debug&quot;</span>, <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfaad42f6697b035b7580e4fef93be20b4d">Logger::Severity::debug</a>)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        .value(<span class="stringliteral">&quot;info&quot;</span>, <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfacaf9b6b99962bf5c2264824231d7a40c">Logger::Severity::info</a>)</div>
@@ -121,16 +121,17 @@ $(document).ready(function(){initNavTree('_py_logger_8cc_source.html',''); initR
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        .value(<span class="stringliteral">&quot;error&quot;</span>, <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfacb5e100e5a9a3e7f6d1fd97512215282">Logger::Severity::error</a>)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        .export_values();</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    py::class_&lt;PyLoggerStreamProxy&gt;(mPythonLogger, <span class="stringliteral">&quot;StreamProxy&quot;</span>).def(<span class="stringliteral">&quot;log&quot;</span>, &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_py_logger_stream_proxy.html#a5487a59322ea1f2cdd613e5f6b44f0eb">PyLoggerStreamProxy::log</a>);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    mod.def(<span class="stringliteral">&quot;logger&quot;</span>,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        [](<a class="code hl_enumeration" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a> severity, <span class="keyword">const</span> std::string&amp; context) { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_logger_stream_proxy.html">PyLoggerStreamProxy</a>(severity, context); });</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    py::class_&lt;PyLoggerStreamProxy&gt;(mPythonLogger, <span class="stringliteral">&quot;StreamProxy&quot;</span>, py::module_local())</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        .def(<span class="stringliteral">&quot;log&quot;</span>, &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_py_logger_stream_proxy.html#a5487a59322ea1f2cdd613e5f6b44f0eb">PyLoggerStreamProxy::log</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    mod.def(<span class="stringliteral">&quot;logger&quot;</span>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        [](<a class="code hl_enumeration" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a> severity, <span class="keyword">const</span> std::string&amp; context) { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_logger_stream_proxy.html">PyLoggerStreamProxy</a>(severity, context); });</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} <span class="comment">// namespace ChimeraTK</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace ChimeraTK</span></div>
 <div class="ttc" id="a_py_logger_8h_html"><div class="ttname"><a href="_py_logger_8h.html">PyLogger.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logger_html_a36b1e93ae6ce8a18fd67934832290cdf"><div class="ttname"><a href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">ChimeraTK::Logger::Severity</a></div><div class="ttdeci">Severity</div><div class="ttdoc">Severity levels used by the Logger.</div><div class="ttdef"><b>Definition</b> <a href="_logger_8h_source.html#l00027">Logger.h:27</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_logger_html_a36b1e93ae6ce8a18fd67934832290cdfa04a75036e9d520bb983c5ed03b8d0182"><div class="ttname"><a href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdfa04a75036e9d520bb983c5ed03b8d0182">ChimeraTK::Logger::Severity::trace</a></div><div class="ttdeci">@ trace</div></div>

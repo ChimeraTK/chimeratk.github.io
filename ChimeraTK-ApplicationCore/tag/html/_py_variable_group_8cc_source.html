@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.02</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.08.00</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('_py_variable_group_8cc_source.html',''
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">   16</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_variable_group.html#a0c2d43aa4516daa916f0e55368cf40d1">PyVariableGroup::bind</a>(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; m) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    py::class_&lt;VariableGroup&gt;(m, <span class="stringliteral">&quot;VariableGroupBase&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    py::class_&lt;VariableGroup&gt;(m, <span class="stringliteral">&quot;VariableGroupBase&quot;</span>, py::module_local())</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        .def(<span class="stringliteral">&quot;getName&quot;</span>, &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_entity_owner.html#a081a3af228567c88d8f01e923564ea34">VariableGroup::getName</a>, <span class="stringliteral">&quot;Get the name of the module instance.&quot;</span>)</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        .def(</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="stringliteral">&quot;readAnyGroup&quot;</span>, [](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; self) { <span class="keywordflow">return</span> <a class="code hl_class" href="class_chimera_t_k_1_1_py_read_any_group.html">PyReadAnyGroup</a>(self.<a class="code hl_function" href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">readAnyGroup</a>()); },</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('_py_variable_group_8cc_source.html',''
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// return_value_policy::reference is not enough in constructor factory function.</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// in order to turn off memory management by python, we also need to adapt custom holder type and remove deleter.</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    py::class_&lt;PyVariableGroup, VariableGroup, PyOwningObject, std::unique_ptr&lt;PyVariableGroup, py::nodelete&gt;&gt; vg(</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        m, <span class="stringliteral">&quot;VariableGroup&quot;</span>, py::dynamic_attr(), py::multiple_inheritance());</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        m, <span class="stringliteral">&quot;VariableGroup&quot;</span>, py::dynamic_attr(), py::multiple_inheritance(), py::module_local());</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    vg.def(py::init([](<a class="code hl_class" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>&amp; owner, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; description,</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        <span class="keyword">const</span> std::unordered_set&lt;std::string&gt;&amp; tags) {</div>

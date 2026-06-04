@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.02</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.08.00</span>
    </div>
   </td>
  </tr>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('_py_read_any_group_8cc_source.html',''
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_read_any_group.html#ac93e14566b11df9fd8180a7d40c3592e">   67</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_read_any_group.html#ac93e14566b11df9fd8180a7d40c3592e">PyReadAnyGroup::bind</a>(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; mod) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    py::class_&lt;PyReadAnyGroup&gt;(mod, <span class="stringliteral">&quot;ReadAnyGroup&quot;</span>)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    py::class_&lt;PyReadAnyGroup&gt;(mod, <span class="stringliteral">&quot;ReadAnyGroup&quot;</span>, py::module_local())</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        .def(py::init&lt;&gt;())</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        .def(py::init&lt;py::args&gt;())</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        .def(<span class="stringliteral">&quot;add&quot;</span>, &amp;<a class="code hl_function" href="class_chimera_t_k_1_1_py_read_any_group.html#a3240c390dd23172515e23b7b39129d41">PyReadAnyGroup::add</a>,</div>

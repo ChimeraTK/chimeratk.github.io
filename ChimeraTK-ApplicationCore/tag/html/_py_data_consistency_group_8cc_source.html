@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.07.02</span>
+   <div id="projectname">ChimeraTK-ApplicationCore<span id="projectnumber">&#160;04.08.00</span>
    </div>
   </td>
  </tr>
@@ -112,14 +112,14 @@ $(document).ready(function(){initNavTree('_py_data_consistency_group_8cc_source.
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_chimera_t_k_1_1_py_data_consistency_group.html#a5d8373300e7a202cb9bee741bd74b5c2">   12</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_chimera_t_k_1_1_py_data_consistency_group.html#a5d8373300e7a202cb9bee741bd74b5c2">PyDataConsistencyGroup::bind</a>(<a class="code hl_typedef" href="namespacepybind11.html#ad952f3f47afb586cdc0f250f70f0a565">py::module</a>&amp; mod) {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// DataConsistencyGroup::MatchingMode</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    py::enum_&lt;DataConsistencyGroup::MatchingMode&gt;(mod, <span class="stringliteral">&quot;MatchingMode&quot;</span>)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    py::enum_&lt;DataConsistencyGroup::MatchingMode&gt;(mod, <span class="stringliteral">&quot;MatchingMode&quot;</span>, py::module_local())</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        .value(<span class="stringliteral">&quot;none&quot;</span>, DataConsistencyGroup::MatchingMode::none)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        .value(<span class="stringliteral">&quot;exact&quot;</span>, DataConsistencyGroup::MatchingMode::exact)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        .value(<span class="stringliteral">&quot;historized&quot;</span>, DataConsistencyGroup::MatchingMode::historized)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        .export_values();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// DataConsistencyGroup</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    py::class_&lt;PyDataConsistencyGroup&gt;(mod, <span class="stringliteral">&quot;DataConsistencyGroup&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    py::class_&lt;PyDataConsistencyGroup&gt;(mod, <span class="stringliteral">&quot;DataConsistencyGroup&quot;</span>, py::module_local())</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        .def(py::init&lt;py::args, DataConsistencyGroup::MatchingMode, unsigned&gt;(),</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="stringliteral">&quot;Construct DataConsistencyGroup with given list of accessors&quot;</span>, py::kw_only(),</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            py::arg(<span class="stringliteral">&quot;mode&quot;</span>) = DataConsistencyGroup::MatchingMode::exact,</div>
