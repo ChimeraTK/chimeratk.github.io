@@ -1,56 +1,294 @@
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<html lang="en" data-content_root="../">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>deviceaccess.DataDescriptor &mdash; ChimeraTK-DeviceAccess-PythonBindings 04.02.00 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=86f27845" />
 
-    <title>deviceaccess.DataDescriptor &#8212; ChimeraTK-DeviceAccess-PythonBindings 04.02.00 documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=e7e61a73" />
-    <script src="../_static/documentation_options.js?v=175b9258"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+  
+    <link rel="shortcut icon" href="../_static/ChimeraTK_Favicon.ico"/>
+  
+        <script src="../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=175b9258"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="next" title="deviceaccess.DataType" href="deviceaccess.DataType.html" />
+    <link rel="prev" title="deviceaccess.RegisterInfo" href="deviceaccess.RegisterInfo.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
           
+          
+          <a href="../index.html" class="icon icon-home">
+            ChimeraTK-DeviceAccess-PythonBindings
+              <img src="../_static/ChimeraTK_Logo_whitebg.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                04.02
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#what-is-chimeratk-deviceaccess">What is ChimeraTK DeviceAccess?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#key-features">Key Features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#common-use-cases">Common Use Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#why-python-bindings">Why Python Bindings?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started.html#repository-based-installation-on-debian-ubuntu-systems">Repository-Based Installation on Debian/Ubuntu systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started.html#from-source">From Source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started.html#your-first-program">Your First Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started.html#id1">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started.html#basic-example">Basic Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting_started.html#step-by-step-explanation">Step-by-Step Explanation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide.html#understanding-accessors">Understanding Accessors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#accessor-lifecycle">Accessor Lifecycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#accessor-types">Accessor Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide.html#type-conversion">Type Conversion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#automatic-type-conversion">Automatic Type Conversion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide.html#transfer-groups">Transfer Groups</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#motivation">Motivation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#solution-transfer-groups">Solution: Transfer Groups</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide.html#data-consistency-groups">Data Consistency Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide.html#device-maps">Device Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#basic-syntax">Basic Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide.html#best-practices">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#basic-scalar-register-access">Basic Scalar Register Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#working-with-1d-accessors">Working with 1D Accessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#using-different-device-backends">Using Different Device Backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#used-map-files">Used Map Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api_reference.html#api-index">API Index</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.setDMapFilePath.html">deviceaccess.setDMapFilePath</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.setDMapFilePath.html#deviceaccess.setDMapFilePath"><code class="docutils literal notranslate"><span class="pre">setDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.getDMapFilePath.html">deviceaccess.getDMapFilePath</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.getDMapFilePath.html#deviceaccess.getDMapFilePath"><code class="docutils literal notranslate"><span class="pre">getDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.Device.html">deviceaccess.Device</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.Device.html#deviceaccess.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.ScalarRegisterAccessor.html">deviceaccess.ScalarRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.ScalarRegisterAccessor.html#deviceaccess.ScalarRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.OneDRegisterAccessor.html">deviceaccess.OneDRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.OneDRegisterAccessor.html#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.TwoDRegisterAccessor.html">deviceaccess.TwoDRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.TwoDRegisterAccessor.html#deviceaccess.TwoDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.VoidRegisterAccessor.html">deviceaccess.VoidRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.VoidRegisterAccessor.html#deviceaccess.VoidRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.TransferGroup.html">deviceaccess.TransferGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.TransferGroup.html#deviceaccess.TransferGroup"><code class="docutils literal notranslate"><span class="pre">TransferGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.ReadAnyGroup.html">deviceaccess.ReadAnyGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.ReadAnyGroup.html#deviceaccess.ReadAnyGroup"><code class="docutils literal notranslate"><span class="pre">ReadAnyGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.DataConsistencyGroup.html">deviceaccess.DataConsistencyGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.DataConsistencyGroup.html#deviceaccess.DataConsistencyGroup"><code class="docutils literal notranslate"><span class="pre">DataConsistencyGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.RegisterCatalogue.html">deviceaccess.RegisterCatalogue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.RegisterCatalogue.html#deviceaccess.RegisterCatalogue"><code class="docutils literal notranslate"><span class="pre">RegisterCatalogue</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.RegisterInfo.html">deviceaccess.RegisterInfo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.RegisterInfo.html#deviceaccess.RegisterInfo"><code class="docutils literal notranslate"><span class="pre">RegisterInfo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">deviceaccess.DataDescriptor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviceaccess.DataDescriptor"><code class="docutils literal notranslate"><span class="pre">DataDescriptor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.DataType.html">deviceaccess.DataType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.DataType.html#deviceaccess.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.VersionNumber.html">deviceaccess.VersionNumber</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.VersionNumber.html#deviceaccess.VersionNumber"><code class="docutils literal notranslate"><span class="pre">VersionNumber</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.AccessMode.html">deviceaccess.AccessMode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.AccessMode.html#deviceaccess.AccessMode"><code class="docutils literal notranslate"><span class="pre">AccessMode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deviceaccess.DataValidity.html">deviceaccess.DataValidity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="deviceaccess.DataValidity.html#deviceaccess.DataValidity"><code class="docutils literal notranslate"><span class="pre">DataValidity</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api_reference.html#core-classes">Core Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_reference.html#type-mapping">Type Mapping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api_reference.html#module-deviceaccess">Main Module: deviceaccess</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.AccessMode"><code class="docutils literal notranslate"><span class="pre">AccessMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.BackendRegisterInfoBase"><code class="docutils literal notranslate"><span class="pre">BackendRegisterInfoBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.DataConsistencyGroup"><code class="docutils literal notranslate"><span class="pre">DataConsistencyGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.DataDescriptor"><code class="docutils literal notranslate"><span class="pre">DataDescriptor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.DataValidity"><code class="docutils literal notranslate"><span class="pre">DataValidity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.FundamentalType"><code class="docutils literal notranslate"><span class="pre">FundamentalType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.MatchingMode"><code class="docutils literal notranslate"><span class="pre">MatchingMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.Notification"><code class="docutils literal notranslate"><span class="pre">Notification</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.ReadAnyGroup"><code class="docutils literal notranslate"><span class="pre">ReadAnyGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.RegisterCatalogue"><code class="docutils literal notranslate"><span class="pre">RegisterCatalogue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.RegisterInfo"><code class="docutils literal notranslate"><span class="pre">RegisterInfo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.RegisterPath"><code class="docutils literal notranslate"><span class="pre">RegisterPath</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.ScalarRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.ThreadInterrupted"><code class="docutils literal notranslate"><span class="pre">ThreadInterrupted</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.TransferElementBase"><code class="docutils literal notranslate"><span class="pre">TransferElementBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.TransferElementID"><code class="docutils literal notranslate"><span class="pre">TransferElementID</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.TransferGroup"><code class="docutils literal notranslate"><span class="pre">TransferGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.TwoDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.VersionNumber"><code class="docutils literal notranslate"><span class="pre">VersionNumber</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.VersionNumberBase"><code class="docutils literal notranslate"><span class="pre">VersionNumberBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.VoidRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.getDMapFilePath"><code class="docutils literal notranslate"><span class="pre">getDMapFilePath()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#deviceaccess.setDMapFilePath"><code class="docutils literal notranslate"><span class="pre">setDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api_reference.html#legacy-module-mtca4u">Legacy Module: mtca4u</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#mtca4u.get_info"><code class="docutils literal notranslate"><span class="pre">get_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#mtca4u.set_dmap_location"><code class="docutils literal notranslate"><span class="pre">set_dmap_location()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#mtca4u.get_dmap_location"><code class="docutils literal notranslate"><span class="pre">get_dmap_location()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api_reference.html#mtca4u.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api_reference.html#id35">See Also</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#installation-and-setup">Installation and Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#basic-usage">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#accessors-and-type-conversion">Accessors and Type Conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#device-maps">Device Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#transfer-groups">Transfer Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#performance-and-optimization">Performance and Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#compatibility-and-versions">Compatibility and Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#data-handling">Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#still-have-questions">Still Have Questions?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html#performance-issues">Performance Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../troubleshooting.html#read-write-operations-slow">Read/Write Operations Slow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html#getting-help">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
 
-          <div class="body" role="main">
-            
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ChimeraTK-DeviceAccess-PythonBindings</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../api_reference.html">API Reference</a></li>
+      <li class="breadcrumb-item active">deviceaccess.DataDescriptor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/deviceaccess.DataDescriptor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <section id="deviceaccess-datadescriptor">
-<h1>deviceaccess.DataDescriptor<a class="headerlink" href="#deviceaccess-datadescriptor" title="Link to this heading">¶</a></h1>
+<h1>deviceaccess.DataDescriptor<a class="headerlink" href="#deviceaccess-datadescriptor" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="deviceaccess.DataDescriptor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deviceaccess.</span></span><span class="sig-name descname"><span class="pre">DataDescriptor</span></span><a class="headerlink" href="#deviceaccess.DataDescriptor" title="Link to this definition">¶</a></dt>
-<dd><dl class="py method">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deviceaccess.</span></span><span class="sig-name descname"><span class="pre">DataDescriptor</span></span><a class="headerlink" href="#deviceaccess.DataDescriptor" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_object</span></code></p>
+<dl class="py method">
 <dt class="sig sig-object py" id="deviceaccess.DataDescriptor.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deviceaccess.DataDescriptor.__init__" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deviceaccess.DataDescriptor.__init__" title="Link to this definition"></a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
 <li><p>__init__(self: deviceaccess.DataDescriptor, arg0: deviceaccess.DataDescriptor) -&gt; None</p></li>
-<li><p>__init__(self: deviceaccess.DataDescriptor, arg0: deviceaccess.DataType) -&gt; None</p></li>
+<li><p>__init__(self: deviceaccess.DataDescriptor, type: deviceaccess.DataType) -&gt; None</p></li>
 </ol>
 <p>Construct a DataDescriptor from a DataType object.</p>
 <blockquote>
 <div><p>The DataDescriptor will describe the passed DataType with no raw type.</p>
-<dl class="field-list simple">
-<dt class="field-odd">param type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The data type to describe.</p>
-</dd>
-<dt class="field-even">type type<span class="colon">:</span></dt>
-<dd class="field-even"><p>DataType</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>type (DataType): The data type to describe.</p>
 </dd>
 </dl>
 </div></blockquote>
@@ -64,67 +302,236 @@
 </dd></dl>
 
 <p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#id0" title="deviceaccess.DataDescriptor.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.fundamentalType" title="deviceaccess.DataDescriptor.fundamentalType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fundamentalType</span></code></a>(self)</p></td>
+<td><p>Get the fundamental data type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.isIntegral" title="deviceaccess.DataDescriptor.isIntegral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isIntegral</span></code></a>(self)</p></td>
+<td><p>Return whether the data is integral or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.isSigned" title="deviceaccess.DataDescriptor.isSigned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSigned</span></code></a>(self)</p></td>
+<td><p>Return whether the data is signed or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.minimumDataType" title="deviceaccess.DataDescriptor.minimumDataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimumDataType</span></code></a>(self)</p></td>
+<td><p>Get the minimum data type required to represent the described data type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.nDigits" title="deviceaccess.DataDescriptor.nDigits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nDigits</span></code></a>(self)</p></td>
+<td><p>Return the approximate maximum number of digits needed to represent the value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.nFractionalDigits" title="deviceaccess.DataDescriptor.nFractionalDigits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nFractionalDigits</span></code></a>(self)</p></td>
+<td><p>Return the approximate maximum number of digits after the decimal dot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.rawDataType" title="deviceaccess.DataDescriptor.rawDataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rawDataType</span></code></a>(self)</p></td>
+<td><p>Get the raw data type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.setRawDataType" title="deviceaccess.DataDescriptor.setRawDataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setRawDataType</span></code></a>(self, rawDataType)</p></td>
+<td><p>Set the raw data type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.DataDescriptor.transportLayerDataType" title="deviceaccess.DataDescriptor.transportLayerDataType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transportLayerDataType</span></code></a>(self)</p></td>
+<td><p>Get the data type on the transport layer.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Link to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>__init__(self: deviceaccess.DataDescriptor, arg0: deviceaccess.DataDescriptor) -&gt; None</p></li>
+<li><p>__init__(self: deviceaccess.DataDescriptor, type: deviceaccess.DataType) -&gt; None</p></li>
+</ol>
+<p>Construct a DataDescriptor from a DataType object.</p>
+<blockquote>
+<div><p>The DataDescriptor will describe the passed DataType with no raw type.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>type (DataType): The data type to describe.</p>
+</dd>
+</dl>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>__init__(self: deviceaccess.DataDescriptor) -&gt; None</p></li>
+</ol>
+<p>Default constructor.</p>
+<blockquote>
+<div><p>Initializes the DataDescriptor with fundamental type set to “undefined”.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.fundamentalType">
+<span class="sig-name descname"><span class="pre">fundamentalType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ChimeraTK::DataDescriptor::FundamentalType</span></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.fundamentalType" title="Link to this definition"></a></dt>
+<dd><p>Get the fundamental data type.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Returns:</dt><dd><p>FundamentalType: The fundamental data type.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.isIntegral">
+<span class="sig-name descname"><span class="pre">isIntegral</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.isIntegral" title="Link to this definition"></a></dt>
+<dd><p>Return whether the data is integral or not.</p>
+<blockquote>
+<div><p>May only be called for numeric data types. Examples: int or float.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>bool: True if the data is integral, false otherwise.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.isSigned">
+<span class="sig-name descname"><span class="pre">isSigned</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.isSigned" title="Link to this definition"></a></dt>
+<dd><p>Return whether the data is signed or not.</p>
+<blockquote>
+<div><p>Only valid for numeric data types.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>bool: True if the data is signed, false otherwise.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.minimumDataType">
+<span class="sig-name descname"><span class="pre">minimumDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="deviceaccess.DataType.html#deviceaccess.DataType" title="deviceaccess.DataType"><span class="pre">deviceaccess.DataType</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.minimumDataType" title="Link to this definition"></a></dt>
+<dd><p>Get the minimum data type required to represent the described data type.</p>
+<blockquote>
+<div><p>This is the minimum data type needed in the host CPU to represent the value.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>DataType: The minimum required data type.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.nDigits">
+<span class="sig-name descname"><span class="pre">nDigits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.nDigits" title="Link to this definition"></a></dt>
+<dd><p>Return the approximate maximum number of digits needed to represent the value.</p>
+<blockquote>
+<div><p>This includes a decimal dot (if not an integral data type) and the sign.
+May only be called for numeric data types.</p>
+<p>Note: This number should only be used for displaying purposes. For some data types
+this might be a large number (e.g. 300), which indicates that a different representation
+than plain decimal numbers should be chosen.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: Approximate maximum number of digits (base 10).</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.nFractionalDigits">
+<span class="sig-name descname"><span class="pre">nFractionalDigits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.nFractionalDigits" title="Link to this definition"></a></dt>
+<dd><p>Return the approximate maximum number of digits after the decimal dot.</p>
+<blockquote>
+<div><p>This is expressed in base 10 and excludes the decimal dot itself.
+May only be called for non-integral numeric data types.</p>
+<p>Note: This number should only be used for displaying purposes. There is no guarantee
+that the full precision can be displayed with the given number of digits.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: Approximate maximum number of fractional digits (base 10).</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.rawDataType">
+<span class="sig-name descname"><span class="pre">rawDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="deviceaccess.DataType.html#deviceaccess.DataType" title="deviceaccess.DataType"><span class="pre">deviceaccess.DataType</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.rawDataType" title="Link to this definition"></a></dt>
+<dd><p>Get the raw data type.</p>
+<blockquote>
+<div><p>This describes the data conversion from ‘cooked’ to raw data type on the device.
+The conversion does not change the shape of the data but describes the data type of
+a single data point.</p>
+<p>Most backends will have type ‘none’ (no raw data conversion available).</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>DataType: The raw data type.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.setRawDataType">
+<span class="sig-name descname"><span class="pre">setRawDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawDataType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="deviceaccess.DataType.html#deviceaccess.DataType" title="deviceaccess.DataType"><span class="pre">deviceaccess.DataType</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.setRawDataType" title="Link to this definition"></a></dt>
+<dd><p>Set the raw data type.</p>
+<blockquote>
+<div><p>This is useful e.g. when a decorated register should no longer allow raw access,
+in which case you should set DataType.none.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>rawDataType (DataType): The raw data type to set.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deviceaccess.DataDescriptor.transportLayerDataType">
+<span class="sig-name descname"><span class="pre">transportLayerDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.DataDescriptor" title="deviceaccess.DataDescriptor"><span class="pre">deviceaccess.DataDescriptor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="deviceaccess.DataType.html#deviceaccess.DataType" title="deviceaccess.DataType"><span class="pre">deviceaccess.DataType</span></a></span></span><a class="headerlink" href="#deviceaccess.DataDescriptor.transportLayerDataType" title="Link to this definition"></a></dt>
+<dd><p>Get the data type on the transport layer.</p>
+<blockquote>
+<div><p>This is always a 1D array of the specific data type. The raw transfer might contain
+data for more than one register.</p>
+<dl class="simple">
+<dt>Examples:</dt><dd><ul class="simple">
+<li><p>The multiplexed data of a 2D array</p></li>
+<li><p>A text string containing data for multiple scalars mapped to different registers</p></li>
+<li><p>The byte sequence of a “struct” with data for multiple registers of different types</p></li>
+</ul>
+</dd>
+</dl>
+<p>Note: Currently all implementations return ‘none’. There is no public API to access
+the transport layer data yet.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>DataType: The transport layer data type.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
 </dd></dl>
 
 </section>
 
 
+           </div>
           </div>
-          
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="deviceaccess.RegisterInfo.html" class="btn btn-neutral float-left" title="deviceaccess.RegisterInfo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="deviceaccess.DataType.html" class="btn btn-neutral float-right" title="deviceaccess.DataType" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="../index.html">
-              <img class="logo" src="../_static/DESY_logo.png" alt="Logo"/>
-            </a></p><h3>Navigation</h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../mtca4u.html">mtca4u module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../deviceaccess.html">deviceaccess module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../matlab.html">Using the Python bindings with Matlab</a></li>
-</ul>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-<h1 class="logo"><a href="../index.html">ChimeraTK-DeviceAccess-PythonBindings</a></h1>
-
-
-
-
-
-
-
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project <chimeratk-support@desy.de>.
-      
-      |
-      <a href="../_sources/generated/deviceaccess.DataDescriptor.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>
