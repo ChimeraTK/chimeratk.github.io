@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('oven__sim_8py_source.html',''); initRe
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"># This is a simple simulator script for an oven.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"># It is meant to run in parallel to the demo_example server.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"># </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">#</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"># Both are accessing the same device using the same DMAP file. Since the device is</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"># backed by the SharedMemoryDummy, it is possible to react to the setpoint provided</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"># by the demo_example server and provide values back to it. The SharedMemoryDummy</span></div>
@@ -126,11 +126,11 @@ $(document).ready(function(){initNavTree('oven__sim_8py_source.html',''); initRe
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a2c314f29ee78a56fb9676642ed94fd9b">   26</a></span>dev = da.Device(<span class="stringliteral">&#39;device&#39;</span>)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>dev.open()</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">#cooling rate c</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">   30</a></span>c=0.001 <span class="comment">#deg /(deg*s)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"># cooling rate c</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">   30</a></span>c = 0.001  <span class="comment"># deg /(deg*s)</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">#heating rate h</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7">   33</a></span>h=0.0003 <span class="comment">#deg/(A*s)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"># heating rate h</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7">   33</a></span>h = 0.0003  <span class="comment"># deg/(A*s)</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903">   35</a></span>ovenTemp = 25.</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a789a3926727c9ac7cc25eb595022cd1f">   36</a></span>environment = 25.</div>
@@ -150,9 +150,9 @@ $(document).ready(function(){initNavTree('oven__sim_8py_source.html',''); initRe
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    currentSetpoint.read()</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">   53</a></span>    I = currentSetpoint[0];</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a5429fd646dac622dc00c2343cd058fab">   54</a></span>    tempChange = 1 * (I*h +                  (environment-ovenTemp)*c)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">#   1s   current*heating rate    deltaT * cooling rate</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">   53</a></span>    I = currentSetpoint[0]</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespaceoven__sim.html#a5429fd646dac622dc00c2343cd058fab">   54</a></span>    tempChange = 1 * (I * h + (environment - ovenTemp) * c)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">#   1s   current*heating rate    deltaT * cooling rate</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    ovenTemp = ovenTemp + tempChange</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    tempratureReadback.setAndWrite(ovenTemp)</div>
@@ -161,8 +161,8 @@ $(document).ready(function(){initNavTree('oven__sim_8py_source.html',''); initRe
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    currentReadback.setAndWrite(I + random.gauss(0.0, 0.2))</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    temperatureTop.setAndWrite(ovenTemp + random.gauss(0.0, 0.2))</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    temperatureBottom.setAndWrite(ovenTemp + random.gauss(0.0, 0.2))</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    temperatureOutside.setAndWrite(environment + random.gauss(0.0,  0.2))</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    print(<span class="stringliteral">&#39;change &#39;</span> + str(tempChange) +<span class="stringliteral">&#39;, new temp &#39;</span> +str(ovenTemp))</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    temperatureOutside.setAndWrite(environment + random.gauss(0.0, 0.2))</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    print(<span class="stringliteral">&#39;change &#39;</span> + str(tempChange) + <span class="stringliteral">&#39;, new temp &#39;</span> + str(ovenTemp))</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    time.sleep(1)</div>
 </div><!-- fragment --></div><!-- contents -->

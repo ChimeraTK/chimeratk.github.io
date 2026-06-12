@@ -107,118 +107,118 @@ $(document).ready(function(){initNavTree('draw_module_connections_8py_source.htm
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#ace71761e064d7eae687a4c04360ad6e8">    8</a></span>moduleConnections = {}</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="" data-end="">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">   10</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">parseVariable</a>(node) :</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  varDir = node.find(ns+<span class="stringliteral">&#39;direction&#39;</span>).text</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  feeder = <span class="keywordtype">None</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  moduleList = set()</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">if</span> varDir == <span class="stringliteral">&#39;control_system_to_application&#39;</span> <span class="keywordflow">or</span> varDir == <span class="stringliteral">&#39;control_system_to_application_with_return&#39;</span> :</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    feeder = <span class="stringliteral">&#39;ControlSystem&#39;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">#  else :</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">#    moduleList.add(&quot;ControlSystem&quot;)</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordflow">for</span> peer <span class="keywordflow">in</span> node.find(ns+<span class="stringliteral">&#39;connections&#39;</span>) :</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    peerType = peer.attrib[<span class="stringliteral">&#39;type&#39;</span>]</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    peerDir = peer.attrib[<span class="stringliteral">&#39;direction&#39;</span>]</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> peerType == <span class="stringliteral">&quot;ApplicationModule&quot;</span> <span class="keywordflow">or</span> peerType == <span class="stringliteral">&quot;Device&quot;</span> :</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keywordflow">if</span> peerType == <span class="stringliteral">&quot;ApplicationModule&quot;</span> :</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        peerName = peer.attrib[<span class="stringliteral">&#39;class&#39;</span>]</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keywordflow">else</span> :</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        peerName = <span class="stringliteral">&#39;Device:&#39;</span>+peer.attrib[<span class="stringliteral">&#39;name&#39;</span>]</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordflow">if</span> peerDir == <span class="stringliteral">&#39;consuming&#39;</span> :</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        moduleList.add(peerName)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keywordflow">else</span> :</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">if</span> feeder != <span class="keywordtype">None</span> :</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>          print(<span class="stringliteral">&quot;ERROR: Found two feeders!&quot;</span>)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>          print(node.attrib[<span class="stringliteral">&#39;name&#39;</span>])</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>          sys.exit(1)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        feeder = peerName</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">if</span> feeder == <span class="keywordtype">None</span> :</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    print(<span class="stringliteral">&quot;ERROR: No feeders found!&quot;</span>)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    print(node.attrib[<span class="stringliteral">&#39;name&#39;</span>])</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    sys.exit(1)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordflow">for</span> m <span class="keywordflow">in</span> moduleList :</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span> <span class="keywordflow">not</span> m <span class="keywordflow">in</span> moduleConnections.keys():</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      moduleConnections[m] = set()</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">if</span> <span class="keywordflow">not</span> feeder <span class="keywordflow">in</span> moduleConnections.keys():</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    moduleConnections[feeder] = set()</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">for</span> m <span class="keywordflow">in</span> moduleList :</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    moduleConnections[feeder].add(m)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="" data-end="">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">   11</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">parseVariable</a>(node):</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    varDir = node.find(ns + <span class="stringliteral">&#39;direction&#39;</span>).text</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    feeder = <span class="keywordtype">None</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    moduleList = set()</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> varDir == <span class="stringliteral">&#39;control_system_to_application&#39;</span> <span class="keywordflow">or</span> varDir == <span class="stringliteral">&#39;control_system_to_application_with_return&#39;</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        feeder = <span class="stringliteral">&#39;ControlSystem&#39;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">#  else :</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">#    moduleList.add(&quot;ControlSystem&quot;)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">for</span> peer <span class="keywordflow">in</span> node.find(ns + <span class="stringliteral">&#39;connections&#39;</span>):</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        peerType = peer.attrib[<span class="stringliteral">&#39;type&#39;</span>]</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        peerDir = peer.attrib[<span class="stringliteral">&#39;direction&#39;</span>]</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">if</span> peerType == <span class="stringliteral">&quot;ApplicationModule&quot;</span> <span class="keywordflow">or</span> peerType == <span class="stringliteral">&quot;Device&quot;</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">if</span> peerType == <span class="stringliteral">&quot;ApplicationModule&quot;</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                peerName = peer.attrib[<span class="stringliteral">&#39;class&#39;</span>]</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                peerName = <span class="stringliteral">&#39;Device:&#39;</span> + peer.attrib[<span class="stringliteral">&#39;name&#39;</span>]</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> peerDir == <span class="stringliteral">&#39;consuming&#39;</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                moduleList.add(peerName)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">if</span> feeder <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    print(<span class="stringliteral">&quot;ERROR: Found two feeders!&quot;</span>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    print(node.attrib[<span class="stringliteral">&#39;name&#39;</span>])</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    sys.exit(1)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                feeder = peerName</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> feeder <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        print(<span class="stringliteral">&quot;ERROR: No feeders found!&quot;</span>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        print(node.attrib[<span class="stringliteral">&#39;name&#39;</span>])</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        sys.exit(1)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">for</span> m <span class="keywordflow">in</span> moduleList:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span> m <span class="keywordflow">not</span> <span class="keywordflow">in</span> moduleConnections.keys():</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            moduleConnections[m] = set()</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> feeder <span class="keywordflow">not</span> <span class="keywordflow">in</span> moduleConnections.keys():</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        moduleConnections[feeder] = set()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">for</span> m <span class="keywordflow">in</span> moduleList:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        moduleConnections[feeder].add(m)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 </div>
 <div class="foldopen" id="foldopen00055" data-start="" data-end="">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">   55</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">parseDirectory</a>(subtree) :</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">   55</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">parseDirectory</a>(subtree):</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">for</span> node <span class="keywordflow">in</span> subtree :</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">for</span> node <span class="keywordflow">in</span> subtree:</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> node.tag == ns+<span class="stringliteral">&#39;directory&#39;</span> :</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <a class="code hl_function" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">parseDirectory</a>(node)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">elif</span> node.tag == ns+<span class="stringliteral">&#39;variable&#39;</span> :</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <a class="code hl_function" href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">parseVariable</a>(node)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span> node.tag == ns + <span class="stringliteral">&#39;directory&#39;</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_function" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">parseDirectory</a>(node)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">elif</span> node.tag == ns + <span class="stringliteral">&#39;variable&#39;</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_function" href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">parseVariable</a>(node)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#af4f2c4644c32444f8c4b8d9f2642bd8c">   65</a></span>tree = ET.parse(<span class="stringliteral">&#39;llrfctrl.xml&#39;</span>)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#abfbed52cde3f71396dbf5c6942036fc8">   66</a></span>root = tree.getroot()</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><a class="code hl_function" href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">parseDirectory</a>(root)</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>print(<span class="stringliteral">&quot;digraph {&quot;</span>)</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="" data-end="">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">   72</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">makeNodeName</a>(label) :</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  name = label.replace(<span class="stringliteral">&#39;:&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  name = name.replace(<span class="stringliteral">&#39;/&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  name = name.replace(<span class="stringliteral">&#39;&lt;&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  name = name.replace(<span class="stringliteral">&#39;&gt;&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  name = name.replace(<span class="stringliteral">&#39;,&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  name = name.replace(<span class="stringliteral">&#39; &#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordflow">return</span> name</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="" data-end="">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">   73</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">makeNodeName</a>(label):</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    name = label.replace(<span class="stringliteral">&#39;:&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    name = name.replace(<span class="stringliteral">&#39;/&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    name = name.replace(<span class="stringliteral">&#39;&lt;&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    name = name.replace(<span class="stringliteral">&#39;&gt;&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    name = name.replace(<span class="stringliteral">&#39;,&#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    name = name.replace(<span class="stringliteral">&#39; &#39;</span>, <span class="stringliteral">&#39;_&#39;</span>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> name</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 </div>
-<div class="foldopen" id="foldopen00082" data-start="" data-end="">
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">   82</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">defineNode</a>(label) :</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> <span class="keywordflow">not</span> label <span class="keywordflow">in</span> nodeIds.keys() :</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    nodeIds[label] = <a class="code hl_function" href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">makeNodeName</a>(label)</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    print(nodeIds[label] + <span class="stringliteral">&#39; [label=&quot;&#39;</span>+label+<span class="stringliteral">&#39;&quot;, style=filled&#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> label.startswith(<span class="stringliteral">&quot;Device:&quot;</span>) :</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      print(<span class="stringliteral">&#39;, fillcolor=silver&#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">else</span> :</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      print(<span class="stringliteral">&#39;, fillcolor=lightgreen&#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    print(<span class="stringliteral">&#39;]&#39;</span>)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="" data-end="">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">   83</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">defineNode</a>(label):</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">if</span> label <span class="keywordflow">not</span> <span class="keywordflow">in</span> nodeIds.keys():</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        nodeIds[label] = <a class="code hl_function" href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">makeNodeName</a>(label)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        print(nodeIds[label] + <span class="stringliteral">&#39; [label=&quot;&#39;</span> + label + <span class="stringliteral">&#39;&quot;, style=filled&#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span> label.startswith(<span class="stringliteral">&quot;Device:&quot;</span>):</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            print(<span class="stringliteral">&#39;, fillcolor=silver&#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            print(<span class="stringliteral">&#39;, fillcolor=lightgreen&#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        print(<span class="stringliteral">&#39;]&#39;</span>)</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#afb956c959de6a44614eb77a7f0223180">   93</a></span>nodeIds = {}</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordflow">for</span> source <span class="keywordflow">in</span> moduleConnections.keys() :</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <a class="code hl_function" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">defineNode</a>(source)</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordflow">for</span> target <span class="keywordflow">in</span> moduleConnections[source] :</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">defineNode</a>(target)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#afb956c959de6a44614eb77a7f0223180">   94</a></span>nodeIds = {}</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordflow">for</span> source <span class="keywordflow">in</span> moduleConnections.keys():</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">defineNode</a>(source)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">for</span> target <span class="keywordflow">in</span> moduleConnections[source]:</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_function" href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">defineNode</a>(target)</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keywordflow">for</span> source <span class="keywordflow">in</span> moduleConnections.keys() :</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">if</span> source == <span class="keywordtype">None</span> :</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">continue</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a2923c4ae38c2909beb0db4dfa1135d4c">  103</a></span>  print(nodeIds[source] + <span class="stringliteral">&#39; -&gt; { &#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordflow">for</span> target <span class="keywordflow">in</span> moduleConnections[source] :</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    print(nodeIds[target]+<span class="stringliteral">&#39; &#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  print(<span class="stringliteral">&#39;}&#39;</span>)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>print(<span class="stringliteral">&#39;}&#39;</span>)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordflow">for</span> source <span class="keywordflow">in</span> moduleConnections.keys():</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">if</span> source <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">continue</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespacedraw_module_connections.html#a2923c4ae38c2909beb0db4dfa1135d4c">  104</a></span>    print(nodeIds[source] + <span class="stringliteral">&#39; -&gt; { &#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">for</span> target <span class="keywordflow">in</span> moduleConnections[source]:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        print(nodeIds[target] + <span class="stringliteral">&#39; &#39;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    print(<span class="stringliteral">&#39;}&#39;</span>)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>print(<span class="stringliteral">&#39;}&#39;</span>)</div>
 <div class="ttc" id="anamespacedraw_module_connections_html_a2eeca40c05cb8df7e0357a32812e42be"><div class="ttname"><a href="namespacedraw_module_connections.html#a2eeca40c05cb8df7e0357a32812e42be">drawModuleConnections.parseDirectory</a></div><div class="ttdeci">parseDirectory(subtree)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00055">drawModuleConnections.py:55</a></div></div>
-<div class="ttc" id="anamespacedraw_module_connections_html_a82a497606d61374b700ac6edf50e025a"><div class="ttname"><a href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">drawModuleConnections.makeNodeName</a></div><div class="ttdeci">makeNodeName(label)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00072">drawModuleConnections.py:72</a></div></div>
-<div class="ttc" id="anamespacedraw_module_connections_html_a9db315b1d0dd39f239ff77a2ccdae90b"><div class="ttname"><a href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">drawModuleConnections.defineNode</a></div><div class="ttdeci">defineNode(label)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00082">drawModuleConnections.py:82</a></div></div>
-<div class="ttc" id="anamespacedraw_module_connections_html_ab2dc42e6be1932c39ffd8e8ba532741b"><div class="ttname"><a href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">drawModuleConnections.parseVariable</a></div><div class="ttdeci">parseVariable(node)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00010">drawModuleConnections.py:10</a></div></div>
+<div class="ttc" id="anamespacedraw_module_connections_html_a82a497606d61374b700ac6edf50e025a"><div class="ttname"><a href="namespacedraw_module_connections.html#a82a497606d61374b700ac6edf50e025a">drawModuleConnections.makeNodeName</a></div><div class="ttdeci">makeNodeName(label)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00073">drawModuleConnections.py:73</a></div></div>
+<div class="ttc" id="anamespacedraw_module_connections_html_a9db315b1d0dd39f239ff77a2ccdae90b"><div class="ttname"><a href="namespacedraw_module_connections.html#a9db315b1d0dd39f239ff77a2ccdae90b">drawModuleConnections.defineNode</a></div><div class="ttdeci">defineNode(label)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00083">drawModuleConnections.py:83</a></div></div>
+<div class="ttc" id="anamespacedraw_module_connections_html_ab2dc42e6be1932c39ffd8e8ba532741b"><div class="ttname"><a href="namespacedraw_module_connections.html#ab2dc42e6be1932c39ffd8e8ba532741b">drawModuleConnections.parseVariable</a></div><div class="ttdeci">parseVariable(node)</div><div class="ttdef"><b>Definition</b> <a href="draw_module_connections_8py_source.html#l00011">drawModuleConnections.py:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

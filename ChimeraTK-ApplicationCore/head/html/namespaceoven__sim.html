@@ -120,9 +120,9 @@ Variables</h2></td></tr>
 <tr class="separator:a095db98eb0c78fadeed7afacd9c95904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4debf0ae9e4557a493fe9d87701735c" id="r_ab4debf0ae9e4557a493fe9d87701735c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoven__sim.html#ab4debf0ae9e4557a493fe9d87701735c">temperatureOutside</a> = dev.getScalarRegisterAccessor(np.double, &quot;SENSORS.TEMPERATURE4.DUMMY_WRITEABLE&quot;)</td></tr>
 <tr class="separator:ab4debf0ae9e4557a493fe9d87701735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0033fb4826c41421eff73b6b4a202ee3" id="r_a0033fb4826c41421eff73b6b4a202ee3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">I</a> = <a class="el" href="namespaceoven__sim.html#aae3f175162279140669f597c72d1ad89">currentSetpoint</a>[0];</td></tr>
+<tr class="memitem:a0033fb4826c41421eff73b6b4a202ee3" id="r_a0033fb4826c41421eff73b6b4a202ee3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">I</a> = <a class="el" href="namespaceoven__sim.html#aae3f175162279140669f597c72d1ad89">currentSetpoint</a>[0]</td></tr>
 <tr class="separator:a0033fb4826c41421eff73b6b4a202ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5429fd646dac622dc00c2343cd058fab" id="r_a5429fd646dac622dc00c2343cd058fab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoven__sim.html#a5429fd646dac622dc00c2343cd058fab">tempChange</a> = 1 * (<a class="el" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">I</a>*<a class="el" href="namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7">h</a> + (<a class="el" href="namespaceoven__sim.html#a789a3926727c9ac7cc25eb595022cd1f">environment</a>-<a class="el" href="namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903">ovenTemp</a>)*<a class="el" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">c</a>)</td></tr>
+<tr class="memitem:a5429fd646dac622dc00c2343cd058fab" id="r_a5429fd646dac622dc00c2343cd058fab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoven__sim.html#a5429fd646dac622dc00c2343cd058fab">tempChange</a> = 1 * (<a class="el" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">I</a> * <a class="el" href="namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7">h</a> + (<a class="el" href="namespaceoven__sim.html#a789a3926727c9ac7cc25eb595022cd1f">environment</a> - <a class="el" href="namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903">ovenTemp</a>) * <a class="el" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">c</a>)</td></tr>
 <tr class="separator:a5429fd646dac622dc00c2343cd058fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -229,7 +229,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oven_sim.I = <a class="el" href="namespaceoven__sim.html#aae3f175162279140669f597c72d1ad89">currentSetpoint</a>[0];</td>
+          <td class="memname">oven_sim.I = <a class="el" href="namespaceoven__sim.html#aae3f175162279140669f597c72d1ad89">currentSetpoint</a>[0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -261,7 +261,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oven_sim.tempChange = 1 * (<a class="el" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">I</a>*<a class="el" href="namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7">h</a> + (<a class="el" href="namespaceoven__sim.html#a789a3926727c9ac7cc25eb595022cd1f">environment</a>-<a class="el" href="namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903">ovenTemp</a>)*<a class="el" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">c</a>)</td>
+          <td class="memname">int oven_sim.tempChange = 1 * (<a class="el" href="namespaceoven__sim.html#a0033fb4826c41421eff73b6b4a202ee3">I</a> * <a class="el" href="namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7">h</a> + (<a class="el" href="namespaceoven__sim.html#a789a3926727c9ac7cc25eb595022cd1f">environment</a> - <a class="el" href="namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903">ovenTemp</a>) * <a class="el" href="namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c">c</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

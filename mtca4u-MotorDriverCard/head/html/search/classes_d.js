@@ -8,7 +8,7 @@ var searchData=
   ['spiviapcietestfixture_5',['SPIviaPCIeTestFixture',['../class_s_p_ivia_p_c_ie_test_fixture.html',1,'']]],
   ['stallguardcontroldata_6',['StallGuardControlData',['../classmtca4u_1_1_stall_guard_control_data.html',1,'mtca4u']]],
   ['state_7',['State',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html',1,'ChimeraTK::MotorDriver::utility::StateMachine']]],
-  ['statemachine_8',['statemachine',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::utility::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
+  ['statemachine_8',['statemachine',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::utility::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
   ['steppermotor_9',['StepperMotor',['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html',1,'ChimeraTK::MotorDriver']]],
   ['steppermotorchimeratkfixture_10',['StepperMotorChimeraTKFixture',['../class_stepper_motor_chimera_t_k_fixture.html',1,'']]],
   ['steppermotorfactory_11',['StepperMotorFactory',['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html',1,'ChimeraTK::MotorDriver']]],

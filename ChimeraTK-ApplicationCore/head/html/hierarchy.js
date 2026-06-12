@@ -142,6 +142,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "ac.ApplicationModule", null, [
+      [ "testPythonAccessorTags.MyMod", "classtest_python_accessor_tags_1_1_my_mod.html", null ],
       [ "testPythonAppConfig.MyMod", "classtest_python_app_config_1_1_my_mod.html", null ],
       [ "testPythonApplicationModule.MyMod", "classtest_python_application_module_1_1_my_mod.html", null ],
       [ "testPythonApplicationModule.SecondMod", "classtest_python_application_module_1_1_second_mod.html", null ],

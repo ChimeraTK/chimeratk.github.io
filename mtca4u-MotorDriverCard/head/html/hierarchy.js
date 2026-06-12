@@ -80,13 +80,19 @@ var hierarchy =
     [ "ChimeraTK::MotorDriver::utility::StateMachine::State", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html", null ],
     [ "ChimeraTK::MotorDriver::utility::StateMachine", "class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html", [
       [ "ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html", [
-        [ "ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html", null ]
+        [ "ChimeraTK::MotorDriver::ReferenceStateMachine", "class_chimera_t_k_1_1_motor_driver_1_1_reference_state_machine.html", [
+          [ "ChimeraTK::MotorDriver::LinearStepperMotorStateMachine", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_state_machine.html", null ],
+          [ "ChimeraTK::MotorDriver::RotaryStepperMotorStateMachine", "class_chimera_t_k_1_1_motor_driver_1_1_rotary_stepper_motor_state_machine.html", null ]
+        ] ]
       ] ],
       [ "DerivedStateMachine", "class_derived_state_machine.html", null ]
     ] ],
     [ "ChimeraTK::MotorDriver::StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html", [
       [ "ChimeraTK::MotorDriver::BasicStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html", [
-        [ "ChimeraTK::MotorDriver::LinearStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html", null ]
+        [ "ChimeraTK::MotorDriver::ReferenceStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html", [
+          [ "ChimeraTK::MotorDriver::LinearStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html", null ],
+          [ "ChimeraTK::MotorDriver::RotaryStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_rotary_stepper_motor.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", null ],

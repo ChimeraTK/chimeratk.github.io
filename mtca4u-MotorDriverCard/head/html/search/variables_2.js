@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['calctoleranceevent_0',['calcToleranceEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html#a03d9290a1ce1436aa2948e442a1fd0b3',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine']]],
-  ['calibevent_1',['calibEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html#ae9b7b70c98e895aecde0a0baec1aff8b',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine']]],
+  ['calctoleranceevent_0',['calcToleranceEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_reference_state_machine.html#ad76923137d8da3af3114a1333ed1efde',1,'ChimeraTK::MotorDriver::ReferenceStateMachine']]],
+  ['calibevent_1',['calibEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_reference_state_machine.html#a5b0b08b23eb847a027440515d53c54f3',1,'ChimeraTK::MotorDriver::ReferenceStateMachine']]],
   ['calibration_5ftime_5fsuffix_2',['CALIBRATION_TIME_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#a711fd90f82d37e3eadb28fd34c14aefe',1,'mtca4u::dfmc_md22']]],
   ['chopper_5fcontrol_5fdefault_3',['CHOPPER_CONTROL_DEFAULT',['../namespacemtca4u.html#ae96b0e2d1c281605d52e4c4974b47647',1,'mtca4u']]],
   ['choppercontroldata_4',['chopperControlData',['../structmtca4u_1_1_motor_controler_config.html#a6f02abb49f4f074533b98c1d568288de',1,'mtca4u::MotorControlerConfig']]],
