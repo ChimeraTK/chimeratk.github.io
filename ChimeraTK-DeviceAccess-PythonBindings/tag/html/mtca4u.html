@@ -1,50 +1,377 @@
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<html lang="en" data-content_root="./">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mtca4u module (legacy) &mdash; ChimeraTK-DeviceAccess-PythonBindings 04.02.01 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=86f27845" />
 
-    <title>mtca4u module &#8212; ChimeraTK-DeviceAccess-PythonBindings 04.02.00 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=e7e61a73" />
-    <script src="_static/documentation_options.js?v=175b9258"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+  
+    <link rel="shortcut icon" href="_static/ChimeraTK_Favicon.ico"/>
+  
+        <script src="_static/jquery.js?v=8dae8fb0"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=b3231641"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="deviceaccess module" href="deviceaccess.html" />
-    <link rel="prev" title="mtca4u Python Bindings Doucmentation" href="index.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
           
+          
+          <a href="index.html" class="icon icon-home">
+            ChimeraTK-DeviceAccess-PythonBindings
+              <img src="_static/ChimeraTK_Logo_whitebg.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                04.02
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#what-is-chimeratk-deviceaccess">What is ChimeraTK DeviceAccess?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#key-features">Key Features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#common-use-cases">Common Use Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#why-python-bindings">Why Python Bindings?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#repository-based-installation-on-debian-ubuntu-systems">Repository-Based Installation on Debian/Ubuntu systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#from-source">From Source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#your-first-program">Your First Program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#id1">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#basic-example">Basic Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started.html#step-by-step-explanation">Step-by-Step Explanation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#understanding-accessors">Understanding Accessors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#accessor-lifecycle">Accessor Lifecycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#accessor-types">Accessor Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#type-conversion">Type Conversion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#automatic-type-conversion">Automatic Type Conversion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#transfer-groups">Transfer Groups</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#motivation">Motivation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#solution-transfer-groups">Solution: Transfer Groups</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#data-consistency-groups">Data Consistency Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#device-maps">Device Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#basic-syntax">Basic Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#best-practices">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#basic-scalar-register-access">Basic Scalar Register Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#working-with-1d-accessors">Working with 1D Accessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#using-different-device-backends">Using Different Device Backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#used-map-files">Used Map Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#api-index">API Index</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.setDMapFilePath.html">deviceaccess.setDMapFilePath</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.setDMapFilePath.html#deviceaccess.setDMapFilePath"><code class="docutils literal notranslate"><span class="pre">setDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.getDMapFilePath.html">deviceaccess.getDMapFilePath</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.getDMapFilePath.html#deviceaccess.getDMapFilePath"><code class="docutils literal notranslate"><span class="pre">getDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.Device.html">deviceaccess.Device</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.Device.html#deviceaccess.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.ScalarRegisterAccessor.html">deviceaccess.ScalarRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.ScalarRegisterAccessor.html#deviceaccess.ScalarRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.OneDRegisterAccessor.html">deviceaccess.OneDRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.OneDRegisterAccessor.html#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.TwoDRegisterAccessor.html">deviceaccess.TwoDRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.TwoDRegisterAccessor.html#deviceaccess.TwoDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.VoidRegisterAccessor.html">deviceaccess.VoidRegisterAccessor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.VoidRegisterAccessor.html#deviceaccess.VoidRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.TransferGroup.html">deviceaccess.TransferGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.TransferGroup.html#deviceaccess.TransferGroup"><code class="docutils literal notranslate"><span class="pre">TransferGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.ReadAnyGroup.html">deviceaccess.ReadAnyGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.ReadAnyGroup.html#deviceaccess.ReadAnyGroup"><code class="docutils literal notranslate"><span class="pre">ReadAnyGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataConsistencyGroup.html">deviceaccess.DataConsistencyGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataConsistencyGroup.html#deviceaccess.DataConsistencyGroup"><code class="docutils literal notranslate"><span class="pre">DataConsistencyGroup</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.RegisterCatalogue.html">deviceaccess.RegisterCatalogue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.RegisterCatalogue.html#deviceaccess.RegisterCatalogue"><code class="docutils literal notranslate"><span class="pre">RegisterCatalogue</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.RegisterInfo.html">deviceaccess.RegisterInfo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.RegisterInfo.html#deviceaccess.RegisterInfo"><code class="docutils literal notranslate"><span class="pre">RegisterInfo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataDescriptor.html">deviceaccess.DataDescriptor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataDescriptor.html#deviceaccess.DataDescriptor"><code class="docutils literal notranslate"><span class="pre">DataDescriptor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataType.html">deviceaccess.DataType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataType.html#deviceaccess.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.VersionNumber.html">deviceaccess.VersionNumber</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.VersionNumber.html#deviceaccess.VersionNumber"><code class="docutils literal notranslate"><span class="pre">VersionNumber</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.AccessMode.html">deviceaccess.AccessMode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.AccessMode.html#deviceaccess.AccessMode"><code class="docutils literal notranslate"><span class="pre">AccessMode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/deviceaccess.DataValidity.html">deviceaccess.DataValidity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/deviceaccess.DataValidity.html#deviceaccess.DataValidity"><code class="docutils literal notranslate"><span class="pre">DataValidity</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#core-classes">Core Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_reference.html#type-mapping">Type Mapping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_reference.html#module-deviceaccess">Main Module: deviceaccess</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.AccessMode"><code class="docutils literal notranslate"><span class="pre">AccessMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.BackendRegisterInfoBase"><code class="docutils literal notranslate"><span class="pre">BackendRegisterInfoBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataConsistencyGroup"><code class="docutils literal notranslate"><span class="pre">DataConsistencyGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataDescriptor"><code class="docutils literal notranslate"><span class="pre">DataDescriptor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.DataValidity"><code class="docutils literal notranslate"><span class="pre">DataValidity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.FundamentalType"><code class="docutils literal notranslate"><span class="pre">FundamentalType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.MatchingMode"><code class="docutils literal notranslate"><span class="pre">MatchingMode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.Notification"><code class="docutils literal notranslate"><span class="pre">Notification</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.OneDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">OneDRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.ReadAnyGroup"><code class="docutils literal notranslate"><span class="pre">ReadAnyGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.RegisterCatalogue"><code class="docutils literal notranslate"><span class="pre">RegisterCatalogue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.RegisterInfo"><code class="docutils literal notranslate"><span class="pre">RegisterInfo</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.RegisterPath"><code class="docutils literal notranslate"><span class="pre">RegisterPath</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.ScalarRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">ScalarRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.ThreadInterrupted"><code class="docutils literal notranslate"><span class="pre">ThreadInterrupted</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TransferElementBase"><code class="docutils literal notranslate"><span class="pre">TransferElementBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TransferElementID"><code class="docutils literal notranslate"><span class="pre">TransferElementID</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TransferGroup"><code class="docutils literal notranslate"><span class="pre">TransferGroup</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.TwoDRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">TwoDRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.VersionNumber"><code class="docutils literal notranslate"><span class="pre">VersionNumber</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.VersionNumberBase"><code class="docutils literal notranslate"><span class="pre">VersionNumberBase</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.VoidRegisterAccessor"><code class="docutils literal notranslate"><span class="pre">VoidRegisterAccessor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.getDMapFilePath"><code class="docutils literal notranslate"><span class="pre">getDMapFilePath()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#deviceaccess.setDMapFilePath"><code class="docutils literal notranslate"><span class="pre">setDMapFilePath()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api_reference.html#legacy-module-mtca4u">Legacy Module: mtca4u</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.get_info"><code class="docutils literal notranslate"><span class="pre">get_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.set_dmap_location"><code class="docutils literal notranslate"><span class="pre">set_dmap_location()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.get_dmap_location"><code class="docutils literal notranslate"><span class="pre">get_dmap_location()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api_reference.html#mtca4u.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api_reference.html#id35">See Also</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#installation-and-setup">Installation and Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#basic-usage">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#accessors-and-type-conversion">Accessors and Type Conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#device-maps">Device Maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#transfer-groups">Transfer Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#performance-and-optimization">Performance and Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#compatibility-and-versions">Compatibility and Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#data-handling">Data Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#still-have-questions">Still Have Questions?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#performance-issues">Performance Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#read-write-operations-slow">Read/Write Operations Slow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#getting-help">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
 
-          <div class="body" role="main">
-            
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ChimeraTK-DeviceAccess-PythonBindings</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">mtca4u module (legacy)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mtca4u.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <section id="module-mtca4u">
-<span id="mtca4u-module"></span><h1>mtca4u module<a class="headerlink" href="#module-mtca4u" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="mtca4u.Device">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">Device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cddOrAlias</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Construct Device from user provided device information</p>
-<p>This constructor is used to open a device listed in the dmap file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>alias</strong> (<em>str</em>) – The device alias/name in the dmap file for the hardware</p>
+<span id="mtca4u-module-legacy"></span><h1>mtca4u module (legacy)<a class="headerlink" href="#module-mtca4u" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="mtca4u.get_info">
+<span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">get_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outputStream=&lt;_io.TextIOWrapper</span> <span class="pre">name='&lt;stdout&gt;'</span> <span class="pre">mode='w'</span> <span class="pre">encoding='utf-8'&gt;</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.get_info" title="Link to this definition"></a></dt>
+<dd><p>prints details about the module and the deviceaccess library
+against which it was linked</p>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>outputStream: optional</dt><dd><p>default: sys.stdout</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+</section>
+<section id="returns">
+<h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
+<span class="go">mtca4uPy v02.03.00, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
+</pre></div>
+</div>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mtca4u.set_dmap_location">
+<span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">set_dmap_location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dmapFileLocation</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#set_dmap_location"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.set_dmap_location" title="Link to this definition"></a></dt>
+<dd><p>Sets the location of the dmap file to use</p>
+<p>The library will check the user specified device Alias names (when creating
+devices) in this dmap file. Once set, the library will look at this dmap file
+through out the program lifetime. This is true until a new dmap file is
+set again using set_dmap_location</p>
+<section id="id1">
+<h2>Parameters<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>dmapFileLocation: string</dt><dd><p>Path to the desired dmap file.</p>
+</dd>
+</dl>
+</section>
+<section id="id2">
+<h2>Returns<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+</section>
+<section id="id3">
+<h2>Examples<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;my_card&quot;</span><span class="p">)</span> <span class="c1"># my_card is a alias in my_example_dmap_file.dmap</span>
+</pre></div>
+</div>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading"></a></h2>
+<p>get_dmap_location: View the current dmap file which the library uses for device name (alias) lookup.
+Device : Open device using specified alias names or using device id and mapfile</p>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mtca4u.get_dmap_location">
+<span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">get_dmap_location</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_dmap_location"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.get_dmap_location" title="Link to this definition"></a></dt>
+<dd><p>Get the dmap file which is currently in use by the library.</p>
+<p>Method returns the file path of the dmap file the library currently uses.
+This is the dmap file the library uses to look up the device name(alias) and
+its details</p>
+<section id="id4">
+<h2>Parameters<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</section>
+<section id="id5">
+<h2>Returns<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p>string: File path of the dmap file the library currently uses.</p>
+</section>
+<section id="id6">
+<h2>Examples<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dmapPath</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">get_dmap_location</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">dmapPath</span> <span class="c1"># prints &#39;../my_example_dmap_file.dmap&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h2>See Also<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>set_dmap_location : set dmap file path for the library.
+Device : Open device using specified alias names or using device id and mapfile</p>
+</section>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mtca4u.Device">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">Device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cddOrAlias</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Construct Device from user provided device information</p>
+<p>This constructor is used to open a device listed in the dmap file.</p>
+<section id="id8">
+<h2>Parameters<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>alias<span class="classifier">str</span></dt><dd><p>The device alias/name in the dmap file for the hardware</p>
+</dd>
+</dl>
+</section>
+<section id="id9">
+<h2>Examples<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <dl>
 <dt>Creating a device using dmap file:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
@@ -54,27 +381,13 @@
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="mtca4u.Device.getCatalogueMetadata">
-<span class="sig-name descname"><span class="pre">getCatalogueMetadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameterName</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.getCatalogueMetadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.getCatalogueMetadata" title="Link to this definition">¶</a></dt>
-<dd><p>Reads out metadata form the device catalogue</p>
-<p>The available metadata depends on the use backend. E.g. for
-NumericAddressedBackends, metadata will come from the map file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>parameterName</strong> (<em>str</em>) – Name of the metadata parameter to read.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>metadataValue</strong> – The value corresponding to the given parameterName.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-</dd></dl>
+<dt class="sig sig-object py" id="mtca4u.Device.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cddOrAlias</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="mtca4u.Device.read">
-<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfElementsToRead</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfElementsToRead</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read" title="Link to this definition"></a></dt>
 <dd><p>Reads out Fixed point converted values from the opened device</p>
 <p>This method uses the map file to return Fixed Point converted values from a
 register. It can read the whole register or an arbitary number of register
@@ -85,40 +398,45 @@ the ‘elementIndexInRegister’ parameter).</p>
 <p>Both moduleName and registerName parameters are ignored when
 registerPath is provided.</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module to which the register belongs to. If the
+<section id="id10">
+<h3>Parameters<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<dl>
+<dt>moduleName<span class="classifier">str, optional</span></dt><dd><p>The name of the device module to which the register belongs to. If the
 register is not contained in a  module, then provide an empty string as
-the parameter value.</p></li>
-<li><p><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the register to read from.</p></li>
-<li><p><strong>numberOfElementsToRead</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>Specifies the number of register elements that should
+the parameter value.</p>
+</dd>
+<dt>registerName<span class="classifier">str, optional</span></dt><dd><p>The name of the register to read from.</p>
+</dd>
+<dt>numberOfElementsToRead<span class="classifier">int, optional</span></dt><dd><p>Specifies the number of register elements that should
 be read out. The width and fixed point representation of the register
 element are internally obtained from the map file.</p>
 <p>The method returns all elements in the register if this parameter is
 ommitted or when its value is set as 0.</p>
 <p>If the value provided as this parameter exceeds the register size, an
 array with all elements upto the last element is returned</p>
-</p></li>
-<li><p><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+</dd>
+<dt>elementIndexInRegister<span class="classifier">int, optional</span></dt><dd><p>This is a zero indexed offset from the first element of the register. When
 an elementIndexInRegister parameter is specified, the method reads out
 elements starting from this element index. The elemnt at the index
-position is included in the read as well.</p></li>
-<li><p><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
-location lookup.</p></li>
-</ul>
+position is included in the read as well.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>readoutValues</strong> – The return type for the method is a 1-Dimensional numpy array with
+<dt>registerPath<span class="classifier">str, optional</span></dt><dd><p>When provided, it takes precedences over moduleName and registerName for
+location lookup.</p>
+</dd>
+</dl>
+</section>
+<section id="id11">
+<h3>Returns<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>readoutValues: numpy.array, dtype == numpy.float64</dt><dd><p>The return type for the method is a 1-Dimensional numpy array with
 datatype numpy.float64. The returned numpy.array would either contain all
 elements in the register or only the number specified by the
 numberOfElementsToRead parameter</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>numpy.array, dtype == numpy.float64</p>
-</dd>
 </dl>
-<p class="rubric">Examples</p>
+</section>
+<section id="id12">
+<h3>Examples<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <dl>
 <dt>register “WORD_STATUS” is 1 element long..</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
@@ -155,223 +473,16 @@ numberOfElementsToRead parameter</p>
 </div>
 </dd>
 </dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device.read_raw</span></code></a></dt><dd><p>Read in ‘raw’ bit values from a device register</p>
-</dd>
-</dl>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="mtca4u.Device.read_dma_raw">
-<span class="sig-name descname"><span class="pre">read_dma_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DMARegisterName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfElementsToRead</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_dma_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read_dma_raw" title="Link to this definition">¶</a></dt>
-<dd><p>Read in Data from the DMA region of the card</p>
-<p>This method can be used to fetch data copied to a dma memory block. The
-method assumes that the device maps the DMA memory block to a register made
-up of 32 bit elements.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Deprecated since 1.0.0; use Device.read_raw instead.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module that has the register we intend to write to.
-If module name is not applicable to the device, then provide an empty
-string as the parameter value.</p></li>
-<li><p><strong>DMARegisterName</strong> (<em>str</em><em>, </em><em>optional</em>) – The register name to which the DMA memory region is mapped</p></li>
-<li><p><strong>numberOfElementsToRead</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>This optional parameter specifies the number of 32 bit elements that have
-to be returned from the mapped dma register. When this parameter is not
-specified or is provided with a value of 0,  every  element in the DMA
-memory block is returned.</p>
-<p>If the value provided as this parameter exceeds the register size, an
-array with all elements upto the last element is returned</p>
-</p></li>
-<li><p><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This parameter specifies the index from which the read should commence.</p></li>
-<li><p><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
-location lookup.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>arrayOfRawValues</strong> – The method returns a numpy.int32 array containing the raw bit values
-contained in the DMA register elements. The length of the array either
-equals the number of 32 bit elements that make up the whole DMA region or
-the number specified through the numberOfElementsToRead parameter</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>numpy.array, dtype == numpy.int32</p>
-</dd>
-</dl>
-<p class="rubric">Examples</p>
-<dl>
-<dt>Use Device.read_raw: In the example, register “AREA_DMA_VIA_DMA” is the DMA mapped memory made up of 32 bit elements.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read__raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;AREA_DMA_VIA_DMA&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="go">array([0, 1, 4, 9, 16, 25, 36, 49, 64, 81], dtype=int32)</span>
-</pre></div>
-</div>
-</dd>
-</dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device.read_raw</span></code></a></dt><dd><p>Use this method for the same purpose instead.</p>
-</dd>
-</dl>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="mtca4u.Device.read_raw">
-<span class="sig-name descname"><span class="pre">read_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfElementsToRead</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read_raw" title="Link to this definition">¶</a></dt>
-<dd><p>Returns ‘raw values’ (Without fixed point conversion applied) from a device’s register</p>
-<p>This method returns the raw bit values contained in the queried register.
-The returned values are not Fixed Point converted, but direct binary values
-contained in the register elements.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Both moduleName and registerName parameters are ignored when
-registerPath is provided.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module to which the register to read from belongs.
-If module name is not applicable to the register, then provide an empty
-string as the parameter value.</p></li>
-<li><p><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device register to read from.</p></li>
-<li><p><strong>numberOfElementsToRead</strong> (<em>int</em><em>, </em><em>optional</em>) – Specifies the number of register elements that should be read out.
-The method returns all elements in the register if this parameter is
-ommitted or when its value is set as 0.
-If the value provided as this parameter exceeds the register size, an
-array will all elements upto the last element is returned</p></li>
-<li><p><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
-an elementIndexInRegister parameter is specified, the method reads out
-elements starting from this element index. The element at the index
-position is included in the read as well.</p></li>
-<li><p><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
-location lookup.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>readInRawValues</strong> – The method returns a numpy.int32 array containing the raw bit values of
-the register elements. The length of the array either equals the number of
-elements that make up the register or the number specified through the
-numberOfElementsToRead parameter</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>numpy.array, dtype == numpy.int32</p>
-</dd>
-</dl>
-<p class="rubric">Examples</p>
-<dl>
-<dt>register “WORD_STATUS” is 1 element long.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">)</span>
-<span class="go">array([15], dtype=int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span><span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">)</span>
-<span class="go">array([15], dtype=int32)</span>
-</pre></div>
-</div>
-</dd>
-<dt>register “WORD_CLK_MUX” is 4 elements long.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">)</span>
-<span class="go">array([15, 14, 13, 12], dtype=int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="go">array([15, 14, 13, 12], dtype=int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="go">array([15], dtype=int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
-<span class="go">array([13], dtype = int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
-<span class="go">array([13, 12], dtype=int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
-<span class="go">array([13], dtype=int32)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
-<span class="go">array([13, 12], dtype=int32)</span>
-</pre></div>
-</div>
-</dd>
-</dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.Device.read" title="mtca4u.Device.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device.read</span></code></a></dt><dd><p>Read in Fixed Point converted bit values from a device register</p>
-</dd>
-</dl>
-</div>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="mtca4u.Device.read_sequences">
-<span class="sig-name descname"><span class="pre">read_sequences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regionName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_sequences"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read_sequences" title="Link to this definition">¶</a></dt>
-<dd><p>Read in all sequences from a Multiplexed data Region</p>
-<p>This method returns the demultiplexed sequences in the memory area specified
-by regionName. The data is returned as a 2D numpy array with the coulums
-representing induvidual sequences</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Both moduleName and regionName parameters are ignored when
-registerPath is provided.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module that has the register we intend to write to.
-If module name is not applicable to the device, then provide an empty
-string as the parameter value.</p></li>
-<li><p><strong>regionName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the memory area containing the multiplexed data.</p></li>
-<li><p><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and regionName for
-location lookup.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>2DarrayOfValues</strong> – The method returns a 2D numpy.double array containing extracted
-induvidual sequences as the columns</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>numpy.array, dtype == numpy.double</p>
-</dd>
-</dl>
-<p class="rubric">Examples</p>
-<dl>
-<dt>“DMA” is the Multiplexed data region name. This region is defined by ‘AREA_MULTIPLEXED_SEQUENCE_DMA’ in the mapfile.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
-<span class="go">array([[   0.,    1.,    4.,    9.,   16.],</span>
-<span class="go">       [  25.,   36.,   49.,   64.,   81.],</span>
-<span class="go">       [ 100.,  121.,  144.,  169.,  196.],</span>
-<span class="go">       [ 225.,  256.,  289.,  324.,  361.]</span>
-<span class="go">       [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span> <span class="s1">&#39;/BOARD.0/DMA&#39;</span><span class="p">)</span>
-<span class="go">array([[   0.,    1.,    4.,    9.,   16.],</span>
-<span class="go">       [  25.,   36.,   49.,   64.,   81.],</span>
-<span class="go">       [ 100.,  121.,  144.,  169.,  196.],</span>
-<span class="go">       [ 225.,  256.,  289.,  324.,  361.]</span>
-<span class="go">       [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
-</pre></div>
-</div>
-</dd>
-<dt>Each column of the 2D matrix represents an extracted sequence:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">adc0_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># array([0., 25., 100., 225., 400.])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">adc1_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># array([1., 36., 49., 64., 81.])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">adc3_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># array([9., 64., 169., 324., 529.])</span>
-</pre></div>
-</div>
-</dd>
-</dl>
+</section>
+<section id="id13">
+<h3>See Also<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>Device.read_raw : Read in ‘raw’ bit values from a device register</p>
+</section>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="mtca4u.Device.write">
-<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataToWrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.write" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataToWrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.write" title="Link to this definition"></a></dt>
 <dd><p>Sets data into a desired register</p>
 <p>This method writes values into a register on the board. The method
 internally uses a fixed point converter that is aware of the register width
@@ -383,26 +494,34 @@ into the decive register.</p>
 <p>Both moduleName and registerName parameters are ignored when
 registerPath is provided.</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module which has the register to write into.
+<section id="id14">
+<h3>Parameters<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>moduleName<span class="classifier">str, optional</span></dt><dd><p>The name of the device module which has the register to write into.
 If module name is not applicable to the register, then provide an empty
-string as the parameter value.</p></li>
-<li><p><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – Mapped name of the register to write to</p></li>
-<li><p><strong>dataToWrite</strong> (<em>int</em><em>, </em><em>float</em><em>,         </em><em>list</em><em> of </em><em>int/float</em><em>, </em><em>numpy.array</em><em>(</em><em>dtype numpy.float32/64</em><em>)</em><em>,         </em><em>numpy.array</em><em>(</em><em>dtype = numpy.int32/64</em><em>)</em>) – The data to be written in to the register. it may be a numpy.float32/64 or a
+string as the parameter value.</p>
+</dd>
+<dt>registerName<span class="classifier">str, optional</span></dt><dd><p>Mapped name of the register to write to</p>
+</dd>
+<dt>dataToWrite<span class="classifier">int, float,         list of int/float, numpy.array(dtype numpy.float32/64),         numpy.array(dtype = numpy.int32/64)</span></dt><dd><p>The data to be written in to the register. it may be a numpy.float32/64 or a
 numpy.int32/64 array or a list with int or float values . Each value in this
 array represents an induvidual element of the register. dataToWrite may also
-take on int/float type when single vaues are passesed</p></li>
-<li><p><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+take on int/float type when single vaues are passesed</p>
+</dd>
+<dt>elementIndexInRegister<span class="classifier">int, optional</span></dt><dd><p>This is a zero indexed offset from the first element of the register. When
 an elementIndexInRegister parameter is specified, the method starts the
-write from this index</p></li>
-<li><p><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
-location lookup.</p></li>
-</ul>
+write from this index</p>
+</dd>
+<dt>registerPath<span class="classifier">str, optional</span></dt><dd><p>When provided, it takes precedences over moduleName and registerName for
+location lookup.</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+</section>
+<section id="id15">
+<h3>Returns<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+</section>
+<section id="id16">
+<h3>Examples<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <dl>
 <dt>register “WORD_STATUS” is 1 element long and belongs to module “BOARD”.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
@@ -435,18 +554,104 @@ location lookup.</p></li>
 </div>
 </dd>
 </dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
+</section>
+<section id="id17">
+<h3>See Also<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<p>Device.write_raw : Write ‘raw’ bit values to a device register</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mtca4u.Device.read_raw">
+<span class="sig-name descname"><span class="pre">read_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfElementsToRead</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read_raw" title="Link to this definition"></a></dt>
+<dd><p>Returns ‘raw values’ (Without fixed point conversion applied) from a device’s register</p>
+<p>This method returns the raw bit values contained in the queried register.
+The returned values are not Fixed Point converted, but direct binary values
+contained in the register elements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both moduleName and registerName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<section id="id18">
+<h3>Parameters<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
 <dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.Device.write_raw" title="mtca4u.Device.write_raw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device.write_raw</span></code></a></dt><dd><p>Write ‘raw’ bit values to a device register</p>
+<dt>moduleName<span class="classifier">str, optional</span></dt><dd><p>The name of the device module to which the register to read from belongs.
+If module name is not applicable to the register, then provide an empty
+string as the parameter value.</p>
+</dd>
+<dt>registerName<span class="classifier">str, optional</span></dt><dd><p>The name of the device register to read from.</p>
+</dd>
+<dt>numberOfElementsToRead<span class="classifier">int, optional</span></dt><dd><p>Specifies the number of register elements that should be read out.
+The method returns all elements in the register if this parameter is
+ommitted or when its value is set as 0.
+If the value provided as this parameter exceeds the register size, an
+array will all elements upto the last element is returned</p>
+</dd>
+<dt>elementIndexInRegister<span class="classifier">int, optional</span></dt><dd><p>This is a zero indexed offset from the first element of the register. When
+an elementIndexInRegister parameter is specified, the method reads out
+elements starting from this element index. The element at the index
+position is included in the read as well.</p>
+</dd>
+<dt>registerPath<span class="classifier">str, optional</span></dt><dd><p>When provided, it takes precedences over moduleName and registerName for
+location lookup.</p>
 </dd>
 </dl>
+</section>
+<section id="id19">
+<h3>Returns<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>readInRawValues: numpy.array, dtype == numpy.int32</dt><dd><p>The method returns a numpy.int32 array containing the raw bit values of
+the register elements. The length of the array either equals the number of
+elements that make up the register or the number specified through the
+numberOfElementsToRead parameter</p>
+</dd>
+</dl>
+</section>
+<section id="id20">
+<h3>Examples<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
+<dl>
+<dt>register “WORD_STATUS” is 1 element long.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="go">array([15], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span><span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">)</span>
+<span class="go">array([15], dtype=int32)</span>
+</pre></div>
 </div>
+</dd>
+<dt>register “WORD_CLK_MUX” is 4 elements long.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">)</span>
+<span class="go">array([15, 14, 13, 12], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">array([15, 14, 13, 12], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">array([15], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13], dtype = int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13, 12], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13], dtype=int32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+<span class="go">array([13, 12], dtype=int32)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="id21">
+<h3>See Also<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p>Device.read : Read in Fixed Point converted bit values from a device register</p>
+</section>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="mtca4u.Device.write_raw">
-<span class="sig-name descname"><span class="pre">write_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataToWrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.write_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.write_raw" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">write_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataToWrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.write_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.write_raw" title="Link to this definition"></a></dt>
 <dd><p>Write raw bit values (no fixed point conversion applied) into the register</p>
 <p>Provides a way to put in a desired bit value into individual register
 elements.</p>
@@ -455,24 +660,32 @@ elements.</p>
 <p>Both moduleName and registerName parameters are ignored when
 registerPath is provided.</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>moduleName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the device module that has the register we intend to write to.
+<section id="id22">
+<h3>Parameters<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>moduleName<span class="classifier">str, optional</span></dt><dd><p>The name of the device module that has the register we intend to write to.
 If module name is not applicable to the register, then provide an empty
-string as the parameter value.</p></li>
-<li><p><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the desired register to write into.</p></li>
-<li><p><strong>dataToWrite</strong> (<em>numpy.array</em><em>, </em><em>dtype == numpy.int32</em>) – The array holding the bit values to be written into the register. The numpy
-array is expected to contain numpy.int32 values</p></li>
-<li><p><strong>elementIndexInRegister</strong> (<em>int</em><em>, </em><em>optional</em>) – This is a zero indexed offset from the first element of the register. When
+string as the parameter value.</p>
+</dd>
+<dt>registerName<span class="classifier">str, optional</span></dt><dd><p>The name of the desired register to write into.</p>
+</dd>
+<dt>dataToWrite<span class="classifier">numpy.array, dtype == numpy.int32</span></dt><dd><p>The array holding the bit values to be written into the register. The numpy
+array is expected to contain numpy.int32 values</p>
+</dd>
+<dt>elementIndexInRegister<span class="classifier">int, optional</span></dt><dd><p>This is a zero indexed offset from the first element of the register. When
 an elementIndexInRegister parameter is specified, the method starts the
-write from this index</p></li>
-<li><p><strong>registerPath</strong> (<em>str</em><em>, </em><em>optional</em>) – When provided, it takes precedences over moduleName and registerName for
-location lookup.</p></li>
-</ul>
+write from this index</p>
+</dd>
+<dt>registerPath<span class="classifier">str, optional</span></dt><dd><p>When provided, it takes precedences over moduleName and registerName for
+location lookup.</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
+</section>
+<section id="id23">
+<h3>Returns<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+</section>
+<section id="id24">
+<h3>Examples<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
 <dl>
 <dt>register “WORD_STATUS” is 1 element long and is part of the module “BOARD”.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
@@ -495,174 +708,195 @@ location lookup.</p></li>
 </div>
 </dd>
 </dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.Device.write" title="mtca4u.Device.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device.write</span></code></a></dt><dd><p>Write values that get fixed point converted to the device</p>
-</dd>
-</dl>
+</section>
+<section id="id25">
+<h3>See Also<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p>Device.write : Write values that get fixed point converted to the device</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mtca4u.Device.read_dma_raw">
+<span class="sig-name descname"><span class="pre">read_dma_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DMARegisterName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfElementsToRead</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementIndexInRegister</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_dma_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read_dma_raw" title="Link to this definition"></a></dt>
+<dd><p>Read in Data from the DMA region of the card</p>
+<p>This method can be used to fetch data copied to a dma memory block. The
+method assumes that the device maps the DMA memory block to a register made
+up of 32 bit elements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Deprecated since 1.0.0; use Device.read_raw instead.</p>
 </div>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="mtca4u.get_dmap_location">
-<span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">get_dmap_location</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_dmap_location"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.get_dmap_location" title="Link to this definition">¶</a></dt>
-<dd><p>Get the dmap file which is currently in use by the library.</p>
-<p>Method returns the file path of the dmap file the library currently uses.
-This is the dmap file the library uses to look up the device name(alias) and
-its details</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>string</strong></p>
+<section id="id26">
+<h3>Parameters<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+<dl>
+<dt>moduleName<span class="classifier">str, optional</span></dt><dd><p>The name of the device module that has the register we intend to write to.
+If module name is not applicable to the device, then provide an empty
+string as the parameter value.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>File path of the dmap file the library currently uses.</p>
+<dt>DMARegisterName<span class="classifier">str, optional</span></dt><dd><p>The register name to which the DMA memory region is mapped</p>
+</dd>
+<dt>numberOfElementsToRead<span class="classifier">int, optional</span></dt><dd><p>This optional parameter specifies the number of 32 bit elements that have
+to be returned from the mapped dma register. When this parameter is not
+specified or is provided with a value of 0,  every  element in the DMA
+memory block is returned.</p>
+<p>If the value provided as this parameter exceeds the register size, an
+array with all elements upto the last element is returned</p>
+</dd>
+<dt>elementIndexInRegister<span class="classifier">int, optional</span></dt><dd><p>This parameter specifies the index from which the read should commence.</p>
+</dd>
+<dt>registerPath<span class="classifier">str, optional</span></dt><dd><p>When provided, it takes precedences over moduleName and registerName for
+location lookup.</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+</section>
+<section id="id27">
+<h3>Returns<a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>arrayOfRawValues: numpy.array, dtype == numpy.int32</dt><dd><p>The method returns a numpy.int32 array containing the raw bit values
+contained in the DMA register elements. The length of the array either
+equals the number of 32 bit elements that make up the whole DMA region or
+the number specified through the numberOfElementsToRead parameter</p>
+</dd>
+</dl>
+</section>
+<section id="id28">
+<h3>Examples<a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
+<dl>
+<dt>Use Device.read_raw: In the example, register “AREA_DMA_VIA_DMA” is the DMA mapped memory made up of 32 bit elements.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">dmapPath</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">get_dmap_location</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">dmapPath</span> <span class="c1"># prints &#39;../my_example_dmap_file.dmap&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read__raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;AREA_DMA_VIA_DMA&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="go">array([0, 1, 4, 9, 16, 25, 36, 49, 64, 81], dtype=int32)</span>
 </pre></div>
 </div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
+</dd>
+</dl>
+</section>
+<section id="id29">
+<h3>See Also<a class="headerlink" href="#id29" title="Link to this heading"></a></h3>
+<p>Device.read_raw : Use this method for the same purpose instead.</p>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mtca4u.Device.read_sequences">
+<span class="sig-name descname"><span class="pre">read_sequences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regionName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.read_sequences"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.read_sequences" title="Link to this definition"></a></dt>
+<dd><p>Read in all sequences from a Multiplexed data Region</p>
+<p>This method returns the demultiplexed sequences in the memory area specified
+by regionName. The data is returned as a 2D numpy array with the coulums
+representing induvidual sequences</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both moduleName and regionName parameters are ignored when
+registerPath is provided.</p>
+</div>
+<section id="id30">
+<h3>Parameters<a class="headerlink" href="#id30" title="Link to this heading"></a></h3>
 <dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.set_dmap_location" title="mtca4u.set_dmap_location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dmap_location</span></code></a></dt><dd><p>set dmap file path for the library.</p>
+<dt>moduleName<span class="classifier">str, optional</span></dt><dd><p>The name of the device module that has the register we intend to write to.
+If module name is not applicable to the device, then provide an empty
+string as the parameter value.</p>
 </dd>
-<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device</span></code></a></dt><dd><p>Open device using specified alias names or using device id and mapfile</p>
+<dt>regionName<span class="classifier">str, optional</span></dt><dd><p>The name of the memory area containing the multiplexed data.</p>
 </dd>
-</dl>
-</div>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="mtca4u.get_info">
-<span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">get_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outputStream=&lt;_io.TextIOWrapper</span> <span class="pre">name='&lt;stdout&gt;'</span> <span class="pre">mode='w'</span> <span class="pre">encoding='utf-8'&gt;</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.get_info" title="Link to this definition">¶</a></dt>
-<dd><p>prints details about the module and the deviceaccess library
-against which it was linked</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>outputStream</strong> (<em>optional</em>) – default: sys.stdout</p>
+<dt>registerPath<span class="classifier">str, optional</span></dt><dd><p>When provided, it takes precedences over moduleName and regionName for
+location lookup.</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
-<span class="go">mtca4uPy v02.03.00, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="mtca4u.set_dmap_location">
-<span class="sig-prename descclassname"><span class="pre">mtca4u.</span></span><span class="sig-name descname"><span class="pre">set_dmap_location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dmapFileLocation</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#set_dmap_location"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.set_dmap_location" title="Link to this definition">¶</a></dt>
-<dd><p>Sets the location of the dmap file to use</p>
-<p>The library will check the user specified device Alias names (when creating
-devices) in this dmap file. Once set, the library will look at this dmap file
-through out the program lifetime. This is true until a new dmap file is
-set again using set_dmap_location</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dmapFileLocation</strong> (<em>string</em>) – Path to the desired dmap file.</p>
+</section>
+<section id="id31">
+<h3>Returns<a class="headerlink" href="#id31" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>2DarrayOfValues: numpy.array, dtype == numpy.double</dt><dd><p>The method returns a 2D numpy.double array containing extracted
+induvidual sequences as the columns</p>
 </dd>
 </dl>
-<p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+</section>
+<section id="id32">
+<h3>Examples<a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
+<dl>
+<dt>“DMA” is the Multiplexed data region name. This region is defined by ‘AREA_MULTIPLEXED_SEQUENCE_DMA’ in the mapfile.</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;my_card&quot;</span><span class="p">)</span> <span class="c1"># my_card is a alias in my_example_dmap_file.dmap</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
+<span class="go">array([[   0.,    1.,    4.,    9.,   16.],</span>
+<span class="go">       [  25.,   36.,   49.,   64.,   81.],</span>
+<span class="go">       [ 100.,  121.,  144.,  169.,  196.],</span>
+<span class="go">       [ 225.,  256.,  289.,  324.,  361.]</span>
+<span class="go">       [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="n">registerPath</span><span class="o">=</span> <span class="s1">&#39;/BOARD.0/DMA&#39;</span><span class="p">)</span>
+<span class="go">array([[   0.,    1.,    4.,    9.,   16.],</span>
+<span class="go">       [  25.,   36.,   49.,   64.,   81.],</span>
+<span class="go">       [ 100.,  121.,  144.,  169.,  196.],</span>
+<span class="go">       [ 225.,  256.,  289.,  324.,  361.]</span>
+<span class="go">       [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
 </pre></div>
 </div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="#mtca4u.get_dmap_location" title="mtca4u.get_dmap_location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dmap_location</span></code></a></dt><dd><p>View the current dmap file which the library uses for device name (alias) lookup.</p>
 </dd>
-<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device</span></code></a></dt><dd><p>Open device using specified alias names or using device id and mapfile</p>
+<dt>Each column of the 2D matrix represents an extracted sequence:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adc0_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># array([0., 25., 100., 225., 400.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adc1_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># array([1., 36., 49., 64., 81.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adc3_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># array([9., 64., 169., 324., 529.])</span>
+</pre></div>
+</div>
 </dd>
 </dl>
-</div>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mtca4u.Device.getCatalogueMetadata">
+<span class="sig-name descname"><span class="pre">getCatalogueMetadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameterName</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device.getCatalogueMetadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mtca4u.Device.getCatalogueMetadata" title="Link to this definition"></a></dt>
+<dd><p>Reads out metadata form the device catalogue</p>
+<p>The available metadata depends on the use backend. E.g. for
+NumericAddressedBackends, metadata will come from the map file.</p>
+<section id="id33">
+<h3>Parameters<a class="headerlink" href="#id33" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>parameterName<span class="classifier">str</span></dt><dd><p>Name of the metadata parameter to read.</p>
+</dd>
+</dl>
+</section>
+<section id="id34">
+<h3>Returns<a class="headerlink" href="#id34" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>metadataValue: str</dt><dd><p>The value corresponding to the given parameterName.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</section>
 </dd></dl>
 
 </section>
 
 
+           </div>
           </div>
-          
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project &lt;chimeratk-support@desy.de&gt;.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="index.html">
-              <img class="logo" src="_static/DESY_logo.png" alt="Logo"/>
-            </a></p><h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">mtca4u module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#mtca4u.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.getCatalogueMetadata"><code class="docutils literal notranslate"><span class="pre">Device.getCatalogueMetadata()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.read"><code class="docutils literal notranslate"><span class="pre">Device.read()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.read_dma_raw"><code class="docutils literal notranslate"><span class="pre">Device.read_dma_raw()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.read_raw"><code class="docutils literal notranslate"><span class="pre">Device.read_raw()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.read_sequences"><code class="docutils literal notranslate"><span class="pre">Device.read_sequences()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.write"><code class="docutils literal notranslate"><span class="pre">Device.write()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mtca4u.Device.write_raw"><code class="docutils literal notranslate"><span class="pre">Device.write_raw()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#mtca4u.get_dmap_location"><code class="docutils literal notranslate"><span class="pre">get_dmap_location()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mtca4u.get_info"><code class="docutils literal notranslate"><span class="pre">get_info()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mtca4u.set_dmap_location"><code class="docutils literal notranslate"><span class="pre">set_dmap_location()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="deviceaccess.html">deviceaccess module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matlab.html">Using the Python bindings with Matlab</a></li>
-</ul>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-<h1 class="logo"><a href="index.html">ChimeraTK-DeviceAccess-PythonBindings</a></h1>
-
-
-
-
-
-
-
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">mtca4u Python Bindings Doucmentation</a></li>
-      <li>Next: <a href="deviceaccess.html" title="next chapter">deviceaccess module</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;Deutsches Elektronen-Synchrotron DESY, MSK, ChimeraTK Project <chimeratk-support@desy.de>.
-      
-      |
-      <a href="_sources/mtca4u.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>
