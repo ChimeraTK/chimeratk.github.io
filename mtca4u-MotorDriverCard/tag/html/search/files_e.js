@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['write_5fdefault_5fconfig_2ecpp_0',['write_default_config.cpp',['../write__default__config_8cpp.html',1,'']]],
-  ['writedefaultmotordrivercardconfig_2ecpp_1',['writeDefaultMotorDriverCardConfig.cpp',['../write_default_motor_driver_card_config_8cpp.html',1,'']]]
+  ['variantusertypes_2eh_0',['VariantUserTypes.h',['../_variant_user_types_8h.html',1,'']]]
 ];
