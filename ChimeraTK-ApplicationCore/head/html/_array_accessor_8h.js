@@ -7,5 +7,7 @@ var _array_accessor_8h =
     [ "ChimeraTK::ArrayPushInputWB< UserType >", "class_chimera_t_k_1_1_array_push_input_w_b.html", "class_chimera_t_k_1_1_array_push_input_w_b" ],
     [ "ChimeraTK::ArrayOutputPushRB< UserType >", "class_chimera_t_k_1_1_array_output_push_r_b.html", "class_chimera_t_k_1_1_array_output_push_r_b" ],
     [ "ChimeraTK::ArrayOutputRB< UserType >", "class_chimera_t_k_1_1_array_output_r_b.html", "class_chimera_t_k_1_1_array_output_r_b" ],
-    [ "ChimeraTK::ArrayOutputReverseRecovery< UserType >", "class_chimera_t_k_1_1_array_output_reverse_recovery.html", "class_chimera_t_k_1_1_array_output_reverse_recovery" ]
+    [ "ChimeraTK::ArrayOutputReverseRecovery< UserType >", "class_chimera_t_k_1_1_array_output_reverse_recovery.html", "class_chimera_t_k_1_1_array_output_reverse_recovery" ],
+    [ "ChimeraTK::ArrayPushInputNoInitialValue< UserType >", "class_chimera_t_k_1_1_array_push_input_no_initial_value.html", "class_chimera_t_k_1_1_array_push_input_no_initial_value" ],
+    [ "ChimeraTK::ArrayPollInputNoInitialValue< UserType >", "class_chimera_t_k_1_1_array_poll_input_no_initial_value.html", "class_chimera_t_k_1_1_array_poll_input_no_initial_value" ]
 ];

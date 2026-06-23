@@ -476,8 +476,8 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< int64_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< std::string > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< T > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
-    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< Type > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
+    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< uint16_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< unsigned > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -508,7 +508,9 @@ var hierarchy =
         [ "ChimeraTK::ArrayOutputRB< UserType >", "class_chimera_t_k_1_1_array_output_r_b.html", null ],
         [ "ChimeraTK::ArrayOutputReverseRecovery< UserType >", "class_chimera_t_k_1_1_array_output_reverse_recovery.html", null ],
         [ "ChimeraTK::ArrayPollInput< UserType >", "class_chimera_t_k_1_1_array_poll_input.html", null ],
+        [ "ChimeraTK::ArrayPollInputNoInitialValue< UserType >", "class_chimera_t_k_1_1_array_poll_input_no_initial_value.html", null ],
         [ "ChimeraTK::ArrayPushInput< UserType >", "class_chimera_t_k_1_1_array_push_input.html", null ],
+        [ "ChimeraTK::ArrayPushInputNoInitialValue< UserType >", "class_chimera_t_k_1_1_array_push_input_no_initial_value.html", null ],
         [ "ChimeraTK::ArrayPushInputWB< UserType >", "class_chimera_t_k_1_1_array_push_input_w_b.html", null ]
       ] ]
     ] ],
@@ -587,7 +589,9 @@ var hierarchy =
         [ "ChimeraTK::ScalarOutputPushRB< UserType >", "class_chimera_t_k_1_1_scalar_output_push_r_b.html", null ],
         [ "ChimeraTK::ScalarOutputReverseRecovery< UserType >", "class_chimera_t_k_1_1_scalar_output_reverse_recovery.html", null ],
         [ "ChimeraTK::ScalarPollInput< UserType >", "class_chimera_t_k_1_1_scalar_poll_input.html", null ],
+        [ "ChimeraTK::ScalarPollInputNoInitialValue< UserType >", "class_chimera_t_k_1_1_scalar_poll_input_no_initial_value.html", null ],
         [ "ChimeraTK::ScalarPushInput< UserType >", "class_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInputNoInitialValue< UserType >", "class_chimera_t_k_1_1_scalar_push_input_no_initial_value.html", null ],
         [ "ChimeraTK::ScalarPushInputWB< UserType >", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", null ]
       ] ]
     ] ],

@@ -21,6 +21,7 @@ var dir_12103a13d03486cdb1fa8b48e27c887f =
     [ "testInitialValueSpecD8.cc", "test_initial_value_spec_d8_8cc.html", "test_initial_value_spec_d8_8cc" ],
     [ "testModel.cc", "test_model_8cc.html", "test_model_8cc" ],
     [ "testModules.cc", "test_modules_8cc.html", "test_modules_8cc" ],
+    [ "testNoInitialValue.cc", "test_no_initial_value_8cc.html", "test_no_initial_value_8cc" ],
     [ "testOptimiseUnmappedVariables.cc", "test_optimise_unmapped_variables_8cc.html", "test_optimise_unmapped_variables_8cc" ],
     [ "testPeriodicTrigger.cc", "test_periodic_trigger_8cc.html", "test_periodic_trigger_8cc" ],
     [ "testProcessVariableRecovery.cc", "test_process_variable_recovery_8cc.html", "test_process_variable_recovery_8cc" ],

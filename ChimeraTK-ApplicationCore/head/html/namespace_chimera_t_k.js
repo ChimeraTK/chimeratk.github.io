@@ -25,7 +25,9 @@ var namespace_chimera_t_k =
     [ "ArrayOutputReverseRecovery", "class_chimera_t_k_1_1_array_output_reverse_recovery.html", "class_chimera_t_k_1_1_array_output_reverse_recovery" ],
     [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ],
     [ "ArrayPollInput", "class_chimera_t_k_1_1_array_poll_input.html", "class_chimera_t_k_1_1_array_poll_input" ],
+    [ "ArrayPollInputNoInitialValue", "class_chimera_t_k_1_1_array_poll_input_no_initial_value.html", "class_chimera_t_k_1_1_array_poll_input_no_initial_value" ],
     [ "ArrayPushInput", "class_chimera_t_k_1_1_array_push_input.html", "class_chimera_t_k_1_1_array_push_input" ],
+    [ "ArrayPushInputNoInitialValue", "class_chimera_t_k_1_1_array_push_input_no_initial_value.html", "class_chimera_t_k_1_1_array_push_input_no_initial_value" ],
     [ "ArrayPushInputWB", "class_chimera_t_k_1_1_array_push_input_w_b.html", "class_chimera_t_k_1_1_array_push_input_w_b" ],
     [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
     [ "ConfigReader", "class_chimera_t_k_1_1_config_reader.html", "class_chimera_t_k_1_1_config_reader" ],
@@ -98,7 +100,9 @@ var namespace_chimera_t_k =
     [ "ScalarOutputReverseRecovery", "class_chimera_t_k_1_1_scalar_output_reverse_recovery.html", "class_chimera_t_k_1_1_scalar_output_reverse_recovery" ],
     [ "ScalarPipe", "struct_chimera_t_k_1_1_scalar_pipe.html", "struct_chimera_t_k_1_1_scalar_pipe" ],
     [ "ScalarPollInput", "class_chimera_t_k_1_1_scalar_poll_input.html", "class_chimera_t_k_1_1_scalar_poll_input" ],
+    [ "ScalarPollInputNoInitialValue", "class_chimera_t_k_1_1_scalar_poll_input_no_initial_value.html", "class_chimera_t_k_1_1_scalar_poll_input_no_initial_value" ],
     [ "ScalarPushInput", "class_chimera_t_k_1_1_scalar_push_input.html", "class_chimera_t_k_1_1_scalar_push_input" ],
+    [ "ScalarPushInputNoInitialValue", "class_chimera_t_k_1_1_scalar_push_input_no_initial_value.html", "class_chimera_t_k_1_1_scalar_push_input_no_initial_value" ],
     [ "ScalarPushInputWB", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", "class_chimera_t_k_1_1_scalar_push_input_w_b" ],
     [ "ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", "struct_chimera_t_k_1_1_scripted_init_handler" ],
     [ "SetDMapFilePath", "class_chimera_t_k_1_1_set_d_map_file_path.html", "class_chimera_t_k_1_1_set_d_map_file_path" ],
@@ -171,5 +175,6 @@ var namespace_chimera_t_k =
     [ "negateTag", "namespace_chimera_t_k.html#a5d819141b6e36a5baf954cb63aef357b", null ],
     [ "PYBIND11_MODULE", "namespace_chimera_t_k.html#ad1d2aa2e2e2ee982024aad4d8c637fb0", null ],
     [ "explicitDataValidityTag", "namespace_chimera_t_k.html#a2fdc2f768f8fdb507450414460ec2c9d", null ],
-    [ "independentVersionTag", "namespace_chimera_t_k.html#a3e8a5e2e7566441d305705f90ef9cace", null ]
+    [ "independentVersionTag", "namespace_chimera_t_k.html#a3e8a5e2e7566441d305705f90ef9cace", null ],
+    [ "noInitialValueReadTag", "namespace_chimera_t_k.html#a3c98823dd8e4b94ce4cb328690a14dd4", null ]
 ];
