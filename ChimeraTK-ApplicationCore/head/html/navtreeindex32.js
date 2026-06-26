@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"test_status_aggregator_8cc.html#a591322d8c608e5776f4a71fc16836380":[17,0,0,0,8,1,30,22],
 "test_status_aggregator_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[17,0,0,0,8,1,30,15],
 "test_status_aggregator_8cc.html#a8511f292e414aa4d043ff41d7cccf8a1":[17,0,0,0,8,1,30,19],
 "test_status_aggregator_8cc.html#aa7e5d403f0121c0dfeb592addb27d060":[17,0,0,0,8,1,30,18],
