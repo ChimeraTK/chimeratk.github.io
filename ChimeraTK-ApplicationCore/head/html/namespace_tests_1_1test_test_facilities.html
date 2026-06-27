@@ -181,7 +181,7 @@ Variables</h2></td></tr>
 <p>This test makes sure that a DeviceManager can execute an init handler as part of the recovery procedure (which takes place while holding the testable mode lock) in parallel with an ApplicationModule thread doing something.</p>
 <p>The test was written to reproduce roughly a specific regression discovered after the introduction of recovery groups: A write() opreation issued from an ApplicationModule going to a Device in error state can dead lock with the device recovery in DeviceManager::RecoveryGroup::waitForRecoveryStage(), because the device recovery thread (holding the recovery lock) gives up the testable mode lock temporarily while arriving at the recovery stage barrier, but the ExceptionHandlingDecorator obtains the recovery lock while keeping the testable mode lock. This problem occured because the testable mode lock was at that time not yet a shared lock, which was then changed to fix the issue. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00992">992</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00990">990</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00888">888</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00886">886</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00943">943</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00941">941</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
 </div>
 </div>

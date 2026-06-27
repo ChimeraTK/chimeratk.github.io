@@ -176,6 +176,9 @@ var annotated_dup =
       [ "Receiver", "classtest_python_data_consistency_group_1_1_receiver.html", "classtest_python_data_consistency_group_1_1_receiver" ],
       [ "Sender", "classtest_python_data_consistency_group_1_1_sender.html", "classtest_python_data_consistency_group_1_1_sender" ]
     ] ],
+    [ "testPythonPollInputRead", "namespacetest_python_poll_input_read.html", [
+      [ "PollInputTestMod", "classtest_python_poll_input_read_1_1_poll_input_test_mod.html", "classtest_python_poll_input_read_1_1_poll_input_test_mod" ]
+    ] ],
     [ "testPythonReadAnyGroup", "namespacetest_python_read_any_group.html", [
       [ "ReadAnyGroupMod1", "classtest_python_read_any_group_1_1_read_any_group_mod1.html", "classtest_python_read_any_group_1_1_read_any_group_mod1" ]
     ] ],

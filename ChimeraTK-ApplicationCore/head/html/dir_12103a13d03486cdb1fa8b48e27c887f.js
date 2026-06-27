@@ -19,6 +19,7 @@ var dir_12103a13d03486cdb1fa8b48e27c887f =
     [ "testHierarchyModifyingGroup.cc", "test_hierarchy_modifying_group_8cc.html", "test_hierarchy_modifying_group_8cc" ],
     [ "testIllegalNetworks.cc", "test_illegal_networks_8cc.html", "test_illegal_networks_8cc" ],
     [ "testInitialValueSpecD8.cc", "test_initial_value_spec_d8_8cc.html", "test_initial_value_spec_d8_8cc" ],
+    [ "testLogger.cc", "test_logger_8cc.html", "test_logger_8cc" ],
     [ "testModel.cc", "test_model_8cc.html", "test_model_8cc" ],
     [ "testModules.cc", "test_modules_8cc.html", "test_modules_8cc" ],
     [ "testNoInitialValue.cc", "test_no_initial_value_8cc.html", "test_no_initial_value_8cc" ],

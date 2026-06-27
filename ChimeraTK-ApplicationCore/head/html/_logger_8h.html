@@ -98,14 +98,16 @@ $(document).ready(function(){initNavTree('_logger_8h.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;ChimeraTK/cppext/future_queue.hpp&gt;</code><br />
+<code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
+<code>#include &lt;expected&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Logger.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_logger_8h__incl.svg" width="452" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_logger_8h__incl.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -121,6 +123,9 @@ $(document).ready(function(){initNavTree('_logger_8h.html',''); initResizable();
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logger.html">ChimeraTK::Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_severity.html">ChimeraTK::Logger::Severity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_severity.html" title="Severity levels used by the Logger.">Severity</a> levels used by the <a class="el" href="class_chimera_t_k_1_1_logger.html">Logger</a>.  <a href="class_chimera_t_k_1_1_logger_1_1_severity.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_stream_proxy.html">ChimeraTK::Logger::StreamProxy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy for output stream, handed out to the log sources by the Logger::Module.  <a href="class_chimera_t_k_1_1_logger_1_1_stream_proxy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +138,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afd1ff17ff1ee9c50c855b99af5b0c580" id="r_afd1ff17ff1ee9c50c855b99af5b0c580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_stream_proxy.html">Logger::StreamProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">ChimeraTK::logger</a> (<a class="el" href="class_chimera_t_k_1_1_logger.html#a36b1e93ae6ce8a18fd67934832290cdf">Logger::Severity</a> severity, std::string context)</td></tr>
+<tr class="memitem:afd1ff17ff1ee9c50c855b99af5b0c580" id="r_afd1ff17ff1ee9c50c855b99af5b0c580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_stream_proxy.html">Logger::StreamProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580">ChimeraTK::logger</a> (<a class="el" href="class_chimera_t_k_1_1_logger_1_1_severity.html">Logger::Severity</a> severity, std::string context)</td></tr>
 <tr class="memdesc:afd1ff17ff1ee9c50c855b99af5b0c580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to obtain the logger stream.  <br /></td></tr>
 <tr class="separator:afd1ff17ff1ee9c50c855b99af5b0c580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

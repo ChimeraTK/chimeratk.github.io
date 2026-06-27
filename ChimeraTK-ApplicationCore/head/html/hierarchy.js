@@ -148,6 +148,7 @@ var hierarchy =
       [ "testPythonApplicationModule.SecondMod", "classtest_python_application_module_1_1_second_mod.html", null ],
       [ "testPythonDataConsistencyGroup.Receiver", "classtest_python_data_consistency_group_1_1_receiver.html", null ],
       [ "testPythonDataConsistencyGroup.Sender", "classtest_python_data_consistency_group_1_1_sender.html", null ],
+      [ "testPythonPollInputRead.PollInputTestMod", "classtest_python_poll_input_read_1_1_poll_input_test_mod.html", null ],
       [ "testPythonReadAnyGroup.ReadAnyGroupMod1", "classtest_python_read_any_group_1_1_read_any_group_mod1.html", null ],
       [ "testPythonScalarAccessors.MyMod", "classtest_python_scalar_accessors_1_1_my_mod.html", null ],
       [ "testPythonUserInputValidator.TestRunner", "classtest_python_user_input_validator_1_1_test_runner.html", null ],
@@ -749,6 +750,7 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::Model::SearchTypeHolder< SEARCH_TYPE >", "struct_chimera_t_k_1_1_model_1_1_search_type_holder.html", null ],
     [ "ChimeraTK::SetDMapFilePath", "class_chimera_t_k_1_1_set_d_map_file_path.html", null ],
+    [ "ChimeraTK::Logger::Severity", "class_chimera_t_k_1_1_logger_1_1_severity.html", null ],
     [ "StatusAccessorBase", null, [
       [ "ChimeraTK::StatusAccessor< ScalarOutput< int32_t > >", "class_chimera_t_k_1_1_status_accessor.html", null ],
       [ "ChimeraTK::StatusAccessor< ScalarPollInput< int32_t > >", "class_chimera_t_k_1_1_status_accessor.html", null ],

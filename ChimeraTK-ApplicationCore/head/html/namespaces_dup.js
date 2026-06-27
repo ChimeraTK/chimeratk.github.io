@@ -43,6 +43,7 @@ var namespaces_dup =
     [ "testPythonAppConfig", "namespacetest_python_app_config.html", "namespacetest_python_app_config" ],
     [ "testPythonApplicationModule", "namespacetest_python_application_module.html", "namespacetest_python_application_module" ],
     [ "testPythonDataConsistencyGroup", "namespacetest_python_data_consistency_group.html", "namespacetest_python_data_consistency_group" ],
+    [ "testPythonPollInputRead", "namespacetest_python_poll_input_read.html", "namespacetest_python_poll_input_read" ],
     [ "testPythonReadAnyGroup", "namespacetest_python_read_any_group.html", "namespacetest_python_read_any_group" ],
     [ "testPythonScalarAccessors", "namespacetest_python_scalar_accessors.html", "namespacetest_python_scalar_accessors" ],
     [ "testPythonSimpleApp", "namespacetest_python_simple_app.html", "namespacetest_python_simple_app" ],
