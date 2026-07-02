@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">steppermotorserver<span id="projectnumber">&#160;02.00.02</span>
+   <div id="projectname">steppermotorserver<span id="projectnumber">&#160;02.01.01</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('_stepper_motor_server_8cc_source.html'
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Definition of supported motor types</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">char</span> basicLinearMotorType[] = <span class="stringliteral">&quot;Basic&quot;</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">char</span> linearMotorWithReferenceType[] = <span class="stringliteral">&quot;LinearMotorWithReferenceSwitch&quot;</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">char</span> rotaryMotorWithReferenceType[] = <span class="stringliteral">&quot;RotaryMotorWithReferenceSwitch&quot;</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">char</span> rotationalMotorWithCentreSwitchType[] = <span class="stringliteral">&quot;RotationalMotorWithCentreSwitch&quot;</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/**********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('_stepper_motor_server_8cc_source.html'
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(motorType[i] == linearMotorWithReferenceType) {</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      motorParameters.motorType = ctkmot::StepperMotorType::LINEAR;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(motorType[i] == rotaryMotorWithReferenceType) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(motorType[i] == rotationalMotorWithCentreSwitchType) {</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      motorParameters.motorType = ctkmot::StepperMotorType::ROTARY;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">else</span> {</div>
