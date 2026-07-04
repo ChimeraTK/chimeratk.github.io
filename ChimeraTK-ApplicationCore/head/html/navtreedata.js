@@ -34,16 +34,54 @@ var NAVTREE =
       [ "The Application", "conceptual_overview.html#conceptualOverview_Application", null ],
       [ "Connections between ApplicationModules", "conceptual_overview.html#conceptualOverview_PVConnections", null ],
       [ "Module groups", "conceptual_overview.html#conceptualOverview_ModuleGroup", null ],
-      [ "Device modules", "conceptual_overview.html#conceptualOverview_DeviceModule", null ],
+      [ "Device modules", "conceptual_overview.html#conceptualOverview_DeviceModule", [
+        [ "Device initialisation handler", "conceptual_overview.html#conceptualOverview_DeviceModule_InitHandler", null ]
+      ] ],
       [ "Periodic Triggers", "conceptual_overview.html#conceptualOverview_PeriodicTriggers", null ],
-      [ "Configuration constants", "conceptual_overview.html#conceptualOverview_ConfigReader", null ],
+      [ "Configuration constants", "conceptual_overview.html#conceptualOverview_ConfigReader", [
+        [ "The XML configuration file", "conceptual_overview.html#conceptualOverview_ConfigReader_XML", null ],
+        [ "Usage", "conceptual_overview.html#conceptualOverview_ConfigReader_Usage", null ]
+      ] ],
       [ "Variable groups", "conceptual_overview.html#conceptualOverview_VariableGroup", null ],
-      [ "The Application model", "conceptual_overview.html#conceptualOverview_ApplicationModel", null ],
-      [ "Fanouts", "conceptual_overview.html#conceptualOverview_FanOuts", null ],
-      [ "Initial values", "conceptual_overview.html#conceptualOverview_InitialValues", null ],
-      [ "Device exception handling", "conceptual_overview.html#conceptualOverview_ExceptionHandling", null ],
-      [ "Data validity propagation", "conceptual_overview.html#conceptualOverview_DataValidity", null ],
-      [ "Control system integration", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration", null ]
+      [ "The Application model", "conceptual_overview.html#conceptualOverview_ApplicationModel", [
+        [ "Model structure", "conceptual_overview.html#conceptualOverview_ApplicationModel_Structure", null ],
+        [ "Usage", "conceptual_overview.html#conceptualOverview_ApplicationModel_Usage", null ]
+      ] ],
+      [ "Fanouts", "conceptual_overview.html#conceptualOverview_FanOuts", [
+        [ "FeedingFanOut", "conceptual_overview.html#conceptualOverview_FanOuts_FeedingFanOut", null ],
+        [ "ThreadedFanOut", "conceptual_overview.html#conceptualOverview_FanOuts_ThreadedFanOut", null ],
+        [ "TriggerFanOut", "conceptual_overview.html#conceptualOverview_FanOuts_TriggerFanOut", null ],
+        [ "ConsumingFanOut", "conceptual_overview.html#conceptualOverview_FanOuts_ConsumingFanOut", null ]
+      ] ],
+      [ "Initial values", "conceptual_overview.html#conceptualOverview_InitialValues", [
+        [ "Initial value propagation process", "conceptual_overview.html#conceptualOverview_InitialValues_Process", null ],
+        [ "Circular dependencies", "conceptual_overview.html#conceptualOverview_InitialValues_CircularDependencies", null ],
+        [ "Initial data validity", "conceptual_overview.html#conceptualOverview_InitialValues_DataValidity", null ]
+      ] ],
+      [ "Device exception handling", "conceptual_overview.html#conceptualOverview_ExceptionHandling", [
+        [ "Handling mechanism", "conceptual_overview.html#conceptualOverview_ExceptionHandling_Mechanism", null ],
+        [ "Impact on ApplicationModules", "conceptual_overview.html#conceptualOverview_ExceptionHandling_ApplicationModule", null ],
+        [ "Reacting to device state changes", "conceptual_overview.html#conceptualOverview_ExceptionHandling_Reacting", null ],
+        [ "Reporting exceptions from user code", "conceptual_overview.html#conceptualOverview_ExceptionHandling_Report", null ]
+      ] ],
+      [ "Data validity propagation", "conceptual_overview.html#conceptualOverview_DataValidity", [
+        [ "Propagation principle", "conceptual_overview.html#conceptualOverview_DataValidity_Principle", null ],
+        [ "Important notes", "conceptual_overview.html#conceptualOverview_DataValidity_ImportantNotes", null ]
+      ] ],
+      [ "Control system integration", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration", [
+        [ "The control system adapter", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration_Adapter", null ],
+        [ "Selecting the adapter at compile time", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration_Selection", null ],
+        [ "Adapter configuration", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration_Configuration", null ],
+        [ "Name mapping", "conceptual_overview.html#conceptualOverview_ControlSystemIntegration_NameMapping", null ]
+      ] ],
+      [ "Setting up a new project", "conceptual_overview.html#conceptualOverview_SettingUpAProject", [
+        [ "Project structure", "conceptual_overview.html#conceptualOverview_SettingUpAProject_ProjectStructure", null ],
+        [ "The application factory", "conceptual_overview.html#conceptualOverview_SettingUpAProject_ApplicationFactory", null ],
+        [ "CMakeLists.txt walkthrough", "conceptual_overview.html#conceptualOverview_SettingUpAProject_CMakeLists", null ],
+        [ "The project-template repository", "conceptual_overview.html#conceptualOverview_SettingUpAProject_ProjectTemplate", null ],
+        [ "Building the project", "conceptual_overview.html#conceptualOverview_SettingUpAProject_Building", null ],
+        [ "Testing", "conceptual_overview.html#conceptualOverview_SettingUpAProject_Testing", null ]
+      ] ]
     ] ],
     [ "Exception Handling", "exception_handling.html", [
       [ "Introduction", "exception_handling.html#exceptionHandling_Introduction", null ],
@@ -194,27 +232,27 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_trigger_fan_out.html#aa7a615ce3c34ffd5e1af2c474d7fc106",
 "class_example_app.html#ac27615ec57647b865dc7e34864e68076",
 "classtest_python_scalar_accessors_1_1_my_mod.html#a99580e293f806f93641ec83b9e8ef790",
-"functions_func_t.html",
-"namespace_tests_1_1test_data_validity_propagation.html#ae69415c2ae23bb20c3845a7b2f7b8a2f",
-"namespacedraw_module_connections.html#af4f2c4644c32444f8c4b8d9f2642bd8c",
-"struct_chimera_t_k_1_1_data_loss_counter.html",
-"struct_chimera_t_k_1_1_model_1_1_edge_filter.html#a4ff67e4955949c0b92ae0167e89c2849",
-"struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html#a1fc55d043e639910b2e21c3021a7613f",
-"struct_chimera_t_k_1_1_user_input_validator.html#ac5874dd3d35783002b62fdb81c5a1fe4",
-"struct_poll_module.html",
-"struct_tests_1_1test_bidirectional_variables_1_1_funnel_application.html#aca9ac67e87422c988ae71a0e05cdfd87",
-"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_h_h.html#a63718faeb43157d21e6cc5042d24f411",
-"struct_tests_1_1test_control_system_accessors_1_1_test_module.html#a66e8d973c7f2ee31789e069beeec4571",
-"struct_tests_1_1test_device_accessors_1_1_test_module.html#a6ede3c2db89e78acab29b9f27720ce5b",
-"struct_tests_1_1test_illegal_networks_1_1_test_application5.html#a3a68d87dd4dcfda262f7e38f1dbda799",
-"struct_tests_1_1test_initial_values_1_1_test6_a3_dummy_application.html#a4bc25c640b4814ed0876b1aff18e5d77",
-"struct_tests_1_1test_modules_1_1_multi_slash_var_module_1_1_some_module.html",
-"struct_tests_1_1test_process_variable_recovery_1_1_test_module.html#aeeee3f2ca407fbc30537a49e15070731",
-"struct_tests_1_1test_status_aggregator_1_1_test_application2_levels.html#a64a2035a648c4bcd9498c98da9aa384a",
-"struct_tests_1_1test_test_facilities_1_1_test_no_decorator_application.html",
-"struct_tests_1_1test_variable_group_1_1_input_module.html#a9057b306acd6fb686681efe08a9fc18f",
-"test_exception_handling_8cc_source.html",
-"test_reverse_recovery_8cc.html#a5ff4900a760443c93a367c2655c136eb"
+"fixtures_8h_source.html",
+"namespace_tests_1_1test_circular_dependency_faulty_flags.html#ab0b14e0eceeb429ab9a3d73038331eee",
+"namespace_tests_1_1test_user_input_validator.html#a7684625fad250d4e0e4b0f3c45f67fb7",
+"struct_chimera_t_k_1_1_config_reader_1_1_array.html#a770733f788d65282ade0270563f8c612",
+"struct_chimera_t_k_1_1_model_1_1_and_set.html#a09ca394135b688bcc56446fa7c620990",
+"struct_chimera_t_k_1_1_monitor_base.html#af1744072044f0f5e3b76a4bb11fc143c",
+"struct_chimera_t_k_1_1_user_input_validator.html#a0a660e1d79d4337e11cf8d213da464e6",
+"struct_init_failure_app.html#a1ee0f79558596123ad8eaf6a855d4057",
+"struct_tests_1_1test_application_p_v_model_1_1_test_application2.html#af3b292c637d20ceed41f7e4c0e541c5b",
+"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_f_f.html",
+"struct_tests_1_1test_config_reader_1_1_test_module_1_1_module2.html",
+"struct_tests_1_1test_device_accessors_1_1_test_application3.html#a84aa09eb2970aba1aa3890f8c9a1cd4d",
+"struct_tests_1_1test_illegal_networks_1_1_test_application3.html#a0fefbb19fb51f2a105774eac1374a578",
+"struct_tests_1_1test_initial_values_1_1_test6_a2_dummy_application.html#ad45ffb9dba6798e31aefe8ebcdedcae4",
+"struct_tests_1_1test_modules_1_1_assign_module_later_app.html#adda53e548b4ad35050e4dfe0a315a5c1",
+"struct_tests_1_1test_process_variable_recovery_1_1_read_only_test_application_1_1_test_module.html#a321c7d5dc87cb5ff7379bec6956eaa49",
+"struct_tests_1_1test_status_aggregator_1_1_status_with_message_generator.html#a5ced2fc86983cdcc9c130ac350a593e1",
+"struct_tests_1_1test_test_facilities_1_1_test_convenience_read_application.html",
+"struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html#a4f8b1000acff2dd8ede01410775adad6",
+"test_exception_handling_8cc.html#a0e5e463b6c81054d07927e0c30a6c9bc",
+"test_python_simple_app_8py_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
