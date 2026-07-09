@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"test_python_simple_app_8py.html#a0ab0d81903374735e019ef7af61e5516":[17,0,0,0,8,0,7,2],
+"test_python_simple_app_8py.html#a71dc4f3c5cc26eebcf4612869d40cf79":[17,0,0,0,8,0,7,1],
 "test_python_simple_app_8py_source.html":[17,0,0,0,8,0,7],
 "test_python_user_input_validator_8py.html":[17,0,0,0,8,0,8],
 "test_python_user_input_validator_8py_source.html":[17,0,0,0,8,0,8],

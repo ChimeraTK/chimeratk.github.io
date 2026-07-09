@@ -7,5 +7,6 @@ var class_example_app =
     [ "simulation", "class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7", null ],
     [ "Simulation", "class_example_app.html#abd16c59e21124f075eed347568b30464", null ],
     [ "temperatureMonitor", "class_example_app.html#a75cb48b7c5e4c505c5afe7910f8caee6", null ],
+    [ "temperatureTimer", "class_example_app.html#a6a542348c66f28d6e36410f36149e4c1", null ],
     [ "this", "class_example_app.html#a2c52dbdbbdbe1c73b4ffc38f71765d65", null ]
 ];
