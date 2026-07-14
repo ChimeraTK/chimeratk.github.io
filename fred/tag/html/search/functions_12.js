@@ -7,5 +7,5 @@ var searchData=
   ['xportgpiodummyservertest_4',['XPortGpioDummyServerTest',['../class_x_port_gpio_dummy_server_test.html#a69d533d3e455b7d42625f1b1e8137b82',1,'XPortGpioDummyServerTest']]],
   ['xportgpiodummyservertestsuite_5',['XPortGpioDummyServerTestSuite',['../class_x_port_gpio_dummy_server_test_suite.html#a10f3959f66a3014068b3897902e7a35b',1,'XPortGpioDummyServerTestSuite']]],
   ['xportsequence_6',['xportSequence',['../classfred__emergency_1_1_fred_emergency.html#a927bf90acd2db94c8580398f21dd8138',1,'fred_emergency::FredEmergency']]],
-  ['xpwatchdoginfo_7',['xpwatchdoginfo',['../class_fred_serial_protocol__2__3.html#a3396835b999d2b99c1721676cdc3886a',1,'FredSerialProtocol_2_3::xpWatchdogInfo()'],['../structfred_1_1_x_p_watchdog_info.html#a7aba33b34f7a44636940b61d05fe349e',1,'fred::XPWatchdogInfo::XPWatchdogInfo()']]]
+  ['xpwatchdoginfo_7',['xpwatchdoginfo',['../structfred_1_1_x_p_watchdog_info.html#a7aba33b34f7a44636940b61d05fe349e',1,'fred::XPWatchdogInfo::XPWatchdogInfo()'],['../class_fred_serial_protocol__2__3.html#a3396835b999d2b99c1721676cdc3886a',1,'FredSerialProtocol_2_3::xpWatchdogInfo()']]]
 ];

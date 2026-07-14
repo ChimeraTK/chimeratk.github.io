@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">fred<span id="projectnumber">&#160;02.05.00</span>
+   <div id="projectname">fred<span id="projectnumber">&#160;02.06.00</span>
    </div>
   </td>
  </tr>
@@ -189,17 +189,18 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements the GPIO interface of the Lantronix XPort. </p>
-<p>For better code readability the names of the getter and setter function differ from the names in the user guild. For instance 'get directions' does not say if 1 means input or output. It has been changed to getOutputPinsWord which makes clear that 1 means output (and hopefully implies that 0 means input and both directions are described by this word). Here is a list of the changes: </p><ul>
-<li>get functions <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> getGpioPinMask </li>
-<li>get directions <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> getOutputPinsWord </li>
-<li>get active levels <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> getActiveLowWord </li>
-<li>get current states <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> getPinsActiveWord </li>
-<li>set directions <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> setOutputPins </li>
-<li>set active levels <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> setActiveLowWord </li>
-<li>set current states <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$\longrightarrow$" src="form_0.png"/></picture> setPins </li>
+<p>For better code readability the names of the getter and setter function differ from the names in the user guide. For instance 'get directions' does not say if 1 means input or output. It has been changed to getOutputPinsWord which makes clear that 1 means output (and hopefully implies that 0 means input and both directions are described by this word). Here is a list of the changes:</p>
+<ul>
+<li>get functions -&gt; getGpioPinMask </li>
+<li>get directions -&gt; getOutputPinsWord </li>
+<li>get active levels -&gt; getActiveLowWord </li>
+<li>get current states -&gt; getPinsActiveWord </li>
+<li>set directions -&gt; setOutputPins </li>
+<li>set active levels -&gt; setActiveLowWord </li>
+<li>set current states -&gt; setPins </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8h_source.html#l00032">32</a> of file <a class="el" href="_x_port_gpio_client_8h_source.html">XPortGpioClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8h_source.html#l00034">34</a> of file <a class="el" href="_x_port_gpio_client_8h_source.html">XPortGpioClient.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0957143751973d3d223cd1a2e64b3197" name="a0957143751973d3d223cd1a2e64b3197"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0957143751973d3d223cd1a2e64b3197">&#9670;&#160;</a></span>ReadBuffer</h2>
@@ -221,7 +222,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8h_source.html#l00126">126</a> of file <a class="el" href="_x_port_gpio_client_8h_source.html">XPortGpioClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8h_source.html#l00128">128</a> of file <a class="el" href="_x_port_gpio_client_8h_source.html">XPortGpioClient.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +246,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8h_source.html#l00119">119</a> of file <a class="el" href="_x_port_gpio_client_8h_source.html">XPortGpioClient.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8h_source.html#l00121">121</a> of file <a class="el" href="_x_port_gpio_client_8h_source.html">XPortGpioClient.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +277,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00021">21</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00012">12</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -305,7 +306,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00064">64</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00056">56</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -355,7 +356,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00138">138</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00133">133</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -399,7 +400,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00126">126</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00121">121</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -446,7 +447,7 @@ Protected Member Functions</h2></td></tr>
 <p>Check the size and command of the response. </p>
 <p>Throw an exception if not OK. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00167">167</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00162">162</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -496,7 +497,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00257">257</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00252">252</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -524,7 +525,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00054">54</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00046">46</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -551,7 +552,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00027">27</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00018">18</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -573,7 +574,7 @@ Protected Member Functions</h2></td></tr>
 <p>Reqest a disconnect to free the socket. </p>
 <p>The client will reconnect automatically on the next access request. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00074">74</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00066">66</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -603,7 +604,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Extract the 32 bit response from the little-endian response of the XPort. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00196">196</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00191">191</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -628,7 +629,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means active high </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00229">229</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00224">224</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -653,7 +654,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means pin is not in GPIO mode (Note: Name in the user guide: Get Functions) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00221">221</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00216">216</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -678,7 +679,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means input (Note: How about getDirectionIsOutputWord()?) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00225">225</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00220">220</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -703,7 +704,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means not active </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00233">233</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00228">228</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -725,7 +726,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Check if a pin [0..31] is active. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00216">216</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00211">211</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -755,7 +756,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Helper function to convert a pin to the corresponding mask. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00203">203</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00198">198</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -801,7 +802,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Prepare the output buffer with a little endian sequence for the 32 bit input parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00151">151</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00146">146</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -837,7 +838,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means active high The values are only changed for the pins specified by the pin mask. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00243">243</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00238">238</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -873,7 +874,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means input </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00237">237</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00232">232</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -911,7 +912,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00211">211</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00206">206</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -947,7 +948,7 @@ Protected Member Functions</h2></td></tr>
 <li>Bit X = 0 means not active The state is only changed for the pins specified by the pin mask. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00249">249</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00244">244</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
@@ -993,7 +994,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The basic communication sequence with the XPort. </p>
 
-<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00080">80</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_x_port_gpio_client_8cc_source.html#l00072">72</a> of file <a class="el" href="_x_port_gpio_client_8cc_source.html">XPortGpioClient.cc</a>.</p>
 
 </div>
 </div>
