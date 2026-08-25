@@ -57,7 +57,7 @@ var test_l_map_backend_unified_8cpp =
     [ "BitRangeAccessorTarget", "struct_bit_range_accessor_target.html", "struct_bit_range_accessor_target" ],
     [ "RegLowerHalfOfFirmware", "struct_reg_lower_half_of_firmware.html", "struct_reg_lower_half_of_firmware" ],
     [ "RegUpperHalfOfFirmware", "struct_reg_upper_half_of_firmware.html", "struct_reg_upper_half_of_firmware" ],
-    [ "Reg9BitsInChar", "struct_reg9_bits_in_char.html", "struct_reg9_bits_in_char" ],
+    [ "RegBitRangeMiddle", "struct_reg_bit_range_middle.html", "struct_reg_bit_range_middle" ],
     [ "RegWithFanOutMainTarget", "struct_reg_with_fan_out_main_target.html", "struct_reg_with_fan_out_main_target" ],
     [ "RegWithFanOutTarget2", "struct_reg_with_fan_out_target2.html", "struct_reg_with_fan_out_target2" ],
     [ "RegWithFanOutTarget3", "struct_reg_with_fan_out_target3.html", "struct_reg_with_fan_out_target3" ],

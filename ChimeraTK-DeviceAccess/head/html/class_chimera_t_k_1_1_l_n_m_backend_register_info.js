@@ -20,6 +20,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_register_info =
     [ "isReadable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa", null ],
     [ "operator=", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a9784086bf0c9d5119543ff249ec1908e", null ],
+    [ "operator==", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ae050392685c56b08d0fa49f5d3cfa286", null ],
     [ "_dataDescriptor", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a5db9fdbb7870c4c352c7abdc87f1e33d", null ],
     [ "bit", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af1027e2cac947b434f1d861bfa07a18c", null ],
     [ "channel", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aff42f74c45e0976b23e7842469af46da", null ],

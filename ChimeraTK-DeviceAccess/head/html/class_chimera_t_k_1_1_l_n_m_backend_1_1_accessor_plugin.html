@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_1_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::LNMBackend::AccessorPlugin&lt; Derived &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -120,9 +119,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b801b6e961a3edf0a241ad6df00050c" id="r_a5b801b6e961a3edf0a241ad6df00050c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a5b801b6e961a3edf0a241ad6df00050c">AccessorPlugin</a> (const <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &amp;info, size_t pluginIndex, bool shareTargetAccessors=false)</td></tr>
-<tr class="memdesc:a5b801b6e961a3edf0a241ad6df00050c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the plugin should also accept a 3rd argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on.  <br /></td></tr>
-<tr class="separator:a5b801b6e961a3edf0a241ad6df00050c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d76cf4a9ef93f8b4e3d1c5c8db62ca4" id="r_a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a5d76cf4a9ef93f8b4e3d1c5c8db62ca4">AccessorPlugin</a> (const <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &amp;info, size_t pluginIndex)</td></tr>
+<tr class="separator:a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2cec9cda3017970bbcb1fdc3e0d5cf6" id="r_ad2cec9cda3017970bbcb1fdc3e0d5cf6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6">getTargetDataType</a> (<a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> userType) const</td></tr>
 <tr class="memdesc:ad2cec9cda3017970bbcb1fdc3e0d5cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the data type for which the target accessor shall be obtained.  <br /></td></tr>
 <tr class="separator:ad2cec9cda3017970bbcb1fdc3e0d5cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,11 +168,8 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a10bc03eaafa9a9228c0d881950b92c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the plugin instance within the stack of plugins on a particular register.  <br /></td></tr>
 <tr class="separator:a10bc03eaafa9a9228c0d881950b92c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a21e0bbed51d386c3d9b2ae2c66a6597e" id="r_a21e0bbed51d386c3d9b2ae2c66a6597e"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a21e0bbed51d386c3d9b2ae2c66a6597e">_needSharedTarget</a></td></tr>
-<tr class="memdesc:a21e0bbed51d386c3d9b2ae2c66a6597e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deriving plugins should set this to true if they want to use interlocked access to the same target accessor.  <br /></td></tr>
-<tr class="separator:a21e0bbed51d386c3d9b2ae2c66a6597e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">ChimeraTK::LNMBackend::AccessorPluginBase</a></td></tr>
 <tr class="memitem:a301511d3199e5b83ac4df0e4f9264e57 inherit pro_attribs_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base" id="r_a301511d3199e5b83ac4df0e4f9264e57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a301511d3199e5b83ac4df0e4f9264e57">_info</a></td></tr>
 <tr class="memdesc:a301511d3199e5b83ac4df0e4f9264e57 inherit pro_attribs_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a> describing the the target register for which this plugin instance should work.  <br /></td></tr>
@@ -188,8 +183,8 @@ class ChimeraTK::LNMBackend::AccessorPlugin&lt; Derived &gt;</div><p><a class="e
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00105">105</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5b801b6e961a3edf0a241ad6df00050c" name="a5b801b6e961a3edf0a241ad6df00050c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b801b6e961a3edf0a241ad6df00050c">&#9670;&#160;</a></span>AccessorPlugin()</h2>
+<a id="a5d76cf4a9ef93f8b4e3d1c5c8db62ca4" name="a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d76cf4a9ef93f8b4e3d1c5c8db62ca4">&#9670;&#160;</a></span>AccessorPlugin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,13 +204,7 @@ template&lt;typename Derived &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>pluginIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>shareTargetAccessors</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>pluginIndex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -230,9 +219,7 @@ template&lt;typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The constructor of the plugin should also accept a 3rd argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on. </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00313">313</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00301">301</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +264,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 <p>It allows the plugin to decorate the accessor to change the its behaviour.</p>
 <p>Note: Even if <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6" title="Return the data type for which the target accessor shall be obtained.">getTargetDataType()</a> is overridden, the function will be instantiated for all target types, but if will be only called for those <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6" title="Return the data type for which the target accessor shall be obtained.">getTargetDataType()</a> returns. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00323">323</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00310">310</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +319,7 @@ template&lt;typename UserType &gt; </div>
 <p>This function is called by the backend. </p>
 <p>Do not override in implementations. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00340">340</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00327">327</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -367,40 +354,11 @@ template&lt;typename Derived &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#adc93890bcfe074182a47d03abcb9770a">ChimeraTK::LNMBackend::MultiplierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a3a3225618034fe7e87de60d9e7a87ff5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#a007abdf0ae0ca4a030f41a9dc9aab132">ChimeraTK::LNMBackend::BitRangeAccessPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0b4c026d688a81624526cde1ec98a73a">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00133">133</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00121">121</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a21e0bbed51d386c3d9b2ae2c66a6597e" name="a21e0bbed51d386c3d9b2ae2c66a6597e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e0bbed51d386c3d9b2ae2c66a6597e">&#9670;&#160;</a></span>_needSharedTarget</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">ChimeraTK::LNMBackend::AccessorPlugin</a>&lt; Derived &gt;::_needSharedTarget</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deriving plugins should set this to true if they want to use interlocked access to the same target accessor. </p>
-<p>Otherwise different accessors for the same target will given out. </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00124">124</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
-
-</div>
-</div>
 <a id="a10bc03eaafa9a9228c0d881950b92c90" name="a10bc03eaafa9a9228c0d881950b92c90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10bc03eaafa9a9228c0d881950b92c90">&#9670;&#160;</a></span>_pluginIndex</h2>
 
@@ -417,7 +375,7 @@ template&lt;typename Derived &gt; </div>
 
 <p>Index of the plugin instance within the stack of plugins on a particular register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00156">156</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00144">144</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>

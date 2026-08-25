@@ -5,7 +5,7 @@ var dir_e2e4b1a6076cce13b2da02e7a514103a =
     [ "LNMBackendBitAccessor.cc", "_l_n_m_backend_bit_accessor_8cc.html", "_l_n_m_backend_bit_accessor_8cc" ],
     [ "LNMBackendChannelAccessor.cc", "_l_n_m_backend_channel_accessor_8cc.html", "_l_n_m_backend_channel_accessor_8cc" ],
     [ "LNMBackendVariableAccessor.cc", "_l_n_m_backend_variable_accessor_8cc.html", "_l_n_m_backend_variable_accessor_8cc" ],
-    [ "LNMBitRangeAccessPlugin.cc", "_l_n_m_bit_range_access_plugin_8cc.html", "_l_n_m_bit_range_access_plugin_8cc" ],
+    [ "LNMBitRangeAccessPlugin.cc", "_l_n_m_bit_range_access_plugin_8cc.html", null ],
     [ "LNMDoubleBufferPlugin.cc", "_l_n_m_double_buffer_plugin_8cc.html", null ],
     [ "LNMForcePollingReadPlugin.cc", "_l_n_m_force_polling_read_plugin_8cc.html", null ],
     [ "LNMForceReadOnlyPlugin.cc", "_l_n_m_force_read_only_plugin_8cc.html", "_l_n_m_force_read_only_plugin_8cc" ],
