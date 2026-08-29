@@ -15,5 +15,5 @@ var class_chimera_t_k_1_1_py_array_accessor =
     [ "setAndWrite", "class_chimera_t_k_1_1_py_array_accessor.html#a587d538e4ee5a1be43a308d7ae971979", null ],
     [ "setitem", "class_chimera_t_k_1_1_py_array_accessor.html#abe10f0eefc21537334640d9bed99f82f", null ],
     [ "setslice", "class_chimera_t_k_1_1_py_array_accessor.html#a7d1571eb2c35523d5a70ec738fcf8d7d", null ],
-    [ "_accessor", "class_chimera_t_k_1_1_py_array_accessor.html#ac2b04245ca13764be111fc197bfe8c2d", null ]
+    [ "_accessor", "class_chimera_t_k_1_1_py_array_accessor.html#ade15aad2e279fa82c0cea094bd98f619", null ]
 ];

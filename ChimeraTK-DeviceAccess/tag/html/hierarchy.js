@@ -350,9 +350,6 @@ var hierarchy =
               [ "DoNothingDecorator< UserType >", "class_do_nothing_decorator.html", null ],
               [ "TestNDRegisterAccessorDecorator< UserType >", "class_test_n_d_register_accessor_decorator.html", null ]
             ] ],
-            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint64_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::LNMBackend::BitRangeAccessPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html", null ]
-            ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MathPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::MultiplierPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", null ]
@@ -370,6 +367,7 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< T, std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< std::string, ChimeraTK::Void >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint64_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", null ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
               [ "ChimeraTK::TypeChangingDecorator< ChimeraTK::Void, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
@@ -529,7 +527,6 @@ var hierarchy =
     [ "ChimeraTK::RebotSleepSynchroniser", "struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html", null ],
     [ "ChimeraTK::RebotTestableClock", "class_chimera_t_k_1_1_rebot_testable_clock.html", null ],
     [ "RebotTestClass", "class_rebot_test_class.html", null ],
-    [ "ChimeraTK::LNMBackend::ReferenceCountedUniqueLock", "class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html", null ],
     [ "Register", null, [
       [ "AreaType< Register >", "struct_area_type.html", null ],
       [ "AreaType< Register >", "struct_area_type.html", null ],
@@ -559,14 +556,19 @@ var hierarchy =
       [ "ConstantRegisterDescriptorBase< RegConstant2 >", "struct_constant_register_descriptor_base.html", [
         [ "RegConstant2", "struct_reg_constant2.html", null ]
       ] ],
+      [ "OneDRegisterDescriptorBase< ArrayBitRangeHigh >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< ArrayBitRangeLow >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< ArrayRegTarget >", "struct_one_d_register_descriptor_base.html", [
+        [ "ArrayRegTarget", "struct_array_reg_target.html", null ]
+      ] ],
       [ "OneDRegisterDescriptorBase< BitRangeAccessorTarget >", "struct_one_d_register_descriptor_base.html", null ],
-      [ "OneDRegisterDescriptorBase< Reg9BitsInChar >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegArrayVariable >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegBit0OfVar >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegBit3OfVar >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBitRangeMiddle >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegFullArea >", "struct_one_d_register_descriptor_base.html", [
         [ "RegFullArea", "struct_reg_full_area.html", null ]
       ] ],
@@ -604,9 +606,57 @@ var hierarchy =
       [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_one_d_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< ArrayBitRangeHigh >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< ArrayBitRangeLow >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< ArrayRegTarget >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< BitRangeAccessorTarget >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegArrayVariable >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBit0OfVar >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBit3OfVar >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegBitRangeMiddle >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegFullArea >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegFullAreaScaled >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegLowerHalfOfFirmware >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegMonostableTrigger >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegPartOfArea >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegRedirectedBitWithMath >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWord >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWordB >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaledTwice_push >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_RW >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegSingleWord_push >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegUpperHalfOfFirmware >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariable >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_one_d_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_one_d_register_descriptor_base.html", null ],
       [ "ChannelRegisterDescriptorBase< Derived >", "struct_channel_register_descriptor_base.html", null ],
       [ "ConstantRegisterDescriptorBase< Derived >", "struct_constant_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", [
+        [ "ArrayRegBitRangeDescriptor< ArrayBitRangeHigh >", "struct_array_reg_bit_range_descriptor.html", [
+          [ "ArrayBitRangeHigh", "struct_array_bit_range_high.html", null ]
+        ] ],
+        [ "ArrayRegBitRangeDescriptor< ArrayBitRangeLow >", "struct_array_reg_bit_range_descriptor.html", [
+          [ "ArrayBitRangeLow", "struct_array_bit_range_low.html", null ]
+        ] ],
         [ "BitRegisterDescriptorBase< RegBit0OfVar >", "struct_bit_register_descriptor_base.html", [
           [ "RegBit0OfVar", "struct_reg_bit0_of_var.html", null ]
         ] ],
@@ -622,16 +672,23 @@ var hierarchy =
         [ "BitRegisterDescriptorBase< RegBit3OfVar >", "struct_bit_register_descriptor_base.html", [
           [ "RegBit3OfVar", "struct_reg_bit3_of_var.html", null ]
         ] ],
-        [ "RegBitRangeDescriptor< Reg9BitsInChar >", "struct_reg_bit_range_descriptor.html", [
-          [ "Reg9BitsInChar", "struct_reg9_bits_in_char.html", null ]
+        [ "RegBitRangeDescriptor< RegBitRangeMiddle >", "struct_reg_bit_range_descriptor.html", [
+          [ "RegBitRangeMiddle", "struct_reg_bit_range_middle.html", null ],
+          [ "RegBitRangeMiddle", "struct_reg_bit_range_middle.html", null ]
         ] ],
         [ "RegBitRangeDescriptor< RegLowerHalfOfFirmware >", "struct_reg_bit_range_descriptor.html", [
+          [ "RegLowerHalfOfFirmware", "struct_reg_lower_half_of_firmware.html", null ],
           [ "RegLowerHalfOfFirmware", "struct_reg_lower_half_of_firmware.html", null ]
         ] ],
         [ "RegBitRangeDescriptor< RegUpperHalfOfFirmware >", "struct_reg_bit_range_descriptor.html", [
+          [ "RegUpperHalfOfFirmware", "struct_reg_upper_half_of_firmware.html", null ],
           [ "RegUpperHalfOfFirmware", "struct_reg_upper_half_of_firmware.html", null ]
         ] ],
+        [ "RegBitRangeDescriptor< RegBitRangeMiddle >", "struct_reg_bit_range_descriptor.html", null ],
+        [ "RegBitRangeDescriptor< RegLowerHalfOfFirmware >", "struct_reg_bit_range_descriptor.html", null ],
+        [ "RegBitRangeDescriptor< RegUpperHalfOfFirmware >", "struct_reg_bit_range_descriptor.html", null ],
         [ "ScalarRegisterDescriptorBase< BitRangeAccessorTarget >", "struct_scalar_register_descriptor_base.html", [
+          [ "BitRangeAccessorTarget", "struct_bit_range_accessor_target.html", null ],
           [ "BitRangeAccessorTarget", "struct_bit_range_accessor_target.html", null ]
         ] ],
         [ "ScalarRegisterDescriptorBase< RegMonostableTrigger >", "struct_scalar_register_descriptor_base.html", [
@@ -681,13 +738,41 @@ var hierarchy =
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_scalar_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_scalar_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< BitRangeAccessorTarget >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegMonostableTrigger >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegRedirectedBitWithMath >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWord >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordB >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaledTwice_push >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_RW >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWord_push >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutMainTarget >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutTarget2 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWithFanOutTarget3 >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_scalar_register_descriptor_base.html", null ],
         [ "VariableRegisterDescriptorBase< RegArrayVariable >", "struct_variable_register_descriptor_base.html", [
           [ "RegArrayVariable", "struct_reg_array_variable.html", null ]
         ] ],
         [ "VariableRegisterDescriptorBase< RegVariable >", "struct_variable_register_descriptor_base.html", [
           [ "RegVariable", "struct_reg_variable.html", null ]
         ] ],
+        [ "ArrayRegBitRangeDescriptor< Derived >", "struct_array_reg_bit_range_descriptor.html", null ],
         [ "BitRegisterDescriptorBase< Derived >", "struct_bit_register_descriptor_base.html", null ],
+        [ "RegBitRangeDescriptor< Derived >", "struct_reg_bit_range_descriptor.html", null ],
         [ "RegBitRangeDescriptor< Derived >", "struct_reg_bit_range_descriptor.html", null ],
         [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", [
           [ "RegSingleWordScaled< RegSingleWordScaled_R >", "struct_reg_single_word_scaled.html", [
@@ -742,11 +827,15 @@ var hierarchy =
           ] ],
           [ "RegWordFirmwareWithMath< Derived >", "struct_reg_word_firmware_with_math.html", null ]
         ] ],
+        [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", null ],
         [ "VariableRegisterDescriptorBase< Derived >", "struct_variable_register_descriptor_base.html", null ]
-      ] ]
+      ] ],
+      [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", null ]
     ] ],
+    [ "RegisterDescriptorBase< ArrayBitRangeHigh >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< ArrayBitRangeLow >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< ArrayRegTarget >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< BitRangeAccessorTarget >", "struct_register_descriptor_base.html", null ],
-    [ "RegisterDescriptorBase< Reg9BitsInChar >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegArrayConstant >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegArrayVariable >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegBit0OfVar >", "struct_register_descriptor_base.html", null ],
@@ -754,6 +843,7 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegBit3OfVar >", "struct_register_descriptor_base.html", null ],
+    [ "RegisterDescriptorBase< RegBitRangeMiddle >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegChannel3 >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegChannel4_push >", "struct_register_descriptor_base.html", null ],
     [ "RegisterDescriptorBase< RegChannelLast >", "struct_register_descriptor_base.html", null ],

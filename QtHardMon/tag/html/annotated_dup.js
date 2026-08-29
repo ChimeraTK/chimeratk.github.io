@@ -15,7 +15,6 @@ var annotated_dup =
     [ "PlotView", "class_plot_view.html", "class_plot_view" ],
     [ "PlotWindow", "class_plot_window.html", "class_plot_window" ],
     [ "PreferencesProvider", "class_preferences_provider.html", "class_preferences_provider" ],
-    [ "PreferencesProvider_fixtureBase", "struct_preferences_provider__fixture_base.html", "struct_preferences_provider__fixture_base" ],
     [ "PropertiesWidget", "class_properties_widget.html", "class_properties_widget" ],
     [ "QtHardMon", "class_qt_hard_mon.html", "class_qt_hard_mon" ],
     [ "QtHardmon_fixtureBase", "struct_qt_hardmon__fixture_base.html", "struct_qt_hardmon__fixture_base" ],

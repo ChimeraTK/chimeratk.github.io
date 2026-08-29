@@ -26,10 +26,16 @@ var searchData=
   ['anotherworkingbackend_23',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
   ['areatype_24',['AreaType',['../struct_area_type.html',1,'']]],
   ['argument_25',['Argument',['../struct_argument.html',1,'']]],
-  ['asciidata_26',['AsciiData',['../struct_ascii_data.html',1,'']]],
-  ['asyncaccessormanager_27',['AsyncAccessorManager',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html',1,'ChimeraTK::async']]],
-  ['asyncndregisteraccessor_28',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async']]],
-  ['asynctestdummy_29',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
-  ['asyncvariable_30',['AsyncVariable',['../struct_chimera_t_k_1_1async_1_1_async_variable.html',1,'ChimeraTK::async']]],
-  ['asyncvariableimpl_31',['AsyncVariableImpl',['../struct_chimera_t_k_1_1async_1_1_async_variable_impl.html',1,'ChimeraTK::async']]]
+  ['arraybitrangehigh_26',['ArrayBitRangeHigh',['../struct_array_bit_range_high.html',1,'']]],
+  ['arraybitrangelow_27',['ArrayBitRangeLow',['../struct_array_bit_range_low.html',1,'']]],
+  ['arrayregbitrangedescriptor_28',['ArrayRegBitRangeDescriptor',['../struct_array_reg_bit_range_descriptor.html',1,'']]],
+  ['arrayregbitrangedescriptor_3c_20arraybitrangehigh_20_3e_29',['ArrayRegBitRangeDescriptor&lt; ArrayBitRangeHigh &gt;',['../struct_array_reg_bit_range_descriptor.html',1,'']]],
+  ['arrayregbitrangedescriptor_3c_20arraybitrangelow_20_3e_30',['ArrayRegBitRangeDescriptor&lt; ArrayBitRangeLow &gt;',['../struct_array_reg_bit_range_descriptor.html',1,'']]],
+  ['arrayregtarget_31',['ArrayRegTarget',['../struct_array_reg_target.html',1,'']]],
+  ['asciidata_32',['AsciiData',['../struct_ascii_data.html',1,'']]],
+  ['asyncaccessormanager_33',['AsyncAccessorManager',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html',1,'ChimeraTK::async']]],
+  ['asyncndregisteraccessor_34',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async']]],
+  ['asynctestdummy_35',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
+  ['asyncvariable_36',['AsyncVariable',['../struct_chimera_t_k_1_1async_1_1_async_variable.html',1,'ChimeraTK::async']]],
+  ['asyncvariableimpl_37',['AsyncVariableImpl',['../struct_chimera_t_k_1_1async_1_1_async_variable_impl.html',1,'ChimeraTK::async']]]
 ];

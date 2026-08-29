@@ -52,7 +52,9 @@ var annotated_dup =
       [ "ArrayOutputReverseRecovery", "class_chimera_t_k_1_1_array_output_reverse_recovery.html", "class_chimera_t_k_1_1_array_output_reverse_recovery" ],
       [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ],
       [ "ArrayPollInput", "class_chimera_t_k_1_1_array_poll_input.html", "class_chimera_t_k_1_1_array_poll_input" ],
+      [ "ArrayPollInputNoInitialValue", "class_chimera_t_k_1_1_array_poll_input_no_initial_value.html", "class_chimera_t_k_1_1_array_poll_input_no_initial_value" ],
       [ "ArrayPushInput", "class_chimera_t_k_1_1_array_push_input.html", "class_chimera_t_k_1_1_array_push_input" ],
+      [ "ArrayPushInputNoInitialValue", "class_chimera_t_k_1_1_array_push_input_no_initial_value.html", "class_chimera_t_k_1_1_array_push_input_no_initial_value" ],
       [ "ArrayPushInputWB", "class_chimera_t_k_1_1_array_push_input_w_b.html", "class_chimera_t_k_1_1_array_push_input_w_b" ],
       [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
       [ "ConfigReader", "class_chimera_t_k_1_1_config_reader.html", "class_chimera_t_k_1_1_config_reader" ],
@@ -125,7 +127,9 @@ var annotated_dup =
       [ "ScalarOutputReverseRecovery", "class_chimera_t_k_1_1_scalar_output_reverse_recovery.html", "class_chimera_t_k_1_1_scalar_output_reverse_recovery" ],
       [ "ScalarPipe", "struct_chimera_t_k_1_1_scalar_pipe.html", "struct_chimera_t_k_1_1_scalar_pipe" ],
       [ "ScalarPollInput", "class_chimera_t_k_1_1_scalar_poll_input.html", "class_chimera_t_k_1_1_scalar_poll_input" ],
+      [ "ScalarPollInputNoInitialValue", "class_chimera_t_k_1_1_scalar_poll_input_no_initial_value.html", "class_chimera_t_k_1_1_scalar_poll_input_no_initial_value" ],
       [ "ScalarPushInput", "class_chimera_t_k_1_1_scalar_push_input.html", "class_chimera_t_k_1_1_scalar_push_input" ],
+      [ "ScalarPushInputNoInitialValue", "class_chimera_t_k_1_1_scalar_push_input_no_initial_value.html", "class_chimera_t_k_1_1_scalar_push_input_no_initial_value" ],
       [ "ScalarPushInputWB", "class_chimera_t_k_1_1_scalar_push_input_w_b.html", "class_chimera_t_k_1_1_scalar_push_input_w_b" ],
       [ "ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", "struct_chimera_t_k_1_1_scripted_init_handler" ],
       [ "SetDMapFilePath", "class_chimera_t_k_1_1_set_d_map_file_path.html", "class_chimera_t_k_1_1_set_d_map_file_path" ],
@@ -158,6 +162,9 @@ var annotated_dup =
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],
       [ "XMLGenerator", "class_chimera_t_k_1_1_x_m_l_generator.html", "class_chimera_t_k_1_1_x_m_l_generator" ]
     ] ],
+    [ "testPythonAccessorTags", "namespacetest_python_accessor_tags.html", [
+      [ "MyMod", "classtest_python_accessor_tags_1_1_my_mod.html", "classtest_python_accessor_tags_1_1_my_mod" ]
+    ] ],
     [ "testPythonAppConfig", "namespacetest_python_app_config.html", [
       [ "MyMod", "classtest_python_app_config_1_1_my_mod.html", "classtest_python_app_config_1_1_my_mod" ]
     ] ],
@@ -168,6 +175,9 @@ var annotated_dup =
     [ "testPythonDataConsistencyGroup", "namespacetest_python_data_consistency_group.html", [
       [ "Receiver", "classtest_python_data_consistency_group_1_1_receiver.html", "classtest_python_data_consistency_group_1_1_receiver" ],
       [ "Sender", "classtest_python_data_consistency_group_1_1_sender.html", "classtest_python_data_consistency_group_1_1_sender" ]
+    ] ],
+    [ "testPythonPollInputRead", "namespacetest_python_poll_input_read.html", [
+      [ "PollInputTestMod", "classtest_python_poll_input_read_1_1_poll_input_test_mod.html", "classtest_python_poll_input_read_1_1_poll_input_test_mod" ]
     ] ],
     [ "testPythonReadAnyGroup", "namespacetest_python_read_any_group.html", [
       [ "ReadAnyGroupMod1", "classtest_python_read_any_group_1_1_read_any_group_mod1.html", "classtest_python_read_any_group_1_1_read_any_group_mod1" ]

@@ -5,6 +5,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "BackendFactory.h", "_backend_factory_8h.html", "_backend_factory_8h" ],
     [ "BackendRegisterCatalogue.h", "_backend_register_catalogue_8h.html", "_backend_register_catalogue_8h" ],
     [ "BackendRegisterInfoBase.h", "_backend_register_info_base_8h.html", "_backend_register_info_base_8h" ],
+    [ "BitRangeAccessorDecorator.h", "_bit_range_accessor_decorator_8h.html", null ],
     [ "Boolean.h", "_boolean_8h.html", "_boolean_8h" ],
     [ "CopyRegisterDecorator.h", "_copy_register_decorator_8h.html", "_copy_register_decorator_8h" ],
     [ "CountedRecursiveMutex.h", "_counted_recursive_mutex_8h.html", null ],

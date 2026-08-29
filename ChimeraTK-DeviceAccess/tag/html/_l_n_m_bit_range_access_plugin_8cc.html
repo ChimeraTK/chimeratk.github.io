@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.28.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.29.00</span>
    </div>
   </td>
  </tr>
@@ -91,17 +91,15 @@ $(document).ready(function(){initNavTree('_l_n_m_bit_range_access_plugin_8cc.htm
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">LNMBitRangeAccessPlugin.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_bit_range_accessor_decorator_8h_source.html">BitRangeAccessorDecorator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_n_d_register_accessor_8h_source.html">NDRegisterAccessor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_raw_converter_8h_source.html">RawConverter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>&quot;</code><br />
 <code>#include &lt;boost/make_shared.hpp&gt;</code><br />
 <code>#include &lt;charconv&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -114,25 +112,12 @@ $(document).ready(function(){initNavTree('_l_n_m_bit_range_access_plugin_8cc.htm
 </div>
 <p><a href="_l_n_m_bit_range_access_plugin_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html">ChimeraTK::LNMBackend::ReferenceCountedUniqueLock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that keeps track of how many locks were taken on the recursive mutex in the current thread.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_reference_counted_unique_lock.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin_decorator.html">ChimeraTK::LNMBackend::BitRangeAccessPluginDecorator&lt; UserType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k" id="r_namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1_l_n_m_backend" id="r_namespace_chimera_t_k_1_1_l_n_m_backend"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">ChimeraTK::LNMBackend</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ac77c8250167810a3b0ee785deae36bb4" id="r_ac77c8250167810a3b0ee785deae36bb4"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#ac77c8250167810a3b0ee785deae36bb4">ChimeraTK::LNMBackend::getMaskForNBits</a> (uint64_t numberOfBits)</td></tr>
-<tr class="separator:ac77c8250167810a3b0ee785deae36bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
