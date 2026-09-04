@@ -25,9 +25,7 @@
 var NAVTREE =
 [
   [ "ChimeraTK-DeviceAccess", "index.html", [
-    [ "First steps", "index.html#first_steps", [
-      [ "Logical Name Mapping plugins", "index.html#lnm", null ]
-    ] ],
+    [ "First steps", "index.html#first_steps", null ],
     [ "Multi Value Registers (1D Register Accessors)", "accessor1d.html", null ],
     [ "2D Register Accessors", "accessor2d.html", null ],
     [ "Using and creating custom backends", "custom_backends.html", [
@@ -71,6 +69,33 @@ var NAVTREE =
         [ "Automatic recovery", "exceptions.html#auto_recover", null ],
         [ "No recovery necessary", "exceptions.html#no_recovery", null ]
       ] ]
+    ] ],
+    [ "JMAP map file format", "jmap.html", [
+      [ "Fundamental concepts", "jmap.html#jmap_fundamentals", [
+        [ "Comments", "jmap.html#jmap_comments", null ]
+      ] ],
+      [ "Register entry", "jmap.html#jmap_register", [
+        [ "Address", "jmap.html#jmap_address", null ],
+        [ "Access", "jmap.html#jmap_access", null ],
+        [ "Number of elements and bytes per element", "jmap.html#jmap_elements", null ],
+        [ "Representation", "jmap.html#jmap_representation", null ],
+        [ "Description and engineering unit", "jmap.html#jmap_description", null ]
+      ] ],
+      [ "Modules and hierarchical names", "jmap.html#jmap_modules", [
+        [ "Modules", "jmap.html#jmap_simple_modules", null ],
+        [ "Address inheritance", "jmap.html#jmap_address_inheritance", null ]
+      ] ],
+      [ "Advanced features", "jmap.html#jmap_advanced", [
+        [ "Interrupts", "jmap.html#jmap_interrupts", null ],
+        [ "2D multiplexed registers", "jmap.html#jmap_2d", [
+          [ "Channel slices", "jmap.html#jmap_channel_slices", null ],
+          [ "Channel tabs", "jmap.html#jmap_channel_tabs", null ]
+        ] ],
+        [ "Double buffering", "jmap.html#jmap_double_buffering", null ],
+        [ "Bit fields", "jmap.html#jmap_bitfields", null ]
+      ] ],
+      [ "Metadata", "jmap.html#jmap_metadata", null ],
+      [ "See also", "jmap.html#jmap_references", null ]
     ] ],
     [ "Logical Name Mapping Backend", "lmap.html", [
       [ "CDD syntax", "lmap.html#cdd", null ],
@@ -186,19 +211,19 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html#a05d5d832df2694278a5f9290ed3ebbe1",
 "class_test_dummy.html#aa5067318f24c35303b5316d122b8f362",
 "globals.html",
-"namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7",
-"struct_area_type.html#a90a9fd6b184d3c0cb5234e6dbb3a2b85",
-"struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html",
-"struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group_1_1_channel.html#a9c01609d3b4aeb0b98d6b6dbdabe3bff",
-"struct_chimera_t_k_1_1async_1_1_async_variable.html",
-"struct_integers__signed32__async.html#ab91c033ee4406a9a70e1f3480ae58708",
-"struct_only_cie_test_fixture.html#a16794c7e5455d1491e2c2d344e454c55",
-"struct_reg_variable_as_push_parameter_in_math__x.html",
-"struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4",
-"test_double_buffering_8cpp_source.html",
-"test_mapped_image_8cc.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_shared_dummy_backend_ext_8cpp_source.html",
-"todo.html"
+"namespace_chimera_t_k.html#ac841a185a1510424a6c370ca67b81a8d",
+"struct_adder.html",
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a9ef666defda2ed2a3b922ac5dcb54b61",
+"struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html#a6acd5d7eef03be359577d1822181c42d",
+"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#acb01c632c0636aa8ac392690e3674253",
+"struct_integers__signed32.html#a976bada3e1d06a0e801a27d9efa1fec2",
+"struct_named_channel_slice0.html#ac7c001785f702464d6e5e6124c1f0ec8",
+"struct_reg_single_word_scaled___r_w.html#a5cba8c98453efb94f11ffec2373a0390",
+"struct_sixteen_bit_array.html#a5e9e9baa1d83edc87790e00bc42a546f",
+"test_backend_factory_8cpp.html",
+"test_l_map_math_plugin_push_pars_8cc.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_rebot_backend_creation_8cpp.html#af5e0065971f86f4039f7a9ed991e3add",
+"test_utilities_8cpp.html#a539836afd4f41791028509e632f8db1a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

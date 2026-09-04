@@ -247,6 +247,7 @@ var hierarchy =
       [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< uint16_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< float >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
@@ -258,6 +259,7 @@ var hierarchy =
     [ "ChimeraTK::proxies::DummyRegisterElement< int32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterElement< minimumUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterElement< rawUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
+    [ "ChimeraTK::proxies::DummyRegisterElement< uint16_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterElement< uint32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
@@ -484,6 +486,8 @@ var hierarchy =
     [ "MuxedNodmaAsync", "struct_muxed_nodma_async.html", null ],
     [ "MyArea1", "struct_my_area1.html", null ],
     [ "MyRegister1", "struct_my_register1.html", null ],
+    [ "NamedChannelSlice0", "struct_named_channel_slice0.html", null ],
+    [ "NamedChannelSlice3", "struct_named_channel_slice3.html", null ],
     [ "boost::noncopyable", null, [
       [ "ChimeraTK::DeviceFile", "class_chimera_t_k_1_1_device_file.html", null ],
       [ "ChimeraTK::XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", null ]

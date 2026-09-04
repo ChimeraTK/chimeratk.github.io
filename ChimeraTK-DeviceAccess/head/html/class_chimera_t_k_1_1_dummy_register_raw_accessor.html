@@ -151,7 +151,7 @@ Protected Attributes</h2></td></tr>
 <p>Usually you want the interpreted version, but for debugging the converters themselves and functionality of the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for scalar and 1D registers.">NumericAddressedBackendRegisterAccessor</a> we directly want to write to the registers, without having to mess with absolute addresses (we still depend on the map file parser, but the whole dummy does. The address translation is re-done in the dummy, we are not using the one from the regular accessors.)</p>
 <p>WARNING: You must not touch any data content of the accessor without holding a lock to the memory mutex for the internal data buffer (see <a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#ad32a8ace5b3335181b9034e8fa0e0c07" title="Get a lock to safely modify the buffer.">getBufferLock()</a>). </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00345">345</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00357">357</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a28e893a24195dfaed1846b31f8a687aa" name="a28e893a24195dfaed1846b31f8a687aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28e893a24195dfaed1846b31f8a687aa">&#9670;&#160;</a></span>DummyRegisterRawAccessor() <span class="overload">[1/2]</span></h2>
@@ -193,7 +193,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00352">352</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00364">364</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Protected Attributes</h2></td></tr>
 <p>Get a lock to safely modify the buffer. </p>
 <p>You have to release it as soon as possible because it will block all other functionality of the Dummy. This is a really low low level debugging interface! </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00384">384</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00396">396</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Protected Attributes</h2></td></tr>
 
 <p>return number of elements </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00379">379</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00391">391</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Protected Attributes</h2></td></tr>
 <p>Implicit type conversion to int32_t. </p>
 <p>This basically covers all operators for single integers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00350">350</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00362">362</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00370">370</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00382">382</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Get or set register content by [] operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00376">376</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00388">388</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ Protected Attributes</h2></td></tr>
 
 <p>pointer to dummy backend </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00388">388</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00400">400</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ Protected Attributes</h2></td></tr>
 
 <p>raw buffer of this accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00394">394</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00406">406</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ Protected Attributes</h2></td></tr>
 
 <p>register map information </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00391">391</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00403">403</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>

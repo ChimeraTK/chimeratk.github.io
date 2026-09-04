@@ -360,6 +360,8 @@ var annotated_dup =
     [ "MyArea1", "struct_my_area1.html", "struct_my_area1" ],
     [ "MyRegister1", "struct_my_register1.html", "struct_my_register1" ],
     [ "myRegisterInfo", "classmy_register_info.html", "classmy_register_info" ],
+    [ "NamedChannelSlice0", "struct_named_channel_slice0.html", "struct_named_channel_slice0" ],
+    [ "NamedChannelSlice3", "struct_named_channel_slice3.html", "struct_named_channel_slice3" ],
     [ "NewBackend", "struct_new_backend.html", "struct_new_backend" ],
     [ "NoIerTestFixture", "struct_no_ier_test_fixture.html", "struct_no_ier_test_fixture" ],
     [ "NoIsrTestFixture", "struct_no_isr_test_fixture.html", "struct_no_isr_test_fixture" ],

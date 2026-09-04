@@ -9,6 +9,7 @@ var test_numeric_addressed_backend_register_accessor_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#af8c05f1099b6e39241d27c05cac65fe4", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#ac153155c0263a2bb1136093b89646ff5", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#af8267fe2f099188ef9c1f847d1dec038", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#a560af9895da7946571e989a4e108ee51", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#a82888bf7cb9ba0842ff858e6f0ef0ea4", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#a43c76573b6ba32e45f9e7a528957a3d0", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_register_accessor_8cpp.html#a00f8a92fbe12e8fa983751483c06980d", null ],
