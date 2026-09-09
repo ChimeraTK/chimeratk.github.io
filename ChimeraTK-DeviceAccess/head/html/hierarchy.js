@@ -488,6 +488,7 @@ var hierarchy =
     [ "MyRegister1", "struct_my_register1.html", null ],
     [ "NamedChannelSlice0", "struct_named_channel_slice0.html", null ],
     [ "NamedChannelSlice3", "struct_named_channel_slice3.html", null ],
+    [ "NamedChannelSliceAsync0", "struct_named_channel_slice_async0.html", null ],
     [ "boost::noncopyable", null, [
       [ "ChimeraTK::DeviceFile", "class_chimera_t_k_1_1_device_file.html", null ],
       [ "ChimeraTK::XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", null ]

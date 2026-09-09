@@ -218,12 +218,12 @@ var NAVTREEINDEX =
 "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#acb01c632c0636aa8ac392690e3674253",
 "struct_integers__signed32.html#a976bada3e1d06a0e801a27d9efa1fec2",
 "struct_named_channel_slice0.html#ac7c001785f702464d6e5e6124c1f0ec8",
-"struct_reg_single_word_scaled___r_w.html#a5cba8c98453efb94f11ffec2373a0390",
-"struct_sixteen_bit_array.html#a5e9e9baa1d83edc87790e00bc42a546f",
-"test_backend_factory_8cpp.html",
-"test_l_map_math_plugin_push_pars_8cc.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_rebot_backend_creation_8cpp.html#af5e0065971f86f4039f7a9ed991e3add",
-"test_utilities_8cpp.html#a539836afd4f41791028509e632f8db1a"
+"struct_reg_single_word_b.html#a664e4d42c503853cc9a9bfed4ba81ddf",
+"struct_short_raw__signed16.html#ad2ec99e5a5d15a09fa72299bbdd17c44",
+"test_async_read_8cpp.html",
+"test_l_map_force_read_only_plugin_8cc.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_raw_converter_8cpp.html#ae5e68b8ad01abab67a771ccc23e61a94",
+"test_uio_backend_with_hardware_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

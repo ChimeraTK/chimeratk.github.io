@@ -17,6 +17,7 @@ var test_numeric_addressed_backend_unified_8cpp =
     [ "NamedChannelSlice0", "struct_named_channel_slice0.html", "struct_named_channel_slice0" ],
     [ "NamedChannelSlice3", "struct_named_channel_slice3.html", "struct_named_channel_slice3" ],
     [ "MuxedNodmaAsync", "struct_muxed_nodma_async.html", "struct_muxed_nodma_async" ],
+    [ "NamedChannelSliceAsync0", "struct_named_channel_slice_async0.html", "struct_named_channel_slice_async0" ],
     [ "MuxedFloat", "struct_muxed_float.html", "struct_muxed_float" ],
     [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", "struct_register_descriptor_base" ],
     [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", "struct_one_d_register_descriptor_base" ],
@@ -34,6 +35,7 @@ var test_numeric_addressed_backend_unified_8cpp =
     [ "BOOST_TEST_MODULE", "test_numeric_addressed_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#abec2208558f5fa0f2ec74bd87807e3fd", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#a79bd2784c77778975fd1503e8c97b3da", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#aa49f0ac41c6adb324bdea5a4e3213ba2", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#a45b1b07a41276f1e4790e8e1ecc6916b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#a9f5533e72ee880d6d818844f51879211", null ]
 ];
