@@ -28,6 +28,9 @@ var hierarchy =
       [ "ChimeraTK::LNMBackend::AccessorPlugin< MultiplierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
       ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< SetDescriptionPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::SetDescriptionPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_set_description_plugin.html", null ]
+      ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< TagModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", [
           [ "ChimeraTK::LNMBackend::FixedTagModifierPlugin< Tag >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin.html", null ]

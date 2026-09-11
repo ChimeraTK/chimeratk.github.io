@@ -181,7 +181,7 @@ class ChimeraTK::LNMBackend::AccessorPlugin&lt; Derived &gt;</div><p><a class="e
 <p>Plugins need to implement this class. When adding new plugins, the <a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#acdeb68d7bebaa9232243ffbb49bb0ef4" title="Factory function for accessor plugins.">makePlugin()</a> function needs to be modified to create the plugins when requested. Note that plugins are not user-providable. Plugins can only be added as part of the DeviceAccess library.</p>
 <p>Note: This class implements a CRTP (curiously recurring template pattern). The template argument must be the derived class implementing the plugin. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00105">105</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00106">106</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5d76cf4a9ef93f8b4e3d1c5c8db62ca4" name="a5d76cf4a9ef93f8b4e3d1c5c8db62ca4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d76cf4a9ef93f8b4e3d1c5c8db62ca4">&#9670;&#160;</a></span>AccessorPlugin()</h2>
@@ -219,7 +219,7 @@ template&lt;typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00301">301</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00322">322</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 <p>It allows the plugin to decorate the accessor to change the its behaviour.</p>
 <p>Note: Even if <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6" title="Return the data type for which the target accessor shall be obtained.">getTargetDataType()</a> is overridden, the function will be instantiated for all target types, but if will be only called for those <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6" title="Return the data type for which the target accessor shall be obtained.">getTargetDataType()</a> returns. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00310">310</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00331">331</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ template&lt;typename UserType &gt; </div>
 <p>This function is called by the backend. </p>
 <p>Do not override in implementations. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00327">327</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00348">348</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ template&lt;typename Derived &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#adc93890bcfe074182a47d03abcb9770a">ChimeraTK::LNMBackend::MultiplierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a3a3225618034fe7e87de60d9e7a87ff5">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#a007abdf0ae0ca4a030f41a9dc9aab132">ChimeraTK::LNMBackend::BitRangeAccessPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0b4c026d688a81624526cde1ec98a73a">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00121">121</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00122">122</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +375,7 @@ template&lt;typename Derived &gt; </div>
 
 <p>Index of the plugin instance within the stack of plugins on a particular register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00144">144</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00145">145</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>

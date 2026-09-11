@@ -103,9 +103,9 @@ Fundamental concepts</h1>
 <li><code>mapFormatVersion</code> - a version string of the file format (currently <code>"0.0.1"</code>). </li>
 <li><code>metadata</code> - an object holding arbitrary key-value pairs describing the firmware (see <a class="el" href="jmap.html#jmap_metadata">Metadata</a>). </li>
 <li><code>interruptHandler</code> - a description of the interrupt controllers (see <a class="el" href="jmap.html#jmap_interrupts">Interrupts</a>). </li>
-<li><code>addressSpace</code> - the list of registers and modules making up the register map.</li>
+<li><code>addressSpace</code> - the dictionary of registers and modules making up the register map (each key is a register/module name).</li>
 </ul>
-<p>The heart of the file is the <code>addressSpace</code> array. Each entry in it is either a register, or a <em>module</em> which groups other registers and modules below it. Registers are addressed by a hierarchical path, which is built from the <code>name</code> entries of the nested objects (modules and registers), separated by <code>'/'</code> or <code>'</code>.', e.g. <code>APP/STATUS</code> or <code>APP.STATUS</code> (<code>'/'</code> and <code>'</code>.' have synonymous meaning and can be exchanged arbitrarily). This path is used to access the register through register accessors, as described in <a class="el" href="accessor1d.html">Multi Value Registers (1D Register Accessors)</a> and <a class="el" href="accessor2d.html">2D Register Accessors</a>.</p>
+<p>The heart of the file is the <code>addressSpace</code> object. Each key is the name of a register, or of a <em>module</em> which groups other registers and modules below it; the object stored under a key describes that register/module. Registers are addressed by a hierarchical path, which is built from the <code>addressSpace</code> / <code>children</code> dictionary keys (the names of the modules and registers), separated by <code>'/'</code> or <code>'</code>.', e.g. <code>APP/STATUS</code> or <code>APP.STATUS</code> (<code>'/'</code> and <code>'</code>.' have synonymous meaning and can be exchanged arbitrarily). This path is used to access the register through register accessors, as described in <a class="el" href="accessor1d.html">Multi Value Registers (1D Register Accessors)</a> and <a class="el" href="accessor2d.html">2D Register Accessors</a>.</p>
 <h2><a class="anchor" id="jmap_comments"></a>
 Comments</h2>
 <p>JSON does not support comments natively. By convention, entries whose key starts with an underscore are treated as comments and ignored by the parser: </p><pre class="fragment">{
@@ -114,7 +114,7 @@ Comments</h2>
   "mapFormatVersion": "0.0.1",
   "metadata": {},
   "interruptHandler": {},
-  "addressSpace": []
+  "addressSpace": {}
 }
 </pre><p>Any unknown key not starting with an underscore is reserved for future use in later map format versions and hence should not be used as comments.</p>
 <h1><a class="anchor" id="jmap_register"></a>
@@ -122,9 +122,10 @@ Register entry</h1>
 <p>A register is an entry carrying an <code>address</code> (or inheriting one from a parent module, see <a class="el" href="jmap.html#jmap_modules">Modules and hierarchical names</a>). This section describes the individual members of a register entry.</p>
 <h2><a class="anchor" id="jmap_address"></a>
 Address</h2>
-<p>The minimal register entry needs only a <code>name</code> and an <code>address:</code> </p><pre class="fragment">{
-  "name": "SomeTopLevelRegister",
-  "address": { "type": "IO", "channel": 0, "offset": 32 }
+<p>The minimal register entry is stored under its name and needs only an <code>address:</code> </p><pre class="fragment">"addressSpace": {
+  "SomeTopLevelRegister": {
+    "address": { "type": "IO", "channel": 0, "offset": 32 }
+  }
 }
 </pre><p>The <code>address</code> object has the following members: </p><ul>
 <li><code>type</code> - either <code>"IO"</code> (the default, an address on the I/O bus) or <code>"DMA"</code>. A DMA address is typically used for bulk data acquisition registers. </li>
@@ -139,10 +140,11 @@ Access</h2>
 <li><code>"RO"</code> - read-only access, e.g. for status registers. </li>
 <li><code>"WO"</code> - write-only access, values cannot be read back.</li>
 </ul>
-<p>Example: </p><pre class="fragment">{
-  "name": "STATUS",
-  "access": "RO",
-  "address": { "channel": 2, "offset": "0x8000" }
+<p>Example: </p><pre class="fragment">"addressSpace": {
+  "STATUS": {
+    "access": "RO",
+    "address": { "channel": 2, "offset": "0x8000" }
+  }
 }
 </pre><h2><a class="anchor" id="jmap_elements"></a>
 Number of elements and bytes per element</h2>
@@ -150,12 +152,13 @@ Number of elements and bytes per element</h2>
 <li><code>numberOfElements</code> - the number of elements, defaults to <code>1</code>. </li>
 <li><code>bytesPerElement</code> - the size of a single element in bytes, defaults to <code>4</code>.</li>
 </ul>
-<p>Example: </p><pre class="fragment">{
-  "name": "SomeTable",
-  "access": "WO",
-  "numberOfElements": 16384,
-  "bytesPerElement": 2,
-  "address": { "channel": 0, "offset": 2048 }
+<p>Example: </p><pre class="fragment">"addressSpace": {
+  "SomeTable": {
+    "access": "WO",
+    "numberOfElements": 16384,
+    "bytesPerElement": 2,
+    "address": { "channel": 0, "offset": 2048 }
+  }
 }
 </pre><h2><a class="anchor" id="jmap_representation"></a>
 Representation</h2>
@@ -167,14 +170,15 @@ Representation</h2>
 <li><code>bitShift</code> - the bit offset of the value within the element. Default: <code>0</code> </li>
 </ul>
 <p>If the entire representation is omitted, it defaults to a 32-bit unsigned integer.</p>
-<p>A single-precision floating point register: </p><pre class="fragment">{
-  "name": "ExampleRegister",
-  "address": { "channel": 0, "offset": 32 },
-  "representation": {
-    "type": "fixedPoint",
-    "width": 26,
-    "fractionalBits": 12,
-    "isSigned": true
+<p>A single-precision floating point register: </p><pre class="fragment">"addressSpace": {
+  "ExampleRegister": {
+    "address": { "channel": 0, "offset": 32 },
+    "representation": {
+      "type": "fixedPoint",
+      "width": 26,
+      "fractionalBits": 12,
+      "isSigned": true
+    }
   }
 }
 </pre><h2><a class="anchor" id="jmap_description"></a>
@@ -183,71 +187,69 @@ Description and engineering unit</h2>
 <li><code>description</code> - a free-form human-readable text describing the purpose of the register. </li>
 <li><code>engineeringUnit</code> - the physical unit of the register value, e.g. <code>"mV"</code>.</li>
 </ul>
-<p>Both are purely informational and may be omitted. Example: </p><pre class="fragment">{
-  "name": "SomeTopLevelRegister",
-  "engineeringUnit": "mV",
-  "description": "This is an example register",
-  "address": { "channel": 0, "offset": 32 }
+<p>Both are purely informational and may be omitted. Example: </p><pre class="fragment">"addressSpace": {
+  "SomeTopLevelRegister": {
+    "engineeringUnit": "mV",
+    "description": "This is an example register",
+    "address": { "channel": 0, "offset": 32 }
+  }
 }
 </pre><h1><a class="anchor" id="jmap_modules"></a>
 Modules and hierarchical names</h1>
 <h2><a class="anchor" id="jmap_simple_modules"></a>
 Modules</h2>
-<p>An entry in the <code>addressSpace</code> without an <code>address</code> is a module: it groups nested registers and modules below it by providing a <code>children</code> list, and contributes its <code>name</code> to the hierarchical path of everything beneath it. A module is not a register and carries no data of its own. Example (from <code>simpleJsonFile.jmap</code>): </p><pre class="fragment">{
-  "name": "APP",
-  "children": [
-    {
-      "name": "STATUS",
-      "access": "RO",
-      "address": { "type": "IO", "channel": 2, "offset": "0x8000" }
-    },
-    {
-      "name": "CONTROL",
-      "access": "RW",
-      "address": { "type": "IO", "channel": 2, "offset": "0x8004" }
+<p>A register/module in the <code>addressSpace</code> without an <code>address</code> is a module: it groups nested registers and modules below it by providing a <code>children</code> dictionary keyed by the children's names, and contributes its own name (its <code>addressSpace</code> / <code>children</code> key) to the hierarchical path of everything beneath it. A module is not a register and carries no data of its own. Example (from <code>simpleJsonFile.jmap</code>): </p><pre class="fragment">"addressSpace": {
+  "APP": {
+    "children": {
+      "STATUS": {
+        "access": "RO",
+        "address": { "type": "IO", "channel": 2, "offset": "0x8000" }
+      },
+      "CONTROL": {
+        "access": "RW",
+        "address": { "type": "IO", "channel": 2, "offset": "0x8004" }
+      }
     }
-  ]
+  }
 }
 </pre><p> This yields the registers <code>APP.STATUS</code> and <code>APP.CONTROL</code>.</p>
-<p>Note: a module simply becomes a register by adding an address. This can be used to describe a hierarchical address space by describing the raw address space e.g. for a firmware module at the higher level of the hierarchy, while adding the detailed registers in the firmware module's address space as children. Keep in mind that there is no technical necessity that all children have to have addresses inside the address space of their parents (although it is certainly a good convention). Example: </p><pre class="fragment">{
-  "name": "APP",
-  "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
-  "numberOfElements": 2,
-  "children": [
-    {
-      "name": "STATUS",
-      "access": "RO",
-      "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
-      "representation": { "width": 3 }
-    },
-    {
-      "name": "CONTROL",
-      "access": "RW",
-      "address": { "type": "IO", "channel": 2, "offset": "0x8004" },
-      "representation": { "width": 5 }
+<p>Note: a module simply becomes a register by adding an address. This can be used to describe a hierarchical address space by describing the raw address space e.g. for a firmware module at the higher level of the hierarchy, while adding the detailed registers in the firmware module's address space as children. Keep in mind that there is no technical necessity that all children have to have addresses inside the address space of their parents (although it is certainly a good convention). Example: </p><pre class="fragment">"addressSpace": {
+  "APP": {
+    "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
+    "numberOfElements": 2,
+    "children": {
+      "STATUS": {
+        "access": "RO",
+        "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
+        "representation": { "width": 3 }
+      },
+      "CONTROL": {
+        "access": "RW",
+        "address": { "type": "IO", "channel": 2, "offset": "0x8004" },
+        "representation": { "width": 5 }
+      }
     }
-  ]
+  }
 }
 </pre><p>This yields the same registers <code>APP/STATUS</code> and <code>APP.CONTROL</code> as before, but in addition a register <code>APP</code> for the raw area containing both registers.</p>
 <h2><a class="anchor" id="jmap_address_inheritance"></a>
 Address inheritance</h2>
-<p>A child entry does not have to carry an address of its own: it inherits the address of the nearest ancestor that does. The inheritance works per field of the address entry, so e.g. only the <code>type</code> and <code>channel</code> may be inherited while the <code>offset</code> is overridden. Example (identical outcome to the last example above): </p><pre class="fragment">{
-  "name": "APP",
-  "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
-  "numberOfElements": 2,
-  "children": [
-    {
-      "name": "STATUS",
-      "access": "RO",
-      "representation": { "width": 3 }
-    },
-    {
-      "name": "CONTROL",
-      "access": "RW",
-      "address": { "offset": "0x8004" },
-      "representation": { "width": 5 }
+<p>A child entry does not have to carry an address of its own: it inherits the address of the nearest ancestor that does. The inheritance works per field of the address entry, so e.g. only the <code>type</code> and <code>channel</code> may be inherited while the <code>offset</code> is overridden. Example (identical outcome to the last example above): </p><pre class="fragment">"addressSpace": {
+  "APP": {
+    "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
+    "numberOfElements": 2,
+    "children": {
+      "STATUS": {
+        "access": "RO",
+        "representation": { "width": 3 }
+      },
+      "CONTROL": {
+        "access": "RW",
+        "address": { "offset": "0x8004" },
+        "representation": { "width": 5 }
+      }
     }
-  ]
+  }
 }
 </pre><h1><a class="anchor" id="jmap_advanced"></a>
 Advanced features</h1>
@@ -264,23 +266,24 @@ Interrupts</h2>
   }
 }
 </pre><p>Registers can be triggered by an interrupt. The <code>"triggeredByInterrupt"</code> field contains the full interrupt id, which is an array of all ids and sub-ids as described in the <code>interruptHandler</code> object. Such registers are always read-only, hence the <code>"triggeredByInterrupt"</code> field is mutually exclusive with the <code>"access"</code> field.</p>
-<p>Plain interrupts have a <code>representation</code> of type <code>"void"</code> and must not have an address. Example: </p><pre class="fragment">{
-  "name": "PRIMARY_INTERRUPT_3",
-  "triggeredByInterrupt": [3],
-  "representation": { "type": "void" }
-},
-{
-  "name": "SUB_INTERRUPT_3_0_2",
-  "triggeredByInterrupt": [3,0,2],
-  "representation": { "type": "void" }
+<p>Plain interrupts have a <code>representation</code> of type <code>"void"</code> and must not have an address. Example: </p><pre class="fragment">"addressSpace": {
+  "PRIMARY_INTERRUPT_3": {
+    "triggeredByInterrupt": [3],
+    "representation": { "type": "void" }
+  },
+  "SUB_INTERRUPT_3_0_2": {
+    "triggeredByInterrupt": [3,0,2],
+    "representation": { "type": "void" }
+  }
 }
 </pre><p><code>PRIMARY_INTERRUPT_3</code> describes the primary interrupt (IRQ) 3, while <code>SUB_INTERRUPT_3_0_2</code> will be the interrupt number 2 of the subhandler 0 inside the handler for the primary interrupt 3 (i.e. interrupt <code>3</code>:0:2).</p>
-<p>When interrupts shall be used to trigger data read-out, they can be added to normal registers: </p><pre class="fragment">{
-  "name": "TRIGGERED_DATA",
-  "address": { "offset": "0x8100" },
-  "numberOfElements": 2048,
-  "triggeredByInterrupt": [3,0,2],
-  "representation": { "width": 24, "fractionalBits": 10, "isSigned": true }
+<p>When interrupts shall be used to trigger data read-out, they can be added to normal registers: </p><pre class="fragment">"addressSpace": {
+  "TRIGGERED_DATA": {
+    "address": { "offset": "0x8100" },
+    "numberOfElements": 2048,
+    "triggeredByInterrupt": [3,0,2],
+    "representation": { "width": 24, "fractionalBits": 10, "isSigned": true }
+  }
 }
 </pre><p> This will create a push-type register (supporting <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">ChimeraTK::AccessMode::wait_for_new_data</a>) that will receive new values when the interrupt <code>3</code>:0:2 arrives by polling the data from the specified address. See <a class="el" href="design__async_n_d_register_accessor__numeric_addressed.html">Design: AsyncNDRegisterAccessor</a> for more details.</p>
 <h2><a class="anchor" id="jmap_2d"></a>
@@ -288,31 +291,30 @@ Interrupts</h2>
 <p>A register holding several channels of time-multiplexed samples is declared by giving a <code>channelTabs</code> entry: </p><ul>
 <li><code>numberOfElements</code> - the number of samples (time slots) per channel. </li>
 <li><code>pitch</code> - the number of bytes between two samples of the same channel. </li>
-<li><code>channels</code> - the list of channels of this tab. Each channel has a <code>name</code>, a byte <code>offset</code> relative to the register base address, a <code>bytesPerElement</code> and an optional <code>representation</code>.</li>
+<li><code>channels</code> - the channels of this tab, given as a dictionary keyed by channel <code>name</code>. Each channel value has a byte <code>offset</code> relative to the register base address, a <code>bytesPerElement</code> and an optional <code>representation</code>. (Channel order in memory follows the <code>offset</code>, independent of the order of the dictionary keys.)</li>
 </ul>
-<p>Channels can have arbitrary names; single-word channels are simply indexed <code>"0"</code>, <code>"1"</code>, ... Example: </p><pre class="fragment">{
-  "name": "DMA",
-  "address": { "type": "DMA", "offset": "0x0" },
-  "channelTabs": [
-    {
-      "numberOfElements": 16384,
-      "pitch": 32,
-      "channels": [
-        {
-          "name": "0",
-          "offset": 0,
-          "bytesPerElement": 2,
-          "representation": { "type": "fixedPoint", "width": 16 }
-        },
-        {
-          "name": "1",
-          "offset": 2,
-          "bytesPerElement": 2,
-          "representation": { "type": "fixedPoint", "width": 12, "fractionalBits": 12 }
+<p>Channels can have arbitrary names; single-word channels are simply indexed <code>"0"</code>, <code>"1"</code>, ... Example: </p><pre class="fragment">"addressSpace": {
+  "DMA": {
+    "address": { "type": "DMA", "offset": "0x0" },
+    "channelTabs": [
+      {
+        "numberOfElements": 16384,
+        "pitch": 32,
+        "channels": {
+          "0": {
+            "offset": 0,
+            "bytesPerElement": 2,
+            "representation": { "type": "fixedPoint", "width": 16 }
+          },
+          "1": {
+            "offset": 2,
+            "bytesPerElement": 2,
+            "representation": { "type": "fixedPoint", "width": 12, "fractionalBits": 12 }
+          }
         }
-      ]
-    }
-  ]
+      }
+    ]
+  }
 }
 </pre><p> Here <code>DMA</code> is a 2D register with two channels, each holding 16384 samples, with a pitch of 32 bytes between the samples of a channel (so there is space for more channels in this example).</p>
 <h3><a class="anchor" id="jmap_channel_slices"></a>
@@ -329,63 +331,61 @@ Double buffering</h2>
 <li><code>readBufferRegister</code> - path of the register reporting which buffer is currently active. </li>
 <li><code>index</code> - the index of the buffer pair within the control registers.</li>
 </ul>
-<p>In addition to the main register, two read-only registers named <code>NAME/BUF0</code> and <code>NAME/BUF1</code> are created for the two buffers. Example: </p><pre class="fragment">{
-  "name": "CTRL",
-  "triggeredByInterrupt": [3, 0, 1],
-  "address": { "type": "DMA", "offset": "0x40000" },
-  "doubleBuffering": {
-    "secondaryBufferAddress": { "type": "DMA", "offset": "0x40200" },
-    "enableRegister": "DAQ.DOUBLE_BUF.ENA",
-    "readBufferRegister": "DAQ.DOUBLE_BUF.INACTIVE_BUF_ID",
-    "index": 0
-  },
-  "channelTabs": [
-    {
-      "numberOfElements": 16384,
-      "pitch": 64,
-      "channels": [
-        {
-          "name": "errorI",
-          "bytesPerElement": 2,
-          "offset": 0,
-          "representation": {
-            "type": "fixedPoint",
-            "width": 16,
-            "fractionalBits": -2,
-            "isSigned": true
+<p>In addition to the main register, two read-only registers named <code>NAME/BUF0</code> and <code>NAME/BUF1</code> are created for the two buffers. Example: </p><pre class="fragment">"addressSpace": {
+  "CTRL": {
+    "triggeredByInterrupt": [3, 0, 1],
+    "address": { "type": "DMA", "offset": "0x40000" },
+    "doubleBuffering": {
+      "secondaryBufferAddress": { "type": "DMA", "offset": "0x40200" },
+      "enableRegister": "DAQ.DOUBLE_BUF.ENA",
+      "readBufferRegister": "DAQ.DOUBLE_BUF.INACTIVE_BUF_ID",
+      "index": 0
+    },
+    "channelTabs": [
+      {
+        "numberOfElements": 16384,
+        "pitch": 64,
+        "channels": {
+          "errorI": {
+            "bytesPerElement": 2,
+            "offset": 0,
+            "representation": {
+              "type": "fixedPoint",
+              "width": 16,
+              "fractionalBits": -2,
+              "isSigned": true
+            }
           }
         }
-      ]
-    }
-  ]
+      }
+    ]
+  }
 }
 </pre><h2><a class="anchor" id="jmap_bitfields"></a>
 Bit fields</h2>
-<p>A register can carry a list of <code>children</code> which are bit fields of the register word. Each child has a <code>name</code> and a <code>representation</code> with <code>bitShift</code> and <code>width</code>; the children share the starting address of their parent register (see <a class="el" href="jmap.html#jmap_address_inheritance">Address inheritance</a>). The full word register itself is also accessible. Example: </p><pre class="fragment">{
-  "name": "STATUS",
-  "access": "RO",
-  "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
-  "bytesPerElement": 4,
-  "children": [
-    {
-      "name": "ProbeLimiter",
-      "representation": { "width": 1 }
-    },
-    {
-      "name": "ExternalInterlock",
-      "representation": { "bitShift": 1, "width": 1 }
-    },
-    {
-      "name": "ErrorCounter",
-      "representation": {
-        "bitShift": 2,
-        "type": "fixedPoint",
-        "width": 3,
-        "fractionalBits": 0,
-        "isSigned": false
+<p>A register can carry a <code>children</code> dictionary of entries which are bit fields of the register word. Each child key is the bit-field's name and its value a <code>representation</code> with <code>bitShift</code> and <code>width</code>; the children share the starting address of their parent register (see <a class="el" href="jmap.html#jmap_address_inheritance">Address inheritance</a>). The full word register itself is also accessible. Example: </p><pre class="fragment">"addressSpace": {
+  "STATUS": {
+    "access": "RO",
+    "address": { "type": "IO", "channel": 2, "offset": "0x8000" },
+    "bytesPerElement": 4,
+    "children": {
+      "ProbeLimiter": {
+        "representation": { "width": 1 }
+      },
+      "ExternalInterlock": {
+        "representation": { "bitShift": 1, "width": 1 }
+      },
+      "ErrorCounter": {
+        "representation": {
+          "bitShift": 2,
+          "type": "fixedPoint",
+          "width": 3,
+          "fractionalBits": 0,
+          "isSigned": false
+        }
       }
     }
-  ]
+  }
 }
 </pre><p> Registers which share the starting address with a bit range and have a width smaller than their element size are automatically recognised as bit ranges as well.</p>
 <h1><a class="anchor" id="jmap_metadata"></a>
