@@ -33,6 +33,7 @@ var dir_cd2eacd0d4a0b1b44be2af10e62d9e9e =
     [ "testLMapTagModifier.cc", "test_l_map_tag_modifier_8cc.html", "test_l_map_tag_modifier_8cc" ],
     [ "testLMapTypeHintModifierPlugin.cc", "test_l_map_type_hint_modifier_plugin_8cc.html", "test_l_map_type_hint_modifier_plugin_8cc" ],
     [ "testMapFileParser.cpp", "test_map_file_parser_8cpp.html", "test_map_file_parser_8cpp" ],
+    [ "testMapFileSearch.cpp", "test_map_file_search_8cpp.html", "test_map_file_search_8cpp" ],
     [ "testMappedImage.cc", "test_mapped_image_8cc.html", "test_mapped_image_8cc" ],
     [ "testMathPluginDataValidity.cpp", "test_math_plugin_data_validity_8cpp.html", "test_math_plugin_data_validity_8cpp" ],
     [ "testMultiplexedDataAccesor.cpp", "test_multiplexed_data_accesor_8cpp.html", "test_multiplexed_data_accesor_8cpp" ],

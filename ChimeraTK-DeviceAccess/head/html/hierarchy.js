@@ -288,6 +288,7 @@ var hierarchy =
                 [ "CustomBackend", "class_custom_backend.html", null ],
                 [ "DummyForAreaHandshakeBackend", "struct_dummy_for_area_handshake_backend.html", null ],
                 [ "InvalidDummyBackend", "class_invalid_dummy_backend.html", null ],
+                [ "MapFileSearchBackend", "struct_map_file_search_backend.html", null ],
                 [ "NewBackend", "struct_new_backend.html", null ],
                 [ "NotRegisteringPlugin", "struct_not_registering_plugin.html", null ],
                 [ "SubArrayDecoratorTestBackend", "class_sub_array_decorator_test_backend.html", null ],
@@ -471,6 +472,7 @@ var hierarchy =
     [ "ChimeraTK::LNMVariable", "struct_chimera_t_k_1_1_l_n_m_variable.html", null ],
     [ "ChimeraTK::LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", null ],
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
+    [ "MapFileSearchFixture", "struct_map_file_search_fixture.html", null ],
     [ "ChimeraTK::MappedStruct< StructHeader >", "class_chimera_t_k_1_1_mapped_struct.html", null ],
     [ "ChimeraTK::MappedStruct< ImgHeader >", "class_chimera_t_k_1_1_mapped_struct.html", [
       [ "ChimeraTK::MappedImage", "class_chimera_t_k_1_1_mapped_image.html", null ]

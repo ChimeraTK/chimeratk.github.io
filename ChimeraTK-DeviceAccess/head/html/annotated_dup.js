@@ -343,6 +343,8 @@ var annotated_dup =
     [ "IsrReadableTestFixture", "struct_isr_readable_test_fixture.html", "struct_isr_readable_test_fixture" ],
     [ "IsrTestFixture", "struct_isr_test_fixture.html", "struct_isr_test_fixture" ],
     [ "IsrWritableTestFixture", "struct_isr_writable_test_fixture.html", "struct_isr_writable_test_fixture" ],
+    [ "MapFileSearchBackend", "struct_map_file_search_backend.html", "struct_map_file_search_backend" ],
+    [ "MapFileSearchFixture", "struct_map_file_search_fixture.html", "struct_map_file_search_fixture" ],
     [ "MasterEnableTest", "struct_master_enable_test.html", "struct_master_enable_test" ],
     [ "MerActiveTestFixture", "struct_mer_active_test_fixture.html", "struct_mer_active_test_fixture" ],
     [ "MerInactiveTestFixture", "struct_mer_inactive_test_fixture.html", "struct_mer_inactive_test_fixture" ],
