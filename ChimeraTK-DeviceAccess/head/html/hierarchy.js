@@ -233,6 +233,7 @@ var hierarchy =
     [ "ChimeraTK::DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
     [ "DMapFileParserTest", "class_d_map_file_parser_test.html", null ],
     [ "ChimeraTK::async::DomainsContainer", "class_chimera_t_k_1_1async_1_1_domains_container.html", null ],
+    [ "DoubleBufferedNamedChannelSlice", "struct_double_buffered_named_channel_slice.html", null ],
     [ "ChimeraTK::NumericAddressedRegisterInfo::DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", null ],
     [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],

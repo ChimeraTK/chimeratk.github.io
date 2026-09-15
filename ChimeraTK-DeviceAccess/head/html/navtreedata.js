@@ -217,14 +217,14 @@ var NAVTREEINDEX =
 "struct_chimera_t_k_1_1_device_descriptor.html#ad5b3d511524f18cd96ad990f94733e1b",
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#aebbf5b2b1ceaf6f0ca59cf1e9ce4a84e",
 "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#afc1dc3fb280a20b761a0158696a33d9b",
-"struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4",
-"struct_muxed_nodma_async.html#a6aca622457f955e40078358e31d029ad",
-"struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5",
-"struct_scalar_descriptor.html",
-"structdatafrom4__8__3.html",
-"test_historized_data_matching_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881",
-"test_transfer_element_8cpp.html#a862defbaded02b9aa73494e23dbd5014"
+"struct_dummy_protocol_implementor.html#ac60d8e7bae14fda22982a49c54b3ca47",
+"struct_muxed_nodma.html#a730c7bafd1cbec43e6ef0295af3c6c31",
+"struct_reg_channel_last.html#afd1499d23610e1eb5a7298398910cc98",
+"struct_register_descriptor_base.html#ab37f2475709b24565b586926c39cf882",
+"structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5",
+"test_generic_muxed_interrupt_distributor_8cpp.html#ae24883e4b1d289b47736e35c15179da5",
+"test_numeric_converter_8cpp.html#a555ccf7e2753b8f71893ab29a690d9d1",
+"test_transfer_element_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

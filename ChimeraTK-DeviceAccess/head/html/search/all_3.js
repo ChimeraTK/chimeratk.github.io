@@ -49,7 +49,7 @@ var searchData=
   ['_5fcreatorfunctions_46',['_creatorFunctions',['../class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory.html#a7d136ec5259cd3d3adc2e9d7be6118a9',1,'ChimeraTK::async::MuxedInterruptDistributorFactory']]],
   ['_5fcurrent_47',['_current',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ad319e839119cb0140070b67430c44898',1,'ChimeraTK::ExceptionDummyPushDecorator']]],
   ['_5fcurrentbuffer_48',['_currentBuffer',['../class_chimera_t_k_1_1_double_buffer_accessor.html#a801aba5e9853c880904dba07f569dbf8',1,'ChimeraTK::DoubleBufferAccessor']]],
-  ['_5fcurrentbuffernumber_49',['_currentBufferNumber',['../struct_area_type.html#ad1da3a0e9ad9de396c9f4e25d816b48f',1,'AreaType']]],
+  ['_5fcurrentbuffernumber_49',['_currentbuffernumber',['../struct_area_type.html#ad1da3a0e9ad9de396c9f4e25d816b48f',1,'AreaType::_currentBufferNumber'],['../struct_double_buffered_named_channel_slice.html#a05e5071631c8eef1ae03d2126536066d',1,'DoubleBufferedNamedChannelSlice::_currentBufferNumber']]],
   ['_5fcurrentbuffernumberreg_50',['_currentBufferNumberReg',['../class_chimera_t_k_1_1_double_buffer_accessor.html#aff4cf5040b3ee6545d17e319a3d7693b',1,'ChimeraTK::DoubleBufferAccessor']]],
   ['_5fcurrentclientconnection_51',['_currentClientConnection',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a6bf85af3d44a25f8be32e188363a7fcd',1,'ChimeraTK::RebotDummySession']]],
   ['_5fcurrentindex_52',['_currentIndex',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#aa54cb12f0bdbfc7994eba9f4b1210271',1,'ChimeraTK::TransferElementTestAccessor']]],

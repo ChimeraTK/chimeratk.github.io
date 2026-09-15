@@ -296,6 +296,7 @@ var annotated_dup =
     [ "DMapFileParserTest", "class_d_map_file_parser_test.html", "class_d_map_file_parser_test" ],
     [ "DMapFileParserTestSuite", "class_d_map_file_parser_test_suite.html", "class_d_map_file_parser_test_suite" ],
     [ "DoNothingDecorator", "class_do_nothing_decorator.html", null ],
+    [ "DoubleBufferedNamedChannelSlice", "struct_double_buffered_named_channel_slice.html", "struct_double_buffered_named_channel_slice" ],
     [ "DummyFixture", "struct_dummy_fixture.html", "struct_dummy_fixture" ],
     [ "DummyForAreaHandshakeBackend", "struct_dummy_for_area_handshake_backend.html", "struct_dummy_for_area_handshake_backend" ],
     [ "DummyForCleanupCheck", "struct_dummy_for_cleanup_check.html", "struct_dummy_for_cleanup_check" ],
