@@ -20,7 +20,7 @@ var searchData=
   ['derived_17',['derived',['../struct_register_descriptor_base.html#a60a3b55ce39327bdc2c200e77c18b9ff',1,'RegisterDescriptorBase::derived'],['../struct_short_raw__base.html#a939dcd1eb49724e0e7b6c7090106b141',1,'ShortRaw_base::derived'],['../struct_integers_base.html#a7ca3366068eb38ef08377e18fdeb6c68',1,'IntegersBase::derived'],['../struct_scalar_descriptor.html#a2dd7a240308cdaa85f06c5a029c7c77a',1,'ScalarDescriptor::derived']]],
   ['description_18',['description',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a095be4666f3a90c95b867c30439114dc',1,'ChimeraTK::LNMBackendRegisterInfo::description'],['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#abc53fd08430cf289ddd341c9a4a7cfcd',1,'ChimeraTK::NumericAddressedRegisterInfo::description']]],
   ['dev_19',['dev',['../struct_fixture.html#ac6d2ed5d99d228536fbbe25a2b1f99bf',1,'Fixture']]],
-  ['device_20',['device',['../struct_test_fixture.html#a1c7d76bd3dcbf5521d6f46d301b9b808',1,'TestFixture::device'],['../test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35',1,'device:&#160;testExceptionDummyDevice.cc'],['../struct_the_fixture.html#a342d2581a9d1256ddab8b66ec3361aea',1,'TheFixture::device'],['../struct_fixture.html#aff52823ee42337680261409d72b629bf',1,'Fixture::device'],['../struct_throw_test_fixture.html#a70f896a1a667afc8bc20007bdfd6ea6c',1,'ThrowTestFixture::device']]],
+  ['device_20',['device',['../test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35',1,'device:&#160;testExceptionDummyDevice.cc'],['../struct_test_fixture.html#a1c7d76bd3dcbf5521d6f46d301b9b808',1,'TestFixture::device'],['../struct_the_fixture.html#a342d2581a9d1256ddab8b66ec3361aea',1,'TheFixture::device'],['../struct_throw_test_fixture.html#a70f896a1a667afc8bc20007bdfd6ea6c',1,'ThrowTestFixture::device'],['../struct_fixture.html#aff52823ee42337680261409d72b629bf',1,'Fixture::device'],['../class_async_double_buffer_fixture.html#abe2d8c5d476b8a835a14f6dd76ca7654',1,'AsyncDoubleBufferFixture::device']]],
   ['devicealias_21',['deviceAlias',['../struct_test_parameters.html#a779318d4a88a0ea8c2c350ca247c158d',1,'TestParameters']]],
   ['deviceinvalidalias_22',['deviceInvalidAlias',['../struct_test_parameters.html#a4fdc31cbc7002d1418f8ff2ce90560d3',1,'TestParameters']]],
   ['devicemixedalias_23',['deviceMixedAlias',['../struct_test_parameters.html#a0ac4f0788d0c981e0172e2622c173168',1,'TestParameters']]],
@@ -38,9 +38,10 @@ var searchData=
   ['doublebufdummy_35',['doubleBufDummy',['../struct_device_fixture.html#ad0e940477f47a52a4cc11225fb59876b',1,'DeviceFixture']]],
   ['doublebuffer_36',['doubleBuffer',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a8c16b893deb4733d02a68ece46ad1bcb',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
   ['doublebufferingenabled_37',['doublebufferingenabled',['../struct_device_fixture.html#a25c4c004d662de6e1b5d88db2f1bddab',1,'DeviceFixture::doubleBufferingEnabled'],['../struct_device_fixture2_d.html#ad2bf0e832ee77cdd3e9e3cf10f95fdb4',1,'DeviceFixture2D::doubleBufferingEnabled'],['../struct_device_fixture___h_w.html#ab7b581041b907e8fb70cb7988e9789eb',1,'DeviceFixture_HW::doubleBufferingEnabled']]],
-  ['dummy_5finterrupt_5fregister_5fprefix_38',['DUMMY_INTERRUPT_REGISTER_PREFIX',['../namespace_chimera_t_k.html#a10806d5e36a373c26f0233b5c368840c',1,'ChimeraTK']]],
-  ['dummy_5freadable_5fsuffix_39',['DUMMY_READABLE_SUFFIX',['../namespace_chimera_t_k.html#a4ad9e93b08897dba1d513c6be6315b2d',1,'ChimeraTK']]],
-  ['dummy_5fwriteable_5fsuffix_40',['DUMMY_WRITEABLE_SUFFIX',['../namespace_chimera_t_k.html#a4670c21e6bd33fbbe81acee66e1d3076',1,'ChimeraTK']]],
-  ['dummybackend_41',['dummyBackend',['../struct_test_fixture.html#a7b2cccd0796944ec6ab5fb0288965030',1,'TestFixture']]],
-  ['dummyinterrupt_42',['dummyInterrupt',['../struct_test_fixture.html#a691b636f386bf7cebbb8f413f6717ff5',1,'TestFixture']]]
+  ['dummy_38',['dummy',['../class_async_double_buffer_fixture.html#a5e078d79c628ae9a74112b052fab0da5',1,'AsyncDoubleBufferFixture']]],
+  ['dummy_5finterrupt_5fregister_5fprefix_39',['DUMMY_INTERRUPT_REGISTER_PREFIX',['../namespace_chimera_t_k.html#a10806d5e36a373c26f0233b5c368840c',1,'ChimeraTK']]],
+  ['dummy_5freadable_5fsuffix_40',['DUMMY_READABLE_SUFFIX',['../namespace_chimera_t_k.html#a4ad9e93b08897dba1d513c6be6315b2d',1,'ChimeraTK']]],
+  ['dummy_5fwriteable_5fsuffix_41',['DUMMY_WRITEABLE_SUFFIX',['../namespace_chimera_t_k.html#a4670c21e6bd33fbbe81acee66e1d3076',1,'ChimeraTK']]],
+  ['dummybackend_42',['dummyBackend',['../struct_test_fixture.html#a7b2cccd0796944ec6ab5fb0288965030',1,'TestFixture']]],
+  ['dummyinterrupt_43',['dummyInterrupt',['../struct_test_fixture.html#a691b636f386bf7cebbb8f413f6717ff5',1,'TestFixture']]]
 ];

@@ -147,6 +147,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af323ad5c9bfa9620e99c9e72067f97ad" id="r_af323ad5c9bfa9620e99c9e72067f97ad"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#af323ad5c9bfa9620e99c9e72067f97ad">getTags</a> () const</td></tr>
 <tr class="memdesc:af323ad5c9bfa9620e99c9e72067f97ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of tags associated with this register.  <br /></td></tr>
 <tr class="separator:af323ad5c9bfa9620e99c9e72067f97ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9f51e8a80f08d18f0d6980c623384d" id="r_a1e9f51e8a80f08d18f0d6980c623384d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a1e9f51e8a80f08d18f0d6980c623384d">getUnit</a> () const</td></tr>
+<tr class="memdesc:a1e9f51e8a80f08d18f0d6980c623384d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the engineering unit of the register.  <br /></td></tr>
+<tr class="separator:a1e9f51e8a80f08d18f0d6980c623384d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc674f616c7131d0fcaa12b4ad53369" id="r_a6bc674f616c7131d0fcaa12b4ad53369"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a6bc674f616c7131d0fcaa12b4ad53369">getDescription</a> () const</td></tr>
+<tr class="memdesc:a6bc674f616c7131d0fcaa12b4ad53369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the description of the register.  <br /></td></tr>
+<tr class="separator:a6bc674f616c7131d0fcaa12b4ad53369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0665538d48ad46a558af532f647a72" id="r_a3f0665538d48ad46a558af532f647a72"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_info_base.html#a3f0665538d48ad46a558af532f647a72">isHidden</a> () const</td></tr>
 <tr class="memdesc:a3f0665538d48ad46a558af532f647a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the register is "hidden", meaning it won't be listed when iterating the catalogue.  <br /></td></tr>
 <tr class="separator:a3f0665538d48ad46a558af532f647a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +252,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6bc674f616c7131d0fcaa12b4ad53369" name="a6bc674f616c7131d0fcaa12b4ad53369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc674f616c7131d0fcaa12b4ad53369">&#9670;&#160;</a></span>getDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string ChimeraTK::BackendRegisterInfoBase::getDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the description of the register. </p>
+<p>The default implementation returns an empty string. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a5e04a73f252b986ca935416562ada3af">ChimeraTK::LNMBackendRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a83c04f15e94242d4057e04346e2fa06e">ChimeraTK::NumericAddressedRegisterInfo</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00074">74</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+
+</div>
+</div>
 <a id="a8507f34475d08bae6bfd8f14b2e8e361" name="a8507f34475d08bae6bfd8f14b2e8e361"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8507f34475d08bae6bfd8f14b2e8e361">&#9670;&#160;</a></span>getNumberOfChannels()</h2>
 
@@ -300,7 +338,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of dimensions of this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00075">75</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00089">89</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>
@@ -455,6 +493,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e9f51e8a80f08d18f0d6980c623384d" name="a1e9f51e8a80f08d18f0d6980c623384d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9f51e8a80f08d18f0d6980c623384d">&#9670;&#160;</a></span>getUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string ChimeraTK::BackendRegisterInfoBase::getUnit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the engineering unit of the register. </p>
+<p>The default implementation returns an empty string. </p>
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aea05e0b01a504f14b4b2d55fe1c31641">ChimeraTK::LNMBackendRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#afd50eab5775d138c449c759fae8636ab">ChimeraTK::NumericAddressedRegisterInfo</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00067">67</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+
+</div>
+</div>
 <a id="a3f0665538d48ad46a558af532f647a72" name="a3f0665538d48ad46a558af532f647a72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f0665538d48ad46a558af532f647a72">&#9670;&#160;</a></span>isHidden()</h2>
 
@@ -483,7 +553,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html#a97a348675d59741fc2c44d2fbd5b0980">ChimeraTK::NumericAddressedRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a06151618bc1f7e472c48b024545996e8">myRegisterInfo</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00067">67</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_backend_register_info_base_8h_source.html#l00081">81</a> of file <a class="el" href="_backend_register_info_base_8h_source.html">BackendRegisterInfoBase.h</a>.</p>
 
 </div>
 </div>

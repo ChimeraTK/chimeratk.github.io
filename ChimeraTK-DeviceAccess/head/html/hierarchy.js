@@ -49,6 +49,7 @@ var hierarchy =
     [ "nlohmann::adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
+    [ "AsyncDoubleBufferFixture", "class_async_double_buffer_fixture.html", null ],
     [ "ChimeraTK::async::AsyncVariable", "struct_chimera_t_k_1_1async_1_1_async_variable.html", [
       [ "ChimeraTK::async::AsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1async_1_1_async_variable_impl.html", [
         [ "ChimeraTK::async::GenericAsyncVariable< std::nullptr_t, UserType >", "class_chimera_t_k_1_1async_1_1_generic_async_variable.html", [
@@ -234,6 +235,7 @@ var hierarchy =
     [ "DMapFileParserTest", "class_d_map_file_parser_test.html", null ],
     [ "ChimeraTK::async::DomainsContainer", "class_chimera_t_k_1_1async_1_1_domains_container.html", null ],
     [ "DoubleBufferedNamedChannelSlice", "struct_double_buffered_named_channel_slice.html", null ],
+    [ "DoubleBufferedNamedChannelSliceAsync", "struct_double_buffered_named_channel_slice_async.html", null ],
     [ "ChimeraTK::NumericAddressedRegisterInfo::DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", null ],
     [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
@@ -1031,6 +1033,7 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
+        [ "ChimeraTK::OneDRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::OneDRegisterAccessor< ReadWriteDataType >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::OneDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [

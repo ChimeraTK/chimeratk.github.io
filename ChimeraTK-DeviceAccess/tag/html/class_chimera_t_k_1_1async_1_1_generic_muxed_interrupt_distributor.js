@@ -13,8 +13,10 @@ var class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor =
     [ "enableInterruptsFromMask", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a0b472cc8769d47142c58ffad2e6f10d4", null ],
     [ "enableOneInterrupt", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#ae6abda00c2ea08fd4c77054d80d36740", null ],
     [ "handle", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#aacd3c5ee45ed84f8b6b3c3e1ccadadd4", null ],
+    [ "watchdogLoop", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a012658c6a6a52b4226895ee39b98f07a", null ],
     [ "_activeInterrupts", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a4b63133acfe91e75b1f5ca28ad4c664d", null ],
     [ "_cie", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a4bebc622bd285d00bc92d10d662bfd0d", null ],
+    [ "_handlerRan", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a08568cdcfdb97bbad4bb69e71c168c5b", null ],
     [ "_hasMer", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#ac7e80bf79329322721e3042c09d5b173", null ],
     [ "_haveSieAndCie", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#aa2295053bfb0faf425edbbe00be30fbe", null ],
     [ "_icr", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#abe5043c47ee7204a11bde1e5da18e3bc", null ],
@@ -23,5 +25,8 @@ var class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor =
     [ "_isr", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a53b26fc9d7ff664f4f681316bb5e8144", null ],
     [ "_mer", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#ac482bae34d5ce94076f0fa37f1f7d28e", null ],
     [ "_path", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#ac0e21995792241fcb7edc93f6ba8b278", null ],
-    [ "_sie", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a9735d07a3a8df9507520995038b703eb", null ]
+    [ "_sie", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a9735d07a3a8df9507520995038b703eb", null ],
+    [ "_stopWatchdog", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a784802292d70b900b7c7c7d26ef9c780", null ],
+    [ "_watchdogAlerted", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a4db9d5cb8ea869d78dd27568ec4c02f7", null ],
+    [ "_watchdogThread", "class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#accd0661a71433b0871e7250a10da5d16", null ]
 ];

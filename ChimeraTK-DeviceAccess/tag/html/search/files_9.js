@@ -20,12 +20,13 @@ var searchData=
   ['lnmmathpluginformulahelper_2eh_17',['LNMMathPluginFormulaHelper.h',['../_l_n_m_math_plugin_formula_helper_8h.html',1,'']]],
   ['lnmmonostabletriggerplugin_2ecc_18',['LNMMonostableTriggerPlugin.cc',['../_l_n_m_monostable_trigger_plugin_8cc.html',1,'']]],
   ['lnmmultiplierplugin_2ecc_19',['LNMMultiplierPlugin.cc',['../_l_n_m_multiplier_plugin_8cc.html',1,'']]],
-  ['lnmtagmodifierpluign_2ecc_20',['LNMTagModifierPluign.cc',['../_l_n_m_tag_modifier_pluign_8cc.html',1,'']]],
-  ['lnmtypehintmodifierplugin_2ecc_21',['LNMTypeHintModifierPlugin.cc',['../_l_n_m_type_hint_modifier_plugin_8cc.html',1,'']]],
-  ['lnmvariable_2eh_22',['LNMVariable.h',['../_l_n_m_variable_8h.html',1,'']]],
-  ['logicalnamemapparser_2ecc_23',['LogicalNameMapParser.cc',['../_logical_name_map_parser_8cc.html',1,'']]],
-  ['logicalnamemapparser_2eh_24',['LogicalNameMapParser.h',['../_logical_name_map_parser_8h.html',1,'']]],
-  ['logicalnamemapper_2edox_25',['logicalNameMapper.dox',['../logical_name_mapper_8dox.html',1,'']]],
-  ['logicalnamemappingbackend_2ecc_26',['LogicalNameMappingBackend.cc',['../_logical_name_mapping_backend_8cc.html',1,'']]],
-  ['logicalnamemappingbackend_2eh_27',['LogicalNameMappingBackend.h',['../_logical_name_mapping_backend_8h.html',1,'']]]
+  ['lnmsetdescriptionplugin_2ecc_20',['LNMSetDescriptionPlugin.cc',['../_l_n_m_set_description_plugin_8cc.html',1,'']]],
+  ['lnmtagmodifierpluign_2ecc_21',['LNMTagModifierPluign.cc',['../_l_n_m_tag_modifier_pluign_8cc.html',1,'']]],
+  ['lnmtypehintmodifierplugin_2ecc_22',['LNMTypeHintModifierPlugin.cc',['../_l_n_m_type_hint_modifier_plugin_8cc.html',1,'']]],
+  ['lnmvariable_2eh_23',['LNMVariable.h',['../_l_n_m_variable_8h.html',1,'']]],
+  ['logicalnamemapparser_2ecc_24',['LogicalNameMapParser.cc',['../_logical_name_map_parser_8cc.html',1,'']]],
+  ['logicalnamemapparser_2eh_25',['LogicalNameMapParser.h',['../_logical_name_map_parser_8h.html',1,'']]],
+  ['logicalnamemapper_2edox_26',['logicalNameMapper.dox',['../logical_name_mapper_8dox.html',1,'']]],
+  ['logicalnamemappingbackend_2ecc_27',['LogicalNameMappingBackend.cc',['../_logical_name_mapping_backend_8cc.html',1,'']]],
+  ['logicalnamemappingbackend_2eh_28',['LogicalNameMappingBackend.h',['../_logical_name_mapping_backend_8h.html',1,'']]]
 ];

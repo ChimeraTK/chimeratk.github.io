@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['e_20g_20in_20backends_0',['D. Requirements for full implementations (e.g. in backends)',['../spec__transfer_element.html#autotoc_md12',1,'']]],
-  ['e_20requirements_20for_20decorator_20like_20implementations_1',['E. Requirements for decorator-like implementations',['../spec__transfer_element.html#autotoc_md14',1,'']]],
+  ['e_20g_20in_20backends_0',['D. Requirements for full implementations (e.g. in backends)',['../spec__transfer_element.html#autotoc_md22',1,'']]],
+  ['e_20requirements_20for_20decorator_20like_20implementations_1',['E. Requirements for decorator-like implementations',['../spec__transfer_element.html#autotoc_md24',1,'']]],
   ['effbitsperpixel_2',['effBitsPerPixel',['../struct_chimera_t_k_1_1_img_header.html#aaf9a47e6519ebbc4be090577b759e401',1,'ChimeraTK::ImgHeader']]],
   ['eightbit_3',['EightBit',['../struct_eight_bit.html',1,'']]],
   ['eightbitarray_4',['EightBitArray',['../struct_eight_bit_array.html',1,'']]],
@@ -10,7 +10,7 @@ var searchData=
   ['elements_20and_20bytes_20per_20element_7',['Number of elements and bytes per element',['../jmap.html#jmap_elements',1,'']]],
   ['empty_8',['empty',['../class_chimera_t_k_1_1_access_mode_flags.html#a6e4ae3aafddf1adee5e9bcc37dc4a692',1,'ChimeraTK::AccessModeFlags']]],
   ['emptyqueues_9',['emptyQueues',['../test_historized_data_matching_8cpp.html#ab56b886c78339b1e69025f0ee82eaddd',1,'testHistorizedDataMatching.cpp']]],
-  ['enable_10',['enable',['../class_chimera_t_k_1_1_experimental_features.html#aa675f49ce2335a82fc48f90102c0c044',1,'ChimeraTK::ExperimentalFeatures']]],
+  ['enable_10',['enable',['../class_async_double_buffer_fixture.html#a13190b456531a3ab7efcc20f66bea7a3',1,'AsyncDoubleBufferFixture::enable'],['../class_chimera_t_k_1_1_experimental_features.html#aa675f49ce2335a82fc48f90102c0c044',1,'ChimeraTK::ExperimentalFeatures::enable()']]],
   ['enableasyncreadinconsistency_11',['enableAsyncReadInconsistency',['../struct_chimera_t_k_1_1_test_capabilities.html#add557bb4e3bdb9a69e5b02a75ae01720',1,'ChimeraTK::TestCapabilities']]],
   ['enabled_12',['enabled',['../namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423',1,'ChimeraTK']]],
   ['enabledisableactionlist_13',['EnableDisableActionList',['../class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html',1,'ChimeraTK::UnifiedBackendTest']]],
@@ -42,7 +42,7 @@ var searchData=
   ['eventfile_39',['eventfile',['../class_chimera_t_k_1_1_event_file.html',1,'ChimeraTK::EventFile'],['../class_chimera_t_k_1_1_event_file.html#a31b0ee88ae50d7f355ada5bf7c5ffaa7',1,'ChimeraTK::EventFile::EventFile(DeviceBackend *backend, const std::string &amp;devicePath, size_t interruptIdx, boost::shared_ptr&lt; async::DomainImpl&lt; std::nullptr_t &gt; &gt; asyncDomain)'],['../class_chimera_t_k_1_1_event_file.html#ac07058a724a7619120a02521b2d32dc7',1,'ChimeraTK::EventFile::EventFile()=delete']]],
   ['eventfile_2ecc_40',['EventFile.cc',['../_event_file_8cc.html',1,'']]],
   ['eventfile_2eh_41',['EventFile.h',['../_event_file_8h.html',1,'']]],
-  ['events_42',['Interrupt lines (events)',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md21',1,'']]],
+  ['events_42',['Interrupt lines (events)',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md31',1,'']]],
   ['eventthread_43',['eventthread',['../class_chimera_t_k_1_1_event_file.html#a754aee4d7ae46cb2055aea6a47dd7003',1,'ChimeraTK::EventFile::EventThread'],['../class_chimera_t_k_1_1_event_thread.html#a259ad7c3236c9f0d120e1dcdca68983b',1,'ChimeraTK::EventThread::EventThread()=delete'],['../class_chimera_t_k_1_1_event_thread.html#a6096ffd287df505f12c05074f400de65',1,'ChimeraTK::EventThread::EventThread(EventFile &amp;owner, std::promise&lt; void &gt; subscriptionDonePromise)'],['../class_chimera_t_k_1_1_event_thread.html',1,'ChimeraTK::EventThread']]],
   ['exact_44',['exact',['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba3b7efa09444a31c5d58596e5bbf87d47',1,'ChimeraTK::DataConsistencyGroup']]],
   ['example_45',['Basic Example',['../basic_example.html',1,'']]],

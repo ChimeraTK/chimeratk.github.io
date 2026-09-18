@@ -16,7 +16,7 @@ var searchData=
   ['header_13',['header',['../class_chimera_t_k_1_1_mapped_struct.html#a17c169a81faa07b5fe12dd641d353d46',1,'ChimeraTK::MappedStruct::header()'],['../class_chimera_t_k_1_1_img_view.html#aa3fe31f661cbea458f909c305d1ffe82',1,'ChimeraTK::ImgView::header()']]],
   ['heartbeatloop_14',['heartbeatLoop',['../class_chimera_t_k_1_1_rebot_backend.html#a741e38a09bb3d288998451aacc354859',1,'ChimeraTK::RebotBackend']]],
   ['height_15',['height',['../struct_chimera_t_k_1_1_img_header.html#a141afd9b4b3e6ed0e47cf08843d452df',1,'ChimeraTK::ImgHeader']]],
-  ['hello_16',['hello',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a142392a6596584712b98d0bf8f1b8e7b',1,'ChimeraTK::DummyProtocol0::hello()'],['../struct_chimera_t_k_1_1_dummy_protocol1.html#a59e2d55cbe4b3a93a8d94c7ad21f6b39',1,'ChimeraTK::DummyProtocol1::hello()'],['../struct_dummy_protocol_implementor.html#a6522b6b15930a5c7b350848df013393c',1,'DummyProtocolImplementor::hello()'],['../class_chimera_t_k_1_1_rebot_dummy_session.html#a853d07a0906f643744b23ea947aa1b2d',1,'ChimeraTK::RebotDummySession::HELLO']]],
+  ['hello_16',['hello',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a853d07a0906f643744b23ea947aa1b2d',1,'ChimeraTK::RebotDummySession::HELLO'],['../struct_chimera_t_k_1_1_dummy_protocol0.html#a142392a6596584712b98d0bf8f1b8e7b',1,'ChimeraTK::DummyProtocol0::hello()'],['../struct_chimera_t_k_1_1_dummy_protocol1.html#a59e2d55cbe4b3a93a8d94c7ad21f6b39',1,'ChimeraTK::DummyProtocol1::hello()'],['../struct_dummy_protocol_implementor.html#a6522b6b15930a5c7b350848df013393c',1,'DummyProtocolImplementor::hello()']]],
   ['helperfunctions_2ecc_17',['helperFunctions.cc',['../helper_functions_8cc.html',1,'']]],
   ['helperfunctions_2eh_18',['helperFunctions.h',['../helper_functions_8h.html',1,'']]],
   ['helperprocess_19',['helperprocess',['../struct_helper_process.html',1,'HelperProcess'],['../struct_helper_process.html#a815fcfe1efb41db737779a3134d47155',1,'HelperProcess::HelperProcess()']]],
@@ -30,5 +30,6 @@ var searchData=
   ['histlen_27',['histLen',['../struct_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher_1_1_target_element.html#ac0ab7a1f62fefaeeb62842a5b6d8d7a3',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher::TargetElement']]],
   ['historized_28',['historized',['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375',1,'ChimeraTK::DataConsistencyGroup']]],
   ['historizedmatcher_29',['historizedmatcher',['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ac346ee5f1c2461d6cf0b373d1f22ec9e',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher::HistorizedMatcher()'],['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher']]],
-  ['host_30',['host',['../struct_chimera_t_k_1_1_sdm.html#a9e79cc6b57adcf32f93544bf3903f68d',1,'ChimeraTK::Sdm']]]
+  ['host_30',['host',['../struct_chimera_t_k_1_1_sdm.html#a9e79cc6b57adcf32f93544bf3903f68d',1,'ChimeraTK::Sdm']]],
+  ['how_20the_20path_20already_20works_20no_20code_20change_31',['How the path already works (no code change)',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3',1,'']]]
 ];

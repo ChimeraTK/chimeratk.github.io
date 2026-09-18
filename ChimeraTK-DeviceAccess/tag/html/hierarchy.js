@@ -28,6 +28,9 @@ var hierarchy =
       [ "ChimeraTK::LNMBackend::AccessorPlugin< MultiplierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
       ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< SetDescriptionPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::SetDescriptionPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_set_description_plugin.html", null ]
+      ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< TagModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::TagModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_tag_modifier_plugin.html", [
           [ "ChimeraTK::LNMBackend::FixedTagModifierPlugin< Tag >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_fixed_tag_modifier_plugin.html", null ]
@@ -46,6 +49,7 @@ var hierarchy =
     [ "nlohmann::adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
+    [ "AsyncDoubleBufferFixture", "class_async_double_buffer_fixture.html", null ],
     [ "ChimeraTK::async::AsyncVariable", "struct_chimera_t_k_1_1async_1_1_async_variable.html", [
       [ "ChimeraTK::async::AsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1async_1_1_async_variable_impl.html", [
         [ "ChimeraTK::async::GenericAsyncVariable< std::nullptr_t, UserType >", "class_chimera_t_k_1_1async_1_1_generic_async_variable.html", [
@@ -230,6 +234,8 @@ var hierarchy =
     [ "ChimeraTK::DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", null ],
     [ "DMapFileParserTest", "class_d_map_file_parser_test.html", null ],
     [ "ChimeraTK::async::DomainsContainer", "class_chimera_t_k_1_1async_1_1_domains_container.html", null ],
+    [ "DoubleBufferedNamedChannelSlice", "struct_double_buffered_named_channel_slice.html", null ],
+    [ "DoubleBufferedNamedChannelSliceAsync", "struct_double_buffered_named_channel_slice_async.html", null ],
     [ "ChimeraTK::NumericAddressedRegisterInfo::DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", null ],
     [ "DummyFixture", "struct_dummy_fixture.html", null ],
     [ "ChimeraTK::DummyMultiplexedRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
@@ -247,6 +253,7 @@ var hierarchy =
       [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< uint16_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< float >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
@@ -258,6 +265,7 @@ var hierarchy =
     [ "ChimeraTK::proxies::DummyRegisterElement< int32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterElement< minimumUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterElement< rawUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
+    [ "ChimeraTK::proxies::DummyRegisterElement< uint16_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterElement< uint32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", null ],
     [ "ChimeraTK::DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
@@ -283,6 +291,7 @@ var hierarchy =
                 [ "CustomBackend", "class_custom_backend.html", null ],
                 [ "DummyForAreaHandshakeBackend", "struct_dummy_for_area_handshake_backend.html", null ],
                 [ "InvalidDummyBackend", "class_invalid_dummy_backend.html", null ],
+                [ "MapFileSearchBackend", "struct_map_file_search_backend.html", null ],
                 [ "NewBackend", "struct_new_backend.html", null ],
                 [ "NotRegisteringPlugin", "struct_not_registering_plugin.html", null ],
                 [ "SubArrayDecoratorTestBackend", "class_sub_array_decorator_test_backend.html", null ],
@@ -466,6 +475,7 @@ var hierarchy =
     [ "ChimeraTK::LNMVariable", "struct_chimera_t_k_1_1_l_n_m_variable.html", null ],
     [ "ChimeraTK::LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", null ],
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
+    [ "MapFileSearchFixture", "struct_map_file_search_fixture.html", null ],
     [ "ChimeraTK::MappedStruct< StructHeader >", "class_chimera_t_k_1_1_mapped_struct.html", null ],
     [ "ChimeraTK::MappedStruct< ImgHeader >", "class_chimera_t_k_1_1_mapped_struct.html", [
       [ "ChimeraTK::MappedImage", "class_chimera_t_k_1_1_mapped_image.html", null ]
@@ -484,6 +494,9 @@ var hierarchy =
     [ "MuxedNodmaAsync", "struct_muxed_nodma_async.html", null ],
     [ "MyArea1", "struct_my_area1.html", null ],
     [ "MyRegister1", "struct_my_register1.html", null ],
+    [ "NamedChannelSlice0", "struct_named_channel_slice0.html", null ],
+    [ "NamedChannelSlice3", "struct_named_channel_slice3.html", null ],
+    [ "NamedChannelSliceAsync0", "struct_named_channel_slice_async0.html", null ],
     [ "boost::noncopyable", null, [
       [ "ChimeraTK::DeviceFile", "class_chimera_t_k_1_1_device_file.html", null ],
       [ "ChimeraTK::XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", null ]
@@ -1020,6 +1033,7 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::OneDRegisterAccessor< unsigned char >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
+        [ "ChimeraTK::OneDRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::OneDRegisterAccessor< ReadWriteDataType >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::OneDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
         [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [

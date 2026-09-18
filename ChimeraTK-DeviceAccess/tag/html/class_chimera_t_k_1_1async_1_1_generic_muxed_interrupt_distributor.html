@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1async_1_1_generic
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ChimeraTK::async::GenericMuxedInterruptDistributor Class Reference</div></div>
 </div><!--header-->
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1async_1_1_generic
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor__coll__graph.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor__coll__graph.svg" width="100%" height="565"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -148,6 +149,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a012658c6a6a52b4226895ee39b98f07a" id="r_a012658c6a6a52b4226895ee39b98f07a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a012658c6a6a52b4226895ee39b98f07a">watchdogLoop</a> ()</td></tr>
+<tr class="memdesc:a012658c6a6a52b4226895ee39b98f07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">watchdog thread.  <br /></td></tr>
+<tr class="separator:a012658c6a6a52b4226895ee39b98f07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4dedf345fc25bc58fcfce88404fad0" id="r_a0a4dedf345fc25bc58fcfce88404fad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a0a4dedf345fc25bc58fcfce88404fad0">clearInterruptsFromMask</a> (uint32_t mask)</td></tr>
 <tr class="memdesc:a0a4dedf345fc25bc58fcfce88404fad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">In mask, 1 bits clear the corresponding registers, 0 bits do nothing.  <br /></td></tr>
 <tr class="separator:a0a4dedf345fc25bc58fcfce88404fad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +199,17 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4bebc622bd285d00bc92d10d662bfd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e21995792241fcb7edc93f6ba8b278" id="r_ac0e21995792241fcb7edc93f6ba8b278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#ac0e21995792241fcb7edc93f6ba8b278">_path</a></td></tr>
 <tr class="separator:ac0e21995792241fcb7edc93f6ba8b278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08568cdcfdb97bbad4bb69e71c168c5b" id="r_a08568cdcfdb97bbad4bb69e71c168c5b"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a08568cdcfdb97bbad4bb69e71c168c5b">_handlerRan</a> {false}</td></tr>
+<tr class="memdesc:a08568cdcfdb97bbad4bb69e71c168c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set true by <a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#aacd3c5ee45ed84f8b6b3c3e1ccadadd4" title="Handle gets called when a trigger comes in.">handle()</a> after each completed run.  <br /></td></tr>
+<tr class="separator:a08568cdcfdb97bbad4bb69e71c168c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db9d5cb8ea869d78dd27568ec4c02f7" id="r_a4db9d5cb8ea869d78dd27568ec4c02f7"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a4db9d5cb8ea869d78dd27568ec4c02f7">_watchdogAlerted</a> {false}</td></tr>
+<tr class="memdesc:a4db9d5cb8ea869d78dd27568ec4c02f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set true once the watchdog has raised a device exception.  <br /></td></tr>
+<tr class="separator:a4db9d5cb8ea869d78dd27568ec4c02f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd0661a71433b0871e7250a10da5d16" id="r_accd0661a71433b0871e7250a10da5d16"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#accd0661a71433b0871e7250a10da5d16">_watchdogThread</a></td></tr>
+<tr class="memdesc:accd0661a71433b0871e7250a10da5d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Watchdog thread and its stop flag.  <br /></td></tr>
+<tr class="separator:accd0661a71433b0871e7250a10da5d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784802292d70b900b7c7c7d26ef9c780" id="r_a784802292d70b900b7c7c7d26ef9c780"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a784802292d70b900b7c7c7d26ef9c780">_stopWatchdog</a> {false}</td></tr>
+<tr class="separator:a784802292d70b900b7c7c7d26ef9c780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html">ChimeraTK::async::MuxedInterruptDistributor</a></td></tr>
 <tr class="memitem:ad26eb9db46ad6b3c081d7b826710f35b inherit pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor" id="r_ad26eb9db46ad6b3c081d7b826710f35b"><td class="memItemLeft" align="right" valign="top">std::map&lt; size_t, boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1async_1_1_sub_domain.html">SubDomain</a>&lt; std::nullptr_t &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#ad26eb9db46ad6b3c081d7b826710f35b">_subDomains</a></td></tr>
 <tr class="separator:ad26eb9db46ad6b3c081d7b826710f35b inherit pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,10 +222,16 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a51340dcaa620f9a57f923d308d46449f inherit pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9698b8c1d2e91a028ee429dba576f900 inherit pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor" id="r_a9698b8c1d2e91a028ee429dba576f900"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1async_1_1_domain.html">Domain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#a9698b8c1d2e91a028ee429dba576f900">_asyncDomain</a></td></tr>
 <tr class="separator:a9698b8c1d2e91a028ee429dba576f900 inherit pro_attribs_class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a1b144147927b679bc58f980fedd609a3" id="r_a1b144147927b679bc58f980fedd609a3"><td class="memItemLeft" align="right" valign="top">static constexpr std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a1b144147927b679bc58f980fedd609a3">_watchdogInterval</a> {1000}</td></tr>
+<tr class="memdesc:a1b144147927b679bc58f980fedd609a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Watchdog polling/decision interval (experimental)  <br /></td></tr>
+<tr class="separator:a1b144147927b679bc58f980fedd609a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00035">35</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00040">40</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af5b9fcaa945ac4f2bf044689b18fdfef" name="af5b9fcaa945ac4f2bf044689b18fdfef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5b9fcaa945ac4f2bf044689b18fdfef">&#9670;&#160;</a></span>GenericMuxedInterruptDistributor()</h2>
@@ -252,7 +273,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00434">434</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00437">437</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -279,7 +300,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00522">522</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00525">525</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -310,7 +331,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#a6314bfeaa0d20dc2eeb2ee8607f8cd8d">ChimeraTK::async::MuxedInterruptDistributor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00678">678</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00780">780</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -353,7 +374,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#a7d58960d6edcb9313f49b5ab4fd081d6">ChimeraTK::async::MuxedInterruptDistributor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00715">715</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00827">827</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -380,7 +401,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00558">558</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00637">637</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -407,7 +428,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00553">553</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00632">632</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -438,7 +459,7 @@ Protected Attributes</h2></td></tr>
 <p>In mask, 1 bits clear the corresponding registers, 0 bits do nothing. </p>
 <p>So if bit i of mask is 1, then register i gets cleared Multiple bits can be 1 at a time. </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00538">538</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00617">617</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -466,7 +487,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00548">548</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00627">627</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -507,7 +528,7 @@ Protected Attributes</h2></td></tr>
 <p>Create parses the json configuration snippet 'description', and calls the constructor. </p>
 <p>It returns an initalized <a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html">GenericMuxedInterruptDistributor</a>. 'descriptor' is a JSON snippet containing configuration data. Elsewhere it's also called descriptionJsonStr </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00662">662</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00764">764</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -538,7 +559,7 @@ Protected Attributes</h2></td></tr>
 <p>Disables each interrupt corresponding to the 1 bits in mask, and updates _activeInterrupts. </p>
 <p>Depending on the options, may perform the disable using CIE, IER, or IMaskR. </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00563">563</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00642">642</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -566,7 +587,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00588">588</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00667">667</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -596,7 +617,7 @@ Protected Attributes</h2></td></tr>
 
 <p>For each bit in mask that is a 1, the corresponding interrupt gets enabled, and the internal copy of enabled registers is updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00593">593</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00672">672</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -624,7 +645,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00629">629</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00708">708</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -657,7 +678,36 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#a43608fa540c201370c65855a4972c2d0">ChimeraTK::async::MuxedInterruptDistributor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00634">634</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00713">713</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+
+</div>
+</div>
+<a id="a012658c6a6a52b4226895ee39b98f07a" name="a012658c6a6a52b4226895ee39b98f07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a012658c6a6a52b4226895ee39b98f07a">&#9670;&#160;</a></span>watchdogLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::async::GenericMuxedInterruptDistributor::watchdogLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>watchdog thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00549">549</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -682,7 +732,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00060">60</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00065">65</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +756,34 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00068">68</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00073">73</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+
+</div>
+</div>
+<a id="a08568cdcfdb97bbad4bb69e71c168c5b" name="a08568cdcfdb97bbad4bb69e71c168c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08568cdcfdb97bbad4bb69e71c168c5b">&#9670;&#160;</a></span>_handlerRan</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::async::GenericMuxedInterruptDistributor::_handlerRan {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set true by <a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#aacd3c5ee45ed84f8b6b3c3e1ccadadd4" title="Handle gets called when a trigger comes in.">handle()</a> after each completed run. </p>
+<p>The watchdog atomically reads-and-clears it via exchange() each interval to detect a wedged/starved handler. </p>
+
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00079">79</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +807,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00059">59</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00064">64</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -754,7 +831,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00058">58</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00063">63</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +855,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00064">64</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00069">69</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +879,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00063">63</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00068">68</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -826,7 +903,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00057">57</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00062">62</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +927,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00062">62</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00067">67</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -874,7 +951,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00065">65</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00070">70</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -898,7 +975,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00070">70</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00075">75</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -922,7 +999,109 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00067">67</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00072">72</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+
+</div>
+</div>
+<a id="a784802292d70b900b7c7c7d26ef9c780" name="a784802292d70b900b7c7c7d26ef9c780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a784802292d70b900b7c7c7d26ef9c780">&#9670;&#160;</a></span>_stopWatchdog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::async::GenericMuxedInterruptDistributor::_stopWatchdog {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00086">86</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+
+</div>
+</div>
+<a id="a4db9d5cb8ea869d78dd27568ec4c02f7" name="a4db9d5cb8ea869d78dd27568ec4c02f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db9d5cb8ea869d78dd27568ec4c02f7">&#9670;&#160;</a></span>_watchdogAlerted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::async::GenericMuxedInterruptDistributor::_watchdogAlerted {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set true once the watchdog has raised a device exception. </p>
+
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00082">82</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+
+</div>
+</div>
+<a id="a1b144147927b679bc58f980fedd609a3" name="a1b144147927b679bc58f980fedd609a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b144147927b679bc58f980fedd609a3">&#9670;&#160;</a></span>_watchdogInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::chrono::milliseconds ChimeraTK::async::GenericMuxedInterruptDistributor::_watchdogInterval {1000}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Watchdog polling/decision interval (experimental) </p>
+
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00088">88</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+
+</div>
+</div>
+<a id="accd0661a71433b0871e7250a10da5d16" name="accd0661a71433b0871e7250a10da5d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd0661a71433b0871e7250a10da5d16">&#9670;&#160;</a></span>_watchdogThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::thread ChimeraTK::async::GenericMuxedInterruptDistributor::_watchdogThread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Watchdog thread and its stop flag. </p>
+
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00085">85</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>

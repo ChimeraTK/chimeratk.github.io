@@ -35,8 +35,9 @@ var searchData=
   ['arrayregtarget_32',['ArrayRegTarget',['../struct_array_reg_target.html',1,'']]],
   ['asciidata_33',['AsciiData',['../struct_ascii_data.html',1,'']]],
   ['asyncaccessormanager_34',['AsyncAccessorManager',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html',1,'ChimeraTK::async']]],
-  ['asyncndregisteraccessor_35',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async']]],
-  ['asynctestdummy_36',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
-  ['asyncvariable_37',['AsyncVariable',['../struct_chimera_t_k_1_1async_1_1_async_variable.html',1,'ChimeraTK::async']]],
-  ['asyncvariableimpl_38',['AsyncVariableImpl',['../struct_chimera_t_k_1_1async_1_1_async_variable_impl.html',1,'ChimeraTK::async']]]
+  ['asyncdoublebufferfixture_35',['AsyncDoubleBufferFixture',['../class_async_double_buffer_fixture.html',1,'']]],
+  ['asyncndregisteraccessor_36',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async']]],
+  ['asynctestdummy_37',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
+  ['asyncvariable_38',['AsyncVariable',['../struct_chimera_t_k_1_1async_1_1_async_variable.html',1,'ChimeraTK::async']]],
+  ['asyncvariableimpl_39',['AsyncVariableImpl',['../struct_chimera_t_k_1_1async_1_1_async_variable_impl.html',1,'ChimeraTK::async']]]
 ];

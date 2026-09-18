@@ -22,6 +22,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
     [ "_metadataCatalogue", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a04148e280b880be972de29e10f8f8f6b", null ],
     [ "_registerMap", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a691a41642834757b25ebf994092960e0", null ],
     [ "_registerMapPointer", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a39ebc2e0fd1f1547f2f61cb9841b9bc9", null ],
+    [ "_resolvedMapFileName", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ab97d6eaf9cda90dde15a8b83737abfb8", null ],
     [ "_unalignedAccess", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630", null ],
     [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04", null ],
     [ "TriggeredPollDistributor", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a40135134a159cb068b23eb25edceae00", null ]

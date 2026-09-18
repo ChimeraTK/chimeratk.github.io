@@ -28,6 +28,19 @@ var NAVTREE =
     [ "First steps", "index.html#first_steps", null ],
     [ "Multi Value Registers (1D Register Accessors)", "accessor1d.html", null ],
     [ "2D Register Accessors", "accessor2d.html", null ],
+    [ "CR-001: Interrupt-driven reads on double-buffered registers (verification)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html", [
+      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md1", null ],
+      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md2", [
+        [ "How the path already works (no code change)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3", null ],
+        [ "Out of scope: BUF0/BUF1 buffer views", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md4", null ]
+      ] ],
+      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md5", null ]
+    ] ],
+    [ "CR-002: Test interrupt-driven reads on a double-buffered named channel", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html", [
+      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html#autotoc_md7", null ],
+      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html#autotoc_md8", null ],
+      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html#autotoc_md9", null ]
+    ] ],
     [ "Using and creating custom backends", "custom_backends.html", [
       [ "Writing Dummies: Extending the DummyBackend", "custom_backends.html#writing_dummies", null ],
       [ "The Plugin Mechanism", "custom_backends.html#plugin_mechanism", [
@@ -138,11 +151,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html", [
-      [ "Prerequisites", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md17", null ],
-      [ "Mapping of XDMA driver interfaces", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md18", [
-        [ "AXI-Lite Master interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md19", null ],
-        [ "AXI MM DMA interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md20", null ],
-        [ "Interrupt lines (events)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md21", null ]
+      [ "Prerequisites", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md27", null ],
+      [ "Mapping of XDMA driver interfaces", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md28", [
+        [ "AXI-Lite Master interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md29", null ],
+        [ "AXI MM DMA interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md30", null ],
+        [ "Interrupt lines (events)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md31", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -193,38 +206,38 @@ var NAVTREEINDEX =
 "_l_n_m_backend_bit_accessor_8cc.html#a8c9f67bf29e708e827da1dcb0376dcf0",
 "_sub_domain_8h_source.html",
 "accessor2_d__multiplexed_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"class_chimera_t_k_1_1_backend_register_info_base.html#a85ece0fd9d481d869e938261bd21b2b8",
-"class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951ab45cffe084dd3d20d928bee85e7b0f21",
-"class_chimera_t_k_1_1_device_info_map.html#ad1f7f2c18898d4efe2b99c2a801d218f",
-"class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a58fdeefd616374e2ba3314b97eeca635",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#ad9536e31b89c9320187dc57715282af7",
-"class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a1a5dbcabd62608869c651225d3e94e4a",
-"class_chimera_t_k_1_1_map_file_parser.html",
-"class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html#ab861843597c90ad3bf768ea7f65ed2ea",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html#aa639fbcde262eea5b35128a43e73fb9e",
-"class_chimera_t_k_1_1_rebot_backend.html#a741e38a09bb3d288998451aacc354859",
-"class_chimera_t_k_1_1_scalar_register_accessor.html",
-"class_chimera_t_k_1_1_subdevice_register_window_accessor.html#a5afe384b19ae2e238aaedd1134cd8854",
-"class_chimera_t_k_1_1_transfer_element_abstractor.html#afb4c01a7604516958f57d8ec67f4aa5e",
-"class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01std_1_1string_00_01_chimera_t_k_1_1_void_01_4.html#a7536dbb1f93ac5be14c7c47ec2790f91",
-"class_chimera_t_k_1_1_unified_backend_test.html#aeae6880436b18f04955b4a188c8edd4d",
-"class_chimera_t_k_1_1async_1_1_domain.html#affa6e918b9ce0e3dd0de0a4c1ff0a308",
-"class_chimera_t_k_1_1async_1_1_variable_distributor.html",
-"class_pcie_backend_test.html#a18cadb478a8f1d17ad8bef4dbd94ac5f",
-"functions_func_v.html",
-"namespace_chimera_t_k.html#a54543ce82e0ab2199db563854482257a",
-"pciedev__io__compat_8h.html#aeda3a2a8e04dea1db5bcf4d4cec12688",
-"struct_chimera_t_k_1_1_device_descriptor.html#ad5b3d511524f18cd96ad990f94733e1b",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#aebbf5b2b1ceaf6f0ca59cf1e9ce4a84e",
-"struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#afc1dc3fb280a20b761a0158696a33d9b",
-"struct_dummy_protocol_implementor.html#ac60d8e7bae14fda22982a49c54b3ca47",
-"struct_muxed_nodma.html#a730c7bafd1cbec43e6ef0295af3c6c31",
-"struct_reg_channel_last.html#afd1499d23610e1eb5a7298398910cc98",
-"struct_register_descriptor_base.html#ab37f2475709b24565b586926c39cf882",
-"structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5",
-"test_generic_muxed_interrupt_distributor_8cpp.html#ae24883e4b1d289b47736e35c15179da5",
-"test_numeric_converter_8cpp.html#a555ccf7e2753b8f71893ab29a690d9d1",
-"test_transfer_element_8cpp.html"
+"class_chimera_t_k_1_1_backend_register_info_base.html#a3f0665538d48ad46a558af532f647a72",
+"class_chimera_t_k_1_1_data_descriptor.html#aaab62545dad995c54e3ca0994df5a6e6",
+"class_chimera_t_k_1_1_device_info_map.html#a8830f50bc1726645faa3793ef60b0efb",
+"class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a0a0349c24239e6ffd40a73b6648064f5",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#a13fb0d91ae7b7b3cd5f1ffb1a70b1bb1",
+"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af195f467968cfe6db337f1a6ebd8b5bd",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#acd3e54bb07d8008c355b3c584050d5a6",
+"class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html#a89a6681e6cebbfacbb54ce60c8a0f0c1",
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a97a348675d59741fc2c44d2fbd5b0980",
+"class_chimera_t_k_1_1_rebot_backend.html#a38cbb37d6a5764b629ebed3916eaf084",
+"class_chimera_t_k_1_1_register_path.html#ac4e173e3e279992f779ae2d39873a2bd",
+"class_chimera_t_k_1_1_subdevice_register_window_accessor.html#a47386ba9c6c88cc944648152b5a4d13f",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html#acc639d986bbab7f30b86c6f8f8596e57",
+"class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01_chimera_t_k_1_1_void_01_4.html",
+"class_chimera_t_k_1_1_unified_backend_test.html#ad3f74d88389c6c2c7d9cea95cc8f38cb",
+"class_chimera_t_k_1_1async_1_1_domain.html#ab591fd01d80010a67907645a12a7dfe2",
+"class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html#a82f6095278727c5e39c7a85deb577e3c",
+"class_parser_utilities_test_suite.html#a7eef37d508c02351985915f4316d4d4f",
+"functions_func_i.html",
+"namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96",
+"pciedev__io__compat_8h.html#a35ef23c334a9de2bfddddf640577d972",
+"struct_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher_1_1_target_element.html#af66eb07c873a6c9380fdb1408cdf500a",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html",
+"struct_chimera_t_k_1_1_thread_informer_mutex.html",
+"struct_dummy_fixture.html#afb51163bd5f75d8460a98e472b882895",
+"struct_muxed_area2.html#a9cdafe3d30ea60ad87afc2a0a9edbd12",
+"struct_reg_bit_range_middle.html#ad6908b88fa361611076f8cd19b20267b",
+"struct_reg_word_firmware_with_math.html#a247bfaa8d6793b0a8c5836f74ba2a8a5",
+"struct_unknown_option_test_fixture.html",
+"test_generic_muxed_interrupt_distributor_8cpp.html#a2cbc5fb38bcf69fa5c4f7993cc6e7360",
+"test_numeric_addressed_backend_unified_8cpp.html#a9f5533e72ee880d6d818844f51879211",
+"test_subdevice_backend_register_window_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
