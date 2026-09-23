@@ -35,6 +35,7 @@ var test_numeric_addressed_backend_unified_8cpp =
     [ "DoubleBufferedNamedChannelSliceAsync", "struct_double_buffered_named_channel_slice_async.html", "struct_double_buffered_named_channel_slice_async" ],
     [ "BOOST_TEST_DYN_LINK", "test_numeric_addressed_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_numeric_addressed_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#a3e5f55456cffce24d6526972bee3a07c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#abec2208558f5fa0f2ec74bd87807e3fd", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#a636bebcfb031b4c44ba62a2b3d130143", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_numeric_addressed_backend_unified_8cpp.html#a387a80325807160d83aeb5830a73471d", null ],

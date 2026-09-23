@@ -906,6 +906,7 @@ var hierarchy =
       [ "Scalar32Async", "struct_scalar32_async.html", null ]
     ] ],
     [ "ChimeraTK::Sdm", "struct_chimera_t_k_1_1_sdm.html", null ],
+    [ "ChimeraTK::NumericAddressedRegisterInfo::SelectedBy", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_selected_by.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::LogicalNameMappingBackend::SharedAccessor< UserType >", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", null ],

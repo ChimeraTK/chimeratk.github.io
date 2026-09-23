@@ -96,10 +96,15 @@ $(document).ready(function(){initNavTree('test_json_map_file_parser_8cpp.html','
   <div class="headertitle"><div class="title">testJsonMapFileParser.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_device_8h_source.html">Device.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_exception_8h_source.html">Exception.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_exception_8h_source.html">Exception.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_map_file_parser_8h_source.html">MapFileParser.h</a>&quot;</code><br />
+<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+<code>#include &lt;boost/pointer_cast.hpp&gt;</code><br />
 <code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testJsonMapFileParser.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,10 +128,30 @@ Functions</h2></td></tr>
 <tr class="separator:a4a8320d2d1715f8fe022210a993393b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb935da05bc35989bb2d66fafc4a6f92" id="r_acb935da05bc35989bb2d66fafc4a6f92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#acb935da05bc35989bb2d66fafc4a6f92">BOOST_AUTO_TEST_CASE</a> (TestGoodMapFileParse)</td></tr>
 <tr class="separator:acb935da05bc35989bb2d66fafc4a6f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0093b0e41b373e0dffc86f4a0fbb3a9" id="r_aa0093b0e41b373e0dffc86f4a0fbb3a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#aa0093b0e41b373e0dffc86f4a0fbb3a9">BOOST_AUTO_TEST_CASE</a> (TestNamedChannelBitRangeChildren)</td></tr>
+<tr class="separator:aa0093b0e41b373e0dffc86f4a0fbb3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfa064b42f695997cd407fc67c27150" id="r_a9cfa064b42f695997cd407fc67c27150"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a9cfa064b42f695997cd407fc67c27150">BOOST_AUTO_TEST_CASE</a> (TestNamedChannelDirectBitRange)</td></tr>
+<tr class="separator:a9cfa064b42f695997cd407fc67c27150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2925d062ecb791d146b5b43181bd14" id="r_a5d2925d062ecb791d146b5b43181bd14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a5d2925d062ecb791d146b5b43181bd14">BOOST_AUTO_TEST_CASE</a> (TestNamedChannelBitRangeIgnoredChildren)</td></tr>
+<tr class="separator:a5d2925d062ecb791d146b5b43181bd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c090df9facd6827b03830607d3f7d72" id="r_a5c090df9facd6827b03830607d3f7d72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a5c090df9facd6827b03830607d3f7d72">BOOST_AUTO_TEST_CASE</a> (TestNamedChannelBitRangeBuf0CollisionThrows)</td></tr>
+<tr class="separator:a5c090df9facd6827b03830607d3f7d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab304f128837dc127ee8d1c88521fe2a4" id="r_ab304f128837dc127ee8d1c88521fe2a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#ab304f128837dc127ee8d1c88521fe2a4">BOOST_AUTO_TEST_CASE</a> (TestNamedChannelBitRangeChildBuf0CollisionThrows)</td></tr>
+<tr class="separator:ab304f128837dc127ee8d1c88521fe2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179c9f4088b09607e44db15ec82bbdb3" id="r_a179c9f4088b09607e44db15ec82bbdb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a179c9f4088b09607e44db15ec82bbdb3">BOOST_AUTO_TEST_CASE</a> (TestNamedChannelBitRangeMuxedChildSelectedBy)</td></tr>
+<tr class="separator:a179c9f4088b09607e44db15ec82bbdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3021bb347fd99a327311b1f0a0916a0a" id="r_a3021bb347fd99a327311b1f0a0916a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a3021bb347fd99a327311b1f0a0916a0a">BOOST_AUTO_TEST_CASE</a> (TestDoubleBufferDiffBarThrows)</td></tr>
 <tr class="separator:a3021bb347fd99a327311b1f0a0916a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e491f9e1aad8908263190e2621f7bec" id="r_a3e491f9e1aad8908263190e2621f7bec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a3e491f9e1aad8908263190e2621f7bec">BOOST_AUTO_TEST_CASE</a> (TestInterruptIntegration)</td></tr>
-<tr class="separator:a3e491f9e1aad8908263190e2621f7bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95dc2cfd2a3871a002ea8c35f3802fb5" id="r_a95dc2cfd2a3871a002ea8c35f3802fb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a95dc2cfd2a3871a002ea8c35f3802fb5">BOOST_AUTO_TEST_CASE</a> (TestChannelInfoEqualitySelectedBy)</td></tr>
+<tr class="separator:a95dc2cfd2a3871a002ea8c35f3802fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b867a3e8e03b85089246e32348b7cae" id="r_a6b867a3e8e03b85089246e32348b7cae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a6b867a3e8e03b85089246e32348b7cae">BOOST_AUTO_TEST_CASE</a> (TestSelectedByMissingValue)</td></tr>
+<tr class="separator:a6b867a3e8e03b85089246e32348b7cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f6ebfe53cadfa277f62cb51e48e9b6" id="r_a59f6ebfe53cadfa277f62cb51e48e9b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a59f6ebfe53cadfa277f62cb51e48e9b6">BOOST_AUTO_TEST_CASE</a> (TestSelectedByMissingRegister)</td></tr>
+<tr class="separator:a59f6ebfe53cadfa277f62cb51e48e9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc660a647ba2287f4b293f5c0181e29" id="r_a9fc660a647ba2287f4b293f5c0181e29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#a9fc660a647ba2287f4b293f5c0181e29">BOOST_AUTO_TEST_CASE</a> (TestSelectedByOnScalar)</td></tr>
+<tr class="separator:a9fc660a647ba2287f4b293f5c0181e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae645e79012a1bf4619e3b110911a72ab" id="r_ae645e79012a1bf4619e3b110911a72ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_json_map_file_parser_8cpp.html#ae645e79012a1bf4619e3b110911a72ab">BOOST_AUTO_TEST_CASE</a> (TestSelectedByBadValue)</td></tr>
+<tr class="separator:ae645e79012a1bf4619e3b110911a72ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -162,8 +187,28 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a95dc2cfd2a3871a002ea8c35f3802fb5" name="a95dc2cfd2a3871a002ea8c35f3802fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95dc2cfd2a3871a002ea8c35f3802fb5">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestChannelInfoEqualitySelectedBy&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00960">960</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a3021bb347fd99a327311b1f0a0916a0a" name="a3021bb347fd99a327311b1f0a0916a0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3021bb347fd99a327311b1f0a0916a0a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3021bb347fd99a327311b1f0a0916a0a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,12 +223,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00573">573</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00951">951</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a4a8320d2d1715f8fe022210a993393b0" name="a4a8320d2d1715f8fe022210a993393b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a8320d2d1715f8fe022210a993393b0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8320d2d1715f8fe022210a993393b0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,12 +243,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00022">22</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00051">51</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
 
 </div>
 </div>
 <a id="acb935da05bc35989bb2d66fafc4a6f92" name="acb935da05bc35989bb2d66fafc4a6f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb935da05bc35989bb2d66fafc4a6f92">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acb935da05bc35989bb2d66fafc4a6f92">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,12 +263,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00058">58</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3e491f9e1aad8908263190e2621f7bec" name="a3e491f9e1aad8908263190e2621f7bec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e491f9e1aad8908263190e2621f7bec">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/4]</span></h2>
+<a id="a5c090df9facd6827b03830607d3f7d72" name="a5c090df9facd6827b03830607d3f7d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c090df9facd6827b03830607d3f7d72">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,14 +276,194 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">TestInterruptIntegration&#160;</td>
+          <td class="paramtype">TestNamedChannelBitRangeBuf0CollisionThrows&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00580">580</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00866">866</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab304f128837dc127ee8d1c88521fe2a4" name="ab304f128837dc127ee8d1c88521fe2a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab304f128837dc127ee8d1c88521fe2a4">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestNamedChannelBitRangeChildBuf0CollisionThrows&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00889">889</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0093b0e41b373e0dffc86f4a0fbb3a9" name="aa0093b0e41b373e0dffc86f4a0fbb3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0093b0e41b373e0dffc86f4a0fbb3a9">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestNamedChannelBitRangeChildren&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00692">692</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5d2925d062ecb791d146b5b43181bd14" name="a5d2925d062ecb791d146b5b43181bd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2925d062ecb791d146b5b43181bd14">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestNamedChannelBitRangeIgnoredChildren&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00840">840</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a179c9f4088b09607e44db15ec82bbdb3" name="a179c9f4088b09607e44db15ec82bbdb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179c9f4088b09607e44db15ec82bbdb3">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestNamedChannelBitRangeMuxedChildSelectedBy&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00912">912</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9cfa064b42f695997cd407fc67c27150" name="a9cfa064b42f695997cd407fc67c27150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfa064b42f695997cd407fc67c27150">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestNamedChannelDirectBitRange&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l00798">798</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae645e79012a1bf4619e3b110911a72ab" name="ae645e79012a1bf4619e3b110911a72ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae645e79012a1bf4619e3b110911a72ab">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[11/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestSelectedByBadValue&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l01031">1031</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a59f6ebfe53cadfa277f62cb51e48e9b6" name="a59f6ebfe53cadfa277f62cb51e48e9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f6ebfe53cadfa277f62cb51e48e9b6">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[12/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestSelectedByMissingRegister&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l01014">1014</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b867a3e8e03b85089246e32348b7cae" name="a6b867a3e8e03b85089246e32348b7cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b867a3e8e03b85089246e32348b7cae">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[13/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestSelectedByMissingValue&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l01005">1005</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9fc660a647ba2287f4b293f5c0181e29" name="a9fc660a647ba2287f4b293f5c0181e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc660a647ba2287f4b293f5c0181e29">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[14/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">TestSelectedByOnScalar&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_json_map_file_parser_8cpp_source.html#l01023">1023</a> of file <a class="el" href="test_json_map_file_parser_8cpp_source.html">testJsonMapFileParser.cpp</a>.</p>
 
 </div>
 </div>

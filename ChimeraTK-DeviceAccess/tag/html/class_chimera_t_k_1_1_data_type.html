@@ -160,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab67dc3e032636c6e7b09f70f06ee7507" id="r_ab67dc3e032636c6e7b09f70f06ee7507"><td class="memItemLeft" align="right" valign="top">const std::type_info &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_type.html#ab67dc3e032636c6e7b09f70f06ee7507">getAsTypeInfo</a> () const</td></tr>
 <tr class="memdesc:ab67dc3e032636c6e7b09f70f06ee7507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return std::type_info representation of the data type.  <br /></td></tr>
 <tr class="separator:ab67dc3e032636c6e7b09f70f06ee7507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e22d7bd00cefa716050bc3a1bd0f76f" id="r_a7e22d7bd00cefa716050bc3a1bd0f76f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_type.html#a7e22d7bd00cefa716050bc3a1bd0f76f">getNumberOfBytes</a> () const</td></tr>
+<tr class="memdesc:a7e22d7bd00cefa716050bc3a1bd0f76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of bytes per element for the data type.  <br /></td></tr>
+<tr class="separator:a7e22d7bd00cefa716050bc3a1bd0f76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -171,7 +174,7 @@ Protected Attributes</h2></td></tr>
 <p>There is the additional type 'none' to indicate that the data type is not available in the current context. For instance if <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">DataType</a> is used to identify the raw data type of an accessor, the value is none if the accessor does not have a raw transfer mechanism.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">DataType</a> behaves almost like a class enum due to the plain enum inside it (see description of the <code>operator TheType &amp; ()</code> ). </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00560">560</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00562">562</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4e8b0e61b39b533564f1e3866165f899" name="a4e8b0e61b39b533564f1e3866165f899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e8b0e61b39b533564f1e3866165f899">&#9670;&#160;</a></span>TheType</h2>
@@ -218,7 +221,7 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00566">566</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00568">568</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +253,7 @@ Protected Attributes</h2></td></tr>
 <p>The constructor can get the type as an argument. </p>
 <p>It defaults to 'none'. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00659">659</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00661">661</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +284,7 @@ Protected Attributes</h2></td></tr>
 <p>Construct <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">DataType</a> from std::type_info. </p>
 <p>If the type is not known, 'none' is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00664">664</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00666">666</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +314,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Construct <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used.">DataType</a> from std::string. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00710">710</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00712">712</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +344,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return string representation of the data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00756">756</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00758">758</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +373,37 @@ Protected Attributes</h2></td></tr>
 
 <p>Return std::type_info representation of the data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00790">790</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00792">792</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="a7e22d7bd00cefa716050bc3a1bd0f76f" name="a7e22d7bd00cefa716050bc3a1bd0f76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e22d7bd00cefa716050bc3a1bd0f76f">&#9670;&#160;</a></span>getNumberOfBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ChimeraTK::DataType::getNumberOfBytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the number of bytes per element for the data type. </p>
+<p>Returns 1, 2, 4 or 8 for the signed and unsigned integer types by their width, 4 for <code>float32</code> and 8 for <code>float64</code>, <code>sizeof(ChimeraTK::Boolean)</code> for <code><a class="el" href="class_chimera_t_k_1_1_boolean.html" title="Wrapper Class to avoid vector&lt;bool&gt; problems.">Boolean</a></code>, 0 for <code>none</code> and <code><a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void.">Void</a></code> (no data). It is not allowed to call this function for <code>string</code> (will trigger an assertion). </p>
+
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00831">831</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +433,7 @@ Protected Attributes</h2></td></tr>
 <p>Return whether the raw data type is an integer. </p>
 <p>False is also returned for non-numerical types and 'none'. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00604">604</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00606">606</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +463,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns whether the data type is numeric. </p>
 <p>Type 'none' returns false. </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00642">642</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00644">644</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +493,7 @@ Protected Attributes</h2></td></tr>
 <p>Return whether the raw data type is signed. </p>
 <p>True for signed integers and floating point types (currently only signed implementations). False otherwise (also for non-numerical types and 'none'). </p>
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00625">625</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00627">627</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -494,10 +527,10 @@ Protected Attributes</h2></td></tr>
 <div class="line">\c myDataType</div>
 <div class="line"><span class="comment">// allows the assignment.</span></div>
 <div class="line">myDataType = <a class="code hl_enumvalue" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96">DataType::int32</a>;</div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_data_type_html"><div class="ttname"><a href="class_chimera_t_k_1_1_data_type.html">ChimeraTK::DataType</a></div><div class="ttdoc">A class to describe which of the supported data types is used.</div><div class="ttdef"><b>Definition</b> <a href="_supported_user_types_8h_source.html#l00560">SupportedUserTypes.h:560</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_data_type_html_a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96"><div class="ttname"><a href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96">ChimeraTK::DataType::int32</a></div><div class="ttdeci">@ int32</div><div class="ttdoc">Signed 32 bit integer.</div><div class="ttdef"><b>Definition</b> <a href="_supported_user_types_8h_source.html#l00572">SupportedUserTypes.h:572</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_data_type_html"><div class="ttname"><a href="class_chimera_t_k_1_1_data_type.html">ChimeraTK::DataType</a></div><div class="ttdoc">A class to describe which of the supported data types is used.</div><div class="ttdef"><b>Definition</b> <a href="_supported_user_types_8h_source.html#l00562">SupportedUserTypes.h:562</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_data_type_html_a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96"><div class="ttname"><a href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96">ChimeraTK::DataType::int32</a></div><div class="ttdeci">@ int32</div><div class="ttdoc">Signed 32 bit integer.</div><div class="ttdef"><b>Definition</b> <a href="_supported_user_types_8h_source.html#l00574">SupportedUserTypes.h:574</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00597">597</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00599">599</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +557,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00598">598</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00600">600</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +582,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00824">824</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_supported_user_types_8h_source.html#l00860">860</a> of file <a class="el" href="_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>

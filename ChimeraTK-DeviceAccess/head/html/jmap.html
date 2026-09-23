@@ -194,6 +194,32 @@ Description and engineering unit</h2>
     "address": { "channel": 0, "offset": 32 }
   }
 }
+</pre><h2><a class="anchor" id="jmap_register_selection"></a>
+Conditional register selection</h2>
+<p>It is possible to define sets of registers with different semantics or even layout that can be selected between with a dedicated selector register and an expected value of that register that determines the active set.</p>
+<p>All alternative registers will be present in the catalog.</p>
+<ul>
+<li><code>register</code> Path to a register that determines which register set </li>
+<li><code>value</code> The value of <code>register</code> that enables this register</li>
+</ul>
+<pre class="fragment">"addressSpace": {
+  "value": {
+    "address": { "channel": 0, "offset": 1246 },
+    "representation": { "type": "fixedPoint", "width": 32 },
+    "selectedBy": {
+      "register": "APP.OUTPUT_SELECT",
+      "value": 0
+    },
+  },
+  "valueMean": {
+    "address": { "channel": 0,"offset": 1246 },
+    "representation": { "type": "IEEE754", "width": 32 },
+    "selectedBy": {
+      "register": "APP.OUTPUT_SELECT",
+      "value": 1
+    },
+  },
+}
 </pre><h1><a class="anchor" id="jmap_modules"></a>
 Modules and hierarchical names</h1>
 <h2><a class="anchor" id="jmap_simple_modules"></a>
@@ -288,41 +314,84 @@ Interrupts</h2>
 </pre><p> This will create a push-type register (supporting <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">ChimeraTK::AccessMode::wait_for_new_data</a>) that will receive new values when the interrupt <code>3</code>:0:2 arrives by polling the data from the specified address. See <a class="el" href="design__async_n_d_register_accessor__numeric_addressed.html">Design: AsyncNDRegisterAccessor</a> for more details.</p>
 <h2><a class="anchor" id="jmap_2d"></a>
 2D multiplexed registers</h2>
-<p>A register holding several channels of time-multiplexed samples is declared by giving a <code>channelTabs</code> entry: </p><ul>
+<p>A register holding several channels of time-multiplexed samples is declared by giving a flat <code>channels</code> entry together with <code>numberOfElements</code> and <code>pitch:</code> </p><ul>
 <li><code>numberOfElements</code> - the number of samples (time slots) per channel. </li>
 <li><code>pitch</code> - the number of bytes between two samples of the same channel. </li>
-<li><code>channels</code> - the channels of this tab, given as a dictionary keyed by channel <code>name</code>. Each channel value has a byte <code>offset</code> relative to the register base address, a <code>bytesPerElement</code> and an optional <code>representation</code>. (Channel order in memory follows the <code>offset</code>, independent of the order of the dictionary keys.)</li>
+<li><code>channels</code> - the channels, given as a dictionary keyed by channel <code>name</code>. Each channel value has a byte <code>offset</code> relative to the register base address, a <code>bytesPerElement</code> and an optional <code>representation</code>. (Channel order in memory follows the <code>offset</code>, independent of the order of the dictionary keys.) An optional per-channel <code>selectedBy</code> selects a muxed channel (see <a class="el" href="jmap.html#jmap_channel_selection">Conditional channels</a>).</li>
 </ul>
 <p>Channels can have arbitrary names; single-word channels are simply indexed <code>"0"</code>, <code>"1"</code>, ... Example: </p><pre class="fragment">"addressSpace": {
   "DMA": {
     "address": { "type": "DMA", "offset": "0x0" },
-    "channelTabs": [
-      {
-        "numberOfElements": 16384,
-        "pitch": 32,
-        "channels": {
-          "0": {
-            "offset": 0,
-            "bytesPerElement": 2,
-            "representation": { "type": "fixedPoint", "width": 16 }
-          },
-          "1": {
-            "offset": 2,
-            "bytesPerElement": 2,
-            "representation": { "type": "fixedPoint", "width": 12, "fractionalBits": 12 }
-          }
-        }
+    "numberOfElements": 16384,
+    "pitch": 32,
+    "channels": {
+      "0": {
+        "offset": 0,
+        "bytesPerElement": 2,
+        "representation": { "type": "fixedPoint", "width": 16 }
+      },
+      "1": {
+        "offset": 2,
+        "bytesPerElement": 2,
+        "representation": { "type": "fixedPoint", "width": 12, "fractionalBits": 12 }
       }
-    ]
+    }
   }
 }
 </pre><p> Here <code>DMA</code> is a 2D register with two channels, each holding 16384 samples, with a pitch of 32 bytes between the samples of a channel (so there is space for more channels in this example).</p>
 <h3><a class="anchor" id="jmap_channel_slices"></a>
 Channel slices</h3>
 <p>For every channel, a read-only one-dimensional register slice is created automatically. The slice is named after the channel, e.g. <code>DMA/0</code>, <code>DMA/1</code> in the example above. Each slice exposes the samples of that single channel as a one-dimensional array, reading them out of the 2D register with the correct stride. The channel's byte <code>offset</code> is folded into the slice address, so it can be addressed independently of the parent 2D register. Writing is deliberately not supported for these slices, since writing a single channel of a 2D register would require a read-modify-write cycle across the channels. If multiple slice accessors for the same 2D register shall be read simultaneously (without <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read.">ChimeraTK::AccessMode::wait_for_new_data</a>), it is highly recommended to add them all to the same <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group.">ChimeraTK::TransferGroup</a> to avoid transferring the full 2D data multiple times unnecessarily from the device.</p>
-<h3><a class="anchor" id="jmap_channel_tabs"></a>
-Channel tabs</h3>
-<p>The example above uses a single channel tab, which is the common case. For multi-tab DAQ setups an additional <code>tabSelectRegister</code> can be used to switch between the tabs, but the support for multiple tabs is not yet implemented.</p>
+<h3><a class="anchor" id="jmap_channel_bitfields"></a>
+Channel bit fields</h3>
+<p>A channel of a 2D register may declare a <code>children</code> dictionary of bit fields of its sample word, working like the top-level bit-field mechanism of a 1D register (see <a class="el" href="jmap.html#jmap_bitfields">Bit fields</a>). The children share the channel's byte <code>offset</code> and <code>bytesPerElement</code> as their word context. The channel itself may also be a single bit range by setting <code>bitShift</code> and <code>width</code> in its own <code>representation</code>.</p>
+<p>For every channel a read-only slice <code>&lt;channel&gt;</code> is created exposing the parent sample word: byte-aligned, unshifted and not a bit range. For a channel with <code>children</code>, one read-only bit-range slice <code>&lt;channel&gt;/&lt;child&gt;</code> is created per child, extracting the child's bit range from every sample word. All these slices are read-only; writing is not supported. A child that is not a proper bit range of the channel word (spanning the whole word, or extending past it) is ignored. Reading a channel that is a bit range is done through its slice; the whole 2D register read is not supported for such channels.</p>
+<h3><a class="anchor" id="jmap_channel_selection"></a>
+Conditional channels</h3>
+<p>Similar to the <a class="el" href="jmap.html#jmap_register_selection">Conditional register selection</a> it is possible to define alternative sets of channels using the same semantics.</p>
+<p>Example with two muxed layouts selected by <code>DAQ.MUX_SEL:</code> </p><pre class="fragment">"addressSpace": {
+  "FD": {
+    "address": { "type": "DMA", "offset": "0x81000" },
+    "numberOfElements": 16384,
+    "pitch": 64,
+    "channels": {
+      "AmplitudeCh0": {
+        "selectedBy": { "register": "DAQ.MUX_SEL", "value": 0 },
+        "bytesPerElement": 2,
+        "offset": 0,
+        "representation": { "type": "fixedPoint", "width": 16 }
+      },
+      "RawCh0": {
+        "selectedBy": { "register": "DAQ.MUX_SEL", "value": 1 },
+        "bytesPerElement": 4,
+        "offset": 0,
+        "representation": { "type": "fixedPoint", "width": 32 }
+      },
+      "RawCh1": {
+        "selectedBy": { "register": "DAQ.MUX_SEL", "value": 1 },
+        "bytesPerElement": 4,
+        "offset": 4,
+        "representation": { "type": "fixedPoint", "width": 32 }
+      }
+    }
+  }
+}
+</pre><dl class="section user"><dt>Single registers (scalar/1D)</dt><dd></dd></dl>
+<p>The <code>selectedBy</code> feature works for single (scalar or 1D, non-2D) registers as well. In that case the <code>selectedBy</code> object is given on the register itself rather than per channel, and makes the whole register conditional: the register is only active while the selector register equals the given <code>value</code>. Example: </p><pre class="fragment">"addressSpace": {
+  "SINGLE_MUXED": {
+    "numberOfElements": 1,
+    "selectedBy": { "register": "DAQ.MUX_SEL", "value": 0 },
+    "address": { "channel": 0, "offset": 1246 },
+    "bytesPerElement": 4,
+    "representation": { "type": "fixedPoint", "width": 32 }
+  }
+}
+</pre><p> Specifying <code>selectedBy</code> on a register that also has per-channel <code>channels</code> (a 2D register) is rejected, since for 2D registers the selector is given per channel (see <a class="el" href="jmap.html#jmap_channel_selection">Conditional channels</a>).</p>
+<p>For a hardware multiplexer, several mutually exclusive scalar alternatives can be declared as separate registers that share the same <code>address</code> and differ only in their <code>selectedBy</code> <code>value</code>. Only one of them is active at a time, selected by the selector register: </p><pre class="fragment">"addressSpace": {
+  "SINGLE_MUXED":     { "numberOfElements": 1, "selectedBy": { "register": "DAQ.MUX_SEL", "value": 0 }, "address": { "channel": 0, "offset": 1246 }, "bytesPerElement": 4, "representation": { "type": "fixedPoint", "width": 32 } },
+  "SINGLE_MUXED_ALT": { "numberOfElements": 1, "selectedBy": { "register": "DAQ.MUX_SEL", "value": 1 }, "address": { "channel": 0, "offset": 1246 }, "bytesPerElement": 4, "representation": { "type": "fixedPoint", "width": 32 } }
+}
+</pre><p> Both alternatives map to the same address (<code>1246</code>); they differ only in the selector value, exactly like muxed channels inside a 2D register.</p>
 <h2><a class="anchor" id="jmap_double_buffering"></a>
 Double buffering</h2>
 <p>A register that is fed by double-buffered DMA hardware is marked with a <code>doubleBuffering</code> object. It contains: </p><ul>
@@ -341,24 +410,20 @@ Double buffering</h2>
       "readBufferRegister": "DAQ.DOUBLE_BUF.INACTIVE_BUF_ID",
       "index": 0
     },
-    "channelTabs": [
-      {
-        "numberOfElements": 16384,
-        "pitch": 64,
-        "channels": {
-          "errorI": {
-            "bytesPerElement": 2,
-            "offset": 0,
-            "representation": {
-              "type": "fixedPoint",
-              "width": 16,
-              "fractionalBits": -2,
-              "isSigned": true
-            }
-          }
+    "numberOfElements": 16384,
+    "pitch": 64,
+    "channels": {
+      "errorI": {
+        "bytesPerElement": 2,
+        "offset": 0,
+        "representation": {
+          "type": "fixedPoint",
+          "width": 16,
+          "fractionalBits": -2,
+          "isSigned": true
         }
       }
-    ]
+    }
   }
 }
 </pre><h2><a class="anchor" id="jmap_bitfields"></a>
@@ -387,7 +452,7 @@ Bit fields</h2>
     }
   }
 }
-</pre><p> Registers which share the starting address with a bit range and have a width smaller than their element size are automatically recognised as bit ranges as well.</p>
+</pre><p> Registers which share the starting address with a bit range and have a width smaller than their element size are automatically recognised as bit ranges as well. The same <code>children</code> mechanism is also available per channel of a 2D register (see <a class="el" href="jmap.html#jmap_channel_bitfields">Channel bit fields</a>).</p>
 <h1><a class="anchor" id="jmap_metadata"></a>
 Metadata</h1>
 <p>The <code>metadata</code> object can carry any number of key-value pairs describing the firmware. Keys are required to be non-empty and must not start with an underscore. All entries are collected into the metadata catalogue and can be queried by application code. Example: </p><pre class="fragment">"metadata": {

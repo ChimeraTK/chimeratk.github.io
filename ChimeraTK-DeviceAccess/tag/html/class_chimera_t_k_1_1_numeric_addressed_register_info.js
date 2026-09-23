@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_numeric_addressed_register_info =
 [
     [ "ChannelInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info" ],
     [ "DoubleBufferInfo", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info" ],
+    [ "SelectedBy", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_selected_by.html", "struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_selected_by" ],
     [ "Access", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0", [
       [ "READ_ONLY", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44", null ],
       [ "WRITE_ONLY", "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0ad8fddf06187e680ab5a6355f76a17357", null ],
