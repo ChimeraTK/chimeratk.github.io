@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('_exception_dummy_backend_8cc_source.ht
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span>(parameters[<span class="stringliteral">&quot;map&quot;</span>].empty()) {</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;No map file name given.&quot;</span>);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> boost::shared_ptr&lt;DeviceBackend&gt;(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a>(parameters[<span class="stringliteral">&quot;map&quot;</span>]));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> boost::shared_ptr&lt;DeviceBackend&gt;(<span class="keyword">new</span> <a class="code hl_class" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a>(parameters[<span class="stringliteral">&quot;map&quot;</span>], parameters[<span class="stringliteral">&quot;DataConsistencyKeys&quot;</span>]));</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
 </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>

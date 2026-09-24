@@ -6,7 +6,7 @@ var searchData=
   ['of_20elements_20and_20bytes_20per_20element_3',['Number of elements and bytes per element',['../jmap.html#jmap_elements',1,'']]],
   ['of_20plugins_4',['List of plugins',['../lmap.html#plugins_reference',1,'']]],
   ['of_20scope_3a_20buf0_20buf1_20buffer_20views_5',['Out of scope: BUF0/BUF1 buffer views',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md4',1,'']]],
-  ['of_20xdma_20driver_20interfaces_6',['Mapping of XDMA driver interfaces',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md33',1,'']]],
+  ['of_20xdma_20driver_20interfaces_6',['Mapping of XDMA driver interfaces',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md37',1,'']]],
   ['offset_7',['offset',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ab6c06545528a6d1e5aa6ca51798038ca',1,'ChimeraTK::DummyBackend::AddressRange::offset'],['../structdevice__ioctrl__data.html#a4591ed737a751c9edda235df064c1038',1,'device_ioctrl_data::offset']]],
   ['offset_5frw_8',['offset_rw',['../structdevice__rw.html#a5133ec0381123d5e40dcf7231a05f2d9',1,'device_rw']]],
   ['offsettonext_9',['offsetToNext',['../struct_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor_1_1_channel_group_1_1_channel.html#a8dcc1c43450018144fe407097f8b7a2e',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor::ChannelGroup::Channel']]],

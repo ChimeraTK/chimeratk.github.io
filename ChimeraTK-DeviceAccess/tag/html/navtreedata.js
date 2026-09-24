@@ -47,6 +47,11 @@ var NAVTREE =
       [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md13", null ],
       [ "Alternatives considered", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md14", null ]
     ] ],
+    [ "CR-004: Tests for data consistency keys in double-buffered registers", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html", [
+      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html#autotoc_md16", null ],
+      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html#autotoc_md17", null ],
+      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html#autotoc_md18", null ]
+    ] ],
     [ "Using and creating custom backends", "custom_backends.html", [
       [ "Writing Dummies: Extending the DummyBackend", "custom_backends.html#writing_dummies", null ],
       [ "The Plugin Mechanism", "custom_backends.html#plugin_mechanism", [
@@ -159,11 +164,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html", [
-      [ "Prerequisites", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md32", null ],
-      [ "Mapping of XDMA driver interfaces", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md33", [
-        [ "AXI-Lite Master interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md34", null ],
-        [ "AXI MM DMA interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md35", null ],
-        [ "Interrupt lines (events)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md36", null ]
+      [ "Prerequisites", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md36", null ],
+      [ "Mapping of XDMA driver interfaces", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md37", [
+        [ "AXI-Lite Master interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md38", null ],
+        [ "AXI MM DMA interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md39", null ],
+        [ "Interrupt lines (events)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md40", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -233,19 +238,19 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html#a55b1901a2df558c2b6287edb8312b818",
 "class_invalid_dummy_backend.html#aefb4dc53a4f413ddf44ecf90fdff97a3",
 "functions_func_g.html",
-"namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404ac30f9bfedd3b51210afc21ec78115a5c",
-"pciedev__io__compat_8h.html#a198b5f4fef9dff99b6c27836f972bc19",
-"struct_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher_1_1_target_element.html#a2ce5393c8c8463807f6aee3f4876f63a",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#aadf6d012d297b5db5a406beea2caf791",
-"struct_chimera_t_k_1_1_test_capabilities.html#aa3dab38a857fe9e27addf23ee0e7e6d3",
-"struct_double_buffered_named_channel_slice.html#a9417efe24ec6a374504c368c5deb07ed",
-"struct_muxed_area1.html#aaa7ad11a3852f7500a3d6405f1b51594",
-"struct_reg_bit_range_descriptor.html#a65c76ad4e1c71c60750bf1e532271ed8",
-"struct_reg_word_firmware_forced_read_only.html",
-"struct_triggered_int.html#a12c243d3998b62d002bac0c0b3140892",
-"test_float_raw_data_8cpp.html",
-"test_n_d_register_accessor_decorator_8cpp.html",
-"test_sub_array_accessor_decorator_8cc.html#a2ba06a91e2d40d2f34fe91578c38e000"
+"namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a627260661666f193d5a48346f76699d1",
+"parser_utilities_8h_source.html",
+"struct_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher_1_1_target_element.html",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a95196fea2b405e7b9fb5f1867b537ae3",
+"struct_chimera_t_k_1_1_test_capabilities.html#a907ab313b30bcb0a5196c8bf477b3985",
+"struct_double_buffered_named_channel_slice.html#a7fc85fffff64046efa279259196cc8b2",
+"struct_muxed_area1.html#a7b93e1488a010c040753838b450a2616",
+"struct_reg_bit_range_descriptor.html#a22641e8d2b0c461d329f6a8ab2da98ad",
+"struct_reg_word_firmware_as_parameter_in_math.html#aab163e3ef245cd6be8715bbc4516304d",
+"struct_throw_test_fixture.html#a70f896a1a667afc8bc20007bdfd6ea6c",
+"test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7",
+"test_multiplexed_data_accesor_8cpp.html#aa6dab7c57c4247a08481606eaab2f1f2",
+"test_shared_dummy_backend_unified_ext_8cpp.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -93,12 +93,12 @@ $(document).ready(function(){initNavTree('spec__data_consistency_key_mapping.htm
   <div class="headertitle"><div class="title">Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md16"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md20"></a>
 A. Introduction</h2>
 <p>The <a class="el" href="class_chimera_t_k_1_1_data_consistency_group.html" title="Group several registers (= TransferElement) which ensures data consistency across multiple variables ...">DataConsistencyGroup</a> allows to ensure consistency of the values read through different accessors. For this matching, the <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a> is used as a key. The <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a> is only valid within the same <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> application process, so when transporting data via a <a class="el" href="class_chimera_t_k_1_1_device_backend.html" title="The base class for backends providing IO functionality for the Device class.">DeviceBackend</a>, the VersionNumbers have to be mapped to/from some other key, such as the DOOCS Event ID or a timestamp. This key can either be shipped as metadata attached to the payload data, if this is foreseen in the protocol (as e.g. in the case of DOOCS), or it may be shipped in a separate register (as e.g. in case of an XDMA device with an interrupt).</p>
 <p>In this document, the exact behaviour of this mapping is specified and the architecture of the implementation is laid out. Please note, only the read direction is for now covered by the implementation and this specification.</p>
 <p>Note: Albeit gramatically incorrect, plural forms of class names are written with apostrophes throughout this document, so the class name is properly highlighted by Doxygen and linked to the class documentation.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 B. Behavioural specification</h2>
 <ul>
 <li>1. The <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_realm.html">DataConsistencyRealm</a> is a mapping of <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_key.html">DataConsistencyKey</a> to <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a><ul>
@@ -166,14 +166,14 @@ B. Behavioural specification</h2>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md18"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 Comments</h3>
 <ul>
 <li><a class="anchor" id="DataConsistencyKeyMapping_comment_B_3_1_3_2"></a><a class="el" href="spec__data_consistency_key_mapping.html#DataConsistencyKeyMapping_B_3_1_3_2">3.1.3.2</a> This can happen since the first time a particular key is encountered may happen on different variables and even backends each time.</li>
 <li><a class="anchor" id="DataConsistencyKeyMapping_comment_B_3_1_4"></a><a class="el" href="spec__data_consistency_key_mapping.html#DataConsistencyKeyMapping_B_3_1_4">3.1.4</a> Giving out a <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a>{nullptr} would violate the DeviceAccess <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a> specification.</li>
 <li><a class="anchor" id="DataConsistencyKeyMapping_comment_B_3_3_3_1"></a><a class="el" href="spec__data_consistency_key_mapping.html#DataConsistencyKeyMapping_B_3_3_3_1">3.3.3.1</a> This is the case for <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a>{nullptr} and valid <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation.">VersionNumber</a>'s which have been created before calling open() of the backend.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 C. Implementation for the AsyncNDRegisterAccessor</h2>
 <p>The following diagram shows the integration of the <a class="el" href="class_chimera_t_k_1_1async_1_1_data_consistency_realm.html">DataConsistencyRealm</a> with the <a class="el" href="class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> and <a class="el" href="class_chimera_t_k_1_1async_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities:">AsyncAccessorManager</a> concept. The diagram is not complete and shows only the relevant parts. New classes and new or modified class members are shown in red.</p>
 <p>(Hint: Hover the mouse cursor over edge labels "see tooltip" to show the description.)</p>
