@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.16.01</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter<span id="projectnumber">&#160;01.16.02</span>
    </div>
   </td>
  </tr>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('_doocs_process_array_8h_source.html','
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    modified = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    sendToDevice(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    sendZMQ(getTimestamp());</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    sendAsync(getTimestamp());</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
 </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('_doocs_process_array_8h_source.html','
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      this-&gt;set_mpnum(_macroPulseNumberSource);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    sendZMQ(timestamp);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    sendAsync(timestamp);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  }</div>
 </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
@@ -283,8 +283,8 @@ $(document).ready(function(){initNavTree('_doocs_process_array_8h_source.html','
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_process_array_html_af2e9c0a771392dff4cc03436cb93b96f"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_array.html#af2e9c0a771392dff4cc03436cb93b96f">ChimeraTK::DoocsProcessArray::modified</a></div><div class="ttdeci">bool modified</div><div class="ttdoc">Flag whether the value has been modified since the content has been saved to disk the last time (see ...</div><div class="ttdef"><b>Definition</b> <a href="_doocs_process_array_8h_source.html#l00042">DoocsProcessArray.h:42</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_doocs_updater_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html">ChimeraTK::DoocsUpdater</a></div><div class="ttdoc">A class to synchronise DeviceToControlSystem variable to Doocs.</div><div class="ttdef"><b>Definition</b> <a href="_doocs_updater_8h_source.html#l00028">DoocsUpdater.h:28</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html">ChimeraTK::PropertyBase</a></div><div class="ttdoc">Base class used for all properties.</div><div class="ttdef"><b>Definition</b> <a href="_property_base_8h_source.html#l00030">PropertyBase.h:30</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html_a45099985e233e53f1affe25d1609b0ed"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html#a45099985e233e53f1affe25d1609b0ed">ChimeraTK::PropertyBase::setupOutputVar</a></div><div class="ttdeci">void setupOutputVar(TransferElementAbstractor &amp;processVar)</div><div class="ttdoc">should be called for output vars mapped to doocs registers processVar in data consistency group,...</div><div class="ttdef"><b>Definition</b> <a href="_property_base_8h_source.html#l00123">PropertyBase.h:123</a></div></div>
-<div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html_aa8c117c4f68363e9c8ff1cb1ed752b37"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html#aa8c117c4f68363e9c8ff1cb1ed752b37">ChimeraTK::PropertyBase::_doocsPropertyName</a></div><div class="ttdeci">std::string _doocsPropertyName</div><div class="ttdef"><b>Definition</b> <a href="_property_base_8h_source.html#l00109">PropertyBase.h:109</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html_a45099985e233e53f1affe25d1609b0ed"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html#a45099985e233e53f1affe25d1609b0ed">ChimeraTK::PropertyBase::setupOutputVar</a></div><div class="ttdeci">void setupOutputVar(TransferElementAbstractor &amp;processVar)</div><div class="ttdoc">should be called for output vars mapped to doocs registers processVar in data consistency group,...</div><div class="ttdef"><b>Definition</b> <a href="_property_base_8h_source.html#l00127">PropertyBase.h:127</a></div></div>
+<div class="ttc" id="aclass_chimera_t_k_1_1_property_base_html_aa8c117c4f68363e9c8ff1cb1ed752b37"><div class="ttname"><a href="class_chimera_t_k_1_1_property_base.html#aa8c117c4f68363e9c8ff1cb1ed752b37">ChimeraTK::PropertyBase::_doocsPropertyName</a></div><div class="ttdeci">std::string _doocsPropertyName</div><div class="ttdef"><b>Definition</b> <a href="_property_base_8h_source.html#l00110">PropertyBase.h:110</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition</b> <a href="basename_from_address_8h_source.html#l00007">basenameFromAddress.h:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

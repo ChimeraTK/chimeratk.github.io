@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"struct_chimera_t_k_1_1_image_description.html#af0ee2a5c2be44be18961a507dc699f6b":[2,0,0,15,4],
+"struct_chimera_t_k_1_1_image_description.html#af7d7ebd624213530ec3d5f4b4cdf470c":[3,0,0,15,1],
 "struct_chimera_t_k_1_1_image_description.html#af7d7ebd624213530ec3d5f4b4cdf470c":[2,0,0,15,1],
 "struct_chimera_t_k_1_1_location_info.html":[2,0,0,16],
 "struct_chimera_t_k_1_1_location_info.html":[3,0,0,16],
@@ -247,6 +249,5 @@ var NAVTREEINDEX4 =
 "test_variable_mapper_8cpp.html#ae40e338148a7657ff1b59518cc5959cc":[4,0,0,0,4,2,31,5],
 "test_variable_mapper_8cpp.html#af8c05f1099b6e39241d27c05cac65fe4":[4,0,0,0,4,2,31,4],
 "test_variable_mapper_8cpp.html#afbd763163476492fbf3cc6a33747c357":[4,0,0,0,4,2,31,7],
-"test_variable_mapper_8cpp_source.html":[4,0,0,0,4,2,31],
-"todo.html":[1]
+"test_variable_mapper_8cpp_source.html":[4,0,0,0,4,2,31]
 };

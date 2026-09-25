@@ -11,7 +11,7 @@ var class_chimera_t_k_1_1_property_base =
     [ "publishZeroMQ", "class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946", null ],
     [ "registerVariable", "class_chimera_t_k_1_1_property_base.html#a8f3f7dcd1a6a28f05968f8983894e90e", null ],
     [ "sendArrayToDevice", "class_chimera_t_k_1_1_property_base.html#a689f5b25f1e3415f82953839d0a145de", null ],
-    [ "sendZMQ", "class_chimera_t_k_1_1_property_base.html#adc83cf086f9caac0f5612795eb68a3f9", null ],
+    [ "sendAsync", "class_chimera_t_k_1_1_property_base.html#a2d8133a29be5fde4dcdfc8b0491e349c", null ],
     [ "setIsWriteableSource", "class_chimera_t_k_1_1_property_base.html#aa404c7c9df224724869685a263adf0e5", null ],
     [ "setMacroPulseNumberSource", "class_chimera_t_k_1_1_property_base.html#af9ea0909d8c596fd5d7930c3f9194f2b", null ],
     [ "setMacroPulseNumberSource", "class_chimera_t_k_1_1_property_base.html#a2b9757c2844c0a7f1c0127f59c47b046", null ],
@@ -31,6 +31,7 @@ var class_chimera_t_k_1_1_property_base =
     [ "_macroPulseNumberSource", "class_chimera_t_k_1_1_property_base.html#a58e96e3146b498eaa8436f255fa1802d", null ],
     [ "_nDataLossWarnings", "class_chimera_t_k_1_1_property_base.html#a7226e87348331ab527255e37b8f9d6b0", null ],
     [ "_outputVarForVersionNum", "class_chimera_t_k_1_1_property_base.html#af95d5c88121971ef53af9a495326362f", null ],
-    [ "_publishZMQ", "class_chimera_t_k_1_1_property_base.html#a5ce2aea8fa82cfe47100215fa85687b1", null ],
+    [ "_publishAsync", "class_chimera_t_k_1_1_property_base.html#a8e19b46a5721ee6b144e6f969131431d", null ],
+    [ "_publishLegacyZMQ", "class_chimera_t_k_1_1_property_base.html#a709b05f1831d96ba67a737fb345790b1", null ],
     [ "_sharedPVSubscriptions", "class_chimera_t_k_1_1_property_base.html#a975387d81d2a7dc8565cfd3d9d6584b8", null ]
 ];
