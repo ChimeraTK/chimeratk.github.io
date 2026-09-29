@@ -12,8 +12,15 @@ var test_json_map_file_parser_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a5d2925d062ecb791d146b5b43181bd14", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a179c9f4088b09607e44db15ec82bbdb3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a9cfa064b42f695997cd407fc67c27150", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#ae645e79012a1bf4619e3b110911a72ab", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a43f28f32a78623cefbdadfb799b8b4f3", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a884dcf1b3f59bb1e18f5ce21b1f5fb12", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a63c42218d2118adfcfba1e31ac866f8e", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a59f6ebfe53cadfa277f62cb51e48e9b6", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a6b867a3e8e03b85089246e32348b7cae", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a9fc660a647ba2287f4b293f5c0181e29", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a9fc660a647ba2287f4b293f5c0181e29", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a404ec8eaa1a194d552ee2bfcb651ca2b", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a4ef4f01adeac08bf52df46a435c62633", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a57e5d0d290a4b998cfea7009ea34f41f", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a98060acaa5dbb3406bff53a487046458", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a7b2225a30d3332561b83e9e294bd6155", null ]
 ];

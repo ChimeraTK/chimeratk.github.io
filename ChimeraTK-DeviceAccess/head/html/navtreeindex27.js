@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"struct_chimera_t_k_1_1_test_capabilities.html#a787788bb501c2879b17215cbe2afe602":[24,0,1,117,0],
 "struct_chimera_t_k_1_1_test_capabilities.html#a907ab313b30bcb0a5196c8bf477b3985":[24,0,1,117,17],
 "struct_chimera_t_k_1_1_test_capabilities.html#a907ab313b30bcb0a5196c8bf477b3985":[26,0,1,112,17],
 "struct_chimera_t_k_1_1_test_capabilities.html#a94b3c495d3f67fd57a4065d1ccb8d5db":[26,0,1,112,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "struct_double_buffered_named_channel_slice.html#a5339d1928e3961d00941dc95e8246ce8":[26,0,65,8],
 "struct_double_buffered_named_channel_slice.html#a596bc28564af1e7e0553a6d1e1797a9f":[26,0,65,10],
 "struct_double_buffered_named_channel_slice.html#a5ffa1544ef08f79512e262339e80ce34":[26,0,65,6],
-"struct_double_buffered_named_channel_slice.html#a67ccce986a81d3ceb81c108210d23bfa":[26,0,65,1],
-"struct_double_buffered_named_channel_slice.html#a72ca9f0d39978c9ce4651054157c783e":[26,0,65,4]
+"struct_double_buffered_named_channel_slice.html#a67ccce986a81d3ceb81c108210d23bfa":[26,0,65,1]
 };

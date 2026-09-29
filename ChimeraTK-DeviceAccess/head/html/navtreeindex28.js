@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"struct_double_buffered_named_channel_slice.html#a72ca9f0d39978c9ce4651054157c783e":[26,0,65,4],
 "struct_double_buffered_named_channel_slice.html#a7fc85fffff64046efa279259196cc8b2":[26,0,65,0],
 "struct_double_buffered_named_channel_slice.html#a82eaf84f304514a1b8f7bd6cf8b185e6":[26,0,65,5],
 "struct_double_buffered_named_channel_slice.html#a8698c348731d1de1aa2146bca9ad5b1b":[26,0,65,15],
@@ -29,13 +30,13 @@ var NAVTREEINDEX28 =
 "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html":[26,0,68,0],
 "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html#a6bd63332fea85a457e1d5b21dd5473d6":[26,0,68,0,0],
 "struct_dummy_for_cleanup_check.html":[26,0,69],
-"struct_dummy_for_cleanup_check.html#a4ab8722bfdc816e50b5a96f0223dc10f":[26,0,69,1],
 "struct_dummy_for_cleanup_check.html#a4ab8722bfdc816e50b5a96f0223dc10f":[26,0,69,2],
+"struct_dummy_for_cleanup_check.html#a4ab8722bfdc816e50b5a96f0223dc10f":[26,0,69,1],
 "struct_dummy_for_cleanup_check.html#a7d3c15281246ec70a9977004d4fb02c3":[26,0,69,4],
 "struct_dummy_for_cleanup_check.html#a8de9798a3812048a88bdf7b3d29d5789":[26,0,69,3],
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html":[26,0,69,0],
-"struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[26,0,69,0,1],
 "struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[26,0,69,0,0],
+"struct_dummy_for_cleanup_check_1_1_backend_registerer.html#a1899dc72560fec084543f629574cbf56":[26,0,69,0,1],
 "struct_dummy_for_double_buffering.html":[26,0,70],
 "struct_dummy_for_double_buffering.html#a08de5d5364bdbc98d071e2601470a9e3":[26,0,70,3],
 "struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a":[26,0,70,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "struct_muxed_area1.html#a0a4df31233c38aadcad63882849d6edb":[26,0,126,1],
 "struct_muxed_area1.html#a0b2a743b75a74150ef5af457852012b5":[26,0,126,6],
 "struct_muxed_area1.html#a0b2a743b75a74150ef5af457852012b5":[26,0,126,7],
-"struct_muxed_area1.html#a0c6329e69c3f227447901dabe3d6fce6":[26,0,126,13],
 "struct_muxed_area1.html#a0c6329e69c3f227447901dabe3d6fce6":[26,0,126,12]
 };

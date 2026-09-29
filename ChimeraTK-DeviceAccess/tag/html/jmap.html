@@ -220,6 +220,25 @@ Conditional register selection</h2>
     },
   },
 }
+</pre><h3><a class="anchor" id="jmap_module_selection_inheritance"></a>
+Module-Level Selection Inheritance</h3>
+<p>It is possible to declare a <code>selectedBy</code> on a <b>module</b> or a parent register with children. This selection criterion is <b>inherited</b> by all descendant registers and channels that do not declare their own <code>selectedBy</code>. The nearest ancestor's <code>selectedBy</code> takes precedence.</p>
+<p>Example: </p><pre class="fragment">"addressSpace": {
+  "MODULE": {
+    "selectedBy": { "register": "APP.OUTPUT_SELECT", "value": 3 },
+    "children": {
+      "REG_A": {
+        "address": { "channel": 0, "offset": 32 },          // Inherits MODULE's selectedBy
+        "representation": { "type": "fixedPoint", "width": 32 }
+      },
+      "REG_B": {                                            // Own selectedBy overrides
+        "selectedBy": { "register": "CTRL.MODE", "value": 9 },
+        "address": { "channel": 0, "offset": 36 },
+        "representation": { "type": "fixedPoint", "width": 32 }
+      }
+    }
+  }
+}
 </pre><h1><a class="anchor" id="jmap_modules"></a>
 Modules and hierarchical names</h1>
 <h2><a class="anchor" id="jmap_simple_modules"></a>
@@ -386,7 +405,7 @@ Conditional channels</h3>
     "representation": { "type": "fixedPoint", "width": 32 }
   }
 }
-</pre><p> Specifying <code>selectedBy</code> on a register that also has per-channel <code>channels</code> (a 2D register) is rejected, since for 2D registers the selector is given per channel (see <a class="el" href="jmap.html#jmap_channel_selection">Conditional channels</a>).</p>
+</pre><p> Specifying <code>selectedBy</code> on a register that also has per-channel <code>channels</code> (a 2D register) is <b>valid</b>: it serves as the default selection for all channels that do not declare their own <code>selectedBy</code> (see <a class="el" href="jmap.html#jmap_channel_selection">Conditional channels</a> and <a class="el" href="jmap.html#jmap_module_selection_inheritance">Module-Level Selection Inheritance</a>). Per-channel <code>selectedBy</code> declarations always override this register-level default.</p>
 <p>For a hardware multiplexer, several mutually exclusive scalar alternatives can be declared as separate registers that share the same <code>address</code> and differ only in their <code>selectedBy</code> <code>value</code>. Only one of them is active at a time, selected by the selector register: </p><pre class="fragment">"addressSpace": {
   "SINGLE_MUXED":     { "numberOfElements": 1, "selectedBy": { "register": "DAQ.MUX_SEL", "value": 0 }, "address": { "channel": 0, "offset": 1246 }, "bytesPerElement": 4, "representation": { "type": "fixedPoint", "width": 32 } },
   "SINGLE_MUXED_ALT": { "numberOfElements": 1, "selectedBy": { "register": "DAQ.MUX_SEL", "value": 1 }, "address": { "channel": 0, "offset": 1246 }, "bytesPerElement": 4, "representation": { "type": "fixedPoint", "width": 32 } }

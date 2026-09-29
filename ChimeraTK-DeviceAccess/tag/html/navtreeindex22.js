@@ -158,6 +158,7 @@ var NAVTREEINDEX22 =
 "jmap.html#jmap_fundamentals":[12,0],
 "jmap.html#jmap_interrupts":[12,3,0],
 "jmap.html#jmap_metadata":[12,4],
+"jmap.html#jmap_module_selection_inheritance":[12,1,5,0],
 "jmap.html#jmap_modules":[12,2],
 "jmap.html#jmap_references":[12,5],
 "jmap.html#jmap_register":[12,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "namespace_chimera_t_k.html#a2db8c6ae93688eec6c9d11b59a76286f":[24,0,1,173],
 "namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404":[24,0,1,180],
 "namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a08415b81fed4feed7d982c9919ac08ee":[24,0,1,180,3],
-"namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2a6ec0dac8730c09dba12f860dbbad12":[24,0,1,180,2],
-"namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2bb1e3c71aa95f3c3463fdf7b2577ea7":[24,0,1,180,10]
+"namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2a6ec0dac8730c09dba12f860dbbad12":[24,0,1,180,2]
 };
