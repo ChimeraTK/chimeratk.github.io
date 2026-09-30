@@ -1,4 +1,6 @@
 var files_dup =
 [
-    [ "sources", "dir_08d237fc27d4ecd563f71c5d52f2fecc.html", "dir_08d237fc27d4ecd563f71c5d52f2fecc" ]
+    [ "cmake", "dir_a5bdbfbbaa7895161d62825676df7980.html", "dir_a5bdbfbbaa7895161d62825676df7980" ],
+    [ "src", "dir_68267d1309a1af8e8297ef4c3efbcdba.html", "dir_68267d1309a1af8e8297ef4c3efbcdba" ],
+    [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ]
 ];

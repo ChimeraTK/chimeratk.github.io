@@ -352,13 +352,13 @@ write() functions before reading from resp. after writing to the buffer.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.readNonBlocking" title="deviceaccess.ScalarRegisterAccessor.readNonBlocking"><code class="xref py py-obj docutils literal notranslate"><span class="pre">readNonBlocking</span></code></a>(self)</p></td>
 <td><p>Read the next value, if available in the input buffer.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.set" title="deviceaccess.ScalarRegisterAccessor.set"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></a>(*args, **kwargs)</p></td>
-<td><p>Overloaded function.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.set" title="deviceaccess.ScalarRegisterAccessor.set"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></a>(self, val)</p></td>
+<td><p>Set the scalar value.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.setAndWrite" title="deviceaccess.ScalarRegisterAccessor.setAndWrite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setAndWrite</span></code></a>(self, newValue, int, int, int, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.setAndWrite" title="deviceaccess.ScalarRegisterAccessor.setAndWrite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setAndWrite</span></code></a>(self, newValue, versionNumber)</p></td>
 <td><p>Convenience function to set and write new value.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.setAsCooked" title="deviceaccess.ScalarRegisterAccessor.setAsCooked"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setAsCooked</span></code></a>(self, value, int, int, int, int, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.setAsCooked" title="deviceaccess.ScalarRegisterAccessor.setAsCooked"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setAsCooked</span></code></a>(self, value)</p></td>
 <td><p>Set the cooked values in case the accessor is a raw accessor (which does not do data conversion).</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.setDataValidity" title="deviceaccess.ScalarRegisterAccessor.setDataValidity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setDataValidity</span></code></a>(self, validity)</p></td>
@@ -370,7 +370,7 @@ write() functions before reading from resp. after writing to the buffer.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.writeDestructively" title="deviceaccess.ScalarRegisterAccessor.writeDestructively"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeDestructively</span></code></a>(self, versionNumber)</p></td>
 <td><p>Just like write(), but allows the implementation to destroy the content of the user buffer in the process.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.writeIfDifferent" title="deviceaccess.ScalarRegisterAccessor.writeIfDifferent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeIfDifferent</span></code></a>(self, newValue, int, int, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor.writeIfDifferent" title="deviceaccess.ScalarRegisterAccessor.writeIfDifferent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeIfDifferent</span></code></a>(self, newValue, versionNumber)</p></td>
 <td><p>Convenience function to set and write new value if it differs from the current value.</p></td>
 </tr>
 </tbody>
@@ -665,39 +665,14 @@ to be lock free. The return value will be always true in this mode.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="deviceaccess.ScalarRegisterAccessor.set">
-<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.set" title="Link to this definition"></a></dt>
-<dd><p>Overloaded function.</p>
-<ol class="arabic simple">
-<li><p>set(self: deviceaccess.ScalarRegisterAccessor, val: Union[ChimeraTK::Boolean, int, int, int, int, int, int, int, int, float, float, str]) -&gt; None</p></li>
-</ol>
-<p>Set the scalar value.</p>
+<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor" title="deviceaccess.ScalarRegisterAccessor"><span class="pre">deviceaccess.ScalarRegisterAccessor</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.set" title="Link to this definition"></a></dt>
+<dd><p>Set the scalar value.</p>
 <blockquote>
 <div><dl class="simple">
-<dt>Args:</dt><dd><p>val (int | float | bool | str): New value to set in the buffer.</p>
-</dd>
-<dt>Returns:</dt><dd><p>None: This function does not return a value.</p>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>val (int | float | bool | str | list | ndarray): New value to set in the buffer. A 1-element list or</dt><dd><p>array is also accepted.</p>
 </dd>
 </dl>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p>set(self: deviceaccess.ScalarRegisterAccessor, val: list) -&gt; None</p></li>
-</ol>
-<p>Set the scalar value from a list.</p>
-<blockquote>
-<div><dl class="simple">
-<dt>Args:</dt><dd><p>val (list): List containing a single value to set.</p>
-</dd>
-<dt>Returns:</dt><dd><p>None: This function does not return a value.</p>
-</dd>
-</dl>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p>set(self: deviceaccess.ScalarRegisterAccessor, val: numpy.ndarray) -&gt; None</p></li>
-</ol>
-<p>Set the scalar value from a numpy array.</p>
-<blockquote>
-<div><dl class="simple">
-<dt>Args:</dt><dd><p>val (ndarray): Array containing a single value to set.</p>
 </dd>
 <dt>Returns:</dt><dd><p>None: This function does not return a value.</p>
 </dd>
@@ -707,7 +682,7 @@ to be lock free. The return value will be always true in this mode.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="deviceaccess.ScalarRegisterAccessor.setAndWrite">
-<span class="sig-name descname"><span class="pre">setAndWrite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self:</span> <span class="pre">deviceaccess.ScalarRegisterAccessor,</span> <span class="pre">newValue:</span> <span class="pre">Union[ChimeraTK::Boolean,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">float,</span> <span class="pre">float,</span> <span class="pre">str],</span> <span class="pre">versionNumber:</span> <span class="pre">deviceaccess.VersionNumber</span> <span class="pre">=</span> <span class="pre">&lt;PyVersionNumber(versionNumber=v0)&gt;</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.setAndWrite" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">setAndWrite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self:</span> <span class="pre">deviceaccess.ScalarRegisterAccessor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newValue:</span> <span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">versionNumber:</span> <span class="pre">deviceaccess.VersionNumber</span> <span class="pre">=</span> <span class="pre">&lt;PyVersionNumber(versionNumber=v0)&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.setAndWrite" title="Link to this definition"></a></dt>
 <dd><p>Convenience function to set and write new value.</p>
 <blockquote>
 <div><p>If versionNumber is not specified, a new version number is generated.</p>
@@ -723,7 +698,7 @@ versionNumber (VersionNumber): Optional version number for the write operation.<
 
 <dl class="py method">
 <dt class="sig sig-object py" id="deviceaccess.ScalarRegisterAccessor.setAsCooked">
-<span class="sig-name descname"><span class="pre">setAsCooked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self:</span> <span class="pre">deviceaccess.ScalarRegisterAccessor,</span> <span class="pre">value:</span> <span class="pre">Union[ChimeraTK::Boolean,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">float,</span> <span class="pre">float,</span> <span class="pre">str]</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.setAsCooked" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">setAsCooked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.ScalarRegisterAccessor" title="deviceaccess.ScalarRegisterAccessor"><span class="pre">deviceaccess.ScalarRegisterAccessor</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.setAsCooked" title="Link to this definition"></a></dt>
 <dd><p>Set the cooked values in case the accessor is a raw accessor (which does not do data conversion).</p>
 <blockquote>
 <div><p>This converts to raw and writes the data to the user buffer. It does not do any read or write transfers.</p>
@@ -799,7 +774,7 @@ undefined data after calling this function.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="deviceaccess.ScalarRegisterAccessor.writeIfDifferent">
-<span class="sig-name descname"><span class="pre">writeIfDifferent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self:</span> <span class="pre">deviceaccess.ScalarRegisterAccessor,</span> <span class="pre">newValue:</span> <span class="pre">Union[ChimeraTK::Boolean,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">float,</span> <span class="pre">float,</span> <span class="pre">str],</span> <span class="pre">versionNumber:</span> <span class="pre">deviceaccess.VersionNumber</span> <span class="pre">=</span> <span class="pre">&lt;PyVersionNumber(versionNumber=v0)&gt;</span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.writeIfDifferent" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">writeIfDifferent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self:</span> <span class="pre">deviceaccess.ScalarRegisterAccessor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newValue:</span> <span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">versionNumber:</span> <span class="pre">deviceaccess.VersionNumber</span> <span class="pre">=</span> <span class="pre">&lt;PyVersionNumber(versionNumber=v0)&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.ScalarRegisterAccessor.writeIfDifferent" title="Link to this definition"></a></dt>
 <dd><p>Convenience function to set and write new value if it differs from the current value.</p>
 <blockquote>
 <div><p>The given version number is only used in case the value differs. If versionNumber is not specified,

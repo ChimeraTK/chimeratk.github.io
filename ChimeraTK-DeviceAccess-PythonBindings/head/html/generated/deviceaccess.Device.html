@@ -352,8 +352,8 @@ argument.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#deviceaccess.Device.setException" title="deviceaccess.Device.setException"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setException</span></code></a>(self, message)</p></td>
 <td><p>Set the device into an exception state.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.Device.write" title="deviceaccess.Device.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(*args, **kwargs)</p></td>
-<td><p>Overloaded function.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#deviceaccess.Device.write" title="deviceaccess.Device.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(self, registerPath, dataToWrite[, ...])</p></td>
+<td><p>Convenience function to write a register without obtaining an accessor.</p></td>
 </tr>
 </tbody>
 </table>
@@ -614,24 +614,18 @@ successfully been called again.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="deviceaccess.Device.write">
-<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deviceaccess.Device.write" title="Link to this definition"></a></dt>
-<dd><p>Overloaded function.</p>
-<ol class="arabic simple">
-<li><p>write(self: deviceaccess.Device, registerPath: str, dataToWrite: Union[List[List[ChimeraTK::Boolean]], List[List[int]], List[List[int]], List[List[int]], List[List[int]], List[List[int]], List[List[int]], List[List[int]], List[List[int]], List[List[float]], List[List[float]], List[List[str]]], wordOffsetInRegister: int = 0, accessModeFlags: list = [], dtype: object = None) -&gt; None</p></li>
-<li><p>write(self: deviceaccess.Device, registerPath: str, dataToWrite: Union[List[ChimeraTK::Boolean], List[int], List[int], List[int], List[int], List[int], List[int], List[int], List[int], List[float], List[float], List[str]], wordOffsetInRegister: int = 0, accessModeFlags: list = [], dtype: object = None) -&gt; None</p></li>
-<li><p>write(self: deviceaccess.Device, registerPath: str, dataToWrite: Union[ChimeraTK::Boolean, int, int, int, int, int, int, int, int, float, float, str], wordOffsetInRegister: int = 0, accessModeFlags: list = [], dtype: object = None) -&gt; None</p></li>
-</ol>
-<p>Convenience function to write a register without obtaining an accessor.</p>
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#deviceaccess.Device" title="deviceaccess.Device"><span class="pre">deviceaccess.Device</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">registerPath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataToWrite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">wordOffsetInRegister</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accessModeFlags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#object" title="(in Python v3.14)"><span class="pre">object</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#deviceaccess.Device.write" title="Link to this definition"></a></dt>
+<dd><p>Convenience function to write a register without obtaining an accessor.</p>
 <blockquote>
-<div><p>This method is overloaded to handle different data types. The appropriate overload is selected based on the
-type of dataToWrite.</p>
+<div><p>This method is overloaded to handle different data types and array dimensionalities. The appropriate overload
+is selected based on the register description in the catalogue.</p>
 <dl>
 <dt>Warning:</dt><dd><p>This function is inefficient as it creates and discards a register accessor in each call. For better
 performance, use register accessors instead:
 <a class="reference internal" href="#deviceaccess.Device.getScalarRegisterAccessor" title="deviceaccess.Device.getScalarRegisterAccessor"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getScalarRegisterAccessor()</span></code></a>, <a class="reference internal" href="#deviceaccess.Device.getOneDRegisterAccessor" title="deviceaccess.Device.getOneDRegisterAccessor"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getOneDRegisterAccessor()</span></code></a>, <a class="reference internal" href="#deviceaccess.Device.getTwoDRegisterAccessor" title="deviceaccess.Device.getTwoDRegisterAccessor"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getTwoDRegisterAccessor()</span></code></a>.</p>
 </dd>
 <dt>Args:</dt><dd><p>registerPath (str): Full path name of the register.
-dataToWrite (int | float | bool | str | ndarray): Data to write. Type determines operation:</p>
+dataToWrite (int | float | bool | str | ndarray): Data to write. Depending on register type (catalogue),</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Scalar (int, float, bool, str): Write a scalar value to a single-element register.</p></li>
@@ -641,9 +635,9 @@ dataToWrite (int | float | bool | str | ndarray): Data to write. Type determines
 </div></blockquote>
 <p>wordOffsetInRegister (int): Word offset in the register to skip initial elements (default: 0).
 accessModeFlags (list[<a class="reference internal" href="deviceaccess.AccessMode.html#deviceaccess.AccessMode" title="deviceaccess.AccessMode"><code class="xref py py-class docutils literal notranslate"><span class="pre">AccessMode</span></code></a>]): Optional flags to control register access (default: []).
-dtype (numpy.dtype | None): Optional data type override. If None, type is inferred from data (default:</p>
+dtype (type | numpy.dtype): Accepted for compatibility but ignored; the register type is always</p>
 <blockquote>
-<div><p>None).</p>
+<div><p>taken from the catalogue.</p>
 </div></blockquote>
 </dd>
 <dt>Examples:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ChimeraTK.DeviceAccess</span> <span class="k">as</span> <span class="nn">da</span>

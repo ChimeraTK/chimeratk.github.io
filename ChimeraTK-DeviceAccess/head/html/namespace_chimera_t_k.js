@@ -38,6 +38,11 @@ var namespace_chimera_t_k =
       [ "printStackTrace", "namespace_chimera_t_k_1_1_utilities.html#a2ece51d51220974672726b2d1f30ed62", null ],
       [ "shmDummyInstanceIdHash", "namespace_chimera_t_k_1_1_utilities.html#a49ba24611f93991206a0dfb26bd6ec38", null ]
     ] ],
+    [ "VersionInfo", "namespace_chimera_t_k_1_1_version_info.html", [
+      [ "applicationPatch", "namespace_chimera_t_k_1_1_version_info.html#addef4d05b344dea89cbd4e9141b0d256", null ],
+      [ "major", "namespace_chimera_t_k_1_1_version_info.html#a6aa207e422e3ff6627f125e35a759564", null ],
+      [ "minor", "namespace_chimera_t_k_1_1_version_info.html#a0e87c997cf0b7626a83e0814de0f149f", null ]
+    ] ],
     [ "AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", "class_chimera_t_k_1_1_access_mode_flags" ],
     [ "BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", "class_chimera_t_k_1_1_backend_factory" ],
     [ "BackendRegisterCatalogue", "class_chimera_t_k_1_1_backend_register_catalogue.html", "class_chimera_t_k_1_1_backend_register_catalogue" ],
@@ -254,6 +259,16 @@ var namespace_chimera_t_k =
     [ "compareHelper< double >", "namespace_chimera_t_k.html#a2900a37864e8877318baf6b76f76ef48", null ],
     [ "compareHelper< float >", "namespace_chimera_t_k.html#a0696347ee77c11e2986d8d745d5b08fe", null ],
     [ "compareHelper< std::string >", "namespace_chimera_t_k.html#a30d24f6ea4866dacebad82c6c15082d2", null ],
+    [ "convertPyArray", "namespace_chimera_t_k.html#a8759b5a8e651b0890160dd06ea10ff46", null ],
+    [ "convertPyArray2D", "namespace_chimera_t_k.html#a9e03adf0ff3241a3c0cd27aa7043ae30", null ],
+    [ "convertPyList", "namespace_chimera_t_k.html#a6ae6cbe43b699e27e58d423e68d57e5e", null ],
+    [ "convertPyObject", "namespace_chimera_t_k.html#a9b1caf7a010ced7dff1ba3f08169446e", null ],
+    [ "convertPyObject2D", "namespace_chimera_t_k.html#abb002154d4a0d5274fcacd8fd6361d19", null ],
+    [ "convertPyScalar", "namespace_chimera_t_k.html#a1bc0773bcec918656801e093a765a4dc", null ],
+    [ "convertScalarOptionalValue", "namespace_chimera_t_k.html#a2d422cbb911e8e872e0c8c8ff88473ac", null ],
+    [ "convertScalarValue", "namespace_chimera_t_k.html#a3890415fb763997c42c02eb91f26152c", null ],
+    [ "convertTypedPyArray", "namespace_chimera_t_k.html#a5fa5f406128c8680f41e26696104152d", null ],
+    [ "convertTypedPyArray2D", "namespace_chimera_t_k.html#a13f0cb590a1f93d2e70def7cb37b7414", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_RAW_TYPES", "namespace_chimera_t_k.html#aaac844adf1cf905695b2b182f70029ae", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_RAW_TYPES", "namespace_chimera_t_k.html#a93eef341f2bc23e20cccaf08598eac9f", null ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_RAW_TYPES", "namespace_chimera_t_k.html#ab27888d7db394a5670dbea990bccd3fa", null ],

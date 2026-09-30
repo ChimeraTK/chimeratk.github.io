@@ -5,6 +5,7 @@ var classtest_python_with_array_1_1_my_mod =
     [ "prepare", "classtest_python_with_array_1_1_my_mod.html#a68fcdfd6c9dfb760c189309e9ba90a78", null ],
     [ "myInput1", "classtest_python_with_array_1_1_my_mod.html#a6273edb5e1e1619a9a0dfa6afad9d504", null ],
     [ "myInput2", "classtest_python_with_array_1_1_my_mod.html#afc30feb3de003b99806fbcf81ee7abd3", null ],
+    [ "myInput3", "classtest_python_with_array_1_1_my_mod.html#a4ee61d4ff138330c6fae61ae3b39b9fc", null ],
     [ "myInputPoll", "classtest_python_with_array_1_1_my_mod.html#aeaa061f05ddf5690c034e0fb963e4136", null ],
     [ "myInputWB", "classtest_python_with_array_1_1_my_mod.html#a3a96328d48626dd913a361360c54be4f", null ],
     [ "myOutput1", "classtest_python_with_array_1_1_my_mod.html#a282202d3755329479b6cf0a48f0a6b70", null ],

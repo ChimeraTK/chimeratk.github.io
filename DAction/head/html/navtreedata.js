@@ -75,7 +75,7 @@ var NAVTREEINDEX =
 [
 "_action_adapter_8h.html",
 "class_d__fctarray_extended.html",
-"namespacemembers_func.html"
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

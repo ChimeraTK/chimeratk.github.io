@@ -11,9 +11,9 @@ var class_chimera_t_k_1_1_py_array_accessor =
     [ "getitem", "class_chimera_t_k_1_1_py_array_accessor.html#a0018a35b38723454b7dac740d386685c", null ],
     [ "getNElements", "class_chimera_t_k_1_1_py_array_accessor.html#a818f0a6bf4a59730ce7d910bc4f74c4e", null ],
     [ "readAndGet", "class_chimera_t_k_1_1_py_array_accessor.html#a856c3b484dde27fd812b089a15085f9c", null ],
-    [ "set", "class_chimera_t_k_1_1_py_array_accessor.html#a3a0a535d33d4e7494c9b8fb6e13cd91e", null ],
-    [ "setAndWrite", "class_chimera_t_k_1_1_py_array_accessor.html#a587d538e4ee5a1be43a308d7ae971979", null ],
-    [ "setitem", "class_chimera_t_k_1_1_py_array_accessor.html#abe10f0eefc21537334640d9bed99f82f", null ],
-    [ "setslice", "class_chimera_t_k_1_1_py_array_accessor.html#a7d1571eb2c35523d5a70ec738fcf8d7d", null ],
+    [ "set", "class_chimera_t_k_1_1_py_array_accessor.html#a6bcbad2d06563783efe838bc3ab4c222", null ],
+    [ "setAndWrite", "class_chimera_t_k_1_1_py_array_accessor.html#a1e7edda1ee3289c8ac8076d50d42e0da", null ],
+    [ "setitem", "class_chimera_t_k_1_1_py_array_accessor.html#a7b0acd22778340fe4062a7326ab70268", null ],
+    [ "setslice", "class_chimera_t_k_1_1_py_array_accessor.html#abd521936c8a512af8cc3dff948e9672e", null ],
     [ "_accessor", "class_chimera_t_k_1_1_py_array_accessor.html#ade15aad2e279fa82c0cea094bd98f619", null ]
 ];

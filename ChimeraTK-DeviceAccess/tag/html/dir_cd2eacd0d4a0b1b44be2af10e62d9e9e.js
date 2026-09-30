@@ -9,6 +9,7 @@ var dir_cd2eacd0d4a0b1b44be2af10e62d9e9e =
     [ "testDataConsistencyRealm.cpp", "test_data_consistency_realm_8cpp.html", "test_data_consistency_realm_8cpp" ],
     [ "testDevice.cpp", "test_device_8cpp.html", "test_device_8cpp" ],
     [ "testDeviceInfoMap.cpp", "test_device_info_map_8cpp.html", "test_device_info_map_8cpp" ],
+    [ "testDeviceToJmap.cc", "test_device_to_jmap_8cc.html", "test_device_to_jmap_8cc" ],
     [ "testDMapFileParser.cpp", "test_d_map_file_parser_8cpp.html", "test_d_map_file_parser_8cpp" ],
     [ "testDoubleBufferAccessor.cc", "test_double_buffer_accessor_8cc.html", "test_double_buffer_accessor_8cc" ],
     [ "testDoubleBuffering.cpp", "test_double_buffering_8cpp.html", "test_double_buffering_8cpp" ],

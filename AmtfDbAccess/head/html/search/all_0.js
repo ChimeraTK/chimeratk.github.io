@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['a_20href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_0',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
-  ['access_1',['Setup remote access',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md4',1,'']]],
-  ['actually_20listening_2',['Check if PostgreSQL is actually listening',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md1',1,'']]],
+  ['a_20href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_0',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md_doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['access_1',['Setup remote access',['../md_doc_2_database_setup.html#autotoc_md4',1,'']]],
+  ['actually_20listening_2',['Check if PostgreSQL is actually listening',['../md_doc_2_database_setup.html#autotoc_md1',1,'']]],
   ['addcavitytomodule_3',['addCavityToModule',['../classamtf_db_mod.html#a0481c413cbe0f9c8126325cb5b3b39e8',1,'amtfDbMod']]],
-  ['amtf_20xfel_20operational_20testing_4',['PostgreSQL database setup for AMTF / XFEL Operational testing',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html',1,'']]],
+  ['amtf_20xfel_20operational_20testing_4',['PostgreSQL database setup for AMTF / XFEL Operational testing',['../md_doc_2_database_setup.html',1,'']]],
   ['amtfdb_5',['amtfdb',['../classamtf_db.html',1,'amtfDb'],['../classamtf_db.html#a8dff544fd47e757cec819dacd82b6692',1,'amtfDb::amtfDb()'],['../classamtf_db.html#af540ee0b991ed1daa623a1c8a8efceeb',1,'amtfDb::amtfDb(const std::string &amp;_dbAddress, const std::string &amp;_dbName, const std::string &amp;_usrName, const std::string &amp;_usrPass)']]],
   ['amtfdb_2ecpp_6',['amtfDb.cpp',['../amtf_db_8cpp.html',1,'']]],
   ['amtfdb_2eh_7',['amtfDb.h',['../amtf_db_8h.html',1,'']]],
-  ['amtfdbaccess_20tt_20repository_8',['Using &lt;tt&gt;.sql&lt;/tt&gt; files in &lt;tt&gt;amtfdbaccess&lt;/tt&gt; repository',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md9',1,'']]],
+  ['amtfdbaccess_20tt_20repository_8',['Using &lt;tt&gt;.sql&lt;/tt&gt; files in &lt;tt&gt;amtfdbaccess&lt;/tt&gt; repository',['../md_doc_2_database_setup.html#autotoc_md9',1,'']]],
   ['amtfdbcav_9',['amtfdbcav',['../classamtf_db_cav.html',1,'amtfDbCav'],['../classamtf_db_cav.html#ac66d3dd93ee27be83f2b2a3b410ecbb0',1,'amtfDbCav::amtfDbCav()'],['../classamtf_db_cav.html#a3652ecb0f8a73331f89243b8e47ffe17',1,'amtfDbCav::amtfDbCav(const std::string &amp;_dbAddress, const std::string &amp;_dbName, const std::string &amp;_usrName, const std::string &amp;_usrPass)']]],
   ['amtfdbcav_2ecpp_10',['amtfDbCav.cpp',['../amtf_db_cav_8cpp.html',1,'']]],
   ['amtfdbcav_2eh_11',['amtfDbCav.h',['../amtf_db_cav_8h.html',1,'']]],
@@ -51,7 +51,7 @@ var searchData=
   ['amtfdbprovider_48',['amtfdbprovider',['../class_amtf_db_provider.html#a6a94621896178970082722fcc65ed4ea',1,'AmtfDbProvider::AmtfDbProvider()'],['../class_amtf_db_provider.html',1,'AmtfDbProvider']]],
   ['amtfdbprovider_2ecpp_49',['AmtfDbProvider.cpp',['../_amtf_db_provider_8cpp.html',1,'']]],
   ['amtfdbprovider_2eh_50',['AmtfDbProvider.h',['../_amtf_db_provider_8h.html',1,'']]],
-  ['authentication_51',['Setup proper authentication',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md2',1,'']]],
+  ['authentication_51',['Setup proper authentication',['../md_doc_2_database_setup.html#autotoc_md2',1,'']]],
   ['axistypebase_52',['axisTypeBase',['../classamtf_db_cav_1_1test_results_1_1vector_res_1_1axis_type_base.html',1,'amtfDbCav::testResults::vectorRes']]],
   ['axistypeline_53',['axistypeline',['../classamtf_db_cav_1_1test_results_1_1vector_res_1_1axis_type_line.html#af642617b42ac7b3ac687a31ffa71b139',1,'amtfDbCav::testResults::vectorRes::axisTypeLine::axisTypeLine()'],['../classamtf_db_cav_1_1test_results_1_1vector_res_1_1axis_type_line.html',1,'amtfDbCav::testResults::vectorRes::axisTypeLine']]]
 ];

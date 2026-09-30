@@ -25,17 +25,17 @@
 var NAVTREE =
 [
   [ "AmtfDbAccess", "index.html", [
-    [ "PostgreSQL database setup for AMTF / XFEL Operational testing", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html", [
-      [ "Check if PostgreSQL is actually listening", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md1", null ],
-      [ "Setup proper authentication", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md2", [
-        [ "Change <tt>postgres</tt> password to default (<a href=\"https://help.ubuntu.com/stable/serverguide/postgresql.html\" >via Ubuntu help</a>)", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3", null ],
-        [ "Setup remote access", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md4", null ]
+    [ "PostgreSQL database setup for AMTF / XFEL Operational testing", "md_doc_2_database_setup.html", [
+      [ "Check if PostgreSQL is actually listening", "md_doc_2_database_setup.html#autotoc_md1", null ],
+      [ "Setup proper authentication", "md_doc_2_database_setup.html#autotoc_md2", [
+        [ "Change <tt>postgres</tt> password to default (<a href=\"https://help.ubuntu.com/stable/serverguide/postgresql.html\" >via Ubuntu help</a>)", "md_doc_2_database_setup.html#autotoc_md3", null ],
+        [ "Setup remote access", "md_doc_2_database_setup.html#autotoc_md4", null ]
       ] ],
-      [ "Connecting to database", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md5", null ],
-      [ "Lack of instrumentation functions", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md6", null ],
-      [ "Backing up the database", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md7", null ],
-      [ "Restoring database", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md8", [
-        [ "Using <tt>.sql</tt> files in <tt>amtfdbaccess</tt> repository", "md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md9", null ]
+      [ "Connecting to database", "md_doc_2_database_setup.html#autotoc_md5", null ],
+      [ "Lack of instrumentation functions", "md_doc_2_database_setup.html#autotoc_md6", null ],
+      [ "Backing up the database", "md_doc_2_database_setup.html#autotoc_md7", null ],
+      [ "Restoring database", "md_doc_2_database_setup.html#autotoc_md8", [
+        [ "Using <tt>.sql</tt> files in <tt>amtfdbaccess</tt> repository", "md_doc_2_database_setup.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -74,7 +74,7 @@ var NAVTREEINDEX =
 [
 "_amtf_db_provider_8cpp.html",
 "classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html#a454b04a0bb08089a0bf1efa439ef466d",
-"functions_enum.html"
+"functions_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -13,7 +13,7 @@ var searchData=
   ['test_5ftuner_5fmotor_10',['TEST_TUNER_MOTOR',['../classamtf_db.html#af4446a68ef64d00c8bbc3269c3f0a860a996fdfba949c5b96a2e297f0b68f2478',1,'amtfDb']]],
   ['test_5ftype_11',['TEST_TYPE',['../classamtf_db.html#af4446a68ef64d00c8bbc3269c3f0a860',1,'amtfDb']]],
   ['test_5ftype_5ft_12',['test_type_t',['../classamtf_db.html#aac33a8f153cd7ba27d02371ea67c564e',1,'amtfDb']]],
-  ['testing_13',['PostgreSQL database setup for AMTF / XFEL Operational testing',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html',1,'']]],
+  ['testing_13',['PostgreSQL database setup for AMTF / XFEL Operational testing',['../md_doc_2_database_setup.html',1,'']]],
   ['testresults_14',['testResults',['../classamtf_db_cav_1_1test_results.html',1,'amtfDbCav']]],
   ['testresults_5fclosedloop_15',['testResults_closedLoop',['../classamtf_db_cav__closed_loop_1_1test_results__closed_loop.html',1,'amtfDbCav_closedLoop']]],
   ['testresults_5ffundmodes_16',['testResults_fundModes',['../classamtf_db_cav__fund_modes_1_1test_results__fund_modes.html',1,'amtfDbCav_fundModes']]],
@@ -24,10 +24,10 @@ var searchData=
   ['testresults_5fpiezodcscan_21',['testResults_piezoDcScan',['../classamtf_db_cav__piezo_dc_scan_1_1test_results__piezo_dc_scan.html',1,'amtfDbCav_piezoDcScan']]],
   ['testresults_5fpowercoupler_22',['testResults_powerCoupler',['../classamtf_db_cav__power_coupler_1_1test_results__power_coupler.html',1,'amtfDbCav_powerCoupler']]],
   ['testresults_5ftunermotor_23',['testResults_tunerMotor',['../classamtf_db_cav__tuner_motor_1_1test_results__tuner_motor.html',1,'amtfDbCav_tunerMotor']]],
-  ['the_20database_24',['Backing up the database',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md7',1,'']]],
-  ['to_20database_25',['Connecting to database',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md5',1,'']]],
-  ['to_20default_20a_20href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_26',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['the_20database_24',['Backing up the database',['../md_doc_2_database_setup.html#autotoc_md7',1,'']]],
+  ['to_20database_25',['Connecting to database',['../md_doc_2_database_setup.html#autotoc_md5',1,'']]],
+  ['to_20default_20a_20href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_26',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md_doc_2_database_setup.html#autotoc_md3',1,'']]],
   ['tostring_27',['tostring',['../classrdata.html#adeeda37ed0e3f9faacca83cc4c8c8801',1,'rdata::toString()'],['../classrdata_v.html#ac1dc971a01aa5d021d785524bbbbb4d7',1,'rdataV::toString()']]],
-  ['tt_20postgres_20tt_20password_20to_20default_20a_20href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_28',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md3',1,'']]],
-  ['tt_20sql_20tt_20files_20in_20tt_20amtfdbaccess_20tt_20repository_29',['Using &lt;tt&gt;.sql&lt;/tt&gt; files in &lt;tt&gt;amtfdbaccess&lt;/tt&gt; repository',['../md__2scratch_2dragon_2sources_2_amtf_db_access_2doc_2_database_setup.html#autotoc_md9',1,'']]]
+  ['tt_20postgres_20tt_20password_20to_20default_20a_20href_20https_3a_20help_20ubuntu_20com_20stable_20serverguide_20postgresql_20html_20via_20ubuntu_20help_20a_28',['Change &lt;tt&gt;postgres&lt;/tt&gt; password to default (&lt;a href=&quot;https://help.ubuntu.com/stable/serverguide/postgresql.html&quot; &gt;via Ubuntu help&lt;/a&gt;)',['../md_doc_2_database_setup.html#autotoc_md3',1,'']]],
+  ['tt_20sql_20tt_20files_20in_20tt_20amtfdbaccess_20tt_20repository_29',['Using &lt;tt&gt;.sql&lt;/tt&gt; files in &lt;tt&gt;amtfdbaccess&lt;/tt&gt; repository',['../md_doc_2_database_setup.html#autotoc_md9',1,'']]]
 ];

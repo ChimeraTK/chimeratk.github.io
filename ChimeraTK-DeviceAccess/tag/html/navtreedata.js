@@ -28,30 +28,6 @@ var NAVTREE =
     [ "First steps", "index.html#first_steps", null ],
     [ "Multi Value Registers (1D Register Accessors)", "accessor1d.html", null ],
     [ "2D Register Accessors", "accessor2d.html", null ],
-    [ "CR-001: Interrupt-driven reads on double-buffered registers (verification)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html", [
-      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md1", null ],
-      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md2", [
-        [ "How the path already works (no code change)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3", null ],
-        [ "Out of scope: BUF0/BUF1 buffer views", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md4", null ]
-      ] ],
-      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md5", null ]
-    ] ],
-    [ "CR-002: Test interrupt-driven reads on a double-buffered named channel", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html", [
-      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html#autotoc_md7", null ],
-      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html#autotoc_md8", null ],
-      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-002-inter5ee6fa1d1cb7114fd715d160bec4b9cb.html#autotoc_md9", null ]
-    ] ],
-    [ "CR-003: Support bit ranges in named channels of a 2D register", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html", [
-      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md11", null ],
-      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md12", null ],
-      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md13", null ],
-      [ "Alternatives considered", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md14", null ]
-    ] ],
-    [ "CR-004: Tests for data consistency keys in double-buffered registers", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html", [
-      [ "Requirements", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html#autotoc_md16", null ],
-      [ "Specifications", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html#autotoc_md17", null ],
-      [ "Test plan", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-004-data-d16bea3022a17866f7612c212e67aee1.html#autotoc_md18", null ]
-    ] ],
     [ "Using and creating custom backends", "custom_backends.html", [
       [ "Writing Dummies: Extending the DummyBackend", "custom_backends.html#writing_dummies", null ],
       [ "The Plugin Mechanism", "custom_backends.html#plugin_mechanism", [
@@ -165,19 +141,51 @@ var NAVTREE =
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
-    [ "XDMA backend", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html", [
-      [ "Prerequisites", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md36", null ],
-      [ "Mapping of XDMA driver interfaces", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md37", [
-        [ "AXI-Lite Master interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md38", null ],
-        [ "AXI MM DMA interface", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md39", null ],
-        [ "Interrupt lines (events)", "md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2xdma__backend.html#autotoc_md40", null ]
+    [ "XDMA backend", "md_doc_2xdma__backend.html", [
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md40", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md41", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md42", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md43", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md44", null ]
+      ] ]
+    ] ],
+    [ "Change Requests", "change_requests.html", [
+      [ "Index", "change_requests.html#change_requests_index", null ],
+      [ "CR-001: Interrupt-driven reads on double-buffered registers (verification)", "md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md1", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md2", [
+          [ "How the path already works (no code change)", "md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3", null ],
+          [ "Out of scope: BUF0/BUF1 buffer views", "md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md4", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md5", null ]
+      ] ],
+      [ "CR-002: Test interrupt-driven reads on a double-buffered named channel", "md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html#autotoc_md7", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html#autotoc_md8", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html#autotoc_md9", null ]
+      ] ],
+      [ "CR-003: Support bit ranges in named channels of a 2D register", "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md11", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md12", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md13", null ],
+        [ "Alternatives considered", "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md14", null ]
+      ] ],
+      [ "CR-004: Tests for data consistency keys in double-buffered registers", "md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html#autotoc_md16", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html#autotoc_md17", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html#autotoc_md18", null ]
+      ] ],
+      [ "CR-005: Tool to write a jmap file from a device catalogue", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md20", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md21", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md22", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
@@ -219,41 +227,41 @@ var NAVTREEINDEX =
 [
 "_access_mode_8cc.html",
 "_l_n_m_backend_bit_accessor_8cc.html#a8c9f67bf29e708e827da1dcb0376dcf0",
-"_sub_domain_8h_source.html",
-"accessor2_d__multiplexed_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
-"class_chimera_t_k_1_1_backend_register_info_base.html#a3f0665538d48ad46a558af532f647a72",
-"class_chimera_t_k_1_1_data_descriptor.html#aaab62545dad995c54e3ca0994df5a6e6",
-"class_chimera_t_k_1_1_device_info_map.html#a7876a112d9a343ead515c9ede6eb407e",
-"class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_bit_range_access_plugin.html#a007abdf0ae0ca4a030f41a9dc9aab132",
-"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af0f684eb43ab495074a0f1dd6c8b6b15",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac3778f93fd48c9073c1f8c2e1106e980",
-"class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html#a8924c545e7f3feff9763e31643d99ce1",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a8d73d9807e48cba323df752dcab39c6f",
-"class_chimera_t_k_1_1_rebot_backend.html#a3288127514c4650a38177443ea021281",
-"class_chimera_t_k_1_1_register_path.html#ac4b813fafa64ea898bc9b114291621a5",
-"class_chimera_t_k_1_1_subdevice_register_window_accessor.html#a464ddfb44bc0cb406458d25cd75f303b",
-"class_chimera_t_k_1_1_transfer_element_abstractor.html#abd8551b10b0f394763b5a250d1d5d53c",
-"class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_chimera_t_k_1_1_void_00_01std_1_1string_01_4.html#ae88453390ba133c8b54bde81466480ad",
-"class_chimera_t_k_1_1_unified_backend_test.html#ad387cb1c6bce5574bb2bc99f55273a0f",
-"class_chimera_t_k_1_1async_1_1_domain.html#aa68537a48ba1f10214400be834db2a5e",
-"class_chimera_t_k_1_1async_1_1_triggered_poll_distributor.html#a55b1901a2df558c2b6287edb8312b818",
-"class_invalid_dummy_backend.html#aefb4dc53a4f413ddf44ecf90fdff97a3",
-"functions_func_g.html",
-"namespace_chimera_t_k.html#a3014565c0fa0cadd5639c2a264790404a2bb1e3c71aa95f3c3463fdf7b2577ea7",
-"parser_utilities_8h.html#ae2b9a4195d7e35aeb3bf43b51d160fe6",
-"struct_chimera_t_k_1_1_copy_register_decorator_trait.html",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a920dab8b2fdf856fdcf6d35c43f68470",
-"struct_chimera_t_k_1_1_test_capabilities.html#a787788bb501c2879b17215cbe2afe602",
-"struct_double_buffered_named_channel_slice.html#a72ca9f0d39978c9ce4651054157c783e",
-"struct_muxed_area1.html#a0c6329e69c3f227447901dabe3d6fce6",
-"struct_reg_bit_range_descriptor.html#a0284fbf634a1dc0e1828a64ed663a2c6",
-"struct_reg_word_firmware_as_parameter_in_math.html#aaacfdd79fb5c749af656482893bc4561",
-"struct_throw_test_fixture.html",
-"test_exception_dummy_device_8cc.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_multiplexed_data_accesor_8cpp.html#a4e259e782eacba96582d3818f2a92987",
-"test_shared_dummy_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
-"use_custom_backend_8cpp_source.html"
+"_shared_dummy_backend_8h.html",
+"_xdma_backend_8cc_source.html",
+"class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html#a68383c00737bf770f7509bb21ca6a4a0",
+"class_chimera_t_k_1_1_data_descriptor.html",
+"class_chimera_t_k_1_1_device_file.html#a1a9b71e14fffb41effba59eb1017e788",
+"class_chimera_t_k_1_1_dummy_backend_base.html#a896685c8d5d0058ba9499a06ebb82561",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#ad2cec9cda3017970bbcb1fdc3e0d5cf6",
+"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a21432897852ea89ab69913c59baabff0",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a72f1bf37a09e7c088658d00ed8b83ac8",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#aef57505941eacbf57bf9db5f8680cfa1",
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44",
+"class_chimera_t_k_1_1_read_any_group_1_1_notification.html#ad459b4b963fd00043d1b8792f5104cb1",
+"class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#aa1c186bcc6d833ac92611b7e2b87fc8a",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html#a484eb9101cf36e01d4d31d0acd1b597b",
+"class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08",
+"class_chimera_t_k_1_1_unified_backend_test.html#a9c890ada4943fa0122974fac766461f8",
+"class_chimera_t_k_1_1async_1_1_data_consistency_realm.html#a351d8c5645cccbc74e90c598dc14c97b",
+"class_chimera_t_k_1_1async_1_1_sub_domain.html#a82218e475e9091590e43b675082004d6",
+"class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579",
+"examples.html",
+"md_doc_2xdma__backend.html#autotoc_md41",
+"namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e",
+"struct_bool_as_void.html#a1d58a0c9109bfa2f38513fab38b2643f",
+"struct_chimera_t_k_1_1_img_header.html#aaf9a47e6519ebbc4be090577b759e401",
+"struct_chimera_t_k_1_1_rebot_protocol1.html#a03ca701e16d90df9f0e7df26f6431f1c",
+"struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12",
+"struct_integers_signed32_async.html#a7b52eb221c1ef2a17f28c19e0b688921",
+"struct_numeric_addressed_low_level_transfer_element__start_address.html#ae88b5262632eb727221a29537226002b",
+"struct_reg_variable_as_push_parameter_in_math__not__written.html#afeec0df569889dfe85ab8773483ada31",
+"struct_static_core.html#a9f378f04e938c96995b98456be372630",
+"test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94",
+"test_l_map_math_plugin_8cpp.html",
+"test_raw_converter_8cpp.html#a8628c55cf246ce27ed360f2a0c529ad9",
+"test_type_changing_decorator_8cpp.html#a1633ee79166f0aa14e99de3e9ecabc16"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

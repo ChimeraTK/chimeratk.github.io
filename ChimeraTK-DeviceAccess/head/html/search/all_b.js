@@ -31,5 +31,5 @@ var searchData=
   ['historized_28',['historized',['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397babe4e3ce96e26f1bdbd090b9f725e7375',1,'ChimeraTK::DataConsistencyGroup']]],
   ['historizedmatcher_29',['historizedmatcher',['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#ac346ee5f1c2461d6cf0b373d1f22ec9e',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher::HistorizedMatcher()'],['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher']]],
   ['host_30',['host',['../struct_chimera_t_k_1_1_sdm.html#a9e79cc6b57adcf32f93544bf3903f68d',1,'ChimeraTK::Sdm']]],
-  ['how_20the_20path_20already_20works_20no_20code_20change_31',['How the path already works (no code change)',['../md__2scratch_2dragon_2sources_2_chimera_t_k-_device_access_2doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3',1,'']]]
+  ['how_20the_20path_20already_20works_20no_20code_20change_31',['How the path already works (no code change)',['../md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3',1,'']]]
 ];
