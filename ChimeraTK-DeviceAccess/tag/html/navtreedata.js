@@ -142,11 +142,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_2xdma__backend.html", [
-      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md40", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md41", [
-        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md42", null ],
-        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md43", null ],
-        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md44", null ]
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md44", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md45", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md46", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md47", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md48", null ]
       ] ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -179,6 +179,11 @@ var NAVTREE =
         [ "Requirements", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md20", null ],
         [ "Specifications", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md21", null ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md22", null ]
+      ] ],
+      [ "CR-006: JMAP file format version 1.0", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md24", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md25", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md26", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -248,20 +253,20 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1async_1_1_sub_domain.html#a82218e475e9091590e43b675082004d6",
 "class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579",
 "examples.html",
-"md_doc_2xdma__backend.html#autotoc_md41",
-"namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e",
-"struct_bool_as_void.html#a1d58a0c9109bfa2f38513fab38b2643f",
-"struct_chimera_t_k_1_1_img_header.html#aaf9a47e6519ebbc4be090577b759e401",
-"struct_chimera_t_k_1_1_rebot_protocol1.html#a03ca701e16d90df9f0e7df26f6431f1c",
-"struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12",
-"struct_integers_signed32_async.html#a7b52eb221c1ef2a17f28c19e0b688921",
-"struct_numeric_addressed_low_level_transfer_element__start_address.html#ae88b5262632eb727221a29537226002b",
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#afeec0df569889dfe85ab8773483ada31",
-"struct_static_core.html#a9f378f04e938c96995b98456be372630",
-"test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94",
-"test_l_map_math_plugin_8cpp.html",
-"test_raw_converter_8cpp.html#a8628c55cf246ce27ed360f2a0c529ad9",
-"test_type_changing_decorator_8cpp.html#a1633ee79166f0aa14e99de3e9ecabc16"
+"md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md25",
+"namespace_chimera_t_k_1_1numeric_1_1detail.html#a9927c2e82aca85ba76d04352878e25a8",
+"struct_bit_register_descriptor_base.html#a94976a1fc5762834bb1c02ebdc3f1e2a",
+"struct_chimera_t_k_1_1_img_header.html#a827899088d25d8b484eb705f02d51cb8",
+"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af",
+"struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9",
+"struct_integers_base.html#afb5638edbff91fb37a5918e69bd177b9",
+"struct_not_registering_plugin.html#a569a3484da2cce7f6e0b8dd5da572587",
+"struct_reg_variable_as_push_parameter_in_math__not__written.html#a8bac87eb74d2faa143279e34f6d7c54c",
+"struct_static_core.html#a754b38fd31e60f5c614f1d1ac48f1f01",
+"test_device_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd",
+"test_l_map_force_read_only_plugin_8cc.html#a139f00d2466d591f60b8d6a73c8273f1",
+"test_raw_converter_8cpp.html#a795e9642f0d39cf6115b2ba67261057c",
+"test_type_changing_decorator_8cpp.html#a01ea2705c55f2794b8d0b9e7bbae1230"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

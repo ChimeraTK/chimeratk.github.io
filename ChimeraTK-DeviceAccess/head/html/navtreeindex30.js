@@ -1,5 +1,9 @@
 var NAVTREEINDEX30 =
 {
+"struct_not_registering_plugin.html#a569a3484da2cce7f6e0b8dd5da572587":[23,0,142,0],
+"struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html":[23,0,143],
+"struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html#aadbf79334adff8ebd202681421e037dd":[23,0,143,0],
+"struct_numeric_addressed_low_level_transfer_element__start_address.html":[23,0,144],
 "struct_numeric_addressed_low_level_transfer_element__start_address.html#ae88b5262632eb727221a29537226002b":[23,0,144,0],
 "struct_one_d_register_descriptor_base.html":[23,0,145],
 "struct_one_d_register_descriptor_base.html#a5143e98191fef65137fc58e0b3974b35":[23,0,145,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX30 =
 "struct_reg_variable.html#a775241f87610112d5670f2101cebbcf0":[23,0,194,0],
 "struct_reg_variable.html#ae757cdc24117cb0cfce0093060ec3e85":[23,0,194,3],
 "struct_reg_variable_as_push_parameter_in_math__not__written.html":[23,0,195],
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#a0d4dd185b7e26f8027be64a2408f1a6d":[23,0,195,0],
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#a8bac87eb74d2faa143279e34f6d7c54c":[23,0,195,2],
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#aceff21409c9470117b8ae47010ea7e6f":[23,0,195,3],
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#ad6bae115fa1047c960afbd6db690f101":[23,0,195,4],
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#ae6b2991db4be2539d1fa4ba3aa9cfebd":[23,0,195,5]
+"struct_reg_variable_as_push_parameter_in_math__not__written.html#a0d4dd185b7e26f8027be64a2408f1a6d":[23,0,195,0]
 };

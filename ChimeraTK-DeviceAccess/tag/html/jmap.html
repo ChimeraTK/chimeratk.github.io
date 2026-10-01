@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('jmap.html',''); initResizable(); });
 <h1><a class="anchor" id="jmap_fundamentals"></a>
 Fundamental concepts</h1>
 <p>A JMAP file is a single JSON object with the following top-level keys: </p><ul>
-<li><code>mapFormatVersion</code> - a version string of the file format (currently <code>"0.0.1"</code>). </li>
+<li><code>mapFormatVersion</code> - a version string of the file format (currently <code>"1.0"</code>). </li>
 <li><code>metadata</code> - an object holding arbitrary key-value pairs describing the firmware (see <a class="el" href="jmap.html#jmap_metadata">Metadata</a>). </li>
 <li><code>interruptHandler</code> - a description of the interrupt controllers (see <a class="el" href="jmap.html#jmap_interrupts">Interrupts</a>). </li>
 <li><code>addressSpace</code> - the dictionary of registers and modules making up the register map (each key is a register/module name).</li>
@@ -111,7 +111,7 @@ Comments</h2>
 <p>JSON does not support comments natively. By convention, entries whose key starts with an underscore are treated as comments and ignored by the parser: </p><pre class="fragment">{
   "_": "This is a comment and is ignored",
   "_comment": "This is another comment and is ignored as well",
-  "mapFormatVersion": "0.0.1",
+  "mapFormatVersion": "1.0",
   "metadata": {},
   "interruptHandler": {},
   "addressSpace": {}

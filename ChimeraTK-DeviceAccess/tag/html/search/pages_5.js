@@ -12,6 +12,7 @@ var searchData=
   ['cr_20003_3a_20support_20bit_20ranges_20in_20named_20channels_20of_20a_202d_20register_9',['CR-003: Support bit ranges in named channels of a 2D register',['../md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html',1,'change_requests']]],
   ['cr_20004_3a_20tests_20for_20data_20consistency_20keys_20in_20double_20buffered_20registers_10',['CR-004: Tests for data consistency keys in double-buffered registers',['../md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html',1,'change_requests']]],
   ['cr_20005_3a_20tool_20to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_11',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
-  ['creating_20custom_20backends_12',['Using and creating custom backends',['../custom_backends.html',1,'']]],
-  ['custom_20backends_13',['Using and creating custom backends',['../custom_backends.html',1,'']]]
+  ['cr_20006_3a_20jmap_20file_20format_20version_201_200_12',['CR-006: JMAP file format version 1.0',['../md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html',1,'change_requests']]],
+  ['creating_20custom_20backends_13',['Using and creating custom backends',['../custom_backends.html',1,'']]],
+  ['custom_20backends_14',['Using and creating custom backends',['../custom_backends.html',1,'']]]
 ];

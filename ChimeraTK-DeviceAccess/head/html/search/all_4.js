@@ -2,9 +2,9 @@ var searchData=
 [
   ['a_0',['a',['../class_fixture__t.html#ada8efe3fe343fde672b18fca68895f92',1,'Fixture_t']]],
   ['a_202d_20register_1',['CR-003: Support bit ranges in named channels of a 2D register',['../md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html',1,'change_requests']]],
-  ['a_20definitions_2',['A. Definitions',['../spec__transfer_element.html#autotoc_md29',1,'']]],
+  ['a_20definitions_2',['A. Definitions',['../spec__transfer_element.html#autotoc_md33',1,'']]],
   ['a_20double_20buffered_20named_20channel_3',['CR-002: Test interrupt-driven reads on a double-buffered named channel',['../md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html',1,'change_requests']]],
-  ['a_20introduction_4',['A. Introduction',['../spec__data_consistency_key_mapping.html#autotoc_md24',1,'']]],
+  ['a_20introduction_4',['A. Introduction',['../spec__data_consistency_key_mapping.html#autotoc_md28',1,'']]],
   ['a_20jmap_20file_20from_20a_20device_20catalogue_5',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
   ['a_20map_20file_6',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]],
   ['abspathofdmapcontent_7',['absPathOfDMapContent',['../class_chimera_t_k_1_1_d_map_file_parser.html#a7ac3f2058e4b78a449e23dfbb8845a00',1,'ChimeraTK::DMapFileParser']]],
@@ -82,7 +82,7 @@ var searchData=
   ['advance_5funtil_79',['advance_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a73e89a8c5e60ca0f1571ed3e34c7af68',1,'ChimeraTK::testable_rebot_sleep']]],
   ['advanced_20features_80',['Advanced features',['../jmap.html#jmap_advanced',1,'']]],
   ['aliaslookup_81',['aliaslookup',['../namespace_chimera_t_k_1_1_utilities.html#a2eee1bba7066a6d441061840f63ccd6d',1,'ChimeraTK::Utilities::aliasLookUp()'],['../class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237',1,'ChimeraTK::BackendFactory::aliasLookUp()']]],
-  ['all_20implementations_20full_20and_20decorator_20like_82',['C. Requirements for all implementations (full and decorator-like)',['../spec__transfer_element.html#autotoc_md33',1,'']]],
+  ['all_20implementations_20full_20and_20decorator_20like_82',['C. Requirements for all implementations (full and decorator-like)',['../spec__transfer_element.html#autotoc_md37',1,'']]],
   ['already_20works_20no_20code_20change_83',['How the path already works (no code change)',['../md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html#autotoc_md3',1,'']]],
   ['also_84',['See also',['../jmap.html#jmap_references',1,'']]],
   ['alter_5fand_5fstore_5fapplication_5fbuffer_85',['ALTER_AND_STORE_APPLICATION_BUFFER',['../_unified_backend_test_8h.html#a51d5556693e6504b9c6114acc1823622',1,'UnifiedBackendTest.h']]],
@@ -92,7 +92,7 @@ var searchData=
   ['and_20bytes_20per_20element_89',['Number of elements and bytes per element',['../jmap.html#jmap_elements',1,'']]],
   ['and_20constants_90',['Variables and constants',['../lmap.html#variables_and_constants',1,'']]],
   ['and_20creating_20custom_20backends_91',['Using and creating custom backends',['../custom_backends.html',1,'']]],
-  ['and_20decorator_20like_92',['C. Requirements for all implementations (full and decorator-like)',['../spec__transfer_element.html#autotoc_md33',1,'']]],
+  ['and_20decorator_20like_92',['C. Requirements for all implementations (full and decorator-like)',['../spec__transfer_element.html#autotoc_md37',1,'']]],
   ['and_20engineering_20unit_93',['Description and engineering unit',['../jmap.html#jmap_description',1,'']]],
   ['and_20hierarchical_20names_94',['Modules and hierarchical names',['../jmap.html#jmap_modules',1,'']]],
   ['and_20implementation_20details_95',['Design decisions and implementation details',['../design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_details',1,'']]],
@@ -126,7 +126,7 @@ var searchData=
   ['asyncaccessormanager_2eh_123',['AsyncAccessorManager.h',['../_async_accessor_manager_8h.html',1,'']]],
   ['asyncdoublebufferfixture_124',['asyncdoublebufferfixture',['../class_async_double_buffer_fixture.html#a8bb1a5c8936d784b3ae11d2efeb4791a',1,'AsyncDoubleBufferFixture::AsyncDoubleBufferFixture()'],['../class_async_double_buffer_fixture.html',1,'AsyncDoubleBufferFixture']]],
   ['asynchronous_20registers_20in_20the_20map_20file_125',['Asynchronous registers in the map file',['../design__async_n_d_register_accessor__numeric_addressed.html#design_async_map_file',1,'']]],
-  ['asyncndregisteraccessor_126',['asyncndregisteraccessor',['../class_chimera_t_k_1_1async_1_1_domain.html#ac537c34be50c009b7e33a1e3f4ac8fb5',1,'ChimeraTK::async::Domain::AsyncNDRegisterAccessor'],['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html#af28ebaa1c725105b973868d84120abff',1,'ChimeraTK::async::AsyncNDRegisterAccessor::AsyncNDRegisterAccessor()'],['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async::AsyncNDRegisterAccessor&lt; UserType &gt;'],['../spec__data_consistency_key_mapping.html#autotoc_md27',1,'C. Implementation for the AsyncNDRegisterAccessor'],['../design__async_n_d_register_accessor__numeric_addressed.html',1,'Design: AsyncNDRegisterAccessor']]],
+  ['asyncndregisteraccessor_126',['asyncndregisteraccessor',['../class_chimera_t_k_1_1async_1_1_domain.html#ac537c34be50c009b7e33a1e3f4ac8fb5',1,'ChimeraTK::async::Domain::AsyncNDRegisterAccessor'],['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html#af28ebaa1c725105b973868d84120abff',1,'ChimeraTK::async::AsyncNDRegisterAccessor::AsyncNDRegisterAccessor()'],['../class_chimera_t_k_1_1async_1_1_async_n_d_register_accessor.html',1,'ChimeraTK::async::AsyncNDRegisterAccessor&lt; UserType &gt;'],['../spec__data_consistency_key_mapping.html#autotoc_md31',1,'C. Implementation for the AsyncNDRegisterAccessor'],['../design__async_n_d_register_accessor__numeric_addressed.html',1,'Design: AsyncNDRegisterAccessor']]],
   ['asyncndregisteraccessor_20and_20the_20asyncaccessormanager_127',['The AsyncNDRegisterAccessor and the AsyncAccessorManager',['../design__async_n_d_register_accessor__numeric_addressed.html#design_AsyncNDRegisterAccessor',1,'']]],
   ['asyncndregisteraccessor_2ecc_128',['AsyncNDRegisterAccessor.cc',['../_async_n_d_register_accessor_8cc.html',1,'']]],
   ['asyncndregisteraccessor_2eh_129',['AsyncNDRegisterAccessor.h',['../_async_n_d_register_accessor_8h.html',1,'']]],
@@ -140,6 +140,6 @@ var searchData=
   ['at_20compile_20time_20recommended_137',['Linking custom backends at compile time (recommended)',['../custom_backends.html#linking_backends',1,'']]],
   ['at_20run_20time_138',['Loading custom backends at run time',['../custom_backends.html#loading_backends',1,'']]],
   ['automatic_20recovery_139',['Automatic recovery',['../exceptions.html#auto_recover',1,'']]],
-  ['axi_20lite_20master_20interface_140',['AXI-Lite Master interface',['../md_doc_2xdma__backend.html#autotoc_md42',1,'']]],
-  ['axi_20mm_20dma_20interface_141',['AXI MM DMA interface',['../md_doc_2xdma__backend.html#autotoc_md43',1,'']]]
+  ['axi_20lite_20master_20interface_140',['AXI-Lite Master interface',['../md_doc_2xdma__backend.html#autotoc_md46',1,'']]],
+  ['axi_20mm_20dma_20interface_141',['AXI MM DMA interface',['../md_doc_2xdma__backend.html#autotoc_md47',1,'']]]
 ];

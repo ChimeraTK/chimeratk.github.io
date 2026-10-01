@@ -1,5 +1,9 @@
 var NAVTREEINDEX29 =
 {
+"struct_integers_base.html#afb5638edbff91fb37a5918e69bd177b9":[23,0,97,1],
+"struct_integers_base.html#afddf6f969135733baa3d6e1926bf6b5b":[23,0,97,11],
+"struct_integers_signed32.html":[23,0,98],
+"struct_integers_signed32_async.html":[23,0,99],
 "struct_integers_signed32_async.html#a7b52eb221c1ef2a17f28c19e0b688921":[23,0,99,0],
 "struct_integers_signed32_async.html#aade2c6022e434c9ce4a5ddd917495c6b":[23,0,99,1],
 "struct_integers_signed32_dummy_writable.html":[23,0,100],
@@ -245,9 +249,5 @@ var NAVTREEINDEX29 =
 "struct_no_path_test_fixture.html#ab24cf6b6d3cd510b482b38dbf4598bf0":[23,0,141,0],
 "struct_nonexistend_path_test_fixture.html":[23,0,140],
 "struct_nonexistend_path_test_fixture.html#a57b7f04da22c4e576e8de4066de42838":[23,0,140,0],
-"struct_not_registering_plugin.html":[23,0,142],
-"struct_not_registering_plugin.html#a569a3484da2cce7f6e0b8dd5da572587":[23,0,142,0],
-"struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html":[23,0,143],
-"struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html#aadbf79334adff8ebd202681421e037dd":[23,0,143,0],
-"struct_numeric_addressed_low_level_transfer_element__start_address.html":[23,0,144]
+"struct_not_registering_plugin.html":[23,0,142]
 };

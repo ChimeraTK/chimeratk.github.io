@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9":[23,0,42,1],
+"struct_constant_register_descriptor_base.html#abc15f5afdfbdaecb8071218aa243f79b":[23,0,42,2],
+"struct_counting_decorator.html":[23,0,43],
+"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[23,0,43,1],
 "struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12":[23,0,43,9],
 "struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[23,0,43,17],
 "struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[23,0,43,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "struct_integers_base.html#acfe961e3cf23577cbd66b89c4cc508c5":[23,0,97,8],
 "struct_integers_base.html#adbfa9c66013156b290c39cf257c4c6c3":[23,0,97,2],
 "struct_integers_base.html#ade36a6c02d3b3919cdc2a533700d94ab":[23,0,97,0],
-"struct_integers_base.html#aed514049c981187df54f85ed5be65c65":[23,0,97,10],
-"struct_integers_base.html#afb5638edbff91fb37a5918e69bd177b9":[23,0,97,1],
-"struct_integers_base.html#afddf6f969135733baa3d6e1926bf6b5b":[23,0,97,11],
-"struct_integers_signed32.html":[23,0,98],
-"struct_integers_signed32_async.html":[23,0,99]
+"struct_integers_base.html#aed514049c981187df54f85ed5be65c65":[23,0,97,10]
 };

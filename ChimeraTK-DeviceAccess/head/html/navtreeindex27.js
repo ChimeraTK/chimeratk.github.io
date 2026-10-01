@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af":[21,0,1,98,0,1],
+"struct_chimera_t_k_1_1_rebot_protocol1.html":[21,0,1,99],
+"struct_chimera_t_k_1_1_rebot_protocol1.html":[23,0,1,93],
+"struct_chimera_t_k_1_1_rebot_protocol1.html#a03ca701e16d90df9f0e7df26f6431f1c":[23,0,1,93,0],
 "struct_chimera_t_k_1_1_rebot_protocol1.html#a03ca701e16d90df9f0e7df26f6431f1c":[21,0,1,99,0],
 "struct_chimera_t_k_1_1_rebot_protocol1.html#a34590eb23b1957906ca01f34cb68a7da":[21,0,1,99,5],
 "struct_chimera_t_k_1_1_rebot_protocol1.html#a34590eb23b1957906ca01f34cb68a7da":[23,0,1,93,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "struct_constant_register_descriptor_base.html#a32e5431891945700072a13e91b351b1c":[23,0,42,5],
 "struct_constant_register_descriptor_base.html#a534162394e15a2ddd6042480cea25942":[23,0,42,3],
 "struct_constant_register_descriptor_base.html#a6e68fe5e4565936482ed07c608d90e6e":[23,0,42,7],
-"struct_constant_register_descriptor_base.html#a9f44f03cb95c71198f102bf283c1dd3a":[23,0,42,6],
-"struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9":[23,0,42,1],
-"struct_constant_register_descriptor_base.html#abc15f5afdfbdaecb8071218aa243f79b":[23,0,42,2],
-"struct_counting_decorator.html":[23,0,43],
-"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[23,0,43,1]
+"struct_constant_register_descriptor_base.html#a9f44f03cb95c71198f102bf283c1dd3a":[23,0,42,6]
 };

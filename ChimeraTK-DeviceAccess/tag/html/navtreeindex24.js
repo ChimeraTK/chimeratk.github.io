@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"namespace_chimera_t_k_1_1numeric_1_1detail.html#a9927c2e82aca85ba76d04352878e25a8":[21,0,1,4,0,0],
+"namespace_chimera_t_k_1_1numeric_1_1detail.html#aaa74a0dfbce54b0ca535a7733f64b6df":[21,0,1,4,0,2],
+"namespace_chimera_t_k_1_1numeric_1_1detail.html#af4236225f5bcd7fe5679150b25a80ba5":[21,0,1,4,0,1],
+"namespace_chimera_t_k_1_1numeric__address.html":[21,0,1,5],
 "namespace_chimera_t_k_1_1numeric__address.html#a2aef0f7eb61675ccae139db6cf3d342e":[21,0,1,5,0],
 "namespace_chimera_t_k_1_1parser_utilities.html":[21,0,1,6],
 "namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272":[21,0,1,6,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "struct_bit_register_descriptor_base.html#a51236aefe30dfd18ae1aabbd8f60763c":[23,0,24,3],
 "struct_bit_register_descriptor_base.html#a7f7df65e213f806edf105ce7b69c26b2":[23,0,24,1],
 "struct_bit_register_descriptor_base.html#a903eec55f807ae82a320a62ba32c2fe2":[23,0,24,8],
-"struct_bit_register_descriptor_base.html#a9113058bb3647cb7f6d4411c7d240824":[23,0,24,9],
-"struct_bit_register_descriptor_base.html#a94976a1fc5762834bb1c02ebdc3f1e2a":[23,0,24,2],
-"struct_bit_register_descriptor_base.html#a98bb55120358f9cab4942c67a345d1b1":[23,0,24,0],
-"struct_bool_as_void.html":[23,0,25],
-"struct_bool_as_void.html#a10fc7ead34373ba66984617c2eb69df2":[23,0,25,3]
+"struct_bit_register_descriptor_base.html#a9113058bb3647cb7f6d4411c7d240824":[23,0,24,9]
 };
