@@ -142,11 +142,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_2xdma__backend.html", [
-      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md44", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md45", [
-        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md46", null ],
-        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md47", null ],
-        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md48", null ]
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md49", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md50", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md51", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md52", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md53", null ]
       ] ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -184,6 +184,13 @@ var NAVTREE =
         [ "Requirements", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md24", null ],
         [ "Specifications", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md25", null ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md26", null ]
+      ] ],
+      [ "CR-009: Rebot connection close must not throw on a reset connection", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html#autotoc_md28", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html#autotoc_md29", [
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html#autotoc_md30", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html#autotoc_md31", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -244,29 +251,29 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_numeric_addressed_backend.html#aef57505941eacbf57bf9db5f8680cfa1",
 "class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0a47c7e7cb36a953a8c47e02000036bb44",
 "class_chimera_t_k_1_1_read_any_group_1_1_notification.html#ad459b4b963fd00043d1b8792f5104cb1",
-"class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af",
-"class_chimera_t_k_1_1_subdevice_register_accessor.html#aa1c186bcc6d833ac92611b7e2b87fc8a",
-"class_chimera_t_k_1_1_transfer_element_abstractor.html#a484eb9101cf36e01d4d31d0acd1b597b",
-"class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08",
-"class_chimera_t_k_1_1_unified_backend_test.html#a9c890ada4943fa0122974fac766461f8",
-"class_chimera_t_k_1_1async_1_1_data_consistency_realm.html#a351d8c5645cccbc74e90c598dc14c97b",
-"class_chimera_t_k_1_1async_1_1_sub_domain.html#a82218e475e9091590e43b675082004d6",
-"class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579",
-"examples.html",
-"md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html#autotoc_md25",
-"namespace_chimera_t_k_1_1numeric_1_1detail.html#a9927c2e82aca85ba76d04352878e25a8",
-"struct_bit_register_descriptor_base.html#a94976a1fc5762834bb1c02ebdc3f1e2a",
-"struct_chimera_t_k_1_1_img_header.html#a827899088d25d8b484eb705f02d51cb8",
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af",
-"struct_constant_register_descriptor_base.html#aa8233c5ce7454c86c9b37db0c7698ff9",
-"struct_integers_base.html#afb5638edbff91fb37a5918e69bd177b9",
-"struct_not_registering_plugin.html#a569a3484da2cce7f6e0b8dd5da572587",
-"struct_reg_variable_as_push_parameter_in_math__not__written.html#a8bac87eb74d2faa143279e34f6d7c54c",
-"struct_static_core.html#a754b38fd31e60f5c614f1d1ac48f1f01",
-"test_device_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd",
-"test_l_map_force_read_only_plugin_8cc.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_raw_converter_8cpp.html#a795e9642f0d39cf6115b2ba67261057c",
-"test_type_changing_decorator_8cpp.html#a01ea2705c55f2794b8d0b9e7bbae1230"
+"class_chimera_t_k_1_1_register_path.html#a612e5402e6acc561064443c534c5b547",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#a990ab9554975fe0c33ebac5793c2ee19",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html#a4016da23732e91a38e484e8cf9808f67",
+"class_chimera_t_k_1_1_type_changing_decorator.html#a4c8e7416c044eeac1d7676fa91c0a96d",
+"class_chimera_t_k_1_1_unified_backend_test.html#a94ba0ed39caefa030410e63937e41b48",
+"class_chimera_t_k_1_1async_1_1_data_consistency_realm.html",
+"class_chimera_t_k_1_1async_1_1_sub_domain.html#a7541f001f510459213749ab0c88e9cbf",
+"class_dummy_register_test.html#a6a476d9aec16f7a3c1c21ae13efe1b61",
+"dmap.html#Map",
+"md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html",
+"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968",
+"struct_bit_register_descriptor_base.html#a070ba0d9bdd145f103de37f4913eef12",
+"struct_chimera_t_k_1_1_img_header.html#a528fe25c81e0a564f4093da7e4b9a666",
+"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html",
+"struct_constant_register_descriptor_base.html",
+"struct_integers_base.html#a7ca3366068eb38ef08377e18fdeb6c68",
+"struct_new_backend.html#a569a3484da2cce7f6e0b8dd5da572587",
+"struct_reg_upper_half_of_firmware.html#ad4ea75e1620d7ef41f3255084ca70b80",
+"struct_static_core.html#a2eba5dcb8602cda0416c3ea027fc470b",
+"test_data_consistency_realm_8cpp.html#a58288abb28d9223ce54dc088cc6db6f6",
+"test_l_map_file_8cpp.html",
+"test_raw_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649",
+"test_transfer_group_8cpp.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

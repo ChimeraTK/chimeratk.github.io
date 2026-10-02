@@ -29,7 +29,7 @@ var searchData=
   ['_7eexceptiondummypushdecorator_26',['~ExceptionDummyPushDecorator',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#abbe256286bde78acae7f8a5f504fa6ea',1,'ChimeraTK::ExceptionDummyPushDecorator']]],
   ['_7eexceptiondummypushdecoratorbase_27',['~ExceptionDummyPushDecoratorBase',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html#a7938dc0945106d370ed5e8d9065b2365',1,'ChimeraTK::ExceptionDummyPushDecoratorBase']]],
   ['_7eexceptionreportingbackend_28',['~ExceptionReportingBackend',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a292eb371ae014ef51bf65e52eb3d6f5f',1,'ChimeraTK::UnifiedBackendTest::ExceptionReportingBackend']]],
-  ['_7ef_29',['~F',['../struct_f.html#a3eb03ed8921a8a364ada9e7dbc174e07',1,'F']]],
+  ['_7ef_29',['~f',['../struct_f.html#a3eb03ed8921a8a364ada9e7dbc174e07',1,'F::~F()'],['../struct_f.html#a3eb03ed8921a8a364ada9e7dbc174e07',1,'F::~F()']]],
   ['_7egenericmuxedinterruptdistributor_30',['~GenericMuxedInterruptDistributor',['../class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#a20eb4358e17804313f4c0797a2c226d8',1,'ChimeraTK::async::GenericMuxedInterruptDistributor']]],
   ['_7ehelperprocess_31',['~HelperProcess',['../struct_helper_process.html#a9becd0574082bed297c926404d038eeb',1,'HelperProcess']]],
   ['_7ehistorizedmatcher_32',['~HistorizedMatcher',['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a820aa8fd5b8428abbd6ca408f62088b6',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher']]],

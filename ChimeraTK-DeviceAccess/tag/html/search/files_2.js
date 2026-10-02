@@ -14,8 +14,9 @@ var searchData=
   ['cr_2d004_2ddata_2dconsistency_2dkeys_2din_2ddouble_2dbuffered_2dregisters_2emd_11',['CR-004-data-consistency-keys-in-double-buffered-registers.md',['../_c_r-004-data-consistency-keys-in-double-buffered-registers_8md.html',1,'']]],
   ['cr_2d005_2ddevice_2dto_2djmap_2emd_12',['CR-005-device-to-jmap.md',['../_c_r-005-device-to-jmap_8md.html',1,'']]],
   ['cr_2d006_2djmap_2dfile_2dformat_2dversion_2emd_13',['CR-006-jmap-file-format-version.md',['../_c_r-006-jmap-file-format-version_8md.html',1,'']]],
-  ['ctrlintf_2ecc_14',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
-  ['ctrlintf_2eh_15',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
-  ['custom_5fbackends_2edox_16',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
-  ['custombackend_2ecc_17',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]]
+  ['cr_2d009_2drebot_2dconnection_2dclose_2don_2dreset_2emd_14',['CR-009-rebot-connection-close-on-reset.md',['../_c_r-009-rebot-connection-close-on-reset_8md.html',1,'']]],
+  ['ctrlintf_2ecc_15',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
+  ['ctrlintf_2eh_16',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
+  ['custom_5fbackends_2edox_17',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
+  ['custombackend_2ecc_18',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]]
 ];

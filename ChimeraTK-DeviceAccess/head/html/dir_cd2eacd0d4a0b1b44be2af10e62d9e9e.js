@@ -47,6 +47,7 @@ var dir_cd2eacd0d4a0b1b44be2af10e62d9e9e =
     [ "testPcieBackend.cpp", "test_pcie_backend_8cpp.html", "test_pcie_backend_8cpp" ],
     [ "testRawConverter.cpp", "test_raw_converter_8cpp.html", "test_raw_converter_8cpp" ],
     [ "testRawDataTypeInfo.cpp", "test_raw_data_type_info_8cpp.html", "test_raw_data_type_info_8cpp" ],
+    [ "testRebotConnectionCloseOnReset.cpp", "test_rebot_connection_close_on_reset_8cpp.html", "test_rebot_connection_close_on_reset_8cpp" ],
     [ "testRebotConnectionTimeouts.cpp", "test_rebot_connection_timeouts_8cpp.html", "test_rebot_connection_timeouts_8cpp" ],
     [ "testRebotHeartbeatCount.cpp", "test_rebot_heartbeat_count_8cpp.html", "test_rebot_heartbeat_count_8cpp" ],
     [ "testRegisterAccess.cpp", "test_register_access_8cpp.html", "test_register_access_8cpp" ],

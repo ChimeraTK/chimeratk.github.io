@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"class_dummy_register_test.html#a6a476d9aec16f7a3c1c21ae13efe1b61":[23,0,72,2],
+"class_dummy_register_test.html#a82a19f93c51e91cc35bdb477140ca565":[23,0,72,3],
 "class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579":[23,0,72,0],
 "class_dummy_register_test_suite.html":[23,0,73],
 "class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c":[23,0,73,0],
@@ -103,8 +105,8 @@ var NAVTREEINDEX21 =
 "class_testable_dummy_backend.html#a225ea9c4f235aaa2938de2f75d4934a5":[23,0,234,13],
 "class_testable_dummy_backend.html#a285d504ac33efcead9ba2da059a70cdf":[23,0,234,11],
 "class_testable_dummy_backend.html#a467fa5d9c04dc521cd61400526189929":[23,0,234,9],
-"class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[23,0,234,1],
 "class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[23,0,234,2],
+"class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[23,0,234,1],
 "class_testable_dummy_backend.html#a9484547368d7da66d8d6795baf91b0a9":[23,0,234,3],
 "class_testable_dummy_backend.html#a98378836f79fa2c2389ed0fc0e50b9e5":[23,0,234,7],
 "class_testable_dummy_backend.html#aa989bf8f81b013e42b071d27d6bbeff9":[23,0,234,5],
@@ -158,14 +160,14 @@ var NAVTREEINDEX21 =
 "classmy_register_info.html#ae8145c77ae96df6cd5384ef67f48912b":[23,0,133,5],
 "classmy_register_info.html#aef49d69f88b9873cdc0cf507f0f9ae0d":[23,0,133,2],
 "classmy_register_info.html#af0fe41044dee366c01acf3198f0077fe":[23,0,133,0],
-"concept_chimera_t_k_1_1accessor__abstractor.html":[21,0,1,160],
 "concept_chimera_t_k_1_1accessor__abstractor.html":[22,0,1],
+"concept_chimera_t_k_1_1accessor__abstractor.html":[21,0,1,160],
 "concept_chimera_t_k_1_1numeric_1_1_arithmetic.html":[21,0,1,4,2],
 "concept_chimera_t_k_1_1numeric_1_1_arithmetic.html":[22,0,0,1],
 "concept_chimera_t_k_1_1numeric_1_1_arithmetic_or_void.html":[21,0,1,4,3],
 "concept_chimera_t_k_1_1numeric_1_1_arithmetic_or_void.html":[22,0,0,2],
-"concept_chimera_t_k_1_1numeric_1_1_integral.html":[21,0,1,4,1],
 "concept_chimera_t_k_1_1numeric_1_1_integral.html":[22,0,0,0],
+"concept_chimera_t_k_1_1numeric_1_1_integral.html":[21,0,1,4,1],
 "concept_chimera_t_k_1_1raw__type.html":[21,0,1,162],
 "concept_chimera_t_k_1_1raw__type.html":[22,0,3],
 "concept_chimera_t_k_1_1user__type.html":[21,0,1,161],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "dir_f4ac1a51576b771baf6f5c23fd562e83.html":[24,0,0,1],
 "dir_f6392679a197e14e988a5f22b9c1c59d.html":[24,0,4],
 "dir_fe0051edf425d87778c84121fa35e1b3.html":[24,0,7,5],
-"dmap.html":[6],
-"dmap.html#Map":[6,0],
-"dmap.html#The":[6,1]
+"dmap.html":[6]
 };

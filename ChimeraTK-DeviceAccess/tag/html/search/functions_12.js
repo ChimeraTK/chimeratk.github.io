@@ -17,6 +17,7 @@ var searchData=
   ['updateregisterinfo_14',['updateRegisterInfo',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a5aeb3c6e2eaf692b629c1070b2821ead',1,'ChimeraTK::LNMBackend::AccessorPluginBase']]],
   ['updateresult_15',['updateResult',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
   ['updaterloop_16',['updaterLoop',['../struct_fixture.html#aaa666e629f57793511fcd0716c3b84c6',1,'Fixture']]],
-  ['usertypetonumeric_17',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
-  ['usertypetousertype_18',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]]
+  ['uri_17',['uri',['../struct_f.html#af4c69b09957f82f5d3667d068fc5ea65',1,'F']]],
+  ['usertypetonumeric_18',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
+  ['usertypetousertype_19',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]]
 ];

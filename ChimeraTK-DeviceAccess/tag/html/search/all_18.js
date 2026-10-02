@@ -35,7 +35,7 @@ var searchData=
   ['updateregisterinfo_32',['updateRegisterInfo',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a5aeb3c6e2eaf692b629c1070b2821ead',1,'ChimeraTK::LNMBackend::AccessorPluginBase']]],
   ['updateresult_33',['updateResult',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
   ['updaterloop_34',['updaterLoop',['../struct_fixture.html#aaa666e629f57793511fcd0716c3b84c6',1,'Fixture']]],
-  ['uri_35',['uri',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
+  ['uri_35',['uri',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e',1,'ChimeraTK::DeviceInfoMap::DeviceInfo::uri'],['../struct_f.html#af4c69b09957f82f5d3667d068fc5ea65',1,'F::uri()']]],
   ['usage_20in_20the_20packaging_20scripts_36',['Usage in the packaging scripts',['../custom_backends.html#backend_packaging_usage',1,'']]],
   ['usearea_37',['useArea',['../struct_static_core.html#a6cefba6ff47a0e308499283995da8ab1',1,'StaticCore']]],
   ['usecustombackend_2ecpp_38',['useCustomBackend.cpp',['../use_custom_backend_8cpp.html',1,'']]],

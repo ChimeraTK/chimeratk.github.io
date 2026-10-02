@@ -7,10 +7,11 @@ var searchData=
   ['testing_20applications_20using_20the_20dummybackends_4',['Testing applications using the DummyBackends',['../testing_with_dummy_backends.html',1,'']]],
   ['tests_20for_20data_20consistency_20keys_20in_20double_20buffered_20registers_5',['CR-004: Tests for data consistency keys in double-buffered registers',['../md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html',1,'change_requests']]],
   ['the_20dummybackends_6',['Testing applications using the DummyBackends',['../testing_with_dummy_backends.html',1,'']]],
-  ['to_20versionnumbers_20v0_200wip_7',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]],
-  ['to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_8',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
-  ['todo_20list_9',['Todo List',['../todo.html',1,'']]],
-  ['tool_20to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_10',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
-  ['transferelement_20v1_202_11',['Technical specification: TransferElement V1.2',['../spec__transfer_element.html',1,'']]],
-  ['type_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_12',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
+  ['throw_20on_20a_20reset_20connection_7',['CR-009: Rebot connection close must not throw on a reset connection',['../md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html',1,'change_requests']]],
+  ['to_20versionnumbers_20v0_200wip_8',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]],
+  ['to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_9',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
+  ['todo_20list_10',['Todo List',['../todo.html',1,'']]],
+  ['tool_20to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_11',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
+  ['transferelement_20v1_202_12',['Technical specification: TransferElement V1.2',['../spec__transfer_element.html',1,'']]],
+  ['type_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_13',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
 ];
