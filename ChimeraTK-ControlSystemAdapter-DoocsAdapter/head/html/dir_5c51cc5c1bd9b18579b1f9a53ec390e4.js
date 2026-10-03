@@ -4,6 +4,7 @@ var dir_5c51cc5c1bd9b18579b1f9a53ec390e4 =
     [ "serverTestAutoCreateLocations.cpp", "server_test_auto_create_locations_8cpp.html", "server_test_auto_create_locations_8cpp" ],
     [ "serverTestCallOptimiseUnmappedVariables.cpp", "server_test_call_optimise_unmapped_variables_8cpp.html", "server_test_call_optimise_unmapped_variables_8cpp" ],
     [ "serverTestDataMatching.cpp", "server_test_data_matching_8cpp.html", "server_test_data_matching_8cpp" ],
+    [ "serverTestDescriptions.cpp", "server_test_descriptions_8cpp.html", "server_test_descriptions_8cpp" ],
     [ "serverTestErrorFlag.cpp", "server_test_error_flag_8cpp.html", "server_test_error_flag_8cpp" ],
     [ "serverTestGlobalTurnOnOffHistory.cpp", "server_test_global_turn_on_off_history_8cpp.html", "server_test_global_turn_on_off_history_8cpp" ],
     [ "serverTestGlobalTurnOnOffWriteable.cpp", "server_test_global_turn_on_off_writeable_8cpp.html", "server_test_global_turn_on_off_writeable_8cpp" ],

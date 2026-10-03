@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hasotherpropertiestoupdate_0',['hasOtherPropertiesToUpdate',['../class_chimera_t_k_1_1_property_base.html#a1af7feb7108c210432980262da7e2b87',1,'ChimeraTK::PropertyBase']]]
+  ['hasnativedescriptionunits_0',['hasnativedescriptionunits',['../class_chimera_t_k_1_1_doocs_ifff.html#a0a1d343d8808042da34e83104fe414c2',1,'ChimeraTK::DoocsIfff::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_iiii.html#a480adebdd761f738b5ddab0c071a393c',1,'ChimeraTK::DoocsIiii::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#aaaaaa886669f7b14975613e4b5734635',1,'ChimeraTK::DoocsProcessScalar::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a804f160dac782b3c5603516f3de542e1',1,'ChimeraTK::DoocsSpectrum::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_xy.html#ad76d74823da9f9c0fb9a0cb4064a232f',1,'ChimeraTK::DoocsXy::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_property_base.html#a150686828196c331031b1ed6d1ab7fdc',1,'ChimeraTK::PropertyBase::hasNativeDescriptionUnits()']]],
+  ['hasotherpropertiestoupdate_1',['hasOtherPropertiesToUpdate',['../class_chimera_t_k_1_1_property_base.html#a1af7feb7108c210432980262da7e2b87',1,'ChimeraTK::PropertyBase']]]
 ];

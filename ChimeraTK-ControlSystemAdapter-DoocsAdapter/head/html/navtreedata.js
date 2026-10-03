@@ -42,12 +42,27 @@ var NAVTREE =
       ] ],
       [ "Error reporting", "index.html#set_error", null ]
     ] ],
+    [ "Change Requests", "change_requests.html", [
+      [ "Index", "change_requests.html#change_requests_index", null ],
+      [ "CR-001: Add unit and description texts", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md1", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md2", [
+          [ "Analysis: DOOCS ways of setting unit description texts", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md3", null ],
+          [ "DOOCS server api functions, to set descriptions", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md4", null ]
+        ] ],
+        [ "Implementation notes and alternatives considered", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md5", [
+          [ "Test plan", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md6", null ],
+          [ "Further work items", "md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md7", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -80,10 +95,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"class_chimera_t_k_1_1_doocs_p_v_factory.html#a461b5aa1113f9bc7d29e382d7313a2da",
-"class_chimera_t_k_1_1_variable_mapper.html#a0ae04625dba7e9b611a0368b55ec7b28",
-"server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1",
-"struct_chimera_t_k_1_1_image_description.html#af7d7ebd624213530ec3d5f4b4cdf470c"
+"class_chimera_t_k_1_1_doocs_p_v_factory.html",
+"class_chimera_t_k_1_1_routing_decorator.html#a2e89c7e3d7189d45b2981526b40d1100",
+"m4u_d__array__test_cases__numericals_8hpp.html#ab3815c7b0773c6edb7392bedbfadde01",
+"struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246",
+"struct_zero_m_q_fixture.html#a8c93ac015bb1614e63941415169b717f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

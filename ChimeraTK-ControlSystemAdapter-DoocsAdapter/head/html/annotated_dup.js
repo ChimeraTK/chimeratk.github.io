@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", [
       [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],
+      [ "Axis", "struct_chimera_t_k_1_1_axis.html", "struct_chimera_t_k_1_1_axis" ],
       [ "CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", "class_chimera_t_k_1_1_c_s_adapter_eq_fct" ],
       [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ],
       [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", "class_chimera_t_k_1_1_doocs_ifff" ],
@@ -31,6 +32,7 @@ var annotated_dup =
       [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ]
     ] ],
     [ "DataMatchingFixture", "struct_data_matching_fixture.html", "struct_data_matching_fixture" ],
+    [ "DescriptionTestApplication", "struct_description_test_application.html", "struct_description_test_application" ],
     [ "DeviceFixture", "struct_device_fixture.html", "struct_device_fixture" ],
     [ "DTextUnifier", "struct_d_text_unifier.html", "struct_d_text_unifier" ],
     [ "ExtendedTestApplication", "struct_extended_test_application.html", "struct_extended_test_application" ],

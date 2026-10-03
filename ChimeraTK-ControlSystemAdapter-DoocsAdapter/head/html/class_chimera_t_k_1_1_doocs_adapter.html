@@ -121,8 +121,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a396057c5005d59f33b94733e86b2948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63f08e25bb5fe5f7752d6b77b72f9041" id="r_a63f08e25bb5fe5f7752d6b77b72f9041"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ControlSystemPVManager &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a63f08e25bb5fe5f7752d6b77b72f9041">getControlSystemPVManager</a> () const</td></tr>
 <tr class="separator:a63f08e25bb5fe5f7752d6b77b72f9041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d6b90f7b1bd337067ac37ccfe7164e" id="r_a79d6b90f7b1bd337067ac37ccfe7164e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a79d6b90f7b1bd337067ac37ccfe7164e">beforeAutoInit</a> ()</td></tr>
-<tr class="separator:a79d6b90f7b1bd337067ac37ccfe7164e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a29b795cfb602ea5dd24023b4ea671b" id="r_a9a29b795cfb602ea5dd24023b4ea671b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a9a29b795cfb602ea5dd24023b4ea671b">findReverseMapping</a> ()</td></tr>
 <tr class="memdesc:a9a29b795cfb602ea5dd24023b4ea671b"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepare list of properties connected to the same PV  <br /></td></tr>
 <tr class="separator:a9a29b795cfb602ea5dd24023b4ea671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +162,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa68288d8deb8724e6c357b9ded29217c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9d02096a55995d55eaa0fa2fe176f4" id="r_abd9d02096a55995d55eaa0fa2fe176f4"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ControlSystemPVManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#abd9d02096a55995d55eaa0fa2fe176f4">_controlSystemPVManager</a></td></tr>
 <tr class="separator:abd9d02096a55995d55eaa0fa2fe176f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08a6569fe57182e680de9113dab04ac8" id="r_a08a6569fe57182e680de9113dab04ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a08a6569fe57182e680de9113dab04ac8">_before_auto_init_called</a> {false}</td></tr>
-<tr class="separator:a08a6569fe57182e680de9113dab04ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main adapter class. </p>
@@ -193,25 +189,6 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79d6b90f7b1bd337067ac37ccfe7164e" name="a79d6b90f7b1bd337067ac37ccfe7164e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d6b90f7b1bd337067ac37ccfe7164e">&#9670;&#160;</a></span>beforeAutoInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::DoocsAdapter::beforeAutoInit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00097">97</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
-
-</div>
-</div>
 <a id="a516cb7cb2ede3eecdde51eba83bfc03f" name="a516cb7cb2ede3eecdde51eba83bfc03f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a516cb7cb2ede3eecdde51eba83bfc03f">&#9670;&#160;</a></span>checkPrintDataLossWarning()</h2>
 
@@ -263,7 +240,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00112">112</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00097">97</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
 
 </div>
 </div>
@@ -290,7 +267,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00289">289</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00274">274</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
 
 </div>
 </div>
@@ -317,7 +294,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00143">143</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00128">128</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
 
 </div>
 </div>
@@ -338,7 +315,7 @@ Protected Attributes</h2></td></tr>
 
 <p>prepare list of properties connected to the same PV </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00178">178</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00163">163</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
 
 </div>
 </div>
@@ -365,7 +342,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00062">62</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +407,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00244">244</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00229">229</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
 
 </div>
 </div>
@@ -462,30 +439,6 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a08a6569fe57182e680de9113dab04ac8" name="a08a6569fe57182e680de9113dab04ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08a6569fe57182e680de9113dab04ac8">&#9670;&#160;</a></span>_before_auto_init_called</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::DoocsAdapter::_before_auto_init_called {false}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00073">73</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
-
-</div>
-</div>
 <a id="abd9d02096a55995d55eaa0fa2fe176f4" name="abd9d02096a55995d55eaa0fa2fe176f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd9d02096a55995d55eaa0fa2fe176f4">&#9670;&#160;</a></span>_controlSystemPVManager</h2>
 
@@ -506,7 +459,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00070">70</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00064">64</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +483,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00069">69</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00063">63</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +507,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00038">38</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00032">32</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -586,7 +539,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00053">53</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00047">47</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +555,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00057">57</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00051">51</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>

@@ -3,6 +3,7 @@ var struct_chimera_t_k_1_1_property_attributes =
     [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html#a6845e1e96d1671c18ac36c0d6a4b844d", null ],
     [ "operator==", "struct_chimera_t_k_1_1_property_attributes.html#aec12ae3311c34e463addecab0ccafff3", null ],
     [ "dataMatching", "struct_chimera_t_k_1_1_property_attributes.html#ae036c433a7fcfeff798e5be06b877e26", null ],
+    [ "descriptionFromApp", "struct_chimera_t_k_1_1_property_attributes.html#afc3ef3d420b7d6b53cb3dde8aa514e5d", null ],
     [ "hasHistory", "struct_chimera_t_k_1_1_property_attributes.html#a927a4bb8520eba6fe1a0ea8fb34d899b", null ],
     [ "isWriteable", "struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22", null ],
     [ "isWriteableSource", "struct_chimera_t_k_1_1_property_attributes.html#abb1ac7150723bd12bb436453f13f9fa2", null ],

@@ -146,12 +146,12 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">auto</span> writeIfff = [&amp;](IFFF ifff) {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// we have to use the names if the correct variables</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, ifff.i1_data);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FLOAT/TO_DEVICE_SCALAR&quot;</span>, ifff.f1_data);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    DoocsServerTestHelper::doocsSet&lt;double&gt;(<span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_SCALAR&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(ifff.f2_data));</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//SHORT/TO_DEVICE_SCALAR&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(ifff.f3_data));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  };</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// we used SHORT/FROM_DEVICE_SCALAR for the f3_value, so only values that fit in int16_t can be used for it, no</span></div>
@@ -202,9 +202,9 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="comment">// check data consistency implementation</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="comment">// send only one variable, then change the version number again</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 543); <span class="comment">// will never be seen</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// sleep a bit, we don&#39;t except a change</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  sleep(1);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  resultIfff = extractValue();</div>
@@ -214,11 +214,11 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  BOOST_CHECK_CLOSE(resultIfff.f2_data, referenceIfff.f2_data, 0.0001);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  BOOST_CHECK_CLOSE(resultIfff.f3_data, referenceIfff.f3_data, 0.0001);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  DoocsServerTestHelper::doocsSet&lt;float&gt;(<span class="stringliteral">&quot;//FLOAT/TO_DEVICE_SCALAR&quot;</span>, newReferenceIfff.f1_data);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  DoocsServerTestHelper::doocsSet&lt;double&gt;(<span class="stringliteral">&quot;//DOUBLE/TO_DEVICE_SCALAR&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(newReferenceIfff.f2_data));</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//SHORT/TO_DEVICE_SCALAR&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(newReferenceIfff.f3_data));</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="comment">// all variables have been updated, but not in a consistent way. still no change</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  sleep(1);</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="comment">// finally upate the missing variable with the same version as the others</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, newReferenceIfff.i1_data);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_variable" href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="comment">// now we see the new reference</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  checkWithTimeout&lt;int&gt;(</div>
@@ -256,13 +256,13 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="ttc" id="aserver_test_ifff_8cpp_html_a06c138c2b0b13b0e11be4e16bf242cb8"><div class="ttname"><a href="server_test_ifff_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8">object_name</a></div><div class="ttdeci">const char * object_name</div></div>
 <div class="ttc" id="aserver_test_ifff_8cpp_html_a3a0ff8a947b99ecd7440e172d57d2c92"><div class="ttname"><a href="server_test_ifff_8cpp.html#a3a0ff8a947b99ecd7440e172d57d2c92">PROPERTY_NAME</a></div><div class="ttdeci">const std::string PROPERTY_NAME</div><div class="ttdef"><b>Definition</b> <a href="server_test_ifff_8cpp_source.html#l00026">serverTestIfff.cpp:26</a></div></div>
 <div class="ttc" id="aserver_test_ifff_8cpp_html_ad873853c91eda36684e2c38fd01a4d98"><div class="ttname"><a href="server_test_ifff_8cpp.html#ad873853c91eda36684e2c38fd01a4d98">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION BOOST_AUTO_TEST_CASE(testIfffUpdate)</div><div class="ttdef"><b>Definition</b> <a href="server_test_ifff_8cpp_source.html#l00031">serverTestIfff.cpp:31</a></div></div>
-<div class="ttc" id="astruct_global_fixture_html_a972de4eb1aa42e621752a66b1a8ead73"><div class="ttname"><a href="struct_global_fixture.html#a972de4eb1aa42e621752a66b1a8ead73">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00082">serverTestArrayPersistence.cpp:82</a></div></div>
+<div class="ttc" id="astruct_global_fixture_html_a9bfb2710ff720a72d3ea3870251b1265"><div class="ttname"><a href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">static ExtendedTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition</b> <a href="server_test_array_persistence_8cpp_source.html#l00082">serverTestArrayPersistence.cpp:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="server_test_ifff_8cpp.html">serverTestIfff.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_0fb152a537aaa09f0ea9f261754eb87c.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c51cc5c1bd9b18579b1f9a53ec390e4.html">src</a></li><li class="navelem"><a class="el" href="server_test_ifff_8cpp.html">serverTestIfff.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

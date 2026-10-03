@@ -6,6 +6,7 @@ var searchData=
   ['registeriiiisources_3',['registerIiiiSources',['../class_chimera_t_k_1_1_doocs_iiii.html#a8f21a3a46d415789cf9f90db081fdb2c',1,'ChimeraTK::DoocsIiii']]],
   ['registerprocessvariablesindoocs_4',['registerProcessVariablesInDoocs',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae6ea446f82465cd12cce0232017f9f7c',1,'ChimeraTK::CSAdapterEqFct']]],
   ['registervariable_5',['registerVariable',['../class_chimera_t_k_1_1_property_base.html#a8f3f7dcd1a6a28f05968f8983894e90e',1,'ChimeraTK::PropertyBase']]],
-  ['routingdecorator_6',['RoutingDecorator',['../class_chimera_t_k_1_1_routing_decorator.html#a1340fe04459faea957ef1ca4f24aafa9',1,'ChimeraTK::RoutingDecorator']]],
-  ['run_7',['run',['../class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528',1,'ChimeraTK::DoocsUpdater']]]
+  ['resolvedescriptionandunits_6',['resolveDescriptionAndUnits',['../class_chimera_t_k_1_1_property_base.html#a1499b1a6897e7418892e272ebdfbc3a7',1,'ChimeraTK::PropertyBase']]],
+  ['routingdecorator_7',['RoutingDecorator',['../class_chimera_t_k_1_1_routing_decorator.html#a1340fe04459faea957ef1ca4f24aafa9',1,'ChimeraTK::RoutingDecorator']]],
+  ['run_8',['run',['../class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528',1,'ChimeraTK::DoocsUpdater']]]
 ];

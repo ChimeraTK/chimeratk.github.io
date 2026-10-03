@@ -1,7 +1,6 @@
 var hierarchy =
 [
-    [ "ChimeraTK::SpectrumDescription::Axis", "struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html", null ],
-    [ "ChimeraTK::XyDescription::Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", null ],
+    [ "ChimeraTK::Axis", "struct_chimera_t_k_1_1_axis.html", null ],
     [ "D_ifff", null, [
       [ "ChimeraTK::DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", null ]
     ] ],
@@ -76,7 +75,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "ReferenceTestApplication", null, [
-      [ "ExtendedTestApplication", "struct_extended_test_application.html", null ]
+      [ "ExtendedTestApplication", "struct_extended_test_application.html", [
+        [ "DescriptionTestApplication", "struct_description_test_application.html", null ]
+      ] ]
     ] ],
     [ "ChimeraTK::RoutingDecoratorDomain", "class_chimera_t_k_1_1_routing_decorator_domain.html", null ],
     [ "ChimeraTK::DoocsUpdater::ToDoocsUpdateDescriptor", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html", null ],

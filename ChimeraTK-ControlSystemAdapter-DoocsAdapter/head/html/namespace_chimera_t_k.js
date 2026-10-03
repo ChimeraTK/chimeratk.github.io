@@ -1,6 +1,12 @@
 var namespace_chimera_t_k =
 [
+    [ "VersionInfo", "namespace_chimera_t_k_1_1_version_info.html", [
+      [ "applicationPatch", "namespace_chimera_t_k_1_1_version_info.html#addef4d05b344dea89cbd4e9141b0d256", null ],
+      [ "major", "namespace_chimera_t_k_1_1_version_info.html#a6aa207e422e3ff6627f125e35a759564", null ],
+      [ "minor", "namespace_chimera_t_k_1_1_version_info.html#a0e87c997cf0b7626a83e0814de0f149f", null ]
+    ] ],
     [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],
+    [ "Axis", "struct_chimera_t_k_1_1_axis.html", "struct_chimera_t_k_1_1_axis" ],
     [ "CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", "class_chimera_t_k_1_1_c_s_adapter_eq_fct" ],
     [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ],
     [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", "class_chimera_t_k_1_1_doocs_ifff" ],
@@ -32,8 +38,6 @@ var namespace_chimera_t_k =
     [ "asXmlElement", "namespace_chimera_t_k.html#a7ccc0a55e83d4c4a59f981da7abdeb1a", null ],
     [ "basenameFromAddress", "namespace_chimera_t_k.html#a1d382dcc126da60501f9940b29dea51d", null ],
     [ "determineName", "namespace_chimera_t_k.html#a76ae8c499735588a556f99205b693955", null ],
-    [ "DoocsPVFactory::createDoocsScalar< std::string, D_string >", "namespace_chimera_t_k.html#a98f370dee3a842a3a5c6cb2cde16b7ca", null ],
-    [ "DoocsPVFactory::createDoocsScalar< std::string, DTextUnifier >", "namespace_chimera_t_k.html#ac49dc6375e0d9e0b35828bd5a0c620cc", null ],
     [ "DoocsPVFactory::typedCreateDoocsArray< std::nullptr_t, std::nullptr_t >", "namespace_chimera_t_k.html#acda82509de015fd1b523ffa80eb0e3a9", null ],
     [ "getAllVariableNames", "namespace_chimera_t_k.html#a8e59630129b4248186709bb532ca3851", null ],
     [ "splitStringAtFirstSlash", "namespace_chimera_t_k.html#a00c3d61e9462b8da1a7fea6722eb56b2", null ]

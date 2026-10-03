@@ -9,6 +9,8 @@ var struct_chimera_t_k_1_1_property_description =
     [ "getWriteSources", "struct_chimera_t_k_1_1_property_description.html#a58ecd818695d54c6fe0f040cbc4d5348", null ],
     [ "operator==", "struct_chimera_t_k_1_1_property_description.html#a25c0653b17eba2d7fd34791997633fd5", null ],
     [ "print", "struct_chimera_t_k_1_1_property_description.html#ae5425264f864fe2532c2a9241e4d6126", null ],
+    [ "axes", "struct_chimera_t_k_1_1_property_description.html#a9e1fc7b0d70129c86ad2e0fce0f9a9f2", null ],
+    [ "description", "struct_chimera_t_k_1_1_property_description.html#a018de06d2f8e87fb41a8f5a990d9d3d8", null ],
     [ "location", "struct_chimera_t_k_1_1_property_description.html#a5a47381286d2ea5687ad3dbf986873de", null ],
     [ "name", "struct_chimera_t_k_1_1_property_description.html#aaaeb2a638a2b304c1ca23b16ebc33faf", null ]
 ];

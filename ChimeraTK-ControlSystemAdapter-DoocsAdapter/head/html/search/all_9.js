@@ -1,24 +1,6 @@
 var searchData=
 [
-  ['i1source_0',['i1Source',['../struct_chimera_t_k_1_1_ifff_description.html#a8947445094f753bc4d3499e16ddffe65',1,'ChimeraTK::IfffDescription']]],
-  ['ifffdescription_1',['ifffdescription',['../struct_chimera_t_k_1_1_ifff_description.html#a290474f59a2baaf448d19e9c68aec227',1,'ChimeraTK::IfffDescription::IfffDescription()'],['../struct_chimera_t_k_1_1_ifff_description.html',1,'ChimeraTK::IfffDescription']]],
-  ['iiiidescription_2',['iiiidescription',['../struct_chimera_t_k_1_1_iiii_description.html',1,'ChimeraTK::IiiiDescription'],['../struct_chimera_t_k_1_1_iiii_description.html#aeacc3eb878ebb039362336ef966e782b',1,'ChimeraTK::IiiiDescription::IiiiDescription(ChimeraTK::RegisterPath const &amp;iiiiSource_=&quot;&quot;, std::string const &amp;location_=&quot;&quot;, std::string const &amp;name_=&quot;&quot;)']]],
-  ['iiiisource_3',['iiiiSource',['../struct_chimera_t_k_1_1_iiii_description.html#a3ec7688482fdc9cd0b8af7bca523cc0d',1,'ChimeraTK::IiiiDescription']]],
-  ['imagedescription_4',['imagedescription',['../struct_chimera_t_k_1_1_image_description.html',1,'ChimeraTK::ImageDescription'],['../struct_chimera_t_k_1_1_image_description.html#a67367089b5154a18d31f4efc84e55fbb',1,'ChimeraTK::ImageDescription::ImageDescription()']]],
-  ['imh_5',['imh',['../class_chimera_t_k_1_1_doocs_image.html#af7b39d8407b4368735c343031c32d2c3',1,'ChimeraTK::DoocsImage']]],
-  ['import_6',['import',['../class_chimera_t_k_1_1_variable_mapper.html#a92cbbf5290e15495892e8484d121ccc9',1,'ChimeraTK::VariableMapper']]],
-  ['in_7',['in',['../struct_extended_test_application.html#ab43292c7900d8a18c241ebfe05f8d980',1,'ExtendedTestApplication']]],
-  ['increment_8',['increment',['../struct_chimera_t_k_1_1_spectrum_description.html#a4006c9278a91b342b2214965a3779d81',1,'ChimeraTK::SpectrumDescription']]],
-  ['incrementsource_9',['incrementSource',['../struct_chimera_t_k_1_1_spectrum_description.html#a8a4e1dfb8644ee71bdac83a897d4f1f9',1,'ChimeraTK::SpectrumDescription']]],
-  ['init_10',['init',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a80c3ca3307536c6beed43a6783fc354d',1,'ChimeraTK::CSAdapterEqFct::init()'],['../struct_zero_m_q_fixture.html#aa07ea7e692feb918abf603fa23e8217f',1,'ZeroMQFixture::init()']]],
-  ['initialise_11',['initialise',['../struct_extended_test_application.html#a1f22d9ffb0bba119f44bd24434989abd',1,'ExtendedTestApplication']]],
-  ['int_12',['Int',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661a1686a6c336b71b36d77354cea19a8b52',1,'ChimeraTK::AutoPropertyDescription']]],
-  ['integer_5ftest_5ftypes_13',['integer_test_types',['../test_doocs_process_scalar_8cpp.html#afa8227395e14c6feb008ba878fc7145a',1,'testDoocsProcessScalar.cpp']]],
-  ['integrating_20your_20control_20system_20application_20into_20doocs_14',['Integrating your control system application into DOOCS',['../index.html#Integration',1,'']]],
-  ['into_20doocs_15',['Integrating your control system application into DOOCS',['../index.html#Integration',1,'']]],
-  ['isfan_16',['isFan',['../class_chimera_t_k_1_1_routing_decorator.html#ab1307ff3fbd3efacc770b0413ddcf155',1,'ChimeraTK::RoutingDecorator']]],
-  ['isfansource_17',['isFanSource',['../class_chimera_t_k_1_1_routing_decorator_domain.html#a14e2d4842429f00cfb57bc6e37993b10',1,'ChimeraTK::RoutingDecoratorDomain']]],
-  ['isinitialised_18',['isInitialised',['../class_chimera_t_k_1_1_doocs_adapter.html#aefa97e9f933246fe87418ed282900f54',1,'ChimeraTK::DoocsAdapter']]],
-  ['iswriteable_19',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes']]],
-  ['iswriteablesource_20',['isWriteableSource',['../struct_chimera_t_k_1_1_property_attributes.html#abb1ac7150723bd12bb436453f13f9fa2',1,'ChimeraTK::PropertyAttributes']]]
+  ['hashistory_0',['hasHistory',['../struct_chimera_t_k_1_1_property_attributes.html#a927a4bb8520eba6fe1a0ea8fb34d899b',1,'ChimeraTK::PropertyAttributes']]],
+  ['hasnativedescriptionunits_1',['hasnativedescriptionunits',['../class_chimera_t_k_1_1_doocs_ifff.html#a0a1d343d8808042da34e83104fe414c2',1,'ChimeraTK::DoocsIfff::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_iiii.html#a480adebdd761f738b5ddab0c071a393c',1,'ChimeraTK::DoocsIiii::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#aaaaaa886669f7b14975613e4b5734635',1,'ChimeraTK::DoocsProcessScalar::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a804f160dac782b3c5603516f3de542e1',1,'ChimeraTK::DoocsSpectrum::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_doocs_xy.html#ad76d74823da9f9c0fb9a0cb4064a232f',1,'ChimeraTK::DoocsXy::hasNativeDescriptionUnits()'],['../class_chimera_t_k_1_1_property_base.html#a150686828196c331031b1ed6d1ab7fdc',1,'ChimeraTK::PropertyBase::hasNativeDescriptionUnits()']]],
+  ['hasotherpropertiestoupdate_2',['hasOtherPropertiesToUpdate',['../class_chimera_t_k_1_1_property_base.html#a1af7feb7108c210432980262da7e2b87',1,'ChimeraTK::PropertyBase']]]
 ];
