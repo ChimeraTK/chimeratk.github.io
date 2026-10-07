@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['with_20accessmode_3a_3await_5ffor_5fnew_5fdata_0',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]],
-  ['without_20a_20map_20file_1',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]],
-  ['write_20a_20jmap_20file_20from_20a_20device_20catalogue_2',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]]
+  ['v0_200wip_0',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]],
+  ['v1_202_1',['Technical specification: TransferElement V1.2',['../spec__transfer_element.html',1,'']]],
+  ['value_20registers_201d_20register_20accessors_2',['Multi Value Registers (1D Register Accessors)',['../accessor1d.html',1,'']]],
+  ['verification_3',['CR-001: Interrupt-driven reads on double-buffered registers (verification)',['../md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html',1,'change_requests']]],
+  ['version_201_200_4',['CR-006: JMAP file format version 1.0',['../md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html',1,'change_requests']]],
+  ['versionnumbers_20v0_200wip_5',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]]
 ];

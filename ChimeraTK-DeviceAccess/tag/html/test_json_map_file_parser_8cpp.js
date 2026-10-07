@@ -2,6 +2,7 @@ var test_json_map_file_parser_8cpp =
 [
     [ "BOOST_TEST_DYN_LINK", "test_json_map_file_parser_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_json_map_file_parser_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a1363d010d044bba9e508fb0264d66290", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a95dc2cfd2a3871a002ea8c35f3802fb5", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a3021bb347fd99a327311b1f0a0916a0a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_json_map_file_parser_8cpp.html#a4a8320d2d1715f8fe022210a993393b0", null ],

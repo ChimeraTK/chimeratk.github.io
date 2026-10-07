@@ -1,6 +1,10 @@
 var NAVTREEINDEX24 =
 {
+"namespace_chimera_t_k_1_1csa__helpers.html#a1fc9c6572c4fd56f1f9fb265bc89bc46":[21,0,1,1,1],
+"namespace_chimera_t_k_1_1csa__helpers.html#a2f4a838d449ed98e49552e7927a4be68":[21,0,1,1,3],
+"namespace_chimera_t_k_1_1csa__helpers.html#a2f4a838d449ed98e49552e7927a4be68":[21,0,1,1,2],
 "namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[21,0,1,1,5],
+"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968":[21,0,1,1,4],
 "namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1":[21,0,1,1,8],
 "namespace_chimera_t_k_1_1csa__helpers.html#a7e71eb466ab2b1804510744bec65cac1":[21,0,1,1,7],
 "namespace_chimera_t_k_1_1csa__helpers.html#ab4ff7a4fec1a1e0c63c62ae5318205f6":[21,0,1,1,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "struct_bit_range_accessor_target.html#a6434b3fd838355a890fd760cb4a171ec":[23,0,23,4],
 "struct_bit_range_accessor_target.html#a6434b3fd838355a890fd760cb4a171ec":[23,0,23,5],
 "struct_bit_range_accessor_target.html#a72cbe46da8815fbf3d84ae23213c4a16":[23,0,23,6],
-"struct_bit_range_accessor_target.html#a9355f34dad1faccf9e52b7ba7285ad10":[23,0,23,3],
-"struct_bit_range_accessor_target.html#aeac92047de4d71233c92361e83f8e6be":[23,0,23,1],
-"struct_bit_range_accessor_target.html#aeac92047de4d71233c92361e83f8e6be":[23,0,23,0],
-"struct_bit_register_descriptor_base.html":[23,0,24],
-"struct_bit_register_descriptor_base.html#a020f15eb52ccf053e9874bc6c32a09b1":[23,0,24,6]
+"struct_bit_range_accessor_target.html#a9355f34dad1faccf9e52b7ba7285ad10":[23,0,23,3]
 };

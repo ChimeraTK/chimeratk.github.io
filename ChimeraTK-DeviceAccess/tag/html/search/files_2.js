@@ -15,8 +15,9 @@ var searchData=
   ['cr_2d005_2ddevice_2dto_2djmap_2emd_12',['CR-005-device-to-jmap.md',['../_c_r-005-device-to-jmap_8md.html',1,'']]],
   ['cr_2d006_2djmap_2dfile_2dformat_2dversion_2emd_13',['CR-006-jmap-file-format-version.md',['../_c_r-006-jmap-file-format-version_8md.html',1,'']]],
   ['cr_2d009_2drebot_2dconnection_2dclose_2don_2dreset_2emd_14',['CR-009-rebot-connection-close-on-reset.md',['../_c_r-009-rebot-connection-close-on-reset_8md.html',1,'']]],
-  ['ctrlintf_2ecc_15',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
-  ['ctrlintf_2eh_16',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
-  ['custom_5fbackends_2edox_17',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
-  ['custombackend_2ecc_18',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]]
+  ['cr_2d012_2dbackend_2dspecific_2dinterrupt_2dhandler_2dentries_2emd_15',['CR-012-backend-specific-interrupt-handler-entries.md',['../_c_r-012-backend-specific-interrupt-handler-entries_8md.html',1,'']]],
+  ['ctrlintf_2ecc_16',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
+  ['ctrlintf_2eh_17',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
+  ['custom_5fbackends_2edox_18',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
+  ['custombackend_2ecc_19',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]]
 ];

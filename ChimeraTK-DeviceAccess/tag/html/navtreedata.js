@@ -142,11 +142,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_2xdma__backend.html", [
-      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md49", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md50", [
-        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md51", null ],
-        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md52", null ],
-        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md53", null ]
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md53", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md54", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md55", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md56", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md57", null ]
       ] ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -191,6 +191,11 @@ var NAVTREE =
           [ "Alternatives considered", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html#autotoc_md30", null ]
         ] ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html#autotoc_md31", null ]
+      ] ],
+      [ "CR-012: Backend-specific interrupt handler entries in the JMAP file", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html#autotoc_md33", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html#autotoc_md34", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html#autotoc_md35", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -261,19 +266,19 @@ var NAVTREEINDEX =
 "class_dummy_register_test.html#a6a476d9aec16f7a3c1c21ae13efe1b61",
 "dmap.html#Map",
 "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html",
-"namespace_chimera_t_k_1_1csa__helpers.html#a72977d2c7ac821eeccf2a8ba7e419968",
-"struct_bit_register_descriptor_base.html#a070ba0d9bdd145f103de37f4913eef12",
-"struct_chimera_t_k_1_1_img_header.html#a528fe25c81e0a564f4093da7e4b9a666",
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html",
-"struct_constant_register_descriptor_base.html",
-"struct_integers_base.html#a7ca3366068eb38ef08377e18fdeb6c68",
-"struct_new_backend.html#a569a3484da2cce7f6e0b8dd5da572587",
-"struct_reg_upper_half_of_firmware.html#ad4ea75e1620d7ef41f3255084ca70b80",
-"struct_static_core.html#a2eba5dcb8602cda0416c3ea027fc470b",
-"test_data_consistency_realm_8cpp.html#a58288abb28d9223ce54dc088cc6db6f6",
-"test_l_map_file_8cpp.html",
-"test_raw_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649",
-"test_transfer_group_8cpp.html#a6b2a3852db8bb19ab6909bac01859985"
+"namespace_chimera_t_k_1_1csa__helpers.html#a1fc9c6572c4fd56f1f9fb265bc89bc46",
+"struct_bit_range_accessor_target.html#aeac92047de4d71233c92361e83f8e6be",
+"struct_chimera_t_k_1_1_img_header.html#a1cbb83431e09973a0858263e5fb9bd1c",
+"struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a",
+"struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657",
+"struct_integers_base.html#a224cf05438bddbf99287563b4a704be3",
+"struct_named_channel_slice_async0.html#a905f04c67d993064851688133e22b93c",
+"struct_reg_upper_half_of_firmware.html#a9535787453cd8e41977f3b3a2f4a4086",
+"struct_sixty_four_bit.html#afbd1ae36801ff667a6f17f730a3c2e31",
+"test_data_consistency_group_8cpp_source.html",
+"test_l_map_bit_range_plugin_8cc.html#a740d1b5d9962fb0b8d9f43f19888f020",
+"test_raw_converter_8cpp.html#a3a0ca486480cfb8b933a4c8effcc789e",
+"test_transfer_group_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

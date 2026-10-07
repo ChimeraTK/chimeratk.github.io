@@ -662,161 +662,191 @@ $(document).ready(function(){initNavTree('_json_map_file_parser_8cc_source.html'
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>  <span class="keyword">struct </span>InterruptHandlerEntry {</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="keyword">struct </span>Controller {</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>      std::string path;</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>      std::set&lt;std::string&gt; options;</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>      <span class="keywordtype">int</span> version{1};</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>      NLOHMANN_DEFINE_TYPE_INTRUSIVE_WITH_DEFAULT(Controller, path, options, version)</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    } INTC;</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    std::map&lt;std::string, InterruptHandlerEntry&gt; subhandler;</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="keywordtype">void</span> fill(<span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; intId, MetadataCatalogue&amp; metadata)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>      <span class="keywordflow">if</span>(!intId.empty()) {</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        <a class="code hl_typedef" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> jsonIntId;</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>        jsonIntId = intId;</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        <a class="code hl_typedef" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> jsonController;</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        jsonController = INTC;</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        metadata.addMetadata(<span class="stringliteral">&quot;!&quot;</span> + jsonIntId.dump(), R<span class="stringliteral">&quot;({&quot;INTC&quot;:)&quot; + jsonController.dump() + </span><span class="stringliteral">&quot;}&quot;</span>);</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="comment">// The whole interrupt handler entry except its &#39;subhandler&#39; member, kept verbatim as backend-specific metadata.</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <a class="code hl_typedef" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> raw;</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    std::map&lt;std::string, InterruptHandlerEntry&gt; subhandler;</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span> </div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    <span class="keywordtype">void</span> fill(<span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; intId, MetadataCatalogue&amp; metadata)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>      <span class="keywordflow">if</span>(!intId.empty()) {</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>        <a class="code hl_typedef" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> jsonIntId;</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        jsonIntId = intId;</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        metadata.addMetadata(<span class="stringliteral">&quot;!&quot;</span> + jsonIntId.dump(), raw.dump());</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>      }</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span> </div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [subIntId, handler] : subhandler) {</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        std::vector&lt;size_t&gt; qualifiedSubIntId = intId;</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        qualifiedSubIntId.push_back(std::stoll(subIntId));</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        handler.fill(qualifiedSubIntId, metadata);</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>      }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [subIntId, handler] : subhandler) {</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        std::vector&lt;size_t&gt; qualfiedSubIntId = intId;</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        qualfiedSubIntId.push_back(std::stoll(subIntId));</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        handler.fill(qualfiedSubIntId, metadata);</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>      }</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    }</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    NLOHMANN_DEFINE_TYPE_INTRUSIVE_WITH_DEFAULT(InterruptHandlerEntry, INTC, subhandler)</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  };</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  std::pair&lt;NumericAddressedRegisterCatalogue, MetadataCatalogue&gt; JsonMapFileParser::Imp::parse(std::ifstream&amp; stream) {</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    <span class="comment">// read and parse JSON data</span></div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>      <span class="keyword">auto</span> data = json::parse(stream);</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>      <span class="comment">// Supported map format version (MAJOR.MINOR, no patch component).</span></div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>      <span class="keyword">constexpr</span> uint32_t supportedMapFormatMajor = 1;</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>      <span class="keyword">constexpr</span> uint32_t supportedMapFormatMinor = 0;</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>      <span class="comment">// Check the map format version: an exactly two-component MAJOR.MINOR string whose components are non-empty</span></div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>      <span class="comment">// sequences of decimal digits, compared numerically against the supported version. Each component is parsed with</span></div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>      <span class="comment">// std::from_chars into a uint32_t; a malformed or oversized component is reported through the returned error</span></div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>      <span class="comment">// code or a trailing character rather than by throwing, so no exception escapes the version check.</span></div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>      std::string ver = data.at(<span class="stringliteral">&quot;mapFormatVersion&quot;</span>).get&lt;std::string&gt;();</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>      uint32_t major = 0;</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>      uint32_t minor = 0;</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>      <span class="keyword">auto</span> [p, e1] = std::from_chars(ver.data(), ver.data() + ver.size(), major);</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>      <span class="keywordflow">if</span>(e1 != std::errc{} || p == ver.data() + ver.size() || *p++ != <span class="charliteral">&#39;.&#39;</span>) {</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JMAP file, mapFormatVersion contains wrong version format&quot;</span>);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    }</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="comment">// NOLINTNEXTLINE(readability-identifier-naming)</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    <span class="keyword">friend</span> <span class="keywordtype">void</span> from_json(<span class="keyword">const</span> <a class="code hl_typedef" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&amp; j, InterruptHandlerEntry&amp; e) {</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>      e.raw = j;</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>      e.raw.erase(<span class="stringliteral">&quot;subhandler&quot;</span>);</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>      <span class="comment">// Apply the common normalisation to the entry and to each controller data object it carries: drop keys starting</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>      <span class="comment">// with an underscore and default a missing &#39;version&#39; to 1. The rest of the backend-specific data structure is</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>      <span class="comment">// preserved verbatim and passed on as metadata.</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>      <span class="comment">// First drop underscore-prefixed keys at the entry&#39;s top level (e.g. a &quot;_comment&quot; sibling of the controller key).</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = e.raw.begin(); it != e.raw.end();) {</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        <span class="keywordflow">if</span>(!it.key().empty() &amp;&amp; it.key().front() == <span class="charliteral">&#39;_&#39;</span>) {</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>          it = e.raw.erase(it);</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        }</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>          ++it;</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        }</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>      }</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>      <span class="comment">// Then normalise each controller data object carried by the entry.</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; value : e.raw) {</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        <span class="keywordflow">if</span>(!value.is_object()) {</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        }</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        <span class="keywordflow">if</span>(!value.contains(<span class="stringliteral">&quot;version&quot;</span>)) {</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>          value[<span class="stringliteral">&quot;version&quot;</span>] = 1;</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        }</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = value.begin(); it != value.end();) {</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>          <span class="keywordflow">if</span>(!it.key().empty() &amp;&amp; it.key().front() == <span class="charliteral">&#39;_&#39;</span>) {</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>            it = value.erase(it);</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>          }</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>          <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            ++it;</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>          }</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        }</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>      }</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>      <span class="keyword">auto</span> [q, e2] = std::from_chars(p, ver.data() + ver.size(), minor);</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      <span class="keywordflow">if</span>(e2 != std::errc{} || q != ver.data() + ver.size()) {</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JMAP file, mapFormatVersion contains wrong version format&quot;</span>);</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>      }</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>      <span class="keywordflow">if</span>(j.contains(<span class="stringliteral">&quot;subhandler&quot;</span>)) {</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        e.subhandler = j.at(<span class="stringliteral">&quot;subhandler&quot;</span>).get&lt;std::map&lt;std::string, InterruptHandlerEntry&gt;&gt;();</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      }</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    }</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  };</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>      <span class="keywordflow">if</span>(major != supportedMapFormatMajor || minor != supportedMapFormatMinor) {</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Unsupported map format version &#39;&quot;</span> + ver + <span class="stringliteral">&quot;&#39;. Supported version: 1.0&quot;</span>);</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>      }</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>      <span class="comment">// Parse the &quot;addressSpace&quot; entries recursively</span></div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>      std::map&lt;std::string, JsonAddressSpaceEntry&gt; addressSpace = data.at(<span class="stringliteral">&quot;addressSpace&quot;</span>);</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [addressSpaceName, entry] : addressSpace) {</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        entry.addInfos(catalogue, addressSpaceName, <span class="stringliteral">&quot;/&quot;</span>, <span class="comment">/*addressSetByParent=*/</span><span class="keyword">false</span>);</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      }</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>      <span class="comment">// Scan the catalogue for bit ranges.</span></div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>      <span class="comment">// Afterwards, scan again for registers which have bit shift 0, a width smaller than their element size and that</span></div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>      <span class="comment">// share their starting address with a bit range. They have to become bit ranges as well.</span></div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      std::set&lt;std::pair&lt;uint64_t, uint64_t&gt;&gt; addressesWithBitRange;</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; reg : catalogue) {</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        <span class="keywordflow">if</span>(reg.isBitRange) {</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>          addressesWithBitRange.insert({reg.bar, reg.address});</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        }</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>      }</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      <span class="keywordflow">if</span>(addressesWithBitRange.size()) {</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <span class="comment">// Compute the element data width (bytes per element times 8) from the single channel&#39;s raw type. This equals</span></div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        <span class="comment">// the element pitch only for non-strided registers; a strided channel slice has a larger element pitch than</span></div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <span class="comment">// its element data width, so such slices must not be reclassified as bit ranges even when their element data</span></div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        <span class="comment">// width is smaller than the pitch or they share their address with a bit range.</span></div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        <span class="keyword">auto</span> elementDataWidth = [](<span class="keyword">const</span> NumericAddressedRegisterInfo::ChannelInfo&amp; c) {</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>          <span class="comment">// Obtain the element data width (bytes per element times 8) from the channel&#39;s raw type via</span></div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>          <span class="comment">// DataType::getNumberOfBytes(); no std::bad_cast can arise because the switch covers every DataType value.</span></div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>          <span class="keywordflow">return</span> c.getRawType().getNumberOfBytes() * 8;</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        };</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; reg : catalogue) {</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>          <span class="keywordflow">if</span>((reg.channels.size() == 1) &amp;&amp; (reg.channels[0].bitOffset == 0) &amp;&amp;</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>              (reg.channels[0].width &lt; elementDataWidth(reg.channels[0])) &amp;&amp;</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>              (reg.elementPitchBits == elementDataWidth(reg.channels[0]))) {</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>            <span class="keywordflow">if</span>(addressesWithBitRange.find({reg.bar, reg.address}) != addressesWithBitRange.end()) {</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>              reg.isBitRange = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>            }</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>          }</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        }</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  std::pair&lt;NumericAddressedRegisterCatalogue, MetadataCatalogue&gt; JsonMapFileParser::Imp::parse(std::ifstream&amp; stream) {</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <span class="comment">// read and parse JSON data</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>      <span class="keyword">auto</span> data = json::parse(stream);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      <span class="comment">// Supported map format version (MAJOR.MINOR, no patch component).</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      <span class="keyword">constexpr</span> uint32_t supportedMapFormatMajor = 1;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>      <span class="keyword">constexpr</span> uint32_t supportedMapFormatMinor = 0;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>      <span class="comment">// Check the map format version: an exactly two-component MAJOR.MINOR string whose components are non-empty</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      <span class="comment">// sequences of decimal digits, compared numerically against the supported version. Each component is parsed with</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      <span class="comment">// std::from_chars into a uint32_t; a malformed or oversized component is reported through the returned error</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>      <span class="comment">// code or a trailing character rather than by throwing, so no exception escapes the version check.</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>      std::string ver = data.at(<span class="stringliteral">&quot;mapFormatVersion&quot;</span>).get&lt;std::string&gt;();</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>      uint32_t major = 0;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>      uint32_t minor = 0;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>      <span class="keyword">auto</span> [p, e1] = std::from_chars(ver.data(), ver.data() + ver.size(), major);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      <span class="keywordflow">if</span>(e1 != std::errc{} || p == ver.data() + ver.size() || *p++ != <span class="charliteral">&#39;.&#39;</span>) {</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JMAP file, mapFormatVersion contains wrong version format&quot;</span>);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>      }</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      <span class="keyword">auto</span> [q, e2] = std::from_chars(p, ver.data() + ver.size(), minor);</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      <span class="keywordflow">if</span>(e2 != std::errc{} || q != ver.data() + ver.size()) {</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JMAP file, mapFormatVersion contains wrong version format&quot;</span>);</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>      }</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>      <span class="keywordflow">if</span>(major != supportedMapFormatMajor || minor != supportedMapFormatMinor) {</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Unsupported map format version &#39;&quot;</span> + ver + <span class="stringliteral">&quot;&#39;. Supported version: 1.0&quot;</span>);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>      }</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>      <span class="comment">// Parse the &quot;addressSpace&quot; entries recursively</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>      std::map&lt;std::string, JsonAddressSpaceEntry&gt; addressSpace = data.at(<span class="stringliteral">&quot;addressSpace&quot;</span>);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [addressSpaceName, entry] : addressSpace) {</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        entry.addInfos(catalogue, addressSpaceName, <span class="stringliteral">&quot;/&quot;</span>, <span class="comment">/*addressSetByParent=*/</span><span class="keyword">false</span>);</div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>      }</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>      <span class="comment">// Validate every &#39;selectedBy&#39; selector register referenced by any channel: (a) the referenced selector</span></div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      <span class="comment">// register must exist in the catalogue, and (b) it must not itself be conditionally enabled by a &#39;selectedBy&#39;</span></div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>      <span class="comment">// (a selector must be unconditionally readable, otherwise gating would depend on another gate).</span></div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; reg : catalogue) {</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; channel : reg.channels) {</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>          <span class="keywordflow">if</span>(!channel.selectedBy) {</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>          }</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>          std::string regPath = channel.selectedBy-&gt;regPath;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>          std::string channelName = reg.getRegisterName();</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>          <span class="comment">// (a) The selector register must exist in the catalogue.</span></div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>          <span class="keywordflow">if</span>(!catalogue.hasRegister(channel.selectedBy-&gt;regPath)) {</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: channel &#39;&quot;</span> + channelName +</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                <span class="stringliteral">&quot;&#39; is gated by &#39;selectedBy&#39; referencing undefined register &#39;&quot;</span> + regPath + <span class="stringliteral">&quot;&#39;.&quot;</span>);</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>          }</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>          <span class="comment">// (b) The selector register must not itself be conditionally enabled by a &#39;selectedBy&#39; of its own,</span></div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>          <span class="comment">// since the gate it drives must be readable unconditionally to evaluate the selection.</span></div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>          <span class="keyword">auto</span> selectorReg = catalogue.getBackendRegister(channel.selectedBy-&gt;regPath);</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>          <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; selectorChannel : selectorReg.channels) {</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>            <span class="keywordflow">if</span>(selectorChannel.selectedBy) {</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>              <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: selector register &#39;&quot;</span> +</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>                  regPath + <span class="stringliteral">&quot;&#39; of channel &#39;&quot;</span> + channelName +</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                  <span class="stringliteral">&quot;&#39; is itself conditionally enabled by &#39;selectedBy&#39;; a selector register must not be gated.&quot;</span>);</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            }</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>          }</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        }</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>      }</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry : data.at(<span class="stringliteral">&quot;metadata&quot;</span>).items()) {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <span class="keywordflow">if</span>(entry.key().empty()) {</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>          <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>              <span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: Metadata key must not be empty.&quot;</span>);</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>        }</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>        <span class="keywordflow">if</span>(entry.key()[0] == <span class="charliteral">&#39;_&#39;</span>) {</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        }</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        metadata.addMetadata(entry.key(), entry.value());</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>      }</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>      <span class="comment">// backwards compatibility: interrupt handler description is expected to be in metadata</span></div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>      InterruptHandlerEntry interruptHandler;</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>      interruptHandler.subhandler = data.at(<span class="stringliteral">&quot;interruptHandler&quot;</span>);</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>      interruptHandler.fill({}, metadata);</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>      <span class="keywordflow">return</span> {std::move(catalogue), std::move(metadata)};</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    }</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    <span class="keywordflow">catch</span>(<span class="keyword">const</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>&amp; e) {</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: &quot;</span> + e.<a class="code hl_function" href="class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400">what</a>());</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    }</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    <span class="keywordflow">catch</span>(<span class="keyword">const</span> json::exception&amp; e) {</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: &quot;</span> + e.<a class="code hl_function" href="class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400">what</a>());</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    }</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  }</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span> </div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>} <span class="comment">// namespace ChimeraTK::detail</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>      <span class="comment">// Scan the catalogue for bit ranges.</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      <span class="comment">// Afterwards, scan again for registers which have bit shift 0, a width smaller than their element size and that</span></div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>      <span class="comment">// share their starting address with a bit range. They have to become bit ranges as well.</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      std::set&lt;std::pair&lt;uint64_t, uint64_t&gt;&gt; addressesWithBitRange;</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; reg : catalogue) {</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keywordflow">if</span>(reg.isBitRange) {</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>          addressesWithBitRange.insert({reg.bar, reg.address});</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        }</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      }</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      <span class="keywordflow">if</span>(addressesWithBitRange.size()) {</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        <span class="comment">// Compute the element data width (bytes per element times 8) from the single channel&#39;s raw type. This equals</span></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        <span class="comment">// the element pitch only for non-strided registers; a strided channel slice has a larger element pitch than</span></div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="comment">// its element data width, so such slices must not be reclassified as bit ranges even when their element data</span></div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        <span class="comment">// width is smaller than the pitch or they share their address with a bit range.</span></div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        <span class="keyword">auto</span> elementDataWidth = [](<span class="keyword">const</span> NumericAddressedRegisterInfo::ChannelInfo&amp; c) {</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>          <span class="comment">// Obtain the element data width (bytes per element times 8) from the channel&#39;s raw type via</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>          <span class="comment">// DataType::getNumberOfBytes(); no std::bad_cast can arise because the switch covers every DataType value.</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>          <span class="keywordflow">return</span> c.getRawType().getNumberOfBytes() * 8;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        };</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; reg : catalogue) {</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>          <span class="keywordflow">if</span>((reg.channels.size() == 1) &amp;&amp; (reg.channels[0].bitOffset == 0) &amp;&amp;</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>              (reg.channels[0].width &lt; elementDataWidth(reg.channels[0])) &amp;&amp;</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>              (reg.elementPitchBits == elementDataWidth(reg.channels[0]))) {</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            <span class="keywordflow">if</span>(addressesWithBitRange.find({reg.bar, reg.address}) != addressesWithBitRange.end()) {</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>              reg.isBitRange = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            }</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>          }</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        }</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>      }</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>      <span class="comment">// Validate every &#39;selectedBy&#39; selector register referenced by any channel: (a) the referenced selector</span></div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>      <span class="comment">// register must exist in the catalogue, and (b) it must not itself be conditionally enabled by a &#39;selectedBy&#39;</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>      <span class="comment">// (a selector must be unconditionally readable, otherwise gating would depend on another gate).</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; reg : catalogue) {</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; channel : reg.channels) {</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>          <span class="keywordflow">if</span>(!channel.selectedBy) {</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>          }</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>          std::string regPath = channel.selectedBy-&gt;regPath;</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>          std::string channelName = reg.getRegisterName();</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>          <span class="comment">// (a) The selector register must exist in the catalogue.</span></div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>          <span class="keywordflow">if</span>(!catalogue.hasRegister(channel.selectedBy-&gt;regPath)) {</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: channel &#39;&quot;</span> + channelName +</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                <span class="stringliteral">&quot;&#39; is gated by &#39;selectedBy&#39; referencing undefined register &#39;&quot;</span> + regPath + <span class="stringliteral">&quot;&#39;.&quot;</span>);</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>          }</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>          <span class="comment">// (b) The selector register must not itself be conditionally enabled by a &#39;selectedBy&#39; of its own,</span></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>          <span class="comment">// since the gate it drives must be readable unconditionally to evaluate the selection.</span></div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>          <span class="keyword">auto</span> selectorReg = catalogue.getBackendRegister(channel.selectedBy-&gt;regPath);</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>          <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; selectorChannel : selectorReg.channels) {</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>            <span class="keywordflow">if</span>(selectorChannel.selectedBy) {</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>              <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: selector register &#39;&quot;</span> +</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>                  regPath + <span class="stringliteral">&quot;&#39; of channel &#39;&quot;</span> + channelName +</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>                  <span class="stringliteral">&quot;&#39; is itself conditionally enabled by &#39;selectedBy&#39;; a selector register must not be gated.&quot;</span>);</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>            }</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>          }</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        }</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>      }</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry : data.at(<span class="stringliteral">&quot;metadata&quot;</span>).items()) {</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        <span class="keywordflow">if</span>(entry.key().empty()) {</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>          <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>              <span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: Metadata key must not be empty.&quot;</span>);</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        }</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>        <span class="keywordflow">if</span>(entry.key()[0] == <span class="charliteral">&#39;_&#39;</span>) {</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>        }</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>        metadata.addMetadata(entry.key(), entry.value());</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>      }</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>      <span class="comment">// backwards compatibility: interrupt handler description is expected to be in metadata</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>      InterruptHandlerEntry interruptHandler;</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>      interruptHandler.subhandler = data.at(<span class="stringliteral">&quot;interruptHandler&quot;</span>);</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>      interruptHandler.fill({}, metadata);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span> </div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>      <span class="keywordflow">return</span> {std::move(catalogue), std::move(metadata)};</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    }</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keywordflow">catch</span>(<span class="keyword">const</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>&amp; e) {</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: &quot;</span> + e.<a class="code hl_function" href="class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400">what</a>());</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    }</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keywordflow">catch</span>(<span class="keyword">const</span> json::exception&amp; e) {</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(<span class="stringliteral">&quot;Error parsing JSON map file &#39;&quot;</span> + fileName + <span class="stringliteral">&quot;&#39;: &quot;</span> + e.<a class="code hl_function" href="class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400">what</a>());</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    }</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>  }</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="comment">  /********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>} <span class="comment">// namespace ChimeraTK::detail</span></div>
 <div class="ttc" id="a_json_extensions_8h_html"><div class="ttname"><a href="_json_extensions_8h.html">JsonExtensions.h</a></div></div>
 <div class="ttc" id="a_json_map_file_parser_8h_html"><div class="ttname"><a href="_json_map_file_parser_8h.html">JsonMapFileParser.h</a></div></div>
 <div class="ttc" id="a_muxed_interrupt_distributor_8cc_html_ab701e3ac61a85b337ec5c1abaad6742d"><div class="ttname"><a href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition</b> <a href="_muxed_interrupt_distributor_8cc_source.html#l00012">MuxedInterruptDistributor.cc:12</a></div></div>

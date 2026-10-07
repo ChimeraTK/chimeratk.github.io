@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a":[23,0,1,92,6],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a":[21,0,1,98,6],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945":[23,0,1,92,1],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945":[21,0,1,98,1],
 "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html":[23,0,1,92,0],
 "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html":[21,0,1,98,0],
 "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a5d3a19c9744a93a9167a8f270cc93775":[21,0,1,98,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b":[23,0,1,0,18,7],
 "struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b":[21,0,1,0,18,7],
 "struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[21,0,1,1,0],
-"struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[23,0,1,1,0],
-"struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657":[21,0,1,1,0,0],
-"struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657":[23,0,1,1,0,0],
-"struct_cie_writable_test_fixture.html":[23,0,41],
-"struct_cie_writable_test_fixture.html#a34afe71ed5b6249eb6cce7295f7f07a4":[23,0,41,0]
+"struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[23,0,1,1,0]
 };

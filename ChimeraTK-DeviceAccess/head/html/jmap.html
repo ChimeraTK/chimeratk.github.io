@@ -300,7 +300,7 @@ Address inheritance</h2>
 Advanced features</h1>
 <h2><a class="anchor" id="jmap_interrupts"></a>
 Interrupts</h2>
-<p>The <code>interruptHandler</code> top-level object describes interrupt controllers which are used to multiplex multiple interrupt sources in firmware into the same hardware interrupt request. Each key is an interrupt id and each entry carries an <code>INTC</code> controller with its configuration and optionally nested <code>subhandler</code> entries: </p><pre class="fragment">"interruptHandler": {
+<p>The <code>interruptHandler</code> top-level object describes interrupt controllers which are used to multiplex multiple interrupt sources in firmware into the same hardware interrupt request. Each key is an interrupt id and each entry carries a controller with its configuration and optionally nested <code>subhandler</code> entries. The content of the controller entry is backend-specific and extensible: the backend defines the controller type (e.g. <code>INTC</code>) and the data structure it carries, and the parser passes the entry on to the metadata verbatim without interpreting it: </p><pre class="fragment">"interruptHandler": {
   "3": {
     "INTC": { "path": "MY_INTC", "options": ["MER"], "version": 1 },
     "subhandler": {
@@ -310,7 +310,8 @@ Interrupts</h2>
     }
   }
 }
-</pre><p>Registers can be triggered by an interrupt. The <code>"triggeredByInterrupt"</code> field contains the full interrupt id, which is an array of all ids and sub-ids as described in the <code>interruptHandler</code> object. Such registers are always read-only, hence the <code>"triggeredByInterrupt"</code> field is mutually exclusive with the <code>"access"</code> field.</p>
+</pre><p>The JSON schema distributed with this project (<code>schemas/jmap.schema.json</code>) is advisory only and meant for interactive validation in editors; it is not enforced by the parser.</p>
+<p>Registers can be triggered by an interrupt. The <code>"triggeredByInterrupt"</code> field contains the full interrupt id, which is an array of all ids and sub-ids as described in the <code>interruptHandler</code> object. Such registers are always read-only, hence the <code>"triggeredByInterrupt"</code> field is mutually exclusive with the <code>"access"</code> field.</p>
 <p>Plain interrupts have a <code>representation</code> of type <code>"void"</code> and must not have an address. Example: </p><pre class="fragment">"addressSpace": {
   "PRIMARY_INTERRUPT_3": {
     "triggeredByInterrupt": [3],

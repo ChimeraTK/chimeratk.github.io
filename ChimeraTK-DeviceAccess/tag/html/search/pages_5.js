@@ -16,6 +16,7 @@ var searchData=
   ['cr_20005_3a_20tool_20to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_13',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
   ['cr_20006_3a_20jmap_20file_20format_20version_201_200_14',['CR-006: JMAP file format version 1.0',['../md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html',1,'change_requests']]],
   ['cr_20009_3a_20rebot_20connection_20close_20must_20not_20throw_20on_20a_20reset_20connection_15',['CR-009: Rebot connection close must not throw on a reset connection',['../md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html',1,'change_requests']]],
-  ['creating_20custom_20backends_16',['Using and creating custom backends',['../custom_backends.html',1,'']]],
-  ['custom_20backends_17',['Using and creating custom backends',['../custom_backends.html',1,'']]]
+  ['cr_20012_3a_20backend_20specific_20interrupt_20handler_20entries_20in_20the_20jmap_20file_16',['CR-012: Backend-specific interrupt handler entries in the JMAP file',['../md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html',1,'change_requests']]],
+  ['creating_20custom_20backends_17',['Using and creating custom backends',['../custom_backends.html',1,'']]],
+  ['custom_20backends_18',['Using and creating custom backends',['../custom_backends.html',1,'']]]
 ];
