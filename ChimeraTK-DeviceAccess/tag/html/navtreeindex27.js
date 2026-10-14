@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a7bb408ba7f852be32cb75b7a8e8e95c7":[23,0,1,92,5],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a8851c41555d1ba0cd42b8ddf2db47cad":[21,0,1,98,4],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a8851c41555d1ba0cd42b8ddf2db47cad":[23,0,1,92,4],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a9a43a9108870ac7984db0501e4431c94":[23,0,1,92,8],
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a9a43a9108870ac7984db0501e4431c94":[21,0,1,98,8],
 "struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a":[23,0,1,92,6],
 "struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a":[21,0,1,98,6],
 "struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945":[23,0,1,92,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX27 =
 "struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a52360026ad9981a07c8b7f79a6763ae1":[21,0,1,0,18,6],
 "struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a58add9054029c1862c3fedc61e00ccbe":[23,0,1,0,18,0],
 "struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a58add9054029c1862c3fedc61e00ccbe":[21,0,1,0,18,0],
-"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b8b90b2a990a3cfee5236d9f3440a2c":[21,0,1,0,18,1],
-"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b8b90b2a990a3cfee5236d9f3440a2c":[23,0,1,0,18,1],
-"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b":[23,0,1,0,18,7],
-"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b":[21,0,1,0,18,7],
-"struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[21,0,1,1,0],
-"struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[23,0,1,1,0]
+"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b8b90b2a990a3cfee5236d9f3440a2c":[21,0,1,0,18,1]
 };

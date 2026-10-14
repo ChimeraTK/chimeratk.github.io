@@ -142,11 +142,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_2xdma__backend.html", [
-      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md53", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md54", [
-        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md55", null ],
-        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md56", null ],
-        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md57", null ]
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md58", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md59", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md60", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md61", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md62", null ]
       ] ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -196,6 +196,13 @@ var NAVTREE =
         [ "Requirements", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html#autotoc_md33", null ],
         [ "Specifications", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html#autotoc_md34", null ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html#autotoc_md35", null ]
+      ] ],
+      [ "CR-017: Confine Boost program_options to the device-to-jmap tool", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html#autotoc_md37", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html#autotoc_md38", [
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html#autotoc_md39", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html#autotoc_md40", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -266,19 +273,19 @@ var NAVTREEINDEX =
 "class_dummy_register_test.html#a6a476d9aec16f7a3c1c21ae13efe1b61",
 "dmap.html#Map",
 "md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html",
-"namespace_chimera_t_k_1_1csa__helpers.html#a1fc9c6572c4fd56f1f9fb265bc89bc46",
-"struct_bit_range_accessor_target.html#aeac92047de4d71233c92361e83f8e6be",
-"struct_chimera_t_k_1_1_img_header.html#a1cbb83431e09973a0858263e5fb9bd1c",
-"struct_chimera_t_k_1_1_rebot_protocol0.html#ab92db529c188d720151643c3f314666a",
-"struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657",
-"struct_integers_base.html#a224cf05438bddbf99287563b4a704be3",
-"struct_named_channel_slice_async0.html#a905f04c67d993064851688133e22b93c",
-"struct_reg_upper_half_of_firmware.html#a9535787453cd8e41977f3b3a2f4a4086",
-"struct_sixty_four_bit.html#afbd1ae36801ff667a6f17f730a3c2e31",
-"test_data_consistency_group_8cpp_source.html",
-"test_l_map_bit_range_plugin_8cc.html#a740d1b5d9962fb0b8d9f43f19888f020",
-"test_raw_converter_8cpp.html#a3a0ca486480cfb8b933a4c8effcc789e",
-"test_transfer_group_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
+"namespace_chimera_t_k_1_1async_1_1detail.html",
+"struct_bit_range_accessor_target.html#a3013ba5e94ab16493993c9d90438ffdc",
+"struct_chimera_t_k_1_1_img_header.html#a0925a45a3fdc966e67e5e48270a650a0",
+"struct_chimera_t_k_1_1_rebot_protocol0.html#a7bb408ba7f852be32cb75b7a8e8e95c7",
+"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b8b90b2a990a3cfee5236d9f3440a2c",
+"struct_integers__signed32__async__rw.html#ac4e0ffc0590caaeda76c1b3752fff7d1",
+"struct_named_channel_slice_async0.html#a510da1ae8dc5cb2cb5faebe496688fce",
+"struct_reg_single_word_scaled_twice__push.html#af600606985bdb907f15de80431c70a4e",
+"struct_sixteen_bit_off2.html#a2d1048463c9e4a0f460b5ee56e29977c",
+"test_data_consistency_group_8cpp.html#a84fba0ea3e4dda745bf5c8cde9ce2642",
+"test_l_map_bit_range_plugin_8cc.html#a004c385f49d1f673dd52a2876987ac0c",
+"test_raw_converter_8cpp.html#a288242211a19f7a56530138a4cdb7174",
+"test_transfer_group_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

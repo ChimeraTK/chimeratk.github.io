@@ -1,5 +1,10 @@
 var NAVTREEINDEX28 =
 {
+"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a7b8b90b2a990a3cfee5236d9f3440a2c":[23,0,1,0,18,1],
+"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b":[23,0,1,0,18,7],
+"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html#a939ae08b045baa00726e34c1a36e6c4b":[21,0,1,0,18,7],
+"struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[21,0,1,1,0],
+"struct_chimera_t_k_1_1csa__helpers_1_1_round.html":[23,0,1,1,0],
 "struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657":[21,0,1,1,0,0],
 "struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657":[23,0,1,1,0,0],
 "struct_cie_writable_test_fixture.html":[23,0,41],
@@ -244,10 +249,5 @@ var NAVTREEINDEX28 =
 "struct_integers__signed32__async__rw.html#a85b567152f34bb150de43784ec5f128b":[23,0,96,9],
 "struct_integers__signed32__async__rw.html#a88a5f8d525aaa379e8f7a881fa8eecf0":[23,0,96,15],
 "struct_integers__signed32__async__rw.html#a8baddecf3f7366d5992f6c2078d34e21":[23,0,96,10],
-"struct_integers__signed32__async__rw.html#a8efd03ecd45c0cb9c2a5546bfe6027c7":[23,0,96,8],
-"struct_integers__signed32__async__rw.html#ac4e0ffc0590caaeda76c1b3752fff7d1":[23,0,96,0],
-"struct_integers__signed32__async__rw.html#ad8602cb97b6bea738c4f043d95c4b865":[23,0,96,13],
-"struct_integers__signed32__async__rw.html#add13e98df464594d1ad2379979b319f0":[23,0,96,11],
-"struct_integers_base.html":[23,0,97],
-"struct_integers_base.html#a075e377f6817339eafb86d4b1b431e1a":[23,0,97,7]
+"struct_integers__signed32__async__rw.html#a8efd03ecd45c0cb9c2a5546bfe6027c7":[23,0,96,8]
 };
