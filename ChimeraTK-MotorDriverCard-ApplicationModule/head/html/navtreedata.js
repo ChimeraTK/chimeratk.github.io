@@ -58,7 +58,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_execution_timer_8h.html",
-"struct_chimera_t_k_1_1_motor_driver_1_1_reference_switch.html#ae105c817a3635f2e8ed4070f1526d970"
+"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

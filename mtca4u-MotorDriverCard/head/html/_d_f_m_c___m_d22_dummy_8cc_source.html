@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mtca4u-MotorDriverCard: /scratch/dragon/sources/mtca4u-MotorDriverCard/backend/src/DFMC_MD22Dummy.cc Source File</title>
+<title>mtca4u-MotorDriverCard: backend/src/DFMC_MD22Dummy.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.16.00</span>
+   <div id="projectname">mtca4u-MotorDriverCard<span id="projectnumber">&#160;01.17.00</span>
    </div>
   </td>
  </tr>
@@ -532,14 +532,13 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>      <span class="keywordflow">throw</span> <span class="keyword">new</span> ChimeraTK::logic_error(<span class="stringliteral">&quot;DFMC_MD22Dummy: No mapfile has been specified&quot;</span>);</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    }</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">return</span> returnInstance&lt;DFMC_MD22Dummy&gt;(</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        address, convertPathRelativeToDmapToAbs(parameters[<span class="stringliteral">&quot;map&quot;</span>]), parameters[<span class="stringliteral">&quot;module&quot;</span>]);</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  }</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">return</span> returnInstance&lt;DFMC_MD22Dummy&gt;(address, parameters[<span class="stringliteral">&quot;map&quot;</span>], parameters[<span class="stringliteral">&quot;module&quot;</span>]);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  }</div>
 </div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">  414</a></span>  <a class="code hl_class" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy_registerer.html">DFMC_MD22DummyRegisterer</a> <a class="code hl_variable" href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">globalDFMC_MD22DummyRegisterer</a>;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>} <span class="comment">// namespace mtca4u</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">  413</a></span>  <a class="code hl_class" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy_registerer.html">DFMC_MD22DummyRegisterer</a> <a class="code hl_variable" href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">globalDFMC_MD22DummyRegisterer</a>;</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>} <span class="comment">// namespace mtca4u</span></div>
 <div class="ttc" id="a_d_f_m_c___m_d22_constants_8h_html"><div class="ttname"><a href="_d_f_m_c___m_d22_constants_8h.html">DFMC_MD22Constants.h</a></div></div>
 <div class="ttc" id="a_d_f_m_c___m_d22_dummy_8h_html"><div class="ttname"><a href="_d_f_m_c___m_d22_dummy_8h.html">DFMC_MD22Dummy.h</a></div></div>
 <div class="ttc" id="a_t_m_c260_dummy_constants_8h_html"><div class="ttname"><a href="_t_m_c260_dummy_constants_8h.html">TMC260DummyConstants.h</a></div></div>
@@ -612,13 +611,13 @@ $(document).ready(function(){initNavTree('_d_f_m_c___m_d22_dummy_8cc_source.html
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_aecc20ad1248e936e315a62a9d889fb5b"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#aecc20ad1248e936e315a62a9d889fb5b">mtca4u::tmc429::DEFAULT_DUMMY_SPI_DELAY</a></div><div class="ttdeci">unsigned int const DEFAULT_DUMMY_SPI_DELAY</div><div class="ttdoc">32 microseconds</div><div class="ttdef"><b>Definition</b> <a href="_t_m_c429_dummy_constants_8h_source.html#l00012">TMC429DummyConstants.h:12</a></div></div>
 <div class="ttc" id="anamespacemtca4u_1_1tmc429_html_afb918df0b670a8b2258a26ae09e43715"><div class="ttname"><a href="namespacemtca4u_1_1tmc429.html#afb918df0b670a8b2258a26ae09e43715">mtca4u::tmc429::JDX_POWER_DOWN</a></div><div class="ttdeci">uint32_t const JDX_POWER_DOWN</div><div class="ttdef"><b>Definition</b> <a href="_t_m_c429_constants_8h_source.html#l00017">TMC429Constants.h:17</a></div></div>
 <div class="ttc" id="anamespacemtca4u_html"><div class="ttname"><a href="namespacemtca4u.html">mtca4u</a></div><div class="ttdef"><b>Definition</b> <a href="create_output_mask_using_setter_getter_8h_source.html#l00004">createOutputMaskUsingSetterGetter.h:4</a></div></div>
-<div class="ttc" id="anamespacemtca4u_html_a7a75d7fd1a515faff70b27157b6d72c8"><div class="ttname"><a href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">mtca4u::globalDFMC_MD22DummyRegisterer</a></div><div class="ttdeci">DFMC_MD22DummyRegisterer globalDFMC_MD22DummyRegisterer</div><div class="ttdef"><b>Definition</b> <a href="_d_f_m_c___m_d22_dummy_8cc_source.html#l00414">DFMC_MD22Dummy.cc:414</a></div></div>
+<div class="ttc" id="anamespacemtca4u_html_a7a75d7fd1a515faff70b27157b6d72c8"><div class="ttname"><a href="namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8">mtca4u::globalDFMC_MD22DummyRegisterer</a></div><div class="ttdeci">DFMC_MD22DummyRegisterer globalDFMC_MD22DummyRegisterer</div><div class="ttdef"><b>Definition</b> <a href="_d_f_m_c___m_d22_dummy_8cc_source.html#l00413">DFMC_MD22Dummy.cc:413</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0699edf9fcebb1c4d1508000eabbe60a.html">mtca4u-MotorDriverCard</a></li><li class="navelem"><a class="el" href="dir_6d503f7fb68534c3b75a73a185594ff3.html">backend</a></li><li class="navelem"><a class="el" href="dir_b0847440e2dab0d413ba064dfb19449c.html">src</a></li><li class="navelem"><a class="el" href="_d_f_m_c___m_d22_dummy_8cc.html">DFMC_MD22Dummy.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="dir_27747142951285b09bacafa002e92b5f.html">src</a></li><li class="navelem"><a class="el" href="_d_f_m_c___m_d22_dummy_8cc.html">DFMC_MD22Dummy.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
