@@ -31,6 +31,7 @@ var dir_c58e9917cb89e86e015f963e5eb1f350 =
     [ "NumericAddressedRegisterCatalogue.cc", "_numeric_addressed_register_catalogue_8cc.html", null ],
     [ "parserUtilities.cc", "parser_utilities_8cc.html", "parser_utilities_8cc" ],
     [ "ProcessManagement.cpp", "_process_management_8cpp.html", "_process_management_8cpp" ],
+    [ "ReadCoordinator.cc", "_read_coordinator_8cc.html", null ],
     [ "RegisterCatalogue.cc", "_register_catalogue_8cc.html", null ],
     [ "RegisterInfo.cpp", "_register_info_8cpp.html", null ],
     [ "RegisterPath.cc", "_register_path_8cc.html", "_register_path_8cc" ],

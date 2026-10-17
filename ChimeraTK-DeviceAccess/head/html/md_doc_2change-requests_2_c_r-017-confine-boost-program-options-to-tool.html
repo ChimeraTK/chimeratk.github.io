@@ -93,9 +93,9 @@ $(document).ready(function(){initNavTree('md_doc_2change-requests_2_c_r-017-conf
   <div class="headertitle"><div class="title">CR-017: Confine Boost program_options to the device-to-jmap tool</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md36"></a> Synopsis: Stop the exported ChimeraTK-DeviceAccess target from requiring Boost program_options, which the library does not use and which is needed only by the <code>chimeratk-device-to-jmap</code> executable.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md41"></a> Synopsis: Stop the exported ChimeraTK-DeviceAccess target from requiring Boost program_options, which the library does not use and which is needed only by the <code>chimeratk-device-to-jmap</code> executable.</p>
 <p>Status: DONE</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md42"></a>
 Requirements</h1>
 <p>Exported dependency set:</p>
 <ul>
@@ -105,7 +105,7 @@ Requirements</h1>
 <li>The library keeps its other public Boost components: thread, system, chrono, filesystem.</li>
 <li><code>chimeratk-device-to-jmap</code> keeps using Boost program_options.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md43"></a>
 Specifications</h1>
 <p>Affected component: top-level <code>CMakeLists.txt</code> only.</p>
 <p>Library target:</p>
@@ -126,12 +126,12 @@ program_options REQUIRED)</code> with the four components only.</li>
 <li>Naming the components explicitly makes the exported dependency set independent of the shared <code>Boost_LIBRARIES</code> variable.</li>
 <li><code>tests/CMakeLists.txt</code> is out of scope: its <code>${Boost_LIBRARIES}</code> uses are PRIVATE on test executables and cannot affect the exported library interface, which is recorded before the tests subdirectory is added.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md44"></a>
 Alternatives considered</h2>
 <ul>
 <li>Keep the variable, only drop program_options from the library <code>FIND_PACKAGE</code> and add a second <code>FIND_PACKAGE</code> for the tool. The variable-based variant would also remove program_options from the interface, since the interface is recorded before the tests are added. Rejected: it relies on the shared <code>Boost_LIBRARIES</code> variable instead of naming the required components explicitly.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md40"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 Test plan</h1>
 <ul>
 <li>Executed once, manually by the agent; no automated unit test is added for this packaging change.</li>

@@ -365,6 +365,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa486baddc42c5a8a6fc0514caa41b502" id="r_aa486baddc42c5a8a6fc0514caa41b502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa486baddc42c5a8a6fc0514caa41b502">replaceTransferElement</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; newElement) override</td></tr>
 <tr class="memdesc:aa486baddc42c5a8a6fc0514caa41b502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all underlying TransferElements which are considered identical (see sameRegister()) with the given <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup.">TransferElement</a>.  <br /></td></tr>
 <tr class="separator:aa486baddc42c5a8a6fc0514caa41b502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7033f41be95b743012710c437414530c" id="r_a7033f41be95b743012710c437414530c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a7033f41be95b743012710c437414530c">registerWithReadCoordinator</a> ()</td></tr>
+<tr class="memdesc:a7033f41be95b743012710c437414530c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Re-)register this read consumer with the read coordinator of the current raw element.  <br /></td></tr>
+<tr class="separator:a7033f41be95b743012710c437414530c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_n_d_register_accessor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:ac2b41bf5123ae657a3d10283ff484a9d inherit pro_methods_class_chimera_t_k_1_1_n_d_register_accessor" id="r_ac2b41bf5123ae657a3d10283ff484a9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ac2b41bf5123ae657a3d10283ff484a9d">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a> (<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt;, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a0d4c94f0fd0e6fb1b5049017c1d62135">getAsCooked_impl</a>, 2)</td></tr>
 <tr class="separator:ac2b41bf5123ae657a3d10283ff484a9d inherit pro_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,6 +392,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:acd720c736a72c02a53ad75b3ae0c2ac0" id="r_acd720c736a72c02a53ad75b3ae0c2ac0"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html">NumericAddressedLowLevelTransferElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#acd720c736a72c02a53ad75b3ae0c2ac0">_rawAccessor</a></td></tr>
 <tr class="memdesc:acd720c736a72c02a53ad75b3ae0c2ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw accessor  <br /></td></tr>
 <tr class="separator:acd720c736a72c02a53ad75b3ae0c2ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a450f205a8d0ad996756dd163f3426" id="r_a52a450f205a8d0ad996756dd163f3426"><td class="memItemLeft" align="right" valign="top">detail::ReadCoordinator::Registration&lt; UserType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a52a450f205a8d0ad996756dd163f3426">_readRegistration</a></td></tr>
+<tr class="memdesc:a52a450f205a8d0ad996756dd163f3426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registration of this read consumer with the read coordinator of its raw element.  <br /></td></tr>
+<tr class="separator:a52a450f205a8d0ad996756dd163f3426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe4f62129f0bf1c5bc5dadb33013a30" id="r_abfe4f62129f0bf1c5bc5dadb33013a30"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">NumericAddressedBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#abfe4f62129f0bf1c5bc5dadb33013a30">_dev</a></td></tr>
 <tr class="memdesc:abfe4f62129f0bf1c5bc5dadb33013a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">the backend to use for the actual hardware access  <br /></td></tr>
 <tr class="separator:abfe4f62129f0bf1c5bc5dadb33013a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,7 +451,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename UserType, bool isRaw&gt;<br />
 class ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, isRaw &gt;</div><p>Implementation of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor.">NDRegisterAccessor</a> for NumericAddressedBackends for scalar and 1D registers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00023">23</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00024">24</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaeef3d4192a28bead7ded01b4eab33bf" name="aaeef3d4192a28bead7ded01b4eab33bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaeef3d4192a28bead7ded01b4eab33bf">&#9670;&#160;</a></span>THIS_TYPE</h2>
@@ -461,7 +467,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00068">68</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00069">69</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +640,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00127">127</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00132">132</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -668,7 +674,7 @@ template&lt;class CookedType , typename RawType , <a class="el" href="namespace_
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00171">171</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00162">162</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -714,7 +720,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00272">272</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00263">263</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -750,7 +756,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00257">257</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00248">248</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -796,7 +802,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00197">197</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00188">188</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -830,7 +836,7 @@ template&lt;class CookedType , typename RawType , <a class="el" href="namespace_
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00233">233</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00224">224</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -869,7 +875,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00110">110</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00115">115</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -907,7 +913,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00117">117</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00122">122</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -941,7 +947,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00371">371</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00375">375</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1053,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00314">314</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00305">305</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1087,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00307">307</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00298">298</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1121,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00321">321</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00312">312</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1159,38 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00285">285</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00276">276</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+
+</div>
+</div>
+<a id="a7033f41be95b743012710c437414530c" name="a7033f41be95b743012710c437414530c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7033f41be95b743012710c437414530c">&#9670;&#160;</a></span>registerWithReadCoordinator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , bool isRaw&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">ChimeraTK::NumericAddressedBackendRegisterAccessor</a>&lt; UserType, isRaw &gt;::registerWithReadCoordinator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(Re-)register this read consumer with the read coordinator of the current raw element. </p>
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00328">328</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1265,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00391">391</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00395">395</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1301,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a23782060d06fa418950b74f8b10d4ec8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00328">328</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00319">319</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1330,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Converter to interpret the data. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00081">81</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00082">82</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1358,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>the backend to use for the actual hardware access </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00087">87</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00094">94</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1386,36 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>raw accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00084">84</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00085">85</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="a52a450f205a8d0ad996756dd163f3426" name="a52a450f205a8d0ad996756dd163f3426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a450f205a8d0ad996756dd163f3426">&#9670;&#160;</a></span>_readRegistration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , bool isRaw&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">detail::ReadCoordinator::Registration&lt;UserType&gt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">ChimeraTK::NumericAddressedBackendRegisterAccessor</a>&lt; UserType, isRaw &gt;::_readRegistration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registration of this read consumer with the read coordinator of its raw element. </p>
+<p>The handle owns the staging buffer the coordinator fills. </p>
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00091">91</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1443,7 @@ template&lt;typename UserType , bool isRaw&gt; </div>
 
 <p>Address, size and fixed-point representation information of the register from the map file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00078">78</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html#l00079">79</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>

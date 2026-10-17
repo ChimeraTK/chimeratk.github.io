@@ -46,6 +46,7 @@ var dir_b35ccfff742bbee9ac938f970bb4baeb =
     [ "PyConvert.h", "_py_convert_8h.html", "_py_convert_8h" ],
     [ "RawConverter.h", "_raw_converter_8h.html", "_raw_converter_8h" ],
     [ "ReadAnyGroup.h", "_read_any_group_8h.html", "_read_any_group_8h" ],
+    [ "ReadCoordinator.h", "_read_coordinator_8h.html", null ],
     [ "RegisterCatalogue.h", "_register_catalogue_8h.html", "_register_catalogue_8h" ],
     [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],
     [ "RegisterPath.h", "_register_path_8h.html", "_register_path_8h" ],

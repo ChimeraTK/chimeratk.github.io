@@ -26,6 +26,7 @@ var class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element =
     [ "_dev", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae5327f3948a8280b10dfb527255cdf93", null ],
     [ "_isUnaligned", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a69e835a10744be100f9cd8b5db703548", null ],
     [ "_numberOfBytes", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a148d1bd3945c4898480f4c5a942489c2", null ],
+    [ "_readCoordinator", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a14643ec4d319848d746c973e9ce85652", null ],
     [ "_startAddress", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae200a521b133d9fe3c3929270a9f2f43", null ],
     [ "_unalignedAccess", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a7df75fac99e96ad6f221dc11132ac545", null ],
     [ "isShared", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a911732a6c2db0537be22f1e76ad59caf", null ],

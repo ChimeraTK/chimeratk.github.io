@@ -13,8 +13,9 @@ var searchData=
   ['nread_10',['nRead',['../struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f',1,'CountingDecorator']]],
   ['nreadlatest_11',['nReadLatest',['../struct_counting_decorator.html#ac7bd30a47aff7294523642f2d47f22fe',1,'CountingDecorator']]],
   ['nreadnonblocking_12',['nReadNonBlocking',['../struct_counting_decorator.html#aa26f3382bdb5c9a4852c5dd1010f730d',1,'CountingDecorator']]],
-  ['numberofwords_13',['numberOfWords',['../struct_chimera_t_k_1_1async_1_1_accessor_instance_descriptor.html#ad4c586fbb0646e8f5bc6d84056b7fa9f',1,'ChimeraTK::async::AccessorInstanceDescriptor']]],
-  ['numericaddressedlowleveltransferelement_14',['NumericAddressedLowLevelTransferElement',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04',1,'ChimeraTK::NumericAddressedBackend']]],
-  ['nwords_15',['nWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
-  ['nwrite_16',['nWrite',['../struct_counting_decorator.html#af11856401c70ff6d949c438506ea8479',1,'CountingDecorator']]]
+  ['nsamples_13',['nSamples',['../test_grouped_demultiplexing_8cpp.html#a22ea366399078458298344a2f10d33cb',1,'testGroupedDemultiplexing.cpp']]],
+  ['numberofwords_14',['numberOfWords',['../struct_chimera_t_k_1_1async_1_1_accessor_instance_descriptor.html#ad4c586fbb0646e8f5bc6d84056b7fa9f',1,'ChimeraTK::async::AccessorInstanceDescriptor']]],
+  ['numericaddressedlowleveltransferelement_15',['NumericAddressedLowLevelTransferElement',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04',1,'ChimeraTK::NumericAddressedBackend']]],
+  ['nwords_16',['nWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
+  ['nwrite_17',['nWrite',['../struct_counting_decorator.html#af11856401c70ff6d949c438506ea8479',1,'CountingDecorator']]]
 ];

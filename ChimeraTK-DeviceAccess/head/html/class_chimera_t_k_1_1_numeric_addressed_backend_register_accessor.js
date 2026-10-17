@@ -19,11 +19,13 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor =
     [ "isReadOnly", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a2bd8b1147b404c713795948175223d5e", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a8181d3b6897df6c4f680122dd11219c7", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a576e63e41f7b160a6c571ec8d1ea090e", null ],
+    [ "registerWithReadCoordinator", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a7033f41be95b743012710c437414530c", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa486baddc42c5a8a6fc0514caa41b502", null ],
     [ "setAsCooked_impl", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a7aae1a055edbbf5ca620b844c48a30a1", null ],
     [ "setExceptionBackend", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a2f296d4b5e8400720e0e61eb37ee08dc", null ],
     [ "_converterLoopHelper", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a611877a8482e414e1a13f395899f68a1", null ],
     [ "_dev", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#abfe4f62129f0bf1c5bc5dadb33013a30", null ],
     [ "_rawAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#acd720c736a72c02a53ad75b3ae0c2ac0", null ],
+    [ "_readRegistration", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a52a450f205a8d0ad996756dd163f3426", null ],
     [ "_registerInfo", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac0681a764aed55981f6d7eee98e728ee", null ]
 ];

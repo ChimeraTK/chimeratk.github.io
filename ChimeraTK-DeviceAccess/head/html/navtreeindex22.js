@@ -1,5 +1,15 @@
 var NAVTREEINDEX22 =
 {
+"dir_dcf86e23dc795b3ef81504a4f21b22a2.html":[24,0,4,0],
+"dir_de77e1cda6e95bd1497001372cab98cb.html":[24,0,0,2],
+"dir_e2e4b1a6076cce13b2da02e7a514103a.html":[24,0,0,1,1],
+"dir_e77edb327c6c20570d542af99c45e444.html":[24,0,0,6],
+"dir_ea3c7e44307792494c09c360ef203eb3.html":[24,0,0,5,1],
+"dir_ea54efb99f7e208ecfdad4571f8e482f.html":[24,0,0,3,1],
+"dir_f4ac1a51576b771baf6f5c23fd562e83.html":[24,0,0,1],
+"dir_f6392679a197e14e988a5f22b9c1c59d.html":[24,0,4],
+"dir_fe0051edf425d87778c84121fa35e1b3.html":[24,0,7,5],
+"dmap.html":[6],
 "dmap.html#Map":[6,0],
 "dmap.html#The":[6,1],
 "examples.html":[25],
@@ -96,8 +106,8 @@ var NAVTREEINDEX22 =
 "functions_x.html":[23,3,0,24],
 "functions_y.html":[23,3,0,25],
 "functions_~.html":[23,3,0,26],
-"globals.html":[24,1,0],
 "globals.html":[24,1,0,0],
+"globals.html":[24,1,0],
 "globals_b.html":[24,1,0,1],
 "globals_c.html":[24,1,0,2],
 "globals_d.html":[24,1,0,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX22 =
 "md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html#autotoc_md9":[19,2,2],
 "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html":[19,3],
 "md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md11":[19,3,0],
-"md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md12":[19,3,1],
-"md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md13":[19,3,2],
-"md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md14":[19,3,3],
-"md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html":[19,4],
-"md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html#autotoc_md16":[19,4,0],
-"md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html#autotoc_md17":[19,4,1],
-"md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html#autotoc_md18":[19,4,2],
-"md_doc_2change-requests_2_c_r-005-device-to-jmap.html":[19,5],
-"md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md20":[19,5,0],
-"md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md21":[19,5,1],
-"md_doc_2change-requests_2_c_r-005-device-to-jmap.html#autotoc_md22":[19,5,2]
+"md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md12":[19,3,1]
 };

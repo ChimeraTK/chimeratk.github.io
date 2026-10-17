@@ -93,9 +93,9 @@ $(document).ready(function(){initNavTree('md_doc_2change-requests_2_c_r-012-back
   <div class="headertitle"><div class="title">CR-012: Backend-specific interrupt handler entries in the JMAP file</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md32"></a> Synopsis: The JSON map parser hardcodes an "INTC" controller into the interrupt handler metadata and silently drops any other content. Make the interrupt handler metadata a pass-through applying only a common normalisation (drop underscore-prefixed keys, default a missing version) so backend-specific controller types (e.g. "MyINTC") with arbitrary data are preserved.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md37"></a> Synopsis: The JSON map parser hardcodes an "INTC" controller into the interrupt handler metadata and silently drops any other content. Make the interrupt handler metadata a pass-through applying only a common normalisation (drop underscore-prefixed keys, default a missing version) so backend-specific controller types (e.g. "MyINTC") with arbitrary data are preserved.</p>
 <p>Status: DONE</p>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 Requirements</h1>
 <p>Aspect: interrupt handler metadata is backend agnostic.</p>
 <ul>
@@ -104,7 +104,7 @@ Requirements</h1>
 <li>A map carrying a backend-specific controller type with data incompatible with "INTC" parses and reaches the metadata, normalised per the common rules.</li>
 <li>Existing "INTC" maps continue to parse; their metadata value becomes the normalised, re-serialised entry (underscore keys dropped, missing <code>version</code> defaulted, nothing else changed) instead of today's deeper normalisation (all defaults filled, comments dropped).</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md34"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 Specifications</h1>
 <p>Aspect: parser (<code><a class="el" href="_json_map_file_parser_8cc.html">src/JsonMapFileParser.cc</a></code>).</p>
 <ul>
@@ -126,7 +126,7 @@ Specifications</h1>
 <li>The <code>\ref jmap_interrupts</code> section states that the controller entry content is backend-specific and extensible.</li>
 <li>It states that the JSON schema is advisory only (interactive validation) and is not enforced by the parser.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md35"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 Test plan</h1>
 <p>All parser tests in <code><a class="el" href="test_json_map_file_parser_8cpp.html">tests/executables_src/testJsonMapFileParser.cpp</a></code>.</p>
 <ul>
