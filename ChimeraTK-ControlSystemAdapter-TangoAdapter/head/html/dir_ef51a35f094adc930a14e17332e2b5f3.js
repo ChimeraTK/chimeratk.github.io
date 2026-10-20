@@ -8,5 +8,6 @@ var dir_ef51a35f094adc930a14e17332e2b5f3 =
     [ "testTangoServerMapTwice.cc", "test_tango_server_map_twice_8cc.html", "test_tango_server_map_twice_8cc" ],
     [ "testTangoServerPersistSpectrum.cpp", "test_tango_server_persist_spectrum_8cpp.html", "test_tango_server_persist_spectrum_8cpp" ],
     [ "testTangoServerPersistSpectrumRead.cpp", "test_tango_server_persist_spectrum_read_8cpp.html", "test_tango_server_persist_spectrum_read_8cpp" ],
-    [ "testTangoServerReadWrite.cc", "test_tango_server_read_write_8cc.html", "test_tango_server_read_write_8cc" ]
+    [ "testTangoServerReadWrite.cc", "test_tango_server_read_write_8cc.html", "test_tango_server_read_write_8cc" ],
+    [ "testTangoServerStatusState.cpp", "test_tango_server_status_state_8cpp.html", "test_tango_server_status_state_8cpp" ]
 ];

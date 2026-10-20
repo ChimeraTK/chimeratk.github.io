@@ -2,7 +2,7 @@ var class_tango_adapter_1_1_tango_updater =
 [
     [ "UpdateDescriptor", "struct_tango_adapter_1_1_tango_updater_1_1_update_descriptor.html", "struct_tango_adapter_1_1_tango_updater_1_1_update_descriptor" ],
     [ "~TangoUpdater", "class_tango_adapter_1_1_tango_updater.html#a099ba435b2271c9b940ef3961f675ec6", null ],
-    [ "addVariable", "class_tango_adapter_1_1_tango_updater.html#a90becbca4d36ff3cfd1c6c1a6ff8a69e", null ],
+    [ "addVariable", "class_tango_adapter_1_1_tango_updater.html#ace763aaff3bdb9a9d85853151010794e", null ],
     [ "getElementsToRead", "class_tango_adapter_1_1_tango_updater.html#a4e0e5f0552a9ea8208dd921364f39731", null ],
     [ "run", "class_tango_adapter_1_1_tango_updater.html#a798ec90744e39b59b3055f09f6b81312", null ],
     [ "stop", "class_tango_adapter_1_1_tango_updater.html#a117b07e7d4f7328a1fe44c6819af954f", null ],

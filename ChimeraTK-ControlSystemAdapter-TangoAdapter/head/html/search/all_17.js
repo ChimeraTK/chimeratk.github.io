@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['your_20control_20system_20application_20into_20tango_0',['Integrating your control system application into Tango',['../index.html#Integration',1,'']]]
+  ['xml2tango_0',['xml2tango',['../namespacexml2tango.html',1,'']]],
+  ['xml2tango_2epy_1',['xml2tango.py',['../xml2tango_8py.html',1,'']]]
 ];

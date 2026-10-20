@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html#ad057d1adfa6edac43cae3973d654ba26',1,'TangoAdapter::AttributeMapper::DeviceInstance::name'],['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html#aaf4c92763dd991a7cd260e6e56b561c0',1,'TangoAdapter::AttributeMapper::DeviceClass::name'],['../struct_tango_adapter_1_1_attribute_property.html#ac886f28f397b4f4bf50f8327f8222e72',1,'TangoAdapter::AttributeProperty::name']]],
-  ['name2typeid_1',['name2TypeId',['../struct_tango_test_fixture_impl.html#a1406820ba9b6b0e974d08e82b2e7dd05',1,'TangoTestFixtureImpl']]],
-  ['nodeiswhitespace_2',['nodeIsWhitespace',['../namespace_tango_adapter_1_1util.html#a47258ef1fc4533dce384e3ca495a54e3',1,'TangoAdapter::util']]],
-  ['ns_3',['ns',['../namespacexml2tango.html#ab73bb9a110bab409b6f4792355c1d9ed',1,'xml2tango']]],
-  ['nullconfiguration_4',['NullConfiguration',['../struct_null_configuration.html',1,'']]]
+  ['main_0',['main',['../namespacefix-linter-for-all.html#ae54728cb38a5ed3acc46eb7d05f10c3d',1,'fix-linter-for-all.main()'],['../main_8cpp.html#aa5a06fb28f3de67799b52028f6f96bb6',1,'main(int argc, char *argv[]):&#160;main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainpage_2edox_2',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
+  ['major_3',['major',['../namespace_chimera_t_k_1_1_version_info.html#a6aa207e422e3ff6627f125e35a759564',1,'ChimeraTK::VersionInfo']]],
+  ['make_5fabsolute_4',['make_absolute',['../namespacefix-linter-for-all.html#a6a7d32698d0a26e1154b3d58b567662e',1,'fix-linter-for-all']]],
+  ['manualloopcontrol_5',['manualLoopControl',['../struct_tango_test_fixture_impl.html#a5825f2f5076d914df66d7c4fe941fd59',1,'TangoTestFixtureImpl']]],
+  ['mapping_6',['ApplicationCore to Tango attribute mapping',['../index.html#attribute_mapping',1,'']]],
+  ['mapping_20of_20attributes_20through_20configuration_7',['Complex mapping of attributes through configuration',['../index.html#attribute_mapping_file',1,'']]],
+  ['memoriedpropertyname_8',['memoriedPropertyName',['../class_tango_adapter_1_1_spectrum_attrib_templ.html#ad3826fa0d3d51ec243ded2c6d2de5dfc',1,'TangoAdapter::SpectrumAttribTempl']]],
+  ['minor_9',['minor',['../namespace_chimera_t_k_1_1_version_info.html#a0e87c997cf0b7626a83e0814de0f149f',1,'ChimeraTK::VersionInfo']]]
 ];

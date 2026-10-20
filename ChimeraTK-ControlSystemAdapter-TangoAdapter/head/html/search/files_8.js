@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xml2tango_2epy_0',['xml2tango.py',['../xml2tango_8py.html',1,'']]]
+  ['versioninfo_2eh_0',['VersionInfo.h',['../_version_info_8h.html',1,'']]]
 ];

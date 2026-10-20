@@ -29,7 +29,18 @@ var NAVTREE =
       [ "Tango Device Server configuration", "index.html#configuration", [
         [ "Tango Device Server working folder", "index.html#working_folder", null ],
         [ "ApplicationCore to Tango attribute mapping", "index.html#attribute_mapping", null ],
-        [ "Complex mapping of attributes through configuration", "index.html#attribute_mapping_file", null ]
+        [ "Complex mapping of attributes through configuration", "index.html#attribute_mapping_file", null ],
+        [ "Setting the Tango device state and status", "index.html#device_state_and_status", null ]
+      ] ]
+    ] ],
+    [ "Change Requests", "change_requests.html", [
+      [ "Index", "change_requests.html#change_requests_index", null ],
+      [ "CR-001: Set the Tango device state and status from the application", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md1", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md2", [
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md3", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md4", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -67,8 +78,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adapter_device_class_8cpp.html",
-"class_tango_adapter_1_1_tango_updater.html#a6f79b9f22053332d3b3c4068bdbc33ea",
-"test_tango_server_import_all_8cpp.html#adcb547bcf6c175d4c3ad20688da85f70"
+"class_tango_adapter_1_1_tango_updater.html#a0c21f09e18927e830e10b2c1efab5b7f",
+"struct_threaded_tango_server.html#aeed5a434a2d5f38aef5d265a1174c8d5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "detail", "namespacedetail.html", [
       [ "writeInitialSpectrumValue", "namespacedetail.html#a22d608430cac85d779118f8fb14eb295", null ]
     ] ],

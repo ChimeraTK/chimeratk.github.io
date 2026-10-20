@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length_0',['length',['../struct_tango_adapter_1_1_attribute_property.html#a6b6d689e715c3d7ad67a295bdd0df6ec',1,'TangoAdapter::AttributeProperty']]]
+  ['keepofflinedatabase_0',['keepOfflineDatabase',['../struct_threaded_tango_server.html#a32219082f340e583524cccbf7352d9b1',1,'ThreadedTangoServer']]]
 ];

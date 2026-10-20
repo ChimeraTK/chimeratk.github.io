@@ -17,5 +17,6 @@ var searchData=
   ['testtangoservermaptwice_2ecc_14',['testTangoServerMapTwice.cc',['../test_tango_server_map_twice_8cc.html',1,'']]],
   ['testtangoserverpersistspectrum_2ecpp_15',['testTangoServerPersistSpectrum.cpp',['../test_tango_server_persist_spectrum_8cpp.html',1,'']]],
   ['testtangoserverpersistspectrumread_2ecpp_16',['testTangoServerPersistSpectrumRead.cpp',['../test_tango_server_persist_spectrum_read_8cpp.html',1,'']]],
-  ['testtangoserverreadwrite_2ecc_17',['testTangoServerReadWrite.cc',['../test_tango_server_read_write_8cc.html',1,'']]]
+  ['testtangoserverreadwrite_2ecc_17',['testTangoServerReadWrite.cc',['../test_tango_server_read_write_8cc.html',1,'']]],
+  ['testtangoserverstatusstate_2ecpp_18',['testTangoServerStatusState.cpp',['../test_tango_server_status_state_8cpp.html',1,'']]]
 ];
