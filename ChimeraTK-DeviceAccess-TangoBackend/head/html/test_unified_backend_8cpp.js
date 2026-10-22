@@ -2,7 +2,6 @@ var test_unified_backend_8cpp =
 [
     [ "AllRegisterDefaults< DERIVED >", "struct_all_register_defaults.html", "struct_all_register_defaults" ],
     [ "ScalarDefaultsBase< DERIVED >", "struct_scalar_defaults_base.html", "struct_scalar_defaults_base" ],
-    [ "ScalarDefaults< DERIVED >", "struct_scalar_defaults.html", "struct_scalar_defaults" ],
     [ "ArrayDefaults< DERIVED >", "struct_array_defaults.html", "struct_array_defaults" ],
     [ "RegSomeInt", "struct_reg_some_int.html", "struct_reg_some_int" ],
     [ "RegSomeRoInt", "struct_reg_some_ro_int.html", "struct_reg_some_ro_int" ],
@@ -16,6 +15,7 @@ var test_unified_backend_8cpp =
     [ "RegSomeBooleanArray", "struct_reg_some_boolean_array.html", "struct_reg_some_boolean_array" ],
     [ "BOOST_TEST_DYN_LINK", "test_unified_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_unified_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
+    [ "ScalarDefaults", "test_unified_backend_8cpp.html#a0d127a7595a480d62a54947b99693aca", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_unified_backend_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ],
     [ "BOOST_GLOBAL_FIXTURE", "test_unified_backend_8cpp.html#a10dd72a93f08ee67815da120f9bdbc4c", null ],
     [ "RegSomeBooleanArray::generateValue< ChimeraTK::Boolean >", "test_unified_backend_8cpp.html#a81fe2aefb889eb0ba195bd3a4c903538", null ],

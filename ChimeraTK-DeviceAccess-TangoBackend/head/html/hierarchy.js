@@ -10,49 +10,20 @@ var hierarchy =
       [ "ArrayDefaults< RegSomeStringArray >", "struct_array_defaults.html", [
         [ "RegSomeStringArray", "struct_reg_some_string_array.html", null ]
       ] ],
-      [ "ScalarDefaultsBase< RegSomeBool >", "struct_scalar_defaults_base.html", null ],
-      [ "ScalarDefaultsBase< RegSomeInt >", "struct_scalar_defaults_base.html", null ],
-      [ "ScalarDefaultsBase< RegSomeRoBool >", "struct_scalar_defaults_base.html", null ],
-      [ "ScalarDefaultsBase< RegSomeRoInt >", "struct_scalar_defaults_base.html", null ],
-      [ "ScalarDefaultsBase< RegSomeString >", "struct_scalar_defaults_base.html", null ],
-      [ "ScalarDefaultsBase< RegSomeWoBool >", "struct_scalar_defaults_base.html", null ],
-      [ "ScalarDefaultsBase< RegSomeWoInt >", "struct_scalar_defaults_base.html", null ],
       [ "ArrayDefaults< DERIVED >", "struct_array_defaults.html", null ],
       [ "ScalarDefaultsBase< DERIVED >", "struct_scalar_defaults_base.html", [
-        [ "ScalarDefaults< RegSomeBool >", "struct_scalar_defaults.html", [
-          [ "RegSomeBool", "struct_reg_some_bool.html", null ]
-        ] ],
-        [ "ScalarDefaults< RegSomeInt >", "struct_scalar_defaults.html", [
-          [ "RegSomeInt", "struct_reg_some_int.html", null ]
-        ] ],
-        [ "ScalarDefaults< RegSomeRoBool >", "struct_scalar_defaults.html", [
-          [ "RegSomeRoBool", "struct_reg_some_ro_bool.html", null ]
-        ] ],
-        [ "ScalarDefaults< RegSomeRoInt >", "struct_scalar_defaults.html", [
-          [ "RegSomeRoInt", "struct_reg_some_ro_int.html", null ]
-        ] ],
-        [ "ScalarDefaults< RegSomeString >", "struct_scalar_defaults.html", [
-          [ "RegSomeString", "struct_reg_some_string.html", null ]
-        ] ],
-        [ "ScalarDefaults< RegSomeWoBool >", "struct_scalar_defaults.html", [
-          [ "RegSomeWoBool", "struct_reg_some_wo_bool.html", null ]
-        ] ],
-        [ "ScalarDefaults< RegSomeWoInt >", "struct_scalar_defaults.html", [
-          [ "RegSomeWoInt", "struct_reg_some_wo_int.html", null ]
-        ] ],
-        [ "ScalarDefaults< DERIVED >", "struct_scalar_defaults.html", null ]
+        [ "RegSomeBool", "struct_reg_some_bool.html", null ],
+        [ "RegSomeInt", "struct_reg_some_int.html", null ],
+        [ "RegSomeRoBool", "struct_reg_some_ro_bool.html", null ],
+        [ "RegSomeRoInt", "struct_reg_some_ro_int.html", null ],
+        [ "RegSomeString", "struct_reg_some_string.html", null ],
+        [ "RegSomeWoBool", "struct_reg_some_wo_bool.html", null ],
+        [ "RegSomeWoInt", "struct_reg_some_wo_int.html", null ]
       ] ]
     ] ],
-    [ "AllRegisterDefaults< RegSomeBool >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeBooleanArray >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeInt >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeIntArray >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeRoBool >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeRoInt >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeString >", "struct_all_register_defaults.html", null ],
     [ "AllRegisterDefaults< RegSomeStringArray >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeWoBool >", "struct_all_register_defaults.html", null ],
-    [ "AllRegisterDefaults< RegSomeWoInt >", "struct_all_register_defaults.html", null ],
     [ "Tango::Attr", null, [
       [ "TangoTestServer_ns::ExceptionAttribute", "class_tango_test_server__ns_1_1_exception_attribute.html", [
         [ "TangoTestServer_ns::BooleanRoScalarAttrib", "class_tango_test_server__ns_1_1_boolean_ro_scalar_attrib.html", null ],

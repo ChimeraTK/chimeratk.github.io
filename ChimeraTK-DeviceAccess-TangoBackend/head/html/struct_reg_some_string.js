@@ -7,6 +7,5 @@ var struct_reg_some_string =
     [ "readPath", "struct_reg_some_string.html#a1a8efd6345e5e1d91d9ec0631ad45a97", null ],
     [ "setValue", "struct_reg_some_string.html#ab0fa1286bc466852fb994b97f4c943a7", null ],
     [ "writePath", "struct_reg_some_string.html#af706c231d4902cbfa1d3b9a56fd5e59f", null ],
-    [ "increment", "struct_reg_some_string.html#a60ddb8e5fa6b51659ece8a8deb858625", null ],
     [ "someValue", "struct_reg_some_string.html#a23e6d9197647321dc660e7af1b545b59", null ]
 ];

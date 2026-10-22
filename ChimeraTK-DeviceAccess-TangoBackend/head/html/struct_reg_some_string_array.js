@@ -9,6 +9,5 @@ var struct_reg_some_string_array =
     [ "setRemoteValue", "struct_reg_some_string_array.html#ad4050fc0e7393160c926b21d469e05ea", null ],
     [ "setValue", "struct_reg_some_string_array.html#ae79d90e17e83632070569bef695313a8", null ],
     [ "writePath", "struct_reg_some_string_array.html#a30e409015fdc0debcd37316b6f26fd68", null ],
-    [ "increment", "struct_reg_some_string_array.html#a1dc63c3dcbe1edf552af3beb13c37ed3", null ],
     [ "someValue", "struct_reg_some_string_array.html#ae5cdbefb5b87d13efe14a169a2d9abd9", null ]
 ];

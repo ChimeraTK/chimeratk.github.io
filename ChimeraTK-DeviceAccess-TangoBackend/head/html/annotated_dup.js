@@ -57,7 +57,6 @@ var annotated_dup =
     [ "RegSomeStringArray", "struct_reg_some_string_array.html", "struct_reg_some_string_array" ],
     [ "RegSomeWoBool", "struct_reg_some_wo_bool.html", "struct_reg_some_wo_bool" ],
     [ "RegSomeWoInt", "struct_reg_some_wo_int.html", "struct_reg_some_wo_int" ],
-    [ "ScalarDefaults", "struct_scalar_defaults.html", "struct_scalar_defaults" ],
     [ "ScalarDefaultsBase", "struct_scalar_defaults_base.html", "struct_scalar_defaults_base" ],
     [ "TangoServerLauncher", "struct_tango_server_launcher.html", "struct_tango_server_launcher" ]
 ];

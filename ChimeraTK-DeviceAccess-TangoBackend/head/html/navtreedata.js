@@ -25,11 +25,27 @@
 var NAVTREE =
 [
   [ "ChimeraTK-DeviceAccess-TangoBackend", "index.html", [
+    [ "Change Requests", "change_requests.html", [
+      [ "Index", "change_requests.html#change_requests_index", null ],
+      [ "CR-001: Fix Tango backend defects found in code review", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md1", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md2", [
+          [ "R1 and R2: <tt>doPostRead</tt>", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md3", null ],
+          [ "R3: <tt>OfflineCache::read</tt>", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md4", null ],
+          [ "R4: connection error message", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md5", null ],
+          [ "R6: header clean-up and device proxy ownership", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md6", null ],
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md7", null ],
+          [ "Out of scope and known gaps", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md8", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md9", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -49,6 +65,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -58,9 +75,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_class_factory_8cpp.html",
-"class_tango_test_server__ns_1_1_float_ro_spectrum_attrib.html#a76d2438a1cb706b644428ec798d16453",
-"class_tango_test_server__ns_1_1_tango_test_server.html#a58dd73a733d307327c215877e70237a3",
-"struct_all_register_defaults.html#a9546f6e3dc5b6397e171f2c4f15fd0c4"
+"class_tango_test_server__ns_1_1_float_ro_scalar_attrib.html#aa5692a6003db6938e6d6b428f103f916",
+"class_tango_test_server__ns_1_1_tango_test_server.html#a5480577ec638a0bf67e8521c5e4ea6f9",
+"md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

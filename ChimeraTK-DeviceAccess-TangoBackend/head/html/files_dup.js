@@ -1,8 +1,10 @@
 var files_dup =
 [
-    [ "cmake", "dir_a5bdbfbbaa7895161d62825676df7980.html", "dir_a5bdbfbbaa7895161d62825676df7980" ],
-    [ "include", "dir_d44c64559bbebec7f509842c48db8b23.html", "dir_d44c64559bbebec7f509842c48db8b23" ],
-    [ "src", "dir_68267d1309a1af8e8297ef4c3efbcdba.html", "dir_68267d1309a1af8e8297ef4c3efbcdba" ],
-    [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ],
-    [ "tools", "dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html", "dir_4eeb864c4eec08c7d6b9d3b0352cfdde" ]
+    [ "build", "dir_4fef79e7177ba769987a8da36c892c5f.html", "dir_4fef79e7177ba769987a8da36c892c5f" ],
+    [ "cmake", "dir_a543047a49c79fee212e063b99a28123.html", "dir_a543047a49c79fee212e063b99a28123" ],
+    [ "doc", "dir_93963451821a462933b93b30a591a48f.html", "dir_93963451821a462933b93b30a591a48f" ],
+    [ "include", "dir_8c6ff6dd0e0e2f56dd9d23eec3d7a780.html", "dir_8c6ff6dd0e0e2f56dd9d23eec3d7a780" ],
+    [ "src", "dir_f64acb60b919ecc3502bb44cb49045a1.html", "dir_f64acb60b919ecc3502bb44cb49045a1" ],
+    [ "tests", "dir_858370b66fdf271a3e2066052804571b.html", "dir_858370b66fdf271a3e2066052804571b" ],
+    [ "tools", "dir_b964483facfa8aeaf7c25d2ce07ee5be.html", "dir_b964483facfa8aeaf7c25d2ce07ee5be" ]
 ];

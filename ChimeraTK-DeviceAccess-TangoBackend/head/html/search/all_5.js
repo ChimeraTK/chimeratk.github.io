@@ -1,6 +1,29 @@
 var searchData=
 [
-  ['elementoffset_0',['elementOffset',['../class_chimera_t_k_1_1_tango_backend_register_accessor.html#a61403498e17d4f5bca5da5add07aa5b2',1,'ChimeraTK::TangoBackendRegisterAccessor']]],
-  ['exceptionattribute_1',['ExceptionAttribute',['../class_tango_test_server__ns_1_1_exception_attribute.html',1,'TangoTestServer_ns']]],
-  ['exceptionspectrumattribute_2',['ExceptionSpectrumAttribute',['../class_tango_test_server__ns_1_1_exception_spectrum_attribute.html',1,'TangoTestServer_ns']]]
+  ['data_0',['data',['../class_tango_test_server__ns_1_1_fault_attribute.html#a96b48e8784694ec5a5e1a98605af48a9',1,'TangoTestServer_ns::FaultAttribute']]],
+  ['declare_5fcrash_5fhandler_1',['DECLARE_CRASH_HANDLER',['../main_8cpp.html#ab10820dc8c433abc7f94108b3164efff',1,'main.cpp']]],
+  ['defects_20found_20in_20code_20review_2',['CR-001: Fix Tango backend defects found in code review',['../md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html',1,'change_requests']]],
+  ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller_3',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../class_chimera_t_k_1_1_tango_backend.html#a7aedb54361f37a0fd2d796de02431ff6',1,'ChimeraTK::TangoBackend']]],
+  ['delete_5fdevice_4',['delete_device',['../class_tango_test_server__ns_1_1_tango_test_server.html#a88378fba8294a58bd4ae76cc6b1702d8',1,'TangoTestServer_ns::TangoTestServer']]],
+  ['deriveaccessmode_5',['deriveAccessMode',['../classgenerate_cache_file_1_1_downloader.html#a1ca975f9cf138cd8a92b7973a9d9324f',1,'generateCacheFile::Downloader']]],
+  ['derived_6',['derived',['../struct_all_register_defaults.html#a9546f6e3dc5b6397e171f2c4f15fd0c4',1,'AllRegisterDefaults']]],
+  ['descriptor_7',['descriptor',['../struct_chimera_t_k_1_1_tango_register_info.html#ac1fff67556488fe09210f4b410776d02',1,'ChimeraTK::TangoRegisterInfo']]],
+  ['dev_5fdef_5fprop_8',['dev_def_prop',['../class_tango_test_server__ns_1_1_tango_test_server_class.html#ae20bea5d7be0123b09dcd20352418c1e',1,'TangoTestServer_ns::TangoTestServerClass']]],
+  ['device_9',['device',['../struct_tango_server_launcher.html#a2fdcb2aeefbc145842820dfc3c639d50',1,'TangoServerLauncher']]],
+  ['device_20proxy_20ownership_10',['R6: header clean-up and device proxy ownership',['../md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md6',1,'']]],
+  ['devicestring_11',['deviceString',['../struct_tango_server_launcher.html#a64c79744d0d00e91462f79b72d6b9ded',1,'TangoServerLauncher']]],
+  ['dopostread_12',['doPostRead',['../class_chimera_t_k_1_1_tango_backend_register_accessor.html#a0ea8fd7934fa3386274c678a415f4d61',1,'ChimeraTK::TangoBackendRegisterAccessor']]],
+  ['dopostread_20tt_13',['R1 and R2: &lt;tt&gt;doPostRead&lt;/tt&gt;',['../md_doc_2change-requests_2_c_r-001-fix-tango-backend-defects.html#autotoc_md3',1,'']]],
+  ['dopreread_14',['doPreRead',['../class_chimera_t_k_1_1_tango_backend_register_accessor.html#aeb395fd46d6575e9e19b1ee524dc50af',1,'ChimeraTK::TangoBackendRegisterAccessor']]],
+  ['doprewrite_15',['doPreWrite',['../class_chimera_t_k_1_1_tango_backend_register_accessor.html#aed5c800516479b0043254be49170d7a3',1,'ChimeraTK::TangoBackendRegisterAccessor']]],
+  ['doreadtransfersynchronously_16',['doReadTransferSynchronously',['../class_chimera_t_k_1_1_tango_backend_register_accessor.html#a55b20df6f52cbc1c8ae95998ed43cf07',1,'ChimeraTK::TangoBackendRegisterAccessor']]],
+  ['doubleroscalarattrib_17',['doubleroscalarattrib',['../class_tango_test_server__ns_1_1_double_ro_scalar_attrib.html',1,'TangoTestServer_ns::DoubleRoScalarAttrib'],['../class_tango_test_server__ns_1_1_double_ro_scalar_attrib.html#a8a618cccc019c70ab6ac38f6368d22ad',1,'TangoTestServer_ns::DoubleRoScalarAttrib::DoubleRoScalarAttrib()']]],
+  ['doublerospectrumattrib_18',['doublerospectrumattrib',['../class_tango_test_server__ns_1_1_double_ro_spectrum_attrib.html',1,'TangoTestServer_ns::DoubleRoSpectrumAttrib'],['../class_tango_test_server__ns_1_1_double_ro_spectrum_attrib.html#a9eea1b4dff4071aa23a6f4a3af4ade93',1,'TangoTestServer_ns::DoubleRoSpectrumAttrib::DoubleRoSpectrumAttrib()']]],
+  ['doublescalarattrib_19',['doublescalarattrib',['../class_tango_test_server__ns_1_1_double_scalar_attrib.html#a09fc8bea6bc1fab90224fd84830e27c0',1,'TangoTestServer_ns::DoubleScalarAttrib::DoubleScalarAttrib()'],['../class_tango_test_server__ns_1_1_double_scalar_attrib.html',1,'TangoTestServer_ns::DoubleScalarAttrib']]],
+  ['doublespectrumattrib_20',['doublespectrumattrib',['../class_tango_test_server__ns_1_1_double_spectrum_attrib.html#aa6ef329b83a3277d471347591812cab0',1,'TangoTestServer_ns::DoubleSpectrumAttrib::DoubleSpectrumAttrib()'],['../class_tango_test_server__ns_1_1_double_spectrum_attrib.html',1,'TangoTestServer_ns::DoubleSpectrumAttrib']]],
+  ['doublewoscalarattrib_21',['doublewoscalarattrib',['../class_tango_test_server__ns_1_1_double_wo_scalar_attrib.html#a18166af7f50089d50eef430d65e4dcda',1,'TangoTestServer_ns::DoubleWoScalarAttrib::DoubleWoScalarAttrib()'],['../class_tango_test_server__ns_1_1_double_wo_scalar_attrib.html',1,'TangoTestServer_ns::DoubleWoScalarAttrib']]],
+  ['doublewospectrumattrib_22',['doublewospectrumattrib',['../class_tango_test_server__ns_1_1_double_wo_spectrum_attrib.html#ae62ec835972a9ca3ebda36c5f7e2c043',1,'TangoTestServer_ns::DoubleWoSpectrumAttrib::DoubleWoSpectrumAttrib()'],['../class_tango_test_server__ns_1_1_double_wo_spectrum_attrib.html',1,'TangoTestServer_ns::DoubleWoSpectrumAttrib']]],
+  ['downloader_23',['Downloader',['../classgenerate_cache_file_1_1_downloader.html',1,'generateCacheFile']]],
+  ['dowritetransfer_24',['doWriteTransfer',['../class_chimera_t_k_1_1_tango_backend_register_accessor.html#a54e717085a282f6972f9b80a9f105468',1,'ChimeraTK::TangoBackendRegisterAccessor']]],
+  ['dt_25',['Dt',['../namespaceutil.html#a00252442ed0b89deb7617273dbdb0621',1,'util']]]
 ];

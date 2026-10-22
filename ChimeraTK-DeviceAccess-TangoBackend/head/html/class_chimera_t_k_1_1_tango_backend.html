@@ -132,6 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0477942d31d3f1f0d1c1c3606c33cc82" id="r_a0477942d31d3f1f0d1c1c3606c33cc82"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_tango_backend.html#a0477942d31d3f1f0d1c1c3606c33cc82">readDeviceInfo</a> () override</td></tr>
 <tr class="separator:a0477942d31d3f1f0d1c1c3606c33cc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a511f4f30c750cf195471d112e217422e" id="r_a511f4f30c750cf195471d112e217422e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; Tango::DeviceProxy &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_tango_backend.html#a511f4f30c750cf195471d112e217422e">getDeviceProxy</a> ()</td></tr>
+<tr class="memdesc:a511f4f30c750cf195471d112e217422e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a copy of the device proxy.  <br /></td></tr>
 <tr class="separator:a511f4f30c750cf195471d112e217422e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -141,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8h_source.html#l00015">15</a> of file <a class="el" href="_tango_backend_8h_source.html">TangoBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8h_source.html#l00017">17</a> of file <a class="el" href="_tango_backend_8h_source.html">TangoBackend.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a37bfd0537e68ba7e4a07f8b388522793" name="a37bfd0537e68ba7e4a07f8b388522793"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37bfd0537e68ba7e4a07f8b388522793">&#9670;&#160;</a></span>TangoBackend()</h2>
@@ -177,7 +178,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00050">50</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00052">52</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -205,7 +206,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00104">104</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00106">106</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -243,7 +244,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00035">35</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00037">37</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -304,7 +305,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8h_source.html#l00034">34</a> of file <a class="el" href="_tango_backend_8h_source.html">TangoBackend.h</a>.</p>
+<p>Return a copy of the device proxy. </p>
+<p>Callers hold the returned shared pointer for the duration of their call, so a concurrent <a class="el" href="class_chimera_t_k_1_1_tango_backend.html#a464494b10cf514017002c329888220f6">close()</a> cannot free the proxy in use. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8h_source.html#l00038">38</a> of file <a class="el" href="_tango_backend_8h_source.html">TangoBackend.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +352,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00112">112</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00114">114</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -375,7 +379,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00201">201</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00203">203</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00064">64</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00066">66</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -429,7 +433,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00207">207</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_backend_8cc_source.html#l00209">209</a> of file <a class="el" href="_tango_backend_8cc_source.html">TangoBackend.cc</a>.</p>
 
 </div>
 </div>
