@@ -94,20 +94,27 @@ $(document).ready(function(){initNavTree('test_tango_attribute_mapper_8cc.html',
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">testTangoAttributeMapper.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>&quot;</code><br />
-<code>#include &lt;ChimeraTK/cppext/finally.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_tango_adapter_8h_source.html">TangoAdapter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>&quot;</code><br />
 <code>#include &lt;tango/tango.h&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testTangoAttributeMapper.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_tango_attribute_mapper_8cc__incl.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_tango_attribute_mapper_8cc__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="test_tango_attribute_mapper_8cc_source.html">Go to the source code of this file.</a></p>
@@ -133,6 +140,40 @@ Functions</h2></td></tr>
 <tr class="separator:adcb547bcf6c175d4c3ad20688da85f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ea081dd32144f5a74dceee74da959d" id="r_a37ea081dd32144f5a74dceee74da959d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a> (testPropertyMapping)</td></tr>
 <tr class="separator:a37ea081dd32144f5a74dceee74da959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c4571f03de565d13940440a7ba9fd5" id="r_a59c4571f03de565d13940440a7ba9fd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a59c4571f03de565d13940440a7ba9fd5">BOOST_AUTO_TEST_CASE</a> (testMapperParsesEventing)</td></tr>
+<tr class="memdesc:a59c4571f03de565d13940440a7ba9fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>&lt;eventing&gt;</code> text is mapped to the eventing mode, and an absent element means Off.  <br /></td></tr>
+<tr class="separator:a59c4571f03de565d13940440a7ba9fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e3258addcc9af5334ab7eecd5b09f1" id="r_af5e3258addcc9af5334ab7eecd5b09f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#af5e3258addcc9af5334ab7eecd5b09f1">BOOST_AUTO_TEST_CASE</a> (testMapperParsesDataReadyForVoid)</td></tr>
+<tr class="memdesc:af5e3258addcc9af5334ab7eecd5b09f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DataReady is parsed for a Void source, which accepts all three values.  <br /></td></tr>
+<tr class="separator:af5e3258addcc9af5334ab7eecd5b09f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda7d8df9c313ce53149790f78783eca" id="r_acda7d8df9c313ce53149790f78783eca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#acda7d8df9c313ce53149790f78783eca">BOOST_AUTO_TEST_CASE</a> (testMapperMapsScalarAttributeWithEventing)</td></tr>
+<tr class="memdesc:acda7d8df9c313ce53149790f78783eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A scalar attribute with <code>&lt;eventing&gt;change&lt;/eventing&gt;</code> carries the mapped values, with eventing on.  <br /></td></tr>
+<tr class="separator:acda7d8df9c313ce53149790f78783eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877590c3310b730dff78aae3fbc2160c" id="r_a877590c3310b730dff78aae3fbc2160c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a877590c3310b730dff78aae3fbc2160c">BOOST_AUTO_TEST_CASE</a> (testMapperMapsSpectrumAttributeWithEventing)</td></tr>
+<tr class="memdesc:a877590c3310b730dff78aae3fbc2160c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spectrum attribute with <code>&lt;eventing&gt;dataReady&lt;/eventing&gt;</code> carries the mapped values, with eventing on.  <br /></td></tr>
+<tr class="separator:a877590c3310b730dff78aae3fbc2160c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5380d43892776613d179a3ac6f56fa" id="r_a4f5380d43892776613d179a3ac6f56fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a4f5380d43892776613d179a3ac6f56fa">BOOST_AUTO_TEST_CASE</a> (testMapperMapsWriteOnlyAttributeWithoutEventing)</td></tr>
+<tr class="memdesc:a4f5380d43892776613d179a3ac6f56fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A write-only attribute without <code>&lt;eventing&gt;</code> carries the mapped values, with eventing off.  <br /></td></tr>
+<tr class="separator:a4f5380d43892776613d179a3ac6f56fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af944b372c18fafa08c1b09b4f5d95739" id="r_af944b372c18fafa08c1b09b4f5d95739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#af944b372c18fafa08c1b09b4f5d95739">BOOST_AUTO_TEST_CASE</a> (testInvalidEventingValueRejectedAtMapperRead)</td></tr>
+<tr class="memdesc:af944b372c18fafa08c1b09b4f5d95739"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unknown <code>&lt;eventing&gt;</code> value is rejected when the mapper file is read.  <br /></td></tr>
+<tr class="separator:af944b372c18fafa08c1b09b4f5d95739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8b76356900ca0b07f0151e9efc96db" id="r_a0d8b76356900ca0b07f0151e9efc96db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a0d8b76356900ca0b07f0151e9efc96db">BOOST_AUTO_TEST_CASE</a> (testEmptyEventingValueRejectedAtMapperRead)</td></tr>
+<tr class="memdesc:a0d8b76356900ca0b07f0151e9efc96db"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty <code>&lt;eventing&gt;</code> element is rejected when the mapper file is read.  <br /></td></tr>
+<tr class="separator:a0d8b76356900ca0b07f0151e9efc96db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa656c0a145b41658c1eab4d61fda9bd3" id="r_aa656c0a145b41658c1eab4d61fda9bd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#aa656c0a145b41658c1eab4d61fda9bd3">BOOST_AUTO_TEST_CASE</a> (testWriteOnlyEventingRejectedAtMapperRead)</td></tr>
+<tr class="memdesc:aa656c0a145b41658c1eab4d61fda9bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eventing on a write-only attribute is rejected when the mapper file is read.  <br /></td></tr>
+<tr class="separator:aa656c0a145b41658c1eab4d61fda9bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbbe9887db74f4de924151f7d53c58a" id="r_a2fbbe9887db74f4de924151f7d53c58a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a2fbbe9887db74f4de924151f7d53c58a">BOOST_AUTO_TEST_CASE</a> (testMapperParsesChangeForVoid)</td></tr>
+<tr class="memdesc:a2fbbe9887db74f4de924151f7d53c58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change is parsed for a Void source, whose CHANGE event carries the readout time stamp and the quality.  <br /></td></tr>
+<tr class="separator:a2fbbe9887db74f4de924151f7d53c58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1fb64450abb364ac72fe73b1f4294029" id="r_a1fb64450abb364ac72fe73b1f4294029"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a> = &quot;serverTestImportAll&quot;</td></tr>
+<tr class="separator:a1fb64450abb364ac72fe73b1f4294029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19db52f8bf928089a97b87c7ac58b7b0" id="r_a19db52f8bf928089a97b87c7ac58b7b0"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">deviceName</a> = &quot;tango/test/serverTestimportall&quot;</td></tr>
+<tr class="separator:a19db52f8bf928089a97b87c7ac58b7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6b2a3852db8bb19ab6909bac01859985" name="a6b2a3852db8bb19ab6909bac01859985"></a>
@@ -164,13 +205,189 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00025">25</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00031">31</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0d8b76356900ca0b07f0151e9efc96db" name="a0d8b76356900ca0b07f0151e9efc96db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8b76356900ca0b07f0151e9efc96db">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testEmptyEventingValueRejectedAtMapperRead&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An empty <code>&lt;eventing&gt;</code> element is rejected when the mapper file is read. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00217">217</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="af944b372c18fafa08c1b09b4f5d95739" name="af944b372c18fafa08c1b09b4f5d95739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af944b372c18fafa08c1b09b4f5d95739">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testInvalidEventingValueRejectedAtMapperRead&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An unknown <code>&lt;eventing&gt;</code> value is rejected when the mapper file is read. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00207">207</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="acda7d8df9c313ce53149790f78783eca" name="acda7d8df9c313ce53149790f78783eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda7d8df9c313ce53149790f78783eca">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testMapperMapsScalarAttributeWithEventing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A scalar attribute with <code>&lt;eventing&gt;change&lt;/eventing&gt;</code> carries the mapped values, with eventing on. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00145">145</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="a877590c3310b730dff78aae3fbc2160c" name="a877590c3310b730dff78aae3fbc2160c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a877590c3310b730dff78aae3fbc2160c">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testMapperMapsSpectrumAttributeWithEventing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A spectrum attribute with <code>&lt;eventing&gt;dataReady&lt;/eventing&gt;</code> carries the mapped values, with eventing on. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00167">167</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="a4f5380d43892776613d179a3ac6f56fa" name="a4f5380d43892776613d179a3ac6f56fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5380d43892776613d179a3ac6f56fa">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testMapperMapsWriteOnlyAttributeWithoutEventing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A write-only attribute without <code>&lt;eventing&gt;</code> carries the mapped values, with eventing off. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00189">189</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="a2fbbe9887db74f4de924151f7d53c58a" name="a2fbbe9887db74f4de924151f7d53c58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbbe9887db74f4de924151f7d53c58a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testMapperParsesChangeForVoid&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change is parsed for a Void source, whose CHANGE event carries the readout time stamp and the quality. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00236">236</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="af5e3258addcc9af5334ab7eecd5b09f1" name="af5e3258addcc9af5334ab7eecd5b09f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e3258addcc9af5334ab7eecd5b09f1">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testMapperParsesDataReadyForVoid&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DataReady is parsed for a Void source, which accepts all three values. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00132">132</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="a59c4571f03de565d13940440a7ba9fd5" name="a59c4571f03de565d13940440a7ba9fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c4571f03de565d13940440a7ba9fd5">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testMapperParsesEventing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <code>&lt;eventing&gt;</code> text is mapped to the eventing mode, and an absent element means Off. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00110">110</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
 <a id="a37ea081dd32144f5a74dceee74da959d" name="a37ea081dd32144f5a74dceee74da959d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37ea081dd32144f5a74dceee74da959d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ea081dd32144f5a74dceee74da959d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +402,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00030">30</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00036">36</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="aa656c0a145b41658c1eab4d61fda9bd3" name="aa656c0a145b41658c1eab4d61fda9bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa656c0a145b41658c1eab4d61fda9bd3">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testWriteOnlyEventingRejectedAtMapperRead&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Eventing on a write-only attribute is rejected when the mapper file is read. </p>
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00227">227</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -204,6 +443,55 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a1fb64450abb364ac72fe73b1f4294029" name="a1fb64450abb364ac72fe73b1f4294029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb64450abb364ac72fe73b1f4294029">&#9670;&#160;</a></span>className</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view className = &quot;serverTestImportAll&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00050">50</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="a19db52f8bf928089a97b87c7ac58b7b0" name="a19db52f8bf928089a97b87c7ac58b7b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19db52f8bf928089a97b87c7ac58b7b0">&#9670;&#160;</a></span>deviceName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view deviceName = &quot;tango/test/serverTestimportall&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_tango_attribute_mapper_8cc_source.html#l00051">51</a> of file <a class="el" href="test_tango_attribute_mapper_8cc_source.html">testTangoAttributeMapper.cc</a>.</p>
 
 </div>
 </div>

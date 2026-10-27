@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['delete_5fdevice_0',['delete_device',['../class_tango_adapter_1_1_adapter_device_impl.html#a359105f4ef7d3865badf5cf41e0834d3',1,'TangoAdapter::AdapterDeviceImpl']]],
-  ['deriveattributename_1',['deriveAttributeName',['../namespace_tango_adapter_1_1util.html#ae88ae37de427ac4b7e4d55cc5fefb556',1,'TangoAdapter::util']]],
-  ['derivetype_2',['deriveType',['../namespace_tango_adapter_1_1util.html#a0b82108ba38d5e8d8270fb8c89f25e5c',1,'TangoAdapter::util']]],
-  ['device_3',['device',['../struct_threaded_tango_server.html#a709e2a48c7238d583a42c73673071587',1,'ThreadedTangoServer']]],
-  ['deviceclass_4',['DeviceClass',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html#a654062afe4ec042fce32a02312084001',1,'TangoAdapter::AttributeMapper::DeviceClass']]],
-  ['deviceinstance_5',['DeviceInstance',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html#a6ce49dcf0d6f4e3b1b4ca533165bdcf2',1,'TangoAdapter::AttributeMapper::DeviceInstance']]],
-  ['dserverimpl_6',['DServerImpl',['../class_tango_adapter_1_1_d_server_impl.html#ae9b8bd154dd1233787195706e5878a9d',1,'TangoAdapter::DServerImpl']]]
+  ['datareadyeventcount_0',['dataReadyEventCount',['../class_event_collector.html#a4fe369452c948cec0cdb66ba9dea6c88',1,'EventCollector']]],
+  ['delete_5fdevice_1',['delete_device',['../class_tango_adapter_1_1_adapter_device_impl.html#a359105f4ef7d3865badf5cf41e0834d3',1,'TangoAdapter::AdapterDeviceImpl']]],
+  ['deriveattributename_2',['deriveAttributeName',['../namespace_tango_adapter_1_1util.html#ae88ae37de427ac4b7e4d55cc5fefb556',1,'TangoAdapter::util']]],
+  ['derivetype_3',['deriveType',['../namespace_tango_adapter_1_1util.html#a0b82108ba38d5e8d8270fb8c89f25e5c',1,'TangoAdapter::util']]],
+  ['device_4',['device',['../struct_threaded_tango_server.html#a709e2a48c7238d583a42c73673071587',1,'ThreadedTangoServer']]],
+  ['deviceclass_5',['DeviceClass',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_class.html#a654062afe4ec042fce32a02312084001',1,'TangoAdapter::AttributeMapper::DeviceClass']]],
+  ['deviceinstance_6',['DeviceInstance',['../struct_tango_adapter_1_1_attribute_mapper_1_1_device_instance.html#a6ce49dcf0d6f4e3b1b4ca533165bdcf2',1,'TangoAdapter::AttributeMapper::DeviceInstance']]],
+  ['dserverimpl_7',['DServerImpl',['../class_tango_adapter_1_1_d_server_impl.html#ae9b8bd154dd1233787195706e5878a9d',1,'TangoAdapter::DServerImpl']]]
 ];

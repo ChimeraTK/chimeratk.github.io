@@ -4,6 +4,6 @@ var searchData=
   ['read_5fattr_5fhardware_1',['read_attr_hardware',['../class_tango_adapter_1_1_adapter_device_impl.html#a4ef30ff76d0c183e54ef347cb89e05a9',1,'TangoAdapter::AdapterDeviceImpl']]],
   ['readmapperfile_2',['readMapperFile',['../class_tango_adapter_1_1_attribute_mapper.html#a54e84c163c8975849fbd4db754bcc059',1,'TangoAdapter::AttributeMapper']]],
   ['requests_3',['Change Requests',['../change_requests.html',1,'']]],
-  ['requirements_4',['Requirements',['../md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md1',1,'']]],
+  ['requirements_4',['requirements',['../md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md1',1,'Requirements'],['../md_doc_2change-requests_2_c_r-002-tango-eventing.html#autotoc_md6',1,'Requirements']]],
   ['run_5',['run',['../class_tango_adapter_1_1_tango_adapter.html#a0ac1d862f07487a2eac3729d759c65a3',1,'TangoAdapter::TangoAdapter::run()'],['../class_tango_adapter_1_1_tango_updater.html#a798ec90744e39b59b3055f09f6b81312',1,'TangoAdapter::TangoUpdater::run()']]]
 ];

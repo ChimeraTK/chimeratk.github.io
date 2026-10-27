@@ -20,7 +20,7 @@ var searchData=
   ['setting_20the_20tango_20device_20state_20and_20status_17',['Setting the Tango device state and status',['../index.html#device_state_and_status',1,'']]],
   ['shutdown_18',['shutdown',['../class_tango_adapter_1_1_tango_adapter.html#a4bb7d9f2bf01b2c52c353a3c7f079b52',1,'TangoAdapter::TangoAdapter']]],
   ['shutdownrequested_19',['shutdownRequested',['../struct_threaded_tango_server.html#a8a7f2d4acf457cd137030ef02255a0f6',1,'ThreadedTangoServer']]],
-  ['specifications_20',['Specifications',['../md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md2',1,'']]],
+  ['specifications_20',['specifications',['../md_doc_2change-requests_2_c_r-002-tango-eventing.html#autotoc_md7',1,'Specifications'],['../md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md2',1,'Specifications']]],
   ['spectrum_21',['SPECTRUM',['../namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1',1,'TangoAdapter']]],
   ['spectrumattribtempl_22',['spectrumattribtempl',['../class_tango_adapter_1_1_spectrum_attrib_templ.html#ae2f0b70fd7353767aeb5f91ae0d6ad8f',1,'TangoAdapter::SpectrumAttribTempl::SpectrumAttribTempl()'],['../class_tango_adapter_1_1_spectrum_attrib_templ.html',1,'TangoAdapter::SpectrumAttribTempl&lt; TangoType, AdapterType, TangoWriteType &gt;']]],
   ['spectrumattribtempl_2eh_23',['SpectrumAttribTempl.h',['../_spectrum_attrib_templ_8h.html',1,'']]],

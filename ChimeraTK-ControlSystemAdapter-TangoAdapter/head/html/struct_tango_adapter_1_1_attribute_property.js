@@ -8,6 +8,7 @@ var struct_tango_adapter_1_1_attribute_property =
     [ "attrDataFormat", "struct_tango_adapter_1_1_attribute_property.html#ab18804f56f5fd2276751f2e2174582ad", null ],
     [ "dataType", "struct_tango_adapter_1_1_attribute_property.html#a5e0ecc6f7519bcc0b0080734347f519f", null ],
     [ "desc", "struct_tango_adapter_1_1_attribute_property.html#aba8763f88c8dd9a6460fe5b6a2fa0584", null ],
+    [ "eventing", "struct_tango_adapter_1_1_attribute_property.html#a0f6e747fb3d1e48d83f35da1b0cc3f33", null ],
     [ "length", "struct_tango_adapter_1_1_attribute_property.html#a6b6d689e715c3d7ad67a295bdd0df6ec", null ],
     [ "name", "struct_tango_adapter_1_1_attribute_property.html#ac886f28f397b4f4bf50f8327f8222e72", null ],
     [ "unit", "struct_tango_adapter_1_1_attribute_property.html#a8e89376cc7b020a3606ba81c98d54268", null ],

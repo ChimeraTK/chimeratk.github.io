@@ -2,6 +2,7 @@ var namespaces_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "detail", "namespacedetail.html", [
+      [ "pushChangeEventForAttribute", "namespacedetail.html#ac63953316decb74f72431869dcd9d7f9", null ],
       [ "writeInitialSpectrumValue", "namespacedetail.html#a22d608430cac85d779118f8fb14eb295", null ]
     ] ],
     [ "fix-linter-for-all", "namespacefix-linter-for-all.html", [
@@ -28,7 +29,8 @@ var namespaces_dup =
     ] ],
     [ "std", "namespacestd.html", [
       [ "operator<<", "namespacestd.html#a5eae34a8e2b962c584c988599af180c1", null ],
-      [ "operator<<", "namespacestd.html#a9b7ae07cc3d3e7cb59d9a5783966c89f", null ]
+      [ "operator<<", "namespacestd.html#a9b7ae07cc3d3e7cb59d9a5783966c89f", null ],
+      [ "operator<<", "namespacestd.html#afd7a7026c71c6c48aebd4489d7559dc3", null ]
     ] ],
     [ "TangoAdapter", "namespace_tango_adapter.html", "namespace_tango_adapter" ],
     [ "xml2tango", "namespacexml2tango.html", [

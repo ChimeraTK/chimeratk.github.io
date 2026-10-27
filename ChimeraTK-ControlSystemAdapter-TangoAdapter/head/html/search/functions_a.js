@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../namespacefix-linter-for-all.html#ae54728cb38a5ed3acc46eb7d05f10c3d',1,'fix-linter-for-all.main()'],['../main_8cpp.html#aa5a06fb28f3de67799b52028f6f96bb6',1,'main():&#160;main.cpp']]],
-  ['make_5fabsolute_1',['make_absolute',['../namespacefix-linter-for-all.html#a6a7d32698d0a26e1154b3d58b567662e',1,'fix-linter-for-all']]]
+  ['lastchangeevent_0',['lastChangeEvent',['../class_event_collector.html#a81639b7346325666d30db07b74d2ce05',1,'EventCollector']]],
+  ['lastdatareadycounter_1',['lastDataReadyCounter',['../class_event_collector.html#a3c59b09ab10e973be166370138a93dd8',1,'EventCollector']]]
 ];

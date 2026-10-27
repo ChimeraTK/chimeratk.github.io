@@ -92,17 +92,22 @@ $(document).ready(function(){initNavTree('_tango_test_server_8h.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">TangoTestServer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_extended_reference_test_application_8h_source.html">ExtendedReferenceTestApplication.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/ControlSystemAdapter/ApplicationFactory.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/cppext/finally.hpp&gt;</code><br />
 <code>#include &lt;tango/tango.h&gt;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
 <code>#include &lt;boost/mpl/map.hpp&gt;</code><br />
 <code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for TangoTestServer.h:</div>
@@ -141,6 +146,16 @@ Typedefs</h2></td></tr>
 <tr class="separator:a28660906b0effadc1ab89e1e543f2bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe54dd3bab938bdbe14360ebdb3f2914" id="r_abe54dd3bab938bdbe14360ebdb3f2914"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tango_test_server_8h.html#abe54dd3bab938bdbe14360ebdb3f2914">Type2Tango</a> = boost::mpl::map&lt; boost::mpl::pair&lt; double, Tango::DevDouble &gt;, boost::mpl::pair&lt; float, Tango::DevFloat &gt;, boost::mpl::pair&lt; int64_t, Tango::DevLong64 &gt;, boost::mpl::pair&lt; int32_t, Tango::DevLong &gt;, boost::mpl::pair&lt; int16_t, Tango::DevShort &gt;, boost::mpl::pair&lt; int8_t, Tango::DevShort &gt;, boost::mpl::pair&lt; uint64_t, Tango::DevULong64 &gt;, boost::mpl::pair&lt; uint32_t, Tango::DevULong &gt;, boost::mpl::pair&lt; uint16_t, Tango::DevUShort &gt;, boost::mpl::pair&lt; uint8_t, Tango::DevUChar &gt;, boost::mpl::pair&lt; ChimeraTK::Boolean, Tango::DevBoolean &gt;, boost::mpl::pair&lt; ChimeraTK::Void, Tango::DevBoolean &gt;, boost::mpl::pair&lt; std::string, std::string &gt; &gt;</td></tr>
 <tr class="separator:abe54dd3bab938bdbe14360ebdb3f2914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad2d8c29e124cc7b5b7f2016ae9d24e0e" id="r_ad2d8c29e124cc7b5b7f2016ae9d24e0e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tango_test_server_8h.html#ad2d8c29e124cc7b5b7f2016ae9d24e0e">mapperFile</a> (const std::string &amp;<a class="el" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a>, const std::string &amp;<a class="el" href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">deviceName</a>, const std::string &amp;attributesXml)</td></tr>
+<tr class="memdesc:ad2d8c29e124cc7b5b7f2016ae9d24e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mapper XML text with the given <code>&lt;attribute&gt;</code> children.  <br /></td></tr>
+<tr class="separator:ad2d8c29e124cc7b5b7f2016ae9d24e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8162db070de78f826569117e1e8d882f" id="r_a8162db070de78f826569117e1e8d882f"><td class="memTemplParams" colspan="2">template&lt;typename Action &gt; </td></tr>
+<tr class="memitem:a8162db070de78f826569117e1e8d882f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_tango_test_server_8h.html#a8162db070de78f826569117e1e8d882f">withMapperFileInCaseDirectory</a> (const std::string &amp;caseName, const std::string &amp;<a class="el" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a>, const std::string &amp;<a class="el" href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">deviceName</a>, const std::string &amp;attributesXml, Action action)</td></tr>
+<tr class="memdesc:a8162db070de78f826569117e1e8d882f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the given action with the current directory set to a per-case directory holding the given mapper file.  <br /></td></tr>
+<tr class="separator:a8162db070de78f826569117e1e8d882f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a28660906b0effadc1ab89e1e543f2bfa" name="a28660906b0effadc1ab89e1e543f2bfa"></a>
@@ -155,7 +170,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00024">24</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00028">28</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +186,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00022">22</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00026">26</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +202,108 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00027">27</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00031">31</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad2d8c29e124cc7b5b7f2016ae9d24e0e" name="ad2d8c29e124cc7b5b7f2016ae9d24e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d8c29e124cc7b5b7f2016ae9d24e0e">&#9670;&#160;</a></span>mapperFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mapperFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>className</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>deviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>attributesXml</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The mapper XML text with the given <code>&lt;attribute&gt;</code> children. </p>
+<p>The text is returned, not written; <code>withMapperFileInCaseDirectory</code> writes it under the executable name of the running server. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00197">197</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
+
+</div>
+</div>
+<a id="a8162db070de78f826569117e1e8d882f" name="a8162db070de78f826569117e1e8d882f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8162db070de78f826569117e1e8d882f">&#9670;&#160;</a></span>withMapperFileInCaseDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Action &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void withMapperFileInCaseDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>caseName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>className</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>deviceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>attributesXml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run the given action with the current directory set to a per-case directory holding the given mapper file. </p>
+<p>The mapper derives the file name it reads from the executable name of the running in-process server, so the file carries exactly that name. The directory lives inside the working directory of the test executable, which is created fresh by the build system and hence exists in any checkout. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tango_test_server_8h_source.html#l00214">214</a> of file <a class="el" href="_tango_test_server_8h_source.html">TangoTestServer.h</a>.</p>
 
 </div>
 </div>

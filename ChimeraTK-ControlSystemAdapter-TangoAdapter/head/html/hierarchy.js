@@ -13,6 +13,9 @@ var hierarchy =
     ] ],
     [ "TangoAdapter::AttributeMapper", "class_tango_adapter_1_1_attribute_mapper.html", null ],
     [ "TangoAdapter::AttributeProperty", "struct_tango_adapter_1_1_attribute_property.html", null ],
+    [ "Tango::CallBack", null, [
+      [ "EventCollector", "class_event_collector.html", null ]
+    ] ],
     [ "Tango::DeviceClass", null, [
       [ "TangoAdapter::AdapterDeviceClass", "class_tango_adapter_1_1_adapter_device_class.html", null ]
     ] ],

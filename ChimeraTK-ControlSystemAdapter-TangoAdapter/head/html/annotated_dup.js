@@ -13,6 +13,7 @@ var annotated_dup =
     ] ],
     [ "AverageCurrent", "class_average_current.html", null ],
     [ "Controller", "class_controller.html", null ],
+    [ "EventCollector", "class_event_collector.html", "class_event_collector" ],
     [ "ExampleApp", "class_example_app.html", "class_example_app" ],
     [ "ExtendedReferenceTestApplication", "class_extended_reference_test_application.html", "class_extended_reference_test_application" ],
     [ "NullConfiguration", "struct_null_configuration.html", null ],

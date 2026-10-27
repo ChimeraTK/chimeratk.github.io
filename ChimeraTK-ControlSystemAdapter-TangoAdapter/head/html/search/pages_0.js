@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['001_3a_20set_20the_20tango_20device_20state_20and_20status_20from_20the_20application_0',['CR-001: Set the Tango device state and status from the application',['../md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html',1,'change_requests']]]
+  ['001_3a_20set_20the_20tango_20device_20state_20and_20status_20from_20the_20application_0',['CR-001: Set the Tango device state and status from the application',['../md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html',1,'change_requests']]],
+  ['002_3a_20tango_20events_20for_20mapped_20attributes_1',['CR-002: Tango events for mapped attributes',['../md_doc_2change-requests_2_c_r-002-tango-eventing.html',1,'change_requests']]]
 ];

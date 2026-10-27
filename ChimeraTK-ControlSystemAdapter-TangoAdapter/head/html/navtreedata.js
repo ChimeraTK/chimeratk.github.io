@@ -41,6 +41,13 @@ var NAVTREE =
           [ "Alternatives considered", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md3", null ]
         ] ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-001-set-device-state-and-status-from-application.html#autotoc_md4", null ]
+      ] ],
+      [ "CR-002: Tango events for mapped attributes", "md_doc_2change-requests_2_c_r-002-tango-eventing.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-002-tango-eventing.html#autotoc_md6", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-002-tango-eventing.html#autotoc_md7", [
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-002-tango-eventing.html#autotoc_md8", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-002-tango-eventing.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -68,6 +75,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -78,8 +86,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adapter_device_class_8cpp.html",
-"class_tango_adapter_1_1_tango_updater.html#a0c21f09e18927e830e10b2c1efab5b7f",
-"struct_threaded_tango_server.html#aeed5a434a2d5f38aef5d265a1174c8d5"
+"class_tango_adapter_1_1_tango_adapter.html#a2572f2aa4bb892ed31d0ecedae202dc7",
+"struct_tango_test_fixture_impl.html#a5825f2f5076d914df66d7c4fe941fd59"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -103,55 +103,247 @@ $(document).ready(function(){initNavTree('test_tango_attribute_mapper_8cc_source
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a6b2a3852db8bb19ab6909bac01859985">    4</a></span><span class="preprocessor">#define BOOST_TEST_MODULE serverTestImportAll</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_tango_test_server_8h.html">TangoTestServer.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;ChimeraTK/cppext/finally.hpp&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_test_fixture_config.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_test_fixture_config.html">TestFixtureConfig</a> {</div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_test_fixture_config.html#a55f54cbdcb7877d6f770af898bbc9c3c">   17</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_test_fixture_config.html#a55f54cbdcb7877d6f770af898bbc9c3c">apply</a>(<a class="code hl_struct" href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a>&amp;) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a>.emplace_back(</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        ChimeraTK::SynchronizationDirection::deviceToControlSystem, <span class="stringliteral">&quot;plainVariableInRoot&quot;</span>, 1);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  }</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_tango_adapter_8h.html">TangoAdapter.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_tango_test_server_8h.html">TangoTestServer.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;tango/tango.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/test/included/unit_test.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_test_fixture_config.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_test_fixture_config.html">TestFixtureConfig</a> {</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_test_fixture_config.html#a55f54cbdcb7877d6f770af898bbc9c3c">   23</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_test_fixture_config.html#a55f54cbdcb7877d6f770af898bbc9c3c">apply</a>(<a class="code hl_struct" href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a>&amp;) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a>.emplace_back(</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        ChimeraTK::SynchronizationDirection::deviceToControlSystem, <span class="stringliteral">&quot;plainVariableInRoot&quot;</span>, 1);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  }</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a59d75e127358e4a9006ed6768c5a80f7">   25</a></span><span class="keyword">using </span><a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a> = <a class="code hl_struct" href="struct_tango_test_fixture.html">TangoTestFixture&lt;TestFixtureConfig&gt;</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#adcb547bcf6c175d4c3ad20688da85f70">   26</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a>(<a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a>);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/**********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">   30</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testPropertyMapping) {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="comment">// Test that we can also properly handle variables that do not have any hierarchy level</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="comment">// This can happen if the Application uses a ConfigReader that has a toplevel variable</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">auto</span> [tf, app, proxy] = <a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  std::unique_ptr&lt;std::vector&lt;std::string&gt;&gt; attributes(proxy.get_attribute_list());</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  BOOST_TEST(attributes-&gt;size() == 90);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  BOOST_CHECK(std::find_if(attributes-&gt;begin(), attributes-&gt;end(),</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                  [](<span class="keyword">auto</span>&amp; attr) { return attr == <span class="stringliteral">&quot;plainVariableInRoot&quot;</span>; }) != attributes-&gt;end());</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a59d75e127358e4a9006ed6768c5a80f7">   31</a></span><span class="keyword">using </span><a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a> = <a class="code hl_struct" href="struct_tango_test_fixture.html">TangoTestFixture&lt;TestFixtureConfig&gt;</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#adcb547bcf6c175d4c3ad20688da85f70">   32</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a>(<a class="code hl_struct" href="struct_tango_test_fixture.html">Fixture_t</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">   36</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testPropertyMapping) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// Test that we can also properly handle variables that do not have any hierarchy level</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="comment">// This can happen if the Application uses a ConfigReader that has a toplevel variable</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">auto</span> [tf, app, proxy] = <a class="code hl_function" href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  std::unique_ptr&lt;std::vector&lt;std::string&gt;&gt; attributes(proxy.get_attribute_list());</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  BOOST_TEST(attributes-&gt;size() == 90);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  BOOST_CHECK(std::find_if(attributes-&gt;begin(), attributes-&gt;end(),</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                  [](<span class="keyword">auto</span>&amp; attr) { return attr == <span class="stringliteral">&quot;plainVariableInRoot&quot;</span>; }) != attributes-&gt;end());</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">   50</a></span><span class="keyword">constexpr</span> std::string_view <a class="code hl_variable" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a> = <span class="stringliteral">&quot;serverTestImportAll&quot;</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">   51</a></span><span class="keyword">constexpr</span> std::string_view <a class="code hl_variable" href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">deviceName</a> = <span class="stringliteral">&quot;tango/test/serverTestimportall&quot;</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">static</span> std::string attribute(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; source, <span class="keyword">const</span> std::string&amp; children = {}) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">return</span> <span class="stringliteral">&quot;            &lt;attribute name=\&quot;&quot;</span> + name + <span class="stringliteral">&quot;\&quot; source=\&quot;&quot;</span> + source + <span class="stringliteral">&quot;\&quot;&gt;\n&quot;</span> + children +</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="stringliteral">&quot;            &lt;/attribute&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">static</span> std::string attributeWithEventing(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; source, <span class="keyword">const</span> std::string&amp; eventingText) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">const</span> <span class="keyword">auto</span> eventing =</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      eventingText.empty() ? std::string{} : <span class="stringliteral">&quot;                &lt;eventing&gt;&quot;</span> + eventingText + <span class="stringliteral">&quot;&lt;/eventing&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordflow">return</span> attribute(name, source, eventing);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">static</span> <span class="keywordtype">void</span> readMapperFor(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">const</span> std::string&amp; caseName, <span class="keyword">const</span> std::string&amp; attributesXml, <a class="code hl_class" href="class_tango_adapter_1_1_attribute_mapper.html">TangoAdapter::AttributeMapper</a>&amp; mapper) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// The process variable manager is the running server&#39;s control-system manager, since the application only</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">// exposes a DevicePVManager.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  mapper.<a class="code hl_function" href="class_tango_adapter_1_1_attribute_mapper.html#aaf849f4cc22f4ca8ad18db5606344c0c">setCSPVManager</a>(<a class="code hl_function" href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::TangoAdapter::getInstance</a>().getCsPvManager());</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_function" href="_tango_test_server_8h.html#a8162db070de78f826569117e1e8d882f">withMapperFileInCaseDirectory</a>(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      caseName, std::string(<a class="code hl_variable" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a>), std::string(<a class="code hl_variable" href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">deviceName</a>), attributesXml, [&amp;mapper] { mapper.<a class="code hl_function" href="class_tango_adapter_1_1_attribute_mapper.html#a54e84c163c8975849fbd4db754bcc059">readMapperFile</a>(); });</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">static</span> std::list&lt;TangoAdapter::AttributeProperty&gt; parseAttributesOf(</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">const</span> std::string&amp; caseName, <span class="keyword">const</span> std::string&amp; attributesXml) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_class" href="class_tango_adapter_1_1_attribute_mapper.html">TangoAdapter::AttributeMapper</a> mapper;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  readMapperFor(caseName, attributesXml, mapper);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  std::string name = std::string(<a class="code hl_variable" href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keyword">const</span> <span class="keyword">auto</span> deviceClass = mapper.<a class="code hl_function" href="class_tango_adapter_1_1_attribute_mapper.html#ab3f512a8921f3b953931d1f2ab7e12ae">getClass</a>(name);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  BOOST_REQUIRE(deviceClass != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordflow">return</span> deviceClass-&gt;attributes;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">static</span> <span class="keywordtype">void</span> expectMapperRejects(<span class="keyword">const</span> std::string&amp; caseName, <span class="keyword">const</span> std::string&amp; attributesXml) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <a class="code hl_class" href="class_tango_adapter_1_1_attribute_mapper.html">TangoAdapter::AttributeMapper</a> mapper;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  BOOST_CHECK_THROW(readMapperFor(caseName, attributesXml, mapper), ChimeraTK::logic_error);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a59c4571f03de565d13940440a7ba9fd5">  110</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testMapperParsesEventing) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">const</span> std::vector&lt;std::pair&lt;std::string, TangoAdapter::EventingMode&gt;&gt; cases{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      {<span class="stringliteral">&quot;dataReady&quot;</span>, <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713acb7658367c9fdd7110ebe09c34077d2c">TangoAdapter::EventingMode::DataReady</a>},</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      {<span class="stringliteral">&quot;change&quot;</span>, <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9">TangoAdapter::EventingMode::Change</a>},</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      {<span class="stringliteral">&quot;off&quot;</span>, <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713ad15305d7a4e34e02489c74a5ef542f36">TangoAdapter::EventingMode::Off</a>},</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      {<span class="stringliteral">&quot;&quot;</span>, <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713ad15305d7a4e34e02489c74a5ef542f36">TangoAdapter::EventingMode::Off</a>},</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  };</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [text, expected] : cases) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> <span class="keyword">auto</span> attributes = parseAttributesOf(text.empty() ? <span class="stringliteral">&quot;absent&quot;</span> : text,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        attributeWithEventing(<span class="stringliteral">&quot;INT_FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;INT/FROM_DEVICE_SCALAR&quot;</span>, text));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    BOOST_REQUIRE_EQUAL(attributes.size(), 1U);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    BOOST_TEST(attributes.front().eventing == expected);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#af5e3258addcc9af5334ab7eecd5b09f1">  132</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testMapperParsesDataReadyForVoid) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keyword">const</span> <span class="keyword">auto</span> attributes = parseAttributesOf(</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="stringliteral">&quot;voidDataReady&quot;</span>, attributeWithEventing(<span class="stringliteral">&quot;VOID_FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;VOID/FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;dataReady&quot;</span>));</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  BOOST_REQUIRE_EQUAL(attributes.size(), 1U);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  BOOST_TEST(attributes.front().eventing == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713acb7658367c9fdd7110ebe09c34077d2c">TangoAdapter::EventingMode::DataReady</a>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#acda7d8df9c313ce53149790f78783eca">  145</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testMapperMapsScalarAttributeWithEventing) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">const</span> <span class="keyword">auto</span> attributes = parseAttributesOf(<span class="stringliteral">&quot;scalarMapping&quot;</span>,</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      attribute(<span class="stringliteral">&quot;INT_FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;INT/FROM_DEVICE_SCALAR&quot;</span>,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>          <span class="stringliteral">&quot;                &lt;description&gt;An integer&lt;/description&gt;\n                &lt;egu&gt;mm&lt;/egu&gt;\n&quot;</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>          <span class="stringliteral">&quot;                &lt;eventing&gt;change&lt;/eventing&gt;\n&quot;</span>));</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  BOOST_REQUIRE_EQUAL(attributes.size(), 1U);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <span class="keyword">property</span> = attributes.front();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  BOOST_TEST(property.name == <span class="stringliteral">&quot;INT_FROM_DEVICE_SCALAR&quot;</span>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  BOOST_TEST(property.desc == <span class="stringliteral">&quot;An integer&quot;</span>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  BOOST_TEST(property.unit == <span class="stringliteral">&quot;mm&quot;</span>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  BOOST_TEST(property.attrDataFormat == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca8f3d9a4b6a7b7f2c7afa61ca113d0db9">TangoAdapter::AttrDataFormat::SCALAR</a>);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  BOOST_TEST(property.dataType == Tango::DEV_LONG);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  BOOST_TEST(property.writeType == Tango::AttrWriteType::READ);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  BOOST_TEST(property.eventing == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9">TangoAdapter::EventingMode::Change</a>);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a877590c3310b730dff78aae3fbc2160c">  167</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testMapperMapsSpectrumAttributeWithEventing) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">const</span> <span class="keyword">auto</span> attributes = parseAttributesOf(<span class="stringliteral">&quot;spectrumMapping&quot;</span>,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      attribute(<span class="stringliteral">&quot;INT_FROM_DEVICE_ARRAY&quot;</span>, <span class="stringliteral">&quot;INT/FROM_DEVICE_ARRAY&quot;</span>,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>          <span class="stringliteral">&quot;                &lt;description&gt;An array&lt;/description&gt;\n                &lt;egu&gt;n/a&lt;/egu&gt;\n&quot;</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>          <span class="stringliteral">&quot;                &lt;eventing&gt;dataReady&lt;/eventing&gt;\n&quot;</span>));</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  BOOST_REQUIRE_EQUAL(attributes.size(), 1U);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <span class="keyword">property</span> = attributes.front();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  BOOST_TEST(property.name == <span class="stringliteral">&quot;INT_FROM_DEVICE_ARRAY&quot;</span>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  BOOST_TEST(property.unit == <span class="stringliteral">&quot;n/a&quot;</span>);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  BOOST_TEST(property.length == 10U);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  BOOST_TEST(property.attrDataFormat == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1">TangoAdapter::AttrDataFormat::SPECTRUM</a>);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  BOOST_TEST(property.dataType == Tango::DEV_LONG);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  BOOST_TEST(property.writeType == Tango::AttrWriteType::READ);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  BOOST_TEST(property.eventing == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713acb7658367c9fdd7110ebe09c34077d2c">TangoAdapter::EventingMode::DataReady</a>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
+</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a4f5380d43892776613d179a3ac6f56fa">  189</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testMapperMapsWriteOnlyAttributeWithoutEventing) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">const</span> <span class="keyword">auto</span> attributes =</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      parseAttributesOf(<span class="stringliteral">&quot;writeOnlyMapping&quot;</span>, attribute(<span class="stringliteral">&quot;INT_TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;INT/TO_DEVICE_SCALAR&quot;</span>));</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  BOOST_REQUIRE_EQUAL(attributes.size(), 1U);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <span class="keyword">property</span> = attributes.front();</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  BOOST_TEST(property.name == <span class="stringliteral">&quot;INT_TO_DEVICE_SCALAR&quot;</span>);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  BOOST_TEST(property.attrDataFormat == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca8f3d9a4b6a7b7f2c7afa61ca113d0db9">TangoAdapter::AttrDataFormat::SCALAR</a>);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  BOOST_TEST(property.dataType == Tango::DEV_LONG);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  BOOST_TEST(property.writeType == Tango::AttrWriteType::WRITE);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  BOOST_TEST(property.eventing == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713ad15305d7a4e34e02489c74a5ef542f36">TangoAdapter::EventingMode::Off</a>);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="foldopen" id="foldopen00207" data-start="{" data-end="}">
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#af944b372c18fafa08c1b09b4f5d95739">  207</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testInvalidEventingValueRejectedAtMapperRead) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  expectMapperRejects(</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <span class="stringliteral">&quot;invalidValue&quot;</span>, attributeWithEventing(<span class="stringliteral">&quot;INT_FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;INT/FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;invalidValue&quot;</span>));</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a0d8b76356900ca0b07f0151e9efc96db">  217</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testEmptyEventingValueRejectedAtMapperRead) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  expectMapperRejects(<span class="stringliteral">&quot;emptyValue&quot;</span>,</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>      attribute(<span class="stringliteral">&quot;INT_FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;INT/FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;                &lt;eventing&gt;&lt;/eventing&gt;\n&quot;</span>));</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
+</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#aa656c0a145b41658c1eab4d61fda9bd3">  227</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testWriteOnlyEventingRejectedAtMapperRead) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  expectMapperRejects(<span class="stringliteral">&quot;writeOnly&quot;</span>, attributeWithEventing(<span class="stringliteral">&quot;INT_TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;INT/TO_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;change&quot;</span>));</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>}</div>
+</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">/**********************************************************************************************************************/</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="foldopen" id="foldopen00236" data-start="{" data-end="}">
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="test_tango_attribute_mapper_8cc.html#a2fbbe9887db74f4de924151f7d53c58a">  236</a></span><a class="code hl_function" href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a>(testMapperParsesChangeForVoid) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keyword">const</span> <span class="keyword">auto</span> attributes = parseAttributesOf(</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      <span class="stringliteral">&quot;voidChange&quot;</span>, attributeWithEventing(<span class="stringliteral">&quot;VOID_FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;VOID/FROM_DEVICE_SCALAR&quot;</span>, <span class="stringliteral">&quot;change&quot;</span>));</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  BOOST_REQUIRE_EQUAL(attributes.size(), 1U);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  BOOST_TEST(attributes.front().eventing == <a class="code hl_enumvalue" href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9">TangoAdapter::EventingMode::Change</a>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
+</div>
+<div class="ttc" id="a_tango_adapter_8h_html"><div class="ttname"><a href="_tango_adapter_8h.html">TangoAdapter.h</a></div></div>
 <div class="ttc" id="a_tango_test_server_8h_html"><div class="ttname"><a href="_tango_test_server_8h.html">TangoTestServer.h</a></div></div>
+<div class="ttc" id="a_tango_test_server_8h_html_a8162db070de78f826569117e1e8d882f"><div class="ttname"><a href="_tango_test_server_8h.html#a8162db070de78f826569117e1e8d882f">withMapperFileInCaseDirectory</a></div><div class="ttdeci">void withMapperFileInCaseDirectory(const std::string &amp;caseName, const std::string &amp;className, const std::string &amp;deviceName, const std::string &amp;attributesXml, Action action)</div><div class="ttdoc">Run the given action with the current directory set to a per-case directory holding the given mapper ...</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00214">TangoTestServer.h:214</a></div></div>
 <div class="ttc" id="aclass_extended_reference_test_application_html_a85b158ed6e7df389005f6def6a4fd589"><div class="ttname"><a href="class_extended_reference_test_application.html#a85b158ed6e7df389005f6def6a4fd589">ExtendedReferenceTestApplication::additionalVariables</a></div><div class="ttdeci">static std::list&lt; VariableHolder &gt; additionalVariables</div><div class="ttdef"><b>Definition</b> <a href="_extended_reference_test_application_8h_source.html#l00022">ExtendedReferenceTestApplication.h:22</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_html"><div class="ttname"><a href="struct_tango_test_fixture.html">TangoTestFixture</a></div><div class="ttdoc">Test fixture to use in all TangoAdapter tests.</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00318">TangoTestServer.h:318</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_impl_html"><div class="ttname"><a href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a></div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00147">TangoTestServer.h:147</a></div></div>
-<div class="ttc" id="astruct_tango_test_fixture_impl_html_ab90860baae20e0c7ea4515dfc1ecc7ad"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a></div><div class="ttdeci">static std::tuple&lt; TangoTestFixtureImpl &amp;, ExtendedReferenceTestApplication &amp;, Tango::DeviceProxy &amp; &gt; getContents()</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00177">TangoTestServer.h:177</a></div></div>
-<div class="ttc" id="astruct_test_fixture_config_html"><div class="ttname"><a href="struct_test_fixture_config.html">TestFixtureConfig</a></div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00016">testTangoAttributeMapper.cc:16</a></div></div>
-<div class="ttc" id="astruct_test_fixture_config_html_a55f54cbdcb7877d6f770af898bbc9c3c"><div class="ttname"><a href="struct_test_fixture_config.html#a55f54cbdcb7877d6f770af898bbc9c3c">TestFixtureConfig::apply</a></div><div class="ttdeci">static void apply(TangoTestFixtureImpl &amp;)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00017">testTangoAttributeMapper.cc:17</a></div></div>
-<div class="ttc" id="atest_tango_attribute_mapper_8cc_html_a37ea081dd32144f5a74dceee74da959d"><div class="ttname"><a href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testPropertyMapping)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00030">testTangoAttributeMapper.cc:30</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_attribute_mapper_html"><div class="ttname"><a href="class_tango_adapter_1_1_attribute_mapper.html">TangoAdapter::AttributeMapper</a></div><div class="ttdef"><b>Definition</b> <a href="_attribute_mapper_8h_source.html#l00016">AttributeMapper.h:16</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_attribute_mapper_html_a54e84c163c8975849fbd4db754bcc059"><div class="ttname"><a href="class_tango_adapter_1_1_attribute_mapper.html#a54e84c163c8975849fbd4db754bcc059">TangoAdapter::AttributeMapper::readMapperFile</a></div><div class="ttdeci">void readMapperFile()</div><div class="ttdef"><b>Definition</b> <a href="_attribut_mapper_8cpp_source.html#l00393">AttributMapper.cpp:393</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_attribute_mapper_html_aaf849f4cc22f4ca8ad18db5606344c0c"><div class="ttname"><a href="class_tango_adapter_1_1_attribute_mapper.html#aaf849f4cc22f4ca8ad18db5606344c0c">TangoAdapter::AttributeMapper::setCSPVManager</a></div><div class="ttdeci">void setCSPVManager(boost::shared_ptr&lt; ChimeraTK::ControlSystemPVManager &gt; csPVManager)</div><div class="ttdef"><b>Definition</b> <a href="_attribute_mapper_8h_source.html#l00057">AttributeMapper.h:57</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_attribute_mapper_html_ab3f512a8921f3b953931d1f2ab7e12ae"><div class="ttname"><a href="class_tango_adapter_1_1_attribute_mapper.html#ab3f512a8921f3b953931d1f2ab7e12ae">TangoAdapter::AttributeMapper::getClass</a></div><div class="ttdeci">std::shared_ptr&lt; DeviceClass &gt; getClass(std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="_attribute_mapper_8h_source.html#l00063">AttributeMapper.h:63</a></div></div>
+<div class="ttc" id="aclass_tango_adapter_1_1_tango_adapter_html_ac1b926af7b5481907f607380c22e3d27"><div class="ttname"><a href="class_tango_adapter_1_1_tango_adapter.html#ac1b926af7b5481907f607380c22e3d27">TangoAdapter::TangoAdapter::getInstance</a></div><div class="ttdeci">static TangoAdapter &amp; getInstance()</div><div class="ttdef"><b>Definition</b> <a href="_tango_adapter_8h_source.html#l00017">TangoAdapter.h:17</a></div></div>
+<div class="ttc" id="anamespace_tango_adapter_html_aae3cebe8cceccc2ddc18f3d4f4d8b713acb7658367c9fdd7110ebe09c34077d2c"><div class="ttname"><a href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713acb7658367c9fdd7110ebe09c34077d2c">TangoAdapter::EventingMode::DataReady</a></div><div class="ttdeci">@ DataReady</div></div>
+<div class="ttc" id="anamespace_tango_adapter_html_aae3cebe8cceccc2ddc18f3d4f4d8b713ad15305d7a4e34e02489c74a5ef542f36"><div class="ttname"><a href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713ad15305d7a4e34e02489c74a5ef542f36">TangoAdapter::EventingMode::Off</a></div><div class="ttdeci">@ Off</div></div>
+<div class="ttc" id="anamespace_tango_adapter_html_aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9"><div class="ttname"><a href="namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9">TangoAdapter::EventingMode::Change</a></div><div class="ttdeci">@ Change</div></div>
+<div class="ttc" id="anamespace_tango_adapter_html_ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1"><div class="ttname"><a href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1">TangoAdapter::AttrDataFormat::SPECTRUM</a></div><div class="ttdeci">@ SPECTRUM</div></div>
+<div class="ttc" id="anamespace_tango_adapter_html_ab7d82969bf35457264613277dbb3ffaca8f3d9a4b6a7b7f2c7afa61ca113d0db9"><div class="ttname"><a href="namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca8f3d9a4b6a7b7f2c7afa61ca113d0db9">TangoAdapter::AttrDataFormat::SCALAR</a></div><div class="ttdeci">@ SCALAR</div></div>
+<div class="ttc" id="astruct_tango_test_fixture_html"><div class="ttname"><a href="struct_tango_test_fixture.html">TangoTestFixture</a></div><div class="ttdoc">Test fixture to use in all TangoAdapter tests.</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00364">TangoTestServer.h:364</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_impl_html"><div class="ttname"><a href="struct_tango_test_fixture_impl.html">TangoTestFixtureImpl</a></div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00151">TangoTestServer.h:151</a></div></div>
+<div class="ttc" id="astruct_tango_test_fixture_impl_html_ab90860baae20e0c7ea4515dfc1ecc7ad"><div class="ttname"><a href="struct_tango_test_fixture_impl.html#ab90860baae20e0c7ea4515dfc1ecc7ad">TangoTestFixtureImpl::getContents</a></div><div class="ttdeci">static std::tuple&lt; TangoTestFixtureImpl &amp;, ExtendedReferenceTestApplication &amp;, Tango::DeviceProxy &amp; &gt; getContents()</div><div class="ttdef"><b>Definition</b> <a href="_tango_test_server_8h_source.html#l00181">TangoTestServer.h:181</a></div></div>
+<div class="ttc" id="astruct_test_fixture_config_html"><div class="ttname"><a href="struct_test_fixture_config.html">TestFixtureConfig</a></div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00022">testTangoAttributeMapper.cc:22</a></div></div>
+<div class="ttc" id="astruct_test_fixture_config_html_a55f54cbdcb7877d6f770af898bbc9c3c"><div class="ttname"><a href="struct_test_fixture_config.html#a55f54cbdcb7877d6f770af898bbc9c3c">TestFixtureConfig::apply</a></div><div class="ttdeci">static void apply(TangoTestFixtureImpl &amp;)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00023">testTangoAttributeMapper.cc:23</a></div></div>
+<div class="ttc" id="atest_tango_attribute_mapper_8cc_html_a19db52f8bf928089a97b87c7ac58b7b0"><div class="ttname"><a href="test_tango_attribute_mapper_8cc.html#a19db52f8bf928089a97b87c7ac58b7b0">deviceName</a></div><div class="ttdeci">constexpr std::string_view deviceName</div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00051">testTangoAttributeMapper.cc:51</a></div></div>
+<div class="ttc" id="atest_tango_attribute_mapper_8cc_html_a1fb64450abb364ac72fe73b1f4294029"><div class="ttname"><a href="test_tango_attribute_mapper_8cc.html#a1fb64450abb364ac72fe73b1f4294029">className</a></div><div class="ttdeci">constexpr std::string_view className</div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00050">testTangoAttributeMapper.cc:50</a></div></div>
+<div class="ttc" id="atest_tango_attribute_mapper_8cc_html_a37ea081dd32144f5a74dceee74da959d"><div class="ttname"><a href="test_tango_attribute_mapper_8cc.html#a37ea081dd32144f5a74dceee74da959d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testPropertyMapping)</div><div class="ttdef"><b>Definition</b> <a href="test_tango_attribute_mapper_8cc_source.html#l00036">testTangoAttributeMapper.cc:36</a></div></div>
 <div class="ttc" id="atest_tango_attribute_mapper_8cc_html_adcb547bcf6c175d4c3ad20688da85f70"><div class="ttname"><a href="test_tango_attribute_mapper_8cc.html#adcb547bcf6c175d4c3ad20688da85f70">BOOST_GLOBAL_FIXTURE</a></div><div class="ttdeci">BOOST_GLOBAL_FIXTURE(Fixture_t)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

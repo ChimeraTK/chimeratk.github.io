@@ -3,6 +3,7 @@ var dir_ef51a35f094adc930a14e17332e2b5f3 =
     [ "testTangoAttributeMapper.cc", "test_tango_attribute_mapper_8cc.html", "test_tango_attribute_mapper_8cc" ],
     [ "testTangoServer.cpp", "test_tango_server_8cpp.html", null ],
     [ "testTangoServerErrorFlag.cc", "test_tango_server_error_flag_8cc.html", "test_tango_server_error_flag_8cc" ],
+    [ "testTangoServerEventing.cc", "test_tango_server_eventing_8cc.html", "test_tango_server_eventing_8cc" ],
     [ "testTangoServerFilterAttributes.cpp", "test_tango_server_filter_attributes_8cpp.html", "test_tango_server_filter_attributes_8cpp" ],
     [ "testTangoServerImportAll.cpp", "test_tango_server_import_all_8cpp.html", "test_tango_server_import_all_8cpp" ],
     [ "testTangoServerMapTwice.cc", "test_tango_server_map_twice_8cc.html", "test_tango_server_map_twice_8cc" ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['image_0',['IMAGE',['../namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca23a12f67f614b5518c7f1c2465bf95e3',1,'TangoAdapter']]]
+  ['change_0',['Change',['../namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9',1,'TangoAdapter']]]
 ];

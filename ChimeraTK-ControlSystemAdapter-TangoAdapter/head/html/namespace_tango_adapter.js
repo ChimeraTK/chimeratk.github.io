@@ -22,8 +22,14 @@ var namespace_tango_adapter =
       [ "SPECTRUM", "namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca63225cbec06076dbc18e99cd79bdfce1", null ],
       [ "IMAGE", "namespace_tango_adapter.html#ab7d82969bf35457264613277dbb3ffaca23a12f67f614b5518c7f1c2465bf95e3", null ]
     ] ],
+    [ "EventingMode", "namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713", [
+      [ "Off", "namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713ad15305d7a4e34e02489c74a5ef542f36", null ],
+      [ "DataReady", "namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713acb7658367c9fdd7110ebe09c34077d2c", null ],
+      [ "Change", "namespace_tango_adapter.html#aae3cebe8cceccc2ddc18f3d4f4d8b713af4ec5f57bd4d31b803312d873be40da9", null ]
+    ] ],
     [ "arrayToString", "namespace_tango_adapter.html#a1364114c161c6ec2df03cfc4e6452a8f", null ],
     [ "constructor", "namespace_tango_adapter.html#ae1c28d783a4bca6155adb75f8549d81c", null ],
+    [ "convertToTangoType", "namespace_tango_adapter.html#a620a5cb3ded942ac9fac233d2bcdb909", null ],
     [ "createPropertyIfEmpty", "namespace_tango_adapter.html#ae67061b5b94fcbbfaa04a2cbd9ba3501", null ],
     [ "getProperty", "namespace_tango_adapter.html#aed63cab46c76529b37f135a89ae01940", null ],
     [ "setProperty", "namespace_tango_adapter.html#ab7a375c5a4a1e49e7605e9d6690120c8", null ],
