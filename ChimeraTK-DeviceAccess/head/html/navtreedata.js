@@ -109,17 +109,16 @@ var NAVTREE =
         [ "Self-referencing redirects", "lmap.html#internal_redirect", null ]
       ] ],
       [ "Accessor plugins", "lmap.html#plugins", [
-        [ "List of plugins", "lmap.html#plugins_reference", [
-          [ "multiply", "lmap.html#plugins_reference_multiply", null ],
-          [ "math", "lmap.html#plugins_reference_math", null ],
-          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
-          [ "forcePollingRead", "lmap.html#plugins_reference_force_polling_read", null ],
-          [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
-          [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ],
-          [ "Double Buffering plugin for the Logical Name Mapper", "lmap.html#double_buffering_plugin", null ],
-          [ "bitRange", "lmap.html#plugins_reference_bit_range", null ]
-        ] ],
+        [ "multiply", "lmap.html#plugins_reference_multiply", null ],
+        [ "math", "lmap.html#plugins_reference_math", null ],
+        [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
+        [ "forcePollingRead", "lmap.html#plugins_reference_force_polling_read", null ],
+        [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
+        [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ],
+        [ "Double Buffering plugin for the Logical Name Mapper", "lmap.html#double_buffering_plugin", null ],
+        [ "bitRange", "lmap.html#plugins_reference_bit_range", null ],
         [ "tagModifier", "lmap.html#plugins_reference_tag_modifier", null ],
+        [ "setDescription", "lmap.html#plugins_reference_set_description", null ],
         [ "isStatusOutput", "lmap.html#plugins_reference_is_status_output", null ],
         [ "hasReverseRecovery", "lmap.html#plugins_reference_is_reverse_recovery", null ],
         [ "fanOut", "lmap.html#plugins_reference_fanout", null ]
