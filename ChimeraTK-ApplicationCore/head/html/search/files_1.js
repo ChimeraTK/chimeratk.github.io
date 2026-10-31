@@ -1,17 +1,19 @@
 var searchData=
 [
-  ['check_5ftimeout_2eh_0',['check_timeout.h',['../check__timeout_8h.html',1,'']]],
-  ['circulardependencydetectionrecursionstopper_2ecc_1',['CircularDependencyDetectionRecursionStopper.cc',['../_circular_dependency_detection_recursion_stopper_8cc.html',1,'']]],
-  ['circulardependencydetectionrecursionstopper_2eh_2',['CircularDependencyDetectionRecursionStopper.h',['../_circular_dependency_detection_recursion_stopper_8h.html',1,'']]],
-  ['circulardependencydetector_2ecc_3',['CircularDependencyDetector.cc',['../_circular_dependency_detector_8cc.html',1,'']]],
-  ['circulardependencydetector_2eh_4',['CircularDependencyDetector.h',['../_circular_dependency_detector_8h.html',1,'']]],
-  ['conceptualoverview_2edox_5',['conceptualOverview.dox',['../conceptual_overview_8dox.html',1,'']]],
-  ['configreader_2ecc_6',['ConfigReader.cc',['../_config_reader_8cc.html',1,'']]],
-  ['configreader_2eh_7',['ConfigReader.h',['../_config_reader_8h.html',1,'']]],
-  ['connectionmaker_2ecc_8',['ConnectionMaker.cc',['../_connection_maker_8cc.html',1,'']]],
-  ['connectionmaker_2eh_9',['ConnectionMaker.h',['../_connection_maker_8h.html',1,'']]],
-  ['constantaccessor_2eh_10',['ConstantAccessor.h',['../_constant_accessor_8h.html',1,'']]],
-  ['consumingfanout_2eh_11',['ConsumingFanOut.h',['../_consuming_fan_out_8h.html',1,'']]],
-  ['controller_2ecc_12',['Controller.cc',['../_controller_8cc.html',1,'']]],
-  ['controller_2eh_13',['Controller.h',['../_controller_8h.html',1,'']]]
+  ['changerequests_2edox_0',['changeRequests.dox',['../change_requests_8dox.html',1,'']]],
+  ['check_5ftimeout_2eh_1',['check_timeout.h',['../check__timeout_8h.html',1,'']]],
+  ['circulardependencydetectionrecursionstopper_2ecc_2',['CircularDependencyDetectionRecursionStopper.cc',['../_circular_dependency_detection_recursion_stopper_8cc.html',1,'']]],
+  ['circulardependencydetectionrecursionstopper_2eh_3',['CircularDependencyDetectionRecursionStopper.h',['../_circular_dependency_detection_recursion_stopper_8h.html',1,'']]],
+  ['circulardependencydetector_2ecc_4',['CircularDependencyDetector.cc',['../_circular_dependency_detector_8cc.html',1,'']]],
+  ['circulardependencydetector_2eh_5',['CircularDependencyDetector.h',['../_circular_dependency_detector_8h.html',1,'']]],
+  ['conceptualoverview_2edox_6',['conceptualOverview.dox',['../conceptual_overview_8dox.html',1,'']]],
+  ['configreader_2ecc_7',['ConfigReader.cc',['../_config_reader_8cc.html',1,'']]],
+  ['configreader_2eh_8',['ConfigReader.h',['../_config_reader_8h.html',1,'']]],
+  ['connectionmaker_2ecc_9',['ConnectionMaker.cc',['../_connection_maker_8cc.html',1,'']]],
+  ['connectionmaker_2eh_10',['ConnectionMaker.h',['../_connection_maker_8h.html',1,'']]],
+  ['constantaccessor_2eh_11',['ConstantAccessor.h',['../_constant_accessor_8h.html',1,'']]],
+  ['consumingfanout_2eh_12',['ConsumingFanOut.h',['../_consuming_fan_out_8h.html',1,'']]],
+  ['controller_2ecc_13',['Controller.cc',['../_controller_8cc.html',1,'']]],
+  ['controller_2eh_14',['Controller.h',['../_controller_8h.html',1,'']]],
+  ['cr_2d001_2dclarifyunitsanddescriptions_2emd_15',['CR-001-clarifyUnitsAndDescriptions.md',['../_c_r-001-clarify_units_and_descriptions_8md.html',1,'']]]
 ];

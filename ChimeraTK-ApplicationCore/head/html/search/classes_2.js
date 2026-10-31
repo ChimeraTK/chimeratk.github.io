@@ -21,6 +21,7 @@ var searchData=
   ['constmultiplier_3c_20double_20_3e_18',['ConstMultiplier&lt; double &gt;',['../struct_chimera_t_k_1_1_const_multiplier.html',1,'ChimeraTK']]],
   ['constmultiplier_3c_20uint16_5ft_2c_20uint16_5ft_2c_20120_20_3e_19',['ConstMultiplier&lt; uint16_t, uint16_t, 120 &gt;',['../struct_chimera_t_k_1_1_const_multiplier.html',1,'ChimeraTK']]],
   ['consumingfanout_20',['ConsumingFanOut',['../class_chimera_t_k_1_1_consuming_fan_out.html',1,'ChimeraTK']]],
-  ['continuesearchdisjuncttrees_21',['ContinueSearchDisjunctTrees',['../struct_chimera_t_k_1_1_model_1_1_continue_search_disjunct_trees.html',1,'ChimeraTK::Model']]],
-  ['controller_22',['Controller',['../class_controller.html',1,'']]]
+  ['consumingmodule_21',['ConsumingModule',['../struct_tests_1_1test_app_module_connections_1_1_consuming_module.html',1,'Tests::testAppModuleConnections']]],
+  ['continuesearchdisjuncttrees_22',['ContinueSearchDisjunctTrees',['../struct_chimera_t_k_1_1_model_1_1_continue_search_disjunct_trees.html',1,'ChimeraTK::Model']]],
+  ['controller_23',['Controller',['../class_controller.html',1,'']]]
 ];

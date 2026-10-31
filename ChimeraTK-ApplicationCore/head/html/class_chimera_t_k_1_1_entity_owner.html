@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_entity_owner.htm
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_entity_owner-members.html">List of all members</a>  </div>
@@ -231,6 +232,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a38e92b9f1be12d637408b06f8020b855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a variable name which will be automatically connected with a constant value.  <br /></td></tr>
 <tr class="separator:a38e92b9f1be12d637408b06f8020b855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8bf1a927996a2b7b7e1d0b99b2a13fb7" id="r_a8bf1a927996a2b7b7e1d0b99b2a13fb7"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a8bf1a927996a2b7b7e1d0b99b2a13fb7">composeFullDescription</a> (const std::string &amp;first, const std::string &amp;second)</td></tr>
+<tr class="memdesc:a8bf1a927996a2b7b7e1d0b99b2a13fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose a full description from a prefix (owner's full description or the outer description) and a segment (the own description), promoting any leading priority markers ("!" / "?") of both parts to the very front of the result.  <br /></td></tr>
+<tr class="separator:a8bf1a927996a2b7b7e1d0b99b2a13fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a0cedb197993674c1f50f0d0b676d958e" id="r_a0cedb197993674c1f50f0d0b676d958e"><td class="memItemLeft" align="right" valign="top">static constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a0cedb197993674c1f50f0d0b676d958e">namePrefixConstant</a> {&quot;/@CONST@&quot;}</td></tr>
@@ -292,7 +299,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="aa856db8bf289b50c32116089e3d95e8fa4bbb8f967da6d1a610596d7257179c2b" name="aa856db8bf289b50c32116089e3d95e8fa4bbb8f967da6d1a610596d7257179c2b"></a>Invalid&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00117">117</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00133">133</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -464,6 +471,47 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8bf1a927996a2b7b7e1d0b99b2a13fb7" name="a8bf1a927996a2b7b7e1d0b99b2a13fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf1a927996a2b7b7e1d0b99b2a13fb7">&#9670;&#160;</a></span>composeFullDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChimeraTK::EntityOwner::composeFullDescription </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compose a full description from a prefix (owner's full description or the outer description) and a segment (the own description), promoting any leading priority markers ("!" / "?") of both parts to the very front of the result. </p>
+<p>Priority markers within each part are moved to the front of the composed string before the rest text is joined with " - ". Escaped markers (!, \?) at the start of a part are treated as literals and therefore do not count as markers; an escaped leading marker in the non-first segment is un-escaped (since after joining it no longer sits at the very start of the string), while in the first part it is left escaped (so it remains a literal at the start of the overall description). </p>
+
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8cc_source.html#l00160">160</a> of file <a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a>.</p>
+
+</div>
+</div>
 <a id="a38e92b9f1be12d637408b06f8020b855" name="a38e92b9f1be12d637408b06f8020b855"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38e92b9f1be12d637408b06f8020b855">&#9670;&#160;</a></span>constant()</h2>
 
@@ -485,7 +533,7 @@ template&lt;typename T &gt; </div>
 <p>Create a variable name which will be automatically connected with a constant value. </p>
 <p>This can be used when a constant value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00196">196</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00212">212</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +624,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain the list of accessors/variables directly associated with this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00077">77</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00093">93</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +960,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain the list of submodules associated with this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00080">80</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00096">96</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1204,7 @@ template&lt;typename T &gt; </div>
 
 <p>Called inside the destructor of Accessor: removes the accessor from the list. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00096">96</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00112">112</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1264,7 @@ template&lt;typename T &gt; </div>
 
 <p>List of accessors owned by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00177">177</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00193">193</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1290,7 @@ template&lt;typename T &gt; </div>
 
 <p>The description of this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00174">174</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00190">190</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1316,7 @@ template&lt;typename T &gt; </div>
 
 <p>List of modules owned by this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00180">180</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00196">196</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1342,7 @@ template&lt;typename T &gt; </div>
 
 <p>The name of this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00171">171</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00187">187</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1320,7 +1368,7 @@ template&lt;typename T &gt; </div>
 
 <p>List of tags to be added to all accessors and modules inside this module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00184">184</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00200">200</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1395,7 @@ template&lt;typename T &gt; </div>
 <p>Flag used by the testable mode to identify whether a thread within the <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g.">EntityOwner</a> has reached the point where the testable mode lock is acquired. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>This should be moved to a more proper place in the hierarchy (e.g. ModuleImpl) after <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e....">InternalModule</a> class has been properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types.">Module</a> class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00190">190</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00206">206</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -1373,7 +1421,7 @@ template&lt;typename T &gt; </div>
 
 <p>Prefix for constants created by <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a38e92b9f1be12d637408b06f8020b855" title="Create a variable name which will be automatically connected with a constant value.">constant()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00167">167</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00183">183</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>

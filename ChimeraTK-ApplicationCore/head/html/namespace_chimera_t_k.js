@@ -11,6 +11,11 @@ var namespace_chimera_t_k =
       [ "setThreadName", "namespace_chimera_t_k_1_1_utilities.html#a97ff87abb83d90566bac43c12912ec41", null ],
       [ "unescapeName", "namespace_chimera_t_k_1_1_utilities.html#afab1e2f763b07e39458e22016a79be14", null ]
     ] ],
+    [ "VersionInfo", "namespace_chimera_t_k_1_1_version_info.html", [
+      [ "applicationPatch", "namespace_chimera_t_k_1_1_version_info.html#addef4d05b344dea89cbd4e9141b0d256", null ],
+      [ "major", "namespace_chimera_t_k_1_1_version_info.html#a6aa207e422e3ff6627f125e35a759564", null ],
+      [ "minor", "namespace_chimera_t_k_1_1_version_info.html#a0e87c997cf0b7626a83e0814de0f149f", null ]
+    ] ],
     [ "AccessorTypeTag", "class_chimera_t_k_1_1_accessor_type_tag.html", null ],
     [ "AggregatableMessage", "class_chimera_t_k_1_1_aggregatable_message.html", "class_chimera_t_k_1_1_aggregatable_message" ],
     [ "AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
@@ -68,6 +73,7 @@ var namespace_chimera_t_k =
     [ "ModuleTree", "class_chimera_t_k_1_1_module_tree.html", "class_chimera_t_k_1_1_module_tree" ],
     [ "MonitorBase", "struct_chimera_t_k_1_1_monitor_base.html", "struct_chimera_t_k_1_1_monitor_base" ],
     [ "Multiplier", "struct_chimera_t_k_1_1_multiplier.html", "struct_chimera_t_k_1_1_multiplier" ],
+    [ "NetworkDescription", "struct_chimera_t_k_1_1_network_description.html", "struct_chimera_t_k_1_1_network_description" ],
     [ "NetworkVisitor", "class_chimera_t_k_1_1_network_visitor.html", "class_chimera_t_k_1_1_network_visitor" ],
     [ "PeriodicTrigger", "struct_chimera_t_k_1_1_periodic_trigger.html", "struct_chimera_t_k_1_1_periodic_trigger" ],
     [ "PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", "class_chimera_t_k_1_1_pushable_stream" ],
@@ -175,6 +181,7 @@ var namespace_chimera_t_k =
     [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "namespace_chimera_t_k.html#ab0444a1edf78b8d909eeda6a400ce1a7", null ],
     [ "logger", "namespace_chimera_t_k.html#afd1ff17ff1ee9c50c855b99af5b0c580", null ],
     [ "negateTag", "namespace_chimera_t_k.html#a5d819141b6e36a5baf954cb63aef357b", null ],
+    [ "parseNetworkDescription", "namespace_chimera_t_k.html#a708b44ea8f5181302e7d3c76efc6f975", null ],
     [ "PYBIND11_MODULE", "namespace_chimera_t_k.html#ad1d2aa2e2e2ee982024aad4d8c637fb0", null ],
     [ "explicitDataValidityTag", "namespace_chimera_t_k.html#a2fdc2f768f8fdb507450414460ec2c9d", null ],
     [ "independentVersionTag", "namespace_chimera_t_k.html#a3e8a5e2e7566441d305705f90ef9cace", null ],

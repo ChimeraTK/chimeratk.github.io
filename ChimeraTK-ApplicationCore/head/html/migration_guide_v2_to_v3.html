@@ -93,12 +93,12 @@ $(document).ready(function(){initNavTree('migration_guide_v2_to_v3.html',''); in
   <div class="headertitle"><div class="title">ApplicationCore 2.x -&gt; 3.0 migration guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md12"></a>
 General</h1>
 <ul>
 <li>Some header files have been removed. Make sure to build against a clean install directory without any stray old header files!</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Old-style servers (defineConnections still overridden)</h2>
 <ul>
 <li>The ControlSystemModule does not exist any more. All PVs are connected to the control system automatically.</li>
@@ -108,7 +108,7 @@ Old-style servers (defineConnections still overridden)</h2>
 <li>Avoid that technique (point 3) to connect to device registers whose names do not match the application structure. Instead change the logical name mapping file such that it matches the application structure.</li>
 <li>Also check points mentioned for new-style servers!</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 New-style servers (no defineConnections)</h2>
 <ul>
 <li>The DMAP file path needs to be set earlier than before, namely before the first (Connecting)DeviceModule is constructed. Create an instance of <a class="el" href="class_chimera_t_k_1_1_set_d_map_file_path.html" title="Helper class to set the DMAP file path.">ChimeraTK::SetDMapFilePath</a> as first data member of the application to set the path early enough.</li>

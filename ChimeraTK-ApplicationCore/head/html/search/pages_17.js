@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_203_200_20migration_20guide_0',['ApplicationCore 2.x -&gt; 3.0 migration guide',['../migration_guide_v2_to_v3.html',1,'index']]]
+  ['what_20s_20new_20in_20applicationcore_202_200_0',['What&apos;s new in ApplicationCore 2.0',['../whats_new__a_c_2_0.html',1,'']]],
+  ['write_20application_20modules_20in_20python_1',['Example how to write application modules in Python',['../example_python_modules.html',1,'']]]
 ];

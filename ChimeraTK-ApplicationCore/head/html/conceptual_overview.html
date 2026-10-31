@@ -633,7 +633,7 @@ CMakeLists.txt walkthrough</h2>
 </div><!-- fragment --> <p class="enddd"></p>
 </dd>
 <dt><b>2. Version numbers</b> </dt>
-<dd><p class="startdd">Set major, minor and patch version variables, then include the <code>set_version_numbers.cmake</code> script. This script typically generates a <code>VersionInfo.h</code> header from the <code>version_info_template.h.in</code> template and provides a <code>${PROJECT_NAME}_VERSION</code> variable. </p><div class="fragment"><div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>set(${PROJECT_NAME}_MAJOR_VERSION 01)</div>
+<dd><p class="startdd">Set major, minor and patch version variables, then include the <code>set_version_numbers.cmake</code> script. This script typically generates a <code><a class="el" href="_version_info_8h.html">VersionInfo.h</a></code> header from the <code>version_info_template.h.in</code> template and provides a <code>${PROJECT_NAME}_VERSION</code> variable. </p><div class="fragment"><div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>set(${PROJECT_NAME}_MAJOR_VERSION 01)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>set(${PROJECT_NAME}_MINOR_VERSION 23)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>set(${PROJECT_NAME}_PATCH_VERSION 45)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>include(cmake/set_version_numbers.cmake)</div>

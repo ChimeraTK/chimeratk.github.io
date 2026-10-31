@@ -4,7 +4,7 @@ var dir_2f1f9886b751a8bba31983cfaf39121d =
     [ "ApplicationModule.cc", "_application_module_8cc.html", null ],
     [ "CircularDependencyDetectionRecursionStopper.cc", "_circular_dependency_detection_recursion_stopper_8cc.html", null ],
     [ "CircularDependencyDetector.cc", "_circular_dependency_detector_8cc.html", null ],
-    [ "ConnectionMaker.cc", "_connection_maker_8cc.html", null ],
+    [ "ConnectionMaker.cc", "_connection_maker_8cc.html", "_connection_maker_8cc" ],
     [ "DebugPrintAccessorDecorator.cc", "_debug_print_accessor_decorator_8cc.html", "_debug_print_accessor_decorator_8cc" ],
     [ "DeviceManager.cc", "_device_manager_8cc.html", null ],
     [ "DeviceModule.cc", "_device_module_8cc.html", null ],

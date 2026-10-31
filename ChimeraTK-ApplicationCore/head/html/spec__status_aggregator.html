@@ -99,16 +99,16 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html',''); ini
 <blockquote class="doxtable">
 <p>&zwj;**NOTE: As aggregator and monitor are tighly coupled, we might have one spec page for both ** </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 Introduction</h1>
 <p>The <code><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">ChimeraTK::StatusAggregator</a></code> provides a facitlity to collect multiple statuses and merge them into a single output status. The sources of input statuses can be:</p>
 <ul>
 <li>Instances of <code>ChimeraTK::StatusMonitor</code></li>
 <li>Other instances of the StatusAggregator</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
 High-level requirements</h1>
-<h2><a class="anchor" id="autotoc_md48"></a>
+<h2><a class="anchor" id="autotoc_md60"></a>
 R1.1 Automatic detection of instances</h2>
 <p>The StatusMonitor and StatusAggregator instances to be connected into the StatusAggregator should be found automatically as follows:</p>
 <ul>
@@ -117,7 +117,7 @@ R1.1 Automatic detection of instances</h2>
 <li><b>R1.1.3</b>: If a StatusAggregator is found at some hierarchy level below, the search is stopped for that branch of the hierarchy tree, i.e. all variables which are already aggregated by that aggregator are not aggregated again</li>
 <li><b>R1.1.4</b>: The StatusAggregator provides a <code>disable</code> input, which deactivates the aggregator and sets the output status to OFF.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md61"></a>
 R1.2 Priorization of status values</h2>
 <p>The StatusAggregator is configurable (by a constructor parameter, not a PV) in the way how the statuses are prioritised. The status with the highest priority within the aggregated instances defines the aggregated status. The following options exist (highest priority first):</p>
 <ol type="1">
@@ -126,7 +126,7 @@ R1.2 Priorization of status values</h2>
 <li>error - warning - ok or off - mixed state of ok/off results in a warning</li>
 <li>off - error - warning - ok</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md50"></a>
+<h2><a class="anchor" id="autotoc_md62"></a>
 Constraints and issues</h2>
 <ul>
 <li>As detection of underlying instances can only be performed in the constructor, the StatusAggregator has to be declared in user code after all instances of <code>ChimeraTK::StatusMonitor</code> in a Module.</li>
@@ -136,15 +136,15 @@ Constraints and issues</h2>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md51"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 Implementation</h1>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 Requirements</h2>
 <ul>
 <li><b>R2.1</b>: The detection of instances needs to be performed recursively from the StatusAggregator's virtual parent module on</li>
 <li><b>R2.2</b>: The detection has to work on instances the are modified by <code>ChimeraTK::HierarchyModifier</code>s <code>none</code> and <code>hideThis</code>. Other modifiers should give a <code>ChimeraTK::logic_error</code></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md53"></a>
+<h2><a class="anchor" id="autotoc_md65"></a>
 Constraints and issues</h2>
 <ul>
 <li>The detection and connection of the instances to be aggregated has to be performed in the constructor, later the variable household is fixed and the status inputs can not be added anymore.</li>

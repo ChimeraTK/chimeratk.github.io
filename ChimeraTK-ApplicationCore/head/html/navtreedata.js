@@ -88,9 +88,9 @@ var NAVTREE =
       [ "DataValidity", "exception_handling.html#exceptionHandling_DataValidity", null ]
     ] ],
     [ "ApplicationCore 2.x -> 3.0 migration guide", "migration_guide_v2_to_v3.html", [
-      [ "General", "migration_guide_v2_to_v3.html#autotoc_md0", [
-        [ "Old-style servers (defineConnections still overridden)", "migration_guide_v2_to_v3.html#autotoc_md1", null ],
-        [ "New-style servers (no defineConnections)", "migration_guide_v2_to_v3.html#autotoc_md2", null ]
+      [ "General", "migration_guide_v2_to_v3.html#autotoc_md12", [
+        [ "Old-style servers (defineConnections still overridden)", "migration_guide_v2_to_v3.html#autotoc_md13", null ],
+        [ "New-style servers (no defineConnections)", "migration_guide_v2_to_v3.html#autotoc_md14", null ]
       ] ]
     ] ],
     [ "ConfigReader Module", "configreader.html", [
@@ -130,15 +130,15 @@ var NAVTREE =
     [ "Technical specification: Propagation of initial values V1.0", "spec_initial_value_propagation.html", null ],
     [ "Technical specification: data validity propagation Specification version V1.0", "spec_data_validity_propagation.html", null ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", [
-      [ "Introduction", "spec__status_aggregator.html#autotoc_md46", null ],
-      [ "High-level requirements", "spec__status_aggregator.html#autotoc_md47", [
-        [ "R1.1 Automatic detection of instances", "spec__status_aggregator.html#autotoc_md48", null ],
-        [ "R1.2 Priorization of status values", "spec__status_aggregator.html#autotoc_md49", null ],
-        [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md50", null ]
+      [ "Introduction", "spec__status_aggregator.html#autotoc_md58", null ],
+      [ "High-level requirements", "spec__status_aggregator.html#autotoc_md59", [
+        [ "R1.1 Automatic detection of instances", "spec__status_aggregator.html#autotoc_md60", null ],
+        [ "R1.2 Priorization of status values", "spec__status_aggregator.html#autotoc_md61", null ],
+        [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md62", null ]
       ] ],
-      [ "Implementation", "spec__status_aggregator.html#autotoc_md51", [
-        [ "Requirements", "spec__status_aggregator.html#autotoc_md52", null ],
-        [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md53", null ]
+      [ "Implementation", "spec__status_aggregator.html#autotoc_md63", [
+        [ "Requirements", "spec__status_aggregator.html#autotoc_md64", null ],
+        [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md65", null ]
       ] ]
     ] ],
     [ "Example: Basic structure of an Application", "example.html", [
@@ -179,6 +179,24 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
+    [ "Change Requests", "change_requests.html", [
+      [ "Index", "change_requests.html#change_requests_index", null ],
+      [ "CR-001: clarify unit and description sources", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html", [
+        [ "Background and current state", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md1", [
+          [ "Possible considerations of a VariableNetwork", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md2", null ]
+        ] ],
+        [ "Requirements", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md3", [
+          [ "How module descriptions or used", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md4", null ],
+          [ "How prioritization is specified", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md5", null ],
+          [ "Example", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md6", null ],
+          [ "Remaining ambiguities", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md7", null ],
+          [ "ConfigReader", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md8", null ],
+          [ "xmlGenerator output", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md9", null ]
+        ] ],
+        [ "Alternatives considered", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md10", null ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-001-clarify_units_and_descriptions.html#autotoc_md11", null ]
+      ] ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -221,38 +239,39 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_accessor_concepts_8h.html",
-"_reverse_recovery_decorator_8cc_source.html",
-"class_chimera_t_k_1_1_application.html#afcf25c1bf30d7c001d5ae0a593a1abbc",
-"class_chimera_t_k_1_1_constant_accessor.html#a10d41aba1478e100ddaeac89f544766c",
-"class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
-"class_chimera_t_k_1_1_internal_module.html#a0037b0e284cb90f312dadd30cf63e34d",
-"class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a4bd07f16e35057750f3f09bcdf0beb4a",
-"class_chimera_t_k_1_1_pushable_stream.html#ac8206c505d8efd46cbac348a74415d30",
-"class_chimera_t_k_1_1_python_application_module_trampoline.html#aea17961c679d4bb08bf16c10aee6b6c2",
-"class_chimera_t_k_1_1_trigger_fan_out.html#aa7a615ce3c34ffd5e1af2c474d7fc106",
-"class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7",
-"classtest_python_scalar_accessors_1_1_my_mod.html#a99580e293f806f93641ec83b9e8ef790",
-"fixtures_8h.html",
-"namespace_tests_1_1test_circular_dependency_faulty_flags.html#a8a749000de07065340af9a7c693976f1",
-"namespace_tests_1_1test_user_input_validator.html#a707af7a69f9899cbdbb9afe93f22703f",
-"struct_chimera_t_k_1_1_config_reader_1_1_array.html#a08cefc3657db9d3585a59243d94a43a1",
-"struct_chimera_t_k_1_1_model_1_1_and_set.html#a01a83924a748f4db015ae67d4efa5320",
-"struct_chimera_t_k_1_1_monitor_base.html#ae563cb3a9fc6174063731817d9f59656",
-"struct_chimera_t_k_1_1_user_input_validator.html#a08800c8d5fb50b6d32c33083814b655b",
-"struct_init_failure_app.html#a01270522b378a7ee892ef6ca701004ba",
-"struct_tests_1_1test_application_p_v_model_1_1_test_application2.html#a7167d1004b37da927bed11816c3cf251",
-"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_e_e.html#ad128473c1eb1d30636d7fc48904bb60a",
-"struct_tests_1_1test_config_reader_1_1_test_module_1_1_module1_1_1_sub_module_1_1_sub_sub_module.html#ac318201acb291d22adda0ce68a143f1b",
-"struct_tests_1_1test_device_accessors_1_1_test_application3.html#a7730e625ce4fc67ded9cd116728f9931",
-"struct_tests_1_1test_illegal_networks_1_1_test_application3.html#a043bc6df130e1a295c9ad45fc93db917",
-"struct_tests_1_1test_initial_values_1_1_test6_a2_dummy_application.html#abb59a9802b5a2f1264059fa7e6c2fd46",
-"struct_tests_1_1test_modules_1_1_assign_module_later_app.html#ab4a02734c22d9a58bed3cd3874b6313b",
-"struct_tests_1_1test_process_variable_recovery_1_1_read_only_test_application_1_1_test_module.html",
-"struct_tests_1_1test_status_aggregator_1_1_status_with_message_generator.html#a38e95a6aa977cefdbebe312fcb390211",
-"struct_tests_1_1test_test_facilities_1_1_test_chanied_modules_application.html#ad6e8d2631f76e6ed5de97bd13147ad58",
-"struct_tests_1_1test_user_input_validator_1_1_upstream_single_out.html#a1a554c9eeb4ce4a237c77c33cae2ab76",
-"test_exception_handling_8cc.html#a0838c332e34226c59dee691c27f4a9a2",
-"test_python_simple_app_8py.html#a0ab0d81903374735e019ef7af61e5516"
+"_reverse_recovery_decorator_8cc.html",
+"class_chimera_t_k_1_1_application.html#af1332b0343aab7ec81f4e0936d16a48b",
+"class_chimera_t_k_1_1_connection_maker.html#a56274306956a844ff097c0620be4f7b3",
+"class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8f",
+"class_chimera_t_k_1_1_feeding_fan_out.html#ab5e5a3f48536f2d4c4c399f064517ec6",
+"class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a1af028197688422fc539d2ced7291a08",
+"class_chimera_t_k_1_1_network_visitor.html#aa42d6e64d94d40a672b18b671d6ba7f1",
+"class_chimera_t_k_1_1_py_void_accessor.html#a1e7cb197336d310349b52c1bec5421c1",
+"class_chimera_t_k_1_1_trigger_fan_out.html#a0bdec0981f40becaeaabc4d23c778118",
+"class_chimera_t_k_1_1_x_m_l_generator.html#ab20f6ec2b2e2d2ce2998f47c477d26b7",
+"classtest_python_read_any_group_1_1_read_any_group_mod1.html#af7b17035164c6e8d15f2980b015693fa",
+"example.html#example_src_AverageCurrent_cc",
+"namespace_tests_1_1test_application_p_v_model.html#a6cab9054a85119580c8ec7abf628c29a",
+"namespace_tests_1_1test_status_aggregator.html#a591322d8c608e5776f4a71fc16836380",
+"struct_block_init_test_app.html#a4e2316b40e53231cf8c890c4e88ada7c",
+"struct_chimera_t_k_1_1_max_monitor.html",
+"struct_chimera_t_k_1_1_model_1_1detail_1_1_value_holder_3_01void_01_4.html",
+"struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128",
+"struct_fixture.html#aa3a316b95f3cadf399e54d76e03525d2",
+"struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html#a5f8d19aae46e2658c311fce6aa6cca80",
+"struct_tests_1_1test_circular_dependency_faulty_flags_1_1_a_a.html#a41cb2fad2fc3dc7e396ebbfdd02fdd3a",
+"struct_tests_1_1test_config_reader_1_1_test_application_no_configs.html",
+"struct_tests_1_1test_data_validity_propagation_1_1_test_module0.html#a87e10489bbb754d88102028fa1cd5996",
+"struct_tests_1_1test_hierarchy_modifying_group_1_1_test_application_1_1_test_module.html#af87bbc76b4e7637e25ef5da102261d73",
+"struct_tests_1_1test_initial_values_1_1_process_arry_dummy_application.html",
+"struct_tests_1_1test_initial_values_1_1_test_fixture_with_eception_dummy.html#a28ddc2528f3ba70f54aa5c4a0691c3f7",
+"struct_tests_1_1test_modules_1_1_variable_slash_scalar_app_1_1_some_module.html#a3f221cd9de8824f16cb1ab6e28098fb9",
+"struct_tests_1_1test_propagate_data_fault_flag_1_1_test_application5.html#a6cf647a7c590df2804feccc13f3a92e8",
+"struct_tests_1_1test_status_aggregator_1_1_test_prio_application.html#a917ffb436ca56331c1a3a03b90780037",
+"struct_tests_1_1test_trigger_1_1_test_app4.html",
+"test_bidirectional_variables_8cc.html#a642eb4934d998e1f5a5e1f0d4fe45b57",
+"test_model_8cc.html#a969c455b9f0560bf062636fdbaa9f9b2",
+"test_version_propagation_8cc.html#a975c97840842f386f20d919b49b48543"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

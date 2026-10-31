@@ -123,13 +123,13 @@ Example usage</h1>
 <h1><a class="anchor" id="xmlstructure"></a>
 XML file structure</h1>
 <ul>
-<li>A valid configuration file may look like: <pre class="fragment">  &lt;configuration&gt;
-    &lt;variable name="var8" type="int8" value="-123"/&gt;
+<li><p class="startli">A valid configuration file may look like: </p><pre class="fragment">  &lt;configuration&gt;
+    &lt;variable name="var8" type="int8" value="-123" unit="MV/m" description="A scalar config value"/&gt;
     &lt;variable name="bool" type="boolean" value="true"/&gt;
-    &lt;module name="module1"&gt;
-      &lt;variable name="var8" type="int8" value="-123"/&gt;
+    &lt;module name="module1" description="A configuration submodule"&gt;
+      &lt;variable name="var8" type="int8" value="-123" unit="MV/m" description="A scalar config value"/&gt;
       &lt;module name="submodule"&gt;
-          &lt;variable name="intArray" type="int32"&gt;
+          &lt;variable name="intArray" type="int32" unit="mV" description="An array config value"&gt;
           &lt;value i="0" v="10"/&gt;
           &lt;value i="1" v="9"/&gt;
           &lt;value i="2" v="8"/&gt;
@@ -143,7 +143,9 @@ XML file structure</h1>
        &lt;/variable&gt;
       &lt;/module&gt;
     &lt;/module&gt;
-  &lt;/configuration&gt;</pre> </li>
+  &lt;/configuration&gt;</pre><p class="startli">The attributes <code>unit</code> and <code>description</code> on <code>variable</code> tags and <code>description</code> on <code>module</code> tags are optional. If omitted, the defaults are used: unit <code>"n./a."</code> and description <code>"Configuration variable"</code> (scalar) or <code>"Configuration array"</code> (array) for variables, and an empty description for modules.</p>
+<p class="startli">The optional <code>description</code> attribute on the root <code>configuration</code> tag sets the module description of the <code>ConfigReader</code> instance itself, so it appears as a prefix of the descriptions of all its contents. If omitted, the default is &lsquo;"Configuration read from file &amp;rsquo;&lt;fileName&gt;'"`. Set it to an empty string for shorter description strings. </p>
+</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

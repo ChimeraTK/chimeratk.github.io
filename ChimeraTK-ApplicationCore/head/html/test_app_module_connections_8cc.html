@@ -105,8 +105,14 @@ $(document).ready(function(){initNavTree('test_app_module_connections_8cc.html',
 <code>#include &quot;<a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/BackendFactory.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/ControlSystemAdapter/PVManager.h&gt;</code><br />
+<code>#include &lt;libxml++/libxml++.h&gt;</code><br />
+<code>#include &lt;boost/filesystem.hpp&gt;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testAppModuleConnections.cc:</div>
@@ -133,6 +139,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module.html">Tests::testAppModuleConnections::SelfUnregisteringModule</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module.html">Tests::testAppModuleConnections::TestAppSelfUnregisteringModule</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_feeding_module.html">Tests::testAppModuleConnections::FeedingModule</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_consuming_module.html">Tests::testAppModuleConnections::ConsumingModule</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_priority_test_app.html">Tests::testAppModuleConnections::PriorityTestApp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_peer_info.html">Tests::testAppModuleConnections::PeerInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tests_1_1test_app_module_connections_1_1_literal_desc_app.html">Tests::testAppModuleConnections::LiteralDescApp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -170,6 +186,24 @@ Functions</h2></td></tr>
 <tr class="separator:a490f73b14ad8bf36b615888cd17ed17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f03c85fb795641e98efe6f0e997950" id="r_a46f03c85fb795641e98efe6f0e997950"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a46f03c85fb795641e98efe6f0e997950">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testSelfUnregisteringModule)</td></tr>
 <tr class="separator:a46f03c85fb795641e98efe6f0e997950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cf7479856833a4b18aa126c01df751" id="r_a11cf7479856833a4b18aa126c01df751"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a11cf7479856833a4b18aa126c01df751">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testDescriptionConsumerOverwritesFeeder)</td></tr>
+<tr class="separator:a11cf7479856833a4b18aa126c01df751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80c1a70a3fdd8860334a33162534028" id="r_ab80c1a70a3fdd8860334a33162534028"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#ab80c1a70a3fdd8860334a33162534028">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testDescriptionFeederWinsOnTie)</td></tr>
+<tr class="separator:ab80c1a70a3fdd8860334a33162534028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31feea0de208decf9fe57894393ec13b" id="r_a31feea0de208decf9fe57894393ec13b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a31feea0de208decf9fe57894393ec13b">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testDescriptionHighestConsumerPriorityWins)</td></tr>
+<tr class="separator:a31feea0de208decf9fe57894393ec13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0702e1511dc815555ab630030d3d09c7" id="r_a0702e1511dc815555ab630030d3d09c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a0702e1511dc815555ab630030d3d09c7">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testDescriptionNegativeAndPositivePriorities)</td></tr>
+<tr class="separator:a0702e1511dc815555ab630030d3d09c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d29050cac444327c23e3a649e2a71a" id="r_a99d29050cac444327c23e3a649e2a71a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a99d29050cac444327c23e3a649e2a71a">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testDescriptionAllNegativePicksAny)</td></tr>
+<tr class="separator:a99d29050cac444327c23e3a649e2a71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2c5dd0706866f343b84960c4ae3eca" id="r_a0d2c5dd0706866f343b84960c4ae3eca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a0d2c5dd0706866f343b84960c4ae3eca">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testUnitMismatchSelectsFirstDistinct)</td></tr>
+<tr class="separator:a0d2c5dd0706866f343b84960c4ae3eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebac9bfb021f5f64a241ab6d9d084f2" id="r_a6ebac9bfb021f5f64a241ab6d9d084f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#a6ebac9bfb021f5f64a241ab6d9d084f2">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testDescriptionAmbiguityAmongConsumers)</td></tr>
+<tr class="separator:a6ebac9bfb021f5f64a241ab6d9d084f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0db807862c521548be237434a9ccb77" id="r_ad0db807862c521548be237434a9ccb77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#ad0db807862c521548be237434a9ccb77">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testXmlPeersCarryUnitAndProcessedDescription)</td></tr>
+<tr class="separator:ad0db807862c521548be237434a9ccb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97aeab64b3bff8e615f24cf38405680" id="r_af97aeab64b3bff8e615f24cf38405680"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_tests_1_1test_app_module_connections.html#af97aeab64b3bff8e615f24cf38405680">Tests::testAppModuleConnections::BOOST_AUTO_TEST_CASE</a> (testXmlPeerEscapedLeadingMarkerIsLiteral)</td></tr>
+<tr class="separator:af97aeab64b3bff8e615f24cf38405680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad9e644e01e76c0a2b950bac6e3d2cf0e" name="ad9e644e01e76c0a2b950bac6e3d2cf0e"></a>
@@ -184,7 +218,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_app_module_connections_8cc_source.html#l00015">15</a> of file <a class="el" href="test_app_module_connections_8cc_source.html">testAppModuleConnections.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_app_module_connections_8cc_source.html#l00022">22</a> of file <a class="el" href="test_app_module_connections_8cc_source.html">testAppModuleConnections.cc</a>.</p>
 
 </div>
 </div>
@@ -200,7 +234,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_app_module_connections_8cc_source.html#l00016">16</a> of file <a class="el" href="test_app_module_connections_8cc_source.html">testAppModuleConnections.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_app_module_connections_8cc_source.html#l00023">23</a> of file <a class="el" href="test_app_module_connections_8cc_source.html">testAppModuleConnections.cc</a>.</p>
 
 </div>
 </div>
@@ -209,7 +243,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_app_module_connections_8cc.html">testAppModuleConnections.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_cac710b2f1ca0b8bfa4564217e72ae2e.html">tests</a></li><li class="navelem"><a class="el" href="dir_12103a13d03486cdb1fa8b48e27c887f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_app_module_connections_8cc.html">testAppModuleConnections.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

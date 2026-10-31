@@ -29,6 +29,8 @@ var hierarchy =
         [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", null ],
         [ "TestApplication", "struct_test_application.html", null ],
         [ "Tests::testAppModuleConnections::ConstantTestApplication< T >", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application.html", null ],
+        [ "Tests::testAppModuleConnections::LiteralDescApp", "struct_tests_1_1test_app_module_connections_1_1_literal_desc_app.html", null ],
+        [ "Tests::testAppModuleConnections::PriorityTestApp", "struct_tests_1_1test_app_module_connections_1_1_priority_test_app.html", null ],
         [ "Tests::testAppModuleConnections::TestAppSelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module.html", null ],
         [ "Tests::testAppModuleConnections::TestApplication< T >", "struct_tests_1_1test_app_module_connections_1_1_test_application.html", null ],
         [ "Tests::testApplication::TestApp", "struct_tests_1_1test_application_1_1_test_app.html", null ],
@@ -268,6 +270,8 @@ var hierarchy =
             [ "SetpointRamp", "class_setpoint_ramp.html", null ],
             [ "SimulationModule", "struct_simulation_module.html", null ],
             [ "Tests::testAppModuleConnections::ConstantTestModule< T >", "struct_tests_1_1test_app_module_connections_1_1_constant_test_module.html", null ],
+            [ "Tests::testAppModuleConnections::ConsumingModule", "struct_tests_1_1test_app_module_connections_1_1_consuming_module.html", null ],
+            [ "Tests::testAppModuleConnections::FeedingModule", "struct_tests_1_1test_app_module_connections_1_1_feeding_module.html", null ],
             [ "Tests::testAppModuleConnections::SelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_self_unregistering_module.html", null ],
             [ "Tests::testAppModuleConnections::TestModuleConsume< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module_consume.html", null ],
             [ "Tests::testAppModuleConnections::TestModuleFeed< T >", "struct_tests_1_1test_app_module_connections_1_1_test_module_feed.html", null ],
@@ -477,8 +481,8 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< int64_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< std::string > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< T > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
-    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< Type > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
+    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< Type > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< uint16_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< unsigned > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -632,6 +636,7 @@ var hierarchy =
       [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ],
       [ "ChimeraTK::ReverseRecoveryDecorator< UserType >", "class_chimera_t_k_1_1_reverse_recovery_decorator.html", null ]
     ] ],
+    [ "ChimeraTK::NetworkDescription", "struct_chimera_t_k_1_1_network_description.html", null ],
     [ "ChimeraTK::NetworkVisitor::NetworkInformation", "struct_chimera_t_k_1_1_network_visitor_1_1_network_information.html", null ],
     [ "ChimeraTK::NetworkVisitor", "class_chimera_t_k_1_1_network_visitor.html", [
       [ "ChimeraTK::ConnectionMaker", "class_chimera_t_k_1_1_connection_maker.html", null ],
@@ -657,6 +662,7 @@ var hierarchy =
       [ "ChimeraTK::FanIn< int32_t >", "class_chimera_t_k_1_1_fan_in.html", null ],
       [ "ChimeraTK::FanIn< AccessorType >", "class_chimera_t_k_1_1_fan_in.html", null ]
     ] ],
+    [ "Tests::testAppModuleConnections::PeerInfo", "struct_tests_1_1test_app_module_connections_1_1_peer_info.html", null ],
     [ "ChimeraTK::NetworkVisitor::ProcessVariableComperator", "struct_chimera_t_k_1_1_network_visitor_1_1_process_variable_comperator.html", null ],
     [ "ChimeraTK::Model::VertexProperties::ProcessVariableProperties", "struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_process_variable_properties.html", null ],
     [ "ChimeraTK::Model::PropertyFilterTag< PROPERTIES >", "struct_chimera_t_k_1_1_model_1_1_property_filter_tag.html", null ],
