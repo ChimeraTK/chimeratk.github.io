@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    location-&gt;lock();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    value = *(d_ifff</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            -&gt;value()); <span class="comment">// value returs a pointer which we only must dereference while holding the lock. So we make a copy</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            -&gt;value()); <span class="comment">// value returns a pointer which we only must dereference while holding the lock. So we make a copy</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    location-&gt;unlock();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  };</div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  };</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// we used SHORT/FROM_DEVICE_SCALAR for the f3_value, so only values that fit in int16_t can be used for it, no</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// franctional numbers</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// fractional numbers</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  IFFF referenceIfff;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  referenceIfff.i1_data = 123;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  referenceIfff.f1_data = 0.123F;</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.versionNumber = ChimeraTK::VersionNumber();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, 543); <span class="comment">// will never be seen</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// sleep a bit, we don&#39;t except a change</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// sleep a bit, we don&#39;t expect a change</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  sleep(1);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  resultIfff = extractValue();</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="comment">// compare with the old reference</span></div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('server_test_ifff_8cpp_source.html','')
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  BOOST_CHECK_CLOSE(resultIfff.f2_data, referenceIfff.f2_data, 0.0001);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  BOOST_CHECK_CLOSE(resultIfff.f3_data, referenceIfff.f3_data, 0.0001);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="comment">// finally upate the missing variable with the same version as the others</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="comment">// finally update the missing variable with the same version as the others</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  DoocsServerTestHelper::doocsSet&lt;int&gt;(<span class="stringliteral">&quot;//INT/TO_DEVICE_SCALAR&quot;</span>, newReferenceIfff.i1_data);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_variable" href="struct_global_fixture.html#a9bfb2710ff720a72d3ea3870251b1265">GlobalFixture::referenceTestApplication</a>.runMainLoopOnce();</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>

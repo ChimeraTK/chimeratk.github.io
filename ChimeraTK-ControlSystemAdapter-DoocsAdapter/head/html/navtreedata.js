@@ -40,6 +40,7 @@ var NAVTREE =
         [ "D_iiii", "index.html#D_iiii", null ],
         [ "D_imagec", "index.html#D_imagec", null ]
       ] ],
+      [ "Unit and description texts", "index.html#descriptions_and_units", null ],
       [ "Error reporting", "index.html#set_error", null ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -97,9 +98,9 @@ var NAVTREEINDEX =
 "_c_s_adapter_eq_fct_8cc.html",
 "class_chimera_t_k_1_1_doocs_p_v_factory.html",
 "class_chimera_t_k_1_1_routing_decorator.html#a2e89c7e3d7189d45b2981526b40d1100",
-"m4u_d__array__test_cases__numericals_8hpp.html#ab3815c7b0773c6edb7392bedbfadde01",
-"struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246",
-"struct_zero_m_q_fixture.html#a8c93ac015bb1614e63941415169b717f"
+"m4u_d__array__test_cases__numericals_8hpp.html#aabd68b7a6ed08ec13c43db70889a234b",
+"struct_chimera_t_k_1_1_auto_property_description.html#a4f026c74151bae8a88936e7f56b5ec32",
+"struct_zero_m_q_fixture.html#a654325ec567d8b37055dcaa27571578c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

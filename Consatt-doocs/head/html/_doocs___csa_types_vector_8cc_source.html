@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Consatt-doocs: /scratch/dragon/sources/Consatt-doocs/src/Doocs_CsaTypesVector.cc Source File</title>
+<title>Consatt-doocs: src/Doocs_CsaTypesVector.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.27.01</span>
+   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.27.02</span>
    </div>
   </td>
  </tr>
@@ -355,13 +355,12 @@ $(document).ready(function(){initNavTree('_doocs___csa_types_vector_8cc_source.h
 </div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="keywordtype">void</span> Doocs_CsaTypesVector::registerToDoocs() {</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  D_fct* findPropResult = NULL;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_vector.html#ad821b1af84880a5f0e54708f0179e38d">_doocsName</a>.c_str();</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  findPropResult = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_vector.html#a0c2bb21ed34a4350cd2e876c9d4b80e1">_doocsParrent</a>-&gt;find_property(variableName);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordflow">if</span>(findPropResult != NULL &amp;&amp; findPropResult-&gt;dynamic() == 0)</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_vector.html#a0c2bb21ed34a4350cd2e876c9d4b80e1">_doocsParrent</a>-&gt;add_property(<span class="keyword">this</span>, DP_AUTO); <span class="comment">// DP_AUTO DP_PERS</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_vector.html#ad821b1af84880a5f0e54708f0179e38d">_doocsName</a>.c_str();</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keyword">auto</span>* findPropResult = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_vector.html#a0c2bb21ed34a4350cd2e876c9d4b80e1">_doocsParrent</a>-&gt;find_property(variableName);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordflow">if</span>(findPropResult != <span class="keyword">nullptr</span> &amp;&amp; findPropResult-&gt;dynamic() == 0)</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_vector.html#a0c2bb21ed34a4350cd2e876c9d4b80e1">_doocsParrent</a>-&gt;add_property(<span class="keyword">this</span>, DP_AUTO); <span class="comment">// DP_AUTO DP_PERS</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
 <div class="ttc" id="a_doocs___csa_adapter_8h_html"><div class="ttname"><a href="_doocs___csa_adapter_8h.html">Doocs_CsaAdapter.h</a></div></div>
 <div class="ttc" id="a_doocs___csa_types_vector_8h_html"><div class="ttname"><a href="_doocs___csa_types_vector_8h.html">Doocs_CsaTypesVector.h</a></div></div>
 <div class="ttc" id="a_doocs___csa_types_vector_8h_html_ac97a1ff6ffbbc3ab5ede8849553b6e06"><div class="ttname"><a href="_doocs___csa_types_vector_8h.html#ac97a1ff6ffbbc3ab5ede8849553b6e06">SPECTRUM_BUFFERS_MASK</a></div><div class="ttdeci">#define SPECTRUM_BUFFERS_MASK</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_types_vector_8h_source.html#l00019">Doocs_CsaTypesVector.h:19</a></div></div>
@@ -393,7 +392,7 @@ $(document).ready(function(){initNavTree('_doocs___csa_types_vector_8cc_source.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_eac7c90a82c75937b07cd6b39a8b73b2.html">Consatt-doocs</a></li><li class="navelem"><a class="el" href="dir_d7b60eace56b2ebe4a989f527fe77aa4.html">src</a></li><li class="navelem"><a class="el" href="_doocs___csa_types_vector_8cc.html">Doocs_CsaTypesVector.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_doocs___csa_types_vector_8cc.html">Doocs_CsaTypesVector.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

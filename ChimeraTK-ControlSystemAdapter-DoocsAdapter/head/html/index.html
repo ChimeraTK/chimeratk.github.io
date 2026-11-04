@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <h1><a class="anchor" id="Integration"></a>
 Integrating your control system application into DOOCS</h1>
 <p>Prerequisites: </p><ul>
-<li>The application has been writen with the ChimeraTK-ApplicationCore library, </li>
+<li>The application has been written with the ChimeraTK-ApplicationCore library, </li>
 <li>a working DOOCS environment (see: <a href="http://doocs.desy.de">http://doocs.desy.de</a>).</li>
 </ul>
 <p>To integrate the application into DOOCS, it has to be linked against the ChimeraTK-ControlSystemAdapter-DoocsAdapter library. Simply use the <code>add_dependency()</code> cmake macro coming with the ChimeraTK project template, then add <code>${ChimeraTK-ControlSystemAdapter-DoocsAdapter_LINK_FLAGS}</code> to the <code>CMAKE_LINK_FLAGS</code> and <code>${ChimeraTK-ControlSystemAdapter-DoocsAdapter_LIBRARIES}</code> to the libraries your executable links against. It is not necessary to change the include path.</p>
@@ -228,18 +228,18 @@ DOOCS adapter mapping file</h2>
 </ul>
 <h2><a class="anchor" id="import"></a>
 Automatic mapping of many variables</h2>
-<p>As a shortcut, the <code>import</code> tag can be used to map a large number of properties with a single command. The tag doesn't take any sub-tags but should contain a directory name of process variables, which is to be mapped recursively. If the <code>import</code> tag is specified inside a location tag, the specified process variable directory is mapped into this location. The <code>import</code> tag can also appear in the root tag, in which case the first hierarchy level will become the location name. Note that the import will only map variables which have not been mapped before by explicit mapping or other <code>import</code> tags. This is useful to map a big bulk of automatic mapping variables after picking the special cases, which needs to be mapped individually.</p>
+<p>As a shortcut, the <code>import</code> tag can be used to map a large number of properties with a single command. The tag takes no sub-tags but should contain a directory name of process variables, which is to be mapped recursively. If the <code>import</code> tag is specified inside a location tag, the specified process variable directory is mapped into this location. The <code>import</code> tag can also appear in the root tag, in which case the first hierarchy level will become the location name. Note that the import will only map variables which have not been mapped before by explicit mapping or other <code>import</code> tags. This is useful to map a big bulk of automatic mapping variables after picking the special cases, which needs to be mapped individually.</p>
 <p>The <code>import</code> tag can take optionally one attribute:</p><ul>
-<li><code>directory</code>: Add a prefix to the property names, which is separated with a dot from the rest of the property name.</li>
+<li><code>directory</code>: Add a prefix to the property names, which is separated with a dot from the rest of the property name. A <code>directory</code> must not be given for a global import (i.e. an <code>import</code> in the root tag).</li>
 </ul>
 <p>An example with many different automatic mappings is here: </p><div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
-<div class="line">  <span class="comment">&lt;!-- Test &quot;renaming&quot; a location, i.e. import something into an a location name that does not</span></div>
+<div class="line">  <span class="comment">&lt;!-- Test &quot;renaming&quot; a location, i.e. import something into a location name that does not</span></div>
 <div class="line"><span class="comment">       exist as directory on the input. --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MY_RENAMED_INTEGER_LOCATION&quot;</span>&gt;</div>
 <div class="line">    <span class="comment">&lt;!-- Test renaming of an array --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;/INT/CONSTANT_ARRAY&quot;</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RENAMED.CONST_ARRAY&quot;</span>/&gt;</div>
-<div class="line">    <span class="comment">&lt;!-- Test importin in this case into a location with a name different from the import--&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- Test importing in this case into a location with a name different from the import--&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">INT</span>&lt;/<span class="keywordtype">import</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">location</span>&gt;</div>
 <div class="line"> </div>
@@ -266,22 +266,21 @@ Automatic mapping of many variables</h2>
 <div class="line"> </div>
 <div class="line">  <span class="comment">&lt;!-- Set the default for is_writeable to false in one location.</span></div>
 <div class="line"><span class="comment">       Intentionally use another location than for the has_history test to avoid missing</span></div>
-<div class="line"><span class="comment">       confusion in the parser (e.g. is_writeable allways acts on both, has_history has no effec,</span></div>
+<div class="line"><span class="comment">       confusion in the parser (e.g. is_writeable allways acts on both, has_history has no effect,</span></div>
 <div class="line"><span class="comment">       but it&#39;s not seen because it&#39;s always tested together) --&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UCHAR&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">is_writeable</span>&gt;<span class="keyword">false</span>&lt;/<span class="keywordtype">is_writeable</span>&gt;</div>
-<div class="line">    <span class="comment">&lt;!-- Turn the history back on for one property, although the default is off.--&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">is_writeable</span>&gt;<span class="keyword">true</span>&lt;/<span class="keywordtype">is_writeable</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">property</span>&gt;</div>
-<div class="line">    <span class="comment">&lt;!-- all imported properties will have the history turned off --&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- all imported properties will have is_writeable=false --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">UCHAR</span>&lt;/<span class="keywordtype">import</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">location</span>&gt;    </div>
 <div class="line">  </div>
 <div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOUBLE&quot;</span>&gt;  </div>
 <div class="line">    <span class="comment">&lt;!-- test renaming a scalar--&gt;</span></div>
 <div class="line">    <span class="comment">&lt;!-- Also tests relative variable names. The input must be in a directory which is identical</span></div>
-<div class="line"><span class="comment">         top the ocation name, &#39;/DOUBLE&#39; in this case --&gt;</span></div>
+<div class="line"><span class="comment">         top the location name, &#39;/DOUBLE&#39; in this case --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;DATA_TYPE_CONSTANT&quot;</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RENAMED_CONSTANT&quot;</span>&gt;</div>
 <div class="line">      <span class="comment">&lt;!-- test turning off the history (no special default set per location, on by default) --&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">has_history</span>&gt;<span class="keyword">false</span>&lt;/<span class="keywordtype">has_history</span>&gt;</div>
@@ -304,17 +303,20 @@ Automatic mapping of many variables</h2>
 <div class="line">&lt;/<span class="keywordtype">device_server</span>&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="special_config"></a>
 Special configuration</h2>
-<p>There are a number of configuration parameters which can be set on different scopes to control the exact behaviour of the DOOCS properties. All of the following XML tags can appear either directly in the root tag, or in a location tag, or in a property tag (or any tag for a special property, see Secion <a class="el" href="index.html#special_properties">Special DOOCS properties</a>).</p>
+<p>There are a number of configuration parameters which can be set on different scopes to control the exact behaviour of the DOOCS properties. Most of the following XML tags can appear either directly in the root tag, or in a location tag, or in a property tag (or any tag for a special property, see Section <a class="el" href="index.html#special_properties">Special DOOCS properties</a>); the exceptions are noted per tag.</p>
 <ul>
-<li><code>has_history</code>: Can be set to false or true (default) If set to true, the properties will have a history, if the property type supports this.</li>
-<li><code>is_writeable</code>: If set to false, the property will be forced to be read-only, even if the process variable is writeable.</li>
-<li><code>macro_pulse_number_source</code>: Name of process variable which contains the macro pusle number which should be attached to the properties.</li>
-<li><code>data_matching</code>: Possible values are <code>none</code>, <code>exact</code>. This is relevant when macro pulse number source is given. The default is <code>exact</code>, which means the server discards data coming in so late that it's version number is overtaken by that of the macro pulse number.</li>
-<li><code>persist</code>: Controls behaviour of DOOCS persistency files. This is only important for writable arrays with more than MAX_CONF_LENGTH entries (usually 20). Possible values are <code>true</code> (the default) - always save the array, where long arrays are saved in separate files below <code>hist/</code> while short arrays go into the server config file; <code>false</code> - do not save the array; <code>auto</code> - default DOOCS behaviour, only arrays with up to 20 entries are saved, in server config file.</li>
+<li><code>has_history</code>: Can be set to false or true (default) If set to true, the properties will have a history, if the property type supports this. Can appear on the root, location or property scope.</li>
+<li><code>is_writeable</code>: If set to false, the property will be forced to be read-only, even if the process variable is writeable. Can appear on the root, location or property scope.</li>
+<li><code>is_writeable_source</code>: Name of a scalar <code>Boolean</code> process variable which dynamically overrides the writability of the property. Can only appear in a property tag (or the tag of a special property).</li>
+<li><code>macro_pulse_number_source</code>: Name of process variable which contains the macro pulse number which should be attached to the properties. Can appear on the root, location or property scope.</li>
+<li><code>data_matching</code>: Possible values are <code>none</code>, <code>exact</code>, <code>historized</code>. This is relevant when macro pulse number source is given. The default is <code>exact</code>, which means the server discards data coming in so late that its version number is overtaken by that of the macro pulse number. Can appear on the root, location or property scope.</li>
+<li><code>publish_ZMQ</code>: If set to true, the property is published via ZeroMQ (see Section <a class="el" href="index.html#zeromq">ZeroMQ publication</a>). The default is false. Can only appear in a property tag (or the tag of a special property); there is no root or location default.</li>
+<li><code>ignore_description_from_app</code>: If set to true, the description and unit texts are not taken from the process variable but from the control system (see Section <a class="el" href="index.html#descriptions_and_units">Unit and description texts</a>). Can appear on the root, location or property scope.</li>
+<li><code>persist</code>: Controls behaviour of DOOCS persistency files. This is only important for writeable arrays with more than MAX_CONF_LENGTH entries (usually 20). Possible values are <code>true</code>/<code>on</code>/<code>1</code> - always save the array, where long arrays are saved in separate files below <code>hist/</code> while short arrays go into the server config file; <code>false</code>/<code>off</code>/<code>0</code> - do not save the array; <code>auto</code> (the default) - default DOOCS behaviour, only arrays with up to 20 entries are saved, in server config file. Can appear on the root, location or property scope.</li>
 </ul>
 <h2><a class="anchor" id="zeromq"></a>
 ZeroMQ publication</h2>
-<p>DOOCS properties can be published via ZeroMQ so that clients can be notified about updates in real time. To enable this one simply has to specifiy the <code>publish_ZMQ</code> tag as shown in the following example:</p>
+<p>DOOCS properties can be published via ZeroMQ so that clients can be notified about updates in real time. To enable this one simply has to specify the <code>publish_ZMQ</code> tag as shown in the following example:</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
 <div class="line">  <span class="comment">&lt;!-- It must be irrelevant whether the macro pulse number is processed before or after the variable which is tested by value;</span></div>
@@ -352,6 +354,7 @@ Overriding auto-detected types</h2>
 <p>If the automatically derived data type of the DOOCS property is not fitting, it is possible to override it using the <code>type</code> attribute on the <code>property</code> and <a class="el" href="index.html#D_array">D_array</a> tags. <code>type</code> can be one of</p>
 <ul>
 <li>auto (default)</li>
+<li>bool</li>
 <li>byte</li>
 <li>short</li>
 <li>int</li>
@@ -359,6 +362,7 @@ Overriding auto-detected types</h2>
 <li>float</li>
 <li>double</li>
 </ul>
+<p>Note that the <code>type</code> attribute is <em>not</em> supported for <code>D_imagec</code> (see Section <a class="el" href="index.html#D_imagec">D_imagec</a>); its image format is determined from the image header in the data.</p>
 <p>For an example, see above in Section <a class="el" href="index.html#mapping_file">DOOCS adapter mapping file</a>.</p>
 <h2><a class="anchor" id="special_properties"></a>
 Special DOOCS properties</h2>
@@ -371,9 +375,7 @@ D_spectrum</h3>
 <li><code>startSource</code>: Name of process variable which should be used as x-axis start</li>
 <li><code>incrementSource</code>: Name of process variable which should be used as x-axis increment</li>
 <li><code>numberOfBuffers</code>: Create a buffered D_spectrum with a short-term history (so clients can read consistent data across multiple D_spectrum). Requires a configured macro_pulse_number_source.</li>
-</ul>
-<p>The <code>D_spectrum</code> tag takes the following arguments through sub-tags:</p><ul>
-<li><code>unit</code> : A description of the respective axis. The axis is chosen with the <code>axis</code> property which can either be <code>x</code> or <code>y</code>. It can also contain a "start" and an "end" for the initial display parameters as well as "logarithmic" for switching the scale accordingly. For an example of this see <a class="el" href="index.html#D_xy">D_xy</a></li>
+<li><code>unit</code>: A description of the respective axis, see Section <a class="el" href="index.html#descriptions_and_units">Unit and description texts</a>. For <code>D_spectrum</code> the axis is chosen with the <code>axis</code> attribute which can either be <code>x</code> or <code>y</code> (default <code>y</code>). It can also contain a <code>start</code> and a <code>stop</code> for the initial display parameters as well as <code>logarithmic</code> for switching the scale accordingly.</li>
 </ul>
 <p>For an example, see above in Section <a class="el" href="index.html#mapping_file">DOOCS adapter mapping file</a>.</p>
 <h3><a class="anchor" id="D_array"></a>
@@ -381,6 +383,7 @@ D_array</h3>
 <p>The <code>D_array</code> tag takes the following arguments through XML attributes of the D_array tag:</p><ul>
 <li><code>type</code>: Override the data type. Can be one of:<ul>
 <li>auto (default)</li>
+<li>bool</li>
 <li>byte</li>
 <li>short</li>
 <li>int</li>
@@ -393,12 +396,12 @@ D_array</h3>
 <p>For an example, see above in Section <a class="el" href="index.html#mapping_file">DOOCS adapter mapping file</a>.</p>
 <h3><a class="anchor" id="D_xy"></a>
 D_xy</h3>
-<p>The <code>D_xy</code> tag takes the following arguments through properties:</p><ul>
+<p>The <code>D_xy</code> tag takes the following arguments through attributes of the tag:</p><ul>
 <li><code>x_source</code> : Name of process variable which should be used for x-axis values</li>
 <li><code>y_source</code> : Name of process variable which should be used for y-axis values</li>
 <li><code>name</code> : Name of the mapped property The <code>D_xy</code> tag takes the following arguments through sub-tags:</li>
 <li><code>description</code> : A description for the XY plot</li>
-<li><code>unit</code> : A description of the respective axis. The axis is chosen with the <code>axis</code> property which can either be <code>x</code> or <code>y</code></li>
+<li><code>unit</code> : A description of the respective axis, see Section <a class="el" href="index.html#descriptions_and_units">Unit and description texts</a>. The axis is selected with the <code>axis</code> attribute which can either be <code>x</code> or <code>y</code> (default <code>y</code>).</li>
 </ul>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
@@ -426,9 +429,9 @@ D_xy</h3>
 </div><!-- fragment --><h3><a class="anchor" id="D_ifff"></a>
 D_ifff</h3>
 <p>The <code>D_ifff</code> tag takes the following arguments through attributes:</p><ul>
-<li><code>i1_source</code> : Name of process variable which should be used for first integer values</li>
-<li><code>f1_source</code>, <code>f2_source</code>, <code>f3_source</code> : Name of process variables which should be used for float values</li>
-<li><code>name</code> : Name of the mapped property The four mapped variables must provide data-consistent updates, unless <code>data_matching="none"</code> is specified.</li>
+<li><code>i1_source</code> : Name of process variable which should be used for the integer value</li>
+<li><code>f1_source</code>, <code>f2_source</code>, <code>f3_source</code> : Name of process variables which should be used for the three float values</li>
+<li><code>name</code> : Name of the mapped property (required) Note that the <code>i1_source</code>/<code>f1_source</code>/<code>f2_source</code>/<code>f3_source</code> paths are used as-is and are <em>not</em> resolved relative to the enclosing location, so they must be given as absolute paths (e.g. <code>"/FLOAT/FROM_DEVICE_SCALAR"</code>). The four mapped variables must provide data-consistent updates, unless <code>data_matching="none"</code> is specified. Description and unit texts are never taken from the process variables for this type (<code>ignore_description_from_app</code> is always effectively true); a custom <code>description</code> and a single <code>unit</code> (axis defaults to <code>y</code>) may be given.</li>
 </ul>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
@@ -448,8 +451,8 @@ D_ifff</h3>
 </div><!-- fragment --><h3><a class="anchor" id="D_iiii"></a>
 D_iiii</h3>
 <p>The <code>D_iiii</code> tag takes the following arguments through attributes:</p><ul>
-<li><code>source</code> : Name of process variable which should be used for first integer values.</li>
-<li><code>name</code> : Name of the mapped property</li>
+<li><code>source</code> : Name of the process variable which provides the four integer values.</li>
+<li><code>name</code> : Name of the mapped property (required) As for <code>D_ifff</code>, the <code>source</code> path is used as-is and is <em>not</em> resolved relative to the enclosing location, so it must be an absolute path. Description and unit texts are never taken from the process variable (<code>ignore_description_from_app</code> is always effectively true); a custom <code>description</code> and a single <code>unit</code> (axis defaults to <code>y</code>) may be given.</li>
 </ul>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div>
@@ -469,13 +472,60 @@ D_imagec</h3>
 <li><code>source</code> : Name of process variable which contains the data as array of unsigned char. Data consists of an image header defined as ChimeraTK::ImgHeader followed by the encoded pixel values.</li>
 <li><code>description</code>: Used as comment for the image, in the meta data.</li>
 </ul>
+<p>Note that the <code>type</code> attribute is <em>not</em> supported for <code>D_imagec</code>: its image format (Gray8/Gray16/RGB24/RGBA32) is derived from the image header in the data, so a <code>type</code> attribute would have no effect. There is also no unit concept for images; only the description is supported.</p>
 <p>If <code>data_matching="exact"</code> is set, the provided macropulse number is set as event id in the meta data.</p>
+<h2><a class="anchor" id="descriptions_and_units"></a>
+Unit and description texts</h2>
+<p>The description and unit texts of a DOOCS property can come from three different sources:</p><ul>
+<li>(a) statically from the process variable (the <code>TransferElement</code> of the application),</li>
+<li>(b) statically from the XML configuration file, or</li>
+<li>(c) dynamically from the control system (e.g. via pre-populated <code>.conf</code> files or a <code>doocs-set</code> call).</li>
+</ul>
+<p>By default the texts are taken from the process variable where this makes sense (case a). For property types where no meaningful text can be derived from the involved process variables (<code>D_iiii</code>/<code>D_ifff</code>), the default is to take them from the control system (cases b or c). For these two types <code>ignore_description_from_app</code> is always effectively true.</p>
+<p>Two elements can be used inside a <code>property</code> tag or the tag of a special property:</p>
+<ul>
+<li><code>description</code> : The enclosed text overrides all other sources of the description text.</li>
+<li><code>unit</code> : A description of the respective axis. For types with a single value axis the <code>axis</code> attribute is optional and defaults to <code>y</code>; for <code>D_spectrum</code> and <code>D_xy</code>, <code>axis</code> can be <code>x</code> or <code>y</code>. The <code>unit</code> element may additionally carry <code>start</code>, <code>stop</code> and <code>logarithmic</code> attributes for the initial display parameters.</li>
+</ul>
+<p>The tag <code>ignore_description_from_app</code> (see Section <a class="el" href="index.html#special_config">Special configuration</a>) controls whether the texts are taken from the process variable at all. It can be set on the root, location or property scope. If it is set to true, the unit and description texts are not taken from the process variable but left to the control system (case c); a <code>description</code> element still overrides everything.</p>
+<p>An example (excerpt of a <code>&lt;serverName&gt;-DoocsVariableConfig.xml</code>):</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">device_server</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LocA&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;A1&quot;</span> /&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;C2&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">the</span> <span class="keyword">overwritten</span> <span class="keyword">description</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">property</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">location</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LocB&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">D_spectrum</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;B1&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">startSource</span>&gt;<span class="keyword">B1start</span>&lt;/<span class="keywordtype">startSource</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">incrementSource</span>&gt;<span class="keyword">B1inc</span>&lt;/<span class="keywordtype">incrementSource</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">D_spectrum</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;B2&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">the</span> <span class="keyword">overwritten</span> <span class="keyword">description</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">property</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;B3&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">ignore_description_from_app</span>&gt;<span class="keyword">true</span>&lt;/<span class="keywordtype">ignore_description_from_app</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">property</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">location</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LocC&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">ignore_description_from_app</span>&gt;<span class="keyword">true</span>&lt;/<span class="keywordtype">ignore_description_from_app</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;C1&quot;</span> /&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">D_xy</span> <span class="keyword">x_source</span>=<span class="stringliteral">&quot;C2&quot;</span> <span class="keyword">y_source</span>=<span class="stringliteral">&quot;C3&quot;</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">the</span> <span class="keyword">overwritten</span> <span class="keyword">description</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">unit</span> <span class="keyword">axis</span>=<span class="stringliteral">&quot;x&quot;</span>&gt;<span class="keyword">xUnit</span>&lt;/<span class="keywordtype">unit</span>&gt;</div>
+<div class="line">            &lt;<span class="keywordtype">unit</span> <span class="keyword">axis</span>=<span class="stringliteral">&quot;y&quot;</span>&gt;<span class="keyword">yUnit</span>&lt;/<span class="keywordtype">unit</span>&gt;</div>
+<div class="line">        &lt;/<span class="keywordtype">D_xy</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">location</span>&gt;</div>
+<div class="line">&lt;/<span class="keywordtype">device_server</span>&gt;</div>
+</div><!-- fragment --><p>Locations <code>LocA</code> and <code>LocB</code> inherit the descriptions from the process variables, while <code>LocC</code> takes them from the control system. If a <code>description</code> is given for a property, its text is used and overrides all other sources. <code>ignore_description_from_app</code> also controls the default source of the unit texts. If it is not ignored and the XML configuration of a <code>D_spectrum</code> property has <code>startSource</code> or <code>incrementSource</code>, the x-unit is derived from there (the unit from <code>incrementSource</code> wins if both are present).</p>
+<p>See also the change request <a class="el" href="change_requests.html">Change Requests</a> for the details of this feature.</p>
 <h2><a class="anchor" id="set_error"></a>
 Error reporting</h2>
 <p>The special tag <code>set_error</code> is allowed only once per location. XML attributes:</p><ul>
 <li><code>statusCodeSource</code> : Path to the process variable which should be used for reading error/status codes.</li>
 </ul>
-<p>DoocsAdapter will automatically look for an associated variable with error/status messages, and if present, read both consistently. Errors indicated via the status variable will be published via DOOCS set_error function (of the location), which sets the properties ERROR, ERROR.STR, STS.ERROR, STS.NEWERROR, and also logs into LOG, LOG.LAST, LOG_HTML and LOG_HTML.LAST. Compare DOOCS documentation for error properties and propagation to the overall error counting per server, SVR.ERROR_COUNT. </p>
+<p>DoocsAdapter will automatically look for an associated variable with error/status messages (its name is derived from the status code source by appending the suffix <code>_message</code>), and if present, read both consistently. Errors indicated via the status variable will be published via DOOCS set_error function (of the location), which sets the properties ERROR, ERROR.STR, STS.ERROR, STS.NEWERROR, and also logs into LOG, LOG.LAST, LOG_HTML and LOG_HTML.LAST. Compare DOOCS documentation for error properties and propagation to the overall error counting per server, SVR.ERROR_COUNT. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

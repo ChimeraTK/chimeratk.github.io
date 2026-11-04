@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('md_doc_2change-requests_2_c_r-001-unit
   <div class="headertitle"><div class="title">CR-001: Add unit and description texts</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> Status: in progress</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> Status: implemented (feature merged, commit f9d72da)</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Requirements</h1>
 <p>Units and descriptions of process variables (i.e. <code>TransferElement</code>s of an application or connected device), should be automatically available in the DOOCS control system.</p>
@@ -143,7 +143,7 @@ Analysis: DOOCS ways of setting unit description texts</h2>
 <li>Scalars <code>D_value&lt;valueType&gt;</code> valueType=(bool|int|float|double|str) for scalar DOOCS properties <code>&lt;name&gt;.DESC</code> and <code>&lt;name&gt;.EGU</code> are used. These are created by the DOOCS auto historizer, see <code>D_value&lt;valueType&gt;::get_histPointer</code>. But be careful, sometimes we create scalars without a history!</li>
 <li>Arrays <code>D_array&lt;valueType&gt;</code> valueType=(bool|int|long|float|double) Not sure whether DOOCS unit and description texts exist as separate properties. But it should be possible to add a short description text by adding it space-separated to the DOOCS property name.</li>
 <li>Combined types <code>D_iiii</code>, <code>D_ifff</code> These support <code>D_hist</code> interface, and by that descriptions and engineering units. Do not fill in the description and unit texts from the process variables since it's not clear how the four inputs should be combined. So here, <code>&lt;ignore_description_from_app&gt;</code> is always true, but a custom <code>&lt;description&gt;</code> may be present. Also <code>&lt;unit&gt;</code> is a valid flag, <code>axis="x"</code> optional. The user should enter a unit description for all fields.</li>
-<li>Images <code>D_imagec</code> This has neither <code>.DESC</code> nor <code>.EGU</code> property. Images do have a comment, but the DOOCS api to retreive it back seems unpratical. We should create <code>.DESC</code> manually, but do not create <code>.EGU</code>, <code>.XEGU</code>.</li>
+<li>Images <code>D_imagec</code> This has neither <code>.DESC</code> nor <code>.EGU</code> property. Images do have a comment, but the DOOCS api to retrieve it back seems impractical. We should create <code>.DESC</code> manually, but do not create <code>.EGU</code>, <code>.XEGU</code>.</li>
 </ul>
 <p>Design decisions:</p><ul>
 <li>Whenever classes do not provide unit/description either directly or via historizing interface, we should create the DOOCS sub-properties <code>&lt;name&gt;.EGU</code> and <code>&lt;name&gt;.DESC</code>. In particular that holds for scalars without history, and arrays.</li>
@@ -174,18 +174,18 @@ Implementation notes and alternatives considered</h1>
 <li>Existing branch <code>feat-EGU</code> logs a warning when there is a difference between description text persisted in DOOCS .conf and value provided from DOOCSAdapter (from xml of process variable). We should not warn at all - since descriptions are persisted in the .conf the warning would re-appear every time a description is changed, which is too often.</li>
 <li>We should talk to DOOCS team about possible plans to unify units and descriptions for all types - also arrays and scalars without history.</li>
 <li>Should we set the description by the old-fashioned way, by appending it to the property name? It seems that would be a static, unchangeable description, and length limited to the leftover of 80 chars, subtracting name. If we want that, we must already set descriptions in the <code>DoocsPVFactory</code>! Decision: For now, do not use old-fashioned description, often available string is much too short.</li>
-<li>When falling back to self-created <code>.DESC</code> properties, should we use <code>D_string</code> or <code>D_text</code>? We use <code>D_string</code>, for consistency with already present <code>.DESC</code>, but unfurtunately that's limited to 80 characters.</li>
+<li>When falling back to self-created <code>.DESC</code> properties, should we use <code>D_string</code> or <code>D_text</code>? We use <code>D_string</code>, for consistency with already present <code>.DESC</code>, but unfortunately that's limited to 80 characters.</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Test plan</h2>
 <ul>
 <li>We should create a new unit test (don't want to complicate existing tests further)</li>
-<li>The test config should include one configuration per type (scalar, array, <code>D_spectrum</code>, <code>D_xy</code>, <code>D_iii</code>, <code>D_ifff</code>, <code>D_image</code>)</li>
+<li>The test config should include one configuration per type (scalar, array, <code>D_spectrum</code>, <code>D_xy</code>, <code>D_iiii</code>, <code>D_ifff</code>, <code>D_imagec</code>)</li>
 <li>test automatically filled in unit and description texts as well as overwritten ones</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Further work items</h2>
-<p>adapt XML scheme </p>
+<p>adapt XML schema </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

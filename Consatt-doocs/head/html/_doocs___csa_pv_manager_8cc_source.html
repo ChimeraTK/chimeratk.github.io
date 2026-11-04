@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Consatt-doocs: /scratch/dragon/sources/Consatt-doocs/src/Doocs_CsaPvManager.cc Source File</title>
+<title>Consatt-doocs: src/Doocs_CsaPvManager.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.27.01</span>
+   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.27.02</span>
    </div>
   </td>
  </tr>
@@ -426,101 +426,98 @@ $(document).ready(function(){initNavTree('_doocs___csa_pv_manager_8cc_source.htm
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="comment">// this funcion is not needed now, but for now I will leave it here</span></div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  D_fct* findPropResult = NULL;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = name.c_str();</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  findPropResult = this-&gt;_doocsParent-&gt;find_property(variableName);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keywordflow">if</span>(findPropResult != NULL) {</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::registerCsVariable Property &quot; &lt;&lt; variableName &lt;&lt; &quot; found.&quot;;</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">if</span>(findPropResult-&gt;dynamic() == 0) {</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>      <span class="comment">// std::cout &lt;&lt; &quot; Adding to DOOCS. &quot;;</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      this-&gt;_doocsParent-&gt;add_property(variable, type);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>      _registeredDoocsProperties++;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    }</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      <span class="comment">// std::cout &lt;&lt; &quot; Already added to DOOCS. &quot;;</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    }</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="comment">// std::cout &lt;&lt; &quot;registered amount: &quot; &lt;&lt; _registeredDoocsProperties &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  }</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordflow">else</span> { <span class="comment">// if the object is created in the EqFct class constructor, the property will NOT be found, but it will be</span></div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>         <span class="comment">// added by DOOCS libs after the constructor</span></div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::registerCsVariable: Property &quot; &lt;&lt; variableName &lt;&lt; &quot;not found. Should be not</span></div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="comment">// added. DOOCS will do it. &quot;;</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  }</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>}</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = name.c_str();</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keyword">auto</span>* findPropResult = this-&gt;_doocsParent-&gt;find_property(variableName);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordflow">if</span>(findPropResult != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::registerCsVariable Property &quot; &lt;&lt; variableName &lt;&lt; &quot; found.&quot;;</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">if</span>(findPropResult-&gt;dynamic() == 0) {</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>      <span class="comment">// std::cout &lt;&lt; &quot; Adding to DOOCS. &quot;;</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>      this-&gt;_doocsParent-&gt;add_property(variable, type);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      _registeredDoocsProperties++;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>      <span class="comment">// std::cout &lt;&lt; &quot; Already added to DOOCS. &quot;;</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="comment">// std::cout &lt;&lt; &quot;registered amount: &quot; &lt;&lt; _registeredDoocsProperties &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordflow">else</span> { <span class="comment">// if the object is created in the EqFct class constructor, the property will NOT be found, but it will be</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>         <span class="comment">// added by DOOCS libs after the constructor</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::registerCsVariable: Property &quot; &lt;&lt; variableName &lt;&lt; &quot;not found. Should be not</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="comment">// added. DOOCS will do it. &quot;;</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  }</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>}</div>
 </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="foldopen" id="foldopen00344" data-start="{" data-end="}">
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="class_doocs___csa_pv_manager.html#a7cff219fa8fa1224a52d75116b00c929">  344</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_doocs___csa_pv_manager.html#a7cff219fa8fa1224a52d75116b00c929">Doocs_CsaPvManager::unregisterDoocsProperty</a>(std::string name) {</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::unregisterDoocsProperty: starts ! &quot; &lt;&lt; name &lt;&lt;std::endl;</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  D_fct* findPropResult = NULL;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = name.c_str();</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  findPropResult = this-&gt;_doocsParent-&gt;find_property(variableName);</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  <span class="keywordflow">if</span>(findPropResult != NULL) {</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keywordflow">if</span>(findPropResult-&gt;dynamic() == 1) {</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>      <span class="keywordflow">if</span>(this-&gt;_doocsParent-&gt;rem_property(findPropResult)) {</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        _registeredDoocsProperties--;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Variable &quot;</span> &lt;&lt; variableName &lt;&lt; <span class="stringliteral">&quot; removed. &quot;</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                  &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="comment">// std::cout &lt;&lt; &quot;Amount of automatic DOOCS properties: &quot; &lt;&lt; _registeredDoocsProperties &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>      }</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Variable: &quot;</span> &lt;&lt; variableName &lt;&lt; <span class="stringliteral">&quot; NOT REMOVED. ERROR.&quot;</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                  &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>      }</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    }</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Property: &quot;</span> &lt;&lt; variableName &lt;&lt; <span class="stringliteral">&quot; is not dynamic.&quot;</span></div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  }</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Property:  &quot;</span> &lt;&lt; variableName</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>              &lt;&lt; <span class="stringliteral">&quot; not found. Already removed from DOOCS.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  }</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::~Doocs_CsaPvManager(): ends ! &quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>}</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="class_doocs___csa_pv_manager.html#a7cff219fa8fa1224a52d75116b00c929">  343</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_doocs___csa_pv_manager.html#a7cff219fa8fa1224a52d75116b00c929">Doocs_CsaPvManager::unregisterDoocsProperty</a>(std::string name) {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = name.c_str();</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keyword">auto</span>* findPropResult = this-&gt;_doocsParent-&gt;find_property(variableName);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <span class="keywordflow">if</span>(findPropResult != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">if</span>(findPropResult-&gt;dynamic() == 1) {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>      <span class="keywordflow">if</span>(this-&gt;_doocsParent-&gt;rem_property(findPropResult)) {</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        _registeredDoocsProperties--;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Variable &quot;</span> &lt;&lt; variableName &lt;&lt; <span class="stringliteral">&quot; removed. &quot;</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                  &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="comment">// std::cout &lt;&lt; &quot;Amount of automatic DOOCS properties: &quot; &lt;&lt; _registeredDoocsProperties &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>      }</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Variable: &quot;</span> &lt;&lt; variableName &lt;&lt; <span class="stringliteral">&quot; NOT REMOVED. ERROR.&quot;</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                  &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>      }</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    }</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Property: &quot;</span> &lt;&lt; variableName &lt;&lt; <span class="stringliteral">&quot; is not dynamic.&quot;</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    }</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::unregisterCsVariable(): Property:  &quot;</span> &lt;&lt; variableName</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>              &lt;&lt; <span class="stringliteral">&quot; not found. Already removed from DOOCS.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  }</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="comment">// std::cout &lt;&lt; &quot;Doocs_CsaPvManager::~Doocs_CsaPvManager(): ends ! &quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>}</div>
 </div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="keywordtype">void</span> Doocs_CsaPvManager::alterUserSettings(boost::shared_ptr&lt;CsaPvConfigBase&gt; pvObjConfig) {</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <span class="keywordflow">if</span>(!pvObjConfig-&gt;userConfig.getUnit().get().empty() &amp;&amp; pvObjConfig-&gt;userConfig.getHistoryLength().get() == 0) {</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::alterUserSettings: Unit enabled for &quot;</span> &lt;&lt; pvObjConfig-&gt;getName()</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>              &lt;&lt; <span class="stringliteral">&quot; , but history 0. To make unit work in DOOCS set history to minimum value.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    pvObjConfig-&gt;userConfig.set(<span class="keyword">false</span>, P_HistoryLength(1));</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  }</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  <span class="keywordflow">if</span>(pvObjConfig-&gt;userConfig.getHistoryLength().get() == 0) {</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    std::string renameSearch = std::string(<span class="stringliteral">&quot;SET_EGU::&quot;</span>) + pvObjConfig-&gt;getName();</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    std::string unitNameBuffer(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keywordflow">if</span>(CsaAppConfigFileParser::getInstance().getValueAsDataString(renameSearch, unitNameBuffer)) {</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::alterUserSettings: Unit enabled in appConfig file for: &quot;</span></div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                &lt;&lt; pvObjConfig-&gt;getName()</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                &lt;&lt; <span class="stringliteral">&quot; , but history 0. To make unit work in DOOCS set history to minimum value.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>      pvObjConfig-&gt;userConfig.set(<span class="keyword">false</span>, P_HistoryLength(1));</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    }</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  }</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  <span class="comment">/* - start debugging Thorsten issue - REFMOPT, refmopt, Refmopt</span></div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="comment">  if (pvObjConfig-&gt;getName().compare(&quot;HELPER.LOG_FILE_SIZE_KB.RD&quot;) == 0) {</span></div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">      std::cout &lt;&lt; &quot; !!!!!!!!!!!!!!!!!!!!!!!!!!! HELPER.LOG_FILE_SIZE_KB.RD hist length: &quot; &lt;&lt;</span></div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment">  pvObjConfig-&gt;userConfig.getHistoryLength().get() &lt;&lt; std::endl; std::string renameSearch = std::string(&quot;SET_EGU::&quot;) +</span></div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment">  pvObjConfig-&gt;getName(); std::string unitNameBuffer(&quot;&quot;); if</span></div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">  (CsaAppConfigFileParser::getInstance().getValueAsDataString(renameSearch, unitNameBuffer)) { std::cout &lt;&lt;</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">  &quot;Doocs_CsaPvManager::alterUserSettings: Unit enabled in appConfig file for: &quot; &lt;&lt; pvObjConfig-&gt;getName() &lt;&lt; &quot; , but</span></div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">  history 0. To make unit work in DOOCS set history to minimum value.&quot; &lt;&lt; std::endl; pvObjConfig-&gt;userConfig.set(false,</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">  P_HistoryLength(1)); } else { std::cout &lt;&lt; &quot;Doocs_CsaPvManager::alterUserSettings: entry not found for :&quot; &lt;&lt;</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">      }</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="comment">  }</span></div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>}</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
-<div class="foldopen" id="foldopen00408" data-start="{" data-end="}">
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="class_doocs___csa_pv_manager.html#a588d6617fc9f29522d72c45599ed39ba">  408</a></span>uint32_t <a class="code hl_function" href="class_doocs___csa_pv_manager.html#a588d6617fc9f29522d72c45599ed39ba">Doocs_CsaPvManager::registerPvNumber</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  <span class="keywordflow">return</span> _registeredDoocsProperties;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>}</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="keywordtype">void</span> Doocs_CsaPvManager::alterUserSettings(boost::shared_ptr&lt;CsaPvConfigBase&gt; pvObjConfig) {</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  <span class="keywordflow">if</span>(!pvObjConfig-&gt;userConfig.getUnit().get().empty() &amp;&amp; pvObjConfig-&gt;userConfig.getHistoryLength().get() == 0) {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::alterUserSettings: Unit enabled for &quot;</span> &lt;&lt; pvObjConfig-&gt;getName()</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>              &lt;&lt; <span class="stringliteral">&quot; , but history 0. To make unit work in DOOCS set history to minimum value.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    pvObjConfig-&gt;userConfig.set(<span class="keyword">false</span>, P_HistoryLength(1));</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  }</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  <span class="keywordflow">if</span>(pvObjConfig-&gt;userConfig.getHistoryLength().get() == 0) {</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    std::string renameSearch = std::string(<span class="stringliteral">&quot;SET_EGU::&quot;</span>) + pvObjConfig-&gt;getName();</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    std::string unitNameBuffer(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordflow">if</span>(CsaAppConfigFileParser::getInstance().getValueAsDataString(renameSearch, unitNameBuffer)) {</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Doocs_CsaPvManager::alterUserSettings: Unit enabled in appConfig file for: &quot;</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                &lt;&lt; pvObjConfig-&gt;getName()</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                &lt;&lt; <span class="stringliteral">&quot; , but history 0. To make unit work in DOOCS set history to minimum value.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>      pvObjConfig-&gt;userConfig.set(<span class="keyword">false</span>, P_HistoryLength(1));</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  }</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  <span class="comment">/* - start debugging Thorsten issue - REFMOPT, refmopt, Refmopt</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="comment">  if (pvObjConfig-&gt;getName().compare(&quot;HELPER.LOG_FILE_SIZE_KB.RD&quot;) == 0) {</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment">      std::cout &lt;&lt; &quot; !!!!!!!!!!!!!!!!!!!!!!!!!!! HELPER.LOG_FILE_SIZE_KB.RD hist length: &quot; &lt;&lt;</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment">  pvObjConfig-&gt;userConfig.getHistoryLength().get() &lt;&lt; std::endl; std::string renameSearch = std::string(&quot;SET_EGU::&quot;) +</span></div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="comment">  pvObjConfig-&gt;getName(); std::string unitNameBuffer(&quot;&quot;); if</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">  (CsaAppConfigFileParser::getInstance().getValueAsDataString(renameSearch, unitNameBuffer)) { std::cout &lt;&lt;</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment">  &quot;Doocs_CsaPvManager::alterUserSettings: Unit enabled in appConfig file for: &quot; &lt;&lt; pvObjConfig-&gt;getName() &lt;&lt; &quot; , but</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment">  history 0. To make unit work in DOOCS set history to minimum value.&quot; &lt;&lt; std::endl; pvObjConfig-&gt;userConfig.set(false,</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">  P_HistoryLength(1)); } else { std::cout &lt;&lt; &quot;Doocs_CsaPvManager::alterUserSettings: entry not found for :&quot; &lt;&lt;</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">      }</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">  }</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>}</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
+<div class="foldopen" id="foldopen00405" data-start="{" data-end="}">
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="class_doocs___csa_pv_manager.html#a588d6617fc9f29522d72c45599ed39ba">  405</a></span>uint32_t <a class="code hl_function" href="class_doocs___csa_pv_manager.html#a588d6617fc9f29522d72c45599ed39ba">Doocs_CsaPvManager::registerPvNumber</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  <span class="keywordflow">return</span> _registeredDoocsProperties;</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>}</div>
 </div>
 <div class="ttc" id="a_doocs___csa_pv_manager_8h_html"><div class="ttname"><a href="_doocs___csa_pv_manager_8h.html">Doocs_CsaPvManager.h</a></div></div>
 <div class="ttc" id="a_doocs___csa_types_basic_8h_html"><div class="ttname"><a href="_doocs___csa_types_basic_8h.html">Doocs_CsaTypesBasic.h</a></div></div>
@@ -528,9 +525,9 @@ $(document).ready(function(){initNavTree('_doocs___csa_pv_manager_8cc_source.htm
 <div class="ttc" id="a_doocs___csa_types_vector_8h_html"><div class="ttname"><a href="_doocs___csa_types_vector_8h.html">Doocs_CsaTypesVector.h</a></div></div>
 <div class="ttc" id="a_doocs___csa_types_vector_8h_html_a9daae62b5efca14cb411a5a54a158d02"><div class="ttname"><a href="_doocs___csa_types_vector_8h.html#a9daae62b5efca14cb411a5a54a158d02">SPECTRUM_BUFFERS_AMOUNT</a></div><div class="ttdeci">#define SPECTRUM_BUFFERS_AMOUNT</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_types_vector_8h_source.html#l00018">Doocs_CsaTypesVector.h:18</a></div></div>
 <div class="ttc" id="aclass_doocs___csa_pv_manager_html_a3eb954c8e48828a9493e8282912b7043"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a3eb954c8e48828a9493e8282912b7043">Doocs_CsaPvManager::Doocs_CsaPvManager</a></div><div class="ttdeci">Doocs_CsaPvManager()</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00009">Doocs_CsaPvManager.cc:9</a></div></div>
-<div class="ttc" id="aclass_doocs___csa_pv_manager_html_a588d6617fc9f29522d72c45599ed39ba"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a588d6617fc9f29522d72c45599ed39ba">Doocs_CsaPvManager::registerPvNumber</a></div><div class="ttdeci">uint32_t registerPvNumber() const</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00408">Doocs_CsaPvManager.cc:408</a></div></div>
+<div class="ttc" id="aclass_doocs___csa_pv_manager_html_a588d6617fc9f29522d72c45599ed39ba"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a588d6617fc9f29522d72c45599ed39ba">Doocs_CsaPvManager::registerPvNumber</a></div><div class="ttdeci">uint32_t registerPvNumber() const</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00405">Doocs_CsaPvManager.cc:405</a></div></div>
 <div class="ttc" id="aclass_doocs___csa_pv_manager_html_a6004b838cddf8c98ca4054506a6d51d5"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a6004b838cddf8c98ca4054506a6d51d5">Doocs_CsaPvManager::registerDoocsProperty</a></div><div class="ttdeci">bool registerDoocsProperty(std::string name, D_fct *variable, int type=DP_AUTO)</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00312">Doocs_CsaPvManager.cc:312</a></div></div>
-<div class="ttc" id="aclass_doocs___csa_pv_manager_html_a7cff219fa8fa1224a52d75116b00c929"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a7cff219fa8fa1224a52d75116b00c929">Doocs_CsaPvManager::unregisterDoocsProperty</a></div><div class="ttdeci">bool unregisterDoocsProperty(std::string name)</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00344">Doocs_CsaPvManager.cc:344</a></div></div>
+<div class="ttc" id="aclass_doocs___csa_pv_manager_html_a7cff219fa8fa1224a52d75116b00c929"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a7cff219fa8fa1224a52d75116b00c929">Doocs_CsaPvManager::unregisterDoocsProperty</a></div><div class="ttdeci">bool unregisterDoocsProperty(std::string name)</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00343">Doocs_CsaPvManager.cc:343</a></div></div>
 <div class="ttc" id="aclass_doocs___csa_pv_manager_html_a88d797a88f5ff808b62174a274682412"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#a88d797a88f5ff808b62174a274682412">Doocs_CsaPvManager::createProcessVariable</a></div><div class="ttdeci">boost::shared_ptr&lt; BindedObjects &gt; createProcessVariable(boost::shared_ptr&lt; CsaPvConfigBase &gt; pvObjConfig)</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00026">Doocs_CsaPvManager.cc:26</a></div></div>
 <div class="ttc" id="aclass_doocs___csa_pv_manager_html_aacb797ea7604886e3676f9d23fd3a21d"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#aacb797ea7604886e3676f9d23fd3a21d">Doocs_CsaPvManager::getParrent</a></div><div class="ttdeci">EqFct * getParrent() const</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00022">Doocs_CsaPvManager.cc:22</a></div></div>
 <div class="ttc" id="aclass_doocs___csa_pv_manager_html_abf78b598d8423d546f43269d49f9eaff"><div class="ttname"><a href="class_doocs___csa_pv_manager.html#abf78b598d8423d546f43269d49f9eaff">Doocs_CsaPvManager::setParrent</a></div><div class="ttdeci">void setParrent(EqFct *doocsParent)</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_pv_manager_8cc_source.html#l00018">Doocs_CsaPvManager.cc:18</a></div></div>
@@ -553,7 +550,7 @@ $(document).ready(function(){initNavTree('_doocs___csa_pv_manager_8cc_source.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_eac7c90a82c75937b07cd6b39a8b73b2.html">Consatt-doocs</a></li><li class="navelem"><a class="el" href="dir_d7b60eace56b2ebe4a989f527fe77aa4.html">src</a></li><li class="navelem"><a class="el" href="_doocs___csa_pv_manager_8cc.html">Doocs_CsaPvManager.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_doocs___csa_pv_manager_8cc.html">Doocs_CsaPvManager.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unit_20and_20description_20texts_0',['CR-001: Add unit and description texts',['../md_doc_2change-requests_2_c_r-001-units_and_descriptions.html',1,'change_requests']]],
+  ['unit_20and_20description_20texts_0',['unit and description texts',['../md_doc_2change-requests_2_c_r-001-units_and_descriptions.html',1,'CR-001: Add unit and description texts'],['../index.html#descriptions_and_units',1,'Unit and description texts']]],
   ['unit_20description_20texts_1',['Analysis: DOOCS ways of setting unit description texts',['../md_doc_2change-requests_2_c_r-001-units_and_descriptions.html#autotoc_md3',1,'']]],
   ['update_2',['update',['../class_chimera_t_k_1_1_doocs_updater.html#a47e2fd420a881a64e0ab38d4b4bba5aa',1,'ChimeraTK::DoocsUpdater']]],
   ['updateconsistency_3',['updateConsistency',['../class_chimera_t_k_1_1_property_base.html#a748011619da365007e5f1ffaca82b29f',1,'ChimeraTK::PropertyBase']]],

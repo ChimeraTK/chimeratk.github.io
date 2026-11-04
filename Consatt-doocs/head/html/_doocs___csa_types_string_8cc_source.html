@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Consatt-doocs: /scratch/dragon/sources/Consatt-doocs/src/Doocs_CsaTypesString.cc Source File</title>
+<title>Consatt-doocs: src/Doocs_CsaTypesString.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.27.01</span>
+   <div id="projectname">Consatt-doocs<span id="projectnumber">&#160;00.27.02</span>
    </div>
   </td>
  </tr>
@@ -258,42 +258,41 @@ $(document).ready(function(){initNavTree('_doocs___csa_types_string_8cc_source.h
 </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> Doocs_CsaTypesString::registerToDoocs() {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  D_fct* findPropResult = NULL;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_string.html#a3d732ea1888a769d06b10cd7754ad6ef">_doocsName</a>.c_str();</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  findPropResult = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_string.html#aab99c05e3e2ecff81254a7ade0d2bf05">_doocsParrent</a>-&gt;find_property(variableName);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordflow">if</span>(findPropResult != NULL &amp;&amp; findPropResult-&gt;dynamic() == 0)</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_string.html#aab99c05e3e2ecff81254a7ade0d2bf05">_doocsParrent</a>-&gt;add_property(<span class="keyword">this</span>, DP_AUTO); <span class="comment">// DP_AUTO DP_PERS</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// THIS IS A METHOD WHICH IS EXECUTED BY JDDD PANELS IN ORDER TO GET DATA TO JDDD</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">void Doocs_CsaTypesString::get(EqAdr *eqAdr, EqData *eqData1, EqData *eqData2, EqFct *eqFct) {</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">     if (this-&gt;getToCs)</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">         this-&gt;txt_ = const_cast&lt;char*&gt; (this-&gt;getToCs().c_str());</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">    //std::cout &lt;&lt; &quot;Getting from library to CS with get. Value is: &quot; &lt;&lt; this-&gt;value_ &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">    D_text::get(eqAdr, eqData1, eqData2, eqFct);</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">}</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* variableName = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_string.html#a3d732ea1888a769d06b10cd7754ad6ef">_doocsName</a>.c_str();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">auto</span>* findPropResult = this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_string.html#aab99c05e3e2ecff81254a7ade0d2bf05">_doocsParrent</a>-&gt;find_property(variableName);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keywordflow">if</span>(findPropResult != <span class="keyword">nullptr</span> &amp;&amp; findPropResult-&gt;dynamic() == 0)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    this-&gt;<a class="code hl_variable" href="class_doocs___csa_types_string.html#aab99c05e3e2ecff81254a7ade0d2bf05">_doocsParrent</a>-&gt;add_property(<span class="keyword">this</span>, DP_AUTO); <span class="comment">// DP_AUTO DP_PERS</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// THIS IS A METHOD WHICH IS EXECUTED BY JDDD PANELS IN ORDER TO GET DATA TO JDDD</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">void Doocs_CsaTypesString::get(EqAdr *eqAdr, EqData *eqData1, EqData *eqData2, EqFct *eqFct) {</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">     if (this-&gt;getToCs)</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">         this-&gt;txt_ = const_cast&lt;char*&gt; (this-&gt;getToCs().c_str());</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">    //std::cout &lt;&lt; &quot;Getting from library to CS with get. Value is: &quot; &lt;&lt; this-&gt;value_ &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">    D_text::get(eqAdr, eqData1, eqData2, eqFct);</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">}</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"></span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment"></span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"></span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">//overlaod from doocs</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"></span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">char* Doocs_CsaTypesString::value() {</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">    if (this-&gt;getToCs)</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">        this-&gt;txt_ = const_cast&lt;char*&gt; (this-&gt;getToCs().c_str());</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">    //std::cout &lt;&lt; &quot;Getting from library to CS&quot; &lt;&lt; val &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">    return const_cast&lt;char*&gt; (this-&gt;txt_);</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">}</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"></span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">void Doocs_CsaTypesString::get_multi(EqAdr *eqAdr, EqData *eqData1, EqData *eqData2, int *int1, const char *char1,</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">time_t *tm) {</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">    //std::cout &lt;&lt; &quot;Getting from library to CS with get_multi.&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">    if (this-&gt;getToCs)</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">        this-&gt;txt_ = const_cast&lt;char*&gt; (this-&gt;getToCs().c_str());</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">    D_text::get_multi(eqAdr, eqData1, eqData2, int1, char1, tm);</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">}</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">//overlaod from doocs</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment"></span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">char* Doocs_CsaTypesString::value() {</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">    if (this-&gt;getToCs)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">        this-&gt;txt_ = const_cast&lt;char*&gt; (this-&gt;getToCs().c_str());</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">    //std::cout &lt;&lt; &quot;Getting from library to CS&quot; &lt;&lt; val &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">    return const_cast&lt;char*&gt; (this-&gt;txt_);</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">}</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"></span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">void Doocs_CsaTypesString::get_multi(EqAdr *eqAdr, EqData *eqData1, EqData *eqData2, int *int1, const char *char1,</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">time_t *tm) {</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">    //std::cout &lt;&lt; &quot;Getting from library to CS with get_multi.&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">    if (this-&gt;getToCs)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">        this-&gt;txt_ = const_cast&lt;char*&gt; (this-&gt;getToCs().c_str());</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment"></span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">    D_text::get_multi(eqAdr, eqData1, eqData2, int1, char1, tm);</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">}</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"> */</span></div>
 <div class="ttc" id="a_doocs___csa_adapter_8h_html"><div class="ttname"><a href="_doocs___csa_adapter_8h.html">Doocs_CsaAdapter.h</a></div></div>
 <div class="ttc" id="a_doocs___csa_types_string_8h_html"><div class="ttname"><a href="_doocs___csa_types_string_8h.html">Doocs_CsaTypesString.h</a></div></div>
 <div class="ttc" id="aclass_doocs___csa_adapter_html_a6b2f0eddf1e24c9e04ffb9db91f239d7"><div class="ttname"><a href="class_doocs___csa_adapter.html#a6b2f0eddf1e24c9e04ffb9db91f239d7">Doocs_CsaAdapter::getInstance</a></div><div class="ttdeci">static Doocs_CsaAdapter &amp; getInstance()</div><div class="ttdef"><b>Definition</b> <a href="_doocs___csa_adapter_8cc_source.html#l00023">Doocs_CsaAdapter.cc:23</a></div></div>
@@ -320,7 +319,7 @@ $(document).ready(function(){initNavTree('_doocs___csa_types_string_8cc_source.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_eac7c90a82c75937b07cd6b39a8b73b2.html">Consatt-doocs</a></li><li class="navelem"><a class="el" href="dir_d7b60eace56b2ebe4a989f527fe77aa4.html">src</a></li><li class="navelem"><a class="el" href="_doocs___csa_types_string_8cc.html">Doocs_CsaTypesString.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_doocs___csa_types_string_8cc.html">Doocs_CsaTypesString.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
