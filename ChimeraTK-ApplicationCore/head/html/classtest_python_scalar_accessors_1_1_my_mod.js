@@ -12,5 +12,6 @@ var classtest_python_scalar_accessors_1_1_my_mod =
     [ "v5", "classtest_python_scalar_accessors_1_1_my_mod.html#af324e4b3bde609f3eaaf5c291a5fa715", null ],
     [ "v6", "classtest_python_scalar_accessors_1_1_my_mod.html#ae74d6555fc9d8f8a001ecdc253b2593a", null ],
     [ "v7", "classtest_python_scalar_accessors_1_1_my_mod.html#a2b4940069d758a9609769fbd252cc5ca", null ],
-    [ "v8", "classtest_python_scalar_accessors_1_1_my_mod.html#ad8aa136314ba6b903d9d5149b98bfc6b", null ]
+    [ "v8", "classtest_python_scalar_accessors_1_1_my_mod.html#ad8aa136314ba6b903d9d5149b98bfc6b", null ],
+    [ "v9", "classtest_python_scalar_accessors_1_1_my_mod.html#a0a3a5e38f0bff4a7d785cb3dfb13f6e6", null ]
 ];

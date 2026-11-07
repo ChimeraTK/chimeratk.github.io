@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.31.00</span>
+   <div id="projectname">ChimeraTK-DeviceAccess<span id="projectnumber">&#160;03.32.00</span>
    </div>
   </td>
  </tr>
@@ -1787,7 +1787,7 @@ template&lt;typename expectedUserType &gt; </div>
 <p>This takes 1D numpy arrays of any type. </p>
 <p>Advantage of py::array over std::vector is, it directly maps memory of numpy arrays, eliminating the copy and convert altogether where possible. When conversion must happen, the stricter numpy rules for conversion apply, which forbid information loss. </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00115">115</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00126">126</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1811,7 +1811,7 @@ template&lt;typename expectedUserType &gt; </div>
 
 <p>Take a 2D numpy array and convert it into a vector of vectors of expectedUserType (one inner vector per channel). </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00242">242</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00253">253</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1835,7 +1835,7 @@ template&lt;typename expectedUserType &gt; </div>
 
 <p>this takes native python lists, content possibly of mixed types convertToPyArr should be preferred when input is a numpy-array </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00161">161</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00172">172</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1875,7 +1875,7 @@ template&lt;typename expectedUserType &gt; </div>
 
 <p>input may be numpy arrays, numpy scalars, python primitives, and lists of numpy scalars or python primitives </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00180">180</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00191">191</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1899,7 +1899,7 @@ template&lt;typename expectedUserType &gt; </div>
 
 <p>input may be a nested python list (list of lists) or a 2D numpy array; result is one inner vector per channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00284">284</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00295">295</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1922,9 +1922,10 @@ template&lt;typename expectedUserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Convert a python scalar (bool, int, float, str; also numpy scalars) into the expected UserType. </p>
-<p>We deliberately avoid relying on a lossy cast of the python scalar into a single std::variant, since that can mangle values (e.g. python ints which do not fit into int64, or negative values converted into an unsigned register). Instead we examine the python type explicitly and preserve the full range of the value. </p>
+<p>Will throw if input is None.</p>
+<p>We deliberately avoid relying on a lossy cast of the python scalar into a single std::variant, since that can mangle values (e.g. python ints which do not fit into int64, or negative values converted into an unsigned register). Instead we examine the python type explicitly and preserve the full range of the value. A pybind11-bound <a class="el" href="class_chimera_t_k_1_1_boolean.html" title="Wrapper Class to avoid vector&lt;bool&gt; problems.">ChimeraTK::Boolean</a> object is also accepted and converted to the expected UserType. Any other unsupported type throws, rather than being silently coerced via double. </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00045">45</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00048">48</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1948,7 +1949,7 @@ template&lt;typename expectedUserType &gt; </div>
 
 <p>Just like convertScalarValue, but input may be empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00320">320</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00331">331</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1973,7 +1974,7 @@ template&lt;typename expectedUserType &gt; </div>
 <p>Convert a python object (scalar, 1-element list, or 1-element array) into a UserType scalar value. </p>
 <p>This is used by scalar accessors and scalar write paths, where the user may pass a plain scalar or a list/array with a single element. </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00310">310</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00321">321</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -1997,7 +1998,7 @@ template&lt;typename expectedUserType , typename FROM &gt; </div>
 
 <p>helper for 1D numpy array conversion when data types are know at compile time </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00082">82</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00093">93</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>
@@ -2021,7 +2022,7 @@ template&lt;typename expectedUserType , typename FROM &gt; </div>
 
 <p>helper for 2D numpy array conversion when the data type is known at compile time </p>
 
-<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00214">214</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_py_convert_8h_source.html#l00225">225</a> of file <a class="el" href="_py_convert_8h_source.html">PyConvert.h</a>.</p>
 
 </div>
 </div>

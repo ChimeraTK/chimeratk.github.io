@@ -8,7 +8,8 @@ var searchData=
   ['005_3a_20tool_20to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_5',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
   ['006_3a_20jmap_20file_20format_20version_201_200_6',['CR-006: JMAP file format version 1.0',['../md_doc_2change-requests_2_c_r-006-jmap-file-format-version.html',1,'change_requests']]],
   ['009_3a_20rebot_20connection_20close_20must_20not_20throw_20on_20a_20reset_20connection_7',['CR-009: Rebot connection close must not throw on a reset connection',['../md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html',1,'change_requests']]],
-  ['012_3a_20backend_20specific_20interrupt_20handler_20entries_20in_20the_20jmap_20file_8',['CR-012: Backend-specific interrupt handler entries in the JMAP file',['../md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html',1,'change_requests']]],
-  ['017_3a_20confine_20boost_20program_5foptions_20to_20the_20device_20to_20jmap_20tool_9',['CR-017: Confine Boost program_options to the device-to-jmap tool',['../md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html',1,'change_requests']]],
-  ['0wip_10',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]]
+  ['011_3a_20grouped_20demultiplexing_20of_20muxed_202d_20channel_20slices_8',['CR-011: Grouped demultiplexing of muxed 2D channel slices',['../md_doc_2change-requests_2_c_r-011-grouped-demultiplexing-of-muxed-channel-slices.html',1,'change_requests']]],
+  ['012_3a_20backend_20specific_20interrupt_20handler_20entries_20in_20the_20jmap_20file_9',['CR-012: Backend-specific interrupt handler entries in the JMAP file',['../md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html',1,'change_requests']]],
+  ['017_3a_20confine_20boost_20program_5foptions_20to_20the_20device_20to_20jmap_20tool_10',['CR-017: Confine Boost program_options to the device-to-jmap tool',['../md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html',1,'change_requests']]],
+  ['0wip_11',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]]
 ];
