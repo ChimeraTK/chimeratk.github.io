@@ -219,6 +219,7 @@ var annotated_dup =
         [ "ConstantTestApplication", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application.html", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application" ],
         [ "ConstantTestModule", "struct_tests_1_1test_app_module_connections_1_1_constant_test_module.html", "struct_tests_1_1test_app_module_connections_1_1_constant_test_module" ],
         [ "ConsumingModule", "struct_tests_1_1test_app_module_connections_1_1_consuming_module.html", "struct_tests_1_1test_app_module_connections_1_1_consuming_module" ],
+        [ "DeviceDescApp", "struct_tests_1_1test_app_module_connections_1_1_device_desc_app.html", "struct_tests_1_1test_app_module_connections_1_1_device_desc_app" ],
         [ "FeedingModule", "struct_tests_1_1test_app_module_connections_1_1_feeding_module.html", "struct_tests_1_1test_app_module_connections_1_1_feeding_module" ],
         [ "LiteralDescApp", "struct_tests_1_1test_app_module_connections_1_1_literal_desc_app.html", "struct_tests_1_1test_app_module_connections_1_1_literal_desc_app" ],
         [ "PeerInfo", "struct_tests_1_1test_app_module_connections_1_1_peer_info.html", "struct_tests_1_1test_app_module_connections_1_1_peer_info" ],

@@ -29,6 +29,7 @@ var hierarchy =
         [ "ScalarVariableGroupTestAppForMove", "struct_scalar_variable_group_test_app_for_move.html", null ],
         [ "TestApplication", "struct_test_application.html", null ],
         [ "Tests::testAppModuleConnections::ConstantTestApplication< T >", "struct_tests_1_1test_app_module_connections_1_1_constant_test_application.html", null ],
+        [ "Tests::testAppModuleConnections::DeviceDescApp", "struct_tests_1_1test_app_module_connections_1_1_device_desc_app.html", null ],
         [ "Tests::testAppModuleConnections::LiteralDescApp", "struct_tests_1_1test_app_module_connections_1_1_literal_desc_app.html", null ],
         [ "Tests::testAppModuleConnections::PriorityTestApp", "struct_tests_1_1test_app_module_connections_1_1_priority_test_app.html", null ],
         [ "Tests::testAppModuleConnections::TestAppSelfUnregisteringModule", "struct_tests_1_1test_app_module_connections_1_1_test_app_self_unregistering_module.html", null ],

@@ -153,7 +153,7 @@ var searchData=
   ['setwarnmixedmessage_150',['setWarnMixedMessage',['../struct_chimera_t_k_1_1_status_aggregator.html#a5dfeaf4adeba3ee85a80711950678d00',1,'ChimeraTK::StatusAggregator']]],
   ['severity_151',['severity',['../class_chimera_t_k_1_1_logger_1_1_severity.html#a87dfd5ed653777d62ea78267871bb27b',1,'ChimeraTK::Logger::Severity::Severity()'],['../class_chimera_t_k_1_1_logger_1_1_severity.html',1,'ChimeraTK::Logger::Severity']]],
   ['shutdown_152',['shutdown',['../struct_chimera_t_k_1_1_device_manager_1_1_recovery_group.html#aa649868fec80bba689ce672e2fbdd0c4',1,'ChimeraTK::DeviceManager::RecoveryGroup::shutdown'],['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc',1,'ChimeraTK::shutdown'],['../class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a',1,'ChimeraTK::Application::shutdown()']]],
-  ['simulation_153',['simulation',['../class_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation'],['../class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation']]],
+  ['simulation_153',['simulation',['../class_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation'],['../class_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation']]],
   ['simulationmodule_154',['SimulationModule',['../struct_simulation_module.html',1,'']]],
   ['sin_155',['sIn',['../classtest_python_accessor_tags_1_1_my_mod.html#af0cadb1c080093881511a0636d2b0ba4',1,'testPythonAccessorTags::MyMod']]],
   ['singed32_156',['singed32',['../struct_tests_1_1test_trigger_1_1_test_app4.html#a09e63df148c855ae3ee21101dfd95813',1,'Tests::testTrigger::TestApp4']]],

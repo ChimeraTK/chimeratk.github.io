@@ -8,13 +8,14 @@ var searchData=
   ['deeper_5',['Deeper',['../struct_tests_1_1test_device_accessors_1_1_deeper.html',1,'Tests::testDeviceAccessors']]],
   ['deeper2_6',['Deeper2',['../struct_tests_1_1test_device_accessors_1_1_deeper2.html',1,'Tests::testDeviceAccessors']]],
   ['depthfirstsearch_7',['DepthFirstSearch',['../struct_chimera_t_k_1_1_model_1_1_depth_first_search.html',1,'ChimeraTK::Model']]],
-  ['devicemanager_8',['DeviceManager',['../class_chimera_t_k_1_1_device_manager.html',1,'ChimeraTK']]],
-  ['devicemodule_9',['DeviceModule',['../class_chimera_t_k_1_1_device_module.html',1,'ChimeraTK']]],
-  ['devicemoduleproperties_10',['DeviceModuleProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_device_module_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
-  ['devicemoduleproxy_11',['DeviceModuleProxy',['../class_chimera_t_k_1_1_model_1_1_device_module_proxy.html',1,'ChimeraTK::Model']]],
-  ['devicemodulewithpath_12',['DeviceModuleWithPath',['../struct_device_module_with_path.html',1,'']]],
-  ['directoryproperties_13',['DirectoryProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_directory_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
-  ['directoryproxy_14',['DirectoryProxy',['../class_chimera_t_k_1_1_model_1_1_directory_proxy.html',1,'ChimeraTK::Model']]],
-  ['divider_15',['Divider',['../struct_chimera_t_k_1_1_divider.html',1,'ChimeraTK']]],
-  ['dummyapplication_16',['DummyApplication',['../struct_dummy_application.html',1,'']]]
+  ['devicedescapp_8',['DeviceDescApp',['../struct_tests_1_1test_app_module_connections_1_1_device_desc_app.html',1,'Tests::testAppModuleConnections']]],
+  ['devicemanager_9',['DeviceManager',['../class_chimera_t_k_1_1_device_manager.html',1,'ChimeraTK']]],
+  ['devicemodule_10',['DeviceModule',['../class_chimera_t_k_1_1_device_module.html',1,'ChimeraTK']]],
+  ['devicemoduleproperties_11',['DeviceModuleProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_device_module_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
+  ['devicemoduleproxy_12',['DeviceModuleProxy',['../class_chimera_t_k_1_1_model_1_1_device_module_proxy.html',1,'ChimeraTK::Model']]],
+  ['devicemodulewithpath_13',['DeviceModuleWithPath',['../struct_device_module_with_path.html',1,'']]],
+  ['directoryproperties_14',['DirectoryProperties',['../struct_chimera_t_k_1_1_model_1_1_vertex_properties_1_1_directory_properties.html',1,'ChimeraTK::Model::VertexProperties']]],
+  ['directoryproxy_15',['DirectoryProxy',['../class_chimera_t_k_1_1_model_1_1_directory_proxy.html',1,'ChimeraTK::Model']]],
+  ['divider_16',['Divider',['../struct_chimera_t_k_1_1_divider.html',1,'ChimeraTK']]],
+  ['dummyapplication_17',['DummyApplication',['../struct_dummy_application.html',1,'']]]
 ];

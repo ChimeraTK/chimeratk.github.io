@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('_device_manager_8cc_source.html',''); 
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="comment">// create node and add to list</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      rv.emplace_back(reg.getRegisterName(), <a class="code hl_variable" href="class_chimera_t_k_1_1_device_manager.html#adfebc8a396e579c58f7eaf759e4198d9">_deviceAliasOrCDD</a>, reg.getRegisterName(), updateMode, direction,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          reg.isReadable(), *valTyp, reg.getNumberOfElements());</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          reg.isReadable(), *valTyp, reg.getNumberOfElements(), reg.getUnit(), reg.getDescription());</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tag : reg.getTags()) {</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        rv.back().addTag(tag);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      }</div>
