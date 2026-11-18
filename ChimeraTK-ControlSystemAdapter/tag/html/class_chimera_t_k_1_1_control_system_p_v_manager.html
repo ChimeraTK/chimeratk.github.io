@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ChimeraTK-ControlSystemAdapter<span id="projectnumber">&#160;02.13.03</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter<span id="projectnumber">&#160;02.14.00</span>
    </div>
   </td>
  </tr>
@@ -133,9 +133,9 @@ std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method.  <br />
 <tr class="memitem:ad6dd14be82a2308353dce28bc16488a0" id="r_ad6dd14be82a2308353dce28bc16488a0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html#ad6dd14be82a2308353dce28bc16488a0">getAllProcessVariables</a> () const</td></tr>
 <tr class="memdesc:ad6dd14be82a2308353dce28bc16488a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector containing all process variables that are registered with this PV manager.  <br /></td></tr>
 <tr class="separator:ad6dd14be82a2308353dce28bc16488a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c27e3f64777255e4bbde1c32a4aa83" id="r_ad9c27e3f64777255e4bbde1c32a4aa83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html#ad9c27e3f64777255e4bbde1c32a4aa83">enablePersistentDataStorage</a> (unsigned int writeInterval=<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a>)</td></tr>
-<tr class="memdesc:ad9c27e3f64777255e4bbde1c32a4aa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the persistent data storage system provided by the ControlSystemAdapter.  <br /></td></tr>
-<tr class="separator:ad9c27e3f64777255e4bbde1c32a4aa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa281272ce61c589d399661f7f50b754" id="r_afa281272ce61c589d399661f7f50b754"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html#afa281272ce61c589d399661f7f50b754">enablePersistentDataStorage</a> (const std::set&lt; std::string &gt; &amp;unmappedVariables={}, unsigned int writeInterval=<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a>)</td></tr>
+<tr class="memdesc:afa281272ce61c589d399661f7f50b754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the persistent data storage system provided by the ControlSystemAdapter.  <br /></td></tr>
+<tr class="separator:afa281272ce61c589d399661f7f50b754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -170,34 +170,42 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad9c27e3f64777255e4bbde1c32a4aa83" name="ad9c27e3f64777255e4bbde1c32a4aa83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9c27e3f64777255e4bbde1c32a4aa83">&#9670;&#160;</a></span>enablePersistentDataStorage()</h2>
+<a id="afa281272ce61c589d399661f7f50b754" name="afa281272ce61c589d399661f7f50b754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa281272ce61c589d399661f7f50b754">&#9670;&#160;</a></span>enablePersistentDataStorage()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ChimeraTK::ControlSystemPVManager::enablePersistentDataStorage </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>writeInterval</em> = <code><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a></code></td><td>)</td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unmappedVariables</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>writeInterval</em> = <code><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Enable the persistent data storage system provided by the ControlSystemAdapter. </p>
-<p>This function requires an existing instance of an <a class="el" href="class_chimera_t_k_1_1_application_base.html" title="Base class for applications.">ApplicationBase</a> class. You can specify the write interval in seconds. </p>
+<p>This function requires an existing instance of an <a class="el" href="class_chimera_t_k_1_1_application_base.html" title="Base class for applications.">ApplicationBase</a> class. You can specify the write interval in seconds. This function reads persistent data from the application's persistent data storage file if available. This function must be called before running the application. Can be called before or after initialise(). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unmappedVariables</td><td>A set of process variable names corresponding to PVs that are not used in this application instance and are optimised out by calling <code>optimiseUnmappedVariables(unmappedVariables)</code>. </td></tr>
+    <tr><td class="paramname">writeInterval</td><td>The interval in seconds at which the persistent data storage should be written. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00112">112</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8cc_source.html#l00027">27</a> of file <a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +226,7 @@ Friends</h2></td></tr>
 
 <p>Returns a vector containing all process variables that are registered with this PV manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8cc_source.html#l00019">19</a> of file <a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8cc_source.html#l00015">15</a> of file <a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -247,7 +255,7 @@ ChimeraTK::RegisterPath&amp;, const std::vector&lt;T&gt;&amp;, const std::string
 std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method. </p>
 <p>Throws logic_error if there is no process scalar or array with the specified name. Also throws a logic_error if there is a process scalar or array with the specified name but its type does not match. </p>
 
-<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00134">134</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00135">135</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
 
 </div>
 </div>
@@ -340,8 +348,8 @@ std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method. </p>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/scratch/dragon/sources/ChimeraTK-ControlSystemAdapter/include/ChimeraTK/ControlSystemAdapter/<a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a></li>
-<li>/scratch/dragon/sources/ChimeraTK-ControlSystemAdapter/src/<a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a></li>
+<li>include/ChimeraTK/ControlSystemAdapter/<a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a></li>
+<li>src/<a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
