@@ -39,6 +39,7 @@ var dir_cd2eacd0d4a0b1b44be2af10e62d9e9e =
     [ "testMappedImage.cc", "test_mapped_image_8cc.html", "test_mapped_image_8cc" ],
     [ "testMathPluginDataValidity.cpp", "test_math_plugin_data_validity_8cpp.html", "test_math_plugin_data_validity_8cpp" ],
     [ "testMultiplexedDataAccesor.cpp", "test_multiplexed_data_accesor_8cpp.html", "test_multiplexed_data_accesor_8cpp" ],
+    [ "testMuxedInterruptDistributorFactory.cpp", "test_muxed_interrupt_distributor_factory_8cpp.html", "test_muxed_interrupt_distributor_factory_8cpp" ],
     [ "testNDRegisterAccessorDecorator.cpp", "test_n_d_register_accessor_decorator_8cpp.html", "test_n_d_register_accessor_decorator_8cpp" ],
     [ "testNumericAddressedBackendRegisterAccessor.cpp", "test_numeric_addressed_backend_register_accessor_8cpp.html", "test_numeric_addressed_backend_register_accessor_8cpp" ],
     [ "testNumericAddressedBackendUnified.cpp", "test_numeric_addressed_backend_unified_8cpp.html", "test_numeric_addressed_backend_unified_8cpp" ],

@@ -91,6 +91,7 @@ var NAVTREE =
       ] ],
       [ "Advanced features", "jmap.html#jmap_advanced", [
         [ "Interrupts", "jmap.html#jmap_interrupts", null ],
+        [ "Interrupts derived from the ISR bit fields of an INTC controller", "jmap.html#jmap_interrupts_isr", null ],
         [ "2D multiplexed registers", "jmap.html#jmap_2d", [
           [ "Channel slices", "jmap.html#jmap_channel_slices", null ],
           [ "Channel bit fields", "jmap.html#jmap_channel_bitfields", null ],
@@ -141,11 +142,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_2xdma__backend.html", [
-      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md63", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md64", [
-        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md65", null ],
-        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md66", null ],
-        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md67", null ]
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md74", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md75", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md76", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md77", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md78", null ]
       ] ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -208,6 +209,19 @@ var NAVTREE =
           [ "Alternatives considered", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html#autotoc_md44", null ]
         ] ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html#autotoc_md45", null ]
+      ] ],
+      [ "CR-019: Implicit interrupt registers from INTC ISR bit fields", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md47", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md48", [
+          [ "NumericAddressedRegisterCatalogue (modified)", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md49", null ],
+          [ "async::MuxedInterruptDistributorFactory (modified)", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md50", null ],
+          [ "async::GenericMuxedInterruptDistributor (modified)", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md51", null ],
+          [ "getInterruptControllerNameAndDescription (new)", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md52", null ],
+          [ "detail::InterruptHandlerEntry (modified)", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md53", null ],
+          [ "detail::JsonMapFileParser::Imp (modified)", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md54", null ],
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md55", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md56", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -266,31 +280,31 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a1a2e912ef220ceb5908297eeecfaaaa2",
 "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6b020ac5ae848f98a0220c858d7808e7",
 "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad74a9f9537e1ccf81800bf4e43d75b72",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a116fb9385221c136bd21a43bea588761",
-"class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a84485d301728f790966e6b73962e7e2c",
-"class_chimera_t_k_1_1_register_path.html#a44e4fd08b7637ad39b0e01e0437f286c",
-"class_chimera_t_k_1_1_subdevice_register_accessor.html#a6af895f9fc7fe4178918cadfbe53ca13",
-"class_chimera_t_k_1_1_transfer_element_abstractor.html#a11934cb06f61290f398e22428b26a005",
-"class_chimera_t_k_1_1_two_d_register_accessor.html#ab786e9e4392f47d81c99e15c1c6eba51",
-"class_chimera_t_k_1_1_unified_backend_test.html#a7e5530200a3fe569ee4756fa965fbd05",
-"class_chimera_t_k_1_1async_1_1_data_consistency_key.html#aa36752b303d1afb643f1acc912711467",
-"class_chimera_t_k_1_1async_1_1_sub_domain.html#a2fe1b7eee8f5915111bfa72eb46d83cb",
-"class_device_info_map_test.html#a7f68dbb088bc7e3184293b74fba0c2eb",
-"dir_dcf86e23dc795b3ef81504a4f21b22a2.html",
-"md_doc_2change-requests_2_c_r-003-bit-ranges-in-named-channels.html#autotoc_md13",
-"namespace_chimera_t_k_1_1async.html#a3089c365fce6a50a562b7b38549fa36baec45f766e5f60696cb27893cc827ea43",
-"struct_array_reg_target.html#a495c35c8aa22b2044754c8a1f3dc0c8c",
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html",
-"struct_chimera_t_k_1_1_opaque_struct_header.html#a8f29e02d50a38c0ae69c14912f710b36",
-"struct_chimera_t_k_1_1async_1_1_polled_async_variable.html",
-"struct_integers__signed32__async.html#af7bb921c7cb8d7b25cdf942990655343",
-"struct_named_channel_slice3.html#a933f53d03350267ec77d674f40cc1db9",
-"struct_reg_single_word_scaled___r.html#a761212e4d38a43b9be4fbb4aee1a50bf",
-"struct_sixteen_bit.html#a97b5aedadfb0d0432c058f09b990ff56",
-"test_async_var_and_hierarchical_interrupts_unified_8cpp.html#a9f5533e72ee880d6d818844f51879211",
-"test_json_map_file_parser_8cpp_source.html",
-"test_pcie_backend_8cpp.html#a666a688be4897906a5a2e1ad2b6aec78",
-"test_transfer_element_8cpp.html#a4cb80e1976be3c2e16206f4c6d8b9465"
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html",
+"class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a6f92c6c1b0b519bcc76cd27a6b3a3909",
+"class_chimera_t_k_1_1_register_path.html#a1d5ac815337901eddc118e3fb41a4104",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#a632ff866203bf56bf56e87daccd2da07",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html",
+"class_chimera_t_k_1_1_two_d_register_accessor.html#a661ec82f0a471589c0d9509754a3bf40",
+"class_chimera_t_k_1_1_unified_backend_test.html#a7cbeaffc7a70b33d444c59af4ac20f55",
+"class_chimera_t_k_1_1async_1_1_data_consistency_key.html#a947c92c4328b5a17697a2160783b530c",
+"class_chimera_t_k_1_1async_1_1_sub_domain.html#a057ecf736f834f5435fe017f6f196991",
+"class_device_info_map_test.html",
+"dir_c43399273dde5a354e97b8c2b90f7e9b.html",
+"md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html",
+"namespace_chimera_t_k_1_1async.html#a0f3dafe1b42fe409efff2b3f7290aabb",
+"struct_array_bit_range_low.html#a683ac6a30b5ea49b1b0210e77e86ca24",
+"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ace81d4a490d4fb40ebc7bec8ea70db16",
+"struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html",
+"struct_chimera_t_k_1_1async_1_1_async_variable.html#ae200b998466cf19a6fedb953f43873da",
+"struct_integers__signed32.html#a752f586bffff465d1fb0bbd81b2b87fa",
+"struct_named_channel_slice0.html#a1767c410546b8bc7503f0f2f5cfab2de",
+"struct_reg_single_word.html#afbb1f603428f4459588c40331dd43f7f",
+"struct_short_raw__fixed_point16__8u.html#aaace8f250609d61f4428df5abf49a4d3",
+"structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#aef4f2a23c78c57e87f7d0a4d44adfc83",
+"test_json_map_file_parser_8cpp.html#a1179133b51814d08e7f03835621c5831",
+"test_numeric_addressing_syntax_8cpp.html#a2768e4195fd750226bf0a3b3a8c12f90",
+"test_subdevice_backend_8cpp.html#ad1c446a6ea36ef99e90565f264520329"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

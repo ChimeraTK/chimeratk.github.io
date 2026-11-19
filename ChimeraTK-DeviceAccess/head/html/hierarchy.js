@@ -143,6 +143,7 @@ var hierarchy =
     [ "ChimeraTK::const_RegisterCatalogueImplIterator", "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html", [
       [ "ChimeraTK::const_BackendRegisterCatalogueImplIterator< BackendRegisterInfo >", "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html", null ]
     ] ],
+    [ "ChimeraTK::async::MuxedInterruptDistributorFactory::ControllerTypeRecord", "struct_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory_1_1_controller_type_record.html", null ],
     [ "ChimeraTK::RawConverter::Converter< UserType, RawType, sc, fc, isSigned >", "class_chimera_t_k_1_1_raw_converter_1_1_converter.html", null ],
     [ "ChimeraTK::RawConverter::Converter< UserType, RawType, SignificantBitsCase::generic, FractionalCase::integer, false >", "class_chimera_t_k_1_1_raw_converter_1_1_converter_3_01_user_type_00_01_raw_type_00_01_significan5cef306f4e9d6c9540635b48a1ffdc7a.html", null ],
     [ "ChimeraTK::RawConverter::ConverterLoopHelper", "class_chimera_t_k_1_1_raw_converter_1_1_converter_loop_helper.html", [

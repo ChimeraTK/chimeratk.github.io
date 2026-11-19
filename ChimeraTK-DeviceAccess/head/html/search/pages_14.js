@@ -9,8 +9,9 @@ var searchData=
   ['register_20accessors_6',['register accessors',['../accessor2d.html',1,'2D Register Accessors'],['../accessor1d.html',1,'Multi Value Registers (1D Register Accessors)']]],
   ['registers_7',['CR-004: Tests for data consistency keys in double-buffered registers',['../md_doc_2change-requests_2_c_r-004-data-consistency-keys-in-double-buffered-registers.html',1,'change_requests']]],
   ['registers_201d_20register_20accessors_8',['Multi Value Registers (1D Register Accessors)',['../accessor1d.html',1,'']]],
-  ['registers_20verification_9',['CR-001: Interrupt-driven reads on double-buffered registers (verification)',['../md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html',1,'change_requests']]],
-  ['registers_20without_20a_20map_20file_10',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]],
-  ['requests_11',['Change Requests',['../change_requests.html',1,'']]],
-  ['reset_20connection_12',['CR-009: Rebot connection close must not throw on a reset connection',['../md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html',1,'change_requests']]]
+  ['registers_20from_20intc_20isr_20bit_20fields_9',['CR-019: Implicit interrupt registers from INTC ISR bit fields',['../md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html',1,'change_requests']]],
+  ['registers_20verification_10',['CR-001: Interrupt-driven reads on double-buffered registers (verification)',['../md_doc_2change-requests_2_c_r-001-interrupts-with-double-buffering.html',1,'change_requests']]],
+  ['registers_20without_20a_20map_20file_11',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]],
+  ['requests_12',['Change Requests',['../change_requests.html',1,'']]],
+  ['reset_20connection_13',['CR-009: Rebot connection close must not throw on a reset connection',['../md_doc_2change-requests_2_c_r-009-rebot-connection-close-on-reset.html',1,'change_requests']]]
 ];

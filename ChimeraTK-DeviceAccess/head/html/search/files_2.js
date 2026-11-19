@@ -18,8 +18,9 @@ var searchData=
   ['cr_2d011_2dgrouped_2ddemultiplexing_2dof_2dmuxed_2dchannel_2dslices_2emd_15',['CR-011-grouped-demultiplexing-of-muxed-channel-slices.md',['../_c_r-011-grouped-demultiplexing-of-muxed-channel-slices_8md.html',1,'']]],
   ['cr_2d012_2dbackend_2dspecific_2dinterrupt_2dhandler_2dentries_2emd_16',['CR-012-backend-specific-interrupt-handler-entries.md',['../_c_r-012-backend-specific-interrupt-handler-entries_8md.html',1,'']]],
   ['cr_2d017_2dconfine_2dboost_2dprogram_2doptions_2dto_2dtool_2emd_17',['CR-017-confine-boost-program-options-to-tool.md',['../_c_r-017-confine-boost-program-options-to-tool_8md.html',1,'']]],
-  ['ctrlintf_2ecc_18',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
-  ['ctrlintf_2eh_19',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
-  ['custom_5fbackends_2edox_20',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
-  ['custombackend_2ecc_21',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]]
+  ['cr_2d019_2dinterrupt_2dregisters_2dfrom_2disr_2dbit_2dfields_2emd_18',['CR-019-interrupt-registers-from-isr-bit-fields.md',['../_c_r-019-interrupt-registers-from-isr-bit-fields_8md.html',1,'']]],
+  ['ctrlintf_2ecc_19',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
+  ['ctrlintf_2eh_20',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
+  ['custom_5fbackends_2edox_21',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
+  ['custombackend_2ecc_22',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]]
 ];
