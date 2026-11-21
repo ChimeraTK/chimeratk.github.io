@@ -142,11 +142,11 @@ var NAVTREE =
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "md_doc_2xdma__backend.html", [
-      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md74", null ],
-      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md75", [
-        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md76", null ],
-        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md77", null ],
-        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md78", null ]
+      [ "Prerequisites", "md_doc_2xdma__backend.html#autotoc_md89", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_2xdma__backend.html#autotoc_md90", [
+        [ "AXI-Lite Master interface", "md_doc_2xdma__backend.html#autotoc_md91", null ],
+        [ "AXI MM DMA interface", "md_doc_2xdma__backend.html#autotoc_md92", null ],
+        [ "Interrupt lines (events)", "md_doc_2xdma__backend.html#autotoc_md93", null ]
       ] ]
     ] ],
     [ "Change Requests", "change_requests.html", [
@@ -222,6 +222,23 @@ var NAVTREE =
           [ "Alternatives considered", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md55", null ]
         ] ],
         [ "Test plan", "md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html#autotoc_md56", null ]
+      ] ],
+      [ "CR-020: Register-name references in triggeredByInterrupt", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html", [
+        [ "Requirements", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md58", null ],
+        [ "Specifications", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md59", [
+          [ "doc/jmapFormat.dox (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md60", null ],
+          [ "schemas/jmap.schema.json (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md61", null ],
+          [ "NumericAddressedRegisterInfo (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md62", null ],
+          [ "NumericAddressedRegisterCatalogue (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md63", null ],
+          [ "NumericAddressedBackend (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md64", null ],
+          [ "detail::JsonAddressSpaceEntry (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md65", null ],
+          [ "detail::JsonMapFileParser::Imp (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md66", null ],
+          [ "TraditionalMapFileParser (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md67", null ],
+          [ "nlohmann::adl_serializer (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md68", null ],
+          [ "async::GenericMuxedInterruptDistributor (modified)", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md69", null ],
+          [ "Alternatives considered", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md70", null ]
+        ] ],
+        [ "Test plan", "md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html#autotoc_md71", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -280,7 +297,7 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a1a2e912ef220ceb5908297eeecfaaaa2",
 "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6b020ac5ae848f98a0220c858d7808e7",
 "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad74a9f9537e1ccf81800bf4e43d75b72",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html",
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1060a38ef23dfafd5bd0e1eff5800aed",
 "class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a6f92c6c1b0b519bcc76cd27a6b3a3909",
 "class_chimera_t_k_1_1_register_path.html#a1d5ac815337901eddc118e3fb41a4104",
 "class_chimera_t_k_1_1_subdevice_register_accessor.html#a632ff866203bf56bf56e87daccd2da07",
@@ -292,19 +309,19 @@ var NAVTREEINDEX =
 "class_device_info_map_test.html",
 "dir_c43399273dde5a354e97b8c2b90f7e9b.html",
 "md_doc_2change-requests_2_c_r-002-interrupt-driven-double-buffered-named-channel.html",
-"namespace_chimera_t_k_1_1async.html#a0f3dafe1b42fe409efff2b3f7290aabb",
-"struct_array_bit_range_low.html#a683ac6a30b5ea49b1b0210e77e86ca24",
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ace81d4a490d4fb40ebc7bec8ea70db16",
-"struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_double_buffer_info.html",
-"struct_chimera_t_k_1_1async_1_1_async_variable.html#ae200b998466cf19a6fedb953f43873da",
-"struct_integers__signed32.html#a752f586bffff465d1fb0bbd81b2b87fa",
-"struct_named_channel_slice0.html#a1767c410546b8bc7503f0f2f5cfab2de",
-"struct_reg_single_word.html#afbb1f603428f4459588c40331dd43f7f",
-"struct_short_raw__fixed_point16__8u.html#aaace8f250609d61f4428df5abf49a4d3",
-"structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#aef4f2a23c78c57e87f7d0a4d44adfc83",
-"test_json_map_file_parser_8cpp.html#a1179133b51814d08e7f03835621c5831",
-"test_numeric_addressing_syntax_8cpp.html#a2768e4195fd750226bf0a3b3a8c12f90",
-"test_subdevice_backend_8cpp.html#ad1c446a6ea36ef99e90565f264520329"
+"namespace_chimera_t_k_1_1_utilities.html#a25a0748d411f914029fd961f040bd2ee",
+"struct_area_type.html#af07f821d2eecf55f0317fbfae9371336",
+"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a39c613419eebb2f29590fecded7a96d0",
+"struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a55dd8ac78d7884542eed8cd9e73e3631",
+"struct_chimera_t_k_1_1async_1_1_async_variable.html",
+"struct_icr_writable_test_fixture.html#aa6c93c206cb8e1604e308423183c0e00",
+"struct_my_register1.html#a1ee98ca7525c3efb45acd4ec7246f41a",
+"struct_reg_part_of_area.html#ad15fbb10ebfe677e9b293fc0888ea8dd",
+"struct_short_raw__base.html#aef2f5969fdb1a1622cb7ebeb5efd938a",
+"structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html",
+"test_grouped_demultiplexing_8cpp.html#a81f3d4d7335b958a7b6b8b932cb92a77",
+"test_numeric_addressed_backend_register_accessor_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
+"test_sub_array_accessor_decorator_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

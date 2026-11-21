@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_numeric_addresse
 </div><!--header-->
 <div class="contents">
 
+<p>Catalogue of the registers of an address-based backend, holding the interrupt indexes beside them.  
+ <a href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::NumericAddressedRegisterCatalogue:</div>
@@ -125,11 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a239c769476321072af9e353e5365cc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18074459c221afc7ae46692fd2da2eff" id="r_a18074459c221afc7ae46692fd2da2eff"><td class="memItemLeft" align="right" valign="top">const std::set&lt; std::vector&lt; size_t &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a18074459c221afc7ae46692fd2da2eff">getListOfInterrupts</a> () const</td></tr>
 <tr class="separator:a18074459c221afc7ae46692fd2da2eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ddf8c956e3c6036ceb59d530ed9d16" id="r_a23ddf8c956e3c6036ceb59d530ed9d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a23ddf8c956e3c6036ceb59d530ed9d16">addRegister</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;registerInfo)</td></tr>
-<tr class="separator:a23ddf8c956e3c6036ceb59d530ed9d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a98a663647c8a7d2fc76eace35534d" id="r_af7a98a663647c8a7d2fc76eace35534d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#af7a98a663647c8a7d2fc76eace35534d">modifyRegister</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;registerInfo)</td></tr>
-<tr class="memdesc:af7a98a663647c8a7d2fc76eace35534d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the register information for the matching register, keeping the insertion order of the iterated catalogue.  <br /></td></tr>
-<tr class="separator:af7a98a663647c8a7d2fc76eace35534d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332b8f76003dc3f976a81ef43931304f" id="r_a332b8f76003dc3f976a81ef43931304f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a332b8f76003dc3f976a81ef43931304f">finaliseInterruptBookkeeping</a> ()</td></tr>
+<tr class="memdesc:a332b8f76003dc3f976a81ef43931304f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the interrupt bookkeeping from the registers currently in the catalogue: first every register-name reference in 'interruptId' is resolved to the numeric id it names, then the interrupt id of every register with interrupt access goes to _listOfInterrupts and its canonical interrupt paths !I, !I:M, ... go to _canonicalInterrupts.  <br /></td></tr>
+<tr class="separator:a332b8f76003dc3f976a81ef43931304f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8bdc1e4daee7a1fa05bbc73ed5809a2" id="r_ab8bdc1e4daee7a1fa05bbc73ed5809a2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html">BackendRegisterCatalogueBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#ab8bdc1e4daee7a1fa05bbc73ed5809a2">clone</a> () const override</td></tr>
 <tr class="memdesc:ab8bdc1e4daee7a1fa05bbc73ed5809a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create deep copy of the catalogue.  <br /></td></tr>
 <tr class="separator:ab8bdc1e4daee7a1fa05bbc73ed5809a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +203,6 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2d68fb3c07cb8e7f7b3f71957be0f5c0" id="r_a2d68fb3c07cb8e7f7b3f71957be0f5c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a2d68fb3c07cb8e7f7b3f71957be0f5c0">fillFromThis</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html">NumericAddressedRegisterCatalogue</a> *target) const</td></tr>
 <tr class="separator:a2d68fb3c07cb8e7f7b3f71957be0f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0682dde7971ea2e1493cca5fdf127e0a" id="r_a0682dde7971ea2e1493cca5fdf127e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a0682dde7971ea2e1493cca5fdf127e0a">addInterruptBookkeeping</a> (const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;registerInfo)</td></tr>
-<tr class="memdesc:a0682dde7971ea2e1493cca5fdf127e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the interrupt bookkeeping for a register with interrupt access: the interrupt id to _listOfInterrupts and the canonical interrupt paths !I, !I:M, ... to _canonicalInterrupts.  <br /></td></tr>
-<tr class="separator:a0682dde7971ea2e1493cca5fdf127e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_backend_register_catalogue"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_backend_register_catalogue')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html">ChimeraTK::BackendRegisterCatalogue&lt; NumericAddressedRegisterInfo &gt;</a></td></tr>
 <tr class="memitem:a30509122064e5bb25acf3b34625fb719 inherit pro_methods_class_chimera_t_k_1_1_backend_register_catalogue" id="r_a30509122064e5bb25acf3b34625fb719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a30509122064e5bb25acf3b34625fb719">fillFromThis</a> (<a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html">BackendRegisterCatalogue</a>&lt; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &gt; *target) const</td></tr>
 <tr class="memdesc:a30509122064e5bb25acf3b34625fb719 inherit pro_methods_class_chimera_t_k_1_1_backend_register_catalogue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for clone functions.  <br /></td></tr>
@@ -223,8 +221,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af9ede1ca8ae53e73ff90243f9f80f03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00175">175</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
+<div class="textblock"><p>Catalogue of the registers of an address-based backend, holding the interrupt indexes beside them. </p>
+<p>A filled catalogue has to be finalised once with <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a332b8f76003dc3f976a81ef43931304f" title="Fill the interrupt bookkeeping from the registers currently in the catalogue: first every register-na...">finaliseInterruptBookkeeping()</a> before it is used, after the last <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a2761d0dccddca7293a2ac7a5ce8345fc" title="Add register information to the catalogue.">addRegister()</a>, <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a14f25763ec5e392648e28758de1dc3af" title="Replaces the register information for the matching register.">modifyRegister()</a> or <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a2ecd309e4a0a8824ffc187d668915166" title="Remove register as identified by the given name from the catalogue.">removeRegister()</a>, which resolves every register-name reference and builds both interrupt indexes. Until then the interrupt list and the canonical interrupt paths are not built. </p>
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00206">206</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a10edccb060ec6e2807905a2bbca221f5" name="a10edccb060ec6e2807905a2bbca221f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10edccb060ec6e2807905a2bbca221f5">&#9670;&#160;</a></span>addDataConsistencyRealm()</h2>
@@ -252,58 +252,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00355">355</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
-
-</div>
-</div>
-<a id="a0682dde7971ea2e1493cca5fdf127e0a" name="a0682dde7971ea2e1493cca5fdf127e0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0682dde7971ea2e1493cca5fdf127e0a">&#9670;&#160;</a></span>addInterruptBookkeeping()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::NumericAddressedRegisterCatalogue::addInterruptBookkeeping </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>registerInfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds the interrupt bookkeeping for a register with interrupt access: the interrupt id to _listOfInterrupts and the canonical interrupt paths !I, !I:M, ... to _canonicalInterrupts. </p>
-<p>Does nothing for a register without interrupt access. The insertion is idempotent, so two registers may share one interrupt id. </p>
-
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00303">303</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
-
-</div>
-</div>
-<a id="a23ddf8c956e3c6036ceb59d530ed9d16" name="a23ddf8c956e3c6036ceb59d530ed9d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ddf8c956e3c6036ceb59d530ed9d16">&#9670;&#160;</a></span>addRegister()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::NumericAddressedRegisterCatalogue::addRegister </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>registerInfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00323">323</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00431">431</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -335,7 +284,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a743db6b2a3582c172e884552b90dca9b">ChimeraTK::BackendRegisterCatalogue&lt; NumericAddressedRegisterInfo &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00337">337</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00413">413</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -363,7 +312,30 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00346">346</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00422">422</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+
+</div>
+</div>
+<a id="a332b8f76003dc3f976a81ef43931304f" name="a332b8f76003dc3f976a81ef43931304f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332b8f76003dc3f976a81ef43931304f">&#9670;&#160;</a></span>finaliseInterruptBookkeeping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::NumericAddressedRegisterCatalogue::finaliseInterruptBookkeeping </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill the interrupt bookkeeping from the registers currently in the catalogue: first every register-name reference in 'interruptId' is resolved to the numeric id it names, then the interrupt id of every register with interrupt access goes to _listOfInterrupts and its canonical interrupt paths !I, !I:M, ... go to _canonicalInterrupts. </p>
+<p>It has to be called once after the catalogue has been filled, i.e. after the last <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a2761d0dccddca7293a2ac7a5ce8345fc" title="Add register information to the catalogue.">addRegister()</a>, <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a14f25763ec5e392648e28758de1dc3af" title="Replaces the register information for the matching register.">modifyRegister()</a> and <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a2ecd309e4a0a8824ffc187d668915166" title="Remove register as identified by the given name from the catalogue.">removeRegister()</a>. Both indexes are rebuilt from scratch, so a repeated call is harmless and no completion flag is needed; <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#ab8bdc1e4daee7a1fa05bbc73ed5809a2" title="Create deep copy of the catalogue.">clone()</a> copies both indexes, so a clone is already finalised.</p>
+<p>The incomplete state is reported as a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured.">ChimeraTK::logic_error</a> naming the register: an interrupt register with an absent or empty id. A register-name reference cannot reach that point, since the resolution pass settles or rejects every reference. </p>
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00320">320</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -396,7 +368,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a7cb1215cc24a3ced17d075eec33974e9">ChimeraTK::BackendRegisterCatalogue&lt; NumericAddressedRegisterInfo &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00205">205</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00221">221</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -429,7 +401,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a7166916ab6d5fa0e314f7b44bb241ed7">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00380">380</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00456">456</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -462,7 +434,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue_base.html#a0be4ed274ec757c4a4f04958794a66e9">ChimeraTK::BackendRegisterCatalogueBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00362">362</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00438">438</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -481,7 +453,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00297">297</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00314">314</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -514,30 +486,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html#a98e4991be24f5adca1bdc83262f5c9ef">ChimeraTK::BackendRegisterCatalogue&lt; NumericAddressedRegisterInfo &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00284">284</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
-
-</div>
-</div>
-<a id="af7a98a663647c8a7d2fc76eace35534d" name="af7a98a663647c8a7d2fc76eace35534d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7a98a663647c8a7d2fc76eace35534d">&#9670;&#160;</a></span>modifyRegister()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::NumericAddressedRegisterCatalogue::modifyRegister </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_info.html">NumericAddressedRegisterInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>registerInfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Replaces the register information for the matching register, keeping the insertion order of the iterated catalogue. </p>
-<p>In addition to the base class behaviour, the derived interrupt bookkeeping is updated, so a register modified to interrupt access becomes part of <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#a18074459c221afc7ae46692fd2da2eff">getListOfInterrupts()</a> and is reachable through its canonical interrupt path. </p>
-
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00330">330</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html#l00301">301</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8cc_source.html">NumericAddressedRegisterCatalogue.cc</a>.</p>
 
 </div>
 </div>
@@ -567,7 +516,7 @@ Protected Attributes</h2></td></tr>
 <p>Example: For the canonical interrupt <code>!3:5:9</code> there are is an interrupt <code>!3:5</code> and the primary interrupt <code>!3</code>.</p>
 <p>It is filled with one entry per prefix of every interrupt id, so a canonical interrupt path resolves to the (hierarchical) interrupt id it names. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00231">231</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00259">259</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -593,7 +542,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Map of data consistency key register paths to realm names. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00236">236</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00264">264</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +569,7 @@ Protected Attributes</h2></td></tr>
 <p>set of interrupt IDs. </p>
 <p>Each interrupt ID is a vector of (hierarchical) interrupt numbers. (Use a vector because it's the easiest container, and set because it ensures that each entry is there only once). </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00217">217</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html#l00245">245</a> of file <a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>.</p>
 
 </div>
 </div>

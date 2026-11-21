@@ -49,6 +49,7 @@ var test_generic_muxed_interrupt_distributor_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#a561c26bfd90767bcea8846bb2df55555", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#a060ff34a25d52c92d81866a70e528365", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#abac814792dda20318f468d0e676069e0", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#ac775d9520d9f7c2d4693750a25ea741d", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#a38a2ec569b33ee738cdd45ab6ab512b2", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#af98cd4ab778d37c241ed8d8eab255a37", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_generic_muxed_interrupt_distributor_8cpp.html#a5a79157a2c2d0627600c59f0ba7c3046", null ],

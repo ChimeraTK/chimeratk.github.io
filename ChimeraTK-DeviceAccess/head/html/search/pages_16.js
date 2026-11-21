@@ -17,5 +17,6 @@ var searchData=
   ['tool_14',['CR-017: Confine Boost program_options to the device-to-jmap tool',['../md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html',1,'change_requests']]],
   ['tool_20to_20write_20a_20jmap_20file_20from_20a_20device_20catalogue_15',['CR-005: Tool to write a jmap file from a device catalogue',['../md_doc_2change-requests_2_c_r-005-device-to-jmap.html',1,'change_requests']]],
   ['transferelement_20v1_202_16',['Technical specification: TransferElement V1.2',['../spec__transfer_element.html',1,'']]],
-  ['type_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_17',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
+  ['triggeredbyinterrupt_17',['CR-020: Register-name references in triggeredByInterrupt',['../md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html',1,'change_requests']]],
+  ['type_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata_18',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
 ];

@@ -97,19 +97,26 @@ $(document).ready(function(){initNavTree('structnlohmann_1_1adl__serializer_3_01
 </div><!--header-->
 <div class="contents">
 
+<p>Mapping of std::optional to JSON.  
+ <a href="structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a09ba0101fa2f4ca8748b0e6b70937945" id="r_a09ba0101fa2f4ca8748b0e6b70937945"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html#a09ba0101fa2f4ca8748b0e6b70937945">to_json</a> (<a class="el" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> &amp;j, const std::optional&lt; T &gt; &amp;opt)</td></tr>
+<tr class="memdesc:a09ba0101fa2f4ca8748b0e6b70937945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an optional is written to JSON: writes the contained value, or null when it is empty.  <br /></td></tr>
 <tr class="separator:a09ba0101fa2f4ca8748b0e6b70937945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4203029ef3de16b53c7b88fcdf4d4fe" id="r_af4203029ef3de16b53c7b88fcdf4d4fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html#af4203029ef3de16b53c7b88fcdf4d4fe">from_json</a> (const <a class="el" href="_muxed_interrupt_distributor_8cc.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> &amp;j, std::optional&lt; T &gt; &amp;opt)</td></tr>
+<tr class="memdesc:af4203029ef3de16b53c7b88fcdf4d4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an optional is read from JSON: a null gives an empty optional, any other value the contained value.  <br /></td></tr>
 <tr class="separator:af4203029ef3de16b53c7b88fcdf4d4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-struct nlohmann::adl_serializer&lt; std::optional&lt; T &gt; &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_json_extensions_8h_source.html#l00012">12</a> of file <a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>.</p>
+struct nlohmann::adl_serializer&lt; std::optional&lt; T &gt; &gt;</div><p>Mapping of std::optional to JSON. </p>
+<p>nlohmann's template-specialisation lookup selects this specialisation for every std::optional serialised in a translation unit including this header. </p>
+
+<p class="definition">Definition at line <a class="el" href="_json_extensions_8h_source.html#l00019">19</a> of file <a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af4203029ef3de16b53c7b88fcdf4d4fe" name="af4203029ef3de16b53c7b88fcdf4d4fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4203029ef3de16b53c7b88fcdf4d4fe">&#9670;&#160;</a></span>from_json()</h2>
@@ -147,7 +154,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_json_extensions_8h_source.html#l00022">22</a> of file <a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>.</p>
+<p>Called when an optional is read from JSON: a null gives an empty optional, any other value the contained value. </p>
+
+<p class="definition">Definition at line <a class="el" href="_json_extensions_8h_source.html#l00035">35</a> of file <a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +196,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_json_extensions_8h_source.html#l00013">13</a> of file <a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>.</p>
+<p>Called when an optional is written to JSON: writes the contained value, or null when it is empty. </p>
+
+<p class="definition">Definition at line <a class="el" href="_json_extensions_8h_source.html#l00022">22</a> of file <a class="el" href="_json_extensions_8h_source.html">JsonExtensions.h</a>.</p>
 
 </div>
 </div>

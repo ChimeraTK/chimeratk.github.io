@@ -197,7 +197,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable the persistent data storage system provided by the ControlSystemAdapter. </p>
-<p>This function requires an existing instance of an <a class="el" href="class_chimera_t_k_1_1_application_base.html" title="Base class for applications.">ApplicationBase</a> class. You can specify the write interval in seconds. This function reads persistent data from the application's persistent data storage file if available. This function must be called before running the application. Can be called before or after initialise(). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function requires an existing instance of an <a class="el" href="class_chimera_t_k_1_1_application_base.html" title="Base class for applications.">ApplicationBase</a> class. You can specify the write interval in seconds. This function reads persistent data from the application's persistent data storage file if available. This function must be called after initialise() and before running the application. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unmappedVariables</td><td>A set of process variable names corresponding to PVs that are not used in this application instance and are optimised out by calling <code>optimiseUnmappedVariables(unmappedVariables)</code>. </td></tr>
     <tr><td class="paramname">writeInterval</td><td>The interval in seconds at which the persistent data storage should be written. </td></tr>

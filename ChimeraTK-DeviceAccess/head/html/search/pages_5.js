@@ -22,6 +22,7 @@ var searchData=
   ['cr_20012_3a_20backend_20specific_20interrupt_20handler_20entries_20in_20the_20jmap_20file_19',['CR-012: Backend-specific interrupt handler entries in the JMAP file',['../md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html',1,'change_requests']]],
   ['cr_20017_3a_20confine_20boost_20program_5foptions_20to_20the_20device_20to_20jmap_20tool_20',['CR-017: Confine Boost program_options to the device-to-jmap tool',['../md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html',1,'change_requests']]],
   ['cr_20019_3a_20implicit_20interrupt_20registers_20from_20intc_20isr_20bit_20fields_21',['CR-019: Implicit interrupt registers from INTC ISR bit fields',['../md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html',1,'change_requests']]],
-  ['creating_20custom_20backends_22',['Using and creating custom backends',['../custom_backends.html',1,'']]],
-  ['custom_20backends_23',['Using and creating custom backends',['../custom_backends.html',1,'']]]
+  ['cr_20020_3a_20register_20name_20references_20in_20triggeredbyinterrupt_22',['CR-020: Register-name references in triggeredByInterrupt',['../md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html',1,'change_requests']]],
+  ['creating_20custom_20backends_23',['Using and creating custom backends',['../custom_backends.html',1,'']]],
+  ['custom_20backends_24',['Using and creating custom backends',['../custom_backends.html',1,'']]]
 ];

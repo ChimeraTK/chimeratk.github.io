@@ -229,7 +229,8 @@ var annotated_dup =
       [ "XdmaIntfAbstract", "class_chimera_t_k_1_1_xdma_intf_abstract.html", "class_chimera_t_k_1_1_xdma_intf_abstract" ]
     ] ],
     [ "nlohmann", "namespacenlohmann.html", [
-      [ "adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ]
+      [ "adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ],
+      [ "adl_serializer< std::variant< Ts... > >", "structnlohmann_1_1adl__serializer_3_01std_1_1variant_3_01_ts_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "std", "namespacestd.html", [
       [ "formatter< ChimeraTK::VersionNumber, CharT >", "structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4.html", "structstd_1_1formatter_3_01_chimera_t_k_1_1_version_number_00_01_char_t_01_4" ],

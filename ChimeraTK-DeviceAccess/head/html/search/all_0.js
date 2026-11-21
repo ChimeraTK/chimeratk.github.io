@@ -12,5 +12,6 @@ var searchData=
   ['012_3a_20backend_20specific_20interrupt_20handler_20entries_20in_20the_20jmap_20file_9',['CR-012: Backend-specific interrupt handler entries in the JMAP file',['../md_doc_2change-requests_2_c_r-012-backend-specific-interrupt-handler-entries.html',1,'change_requests']]],
   ['017_3a_20confine_20boost_20program_5foptions_20to_20the_20device_20to_20jmap_20tool_10',['CR-017: Confine Boost program_options to the device-to-jmap tool',['../md_doc_2change-requests_2_c_r-017-confine-boost-program-options-to-tool.html',1,'change_requests']]],
   ['019_3a_20implicit_20interrupt_20registers_20from_20intc_20isr_20bit_20fields_11',['CR-019: Implicit interrupt registers from INTC ISR bit fields',['../md_doc_2change-requests_2_c_r-019-interrupt-registers-from-isr-bit-fields.html',1,'change_requests']]],
-  ['0wip_12',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]]
+  ['020_3a_20register_20name_20references_20in_20triggeredbyinterrupt_12',['CR-020: Register-name references in triggeredByInterrupt',['../md_doc_2change-requests_2_c_r-020-register-name-interrupt-references.html',1,'change_requests']]],
+  ['0wip_13',['Technical specification: Mapping of DataConsistencyKeys to VersionNumbers V0.0WIP',['../spec__data_consistency_key_mapping.html',1,'']]]
 ];

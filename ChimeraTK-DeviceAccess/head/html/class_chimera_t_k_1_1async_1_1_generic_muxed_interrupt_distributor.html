@@ -334,7 +334,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#a6314bfeaa0d20dc2eeb2ee8607f8cd8d">ChimeraTK::async::MuxedInterruptDistributor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00883">883</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00884">884</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor.html#a7d58960d6edcb9313f49b5ab4fd081d6">ChimeraTK::async::MuxedInterruptDistributor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00934">934</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00935">935</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Catalogue augmenter registered by <a class="el" href="class_chimera_t_k_1_1async_1_1_muxed_interrupt_distributor_factory.html">MuxedInterruptDistributorFactory</a> for the "INTC" controller type. </p>
-<p>It parses and validates the controller description, finds path / "ISR" in the catalogue and modifies each qualifying 1-bit child bit field in place into an interrupt register carrying the id [interruptId..., bit position]. </p>
+<p>It parses and validates the controller description, finds path / "ISR" in the catalogue and modifies each qualifying 1-bit child bit field in place into an interrupt register carrying the id [interruptId..., bit position].</p>
+<p>The interrupt indexes are built only by finaliseInterruptBookkeeping(), inside the catalogue that is finalised after the augmentation. An augmenter run on an already finalised catalogue leaves them stale. </p>
 
 <p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html#l00786">786</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8cc_source.html">GenericMuxedInterruptDistributor.cc</a>.</p>
 
@@ -782,7 +783,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00073">73</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00076">76</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +807,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00081">81</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00084">84</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +834,7 @@ Static Protected Attributes</h2></td></tr>
 <p>Set true by <a class="el" href="class_chimera_t_k_1_1async_1_1_generic_muxed_interrupt_distributor.html#aacd3c5ee45ed84f8b6b3c3e1ccadadd4" title="Handle gets called when a trigger comes in.">handle()</a> after each completed run. </p>
 <p>The watchdog atomically reads-and-clears it via exchange() each interval to detect a wedged/starved handler. </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00087">87</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00090">90</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +858,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00072">72</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00075">75</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -881,7 +882,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00071">71</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00074">74</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +906,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00077">77</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00080">80</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +930,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00076">76</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00079">79</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +954,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00070">70</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00073">73</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +978,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00075">75</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00078">78</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1002,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00078">78</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00081">81</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1026,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00083">83</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00086">86</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1050,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00080">80</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00083">83</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1074,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00094">94</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00097">97</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1100,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Set true once the watchdog has raised a device exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00090">90</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00093">93</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1126,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Watchdog polling/decision interval (experimental) </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00096">96</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00099">99</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1152,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Watchdog thread and its stop flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00093">93</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html#l00096">96</a> of file <a class="el" href="_generic_muxed_interrupt_distributor_8h_source.html">GenericMuxedInterruptDistributor.h</a>.</p>
 
 </div>
 </div>

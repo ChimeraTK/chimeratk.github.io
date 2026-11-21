@@ -47,6 +47,7 @@ var hierarchy =
     [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
     [ "nlohmann::adl_serializer< std::optional< T > >", "structnlohmann_1_1adl__serializer_3_01std_1_1optional_3_01_t_01_4_01_4.html", null ],
+    [ "nlohmann::adl_serializer< std::variant< Ts... > >", "structnlohmann_1_1adl__serializer_3_01std_1_1variant_3_01_ts_8_8_8_01_4_01_4.html", null ],
     [ "Argument", "struct_argument.html", null ],
     [ "AsciiData", "struct_ascii_data.html", null ],
     [ "AsyncDoubleBufferFixture", "class_async_double_buffer_fixture.html", null ],
