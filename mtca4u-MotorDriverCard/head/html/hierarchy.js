@@ -98,6 +98,7 @@ var hierarchy =
     [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", null ],
     [ "ChimeraTK::MotorDriver::StepperMotorFactory", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html", null ],
     [ "ChimeraTK::MotorDriver::StepperMotorParameters", "struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html", null ],
+    [ "StepperMotorRotaryTestFixture", "class_stepper_motor_rotary_test_fixture.html", null ],
     [ "StepperMotorUnitsConverter", "class_stepper_motor_units_converter.html", null ],
     [ "StepperMotorUnitsConveterTrivia", "class_stepper_motor_units_conveter_trivia.html", null ],
     [ "StepperMotorUnitsScalingConverter", "class_stepper_motor_units_scaling_converter.html", null ],

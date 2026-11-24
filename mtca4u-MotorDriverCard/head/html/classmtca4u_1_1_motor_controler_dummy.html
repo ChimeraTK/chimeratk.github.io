@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classmtca4u_1_1_motor_controler_dummy.
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classmtca4u_1_1_motor_controler_dummy-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mtca4u::MotorControlerDummy Class Reference</div></div>
@@ -116,6 +117,19 @@ $(document).ready(function(){initNavTree('classmtca4u_1_1_motor_controler_dummy.
 <div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_dummy__coll__graph.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad3a57fa19522485a30ab56d9f348d497" id="r_ad3a57fa19522485a30ab56d9f348d497"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497">ReferenceSwitchFailure</a> { <br />
+&#160;&#160;<a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ae1cf6c4bef9f9c20c4a804b6b1a21541">READ_WHILE_ENABLED</a>
+, <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497aaa4f436d1d9ba7947d2f530b2c81380f">DISABLE_POSITIVE</a>
+, <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497a40e45beb48ceaea1c31c9766a087393f">WRITE_POSITIVE_CALIBRATION</a>
+, <br />
+&#160;&#160;<a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ac5ac597d11ff4e289e2de4348b758d66">READ_HOMING_TARGET_TWICE</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad3a57fa19522485a30ab56d9f348d497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a829a90a7415f904a666b96f4b55ec272" id="r_a829a90a7415f904a666b96f4b55ec272"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a829a90a7415f904a666b96f4b55ec272">MotorControlerDummy</a> (unsigned int id)</td></tr>
@@ -244,6 +258,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc3b2e0fa9c30ea8a01103b2ca8539df" id="r_adc3b2e0fa9c30ea8a01103b2ca8539df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#adc3b2e0fa9c30ea8a01103b2ca8539df">simulateBlockedMotor</a> (bool state)</td></tr>
 <tr class="memdesc:adc3b2e0fa9c30ea8a01103b2ca8539df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the motor and do not move if true.  <br /></td></tr>
 <tr class="separator:adc3b2e0fa9c30ea8a01103b2ca8539df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080c509baec918b790051b1ccf1ae90f" id="r_a080c509baec918b790051b1ccf1ae90f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a080c509baec918b790051b1ccf1ae90f">failNextReferenceSwitchOperation</a> (<a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497">ReferenceSwitchFailure</a> failure)</td></tr>
+<tr class="separator:a080c509baec918b790051b1ccf1ae90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0fc56fbe2ea5d4689a30b39d69020d8" id="r_ad0fc56fbe2ea5d4689a30b39d69020d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad0fc56fbe2ea5d4689a30b39d69020d8">resetInternalStateToDefaults</a> ()</td></tr>
 <tr class="memdesc:ad0fc56fbe2ea5d4689a30b39d69020d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the following:  <br /></td></tr>
 <tr class="separator:ad0fc56fbe2ea5d4689a30b39d69020d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,7 +304,39 @@ Public Member Functions</h2></td></tr>
 <p>It emulates a real stepper motor with a hardware position and hardware end switches. The motion of the motor can be controlled with the additional functions in this class. </p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00018">18</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad3a57fa19522485a30ab56d9f348d497" name="ad3a57fa19522485a30ab56d9f348d497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a57fa19522485a30ab56d9f348d497">&#9670;&#160;</a></span>ReferenceSwitchFailure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497">mtca4u::MotorControlerDummy::ReferenceSwitchFailure</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3a57fa19522485a30ab56d9f348d497ab50339a10e1de285ac99d4c3990b8693" name="ad3a57fa19522485a30ab56d9f348d497ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3a57fa19522485a30ab56d9f348d497ae1cf6c4bef9f9c20c4a804b6b1a21541" name="ad3a57fa19522485a30ab56d9f348d497ae1cf6c4bef9f9c20c4a804b6b1a21541"></a>READ_WHILE_ENABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3a57fa19522485a30ab56d9f348d497aaa4f436d1d9ba7947d2f530b2c81380f" name="ad3a57fa19522485a30ab56d9f348d497aaa4f436d1d9ba7947d2f530b2c81380f"></a>DISABLE_POSITIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3a57fa19522485a30ab56d9f348d497a40e45beb48ceaea1c31c9766a087393f" name="ad3a57fa19522485a30ab56d9f348d497a40e45beb48ceaea1c31c9766a087393f"></a>WRITE_POSITIVE_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad3a57fa19522485a30ab56d9f348d497ac5ac597d11ff4e289e2de4348b758d66" name="ad3a57fa19522485a30ab56d9f348d497ac5ac597d11ff4e289e2de4348b758d66"></a>READ_HOMING_TARGET_TWICE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8h_source.html#l00126">126</a> of file <a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a829a90a7415f904a666b96f4b55ec272" name="a829a90a7415f904a666b96f4b55ec272"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a829a90a7415f904a666b96f4b55ec272">&#9670;&#160;</a></span>MotorControlerDummy()</h2>
 
@@ -345,6 +393,26 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aed8e50f3bf425a89a316aac875b16702">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00056">56</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+
+</div>
+</div>
+<a id="a080c509baec918b790051b1ccf1ae90f" name="a080c509baec918b790051b1ccf1ae90f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080c509baec918b790051b1ccf1ae90f">&#9670;&#160;</a></span>failNextReferenceSwitchOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mtca4u::MotorControlerDummy::failNextReferenceSwitchOperation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497">ReferenceSwitchFailure</a>&#160;</td>
+          <td class="paramname"><em>failure</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00448">448</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -588,7 +656,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a469672dcb48a0831a6f6d4b40b8c1894">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00324">324</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00340">340</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -615,7 +683,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00267">267</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00283">283</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -642,7 +710,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00251">251</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00267">267</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -671,7 +739,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a4bf32a4412f69eda47ab0f9428365c26">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00303">303</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00319">319</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -729,7 +797,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00243">243</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00259">259</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -777,7 +845,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a78c9b1c1701cfe77faa0874e79aa6c8e">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00180">180</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00184">184</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -804,7 +872,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00283">283</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00299">299</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -831,7 +899,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00275">275</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00291">291</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -879,7 +947,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a3685de908b91bd6fecca4478a6f34a5c">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00170">170</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00174">174</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -911,7 +979,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#af574bb5e420cfbc34346409f474045eb">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00292">292</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00308">308</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -942,7 +1010,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a82f8f1a56fcd4721c134b6a493b41502">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00185">185</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00189">189</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1068,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00234">234</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00246">246</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1095,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00259">259</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00275">275</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1124,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a1af05f7f9e4ce39eda64ae6b4f4da2c0">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00321">321</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00337">337</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1153,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a9ca814a902b39c019f4604e7e63448c9">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00313">313</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00329">329</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1212,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#ab6d20c28552da11cc2e10fd357f86950">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00354">354</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00372">372</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1270,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a2b5efcd4742f2161c2c15a4393fec6f5">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00345">345</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00363">363</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1287,7 +1355,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>The 'actual' position is where the step counter currently is. it is not the hardware position (absolute position). If the motor is disabled the motor is stepping and the target position will be reached if the motor is not at an end switch. The motor will not be moving, tough. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00365">365</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00383">383</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1383,7 @@ Public Member Functions</h2></td></tr>
 <li>blockMotor status set to false. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00328">328</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00344">344</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1445,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a1ea016a20846eef85f97c6e5e8c9aa6d">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00207">207</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00219">219</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1518,7 +1586,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#af71f3b6ef39a57e18a419be01c1b7497">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00350">350</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00368">368</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1546,7 +1614,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00263">263</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00279">279</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1642,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00247">247</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00263">263</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1632,7 +1700,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00239">239</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00255">255</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1662,7 +1730,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aca1e312359ce775889823a61231e16b9">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00340">340</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00358">358</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1712,7 +1780,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a94105657426dcb7036aa0003f2b6998f">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00175">175</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00179">179</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1745,7 +1813,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#afe16474feed82d7e1cb8870e9b1b6fea">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00202">202</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00214">214</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1773,7 +1841,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00279">279</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00295">295</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1801,7 +1869,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00271">271</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00287">287</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1884,7 +1952,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a20b111339ae86dc2ce7985d0e633cf66">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00197">197</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00205">205</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1912,7 +1980,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00212">212</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00224">224</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +2008,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00255">255</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00271">271</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -1970,7 +2038,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a6d014053bd7a00d0b270d7246dac723d">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00317">317</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00333">333</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2068,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a214907d82e6b618af41c4d8680448876">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00307">307</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00323">323</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -2023,7 +2091,7 @@ Public Member Functions</h2></td></tr>
 <p>Block the motor and do not move if true. </p>
 <p>simulateBlockedMotor(true) is an alternative to calling moveTowardsTarget with the blockMotor flag set to true. </p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00430">430</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00454">454</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>
@@ -2054,7 +2122,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aee36371b3b39fae124c37698082c4b65">mtca4u::MotorControler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00287">287</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00303">303</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
 
 </div>
 </div>

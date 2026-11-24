@@ -8,14 +8,15 @@ var searchData=
   ['spiviapcietestfixture_5',['SPIviaPCIeTestFixture',['../class_s_p_ivia_p_c_ie_test_fixture.html',1,'']]],
   ['stallguardcontroldata_6',['StallGuardControlData',['../classmtca4u_1_1_stall_guard_control_data.html',1,'mtca4u']]],
   ['state_7',['State',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html',1,'ChimeraTK::MotorDriver::utility::StateMachine']]],
-  ['statemachine_8',['statemachine',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::utility::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
+  ['statemachine_8',['statemachine',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::utility::StateMachine']]],
   ['steppermotor_9',['StepperMotor',['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html',1,'ChimeraTK::MotorDriver']]],
   ['steppermotorchimeratkfixture_10',['StepperMotorChimeraTKFixture',['../class_stepper_motor_chimera_t_k_fixture.html',1,'']]],
   ['steppermotorfactory_11',['StepperMotorFactory',['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html',1,'ChimeraTK::MotorDriver']]],
   ['steppermotorglobalparameters_12',['StepperMotorGlobalParameters',['../classmtca4u_1_1_stepper_motor_global_parameters.html',1,'mtca4u']]],
   ['steppermotorparameters_13',['StepperMotorParameters',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html',1,'ChimeraTK::MotorDriver']]],
-  ['steppermotorunitsconverter_14',['StepperMotorUnitsConverter',['../class_stepper_motor_units_converter.html',1,'']]],
-  ['steppermotorunitsconvetertrivia_15',['StepperMotorUnitsConveterTrivia',['../class_stepper_motor_units_conveter_trivia.html',1,'']]],
-  ['steppermotorunitsscalingconverter_16',['StepperMotorUnitsScalingConverter',['../class_stepper_motor_units_scaling_converter.html',1,'']]],
-  ['steppermotorwithreferencetestfixture_17',['StepperMotorWithReferenceTestFixture',['../class_stepper_motor_with_reference_test_fixture.html',1,'']]]
+  ['steppermotorrotarytestfixture_14',['StepperMotorRotaryTestFixture',['../class_stepper_motor_rotary_test_fixture.html',1,'']]],
+  ['steppermotorunitsconverter_15',['StepperMotorUnitsConverter',['../class_stepper_motor_units_converter.html',1,'']]],
+  ['steppermotorunitsconvetertrivia_16',['StepperMotorUnitsConveterTrivia',['../class_stepper_motor_units_conveter_trivia.html',1,'']]],
+  ['steppermotorunitsscalingconverter_17',['StepperMotorUnitsScalingConverter',['../class_stepper_motor_units_scaling_converter.html',1,'']]],
+  ['steppermotorwithreferencetestfixture_18',['StepperMotorWithReferenceTestFixture',['../class_stepper_motor_with_reference_test_fixture.html',1,'']]]
 ];

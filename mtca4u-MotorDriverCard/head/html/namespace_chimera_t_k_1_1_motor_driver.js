@@ -28,7 +28,8 @@ var namespace_chimera_t_k_1_1_motor_driver =
       [ "SUCCESS", "namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033ead0749aaba8b833466dfcbb0428e4f89c", null ],
       [ "ERR_SYSTEM_IN_ACTION", "namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033ea206a02a2cb6a7a91a2964d6b5793630c", null ],
       [ "ERR_INVALID_PARAMETER", "namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033ead7953e94560f28ed0d767da6922dbcad", null ],
-      [ "ERR_SYSTEM_NOT_CALIBRATED", "namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033eac7d8fe9e7b58ac779cd58540c4aebbe6", null ]
+      [ "ERR_SYSTEM_NOT_CALIBRATED", "namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033eac7d8fe9e7b58ac779cd58540c4aebbe6", null ],
+      [ "ERR_SYSTEM_IN_ERROR_STATE", "namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033ea642e60302db2b856768ce9c9cf2732c4", null ]
     ] ],
     [ "Sign", "namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713", [
       [ "NEGATIVE", "namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713a50546bf973283065b6ccf09faf7a580a", null ],

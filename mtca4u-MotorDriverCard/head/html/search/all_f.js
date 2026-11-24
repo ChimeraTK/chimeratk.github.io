@@ -6,6 +6,6 @@ var searchData=
   ['negativeswitchactive_3',['negativeswitchactive',['../class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a707338d5007dd2ff5cfa6b099a7a10ef',1,'ChimeraTK::MotorDriver::ReferenceStepperMotor::negativeSwitchActive()'],['../class_chimera_t_k_1_1_motor_driver_1_1_rotary_stepper_motor.html#a067ec8b0731aff9b4f084b82eb943980',1,'ChimeraTK::MotorDriver::RotaryStepperMotor::negativeSwitchActive()']]],
   ['no_5ferror_4',['NO_ERROR',['../namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722ad306b6fdee05fe87455110ddf6501e6c',1,'ChimeraTK::MotorDriver']]],
   ['nodefiller_5',['nodefiller',['../classdetail_1_1_node_filler.html',1,'detail::NodeFiller'],['../classdetail_1_1_node_filler.html#a1bf904b0863bafb79b26f153cff91289',1,'detail::NodeFiller::NodeFiller()']]],
-  ['none_6',['NONE',['../namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444ab50339a10e1de285ac99d4c3990b8693',1,'ChimeraTK::MotorDriver']]],
+  ['none_6',['none',['../classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ab50339a10e1de285ac99d4c3990b8693',1,'mtca4u::MotorControlerDummy::NONE'],['../namespace_chimera_t_k_1_1_motor_driver.html#ae876126ee00cc4edba085b4f8f56b444ab50339a10e1de285ac99d4c3990b8693',1,'ChimeraTK::MotorDriver::NONE']]],
   ['nstepsperturn_7',['nStepsPerTurn',['../class_parameters_calculator_1_1_physical_parameters.html#af006ce6c4a81b1fe719b0883cb5ea203',1,'ParametersCalculator::PhysicalParameters']]]
 ];

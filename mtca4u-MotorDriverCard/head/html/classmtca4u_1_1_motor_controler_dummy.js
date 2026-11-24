@@ -1,7 +1,15 @@
 var classmtca4u_1_1_motor_controler_dummy =
 [
+    [ "ReferenceSwitchFailure", "classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497", [
+      [ "NONE", "classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ab50339a10e1de285ac99d4c3990b8693", null ],
+      [ "READ_WHILE_ENABLED", "classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ae1cf6c4bef9f9c20c4a804b6b1a21541", null ],
+      [ "DISABLE_POSITIVE", "classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497aaa4f436d1d9ba7947d2f530b2c81380f", null ],
+      [ "WRITE_POSITIVE_CALIBRATION", "classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497a40e45beb48ceaea1c31c9766a087393f", null ],
+      [ "READ_HOMING_TARGET_TWICE", "classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497ac5ac597d11ff4e289e2de4348b758d66", null ]
+    ] ],
     [ "MotorControlerDummy", "classmtca4u_1_1_motor_controler_dummy.html#a829a90a7415f904a666b96f4b55ec272", null ],
     [ "enableFullStepping", "classmtca4u_1_1_motor_controler_dummy.html#a3af278b46f820e7e516bfd676b3b6600", null ],
+    [ "failNextReferenceSwitchOperation", "classmtca4u_1_1_motor_controler_dummy.html#a080c509baec918b790051b1ccf1ae90f", null ],
     [ "getActualAcceleration", "classmtca4u_1_1_motor_controler_dummy.html#a64ea33c00dd6fbdbe0e132ace691ef8f", null ],
     [ "getActualPosition", "classmtca4u_1_1_motor_controler_dummy.html#a94476045f4570b251ecaead8179abe3e", null ],
     [ "getActualVelocity", "classmtca4u_1_1_motor_controler_dummy.html#a61dc18ead2008885a7acf0b4bfa37098", null ],

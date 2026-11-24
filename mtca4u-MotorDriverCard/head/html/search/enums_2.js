@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sign_0',['Sign',['../namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713',1,'ChimeraTK::MotorDriver']]],
-  ['steppermotortype_1',['StepperMotorType',['../namespace_chimera_t_k_1_1_motor_driver.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85',1,'ChimeraTK::MotorDriver']]]
+  ['referenceswitchfailure_0',['ReferenceSwitchFailure',['../classmtca4u_1_1_motor_controler_dummy.html#ad3a57fa19522485a30ab56d9f348d497',1,'mtca4u::MotorControlerDummy']]]
 ];

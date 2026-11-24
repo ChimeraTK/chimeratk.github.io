@@ -241,6 +241,7 @@ var NAVTREEINDEX0 =
 "_stepper_motor_util_8h.html#a8ce53003e1acb01d3914279667269967":[8,0,7,0,1,14],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033e":[8,0,7,0,1,11],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ea206a02a2cb6a7a91a2964d6b5793630c":[8,0,7,0,1,11,1],
+"_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ea642e60302db2b856768ce9c9cf2732c4":[8,0,7,0,1,11,4],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033eac7d8fe9e7b58ac779cd58540c4aebbe6":[8,0,7,0,1,11,3],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ead0749aaba8b833466dfcbb0428e4f89c":[8,0,7,0,1,11,0],
 "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ead7953e94560f28ed0d767da6922dbcad":[8,0,7,0,1,11,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85":[8,0,7,0,1,12],
 "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85a5da2cb3c6d3108f50fdb99d9d3871414":[8,0,7,0,1,12,2],
 "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85aaac544aacc3615aada24897a215f5046":[8,0,7,0,1,12,1],
-"_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85ae4ac03f6c9f00665644e868dd1fb9f1e":[8,0,7,0,1,12,0],
-"_stepper_motor_util_8h.html#ad379106caa37d053c109a027f5857e6a":[8,0,7,0,1,3]
+"_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85ae4ac03f6c9f00665644e868dd1fb9f1e":[8,0,7,0,1,12,0]
 };

@@ -86,6 +86,7 @@ var annotated_dup =
     [ "SpiReadWriteThreadStressTest", "class_spi_read_write_thread_stress_test.html", "class_spi_read_write_thread_stress_test" ],
     [ "SPIviaPCIeTestFixture", "class_s_p_ivia_p_c_ie_test_fixture.html", "class_s_p_ivia_p_c_ie_test_fixture" ],
     [ "StepperMotorChimeraTKFixture", "class_stepper_motor_chimera_t_k_fixture.html", "class_stepper_motor_chimera_t_k_fixture" ],
+    [ "StepperMotorRotaryTestFixture", "class_stepper_motor_rotary_test_fixture.html", "class_stepper_motor_rotary_test_fixture" ],
     [ "StepperMotorUnitsConverter", "class_stepper_motor_units_converter.html", null ],
     [ "StepperMotorUnitsConveterTrivia", "class_stepper_motor_units_conveter_trivia.html", null ],
     [ "StepperMotorUnitsScalingConverter", "class_stepper_motor_units_scaling_converter.html", null ],

@@ -26,7 +26,8 @@ var _stepper_motor_util_8h =
       [ "SUCCESS", "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ead0749aaba8b833466dfcbb0428e4f89c", null ],
       [ "ERR_SYSTEM_IN_ACTION", "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ea206a02a2cb6a7a91a2964d6b5793630c", null ],
       [ "ERR_INVALID_PARAMETER", "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ead7953e94560f28ed0d767da6922dbcad", null ],
-      [ "ERR_SYSTEM_NOT_CALIBRATED", "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033eac7d8fe9e7b58ac779cd58540c4aebbe6", null ]
+      [ "ERR_SYSTEM_NOT_CALIBRATED", "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033eac7d8fe9e7b58ac779cd58540c4aebbe6", null ],
+      [ "ERR_SYSTEM_IN_ERROR_STATE", "_stepper_motor_util_8h.html#ab3f3146256be19f8ebe7d4d98bca033ea642e60302db2b856768ce9c9cf2732c4", null ]
     ] ],
     [ "StepperMotorType", "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85", [
       [ "BASIC", "_stepper_motor_util_8h.html#abe0ddad6b82ab94d6ec8a4a3f4a62c85ae4ac03f6c9f00665644e868dd1fb9f1e", null ],

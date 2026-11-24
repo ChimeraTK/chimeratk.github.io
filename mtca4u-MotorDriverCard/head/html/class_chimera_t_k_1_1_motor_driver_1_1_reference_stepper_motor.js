@@ -4,15 +4,12 @@ var class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor =
     [ "~ReferenceStepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a8a0d8a53db3c0086c9075f0f403f8641", null ],
     [ "calibrate", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a3016accd71bd2541a04fa91d1bd19f6a", null ],
     [ "checkNewPosition", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a49597a468ea1d5cde3462de2eae05e5a", null ],
-    [ "determineTolerance", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a86531ad34848015c0e9bfc9373ac5024", null ],
     [ "getCalibrationMode", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#ab85e0bf517f132e4bfad570d03072ac1", null ],
     [ "getError", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a5b188c24e9d0fc238c79976a872f9232", null ],
     [ "getNegativeEndReference", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a9b44d23fba486aa01a39374b297f211f", null ],
     [ "getNegativeEndReferenceInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a78383ce9327d6a6abfe04f380fdc08ad", null ],
     [ "getPositiveEndReference", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#ac5203dbe809caf8afde76c8af7b8cec7", null ],
     [ "getPositiveEndReferenceInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a73b67b258e70f0570560182d1309f12a", null ],
-    [ "getToleranceNegativeEndSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#aa947bcdd62fb198a3e980bdefe9925be", null ],
-    [ "getTolerancePositiveEndSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a58d3b1402fb9c29c5cd4bb04fd22a619", null ],
     [ "hasHWReferenceSwitches", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#af26540ae5430e47c0ad4bf29d0599825", null ],
     [ "hasNegativeReferenceSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#adb6d29349a292b7e8996a67688238113", null ],
     [ "isEndSwitchActive", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a09ff3a5a6dc6b6145aaee67614cadf9b", null ],
@@ -33,9 +30,5 @@ var class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor =
     [ "_calibPositiveEndSwitchInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a5765538b7395a9242de37f757f5ffa66", null ],
     [ "_calibrationFailed", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a5de12ee98e96e95b1df165c88b5a9fa5", null ],
     [ "_negativeEndSwitchEnabled", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a96e460b24900288fabc360920f099f21", null ],
-    [ "_positiveEndSwitchEnabled", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a2bab56b3b39ff32ccd7a69e40900f705", null ],
-    [ "_toleranceCalcFailed", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a195e76582dac39fa1310b3799c625e5b", null ],
-    [ "_toleranceCalculated", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a8c4685330e8122705d00d48d58befbad", null ],
-    [ "_toleranceNegativeEndSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a24d88389dca9e13cdb24a4d13662ccaa", null ],
-    [ "_tolerancePositiveEndSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a29ebed08b84f1d7c403bdf8065e03887", null ]
+    [ "_positiveEndSwitchEnabled", "class_chimera_t_k_1_1_motor_driver_1_1_reference_stepper_motor.html#a2bab56b3b39ff32ccd7a69e40900f705", null ]
 ];

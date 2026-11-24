@@ -2,7 +2,6 @@ var class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor =
 [
     [ "~StepperMotor", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a8d3685bfa81fd22ab50f2165652c8f80", null ],
     [ "calibrate", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a9c2b6f7dece25b39f6b5ff62b28344de", null ],
-    [ "determineTolerance", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a501bc341adf3a6c171b44314d382df09", null ],
     [ "emergencyStop", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a7c377f1bee1ed10e5eac1ccedc6019f8", null ],
     [ "enableFullStepping", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a4dafbfdc8123f9465a437a6daec78545", null ],
     [ "getAutostart", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#ae17e1a19c45f2333d52b15eb7f6ea251", null ],
@@ -28,8 +27,6 @@ var class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor =
     [ "getState", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a5da5aa7d0036f9c14e76fc9101297c91", null ],
     [ "getTargetPosition", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a75289a266b7eae7bc2439793871e4894", null ],
     [ "getTargetPositionInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a3da77cb97efa93912e517dfc2b126eae", null ],
-    [ "getToleranceNegativeEndSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#aad2131a3efc4b389278250670d82412b", null ],
-    [ "getTolerancePositiveEndSwitch", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a2e8a91f539c7d24bac1ca4fa135997e3", null ],
     [ "getUserCurrentLimit", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a8daa0cf4eac49045abaa398684378bf6", null ],
     [ "getUserSpeedLimit", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a6473f3f5a0cd8214587bd6eb3255d86f", null ],
     [ "hasHWReferenceSwitches", "class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a82b2be3f37845a38c375a49e6eba757e", null ],
