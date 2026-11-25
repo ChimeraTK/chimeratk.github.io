@@ -1,10 +1,23 @@
 var searchData=
 [
-  ['variabledistributor_0',['VariableDistributor',['../class_chimera_t_k_1_1async_1_1_variable_distributor.html#a7c8197fdeb5dfc3b54fcfd86dbc496d4',1,'ChimeraTK::async::VariableDistributor']]],
-  ['vec_1',['vec',['../class_chimera_t_k_1_1_img_view.html#adcac08de761c2d037861ad31aa31baab',1,'ChimeraTK::ImgView']]],
-  ['verifyregisteraccessorsize_2',['verifyRegisterAccessorSize',['../class_chimera_t_k_1_1_subdevice_backend.html#a98616ae2e29b5bd3a91c800644188029',1,'ChimeraTK::SubdeviceBackend']]],
-  ['versionnumber_3',['versionnumber',['../class_chimera_t_k_1_1_version_number.html#a9182ffd8795b397438d1fb58aec79886',1,'ChimeraTK::VersionNumber::VersionNumber()'],['../class_chimera_t_k_1_1_version_number.html#aa0087d83bf4d009467a9069c69654b1a',1,'ChimeraTK::VersionNumber::VersionNumber(const VersionNumber &amp;other)=default'],['../class_chimera_t_k_1_1_version_number.html#a994f595256fe422eb71f034091a557a5',1,'ChimeraTK::VersionNumber::VersionNumber(std::chrono::system_clock::time_point timestamp)'],['../class_chimera_t_k_1_1_version_number.html#a4459b850d2e60c413886bb6b8e444f33',1,'ChimeraTK::VersionNumber::VersionNumber(std::nullptr_t)']]],
-  ['versionnumbertestsuite_4',['VersionNumberTestSuite',['../class_version_number_test_suite.html#ac4f2cae3c40499352a027cd3a25745bb',1,'VersionNumberTestSuite']]],
-  ['void_5',['void',['../class_chimera_t_k_1_1_void.html#ae739d8f614f20f4ae6fd1a8d34591cf8',1,'ChimeraTK::Void::Void()=default'],['../class_chimera_t_k_1_1_void.html#a938fe6ff519c1f94f0879b4807dbd6f4',1,'ChimeraTK::Void::Void(const Void &amp;)=default']]],
-  ['voidregisteraccessor_6',['voidregisteraccessor',['../class_chimera_t_k_1_1_void_register_accessor.html#ac8d142ad3e213daa65cbf978e3cf2f70',1,'ChimeraTK::VoidRegisterAccessor::VoidRegisterAccessor(const boost::shared_ptr&lt; NDRegisterAccessor&lt; Void &gt; &gt; &amp;impl)'],['../class_chimera_t_k_1_1_void_register_accessor.html#a6ae168adeb02c85238dec51550733dcb',1,'ChimeraTK::VoidRegisterAccessor::VoidRegisterAccessor()=default']]]
+  ['uioaccess_0',['UioAccess',['../class_chimera_t_k_1_1_uio_access.html#a9e69abe68f7bbb4f6270d8fe4033fa94',1,'ChimeraTK::UioAccess']]],
+  ['uiobackend_1',['UioBackend',['../class_chimera_t_k_1_1_uio_backend.html#a938e90c73e478bdbac3e354ad6417e2c',1,'ChimeraTK::UioBackend']]],
+  ['undecoratedparams_2',['UndecoratedParams',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html#a4b78697b7455ac0f67e9cab64051b00b',1,'ChimeraTK::LNMBackend::UndecoratedParams']]],
+  ['unknownmainkeytestfixture_3',['UnknownMainKeyTestFixture',['../struct_unknown_main_key_test_fixture.html#aea0574566c1de5562a2249e4188ad60e',1,'UnknownMainKeyTestFixture']]],
+  ['unknownoptiontestfixture_4',['UnknownOptionTestFixture',['../struct_unknown_option_test_fixture.html#a8a9d41e512e85d5f308362a62421b6e0',1,'UnknownOptionTestFixture']]],
+  ['unknownversiontestfixture_5',['UnknownVersionTestFixture',['../struct_unknown_version_test_fixture.html#a7a587d2ca4f334e4f6b8aebdc2f6ab43',1,'UnknownVersionTestFixture']]],
+  ['unsafegetisactive_6',['unsafeGetIsActive',['../class_chimera_t_k_1_1async_1_1_domain.html#a4cbe5b3f4de8068162b6240b254e43a6',1,'ChimeraTK::async::Domain']]],
+  ['unsubscribe_7',['unsubscribe',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html#a8b9c1fda699e1d2cd259a7337eac528a',1,'ChimeraTK::async::AsyncAccessorManager']]],
+  ['unsubscribeimpl_8',['unsubscribeImpl',['../class_chimera_t_k_1_1async_1_1_async_accessor_manager.html#a6b68630903fc0beef03afd86fb0e3bc3',1,'ChimeraTK::async::AsyncAccessorManager']]],
+  ['update_9',['update',['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_simple_matcher.html#a2dbc45e7f26520c337e90bad8c47a4ae',1,'ChimeraTK::DataConsistencyGroupDetail::SimpleMatcher::update()'],['../class_chimera_t_k_1_1_data_consistency_group.html#aecab71fd5901db776ab9149ff28e552b',1,'ChimeraTK::DataConsistencyGroup::update()']]],
+  ['updatecalled_10',['updateCalled',['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#af26e64f2f8abdce07ff5348d962a2172',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher']]],
+  ['updatehistory_11',['updateHistory',['../class_chimera_t_k_1_1_data_consistency_group_detail_1_1_historized_matcher.html#a9c42572eb8718251bf7cf020b3375b0b',1,'ChimeraTK::DataConsistencyGroupDetail::HistorizedMatcher']]],
+  ['updateisreadablewriteable_12',['updateIsReadableWriteable',['../class_chimera_t_k_1_1_transfer_group.html#ac12d9e5bc7ea718c5b6b4522c105c8e0',1,'ChimeraTK::TransferGroup']]],
+  ['updateparameters_13',['updateParameters',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afcc49bbe69af5bc94a84d395230c6d2e',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
+  ['updateregisterinfo_14',['updateRegisterInfo',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a5aeb3c6e2eaf692b629c1070b2821ead',1,'ChimeraTK::LNMBackend::AccessorPluginBase']]],
+  ['updateresult_15',['updateResult',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#afd8c542c3efc75ceb9e006404c18fed2',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
+  ['updaterloop_16',['updaterLoop',['../struct_fixture.html#aaa666e629f57793511fcd0716c3b84c6',1,'Fixture']]],
+  ['uri_17',['uri',['../struct_f.html#af4c69b09957f82f5d3667d068fc5ea65',1,'F']]],
+  ['usertypetonumeric_18',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
+  ['usertypetousertype_19',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]]
 ];
