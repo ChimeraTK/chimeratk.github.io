@@ -1,7 +1,7 @@
 var class_stepper_motor_rotary_test_fixture =
 [
     [ "StepperMotorRotaryTestFixture", "class_stepper_motor_rotary_test_fixture.html#a9aa350a4f5a2ead6032c092aff79bc43", null ],
-    [ "driveUntilEndSwitchActive", "class_stepper_motor_rotary_test_fixture.html#a40834cea370854bac73c07dc16201d7b", null ],
+    [ "driveHomingMoves", "class_stepper_motor_rotary_test_fixture.html#addaefc7a4e39314d51977d2b2f20f92d", null ],
     [ "getCalibrationFailed", "class_stepper_motor_rotary_test_fixture.html#a686da73cedb2f9d21282853d53e2a0cc", null ],
     [ "performCalibrationForTest", "class_stepper_motor_rotary_test_fixture.html#af42a20ddc169995897ea53126b4dbdde", null ],
     [ "waitForCalibrationFinished", "class_stepper_motor_rotary_test_fixture.html#a4f489608640a34e2c7b913f788e038fd", null ],

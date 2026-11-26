@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a687d1b1c07f3221a229b156a6de2325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f489608640a34e2c7b913f788e038fd" id="r_a4f489608640a34e2c7b913f788e038fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_rotary_test_fixture.html#a4f489608640a34e2c7b913f788e038fd">waitForCalibrationFinished</a> (unsigned timeoutInSeconds)</td></tr>
 <tr class="separator:a4f489608640a34e2c7b913f788e038fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40834cea370854bac73c07dc16201d7b" id="r_a40834cea370854bac73c07dc16201d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_rotary_test_fixture.html#a40834cea370854bac73c07dc16201d7b">driveUntilEndSwitchActive</a> ()</td></tr>
-<tr class="memdesc:a40834cea370854bac73c07dc16201d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive the dummy "hardware" until the end switch is reached.  <br /></td></tr>
-<tr class="separator:a40834cea370854bac73c07dc16201d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addaefc7a4e39314d51977d2b2f20f92d" id="r_addaefc7a4e39314d51977d2b2f20f92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_rotary_test_fixture.html#addaefc7a4e39314d51977d2b2f20f92d">driveHomingMoves</a> ()</td></tr>
+<tr class="memdesc:addaefc7a4e39314d51977d2b2f20f92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive the dummy hardware through the search and final approach.  <br /></td></tr>
+<tr class="separator:addaefc7a4e39314d51977d2b2f20f92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af42a20ddc169995897ea53126b4dbdde" id="r_af42a20ddc169995897ea53126b4dbdde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stepper_motor_rotary_test_fixture.html#af42a20ddc169995897ea53126b4dbdde">performCalibrationForTest</a> ()</td></tr>
 <tr class="memdesc:af42a20ddc169995897ea53126b4dbdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a successful calibration and check the resulting state.  <br /></td></tr>
 <tr class="separator:af42a20ddc169995897ea53126b4dbdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +139,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00035">35</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00033">33</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9aa350a4f5a2ead6032c092aff79bc43" name="a9aa350a4f5a2ead6032c092aff79bc43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9aa350a4f5a2ead6032c092aff79bc43">&#9670;&#160;</a></span>StepperMotorRotaryTestFixture()</h2>
@@ -156,19 +156,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00059">59</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00057">57</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a40834cea370854bac73c07dc16201d7b" name="a40834cea370854bac73c07dc16201d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40834cea370854bac73c07dc16201d7b">&#9670;&#160;</a></span>driveUntilEndSwitchActive()</h2>
+<a id="addaefc7a4e39314d51977d2b2f20f92d" name="addaefc7a4e39314d51977d2b2f20f92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addaefc7a4e39314d51977d2b2f20f92d">&#9670;&#160;</a></span>driveHomingMoves()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void StepperMotorRotaryTestFixture::driveUntilEndSwitchActive </td>
+          <td class="memname">void StepperMotorRotaryTestFixture::driveHomingMoves </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -176,9 +176,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Drive the dummy "hardware" until the end switch is reached. </p>
+<p>Drive the dummy hardware through the search and final approach. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00127">127</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00125">125</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00140">140</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00135">135</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Perform a successful calibration and check the resulting state. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00144">144</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00139">139</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00100">100</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00098">98</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00121">121</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00119">119</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00082">82</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00080">80</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00112">112</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00110">110</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -332,7 +332,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00056">56</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00054">54</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00055">55</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00053">53</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00054">54</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00052">52</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
@@ -404,7 +404,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00053">53</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00051">51</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>

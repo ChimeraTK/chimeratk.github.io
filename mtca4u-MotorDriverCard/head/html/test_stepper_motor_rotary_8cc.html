@@ -147,6 +147,14 @@ Functions</h2></td></tr>
 <tr class="separator:ac3324f71069c4662367ff0af333354d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33d71b24a4e164443b548344a05b819d" id="r_a33d71b24a4e164443b548344a05b819d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_rotary_8cc.html#a33d71b24a4e164443b548344a05b819d">BOOST_AUTO_TEST_CASE</a> (testUnconfirmedTargetResetKeepsHomeStopEnabled)</td></tr>
 <tr class="separator:a33d71b24a4e164443b548344a05b819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41030e692f98a442fd5ff24cf5256ad7" id="r_a41030e692f98a442fd5ff24cf5256ad7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_rotary_8cc.html#a41030e692f98a442fd5ff24cf5256ad7">BOOST_AUTO_TEST_CASE</a> (testActiveHomeSwitchBacksOffAndReapproaches)</td></tr>
+<tr class="separator:a41030e692f98a442fd5ff24cf5256ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5257438a79000aede6ac29027c9be4d1" id="r_a5257438a79000aede6ac29027c9be4d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_rotary_8cc.html#a5257438a79000aede6ac29027c9be4d1">BOOST_AUTO_TEST_CASE</a> (testHomeSwitchThatNeverClearsFailsCalibration)</td></tr>
+<tr class="separator:a5257438a79000aede6ac29027c9be4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2933ee8c8af50695516c7fc3f79f8714" id="r_a2933ee8c8af50695516c7fc3f79f8714"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_rotary_8cc.html#a2933ee8c8af50695516c7fc3f79f8714">BOOST_AUTO_TEST_CASE</a> (testZeroSpeedRejectsHomingBeforePositionReset)</td></tr>
+<tr class="separator:a2933ee8c8af50695516c7fc3f79f8714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec546ba999b8e05c543162bce7e8667" id="r_abec546ba999b8e05c543162bce7e8667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_rotary_8cc.html#abec546ba999b8e05c543162bce7e8667">BOOST_AUTO_TEST_CASE</a> (testRehomingInvalidatesPreviousCalibrationBeforeMotion)</td></tr>
+<tr class="separator:abec546ba999b8e05c543162bce7e8667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77aef66c35ece8b4418d117c5168f06a" id="r_a77aef66c35ece8b4418d117c5168f06a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_stepper_motor_rotary_8cc.html#a77aef66c35ece8b4418d117c5168f06a">BOOST_AUTO_TEST_CASE</a> (testCalibrateRebasesToZero)</td></tr>
 <tr class="memdesc:a77aef66c35ece8b4418d117c5168f06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">After calibration the home switch must be the origin of the coordinate system: the counter is re-based to 0 and the stored end switch references are 0, independent of where the hardware counter was before the calibration.  <br /></td></tr>
 <tr class="separator:a77aef66c35ece8b4418d117c5168f06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,8 +202,28 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a41030e692f98a442fd5ff24cf5256ad7" name="a41030e692f98a442fd5ff24cf5256ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41030e692f98a442fd5ff24cf5256ad7">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testActiveHomeSwitchBacksOffAndReapproaches&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00232">232</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+
+</div>
+</div>
 <a id="a77aef66c35ece8b4418d117c5168f06a" name="a77aef66c35ece8b4418d117c5168f06a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77aef66c35ece8b4418d117c5168f06a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77aef66c35ece8b4418d117c5168f06a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,12 +240,12 @@ Functions</h2></td></tr>
 
 <p>After calibration the home switch must be the origin of the coordinate system: the counter is re-based to 0 and the stored end switch references are 0, independent of where the hardware counter was before the calibration. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00240">240</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00304">304</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="aee80ddf1383405d5c822f65cdfed3787" name="aee80ddf1383405d5c822f65cdfed3787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee80ddf1383405d5c822f65cdfed3787">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee80ddf1383405d5c822f65cdfed3787">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,12 +262,12 @@ Functions</h2></td></tr>
 
 <p>Simulate a server restart: a freshly constructed motor (without resetting the dummy, which would clear the calibration time) must pick up the calibration from the firmware registers. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00292">292</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00351">351</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="a58c17549d971d7727a43fffb4a1d6e4a" name="a58c17549d971d7727a43fffb4a1d6e4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c17549d971d7727a43fffb4a1d6e4a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c17549d971d7727a43fffb4a1d6e4a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,12 +282,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00170">170</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00165">165</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="aec10aa277644c3f9dd7a4ecfac308ae6" name="aec10aa277644c3f9dd7a4ecfac308ae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec10aa277644c3f9dd7a4ecfac308ae6">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec10aa277644c3f9dd7a4ecfac308ae6">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,12 +304,12 @@ Functions</h2></td></tr>
 
 <p>After an emergency stop the motor is in the SM "error" state and every move request must be rejected with ERR_SYSTEM_IN_ERROR_STATE until the error is reset. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00365">365</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00425">425</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="a4f8ac1d5663be46d0b05a4d75abcb52f" name="a4f8ac1d5663be46d0b05a4d75abcb52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f8ac1d5663be46d0b05a4d75abcb52f">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8ac1d5663be46d0b05a4d75abcb52f">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,12 +326,12 @@ Functions</h2></td></tr>
 
 <p>A failed calibration must reset the counter and the end switch registers so that the hardware counter does not drift and the next attempt starts from 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00323">323</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00382">382</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="ac3324f71069c4662367ff0af333354d0" name="ac3324f71069c4662367ff0af333354d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3324f71069c4662367ff0af333354d0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3324f71069c4662367ff0af333354d0">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,12 +346,52 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00206">206</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00201">201</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5257438a79000aede6ac29027c9be4d1" name="a5257438a79000aede6ac29027c9be4d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5257438a79000aede6ac29027c9be4d1">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testHomeSwitchThatNeverClearsFailsCalibration&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00248">248</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+
+</div>
+</div>
+<a id="abec546ba999b8e05c543162bce7e8667" name="abec546ba999b8e05c543162bce7e8667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec546ba999b8e05c543162bce7e8667">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testRehomingInvalidatesPreviousCalibrationBeforeMotion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00283">283</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="addadcf12b51ef6da78e892208e67e93e" name="addadcf12b51ef6da78e892208e67e93e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addadcf12b51ef6da78e892208e67e93e">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#addadcf12b51ef6da78e892208e67e93e">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,12 +406,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00158">158</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00153">153</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="a23d33d711c233c991421ef619ad6c4ed" name="a23d33d711c233c991421ef619ad6c4ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23d33d711c233c991421ef619ad6c4ed">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d33d711c233c991421ef619ad6c4ed">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[11/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,12 +426,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00193">193</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00188">188</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>
 <a id="a33d71b24a4e164443b548344a05b819d" name="a33d71b24a4e164443b548344a05b819d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33d71b24a4e164443b548344a05b819d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d71b24a4e164443b548344a05b819d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[12/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +446,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00219">219</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00215">215</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
+
+</div>
+</div>
+<a id="a2933ee8c8af50695516c7fc3f79f8714" name="a2933ee8c8af50695516c7fc3f79f8714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2933ee8c8af50695516c7fc3f79f8714">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testZeroSpeedRejectsHomingBeforePositionReset&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_stepper_motor_rotary_8cc_source.html#l00267">267</a> of file <a class="el" href="test_stepper_motor_rotary_8cc_source.html">testStepperMotorRotary.cc</a>.</p>
 
 </div>
 </div>

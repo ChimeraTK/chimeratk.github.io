@@ -63,6 +63,7 @@ var classmtca4u_1_1_motor_controler_dummy =
     [ "setPositiveEndSwitch", "classmtca4u_1_1_motor_controler_dummy.html#aec128b99dac16e36cbd583a70072d215", null ],
     [ "setPositiveReferenceSwitchCalibration", "classmtca4u_1_1_motor_controler_dummy.html#a03044f52d6628962068d13ca15f76532", null ],
     [ "setPositiveReferenceSwitchEnabled", "classmtca4u_1_1_motor_controler_dummy.html#a29b0d101ca522c659a0fcc33b7f6218e", null ],
+    [ "setPositiveSwitchStuckActive", "classmtca4u_1_1_motor_controler_dummy.html#a9d0a0259f3071094fd9f0b303ee4c7d6", null ],
     [ "setTargetPosition", "classmtca4u_1_1_motor_controler_dummy.html#aef7cd395d71e0cca0a93232b7183798e", null ],
     [ "setTargetVelocity", "classmtca4u_1_1_motor_controler_dummy.html#a1709bff7f0a87dff7aaa1d8241212497", null ],
     [ "setUserCurrentLimit", "classmtca4u_1_1_motor_controler_dummy.html#a648c44bf9e3f1cef3f4753d7beabc9e7", null ],
