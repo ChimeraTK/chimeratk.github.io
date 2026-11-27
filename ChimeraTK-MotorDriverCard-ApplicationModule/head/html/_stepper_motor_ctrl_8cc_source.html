@@ -447,53 +447,30 @@ $(document).ready(function(){initNavTree('_stepper_motor_ctrl_8cc_source.html','
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordtype">void</span> ControlInputHandler::appendCalibrationToMap() {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    addMapping(</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        control.calibrationCtrl.calibrateMotor, <a class="code hl_variable" href="namespacedetail.html#a710641cee44b128c7e9ec0c3fb4f80cd">::detail::SKIP_ON_RECOVERY</a>, [<span class="keyword">this</span>] { return calibrateCallback(); });</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    addMapping(control.calibrationCtrl.determineTolerance, <a class="code hl_variable" href="namespacedetail.html#a710641cee44b128c7e9ec0c3fb4f80cd">::detail::SKIP_ON_RECOVERY</a>,</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        [<span class="keyword">this</span>] { return determineToleranceCallback(); });</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  }</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">  /********************************************************************************************************************/</span></div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  std::string ControlInputHandler::calibrateCallback() {</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keywordflow">if</span>(!_motor-&gt;get()-&gt;hasHWReferenceSwitches()) {</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>      <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    }</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">if</span>(control.calibrationCtrl.calibrateMotor) {</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>      <span class="keywordflow">if</span>(_motor-&gt;get()-&gt;isSystemIdle()) {</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <span class="keyword">auto</span> code = _motor-&gt;get()-&gt;calibrate();</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keywordflow">if</span>(code != ExitStatus::SUCCESS) {</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>          <span class="keywordflow">return</span> <span class="stringliteral">&quot;Could not calibrate motor: &quot;</span> + ChimeraTK::MotorDriver::toString(code);</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        }</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>      }</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;WARNING: Called calibrateMotor while motor is not in IDLE state.&quot;</span>;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>      }</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    }</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  }</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment">  /********************************************************************************************************************/</span></div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  std::string ControlInputHandler::determineToleranceCallback() {</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">if</span>(!_motor-&gt;get()-&gt;hasHWReferenceSwitches()) {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keywordflow">if</span>(control.calibrationCtrl.determineTolerance) {</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>      <span class="keywordflow">if</span>(_motor-&gt;get()-&gt;isSystemIdle()) {</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <span class="keyword">auto</span> code = _motor-&gt;get()-&gt;determineTolerance();</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        <span class="keywordflow">if</span>(code != ExitStatus::SUCCESS) {</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>          <span class="keywordflow">return</span> <span class="stringliteral">&quot;Could not determine endswitch tolerance: &quot;</span> + ChimeraTK::MotorDriver::toString(code);</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        }</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>      }</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;WARNING: Called determineTolerance while motor is not in IDLE state.&quot;</span>;</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>      }</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    }</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  }</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>} <span class="comment">// namespace ChimeraTK::MotorDriver</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  std::string ControlInputHandler::calibrateCallback() {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keywordflow">if</span>(!_motor-&gt;get()-&gt;hasHWReferenceSwitches()) {</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    }</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">if</span>(control.calibrationCtrl.calibrateMotor) {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>      <span class="keywordflow">if</span>(_motor-&gt;get()-&gt;isSystemIdle()) {</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keyword">auto</span> code = _motor-&gt;get()-&gt;calibrate();</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="keywordflow">if</span>(code != ExitStatus::SUCCESS) {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>          <span class="keywordflow">return</span> <span class="stringliteral">&quot;Could not calibrate motor: &quot;</span> + ChimeraTK::MotorDriver::toString(code);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>      }</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>      <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;WARNING: Called calibrateMotor while motor is not in IDLE state.&quot;</span>;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>      }</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    }</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  }</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>} <span class="comment">// namespace ChimeraTK::MotorDriver</span></div>
 <div class="ttc" id="a_stepper_motor_ctrl_8h_html"><div class="ttname"><a href="_stepper_motor_ctrl_8h.html">StepperMotorCtrl.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_motor_driver_1_1_control_input_handler_html_a99d94339fc6e6f4377dd808029d7e9cc"><div class="ttname"><a href="class_chimera_t_k_1_1_motor_driver_1_1_control_input_handler.html#a99d94339fc6e6f4377dd808029d7e9cc">ChimeraTK::MotorDriver::ControlInputHandler::ControlInputHandler</a></div><div class="ttdeci">ControlInputHandler(ModuleGroup *owner, const std::string &amp;name, const std::string &amp;description, std::shared_ptr&lt; Motor &gt; motor, const std::string &amp;triggerPath, DeviceModule *deviceModule)</div><div class="ttdef"><b>Definition</b> <a href="_stepper_motor_ctrl_8cc_source.html#l00018">StepperMotorCtrl.cc:18</a></div></div>
 <div class="ttc" id="anamespace_chimera_t_k_1_1_motor_driver_html"><div class="ttname"><a href="namespace_chimera_t_k_1_1_motor_driver.html">ChimeraTK::MotorDriver</a></div><div class="ttdef"><b>Definition</b> <a href="_motor_8h_source.html#l00008">Motor.h:8</a></div></div>

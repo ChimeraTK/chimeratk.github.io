@@ -6,7 +6,6 @@ var searchData=
   ['testmotordriver_2ecc_3',['testMotorDriver.cc',['../test_motor_driver_8cc.html',1,'']]],
   ['testserver_4',['testserver',['../struct_test_server.html',1,'TestServer'],['../struct_test_server.html#a144ef46390d5d0bf51c0e88402683cf9',1,'TestServer::TestServer()']]],
   ['this_5',['this',['../class_chimera_t_k_1_1_motor_driver_1_1_readback_handler.html#a44f476e2109d6f0cab1c1c0c9c75b20b',1,'ChimeraTK::MotorDriver::ReadbackHandler']]],
-  ['tolerance_6',['tolerance',['../struct_chimera_t_k_1_1_motor_driver_1_1_reference_switch.html#a4479c00316ed08b38de3fce42da04890',1,'ChimeraTK::MotorDriver::ReferenceSwitch']]],
-  ['tostring_7',['toString',['../class_chimera_t_k_1_1_motor_driver_1_1_motor.html#ae548afb41b0148c257327e14f19de608',1,'ChimeraTK::MotorDriver::Motor']]],
-  ['trigger_8',['trigger',['../class_chimera_t_k_1_1_motor_driver_1_1_readback_handler.html#a530f535d8ab890d1e5fd42d5f01d037d',1,'ChimeraTK::MotorDriver::ReadbackHandler']]]
+  ['tostring_6',['toString',['../class_chimera_t_k_1_1_motor_driver_1_1_motor.html#ae548afb41b0148c257327e14f19de608',1,'ChimeraTK::MotorDriver::Motor']]],
+  ['trigger_7',['trigger',['../class_chimera_t_k_1_1_motor_driver_1_1_readback_handler.html#a530f535d8ab890d1e5fd42d5f01d037d',1,'ChimeraTK::MotorDriver::ReadbackHandler']]]
 ];

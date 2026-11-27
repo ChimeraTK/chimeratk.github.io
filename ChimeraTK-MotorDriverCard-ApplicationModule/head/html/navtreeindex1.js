@@ -1,13 +1,9 @@
 var NAVTREEINDEX1 =
 {
-"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html":[0,0,0,0,12],
-"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html":[1,0,0,0,12],
-"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#a3859c9c127007991f0409b0208ebe65e":[0,0,0,0,12,1],
-"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#a3859c9c127007991f0409b0208ebe65e":[1,0,0,0,12,1],
-"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#a488b354b3a786ba2db64238dc6e0d107":[0,0,0,0,12,0],
 "struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#a488b354b3a786ba2db64238dc6e0d107":[1,0,0,0,12,0],
-"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#ad9e255475831fdcc11a1431fa9c5cf6a":[0,0,0,0,12,2],
+"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#a488b354b3a786ba2db64238dc6e0d107":[0,0,0,0,12,0],
 "struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#ad9e255475831fdcc11a1431fa9c5cf6a":[1,0,0,0,12,2],
+"struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#ad9e255475831fdcc11a1431fa9c5cf6a":[0,0,0,0,12,2],
 "struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#adc08135f63e2abaee7bde6dd9f41ad40":[1,0,0,0,12,4],
 "struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#adc08135f63e2abaee7bde6dd9f41ad40":[0,0,0,0,12,4],
 "struct_chimera_t_k_1_1_motor_driver_1_1_software_limit_ctrl.html#aff48af04ce2aee529d10a9248e800163":[1,0,0,0,12,3],
